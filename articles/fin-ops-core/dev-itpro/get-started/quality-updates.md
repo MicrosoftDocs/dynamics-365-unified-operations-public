@@ -4,12 +4,10 @@ description: Learn about proactive quality updates (PQUs). It explains what they
 author: rashmansur
 ms.author: rashmim
 ms.topic: article
-ms.date: 04/05/2023
+ms.date: 06/06/2024
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2022-08-19
-ms.search.form:
 ms.dyn365.ops.version: 10.0.29
 ---
 
@@ -28,7 +26,7 @@ PQUs are cumulative builds of hotfixes that are delivered with [near-zero downti
 Before the introduction of PQUs, most customers didn't receive fixes for service issues until they deployed their next service update. Therefore, businesses could be unnecessarily affected by service issues that a fix was already available for. PQUs get fixes to customers more quickly
 ## What investments is Microsoft making to enable safe deployments of PQUs?
 
-Microsoft has invested in the following technologies and processes to make the PQU process non-disruptive:
+Microsoft has invested in the following technologies and processes to make the PQU process nondisruptive:
 
 
 - **Higher-quality concise payloads** – The changes that PQU payloads contain are limited to bug fixes and regulatory changes that are supported by flighting. We apply extra diligence when we backport changes into a PQU, to further reduce the risk of unintended regressions.
