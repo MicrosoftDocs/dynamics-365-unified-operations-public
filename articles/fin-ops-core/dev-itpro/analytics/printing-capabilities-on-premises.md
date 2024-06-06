@@ -11,7 +11,9 @@ ms.search.region: Global
 ms.search.validFrom: 2017-06-30
 ms.search.form: SysCorpNetPrinterList
 ms.dyn365.ops.version: Platform update 8
-ms.service: dynamics-365
+ms.service: 
+  - dynamics-365-op
+  - dynamics-365
 search.app:
   - financeandoperationsonprem-docs
 ---
