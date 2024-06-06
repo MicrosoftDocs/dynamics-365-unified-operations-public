@@ -99,7 +99,6 @@ To set security on a dimension, follow these steps.
 
     If the dimension access is set to **Grant full access to all dimension values**, the summary shows **All** for the dimension values, followed by **Full access**. If the dimension access is set to **Grant read-only access to all dimension values**, the summary shows **All** for the dimension values, followed by **Read-only**. If the dimension access is set to **Grant row-level access**, each dimension value that the user has access to is listed, followed by the access type (either **Full access** or **Read-only**).
 
-    For example, in the following illustration, the **Grant full access to all dimension values** option is selected for the **Scenario** dimension, and the **Grant read-only access to all dimension values** is selected for the **Status** dimension. For the **YearMonth** dimension, the **Row level access** option is selected, and all the dimension values that the user has read or write access to are shown.
 
 ### Edit dimension groups
 
