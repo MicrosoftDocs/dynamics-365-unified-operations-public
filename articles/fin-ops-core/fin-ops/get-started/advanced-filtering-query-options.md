@@ -175,7 +175,7 @@ See the table in the next section for additional details about <strong>SysQueryR
 </td>
 </tr>
 <tr>
-<td>GreaterThanDate (_relativeDays=0) GreaterThanUtcDate (_relativeDays=0)</td>
+<td>GreaterThanDate (_relativeDays=0) GreaterThanUtcDate (_relativeDays=0)</td> 
 <td>Find all dates after the specified relative date.</td>
 <td>
 <ul>
