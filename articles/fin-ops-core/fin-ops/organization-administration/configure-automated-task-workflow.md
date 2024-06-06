@@ -19,8 +19,6 @@ ms.assetid: c0aceb57-b5e6-4ef3-91e7-89a21c9f048a
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 This article explains how to configure the properties for an automated task.
 
 To configure an automated task in the workflow editor, right-click the task, and then click **Properties** to open the **Properties** page. Then use the following procedures to configure the properties for the automated task.
