@@ -21,7 +21,7 @@ This article answers some frequently asked questions about the **Customer page s
 
 ## What is Customer page summary?
 
-Customer page summary is a feature in Dynamics 365 Finance that is powered by Azure Open AI Service's large language model. It shows AI-generated summary text at the top of the customer page when a user opens it.
+Customer page summary is a feature in Dynamics 365 Finance that is powered by Azure OpenAI Service's large language model. It shows AI-generated summary text at the top of the customer page when a user opens it.
 
 ## What does Customer page summary show?
 
@@ -33,7 +33,7 @@ Users who have access to the customer page can quickly get a summary of the cust
 
 ## How was Customer page summary evaluated? What metrics are used to measure performance?
 
-The AI-generated summary was evaluated based on the existing transaction data (customer invoices, customer payments, sales orders, sales agreements, rebates, overdue invoices, and delayed order lines). All calculations are done in Finance, not through Azure Open AI, and are verified against the same data during the testing process.
+The AI-generated summary was evaluated based on the existing transaction data (customer invoices, customer payments, sales orders, sales agreements, rebates, overdue invoices, and delayed order lines). All calculations are done in Finance, not through Azure OpenAI, and are verified against the same data during the testing process.
 
 ## What are the limitations of Customer page summary? How can users minimize the impact of those limitations?
 
@@ -43,7 +43,7 @@ This Copilot feature was validated for [these languages](https://go.microsoft.co
 
 ## What operational factors and settings allow for effective and responsible use of Customer page summary?
 
-System users can't change the processing of the customer transaction data (customer invoices, customer payments, sales orders, sales agreements, rebates, overdue invoices, and delayed order lines). Dynamics 365 Finance performs this processing by using Azure Open AI's large language model.
+System users can't change the processing of the customer transaction data (customer invoices, customer payments, sales orders, sales agreements, rebates, overdue invoices, and delayed order lines). Dynamics 365 Finance performs this processing by using Azure OpenAI's large language model.
 
 The system administrator can turn this feature off or on in Feature management by using the **Customer page summary** feature.
 
