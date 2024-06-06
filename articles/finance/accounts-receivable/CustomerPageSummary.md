@@ -1,6 +1,6 @@
 ---
 title: Customer page summary
-description: This article describes how the customer page summary feature shows AI-generated text in the customer page.
+description: This article describes how the customer page summary feature shows AI-generated text on the customer page.
 author: EricWang
 ms.author: wangchen
 ms.topic: conceptual
@@ -16,22 +16,25 @@ ms.search.form:
 ---
 
 # Customer page summary
-This article describes how the customer page summary feature shows AI-generated text in the customer page.
-Enable the **Customer page summary** feature to get an AI-generated summary of a customer's account in the **All Customers** page. This feature is powered by Microsoft Azure Open AI's large language model and is designed to reduce the time needed to review transaction details for your customers.
 
-This feature provides the following benefits: 
-- Provides customer account status and insights.
-- Helps make better decisions about customers.
+This article describes how the **Customer page summary** feature shows AI-generated text on the customer page.
+
+Enable the **Customer page summary** feature to get an AI-generated summary of a customer's account on the **All customers** page. This feature is powered by Microsoft Azure Open AI Service's large language model. It's designed to reduce the time that you spend reviewing transaction details for your customers.
+
+This feature provides the following benefits:
+
+- Provide customer account status and insights.
+- Help you make better decisions about customers.
 
 ## Prerequisites
 
 ### Version requirements
 
-Customer page summary requires the latest hotfix on Dynamics 365 Finance version 10.0.39.
+Customer page summary requires the latest hotfix for Dynamics 365 Finance version 10.0.39.
 
 ### Role requirements
 
-The user must have at least one of the following menu items to view the summary data:
+To view the summary data, a user must have at least one of the following menu items:
 
 - CustTrans
 - SalesTable
@@ -48,22 +51,23 @@ The user must have at least one of the following menu items to view the summary 
 
 ## View summary text
 
-When a customer is selected in the **All customers** workspace, the AI-generated content appears on the **Summary** FastTab. Azure OpenAI generates the results, based on data in Finance and the provided prompts. 
+When a customer is selected in the **All customers** workspace, the AI-generated content appears on the **Summary** FastTab. Azure OpenAI generates the results based on data in Finance and the provided prompts.
 
-It uses the following transaction data as inputs: 
- - customer invoices
- - customer payments
- - sales orders
- - sales agreements
- - rebates
- - outstanding invoices
- - delayed order lines
+It uses the following transaction data as inputs:
 
- This data comes from customer’s Dynamics 365 Finance environment only. All calculations are done in Finance. 
+- Customer invoices
+- Customer payments
+- Sales orders
+- Sales agreements
+- Rebates
+- Outstanding invoices
+- Delayed order lines
 
-The results contain a summary of current customer status and selective insights about this customer account.
+This data comes only from the customer's Finance environment. All calculations are done in Finance.
 
-For more information, see the following:
+The results contain a summary of the current customer status and selected insights into the customer account.
+
+For more information, see the following resources:
 
 - [Transparency FAQ](CustomerPageSummaryFAQ.md)
 - [Enable Copilot in Dynamics 365 Finance](https://go.microsoft.com/fwlink/?linkid=2274122)
