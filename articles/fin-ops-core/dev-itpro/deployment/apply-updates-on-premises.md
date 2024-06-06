@@ -5,13 +5,13 @@ author: PeterRFriis
 ms.author: peterfriis
 ms.topic: article
 ms.date: 03/05/2020
-ms.custom: 
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2017-06-30
-ms.search.form: 
 ms.dyn365.ops.version: Platform update 12
+ms.service: 
+  - dynamics-365-op
 ---
 # Apply updates to on-premises deployments
 
