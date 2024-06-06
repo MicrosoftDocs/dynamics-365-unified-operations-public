@@ -1,17 +1,17 @@
 ---
 title: Design forecast models
-description: This article provides information about forecast models. These models let you arrange and configure tiles to define the forecast that is made by a forecast profile. Each model presents a flowchart that graphically represents the calculation that the model does.
+description: Learn about forecast models, which let you arrange and configure tiles to define the forecast that is made by a forecast profile.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 10/19/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
 ms.collection:
   - bap-ai-copilot
+audience: Application User
+ms.search.region: Global
+ms.search.form:
 ---
 
 # Design forecast models
