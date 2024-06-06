@@ -1,6 +1,6 @@
 ---
 title: Workflow history summary - Transparency FAQ
-description: This article answers some frequently asked questions about the Workflow history summary feature in Microsoft Dynamics 365 Finance.
+description: This article answers some frequently asked questions about the Workflow history summary feature in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: JodiChristiansen
 ms.author: jchrist
 ms.topic: article
@@ -12,7 +12,7 @@ ms.collection: bap-ai-copilot
 
 # Workflow history summary: Transparency FAQ
 
-This article answers some frequently asked questions about the Workflow history summary feature in Microsoft Dynamics 365 Finance.
+This article answers some frequently asked questions about the Workflow history summary feature in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 
 ## What is Workflow history summary?
 
@@ -20,7 +20,7 @@ Workflow history summary is a feature in Dynamics 365 Finance that is powered by
 
 ## What can Workflow history summary do?
 
-The summary uses existing workflow history information in a customer's Dynamics 365 Finance or Dynamics 365 Supply Chain Management application.
+The summary uses existing workflow history information in a customer's Dynamics 365 Finance or Dynamics 365 Supply Chain Management.
 
 ## What is Workflow history summary's intended use?
 
