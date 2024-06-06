@@ -4,7 +4,7 @@ description: Learn how to use dataflows to load data into the Business performan
 author: ShielaSogge
 ms.author: twheeloc
 ms.topic: article
-ms.date: 12/13/2023
+ms.date: 06/04/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -62,9 +62,13 @@ To create the cube in Business performance planning dimensions, follow these ste
 > [!NOTE]
 > You will need the name of the cube to create the dataflow in Power Apps. The name will start with **msdyn\_xpnacube**.
 
-### Create the dataflow in Power Apps
+### Load data using dataflows 
 
-1. Go to Power Apps for your environment.
+1. Select **Load data**, select **Create dataflow**. This launches the **Power Query** window.
+
+>[!Important]
+>The user must have the Dataflow Maker role assigned to be able to create the dataflow. If they don't have the role, the **Create dataflow** button isn't available.
+
 2. Select dataflows. For more information about dataflows, see [Create and use dataflows in Power Apps](/power-apps/maker/data-platform/create-and-use-dataflows).
 
     Any data connection can be used. For this example, select Excel.
@@ -76,12 +80,12 @@ To create the cube in Business performance planning dimensions, follow these ste
 7. On the **Transform data** page, you can combine, update, or remove columns. For example, you might want to remove rows for the fiscal year 2021 or rows for an obsolete product. For more information about how to transform data, see [Use the dataflow editor to shape or transform data](/power-apps/maker/data-platform/create-and-use-dataflows#use-the-dataflow-editor-to-shape-or-transform-data).
 8. After the data is transformed, select **Next**.
 9. On the **Map tables** page, under **Load setting**, select **Load to existing table**.
-10. Select a destination table.
+10. Select the table listed. This should match the cube name on the **Cube** page.
 
     > [!IMPORTANT]
     > The cube that's created in Business performance planning is named msdyn\_xpnacube\_\<*cube\_name*\>. You can find the name of the cube on the **Cube** page in Business performance planning.
-    >
-    > Go to the cube, and make a note of the **Write back table** name under **Cube properties**.
+
+
 
     After you select the planning cube as the destination table, **Source key** and **Column mapping** sections become available. The source key is the **DimensionSetAltKey** value for cubes. For dimensions, it's the **NameKey** value (**msdyn\_name**).
 
