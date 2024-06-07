@@ -5,7 +5,7 @@ author: JTOne123
 ms.author: pavlodatsiuk
 ms.reviewer: kamaybac
 ms.search.form:
-ms.topic: faq
+ms.topic: conceptual
 ms.date: 11/01/2023
 audience: Application User
 ms.search.region: Global
