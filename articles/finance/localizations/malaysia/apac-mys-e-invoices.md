@@ -290,28 +290,22 @@ You can inquire about the results of a submission by going to **Organization adm
 
 ## Configure printable invoice layouts
 
-In the **Feature management** workspace, the **(Saudi Arabia) QR codes in Tax and Simplified invoices** feature must be enabled. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-
-### Enable specific invoice layouts for Saudi Arabia
+To enable QR codes printing in full and simplified invoices do the following steps.
 
 1. Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Form setup**.
 2. Select **Print management**.
 3. Select the **Customer invoice** report, and then, in the **Report format** field, refer to the **SalesInvoice.ReportFull_MY** or **SalesInvoice.ReportSimplified_MY** layout.
 4. Select the **Free text invoice** report, and then, in the **Report format** field, refer to the **FreeTextInvoice.ReportFull_MY** or **FreeTextInvoice.ReportSimplified_MY** layout.
 
-**PSAProjInvoice.ReportFull_MY** or **PSAProjInvoice.ReportSimplified_MY** for for project invoices without billing rules.
-**PSAContractLineInvoice.ReportFull_MY** or **PSAContractLineInvoice.ReportSimplified_** for for project invoices with billing rules.
+In case of project invoices do the following steps.
 
-### Enable VAT numbers to be printed on invoices
+1. Go to **Project management and accounting** \> **Setup** \> **Forms** \> **Form setup**.
+2. Select **Print management**.
+3. Select the **Project invoices without billing rules** report, and then, in the **Report format** field, refer to the **PSAProjInvoice.ReportFull_MY** or **PSAProjInvoice.ReportSimplified_MY** layout.
+4. Select the **Project invoices with billing rules** report, and then, in the **Report format** field, refer to the **PSAContractLineInvoice.ReportFull_MY** or **PSAContractLineInvoice.ReportSimplified_** layout.
 
-1. Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Form setup**.
-2. In the **Invoice** section, turn on the **Print tax exempt number on invoice** option.
-3. In the **Free text invoice** section, turn on the **Print tax exempt number on invoice** option.
-4. Go to **Project management and accounting** \> **Setup** \> **Forms** \> **Form setup**.
-5. In the **Invoice** section, turn on the **Print tax exempt number on invoice** option.
+In case of self-invoices do the following steps.
 
-## Print invoices
-
-When you print customer invoices that are based on sales orders or free text invoices, the title of an invoice reflects the type: **Tax invoice** or **Simplified invoice**. Additionally, QR codes are printed.
-
-![Invoice printout](../media/sau-qr-invoice.jpg)
+1. Go to **Accounts payable** \> **Setup** \> **Forms** \> **Form setup**.
+2. Select **Print management**.
+3. Select the **Vendor invoice** report, and then, in the **Report format** field, refer to the **VendInvoiceDocument.ReportMY** layout.
