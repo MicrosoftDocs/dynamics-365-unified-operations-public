@@ -1,5 +1,5 @@
 ---
-title: Availability of Electronic invoicing Service features by country or region
+title: Availability of Electronic Invoicing Service features by country or region
 description: Learn about the out-of-box features that are available for each country or region, including overviews on generally available features.
 author: ilikond
 ms.author: ikondratenko
@@ -14,19 +14,19 @@ ms.search.form:
 ms.dyn365.ops.version: 
 ---
 
-# Availability of Electronic invoicing Service features by country or region
+# Availability of Electronic Invoicing Service features by country or region
 
 [!include [banner](../../includes/banner.md)]
 
 The availability of Electronic invoicing Service globalization features depends on the country or region where you're located. Although some features are generally available, others are still in preview.
 
-> [!NOTE]
-> This article is related only to the globelization features introduced in scope of Electronic Invoicing Service and doesn't cover other approaches for supported e-Invoicing capabilities for some countries designed based on built-in X++ code and Electronic Messaging framework.
+> [!IMPORTANT]
+> This article is related only to the globalization features introduced in the scope of the Electronic Invoicing Service and doesn’t cover other approaches for supported e-Invoicing capabilities for some countries designed based on built-in X++ code and the Electronic Messaging framework.
 > For more information, see [Electronic Invoicing](gs-e-invoicing-service-overview).
 
 ## Generally available features
 
-The following table shows the Electronic invoicing features that are generally available.
+The following table shows the Electronic invoicing globalization features that are generally available.
 
 | Country or region | Globalization feature name | Business documents |
 |-------------------|----------------------------|--------------------|
@@ -54,8 +54,8 @@ The following table shows the Electronic invoicing features that are generally a
 | Saudi Arabia | Saudi Arabian Zatca compliance check (SA) | Phase 2: Onboarding process |
 | Spain | Spanish electronic invoice (ES) | Sales invoices and project invoices |
 
-> [!IMPORTANT]
-> In current implementations in Chile, Costa Rica, and Panama, the standard submission procedure described above only generates electronic invoices and stores their XML files on the service side, but it doesn’t submit the invoices. For the submission of Chilean, Costa Rican, and Panamanian electronic invoices, integration with the [Electronic Invoicing service ISV last-mile connector](../global/e-invoicing-isv-connector.md) is required. However, the integration hasn’t been released yet for these countries.
+> [!NOTE]
+> In current implementations in Chile, Costa Rica, and Panama, the globalization features described above only generate electronic invoices and store their XML files on the service side, but they don’t submit the invoices. For the submission of Chilean, Costa Rican, and Panamanian electronic invoices, integration with the [Electronic Invoicing service ISV last-mile connector](../global/e-invoicing-isv-connector.md) is required. However, the integration hasn’t been released yet for these countries.
 
 ## Preview features
 
@@ -69,3 +69,8 @@ The following table shows the Electronic invoicing Service globalization feature
 | Malaysia | (Preview) Malaysian electronic invoicing (MY) | Sales invoices, project invoices, and self invoices |
 | Mexico | Mexican CFDI Interfactura (MX) | Sales invoices, packing slips, inventory transfers, payment complements, and cancellations |
 | Poland | Polish KSeF submission (PL) | Sales invoices, project invoices, and advance invoices |
+
+> [!IMPORTANT]
+> It’s important to note that we had planned to transition NF-e/NFS-e and CFDI to our Electronic Invoicing Service and the features and formats have been under preview for quite a while in Brazil and Mexico, respectively. However, due to lack of interest for adoption and transition to the new approach, we are still evaluating the timing of the switch to the Electronic Invoicing Service platform in these countries. The documents’ formats will not contain the latest compliance changes published since the preview release. 
+> In the meantime, **we recommend continuing to use our built-in X++ implementation in Brazil and Mexico, which are kept up-to-date with the legislation**.
+> For more information, see [NF-e process overview](../brazil/latam-bra-nf-e-process.md) and [Electronic invoices (CFDI)](../iberoamerica/latam-mex-CFDI-electronic-invoices.md).
