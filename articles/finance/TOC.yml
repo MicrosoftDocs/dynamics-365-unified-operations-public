@@ -100,6 +100,8 @@
           href: ../fin-ops-core/dev-itpro/get-started/system-requirements-on-prem.md?context=/dynamics365/context/finance
         - name: Buy Finance + Operations (on-premises)
           href: ../fin-ops-core/dev-itpro/get-started/purchase-on-premises.md?context=/dynamics365/context/finance
+      - name: Enable copilot in Dynamics 365 Finance
+        href: accounts-receivable/Enable-copilot-in-finance.md
       - name: Documentation resources
         items:
         - name: Help system
