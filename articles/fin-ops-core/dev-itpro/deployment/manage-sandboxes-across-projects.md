@@ -15,7 +15,6 @@ ms.dyn365.ops.version: 8.1.1
 
 # Manage sandbox environments across implementation projects
 
-[!include[banner](../includes/preview-banner.md)]
 
 Management of sandboxes across implementation projects is an important aspect of the implementation of finance and operations apps. By following the steps that are outlined in this article, you can ensure that you stay within your purchased sandbox limits.
 

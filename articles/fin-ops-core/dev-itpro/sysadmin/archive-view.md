@@ -1,5 +1,5 @@
 ---
-title: View or delete archived data in Dataverse long-term retention (preview)
+title: View or delete archived data in Dataverse long-term retention
 description: Learn about how to view or delete archived data in Microsoft Dataverse long-term retention, including an overview on viewing data by using Fabric.
 author: pnghub
 ms.author: gned
@@ -10,9 +10,7 @@ ms.custom:
 ms.reviewer: twheeloc
 ---
 
-# View archived data in Dataverse long-term retention (preview)
-
-[!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
+# View archived data in Dataverse long-term retention
 
 This article describes how to view archived data in Microsoft Dataverse long-term retention.
 
