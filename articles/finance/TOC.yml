@@ -386,6 +386,8 @@
         href: accounts-receivable/tasks/establish-customer-method-payment.md
       - name: Establish customer payment fees
         href: accounts-receivable/tasks/establish-customer-payment-fees.md
+      - name: Customer summary page
+        href: accounts-receivable/CustomerPageSummary.md
       - name: Customer payment insights 
         href: accounts-receivable/payment-insights-overview.md
       - name: Accounts receivable posting
@@ -5492,7 +5494,9 @@
     - name: Overview
       href: ../finance/transparency-note.md 
     - name: Collections coordinator summary FAQ
-      href: accounts-receivable/collections-coordinator-summary-faq.md
+      href: accounts-receivable/collections-coordinator-summary-faq.md 
+    - name: Customer page summary FAQ
+      href: accounts-receivable/CustomerPageSummaryFAQ.md
     - name: Workflow summary FAQ
       href: ../fin-ops-core/fin-ops/copilot/workflow-history-summary-faq.md
   - name: Development and administration for finance and operations apps 
