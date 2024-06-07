@@ -5,7 +5,7 @@ author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form:
-ms.topic: faq
+ms.topic: conceptual
 ms.date: 11/24/2022
 audience: Application User
 ms.search.region: Global

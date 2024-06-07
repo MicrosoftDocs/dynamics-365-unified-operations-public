@@ -6,10 +6,10 @@ ms.author: weijiesa
 ms.reviewer: kamaybac
 ms.search.form: WHSLTLClass
 ms.topic: how-to
-ms.date: 01/05/2023
+ms.date: 06/07/2024
 audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
+ms.custom: 
+  - bap-template
 ---
 
 # Less than truckload (LTL) classes
