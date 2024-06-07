@@ -11,8 +11,7 @@ audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom:
 ms.dyn365.ops.version: 
-ms.service: 
-  - dynamics-365-op
+ms.service: dynamics-365-op
 ---
 
 # Configure the infrastructure scripts for your Finance + Operations (on-premises) deployment
