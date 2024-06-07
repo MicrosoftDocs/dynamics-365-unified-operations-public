@@ -4,7 +4,7 @@ description: Learn about batch parallelism and multi-threading in Microsoft Dyna
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 02/20/2024
+ms.date: 06/07/2024
 ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
@@ -69,7 +69,9 @@ The journal posting process has the following changes when the top picking patte
 
  - Batch job history:
     -    Top picking posting mechanism splits the posting process into multiple parallel sub-tasks to improve the overall performance. If one of the sub-tasks fails, other tasks will continue to work, the overall status of the batch job will show as **Ended**.
-    -    To see the job history, go to batch job history, drill down on batch job Id, and **InfoLog** section. For more information, see [Create a batch job](../../fin-ops/sysadmin/create-batch-job.md).
+    -    For all log messages, go to batch job history, click **Log** to see the full message.
+    -    For individual batch task log, go to batch job history, click **View tasks**, select **Log** for the individual batch task.
+    -    For more information, see [Create a batch job](../../fin-ops/sysadmin/create-batch-job.md).
   
 
 ### Related classes and tables
