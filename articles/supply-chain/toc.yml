@@ -192,6 +192,8 @@
           href: ../fin-ops-core/dev-itpro/get-started/implement-multiple-projects-aad-tenant.md?context=/dynamics365/context/supply-chain
     - name: Troubleshooting and FAQs
       href: supply-chain-management-troubleshooting.md
+    - name: AI summaries with Copilot
+      href: get-started/copilot-summaries-overview.md
     - name: Globalization Studio
       items:
       - name: Globalization Studio overview
@@ -1945,10 +1947,10 @@
           items:
           - name: Demand forecasting overview
             href: master-planning/introduction-demand-forecasting.md
-          - name: Intercompany planning groups for demand forecasting
-            href: demand-planning/intercompany-planning-groups-demand-forecasting.md
           - name: Demand forecasting setup
             href: master-planning/demand-forecasting-setup.md
+          - name: Intercompany planning groups for demand forecasting
+            href: master-planning/intercompany-planning-groups-demand-forecasting.md
           - name: Generate a statistical baseline forecast
             href: master-planning/generate-statistical-baseline-forecast.md
           - name: Make manual adjustment to the baseline forecast
@@ -2019,7 +2021,7 @@
         href: demand-planning/demand-planning-home-page.md
       - name: Setup and administration
         items:
-        - name: Install and enable the Demand planning app
+        - name: Install and enable Demand planning
           href: demand-planning/install-demand-planning.md
         - name: Security roles and row-level security
           href: demand-planning/users-access.md
@@ -2045,6 +2047,8 @@
           href: demand-planning/design-forecast-models.md
         - name: Use your own custom Azure Machine Learning algorithms in Demand planning
           href: demand-planning/custom-azure-machine-learning-algorithms.md
+      - name: Use phase in/out functionality to simulate planned changes
+        href: demand-planning/phase-in-out.md
       - name: Time series and planning data
         href: demand-planning/time-series.md
       - name: Analyze demand plans with Copilot (preview)
@@ -2191,6 +2195,8 @@
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?context=/dynamics365/context/supply-chain
         - name: View workflow history
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?context=/dynamics365/context/supply-chain
+        - name: Workflow history summary
+          href: ../fin-ops-core/fin-ops/organization-administration/workflow-history-summary.md?context=/dynamics365/context/supply-chain  
         - name: Configure the system to send workflow-related email to users
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?context=/dynamics365/context/supply-chain
         - name: Workflow types
@@ -3594,15 +3600,15 @@
       - name: Landed cost data entities
         items:
         - name: Landed cost entities overview
-          href: landed-cost\landed-cost-entities-overview.md
+          href: landed-cost/landed-cost-entities-overview.md
         - name: Voyage creation entities
-          href: landed-cost\landed-cost-entities-voyage-creation.md
+          href: landed-cost/landed-cost-entities-voyage-creation.md
         - name: Cost transaction entities
-          href: landed-cost\landed-cost-entities-cost-transactions.md
+          href: landed-cost/landed-cost-entities-cost-transactions.md
         - name: Container activities entity
-          href: landed-cost\landed-cost-entities-container-activities.md
+          href: landed-cost/landed-cost-entities-container-activities.md
         - name: Vendor invoice entities
-          href: landed-cost\landed-cost-entities-vendor-invoices.md
+          href: landed-cost/landed-cost-entities-vendor-invoices.md
     - name: Warehouse management
       items:
       - name: Warehouse management overview
@@ -3627,7 +3633,7 @@
           href: warehousing/inbound-putaway-by-container-type.md
         - name: Cross-dock products from receiving warehouse to stores
           href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
-        - name: Set up a location directive for purchase order put-away
+        - name: Set up a location directive for purchase order putaway
           href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
         - name: Set up a work template for purchase orders
           href: warehousing/tasks/set-up-work-template-purchase-orders.md
@@ -3843,6 +3849,8 @@
             href: warehousing/warehouse-app-company-logo.md
           - name: Mobile bar code support
             href: warehousing/mobile-barcode-support.md
+          - name: Advanced barcode scanner configuration
+            href: warehousing/warehouse-app-adv-scanner-config.md
           - name: Scan bar codes using a camera in the Warehouse Management mobile app
             href: warehousing/scan-bar-codes-using-a-camera.md
         - name: Set up fields and menus for mobile devices
@@ -4037,6 +4045,8 @@
       items:
       - name: Overview
         href: responsible-ai-overview.md
+      - name: Responsible AI FAQ for AI summaries with Copilot
+        href: faq-summaries.md
       - name: Responsible AI FAQ for Analyze demand plans with Copilot (preview)
         href: faq-demand-planning-copilot.md
       - name: Responsible AI FAQ for the Confirmed purchase orders with changes workspace

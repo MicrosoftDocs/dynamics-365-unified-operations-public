@@ -19,9 +19,6 @@ ms.assetid: 6e19bd1d-192b-4da2-8573-84f6e1ce98ef
 
 [!include [banner](../includes/banner.md)]
 
-> [!NOTE]
-> The 'Enable continuous number sequence performance improvements' feature provides enterprise readiness with continuous number sequence, which was challenging in finance and operations apps. The feature is in Public Preview in 10.0.34 version, and GA in 10.0.36 version.
-
 Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require identifiers. A master data record or transaction record that requires an identifier is referred to as a *reference*.
 
 Before you can create new records for a reference, you must set up a number sequence and associate it with the reference. We recommend that you use the pages in **Organization administration** to set up number sequences. If module-specific settings are required, you can use the parameters page in a module to specify number sequences for the references in that module. For example, in **Accounts receivable** and **Accounts payable**, you can set up number sequence groups to allocate specific number sequences to specific customers or vendors.

@@ -1,15 +1,15 @@
 ---
 title: Global Inventory Accounting ledger
-description: This article describes Global Inventory Accounting ledgers, which are defined by a combination of a currency, a calendar, a convention, and an association with a legal entity.
+description: Learn about Global Inventory Accounting ledgers, which are defined by a combination of a currency, a calendar, a convention, and an association with a legal entity.
 author: JennySong-SH
-ms.date: 06/18/2021
-ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: yanansong
+ms.topic: article
+ms.date: 06/18/2021
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-06-18
+ms.search.form:
 ms.dyn365.ops.version: 10.0.20
 ---
 

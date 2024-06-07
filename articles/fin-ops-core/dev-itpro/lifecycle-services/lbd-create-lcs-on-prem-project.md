@@ -13,7 +13,9 @@ ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
 search.app:
   - financeandoperationsonprem-docs
+ms.service: dynamics-365-op
 ---
+
 # Set up on-premises projects in Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]

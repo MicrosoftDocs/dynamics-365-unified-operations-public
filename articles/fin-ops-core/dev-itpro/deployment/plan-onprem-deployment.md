@@ -10,6 +10,7 @@ audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform Update 8
+ms.service: dynamics-365-op
 ---
 
 # Plan and prepare for on-premises deployments

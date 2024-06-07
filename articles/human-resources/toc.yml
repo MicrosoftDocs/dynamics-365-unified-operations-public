@@ -553,7 +553,7 @@ items:
             href: ../human-resources/hr-personnel-mass-hire-projects.md
           - name: Create mass hire projects
             href: ../human-resources/hr-personnel-create-mass-hire-project.md
-        - name: Recruiting requests (merged infrastructure)
+        - name: Recruiting requests 
           items:
           - name: Recruit job candidates
             href: hr-personnel-recruit.md  

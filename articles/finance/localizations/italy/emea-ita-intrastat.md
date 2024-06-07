@@ -1,10 +1,10 @@
 ---
 title: Italian Intrastat
 description: Learn about Intrastat reporting in Italy, including a table defining various values, an overview, and a step-by-step process on setting up Intrastat.
-author: AdamTrukawka
-ms.author: atrukawk
+author: liza-golub
+ms.author: egolub
 ms.topic: article
-ms.date: 09/09/2021
+ms.date: 06/05/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global

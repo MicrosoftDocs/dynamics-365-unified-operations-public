@@ -1,15 +1,15 @@
 ---
 title: Running average cost price
-description: The inventory close process settles issue transactions to receipt transactions, based on the inventory valuation method that is selected in the item’s item model group. However, before inventory close is run, the system calculates a running average cost price that is typically used when issue transactions are posted.
+description: The inventory close process settles issue transactions to receipt transactions, based on the inventory valuation method that is selected.
 author: JennySong-SH
 ms.author: yanansong
-ms.reviewer: kamaybac
-ms.search.form: InventModelGroup, InventOnhandItem, InventTrans
 ms.topic: how-to
 ms.date: 05/27/2024
-audience: Application User
 ms.custom:
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: InventModelGroup, InventOnhandItem, InventTrans
 ---
 
 # Running average cost price

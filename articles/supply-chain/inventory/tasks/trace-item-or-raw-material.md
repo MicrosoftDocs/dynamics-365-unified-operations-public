@@ -1,26 +1,20 @@
 --- 
-# required metadata 
- 
 title: Trace an item or raw material
-description: This procedure demonstrates how to use item tracing to identify where items or raw materials have been used or are being used. 
-author: yufeihuang
+description: Learn how to use item tracing to identify where items or raw materials have been used or are being used, including a step-by-step process.
+author: yufei-huang
+ms.author: yufeihuang
+ms.topic: how-to
 ms.date: 08/12/2019
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria, InventTrackingItemIdLookup, InventBatchIdLookup, CustTable, SalesLine   
-audience: Application User 
-# ms.devlang:  
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria, InventTrackingItemIdLookup, InventBatchIdLookup, CustTable, SalesLine 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Trace an item or raw material
 
 [!include [banner](../../includes/banner.md)]

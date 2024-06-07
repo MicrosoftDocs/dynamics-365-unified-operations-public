@@ -27713,6 +27713,11 @@
       "source_path": "articles/supply-chain/rebate-management/rebate-management-enable.md",
       "redirect_url": "/dynamics365/supply-chain/rebate-management/rebate-management-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/demand-planning/intercompany-planning-groups-demand-forecasting.md",
+      "redirect_url": "/dynamics365/supply-chain/master-planning/intercompany-planning-groups-demand-forecasting",
+      "redirect_document_id": false
     }
   ]
 }

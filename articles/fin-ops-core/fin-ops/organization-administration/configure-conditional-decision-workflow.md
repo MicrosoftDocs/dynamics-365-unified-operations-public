@@ -19,8 +19,6 @@ ms.assetid: cd5554a4-210c-4c20-a7d3-4b1563c2b5df
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 Use the following procedure to configure the properties of a conditional decision.
 
 A conditional decision is a point at which a workflow divides into two branches. To configure a conditional decision, in the workflow editor, right-click the conditional decision, and then click **Properties** to open the **Properties** form.

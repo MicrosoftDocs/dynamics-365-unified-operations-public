@@ -17,9 +17,6 @@ ms.assetid: fc589d76-3927-4486-ab83-e86b9b47ba2c
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 This article explains how to display pages side by side.
 
 You may want to view multiple pages side by side to complete tasks quickly. As an example, you might want to validate or enter lines in more than one journal. Typically, to validate or enter lines in more than one journal, you would have to go back and forth between the page that displays a list of journals, and the page that displays lines for a given journal. However, the **Open in new window** feature enables you to display these pages side-by-side so that you can perform your tasks quickly.

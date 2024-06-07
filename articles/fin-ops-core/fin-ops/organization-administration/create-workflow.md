@@ -20,9 +20,6 @@ ms.assetid: 836ddd01-cc34-45c3-a4b0-20647357dbc6
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 This article explains how to create a workflow.
 
 ## Open the workflow editor

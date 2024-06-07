@@ -1,15 +1,15 @@
 ---
 title: Arrival overview
-description: This article provides information about the Arrival overview feature. The Arrival overview page is part of this feature and provides an overview of all items that are expected to arrive as incoming items.
-author: yufeihuang
+description: Learn about the Arrival overview feature, which is part of this feature and provides an overview of all items that are expected to arrive as incoming items.
+author: yufei-huang
 ms.author: yufeihuang
-ms.reviewer: kamaybac
-ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 ms.topic: how-to
 ms.date: 05/27/2024
-audience: Application User
 ms.custom:
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 ---
 
 # Arrival overview

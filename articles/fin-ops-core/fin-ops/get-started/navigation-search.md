@@ -17,9 +17,6 @@ ms.assetid: eef0676f-c4b1-490e-a032-e9c8580f3fea
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 This article explains how to use the search functionality to navigate to pages.
 
 The application includes many areas and pages to help you perform various tasks. To quickly find the pages that you need to complete your tasks, use the navigation search feature.

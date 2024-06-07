@@ -1,26 +1,20 @@
 ---
-# required metadata
-
 title: Create and process nonconformances
-description: This article describes how to perform nonconformance management based on an existing quality order.
-author: yufeihuang
-ms.date: 03/23/2021
+description: Learn how to perform nonconformance management based on an existing quality order, including a step-by-step process for creating a nonconformance.
+author: yufei-huang
+ms.author: yufeihuang
 ms.topic: how-to
-
-# optional metadata
-
-# ms.search.form:   
-audience: Application User
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.date: 03/23/2021
+ms.custom:
+ms.reviewer: kamaybac 
+audience: Application User 
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
 ---
+
 # Create and process nonconformances
 
 [!include [banner](../../includes/banner.md)]

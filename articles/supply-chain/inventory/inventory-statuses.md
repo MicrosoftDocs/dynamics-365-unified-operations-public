@@ -1,15 +1,15 @@
 ---
 title: Inventory statuses
-description: This article describes how you can use inventory statuses to categorize and keep track of inventory.
-author: yufeihuang
+description: Learn how you can use inventory statuses to categorize and keep track of inventory with an outline on setting up and using inventory statuses.
+author: yufei-huang
 ms.author: yufeihuang
-ms.reviewer: kamaybac
-ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus, WHSWarehouseStatusChange
 ms.topic: how-to
 ms.date: 05/27/2024
-audience: Application User
 ms.custom:
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus, WHSWarehouseStatusChange
 ---
 
 # Inventory statuses
