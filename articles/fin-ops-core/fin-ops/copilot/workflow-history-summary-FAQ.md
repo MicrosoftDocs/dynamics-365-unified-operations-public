@@ -45,4 +45,4 @@ The AI-generated text and draft email options are optional and can be turned off
 
 ## See also
 
-- [Collections coordinator summary](../../../finance/accounts-receivable/collectionscoordinatorsummary.md)
+- [Workflow history summary](../../organization-administration/workflow-history-summary.md)
