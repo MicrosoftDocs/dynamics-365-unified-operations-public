@@ -14,6 +14,7 @@ ms.dyn365.ops.version: AX 7.3.0
 ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
 search.app:
   - financeandoperationsonprem-docs
+ms.service: dynamics-365-op
 ---
 
 # Independent software vendor (ISV) licensing (on-premises)
