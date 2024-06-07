@@ -1,15 +1,15 @@
 ---
 title: Inventory blocking
-description: This article describes how to work with inventory blocking, which is part of the quality inspection process in Supply Chain Management. You can use inventory blocking to prevent items from being processed or consumed.
-author: yufeihuang
+description: Learn how to work with inventory blocking, which is part of the quality inspection process in Supply Chain Management, with an outline on manually blocking items.
+author: yufei-huang
 ms.author: yufeihuang
-ms.reviewer: kamaybac
-ms.search.form: InventBlocking, InventQualityOrderTable
 ms.topic: how-to
 ms.date: 05/27/2024
-audience: Application User
 ms.custom:
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: InventBlocking, InventQualityOrderTable
 ---
 
 # Inventory blocking

@@ -1,17 +1,17 @@
 ---
 title: Inquire into inventory with Copilot (preview)
-description: The inventory visibility service interacts with Microsoft Copilot to provide a natural-language inventory search function. The functionality is available both from inside the Inventory Visibility app and through APIs (which developers can code against to create an interactive inventory chatbot for their own applications and web sites).
+description: Learn how the inventory visibility service interacts with Microsoft Copilot to provide a natural-language inventory search function.
 author: Weijiesa
 ms.author: weijiesa
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 11/07/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
 ms.collection:
   - bap-ai-copilot
+audience: Application User
+ms.search.region: Global
+ms.search.form:
 ---
 
 

@@ -1,15 +1,15 @@
 ---
 title: Inventory journals
-description: This article describes how you can use inventory journals to post various types of physical inventory transactions.
-author: yufeihuang
+description: Learn how you can use inventory journals to post various types of physical inventory transactions with an outline on types of inventory journals.
+author: yufei-huang
 ms.author: yufeihuang
-ms.reviewer: kamaybac
-ms.search.form: InventJournalBOM, InventJournalCount, InventJournalCountTag, InventJournalLossProfit, InventJournalMovement, InventJournalTransfer, WMSJournalTable
 ms.topic: how-to
 ms.date: 05/27/2024
-audience: Application User
 ms.custom:
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: InventJournalBOM, InventJournalCount, InventJournalCountTag, InventJournalLossProfit, InventJournalMovement, InventJournalTransfer, WMSJournalTable
 ---
 
 # Inventory journals
