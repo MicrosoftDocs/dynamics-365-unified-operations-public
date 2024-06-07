@@ -1,23 +1,21 @@
 ---
-title: Shipping address module (preview)
+title: Shipping address module
 description: This article covers the shipping address module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/09/2024
 ms.topic: article
 audience: Application user
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.13
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 
-# Shipping address module (preview)
+# Shipping address module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article describes covers the shipping address module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 
