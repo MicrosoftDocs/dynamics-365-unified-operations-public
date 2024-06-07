@@ -7,8 +7,8 @@ ms.collection:
 ms.custom:
   - responsible-ai-faqs
 ms.topic: article
-author: benebotg
-ms.author: t-benebo
+author: t-benebo
+ms.author: benebotg
 ms.reviewer: kamaybac
 ---
 
