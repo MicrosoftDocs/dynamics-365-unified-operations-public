@@ -296,8 +296,11 @@ In the **Feature management** workspace, the **(Saudi Arabia) QR codes in Tax an
 
 1. Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Form setup**.
 2. Select **Print management**.
-3. Select the **Customer invoice** report, and then, in the **Report format** field, refer to the **SalesInvoice.Report_SA** layout.
-4. Select the **Free text invoice** report, and then, in the **Report format** field, refer to the **FreeTextInvoice.Report_SA** layout.
+3. Select the **Customer invoice** report, and then, in the **Report format** field, refer to the **SalesInvoice.ReportFull_MY** or **SalesInvoice.ReportSimplified_MY** layout.
+4. Select the **Free text invoice** report, and then, in the **Report format** field, refer to the **FreeTextInvoice.ReportFull_MY** or **FreeTextInvoice.ReportSimplified_MY** layout.
+
+**PSAProjInvoice.ReportFull_MY** or **PSAProjInvoice.ReportSimplified_MY** for for project invoices without billing rules.
+**PSAContractLineInvoice.ReportFull_MY** or **PSAContractLineInvoice.ReportSimplified_** for for project invoices with billing rules.
 
 ### Enable VAT numbers to be printed on invoices
 
