@@ -4,7 +4,7 @@
 title: Enable Copilot in Dynamics 365 Finance
 description: This article explains how to enable the functionality that's related to Microsoft Copilot in Dynamics 365 Finance. 
 author: JodiChristiansen
-ms.date: 05/23/2024
+ms.date: 06/07/2024
 ms.topic: article
 ms.collection: bap-ai-copilot
 
@@ -46,7 +46,7 @@ The subscription for your Finance app includes a Dataverse environment that's de
 
 Confirm that Power Platform Integration is enabled in Microsoft Dynamics Lifecycle Services. For more information, see [Enable Power Platform Integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md) and [Lifecycle Services (LCS) user guide](../../fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md). You don't have to enable dual-write for this feature.
 
-### Step 2: Turn on Copilot in Finance
+### Step 2: Turn on Copilot in Dynamics 365 Finance
 
 > [!NOTE]
 > Copilots and generative AI features that are generally available are turned on by default.
