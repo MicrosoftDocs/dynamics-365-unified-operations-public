@@ -18,7 +18,6 @@ ms.dyn365.ops.version: AX 10.0.29
 # REPEAT ER function
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 The `REPEAT` function builds a record that contains the field that has a value that matches the specified input. It then returns a new *Record list* of a record that is repeated a specified number of times.
 

@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 Finance archive with Dataverse long term retention FAQ (preview)
+title: Dynamics 365 Finance archive with Dataverse long term retention FAQ
 description: Access answers to frequently asked questions about archiving data in Microsoft Dynamics 365 Finance with Dataverse.
 author: pnghub
 ms.author: gned
@@ -10,9 +10,7 @@ ms.custom:
 ms.reviewer: twheeloc
 ---
 
-# Dynamics 365 Finance archive with Dataverse long term retention FAQ (preview)
-
-[!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
+# Dynamics 365 Finance archive with Dataverse long term retention FAQ
 
 ## Does testing archiving with Dataverse long-term retention require a sandbox environment?
 

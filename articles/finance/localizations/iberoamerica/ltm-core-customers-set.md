@@ -12,7 +12,6 @@ ms.reviewer: johnmichalak
 # Customer sets for Latin America
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 You can define which document classes are allowed in transactions with customers. You can also define the predetermined document classes for transactions with specific customers.
 

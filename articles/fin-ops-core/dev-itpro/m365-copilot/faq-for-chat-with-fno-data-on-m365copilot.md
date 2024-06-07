@@ -1,5 +1,5 @@
 ---
-title: Responsible AI FAQ for finance and operations data on Microsoft 365 Copilot (Preview)
+title: Responsible AI FAQ for finance and operations data on Microsoft 365 Copilot
 description: Learn how to use Microsoft 365 Copilot to chat with finance and operations data through virtual entities in Dataverse.
 author: RamaKrishnamoorthy
 ms.author: ramasri
@@ -16,10 +16,9 @@ ms.search.form:
 ms.dyn365.ops.version: 10.0.35 PU59
 ---
 
-# Responsible AI FAQ for finance and operations data on Microsoft 365 Copilot (preview)
+# Responsible AI FAQ for finance and operations data on Microsoft 365 Copilot
 
 [!include[banner](../includes/banner.md)]
-[!INCLUDE[banner](../includes/preview-banner.md)]
 
 This article explains how to use Microsoft 365 Copilot to chat with finance and operations data through virtual entities in Dataverse.
 

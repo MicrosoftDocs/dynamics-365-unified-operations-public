@@ -14,7 +14,6 @@ ms.search.validFrom: 2022-12-21
 # Trigger dual-write for mapped fields
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 Today when a table participating in dual-write gets updated, the dual-write platform core plugins are triggered regardless of whether the updated table field is participating in dual-write map or not. As a result, there are performance issues due to redundant call overhead against dual-write tables.  
 
