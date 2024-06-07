@@ -386,11 +386,11 @@
             href: dev-itpro/store-commerce-capabilities.md
           - name: Store Commerce app FAQ
             href: dev-itpro/store-commerce-faq.md
-          - name: Store Commerce app for mobile platforms (preview)
+          - name: Store Commerce app for mobile platforms
             href: dev-itpro/store-commerce-mobile.md
           - name: Export POS screen layouts for import to a new environment
             href: export-pos-layouts.md
-          - name: Enable self-checkout in the Store Commerce app (preview)
+          - name: Enable self-checkout in the Store Commerce app
             href: store-commerce-self-check-out.md
           - name: Migrate Modern POS to Store Commerce
             href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
@@ -1336,15 +1336,15 @@
             href: add-cart-module.md
           - name: Cart icon module
             href: cart-icon-module.md
-          - name: Checkout module (preview)
+          - name: Checkout module
             href: add-checkout-module.md
           - name: Checkout module error reference codes
             href: checkout-module-error-codes.md
           - name: Payment module
             href: payment-module.md
-          - name: Shipping address module (preview)
+          - name: Shipping address module
             href: ship-address-module.md
-          - name: Delivery options module (preview)
+          - name: Delivery options module
             href: delivery-options-module.md
           - name: Pickup information module
             href: pickup-info-module.md
