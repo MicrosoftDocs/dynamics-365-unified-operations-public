@@ -12,6 +12,7 @@ ms.search.region: Global
 ms.search.validFrom: 2020-04-30
 # ms.search.form: [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: Platform update 36 
+ms.service: dynamics-365-op
 ---
 
 # Configure Batch-only and Interactive-only AOS nodes in on-premises deployments

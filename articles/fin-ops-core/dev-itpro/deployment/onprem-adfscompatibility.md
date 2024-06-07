@@ -12,6 +12,7 @@ ms.search.region: Global
 ms.search.validFrom: 2019-07-31 
 # ms.search.form: [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: Platform update 28 
+ms.service: dynamics-365-op
 ---
 
 # AD FS Microsoft 365 compatibility

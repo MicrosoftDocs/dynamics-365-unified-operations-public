@@ -12,6 +12,7 @@ ms.search.region: Global
 ms.search.validFrom: 2020-03-31
 ms.search.form:
 ms.dyn365.ops.version: Platform update 34
+ms.service: dynamics-365-op
 ---
 
 # Remove and reinstall, or add an AOS node

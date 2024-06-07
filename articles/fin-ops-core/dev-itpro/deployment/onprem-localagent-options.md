@@ -9,6 +9,7 @@ ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-08-03
+ms.service: dynamics-365-op
 ---
 
 # Deployment configurations for the local agent

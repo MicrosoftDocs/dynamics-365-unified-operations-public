@@ -11,6 +11,7 @@ ms.search.region: Global
 ms.search.validFrom: 2017-12-04
 ms.search.form: 
 ms.dyn365.ops.version: 7.3
+ms.service: dynamics-365-op
 ---
 
 # Configure the Warehousing app for on-premises deployments

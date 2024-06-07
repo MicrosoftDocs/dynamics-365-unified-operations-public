@@ -13,6 +13,7 @@ ms.search.form:
 ms.dyn365.ops.version: Platform update 8
 search.app:
   - financeandoperationsonprem-docs
+ms.service: dynamics-365-op
 ---
 
 # System requirements for on-premises deployments

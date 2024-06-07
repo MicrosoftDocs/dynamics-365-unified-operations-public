@@ -10,6 +10,7 @@ audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 
 ms.search.form: 2022-04-08
+ms.service: dynamics-365-op
 ---
 # Troubleshoot upgrades to Dynamics 365 Finance + Operations self-service environments
 

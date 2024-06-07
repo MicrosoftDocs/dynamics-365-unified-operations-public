@@ -9,6 +9,7 @@ ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2022-06-03
+ms.service: dynamics-365-op
 ---
 
 # Enable RSAT in Finance + Operations (on-premises) environments
