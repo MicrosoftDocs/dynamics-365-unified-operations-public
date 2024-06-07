@@ -3,7 +3,6 @@ title: Independent software vendor (ISV) licensing (on-premises)
 description: Learn about the independent software vendor (ISV) licensing feature for on-premises environments, including outlines on generating license files and automated imports.
 author: faix
 ms.author: osfaixat
-ms.topic: article
 ms.date: 09/16/2022
 ms.topic: article
 ms.reviewer: johnmichalak
