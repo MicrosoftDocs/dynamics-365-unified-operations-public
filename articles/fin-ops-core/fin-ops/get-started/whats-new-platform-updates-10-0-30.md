@@ -17,7 +17,6 @@ ms.search.validFrom: 2022-08-19
 # Platform updates for version 10.0.30 of finance and operations apps (November 2022)
 
 [!include [banner](../../../finance/includes/banner.md)]
-[!include [banner](../../../finance/includes/preview-banner.md)]
 
 This article lists the features that are included in the platform updates for version 10.0.30 of finance and operations apps. This version has a build number of 7.0.6592 and is available on the following schedule:
 

@@ -17,7 +17,6 @@ ms.assetid:
 # Import data from manually selected files in batch mode
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 To use the [Electronic reporting (ER)](general-electronic-reporting.md) framework to import data from manually selected inbound files in batch mode, configure an ER [format](er-overview-components.md#format-component) that supports the import. Then run a [model mapping](er-overview-components.md#model-mapping-component) of the **To destination** type that uses that format as a data source. To import data, browse to the file that you want to import, and manually select it. 
 

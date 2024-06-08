@@ -1,5 +1,5 @@
 ---
-title: Archive Dynamics 365 Finance Tax transactions data (preview)
+title: Archive Dynamics 365 Finance Tax transactions data
 description: Learn about how to archive Dynamics 365 Finance Tax transactions data, including prerequisites and the process of setting up archival jobs.
 author: epodkolz
 ms.author: epodkolzina
@@ -8,9 +8,7 @@ ms.date: 4/10/2024
 ms.custom:
 ms.reviewer: twheeloc
 ---
-# Archive Dynamics 365 Finance Tax transactions data (preview)
-
-[!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
+# Archive Dynamics 365 Finance Tax transactions data
 
 This article explains how to archive Dynamics 365 Finance Tax transactions data.
 
