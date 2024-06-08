@@ -15,7 +15,6 @@ ms.dyn365.ops.version: 10.0.18
 #  Withholding tax declaration for Egypt (EG-00005)
 
 [!include[banner](../../includes/banner.md)]
-[!include[banner](../../includes/preview-banner.md)]
 
 ## Overview
 This article explains how to set up and generate the withholding tax declaration and the withholding tax declaration forms 41 and 11 for legal entities in Egypt 
