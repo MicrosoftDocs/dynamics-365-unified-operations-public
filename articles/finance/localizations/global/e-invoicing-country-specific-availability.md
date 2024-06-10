@@ -61,4 +61,4 @@ The following table shows the Electronic invoicing features that are currently i
 | Country or region | Globalization feature name | Business documents |
 |-------------------|----------------------------|--------------------|
 | Mexico | Mexican CFDI Interfactura (MX) | Sales invoices, packing slips, inventory transfers, payment complements, and cancellations |
-| Poland | Polish KSeF submission (PL) | Sales invoices, project invoices, and advance invoices |
+| Poland | [Polish electronic invoice (PL)](../poland/gs-e-invoicing-pol-get-started) | Sales invoices, project invoices, and advance invoices |
