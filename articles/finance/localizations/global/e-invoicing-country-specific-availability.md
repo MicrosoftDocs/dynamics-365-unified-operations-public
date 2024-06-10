@@ -49,9 +49,8 @@ The following table shows the Electronic invoicing features that are generally a
 | New Zealand | [Electronic invoicing for Australia and New Zealand](../apac/GS-apac-aus-nzl-electronic-invoices.md) | Sales invoices and project invoices |
 | Norway | Norwegian electronic invoice (NO) | Sales invoices and project invoices |
 | Panama | LATAM e-invoice PA | Sales invoices and project invoices |
-| Saudi Arabia | Saudi Arabian electronic invoice (SA) | Phase 1: Sales invoices and project invoices |
-| Saudi Arabia | Saudi Arabian Zatca submission (SA) | Phase 2: Sales invoices and project invoices |
-| Saudi Arabia | Saudi Arabian Zatca compliance check (SA) | Phase 2: Onboarding process |
+| Saudi Arabia | [Saudi Arabian Zatca submission (SA)](../mea/gs-e-invoicing-sa-get-started.md) | Sales invoices and project invoices |
+| Saudi Arabia | [Saudi Arabian Zatca compliance check (SA)](../mea/gs-e-invoicing-sa-onboarding.md) | Onboarding process |
 | Spain | Spanish electronic invoice (ES) | Sales invoices and project invoices |
 
 ## Preview features
