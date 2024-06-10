@@ -1,15 +1,15 @@
 ---
 title: Landed cost parameters setup
-description: This article describes how to set up general information and configuration settings that are used across the Landed cost module for posting, status updates, number sequences, and behavior.
+description: Learn how to set up configuration settings that are used across the Landed cost module for posting, status updates, number sequences, and behavior.
 author: Weijiesa
 ms.author: weijiesa
-ms.reviewer: kamaybac
-ms.search.form: ITMParameters
 ms.topic: how-to
 ms.date: 05/22/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: ITMParameters
 ---
 
 # Landed cost parameters setup
