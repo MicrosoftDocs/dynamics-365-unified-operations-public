@@ -4,7 +4,7 @@ description: Learn aboutthe templates and underlying tasks that are used to sync
 author: Henrikan
 ms.author: henrikan
 ms.topic: article
-ms.date: 10/25/2018
+ms.date: 06/10/2024
 ms.custom: 
 ms.reviewer: kamaybac
 audience: IT Pro
