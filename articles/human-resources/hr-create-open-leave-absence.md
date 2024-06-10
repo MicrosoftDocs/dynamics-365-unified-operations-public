@@ -25,8 +25,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Create an open-ended leave of absence
 
-> [!IMPORTANT]
-> The functionality that is described in this article will be available on the Finance infrastructure as part of a future release after Microsoft Dynamics 365 Finance release 10.0.31.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
