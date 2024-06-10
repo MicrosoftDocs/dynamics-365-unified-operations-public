@@ -31,7 +31,7 @@ After you configure electronic invoicing, you can generate, digitally sign, and 
 Before you begin the procedures in this article, the following prerequisites must be met:
 
 - The primary address of the legal entity must be in Malaysia.
-- Your company must be a registered taxpayer in Malaysia and must have the following registration numbers: Tax Identification Number (TIN), business registration number (BRN), and Sales and Service Tax (SST) number.
+- Your company must be a registered taxpayer in Malaysia and must have the following registration numbers: Tax Identification Number (TIN) and business registration number (BRN).
 - Obtain **Client ID** and **Client secret** values in the [Inland Revenue Board of Malaysia (IRBN)](https://www.hasil.gov.my/) (Lembaga Hasil Dalam Negeri Malaysia \[LHDN\]). These values serve as credentials that are used to establish a secure connection to the IRBN portal.
 - Obtain a digital signature certificate from one of the [Malaysian certification authorities](https://www.mcmc.gov.my/en/sectors/digital-signature/list-of-licensees). This certificate is used for digital signing of generated electronic invoices.
 - Become familiar with electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
@@ -126,7 +126,7 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
 ## <a id="NRIC"></a>Configure registration numbers
 
 > [!NOTE]
-> When the output files of electronic invoices are generated, registration numbers of the **Enterprise ID (COID)** category are used as BRNs. If the **Enterprise ID (COID)** registration category already exists and has been assigned to a registration type, skip this procedure.
+> When the output files of electronic invoices are generated, registration numbers of the **Enterprise ID (COID)** category are used as **Business Registration Numbers (BRN)**. If the **Enterprise ID (COID)** registration category already exists and has been assigned to a registration type, skip this procedure.
 
 1. Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
 1. Create a registration type.
@@ -135,10 +135,6 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
 1. Create a registration category.
 1. In the **Registration types** field, select the registration type that you created in step 2.
 1. In the **Registration categories** field, select **Enterprise ID (COID)**.
-
-## <a id="SST"></a>Configure SST numbers
-
-To configure an SST number, follow the instructions in [SST registration number](apac-mys-gst.md#gstsst-registration-number).
 
 ## Configure electronic document property types
 
@@ -189,9 +185,7 @@ Follow these steps to configure the structure of the postal address to define al
 1. On the **Registration ID** FastTab, select **Add** to create a registration ID.
 1. In the **Registration type** field, select the [BRN](#NRIC) registration type that you created earlier.
 1. In the **Registration number** field, enter a valid BRN registration number for the selected legal entity. 
-1. Select **Add** to create another registration ID.
-1. In the **Registration type** field, select the [SST](#SST) registration type that you created earlier.
-1. In the **Registration number** field, enter a valid SST registration number for the selected legal entity.
+
 
 ### Enter a business activity code and description
 
@@ -217,7 +211,7 @@ Follow these steps to configure the structure of the postal address to define al
 1. On the **Sales demographics** FastTab, in the **Primary contact** field, select the person who is considered the buyer's contact.
 
     > [!NOTE]
-    > All available contact persons must already be defined for the selected customer. Make sure that the selected contact person has a valid email address. This email address will be used to send generated electronic invoices to the customer.
+    > All available contact persons must already be defined for the selected customer. Make sure that the selected contact person has a valid email address and phone number.
 
 ### Enter the registration numbers
 
@@ -227,9 +221,11 @@ Follow these steps to configure the structure of the postal address to define al
 1. On the **Registration ID** FastTab, select **Add** to create a registration ID.
 1. In the **Registration type** field, select the [BRN](#NRIC) registration type that you created earlier.
 1. In the **Registration number** field, enter a valid BRN registration number for the selected customer. 
-1. Select **Add** to create another registration ID.
-1. In the **Registration type** field, select the [SST](#SST) registration type that you created earlier.
-1. In the **Registration number** field, enter a valid SST registration number for the selected customer.
+
+    > [!NOTE]
+    > It is not mandatory to always have actual Tax registration numbers for **foreign** customers. If not defined then the following general numbers will be used.
+    > - **EI00000000020** as Customer's **TIN**.
+    > - **NA** as Customer's **BRN**.
 
 ## Configure funding sources
 
@@ -241,9 +237,40 @@ If business processes assume that **project invoices** are issued, follow these 
 1. On the **Funding source details** page, on the **Other** FastTab, in the **Contact** section, in the **Contact ID** field, select a valid contact person.
 
     > [!NOTE]
-    > All available contact persons must already be defined for the selected customer. Make sure that the selected contact person has a valid email address. This email address will be used to send generated electronic invoices to the customer.
+    > All available contact persons must already be defined for the selected customer. Make sure that the selected contact person has a valid email address and phone number.
 
-## Configure vendor data ???????????????????????????????????????????????????????
+## Configure vendor data
+
+Self-invoices.................
+
+### Enter the address
+
+1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
+1. Select a vendor.
+1. On the **Addresses** FastTab, add a valid address for the selected vendor.
+
+### Enter the contact person
+
+1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
+1. Select a vendor.
+1. On the **Purchasing demographics** FastTab, in the **Primary contact** field, select the person who is considered the buyer's contact.
+
+    > [!NOTE]
+    > All available contact persons must already be defined for the selected vendor. Make sure that the selected contact person has a valid email address and phone number.
+
+### Enter the registration numbers
+
+1.Go to **Accounts payable** \> **Vendors** \> **All vendors**.
+1. Select a vendor, and then, on the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid TIN for the vendor.
+1. On the Action Pane, on the **Vendor** tab, in the **Registration** group, select **Registration IDs**.
+1. On the **Registration ID** FastTab, select **Add** to create a registration ID.
+1. In the **Registration type** field, select the [BRN](#NRIC) registration type that you created earlier.
+1. In the **Registration number** field, enter a valid BRN registration number for the selected vendor. 
+
+    > [!NOTE]
+    > It is not mandatory to always have actual Tax registration numbers for foreign vendors. If not defined then the following general numbers will be used.
+    > - **EI00000000030** as Vendor's **TIN**.
+    > - **NA** as Vendor's **BRN**.
 
 ## Configure the application-specific parameters
 
