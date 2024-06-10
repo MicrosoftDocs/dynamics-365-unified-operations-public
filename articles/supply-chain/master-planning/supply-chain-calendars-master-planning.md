@@ -44,6 +44,14 @@ The coverage group can be assigned on different pages:
 - On the **Item coverage** page. On the **Released product details** page, select **Item coverage** to open the **Item coverage** page. The **Overview** tab shows different parameters for replenishment, depending on the site, warehouse, and product dimensions. The coverage group for each item is inherited from the coverage group on the **Released product details** page. However, you can override it by selecting **Use specific settings** or **Override group setting** on the **General** tab.
 - On the **Master planning parameters** page. If no coverage group is assigned to an item on the previously mentioned pages, master planning uses the general coverage group that's set in the **General coverage group** field on the **Master planning parameters** page (**Master planning** \> **Setup** \> **Master planning parameters**).
 
+#### Define the lead time for a purchased item
+
+You specify the purchase lead time for an item (and whether only working days should be considered) on the **Default order settings** page for the product. To open this page, go to **Product information management** \> **Products** \> **Released products**, and select **Default order settings**.
+
+> [!NOTE]
+> The **Working days** under purchase lead time indicates the working days of the calendar for the coverage group. For example, a calendar for delivery only on Tuesdays with a lead time of 10 days and working days checkbox selected indicates that it would take 10 weeks (10 Tuesdays) for the item to be delivered.
+Thus, in most cases it isn't recommended to select working days for purchase order lead times.
+> 
 ### Calendars for a vendor
 
 #### Vendor working days and shipping days
@@ -54,14 +62,6 @@ You can set up calendars that define each vendor's standard operating hours (tha
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**, and select the vendor that you want to assign the calendars to.
 1. To set the standard operating hours for the vendor, on the **Purchase order defaults** FastTab, in the **Purchase calendar** field, select a calendar.
 1. The days when the vendor can ship orders might differ from the standard operating hours. To set the shipping days, on the **Invoice and delivery** FastTab, in the **Ship calendar** field, select a calendar. For more information about this field and how it's used, see [Calculate requested ship dates for purchase orders](supplier-requested-confirmed-dates.md).
-
-#### Define the lead time for a purchased item
-
-You specify the purchase lead time for an item (and whether only working days should be considered) on the **Default order settings** page for the product. To open this page, go to **Product information management** \> **Products** \> **Released products**, and select **Default order settings**.
-
-> [!NOTE]
-> The **Working days** under purchase lead time indicates the working days of the vendor. For example, a calendar for delivery only on Tuesdays with a lead time of 10 days and working days checkbox selected indicates that it would take 10 weeks (10 Tuesdays) for the item to be delivered.
-Thus, in most cases it isn't recommended to select working days for purchase order lead times.
 
 #### Define lead times from the trade agreements page
 
