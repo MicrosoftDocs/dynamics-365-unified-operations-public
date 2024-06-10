@@ -4,7 +4,7 @@ description: Learn about the Integration with Microsoft Dynamics 365 Field Servi
 author: Henrikan
 ms.author: henrikan
 ms.topic: overview
-ms.date: 07/25/2019
+ms.date: 06/10/2024
 ms.reviewer: kamaybac
 audience: IT Pro
 ms.search.region: global
