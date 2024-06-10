@@ -49,9 +49,8 @@ The coverage group can be assigned on different pages:
 You specify the purchase lead time for an item (and whether only working days should be considered) on the **Default order settings** page for the product. To open this page, go to **Product information management** \> **Products** \> **Released products**, and select **Default order settings**.
 
 > [!NOTE]
-> The **Working days** under purchase lead time indicates the working days of the calendar for the coverage group. For example, a calendar for delivery only on Tuesdays with a lead time of 10 days and working days checkbox selected indicates that it would take 10 weeks (10 Tuesdays) for the item to be delivered.
-Thus, in most cases it isn't recommended to select working days for purchase order lead times.
-> 
+> The **Working days** checkbox for purchase lead time indicates working days as counted on the coverage group calendar. For example, a coverage group calendar set to allow delivery only on Tuesdays, with a lead time of 10 days and the **Working days** checkbox selected, indicates that it would take 10 weeks (10 Tuesdays) for the item to be delivered. Therefore, in most cases, you shouldn't select **Working days** for purchase order lead times.
+
 ### Calendars for a vendor
 
 #### Vendor working days and shipping days
