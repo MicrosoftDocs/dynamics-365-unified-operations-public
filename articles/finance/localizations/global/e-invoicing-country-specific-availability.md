@@ -22,7 +22,7 @@ The availability of Electronic invoicing Service globalization features depends 
 
 > [!NOTE]
 > This article is related only to the globalization features introduced in the scope of the Electronic Invoicing Service and doesn’t cover other approaches for supported e-Invoicing capabilities for some countries designed based on built-in X++ code and the Electronic Messaging framework.
-> For more information, see [Electronic Invoicing](gs-e-invoicing-service-overview) and [Electronic messaging](../../general-ledger/electronic-messaging.md).
+> For more information, see [Electronic Invoicing](gs-e-invoicing-service-overview.md) and [Electronic messaging](../../general-ledger/electronic-messaging.md).
 
 > [!IMPORTANT]
 > It’s important to note that we had planned to transition NF-e/NFS-e and CFDI to our Electronic Invoicing Service and the features and formats have been under preview for quite a while in Brazil and Mexico, respectively. However, due to lack of interest for adoption and transition to the new approach, we are still evaluating the timing of the switch to the Electronic Invoicing Service platform in these countries. The documents’ formats will not contain the latest compliance changes published since the preview release. 
