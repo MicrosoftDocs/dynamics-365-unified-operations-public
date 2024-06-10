@@ -241,7 +241,7 @@ If business processes assume that **project invoices** are issued, follow these 
 
 ## Configure vendor data
 
-Self-invoices.................
+If business processes assume issuing of self-invoices then required vendor data must be also configured.
 
 ### Enter the address
 
