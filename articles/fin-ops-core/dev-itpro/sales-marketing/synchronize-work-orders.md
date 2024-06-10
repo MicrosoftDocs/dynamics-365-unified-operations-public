@@ -4,7 +4,7 @@ description: Learn about the templates used to synchronize work orders with proj
 author: Henrikan
 ms.author: henrikan
 ms.topic: article
-ms.date: 03/12/2019
+ms.date: 06/10/2024
 ms.reviewer: kamaybac
 audience: IT Pro
 ms.search.region: global
