@@ -272,6 +272,9 @@ Self-invoices.................
     > - **EI00000000030** as Vendor's **TIN**.
     > - **NA** as Vendor's **BRN**.
 
+> [!NOTE]
+> Malaysian Standard Industrial Classification (MSIC code ) might not be applicable to foreign vendors. The fixed value **00000** will be used for the activity code and **NA** value will be used as the activity description.
+
 ## Configure the application-specific parameters
 
 This setup is required to establish mapping between Sales Tax codes used in the system and legally required [Tax types](https://sdk.myinvois.hasil.gov.my/codes/tax-types/#list).
