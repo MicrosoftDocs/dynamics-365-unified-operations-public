@@ -4,7 +4,7 @@ description: Learn about where the financial dimensions originate, the APIs that
 author: RyanCCarlson2
 ms.author: rcarlson
 ms.topic: article
-ms.date: 01/09/2020
+ms.date: 06/10/2024
 ms.reviewer: kfend
 audience: Developer
 ms.search.region: Global
