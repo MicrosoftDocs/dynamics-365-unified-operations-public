@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Asset types
-description: This article explains how to create asset types in Asset Management. It also describes the elements that are related to asset types.
+description: Learn how to create asset types in Asset Management. It also describes the elements that are related to asset types, including a step-by-step process.
 author: johanhoffmann
-ms.date: 10/15/2019
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: EntAssetObjectJobType, EntAssetObjectType, EntAssetObjectTypeDefaultSparePart, EntAssetObjectTypeDefaultSparePartApprove, EntAssetObjectTypeDefaultCreateCombinations, EntAssetObjectTypeDefault, EntAssetObjectTypeDefaultCopy 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
+ms.topic: article
+ms.date: 10/15/2019
+ms.custom: 
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2019-09-30
+ms.search.form: EntAssetObjectJobType, EntAssetObjectType, EntAssetObjectTypeDefaultSparePart, EntAssetObjectTypeDefaultSparePartApprove, EntAssetObjectTypeDefaultCreateCombinations, EntAssetObjectTypeDefault, EntAssetObjectTypeDefaultCopy 
 ms.dyn365.ops.version: 10.0.5
-
 ---
 
 # Asset types

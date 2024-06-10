@@ -12,6 +12,7 @@ ms.search.region: Global
 ms.search.validFrom:
 ms.search.form:
 ms.dyn365.ops.version: 
+ms.service: dynamics-365-op
 ---
 
 # Obtain the infrastructure scripts for your Finance + Operations (on-premises) deployment

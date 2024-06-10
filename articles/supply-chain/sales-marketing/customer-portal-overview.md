@@ -6,10 +6,10 @@ ms.author: henrikan
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 03/06/2023
+ms.date: 06/07/2024
 audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
+ms.custom: 
+  - bap-template
 ---
 
 # Customer portal for Dynamics 365 Supply Chain Management overview
@@ -34,7 +34,7 @@ The Customer portal template has all the customization capabilities that the por
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ylwW]
 
-The [Overview of the Customer portal template in Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+The [Overview of the Customer portal template in Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8) video is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 ## Who should use it?
 

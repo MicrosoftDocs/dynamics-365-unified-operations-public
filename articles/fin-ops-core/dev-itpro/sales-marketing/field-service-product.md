@@ -60,7 +60,7 @@ The following illustrations show the template mapping in Data integration.
 
 ### Field Service Products (Supply Chain Management to Field Service): Products - Products
 
-[![Template mapping in Data integration.](../../../supply-chain/sales-marketing/media/FSProduct.png)](/media/FSProduct.png)
+![Template mapping in Data integration.](../../../supply-chain/sales-marketing/media/FSProduct.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

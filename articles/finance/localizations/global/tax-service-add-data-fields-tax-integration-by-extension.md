@@ -33,7 +33,7 @@ Here is a list of the major objects:
 
 The following illustration shows how these objects are related.
 
-[![Data model object relationship.](../media/tax-service-customize-image1.png)]
+![Data model object relationship.](../media/tax-service-customize-image1.png)]
 
 A **Document** object can contain many **Line** objects. Each object contains metadata for the tax service.
 

@@ -1,15 +1,15 @@
 ---
 title: Inventory on-hand list
-description: This article describes how to use the On-hand list page to inspect on-hand inventory details. It shows a few of the ways that the various filtering and sorting options work together, and how those options can sometimes produce unexpected results when they are combined.
-author: yufeihuang
+description: Learn how to use the On-hand list page to inspect on-hand inventory details, including an outline on querying your on-hand inventory.
+author: yufei-huang
 ms.author: yufeihuang
-ms.reviewer: kamaybac
-ms.search.form: InventOnhandItem, InventOnHandItemListPage, WHSOnHand
 ms.topic: how-to
 ms.date: 05/27/2024
-audience: Application User
 ms.custom:
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: InventOnhandItem, InventOnHandItemListPage, WHSOnHand
 ---
 
 # Inventory on-hand list

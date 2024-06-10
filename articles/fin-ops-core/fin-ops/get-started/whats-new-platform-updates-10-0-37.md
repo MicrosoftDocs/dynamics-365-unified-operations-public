@@ -17,7 +17,6 @@ ms.search.validFrom: 2022-10-14
 # Platform updates for version 10.0.37 of finance and operations apps (November 2023)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article lists the features that are included in the platform updates for version 10.0.37 of finance and operations apps. This version has a build number of 7.0.7068 and is available on the following schedule:
 

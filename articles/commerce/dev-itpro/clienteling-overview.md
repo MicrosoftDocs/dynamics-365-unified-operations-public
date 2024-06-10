@@ -4,11 +4,12 @@
 title: Clienteling overview
 description: This article provides an overview of new clienteling capabilities that are available in the store application.
 author: bebeale
-ms.date: 05/24/2024
+ms.date: 06/04/2024
 ms.topic: overview
 audience: IT Pro
-ms.reviewer: josaw
-ms.custom: ["260624"]
+ms.reviewer: v-chrgriffin
+ms.custom: 
+  - bap-template
 ms.collection: get-started
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: Global
@@ -101,7 +102,7 @@ You can further enhance the Commerce clienteling feature by integrating addition
 To turn on the integration of Customer Insights with Commerce, you must make sure that you have an active instance of Customer Insights in the tenant where Commerce is provisioned. You must also have a Microsoft Entra user account that has an Azure subscription.
 
 > [!IMPORTANT]
-Prior to integrating Customer Insights with Commerce, retailers should first fully configure [Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview) and configure [measures](/dynamics365/ai/customer-insights/pm-measures) in the Customer Insights application.
+> Prior to integrating Customer Insights with Commerce, retailers should first fully configure [Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview) and configure [measures](/dynamics365/ai/customer-insights/pm-measures) in the Customer Insights application.
 
 To set up the integration of Customer insights with Commerce, follow these steps.
 

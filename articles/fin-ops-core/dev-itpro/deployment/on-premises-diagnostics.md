@@ -10,6 +10,7 @@ audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: Platform Update 12
+ms.service: dynamics-365-op
 ---
 
 # On-premises diagnostics

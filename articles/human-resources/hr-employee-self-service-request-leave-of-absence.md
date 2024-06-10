@@ -27,9 +27,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Request a leave of absence
 
->[!Important]
->The functionality noted in this article is currently available for customers on the stand-alone Dynamics 365 Human Resources. Some or all of the functionality will be available as part of a future release on the Finance infrastructure.
-
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
