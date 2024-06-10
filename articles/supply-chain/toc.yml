@@ -2019,6 +2019,8 @@
       items:
       - name: Demand planning home page
         href: demand-planning/demand-planning-home-page.md
+      - name: What's new or changed in Demand planning
+        href: demand-planning/whats-new-demand-planning.md
       - name: Setup and administration
         items:
         - name: Install and enable Demand planning
