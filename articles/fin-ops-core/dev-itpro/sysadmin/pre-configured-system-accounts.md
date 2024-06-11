@@ -4,7 +4,7 @@ description: Learn about the system accounts that are preconfigured on your fina
 author: jaredha
 ms.author: jaredha
 ms.topic: conceptual
-ms.date: 04/10/2024
+ms.date: 06/11/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -37,6 +37,7 @@ Preconfigured system accounts are included on deployed environments so that Micr
 | ScaleUnitPipeline | Maintaining and tracking communication between the scale units. This account is automatically added when you upgrade to version 10.0.19. |
 | SysHealthServiceUser or Axping (depending on the deployed product version) | Monitoring the availability and health of the environment, and providing alerts as required. |
 | ArchiveServiceApp | Archive service application account used for moving finance and operations data to Dataverse long term retention. |
+| IAPApp  | The Insights Apps Platform account that's used to sync data between finance and operations and Dataverse. |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
