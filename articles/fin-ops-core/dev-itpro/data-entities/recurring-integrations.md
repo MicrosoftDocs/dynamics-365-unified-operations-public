@@ -80,6 +80,24 @@ For more information, see [Process and consume data packages in the finance and 
 
     ![Manage scheduled data jobs.](./media/image013.jpg)
 
+## Cleaning up recurring data job messages
+In the **System administration** workspace (not the **System administration** module), select the **Data Management IT** workspace.
+
+In the workspace, on the **Data projects** tab, select the Data project name which shows yes for "Has recurring data jobs"
+1. Click on Manage in the top bar -> Manage recurring data jobs, this will take you to Manage scheduled data jobs page.
+2. Click on Manage messages in the top bar.
+3. Click on Message clean up.
+4. Configure your parameters in the "Message clean up window" and click OK.
+5. Refresh the window after the clean up job is complete.
+
+In the workspace, on the **Recurring data jobs** tab, select the recurring data job which will take you to "Manage scheduled data jobs" page:
+1. Click on the group under "Processing group", this will take you to your Data management project which the recurring jobs are based on.
+2. Click on Manage in the top bar -> Manage recurring data jobs, this will take you to another Manage scheduled data jobs page.
+3. Click on Manage messages in the top bar.
+4. Click on Message clean up.
+5. Configure your parameters in the "Message clean up window" and click OK.
+6. Refresh the window after the clean up job is complete.
+
 ## Submitting data to recurring data jobs
 You can use integration REST endpoints to integrate with the client, submit documents (import), or pull available documents for download (export). These endpoints support OAuth.
 
