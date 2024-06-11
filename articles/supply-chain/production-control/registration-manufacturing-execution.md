@@ -4,7 +4,7 @@
 title: Registration for manufacturing execution
 description: This article describes key concepts and terms that you need to understand to configure and use manufacturing execution. 
 author: johanhoffmann
-ms.date: 06/11/2024
+ms.date: 06/12/2024
 ms.topic: article
 
 # optional metadata
@@ -31,6 +31,8 @@ ms.dyn365.ops.version: AX 7.0.0
 This article describes key concepts and terms that you need to understand to configure and use manufacturing execution. 
 
 Manufacturing execution is intended to be used primarily by manufacturing companies. Workers can register time and item consumption on production jobs by using the **Job registration** page. All registrations are approved and are later transferred to the relevant modules. Continuous approval and transfer of registrations lets managers easily track actual costs on production orders.
+
+
 
 ## Manufacturing execution and registration terminology
 The following table contains terms that pertain to manufacturing execution and related registration tasks.
