@@ -31,7 +31,7 @@ Recurring integration does the following things:
     ![Set up recurring integrations.](./media/set-up-recurring.png)
 
 ## Authorization for the integration REST API
-The integration REST API uses the same OAuth 2.0 authentication model as the other service endpoints. Before the integrating client application can consume this endpoint, you must create an application ID in Microsoft Entra ID (Azure AD) and give it appropriate permission to the application. When you create and enable a recurring job, you're prompted to enter the Azure AD application ID that interacts with that recurring job. Therefore, be sure to make a note of the application ID.
+The integration REST API uses the same OAuth 2.0 authentication model as the other service endpoints. Before the integrating client application can consume this endpoint, you must create an application ID in Microsoft Entra ID (Azure AD) and give it appropriate permission to the application. When you create and enable a recurring job, enter the Azure AD application ID that interacts with that recurring job. Therefore, be sure to make a note of the application ID.
 
 > [!NOTE]
 > This feature is not supported with Dynamics 365 Finance + Operations (on-premises).
@@ -91,15 +91,15 @@ To clean up recurring data job messages, follow these steps.
 1. Select **Manage messages**.
 1. Select **Message clean up**.
 1. In the **Message clean up window**, configure your parameters, and select **OK**.
-1. Refresh the window after the clean up job is complete.
+1. Refresh the window after the cleanup job is complete.
 
-In the workspace, on the **Recurring data jobs** tab, select the recurring data job which will take you to "Manage scheduled data jobs" page:
-1. Select the group under **Processing group**, this takes you to your Data management project that the recurring jobs are based on.
+In the workspace, on the **Recurring data jobs** tab, select the recurring data job that takes you to the **Manage scheduled data jobs** page:
+1. Select the group under **Processing group** to open the Data management project that the recurring jobs are based on.
 1. Select **Manage** -> **Manage recurring data jobs**. The **Manage scheduled data jobs** page opens.
 1. Select **Manage messages**.
 1. Select **Message clean up**.
 1. In the **Message clean up window**, configure your parameters, and select **OK**.
-1. Refresh the window after the clean up job is complete.
+1. Refresh the window after the cleanup job is complete.
 
 ## Submitting data to recurring data jobs
 You can use integration REST endpoints to integrate with the client, submit documents (import), or pull available documents for download (export). These endpoints support OAuth.
@@ -114,7 +114,7 @@ Make an HTTP POST call against the following URL.
 https://<base URL>/api/connector/enqueue/<activity ID>?entity=<entity name>
 ```
 
-In the message body, you can the pass the data as a memory stream.
+In the message body, you can pass the data as a memory stream.
 
 **Example**
 
@@ -214,11 +214,11 @@ The batch job status is retrieved asynchronously from the batch framework for th
 ### Preventing uploads when there are no records
 When you use recurring exports you can choose not to upload a generated file or package if the total record count in that file or package is 0 (zero).
 
-You can set the **Prevent upload when zero records** option either when you configure a recurring export job or after a job is created. This option is available only when you use files or packages as data sources.
+You can set **Prevent upload when zero records** when you configure a recurring export job or after a job is created. This option is available only when you use files or packages as data sources.
 
 ![Prevent upload when zero records.](./media/prevent-file-upload.png)
 
-Your implementation might include runs of recurring jobs where files or packages were uploaded. Your implementation might also include runs where no files or packages were uploaded, because there was nothing to upload. If you suspect that a file that should have been uploaded wasn't uploaded, or that a file that shouldn't have been uploaded was uploaded, you can use the **Manage messages** page for the recurring export job to help with the debugging process.
+Your implementation might include runs of recurring jobs where files or packages were uploaded. Your implementation might also include runs where no files or packages were uploaded, because there was nothing to upload. If you suspect that a file that should have been uploaded wasn't uploaded, or that a file was uploaded that shouldn't be, you can use the **Manage messages** page for the recurring export job to help with the debugging process.
 
 > [!NOTE]
 > These features were added in Microsoft Dynamics 365 for finance and operations, Enterprise edition platform update 12. Jobs that were run before you upgraded to Platform update 12 won't have values in the following columns.
