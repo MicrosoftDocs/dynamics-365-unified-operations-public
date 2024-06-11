@@ -4,7 +4,7 @@
 title: Registration for manufacturing execution
 description: This article describes key concepts and terms that you need to understand to configure and use manufacturing execution. 
 author: johanhoffmann
-ms.date: 06/20/2017
+ms.date: 06/11/2024
 ms.topic: article
 
 # optional metadata
