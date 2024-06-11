@@ -13,7 +13,7 @@ ms.search.form: HRMParameters, EssWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-
+ms.collection: bap-ai-copilot
 # ms.tgt_pltfrm: 
 ms.collection: get-started
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
