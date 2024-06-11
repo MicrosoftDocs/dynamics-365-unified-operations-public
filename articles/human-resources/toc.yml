@@ -463,6 +463,8 @@ items:
       items:
       - name: Employee self service overview
         href: hr-employee-manager-self-service-overview.md
+      - name: Employee self service workspace summary
+        href: ess-workspace-summary.md
       - name: Manager self service overview  
         href: mss-overview.md
       - name: Create custom links in Manager self service
