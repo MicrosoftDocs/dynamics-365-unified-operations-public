@@ -51,7 +51,7 @@ To define the action, decorate the class with the `SysCopilotChatActionDefinitio
 
 | Parameter | Type | Description | 
 | --- | --- | --- | 
-| IdentifierName | string | An identifier for the plugin action. It's the identifier that's defined for the event that's sent from Copilot Studio to finance and operations apps, and that returns output parameters from finance and operations apps to Copilot Studio. Use the [identifierStr](../dev-ref/xpp-compile-time-functions.md#identifierstr) compile-time function to convert the identifier to a string. | 
+| IdentifierName | string | An identifier for the plugin action. It's the identifier that's defined for the event that's sent from Copilot Studio to finance and operations apps, and that returns output parameters from finance and operations apps to Copilot Studio. Use the [identifierStr](../dev-ref/xpp-compile-time-functions.md#identifierstr) compile-time function to convert the identifier to a string. <br><p><br> The identifier name must begin with the prefix `MS.PA` | 
 | Name | string | A descriptive name for the action. | 
 | Description | string | A natural language description of the action. Although Copilot doesn't currently use this parameter, it should be provided in the definition. In a future release, this parameter will be used to enhance intelligent orchestration of plugins by linking the action to user intent. | 
 | MenuItemName | string | <p>The menu item that's associated with the action.</p><p>The permissions to this menu item determine the user permissions to invoke the client action. You can use an existing menu item, or you can create a new one to associate with the action.</p> |
@@ -61,7 +61,7 @@ To define the action, decorate the class with the `SysCopilotChatActionDefinitio
 
 ```x++
 [SysCopilotChatActionDefinition(
-    identifierStr(MS.ServerForm.CopilotExample.ClientNavigate),
+    identifierStr(MS.PA.CopilotExample.ClientNavigate),
     'Navigate',
     'Navigates to or opens a defined form in the application client',
     menuItemActionStr(SysCopilotChatCustomNavigateAction), MenuItemType::Action)]
@@ -179,7 +179,7 @@ public void executeAction(SysCopilotChatActionDefinitionAttribute _actionDefinit
 }
 ```
 
-## Creating a plugin in Copilot Studio
+## Creating topics in Copilot Studio
 
 ### Invoke the client action
 
@@ -192,3 +192,5 @@ In your topic or plugin in Copilot Studio, create an **Event activity** node tha
 Your client action might have output parameters that you want to return either as a natural language response to the user in Copilot or to continue with another action. When the client action is run in X++, the output parameters are sent to Copilot Studio as an event.
 
 In Copilot Studio, you must create a separate topic to receive the response from the X++ class. Create a topic that has an **Event received** trigger. The value of the **Event name** property of the trigger must be the value of the `IdentifierName` parameter that's defined in the `SysCopilotChatActionDefinition` attribute of your X++ class. The `System.Activity.Text` variable is set to the event payload as a JSON string. You can add a **Parse value** node to the topic to parse the `System.Activity.Text` value for the values of the output parameters of the client action.
+
+> [!NOTE] In a coming release client plugins will be invoked by generative AI, removing the requirement to create topics to invoke the actions and receive the output parameters.
