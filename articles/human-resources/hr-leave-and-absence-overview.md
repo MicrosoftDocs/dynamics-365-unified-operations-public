@@ -26,12 +26,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Leave and absence overview
 
-
->[!Important]
->The functionality noted in this article is currently available for customers on the stand-alone Dynamics 365 Human Resources. Some or all of the functionality will be available as part of a future release on the Finance infrastructure after Finance release 10.0.26.
-
-
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources helps you provide great leave benefits to your workers. The **Leave and absence** workspace provides a flexible framework for creating new leave plans. It also provides workflows for managing requests and an intuitive self-service page for employees to request time off. Analytics help your organization measure and monitor leave balances and usage for your leave plans.

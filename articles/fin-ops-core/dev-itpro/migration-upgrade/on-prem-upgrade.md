@@ -14,6 +14,7 @@ ms.search.form:
 ms.dyn365.ops.version: 10.0.x
 search.app:
   - financeandoperationsonprem-docs
+ms.service: dynamics-365-op
 ---
 
 # In-place upgrade process for on-premises environments

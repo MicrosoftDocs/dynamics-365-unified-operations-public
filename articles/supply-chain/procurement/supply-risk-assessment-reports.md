@@ -6,7 +6,7 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to 
-ms.date: 10/27/2022 
+ms.date: 05/22/2024 
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -37,7 +37,7 @@ The workspace-embedded supplier performance report shows a holistic performance 
 
 To open the embedded supplier performance analysis report, go to **Procurement and sourcing \> Workspaces \> Supply risk assessment**, and then select the **Performance** tab.
 
-All supply performance analysis reports provide a header that includes slicers and filters. To limit your analysis, select products, and then use the slicers and filters to select the relevant legal entities (companies), regions, vendors, and item groups. The filters will be carried through the different report pages. Therefore, you don't have to repeatedly reapply the filter settings.
+All supply performance analysis reports provide a header that includes slicers and filters. To limit your analysis, select products, and then use the slicers and filters to select the relevant legal entities (companies), regions, vendors, and item groups. The filters are carried through the different report pages. Therefore, you don't have to repeatedly reapply the filter settings.
 
 ### Vendor and product ranking report
 

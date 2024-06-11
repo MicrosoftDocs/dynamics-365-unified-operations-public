@@ -100,6 +100,8 @@
           href: ../fin-ops-core/dev-itpro/get-started/system-requirements-on-prem.md?context=/dynamics365/context/finance
         - name: Buy Finance + Operations (on-premises)
           href: ../fin-ops-core/dev-itpro/get-started/purchase-on-premises.md?context=/dynamics365/context/finance
+      - name: Enable copilot in Dynamics 365 Finance
+        href: accounts-receivable/Enable-copilot-in-finance.md
       - name: Documentation resources
         items:
         - name: Help system
@@ -384,6 +386,8 @@
         href: accounts-receivable/tasks/establish-customer-method-payment.md
       - name: Establish customer payment fees
         href: accounts-receivable/tasks/establish-customer-payment-fees.md
+      - name: Customer summary page
+        href: accounts-receivable/CustomerPageSummary.md
       - name: Customer payment insights 
         href: accounts-receivable/payment-insights-overview.md
       - name: Accounts receivable posting
@@ -640,6 +644,8 @@
         href: budgeting/budget-control-overview-configuration.md
       - name: Budgeting overview
         href: budgeting/basic-budgeting-overview-configuration.md
+      - name: Create budget register entries
+        href: budgeting/budget-register-entries.md
       - name: Budget funds available
         href: budgeting/budget-funds-available.md
       - name: Position forecasting
@@ -1558,6 +1564,8 @@
             href: localizations/global/workspace/gsw-import-er-config-dataverse.md
           - name: Upload ER configurations and Globalization features as a Dataverse solution
             href: localizations/global/workspace/gsw-upload-er-config.md
+          - name: Create a Dataverse solution using upload into repository
+            href: localizations/global/workspace/gsw-upload-into-repository.md
         - name: Regulatory configuration service (RCS)
           items:
           - name: Regulatory configuration service (RCS) overview
@@ -1664,8 +1672,10 @@
               href: localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
             - name: Saudi Arabia - onboarding
               href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
-            - name: Malaysia (preview)
+            - name: Malaysia
               href: localizations//malaysia/apac-mys-e-invoices.md?context=/dynamics365/context/finance 
+            - name: Poland
+              href: localizations/poland/gs-e-invoicing-pol-get-started.md?context=/dynamics365/context/finance 
           - name: Electronic Invoicing FAQ
             href: localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/finance
         - name: Electronic Invoicing (RCS)
@@ -1758,8 +1768,6 @@
               href: localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/finance
             - name: Get started with Electronic Invoicing for Australia and New Zealand
               href: localizations/apac/apac-aus-nzl-electronic-invoices.md
-            - name: Get started with Electronic Invoicing for Brazil
-              href: localizations/brazil/e-invoicing-bra-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic invoicing for Denmark
               href: localizations/denmark/e-invoicing-dk-get-started.md
             - name: Get started with Electronic Invoicing for Egypt
@@ -1768,8 +1776,6 @@
               href: localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic Invoicing for Indonesia
               href: localizations/indonesia/e-invoicing-id-get-started.md?context=/dynamics365/context/finance
-            - name: Get started with the Electronic Invoicing for Mexico
-              href: localizations/iberoamerica/e-invoicing-mex-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic invoicing for Poland
               href: localizations/poland/e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic invoicing for Saudi Arabia - Phase one
@@ -4461,6 +4467,8 @@
         href: business-performance-planning/powerBI-visual-install.md
       - name: Install the Excel add-in
         href: business-performance-planning/install-excel-add.md
+      - name: Security
+        href: business-performance-planning/bpp-security.md
       - name: Dimensions
         items:
         - name: Creating and maintaining dimensions
@@ -5299,6 +5307,8 @@
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?context=/dynamics365/context/finance
         - name: View workflow history
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?context=/dynamics365/context/finance
+        - name: Workflow history summary
+          href: ../fin-ops-core/fin-ops/organization-administration/workflow-history-summary.md?context=/dynamics365/context/finance
         - name: Configure the system to send workflow-related email to users
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?context=/dynamics365/context/finance
         - name: Workflow types
@@ -5484,7 +5494,11 @@
     - name: Overview
       href: ../finance/transparency-note.md 
     - name: Collections coordinator summary FAQ
-      href: accounts-receivable/collections-coordinator-summary-faq.md              
+      href: accounts-receivable/collections-coordinator-summary-faq.md 
+    - name: Customer page summary FAQ
+      href: accounts-receivable/CustomerPageSummaryFAQ.md
+    - name: Workflow summary FAQ
+      href: ../fin-ops-core/fin-ops/copilot/workflow-history-summary-faq.md
   - name: Development and administration for finance and operations apps 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Supply Chain Management 

@@ -3,7 +3,7 @@ title: Create a bank facility agreement for the letter of guarantee
 description: Learn about the process of creating a bank facility agreement for a letter of guarantee, including a detailed step-by-step process, which uses the demo company "USMF".
 author: twheeloc
 ms.author: twheeloc
-ms.topic: how=to
+ms.topic: how-to
 ms.date: 11/15/2022
 ms.custom:
 ms.reviewer: twheeloc  

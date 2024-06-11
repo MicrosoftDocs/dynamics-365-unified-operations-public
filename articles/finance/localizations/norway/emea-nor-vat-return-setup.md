@@ -1,14 +1,13 @@
 ---
 title: Prepare your environment to interoperate with ID-porten and Altinn web services
-description: This article explains how to prepare your environment to interoperate with ID-porten and Altinn web services.
+description: Learn how to prepare your environment to interoperate with ID-porten and Altinn web services, including an outline on importing and setting up ER configurations.
 author: liza-golub
-ms.date: 02/09/2024
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Norway
-# ms.search.industry: 
 ms.author: egolub
+ms.topic: article
+ms.date: 02/09/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Norway
 ms.search.validFrom: 2021-11-18
 ms.dyn365.ops.version: AX 10.0.22
 ---

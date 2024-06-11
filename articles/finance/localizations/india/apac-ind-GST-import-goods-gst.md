@@ -1,25 +1,17 @@
 ---
-# required metadata
-
 title: Import goods that have GST
-description:  This article explains how to import goods that have Goods and Services Tax (GST).
+description: Learn how to import goods that have Goods and Services Tax (GST), including processes for validating tax details and updating the invoice registration.
 author: EricWangChen
-ms.date: 06/04/2019
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: India
-# ms.search.industry: 
 ms.author: wangchen
+ms.topic: article
+ms.date: 06/04/2019
+ms.custom:
+ms.reviewer: johnmichalak  
+audience: Application User
+ms.search.region: India
 ms.search.validFrom: 2019-06-01
+ms.search.form:
 ms.dyn365.ops.version: 10.0.4
-
 ---
 
 # Import goods that have GST

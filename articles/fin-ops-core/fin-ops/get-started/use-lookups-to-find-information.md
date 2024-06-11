@@ -18,9 +18,6 @@ ms.assetid: f20cbd2c-14e0-47e7-b351-8e60d3537f96
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 Many fields have lookups that can help you easily find the correct or desired value. Several enhancements have been added to lookups that make these controls more usable and make users more productive. In this article, you will learn about these new lookup features and will receive some helpful tips to get the optimal use out of lookups in the system.
 
 ## Responsive lookups

@@ -1,16 +1,16 @@
 --- 
 title: NO-00002 Customer payment based on payment ID
-description: This article explains how to set up and maintain Norwegian payment IDs. 
-author: kailiang
-ms.date: 05/21/2024
-ms.topic: how-to 
-ms.custom: 
-  - bap-template 
-ms.search.form: BankCustPaymIdTable, LogisticsCountryRegionPaymentIdType_NO, CustTable, CustPaymMode, CustGroup,  CustInvoiceJournal   
-ms.reviewer: johnmichalak
+description: Learn how to set up and maintain Norwegian payment IDs, including an outline and step-by-step process on setting up payment IDs.
+author: kfend
+ms.author: kfend
+ms.topic: how-to
+ms.date: 08/01/2023
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application User  
 ms.search.region: Norway
-ms.author: kailiang
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: BankCustPaymIdTable, LogisticsCountryRegionPaymentIdType_NO, CustTable, CustPaymMode, CustGroup,  CustInvoiceJournal
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 

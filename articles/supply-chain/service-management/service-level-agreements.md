@@ -3,7 +3,7 @@
 
 title: Service level agreements overview
 description: In a service level agreement, the customer agrees to a minimum response time based on when the service company records the issue and when the issue is resolved.
-author: sorenva
+author: ChristianRytt
 ms.date: 07/25/2019
 ms.topic: overview
 
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sorenand
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

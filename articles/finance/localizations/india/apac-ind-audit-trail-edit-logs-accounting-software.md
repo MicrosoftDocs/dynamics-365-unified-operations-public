@@ -1,25 +1,17 @@
 ---
-# required metadata
-
 title: Audit trail and edit logs for accounting software
-description: This article provides information about the new Indian tax legislation guidelines for accounting software.
+description: Learn about the new Indian tax legislation guidelines for accounting software, including overviews on legislation and compliance.
 author: EricWangChen
-ms.date: 10/20/2023
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: India
-# ms.search.industry: 
 ms.author: wangchen
-ms.search.validFrom: 
+ms.topic: article
+ms.date: 10/20/2023
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application User
+ms.search.region: India
+ms.search.validFrom:
+ms.search.form: 
 ms.dyn365.ops.version: 
-
 ---
 
 # Audit trail and edit logs for accounting software

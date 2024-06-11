@@ -149,7 +149,7 @@ During the lead qualification process, you can provide both a business phone num
 
 4. Open the finance and operations app. Navigate to the Data Management module and select the Dual-write tab. The dual-write administration page opens.
 
-5. Apply both the solutions installed in steps 2 and 3 using the [Apply Solution](link-your-environment.md) function.
+5. Apply both the solutions installed in steps 2 and 3 using the [Apply Solution]((../../dev-itpro/power-platform/enable-power-platform-integration.md) function.
 
 6. Stop the following maps, because they aren't required anymore. Instead, run the `Contacts V2 (msdyn_contactforparties)` map.
 

@@ -1,13 +1,13 @@
 ---
 title: Fixed assets and intangible assets registers
-description: This article provides information about fixed assets and intangible assets registers.
+description: Learn about fixed assets and intangible assets registers, including outlines on setting up expense codes and setting up register parameters.
 author: AdamTrukawka
-ms.date: 08/16/2021
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 08/16/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: 8.1
 ---

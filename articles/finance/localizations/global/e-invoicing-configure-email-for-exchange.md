@@ -1,5 +1,5 @@
 ---
-title: Configure an email channel for Office 365 Exchange Online
+title: Configure an email channel for Office 365 Exchange Online RCS
 description: Learn how to configure an email channel for Office 365 Exchange Online to receive electronic invoices, including a step-by-step process.
 author: baryshnikova
 ms.author: baryshnikova
@@ -14,7 +14,7 @@ ms.search.form:
 ms.dyn365.ops.version: 
 ---
 
-# Configure an email channel for Office 365 Exchange Online
+# Configure an email channel for Office 365 Exchange Online RCS
 
 [!include [banner](../../includes/banner.md)]
 

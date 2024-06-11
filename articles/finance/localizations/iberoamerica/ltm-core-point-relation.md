@@ -1,12 +1,12 @@
 ---
 title: Sales point relation for sales documents and remission
-description: This article provides information about the sales point link configuration for Latin America.
+description: Learn about the sales point link configuration for Latin America, including prerequisites and a step-by-step process for setting up a sales point pair.
 author: Fhernandez0088
-ms.date: 04/03/2023
-ms.topic: Article
-ms.reviewer: johnmichalak
 ms.author: v-federicohe 
+ms.topic: article
+ms.date: 04/03/2023
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Sales point relation for sales documents and remission

@@ -1,30 +1,30 @@
 ---
 title: Use custom Azure Machine Learning algorithms in Demand planning
-description: This article describes how to continue to use custom Microsoft Azure Machine Learning algorithms that you already use for demand forecasting in Dynamics 365 Supply Chain Management while you use the Demand planning app.
+description: Learn how to use custom Microsoft Azure Machine Learning algorithms for demand forecasting in Dynamics 365 Supply Chain Management while you use demand planning.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 11/15/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
 ms.collection:
   - bap-ai-copilot
+audience: Application User
+ms.search.region: Global
+ms.search.form:
 ---
 
 # Use your own custom Azure Machine Learning algorithms in Demand planning
 
 [!include [banner](../includes/banner.md)]
 
-If you're already using your own Microsoft Azure Machine Learning algorithms for demand forecasting in Dynamics 365 Supply Chain Management (as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md)), you can continue to use them while you use the Demand planning app.
+If you're already using your own Microsoft Azure Machine Learning algorithms for demand forecasting in Dynamics 365 Supply Chain Management (as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md)), you can continue to use them while you use Demand planning in Microsoft Dynamics 365 Supply Chain Management.
 
-This article describes the setup that is required to enable the Demand planning app to connect to your [Azure Machine Learning workspace](/azure/machine-learning/concept-workspace).
+This article describes the setup that is required to enable Demand planning to connect to your [Azure Machine Learning workspace](/azure/machine-learning/concept-workspace).
 
 ## Set up a new Microsoft Entra application
 
-Follow the steps in this section to create a new Microsoft Entra application in your Azure Machine Learning workspace. This resource in the [Azure portal](/azure/azure-portal/azure-portal-overview) holds your algorithms. The Microsoft Entra application is an enterprise application that enables the Demand planning app to connect to your Azure Machine Learning algorithms. (For more information about how to set up a Microsoft Entra application, see [Register an application](/entra/identity-platform/quickstart-register-app#register-an-application).)
+Follow the steps in this section to create a new Microsoft Entra application in your Azure Machine Learning workspace. This resource in the [Azure portal](/azure/azure-portal/azure-portal-overview) holds your algorithms. The Microsoft Entra application is an enterprise application that enables Demand planning to connect to your Azure Machine Learning algorithms. (For more information about how to set up a Microsoft Entra application, see [Register an application](/entra/identity-platform/quickstart-register-app#register-an-application).)
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) by using an account that has at least *Cloud Application Administrator* privileges.
 1. Register a new Microsoft Entra application as described in [Create a Microsoft Entra application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal).
@@ -64,7 +64,7 @@ The application is now listed in the **All** section of the **Role assignments**
 
 Follow these steps to set up the Azure Machine Learning service connection in Demand planning.
 
-1. Sign in to the Demand planning app.
+1. Sign in to Demand planning.
 1. On the left navigation pane, select **Custom Azure ML**.
 1. Select the plus sign (**&plus;**) button to create a new connection, and set the following fields for it:
 

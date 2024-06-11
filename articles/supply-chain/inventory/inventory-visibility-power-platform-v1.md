@@ -1,15 +1,15 @@
 ---
 title: Use the Inventory Visibility app UI version 1
-description: This article describes how to use the Inventory Visibility app when UI version 1 is active.
-author: yufeihuang
-ms.date: 09/15/2022
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
+description: Learn how to use the Inventory Visibility app when UI version 1 is active with a step-by-step process for authenticating with the Inventory Visibility service.
+author: yufei-huang
 ms.author: yufeihuang
+ms.topic: article
+ms.date: 09/15/2022
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-08-02
+ms.search.form:
 ms.dyn365.ops.version: 10.0.21
 ---
 

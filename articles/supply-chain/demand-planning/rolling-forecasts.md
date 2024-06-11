@@ -1,17 +1,17 @@
 ---
 title: Rolling forecasts
-description: This article provides information about rolling forecasts. Rolling forecasts let you establish a regular schedule that your time series follow to automatically update and extend their forecast horizon.
+description: Learn about rolling forecasts, which let you establish a regular schedule that your time series follow to automatically update and extend their forecast horizon.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: overview
 ms.date: 03/12/2024
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
 ms.collection:
   - bap-ai-copilot
+audience: Application User
+ms.search.region: Global
+ms.search.form:
 ---
 
 # Rolling forecasts

@@ -4,14 +4,15 @@
 title: Pricing functions in POS 
 description: This article describes various price and discount functions in the Microsoft Dynamics 365 Commerce point of sale (POS) application.
 author: boycez
-ms.date: 08/12/2022
-ms.topic: article
+ms.date: 05/30/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: global
-ms.author: boycez
+ms.author: chuzheng
 ms.search.validFrom: 2022-07-14
-
+ms.custom: 
+  - bap-template
 ---
 
 # Pricing functions in POS

@@ -13,8 +13,7 @@ audience: Application User
 
 # Prerequisites to installing Business performance analytics 
 
-> [!NOTE]
-> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. To participate in the public preview please start here: <https://aka.ms/installBPA>.
+[This article is prerelease documentation and is subject to change.]
 
 ## Before you install
 Business performance analytics is currently supported in the following regions: Australia, UK, USA, Europe, Canada, and Japan. It will be available in other regions when Business performance analytics is generally available and in sovereign clouds after Business performance analytics is generally available.
@@ -23,7 +22,7 @@ Business performance analytics is currently supported in the following regions: 
 A Tier-2 environment (multi-box) is required to preview business performance analytics. For more information about environments, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
 
 ### Version requirements
-Business performance analytics requires Dynamics 365 Finance version 10.0.38 (Application version 10.0.1777.72) or later.
+Business performance analytics requires Dynamics 365 Finance version 10.0.38 (Application version 10.0.1777.94) or later.
 
 
 ### What are the prerequisites to installing Business performance analytics
@@ -100,6 +99,11 @@ Before you install Business performance analytics, the following setup is requir
 3. When you've finished, disable maintenance mode.
 
 #### Required configurations in Power Platform Admin Center
-1. In Power Platform Admin Center, **Resources** and select **Dynamics 365 installed apps**. 
-2. Find **Finance and Operations Virtual Entity** and check if any updates are available. 
-3. If an update is available, update the application. (Only required if installing Business performance analytics on existing environments).
+1.	Go to https://admin.powerplatform.microsoft.com/
+2.	Select **Environments**.
+3.	Select the environment where business performance analytics is installed.
+4.	Select **Settings** > **Product** > **Features**.
+5.	Enable **Enable Finance and Operations User Impersonation in Dataverse**.
+6.	In Power Platform Admin Center, **Resources** and select **Dynamics 365 installed apps**.
+7.	Find **Finance and Operations Virtual Entity** and check if any updates are available.
+8.	If an update is available, update the application. (Only required if installing Business performance analytics on existing environments).

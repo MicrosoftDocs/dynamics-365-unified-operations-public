@@ -14,8 +14,7 @@ ms.date: 5/20/2024
 
 This article answers frequently asked questions about Business performance analytics.
 
-> [!NOTE]
-> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. Participate in our public preview here: <https://aka.ms/InstallBPA>.
+[This article is prerelease documentation and is subject to change.]
 
 ### What's the estimated time that's required to set up Business performance analytics?
 

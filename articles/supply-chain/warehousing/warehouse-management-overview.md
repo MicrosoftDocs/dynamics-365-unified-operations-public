@@ -29,7 +29,7 @@ You must configure components for inbound and outbound warehouse process workflo
 - [Warehouse configuration overview](warehouse-configuration.md)
 - [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md)
 - [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md)
-- [Set up a location directive for purchase order put-away](../transportation/tasks/set-up-location-directive-purchase-order-put-away.md)
+- [Set up a location directive for purchase order putaway](../transportation/tasks/set-up-location-directive-purchase-order-put-away.md)
 - [Set up a work template for purchase orders](./tasks/set-up-work-template-purchase-orders.md)
 
 ## Warehouse management processes (WMS)

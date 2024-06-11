@@ -1,13 +1,13 @@
 ---
 title: Checklist for Electronic messages setup for MTD VAT
-description: This article provides information that will help determine whether the Electronic messages functionality is correctly set up for Making Tax Digital for value-added tax (MTD VAT).
+description: Learn about what will help determine whether the Electronic messages functionality is correctly set up for Making Tax Digital for value-added tax (MTD VAT).
 author: AdamTrukawka
-ms.date: 08/18/2021
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: United Kingdom
 ms.author: atrukawk
+ms.topic: article
+ms.date: 08/18/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: United Kingdom
 ms.search.validFrom: 2021-07-31
 ms.dyn365.ops.version: AX 10.0.22
 ---

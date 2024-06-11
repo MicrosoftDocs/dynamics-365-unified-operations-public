@@ -1,13 +1,13 @@
 ---
 title: Set up direct integration of Italian FatturaPA with SDI
-description: This article provides information that will help you get started with Electronic invoicing for Italy and set up direct integration of Italian FatturaPA with the Exchange system (SDI).
+description: Learn how to get started with Electronic invoicing for Italy and set up direct integration of Italian FatturaPA with the Exchange system (SDI).
 author: AdamTrukawka
-ms.date: 02/29/2024
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: atrukawk
+ms.topic: article
+ms.date: 02/29/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-10-18
 ms.dyn365.ops.version: AX 10.0.20
 ---
