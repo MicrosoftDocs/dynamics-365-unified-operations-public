@@ -85,30 +85,29 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
 1. Make sure that the country/region-specific Electronic reporting (ER) configurations for the document context and electronic document model mapping that are required for Malaysia are imported. For more information, see [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
     > [!NOTE]
-    > After you import the **Malaysian electronic invoicing (MY)** electronic invoicing feature, electronic documents are configured by default. Follow the remaining steps of this procedure if you must make changes.
+    > After you import the **Malaysian electronic invoicing (MY)** electronic invoicing feature, electronic documents are configured by default. Follow the remaining steps of this procedure if you must make changes, otherwise consider this chapter for information only.
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. On the **Electronic document** tab, add records for the **Customer Invoice journal**, **Vendor Invoice journal**, and **Project invoice** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
 
     ![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](apac-mys-e-invoice-documents.jpg)   
-1. For each table name, select **Response types** Select **New** to create a response type, and enter the following values:
+1. For each table name, select **Response types**, then select **New** to create a response type, and enter the following values:
 
     - In the **Response type** field, enter **ResponseData** (the default value).
     - In the **Description** field, enter any meaning full name or leave it empty.
     - In the **Submission status** field, select **Pending**.
     - In the **Data entity name** field, select: 
-      - **SalesInvoiceHeaderV2Entity** while configuring **Customer Invoice journal**.
-      - **!!!!!!!!!** while configuring **Project invoice**.
-      - **??????????** while configuring **Vendor Invoice journal**.
-    - In the **Model mapping** field, select **Malaysia response data import format (MY)**.
+      - **Sales invoice entity** while configuring **Customer Invoice journal**.
+      - **Project invoice entity** while configuring **Project invoice**.
+      - **Self invoice entity** while configuring **Vendor Invoice journal**.
+    - In the **Model mapping** field, select **MY response data details format**.
 
     ![Screenshot that response types configuration.](apac-mys-e-invoice-address.jpg)
 
     > [!NOTE]
     > **ResponseData** is the default name of the response type. If you must change it, make sure that the new name matches the name that was defined for the related variable of the **To client** type in the corresponding feature setups. To validate the variable's value, go to **Globalization Studio**, and select the **Electronic invoicing** tile. On the **Electronic invoicing features** page, verify that the **Malaysian electronic invoicing (MY)** feature is selected. On the **Setups** tab, in the grid, select the **Sales invoice derived** feature setup. Then select **Edit** or **View**, depending on the status of the feature version.
 
-1. !!!!!!!!!!!!!!!!!!!!.
 1. Select **Save**, and close the page.
 
     > [!NOTE]
