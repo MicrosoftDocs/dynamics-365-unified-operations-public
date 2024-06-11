@@ -3,7 +3,7 @@
 
 title: Create service task relations   
 description: You can associate service tasks with service agreements or service orders in order to describe the service task to be completed for the agreement or order.
-author: sorenva
+author: ChristianRytt
 ms.date: 05/01/2018
 ms.topic: article
 
@@ -19,7 +19,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sorenand
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

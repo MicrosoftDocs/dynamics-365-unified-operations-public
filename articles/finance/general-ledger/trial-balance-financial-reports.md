@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Trial balance financial reports
-description: This article describes the default reports for trial balances. It also describes the building blocks that are associated with these reports and how you can modify the reports to fit your business requirements. 
+description: Learn about the default reports for trial balances, including an outline on building blocks that are associated with these reports.
 author: jinniew
-ms.date: 05/26/2021
-ms.topic: article
-# optional metadata
-
-ms.search.form: LedgerTrialBalanceListPage 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 3b77d6f3-fd07-41a7-9ddb-1b22d1ae33fc
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jiwo
+ms.topic: article
+ms.date: 05/26/2021
+ms.reviewer: kfend 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerTrialBalanceListPage
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 3b77d6f3-fd07-41a7-9ddb-1b22d1ae33fc
 ---
 
 # Trial balance financial reports

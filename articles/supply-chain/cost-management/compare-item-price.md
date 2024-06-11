@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Compare item prices storage report
-description: Learn how to generate a Compare item prices storage report and then browse and/or export the result.
+description: Learn how to generate a Compare item prices storage report and then browse and/or export the result, including an outline on toggling the Compare prices feature.
 author: JennySong-SH
-ms.date: 08/05/2022
+ms.author: yanansong
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, InventItemPriceCompareStorage, InventItemPriceCompareStorageDetailsChart, InventItemPriceCompareStorageDetails
-# ROBOTS:
+ms.date: 08/05/2022
+ms.custom:
+ms.reviewer: kamaybac 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: yanansong
 ms.search.validFrom: 2020-03-01
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, InventItemPriceCompareStorage, InventItemPriceCompareStorageDetailsChart, InventItemPriceCompareStorageDetails
 ms.dyn365.ops.version: 10.0.9
-
+ms.assetid:
 ---
 
 # Compare item prices storage report

@@ -1,17 +1,17 @@
 ---
 title: Get started with Tax Calculation
-description: This article explains how to set up Tax Calculation.
+description: Learn how to set up Tax Calculation, including outlines on high-level design, prerequisites, and configuring the Tax Calculation feature.
 author: EricWangChen
-ms.date: 02/09/2024
-ms.topic: article
-audience: Application user
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: wangchen
-ms.search.validFrom: 2021-04-01
-ms.dyn365.ops.version: 10.0.18
+ms.topic: article
+ms.date: 02/09/2024
+ms.reviewer: johnmichalak
 ms.collection: get-started
+audience: Application user
+ms.search.region: Global
+ms.search.validFrom: 2021-04-01
 ms.search.form: TaxIntegrationTaxServiceParameters
+ms.dyn365.ops.version: 10.0.18
 ---
 
 

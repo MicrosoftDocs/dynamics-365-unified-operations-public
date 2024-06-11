@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Post periodic journals
-description: Periodic journals are sometimes called recurring journals because the amount, text, and other information are repeated each time that the periodic journal is retrieved. 
+description: Periodic journals are sometimes called recurring journals because the amount, text, and other information are repeated when the periodic journal is retrieved.
 author: aprilolson
-ms.date: 04/17/2024
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: LedgerJournalTable, LedgerJournalTransPeriodic, LedgerJournalTransDaily   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 04/17/2024
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerJournalTable, LedgerJournalTransPeriodic, LedgerJournalTransDaily
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Post periodic journals
 
 [!include [banner](../../includes/banner.md)]

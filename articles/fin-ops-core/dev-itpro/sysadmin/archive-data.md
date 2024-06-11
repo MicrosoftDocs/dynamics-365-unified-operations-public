@@ -1,17 +1,16 @@
 ---
-title: Archive data in Dynamics 365 finance and operations apps with Dataverse (preview)
+title: Archive data in Dynamics 365 finance and operations apps with Dataverse
 description: Learn about how to archive data in Microsoft Dynamics 365 finance and operations apps, including an overview on business application data lifecycles.
 author: pnghub
 ms.author: gned
 ms.topic: conceptual
-ms.date: 4/10/2024
-ms.custom:
+ms.custom: 
+  - bap-template
+ms.date: 5/31/2024
 ms.reviewer: twheeloc
 ---
 
-# Archive data in Dynamics 365 finance and operations apps with Dataverse (preview)
-
-[!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
+# Archive data in Dynamics 365 finance and operations apps with Dataverse
 
 This article describes how to archive data in Microsoft Dynamics 365 finance and operations apps. Finance and operations apps support custom retention policies for securely archiving and retaining unlimited data for the long term in a cost-efficient way. Finance and operations apps set no limit on active data and therefore support your business growth. Nevertheless, you might want to consider moving historical, inactive data that's required for compliance and regulatory reasons to Dataverse long term retention.
 
@@ -54,6 +53,10 @@ When an archival job is initiated from the Finance and operations archive worksp
  -  The live table records are marked as retained (archived) in Dataverse long term retention.
  -  A reconciliation process verifies that all the live application table records that were previously marked as ready for archiving are available in Dataverse long term retention.
  -  Live application data that was previously marked as ready for archiving is moved to history tables in the Dynamics 365 finance database and deleted from the live application tables. Specific inquiry pages in Dynamics 365 finance can access this history table data. Data from history tables can be either restored to the live table or permanently purged. The permanently purge functionality will be supported in a future release.
+
+## Restoring data from history tables to live tables
+
+Data from history tables can be restored back to live tables from the archive workspace. When data is restored back from history tables to live tables, the corresponding archived data in Dataverse long term retention also goes through a status change from inactive to active, as the data is no longer considered to be archived. 
 
 ## Customization
 

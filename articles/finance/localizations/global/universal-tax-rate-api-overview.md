@@ -1,18 +1,18 @@
 ---
 title: Connect to an external tax solution provider via the Universal Tax Rate API
-description: This article explains the overall scope of the Universal Tax Rate API feature for Tax calculation.
+description: Learn about the overall scope of the Universal Tax Rate API feature for Tax calculation, including outlines on availability and versions.
 author: Kai-Cloud
-ms.date: 03/27/2024
+ms.author: kailiang
 ms.topic: conceptual
+ms.date: 03/27/2024
 ms.custom: 
   - bap-template
-audience: Application user
 ms.reviewer: johnmichalak
+audience: Application user
 ms.search.region: Global
-ms.author: kailiang
 ms.search.validFrom: 2024-02-01
-ms.dyn365.ops.version: 10.0.39
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.39
 ---
 
 # Connect to an external tax solution provider via the Universal Tax Rate API
@@ -114,5 +114,8 @@ For more information about supported countries/regions, contact your tax solutio
 - [Vertex](https://go.microsoft.com/fwlink/?linkid=2258342) (available)
 - [Avalara](https://go.microsoft.com/fwlink/?linkid=2258284) (planned)
 - [Wolters Kluwer](https://go.microsoft.com/fwlink/?linkid=2265094) (planned)
+- [Thomson Reuters](https://go.microsoft.com/fwlink/?linkid=2271303) (planned)
+
+For additional details on release information, available solutions, and supported countries/regions, we recommend reaching out to your tax solution providers.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

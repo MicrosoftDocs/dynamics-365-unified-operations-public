@@ -1,21 +1,15 @@
 ---
-# required metadata
 title: New financial dimension sets
-description: This article describes the updated functionality for financial dimension sets.
+description: Learn about the updated functionality for financial dimension sets, including outlines on viewing balance statuses, enable balances, and deleting dimension sets.
 author: rcarlson
-ms.date: 10/16/2023
-ms.topic: article
-# optional metadata
-
-ms.search.form: DimensionFocus, LedgerTrialBalanceListPage
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: rcarlson
+ms.topic: article
+ms.date: 10/16/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2023-10-16
+ms.search.form: DimensionFocus, LedgerTrialBalanceListPage
 ms.dyn365.ops.version: 10.0.38
 ---
 

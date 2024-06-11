@@ -1,6 +1,6 @@
 ---
 title: Regulatory Configuration Service merge to the Globalization Studio workspace
-description: This article explains the Regulatory Configuration Service (RCS) merge to the Globalization Studio workspace.
+description: Learn about the Regulatory Configuration Service (RCS) merge to the Globalization Studio workspace, including additional resources.
 author: filatovm
 ms.author: filatovm
 ms.topic: conceptual 

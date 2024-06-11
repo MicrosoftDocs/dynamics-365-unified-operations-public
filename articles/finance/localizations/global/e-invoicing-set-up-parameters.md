@@ -1,18 +1,17 @@
 ---
 title: Set up Electronic invoicing parameters
-description: This article explains how to set up the Electronic invoicing parameters (RCS).
+description: Learn how to set up the Electronic invoicing parameters (RCS), including an outline on importing ER configurations from the Global repository.
 author: ilikond
-ms.date: 02/12/2024
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: 
 ms.author: ikondratenko
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.topic: article
+ms.date: 02/12/2024
 ms.custom: 
-ms.assetid: 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: 
+ms.search.validFrom:
 ms.search.form: 
+ms.dyn365.ops.version: 
 ---
 
 # Set up Electronic invoicing parameters 

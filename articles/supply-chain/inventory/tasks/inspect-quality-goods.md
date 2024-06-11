@@ -1,24 +1,17 @@
 --- 
-# required metadata 
- 
 title: Inspect the quality of goods
-description: This article describes how to process quality orders.
-author: yufeihuang
+description: Learn how to process quality orders, including outlines and step-by-step processes for selecting quality orders and recording test results.
+author: yufei-huang
+ms.author: yufeihuang
+ms.topic: how-to
 ms.date: 03/23/2021
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: InventQualityOrderTable, InventQualityOrderLineResults, HcmWorkerLookUp   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: kamaybac   
+audience: Application User  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: InventQualityOrderTable, InventQualityOrderLineResults, HcmWorkerLookUp
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 

@@ -1,25 +1,17 @@
 ---
-# required metadata
-
 title: Advance payments that include tax
-description: This article explains how to create a customer advance payment journal, and then validate the tax information and financial entries.
+description: Learn how to create a customer advance payment journal, and then validate the tax information and financial entries, including a process for validating tax details.
 author: EricWangChen
-ms.date: 06/03/2019
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: India
-# ms.search.industry: 
 ms.author: wangchen
+ms.topic: article
+ms.date: 06/03/2019
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Application User 
+ms.search.region: India
 ms.search.validFrom: 2019-06-01
+ms.search.form:
 ms.dyn365.ops.version: 10.0.4
-
 ---
 
 # Advance payments that include tax

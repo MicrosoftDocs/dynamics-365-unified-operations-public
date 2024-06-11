@@ -1,17 +1,17 @@
 ---
 title: Automate ledger settlements
-description: This article provides information about the Automate ledger settlements process.
+description: Learn about the Automate ledger settlements process, including outlines on defining occurrences of ledger settlements and ledger settlements match criteria pages.
 author: moaamer
-ms.date: 4/19/2024
-ms.topic: article
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: moaamer
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.assetid: 
+ms.topic: article
+ms.date: 4/19/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom:
 ms.search.form: 
+ms.dyn365.ops.version: 
+ms.assetid:
 ---
 
 # Automate ledger settlements

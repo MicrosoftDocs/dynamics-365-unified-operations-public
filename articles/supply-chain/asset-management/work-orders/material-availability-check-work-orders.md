@@ -1,15 +1,15 @@
 ---
 title: Material availability check for work orders (preview)
-description: This article describes how supervisors can check whether all the required materials are available for one or more maintenance work orders.
+description: Learn how supervisors can check whether all the required materials are available for one or more maintenance work orders.
 author: johanhoffmann
 ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form: EntAssetWorkOrderMaterialAvailability, EntAssetWorkOrderTable
 ms.topic: how-to
 ms.date: 09/07/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: EntAssetWorkOrderMaterialAvailability, EntAssetWorkOrderTable
 ---
 
 # Material availability check for work orders (preview)

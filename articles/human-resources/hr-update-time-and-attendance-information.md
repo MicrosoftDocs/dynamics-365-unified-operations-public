@@ -1,8 +1,8 @@
 ---
 title: Update time and attendance information in Dynamics 365 Human Resources
 description: Learn about how to update time and attendance information in Dynamics 365 Human Resources, including adjusting registrations and deactivating past workers.
-author: tonyafehr
-ms.author: tfehr
+author: twheeloc
+ms.author: twheeloc
 ms.date: 01/24/2024
 ms.topic: article
 f1_keywords:

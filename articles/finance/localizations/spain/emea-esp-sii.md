@@ -1,15 +1,14 @@
 ---
 title: Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)
-description: This article describes how to set up and use Dynamics 365 Finance to interoperate with the SII system of Spain.
-author: AdamTrukawka
-ms.date: 11/21/2022
-ms.topic: article
-audience: Application User
+description: Learn about how to set up and use Dynamics 365 Finance to interoperate with the SII system of Spain, including an outline on importing ER configurations.
+author: ankviklis
+ms.author: ankviklis
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/04/2024
 ms.reviewer: johnmichalak
-ms.search.region: Spain
-ms.author: atrukawk
-ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: 7.3
+
 ---
 
 # Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)
@@ -209,7 +208,7 @@ As of Finance version 10.0.22, if you're using the [Tax Calculation](../global/g
    | CUSTOMER INVOICE JOURNAL      | This datasource populates data from the **Customer invoice journal** table as EM items of **FacturasСliente** type for reporting to the SII system of Spain. |
    | VENDOR INVOICE JOURNAL        | This datasource populates data from the **Vendor invoice journal** table as EM items of **FacturasProveedores** type for reporting to the SII system of Spain. |
    | PROJECT INVOICE               | This datasource populates data from the **Project invoice** table as EM items of **FacturasСliente** type for reporting to the SII system of Spain. |
-   | TRANSFER ORDER HISTORY        | This datasource populates data from the **Transfer order history** table as EM items of the **FacturasСliente** and **FacturasProveedores** types for reporting to the SII system of Spain. This datasource is available as of Finance version 10.0.22 if you're using the [Tax Calculation](../global/global-tax-calcuation-service-overview.md) service and the [Support multiple VAT registration numbers](../global/emea-multiple-vat-registration-numbers.md) feature is enabled in the **Feature management** workspace. For more information, see the [Reporting to the SII system of Spain for multiple VAT registrations](#multiple-vat) section later in this article. |
+   | TRANSFER ORDER HISTORY        | This datasource populates data from the **Transfer order history** table as EM items of the **FacturasСliente** and **FacturasProveedores** types for reporting to the SII system of Spain. This datasource is available as of Finance version 10.0.22 if you're using the [Tax Calculation](../global/global-tax-calcuation-service-overview.md) service and enabled the **Support multiple VAT registration numbers** parameter in the **Tax calculation parameters** page. For more information, see the [Reporting to the SII system of Spain for multiple VAT registrations](#multiple-vat) section later in this article. |
 
 5.  Select **OK** to initiate the executable class.
 

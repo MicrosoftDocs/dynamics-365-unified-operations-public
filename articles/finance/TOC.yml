@@ -100,6 +100,8 @@
           href: ../fin-ops-core/dev-itpro/get-started/system-requirements-on-prem.md?context=/dynamics365/context/finance
         - name: Buy Finance + Operations (on-premises)
           href: ../fin-ops-core/dev-itpro/get-started/purchase-on-premises.md?context=/dynamics365/context/finance
+      - name: Enable copilot in Dynamics 365 Finance
+        href: accounts-receivable/Enable-copilot-in-finance.md
       - name: Documentation resources
         items:
         - name: Help system
@@ -384,6 +386,8 @@
         href: accounts-receivable/tasks/establish-customer-method-payment.md
       - name: Establish customer payment fees
         href: accounts-receivable/tasks/establish-customer-payment-fees.md
+      - name: Customer summary page
+        href: accounts-receivable/CustomerPageSummary.md
       - name: Customer payment insights 
         href: accounts-receivable/payment-insights-overview.md
       - name: Accounts receivable posting
@@ -640,6 +644,8 @@
         href: budgeting/budget-control-overview-configuration.md
       - name: Budgeting overview
         href: budgeting/basic-budgeting-overview-configuration.md
+      - name: Create budget register entries
+        href: budgeting/budget-register-entries.md
       - name: Budget funds available
         href: budgeting/budget-funds-available.md
       - name: Position forecasting
@@ -1558,6 +1564,8 @@
             href: localizations/global/workspace/gsw-import-er-config-dataverse.md
           - name: Upload ER configurations and Globalization features as a Dataverse solution
             href: localizations/global/workspace/gsw-upload-er-config.md
+          - name: Create a Dataverse solution using upload into repository
+            href: localizations/global/workspace/gsw-upload-into-repository.md
         - name: Regulatory configuration service (RCS)
           items:
           - name: Regulatory configuration service (RCS) overview
@@ -1652,6 +1660,8 @@
               href: localizations/global/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/finance
           - name: Country/region-specific scenarios
             items:
+            - name: Electronic invoicing coverage
+              href: localizations/global/e-invoicing-coverage.md?context=/dynamics365/context/finance
             - name: Availability of Electronic Invoicing features
               href: localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/finance
             - name: Australia and New Zealand
@@ -1662,6 +1672,10 @@
               href: localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
             - name: Saudi Arabia - onboarding
               href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
+            - name: Malaysia
+              href: localizations//malaysia/apac-mys-e-invoices.md?context=/dynamics365/context/finance 
+            - name: Poland
+              href: localizations/poland/gs-e-invoicing-pol-get-started.md?context=/dynamics365/context/finance 
           - name: Electronic Invoicing FAQ
             href: localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/finance
         - name: Electronic Invoicing (RCS)
@@ -1754,8 +1768,6 @@
               href: localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/finance
             - name: Get started with Electronic Invoicing for Australia and New Zealand
               href: localizations/apac/apac-aus-nzl-electronic-invoices.md
-            - name: Get started with Electronic Invoicing for Brazil
-              href: localizations/brazil/e-invoicing-bra-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic invoicing for Denmark
               href: localizations/denmark/e-invoicing-dk-get-started.md
             - name: Get started with Electronic Invoicing for Egypt
@@ -1764,8 +1776,6 @@
               href: localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic Invoicing for Indonesia
               href: localizations/indonesia/e-invoicing-id-get-started.md?context=/dynamics365/context/finance
-            - name: Get started with the Electronic Invoicing for Mexico
-              href: localizations/iberoamerica/e-invoicing-mex-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic invoicing for Poland
               href: localizations/poland/e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic invoicing for Saudi Arabia - Phase one
@@ -1838,6 +1848,10 @@
                 href: localizations/france/emea-reporting-multiple-vat-registrations-fr.md
               - name: Germany 
                 href: localizations/germany/emea-reporting-multiple-vat-registrations-de.md
+              - name: Italy 
+                href: localizations/italy/emea-reporting-multiple-vat-registrations-it.md
+              - name: Lithuania 
+                href: localizations/lithuania/emea-reporting-multiple-vat-registrations-lt.md
               - name: Netherlands 
                 href: localizations/netherlands/emea-reporting-multiple-vat-registrations-nl.md
               - name: Norway 
@@ -3590,18 +3604,18 @@
             href: localizations/lithuania/emea-ltu-fixed-asset-repair-statement.md
           - name: Generate a fixed asset transfer between warehouses document
             href: localizations/lithuania/lt-00003-fixed-asset-transfer.md
-          - name: VAT statement details
-            href: localizations/lithuania/emea-ltu-vat-statement-details.md
+          - name: EU sales list
+            href: localizations/lithuania/emea-ltu-eu-sales-list.md
           - name: Lithuanian Intrastat
             href: localizations/lithuania/emea-ltu-intrastat.md
+          - name: VAT declaration
+            href: localizations/lithuania/emea-ltu-vat-declaration-lithuania.md
           - name: i.SAF reporting for Lithuania
             href: localizations/lithuania/emea-ltu-isaf.md
           - name: Standard Audit File for Tax (SAF-T) for Lithuania
             href: localizations/lithuania/emea-ltu-saf-t.md
           - name: Set up the transfer documents for goods movement inside a company
             href: localizations/europe/set-up-transfer-documents-goods-movement-inside-company.md
-          - name: EU sales list
-            href: localizations/lithuania/emea-ltu-eu-sales-list.md
         - name: Malaysia
           items:
           - name: Malaysia overview
@@ -3627,7 +3641,7 @@
           - name: Set up GST relief clauses
             href: localizations/malaysia/my-00006-01-gst-relief-clauses.md
           - name: SST-02 declaration for Malaysia
-            href: localizations/mea/apac-mys-sst-declaration.md
+            href: localizations/apac/apac-mys-sst-declaration.md
         - name: Mexico
           items:
           - name: Mexico overview
@@ -4089,11 +4103,11 @@
           - name: Saudi Arabia overview
             href: localizations/mea/saudi-arabia.md
           - name: Sales tax
-            href: localizations/mea/apac-sau-sales-tax.md
+            href: localizations/apac/apac-sau-sales-tax.md
           - name: Zakat reporting for Saudi Arabia
             href: localizations/mea/emea-sau-zakat-reporting.md     
           - name: Allocate bank document charges to a shipment
-            href: localizations/mea/apac-sau-allocate-bank-document-charges-shipment.md
+            href: localizations/apac/apac-sau-allocate-bank-document-charges-shipment.md
           - name: Customer electronic invoices in Saudi Arabia
             href: localizations/mea/emea-sau-e-invoices.md
         - name: Singapore
@@ -4429,8 +4443,6 @@
         href: business-performance-analytics/install-bpa.md
       - name: Business performance analytics data model
         href: business-performance-analytics/business-performance-analytics-data-model.md
-      - name: Bus matrix
-        href: business-performance-analytics/bus-matrix.md
       - name: Set up security in business performance analytics 
         href: business-performance-analytics/set-up-security.md
       - name: Access business performance analytics
@@ -4440,7 +4452,9 @@
       - name: Business performance analytics reports
         href: business-performance-analytics/Reports-in-BPA.md
       - name: Create business performance analytics reports  
-        href: business-performance-analytics/how-to-create-and-edit-reports.md     
+        href: business-performance-analytics/how-to-create-and-edit-reports.md
+      - name: Business performance analytics Excel add-in
+        href:  business-performance-analytics/bpa-excel.md
     - name: Business performance planning
       items:
       - name: Business performance planning overview
@@ -4453,6 +4467,8 @@
         href: business-performance-planning/powerBI-visual-install.md
       - name: Install the Excel add-in
         href: business-performance-planning/install-excel-add.md
+      - name: Security
+        href: business-performance-planning/bpp-security.md
       - name: Dimensions
         items:
         - name: Creating and maintaining dimensions
@@ -5291,6 +5307,8 @@
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?context=/dynamics365/context/finance
         - name: View workflow history
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?context=/dynamics365/context/finance
+        - name: Workflow history summary
+          href: ../fin-ops-core/fin-ops/organization-administration/workflow-history-summary.md?context=/dynamics365/context/finance
         - name: Configure the system to send workflow-related email to users
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?context=/dynamics365/context/finance
         - name: Workflow types
@@ -5476,7 +5494,11 @@
     - name: Overview
       href: ../finance/transparency-note.md 
     - name: Collections coordinator summary FAQ
-      href: accounts-receivable/collections-coordinator-summary-faq.md              
+      href: accounts-receivable/collections-coordinator-summary-faq.md 
+    - name: Customer page summary FAQ
+      href: accounts-receivable/CustomerPageSummaryFAQ.md
+    - name: Workflow summary FAQ
+      href: ../fin-ops-core/fin-ops/copilot/workflow-history-summary-faq.md
   - name: Development and administration for finance and operations apps 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Supply Chain Management 

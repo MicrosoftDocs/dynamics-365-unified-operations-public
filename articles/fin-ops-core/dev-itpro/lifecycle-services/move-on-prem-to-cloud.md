@@ -12,6 +12,7 @@ ms.search.region: Global
 ms.search.validFrom: 2020-09-30
 ms.search.form: 
 ms.dyn365.ops.version: 10.0.13
+ms.service: dynamics-365-op
 ---
 
 # Move Lifecycle Services implementation projects from on-premises to the cloud

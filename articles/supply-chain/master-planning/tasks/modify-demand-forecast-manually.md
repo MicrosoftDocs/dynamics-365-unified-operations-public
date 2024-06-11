@@ -17,6 +17,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
+[!INCLUDE [demand-planning-banner](../../includes/demand-planning-banner.md)]
+
 This procedure shows how to modify the forecast for an item. This procedure is intended for the production planner.
 
 ## Modify the forecast for a selected item

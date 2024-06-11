@@ -1,18 +1,18 @@
 ---
 title: NO-00003 Customer and vendor payment formats
-description: This task walks you through setting up and maintaining Norwegian payment IDs.
+description: Learn about setting up and maintaining Norwegian payment IDs, including step-by-step processes for setting up payment IDs and attaching payment IDs.
 author: EricWangChen
-ms.date: 08/29/2018
-ms.topic: how-to
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Norway
 ms.author: wangchen
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Norway
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: 
   - BankCustPaymIdTable, LogisticsCountryRegionPaymentIdType_NO, CustTable, CustPaymMode, CustGroup
   - CustInvoiceJournal
+ms.dyn365.ops.version: Version 7.0.0
 ---
 # NO-00003 Customer and vendor payment formats
 

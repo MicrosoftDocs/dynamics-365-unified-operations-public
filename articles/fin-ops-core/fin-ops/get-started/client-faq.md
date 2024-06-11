@@ -18,9 +18,6 @@ ms.assetid: a9a57f0e-a67c-46b1-83c9-5d6350fb3b86
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 This article provides answers to frequently asked questions about the finance and operations client.
 
 ## Why aren't symbols loaded?

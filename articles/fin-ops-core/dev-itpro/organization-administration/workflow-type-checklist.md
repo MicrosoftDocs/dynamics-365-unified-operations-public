@@ -2,7 +2,7 @@
 title: Workflow type checklist
 description: Learn about the steps that are required to create a new workflow type, including a workflow type checklist and extra resources.
 author: josaw1
-ms.author: tfehr
+ms.author: johnmichalak
 ms.topic: article
 ms.date: 06/19/2019
 ms.reviewer: twheeloc
@@ -16,9 +16,6 @@ ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 # Workflow type checklist
 
 [!include [banner](../../../finance/includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article describes the steps that are required to create a new workflow type. Workflow types are used to create configurations for a workflow.
 

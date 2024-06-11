@@ -1,18 +1,17 @@
 ---
 title: Globalization feature components (RCS)
-description: This article provides an overview of Globalization feature components (RCS).
+description: Learn about Globalization feature components (RCS), including a step-by-step process for accessing electronic invoicing feature components.
 author: ilikond
-ms.date: 02/11/2022
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: ikondratenko
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.custom: 
-ms.assetid: 
+ms.topic: article
+ms.date: 02/11/2022
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom:
 ms.search.form: 
+ms.dyn365.ops.version: 
 ---
 
 # Globalization feature components (RCS)

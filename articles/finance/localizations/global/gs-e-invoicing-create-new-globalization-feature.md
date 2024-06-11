@@ -1,18 +1,17 @@
 ---
 title: Create Globalization features
-description: This article explains how to create a Globalization feature.
+description: Learn how to create a Globalization feature, including outlines on creating a feature based on an existing feature and creating a feature from scratch.
 author: ilikond
-ms.date: 01/29/2024
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: ikondratenko
-ms.search.validFrom: 2024-01-29
-ms.dyn365.ops.version: 10.0.39 
+ms.topic: article
+ms.date: 01/29/2024
 ms.custom: 
-ms.assetid: 
-ms.search.form: 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2024-01-29
+ms.search.form:
+ms.dyn365.ops.version: 10.0.39
 ---
 
 # Create Globalization features

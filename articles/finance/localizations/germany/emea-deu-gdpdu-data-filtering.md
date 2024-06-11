@@ -1,13 +1,13 @@
 ---
 title: Add filters to an audit file configuration
-description: This article explains how to add a data filter in the German audit file.
+description: Learn how to add a data filter in the German audit file, including a step-by-step process for adding the possibility of filtering data in reports.
 author: AdamTrukawka
-ms.date: 02/09/2021
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Austria, Germany
 ms.author: atrukawk
+ms.topic: article
+ms.date: 02/09/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Austria, Germany
 ms.search.form: ERWorkspace
 ---
 

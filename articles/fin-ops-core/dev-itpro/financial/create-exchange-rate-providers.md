@@ -4,7 +4,7 @@ description: Learn how to create and set up an exchange rate provider, including
 author: RyanCCarlson2
 ms.author: rcarlson
 ms.topic: article
-ms.date: 03/09/2022
+ms.date: 06/10/2024
 ms.reviewer: kfend
 audience: Developer
 ms.assetid: 24643037-f7a5-4acf-b3d6-9943642b618c

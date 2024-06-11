@@ -10,6 +10,7 @@ audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 
 ms.search.form: 2022-04-08
+ms.service: dynamics-365-op
 ---
 
 # Clean up source data for upgrade from Microsoft Dynamics AX 2012 to Dynamics 365 Finance + Operations

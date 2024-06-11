@@ -20,10 +20,6 @@ ms.assetid: 4e6c7194-a059-4057-bd62-ec0c802c36fd
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
-
 This article explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Excel add-in. To open entity data, you can start from either Excel or finance and operations apps.
 
 By opening entity data in Excel, you can quickly and easily view and edit the data by using the Excel add-in. This add-in requires Microsoft Excel 2016 or later.

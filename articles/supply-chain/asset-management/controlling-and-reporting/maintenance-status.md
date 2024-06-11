@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Maintenance status
-description: This article explains how to calculate maintenance status in Asset Management.
+description: Learn how to calculate maintenance status in Asset Management, including a step-by-step process for making a maintenance status calculation.
 author: johanhoffmann
-ms.date: 08/23/2019
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: EntAssetStatusCalculate, EntAssetStatus 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
+ms.topic: article
+ms.date: 08/23/2019
+ms.custom:
+ms.reviewer: kamaybac   
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2019-08-31
+ms.search.form: EntAssetStatusCalculate, EntAssetStatus
 ms.dyn365.ops.version: 10.0.5
-
 ---
 
 # Maintenance status

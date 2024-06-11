@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Online financial consolidations
-description: This article describes online financial consolidations that use templates in General ledger.
+description: Learn about online financial consolidations that use templates in General ledger, including an outline and process for performing consolidation.
 author: jchrist
-ms.date: 04/22/2024
-ms.topic: article
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jchrist
+ms.topic: article
+ms.date: 04/22/2024
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2018-5-31
+ms.search.form: 
 ms.dyn365.ops.version: 8.0.1
-
 ---
 
 # Online financial consolidations

@@ -1,7 +1,7 @@
 items:
 - name: Dynamics 365 Human Resources
   items:
-  - name: Dynamics 365 Human Resources 
+  - name: Dynamics 365 Human Resources  
     items:
     - name: Dynamics 365 Human Resources documentation
       href: index.yml
@@ -19,8 +19,10 @@ items:
         href: customer-migration.md 
       - name: Human Resources infrastructure merge known issues
         href: hr-migration-issues.md
-      - name: Human Resources customer merge 
+      - name: Human Resources customer merge overview  
         href: hr-customer-merge.md 
+      - name: Human Resources customer merge FAQ
+        href: customer-merge.md
       - name: Human Resources migration go-live readiness review 
         href: hr-migration-admin-go-live-readiness-review.md
     - name: What's new or changed
@@ -551,7 +553,7 @@ items:
             href: ../human-resources/hr-personnel-mass-hire-projects.md
           - name: Create mass hire projects
             href: ../human-resources/hr-personnel-create-mass-hire-project.md
-        - name: Recruiting requests (merged infrastructure)
+        - name: Recruiting requests 
           items:
           - name: Recruit job candidates
             href: hr-personnel-recruit.md  
@@ -602,7 +604,7 @@ items:
       - name: Leave of absence request
         href: hr-employee-self-service-request-leave-of-absence.md
       - name: Manage leave requests in Teams  
-        href: hr-teams-leave-app.md
+        href: hr-app.md
       - name: Create an open-ended leave of absence  
         href: hr-create-open-leave-absence.md
       - name: Manage employee leave
@@ -1048,19 +1050,53 @@ items:
         - name: Payroll position job
           href: hr-admin-integration-payroll-api-payroll-position-job.md
         - name: Worker 
-          href: human-resources/hr-worker.md
+          href: hr-worker.md
         - name: Bank account disbursement
-          href: human-resources/hr-bank-disburse.md
+          href: hr-bank-disburse.md
         - name: Worker contact
-          href: human-resources/hr-worker-contact.md
+          href: hr-worker-contact.md 
         - name: HCM Compensation fixed plan 
-          href: human-resources/hr-hcm-comp-fix.md
+          href: hr-hcm-comp-fix.md
+        - name: HCM position type entity
+          href: hcm-position-type.md
+        - name: HCM unions entity
+          href: hcm-union.md
+        - name: HCM person identification entities
+          href: hcm-person-id.md
+        - name: HCM job compensation entities
+          href: hcm-job-comp.md
+        - name: HCM person details entities
+          href: hcm-person-details.md
+        - name: Variable compensation type entity        
+          href: variable-comp.md
+        - name: Leave bank transaction entity
+          href: hr-leave-bank-trans.md
+        - name: Payroll position details entity
+          href: hr-payroll-position.md
+        - name: HCM Position hierachy type entity
+          href: hcm-position-hierachy-type.md
         - name: Job task 
           href: hr-admin-integration-job-task.md
         - name: Payroll job type 
           href: hr-payroll-job-type.md
         - name: Payroll historical person name 
           href: hr-payroll-history-person.md
+        - name: HCM fixed compensation employee entity
+          href: hcm-fixed-comp-empl.md
+        - name: HCM compensation fixed plan entity
+          href: hcm-comp-fixed-plan.md
+        - name: HCM employment V2 entity
+          href: hr-employ-v2.md
+        - name: Employee detail entity
+          href: hr-employ-detail.md
+        - name: HCM identification type entity
+          href: hcm-id-type.md
+        - name: HCM Labor union entity
+          href: hcm-labor-union.md
+        - name: HCM position base entity
+          href: hcm-position-base.md
+        - name: HCM position detail entity
+          href: hcm-position-detail.md
         - name: Payroll job base 
           href: hr-payroll-job-base.md
         - name: Payroll job family 

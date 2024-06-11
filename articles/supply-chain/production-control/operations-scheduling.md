@@ -6,10 +6,12 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: ProdSchedule
 ms.topic: conceptual
-ms.date: 01/09/2023
+ms.date: 05/22/2024
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - evergreen
 ---
 
 # Operations scheduling
@@ -59,7 +61,7 @@ The operations schedule also drives master planning and determines calculations 
 - **Capacity availability** – Resources that are required for production
 
 > [!NOTE]
-> If you're using multi-threaded master planning and operations scheduling, finite capacity will not be considered. 
+> If you're using multi-threaded master planning and operations scheduling, finite capacity will not be considered.
 
 ## Cancellations
 

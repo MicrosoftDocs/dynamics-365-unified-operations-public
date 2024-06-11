@@ -1,13 +1,13 @@
 ---
 title: Line discount calculation from the unit price for Poland
-description: For legal entities in Poland, the line discount can be calculated from the unit price of an invoice line instead of from a line amount. This article provides information about the Line discount calculation from unit price method and explains how to set it up.
+description: Learn about the Line discount calculation from unit price method and explains how to set it up, including an outline the Calculation of line discount parameter.
 author: AdamTrukawka
-ms.date: 06/20/2017
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Poland
 ms.author: atrukawk
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Poland
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ---

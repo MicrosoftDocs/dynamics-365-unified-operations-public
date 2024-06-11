@@ -1,16 +1,16 @@
 ---
 title: Fixed assets depreciation methods for China
-description: This article describes the depreciation method set up for legal entities in China.
+description: Learn about the depreciation method set up for legal entities in China, including a step-by-step process for creating a depreciation profile.
 author: AdamTrukawka
-ms.date: 03/21/2018
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: China (PRC)
 ms.author: atrukawk
+ms.topic: article
+ms.date: 03/21/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: China (PRC)
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
 ms.search.form: AssetParameters
+ms.dyn365.ops.version: Version 1611
 ---
 
 # Fixed assets depreciation methods for China

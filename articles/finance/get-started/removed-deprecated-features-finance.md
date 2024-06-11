@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Removed or deprecated features in Dynamics 365 Finance 
-description: This article describes features that have been removed, or that are planned for removal from Dynamics 365 Finance.
+description: Learn about features that have been removed, or that are planned for removal from Dynamics 365 Finance, with an outline on features removed.
 author: twheeloc
-ms.date: 05/02/2024
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
-ms.search.validFrom: 2020-03-02 
+ms.topic: article
+ms.date: 05/02/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2020-03-02
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 33
-
 ---
 
 # Removed or deprecated features in Dynamics 365 Finance
@@ -36,7 +27,21 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
-## Features removed or deprecated in the Finance 10.0.39 release 
+## Features removed or deprecated in the Finance 10.0.41 release
+
+### Sales tax report for Lithuania (design based on reporting codes)
+
+[Sales tax report for Lithuania](../localizations/lithuania/emea-ltu-vat-statement-details.md)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Replaced with a new value-added tax (VAT) declaration design, [VAT declaration for Lithuania](../localizations/lithuania/emea-ltu-vat-declaration-lithuania.md). | 
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By May 1, 2025, we plan to no longer support the Sales tax report for Lithuania design that's based on reporting codes, including the **VAT declaration (LT)** Electronic reporting (ER) format under the **VAT declaration model**, **Main economic activity code**, and **Deduction percent** fields on the **Sales tax** tab of the **General ledger parameters** page. New **VAT declaration XML (LT)** and **VAT declaration Excel (LT)** ER formats are introduced under the **Tax declaration** model. |
+
+## Features removed or deprecated in the Finance 10.0.39 release
 
 ### Sales tax report for Estonia (design based on reporting codes)
 

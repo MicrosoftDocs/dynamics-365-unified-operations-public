@@ -1,24 +1,16 @@
 ---
-# required metadata
-
 title: Differences between financial tags and financial dimensions
-description: This article describes the differences between financal tags and financial dimensions.
+description: Learn about the differences between financal tags and financial dimensions, including a table that outlines the functionality for dimensions and tags.
 author: kweekley
-ms.date: 04/29/2024
-ms.topic: article
-# optional metadata
-
-ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
+ms.topic: article
+ms.date: 04/29/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2018-10-31
+ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Differences between financial tags and financial dimensions

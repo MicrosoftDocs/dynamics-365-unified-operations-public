@@ -1,17 +1,15 @@
 ---
-# required metadata
 title: What's new or changed in Dynamics 365 Finance 10.0.40 (June 2024)
-description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.40 preview release.
+description: Learn about features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.40 preview release distributed in June 2024.
 author: twheeloc
-ms.date: 4/26/2024
 ms.author: twheeloc
 ms.topic: faq
+ms.date: 4/26/2024
 ms.custom:   
   - bap-template
   - evergreen
 ms.reviewer: twheeloc
 ms.search.region: Global
-
 ---
 
 # What's new or changed in Dynamics 365 Finance 10.0.40 (June 2024)
@@ -62,16 +60,17 @@ This section contains a table that lists the enhancements that are included in t
 | Tax calculation - Universal tax rate API | Support setting up error handling for tax solution providers | A new **Retrieve ISV Error Messages Codes** API type is introduced in the tax feature. This new API type lets independent software vendors (ISVs) define their own error codes and messages. When you select **Sync result codes** on the **Error Handling** tab of the **Tax calculation parameters** page, you receive a list of error codes from the API that's specified in the tax feature. These error codes are stored in the database. | |
 | Credits and collections | Customer payment journals | Payment journals that have multiple payment lines that have an undisputed collections status are now faster and more efficient. | |
 | Credits and collections | Customer aging report | Performance is improved when the aging bucket balances are calculated on the customer aging report. | |
+| General ledger| Awareness between ledger settlement and year-end close |The awareness feature, including its dependent features for automating ledger settlements and posting foreign currency gains/losses, has been moved to **General ledger parameters**. These options, found on the **Ledger settlement** page, are controlled by the **Enable advanced awareness options**, **Enable process automation for ledger settlement**, and **Enable post currency realized gains/losses for ledger settlements** settings.| |
 
 ## Additional resources
 
 ### Platform updates for finance and operations apps
 
-Dynamics 365 Finance version 10.0.40 includes platform updates. To learn more, see [Platform updates for version 10.0.40 of finance and operations apps](../../fin-ops/get-started/whats-new-platform-updates-10-0-40.md).
+Dynamics 365 Finance version 10.0.40 includes platform updates. To learn more, see [Platform updates for version 10.0.40 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-40.md).
 
 ### Bug fixes
 
-For information about the bug fixes included in this update, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=xxxxx).
+For information about the bug fixes included in this update, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=936136).
 
 ### Regulatory updates
 

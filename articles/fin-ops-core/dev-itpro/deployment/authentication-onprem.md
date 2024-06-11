@@ -12,6 +12,7 @@ ms.search.region: Global
 ms.search.validFrom: 2020-09-30
 ms.search.form:
 ms.dyn365.ops.version: 10.0.15
+ms.service: dynamics-365-op
 ---
 
 # Authentication in Dynamics 365 Finance + Operations (on-premises) environments

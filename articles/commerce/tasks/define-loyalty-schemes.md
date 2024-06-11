@@ -4,22 +4,13 @@
 title: Define loyalty schemes
 description: This procedure walks through how to define a loyalty scheme. 
 author: jashanno
-ms.date: 11/14/2017
-ms.topic: how-to 
- 
-# optional metadata 
- 
-# ms.search.form:   
+ms.date: 05/28/2024
+ms.topic: article
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: josaw
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.reviewer: josaw 
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: jashanno
+ms.author: mashneer
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Define loyalty schemes

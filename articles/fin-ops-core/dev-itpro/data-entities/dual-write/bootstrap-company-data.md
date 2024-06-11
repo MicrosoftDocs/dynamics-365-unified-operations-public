@@ -16,9 +16,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [preview-banner](../../includes/preview-banner.md)]
-
-
 
 If you have an existing Microsoft Dataverse instance or finance and operations app instance that has business data, you might want to enable a dual-write connection against it. In this case, you must initialize the Dataverse data or finance and operations app data with company information before you enable dual-write. This initialization process is sometimes referred to as *bootstrapping*.
 

@@ -1,17 +1,17 @@
 ---
 title: Partial fixed asset disassembly (liquidation)
-description: This article provides information about partial fixed asset disassembly or liquidation for Russia.
+description: Learn about partial fixed asset disassembly or liquidation for Russia, including an outline and step-by-step process for configuring transaction profiles.
 author: AdamTrukawka
-ms.date: 07/28/2021
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Russia
 ms.author: atrukawk
-ms.search.validFrom: 2018-10-28
-ms.dyn365.ops.version: 8.1
+ms.topic: article
+ms.date: 07/28/2021
 ms.custom: 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
+ms.search.validFrom: 2018-10-28
 ms.search.form: RAssetPosting
+ms.dyn365.ops.version: 8.1
 ---
 
 # Partial fixed asset disassembly (liquidation)

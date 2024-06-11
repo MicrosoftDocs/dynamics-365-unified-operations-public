@@ -17,7 +17,6 @@ ms.assetid: 0090efe3-3fd8-4988-83df-745d25b063d3
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 ## CustTrans::settleTransact is obsolete
 

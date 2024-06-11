@@ -1,13 +1,13 @@
 ---
 title: Inquiries and reports with agreements
-description: This article provides information about restoring previously deducted VAT amounts for fixed assets.
+description: Learn about restoring previously deducted VAT amounts for fixed assets, including an outline and step-by-step process for viewing sales agreement amounts.
 author: AdamTrukawka
-ms.date: 02/06/2020
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 02/06/2020
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 ---

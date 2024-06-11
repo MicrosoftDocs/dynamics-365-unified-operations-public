@@ -1,16 +1,16 @@
 ---
 title: Import the Chinese Golden Tax files
-description: This article explains how to import the Chinese Golden Tax files into Microsoft Dynamics 365 Finance.
+description: Learn how to import the Chinese Golden Tax files into Microsoft Dynamics 365 Finance, including a step-by-step process for importing files from providers.
 author: mrolecki
-ms.date: 12/20/2021
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: China (PRC)
 ms.author: mrolecki
+ms.topic: article
+ms.date: 12/20/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: China (PRC)
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
 ms.search.form: DataManagementWorkspace, DMFQuickImportExportRnr
+ms.dyn365.ops.version: Version 1611
 ---
 
 # Import the Chinese Golden Tax files

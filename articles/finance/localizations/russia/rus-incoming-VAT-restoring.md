@@ -1,13 +1,13 @@
 ---
 title: Incoming VAT restoring
-description: This article explains how to restore previously deducted VAT amounts for fixed assets.
+description: Learn how to restore previously deducted VAT amounts for fixed assets, including an outline on restoring VAT during export sales of goods and fixed assets.
 author: AdamTrukawka
-ms.date: 11/12/2019
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 11/12/2019
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 ---

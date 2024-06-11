@@ -1,13 +1,13 @@
 ---
 title: Create Azure resources using Azure PowerShell or ARM templates
-description: This article explains how to use Microsoft Azure PowerShell or ARM templates to create Azure resources that are required for Electronic invoicing.
+description: Learn how to use Microsoft Azure PowerShell or ARM templates to create Azure resources that are required for Electronic invoicing.
 author: amkedi
-ms.date: 03/11/2024
+ms.author: amkedi
 ms.topic: how-to
+ms.date: 03/11/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
-ms.author: amkedi
 ---
 
 # Create Azure resources using Azure PowerShell or ARM templates

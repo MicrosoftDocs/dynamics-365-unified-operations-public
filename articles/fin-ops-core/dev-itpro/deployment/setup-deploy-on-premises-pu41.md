@@ -12,6 +12,7 @@ ms.search.region: Global
 ms.search.validFrom: 2021-01-31
 ms.search.form: 
 ms.dyn365.ops.version: Platform update 41
+ms.service: dynamics-365-op
 ---
 
 # Set up and deploy on-premises environments (Platform update 41 through 55)

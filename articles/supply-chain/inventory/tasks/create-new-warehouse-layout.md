@@ -1,26 +1,20 @@
 --- 
-# required metadata 
- 
 title: Create a new warehouse layout
-description: This article describes how to set up information about the locations in a warehouse. 
-author: yufeihuang
+description: Learn how to set up information about the locations in a warehouse, including an outline and step-by-step process on setting the default location capacity. 
+author: yufei-huang
+ms.author: yufeihuang
+ms.topic: how-to
 ms.date: 07/29/2019
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: InventParameters, DefaultDashboard, InventLocation, WMSLocationWizard   
-audience: Application User 
-# ms.devlang:  
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: InventParameters, DefaultDashboard, InventLocation, WMSLocationWizard
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create a new warehouse layout
 
 [!include [banner](../../includes/banner.md)]

@@ -1,16 +1,15 @@
 ---
 title: Cycle counting example scenarios
 description: This article provides a collection of scenarios that explore the cycle counting features of Microsoft Dynamics 365 Supply Chain Management.
-author: Mirzaab
-ms.date: 06/08/2021
-ms.topic: article
-ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage, SalesShipmentDeviation, WHSRFMenuItemCycleCount, WHSWorkLineCycleCount
-audience: Application User
+author: perlynne
+ms.author: perlynne
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.author: mirzaab
-ms.search.validFrom: 2021-06-08
-ms.dyn365.ops.version: 10.0.20
+ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage, SalesShipmentDeviation, WHSRFMenuItemCycleCount, WHSWorkLineCycleCount
+ms.topic: how-to
+ms.date: 06/07/2024
+audience: Application User
+ms.custom:
+  - bap-template
 ---
 
 # Cycle counting example scenarios
@@ -249,7 +248,7 @@ Follow these steps to review the cycle counting differences.
 
 ## Scenario 3: Spot cycle counting
 
-The on-hand record states that there is an on-hand quantity of item *L0101* at location *01A02R2S2B*. The warehouse worker is at location *01A02R2S1B*. Although this location should be empty, it's full. Therefore, the warehouse worker immediately does a spot count of this location.
+The on-hand record states that there's an on-hand quantity of item *L0101* at location *01A02R2S2B*. The warehouse worker is at location *01A02R2S1B*. Although this location should be empty, it's full. Therefore, the warehouse worker immediately does a spot count of this location.
 
 ### Do cycle counting work for scenario 3
 
@@ -339,7 +338,7 @@ Follow these steps to set up a cycle count plan.
 1. On the Action Pane, select **Process cycle counting plan**.
 1. In the **Cycle count plans** dialog box, on the **Run in the background** FastTab, set the **Batch processing** option to *Yes*.
 1. Select **Recurrence**.
-1. In the **Define recurrence** dialog box, set up the batch job so that it begins immediately and runs once every minute, and so that there is no end date.
+1. In the **Define recurrence** dialog box, set up the batch job so that it begins immediately and runs once every minute, and so that there's no end date.
 1. Select **OK** to close the **Define recurrence** dialog box.
 1. Select **OK** to close the **Cycle count plans** dialog box.
 

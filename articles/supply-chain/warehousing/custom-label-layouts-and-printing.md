@@ -1,13 +1,15 @@
 ---
 title: Custom label layouts and printing
 description: This article describes how to set up and print custom labels.
-author: Mirzaab
-ms.author: mirzaab
+author: perlynne
+ms.author: perlynne
 ms.reviewer: kamaybac
 ms.search.form: WHSLabelLayout, WHSLabelLayoutDataSource
 ms.topic: how-to
-ms.date: 03/03/2023
-ms.custom: bap-template
+ms.date: 05/16/2024
+audience: Application User
+ms.custom: 
+  - bap-template
 ---
 
 # Custom label layouts and printing
