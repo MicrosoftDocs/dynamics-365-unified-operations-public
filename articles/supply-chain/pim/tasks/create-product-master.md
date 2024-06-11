@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create a product master
-description: Create a product master for the predefined variants. 
+description: Learn how to create a product master for the predefined variants, including a step-by-step process using the USMF demo data company. 
 author: t-benebo
-ms.date: 08/29/2018
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductInventoryDimensionGroups   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: benebotg
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.custom:
+ms.reviewer: kamaybac     
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductInventoryDimensionGroups
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create a product master
 
 [!include [banner](../../includes/banner.md)]

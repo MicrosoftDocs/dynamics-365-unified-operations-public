@@ -1,15 +1,15 @@
 ---
 title: Master planning system architecture
-description: This article describes the system architecture used to process master plans in Supply Chain Management.
+description: Learn about the system architecture used to process master plans in Supply Chain Management, including outlines on architecture and data flow.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: ReqCreatePlanWorkspace
 ms.topic: conceptual
 ms.date: 11/11/2022
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: ReqCreatePlanWorkspace
 ---
 
 # Master planning system architecture
