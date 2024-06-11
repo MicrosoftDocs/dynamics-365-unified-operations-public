@@ -22,6 +22,8 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resource
+---
+
 
 # Employee self service workspace summary: Responsible AI FAQ
  This article answers some frequently asked questions about the Employee self service workspace summary.
