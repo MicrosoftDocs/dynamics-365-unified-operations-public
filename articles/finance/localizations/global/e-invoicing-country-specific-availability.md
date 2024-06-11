@@ -4,7 +4,7 @@ description: Learn about the out-of-box features that are available for each cou
 author: ilikond
 ms.author: ikondratenko
 ms.topic: article
-ms.date: 02/12/2024
+ms.date: 06/11/2024
 ms.custom:
 ms.reviewer: johnmichalak
 audience: Application User
@@ -21,7 +21,7 @@ ms.dyn365.ops.version:
 The availability of Electronic invoicing Service globalization features depends on the country or region where you're located. Although some features are generally available, others are still in preview.
 
 > [!NOTE]
-> This article is related only to the globalization features introduced in the scope of the Electronic Invoicing Service and doesn’t cover other approaches for supported e-Invoicing capabilities for some countries designed based on built-in X++ code and the Electronic Messaging framework.
+> This article is related only to the globalization features introduced in the scope of the Electronic Invoicing Service. This article doesn’t cover other approaches for supported e-Invoicing capabilities for some countries designed based on built-in X++ code and the Electronic Messaging framework.
 > For more information, see [Electronic Invoicing](gs-e-invoicing-service-overview.md) and [Electronic messaging](../../general-ledger/electronic-messaging.md).
 
 > [!IMPORTANT]
