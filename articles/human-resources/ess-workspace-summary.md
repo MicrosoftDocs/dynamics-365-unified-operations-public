@@ -37,7 +37,7 @@ This feature has two purposes:
 
 ### Version requirements
 
-Approval workflow summary requires the latest hotfix for Dynamics 365 Finance version 10.0.38.
+Employee self service workspace summary requires the latest hotfix for Dynamics 365 Finance version 10.0.38.
 
 ### Language requirements
 
