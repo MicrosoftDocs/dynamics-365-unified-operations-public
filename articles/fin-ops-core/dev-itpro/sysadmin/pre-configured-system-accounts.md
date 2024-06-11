@@ -37,6 +37,7 @@ Preconfigured system accounts are included on deployed environments so that Micr
 | ScaleUnitPipeline | Maintaining and tracking communication between the scale units. This account is automatically added when you upgrade to version 10.0.19. |
 | SysHealthServiceUser or Axping (depending on the deployed product version) | Monitoring the availability and health of the environment, and providing alerts as required. |
 | ArchiveServiceApp | Archive service application account used for moving finance and operations data to Dataverse long term retention. |
+| IAPApp  | Insights Apps Platform account used to sync data between finance and operations and Dataverse. |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
