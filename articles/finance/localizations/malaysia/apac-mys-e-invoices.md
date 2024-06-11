@@ -31,7 +31,7 @@ After you configure electronic invoicing, you can generate, digitally sign, and 
 Before you begin the procedures in this article, the following prerequisites must be met:
 
 - The primary address of the legal entity must be in Malaysia.
-- Your company must be a registered taxpayer in Malaysia and must have the following registration numbers: Tax Identification Number (TIN) and business registration number (BRN).
+- Your company must be a registered taxpayer in Malaysia and must have the following registration numbers: **Tax Identification Number (TIN)** and **Business Registration Number (BRN)**.
 - Obtain **Client ID** and **Client secret** values in the [Inland Revenue Board of Malaysia (IRBN)](https://www.hasil.gov.my/) (Lembaga Hasil Dalam Negeri Malaysia \[LHDN\]). These values serve as credentials that are used to establish a secure connection to the IRBN portal.
 - Obtain a digital signature certificate from one of the [Malaysian certification authorities](https://www.mcmc.gov.my/en/sectors/digital-signature/list-of-licensees). This certificate is used for digital signing of generated electronic invoices.
 - Become familiar with electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
