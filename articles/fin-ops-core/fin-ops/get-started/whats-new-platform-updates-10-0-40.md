@@ -29,6 +29,7 @@ This section contains a table that lists the features that are included in this 
 |---|---|---|---|
 | Copilot in finance and operations apps | Extend Copilot with client plugins | Developers can extend Copilot in finance and operations apps by creating client actions that are based on application logic and invoked in natural language from the Copilot chat panel. For more information, see [Create client plugins for Copilot in finance and operations apps](../../dev-itpro/copilot/copilot-client-plugins.md). | Default |
 | Copilot in finance and operations apps | Extend Copilot with record context | The context of the record that the user is currently viewing in the application is available in Copilot and can be used to create contextual plugins. For more information, see [Use application context with Copilot](../../dev-itpro/copilot/copilot-application-context.md). | Default |
+| System administration | Archive with Dataverse long term retention | This feature lets you archive data for select high volume areas of the product. The data archive is performed by a micro-service and a connection to Dataverse. You must first install the service from the Power platform admin center (PPAC).  For more information, see [Archive with Dataverse long term retention](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/archive-data). | Feature Management |
 
 ## Feature enhancements included in this release
 
