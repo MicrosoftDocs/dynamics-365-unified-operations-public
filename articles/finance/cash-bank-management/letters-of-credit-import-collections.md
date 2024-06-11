@@ -1,11 +1,11 @@
 ---
 title: Letters of credit and import collections
 description: Learn about letters of credit and import collections. Both types of bank document are often used for the purchase and sale of goods across international borders.
-author: kfend
-ms.author: kfend
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.date: 10/24/2022
-ms.reviewer: kfend
+ms.date: 06/11/2024
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -41,7 +41,7 @@ An import collection is an agreement between the bank and the exporter (seller),
 An import collection helps guarantee that the seller is paid when the buyer collects the shipping documents to take delivery of the imported goods.
 
 
-For more information about this functionality in Dynamics 365 Finance, please see the following topics:
+For more information, see the following topics:
 -   [Import letter of credit](tasks/import-letter-credit.md)
 -   [Export letter of credit](tasks/export-letter-credit.md)
 -   [Set up bank facilities and posting profiles for letter of credit](tasks/set-up-bank-facilities-posting-profiles-letter-credit.md)
