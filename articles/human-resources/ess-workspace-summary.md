@@ -39,9 +39,9 @@ This feature has two purposes:
 Approval workflow summary requires the latest hotfix on Dynamics 365 Finance version 10.0.38.
 
 ### Language requirements
-**Employee self service summary** is supported in the following user preferred languages: English, Danish, Dutch, French, German, Italian, Japanese, Portugues (Brazil), Spanish, Chinese (Simplified), Czech, Finnish, Greek, Korean, Norwegian (Bokmal), Polish, Russion, Swedish, Thai and Turkish.
+**Employee self service summary** is supported in the following user preferred languages: English, Danish, Dutch, French, German, Italian, Japanese, Portuguese (Brazil), Spanish, Chinese (Simplified), Czech, Finnish, Greek, Korean, Norwegian (Bokmal), Polish, Russian, Swedish, Thai and Turkish.
 
-Update your preferred language in Dynamics 365 Finance to one of the above languages to use this feature.
+To user this feature, update your preferred language in Dynamics 365 Finance to one of the above languages.
 
 ### Role requirements
 The user must be assigned as an employee role.
@@ -55,5 +55,10 @@ The user must be assigned as an employee role.
 
 ### View summary text
 
-The AI-generated content appears on the **Summary** fastTab. Azure OpenAI is used to generate the results, based on data in Dynamics 365 Finance and the provided prompts. The summary is based on workflow history 
-including the submitter, approval list, workflow completion policy, due dates, and comments of the same workflow document type.
+The AI-generated content appears on the **Summary** FastTab. Azure OpenAI is used to generate the results, based on data in Dynamics 365 Finance and the provided prompts. 
+The summary is based on workflow history includes:
+ - the submitter
+ - approval list
+ - workflow completion policy
+ - due dates
+ - comments 
