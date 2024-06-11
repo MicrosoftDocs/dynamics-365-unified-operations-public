@@ -86,14 +86,7 @@ To clean up recurring data job messages, follow these steps.
 
 1. Go to the **System administration** workspace (not the **System administration** module).
 1. Select the **Data Management IT** workspace.
-1. On the **Data projects** tab, select the Data project name that shows yes for **Has recurring data jobs**.
-1. Select **Manage** -> **Manage recurring data jobs**. The **Manage scheduled data jobs** page opens.
-1. Select **Manage messages**.
-1. Select **Message clean up**.
-1. In the **Message clean up window**, configure your parameters, and select **OK**.
-1. Refresh the window after the cleanup job is complete.
-
-In the workspace, on the **Recurring data jobs** tab, select the recurring data job that takes you to the **Manage scheduled data jobs** page:
+1. In the workspace, on the **Recurring data jobs** tab, select the recurring data job to open the **Manage scheduled data jobs** page.
 1. Select the group under **Processing group** to open the Data management project that the recurring jobs are based on.
 1. Select **Manage** -> **Manage recurring data jobs**. The **Manage scheduled data jobs** page opens.
 1. Select **Manage messages**.
