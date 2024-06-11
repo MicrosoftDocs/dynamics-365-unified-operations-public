@@ -141,7 +141,7 @@ GET https://usncax1aos.cloud.onebox.dynamics.com/en/api/connector/dequeue/%7BC03
 
 After the client downloads the data, an acknowledgment must be sent back to the application, so that you can mark the data as received.
 
-In cases when there isn't a file uploaded to the blob, the dequeue API returns a response indicating as such.
+When there isn't a file uploaded to the blob, the dequeue API returns a response indicating as such.
 
 ### API for acknowledgment
 Use the following API.
@@ -212,7 +212,7 @@ The batch job status is retrieved asynchronously from the batch framework for th
 ![Batch job status.](./media/show-batch-status.png)
 
 ### Preventing uploads when there are no records
-When you use recurring exports you can choose not to upload a generated file or package if the total record count in that file or package is 0 (zero).
+When you use recurring exports, you can choose not to upload a generated file or package if the total record count in that file or package is 0 (zero).
 
 You can set **Prevent upload when zero records** when you configure a recurring export job or after a job is created. This option is available only when you use files or packages as data sources.
 
