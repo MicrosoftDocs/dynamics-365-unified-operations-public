@@ -19,15 +19,16 @@ ms.custom:
 
 This article describes how to configure and operate payment processing with nonrecurring payment tokens in Microsoft Dynamics 365 Commerce.
 
-Dynamics 365 Commerce payment processing actions have historically saved payment card tokens to use for downstream sales order changes, resubmission of authorizations coming up to expiration, and for 'card on file' uses for future customer orders. With direct configurations, these card payment tokens carry a 'recurring detail' reference to use in an unscheduled merchant-initiated transaction. In version 10.0.40, payment processing is updated to provide the ability to operate payments without a recurring card token saved against the customer. This ability applies to online stores, Call Center orders, and Point-of-Sale (POS) customer orders requiring future shipment. This article will detail configuration and operation of payment processing with nonrecurring payment tokens.
+Dynamics 365 Commerce payment processing actions have historically saved payment card tokens to use for downstream sales order changes, resubmission of authorizations that are close to expiration, and for "card on file" caching to be reused for future customer orders. With direct configurations, card payment tokens carry a "recurring detail" reference to use for unscheduled2, merchant-initiated transactions. In Commerce version 10.0.40, payment processing is updated to provide the ability to operate payments without saving a recurring customer card token. This ability applies to online stores, call center orders, and point of sale (POS) customer orders that require future shipment.
 
 ## Key terms
 
 | Term | Description |
 |---|---|
-| Token | A referenced XML blob in the Dynamics 365 system that stores payment references for transactional purposes. |
-| Recurring | Reference to a card payment token type, recurring if intended to reuse at a future time, either in a set cadence or in an unscheduled fashion. Nonrecurring refers to a nonreusable token or the absence of storing a recurring token. |
-| Card on file | A saved card reference token that is agreed upon for future use in the Dynamics 365 system or the payment gateway, and that is specific to a customer's account. |
+| Token | A referenced XML blob in the Commerce system that stores payment references for transactional purposes. |
+| Recurring | Reference to a card payment token type that is recurring if intended to be reused in the future, either at a set cadence or unscheduled. |
+| Nonrecurring | Reference to a card payment token type that is nonreusable or absent.
+| Card on file | A saved card reference token specific to a customer's account that is agreed to be saved for future use in the Commerce system or payment gateway. |
 
 ## Prerequisites
 
