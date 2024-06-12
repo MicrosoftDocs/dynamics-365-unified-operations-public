@@ -17,7 +17,6 @@ ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 # Configuration for Finance insights
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Finance insights combines functionality from Microsoft Dynamics 365 Finance with Dataverse, Azure, and AI Builder to provide powerful forecasting tools for your organization. This article explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights. To successfully complete the procedures in this article, you must have System administrator and System customizer access in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), System administrator access in Dynamics 365 Finance, and access to create environments in Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -86,7 +85,7 @@ The add-in might take several minutes to install.
 
 ## One last thing...
 
-After the add-in is successfully installed, it might take up to an hour for the Finance insights feature to be enabled in the **Feature management** workspace in Dynamics 365 Finance. If you don't want to wait that long, you can manually run the **Insights provisioning status check** process. 
+After the add-in is successfully installed, it might take up to an hour for the Finance insights feature to be enabled in Dynamics 365 Finance. If you don't want to wait that long, you can manually run the **Insights provisioning status check** process. 
 
 1. In Dynamics 365 Finance, go to **System administration \> Setup \> Process automation**.
 2. On the **Background processes** tab, find **Insights provisioning status check**, and select **Edit**.
@@ -94,7 +93,7 @@ After the add-in is successfully installed, it might take up to an hour for the 
 
    This change should force the **Insights provisioning status check** process to run immediately.
 
-   After the **Insights provisioning status check** process is successfully run, you can view the enabled Finance insights features in the **Feature management** workspace.
+   After the **Insights provisioning status check** process is successfully run, you can view the enabled Finance insights features in the relevant workspaces.
 
 > [!NOTE]
 > If the **Insights provisioning status check** process doesn't run, go to **System administration** > **Inquiries** > **Batch jobs**. In the **Process automation background process system job** field, change the value to **Waiting** to initiate the process. 
