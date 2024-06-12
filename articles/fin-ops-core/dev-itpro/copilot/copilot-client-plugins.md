@@ -6,7 +6,7 @@ ms.author: jaredha
 ms.reviewer: johnmichalak
 ms.search.form:
 ms.topic: how-to
-ms.date: 4/29/2024
+ms.date: 06/12/2024
 audience: Developer
 ms.search.region: Global
 ms.custom: 
@@ -193,4 +193,4 @@ Your client action might have output parameters that you want to return either a
 
 In Copilot Studio, you must create a separate topic to receive the response from the X++ class. Create a topic that has an **Event received** trigger. The value of the **Event name** property of the trigger must be the value of the `IdentifierName` parameter that's defined in the `SysCopilotChatActionDefinition` attribute of your X++ class. The `System.Activity.Text` variable is set to the event payload as a JSON string. You can add a **Parse value** node to the topic to parse the `System.Activity.Text` value for the values of the output parameters of the client action.
 
-> [!NOTE] In a coming release client plugins will be invoked by generative AI, removing the requirement to create topics to invoke the actions and receive the output parameters.
+> [!NOTE] In a coming release, client plugins will be invoked by generative AI, removing the requirement to create topics to invoke the actions and receive the output parameters.
