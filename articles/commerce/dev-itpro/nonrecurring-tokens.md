@@ -57,7 +57,7 @@ When nonrecurring tokens are used in Commerce, the following scenarios still req
 
 In these scenarios, a message is displayed to the user to inform them that a recurring token payment is required. Microsoft recommends that you align training for these processes with your company's compliance policy for saving payment tokens.
 
-### Authorization expiration settings
+### Configure authorization expiration settings
 
 Dynamics 365 Commerce tracks a **Number of days before expired** environmental setting in headquarters to determine whether credit card and digital wallet authorizations are expired. This protective setting prevents an attempted funds capture against an authorization that the issuer may consider expired and invalid. The setting is located in headquarters at **Accounts receivable \> Setup \> Accounts receivable parameters \> Credit card**. On the same form, the **Credit card authorization** option is set to **Yes** in a normal Commerce payments setup.
 
@@ -65,34 +65,32 @@ In addition to this environmental setting, each store's electronic payment types
 
 The **Pre-authorization duration in days** setting is used as the primary attribute to measure an authorization's expiration for the transaction, based on the payment method used by the customer. If this value isn't set, the system defaults to the **Number of days before expired** setting value in the **Accounts receivable parameters** section.
 
-### Monitoring expired authorizations
+### Monitor expired authorizations
 
-Credit card authorizations that are expired in the system return the payment tracking back to **Pending Authorization**, with the order being placed on hold with the **Do Not Process** header attribute being set to **True** in the Sales Order header. In Commerce headquarters, users can monitor these expired authorizations in the **Retail and Commerce \> Channels \> Call centers \> Call center credit cards \> Authorization management** page. Set the page's **Status** filter to 'Pending Authorization' to see a list of pending authorizations. The record's **Status** shows as "Open order" and the authorization response section's **Expired** field shows "Yes".
+Credit card authorizations that are expired in the system return the payment tracking back to **Pending Authorization**, with the order being placed on hold with the **Do Not Process** header attribute set to **True** in the sales order header. In Commerce headquarters, users can monitor expired authorizations on the **Retail and Commerce \> Channels \> Call centers \> Call center credit cards \> Authorization management** form. To see a list of pending authorizations, on the **Status** drop-down list, select4 **Pending Authorization**. The record's **Status** shows as **Open order**, and the **Expired** field shows **Yes** on the **The authorization response** FastTab.
 
-When a record is selected, details for the Customer account, Sales order, and payment status are shown. The user can also view the Credit card details and authorization response details for additional context on the declined authorization. To collect a new payment, select the Sales Order number link to be directed to the sales order and process a new payment line against the order's **Balance**. If previously authorized against, the balance reflects the amount of any authorized but expired (or any open, unapplied) payment lines.
+When a record is selected, details for the customer account, sales order, and payment status are shown. Users can also view the credit card details and authorization response details for additional context on the declined authorization. To collect a new payment, select the sales order number to be directed to the sales order, and then process a new payment line against the order's balance. If previously authorized against, the balance reflects the amount of any authorized but expired (or any open and unapplied) payment lines.
 
 ## Payment flow updates using nonrecurring payment tokens
 
-Once enabled, the use of nonrecurring tokens have specific payment flow patterns depending on the operating channel. This section will review each channel's patterns specifically.
+Once enabled, the usage of nonrecurring tokens has specific payment flow patterns depending on the operating channel.
 
 ### Saved card on file
 
-A payment card token can continue to be saved against a customer record for scenarios that require a card on file and with proper agreement with the customer to save the card for future usage. 
+A payment card token can continue to be saved against a customer record for scenarios that require a card on file and have an agreement with the customer to save the card for future usage. 
 
-In headquarters, customer records, as selected within the **Accounts receivable \> Customers** page, have a **Credit cards** page link under the **Set up** FastTab within the **Customer** menu. Here, the **Customer credit cards** page offers the ability to view, add, or delete credit cards stored against the customer.
+To view, add, or delete credit cards stored against a customer, in headquarters go to **Accounts receivable \> Customers** and select a customer record. On the **Customer** tab, in the **Set up** group, select **Credit cards** to open the **Customer credit cards** form where you can view, add, or delete credit cards stored against the customer.
 
-To add a new card, ensure a default payment connector is configured in the **Accounts receivable \> Payments setup \> Payments services** page. For the Adyen connector, you can refer to [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md). In **Customer credit cards**, select **New**. The **New customer credit card** form appears. 
+To add a new card, ensure that a default payment connector is configured on the **Accounts receivable \> Payments setup \> Payments services** form. (For information about adding a new card for the Adyen connector, see [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md)) For **Customer credit cards**, select **New**. On the **New customer credit card** form, enter the customer's card details and billing address information, and then select **OK** to save the card information. The card is now available in the customer's credit cards list. 
 
-In the credit card input form, enter the customer's card details and Billing address information. Click **OK** to save the card information. The card is now available in the customer's credit cards list. 
+> [!WARNING]
+> Cards must only be saved with the customer's agreement per your company's compliance practices and customer terms and agreements.
 
->[!WARNING]
->Cards must only be saved with the customer's agreement per your company's compliance practices and customer terms and agreements.
+A saved card on file can be used for future sales order references in call center. For more information, see [Call center payments](#call-center-payments).
 
-A saved card on file can be used for future Sales Order references in Call Center. This process is reviewed further in the  [Call Center payments](#call-center-payments) section below.
+To delete a card on file, on the **Customer credit cards** form, select the card you want to delete, and then select **Delete**. The credit card reference is now unavailable to be selected in a future sales order payment form in call center.
 
-To delete a card on file, in the same **Customer credit cards** form, select the card to be deleted and select the **Delete** button. The credit card reference will now be unavailable to be selected in a future sales order payment form in Call Center.
-
-### Call Center payments
+### Call center payments
 
 Call center is used to create or edit existing sales orders in Commerce. When a payment is submitted in call center, a payment form is presented to accept payment details. Within the **Enter customer payment information** form, for credit card payment methods, the call center associate must fill out the form with the Payment method information. Here, the call center associate has two options to enter the card number information. First is the **Number** drop down can be used to select from a list of saved cards on file for the customer account of the sales order. This is a list of recurring payment card tokens previously saved against the customer record (referencing from the card holder info and the last four digits of the saved card's information). The other option is to select the plus sign button, launching the **New customer credit card** form. This form renders the configured payment service provider's payment acceptance page within an iFrame. The entered credit card information is entered directly with the payment service provider. The lower **Billing Address** section is Commerce system-specific, and can be entered both to include with the payment request to the payment gateway and to save the billing address information against the customer's record as an **address** entry. On the lower end of the form, when the **Restrict Payment Token usage to Order context** feature is enabled in feature management, a **Save payment information** checkbox is made available to the configured call center associate to allow saving this entered payment information as a recurring token for future reference in the **Number** drop down, and viewable as a listed reference in the **Customer \> Customer credit cards** page. The **Save payment information** checkbox should only be selected with agreement from the customer, as defined by your business compliance processes. The **View disclaimer** button can be selected to see a dialogue with this similar suggestion. 
 
