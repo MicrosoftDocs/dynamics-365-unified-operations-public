@@ -29,9 +29,6 @@ The following table shows the Electronic invoicing features that are generally a
 | Australia | [Electronic invoicing for Australia and New Zealand](../apac/GS-apac-aus-nzl-electronic-invoices.md) | Sales invoices and project invoices |
 | Austria | Austrian electronic invoices (AT) | Sales invoices and project invoices |
 | Belgium | Belgian electronic invoice (BE) | Sales invoices and project invoices |
-| Brazil | Brazilian NF-e (BR)| Fiscal document model 55, correction letters, cancellations, and discards |
-| Brazil | Brazilian NFS-e ABRASF Curitiba (BR) | Service fiscal documents |
-| Brazil | Brazilian NF-e import from e-mail (BR) | Fiscal document model 55 |
 | Chile | LATAM e-invoice CL | Sales invoices, project invoices, and packing slips |
 | Costa Rica | LATAM e-invoice CR | Sales invoices and project invoices |
 | Denmark | Danish electronic invoice (DK) | Sales invoices and project invoices |
@@ -59,5 +56,8 @@ The following table shows the Electronic invoicing features that are currently i
 
 | Country or region | Globalization feature name | Business documents |
 |-------------------|----------------------------|--------------------|
+| Brazil | Brazilian NF-e (BR)| Fiscal document model 55, correction letters, cancellations, and discards |
+| Brazil | Brazilian NFS-e ABRASF Curitiba (BR) | Service fiscal documents |
+| Brazil | Brazilian NF-e import from e-mail (BR) | Fiscal document model 55 |
 | Mexico | Mexican CFDI Interfactura (MX) | Sales invoices, packing slips, inventory transfers, payment complements, and cancellations |
 | Poland | [Polish electronic invoice (PL)](../poland/gs-e-invoicing-pol-get-started.md) | Sales invoices, project invoices, and advance invoices |
