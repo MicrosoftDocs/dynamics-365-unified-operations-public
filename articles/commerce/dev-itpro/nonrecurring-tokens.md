@@ -34,7 +34,7 @@ Dynamics 365 Commerce payment processing actions have historically saved payment
 
 To set up an environment for nonrecurring payment token usage, the following elements are required:
 
-- The following features must be enabled in Commerce headquarters at  in **System administration \> Workspaces \> Feature management**. 
+- The following features must be enabled in Commerce headquarters at **System administration \> Workspaces \> Feature management**: 
     - **Enable use of nonrecurring tokens in Commerce**
     - **Extensibility to support incremental credit card capture**
     - **Restrict Payment Token usage to Order context**
@@ -57,15 +57,13 @@ When nonrecurring tokens are used in Commerce, the following scenarios still req
 
 In these scenarios, a message is displayed to the user to inform them that a recurring token payment is required. Microsoft recommends that you align training for these processes with your company's compliance policy for saving payment tokens.
 
-### Authorization expiration settings in Commerce
+### Authorization expiration settings
 
-Dynamics 365 Commerce tracks an internal setting to consider credit card and digital wallet authorizations expired. This protective setting prevents an attempted funds capture against an authorization that the issuer may consider expired and invalid. 
+Dynamics 365 Commerce tracks a **Number of days before expired** environmental setting in headquarters to determine whether credit card and digital wallet authorizations are expired. This protective setting prevents an attempted funds capture against an authorization that the issuer may consider expired and invalid. The setting is located in headquarters at **Accounts receivable \> Setup \> Accounts receivable parameters \> Credit card**. On the same form, the **Credit card authorization** option is set to **Yes** in a normal Commerce payments setup.
 
-An environment default setting is set at the **Accounts receivable \> Setup \> Accounts receivable parameters \> Credit Card** section, in the **Number of days before expired** attribute. The **Credit card authorization** is also set to **Yes** in normal Commerce payments setup. 
+In addition to this environmental setting, each store's electronic payment types can also have their expiration in days specified. In headquarters, navigate to the store you want to configure at **Retail and Commerce \> Channels \> Online stores**. On the action pane, on the **Set up** tab, in the **Set Up** group, select **Payment methods**. With the payment method selected (for example, **Cards**), on the action pane, select **Electronic payment setup**. Select **Edit** and on the **General** tab, enter a **Pre-authorization duration in days** value for each of the selected electronic payment types, and then select **Save**. This setting also appears on the **Retail and Commerce \> Channels \> Call centers \> Call center credit cards \> Authorization management** form for reference against specific pending authorizations.
 
-In addition to this environmental setting, the **Electronic payment types** per store can also have their own expiration in days setting applied. In headquarters, navigate to the store to configure and under the **Set up** FastTab, select the **Payment methods** item. With **Cards** (or the desired payment method) selected, select the **Electronic payment setup** button in the menu. Within the **General** tab, set the **Pre-authorization duration in days** for each of the selected electronic payment types. This setting also appears in the record of the **Retail and Commerce \> Channels \> Call centers \> Call center credit cards \> Authorization management** screen for reference against a specific pending authorization.
-
-The **Pre-authorization duration in days** setting is used as the primary attribute to measure an authorization's expiration for the transaction based on the payment method used by the customer. If this value isn't set, the system defaults to the **Number of days before expired** setting value in the **Accounts receivable parameters** section.
+The **Pre-authorization duration in days** setting is used as the primary attribute to measure an authorization's expiration for the transaction, based on the payment method used by the customer. If this value isn't set, the system defaults to the **Number of days before expired** setting value in the **Accounts receivable parameters** section.
 
 ### Monitoring expired authorizations
 
