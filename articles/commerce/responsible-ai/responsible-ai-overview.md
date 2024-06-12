@@ -19,3 +19,4 @@ ms.reviewer: v-chrgriffin
 [!INCLUDE [responsible-ai-features](../../includes/responsible-ai-features.md)]
 
 - [FAQ for Copilot in site builder](faqs-copilot-site-builder.md)
+- [FAQ for Copilot in Commerce headquarters](FAQ_Commerce_HQ_Summaries.md)
