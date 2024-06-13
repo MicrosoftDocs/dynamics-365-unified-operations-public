@@ -13,7 +13,7 @@ ms.custom:
   - bap-template
 ---
 
-# Nonrecurring payment tokens
+# Configure nonrecurring payment tokens
 
 [!include [banner](../includes/banner.md)]
 
