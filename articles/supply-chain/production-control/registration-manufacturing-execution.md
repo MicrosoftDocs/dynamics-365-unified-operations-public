@@ -32,6 +32,27 @@ This article describes key concepts and terms that you need to understand to con
 
 Manufacturing execution is intended to be used primarily by manufacturing companies. Workers can register time and item consumption on production jobs by using the **Job registration** page. All registrations are approved and are later transferred to the relevant modules. Continuous approval and transfer of registrations lets managers easily track actual costs on production orders.
 
+## How cost for workers time spent on production jobs is allocated on production orders
+
+There are following three principles for allocating workers time spent on production jobs
+
+1. Use the estimated time for a production job
+1. Use the actual time between the job was started and completed by the worker
+1. Use the actual time between the job was started and completed by the worker + adjustments made in an approval process
+
+
+Regarding 1 and 2
+On the **Route group** associated the production route operation, use the **Run time** field under the field group **Automatic route consumption** to control if actual or estimated time should be allocated to production jobs for the operation. Set the field to **Yes** to use estimated time and **No** to use actual time.
+
+Regarding 3
+Use the parameter 
+
+
+
+
+
+
+
 
 
 ## Manufacturing execution and registration terminology
