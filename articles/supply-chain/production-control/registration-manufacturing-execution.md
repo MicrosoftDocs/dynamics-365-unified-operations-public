@@ -32,28 +32,27 @@ This article describes key concepts and terms that you need to understand to con
 
 Manufacturing execution is intended to be used primarily by manufacturing companies. Workers can register time and item consumption on production jobs by using the **Job registration** page. All registrations are approved and are later transferred to the relevant modules. Continuous approval and transfer of registrations lets managers easily track actual costs on production orders.
 
-## How cost for workers time spent on production jobs is allocated on production orders
+## Set up operations to use cost for estimated or actual time
 
-There are following three principles for allocating workers time spent on production jobs
+On the **Route groups** you can configure if a production job should use estimated or actual time when reported on the MES terminal. Use the following procedure to configure the route group:
 
-1. Use the estimated time for a production job
-1. Use the actual time between the job was started and completed by the worker
-1. Use the actual time between the job was started and completed by the worker + adjustments made in an approval process
+1. Go to **Production control > Setup > Routes > Route groups**
+1. On the **General** FastTab, under the **AUTOMATIC ROUTE CONSUMPTION** field group, set the **Run time** field to one of the following values:
 
+- *No* - When the job is stopped or completed, a job card journal with the actual time the worker spent on the job is generated on the production order.
+- *Yes* - When the job is started, a route card journal with the estimated time for the operation is generated on the production order.
 
-Regarding 1 and 2
-On the **Route group** associated the production route operation, use the **Run time** field under the field group **Automatic route consumption** to control if actual or estimated time should be allocated to production jobs for the operation. Set the field to **Yes** to use estimated time and **No** to use actual time.
+## Set up operations to utilize either estimated or actual time for cost calculations.
 
-Regarding 3
-Use the parameter 
+In the **Time and attendance** module, supervisors processes workers daily registrations to generate the basis for workers pay. As part of this process, adjustments to the already recorded time registrations on production orders can be made. 
 
+Use the follwoing procedure to configure is time adjustments should be made to production orders as part of processing the workers daily registrations:
 
+1. Go to **Production control > Setup > Manufacturing execution > Production order defaults**
+1. On the **General** tab, in the **Time** section, set the **Skip time adjustments** field to one of the following values:
 
-
-
-
-
-
+1. *No* - Adjustments are applied when a supervisor reviews and edits the recorded work times registered by each worker (for the purpose of recording time and attendance).
+1. *Yes* - Only consider recorded start and end times. If you choose to skip time adjustments, then you'll also be able to end production orders without waiting for supervisor approvals. 
 
 ## Manufacturing execution and registration terminology
 The following table contains terms that pertain to manufacturing execution and related registration tasks.
