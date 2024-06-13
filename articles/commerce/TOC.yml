@@ -390,6 +390,8 @@
             href: dev-itpro/store-commerce-mobile.md
           - name: Export POS screen layouts for import to a new environment
             href: export-pos-layouts.md
+          - name: Check out faster with optimized payment flows
+            href: dev-itpro/faster-checkout-pos.md
           - name: Enable self-checkout in the Store Commerce app
             href: store-commerce-self-check-out.md
           - name: Migrate Modern POS to Store Commerce
