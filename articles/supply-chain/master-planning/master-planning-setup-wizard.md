@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Master planning setup wizard  (contains video)
+title: Master planning setup wizard
 description: This article describes how to run the master planning setup wizard to set up master planning.
 author: t-benebo
 ms.date: 10/21/2019
@@ -22,7 +22,6 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-
 ---
 
 # Master planning setup wizard

@@ -1,5 +1,5 @@
 ---
-title: Revenue recognition overview  (contains video)
+title: Revenue recognition overview
 description: Learn about the Revenue recognition feature, which provides a flexible framework for defining company-specific rules for recognizing revenue prices and schedules.
 author: twheeloc
 ms.author: twheeloc
