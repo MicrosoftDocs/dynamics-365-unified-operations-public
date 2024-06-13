@@ -2,7 +2,7 @@
 title: Check out faster with optimized payment flows
 description: This article provides an overview of modernizing updates to point of sale payment flows in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 06/12/2024
+ms.date: 06/13/2024
 ms.topic: overview
 audience: Application User
 ms.reviewer: v-chrgriffin
@@ -19,7 +19,7 @@ ms.custom:
 
 This article provides an overview of modernizing updates to point of sale (POS) payment flows in Microsoft Dynamics 365 Commerce.
 
-The Dynamics 365 Commerce team is modernizing the POS user interface (UI), transitioning to the React UI framework which brings fluid and efficient user flows that seamlessly work across browsers and applications. The first stage of this transition updates some of the most frequently used operations, payment flows. This change updates traditional POS payment flows, which require multiple window prompts and clicks, and repackages the process flows into a single-pane action window for efficiency. Actions are concentrated in a repetitive-use active area within the screen, while also offering configuration options to bypass specific screens to directly get to the actions required for common scenarios.
+The Dynamics 365 Commerce team is modernizing the POS user interface (UI) by transitioning to the React UI framework, which brings fluid and efficient user flows that seamlessly work across browsers and applications. The first stage of this transition updates some of the most frequently used operations, payment flows. This change updates traditional POS payment flows, which require multiple window prompts and clicks, and repackages the process flows into a single-pane action window for efficiency. Actions are concentrated in a repetitive-use active area within the screen, while also offering configuration options to bypass specific screens to directly get to the actions required for common scenarios.
 
 ## Prerequisites
 
@@ -44,7 +44,7 @@ The new **Pay Card** payment flow displays the transaction amount due, along wit
 
 The **Payment amount** screen is then presented to allow for any subamount entry if the customer wishes to pay a different amount than the preset transaction total. 
 
-New symbols also display within the payment pane to show the sales associate what is occurring on the terminal. The terminal presents an symbol to show that it's prompting the customer to insert or swipe their card. A payment processing loader is also displayed as the terminal processes the transaction against the payment gateway. If the transaction is successful, the resulting screen shows the change due, or the user is returned to the transaction screen for next steps if a subamount was paid. Any payment errors encountered during processing are also displayed directly in the new payments pane.
+New symbols also display within the payment pane to show the sales associate what is occurring on the terminal. The terminal presents a symbol to show that it's prompting the customer to insert or swipe their card. A payment processing loader is also displayed as the terminal processes the transaction against the payment gateway. If the transaction is successful, the resulting screen shows the change due, or the user is returned to the transaction screen for next steps if a subamount was paid. Any payment errors encountered during processing are also displayed directly in the new payments pane.
 
 ## Pay cash
 
@@ -68,7 +68,7 @@ Commerce is also introducing *pay exact* functionality, which can save time at c
 
 Pay exact functionality is configured in the button grid menus for the corresponding payment action POS buttons. To configure a button for pay exact functionality, in headquarters go to **Retail and Commerce \> Channel setup \> POS setup \> POS \> Button grids**. To launch the button grid designer, select the targeted payment action button grid ID, and then select **Designer**. Once the button grid designer is authenticated and launched, create a new button, or right-click on an existing button you want to reconfigure to use for pay exact functionality. 
 
-- For cash, you have the option to either set the button's action to a **Pay cash quick** action, or set it to **Pay cash** and select the corresponding **Is pay exact** checkbox. For both these options, you must use the **Cash** payment type. 
+- For cash, you can either set the button's action to a **Pay cash quick** action, or set it to **Pay cash** and select the corresponding **Is pay exact** checkbox. For both these options, you must use the **Cash** payment type. 
 - For card, select the **Is pay exact** for a button with the **Pay card** action and the **Cards** payment type set. This button now operates with the pay exact functionality when pressed.
 
 Microsoft recommends that you update the button's **Button text** field in the **Appearance** section of the button grid properties to clearly indicate to a sales associate that the button is a pay exact button for the payment method used.
