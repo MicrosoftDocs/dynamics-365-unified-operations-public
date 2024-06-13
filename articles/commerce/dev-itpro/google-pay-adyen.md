@@ -153,41 +153,41 @@ To set up payment express functionality using the **Payment** module, see [Confi
 
 ### Configure Commerce online store to use Google Pay with the Payment module (Legacy)
 
-To configure a Commerce online store to use Google Pay with the **Payment** module, follow these steps.
+To configure a Commerce online store to use Google Pay with the payment module, follow these steps.
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Channels \> Online stores**.
-1. Select your site's online store channel by selecting the channel's **Retail Channel Id** value.
-1. On the **Payment accounts** FastTab, under **Connector**, confirm that the **Dynamics 365 Payment Connector for Adyen** connector is listed. If it isn't listed, follow the instructions in [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md) to add it.
+1. Select your site's online store channel by selecting the channel's **Retail Channel ID** value.
+1. On the **Payment accounts** FastTab, under **Connector**, confirm that the **Dynamics 365 Payment Connector for Adyen** connector is listed. If it isn't listed, to add it follow the instructions in [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md).
 
     > [!NOTE]
-    > In most cases, the **Dynamics 365 Payment Connector for Adyen** connector must be listed as the first connector for your channel (the first connector is also known as the primary connector). It must then be followed by other connectors that will be used, such as the **Dynamics 365 Payment Connector for PayPal** and **Dynamics 365 Payment Connector for Google Pay** connectors.
+    > In most cases, the Dynamics 365 Payment Connector for Adyen must be listed as the first connector for your channel (also known as the primary connector). It should then be followed by other connectors such as the Dynamics 365 Payment Connector for PayPal and the Dynamics 365 Payment Connector for Google Pay.
 
-1. After the **Dynamics 365 Payment Connector for Adyen** connector has been added, select **Add** to add the **Dynamics 365 Payment Connector for GooglePay** connector. Then set the following properties for the connector.
+1. After you've added the **Dynamics 365 Payment Connector for Adyen** connector, select **Add** to add the Dynamics 365 Payment Connector for GooglePay connector. Then set the following properties for the connector.
 
     | Field                  | Description | Required | Automatically set | Sample value |
     | ---------------------- | ----------- | -------- | ----------------- | ------------ |
-    | Assembly Name          | The name of the assembly for the Dynamics 365 Payment Connector for GooglePay. | Yes | Yes | *Binary name* |
+    | Assembly name          | The name of the assembly for the Dynamics 365 Payment Connector for GooglePay. | Yes | Yes | *Binary name* |
     | Service account ID     | The unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *GUID* |
-    | Optional Domain | Enter the domain to use when payment requests are made to Adyen. This domain is the unique identifier for your live environment in the format **[random]-[company name]**, and is present as the prefix inside the API URLs under **Account \> API URLs** in your company's live account on the Adyen Customer Area portal. For more information, see, [Live endpoints](https://docs.adyen.com/development-resources/live-endpoints). | Live only | No | Contact Adyen |
-    | Google merchant ID     | Enter the Google Merchant ID that is assigned to your Google Merchant account. This property is required for production environments but is optional for test environments. For more information, visit <https://pay.google.com/>. | Yes | No | *Numeric identifier* |
-    | Merchant account ID    | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in [Sign up with Adyen](adyen-connector-setup.md#sign-up-with-adyen). | Yes | No | *Merchant Identifier* |
-    | Cloud API Key          | Enter the Adyen cloud API key. To obtain this key, follow the instructions in [Generate your API key](https://docs.adyen.com/development-resources/api-credentials#generate-api-key). | Yes | No | "abcdefg" |
+    | Optional domain | Enter the domain to use when payment requests are made to Adyen. This domain is the unique identifier for your live environment in the format *\<random hexidecimal string\>-\<your company name\>*, and is present as the prefix inside the API URLs under **Account \> API URLs** in your company's live account on the Adyen Customer Area portal. For more information, see [Live endpoints](https://docs.adyen.com/development-resources/live-endpoints). | Live only | No | Contact Adyen |
+    | Google Merchant ID     | The Google Merchant ID that is assigned to your Google Merchant account. This property is required for production environments but is optional for test environments. For more information, see <https://pay.google.com>(https://pay.google.com). | Yes | No | *Numeric identifier* |
+    | Merchant account ID    | The unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in [Sign up with Adyen](adyen-connector-setup.md#sign-up-with-adyen). | Yes | No | *Merchant Identifier* |
+    | Cloud API Key          | The Adyen cloud API key. To obtain this key, follow the instructions in [Generate your API key](https://docs.adyen.com/development-resources/api-credentials#generate-api-key). | Yes | No | "abcdefg" |
     | Gateway environment    | The Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | "Live" |
-    | Supported Currencies   | The currencies that the connector should process. In card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes | Yes | "USD;EUR" |
-    | Supported Tender Types | The tender types that the connector should process. | Yes | Yes | "GooglePay" |
-    | Authorization stale period (days) | Number of days before an authorization is considered stale and should decline before going to the processor for capture. See [Manage payment authorizations](manage-payment-authorizations.md#adyen-connector-authorization-stale-period-parameter) for more details. | Yes | Yes | "14" |
-    | Use the Dedicated Google Pay Payment Module | When using the direct **Payment** module, this property should be set to 'False' (or left blank). This informs the Google Pay connector to interact with the payment module instead of the Google Pay module | No (blank defaults as "False") | No | "False" |
+    | Supported currencies   | The currencies that the connector should process. In card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes | Yes | "USD;EUR" |
+    | Supported tender types | The tender types that the connector should process. | Yes | Yes | "GooglePay" |
+    | Authorization stale period (days) | Number of days before an authorization is considered stale and should be declined before going to the processor for capture. For more inforamtion, see [Manage payment authorizations](manage-payment-authorizations.md#adyen-connector-authorization-stale-period-parameter). | Yes | Yes | "14" |
+    | Use the Dedicated Google Pay Payment Module | When using the direct **Payment** module, this property should be set to **False** (or left blank). This property informs the Google Pay connector to interact with the payment module instead of the Google Pay module | No (blank defaults to **False**) | No | **False** |
 
 1. After you've finished setting the connector properties, run the **1070 (Channel configuration**) distribution schedule job.
 
-#### Use the payment express section in the Cart and Checkout pages with Google Pay using the Payment module
+#### Use the payment express section in the cart and checkout pages with Google Pay using the payment module
 
 > [!WARNING]
-> The Dynamics 365 Commerce pattern for Google Pay Express is currently not recommended for regions enforcing PSD2 requirements. The payment module for Google Pay support will calculate final order price upon return to the Commerce checkout page when it has acquired the delivery address information for a user's order. PSD2 recommends the user see the full order total price within the authentication window of the digital wallet. Commerce will track future work to update the newer Google Pay direct module available to support express flows by updating order details within the Google Pay payment window as a delivery address is selected. Note that a page cannot support using both the payment module for express checkout and the newer Google Pay module for the checkout section. Either only the payment module can be used for both Express and regular checkout flows, or only the Google Pay module can be used for the normal checkout payment (non-express) flows.
+> The Dynamics 365 Commerce pattern for Google Pay Express is currently not recommended for regions enforcing PSD2 requirements. The payment module for Google Pay support calculates the final order price after return to the Commerce checkout page when it has acquired the delivery address information for a user's order. PSD2 recommends the user see the full order total price within the authentication window of the digital wallet. Commerce will track future work to update the newer Google Pay direct module available to support express flows by updating order details within the Google Pay payment window when a delivery address is selected. A page can't support using both the payment module for express checkout and the newer Google Pay module for the checkout section. Either only the payment module can be used for both express and regular checkout flows, or only the Google Pay module can be used for the normal checkout payment (non-express) flows.
 
-The Commerce **Payment** module payment express patterns give site customers the option to check out faster by using their payment service account information during the checkout process. The **Payment** module payment express actions reference the linked payment connector via the **Supported tender types** string used in the same attribute of the payment connector. Express payments with the **Payments** module then returns the user-selected order details (address, contact information, and payment method) to prefill the checkout form.
+The Commerce payment module payment express patterns give site customers the option to check out faster by using their payment service account information during the checkout process. The payment module payment express actions reference the linked payment connector via the **Supported tender types** string used in the same attribute of the payment connector. Express payment with the payments module then returns the user-selected order details (address, contact information, and payment method) to prefill the checkout form.
 
-When the **Payment** module is used with express patterns with Google Pay, if customers select the Google Pay button in the **Payment Express** section, the Google Pay payment window is opened. Users can then sign in to their Google account to use their account shipping address, billing address, email address, and Google Pay payment method of choice to pay for the transaction.
+When the payment module is used with express patterns with Google Pay, if customers select **Google Pay** in the **Payment Express** section, the Google Pay payment window opens. Users can then sign in to their Google account to use their account shipping address, billing address, email address, and Google Pay payment method of choice to pay for the transaction.
 
 When users complete the action in the Google Pay window, they're directed to the Commerce site checkout page, where the checkout form is prefilled with their Google Pay account details. After users return to the checkout page from the Google Pay window, they'll see the following details:
 
@@ -197,7 +197,7 @@ When users complete the action in the Google Pay window, they're directed to the
 
 Customers can review orders and change checkout order details before they select **Place order** to finalize the order.
 
-#### Configure the checkout fragment for express using Google Pay with the Payment module
+#### Configure the checkout fragment for express using Google Pay with the payment module
 
 To set up the checkout fragment for express payment using Google Pay in site builder, follow these steps.
 
@@ -207,12 +207,12 @@ To set up the checkout fragment for express payment using Google Pay in site bui
 1. In the **Select modules** dialog box, select **Payment express**, and then select **OK**.
 1. In the Payment express module's properties pane, update the module properties as needed: 
 
-    1. To rename the module for easier identification in the **Outline** view, select the pencil symbol next to the module name, enter a new name, and then select the **Apply** check mark symbol.
-    1. For the **Height of the iFrame** property, set a height in pixels that meets your page design needs (for example, enter **65** to set a height of 65 pixels).
+    1. To rename the module for easier identification in the outline view, select the pencil symbol next to the module name, enter a new name, and then select the **Apply** check mark symbol.
+    1. For the **Height of the iFrame** property, set a height in pixels that meets your page design needs (for example, enter "65" to set a height of 65 pixels).
     1. Set the **Supported tender types** value to **GooglePay**. This value must match the **Supported Tender Types** string in the connector that's set up for the channel.
-    1. The **Payment style override** is used to apply CSS code styling to the module. Site builder CSS overrides and styles don't apply to this module via this property. This styling does not affect the inner-window styles within the payment iframe rendered by the payment service.
-    1. A **Custom CSS class name** can also be referenced to apply to this module. This can be the class name as defined in the theme pack. This styling does not affect the inner-window styles within the payment iframe rendered by the payment service.
-    1. The **Render when module scrolls into view** is recommended for modules that are hidden below the customer's view when interacting within the page. When set, the module will render on the customer's client device once the viewport is reached on the page. This setting can help improve overall initial page load time.
+    1. The **Payment style override** value is used to apply CSS code styling to the module. Site builder CSS overrides and styles don't apply to this module via this property. This styling doesn't affect the inner-window styles within the payment iFrame element rendered by the payment service.
+    1. A **Custom CSS class name** can also be referenced to apply to this module. This can be the class name as defined in the theme pack. This styling does not affect the inner-window styles within the payment iFrame element rendered by the payment service.
+    1. Setting the **Render when module scrolls into view** property is recommended for modules that are hidden below the customer's view when interacting within the page. When set, the module renders on the customer's client device once the viewport is reached on the page. This setting can help improve overall initial page load times.
 
 1. Optional: In the **Checkout express payment container** module, add a text block module that includes instructions or disclosure information for the express payment section of your site. After you add the module, in the properties pane, enter the desired text in the **Rich text** field. You can position the text above or below the payment express modules by selecting the ellipsis (**...**) in the **Text block** slot, and then selecting **Move up** or **Move down**.
 1. Select **Save** to save your changes, and then select **Finish editing**.
