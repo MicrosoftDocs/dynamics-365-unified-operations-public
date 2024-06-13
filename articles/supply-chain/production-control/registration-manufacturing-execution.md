@@ -37,7 +37,7 @@ Manufacturing execution is intended to be used primarily by manufacturing compan
 On the **Route groups** you can configure if a production job should use estimated or actual time when reported on the MES terminal. Use the following procedure to configure the route group:
 
 1. Go to **Production control > Setup > Routes > Route groups**
-1. On the **General** FastTab, under the **AUTOMATIC ROUTE CONSUMPTION** field group, set the **Run time** field to one of the following values:
+1. On the **General** FastTab, in the **AUTOMATIC ROUTE CONSUMPTION** section, set the **Run time** field to one of the following values:
 
 - *No* - When the job is stopped or completed, a job card journal with the actual time the worker spent on the job is generated on the production order.
 - *Yes* - When the job is started, a route card journal with the estimated time for the operation is generated on the production order.
