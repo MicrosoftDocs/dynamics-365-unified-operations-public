@@ -1,15 +1,15 @@
 ---
 title: Price attributes for products, customers, and orders (preview)
-description: This article explains how to set up the configurable price attributes and link them to the products, customers, and orders.
+description: Learn how to set up the configurable price attributes and link them to the products, customers, and orders, including step-by-step processes.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: GUPParameters, EcoResAttribute, EcoResAttributeGroup, SalesTable
 ms.topic: how-to
 ms.date: 04/03/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: GUPParameters, EcoResAttribute, EcoResAttributeGroup, SalesTable
 ---
 
 # Price attributes for products, customers, and orders (preview)

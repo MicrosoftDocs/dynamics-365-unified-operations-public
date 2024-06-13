@@ -1,24 +1,16 @@
 ---
-# required metadata
-
 title: Report as finished from the job card device
-description: This article describes how to configure the system so that users of a job card device can report finished products from a production order to inventory.
+description: Learn how to configure the system so that users of a job card device can report finished products from a production order to inventory.
 author: johanhoffmann
-ms.date: 08/05/2022
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: JmgRegistrationSetupTouch
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho
+ms.topic: article
+ms.date: 08/05/2022
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-05-18
+ms.search.form: JmgRegistrationSetupTouch
 ms.dyn365.ops.version: 10.0.13
 ---
 

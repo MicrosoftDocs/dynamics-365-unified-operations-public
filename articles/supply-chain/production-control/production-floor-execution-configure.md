@@ -1,15 +1,15 @@
 ---
 title: Configure the production floor execution interface
-description: This article describes how to create one or more configurations for the production floor execution interface. When you open the production floor execution interface, it automatically loads a selected configuration and job filter that are specific to the browser and device. In the configuration, you set the policies that must be applicable for a specific usage.
+description: Learn how to create one or more configurations for the production floor execution interface with an outline on working with production floor execution.
 author: johanhoffmann
 ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 04/19/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form:
 ---
 
 # Configure the production floor execution interface

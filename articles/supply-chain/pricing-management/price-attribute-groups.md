@@ -1,15 +1,15 @@
 ---
 title: Price attribute groups (preview)
-description: This article explains how to configure price attribute groups for the Pricing management module.
+description: Learn how to configure price attribute groups for the Pricing management module, including an outline on price attribute scopes.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: GUPPricingAttributeGroup
 ms.topic: how-to
 ms.date: 04/03/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: GUPPricingAttributeGroup
 ---
 
 # Price attribute groups (preview)

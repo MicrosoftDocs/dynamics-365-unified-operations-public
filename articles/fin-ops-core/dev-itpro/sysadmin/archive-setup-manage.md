@@ -4,7 +4,7 @@ description: Learn about how to set up and manage archive data in finance and op
 author: pnghub
 ms.author: gned
 ms.topic: conceptual
-ms.date: 05/31/2024
+ms.date: 06/11/2024
 ms.custom:
 ms.reviewer: johnmichalak
 ---
