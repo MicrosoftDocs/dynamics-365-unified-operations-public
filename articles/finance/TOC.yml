@@ -592,9 +592,9 @@
           href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
         - name: Create a write-off journal for a customer
           href: accounts-receivable/tasks/create-write-off-journal-customer.md            
-        - name: Collections coordinator workspace (preview)  
+        - name: Collections coordinator workspace  
           href: accounts-receivable/CollectionsWorkspace.md
-        - name: Collections coordinator summary (preview)
+        - name: Collections coordinator summary 
           href: accounts-receivable/CollectionsCoordinatorSummary.md 
         - name: Credit management setup
           href: accounts-receivable/cm-credit-mgmt-setup.md
