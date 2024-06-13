@@ -11,6 +11,7 @@ audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
+ms.service: dynamics-365-op
 ---
 # Redeploy on-premises environments
 

@@ -1853,7 +1853,7 @@
           href: master-planning/planning-optimization/purchase-requisitions.md
         - name: Production planning
           href: master-planning/planning-optimization/production-planning.md
-        - name: Item substitution for formulas
+        - name: Item substitution for formulas and bills of materials
           href: master-planning/item-substitution.md
         - name: Set up scrap to calculate raw material requirements
           href: master-planning/scrap-calculations.md
@@ -2019,6 +2019,8 @@
       items:
       - name: Demand planning home page
         href: demand-planning/demand-planning-home-page.md
+      - name: What's new or changed in Demand planning
+        href: demand-planning/whats-new-demand-planning.md
       - name: Setup and administration
         items:
         - name: Install and enable Demand planning
@@ -2195,6 +2197,8 @@
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?context=/dynamics365/context/supply-chain
         - name: View workflow history
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?context=/dynamics365/context/supply-chain
+        - name: Workflow history summary
+          href: ../fin-ops-core/fin-ops/organization-administration/workflow-history-summary.md?context=/dynamics365/context/supply-chain  
         - name: Configure the system to send workflow-related email to users
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?context=/dynamics365/context/supply-chain
         - name: Workflow types
@@ -3631,7 +3635,7 @@
           href: warehousing/inbound-putaway-by-container-type.md
         - name: Cross-dock products from receiving warehouse to stores
           href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
-        - name: Set up a location directive for purchase order put-away
+        - name: Set up a location directive for purchase order putaway
           href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
         - name: Set up a work template for purchase orders
           href: warehousing/tasks/set-up-work-template-purchase-orders.md
@@ -4043,6 +4047,8 @@
       items:
       - name: Overview
         href: responsible-ai-overview.md
+      - name: Responsible AI FAQ for AI summaries with Copilot
+        href: faq-summaries.md
       - name: Responsible AI FAQ for Analyze demand plans with Copilot (preview)
         href: faq-demand-planning-copilot.md
       - name: Responsible AI FAQ for the Confirmed purchase orders with changes workspace

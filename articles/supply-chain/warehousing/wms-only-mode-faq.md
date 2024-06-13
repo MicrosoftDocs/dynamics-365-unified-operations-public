@@ -5,7 +5,7 @@ author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
 ms.search.form:
-ms.topic: faq
+ms.topic: conceptual
 ms.date: 04/27/2024
 audience: Application User
 ms.search.region: Global

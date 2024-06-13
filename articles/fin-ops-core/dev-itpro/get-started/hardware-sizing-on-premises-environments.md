@@ -12,6 +12,7 @@ ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 search.app:
   - financeandoperationsonprem-docs
+ms.service: dynamics-365-op
 ---
 
 # Hardware sizing requirements for on-premises environments

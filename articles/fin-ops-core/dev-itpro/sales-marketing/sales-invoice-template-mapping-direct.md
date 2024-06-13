@@ -4,7 +4,7 @@ description: Learn about the templates and underlying tasks that are used to syn
 author: Henrikan
 ms.author: henrikan
 ms.topic: article
-ms.date: 10/26/2017
+ms.date: 06/10/2024
 ms.custom: 
 ms.reviewer: kamaybac
 audience: IT Pro

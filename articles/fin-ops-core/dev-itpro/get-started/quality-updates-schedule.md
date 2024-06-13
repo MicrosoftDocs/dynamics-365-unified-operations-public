@@ -150,14 +150,16 @@ The following table shows the high-level train schedule. It includes a descripti
 
 **Platform version: 7.0.7198.153**
 
+**Unified Environment Provisioning Application Version: 10.0.39.7**
+
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
 | Station 1 | June 10 to June 13, 2024 | NA |
 | Station 2 | June 17 to June 20, 2024 | June 29 to June 30, 2024 |
 | Station 3 | June 18 to June 21, 2024 | June 29 to June 30, 2024|
 | Station 4 | June 24 to June 27, 2024 | July 6 to July 7, 2024 |
-| Station 5 | July 1 to July 4, 2024 | July 13 to June 14, 2024 |
-| Station 6 | July 2 to June 5, 2024 | June 14 to June 14, 2024 |
+| Station 5 | July 1 to July 4, 2024 | July 13 to July 14, 2024 |
+| Station 6 | July 2 to July 5, 2024 | July 14 to July 14, 2024 |
 
 > [!IMPORTANT] 
 > At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).
