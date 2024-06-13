@@ -41,5 +41,3 @@ These frequently asked questions (FAQ) describe the AI impact of the *Chat with 
 ## See also
 
 - [Chat with finance and operations data on Microsoft 365 Copilot](../../dev-itpro/m365-copilot/chat-with-fno-data-on-m365copilot.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

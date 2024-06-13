@@ -34,7 +34,7 @@ This tutorial has the following prerequisites:
 
 - You must have a unified developer environment. The development of client plugins is available only in the [unified developer experience](/power-platform/developer/unified-experience/finance-operations-dev-overview). For information about how to create a unified developer environment from the [unified admin experience for finance and operations apps](/power-platform/admin/unified-experience/finance-operations-apps-overview), see [Tutorial: Install the Finance and Operations Provisioning App](/power-platform/admin/unified-experience/tutorial-install-finance-operations-provisioning-app).
 - You must have version 10.0.40 or later of finance and operations apps. For information about release schedules for finance and operations apps, see [Service update availability](../get-started/public-preview-releases.md).
-- Copilot in finance and operations apps must be enabled in your environment. For instructions, see [Enable Copilot capabilities in finance and operations apps](enable-copilot.md).
+- Copilot in finance and operations apps must be enabled in your environment. For instructions, see [Enable basic Copilot capabilities in finance and operations apps](enable-copilot.md).
 
 ## Step 1: Create a client-side action
 
