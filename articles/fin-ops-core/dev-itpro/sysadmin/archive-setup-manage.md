@@ -4,7 +4,7 @@ description: Learn about how to set up and manage archive data in Microsoft Dyna
 author: pnghub
 ms.author: gned
 ms.topic: conceptual
-ms.date: 05/31/2024
+ms.date: 06/11/2024
 ms.custom:
 ms.reviewer: johnmichalak
 ---
@@ -49,7 +49,9 @@ To prepare your environment to archive data, follow these steps.
 
     1. In Microsoft Dynamics Lifecycle Services, select the environment, and go to **Maintain** \> **Enable Maintenance Mode**.
     2. Sign in to Finance, and go to **System administrator** \> **Setup** \> **License configuration**. Select the **SQL row version change tracking** checkbox, and then select **Save**.
-    3. In Lifecycle Services, select the environment, and then select **Maintain** \> **Disable Maintenance Mode**.
+    3. Confirm that the following checkboxes and sub-checkboxes are also enabled:
+        - **Retail channels** - Call center
+    4. In Lifecycle Services, select the environment, and then select **Maintain** \> **Disable Maintenance Mode**.
 
 > [!NOTE]
 > If the Microsoft Power Platform environment isn't set up for the sandbox instance, complete the setup in Lifecyle Services.
