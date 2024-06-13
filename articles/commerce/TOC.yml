@@ -574,6 +574,8 @@
             href: dev-itpro/manage-payment-authorizations.md
           - name: Limit payment token usage
             href: dev-itpro/limit-token-usage.md
+          - name: Configure nonrecurring payment tokens
+            href: dev-itpro/nonrecurring-tokens.md
           - name: Configure cash denominations for the POS
             href: cash-denominations.md
           - name: Configure credit card processing
