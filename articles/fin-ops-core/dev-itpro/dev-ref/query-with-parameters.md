@@ -6,7 +6,7 @@ ms.author: pvillads
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 006/13/2024
+ms.date: 06/13/2024
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
