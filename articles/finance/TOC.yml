@@ -8,7 +8,7 @@
       href: finance-welcome.md
     - name: What's new or changed 
       items: 
-      - name: What's new or changed in finance and operations apps
+      - name: What's new or changed in finance and operations apps 
         href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?context=/dynamics365/context/finance
       - name: What's new or changed in Finance
         items:
@@ -592,9 +592,9 @@
           href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
         - name: Create a write-off journal for a customer
           href: accounts-receivable/tasks/create-write-off-journal-customer.md            
-        - name: Collections coordinator workspace (preview)  
+        - name: Collections coordinator workspace  
           href: accounts-receivable/CollectionsWorkspace.md
-        - name: Collections coordinator summary (preview)
+        - name: Collections coordinator summary 
           href: accounts-receivable/CollectionsCoordinatorSummary.md 
         - name: Credit management setup
           href: accounts-receivable/cm-credit-mgmt-setup.md
@@ -1598,21 +1598,21 @@
               href: localizations/global/rcs-global-repo-share-configuration.md?context=/dynamics365/context/finance
             - name: Discontinue configurations in the RCS Global repository
               href: localizations/global/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/finance
-        - name: Electronic Invoicing
+        - name: Electronic Invoicing Service
           items:
-          - name: Electronic Invoicing overview
+          - name: Electronic Invoicing Service overview
             href: localizations/global/gs-e-invoicing-service-overview.md?context=/dynamics365/context/finance
-          - name: Electronic Invoicing administration and integration components
+          - name: Electronic Invoicing Service administration and integration components
             href: localizations/global/gs-e-invoicing-administration-integration-components.md?context=/dynamics365/context/finance
-          - name: Set up Electronic Invoicing
+          - name: Set up Electronic Invoicing Service
             items: 
-            - name: Setting up Electronic Invoicing
+            - name: Setting up Electronic Invoicing Service
               href: localizations/global/gs-e-invoicing-set-up-overview.md?context=/dynamics365/context/finance
-            - name: Set up Electronic Invoicing parameters
+            - name: Set up Electronic Invoicing Service parameters
               href: localizations/global/gs-e-invoicing-set-up-parameters.md?context=/dynamics365/context/finance  
             - name: Set up Azure Resources
               items:
-              - name: Set up Azure resources for Electronic invoicing
+              - name: Set up Azure resources for Electronic invoicing 
                 href: localizations/global/gs-e-invoicing-set-up-azure-resources.md?context=/dynamics365/context/finance
               - name: Create an Azure Key Vault in the Azure portal
                 href: localizations/global/gs-e-invoicing-create-azure-key-vault-azure-portal.md?context=/dynamics365/context/finance
@@ -1650,7 +1650,7 @@
                 href: localizations/global/e-invoicing-configure-sharepoint-channel.md
             - name: Electronic Invoicing service ISV last-mile connector
               href: localizations/global/e-invoicing-isv-connector.md
-          - name: Work with Electronic invoicing
+          - name: Work with Electronic Invoicing Service
             items: 
             - name: Submit electronic documents
               href: localizations/global/e-invoicing-submit-electronic-documents.md?context=/dynamics365/context/finance
@@ -1662,7 +1662,7 @@
             items:
             - name: Electronic invoicing coverage
               href: localizations/global/e-invoicing-coverage.md?context=/dynamics365/context/finance
-            - name: Availability of Electronic Invoicing features
+            - name: Availability of Electronic Invoicing Service globalization features
               href: localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/finance
             - name: Australia and New Zealand
               href: localizations/apac/gs-apac-aus-nzl-electronic-invoices.md?context=/dynamics365/context/finance

@@ -1,5 +1,5 @@
 ---
-title: Help system (contains video)
+title: Help system
 description: Learn about the Help system for finance and operations apps, including an overviews on task guide and in-app help options.
 author: edupont04
 ms.author: edupont
