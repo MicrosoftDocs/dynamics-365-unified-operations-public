@@ -5,7 +5,6 @@ author: t-benebo
 ms.author: benebotg
 ms.topic: article
 ms.date: 01/24/2022
-ms.topic: article
 ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global

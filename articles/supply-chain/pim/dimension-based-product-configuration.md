@@ -5,7 +5,6 @@ author: t-benebo
 ms.author: benebotg
 ms.topic: overview
 ms.date: 07/25/2019
-ms.topic: overview
 ms.reviewer: kamaybac
 ms.collection: get-started
 audience: Application User
