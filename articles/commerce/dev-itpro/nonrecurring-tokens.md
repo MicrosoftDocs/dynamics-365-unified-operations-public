@@ -1,6 +1,6 @@
 ---
 title: Configure nonrecurring payment tokens
-description: This article describes how to configure and operate payment processing with nonrecurring payment tokens in Microsoft Dynamics 365 Commerce.
+description: This article describes how to configure and use payment processing with nonrecurring payment tokens in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 06/13/2024
 ms.topic: how-to
@@ -17,37 +17,39 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to configure and operate payment processing with nonrecurring payment tokens in Microsoft Dynamics 365 Commerce.
+This article describes how to configure and use payment processing with nonrecurring payment tokens in Microsoft Dynamics 365 Commerce.
 
-Dynamics 365 Commerce payment processing actions save payment card tokens to use for downstream sales order changes, resubmission of authorizations that are close to expiration, and "card on file" caching to use for future customer orders. With direct configurations, card payment tokens carry a "recurring detail" reference to use for unscheduled, merchant-initiated transactions. In Commerce version 10.0.40, payment processing can operate payments without saving a recurring customer card token. This ability applies to online stores, call center orders, and point of sale (POS) customer orders that require future shipment.
+Payment processing actions in Dynamics 365 Commerce save payment card tokens. These tokens can then be used for downstream sales order changes, resubmission of authorizations that are close to expiration, and "card on file" caching for future customer orders. In direct configurations, card payment tokens have a "recurring detail" reference that can be used for unscheduled, merchant-initiated transactions. In Commerce version 10.0.40, payment processing can handle payments without saving a recurring customer card token. This ability applies to online stores, call center orders, and point of sale (POS) customer orders that require future shipment.
 
 ## Key terms
 
 | Term | Description |
 |---|---|
 | Token | A referenced XML blob in the Commerce system that stores payment references for transactional purposes. |
-| Recurring | Refers to a card payment token type that is recurring if intended to be reused in the future, either scheduled or unscheduled. |
-| Nonrecurring | Refers to a card payment token type that is nonreusable or absent.
+| Recurring | A type of card payment token that is intended to be reused for future transactions, either scheduled or unscheduled. |
+| Nonrecurring | A type of card payment token that is nonreusable or absent.
 | Card on file | A saved card reference token that is specific to a customer's account and that the customer agrees to save for future use in the Commerce system or payment gateway. |
 
 ## Prerequisites
 
-To set up an environment for nonrecurring payment token usage, these prerequisites must be met:
+Before you can set up an environment to use nonrecurring payment tokens, these prerequisites must be met:
 
-- The following features must be enabled in Commerce headquarters at **System administration \> Workspaces \> Feature management**: 
+- The following features must be enabled in Commerce headquarters at **System administration** \> **Workspaces** \> **Feature management**:
+
     - **Enable use of nonrecurring tokens in Commerce**
     - **Extensibility to support incremental credit card capture**
     - **Restrict Payment Token usage to Order context**
-- For online channels to support nonrecurring tokens, the **Enable single payment authorization checkout** setting must be enabled in Commerce site builder at **Site settings \> Extensions \> Card and checkout**.
-- For customers using the Dynamics 365 Payment Connector for Adyen, in the Adyen portal under the **Settings \> Checkout settings**, the **Tokenization** field's **Recurring** setting must be disabled. This setting is at the merchant account level and affects all transactions under the merchant account. When enabled, the setting forces a recurring detail reference for all transactions against the merchant account. When disabled, the Dynamics 365 Payment Connector for Adyen sets recurring details as needed for transactional situations. The Adyen **Recurring** setting must be enabled to operate with the Dynamics 365 Payment Connector for Adyen if the **Enable use of nonrecurring tokens in Commerce** feature is disabled for the Commerce environment.
+
+- For online channels to support nonrecurring tokens, the **Enable single payment authorization checkout** setting must be enabled in Commerce site builder, at **Site settings** \> **Extensions** \> **Card and checkout**.
+- For customers who use the Dynamics 365 Payment Connector for Adyen, the **Tokenization** field's **Recurring** setting must be disabled in the Adyen portal, at **Settings** \> **Checkout settings**. This setting exists at the merchant account level and affects all transactions under the merchant account. When it's enabled, it forces a recurring detail reference for all transactions against the merchant account. When it's disabled, the Dynamics 365 Payment Connector for Adyen sets recurring details as needed for transactional situations. If the **Enable use of nonrecurring tokens in Commerce** feature is disabled for the Commerce environment, the **Recurring** setting must be enabled in the Adyen portal to enable operability with the Dynamics 365 Payment Connector for Adyen.
 
 ## Authorization patterns with nonrecurring payment tokens
 
-Commerce payment authorizations are used to ensure that a customer's credit is available for the amount of a transaction before the funds are "captured" or finalized as a charge on the customer's card or digital wallet. For customer orders where items from the order are still being picked, packed, and invoiced, the capture is triggered on the invoicing action during the order management process. In the time between order placement (when the credit amount is authorized as available by the card or wallet issuer) and capture (when the customer's credit is charged), the transaction within Commerce is maintained as an authorization state. 
+Commerce payment authorizations are used to ensure that a customer's credit is available for the amount of a transaction before the funds are "captured" or finalized as a charge on the customer's card or digital wallet. For customer orders where items from the order are still being picked, packed, and invoiced, the capture is triggered on the invoicing action during the order management process. In the time between order placement (when the card or wallet issuer authorizes the credit amount as available) and capture (when the customer's credit is charged), the transaction in Commerce is maintained as an authorization state.
 
-Authorizations against a card or wallet issuer can expire if held open for a specific amount of time. The expiry timeframe depends on the issuer and is unknown to the Commerce system or the payment gateway. Typically, the expiration is determined when a request to capture is sent and the payment gateway passes back the issuer's "decline" response. To avoid attempting to capture against an expired authorization, the Commerce system tracks a set of parameters to determine whether an authorization is expired. 
+Authorizations against a card or wallet issuer can expire if they are kept open for a specific amount of time. The expiry timeframe depends on the issuer and is unknown to the Commerce system and the payment gateway. Typically, the expiration is determined when a request for capture is sent and the payment gateway passes back the issuer's "decline" response. To prevent attempts to capture against an expired authorization, the Commerce system tracks a set of parameters to determine whether an authorization is expired.
 
-When a recurring card payment token is used against an order, there are some scenarios within the system where a new merchant-initiated transaction is performed against the order using the recurring token to get a new authorization. When the **Enable use of nonrecurring tokens in Commerce** feature is enabled in headquarters, any customer order that doesn't have a recurring token associated with it requires a new payment authorization to be obtained from the customer before allowing the order to proceed. 
+When a recurring card payment token is used against an order, there are some scenarios in the system where a new merchant-initiated transaction is performed against the order, and the recurring token is used to get a new authorization. When the **Enable use of nonrecurring tokens in Commerce** feature is enabled in headquarters, if any customer order doesn't have a recurring token associated with it, a new payment authorization is obtained from the customer before the order is allowed to proceed.
 
 When nonrecurring tokens are used in Commerce, the following scenarios still require a recurring detail payment token to obtain an authorization:
 
@@ -55,90 +57,91 @@ When nonrecurring tokens are used in Commerce, the following scenarios still req
 - Installments
 - Unlinked refunds
 
-In these scenarios, a message is displayed to the user to inform them that a recurring token payment is required. Microsoft recommends that you align training for these processes with your company's compliance policy for saving payment tokens.
+In these scenarios, a message informs the user that a recurring token payment is required. Microsoft recommends that you align training for these processes with your company's compliance policy for saving payment tokens.
 
 ### Configure authorization expiration settings
 
-Dynamics 365 Commerce tracks a **Number of days before expired** setting in headquarters to determine whether credit card and digital wallet authorizations are expired. This protective setting prevents an attempted funds capture against an authorization that the issuer may consider expired and invalid. The setting is located in headquarters at **Accounts receivable \> Setup \> Accounts receivable parameters \> Credit card**. On the same form, the **Credit card authorization** option is set to **Yes** in a normal Commerce payments setup.
+Commerce tracks a **Number of days before expired** setting in headquarters to determine whether credit card and digital wallet authorizations are expired. This protective setting prevents an attempted funds capture against an authorization that the issuer might consider expired and invalid. The setting is found in headquarters at **Accounts receivable** \> **Setup** \> **Accounts receivable parameters** \> **Credit card**. In a normal Commerce payments setup, the **Credit card authorization** option on the same page is set to **Yes**.
 
-In addition to the **Number of days before expired** setting, each store's electronic payment types can also have the expiration in days specified. To specify the expiration in days for electronic payment types, in headquarters go to your store at **Retail and Commerce \> Channels \> Online stores**. On the action pane, on the **Set up** tab, in the **Set Up** group, select **Payment methods**. With the payment method selected (for example, **Cards**), on the action pane, select **Electronic payment setup**. Select **Edit** and on the **General** tab, enter a **Pre-authorization duration in days** value for each of the selected electronic payment types, and then select **Save**. This setting also appears on the **Retail and Commerce \> Channels \> Call centers \> Call center credit cards \> Authorization management** form for reference against specific pending authorizations.
+In addition to the **Number of days before expired** setting, the expiration in days can be specified for each store's electronic payment types. To specify the expiration in days for electronic payment types, in headquarters, go to your store at **Retail and Commerce** \> **Channels** \> **Online stores**. On the Action Pane, on the **Set up** tab, in the **Set Up** group, select **Payment methods**. Select a payment method (for example, **Cards**), and then, on the Action Pane, select **Electronic payment setup**. Select **Edit**, and then, on the **General** tab, enter a **Pre-authorization duration in days** value for each of the selected electronic payment types. Then select **Save**. This setting also appears on the **Authorization management** page (**Retail and Commerce** \> **Channels** \> **Call centers** \> **Call center credit cards** \> **Authorization management**), so that it can be used for reference against specific pending authorizations.
 
-The **Pre-authorization duration in days** setting is used as the primary attribute to measure an authorization's expiration for the transaction, based on the payment method used by the customer. If this value isn't set, the system defaults to the **Number of days before expired** setting value in the **Accounts receivable parameters** section.
+The **Pre-authorization duration in days** setting is used as the primary attribute to measure an authorization's expiration for the transaction, based on the payment method that the customer uses. By default, if no value is set, the system uses the value of the **Number of days before expired** setting in the **Accounts receivable parameters** section.
 
 ### Monitor expired authorizations
 
-Credit card authorizations that are expired in the system return the payment tracking back to **Pending Authorization**, with the order being placed on hold with the **Do Not Process** header attribute set to **True** in the sales order header. In Commerce headquarters, users can monitor expired authorizations on the **Retail and Commerce \> Channels \> Call centers \> Call center credit cards \> Authorization management** form. To see a list of pending authorizations, on the **Status** drop-down list, select **Pending Authorization**. The record's **Status** shows as **Open order**, and the **Expired** field shows **Yes** on the **The authorization response** FastTab.
+Credit card authorizations that are expired in the system return the payment tracking to **Pending Authorization**. The order is put on hold, and the **Do Not Process** header attribute is set to **True** on the sales order header. In Commerce headquarters, users can monitor expired authorizations on the **Authorization management** page (**Retail and Commerce** \> **Channels** \> **Call centers** \> **Call center credit cards** \> **Authorization management**). To view a list of pending authorizations, in the **Status** dropdown list, select **Pending Authorization**. The record's **Status** field shows **Open order**, and the **Expired** field on the **The authorization response** FastTab shows **Yes**.
 
-When a record is selected, details for the customer account, sales order, and payment status are shown. Users can also view the credit card and authorization response details for additional context on a declined authorization. To collect a new payment, select the sales order number to be directed to the sales order, and then process a new payment line against the order's balance. If previously authorized against, the balance reflects the amount of any authorized but expired (or any open and unapplied) payment lines.
+When a record is selected, details for the customer account, sales order, and payment status are shown. Users can also view the credit card and authorization response details for additional context about a declined authorization. To collect a new payment, select the sales order number to go to the sales order, and then process a new payment line against the order's balance. If there are previous authorizations against the balance, it reflects the amount of any authorized but expired payment lines (or any open and unapplied payment lines).
 
 ## Payment flow updates using nonrecurring payment tokens
 
-Once enabled, the usage of nonrecurring tokens has specific payment flow patterns depending on the operating channel.
+After it's enabled, the use of nonrecurring tokens has specific payment flow patterns, depending on the operating channel.
 
 ### Saved card on file
 
-A payment card token can continue to be saved against a customer record for scenarios that require a card on file and where there's an agreement with the customer to save the card for future usage. 
+A payment card token can continue to be saved against a customer record for scenarios where a card on file is required and there's an agreement with the customer to save the card for future use.
 
-To view, add, or delete credit cards stored against a customer, in headquarters go to **Accounts receivable \> Customers** and select a customer record. On the **Customer** tab, in the **Set up** group, select **Credit cards** to open the **Customer credit cards** form where you can view, add, or delete credit cards stored against the customer.
+To view, add, or delete credit cards that are stored against a customer, in headquarters, go to **Accounts receivable** \> **Customers**, and select a customer record. On the **Customer** tab, in the **Set up** group, select **Credit cards** to open the **Customer credit cards** page. There, you can view, add, or delete credit cards that are stored against the customer.
 
-To add a new card, ensure that a default payment connector is configured on the **Accounts receivable \> Payments setup \> Payments services** form.
+Before you add a new card, ensure that a default payment connector is configured on the **Payment services** page (**Accounts receivable** \> **Payments setup** \> **Payments services**).
 
 > [!NOTE]
-> For information about adding a new card for the Adyen connector, see [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md).
+> For information about how to add a new card for the Adyen connector, see [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md).
 
-For **Customer credit cards**, select **New**. On the **New customer credit card** form, enter the customer's card details and billing address information, and then select **OK** to save the card information. The card is now available in the customer's credit cards list. 
+To add a new card, on the **Customer credit cards** page, select **New**. On the **New customer credit card** page, enter the customer's card details and billing address information, and then select **OK** to save the card information. The card is now available in the customer's credit card list.
 
 > [!WARNING]
-> Cards must only be saved with the customer's agreement per your company's compliance practices and customer terms and agreements.
+> Cards must be saved only with the customer's agreement, as defined by your company's compliance practices and customer terms and agreements.
 
-A saved card on file can be used for future sales order references in call center. For more information, see [Call center payments](#call-center-payments).
+A saved card on file can be used for future sales order references in a call center. For more information, see the [Call center payments](#call-center-payments) section.
 
-To delete a card on file, on the **Customer credit cards** form, select the card you want to delete, and then select **Delete**. The credit card reference is now unavailable to be selected in a future sales order payment form in call center.
+To delete a card on file, on the **Customer credit cards** page, select the card that you want to delete, and then select **Delete**. The credit card reference is now unavailable for selection on the page for future sales order payments in a call center.
 
 ### Call center payments
 
-Call center users can create or edit existing sales orders in Commerce. When a payment is submitted in call center, a payment form is presented to accept payment details. On the **Enter customer payment information** form, for credit card payment methods the call center associate must fill out the form with the payment method information. The call center associate then has two options to enter the card number information: 
-- The first option is to use the **Number** dropdown list to select from a list of saved cards on file for the customer account of the sales order. This list represents recurring payment card tokens previously saved against the customer record, referencing the card holder information and the last four digits of the saved card's information.
-- The second option is to select the plus sign symbol, which opens the **New customer credit card** form. This form renders the configured payment service provider's payment acceptance page within an iFrame element. Credit card information is entered directly with the payment service provider. The lower **Billing Address** section is Commerce system-specific, and can be used to include the payment request to the payment gateway and to save the billing address information against the customer's record as an **Address** entry. When the **Restrict Payment Token usage to Order context** feature is enabled, a **Save payment information** checkbox is made available to the call center associate. Selecting this checkbox allows the saving of the entered payment information as a recurring token for future reference in the **Number** dropdown list, which is also viewable as a listed reference on the **Customer \> Customer credit cards** form. The **Save payment information** checkbox should only be selected with agreement from the customer, as defined by your business compliance processes. Associates can select **View disclaimer** to see a dialog with this suggestion. 
+Call center users can create or edit existing sales orders in Commerce. When a payment is submitted in a call center, a payment page is presented, so that the user can accept payment details. On the **Enter customer payment information** page, for credit card payment methods, the call center associate must fill in the payment method information. The call center associate then has two options for entering the card number information:
 
-System administrators can use the **Allow customer card on file** option on the **Call center parameter** form to allow (**Yes**) or hide (**No**) the **Save payment information** checkbox on the payment form. For more information, see [Limit payment token usage](limit-token-usage.md).
+- Use the **Number** dropdown list to select among the saved cards on file for the customer account of the sales order. This list represents recurring payment card tokens that were previously saved against the customer record. It references the card holder information and the last four digits of the saved card's information.
+- Select the plus sign (**+**) to open the **New customer credit card** page. This page renders the configured payment service provider's payment acceptance page in an iFrame element. Credit card information is entered directly with the payment service provider. The lower **Billing Address** section is specific to the Commerce system. It can be used to include the payment request to the payment gateway and save the billing address information against the customer's record as an **Address** entry. When the **Restrict Payment Token usage to Order context** feature is enabled, a **Save payment information** checkbox is made available to the call center associate. If this checkbox is selected, the payment information that is entered can be saved as a recurring token for future reference in the **Number** dropdown list. This token can also be viewed as a listed reference on the **Customer credit cards** page (**Customer** \> **Customer credit cards**). The **Save payment information** checkbox should be selected only with the customer's agreement, as defined by your business compliance processes. Associates can select **View disclaimer** to open a dialog box that shows this suggestion.
+
+System administrators can use the **Allow customer card on file** option on the **Call center parameters** page to show (**Yes**) or hide (**No**) the **Save payment information** checkbox on the payment page. For more information, see [Limit payment token usage](limit-token-usage.md).
 
 #### Future order authorizations
 
-Commerce authorizations support processing future orders when a shipment is set for a date in the future that may extend beyond the typical authorization validity period. Having the system request an authorization at a future time requires a saved card on file (recurring payment token) to be saved against the customer or the sales order. 
+Commerce authorizations support processing of future orders when a shipment is set for a date in the future that might extend beyond the typical authorization validity period. The system can request an authorization at a future time only if a saved card on file (recurring payment token) is saved against the customer or the sales order.
 
-To configure future order authorizations, in headquarters go to **Retail and Commerce \> Channel setup \> Call center setup \> Call center parameters**, and in the left navigation pane select **Payment**. Under **CREDIT CARD AUTHORIZATIONS**, set the **Future orders** option to **Yes**. The **Delay authorization** setting can also be set to **Yes** to wait to authorize until the ship date reaches the configured **Future order days** setting value. For example, if the **Future order days** setting value is "7", the order is authorized when the current date is seven days ahead of the ship date. 
+To configure future order authorizations, in headquarters, go to **Retail and Commerce** \> **Channel setup** \> **Call center setup** \> **Call center parameters**. On the left navigation pane, select **Payment**, and then, under **Credit card authorizations**, set the **Future orders** option to **Yes**. The **Delay authorization** option can also be set to **Yes**. In this case, the system waits to authorize the order until the ship date reaches the configured value of the **Future order days** setting. For example, if the **Future order days** setting value is **7**, the order is authorized when the current date is seven days ahead of the ship date.
 
-When future order authorizations are configured, sales orders created in call center with the **Requested ship date** specified are compared against the **Future order days** date, and authorization is requested by the **Authorization resubmit** job when the current date is in the date range determined by these settings. 
+When future order authorizations are configured, if a value is specified for the **Requested ship date** setting when sales orders are created in a call center, those sales orders are compared against the **Future order days** date. If the current date is in the date range that those settings define, the **Authorization resubmit** job requests authorization.
 
-#### Edit orders in call center
+#### Edit orders in a call center
 
-Orders can be recalled and edited in call center or POS. Changes to an order caused by an active change (for example, a product line's addition or removal) while the order's payment is in an active authorized state results in the payment connector attempting to adjust the authorization. The authorization adjustment requests the new authorization total against the pre-existing original authorization. If approved, the authorization is adjusted in the Commerce system. If declined, the original authorization is considered declined and a new payment is required to complete the transaction.
+Orders can be recalled and edited in a call center or POS. If an active change (for example, the addition or removal of a product line) causes changes to an order while the order's payment is in an active authorized state, the payment connector tries to adjust the authorization. The authorization adjustment requests the new authorization total against the pre-existing original authorization. If the request is approved, the authorization is adjusted in the Commerce system. If it's declined, the original authorization is considered declined, and a new payment is required to complete the transaction.
 
 > [!WARNING]
-> Currently, the Commerce system doesn't attempt a authorization extension to extend the authorization period, which may result in a higher rate of declines from issuers. This functionality will be reviewed for future Commerce releases when webhook support can handle asynchronous operations.
+> Currently, the Commerce system doesn't try to extend the authorization period if the extension might lead to a higher rate of declines from issuers. This functionality will be reviewed for future Commerce releases when webhook support can handle asynchronous operations.
 
 ### Online storefront payments
 
-For online storefront payments using credit cards or digital wallets, the payments module processes an online customer's entered payment information. When the **Enable use of nonrecurring tokens in Commerce** feature is enabled, all online transactions process within the Commerce system without the payment card token being saved. The payment module presents the configured payment processor's payment acceptance page in an iFrame element. 
+For online storefront payments that use credit cards or digital wallets, the payment module processes an online customer's entered payment information. When the **Enable use of nonrecurring tokens in Commerce** feature is enabled, all online transactions are processed in the Commerce system, but the payment card token isn't saved. The payment module presents the configured payment processor's payment acceptance page in an iFrame element.
 
-When the Dynamics 365 Payment Connector for Adyen is configured for the online store, if the **Allow saving payment information in e-commerce** parameter is set to **True**, the Adyen iFrame element presents an authenticated customer with a **Save for my next payment** checkbox. This mechanism allows the customer's credit card to be saved with Adyen to present within the Adyen iFrame element at the time of the authenticated user's next checkout. However, this mechanism doesn't save the card on file within the Commerce system as described in [Saved card on file](#saved-card-on-file). The online storefront's generated sales order processes the payment without a saved payment card token. 
+When the Dynamics 365 Payment Connector for Adyen is configured for the online store, if the **Allow saving payment information in e-commerce** parameter is set to **True**, the Adyen iFrame element presents a **Save for my next payment** checkbox to the authenticated customer. This mechanism enables the customer's credit card to be saved with Adyen, so that it can be presented in the Adyen iFrame element at the time of the authenticated user's next checkout. However, this mechanism doesn't save the card on file in the Commerce system as described in the [Saved card on file](#saved-card-on-file) section. The online storefront's generated sales order processes the payment without a saved payment card token.
 
-If the online storefront's authorization expires before the order is fulfilled, meaning that the payment wasn't captured before the authorization expired, the payment is set to "Declined" in the Commerce system. This event sets the **Do not process** flag on the sales order header, and a new payment must be retrieved against the order. You can manage orders in the declined state in headquarters at **Retail and Commerce \> Channels \> Call centers \> Call center credit cards \> Authorization management**. 
+If the online storefront's authorization expires before the order is fulfilled (that is, if the payment isn't captured before the authorization expires), the payment is set to **Declined** in the Commerce system. This event sets the **Do not process** flag on the sales order header, and a new payment must be retrieved against the order. You can manage orders in the declined state in headquarters at **Retail and Commerce** \> **Channels** \> **Call centers** \> **Call center credit cards** \> **Authorization management**.
 
 ### Point of sale payments
 
 #### Cash and carry transactions
 
-Transactional payments in POS cover a few flows, depending on the actions taken. When customers pay for goods they're leaving the store with, referred to as a "cash and carry" transaction, the payment resolves with a captured payment at the end of a transaction without the need for the system to use or save a card payment token. No changes occur to this existing cash and carry payment pattern when the **Enable use of nonrecurring tokens in Commerce** feature is enabled or disabled.
+Transactional payments in POS cover a few flows, depending on the actions that are taken. When customers pay for goods that they're leaving the store with, the transaction is referred to as a "cash and carry" transaction. In this case, the payment is resolved through a captured payment at the end of the transaction. There is no need for the system to use or save a card payment token. The existing cash and carry payment pattern doesn't change when the **Enable use of nonrecurring tokens in Commerce** feature is enabled or disabled.
 
 #### Customer orders
 
-A customer order can be placed from the POS, which sets up a sales order that is fulfilled by a shipment to the customer. When the **Enable use of nonrecurring tokens in Commerce** feature is enabled, a payment card token is required for any set shipment date that exceeds a system-set variable for a shipment duration to require the payment card token. This card payment token is required to place the authorization closer to the date that the shipment occurs, and reduces the chance that the authorization expires before the items are invoiced and payment is captured against that authorization. 
+A customer order can be placed from the POS, which sets up a sales order that is fulfilled through a shipment to the customer. When the **Enable use of nonrecurring tokens in Commerce** feature is enabled, a payment card token is required for any shipment date that exceeds a system-set variable that defines whether the shipment duration requires a payment card token. This card payment token is required to put the authorization closer to the date when the shipment occurs. It reduces the likelihood that the authorization expires before the items are invoiced and payment is captured against that authorization.
 
-With a customer order, if the shipment date doesn't meet the shipping duration threshold, no card payment token is saved to place the order. An authorization is requested and a subsequent sales order is created with the authorization reference. If items in the sales order are later adjusted before order completion, changing the sales order amount due triggers the system to call an authorization adjustment against the originating authorization.
+For a customer order, if the shipment date doesn't meet the shipping duration threshold, no card payment token is saved to place the order. An authorization is requested, and a subsequent sales order is created that has the authorization reference. If items on the sales order are later adjusted before order completion, a change in the sales order amount that is due triggers the system to call an authorization adjustment against the originating authorization.
 
-If the customer order shipment date falls within the shipping duration threshold, the POS associate receives a warning that a payment card token is required to proceed with the order. This warning states that the customer must agree to the saved card on file procedure, and the POS associate should follow the business procedures in place to meet your organization's compliance standards for saving payment card information. Once the order is placed, the system monitors and places the authorization using the saved card information because the shipment date falls within the set threshold. The card payment token is only associated with the current sales order and isn't available to use for future orders. The **Authorization resubmit** job also uses the saved card to retrieve a new authorization if an original authorization is considered expired.
+If the shipment date of the customer order falls within the shipping duration threshold, the POS associate receives a warning that a payment card token is required to proceed with the order. This warning states that the customer must agree to the saved card on file procedure, and the POS associate should follow the business procedures that are in place to meet your organization's compliance standards for saving payment card information. After the order is placed, the system monitors and places the authorization by using the saved card information, because the shipment date falls within the defined threshold. The card payment token is associated only with the current sales order. It isn't available to use for future orders. The **Authorization resubmit** job also uses the saved card to retrieve a new authorization if an original authorization is considered expired.
 
 ## Additional resources
 
@@ -146,10 +149,4 @@ If the customer order shipment date falls within the shipping duration threshold
 
 [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md)
 
-
-
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-
-
-
