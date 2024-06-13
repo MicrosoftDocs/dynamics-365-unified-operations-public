@@ -8,7 +8,6 @@ ms.custom:
   - bap-template
 ms.date: 06/13/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
