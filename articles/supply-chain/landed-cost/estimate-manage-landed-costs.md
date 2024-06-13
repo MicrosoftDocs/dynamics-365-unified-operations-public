@@ -1,15 +1,15 @@
 ---
 title: Estimate and manage landed costs
-description: The system uses your auto cost setup to determine an estimate for your landed cost. This article explains how you can define various scenarios to deliver a more accurate estimate.
+description: The system uses your auto cost setup to determine an estimate for your landed cost. Learn how you can define various scenarios to deliver a more accurate estimate.
 author: Weijiesa
 ms.author: weijiesa
-ms.reviewer: kamaybac
-ms.search.form: ITMCostTemplateTable, ITM CostEstimateDialog, ITMCostEstimateTable, SysOperationTemplateForm
 ms.topic: how-to
 ms.date: 06/07/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: ITMCostTemplateTable, ITM CostEstimateDialog, ITMCostEstimateTable, SysOperationTemplateForm
 ---
 
 # Estimate and manage landed costs

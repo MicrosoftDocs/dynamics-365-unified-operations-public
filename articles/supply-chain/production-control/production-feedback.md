@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Production feedback
-description: This article provides information about production feedback, which gives workers feedback about production jobs. The article includes information about the various ways that production feedback can be updated.
+description: Learn about production feedback, which gives workers feedback about production jobs and the various ways that production feedback can be updated.
 author: johanhoffmann
-ms.date: 06/20/2017
+ms.author: johanho
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: JmgRegistration, ProdJournalTransJob, ProdJournalTransRoute, ProdParmReportFinished
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: bcc9e242-b4b8-4144-b14d-c3c106fb40ec
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
 ms.search.validFrom: 2016-02-28
+ms.search.form: JmgRegistration, ProdJournalTransJob, ProdJournalTransRoute, ProdParmReportFinished
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: bcc9e242-b4b8-4144-b14d-c3c106fb40ec
 ---
 
 # Production feedback

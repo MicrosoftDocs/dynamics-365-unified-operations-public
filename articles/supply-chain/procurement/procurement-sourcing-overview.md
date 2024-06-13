@@ -1,15 +1,15 @@
 ---
 title: Procurement and sourcing overview
-description: This article gives an overview of the functionality that's available in the Procurement and sourcing module.
+description: Access an overview of the functionality that's available in the Procurement and sourcing module, including an outline on needs for products and services.
 author: Henrikan
 ms.author: henrikan
-ms.reviewer: kamaybac
-ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable, PurchTablePart
 ms.topic: how-to
 ms.date: 06/07/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable, PurchTablePart
 ---
 
 # Procurement and sourcing overview

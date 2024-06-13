@@ -1,13 +1,13 @@
 ---
 title: Planning Optimization release process and release history
-description: This article provides information about the release process and release history for Planning Optimization.
+description: Learn about the release process and release history for Planning Optimization, including a table outling various changes.
 author: t-benebo
-ms.date: 02/20/2023
-ms.topic: article
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
+ms.topic: article
+ms.date: 02/20/2023
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.31
 ---

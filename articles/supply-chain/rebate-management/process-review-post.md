@@ -1,15 +1,15 @@
 ---
 title: Process, review, and post rebates
-description: This article describes how to process your Rebate management deals, calculate their discounts, review the transactions that are generated, post transactions, and review the postings.
+description: Learn how to process your Rebate management deals, calculate their discounts, review the transactions that are generated.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: TAMRebateDeal
 ms.topic: how-to
 ms.date: 05/15/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: TAMRebateDeal
 ---
 
 # Process, review, and post rebates
