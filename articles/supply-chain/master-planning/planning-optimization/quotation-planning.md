@@ -1,15 +1,15 @@
 ---
 title: Plans based on quotations and RFQs
-description: This article describes how to set up master planning to consider quotations and requests for quotation (RFQs) when it generates planned orders.
+description: Learn how to set up master planning to consider quotations and requests for quotation (RFQs) when it generates planned orders.
 author: t-benebo
-ms.date: 09/20/2022
-ms.topic: article
-ms.search.form: SalesQuotationListPage, ReqPlanSched, SalesQuotationTable, smmOpportunityTable
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
+ms.topic: article
+ms.date: 09/20/2022
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-09-20
+ms.search.form: SalesQuotationListPage, ReqPlanSched, SalesQuotationTable, smmOpportunityTable
 ms.dyn365.ops.version: 10.0.30
 ---
 

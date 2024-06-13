@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create a requisition for consumption
-description: This article describes the process of creating a requisition. 
+description: Learn about the process of creating a requisition for consumption, including a step-by-step process using the USMF demo data company. 
 author: Henrikan
-ms.date: 07/09/2019
-ms.topic: how-to 
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: henrikan
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 07/09/2019
+ms.custom:
+ms.reviewer: kamaybac 
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create a requisition for consumption
 
 [!include [banner](../../includes/banner.md)]

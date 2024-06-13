@@ -1,15 +1,15 @@
 ---
 title: Rebate reduction principles
-description: This article describes how to set up reduction principles. Reduction principles control the behavior when multiple rebates apply to the same item or transaction.
+description: Learn how to set up reduction principles, which control the behavior when multiple rebates apply to the same item or transaction.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: TAMRebateCategory
 ms.topic: how-to
 ms.date: 05/15/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: TAMRebateCategory
 ---
 
 # Rebate reduction principles

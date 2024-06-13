@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Provide mixed-reality Guides for workers in production
-description: This article explains how to integrate the production management module in Microsoft Dynamics 365 Supply Chain Management with Dynamics 365 Guides.
+description: Learn how to integrate the production management module in Microsoft Dynamics 365 Supply Chain Management with Dynamics 365 Guides.
 author: johanhoffmann
-ms.date: 11/13/2020
+ms.author: johanho
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: WorkGuidesManufacturing
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 11/13/2020
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
 ms.collection: get-started
-ms.assetid: a3847f07-fca4-4140-a26f-d83c6ac68dde
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
 ms.search.validFrom: 2020-08-01
+ms.search.form: WorkGuidesManufacturing
 ms.dyn365.ops.version: AX 10.0.15
-
+ms.assetid: a3847f07-fca4-4140-a26f-d83c6ac68dde
 ---
 
 # Provide mixed-reality Guides for workers in production

@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Generate a statistical baseline forecast
-description: This article provides information about the parameters and filters that are used in the calculation of demand forecasting. 
+description: Learn about the parameters and filters that are used in the calculation of demand forecasting, including an outline on generating a demand forecast. 
 author: t-benebo
-ms.date: 07/08/2019
+ms.author: benebotg
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: ReqDemPlanCreateForecastDialog
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 07/08/2019
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 42190463-2a64-4f63-b653-10cac3df0692
+audience: Application User
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: benebotg
 ms.search.validFrom: 2016-02-28
+ms.search.form: ReqDemPlanCreateForecastDialog
 ms.dyn365.ops.version: AX 7.0.0
-ms.collection:
+ms.assetid: 42190463-2a64-4f63-b653-10cac3df0692
 ---
 
 # Generate a statistical baseline forecast
