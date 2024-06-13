@@ -1,5 +1,5 @@
 ---
-title: Alerts overview (contains video)
+title: Alerts overview
 description: Learn about about alerts, which you can use to stay informed about events that you want to track during the workday, including various scenarios.
 author: sericks007
 ms.author: sericks

@@ -3,13 +3,13 @@ title: Intercompany planning groups for demand forecasting
 description: Learn about intercompany planning groups and how they contribute to demand forecasting, which optimizes logistics operations across multiple companies.
 author: dereklh77
 ms.author: v-heuerderek
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: overview
 ms.date: 04/15/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form:
 ---
 
 # Intercompany planning groups for demand forecasting

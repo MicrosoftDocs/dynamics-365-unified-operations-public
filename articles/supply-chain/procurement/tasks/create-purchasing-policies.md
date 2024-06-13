@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create purchasing policies
-description: This article shows you how to create purchasing policies to align with your business processes for purchasing. 
+description: Learn how to create purchasing policies to align with your business processes for purchasing, including a process for setting up policy parameters. 
 author: Henrikan
-ms.date: 07/31/2019
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: SysPolicyListPage, SysPolicyParameters, SysPolicy, RequisitionPurposeRule   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: henrikan
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 07/31/2019
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: SysPolicyListPage, SysPolicyParameters, SysPolicy, RequisitionPurposeRule
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create purchasing policies
 
 [!include [banner](../../includes/banner.md)]

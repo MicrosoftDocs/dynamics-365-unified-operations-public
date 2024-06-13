@@ -1,26 +1,20 @@
 --- 
-# required metadata 
- 
 title: Calculate kanban quantity suggestions
 description: This procedure focuses on optimizing the kanban size and quantities for a specific kanban rule by using the kanban quantity calculation. 
 author: johanhoffmann
+ms.author: johanho
+ms.topic: how-to
 ms.date: 11/11/2016
-ms.topic: how-to 
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: kamaybac    
+audience: Application User  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Calculate kanban quantity suggestions
 
 [!include [banner](../../includes/banner.md)]
