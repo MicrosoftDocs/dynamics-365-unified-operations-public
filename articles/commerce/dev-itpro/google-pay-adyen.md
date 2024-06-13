@@ -4,14 +4,15 @@
 title: Configure Google Pay with Adyen
 description: This article describes how to configure Google Pay with Adyen in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 05/04/2023
-ms.topic: article
-audience: Application User, Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.date: 06/13/2023
+ms.topic: how-to
+audience: Developer, IT Pro
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2017-06-20
-
+ms.custom: 
+  - bap-template
 ---
 
 # Configure Google Pay with Adyen
@@ -19,13 +20,13 @@ ms.search.validFrom: 2017-06-20
 [!include [banner](../includes/banner.md)]
 
 > [!WARNING]
-> The Dynamics 365 Commerce pattern for Google Pay Express is currently not recommended for regions enforcing PSD2 requirements. The **Payment module** for Google Pay support will calculate final order price upon return to the Commerce checkout page when it has acquired the delivery address information for a user's order. PSD2 recommends the user see the full order total price within the authentication window of the digital wallet. Commerce will track future work to update the newer **Google Pay** direct module available to support Express flows by updating order details within the Google Pay payment window as a delivery address is selected.
+> The Dynamics 365 Commerce pattern for Google Pay Express is currently not recommended for regions enforcing Payment Services Directive Two (PSD2) requirements. The payment module for Google Pay support calculates the final order price after returning to the Commerce checkout page when it has acquired the delivery address information for a user's order. PSD2 recommends that users see the full order total price within the authentication window of the digital wallet. Commerce will track future work to update the newer Google Pay direct module available to support express flows by updating order details within the Google Pay payment window when a delivery address is selected.
 
 This article describes how to configure Google Pay with Adyen in Microsoft Dynamics 365 Commerce.
 
-Dynamics 365 Commerce offers an out-of-box integration for Google Pay when the Adyen payment gateway service is used. Google Pay is a digital wallet payment method that uses a Google Pay Merchant account in coordination with the Adyen payment service. When it is configured, the Google Pay button becomes available as a selectable payment method during online order checkout. When users select **Google Pay** in a supported browser or device, they're directed to complete their payment directly with the Google Pay service. They are then returned to the online storefront for order completion.
+Dynamics 365 Commerce offers an out-of-box integration for Google Pay when the Adyen payment gateway service is used. Google Pay is a digital wallet payment method that uses a Google Pay Merchant account in coordination with the Adyen payment service. When it's configured, the Google Pay button becomes available as a selectable payment method during online order checkout. When users select **Google Pay** in a supported browser or device, they're directed to complete their payment directly with the Google Pay service. They're then returned to the online storefront for order completion.
 
-When Google Pay is used with the express checkout module in Commerce, the user's payment account information is automatically prepopulated in the checkout form to help shoppers get through the checkout process faster. Commerce includes a *payment express* module that enables express checkout behavior. Payment express modules can be used on the checkout or cart pages. Please note variations of supportability for using Google Pay modules available in Commerce with payment express patterns in the **Add Google Pay to the payment express fragment using the payment module** section below. Google Pay can also be configured with Adyen payment terminals and the Commerce point of sale (POS) for in-store use.
+When Google Pay is used with the express checkout module in Commerce, the user's payment account information is automatically prepopulated in the checkout form to help customers get through the checkout process faster. Commerce includes a *payment express* module that enables express checkout behavior. Payment express modules can be used on the checkout or cart pages.  Google Pay can also be configured with Adyen payment terminals and the Commerce point of sale (POS) for in-store use. For information on the variations of supportability available in Commerce for using Google Pay modules with payment express patterns, see [Configure the cart page for express payment using Google Pay](#configure-the-cart-page-for-express-payment-using-google-pay).
 
 ## Key terms
 
@@ -42,7 +43,7 @@ When Google Pay is used with the express checkout module in Commerce, the user's
 - Review steps 1 and 2 of [Adyen Google Pay Drop-in integration - Before you go live](https://docs.adyen.com/payment-methods/google-pay/web-drop-in#before-you-go-live).
 - The Google Pay payment method must be integrated with your Adyen account. For instructions, see [Adyen Google Pay](https://www.adyen.com/payment-methods/google-pay).
 - You must enable the enhanced wallet feature in Dynamics 365 Commerce headquarters. Go to **Workspaces \> Feature management**, search for the **Enhanced wallet support and payment improvements** feature, select the feature, and then select **Enable**. After the feature has been enabled, run the **1110** distribution schedule to make the change available in all channels.
-- Google Pay will require the Site builder setting found at **Site \> Site settings \> Extensions \> Cart and checkout** property **Enable single payment authorization checkout** to be enabled.
+- Google Pay requires that you enable the **Enable single payment authorization checkout** property in site builder at **Site \> Site settings \> Extensions \> Cart and checkout**.
 
 ## Map the Google Pay payment method
 
@@ -53,7 +54,7 @@ To map the Google Pay payment method to card tender types for both POS and onlin
 1. In Commerce headquarters, go to **Retail and Commerce \> Channel setup \> Payment methods \> Card types**.
 1. Select **New** to add a line for Google Pay.
 1. In the **ID** field, enter **GooglePay**.
-1. In the **Electronic payment name** field, enter **Google Pay**.
+1. In the **Electronic payment name** field, enter "Google Pay".
 1. In the **Type** field, enter **Wallet**.
 1. In the **Issuer** field, enter **Google**.
 1. On the Action Pane, select **Processor mapping** to open the **Processor payment mapping methods** dialog box.
@@ -68,9 +69,9 @@ To map the Google Pay payment method to card tender types for both POS and onlin
 
 ## Configure a Commerce online store with Google Pay
 
-As of 10.0.36, Commerce offers a direct **Google Pay** module for presenting Google Pay for online storefronts for the regular checkout flow (this module will be updated for payment express operations in a future iteration). Additionally, the **Payment** module can also be configured for Google Pay. This section will describe module configurations for both approaches. The direct **Google Pay** module is recommended for configuration as it will receive additional feature capabilities (such as payment express with in-payment-window updates to order totals) in future iterations.
+As of version 10.0.36, Commerce offers a direct Google Pay module for presenting Google Pay for online storefronts for the regular checkout flow. The **Payment** module can also be configured for Google Pay. This section describes module configurations for both approaches. The direct Google Pay module is recommended for configuration because it will receive additional feature capabilities in future iterations.
 
-### Add Google Pay to the store payment method
+### Add Google Pay as a new store payment method
 
 To add Google Pay as a new payment method for your channel in Commerce headquarters, follow these steps.
 
@@ -82,21 +83,21 @@ To add Google Pay as a new payment method for your channel in Commerce headquart
 1. Set the **Default function** option to **Wallet**.
 1. Select **Save**.
 1. Go to your channel (**Retail and Commerce \> Channels \> Online stores** or, for POS, **Retail and Commerce \> Channels \> All stores**). 
-1. On the Action Pane, on the **Set up** tab, in the **Set Up** group, select **Payment methods**.
+1. On the action pane, on the **Set up** tab, in the **Set Up** group, select **Payment methods**.
 1. Select **New**.
 1. In the **Payment method** field, select the Google Pay payment method that you set up earlier. The **Payment method name** and **Function** fields should automatically be set by using the payment method values that you configured.
 1. On the **General** FastTab, in the **Commerce** section, set the **Operation name** field to **Pay card**.
 1. In the **Commerce** section, set the **Connector name** field. For online stores, select **Dynamics 365 Payment Connector for Google Pay**. For POS stores, select **Dynamics 365 Payment Connector for Adyen**.
-1. On the **Posting** FastTab, enter any required **Account type** ("Ledger account"), **Difference account**, and **Big difference account** settings.
+1. On the **Posting** FastTab, enter any required **Account type** (for example, "Ledger account"), **Difference account**, and **Big difference account** settings.
 1. Select **Save**.
-1. While the new Google Pay payment method is selected, on the Action Pane, on the **Electronic payment setup** tab, select **New**. 
+1. With the Google Pay payment method selected, on the action pane, on the **Electronic payment setup** tab, select **New**. 
 1. Under **Electronic payment types**, in the **ID** field, select the **GooglePay** card type.
 1. Select **Save**.
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**, and run the **1070 Channel configuration** job.
 
-### Configuring Commerce online store to use Google Pay with the Google Pay module (Recommended)
+### Configure a Commerce online store to use Google Pay with the Google Pay module
 
-To configure a Commerce online store to use Google Pay with the **Google Pay** module, follow these steps.
+To configure a Commerce online store to use Google Pay with the Google Pay module, follow these steps.
 
 1. In Commerce headquarters, go to **Retail and Commerce \> Channels \> Online stores**.
 1. Select your site's online store channel by selecting the channel's **Retail Channel Id** value.
@@ -111,19 +112,20 @@ To configure a Commerce online store to use Google Pay with the **Google Pay** m
     | ---------------------- | ----------- | -------- | ----------------- | ------------ |
     | Assembly Name          | The name of the assembly for the Dynamics 365 Payment Connector for GooglePay. | Yes | Yes | *Binary name* |
     | Service account ID     | The unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *GUID* |
-    | Optional Domain | Enter the domain to use when payment requests are made to Adyen. This domain is the unique identifier for your live environment in the format **[random]-[company name]**, and is present as the prefix inside the API URLs under **Account \> API URLs** in your company's live account on the Adyen Customer Area portal. For more information, see, [Live endpoints](https://docs.adyen.com/development-resources/live-endpoints). | Live only | No | Contact Adyen |
+    | Optional Domain | Enter the domain to use when payment requests are sent to Adyen. This domain is the unique identifier for your live environment in the format **\<random hexidecimal-encoded string\>-\<your company name\>**, and is present as the prefix inside the API URLs under **Account \> API URLs** in your company's live account on the Adyen Customer Area portal. For more information, see [Live endpoints](https://docs.adyen.com/development-resources/live-endpoints). | Live only | No | Contact Adyen |
     | Google merchant ID     | Enter the Google Merchant ID that is assigned to your Google Merchant account. This property is required for production environments but is optional for test environments. For more information, visit <https://pay.google.com/>. | Yes | No | *Numeric identifier* |
     | Merchant account ID    | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in [Sign up with Adyen](adyen-connector-setup.md#sign-up-with-adyen). | Yes | No | *Merchant Identifier* |
     | Cloud API Key          | Enter the Adyen cloud API key. To obtain this key, follow the instructions in [Generate your API key](https://docs.adyen.com/development-resources/api-credentials#generate-api-key). | Yes | No | "abcdefg" |
     | Gateway environment    | The Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | "Live" |
     | Supported Currencies   | The currencies that the connector should process. In card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes | Yes | "USD;EUR" |
     | Supported Tender Types | The tender types that the connector should process. | Yes | Yes | "GooglePay" |
-    | Authorization stale period (days) | Number of days before an authorization is considered stale and should decline before going to the processor for capture. See [Manage payment authorizations](manage-payment-authorizations.md#adyen-connector-authorization-stale-period-parameter) for more details.| Yes | Yes | "14" |
-    | Use the Dedicated Google Pay Payment Module | When using the direct **Google Pay** module, this property should be set to 'True'. This informs the Google Pay connector to interact with the direct module instead of the **Payment** module | Yes (for this configuration with **Google Pay** module | No | "True" |
+    | Authorization stale period (days) | Number of days before an authorization is considered stale and should be declined before going to the processor for capture. For more information, see [Manage payment authorizations](manage-payment-authorizations.md#adyen-connector-authorization-stale-period-parameter).| Yes | Yes | "14" |
+    | Use the Dedicated Google Pay Payment Module | When using the direct Google Pay module, this property should be set to **True**. This informs the Google Pay connector to interact with the direct module instead of the **Payment** module. | Yes (for this configuration with Google Pay module) | No | **True** |
 
 1. After you've finished setting the connector properties, run the **1070 (Channel configuration**) distribution schedule job.
 
 ### Configure the checkout fragment with the Google Pay module
+
 You can set up Google Pay as an option in the checkout payment section for payment-only, non-express functionality. The checkout form is filled in by the user, and the Google Pay payment page only readies the checkout for payment by Google Pay. No Google account information is used to overwrite the filled-in checkout details.
 
 > [!NOTE]
@@ -134,25 +136,22 @@ To set up Google Pay as a regular payment option in the **Payment Method** secti
 1. Go to **Fragments**.
 1. Select the **Checkout** fragment, and then select **Edit**.
 1. In the **Checkout section container** slot, select the ellipsis (**...**), and then select **Add module**.
-1. In the **Select modules** dialog box, select **Google Pay**, and then select **OK**.
+1. In the **Select modules** dialog, select **Google Pay**, and then select **OK**.
 1. In the Google pay module's properties pane, update the module properties as needed: 
-
     1. To rename the module for easier identification in the **Outline** view, select the pencil symbol next to the module name, enter a new name, and then select the **Apply** check mark symbol. 
-    1. The **Supported tender types** value can be left blank unless there are multiple **Google Pay** payment connector instances set for the channel (this scenario is unexpected). Otherwise, this value must match the **Supported Tender Types** string as set in the specific connector within the channel it is meant to link.
-    1. A CSS Class name can also be referenced in the **Custom CSS class name** to target a CSS styling for this module
-    2. The **Render when module scrolls into view** is recommended for modules that are hidden below the shopper's view when interacting within the page. When set, the module will render on the shopper's client device once the viewport is reached on the page. This setting can help improve overall initial page load time.
+    1. The **Supported tender types** value can be left blank unless there are multiple Google Pay payment connector instances set for the channel (a rare scenario). Otherwise, this value must match the **Supported Tender Types** string as set in the specific connector within the channel it is supposed to link to.
+    1. A CSS class name can also be specified for **Custom CSS class name** to implement custom CSS styling for this module.
+    2. Setting the **Render when module scrolls into view** property is recommended for modules that are hidden below the customer's view when interacting within the page. When set, the module renders on the customer's client device once the viewport is reached on the page. This setting can help improve overall initial page load times.
 
-Once the **Google Pay** module has been configured, select **Save**, **Finish editing**, and then the **Publish** button will publish the changes to the site.
+Once the Google Pay module has been configured, select **Save**, select **Finish editing**, and then select **Publish** to publish the changes to the site.
 
-#### Payment Express support with the **Google Pay** module
-Currently the direct **Google Pay** module **does not** support the payment express functionality directly. If setting up payment express for a region storefront that is not PSD2 enforced, the **Payment** module can be used for the payment express behavior in the cart and checkout pages. The **Payment** module in express behavior will launch the Google Pay payment window for a user to authenticate to their Google account. In this pattern, the order subtotal without final tax, shipping, and fees associated will be presented to the shopper. Upon completing the shipping address and payment selections in Google Pay, the shopper will be redirected to the Commerce storefront where final calculations for the order total will use the shipping address information supplied by the payment express interaction. Future support will update the **Google Pay** module to handle direct in-payment-window updates of order pricing for shoppers to see and agree to final order totals within the payment method authentication window directly. 
+#### Payment express support with the Google Pay module
 
-To set up payment express functionality using the **Payment** module, please refer to the **Add Google Pay to the payment express fragment using the payment module** section below.
+Currently, the direct Google Pay module doesn't directly support the payment express functionality. If setting up payment express for a region storefront that is not PSD2 enforced, the **Payment** module can be used for the payment express behavior in the cart and checkout pages. The **Payment** module in express behavior will launch the Google Pay payment window for a user to authenticate to their Google account. In this pattern, the order subtotal without final tax, shipping, and fees associated will be presented to the customer. Upon completing the shipping address and payment selections in Google Pay, the customer will be redirected to the Commerce storefront where final calculations for the order total will use the shipping address information supplied by the payment express interaction. Future support will update the Google Pay module to handle direct in-payment-window updates of order pricing for customers to see and agree to final order totals within the payment method authentication window directly. 
 
---  -- 
+To set up payment express functionality using the **Payment** module, see [Configure the cart page for express payment using Google Pay](#configure-the-cart-page-for-express-payment-using-google-pay).
 
-
-### Configuring Commerce online store to use Google Pay with the Payment module (Legacy)
+### Configure Commerce online store to use Google Pay with the Payment module (Legacy)
 
 To configure a Commerce online store to use Google Pay with the **Payment** module, follow these steps.
 
@@ -177,14 +176,14 @@ To configure a Commerce online store to use Google Pay with the **Payment** modu
     | Supported Currencies   | The currencies that the connector should process. In card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes | Yes | "USD;EUR" |
     | Supported Tender Types | The tender types that the connector should process. | Yes | Yes | "GooglePay" |
     | Authorization stale period (days) | Number of days before an authorization is considered stale and should decline before going to the processor for capture. See [Manage payment authorizations](manage-payment-authorizations.md#adyen-connector-authorization-stale-period-parameter) for more details. | Yes | Yes | "14" |
-    | Use the Dedicated Google Pay Payment Module | When using the direct **Payment** module, this property should be set to 'False' (or left blank). This informs the Google Pay connector to interact with the payment module instead of the **Google Pay** module | No (blank defaults as "False") | No | "False" |
+    | Use the Dedicated Google Pay Payment Module | When using the direct **Payment** module, this property should be set to 'False' (or left blank). This informs the Google Pay connector to interact with the payment module instead of the Google Pay module | No (blank defaults as "False") | No | "False" |
 
 1. After you've finished setting the connector properties, run the **1070 (Channel configuration**) distribution schedule job.
 
 #### Use the payment express section in the Cart and Checkout pages with Google Pay using the Payment module
 
 > [!WARNING]
-> The Dynamics 365 Commerce pattern for Google Pay Express is currently not recommended for regions enforcing PSD2 requirements. The **Payment module** for Google Pay support will calculate final order price upon return to the Commerce checkout page when it has acquired the delivery address information for a user's order. PSD2 recommends the user see the full order total price within the authentication window of the digital wallet. Commerce will track future work to update the newer **Google Pay** direct module available to support express flows by updating order details within the Google Pay payment window as a delivery address is selected. Note that a page cannot support using both the **Payment module** for Express Checkout and the newer **Google Pay** module for the checkout section. Either only the **Payment module** can be used for both Express and regular checkout flows, or only the **Google Pay** module can be used for the normal checkout payment (non-express) flows.
+> The Dynamics 365 Commerce pattern for Google Pay Express is currently not recommended for regions enforcing PSD2 requirements. The payment module for Google Pay support will calculate final order price upon return to the Commerce checkout page when it has acquired the delivery address information for a user's order. PSD2 recommends the user see the full order total price within the authentication window of the digital wallet. Commerce will track future work to update the newer Google Pay direct module available to support express flows by updating order details within the Google Pay payment window as a delivery address is selected. Note that a page cannot support using both the payment module for express checkout and the newer Google Pay module for the checkout section. Either only the payment module can be used for both Express and regular checkout flows, or only the Google Pay module can be used for the normal checkout payment (non-express) flows.
 
 The Commerce **Payment** module payment express patterns give site customers the option to check out faster by using their payment service account information during the checkout process. The **Payment** module payment express actions reference the linked payment connector via the **Supported tender types** string used in the same attribute of the payment connector. Express payments with the **Payments** module then returns the user-selected order details (address, contact information, and payment method) to prefill the checkout form.
 
@@ -213,13 +212,13 @@ To set up the checkout fragment for express payment using Google Pay in site bui
     1. Set the **Supported tender types** value to **GooglePay**. This value must match the **Supported Tender Types** string in the connector that's set up for the channel.
     1. The **Payment style override** is used to apply CSS code styling to the module. Site builder CSS overrides and styles don't apply to this module via this property. This styling does not affect the inner-window styles within the payment iframe rendered by the payment service.
     1. A **Custom CSS class name** can also be referenced to apply to this module. This can be the class name as defined in the theme pack. This styling does not affect the inner-window styles within the payment iframe rendered by the payment service.
-    1. The **Render when module scrolls into view** is recommended for modules that are hidden below the shopper's view when interacting within the page. When set, the module will render on the shopper's client device once the viewport is reached on the page. This setting can help improve overall initial page load time.
+    1. The **Render when module scrolls into view** is recommended for modules that are hidden below the customer's view when interacting within the page. When set, the module will render on the customer's client device once the viewport is reached on the page. This setting can help improve overall initial page load time.
 
 1. Optional: In the **Checkout express payment container** module, add a text block module that includes instructions or disclosure information for the express payment section of your site. After you add the module, in the properties pane, enter the desired text in the **Rich text** field. You can position the text above or below the payment express modules by selecting the ellipsis (**...**) in the **Text block** slot, and then selecting **Move up** or **Move down**.
 1. Select **Save** to save your changes, and then select **Finish editing**.
 1. Select **Publish** to publish the fragment.
 
-#### Configure the cart page for express using Google Pay with the Payment module
+#### Configure the cart page for express payment using Google Pay
 
 To set up the cart page for express payment using Google Pay in site builder, follow these steps.
 
@@ -236,7 +235,7 @@ To set up the cart page for express payment using Google Pay in site builder, fo
     1. Set the **Supported tender types** value to **GooglePay**. This value must match the **Supported Tender Types** string in the connector that's set up for the channel.
     1. The **Payment style override** is used to apply CSS code styling to the module. Site builder CSS overrides and styles don't apply to this module via this property. This styling does not affect the inner-window styles within the payment iframe rendered by the payment service.
     1. A **Custom CSS class name** can also be referenced to apply to this module. This can be the class name as defined in the theme pack. This styling does not affect the inner-window styles within the payment iframe rendered by the payment service.
-    1. The **Render when module scrolls into view** is recommended for modules that are hidden below the shopper's view when interacting within the page. When set, the module will render on the shopper's client device once the viewport is reached on the page. This setting can help improve overall initial page load time.
+    1. The **Render when module scrolls into view** is recommended for modules that are hidden below the customer's view when interacting within the page. When set, the module will render on the customer's client device once the viewport is reached on the page. This setting can help improve overall initial page load time.
 
 1. Optional: In the **Checkout express payment container** module, add a text block module that includes instructions or disclosure information for the express payment section of your site. After you add the module, in the properties pane, enter the desired text in the **Rich text** field. You can position the text above or below the payment express modules by selecting the ellipsis (**...**) in the **Text block** slot, and then selecting **Move up** or **Move down**.
 1. Select **Save** to save your changes, and then select **Finish editing**.
@@ -269,15 +268,15 @@ To set up Google Pay as a regular payment option in the **Payment Method** secti
 1. In the **Select modules** dialog box, select the **Payment** module, and then select **OK**.
 1. In the **Payment** module's properties pane on the right, set the properties for the container module:
 
-    - **Heading** – Enter a heading to display for the express checkout section of your site (for example, **Google Pay**).
-    - **Height of the iFrame** – Change the value to your preferred design height in pixels (for example, **75**). 
-    - **Supported tender types** – Enter **GooglePay** to match the configuration for the Google Pay connector in Commerce headquarters.
+    - **Heading** – Enter a heading to display for the express checkout section of your site (for example, "Google Pay").
+    - **Height of the iFrame** – Change the value to your preferred design height in pixels (for example, "75"). 
+    - **Supported tender types** – Enter "GooglePay" to match the configuration for the Google Pay connector in Commerce headquarters.
     - **Is primary payment** – Leave the checkbox cleared. (This property is typically enabled for the Adyen checkout module.)
     - **Payment style override** – This property isn't supported for the Google Pay configuration.
     - **Use connector id** – This property must be selected if multiple payment connectors are used on the page.
     - **Use browser set language code for iFrame** – This property isn't supported for the Google Pay configuration
     - A **Custom CSS class name** can also be referenced to apply to this module. This can be the class name as defined in the theme pack. This styling does not affect the inner-window styles within the payment iframe rendered by the payment service.
-    - The **Render when module scrolls into view** is recommended for modules that are hidden below the shopper's view when interacting within the page. When set, the module will render on the shopper's client device once the viewport is reached on the page. This setting can help improve overall initial page load time.
+    - The **Render when module scrolls into view** is recommended for modules that are hidden below the customer's view when interacting within the page. When set, the module will render on the customer's client device once the viewport is reached on the page. This setting can help improve overall initial page load time.
 
 1. Position the module above or below other payment modules by selecting the ellipsis (**...**) in the **Payment** slot, and then selecting **Move up** or **Move down**.
 1. Select **Save** to save your changes, and then select **Finish editing**.
