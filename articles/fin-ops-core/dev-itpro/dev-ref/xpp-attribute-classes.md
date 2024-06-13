@@ -3,9 +3,11 @@ title: X++ attribute classes
 description: Learn about the X++ attribute classes, including overviews and examples on creating an attribute class and metadata reflections.
 author: pvillads
 ms.author: pvillads
-ms.topic: article
-ms.date: 08/27/2021
-ms.reviewer: josaw
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/13/20241
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
