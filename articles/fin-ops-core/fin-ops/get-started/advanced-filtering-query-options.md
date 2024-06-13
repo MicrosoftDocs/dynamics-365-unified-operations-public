@@ -1,6 +1,6 @@
 ---
 title: Advanced filtering and query syntax
-description: Learn about the filtering and query options for the Advanced filter/sort dialog and the matches operator in the Filter pane or grid column header filters.  
+description: Learn about the filtering and query options for the Advanced filter/sort dialog and the matched operator in the filter pane or grid column header filters.  
 author: jasongre
 ms.author: jasongre
 ms.topic: article
