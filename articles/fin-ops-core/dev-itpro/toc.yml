@@ -325,7 +325,7 @@ items:
             href: sysadmin/archive-inventory.md
           - name: Archive Dynamics 365 Supply Chain inventory journals
             href: sysadmin/archive-inventory-journal.md
-        - name: Dynamics 365 archive with Dataverse long term retention FAQ
+        - name: Finance and operations apps archive with Dataverse long term retention FAQ
           href: sysadmin/archive-faq.md
     - name: Azure Data Lake
       items: 
