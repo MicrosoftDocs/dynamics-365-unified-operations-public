@@ -4,13 +4,13 @@ description: Learn about the concept of record templates and explains how they c
 author: pvillads
 ms.author: pvillads
 ms.topic: overview
-ms.date: 07/25/2019
-ms.reviewer: sericks
+ms.custom: 
+  - bap-template
+ms.date: 06/13/2024
+ms.reviewer: johnmichalak
 ms.collection: get-started
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 61ada2d8-84c3-44bc-b4c5-516b1aeac3d1
 ---
