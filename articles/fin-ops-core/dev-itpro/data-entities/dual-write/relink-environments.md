@@ -28,12 +28,12 @@ If you want to reset your existing sandbox Dataverse instance that is linked for
 1. Sign in to the Finance and Operations app.
 2. Navigate to **Data management** > **Dual-write**.
 3. Stop all entity maps.
-4. Ensure the environment targeted via Lifecycle Services has been properly configured. For more information, see [System requirements and prerequisites](requirements-and-prerequisites.md).
-5. Click the **Reset** button to reset all Dual-write connections and configurations. The [Reset dual-write connections](reset.md) documentation provides additional detail on this process.
+4. Ensure the environment targeted via Lifecycle Services is properly configured. For more information, see [System requirements and prerequisites](requirements-and-prerequisites.md).
+5. Click the **Reset** button to reset all Dual-write connections and configurations. The [Reset dual-write connections](reset.md) documentation provides more detail on this process.
 
 ## Scenario: Backup and restore
 
-When you back up and restore an environment, you may see unexpected data movement or errors if a previous Dual-write connection was established with the backup/restore environment and table maps weren't stopped. This issue occurs because data in key tables was not cleared. To mitigate this issue, follow these steps:
+When you back up and restore an environment, you may see unexpected data movement or errors. These errors happen if a previous Dual-write connection was established with the backup/restore environment and table maps weren't stopped. This causes data in key tables not to be cleared. To mitigate this issue, follow these steps:
 
 1. Sign in to the targeted Finance and Operations app.
 2. Delete the data from the following tables:
@@ -44,7 +44,7 @@ When you back up and restore an environment, you may see unexpected data movemen
 
 3. Sign in to the targeted Dataverse environment.
 4. Delete the data from the **Dual Write Runtime Configurations** table.
-5. Reset the connection as detailed above to re-establish applicable connections.
+5. To re-establish applicable connections, reset the connection as detailed in the "Reset linking" section.
 
 ## Known issues
 
@@ -52,12 +52,12 @@ When you back up and restore an environment, you may see unexpected data movemen
 
 When you try to copy, update, or delete records after copying the environment, the following error appears: **SecureConfig Organization (ProjOpsTest4) does not match actual CRM Organization (org6459f7a8_195867911_20200717T174709)**.
 
-Follow these steps to mitigate the error:
+Mitigate the error by following these steps:
 
 1. In the customer engagement app, select **Advanced find**.
 2. In the **Look for** field, select **Dual Write Runtime Configurations**.
 3. Select **Results**.
-4. Rows will be displayed. Select all the rows.
+4. Rows are displayed. Select all the rows.
 5. Select the **Delete** icon.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
