@@ -1,5 +1,5 @@
 ---
-title: Nonrecurring payment tokens
+title: Configure nonrecurring payment tokens
 description: This article describes how to configure and operate payment processing with nonrecurring payment tokens in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 06/13/2024
