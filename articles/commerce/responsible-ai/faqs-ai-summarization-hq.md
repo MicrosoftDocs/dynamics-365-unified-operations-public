@@ -1,12 +1,13 @@
 ---
 title: Responsible AI FAQ for AI summarization in Commerce headquarters
 description: This FAQ provides answers to frequently asked questions about the AI technology that is used for generating summaries in Commerce headquarters. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 06/12/2024
+ms.date: 06/13/2024
 ms.collection:
   - bap-ai-copilot
 ms.custom:
   - responsible-ai-faqs
-ms.topic: article
+  - bap-template
+ms.topic: faq
 author: shajain
 ms.author: shajain
 ms.reviewer: v-chrgriffin
@@ -46,5 +47,8 @@ When you use the feature, follow these recommendations:
 - Make sure that your company has sufficient control over data permissions to ensure that business data can't be manipulated to influence AI data processing in an undesirable way.
 - In case of hig priority issues, the summarization capability can be turned off from the Feature Management workspace. There are granular controls to turn off summarization for individual forms based on business need and relevance. 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
