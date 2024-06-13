@@ -1,6 +1,6 @@
 ---
 title: Archive customization
-description: Learn about how the archive feature in Microsoft Dynamics 365 Finance supports table customizations, including code examples.
+description: Learn about how the archive feature in Microsoft Dynamics 365 Finance and operations apps supports table customizations, including code examples.
 author: pnghub
 ms.author: gned
 ms.topic: conceptual
@@ -11,7 +11,7 @@ ms.reviewer: twheeloc
 ---
 # Archive customization (preview)
 
-This article describes how the archive feature in Microsoft Dynamics 365 Finance supports customization. The archival framework supports extensions to include custom table fields and custom tables in supported functional scenarios.
+This article describes how the archive feature in Microsoft Dynamics 365 Finance and operations apps supports customization. The archival framework supports extensions to include custom table fields and custom tables in supported functional scenarios.
 
 ## Add custom fields in history tables and business intelligence entities
 
@@ -32,7 +32,7 @@ Dataverse interacts with Dynamics 365 Finance and Operations. These virtual enti
 
 ### Step 1: Add fields to the history table via extensions
 
-The archival framework requires that all live table columns are mirrored in the corresponding history tables. Use table extensions to add the custom fields to history tables. For more information about how to add fields to history tables through extension in Finance, see [Add fields to tables through extension](../../dev-itpro/extensibility/add-field-extension.md).
+The archival framework requires that all live table columns are mirrored in the corresponding history tables. Use table extensions to add the custom fields to history tables. For more information about how to add fields to history tables through extension in Finance and operations apps, see [Add fields to tables through extension](../../dev-itpro/extensibility/add-field-extension.md).
 
 ### Step 2: Add fields to BI entities via extensions
 
@@ -90,7 +90,7 @@ final class LedgerArchiveAutomationJobRequestCreator_GeneralLedger_Extension
         return builder.completeArchiveJobPostRequest(; 
 ```
 
-### Finance table names in live, history, and Dataverse-managed data lake tables
+### Finance and operations table names in live, history, and Dataverse-managed data lake tables
 
 | Scenario | Live table | History table | BI entity | Dataverse-managed data lake table |
 |---|---|---|---|---|
