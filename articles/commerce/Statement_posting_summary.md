@@ -38,7 +38,7 @@ To use the AI generated summaries for Statement posting, the Dynamics 365 Commer
 - Any build of version 10.0.40 or later
 
 Additionally, Copilot capabilities should be enabled in Finance and Operations application. Refer the article:
-[Enable Copilot in Finance and Operations](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/enable-copilot)
+[Enable Copilot in Finance and Operations](/dynamics365/fin-ops-core/dev-itpro/copilot/enable-copilot)
 
 
 ## Turn on AI generated summary for Statements
