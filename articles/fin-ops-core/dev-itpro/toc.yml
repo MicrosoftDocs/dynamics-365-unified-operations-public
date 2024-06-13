@@ -307,7 +307,7 @@ items:
           href: sysadmin/archive-data.md
         - name: Set up and manage archive
           items:
-          - name: Set up and manage archive data in Dynamics 365 Finance
+          - name: Set up and manage archive data in finance and operations apps
             href: sysadmin/archive-setup-manage.md
         - name: Archive customization
           href: sysadmin/archive-custom.md
