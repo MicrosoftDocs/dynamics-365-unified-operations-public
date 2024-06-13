@@ -4,7 +4,7 @@ description: Access answers to frequently asked questions about archiving data i
 author: pnghub
 ms.author: gned
 ms.topic: conceptual
-ms.date: 05/31/2024
+ms.date: 06/11/2024
 ms.custom: 
   - bap-template
 ms.reviewer: twheeloc
@@ -75,9 +75,10 @@ If you encounter the following error messages during the install attempt, then w
  - Status code 500 (Solution operation failed due to another import blocking the operation)
  - Solution import progress has been stuck
 
-If you encounter a ‘Cannot insert duplicate key exception when executing non-query’ error when trying to upgrade the app, then please delete the ‘ArchiveServicePermissions_PROD’ solution from the maker portal solutions page and then reattempt the upgrade.
+If you encounter a **‘Cannot insert duplicate key exception when executing non-query’** error when trying to upgrade the app, then please delete the ‘ArchiveServicePermissions_PROD’ solution from the maker portal solutions page and then reattempt the upgrade.
 
-
+If you encounter the error **'MCR call center config key needs to be enabled under License Configuration in order to enable change tracking for MCRSalesTableBiEntity'**, then in Dynamics 365 Finance and Operations, go to **System administration \> License configuration** and confirm that the following checkboxes and sub-checkboxes are enabled before reattempting installation:
+ - **Retail channels** - Call center
 
 
 
