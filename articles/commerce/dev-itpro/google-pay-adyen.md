@@ -57,7 +57,7 @@ To map the Google Pay payment method to card tender types for both POS and onlin
 1. In the **Electronic payment name** field, enter "Google Pay".
 1. In the **Type** field, enter **Wallet**.
 1. In the **Issuer** field, enter **Google**.
-1. On the Action Pane, select **Processor mapping** to open the **Processor payment mapping methods** dialog box.
+1. On the action pane, select **Processor mapping** to open the **Processor payment mapping methods** dialog box.
 1. Under **Unmapped Processor Payment Methods**, you'll see a list of unmapped processor payment methods, each of which is paired with the appropriate connector. To map unmapped Google Pay processor payment methods to card tender types, follow these steps for each card tender type:
 
     1. Under **Card tender types**, select a card tender type.
@@ -151,7 +151,7 @@ Currently, the direct Google Pay module doesn't directly support the payment exp
 
 To set up payment express functionality using the **Payment** module, see [Configure the cart page for express payment using Google Pay](#configure-the-cart-page-for-express-payment-using-google-pay).
 
-### Configure Commerce online store to use Google Pay with the Payment module (Legacy)
+### Configure Commerce online store to use Google Pay with the payment module (Legacy)
 
 To configure a Commerce online store to use Google Pay with the payment module, follow these steps.
 
@@ -229,14 +229,12 @@ To set up the cart page for express payment using Google Pay in site builder, fo
 1. In the **Payment express** slot, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select **Payment express**, and then select **OK**.
 1. In the Payment express module's properties pane, update the module properties as needed: 
-
-    1. To rename the module for easier identification in the **Outline** view, select the pencil symbol next to the module name, enter a new name, and then select the **Apply** check mark symbol.
-    1. For the **Height of the iFrame** property, set a height in pixels that meets your page design needs (for example, enter **50** to set a height of 50 pixels).
+    1. To rename the module for easier identification in the outline view, select the pencil symbol next to the module name, enter a new name, and then select the **Apply** checkmark symbol.
+    1. For the **Height of the iFrame** property, set a height in pixels that meets your page design needs (for example, enter "50" to set a height of 50 pixels).
     1. Set the **Supported tender types** value to **GooglePay**. This value must match the **Supported Tender Types** string in the connector that's set up for the channel.
-    1. The **Payment style override** is used to apply CSS code styling to the module. Site builder CSS overrides and styles don't apply to this module via this property. This styling does not affect the inner-window styles within the payment iframe rendered by the payment service.
-    1. A **Custom CSS class name** can also be referenced to apply to this module. This can be the class name as defined in the theme pack. This styling does not affect the inner-window styles within the payment iframe rendered by the payment service.
-    1. The **Render when module scrolls into view** is recommended for modules that are hidden below the customer's view when interacting within the page. When set, the module will render on the customer's client device once the viewport is reached on the page. This setting can help improve overall initial page load time.
-
+    1. Use the **Payment style override** property to apply CSS code styling to the module. Site builder CSS overrides and styles don't apply to this module via this property. This styling does not affect the inner-window styles within the payment iFrame element rendered by the payment service.
+    1. A **Custom CSS class name** can also be referenced to apply to this module. This can be the class name as defined in the theme pack. This styling doesn't affect the inner-window styles within the payment iFrame element rendered by the payment service.
+    1. Setting the **Render when module scrolls into view** property is recommended for modules that are hidden below the customer's view when interacting within the page. When set, the module renders on the customer's client device once the viewport is reached on the page. This setting can help improve overall initial page load time.
 1. Optional: In the **Checkout express payment container** module, add a text block module that includes instructions or disclosure information for the express payment section of your site. After you add the module, in the properties pane, enter the desired text in the **Rich text** field. You can position the text above or below the payment express modules by selecting the ellipsis (**...**) in the **Text block** slot, and then selecting **Move up** or **Move down**.
 1. Select **Save** to save your changes, and then select **Finish editing**.
 1. Select **Publish** to publish the page.
@@ -245,15 +243,15 @@ Users can include up to three supported **Payment Express** modules (in other wo
 
 #### Modes of delivery
 
-With the payment express module that uses Google Pay, the first delivery option that is returned against the selected shipping address from the Google Pay account will be preselected. Users have an opportunity to adjust the shipping address to a different option if they want.
+With the payment express module that uses Google Pay, the first delivery option that's returned against the selected shipping address from the Google Pay account is preselected. Users have an opportunity to adjust the shipping address to a different option if they want to.
 
-The order in which the delivery methods are displayed in the payment express module is configured on the channel's **Modes of delivery** page in Commerce headquarters. In Commerce headquarters, go to **Retail and Commerce \> Channels \> Online stores**, and select the **Retail channel ID** value for your store. On the Action Pane, on the **Setup** tab,  select **Modes of delivery**. The modes of delivery that are listed will be displayed in the same order in the payment express module. Select **Manage modes of delivery** on the Action Pane to add or remove modes of delivery for a retail channel or product. For more information about how to set up modes of delivery, see [Set up modes of delivery](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
+The order in which the delivery methods are displayed in the payment express module is configured on the channel's **Modes of delivery** page in Commerce headquarters. In Commerce headquarters, go to **Retail and Commerce \> Channels \> Online stores**, and select the **Retail channel ID** value for your store. On the action pane, on the **Setup** tab,  select **Modes of delivery**. The modes of delivery that are listed will be displayed in the same order in the payment express module. Select **Manage modes of delivery** on the action pane to add or remove modes of delivery for a retail channel or product. For more information about how to set up modes of delivery, see [Set up modes of delivery](/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery).
 
 The checkout module also uses the delivery options module when modes of delivery are rendered during checkout. For more information, see [Delivery options module](../delivery-options-module.md).
 
 Modes of delivery are displayed as they're added to the **Modes of delivery** list in the online store.
 
-### Set up Google Pay as an option in the checkout payment section with they Payment module
+### Set up Google Pay as an option in the checkout payment section of the payment module
 
 You can set up Google Pay as an option in the checkout payment section for payment-only, non-express functionality. The checkout form is filled in by the user, and the Google Pay payment page only readies the checkout for payment by Google Pay. No Google account information is used to overwrite the filled-in checkout details.
 
@@ -264,35 +262,33 @@ To set up Google Pay as a regular payment option in the **Payment Method** secti
 
 1. In site builder, go to **Fragments**, and then select your site's checkout fragment.
 1. Select **Edit**.
-1. In the **Checkout information** slot, navigate to the **Checkout section container** and select the ellipsis (**...**), and then select **Add module**.
+1. In the **Checkout information** slot, select the **Checkout section container**, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Payment** module, and then select **OK**.
 1. In the **Payment** module's properties pane on the right, set the properties for the container module:
-
     - **Heading** – Enter a heading to display for the express checkout section of your site (for example, "Google Pay").
     - **Height of the iFrame** – Change the value to your preferred design height in pixels (for example, "75"). 
     - **Supported tender types** – Enter "GooglePay" to match the configuration for the Google Pay connector in Commerce headquarters.
     - **Is primary payment** – Leave the checkbox cleared. (This property is typically enabled for the Adyen checkout module.)
     - **Payment style override** – This property isn't supported for the Google Pay configuration.
     - **Use connector id** – This property must be selected if multiple payment connectors are used on the page.
-    - **Use browser set language code for iFrame** – This property isn't supported for the Google Pay configuration
+    - **Use browser set language code for iFrame** – This property isn't supported for the Google Pay configuration.
     - A **Custom CSS class name** can also be referenced to apply to this module. This can be the class name as defined in the theme pack. This styling does not affect the inner-window styles within the payment iframe rendered by the payment service.
-    - The **Render when module scrolls into view** is recommended for modules that are hidden below the customer's view when interacting within the page. When set, the module will render on the customer's client device once the viewport is reached on the page. This setting can help improve overall initial page load time.
-
+    - Setting the **Render when module scrolls into view** property is recommended for modules that are hidden below the customer's view when interacting within the page. When set, the module renders on the customer's client device once the viewport is reached on the page. This setting can help improve overall initial page load times.
 1. Position the module above or below other payment modules by selecting the ellipsis (**...**) in the **Payment** slot, and then selecting **Move up** or **Move down**.
 1. Select **Save** to save your changes, and then select **Finish editing**.
 1. Select **Publish**.
 
 ### Configure Google Pay in site builder settings 
 
-Before you configure your fragments or pages with Google Pay, you must ensure that your content security policies for your site are set in Commerce site builder.
+Before you configure your fragments or pages with Google Pay, you must ensure that the content security policies (CSP) for your site are configured in Commerce site builder.
 
 To ensure that your content security policies are set in site builder, follow these steps.
 
-1. In your site, go to **Site settings \> Extensions**.
+1. For your site, go to **Site settings \> Extensions**.
 1. On the **Content security policy** tab, add a line for `*.google.com` to the **child-src**, **connect-src**, **frame-ancestors**, **frame-src**, **img-src**, **script-src**, and **style-src** directives.
-1. When you've finished, select **Save and publish**.
+1. When finished, select **Save and publish**.
 
-Additionally, set the Site builder site's **Site settings \> Extensions \> Cart and checkout** property **Enable single payment authorization checkout** to enabled (checked).
+Additionally, select the **Enable single payment authorization checkout** property in site builder at **Site settings \> Extensions \> Cart and checkout**.
 
 ## Configure Commerce POS for Google Pay
 
