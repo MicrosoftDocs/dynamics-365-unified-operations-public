@@ -18,7 +18,7 @@ ms.collection:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to enable Copilot support for the **Confirmed purchase orders with changes** workspace and its optional support for Copilot features. For more information about how to use this workspace, see [Review and accept changes to confirmed purchase orders](purchase-order-changes-after-confirmation.md).
+This article describes how to enable Copilot support for the **Confirmed purchase orders with changes** workspace and its optional support for Copilot features. For more information about how to use this workspace, see [Review and accept changes to confirmed purchase orders](../../../supply-chain/procurement/purchase-order-changes-after-confirmation.md).
 
 ## Turn on Copilot support for the Confirmed purchase orders with changes workspace
 
@@ -36,5 +36,5 @@ You can complete the outstanding configuration steps on a separate browser tab. 
 
 ## See also
 
-- [Review and accept changes to confirmed purchase orders](purchase-order-changes-after-confirmation.md)
-- [Responsible AI FAQ for the Confirmed purchase orders with changes workspace](../faq-confirmed-po-changes.md)
+- [Review and accept changes to confirmed purchase orders](../../../supply-chain/procurement/purchase-order-changes-after-confirmation.md)
+- [Responsible AI FAQ for the Confirmed purchase orders with changes workspace](../../../supply-chain/faq-confirmed-po-changes.md)

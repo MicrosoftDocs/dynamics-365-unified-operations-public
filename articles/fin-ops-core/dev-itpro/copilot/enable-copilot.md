@@ -1,6 +1,6 @@
 ---
-title: Enable Copilot capabilities in finance and operations apps
-description: Learn about instructions for administrators on how to enable Copilot capabilities in finance and operations apps.
+title: Enable basic Copilot capabilities in finance and operations apps apps
+description: Learn about instructions for administrators on how to enable basic Copilot capabilities in finance and operations apps.
 author: cabeln
 ms.author: cabeln
 ms.topic: how-to
@@ -15,13 +15,13 @@ ms.search.region: Global
 ms.search.form:
 ---
 
-# Enable Copilot capabilities in finance and operations apps
+# Enable basic Copilot capabilities in finance and operations apps
 
 [!include [banner](../includes/banner.md)]
 
 Copilot brings features that help users complete their tasks more efficiently. For example, one feature uses the power of generative AI to provide in-app help guidance.
 
-This article describes how to enable Copilot capabilities in finance and operations apps.
+This article describes how to enable basic Copilot capabilities in finance and operations apps. All Copilot features in finance and operations apps require this basic foundation. For some features, this foundation is all that's needed, but other features may require additional installations and/or feature management.
 
 ## Country/region and language availability
 

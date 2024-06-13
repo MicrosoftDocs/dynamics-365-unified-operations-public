@@ -22,7 +22,7 @@ During procurement planning, any changes that are made to confirmed purchase ord
 
 ## Prerequisites
 
-The **Confirmed purchase orders with changes** workspace is enabled by default. However, its AI-powered and Copilot functionality must be enabled separately. If you also want to take advantage of the Copilot features, see [Enable Copilot support for managing changes to confirmed purchase orders](purchase-order-changes-after-confirmation-enable.md) for the system requirements and information about how to set them up.
+The **Confirmed purchase orders with changes** workspace is enabled by default. However, its AI-powered and Copilot functionality must be enabled separately. If you also want to take advantage of the Copilot features, see [Enable Copilot support for managing changes to confirmed purchase orders](../../fin-ops-core/dev-itpro/copilot/purchase-order-changes-after-confirmation-enable.md) for the system requirements and information about how to set them up.
 
 ## The Confirmed purchase orders with changes workspace
 
@@ -105,4 +105,4 @@ A good way to focus on the most pressing downstream impact is to sort and filter
 ## See also
 
 - [Responsible AI FAQ for the Confirmed purchase orders with changes workspace](../faq-confirmed-po-changes.md)
-- For administrators: [Enable Copilot support for managing changes to confirmed purchase orders](purchase-order-changes-after-confirmation-enable.md)
+- For administrators: [Enable Copilot support for managing changes to confirmed purchase orders](../../fin-ops-core/dev-itpro/copilot/purchase-order-changes-after-confirmation-enable.md)
