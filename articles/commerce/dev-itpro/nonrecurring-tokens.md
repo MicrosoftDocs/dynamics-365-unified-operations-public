@@ -59,17 +59,17 @@ In these scenarios, a message is displayed to the user to inform them that a rec
 
 ### Configure authorization expiration settings
 
-Dynamics 365 Commerce tracks a **Number of days before expired** environmental setting in headquarters to determine whether credit card and digital wallet authorizations are expired. This protective setting prevents an attempted funds capture against an authorization that the issuer may consider expired and invalid. The setting is located in headquarters at **Accounts receivable \> Setup \> Accounts receivable parameters \> Credit card**. On the same form, the **Credit card authorization** option is set to **Yes** in a normal Commerce payments setup.
+Dynamics 365 Commerce tracks a **Number of days before expired** setting in headquarters to determine whether credit card and digital wallet authorizations are expired. This protective setting prevents an attempted funds capture against an authorization that the issuer may consider expired and invalid. The setting is located in headquarters at **Accounts receivable \> Setup \> Accounts receivable parameters \> Credit card**. On the same form, the **Credit card authorization** option is set to **Yes** in a normal Commerce payments setup.
 
-In addition to this environmental setting, each store's electronic payment types can also have their expiration in days specified. In headquarters, navigate to the store you want to configure at **Retail and Commerce \> Channels \> Online stores**. On the action pane, on the **Set up** tab, in the **Set Up** group, select **Payment methods**. With the payment method selected (for example, **Cards**), on the action pane, select **Electronic payment setup**. Select **Edit** and on the **General** tab, enter a **Pre-authorization duration in days** value for each of the selected electronic payment types, and then select **Save**. This setting also appears on the **Retail and Commerce \> Channels \> Call centers \> Call center credit cards \> Authorization management** form for reference against specific pending authorizations.
+In addition to the **Number of days before expired** setting, each store's electronic payment types can also have the expiration in days specified. To specify the expiration in days for electronic payment types, in headquarters go to your store at **Retail and Commerce \> Channels \> Online stores**. On the action pane, on the **Set up** tab, in the **Set Up** group, select **Payment methods**. With the payment method selected (for example, **Cards**), on the action pane, select **Electronic payment setup**. Select **Edit** and on the **General** tab, enter a **Pre-authorization duration in days** value for each of the selected electronic payment types, and then select **Save**. This setting also appears on the **Retail and Commerce \> Channels \> Call centers \> Call center credit cards \> Authorization management** form for reference against specific pending authorizations.
 
 The **Pre-authorization duration in days** setting is used as the primary attribute to measure an authorization's expiration for the transaction, based on the payment method used by the customer. If this value isn't set, the system defaults to the **Number of days before expired** setting value in the **Accounts receivable parameters** section.
 
 ### Monitor expired authorizations
 
-Credit card authorizations that are expired in the system return the payment tracking back to **Pending Authorization**, with the order being placed on hold with the **Do Not Process** header attribute set to **True** in the sales order header. In Commerce headquarters, users can monitor expired authorizations on the **Retail and Commerce \> Channels \> Call centers \> Call center credit cards \> Authorization management** form. To see a list of pending authorizations, on the **Status** drop-down list, select4 **Pending Authorization**. The record's **Status** shows as **Open order**, and the **Expired** field shows **Yes** on the **The authorization response** FastTab.
+Credit card authorizations that are expired in the system return the payment tracking back to **Pending Authorization**, with the order being placed on hold with the **Do Not Process** header attribute set to **True** in the sales order header. In Commerce headquarters, users can monitor expired authorizations on the **Retail and Commerce \> Channels \> Call centers \> Call center credit cards \> Authorization management** form. To see a list of pending authorizations, on the **Status** drop-down list, select **Pending Authorization**. The record's **Status** shows as **Open order**, and the **Expired** field shows **Yes** on the **The authorization response** FastTab.
 
-When a record is selected, details for the customer account, sales order, and payment status are shown. Users can also view the credit card details and authorization response details for additional context on the declined authorization. To collect a new payment, select the sales order number to be directed to the sales order, and then process a new payment line against the order's balance. If previously authorized against, the balance reflects the amount of any authorized but expired (or any open and unapplied) payment lines.
+When a record is selected, details for the customer account, sales order, and payment status are shown. Users can also view the credit card and authorization response details for additional context on a declined authorization. To collect a new payment, select the sales order number to be directed to the sales order, and then process a new payment line against the order's balance. If previously authorized against, the balance reflects the amount of any authorized but expired (or any open and unapplied) payment lines.
 
 ## Payment flow updates using nonrecurring payment tokens
 
@@ -77,11 +77,16 @@ Once enabled, the usage of nonrecurring tokens has specific payment flow pattern
 
 ### Saved card on file
 
-A payment card token can continue to be saved against a customer record for scenarios that require a card on file and have an agreement with the customer to save the card for future usage. 
+A payment card token can continue to be saved against a customer record for scenarios that require a card on file and where there is an agreement with the customer to save the card for future usage. 
 
 To view, add, or delete credit cards stored against a customer, in headquarters go to **Accounts receivable \> Customers** and select a customer record. On the **Customer** tab, in the **Set up** group, select **Credit cards** to open the **Customer credit cards** form where you can view, add, or delete credit cards stored against the customer.
 
-To add a new card, ensure that a default payment connector is configured on the **Accounts receivable \> Payments setup \> Payments services** form. (For information about adding a new card for the Adyen connector, see [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md)) For **Customer credit cards**, select **New**. On the **New customer credit card** form, enter the customer's card details and billing address information, and then select **OK** to save the card information. The card is now available in the customer's credit cards list. 
+To add a new card, ensure that a default payment connector is configured on the **Accounts receivable \> Payments setup \> Payments services** form.
+
+> [!NOTE]
+> For information about adding a new card for the Adyen connector, see [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md)).
+
+For **Customer credit cards**, select **New**. On the **New customer credit card** form, enter the customer's card details and billing address information, and then select **OK** to save the card information. The card is now available in the customer's credit cards list. 
 
 > [!WARNING]
 > Cards must only be saved with the customer's agreement per your company's compliance practices and customer terms and agreements.
