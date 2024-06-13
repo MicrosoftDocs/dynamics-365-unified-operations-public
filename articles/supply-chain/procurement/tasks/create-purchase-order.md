@@ -1,15 +1,15 @@
 ---
 title: Create a purchase order
-description: This article shows you how to create a purchase order manually. 
+description: Learn how to create a purchase order manually, including a step-by-step process for creating purchase order headers using the USMF demo data company. 
 author: Henrikan
 ms.author: henrikan
-ms.reviewer: kamaybac
-ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventDimParmFixed, InventItemIdLookupPurchase, InventProductDimensionLookup, PurchTotals   
 ms.topic: how-to
 ms.date: 05/02/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventDimParmFixed, InventItemIdLookupPurchase, InventProductDimensionLookup, PurchTotals
 ---
 
 # Create a purchase order

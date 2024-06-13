@@ -1,24 +1,16 @@
 ---
-# required metadata
-
 title: Vendor request configurations
-description: This article describes the fields that are required to be populated in a new vendor request.
+description: Learn about the fields that are required to be populated in a new vendor request, including a process for setting up a vendor request configuration.
 author: Henrikan
-ms.date: 06/20/2017
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: VendProspectiveVendorRegistrationConfig 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: henrikan
-ms.search.validFrom: 2017-12-31 
+ms.topic: article
+ms.date: 06/20/2017
+ms.custom:
+ms.reviewer: kamaybac 
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2017-12-31
+ms.search.form: VendProspectiveVendorRegistrationConfig 
 ms.dyn365.ops.version: 7.3
 ---
 
