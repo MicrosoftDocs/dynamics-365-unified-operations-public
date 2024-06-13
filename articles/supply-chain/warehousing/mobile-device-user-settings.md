@@ -6,8 +6,6 @@ description: This article explains how to manage mobile device user settings for
 author: Mirzaab
 ms.date: 02/09/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -99,5 +97,5 @@ Follow these steps to create and manage your mobile device brands and models.
 
 ## Additional resources
 
-- [Install and connect the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
+- [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
 - [Assign step icons and titles for the Warehouse Management mobile app](step-icons-titles.md)

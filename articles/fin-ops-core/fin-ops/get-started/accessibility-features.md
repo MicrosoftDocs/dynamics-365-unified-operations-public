@@ -1,15 +1,13 @@
 ---
 title: Accessibility features
-description: This article describes the functionality that is designed to help users who have various disabilities.
+description: Learn about the functionality that is designed to help users who have various disabilities, including overviews on Windows Narrator and shortcuts.
 author: jasongre
-ms.date: 12/02/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 12/02/2019
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ---
@@ -17,9 +15,6 @@ ms.dyn365.ops.version: 7.3
 # Accessibility features
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 This article describes the functionality that is designed to help users who have various disabilities use this app. For example, there are features for people who use sight-assistive technologies such as Microsoft Windows Narrator.
 
@@ -74,7 +69,7 @@ For more information, see [Action search](action-search.md).
 
 In everyday system use, not every field is required in order to perform typical tasks. Therefore, by default, the tab sequence is "optimized." Tab stops are set only on those fields that are essential for typical scenarios.
 
-However, you might find that some fields that you often use to perform tasks aren't included in the default tab sequence. In this case, if you use Windows Narrator, you can use Windows Narrator's keyboard actions to access those fields and inspect their content. Alternatively, you can turn on the **Enhanced tab sequence** option on the **Options** page. This option makes all editable and read-only fields part of the tab sequence. You can then use page personalization to create a custom tab sequence and omit fields that don't have to be part of the tab sequence. For more information about personalization, see [Personalize the user experience](personalize-user-experience.md).
+However, you might find that some fields that you often use to perform tasks aren't included in the default tab sequence. In this case, if you use Windows Narrator, you can use Windows Narrator's keyboard actions to access those fields and inspect their content. Alternatively, you can turn on the **Enhanced tab sequence** option on the **Options** page. This option makes all editable and read-only fields part of the tab sequence. You can then use page personalization to create a custom tab sequence and omit fields that don't have to be part of the tab sequence. For more information about personalization, see [Personalize the user experience](../../dev-itpro/get-started/personalize-user-experience.md).
 
 !["Enhanced tab sequence" option](media/8c0f12bbb3f26032997ef0ba95d89b6a.png "'Enhanced tab sequence' option")
 

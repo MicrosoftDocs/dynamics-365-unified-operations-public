@@ -1,13 +1,13 @@
 ---
 title: Integrated vendor master
-description: This article describes vendor data integration between finance and operations apps and Dataverse.
-author: RamaKrishnamoorthy 
-ms.date: 07/15/2019
-ms.topic: article
-audience: Application User, IT Pro
-ms.reviewer: tfehr
-ms.search.region: global
+description: Learn about vendor data fow and vendor integration between finance and operations apps and Dataverse, including a table that outlines various templates.
+author: RamaKrishnamoorthy
 ms.author: ramasri
+ms.topic: article
+ms.date: 07/15/2019
+ms.reviewer: tfehr
+audience: IT Pro
+ms.search.region: global
 ms.search.validFrom: 2019-07-15
 ---
 
@@ -27,7 +27,7 @@ If you don't want to store vendor data in the **Account/Contact** table in Datav
 
 ![Vendor data flow.](media/dual-write-vendor-data-flow.png)
 
-If you want to continue to store vendor data in the **Account/Contact** table, you can use the extended vendor design. To use the extended vendor design, you must configure the vendor workflows in the dual-write solution package. For more information, see [Switch between vendor designs](vendor-switch.md).
+If you want to continue to store vendor data in the **Account/Contact** table, you can use the extended vendor design. To use the extended vendor design, you must configure the vendor workflows in the dual-write solution package. For more information, see [Switch between vendor designs](../../../fin-ops/data-entities/vendor-switch.md).
 
 ![Extended vendor data flow.](media/dual-write-vendor-detail.jpg)
 

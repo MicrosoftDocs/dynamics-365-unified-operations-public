@@ -6,8 +6,6 @@ description: This article presents a scenario that shows how to register items u
 author: Mirzaab
 ms.date: 03/24/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

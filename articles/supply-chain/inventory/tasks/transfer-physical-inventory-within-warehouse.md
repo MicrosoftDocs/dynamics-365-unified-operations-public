@@ -1,28 +1,20 @@
 --- 
-# required metadata 
- 
 title: Transfer physical inventory within the warehouse
-description: This procedure walks you through the process of creating and posting an inventory transfer journal in order to register movement of an item from one location in a warehouse to another. 
-author: yufeihuang
+description: Learn about the process of creating and posting an inventory transfer journal in order to register movement of an item from one location in a warehouse to another.
+author: yufei-huang
+ms.author: yufeihuang
+ms.topic: how-to
 ms.date: 08/08/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: InventJournalTransfer, InventJournalCreate, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans   
-audience: Application User 
-# ms.devlang:  
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: InventJournalTransfer, InventJournalCreate, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans   
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Transfer physical inventory within the warehouse
 
 [!include [banner](../../includes/banner.md)]

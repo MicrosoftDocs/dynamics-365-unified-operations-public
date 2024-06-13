@@ -1,15 +1,15 @@
 ---
 title: Make-to-order supply automation
-description: This article describes how to set up and use the various enhancements that are added by the Make-to-order supply automation feature.
+description: Learn how to set up and use the various enhancements that are added by the Make-to-order supply automation feature, including step-by-step processes.
 author: t-benebo
-ms.date: 07/27/2022
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
+ms.topic: article
+ms.date: 07/27/2022
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-07-27
+ms.search.form:
 ms.dyn365.ops.version: 10.0.29
 ---
 
@@ -28,9 +28,9 @@ The *Make-to-order supply automation* feature adds several enhancements to Micro
 
 This article describes how to set up and use each enhancement.
 
-## Turn on the Make-to-order supply automation feature
+## Turn the Make-to-order supply automation feature on or off
 
-Before you can use the functionality described in this article, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. Admins can turn this functionality on or off by searching for the *Make-to-order supply automation* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *Make-to-order supply automation* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Set the number of days to show on Capacity load page
 

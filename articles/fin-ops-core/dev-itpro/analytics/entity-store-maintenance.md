@@ -1,15 +1,13 @@
 ---
 title: Resolve issues after entity store maintenance
-description: This article describes procedures that must be completed after entity store maintenance.
+description: Learn about procedures that must be completed after entity store maintenance, including if you are using application analytical workspaces.
 author: MilindaV2
-ms.date: 04/09/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: Global for most topics. Set Country/Region name for localizations
 ms.author: milindav
+ms.topic: article
+ms.date: 04/09/2021
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global for most topics. Set Country/Region name for localizations
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Platform update 15
 ---

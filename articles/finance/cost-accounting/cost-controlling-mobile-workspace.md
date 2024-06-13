@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Cost controlling mobile workspace
-description: This article provides information about the Cost controlling mobile workspace. This workspace lets cost center managers view information about cost center performance anytime and anywhere. 
-author: AndersGirke
-ms.date: 05/24/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CAMMobileCostObjectOverviewDetailsCurrentPeriod, CAMMobileCostObjectList, CAMMobileCostObjectOverviewDetailsPreviousPeriod, CAMMobileCostObjectOverview, CAMMobileCostObjectOverviewDetailsYearToDate, CAMMobileCostControlWorkspaceConfiguration
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 267114
-ms.assetid: 612f2988-b2b9-420d-9825-40b99dc0e204
-ms.search.region: global
-# ms.search.industry: 
+description: Learn about the Cost controlling mobile workspace, which lets cost center managers view information about cost center performance anytime and anywhere.
+author: AndersEvenGirke
 ms.author: aevengir
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: global
 ms.dyn365.ops.version: Version 1611
+ms.search.form: CAMMobileCostObjectOverviewDetailsCurrentPeriod, CAMMobileCostObjectList, CAMMobileCostObjectOverviewDetailsPreviousPeriod, CAMMobileCostObjectOverview, CAMMobileCostObjectOverviewDetailsYearToDate, CAMMobileCostControlWorkspaceConfiguration
 ms.search.validFrom: 2016-11-30
-
+ms.assetid: 612f2988-b2b9-420d-9825-40b99dc0e204
 ---
 
 # Cost controlling mobile workspace

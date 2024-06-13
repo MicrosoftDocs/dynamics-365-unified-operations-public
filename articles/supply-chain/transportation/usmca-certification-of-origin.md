@@ -6,8 +6,6 @@ description: This feature lets you print the certification of origin documents r
 author: Weijiesa
 ms.date: 08/09/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

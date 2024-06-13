@@ -1,15 +1,15 @@
 ---
 title: Calculate sales order delivery dates using CTP
-description: Capable-to-promise (CTP) functionality lets you give customers realistic dates for when you can promise specific goods. This article describes how to set up and use CTP for each planning engine (Planning Optimization and the deprecated master planning engine).
+description: Capable-to-promise (CTP) functionality lets you give customers realistic dates for when you can promise specific goods.
 author: t-benebo
-ms.date: 07/20/2022
-ms.topic: article
-ms.search.form: SalesAvailableDlvDates, SalesTable, CustParameters, InventItemOrderSetup
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
+ms.topic: article
+ms.date: 07/20/2022
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-07-20
+ms.search.form: SalesAvailableDlvDates, SalesTable, CustParameters, InventItemOrderSetup
 ms.dyn365.ops.version: 10.0.28
 ---
 
@@ -26,10 +26,7 @@ CTP works slightly differently, depending on the master planning engine that you
 
 ## Turn on CTP for Planning Optimization
 
-CTP for the deprecated master planning engine is always available. However, if you want to use CTP for Planning Optimization, it must be turned for your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Master planning*
-- **Feature name:** *CTP for Planning Optimization*
+CTP for the deprecated master planning engine is always available. However, if you want to use CTP for Planning Optimization, it must be turned for your system. As of Supply Chain Management version 10.0.36, it's turned on by default. Admins can turn this functionality on or off by searching for the *CTP for Planning Optimization* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## How CTP compares to ATP
 

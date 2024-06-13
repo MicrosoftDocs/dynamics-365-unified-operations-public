@@ -1,27 +1,15 @@
 ---
-# required metadata
-
 title: How workers use the production floor execution interface
-description: This article describes how to use the production floor execution interface from a worker's point of view.
+description: Learn how to use the production floor execution interface from a worker's point of view with an outline on signing into the production floor execution interface.
 author: johanhoffmann
-ms.date: 01/24/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: JmgProductionFloorExecution
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho
-ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.24
+ms.topic: how-to
+ms.date: 04/19/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: JmgProductionFloorExecution
 ---
 
 # How workers use the production floor execution interface
@@ -159,20 +147,44 @@ When a worker completes or partially completes a job, they can report scrap by s
 
 ![Report scrap dialog box.](media/pfei-report-scrap-dialog.png "Report scrap dialog box")
 
-## Adjust material consumption and make material reservations
+## <a name="tracked-components"></a>Register batch/serial numbers for finished products and their components (preview)
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+Workers can use the production floor execution interface to register batch/serial numbers for tracked components and the finished products that they're producing. For information about how to add this functionality to the interface, see [Configure the production floor execution interface](production-floor-execution-configure.md#tracked-components).
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
+
+Workers follow these steps to register tracked components.
+
+1. When you start a production job, select **Tracked component** to start to register batch/serial numbers for the product and its components.
+
+    :::image type="content" source="media/tracked-components-pfe.png" alt-text="Screenshot of the page for registering tracked components in the production floor execution interface." lightbox="media/tracked-components-pfe.png":::
+
+1. When the interface prompts you, scan the batch/serial number of the product that's being manufactured.
+1. Select a component to add to the product, and then scan the batch/serial number of that component.
+1. Continue to add and scan components until all of them are registered.
+1. Reviews the on-screen information, and make any required adjustments to the registrations by using the buttons at the bottom of the page.
+1. Select **Next**.
+1. Continue to process items on the production order until all products are registered.
+
+## Adjust material consumption and make material reservations (preview)
+
+[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
 <!-- KFM: preview until further notice -->
 
 Workers can adjust material consumption for each production job. This functionality is used in scenarios where the actual quantity of materials that was consumed by a production job was more or less than the planned quantity. Therefore, it must be adjusted to keep the inventory levels current.
 
-Workers can also make reservations on the batch and serial numbers of materials. This functionality is used in scenarios where a worker must manually specify which material batch or serial numbers were consumed, to meet material traceability requirements.
+Workers can also make reservations on the batch/serial numbers of materials. This functionality is used in scenarios where a worker must manually specify which material batch or serial numbers were consumed, to meet material traceability requirements.
 
 Workers can specify the quantity to adjust by selecting **Adjust material**. This button is available in the following locations:
 
 - In the **Report scrap** dialog box
 - In the **Report progress** dialog box
 - On the toolbar on the right
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ### Adjust material consumption from the Report scrap and Report progress dialog boxes
 
@@ -207,18 +219,20 @@ The following actions can be performed:
 
 The **Adjust material** button can be configured so that it appears on the primary or secondary toolbar. (For more information, see [Design the production floor execution interface](production-floor-execution-tabs.md).) A worker can select **Adjust material** for a production job that is in progress. In this case, the **Adjust material** dialog box appears, where the worker can make the desired adjustments. When the dialog box is opened, a production picking list that contains lines for the adjusted quantities is created for the production order. If the worker selects **Post now**, the adjustment is confirmed, and the picking list is posted. If the worker selects **Cancel**, the picking list is deleted, and no adjustment is made.
 
-### Adjust material consumption for catch weight items
+### Adjust material consumption for catch weight items (preview)
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
 <!-- KFM: preview until further notice -->
 
 Workers can adjust material consumption for catch weight items. This functionality is used in scenarios where the actual quantity of a catch weight material that was consumed by a production job was more or less than the planned quantity. Therefore, it must be adjusted to keep the inventory levels current. When a worker adjusts consumption of a catch weight item, they can adjust both the catch weight quantity and the inventory quantity. For example, if a production job is planned to consume five boxes that have an estimated weight of 2 kilograms per box, the worker can adjust both the number of boxes to consume and the weight of the boxes. The system will validate that the specified weight of the boxes is within the defined minimum and maximum threshold that defined on the released product.
+
+[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ### Reserve materials
 
 In the **Adjust material** dialog box, a worker can make and adjust material reservations by selecting **Reserve material**. The **Reserve material** dialog box that appears shows the physically available inventory for the item for each storage and tracking dimension.
 
-If the material is enabled for warehouse management processes (WMS), the list shows only the physically available inventory for the production input location for the material. The production input location is defined on the resource where the production job is planned. If the item number is batch or serial number controlled, the full list of physically available batch and serial numbers is shown. To specify a quantity to reserve, the worker can select **Reserve material**. To remove an existing reservation, the worker can select **Remove reservation**.
+If the material is enabled for warehouse management processes (WMS), the list shows only the physically available inventory for the production input location for the material. The production input location is defined on the resource where the production job is planned. If the item number is batch or serial number controlled, the full list of physically available batch/serial numbers is shown. To specify a quantity to reserve, the worker can select **Reserve material**. To remove an existing reservation, the worker can select **Remove reservation**.
 
 For more information about how to set up the production input location, see the following blog post: [Setting up the production input location](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
 

@@ -1,16 +1,15 @@
 ---
 title: Deploy assets by using Azure Pipelines
-description: This article explains how you can deploy assets from the Asset library in Microsoft Dynamics Lifecycle Services (LCS) by using pipelines in Azure DevOps.
-author: gianugo
-ms.date: 04/29/2020
+description: Learn about how you can deploy assets from the Asset library in Microsoft Dynamics Lifecycle Services (LCS) by using pipelines in Azure DevOps.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
+ms.date: 01/17/2024
+ms.reviewer: twheeloc
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 
 ---
 
 # Deploy assets by using Azure Pipelines
@@ -71,6 +70,9 @@ The following table describes the options that are available for this task.
 | e-Commerce Environment Name | No | Enter the name of the e-Commerce environment, you can find the environment name in the environment's details page, under **Environment FEATURES** \> **Commerce** \> **Manage** \> **Commerce deployment & setup** \> **e-Commerce.** If the package type is selected as **e-Commerce Package** then value for the field **e-Commerce Environment Name** is mandatory. |
 | Name for the update | Yes | Enter the name that is shown for the update in the environment history in Dynamics Lifecycle Services. |
 | Wait for Completion | Cleared (No) | Use this check box to instruct the task to wait until the deployment of the asset has either succeeded or failed. If it's cleared (**No**), the task will only start the deployment. If the task is instructed to wait, a pipeline time-out might occur during long-running deployments. For more information about time-out options, see [Timeouts](/azure/devops/pipelines/process/phases#timeouts). |
+
+> [!NOTE]
+> The LCS File Asset ID can be obtained dynamically by using the output variable from the [Dynamics Lifecycle Services Asset Upload](pipeline-asset-upload.md) task. To get LCS File Asset ID, use FileAssetId. For example: $(<TASK NAME>.FileAssetId). For more information, see [Use output variables from tasks](/azure/devops/pipelines/process/variables#use-output-variables-from-tasks).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

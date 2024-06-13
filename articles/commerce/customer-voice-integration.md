@@ -6,7 +6,7 @@ description: This article describes how to integrate Microsoft Dynamics 365 Cust
 author: samjarawan
 ms.date: 05/17/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: samjar
@@ -55,7 +55,7 @@ For information about fragments, see [Work with fragments](work-with-fragments.m
 
 To embed the external script URL into a fragment, follow these steps.
 
-1. In site builder, create a fragment that is based on the [External script module](script-module.md).
+1. In site builder, create a fragment that is based on the [External script module](dev-itpro/script-module.md).
 1. In the new fragment, select the **Default external script** slot.
 1. In the **Default external script** properties pane, in the **Script source** field, enter the external script URL, as shown in the following example illustration.
 
@@ -76,7 +76,7 @@ Next, on all site pages that should have a Customer Voice survey, you must embed
 
 To embed the external style sheet code into a fragment, follow these steps.
 
-1. In site builder, create a fragment that is based on the [Metatags module](metatags-module.md).
+1. In site builder, create a fragment that is based on the [Metatags module](dev-itpro/metatags-module.md).
 1. In the fragment, select the **Default metatags** slot.
 1. In the **Default metatags** properties pane, in the **Meta tags** field, enter the style sheet code, as shown in the following example illustration.
 
@@ -111,7 +111,7 @@ setTimeout(renderSurveyButton, 4000);
 
 To embed the inline script code into a fragment, follow these steps.
 
-1. In site builder, create a fragment that is based on the [Inline script module](script-module.md).
+1. In site builder, create a fragment that is based on the [Inline script module](dev-itpro/script-module.md).
 1. In the fragment, select the **Default inline script** slot.
 1. In the **Default inline script** properties pane, in the **Inline script** field, enter the inline script code, as shown in the following example illustration.
 
@@ -143,17 +143,17 @@ To configure CSP in site builder to fix the errors, follow these steps.
 1. Add `https://customervoice.microsoft.com/` to the **frame-src** directive.
 1. Add `https://mfpembedcdnmsit.azureedge.net` and **.azureedge.net** to the **img-src** directive.
 
-For more information, see [Content security policy](manage-csp.md).
+For more information, see [Content security policy](dev-itpro/manage-csp.md).
 
 ## Additional resources
 
-[External script module](script-module.md)
+[External script module](dev-itpro/script-module.md)
 
-[Metatags module](metatags-module.md)
+[Metatags module](dev-itpro/metatags-module.md)
 
-[Inline script module](script-module.md)
+[Inline script module](dev-itpro/script-module.md)
 
-[Content security policy](manage-csp.md)
+[Content security policy](dev-itpro/manage-csp.md)
 
 [Work with fragments](work-with-fragments.md)
 

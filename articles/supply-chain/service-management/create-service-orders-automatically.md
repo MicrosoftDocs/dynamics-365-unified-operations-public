@@ -3,11 +3,9 @@
 
 title: Create service orders automatically   
 description: You can create service orders for one service agreement or for several service agreements.
-author: sorenva
+author: ChristianRytt
 ms.date: 01/19/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -21,7 +19,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sorenand
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

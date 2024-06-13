@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Post detailed payments for vendor and customers
-description: This article describes the feature that posts detailed vendor and customer payments, but summarizes amounts in bank accounts.
+description: Learn about the feature that posts detailed vendor and customer payments, including a summary on amounts in bank accounts and the setup process.
 author: kweekley
-ms.date: 01/12/2023
-ms.topic: article
-ems.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: DimensionFocus, LedgerTrialBalanceListPage
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 01/12/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-03-23
+ms.search.form: DimensionFocus, LedgerTrialBalanceListPage
 ms.dyn365.ops.version: 10.0.16
-
 ---
 
 # Post detailed vendor and customer payments

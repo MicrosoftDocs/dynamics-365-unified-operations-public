@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Business events developer documentation
-description: This article walks you through the development process and best practices for implementing business events.
+description: Learn about the development process and best practices for implementing business events through understanding intent, fidelity, and adding custom endpoint types.
 author: jaredha
-ms.date: 06/14/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global for most topics. Set Country/Region name for localizations
-# ms.search.industry: 
 ms.author: jaredha
+ms.topic: article
+ms.date: 06/14/2022
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global for most topics. Set Country/Region name for localizations
 ms.search.validFrom: Platform update 24
+# ms.search.form:  [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: 2019-02-28
 ---
 

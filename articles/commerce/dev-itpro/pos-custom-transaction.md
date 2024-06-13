@@ -4,8 +4,6 @@ description: This article explains how to add new custom controls to Microsoft D
 author: josaw1
 ms.date: 02/01/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
@@ -32,7 +30,7 @@ You can add more information to a transaction page by using custom controls. You
 3. Select the **F3MGR** screen layout ID, and then, on the Action Pane, select **Designer**.
 4. Select **1440x960 – Full layout** as the layout size, and then select **Layout designer**.
 5. If you're prompted to install the designer tool, select **Open**, and follow the installation instructions.
-6. When you're prompted for your Microsoft Azure Active Directory (Azure AD) credentials, enter the information to start the designer.
+6. When you're prompted for your Microsoft Microsoft Entra credentials, enter the information to start the designer.
 7. In the designer, drag the custom control from the left pane to the page, and then adjust, resize, or reposition the custom control as you require.
 8. On the page, right-click the custom control, and then select **Customize**.
 9. In the dialog box, set these properties:

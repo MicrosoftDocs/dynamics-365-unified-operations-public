@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Known issues with self-service deployment
-description: This article lists known issues that you might experience when using self-service deployment.
+description: Learn about known issues that you might experience when using self-service deployment for Lifecycle Services (LCS).
 author: rashmansur
-ms.date: 03/31/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global 
-# ms.search.industry: 
 ms.author: rashmim
+ms.topic: article
+ms.date: 03/31/2021
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: johnmichalak
+audience: IT Pro 
+ms.search.region: Global 
 ms.search.validFrom: 2018-12-31
+# ms.search.form:  [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: 8.1.1
-
 ---
 
 # Known issues with self-service deployment
@@ -52,7 +42,7 @@ Know issues are bugs that will be addressed in upcoming releases. Every 2 weeks 
 The following feature will not be implemented in self-service deployment.
 
 - **Custom fonts** - Custom fonts are not supported. For more information, see [Document Reporting Service in Dynamics 365 applications](../analytics/reporting-experience-iias-environments.md).
-- **Customizations related to user interface (UI) components on self service** - Customizations that do not use the standard Financial Reporting or SQL Server Reporting Services (SSRS) in finance and operations apps often take a dependency on UI components of the operating system where the AOS runs. Example dependencies include Windows fonts, web browsers such as Internet Explorer, or custom PDF rendering. We do not ensure the host operating system will include any support for font infrastructure, web browsers, or any general UI components. The host operating system will change when migrating to self-service infrastructure. If you have such dependencies and have additional questions, please contact Microsoft Support.
+- **Customizations related to user interface (UI) components on self service** - Customizations that do not use the standard Financial Reporting or SQL Server Reporting Services (SSRS) in finance and operations apps often take a dependency on UI components of the operating system where the AOS runs. Example dependencies include Windows fonts, web browsers such as Microsoft Edge, or custom PDF rendering. We do not ensure the host operating system will include any support for font infrastructure, web browsers, or any general UI components. The host operating system will change when migrating to self-service infrastructure. If you have such dependencies and have additional questions, please contact Microsoft Support.
 
 ### Features no longer supported
 The following feature is no longer supported with self-service deployment.
@@ -68,7 +58,7 @@ Customizations relying on FTP are not supported with self-service deployment. Yo
 
   - Use the “Local Filesystem” connector, as described in [Outbound IP addresses](/azure/logic-apps/logic-apps-limits-and-config#outbound), in combination with the on-premises data gateway. For more information, see [Install on-premises data gateway for Azure Logic Apps](/azure/logic-apps/logic-apps-gateway-install). This solution completely removes the need for the IP allowlist, which is deprecated in self-service deployment, while keeping a very high-level of security.
 
-  - Self-service capabilities:  If FTP scenarios are failing after migrating to self-service capabilities, review the configuration at the FTP server. The most common scenario is the need to update the allowed [IP list](deploymentFAQ.md#for-my-microsoft-managed-environments-i-have-external-components-that-have-dependencies-on-an-explicit-outbound-ip-safe-list-how-can-i-ensure-my-service-is-not-impacted-after-the-move-to-self-service-deployment) with the ranges for self-service environments.
+  - Self-service capabilities:  If FTP scenarios are failing after migrating to self-service capabilities, review the configuration at the FTP server. The most common scenario is the need to update the allowed [IP list](deploymentFAQ.md) with the ranges for self-service environments.
 
 > [!NOTE]
 > For more information about deprecated features, see [Removed or deprecated platform features](../get-started/removed-deprecated-features-platform-updates.md) and [Removed or deprecated features from previous releases](../migration-upgrade/deprecated-features.md).

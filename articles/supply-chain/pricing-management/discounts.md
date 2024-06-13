@@ -1,18 +1,18 @@
 ---
-title: Discount types
-description: This article introduces the different types of discounts that you can set up by using Pricing management.
+title: Discount types (preview)
+description: Learn about the different types of discounts that you can set up by using Pricing management with outlines on simple and quantity discounts.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: 
-ms.topic: Overview
+ms.topic: overview
 ms.date: 04/03/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: 
 ---
 
-# Discount types
+# Discount types (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

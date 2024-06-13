@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Derived financial hierarchies in the public sector
-description: This article describes the derived financial hierarchies functionality that is available for the public sector. 
+description: Learn about the derived financial hierarchies functionality that is available for the public sector, including an example.
 author: v-kiarnd
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EcoResCategory, EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyRole, LedgerDerivedFinHierarchies, LedgerDerivedFinHierarchyFilterResults, LedgerDerivedFinHierarchyLegalEntities
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: a1b30d2a-a370-402a-b3bd-d562adca55f0
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
+ms.search.form: EcoResCategory, EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyRole, LedgerDerivedFinHierarchies, LedgerDerivedFinHierarchyFilterResults, LedgerDerivedFinHierarchyLegalEntities
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: a1b30d2a-a370-402a-b3bd-d562adca55f0
 ---
 
 # Derived financial hierarchies in the public sector

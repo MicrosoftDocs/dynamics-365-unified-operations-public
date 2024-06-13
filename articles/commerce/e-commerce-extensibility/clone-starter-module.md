@@ -4,25 +4,13 @@
 title: Clone a module library module
 description: This article describes how to clone a module library module in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 11/22/2021
+ms.date: 05/28/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgriffin
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: samjar
+ms.author: niholman
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 
 ---
 # Clone a module library module

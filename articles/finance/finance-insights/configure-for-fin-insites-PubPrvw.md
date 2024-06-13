@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Configuration for Finance insights - version 10.0.20 and later
-description: This article explains how to configure your system to use the capabilities that are available in Finance insights in version 10.0.20 and later.
-author: ShivamPandey-msft
-ms.date: 06/16/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-ROBOTS: noindex,nofollow
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn how to configure your system to use the capabilities that are available in Finance insights in version 10.0.20 and later.
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: article
+ms.date: 06/16/2021
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-06-03
+ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.20
-
+ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ---
+
 # Configuration for Finance insights - version 10.0.20 and later
 
 [!include [banner](../includes/banner.md)]
@@ -41,7 +30,7 @@ Finance insights combines functionality from Microsoft Dynamics 365 Finance with
 Follow these steps to deploy the environments.
 
 1. In Microsoft Dynamics Lifecycle Services (LCS), create or update a Finance environment. The environment requires app version 10.0.20 or later of finance and operations apps.
-2. The environment must be a high-availability (HA) environment in Sandbox. (This type of environment is also known as a Tier-2 environment.) For more information, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+2. The environment must be a high-availability (HA) environment in Sandbox. (This type of environment is also known as a Tier-2 environment.) For more information, see [Environment planning](/dynamics365/fin-ops-core/dev-itpro/organization-administration/environment-planning). 
 3. If you are configuring Finance insights in a Sandbox environment, you might need to copy production data to that environment for predictions to work. The prediction model uses multiple years of data to build predictions. The Contoso demo data doesn’t contain enough historical data to train the prediction model adequately. 
 
 ## Configure Dataverse
@@ -70,7 +59,7 @@ A Windows PowerShell script has been provided so that you can easily set up the 
 > [!NOTE]
 > Use the following procedure to run the Windows PowerShell script. The setup might not work if you use the **Try it** option in Azure CLI or if you run the script on your computer.
 
-Follow these steps to use the Windows PowerShell script to configure Azure. You must have rights to create an Azure resource group, Azure resources, and an Azure AD application. For information about the required permissions, see [Check Azure AD permissions](/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).
+Follow these steps to use the Windows PowerShell script to configure Azure. You must have rights to create an Azure resource group, Azure resources, and a Microsoft Entra application. For information about the required permissions, see [Check Microsoft Entra permissions](/azure/active-directory/develop/howto-create-service-principal-portal#permissions-required-for-registering-an-app).
 
 1. In the [Azure portal](https://portal.azure.com), go to your target Azure subscription.
 2. Select **Cloud Shell** to the right of the **Search** field.
@@ -86,9 +75,9 @@ Follow these steps to use the Windows PowerShell script to configure Azure. You 
 
 ### Manual setup
 
-#### Add applications to the Azure AD tenant
+#### Add applications to the Microsoft Entra tenant
 
-1. In the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**.
+1. In the [Azure portal](https://portal.azure.com), go to **Microsoft Entra ID**.
 2. Select **Manage \> Enterprise applications**.
 3. Search for the following applications by app ID.
 
@@ -108,7 +97,7 @@ If you can't find any of the preceding applications, try the following steps.
 
 4. If a NuGet provider is required to continue, select **Y** to install it.
 5. If you receive an "Untrusted repository" message, select **Y** to continue.
-6. For each application that must be added, run the following commands to add the application to Azure AD. When you're prompted, sign in as the Azure AD administrator.
+6. For each application that must be added, run the following commands to add the application to Microsoft Entra ID. When you're prompted, sign in as the Microsoft Entra administrator.
 
     `Connect-AzureAD`
 
@@ -117,7 +106,7 @@ If you can't find any of the preceding applications, try the following steps.
 #### Create Azure resources
 
 > [!NOTE]
-> Make sure that you create the following resources in the same Azure AD instance that the Dataverse environment is in. You can't use resources from a different Azure AD instance.
+> Make sure that you create the following resources in the same Microsoft Entra instance that the Dataverse environment is in. You can't use resources from a different Microsoft Entra instance.
 
 1. Create a storage account:
 
@@ -140,9 +129,9 @@ If you can't find any of the preceding applications, try the following steps.
     2. In the **Create key vault** dialog box, in the **Location** field, select the data center where your environment is located.
     3. After key vault is created, go to **Key Vault Overview**, and copy and save the DNS name. You will have to provide this value later, when you set up the Data Lake add-in.
 
-3. Create and register an Azure AD application:
+3. Create and register a Microsoft Entra application:
 
-    1. In the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and then select **App registrations**.
+    1. In the [Azure portal](https://portal.azure.com), go to **Microsoft Entra**, and then select **App registrations**.
     2. Select **New application registration**, and set the following fields:
 
         - **Name** – Enter the name of the app.
@@ -206,7 +195,7 @@ If you can't find any of the preceding applications, try the following steps.
     4. For each application in the following table, follow these steps:
 
         1. Select the role from the table.
-        2. Leave the **Assign access to** field set to **Azure AD user, group, or service principal**.
+        2. Leave the **Assign access to** field set to **Microsoft Entra user, group, or service principal**.
         3. In the **Select** field, enter the application from the table.
         4. Select **Save**.
 
@@ -302,7 +291,7 @@ function New-FinanceDataLakeAzureResources {
         if (-not $keyVaultPrincipal)
         {
             New-AzureADServicePrincipal -AppId $KeyVaultServicePrincipalAppId | Format-Table -AutoSize
-            Write-Output "Added Key Vault principal to AAD"
+            Write-Output "Added Key Vault principal to Microsoft Entra ID"
             $keyVaultPrincipal = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $KeyVaultServicePrincipalAppId + "'")
         }
         $keyVaultAccess = New-Object -TypeName "Microsoft.Open.AzureAD.Model.RequiredResourceAccess"
@@ -313,7 +302,7 @@ function New-FinanceDataLakeAzureResources {
         if (-not $graphPrincipal)
         {
             New-AzureADServicePrincipal -AppId $GraphServicePrincipalAppId | Format-Table -AutoSize
-            Write-Output "Added Graph principal to AAD"
+            Write-Output "Added Graph principal to Microsoft Entra ID"
             $graphPrincipal = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $GraphServicePrincipalAppId + "'")
         }
         $userRead = $graphPrincipal.Oauth2Permissions | Where-Object { $_.Type -eq "User" -and $_.Value -eq "User.Read" }
@@ -422,10 +411,10 @@ function Create-ADServicePrincipal {
     if (-not $service) {
         New-AzureADServicePrincipal -AppId $AppId | Out-Null
         $service = Get-AzureADServicePrincipal -Filter ("AppId eq '" + $AppId + "'")
-        Write-Host ("Added AAD Enterprise Application {0} with Application ID {1}" -f $service.DisplayName,$AppId)
+        Write-Host ("Added Microsoft Entra Enterprise Application {0} with Application ID {1}" -f $service.DisplayName,$AppId)
     }
     else {
-        Write-Host ("Found AAD Enterprise Application {0} with Application ID {1}" -f $service.DisplayName,$AppId)
+        Write-Host ("Found Microsoft Entra Enterprise Application {0} with Application ID {1}" -f $service.DisplayName,$AppId)
     }
 
     return $service.ObjectId
@@ -728,7 +717,7 @@ Follow these steps to use LCS to add the Export to Data Lake add-in to the envir
 
     | Value                                                              | Description |
     |--------------------------------------------------------------------|-------------|
-    | Tenant ID of the Azure Subscription where the Key Vault is located | The tenant ID where the storage account, apps, and key vaults are located. To obtain this value, open the [Azure portal](https://portal.azure.com), go to **Azure Active Directory**, and copy the **Tenant ID** value. |
+    | Tenant ID of the Azure Subscription where the Key Vault is located | The tenant ID where the storage account, apps, and key vaults are located. To obtain this value, open the [Azure portal](https://portal.azure.com), go to **Microsoft Entra**, and copy the **Tenant ID** value. |
     | Provide the DNS name of your Key Vault                             | The DNS name of the key vault, such as `https://customkeyvault.vault.azure.net/`. |
     | Provide the secret that contains the name of the storage account   | **storage-account-name** |
     | Secret Name for App ID to be used for accessing Data Lake          | **app-id** |
@@ -757,4 +746,3 @@ The add-in might take several minutes to install.
 If you're interested in providing feedback, or if you require support, send an email to [Finance insights](mailto:fiap@microsoft.com).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

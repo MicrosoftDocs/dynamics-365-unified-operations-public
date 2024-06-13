@@ -6,9 +6,6 @@ description: You can enable employees to buy and sell leave in Dynamics 365 Huma
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LeaveBuySellPolicy, LeavePlanFormPart, LeaveAbsenceWorkspace
@@ -17,7 +14,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -28,10 +24,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Manage buy and sell leave policies
-
->[!Important]
->The functionality noted in this article is currently available for customers on the stand-alone Dynamics 365 Human Resources. Some or all of the functionality will be available as part of a future release on the Finance infrastructure after Finance release 10.0.26.
-
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

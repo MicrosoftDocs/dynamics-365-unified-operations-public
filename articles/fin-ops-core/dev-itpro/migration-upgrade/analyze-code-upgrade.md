@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Upgrade from AX 2012 - Estimate effort by using the Code upgrade service
-description: This article explains how to use the Code upgrade service in Microsoft Dynamics Lifecycle Services to estimate the tasks and effort that are required in order to upgrade a code base.
-author: LaneSwenka
-ms.date: 07/27/2023
+description: Learn how to use the Code upgrade service in Microsoft Dynamics Lifecycle Services to estimate the tasks and effort that are required in order to upgrade a code base.
+author: ttreen
+ms.author: ttreen
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
+ms.date: 09/12/2023
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 106163
-ms.assetid: 
+audience: Developer
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: laswenka
-ms.search.validFrom: 2017-05-31
-ms.dyn365.ops.version: Platform update 8
-
+ms.search.validFrom: 2023-07-23
+ms.search.form: 
+ms.dyn365.ops.version: Platform update 50
 ---
 
 # Upgrade from AX 2012 - Estimate effort by using the Code upgrade service
@@ -34,6 +20,9 @@ ms.dyn365.ops.version: Platform update 8
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
 This article explains how to use the Code upgrade service in Microsoft Dynamics Lifecycle Services to help estimate the tasks and effort that are required in order to upgrade a code base from Microsoft Dynamics AX 2012 finance and operations.
+
+> [!NOTE]
+> In Dynamics Lifecycle Services, the **Code upgrade** is only available in the Unites States region. If your project is in another region, create a temporary Dynamics 365 finance and operations project in **lcs.dynamics.com** and run the code upgrade. After you have completed the code upgrade, you can delete the temporary project. For more information about regions, see [Available geographies for Dynamics 365 finance and operations apps](../deployment/deployment-options-geo.md). 
 
 ## Overview
 
@@ -51,9 +40,7 @@ The following illustration shows an overview of the process for configuring the 
 
 ![Configuration process for the Code upgrade service.](media/codeUpgradeConfigurationProcess.png)
 
-For information about how to configure the Code upgrade service, see [Configure the code upgrade service in Lifecycle Services (LCS)](../lifecycle-services/configure-execute-code-upgrade.md).
-
-The output of the Code upgrade service is designed to be consumed by a developer. This output will help the developer estimate the effort that's required to complete the code upgrade tasks. To form an estimate, the developer must review the tasks that the service generates in Azure DevOps and the new version of the code that the service generates.
+The output of the code upgrade service is designed to be consumed by a developer. This output will help the developer estimate the effort that's required to complete the code upgrade tasks. To form an estimate, the developer must review the tasks that the service generates in Azure DevOps and the new version of the code that the service generates.
 
 ## Details
 
@@ -66,7 +53,7 @@ Dynamics 365 finance and operations apps don't allow for customization via overl
 ### Export your AX 2012 model store
 
 > [!NOTE]
-> The AX 2012 Management utilities must be installed in the environment that you want to export the model store from. For more information, see [Install management utilities](../../dynamicsax-2012/appuser-itpro/install-management-utilities.md).
+> The AX 2012 Management utilities must be installed in the environment that you want to export the model store from. 
 
 To export the model store, follow these steps.
 
@@ -124,9 +111,9 @@ To connect to an Azure DevOps project, Lifecycle Services is authenticated by us
 4. Select the project in your Azure DevOps organization that you want to connect to. Then select **Continue**.
 5. On the **Review and save** page, select **Save**.
 
-### Run the Code upgrade tile
+### Run the Code Upgrade
 
-1. In your Lifecycle Services project, select the **Code upgrade** tile.
+1. In your Lifecycle Services project, select **Code upgrade** from the drop-down menu or the **Code Upgrade Tile**.
 2. Select **Add**, and set the following fields:
 
     - **Name** – Enter a name for the code upgrade.

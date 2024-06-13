@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Set up centralized payments
 description: Follow these steps to prepare to process payments in one legal entity on behalf of other legal entities in your organization.
-author: angelad116
-ms.date: 10/24/2022
+author: kfend
+ms.author: kfend
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerInterCompany
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 10/24/2022
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: ffd17b5f-9aea-40e0-be49-d8702f615256
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: angelading
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerInterCompany
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: ffd17b5f-9aea-40e0-be49-d8702f615256
 ---
 
 # Set up centralized payments

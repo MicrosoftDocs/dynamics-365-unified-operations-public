@@ -6,8 +6,6 @@ description: Sales order takers can use the Delivery alternatives page to discov
 author: Henrikan
 ms.date: 04/10/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -17,7 +15,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 271623
 ms.assetid: 527f6084-44fe-41bb-924f-4386e926358a
 ms.search.region: global
 ms.search.industry: Manufacturing

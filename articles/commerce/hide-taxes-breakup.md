@@ -6,7 +6,7 @@ description: This article describes how to hide tax breakup information in order
 author: gvrmohanreddy
 ms.date: 05/17/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
@@ -48,7 +48,7 @@ The following illustration shows the **Show taxes breakup in order summary** che
 
 ## Additional resources
 
-[Sales tax overview](/finance/general-ledger/indirect-taxes-overview)
+[Sales tax overview](../finance/general-ledger/indirect-taxes-overview.md)
 
 [Configure sales tax for online orders](sales-tax-config.md)
 

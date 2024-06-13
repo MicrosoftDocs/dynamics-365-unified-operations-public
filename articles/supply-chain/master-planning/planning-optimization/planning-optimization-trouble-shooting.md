@@ -1,15 +1,15 @@
 ---
 title: Troubleshoot Planning Optimization
-description: This article describes how to fix issues that you might encounter while working with Planning Optimization.
+description: Learn how to fix issues that you might encounter while working with Planning Optimization with an outline on possible errors when installing the add-in.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: ReqCreatePlanWorkspace
-ms.topic: faq
+ms.topic: conceptual
 ms.date: 05/01/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: ReqCreatePlanWorkspace
 ---
 
 # Troubleshoot Planning Optimization
@@ -18,21 +18,33 @@ ms.custom: bap-template
 
 This article describes how to fix common issues that you might encounter while working with Planning Optimization.
 
-## Installation of the Planning Optimization add-in doesn't complete
+## Installation of the Planning Optimization Add-in doesn't complete or fails with an error
+
+If you're having trouble installing the Planning Optimization Add-in, consider the advice provided in the following subsections.
+
+### Make sure your environment meets the prerequisites
 
 Planning Optimization requires a Lifecycle Services (LCS) enabled, high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.23 or later. If you try to install the add-in on a OneBox environment, the installation won't complete.
 
 **Fix**: Cancel the installation and use a high-availability environment, tier 2 or higher (not a OneBox environment).
 
-## Installation of the Planning Optimization add-in fails due to user account issues
+### Make sure your user account meets the prerequisites
 
-To install the add-in, you must sign in to your Microsoft Power Platform environment using an account with administrator privileges and an access mode of *Read-Write*. If you try to install the add-in using an account with insufficient permissions, you may see one of the following error messages:
+The Planning Optimization Add-in requires a successfully linked Power Platform environment. To install the add-in, you must sign in to your Microsoft Power Platform environment using an account with administrator privileges and an access mode of *Read-Write*. If you try to install the add-in using an account with insufficient permissions, you may see one of the following error messages:
 
-> Current user does not have enough permission or missing licenses on Power platform environment to complete installation for Planning optimization. Consider changing user Access Mode to Read-write on Power platform admin center.
+> Current user does not have enough permission on Power platform environment to complete installation for Planning optimization. Consider changing user Access Mode to Read-write on Power platform admin center.
 
 > Current user is not exist in Power platform environment. Please contact with your administrator to assign the user via Power platform admin center.
 
+> Current user does not have assigned license to complete installation for Planning optimization. Consider assigning license on Microsoft admin center.
+
 **Fix**: Set up your user account as described under *Prerequisites* in [Get started with master planning](get-started.md#prerequisites).
+
+### Review the error details
+
+The Planning Optimization Add-in might fail to install due to an error on your Power Platform environment.
+
+**Fix**: Check the error details and modify your Power Platform organization settings accordingly. It might be a temporary error, so try to install again later. If the issue persists, please contact Microsoft Support.
 
 ## Planning Optimization job times out
 
@@ -84,7 +96,9 @@ Follow these steps to review your setup and remove time fences and other options
 
 ### Reduce scheduling time
 
-Reduce the scheduling time by following the instructions in [Improve scheduling engine performance](../scheduling-engine-performance.md).
+It's always beneficial to review your scheduling configuration to optimize run times. To check whether scheduling is the main reason that Planning Optimization is timing out, try disabling finite capacity in the plan settings and then rerun planning to see if the issue is solved.
+
+For more information about how to reduce scheduling times, see [Improve scheduling engine performance](../scheduling-engine-performance.md).
 
 ### Plan only for the products you need
 
@@ -248,7 +262,7 @@ Planning Optimization differs from the deprecated master planning engine design 
 
 The **Connection status** must be **Connected** before you can set **Use Planning Optimization** to **Yes**. For more information, see [Get started with Planning Optimization](get-started.md).
 
-**Fix**: Make sure that the Planning Optimization add-in was installed successfully.
+**Fix**: Make sure that the Planning Optimization Add-in was installed successfully.
 
 ## Error message is shown during CTP
 
@@ -257,6 +271,14 @@ If you try to run capable to promise (CTP) from a sales order when Planning Opti
 This is related to a pending feature that is planned as part of the support for production orders.
 
 **Fix:** Avoid CTP calculations when Planning Optimization is enabled until CTP support is available.
+
+## Error message about active planning dimensions not matching
+
+After running a master plan, you might receive the following error:
+
+> Supply setting with id: \<SettingID\> for MinMax on product \<ProductID\> does not match the active planning attributes for this product and was ignored.
+
+If you see this error, check the tracking and coverage dimensions for the specified product. For example, if the product is being tracked by serial number, then the serial number dimension can't be used as a coverage dimension because the system doesn't know which serial numbers should be supplied. Either deselect the serial number as a coverage dimension or change the item coverage group to a group that doesn't use serial number tracking (if serial tracking isn't needed for the specified product).
 
 ## Additional resources
 

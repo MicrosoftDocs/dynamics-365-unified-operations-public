@@ -1,28 +1,20 @@
 --- 
-# required metadata 
- 
 title: Import and create multiple one-time vendors and invoices in the public sector
-description: This article provides information about how to simultaneously create an invoice and record for a new vendor when no purchase order is required.
+description: Learn about how to simultaneously create an invoice and record for a new vendor when no purchase order is required, including a step-by-step process.
 author: twheeloc
+ms.author: twheeloc
+ms.topic: how-to
 ms.date: 02/14/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: VendImportOneTimeVendFileUpload_PSN   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User  
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: VendImportOneTimeVendFileUpload_PSN
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Import and create multiple one-time vendors and invoices in the public sector
 
 [!include [banner](../../includes/banner.md)]

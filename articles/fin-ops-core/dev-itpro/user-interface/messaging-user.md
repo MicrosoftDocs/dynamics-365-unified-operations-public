@@ -1,15 +1,13 @@
 ---
 title: Messaging system for finance and operations apps
-description: This article describes the rich, powerful messaging system in finance and operations apps.
+description: Learn about the messaging system in finance and operations apps, including overviews on where messages surface and examples.
 author: jasongre
-ms.date: 03/05/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 01/17/2024
+ms.reviewer: twheeloc
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: ce9d2312-c02e-4649-a7e4-33c3a06dfbd4
@@ -159,8 +157,15 @@ If the collection contains one or more calls to **error()**, the message bar is 
 
 The use of **SetPrefix()** is also deterministic. In other words, if you use **SetPrefix()**, and there is no page context (for example, an asynchronous batch operation), the notification of results is sent to the Action center, which isn't associated with any page.
 
+## How do I manage processes that generate lots of notifications? 
+Some processes (like batch processes or user-created alerts) can result in a storm of notifications that may negatively impact the performance of the system. The **Enable system notification management** feature allows administrators to monitor and take action on high-volume notification rules. These rules are defined as rules that generate more notifications per hour than the provided threshold. 
 
+Admins can manage high-volume notifications using the following:   
+-  Define criteria for high-volume notifications rules on the **System notifications** tab of the **System parameters** page. The default criteria flags notification processes that generate more than 100 notifications per hour as high-volume.
+-  Monitor the number of high-volume notifications using the **High-volume notifications** tile on the **System administration** workspace.
+-  Manage notifications from the **High-volume notification rules** page. From here, admins can see which users receive these notifications and can block processes that are generating large volumes of notifications so that no notifications are created from these processes. These processes may have already generated a large number of notifications, admins can purge the existing notifications by using the **Clear notifications** action.
 
+In version 10.0.39, notifications processes that meet the threshold for being high-volume are automatically blocked using the **Auto-blocking of high-volume notification rules** feature. When this feature is enabled, users are notified if a notification process associated with them becomes blocked.  
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

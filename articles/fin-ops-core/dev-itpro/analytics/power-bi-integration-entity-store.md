@@ -1,20 +1,17 @@
 ---
 title: Power BI integration with Entity store
-description: This article describes how Entity store enables Power BI integration.
+description: Learn about how Entity store enables Power BI integration and understand how to stage aggregate measurements in Entity store.
 author: MilindaV2
-ms.date: 06/16/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: milindav
+ms.topic: article
+ms.date: 06/16/2020
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: Platform update 1
-ms.custom: 265974
-ms.assetid: 434b5d9f-9877-4769-ad96-d4e8d460a7fa
 ms.search.form: BIMeasurementDeployManagementEntityStore
+ms.dyn365.ops.version: Platform update 1
+ms.assetid: 434b5d9f-9877-4769-ad96-d4e8d460a7fa
 ---
 
 # Power BI integration with Entity store

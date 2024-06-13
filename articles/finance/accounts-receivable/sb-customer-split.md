@@ -1,31 +1,19 @@
 ---
-# required metadata
-
 title: Customer split on billing schedules
-description: This article describes how to split a customer when subscription billing is used. 
+description: Learn about how to split a customer when subscription billing is used, including an overview on customer split on billing schedule lines. 
 author: JodiChristiansen
-ms.date: 11/04/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: 539093
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jchrist
+ms.topic: article
+ms.date: 11/04/2022
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.scope: Core, Operations
+ms.search.region: Global
 ms.search.validFrom: 2022-11-05
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.31
-
 ---
+
 # Customer split on billing schedules
 
 On a billing schedule, the *invoice account* is the customer who receives the sales order invoice so that they can pay the bill. In some scenarios, more than one customer can pay an invoice. The **Customer split** functionality lets you add more customers that can be billed for the same billing schedule. To enable this functionality, go to **Subscription billing \> Recurring contract billing \> Setup \> Recurring contract billing parameters**, and set the **Customer split** option to **Yes**.

@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Inventory on-hand mobile workspace
-description: This article provides information about the Inventory on-hand mobile workspace. This workspace helps you gain mobile insights into reserved and available inventory anytime and anywhere.
-author: yufeihuang
-ms.date: 05/24/2022
+description: Learn about the Inventory on-hand mobile workspace. This workspace helps you gain mobile insights into reserved and available inventory anytime and anywhere.
+author: yufei-huang
+ms.author: yufeihuang
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/24/2022
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 267094
-ms.assetid: 3fa385ba-894d-4a9e-b394-ef3697abf895
+audience: Application User
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: yufeihuang
 ms.dyn365.ops.version: Version 1611
+ms.search.form: 
 ms.search.validFrom: 2016-11-30
-
+ms.assetid: 3fa385ba-894d-4a9e-b394-ef3697abf895
 ---
 
 # Inventory on-hand mobile workspace

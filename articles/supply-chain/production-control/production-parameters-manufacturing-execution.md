@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Production parameters in Manufacturing execution 
-description: This article provides information about the setup of production parameters in Manufacturing execution. 
+description: Learn about the setup of production parameters in Manufacturing execution, including an outline on types of production jobs.
 author: johanhoffmann
-ms.date: 06/16/2017
+ms.author: johanho
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  JmgProdParameters
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 06/16/2017
 ms.custom: 
-ms.assetid:
+ms.reviewer: kamaybac
+audience: Application User
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: johanho
 ms.search.validFrom: 2016-02-28
+ms.search.form:  JmgProdParameters
 ms.dyn365.ops.version: Version 1611
 ---
 

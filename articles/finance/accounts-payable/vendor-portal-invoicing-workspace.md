@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Vendor collaboration invoicing workspace
-description: This article explains how you can view vendor invoices and submit invoices from the vendor collaboration invoicing workspace.
-author: abruer
-ms.date: 01/15/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: VendInvoiceWorkspace 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 221534
-ms.assetid: c4ed62f3-d351-41d7-a2ad-790576cde4ab
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about how you can view vendor invoices and submit invoices from the vendor collaboration invoicing workspace.
+author: twheeloc
 ms.author: shpandey
+ms.topic: article
+ms.date: 01/15/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-11-30
+ms.search.form: VendInvoiceWorkspace 
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: c4ed62f3-d351-41d7-a2ad-790576cde4ab
 ---
 
 # Vendor collaboration invoicing workspace

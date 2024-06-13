@@ -4,8 +4,6 @@ description: This article describes how to configure your e-Commerce site to sho
 author: gvrmohanreddy
 ms.date: 02/17/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global

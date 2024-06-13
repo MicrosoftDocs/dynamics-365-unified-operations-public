@@ -6,7 +6,7 @@ description: This article provides information about the screen layouts that are
 author: josaw1
 ms.date: 01/30/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw

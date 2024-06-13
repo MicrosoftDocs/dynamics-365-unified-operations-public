@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Configure account structures
-description: This article provides information about account structures and financial dimensions.
+description: Learn about account structures and financial dimensions, including an example and outlines on segments, allowed values, and account structure activation.
 author: aprilolson
-ms.date: 10/14/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerEliminationRule
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
+ms.topic: article
+ms.date: 03/14/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerEliminationRule
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
 ---
 
 # Configure account structures
@@ -32,7 +21,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Account structures use the main account and financial dimensions to create a set of rules that determine the order and values used when entering the account number. You can set up as many account structures as you need for your business. The account structures are assigned to a company's ledger setup, so they can be shared.
 
-When creating an account structure, the maximum number of segments is 11. If you need more than 11 segments, thoroughly evaluate your setup and requirements, as it will impact the user experience. Consider if a segment could be derived in a reporting scenario using a hierarchy instead of during data entry, or by using a user-defined field. For example, if you want to report on location, but you can figure location by department or cost center, you won't need location as a financial dimension. If after evaluation you do determine more than 11 segments are needed, you can add additional segments using advanced rules.
+When creating an account structure, the maximum number of segments is 11. If you need more than 11 segments, thoroughly evaluate your setup and requirements, as it impacts the user experience. Consider if a segment could be derived in a reporting scenario using a hierarchy instead of during data entry, or by using a user-defined field. For example, if you want to report on location, but you can figure location by department or cost center, you won't need location as a financial dimension. If after evaluation you do determine more than 11 segments are needed, you can add additional segments using advanced rules.
 
 Account structures require the main account. The main account doesn't need to be the first segment in the structure, but it does identify what account structure is being used during the account number entry. Because of this, a main account value can only exist in one structure assigned to the ledger so that they don't overlap. After the account structure is identified, the allowed values list is filtered to guide the user through picking only valid dimension values, decreasing the possibility of an incorrect journal entry.
 
@@ -83,7 +72,7 @@ When entering a journal and selecting an account in the profit and loss range, s
 
 ## More than seven criteria needed
 
-If you have more than seven criteria that are needed, you can continue adding them on the next line. You will notice when working in the **Allowed value details** section that the **+Add new** criteria is no longer active after the seventh criteria is entered. This is due to many factors such as: 
+If you have more than seven criteria that are needed, you can continue adding them on the next line. You will notice when working in the **Allowed value details** section that the **+Add new** criteria is no longer active after the seventh criteria is entered. This is due to factors such as: 
  - Column width 
  - How the data is stored 
  - Performance of the **Allowed value details** control
@@ -107,7 +96,7 @@ When setting up your account structures, there are some best practices you can f
 
 - When defining allowed values, use ranges and wildcards as much as possible. This not only allows you to grow and change without maintenance, but the system also performs more ideally with this configuration.
 
-- Do not just put an asterisk for every segment in the account structure and then solely rely on the advanced rules. This can be difficult to manage and often leads to user error during maintenance that can make the system unable to post.
+- Don't put an asterisk for every segment in the account structure and then solely rely on the advanced rules. This can be difficult to manage and often leads to user error during maintenance that can make the system unable to post.
 
 ## Account structure activation
 When you are satisfied with your new setup or a change to an account structure, you must activate it. If an account structure is assigned to a ledger, this activation can be a long running process, as all unposted transactions in the system must be synced to the new structure. Posted transactions are not impacted by account structure changes. As of application version 10.0.31, a new feature that is named **Account structure activation performance enhancement** is available in feature management. For more information about this new feature for account structure activation, see [Account structure activation performance enhancement](account-structure-improvement.md). 

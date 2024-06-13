@@ -1,18 +1,18 @@
 ---
-title: Price component posting
-description: This article describes how to set up different sales order posting ledgers for different price component codes.
+title: Price component posting (preview)
+description: Learn how to set up different sales order posting ledgers for different price component codes, including an outline on setting up price component pricing.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: GUPParameters, GUPPriceComponentCodePostingProfile, GUPPriceComponentCodeSetup, GUPPricingTree
 ms.topic: how-to
 ms.date: 04/03/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: GUPParameters, GUPPriceComponentCodePostingProfile, GUPPriceComponentCodeSetup, GUPPricingTree
 ---
 
-# Price component posting
+# Price component posting (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

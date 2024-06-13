@@ -4,11 +4,8 @@
 title: Buy and sell leave
 description: This article describes how to submit requests to buy and sell leave in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/26/2021
+ms.date: 05/26/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: ESSLeaveBuyRequestEntry, EssWorkspace
@@ -17,7 +14,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -29,27 +25,23 @@ ms.dyn365.ops.version: Human Resources
 
 # Buy and sell leave
 
-
->[!Important]
->The functionality noted in this article is currently available for customers on the stand-alone Dynamics 365 Human Resources. Some or all of the functionality will be available as part of a future release on the Finance infrastructure after Finance release 10.0.26.
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 In Dynamics 365 Human Resources, you can submit requests to buy and sell leave based on the buy and sell leave policies set up by your company.  
 
 ## Request to buy leave
 
-1. In the **Employee self service** workspace, select **Buy leave request** in the **Time Off Balances** tile. 
+1. In the **Employee self service** workspace, select **Buy leave request** in the **Time Off balances** tile. 
 
 2. Add a **Leave type** and enter an **Amount** for the amount of leave you'd like to buy. 
 
 3. Select **Submit** when you're ready to submit your request. 
 
-Your balances will either automatically update or go through an approval process before updating. This depends on how the buy policy has been configured.
+Your balances either automatically update or go through an approval process before updating, depending how the buy policy has been configured.
 
 ## Request to sell leave
 
-1. In the **Employee self service** workspace, select **Sell leave request** in the **Time Off Balances** tile. 
+1. In the **Employee self service** workspace, select **Sell leave request** in the **Time Off balances** tile. 
 
 2. Add a **Leave type** and enter an **Amount** for the amount of leave you'd like to sell. 
 

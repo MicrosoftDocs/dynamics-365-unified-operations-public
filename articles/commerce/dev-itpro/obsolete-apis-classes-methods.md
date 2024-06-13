@@ -4,8 +4,6 @@ description: This article lists the obsolete and removed APIs, classes, and meth
 author: josaw1
 ms.date: 06/01/2022
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

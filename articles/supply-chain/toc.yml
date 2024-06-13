@@ -2,8 +2,10 @@
   items:
   - name: Dynamics 365 Supply Chain Management
     items:
-    - name: Dynamics 365 Supply Chain Management home page
-      href: index.md
+    - name: Supply Chain Management documentation
+      href: index.yml
+    - name: Welcome to Dynamics 365 Supply Chain Management
+      href: supply-chain-management-welcome.md
     - name: What's new or changed
       items: 
       - name: What's new or changed in finance and operations apps
@@ -12,10 +14,12 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
-        - name: Supply Chain Management 10.0.35 (July 2023)
-          href: get-started/whats-new-scm-10-0-35.md
-        - name: Supply Chain Management 10.0.34 (June 2023)
-          href: get-started/whats-new-scm-10-0-34.md
+        - name: Supply Chain Management 10.0.40 (June 2024)
+          href: get-started/whats-new-scm-10-0-40.md
+        - name: Supply Chain Management 10.0.39 (April 2024)
+          href: get-started/whats-new-scm-10-0-39.md
+        - name: Supply Chain Management 10.0.38 (February 2024)
+          href: get-started/whats-new-scm-10-0-38.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -25,13 +29,13 @@
         - name: Removed or deprecated features in previous releases
           href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?context=/dynamics365/context/supply-chain
       - name: AX 2012 features that were postponed
-        href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?context=/dynamics365/context/supply-chain
+        href: ../fin-ops-core/dev-itpro/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?context=/dynamics365/context/supply-chain
       - name: End of mainstream support for Microsoft Dynamics AX 2009 and 2012
-        href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?context=/dynamics365/context/supply-chain
+        href: ../fin-ops-core/dev-itpro/get-started/mainstream-support-ax-2009-2012.md?context=/dynamics365/context/supply-chain
     - name: Get started
       items:
       - name: Service description
-        href: ../fin-ops-core/fin-ops/get-started/service-description.md?context=/dynamics365/context/supply-chain
+        href: ../fin-ops-core/dev-itpro/get-started/service-description.md?context=/dynamics365/context/supply-chain
       - name: Before you buy
         href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?context=/dynamics365/context/supply-chain
       - name: Sign up for preview subscriptions
@@ -41,7 +45,7 @@
         - name: One Version service updates overview
           href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md?context=/dynamics365/context/supply-chain
         - name: One Version service updates FAQ
-          href: ../fin-ops-core/fin-ops/get-started/one-version.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/dev-itpro/get-started/one-version.md?context=/dynamics365/context/supply-chain
         - name: Manage updates and the custom code lifecycle, including Dynamics 365 Commerce
           href: ../fin-ops-core/dev-itpro/migration-upgrade/update-guide.md?context=/dynamics365/context/supply-chain
         - name: Software lifecycle policy - Cloud
@@ -49,7 +53,7 @@
         - name: Software lifecycle policy - On-premises
           href: ../fin-ops-core/dev-itpro/migration-upgrade/on-prem-version-update-policy.md?context=/dynamics365/context/supply-chain
         - name: Service update availability
-          href: ../fin-ops-core/fin-ops/get-started/public-preview-releases.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/dev-itpro/get-started/public-preview-releases.md?context=/dynamics365/context/supply-chain
         - name: Apply updates to cloud environments
           href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?context=/dynamics365/context/supply-chain
         - name: Apply updates to on-premises deployments
@@ -57,7 +61,7 @@
         - name: Configure service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?context=/dynamics365/context/supply-chain
         - name: Pre-servicing and post-servicing
-          href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/fin-ops/lcs/pre-post-servicing.md?context=/dynamics365/context/supply-chain
         - name: Pause service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/supply-chain
         - name: Get notified about service updates
@@ -65,11 +69,11 @@
         - name: Proactive quality updates
           items:
           - name: Proactive quality updates overview
-            href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/supply-chain
+            href: ../fin-ops-core/dev-itpro/get-started/quality-updates.md?context=/dynamics365/context/supply-chain
           - name: Release schedule for proactive quality updates
-            href: ../fin-ops-core/fin-ops/get-started/quality-updates-schedule.md?context=/dynamics365/context/supply-chain
+            href: ../fin-ops-core/dev-itpro/get-started/quality-updates-schedule.md?context=/dynamics365/context/supply-chain
           - name: Proactive quality updates FAQ
-            href: ../fin-ops-core/fin-ops/get-started/quality-updates-faq.md?context=/dynamics365/context/supply-chain
+            href: ../fin-ops-core/dev-itpro/get-started/quality-updates-faq.md?context=/dynamics365/context/supply-chain
         - name: Data task automation
           href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/supply-chain
         - name: Delivering ISV solutions using One Version
@@ -83,53 +87,33 @@
         - name: Deployment options
           href: ../fin-ops-core/dev-itpro/deployment/choose-deployment-type.md?context=/dynamics365/context/supply-chain
         - name:  Comparison of cloud and on-premises features
-          href: ../fin-ops-core/fin-ops/get-started/cloud-prem-comparison.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/dev-itpro/get-started/cloud-prem-comparison.md?context=/dynamics365/context/supply-chain
         - name: Cloud deployment
           href: ../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md?context=/dynamics365/context/supply-chain
         - name: System requirements for cloud deployments
-          href: ../fin-ops-core/fin-ops/get-started/system-requirements.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/dev-itpro/get-started/system-requirements.md?context=/dynamics365/context/supply-chain
         - name: On-premises deployment
           href: ../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md?context=/dynamics365/context/supply-chain
         - name: System requirements for on-premises deployments
-          href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/dev-itpro/get-started/system-requirements-on-prem.md?context=/dynamics365/context/supply-chain
         - name: Buy Finance + Operations (on-premises)
-          href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/dev-itpro/get-started/purchase-on-premises.md?context=/dynamics365/context/supply-chain
       - name: Documentation resources
         items:
         - name: Help system
           href: ../fin-ops-core/fin-ops/get-started/help-overview.md?context=/dynamics365/context/supply-chain
         - name: Connect the Help system
-          href: ../fin-ops-core/fin-ops/get-started/help-connect.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/dev-itpro/get-started/help-connect.md?context=/dynamics365/context/supply-chain
         - name: Custom help overview
           href: ../fin-ops-core/dev-itpro/help/custom-help-overview.md?context=/dynamics365/context/supply-chain    
         - name: View and export field descriptions
-          href: ../fin-ops-core/fin-ops/get-started/view-export-field-descriptions.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/dev-itpro/get-started/view-export-field-descriptions.md?context=/dynamics365/context/supply-chain
         - name: Task Recorder
           href: ../fin-ops-core/dev-itpro/user-interface/task-recorder.md?context=/dynamics365/context/supply-chain
         - name: Create documentation or training with Task Recorder
-          href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/fin-ops/user-interface/task-recorder-training-docs.md?context=/dynamics365/context/supply-chain
         - name: Videos
           href: ../fin-ops-core/fin-ops/get-started/videos.md?context=/dynamics365/context/supply-chain
-      - name: Learning catalog
-        items: 
-        - name: Learning catalog home page
-          href: ./get-started/learning-catalog.md
-        - name: Business decision makers
-          href: ./get-started/learning-catalog-bdm.md
-        - name: Business users
-          href: ./get-started/learning-catalog-business-user.md
-        - name: Implementation project managers
-          href: ./get-started/learning-catalog-project-manager.md
-        - name: Administrators
-          href: ./get-started/learning-catalog-administrator.md
-        - name: Developers
-          href: ./get-started/learning-catalog-developer.md
-        - name: Partner sales and marketing
-          href: ./get-started/learning-catalog-partner-sales.md
-        - name: Functional consultants
-          href: ./get-started/learning-catalog-functional-consultant.md
-        - name: Solution architects
-          href: ./get-started/learning-catalog-solution-architect.md
       - name: Explore the user interface
         items:
         - name: User interface elements
@@ -155,19 +139,19 @@
         - name: Navigation search
           href: ../fin-ops-core/fin-ops/get-started/navigation-search.md?context=/dynamics365/context/supply-chain
         - name: Personalize the user experience
-          href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/dev-itpro/get-started/personalize-user-experience.md?context=/dynamics365/context/supply-chain
         - name: Saved views
-          href: ../fin-ops-core/fin-ops/get-started/saved-views.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/dev-itpro/get-started/saved-views.md?context=/dynamics365/context/supply-chain
         - name: Standard saved views for Supply Chain Management
           href: get-started/saved-views-scm.md
         - name: Grid capabilities
-          href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/dev-itpro/get-started/grid-capabilities.md?context=/dynamics365/context/supply-chain
         - name: Create and work with custom fields
           href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?context=/dynamics365/context/supply-chain
         - name: Embed canvas apps from Power Apps 
-          href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/dev-itpro/get-started/embed-power-apps.md?context=/dynamics365/context/supply-chain
         - name: Embed third-party apps
-          href: ../fin-ops-core/fin-ops/get-started/embed-website.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/dev-itpro/get-started/embed-website.md?context=/dynamics365/context/supply-chain
         - name: Find information by using lookups
           href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?context=/dynamics365/context/supply-chain
         - name: Change the date for a session
@@ -179,55 +163,57 @@
       - name: Implementation lifecycle management
         items:
         - name: Implementation lifecycle management home page
-          href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/dev-itpro/organization-administration/implementation-lifecycle.md?context=/dynamics365/context/supply-chain
         - name: Architecture for finance and operations apps
-          href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/dev-itpro/organization-administration/architecture-overview.md?context=/dynamics365/context/supply-chain
         - name: Microsoft FastTrack
           href: /dynamics365/fasttrack/
         - name: Onboard an implementation project
-          href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/dev-itpro/organization-administration/onboard.md?context=/dynamics365/context/supply-chain
         - name: Environment planning
-          href: ../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md?context=/dynamics365/context/supply-chain   
+          href: ../fin-ops-core/dev-itpro/organization-administration/environment-planning.md?context=/dynamics365/context/supply-chain   
         - name: Prepare for go-live
-          href: ../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/dev-itpro/organization-administration/prepare-go-live.md?context=/dynamics365/context/supply-chain
         - name: Go-live FAQ
-          href: ../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/dev-itpro/organization-administration/go-live-faq.md?context=/dynamics365/context/supply-chain
         - name: Submit a service request
           href: ../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?context=/dynamics365/context/supply-chain
-        - name: Subscriptions, LCS projects, and Azure AD tenants FAQ
-          href: ../fin-ops-core/fin-ops/get-started/subscription-overview.md?context=/dynamics365/context/supply-chain    
+        - name: Subscriptions, LCS projects, and Microsoft Entra tenants FAQ
+          href: ../fin-ops-core/dev-itpro/get-started/subscription-overview.md?context=/dynamics365/context/supply-chain    
         - name: Move environments between data centers
           href: ../fin-ops-core/fin-ops/get-started/move-environments-data-center.md?context=/dynamics365/context/supply-chain      
         - name: Move licenses between agreement types
-          href: ../fin-ops-core/fin-ops/get-started/move-licenses-between-agreement-types.md?context=/dynamics365/context/supply-chain 
-        - name: Move LCS implementation projects to different Azure AD tenants
-          href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?context=/dynamics365/context/supply-chain 
+          href: ../fin-ops-core/dev-itpro/get-started/move-licenses-between-agreement-types.md?context=/dynamics365/context/supply-chain 
+        - name: Move LCS implementation projects to different Microsoft Entra tenants
+          href: ../fin-ops-core/dev-itpro/get-started/move-lcs-implementation-project-tenant.md?context=/dynamics365/context/supply-chain 
         - name: Move LCS implementation projects from on-premises to cloud
           href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?context=/dynamics365/context/supply-chain 
-        - name: Multiple LCS projects and production environments on one Azure AD tenant
-          href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?context=/dynamics365/context/supply-chain
+        - name: Multiple LCS projects and production environments on one Microsoft Entra tenant
+          href: ../fin-ops-core/dev-itpro/get-started/implement-multiple-projects-aad-tenant.md?context=/dynamics365/context/supply-chain
     - name: Troubleshooting and FAQs
       href: supply-chain-management-troubleshooting.md
+    - name: AI summaries with Copilot
+      href: get-started/copilot-summaries-overview.md
     - name: Globalization Studio
       items:
       - name: Globalization Studio overview
-        href: ../finance/localizations/globalization-studio-overview.md?context=/dynamics365/context/supply-chai
+        href: ../finance/localizations/global/globalization-studio-overview.md?context=/dynamics365/context/supply-chain
       - name: Globalization resources
-        href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?context=/dynamics365/context/supply-chain
+        href: ../fin-ops-core/fin-ops/lcs/country-region.md?context=/dynamics365/context/supply-chain
       - name: Globalization services
         items:
         - name: Globalization services overview
-          href: ../finance/localizations/globalization-services-overview.md?context=/dynamics365/context/supply-chain
+          href: ../finance/localizations/global/globalization-services-overview.md?context=/dynamics365/context/supply-chain
         - name: Regulatory configuration service (RCS)
           items:
           - name: Regulatory configuration service (RCS) overview
-            href: ../finance/localizations/rcs-overview.md?context=/dynamics365/context/supply-chain
+            href: ../finance/localizations/global/rcs-overview.md?context=/dynamics365/context/supply-chain
           - name: Regulatory configuration service (RCS) - Globalization features
-            href: ../finance/localizations/rcs-globalization-feature.md?context=/dynamics365/context/supply-chain
+            href: ../finance/localizations/global/rcs-globalization-feature.md?context=/dynamics365/context/supply-chain
           - name: Create ER configurations in Regulatory configuration service (RCS) and upload to the Global repository
-            href: ../finance/localizations/rcs-global-repo-upload.md?context=/dynamics365/context/supply-chain
+            href: ../finance/localizations/global/rcs-global-repo-upload.md?context=/dynamics365/context/supply-chain
           - name: Regulatory Configuration Service (RCS) – Lifecycle Services storage deprecation
-            href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?context=/dynamics365/context/supply-chain
+            href: ../finance/localizations/global/rcs-lcs-repo-dep-faq.md?context=/dynamics365/context/supply-chain
           - name: Download ER configurations to Supply Chain Management
             items: 
             - name: Download configurations from RCS
@@ -241,95 +227,93 @@
             - name: Import updated versions of ER configurations
               href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?context=/dynamics365/context/supply-chain
             - name: Enhanced filtering to find configurations in GR
-              href: ../finance/localizations/enhanced-filtering-global-repo.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/enhanced-filtering-global-repo.md?context=/dynamics365/context/supply-chain
             - name: Upload configurations to GR
-              href: ../finance/localizations/rcs-global-repo-upload.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/rcs-global-repo-upload.md?context=/dynamics365/context/supply-chain
             - name: Share configurations in GR  
-              href: ../finance/localizations/rcs-global-repo-share-configuration.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/rcs-global-repo-share-configuration.md?context=/dynamics365/context/supply-chain
             - name: Discontinue configurations in the RCS Global repository
-              href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/supply-chain
         - name: Electronic Invoicing
           items: 
           - name: Electronic Invoicing overview
-            href: ../finance/localizations/e-invoicing-service-overview.md?context=/dynamics365/context/supply-chain
+            href: ../finance/localizations/global/e-invoicing-service-overview.md?context=/dynamics365/context/supply-chain
           - name: Electronic Invoicing administration and integration components
-            href: ../finance/localizations/e-invoicing-administration-integration-components.md?context=/dynamics365/context/supply-chain
+            href: ../finance/localizations/global/e-invoicing-administration-integration-components.md?context=/dynamics365/context/supply-chain
           - name: Set up Electronic Invoicing
             items: 
             - name: Setting up Electronic Invoicing
-              href: ../finance/localizations/e-invoicing-set-up-overview.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/e-invoicing-set-up-overview.md?context=/dynamics365/context/supply-chain
             - name: Sign up and install Electronic Invoicing
               items: 
               - name: Electronic Invoicing sign up and installation overview
-                href: ../finance/localizations/e-invoicing-sign-up-install.md?context=/dynamics365/context/supply-chain
+                href: ../finance/localizations/global/e-invoicing-sign-up-install.md?context=/dynamics365/context/supply-chain
               - name: Install the add-in for microservices in Lifecycle Services
-                href: ../finance/localizations/e-invoicing-install-add-in-microservices-lcs.md?context=/dynamics365/context/supply-chain
+                href: ../finance/localizations/global/e-invoicing-install-add-in-microservices-lcs.md?context=/dynamics365/context/supply-chain
               - name: Set up Regulatory configuration services (RCS)
-                href: ../finance/localizations/e-invoicing-set-up-rcs.md?context=/dynamics365/context/supply-chain
-              - name: Power platform plug-in admin reference
-                href: ../finance/localizations/e-invoicing-power-platform-plug-in.md?context=/dynamics365/context/supply-chain   
+                href: ../finance/localizations/global/e-invoicing-set-up-rcs.md?context=/dynamics365/context/supply-chain
             - name: Set up Azure Resources
               items:
               - name: Set up Azure resources for Electronic invoicing
-                href: ../finance/localizations/e-invoicing-set-up-azure-resources.md?context=/dynamics365/context/supply-chain
+                href: ../finance/localizations/global/e-invoicing-set-up-azure-resources.md?context=/dynamics365/context/supply-chain
               - name: Create an Azure Key Vault in the Azure portal
-                href: ../finance/localizations/e-invoicing-create-azure-storage-account-azure-portal.md?context=/dynamics365/context/supply-chain
+                href: ../finance/localizations/global/e-invoicing-create-azure-storage-account-azure-portal.md?context=/dynamics365/context/supply-chain
               - name: Create an Azure storage account in the Azure portal
-                href: ../finance/localizations/e-invoicing-create-azure-storage-account-azure-portal.md?context=/dynamics365/context/supply-chain
+                href: ../finance/localizations/global/e-invoicing-create-azure-storage-account-azure-portal.md?context=/dynamics365/context/supply-chain
               - name: Configure a SharePoint connection
-                href: ../finance/localizations/e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/supply-chain
+                href: ../finance/localizations/global/e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/supply-chain
             - name: Set up environments
               items:
               - name: Configure service environments and connected applications
-                href: ../finance/localizations/e-invoicing-configure-service-environments-connected-applications.md?context=/dynamics365/context/supply-chain
+                href: ../finance/localizations/global/e-invoicing-configure-service-environments-connected-applications.md?context=/dynamics365/context/supply-chain
               - name: Service environments
-                href: ../finance/localizations/e-invoicing-service-environments.md?context=/dynamics365/context/supply-chain
+                href: ../finance/localizations/global/e-invoicing-service-environments.md?context=/dynamics365/context/supply-chain
               - name: Customer certificates and secrets
-                href: ../finance/localizations/e-invoicing-customer-certificates-secrets.md?context=/dynamics365/context/supply-chain
+                href: ../finance/localizations/global/e-invoicing-customer-certificates-secrets.md?context=/dynamics365/context/supply-chain
               - name: Connected applications
-                href: ../finance/localizations/e-invoicing-connected-applications.md?context=/dynamics365/context/supply-chain
+                href: ../finance/localizations/global/e-invoicing-connected-applications.md?context=/dynamics365/context/supply-chain
           - name: Work with Globalization features
             items:
             - name: Work with Globalization features overview
-              href: ../finance/localizations/e-invoicing-working-globalization-features.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/e-invoicing-working-globalization-features.md?context=/dynamics365/context/supply-chain
             - name: Import a feature from the Global repository
-              href: ../finance/localizations/e-invoicing-import-feature-global-repository.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/e-invoicing-import-feature-global-repository.md?context=/dynamics365/context/supply-chain
             - name: Create a new Globalization feature
-              href: ../finance/localizations/e-invoicing-create-new-globalization-feature.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/e-invoicing-create-new-globalization-feature.md?context=/dynamics365/context/supply-chain
             - name: Work with configurations
-              href: ../finance/localizations/e-invoicing-work-configurations.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/e-invoicing-work-configurations.md?context=/dynamics365/context/supply-chain
             - name: Work with feature setup
-              href: ../finance/localizations/e-invoicing-feature-setup.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/e-invoicing-feature-setup.md?context=/dynamics365/context/supply-chain
             - name: Complete, publish, and deploy a Globalization feature
-              href: ../finance/localizations/e-invoicing-complete-publish-deploy-globalization-feature.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/e-invoicing-complete-publish-deploy-globalization-feature.md?context=/dynamics365/context/supply-chain
             - name: Share with other organizations
-              href: ../finance/localizations/e-invoicing-share-other-organizations.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/e-invoicing-share-other-organizations.md?context=/dynamics365/context/supply-chain
             - name: Process incoming electronic documents
               items: 
               - name: Processing incoming electronic documents
-                href: ../finance/localizations/e-invoicing-process-incoming-electronic-documents.md?context=/dynamics365/context/supply-chain
+                href: ../finance/localizations/global/e-invoicing-process-incoming-electronic-documents.md?context=/dynamics365/context/supply-chain
               - name: Configure an email channel
-                href: ../finance/localizations/e-invoicing-configure-email.md?context=/dynamics365/context/supply-chain
+                href: ../finance/localizations/global/e-invoicing-configure-email.md?context=/dynamics365/context/supply-chain
               - name: Configure a SharePoint channel
-                href: ../finance/localizations/e-invoicing-configure-sharepoint-channel.md?context=/dynamics365/context/supply-chain
+                href: ../finance/localizations/global/e-invoicing-configure-sharepoint-channel.md?context=/dynamics365/context/supply-chain
             - name: Set up and use Electronic invoicing with Finance and Supply Chain Management
               items: 
               - name: Activate and set up integration with Electronic Invoicing
-                href: ../finance/localizations/e-invoicing-activate-setup-integration.md?context=/dynamics365/context/supply-chain
+                href: ../finance/localizations/global/e-invoicing-activate-setup-integration.md?context=/dynamics365/context/supply-chain
               - name: Set up Electronic Invoicing parameters
-                href: ../finance/localizations/e-invoicing-set-up-parameters.md?context=/dynamics365/context/supply-chain
+                href: ../finance/localizations/global/e-invoicing-set-up-parameters.md?context=/dynamics365/context/supply-chain
               - name: Work with Electronic Invoicing
                 items:
                 - name: Submit electronic documents to Electronic Invoicing
-                  href: ../finance/localizations/e-invoicing-submit-electronic-documents.md?context=/dynamics365/context/supply-chain
+                  href: ../finance/localizations/global/e-invoicing-submit-electronic-documents.md?context=/dynamics365/context/supply-chain
                 - name: Work with the Electronic documents submission log
-                  href: ../finance/localizations/e-invoicing-submission-log.md?context=/dynamics365/context/supply-chain
+                  href: ../finance/localizations/global/e-invoicing-submission-log.md?context=/dynamics365/context/supply-chain
                 - name: Work with the Electronic documents receiving log
-                  href: ../finance/localizations/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/supply-chain
+                  href: ../finance/localizations/global/e-invoicing-electronic-documents-receiving-log.md?context=/dynamics365/context/supply-chain
           - name: Country/region-specific scenarios
             items:
             - name: Availability of Electronic Invoicing features
-              href: ../finance/localizations/e-invoicing-country-specific-availability.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/supply-chain
             - name: Get started with Electronic Invoicing service administration
               href: ../finance/localizations/e-invoicing-get-started-service-administration.md?context=/dynamics365/context/supply-chain
             - name: Get started with Electronic Invoicing
@@ -337,58 +321,54 @@
             - name: Create a new Electronic invoicing feature
               href: ../finance/localizations/e-invoicing-create-new-e-invoicing-feature.md?context=/dynamics365/context/supply-chain
             - name: Get started with Electronic Invoicing for Brazil
-              href: ../finance/localizations/e-invoicing-bra-get-started.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/brazil/e-invoicing-bra-get-started.md?context=/dynamics365/context/supply-chain
             - name: Get started with Electronic Invoicing for Egypt
-              href: ../finance/localizations/e-invoicing-eg-get-started.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/mea/e-invoicing-eg-get-started.md?context=/dynamics365/context/supply-chain
             - name: Get started with Electronic Invoicing for France
-              href: ../finance/localizations/e-invoicing-fr-get-started.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/supply-chain
             - name: Get started with the Electronic Invoicing for Mexico
-              href: ../finance/localizations/e-invoicing-mex-get-started.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/iberoamerica/e-invoicing-mex-get-started.md?context=/dynamics365/context/supply-chain
             - name: Get started with Electronic invoicing for Saudi Arabia
-              href: ../finance/localizations/e-invoicing-sa-get-started.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/mea/e-invoicing-sa-get-started.md?context=/dynamics365/context/supply-chain
             - name: Setup direct integration of Italian FatturaPA with SDI
-              href: ../finance/localizations/e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/italy/e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/supply-chain
             - name: Use the electronic invoicing service to import vendor invoices
-              href: ../finance/localizations/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/supply-chain
             - name: Set up Electronic Invoicing
               href: ../finance/localizations/e-invoicing-setup.md?context=/dynamics365/context/supply-chain
-            - name: Power Platform plug-in admin reference
-              href: ../finance/localizations/e-invoicing-power-platform-plug-in.md?context=/dynamics365/context/supply-chain
-            - name: Electronic Invoicing FAQ
-              href: ../finance/localizations/e-invoicing-faq.md?context=/dynamics365/context/supply-chain
         - name: Tax Calculation
           items:
           - name: Tax Calculation overview
-            href: ../finance/localizations/global-tax-calcuation-service-overview.md?context=/dynamics365/context/supply-chain
+            href: ../finance/localizations/global/global-tax-calcuation-service-overview.md?context=/dynamics365/context/supply-chain
           - name: Get started with Tax Calculation
-            href: ../finance/localizations/global-get-started-with-tax-calculation-service.md?context=/dynamics365/context/supply-chain
+            href: ../finance/localizations/global/global-get-started-with-tax-calculation-service.md?context=/dynamics365/context/supply-chain
           - name: Tax feature support for transfer orders
-            href: ../finance/localizations/tasks/Tax-feature-support-for-transfer-order.md?context=/dynamics365/context/supply-chain
+            href: ../finance/localizations/global/Tax-feature-support-for-transfer-order.md?context=/dynamics365/context/supply-chain
           - name: Add data fields in tax configurations
-            href: ../finance/localizations/tax-service-add-data-fields-tax-configurations.md?context=/dynamics365/context/supply-chain
+            href: ../finance/localizations/global/tax-service-add-data-fields-tax-configurations.md?context=/dynamics365/context/supply-chain
           - name: Add data fields in the tax integration by using extensions
-            href: ../finance/localizations/tax-service-add-data-fields-tax-integration-by-extension.md?context=/dynamics365/context/supply-chain
+            href: ../finance/localizations/global/tax-service-add-data-fields-tax-integration-by-extension.md?context=/dynamics365/context/supply-chain
           - name: Multiple VAT registration numbers
-            href: ../finance/localizations/emea-multiple-vat-registration-numbers.md?context=/dynamics365/context/supply-chain
+            href: ../finance/localizations/global/emea-multiple-vat-registration-numbers.md?context=/dynamics365/context/supply-chain
           - name: Set up an environment for master data lookup
-            href: ../finance/localizations/tax-service-set-up-environment-master-data-lookup.md?context=/dynamics365/context/supply-chain
+            href: ../finance/localizations/global/tax-service-set-up-environment-master-data-lookup.md?context=/dynamics365/context/supply-chain
       - name: Regulatory updates
-        href: ../finance/localizations/regulatory-updates.md?context=/dynamics365/context/supply-chain
+        href: ../finance/localizations/global/regulatory-updates.md?context=/dynamics365/context/supply-chain
       - name: India
         items: 
         - name: Stock transfer orders
-          href: ../finance/localizations/apac-ind-stock-transfer.md?context=/dynamics365/context/supply-chain
+          href: ../finance/localizations/india/apac-ind-stock-transfer.md?context=/dynamics365/context/supply-chain
       - name: Russia
         items: 
         - name: Russia overview
-          href: ../finance/localizations/russia.md?context=/dynamics365/context/supply-chain
+          href: ../finance/localizations/russia/russia.md?context=/dynamics365/context/supply-chain
         - name: Inventory
           items: 
           - name: Goods in transit from vendor
-            href: ../finance/localizations/rus-goods-transit-vendor.md?context=/dynamics365/context/supply-chain
+            href: ../finance/localizations/russia/rus-goods-transit-vendor.md?context=/dynamics365/context/supply-chain
     - name: Distributed hybrid topology
       items:
-      - name: Scale unit capability for Supply Chain Management is currently paused
+      - name: Scale unit capability for Supply Chain Management is deprecated and no longer available to new customers
         href: cloud-edge/cloud-edge-landing-page.md
     - name: Asset management
       items:
@@ -413,6 +393,8 @@
           href: asset-management/functional-locations/introduction-to-functional-locations.md
         - name: Create functional locations
           href: asset-management/functional-locations/create-functional-locations.md
+        - name: Change the type of existing functional locations (preview)
+          href: asset-management/functional-locations/change-functional-location-type.md
         - name: Install assets on functional locations
           href: asset-management/functional-locations/install-objects-on-functional-locations.md
       - name: Setup for assets
@@ -443,6 +425,8 @@
           href: asset-management/objects/introduction-to-objects.md
         - name: Create an asset
           href: asset-management/objects/create-an-object.md
+        - name: Change the asset type of existing assets (preview)
+          href: asset-management/objects/change-asset-type.md
         - name: Multi-level assets
           href: asset-management/objects/multi-level-objects.md
         - name: Move, replace, and install assets
@@ -505,6 +489,8 @@
           href: asset-management/work-orders/maintenance-forecasts.md
         - name: Procurement
           href: asset-management/work-orders/procurement.md
+        - name: Material availability check for work orders (preview)
+          href: asset-management/work-orders/material-availability-check-work-orders.md
         - name: Manual update of asset counters
           href: asset-management/work-orders/manual-update-of-asset-counters.md
         - name: Automatic update of asset counters
@@ -723,7 +709,7 @@
         href: cost-management/inventory-costing-faq.md
       - name: Prerequisites for standard costs
         items:
-        - name: Prerequisites for standard costs overview
+        - name: Prerequisites for standard costs
           href: cost-management/prerequisites-standard-costs.md
         - name: Standard cost conversion overview
           href: cost-management/standard-cost-conversion-overview.md
@@ -875,7 +861,7 @@
           href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?context=/dynamics365/context/supply-chain
       - name: Power Automate Process Mining content
         items:
-        - name: Analyze warehouse material movement through process mining
+        - name: Analyze warehouse material movement through process mining (preview)
           href: warehousing/warehouse-material-movement-analysis.md
       - name: Analytical workspaces
         items:
@@ -953,6 +939,8 @@
       items:
       - name: Electronic reporting overview
         href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?context=/dynamics365/context/supply-chain
+      - name: Electronic reporting components
+        href: ../fin-ops-core/dev-itpro/analytics/er-overview-components.md?context=/dynamics365/context/supply-chain
       - name: Configurations
         items:
         - name: Create configurations
@@ -1364,7 +1352,7 @@
         - name: Regulatory configuration service (RCS)
           items:
           - name: Regulatory configuration service (RCS) overview
-            href: ../finance/localizations/rcs-overview.md?context=/dynamics365/context/supply-chain
+            href: ../finance/localizations/global/rcs-overview.md?context=/dynamics365/context/supply-chain
           - name: Download ER configurations to Supply Chain Management
             items: 
             - name: Download configurations from RCS
@@ -1378,13 +1366,13 @@
             - name: Import updated versions of ER configurations
               href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?context=/dynamics365/context/supply-chain
             - name: Enhanced filtering to find configurations in GR
-              href: ../finance/localizations/enhanced-filtering-global-repo.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/enhanced-filtering-global-repo.md?context=/dynamics365/context/supply-chain
             - name: Upload configurations to GR
-              href: ../finance/localizations/rcs-global-repo-upload.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/rcs-global-repo-upload.md?context=/dynamics365/context/supply-chain
             - name: Share configurations in GR  
-              href: ../finance/localizations/rcs-global-repo-share-configuration.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/rcs-global-repo-share-configuration.md?context=/dynamics365/context/supply-chain
             - name: Discontinue configurations in the RCS Global repository
-              href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/supply-chain
+              href: ../finance/localizations/global/discontinuing-configurations-rcs-global-repo.md?context=/dynamics365/context/supply-chain
       - name: Quick start guides
         items: 
         - name: Adjust an ER format to generate a custom electronic document
@@ -1719,7 +1707,9 @@
           href: cost-management/adjust-hand-inventory-cost-values.md
         - name: Tracking running average cost per inventory dimension
           href: cost-management/track-running-average-cost-per-inventory-dimension.md
-      - name: Archive inventory transactions
+      - name: Inventory On-hand mobile app
+        href: inventory/inventory-onhand-mobile-app.md
+      - name: Consolidate inventory transactions
         href: inventory/archive-inventory-transactions.md
       - name: Inventory Visibility Add-in
         items:
@@ -1727,25 +1717,49 @@
           href: inventory/inventory-visibility.md
         - name: Install and set up Inventory Visibility
           href: inventory/inventory-visibility-setup.md
+        - name: Set up product search for Inventory Visibility
+          href: inventory/inventory-visibility-product-search.md
+        - name: The Inventory Visibility app in Power Apps
+          items:
+          - name: Inventory Visibility app user interface versions
+            href: inventory/inventory-visibility-ui-version-2.md
+          - name: Use the Inventory Visibility app UI version 2
+            href: inventory/inventory-visibility-power-platform.md
+          - name: Use the Inventory Visibility app UI version 1
+            href: inventory/inventory-visibility-power-platform-v1.md
+          - name: Search for products using the Inventory Visibility app
+            href: inventory/inventory-visibility-product-search-app.md
         - name: Configure Inventory Visibility
           href: inventory/inventory-visibility-configuration.md
         - name: Inventory Visibility support for WMS items
           href: inventory/inventory-visibility-whs-support.md
+        - name: Inventory summary
+          href: inventory/inventory-visibility-inventory-summary.md
+        - name: Preload a streamlined on-hand query
+          href: inventory/inventory-visibility-preload-on-hand.md
         - name: Running on-hand consistency checks while Inventory Visibility is enabled
           href: inventory/inventory-onhand-consistency-check.md
-        - name: Use the Inventory Visibility app
-          href: inventory/inventory-visibility-power-platform.md
+        - name: Inventory Visibility adjustment offset
+          href: inventory/inventory-visibility-adjustment-offset.md
         - name: Inventory Visibility reservations
           href: inventory/inventory-visibility-reservations.md
         - name: Inventory Visibility inventory allocation
           href: inventory/inventory-visibility-allocation.md
         - name: Inventory Visibility on-hand change schedule and available to promise
           href: inventory/inventory-visibility-available-to-promise.md
+        - name: Inventory Visibility Power BI dashboard
+          href: inventory/inventory-visibility-dashboard.md
         - name: Inventory Visibility public APIs
           href: inventory/inventory-visibility-api.md
+        - name: Inquire into inventory with Copilot (preview)
+          href: inventory/inventory-visibility-copilot-api.md
+        - name: Log and view successful API posts
+          href: inventory/inventory-visibility-track-inventory-log-history.md
+        - name: Inventory Visibility diagnostic tool
+          href: inventory/inventory-visibility-diagnostic-tool.md
         - name: Inventory Visibility tips
           href: inventory/inventory-visibility-tips.md
-    - name: Sensor Data Intelligence
+    - name: Sensor Data Intelligence (preview)
       items:
         - name: Sensor Data Intelligence home page
           href: sensor-data-intelligence/sdi-home-page.md
@@ -1757,20 +1771,20 @@
           href: sensor-data-intelligence/sdi-parameters.md
         - name: Set up a simulated sensor for testing
           href: sensor-data-intelligence/sdi-set-up-simulated-sensor.md
-        - name: The asset downtime scenario
+        - name: Asset downtime scenario
           href: sensor-data-intelligence/sdi-scenario-asset-downtime.md
-        - name: The asset maintenance scenario
+        - name: Asset maintenance scenario
           href: sensor-data-intelligence/sdi-scenario-asset-maintenance.md
-        - name: The machine status scenario
+        - name: Machine status scenario
           href: sensor-data-intelligence/sdi-scenario-equipment-downtime.md
-        - name: The product quality scenario
+        - name: Product quality scenario
           href: sensor-data-intelligence/sdi-scenario-product-quality.md
-        - name: The production delays scenario
+        - name: Production delays scenario
           href: sensor-data-intelligence/sdi-scenario-production-delays.md
     - name: IoT Intelligence
       items:
         - name: IoT Intelligence now replaced by Sensor Data Intelligence
-          href: iot/iot-intelligence-home-page.md
+          href: supply-chain-dev/iot-intelligence-home-page.md
     - name: Master planning
       items:
       - name: Master planning home page
@@ -1791,8 +1805,10 @@
           href: master-planning/not-enough-capacity-error-resolution.md
         - name: Cancel a planning job
           href: master-planning/planning-optimization/cancel-planning-job.md
+        - name: Unified developer experience for planning optimization (preview)
+          href: supply-chain-dev/planning-optimization-dev.md
         - name: Planning Optimization extensibility
-          href: master-planning/planning-optimization/extensibility.md
+          href: supply-chain-dev/extensibility.md
         - name: View plan history and planning logs
           href: master-planning/planning-optimization/plan-history-logs.md
         - name: Date and time parameters used by Planning Optimization
@@ -1807,8 +1823,12 @@
           href: master-planning/make-to-order-supply-automation.md
         - name: Negative days and dynamic negative days
           href: master-planning/more-about-dynamic-negative-days.md
+        - name: Dynamic positive days for last-minute orders
+          href: master-planning/dynamic-positive-days.md
         - name: Calendars and master planning
           href: master-planning/supply-chain-calendars-master-planning.md
+        - name: Calculate requested ship dates for purchase orders
+          href: master-planning/supplier-requested-confirmed-dates.md
         - name: Create a schedule for a site
           href: master-planning/tasks/create-schedule-site.md
         - name: Create a plan for a site
@@ -1833,6 +1853,8 @@
           href: master-planning/planning-optimization/purchase-requisitions.md
         - name: Production planning
           href: master-planning/planning-optimization/production-planning.md
+        - name: Item substitution for formulas and bills of materials
+          href: master-planning/item-substitution.md
         - name: Set up scrap to calculate raw material requirements
           href: master-planning/scrap-calculations.md
         - name: Master planning for products with limited shelf life
@@ -1863,6 +1885,8 @@
           href: master-planning/master-plans.md
         - name: Master planning setup wizard
           href: master-planning/master-planning-setup-wizard.md
+        - name: Exclude specific transactions or transaction types from master planning
+          href: master-planning/ignore-transaction-types.md
         - name: Generate a constrained plan
           href: master-planning/tasks/constrained-plan.md
       - name: Set up replenishment strategies
@@ -1897,6 +1921,8 @@
         items:
         - name: Safety stock fulfillment for items
           href: master-planning/safety-stock-replenishment.md
+        - name: Safety stock pegging options
+          href: master-planning/safety-stock-pegging.md
         - name: Use the safety stock journal to update minimum coverage for items
           href: master-planning/safety-stock-journal.md
       - name: Manage planned orders
@@ -1923,6 +1949,8 @@
             href: master-planning/introduction-demand-forecasting.md
           - name: Demand forecasting setup
             href: master-planning/demand-forecasting-setup.md
+          - name: Intercompany planning groups for demand forecasting
+            href: master-planning/intercompany-planning-groups-demand-forecasting.md
           - name: Generate a statistical baseline forecast
             href: master-planning/generate-statistical-baseline-forecast.md
           - name: Make manual adjustment to the baseline forecast
@@ -1961,6 +1989,8 @@
             href: master-planning/deprecated-master-planning-overview.md
           - name: Migration to Planning Optimization for master planning
             href: master-planning/new-master-planning-engine.md
+          - name: Continue to use deprecated master planning for some companies
+            href: master-planning/continue-using-deprecated-planning.md
           - name: Parameters not used by Planning Optimization
             href: master-planning/planning-optimization/not-used-parameters.md
           - name: Differences between Planning Optimization and the deprecated master planning engine
@@ -1985,18 +2015,62 @@
             href: master-planning/tasks/create-material-plan-co-products.md
           - name: Cancel a job that was created using the deprecated master planning engine
             href: master-planning/cancel-master-planning-job.md
-    - name: Mobile app (Deprecated)
+    - name: Demand planning
+      items:
+      - name: Demand planning home page
+        href: demand-planning/demand-planning-home-page.md
+      - name: What's new or changed in Demand planning
+        href: demand-planning/whats-new-demand-planning.md
+      - name: Setup and administration
+        items:
+        - name: Install and enable Demand planning
+          href: demand-planning/install-demand-planning.md
+        - name: Security roles and row-level security
+          href: demand-planning/users-access.md
+      - name: Import data
+        items:
+        - name: View and customize tables for holding imported data
+          href: demand-planning/tables.md
+        - name: Import data into Demand planning
+          href: demand-planning/import-data.md
+      - name: Transform data
+        href: demand-planning/transform-data.md
+      - name: Calculations
+        items:
+        - name: Work with calculation profiles
+          href: demand-planning/calculation-profiles.md
+        - name: Design calculation models
+          href: demand-planning/design-calculation-models.md
+      - name: Forecasts
+        items:
+        - name: Work with forecast profiles
+          href: demand-planning/forecast-profiles.md
+        - name: Design forecast models
+          href: demand-planning/design-forecast-models.md
+        - name: Use your own custom Azure Machine Learning algorithms in Demand planning
+          href: demand-planning/custom-azure-machine-learning-algorithms.md
+      - name: Use phase in/out functionality to simulate planned changes
+        href: demand-planning/phase-in-out.md
+      - name: Time series and planning data
+        href: demand-planning/time-series.md
+      - name: Analyze demand plans with Copilot (preview)
+        href: demand-planning/demand-planning-copilot.md
+      - name: Export and download data
+        href: demand-planning/export-data.md
+      - name: Rolling forecasts
+        href: demand-planning/rolling-forecasts.md
+    - name: Mobile app (deprecated)
       items:
       - name: Mobile app home page
-        href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?context=/dynamics365/context/supply-chain
+        href: ../fin-ops-core/fin-ops/mobile-apps/Mobile-app-home-page.md?context=/dynamics365/context/supply-chain
       - name: Mobile workspaces
         items:
         - name: Available mobile workspaces
-          href: ../fin-ops-core/dev-itpro/mobile-apps/mobile-workspaces-released.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/fin-ops/mobile-apps/mobile-workspaces-released.md?context=/dynamics365/context/supply-chain
         - name: Asset management
           href: asset-management/asset-management-mobile-workspace.md
         - name: Company directory
-          href: ../fin-ops-core/dev-itpro/mobile-apps/company-directory-mobile-workspace.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/fin-ops/mobile-apps/company-directory-mobile-workspace.md?context=/dynamics365/context/supply-chain
         - name: Cost controlling
           href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/supply-chain
         - name: Expense management
@@ -2004,9 +2078,9 @@
         - name: Inventory on-hand
           href: inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/supply-chain
         - name: Invoice approvals
-          href: ../fin-ops-core/dev-itpro/mobile-apps/invoice-approval-mobile-workspace.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/fin-ops/mobile-apps/invoice-approval-mobile-workspace.md?context=/dynamics365/context/supply-chain
         - name: My team
-          href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/fin-ops/mobile-apps/manager-self-service-mobile-workspace.md?context=/dynamics365/context/supply-chain
         - name: Project mobile applications overview
           href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=/dynamics365/supply-chain/toc.json
         - name: Project time entry
@@ -2028,7 +2102,7 @@
       - name: Office integration tutorial
         href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?context=/dynamics365/context/supply-chain
       - name: Open entity data in Excel and update it using the Excel add-in
-        href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?context=/dynamics365/context/supply-chain
+        href: ../fin-ops-core/fin-ops/mobile-apps/use-excel-add-in.md?context=/dynamics365/context/supply-chain
       - name: Open in Excel experiences FAQ
         href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?context=/dynamics365/context/supply-chain
       - name: Add templates to the Open lines in Excel menu
@@ -2036,7 +2110,7 @@
       - name: Customize the Open in Microsoft Office menu
         href: ../fin-ops-core/dev-itpro/office-integration/customize-open-office-menu.md?context=/dynamics365/context/supply-chain
       - name: Configure and send email
-        href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?context=/dynamics365/context/supply-chain
+        href: ../fin-ops-core/dev-itpro/organization-administration/configure-email.md?context=/dynamics365/context/supply-chain
       - name: Develop email experiences
         href: ../fin-ops-core/dev-itpro/dev-tools/sysmailer-develop.md?context=/dynamics365/context/supply-chain
       - name: Troubleshoot the Office integration
@@ -2070,13 +2144,13 @@
       - name: Global address book
         items:
         - name: Global address book overview
-          href: ../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/dev-itpro/organization-administration/overview-global-address-book.md?context=/dynamics365/context/supply-chain
         - name: Plan for the global address book and other address books
           href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?context=/dynamics365/context/supply-chain
         - name: Configure the global address book
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?context=/dynamics365/context/supply-chain
         - name: Address setup
-          href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/dev-itpro/organization-administration/global-address-book-address-setup.md?context=/dynamics365/context/supply-chain
         - name: Address books FAQ
           href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?context=/dynamics365/context/supply-chain
         - name: Configure address books
@@ -2086,7 +2160,7 @@
         - name: Workflow system overview
           href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?context=/dynamics365/context/supply-chain
         - name: Workflow system architecture
-          href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/dev-itpro/organization-administration/workflow-system-architecture.md?context=/dynamics365/context/supply-chain
         - name: Workflow elements
           href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?context=/dynamics365/context/supply-chain
         - name: Workflow actions
@@ -2118,33 +2192,35 @@
           - name: Configure line-item workflows
             href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?context=/dynamics365/context/supply-chain
         - name: Configure the Workflow Message Processing batch job as critical
-          href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/dev-itpro/organization-administration/workflow-batch-job-critical.md?context=/dynamics365/context/supply-chain
         - name: Delegate work items in a workflow
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?context=/dynamics365/context/supply-chain
         - name: View workflow history
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?context=/dynamics365/context/supply-chain
+        - name: Workflow history summary
+          href: ../fin-ops-core/fin-ops/organization-administration/workflow-history-summary.md?context=/dynamics365/context/supply-chain  
         - name: Configure the system to send workflow-related email to users
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?context=/dynamics365/context/supply-chain
         - name: Workflow types
           items:
           - name: Creating a workflow type
-            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?context=/dynamics365/context/supply-chain
+            href: ../fin-ops-core/dev-itpro/organization-administration/workflow-type-create.md?context=/dynamics365/context/supply-chain
           - name: Workflow type checklist
-            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?context=/dynamics365/context/supply-chain
+            href: ../fin-ops-core/dev-itpro/organization-administration/workflow-type-checklist.md?context=/dynamics365/context/supply-chain
           - name: Create a workflow category
-            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?context=/dynamics365/context/supply-chain
+            href: ../fin-ops-core/dev-itpro/organization-administration/workflow-type-category.md?context=/dynamics365/context/supply-chain
           - name: Create a query for a workflow type
-            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?context=/dynamics365/context/supply-chain
+            href: ../fin-ops-core/dev-itpro/organization-administration/workflow-type-query.md?context=/dynamics365/context/supply-chain
           - name: Create a new workflow type
-            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?context=/dynamics365/context/supply-chain
+            href: ../fin-ops-core/dev-itpro/organization-administration/workflow-type-create-new.md?context=/dynamics365/context/supply-chain
           - name: Create a workflow document class
-            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?context=/dynamics365/context/supply-chain
+            href: ../fin-ops-core/dev-itpro/organization-administration/workflow-type-document-create.md?context=/dynamics365/context/supply-chain
           - name: Create a SubmitToWorkflow class
-            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?context=/dynamics365/context/supply-chain
+            href: ../fin-ops-core/dev-itpro/organization-administration/workflow-type-submit-to-workflow.md?context=/dynamics365/context/supply-chain
           - name: Associate a workflow document class with a workflow type
-            href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?context=/dynamics365/context/supply-chain
+            href: ../fin-ops-core/dev-itpro/organization-administration/workflow-type-associate-document.md?context=/dynamics365/context/supply-chain
         - name: Workflow types report
-          href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/dev-itpro/organization-administration/workflow-types-report.md?context=/dynamics365/context/supply-chain
         - name: Workflow FAQ
           href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?context=/dynamics365/context/supply-chain
       - name: Alerts
@@ -2166,24 +2242,24 @@
       - name: Case management
         items:
         - name: Case management overview
-          href: ../fin-ops-core/fin-ops/organization-administration/cases.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/dev-itpro/organization-administration/cases.md?context=/dynamics365/context/supply-chain
         - name: Plan case security, processes, and categories
-          href: ../fin-ops-core/fin-ops/organization-administration/plan-case-management.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/dev-itpro/organization-administration/plan-case-management.md?context=/dynamics365/context/supply-chain
       - name: Record templates
         items:
         - name: Record templates overview
           href: ../fin-ops-core/fin-ops/organization-administration/record-templates.md?context=/dynamics365/context/supply-chain
         - name: Create a record template
-          href: ../fin-ops-core/dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/fin-ops/data-entities/create-record-template-facilitate-data-entry.md?context=/dynamics365/context/supply-chain
         - name: Use a record template to create a new record
-          href: ../fin-ops-core/dev-itpro/data-entities/tasks/use-record-template-new-record.md?context=/dynamics365/context/supply-chain
+          href: ../fin-ops-core/fin-ops/data-entities/use-record-template-new-record.md?context=/dynamics365/context/supply-chain
       - name: Configure document management
-        href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?context=/dynamics365/context/supply-chain
+        href: ../fin-ops-core/dev-itpro/organization-administration/configure-document-management.md?context=/dynamics365/context/supply-chain
       - name: Configure and send email
-        href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?context=/dynamics365/context/supply-chain
+        href: ../fin-ops-core/dev-itpro/organization-administration/configure-email.md?context=/dynamics365/context/supply-chain
       - name: Date/time data and time zones
-        href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?context=/dynamics365/context/supply-chain
-    - name: Pricing management
+        href: ../fin-ops-core/dev-itpro/organization-administration/date-time-zones.md?context=/dynamics365/context/supply-chain
+    - name: Pricing management (preview)
       items:
       - name: Pricing management overview
         href: pricing-management/pricing-management-overview.md
@@ -2285,6 +2361,10 @@
           href: procurement/purchase-order-overview.md
         - name: Approve and confirm purchase orders
           href: procurement/purchase-order-approval-confirmation.md
+        - name: Calculate requested ship dates for purchase orders
+          href: master-planning/supplier-requested-confirmed-dates.md
+        - name: Enable Copilot support for managing changes to confirmed purchase orders
+          href: procurement/purchase-order-changes-after-confirmation-enable.md
         - name: Review and accept changes to confirmed purchase orders
           href: procurement/purchase-order-changes-after-confirmation.md
         - name: Purchase order approval mobile workspace
@@ -2323,8 +2403,10 @@
           href: procurement/purchase-agreements.md
         - name: Create a purchase agreement
           href: procurement/tasks/create-purchase-agreement.md
-        - name: Automatic allocation of charges
+        - name: Automatic application of charges
           href: procurement/automatic-charges-allocation.md
+        - name: Units of measure for line-level charges
+          href: sales-marketing/line-charges-specific-unit.md
         - name: Vendor rebates
           href: procurement/vendor-rebates.md
       - name: Purchasing policies
@@ -2437,7 +2519,7 @@
           href: pim/uom-conversion-per-product-variant.md
         - name: Create a released product for a single company
           href: pim/tasks/create-released-product-single-company.md
-        - name: Cross-company product sharing
+        - name: Cross-company product sharing (preview)
           href: pim/share-products-across-companies.md
         - name: Product data entities
           href: pim/data-entities.md
@@ -2469,6 +2551,20 @@
           href: pim/country-of-origin.md
         - name: Dual-use goods
           href: pim/dual-use.md
+        - name: Advanced export management
+          items:
+          - name: Advanced export management overview
+            href: pim/export-control-overview.md
+          - name: Enable and configure advanced export management
+            href: pim/export-control-configure.md
+          - name: Work with advanced export management for products, sales orders, and quotations
+            href: pim/export-control-use.md
+          - name: Extend export control sales order functionality
+            href: pim/export-control-extend-sales-orders.md
+          - name: Extend export control rules functionality
+            href: pim/export-control-extend-rules.md
+          - name: Extend export control license functionality
+            href: pim/export-control-extend-licenses.md
         - name: Hazardous materials
           items:
           - name: Hazardous materials overview
@@ -2619,6 +2715,8 @@
         href: production-control/process-automation-quality-orders.md
       - name: Integrate with third-party manufacturing execution systems
         href: production-control/mes-integration.md
+      - name: React to last-minute changes in production
+        href: production-control/react-to-last-minute-changes.md
       - name: Discrete manufacturing
         items:
         - name: Maintain production master data
@@ -2699,6 +2797,8 @@
             href: production-control/release-production-orders.md
           - name: Report production orders as finished
             href: production-control/report-production-orders-as-finished.md
+          - name: Register and track batch/serial numbers for finished products and their components (preview)
+            href: production-control/tracked-components.md
           - name: Configure job card for devices
             href: production-control/config-job-card-device.md
           - name: Report as finished from the job card device 
@@ -2893,6 +2993,8 @@
             href: production-control/substitute-items-bom-lines.md
           - name: Registration for manufacturing execution
             href: production-control/registration-manufacturing-execution.md
+          - name: Register and track batch/serial numbers for finished products and their components (preview)
+            href: production-control/tracked-components.md
           - name: Production feedback
             href: production-control/production-feedback.md
           - name: Time and attendance registration
@@ -2918,17 +3020,15 @@
         - name: Show vacation balances in the production floor execution interface
           href: production-control/production-floor-execution-payroll-stats.md
         - name: Style the production floor execution interface
-          href: production-control/production-floor-execution-styles.md
+          href: supply-chain-dev/production-floor-execution-styles.md
         - name: Customize the production floor execution interface
-          href: production-control/production-floor-execution-customize.md
+          href: supply-chain-dev/production-floor-execution-customize.md
     - name: Rebate management
       items:
       - name: Rebate management module overview
         href: rebate-management/rebate-management-overview.md
       - name: Set up and configure the Rebate management module
         items:
-        - name: Turn on the Rebate management module for your system
-          href: rebate-management/rebate-management-enable.md
         - name: Rebate management parameters
           href: rebate-management/rebate-management-parameters.md
         - name: Rebate management deal workflows
@@ -2977,12 +3077,20 @@
           href: sales-marketing/tasks/ship-orders-direct-deliveries.md
         - name: Ship sales orders without warehousing
           href: sales-marketing/tasks/ship-sales-orders-without-warehousing.md
-        - name: Automatic allocation of charges
+        - name: Automatic application of charges
           href: procurement/automatic-charges-allocation.md
+        - name: Auto-charge compounding and sequencing
+          href: sales-marketing/auto-charge-sequence-compound.md
+        - name: Units of measure for line-level charges
+          href: sales-marketing/line-charges-specific-unit.md
+        - name: Period charges
+          href: sales-marketing/period-charges.md
         - name: Create a purchase order from a sales order
           href: sales-marketing/tasks/create-purchase-order-sales-order.md
         - name: Create sales orders
           href: sales-marketing/tasks/create-sales-orders.md
+        - name: Calculate sales totals when prices include sales tax
+          href: sales-marketing/sales-tax-calculation.md
         - name: Manage order holds
           href: sales-marketing/tasks/manage-order-holds.md
         - name: Confirm sales orders
@@ -3011,6 +3119,14 @@
           href: sales-marketing/tasks/mass-sales-quotations.md
         - name: Create and edit sales quotations
           href: sales-marketing/tasks/create-edit-sales-quotations.md
+      - name: Product bundles
+        items:
+        - name: Product bundles overview
+          href: sales-marketing/product-bundles-overview.md
+        - name: Enable and set up product bundles
+          href: sales-marketing/product-bundles-setup.md
+        - name: Sell and allocate product bundles
+          href: sales-marketing/product-bundles-use.md
       - name: Intercompany trade
         items:
         - name: Set up intercompany trade
@@ -3071,6 +3187,44 @@
         items:
         - name: Sales returns
           href: warehousing/sales-returns.md
+        - name: Receive unannounced sales returns
+          href: warehousing/sales-returns-unannounced.md
+        - name: Set up customer returns
+          items:
+          - name: Return reason codes and disposition codes
+            href: service-management/disposition-and-return-reason-codes.md
+          - name: Set up disposition codes
+            href: service-management/set-up-disposition-codes.md
+          - name: Set up return reason codes
+            href: service-management/set-up-return-reason-code.md
+          - name: Specify how to dispose of returned items
+            href: service-management/specify-how-to-dispose-of-returned-items.md
+        - name: Authorize customer returns
+          items:
+          - name: Return cost price and return lot ID
+            href: service-management/return-cost-price-and-return-lot-id.md
+          - name: Cancel a return order
+            href: service-management/cancel-return-order.md
+          - name: Create an item replacement order
+            href: service-management/create-item-replacement-order.md
+          - name: Delete a return order
+            href: service-management/delete-return-order.md
+          - name: Pass returned items on to inspection
+            href: service-management/pass-returned-items-on-to-inspection.md
+          - name: Post arrival journal for returned products
+            href: service-management/post-arrival-journal-for-returned-products.md
+          - name: Receive partial deliveries of returned items
+            href: service-management/receive-partial-deliveries-returned-items.md
+          - name: Receive returned items
+            href: service-management/receiving-returned-items.md
+          - name: Register the receipt of returned items
+            href: service-management/register-the-receipt-of-returned-items.md
+          - name: Take returned items through inspection
+            href: service-management/take-returned-items-through-inspection.md
+          - name: Packing slip updates for returns
+            href: service-management/packing-slip-updates-returns.md
+          - name: Perform invoice updates for returns
+            href: service-management/perform-invoice-updates-for-returns.md
       - name: Commission
         items:
         - name: Register sales commissions
@@ -3175,16 +3329,6 @@
             href: service-management/integration-service-agreements-projects.md
         - name: Set up repair management
           href: service-management/repair-management.md
-        - name: Set up customer returns
-          items:
-          - name: Customer returns overview
-            href: service-management/disposition-and-return-reason-codes.md
-          - name: Set up disposition codes
-            href: service-management/set-up-disposition-codes.md
-          - name: Set up return reason codes
-            href: service-management/set-up-return-reason-code.md
-          - name: Specify how to dispose of returned items
-            href: service-management/specify-how-to-dispose-of-returned-items.md
       - name: Work with customer service
         items:
         - name: Work with customer service overview
@@ -3233,34 +3377,6 @@
             href: service-management/view-stage-reason-codes.md
           - name: View compliance with service level agreements
             href: service-management/view-compliance-with-service-level-agreements.md
-        - name: Authorize customer returns
-          items:
-          - name: Disposition codes and return reason codes
-            href: service-management/disposition-and-return-reason-codes.md
-          - name: Return cost price and return lot ID
-            href: service-management/return-cost-price-and-return-lot-id.md
-          - name: Cancel a return order
-            href: service-management/cancel-return-order.md
-          - name: Create an item replacement order
-            href: service-management/create-item-replacement-order.md
-          - name: Delete a return order
-            href: service-management/delete-return-order.md
-          - name: Pass returned items on to inspection
-            href: service-management/pass-returned-items-on-to-inspection.md
-          - name: Post arrival journal for returned products
-            href: service-management/post-arrival-journal-for-returned-products.md
-          - name: Receive partial deliveries of returned items
-            href: service-management/receive-partial-deliveries-returned-items.md
-          - name: Receive returned items
-            href: service-management/receiving-returned-items.md
-          - name: Register the receipt of returned items
-            href: service-management/register-the-receipt-of-returned-items.md
-          - name: Take returned items through inspection
-            href: service-management/take-returned-items-through-inspection.md
-          - name: Packing slip updates for returns
-            href: service-management/packing-slip-updates-returns.md
-          - name: Perform invoice updates for returns
-            href: service-management/perform-invoice-updates-for-returns.md
         - name: Deliver services
           items:
           - name: Plan and allocate service orders
@@ -3346,7 +3462,7 @@
         - name: Transportation management engines
           href: transportation/transportation-management-engines.md
         - name: Create a new transportation management engine
-          href: transportation/create-new-transportation-management-engine.md
+          href: supply-chain-dev/create-new-transportation-management-engine.md
       - name: Set up transportation management
         items:
         - name: Set up shipping carriers
@@ -3393,11 +3509,13 @@
           href: transportation/plan-freight-transportation-routes-multiple-stops.md
         - name: Load building workbench
           href: transportation/tasks/load-building-workbench.md
+        - name: Integrate with Microsoft Sustainability Manager
+          href: transportation/sustainability-manager-integration-setup.md
         - name: Plan loads using hub consolidation
           items:
           - name: Plan loads using hub consolidation overview
             href: transportation/plan-loads-hub-consolidation.md
-          - name: Plan loads and shipments using the Load planning workbench
+          - name: Plan loads and shipments using the outbound load planning workbench
             href: warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md
         - name: USMCA certification of origin
           href: transportation/usmca-certification-of-origin.md
@@ -3411,7 +3529,7 @@
           href: transportation/transportation-management-discount.md
         - name: LTL classes
           href: transportation/ltl-class.md
-        - name: NMFC codes
+        - name: Work with NMFC codes in Dynamics 365 Supply Chain Management
           href: transportation/nmfc-codes.md
         - name: Schedule appointments
           items:
@@ -3484,15 +3602,15 @@
       - name: Landed cost data entities
         items:
         - name: Landed cost entities overview
-          href: landed-cost\landed-cost-entities-overview.md
+          href: landed-cost/landed-cost-entities-overview.md
         - name: Voyage creation entities
-          href: landed-cost\landed-cost-entities-voyage-creation.md
+          href: landed-cost/landed-cost-entities-voyage-creation.md
         - name: Cost transaction entities
-          href: landed-cost\landed-cost-entities-cost-transactions.md
+          href: landed-cost/landed-cost-entities-cost-transactions.md
         - name: Container activities entity
-          href: landed-cost\landed-cost-entities-container-activities.md
+          href: landed-cost/landed-cost-entities-container-activities.md
         - name: Vendor invoice entities
-          href: landed-cost\landed-cost-entities-vendor-invoices.md
+          href: landed-cost/landed-cost-entities-vendor-invoices.md
     - name: Warehouse management
       items:
       - name: Warehouse management overview
@@ -3503,17 +3621,21 @@
         items:
         - name: Warehouse handling of inbound loads for purchase orders
           href: warehousing/inbound-load-handling.md
+        - name: Create or modify an inbound load
+          href: warehousing/create-or-modify-an-inbound-load.md
         - name: Register items enabled for warehouse management processes using an item arrival journal
           href: warehousing/tasks/register-items-advanced-warehousing.md
         - name: Register items for a basic warehousing enabled item using an item arrival journal
           href: warehousing/tasks/register-items-basic-warehousing.md
-        - name: Import inbound ASNs through the V3 data entity
+        - name: Import inbound ASNs through data entities
           href: warehousing/import-asn-data-entity.md
+        - name: Receive unannounced sales returns
+          href: warehousing/sales-returns-unannounced.md
         - name: Manage inbound putaway based on container types
           href: warehousing/inbound-putaway-by-container-type.md
         - name: Cross-dock products from receiving warehouse to stores
           href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
-        - name: Set up a location directive for purchase order put-away
+        - name: Set up a location directive for purchase order putaway
           href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
         - name: Set up a work template for purchase orders
           href: warehousing/tasks/set-up-work-template-purchase-orders.md
@@ -3545,11 +3667,13 @@
             href: warehousing/cluster-position-full.md
           - name: System-directed cluster picking
             href: warehousing/system-directed-cluster-pick.md
-          - name: Over picking for sales orders and transfer orders
+          - name: Over-picking for sales orders and transfer orders
             href: warehousing/over-picking-for-sales-and-transfer-orders.md
+          - name: Over-pick materials for production and batch orders
+            href: warehousing/over-pick-materials-for-production-and-batch-orders.md
           - name: Set different dimensions for packing and storage
             href: warehousing/packing-vs-storage-dimensions.md
-          - name: Batch and license plate confirmation
+          - name: Batch, serial, and license plate confirmation
             href: warehousing/batch-and-license-plate-confirmation.md
           - name: Create transfer orders from the warehouse app
             href: warehousing/create-transfer-order-from-warehouse-app.md
@@ -3627,7 +3751,7 @@
             href: warehousing/consolidate-shipments-automatic.md
           - name: Scenario 2 - Consolidate shipments when the shipment consolidation policy is overridden
             href: warehousing/consolidate-shipments-release-to-warehouse-override.md
-          - name: Scenario 3 - Consolidate shipments by releasing to warehouse from the load planning workbench
+          - name: Scenario 3 - Consolidate shipments by releasing to warehouse from the outbound load planning workbench
             href: warehousing/consolidate-shipments-load-planning-workbench.md
           - name: Scenario 4 - Consolidate shipments by using the shipment consolidation workbench
             href: warehousing/consolidate-shipments-manual-workbench.md
@@ -3703,16 +3827,32 @@
             href: warehousing/mhax.md
       - name: The Warehouse Management mobile app
         items:
+        - name: What's new or changed in the Warehouse Management mobile app
+          href: warehousing/whats-new-wma.md
+        - name: Warehouse Mobile app accessibility features
+          href: warehousing/warehouse-app-accessibility.md
         - name: Install, set up, and use mobile devices
           items:
-          - name: What's new or changed in the Warehouse Management mobile app
-            href: warehousing/whats-new-wma.md
-          - name: Install and connect the Warehouse Management mobile app
+          - name: Install the Warehouse Management mobile app
             href: warehousing/install-configure-warehouse-management-app.md
-          - name: Mass deploy the Warehouse Management mobile app
+          - name: User-based authentication
+            href: warehousing/warehouse-app-authenticate-user-based.md
+          - name: User-based authentication FAQ
+            href: warehousing/warehouse-app-user-based-auth-faq.md
+          - name: Mass deploy the mobile app with user-based authentication
+            href: warehousing/warehouse-app-intune-user-based.md
+          - name: Service-based authentication
+            href: warehousing/warehouse-app-authenticate-service-based.md
+          - name: Mass deploy the mobile app with service-based authentication
             href: warehousing/warehouse-app-intune.md
+          - name: Mobile device user accounts
+            href: warehousing/mobile-device-work-users.md
+          - name: Customize the company logo shown in the Warehouse Management mobile app
+            href: warehousing/warehouse-app-company-logo.md
           - name: Mobile bar code support
             href: warehousing/mobile-barcode-support.md
+          - name: Advanced barcode scanner configuration
+            href: warehousing/warehouse-app-adv-scanner-config.md
           - name: Scan bar codes using a camera in the Warehouse Management mobile app
             href: warehousing/scan-bar-codes-using-a-camera.md
         - name: Set up fields and menus for mobile devices
@@ -3731,6 +3871,10 @@
             href: warehousing/warehouse-app-data-inquiry.md
           - name: License plate receiving via the Warehouse Management mobile app
             href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
+          - name: Set up a mobile device menu item for moving items in the warehouse
+            href: warehousing/mobile-device-movement-menu.md
+          - name: Set up a mobile device menu item for moving items by template
+            href: warehousing/mobile-device-move-by-template-menu.md
           - name: Set up a mobile device menu item for completing work in a purchase order
             href: warehousing/tasks/set-up-mobile-device-menu.md
           - name: Set up a mobile device menu item to register received items
@@ -3741,16 +3885,16 @@
             href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
           - name: Mixed license plate receiving on a mobile device
             href: warehousing/mixed-license-plate-receiving.md
+          - name: Set up a mobile device menu item for completing mixed license plates
+            href: warehousing/mobile-device-complete-mixed-lp-menu.md
           - name: Configure Display older batches within warehouse on a mobile device
             href: warehousing/display-older-batches-within-warehouses.md
           - name: Pick oldest batch on a mobile device
             href: warehousing/pick-oldest-batch.md
         - name: Global mobile device parameters
           href: warehousing/mobile-device-parameters.md
-        - name: Mobile device user accounts
-          href: warehousing/mobile-device-work-users.md
-        - name: Warehouse Mobile app accessibility features
-          href: warehousing/warehouse-app-accessibility.md
+        - name: Warehouse mobile devices workspace
+          href: warehousing/mobile-device-workspace.md
         - name: Mobile device user settings
           href: warehousing/mobile-device-user-settings.md
         - name: Warehouse app event processing
@@ -3760,7 +3904,7 @@
         - name: Extend warehouse mobile processes
           items:
           - name: Process guide framework
-            href: warehousing/process-guide-framework.md
+            href: supply-chain-dev/process-guide-framework.md
           - name: Assign step icons and titles
             href: warehousing/step-icons-titles.md
       - name: Warehouse configuration
@@ -3797,6 +3941,8 @@
             href: warehousing/wave-allocation-method.md
           - name: Schedule work creation during wave
             href: warehousing/configure-wave-schedule-work-creation.md
+          - name: Automatic rewaving of nonallocated shipment lines
+            href: warehousing/auto-rewave-shipments.md
           - name: Wave execution notifications
             href: warehousing/wave-execution-notifications.md
           - name: Wave label printing
@@ -3813,18 +3959,20 @@
             href: warehousing/print-container-labels.md
           - name: License plate label layouts and printing
             href: warehousing/print-license-plate-labels-using-label-layouts.md
+          - name: Enable license plate label printing
+            href: warehousing/tasks/license-plate-label-printing.md
           - name: Custom label layouts and printing
             href: warehousing/custom-label-layouts-and-printing.md
           - name: Document routing label layouts
             href: warehousing/document-routing-layout-for-license-plates.md
           - name: Print labels using an external service
-            href: warehousing/label-printing-using-external-label-service.md
+            href: supply-chain-dev/label-printing-using-external-label-service.md
           - name: Print labels using the Loftware NiceLabel label service solution
-            href: warehousing/label-printing-using-nicelabel.md
+            href: supply-chain-dev/label-printing-using-nicelabel.md
           - name: Print labels using the Seagull Scientific BarTender label service solution
-            href: warehousing/label-printing-using-bartender.md
-          - name: Enable license plate label printing
-            href: warehousing/tasks/license-plate-label-printing.md
+            href: supply-chain-dev/label-printing-using-bartender.md
+          - name: Dynamic printer selection
+            href: warehousing/dynamic-printing-selection.md
         - name: Auto-update shipments
           href: warehousing/auto-update-shipment.md
         - name: Create a location profile
@@ -3857,6 +4005,8 @@
           href: warehousing/warehouse-transactions.md
         - name: Optimize location directive queries
           href: warehousing/location-directives-optimize.md
+        - name: Analyze warehouse material movement through process mining (preview)
+          href: warehousing/warehouse-material-movement-analysis.md
         - name: Warehousing telemetry
           items:
           - name: Enable warehousing telemetry with Application Insights
@@ -3865,27 +4015,51 @@
             href: warehousing/application-insights-monitor-usage-performance.md
         - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to finance and operations
           href: warehousing/upgrade-migration-warehouse-management-processes.md
-    - name: Responsible AI 
-      items:
-      - name: Overview
-        href: transparency-note.md
-      - name: Transparency notes for the Confirmed purchase orders with changes workspace
-        href: transparency-note-confirmed-po-changes.md
+      - name: Warehouse management only mode
+        items:
+        - name: Warehouse management only mode overview
+          href: warehousing/wms-only-mode-overview.md
+        - name: Enable and configure warehouse management only mode
+          href: warehousing/wms-only-mode-setup.md
+        - name: Warehouse management only mode with external ERP systems
+          href: warehousing/wms-only-mode-external-erp.md
+        - name: Warehouse management only mode with external shared warehouses
+          href: warehousing/wms-only-mode-external-shared-warehouse.md
+        - name: Exchange data between systems
+          href: warehousing/wms-only-mode-exchange-data.md
+        - name: Work with warehouse management only mode in Supply Chain Management
+          href: warehousing/wms-only-mode-shared-and-external-detail-use.md
+        - name: Example of using inbound and outbound shipment orders
+          href: warehousing/wms-only-mode-example.md
+        - name: Warehouse management only mode frequently asked questions
+          href: warehousing/wms-only-mode-faq.md
     - name: Supply Chain Management development 
       items:
       - name: Gantt control development guide
         href: ../fin-ops-core/dev-itpro/user-interface/gantt-development-guide.md?context=/dynamics365/context/supply-chain
       - name: Create a new transportation management engine
-        href: transportation/create-new-transportation-management-engine.md?context=/dynamics365/context/supply-chain
+        href: supply-chain-dev/create-new-transportation-management-engine.md?context=/dynamics365/context/supply-chain
       - name: Extend inventory on-hand data entities
         href: inventory/extend-on-hand-entities.md
-      - name: Create and process custom message queues and message types
+      - name: Create and process message queues and message types
         href: supply-chain-dev/message-processor.md
-  - name: Finance and operations apps development and administration 
+    - name: Responsible AI 
+      items:
+      - name: Overview
+        href: responsible-ai-overview.md
+      - name: Responsible AI FAQ for AI summaries with Copilot
+        href: faq-summaries.md
+      - name: Responsible AI FAQ for Analyze demand plans with Copilot (preview)
+        href: faq-demand-planning-copilot.md
+      - name: Responsible AI FAQ for the Confirmed purchase orders with changes workspace
+        href: faq-confirmed-po-changes.md
+      - name: Responsible AI FAQ for Inquire into inventory with Copilot (preview)
+        href: faq-inventory-query.md
+  - name: Development and administration for finance and operations apps 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 
     href: ../finance/finance-welcome.md
   - name: Dynamics 365 Commerce
-    href: ../commerce/index.md
+    href: ../commerce/welcome.md
   - name: Dynamics 365 Human Resources
-    href: ../human-resources/index.md
+    href: ../human-resources/welcome.md

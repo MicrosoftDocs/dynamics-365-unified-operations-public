@@ -1,15 +1,15 @@
 ---
 title: Scheduling with infinite capacity
-description: This article provides information about infinite capacity scheduling. It also describes current feature limitations.
+description: Learn about infinite capacity scheduling. It also describes current feature limitations, including an outline on added functionality.
 author: t-benebo
-ms.date: 08/09/2022
-ms.topic: article
-ms.search.form: RouteInventProd
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
+ms.topic: article
+ms.date: 08/09/2022
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-06-09
+ms.search.form: RouteInventProd
 ms.dyn365.ops.version: 10.0.22
 ---
 
@@ -21,7 +21,7 @@ The *Infinite capacity scheduling for Planning Optimization* feature introduces 
 
 ## Turn the infinite capacity scheduling feature on or off
 
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is turned on by default. Admins can turn this functionality on or off by searching for the *Infinite capacity scheduling for Planning Optimization* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *Infinite capacity scheduling for Planning Optimization* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 For more information about this feature, see [Scheduling with resource selection based on capability](capability-based-scheduling.md).
 

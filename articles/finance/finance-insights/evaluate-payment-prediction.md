@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Evaluate the initial customer payment prediction model
-description: This article describes the steps that you can take to understand the customer payment prediction model and evaluate its effectiveness. 
-author: ShivamPandey-msft
-ms.date: 05/02/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about the steps that you can take to understand the customer payment prediction model and evaluate its effectiveness.
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: article
+ms.date: 05/02/2022
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-05-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.8
-
+ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ---
 
 # Evaluate the initial customer payment prediction model

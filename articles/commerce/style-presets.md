@@ -4,8 +4,6 @@ description: This article describes how to work with site style presets in Micro
 author: phinneyridge
 ms.date: 05/28/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global

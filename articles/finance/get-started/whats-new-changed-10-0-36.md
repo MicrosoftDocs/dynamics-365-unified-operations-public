@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Finance 10.0.36 (October 2023)
-description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.36 preview release.
+description: Learn about features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.36 preview release distributed in October 2023.
 author: twheeloc
-ms.date: 07/28/2023
-ms.topic: faq
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: faq
+ms.date: 12/13/2023
+ms.custom: evergreen
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-09-02
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.36
-
 ---
 
 # What's new or changed in Dynamics 365 Finance 10.0.36 (October 2023)
@@ -37,7 +24,7 @@ This article lists features that are new or changed for Microsoft Dynamics 365 F
 
 - **Preview of release:** July 2023
 - **General availability of release (self-update):** September 2023
-- **General availability of release (auto-update):** October 2023
+- **General availability of release (auto-update):** September 2023
 
 ## Features included in this release
 
@@ -53,6 +40,20 @@ The following table lists the features that are included in this release. We mig
 | Cash and bank management | Accounts payable and accounts receivable foreign currency revaluation performance improvement by splitting into even batches | This feature improves the performance of foreign currency revaluation by splitting large batches into even batches to prevent large batches from a specific vendor or customer. | Feature management |
 | Cash and bank management | Use the time zone option on bank statement import page for BAI2 format bank statement id generation | If a bank statement format uses time stamps to generate bank statement IDs, this feature uses the time zone option on the bank statement import page instead of the user option. | Feature management |
 | General ledger | Post foreign currency realized gains/losses for ledger settlements | This feature posts foreign currency realized gains and realized losses for ledger settlements when the reporting currency values of the debits and credits differ. This feature also enhances the usability of the ledger settlement process by reducing the effort that's required to mark vouchers. | Feature management |
+|General ledger|Financial tags for Sales order documents	|This feature adds Financial tags to the sales order, packing slip and customer invoice documents. |	Feature management|
+|Credit and collections|Collections coordinator workspace|This workspace gives the collections coordinator (agent) a new timeline view of invoices, payments, activities and collection letters sent to a customer. A summary of a customer’s payment history, credit and overdue amounts provides more in-depth information helps collections coordinators research customer's history. Contact information directly on the workspace page allows users to start an email with one click or make a phone call to the customer or internal stakeholder on the customer account. |Feature management|
+|Credit and collections|Collections coordinator summary|This feature displays an AI-generated summary and an option to create an AI-generated draft email on the collections coordinator workspace. The AI-generated summary includes information about a customer’s payment history, outstanding debt amount and sales. An AI-generated draft email, formatted like a reminder letter, allows the collections coordinator to quickly view and edit an email before sending to customers. |Feature management|
+
+## Feature enhancements included in this release
+
+The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-finance).
+
+| Feature area | Feature name | More information |
+|--------------|--------------|------------------|
+| General Ledger | Enhanced main account delete functionality | Main account records along with master records used in a financial journal have improved delete behavior. The enhanced behavior scans to check if the records are used in a transaction or on a setup page. The scan results shows what to clear (if possible) and try the delete action again.| 
+| Tax regulatory reporting | Tax declaration model mapping | This enhancement impacts all VAT declarations that use the Tax declaration model mapping: Austria, Bahrain, Belgium, Czechia, Denmark, Egypt, Finland, France, Germany, Hungary, Indonesia, Malaysia, Netherlands, New Zealand, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom. The new version of the [Tax declaration model mapping - 136.302](https://fix.lcs.dynamics.com/Issue/Details?kb=0&bugId=819950&dbType=3&qc=8f64cac76f77df0328c110150b0ba0875154bb6f6bda44a38c5af33202fb172f) or higher, significantly improves performance and memory consumption of all dependent VAT declarations and covers more credit-note specific scenarios. |
+| Data Management | Job history cleanup | By default, job history entries and related staging table data that are older than 90 days are automatically deleted.[More details.](../../fin-ops-core/dev-itpro/sysadmin/cleanuproutines.md)| 
+| Revenue and expense deferrals | Cost deferrals for stocked service items | Stocked service items will now post with both consumption and revenue deferrals. Previously, only revenue deferrals were created for stocked service items.| 
 
 ## Features turned on by default in this release
 
@@ -60,6 +61,7 @@ The following table lists the features that are turned on by default in version 
 
 | Feature name | Feature state | Module |
 |--------------|---------------|--------|
+| Enable consumption of "Original document is credit note" property from tax transaction in VAT declaration reporting | On by default | Tax |
 | Financial tags | On by default | General ledger |
 | (Italy) Fiscal journal page numbering improvements | Mandatory | General ledger |
 | Journal reversal no longer requires consecutive number sequence | Mandatory | General ledger |
@@ -70,6 +72,7 @@ The following table lists the features that are turned on by default in version 
 | New voucher and date for new transactions in the advanced bank reconciliation bank statement | On by default | Cash and bank management |
 | Ability to post detailed vendor and customer payments, but summarize amounts to bank account | On by default | Cash and bank management |
 | Time zone for importing bank statements using Electronic reporting | On by default | Cash and bank management |
+| Optimized authorization check for POS user using external identity | Mandatory | Employee management |
 
 ## Features removed from Feature management
 

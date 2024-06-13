@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Sales tax payments and rounding rules
-description: This article explains how the rounding rule setup on the Sales tax authorities works and rounding the sales tax balance during the Settle and post sales tax job.
+description: Learn how the rounding rule setup on the Sales tax authorities works and rounding the sales tax balance during the Settle and post sales tax job.
 author: kailiang
-ms.date: 10/29/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: TaxAuthority
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 6134
-ms.assetid: 7dcd3cf5-ebdf-4a9f-806c-1296c7da0331
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kailiang
+ms.topic: article
+ms.date: 10/29/2021
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: TaxAuthority
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 7dcd3cf5-ebdf-4a9f-806c-1296c7da0331
 ---
 
 # Sales tax payments and rounding rules

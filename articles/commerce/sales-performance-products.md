@@ -6,9 +6,6 @@ description: You can study profitability for the top 10 products using Dynamics 
 author: ashishmsft
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SysOperationsTemplateForm

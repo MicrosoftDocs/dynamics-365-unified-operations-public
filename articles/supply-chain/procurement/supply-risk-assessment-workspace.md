@@ -1,15 +1,15 @@
 ---
 title: Actionable workspace for discovering and handling supplier risks
-description: This article describes the Supply Risk Assessment workspace, which provides a direct view of top key insights that are related to supplier performance and related risks. It also provides embedded reports for detailed performance and risk analysis.
+description: Learn aboutthe Supply Risk Assessment workspace, which provides a direct view of top key insights that are related to supplier performance and related risks.
 author: cabeln
 ms.author: cabeln
-ms.reviewer: kamaybac
-ms.search.form: 
 ms.topic: how-to
-ms.date: 10/27/2022 
+ms.date: 05/22/2024
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: 
 ---
 
 # Actionable workspace for discovering and handling supplier risks
@@ -43,7 +43,7 @@ The **Overview** tab shows metrics and actionable content that let you navigate 
 
 The **Key insights** FastTab of the **Overview** tab shows the following tiles. Each tile reports a metric that is calculated for the scope of the workspace.
 
-- **Late confirmed** – The number of purchase order lines where vendors returned a confirmed delivery date (CDD) that was later than your requested delivery date (RDD).
+- **Late confirmed** – The number of purchase order lines where vendors returned a confirmed receipt date (CRD) that was later than your requested receipt date (RRD).
 - **Not on time** – The number of purchase order lines that weren't delivered on time (OT).
 - **Not in full** – The number of purchase order lines that weren't delivered in full (IF).
 - **Single sourced** – The number of planned order items that only one vendor is assigned to. These items might indicate increased risk.
@@ -60,7 +60,7 @@ Each tile shows the number of items that were ordered and the number of items th
 
 ![Vendors not OTIF tab on the Details and impact FastTab.](media/sra-details-impact.png "Vendors not OTIF tab on the Details and impact FastTab")
 
-Select a tile to view the list of order lines that have been counted by that tile.
+Select a tile to view the list of order lines that were counted by that tile.
 
 ### Links FastTab
 

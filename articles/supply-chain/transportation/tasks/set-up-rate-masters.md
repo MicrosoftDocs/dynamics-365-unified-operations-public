@@ -6,8 +6,6 @@ description: This procedure shows you how to set up a rate master.
 author: Weijiesa
 ms.date: 10/16/2020
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
 ms.search.form: TMSBreakMaster,TMSRateMaster,TMSRateMasterBase,TMSRateBaseType, TMSRouteWorkbench

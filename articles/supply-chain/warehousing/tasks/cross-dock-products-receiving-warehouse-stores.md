@@ -6,8 +6,6 @@ description: This procedure walks through the steps to create and process a Cros
 author: Mirzaab
 ms.date: 02/17/2016
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

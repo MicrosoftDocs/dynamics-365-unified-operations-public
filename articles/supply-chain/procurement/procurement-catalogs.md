@@ -1,31 +1,19 @@
 ---
-# required metadata
-
 title: Procurement catalogs overview
-description: This article describes, at a high level, how purchasing professionals can set up and maintain procurement catalogs. Procurement catalogs define the items and services that company employees can order for internal use.
-author: GalynaFedorova
-ms.date: 07/25/2019
+description: Learn how purchasing professionals can set up and maintain procurement catalogs, which define the services that company employees can order for internal use.
+author: Henrikan
+ms.author: henrikan
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, CatDisplayProductRelationAdd
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 07/25/2019
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: ["2214"]
 ms.collection: get-started
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
+ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, CatDisplayProductRelationAdd
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ---
 
 # Procurement catalogs overview

@@ -4,7 +4,6 @@ description: This article describes how to configure receipt emails so that they
 author: bicyclingfool
 ms.date: 01/30/2023
 ms.topic: article
-ms.prod: 
 ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg

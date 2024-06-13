@@ -429,5 +429,5 @@ You then construct a `WHSMobileAppStepInfo` object, and set the icon and/or titl
 
 ## Additional resources
 
-- [Install and connect the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
+- [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
 - [Mobile device user settings](mobile-device-user-settings.md)

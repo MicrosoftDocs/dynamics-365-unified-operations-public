@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: General journal processing
-description: This article describes capabilities in Microsoft Dynamics 365 Finance that help make general journal processing easier, and help ensure that correct data is captured and internal control isn't compromised.  
+description: Learn about capabilities in Microsoft Dynamics 365 Finance that help make general journal processing easier, and help ensure that correct data is captured.
 author: kweekley
+ms.author: kweekley
 ms.topic: article
 ms.date: 6/13/2023
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerJournalSetup, LedgerJournalTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kweekley
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerJournalSetup, LedgerJournalTable
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ---
 
 # General journal processing
@@ -110,9 +98,12 @@ A button is available on the journal page to unlock a journal that has a status 
 The ability to recall a journal in a workflow that has a status of "unrecoverable" is enabled by using the **Workflow** button on a journal, and on the **Workflow history** page. This is enabled by the **Resetting the workflow status for journals** feature on the **Feature management** page.
 
 ### Delete journal lines
-In Dynamics 365 Finance version 10.0.34, a new feature **Delete journal performance using batch** is available. This feature allows the delete process to be scheduled. This lets users to continue other work instead of waiting for the delete processing to complete. 
+In Dynamics 365 Finance version 10.0.34, a new feature **Delete journal performance using batch** is available. This feature allows the delete process, for unposted journals, to be scheduled. This lets users continue other work instead of waiting for the delete processing to complete. 
 
 To quickly delete all journal lines in a journal, go to **Functions** > **Delete journal lines**. This function affects extensions on the **LedgerJournalTrans** table. It's **Delete** method. The set of lines are removed without calling each line's **Delete** method. 
+
+>[!Note]
+> Dynamics 365 finance and operations doesn't allow the deletion of posted transactions. 
 
 
 

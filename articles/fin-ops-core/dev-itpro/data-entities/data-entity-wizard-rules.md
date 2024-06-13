@@ -1,38 +1,22 @@
 ---
-# required metadata
-
 title: Data entity wizard rules
-description: This article provides information about the natural key expansion of surrogate foreign key fields and the expansion of child/parent relations.
-author: peakerbl
-ms.date: 10/26/2017
+description: Learn about the natural key expansion of surrogate foreign key fields and the expansion of child/parent relations.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 10/26/2017
+ms.reviewer: twheeloc
 audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 6234
 ms.assetid: 551ac5d6-980c-487f-a15c-66d7ab80924a
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Data entity wizard rules
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 This article provides information about the natural key expansion of surrogate foreign key fields and the expansion of child/parent relations.
 

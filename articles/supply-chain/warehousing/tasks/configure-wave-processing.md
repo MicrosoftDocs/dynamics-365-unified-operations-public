@@ -6,8 +6,6 @@ description: This article provides an example of how to set up the criteria that
 author: Mirzaab
 ms.date: 03/17/2021
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

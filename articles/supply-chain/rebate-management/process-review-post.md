@@ -1,28 +1,15 @@
 ---
-# required metadata
-
 title: Process, review, and post rebates
-description: This article describes how to process your Rebate management deals, calculate their discounts, review the transactions that are generated, post transactions, and review the postings.
+description: Learn how to process your Rebate management deals, calculate their discounts, review the transactions that are generated.
 author: sherry-zheng
-ms.date: 02/19/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: TAMRebateDeal
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: chuzheng
-ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: 10.0.18
+ms.topic: how-to
+ms.date: 05/15/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: TAMRebateDeal
 ---
 
 # Process, review, and post rebates
@@ -79,7 +66,7 @@ To create a source transaction, follow these steps.
     - **Warehouse** – Select a warehouse where the product is available, and that qualifies for a rebate deal.
 
 1. On the **Sales order lines** FastTab, on the toolbar, select **Sales order line \> Price details**. This command is available only if you enabled price details as described in the previous section.
-1. On the **Price details** page, select the **Rebate management** FastTab. This FastTab lists all the rebate management deals that apply to the current order line and shows the estimated rebate amount in the order's currency. Note that the amounts are only estimates of the future rebate claims. The actual rebate amounts might differ. Here are some of the factors that might affect the actual amounts:
+1. On the **Price details** page, select the **Rebate management** FastTab. This FastTab lists all the rebate management deals that apply to the current order line and shows the estimated rebate amount in the order's currency. The amounts are only estimates of the future rebate claims. The actual rebate amounts might differ. Here are some of the factors that might affect the actual amounts:
 
     - The total sales volume that the customer achieved under a periodic rebate agreement.
     - Whether the customer returned all quantities or partial quantities.
@@ -93,7 +80,7 @@ To create a source transaction, follow these steps.
     - **Rebate management vendor rebate amount** (sales orders and purchase orders)
 
 1. Close the **Price details** page.
-1. If the sales order should not qualify for the rebates that you just viewed, follow these steps to exclude rebates. (However, you usually won't exclude rebates.)
+1. If the sales order shouldn't qualify for the rebates that you just viewed, follow these steps to exclude rebates. (However, you usually won't exclude rebates.)
 
     1. On the **Sales order lines** FastTab, select the relevant line.
     1. On the **Line details** FastTab, on the **Price and discount** tab, set the **Exclude from rebate management** option to *Yes*. This option doesn't apply to purchase orders. Furthermore, only customer rebates are excluded when this option is set to *Yes*. Customer royalty rebates and vendor rebates still apply.
@@ -137,7 +124,7 @@ When you process a deal, the system calculates all relevant rebates and royaltie
 
     - **Process \> Provision** – Provision a set of accruals for each relevant deal line, but don't post them. This menu item is unavailable for deals where the **Rebate output** field is set to *Item*.
     - **Process \> Rebate management** – Process a series of transactions that provide the value of the rebate for each deal line.
-    - **Process \> Write off** – For each source transaction for the rebate deal and specified period, process the variance between the amounts that were posted for a provision and for rebate management. This menu item is unavailable for deals where the **Rebate output** field is set to *Item*. 
+    - **Process \> Write off** – For each source transaction for the rebate deal and specified period, process the variance between the amounts that were posted for a provision and for rebate management. This menu item is unavailable for deals where the **Rebate output** field is set to *Item*.
 
 1. In the dialog box that appears, set the **From date** and **To date** fields to define the date range for the calculation.
 1. Select **OK** to run the calculation.
@@ -237,11 +224,11 @@ To view and edit Rebate management transactions by using the rebate workbench, f
 
 ## Post rebates transactions
 
-To post the value of a processed provision, rebate management amount, and write-off, you must run the posting process. The posting process marks the provision, rebate management, or write-off transactions as posted, and creates the target transaction. If you don't have to review the target transaction, these transactions can be set up so that they are automatically posted.
+To post the value of a processed provision, rebate management amount, and write-off, you must run the posting process. The posting process marks the provision, rebate management, or write-off transactions as posted, and creates the target transaction. If you don't have to review the target transaction, these transactions can be set up so that they're automatically posted.
 
 ### Set up the system to post all target transactions automatically
 
-To set up your system to post all target transactions as soon as they are generated by a posting provision, rebate management amount, and write-off, turn on the **Automatically post journals** and/or **Automatically post free text invoices** option on the **Rebate management parameters** page. For more information, see [Rebate management parameters](rebate-management-parameters.md).
+To set up your system to post all target transactions as soon as they're generated by a posting provision, rebate management amount, and write-off, turn on the **Automatically post journals** and/or **Automatically post free text invoices** option on the **Rebate management parameters** page. For more information, see [Rebate management parameters](rebate-management-parameters.md).
 
 ### Post transactions for all lines for one or more deals
 
@@ -331,7 +318,7 @@ To review the journal entries that are associated with a Rebate management deal,
 To review journals by using the rebate workbench, follow these steps.
 
 1. Go to **Rebate management \> Rebate management deals \> Rebate workbench**.
-1. Set the **Show** field to _All_ or _Posted_.
+1. Set the **Show** field to *All* or *Posted*.
 1. Find and select the line that you want to inspect. Then, on the Action Pane, on the **Rebate workbench** tab, in the **View** group, select **Target transactions**. This button is available only if relevant postings exist for the selected line.
 1. A list of relevant journals, documents, or items appears. To view more information about any journal, document, or item, select its row, and then, on the Action Pane, select **View details**.
 

@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Manage recruiting processes
-description: This article describes a concept that recruiters can use to track the steps in a recruiting process.
+description: Learn about manage recruiting, a concept that recruiters can use to track the steps in a recruiting process, including an overview on recruitment projects.
 author: twheeloc
-ms.date: 01/10/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: HRMApplication, HRMRecruitingTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 7501
-ms.assetid: 1ad725bf-20e2-42a1-8068-111f7ddddad9
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: article
+ms.date: 01/10/2022
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: HRMApplication, HRMRecruitingTable
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 1ad725bf-20e2-42a1-8068-111f7ddddad9
 ---
 
 # Manage recruiting processes

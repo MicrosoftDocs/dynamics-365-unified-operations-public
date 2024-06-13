@@ -4,8 +4,6 @@ description: This article explains how you can extend the Commerce initializatio
 author: josaw1
 ms.date: 02/01/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global
@@ -117,7 +115,7 @@ If you created a new HQ table and a new channel database table, follow these ste
 9. Go to **Retail and Commerce > Headquarters setup > Commerce scheduler >Initialize commerce scheduler**.
 10. Run the CDX initialization by clicking the **OK** button on **Initialize commerce scheduler** dialog.
 
-## Pull data from a new channel database table to a new HQ table by using a push job
+## Pull data from a new channel database table to a new HQ table by using a pull job
 
 To pull data from a new channel table to HQ, you have two options:
 

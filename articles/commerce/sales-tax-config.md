@@ -4,8 +4,6 @@ description: This article provides an overview of sales tax group selection for 
 author: gvrmohanreddy
 ms.date: 04/02/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: global
@@ -77,7 +75,7 @@ The following table explains whether destination-based taxes or customer account
 
 [Whole amount and Interval calculation options for sales tax codes](../finance/general-ledger/whole-amount-interval-options-sales-tax-codes.md?toc=%2fdynamics365%2fcommerce%2ftoc.json) 
 
-[Calculation of tax exemption](tax-exempt-price-inclusive.md) 
+[Calculation of tax exemption](dev-itpro/tax-exempt-price-inclusive.md) 
 
 
 

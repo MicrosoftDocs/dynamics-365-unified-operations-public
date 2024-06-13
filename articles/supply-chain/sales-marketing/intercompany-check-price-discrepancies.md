@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 10.0.22
 
 You can use this procedure to check for price discrepancies on intercompany orders.
 
-1. Go to **Procurement and sourcing \> Periodic \> Clean up \> Check intercompany order price discrepancies**.
+1. Go to **Procurement and sourcing \> Purchase orders \> Intercompany \> Check intercompany order price discrepancies**.
 1. Set up a batch job, if you need to, and then select **OK** to check the prices and discounts for intercompany sales orders and purchase orders. Otherwise, select **Cancel** to close the page without performing the check.
 
     > [!TIP]

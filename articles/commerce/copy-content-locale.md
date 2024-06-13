@@ -4,7 +4,7 @@ description: This article describes how to copy existing content to another loca
 author: josaw1
 ms.date: 01/12/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw

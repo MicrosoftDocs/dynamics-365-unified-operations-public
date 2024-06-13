@@ -1,18 +1,15 @@
 ---
 title: Purchasing cards
-description: This article explains how to setup and track purchasing card transactions.
+description: Learn how to setup and track purchasing card transactions, including an outline and step-by-step process for enabling purchasing card pages and fields.
 author: velofog
-ms.date: 09/03/2019
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
+ms.date: 09/03/2019
 ms.reviewer: twheeloc
+audience: Application User
 ms.search.region: Global
-ms.author: velofog
 ms.search.validFrom: 2019-09-03
 ms.dyn365.ops.version: 10.0.7
-ms.search.industry: public sector
 ---
 
 # Purchasing cards

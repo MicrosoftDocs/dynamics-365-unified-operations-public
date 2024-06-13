@@ -4,8 +4,6 @@ description: This article describes how to turn on location-based store detectio
 author: brianshook
 ms.date: 07/02/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global
@@ -48,9 +46,9 @@ To turn on location-based store detection in Commerce, follow these steps.
 
 [Manage robots.txt files](manage-robots-txt-files.md)
 
-[Upload URL redirects in bulk](upload-bulk-redirects.md)
+[Upload URL redirects in bulk](dev-itpro/upload-bulk-redirects.md)
 
-[Set up a B2C tenant in Commerce](set-up-B2C-tenant.md)
+[Set up a B2C tenant in Commerce](dev-itpro/set-up-B2C-tenant.md)
 
 [Set up custom pages for user logins](custom-pages-user-logins.md)
 

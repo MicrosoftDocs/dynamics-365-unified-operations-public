@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Invoice matching and intercompany purchase orders
-description: The purchasing legal entity that is involved in an intercompany trade transaction might be set up to use accounts payable invoice matching. In this case, the posting requirements for both intercompany trade and accounts payable invoice matching must be met before intercompany vendor invoices can be posted.
-author: abruer
-ms.date: 02/11/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: PurchLineMatchingPolicy
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 3101
-ms.assetid: 9c7c2e44-45f8-4325-b6de-a09fe790f9cf
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about how the purchasing legal entity that is involved in an intercompany trade transaction might be set up to use accounts payable invoice matching.
+author: twheeloc
 ms.author: shpandey
+ms.topic: article
+ms.date: 02/11/2022
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: PurchLineMatchingPolicy
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 9c7c2e44-45f8-4325-b6de-a09fe790f9cf
 ---
 
 # Invoice matching and intercompany purchase orders

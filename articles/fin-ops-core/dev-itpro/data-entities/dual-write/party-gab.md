@@ -1,13 +1,13 @@
 ---
 title: Party and global address book
-description: This article describes the Party and global address book functionality of dual-write.
+description: Learn about the Party and global address book functionality of dual-write, including a table that describes various row types for contacts.
 author: RamaKrishnamoorthy
-ms.date: 06/22/2023
-ms.topic: article
-audience: Application User, IT Pro
-ms.reviewer: twheeloc
-ms.search.region: global
 ms.author: ramasri
+ms.topic: article
+ms.date: 08/22/2023
+ms.reviewer: twheeloc
+audience: IT Pro
+ms.search.region: global
 ms.search.validFrom: 2021-02-22
 ---
 
@@ -149,7 +149,7 @@ During the lead qualification process, you can provide both a business phone num
 
 4. Open the finance and operations app. Navigate to the Data Management module and select the Dual-write tab. The dual-write administration page opens.
 
-5. Apply both the solutions installed in steps 2 and 3 using the [Apply Solution](link-your-environment.md) function.
+5. Apply both the solutions installed in steps 2 and 3 using the [Apply Solution]((../../dev-itpro/power-platform/enable-power-platform-integration.md) function.
 
 6. Stop the following maps, because they aren't required anymore. Instead, run the `Contacts V2 (msdyn_contactforparties)` map.
 
@@ -179,7 +179,7 @@ During the lead qualification process, you can provide both a business phone num
     `Personal character types (msdyn_personalcharactertypes)` | 1.0.0.0 | This is a new map added as part of this release.
     `Salutations (msdyn_salutations)` | 1.0.0.0 | This is a new map added as part of this release.
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | This is a new map added as part of this release.
-    `CDS Address roles (msdyn_addressroles)` | 1.0.0.0 | This is a new map added as part of this release.
+    `CDS location roles (msdyn_addressroles)` | 1.0.0.0 | This is a new map added as part of this release.
 
 8. Before running the above maps, you must update the integration keys manually as described in the following steps. Then select **Save**.
 
@@ -202,7 +202,7 @@ During the lead qualification process, you can provide both a business phone num
     | Company (field) | Exact Match |
     | Relationship Type (field) | Exact Match |
     | Party Id (field) | Exact Match |
-    | Select (field) | (blank) |
+
 
     ![Duplicate rule for Accounts.](media/duplicate-rule-1.PNG)
 
@@ -218,7 +218,7 @@ During the lead qualification process, you can provide both a business phone num
     | Last Name (field) | Exact Match |
     | Company (field) | Exact Match |
     | Party Id (field) | Exact Match |
-    | Select (field) | (blank) |
+
 
     ![Duplicate rule for Contacts.](media/duplicate-rule-2.PNG)
 
@@ -251,10 +251,11 @@ During the lead qualification process, you can provide both a business phone num
 
 > [!NOTE]
 > The `CDS Contacts V2 (contacts)` map is the map that you stopped in step 1. When you try to run other maps, these 2 maps may appear in the list of dependents. Don't run these maps.
->
+>  
 > If the party and global address book solution is installed, you must disable the plugin named `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead`. 
-> To disable the plugin, contact support. 
-> If you uninstall the party and global address book solution, then you must re-enable the plugin.
+> If the supply chain dual write solution version is 2.3.4.203 or later, the plugin will be disabled by plugin owners.
+> If the supply chain dual write solution version is 2.3.4.203 or earlier, disable the plugin by contacting support.
+> If you uninstalled the party and global address book solution, then you must re-enable the plugin.
 > To re-enable the plugin, contact support. 
 > 
 > The `msdyn_*partynumber` field (a single line text field) that is included in the **Account**, **Contact** and **Vendor** tables should not be used going forward. The label name has a prefix of **(Deprecated)** for clarity. Instead, use the **msdyn_partyid** field. The field is a lookup to the **msdyn_party** table.

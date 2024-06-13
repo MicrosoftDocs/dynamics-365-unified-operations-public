@@ -4,9 +4,7 @@ description: This article explains how a user assigned to the System Administrat
 author: kfend
 ms.date: 07/02/2019
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
+audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: filatovm

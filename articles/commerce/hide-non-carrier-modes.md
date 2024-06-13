@@ -6,9 +6,6 @@ description: This article describes a configuration option that can prevent non-
 author: hhainesms
 ms.date: 10/24/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

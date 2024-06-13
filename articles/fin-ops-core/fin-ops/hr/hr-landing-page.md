@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Human resources overview
-description: Human resources streamlines routine recordkeeping tasks, automates processes related to staffing your organization, and provides a framework for human resources staff to manage areas of oversight.
+description: Learn about human resources, which streamlines routine recordkeeping tasks and provides a framework for human resources staff to manage areas of oversight.
 author: twheeloc
-ms.date: 07/25/2019
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: DefaultDashboard
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: anbichse
+ms.topic: overview
+ms.date: 07/25/2019
+ms.reviewer: twheeloc
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: DefaultDashboard
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Human resources overview
@@ -85,9 +73,9 @@ In addition to compensating your staff with wages, salaries, and bonuses, you ca
 
 Microsoft Dynamics AX can help you maintain a safe work environment that's in compliance with applicable laws, including the Americans with Disabilities Act and immigration and naturalization laws, among others. For example, you can manage the physical requirements for specific jobs, as well as track requests for accommodations that can help your organization optimize the skills of its workforce.
 
-- [Form I-9 verification](localizations/noam-usa-form-i-9-verification.md)
-- [Comply with the Americans with Disabilities Act (ADA)](localizations/noam-usa-comply-ada.md)
-- [Track time off for the Family and Medical Leave Act (FMLA)](localizations/noam-usa-track-time-for-fmla.md)
+- [Form I-9 verification](localizations/usa/noam-usa-form-i-9-verification.md)
+- [Comply with the Americans with Disabilities Act (ADA)](localizations/usa/noam-usa-comply-ada.md)
+- [Track time off for the Family and Medical Leave Act (FMLA)](localizations/usa/noam-usa-track-time-for-fmla.md)
 
 ## Gather information using questionnaires
 

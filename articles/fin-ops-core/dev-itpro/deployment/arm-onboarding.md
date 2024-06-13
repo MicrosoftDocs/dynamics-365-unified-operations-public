@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Complete the Azure Resource Manager onboarding process
-description: This article explains how to complete the Azure Resource Manager onboarding process for your connectors. 
+description: Learn how to complete the Azure Resource Manager onboarding process for your connectors, including known limitations. 
 author: saurabhsurana
-ms.date: 03/15/2022
+ms.author: sasurana
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 03/15/2022
+ms.reviewer: johnmichalak
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 141093
 ms.assetid: dcd23629-246d-4fbc-adf5-7245bb2121e4
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sasurana
 ms.search.validFrom: 2016-08-30
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 2
-
 ---
 
 # Complete the Azure Resource Manager onboarding process
@@ -68,7 +55,7 @@ The administrator of the tenant must complete the following procedure.
 Follow these steps to assign the **Contributor** role to the **Dynamics Deployment Services \[wsfed-enabled\]** application.
 
 1.  In the [Azure portal](https://portal.azure.com), on the **Subscription** tab, select the Azure subscription, and then select the **Access Control (IAM)** line item.
-2.  Select **Add**, select **Add role assignment**. In the dialog box, set **Role** to **Contributor** and set **Assign access to** to **Azure AD user, group, or service principal**. In the **Select** field, search for and select **Dynamics Deployment Services \[wsfed-enabled\]**. Select **Save**. 
+2.  Select **Add**, select **Add role assignment**. In the dialog box, set **Role** to **Contributor** and set **Assign access to** to **Microsoft Entra user, group, or service principal**. In the **Select** field, search for and select **Dynamics Deployment Services \[wsfed-enabled\]**. Select **Save**. 
 
     > [!NOTE]
     > Some Azure subscriptions have a **Users** section instead of an **Access control (IAM)** section. In this case, in the **Add users** dialog box, in the **Select** field, enter **Dynamics Deployment Services \[wsfed-enabled\]**, and then select **Select**.
@@ -95,7 +82,7 @@ Follow these steps to enable the Azure Connector and, as required, add an LCS us
     > If you're enabling Azure Resource Manager for an existing connector, select **Edit**.
 
 3.  Enter the connector name, enter the Azure subscription ID to deploy to, and set the **Configure to use Azure Resource manager** option to **Yes**.
-4.  In the **Azure subscription AAD Tenant domain** field, enter the domain name of the Azure subscription account admin, and then select **Next**.
+4.  In the **Azure subscription Microsoft Entra Tenant domain** field, enter the domain name of the Azure subscription account admin, and then select **Next**.
 5.  Authorize access to the subscription, either by adding the LCS user to the Azure subscription or by using the management certificate. 
 
     > [!MPORTANT] 
@@ -137,4 +124,3 @@ There are a few known limitations when you set up or manage Azure connectors in 
 - A management certificate can't be reused in the same project for the same Azure subscription ID, regardless of the region.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

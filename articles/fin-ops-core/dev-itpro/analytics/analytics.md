@@ -1,15 +1,13 @@
 ---
 title: Analytics, aggregate measurements, and KPI modeling
-description: This article discusses the embedded business intelligence (BI), aggregate measurements, dimensions, and data entities, and aggregate programming model.
+description: Learn about the embedded business intelligence (BI), aggregate measurements, dimensions, and data entities, and aggregate programming model.
 author: MilindaV2
-ms.date: 11/02/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: milindav
+ms.topic: article
+ms.date: 11/02/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 6603a84c-00b2-4358-84a7-dd6fee3055ab

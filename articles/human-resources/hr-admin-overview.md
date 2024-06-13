@@ -4,11 +4,8 @@
 title: Administration overview
 description: This article provides a list of the help topics and other resources to set up, manage, and troubleshoot Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/11/2021
+ms.date: 09/05/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SystemAdministrationWorkspaceForm
@@ -29,14 +26,29 @@ ms.dyn365.ops.version: Human Resources
 
 # Administration overview
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-
-
 This article provides a list of the help topics and other resources to set up, manage, and troubleshoot Dynamics 365 Human Resources.
+
+## Configure Power BI workspaces
+1.	If you are using Power BI, configure Power BI with the FinOps entity store. For additional information, see [Power BI integration with the entity store](../fin-ops-core/dev-itpro/analytics/power-bi-integration-entity-store.md). 
+
+2.	Enable the relevant aggregate measure based on the workspace where you want to enable Power BI. For addtional information, see the table below:  
+
+|Workspace name	|Measurement name|
+|-------------|-----------------|
+|Personnel management|Workforce|
+|Employee development|Workforce|
+|Compensation management|Workforce|
+|Benefits|	Workforce|
+|Leave and Absence	|Leave|
+|Recruiting	|Recruiting|
+|Learning	|Training|
+
+3.	Set the frequency on how frequently want the report to be updated for each of the aggregate measure. For more information, see [Automated Entity store refresh](../fin-ops-core/dev-itpro/analytics/automated-entity-store-refresh.md).
+
+
+Additional help topics and other resources to set up, manage, and troubleshoot Dynamics 365 Human Resources:
 
 - [System requirements](hr-admin-system-requirements.md)
 

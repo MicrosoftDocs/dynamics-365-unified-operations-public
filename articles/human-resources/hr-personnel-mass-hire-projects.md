@@ -6,9 +6,6 @@ description: This article describes mass hire projects, which allow human resour
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HRMMassHireProject, HcmPersonnelManagementWorkspace
@@ -17,7 +14,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7481
 ms.assetid: 5f5eb271-76eb-4305-bd1c-5d171dafccc9
 ms.search.region: Global
 # ms.search.industry: 
@@ -29,12 +25,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Mass hire projects
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
 
 Mass hire projects allow human resources specialists to create multiple positions and efficiently hire workers into those positions.
 

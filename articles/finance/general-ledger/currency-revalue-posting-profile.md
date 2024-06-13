@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Currency revaluation posting profiles
-description: This article provides information about currency revaluation posting profiles.
+description: Learn about currency revaluation posting profiles, including a step-by-step process for creating a currency revaluation posting profile.
 author: moaamer
-ms.date: 01/10/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerClosingSheet
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 01/10/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-11-28
+ms.search.form: LedgerClosingSheet
 ms.dyn365.ops.version: AX 10.0.0
-
+ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ---
 
 # Currency revaluation posting profiles

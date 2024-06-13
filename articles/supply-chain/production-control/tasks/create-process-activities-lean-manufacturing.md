@@ -1,28 +1,20 @@
 --- 
-# required metadata 
- 
 title: Create process activities for lean manufacturing
-description: Create a process activity for lean manufacturing. 
+description: Learn how to create a process activity for lean manufacturing, including step-by-step processes for finding production flow versions and creating new activites. 
 author: johanhoffmann
+ms.author: johanho
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityWizard, LeanWorkCellLookup, InventLocationIdLookup, PlanActivityDetails, KanbanJobPickingListPart
-audience: Application User 
-# ms.devlang:  
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityWizard, LeanWorkCellLookup, InventLocationIdLookup, PlanActivityDetails, KanbanJobPickingListPart
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create process activities for lean manufacturing
 
 [!include [banner](../../includes/banner.md)]

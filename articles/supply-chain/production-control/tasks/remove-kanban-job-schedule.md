@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Remove a kanban job from the schedule
-description: This procedure focuses on removing a planned process kanban job from the schedule by reverting the job status to Not planned. 
+description: Learn about removing a planned process kanban job from the schedule by reverting the job status to Not planned, including a step-by-step process.
 author: johanhoffmann
-ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: KanbanJobSchedulingListPage, SysLookupMultiSelectGrid, KanbanJobStatusUpdate   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.custom:
+ms.reviewer: kamaybac   
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: KanbanJobSchedulingListPage, SysLookupMultiSelectGrid, KanbanJobStatusUpdate
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Remove a kanban job from the schedule
 
 [!include [banner](../../includes/banner.md)]

@@ -6,7 +6,7 @@ description: This article provides an overview of store order fulfillment in Mic
 author: BrianShook
 ms.date: 11/16/2022
 ms.topic: overview
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: brshoo
@@ -20,7 +20,7 @@ ms.search.validFrom: 2017-10-30
 
 This article provides an overview of store order fulfillment in Microsoft Dynamics 365 Commerce.
 
-Many retailers would like to optimize order fulfillment by enabling stores to fill orders. Order fulfillment at the store level can help to ease overstock scenarios for a specific store, or may be needed from a logistical standpoint in cases where a store has extra capacity or is located within closer shipping distance to the customer. To address this need, a unified order fulfillment operation is available at the point of sale.
+Many retailers would like to optimize order fulfillment by enabling stores to fill orders. Order fulfillment at the store level can help ease overstock scenarios for a specific store. From a logistical standpoint, order fulfillment might be needed when a store has extra capacity or is located within closer shipping distance to the customer. To address this need, a unified order fulfillment operation is available at the point of sale.
 
 Orders for fulfillment at a specific store have the store's warehouse designated on the header or lines of the order.
 
@@ -35,11 +35,11 @@ The following video provides an overview and demo of store fulfillment capabilit
 
 Order fulfillment, [Operation ID 928](pos-operations.md), can be used to access the store order fulfillment work area in the point of sale.
 
-The order fulfillment operation does not have its own permission out-of-the-box, but in the future, users will be able to use the **Allow retrieve order** permission to invoke the operation from the point of sale.
+The order fulfillment operation does not have its own permission out-of-the-box, but in the future, users can use the **Allow retrieve order** permission to invoke the operation from the point of sale.
 
-At the store level, a configuration setting is available to determine whether an order line must be accepted manually from within the point of sale. If that configuration option is not set, order lines will be accepted by default. If that configuration option is turned on, users at the point of sale will need to select **Allow accept order** permission to accept orders from within the point of sale.
+At the store level, a configuration setting is available to determine whether an order line must be accepted manually from within the point of sale. If that configuration option is not set, order lines are accepted by default. If that configuration option is turned on, users at the point of sale need to select **Allow accept order** permission to accept orders from within the point of sale.
 
-Order lines can also be rejected from the point of sale. Rejecting an order line signifies that it will not be fulfilled at that store and sends the order line back for reassignment to another store or warehouse. Order line rejection permission is granted through the **Allow order reject** permission.
+Order lines can also be rejected from the point of sale. Rejecting an order line signifies that it won't be fulfilled at that store and sends the order line back for reassignment to another store or warehouse. Order line rejection permission is granted through the **Allow order reject** permission.
 
 ## Order fulfillment operation parameters
 

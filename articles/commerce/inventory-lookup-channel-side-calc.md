@@ -4,7 +4,7 @@ description: This article describes how the POS inventory lookup operation works
 author: hhainesms
 ms.date: 07/18/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw

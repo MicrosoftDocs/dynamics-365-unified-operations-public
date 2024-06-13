@@ -1,13 +1,13 @@
 ---
 title: Sign up for preview subscriptions
-description: This article explains how to subscribe to the preview/partner offer and deploy an environment.
-author: gianugo
-ms.date: 12/16/2020
+description: Learn about how to subscribe to the preview/partner offer and deploy an environment, including key terms and prerequisites.
+author: josaw1
+ms.author: josaw
 ms.topic: article
-audience: Developer, IT Pro
+ms.date: 12/16/2020
 ms.reviewer: josaw
+audience: Developer, IT Pro
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: bd976311-f6e3-418b-a6c6-49bb568de130
@@ -22,17 +22,17 @@ This article explains how to subscribe to the preview/partner offer and deploy a
 - Subscribe, and create a new Microsoft Online test tenant.
 - Navigate to Lifecycle Services projects.
 - Use various features of Lifecycle Services.
-- Add users to Microsoft Azure Active Directory (Azure AD) and the client.
+- Add users to Microsoft Microsoft Entra and the client.
 - View resources in your subscription email.
 
 ## Key terms
 
 - **Microsoft Online Services tenant** – A tenant is the group of all subscriptions and users for your organization. The tenant is created at the same time as your first subscription in Microsoft Online Services.
 - **Subscription** – A subscription gives you an online cloud environment and experience. It also lets you see how customizations that you develop can be deployed to the cloud.
-- **Microsoft Azure Active Directory** – The cloud environment includes Azure AD. Azure AD helps you manage users, groups, security roles, and licenses for online applications, much as you manage them for on-premise environments.
-- **Users** – Users of the services that your organization has subscribed to are managed in Azure AD. Any users in your tenant can be added and assigned to security roles.
+- **Microsoft Entra ID** – The cloud environment includes Microsoft Entra ID. Microsoft Entra helps you manage users, groups, security roles, and licenses for online applications, much as you manage them for on-premise environments.
+- **Users** – Users of the services that your organization has subscribed to are managed in Microsoft Entra ID. Any users in your tenant can be added and assigned to security roles.
 - **Developers and administrators** – Developers and administrators are users who also have access to Lifecycle Services that lets them manage projects and environments. These users are also end users.
-- **Organizational account** – Users receive Azure AD credentials. These credentials are separate from other desktop or corporate credentials. The Azure AD credentials are used to sign in to Microsoft 365 and other Microsoft cloud services. Users sign in by using their organizational account.
+- **Organizational account** – Users receive Microsoft Entra credentials. These credentials are separate from other desktop or corporate credentials. The Microsoft Entra credentials are used to sign in to Microsoft 365 and other Microsoft cloud services. Users sign in by using their organizational account.
 
     > [!IMPORTANT]
     > For this release, we ask that you not use any existing credentials that are associated with other online services, such as Microsoft 365 or Microsoft Dynamics CRM Online.
@@ -162,4 +162,3 @@ Lifecycle Services is the starting point for performing online administrative ac
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

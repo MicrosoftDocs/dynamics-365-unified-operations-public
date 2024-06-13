@@ -1,22 +1,21 @@
 ---
 title: Run the point of sale (POS) samples
-description: This article explains how to run the POS samples.
+description: This article explains how to run the POS samples in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 02/01/2023
+ms.date: 05/28/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global
-ms.author: josaw
+ms.author: bennettray
 ms.search.validFrom: 2017-11-27
-ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 ---
 
 # Run the point of sale (POS) samples
 
 [!include [banner](../../includes/banner.md)]
+
+This article explains how to run the POS samples in Microsoft Dynamics 365 Commerce.
 
 There are several samples in the Retail SDK that demonstrate extensions. This article explains how to run these samples.
 

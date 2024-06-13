@@ -6,8 +6,6 @@ description: This article explains how to set up the Warehouse Management mobile
 author: Mirzaab
 ms.date: 01/03/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -16,7 +14,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 269384
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: mirzaab

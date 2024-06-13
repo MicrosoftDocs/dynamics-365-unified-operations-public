@@ -3,11 +3,9 @@
 
 title: Service objects overview
 description: This article provides an overview of how to work with service objects.
-author: sorenva
+author: ChristianRytt
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -21,7 +19,7 @@ ms.reviewer: kamaybac
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sorenand
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

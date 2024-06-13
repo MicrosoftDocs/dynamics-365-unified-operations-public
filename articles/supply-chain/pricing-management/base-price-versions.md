@@ -1,18 +1,18 @@
 ---
-title: Base price versions
-description: This article describes how base price versions work in Pricing management.
+title: Base price versions (preview)
+description: Learn how base price versions work in Pricing management, including outlines on determining the base price and base price determination exceptions.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: GUPBasePriceVersion, GUPItemBasePrice
 ms.topic: conceptual
 ms.date: 04/03/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: GUPBasePriceVersion, GUPItemBasePrice
 ---
 
-# Base price versions
+# Base price versions (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

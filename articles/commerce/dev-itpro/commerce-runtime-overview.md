@@ -1,18 +1,14 @@
 ---
 title: Commerce runtime (CRT) architecture and configuration
-description: This article provides information about the architecture and configuration of the Commerce Runtime (CRT).
+description: This article provides an overview of the architecture and configuration of the Microsoft Dynamics 365 Commerce Runtime (CRT).
 author: ShalabhjainMSFT
-ms.date: 06/20/2017
+ms.date: 05/28/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.custom: 218654
 ms.collection: get-started
 ms.assetid: ac422f7e-bc71-4b42-b8c1-4702c6c18421
 ---
@@ -21,7 +17,7 @@ ms.assetid: ac422f7e-bc71-4b42-b8c1-4702c6c18421
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about the architecture and configuration of Commerce Runtime (CRT). The CRT is a collection of portable .NET libraries that encapsulate business logic. It serves as the engine for the commerce channel. 
+This article provides an overview of the architecture and configuration of the Microsoft Dynamics 365 Commerce Runtime (CRT). The CRT is a collection of portable .NET libraries that encapsulate business logic. It serves as the engine for the commerce channel. 
 
 ## Commerce Runtime architecture
 

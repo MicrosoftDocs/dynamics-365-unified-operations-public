@@ -1,12 +1,13 @@
 ---
 title: Access data by using the SysDa classes
-description: This article explains how to create extensible queries and data access statements by using the SysDa application programming interface (API).
+description: Learn how to create extensible queries and data access statements by using the SysDa application programming interface (API).
 author: josaw1
-ms.date: 08/20/2021
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 08/20/2021
+ms.reviewer: josaw
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -75,6 +76,104 @@ while (ss.findNext(so))
 {
     info(t.stringField);
 }
+```
+
+Alternatively, you can use the SysDaQueryObjectBuilder that builds a SysDaQueryObject in a fluent way.
+
+SysDaQueryObjectBuilder supports all four **JOIN** clauses:
+
+- INNER
+- OUTER
+- EXISTS
+- NOT EXISTS JOIN
+
+It supports all 5 aggregation functions: namely,
+- COUNT
+- SUM
+- AVG
+- MIN 
+- MAX
+
+It supports WHERE clauses, and multiple WHERE clauses are ANDed.
+
+It supports all seven comparison expressions: namely,
+
+- ==
+- \<\>
+- \>
+- \>=
+- \<
+- \<=
+- LIKE
+
+It supports ORDER BY clauses.
+
+It supports GROUP BY clauses.
+
+It supports all 16 hints:
+
+- firstOnly1
+- firstOnly10
+- firstOnly100
+- firstOnly1000
+- firstFast
+- reverse
+- forUpdate
+- noFetch
+- forceSelectOrder
+- forceNestedLoop
+- forceLiterals
+- forcePlaceholders
+- repeatableRead
+- optimisticLock
+- pessimisticLock
+- generateOnly
+
+The following examples show two ways to build a SysDaQueryObject.
+
+```xpp
+<code>
+SysDaQueryObjectBuilder::from(exampleTable)
+    .firstOnly()
+    .innerJoin(exampleJoinedTable)
+    .where(exampleTable, fieldStr(ExampleTable, ExampleJoinedTableExampleId)).isEqualTo(exampleJoinedTable, fieldStr(ExampleJoinedTable, ExampleId))
+    .where(exampleTable, fieldStr(ExampleTable, ExampleNumber)).isEqualToLiteral(0)
+    .toSysDaQueryObject();
+</code>
+```
+
+```xpp
+<code>
+var exampleTableQueryObject = new SysDaQueryObject(exampleTable);
+var exampleJoinedTableQueryObject = new SysDaQueryObject(exampleJoinedTable);
+exampleTableQueryObject.firstOnlyHint = SysDaFirstOnlyHint::FirstOnly1;
+exampleTableQueryObject.joinClause(SysDaJoinKind::InnerJoin, exampleJoinedTableQueryObject);
+exampleJoinedTableQueryObject.whereClause(new SysDaAndExpression(
+    new SysDaEqualsExpression(
+        new SysDaFieldExpression(exampleTable, fieldStr(ExampleTable, ExampleJoinedTableExampleId)),
+        new SysDaFieldExpression(exampleJoinedTable, fieldStr(ExampleJoinedTable, ExampleId))),
+    new SysDaEqualsExpression(
+        new SysDaFieldExpression(exampleTable, fieldStr(ExampleTable, ExampleNumber)),
+        new SysDaValueExpression(0))));
+</code>
+```
+
+Use SysDaQueryExpression to enable OR and the other expressions.
+
+The following example builds a SysDaQueryObject using **OR**.
+
+```xpp
+<code>
+SysDaQueryObjectBuilder::from(exampleTable)
+    .wherever(new SysDaOrExpression(
+        new SysDaEqualsExpression(
+            new SysDaFieldExpression(exampleTable, fieldStr(ExampleTable, ExampleNumber)),
+            new SysDaValueExpression(0)),
+        new SysDaEqualsExpression(
+            new SysDaFieldExpression(exampleTable, fieldStr(ExampleTable, ExampleNumber)),
+            new SysDaValueExpression(0))))
+    .toSysDaQueryObject();
+</code>
 ```
 
 ## Update statement

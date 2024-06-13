@@ -6,8 +6,6 @@ description: This procedure demonstrates the steps to create Replenishment rules
 author: josaw1
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

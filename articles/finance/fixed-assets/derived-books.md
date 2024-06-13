@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Derived books
-description: This article provides an overview of derived book functionality.
+description: Learn about derived book functionality, which typically allow for acquisitions, acquisition adjustments, and disposals, including examples.
 author: moaamer
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetBookTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 3401
-ms.assetid: 862d6450-187b-497f-9822-cce45f2c65a9
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: AssetBookTable
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 862d6450-187b-497f-9822-cce45f2c65a9
 ---
 
 # Derived books

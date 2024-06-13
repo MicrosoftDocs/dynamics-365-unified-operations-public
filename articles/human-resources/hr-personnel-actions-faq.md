@@ -6,9 +6,6 @@ description: This article contains answers to questions that you might have if y
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: HcmPositionActionDetail, HcmPersonnelManagementWorkspace
@@ -18,7 +15,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
@@ -30,8 +26,6 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Personnel actions FAQ
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

@@ -3,11 +3,9 @@
 
 title: Work with customer service overview 
 description: Customer service supports professional, service-based companies and manufacturing service organizations.
-author: sorenva
+author: ChristianRytt
 ms.date: 07/25/2019
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -21,7 +19,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sorenand
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

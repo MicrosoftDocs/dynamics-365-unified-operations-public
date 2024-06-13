@@ -1,28 +1,15 @@
 ---
-# required metadata
-
 title: Reconfigure environments to take a new platform or topology
-description: This article describes how to reconfigure your environment with a new platform or topology and how to update the configuration of your existing environment.
+description: Learn about how to reconfigure your environment with a new platform or topology and how to update the configuration of your existing environment.
 author: PeterRFriis
-ms.date: 12/05/2017
-ms.topic: article
-ms.prod: dynamics-365
-ms.service:
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: peterfriis
+ms.topic: article
+ms.date: 12/05/2017
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-12-05
+ms.search.form: 
 ms.dyn365.ops.version: 7.3
 search.app:
   - financeandoperationsonprem-docs

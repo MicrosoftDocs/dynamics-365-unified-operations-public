@@ -1,18 +1,15 @@
 ---
-# required metadata
-
 title: Change the database collation for development environments
-description: This article describes how to change the database collation for development environments.
-author: ttreen 
-ms.date: 07/26/2023
-ms.topic: article
-audience: Developer, IT Pro
-ms.reviewer: twheeloc
-ms.search.region: Global
+description: Learn about how to change the database collation for development environments through a step-by-step process and next steps.
+author: ttreen
 ms.author: ttreen
+ms.topic: article
+ms.date: 08/03/2023
+ms.reviewer: twheeloc
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 
 ms.search.form: 2022-04-08
-
 ---
 
 # Change the database collation for development environments
@@ -37,7 +34,7 @@ To change the database collation, you must reconstruct the whole database. Use t
 1. Use archiving software such as 7 Zip or WinZip to open the exported **\*.bacpac** file.
 1. Extract the **model.xml** file from the **\*.bacpac** archive, and copy it to the same folder.
 1. In your preferred editing tool, open the extracted **model.xml** file for editing.
-1. In the **model.xml** file, find the following property.
+1. In the **model.xml** file, find the following property (collation stated maybe different).
 
     ```XML
     <Property Value="Danish_Norwegian_CI_AS" Name="Collation"/>

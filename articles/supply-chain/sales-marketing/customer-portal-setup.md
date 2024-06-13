@@ -1,33 +1,20 @@
 ---
-# required metadata
-
 title: Install, set up, and update the Customer portal
 description: This article provides licensing details and setup instructions for the Customer portal.
 author: Henrikan
-ms.date: 06/08/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: henrikan
-ms.search.validFrom: 2020-04-22
-ms.dyn365.ops.version: 10.0.13
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: how-to
+ms.date: 06/07/2024
+audience: Application User
+ms.custom: 
+  - bap-template
 ---
 
 # Install, set up, and update the Customer portal
 
 [!include [banner](../includes/banner.md)]
-
 
 ## Licensing requirements
 
@@ -62,32 +49,33 @@ After this setup is completed, you can provision the Customer portal template.
 
 Before you begin, make sure that you've already completed the [required setup](#required-setup). Then follow these steps to provision the Customer portal.
 
-1. Go to [make.powerapps.com](https://make.powerapps.com/).
+1. Go to [Power Pages](https://make.powerpages.microsoft.com/).
 2. Make sure that you're using the environment where you enabled dual-write.
-3. On the **Create** tab, scroll down to the **Start from template** section, and select the template that is named **Customer Portal**.
+3. On the **Templates** tab, open the **Dynamics 365** tab, and select the template named **Customer Portal**.
 4. Follow the on-screen instructions.
 
-After provisioning is completed, you can access the Customer portal in the **Your apps** section of the **Home** page.
+After provisioning is completed, you can access the Customer portal on the **Active Sites** tab of the **Home** page.
 
 > [!NOTE]
 > If the dual-write solution isn't installed in the environment that you're working in, you will receive an error message, and the Customer portal won't be provisioned.
 
 ## Update the Customer portal
 
-More functionality might be added to the Customer portal later. Any changes that Microsoft makes to the underlying solution components will automatically appear in your environment. However, the website that is provisioned in your environment won't automatically reflect changes that are made to the configuration data. You will have to manually apply those changes by getting the code from the new template and merging it with the provisioned website.
+Any changes that Microsoft makes to the underlying solution components will automatically appear in your environment. However, the website that is provisioned in your environment won't automatically reflect changes that are made to the configuration data. You'll have to manually apply those changes by getting the code from the new template and merging it with the provisioned website.
 
 ## Additional resources
 
 To learn how you can set up and customize the Customer portal, you should start by reviewing the following documentation for the underlying technologies:
 
-- [Power Apps portals documentation](/powerapps/maker/portals/overview)
+- [Power Pages documentation](/power-pages/introduction)
+- [Dynamics 365 templates](/power-pages/templates/dynamics-365-apps/overview#supply-chain-management-customer-site)
 - [Dual-write documentation](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md)
 
-To effectively manage your portals, you must understand the Power Apps portals and Microsoft Dataverse lifecycle. For more information, see the following resources:
+To effectively manage your sites, you must understand the Power Pages and Microsoft Dataverse lifecycle. For more information, see the following resources:
 
-- [About portal lifecycle](/powerapps/maker/portals/admin/portal-lifecycle)
-- [Upgrade a portal](/powerapps/maker/portals/admin/upgrade-portal)
-- [Migrate portal configuration](/powerapps/maker/portals/admin/migrate-portal-configuration)
+- [About Power Pages lifecycle](/power-pages/admin/lifecycle)
+- [Upgrade a Power Pages site](/power-pages/admin/upgrade-site)
+- [Migrate website configuration](/power-pages/admin/migrate-site-configuration)
 - [Solution Lifecycle Management: Dynamics 365 for Customer Engagement apps](https://www.microsoft.com/download/details.aspx?id=57777)
 
 

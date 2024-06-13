@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Reverse the production order status
-description: This article describes how to reverse production order status. 
+description: Learn how to reverse production order status, including outlines on reversing statuses from Estimated to Created and from Scheduled to Estimated. 
 author: johanhoffmann
-ms.date: 06/20/2017
+ms.author: johanho
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ProdParmStatusDecrease, ProdSetupStatusDecrease
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: b1e0df43-b388-4326-8fb7-501f30c89776
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
 ms.search.validFrom: 2016-02-28
+ms.search.form: ProdParmStatusDecrease, ProdSetupStatusDecrease
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: b1e0df43-b388-4326-8fb7-501f30c89776
 ---
 
 # Reverse the production order status

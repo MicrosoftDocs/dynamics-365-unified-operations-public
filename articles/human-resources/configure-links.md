@@ -6,9 +6,6 @@ description: This article explains how to create a link from Microsoft Dynamics 
 author: twheeloc
 ms.date: 03/18/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 
@@ -17,7 +14,6 @@ audience: Application User
 # ms.devlang: 
 ms.search.scope: Human Resources
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 

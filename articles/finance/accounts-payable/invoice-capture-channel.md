@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Manage channels in the Invoice capture solution
-description: This article provides information about how to manage channels in the Invoice capture solution.
+description: Learn about how to manage channels in the Invoice capture solution, including an outlining defining channels and documents reeiving APIs.
 author: sunfzam
-ms.date: 07/12/2023
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: zezhangzhao
+ms.topic: overview
+ms.date: 11/01/2023
+ms.reviewer: twheeloc
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-09-28
+ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 ms.dyn365.ops.version: 
-
+ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ---
 
 # Manage channels in the Invoice capture solution
@@ -92,6 +80,7 @@ If the **Use managed flow** option is set to **Yes**, the flow setting is enable
 
 - Outlook.com
 - Microsoft Outlook 365
+- Microsoft Outlook 365 shared mailbox
 - SharePoint
 - OneDrive
 - OneDrive for business
@@ -103,6 +92,7 @@ The following table describes the additional properties that the user must defin
 | Flow template | Property | Description |
 |---------------|----------|-------------|
 | **Outlook.com** or **Microsoft Outlook 365** | Folder | The email folder under the root directory. The default folder is **Inbox**. (Subfolders aren't supported.) |
+| **Microsoft Outlook 365 shared mailbox** | Mailbox address and folder | The mailbox address is the shared mailbox address and the default folder is **Inbox**. |
 | **SharePoint** | Site address | The address of the SharePoint site, such as `https://contoso.sharepoint.com/sites/sitename`. |
 | | Library | The name of the SharePoint library. |
 | | Folder | Select a folder, or leave the property blank to use the whole library. |
@@ -130,13 +120,13 @@ The flow is generated based on the selected template and preset required paramet
 
 Various errors can appear:
 
-- "Generate flow failed."
+- "Generate flow failed"
 
     **Cause:** The flow would have been successfully generated. However, generation failed because of a time-out, a lack of licenses, or other system reasons.
 
     **Solution:** Error messages provide details, and **Generate flow** generates temporary errors or the system-level fixes.
 
-- "Turn on flow failed."
+- "Turn on flow failed"
 
     **Cause:** There are multiple reasons why a flow might fail when it's turned on:
 
@@ -178,7 +168,7 @@ In Invoice capture, follow these steps to create a channel that will use a share
 9. Set the **Only with Attachments** and **Include Attachments** options to **Yes**. 
 10. Add other criteria to meet your business requirements.
 11. Select the plus sign (**\+**) to insert a new step.
-12. Select **Add an action** \> **Microsoft Dataverse**, and then select **Perfom an unbound action**.
+12. Select **Add an action** \> **Microsoft Dataverse**, and then select **Perform an unbound action**.
 13. Select the ellipsis (**&hellip;**), and then select **Rename** to enter a new name for the step.
 14. In the **Action name** field, select **vis\_ExternalDocumentReceiver**.
 15. Update **channel id** to **ChannelId**.
@@ -191,9 +181,42 @@ In Invoice capture, follow these steps to create a channel that will use a share
     additionalInfo:{<br>
     &nbsp; &nbsp; "SendFrom": @\{triggerOutputs()?\['body/from'\]\}<br>
     \}
+    
+## Assign legal entity on the channel
+
+Administrators can designate distinct channels for various legal entities. After assigning the appropriate legal entity to the corresponding channel, the legal entity will be determined when the document is received via the channel. During Invoice capture preprocessing, the legal entity value is automatically assigned without applying additional derivation logic. Note that security control is applied to both captured invoices and received files.
 
 ## Deactivate and activate the channel
 
 Administrators can use the **Activate**/**Deactivate** button to specify whether the invoice document should be received from the channel. 
 
 If the channel is assigned as the **Channel for file upload** at **Setup system \> System preference**, but it's deactivated, file upload on the **Received file** page doesn't work.
+
+## Set up a channel with a shared mailbox
+
+A group of people (for example, a support team) can use a shared mailbox to receive and send email from the same email address. Select a shared mailbox to add or remove members, set up automatic replies, manage aliases, and more. In Invoice capture, follow these steps to create a channel that uses the shared mailbox to receive invoice emails from the supplier.
+
+1. Select **New** to create a channel. 
+2. Enter a name for the channel, and set the **Use manage channel** option to **No**.
+3. Save your changes, and make a note of the **Channel id** value from the URL in the browser's address bar.
+4. In Power Apps, select **Flow**.
+5. Select **New flow**, and then select **Automated cloud flow** in the dropdown list.
+6. Enter a name for the flow, and select **When a new email arrives in a shared mailbox** as the trigger.
+7. Select **Create** to create the automated flow.
+8. In the **Original mailbox address** field, enter the address of the shared mailbox.
+9. Set the **Only with attachments** and **Include attachments** options to **Yes**. 
+10. Add other criteria to meet your business requirements.
+11. Select the plus sign (**+**) to insert a new step.
+12. Select **Add an action**, and then select the **Microsoft Dataverse** and **Perform an unbound action** actions.
+13. Select **Rename** to enter a new name for the step.
+14. Select **vis\_ExternalDocumentReceiver** as the action name.
+15. Set the record channel ID to **ChannelId**.
+16. In the **FileName** field, select **Attachments name**.
+17. In the **FileContent** field, select **Attachment content**.
+18. Select the ellipsis (**&hellip;**), and then select **Peek code**.
+19. Copy the **Item/FileContent** value, which looks like **@items('xxx')?\['contentBytes'\]**. Wrap this value in a string function so that the result looks like **string(items('xxx')?\['contentBytes'\])**. Then paste the final value into the **Attachment content** field.
+20. In the **AdditionalInfo** field, enter the following value:
+
+    additionalInfo:\{<br>
+    &nbsp; &nbsp; "SendFrom": @\{triggerOutputs()?\['body/from'\]\}<br>
+    \}

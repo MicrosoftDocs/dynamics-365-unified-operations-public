@@ -6,8 +6,6 @@ description: This article describes how to set up and apply reason codes for cou
 author: perlynne
 ms.date: 08/02/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -17,7 +15,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
 # ms.search.industry: 
@@ -46,7 +43,7 @@ Before you set up the system, we recommend that you define a strategy for workin
 
 ## Turn the reason code features on or off
 
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. Admins can turn this functionality on or off by searching for the *Post on-hand adjustments using configurable reason codes connected to offset accounts* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *Post on-hand adjustments using configurable reason codes connected to offset accounts* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Set up reason codes
 

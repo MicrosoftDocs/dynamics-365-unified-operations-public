@@ -6,8 +6,6 @@ description: This procedure demonstrates how to place customer sales orders on h
 author: Henrikan
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

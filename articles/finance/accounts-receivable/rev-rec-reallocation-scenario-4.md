@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Revenue recognition reallocation - Scenario 4
-description: This article goes through a reallocation scenario where a line is removed from an existing, partially invoiced sales order. This scenario produces the same result, regardless of whether the line is removed from the sales order or set to a canceled status.
-author: bking
+description: Learn about a reallocation scenario where a line is removed from an existing, partially invoiced sales order. The same result occurs for canceled sales orders.
+author: twheeloc
+ms.author: twheeloc
+ms.topic: conceptual
 ms.date: 12/21/2020
-ms.topic: index-page
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: Customer
-audience: Application User
-# ms.devlang: 
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global 
-# ms.search.industry: 
-ms.author: bking
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-12-21
+ms.search.form: Customer
 ms.dyn365.ops.version: 10.0.14
-
 ---
 
 # Revenue recognition reallocation – Scenario 4

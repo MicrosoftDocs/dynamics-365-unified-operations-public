@@ -1,18 +1,18 @@
 ---
-title: Margin price adjustments
-description: This article describes how to set up and use margin price adjustments.
+title: Margin price adjustments (preview)
+description: Learn how to set up and use margin price adjustments, including a list of configuration you must complete to use margin component price adjustments.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: GUPPriceComponentCode, GUPPriceComponentCodeSetup, GUPPricingTree, RetailPeriodicDiscount, GUPParameters
 ms.topic: how-to
 ms.date: 04/03/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: GUPPriceComponentCode, GUPPriceComponentCodeSetup, GUPPricingTree, RetailPeriodicDiscount, GUPParameters
 ---
 
-# Margin price adjustments
+# Margin price adjustments (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

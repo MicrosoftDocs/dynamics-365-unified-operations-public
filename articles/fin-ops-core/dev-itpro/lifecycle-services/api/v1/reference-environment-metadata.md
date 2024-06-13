@@ -1,17 +1,14 @@
 ---
-# required metadata
-
 title: Fetch environment metadata
-description: This article explains how to fetch environment metadata through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API. 
+description: Learn about how to fetch environment metadata through Microsoft Dynamics Lifecycle Services (LCS) via the LCS Environment API. 
 author: richardsondev
+ms.author: jorichar
 ms.date: 08/19/2021
 ms.topic: reference
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: jorichar
 ms.search.validFrom: 2021-08-32
-
 ---
 
 # Fetch environment metadata
@@ -135,11 +132,13 @@ For each environment, the following properties are available. If no value is ava
             "CurrentPlatformReleaseName": "Update44",
             "CurrentPlatformVersion": "7.0.6060.45",
             "DeployedOnUTC": "8/5/2021 11:00 PM",
-            "CloudStorageLocation": "East US",
-            "DisasterRecoveryLocation": "West US",
+            "CloudStorageLocation": "Central India",
+            "DisasterRecoveryLocation": "South India",
             "DeploymentStatusDisplay": "Deployed",
             "CanStart": false,
-            "CanStop": false
+            "CanStop": false,
+            "DatabaseDailyBackupsEnabled": true,
+            "DatabaseBackupLocation": "Central India"
         },
         {
             "EnvironmentId": "60b557b2-fefb-4690-859e-f83caf98c17e",
@@ -161,7 +160,9 @@ For each environment, the following properties are available. If no value is ava
             "DisasterRecoveryLocation": "West US",
             "DeploymentStatusDisplay": "Failed",
             "CanStart": false,
-            "CanStop": true
+            "CanStop": true,
+            "DatabaseDailyBackupsEnabled": true,
+            "DatabaseBackupLocation": "East US"
         }
     ],
     "IsSuccess": true,

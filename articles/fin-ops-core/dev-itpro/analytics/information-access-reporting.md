@@ -1,18 +1,15 @@
 ---
 title: Information access and reporting
-description: This article explains the various reporting options available as part of the platform.
-author: RichdiMSFT
-ms.date: 10/02/2019
+description: Learn about various reporting options, including an overview of the importance of information access and understanding report requirements.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 10/02/2019
+ms.reviewer: johnmichalak
 audience: IT Pro
-ms.reviewer: sericks
 ms.search.region: Global
-ms.author: richdi
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-ms.custom: 266104
 ms.assetid: dbc1ac2d-7079-411c-b768-5f820859e29e
 ---
 

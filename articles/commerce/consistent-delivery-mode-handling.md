@@ -4,7 +4,7 @@ description: This article describes the impact of the "Enable consistent deliver
 author: gvrmohanreddy
 ms.date: 05/16/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: shajain

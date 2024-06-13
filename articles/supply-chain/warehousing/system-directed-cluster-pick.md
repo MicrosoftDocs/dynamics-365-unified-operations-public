@@ -6,8 +6,6 @@ description: This article provides an overview of system-directed cluster pickin
 author: Mirzaab
 ms.date: 05/26/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 ms.search.form: WHSWorkCluster, WHSClusterProfile

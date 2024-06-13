@@ -1,20 +1,17 @@
 ---
 title: Plan for public sector functionality
-description: This article suggests the first steps to setting up Public sector functionality.
+description: Learn about the first steps to setting up Public sector functionality, including an outline on what to do before setting up Public sector and adding your data.
 author: TaylorVH
-ms.date: 02/18/2022
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
+ms.date: 02/18/2022
 ms.reviewer: twheeloc
+audience: Application User
 ms.search.region: Global
-ms.author: TaylorVH
 ms.search.validFrom: 2016-02-28
+ms.search.form: SysConfiguration
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 877eabf3-19c7-4897-b33e-c5a8a319cb35
-ms.search.industry: Public sector
-ms.search.form: SysConfiguration
 ---
 
 # Plan for public sector functionality

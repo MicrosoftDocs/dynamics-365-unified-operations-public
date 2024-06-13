@@ -4,7 +4,7 @@ description: This article describes how unlinked refunds work when the Microsoft
 author: BrianShook
 ms.date: 10/07/2021
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: BrShoo

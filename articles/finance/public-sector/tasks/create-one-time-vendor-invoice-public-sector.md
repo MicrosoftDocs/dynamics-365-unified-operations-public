@@ -1,28 +1,20 @@
 --- 
-# required metadata 
- 
 title: Create a one-time vendor and invoice in the public sector
-description: The vendor record uses values from the default one-time vendor account. 
+description: Learn about how the vendor record uses values from the default one-time vendor account, including an outline and step-by-step process.
 author: twheeloc
+ms.author: twheeloc
+ms.topic: how-to
 ms.date: 02/14/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: VendOpenInvoicesListPage, VendOneTimeVendInvoice_PSN   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User   
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: VendOpenInvoicesListPage, VendOneTimeVendInvoice_PSN
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create a one-time vendor and invoice in the public sector
 
 [!include [banner](../../includes/banner.md)]

@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Cash discounts
-description: Cash discounts are setup and shared for Accounts payable and Accounts receivable.  The cash discount available can be defined on the customer invoice or vendor invoice, and will be taken if the invoice is paid within the cash discount date. 
-author: angelad116
-ms.date: 10/24/2022
+description: Cash discounts are setup and shared for Accounts payable and Accounts receivable and can be defined on the customer invoice or vendor invoice.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CashDisc
-# ROBOTS: 
+ms.date: 05/23/2024
+ms.reviewer: twheeloc
+ms.custom: evergreen
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 3741
-ms.assetid: c25f9d85-2702-46aa-8e61-0b4886e069b3
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: angelading
 ms.search.validFrom: 2016-02-28
+ms.search.form: CashDisc
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: c25f9d85-2702-46aa-8e61-0b4886e069b3
 ---
 
 # Cash discounts

@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Revenue recognition bundles
-description: This article describes the bundle functionality that is included in the revenue recognition capability in Accounts receivable. A bundle comprises a parent item and multiple component items.
-author: bking
+description: Learn about the bundle functionality that is included in the revenue recognition capability in Accounts receivable.
+author: twheeloc
+ms.author: twheeloc
+ms.topic: conceptual
 ms.date: 01/04/2023
-ms.topic: index-page
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
+ms.custom: 
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global 
-# ms.search.industry: 
-ms.author: bking
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-01-04
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.7
-
 ---
 
 # Revenue recognition bundles

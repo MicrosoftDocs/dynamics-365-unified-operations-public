@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Destructive testing 
-description: This article explains a destructive testing scenario for finance and operations.
+description: Learn about a destructive testing scenario for finance and operations, including prerequisites and an overview of using a backup database.
 author: LaneSwenka
-ms.date: 01/28/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro, Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: article
+ms.date: 01/28/2019
+ms.reviewer: johnmichalak
+audience: IT Pro, Developer
+ms.search.region: Global 
 ms.search.validFrom: 2019-01-31
+ms.search.form: 
 ms.dyn365.ops.version: 8.1.3
-
 ---
 
 # Destructive testing 

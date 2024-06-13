@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Set up a warehouse by using a warehouse configuration template
-description: This article explains how to set up a warehouse by using a warehouse configuration template.
-author: yufeihuang
-ms.date: 11/16/2017
+description: Learn how to set up a warehouse by using a warehouse configuration template, including scenarios where configuration templates can be helpful.
+author: yufei-huang
+ms.author: yufeihuang
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
-# ROBOTS:
-audience: Application User
-# ms.devlang:
+ms.date: 11/16/2017
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-ms.custom: 
-ms.assetid: 
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
 ms.search.validFrom: 2017-12-31
+ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
 ms.dyn365.ops.version: 7.3
-
 ---
 
 # Set up a warehouse by using a warehouse configuration template

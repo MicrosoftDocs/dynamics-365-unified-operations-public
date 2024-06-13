@@ -5,11 +5,8 @@
 title: Dynamics 365 Human Resources customer migration to the finance and operations infrastructure
 description: This article describes customer migration of Microsoft Dynamics 365 Human Resources to the finance and operations infrastructure.
 author: twheeloc
-ms.date: 06/17/2023
+ms.date: 12/02/2023
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 
@@ -18,7 +15,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -35,9 +31,15 @@ ms.dyn365.ops.version: Human Resources
 
 Customer migration is a "lift-and-shift migration" (movement) of a customer database to the finance and operations infrastructure. Automated migration tooling is used for it. The result is a new finance and operations environment that uses the customer's Human Resources database.
 
-## Human Resources migration office hours
+
+#### Human Resources migration office hours
  
 As has been announced, the infrastructure for the standalone Human Resources application is scheduled to be discontinued after December 31, 2023. Customers might have questions about Human Resources migration. We invite you to office hours to discuss any questions. If you're interested in joining office hours, email <dyn365hrmigration@microsoft.com>.
+
+#### Human Resources migration TechTalk
+ 
+To learn more about migration tooling, prerequisites, migration steps, and considerations, see this TechTalk: [Microsoft Dynamics 365 Human Resources Infrastructure Merge](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/dynamics-365-human-resources-infrastructure-merge-november-9-2022).
+
 
 ## Prerequisites
 
@@ -49,9 +51,9 @@ As has been announced, the infrastructure for the standalone Human Resources app
 
 ### Dataverse environment backup (Sandbox)
 
- - Optional but recommended: Refresh the existing Human Resources sandbox environment by using a copy of the Human Resources production environment.
- - Create a new Dataverse environment by using the Power Platform admin center.
- - Copy the existing Dataverse environment, which is linked to the standalone Human Resources, to the environment that you created in the previous step.
+- Optional but recommended: Refresh the existing Human Resources sandbox environment by using a copy of the Human Resources production environment.
+- Create a new Dataverse environment by using the Power Platform admin center.
+- Copy the existing Dataverse environment, which is linked to the standalone Human Resources, to the environment that you created in the previous step.
 
 > [!NOTE]
 > When you add a database, ensure that the **Enable Dynamics 365 apps** option is set to **Yes**. For detailed information, see [Prepare a Power Platform environment](hr-cust-migration.md#prepare-a-power-platform-environment).
@@ -150,15 +152,6 @@ Before you begin testing, validate the following details:
 - Confirm that your security policies are applicable.
 - Confirm that batch jobs are triggered as expected.
 
-You won't have Remote Desktop access to the migrated sandbox. You can use self-service capabilities and tools to perform the following actions for your Tier 2+ sandbox environments:
-
-- Access the [Azure SQL database](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#access-the-azure-sql-database).
-- Access [log files](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#access-log-files).
-- Use [perfmon tools](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#use-perfmon-tools).
-- Turn [Maintenance mode on/off](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#access-self-service-logs).
-- Restart [services](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#restart-services).
-- Configure the [Regression suite automation tool](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#configure-the-regression-suite-automation-tool).
-
 For more information, see [FAQ for self-service deployment](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md).
 
 ### Migrate a Human Resources production environment
@@ -168,7 +161,7 @@ After you've finished migrating and validating a sandbox environment, follow the
 #### Prerequisites
 
 - The Subscription estimator should be completed.
-- The Go-live [readiness assessment](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md) should be completed.
+- The Human Resources migration [Go-live readiness assessment](hr-migration-admin-go-live-readiness-review.md) should be completed.
 - The user initiating the Production migration in Lifecycle services should have a System administrator role on the Power Platform. 
 
 #### Migrate the production environment
@@ -188,13 +181,41 @@ The environment state will show the deployment progress. The state will be chang
 
 #### Post-migration considerations
 
-- Apply the latest [quality updates](/fin-ops-core/fin-ops/get-started/quality-updates) to your environments.
-- If you're using [virtual tables](hr-admin-integration-common-data-service-virtual-entities.md), reconfigure the endpoints.
+- Apply the latest [quality updates](../fin-ops-core/fin-ops/get-started/quality-updates.md) to your environments.
+- If you're using [virtual tables](hr-admin-integration-common-data-service-virtual-entities.md), reconfigure the endpoints. If you're using Human Resources virtual tables in integration scenarios, see the [Human Resources virtual tables in integration](hr-cust-migration.md#human-resources-virtual-tables-in-integration) section for more information. 
 - Reconfigure dual-write integration. Evaluate which entities must be enabled.
 - Consider using virtual tables to replace dual-write for integration.
-- All remaining standalone Human Resources environments will automatically be deleted ten days after successful migration of the production environment to the finance and operations infrastructure. 
+- All remaining standalone Human Resources environments will automatically be deleted ten days after successful migration of the production environment to the finance and operations infrastructure.
+- If Power BI is needed in the migrated finance and operations environment, complete the steps in [Administration overview](hr-admin-overview.md).
+- If you're configuring integration with finance and operations apps, see [Migration considerations](hr-admin-integration-finance.md#migration-considerations).
 
 #### Dual-write integration
+
+##### Prerequisites
+
+Follow these steps to install Dynamics 365 Human Resources common tables.
+
+1. Go to the Power Platform admin center, and select the environment.
+2. In the **Resources** section, select **Dynamics 365 apps**, and then select **Install app**.
+3. Select **Dynamics 365 Human Resources common tables**, and install the latest version.
+4. Verify that the installation was successfully completed. 
+
+Follow these steps to add dual-write permissions.
+
+1. In the Power Platform admin center, confirm that the dual-write Dynamic 365 Human Resources and Dynamics 365 Human Resources common tables solutions are installed.
+2. Select your environment.
+3. In the **Access** section, under **Teams**, select **See all**.
+4. Select the business unit that has the same name as the environment, and then select **Manage security roles**.
+5. Select **System administrator** and **Human Resources administrator** permissions, and then select **Save**.
+
+> [!NOTE]
+> The integration keys for different maps are available in [Integration considerations](hr-dataverse-integration.md#integration-considerations).
+
+After the relevant maps are configured, follow these steps.
+
+1. Go to **Data management** \> **Dual write UI**.
+2. In **Integration key**, confirm that the correct keys are set. If any of the keys differ, update them.
+3. For modified integration keys, you must stop the map, refresh, and then select **Start map again** for the keys that were updated.
 
 ##### Set up Microsoft Power Platform dual-write integration
 
@@ -222,6 +243,30 @@ The environment state will show the deployment progress. The state will be chang
 4. Review the available table maps to select and run the integration by using dual-write.
 5. When you run the dual-write integration for the first time for table maps, select the **Initial sync** checkbox. If there's an existing integration from the source Human Resources environment, you don't have to select the **Initial sync** checkbox when you run the integration for table maps.
 
+##### Human Resources virtual tables in integration
+
+1. Configure the finance and operations virtual entity. For more information, see [Configure Dataverse virtual entities](../fin-ops-core/dev-itpro/power-platform/admin-reference.md).
+2. If you're using Human Resources virtual tables in any integration scenario, all virtual tables have the prefix "mshr" in a Human Resources standalone environment. In a finance and operations environment, the tables have the prefix "mserp." You must update the integration so that it uses the virtual tables that have the "mserp" prefix. The changes will be specific to your integration codebase. A global search to find "mshr" and replace it with "mserp" can help.
+4. After you've updated the prefix to "mserp," you can enable relevant entities by using the **Available finance and operations entities** catalog Dataverse table.
+5. If you can't update the prefix from "mshr" to "mserp" for the integration, a temporary solution is to point the Human Resources data source configuration to the finance and operations data source configuration that is used for authentication.
+
+    Follow these steps to install the Dynamics 365 Human Resources Virtual Tables app and use virtual tables that have the "mshr" prefix.
+
+    1. Go to Power Platform admin center.
+    2. On the **Environments** tab, select the Dataverse environment that your finance and operations instance is connected to.
+    3. In the **Resources** section, select **Dynamics 365 apps**.
+    4. Select **Install app**.
+    5. In the **Install Dynamics 365 apps** dialog box, find and select the **Dynamics 365 HR Virtual Tables** app, and then select **Next**.
+    6. Agree to the terms of service, and then select **Install** to start the app installation. 
+
+        > [!NOTE]
+        > Installation of the app might take several minutes.
+
+6. Uninstall Dynamic 365 HR Virtual Tables app. All prefix entities that have the "mshr" prefix are removed from Dataverse.
+
+> [!NOTE]
+> Before you begin this procedure, you should verify that all the equivalent entities that have the "mserp" prefix in the finance and operations environment are working as expected.
+
 #### Recommended practices
 
 This section outlines recommendations for migrating from the standalone infrastructure to the finance and operations infrastructure.
@@ -235,9 +280,4 @@ This section outlines recommendations for migrating from the standalone infrastr
 - We highly recommend that you refresh your sandbox environment in the standalone infrastructure before you do the first migration. This refresh should include your Dataverse environment that is connected to the sandbox environment that you plan to migrate to.
 - We highly recommend that you use a service account when you deploy, migrate, and create your Lifecycle Services project.
 - Plan to upgrade the sandbox environment for UAT validation on the latest general availability (GA) release. For more information, see [considerations](hr-infrastructure-merge.md#considerations).
-
-#### Human Resources migration TechTalk
- 
-To learn more about migration tooling, prerequisites, migration steps, and considerations, see this TechTalk: [Microsoft Dynamics 365 Human Resources Infrastructure Merge](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/dynamics-365-human-resources-infrastructure-merge-november-9-2022).
- 
 

@@ -6,8 +6,6 @@ description: This article provides an overview of functionality that provides au
 author: Mirzaab
 ms.date: 11/04/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

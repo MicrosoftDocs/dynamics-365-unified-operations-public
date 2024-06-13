@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Vendor collaboration with customers
-description: This article describes how you can use vendor collaboration to work with POs and monitor consignment inventory.
-author: GalynaFedorova
-ms.date: 09/15/2020
+description: Learn how you can use vendor collaboration to work with POs and monitor consignment inventory, including a list of workspaces.
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 09/15/2020
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 221234
-ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: gfedorova
 ms.search.validFrom: 2020-11-01
+ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 ms.dyn365.ops.version: 10.0.15
-
+ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
 ---
 
 # Vendor collaboration with customers
@@ -65,8 +52,8 @@ You can preview and print the PO as a PDF file by using the **Preview/Print** op
 
 If you use the **Accept with changes** option, you can accept or reject individual lines. You can also make the following changes to lines:
 
-- Change dates or quantities. To update the confirmed delivery date on all lines, use the **Update delivery date** option on the PO header.
-- Split lines for different delivery dates or quantities.
+- Change dates or quantities. To update the confirmed receipt date on all lines, use the **Update receipt date** option on the PO header.
+- Split lines for different receipt dates or quantities.
 - Substitute an item. In the **Line details** section, enter an item description and the item number in the **External** field.
 
 You can't change pricing information or charges, but you can use notes to make suggestions for these changes.

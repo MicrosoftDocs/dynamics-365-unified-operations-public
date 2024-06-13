@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Asset leasing reports
-description: This article lists and briefly describes the reports that are available in Asset leasing.
+description: Learn about the reports that are available in asset leasing, with outlines on asset movement, the differences report, and payment forecasts.
 author: moaamer
-ms.date: 04/05/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SysOperationTemplateForm 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 4464
-ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 04/05/2022
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-10-27
+ms.search.form: SysOperationTemplateForm 
 ms.dyn365.ops.version: 10.0.14
+ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ---
 
 # Asset leasing reports

@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Sales tax specification by ledger transaction report
-description: This article explains how to use the Sales tax specification by ledger transaction report to view and print information about ledger transactions that sales tax is calculated for.
-author: EricWang
-ms.date: 08/19/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: TaxTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-ms.custom: 4464
-ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn how to use the Sales tax specification by ledger transaction report to view and print information about ledger transactions that sales tax is calculated for.
+author: EricWangChen
 ms.author: wangchen
+ms.topic: article
+ms.date: 08/19/2019
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2019-08-19
+ms.search.form: TaxTable
 ms.dyn365.ops.version: 10.0.6
-
+ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ---
 
 # Sales tax specification by ledger transaction report

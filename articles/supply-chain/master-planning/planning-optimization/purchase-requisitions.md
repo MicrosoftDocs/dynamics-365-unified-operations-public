@@ -1,31 +1,20 @@
 ---
-# required metadata
-
 title: Purchase requisitions
-description: This article describes purchase requisitions.
+description: Learn about purchase requisitions, including outlines and step-by-step processes for enabling master plans to include requisitions and approved time fences.
 author: t-benebo
-ms.date: 01/04/2021
+ms.author: benebotg
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ReqPlanSched, ReqGroup
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 01/04/2021
 ms.custom: 
-ms.assetid: 
+ms.reviewer: kamaybac
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: benebotg
 ms.search.validFrom: 2021-01-04
+ms.search.form: ReqPlanSched, ReqGroup
 ms.dyn365.ops.version: 10.0.16
-
 ---
+
 # Purchase requisitions
 
 [!include [banner](../../includes/banner.md)]

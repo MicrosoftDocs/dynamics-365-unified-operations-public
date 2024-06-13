@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Half-year depreciation convention methodology
-description: This article describes the method that fixed assets uses to calculate depreciation using the half-year convention, which calculates six months of depreciation during an asset’s first and last year in service.
+description: Learn about the method that fixed assets uses to calculate depreciation using the half-year convention, which calculates six months of depreciation.
 author: moaamer
-ms.date: 08/17/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: TaxTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-ms.custom: 4464
-ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 08/17/2019
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2019-08-17
+ms.search.form: TaxTable
 ms.dyn365.ops.version: 10.0.12
-
+ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ---
 
 # Half-year depreciation convention methodology

@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: SEPA credit transfer overview
-description: This article provides general information about ISO 20022 credit transfers, which include Single Euro Payments Area (SEPA) credit transfers and any other electronic payments for vendors. 
+description: Learn about ISO 20022 credit transfers, which include Single Euro Payments Area (SEPA) credit transfers and any other electronic payments for vendors. 
 author: mrolecki
-ms.date: 06/20/2017
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mrolecki
+ms.topic: overview
+ms.date: 06/20/2017
+ms.reviewer: twheeloc
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 36b0f870-16d4-4bbb-8da5-e747e69b970d
 ---
 
 # SEPA credit transfer overview
@@ -38,7 +26,7 @@ The credit transfer message is a request that an initiating party (your company)
 ![Credit tansfer.](./media/credit-transfer.jpg) Credit transfer messages 
 
 ## What are ISO 20022 and SEPA payments?
-The Single Euro Payments Area (SEPA) is set up by the European Commission and dictates that all electronic payments are considered domestic, regardless of the country/region where the individual, business, or organization, and the bank are located. There is no difference between national payments and cross-border payments. The SEPA includes the 28 member states of the European Union (EU), and also Iceland, Liechtenstein, Norway, Switzerland, Monaco, and San Marino. The SEPA helps form a single market for payment transactions within the European Economic Area (EEA). Ultimately, the SEPA is expected to reduce the number of payment formats that banks, businesses, and individuals must work with. The European Commission established the legal foundation for SEPA payments through the Payment Services Directive (PSD). The European Payments Council (EPC) supports the SEPA through the following activities:
+The Single Euro Payments Area (SEPA) is set up by the European Commission and dictates that all electronic payments are considered domestic, regardless of the country/region where the individual, business, or organization, and the bank are located. There is no difference between national/regional payments and cross-border payments. The SEPA includes the 28 member states of the European Union (EU), and also Iceland, Liechtenstein, Norway, Switzerland, Monaco, and San Marino. The SEPA helps form a single market for payment transactions within the European Economic Area (EEA). Ultimately, the SEPA is expected to reduce the number of payment formats that banks, businesses, and individuals must work with. The European Commission established the legal foundation for SEPA payments through the Payment Services Directive (PSD). The European Payments Council (EPC) supports the SEPA through the following activities:
 
 -   It sets the standards for SEPA electronic payments by using the ISO 20022 Universal financial industry message scheme XML format.
 -   It establishes rules and guidelines about the handling of euro payments.

@@ -1,31 +1,20 @@
 ---
-# required metadata
-
 title: Inventory marking
-description: This article provides information about the options that are available for marking inventory in firmed orders.
+description: Learn about the options that are available for marking inventory in firmed orders, including outlines on marking and pegging.
 author: t-benebo
-ms.date: 12/02/2020
+ms.author: benebotg
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 12/02/2020
 ms.custom: 
-ms.assetid: 
+ms.reviewer: kamaybac
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: benebotg
 ms.search.validFrom: 2020-12-02
+ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 ms.dyn365.ops.version: AX 10.0.13
-
 ---
+
 # Inventory marking
 
 [!include [banner](../../includes/banner.md)]
@@ -55,6 +44,6 @@ When you firm a planned order, the **Firming** dialog box provides an **Update m
 To set the default marking option for your system, go to **Master planning \> Setup \> Master planning parameters**. Then, on the **Standard update** tab, set the **Update marking** field to your preferred option.
 
 > [!NOTE]
-> The *Single level standard* and *Single level extended* options are available only if the *Make-to-order supply automation* feature is enabled on your system. For more information about this feature and how to enable it, see [Make-to-order supply automation](../make-to-order-supply-automation.md).
+> The *Single level standard* and *Single level extended* options are available only if the *Make-to-order supply automation* feature is enabled on your system. (As of Supply Chain Management version 10.0.32, *Make-to-order supply automation* is turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off.) For more information about this feature and how to enable it, see [Make-to-order supply automation](../make-to-order-supply-automation.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

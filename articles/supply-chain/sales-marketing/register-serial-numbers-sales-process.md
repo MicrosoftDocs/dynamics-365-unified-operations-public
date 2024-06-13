@@ -6,8 +6,6 @@ description: This article explains how you can register serial numbers on packin
 author: Henrikan
 ms.date: 10/31/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

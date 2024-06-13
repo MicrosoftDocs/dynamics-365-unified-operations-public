@@ -6,9 +6,6 @@ description: Microsoft Dynamics 365 Human Resources uses Dataverse to enable ext
 author: twheeloc
 ms.date: 12/08/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 
@@ -17,7 +14,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -29,8 +25,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Dataverse tables
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -192,7 +186,7 @@ For more information about the known issues, see [Issue search in Lifecycle Serv
 [Choose a data integration technology](hr-admin-integration-choose-technology.md)<br>
 [Configure Dataverse integration](hr-admin-integration-common-data-service.md)<br>
 [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[Human Resources virtual tables FAQ](hr-admin-virtual-entity-faq.md)<br>
+[Human Resources virtual tables FAQ](dev-itpro/hr-admin-virtual-entity-faq.md)<br>
 [What is Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
 [Terminology updates](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
 

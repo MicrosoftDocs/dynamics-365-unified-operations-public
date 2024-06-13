@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Waive, reinstate, or reverse interest fees
-description: This article explains how to waive, reinstate, and reverse charges for interest and fees.
-author: ShivamPandey-msft
-ms.date: 03/28/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustInterestJourList 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 25ec29f3-e3ea-4abb-bf6b-f6240873b315
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn how to waive, reinstate, and reverse charges for interest and fees, including a table that outlines customer results for various actions.
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: article
+ms.date: 03/28/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustInterestJourList 
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 25ec29f3-e3ea-4abb-bf6b-f6240873b315
 ---
 
 # Waive, reinstate, or reverse interest fees

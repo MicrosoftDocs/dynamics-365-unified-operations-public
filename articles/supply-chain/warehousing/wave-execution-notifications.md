@@ -6,8 +6,6 @@ description: This article describes wave execution notifications and explains ho
 author: Mirzaab
 ms.date: 08/09/2022
 ms.topic: article
-ms.prod:
-ms.technology:
 
 # optional metadata
 

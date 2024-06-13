@@ -1,11 +1,13 @@
 ---
-title: What's new or changed in Dynamics 365 Commerce 10.0.34 (June 2023)
+title: What's new or changed in Dynamics 365 Commerce 10.0.34 (July 2023)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.34. 
 author: josaw1
-ms.date: 04/21/2023
+ms.date: 04/12/2024
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
+ms.custom: 
+  - bap-template
+  - evergreen
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
@@ -13,16 +15,16 @@ ms.search.validFrom: 2023-04-31
 ms.dyn365.ops.version: 10.0.34
 ---
 
-# What's new or changed in Dynamics 365 Commerce 10.0.34 (June 2023)
+# What's new or changed in Dynamics 365 Commerce 10.0.34 (July 2023)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.34. This version has a build number of 10.0.1591 and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce version 10.0.34. This version has a build number of 10.0.1591 and is available on the following schedule:
 
 - **Preview of release:** April 2023
 - **General availability of release (self-update):** June 2023
-- **General availability of release (auto-update):** July 2023
+- **General availability of release (auto-update):** June 2023
 
 ## Features included in this release
 

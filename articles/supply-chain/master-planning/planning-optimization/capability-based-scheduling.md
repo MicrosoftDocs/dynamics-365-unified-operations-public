@@ -1,15 +1,15 @@
 ---
 title: Scheduling with resource selection based on capability
-description: This article describes resource selection during infinite capacity scheduling when you specify capabilities as resource requirements for an operation.
+description: Learn about resource selection during infinite capacity scheduling when you specify capabilities as resource requirements for an operation.
 author: t-benebo
-ms.date: 08/09/2022
-ms.topic: article
-ms.search.form: RouteInventProd, WrkCtrTable, WrkCtrCapability
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
+ms.topic: article
+ms.date: 08/09/2022
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-09-03
+ms.search.form: RouteInventProd, WrkCtrTable, WrkCtrCapability
 ms.dyn365.ops.version: 10.0.20
 ---
 
@@ -21,7 +21,7 @@ By specifying resource requirements for an operation of a production route, you 
 
 ## Turn the capability-based scheduling feature on or off
 
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is turned on by default. Admins can turn this functionality on or off by searching for the *Infinite capacity scheduling for Planning Optimization* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *Infinite capacity scheduling for Planning Optimization* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 For more information about this feature, see [Scheduling with infinite capacity](infinite-capacity-planning.md).
 
@@ -38,7 +38,7 @@ To assign capabilities to an operation resource, use the **Capabilities** FastTa
 - **Effective** – Specify the first date when the resource or capability assignment applies. During scheduling, the system won't use a resource or capability that has an expired capability assignment, even if that resource otherwise satisfies the requirements.
 - **Expiration** – Specify the last date when the resource or capability assignment applies. During scheduling, the system won't use a resource or capability that has an expired capability assignment, even if that resource otherwise satisfies the requirements.
 - **Level** – Specify the level of proficiency that the resource must have for the capability. Then, if you specify a **Minimum level needed** value for the resource or capability requirement, the scheduling engine considers the level of proficiency during resource selection. The system selects only resources that have the required capability at a level that equals or exceeds the minimum level that is specified in the resource requirement.
-- **Priority** – Set a priority for the resource or capability. Then, if *Priority* is selected in the **Primary resource selection** field on the **Scheduling parameters** page, the system first selects the resource that has the highest priority (that is, the lowest numeric value in the **Priority** field) during scheduling.
+- **Priority** – Set a priority for the resource or capability. Then, if *Priority* is selected in the **Primary resource selection** field on the **Scheduling parameters** page, the system selects the available resource with the highest priority (that is, the lowest numeric value in the **Priority** field) during scheduling. The engine only evaluates priority among those resources that are both applicable and available, which means that during backward scheduling, if a resource with a high priority isn't available (for example because its calendar is closed) then another resource would be chosen.
 
 ## Example
 

@@ -4,8 +4,6 @@ description: This article describes how to enable ""shop similar looks"" product
 author: bebeale
 ms.date: 04/21/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: global

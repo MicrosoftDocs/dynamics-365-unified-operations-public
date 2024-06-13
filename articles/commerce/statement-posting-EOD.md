@@ -6,7 +6,7 @@ description: This article describes improvements that have been made to the stat
 author: analpert
 ms.date: 05/18/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global 
 ms.author: analpert

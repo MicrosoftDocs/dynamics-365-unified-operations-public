@@ -4,8 +4,6 @@ description: This article describes how to configure theme settings in Microsoft
 author: samjarawan
 ms.date: 09/21/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Consumer price index schedule
-description: This article explains how to create the list of consumer price index (CPI) schedules that you obtain from the internet to help determine the escalation charge in Subscription billing. 
+description: Learn how to create the list of consumer price index (CPI) schedules that you obtain from the internet to help determine the escalation charge in Subscription billing.
 author: JodiChristiansen
-ms.date: 11/04/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-
-# ms.tgt_pltfrm: 
-ms.custom: 539093
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jchrist
+ms.topic: article
+ms.date: 11/04/2021
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-11-05
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.24
-
 ---
 
 # Consumer price index schedule

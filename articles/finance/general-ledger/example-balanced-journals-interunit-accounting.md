@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Balanced journals for interunit accounting
-description: This article shows how a journal is automatically balanced when a balancing financial dimension is selected on the Ledger page. 
+description: Learn how a journal is automatically balanced when a balancing financial dimension is selected on the Ledger page, including accounting entry examples.
 author: kweekley
-ms.date: 07/19/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerParameters
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 301bd80e-f8b1-4f12-8194-e6d7de736084
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 07/19/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerParameters
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 301bd80e-f8b1-4f12-8194-e6d7de736084
 ---
 
 # Balanced journals for interunit accounting

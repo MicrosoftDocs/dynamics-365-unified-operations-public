@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: View journal entries and transactions
-description: This article explains the various ways that you can view journal entries and transactions. 
+description: Learn about the various ways that you can view journal entries and transactions, including outlines on voucher transactions.
 author: aprilolson
-ms.date: 10/24/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerTransVoucher
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 281c7ea6-4dfd-4d1f-994f-c361ee299dbe
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
+ms.topic: article
+ms.date: 03/24/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerTransVoucher
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 281c7ea6-4dfd-4d1f-994f-c361ee299dbe
 ---
 
 # View journal entries and transactions

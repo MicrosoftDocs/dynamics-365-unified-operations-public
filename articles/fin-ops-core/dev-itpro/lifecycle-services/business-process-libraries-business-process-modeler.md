@@ -1,15 +1,13 @@
 ---
 title: Business process libraries in Business process modeler (BPM)
-description: This article explains how to view a business process library, how to copy and modify it, and how to export information about the library to Microsoft Word.
-author: gianugo
-ms.date: 06/20/2017
+description: Learn about how to view a business process library, how to copy and modify it, and how to export information about the library to Microsoft Word.
+author: sericks007
+ms.date: 02/20/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
-ms.reviewer: sericks
 ms.search.region: Global
-ms.author: gianura
+ms.author: sericks
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.assetid: 94c88919-39de-4a7b-9d1a-359b99500abe
@@ -32,8 +30,8 @@ You can select a standard business process library on the Business process libra
 To select a standard business process library to start with, follow these steps:
 
 1.  Sign in to Lifecycle Services, open a project, and then click the **Business process modeler** tile.
-2.  In the **Global libraries** or **Corporate libraries** section, right-click a library.
-3.  On the app bar, click **Copy**. The library is added to the **My libraries** section.
+2.  In the **Global libraries** or **Corporate libraries** section, select a library.
+3.  Click the ellipsis in the upper right corner of the library, click **Copy**. The library is added to the **My libraries** section.
 4.  In the **My libraries** section, click the library to display the business process library.
 
 ## Search for a process within a library

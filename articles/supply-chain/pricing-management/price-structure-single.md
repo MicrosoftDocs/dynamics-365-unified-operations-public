@@ -1,18 +1,18 @@
 ---
-title: Set up a company to use a single price structure
-description: This article explains how to configure a company to use a single price structure, and how to set up that structure.
+title: Set up a company to use a single price structure (preview)
+description: Learn how to configure a company to use a single price structure, and how to set up that structure, including a step-by-step process.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: GUPPriceComponentCodeSetup, GUPParameters
 ms.topic: how-to
 ms.date: 04/03/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: GUPPriceComponentCodeSetup, GUPParameters
 ---
 
-# Set up a company to use a single price structure
+# Set up a company to use a single price structure (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

@@ -1,32 +1,17 @@
 ---
-# required metadata
-
 title: Lease termination proposal
-description: This article explains how to propose a lease for termination.
+description: Learn how to propose a lease for termination, including tables that outline the debit and credit availability for various types of transactions.
 author: moaamer
-ms.date: 07/16/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetLeaseTerminateLeaseListPage
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# 
-
-# ms.tgt_pltfrm: 
-ms.custom: 4464
-ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 07/16/2021
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-1-28
+ms.search.form: AssetLeaseTerminateLeaseListPage
 ms.dyn365.ops.version: 10.0.17
-
+ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ---
 
 # Propose a lease for termination

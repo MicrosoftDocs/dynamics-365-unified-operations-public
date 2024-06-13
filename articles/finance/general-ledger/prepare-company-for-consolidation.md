@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Prepare a legal entity for the consolidation process
-description: During a consolidation, you gather transactions from several sets of legal entity accounts into a single set of legal entity accounts. This article explains how to prepare a legal entity for a consolidation.
+description: During a consolidation, you gather transactions from several sets of legal entity accounts into a single set of legal entity accounts.
 author: jinniew
-ms.date: 10/30/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jiwo
+ms.topic: article
+ms.date: 10/30/2020
+ms.custom:
+ms.reviewer: kfend 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2018-10-30
+ms.search.form: 
 ms.dyn365.ops.version: 8.0.1
-
 ---
 
 # Prepare a legal entity for the consolidation process
@@ -41,7 +29,7 @@ You can consolidate data from legal entities that use different databases than t
 
 The consolidated legal entity collects the results and balances of the subsidiaries. To prepare a consolidated legal entity for a consolidation, follow these steps.
 
-1. Go to **General ledger \> Setup \> Organization \> Legal entities**.
+1. Go to **Organization administration \> Organizations \> Legal entities**.
 2. Select **New** to create the legal entity that will be the consolidated legal entity.
 3. Select the **Use for financial consolidation process** check box, and then enter information about the consolidated legal entity. Be sure to enter this information exactly as you want it to appear on financial statements for the consolidated legal entity.
 4. Close the page.

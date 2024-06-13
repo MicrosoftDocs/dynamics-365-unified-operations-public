@@ -1,31 +1,20 @@
 ---
-# required metadata
-
 title: Outbound process overview
-description: This article provides an overview of the outbound process in Inventory management. 
-author: yufeihuang
-ms.date: 07/25/2019
+description: Access an overview of the outbound process in Inventory management, including outlines about picking route status for sales and transfer orders and output orders.
+author: yufei-huang
+ms.author: yufeihuang
 ms.topic: overview
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration, CustomFilterGroup
-# ROBOTS:
-audience: Application User
-# ms.devlang:
+ms.date: 07/25/2019
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-ms.custom: ["274363"]
 ms.collection: get-started
-ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
+audience: Application User
 ms.search.region: global
 ms.search.industry: Distribution
-ms.author: yufeihuang
 ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration, CustomFilterGroup
 ms.search.validFrom: 2016-02-28
-
+ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ---
 
 # Outbound process overview

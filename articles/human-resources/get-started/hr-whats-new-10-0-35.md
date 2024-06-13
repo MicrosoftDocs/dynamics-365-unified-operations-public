@@ -1,23 +1,21 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Human Resources 10.0.35 (July 2023)
+title: What's new or changed in Dynamics 365 Human Resources 10.0.35 (August 2023)
 description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Human Resources version 10.0.35 preview release.
 author: twheeloc
 ms.date: 05/22/2023
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
+ms.custom: evergreen
 
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Developer, IT Pro
+audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -27,14 +25,14 @@ ms.dyn365.ops.version: 10.0.30
 
 ---
 
-# What's new or changed in Dynamics 365 Human Resources 10.0.35 (July 2023)
+# What's new or changed in Dynamics 365 Human Resources 10.0.35 (August 2023)
 
 [!include [banner](../../includes/preview-banner.md)]
 
 This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.35. This version has a build number of 10.0.1627 and is available on the following schedule:
 
 - **Preview of release:** May 2023
-- **General availability of release (self-update):** June 2023
+- **General availability of release (self-update):** July 2023
 - **General availability of release (auto-update):** July 2023
 
 ## Features included in this release
@@ -58,7 +56,7 @@ The following table lists the feature enhancements that are included in this rel
 
 ### Platform updates for finance and operations apps
 
-Dynamics 365 Human Resources version 10.0.35 includes platform updates. To learn more, see [Platform updates for version 10.0.33 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-35.md).
+Dynamics 365 Human Resources version 10.0.35 includes platform updates. To learn more, see [Platform updates for version 10.0.35 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-35.md).
 
 ### Bug fixes
 

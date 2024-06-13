@@ -1,20 +1,17 @@
 ---
 title: Budget analysis in the public sector
-description: This article describes how to use the Budget analysis page to view revenues and expenditures by financial dimension, and it answers frequently asked questions, including differences between the Budget analysis page and the Budget control statistics page.
+description: Learn how to use the Budget analysis page to view revenues and expenditures by financial dimension, with answers to frequently asked questions.
 author: v-kiarnd
-ms.date: 06/07/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: twheeloc
+ms.topic: article
+ms.date: 06/07/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: BudgetAnalysisInquiry_PSN, BudgetControlStatistics, DimensionDetails, LedgerPeriodCode, LedgerTrialBalanceListPage
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: a1055712-0a20-425d-939d-de8564c358b8
-ms.search.industry: Public sector
-ms.search.form: BudgetAnalysisInquiry_PSN, BudgetControlStatistics, DimensionDetails, LedgerPeriodCode, LedgerTrialBalanceListPage
 ---
 
 # Budget analysis in the public sector

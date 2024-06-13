@@ -4,15 +4,12 @@ description: This article describes various ways that you can extend the commerc
 author: josaw1
 ms.date: 08/31/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.custom: 104593
 ms.assetid: 1397e679-8cd5-49f3-859a-83d342fdd275
 ---
 
@@ -60,7 +57,7 @@ You can completely override existing functionality or customize it according to 
 
 + You want to override the search functionality to search from an external system instead of using the out-of-box search functionality.
 
-You should not override the handler, unless it’s necessary. Instead, implement the CRT extension scenarios by using pre-triggers or post-triggers. 
+You should not override the handler, unless it’s necessary. Instead, implement the CRT extension scenarios by using pre-triggers or post-triggers.
 
 ### Executing the Next CRT handler - Chain of handlers
 
@@ -72,13 +69,13 @@ You can override the request and call the base request using the **ExecuteNextAs
 
 #### GetNextAsyncRequestHandler
 
-If you want to override the handler and call the base handler to execute the out-of-box logic and then modify the results of base handler with custom logic, then use the **GetNextAsyncRequestHandler**. 
+If you want to override the handler and call the base handler to execute the out-of-box logic and then modify the results of base handler with custom logic, then use the **GetNextAsyncRequestHandler**.
 
 For example, you can search for a **Product** using the out-of-box Azure Search handler and add additional logic to modify the result based on inventory. You could include custom search results or filter the results.
 
-### NotHandledResponse
+### NotHandledResponse.Instance
 
-If in the overridden handler, you want to run the base handler and return the base response instead of custom logic, then return **NotHandledResponse()**. If **NotHandledResponse** is returned, the CRT framework will run the out-of-box handler. **NotHandledResponse** can be used in scenarios where you want to run custom logic only on certain conditions (otherwise, run the base handler logic).
+If in the overridden handler, you want to run the base handler and return the base response instead of custom logic, then return **NotHandledResponse.Instance**. If **NotHandledResponse.Instance** is returned, the CRT framework will run the out-of-box handler. **NotHandledResponse.Instance** can be used in scenarios where you want to run custom logic only on certain conditions (otherwise, run the base handler logic).
 
 ### CRT data service and data service with entities
 
@@ -266,7 +263,7 @@ Next, you must create a new CRT service that uses the request and response types
             {
                 get
                 {
-                  return new[] 
+                  return new[]
                   {
                         typeof(GetStoreHoursDataRequest),
                         typeof(UpdateStoreDayHoursDataRequest),
@@ -316,7 +313,7 @@ Next, you must create a new CRT service that uses the request and response types
                     return new GetStoreHoursDataResponse(await databaseContext.ReadEntityAsync<DataModel.StoreDayHours>(query).ConfigureAwait(false));
                 }
             }
-            
+
             private async Task<Response> UpdateStoreDayHoursAsync(UpdateStoreDayHoursDataRequest request)
             {
                 ThrowIf.Null(request, "request");
@@ -376,7 +373,7 @@ namespace Contoso
         public class CrossLoyaltyCardService : SingleAsyncRequestHandler<GetCrossLoyaltyCardRequest>
         {
             /// <summary>
-            /// Process method. 
+            /// Process method.
             /// </summary>
             /// <param name="request">The request with the loyalty number.</param>
             /// <returns>The discount value.</returns>
@@ -406,7 +403,7 @@ Additionally, registration in the **commerceRuntime.ext.Config** file must prece
 
 To override the handler, implement the `SingleAsyncRequestHandler<TRequest>` or **INamedRequestHandlerAsync** if the handler is executed based on the handler name.
 
-### Sample code that shows how to override CreateOrUpdateCustomerDataRequest using the SingleAsyncRequestHandler 
+### Sample code that shows how to override CreateOrUpdateCustomerDataRequest using the SingleAsyncRequestHandler
 
 ```csharp
 namespace Contoso
@@ -442,7 +439,7 @@ namespace Contoso
 }
 ```
 
-### Sample code on how to Override the handlers which are implemented based on handler name, implement the INamedRequestHandlerAsync: 
+### Sample code on how to Override the handlers which are implemented based on handler name, implement the INamedRequestHandlerAsync:
 
 ```C#
     public class SampleGetProductSearchResultshandler : INamedRequestHandlerAsync
@@ -541,7 +538,7 @@ protected override async Task<Response> Process(SaveSalesTransactionDataRequest 
     // The extension should do nothing If fiscal registration is enabled and legacy extension were used to run registration process.
     if (!string.IsNullOrEmpty(request.RequestContext.GetChannelConfiguration().FiscalRegistrationProcessId))
     {
-        return new NotHandledResponse();
+        return NotHandledResponse.Instance;
     }
 
     NullResponse response;
@@ -564,9 +561,9 @@ protected override async Task<Response> Process(SaveSalesTransactionDataRequest 
 }
 ```
 
-### NotHandledResponse
+### NotHandledResponse.Instance
 
-If the overridden logic runs the base handler for some scenarios, execution of the base handler can be achieved by returning **new NotHandledResponse()**. If **NotHandledResponse** is returned, the CRT framework will use the extension that is requesting to run the base or out-of-band logic, and will run the out-of-band handler.
+If the overridden logic runs the base handler for some scenarios, execution of the base handler can be achieved by returning **NotHandledResponse.Instance**. If **NotHandledResponse.Instance** is returned, the CRT framework will use the extension that is requesting to run the base or out-of-band logic, and will run the out-of-band handler.
 
 ```csharp
 private Response GetCustomReceiptFieldForSalesTransactionReceipts(GetLocalizationCustomReceiptFieldServiceRequest request)
@@ -584,12 +581,12 @@ private Response GetCustomReceiptFieldForSalesTransactionReceipts(GetLocalizatio
                 receiptFieldValue = this.GetGstRegistrationNumber(request);
                 break;
             default:
-                return new NotHandledResponse();
+                return NotHandledResponse.Instance;
         }
     }
     else
     {
-        return new NotHandledResponse();
+        return NotHandledResponse.Instance;
     }
 
     int receiptFieldLength = request.ReceiptItemInfo == null ? 0 : request.ReceiptItemInfo.Length;
@@ -601,7 +598,7 @@ private Response GetCustomReceiptFieldForSalesTransactionReceipts(GetLocalizatio
 
 ## Run an extension request for a channel type
 
-Sometimes, an extension request must be run only for a specific channel type. For example, the request might have to be run for the online channel but not for the retail channel (physical store). In these cases, before you run the request, check the channel type. Then run the custom logic, or run the base logic by calling **NotHandledResponse()**.
+Sometimes, an extension request must be run only for a specific channel type. For example, the request might have to be run for the online channel but not for the retail channel (physical store). In these cases, before you run the request, check the channel type. Then run the custom logic, or run the base logic by calling **NotHandledResponse.Instance**.
 
 ```csharp
 if (requestContext.GetChannel().OrgUnitType == RetailChannelType.RetailStore)
@@ -610,7 +607,7 @@ if (requestContext.GetChannel().OrgUnitType == RetailChannelType.RetailStore)
 }
 else
 {
-    return new NotHandledResponse();
+    return NotHandledResponse.Instance;
 }
 ```
 

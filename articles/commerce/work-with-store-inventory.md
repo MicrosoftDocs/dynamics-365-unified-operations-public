@@ -4,23 +4,14 @@
 title: Store inventory management
 description: This article describes the types of documents that you can use to manage inventory.
 author: BrianShook
-ms.date: 01/12/2021
+ms.date: 09/13/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
 ms.assetid: bfef3717-d0e0-491d-8466-d8a9c995177d
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: hhaines
+ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
@@ -41,7 +32,7 @@ The Commerce applications running on CSU don't support the following product dim
 The Commerce applications running on CSU do not support the following tracking dimensions:
 - Owner dimension
 
-- The point of sale (POS) application can offer limited support for the following dimensions. POS may automatically enter some of the dimensions in inventory transactions, based on the configuration of the warehouse or store setup. POS won't fully support the dimensions in the way that they are supported if a sales transaction is manually entered in Commerce headquarters, however. 
+- The point of sale (POS) application can offer limited support for the following dimensions. POS might automatically enter some of the dimensions in inventory transactions, based on the configuration of the warehouse or store setup. However, POS won't fully support the dimensions in the way that they are supported if a sales transaction is manually entered in Commerce headquarters.
 
 - **Warehouse Location** – When they use the new [Inbound operation](./pos-inbound-inventory-operation.md) and [Outbound operation](./pos-outbound-inventory-operation.md) POS operations, users can select a warehouse inventory location to receive items into or ship outbound transfer order items out of. If they use the obsolete **Picking and receiving** operation, limited location management support is available for receiving and shipping outbound transfers. That support is available only if the **Use warehouse management process** option has been turned on for the item and the store warehouse. An inventory location can't currently be used with the **Stock count** operation or the **Inventory lookup** operation.
 
@@ -54,13 +45,13 @@ The Commerce applications running on CSU do not support the following tracking d
 - **Inventory status** – For items that use the warehouse management process and require an inventory status, this status field can't be set or modified through the POS application. The default inventory status that is defined in the store warehouse configuration is used when items are received into inventory.
 
 > [!NOTE]
-> All organizations must test item configurations through Commerce apps in development or test environments before they deploy those item configurations to production environments. Test your items by using them to perform regular cash-and-carry sales transactions in POS and create customer orders (if applicable) through POS, call center or e-commerce to validate they can be fully supported. You should also test POS fulfillment and inventory processes (such as inventory receiving and order fulfillment operations) before you deploy any new item configurations, to make sure that the POS application can support them. Testing must include running a full statement/order posting process in your test environment and verifying that no posting issues occur when orders for these items are created and posted in Commerce headquarters.
->
-> If items are configured in a way that isn't supported by the Commerce applications and appropriate testing isn't done, data failures that aren't easily corrected or may not be able to be corrected at all, may occur.
+> - Your organization must test item configurations through Commerce apps in development or test environments before you deploy those item configurations to production environments. Test your items by using them to perform regular cash-and-carry sales transactions in POS, and create customer orders (if applicable) through POS, call center, or Commerce e-commerce to validate that they can be fully supported. You should also test POS fulfillment and inventory processes (such as inventory receiving and order fulfillment operations) before you deploy any new item configurations, to ensure that the POS application can support them. Testing must include running a full statement/order posting process in your test environment and verifying that no posting issues occur when orders for these items are created and posted in Commerce headquarters.
+> - If items are configured in a way that isn't supported by the Commerce applications, and appropriate testing isn't done, data failures that aren't easily corrected, or that might not be able to be corrected at all, can occur.
+> - Store inventory management operations, including **Inbound**, **Outbound**, **Stock Count**, **Adjustment**, and **Movement**, are optimized for bar code scanning. You can scan bar codes to add, receive, and ship products. However, the unit of measure that is configured on bar codes isn't currently supported in these operations. Instead, a product's inventory unit of measure is used with the bar code's quantity.
 
 ## Purchase orders
 
-Purchase orders are created in Commerce headquarters. If a store warehouse is included in the purchase order header or on purchase order lines, the lines can be received at the store by using the [Inbound operation](./pos-inbound-inventory-operation.md) operation in POS. 
+Purchase orders are created in Commerce headquarters. If a store warehouse is included on the purchase order header or on purchase order lines, the lines can be received at the store by using the [Inbound operation](./pos-inbound-inventory-operation.md) operation in POS.
 
 ## Transfer orders
 

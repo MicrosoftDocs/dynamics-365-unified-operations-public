@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Finance 10.0.34 (June 2023)
-description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.34 preview release.
+description: Learn about features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.34 preview release distributed in June 2023.
 author: twheeloc
-ms.date: 04/21/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: article
+ms.date: 04/21/2023
+ms.custom: evergreen
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-09-02
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.30
-
 ---
 
 # What's new or changed in Dynamics 365 Finance 10.0.34 (June 2023)
@@ -38,7 +25,7 @@ on the following schedule:
 
 - **Preview of release:** April 2023
 - **General availability of release (self-update):** June 2023
-- **General availability of release (auto-update):** July 2023
+- **General availability of release (auto-update):** June 2023
 
 ## Features included in this release
 

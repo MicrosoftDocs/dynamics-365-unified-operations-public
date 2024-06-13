@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Create functional locations
-description: This article explains how to create a functional location in Asset Management.
+description: Learn how to create a functional location in Asset Management, including an outline and step-by-step process on creating a default functional location.
 author: johanhoffmann
-ms.date: 06/25/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EntAssetFunctionalLocationCopyStructure, EntAssetFunctionalLocationCreate
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 2214
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
+ms.topic: article
+ms.date: 06/25/2019
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: EntAssetFunctionalLocationCopyStructure, EntAssetFunctionalLocationCreate
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ---
 
 # Create functional locations

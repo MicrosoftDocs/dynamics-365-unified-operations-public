@@ -1,28 +1,20 @@
 --- 
-# required metadata 
- 
 title: Create a billing classification in the public sector
-description: Public-sector organizations can use billing classifications to help manage free text invoices. 
+description: Learn about how public-sector organizations can use billing classifications to help manage free text invoices, including a step-by-step process. 
 author: twheeloc
+ms.author: twheeloc
+ms.topic: how-to
 ms.date: 02/14/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: CustBillingClassification   
+ms.custom:
+ms.reviewer: twheeloc     
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: CustBillingClassification
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create a billing classification in the public sector
 
 [!include [banner](../../includes/banner.md)]

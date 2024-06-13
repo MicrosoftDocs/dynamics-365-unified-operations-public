@@ -1,34 +1,24 @@
 ---
-# required metadata
-
 title: Financial dimensions
-description: This article describes the various types of financial dimensions and how they are set up.
+description: Learn about the various types of financial dimensions and how they're set up, including outlines on custom dimensions, activating dimensions, and translations.
 author: aprilolson
-ms.date: 03/07/2022
-ms.topic: article
-ems.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
+ms.topic: article
+ms.date: 03/07/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2018-10-31
+ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Financial dimensions
 
 [!include [banner](../includes/banner.md)]
 
-This article explains the various types of financial dimensions and how they are set up.
+This article explains the various types of financial dimensions and how they're set up.
 
 Use the **Financial dimensions** page to create financial dimensions that you can use as account segments for charts of accounts. There are two types of financial dimensions: custom dimensions and entity-backed dimensions. Custom dimensions are shared across legal entities, and the values are entered and maintained by users. For entity-backed dimensions, the values are defined somewhere else in the system, such as in Customers or Stores entities. Some entity-backed dimensions are shared across legal entities, whereas other entity-backed dimensions are company-specific.
 
@@ -48,11 +38,13 @@ Here are some of the limitations:
 - You can use sales tax functionality only with legal entities, not with financial dimensions.
 - Some reports don't include financial dimensions. Therefore, to report by financial dimension, you might have to modify the reports.
 
+Financial tags (tags) are an alternative to financial dimensions. An organization can create up to 20 user-defined financial tags and enter values for them on transactions. For more information, see [Financial tags](financial-tag.md).
+
 ## Custom dimensions
 
 To create a user-defined financial dimension, in the **Use values from** field, select **Custom dimension**.
 
-You can also specify an account mask to limit the amount and type of information that can be entered for dimension values. You can enter characters that remain the same for each dimension value, such as letters or a hyphen (-). You can also enter number signs (\#) and ampersands (&) as placeholders for characters that will change every time that a dimension value is created. Use a number sign (\#) as a placeholder for a number and an ampersand (&) as a placeholder for a letter. The field for the format mask is available only when you select **Custom dimension** in the **Use values from** field.
+You can also specify an account mask to limit the amount and type of information that can be entered for dimension values. You can enter characters that remain the same for each dimension value, such as letters or a hyphen (-). You can also enter number signs (\#) and ampersands (&) as placeholders for characters that change every time that a dimension value is created. Use a number sign (\#) as a placeholder for a number and an ampersand (&) as a placeholder for a letter. The field for the format mask is available only when you select **Custom dimension** in the **Use values from** field.
 
 **Example**
 
@@ -97,7 +89,7 @@ This feature is controlled by a setting in the dimension. This setting is named 
 
 If records already exist for the dimension, the master records are updated when you turn the feature on. However, existing documents and transactions aren't updated.
 
-If you are using a template to create a master record, make sure that the template value for the master dimension is blank. For example, if you're creating customers from a template, make sure that the customer dimension in the template is blank. The customer dimension value will default from the new customer number when you create the new customer.  
+If you're using a template to create a master record, make sure that the template value for the master dimension is blank. For example, if you're creating customers from a template, make sure that the customer dimension in the template is blank. The customer dimension value will default from the new customer number when you create the new customer.  
 
 ## Derived dimensions
 
@@ -117,15 +109,15 @@ Enter the dimension combinations that should be derived from the dimension in th
  
 By default, the derived dimension process doesn't override existing values for derived dimensions. For example, if you enter cost center 10, and no other dimension is entered, department 20 and location 30 are entered by default. However, if you change the cost center, the values that have already been established aren't changed. Therefore, you can establish default dimensions on master records, and those dimensions won't be changed by derived dimensions.
 
-You can change the behavior of derived dimensions to override existing values by selecting the **Replace existing dimension values with derived values** check box on the **Derived dimensions** page. If this field is selected, you can enter a dimension with derived dimension values and those derived dimension values will override any values that already exist. Using the previous example, if you enter cost center 10, and no other dimension is entered, department 20 and location 30 are entered by default. However, if the values were already department 50 and location 60, the values will now be changed to department 20 and location 30.
+You can change the behavior of derived dimensions to override existing values by selecting the **Replace existing dimension values with derived values** checkbox on the **Derived dimensions** page. If this field is selected, you can enter a dimension with derived dimension values and those derived dimension values override any values that already exist. Using the previous example, if you enter cost center 10, and no other dimension is entered, department 20 and location 30 are entered by default. However, if the values were already department 50 and location 60, the values change to department 20 and location 30.
  
 Derived dimensions with this setting do not automatically replace the existing default dimensions values when dimension values are defaulted. Dimension values will only be overridden when you enter a new dimension value on a page and there are existing derived values for that dimension on the page.
 
 ### Preventing changes with derived dimensions
  
-When you use **Add segment"** on the **Derived dimensions page** to add a segment as a derived dimension, an option is provided at the bottom of the **Add segment** page that allows you to prevent changes to that dimension when it is derived on a page. The default setting is off, so it does not prevent the derived dimension values from being changed. Change the setting to **Yes** if you want to prevent the dimension from being changed after it has been derived. For example, if the value for the Department dimension is derived from the value of the Cost center dimension, the Department value cannot be changed if the **Prevent changes** setting is **Yes**. 
+When you use **Add segment"** on the **Derived dimensions page** to add a segment as a derived dimension, an option is provided at the bottom of the **Add segment** page that allows you to prevent changes to that dimension when it's derived on a page. The default setting is off, so it doesn't prevent the derived dimension values from being changed. Change the setting to **Yes** to prevent the dimension from being changed after it has been derived. For example, if the value for the Department dimension is derived from the value of the Cost center dimension, the Department value can't be changed if the **Prevent changes** setting is **Yes**. 
  
-The setting does not prevent changes if the dimension value is valid but it is not listed in the derived dimensions list. For example, if Department 20 is derived from Cost center 10 and you enter Cost center 10, then you will not be able to edit Department 20. However, if you enter Cost center 20 and it is not in the list of derived dimensions for Cost center, then you can edit the Department value. 
+The setting doesn't prevent changes if the dimension value is valid but it's not listed in the derived dimensions list. For example, if Department 20 is derived from Cost center 10 and you enter Cost center 10, then you won't be able to edit Department 20. However, if you enter Cost center 20 and it's not in the list of derived dimensions for Cost center, then you can edit the Department value. 
  
 In all cases, the account value and all dimensions values will still be validated against the account structures after the derived dimensions values have been applied. If you use derived dimensions and they fail validation when used on a page, you must change the derived dimensions values on the derived dimensions page before you can use them in transactions. 
  
@@ -142,7 +134,7 @@ When you use an entity to import data, if that entity imports dimensions, the de
 
 ## Financial dimension service
 
-The Financial dimension service add-in is available in your Microsoft Dynamics Lifecycle Services environment. It provides improved performance when you use the Data management framework to import a journal that has a large number of lines. To use the service, you must enable it on the **Financial dimension service parameters** page. Currently, the service works only on imported journals that have 500 lines or more. In addition, it can currently process only general journals where the **Ledger** account type is set on the journal lines. Other account types on journal lines, such as **Customer**, **Vendor**, and **Bank**, aren't currently supported. This service won't be invoked when derived dimensions are set up in the system.
+The Financial dimension service add-in is available in your Microsoft Dynamics Lifecycle Services environment. It provides improved performance when you use the Data management framework to import a journal that has a large number of lines. To use the service, you must enable it on the **Financial dimension service parameters** page. Currently, the service works only on imported journals. In addition, it can currently process only general journals where the **Ledger** account type is set on the journal lines. Other account types on journal lines, such as **Customer**, **Vendor**, and **Bank**, aren't currently supported. This service won't be invoked when derived dimensions are set up in the system.
 
 The Financial dimension service provides improved performance when journals are imported by using a new service that runs in parallel to the data import. It runs only on the main account and financial dimension data in the journal, and it generates the dimension combinations that are specified in the ledger account string field on the journal lines. The processing converts this string into the structured data storage that the Financial dimension framework uses throughout the rest of the product for validation, summary reporting, and inquiries. For more information about summary reporting of financial dimension data, see [Financial dimension sets](financial-dimension-sets.md).
 

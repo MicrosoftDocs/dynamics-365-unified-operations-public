@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Process allocations
-description: This article provides information about allocations, the options for processing them in Microsoft Dynamics 365 Finance, and how they can be used in budget planning. Allocations are used to distribute amounts across multiple ledger account combinations. They help ensure that expenses or revenues are charged to the correct object in accounting.
+description: Learn about allocations, the options for processing them in Microsoft Dynamics 365 Finance, and how they can be used in budget planning.
 author: kweekley
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AccountingDistribution, LedgerAllocationRule, MainAccount
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 04c8548a-0af9-492b-954b-946b4f8ca023
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: AccountingDistribution, LedgerAllocationRule, MainAccount
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 04c8548a-0af9-492b-954b-946b4f8ca023
 ---
 
 # Process allocations

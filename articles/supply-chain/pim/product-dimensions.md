@@ -1,15 +1,15 @@
 ---
 title: Product dimensions
-description: There are five product dimensions - color, configuration, size, style, and version. You combine product dimensions in dimension groups and assign dimension groups to product masters. The combinations of product dimensions determine how product variants are defined.
+description: Learn about product dimensions, with outlines on product variants, setting up product dimensions, version product dimensions, and examples.
 author: t-benebo 
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
 ms.topic: how-to
 ms.date: 01/06/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
 ---
 
 # Product dimensions
@@ -68,7 +68,7 @@ A company sells denim jeans. The item, *Jeans*, uses the color and size product 
 | Brown | XL   |
 | Brown | XXL  |
 
-## The version product dimension
+## <a name="version-dim"></a>The version product dimension
 
 Version is a product dimension that is intended to help you maintain and track multiple versions of a product throughout the supply chain. Version tracking is essential to the success of manufacturers that operate in a world of constantly shrinking product lifecycles, increased quality and reliability requirements, and increased focus on product safety.
 
@@ -103,10 +103,10 @@ When you're testing your solutions for compatibility with the version dimension,
 Before you can use the version dimension, it must be turned on for your system. This task requires admin permissions.
 
 1. Go to **System administration \> Workspaces \> Feature management**.
-1. Turn on the feature that is named *Product dimension version*. (For more information, see [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
+1. Turn on the feature that is named *Product dimension version*. (As of Supply Chain Management 10.0.36, this feature is mandatory and can't be turned off.) For more information, see [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 1. Put your system into [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 1. Go to **System administration \> Setup \> License configuration**.
-1. On the **Configuration keys** tab, expand **Trade**, and select the check box for **Product dimension - version**.
+1. On the **Configuration keys** tab, expand **Trade**, and select the check box for **Product dimension - Version**.
 1. Turn off [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 
 ### Areas where the version dimension isn't supported

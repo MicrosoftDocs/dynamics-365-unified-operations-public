@@ -4,7 +4,7 @@ description: This article shows how to set up the POS hybrid app on Android and 
 author: josaw1
 ms.date: 05/03/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: josaw
@@ -57,7 +57,7 @@ To build the Android Retail hybrid app, follow these steps.
 1. In the [Retail SDK folder](retail-sdk/retail-sdk-overview.md#download-the-retail-sdk), open **SampleExtensions\HybridApp\Android\Sample.HybridApp.Android.sln**. Build and deploy using the emulator and verify that everything appears as it should.
 
     > [!NOTE]
-    > If you want to add a custom Azure Active Directory (Azure AD) host URL for activation, in the solution edit the **PosActivity.cs** file, search for the string array variable named **AadHostUrls**, and then add your custom Azure AD host URL to the array. 
+    > If you want to add a custom Microsoft Entra host URL for activation, in the solution edit the **PosActivity.cs** file, search for the string array variable named **AadHostUrls**, and then add your custom Microsoft Entra host URL to the array. 
   
 1. Using the [Visual Studio Emulator for Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/ "Visual Studio Emulator for Android") or any emulator for Android, launch the POS hybrid app and enter the Commerce Scale Unit URL and save.
 1. You should be able to sign in and activate the device.

@@ -3,25 +3,25 @@
   tocHref: /dynamics365/
   topicHref: /dynamics365/index
   items:
-  - name: Dynamics 365 Finance
+  - name: Development and administration for finance and operations apps
     tocHref: /dynamics365/finance/
-    topicHref: /dynamics365/finance/index
-  - name: Dynamics 365 Finance
+    topicHref: /dynamics365/fin-ops-core/fin-ops/
+  - name: Development and administration for finance and operations apps
     tocHref: /dynamics365/fin-ops-core/
-    topicHref: /dynamics365/finance/index
-  - name: Dynamics 365 Commerce
+    topicHref: /dynamics365/fin-ops-core/fin-ops/
+  - name: Development and administration for finance and operations apps
     tocHref: /dynamics365/commerce/
-    topicHref: /dynamics365/commerce/index
-  - name: Dynamics 365 Supply Chain Management
+    topicHref: /dynamics365/fin-ops-core/fin-ops/
+  - name: Development and administration for finance and operations apps
     tocHref: /dynamics365/supply-chain/
-    topicHref: /dynamics365/supply-chain/index
-  - name: Dynamics 365 Human Resources
+    topicHref: /dynamics365/fin-ops-core/fin-ops/
+  - name: Development and administration for finance and operations apps
     tocHref: /dynamics365/human-resources/
-    topicHref: /dynamics365/human-resources/index
+    topicHref: /dynamics365/fin-ops-core/fin-ops/
 - name: Dynamics 365
   tocHref: /power-platform/
   topicHref: /dynamics365/index
   items:
-    - name: Development & administration for finance and operations
+    - name: Development and administration for finance and operations apps
       tocHref: /power-platform/admin
-      topicHref: /dynamics365/unified-operations/dev-itpro/
+      topicHref: /dynamics365/fin-ops-core/fin-ops/

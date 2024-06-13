@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Monitoring and telemetry using Application Insights
-description: This article explains how to use, set up, and configure the Application Insights integration for finance and operations apps.
+description: Learn about how to use, set up, and configure the Application Insights integration for finance and operations apps.
 author: LaneSwenka
-ms.date: 04/21/2023
-ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
-audience: IT Pro, Developer
-# ms.devlang:
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:
-ms.custom: 257614
-ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
-ms.search.region: Global
-# ms.search.industry:
 ms.author: laswenka
+ms.topic: article
+ms.date: 04/21/2023
+ms.reviewer: twheeloc
+audience: IT Pro, Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-09-30
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
 ---
 
 # Monitoring and telemetry using Application Insights
@@ -121,5 +108,9 @@ After the feature is enabled, you must configure the parameters.
 If the private preview software is installed, it must be removed from your environment through Lifecycle Services. You can bundle this process into your next regularly scheduled package deployment by following the steps in [Uninstall a package](/dynamics365/fin-ops-core/dev-itpro/deployment/uninstall-deployable-package).
 
 After the private preview is removed, you'll see the **Monitoring and telemetry** feature in the **Feature management** workspace. None of setup or configurations from the private preview are changed when you enable this feature, because the schema names are identical in the public preview. Therefore, no data is lost when you remove the private preview version.
+
+## Telemetry data usage
+
+For more information about the daily cap setting for Application insights, see [Set daily cap on Log Analytics workspace](/azure/azure-monitor/logs/daily-cap).
 
 [!include [banner](../includes/banner.md)]

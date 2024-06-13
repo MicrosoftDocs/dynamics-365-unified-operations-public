@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Search for products and product variants during order entry
-description: Use the **Item number** field to search for products and product variants when you manually create a sales order line or a purchase order line. This lets you quickly find product variants when you only have the configuration string or one of the product dimensions available.
+description: Use the Item number field to search for products and product variants when you manually create a sales order line or a purchase order line.
 author: t-benebo
-ms.date: 06/20/2017
+ms.author: benebotg
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: MCRFullTextIndexField, MCRFullTextParameters, PurchTable, PurchTablePart, SalesTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 248534
-ms.assetid: 99dd5ce1-0029-4f06-90e7-865e6d46d86e
+audience: Application User
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: benebotg
 ms.search.validFrom: 2016-11-30
+ms.search.form: MCRFullTextIndexField, MCRFullTextParameters, PurchTable, PurchTablePart, SalesTable
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: 99dd5ce1-0029-4f06-90e7-865e6d46d86e
 ---
 
 # Search for products and product variants during order entry

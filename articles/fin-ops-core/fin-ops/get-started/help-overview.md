@@ -1,20 +1,18 @@
 ---
-title: Help system (contains video)
-description: This article provides an overview of the Help system for finance and operations apps.
+title: Help system
+description: Learn about the Help system for finance and operations apps, including an overviews on task guide and in-app help options.
 author: edupont04
-ms.date: 04/20/2023
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Application User, Developer, IT Pro
-ms.reviewer: edupont
-ms.search.region: Global
 ms.author: edupont
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.topic: overview
+ms.date: 05/13/2024
+ms.reviewer: edupont
 ms.collection: get-started
-ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-02-28
 ms.search.form: SystemParameters
+ms.dyn365.ops.version: AX 7.0.0
+ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ---
 
 # Help system
@@ -22,7 +20,7 @@ ms.search.form: SystemParameters
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 Users of the following apps can access context-sensitive Help and other content that is based on the same Help system:
 
@@ -43,6 +41,16 @@ The ([Microsoft Dynamics 365 documentation](/dynamics365/)) on Microsoft Learn i
 - **Content that is written by experts** – Content on the site is open to contributions by community members both inside and outside Microsoft.
 
 You can find content on Microsoft Learn by using any search engine. For the best results, we recommend that you use a site search, such as **site:learn.microsoft.com dynamics 365 "search term"**.
+
+## Generative help and guidance with Copilot
+
+*Generative help and guidance with Copilot* provides a conversational guide that's always nearby and ready to help. Users can ask questions in natural language. Copilot then identifies the relevant content in the documentation and composes a targeted response to the question.
+
+After generative help and guidance with Copilot is enabled for your system, users can open the Copilot sidecar by using the **Copilot** button :::image type="icon" source="../copilot/media/copilot-icon.png" border="false"::: at the top of the page.
+
+[<img src="../copilot/media/copilot-help-welcome.png" alt="Copilot help pane in the user experience." title="Copilot help pane in the user experience" width="720" />](../copilot/media/copilot-help-welcome.png#lightbox)
+
+For more information, see [Generative help and guidance with Copilot](../copilot/copliot-generative-help.md).
 
 ## Get notified about changes through an RSS feed
 
@@ -65,7 +73,7 @@ Alternatively, you can subscribe to an RSS feed by app:
 
 On the *learn.microsoft.com* website, each documentation article encourages you to provide feedback. We've changed the mechanism a couple of times based on, well, feedback. Currently, we ask you to choose the **Feedback** action below the article's title. You can give the article a rating, and write a comment if you want to. The feedback goes straight to the article's author and the team that owns the docs.  
 
-<!--If you have feedback or questions about a article, leave us a comment at the bottom of the page.
+<!--If you have feedback or questions about an article, leave us a comment at the bottom of the page.
 
 1. Select **Feedback** to get to the comments at the bottom of the page. Then, select either **Product feedback** or **Sign in to give documentation feedback**.
 
@@ -78,13 +86,8 @@ On the *learn.microsoft.com* website, each documentation article encourages you 
 
 ## Contribute to the documentation
 
-You can contribute and make edits to the documentation. To get started, select the **Edit** button (pencil symbol) on a article. The following video shows how you can contribute to our documentation.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
-
-The [How to contribute to the Microsoft Dynamics 365 documentation](https://youtu.be/m5djioozRbg) video (shown above) is included in the Microsoft Dynamics 365 channel on YouTube.
-
-For more information, see the [Microsoft Learn contributor guide](/contribute), which is published by the team that built the Microsoft Learn site.
+You can contribute and make edits to the documentation. To get started, select the **Edit** button (pencil symbol) on an article. 
+For more information, see [Contribute to Dynamics 365 documentation](/dynamics365/get-started/contribute), which is published by the team that built the Microsoft Learn site.
 
 > [!NOTE]
 > We only accept contributions to our English content at this time.
@@ -116,14 +119,14 @@ To access Help content, select the **Help** button (**?**), and then select **He
 
 ### Accessing Help topics from the Help pane
 
-From the **Help** pane, you can access topics that apply to the client. When you first open the **Help** pane, the **Help** tab shows the topics that apply to the page that you're currently on. If no topics are found, you can enter keywords to refine your search. When you select a article in the **Help** pane, it's opened on a new tab in your browser.
+From the **Help** pane, you can access topics that apply to the client. When you first open the **Help** pane, the **Help** tab shows the topics that apply to the page that you're currently on. If no topics are found, you can enter keywords to refine your search. When you select an article in the **Help** pane, it's opened on a new tab in your browser.
 
 > [!IMPORTANT]
 > This section does not apply to Dynamics 365 Human Resources. The Help system for Human Resources is automatically connected to task guides for the product. Also, you cannot create custom task guides for Human Resources.
 
 ### Accessing task guides from the Help pane
 
-Before you can access task guides from the **Help** pane, a system admin must configure some settings on the **System parameters** page in Finance, Supply Chain Management, or Commerce. For more information, see [Adding task guides](help-connect.md#adding-task-guides).
+Before you can access task guides from the **Help** pane, a system admin must configure some settings on the **System parameters** page in Finance, Supply Chain Management, or Commerce. For more information, see [Adding task guides](../../dev-itpro/get-started/help-connect.md#adding-task-guides).
 
 <!-- > [!NOTE]
 > - In order to configure Help, you must be signed in with an account in the same tenant as the tenant in which the app is deployed.
@@ -172,5 +175,6 @@ The following table lists our websites. Sites that have an asterisk (\*) next to
 | [Previous versions](/previous-versions/dynamics/) | This site hosts content from previous releases. |
 | [Dynamics Community](https://community.dynamics.com/) | This site hosts blogs, forums, and videos. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | This site provides evaluation and sales information. |
+| [The Dynamics 365 guidance hub](/dynamics365/guidance/) | This site hosts or links to resources that can help with Dynamics 365 implementation projects. | 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

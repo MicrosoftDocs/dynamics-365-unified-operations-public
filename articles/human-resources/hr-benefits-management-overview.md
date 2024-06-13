@@ -6,9 +6,6 @@ description: This article provides an overview of the Benefits management featur
 author: twheeloc  
 ms.date: 12/06/2021
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart

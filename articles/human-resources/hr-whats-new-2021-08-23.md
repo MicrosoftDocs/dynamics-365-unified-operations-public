@@ -6,9 +6,6 @@ description: This article describes features that are either new or changed in M
 author: marcelbf
 ms.date: 08/23/2021
 ms.topic: article
-ms.prod:
-ms.technology:
-
 # optional metadata
 
 ms.search.form:

@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Post fixed asset transactions to posting layers
-description: This article gives an overview of posting layer functionality for fixed asset transactions.
+description: Learn about posting layer functionality for fixed asset transactions. The various kinds of depreciation are calculated and recorded separately in posting layers.
 author: moaamer
-ms.date: 06/13/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetBookTable, LedgerJournalTransAsset
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 3001
-ms.assetid: 7dabde57-0843-47c3-85ef-f36b6f472e30
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 06/13/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: AssetBookTable, LedgerJournalTransAsset
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 7dabde57-0843-47c3-85ef-f36b6f472e30
 ---
 
 # Post fixed asset transactions to posting layers

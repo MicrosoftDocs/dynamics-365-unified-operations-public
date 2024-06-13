@@ -1,18 +1,16 @@
 ---
 title: Type registration
-description: This article describes how to register types from the process automation framework.
+description: Learn abouthow to register types from the process automation framework, including overviews and code examples for various classes.
 author: RyanCCarlson2
-ms.date: 09/10/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: rcarlson
+ms.topic: article
+ms.date: 06/10/2024
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 
 ---
 
 # Type registration

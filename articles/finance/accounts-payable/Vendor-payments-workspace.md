@@ -1,19 +1,16 @@
 ---
 title: Vendor payments workspace
-description: This article provides information about the Vendor payments workspace. The Vendor payments workspace shows information that is related to the processing of vendor payments.
-author: abruer
-ms.date: 10/16/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: Global
+description: Learn about the Vendor payments workspace. The Vendor payments workspace shows information that is related to the processing of vendor payments.
+author: twheeloc
 ms.author: shpandey
+ms.topic: article
+ms.date: 10/16/2020
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2017-06-30
-ms.dyn365.ops.version: July 2017 update
-ms.assetid: 
 ms.search.form: VendPaymentWorkspace
+ms.dyn365.ops.version: July 2017 update
 ---
 
 # Vendor payments workspace
@@ -29,7 +26,7 @@ The following setup needs to be completed for data to display in **Vendor paymen
 2. Go to **General Ledger > Calendars > Fiscal calendars** to validate fiscal calendar dates assigned to the active time period.
 3. Go to **General Ledger > Setup > Ledger**  to set **Accounting Currency** and **Exchange Rate Type**. 
 4. Define exchange rates between transaction currencies and accounting currency, and accounting currency and system currency. To do this, go to **General Ledger > Currencies > Currency exchange rates**.
-5. Go to **System administration > Setup > Entity Store** to refresh the **VendPaymentBIMeasureV2** aggregate measurement.
+5. Go to **System administration > Setup > Entity Store** to refresh the latest version of **Vendor payment measure** aggregate measurement. For example, **Vendor payment measure V3** as of August 2023.
 
 ## My work view
 

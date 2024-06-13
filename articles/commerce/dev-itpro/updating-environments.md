@@ -4,8 +4,6 @@ description: This article describes recommended practices for updating code and 
 author: andreashofmann1
 ms.date: 02/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
@@ -175,7 +173,7 @@ To upgrade to a new version (such as 7.2 to 7.3 or 7.3 to 8.0), you must deploy 
     - Does the Environment reprovisioning tool have to be run (if a database has been moved)?
     - Batch jobs for CDX synchronization must be reenabled by setting them to **Waiting**.
     - The "Initialize Commerce scheduler" job should be run.
-    - Does other data have to be set up in addition to the deployable packages (for example, screens, buttons, receipt layouts, the Microsoft Azure Active Directory setup, Commerce shared parameters, the tax configuration, other batch processes, and DIXF recurring jobs)?
+    - Does other data have to be set up in addition to the deployable packages (for example, screens, buttons, receipt layouts, the Microsoft Entra ID setup, Commerce shared parameters, the tax configuration, other batch processes, and DIXF recurring jobs)?
     - Is a synchronization of the CDX data jobs required?
     - Is a full synchronization of CDX data jobs required?
     - Does a deployment require that store components also be updated?
@@ -190,4 +188,3 @@ To upgrade to a new version (such as 7.2 to 7.3 or 7.3 to 8.0), you must deploy 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

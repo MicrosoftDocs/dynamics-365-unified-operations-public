@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create a request for quotation
-description: This procedure shows you how to create a request for quotation. 
-author: GalynaFedorova
+description: Learn how to create a request for quotation, including step-by-step processes for preparing new RFQs, adding lines, and adding vendors.
+author: Henrikan
+ms.author: henrikan
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: PurchRFQCaseTableListPage, PurchCreateRFQCase, InventLocationIdLookup, PurchRFQCaseTable, InventItemIdLookupSimple, EcoResCategorySingleLookup, UnitOfMeasureLookup, PurchRFQEditLines, PurchRFQEditLinesPrintOptions, VendRFQJournal, SrsReportViewerForm   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: kamaybac  
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: gfedorova
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: PurchRFQCaseTableListPage, PurchCreateRFQCase, InventLocationIdLookup, PurchRFQCaseTable, InventItemIdLookupSimple, EcoResCategorySingleLookup, UnitOfMeasureLookup, PurchRFQEditLines, PurchRFQEditLinesPrintOptions, VendRFQJournal, SrsReportViewerForm
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create a request for quotation
 
 [!include [banner](../../includes/banner.md)]
@@ -37,7 +28,7 @@ This procedure shows you how to create a request for quotation. This would typic
 3. In the **Document title** field, type a value.
 4. In the **Solicitation type** field, enter or select a value.
     + If a scoring method is associated with the solicitation type, this will be the default scoring method for the RFQ that you're creating. It is possible to change the scoring method later.  
-    + In the **Delivery date** field, enter a date.  
+    + In the **Receipt date** field, enter a date.  
     + Select the date by which you want to receive the items.  
     + In the **Expiration date and time** field, enter a date and time.  
     + Specify the date and time by which vendors must respond to the RFQ.  

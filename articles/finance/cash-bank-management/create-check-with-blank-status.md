@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Create checks that have Blank status 
-description: This article explains how to create blank checks for a bank account. 
-author: angelad116
+description: Learn about how to create blank checks for a bank account, including a step-by-step process that details creating a blank check, which can't be deleted or reused.
+author: twheeloc
+ms.author: twheeloc
+ms.topic: conceptual
 ms.date: 03/24/2023
-ms.topic: index-page
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: BankChequeTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: angelading
 ms.search.validFrom: 2019-09-17
+ms.search.form: BankChequeTable
 ms.dyn365.ops.version: AX 10.0.5
-
+ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ---
 
 # Create checks that have Blank status

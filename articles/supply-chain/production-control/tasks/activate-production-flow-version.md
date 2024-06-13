@@ -1,28 +1,20 @@
 --- 
-# required metadata 
- 
 title: Activate a production flow version
 description: Before kanban jobs can be created and activities can be processed for a production flow version, you should activate the version. 
 author: johanhoffmann
+ms.author: johanho
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LeanProductionFlow   
+ms.custom:
+ms.reviewer: kamaybac 
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: LeanProductionFlow 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Activate a production flow version
 
 [!include [banner](../../includes/banner.md)]

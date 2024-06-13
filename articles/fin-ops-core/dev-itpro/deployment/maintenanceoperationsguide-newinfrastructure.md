@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Maintenance operations for deployments
-description: This article explains how to perform maintenance operations for an environment that was deployed by using the self-service deployment experience.
+description: Learn how to perform maintenance operations for an environment that was deployed by using the self-service deployment experience.
 author: laneswenka
-ms.date: 03/16/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: article
+ms.date: 03/16/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2018-12-31
+ms.search.form: 
 ms.dyn365.ops.version: 8.1.1
-
 ---
 
 # Maintenance operations for deployments

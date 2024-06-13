@@ -6,9 +6,6 @@ description: The Benefit statement report explains the benefits that an employee
 author: twheeloc
 ms.date: 09/21/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: HcmACACoverageGroup, BenefitWorkspace, HcmBenefitSummaryPart
@@ -17,7 +14,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
@@ -32,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 The **Benefit statement** report provides a statement of the benefits that an employee is currently enrolled in. The report can be accessed by an employee directly or by the benefit administrator. The **Benefit statement** provides a list of the employee’s enrolled benefits, coverage options, costs, and any enrolled dependents or beneficiaries. The statement can be printed for a single worker or multiple workers.
 
 > [!NOTE]
-The **Benefit statement** feature must be enabled in the **Feature management** workspace. In order to do this, the **Benefit management** feature must be turned on in Feature management. 
+> The **Benefit statement** feature must be enabled in the **Feature management** workspace. In order to do this, the **Benefit management** feature must be turned on in Feature management. 
 
 
 ## Importing the Benefit statement 

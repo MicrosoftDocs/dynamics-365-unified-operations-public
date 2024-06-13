@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create a purchase order with a delivery schedule
-description: This article demonstrates how to create a delivery schedule for a purchase order. 
-author: GalynaFedorova
+description: Learn how to create a delivery schedule for a purchase order, including a step-by-step process using the USMF demo data company. 
+author: Henrikan
+ms.author: henrikan
+ms.topic: how-to
 ms.date: 08/01/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventItemIdLookupPurchase, PurchDeliverySchedule, PurchEditLines   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: kamaybac   
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: gfedorova
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventItemIdLookupPurchase, PurchDeliverySchedule, PurchEditLines 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create a purchase order with a delivery schedule
 
 [!include [banner](../../includes/banner.md)]
@@ -43,7 +34,7 @@ This article demonstrates how to create a delivery schedule for a purchase order
 9. In the **Quantity** field, change the quantity to `4`.
 10. Select **New**.
 11. In the **Quantity** field, enter `6` as the remaining quantity.
-- In the delivery date field, select a date that's one week after the date on the first delivery line.  
+- In the receipt date field, select a date that's one week after the date on the first delivery line.  
 - You can keep track of the total quantity that's allocated to the delivery schedule lines by looking at the **Total** and **Remaining** fields. When the remaining quantity is zero, the full quantity from the original line has been allocated to the schedule.  
 12. Expand the **Charges conversion** section.
 - The options here allow you to control how you want charges to be distributed across the delivery schedule lines. If you select **Copy gross amounts**, the charge amount on the original order line is copied to each delivery line. The **Allocate to delivery lines** option divides the original line charge according to the quantity on each delivery line.  

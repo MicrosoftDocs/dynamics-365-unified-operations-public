@@ -1,27 +1,19 @@
 ---
-# required metadata
-
 title: Financial dimension sets
-description: This article describes financial dimension sets and provides some tips for optimizing their use.
-author: yukonpeegs
-ms.date: 03/07/2022
+description: Learn about financial dimension sets and provides some tips for optimizing their use, including an outline on dimension set balances.
+author: rcarlson
+ms.author: rcarlson
 ms.topic: article
-ems.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: DimensionFocus, LedgerTrialBalanceListPage
-audience: Application User
-# ms.devlang: 
+ms.date: 04/29/2024
+ms.custom: 
+  - bap-template
+  - evergreen
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: epegors
 ms.search.validFrom: 2021-03-23
+ms.search.form: DimensionFocus, LedgerTrialBalanceListPage
 ms.dyn365.ops.version: 10.0.16
-
 ---
 
 # Financial dimension sets
@@ -35,6 +27,9 @@ A dimension set is an ordered list of financial dimensions that can be used to s
 The only standard dimension set is the dimension set that contains only the main account.
 
 You use the **Financial dimension sets** page to create and manage financial dimension sets.
+
+> [!NOTE]
+> As of application version 10.0.38, a new feature that's named **Performance enhancement for general ledger dimension set balance calculation** is available. For more information, see [New financial dimension sets](financial-dimension-set-new.md).
 
 ## Dimension set balances
 

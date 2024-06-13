@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Audit policy violations and cases
-description: The article explains how audit cases are generated from violations of audit policy rules. It also includes information about the various ways that audit policies use the document selection date range.
+description: Learn how audit cases are generated from violations of audit policy rules, including an outline on how audit policies use the document selection date range.
 author: panolte
-ms.date: 06/20/2017
+ms.author: kfend
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AuditPolicyAdditionalOption, AuditPolicyRule
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: e0e66c6d-c396-4a9d-b3b6-3641d130fdc0
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-02-28
+ms.search.form: AuditPolicyAdditionalOption, AuditPolicyRule
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: e0e66c6d-c396-4a9d-b3b6-3641d130fdc0
 ---
 
 # Audit policy violations and cases

@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Database movement toolkit
-description: This article explains how to download and use the Database movement toolkit. 
+description: Learn how to download and use the Database movement toolkit, includinig an outline of toolkit components and supported scenarios. 
 author: laneswenka
-ms.date: 12/02/2020
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: overview
+ms.date: 11/06/2023
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-06-16
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 30
 ---
 
@@ -36,15 +26,15 @@ The toolkit is available in the LCS Shared Asset Library under the **Models** se
 
 The toolkit contains the following primary components:
 
-- **Sqlpackage.exe** - This tool is used to perform extract and publish actions against Microsoft Azure SQL databases, as well as SQL Server databases hosted on Tier1 DevTest environments.  
-- **PowerShell 7.0** - This is a self-contained version of PowerShell that includes capabilities for parallelism, which increases the performance of transferring data between environments.  
+- **Sqlpackage.exe** - This tool is used to perform extract and publish actions against Microsoft Azure SQL databases, and SQL Server databases hosted on Tier1 DevTest environments.  
+- **PowerShell 7.0** - A self-contained version of PowerShell that includes capabilities for parallelism, which increases the performance of transferring data between environments.  
 - **PowerShell script** - There are several scripts included to provide an enhanced and more automated experience for scenarios such as AX 2012 data upgrade.
 
 ## Supported scenarios
 
 The toolkit currently supports the following scenarios. More will be added over time.  
 
-* [Upgrade from AX 2012 - Data upgrade in sandbox environments](/d365F-O/fin-ops-core/dev-itpro/database/data-upgrade-self-service)
+* [Upgrade from AX 2012 - Data upgrade in sandbox environments](../migration-upgrade/data-upgrade-self-service.md)
 
 ## Versions
 

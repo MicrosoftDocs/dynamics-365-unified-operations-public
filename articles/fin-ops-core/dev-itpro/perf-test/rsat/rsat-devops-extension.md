@@ -1,38 +1,37 @@
 ---
-title: Integrate RSAT with Azure DevOps pipelines
-description: This article explains how to integrate the Regression suite automation tool (RSAT) with Microsoft Azure DevOps pipelines to automate validation.
+title: Integrate RSAT with Azure Pipelines
+description: Learn about how to integrate the Regression suite automation tool (RSAT) with Microsoft Azure Pipelines to automate validation.
 author: FrankDahl
-ms.date: 04/05/2022
-ms.topic: article
-audience: Developer
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: fdahl
+ms.topic: article
+ms.date: 11/27/2023
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2022-03-29
-
 ---
 
-# Integrate RSAT with Azure DevOps pipelines
+# Integrate RSAT with Azure Pipelines
 
 [!include[banner](../../includes/banner.md)]
 
-You can set up Microsoft Azure DevOps pipelines to seamlessly automate the scheduling and execution of test suites via the Regression suite automation tool (RSAT).
+You can set up Microsoft Azure Pipelines to seamlessly automate the scheduling and execution of test suites via the Regression suite automation tool (RSAT).
 
-Azure DevOps pipeline jobs can use the RSAT command-line program (Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe, also referred to as the RSAT console app) to run RSAT via Windows PowerShell tasks. You can also add preconfigured RSAT tasks that are available in the Visual Studio Marketplace to your Azure DevOps pipelines. In this way, you can build or run RSAT test suites without having to write custom Windows PowerShell scripts.
+Azure DevOps pipeline jobs can use the RSAT command-line program (Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe, also referred to as the RSAT console app) to run RSAT via Windows PowerShell tasks. You can also add preconfigured RSAT tasks that are available in the Visual Studio Marketplace to your Azure Pipelines. In this way, you can build or run RSAT test suites without having to write custom Windows PowerShell scripts.
 
 This article assumes that you're familiar with the management of Azure DevOps organizations and [pipelines](/azure/devops/pipelines). It also assumes that you're familiar with RSAT functionality.
 
 ## Prerequisite: Install an Azure DevOps self-hosted Windows agent
 
-To configure Azure DevOps pipelines to include RSAT tasks, you must configure a self-hosted Windows agent on a machine where RSAT is installed. For more information about this process, see [Azure Pipelines agents](/azure/devops/pipelines/agents/agents?view=vsts). For information about how to set up a self-hosted Windows agent, see [Self-hosted Windows agents](/azure/devops/pipelines/agents/v2-windows).
+To configure Azure Pipelines to include RSAT tasks, you must configure a self-hosted Windows agent on a machine where RSAT is installed. For more information about this process, see [Azure Pipelines agents](/azure/devops/pipelines/agents/agents). For information about how to set up a self-hosted Windows agent, see [Self-hosted Windows agents](/azure/devops/pipelines/agents/v2-windows).
 
 When you configure the Azure DevOps agent, follow these guidelines:
 
-- Create a dedicated agent pool that uses a single agent. In this way, you ensure that the same machine will be used across pipelines tasks. Additionally, capabilities can be ignored. Install a 64-bit version of the agent software on the RSAT client machine.
+- Create a dedicated agent pool that uses a single agent. In this way, you ensure that the same machine is used across pipelines tasks. Additionally, capabilities can be ignored. Install a 64-bit version of the agent software on the RSAT client machine.
 - Run only a single agent on each RSAT client machine.
 - Ensure that the agent runs as a local Windows administrator user account. Don't use the network service to run it. If you're an administrator on the RSAT client machine, you might consider using your own user account.
 - Decide whether you want the agent to run interactively or as Windows service. It's easier to set up the agent to run interactively. Additionally, this approach provides manual control when the agent runs. A few more steps are required to set up the agent to run as a Windows service. However, this approach enables agent runs to be automated.
-- If the agent runs as a Windows service, follow these additional steps:
+- If the agent runs as a Windows service, follow these extra steps:
 
     > [!IMPORTANT]
     > Make sure that the same Windows administrator user account is used throughout the setup.
@@ -41,30 +40,21 @@ When you configure the Azure DevOps agent, follow these guidelines:
 
         First, you must configure the agent service to run under the selected Windows administrator user account.
 
-    2. Select **Services (Local)**, and then find the agent service. The name of the service will resemble one of these formats:
+    2. Select **Services (Local)**, and then find the agent service. The name of the service resembles one of these formats:
 
         - Azure Pipelines Agent \<name of your agent\>
         - VSTS Agent \<name of your agent\>
         - vstsagent.\<organization name\>.\<name of your agent\>
 
     3. Select and hold (or right-click) the agent service, and then select **Properties**.
-    4. On the **Identity** tab, select the **This user** option, and then specify the local administrator user that your Azure DevOps agent will run as. Use the format *domain\\username*. Then enter and confirm the password.
+    4. On the **Identity** tab, select the **This user** option, and then specify the local administrator user that your Azure DevOps agent runs as. Use the format *domain\\username*. Then enter and confirm the password.
 
-        Next, you must give the agent service permission to access Microsoft Excel COM objects.
+## Configure Azure Pipelines to run RSAT tasks
 
-    5. In the Component Services app, expand **Component Services** \> **Computers** \> **My Computer**, and select **DCOM Config**.
-    6. Find **Microsoft Excel Application** (or **000208D5-0000-0000-C000-000000000046**: this value can vary, depending on the version of Excel that is installed on your computer).
-    7. Select and hold (or right-click), and then select **Properties**.
-    8. On the **Security** tab, for the **Launch and Activation Permissions** category, select the **Customize** option. Then select **Edit**, and provide full access to the user. Repeat this step for the other two permission categories (**Access Permissions** and **Configuration Permissions**).
-
-        ![Configuring Excel DCOM security.](media/excel-dcom-security.png)  
-
-## Configure Azure DevOps pipelines to run RSAT tasks
-
-When you configure Azure DevOps pipelines to run RSAT tasks, you have two options:
+When you configure Azure Pipelines to run RSAT tasks, you have two options:
 
 - Use the Azure DevOps RSAT extension that is available in the [Visual Studio Marketplace](https://marketplace.visualstudio.com/azuredevops/). This extension includes easily configured tasks that let you build and run RSAT test suites without having to write custom Windows PowerShell scripts.
-- Use custom Windows PowerShell tasks, and create your own script that uses the RSAT console app. This option provides maximum flexibility but requires much more expertise.
+- Use custom Windows PowerShell tasks, and create your own script that uses the RSAT console app. This option provides maximum flexibility but requires more expertise.
 
 ## Install the Azure DevOps RSAT extension
 
@@ -84,7 +74,7 @@ After you've set up the Azure Dev Ops agent, follow these steps to create a pipe
 
 1. In Azure DevOps, select the project that should host the pipeline. Then go to **Pipelines**, and select **New pipeline** in the upper-right corner.
 
-    Pipelines can be designed by using YAML. Although this approach is quite powerful, it requires some experience to master. Because the purpose of this article isn't to provide in-depth information about pipeline design but to help you get started, this procedure shows how to build a basic pipeline without using YAML.
+    Pipelines can be designed by using YAML. Although this approach is powerful, it requires some experience to master. Because the purpose of this article isn't to provide in-depth information about pipeline design but to help you get started, this procedure shows how to build a basic pipeline without using YAML.
 
 2. Select the **Use the classic editor** link to create a pipeline without using YAML.
 
@@ -124,20 +114,22 @@ This procedure shows how to add RSAT tasks to an existing pipeline job. RSAT tas
     - **Build** – Generate test automation files for one or more RSAT test suites. A build task is required after you make changes to your recordings or install a new version of RSAT.
     - **Execute** – Run one or more RSAT test suites.
 
-    Pipelines that include both build tasks and execute tasks will use build tasks before execute tasks, so that the execution files are prepared.
+    Pipelines that include both build tasks and execute tasks use build tasks before execute tasks, so that the execution files are prepared.
 
 4. Configure the RSAT task as either a build task or an execute task by using one of the following procedures.
 
 ### Option 1: Build test suites
 
 1. Enter a display name for the task.
-2. In the **Command** field group, select the **Build test cases** option to create a task that builds test suites. This task will generate test execution files and upload them to Azure DevOps test cases. This task is required after you make changes to your recordings or install a new version of RSAT.
+2. In the **Command** field group, select the **Build test cases** option to create a task that builds test suites. This task generates test execution files and upload them to Azure DevOps test cases. This task is required after you make changes to your recordings or install a new version of RSAT.
 3. In the **RSAT location**, double-check the RSAT installation folder.
 4. Enter the location of the RSAT settings files. Settings files can be saved from the RSAT settings dialog box. They contain information such as the location of the test plan, the URL of the finance and operations test environment, and the preferred browser.
-5. Select the **Generate test execution files only** checkbox if you don't want to regenerate or overwrite existing Excel parameter files. This scenario is the most common, and the checkbox is selected by default.
-6. In the **Use test suite** field group, select whether you want to specify test suites by name or ID.
-7. Enter the name or ID of the test suite that you want to build. To specify multiple test suites, use commas to separate the values.
-8. To manage situations where a test case is being used when the task is run, select the **Retry playback if test cases are blocked** checkbox, and then enter a number of seconds in the **Retry pause before attempting playback** field. The build task will then pause for the specified number of seconds before it tries to resume.
+5. Select the **Download** checkbox to download files from Azure DevOps. Leave this checkbox cleared only if all files have already been downloaded to the agent environment.
+6. Select the **Upload** checkbox to upload edited files after the build process has run to Azure DevOps. Common practice is to have this checkbox selected, and to leave it cleared only if the pipelines include an execute task that follows, where the **Download** checkbox is cleared.
+7. Select the **Generate test execution files only** checkbox if you don't want to regenerate or overwrite existing Excel parameter files. This scenario is the most common, and the checkbox is selected by default.
+8. In the **Use test suite** field group, select whether you want to specify test suites by name or ID.
+9. Enter the name or ID of the test suite that you want to build. To specify multiple test suites, use commas to separate the values.
+10. To manage situations where a test case is being used when the task is run, select the **Retry playback if test cases are blocked** checkbox, and then enter a number of seconds in the **Retry pause before attempting playback** field. The build task then pauses for the specified number of seconds before it tries to resume.
 
 ![Configuring a new RSAT build task.](media/pipeline-rsat-build-task.png)
 
@@ -147,10 +139,11 @@ This procedure shows how to add RSAT tasks to an existing pipeline job. RSAT tas
 2. In the **Command** field group, select the **Execute test cases** option to create a task that runs test suites that are ready for execution.
 3. In the **RSAT location**, double-check the RSAT installation folder.
 4. Enter the location of the RSAT settings files. Settings files can be saved from the RSAT settings dialog box. They contain information such as the location of the test plan, the URL of the finance and operations test environment, and the preferred browser.
-5. Select the **Download** checkbox if you want to download attachments (test execution and parameter files) from the Azure DevOps test cases before execution starts. Clear the checkbox if files were downloaded from an earlier build task. In this case, the current files in the working directory will be used.
-6. In the **Use test suite** field group, select whether you want to specify test suites by name or ID.
-7. Enter the name or ID of the test suite that you want to execute.  To specify multiple test suites, use commas to separate the values.
-8. Optional: Enter text in the **Comments** field. You can include Azure DevOps variables. The text will be recorded in the test run summary and test case results for later reference.
+5. Select the **Download** checkbox if you want to download attachments (test execution and parameter files) from the Azure DevOps test cases before execution starts. Clear the checkbox if files were downloaded from an earlier build task. In this case, the current files in the working directory are used.
+6. Select the **Update WebDriver for browser** checkbox to automate the download of new required WebDrivers that match the browser version. Common practice is to have this checkbox selected.
+7. In the **Use test suite** field group, select whether you want to specify test suites by name or ID.
+8. Enter the name or ID of the test suite that you want to run. To specify multiple test suites, use commas to separate the values.
+9. Optional: Enter text in the **Comments** field. You can include Azure DevOps variables. The text is recorded in the test run summary and test case results for later reference.
 
 ![Configuring a new RSAT execute task.](media/pipeline-rsat-execute-task.png)
 
@@ -170,7 +163,7 @@ If you want to use your own custom scripts, you can add a Windows PowerShell tas
 
 ## Schedule a pipeline
 
-After Azure DevOps pipelines are created, they can be manually triggered, scheduled, or configured to run on a predefined recurring schedule.
+After Azure Pipelines are created, they can be manually triggered, scheduled, or configured to run on a predefined recurring schedule.
 
 ![Scheduling execution of a pipeline.](media/pipeline-schedule.png)
 

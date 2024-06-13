@@ -1,22 +1,20 @@
 ---
 title: Dual-write overview
-description: This article provides an overview dual-write, which provides near-real-time interaction between customer engagement apps and finance and operations apps.
+description: Learn about dual-write, which provides near-real-time interaction between customer engagement apps and finance and operations apps.
 author: RamaKrishnamoorthy
-ms.date: 02/06/2020
-ms.topic: overview
-audience: Application User, IT Pro
-ms.reviewer: sericks
-ms.search.region: global
 ms.author: ramasri
+ms.topic: overview
+ms.date: 06/06/2024
+ms.reviewer: twheeloc
+audience: IT Pro
+ms.search.region: global
 ms.search.validFrom: 2020-01-06
+ms.custom: evergreen
 ---
 
 # Dual-write overview
 
 [!include [banner](../../includes/banner.md)]
-
-
-
 
 
 ## What is dual-write?
@@ -83,7 +81,7 @@ To create parity with finance and operations applications, dual-write makes some
 
 + Activities and notes are unified and expanded to support both C1s (users of the system) and C2s (customers of the system).
 
-+ To prevent data loss during currency transmission between finance and operations apps and the Dataverse, you'll be able to extend the number of decimal places in the currency data type of customers engagement apps. The feature autotranslates existing rows to the new extended state at the metadata layer. During this process, the currency value is translated to decimal data rather than money data, and the currency value supports 10 decimal places. This feature is opt-in, and organizations that don't need more than 4 decimal places of precision do not need to opt in. For more information, see [Currency data-type migration for dual-write](currrency-decimal-places.md).
++ To prevent data loss during currency transmission between finance and operations apps and the Dataverse, you'll be able to extend the number of decimal places in the currency data type of customers engagement apps. The feature autotranslates existing rows to the new extended state at the metadata layer. During this process, the currency value is translated to decimal data rather than money data, and the currency value supports 10 decimal places. This feature is opt-in, and organizations that don't need more than 4 decimal places of precision do not need to opt in. For more information, see [Currency data-type migration for dual-write](../../../fin-ops/data-entities/currrency-decimal-places.md).
 
 + [Date effectivity](../../dev-tools/date-effectivity.md) will be added to Dataverse. It will support past, present, and future data on the same table.
 

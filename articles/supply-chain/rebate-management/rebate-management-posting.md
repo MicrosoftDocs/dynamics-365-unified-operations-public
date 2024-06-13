@@ -1,28 +1,15 @@
 ---
-# required metadata
-
 title: Rebate management posting setup
-description: This article describes how to set up posting profiles. Posting profiles are used to determine posting entries for Rebate management calculation lines.
+description: Learn how to set up posting profiles. Posting profiles are used to determine posting entries for Rebate management calculation lines.
 author: sherry-zheng
-ms.date: 02/19/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: TAMRebateGroup
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: chuzheng
-ms.search.validFrom: 2021-02-19
-ms.dyn365.ops.version: 10.0.18
+ms.topic: how-to
+ms.date: 05/15/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: TAMRebatePosting
 ---
 
 # Rebate management posting setup

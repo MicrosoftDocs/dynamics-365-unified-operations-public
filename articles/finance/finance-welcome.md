@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Finance home page
-description: This article provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 Finance. 
+description: Access a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 Finance.
 author: twheeloc
-ms.date: 07/04/2023
+ms.author: twheeloc
 ms.topic: welcome
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/15/2024
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: ["206434"]
 ms.collection: get-started
-ms.assetid: 8a6238bd-9d6f-48d9-8752-3966836364a4
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kfend
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 8a6238bd-9d6f-48d9-8752-3966836364a4
 ---
 
 # Welcome to Dynamics 365 Finance 
@@ -80,7 +69,7 @@ Supply chain management functionality covers parts of the procure-to-pay process
    - Invoicing
    - Paying for the goods and services your organization purchases 
     
-For information about the capabilities for managing purchases, inventory, and manufacturing, see the [Supply Chain Management home page](../supply-chain/index.md).
+For information about the capabilities for managing purchases, inventory, and manufacturing, see [Welcome to Dynamics 365 Supply Chain Management](../supply-chain/supply-chain-management-welcome.md).
 
 ## eLearning courses
 

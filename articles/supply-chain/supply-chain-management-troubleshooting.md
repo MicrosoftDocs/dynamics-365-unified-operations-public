@@ -2,20 +2,21 @@
 title: Supply Chain Management troubleshooting and FAQs
 description: This article provides links to troubleshooting resources and frequently asked question articles for Dynamics 365 Supply Chain Management
 author: kamaybac
-ms.date: 07/12/2022
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: kamaybac
-ms.search.validFrom: 2022-07-12
-ms.dyn365.ops.version: 10.0.28
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: overview
+ms.date: 04/19/2024
+audience: Application User
+ms.custom: 
+  - bap-template
 ---
 
 # Supply Chain Management troubleshooting and FAQs
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../includes/azure-ad-to-microsoft-entra-id.md)]
+
 
 ## Troubleshooting articles
 
@@ -42,6 +43,7 @@ The following FAQ articles discuss issues specific to Supply Chain Management:
 - [Sales order FAQs](sales-marketing/sales-orders-faq.md)
 - [Schedule sales history data cleanup](sales-marketing/sales-update-history-cleanup-performance-improvements.md)
 - [DDMRP FAQ](master-planning/planning-optimization/ddmrp-faqs.md)
+- [User-based authentication FAQ](warehousing/warehouse-app-user-based-auth-faq.md)
 
 The following FAQ articles discuss issues related to the platform shared by all finance and operations apps, including Supply Chain Management:
 
@@ -51,7 +53,7 @@ The following FAQ articles discuss issues related to the platform shared by all 
 - [Go-live for implementation projects FAQ](../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md?toc=/dynamics365/supply-chain/toc.json)
 - [One Version service updates FAQ](../fin-ops-core/fin-ops/get-started/one-version.md?toc=/dynamics365/supply-chain/toc.json)
 - [Open in Excel experiences FAQ](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/supply-chain/toc.json)
-- [Subscriptions, LCS projects, and Azure Active Directory tenants FAQ](../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/supply-chain/toc.json)
+- [Subscriptions, LCS projects, and Microsoft Entra tenants FAQ](../fin-ops-core/fin-ops/get-started/subscription-overview.md?toc=/dynamics365/supply-chain/toc.json)
 - [Workflow FAQ](../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/supply-chain/toc.json)
 
 ## Other support resources

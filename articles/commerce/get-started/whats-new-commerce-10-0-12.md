@@ -4,23 +4,14 @@
 title: What's new or changed in Dynamics 365 Commerce 10.0.12 (August 2020)
 description: This article describes features that are either new or changed in Dynamics 365 Commerce 10.0.12. 
 author: josaw1
-ms.date: 07/23/2020
+ms.date: 04/12/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.custom:
+  - bap-template
+  - evergreen
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: josaw
 ms.search.validFrom: 2020-04-30 
 ms.dyn365.ops.version: 10.0.12
@@ -29,7 +20,6 @@ ms.dyn365.ops.version: 10.0.12
 # What's new or changed in Dynamics 365 Commerce 10.0.12 (August 2020)
 
 [!include [banner](../includes/banner.md)]
-
 
 This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.12. This version has a build number of 10.0.507 and is available on the following schedule:
 

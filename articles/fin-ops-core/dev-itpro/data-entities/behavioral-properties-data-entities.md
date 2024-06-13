@@ -1,37 +1,22 @@
 ---
-# required metadata
-
 title: Behavioral properties on data entities
 description: This article describes data entity properties that let you override property values on the tables or views that are the data sources of that entity. 
-author: peakerbl
-ms.date: 10/01/2019
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 10/01/2019
+ms.reviewer: johnmichalak
 audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
 ms.assetid: 8e214c95-616b-4ee1-b5a4-fa5ce5147f2c
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Behavioral properties on data entities
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Every data entity has properties that let you override the same property values on the tables or views that are the data sources of that entity. Your choices affect the behavior of the entity. In the following table, the first column lists the properties that are discussed in this article. The top row lists the levels where the property is found in the entity designer. The levels are listed in order of increasing granularity: the data source level is more granular than the entity level but less granular than the field level.
 
@@ -128,13 +113,13 @@ At the field level, the **AllowEdit** and **AllowEditOnCreate** properties are a
 <td>Auto</td>
 <td><ul>
 <li><strong>Auto:</strong> The property is inherited from the underlying table field.
-<blockquote>[!NOTE] The <strong>Auto</strong> value isn't available for unmapped fields, such as computed or virtual fields.</blockquote>
+<strong>Note:</strong>  The <strong>Auto</strong> value isn't available for unmapped fields, such as computed or virtual fields.
 </li>
 <li><strong>No:</strong> Users aren't allowed to modify the data for this field in a new record.</li>
 <li><strong>Yes:</strong> Users are allowed to modify the data for this field for a new record.</li>
 </ul>
 This behavior is enforced for all consumers – X++, OData, and so on.
-<blockquote>[!IMPORTANT] The <strong>No</strong> and <strong>Yes</strong> values do <em>not</em> override the setting on the field in the underlying table.</blockquote></td>
+<strong>Important:</strong>  The <strong>No</strong> and <strong>Yes</strong> values do <em>not</em> override the setting on the field in the underlying table.</td>
 </tr>
 <tr>
 <td>Behavior</td>
@@ -151,7 +136,7 @@ This behavior is enforced for all consumers – X++, OData, and so on.
 <td>Auto, No, Yes</td>
 <td>Auto</td>
 <td><strong>Auto:</strong> The property is inherited from the underlying table field. This behavior is enforced for all consumers – X++, OData, and so on.
-<blockquote>[!IMPORTANT] The <strong>No</strong> and <strong>Yes</strong> values do <em>not</em> override the setting on the field in the underlying table.</blockquote></td>
+<strong>Important:</strong>  The <strong>No</strong> and <strong>Yes</strong> values do <em>not</em> override the setting on the field in the underlying table.</td>
 </tr>
 </tbody>
 </table>

@@ -4,15 +4,12 @@ description: This article provides an overview of improvements that have been ma
 author: ShalabhjainMSFT
 ms.date: 01/30/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
-ms.custom: 141393
 ms.assetid: 
 ms.search.industry: Retail
 ---

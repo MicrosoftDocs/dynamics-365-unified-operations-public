@@ -1,29 +1,16 @@
 ---
-# required metadata
-
 title: Retained earnings calculation in Financial reporting
-description: This article describes how the **Retained earnings calculation** enhancement for Financial reporting is used. This enhancement has implications for organizations that use currency translation.
+description: Learn how the Retained earnings calculation enhancement for Financial reporting is used, which has implications for organizations that use currency translation.
 author: jinniew
-ms.date: 09/20/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: FinancialReports
-# ROBOTS: 
-audience: IT Pro, Developer
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 261824
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jiwo
+ms.topic: article
+ms.date: 09/20/2021
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-01-09
+ms.search.form: FinancialReports
 ms.dyn365.ops.version: Version 10.0.8
-
 ---
 
 # Retained earnings calculation in Financial reporting
@@ -54,4 +41,4 @@ If the enhancement is turned on, the retained earnings in the reporting currency
 | Summed exchange rate in the reporting currency on 12/31/XXXX when the enhancement is turned on (d). | EUR      | 110.00 | 167.50 | 257.50 | 288.75 |
 
 
-For more information, see [Set up for Retained earnings](/general-ledger/financial-reporting-currency-capability.md#setup-for-retained-earnings).
+For more information, see [Set up for Retained earnings](../dev-itpro/financial-reporting-currency-capability.md#setup-for-retained-earnings).

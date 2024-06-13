@@ -1,30 +1,15 @@
 ---
-# required metadata
-
 title: Inventory aging report storage
-description: This article describes the functionality that lets you run an Inventory aging report and make the output available as a form and a chart.
+description: Learn about the functionality that lets you run an Inventory aging report and make the output available as a form and a chart.
 author: JennySong-SH
-ms.date: 11/11/2019
-ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails
-# ROBOTS:
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: yanansong
-ms.search.validFrom: 2019-01-10
-ms.dyn365.ops.version: 
-
+ms.topic: how-to
+ms.date: 05/27/2024
+ms.custom:
+  - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails
 ---
 
 # Inventory aging report storage
@@ -37,7 +22,7 @@ This method of running an **Inventory aging report storage** report is helpful i
 
 ## Turn the Inventory value storage report feature on or off
 
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. Admins can turn this functionality on or off by searching for the *Inventory aging report storage* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *Inventory aging report storage* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Run an Inventory aging report storage
 
@@ -55,6 +40,5 @@ To use this feature, it must be turned on for your system. As of Supply Chain Ma
     > The form won't include subtotals that are defined in the report layout.
 
 The **Inventory aging report** data entity lets you export the output of an **Inventory aging report storage** report by applying a filter for the **Process Identifier – Name** field to any format that Data management supports.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

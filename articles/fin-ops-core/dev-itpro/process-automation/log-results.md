@@ -1,18 +1,16 @@
 ---
 title: Log results and messages
-description: This article describes how to log results and messages from process automation.
+description: Learn about how to log results and messages from process automation, including various outlines on methods with code examples.
 author: RyanCCarlson2
-ms.date: 09/10/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: rcarlson
+ms.topic: article
+ms.date: 06/10/2024
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 
 ---
 
 # Log results and messages

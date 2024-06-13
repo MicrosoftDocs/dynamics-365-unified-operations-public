@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Asset library in Lifecycle Services
-description: This article provides information about the Asset Library functionality in Microsoft Dynamics 365 Lifecycle Services.
+description: Learn about the Asset Library functionality in Microsoft Dynamics 365 Lifecycle Services, including an overview on asset library support.
 author: laneswenka
-ms.date: 02/08/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 266824
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: article
+ms.date: 02/08/2023
+ms.reviewer: johnmichalak
+sericksaudience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Asset library in Lifecycle Services

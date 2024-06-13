@@ -6,8 +6,6 @@ description: This procedure shows how to create an accessorial master for a hub 
 author: Weijiesa
 ms.date: 11/11/2016
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
 ms.search.form: TMSCarrierAccessorial,TMSAccessorialMaster, TMSHubAccessorial

@@ -228,6 +228,17 @@ DataCacheAccessor is internal. Use .NET memory cache or a similar approach.
 <td> PricingDatabaseAccessor </td>
 <td> Obsolete since version 10.0.1, use the relevant CRT data requests. </td>
 </tr>
+<tr>
+<td> InventoryAvailabilityServiceDataRetriever.GetUnpostedQuantities </td>
+<td>
+
+```C#
+GetProductWarehouseInventoryUnpostedQuantityServiceRequest request = new(productWarehouses);
+ICollection<ProductWarehouseInventoryUnpostedQuantity> unpostedQuantities = (await context.ExecuteAsync<GetProductWarehouseInventoryUnpostedQuantityServiceResponse>(request).ConfigureAwait(false)).UnpostedQuantities;
+```
+
+</td>
+</tr>
 </table>
 
 ### Retail Server or Headless Commerce API extensions

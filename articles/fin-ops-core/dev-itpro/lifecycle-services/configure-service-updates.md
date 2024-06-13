@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Configure service updates through Lifecycle Services (LCS)
-description: This article explains how to specify how and when you receive service updates for your environments.
+description: Learn about how to specify how and when you receive service updates for your environments, including an outline on canceled updates.
 author: angelmarshall
-ms.date: 03/02/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-ms.custom: bap-template
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: tsmarsha
-ms.search.validFrom: 2019-3-31 
+ms.topic: article
+ms.date: 03/02/2023
+ms.custom: bap-template
+ms.reviewer: johnmichalak 
+audience: Developer, IT Pro
+ms.search.region: Global
+ms.search.validFrom: 2019-3-31
+ms.search.form:
 ms.dyn365.ops.version: Platform update 24 
-
 ---
 
 # Configure service updates through Lifecycle Services (LCS)

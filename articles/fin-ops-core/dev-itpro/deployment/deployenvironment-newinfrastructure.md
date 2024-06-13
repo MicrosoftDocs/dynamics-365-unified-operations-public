@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Deploy a new environment
-description: This article explains how to deploy a new environment using the self-service deployment experience.
+description: Learn how to deploy a new environment using the self-service deployment experience, including how to delete an environment.
 author: rashmansur
-ms.date: 05/10/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-ms.reviewer: johnmichalak
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: rashmim
+ms.topic: article
+ms.date: 05/10/2023
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2018-12-31
+ms.search.form: 
 ms.dyn365.ops.version: 8.1.1
-
 ---
 
 # Deploy a new environment
@@ -37,7 +25,7 @@ This article walks through the process of deploying sandbox (Tier 2 and above) a
 3. Provide a **unique name** for the environment.
 
     > [!NOTE]
-    > For US Government projects in the Government Community Cloud (GCC), environment names are limited to 15 characters for sandboxes and 23 characters for production due to the total length of the resulting URL.
+    > `sandbox` and `trial` are reserved and cannot be used for your environment name. Additionally, environment names are limited to 20 characters due to the total length of the resulting URL.
 
 4. Select the **region** where you want this environment to be deployed. 
 

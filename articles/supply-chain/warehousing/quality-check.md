@@ -6,8 +6,6 @@ description: This article provides information about the Quality check feature. 
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

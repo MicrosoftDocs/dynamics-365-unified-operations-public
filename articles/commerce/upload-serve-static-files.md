@@ -4,8 +4,6 @@ description: This article describes how to upload a static file into Microsoft D
 author: bicyclingfool
 ms.date: 11/16/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

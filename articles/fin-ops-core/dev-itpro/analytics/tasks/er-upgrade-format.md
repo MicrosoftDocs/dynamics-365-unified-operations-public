@@ -4,9 +4,7 @@ description: This article describes how to maintain an Electronic reporting (ER)
 author: kfend
 ms.date: 08/29/2018
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
+audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: filatovm
@@ -25,7 +23,7 @@ To complete these steps, you must first complete the steps in the "Create a conf
 ## Select format configuration for customization
 1. Go to Organization administration > Workspaces > Electronic reporting.
 
-    In this example, sample company Litware, Inc. (https://www.litware.com) will act as a configuration provider that supports format configurations for electronic payments for a particular country/region.    Sample company Proseware, Inc. (http://www.proseware.com) will act as a consumer of the format configuration that Litware, Inc. provided. Proseware, Inc. uses formats in certain regions of that country/region.  
+    In this example, sample company Litware, Inc. (https://www.litware.com) will act as a configuration provider that supports format configurations for electronic payments for a particular country/region. Sample company Proseware, Inc. (https://www.proseware.com) will act as a consumer of the format configuration that Litware, Inc. provided. Proseware, Inc. uses formats in certain regions of that country/region.  
 2. Click Reporting configurations.
 3. Click Show filters.
 4. Apply the following filters: Enter a filter value of "BACS (UK fictitious)" on the "Name" field using the "begins with" filter operator.

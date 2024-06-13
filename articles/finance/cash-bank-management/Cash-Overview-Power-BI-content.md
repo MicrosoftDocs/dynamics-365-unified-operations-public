@@ -1,26 +1,15 @@
 ---
-# required metadata
-
 title: Cash overview Power BI content
-description: This article describes the Cash overview Power BI content. It explains how to access the reports that are included in the content, and provides information about the data model and entities that were used to build the content.
-author: angelad116
-ms.date: 07/16/2020
+description: Learn about the Cash overview Power BI content, including outlines on how to access the reports that are included in the content and entities used to build the content.
+author: ericwangchen
+ms.author: wangchen
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  BankTreasurerWorkspace
+ms.date: 08/24/2023
+ms.reviewer: twheeloc
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: angelading
-ms.search.validFrom: 2017-06-30 
+ms.search.validFrom: 2017-06-30
+ms.search.form: BankTreasurerWorkspace
 ms.dyn365.ops.version: July 2017 update 
 ---
 
@@ -49,7 +38,7 @@ The following setup needs to be completed in order for data to display in **Cash
 
 Reports from the **Cash overview** Power BI content are displayed in the **Cash overview** and **Bank management** workspaces.
 
-To view the Cash flow forecasting reports with data, you must first run the forecast calculation process using the **Calculate cash flow forecasts** function from the Cash and bank management area. This needs to be completed for each company included in the forecast.  You then need to refresh the LedgerCovLiquidityMeasurement aggregate measurement on the **Entity Store** page.  
+To view the Cash flow forecasting reports with data, you must first run the forecast calculation process using the **Calculate cash flow forecasts** function from the Cash and bank management area. This needs to be completed for each company included in the forecast.  You then need to refresh the LedgerCovLiquidityMeasurementV2 aggregate measurement on the **Entity Store** page.  
 
 For demonstration purposes, you can add cash flow forecasting demo data using the **Generate data** page from the Demo data module.  This script will insert data into the cash flow forecasting tables to quickly populate information necessary for reports.  This module is only available if you have the Demo data suite model deployed on the environment. 
 

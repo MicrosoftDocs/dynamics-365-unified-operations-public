@@ -5,8 +5,6 @@ description: Configure parameters for Benefits management and Employee self serv
 author: twheeloc
 ms.date: 08/24/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 # optional metadata
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 # ROBOTS: 
@@ -14,7 +12,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -37,7 +34,7 @@ Before you can set up benefit plans in Microsoft Dynamics 365 Human Resources, y
 
    | Field | Description |
    | --- | --- |
-   | **Country/region** | The **Country/region** field determines the display order of ZIP codes/states. The selected country displays first in the dropdown list. |
+   | **Country/region** | The **Country/region** field determines the display order of ZIP codes/states. The selected country/region displays first in the dropdown list. |
    | **Enrollment reason code** | Select a default reason code to use when employee plans are created during open enrollment processing. |
    | **Cancellation reason code** | The reason code to use when an employee benefit plan is canceled. It displays in a dialog during the cancellation process. Users can change it the **Cancellation reason code** if necessary. |
    | **Reopen reason code** | The reason code to use when an employee benefit plan is reopened. It displays in a dialog during the cancellation process. Users can change the **Reopen reason code** if necessary. | 

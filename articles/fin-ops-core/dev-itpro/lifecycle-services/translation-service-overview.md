@@ -1,31 +1,19 @@
 ---
-# required metadata
-
 title: Dynamics 365 Translation Service overview
-description: This article provides information about the Microsoft Dynamics 365 Translation Service (DTS).
-author: arianapadilla
-ms.date: 10/25/2021
+description: Learn about the Microsoft Dynamics 365 Translation Service (DTS), including a table that outlines various supported projects.
+author: sericks007
+ms.author: sericks
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
+ms.date: 10/25/2021
 ms.custom: ["6154"]
-ms.collection: get-started
-ms.assetid: ejchoGIT
+ms.reviewer: johnmichalak
+ms.collection: get-started 
+audience: Developer, IT Pro
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: arianap
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: ejchoGIT
 ---
 
 # Dynamics 365 Translation Service overview
@@ -54,7 +42,7 @@ DTS currently supports the following product versions.
 
 | Product name | Versions | Supported format for user interface files | Supported format for documentation files | Notes |
 |--------------|----------|-------------------------------------------|------------------------------------------|-------|
-| Microsoft Dynamics AX 2012 | All versions | .ktd, .ald | .docx | |
+| Microsoft Dynamics AX 2012 | All versions | .ktd, .ald | .docx | Alignment is the only supported functionality for this product. |
 | Dynamics 365 finance and operations apps | All versions | .label.txt | .docx, .html | .txt is the specific label format and .html is the custom help solution format. |
 | Microsoft Dynamics 365 Commerce | All versions | .label.txt | .docx | |
 | Microsoft Dynamics CRM | All versions | .resx | .docx | |

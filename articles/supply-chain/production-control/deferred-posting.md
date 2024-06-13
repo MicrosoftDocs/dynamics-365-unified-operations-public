@@ -1,23 +1,21 @@
 ---
 title: Make finished goods physically available before posting to journals
-description: When a manufactured item is reported as finished, it's registered as available for further physical processing, and one or more journals are posted. This article describes how to defer journal postings by enabling them to be processed by a batch job in a message queue.
+description: When a manufactured item is reported as finished, it's registered as available for further physical processing, and one or more journals are posted.
 author: johanhoffmann
-ms.date: 08/02/2022
-ms.topic: article
-ms.search.form: ProdParameters, JmgProdParameters, InventLocation, JmgMES3PMessageProcessorMessage
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: johanho
+ms.topic: article
+ms.date: 08/02/2022
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-08-02
+ms.search.form: ProdParameters, JmgProdParameters, InventLocation, JmgMES3PMessageProcessorMessage
 ms.dyn365.ops.version: 10.0.29
 ---
 
 # Make finished goods physically available before posting to journals
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 When a worker reports a manufactured item as finished, the system registers it as available for further physical processing (such as shipment or putaway). During this process, one or more journals are also posted (such as the report as the finished journal, picking list journal, and route card journal). If you want to make your items physically available before all postings have been processed, you can set up the system to defer the journal postings. Deferred postings are then managed by a batch job that will process the postings as system resources allow.
 
@@ -30,7 +28,7 @@ The following illustration shows how processes for posting journals are invoked 
 Before you can use deferred journal posting, it must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Production control*
-- **Feature name:** *(Preview) Make finished goods physically available before posting to journals*
+- **Feature name:** *Make finished goods physically available before posting to journals*
 
 ## Set up journal posting options for reporting as finished
 

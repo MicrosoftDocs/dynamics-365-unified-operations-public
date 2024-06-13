@@ -1,20 +1,17 @@
 ---
 title: Reimbursements in the public sector
-description: This article answers common questions related to reimbursements in the public sector.
+description: Access answers common questions related to reimbursements in the public sector, including questions about billing classifications and reimbursements.
 author: JodiChristiansen
-ms.date: 11/02/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: jchrist
+ms.topic: article
+ms.date: 11/02/2022
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustBillingClassification
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 9d61d1d8-1672-4bd0-ae0d-605b09240890
-ms.search.industry: Public sector
-ms.search.form: CustBillingClassification
 ---
 
 # Reimbursements in the public sector

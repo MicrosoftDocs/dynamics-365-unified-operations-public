@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Explosion of a BOM version
-description: This article explains a master planning scenario that involves explosion of a bill of materials (BOM) version.
+description: Learn about a master planning scenario that involves explosion of a bill of materials (BOM) version, including an outline on scenario conditions.
 author: t-benebo
-ms.date: 06/20/2017
+ms.author: benebotg
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ReqTransExplosion
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: fe08c2e6-9cc5-4e34-bbb2-cd07843403b5
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: benebotg
 ms.search.validFrom: 2016-02-28
+ms.search.form: ReqTransExplosion
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: fe08c2e6-9cc5-4e34-bbb2-cd07843403b5
 ---
 
 # Explosion of a BOM version

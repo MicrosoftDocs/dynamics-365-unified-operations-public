@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Revenue recognition reallocation - Scenario 1
-description: This article goes through a reallocation scenario where two sales orders are entered, but they are only confirmed. The same scenario will produce similar results if more than two sales orders are in a confirmed state.
-author: bking
+description: Access a reallocation scenario where two sales orders are entered, but they are only confirmed. You can get similar results if more than two sales orders are confirmed.
+author: twheeloc
+ms.author: twheeloc
+ms.topic: conceptual
 ms.date: 12/21/2020
-ms.topic: index-page
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: Customer
-audience: Application User
-# ms.devlang: 
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
+audience: Application User
 ms.search.region: Global 
-# ms.search.industry: 
-ms.author: bking
 ms.search.validFrom: 2020-12-21
+ms.search.form: Customer
 ms.dyn365.ops.version: 10.0.14
-
 ---
 
 # Revenue recognition reallocation – Scenario 1

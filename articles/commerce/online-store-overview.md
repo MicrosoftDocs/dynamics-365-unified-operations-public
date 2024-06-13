@@ -4,27 +4,16 @@
 title: E-commerce site overview
 description: This article provides an overview of the support for e-commerce sites in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 11/05/2020
+ms.date: 05/28/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application user
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
-ms.search.region: global
-ms.search.industry: Retail
-ms.author: stuharg
+ms.search.region: Global
+ms.author: shajain
 ms.search.validFrom: 2019-09-30
-ms.dyn365.ops.version: 10.0.5
-
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # E-commerce site overview
@@ -45,7 +34,7 @@ After an online store is set up, it can be associated with the Dynamics 365 Comm
 
 ## Deploy a new e-commerce tenant
 
-During initialization of an e-commerce site, you're prompted for a domain name. For more information about domains in Commerce, see [Configure your domain name](configure-your-domain-name.md) and [Domains in Dynamics 365 Commerce](domains-commerce.md). To deploy a new e-commerce tenant by using [Microsoft Dynamics Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide), follow the steps in [Deploy a new e-commerce tenant](deploy-ecommerce-site.md). After your e-commerce tenant is set up in LCS, a link to Commerce site builder will be provided. You can then use Commerce site builder to initialize and configure your e-commerce sites.
+During initialization of an e-commerce site, you're prompted for a domain name. For more information about domains in Commerce, see [Configure your domain name](configure-your-domain-name.md) and [Domains in Dynamics 365 Commerce](dev-itpro/domains-commerce.md). To deploy a new e-commerce tenant by using [Microsoft Dynamics Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide), follow the steps in [Deploy a new e-commerce tenant](deploy-ecommerce-site.md). After your e-commerce tenant is set up in LCS, a link to Commerce site builder will be provided. You can then use Commerce site builder to initialize and configure your e-commerce sites.
 
 ## Initialize your e-commerce site
 
@@ -75,7 +64,7 @@ You can add new channels by selecting **Add a channel**. To add new languages to
 
 ## Set up an Azure B2C tenant
 
-Dynamics 365 Commerce uses Azure Active Directory (Azure AD) business-to-consumer (B2C) to support user credential and authentication flows. For information about how to set up your Azure B2C tenant, see [Set up a B2C tenant in Commerce](set-up-b2c-tenant.md), [Set up custom pages for user sign-ins](custom-pages-user-logins.md), and [Configure multiple B2C tenants in a Commerce environment](configure-multi-b2c-tenants.md).
+Dynamics 365 Commerce uses Microsoft Entra business-to-consumer (B2C) to support user credential and authentication flows. For information about how to set up your Azure B2C tenant, see [Set up a B2C tenant in Commerce](set-up-b2c-tenant.md), [Set up custom pages for user sign-ins](custom-pages-user-logins.md), and [Configure multiple B2C tenants in a Commerce environment](configure-multi-b2c-tenants.md).
 
 ## Overview of the default site pages
 
@@ -92,7 +81,7 @@ For information about how to manage your site settings, see the following articl
 
 - [Manage e-commerce users and roles](manage-ecommerce-users-roles.md)
 - [Search engine optimization (SEO) considerations for your site](search-engine-optimization-considerations.md)
-- [Manage Content Security Policy (CSP)](manage-csp.md)
+- [Manage Content Security Policy (CSP)](dev-itpro/manage-csp.md)
 - [Select a site theme](select-site-theme.md)
 
 ## Manage site content

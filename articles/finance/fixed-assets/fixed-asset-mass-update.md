@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Fixed asset mass update
-description: If you use books, you can change the depreciation conventions for groups of assets that are part of the same book.
+description: Learn about fixed asset mass updates. If you use books, you can change the depreciation conventions for groups of assets that are part of the same book.
 author: moaamer
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 3521
-ms.assetid: 50207ffb-6b89-4fb9-92e9-928bc0729489
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 50207ffb-6b89-4fb9-92e9-928bc0729489
 ---
 
 # Fixed asset mass update

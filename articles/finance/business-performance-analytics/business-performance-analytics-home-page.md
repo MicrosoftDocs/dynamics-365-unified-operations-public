@@ -1,65 +1,42 @@
 ---
-
-title: Business performance analytics home page
-description: This article provides information about business performance analytics.
+title: What is Business performance analytics
+description: Learn about Business performance analytics, including outlines on turning data into action to improve business performance.
 author: jinniew
 ms.author: jiwo
-ms.reviewer: twheeloc 
-ms.date: 07/15/2023
 ms.topic: welcome
-ms.prod: 
-ms.technology:
+ms.date: 05/17/2024
 ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User
 ms.search.form: business-performance-analytics
 ---
 
-# About business performance analytics
+# What is Business performance analytics
 
 > [!NOTE]
-> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. For more information about how to participate in the public preview for business performance analytics, contact <bpaquestions@service.microsoft.com>.
+> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. Participate in our Public preview here:  <[https://aka.ms/InstallBPA](https://aka.ms/InstallBPA)>.
 
-Business performance analytics is a powerful tool for gaining insights from data in a user-friendly and comprehensive way across multiple business processes. It delivers insights to all users, regardless of their technical ability, simplifying the process of making informed decisions and enabling finance professionals to focus on strategic initiatives.
+## Turn data into action to improve business performance
+Finance and operations departments grapple with an array of data-related challenges that significantly impact their productivity, accuracy, and strategic decision-making. Outdated data sources and fragmented tools hinder their ability to extract, integrate, and analyze data effectively. To address these issues, a robust data warehouse solution becomes indispensable.
 
-Creating a hyper-connected enterprise through an intuitive dimensional data model and empowering people with self-service analytics enables reporting in a more holistic way, providing a unified and accessible view across multiple systems of record. This is achieved by unifying data, simplifying reporting, and adopting self-service analytics. This solution streamlines financial reporting and shortens cycle times, allowing finance teams to focus on strategic initiatives. It also enhances the growth potential of Dynamics 365 Finance capabilities by leveraging unified data for AI and machine learning to improve financial performance and protect organizations from risk.
+Check out this [TechTalk](https://www.youtube.com/watch?v=Qb6uo_er6nE&t=10s) for more information about Business performance analytics.
 
-## Prerequisites
+> [!NOTE]
+> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. Participate in our Public preview here:  <[https://aka.ms/InstallBPA](https://aka.ms/InstallBPA)>.
 
-Business performance analytics has the following prerequisites:
+### The role of data warehousing in Dynamics 365 Finance and Operations
+A data warehouse serves as the foundation for modern finance and operations operations. Data is consolidated from various sources across different locations and systems, creating a centralized repository. This repository ensures that financial institutions have reliable, up-to-date, and accurate data for business intelligence. Key benefits include:
 
-- System requirements
-- Version requirements
-- Set up business performance analytics
-- Use business performance analytics
-- FAQ's
+1. Centralized data: The data warehouse aggregates information from departments and subsidiaries, providing a reliable pool of data for reporting and analysis.
+2. Efficient reporting: Standardized data simplifies reporting, enabling swift generation of consistent reports. These reports are essential for evaluating performance, monitoring financial health, and making informed strategic decisions.
+3. Enhanced analytics: A financial data warehouse allows for advanced analytics, improving loan portfolio management, credit risk assessment, and fraud detection. This leads to better decision-making, cost reduction, and increased profitability.
+4. Regulatory compliance: Data warehouses facilitate adherence to regulatory requirements by organizing data for audits, regulatory reporting, and compliance monitoring.
 
-### System requirements
+### The Data model within the warehouse
+At the heart of this operation lies the data model, a conceptual representation of the structure and relationships between data elements within the warehouse. Stakeholders can understand how data is organized, stored, and accessed. By leveraging an effective data model, leaders can turn data into actionable insights, driving positive outcomes.
 
-A Tier-2 environment (multi-box) is required to preview business performance analytics. For more information about environments, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+### Impactful outcomes with advanced analytics
 
-### Version requirements
+Business performance analytics lets finance teams easily access comprehensive and timely data. In this way, it streamlines routine financial reporting and task automation, and significantly reduces cycle times. Through streamlined data management and enhanced accessibility, finance teams can save significant time and unlock opportunities for increased automation, productivity, and accuracy. By taking advantage of their efficiency gains, they can shift their focus from their routine reporting to optimizing business models and planning for the future.
 
-Business performance analytics requires Dynamics 365 Finance version 10.0.35 and PU59 and later and the selected language to be en-US.
 
-## Set up business performance analytics
-
-### Set up business performance analytics environment
-
-Business performance analytics is currently supported in the following regions: Australia, UK, USA, Europe and Japan. Before you can use business performance analytics, you must complete configuration steps. For more information, see [Set up business performance analytics](configure-BPA.md).
-
-### Install business performance analytics
-
-After business performance analytics is configured, it can be installed. For more information, see [Install business performance analytics](install-bpa.md).
-
-### Set up security 
-
-Security in business performance analytics can be set up at the role level and also at the row/dimension level. For more information about how to set up security in business performance analytics, see [Set up security in business performance analytics](set-up-security.md).
-
-## Use business performance analytics 
-
-### Reports in business performance analytics 
-
-Business performance analytics reports can be customized in Power BI. For more information about reports in business performance analytics, see [Reports in business performance analytics](Reports-in-BPA.md).
-
-### How to create and edit reports
-
-Business performance analytics lets user create and edit reports. For more information, see [How to create and edit reports](how-to-create-and-edit-reports.md).

@@ -4,7 +4,7 @@ description: This article describes how to set up a Microsoft Dynamics 365 Comme
 author: bicyclingfool
 ms.date: 05/27/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg

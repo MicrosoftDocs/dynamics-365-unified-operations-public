@@ -4,17 +4,16 @@
 title: Dynamics 365 Payment Connector for Adyen overview
 description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 06/01/2023
+ms.date: 06/12/2024
 ms.topic: overview
-audience: Application User, Developer, IT Pro
-ms.reviewer: josaw
-ms.custom: 141393
+audience: Developer, IT Pro
+ms.reviewer: v-chrgriffin
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
-
+ms.custom: 
+  - bap-template
 ---
 
 # Dynamics 365 Payment Connector for Adyen overview
@@ -42,45 +41,52 @@ The first-party out-of-box Dynamics 365 Payment Connector for Adyen is supported
 
 #### Supported Adyen firmware versions
 
-The list below describes the minimum and maximum Adyen firmware versions that are supported for each version of the Microsoft Dynamics 365 Retail POS. The same values below also represent the Commerce and Adyen firmware versions supported for Dynamics 365 Commerce Store Commerce.
+The list below describes the minimum and maximum Adyen firmware versions that are supported for each version of the Microsoft Dynamics 365 Retail point of sale (POS). The same values below also represent the Commerce and Adyen firmware versions supported for Dynamics 365 Commerce Store Commerce.
 
 ---
-
-# [10.0.29](#tab/10-0-29)
-### Dynamics 365 Retail POS version 10.0.29
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
-| --- | --- |
-| adyen_v1_71p16 | adyen_v1_78p6 |
-
-# [10.0.30](#tab/10-0-30)
-### Dynamics 365 Retail POS version 10.0.30
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
-| --- | --- |
-| adyen_v1_71p16 | adyen_v1_78p6 |
-
-# [10.0.31](#tab/10-0-31)
-### Dynamics 365 Retail POS version 10.0.31
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
-| --- | --- |
-| adyen_v1_78p6 | adyen_v1_84p1 |
-
-# [10.0.32](#tab/10-0-32)
-### Dynamics 365 Retail POS version 10.0.32
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
-| --- | --- |
-| adyen_v1_84p1 | adyen_v1_86p3 |
-
-# [10.0.33](#tab/10-0-33)
-### Dynamics 365 Retail POS version 10.0.33
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
-| --- | --- |
-| adyen_v1_86p3 | adyen_v1_88p3 |
 
 # [10.0.34](#tab/10-0-34)
 ### Dynamics 365 Retail POS version 10.0.34
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | --- | --- |
 | adyen_v1_88p3 | adyen_v1_89p6 |
+
+# [10.0.35](#tab/10-0-35)
+### Dynamics 365 Retail POS version 10.0.35
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_89p6 | adyen_v1_91p2 |
+
+# [10.0.36](#tab/10-0-36)
+### Dynamics 365 Retail POS version 10.0.36
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_91p2 | adyen_v1_91p15 |
+
+# [10.0.37](#tab/10-0-37)
+### Dynamics 365 Retail POS version 10.0.37
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_91p15 | adyen_v1_94p4 |
+
+# [10.0.38](#tab/10-0-38)
+### Dynamics 365 Retail POS version 10.0.38
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_94p4 | adyen_v1_96p0 |
+
+# [10.0.39](#tab/10-0-39)
+### Dynamics 365 Retail POS version 10.0.39
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_96p0 | adyen_v1_99p6 |
+
+# [10.0.40](#tab/10-0-40)
+### Dynamics 365 Retail POS version 10.0.40
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_99p6 | adyen_v1_100p8 |
+
 
 ---
 
@@ -142,6 +148,7 @@ The following video describes the capabilities of the Adyen Castles SE1 Android 
 \*Interac and Union Pay recurring card tokens aren't provided by Adyen, so they can't be supported for card not present transactions.
 
 #### Supported gift cards
+
 | Scheme | Card present | Card not present |
 |---|:-:|---|
 | Givex | ✔ | ✔ |
@@ -149,12 +156,14 @@ The following video describes the capabilities of the Adyen Castles SE1 Android 
 
 To support these external gift card schemes through the Dynamics 365 Payment Connector for Adyen, you must complete additional steps. For more information, see [Support for external gift cards](/dynamics365/unified-operations/retail/dev-itpro/gift-card).
 
-#### Supported wallets
+#### Digital wallet support status
 
-| Scheme | Card present | Card not present |
+The following table lists the current Dynamics 365 Commerce Payment Connector for Adyen support status of popular digital wallets. The "Card present support" column is for POS transactions, and the "Card not present support" column is for call center and online channel transactions. 
+
+| Scheme | Card present support | Card not present support |
 |---|---|---|
 | PayPal (via Adyen Connector) | No | No |
-| Google Pay | No | No |
+| Google Pay | Yes | Yes |
 | Apple Pay | Yes | Yes |
 | Klarna | No | No |
 | Affirm | No | No |
@@ -162,8 +171,8 @@ To support these external gift card schemes through the Dynamics 365 Payment Con
 | Alipay | No | No |
 | WeChat | No | No |
 
-
 #### Supported card present input methods
+
 | Input method | Supported | Notes |
 |---|:-:|---|
 | Dip | ✔ | |
@@ -194,7 +203,7 @@ The following countries/regions have Commerce components available and card pres
 | Iceland | ✔ |
 | Ireland | ✔ |
 | Italy | ✔ |
-| Japan | Future release |
+| Japan | ✔ |
 | Latvia | ✔ |
 | Lithuania | ✔ |
 | Malaysia | ✔ |
@@ -207,9 +216,10 @@ The following countries/regions have Commerce components available and card pres
 | Spain | ✔ |
 | Sweden | ✔ |
 | Switzerland | ✔ |
+|  United Arab Emirates (UAE) | ✔ |
 | United Kingdom | ✔ |
 | United States | ✔ |
-| Brazil | Future release |
+| Brazil | ✔ |
 
 #### Supported card not present countries/regions
 

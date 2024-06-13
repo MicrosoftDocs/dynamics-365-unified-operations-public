@@ -4,8 +4,6 @@ description: This article covers active image modules and describes how to add t
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

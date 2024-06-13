@@ -7,7 +7,7 @@ description: This article covers catalog picker modules and describes how to add
 author: ashishmsft
 ms.date: 07/11/2022
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
@@ -94,7 +94,7 @@ The following illustration shows an example of an ecommerce website header with 
 
 [Create Commerce catalogs for B2B sites](catalogs-b2b-sites.md)
 
-[Extensibility impact of Commerce catalogs for B2B customizations](catalogs-b2b-sites-dev.md)
+[Extensibility impact of Commerce catalogs for B2B customizations](dev-itpro/catalogs-b2b-sites-dev.md)
 
 [Commerce catalogs for B2B FAQ](catalogs-b2b-sites-FAQ.md)
 

@@ -1,18 +1,20 @@
 ---
 title: Asset Management mobile app FAQs and known issues
-description: This article provides answers to several frequently asked questions (FAQs) about the Asset Management mobile app. It also describes a few known issues that affect the app and how to work around them.
+description: Access answers to several frequently asked questions (FAQs) about the Asset Management mobile app, including questions about supported platforms and devices.
 author: johanhoffmann
 ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: overview
-ms.date: 03/17/2023
+ms.date: 09/19/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # Asset Management mobile app FAQs and known issues
+
+[!include [banner](../../includes/banner.md)]
 
 This article provides answers to several frequently asked questions (FAQs) about the Asset Management mobile app. It also describes a few known issues that affect the app and how to work around them.
 
@@ -22,13 +24,13 @@ The Asset Management mobile app runs within the Power Apps mobile app. All platf
 
 ## Why don't I see anything when I sign in to the app?
 
-If you don't see any features in the app, you probably lack the permissions required to access them. Access to each feature is controlled by security roles assigned to your user account in Supply Chain Management.  For more information, see the [Configure users and workers in Supply Chain Management](onboard-app.md#roles-workers)
+If you don't see any features in the app, you probably lack the permissions required to access them. Access to each feature is controlled by security roles assigned to your user account in Supply Chain Management. For more information, see the [Configure users and workers in Supply Chain Management](onboard-app.md#roles-workers)
 
 ## What versions of Supply Chain Management support the app?
 
-The Asset Management mobile app requires Supply Chain Management version 10.0.32 or newer.
+The Asset Management mobile app requires Supply Chain Management version 10.0.36 or newer.
 
-## Can I customize and extend the app?
+## <a name="customize"></a>Can I customize and extend the app?
 
 No, it isn't currently possible to customize or extend the app.
 
@@ -38,29 +40,42 @@ No, the Asset Management mobile app doesn't currently support offline mode.
 
 ## Is there multi-language support?
 
-No, the Asset Management mobile app is only available in English at this time. We plan to add multi-language support in an upcoming release.
+Yes, the Asset Management mobile app is available in all the same languages as Supply Chain Management, except for right-to-left (RTL) languages. We're awaiting RTL support from the canvas app platform and plan to add RTL support in a future release.
 
 ## Where can I go to discuss the app with the community and submit suggestions to Microsoft?
 
-The [Asset Management Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=17556554&view=all) is a great place to go if you want to exchange tips, ask questions, or submit suggestions for improvement. Yammer group participants include Microsoft partners, customers, experts, and employees.
+The [Asset Management Viva Engage (Yammer) group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=17556554&view=all) is a great place to go if you want to exchange tips, ask questions, or submit suggestions for improvement. Yammer group participants include Microsoft partners, customers, experts, and employees.
 
-## Are there any known issues affecting the preview release of the Asset Management mobile app?
+## How can I diagnose "Error when trying to retrieve data from the network" issues?
 
-Yes. The Asset Management mobile app is currently in public preview and therefore has a few known issues that we expect to correct in an upcoming release. The following subsections describe the known issues.
+If you see the error message "Error when trying to retrieve data from the network", follow these steps to diagnose and solve the issue:
 
-### Stuck on the loading or onboarding page of the mobile app
+1. Run the Asset Management app in a browser as described in [Run an app in a web browser](/power-apps/user/run-app-browser).
+1. If you see the same error while running in a browser, set up your browser to [capture a HAR file](/microsoft-edge/devtools-guide-chromium/network/reference#save-all-network-requests-to-a-har-file) and then reload the tab where the app is running.
+1. Use a tool such as the [Google HAR analyzer](https://toolbox.googleapps.com/apps/har_analyzer/) to redact all secrets from the HAR file.
+1. Contact Microsoft Support and share the redacted HAR file with them.
+1. Microsoft Support will help you diagnose and solve the issue.
 
-After you install or update the preview application package or solution in the Power Platform admin center (see also [Install the mobile app in Dataverse](onboard-app.md#install-in-dataverse)), you might get stuck at the loading page or at the end of the onboarding page.
+The content of the HAR file might reveal an error similar to the following example:
 
-To work around this issue, open the canvas application for editing in Power Apps Studio and then republish it immediately without making any changes. For more information about how to republish a canvas application, see [Save and publish canvas apps](/power-apps/maker/canvas-apps/save-publish-app).
+```text
+SecLib::CheckPrivilege failed. User: <EntraObjectID>, PrivilegeName: prvReadRelationship, PrivilegeId: <PrivilegeID>, Required Depth: Basic, BusinessUnitId: <BusinessUnitID>, MetadataCache Privileges Count: <CacheCount>, User Privileges Count: <UserPrivilegeCount>
+```
 
-### Too much vertical whitespace on details pages
+This error can occur because the *Asset Management app* role doesn't have the privileges required to read the `Relationship` table. Instead, that privilege is provided by the *Finance and Operations Basic User* role in Dataverse. To resolve this issue, add the *Finance and Operations Basic User* role to each user or team that's using the app.
 
-Occasionally, the first time you open job or work-order details from a list page, some of the fields will show too much vertical white space. To mitigate this issue, return to the list page and then reopen the details.
+## When updating the app, how can I solve the error: "Could not delete solution ... because it has been modified"?
 
-The following screenshot shows an example of this issue.
+The update process fails with an error if it detects that the Asset Management mobile application canvas app has been customized. This helps prevent the updater from overwriting your customizations. To solve this issue, remove any customization layers by restoring the oldest version of the app. If the oldest version is over six months old, you'll need to manually delete the `msdyn_EnterpriseAssetManagementMobileV2` solution and then reinstall the app from *Dynamics 365 apps* or *AppSource*.
 
-[<img src="media/asset-management-known-issue-vertical-space.png" alt="Too much vertical whitespace on the work-order details page" title="Too much vertical whitespace on the work-order details page" width="200" />](media/asset-management-known-issue-vertical-space.png#lightbox)
+Consider cloning the canvas app before removing your customizations, just in case you want to copy the customizations to the updated app.
+
+> [!NOTE]
+> Microsoft doesn't support [customizing or extending](#customize) the Asset Management mobile app.
+
+## Are there any known issues affecting the release of the Asset Management mobile app?
+
+Yes, the Asset Management mobile app has a few known issues that we expect to correct in an upcoming release. The following subsections describe them.
 
 ### Limited file-type support for attachments
 

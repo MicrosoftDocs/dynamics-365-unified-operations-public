@@ -1,18 +1,16 @@
 ---
 title: Reporting and analytics with Power BI home page
-description: This article points you to resources that you can use to learn more about the business intelligence and reporting tools that are available.
+description: Learn about resources that you can use to learn more about the business intelligence and reporting tools that are available.
 author: sericks007
-ms.date: 10/02/2019
-ms.topic: index-page
-ms.prod: 
-ms.technology: 
-audience: Application User, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
+ms.topic: conceptual
+ms.date: 10/02/2019
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.collection: get-started
 ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
 ---
 
@@ -71,9 +69,9 @@ Standard financial reports are provided that use the default main account catego
 
 To learn more, see the following topics:
 
-- [Financial reporting](financial-reporting-intro.md)
-- [Generate financial reports](generate-financial-report.md)
-- [Financial report components](financial-report-components.md)
+- [Financial reporting](../../fin-ops/analytics/financial-reporting-intro.md)
+- [Generate financial reports](../../fin-ops/analytics/generate-financial-report.md)
+- [Financial report components](../../fin-ops/analytics/financial-report-components.md)
 
 ## Technical reference reports
 The following reports provide reference information about the objects:

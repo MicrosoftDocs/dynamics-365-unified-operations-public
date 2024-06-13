@@ -1,15 +1,15 @@
 ---
 title: Unified number sequence for job IDs
-description: This feature provides a single, unified number sequence that generates job IDs for the Production control, Manufacturing execution, and Time and attendance modules.
+description: Learn about a single, unified number sequence that generates job IDs for the Production control, Manufacturing execution, and Time and attendance modules.
 author: johanhoffmann
-ms.date: 03/25/2021
-ms.topic: article
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: johanho
+ms.topic: article
+ms.date: 03/25/2021
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-03-05
+ms.search.form:
 ms.dyn365.ops.version: 10.0.16
 ---
 

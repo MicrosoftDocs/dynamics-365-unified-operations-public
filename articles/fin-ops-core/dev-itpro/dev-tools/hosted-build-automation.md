@@ -1,16 +1,15 @@
 ---
 title: Build automation that uses Microsoft-hosted agents and Azure Pipelines
-description: The article explains how you can automate the process of building X++ on any agents in Microsoft Azure DevOps.
-author: gianugo
-ms.date: 03/05/2020
+description: Learn about how you can automate the process of building X++ on any agents in Microsoft Azure DevOps, including prerequisites.
+author: josaw1
+ms.author: josaw
 ms.topic: article
-audience: Developer
+ms.date: 09/29/2023
 ms.reviewer: josaw
+audience: Developer
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: AX 7.0.0
-ms.assetid: 
 ---
 
 # Build automation that uses Microsoft-hosted agents and Azure Pipelines
@@ -46,6 +45,8 @@ The following packages can be downloaded from the Shared asset library:
 Starting from version 10.0.18, the Application Suite package has been split into two packages and there is an additional package to download from the Shared asset library.
 
 - **Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp** - This package contains the compiled X++ code for the Application Suite module. This code is optimized for building.
+
+Starting from version 10.0.40, the Application package has been replaced by two packages **Microsoft.Dynamics.AX.Application1.DevALM.BuildXpp** and **Microsoft.Dynamics.AX.Application2.DevALM.BuildXpp** and they are can be downloaded along with **Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp** package from the shared asset library.
 
 Download these packages from LCS, and add them to an Azure Artifacts feed in the Azure DevOps organization where the builds will run. For more information about how to create an Azure Artifacts feed and add NuGet packages, see these topics:
 
@@ -85,6 +86,19 @@ The following example shows a **packages.config** file for the three main packag
     </packages>
     ```
 
++ For version 10.0.40 or later, use the following packages.config layout:
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <packages>
+        <package id="Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp" version="7.0.7279.40" targetFramework="net40" />
+        <package id="Microsoft.Dynamics.AX.Application1.DevALM.BuildXpp" version="10.0.1935.21" targetFramework="net40" />
+        <package id="Microsoft.Dynamics.AX.Application2.DevALM.BuildXpp" version="10.0.1935.21" targetFramework="net40" />
+        <package id="Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp" version="10.0.1935.21" targetFramework="net40" />
+        <package id="Microsoft.Dynamics.AX.Platform.CompilerPackage" version="7.0.7279.40" targetFramework="net40" />
+    </packages>
+    ```
+
 ## Creating the pipeline
 
 Azure DevOps provides pipelines that can be used to automate builds. There are two types of pipelines: YML and Classic. YML pipelines are available only when you use Git source control repositories. Classic pipelines must be used to build Team Foundation Version Control (TFVC) repositories. For more information, see [Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started).
@@ -103,6 +117,20 @@ To simplify use of the extracted NuGet packages, consider using the **NuGet inst
 The following example of NuGet arguments will prevent a subfolder from being created for the package versions and will extract the NuGet packages into **$(Pipeline.Workspace)\\NuGets**.
 
 `-ExcludeVersion -OutputDirectory "$(Pipeline.Workspace)\NuGets"`
+
+> [!NOTE]
+> Because the NuGetInstaller@0 version of the task has been deprecated, Microsoft recommends that you use the NuGetCommand@2 version of the task instead.
+
+To use the NuGetCommand@2 version of the task, follow these steps.
+
+1. Select the **Custom command** option for the task.
+1. In the **Command and arguments** field, add the following command (with the paths replaced):
+
+    `install -Noninteractive <path to packages.config> -ConfigFile <path to nuget.config> -Verbosity Detailed -ExcludeVersion -OutputDirectory <path to output where nugets are installed, for example NugetsPath>`
+
+    For example:
+
+    `install -Noninteractive $(NugetConfigsPath)\packages.config -ConfigFile $(NugetConfigsPath)\nuget.config -Verbosity Detailed -ExcludeVersion -OutputDirectory "$(NugetsPath)"`
 
 To build X++ by using MSBuild, you must supply several arguments. In the pipeline step that builds the solution, you can specify these arguments in the **MSBuild Arguments** field.
 
@@ -136,6 +164,16 @@ The following example of MSBuild arguments assumes that the NuGet packages are i
     /p:ReferenceFolder="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp\ref\net40;$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Application.DevALM.BuildXpp\ref\net40;$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp\ref\net40;$(Build.SourcesDirectory)\Metadata;$(Build.BinariesDirectory)"
     /p:ReferencePath="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage" /p:OutputDirectory="$(Build.BinariesDirectory)"
     ```
+
++ For version 10.0.40 or newer, use the following arguments:
+
+    ```dos
+    /p:BuildTasksDirectory="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage\DevAlm"
+    /p:MetadataDirectory="$(Build.SourcesDirectory)\Metadata"
+    /p:FrameworkDirectory="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage"
+    /p:ReferenceFolder="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp\ref\net40;$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Application1.DevALM.BuildXpp\ref\net40;$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Application2.DevALM.BuildXpp\ref\net40;$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp\ref\net40;$(Build.SourcesDirectory)\Metadata;$(Build.BinariesDirectory)"
+    /p:ReferencePath="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage" /p:OutputDirectory="$(Build.BinariesDirectory)"
+    ```    
 
 In the pipeline samples, variables for NuGet package names and paths are used to simplify these commands.
 

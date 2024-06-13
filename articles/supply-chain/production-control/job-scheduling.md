@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Job scheduling
-description: This article provides information about job scheduling, which is a more detailed form of scheduling than operations scheduling. You can use job scheduling to schedule individual jobs or shop orders, and to control the manufacturing environment.
+description: Learn about job scheduling, which is a more detailed form of scheduling than operations scheduling for individual jobs or shop orders.
 author: johanhoffmann
-ms.date: 06/20/2017
+ms.author: johanho
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ProdSchedule
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: aef37341-91d8-4263-80eb-35d9584be156
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
 ms.search.validFrom: 2016-02-28
+ms.search.form: ProdSchedule
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: aef37341-91d8-4263-80eb-35d9584be156
 ---
 
 # Job scheduling

@@ -2,19 +2,15 @@
 title: Set up Azure Key Vault for secure key management
 description: This article describes how to set up Azure Key Vault to provide secure key management in Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 10/12/2022
+ms.date: 05/28/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: bennettray
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.custom: 
-ms.assetid: 
 ---
+
 # Set up Azure Key Vault for secure key management
 
 [!include [banner](../includes/banner.md)]
@@ -66,7 +62,7 @@ To add your Node application details into Retail Server's authentication allow l
 1.	Select the **Identity Providers** tab.
 1.	In the first section named **IDENTITY PROVIDERS**, select **Add**.
 1. For **Issuer Value**, enter `https://sts.windows.net/<TENANT_ID>/`, where **\<TENANT_ID>** is your tenant ID. Ensure that no extra trailing spaces are added.
-1. For **Name**, enter "Azure AD". The name is case sensitive, so ensure that it is copied exactly as shown.
+1. For **Name**, enter "Microsoft Entra ID". The name is case sensitive, so ensure that it is copied exactly as shown.
 1. For **Type**, enter "Active Directory".
 1.	In the second section named **RELYING PARTIES**, add an entry with the **client ID** of your managed identity. 
 1. For **Type**, select **Confidential**.
@@ -89,13 +85,13 @@ Next, you will configure Retail Server to securely communicate with your Key Vau
 
 ### Create a new app registration and add a client secret
 
-You will first need to create a new app registration under Azure AD to represent your Retail Server so that you can register your Key Vault with Retail Server.
+You will first need to create a new app registration under Microsoft Entra ID to represent your Retail Server so that you can register your Key Vault with Retail Server.
 
 To create a new app registration, follow these steps.
 
 1.	Navigate to your [Azure Portal homepage](https://ms.portal.azure.com/).
 1. Go to the directory containing the Azure App Service hosting your Node application.
-1.	Go to **Azure Active Directory**.
+1.	Go to **Microsoft Entra ID**.
 1. In the left navigation pane, select **App registrations**.
 1. Select **New registration**, and then enter a name (for example, "RetailServer").
 1. In the overview panel, copy and save the **Application (client) ID** value for later use.

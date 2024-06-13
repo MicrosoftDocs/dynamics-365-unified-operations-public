@@ -4,9 +4,7 @@ description: This article describes how to create a new Electronic reporting con
 author: kfend
 ms.date: 04/23/2021
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
+audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: filatovm

@@ -39,10 +39,10 @@ Before you can pack containers by using the Warehouse Management mobile app, you
 
 1. Go to **System administration \> Workspaces \> Feature management**, and turn on the following features in the order that they're listed in here. (All four features are listed as part of the *Warehouse management* module.) For more information about how to use the **Feature management** workspace, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-    1. *Multi-level detours for the Warehouse Management mobile app* (For more information about this feature, see [Multi-level detours for the Warehouse Management mobile app](warehouse-app-detours.md).)
-    1. *Auto-submit detour steps for the Warehouse Management mobile app* (For more information about this feature, see [Auto-submit detour steps for the Warehouse Management mobile app](warehouse-app-detours.md).)
+    1. *Multi-level detours for the Warehouse Management mobile app*<br>As of Supply Chain Management version 10.0.36, this feature is mandatory and can't be turned off. For more information about this feature, see [Multi-level detours for the Warehouse Management mobile app](warehouse-app-detours.md).
+    1. *Auto-submit detour steps for the Warehouse Management mobile app*<br>As of Supply Chain Management version 10.0.36, this feature is turned on by default. For more information about this feature, see [Auto-submit detour steps for the Warehouse Management mobile app](warehouse-app-detours.md).
     1. *Warehouse management app data inquiry flow* (For more information about this feature, see [Query data using Warehouse Management mobile app detours](warehouse-app-data-inquiry.md).)
-    1. *Pack containers using the Warehouse Management mobile app* (This feature is the one that is described in this article.)
+    1. *Pack containers using the Warehouse Management mobile app* (This feature is the one that is described in this article.) As of Supply Chain Management version 10.0.36, this feature is turned on by default.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names**, and then, on the Action Pane, select **Create default setup** to update the field names in the Warehouse Management mobile app. Repeat this step for each legal entity (company) where you use the Warehouse Management mobile app. For more information, see [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device steps**, and then, on the Action Pane, select **Create default setup**. Repeat this step for each legal entity (company) where you use the Warehouse Management mobile app.
@@ -186,7 +186,7 @@ Follow these steps to enable new containers to be created on the packing flow pa
 
 ## Add a detour for closing a container
 
-You'll now add another [detour](warehouse-app-detours.md) so that workers can close a container from within the packing flow. 
+You'll now add another [detour](warehouse-app-detours.md) so that workers can close a container from within the packing flow.
 
 Follow these steps to enable containers to be closed on the packing flow page that prompts workers to scan an item.
 
@@ -454,6 +454,9 @@ Your new mobile device menu items are now ready to be added to the mobile device
 1. On the Action Pane, select **Save**.
 1. In the list pane on the left, select the *Main* menu.
 1. In the **Available menus and menu items** list, in the **Menus** section, select your new *Inquire* menu. Then select the **Add** button (right arrow) to move that item into the **Menu structure** list.
+
+    > [!TIP]
+    > Workers can only access menu items that are included in the menu that is assigned to their [mobile device user account](mobile-device-work-users.md) (or a submenu of that menu). This also applies to menu items that are intended for use as [detours](warehouse-app-detours.md), but which you might not want workers to access directly from the menu. In this case, you should add the detour items to the relevant menus and then hide the items. To hide an item included in a menu, right-click on it in the **Menu structure** column and select **Hide**. To show an item that is currently hidden, right-click on it and select **Show**.
 
 ## Configure detours in your mobile device steps
 

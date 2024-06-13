@@ -1,15 +1,15 @@
 ---
 title: Sealed bidding for RFQs
-description: This article describes how to set up sealed bidding to keep vendor bid replies secret until they are unsealed by purchasing personnel.
-author: GalynaFedorova
-ms.date: 08/02/2021
+description: Learn how to set up sealed bidding to keep vendor bid replies secret until they are unsealed by purchasing personnel with an outline on setup and configuration.
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
-ms.search.form:
-audience: Application User
+ms.date: 08/02/2021
 ms.reviewer: kamaybac
+audience: Application User
 ms.search.region: Global
-ms.author: gfedorova
 ms.search.validFrom: 2021-08-02
+ms.search.form:
 ms.dyn365.ops.version: 10.0.21
 ---
 
@@ -38,7 +38,7 @@ Because users who have appropriate permissions and who are set up as vendor cont
 
 ### Step 2: Enable the sealed bidding feature
 
-To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. Admins can turn this functionality on or off by searching for the *Sealed bidding for RFQs* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *Sealed bidding for RFQs* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Step 3: Set up Azure Key Vault
 

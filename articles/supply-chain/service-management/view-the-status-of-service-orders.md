@@ -3,11 +3,9 @@
 
 title: View the status of service orders 
 description: You can use the Dispatch board form to view the status of service activities in service orders.
-author: sorenva
+author: ChristianRytt
 ms.date: 05/07/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -21,7 +19,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sorenand
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

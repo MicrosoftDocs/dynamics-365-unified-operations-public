@@ -4,8 +4,6 @@ description: This article describes how to create address books in Microsoft Dyn
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
@@ -44,7 +42,7 @@ The following image shows the creation of an employee address book for a retail 
 
 [Screen layout overview](pos-screen-layouts.md)		  
 
-[Configure and install Retail hardware station](retail-hardware-station-configuration-installation.md)  
+[Configure and install Retail hardware station](dev-itpro/retail-hardware-station-configuration-installation.md)  
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

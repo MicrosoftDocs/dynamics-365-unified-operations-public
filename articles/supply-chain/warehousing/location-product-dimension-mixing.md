@@ -6,8 +6,6 @@ description: This article provides information about location product dimension 
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

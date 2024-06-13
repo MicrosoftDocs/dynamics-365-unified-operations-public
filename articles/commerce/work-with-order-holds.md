@@ -6,9 +6,6 @@ description: This article describes how to work with holds on orders by using Dy
 author: josaw1
 ms.date: 05/14/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: MCRHoldCodeTable, MCRSalesTableOrderHistory, MCRHoldCodeTrans, MCROrderEventSetup, MCROrderEventTable

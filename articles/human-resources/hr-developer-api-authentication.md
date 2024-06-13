@@ -6,8 +6,6 @@ description: This article provides overview information about how to authenticat
 author: twheeloc
 ms.date: 02/03/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -17,7 +15,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -28,9 +25,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Authentication
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -69,9 +63,9 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
 
 1. Sign in to the [Microsoft Azure portal](https://portal.azure.com) with a work or school account, or a personal Microsoft account.
 
-2. If your account gives you access to more than one tenant, select your account in the upper-right corner, and set your portal session to the Azure Active Directory (Azure AD) tenant that you want.
+2. If your account gives you access to more than one tenant, select your account in the upper-right corner, and set your portal session to the Microsoft Entra tenant that you want.
 
-3. In the left pane, select the **Azure Active Directory** service, and then select **App registrations \> New registration**.
+3. In the left pane, select the **Microsoft Entra ID** service, and then select **App registrations \> New registration**.
 
 4. When the **Register an application** page appears, enter your application's registration information:
 
@@ -80,16 +74,16 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
 
         | Supported account types | Description |
         |-------------------------|-------------|
-        | Accounts in this organizational directory only | Select this option if you're building a line-of-business app. This option isn't available unless you're registering the app in a directory.<p>This option is mapped to **Azure AD only single-tenant**.</p><p>This option is the default option unless you're registering the app outside a directory. In that case, the default option is **Azure AD multi-tenant and personal Microsoft accounts**.</p> |
-        | Accounts in any organizational directory | Select this option to target all business and educational customers.<p>This option is mapped to **Azure AD only multi-tenant**.</p><p>If you registered the app as **Azure AD only single-tenant**, you can use the **Authentication** blade to update it to **Azure AD only multi-tenant** and then back to **Azure AD only single-tenant**.</p> |
-        | Accounts in any organizational directory and personal Microsoft accounts | Select this option to target the widest set of customers.<p>This option is mapped to **Azure AD multi-tenant and personal Microsoft accounts**.</p><p>If you registered the app as **Azure AD multi-tenant and personal Microsoft accounts**, you can't change this setting in the user interface (UI). Instead, you must use the application manifest editor to change the supported account types.</p> |
+        | Accounts in this organizational directory only | Select this option if you're building a line-of-business app. This option isn't available unless you're registering the app in a directory.<p>This option is mapped to **Microsoft Entra only single-tenant**.</p><p>This option is the default option unless you're registering the app outside a directory. In that case, the default option is **Microsoft Entra multi-tenant and personal Microsoft accounts**.</p> |
+        | Accounts in any organizational directory | Select this option to target all business and educational customers.<p>This option is mapped to **Microsoft Entra only multi-tenant**.</p><p>If you registered the app as **Microsoft Entra only single-tenant**, you can use the **Authentication** blade to update it to **Microsoft Entra only multi-tenant** and then back to **Microsoft Entra only single-tenant**.</p> |
+        | Accounts in any organizational directory and personal Microsoft accounts | Select this option to target the widest set of customers.<p>This option is mapped to **Microsoft Entra multi-tenant and personal Microsoft accounts**.</p><p>If you registered the app as **Microsoft Entra multi-tenant and personal Microsoft accounts**, you can't change this setting in the user interface (UI). Instead, you must use the application manifest editor to change the supported account types.</p> |
 
     - **Redirect URI (optional)** – Select the type of app that you're building: **Web** or **Public client (mobile & desktop)**. Then enter the redirect URI (or reply URL) for the app.
 
         - For web apps, provide the base URL of the app. For example, `http://localhost:31544` might be the URL for a web app that runs on your local machine. Users then use this URL to sign in to a web client app.
-        - For public client apps, provide the URI that Azure AD uses to return token responses. Enter a value that is specific to your app, such as `myapp://auth`.
+        - For public client apps, provide the URI that Microsoft Entra uses to return token responses. Enter a value that is specific to your app, such as `myapp://auth`.
 
-        To see specific examples for web apps or native apps, see the quickstarts in [Microsoft identity platform (formerly Azure Active Directory for developers)](/azure/active-directory/develop/#quickstarts).
+        To see specific examples for web apps or native apps, see the quickstarts in [Microsoft identity platform (formerly Microsoft Entra ID developers)](/azure/active-directory/develop/#quickstarts).
 
 5. Under **API permissions**, select **Add a permission**. Then, on the **APIs my organization uses** tab, search for **Dynamics 365 Human Resources**, and add the **user\_impersonation** permission to your app. The Application ID for Human Resources is f9be0c49-aa22-4ec6-911a-c5da515226ff. Use this ID to ensure you have chosen the correct application.
 
@@ -97,11 +91,11 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
 
    [![Registering a new app in the Azure portal.](media/api-new-app-registration-expanded.png)](media/api-new-app-registration-expanded.png#lightbox)
 
-Azure AD assigns a unique application ID (client ID) to your app, and takes you to the **Overview** page for your app. To add more capabilities to your app, you can select other configuration options, such as options for branding and for certificates and secrets.
+Microsoft Entra assigns a unique application ID (client ID) to your app, and takes you to the **Overview** page for your app. To add more capabilities to your app, you can select other configuration options, such as options for branding and for certificates and secrets.
 
 ## Retrieving an access token
 
-The specifics of how you retrieve an access token for calling the Human Resources data API will depend on what technologies you're using to develop your client application. For example, you might be [testing with a third party utility](../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md) (such as Postman), developing a C# console application or web service, or building a javascript/TypeScript client.
+The specifics of how you retrieve an access token for calling the Human Resources data API will depend on what technologies you're using to develop your client application. For example, you might be testing with a third party utility, developing a C# console application or web service, or building a javascript/TypeScript client.
 
 Example C# client application:
 ```C#
@@ -116,10 +110,10 @@ namespace TalentODataPoC
 {
     class Program
     {
-        // prereq: This client app must be registered in Azure Active Directory. The app must be
+        // prereq: This client app must be registered in Microsoft Entra ID. The app must be
         // registered as requiring permission to the Dynamics 365 for Talent API (with the Dynamics
         // HCM Workload delegated permission).
-        static string clientId = "4fc703ef-672c-4e2c-813f-2f9d29d726db"; // This value should be obtained from AAD and must match your registered app
+        static string clientId = "4fc703ef-672c-4e2c-813f-2f9d29d726db"; // This value should be obtained from Microsoft Entra and must match your registered app
         static string talentNamespaceUri = "";
 
         public static async Task CallTalentODataService()
@@ -133,7 +127,7 @@ namespace TalentODataPoC
             var authResult = await authenticationContext.AcquireTokenAsync(
                 "http://hr.talent.dynamics.com", /*Talent app id or resource URI*/
                 clientId, /*registered client app id*/
-                new Uri("https://localhost"), /*redirect URI, as registered in your AAD app*/
+                new Uri("https://localhost"), /*redirect URI, as registered in your Microsoft Entra app*/
                 new PlatformParameters(PromptBehavior.SelectAccount));
 
             // create the authorization header, which needs to be passed in the Header of the HTTP Requests to Talent

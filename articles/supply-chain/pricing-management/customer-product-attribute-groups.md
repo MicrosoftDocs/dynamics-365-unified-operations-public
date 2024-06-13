@@ -1,18 +1,18 @@
 ---
-title: Customer and product price attribute groups
-description: This article explains how to configure customer and product price attribute groups for the Pricing management module.
+title: Customer and product price attribute groups (preview)
+description: Learn how to configure customer and product price attribute groups for the Pricing management module, including usage examples.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: GUPPricingAttributeGroup, GUPPricingAttributeGroup
 ms.topic: how-to
 ms.date: 04/03/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: GUPPricingAttributeGroup, GUPPricingAttributeGroup
 ---
 
-# Customer and product price attribute groups
+# Customer and product price attribute groups (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

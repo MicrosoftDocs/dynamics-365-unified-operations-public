@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Revenue recognition on sales orders 
-description: This article describes the basic functionality for recognizing revenue on sales orders and invoices. Revenue recognition is available on the sales order and on the corresponding invoice that is created from the sales order.
-author: bking
-ms.date: 08/24/2018
-ms.topic: index-page
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  Customer
-audience: Application User
-# ms.devlang: 
+description: Learn about the basic functionality for recognizing revenue on sales orders and invoices available on the sales order and the corresponding invoices created from sales orders.
+author: twheeloc
+ms.author: twheeloc
+ms.topic: conceptual
+ms.date: 08/16/2023
+ms.custom: 
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
+audience: Application User
 ms.search.region: Global 
-# ms.search.industry: 
-ms.author: bking
 ms.search.validFrom: 2018-08-30
+ms.search.form: Customer
 ms.dyn365.ops.version: 8.0.4
-
 ---
 
 # Revenue recognition on sales orders
@@ -30,7 +19,7 @@ ms.dyn365.ops.version: 8.0.4
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> The Revenue recognition feature can't be turned on through Feature management. Currently, you must use configuration keys to turn it on.
+> This functionality will be deprecated January 2024, new users should use subscription billing.
 
 This article describes the basic functionality for recognizing revenue on sales orders and invoices. Revenue recognition is available on a sales order and on the corresponding invoice that is created from the sales order. The sales order can also be created through a Time and materials project.
 

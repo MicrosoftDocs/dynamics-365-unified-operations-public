@@ -4,9 +4,7 @@ description: The steps in this article explain how a Regulatory configuration se
 author: kfend
 ms.date: 06/29/2019
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
+audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: filatovm

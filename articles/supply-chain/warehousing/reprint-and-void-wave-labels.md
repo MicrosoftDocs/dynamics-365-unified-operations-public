@@ -6,9 +6,7 @@ description: This article explains how to void and reprint existing wave labels.
 author: perlynne
 ms.date: 07/09/2020
 ms.topic: article
-# ms.prod:
-# ms.technology:
-
+# # 
 # optional metadata
 
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup

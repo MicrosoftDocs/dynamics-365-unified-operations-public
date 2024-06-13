@@ -1,18 +1,20 @@
 ---
-title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.35 (July 2023)
-description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.35. 
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.35 (August 2023)
+description: Learn about features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.35 with a table outlining feature areas. 
 author: kamaybac
 ms.author: kamaybac
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: conceptual
-ms.date: 03/03/2023
+ms.date: 04/19/2024
+ms.custom:
+  - bap-template
+  - evergreen
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
-# What's new or changed in Dynamics 365 Supply Chain Management 10.0.35 (July 2023)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.35 (August 2023)
 
 [!include [banner](../includes/banner.md)]
 
@@ -20,7 +22,7 @@ This article lists features that are either new or changed in Microsoft Dynamics
 
 - **Preview of release:** May 2023
 - **General availability of release (self-update):** July 2023
-- **General availability of release (auto-update):** August 2023
+- **General availability of release (auto-update):** July 2023
 
 ## Features included in this release
 
@@ -36,7 +38,7 @@ The following table lists the features that are included in this release. We mig
 
 ## Feature enhancements included in this release
 
-The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they're only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
+The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they're only enhancements, they aren't listed in the [release plan](/dynamics365/release-plan/2023wave1/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
 
 If you want to turn any of these features on or off, you must do so in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
@@ -48,8 +50,8 @@ If you want to turn any of these features on or off, you must do so in [feature 
 | Inventory and warehouse management | *Cascade transfer order header date change to lines* | Automatically updates line dates when a transfer order header's ship or receipt date is changed. |
 | Sales and marketing | *(Preview) Pricing management workspace* | Provides a pricing management workspace, which lets sales managers know about impending price rule status changes and supports their choice to modify pricing policies. Sales managers can perform light tasks to enable or disable the pricing rules without leaving the workspaces. |
 | Sales and marketing | *Keep existing sorting on intercompany sales lines when updating them* | Adds an option that lets users keep existing sorting on intercompany sales line update. |
-| Transportation management | *(Preview) Specify Goods In Transit Order when receiving via mobile device.* | Enables workers using a mobile device to choose which specific goods to receive when multiple goods-in-transit orders exist for the same voyage, container, item number, and purchase order number.<br><br>See also [Specify goods-in-transit orders when receiving with a mobile device](../landed-cost/in-transit-processing.md#specify-GIT-order). |
-| Transportation management | *(Preview) Split Goods In Transit Order quantity and assign batch/serial number when receiving via mobile device.* | Enables workers using a mobile device to assign multiple batch/serial numbers for various quantities of goods received from a goods-in-transit order. All of the assigned batch/serial numbers will be consolidated into one work record and then processed together.<br><br>See also [Assign batch/serial numbers when receiving with a mobile device](../landed-cost/in-transit-processing.md#batch-serial). |
+| Transportation management | *Specify Goods In Transit Order when receiving via mobile device.* | Enables workers using a mobile device to choose which specific goods to receive when multiple goods-in-transit orders exist for the same voyage, container, item number, and purchase order number.<br><br>See also [Specify goods-in-transit orders when receiving with a mobile device](../landed-cost/in-transit-processing.md#specify-GIT-order). |
+| Transportation management | *Split Goods In Transit Order quantity and assign batch/serial number when receiving via mobile device.* | Enables workers using a mobile device to assign multiple batch/serial numbers for various quantities of goods received from a goods-in-transit order. All of the assigned batch/serial numbers will be consolidated into one work record and then processed together.<br><br>See also [Assign batch/serial numbers when receiving with a mobile device](../landed-cost/in-transit-processing.md#batch-serial). |
 
 ## New and updated documentation resources
 
@@ -63,17 +65,17 @@ We have recently added or significantly updated the following help articles. The
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.35 includes platform updates. To learn more, see [Platform updates for version 10.0.35 of Finance and Operations apps (July 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-35.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.35 includes platform updates. To learn more, see [Platform updates for version 10.0.35 of Finance and Operations apps (August 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-35.md).
 
 ### Bug fixes
 
 For information about the bug fixes included in each of the updates that are part of version 10.0.35, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=817204&dbType=3&qc=31515199fa35fbda929b42fcfa31225e2c30e55eef262c4f917d98d8cc57d42d).
 
-### Dynamics 365 and industry clouds: 2023 release wave 1 plan
+### Dynamics 365, Viva Sales, and supply chain platform: 2023 release wave 1 plan
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out the [Dynamics 365 and industry clouds: 2023 release wave 1 plan](/dynamics365/release-plan/2023wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+Check out the [Dynamics 365, Viva Sales, and supply chain platform: 2023 release wave 1 plan](/dynamics365/release-plan/2023wave1/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated Supply Chain Management features
 

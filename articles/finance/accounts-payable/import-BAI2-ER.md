@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Set up advanced bank reconciliation import by using Electronic reporting
-description: This article explains how to use Electronic reporting to set up the advanced bank reconciliation import process.
-author: angelad116
-ms.date: 03/30/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: BankStatementFormat
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 73f3dcf6-040a-44ad-9512-7b3e0d17a571
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about how to use Electronic reporting to set up the advanced bank reconciliation import process, including a step-by-step process.
+author: twheeloc
 ms.author: shpandey
+ms.topic: article
+ms.date: 04/29/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
+ms.search.form: BankStatementFormat
 ms.dyn365.ops.version: AX 10.0.25
-
+ms.assetid: 73f3dcf6-040a-44ad-9512-7b3e0d17a571
 ---
+
 # Set up advanced bank reconciliation import by using Electronic reporting
 
 [!include [banner](../includes/banner.md)]

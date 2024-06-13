@@ -4,10 +4,7 @@ title: Disable rules used in the transaction validation process
 description: This article describes the functionality for disabling transaction validation rules in Microsoft Dynamics 365 Commerce.
 author: analpert
 ms.date: 12/11/2021
-ms.topic: index-page
-ms.prod: 
-ms.technology: 
-
+ms.topic: conceptual
 # optional metadata
 # ms.search.form: 
 # ROBOTS: 

@@ -4,8 +4,6 @@ description: This article describes how to generate reports for your online chan
 author: josaw1
 ms.date: 10/01/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global
@@ -125,7 +123,7 @@ To generate an **Organization sales** report, follow these steps.
 
 ## Additional resources
 
-- [Commerce home page](./index.md)
+- [Commerce home page](./welcome.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

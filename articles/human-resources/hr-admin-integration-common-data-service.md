@@ -4,11 +4,8 @@
 title: Configure Dataverse integration
 description: This article describes the integration between Microsoft Dataverse and Dynamics 365 Human Resources. 
 author: twheeloc
-ms.date: 08/19/2021
+ms.date: 04/19/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: CDSIntegrationAdministration
@@ -17,7 +14,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -28,9 +24,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Configure Dataverse integration
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -130,7 +123,7 @@ To run a full synchronization on a table between Human Resources and Dataverse:
 
 [Dataverse tables](hr-developer-entities.md)<br>
 [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[Human Resources virtual tables FAQ](hr-admin-virtual-entity-faq.md)<br>
+[Human Resources virtual tables FAQ](dev-itpro/hr-admin-virtual-entity-faq.md)<br>
 [What is Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
 [Terminology updates](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
 

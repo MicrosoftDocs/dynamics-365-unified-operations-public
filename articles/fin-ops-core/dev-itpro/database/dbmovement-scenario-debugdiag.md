@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Debug a copy of the production database
-description: This article explains a debugging and diagnostics scenario for finance and operations.
+description: Learn about a debugging and diagnostics scenario for finance and operations, including prerequisites and how to enable database access.
 author: LaneSwenka
-ms.date: 01/10/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro, Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: article
+ms.date: 01/10/2023
+ms.reviewer: johnmichalak
+audience: IT Pro, Developer
+ms.search.region: Global
 ms.search.validFrom: 2019-01-31
+ms.search.form: 
 ms.dyn365.ops.version: 8.1.3
-
 ---
 
 # Debug a copy of the production database

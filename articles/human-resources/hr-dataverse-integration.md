@@ -6,9 +6,6 @@ description: This article describes the integration between Microsoft Dynamics 3
 author: anschmidt  
 ms.date: 02/23/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SystemAdministrationWorkspaceForm
@@ -17,7 +14,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -28,10 +24,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Configure integration with Dataverse tables
-
->[!Important]
->The functionality noted in this article is currently available for customers on Dynamics 365 Human Resources on the Finance and Operations infrastructure. 
-
 
 To integrate Microsoft Dynamics 365 Human Resources with Dataverse, you can use the [Data Integrator](/powerapps/administrator/data-integrator). The Human Resources–to–Dataverse template enables data for jobs, positions, workers, and others to flow from Human Resources into Dataverse, and from Dataverse into Human Resources, creating a write in both systems.
 

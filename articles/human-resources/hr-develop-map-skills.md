@@ -6,9 +6,6 @@ description: You can create a skill-mapping search to find a qualified person in
 author: twheeloc
 ms.date: 03/23/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmSkill, HcmSkillGapProfile, HcmSkillMapping, HcmSkillType, HcmEmployeeDevelopmentWorkspace
@@ -18,7 +15,6 @@ audience: Application User
 ms.reviewer: twheeloc
 
 # ms.tgt_pltfrm: 
-ms.custom: 3361
 ms.assetid: c2ce94c0-933d-4edb-822c-7f0e7b49e4ee
 ms.search.region: Global
 # ms.search.industry: 

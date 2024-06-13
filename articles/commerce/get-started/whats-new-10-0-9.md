@@ -4,23 +4,14 @@
 title: What's new or changed in Dynamics 365 Commerce 10.0.9 (April 2020)
 description: This article describes features that are either new or changed in Dynamics 365 Commerce 10.0.9. 
 author: josaw1
-ms.date: 03/12/2020
+ms.date: 04/12/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.custom:
+  - bap-template
+  - evergreen
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: josaw
 ms.search.validFrom: 2020-02-28 
 ms.dyn365.ops.version: 10.0.9
@@ -40,7 +31,7 @@ This article lists features that are either new or changed in Microsoft Dynamics
 The following features are included in this release. The feature titles link to additional information on the [Release plans site](/dynamics365-release-plan/2020wave1/).
 
 - [Enable resetting of receipt numbers at the beginning of the fiscal year](/dynamics365-release-plan/2020wave1/dynamics365-commerce/enable-resetting-receipt-numbers-at-beginning-fiscal-year)
-- [Auto-charges improvements to support fees based on channel](/dynamics365-release-plan/2020wave1/dynamics365-commerce/auto-charges-improvements-support-fees-based-channel)
+- [Autocharges improvements to support fees based on channel](/dynamics365-release-plan/2020wave1/dynamics365-commerce/auto-charges-improvements-support-fees-based-channel)
 - [Improved inbound and outbound inventory operations in store](/dynamics365-release-plan/2020wave1/dynamics365-commerce/improved-inbound-outbound-inventory-operations-store)
 - [Set preferred payment methods for returns](/dynamics365-release-plan/2020wave1/dynamics365-commerce/set-preferred-payment-methods-returns)
 - [Support for bulk URL redirects](/dynamics365-release-plan/2020wave1/dynamics365-commerce/support-bulk-url-redirects)
@@ -66,14 +57,14 @@ Check out the [Dynamics 365: 2020 release wave 1 plan](/dynamics365-release-plan
 
 ### Removed and deprecated features
 
-The [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) article describes features that have been removed or deprecated for finance and operations apps.
+The [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) article describes features that are removed or deprecated for finance and operations apps.
 
 - A *removed* feature is no longer available in the product.
-- A *deprecated* feature is not in active development and may be removed in a future update.
+- A *deprecated* feature isn'tin active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) article 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice is announced in the [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) article 12 months before the removal.
 
-For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
+For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time is less than 12 months. Typically, these breaking changes are functional updates that need to be made to the compiler.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

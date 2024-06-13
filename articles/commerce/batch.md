@@ -5,10 +5,7 @@ title: Improved handling of batch-tracked items
 description: This article describes the improved handling of batch-tracked items during the statement posting process in Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 09/09/2021
-ms.topic: index-page
-ms.prod: 
-ms.technology: 
-
+ms.topic: conceptual
 # optional metadata
 
 # ms.search.form: 

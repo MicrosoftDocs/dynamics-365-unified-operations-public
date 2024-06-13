@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Add payment amount types
-description: This article explains how to set up payment amount types in Asset leasing.
+description: Learn about how to set up payment amount types in Asset leasing, including a step-by-step process for adding payment amount types.
 author: moaamer
-ms.date: 01/11/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetLeaseIndexRevaluation
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-
-# ms.tgt_pltfrm: 
-ms.custom: 4464
-ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 01/11/2022
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-10-28
+ms.search.form: AssetLeaseIndexRevaluation
 ms.dyn365.ops.version: 10.0.14
+ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ---
 
 # Add payment amount types

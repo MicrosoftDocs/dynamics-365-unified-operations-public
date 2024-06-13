@@ -6,9 +6,6 @@ description: This article explains how to bind your Microsoft Dynamics 365 Comme
 author: bicyclingfool
 ms.date: 07/02/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 
@@ -48,9 +45,9 @@ After your site is created, you can verify that it's associated with your online
 
 [Manage robots.txt files](manage-robots-txt-files.md)
 
-[Upload URL redirects in bulk](upload-bulk-redirects.md)
+[Upload URL redirects in bulk](dev-itpro/upload-bulk-redirects.md)
 
-[Set up a B2C tenant in Commerce](set-up-B2C-tenant.md)
+[Set up a B2C tenant in Commerce](dev-itpro/set-up-B2C-tenant.md)
 
 [Set up custom pages for user logins](custom-pages-user-logins.md)
 

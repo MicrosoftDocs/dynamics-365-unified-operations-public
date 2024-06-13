@@ -1,31 +1,19 @@
 ---
-# required metadata
-
 title: Track user sign-ins 
-description: This article explains how to create an audit log of users who have signed in and used finance and operations apps.
+description: Learn about how to create an audit log of users who have signed in to your Dynamics environments and used finance and operations apps.
 author: angelmarshall
-ms.date: 11/02/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: tsmarsha
+ms.topic: article
+ms.date: 11/02/2017
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 12
-
+ms.assetid: 
 ---
+
 # Track user sign-ins 
  
 [!include [banner](../includes/banner.md)]
@@ -42,11 +30,10 @@ To generate an audit log of users who have used the system, follow these steps.
 4. On the **Activity** tab, select **View raw logs**.
 5. In the **Query** field, select **User Login Events**. You see a time duration that has a start date that is set to **End date - 7 days**.
 6. Set the end date, and then select **Search**. The search results that are returned include all users who signed in to the system during the seven days before the selected end date.
-7. The search results show the **AADUserID** value and the sign-in start and end times of the user's session. To map the **AADUserID** value to the user's user name and email address, use the **Users** page (**System administration** > **Users**).
+7. The search results show the **Microsoft Entra IDUserID** value and the sign-in start and end times of the user's session. To map the **Microsoft Entra IDUserID** value to the user's user name and email address, use the **Users** page (**System administration** > **Users**).
 8. To export the records and keep them for a longer period, select **Export grid**.
 
 To help guarantee a complete audit trail, an IT administrator must complete this procedure every seven days.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

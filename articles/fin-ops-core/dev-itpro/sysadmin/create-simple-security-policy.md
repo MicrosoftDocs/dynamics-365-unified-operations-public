@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Create a security policy
-description: This article explains how to create a simple security policy that secures access to customers and customer groups, based on a range for a customer group.
+description: Learn about how to create a simple security policy that secures access to customers and customer groups, based on a range for a customer group.
 author: Peakerbl
-ms.date: 07/14/2020
+ms.author: johnmichalak
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
+ms.date: 07/14/2020
+ms.custom: NotInToc
+ms.reviewer: johnmichalak
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: NotInToc
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2020-07-31
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.12
-
 ---
 
 # Create a security policy

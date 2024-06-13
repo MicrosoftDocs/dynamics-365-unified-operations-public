@@ -1,20 +1,22 @@
 ---
 title: Demand forecasting setup
-description: This article describes the setup tasks that you must perform to prepare for demand forecasting.  
+description: Learn about the setup tasks that you must perform to prepare for demand forecasting, including an outline on item allocation keys.  
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters, ForecastItemAllocation, ReqIntercompanyPlanningGroupSetup
 ms.topic: how-to
 ms.date: 01/05/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters, ForecastItemAllocation, ReqIntercompanyPlanningGroupSetup
 ---
 
 # Demand forecasting setup
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [demand-planning-banner](../includes/demand-planning-banner.md)]
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 This article describes how to set up demand forecasting.  
 
@@ -65,6 +67,8 @@ To set up your intercompany planning groups, follow these steps.
 
 1. By default, if no item allocation keys are assigned to intercompany planning group members, a demand forecast is calculated for all items that are assigned to all item allocation keys from all companies. Additional filtering options for companies and item allocation keys are available in the **Generate statistical baseline forecast** dialog box (**Master planning \> Forecasting \> Demand forecasting \> Generate statistical baseline forecast**). To assign item allocation keys to a company in the selected intercompany planning group, select the company, and then, on the **Intercompany planning group members** FastTab, select **Item allocation keys** on the toolbar.
 
+To learn more, see [Intercompany planning groups for demand forecasting](intercompany-planning-groups-demand-forecasting.md).
+
 > [!IMPORTANT]
 > Be careful to include only relevant item allocation keys in each intercompany planning group. Unnecessary items might cause increased costs when you use Azure Machine Learning.
 
@@ -100,7 +104,7 @@ The **Forecast generation strategy** field lets you select the method that is us
 
 - *Copy over historical demand* – Create forecasts by just copying historical data.
 - *Azure Machine Learning Service* – Use a forecast model that uses the Azure Machine Learning Service. The Azure Machine Learning Service is the current machine learning solution for Azure. Therefore, we recommend that you use it if you want to use a forecast model.
-- *Azure Machine Learning* – Use a forecast model that uses Azure Machine Learning studio (classic). Azure Machine Learning studio (classic) has been deprecated and will soon be removed from Azure. Therefore, so we recommend that you select *Azure Machine Learning Service* if you're setting up demand forecasting for the first time. If you're currently using Azure Machine Learning studio (classic), you should plan to switch to the Azure Machine Learning Service as soon as possible.
+- *Azure Machine Learning* – Use a forecast model that uses Azure Machine Learning studio (classic). Azure Machine Learning studio (classic) has been deprecated and will soon be removed from Azure. Therefore, we recommend that you select *Azure Machine Learning Service* if you're setting up demand forecasting for the first time. If you're currently using Azure Machine Learning studio (classic), you should plan to switch to the Azure Machine Learning Service as soon as possible.
 
 You can override the forecast generation method for one or more specific item allocation keys by using the **Item allocation keys** tab. That tab provides similar fields.
 
@@ -192,7 +196,7 @@ Supply Chain Management calculates demand forecasts by using the Azure Machine L
 
 ### Enable the Azure Machine Learning Service in Feature management
 
-To use the Azure Machine Learning Service for demand forecasting, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. Admins can turn this functionality on or off by searching for the *Azure Machine Learning Service for demand forecasting* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, it's turned on by default. As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *Azure Machine Learning Service for demand forecasting* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### <a name="ml-workspace"></a>Set up machine learning in Azure
 
@@ -214,12 +218,16 @@ This section describes how to set up your machine learning workspace by using an
     - src/run.py
     - src/REntryScript/forecast.r
 
-1. Open a PowerShell window, and run the **quick_setup.ps1** script that you downloaded in the previous step. Follow the on-screen instructions. The script will set up the required workspace, storage, default datastore, and compute resources. However, you must still create the required pipelines by following the remaining steps of this procedure. (Pipelines provide a way to start forecasting scripts from Supply Chain Management.)
-1. In Azure Machine Learning studio, upload the **sampleInput.csv** file that you downloaded in step 1 to the container that is named *demplan-azureml*. (The quick_setup.ps1 script created this container.) This file is required to publish the pipeline and generate a test forecast. For instructions, see [Upload a block blob](/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob).
+1. Open a PowerShell window and run the **quick_setup.ps1** script that you downloaded in the previous step. Follow the on-screen instructions. The script will set up the required workspace, storage, datastore (named *workspaceblobdemplan*), and compute resources.
+1. Follow these steps to set the *workspaceblobdemplan* datastore (created by the **quick_setup.ps1** script) as a default datastore.
+    1. In Azure Machine Learning studio, select **Datastores** in the navigator.
+    1. Select the *workspaceblobdemplan* datastore (it's of type *Azure Blob Storage* and points to the *demplan-azureml* blob storage container).
+    1. Open the details page for the *workspaceblobdemplan* datastore and select **Set as default datastore**.
+1. In Azure Machine Learning studio, upload the **sampleInput.csv** file that you downloaded in step 1 to the container that is named *demplan-azureml*. (The **quick_setup.ps1** script created this container.) This file is required to publish the pipeline and generate a test forecast. For instructions, see [Upload a block blob](/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob).
 1. In Azure Machine Learning studio, select **Notebooks** in the navigator.
 1. Find the following location in the **Files** structure: **Users/\[current user\]/src**.
 1. Upload the remaining four files that you downloaded in step 1 to the location that you found in the previous step.
-1. Select the **api_trigger.py** file that you just uploaded, and run it. It will create a pipeline that can be triggered through the API.
+1. Select the **api_trigger.py** file that you just uploaded, and run it. It will create a pipeline that can be triggered through the API. (Pipelines provide a way to start forecasting scripts from Supply Chain Management.)
 1. Your workspace is now set up. Skip ahead to the [Set up Azure Machine Learning Service connection parameters in Supply Chain Management](#demand-forecast-parameters) section.
 
 #### <a name="ml-workspace-manual"></a>Option 2: Manually set up your machine learning workspace
@@ -290,10 +298,10 @@ Pipelines provide a way to start forecasting scripts from Supply Chain Managemen
 
 ### <a name="aad-app"></a>Set up a new Active Directory application
 
-An Active Directory application is required to authenticate with the resources that are dedicated to demand forecasting by using service principal. Therefore, the application should have the lowest level of privilege that is required to generate the forecast.
+An Active Directory application is required to authenticate with the resources that are dedicated to demand forecasting by using a service principal. Therefore, the application should have the lowest level of privilege that is required to generate the forecast.
 
 1. Sign in to your Azure portal.
-1. Register a new application in the tenant's Azure Active Directory (Azure AD). For instructions, see [Use the portal to create an Azure AD application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal).
+1. Register a new application in the tenant's Microsoft Entra ID. For instructions, see [Use the portal to create a Microsoft Entra application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal).
 1. Follow the on-screen instructions as you complete the wizard. Use the default settings.
 1. Give your new Active Directory application access to the following resources that you created in the [Set up machine learning in Azure](#ml-workspace) section. For instructions, see [Assign Azure roles using the Azure portal](/azure/role-based-access-control/role-assignments-portal?tabs=current). This step will enable the system to import and export forecasting data, and to trigger machine learning pipeline runs from Supply Chain Management.
 
@@ -314,7 +322,7 @@ Use the following procedure to connect your Supply Chain Management environment 
 1. On the **Item allocation keys** tab, make sure that the **Forecast generation strategy** field is set to *Azure Machine Learning Service* for each allocation key that should use the Azure Machine Learning Service for demand forecasting.
 1. On the **Azure Machine Learning Service** tab, set the following fields:
 
-    - **Tenant ID** – Enter the ID for your Azure tenant. Supply Chain Management will use this ID to authenticate with the Azure Machine Learning Service. You can find your tenant ID on the **Overview** page for Azure AD in the Azure portal.
+    - **Tenant ID** – Enter the ID for your Azure tenant. Supply Chain Management will use this ID to authenticate with the Azure Machine Learning Service. You can find your tenant ID on the **Overview** page for Microsoft Entra ID in the Azure portal.
     - **Service principal application ID** – Enter the application ID for the application that you created in the [Active Directory Application](#aad-app) section. This value is used to authorize API requests to Azure Machine Learning Service.
     - **Service principal secret** – Enter the service principal application secret for the application that you created in the [Active Directory Application](#aad-app) section. This value is used to acquire the access token for the security principal that you created to perform authorized operations against Azure Storage and the Azure Machine Language workspace.
     - **Storage account name** – Enter the Azure storage account name that you specified when you ran the setup wizard in your Azure workspace. (For more information, see the [Set up machine learning in Azure](#ml-workspace) section.)

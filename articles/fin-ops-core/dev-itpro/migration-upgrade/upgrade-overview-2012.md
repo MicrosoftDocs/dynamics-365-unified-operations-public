@@ -1,26 +1,15 @@
 ---
-# required metadata
-
 title: Upgrade from AX 2012 to finance and operations 
-description:  This article describes the process that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to finance and operations.
+description: Learn about the process that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to finance and operations.
 author: LaneSwenka
-ms.date: 07/21/2023
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-
-ms.search.region: Global
-# ms.search.industry:
 ms.author: laswenka
+ms.topic: overview
+ms.date: 07/21/2023
+ms.reviewer: twheeloc
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-06-16
+ms.search.form:  
 ms.dyn365.ops.version: Platform update 8
 ---
 
@@ -36,9 +25,10 @@ Finance and operations apps provide an upgrade path that customers who currently
 - A data upgrade process that you can use to bring your database forward. Therefore, you can upgrade your full transactional history.
 
 > [!IMPORTANT]
-> Dynamics AX 2012 implementations that are running some [deprecated features](deprecated-features.md) can't currently be upgraded. For example, upgrade is not possible from systems that are using either virtual companies or data partitions. If you aren't sure whether your system can be upgraded, run the Upgrade analyzer tool. 
+> Dynamics AX 2012 implementations that are running some [deprecated features](deprecated-features.md) can't currently be upgraded. For example, upgrade is not possible from systems that are using either virtual companies or data partitions. If you aren't sure whether your system can be upgraded, run the Upgrade analyzer tool.
 
-> Start your cloud migration journey with a no-charge, no-obligation migration assessment though the [Dynamics 365 Migration Program](https://dynamics.microsoft.com/migration-program/).
+> [!TIP]
+> AIM (Accelerate, Innovate, Move) is a new campaign and offering that provides qualified on-premises business applications customers a tailored path to the cloud with access to a dedicated team of migration advisors, expert business value and technology assessments, investment offers, tools, and migration support.  Talk to your Microsoft representative or partner today to see if you qualify for various migration offers, including the AIM migration assessment. To learn more about the AIM assessment, please visit the [AIM Assessment page](/dynamics365/get-started/aim-migration/aim-assessment).
 
 ## Overview
 
@@ -77,7 +67,7 @@ The output of the upgrade analysis report becomes the upgrade project plan for t
 
 ### Pre-upgrade checklist
 
-As part the upgrade, the pre-upgrade checklist must be installed in your AX 2012 environment to upgrade data. Use this checklist to enter required data for the upgrade. For example, one pre-upgrade checklist task is to provide the Azure Active Directory (Azure AD) sign-in information for each current AX 2012 user. Each user will have to sign in to Dynamics 365 finance and operations apps. 
+As part the upgrade, the pre-upgrade checklist must be installed in your AX 2012 environment to upgrade data. Use this checklist to enter required data for the upgrade. For example, one pre-upgrade checklist task is to provide the Microsoft Entra sign-in information for each current AX 2012 user. Each user will have to sign in to Dynamics 365 finance and operations apps. 
 
 - If upgrading from AX 2012 R3, install [KB 4035163](https://go.microsoft.com/fwlink/?linkid=852255).
    
@@ -233,5 +223,10 @@ For details, see [Upgrade from AX 2012 - Cutover process (Go live)](2012-upgrade
 Upgrade to the cloud version of finance and operations apps is supported from AX 2012 R2 and AX 2012 R3. 
 
 Upgrade from Dynamics AX 2012 RTM isn't currently supported. Upgrade to the on-premises version is supported, as documented in [Data upgrade process for AX 2012 to Dynamics 365 Finance + Operations (on-premises)](on-prem-upgrade-2012.md). 
+
+## Additional resources
+
+- [Overview of the AIM migration program for on-premises solutions](/dynamics365/get-started/aim-migration/migration-overview)
+- [Move your business from on-premises to the cloud](/dynamics365/guidance/implementation-guide/implementing-cloud-solutions-upgrade-from-onpremises-to-cloud)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

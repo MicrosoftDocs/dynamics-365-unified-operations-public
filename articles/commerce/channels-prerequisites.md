@@ -2,18 +2,13 @@
 title: Channel setup prerequisites
 description: This article presents an overview of channels setup prerequisites in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 02/21/2020
+ms.date: 05/28/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: mashneer
 ms.search.validFrom: 2020-01-20
-ms.dyn365.ops.version: Release 10.0.8
-ms.custom: 
-ms.assetid: 
 ---
 # Channel setup prerequisites
 
@@ -49,7 +44,7 @@ Before a Dynamics 365 Commerce channel can be created, several prerequisite task
 - [Set up a retail functionality profile](retail-functionality-profile.md)
 - [Set up an employee address book](new-address-book.md)
 - [Set up a screen layout](pos-screen-layouts.md)
-- [Set up a hardware station](retail-hardware-station-configuration-installation.md)
+- [Set up a hardware station](dev-itpro/retail-hardware-station-configuration-installation.md)
 
 ## Call Center channel prerequisites
 

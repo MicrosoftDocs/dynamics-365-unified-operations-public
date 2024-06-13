@@ -1,23 +1,21 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Human Resources 10.0.34 (June 2023)
+title: What's new or changed in Dynamics 365 Human Resources 10.0.34 (July 2023)
 description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Human Resources version 10.0.34 preview release.
 author: twheeloc
 ms.date: 04/20/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.custom: evergreen
 
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Developer, IT Pro
+audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -27,7 +25,7 @@ ms.dyn365.ops.version: 10.0.30
 
 ---
 
-# What's new or changed in Dynamics 365 Human Resources 10.0.34 (June 2023)
+# What's new or changed in Dynamics 365 Human Resources 10.0.34 (July 2023)
 
 [!include [banner](../../includes/preview-banner.md)]
 
@@ -36,7 +34,7 @@ available on the following schedule:
 
 - **Preview of release:** April 2023
 - **General availability of release (self-update):** June 2023
-- **General availability of release (auto-update):** July 2023
+- **General availability of release (auto-update):** June 2023
 
 
 ## Features included in this release

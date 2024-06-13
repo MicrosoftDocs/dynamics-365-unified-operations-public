@@ -1,15 +1,13 @@
 ---
 title: Set up Electronic messages
-description: This article provides information about how to set up Electronic messages (EM) functionality.
+description: Learn about how to set up Electronic messages (EM) functionality, including outlines on number sequences, message item types, and message item statuses.
 author: AdamTrukawka
-ms.date: 11/18/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: atrukawk
+ms.topic: article
+ms.date: 11/18/2021
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: 8.1
 ---
@@ -18,7 +16,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-The **Electronic messages** (EM) functionality helps you maintain different electronic reporting processes for different document types. In some complex scenarios that support [country/region-specific reporting features](electronic-messaging.md#country-specific-regulatory-features-supported-by-the-em-functionality), the EM functionality is set up so that it has a combination of many message statuses, message items statuses, actions, additional fields, and executable classes. For these scenarios, packages of data entities are available for import. If you use these data entity packages, import them into a legal entity by using the Data management tool. For more information about how to use the Data management tool, see [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
+The **Electronic messages** (EM) functionality helps you maintain different electronic reporting processes for different document types. In some complex scenarios that support country/region-specific reporting features, the EM functionality is set up so that it has a combination of many message statuses, message items statuses, actions, additional fields, and executable classes. For these scenarios, packages of data entities are available for import. If you use these data entity packages, import them into a legal entity by using the Data management tool. For more information about how to use the Data management tool, see [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
 If you don't import a data entity package, you can manually set up the EM functionality. In this case, you must set up the following elements:
 

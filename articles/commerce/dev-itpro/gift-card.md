@@ -4,7 +4,7 @@ description: This article explains how to set up external gift cards in the Micr
 author: BrianShook
 ms.date: 05/18/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: brshoo

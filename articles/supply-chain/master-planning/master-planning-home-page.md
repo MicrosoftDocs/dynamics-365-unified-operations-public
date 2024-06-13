@@ -1,15 +1,15 @@
 ---
 title: Master planning home page
-description: Master planning allows companies to determine and balance the future need for raw materials and capacity to meet company goals. 
+description: Master planning allows companies to determine and balance the future need for raw materials and capacity to meet company goals.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: ReqCreatePlanWorkspace
-ms.topic: home-page
+ms.topic: overview
 ms.date: 01/06/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: ReqCreatePlanWorkspace
 ---
 
 # Master planning home page
@@ -45,7 +45,7 @@ The following learning map shows the major concepts and tasks that make up the f
 
 ### Roadmaps
 
-Go to the [Microsoft Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to see what new features have been released and what new features are in development.
+Go to the [Dynamics 365 Release Planner](https://releaseplans.microsoft.com/?app=Supply+Chain+Management) to see what new features have been released and what new features are in development.
 
 ### Blogs
 

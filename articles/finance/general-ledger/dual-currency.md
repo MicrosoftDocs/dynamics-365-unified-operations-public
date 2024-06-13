@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Dual currency
-description: This article provides information about dual currency, where the reporting currency is used as a second accounting currency for Microsoft Dynamics 365 Finance.
+description: Learn about dual currency, where the reporting currency is used as a second accounting currency for Microsoft Dynamics 365 Finance.
 author: kweekley
-ms.date: 04/17/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerJournalTable, Ledger, AssetTransReportingCurrencyAmountsWizard,BankAccountTransReportingCurrencyAmountsWizard, LedgerTrialBalanceListPage
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom:
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 04/17/2020
+ms.custom:
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2018-10
+ms.search.form: LedgerJournalTable, Ledger, AssetTransReportingCurrencyAmountsWizard,BankAccountTransReportingCurrencyAmountsWizard, LedgerTrialBalanceListPage
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Dual currency
@@ -164,7 +153,7 @@ In addition, major changes have been made to the depreciation process. These cha
 
     | Transaction type | Transaction amount | Exchange rate | Accounting currency amount | Exchange rate                                                       | Reporting currency amount |
     |------------------|--------------------|---------------|----------------------------|---------------------------------------------------------------------|---------------------------|
-    | Depreciation     | 50,000 USD         | 1.0           | 50,000 USD                 | 2.5<blockquote>[!NOTE] Although this exchange rate is shown, it isn't used to translate to the reporting currency.</blockquote> | 20,000 EUR                |
+    | Depreciation     | 50,000 USD         | 1.0           | 50,000 USD                 | 2.5 **NOTE:**  Although this exchange rate is shown, it isn't used to translate to the reporting currency. | 20,000 EUR                |
 
     When the depreciation proposal is run, it calculates both the accounting currency amount and the reporting currency amount by using the depreciation method. The amounts are then used in the accounting entry in the general ledger. No translation is done to determine the reporting currency amount.
 

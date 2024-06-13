@@ -1,18 +1,18 @@
 ---
-title: Turn on the Pricing management module for your system
-description: This article describes how to turn on the Pricing management module for your system.
+title: Turn on the Pricing management module for your system (preview)
+description: Learn how to turn on the Pricing management module for your system, including prerequisites and an outline on feature management.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 04/03/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
-# Turn on the Pricing management module for your system
+# Turn on the Pricing management module for your system (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

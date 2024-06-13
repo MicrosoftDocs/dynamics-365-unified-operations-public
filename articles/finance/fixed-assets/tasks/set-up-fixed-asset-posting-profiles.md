@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up fixed asset posting profiles
-description: This procedure shows how to set up Fixed asset posting profiles. 
+description: Learn how to set up Fixed asset posting profiles with an example for a posting profile created for a chart of accounts and financial reporting requirements.
 author: moaamer
-ms.date: 03/28/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: AssetPosting   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 03/28/2023
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: AssetPosting
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up fixed asset posting profiles
 
 [!include [banner](../../includes/banner.md)]

@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Map cost element dimension members to a common set of dimension members
 description: By mapping different cost element dimension members to a common set of cost element dimension members, you merge data into a common format for analysis purposes.
-author: AndersGirke
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CAMDimension, CAMDimensionMember, CAMDimensionMapping
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 223234
-ms.assetid: 4c66a231-aed2-48b5-9727-b3eb4fe6e6aa
-ms.search.region: global
-# ms.search.industry: 
+author: AndersEvenGirke
 ms.author: twheeloc
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: twheeloc
+audience: Application Users
+ms.search.region: global
 ms.search.validFrom: 2016-11-30
+ms.search.form: CAMDimension, CAMDimensionMember, CAMDimensionMapping
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: 4c66a231-aed2-48b5-9727-b3eb4fe6e6aa
 ---
 
 # Map cost element dimension members to a common set of dimension members

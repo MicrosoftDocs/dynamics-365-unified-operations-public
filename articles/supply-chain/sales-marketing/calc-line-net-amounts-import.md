@@ -37,7 +37,7 @@ Supply Chain Management version 10.0.29 introduced a feature that is named *Calc
 
 When you update to version 10.0.29, the *Calculate line net amount on import* feature is turned on by default, and the new **Calculate line net amount** option is initially set to *Yes*. The *Yes* setting corresponds to the new standard behavior. It matches the system behavior when the feature is turned off, except in the case of the functionality of the [CalculateLineAmount parameter](#CalculateLineAmount), as described later in this article. The *No* setting matches the system behavior before version 10.0.23 and is provided mainly to support legacy integration scenarios.
 
-Admins can turn the *Calculate line net amount on import* feature on or off using the [Feature management workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+As of Supply Chain Management version 10.0.36, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.36, then admins can turn this functionality on or off by searching for the *Calculate line net amount on import* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Set the Calculate line net amount option
 

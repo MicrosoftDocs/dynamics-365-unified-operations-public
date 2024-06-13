@@ -6,9 +6,6 @@ description: This article provides guidance on how to leverage omni-channel prod
 author: bebeale
 ms.date: 04/21/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: RetailStoreTable, RetailTillLayout
@@ -17,7 +14,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-ms.custom: 260624
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
 ms.search.industry: Retail

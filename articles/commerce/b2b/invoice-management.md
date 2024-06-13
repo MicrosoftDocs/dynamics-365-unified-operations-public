@@ -4,9 +4,7 @@ description: This article describes the invoice management capabilities of Micro
 author: ShalabhjainMSFT
 ms.date: 02/16/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: shajain

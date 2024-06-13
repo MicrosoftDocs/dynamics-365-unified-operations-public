@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Make backing tables consumable as financial dimensions
-description: This article provides the steps that you need to follow to make a backing table usable as a Financial dimension.
+description: Learn about the steps that you need to follow to make a backing table usable as a Financial dimension, including code examples.
 author: RyanCCarlson2
-ms.date: 03/04/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 191363
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: rcarlson
+ms.topic: article
+ms.date: 10/04/2023
+ms.reviewer: twheeloc
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Make backing tables consumable as financial dimensions
@@ -51,7 +37,7 @@ Examples of highly volatile data include timestamps and identifiers that are fre
  - Tickets
  - License numbers 
 
-These are referred to as degenerate dimensions. Tracking these values should be done outside of financial dimensions. This means that you should use customizations for the transactional records that need information, and these values should not be stored along with the financial dimension values.
+These are considered highly volitile values and shouldn't be used as financial dimensions. The correct use is to implement these as financial tags. For more information about financial tags, see [Financial tags](../../../finance/general-ledger/financial-tag.md).
 
 By following these steps, your view will automatically appear in the **Use values from** drop-down menu on the **Financial dimensions** page, and the values will be populated on the **Financial dimension values** page.
 

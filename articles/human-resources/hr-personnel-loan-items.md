@@ -6,9 +6,6 @@ description: Loan items are records that help managers track the physical items 
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HcmLoanItem, HcmLoanType, HcmPersonLoan, HcmPersonnelManagementWorkspace
@@ -17,7 +14,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 3581
 ms.assetid: b14bdddb-f10e-4619-9f91-8c88439da862
 ms.search.region: Global
 # ms.search.industry: 
@@ -28,9 +24,6 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 ---
 
 # Manage items that are lent to workers
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -57,7 +50,7 @@ If an item becomes damaged or misplaced, enter a fictitious return record. Then 
 
 ## Additional resources
 
-[Human resources](index.md)
+[Human resources](index.yml)
 
 
 

@@ -1,18 +1,15 @@
 ---
-title: Analytical Workspaces (using Power BI Embedded) (contains video)
-description: This article describes how you can use Power BI to deliver rich, interactive reports seamlessly integrated into application workspaces.
-author: RichdiMSFT
-ms.date: 07/23/2019
+title: Analytical Workspaces (using Power BI Embedded)
+description: Learn about how you can use Power BI to deliver rich, interactive reports seamlessly integrated into application workspaces.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 07/23/2019
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
-ms.reviewer: sericks
 ms.search.region: Global
-ms.author: richdi
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: Platform update 4
-ms.custom: 270794
 ms.assetid: f1d79557-2538-42b5-9ea3-4e86a61abfd4
 ---
 

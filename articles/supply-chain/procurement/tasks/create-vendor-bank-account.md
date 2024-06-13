@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create a vendor bank account
-description: This procedure shows you how to create a bank account for a vendor. 
-author: GalynaFedorova
+description: Learn how to create a bank account for a vendor, including a step-by-step process for procedures in the USMF demo data company. 
+author: Henrikan
+ms.author: henrikan
+ms.topic: how-to
 ms.date: 07/01/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: VendTable, VendBankAccounts, LogisticsPostalAddressSingle   
+ms.custom:
+ms.reviewer: kamaybac   
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: gfedorova
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: VendTable, VendBankAccounts, LogisticsPostalAddressSingle 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create a vendor bank account
 
 [!include [banner](../../includes/banner.md)]

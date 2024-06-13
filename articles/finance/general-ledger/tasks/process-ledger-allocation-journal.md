@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Process ledger allocation journal
-description: This article explains how to process an allocation request in Dynamics 365 Finance. 
+description: Learn how to process an allocation request in Dynamics 365 Finance, including a step-by-step process using the USMF demo company.
 author: aprilolson
-ms.date: 03/15/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LedgerAllocationRequest, LedgerJournalTable, LedgerJournalTransAllocation   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 03/15/2023
+ms.custom:
+ms.reviewer: twheeloc     
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerAllocationRequest, LedgerJournalTable, LedgerJournalTransAllocation
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Process ledger allocation journal
 
 [!include [banner](../../includes/banner.md)]

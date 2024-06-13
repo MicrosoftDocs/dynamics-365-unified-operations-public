@@ -1,11 +1,9 @@
 ---
-title: Manage e-Commerce users and roles
+title: Manage e-commerce users and roles
 description: This article explains how to grant users access to the authoring environment for your Microsoft Dynamics 365 Commerce site.
 author: bicyclingfool
 ms.date: 10/01/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: global
@@ -18,14 +16,14 @@ ms.search.industry:
 ms.search.form: 
 ---
 
-# Manage e-Commerce users and roles
+# Manage e-commerce users and roles
 
 
 [!include [banner](includes/banner.md)]
 
 This article explains how to grant users access to the authoring environment for your Microsoft Dynamics 365 Commerce site.
 
-To help control user access and grant users permission to perform specific tasks, the site authoring environment uses security groups that you create in Microsoft Azure Active Directory (Azure AD). You first assign a new or existing security group from Azure AD to each role in the authoring environment. You then grant or revoke permissions for individual users by either adding those users to an appropriate security group or removing them from a security group.
+To help control user access and grant users permission to perform specific tasks, the site authoring environment uses security groups that you create in Microsoft Microsoft Entra ID. You first assign a new or existing security group from Microsoft Entra to each role in the authoring environment. You then grant or revoke permissions for individual users by either adding those users to an appropriate security group or removing them from a security group.
 
 ## Overview of roles in the authoring environment
 
@@ -62,7 +60,7 @@ After your site is created, only users who are in the security groups that are a
 
 [Search engine optimization (SEO) considerations for your site](search-engine-optimization-considerations.md)
 
-[Manage Content Security Policy (CSP)](manage-csp.md)
+[Manage Content Security Policy (CSP)](dev-itpro/manage-csp.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

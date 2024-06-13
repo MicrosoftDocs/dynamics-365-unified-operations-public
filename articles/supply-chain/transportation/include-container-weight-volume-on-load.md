@@ -6,8 +6,6 @@ description: This article describes how to set up and apply functionality to inc
 author: Weijiesa
 ms.date: 05/26/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
@@ -16,7 +14,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 269384
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: weijiesa

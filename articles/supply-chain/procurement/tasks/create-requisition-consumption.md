@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create a requisition for consumption
-description: This article describes the process of creating a requisition. 
-author: GalynaFedorova
+description: Learn about the process of creating a requisition for consumption, including a step-by-step process using the USMF demo data company. 
+author: Henrikan
+ms.author: henrikan
+ms.topic: how-to
 ms.date: 07/09/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: kamaybac 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: gfedorova
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create a requisition for consumption
 
 [!include [banner](../../includes/banner.md)]
@@ -34,7 +25,7 @@ This article describes the process of creating a requisition. It shows you diffe
 1. Go to **Procurement and sourcing > Purchase requisitions > Purchase requisitions prepared by me**.
 2. Select **New**.
 3. In the **Name** field, give the requisition a name.
-4. In the **Requested date** field, enter a date. By default, the requested date and accounting date are copied to the purchase requisition lines. They can be changed at the line level. The requested date is the requested delivery date.  
+4. In the **Requested date** field, enter a date. By default, the requested date and accounting date are copied to the purchase requisition lines. They can be changed at the line level. The requested date is the requested receipt date.  
 5. In the **Accounting date** field, enter a date. The accounting date is used to record the accounting entry in the general ledger, and to validate whether budget funds are available.  
 6. Select **OK**.
 7. In the **Reason** field, select an option from the drop-down menu. By default, the business justification reason that you select appears for the purchase requisition lines, but you can change it at the line level.  

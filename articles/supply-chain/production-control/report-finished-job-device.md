@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Report as finished from the job card device
-description: This article describes how to configure the system so that users of a job card device can report finished products from a production order to inventory.
+description: Learn how to configure the system so that users of a job card device can report finished products from a production order to inventory.
 author: johanhoffmann
-ms.date: 08/05/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: JmgRegistrationSetupTouch
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho
+ms.topic: article
+ms.date: 08/05/2022
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-05-18
+ms.search.form: JmgRegistrationSetupTouch
 ms.dyn365.ops.version: 10.0.13
 ---
 
@@ -64,8 +54,8 @@ The job card device supports three scenarios for reporting on batch items. These
 
 To enable your job card devices to accept a batch number during reporting as finished, you must use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the following features:
 
-- *Improved user experience for the Report progress dialog in the Job Card Device*
-- *Enable to enter batch and serial numbers while reporting as finished from the Job Card Device*<br>(As of Supply Chain Management version 10.0.29, this feature is on by default. As of Supply Chain Management version 10.0.32, it's mandatory and can't be turned off.)
+- *Improved user experience for the Report progress dialog in the Job Card Device*<br>(As of Supply Chain Management version 10.0.36, this feature is turned on by default.)
+- *Enable to enter batch and serial numbers while reporting as finished from the Job Card Device*<br>(As of Supply Chain Management version 10.0.29, this feature is turned on by default. As of Supply Chain Management version 10.0.32, it's mandatory and can't be turned off.)
 
 ### Configure products that require batch number reporting
 
@@ -142,8 +132,8 @@ The job card device supports three scenarios for reporting on serial-controlled 
 
 To enable your job card devices to accept a serial number during reporting as finished, you must use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the following features:
 
-- *Improved user experience for the Report progress dialog in the Job Card Device*
-- *Enable to enter batch and serial numbers while reporting as finished from the Job Card Device*<br>(As of Supply Chain Management version 10.0.29, this feature is on by default.)
+- *Improved user experience for the Report progress dialog in the Job Card Device*<br>(As of Supply Chain Management version 10.0.36, this feature is turned on by default.)
+- *Enable to enter batch and serial numbers while reporting as finished from the Job Card Device*<br>(As of Supply Chain Management version 10.0.29, this feature is turned on by default.)
 
 ### Configure products that require serial-number reporting
 

@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Collections management key concepts
-description: The topics defines key concepts for collections management.
+description: Learn about key concepts for collections management, including overviews on customer aging snapshots, collections customer pools, and collections pages.
 author: JodiChristiansen
-ms.date: 11/27/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
-ms.search.validFrom: 
+ms.topic: article
+ms.date: 11/27/2019
+ms.custom:   
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom:
+ms.search.form:
 ms.dyn365.ops.version: 
-
 ---
 # Collections management key concepts
 

@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Reduce balance depreciation
-description: This article gives an overview of the reducing balance method of depreciation.
+description: Learn about the reducing balance method of depreciation, including an outline on selecting a depreciation year and an example.
 author: moaamer
-ms.date: 06/13/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetDepreciationProfile
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 3281
-ms.assetid: 1b86763d-d47c-4a6a-a9a6-d97a736750da
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 04/05/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: AssetDepreciationProfile
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 1b86763d-d47c-4a6a-a9a6-d97a736750da
 ---
 
 # Reduce balance depreciation

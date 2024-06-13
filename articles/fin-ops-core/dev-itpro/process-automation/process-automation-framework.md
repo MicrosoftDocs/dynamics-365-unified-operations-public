@@ -1,18 +1,16 @@
 ---
 title: Process automation framework development
-description: This article provides an overview of development that uses the process automation framework.
+description: Learn about development that uses the process automation framework, including a table that defines various terms.
 author: RyanCCarlson2
-ms.date: 05/09/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: rcarlson
+ms.topic: article
+ms.date: 06/10/2024
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 
 ---
 
 # Process automation framework development

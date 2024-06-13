@@ -2,7 +2,7 @@
 title: Remove Cloud Scale Unit extensions
 description: This article explains how to remove extensions from the Cloud Scale Unit (CSU).
 author: josaw1
-ms.date: 02/02/2023
+ms.date: 10/24/2023
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
@@ -33,5 +33,8 @@ To remove extensions, follow these steps.
 8. After the package file is uploaded, select **Confirm** to complete the upload process.
 9. LCS validates the package. This validation takes a few minutes. After it's completed, mark the package as **Release candidate**.
 10. After the upload process is completed, the package must be deployed to the environment. Follow the steps in [Apply updates and extensions to Commerce Scale Unit (cloud)](../../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md).
+
+> [!IMPORTANT]
+> The **Remove CSU Extension** package is designed to be applied once per calendar day. While this package is in place, any subsequent deployment attempts in the same day will result in failure.
 
 For information about how to deploy packages either manually or by using the automated flow in LCS, see [Apply a deployable package](../../../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md) and [Install a deployable package](../../../fin-ops-core/dev-itpro/deployment/install-deployable-package.md).

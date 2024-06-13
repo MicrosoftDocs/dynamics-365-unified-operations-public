@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Maintain vendor bank account information
-description: Vendors can use the Vendor collaboration functionality to maintain their bank account information. This article explains how to add and maintain bank information for vendors that you do business with.
-author: v-kiarnd
-ms.date: 04/23/2021
+description: Learn about how to add and maintain bank information for vendors that you do business with, including an outline on toggling vendor bank account information.
+author: brpotter
+ms.author: brpotter
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 04/23/2021
 ms.reviewer: twheeloc
-# 
-# ms.tgt_pltfrm: 
-ms.assetid: 10f56dea-ea2d-48ea-9622-4ef715eb1179
+audience: Application User
 ms.search.region: USA
 ms.search.industry: Public sector
-ms.author: brpotter
 ms.search.validFrom: 2011-01-14
+ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.17
-
+ms.assetid: 10f56dea-ea2d-48ea-9622-4ef715eb1179
 ---
 
 # Maintain vendor bank account information
@@ -53,12 +41,9 @@ Bank information that vendors enter on the page will show **Vendor** as the sour
 
 After an account has been added, vendors can edit their bank's effective and expiration dates as required.
 
-## Turn on the vendor bank account information feature
+## Turn the vendor bank account information feature on or off
 
-Before you can use this feature, it must be turned on in your system. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module** - *Accounts payable*
-- **Feature name** - *Maintain vendor bank information using vendor collaboration workspace*
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.32, the feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Maintain vendor bank information using vendor collaboration workspace* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Vendor collaboration-generated bank changes page
 

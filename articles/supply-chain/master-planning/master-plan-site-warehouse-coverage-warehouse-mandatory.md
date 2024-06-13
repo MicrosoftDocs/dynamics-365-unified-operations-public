@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Master planning for site and warehouse coverage, warehouse mandatory
-description: This article describes how an item that has site and warehouse as coverage dimensions is planned. The warehouse dimension is mandatory.
+description: Learnhow an item that has site and warehouse as coverage dimensions is planned, including outlines on parameters and locations.
 author: t-benebo
-ms.date: 06/20/2017
+ms.author: benebotg
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EcoResStorageDimensionGroup, ReqItemTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 2554
-ms.assetid: 3211e95f-b91a-4d27-8d92-f328ae2bcf12
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: benebotg
 ms.search.validFrom: 2016-02-28
+ms.search.form: EcoResStorageDimensionGroup, ReqItemTable
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 3211e95f-b91a-4d27-8d92-f328ae2bcf12
 ---
 
 # Master planning for site and warehouse coverage, warehouse mandatory

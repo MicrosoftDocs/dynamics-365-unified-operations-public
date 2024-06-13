@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Registration for manufacturing execution
-description: This article describes key concepts and terms that you need to understand to configure and use manufacturing execution. 
+description: Learn about key concepts and terms that you need to understand to configure and use manufacturing execution with a table defining various terms. 
 author: johanhoffmann
-ms.date: 06/20/2017
+ms.author: johanho
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: JmgRegistration
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 52ba1cdd-767f-4edd-896f-61adce8479d3
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
 ms.search.validFrom: 2016-02-28
+ms.search.form: JmgRegistration
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 52ba1cdd-767f-4edd-896f-61adce8479d3
 ---
 
 # Registration for manufacturing execution

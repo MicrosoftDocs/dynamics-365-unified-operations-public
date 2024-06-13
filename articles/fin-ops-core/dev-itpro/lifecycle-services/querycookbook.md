@@ -1,18 +1,15 @@
 ---
 title: Query cookbook
-description: This article describes queries in the SQL Insights tab and how they should be used when troubleshooting performance issues.
+description: Learn about queries in the SQL Insights tab and how they should be used when troubleshooting performance issues.
 author: sericks007
-ms.date: 11/09/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: gned
+ms.topic: article
+ms.date: 11/09/2021
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 267184
 ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
 ---
 

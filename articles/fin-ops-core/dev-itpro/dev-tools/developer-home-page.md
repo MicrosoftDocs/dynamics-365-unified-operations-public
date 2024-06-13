@@ -1,13 +1,13 @@
 ---
 title: Develop and customize home page
-description: This article provides links to topics about development.
-author: josaw1
-ms.date: 06/13/2022
+description: Access links to topics about development, including an overview for finance and operations apps enabling enterprise resource planning applications.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
+ms.date: 06/13/2022
+ms.reviewer: twheeloc
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.collection: get-started
@@ -71,7 +71,7 @@ The finance and operations apps enable the entire enterprise resource planning (
 - [Tools add-ins for Visual Studio](developer-tools-add-ins.md)
 - [Export and import models](models-export-import.md)
 - [Metadata search in Visual Studio](metadata-search-visual-studio.md)
-- [Create new users on development machines](/d365F-O/fin-ops-core/dev-itpro/dev-tools/access-instances)
+- [Create new users on development machines](access-instances.md)
 - [Update the Visual Studio development tools](update-development-tools.md)
 - [Development and build VMs that don't allow admin access FAQ](../sysadmin/VMs-no-admin-access.md)
 

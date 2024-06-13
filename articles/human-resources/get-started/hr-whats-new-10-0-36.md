@@ -6,18 +6,16 @@ description: This article describes features that are either new or changed in t
 author: twheeloc
 ms.date: 07/28/2023
 ms.topic: whats-new
-ms.prod: 
-ms.technology: 
+ms.custom: evergreen 
 
 # optional metadata
 
 # ms.search.form: 
 # ROBOTS: 
-audience: Developer, IT Pro
+audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -35,7 +33,7 @@ This article lists features that are new or changed for Dynamics 365 Human Resou
 
 - **Preview of release:** July 2023
 - **General availability of release (self-update):** September 2023
-- **General availability of release (auto-update):** October 2023
+- **General availability of release (auto-update):** September 2023
 
 ## Feature enhancements included in this release
 

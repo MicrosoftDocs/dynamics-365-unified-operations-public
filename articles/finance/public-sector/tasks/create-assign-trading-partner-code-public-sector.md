@@ -1,28 +1,20 @@
 --- 
-# required metadata 
- 
 title: Create and assign a trading partner code in the public sector
-description: Create a trading partner code and assign it to a government agency that your organization does business with. 
+description: Learn about how to create a trading partner code and assign it to a government agency that your organization does business with. 
 author: twheeloc
+ms.author: twheeloc
+ms.topic: how-to
 ms.date: 02/14/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: CustGroup, CustTradingPartnerCode, CustTable   
+ms.custom:
+ms.reviewer: twheeloc    
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: CustGroup, CustTradingPartnerCode, CustTable
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create and assign a trading partner code in the public sector
 
 [!include [banner](../../includes/banner.md)]

@@ -4,8 +4,6 @@ description: This article is an overview of the compliance guidance that is prov
 author: BrianShook
 ms.date: 01/08/2020
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global
@@ -36,7 +34,7 @@ To learn more about the basic principles that Microsoft uses, visit the [Microso
 
 [Add a privacy policy page](add-privacy-page.md)
 
-[Replace user IDs associated with tracked content changes](replace-IDs-tracked-changes.md)
+[Replace user IDs associated with tracked content changes](dev-itpro/replace-IDs-tracked-changes.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

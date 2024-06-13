@@ -1,28 +1,20 @@
 --- 
-# required metadata 
- 
 title: Create a billing code for the public sector
-description: Billing code custom fields allow you to collect values for billing code fields when free text invoices are created. 
+description: Learn about how billing code custom fields allow you to collect values for billing code fields when free text invoices are created.
 author: twheeloc
+ms.author: twheeloc
+ms.topic: how-to
 ms.date: 02/14/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: CustCustomField   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: twheeloc     
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: CustCustomField
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create a billing code for the public sector
 
 [!include [banner](../../includes/banner.md)]

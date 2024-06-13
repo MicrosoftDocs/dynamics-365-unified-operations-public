@@ -2,17 +2,15 @@
 title: Create a Retail Server extension API (Retail SDK version 10.0.11 and later)
 description: This article explains how to create a new Retail Server API with Retail SDK version 10.0.11 and later.
 author: josaw1
-ms.date: 01/13/2023
+ms.date: 11/14/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.11
-ms.assetid: 
+ms.assetid:
 ---
 
 # Create a Retail Server extension API (Retail SDK version 10.0.11 and later)
@@ -24,6 +22,9 @@ This article explains how to create a new Retail Server application programming 
 This article applies to Retail software development kit (SDK) version 10.0.11 and later.
 
 The Retail SDK includes only a few samples of end-to-end Retail Server extensions that include the Commerce runtime (CRT). You can use these samples as templates to start your extensions. You can find the sample extensions in the **RetailSDK\\SampleExtensions\\RetailServer** folder.
+
+> [!NOTE]
+> If you create a new Retail Server extension API that will have high volume and need to read from the channel database, Microsoft recommends that you enable the cache for the database reading. Otherwise, the extension will consume too much Retail Server and channel database resources, which can cause overall Commerce Scale Unit (CSU) performance issues that impact your business.
 
 ## End-to-end sample repository in the Retail SDK
 
@@ -78,7 +79,7 @@ The following sample code creates a simple Retail Server API to return an entity
 
 ```csharp
 // New extended controller.
-[RoutePrefix("SimpleExtension")]  
+[RoutePrefix("SimpleExtension")]
 [BindEntity(typeof(SimpleEntity))]
 public class SimpleExtensionController : IController
 {
@@ -208,7 +209,7 @@ public static class CommerceRoles
 
 ### Support paging in Retail Server APIs
 
-Starting in release 10.0.19, if the API requires paging you can add the **QueryResultSettings** parameter to the API and pass the value from the client. **QueryResultSettings** contains **PagingInfo** and other parameters for records to fetch or skip.  
+Starting in release 10.0.19, if the API requires paging you can add the **QueryResultSettings** parameter to the API and pass the value from the client. **QueryResultSettings** contains **PagingInfo** and other parameters for records to fetch or skip.
 
 The extension can pass **QueryResultSettings** to the CRT request, which the CRT request can use when there is a database query.
 
@@ -249,7 +250,7 @@ private async Task<CommerceEntity> GetStoreDayHoursAsync(GetStoreHoursDataReques
                     return new GetStoreHoursDataResponse(await databaseContext.ReadEntityAsync<DataModel.StoreDayHours>(query).ConfigureAwait(false));
                 }
             }
-            
+
   ```
 
 ### Register the extension
@@ -313,12 +314,12 @@ A Retail Server extension built using the **Microsoft.Dynamics.Commerce.Runtime.
 The following example shows how to update the **add** element in the **RetailProxy.MPOSOffline.ext** configuration  file.
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?> 
-<retailProxyExtensions> 
-    <composition> 
-        <add source="assembly" value="Contoso.RetailServer.StoreHoursSample" /> 
-    </composition> 
-</retailProxyExtensions> 
+<?xml version="1.0" encoding="utf-8"?>
+<retailProxyExtensions>
+    <composition>
+        <add source="assembly" value="Contoso.RetailServer.StoreHoursSample" />
+    </composition>
+</retailProxyExtensions>
 ```
 
 

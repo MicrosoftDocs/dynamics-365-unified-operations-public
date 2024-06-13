@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create consolidation groups and additional consolidation accounts
-description: This procedure shows how to create a consolidation account group and then add accounts to the group. 
+description: Learn how to create a consolidation account group and then add accounts to the group with an outline of adding accounts to consolidation account groups. 
 author: aprilolson
-ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LedgerConsolidateAccountGroup, MainAccountConsolidateAccount   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 04/01/2024
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User   
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerConsolidateAccountGroup, MainAccountConsolidateAccount
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create consolidation groups and additional consolidation accounts
 
 [!include [banner](../../includes/banner.md)]

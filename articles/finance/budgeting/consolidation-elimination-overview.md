@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Consolidation and elimination overview
-description: This article provides general information about the consolidation and elimination process. It includes answers to some frequently asked questions.
-author: panolte
-ms.date: 11/11/2022
+description: Learn about the consolidation and elimination process, including outlines on options for consolidating data and answers to some frequently asked questions.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerConsolidate
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/11/2024
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
 ms.collection: get-started
-ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerConsolidate
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 ---
 
 # Consolidation and elimination overview

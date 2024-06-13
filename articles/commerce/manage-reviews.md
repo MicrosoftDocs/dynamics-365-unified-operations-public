@@ -4,8 +4,6 @@ description: This article explains how to manage ratings and reviews in Microsof
 author: gvrmohanreddy
 ms.date: 10/09/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

@@ -4,9 +4,7 @@ description: This article describes about how to design configurations that gene
 author: kfend
 ms.date: 04/23/2021
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
+audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: filatovm

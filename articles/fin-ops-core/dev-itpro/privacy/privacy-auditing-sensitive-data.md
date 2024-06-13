@@ -1,15 +1,13 @@
 ---
 title: Manage access to sensitive data
-description: This article provides information about the user log functionality.
+description: Learn about the user log functionality, including overviews on sensitive data, language-specific information, and log retention.
 author: ToddLefor
-ms.date: 04/21/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: tlefor
+ms.topic: article
+ms.date: 04/21/2023
+ms.reviewer: josaw
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -37,7 +35,7 @@ The log entries of users who have access to data that's been declared to be sens
 > This feature is available in version 8.0. This feature is available for Dynamics AX 2012 R3 (via KB 4074643)
 
 ## Additional resources
-[!INCLUDE [gdpr-intro](~/../msft-shared-content/privacy-includes/gdpr-intro.md)]
+[!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includes/gdpr-intro.md)]
 
 ### Disclaimer
 (c)2018 Microsoft Corporation. All rights reserved. This document is provided "as-is." Information and views expressed in this document, including URL and other Internet Web site references, may change without notice. You bear the risk of using it. This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes.

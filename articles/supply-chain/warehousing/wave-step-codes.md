@@ -6,8 +6,6 @@ description: This article provides an overview of wave step codes and how they a
 author: Mirzaab
 ms.date: 09/06/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 ms.search.form: WHSWaveTableListPage, WHSWaveStepCode, WHSReplenishmentTemplates, WHSWaveTemplateTable

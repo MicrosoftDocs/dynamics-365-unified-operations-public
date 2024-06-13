@@ -4,9 +4,7 @@ description: This article describes how to create and update store hours in Comm
 author: josaw1
 ms.date: 07/30/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
+audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: anupamar

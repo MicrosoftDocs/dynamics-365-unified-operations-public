@@ -6,8 +6,6 @@ description: This procedure walks through configuring and running a recurrent ba
 author: josaw1
 ms.date: 07/29/2019
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

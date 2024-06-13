@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Currency revaluation for Accounts payable and Accounts receivable
-description: This article provides information about the foreign currency revaluation process that you run to update the value of open transactions in Accounts payable and Accounts receivable. 
-author: angelad116
-ms.date: 10/24/2022
+description: Learn about the foreign currency revaluation process that you run to update the value of open transactions in Accounts payable and Accounts receivable.
+author: ericwangchen
+ms.author: wangchen
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustExchRateAdjustment, VendExchRateAdjustment
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 10/24/2022
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: defb1ea5-1f3e-4859-87d8-3f9954d3f388
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: angelading
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustExchRateAdjustment, VendExchRateAdjustment
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: defb1ea5-1f3e-4859-87d8-3f9954d3f388
 ---
 
 # Currency revaluation for Accounts payable and Accounts receivable
@@ -63,6 +51,28 @@ A record is kept every time that you run a foreign currency revaluation. From th
     -   **None** – No financial dimensions are posted. If you have a required financial dimension in your account structure, the revaluation process is still run and creates accounting entries that have no financial dimensions. You will receive a warning message first, so that you can cancel the revaluation.
     -   **Table** – The financial dimensions of the customer account or vendor account are posted on the foreign currency revaluation transactions.
     -   **Posting** – The financial dimensions of the transaction that is being revalued are posted on the foreign currency revaluation transactions. By default, the financial dimensions from the original transaction's AR/AP ledger account will be used for the revaluation transaction's AR/AP main account, and the financial dimensions from the original transaction's expense/asset/revenue ledger account will be used for the revaluation transaction's unrealized gain/loss main account.
+
+## Additional exchange rate type for foreign currency revaluation
+
+In version 10.0.39, the **Exchange rate type enhancement for accounts payable and accounts receivable foreign currency revaluation** feature is available. This feature lets you use additional exchange rate types for foreign currency revaluation. You can define the accounting currency exchange rate type and the reporting currency exchange rate type for each legal entity, or for each customer and vendor group. When you run foreign currency revaluation, these defined exchange rate types can override the default type that's defined in the ledger setup.
+
+### Set up an additional exchange rate type for Accounts payable foreign currency revaluation
+
+1. Go to **Accounts payable** \> **Setup** \> **Accounts payable parameters**.
+2. On the **Ledger and sales tax** tab, in the **Exchange rate type source** field, select one of the following options:
+
+    - **Ledger** – Use the exchange rate type that's defined in the ledger setup.
+    - **Specific** – Use the accounting currency exchange rate type and reporting currency exchange rate type that are defined in the current legal entity.
+    - **Group** – Use the accounting currency exchange rate type and reporting currency exchange rate type that are defined in the vendor group.
+
+### Set up an additional exchange rate type for Accounts receivable foreign currency revaluation
+
+1. Go to **Accounts receivable** \> **Setup** \> **Accounts receivable parameters**.
+2. On the **Ledger and sales tax** tab, in the **Exchange rate type source** field, select one of the following options:
+
+    - **Ledger** – Use the exchange rate type that's defined in the ledger setup.
+    - **Specific** – Use the accounting currency exchange rate type and reporting currency exchange rate type that are defined in the current legal entity.
+    - **Group** – Use the accounting currency exchange rate type and reporting currency exchange rate type that are defined in the customer group.
 
 > [!NOTE]
 > Exchange gain or loss isn't aggregated. At the time of settlement, the unrealized gain or loss for each open transaction should be reversed to recalculate any realized gain or loss. If the total gain or loss is posted to the general ledger, it isn't possible to reverse per transaction.

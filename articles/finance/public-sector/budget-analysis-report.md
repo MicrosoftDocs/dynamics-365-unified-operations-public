@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Budget analysis report
-description: This article describes the Budget analysis report, which is used to generate a summarized report that compares budgeted amounts to actual expenses and revenue activity during a period that you specify.
+description: Learn about the Budget analysis report, which is used to generate a summarized report that compares budgeted amounts to actual expenses and revenue activity.
 author: v-kiarnd
-ms.date: 07/08/2019
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
+ms.date: 07/08/2019
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+audience: Application User
 ms.search.region: Global
 ms.search.industry: public sector
-ms.author: twheeloc
 ms.search.validFrom: 2019-6-30
+ms.search.form:
 ms.dyn365.ops.version: 10.0.3
-
 ---
 
 # Budget analysis report
@@ -50,8 +40,8 @@ When you generate the report, the following default parameters are shown. You ca
 | Group main accounts by category | Select this check box to group accounts by main account category after they are grouped by financial dimensions in a ledger account. The lowest level of grouping is shown, regardless of the financial dimension that you selected. The main account categories are sorted by their alphanumeric codes. All accounts that aren't assigned to a main account category are grouped at the end. You set up main account categories by using the **Main account categories** page. |
 | Suppress accounts with zeroes | Select this check box to show only accounts that have non-zero actual and budget amounts. |
 | Show drilldown report links | Select this check box to show links that can be used to open a drill-down report that has transaction details for revised budget, actual expenses or revenue, encumbrances, or pre-encumbrances. |
-| Show pending transactions in drilldown reports | If the **Show drilldown report links** check box is selected, you can select this check box to include pending transaction details on a drill-down report for revised budget, actual expenses or revenue, encumbrances, or pre-encumbrances.<blockquote>[!NOTE] If you select this check box, the balances that are shown might differ from the amounts that are shown on the **Budget analysis** report. |
-| Dates to include | Specify whether amounts should be reported for a whole budget cycle or a range of dates. When you run this report for a previous year, the year-to-date (YTD) columns are suppressed.<ul><li>If you select **Budget cycle**, select the name of a budget cycle. This option uses the dates that were set up for the selected budget cycle on the **Budget cycle time spans** page.</li><li>If you select **Date range**, select the start and end dates for the budget and actual entries that should be included on the report. You can enter different ranges for the budget amounts and actual amounts. For example, if your organization budgets biennially, you can report budget amounts for a two-year date range, but include only the current year of actual expenditure or revenue amounts.<blockquote>[!NOTE] The date range that you specify must be in one or more of the fiscal years that are included in the fiscal calendar that was selected when the budget cycle time span was set up. For example, a fiscal calendar for a budget cycle includes fiscal years that have dates from January 1, 2010, to December 31, 2014. In this case, the "from" date can't be before January 1, 2010.</blockquote></li></ul> |
+| Show pending transactions in drilldown reports | If the **Show drilldown report links** check box is selected, you can select this check box to include pending transaction details on a drill-down report for revised budget, actual expenses or revenue, encumbrances, or pre-encumbrances.<blockquote> **NOTE:**  If you select this check box, the balances that are shown might differ from the amounts that are shown on the **Budget analysis** report. |
+| Dates to include | Specify whether amounts should be reported for a whole budget cycle or a range of dates. When you run this report for a previous year, the year-to-date (YTD) columns are suppressed.<br>- If you select **Budget cycle**, select the name of a budget cycle. This option uses the dates that were set up for the selected budget cycle on the **Budget cycle time spans** page.<br>- If you select **Date range**, select the start and end dates for the budget and actual entries that should be included on the report. You can enter different ranges for the budget amounts and actual amounts. For example, if your organization budgets biennially, you can report budget amounts for a two-year date range, but include only the current year of actual expenditure or revenue amounts. **NOTE:**  The date range that you specify must be in one or more of the fiscal years that are included in the fiscal calendar that was selected when the budget cycle time span was set up. For example, a fiscal calendar for a budget cycle includes fiscal years that have dates from January 1, 2010, to December 31, 2014. In this case, the "from" date can't be before January 1, 2010.<br> |
 | Budget | Specify the date range for the budget entries that should be included on the report. |
 | Actuals | Specify the date range for the actual entries that should be included on the report. |
 | Group by | Select the dimension set that is used to show subtotals by group. Ledger accounts that have the same value for the financial dimensions that you specify in the dimension set are grouped on the report. You can create new dimension sets to group accounts by. |

@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Subscription billing overview
-description: This article describes subscription billing in Microsoft Dynamics 365 Finance.
+description: Learn about subscription billing in Microsoft Dynamics 365 Finance, including overviews of various types of billing modules.
 author: JodiChristiansen
-ms.date: 04/13/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustPosting, CustVendExternalItem
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jchrist
+ms.topic: article
+ms.date: 03/13/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-02-09
+ms.search.form: CustPosting, CustVendExternalItem
 ms.dyn365.ops.version: 10.0.25
-
+ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 ---
 
 # Subscription billing overview
@@ -40,7 +28,8 @@ The solution has three modules that can be used independently. Alternatively, al
 
 For more information about subscription billing, see [Subscription billing Power BI content](sub-bill-power-bi.md).
 
-Subscription billing is enabled through **Feature management**. However, it can't be used with the **Revenue recognition** feature. Therefore, you must disable that feature before you enable subscription billing.
+>[!NOTE]
+> Subscription billing is enabled through **Feature management**. However, it can't be used with the **Revenue recognition** feature. You must disable that feature before you enable subscription billing.
 
 1. In the **Feature management** workspace, on the **All** tab, enter **Revenue recognition** in the filter, and then select the feature name as the filter.
 2. Select the **Revenue recognition** feature, and then select **Disable**.

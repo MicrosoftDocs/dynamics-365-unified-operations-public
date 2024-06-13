@@ -4,24 +4,15 @@
 title: Define channel attributes
 description: Enrich the channel by adding channel and product attributes. 
 author: jashanno
-ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
+ms.date: 05/28/2024
+ms.topic: article
 ms.search.form: RetailInternalOrganization, EcoResAttributeGroup, EcoResAttributeGroupAttribute, RetailAddChannelItems, RetailCatalogProductAttributeValue, RetailMedia   
-audience: Application User 
-# ms.devlang:  
+audience: Application User  
 ms.reviewer: josaw
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: jashanno
+ms.author: mashneer
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+
 ---
 # Define channel attributes
 

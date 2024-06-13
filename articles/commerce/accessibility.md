@@ -4,8 +4,6 @@ description: This article provides information about the accessibility features 
 author: BrianShook
 ms.date: 04/14/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global
@@ -102,7 +100,7 @@ To set the **Minimum Age** attribute for a video asset, follow these steps.
 
 [Add a privacy policy page](add-privacy-page.md)
 
-[Replace user IDs associated with tracked content changes](replace-IDs-tracked-changes.md)
+[Replace user IDs associated with tracked content changes](dev-itpro/replace-IDs-tracked-changes.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -6,7 +6,7 @@ description: This article describes the shipping discount capabilities in Micros
 author: ShalabhjainMSFT
 ms.date: 08/23/2020
 ms.topic: overview
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: shajain

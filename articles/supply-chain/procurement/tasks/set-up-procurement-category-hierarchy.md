@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up a procurement category hierarchy
-description: This procedure shows you how to create new nodes in a procurement category hierarchy and how to configure a procurement category to be used in a procurement process. 
-author: GalynaFedorova
+description: Learn how to create new nodes in a procurement category hierarchy and how to configure a procurement category to be used in a procurement process. 
+author: Henrikan
+ms.author: henrikan
+ms.topic: how-to
 ms.date: 06/21/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: kamaybac  
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: gfedorova
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Set up a procurement category hierarchy
 
 [!include [banner](../../includes/banner.md)]

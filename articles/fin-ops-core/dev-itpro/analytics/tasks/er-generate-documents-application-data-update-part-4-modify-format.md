@@ -4,9 +4,7 @@ description: This article describes how to design reporting configurations to ge
 author: kfend
 ms.date: 06/19/2017
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
+audience: Developer, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
 ms.author: filatovm

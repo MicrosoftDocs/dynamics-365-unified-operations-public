@@ -1,34 +1,26 @@
 ---
-# required metadata
-
 title: Revenue recognition setup 
-description: This article describes the setup options for Revenue recognition, and their implications.
-author: bking
-ms.date: 04/28/2022
-ms.topic: index-page
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: Customer
-audience: Application User
-# ms.devlang: 
+description: Learn about the setup options for Revenue recognition, and their implications, including an overview on revenue recognition journals.
+author: twheeloc
+ms.author: twheeloc
+ms.topic: conceptual
+ms.date: 08/16/2023
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
+audience: Application User
 ms.search.region: Global 
-# ms.search.industry: 
-ms.author: bking
 ms.search.validFrom: 2018-08-30
+ms.search.form: Customer
 ms.dyn365.ops.version: 8.0.4
-
 ---
 
 # Revenue recognition setup
 [!include [banner](../includes/banner.md)]
 
-A new **Revenue recognition** module has been added that includes menu items for all the setup that is required. This article describes the setup options and their implications.
+>[!NOTE]
+>This functionality will be deprecated January 2024, new users should use subscription billing.
+
+This article describes the setup options and their implications for the **Revenue recognition** module.
 
 > [!NOTE]
 > The Revenue recognition feature is now enabled by default through Feature management. If your organization doesn't use this feature, you can turn it off in the **Feature management** workspace.

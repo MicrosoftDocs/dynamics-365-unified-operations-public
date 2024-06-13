@@ -6,9 +6,6 @@ description: This article explains how to create an open-ended leave of absence 
 author: twheeloc
 ms.date: 11/21/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
@@ -17,7 +14,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -29,8 +25,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Create an open-ended leave of absence
 
-> [!IMPORTANT]
-> The functionality that is described in this article will be available on the Finance infrastructure as part of a future release after Microsoft Dynamics 365 Finance release 10.0.31.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

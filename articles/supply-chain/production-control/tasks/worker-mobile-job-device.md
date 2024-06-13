@@ -1,28 +1,20 @@
 --- 
-# required metadata 
- 
 title: Configure a worker using the mobile job device
-description: This article explains how to assign the correct roles to the user account of a worker, and then enable the worker to do shop floor registrations. 
+description: Learn how to assign the correct roles to the user account of a worker, and then enable the worker to do shop floor registrations.
 author: johanhoffmann
+ms.author: johanho
+ms.topic: how-to
 ms.date: 07/09/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: SysUserManagement, HcmWorker, JmgRegistrationSetupTouch, JmgRegistrationSetupAssignUsers   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: kamaybac   
+audience: Application User  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: SysUserManagement, HcmWorker, JmgRegistrationSetupTouch, JmgRegistrationSetupAssignUsers 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Configure a worker using the mobile job device
 
 [!include [banner](../../includes/banner.md)]

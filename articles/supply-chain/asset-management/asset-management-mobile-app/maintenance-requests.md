@@ -1,22 +1,21 @@
 ---
 title: File maintenance requests using the Asset Management mobile app
-description: This article describes how to use the Asset Management mobile app to file maintenance requests.
+description: Learn how to use the Asset Management mobile app to file maintenance requests, including outlines on user requirements and identifying assets.
 author: johanhoffmann
 ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
-ms.date: 03/17/2023
+ms.date: 09/19/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # File maintenance requests using the Asset Management mobile app
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
-<!-- KFM: Preview until further notice.-->
+[!INCLUDE [azure-ad-to-microsoft-entra-id](../../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 You can use the Asset Management mobile app to file maintenance requests.
 
@@ -26,7 +25,7 @@ For more information about maintenance requests in Microsoft Dynamics 365 Supply
 
 To submit maintenance requests from the Asset Management mobile app, you must meet the following requirements:
 
-- You must sign in to Power Apps by using a domain account that matches a user account in Supply Chain Management that has the same Azure Active Directory (Azure AD) ID.
+- You must sign in to Power Apps by using a domain account that matches a user account in Supply Chain Management that has the same Microsoft Entra ID username.
 - Your user account in Supply Chain Management must be assigned the *Maintenance requester* security role.
 
 For more information about how to set up roles and security in Supply Chain Management, see

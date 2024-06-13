@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Vendor workflow
-description: Modify vendor information and use workflow to approve it.
+description: Learn about the vendor overflow, including overviews on setting up the vendor workflow and changing vendor information and submitting changes to the workflow.
 author: sunfzam
-ms.date: 03/21/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  Vendor
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global 
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: article
+ms.date: 03/21/2023
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2018-08-30
+ms.search.form: Vendor
 ms.dyn365.ops.version: 8.0.4
 ---
 
@@ -40,7 +30,7 @@ Before you can use the workflow feature, you must enable it.
 
     - **Allow changes without approval** – The data entity can update the vendor record without processing it through the workflow.
     - **Reject changes** – Changes can't be made to the vendor record. The import will fail for the fields that are enabled for the workflow.
-    - **Create change proposals** – All fields will be changed except the fields that are enabled for the workflow. The new values for those fields will be added to the vendor as proposed changes, and the workflow will be started automatically.
+    - **Create change proposals** – All fields will be changed except the fields that are enabled for the workflow. The new values for those fields will be added to the vendor as proposed changes. The data entity will not automatically start the workflow, and you will need to submit the proposed changes as required.
 
 4. In the list of vendor fields, select the **Enable** checkbox for every field that must be approved before the changes can be made.
 5. Go to **Accounts payable \> Setup \> Accounts payable workflows**.

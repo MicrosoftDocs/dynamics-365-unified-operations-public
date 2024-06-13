@@ -1,26 +1,16 @@
 --- 
-# required metadata 
- 
 title: Enter and compare RFQ bids and award contracts
-description: This article explains how to enter replies to a request for quotation (RFQ), score and compare bids, and then award the contract to one of the vendors. 
-author: GalynaFedorova
+description: Learn how to enter replies to a request for quotation (RFQ), score and compare bids, and then award the contract to one of the vendors.
+author: Henrikan
+ms.author: henrikan
+ms.topic: how-to
 ms.date: 07/09/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable, PurchTablePart, PurchRFQCompareLinePrices, PurchRFQCompareRFQ
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: kamaybac 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: gfedorova
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable, PurchTablePart, PurchRFQCompareLinePrices, PurchRFQCompareRFQ
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 
@@ -80,7 +70,7 @@ You can enter the bid as either a vendor or a procurement professional. For more
     - This page shows the bids, together with the header and line information, and also the total score at the header level. You can compare the lines by sorting the grid so that comparable lines are next to each other. The following information is also included:
     - **Quantity** – The quantity that the vendor quoted. This quantity might not equal the quantity that is specified in the RFQ.
     - **Net amount** – The price that the vendor quoted for the items on the line, minus any discounts.
-    - **Deviation** – The number of days by which the delivery date on the bid header or line differs from the requested delivery date on the RFQ header or line. You can enter a rank for each bid.  
+    - **Deviation** – The number of days by which the receipt date on the bid header or line differs from the requested receipt date on the RFQ header or line. You can enter a rank for each bid.  
 3. Select the header line for the other bid that you want to rank.
 4. In the **Rank** field, enter a number.
 5. Select **Save**.

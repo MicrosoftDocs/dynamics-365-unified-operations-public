@@ -1,13 +1,13 @@
 ---
 title: The HtmlLocaleChanger tool
-description: This article describes the HtmlLocaleChanger tool that is included in the Custom Help Toolkit for finance and operations apps.
+description: Learn about the HtmlLocaleChanger tool that is included in the Custom Help Toolkit for finance and operations apps.
 author: brentholtorf
-ms.date: 04/21/2023
-ms.topic: article
-audience: IT Pro
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: bholtorf
+ms.topic: article
+ms.date: 04/21/2023
+ms.reviewer: josaw
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
 ---

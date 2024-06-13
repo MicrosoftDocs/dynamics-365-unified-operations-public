@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Project migration manager
-description: This article explains how to use the Project migration manager to move your project from one Microsoft Dynamics Lifecycle Services geography to another.
+description: Learn about how to use the Project migration manager to move your project from one Microsoft Dynamics Lifecycle Services geography to another.
 author: LaneSwenka
-ms.date: 05/10/2023
-ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
-audience: IT Pro, Developer
-# ms.devlang:
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm:
-ms.custom: 257614
-ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
-ms.search.region: Global
-# ms.search.industry:
 ms.author: laswenka
+ms.topic: article
+ms.date: 05/10/2023
+ms.reviewer: johnmichalak
+audience: IT Pro, Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-09-30
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
 ---
 
 # Project migration manager
@@ -75,7 +62,7 @@ The following table shows the data that can be transferred between instances and
 | Not supported | System diagnostics | System diagnostics data can't be exported. However, new diagnostics are generated from your environments in the target project after migration. |
 | Not supported | Upgrade analysis | This feature is deprecated.  Upgrade analysis data can't be exported. |
 | Not supported | Globalization | Regulatory alerts aren't transferable between projects. |
-| Not supported | Code upgrade | Code upgrade data can't be exported. However, you can start a new code upgrade in the target project after migration. |
+| Not supported | Code upgrade | Code upgrade data can't be exported. This feature is only supported in US-based public cloud instance of Lifecycle Services. |
 | Not supported | Translation service | Translation service data can't be exported. However, you can start a new translation request in the target project after migration. |
 | Not supported | Environment history | History isn't transferred for environments. It starts new in the target project.  However, you can access and download the history from the source project using the **Export to excel** button from each history page. |
 

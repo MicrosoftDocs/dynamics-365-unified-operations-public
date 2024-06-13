@@ -1,31 +1,19 @@
 ---
-# required metadata
-
 title: Platform updates for version 10.0.15 of finance and operations apps (January 2021)
-description: This article lists the features that are included in the platform updates for version 10.0.15 of finance and operations apps.
+description: Learn about the features that are included in the platform updates for version 10.0.15 of finance and operations apps.
 author: sericks007
-ms.date: 12/08/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid:
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: sericks
+ms.topic: article
+ms.date: 12/08/2020
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2020-10-31
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.15
-
 ---
+
 # Platform updates for version 10.0.15 of finance and operations apps (January 2021)
 
 [!include [banner](../includes/banner.md)]
@@ -58,12 +46,12 @@ Check out the [Dynamics 365: 2020 release wave 2 plan](/dynamics365-release-plan
 
 ### Removed and deprecated platform features
 
-The [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
+The [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature isn't in active development and might be removed in a future update.
 
-A deprecation notice will be added in the [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) article 12 months before the removal of any feature from the product.
+A deprecation notice will be added in the [Removed or deprecated platform features](../../fin-ops/get-started/removed-deprecated-features-platform-updates.md) article 12 months before the removal of any feature from the product.
 
 For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these changes are functional updates that must be made to the compiler.
 

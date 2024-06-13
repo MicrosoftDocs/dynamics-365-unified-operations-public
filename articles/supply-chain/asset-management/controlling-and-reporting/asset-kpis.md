@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Asset KPIs
-description: This article explains asset KPIs in Asset Management.
+description: Learn about asset KPIs in Asset Management for assets and asset types, including a step-by-step process for getting an overview of performance on assets.
 author: johanhoffmann
-ms.date: 08/23/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EntAssetObjectKPI 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
+ms.topic: article
+ms.date: 08/23/2019
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2019-08-31
+ms.search.form: EntAssetObjectKPI
 ms.dyn365.ops.version: 10.0.5
-
 ---
 
 # Asset KPIs

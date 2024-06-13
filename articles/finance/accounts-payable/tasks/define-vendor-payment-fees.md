@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Define vendor payment fees
-description: Set up vendor payment fees. 
-author: abruer
-ms.date: 02/11/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: VendPaymFee, VendPaymModeFee, BankAccountTableLookUp   
-audience: Application User 
-# ms.devlang:  
+description: Learn about how to set up vendor payment fees, which is a task that uses the USMF demo company, including a step-by-step process. 
+author: twheeloc
+ms.author: twheeloc
+ms.topic: how-to
+ms.date: 01/08/2024
+ms.custom: evergreen 
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: abruer
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: VendPaymFee, VendPaymModeFee, BankAccountTableLookUp   
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Define vendor payment fees
 
 [!include [banner](../../includes/banner.md)]

@@ -6,8 +6,6 @@ description: This article explains how to define when a list of all work lines w
 author: Mirzaab
 ms.date: 09/03/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

@@ -1,13 +1,13 @@
 ---
 title: Planning Optimization release process and release history
-description: This article provides information about the release process and release history for Planning Optimization.
+description: Learn about the release process and release history for Planning Optimization, including a table outling various changes.
 author: t-benebo
-ms.date: 02/20/2023
-ms.topic: article
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
+ms.topic: article
+ms.date: 02/20/2023
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.31
 ---
@@ -22,20 +22,29 @@ Each release is published to the individual regions where Planning Optimization 
 
 While Planning Optimization is being updated, master planning might run a bit more slowly than usual.
 
-Environments that use Planning Optimization automatically receive the latest release. No user action is required: the service is automatically updated. However, no breaking-change functionality is ever automatically pushed to environments. By default, any changes that are considered breaking are turned off and must be explicitly turned on by using [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Therefore, those changes won't appear in environments until you choose to enable them.
+All environments that use Planning Optimization automatically receive the latest release regardless which version of Supply Chain Management you are using. Therefore, no backports are needed. No user action is required: the service is automatically updated. However, no breaking-change functionality is ever automatically pushed to environments. By default, any changes that are considered breaking are turned off and must be explicitly turned on by using [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Therefore, those changes won't appear in environments until you choose to enable them.
 
 Because notifications aren't shown when Planning Optimization is updated in your environment, you can review the release notes in the following table to determine when changes were released and what functionality they introduced. This table shows the changes that were released for Planning Optimization, whether those changes are associated with a feature from feature management, and the date of the release.
 
 | Changes | Feature management details | Release dates |
 |---|---|---|
-| <p>General performance, quality and stability improvements.</p> | No feature management required | July 3–7, 2023 |
-| <p>General performance, quality and stability improvements.</p> | No feature management required | June 15–20, 2023 |
-| <p>BOM lines with rounding or multiple setups.</p><p>BOM/formula lines with negative quantity.</p><p>General performance, quality and stability improvements.</p> | No feature management required | May 22–31, 2023 |
-| <p>General performance, quality and stability improvements.</p> | No feature management required | May 4–8, 2023 |
-| <p>Process manufacturing support for Planning Optimization. This includes support for creating planned batch orders for formula products, co-products, and by-products, formula lines with formula measurement, and formula versions with yield, but doesn't include support for planning items or item substitutions (plan groups).</p><p>General performance, quality and stability improvements.</p> | No feature management required | April 17–21, 2023 |
-| <p>General performance, quality and stability improvements.</p> | No feature management required | March 27–30, 2023 |
-| <p>General performance, quality and stability improvements.</p> | No feature management required | March 13–17, 2023 |
-| <p>General performance, quality and stability improvements.</p> | No feature management required | February 15–24, 2023 |
+| <p>General performance, quality, and stability improvements.</p> | No feature management required | May  20–28, 2024 |
+| <p>General performance, quality, and stability improvements.</p> | No feature management required | March  15–20, 2024 |
+| <p>General performance, quality, and stability improvements.</p> | No feature management required | February  10–15, 2024 |
+| <p>General performance, quality, and stability improvements.</p> | No feature management required | January  19–25, 2024 |
+| <p>Planning items support.</p><p>General performance, quality, and stability improvements.</p> | No feature management required | December  10–15, 2023 |
+| <p>General performance, quality, and stability improvements.</p> | No feature management required | October 12–19, 2023 |
+| <p>Positive days support.</p><p>General performance, quality, and stability improvements.</p> | No feature management required | October 2–6, 2023 |
+| <p>General performance, quality, and stability improvements.</p> | No feature management required | September 20–22, 2023 |
+| <p>General performance, quality, and stability improvements.</p> | No feature management required | August 15–20, 2023 |
+| <p>Custom inventory dimensions.</p><p>Transport days.</p><p>General performance, quality, and stability improvements.</p> | No feature management required | July 3–7, 2023 |
+| <p>General performance, quality, and stability improvements.</p> | No feature management required | June 15–20, 2023 |
+| <p>BOM lines with rounding or multiple setups.</p><p>BOM/formula lines with negative quantity.</p><p>General performance, quality, and stability improvements.</p> | No feature management required | May 22–31, 2023 |
+| <p>General performance, quality, and stability improvements.</p> | No feature management required | May 4–8, 2023 |
+| <p>Process manufacturing support for Planning Optimization. This includes support for creating planned batch orders for formula products, co-products, and by-products, formula measurement, and formula versions with yield, but doesn't include support for planning items or item substitutions (plan groups).</p><p>General performance, quality, and stability improvements.</p> | No feature management required | April 17–21, 2023 |
+| <p>General performance, quality, and stability improvements.</p> | No feature management required | March 27–30, 2023 |
+| <p>General performance, quality, and stability improvements.</p> | No feature management required | March 13–17, 2023 |
+| <p>General performance, quality, and stability improvements.</p> | No feature management required | February 15–24, 2023 |
 | <p>[Bills of material with constant scrap or variable scrap defined](../scrap-calculations.md)</p><p>Demand with specific BOM or route requirements defined</p><p>Calculated delays: Add the calculated delay to the requirement date settings on master plans</p> | No feature management required | January 10–15, 2023 |
 | <p>[Batch disposition codes](../../inventory/batch-disposition-codes.md)</p><p>Include on-hand inventory and inventory transaction parameters on master plans</p><p>Released production orders that aren't started, where scheduled start date is earlier than today</p><p>General performance, quality, and stability improvements</p> | No feature management required | October 10–14, 2022 |
 | <p>[Resource scheduling with finite capacity](finite-capacity.md)</p><p>General performance, quality, and stability improvements</p> | No feature management required | September 19–23, 2022 |

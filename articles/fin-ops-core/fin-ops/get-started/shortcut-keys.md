@@ -1,37 +1,22 @@
 ---
-# required metadata
-
 title: Keyboard shortcuts
-description: This article provides an overview of the shortcut key combinations that you can use when you're working with finance and operations apps.
+description: Learn about the shortcut key combinations that you can use when you're working with finance and operations apps.
 author: jasongre
-ms.date: 01/29/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
+ms.topic: article
+ms.date: 01/29/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
 ---
 
 # Keyboard shortcuts
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Keyboard shortcuts can help you quickly and efficiently enter data in finance and operations apps. 
 
@@ -179,10 +164,10 @@ Users can discover currently available shortcuts directly from the user interfac
 | To do this                                                                   | Press                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Open the hyperlink                                                           | Ctrl+Enter                    |
-| Open the hyperlink (when focus is on a read-only control)<br><br>**Note:** This shortcut only applies when the **Standardize keyboard interaction for combo box and lookup controls** feature is enabled                   | Enter    |
+| Open the hyperlink (when focus is on a read-only control)<br><br>**Note:** This shortcut only applies when the **Standardize keyboard interaction for combo box and lookup controls** feature is enabled|Enter  |
 | Enter the session date in a date field                                       | D                             |
 | Enter the current date in a date field                                       | T                             |
-| Open lookup, combo box, date picker, drop dialog box                         | Alt+Down arrow<br><br>Enter (when the **Standardize keyboard interaction for combo box and lookup controls** feature is enabled)                |
+| Open lookup, combo box, date picker, drop dialog box          | Alt+Down arrow<br><br>Enter (when the **Standardize keyboard interaction for combo box and lookup controls** feature is enabled)                |
 | Close lookup, combo box, date picker, drop dialog box                        | Esc                           |
 | Move focus into a lookup (when the lookup is already open)                   | Alt+Down arrow                |
 | Open the control's enhanced preview                                          | Alt+Up arrow                  |
@@ -207,7 +192,7 @@ Users can discover currently available shortcuts directly from the user interfac
 | Search for a page                                                             | Ctrl+/ or Alt+G            |
 | Open the help pane                                                            | Ctrl+?                     |
 | Open the trace parser                                                         | Alt+Shift+T                |
-| Move to the navigation pane                                                   | Alt+F1                     |
+| Toggle the navigation pane between open, pinned open, and closed              | Alt+F1                     |
 | Add/remove page as a favorite (with focus on a page in the navigation pane)   | Shift+F                    |
 | Move to the standard Action Pane                                              | Alt+M,A or Ctrl+F6         |
 | Move to the Filter pane (which may include opening it)                        | Alt+M,F or Ctrl+F3         |
@@ -222,7 +207,7 @@ Users can discover currently available shortcuts directly from the user interfac
 > [!NOTE]
 > The **Streamline tabbing behavior in full-page forms** feature, introduced in version 10.0.26, allows users to tab through all regions of a page without requiring the mouse or a dedicated keyboard shortcut to move between regions. You can still use the existing keyboard shortcuts (such as Alt+M key chord shortcuts) to move quickly between the regions on a page.
 
-## [Personalization](personalize-user-experience.md) shortcuts 
+## [Personalization](../../dev-itpro/get-started/personalize-user-experience.md) shortcuts 
 
 | To do this                                                                                                             | Press                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|

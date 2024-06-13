@@ -1,22 +1,20 @@
 ---
 title: Onboard the Asset Management mobile app
-description: This article describes how administrators can prepare your Microsoft Dynamics 365 Supply Chain Management and Dataverse environments to support the Asset Management mobile app, and how to install the app on your mobile devices.
+description: Learn how administrators can prepare your Microsoft Dynamics 365 Supply Chain Management and Dataverse environments to support the Asset Management mobile app.
 author: johanhoffmann
 ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
-ms.date: 03/17/2023
+ms.date: 09/19/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # Onboard the Asset Management mobile app
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
-<!-- KFM: Preview until further notice. Note that app install procedure may change after GA -->
 
 This article describes how administrators can prepare your Microsoft Dynamics 365 Supply Chain Management and Dataverse environments to support the Asset Management mobile app. It also describes how to install the app on your mobile devices.
 
@@ -26,7 +24,7 @@ Before you can start to onboard the Asset Management mobile app, you must meet t
 
 ### System requirements
 
-To run the Asset Management mobile app, you must be using Supply Chain Management version 10.0.32 or later.
+To run the latest Asset Management mobile app, you must be using Supply Chain Management version 10.0.36 or later.
 
 ### Set up Dataverse for your Supply Chain Management environment
 
@@ -34,12 +32,7 @@ The mobile app uses [Dataverse virtual tables that are connected to Supply Chain
 
 When you create the Dataverse environment where you want to install the app, be sure to enable Dynamics 365 apps.
 
-### Configure dual-write in Supply Chain Management
-
-For the mobile app to work, Power Apps must be able to communicate with your Supply Chain Management environment through virtual entities. To enable virtual entities in your Dataverse environment, follow the instructions in [Getting the virtual entity solution](../../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#get-virtual-entity-solution).
-
-> [!IMPORTANT]
-> If dual-write and virtual entities were already set up on your Dataverse environment for a previous purpose, you must still update your virtual entity solution before you install the Asset Management mobile app in Dataverse. If you install the app over an outdated virtual entity solution, you risk needing to manually update the schema for each virtual entity afterwards. For more information about how to manually install and update the virtual entity solution, see [Manage Dynamics 365 apps](/power-platform/admin/manage-apps).
+The [Power Apps component framework feature](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) must be enabled for your environment.
 
 ## <a name="install-in-dataverse"></a>Install the mobile app in Dataverse
 
@@ -47,7 +40,7 @@ You must install the Asset Management mobile app in your Dataverse environment t
 
 Follow these steps to install the Asset Management mobile app in Dataverse.
 
-1. Go to ["Dynamics 365 Asset Management Mobile Application (Public Preview)" in Microsoft AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.d365-scm-assetmanagementmobileapp).
+1. Go to ["Dynamics 365 Asset Management mobile application" in Microsoft AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.d365-scm-assetmanagementmobileapp).
 1. Select **Get it now**.
 1. Follow the instructions on your screen to install the app in the Dataverse environment that is connected to your target Supply Chain Management environment.
 
@@ -56,6 +49,8 @@ Follow these steps to install the Asset Management mobile app in Dataverse.
 After the mobile app solution is installed in your Dataverse environment, you must share it with your users. The Asset Management mobile app is a canvas app. To share it, follow the instructions in [Share an app](/power-apps/maker/canvas-apps/share-app#share-an-app).
 
 Each relevant user must be assigned a role that lets them work with the Dataverse Supply Chain Management virtual tables that the solution installs. The solution installs a role named *Asset Management Mobile Application User Role* that grants access privileges to all the required virtual tables. You can assign this role to a Dataverse group team. Any user who's a member of that team will then have the role too. Alternatively, you can assign the role directly to a user.
+
+Each relevant user must also have the *Finance and Operations Basic User* role.
 
 - To assign a role to a group team, follow the instructions in [Manage the security roles of a team](/power-platform/admin/manage-group-teams#manage-the-security-roles-of-a-team). We recommend that you use group teams if you must assign the role to multiple users. For information about how to manage team members, see [Manage team members](/power-platform/admin/manage-teams#manage-team-members).
 - To assign a role directly to a user, follow the instructions in [Assign a security role to a user](/power-platform/admin/assign-security-roles).
@@ -109,7 +104,7 @@ Follow these steps to install and use the Asset Management mobile app on a mobil
 
 1. Install the Power Apps mobile app by following the instructions in [Install the Power Apps mobile app](/power-apps/mobile/run-powerapps-on-mobile).
 1. Open the Power Apps mobile app, and sign in by using the same corporate account that you use to sign in to Supply Chain Management.
-1. Use the **Search** field to search for *Asset Management*. Because it's a canvas app, you can add it to your favorites list in Power Apps by swiping left on it after you find it.
+1. Use the **Search** field to search for *Asset Management V2*. Because it's a canvas app, you can add it to your favorites list in Power Apps by swiping left on it after you find it.
 1. Open the Asset Management mobile app, and start to use it.
 
 ## Clear the Power Apps cache on a mobile device after an update of the back-end setup

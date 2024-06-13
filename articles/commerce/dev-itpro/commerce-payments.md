@@ -5,7 +5,7 @@ description: This article describes the omni-channel Commerce order payments fea
 author: ravimeda
 ms.date: 01/30/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: raeda
@@ -83,7 +83,7 @@ The following illustration shows the mapping of a payment method to an operation
 
 #### Configure a call center
 
-To manage POS and e-commerce order payments through Commerce headquarters, you must configure at least one call center channel. For more information about how to create a call center channel, see [Set up a call center channel](../channel-setup-callcenter.md#overview).
+To manage POS and e-commerce order payments through Commerce headquarters, you must configure at least one call center channel. For more information about how to create a call center channel, see [Set up a call center channel](../channel-setup-callcenter.md).
 
 #### Set up users as call center users
 

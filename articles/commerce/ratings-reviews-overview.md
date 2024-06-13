@@ -4,7 +4,7 @@ description: This article covers ratings and reviews in Microsoft Dynamics 365 C
 author: gvrmohanreddy
 ms.date: 11/16/2022
 ms.topic: overview
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw

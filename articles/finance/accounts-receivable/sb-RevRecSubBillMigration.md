@@ -1,31 +1,19 @@
 ---
-# required metadata
-
 title: Migrate Revenue recognition to Subscription billing
-description: This article explains how to move in-progress revenue schedules in Revenue recognition to deferral schedules in Revenue and expense deferrals.
-author: msftbrking
-ms.date: 05/15/2023
+description: Learn how to move in-progress revenue schedules in Revenue recognition to deferral schedules in Revenue and expense deferrals.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/15/2023
 ms.reviewer: twheeloc
+audience: Application User
 ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: 539093
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: brking
 ms.search.validFrom: 2021-11-05
+ms.search.form:  
 ms.dyn365.ops.version: 10.0.34
-
 ---
+
 # Migrate Revenue recognition to Subscription billing
 
 [!include [banner](../includes/banner.md)]

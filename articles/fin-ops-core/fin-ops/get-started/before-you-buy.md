@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Before you buy
-description: Step-by-step guidance to use when you're considering purchasing Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce.  
+description: Access step-by-step guidance to use when you're considering purchasing Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce.  
 author: sericks007
-ms.date: 11/30/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS: 
-audience: Application User, Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: sericks
+ms.topic: article
+ms.date: 11/30/2021
+ms.reviewer: sericks
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2017-06-30
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0, Operations
-
 ---
 
 # Before you buy
@@ -43,8 +31,8 @@ The following considerations must be taken when you choose on-premises as a depl
 
 - Regulatory and compliance needs that are not available in the cloud certifications.
 - Disconnected business process with intermittent internet connectivity required to access Microsoft Dynamics Lifecycle Services (LCS) for application lifecycle management.
-- [Comparison of cloud and on-premises features](cloud-prem-comparison.md).
-- [System requirements for on-premises deployments](system-requirements-on-prem.md).
+- [Comparison of cloud and on-premises features](../../dev-itpro/get-started/cloud-prem-comparison.md).
+- [System requirements for on-premises deployments](../../dev-itpro/get-started/system-requirements-on-prem.md).
 
 > [!IMPORTANT]
 > On-premises deployments are not supported on any public cloud infrastructure, including Microsoft Azure. However, they are supported to run on [Microsoft Azure Stack HCI](https://azure.microsoft.com/products/azure-stack/hci/) and [Microsoft Azure Stack Hub](https://azure.microsoft.com/products/azure-stack/hub/).
@@ -67,7 +55,7 @@ A Microsoft Cloud Solution Provider can work closely with you to understand the 
 
 ### Buy through a Dynamics partner (on-premises)
 
-You must work with a partner to purchase Finance + Operations (on-premises). For more information, see [Buy Finance + Operations (on-premises)](purchase-on-premises.md).
+You must work with a partner to purchase Finance + Operations (on-premises). For more information, see [Buy Finance + Operations (on-premises)](../../dev-itpro/get-started/purchase-on-premises.md).
 
 ### Buy through volume licensing (cloud or on-premises)
 

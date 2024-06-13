@@ -6,8 +6,6 @@ description: This article describes how default units, unit sequences, and unit 
 author: perlynne
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 

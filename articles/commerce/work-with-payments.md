@@ -6,9 +6,6 @@ description: This article describes the various payment methods that you can use
 author: josaw1
 ms.date: 03/28/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: MCRSalesTableOrderHistory, MCRCCAuthManagement

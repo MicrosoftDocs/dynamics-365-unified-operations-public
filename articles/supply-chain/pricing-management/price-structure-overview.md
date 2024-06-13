@@ -1,18 +1,18 @@
 ---
-title: Price structure overview
-description: This article provides an overview of how price structures work in Pricing management.
+title: Price structure overview (preview)
+description: Learn how price structures work in Pricing management, including outlines on price component types and concurrency rules.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: GUPPricingTree, GUPPriceComponentCodeSetup
 ms.topic: overview
 ms.date: 04/03/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: GUPPricingTree, GUPPriceComponentCodeSetup
 ---
 
-# Price structure overview
+# Price structure overview (preview)
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]

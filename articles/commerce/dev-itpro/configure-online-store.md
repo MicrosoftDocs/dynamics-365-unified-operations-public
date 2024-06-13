@@ -4,9 +4,7 @@ description: This article provides links to articles that will help you centrall
 author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User, IT Pro
+audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw

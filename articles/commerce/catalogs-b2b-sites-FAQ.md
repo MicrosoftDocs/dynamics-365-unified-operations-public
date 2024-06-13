@@ -7,7 +7,7 @@ description: This article provides answers to frequently asked questions about M
 author: ashishmsft
 ms.date: 06/27/2023
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
@@ -103,4 +103,4 @@ Because the same customer can buy products from both B2B and B2C channels, the o
 
 [Catalog picker module](catalog-picker.md)
 
-[Extensibility impact of Commerce catalogs for B2B customizations](catalogs-b2b-sites-dev.md)
+[Extensibility impact of Commerce catalogs for B2B customizations](dev-itpro/catalogs-b2b-sites-dev.md)
