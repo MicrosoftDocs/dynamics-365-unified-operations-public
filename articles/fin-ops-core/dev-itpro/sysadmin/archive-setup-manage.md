@@ -1,6 +1,6 @@
 ---
-title: Set up and manage archive data in Dynamics 365 Finance and operations apps
-description: Learn about how to set up and manage archive data in Microsoft Dynamics 365 Finance and operations apps, including an overview on preparing environments.
+title: Set up and manage archive data in finance and operations apps
+description: Learn about how to set up and manage archive data in finance and operations apps, including an overview on preparing environments.
 author: pnghub
 ms.author: gned
 ms.topic: conceptual
@@ -8,7 +8,7 @@ ms.date: 05/31/2024
 ms.custom:
 ms.reviewer: johnmichalak
 ---
-# Set up and manage archive data in Dynamics 365 Finance and operations apps
+# Set up and manage archive data in finance and operations apps
 
 This article describes how to set up and manage archive data in Microsoft Dynamics 365 Finance and operations apps.
 
