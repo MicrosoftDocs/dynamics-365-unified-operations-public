@@ -2,7 +2,7 @@
 title: Nonrecurring payment tokens
 description: This article describes how to configure and operate payment processing with nonrecurring payment tokens in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 06/11/2024
+ms.date: 06/13/2024
 ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
@@ -19,35 +19,35 @@ ms.custom:
 
 This article describes how to configure and operate payment processing with nonrecurring payment tokens in Microsoft Dynamics 365 Commerce.
 
-Dynamics 365 Commerce payment processing actions save payment card tokens to use for downstream sales order changes, resubmission of authorizations that are close to expiration, and for "card on file" caching to use for future customer orders. With direct configurations, card payment tokens carry a "recurring detail" reference to use for unscheduled2, merchant-initiated transactions. In Commerce version 10.0.40, payment processing can operate payments without saving a recurring customer card token. This ability applies to online stores, call center orders, and point of sale (POS) customer orders that require future shipment.
+Dynamics 365 Commerce payment processing actions save payment card tokens to use for downstream sales order changes, resubmission of authorizations that are close to expiration, and "card on file" caching to use for future customer orders. With direct configurations, card payment tokens carry a "recurring detail" reference to use for unscheduled, merchant-initiated transactions. In Commerce version 10.0.40, payment processing can operate payments without saving a recurring customer card token. This ability applies to online stores, call center orders, and point of sale (POS) customer orders that require future shipment.
 
 ## Key terms
 
 | Term | Description |
 |---|---|
 | Token | A referenced XML blob in the Commerce system that stores payment references for transactional purposes. |
-| Recurring | Reference to a card payment token type that is recurring if intended to be reused in the future, either at a set cadence or unscheduled. |
-| Nonrecurring | Reference to a card payment token type that is nonreusable or absent.
-| Card on file | A saved card reference token specific to a customer's account that is agreed to be saved for future use in the Commerce system or payment gateway. |
+| Recurring | Refers to a card payment token type that is recurring if intended to be reused in the future, either scheduled or unscheduled. |
+| Nonrecurring | Refers to a card payment token type that is nonreusable or absent.
+| Card on file | A saved card reference token that is specific to a customer's account and that the customer has agreed to save for future use in the Commerce system or payment gateway. |
 
 ## Prerequisites
 
-To set up an environment for nonrecurring payment token usage, the following elements are required:
+To set up an environment for nonrecurring payment token usage, these prerequisites must be met:
 
 - The following features must be enabled in Commerce headquarters at **System administration \> Workspaces \> Feature management**: 
     - **Enable use of nonrecurring tokens in Commerce**
     - **Extensibility to support incremental credit card capture**
     - **Restrict Payment Token usage to Order context**
-- For online channels to support nonrecurring tokens, in Commerce site builder at **Site settings \> Extensions \> Card and checkout**, the **Enable single payment authorization checkout** setting must be enabled.
-- For customers using the Dynamics 365 Payment Connector for Adyen, in the Adyen portal under the **Settings \> Checkout settings**, the **Tokenization** field's **Recurring** setting must be disabled. This setting is at the merchant account level and affects all transactions under the merchant account. When enabled, the setting forces a recurring detail reference for all transactions against the merchant account. When disabled, the Dynamics 365 Payment Connector for Adyen sets recurring details as needed for transactional situations described below. The Adyen **Recurring** setting must be enabled to operate with the Dynamics 365 Payment Connector for Adyen if the **Enable use of nonrecurring tokens in Commerce** feature is disabled for the Commerce environment.
+- For online channels to support nonrecurring tokens, the **Enable single payment authorization checkout** setting must be enabled in Commerce site builder at **Site settings \> Extensions \> Card and checkout**.
+- For customers using the Dynamics 365 Payment Connector for Adyen, in the Adyen portal under the **Settings \> Checkout settings**, the **Tokenization** field's **Recurring** setting must be disabled. This setting is at the merchant account level and affects all transactions under the merchant account. When enabled, the setting forces a recurring detail reference for all transactions against the merchant account. When disabled, the Dynamics 365 Payment Connector for Adyen sets recurring details as needed for transactional situations. The Adyen **Recurring** setting must be enabled to operate with the Dynamics 365 Payment Connector for Adyen if the **Enable use of nonrecurring tokens in Commerce** feature is disabled for the Commerce environment.
 
 ## Authorization patterns with nonrecurring payment tokens
 
 Commerce payment authorizations are used to ensure that a customer's credit is available for the amount of a transaction before the funds are "captured" or finalized as a charge on the customer's card or digital wallet. For customer orders where items from the order are still being picked, packed, and invoiced, the capture is triggered on the invoicing action during the order management process. In the time between order placement (when the credit amount is authorized as available by the card or wallet issuer) and capture (when the customer's credit is charged), the transaction within Commerce is maintained as an authorization state. 
 
-Authorizations against a card or wallet issuer can expire if held open for a specific amount of time. The expiry timeframe depends on the issuer and is unknown to the Commerce system or the payment gateway. Typically, the expiration is determined when a request to capture is sent and the payment gateway passes back the issuer's "decline" response. To avoid attempting to capture against an expired authorization, to consider an authorization expired the Commerce system tracks a set of parameters. 
+Authorizations against a card or wallet issuer can expire if held open for a specific amount of time. The expiry timeframe depends on the issuer and is unknown to the Commerce system or the payment gateway. Typically, the expiration is determined when a request to capture is sent and the payment gateway passes back the issuer's "decline" response. To avoid attempting to capture against an expired authorization, the Commerce system tracks a set of parameters to determine whether an authorization is expired. 
 
-When a recurring card payment token is used against an order, there are some scenarios within the system where a new merchant-initiated transaction is performed against the order using the recurring token to get a new authorization. When the **Enable use of nonrecurring tokens in Commerce** feature is enabled in headquarters, any customer order that doesn't have a recurring token associated with it requires a new payment authorization to be collected from the customer to enable the order to progress. 
+When a recurring card payment token is used against an order, there are some scenarios within the system where a new merchant-initiated transaction is performed against the order using the recurring token to get a new authorization. When the **Enable use of nonrecurring tokens in Commerce** feature is enabled in headquarters, any customer order that doesn't have a recurring token associated with it requires a new payment authorization to be obtained from the customer before allowing the order to proceed. 
 
 When nonrecurring tokens are used in Commerce, the following scenarios still require a recurring detail payment token to obtain an authorization:
 
