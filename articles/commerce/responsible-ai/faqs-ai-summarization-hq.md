@@ -1,6 +1,6 @@
 ---
 title: FAQ for Copilot AI summarization in Commerce headquarters
-description: This article provides answers to frequently asked questions about the Copilit AI technology used for generating summaries in Microsoft Dynamics 365 Commerce headquarters.
+description: This article provides answers to frequently asked questions about the Copilot AI technology used for generating summaries in Microsoft Dynamics 365 Commerce headquarters.
 ms.date: 06/13/2024
 ms.collection:
   - bap-ai-copilot
@@ -39,14 +39,14 @@ Microsoft might disable Copilot-driven features for selected customers if abuse 
 
 ## What are the limitations of AI summarization in Commerce headquarters? How can users minimize the impact of limitations when using the system?
 
-For very large documents, only a subset of the most impactful dataset are prefiltered to avoid token size limitation. The generated content should never be used without manual review or supervision.
+For very large documents, only a subset of the most impactful datasets are prefiltered to avoid token size limitation. The generated content should never be used without manual review or supervision.
 
 ## What operational factors and settings allow for effective and responsible use of AI summarization in Commerce headquarters?
 
 When you use the feature, you should follow these recommendations:
 
 - Confirm that your company has sufficient control over data permissions to ensure that business data can't be manipulated to influence AI data processing in an undesirable way.
-- In case of big priority issues, the summarization capability can be turned off from the **Feature management** workspace in headquarters. There are also granular controls to turn off summarization for individual forms based on business need and relevance. 
+- In case of large priority issues, the summarization capability can be turned off from the **Feature management** workspace in headquarters. There are also granular controls to turn off summarization for individual forms based on business need and relevance. 
 
 
 
