@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Register goods shipped to customers (Russia)
-description: This article explains how to register the shipment and transfer the ownership of goods that are transported to a customer. 
+description: Learn how to register the shipment and transfer the ownership of goods that are transported to a customer, including an outline on settings. 
 author: kfend
-ms.date: 04/24/2019
-ms.topic: article
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Russia
-ms.search.industry: 
 ms.author: kfend
+ms.topic: article
+ms.date: 04/24/2019
+ms.custom: 
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
+ms.search.form: 
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Register goods shipped to customers (Russia)

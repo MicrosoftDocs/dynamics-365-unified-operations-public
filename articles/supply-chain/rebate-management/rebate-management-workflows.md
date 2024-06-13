@@ -1,15 +1,15 @@
 ---
 title: Rebate management deal workflows
-description: This article explains how to set up a Rebate management deal workflow to approve and activate deals.
+description: Learn how to set up a Rebate management deal workflow to approve and activate deals with an outline on creating and managing Rebate management deal workflows.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: WorkflowTableListPageRnr
 ms.topic: how-to
 ms.date: 05/15/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: WorkflowTableListPageRnr
 ---
 
 # Rebate management deal workflows

@@ -1,15 +1,15 @@
 ---
 title: Rebate management groups
-description: This article describes how to set up Rebate management groups. Rebate management groups can be used during rebate calculations and can be attached to a master record.
+description: Learn how to set up Rebate management groups, which can be used during rebate calculations and can be attached to a master record.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: TAMRebateGroup
 ms.topic: how-to
 ms.date: 05/15/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: TAMRebateGroup
 ---
 
 # Rebate management groups

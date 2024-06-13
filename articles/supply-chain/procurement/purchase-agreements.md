@@ -1,15 +1,15 @@
 ---
 title: Purchase agreements
-description: This article provides information about purchase agreements. A purchase agreement is a contract that commits an organization to buy a specified quantity or amount by using multiple purchase orders over time. In exchange for this commitment, the buyer receives special prices and discounts. 
+description: Learn about purchase agreements, which are contracts that commits an organization to buy a specified quantity or amount by using multiple purchase orders over time.
 author: Henrikan
 ms.author: henrikan
-ms.reviewer: kamaybac
-ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
 ms.topic: how-to
 ms.date: 06/07/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
 ---
 
 # Purchase agreements

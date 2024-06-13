@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Approve vendors for specific products
-description: This procedure shows you how to approve vendors for specific products. 
+description: Learn how to approve vendors for specific products, including a step-by-step process for the task using the USMF demo data company.
 author: Henrikan
-ms.date: 07/22/2019
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: EcoResProductDetailsExtended, PdsApprovedVendorList, VendTable   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: henrikan
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 07/22/2019
+ms.custom:
+ms.reviewer: kamaybac   
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: EcoResProductDetailsExtended, PdsApprovedVendorList, VendTable  
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Approve vendors for specific products
 
 [!include [banner](../../includes/banner.md)]

@@ -1,15 +1,15 @@
 ---
 title: Set up a company to use multiple price structures (preview)
-description: This article explains how to set up multiple price structures in a company.
+description: Learn how to set up multiple price structures in a company, including a step-by-step process for configuring a company to use multiple price structures.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: GUPPricingTree, GUPParameters
 ms.topic: how-to
 ms.date: 04/03/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: GUPPricingTree, GUPParameters
 ---
 
 # Set up a company to use multiple price structures (preview)
