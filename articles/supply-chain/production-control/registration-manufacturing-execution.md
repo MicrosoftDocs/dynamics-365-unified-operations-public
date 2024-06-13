@@ -46,7 +46,7 @@ On the **Route groups** you can configure if a production job should use estimat
 
 In the **Time and attendance** module, supervisors processes workers daily registrations to generate the basis for workers pay. As part of this process, adjustments to the already recorded time registrations on production orders can be made. 
 
-Use the follwoing procedure to configure is time adjustments should be made to production orders as part of processing the workers daily registrations:
+Use the follwoing procedure to configure if time adjustments should be made to production orders as part of processing the workers daily registrations:
 
 1. Go to **Production control > Setup > Manufacturing execution > Production order defaults**
 1. On the **General** tab, in the **Time** section, set the **Skip time adjustments** field to one of the following values:
