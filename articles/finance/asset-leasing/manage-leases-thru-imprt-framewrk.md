@@ -4,8 +4,8 @@ description: Learn how to use the Lease import framework to adjust multiple leas
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 04/12/2021
-ms.reviewer: kfend
+ms.date: 06/12/2024
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-10-28
