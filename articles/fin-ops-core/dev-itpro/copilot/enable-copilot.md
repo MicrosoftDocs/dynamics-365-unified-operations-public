@@ -21,7 +21,7 @@ ms.search.form:
 
 Copilot brings features that help users complete their tasks more efficiently. For example, one feature uses the power of generative AI to provide in-app help guidance.
 
-This article describes how to enable basic Copilot capabilities in finance and operations apps. All Copilot features in finance and operations apps require this basic foundation. For some features, this foundation is all that's needed, but other features may require additional installations and/or feature management.
+This article describes how to enable basic Copilot capabilities in finance and operations apps. Many (but not all) Copilot features in finance and operations apps require this basic foundation. For some features, this foundation is all that's needed, but other features may require additional installations and/or feature management (see also [Overview of enabling Copilot capabilities and features for finance and operations apps](enable-copilot-overview.md)).
 
 ## Country/region and language availability
 
