@@ -41,12 +41,6 @@ Now, when items are added to a transaction, multiline discounts aren't calculate
 
 To enable delayed price and discount calculation for call center, follow these steps.
 
-1. In Commerce headquarters, go to **Workspaces \> Feature management**.
-1. Enable the **Prevent unintentional price calculation for commerce order** feature. This feature is a prerequisite for the delayed price and discount calculation capability.
-
-    > [!NOTE]
-    > For new deployments, the **Prevent unintentional price calculation for commerce order** feature is enabled by default.
-
 1. Go to **Commerce parameters \> Prices and discounts**.
 1. In the **Miscellaneous** section, enable the **Manually calculate multi-line prices and discounts** configuration.
 
