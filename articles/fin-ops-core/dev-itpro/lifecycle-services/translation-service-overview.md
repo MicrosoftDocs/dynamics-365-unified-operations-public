@@ -4,8 +4,9 @@ description: Learn about the Microsoft Dynamics 365 Translation Service (DTS), i
 author: sericks007
 ms.author: sericks
 ms.topic: overview
-ms.date: 10/25/2021
-ms.custom: ["6154"]
+ms.date: 06/14/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak
 ms.collection: get-started 
 audience: Developer, IT Pro
