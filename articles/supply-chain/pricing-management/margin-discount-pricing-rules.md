@@ -1,15 +1,15 @@
 ---
 title: Pricing rules for discounts and margin price adjustments (preview)
-description: This article explains how to configure pricing rules for margin component price adjustments, simple discounts, quantity discounts, mix-and-match discounts, threshold discounts, and free-item discounts.
+description: Learn how to configure pricing rules for margin component price adjustments, simple discounts, quantity discounts, and free-item discounts.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: RetailPeriodicDiscount, RetailMixAndMatchLineGroups, GUPPriceAdjustPriceAttributeGroupEdit, GUPDiscountPriceComponentGroupExclusionList, GUPFundList, RetailMixAndMatchLineGroupSetup
 ms.topic: how-to
 ms.date: 04/03/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: RetailPeriodicDiscount, RetailMixAndMatchLineGroups, GUPPriceAdjustPriceAttributeGroupEdit, GUPDiscountPriceComponentGroupExclusionList, GUPFundList, RetailMixAndMatchLineGroupSetup
 ---
 
 # Pricing rules for discounts and margin price adjustments (preview)

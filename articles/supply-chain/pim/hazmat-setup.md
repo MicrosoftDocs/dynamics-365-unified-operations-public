@@ -1,24 +1,16 @@
 ---
-# required metadata
-
 title: Set up hazardous materials
-description: This article explains how to set up the data that is required to classify items as hazardous materials. When you create a sales order that includes an item that is classified as a hazardous material, the system generates hazardous material documentation for that sales order when it's shipped.
+description: Learn how to set up the data that is required to classify items as hazardous materials, including an outline on hazardous material regulations.
 author: t-benebo
-ms.date: 06/10/2020
-ms.topic: article
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
+ms.topic: article
+ms.date: 06/10/2020
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-06-10
+ms.search.form:
 ms.dyn365.ops.version: 10.0.11
 ---
 

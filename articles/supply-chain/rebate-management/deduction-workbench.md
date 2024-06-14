@@ -1,15 +1,15 @@
 ---
 title: Manage deductions using the deduction workbench
-description: This article describes how to use the deduction workbench to process customer payments that include deductions.
+description: Learn how to use the deduction workbench to process customer payments that include deductions, including prerequisites.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: TAMDeduction
 ms.topic: how-to
 ms.date: 05/15/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: TAMDeduction
 ---
 
 # Manage deductions using the deduction workbench

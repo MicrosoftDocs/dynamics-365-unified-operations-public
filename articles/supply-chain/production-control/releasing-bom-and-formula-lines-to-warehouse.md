@@ -1,24 +1,15 @@
 ---
-# required metadata
-
 title: Release BOM and formula lines to the warehouse
-description: This article describes the process for releasing raw material for BOM lines and formula lines to the warehouse.
+description: Learn about the process for releasing raw material for BOM lines and formula lines to the warehouse with an outline on methods for releasing BOM and formula lines.
 author: johanhoffmann
-ms.date: 10/30/2017
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: SysOperationTemplateForm, ProdParmReleaseToWarehouse, WHSReleaseToWarehouseProdBOM
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
+ms.topic: article
+ms.date: 10/30/2017
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2017-12-31
+ms.search.form: SysOperationTemplateForm, ProdParmReleaseToWarehouse, WHSReleaseToWarehouseProdBOM
 ms.dyn365.ops.version: 7.3
 ---
 

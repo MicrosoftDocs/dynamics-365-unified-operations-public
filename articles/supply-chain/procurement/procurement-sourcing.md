@@ -1,15 +1,15 @@
 ---
 title: Procurement and sourcing home page
-description: This article provides a list of the help articles and other resources that are available for Procurement and sourcing.
+description: Access a list of the help articles and other resources that are available for Procurement and sourcing, including a list of requisitions and requests for quotation.
 author: Henrikan
 ms.author: henrikan
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: overview
 ms.date: 06/07/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form:
 ---
 
 # Procurement and sourcing home page

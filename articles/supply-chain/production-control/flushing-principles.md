@@ -1,17 +1,17 @@
 ---
 title: Control raw material consumption by using flushing principles
-description: This article describes the four flushing principles that are used for raw material consumption.
+description: Learn about the four flushing principles that are used for raw material consumption, including a description of the flushing principles.
 author: johanhoffmann
 ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form: JmgShopSupervisorReleaseOrders
 ms.topic: conceptual
 ms.date: 05/22/2024
-audience: Application User
-ms.search.region: Global
 ms.custom:
   - bap-template
   - evergreen
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
+ms.search.form: JmgShopSupervisorReleaseOrders
 ---
 
 # Control raw material consumption by using flushing principles

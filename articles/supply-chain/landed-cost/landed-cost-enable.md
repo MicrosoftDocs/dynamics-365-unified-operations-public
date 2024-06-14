@@ -1,15 +1,15 @@
 ---
 title: Turn on the Landed cost module and related features for your system
-description: This article describes how to turn the Landed cost module and its optional extra features on or off.
+description: Learn how to turn the Landed cost module and its optional extra features on or off with a table defining feature names and requirements.
 author: Weijiesa
 ms.author: weijiesa
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 08/09/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # Turn on the Landed cost module and related features for your system
