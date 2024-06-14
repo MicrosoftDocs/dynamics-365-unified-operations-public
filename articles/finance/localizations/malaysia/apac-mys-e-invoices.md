@@ -78,6 +78,8 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
     > [!NOTE]
     > Alternatively, you can leave the **Web service URL** and **Login service URL** parameters empty and define the **Environment type** parameter, in the **Value** field, select the type of the environment depending the implementation stage. In this case the required URLs will be constructed automatically.  The **Web service URL** and **Login service URL** parameters, if defined, have higher priority than the **Environment type** parameter.
 
+    ![Screenshot of the setup on the Invoicing feature processing pipeline parameters](apac-mys-e-invoice-URLs.jpg)
+
 1. Repeat steps 7 through 10 for the **Integrate with MyInvois (Get document)** action.
 1. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **Generate QR code for Malaysia** action.
 1. In the **Parameters** section, select the **Environment type** parameter, and then, in the **Value** field, select the type of the environment depending on the implementation stage.
