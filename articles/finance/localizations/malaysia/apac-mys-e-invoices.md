@@ -335,3 +335,5 @@ To enable QR codes printing in full and simplified invoices do the following ste
 
 > [!NOTE]
 > The image of the QR code shown in the printouts of invoices represents the URL which brings you to the official portal of **MyInvois** system where you can find the details of the related electronic invoice.
+> 
+> QR codes will be printed only for those invoices that were successfully submitted, validated and accepted by the **MyInvois** system.
