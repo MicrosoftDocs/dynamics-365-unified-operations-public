@@ -75,6 +75,9 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
 1. In the **Parameters** section, select the **Client secret** parameter, and then, in the **Value** field, select the name of the [secret](#ClSec) that you created.
 1. Select the **Client ID** parameter, and then, in the **Value** field, select the name of the [client ID](#ClID) that you created.
 1. In the **Parameters** section, select the **Web service URL** and **Login service URL** parameters. In the **Value** fields, enter the testing or production URLs depending on the implementation stage. Review the list of available URLs in [MyInvois system environment URLs](https://sdk.myinvois.hasil.gov.my/faq/#what-are-the-environment-urls).
+    > [!NOTE]
+    > Alternatively, you can leave the **Web service URL** and **Login service URL** parameters empty and define the **Environment type** parameter, in the **Value** field, select the type of the environment depending the implementation stage. In this case the required URLs will be constructed automatically.  The **Web service URL** and **Login service URL** parameters, if defined, have higher priority than the **Environment type** parameter.
+
 1. Repeat steps 7 through 10 for the **Integrate with MyInvois (Get document)** action.
 1. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **Generate QR code for Malaysia** action.
 1. In the **Parameters** section, select the **Environment type** parameter, and then, in the **Value** field, select the type of the environment depending on the implementation stage.
