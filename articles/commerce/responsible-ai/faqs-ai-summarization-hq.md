@@ -25,7 +25,7 @@ AI summarization in Commerce headquarters helps business users make better decis
 
 ## What can AI summarization in Commerce headquarters do?
 
-The feature is powered by Azure Open AI Service's large language model. It uses the information from posted and unposted statements to generate a summary that includes insights such as the number of affected transactions, the total sales amount of those statements, and risks such as transactions that have returns without receipts, expense transactions, and price overrides. The AI summary is also shown for merchandisers, to provide insights about product misconfigurations. Copilot uses the *gpt-3.5-turbo* generative AI model to generate natural language content.
+The feature is powered by Azure Open AI Service's large language model. It uses the information from posted and unposted statements to generate a summary. This summary includes insights such as the number of affected transactions, the total sales amount of those statements, and risks such as transactions that have returns without receipts, expense transactions, and price overrides. The AI summary is also shown for merchandisers, to provide insights about product misconfigurations. Copilot uses the *gpt-3.5-turbo* generative AI model to generate natural language content.
 
 ## What is the intended use of AI summarization in Commerce headquarters?
 
@@ -33,7 +33,7 @@ The intended use is for users to have immediate access to a relevant summary of 
 
 ## How was AI summarization in Commerce headquarters evaluated? What metrics are used to measure performance?
 
-The AI-generated summary feature was manually evaluated by comparing the results against the values in current and associated entities. Additional validation was done for scenarios where users are missing privileges to view data (to prevent overexposure) and scenarios where entities are missing data (to prevent hallucination). All calculations are done by using traditional coding methods, and only pre-aggregated data is sent to the large language models (LLM) service Copilot application programming interface (CAPI). The calculations were verified against the same data during the testing process. If you encounter inappropriate generated content, you can report it to Microsoft by using the [Report abuse](https://msrc.microsoft.com/report) feedback form. Your feedback helps improve the functionality.
+The AI-generated summary feature was manually evaluated by comparing the results against the values in current and associated entities. Further validation was done for scenarios where users are missing privileges to view data (to prevent overexposure) and scenarios where entities are missing data (to prevent hallucination). All calculations are done by using traditional coding methods, and only pre-aggregated data is sent to the large language models (LLM) service Copilot application programming interface (CAPI). The calculations were verified against the same data during the testing process. If you encounter inappropriate generated content, you can report it to Microsoft by using the [Report abuse](https://msrc.microsoft.com/report) feedback form. Your feedback helps improve the functionality.
 
 Microsoft might disable Copilot-driven features for selected customers if abuse of the functionality is detected.
 
