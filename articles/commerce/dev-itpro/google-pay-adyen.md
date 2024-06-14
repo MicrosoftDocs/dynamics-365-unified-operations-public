@@ -4,7 +4,7 @@
 title: Configure Google Pay with Adyen
 description: This article describes how to configure Google Pay with Adyen in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 06/13/2023
+ms.date: 06/14/2023
 ms.topic: how-to
 audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
