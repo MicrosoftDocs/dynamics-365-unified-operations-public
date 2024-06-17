@@ -20,6 +20,17 @@ ms.dyn365.ops.version: 10.0.21
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 2.3.4.0
+
+### New fixes and improvements in version 2.3.4.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- Increased stability.
+- Added a new and improved user interface for the Copilot screen.
+- On devices that are still set up to use a deprecated authentication method, the app now shows a warning to tell users that the app will soon stop working if the connection settings aren't changed.
+- Fixed a crash that could occur on Android devices when restarting the app after a long pause.
+
 ## Version 2.3.3.0
 
 ### New features introduced in version 2.3.3.0
