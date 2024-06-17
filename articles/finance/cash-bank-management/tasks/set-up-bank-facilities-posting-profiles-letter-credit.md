@@ -1,10 +1,10 @@
 --- 
 title: Set up bank facilities and posting profiles for letter of credit
-description: Learn how to create a Bank facility and posting profile required to process Letters of credit, including multiple step-by-step processes. 
-author: kweekley
-ms.author: kweekley
+description: Learn how to create a Bank facility and posting profile required to process Letters of credit. 
+author: music727
+ms.author: mibeinar
 ms.topic: how-to
-ms.date: 06/06/2024
+ms.date: 06/16/2024
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-The document below explains the process of setting up bank facilities and posting profiles which are required to process letters of credit.
+This article describes how to set up bank facilities and posting profiles which are required to process letters of credit.
 
 ## Cash and bank management parameters
 1. To enable import and export of letter of credit, go to **Cash and bank management > Setup > Cash and bank management parameters**.
@@ -44,7 +44,7 @@ The document below explains the process of setting up bank facilities and postin
 ## Bank posting profile
 1. To configure a bank posting profile, go to **Cash and bank management > Setup > Bank documents posting profile**.
 2. Click **New**.
-3. In the **Account code** field select **Group** if you would like to define a posting profile for a facility group, or **Table** to create a posting profile for a specific facility type.
+3. In the **Account code** field, select **Group** to define a posting profile for a facility group, or **Table** to create a posting profile for a specific facility type.
 4. In the **Account/Group number** field, click the drop-down button to see the lookup values and select required record.
 5. Select the main account for settlement in the **Settle account** field. This account is used when calculating cash flow forecast.
 6. In the **Charges account** field, select the account for expense transactions.
