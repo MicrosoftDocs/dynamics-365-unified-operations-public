@@ -6,7 +6,7 @@ ms.author: josaw
 ms.topic: article
 ms.date: 02/17/2022
 ms.custom: 
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2022-02-09

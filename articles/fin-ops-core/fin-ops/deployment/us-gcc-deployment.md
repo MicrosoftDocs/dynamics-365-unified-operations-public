@@ -5,7 +5,7 @@ author: hasaid
 ms.author: hasaid
 ms.topic: article
 ms.date: 11/12/2021
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2021-11-09
