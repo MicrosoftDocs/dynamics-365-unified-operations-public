@@ -5,7 +5,7 @@ author: josaw1
 ms.author: josaw
 ms.topic: conceptual
 ms.date: 05/14/2019
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2019-05-14
