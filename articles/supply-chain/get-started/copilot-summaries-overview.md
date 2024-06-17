@@ -6,7 +6,7 @@ ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 05/30/2024
+ms.date: 06/17/2024
 audience: Application User
 ms.custom: 
   - bap-template
@@ -62,49 +62,63 @@ The **All vendors** details page includes a **Summary by Copilot** FastTab that 
 
 ## Purchase order summary
 
-The **All purchase orders** details page includes a **Summary by Copilot** FastTab that shows an overview of the selected purchase order's status. For example, it shows the number of partially or fully confirmed, received, and invoiced lines. The FastTab also shows other selected insights, such as a summary of lines that are overdue or nearly overdue.
+The **All purchase orders** details page includes a **Summary by Copilot** FastTab that shows an overview of the selected purchase order's status. For example, it shows the number of partially or fully confirmed, received, and invoiced lines. The FastTab also shows other selected insights, such as a summary of order lines that are overdue or nearly overdue.
 
 ### Status summary for purchase orders
 
-For purchase orders that aren't cancelled, invoiced, or finalized, a detailed status across lines is provided. The section provides insight on the progression of order lines by listing the lines in the following categories:
+For purchase orders that aren't canceled, invoiced, or finalized, the **Status** section of the **Summary by Copilot** FastTab for purchase orders provides status details that apply across all order lines. The section provides insights into the progression of order lines in each of the following categories:
 
-- *Not fully received* – Lines where the quantity has not been fully registered or received.
-- *Fully received, not fully invoiced* – Lines where the quantity has been fully registered or received.
-- *Fully invoiced* – Lines where the quantity has been fully invoiced.
+- **Not fully received** – Lines where the quantity hasn't been fully registered or received.
+- **Fully received, not fully invoiced** – Lines where the quantity has been fully registered or received, but not yet fully invoiced.
+- **Fully invoiced** – Lines where the quantity has been received and fully invoiced.
 
-The status section provides filter buttons that let you filter to the lines shown for the purchase order according to their status. Use the filter to quickly find relevant lines so you can take appropriate action. Each filter is only shown when at least one line of the indicated status exists. The following filter buttons are available:
+When appropriate, the **Status** section provides buttons that let you filter the order lines according to their status. Use the filters to quickly find relevant order lines so you can take appropriate action. Each filter is only shown when at least one order line of the indicated status exists. The following filter buttons might be shown:
 
-- **Not fully received** – If the number of lines awaiting receipts is only for a subset of all lines in the purchase order, then a filter option is provided to easily filter to those lines and take action.
-- **Fully received, not fully invoiced** – If the number of lines fully received but not yet fully invoiced is only for a subset of all lines in the purchase order, then a filter option is provided to easily filter to those lines and take action.
+- **Not fully received** – Only show order lines where the quantity hasn't been fully registered or received.
+- **Fully received, not fully invoiced** – Only show order lines where the quantity has been fully registered or received, but not yet fully invoiced.
 
 ### Insight summary for purchase orders
 
-For purchase orders which are not cancelled, received, invoiced, or finalized, two additional insights across lines are provided: Number of *Nearly overdue or overdue lines* and  Number of *Lines without confirmed receipt dates*. These two insights are complemented with two filter options, by which it is possible to with one click to filter to the PO lines for each of the insights. Note that If this is for a subset of all lines in the purchase order, then filter options are provided to easily filter to those lines and take action.
+For purchase orders that aren't canceled, received, invoiced, or finalized, the **Insights** section of the **Summary by Copilot** FastTab for purchase orders provides two additional insights that apply across all order lines.
 
-- *Overdue or Nearly overdue lines* – Number of lines awaiting receipts where current date is equal to or before the expected receipt date (requested or confirmed) are reported.
-- *Lines without confirmed receipt dates* – Number of lines without confirmed receipt dates awaiting not fully received.
+- **Overdue or nearly overdue lines** – The number of order lines awaiting receipt where the current date is equal to or before the expected receipt date (requested or confirmed).
+- **Lines without confirmed receipt dates** – The number of waiting or not fully received order lines that don't have a confirmed receipt date.
+
+When appropriate, the **Insights** section provides buttons that let you filter the order lines according to their status. Use the filters to quickly find relevant order lines so you can take appropriate action. Each filter is only shown when at least one order line of the indicated status exists. The following filter buttons might be shown:
+
+- **Overdue or nearly overdue lines** – Only show order lines that are overdue or nearly overdue.
+- **Lines without confirmed receipt dates** – Only show waiting or not fully received order lines that don't have a confirmed receipt date.
 
 ## Sales order summary
 
-The **Sales order details** page includes a **Summary by Copilot** FastTab that shows an overview of the selected sales order's status. For example, it shows the number of partially or fully confirmed, received, and invoiced lines. The FastTab also shows other selected insights, such as a summary of lines that are overdue or nearly overdue.
+The **Sales order details** page includes a **Summary by Copilot** FastTab that shows an overview of the selected sales order's status. For example, it shows the number of partially or fully confirmed, received, and invoiced order lines. The FastTab also shows other selected insights, such as a summary of order lines that are overdue or nearly overdue.
 
 ### Status summary for sales orders
 
-For Sales orders which are not cancelled or invoiced, a detailed status across lines is provided. The status section provides aggregated information on the progression of order lines in different status buckets. Lines where the quantity has not been fully picked, are reported as *Not fully picked*. Lines where the quantity has not been fully shipped, are reported as *Not fully shipped*. Lines where the quantity has not been fully invoiced, are reported as *Not fully invoiced*.
+For sales orders that aren't canceled or invoiced, the **Status** section of the **Summary by Copilot** FastTab for sales orders provides status details that apply across all order lines. The section provides insights into the progression of order lines in each of the following categories:
 
-The information is intended to focus on providing a quick overview of the progression of all SO lines. Compared to purchase order summarization status, sales order summarization status groups lines in buckets which are forward looking. Rather than focusing on what has happened, the lines are grouped in buckets on what is expected to happen from a fulfillment perspective: Not fully picked (representing lines where pick is expected to happen), Not fully shipped (representing lines where Pick is not expected to happen or has already been completed), not fully invoiced (representing lines which have been completely shipped but not fully invoiced yet). Once a line has been fully invoiced, it is no longer reported in the status section, as no additional action is expected fulfillment wise.
+- **Not fully picked** – Lines where the quantity hasn't been fully picked.
+- **Not fully shipped** – Lines where the quantity has been picked (or don't require picking) but not fully shipped.
+- **Not fully invoiced** – Lines where the quantity has been completely shipped but not yet fully invoiced.
 
-The status is complemented by two filter options, by which it is possible to, with one click, to filter to the SO lines for the status buckets *Filter to lines not fully picked* and *Filter to lines not fully shipped*. Note that a filter option is available only if it includes a subset of all lines in the sales order. Using the filter option allows easy and fast access to lines to take action.
+The **Status** section provides a quick overview of the progression of all sales order lines. Unlike purchase order status summaries, sales order status summaries groups order lines in categories that are forward looking. So, rather than focusing on what already happened, order lines are categorized based on what is expected to happen from a fulfillment perspective.
 
-- *Filter to lines not fully picked* – If the number of lines awaiting pick represents only a subset of all lines in the sales order, then a filter option is provided to easily filter to those lines and take action.
-- *Filter to lines not fully shipped* – If the number of lines fully picked or not requiring picking represents only a subset of all lines in the sales order, then a filter option is provided to easily filter to those lines and take action.
+When appropriate, the **Insights** section provides buttons that let you filter the order lines according to their status. Use the filters to quickly find relevant order lines so you can take appropriate action. Each filter is only shown when at least one order line of the indicated status exists. The following filter buttons might be shown:
+
+- **Filter to lines not fully picked** – Only show order lines that haven't been fully picked.
+- **Filter to lines not fully shipped** – Only show order lines have been picked (or don't require picking)  but not fully shipped.
 
 ### Insight summary for sales orders
 
-For sales orders which are not cancelled, delivered, or invoiced, two additional insights across lines are provided: Number of *Nearly overdue or overdue lines* and number of *Lines without confirmed ship dates*. These two insights are complemented with two filter options, by which it is possible to with one click to filter to the SO lines for each of the insights. Note that only if a subset of all lines in the sales order qualify for a filter option, then the filter option is provided to easily filter to those lines and take action.
+For sales orders that aren't canceled, delivered, or invoiced, the **Insights** section of the **Summary by Copilot** FastTab for sales orders provides two additional insights that apply across all order lines.
 
-- *Overdue or Nearly overdue lines* – Number of lines awaiting to be shipped (packing slip posted) where current date is equal to or before the expected ship date (requested or confirmed) are reported.
-- *Lines without confirmed ship dates* – Number of lines without confirmed ship dates not fully shipped (packing slip posted).
+- **Overdue or nearly overdue lines** – The number of order lines waiting to be shipped (packing slip posted) where the current date is equal to or before the expected ship date (requested or confirmed).
+- **Lines without confirmed ship dates** – The number of order lines without confirmed ship dates that aren't fully shipped (packing slip posted).
+
+When appropriate, the **Insights** section provides buttons that let you filter the order lines according to their status. Use the filters to quickly find relevant order lines so you can take appropriate action. Each filter is only shown when at least one order line of the indicated status exists. The following filter buttons might be shown:
+
+- **Overdue or nearly overdue lines** – Only show order lines that are overdue or nearly overdue.
+- **Lines without confirmed ship dates** – Only show order lines without confirmed ship dates that aren't fully shipped (packing slip posted).
 
 ## See also
 
