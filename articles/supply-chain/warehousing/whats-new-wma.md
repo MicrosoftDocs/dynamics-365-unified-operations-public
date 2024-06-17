@@ -22,8 +22,6 @@ This article lists new features, fixes, improvements, and known issues for each 
 
 ## Version 2.3.4.0
 
-### New fixes and improvements in version 2.3.4.0
-
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:
 
 - Increased stability.
