@@ -1,11 +1,12 @@
 ---
 title: Service environments
 description: Learn about service environments for Electronic invoicing and explains how to set them up, including an outline on service environment statuses.
-author: gionoder
-ms.author: johnmichalak
-ms.topic: article
-ms.date: 02/28/2022
+author: ilikond
+ms.author: ikondratenko
+ms.topic: conceptual
 ms.custom: 
+  - bap-template
+ms.date: 06/17/2024 
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global
