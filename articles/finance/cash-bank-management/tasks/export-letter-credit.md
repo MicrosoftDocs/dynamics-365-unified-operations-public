@@ -1,10 +1,10 @@
 --- 
 title: Export letter of credit
-description: Learn about the process of creating an export letter of credit, which is an agreement that is issued by a bank, including a step-by-step process. 
-author: kweekley
-ms.author: kweekley
+description: Learn about creating an export letter of credit, which is an agreement that is issued by a bank, including a step-by-step process. 
+author: mibeinar
+ms.author: mibeinar
 ms.topic: how-to
-ms.date: 06/06/2024
+ms.date: 06/16/2024
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User  
@@ -18,22 +18,22 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-The steps below define a process of exporting a letter of credit. Proceses to [Set up bank facilities and posting profiles for letter of credit](set-up-bank-facilities-posting-profiles-letter-credit.md) to configure and create bank facilities and posting profiles should be run prior to following below steps.
+This article describes exporting a letter of credit. For more information, see [Set up bank facilities and posting profiles for letter of credit](set-up-bank-facilities-posting-profiles-letter-credit.md) to configure and create bank facilities and posting profiles. 
 
-## Create Sales Order for Export letter of credit
+## Create sales order for export letter of credit
 1. Go to **Accounts receivable > Orders > All sales orders**.
 2. Click **New**.
 3. In the **Customer account** field, select a desired record.
 4. Expand the **General** section and fill **Site** and **Warehouse** fields.
-    * Select the **Site** and **Warehouse**  where the item to be issued is stocked.
+ -  Select the **Site** and **Warehouse** where the item to be issued is stocked.
 5. In the **Bank document type** field, select **Letter of credit**.
 6. Expand the **Delivery** section and select **Delivery date control** = **None**.
 7. Enter **Requested receipt date** and click **OK**.
-8. On the Sales Order lines, select an **Item number** which will be Issued/Sold.
-9. If not defaulting from price trade agreement, enter a **Unit price**.
+8. On the Sales order lines, select an **Item number** which will be issued or sold.
+9. Enter a **Unit price**, if it doesn't default from the price trade agreement.
 10. Expand **Line details** section and select the **Delivery** tab.
 11. Enter **Requested ship date** and **Confirmed ship date**.
-12. On the Action Pane, click **Manage**
+12. On the Action pane, click **Manage**
 13. Click **Letter of credit**.
 14. Enter **Bank document number** and the **Expiration date**.
 15. Expand **Bank details** section.
@@ -43,7 +43,7 @@ The steps below define a process of exporting a letter of credit. Proceses to [S
 19. Click **Issue bank document**.
 
 ## Post Packing slip
-1. On the Action Pane on the Sales Order  form, click **Pick and pack**.
+1. On the **Sales order** page, click **Pick and pack**.
 2. Click **Post packing slip**.
 3. Expand the **Parameters** section and in the **Quantity** field, select **All**.
 4. Enter a **Packing slip date** field.
@@ -56,10 +56,11 @@ The steps below define a process of exporting a letter of credit. Proceses to [S
 4. In the **Setup** section, fill in the **Invoice date** and click **OK**.
 
 ## Shipment document submitted status
-1. On the Sales Order Action Pane, click **Manage**.
+1. On the **Sales order**, click **Manage**.
 2. Click **Letter of credit**.
 3. Expand the **Lines** section.
-    * Note: The **Document submitted** field should be set to **Yes**.  
+>[!NOTE]
+> The **Document submitted** field should be set to **Yes**.  
 
 ## Verify Export letter of credit
 1. Go to **Cash and bank management > Letters of credit > Export letter of credit and import collection**.
@@ -72,7 +73,7 @@ The steps below define a process of exporting a letter of credit. Proceses to [S
 4. Enter a **Date**.
 5. In the **Account** field, select customer account number. Click **Save**.
 6. Click **Settle transactions** and select an invoice to pay. Check **Bank document number** and **Shipment number**.
-7. Select the **Mark** check box next to the invoice to pay. Click **OK**.
+7. Select the **Mark** checkbox next to the invoice to pay. Click **OK**.
 8. Click the **Payment** tab on the customer journal and verify the **Bank document number** and **Shipment number** details are filled.
 9. Click **Post**.
 
