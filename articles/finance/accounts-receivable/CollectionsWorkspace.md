@@ -17,8 +17,6 @@ ms.dyn365.ops.version: 10.0.34
 
 # Collections coordinator workspace
 
-> [!NOTE]
-> Some or all of the functionality that's mentioned in this article is available as part of a preview release. The content and the functionality are subject to change.
 
 Collections coordinators (collections agents) have the daily task of contacting customers who have overdue balances. Before they contact a customer, they must know the customer's aged balances, the last payment that was received, outstanding invoice amounts, and many other data points. In the past, collections coordinators (collections agents) had to navigate multiple pages and lookups to find all this information. However, the **Collections coordinator** workspace helps save them time by showing much of this information on one page.
 
