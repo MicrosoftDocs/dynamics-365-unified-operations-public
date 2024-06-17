@@ -17,8 +17,6 @@ ms.search.form:
 
 # Collections coordinator summary
 
-> [!NOTE]
-> Some or all of the functionality that's mentioned in this article is available as part of a preview release. The content and the functionality are subject to change.
 
 This article explains how to enable the optional **Summary by Copilot** field in the **Collections coordinator** workspace. For more information about how to use this workspace, see the [Collections coordinator workspace](collectionsworkspace.md).
 
