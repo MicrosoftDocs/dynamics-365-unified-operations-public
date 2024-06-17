@@ -5,7 +5,7 @@ author: kweekley
 ms.author: kweekley
 ms.topic: article
 ms.date: 05/09/2018
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28

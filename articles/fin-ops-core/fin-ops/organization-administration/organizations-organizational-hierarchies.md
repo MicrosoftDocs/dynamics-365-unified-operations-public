@@ -5,7 +5,7 @@ author: sericks007
 ms.author: sericks
 ms.topic: overview
 ms.date: 01/03/2022
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Application User
 ms.search.region: Global

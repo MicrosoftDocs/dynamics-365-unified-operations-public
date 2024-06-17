@@ -1,29 +1,16 @@
 ---
-# required metadata
-
 title: Workflow history summary
 description: This topic describes the copilot capabilities on the Workflow history page.
 author: JodiChristiansen
 ms.date: 06/03/2024
 ms.topic: article
+ms.custom: 
+  - bap-template
 ms.collection: bap-ai-copilot
-
-# optional metadata
-
-ms.search.form:  
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.custom: 539093
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-
 
 ---
 # Workflow history summary

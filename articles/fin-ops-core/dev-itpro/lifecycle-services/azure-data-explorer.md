@@ -5,7 +5,7 @@ author: andreashofmann1
 ms.author: andreash
 ms.topic: article
 ms.date: 09/13/2021
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-08-20

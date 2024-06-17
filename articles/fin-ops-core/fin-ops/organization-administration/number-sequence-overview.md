@@ -5,7 +5,7 @@ author: SunilGarg
 ms.author: sunilg
 ms.topic: overview
 ms.date: 05/03/2023
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Application User
 ms.search.region: Global

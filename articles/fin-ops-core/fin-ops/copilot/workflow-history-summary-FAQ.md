@@ -3,8 +3,9 @@ title: Workflow history summary - Transparency FAQ
 description: This article answers some frequently asked questions about the Workflow history summary feature in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: JodiChristiansen
 ms.author: jchrist
-ms.topic: article
-ms.custom: faq
+ms.topic: faq
+ms.custom: 
+  - bap-template
 ms.date: 6/15/2023
 ms.reviewer: twheeloc
 ms.collection: bap-ai-copilot
