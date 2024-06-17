@@ -3,8 +3,10 @@ title: Support for multiple VAT registration numbers in reporting for Denmark
 description: Learn how to support multiple value-added tax registration numbers in reporting for Denmark, including a table that outlines releases for various report names.
 author: liza-golub
 ms.author: egolub
-ms.topic: article
-ms.date: 7/13/2023
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Denmark
