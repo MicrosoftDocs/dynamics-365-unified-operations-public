@@ -4,7 +4,7 @@ description: Learn about creating a bank facility agreement for a letter of cred
 author: music727
 ms.author: mibeinar
 ms.topic: how-to
-ms.date: 06/06/2024
+ms.date: 06/16/2024
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
