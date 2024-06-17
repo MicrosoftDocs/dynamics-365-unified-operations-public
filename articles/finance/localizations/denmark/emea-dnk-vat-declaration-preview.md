@@ -3,8 +3,10 @@ title: Preview a VAT declaration in Excel format
 description: Learn how to set up and generate an advance value-added tax (VAT) declaration for Denmark in Microsoft Excel format, including prerequisites.
 author: liza-golub
 ms.author: egolub
-ms.topic: article
-ms.date: 09/01/2022
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global
