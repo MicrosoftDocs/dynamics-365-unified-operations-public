@@ -1,7 +1,7 @@
 --- 
 title: Export letter of credit
 description: Learn about creating an export letter of credit, which is an agreement that is issued by a bank, including a step-by-step process. 
-author: mibeinar
+author: music727
 ms.author: mibeinar
 ms.topic: how-to
 ms.date: 06/16/2024
