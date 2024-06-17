@@ -3,8 +3,10 @@ title: VAT declaration (Switzerland)
 description: Learn about how to set up and generate a value-added tax declaration for Switzerland, including an outline and process on configuring system parameters.
 author: liza-golub
 ms.author: egolub
-ms.topic: article
-ms.date: 09/15/2021
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Switzerland

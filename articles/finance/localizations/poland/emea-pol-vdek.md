@@ -3,8 +3,10 @@ title: VAT declaration with registers (JPK-V7, VDEK)
 description: Learn about the VAT declaration with registers (also known as a JPK-V7, VDEK) in Poland, including definitions on JPK-V7 formats.
 author: liza-golub
 ms.author: egolub
-ms.topic: article
-ms.date: 07/19/2021
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Poland

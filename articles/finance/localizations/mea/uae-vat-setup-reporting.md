@@ -3,8 +3,10 @@ title: Set up and report value-added tax (VAT)
 description: Learn how to set up and report value-added tax (VAT), including outlines on configuring legal entities for VAT and configuring the tax authority.
 author: liza-golub
 ms.author: kfend
-ms.topic: article
-ms.date: 06/07/2023
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: UAE
