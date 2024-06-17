@@ -5,7 +5,6 @@ author: josaw1
 ms.author: josaw
 ms.topic: article
 ms.date: 06/14/2023
-ms.topic: article
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Developer
