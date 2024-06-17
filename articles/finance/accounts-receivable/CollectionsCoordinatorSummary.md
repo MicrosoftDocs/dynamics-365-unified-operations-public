@@ -27,7 +27,7 @@ This article explains how to enable the optional **Summary by Copilot** field in
 The **Collections coordinator workspace** and **Collections coordinator summary** features are on by default in Microsoft Dynamics 365 Finance version 10.0.38. 
 
 > [!NOTE]
-> In Dynamics 365 Finance version 10.0.40 and later, and in the proactive quality updates (PQUs) for versions 10.0.39 and 10.0.38, the **Collections coordinator workspace** and **Collections coordinator summary** features are turned on by default in Feature management. If they aren't set to **On by default**, you must enable them in Feature management.
+> In Dynamics 365 Finance version 10.0.40 and later, and in the proactive quality updates (PQUs) for versions 10.0.39, the **Collections coordinator workspace** and **Collections coordinator summary** features are turned on by default in Feature management. If they aren't set to **On by default**, you must enable them in Feature management.
 
 The **Collections coordinator** workspace can be used either with or without its AI-powered copilot functionality. To use the copilot functionality in the workspace, you must install the **Copilot in Microsoft Dynamics 365 Finance** app in your Dataverse environment. For more information, see [Enable Copilot in Microsoft Dynamics 365 Finance](Enable-copilot-in-finance.md).
 
