@@ -35,7 +35,7 @@ Here's an overview of the steps in this tutorial:
 
 ### Prerequisites
 
-For this tutorial, you must first enable Copilot in finance and operations apps in your environment. For instructions, see [Enable basic Copilot capabilities in finance and operations apps](enable-copilot.md).
+For this tutorial, you must first enable Copilot in finance and operations apps in your environment. For instructions, see [Copilot prerequisites](enable-copilot.md).
 
 ## Step 1: Create a new topic
 
