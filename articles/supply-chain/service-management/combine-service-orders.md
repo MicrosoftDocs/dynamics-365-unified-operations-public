@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Combine service orders  
 description: You can combine service orders.
 author: ChristianRytt

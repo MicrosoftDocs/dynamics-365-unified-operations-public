@@ -1,15 +1,15 @@
 ---
 title: Install, set up, and update the Customer portal
-description: This article provides licensing details and setup instructions for the Customer portal.
+description: Learn about licensing details and setup instructions for the Customer portal, including outlines on licensing requirements and dependencies.
 author: Henrikan
 ms.author: henrikan
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 06/07/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form:
 ---
 
 # Install, set up, and update the Customer portal

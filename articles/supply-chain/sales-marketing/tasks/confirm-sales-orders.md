@@ -1,16 +1,17 @@
 ---
 title: Confirm sales orders
-description: This procedure demonstrates how to confirm sales orders. 
+description: Learn how to confirm sales orders, including outlines and step-by-step processes for confirming singles sales orders and multiple sales orders at once.
 author: Henrikan
 ms.author: henrikan
-ms.reviewer: kamaybac
-ms.search.form: SalesTableListPage, SalesTable, SalesEditLines,  SrsReportViewerForm, CustConfirmJournal, SysQueryForm, SysQueryFieldLookUp, SysLookup, SalesParmIdLookup, SalesUnconfirmedOrdersPart   
 ms.topic: how-to
 ms.date: 02/06/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: SalesTableListPage, SalesTable, SalesEditLines,  SrsReportViewerForm, CustConfirmJournal, SysQueryForm, SysQueryFieldLookUp, SysLookup, SalesParmIdLookup, SalesUnconfirmedOrdersPart
 ---
+
 # Confirm sales orders
 
 [!include [banner](../../includes/banner.md)]

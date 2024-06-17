@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Delivery alternatives
-description: Sales order takers can use the Delivery alternatives page to discover alternative order fulfillment options.
+description: Learn how sales order takers can use the Delivery alternatives page to discover alternative order fulfillment options, including a step-by-step process.
 author: Henrikan
-ms.date: 04/10/2017
+ms.author: henrikan
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: SalesLineDeliveryDetails
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 04/10/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 527f6084-44fe-41bb-924f-4386e926358a
+audience: Application User
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: henrikan
 ms.dyn365.ops.version: Version 1611
+ms.search.form: SalesLineDeliveryDetails
 ms.search.validFrom: 2016-11-30
-
+ms.assetid: 527f6084-44fe-41bb-924f-4386e926358a
 ---
 
 # Delivery alternatives
