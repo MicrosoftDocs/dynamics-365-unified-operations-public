@@ -1,8 +1,8 @@
 --- 
 title: Create a bank facility agreement for a letter of credit
-description: Learn about the process of creating a bank facility agreement for a letter of credit, including a detailed step-by-step process, which uses the demo company "USMF".
-author: twheeloc
-ms.author: twheeloc
+description: Learn about creating a bank facility agreement for a letter of credit, including a detailed step-by-step process, which uses the demo company "USMF".
+author: music727
+ms.author: mibeinar
 ms.topic: how-to
 ms.date: 06/06/2024
 ms.custom:
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This articles defines the steps for creating a Bank facility agreement to process a Letter of credit. Please follow process to [Set up bank facilities and posting profiles](set-up-bank-facilities-posting-profiles-letter-credit.md) before running below steps. 
+This article describes the steps for creating a Bank facility agreement to process a Letter of credit. For more information, see [Set up bank facilities and posting profiles](set-up-bank-facilities-posting-profiles-letter-credit.md) before running the steps below. 
 
 
 ## Create Bank facility agreement
@@ -28,9 +28,9 @@ This articles defines the steps for creating a Bank facility agreement to proces
 4. In the **Bank account** field, enter the account number at the issuing bank.
 5. In the **Start date** field, enter a start date and time of the agreement.
 7. In the **End date** field, enter a date and time of the agreement.
-8. Expand or collapse the *General* section.
+8. Expand or collapse the **General** section.
 9. Click **Add line**.
-10. In the **Facility type** field, click the drop-down button to open the lookup and select a desired record.
+10. In the **Facility type** field, click the drop-down button to open the lookup and select a record.
 11. In the **Limit** field, enter the facility amount that was negotiated with the bank.
 12. Click **Save**.
 13. To extend the agreement, select **Extend** and open the drop dialog.
