@@ -18,7 +18,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-The steps below discribes the process of importing a letter of credit. Bank facilitieis, posting profiles, a bank facility agreement and vendor bank details have to be configured before starting this process. For more details, see [Set up bank facilities and posting profiles for letter of credit](set-up-bank-facilities-posting-profiles-letter-credit.md) and [Create a vendor bank account](../supply-chain/procurement/tasks/create-vendor-bank-account.md).
+The steps below discribes the process of importing a letter of credit. Bank facilitieis, posting profiles, a bank facility agreement and vendor bank details have to be configured before starting this process. For more details, see [Set up bank facilities and posting profiles for letter of credit](set-up-bank-facilities-posting-profiles-letter-credit.md) and [Create a vendor bank account](../../../supply-chain/procurement/tasks/create-vendor-bank-account.md).
 
 ## Create a Purchase order with a Letter of credit
 1. To create a Purchase order with a letter of credit, go to **Accounts payable > Purchase orders > All purchase orders**.
