@@ -1,7 +1,7 @@
 ---
 title: Latin America overview
 description: Access an overview of functionality specific to Latin American, including an outline on country/region localization availability.
-author: kfend
+author: EvgenyPopovMBS
 ms.author: evgenypopov 
 ms.topic: overview
 ms.date: 06/17/2024
