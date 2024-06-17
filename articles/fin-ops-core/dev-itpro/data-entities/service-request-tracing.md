@@ -5,7 +5,7 @@ author: jaredha
 ms.author: jaredha
 ms.topic: article
 ms.date: 04/07/2022
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: IT Pro, Developer
 ms.search.region: Global
 ms.search.validFrom: 2022-04-07

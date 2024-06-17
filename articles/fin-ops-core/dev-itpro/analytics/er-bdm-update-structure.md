@@ -6,7 +6,7 @@ ms.author: filatovm
 ms.topic: article
 ms.date: 11/19/2020
 ms.custom:
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.form: ERBDWorkspace, ERBDParameters, ERBDTemplateEditor
 ms.search.region: Global

@@ -6,7 +6,7 @@ ms.author: mfp
 ms.topic: article
 ms.date: 03/27/2019
 ms.custom:
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2019-03-27
