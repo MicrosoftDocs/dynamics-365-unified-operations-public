@@ -1,16 +1,16 @@
 ---
 title: Purchase requisition overview
-description: This article describes the purchase requisition workflow and the different statuses that a purchase requisition can have.
+description: Learn aboutthe purchase requisition workflow and the different statuses that a purchase requisition can have with an outline on creating purchase requisitions.
 author: Henrikan
 ms.author: henrikan
-ms.reviewer: kamaybac
-ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage, PurchReqConsolidationPartByVendor, PurchReqConsolidationLineDetail, PurchReqConsolidationCreate, PurchReqConsolidationBulkEdit, PurchReqConsolidationAddLine
 ms.topic: how-to
 ms.date: 05/02/2024
-audience: Application User
 ms.custom: 
   - bap-template
   - evergreen
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage, PurchReqConsolidationPartByVendor, PurchReqConsolidationLineDetail, PurchReqConsolidationCreate, PurchReqConsolidationBulkEdit, PurchReqConsolidationAddLine
 ---
 
 # Purchase requisition overview

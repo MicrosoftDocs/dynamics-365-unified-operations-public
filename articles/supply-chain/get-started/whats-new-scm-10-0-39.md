@@ -1,17 +1,17 @@
 ---
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.39 (April 2024)
-description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.39. 
+description: Learn about features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.39 with a table outlining feature areas. 
 author: kamaybac
 ms.author: kamaybac
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: conceptual
 ms.date: 04/19/2024
-audience: Application User
-ms.search.region: Global
 ms.custom:
   - bap-template
   - evergreen
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
+ms.search.form:
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.39 (April 2024)
@@ -33,7 +33,7 @@ The following table lists the features that are included in this release. We mig
 | Copilot and AI innovation | [Enable efficient, accurate demand planning with Copilot](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/enable-more-efficient-accurate-demand-planning-using-copilot) | [Analyze demand plans with Copilot (preview)](../demand-planning/demand-planning-copilot.md) | Enabled by default |
 | Inventory and logistics | [Enable prospects in prospect-to-cash with dual-write](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/enable-prospects-prospect-to-cash-dual-write) | [Work with prospects in prospect-to-cash with Dynamics 365 Sales](../../fin-ops-core/fin-ops/data-entities/prospects-in-prospect-to-cash-use.md) | Feature management:<br>*Enable prospects in Sales quotation lifecycle with Dynamics 365 Sales* |
 | Inventory and logistics | [Offset Inventory Visibility adjustments](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/offset-inventory-visibility-adjustments) | [Inventory Visibility adjustment offset](../inventory/inventory-visibility-adjustment-offset.md) | Enabled by default |
-| Planning | Item substitution for formulas in Planning Optimization | [Item substitution for formulas](../master-planning/item-substitution.md) | Feature management:<br>*Item substitution (Plan group) support for Planning Optimization* |
+| Planning | Item substitution for formulas in Planning Optimization | [Item substitution for formulas and bills of materials](../master-planning/item-substitution.md) | Feature management:<br>*Item substitution (Plan group) support for Planning Optimization* |
 | Warehouse management | [Optimize the customer returns process](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/optimize-customer-returns-process) | [Receive unannounced sales returns](../warehousing/sales-returns-unannounced.md) | Enabled by default |
 | Warehouse management | Username/password and single-sign-on authentication for mobile devices | [User-based authentication](../warehousing/warehouse-app-authenticate-user-based.md) | Enabled by default |
 

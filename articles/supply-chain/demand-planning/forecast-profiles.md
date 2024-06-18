@@ -1,17 +1,17 @@
 ---
 title: Work with forecast profiles
-description: This article describes how to work with forecast profiles. Forecast profiles prepare the data of an existing time series and then run forecasting algorithms to create a new time series that predicts demand over a coming period.
+description: Learn how to work with forecast profiles, which prepare the data of an existing time series and then run forecasting algorithms to create a new time series.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 10/19/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
 ms.collection:
   - bap-ai-copilot
+ms.search.form:
+audience: Application User
+ms.search.region: Global
 ---
 
 # Work with forecast profiles

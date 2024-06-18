@@ -1,15 +1,15 @@
 ---
 title: Configure Inventory Visibility data sources
-description: This article describes how to configure Inventory Visibility data sources.
-author: yufeihuang
+description: Learn how to configure Inventory Visibility data sources with an outline on differences between Inventory Visibility UI version 1 and UI version 2.
+author: yufei-huang
 ms.author: yufeihuang
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 11/30/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # Configure Inventory Visibility data sources

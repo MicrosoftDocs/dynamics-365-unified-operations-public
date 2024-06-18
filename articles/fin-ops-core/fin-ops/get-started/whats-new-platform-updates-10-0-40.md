@@ -3,7 +3,7 @@ title: Platform updates for version 10.0.40 of finance and operations apps (June
 description: This article lists the features that are included in the platform updates for version 10.0.40 of finance and operations apps.
 author: johnmichalak
 ms.author: johnmichalak
-ms.date: 04/26/2024
+ms.date: 06/12/2024
 ms.topic: conceptual
 ms.custom: 
   - bap-template
@@ -14,7 +14,6 @@ ms.search.region: Global
 # Platform updates for version 10.0.40 of finance and operations apps (June 2024)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article lists the features that are included in the platform updates for version 10.0.40 of finance and operations apps. This version has a build number of 7.0.7279.17 and is available on the following schedule:
 
@@ -30,6 +29,7 @@ This section contains a table that lists the features that are included in this 
 |---|---|---|---|
 | Copilot in finance and operations apps | Extend Copilot with client plugins | Developers can extend Copilot in finance and operations apps by creating client actions that are based on application logic and invoked in natural language from the Copilot chat panel. For more information, see [Create client plugins for Copilot in finance and operations apps](../../dev-itpro/copilot/copilot-client-plugins.md). | Default |
 | Copilot in finance and operations apps | Extend Copilot with record context | The context of the record that the user is currently viewing in the application is available in Copilot and can be used to create contextual plugins. For more information, see [Use application context with Copilot](../../dev-itpro/copilot/copilot-application-context.md). | Default |
+| System administration | Archive with Dataverse long term retention | This feature lets you archive data for select high volume areas of the product. The data is archived using a micro-service and a connection to Dataverse. You must first install the service from the Power platform admin center (PPAC).  For more information, see [Archive with Dataverse long term retention](../../dev-itpro/sysadmin/archive-data.md). | Feature Management |
 
 ## Feature enhancements included in this release
 

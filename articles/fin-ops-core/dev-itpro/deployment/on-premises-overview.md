@@ -11,6 +11,7 @@ audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
+ms.service: dynamics-365-op
 ---
 # On-premises deployment overview
 

@@ -1,5 +1,5 @@
 ---
-title: Responsible AI FAQ for Suggested questions within Copilot (preview)
+title: Responsible AI FAQ for Suggested questions within Copilot
 description: This FAQ provides answers to frequently asked questions about the AI technology that's used to generate suggested questions within Copilot. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 04/27/2024
 ms.collection:
@@ -12,10 +12,9 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ---
 
-# Responsible AI FAQ for Suggested questions within Copilot (preview)
+# Responsible AI FAQ for Suggested questions within Copilot
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 This FAQ provides answers to frequently asked questions about the *Suggested questions within Copilot* AI feature. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.

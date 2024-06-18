@@ -3,9 +3,10 @@ title: Support for multiple VAT registration numbers in the VAT return of Poland
 description: Learn how to support multiple value-added tax (VAT) registration numbers in a VAT return of Poland, including an outline on setting up JPK-V7 features.
 author: liza-golub
 ms.author: egolub
-ms.topic: article
-ms.date: 06/20/2022
+ms.topic: how-to
 ms.custom: 
+  - bap-template
+ms.date: 06/17/2024 
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Poland

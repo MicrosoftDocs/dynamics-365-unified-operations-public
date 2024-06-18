@@ -1,15 +1,15 @@
 ---
 title: Power BI reports for risks analysis and performance ranking
-description: This article describes the Microsoft Power BI reports that help you discover risks in your planned supply and analyze past performance of vendors and products.
+description: Learn about the Microsoft Power BI reports that help you discover risks in your planned supply and analyze past performance of vendors and products.
 author: cabeln
 ms.author: cabeln
-ms.reviewer: kamaybac
-ms.search.form: 
 ms.topic: how-to 
-ms.date: 05/22/2024 
+ms.date: 05/22/2024
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: 
 ---
 
 # Power BI reports for risks analysis and performance ranking

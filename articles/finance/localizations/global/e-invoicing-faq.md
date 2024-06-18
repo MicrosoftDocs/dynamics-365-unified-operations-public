@@ -1,10 +1,12 @@
 ---
 title: Electronic invoicing FAQ
 description: Access answers to frequently asked questions regarding Electronic invoicing, including questions about the importance of electronic invoicing.
-author: gionoder
-ms.author: johnmichalak
-ms.topic: article
-ms.date: 04/21/2021
+author: ilikond
+ms.author: ikondratenko
+ms.topic: faq
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global

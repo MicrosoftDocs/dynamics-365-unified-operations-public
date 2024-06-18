@@ -5,7 +5,7 @@ author: jinniew
 ms.author: aolson
 ms.topic: article
 ms.date: 03/23/2023
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-05-31

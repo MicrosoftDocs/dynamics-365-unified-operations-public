@@ -1,15 +1,15 @@
 ---
 title: Enable Power BI for Global Inventory Accounting
-description: This article describes how to enable Microsoft Power BI for Global Inventory Accounting.
+description: Learn how to enable Microsoft Power BI for Global Inventory Accounting, including prerequisites and an outline and step-by-step process on setup.
 author: JennySong-SH
 ms.author: yanansong
-ms.reviewer: kamaybac
-ms.search.form: PowerBIConfiguration
 ms.topic: how-to
 ms.date: 02/03/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: PowerBIConfiguration
 ---
 
 # Enable Power BI for Global Inventory Accounting

@@ -1,15 +1,16 @@
 ---
 title: Advanced filtering and query syntax
-description: Learn about the filtering and query options for the Advanced filter/sort dialog and the matches operator in the Filter pane or grid column header filters.  
+description: Learn about the filtering and query options for the Advanced filter/sort dialog and the matched operator in the filter pane or grid column header filters.  
 author: jasongre
 ms.author: jasongre
 ms.topic: article
-ms.date: 03/09/2020
+ms.date: 06/09/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.search.form: SysQueryForm
+ms.custom: evergreen
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: b4969b30-2fe1-4a3c-bbea-725dc37c8b60
 ---
@@ -18,10 +19,7 @@ ms.assetid: b4969b30-2fe1-4a3c-bbea-725dc37c8b60
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
-This article describes the filtering and query options that are available when you use the Advanced filter/sort dialog or the **matches** operator in the Filter pane or grid column header filters.
+This article describes the filtering and query options that are available when you use the Advanced filter/sort dialog or the **matches** operator in the filter pane or grid column header filters.
 
 ## Advanced query syntax
 
@@ -178,7 +176,7 @@ See the table in the next section for additional details about <strong>SysQueryR
 </td>
 </tr>
 <tr>
-<td>GreaterThanDate (_relativeDays=0) GreaterThanUtcDate (_relativeDays=0)</td>
+<td>GreaterThanDate (_relativeDays=0) GreaterThanUtcDate (_relativeDays=0)</td> 
 <td>Find all dates after the specified relative date.</td>
 <td>
 <ul>

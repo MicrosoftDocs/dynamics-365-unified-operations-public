@@ -1,17 +1,17 @@
 ---
 title: Time and attendance registration overview
-description: Time registration workers can enter different types of time registrations, for example, clock in, clock out, register indirect activities, and absence registration. This article describes registrations, their calculation, approval, and the use of workflow to add structure and automated approval to the process of approving timesheets. 
+description: Learn about registrations, their calculation, approval, and the use of workflow to add structure and automated approval to the process of approving timesheets.
 author: johanhoffmann
 ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form: HcmWorker, JmgCalcApprovePickDialog, JmgGroupApprove, JmgGroupCalc, JmgGroupSigningTable, JmgRegistration, JmgTimeCalcParmeters, WorkflowTableListPageRnr, JmgRegistrationSetup, JmgStampTrans, JmgStampJournalTrans
 ms.topic: overview
 ms.date: 05/22/2024
-audience: Application User
-ms.search.region: Global
 ms.custom:
   - bap-template
   - evergreen
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
+ms.search.form: HcmWorker, JmgCalcApprovePickDialog, JmgGroupApprove, JmgGroupCalc, JmgGroupSigningTable, JmgRegistration, JmgTimeCalcParmeters, WorkflowTableListPageRnr, JmgRegistrationSetup, JmgStampTrans, JmgStampJournalTrans
 ---
 
 # Time and attendance registration overview

@@ -12,6 +12,7 @@ ms.search.region: Global
 ms.search.validFrom: 2021-03-21
 ms.search.form:
 ms.dyn365.ops.version: 10.0.17
+ms.service: dynamics-365-op
 ---
 
 # Configure high availability for SQL Server Reporting Services (SSRS) nodes

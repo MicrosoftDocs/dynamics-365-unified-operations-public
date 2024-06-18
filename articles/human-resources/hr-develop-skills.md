@@ -25,10 +25,6 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Configure skills
 
-> [!IMPORTANT]
-> The functionality noted in this article is currently available for Human Resources customers on the Finance infrastructure.  
-
-
 You can track your worker's skills in Dynamics 365 Human Resources. You can also specify the skills that are required for a specific job.
 
 Examples of skills you can track include:

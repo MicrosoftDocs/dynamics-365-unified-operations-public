@@ -6,7 +6,7 @@ ms.author: abunduc
 ms.topic: conceptual
 ms.date: 06/02/2023
 ms.custom: bap-template
-ms.reviewer: johnmichala
+ms.reviewer: johnmichalak
 ---
 
 # Edit the properties of connected Dataverse environments

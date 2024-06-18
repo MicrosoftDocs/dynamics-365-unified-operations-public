@@ -10,6 +10,7 @@ audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2018-XX-XX
 ms.dyn365.ops.version: Platform update 19
+ms.service: dynamics-365-op
 ---
 
 # Performance SDK and multiuser testing in on-premises environments

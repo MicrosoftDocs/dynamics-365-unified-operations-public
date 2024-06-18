@@ -1,15 +1,15 @@
 ---
 title: Reserve inventory quantities
-description: This article describes the different options that are available for reserving inventory.
-author: yufeihuang
+description: Learn about the different options that are available for reserving inventory, including an outline on inventory reservation policies.
+author: yufei-huang
 ms.author: yufeihuang
-ms.reviewer: kamaybac
-ms.search.form: InventModelGroup
 ms.topic: how-to
 ms.date: 05/27/2024
-audience: Application User
 ms.custom:
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: InventModelGroup
 ---
 
 # Reserve inventory quantities

@@ -1,15 +1,15 @@
 ---
 title: Customer electronic invoices in Norway
 description: Learn how to set up and process customers electronic invoices in Norway, including prerequisites and an outline on importing electronic reporting configurations.
-author: mrolecki
-ms.author: mrolecki
-ms.topic: article
-ms.date: 11/03/2020
+author: ilikond
+ms.author: ikondratenko
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Norway
 ms.search.validFrom: 2019-11-01
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.08
 ---
 

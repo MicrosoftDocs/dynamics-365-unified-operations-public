@@ -1,15 +1,15 @@
 ---
 title: Create a dimension-based product master
-description: This procedure shows how to create a new product master with dimension-based configuration technology. 
+description: Learn how to create a new product master with dimension-based configuration technology, including a step-by-step process.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductMasterDraftFormPart
 ms.topic: how-to
 ms.date: 11/10/2022
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductMasterDraftFormPart
 ---
 
 # Create a dimension-based product master

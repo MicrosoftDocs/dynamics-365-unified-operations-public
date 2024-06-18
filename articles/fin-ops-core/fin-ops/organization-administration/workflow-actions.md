@@ -18,9 +18,6 @@ ms.assetid: 65fb711c-6474-42d1-81ed-ca657c29bf1f
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 This article explains the actions that each participant in a workflow approval process can take.
 
 A workflow can involve several groups of people: the originator, task assignees, decision makers, and approvers. For example, in the following expense report workflow, Sam is the originator, the members of the queue are task assignees, John is a decision maker, and Frank, Sue, and Ann are approvers.

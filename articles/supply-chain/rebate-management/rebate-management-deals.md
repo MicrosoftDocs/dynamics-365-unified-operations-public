@@ -1,15 +1,15 @@
 ---
 title: Rebate management deals
-description: This article describes how to create Rebate management deals. Deals are used to control different methods and bases for calculating rebates and royalties. They include rules for inclusions and exclusions.
+description: Learn how to create Rebate management deals. Deals are used to control different methods and bases for calculating rebates and royalties.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: TAMRebateDeal
 ms.topic: how-to
 ms.date: 05/15/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: TAMRebateDeal
 ---
 
 # Rebate management deals

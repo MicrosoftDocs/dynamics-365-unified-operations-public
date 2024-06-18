@@ -67,3 +67,7 @@ The **All purchase orders** details page includes a **Summary by Copilot** FastT
 ## Sales order summary
 
 The **Sales order details** page includes a **Summary by Copilot** FastTab that shows an overview of the selected sales order's status. For example, it shows the number of partially or fully confirmed, received, and invoiced lines. The FastTab also shows other selected insights, such as a summary of lines that are overdue or nearly overdue.
+
+## See also
+
+- [Responsible AI FAQ for AI summaries with Copilot](../faq-summaries.md)

@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Inventory tag counting
-description: This article provides information about tag counting, which you use to compare the actual contents of a warehouse with the on-hand inventory.
-author: yufeihuang
-ms.date: 06/10/2019
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: InventJournalCount, InventJournalCountTag
-# ROBOTS:
-audience: Application User
-# ms.devlang:
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-ms.assetid: 03772d0e-5c37-454c-ab85-82bc8b60a76d
-ms.search.region: Global
-# ms.search.industry:
+description: Learn about tag counting, which you use to compare the actual contents of a warehouse with the on-hand inventory, including additional resources.
+author: yufei-huang
 ms.author: yufeihuang
+ms.topic: article
+ms.date: 06/10/2019
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: InventJournalCount, InventJournalCountTag
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 03772d0e-5c37-454c-ab85-82bc8b60a76d
 ---
 
 # Inventory tag counting

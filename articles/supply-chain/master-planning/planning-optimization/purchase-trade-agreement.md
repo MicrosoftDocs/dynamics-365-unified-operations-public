@@ -1,29 +1,20 @@
 ---
-# required metadata
-
 title: Master planning with purchase trade agreements
-description: This article describes how master planning can find the vendor and/or lead time for a planned order, based on the best price or lead time that is found in purchase trade agreements.
+description: Learn how master planning can find the vendor and/or lead time for a planned order, based on the best price or lead time that is found in purchase trade agreements.
 author: t-benebo
-ms.date: 08/09/2022
+ms.author: benebotg
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: ReqCreatePlanWorkspace
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 08/09/2022
 ms.custom: 
-ms.assetid: 
+ms.reviewer: kamaybac
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: benebotg
 ms.search.validFrom: 2020-05-29
+ms.search.form: ReqCreatePlanWorkspace
 ms.dyn365.ops.version: AX 10.0.12
-
 ---
+
 # Master planning with purchase trade agreements
 
 [!include [banner](../../includes/banner.md)]
