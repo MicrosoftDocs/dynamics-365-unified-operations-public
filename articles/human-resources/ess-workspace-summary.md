@@ -4,7 +4,7 @@
 title: Employee self service leave summary
 description: This article provides an overview of the Employee self service leave summary feature.
 author: jcart
-ms.date: 06/11/2024
+ms.date: 06/18/2024
 ms.topic: overview
 ms.reviewer: twheeloc
 # optional metadata
@@ -25,7 +25,7 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Employee self service leave summary
-The **Employee self service leave summary** feature is enabled by default in Dynamics 365 Human Resources on Finance and Operations version 10.0.39. 
+The **Employee self service leave summary** feature is enabled by default in Dynamics 365 Human Resources version 10.0.39. 
 
 Use the **Employee self service leave summary** feature to get an AI-generated summary of employee time off. This feature is powered by Microsoft Azure OpenAI Service's large language model and is designed to reduce the time that you spend reviewing the different screens containing time off information and calculating time off that may be subject to forfeiture.
 This feature has two purposes:
@@ -46,7 +46,7 @@ To use this feature, the user must be assigned an employee role in Dynamics 365 
 
 ## Summary by Copilot
 
-The Summary by Copilot field appears in the My information tab of the employee self service workspace. The summary includes the current time off balances for leave types with a carry forward rule associated. It also includes the time off subject to forfeiture based on current time off balances and upcoming time off requests.  
+The **Summary by Copilot** field appears in the **My information** tab of the **Employee self service** workspace. The summary includes the current time off balances for leave types with a carry forward rule associated. It also includes the time off subject to forfeiture based on current time off balances and upcoming time off requests.  
 
 ##See also
-[Employee self service leave summary FAQ](<link needed>)
+[Employee self service leave summary FAQ](ess-transp-faq.md)
