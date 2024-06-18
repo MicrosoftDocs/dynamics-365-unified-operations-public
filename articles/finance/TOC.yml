@@ -692,6 +692,18 @@
         href: cash-bank-management/settlement-overview.md
       - name: Settlement overview for centralized payments
         href: cash-bank-management/settlement-overview-centralized-payments.md
+      - name: Letters of credit
+        items:
+        - name: Letters of credit and import collections
+          href: cash-bank-management/letters-of-credit-import-collections.md
+        - name: Set up bank facilities and posting profiles for letter of credit
+          href: cash-bank-management/tasks/set-up-bank-facilities-posting-profiles-letter-credit.md
+        - name: Create a bank facility agreement for a letter of credit
+          href: cash-bank-management/tasks/create-bank-facility-agreement-letter-credit.md
+        - name: Export letter of credit
+          href: cash-bank-management/tasks/export-letter-credit.md
+        - name: Import letter of credit
+          href: cash-bank-management/tasks/import-letter-credit.md
       - name: Letters of guarantee
         href: cash-bank-management/letters-of-guarantee.md
       - name: Letter of guarantee transaction
