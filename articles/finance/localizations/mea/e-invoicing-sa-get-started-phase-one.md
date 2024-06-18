@@ -1,11 +1,12 @@
 ---
 title: Get started with Electronic invoicing for Saudi Arabia - Phase one
 description: Learn about what will help you get started with phase one of Electronic invoicing for Saudi Arabia, including prerequisites.
-author: gionoder
-ms.author: johnmichalak
+author: ilikond
+ms.author: ikondratenko
 ms.topic: how-to
 ms.date: 11/28/2022
-ms.custom: bap-template
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak
 audience: Application User
 ---
