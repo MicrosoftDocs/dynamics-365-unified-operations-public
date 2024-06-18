@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Employee self service workspace summary
-description: This article provides an overview of the Employee self service workspace summary feature.
+title: Employee self service leave summary
+description: This article provides an overview of the Employee self service leave summary feature.
 author: jcart
 ms.date: 06/11/2024
 ms.topic: overview
@@ -24,44 +24,29 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Employee self service workspace summary
+# Employee self service leave summary
+The **Employee self service leave summary** feature is enabled by default in Dynamics 365 Human Resources on Finance and Operations version 10.0.39. 
 
-Use the **Employee self service workspace summary** feature to get an AI-generated summary of employee time off. This feature is powered by Microsoft Azure OpenAI Service's large language model. It's designed to reduce the time that you must spend viewing the workflow history to find the most important details. Therefore, you can quickly and efficiently approve documents.
-
+Use the **Employee self service leave summary** feature to get an AI-generated summary of employee time off. This feature is powered by Microsoft Azure OpenAI Service's large language model and is designed to reduce the time that you spend reviewing the different screens containing time off information and calculating time off that may be subject to forfeiture.
 This feature has two purposes:
 
 - Increase employees' awareness of their time-off situation, and help them make informed decisions about their time-off plans.
-- Optimize employees' time-off use, and prevent the accumulation of unused time off that can create financial liabilities for the organization.
+- Optimize employees' time-off use, and provide insight into the accumulation of unused time off that can create financial liabilities for the organization.
 
-## Prerequisites
+## Country/region and language requirements
+For information about the languages that this Copilot feature was validated for, see [Explore Copilot features by geography and languages](https://go.microsoft.com/fwlink/?linkid=2270154). Although the feature can be used in other languages, it might not work as intended. Language quality might vary, based on the user's interactions or system settings, and might therefore affect accuracy and the user experience.
 
 ### Version requirements
 
-Employee self service workspace summary requires the latest hotfix for Dynamics 365 Finance version 10.0.38.
-
-### Language requirements
-
-Employee self service workspace summary is supported in the following user-preferred languages: English, Danish, Dutch, French, German, Italian, Japanese, Portuguese (Brazil), Spanish, Chinese (Simplified), Czech, Finnish, Greek, Korean, Norwegian (Bokmal), Polish, Russian, Swedish, Thai, and Turkish.
-
-To use this feature, update your preferred language in Dynamics 365 Finance to one of the preceding languages.
+Employee self service leave summary requires the latest PQU on Dynamics 365 Finance and Operations versions 10.0.39 and 10.0.40. 
 
 ### Role requirements
 
-The user must be assigned an employee role.
+To use this feature, the user must be assigned an employee role in Dynamics 365 Human Resources or Dynamics 365 Finance.
 
-## Enable Employee self summary workflow summary
+## Summary by Copilot
 
-1. In Dynamics 365 Finance, go to **Feature management**.
-1. On the **All** tab, search for and select **ESS workspace summary**.
-1. Select **Learn more** to learn more about the AI terms.
-1. Select **Enable**.
+The Summary by Copilot field appears in the My information tab of the employee self service workspace. The summary includes the current time off balances for leave types with a carry forward rule associated. It also includes the time off subject to forfeiture based on current time off balances and upcoming time off requests.  
 
-## View summary text
-
-The AI-generated content appears on the **Summary** FastTab. Azure OpenAI is used to generate the results, based on data in Dynamics 365 Finance and the provided prompts. The summary is based on workflow history and includes the following information:
-
-- Submitter
-- Approval list
-- Workflow completion policy
-- Due dates
-- Comments
+##See also
+[Employee self service leave summary FAQ](<link needed>)
