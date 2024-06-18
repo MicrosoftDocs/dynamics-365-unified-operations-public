@@ -19,7 +19,7 @@ audience: Application User
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: ajitchandran
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
 
