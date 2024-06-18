@@ -17,7 +17,7 @@ audience: Application User
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: ajitchandran
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
 
