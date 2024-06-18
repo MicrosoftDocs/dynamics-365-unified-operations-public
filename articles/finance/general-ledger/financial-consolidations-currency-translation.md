@@ -4,8 +4,8 @@ description: Learn about financial consolidations and currency translation in Ge
 author: jinniew
 ms.author: jiwo
 ms.topic: overview
-ms.date: 10/07/2021
-ms.reviewer: kfend
+ms.date: 06/17/2024
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2018-5-31
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 8.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This article takes you through the approach that both Microsoft Dynamics 365 Finance and Financial reporting use for consolidations. It describes scenarios that involve multi-company reporting, aggregation, elimination, and minority interest. It also explains how to handle special situations, such as scenarios where legal entities have different fiscal periods or different charts of accounts.
+This article describes the approach that both Microsoft Dynamics 365 Finance and Financial reporting use for consolidations. It describes scenarios that involve multi-company reporting, aggregation, elimination, and minority interest. It also explains how to handle special situations, such as scenarios where legal entities have different fiscal periods or different charts of accounts.
 
 This article was written for users and functional consultants, and it assumes that readers have a general understanding of Finance and Financial reporting. Basic setup isn't covered.
 
