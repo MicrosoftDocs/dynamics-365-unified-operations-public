@@ -3,9 +3,10 @@ title: Electronic invoicing setup
 description: Learn about the process for setting up and configuring Electronic invoicing (RCS), including an outline on setting up Azure resources.
 author: ilikond
 ms.author: ikondratenko
-ms.topic: article
-ms.date: 02/28/2022
+ms.topic: conceptual
 ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global
