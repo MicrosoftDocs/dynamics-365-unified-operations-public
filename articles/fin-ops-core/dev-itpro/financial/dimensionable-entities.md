@@ -129,9 +129,11 @@ public void update()
    
 public void renamePrimaryKey()
 {
-    Common originalRecord = this.orig();
-    super();
-    DimensionValueRename::syncRenamedValue(this, originalRecord);
+     Common originalRecord = this.orig();
+     DimensionValueRenameV2 rename = DimensionValueRenameV2::construct(this, originalRecord);
+     rename.syncRenamedValuePreSuper();
+     super();
+     rename.syncRenamedValuePostSuper();
 }
 ```
 
