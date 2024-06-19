@@ -580,30 +580,32 @@ According to current security standards, the following settings should be used i
 The hardware station installer will automatically make these registry edits as part of the installation through self-service.
 
 -   Secure Sockets Layer (SSL) should be disabled.
--   Only Transport Layer Security (TLS) version 1.2 (or the current highest version) should be enabled and used. 
+-   Only Transport Layer Security (TLS) version 1.3 (or the current highest version) should be enabled and used. 
 
 ### SSL and TLS
-By default, SSL and all version of TLS except TLS 1.2 are disabled. To edit or enable these values, follow these steps:
+By default, SSL and all version of TLS except TLS 1.3 are disabled. To edit or enable these values, follow these steps:
     1.  Press the Windows logo key+R to open a **Run** window.
     2.  In the **Open** field, type **Regedit**, and then select **OK**.
     3.  If a **User Account Control** message box appears, select **Yes**.
-    4.  In the **Registry Editor** window, navigate to **HKEY\_LOCAL\_MACHINESystemCurrentControlSetSecurityProvidersSCHANNELProtocols**. The following keys have been automatically entered to allow for TLS 1.2 only:
-        -   TLS 1.2Server:Enabled=1
-        -   TLS 1.2Server:DisabledByDefault=0
-        -   TLS 1.2Client:Enabled=1
-        -   TLS 1.2Client:DisabledByDefault=0
-        -   TLS 1.1Server:Enabled=0
-        -   TLS 1.1Client:Enabled=0
-        -   TLS 1.0Server:Enabled=0
-        -   TLS 1.0Client:Enabled=0
-        -   SSL 3.0Server:Enabled=0
-        -   SSL 3.0Client:Enabled=0
-        -   SSL 2.0Server:Enabled=0
-        -   SSL 2.0Client:Enabled=0
+    4.  In the **Registry Editor** window, navigate to 
 -   No additional network ports should be open, unless they're required for known, specified reasons.
 -   Cross-origin resource sharing must be disabled and must specify the allowed origins that are accepted.
 -   Only trusted certificate authorities should be used to obtain certificates that will be used on computers that run the hardware station.
-
+**HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\SecurityProviders\\SCHANNEL\\Protocols**. The following keys have been automatically entered to allow for TLS 1.3 only:
+    >    
+    >    - TLS 1.2\\Server:Enabled=0
+    >    - TLS 1.3\\Server:Enabled=1
+    >    - TLS 1.2\\Client:Enabled=0
+    >    - TLS 1.3\\Client:Enabled=1
+    >    - TLS 1.1\\Server:Enabled=0
+    >    - TLS 1.1\\Client:Enabled=0
+    >    - TLS 1.0\\Server:Enabled=0
+    >    - TLS 1.0\\Client:Enabled=0
+    >    - SSL 3.0\\Server:Enabled=0
+    >    - SSL 3.0\\Client:Enabled=0
+    >    - SSL 2.0\\Server:Enabled=0
+    >    - SSL 2.0\\Client:Enabled=0
+     
 > [!NOTE]
 > It's very important that you review security guidelines for IIS and the Payment Card Industry (PCI) requirements.
 
