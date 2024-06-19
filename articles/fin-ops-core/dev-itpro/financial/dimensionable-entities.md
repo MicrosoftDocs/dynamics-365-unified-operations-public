@@ -4,7 +4,7 @@ description: Learn about the steps that you need to follow to make a backing tab
 author: RyanCCarlson2
 ms.author: rcarlson
 ms.topic: article
-ms.date: 10/04/2023
+ms.date: 06/19/2024
 ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
@@ -17,14 +17,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides the steps that you need to follow if you want to make a backing table usable as a Financial dimension.
+This article provides the steps to make a backing table usable as a Financial dimension.
 
 > [!IMPORTANT]
-> Do not create financial dimensions that have values that are not reusable or use one-to-one dimension value combinations. A physical table, and not a view must be used as a source of dimension values for a DimAttribute[BackingTable] view you will create in the following steps. Though using a view as the base data source may seem to work, financial reporting queries will fall back to row-by-row processing to get the dimension fact data imported to the database. This results in extremely slow performance or broken reports. 
+> Don't create financial dimensions that have values that are not reusable or use one-to-one dimension value combinations. A physical table, and not a view must be used as a source of dimension values for a DimAttribute[BackingTable] view you will create in the following steps. Though using a view as the base data source may seem to work, financial reporting queries will fall back to row-by-row processing to get the dimension fact data imported to the database. This results in extremely slow performance or broken reports. 
 >
 > The primary table that is to be used as a source of financial dimension data MUST have a unique natural key value of 30 characters or less, and that value MUST resolve to a single RECID within that table. The extended Name column can come from another source join (such as DirPartyTable or elsewhere) because it is used only for displaying additional context to the user and is not used to resolve uniqueness on natural key entry.
      
-Financial dimensions should be reusable values needed for transaction and analytical processes. These dimensions should represent sources of data that can provide high level of reuse across multiple transactions. Do not select a backing table that supplies identity data that represents high volatility when represented with other dimension values. This can increase storage and processing costs and negatively impact performance and analytical value.
+Financial dimensions should be reusable values needed for transaction and analytical processes. These dimensions should represent sources of data that can provide high level of reuse across multiple transactions. Don't select a backing table that supplies identity data that represents high volatility when represented with other dimension values. This can increase storage and processing costs and negatively impact performance and analytical value.
 
 Examples of highly volatile data include timestamps and identifiers that are frequently incremented, such as:
 
