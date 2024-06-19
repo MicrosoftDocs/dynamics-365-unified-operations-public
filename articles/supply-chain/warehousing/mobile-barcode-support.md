@@ -1,15 +1,15 @@
 ---
 title: Mobile bar code support
-description: This article describes how to handle the Warehouse mobile scanning app on Android-compatible devices.
+description: Learn how to handle the Warehouse mobile scanning app on Android-compatible devices with additional resources for how to solve compatibility issues.
 author: Mirzaab
 ms.author: mirzaab
-ms.reviewer: kamaybac
-ms.search.form: BarcodeSetup  
 ms.topic: conceptual
 ms.date: 05/30/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: BarcodeSetup  
 ---
 
 # Mobile bar code support
