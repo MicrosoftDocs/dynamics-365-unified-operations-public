@@ -126,9 +126,8 @@ The following options for barcode and quick-response (QR) code scanning are avai
 
 **Camera-based barcode scanning - native barcode scanning**: The Store Commerce app for Android and iOS can scan barcodes and QR codes with the rear-facing camera. This out-of-box solution supports all workflows where a barcode scanner can be used to capture product, customer, or receipt data. 
 
-To enable native scanning in Store Commerce app, go to Dynamics 365 Commerce headquarters, open the hardware profile for the register being used on the mobile device, and set the **Scanner** setting for the first scanner section to "Device". 
-
-**Camera-based barcode scanning - third party app**: Products such as Scandit Express and Samsung's Knox Capture can be used to scan barcodes on Store Commerce mobile apps. These products require a license to use, but they offer advantages and features that the out-of-box barcode scanning capabilities don't. 
+To enable native scanning in Store Commerce app, go to Dynamics 365 Commerce headquarters, open the hardware profile for the register being used on the mobile device, and set the **Scanner** setting for the first scanner section to "Device".
+Also please ensure that the shell app on the device is updated to 10.0.40, CSU updated to 9.50(10.0.40) and HQ updated to 10.0.40 for it all to work as expected.
 
 **Optical scanner**: Handheld devices that are equipped with an optical barcode scanner usually include a location in settings or a utility that configures the scanner. Enabling barcode scanning for the Store Commerce app with one of these devices typically only requires that the optical scanner is configured for keyboard wedge mode, and that a newline character is appended to the decoded output. 
 
