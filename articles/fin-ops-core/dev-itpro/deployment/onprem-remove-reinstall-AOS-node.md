@@ -6,7 +6,7 @@ ms.author: ttreen
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 076/19/2024
+ms.date: 06/19/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-03-31
