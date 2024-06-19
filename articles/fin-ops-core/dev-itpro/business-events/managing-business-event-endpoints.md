@@ -3,14 +3,13 @@ title: Manage business event endpoints
 description: Learn about how to manage endpoints for finance and operations apps business events, including a table that provides tutorials for various endpoint types.
 author: jaredha
 ms.author: jaredha
-ms.topic: article
-ms.date: 06/29/2022
-# ms.custom: NotInToc
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-11-03
-# ms.search.form:
 ms.dyn365.ops.version: 10.0.22
 ---
 

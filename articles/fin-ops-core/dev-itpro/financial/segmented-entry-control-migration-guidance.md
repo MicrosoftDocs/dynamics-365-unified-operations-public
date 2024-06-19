@@ -3,14 +3,14 @@ title: Migration guidance for Segmented Entry controls
 description: Learn about the process of migrating a Segmented Entry control through code examples, an outline on properties, and a table that shows valid values for properties.
 author: RyanCCarlson2
 ms.author: rcarlson
-ms.topic: article
-ms.date: 11/10/2017
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.assetid: eea675a0-d9d8-453d-9f5a-70c833a7a0d6
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

@@ -3,8 +3,10 @@ title: Business events overview
 description: Learn about business events, which allow external systems to receive notifications from finance and operations apps.
 author: jaredha
 ms.author: jaredha
-ms.date: 03/31/2023
+ms.date: 06/19/2024
 ms.topic: overview
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global for most topics. Set Country/Region name for localizations
