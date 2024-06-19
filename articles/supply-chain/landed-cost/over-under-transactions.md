@@ -1,15 +1,15 @@
 ---
 title: Over/under transactions
-description: This article provides information that will help you set up the details of policies for over/under transactions, so that the system can determine how to manage the over-processing and under-processing of goods at the time of receipt.
+description: Learn how to set up the details of policies for over/under transactions, so that the system can determine how to manage over-processing of goods.
 author: Weijiesa
 ms.author: weijiesa
-ms.reviewer: kamaybac
-ms.search.form: ITMOverUnderTrans, ITMOverUnderToleranceTable, ITMOverUnderReasonTable, ITMOverUnderToleranceGroup
 ms.topic: how-to
 ms.date: 05/27/2024
-audience: Application User
 ms.custom:
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: ITMOverUnderTrans, ITMOverUnderToleranceTable, ITMOverUnderReasonTable, ITMOverUnderToleranceGroup
 ---
 
 # Over/under transactions

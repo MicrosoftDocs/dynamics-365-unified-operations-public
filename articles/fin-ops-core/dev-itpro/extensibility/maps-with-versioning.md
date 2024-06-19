@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 12/10/2017
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2017-07-01

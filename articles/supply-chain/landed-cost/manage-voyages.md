@@ -1,15 +1,15 @@
 ---
 title: Manage voyages
-description: This article describes how to work with voyages. A voyage typically represents a vessel. However, depending on your practices and procedures, it can represent a vendor, a purchase order, or some other item that makes sense for your organization.
+description: Learn how to work with voyages, which typically represent vessels, including outlines on the All voyages page and its action pane.
 author: Weijiesa
 ms.author: weijiesa
-ms.reviewer: kamaybac
-ms.search.form: ITMTableListPage, ITMTable
 ms.topic: how-to
 ms.date: 08/09/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: ITMTableListPage, ITMTable
 ---
 
 # Manage voyages

@@ -1,15 +1,15 @@
 ---
 title: Calculate material consumption
-description: This article provides information about various options that are related to the calculation of material consumption. 
+description: Learn about various options that are related to the calculation of material consumption, including an outline on variable and constant consumption. 
 author: johanhoffmann
 ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form: BOMDesignerEditBOM, BOMTable, ProdBOM
 ms.topic: how-to
 ms.date: 02/02/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: BOMDesignerEditBOM, BOMTable, ProdBOM
 ---
 
 # Calculate material consumption

@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Production setup requirements
-description: This article provides information about setup requirements before you can work with Production control. 
+description: Learn about setup requirements before you can work with Production control, including an outline on required baseline setup in other modules. 
 author: johanhoffmann
-ms.date: 06/20/2017
+ms.author: johanho
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: ProdParameters, RouteOpr, RouteOprTable, WorkCalendarTable, WorkTimeTable, WrkCtrTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 1953059f-478d-4706-b461-25b89ace5fc3
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
 ms.search.validFrom: 2016-02-28
+ms.search.form: ProdParameters, RouteOpr, RouteOprTable, WorkCalendarTable, WorkTimeTable, WrkCtrTable
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 1953059f-478d-4706-b461-25b89ace5fc3
 ---
 
 # Production setup requirements

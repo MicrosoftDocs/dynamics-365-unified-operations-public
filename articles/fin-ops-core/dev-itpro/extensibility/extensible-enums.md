@@ -5,7 +5,7 @@ author: smithanataraj
 ms.author: smnatara
 ms.topic: article
 ms.date: 09/26/2018
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2018-09-09

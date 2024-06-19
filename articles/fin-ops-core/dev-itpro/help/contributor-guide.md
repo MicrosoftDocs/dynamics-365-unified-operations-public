@@ -1,11 +1,11 @@
 ---
-title: Contribute to the Help (contains video)
+title: Contribute to the Help
 description: Learn about tips and tricks for working with the GitHub repos and Markdown files for finance and operations apps.
 author: edupont04
 ms.author: edupont
 ms.topic: article
 ms.date: 04/13/2023
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28

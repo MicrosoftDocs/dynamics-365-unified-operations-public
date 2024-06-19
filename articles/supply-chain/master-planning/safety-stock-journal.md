@@ -1,15 +1,15 @@
 ---
 title: Use the safety stock journal to update minimum coverage for items
-description: This article describes how to use safety stock journal to update safety stock quantity for items by calculating minimum coverage proposals based on historical transactions. 
+description: Learn how to use safety stock journal to update safety stock quantity for items by calculating minimum coverage proposals based on historical transactions.
 author: t-benebo
-ms.date: 10/28/2021
-ms.topic: article
-ms.search.form: ReqItemJournalName, ReqItemJournalSafetyStock, EcoResProductInformationDialog, ReqItemTableSetup, ReqItemTable, EcoResProductDetailsExtended
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
+ms.topic: article
+ms.date: 10/28/2021
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-10-28
+ms.search.form: ReqItemJournalName, ReqItemJournalSafetyStock, EcoResProductInformationDialog, ReqItemTableSetup, ReqItemTable, EcoResProductDetailsExtended
 ms.dyn365.ops.version: 10.0.22
 ---
 

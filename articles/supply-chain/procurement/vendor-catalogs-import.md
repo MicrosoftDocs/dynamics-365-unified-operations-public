@@ -1,24 +1,17 @@
 ---
-# required metadata
-
 title: Import vendor catalogs
-description: This article describes the process to import vendor catalog data.
+description: Learn about the process to import vendor catalog data, including an outline and step-by-step process for importing vendor catalog data.
 author: Henrikan
-ms.date: 03/20/2018
+ms.author: henrikan
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: VendProspectiveVendorRegistrationRequests, CatVendorCatalogDetails, CatVendorCatalogReleaseApprovedProducts, CatVendorCMRDetails, CatVendorCatalogProductPerCompanyStatus, CatVendorMaintenanceEventLog, CatVendorCatalogReviewTool, CatVendorCatalogFileUpload, CatVendorCatalogMaintenanceRequest, CatVendorCatalogFileInLegalEntity, CatVendorCatalogSchema, CatVendorCatalogFilePreviewPane, CatVendorCatalogImportParameter
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 03/20/2018
 ms.custom: 
+ms.reviewer: kamaybac
+audience: Application User
 ms.search.region: Global
 ms.search.industry: 
-ms.author: henrikan
-ms.search.validFrom: 2018-04-20 
+ms.search.validFrom: 2018-04-20
+ms.search.form: VendProspectiveVendorRegistrationRequests, CatVendorCatalogDetails, CatVendorCatalogReleaseApprovedProducts, CatVendorCMRDetails, CatVendorCatalogProductPerCompanyStatus, CatVendorMaintenanceEventLog, CatVendorCatalogReviewTool, CatVendorCatalogFileUpload, CatVendorCatalogMaintenanceRequest, CatVendorCatalogFileInLegalEntity, CatVendorCatalogSchema, CatVendorCatalogFilePreviewPane, CatVendorCatalogImportParameter
 ms.dyn365.ops.version: 7.3
 ---
 

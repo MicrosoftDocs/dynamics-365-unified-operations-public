@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Sales tax assignment and overrides
-description: This procedure demonstrates how to assign sales tax groups to commerce channels. 
+description: Learn how to assign sales tax groups to commerce channels, including a step-by-step process using the USRT demo data company. 
 author: Henrikan
-ms.date: 08/29/2018
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: RetailStoreTable, RetailTaxOverrideCode, RetailTaxOverrideGroup   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: henrikan
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.custom:
+ms.reviewer: kamaybac  
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: RetailStoreTable, RetailTaxOverrideCode, RetailTaxOverrideGroup 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Sales tax assignment and overrides
 
 [!include [banner](../../includes/banner.md)]

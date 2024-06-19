@@ -6,7 +6,7 @@ ms.author: smiller
 ms.topic: article
 ms.date: 09/26/2019
 ms.custom:
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2019-04-30

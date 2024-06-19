@@ -1,15 +1,15 @@
 ---
 title: Landed cost entities overview
-description: This article provides an overview of the data entities for Landed cost that enable external data sources to create voyages and costs, and update container tracking records.
-author: yufeihuang
-ms.date: 05/27/2022
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
+description: Learn about the data entities for Landed cost that enable external data sources to create voyages and costs, and update container tracking records.
+author: yufei-huang
 ms.author: yufeihuang
+ms.topic: article
+ms.date: 05/27/2022
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-05-27
+ms.search.form:
 ms.dyn365.ops.version: 10.0.28
 ---
 

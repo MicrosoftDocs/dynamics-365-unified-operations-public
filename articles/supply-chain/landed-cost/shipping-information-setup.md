@@ -1,15 +1,15 @@
 ---
 title: Shipping information setup
-description: This article describes how to set up shipping information for the Landed cost module.
+description: Learn how to set up shipping information for the Landed cost module, including an outline on goods descriptions and a table defining various fields.
 author: Weijiesa
 ms.author: weijiesa
-ms.reviewer: kamaybac
-ms.search.form: ITMGoodsDescriptionTable, ITMVesselTable, ITMExporterTable, ITMCommodityCodeTable, ITMCustomsDescription
 ms.topic: how-to
 ms.date: 06/07/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: ITMGoodsDescriptionTable, ITMVesselTable, ITMExporterTable, ITMCommodityCodeTable, ITMCustomsDescription
 ---
 
 # Shipping information setup

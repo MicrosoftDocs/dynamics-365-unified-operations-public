@@ -1,15 +1,15 @@
 ---
 title: Negative days and dynamic negative days
-description: This article provides information about negative days and dynamic negative days, and how you can use them to help your business.
+description: Learn about negative days and dynamic negative days, and how you can use them to help your business, including outlines on various scenarios.
 author: t-benebo
-ms.date: 05/25/2021
-ms.topic: article
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
+ms.topic: article
+ms.date: 05/25/2021
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2019-06-07
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

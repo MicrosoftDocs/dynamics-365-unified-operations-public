@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Multi-leg journey setup
-description: This article describes how to set up multi-leg journeys for the Landed cost module.
+description: Learn how to set up multi-leg journeys for the Landed cost module, including an outline on legs and a table that defines various fields.
 author: Weijiesa
-ms.date: 12/04/2020
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: ITMLegTable, ITMJourneyTable, ITMActivityTable
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: weijiesa
+ms.topic: article
+ms.date: 12/04/2020
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-12-04
+ms.search.form: ITMLegTable, ITMJourneyTable, ITMActivityTable
 ms.dyn365.ops.version: 10.0.17
 ---
 

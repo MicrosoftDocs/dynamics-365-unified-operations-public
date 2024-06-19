@@ -6,7 +6,7 @@ ms.author: filatovm
 ms.topic: conceptual
 ms.date: 09/09/2021
 ms.custom: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-09-08

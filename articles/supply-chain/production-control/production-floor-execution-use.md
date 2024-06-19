@@ -1,15 +1,15 @@
 ---
 title: How workers use the production floor execution interface
-description: This article describes how to use the production floor execution interface from a worker's point of view.
+description: Learn how to use the production floor execution interface from a worker's point of view with an outline on signing into the production floor execution interface.
 author: johanhoffmann
 ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form: JmgProductionFloorExecution
 ms.topic: how-to
 ms.date: 04/19/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: JmgProductionFloorExecution
 ---
 
 # How workers use the production floor execution interface
