@@ -75,7 +75,7 @@ Before you install the add-in, register an application and add a client secret t
 > [!IMPORTANT]
 > If you have more than one environment, create a different Microsoft Entra application for each of them. If you use the same application ID and tenant ID to install the Inventory Visibility Add-in for different environments, a token issue will occur for older environments. As a result, only the lastest installation will be valid.
 
-Two options are available to install Inventory Visibility Add-in. One is from [Lifecycle Services](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md), which is a collaboration portal that provides a unifying, collaborative environment along with a set of regularly updated services that help you manage the application lifecycle of your implementations. The other is from [Power Platform Admin Center](https://learn.microsoft.com/en-us/power-platform/admin/), which provides a unified portal for administrators to manage environments and settings for Power Apps, Power Automate, Power Pages, and Microsoft Copilot Studio.
+Two options are available to install Inventory Visibility Add-in. One is from [Lifecycle Services](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md), which is a collaboration portal that provides a unifying, collaborative environment along with a set of regularly updated services that help you manage the application lifecycle of your implementations. The other is from [Power Platform Admin Center](/power-platform/admin/admin-documentation), which provides a unified portal for administrators to manage environments and settings for Power Apps, Power Automate, Power Pages, and Microsoft Copilot Studio.
 
 ### Install the Inventory Visibility Add-in from Lifecycle Services
 
@@ -122,7 +122,7 @@ After you register an application and add a client secret to Microsoft Entra ID,
 After you register an application and add a client secret to Microsoft Entra ID, follow these steps to install the Inventory Visibility Add-in.
 
 > [!NOTE]
-> If your environment is not a [unified environment](https://learn.microsoft.com/en-us/power-platform/admin/unified-experience/finance-operations-apps-overview) and your Dataverse environment is not created by Lifecycle Services (for example, by the Power Platform admin center), you need to fix the mapping issue before installing Inventory Visibility Add-in. See [Linking mismatch](../../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md#linking-mismatch) for more information.
+> If your environment is not a [unified environment](/power-platform/developer/unified-experience/finance-operations-dev-overview) and your Dataverse environment is not created by Lifecycle Services (for example, by the Power Platform admin center), you need to fix the mapping issue before installing Inventory Visibility Add-in. See [Linking mismatch](../../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md#linking-mismatch) for more information.
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) and make sure that the user account you want to use to install the add-in has the "Dynamics 365 Unified Operations Plan" license assigned to it. Assign the license if needed.
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) using the same user account.
@@ -150,7 +150,7 @@ After you register an application and add a client secret to Microsoft Entra ID,
 
 ### <a name="deploy-inventory-visibility-package"></a>Deploy the Inventory Visibility integration package
 
-If you're running Supply Chain Management version no older than 10.0.18, you can skip this deployment session and jump to [set up Inventory Visibility integration](#set-up-inventory-visibility-integration).
+If you're running Supply Chain Management version no older than 10.0.18, you can skip this deployment session and jump to [set up Inventory Visibility integration](#setup-inventory-visibility-integration).
 
 If you're running Supply Chain Management version 10.0.17 or earlier, contact the Inventory Visibility on-board support team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) to get the package file. Then deploy the package in Lifecycle Services.
 
@@ -241,7 +241,7 @@ To uninstall the Inventory Visibility Add-in, follow these steps:
 The uninstallation process terminates the Inventory Visibility Add-in, unregisters the add-in from Lifecycle Services, and deletes any temporary data that's stored in the Inventory Visibility Add-in data cache. For primary inventory data that was synced to your Dataverse subscription, it will not be deleted.
 
 > [!IMPORTANT]
-> If you want to continue using Inventory Visibility in the current environment, we advise against deleting all solutions from your Dataverse environment. For deleting all inventory data in Dataverse, option [delete all inventory data](inventory-visibility-power-platform.md#delete-all-inventory-data) is recommended. Please contact [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) for assistance if you are not sure about your scenario.
+> If you want to continue using Inventory Visibility in the current environment, we advise against deleting all solutions from your Dataverse environment. For deleting all inventory data in Dataverse, option [delete all inventory data](inventory-visibility-power-platform.md#delete-data) is recommended. Please contact [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) for assistance if you are not sure about your scenario.
 
 > [!NOTE]
 > If it is necessary to delete all solutions related to Inventory Visibility, follow the below steps.
