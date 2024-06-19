@@ -145,20 +145,20 @@ Current security standards state that the following options should be set in a p
 > The hardware station installer automatically makes these registry edits as part of the installation through self-service.
 
 - SSL should be disabled.
-- Only Transport Layer Security (TLS) version 1.2 (or the current highest version) should be enabled and used.
+- Only Transport Layer Security (TLS) version 1.3 (or the current highest version) should be enabled and used.
 
     > [!NOTE]
-    > By default, SSL and all version of TLS except TLS 1.2 are disabled. To edit or enable these values, follow these steps:
+    > By default, SSL and all version of TLS except TLS 1.3 are disabled. To edit or enable these values, follow these steps:
     >
     > 1. Press the Windows logo key+R to open a **Run** window.
     > 2. In the **Open** field, type **Regedit**, and then select **OK**.
     > 3. If a **User Account Control** window appears, select **Yes**.
-    > 4. In the new **Registry Editor** window, go to **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\SecurityProviders\\SCHANNEL\\Protocols**. The following keys have been automatically entered to allow for TLS 1.2 only:
-    >
-    >    - TLS 1.2\\Server:Enabled=1
-    >    - TLS 1.2\\Server:DisabledByDefault=0
-    >    - TLS 1.2\\Client:Enabled=1
-    >    - TLS 1.2\\Client:DisabledByDefault=0
+    > 4. In the new **Registry Editor** window, go to **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\SecurityProviders\\SCHANNEL\\Protocols**. The following keys have been automatically entered to allow for TLS 1.3 only:
+    >    
+    >    - TLS 1.2\\Server:Enabled=0
+    >    - TLS 1.3\\Server:Enabled=1
+    >    - TLS 1.2\\Client:Enabled=0
+    >    - TLS 1.3\\Client:Enabled=1
     >    - TLS 1.1\\Server:Enabled=0
     >    - TLS 1.1\\Client:Enabled=0
     >    - TLS 1.0\\Server:Enabled=0
