@@ -53,7 +53,7 @@ The following table lists the APIs that are currently available:
 | `/api/environment/{environmentId}/onhand/productsearch/exactquery` | Post | [Post exact query with product search](#exact-query-with-product-search) |
 
 > [!NOTE]
-> The {environmentId} part of the path is the environment ID in Microsoft Dynamics Lifecycle Services.
+> The {environmentId} part of the path is the environment ID of Microsoft Dynamics 365 Supply Chain Management.
 >
 > The bulk API can return a maximum of 512 records for each request.
 
@@ -102,7 +102,7 @@ To get a security service token, follow these steps.
         "client_assertion_type": "aad_app",
         "client_assertion": "{Your_Microsoft EntraToken}",
         "scope": "https://inventoryservice.operations365.dynamics.com/.default",
-        "context": "{$LCS_environment_id}",
+        "context": "{$fno_environment_id}",
         "context_type": "finops-env"
     }
     ```
@@ -110,7 +110,7 @@ To get a security service token, follow these steps.
     Note the following points:
 
     - The `client_assertion` value must be the Microsoft Entra token (`aadToken`) that you received in the previous step.
-    - The `context` value must be the Lifecycle Services environment ID where you want to deploy the add-in.
+    - The `context` value must be the Supply Chain Management environment ID where you want to deploy the add-in.
     - Set all the other values as shown in the example.
 
 1. Fetch an access token (`access_token`) by submitting an HTTP request that has the following properties:
