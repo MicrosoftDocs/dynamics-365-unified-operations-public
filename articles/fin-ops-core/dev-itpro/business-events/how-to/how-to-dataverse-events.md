@@ -3,10 +3,11 @@ title: Subscribe to events in Dataverse
 description: Learn about how to subscribe to and manage finance and operations apps business events and data events in Microsoft Dataverse.
 author: jaredha
 ms.author: jaredha
-ms.topic: article
-ms.date: 11/08/2021
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-11-03
 ms.dyn365.ops.version: 10.0.22
