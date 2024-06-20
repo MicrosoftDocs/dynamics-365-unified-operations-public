@@ -3,10 +3,11 @@ title: Goods movement tax registers
 description: Learn about goods movement tax registers, including outlines and step-by-step processes on setting up tax registers and warehoused items tax register.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
-ms.date: 08/16/2021
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/20/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: 
