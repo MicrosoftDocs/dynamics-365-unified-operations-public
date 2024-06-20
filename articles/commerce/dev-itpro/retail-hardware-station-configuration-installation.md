@@ -3,24 +3,19 @@
 
 title: Configure and install Retail hardware station
 description: This article explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.
-author: jashanno
-ms.date: 04/26/2023
-ms.topic: article
-# optional metadata
-
+author: anush6121
+ms.author: anvenkat
+ms.date: 06/20/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.search.form: RetailHardwareStation
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+ms.reviewer: johnmichalak
 ms.assetid: eb164a9d-5538-4b6f-81ad-87e05d92eca5
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
 
 ---
 
