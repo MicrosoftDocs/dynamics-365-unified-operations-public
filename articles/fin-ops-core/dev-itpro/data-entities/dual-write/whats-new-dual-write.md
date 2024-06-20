@@ -7,6 +7,7 @@ ms.topic: whats-new
 ms.date: 05/04/2024
 ms.custom: 
   - bap-template
+  - evergreen
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
