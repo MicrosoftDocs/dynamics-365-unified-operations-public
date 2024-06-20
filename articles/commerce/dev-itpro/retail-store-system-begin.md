@@ -5,7 +5,7 @@ author: aneesa
 ms.date: 02/02/2023
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-11-30
