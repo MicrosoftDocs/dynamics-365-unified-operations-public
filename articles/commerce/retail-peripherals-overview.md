@@ -1,17 +1,15 @@
 ---
-# required metadata
-
 title: Peripherals
 description: This article explains the concepts that are related to Commerce peripherals. 
-author: BrianShook
-ms.date: 09/08/2022
-ms.topic: article
+author: anush6121
+ms.author: anvenkat
+ms.date: 06/20/2024
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
 audience: Application User
-ms.reviewer: josaw
-ms.custom: ["268444"]
-ms.collection: get-started
+ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: brshoo
 ms.search.validFrom: 2016-11-30
 
 ---
