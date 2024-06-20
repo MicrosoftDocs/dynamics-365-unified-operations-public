@@ -3,10 +3,10 @@
 
 title: Store Commerce app for mobile platforms
 description: This article describes how to get started using the Microsoft Dynamics 365 Commerce Store Commerce app for Android and iOS.
-author: stuharg
-ms.date: 05/14/2024
-ms.topic: article
-audience: Developer, IT Pro
+author: anush6121
+ms.author: anvenkat
+ms.date: 006/24/2024
+ms.topic: how-to
 ms.reviewer: v-chrgriffin
 ms.search.region: global
 ms.author: stuharg
