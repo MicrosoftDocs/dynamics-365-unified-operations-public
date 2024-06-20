@@ -39,7 +39,7 @@ Before you begin the procedures in this article, the following prerequisites mus
 
 ## Azure Key Valut configuration
 
-Create an Azure Key Vault to store required certificates and secrets issued for your company. For more information, refer to [Configure Azure resources for Electronic invoicing](../global/gs-e-invoicing-set-up-azure-resources.md).
+Create an Azure Key Vault to store required certificates and secrets issued for your company. For more information, see [Configure Azure resources for Electronic invoicing](../global/gs-e-invoicing-set-up-azure-resources.md).
 
 Add the following required elements in the Azure Key Vault:
 
@@ -76,15 +76,15 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
 1. Select the **Client ID** parameter, and then, in the **Value** field, select the name of the [client ID](#ClID) that you created.
 1. In the **Parameters** section, select the **Web service URL** and **Login service URL** parameters. In the **Value** fields, enter the testing or production URLs depending on the implementation stage. Review the list of available URLs in [MyInvois system environment URLs](https://sdk.myinvois.hasil.gov.my/faq/#what-are-the-environment-urls).
     > [!NOTE]
-    > Alternatively, you can leave the **Web service URL** and **Login service URL** parameters empty and define the **Environment type** parameter, in the **Value** field, select the type of the environment depending the implementation stage. In this case the required URLs will be constructed automatically.  The **Web service URL** and **Login service URL** parameters, if defined, have higher priority than the **Environment type** parameter.
+    > Alternatively, you can leave the **Web service URL** and **Login service URL** parameters empty and define the **Environment type** parameter, in the **Value** field, select the type of the environment depending on the implementation stage. In this case the required URLs will be constructed automatically.  The **Web service URL** and **Login service URL** parameters, if defined, have higher priority than the **Environment type** parameter.
 
     ![Screenshot of the setup on the Invoicing feature processing pipeline parameters](apac-mys-e-invoice-URLs.jpg)
 
 1. Repeat steps 7 through 10 for the **Integrate with MyInvois (Get document)** action.
 1. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **Generate QR code for Malaysia** action.
 1. In the **Parameters** section, select the **Environment type** parameter, and then, in the **Value** field, select the type of the environment depending on the implementation stage.
-1. Select **Save**, and close the page.
-1. Repeat the steps 4 through 14 for the **Project invoice derived** and **Self invoice derived** feature setups.
+1. Select **Save** and close the page.
+1. Repeat steps 4 through 14 for the **Project invoice derived** and **Self invoice derived** feature setups.
 1. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ## Configure electronic document parameters
@@ -115,7 +115,7 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
     > [!NOTE]
     > **ResponseData** is the default name of the response type. If you must change it, make sure that the new name matches the name that was defined for the related variable of the **To client** type in the corresponding feature setups. To validate the variable's value, go to **Globalization Studio**, and select the **Electronic invoicing** tile. On the **Electronic invoicing features** page, verify that the **Malaysian electronic invoicing (MY)** feature is selected. On the **Setups** tab, in the grid, select the **Sales invoice derived** feature setup. Then select **Edit** or **View**, depending on the status of the feature version.
 
-1. Select **Save**, and close the page.
+1. Select **Save** and close the page.
 
     > [!NOTE]
     > The setup that's described here lets you submit electronic invoices for the following **posted** source documents:
@@ -229,7 +229,7 @@ Follow these steps to configure the structure of the postal address to define al
 1. In the **Registration number** field, enter a valid BRN registration number for the selected customer. 
 
     > [!NOTE]
-    > It is not mandatory to always have actual Tax registration numbers for **foreign** customers. If not defined then the following general numbers will be used.
+    > It is not mandatory to always have actual Tax registration numbers for **foreign** customers. If not defined, then the following general numbers will be used.
     > - **EI00000000020** as Customer's **TIN**.
     > - **NA** as Customer's **BRN**.
 
@@ -274,7 +274,7 @@ If business processes assume issuing of self-invoices then required vendor data 
 1. In the **Registration number** field, enter a valid BRN registration number for the selected vendor. 
 
     > [!NOTE]
-    > It is not mandatory to always have actual Tax registration numbers for foreign vendors. If not defined then the following general numbers will be used.
+    > It is not mandatory to always have actual Tax registration numbers for foreign vendors. If not defined, then the following general numbers will be used.
     > - **EI00000000030** as Vendor's **TIN**.
     > - **NA** as Vendor's **BRN**.
 
@@ -315,7 +315,7 @@ To cover scenarios of non-taxable, zero-rated, or exempted operations, define ta
 1. Save and close the page.
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax groups**.
 1. In the **Setup** section, select a row with a required sales tax code, and, in the **Exempt** column, mark it as an exempt. 
-1. In the **Exempt code** field, refer to the one of exempt codes created at step 1.
+1. In the **Exempt code** field, refer to the one of the exempt codes created at step 1.
 1. Save and close the page.
 
 ## Issue electronic invoices
