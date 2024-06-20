@@ -37,53 +37,55 @@ Before you begin the procedures in this article, the following prerequisites mus
 - Become familiar with electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
 - Do the common part of electronic invoicing service configuration as described in [Set up electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
 
-## Azure Key Valut configuration
+## Configure Azure Key Vault
 
-Create an Azure Key Vault to store required certificates and secrets issued for your company. For more information, see [Configure Azure resources for Electronic invoicing](../global/gs-e-invoicing-set-up-azure-resources.md).
+Create an Azure key vault to store the required certificates and secrets that are issued for your company. For more information, see [Configure Azure resources for Electronic invoicing](../global/gs-e-invoicing-set-up-azure-resources.md).
 
-Add the following required elements in the Azure Key Vault:
+Add the following required elements in the key vault:
 
-- The secret for the **Client secret** to establish secure communication to IRBN.
-- The secret for the **Client ID** for secure communication to IRBN.
-- The **Certificate** for digital signing of outgoing electronic invoices.
+- The secret for the **Client secret** value that's used to establish secure communication to IRBN.
+- The secret for the **Client ID** value that's used to establish secure communication to IRBN.
+- The certificate that's used for digital signing of outgoing electronic invoices.
 
-## Electronic invoicing Key Vault parameters configuration
+## Configure Key Vault parameters for electronic invoicing
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-1. On the **Electronic invoicing** tab, in the **Key Vault settings** section, in the **Key Vault** field select the reference to the Azure Key Valut created in the previous chapter.
-1. In the **SAS token secret** field, select the name of the storage account secret **URL** that must be used to authenticate access to the storage account.
-1. Select **Key Vault parameters** to open the form for Key Vault parameters configuration.
-1. In the **Key Vault parameters** form, in the **Certificates** section, select **Add** to create new elements of the respective **Type** for each certificate or secret described in the previous chapter.
- - <a id="ClSec"></a>The **Client secret** element of the **Secret** type.
- - <a id="ClID"></a>The **Client ID** element of the **Secret** type.
- - <a id="DigCert"></a>The **Certificate** element of the **Certificate** type.
+1. On the **Electronic invoicing** tab, in the **Key Vault settings** section, in the **Key Vault** field, select the reference to the key vault that you created in the previous section.
+1. In the **SAS token secret** field, select the name of the storage account secret URL that must be used to authenticate access to the storage account.
+1. Select **Key Vault parameters**.
+1. On the **Key Vault parameters** page, in the **Certificates** section, select **Add** to create new elements of the appropriate type for each certificate or secret that's described in the previous section.
 
-   > [!NOTE]
-   > The values in the **Name** column should coincide with the names the certificates or secrets described in the previous chapter.
+    - <a id="ClSec"></a>A **Client secret** element of the **Secret** type
+    - <a id="ClID"></a>A **Client ID** element of the **Secret** type
+    - <a id="DigCert"></a>A **Certificate** element of the **Certificate** type
 
-## Electronic invoicing feature configuration
+    > [!NOTE]
+    > The values in the **Name** column should match the names of the certificates or secrets that are described in the previous section.
+
+## Configure the electronic invoicing feature
 
 Some of the parameters from the **Malaysian electronic invoicing (MY)** electronic invoicing feature are published with default values. Before you deploy this feature to the service, review the default values, and update them as required, so that they better reflect your business operations.
 
 1. Import the latest version of the **Malaysian electronic invoicing (MY)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 1. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
 1. On the **Versions** tab, verify that the **Draft** version is selected.
-1. On the **Setups** tab, in the grid, select the **Sales invoice derived** feature setup, and select **Edit**.
+1. On the **Setups** tab, in the grid, select the **Sales invoice derived** feature setup, and then select **Edit**.
 1. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **Sign document for Malaysia** action.
 1. In the **Parameters** section, select the **Certificate name** parameter, and then, in the **Value** field, select the name of the [digital certificate](#DigCert) that you created.
 1. In the **Processing pipeline** section, select the **Integrate with MyInvois (Submit document)** action.
 1. In the **Parameters** section, select the **Client secret** parameter, and then, in the **Value** field, select the name of the [secret](#ClSec) that you created.
 1. Select the **Client ID** parameter, and then, in the **Value** field, select the name of the [client ID](#ClID) that you created.
-1. In the **Parameters** section, select the **Web service URL** and **Login service URL** parameters. In the **Value** fields, enter the testing or production URLs depending on the implementation stage. Review the list of available URLs in [MyInvois system environment URLs](https://sdk.myinvois.hasil.gov.my/faq/#what-are-the-environment-urls).
-    > [!NOTE]
-    > Alternatively, you can leave the **Web service URL** and **Login service URL** parameters empty and define the **Environment type** parameter, in the **Value** field, select the type of the environment depending on the implementation stage. In this case the required URLs will be constructed automatically.  The **Web service URL** and **Login service URL** parameters, if defined, have higher priority than the **Environment type** parameter.
+1. In the **Parameters** section, select the **Web service URL** and **Login service URL** parameters. In the **Value** fields, enter the testing or production URLs, depending on the implementation stage. Review the list of available URLs in [MyInvois system environment URLs](https://sdk.myinvois.hasil.gov.my/faq/#what-are-the-environment-urls).
 
-    ![Screenshot of the setup on the Invoicing feature processing pipeline parameters](apac-mys-e-invoice-URLs.jpg)
+    > [!NOTE]
+    > Alternatively, you can leave the **Web service URL** and **Login service URL** parameters blank. Instead, you can select the **Environment type** parameter, and then, in the **Value** field, select the type of the environment, depending on the implementation stage. In this case, the required URLs are automatically constructed. If the **Web service URL** and **Login service URL** parameters are defined, they have higher priority than the **Environment type** parameter.
+
+    ![Screenshot of the setup on the Processing pipeline tab of the Feature version setup page for the electronic invoicing feature.](apac-mys-e-invoice-URLs.jpg)
 
 1. Repeat steps 7 through 10 for the **Integrate with MyInvois (Get document)** action.
 1. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **Generate QR code for Malaysia** action.
-1. In the **Parameters** section, select the **Environment type** parameter, and then, in the **Value** field, select the type of the environment depending on the implementation stage.
-1. Select **Save** and close the page.
+1. In the **Parameters** section, select the **Environment type** parameter, and then, in the **Value** field, select the type of the environment, depending on the implementation stage.
+1. Select **Save**, and close the page.
 1. Repeat steps 4 through 14 for the **Project invoice derived** and **Self invoice derived** feature setups.
 1. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
@@ -92,30 +94,33 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
 1. Make sure that the country/region-specific Electronic reporting (ER) configurations for the document context and electronic document model mapping that are required for Malaysia are imported. For more information, see [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
     > [!NOTE]
-    > After you import the **Malaysian electronic invoicing (MY)** electronic invoicing feature, electronic documents are configured by default. Follow the remaining steps of this procedure if you must make changes, otherwise consider this chapter for information only.
+    > After you import the **Malaysian electronic invoicing (MY)** electronic invoicing feature, electronic documents are configured by default. Follow the remaining steps of this procedure if you must make changes. Otherwise, consider this section informational only.
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. On the **Electronic document** tab, add records for the **Customer Invoice journal**, **Vendor Invoice journal**, and **Project invoice** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
 
-    ![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](apac-mys-e-invoice-documents.jpg)   
-1. For each table name, select **Response types**, then select **New** to create a response type, and enter the following values:
+    ![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](apac-mys-e-invoice-documents.jpg)
+
+1. For each table name, select **Response types**, select **New** to create a response type, and enter the following values:
 
     - In the **Response type** field, enter **ResponseData** (the default value).
-    - In the **Description** field, enter any meaning full name or leave it empty.
+    - In the **Description** field, enter any meaningful name. Alternatively, leave the field blank.
     - In the **Submission status** field, select **Pending**.
-    - In the **Data entity name** field, select: 
-      - **Sales invoice entity** while configuring **Customer Invoice journal**.
-      - **Project invoice entity** while configuring **Project invoice**.
-      - **Self invoice entity** while configuring **Vendor Invoice journal**.
+    - In the **Data entity name** field, select one of the following values, depending on the table name that you're configuring: 
+
+        - For the **Customer Invoice journal** table name, select **Sales invoice entity**.
+        - For the **Project invoice** table name, select **Project invoice entity**.
+        - For the **Vendor Invoice journal** table name, select **Self invoice entity**.
+
     - In the **Model mapping** field, select **MY response data details format**.
 
-    ![Screenshot that response types configuration.](apac-mys-e-invoice-address.jpg)
+    ![Screenshot of the setup of the response type for the Customer Invoice journal table name on the Document updates for response types page.](apac-mys-e-invoice-address.jpg)
 
     > [!NOTE]
     > **ResponseData** is the default name of the response type. If you must change it, make sure that the new name matches the name that was defined for the related variable of the **To client** type in the corresponding feature setups. To validate the variable's value, go to **Globalization Studio**, and select the **Electronic invoicing** tile. On the **Electronic invoicing features** page, verify that the **Malaysian electronic invoicing (MY)** feature is selected. On the **Setups** tab, in the grid, select the **Sales invoice derived** feature setup. Then select **Edit** or **View**, depending on the status of the feature version.
 
-1. Select **Save** and close the page.
+1. Select **Save**, and close the page.
 
     > [!NOTE]
     > The setup that's described here lets you submit electronic invoices for the following **posted** source documents:
@@ -127,12 +132,12 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
     > - Credit notes and debit notes for all the previously described invoice types
 
 1. On the **Features** tab, select and enable the **Malaysian electronic invoice** feature.
-1. Save your changes of **Electronic document parameters**, and close the page.
+1. Save your changes on the **Electronic document parameters** page, and then close the page.
 
 ## <a id="NRIC"></a>Configure registration numbers
 
 > [!NOTE]
-> When the output files of electronic invoices are generated, registration numbers of the **Enterprise ID (COID)** category are used as **Business Registration Numbers (BRN)**. If the **Enterprise ID (COID)** registration category already exists and has been assigned to a registration type, skip this procedure.
+> When the output files of electronic invoices are generated, registration numbers of the **Enterprise ID (COID)** category are used as Business Registration Numbers (BRNs). If the **Enterprise ID (COID)** registration category already exists and has been assigned to a registration type, skip this procedure.
 
 1. Go to **Organization administration** \> **Global address book** \> **Registration types** \> **Registration types**.
 1. Create a registration type.
@@ -165,16 +170,17 @@ Follow these steps to configure the electronic document property type that's req
 
 Follow these steps to configure the structure of the postal address to define all required elements.
 
-1. Go to **Organization administration** \> **Globall address book** \> **Addresses** \> **Address setup** and make sure that the following mandatory elements are configured.
-   - Country code
-   - Postal code
-   - City name
-   - Street
-   - State code
-    
-   > [!NOTE]
-   > For the **States**, on the **State/province** tab, in the **State code** field, additionally define the official state code according to the [published requirements](https://sdk.myinvois.hasil.gov.my/codes/state-codes/).
-   
+1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**.
+1. Make sure that all the following mandatory elements are configured:
+
+    - Country code
+    - Postal code
+    - City name
+    - Street
+    - State code
+
+1. For the states, on the **State/province** tab, in the **State code** field, define the official state code according to the [published requirements](https://sdk.myinvois.hasil.gov.my/codes/state-codes/).
+
 ## Configure legal entity data
 
 ### Enter the address
@@ -190,8 +196,7 @@ Follow these steps to configure the structure of the postal address to define al
 1. On the Action Pane, select **Registration IDs**.
 1. On the **Registration ID** FastTab, select **Add** to create a registration ID.
 1. In the **Registration type** field, select the [BRN](#NRIC) registration type that you created earlier.
-1. In the **Registration number** field, enter a valid BRN registration number for the selected legal entity. 
-
+1. In the **Registration number** field, enter a valid BRN registration number for the selected legal entity.
 
 ### Enter a business activity code and description
 
@@ -229,9 +234,10 @@ Follow these steps to configure the structure of the postal address to define al
 1. In the **Registration number** field, enter a valid BRN registration number for the selected customer. 
 
     > [!NOTE]
-    > It is not mandatory to always have actual Tax registration numbers for **foreign** customers. If not defined, then the following general numbers will be used.
-    > - **EI00000000020** as Customer's **TIN**.
-    > - **NA** as Customer's **BRN**.
+    > For **foreign** customers, actual tax registration numbers aren't always mandatory. If no tax registration numbers are defined for them, the following general numbers are used:
+    >
+    > - **EI00000000020** is used as the customer's **TIN**.
+    > - **NA** is used as the customer's **BRN**.
 
 ## Configure funding sources
 
@@ -247,7 +253,7 @@ If business processes assume that **project invoices** are issued, follow these 
 
 ## Configure vendor data
 
-If business processes assume issuing of self-invoices then required vendor data must be also configured.
+If business processes assume that self invoices are issued, you must also configure required vendor data.
 
 ### Enter the address
 
@@ -266,7 +272,7 @@ If business processes assume issuing of self-invoices then required vendor data 
 
 ### Enter the registration numbers
 
-1.Go to **Accounts payable** \> **Vendors** \> **All vendors**.
+1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
 1. Select a vendor, and then, on the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid TIN for the vendor.
 1. On the Action Pane, on the **Vendor** tab, in the **Registration** group, select **Registration IDs**.
 1. On the **Registration ID** FastTab, select **Add** to create a registration ID.
@@ -274,16 +280,17 @@ If business processes assume issuing of self-invoices then required vendor data 
 1. In the **Registration number** field, enter a valid BRN registration number for the selected vendor. 
 
     > [!NOTE]
-    > It is not mandatory to always have actual Tax registration numbers for foreign vendors. If not defined, then the following general numbers will be used.
-    > - **EI00000000030** as Vendor's **TIN**.
-    > - **NA** as Vendor's **BRN**.
+    > For **foreign** vendors, actual tax registration numbers aren't always mandatory. If no tax registration numbers are defined for them, the following general numbers are used:
+    >
+    > - **EI00000000030** is used as the vendor's **TIN**.
+    > - **NA** is used as the vendor's **BRN**.
 
 > [!NOTE]
-> Malaysian Standard Industrial Classification (MSIC code ) might not be applicable to foreign vendors. The fixed value **00000** will be used for the activity code and **NA** value will be used as the activity description.
+> A Malaysian Standard Industrial Classification (MSIC) code might not be applicable to foreign vendors. In this case, the fixed value **00000** is used for the activity code, and the value **NA** is used as the activity description.
 
 ## Configure the application-specific parameters
 
-This setup is required to establish mapping between Sales Tax codes used in the system and legally required [Tax types](https://sdk.myinvois.hasil.gov.my/codes/tax-types/#list).
+This setup is required to establish a mapping between sales tax codes that are used in the system and legally required [tax types](https://sdk.myinvois.hasil.gov.my/codes/tax-types/#list).
 
 Make sure that the following ER format configurations are imported:
 
@@ -309,14 +316,15 @@ Follow these steps to complete the configuration.
 
 ## Configure sales tax codes
 
-To cover scenarios of non-taxable, zero-rated, or exempted operations, define tax exempt codes in the system.
+To cover scenarios for non-taxable, zero-rated, or exempted operations, define tax exempt codes in the system.
 
-1. Go to **Tax** \> **Setup** \> **Sales tax** \> **Sales tax exempt codes** and add required exempt codes with descriptions.
-1. Save and close the page.
+1. Go to **Tax** \> **Setup** \> **Sales tax** \> **Sales tax exempt codes**.
+1. Add the required exempt codes together with descriptions.
+1. Save your changes, and close the page.
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax groups**.
-1. In the **Setup** section, select a row with a required sales tax code, and, in the **Exempt** column, mark it as an exempt. 
-1. In the **Exempt code** field, refer to the one of the exempt codes created at step 1.
-1. Save and close the page.
+1. In the **Setup** section, select the row for a required sales tax code, and then, in the **Exempt** column, mark the sales tax code as exempt. 
+1. In the **Exempt code** field, reference one of the exempt codes that you created in step 1.
+1. Save your changes, and close the page.
 
 ## Issue electronic invoices
 
@@ -326,14 +334,14 @@ You can inquire about the results of a submission by going to **Organization adm
 
 ## Configure printable invoice layouts
 
-To enable QR codes printing in full and simplified invoices do the following steps.
+Follow these steps to enable QR codes printing in full and simplified invoices.
 
 1. Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Form setup**.
-2. Select **Print management**.
-3. Select the **Customer invoice** report, and then, in the **Report format** field, refer to the **SalesInvoice.ReportFull_MY** or **SalesInvoice.ReportSimplified_MY** layout.
-4. Select the **Free text invoice** report, and then, in the **Report format** field, refer to the **FreeTextInvoice.ReportFull_MY** or **FreeTextInvoice.ReportSimplified_MY** layout.
+1. Select **Print management**.
+1. Select the **Customer invoice** report, and then, in the **Report format** field, reference the **SalesInvoice.ReportFull\_MY** or **SalesInvoice.ReportSimplified\_MY** layout.
+1. Select the **Free text invoice** report, and then, in the **Report format** field, reference the **FreeTextInvoice.ReportFull\_MY** or **FreeTextInvoice.ReportSimplified\_MY** layout.
 
 > [!NOTE]
-> The image of the QR code shown in the printouts of invoices represents the URL which brings you to the official portal of **MyInvois** system where you can find the details of the related electronic invoice.
+> The QR code that's shown on the printouts of invoices represents the URL that takes you to the official portal of MyInvois system, where you can find the details of the related electronic invoice.
 > 
-> QR codes will be printed only for those invoices that were successfully submitted, validated and accepted by the **MyInvois** system.
+> QR codes are printed only for invoices that were successfully submitted, validated, and accepted by the MyInvois system.
