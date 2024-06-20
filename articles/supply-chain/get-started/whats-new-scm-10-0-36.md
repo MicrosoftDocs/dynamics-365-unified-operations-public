@@ -1,17 +1,17 @@
 ---
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.36 (October 2023)
-description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.36. 
+description: Learn about features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.36 with a table outlining feature areas. 
 author: kamaybac
 ms.author: kamaybac
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: conceptual
 ms.date: 04/19/2024
-audience: Application User
-ms.search.region: Global
 ms.custom:
   - bap-template
   - evergreen
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
+ms.search.form:
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.36 (October 2023)
@@ -35,7 +35,7 @@ The following table lists the features that are included in this release. We mig
 | Master planning | Ignore specific transaction types using Planning Optimization | [Exclude specific transactions or transaction types from master planning](../master-planning/ignore-transaction-types.md) | Feature management:<br>*Ignore specific transaction types using Planning Optimization* and/or *Exclude specific sales orders or sales order lines in Planning Optimization* |
 | Product information management | [Manage compliance with export control restrictions](/dynamics365/release-plan/2023wave2/finance-supply-chain/dynamics365-supply-chain-management/manage-compliance-export-control-restrictions) | [Advanced export management overview](../pim/export-control-overview.md) | Feature management:<br>*Advanced export management configuration*  |
 | Warehouse management | Dynamic printer selection | [Dynamic printer selection](../warehousing/dynamic-printing-selection.md) | Enabled by default |
-| Warehouse management | Operate warehouses connected to external order management systems | [Warehouse management only mode overview](../warehousing/wms-only-mode-overview.md) | Feature management:<br>*(Preview) Warehouse management only mode* |
+| Warehouse management | Operate warehouses connected to external order management systems | [Warehouse management only mode overview](../warehousing/wms-only-mode-overview.md) | Feature management:<br>*Warehouse management only mode* |
 
 ## Feature enhancements included in this release
 

@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Cost entries
-description: This article provides information about cost entries and when they are created. A cost entry is a record that registers the quantity and cost of a given event.
+description: Learn about cost entries and when they are created. A cost entry is a record that registers the quantity and cost of a given event.
 author: JennySong-SH
-ms.date: 06/20/2017
+ms.author: yanansong
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: InventCostOnhandItem
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: dd2663d8-bcc0-47b1-b36d-57433143487c
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: yanansong
 ms.search.validFrom: 2016-02-28
+ms.search.form: InventCostOnhandItem
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: dd2663d8-bcc0-47b1-b36d-57433143487c
 ---
 
 # Cost entries

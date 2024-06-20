@@ -5,13 +5,14 @@ author: moaamer
 ms.author: saraschi
 ms.topic: article
 ms.date: 01/19/2023
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.search.form: AssetTable
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 8be64197-fea1-4a34-8af2-d939919c28b1
+ms.custom: evergreen
 ---
 
 # Set up fixed assets

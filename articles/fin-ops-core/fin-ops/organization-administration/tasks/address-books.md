@@ -6,7 +6,7 @@ ms.author: brking
 ms.topic: how-to
 ms.date: 08/09/2019
 ms.custom: 
-ms.reviewer: sericks 
+ms.reviewer: johnmichalak 
 audience: Application User 
 ms.search.region: Global
 ms.search.validFrom: 2016-06-30

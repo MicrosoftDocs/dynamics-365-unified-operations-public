@@ -4,7 +4,7 @@ description: Learn about how to record vendor invoices that are not associated w
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 02/08/2023
+ms.date: 06/18/2024
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User 
@@ -18,9 +18,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This task guide will show how to record vendor invoices that are not associated with purchase orders. Examples of this type of invoice include expenses for supplies or services.  This recording uses the USMF demo company.
+This task guide will show how to record vendor invoices that are not associated with purchase orders. Examples of this type of invoice include expenses for supplies or services. This recording uses the USMF demo company.
 
-1. Go to **Navigation pane > Modules > Accounts payable > Workspaces > Vendor invoice entry**.
+1. Go to **Accounts payable > Workspaces > Vendor invoice entry**.
 2. On the **Action pane**, click **New invoice journal**.
 3. Click **New**.
 4. In the **Name** field, enter the journal name or click the drop down button to open the lookup.

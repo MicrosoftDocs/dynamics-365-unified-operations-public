@@ -1,15 +1,15 @@
 ---
 title: Inventory Visibility inventory summary
-description: This article describes how to use inventory summary feature, which provides an inventory summary for products together with all dimensions.
-author: yufeihuang
+description: Learn how to use inventory summary feature, which provides an inventory summary for products together with all dimensions.
+author: yufei-huang
 ms.author: yufeihuang
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 12/01/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # Inventory Visibility inventory summary

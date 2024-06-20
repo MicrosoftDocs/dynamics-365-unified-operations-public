@@ -19,8 +19,6 @@ ms.dyn365.ops.version: Version 7.0.0
 [!include [banner](../../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../../includes/peap-3.md)]
-
 You can configure the system to send email messages to users when workflow-related events occur. For example, email messages can be sent to users when documents are assigned to them for approval. The demo data company used to create this procedure is USMF.
 
 1. Go to **Navigation pane > Modules > System administration > Users > Users**.

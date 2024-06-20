@@ -1,17 +1,16 @@
 ---
-title: Archive data in Dynamics 365 finance and operations apps with Dataverse (preview)
+title: Archive data in Dynamics 365 finance and operations apps with Dataverse
 description: Learn about how to archive data in Microsoft Dynamics 365 finance and operations apps, including an overview on business application data lifecycles.
 author: pnghub
 ms.author: gned
 ms.topic: conceptual
-ms.date: 4/10/2024
-ms.custom:
+ms.custom: 
+  - bap-template
+ms.date: 5/31/2024
 ms.reviewer: twheeloc
 ---
 
-# Archive data in Dynamics 365 finance and operations apps with Dataverse (preview)
-
-[!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
+# Archive data in Dynamics 365 finance and operations apps with Dataverse
 
 This article describes how to archive data in Microsoft Dynamics 365 finance and operations apps. Finance and operations apps support custom retention policies for securely archiving and retaining unlimited data for the long term in a cost-efficient way. Finance and operations apps set no limit on active data and therefore support your business growth. Nevertheless, you might want to consider moving historical, inactive data that's required for compliance and regulatory reasons to Dataverse long term retention.
 
@@ -53,7 +52,11 @@ When an archival job is initiated from the Finance and operations archive worksp
  -  Data that meets the archival criteria is marked as ready for archiving in the live finance and operations application tables.
  -  The live table records are marked as retained (archived) in Dataverse long term retention.
  -  A reconciliation process verifies that all the live application table records that were previously marked as ready for archiving are available in Dataverse long term retention.
- -  Live application data that was previously marked as ready for archiving is moved to history tables in the Dynamics 365 finance database and deleted from the live application tables. Specific inquiry pages in Dynamics 365 finance can access this history table data. Data from history tables can be either restored to the live table or permanently purged. The permanently purge functionality will be supported in a future release.
+ -  Live application data that was previously marked as ready for archiving is moved to history tables in the finance and operations apps database and deleted from the live application tables. Specific inquiry pages in Dynamics 365 finance and operations apps can access this history table data. Data from history tables can be either restored to the live table or permanently purged. The permanently purge functionality will be supported in a future release.
+
+## Restoring data from history tables to live tables
+
+Data from history tables can be restored back to live tables from the archive workspace. When data is restored back from history tables to live tables, the corresponding archived data in Dataverse long term retention also goes through a status change from inactive to active, as the data is no longer considered to be archived. 
 
 ## Customization
 
@@ -74,9 +77,9 @@ The archival framework includes custom fields and custom tables in supported fun
 
 ## Understanding Dataverse storage costs for archived data
 
-On average, every gigabyte (GB) that's moved from the Finance application to Dataverse long term retention consumes 50 percent less database capacity. Live application data is compressed in Dataverse long term retention. Savings can vary, depending on the table data. You might notice savings that are more than or less than 50 percent. Savings might be more evident when higher volumes of data (hundreds of GBs) are retained.
+On average, every gigabyte (GB) that's moved from the finance and operations apps to Dataverse long term retention consumes 50 percent less database capacity. Live application data is compressed in Dataverse long term retention. Savings can vary, depending on the table data. You might notice savings that are more than or less than 50 percent. Savings might be more evident when higher volumes of data (hundreds of GBs) are retained.
 
-Archived data is made available in the history tables by allowing access through an inquiry page in Finance. History tables that have no indexes consume on average 30 percent (or more) less capacity than the live tables, depending on the table and indexes. If in-app access to archived data isn't required, permanently delete the data from the history tables to achieve full savings.
+Archived data is made available in the history tables by allowing access through an inquiry page in finance and operations apps. History tables that have no indexes consume on average 30 percent (or more) less capacity than the live tables, depending on the table and indexes. If in-app access to archived data isn't required, permanently delete the data from the history tables to achieve full savings.
 
 ## Storage capacity reports
 

@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Asset event history
-description: This article explains how to access asset event history in Asset Management.
+description: Learn how to access asset event history in Asset Management, including an overview on the Details FastTab of the Asset event history page.
 author: johanhoffmann
-ms.date: 06/26/2019
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
+ms.topic: article
+ms.date: 06/26/2019
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ---
 
 # Asset event history

@@ -1,15 +1,15 @@
 ---
 title: Inventory Visibility tips
-description: This article provides a few tips that you should consider when you set up and use the Inventory Visibility Add-in.
-author: yufeihuang
-ms.date: 08/02/2021
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
+description: Access a few tips that you should consider when you set up and use the Inventory Visibility Add-in, including tips about Microsoft Entra environments.
+author: yufei-huang
 ms.author: yufeihuang
+ms.topic: article
+ms.date: 08/02/2021
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-08-02
+ms.search.form:
 ms.dyn365.ops.version: 10.0.21
 ---
 

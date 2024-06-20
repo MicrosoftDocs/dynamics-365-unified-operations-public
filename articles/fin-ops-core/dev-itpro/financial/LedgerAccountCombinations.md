@@ -4,8 +4,8 @@ description: Learn about combinations of ledger accounts in the dimension framew
 author: RyanCCarlson2
 ms.author: rcarlson
 ms.topic: article
-ms.date: 05/01/2019
-ms.reviewer: kfend
+ms.date: 06/10/2024
+ms.reviewer: johnmichalak
 audience: Developer
 ms.assetid: 20e6b97e-30ed-48d4-b63c-a073f80300b2
 ms.search.region: Global

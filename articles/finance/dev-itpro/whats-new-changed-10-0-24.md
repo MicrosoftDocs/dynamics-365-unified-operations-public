@@ -18,7 +18,6 @@ ms.dyn365.ops.version: 10.0.24
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 This article lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.24. This version has a build number of 10.0.1084 and is available as follows:
 

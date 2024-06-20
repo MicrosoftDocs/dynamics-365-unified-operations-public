@@ -19,8 +19,10 @@ items:
         href: customer-migration.md 
       - name: Human Resources infrastructure merge known issues
         href: hr-migration-issues.md
-      - name: Human Resources customer merge 
+      - name: Human Resources customer merge overview  
         href: hr-customer-merge.md 
+      - name: Human Resources customer merge FAQ
+        href: customer-merge.md
       - name: Human Resources migration go-live readiness review 
         href: hr-migration-admin-go-live-readiness-review.md
     - name: What's new or changed
@@ -461,6 +463,8 @@ items:
       items:
       - name: Employee self service overview
         href: hr-employee-manager-self-service-overview.md
+      - name: Employee self service workspace summary
+        href: ess-workspace-summary.md
       - name: Manager self service overview  
         href: mss-overview.md
       - name: Create custom links in Manager self service
@@ -551,7 +555,7 @@ items:
             href: ../human-resources/hr-personnel-mass-hire-projects.md
           - name: Create mass hire projects
             href: ../human-resources/hr-personnel-create-mass-hire-project.md
-        - name: Recruiting requests (merged infrastructure)
+        - name: Recruiting requests 
           items:
           - name: Recruit job candidates
             href: hr-personnel-recruit.md  
@@ -1059,7 +1063,13 @@ items:
           href: hcm-position-type.md
         - name: HCM unions entity
           href: hcm-union.md
-        - name: Variable compensation type entity  
+        - name: HCM person identification entities
+          href: hcm-person-id.md
+        - name: HCM job compensation entities
+          href: hcm-job-comp.md
+        - name: HCM person details entities
+          href: hcm-person-details.md
+        - name: Variable compensation type entity        
           href: variable-comp.md
         - name: Leave bank transaction entity
           href: hr-leave-bank-trans.md
@@ -1073,6 +1083,22 @@ items:
           href: hr-payroll-job-type.md
         - name: Payroll historical person name 
           href: hr-payroll-history-person.md
+        - name: HCM fixed compensation employee entity
+          href: hcm-fixed-comp-empl.md
+        - name: HCM compensation fixed plan entity
+          href: hcm-comp-fixed-plan.md
+        - name: HCM employment V2 entity
+          href: hr-employ-v2.md
+        - name: Employee detail entity
+          href: hr-employ-detail.md
+        - name: HCM identification type entity
+          href: hcm-id-type.md
+        - name: HCM Labor union entity
+          href: hcm-labor-union.md
+        - name: HCM position base entity
+          href: hcm-position-base.md
+        - name: HCM position detail entity
+          href: hcm-position-detail.md
         - name: Payroll job base 
           href: hr-payroll-job-base.md
         - name: Payroll job family 
@@ -1119,6 +1145,12 @@ items:
         items:
           - name: API payroll integration with Dayforce
             href: hr-admin-payroll-api-integration-dayforce.md
+  - name: Responsible AI
+    items:
+    - name: Overview 
+      href: transpar-note-hr.md
+    - name: Employee self service workspace summary
+      href: ess-workspace-summary.md
   - name: Development and administration for finance and operations apps 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 

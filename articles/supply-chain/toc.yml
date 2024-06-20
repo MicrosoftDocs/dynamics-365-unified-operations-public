@@ -14,7 +14,7 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
-        - name: Supply Chain Management 10.0.40 (July 2024)
+        - name: Supply Chain Management 10.0.40 (June 2024)
           href: get-started/whats-new-scm-10-0-40.md
         - name: Supply Chain Management 10.0.39 (April 2024)
           href: get-started/whats-new-scm-10-0-39.md
@@ -192,6 +192,8 @@
           href: ../fin-ops-core/dev-itpro/get-started/implement-multiple-projects-aad-tenant.md?context=/dynamics365/context/supply-chain
     - name: Troubleshooting and FAQs
       href: supply-chain-management-troubleshooting.md
+    - name: AI summaries with Copilot
+      href: get-started/copilot-summaries-overview.md
     - name: Globalization Studio
       items:
       - name: Globalization Studio overview
@@ -366,7 +368,7 @@
             href: ../finance/localizations/russia/rus-goods-transit-vendor.md?context=/dynamics365/context/supply-chain
     - name: Distributed hybrid topology
       items:
-      - name: Scale unit capability for Supply Chain Management is currently paused
+      - name: Scale unit capability for Supply Chain Management is deprecated and no longer available to new customers
         href: cloud-edge/cloud-edge-landing-page.md
     - name: Asset management
       items:
@@ -707,7 +709,7 @@
         href: cost-management/inventory-costing-faq.md
       - name: Prerequisites for standard costs
         items:
-        - name: Prerequisites for standard costs overview
+        - name: Prerequisites for standard costs
           href: cost-management/prerequisites-standard-costs.md
         - name: Standard cost conversion overview
           href: cost-management/standard-cost-conversion-overview.md
@@ -1851,7 +1853,7 @@
           href: master-planning/planning-optimization/purchase-requisitions.md
         - name: Production planning
           href: master-planning/planning-optimization/production-planning.md
-        - name: Item substitution for formulas
+        - name: Item substitution for formulas and bills of materials
           href: master-planning/item-substitution.md
         - name: Set up scrap to calculate raw material requirements
           href: master-planning/scrap-calculations.md
@@ -1867,8 +1869,6 @@
           href: master-planning/planning-optimization/marking.md
         - name: Intercompany planning
           href: master-planning/planning-optimization/Intercompany-planning.md
-        - name: Intercompany planning groups for demand forecasting
-          href: demand-planning/intercompany-planning-groups-demand-forecasting.md
         - name: Exclude products with certain product lifecycle states
           href: master-planning/planning-optimization/product-lifecycle-state.md
         - name: Coverage time fences
@@ -1947,10 +1947,10 @@
           items:
           - name: Demand forecasting overview
             href: master-planning/introduction-demand-forecasting.md
-          - name: Intercompany planning groups for demand forecasting
-            href: demand-planning/intercompany-planning-groups-demand-forecasting.md
           - name: Demand forecasting setup
             href: master-planning/demand-forecasting-setup.md
+          - name: Intercompany planning groups for demand forecasting
+            href: master-planning/intercompany-planning-groups-demand-forecasting.md
           - name: Generate a statistical baseline forecast
             href: master-planning/generate-statistical-baseline-forecast.md
           - name: Make manual adjustment to the baseline forecast
@@ -2019,9 +2019,11 @@
       items:
       - name: Demand planning home page
         href: demand-planning/demand-planning-home-page.md
+      - name: What's new or changed in Demand planning
+        href: demand-planning/whats-new-demand-planning.md
       - name: Setup and administration
         items:
-        - name: Install and enable the Demand planning app
+        - name: Install and enable Demand planning
           href: demand-planning/install-demand-planning.md
         - name: Security roles and row-level security
           href: demand-planning/users-access.md
@@ -2047,6 +2049,8 @@
           href: demand-planning/design-forecast-models.md
         - name: Use your own custom Azure Machine Learning algorithms in Demand planning
           href: demand-planning/custom-azure-machine-learning-algorithms.md
+      - name: Use phase in/out functionality to simulate planned changes
+        href: demand-planning/phase-in-out.md
       - name: Time series and planning data
         href: demand-planning/time-series.md
       - name: Analyze demand plans with Copilot (preview)
@@ -2055,9 +2059,6 @@
         href: demand-planning/export-data.md
       - name: Rolling forecasts
         href: demand-planning/rolling-forecasts.md
-      - name: Intercompany planning groups for demand forecasting
-        href: demand-planning/intercompany-planning-groups-demand-forecasting.md
-     
     - name: Mobile app (deprecated)
       items:
       - name: Mobile app home page
@@ -2196,6 +2197,8 @@
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?context=/dynamics365/context/supply-chain
         - name: View workflow history
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?context=/dynamics365/context/supply-chain
+        - name: Workflow history summary
+          href: ../fin-ops-core/fin-ops/organization-administration/workflow-history-summary.md?context=/dynamics365/context/supply-chain  
         - name: Configure the system to send workflow-related email to users
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?context=/dynamics365/context/supply-chain
         - name: Workflow types
@@ -3026,8 +3029,6 @@
         href: rebate-management/rebate-management-overview.md
       - name: Set up and configure the Rebate management module
         items:
-        - name: Turn the Rebate management module on or off
-          href: rebate-management/rebate-management-enable.md
         - name: Rebate management parameters
           href: rebate-management/rebate-management-parameters.md
         - name: Rebate management deal workflows
@@ -3528,7 +3529,7 @@
           href: transportation/transportation-management-discount.md
         - name: LTL classes
           href: transportation/ltl-class.md
-        - name: NMFC codes
+        - name: Work with NMFC codes in Dynamics 365 Supply Chain Management
           href: transportation/nmfc-codes.md
         - name: Schedule appointments
           items:
@@ -3601,15 +3602,15 @@
       - name: Landed cost data entities
         items:
         - name: Landed cost entities overview
-          href: landed-cost\landed-cost-entities-overview.md
+          href: landed-cost/landed-cost-entities-overview.md
         - name: Voyage creation entities
-          href: landed-cost\landed-cost-entities-voyage-creation.md
+          href: landed-cost/landed-cost-entities-voyage-creation.md
         - name: Cost transaction entities
-          href: landed-cost\landed-cost-entities-cost-transactions.md
+          href: landed-cost/landed-cost-entities-cost-transactions.md
         - name: Container activities entity
-          href: landed-cost\landed-cost-entities-container-activities.md
+          href: landed-cost/landed-cost-entities-container-activities.md
         - name: Vendor invoice entities
-          href: landed-cost\landed-cost-entities-vendor-invoices.md
+          href: landed-cost/landed-cost-entities-vendor-invoices.md
     - name: Warehouse management
       items:
       - name: Warehouse management overview
@@ -3634,7 +3635,7 @@
           href: warehousing/inbound-putaway-by-container-type.md
         - name: Cross-dock products from receiving warehouse to stores
           href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
-        - name: Set up a location directive for purchase order put-away
+        - name: Set up a location directive for purchase order putaway
           href: transportation/tasks/set-up-location-directive-purchase-order-put-away.md
         - name: Set up a work template for purchase orders
           href: warehousing/tasks/set-up-work-template-purchase-orders.md
@@ -3850,6 +3851,8 @@
             href: warehousing/warehouse-app-company-logo.md
           - name: Mobile bar code support
             href: warehousing/mobile-barcode-support.md
+          - name: Advanced barcode scanner configuration
+            href: warehousing/warehouse-app-adv-scanner-config.md
           - name: Scan bar codes using a camera in the Warehouse Management mobile app
             href: warehousing/scan-bar-codes-using-a-camera.md
         - name: Set up fields and menus for mobile devices
@@ -3882,7 +3885,7 @@
             href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
           - name: Mixed license plate receiving on a mobile device
             href: warehousing/mixed-license-plate-receiving.md
-          - name: Set up a mobile device menu item for completing mixed license plates (preview)
+          - name: Set up a mobile device menu item for completing mixed license plates
             href: warehousing/mobile-device-complete-mixed-lp-menu.md
           - name: Configure Display older batches within warehouse on a mobile device
             href: warehousing/display-older-batches-within-warehouses.md
@@ -4012,7 +4015,7 @@
             href: warehousing/application-insights-monitor-usage-performance.md
         - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to finance and operations
           href: warehousing/upgrade-migration-warehouse-management-processes.md
-      - name: Warehouse management only mode (preview)
+      - name: Warehouse management only mode
         items:
         - name: Warehouse management only mode overview
           href: warehousing/wms-only-mode-overview.md
@@ -4044,6 +4047,8 @@
       items:
       - name: Overview
         href: responsible-ai-overview.md
+      - name: Responsible AI FAQ for AI summaries with Copilot
+        href: faq-summaries.md
       - name: Responsible AI FAQ for Analyze demand plans with Copilot (preview)
         href: faq-demand-planning-copilot.md
       - name: Responsible AI FAQ for the Confirmed purchase orders with changes workspace

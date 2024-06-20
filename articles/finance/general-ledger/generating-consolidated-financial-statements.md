@@ -4,7 +4,7 @@ description: Learn about the various scenarios where you might generate consolid
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 07/09/2018
+ms.date: 06/17/2024
 ms.custom: 
 ms.reviewer: twheeloc
 audience: Application User
@@ -113,8 +113,6 @@ Often, different legal entities have different charts of accounts but still want
 
 Multiple links to financial dimensions can be added to each row in the row definition for each unique company's chart of accounts. In the following illustration, the USMF company uses the set of accounts in the first **Link to Financial Dimensions** column (column J), and the DEMF company uses the accounts in the second **Link to Financial Dimensions** column (column K).
 
-> [!TIP]
-> For more information about the **Link to Financial Dimensions** cell, see Specify Link to Financial Dimensions cell.
 
 ![Set accounts first link to financial dimensions.](./media/set-accounts-first-Link-to-Financial-Dimensions.png "Set accounts first link to financial dimensions")
 

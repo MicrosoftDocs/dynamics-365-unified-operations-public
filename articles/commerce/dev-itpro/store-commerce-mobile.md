@@ -4,13 +4,15 @@
 title: Store Commerce app for mobile platforms
 description: This article describes how to get started using the Microsoft Dynamics 365 Commerce Store Commerce app for Android and iOS.
 author: stuharg
-ms.date: 08/22/2023
+ms.date: 05/14/2024
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2018-10-29
+ms.custom: 
+  - bap-template
 
 ---
 
@@ -29,20 +31,36 @@ The Store Commerce mobile apps retain full functional parity with current Retail
 
 ## App architecture
 
-The Store Commerce mobile apps use the same topology as the Store Commerce app for Windows when it's deployed in hybrid mode. The Store Commerce mobile apps are shell applications that render Store Commerce for web directly from the Commerce Scale Unit (CSU), and connect to Headless Commerce and Commerce headquarters via the CSU. The shell application model enables Store Commerce apps to support a dedicated hardware station for direct integration with a payment terminal, printer, cash drawer, and other peripherals. You don't have to set up a shared hardware station to use hardware devices. 
+The Store Commerce mobile apps use the same topology as the Store Commerce app for Windows when deployed in hybrid mode. The Store Commerce mobile apps are shell applications that render Store Commerce for web directly from the Commerce Scale Unit (CSU), and connect to Headless Commerce and Commerce headquarters via the CSU. The shell application model enables Store Commerce apps to support a dedicated hardware station for direct integration with a payment terminal, printer, cash drawer, and other peripherals. You don't have to set up a shared hardware station to use hardware devices. 
 
-To update a Store Commerce mobile app, just update the CSU. All new POS functionality and features will automatically be picked up by the app. For more information about how to update the CSU, see [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md).
+To update a Store Commerce mobile app, just update the CSU. All new POS functionality and features are automatically picked up by the app. For more information about how to update the CSU, see [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md).
 
-The shell apps are serviced through app store updates. When a minor version reaches general availability (GA), Microsoft will publish it to the app stores. Microsoft might also publish patches between minor version updates to release high-priority bug fixes.
+The shell apps are serviced through app store updates. When a minor version reaches general availability (GA), Microsoft publishes it to the app stores. Microsoft might also publish patches between minor version updates to release high-priority bug fixes.
+
+## Feature parity with Store Commerce for Windows
+
+> [!IMPORTANT]
+> The Dynamics 365 Payment Connector for Adyen doesn't currently support Store Commerce for iOS with local network architecture configurations.
+
+The following table compares the capabilities of the Store Commerce app across Windows, Android, and iOS platforms.
+
+| Feature                                                      | Windows | Android | iOS  |
+| ------------------------------------------------------------ | ------- | ------- | ---- |
+| Dedicated hardware station                                   | Yes     | Yes     | Yes  |
+| Shared hardware station                                      | Yes     | Yes     | Yes  |
+| Communication with networked peripherals (payment terminal, printer, and cash drawer) | Yes     | Yes     | Yes  |
+| OLE for Point of Sale (OPOS) peripherals through a local hardware station | Yes     | No      | No   |
+| Offline mode                                                 | Yes     | No      | No   |
+| [Adyen cloud architecture](https://docs.adyen.com/point-of-sale/design-your-integration/choose-your-architecture/) | Yes     | Yes     | Yes  |
+| [Adyen local architecture](https://docs.adyen.com/point-of-sale/design-your-integration/choose-your-architecture/) | Yes     | Yes     | No   |
 
 ## Prerequisites
 
-The Store Commerce mobile apps require Dynamics 365 Commerce, specifically the Commerce headquarters and CSU components. The following table lists the minimum operating system (OS) and CSU versions that are required by the Android and iOS mobile apps. 
+The Store Commerce mobile apps require the CSU and Commerce headquarters components of Dynamics 365 Commerce. The following table lists the minimum operating system (OS) and CSU versions that are required by the Android and iOS mobile apps. 
 
-| Prerequisite | Android      | iOS  |
-| ------------ | ------------ | ---- |
-| OS version   | 7.0          | 15.0 |
-| CSU version  | 9.38.22266.8 | TBD  |
+| Prerequisite | Android | iOS  |
+| ------------ | ------- | ---- |
+| OS version   | 8.1     | 17.4 |
 
 ## Install the app
 
@@ -73,16 +91,16 @@ You can create a new register and associate it with the device that you created,
 
 ### Screen layout setup
 
-If you're repurposing a screen layout that is included in the demo data that is provided with your Dynamics 365 Commerce license, the Store Commerce app will automatically select the included compact layout if the screen resolution of your device is less than 480 &times; 853 pixels in the portrait orientation. However, if you're creating a screen layout from scratch, or if your mobile device uses a larger resolution than the compact layout supports, ensure that you create a resolution and associated button grids that are appropriate for the phone or tablet that you plan to deploy to. For more information about screen layout configurations, see [POS user interface visual configurations](../pos-screen-layouts.md). 
+If you're repurposing a screen layout that is included in the demo data that is provided with your Dynamics 365 Commerce license, the Store Commerce app automatically selects the included compact layout if the screen resolution of your device is less than 480 &times; 853 pixels in the portrait orientation. However, if you're creating a screen layout from scratch, or if your mobile device uses a larger resolution than the compact layout supports, ensure that you create a resolution and associated button grids that are appropriate for the phone or tablet that you plan to deploy to. For more information about screen layout configurations, see [POS user interface visual configurations](../pos-screen-layouts.md). 
 
-After devices and registers have been configured, in Commerce headquarters, go to **Retail and Commerce \> Retail and Commerce ID \> Distribution Schedules**, and run the registers job.
+After devices and registers are configured, in Commerce headquarters go to **Retail and Commerce \> Retail and Commerce ID \> Distribution Schedules** and run the registers job.
 
 ## Activate a device
 
 To activate a device on a Store Commerce mobile app, follow these steps.
 
 1. Open the app on the mobile device.
-1. Enter the CPOS URL, which you can find on the environment details page in LCS, or on the **Channel profiles** page in Commerce headquarters (**Retail and Commerce \> Channel setup \> Channel profiles**).
+1. Enter the Store Commerce for web (formerly Cloud POS, or CPOS) URL, which you can find on the environment details page in LCS, or on the **Channel profiles** page in Commerce headquarters (**Retail and Commerce \> Channel setup \> Channel profiles**).
 1. Sign in by using the credentials of a worker who has permission to manage devices.
 1. Select the store that is associated with the register that you created or reused in Commerce headquarters.
 1. Select the register that you associated with the device that you created in Commerce headquarters.
@@ -90,22 +108,35 @@ To activate a device on a Store Commerce mobile app, follow these steps.
 
 For more information about device activation, see [Activate Store Commerce using guided activation](retail-device-activation.md#activate-store-commerce-using-guided-activation).
 
-## Feature parity with Store Commerce for Windows
+## Peripheral setup
 
-> [!IMPORTANT]
-> The Dynamics 365 Payment Connector for Adyen does not currently support Store Commerce for iOS with local network architecture configurations.
+The Store Commerce apps for Android and iOS can communicate with most commonly used peripherals that use network protocols for connectivity. Peripherals that require OLE for OPOS drivers or direct USB connection typically require a shared hardware station. For more information about network peripherals, see [Support for network peripherals](network-peripherals.md). 
 
-The following table compares the capabilities of the Store Commerce app across Windows, Android, and iOS platforms.
+### Receipt printer
 
-| Feature                                                      | Windows | Android | iOS  |
-| ------------------------------------------------------------ | ------- | ------- | ---- |
-| Dedicated hardware station                                   | Yes     | Yes     | Yes  |
-| Shared hardware station                                      | Yes     | Yes     | Yes  |
-| Communication with networked peripherals (payment terminal, printer, and cash drawer) | Yes     | Yes     | Yes  |
-| OLE for Point of Sale (OPOS) peripherals through a local hardware station | Yes     | No      | No   |
-| Offline mode                                                 | Yes     | No      | No   |
-| [Adyen cloud architecture](https://docs.adyen.com/point-of-sale/design-your-integration/choose-your-architecture/) | Yes     | Yes     | Yes  |
-| [Adyen local architecture](https://docs.adyen.com/point-of-sale/design-your-integration/choose-your-architecture/) | Yes     | Yes     | No   |
+The network protocols for Epson and Star printers enable receipt printing on mobile devices running Store Commerce app. For more information, see [Support for network peripherals](network-peripherals.md#epson-or-star-micronics-receipt-printer-and-a-cash-drawer). 
+
+### Cash drawer
+
+Cash drawers that are connected through an Epson or Star receipt printer's drawer kick (DK) port are supported. The cash drawer configuration in the hardware profile is similar to that of the receipt printer to which it's connected. Specify "Network" for the **Drawer setting**, specify "Epson" or "Star" for the **Device name**, and then in the **Cash drawer** setting in the register's IP Addresses view, enter the printer's IP address into the **IP address** field. 
+
+### Barcode scanner
+
+The following options for barcode and quick-response (QR) code scanning are available for the Store Commerce app for mobile devices:
+
+**Camera-based barcode scanning - native barcode scanning**: The Store Commerce app for Android and iOS can scan barcodes and QR codes with the rear-facing camera. This out-of-box solution supports all workflows where a barcode scanner can be used to capture product, customer, or receipt data. 
+
+To enable native scanning in Store Commerce app, go to Dynamics 365 Commerce headquarters, open the hardware profile for the register being used on the mobile device, and set the **Scanner** setting for the first scanner section to "Device". 
+
+**Camera-based barcode scanning - third party app**: Products such as Scandit Express and Samsung's Knox Capture can be used to scan barcodes on Store Commerce mobile apps. These products require a license to use, but they offer advantages and features that the out-of-box barcode scanning capabilities don't. 
+
+**Optical scanner**: Handheld devices that are equipped with an optical barcode scanner usually include a location in settings or a utility that configures the scanner. Enabling barcode scanning for the Store Commerce app with one of these devices typically only requires that the optical scanner is configured for keyboard wedge mode, and that a newline character is appended to the decoded output. 
+
+**Peripheral scanner**: Barcode scanners that attach to mobile devices as a sled and communicate via Bluetooth have been successfully used with the Store Commerce app to scan barcodes and QR codes. 
+
+### Payment terminal
+
+See the [Payment terminals and PIN pads](../retail-peripherals-overview.md#payment-terminals-and-pin-pads) section of the [Retail Peripherals](../retail-peripherals-overview.md) help topic for information about how to connect Store Commerce mobile app to a payment terminal. 
 
 ## Additional resources
 

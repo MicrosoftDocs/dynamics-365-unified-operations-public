@@ -18,6 +18,7 @@ ms.reviewer: kamaybac
 
 [!INCLUDE[responsible-ai-features](../includes/responsible-ai-features.md)]
 
+- [Responsible AI FAQ for AI summaries with Copilot](faq-summaries.md)
 - [Responsible AI FAQ for Analyze demand plans with Copilot (preview)](faq-demand-planning-copilot.md)
 - [Responsible AI FAQ for the Confirmed purchase orders with changes workspace](faq-confirmed-po-changes.md)
 - [Responsible AI FAQ for Inquire into inventory with Copilot through API (preview)](faq-inventory-query.md)

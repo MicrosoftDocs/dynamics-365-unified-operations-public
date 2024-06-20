@@ -5,7 +5,7 @@ author: kfend
 ms.author: kfend
 ms.topic: article
 ms.date: 05/12/2022
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-04-01

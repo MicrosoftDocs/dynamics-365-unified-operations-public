@@ -8,7 +8,7 @@ ms.date: 04/12/2024
 ms.custom: 
   - bap-template
   - evergreen
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2020-02-29

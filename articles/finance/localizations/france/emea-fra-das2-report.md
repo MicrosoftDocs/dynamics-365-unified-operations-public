@@ -50,7 +50,7 @@ After you've finished downloading the ER configurations from LCS, follow these s
 
 ### Example
 
-[![Example of a configuration.](../media/emea-fra-das2-report-configuration.png)]
+![Example of a configuration.](../media/emea-fra-das2-report-configuration.png)]
 
 On line 1 of the preceding configuration, main account **622000**, which is used to post fee expense transactions, is mapped to classification **C** (**Commissions**), which is established by the tax authority.
 

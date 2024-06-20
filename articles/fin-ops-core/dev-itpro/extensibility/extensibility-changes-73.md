@@ -5,7 +5,7 @@ author: FrankDahl
 ms.author: fdahl
 ms.topic: article
 ms.date: 04/10/2018
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2017-12-20

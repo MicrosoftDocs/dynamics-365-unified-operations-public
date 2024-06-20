@@ -1,19 +1,17 @@
 ---
-title: Archive customization (preview)
-description: Learn about how the archive feature in Microsoft Dynamics 365 Finance supports table customizations, including code examples.
+title: Archive customization
+description: Learn about how the archive feature in Microsoft finance and operations apps supports table customizations, including code examples.
 author: pnghub
 ms.author: gned
 ms.topic: conceptual
-ms.date: 2/06/2024
+ms.date: 06/13/2024
 ms.custom:
 ms.reviewer: twheeloc
 
 ---
 # Archive customization (preview)
 
-[!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
-
-This article describes how the archive feature in Microsoft Dynamics 365 Finance supports customization. The archival framework supports extensions to include custom table fields and custom tables in supported functional scenarios.
+This article describes how the archive feature in Microsoft finance and operations apps supports customization. The archival framework supports extensions to include custom table fields and custom tables in supported functional scenarios.
 
 ## Add custom fields in history tables and business intelligence entities
 
@@ -27,14 +25,14 @@ Transactions records are moved to the history tables. The schema of a history ta
 
 ### Business entity
 
-Dataverse interacts with Dynamics 365 Finance and Operations. These virtual entities are used to retrieve data from the Finance and Operations database and save it to the corresponding tables in the Dataverse long term retention.
+Dataverse interacts with finance and Operations. These virtual entities are used to retrieve data from the finance and operations database and save it to the corresponding tables in the Dataverse long term retention.
 
 > [!IMPORTANT]
 > Don't add relationships between the entities.
 
 ### Step 1: Add fields to the history table via extensions
 
-The archival framework requires that all live table columns are mirrored in the corresponding history tables. Use table extensions to add the custom fields to history tables. For more information about how to add fields to history tables through extension in Finance, see [Add fields to tables through extension](../../dev-itpro/extensibility/add-field-extension.md).
+The archival framework requires that all live table columns are mirrored in the corresponding history tables. Use table extensions to add the custom fields to history tables. For more information about how to add fields to history tables through extension in finance and operations apps, see [Add fields to tables through extension](../../dev-itpro/extensibility/add-field-extension.md).
 
 ### Step 2: Add fields to BI entities via extensions
 
@@ -92,7 +90,7 @@ final class LedgerArchiveAutomationJobRequestCreator_GeneralLedger_Extension
         return builder.completeArchiveJobPostRequest(; 
 ```
 
-### Finance table names in live, history, and Dataverse-managed data lake tables
+### Finance and operations table names in live, history, and Dataverse-managed data lake tables
 
 | Scenario | Live table | History table | BI entity | Dataverse-managed data lake table |
 |---|---|---|---|---|
