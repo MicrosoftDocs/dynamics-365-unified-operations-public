@@ -1,15 +1,15 @@
 ---
 title: User-based authentication FAQ
-description: This article provides answers to many of the most frequently asked questions about user-based authentication (device code flow) for the Warehouse Management mobile app.
+description: Access answers to many of the most frequently asked questions about user-based authentication (device code flow) for the Warehouse Management mobile app.
 author: JTOne123
 ms.author: pavlodatsiuk
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: conceptual
 ms.date: 11/01/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # User-based authentication FAQ

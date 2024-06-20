@@ -1,15 +1,15 @@
 ---
 title: What's new or changed in the Warehouse Management mobile app
-description: This article lists the new and changed features for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+description: This article lists the new and changed features for each released version of the Warehouse Management app for Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 08/15/2023
-ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: mirzaab
+ms.topic: article
+ms.date: 08/15/2023
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-06-07
+ms.search.form:
 ms.dyn365.ops.version: 10.0.21
 ---
 

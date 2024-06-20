@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Plan loads using hub consolidation overview
-description: This article describes the feature for consolidating shipments in a hub when you deliver goods from different warehouses to the same customer, or when you receive goods from multiple vendors in the same warehouse.
+description: Learn about the feature for consolidating shipments in a hub when you deliver goods from different warehouses to the same customer.
 author: Weijiesa
-ms.date: 07/25/2019
+ms.author: weijiesa
 ms.topic: overview
-
-# optional metadata
-
-ms.search.form: WHSLoadPlanningWorkbench, WHSHistory, WHSLoadTable, WHSLoadPlanningListPage, TMSParameters, WHSOutboundLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 07/25/2019
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
 ms.collection: get-started
-ms.assetid: d27b0926-a534-4caf-a2a3-acbc7c440bca
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: weijiesa
 ms.search.validFrom: 2016-02-28
+ms.search.form: WHSLoadPlanningWorkbench, WHSHistory, WHSLoadTable, WHSLoadPlanningListPage, TMSParameters, WHSOutboundLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: d27b0926-a534-4caf-a2a3-acbc7c440bca
 ---
 
 # Plan loads using hub consolidation overview

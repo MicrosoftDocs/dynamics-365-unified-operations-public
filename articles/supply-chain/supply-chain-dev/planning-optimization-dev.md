@@ -1,15 +1,15 @@
 ---
 title: Unified developer experience for planning optimization (preview)
-description: This topic provides an overview of the process for setting up a development environment and testing your extensions for the Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management.
+description: Access overview of the process for setting up a development environment and testing your extensions for the Planning Optimization Add-in.
 author: bahadirbal 
 ms.author: bahbal
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 01/30/2024
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Developer
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 [!include [banner](../includes/banner.md)]

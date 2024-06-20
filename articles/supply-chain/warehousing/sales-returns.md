@@ -1,15 +1,15 @@
 ---
 title: Sales returns
-description: This article provides information about the process for return orders. It includes information about customer returns and their effect on costing and on-hand inventory quantities.
+description: Learn about the process for return orders. It includes information about customer returns and their effect on costing and on-hand inventory quantities.
 author: Henrikan
 ms.author: henrikan
-ms.reviewer: kamaybac
-ms.search.form: ReturnTableListPage, ReturnTable, ReturnTableListPagePreviewPane, ReturnTableReferences, SalesReturnExpiredOrdersPart, SalesReturnFindOrderFormPart
 ms.topic: how-to
 ms.date: 05/16/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: ReturnTableListPage, ReturnTable, ReturnTableListPagePreviewPane, ReturnTableReferences, SalesReturnExpiredOrdersPart, SalesReturnFindOrderFormPart
 ---
 
 # Sales returns

@@ -1,15 +1,15 @@
 ---
 title: Turn on Sensor Data Intelligence for your system (preview)
-description: This article explains how to turn on Sensor Data Intelligence for your system.
+description: Learn how to turn on Sensor Data Intelligence for your system, including video instructions and a step-by-step procedure for using Sensor Data Intelligence.
 author: johanhoffmann
-ms.date: 09/02/2022
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: johanho
+ms.topic: article
+ms.date: 09/02/2022
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-09-02
+ms.search.form:
 ms.dyn365.ops.version: 10.0.30
 ---
 

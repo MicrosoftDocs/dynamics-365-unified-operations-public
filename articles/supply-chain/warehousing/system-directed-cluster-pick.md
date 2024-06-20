@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: System-directed cluster picking
-description: This article provides an overview of system-directed cluster picking in Microsoft Dynamics 365 Supply Chain Management.
+description: Access an overview of system-directed cluster picking in Microsoft Dynamics 365 Supply Chain Management with an enabling the cluster picking feature.
 author: Mirzaab
-ms.date: 05/26/2020
-ms.topic: article
-
-# optional metadata
-ms.search.form: WHSWorkCluster, WHSClusterProfile
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mirzaab
+ms.topic: article
+ms.date: 05/26/2020
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2019-12-31
+ms.search.form: WHSWorkCluster, WHSClusterProfile
 ms.dyn365.ops.version: 10.0.1
-
 ---
 
 # System-directed cluster picking

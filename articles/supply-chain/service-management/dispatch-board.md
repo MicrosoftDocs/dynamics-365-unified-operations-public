@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Dispatch board   
-description: A dispatch board is the central location from which you can view the status of activities in a service order. 
+description: A dispatch board is the central location from which you can view the status of activities in a service order, including a list of tasks. 
 author: ChristianRytt
-ms.date: 04/30/2018
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: SMADispatchBoard
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: crytt
+ms.topic: article
+ms.date: 04/30/2018
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMADispatchBoard
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

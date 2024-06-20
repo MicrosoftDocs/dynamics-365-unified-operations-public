@@ -1,15 +1,15 @@
 ---
 title: Warehouse location status
-description: This article provides an overview of the Warehouse location status feature.
+description: Access an overview of the Warehouse location status feature, including an outline on setting up warehouse location status.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSLocationProfile,WHSLocation
 ms.topic: how-to
 ms.date: 06/07/2024
-audience: Application User
 ms.custom:
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: WHSLocationProfile,WHSLocation
 ---
 
 # Warehouse location status

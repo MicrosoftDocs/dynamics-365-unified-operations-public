@@ -1,26 +1,20 @@
 --- 
-# required metadata 
- 
 title: Configure wave processing example
-description: This article provides an example of how to set up the criteria that determine what work is generated for a warehouse when a wave is processed, and whether waves are processed manually or automatically.
+description: Learn how to set up the criteria that determine what work is generated for a warehouse when a wave is processed and how waves are processed.
 author: Mirzaab
+ms.author: mirzaab
+ms.topic: how-to
 ms.date: 03/17/2021
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSParameters, ProdParameters, whswavetablecreatenew, WHSWaveTable, WHSWaveAttributes, WHSKanbanWaveTable, WHSWaveTableListPage, WHSKanbanWaveTableListPage
-audience: Application User 
-# ms.devlang:  
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mirzaab
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSParameters, ProdParameters, whswavetablecreatenew, WHSWaveTable, WHSWaveAttributes, WHSKanbanWaveTable, WHSWaveTableListPage, WHSKanbanWaveTableListPage
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Configure wave processing example
 
 [!include [banner](../../includes/banner.md)]
