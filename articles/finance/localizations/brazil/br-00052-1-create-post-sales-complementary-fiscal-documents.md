@@ -1,8 +1,8 @@
 ---
 title: Create and post a sales complementary fiscal document (Brazil)
 description: Use this procedure to create a sales complementary fiscal document to adjust a sales fiscal document that was generated for an incorrect price.
-author: AdamTrukawka
-ms.author: atrukawk
+author: ankviklis
+ms.author: ankviklis
 ms.topic: how-to
 ms.custom: 
   - bap-template
