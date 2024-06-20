@@ -4,7 +4,9 @@ description: Use the CIAP fixed asset transactions page to create CIAP credit in
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
-ms.date: 06/26/2017
+ms.custom: 
+  - bap-template
+ms.date: 06/20/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Brazil
