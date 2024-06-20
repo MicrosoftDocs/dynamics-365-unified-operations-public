@@ -3,14 +3,13 @@ title: Obtain the infrastructure scripts for your Finance + Operations (on-premi
 description: Learn about optaining, downloading, or updating infrastructure scripts for finance and operations apps for on-premises deployment.
 author: faix
 ms.author: osfaixat
-ms.topic: article
-ms.date: 1/11/2023
+ms.topic: how-to
 ms.custom: 
+  - bap-template
+ms.date: 06/19/2024 
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom:
-ms.search.form:
 ms.dyn365.ops.version: 
 ms.service: dynamics-365-op
 ---
