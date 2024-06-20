@@ -1,15 +1,15 @@
 ---
 title: Warehouse management only mode overview
-description: This article provides information about Warehouse management only mode, which enables the integration of warehouse management (WMS) functionality in Microsoft Dynamics 365 Supply Chain Management with external enterprise resource planning (ERP) and order management systems.
+description: Learn about Warehouse management only mode, which enables the integration of warehouse management functionality in Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: overview
 ms.date: 04/27/2024
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # Warehouse management only mode overview
