@@ -75,7 +75,7 @@ This article explains how to configure, download, and install the legacy Commerc
 5. Select the hardware station to download, and then select **Download**.
 
     > [!NOTE]
-    > - Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then select **Download** again.
+    > Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then select **Download** again.
 
 6. On the notification bar that appears at the bottom of the Microsoft Edge window, select **Save**. (The notification bar might appear in a different place in other browsers.)
 7. If needed for mass deployment or command line deployment, repeat the above steps for the configuration file download, which is a button next to the **Download** button that you previously selected.
@@ -122,8 +122,7 @@ The Retail hardware station installer first extracts the associated files and th
 
     > [!NOTE]
     > - If the hardware station that was installed won't be used for payment-related work, don't close the **Install merchant information** window without completing the remaining steps. The hardware station won't work unless this installation is successfully completed.
-    
-    > - For version 10.0.6 and above, the install merchant information tool is no longer used. Instead, the merchant information for the hardware station is set by the POS at the time of logon or when the hardware station is made active. If the retail server is not available when the hardware station is subsequently made active, the last known merchant properties will be used by until the connection to the retail server is re-established. If the POS client is not upgraded to version 10.0.6 at the same time the hardware station is upgraded, merchant properties will not be updated until the POS client is upgraded to an equal or later version. 
+    > - For version 10.0.6 and above, the install merchant information tool is no longer used. Instead, the merchant information for the hardware station is set by the POS at the time of logon or when the hardware station is made active. If the retail server is not available when the hardware station is subsequently made active, the last known merchant properties will be used until the connection to the retail server is re-established. If the POS client is not upgraded to version 10.0.6 at the same time the hardware station is upgraded, merchant properties will not be updated until the POS client is upgraded to an equal or later version. 
 
 8. The Install merchant information tool might request Azure AD credentials. Enter the Azure AD credentials of the user who is installing Retail hardware station.
 9. The Retail Server URL is determined through the Retail hardware station installation and is entered automatically. The installer uses this URL to load the list of stores that the user is connected to via the address book.
