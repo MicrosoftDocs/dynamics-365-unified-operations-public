@@ -1,15 +1,15 @@
 ---
 title: Warehouse groups
-description: This article describes how to set up and use warehouse groups.
+description: Learn how to set up and use warehouse groups, including prerequisites and a step-by-step process for creating and managing warehouse groups.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WhsWarehouseGroup
 ms.topic: how-to
 ms.date: 01/25/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: WhsWarehouseGroup
 ---
 
 # Warehouse groups

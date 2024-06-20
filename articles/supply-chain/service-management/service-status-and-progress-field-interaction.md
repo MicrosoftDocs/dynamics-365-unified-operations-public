@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Service status and progress field interaction 
-description: In the Service orders form, the Progress field on the header reflects the status of the whole service order, and the Status reports the status of individual service order lines.
+description: In the Service orders form, the Progress field on the header reflects the status of the whole service order. Learn about service status.
 author: ChristianRytt
-ms.date: 05/01/2018
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: SMAServiceOrderTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: crytt
+ms.topic: article
+ms.date: 05/01/2018
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMAServiceOrderTable
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

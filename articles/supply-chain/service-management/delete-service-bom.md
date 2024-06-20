@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Delete a service BOM 
-description: This article provides a procedure that shows how to delete a service BOM.
+description: Access a procedure that shows how to delete a service BOM, including a step-by-step process for deleting service BOMs and additional resources.
 author: ChristianRytt
-ms.date: 05/01/2018
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: SMAServiceObjectRelation
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: crytt
+ms.topic: article
+ms.date: 05/01/2018
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMAServiceObjectRelation
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

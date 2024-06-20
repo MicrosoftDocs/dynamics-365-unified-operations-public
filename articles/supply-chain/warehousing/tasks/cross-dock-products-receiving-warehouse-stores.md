@@ -1,26 +1,20 @@
 --- 
-# required metadata 
- 
 title: Cross-dock products from receiving warehouse to stores
-description: This procedure walks through the steps to create and process a Cross-dock to distribute products from the receiving location of a purchase order to one or many stores. 
+description: Learn how to create and process a Cross-dock to distribute products from the receiving location of a purchase order to one or many stores. 
 author: Mirzaab
+ms.author: mirzaab
+ms.topic: how-to
 ms.date: 02/17/2016
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: RetailBuyersPushPerPackage
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: kamaybac 
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mirzaab
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: RetailBuyersPushPerPackage
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Cross-dock products from receiving warehouse to stores
 
 [!include [banner](../../includes/banner.md)]

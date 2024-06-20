@@ -1,24 +1,16 @@
 ---
-# required metadata
-
 title: Transportation management modes and methods
-description: This article shows how to set up Transportation management modes and methods.
+description: Learn how to set up Transportation management modes and methods, including step-by-step processes for creating modes and transportation methods.
 author: Weijiesa
-ms.date: 10/16/2020
-ms.topic: article
-
-# optional metadata
-
-# ms.search.form: TMSMode,TMSMethod
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: weijiesa
+ms.topic: article
+ms.date: 10/16/2020
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-10-16
+ms.search.form: TMSMode,TMSMethod
 ms.dyn365.ops.version: 10.0.14
 ---
 

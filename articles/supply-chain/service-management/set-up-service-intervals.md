@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Set up service intervals 
-description: This article describes how to set up service intervals. Service interval indicates the frequency with which service order lines are created for service agreement lines when you create service orders.
+description: Learn how to set up service intervals, which indicate when service order lines are created for service agreement lines when you create service orders.
 author: ChristianRytt
-ms.date: 02/20/2018
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: SMAAgreementinterval
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: crytt
+ms.topic: article
+ms.date: 02/20/2018
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMAAgreementinterval
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Set up service intervals  

@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Set up warehouses for transfer orders
-description: This article describes how you can set up warehouses for transfer orders.
+description: Learn how you can set up warehouses for transfer orders, including a step-by-step process for setting up warehouses for transfer orders.
 author: Mirzaab
-ms.date: 01/18/2019
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: InventLocation,CustVendTransportPoint2Point
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mirzaab
+ms.topic: article
+ms.date: 01/18/2019
+ms.custom:
+ms.reviewer: kamaybac 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2018-4-30
+ms.search.form: InventLocation,CustVendTransportPoint2Point
 ms.dyn365.ops.version: 8.0
-
 ---
 
 # Set up warehouses for transfer orders 
