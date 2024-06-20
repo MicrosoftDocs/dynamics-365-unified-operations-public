@@ -111,7 +111,9 @@ To help guarantee that the largest range of devices can be used with Commerce, t
 -   **Control object** – The control object for a device class (such as line displays) provides the interface for the software program. Monroe Consulting Services ([www.monroecs.com](http://www.monroecs.com/)) provides a standardized set of OPOS control objects that are known as the common control objects (CCOs). The CCOs are used to test the POS component of Commerce. Therefore, the testing helps guarantee that, if Commerce supports a device class through OPOS, many device types can be supported, provided that the manufacturer provides a service object that is built for OPOS. You don't have to explicitly test each device type.
 -   **Service object** – The service object provides communication between the control object (CCO) and the device. Typically, the service object for a device is provided by the device manufacturer. However, in some cases, you might have to download the service object from the manufacturer's website. For example, a more recent service object might be available. To find the address of the manufacturer's website, see your hardware documentation.
 
-[![Control object and service object.](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png) Support for the OPOS implementation of OLE for POS helps guarantee that, if the device manufacturers and POS publishers implement the standard correctly, POS systems and supported devices can work together, even if they weren't previously tested together. 
+[![Control object and service object.](./media/retail_peripherals_overview01.png)](./media/retail_peripherals_overview01.png)
+
+Support for the OPOS implementation of OLE for POS helps guarantee that, if the device manufacturers and POS publishers implement the standard correctly, POS systems and supported devices can work together, even if they weren't previously tested together. 
 
 > [!NOTE]
 > OPOS support doesn't guarantee support for all devices that have OPOS drivers. Commerce must first support that device type, or class, through OPOS. In addition, service objects might not always be up to date with the latest version of the CCOs. You should also be aware that, in general, the quality of service objects varies.
@@ -582,27 +584,30 @@ The hardware station installer will automatically make these registry edits as p
 
 ### SSL and TLS
 By default, SSL and all version of TLS except TLS 1.3 are disabled. To edit or enable these values, follow these steps:
-    1.  Press the Windows logo key+R to open a **Run** window.
-    2.  In the **Open** field, type **Regedit**, and then select **OK**.
-    3.  If a **User Account Control** message box appears, select **Yes**.
-    4.  In the **Registry Editor** window, navigate to 
--   No additional network ports should be open, unless they're required for known, specified reasons.
--   Cross-origin resource sharing must be disabled and must specify the allowed origins that are accepted.
--   Only trusted certificate authorities should be used to obtain certificates that will be used on computers that run the hardware station.
-**HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\SecurityProviders\\SCHANNEL\\Protocols**. The following keys have been automatically entered to allow for TLS 1.3 only:
-    >    
-    >    - TLS 1.2\\Server:Enabled=0
-    >    - TLS 1.3\\Server:Enabled=1
-    >    - TLS 1.2\\Client:Enabled=0
-    >    - TLS 1.3\\Client:Enabled=1
-    >    - TLS 1.1\\Server:Enabled=0
-    >    - TLS 1.1\\Client:Enabled=0
-    >    - TLS 1.0\\Server:Enabled=0
-    >    - TLS 1.0\\Client:Enabled=0
-    >    - SSL 3.0\\Server:Enabled=0
-    >    - SSL 3.0\\Client:Enabled=0
-    >    - SSL 2.0\\Server:Enabled=0
-    >    - SSL 2.0\\Client:Enabled=0
+
+1. Press the Windows logo key+R to open a **Run** window.
+2. In the **Open** field, type **Regedit**, and then select **OK**.
+3. If a **User Account Control** message box appears, select **Yes**.
+4. In the **Registry Editor** window, go to **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\SecurityProviders\\SCHANNEL\\Protocols**. The following keys have been automatically entered to allow for TLS 1.3 only:
+
+    - TLS 1.2\\Server:Enabled=0
+    - TLS 1.3\\Server:Enabled=1
+    - TLS 1.2\\Client:Enabled=0
+    - TLS 1.3\\Client:Enabled=1
+    - TLS 1.1\\Server:Enabled=0
+    - TLS 1.1\\Client:Enabled=0
+    - TLS 1.0\\Server:Enabled=0
+    - TLS 1.0\\Client:Enabled=0
+    - SSL 3.0\\Server:Enabled=0
+    - SSL 3.0\\Client:Enabled=0
+    - SSL 2.0\\Server:Enabled=0
+    - SSL 2.0\\Client:Enabled=0
+
+No additional network ports should be open, unless they're required for known, specified reasons.
+
+Cross-origin resource sharing must be disabled and must specify the allowed origins that are accepted.
+
+Only trusted certificate authorities should be used to obtain certificates that will be used on computers that run the hardware station.
      
 > [!NOTE]
 > It's very important that you review security guidelines for IIS and the Payment Card Industry (PCI) requirements.
