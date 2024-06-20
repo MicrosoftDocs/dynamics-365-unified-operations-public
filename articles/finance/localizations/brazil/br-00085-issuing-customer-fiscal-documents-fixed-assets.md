@@ -1,8 +1,8 @@
 ---
 title: Issue customer fiscal documents (fixed assets) (Brazil)
 description: Learn how you can issue a fiscal document for a customer who bought a fixed asset from the fiscal establishment, including a step-by-step process.
-author: AdamTrukawka
-ms.author: atrukawk
+author: ankviklis
+ms.author: ankviklis
 ms.topic: how-to
 ms.custom: 
   - bap-template
