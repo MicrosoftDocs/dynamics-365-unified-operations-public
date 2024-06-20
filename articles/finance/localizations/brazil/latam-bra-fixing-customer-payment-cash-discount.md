@@ -1,15 +1,15 @@
 ---
 title: Enable customer payments and cash discounts
 description: Learn how to enable recalculation of cash discounts for customer payments, including an overview on the calculation of discount amount features.
-author: kfend
-ms.author: atrukawk
-ms.topic: article
-ms.date: 10/16/2019
+author: kailiang
+ms.author: kailiang
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/20/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Brazil
 ms.search.validFrom: 2019-10-07
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.5
 ms.assetid: 92223189-69a8-4a40-b867-ef9b4f14c23d
 ---
