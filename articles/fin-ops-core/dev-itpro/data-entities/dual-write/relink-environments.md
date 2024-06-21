@@ -17,7 +17,7 @@ ms.search.validFrom: 2021-04-07
 
 [!include [banner](../../includes/banner.md)]
 
-When you unlink and relink Dual-write connection between environments, you need to delete the data from the key tables. This requirement applies to sandbox, production, and user acceptance test (UAT) environments during activities like backup and restore. This article describes how to reset the connection, and delete the data in the key tables.
+When you unlink and relink Dual-write connection between environments, you need to delete the data from the key tables. This requirement applies to sandbox, production, and user acceptance test (UAT) environments during activities like backup and restore. This article describes how to reset the connection, and how to delete the data in the key tables.
 
 ## Scenario: Reset linking
 
@@ -32,7 +32,7 @@ If you want to reset your existing sandbox Dataverse instance that is linked for
 4. Ensure the environment targeted via Lifecycle Services is properly configured. For more information, see [System requirements and prerequisites](requirements-and-prerequisites.md).
 5. To reset all Dual-write connections and configurations, select **Reset**. For more information about the reset process, see [Reset dual-write connections](reset.md).
 
-## Scenario: Backup and restore
+## Scenario: Back up and restore
 
 When you back up and restore an environment, you may see unexpected data movement or errors. These errors happen if a previous Dual-write connection was established with the backup/restore environment and table maps weren't stopped. This causes data in key tables not to be cleared. 
 
