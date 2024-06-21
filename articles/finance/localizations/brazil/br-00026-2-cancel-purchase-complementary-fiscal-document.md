@@ -1,8 +1,8 @@
 ---
 title: Cancel a purchase complementary fiscal document (Brazil)
 description: Learn how you can cancel an incorrect purchase complementary fiscal document and provide a reason for the cancellation.
-author: AdamTrukawka
-ms.author: atrukawk
+author: ankviklis
+ms.author: ankviklis
 ms.topic: how-to
 ms.custom: 
   - bap-template
