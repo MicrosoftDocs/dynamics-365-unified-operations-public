@@ -3,20 +3,24 @@ title: Report as finished from the job card device
 description: Learn how to configure the system so that users of a job card device can report finished products from a production order to inventory.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: article
-ms.date: 08/05/2022
-ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-05-18
 ms.search.form: JmgRegistrationSetupTouch
-ms.dyn365.ops.version: 10.0.13
+ms.topic: how-to
+ms.date: 08/05/2022
+audience: Application User
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Report as finished from the job card device
 
 [!include [banner](../includes/banner.md)]
+
+<!-- KFM: @johanho, this topic includes details about setting up batch and serial numbers that we don't have elsewhere. We should probably keep this info and update it for PFE. -->
+
+> [!IMPORTANT]
+> The job card device is no longer supported and has been replaced by the [production floor execution interface](production-floor-execution-use.md). We strongly recommend that you use the production floor execution interface instead of the job card device.
 
 Workers use the **Report progress** page on the job card device to report quantities that have been completed for a production job. This article describes how to set up various options that establish how workers can report as finished using this page and what happens next. Options include:
 
@@ -133,7 +137,7 @@ The job card device supports three scenarios for reporting on serial-controlled 
 To enable your job card devices to accept a serial number during reporting as finished, you must use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the following features:
 
 - *Improved user experience for the Report progress dialog in the Job Card Device*<br>(As of Supply Chain Management version 10.0.36, this feature is turned on by default.)
-- *Enable to enter batch and serial numbers while reporting as finished from the Job Card Device*<br>(As of Supply Chain Management version 10.0.29, this feature is turned on by default.)
+- *Enable to enter batch and serial numbers while reporting as finished from the Job Card Device*<br>(As of Supply Chain Management version 10.0.29, this feature is turned on by default. As of Supply Chain Management version 10.0.32, it's mandatory and can't be turned off.)
 
 ### Configure products that require serial-number reporting
 
@@ -206,14 +210,6 @@ When you use this scenario, the **Serial number** field that the **Report progre
 ## Report as finished to a license plate
 
 Warehouse management processes (WMS) can use the license plate dimension to track inventory on warehouse locations that have been set up for this purpose. In this case, the license plate number is required when a worker reports quantities as finished.
-
-### Enable license plate reporting and label printing
-
-To use the features that are described in this section, you must use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the following features (in this order):
-
-1. *License plate for reporting as finished added to the Job Card Device*<br>(As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management version 10.0.25, this feature is mandatory.)
-1. *Enable automatic generation of license plate number when reporting as finished in the job card device*<br>(As of Supply Chain Management version 10.0.25, this feature is mandatory.)
-1. *Print label from Job Card Device*<br>(As of Supply Chain Management version 10.0.25, this feature is mandatory.)
 
 ### Set up reporting as finished to a license plate
 

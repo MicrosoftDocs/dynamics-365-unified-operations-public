@@ -2799,8 +2799,6 @@
             href: production-control/report-production-orders-as-finished.md
           - name: Register and track batch/serial numbers for finished products and their components (preview)
             href: production-control/tracked-components.md
-          - name: Configure job card for devices
-            href: production-control/config-job-card-device.md
           - name: Report as finished from the job card device 
             href: production-control/report-finished-job-device.md
           - name: Provide mixed-reality Guides for workers in production
@@ -2821,8 +2819,6 @@
             href: production-control/report-boms-as-finished.md
           - name: Report as finished to a plate-controlled location
             href: production-control/tasks/report-finished-non-license-plate-controlled-location-2016-11.md
-          - name: Report progress on a mobile job device
-            href: production-control/tasks/report-progress-mobile-job-device.md
           - name: Use the safety stock journal to update minimum coverage
             href: production-control/tasks/use-safety-stock-journal-update-minimum-coverage.md
           - name: Material substitution in manufacturing
@@ -2833,8 +2829,6 @@
             href: production-control/production-feedback.md
           - name: Enable the payroll process for time and attendance
             href: production-control/tasks/payroll-process-time-attendance.md
-          - name: Configure a worker using the mobile job device
-            href: production-control/tasks/worker-mobile-job-device.md
         - name: Manage financials in production
           items:
           - name: Allocate time to jobs in a job bundle
@@ -3007,22 +3001,28 @@
             href: production-control/consumption.md
           - name: Production posting
             href: cost-management/production-posting.md
-      - name: Set up and use the production floor execution interface
+      - name: Production floor execution interface
         items:
-        - name: Configure the production floor execution interface
-          href: production-control/production-floor-execution-configure.md
-        - name: Design the production floor execution interface
-          href: production-control/production-floor-execution-tabs.md
-        - name: Set up a device to run the production floor execution interface
-          href: production-control/production-floor-execution-setup.md
         - name: How workers use the production floor execution interface
           href: production-control/production-floor-execution-use.md
-        - name: Show vacation balances in the production floor execution interface
-          href: production-control/production-floor-execution-payroll-stats.md
-        - name: Style the production floor execution interface
-          href: supply-chain-dev/production-floor-execution-styles.md
-        - name: Customize the production floor execution interface
-          href: supply-chain-dev/production-floor-execution-customize.md
+        - name: Configure and deploy the production floor execution interface
+          items:
+          - name: Configure the production floor execution interface
+            href: production-control/production-floor-execution-configure.md
+          - name: Show vacation balances in the production floor execution interface
+            href: production-control/production-floor-execution-payroll-stats.md
+          - name: Design the production floor execution interface
+            href: production-control/production-floor-execution-tabs.md
+          - name: Set up a device to run the production floor execution interface
+            href: production-control/production-floor-execution-setup.md
+          - name: Set up worker accounts to use the production floor execution interface
+            href: production-control/production-floor-execution-worker-accounts.md
+        - name: Style and customize the production floor execution interface
+          items:
+          - name: Style the production floor execution interface
+            href: supply-chain-dev/production-floor-execution-styles.md
+          - name: Customize the production floor execution interface
+            href: supply-chain-dev/production-floor-execution-customize.md
     - name: Rebate management
       items:
       - name: Rebate management module overview
