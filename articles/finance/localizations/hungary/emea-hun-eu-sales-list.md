@@ -1,8 +1,8 @@
 ---
 title: EU Sales list for Hungary
 description: Learn about the European Union (EU) sales list report for Hungary, including outlines on setup and how to work with the EU sales list.
-author: AdamTrukawka
-ms.author: atrukawk
+author: liza-golub
+ms.author: egolub
 ms.topic: conceptual
 ms.custom: 
   - bap-template
