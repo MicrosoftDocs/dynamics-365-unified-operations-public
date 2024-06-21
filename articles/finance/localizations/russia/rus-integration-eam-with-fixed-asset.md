@@ -4,12 +4,12 @@ description: Learn about the integration of the Asset management module with the
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: overview
-ms.date: 01/31/2022
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2022-01-27
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.25
 ---
 
