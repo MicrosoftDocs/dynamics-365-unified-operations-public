@@ -1,8 +1,8 @@
 ---
 title: Create a workflow type
 description: Learn about how to create workflow types, including links to articles that outline various aspects of creating workflow types.
-author: josaw1
-ms.author: josaw
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
 ms.date: 06/19/2019
 ms.reviewer: twheeloc
@@ -16,9 +16,6 @@ ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 # Create a workflow type
 
 [!include [banner](../../../finance/includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 To add workflow support for a document, you must create a workflow type. After you create a workflow type, it can be used to create workflow configurations for the document. This article provides links to the procedures for creating a workflow type.
 

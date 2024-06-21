@@ -5,7 +5,7 @@ author: msftbrking
 ms.author: brking
 ms.topic: article
 ms.date: 01/13/2020
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28

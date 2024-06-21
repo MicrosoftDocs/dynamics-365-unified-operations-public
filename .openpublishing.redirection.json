@@ -27718,6 +27718,21 @@
       "source_path": "articles/supply-chain/demand-planning/intercompany-planning-groups-demand-forecasting.md",
       "redirect_url": "/dynamics365/supply-chain/master-planning/intercompany-planning-groups-demand-forecasting",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/production-control/config-job-card-device.md",
+      "redirect_url": "/dynamics365/supply-chain/production-control/production-floor-execution-configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/production-control/tasks/report-progress-mobile-job-device.md",
+      "redirect_url": "/dynamics365/supply-chain/production-control/production-floor-execution-use",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/production-control/tasks/worker-mobile-job-device.md",
+      "redirect_url": "/dynamics365/supply-chain/production-control/production-floor-execution-worker-accounts.md",
+      "redirect_document_id": false
     }
   ]
 }

@@ -1,26 +1,20 @@
 --- 
-# required metadata 
- 
 title: Report a production order as finished
-description: This procedure shows how to report a production order as finished. 
+description: Learn how to report a production order as finished, including a step-by-step process for reporting finished production orders using the USMF demo data company.
 author: johanhoffmann
+ms.author: johanho
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: ProdTableListPage, ProdParmReportFinished, ProdJournalTransProd, ProdSetupReportFinished
-audience: Application User 
-# ms.devlang:  
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: ProdTableListPage, ProdParmReportFinished, ProdJournalTransProd, ProdSetupReportFinished
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Report a production order as finished
 
 [!include [banner](../../includes/banner.md)]

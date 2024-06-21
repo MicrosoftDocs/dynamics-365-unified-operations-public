@@ -3,7 +3,7 @@ title: Sales and profitability performance Power BI content
 description: Learn about what's included in the Sales and profitability performance Power BI content, including a table of metrics that are included in the Power BI content.
 author: Henrikan
 ms.author: henrikan
-ms.date: 12/18/2017
+ms.date: 06/10/2024
 ms.topic: article
 ms.reviewer: kamaybac
 audience: IT Pro

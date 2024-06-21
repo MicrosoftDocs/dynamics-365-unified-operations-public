@@ -1,6 +1,6 @@
 ---
 title: Welcome to Dynamics 365 Supply Chain Management
-description: This article provides an overview of help articles and other resources for Dynamics 365 Supply Chain Management.   
+description: Access an overview of help articles and other resources for Dynamics 365 Supply Chain Management with an outline on core concepts and tasks.   
 author: kamaybac
 ms.author: kamaybac
 ms.reviewer: kamaybac

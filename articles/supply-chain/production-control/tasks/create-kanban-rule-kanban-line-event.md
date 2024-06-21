@@ -1,26 +1,20 @@
 --- 
-# required metadata 
- 
 title: Create a kanban rule using a kanban line event
-description: This procedure creates a kanban rule by using the kanban line event setting to trigger pull from a process activity. 
+description: This procedure creates a kanban rule by using the kanban line event setting to trigger pull from a process activity, including a step-by-step process. 
 author: johanhoffmann
+ms.author: johanho
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, SalesTableListPage, SalesCreateOrder, SalesTable   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: kamaybac   
+audience: Application User  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, SalesTableListPage, SalesCreateOrder, SalesTable
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create a kanban rule using a kanban line event
 
 [!include [banner](../../includes/banner.md)]

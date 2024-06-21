@@ -1,15 +1,15 @@
 ---
 title: Period charges
-description: This article provides information about period charges, which let you charge customers when a collection of orders that were invoiced over a specified period failed to meet specific criteria.
+description: Learn about about period charges, which let you charge customers when a collection of orders invoiced over a specified period failed to meet specific criteria.
 author: Henrikan
 ms.author: henrikan
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 11/22/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # Period charges

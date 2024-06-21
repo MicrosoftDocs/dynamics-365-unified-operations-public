@@ -1,15 +1,15 @@
 ---
 title: Auto charge compounding and sequencing
-description: Advanced auto charges enable you to compound header charges for sales quotations and sales orders. They also let you apply charge category types of "specific unit" and "specific unit match" to calculate line charges for sales and purchase orders. 
+description: Advanced auto charges let you apply charge category types of "specific unit" and "specific unit match" to calculate line charges for sales and purchase orders.
 author: Henrikan
 ms.author: henrikan
-ms.reviewer: kamaybac
-ms.search.form: MarkupAutoSetup, CustParameters, SalesTableListPage, SalesTable, MarkupTrans, SalesTotals
 ms.topic: how-to
 ms.date: 10/31/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: MarkupAutoSetup, CustParameters, SalesTableListPage, SalesTable, MarkupTrans, SalesTotals
 ---
 
 # Auto charge compounding and sequencing

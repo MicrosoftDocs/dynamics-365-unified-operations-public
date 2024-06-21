@@ -99,6 +99,11 @@ Before you install Business performance analytics, the following setup is requir
 3. When you've finished, disable maintenance mode.
 
 #### Required configurations in Power Platform Admin Center
-1. In Power Platform Admin Center, **Resources** and select **Dynamics 365 installed apps**. 
-2. Find **Finance and Operations Virtual Entity** and check if any updates are available. 
-3. If an update is available, update the application. (Only required if installing Business performance analytics on existing environments).
+1.	Go to https://admin.powerplatform.microsoft.com/
+2.	Select **Environments**.
+3.	Select the environment where business performance analytics is installed.
+4.	Select **Settings** > **Product** > **Features**.
+5.	Enable **Enable Finance and Operations User Impersonation in Dataverse**.
+6.	In Power Platform Admin Center, **Resources** and select **Dynamics 365 installed apps**.
+7.	Find **Finance and Operations Virtual Entity** and check if any updates are available.
+8.	If an update is available, update the application. (Only required if installing Business performance analytics on existing environments).

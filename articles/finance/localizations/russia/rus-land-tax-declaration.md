@@ -1,15 +1,15 @@
 ---
 title: Land tax declaration
 description: Learn about the land tax declaration for Russia, including outlines on setting up land tax setting up parameters for land tax calculation.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 06/12/2019
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2019-01-04
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.1
 ---
 

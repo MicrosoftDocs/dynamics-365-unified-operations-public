@@ -1,15 +1,15 @@
 ---
 title: Sales trade agreement prices (preview)
-description: This article provides information about sales trade agreement prices.
+description: Learn about sales trade agreement prices, including an outline on configuring sales trade agreements and concurrence rules.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: GUPPricingSetupInquiryResult, GUPParameters, PriceDiscAdmName, PriceDiscAdmTable, PriceDiscAdm
 ms.topic: overview
 ms.date: 04/03/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: GUPPricingSetupInquiryResult, GUPParameters, PriceDiscAdmName, PriceDiscAdmTable, PriceDiscAdm
 ---
 
 # Sales trade agreement prices (preview)

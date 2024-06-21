@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Costing versions overview
-description: This article provides information about costing versions, how to maintain them, and the types of data that you can include in them. The primary purpose of a costing version is to contain cost records about items, cost categories, and calculation formulas for indirect costs.
+description: Learn about costing versions, how to maintain them, and the types of data that you can include in them, with an outline on standard or planned costs.
 author: JennySong-SH
-ms.date: 05/16/2023
+ms.author: yanansong
 ms.topic: overview
-
-# optional metadata
-
-ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/16/2023
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
 ms.collection: get-started
-ms.assetid: cd239da5-f434-4d1b-8196-5414c888d76d
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: yanansong
 ms.search.validFrom: 2016-02-28
+ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: cd239da5-f434-4d1b-8196-5414c888d76d
 ---
 
 # Costing versions overview

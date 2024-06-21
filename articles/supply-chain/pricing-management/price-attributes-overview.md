@@ -1,15 +1,15 @@
 ---
 title: Price attributes overview (preview)
-description: This article introduces the concept of price attributes.
+description: Learn about the concept of price attributes, including an outline on price attribute sources and a table providing information about price attributes.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: overview
 ms.date: 04/03/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # Price attributes overview (preview)

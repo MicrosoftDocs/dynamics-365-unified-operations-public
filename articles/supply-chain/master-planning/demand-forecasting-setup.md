@@ -1,16 +1,15 @@
 ---
 title: Demand forecasting setup
-description: This article describes the setup tasks that you must perform to prepare for demand forecasting.  
+description: Learn about the setup tasks that you must perform to prepare for demand forecasting, including an outline on item allocation keys.  
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters, ForecastItemAllocation, ReqIntercompanyPlanningGroupSetup
 ms.topic: how-to
 ms.date: 01/05/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
-ms.collection:
+ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters, ForecastItemAllocation, ReqIntercompanyPlanningGroupSetup
 ---
 
 # Demand forecasting setup

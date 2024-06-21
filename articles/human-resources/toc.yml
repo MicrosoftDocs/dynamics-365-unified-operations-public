@@ -463,6 +463,8 @@ items:
       items:
       - name: Employee self service overview
         href: hr-employee-manager-self-service-overview.md
+      - name: Employee self service workspace summary
+        href: ess-workspace-summary.md
       - name: Manager self service overview  
         href: mss-overview.md
       - name: Create custom links in Manager self service
@@ -553,7 +555,7 @@ items:
             href: ../human-resources/hr-personnel-mass-hire-projects.md
           - name: Create mass hire projects
             href: ../human-resources/hr-personnel-create-mass-hire-project.md
-        - name: Recruiting requests (merged infrastructure)
+        - name: Recruiting requests 
           items:
           - name: Recruit job candidates
             href: hr-personnel-recruit.md  
@@ -1143,6 +1145,12 @@ items:
         items:
           - name: API payroll integration with Dayforce
             href: hr-admin-payroll-api-integration-dayforce.md
+  - name: Responsible AI
+    items:
+    - name: Overview 
+      href: transpar-note-hr.md
+    - name: Employee self service workspace summary
+      href: ess-workspace-summary.md
   - name: Development and administration for finance and operations apps 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 

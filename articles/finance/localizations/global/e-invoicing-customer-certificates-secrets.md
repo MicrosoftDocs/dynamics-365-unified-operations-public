@@ -1,11 +1,12 @@
 ---
 title: Customer certificates and secrets
 description: Learn how to set up customer certificates and secrets in Electronic invoicing, including an overview for creating certificates and secrets.
-author: gionoder
-ms.author: johnmichalak
-ms.topic: article
-ms.date: 03/06/2023
-ms.custom:
+author: ilikond
+ms.author: ikondratenko
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global

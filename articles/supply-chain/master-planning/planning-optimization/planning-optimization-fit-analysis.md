@@ -1,15 +1,15 @@
 ---
 title: Planning Optimization fit analysis
-description: This article explains how to verify your current setup and data against the capabilities of the Planning Optimization functionality. 
+description: Learn how to verify your current setup and data against the capabilities of the Planning Optimization functionality, including a step-by-step process.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: MpsFitAnalysis, MpsIntegrationParameters
 ms.topic: conceptual
 ms.date: 01/30/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: MpsFitAnalysis, MpsIntegrationParameters
 ---
 
 # Planning Optimization fit analysis
@@ -56,16 +56,16 @@ The following table shows the various results that can be shown after a fit anal
 | Forecast | Coverage groups with "Reduce forecast by" setting set to a value different than "Orders": *\#* | This feature is now supported. For more information, see [Master planning with demand forecasts](demand-forecast.md) | Supported |
 | Forecast | Forecast models with sub models: *\#* |  This feature is now supported. For more information, see [Master planning with demand forecasts](demand-forecast.md) | Supported |
 | Forecast | Master plans with "Include supply forecast" enabled: *\#* | This feature is now supported, see [Master planning with supply forecasts](supply-forecast.md) | Supported |
-| Freeze time fence | Coverage groups with freeze time fence set: *\#* | This feature is pending. Currently, the freeze time fence setup is ignored when Planning Optimization is enabled, regardless of this setting. | 2023 release wave 1 |
-| Freeze time fence | Item coverage records with freeze time fence set: *\#* | This feature is pending. Currently, the freeze time fence setup is ignored when Planning Optimization is enabled, regardless of this setting. | 2023 release wave 1 |
-| Freeze time fence | Master plans with freeze time fence set: *\#* | This feature is pending. Currently, the freeze time fence setup is ignored when Planning Optimization is enabled, regardless of this setting. | 2023 release wave 1 |
+| Freeze time fence | Coverage groups with freeze time fence set: *\#* | This feature is now supported. To use it, enable the *Freezing time fence for Planning optimization* feature in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). | Supported |
+| Freeze time fence | Item coverage records with freeze time fence set: *\#* | This feature is pending. Currently, the freeze time fence setup is ignored when Planning Optimization is enabled, regardless of this setting. | Supported |
+| Freeze time fence | Master plans with freeze time fence set: *\#* | This feature is now supported. To use it, enable the *Freezing time fence for Planning optimization* feature in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). | Supported |
 | Intercompany | Master plans including planned downstream demand: *\#* | This feature is now supported. For more information, see [Intercompany planning](Intercompany-planning.md) | Supported |
 | Kanban | Item coverage records with planned order type kanban: *\#* | This feature is pending. Currently, item coverage that is set to kanban will be ignored when Planning Optimization is enabled. The kanban planned order type will create a warning during master planning, and planned purchase orders will be created to cover the related demand. | 2024 |
 | Kanban | Items with default order type kanban: *\#* | Currently, a default order type that is set to kanban will be ignored when Planning Optimization is enabled. The kanban default order type will create a warning during master planning, and planned purchase orders will be created to cover the related demand. | 2024 |
 | Product lifecycle state | Product lifecycle states not active for planning: *\#* | This feature is now supported. For more information, see [Exclude products that have specific product lifecycle states](product-lifecycle-state.md) | Supported |
 | Production | BOM lines with rounding or multiple setup: *\#* | This feature is supported as of June 1, 2023. No feature management is required. | Supported|
 | Production | BOM/formula lines with formula measurement: *\#* | This feature is supported in version 10.0.33 and higher. To use it, turn on the *Process manufacturing support for Planning Optimization* feature in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (on by default as of Supply Chain Management version 10.0.36). | Supported |
-| Production | BOM/formula lines with item substitution (plan groups): *\#* | This feature is pending. Currently, item substitution (plan groups) is ignored on BOM and formula lines when Planning Optimization is enabled, regardless of this setting. | 2023 release wave 2 |
+| Production | BOM/formula lines with item substitution (plan groups): *\#* | This feature is now supported. To use it, enable the *Item substitution (Plan group) support for Planning Optimization* and/or *Item substitution for bill of materials in Planning optimization* features in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). | Supported |
 | Production | BOM/formula lines with negative quantity: *\#* | This feature is supported as of June 1, 2023. No feature management is required. | Supported |
 | Production | BOM/formula lines with resource consumption: *\#* | This feature is now supported. | Supported|
 | Production | BOM/formula lines with step consumption: *\#* | This feature is pending. Currently, step consumption is ignored on BOM and formula lines when Planning Optimization is enabled. | Future wave |
@@ -80,7 +80,7 @@ The following table shows the various results that can be shown after a fit anal
 | Production | Resources scheduled with finite capacity: *\#* | This feature is now supported.| Supported |
 | Production | Routes used in planning: *\#* | This feature is supported. | Supported |
 | Production | Sales line reservation using explosion: *\#* | This scenario isn't yet supported. Sales line reservations aren't automatically made during explosion.  | Future wave |
-| Production | Scheduling with explosion of production orders: *\#* | Scheduling that uses explosion of production orders is supported starting in version 10.0.32, with a private preview available for version 10.0.31 (contact Microsoft Support to request access to the private preview feature on version 10.0.31). A Planning Optimization run is performed for the items contained in the production order and its respective components in its BOM. | Supported from 10.0.32 |
+| Production | Scheduling with explosion of production orders: *\#* | Scheduling that uses explosion of production orders is supported starting in version 10.0.32, with a private preview available for version 10.0.31 (contact Microsoft Support to request access to the private preview feature on version 10.0.31). A Planning Optimization run is performed for the items contained in the production order and its respective components in its BOM. | Supported |
 | Request for quotations | Master plans with request for quotations enabled: *\#* | This feature is supported, see [Plan based on quotations and RFQs](quotation-planning.md) | Supported |
 | Requisitions | Master plans with requisitions enabled: *\#* | This feature is now supported. For more information, see [Purchase requisitions](purchase-requisitions.md) | Supported |
 | Safety margins | Coverage groups with safety margin: *\#* | This feature is now supported. For more information, see [Safety margins](safety-margins.md) | Supported |

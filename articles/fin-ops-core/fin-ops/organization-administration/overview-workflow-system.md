@@ -20,8 +20,6 @@ ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 This article describes the workflow system.
 
 ## What is workflow?

@@ -1,16 +1,16 @@
 ---
 title: Work with NMFC codes in Dynamics 365 Supply Chain Management
-description: This article describes how to work with National Motor Freight Classification (NMFC) codes in Microsoft Dynamics 365 Supply Chain Management
+description: Learn how to work with National Motor Freight Classification (NMFC) codes in Microsoft Dynamics 365 Supply Chain Management.
 author: Weijiesa
 ms.author: weijiesa
-ms.reviewer: kamaybac
-ms.search.form: WHSNMFC
 ms.topic: how-to
 ms.date: 05/22/2024
-audience: Application User
-ms.search.region: Global
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
+ms.search.form: WHSNMFC
 ---
 
 # Work with NMFC codes in Dynamics 365 Supply Chain Management

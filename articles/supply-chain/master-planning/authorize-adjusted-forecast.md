@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Authorize an adjusted forecast
-description: Not all forecast data must be authorized immediately. This article explains how you can specify the period that a forecast is authorized for. It also explains how you can authorize the forecast for specific companies and forecast models.
+description: Learn how you can specify the period that a forecast is authorized for, including an outline on authorizing the forecast for specific companies and forecast models.
 author: t-benebo
-ms.date: 06/20/2017
+ms.author: benebotg
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: ReqDemPlanImportForecastDialog
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: cb8fd809-605a-4a8b-a390-636edfec21f9
+audience: Application User 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: benebotg
 ms.search.validFrom: 2016-02-28
+ms.search.form: ReqDemPlanImportForecastDialog
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: cb8fd809-605a-4a8b-a390-636edfec21f9
 ---
 
 # Authorize an adjusted forecast

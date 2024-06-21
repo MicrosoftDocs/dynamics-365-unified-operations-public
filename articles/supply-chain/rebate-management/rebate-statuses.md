@@ -1,15 +1,15 @@
 ---
 title: Rebate statuses
-description: This article describes how to set up rebate statuses. Rebate statuses help you track the status of each deal. You can also use them for reporting and inquiry purposes.
+description: Learnhow to set up rebate statuses. Rebate statuses help you track the status of each deal. You can also use them for reporting and inquiry purposes.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: TAMRebateStatusTable
 ms.topic: how-to
 ms.date: 05/15/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: TAMRebateStatusTable
 ---
 
 # Rebate statuses

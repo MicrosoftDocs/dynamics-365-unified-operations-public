@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Product configuration models overview
-description: This article defines terms and concepts that are relevant to product configuration models. Product configuration models let you build a generic product structure that can be used to configure many product variants for a single product.
+description: Product configuration models let you build a generic product structure that can be used to configure many product variants for a single product.
 author: t-benebo
-ms.date: 06/20/2017
-ms.topic: overview
-
-# optional metadata
-
-
-ms.search.form: PCProductConfigurationModelDetails, PCProductConfigurationModelListPage, PCModalWaitDialog, PCTemplateConfigurationManager, PCConfigurationUIGrouping
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom:
-ms.collection: get-started
-ms.assetid: 70b968e8-e550-4731-823d-d713b8910f7b
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: benebotg
+ms.topic: overview
+ms.date: 06/20/2017
+ms.custom:
+ms.reviewer: kamaybac
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: PCProductConfigurationModelDetails, PCProductConfigurationModelListPage, PCModalWaitDialog, PCTemplateConfigurationManager, PCConfigurationUIGrouping
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 70b968e8-e550-4731-823d-d713b8910f7b
 ---
 
 # Product configuration models overview

@@ -16,9 +16,6 @@ ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 When you create a workflow type, you must assign it to a workflow category. The workflow category determines whether the workflow type is available in a specific module. If an appropriate workflow category doesn't already exist, you must create it.
 
 For example, a workflow type for a customer invoice should not be available in the **Master planning** module. To make the workflow type available only in the **Customer** module, select the **Customer** module when you create a workflow category.

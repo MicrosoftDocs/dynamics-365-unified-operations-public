@@ -1,26 +1,20 @@
 ---
-# required metadata
-
 title: End a production order
-description: This procedure shows how to end a production order.
+description: Learn how to end a production order, including a step-by-step process for ending production orders using the USMF demo data company.
 author: johanhoffmann
-ms.date: 11/11/2016
+ms.author: johanho
 ms.topic: how-to
-
-# optional metadata
-
-# ms.search.form:   
-audience: Application User
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.date: 11/11/2016
+ms.custom:
+ms.reviewer: kamaybac 
+audience: Application User 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
 ms.search.validFrom: 2016-06-30
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
 ---
+
 # End a production order
 
 [!include [banner](../../includes/banner.md)]

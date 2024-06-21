@@ -1,15 +1,15 @@
 ---
 title: Category requests from vendors
-description: This article describes how vendors can request procurement categories for their account. It also describes the approval process that is completed by procurement agents.
+description: Learn how vendors can request procurement categories for their account, including an outline on the approval process that is completed by procurement agents.
 author: Henrikan
-ms.date: 04/19/2021
-ms.topic: article
-ms.search.form: VendRequestNewCategory
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: henrikan
+ms.topic: article
+ms.date: 04/19/2021
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-04-19
+ms.search.form: VendRequestNewCategory
 ms.dyn365.ops.version: 10.0.18
 ---
 

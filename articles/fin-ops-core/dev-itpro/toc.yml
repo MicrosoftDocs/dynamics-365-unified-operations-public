@@ -303,29 +303,29 @@ items:
         href: data-entities/dm-error-descriptions.md  
       - name: Archive historical records
         items:
-        - name: Archive overview (preview)
+        - name: Archive overview
           href: sysadmin/archive-data.md
         - name: Set up and manage archive
           items:
-          - name: Set up and manage archive data in Dynamics 365 Finance (preview)
+          - name: Set up and manage archive data in finance and operations apps
             href: sysadmin/archive-setup-manage.md
-        - name: Archive customization (preview)
+        - name: Archive customization
           href: sysadmin/archive-custom.md
-        - name: View archive data (preview)
+        - name: View archive data
           href: sysadmin/archive-view.md
-        - name: Archive data scenarios (preview)
+        - name: Archive data scenarios
           items:
-          - name: Archive Dynamics 365 Finance General ledger (preview)
+          - name: Archive Dynamics 365 Finance General ledger
             href: sysadmin/archive-gl.md
-          - name: Archive Dynamics 365 Finance Tax transactions (preview)
+          - name: Archive Dynamics 365 Finance Tax transactions
             href: sysadmin/archive-taxtrans.md
-          - name: Archive Dynamics 365 Supply Chain Sales orders (preview)
+          - name: Archive Dynamics 365 Supply Chain Sales orders
             href: sysadmin/archive-so.md 
-          - name: Archive Dynamics 365 Supply Chain inventory transactions (preview)
+          - name: Archive Dynamics 365 Supply Chain inventory transactions
             href: sysadmin/archive-inventory.md
-          - name: Archive Dynamics 365 Supply Chain inventory journals (preview)
+          - name: Archive Dynamics 365 Supply Chain inventory journals
             href: sysadmin/archive-inventory-journal.md
-        - name: Dynamics 365 archive with Dataverse long term retention FAQ (preview)
+        - name: Finance and operations apps archive with Dataverse long term retention FAQ
           href: sysadmin/archive-faq.md
     - name: Azure Data Lake
       items: 
@@ -1189,13 +1189,13 @@ items:
           href: lifecycle-services/use-translation-service-ua.md
         - name: Translation memory files
           href: lifecycle-services/use-translation-service-tm.md
-        - name: Azure DevOps extension (Public Preview)
+        - name: Azure DevOps extension
           href: lifecycle-services/dts-devops-extension.md
-        - name: Azure DevOps extension tutorial (Public Preview)
+        - name: Azure DevOps extension tutorial
           href: lifecycle-services/dts-ado-tutorial.md
-        - name: Visual Studio extension (Public Preview)
+        - name: Visual Studio extension
           href: lifecycle-services/dts-visual-studio.md
-        - name: Visual Studio Code extension (Public Preview)
+        - name: Visual Studio Code extension 
           href: lifecycle-services/dts-vscode-doc.md
         - name: Dynamics 365 Translation Service Connector
           href: lifecycle-services/dts-connector-info.md
@@ -2283,7 +2283,7 @@ items:
       items:
       - name: Overview
         href: responsible-ai/responsible-ai-overview.md
-      - name: Responsible AI FAQ for chat with finance and operations data on Microsoft 365 Copilot (preview)
+      - name: Responsible AI FAQ for chat with finance and operations data on Microsoft 365 Copilot
         href: m365-copilot/faq-for-chat-with-fno-data-on-m365copilot.md
       - name: Responsible AI FAQ for Generative help and guidance with Copilot
         href: ../fin-ops/copilot/faq-copilot-generative-help.md

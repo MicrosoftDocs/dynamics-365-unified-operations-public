@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Manage folios
-description: This article describes how to work with folios. A folio typically consists of one vendor's goods for one entity or company per shipment. The goods in a folio can be in one container, or they can be spread among multiple containers.
+description: Learn how to work with folios, which typically consist of one vendor's goods for one entity or company per shipment, including an outline on action panes.
 author: Weijiesa
-ms.date: 12/14/2020
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: ITMFolioTable, ITMFolioTableListPage
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: weijiesa
+ms.topic: article
+ms.date: 12/14/2020
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-12-14
+ms.search.form: ITMFolioTable, ITMFolioTableListPage
 ms.dyn365.ops.version: 10.0.17
 ---
 

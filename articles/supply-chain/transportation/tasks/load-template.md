@@ -1,24 +1,17 @@
 --- 
-# required metadata 
- 
 title: Load templates
-description: This article describes how to set up load templates, and how to associate a load template with a new load.
+description: Learn how to set up load templates, and how to associate a load template with a new load, including a step-by-step process.
 author: Weijiesa
+ms.author: weijiesa
+ms.topic: how-to
 ms.date: 10/30/2020
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: WHSLoadTemplate, WHSOutboundLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench
-audience: Application User 
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.custom:
+ms.reviewer: kamaybac 
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: weijiesa
-ms.search.validFrom: 2020-10-30 
+ms.search.validFrom: 2020-10-30
+ms.search.form: WHSLoadTemplate, WHSOutboundLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench
 ms.dyn365.ops.version: 10.0.15
 ---
 

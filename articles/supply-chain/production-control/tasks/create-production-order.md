@@ -1,16 +1,16 @@
 ---
 title: Create a production order
-description: This procedure shows how to create a production order. 
+description: Learn how to create a production order, including step-by-step processes for creating production orders and validating production orders. 
 author: johanhoffmann
 ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form: ProdTableListPage, ProdTableCreate, ProdTable, ProdBOM, ProdRoute, ProdJournalCreate
 ms.topic: how-to
 ms.date: 05/22/2024
-audience: Application User
 ms.custom:
   - bap-template
   - evergreen
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: ProdTableListPage, ProdTableCreate, ProdTable, ProdBOM, ProdRoute, ProdJournalCreate
 ---
 
 # Create a production order

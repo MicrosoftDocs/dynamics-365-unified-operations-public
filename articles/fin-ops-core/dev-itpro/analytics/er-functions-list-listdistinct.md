@@ -6,7 +6,7 @@ ms.author: filatovm
 ms.topic: article
 ms.date: 07/30/2020
 ms.custom: 
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2020-08-01
@@ -18,7 +18,6 @@ ms.assetid:
 # LISTDISTINCT ER Function
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 The `LISTDISTINCT` function calculates the specified expression as a selector for every record of the specified list. It returns a new *Record list* value that contains a single record for each unique selector value.
 

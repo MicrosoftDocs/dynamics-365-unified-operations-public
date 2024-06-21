@@ -4,9 +4,10 @@ description: Learn about the overall scope and features of the Tax Calculation c
 author: EricWangChen
 ms.author: wangchen
 ms.topic: overview
-ms.date: 02/09/2024
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
 ms.reviewer: johnmichalak
-audience: Application user
 ms.search.region: Global
 ms.search.validFrom: 2021-04-01
 ms.search.form: TaxIntegrationTaxServiceParameters
@@ -76,6 +77,7 @@ We recommend that you import and set up your Tax Calculation configuration with 
 
 | Finance or Supply Chain Management version | Tax configuration version |
 | --------------- | --------------------------------------- |
+| 10.0.40         | Tax Calculation Configuration 43.68.254 |
 | 10.0.39         | Tax Calculation Configuration 40.65.249 |
 | 10.0.38         | Tax Calculation Configuration 40.61.246 |
 | 10.0.33         | Tax Calculation Configuration 40.60.244 |

@@ -1,15 +1,15 @@
 ---
 title: Sales and marketing overview
-description: You can use Sales and marketing to obtain, store, and use various types of data in the sales flow. This data includes the original sales initiative, future follow-up action, and additional sales.
+description: Learn how to use sales and marketing to obtain, store, and use various types of data in the sales flow, including original sales initiative and additional sales.
 author: Henrikan
 ms.author: henrikan
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: overview
 ms.date: 05/02/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form:
 ---
 
 # Sales and marketing overview

@@ -1,15 +1,15 @@
 ---
 title: Inventory management overview
-description: This article provides an overview of Inventory management.
-author: yufeihuang
+description: Learn how you can use inventory management to perform inbound operations, quality assurance, inventory activities, outbound operations, and inventory control.
+author: yufei-huang
 ms.author: yufeihuang
-ms.reviewer: kamaybac
-ms.search.form: InventParameters
 ms.topic: overview
 ms.date: 05/27/2024
-audience: Application User
 ms.custom:
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: InventParameters
 ---
 
 # Inventory management overview

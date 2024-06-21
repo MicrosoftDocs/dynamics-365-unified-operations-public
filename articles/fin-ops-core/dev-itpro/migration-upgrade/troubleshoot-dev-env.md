@@ -5,12 +5,12 @@ author: ttreen
 ms.author: ttreen
 ms.topic: article
 ms.date: 04/26/2022
-ms.reviewer: v-chgriffin
+ms.reviewer: johnmichalakffin
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 
 ms.search.form: 2022-04-08
-
+ms.service: dynamics-365-op
 ---
 
 # Troubleshoot development environments during upgrade

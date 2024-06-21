@@ -4,7 +4,7 @@ description: Learn how to add an entity backed financial dimension, including a 
 author: aprilolson
 ms.author: aolson
 ms.topic: how-to
-ms.date: 05/23/2023
+ms.date: 06/17/2024
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User  

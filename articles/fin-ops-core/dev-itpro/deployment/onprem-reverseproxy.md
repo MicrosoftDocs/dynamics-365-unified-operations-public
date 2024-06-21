@@ -3,15 +3,15 @@ title: Configure proxies for on-premises environments
 description: Learn how you can secure the on-premises environment behind a proxy, including an outlining on configuring proxie and safe list URLs.
 author: faix
 ms.author: osfaixat
-ms.topic: article
-ms.date: 04/05/2022
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
 ms.reviewer: johnmichalak
-audience: IT Pro
 ms.search.region: Global 
 ms.search.validFrom: 2017-06-30 
-# ms.search.form:  [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: Platform update 8
+ms.service: dynamics-365-op
 ---
 
 # Configure proxies for on-premises environments

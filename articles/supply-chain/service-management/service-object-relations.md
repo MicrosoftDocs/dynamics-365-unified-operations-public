@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Service object relations 
-description: You can create service object relations between a service object and a service agreement or service order. 
+description: Learn how you can create service object relations between a service object and a service agreement or service order, including an example. 
 author: ChristianRytt
-ms.date: 02/21/2018
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: SMAServiceObjectRelation
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: crytt
+ms.topic: article
+ms.date: 02/21/2018
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMAServiceObjectRelation
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Service object relations 
