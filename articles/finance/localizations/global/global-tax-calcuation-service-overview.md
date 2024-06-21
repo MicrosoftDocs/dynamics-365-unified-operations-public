@@ -4,9 +4,10 @@ description: Learn about the overall scope and features of the Tax Calculation c
 author: EricWangChen
 ms.author: wangchen
 ms.topic: overview
-ms.date: 02/09/2024
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
 ms.reviewer: johnmichalak
-audience: Application user
 ms.search.region: Global
 ms.search.validFrom: 2021-04-01
 ms.search.form: TaxIntegrationTaxServiceParameters
