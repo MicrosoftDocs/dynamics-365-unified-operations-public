@@ -54,7 +54,7 @@ We recommend that you take the time to select an appropriate project category fo
 You can add specific entities to an import or export job or select a template to apply. Templates fill a job with a list of entities. The **Apply template** option is available after you give the job a name and save the job.
 
 ### Set the data format for the job
-When you select an entity, you must select the format of the data that's exported or imported. You define formats by using the **Data sources setup** tile. A source data format is a combination of **Type**, **File format**, **Row delimiter** and **Column delimiter**. There are other attributes, but these are the key ones to understand. The following table lists the valid combinations.
+When you select an entity, you must select the format of the data that's exported or imported. You define formats by using the **Data sources setup** tile. A source data format is a combination of **Type**, **File format**, **Row delimiter** and **Column delimiter**. There are other, but these attributes are the key attributes to understand. The following table lists the valid combinations.
 
 | File Format            | Row/Column delimiter                       | XML Style                 |
 |------------------------|--------------------------------------------|---------------------------|
@@ -68,7 +68,7 @@ When you select an entity, you must select the format of the data that's exporte
 > [!NOTE]
 > For XML-based file formats, make sure to only use legal characters. For more information about valid characters, see [Valid Characters in XML 1.0](https://www.w3.org/TR/2006/REC-xml-20060816/Overview.html#charsets/). XML 1.0 does not allow any control characters except for tabs, carriage returns, and line feeds. Examples of illegal characters are square brackets, curly brackets, and backslashes. 
 
-Use Unicode instead of a specific code page to import or export data. This helps provide the most consistent results and eliminate data management jobs to fail because they include Unicode characters. The system-defined source data formats that use Unicode all have **Unicode** in the source name. The Unicode format is applied by selecting a Unicode encoding ANSI code page as **Code page** in the **Regional settings** tab. Select one of the following code pages for Unicode:
+To import or export data, use Unicode instead of a specific code page. This helps provide the most consistent results and eliminate data management jobs to fail because they include Unicode characters. The system-defined source data formats that use Unicode all have **Unicode** in the source name. The Unicode format is applied by selecting a Unicode encoding ANSI code page as **Code page** in the **Regional settings** tab. Select one of the following code pages for Unicode:
 
 | Code page	| Display name                |
 |-----------|-----------------------------|
@@ -90,7 +90,7 @@ The execution unit, level in the execution unit, and sequence of an entity help 
 - Entities in different execution units are processed in parallel.
 - In each execution unit, entities are processed in parallel if they have the same level.
 - In each level, entities are processed according to their sequence number in that level.
-- After one level has been processed, the next level is processed.
+- After one level is processed, the next level is processed.
 
 #### Resequencing
 You might want to resequence your entities in the following situations:
@@ -99,7 +99,7 @@ You might want to resequence your entities in the following situations:
 - If multiple data jobs are used (for example, one job for each module), you can use sequencing to affect the level and sequence of entities for optimal execution.
 - If there are no dependencies at all, you can sequence entities at different execution units for maximum optimization.
 
-The **Resequencing** menu is available when multiple entities are selected. You can resequence based on execution unit, level, or sequence options. You can set an increment to resequence the entities that have been selected. The unit, level, and/or sequence number that is selected for each entity is updated by the specified increment.
+The **Resequencing** menu is available when multiple entities are selected. You can resequence based on execution unit, level, or sequence options. You can set an increment to resequence the entities that are selected. The unit, level, and/or sequence number selected for each entity updates by the specified increment.
 
 #### Sorting
 Use can use the **Sort by** option to view the entity list in sequential order.
