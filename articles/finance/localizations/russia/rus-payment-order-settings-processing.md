@@ -1,8 +1,8 @@
 ---
 title: Set up and process payment orders for Russia
 description: Learn how to set up and process payment orders for Russia, including an outline and step-by-step process for generating payment orders.
-author: AdamTrukawka
-ms.author: atrukawk
+author: kailiang
+ms.author: kailiang
 ms.topic: how-to
 ms.custom: 
   - bap-template
