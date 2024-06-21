@@ -1,12 +1,11 @@
 ---
 title: Value-added tax (VAT) for tax agents (Russia)
 description: Learn how to set up VAT and perform transactions for tax agent for Russia, including outlines and processes on setting up tax agent transactions.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 10/28/2018
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.date: 06/21/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.search.form: TaxAuthority, VATOperationCodeTable_RU
