@@ -3,9 +3,9 @@ title: Configure document management
 description: Learn about how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: jasongre
 ms.author: jasongre
-ms.date: 05/16/2024
+ms.date: 06/21/2024
 ms.topic: article
-ms.reviewer: johnmichalak
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update 
@@ -50,9 +50,9 @@ SharePoint Online is a supported storage location for attachments.
 > - SharePoint managed device policies are incompatible with an integration to finance and operations apps.
 
 ### One-time registration process 
-In version 10.0.40 and later when the **SharePoint user authentication** feature is enabled, your organization will need to perform a one-time setup to use the SharePoint integration for non-interactive batch scenarios. This is because the Microsoft-managed high-trust connection between the finance and operations environment and SharePoint has been deprecated. 
+In Dynamics 365 finance and operations version 10.0.40 and later, when the **SharePoint user authentication** feature is enabled, your organization needs to perform a one-time setup to use the SharePoint integration for non-interactive batch scenarios. This is because the Microsoft-managed high-trust connection between the finance and operations environment and SharePoint has been deprecated. 
 
-With this updated SharePoint authentication mechanism, batch connections will utilize application access. As this access is **not** granted by default for tenants, an Entra ID tenant administrator needs to be manually grant access one time for the tenant. This can be done by running the following PowerShell commands to provide the required application consent for finance and operations batch scenarios to connect to SharePoint.  
+With this updated SharePoint authentication mechanism, batch connections utilize application access. As this access is not granted by default for tenants, an Entra ID tenant administrator needs to be manually grant access one time for the tenant. This can be done by running the following PowerShell commands to provide the required application consent for finance and operations batch scenarios to connect to SharePoint.  
 
 ``` powershell
 
@@ -66,7 +66,7 @@ $erpServicePrincipal = Get-MgServicePrincipal -Filter "AppId eq '00000015-0000-0
 $sharePointServicePrincipal = Get-MgServicePrincipal -Filter "AppId eq '00000003-0000-0ff1-ce00-000000000000'"
 $spAppRole = $erpServicePrincipal.AppRoles | where {$_.Value -eq 'Sites.ReadWrite.All'}
     
-# Assign the SharePoint 'Sites.ReadWrite.All' permission to the Microsoft Dynamics ERP application
+# Assign the SharePoint 'Sites.ReadWrite.All' permission to the Microsoft Dynamics 365 finance and operations application
 New-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId $erpServicePrincipal.Id -PrincipalId $erpServicePrincipal.Id -ResourceId $erpServicePrincipal.Id -AppRoleId $spAppRole.Id
 ```
 > [!IMPORTANT]
@@ -84,7 +84,7 @@ To configure SharePoint storage, follow these steps.
     Typically, if no default SharePoint server is specified, either there's no SharePoint site for the tenant, or a valid Microsoft 365 license isn't associated with the current user (the admin).
 
 3. Optional: Test the SharePoint connection
-    -  If the **SharePoint user authentication** feature is **disabled**, select **Test SharePoint connection** to test the specified SharePoint host name. This action verifies that the security and license are working correctly.
+    -  If the **SharePoint user authentication** feature is disabled, select **Test SharePoint connection** to test the specified SharePoint host name. This action verifies that the security and license are working correctly.
     -  If the **SharePoint user authentication** feature is **enabled**, there are two SharePoint connection types to test. Use the **Test interactive SharePoint connection** action to test interactive scenarios using the logged-in user's context. Use the **Test batch SharePoint connection** action to test batch scenarios using the granted application access.  
 5. Optional: Select **Open SharePoint** to open the specified SharePoint host name in a browser. This action doesn't verify security. It just opens the SharePoint path on a browser tab for easy exploration.
 6. Optional: On the **General** tab, turn on **Open attachments in new window**. For more information, see the [Other configuration](#other-configuration) section later in this article.
