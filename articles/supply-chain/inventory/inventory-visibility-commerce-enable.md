@@ -1,12 +1,12 @@
 ---
-title: Enable Inventory Visibility service for Commerce
+title: Enable Inventory Visibility for Commerce
 description: This article describes how to set up Inventory Visibility for Dynamics 365 Commerce Scale Units (CSUs) so that e-commerce, POS, or other applications on CSUs can use inventory visibility for real-time inventory lookup, reservation, and adjustments.
 author: yufeihuang
 ms.author: yufeihuang
 ms.reviewer: kamaybac
 ms.search.form: InventInventoryDataService, KeyVaultParameters
 ms.topic: how-to
-ms.date: 06/11/2024
+ms.date: 06/21/2024
 audience: Application User
 ms.custom: 
   - bap-template
@@ -32,6 +32,8 @@ The following illustration shows a system that implements most of the mentioned 
 
 :::image type="content" source="media/commerce-ivs-integration.svg" alt-text="Block diagram of an integrated system." lightbox="media/commerce-ivs-integration.svg":::
 
+For more information about Inventory Visibility, see [Inventory Visibility Add-in overview](inventory-visibility.md).
+
 ## Prerequisites
 
 To use the features described in this article, your system must meet the following requirements:
@@ -54,11 +56,11 @@ Enable adjustments in Supply Chain Management by following these steps:
 
 1. Sign in to Supply Chain Management.
 1. Go to **Inventory Management** \> **Inventory Visibility** \> **Inventory Visibility integration**.
-1. Open the **Adjustment** tab. On the **Manage inventory adjustment posting and retry** FastTab toolbar, select **Enable adjustment**.  <!--KFM: What does this do? What happens now? -->
+1. Open the **Adjustment** tab. On the **Manage inventory adjustment posting and retry** FastTab toolbar, select **Enable adjustment**.
 
-## <a name="app-registration"></a>Create a key vault and register a Microsoft Entra application
+## <a name="key-vault"></a>Create a key vault to hold the client secret for Inventory Visibility
 
-Create a key vault and register a Microsoft Entra application by following these steps:
+Create a key vault to hold the client secret for Inventory Visibility by following these steps:
 
 1. Sign in to [Microsoft Azure portal](https://portal.azure.com/).
 1. Search for or select **Key vaults** and open the **Key vaults** page.
@@ -66,61 +68,82 @@ Create a key vault and register a Microsoft Entra application by following these
 1. Work through the **Create key vault** wizard to create a new key vault.
 1. Open the key vault you just created. On the navigation pane, select **Overview**. Then copy the value shown for **Vault URI** and paste it into a temporary text file (and label the value so you can identify it later).
 1. With your key vault still open, on the navigation pane, select **Object** > **Secrets**.
-1. From the toolbar, select **Generate/Import**. Fill out the form to create a new secret. Copy and label the following values in your temporary text file:
-    - **Name**
-    - **Secret value** <!--KFM: Do we ever use this again? Can we specify any value we want? Any advice? -->
+1. From the toolbar, select **Generate/Import** to open the **Create a secret** page. Make the following settings here:
+    - **Upload options** – Select *Manual*.
+    - **Name** – Enter a name for the secret (for example, *commerce-iv-01-secret*). Copy and label this value in your temporary text file
+    - **Secret value** – Enter the client secret value that you used when installing the Inventory Visibility add-in (as mentioned in the [prerequisites](#prerequisites)).
+    - **Content type** – Enter *application/vnd.ms-StorageConnectionString*.
+    - **Set activation date** – Select this checkbox and then enter the first date on which this secret should be valid.
+    - **Set expiration date** – Select this checkbox and then enter the last date on which this secret should be valid.
+    - **Enabled** – Set to *Yes*.
 
-1. Go back to the home page of Azure portal.
+1. Select **Create** to create and save the secret.
+
+## <a name="app-registration"></a>Register a Microsoft Entra application to provide access to the key vault
+
+Register a Microsoft Entra application to enable Supply Chain Management and Commerce to access the key vault by following these steps:
+
+1. Go back to the home page of [Azure portal](https://portal.azure.com/).
 1. Search for or select **App registrations** and open the **App registrations** page.
-1. On the toolbar, select **New registration**. You'll use this app to allow Supply Chain Management to access Azure Key Vault.
+1. On the toolbar, select **New registration**.
 1. On the **Register an application** page, set the following fields:
     - **Name** – Enter a name.
-    - **Supported account types** – Specify who can use the new application. <!--KFM: Any advice? -->
+    - **Supported account types** – Specify who can use the new application. For more information about this setting, see [Identity and account types for single- and multitenant apps](/security/zero-trust/develop/identity-supported-account-types).
     - **Redirect URI** – Leave this field blank.
 
-1. Select **Register**.
+1. Select **Register** to register the application.
 1. The new app registration opens. From the navigation pane, select **Manage** \> **Certificates & secrets**.
 1. Open the **Client secrets** tab and select **New client secret**.
 1. In the **Add a client secret** dialog box, select an expiration date that meets your needs, and then select **Add**.
-1. The **Certificates & secrets** page now shows details about the new client secret. These details are shown only once and will be hidden when the page is reloaded. Therefore, you must copy them now. Copy and label the following values in your temporary text file:
+1. The **Certificates & secrets** page now shows details about the new client secret. These details are shown only once and will be hidden when the page is reloaded. Therefore, you must copy them now. Copy and label the following value in your temporary text file:
     - **Value**
-    - **Secret ID** <!--KFM: Do we ever use this again? -->
 
 1. On the navigation pane, select **Overview**. Copy and label the following values in your temporary text file:
     - **Application (client) ID**
     - **Directory (tenant) ID**
 
+## <a name="scm-vault-setup"></a>Set up Supply Chain Management to access the new key vault
+
+Set up Supply Chain Management to access the new key vault through the new application by following these steps:
+
 1. Sign in to Supply Chain Management.
-1. From the company picker, select the same company (legal entity ID) as your Dynamics 365 Commerce channel. <!--KFM: Please confirm this edit -->
+1. From the company picker, select the same company (legal entity ID) as your Dynamics 365 Commerce channel.
 1. Go to **System administration** \> **Setup** \> **Key Vault parameters**.
 1. On the Action Pane, select **New** to add a new record. Fill in the following fields:
     - **Name** – Enter a name for the Key Vault record.
     - **Description** – Enter a short description.
-    - **Key Vault URL** – Paste the **Vault URI** value you copied earlier when creating the key vault (step 5).
-    - **Key Vault client** – Enter the **Application (client) ID** value you copied earlier when creating the app registration (step 17).
-    - **Key Vault secret key** – Enter the secret **Value** value you copied earlier when creating the app registration (step 16).
+    - **Key Vault URL** – Paste the **Vault URI** value you copied earlier when creating the key vault (see [Create a key vault to hold the client secret for Inventory Visibility](#key-vault), step 5).
+    - **Key Vault client** – Enter the **Application (client) ID** value you copied earlier when creating the app registration (see [Register a Microsoft Entra application to provide access to the key vault](#app-registration), step 10).
+    - **Key Vault secret key** – Enter the secret **Value** you copied earlier when creating the app registration (see [Register a Microsoft Entra application to provide access to the key vault](#app-registration), step 9).
 
 1. From the **Secrets** FastTab toolbar, select **Add** to add a new row to the grid and make the following settings for it:
-    - **Name** – Enter the **Name** value you copied earlier when creating the secret for the key vault (step 7). Enter this value as *vault:///\<SecretName\>*. For example, if your key vault secret name is *commerce-iv-01-secret*, you should enter *vault:///commerce-iv-01-secret*.
+    - **Name** – Enter a name to identify the secret. You'll need this value later, so copy and label it in your temporary text file.
     - **Description** – Enter a short description.
-    - **Secret** –  <!--KFM: Should this be the **Secret value** that we specified for the key vault? -->
+    - **Secret** – Enter a value using the form *vault:///\<SecretName\>*, where *\<SecretName\>* is the **Name** value you copied earlier when creating the secret for the key vault (see [Create a key vault to hold the client secret for Inventory Visibility](#key-vault), step 7). For example, if your key vault secret name is *commerce-iv-01-secret*, you should enter *vault:///commerce-iv-01-secret*.
     - **Secret type** – Select *Manual*.
 1. From the **Secrets** FastTab toolbar, select **Validate**. If you've entered all the values correctly, you should see an info message that says "Validation successful." If you get an error, double-check your settings and try again.
 1. On the Action Pane, select **Save**. Be patient; the save operation takes about two minutes.
 
 For more information about the settings mentioned in this procedure, see [Set up the Azure Key Vault client](../../finance/localizations/global/setting-up-azure-key-vault-client.md).
 
-## Set up the integration between Inventory Visibility and Commerce and run the solution
+## Set up the integration between Inventory Visibility and Commerce
 
-Set up the integration between Inventory Visibility and Commerce and run the solution by following these steps:
+Set up the integration between Inventory Visibility and Commerce by following these steps:
 
 1. Sign in to Supply Chain Management.
 1. Go to **Retail and Commerce** \> **Headquarters setup** \> **Parameters** \> **Commerce shared parameters**.
 1. Open the **Inventory** tab and make the following settings:
-    - **Microsoft Entra tenant ID** – Enter the **Directory (tenant) ID** value you copied earlier when creating the app registration (see [Create a key vault and register a Microsoft Entra application](#app-registration), step 17).
-    - **Microsoft Entra app ID** – Enter the **Application (client) ID** value you copied earlier when creating the app registration (see [Create a key vault and register a Microsoft Entra application](#app-registration), step 17).
-    - **Microsoft Entra client secret** – Select the name of the secret you created for the key vault (see [Create a key vault and register a Microsoft Entra application](#app-registration), step 7). <!--KFM: Please confirm this. -->
+    - **Microsoft Entra tenant ID** – Enter the **Directory (tenant) ID** value that you used when installing the Inventory Visibility add-in (as mentioned in the [prerequisites](#prerequisites)).
+    - **Microsoft Entra app ID** – Enter the **Application (client) ID** value that you used when installing the Inventory Visibility add-in (as mentioned in the [prerequisites](#prerequisites)).
+    - **Microsoft Entra client secret** – Select the name you copied earlier when specifying the secret for the key vault on the **Key Vault parameters** page in Supply Chain Management (see [Set up Supply Chain Management to access the new key vault](#scm-vault-setup), step 5).
     - **Use Inventory Visibility as inventory data provider** – Set to *Yes*.
 
 1. On the Action Pane, select **Save**.
-1. Go back to Headquarters > Retail and Commerce > Retail and Commerce IT > 1110 Global configurations > Run now. <!--KFM: I can't find this. I think something is wrong with this path. Also, what is this, what does it do? What do we mean by "Headquarters" here? -->
+
+## Run the global configuration job
+
+Run the global configuration job by following these steps:
+
+1. Go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Distribution schedule**.
+1. From the list pane, select the record named *1110 Global configuration*.
+1. On the Action Pane, select **Run now**.

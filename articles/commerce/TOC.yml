@@ -280,6 +280,8 @@
           href: ../fin-ops-core/dev-itpro/deployment/apply-deployable-package-system.md?context=/dynamics365/context/commerce
         - name: Initialize seed data in new Commerce environments
           href: enable-configure-retail-functionality.md
+        - name: Enable Inventory Visibility for Commerce
+          href: ../supply-chain/inventory/inventory-visibility-commerce-enable.md?context=/dynamics365/context/commerce
     - name: Implementation
       items:
       - name: Application lifecycle management
