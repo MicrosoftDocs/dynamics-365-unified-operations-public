@@ -3,7 +3,7 @@ title: Preview ledger transactions (Russia)
 description: Learn how to preview ledger transactions in Microsoft Dynamics 365 Finance for Russia, including a step-by-step process.
 author: evgenypopov
 ms.author: evgenypopov
-ms.topic: how-tp
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 06/21/2024
