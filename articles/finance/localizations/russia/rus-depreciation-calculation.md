@@ -1,16 +1,17 @@
 ---
 title: Calculate depreciation for Russia
 description: Learn how to calculate depreciation for Russian fixed assets, including an outline and step-by-step process for calculating fixed asset depreciations.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 10/28/2018
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-ms.search.industry: 
+
 ---
 
 # Calculate depreciation for Russia
