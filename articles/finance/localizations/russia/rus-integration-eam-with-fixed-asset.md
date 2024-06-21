@@ -1,8 +1,8 @@
 ---
 title: Integration of the Asset management module with the Fixed asset (Russia) module
 description: Learn about the integration of the Asset management module with the Fixed asset (Russia) module, including a process for relating an asset to a Russian fixed asset.
-author: AdamTrukawka
-ms.author: atrukawk
+author: evgenypopov
+ms.author: evgenypopov
 ms.topic: overview
 ms.custom: 
   - bap-template
