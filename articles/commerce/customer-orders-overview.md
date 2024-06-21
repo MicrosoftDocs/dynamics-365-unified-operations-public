@@ -60,7 +60,7 @@ When you work with customer orders in POS, you must consider some of the setting
 
 Before you try to create customer orders in POS, you must configure the appropriate parameters in headquarters. These parameters can be found on the **Customer orders** tab of the **Commerce parameters** page.
 
-- **Default order type** – You can specify the order type that is assigned by default to customer orders that are created in POS. These customer orders can be either sales orders or quotation orders. Regardless of the default order type, users can still create both sales orders and customer orders from POS.
+- **Default order type** – This is a legacy property and is not supported.
 - **Default deposit percentage** – Specify the percentage of the order total amount that the customer must pay as a deposit before an order can be confirmed. Depending on their privileges, store associates might be able to override the amount by using the **Deposit override** operation in POS, if that operation is configured for the transaction screen layout.
      > [!NOTE]
      > The deposit percentage setting is ignored if a business-to-business (B2B) type customer belonging to a customer hierarchy is added to the customer order. For such customers, the default deposit percentage is always set to zero, but the cashier can override the deposit percentage using the **Deposit override** operation.
