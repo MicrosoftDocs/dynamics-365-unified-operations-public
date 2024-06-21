@@ -28,7 +28,7 @@ This article lists features that are either new or changed in Microsoft Dynamics
 
 The following features are included in this release. The feature titles link to additional information on the [Release plans](/dynamics365/release-plans/) site. Additional links point to additional documentation or videos that are currently available for that feature. Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
-- [Allow locking the job card touchscreen for sanitization](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/allow-locking-job-card-touchscreen-sanitization)<br> - For more information, see [Configure job card for devices](../production-control/config-job-card-device.md).
+- [Allow locking the job card touchscreen for sanitization](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/allow-locking-job-card-touchscreen-sanitization)<br> - For more information, see [Configure the production floor execution interface](../production-control/production-floor-execution-configure.md).
 
 - [Capture product variants and tracking dimensions in the warehouse app during load item receiving](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/capture-product-variants-tracking-dimensions-warehousing-app-during-load-item-receiving)<br> - For more information, see [Set up mobile devices for warehouse work](../warehousing/configure-mobile-devices-warehouse.md).
 
