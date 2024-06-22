@@ -1,12 +1,13 @@
 ---
 title: Acquiring fixed assets and putting them into operation (Russia)
 description: Learn about fixed asset acquisitions for Russia, including outlines and step-by-step processes for acquiring assets and creating standard printing forms.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 09/25/2018
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/20/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.search.form: RAssetTable, LedgerJournalTable

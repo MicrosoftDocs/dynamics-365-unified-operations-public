@@ -1,15 +1,15 @@
 ---
 title: Revision factures and corrective factures
 description: Learn about issuing a corrective or revision facture with an original facture, including an outline on setting up parameters to create corrective factures.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 08/12/2019
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2019-06-28
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.0
 ---
 
