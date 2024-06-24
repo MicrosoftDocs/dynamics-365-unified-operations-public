@@ -158,7 +158,7 @@ The following table summarizes the meaning of each field in the JSON body.
 | `dimensions` | A dynamic key-value pair. The values are mapped to some of the dimensions in Supply Chain Management. However, you can also add custom dimensions (for example, *Source*) to indicate whether the event is coming from Supply Chain Management or an external system. |
 
 > [!NOTE]
-> If your [data partition rule](inventory-visibility-power-platform.md#data-partition) is set to *By product ID*, `siteId` and `locationId` are optional dimensions. Otherwise they're required dimensions. This rule also applies to the allocation, soft reserve, and change schedule APIs.
+> If your [data partition rule](inventory-visibility-power-platform.md#data-partition) is set to *By product ID*, `siteId` and `locationId` are optional dimensions. Otherwise, they're required dimensions. This rule also applies to the allocation, soft reserve, and change schedule APIs.
 
 The following subsections provide examples that show how to use these APIs.
 
@@ -603,7 +603,7 @@ Body:
     ]
 ```
 
-If the clean up job is successfully created, a job ID will be returned in the response, which can be used to [get job execution progress](#get-job-execution-progress).
+If the cleanup job is successfully created, a job ID will be returned in the response, which can be used to [get job execution progress](#get-job-execution-progress).
 
 ## Get job execution progress
 
@@ -642,7 +642,7 @@ The query by post API is available in two versions. The following table outlines
 | API version 1.0 | API version 2.0 |
 |---|---|
 | Can only query one organization ID. | Can query multiple organization IDs. |
-| Can query up to 10,000 combinations of sites and warehouses. | Can query more than 10,000 combinations of organization IDs, sites and warehouses. Can return results in multiple pages. |
+| Can query up to 10,000 combinations of sites and warehouses. | Can query more than 10,000 combinations of organization IDs, sites, and warehouses. Can return results in multiple pages. |
 
 The following subsections show how to use each API version.
 
