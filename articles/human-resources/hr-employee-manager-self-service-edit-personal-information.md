@@ -4,7 +4,7 @@
 title: Edit personal information
 description: This article describes how to edit personal information in Employee and Manager self service.
 author: twheeloc
-ms.date: 05/25/2023
+ms.date: 06/25/2024
 ms.topic: article
 # optional metadata
 
@@ -44,9 +44,7 @@ The personal information you can edit includes:
 Parameters set on the **Global address book parameters** page determine which roles can see your personal information.
 
 1. In Human Resources, select **Employee self service**.
-
 2. Select **Edit personal details**.
-
 3. To change your address, select the **Addresses** tab. Changes you make appear in the **Personnel management** workspace to alert HR.
 
     - To add a new address, select **Add**.

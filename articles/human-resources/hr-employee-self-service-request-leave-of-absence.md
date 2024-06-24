@@ -4,7 +4,7 @@
 title: Request a leave of absence
 description: Submit a leave of absence request. 
 author: twheeloc
-ms.date: 06/01/2020
+ms.date: 06/20/2024
 ms.topic: article
 
 
