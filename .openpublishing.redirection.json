@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/human-resources/hr-infrastructure-merge-faq.md",
+      "redirect_url": "/dynamics365/human-resources/hr-infrastructure-merge",
+      "redirect_document_id": "false"
+    }, 
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/perf-test/perfsdk-tutorial-lbd.md",
       "redirect_url": "https://community.dynamics.com/blogs/post/?postid=4fc1ab59-1948-ee11-be6d-00224827e8f9",
       "redirect_document_id": "false"
