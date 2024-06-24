@@ -13,8 +13,6 @@ items:
         href: hr-infrastructure-merge.md
       - name: Human Resources infrastructure customer migration
         href: hr-cust-migration.md  
-      - name: Human Resources infrastructure merge FAQ
-        href: hr-infrastructure-merge-faq.md
       - name: Human Resources customer migration FAQ
         href: customer-migration.md 
       - name: Human Resources infrastructure merge known issues
