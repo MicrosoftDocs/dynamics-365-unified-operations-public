@@ -1,13 +1,13 @@
 ---
 title: Rated expenses registers
 description: Learn about some expense types of which only a part within the established standard is accepted for tax accounting in the current period.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 08/16/2021
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/20/2024
 ms.reviewer: johnmichalak
-audience: Application User
-ms.search.region: 
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---

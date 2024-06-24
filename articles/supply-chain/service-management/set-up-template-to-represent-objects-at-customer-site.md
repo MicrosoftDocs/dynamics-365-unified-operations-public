@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Set up template to represent objects at customer site 
-description: Set up template to represent objects at customer site.
+description: Learn how to set up template to represent objects at customer site, including a step-by-step process for setting up templates.
 author: ChristianRytt
-ms.date: 05/07/2018
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: SMAAgreementTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: crytt
+ms.topic: article
+ms.date: 05/07/2018
+ms.custom:
+ms.reviewer: kamaybac 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMAAgreementTable
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

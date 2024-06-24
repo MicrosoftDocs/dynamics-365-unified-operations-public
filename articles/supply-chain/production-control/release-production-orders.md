@@ -3,16 +3,13 @@ title: Release production orders
 description: Learn about release production orders, including outlines on characteristics of the released state and releasing jobs to the shop floor.
 author: johanhoffmann
 ms.author: johanho
-ms.topic: article
-ms.date: 03/02/2021
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: ProdParmRelease
-ms.dyn365.ops.version: AX 7.0.0
-ms.assetid: 50c2257b-2924-44f5-b7c1-11f498092053
+ms.topic: conceptual
+ms.date: 03/02/2021
+audience: Application User
+ms.custom: 
+  - bap-template
 ---
 
 # Release production orders
@@ -32,7 +29,7 @@ The **Released** state is one state in the production order life cycle. Producti
 
 ## Releasing jobs to the shop floor
 
-After a production order is released, production jobs that are related to the order are visible and ready for registration. The operators can make job registrations, such as Start, Stop, and Completion, on either the **Job card terminal** page or the **Job card device** page. The registered time and quantity are automatically transferred from the registration pages to production journals to keep track of the consumed time and quantity.
+After a production order is released, production jobs that are related to the order are visible and ready for registration. The operators can make job registrations, such as Start, Stop, and Completion, on the [production floor execution interface](production-floor-execution-use.md). The registered time and quantity are automatically transferred from the registration pages to production journals to keep track of the consumed time and quantity.
 
 ## Route cards
 

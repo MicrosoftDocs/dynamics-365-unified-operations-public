@@ -1,15 +1,15 @@
 ---
 title: Analyze warehouse material movement through process mining (preview)
-description: This article provides information about the Warehouse material movement analysis template for the Microsoft Power Automate Process Mining. This template helps warehouse and operations managers gain insights into the material flow in the warehouse.
+description: Learnabout the Warehouse material movement analysis template for the Microsoft Power Automate Process Mining, including prerequisites.
 author: Mirzaab
 ms.author: mirzaab
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 07/18/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # Analyze warehouse material movement through process mining (preview)

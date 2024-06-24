@@ -3,11 +3,11 @@ title: Configure the infrastructure scripts for your Finance + Operations (on-pr
 description: Learn how to configure the infrastructure scripts that are provided to deploy Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: faix
 ms.author: osfaixat
-ms.topic: article
-ms.date: 12/22/2022
+ms.topic: how-to
 ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom:
 ms.dyn365.ops.version: 

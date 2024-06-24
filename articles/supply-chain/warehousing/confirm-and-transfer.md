@@ -1,24 +1,16 @@
 ---
-# required metadata
-
 title: Confirm and transfer
-description: This article explains how to use the Confirm and transfer feature, which lets users ship loads out of the warehouse before they complete all the work that is associated with those loads.
+description: Learn how to use the Confirm and transfer feature, which lets users ship loads out of the warehouse before they complete all the work associated with those loads.
 author: Mirzaab
-ms.date: 07/01/2020
-ms.topic: article
-
-# optional metadata
-
-ms.search.form:  WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
+ms.topic: article
+ms.date: 07/01/2020
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-07-01
+ms.search.form:  WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench
 ms.dyn365.ops.version: 10.0.8
 ---
 

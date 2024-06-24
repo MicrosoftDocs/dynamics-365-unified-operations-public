@@ -1,13 +1,13 @@
 ---
 title: Print labels using the Loftware NiceLabel label service solution
-description: This article describes how to set up and print labels by using Loftware NiceLabel label service solution.
+description: Learn how to set up and print labels by using Loftware NiceLabel label service solution, including code examples and step-by-step processes.
 author: Mirzaab
 ms.author: mirzaab
-ms.reviewer: kamaybac
-ms.search.form: WHSLabelLayout, WHSLabelLayoutDataSource
 ms.topic: how-to
 ms.date: 04/04/2023
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.form: WHSLabelLayout, WHSLabelLayoutDataSource
 ---
 
 # Print labels using the Loftware NiceLabel label service solution

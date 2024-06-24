@@ -266,7 +266,7 @@ The uninstall process terminates the Inventory Visibility Add-in, unregisters th
 >
 > Inventory Visibility data that is stored in tables will also be deleted along with the solutions.
 
-## Supply Chain Management Database and Dataverse Movement
+## Move data between Supply Chain Management Database and Dataverse
 
 There are several ways to migrate data between Supply Chain Management databases and Dataverse environments. For instructions, see the [Inventory Visibility GitHub repo](https://github.com/microsoft/Inventory-Visibility-Add-in-Examples/blob/main/Troubleshooting%20Guide/Database%20and%20Dataverse%20Movement.md). If the target environment of your movement operation is a production environment, or if your scenario isn't listed in the guide, please contact [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) for assistance.
 

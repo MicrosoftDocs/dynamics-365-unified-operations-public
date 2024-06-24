@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Configure Display older batches within warehouse on a mobile device
-description: This article describes how to set up a mobile device to display a list of locations with batches older than the current location of a work line.
+description: Learn how to set up a mobile device to display a list of locations with batches older than the current location of a work line.
 author: Mirzaab
-ms.date: 05/26/2017
-ms.topic: article
-
-# optional metadata
-
-ms.search.form:  WHSRFMenuItem
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mirzaab
+ms.topic: article
+ms.date: 05/26/2017
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:  WHSRFMenuItem
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Configure Display older batches within warehouse on a mobile device

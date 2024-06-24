@@ -1,15 +1,15 @@
 ---
 title: Set different dimensions for packing and storage
-description: This article shows how to specify which process (packing, storage, or nested packing) each specified dimension is used for.
+description: Learn how to specify which process (packing, storage, or nested packing) each specified dimension is used for with an outline of an example scenario.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: EcoResPhysicalProductDimensions, WHSPhysDimUOM
 ms.topic: how-to
 ms.date: 06/07/2024
-audience: Application User
 ms.custom:
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: EcoResPhysicalProductDimensions, WHSPhysDimUOM
 ---
 
 # Set different dimensions for packing and storage

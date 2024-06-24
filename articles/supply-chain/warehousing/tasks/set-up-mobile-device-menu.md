@@ -1,26 +1,20 @@
 --- 
-# required metadata 
- 
 title: Set up a mobile device menu item for completing work of type Purchase order
-description: This article shows how to set up a Mobile device menu item. 
+description: Learn how to set up a Mobile device menu item, including a step-by-step process for creating mobile device menu items using the USMF demo data company. 
 author: Mirzaab
+ms.author: mirzaab
+ms.topic: how-to
 ms.date: 08/02/2019
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: WHSRFMenuItem, WHSRFAutoConfirm, WHSRFMenu   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: kamaybac   
+audience: Application User  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mirzaab
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: WHSRFMenuItem, WHSRFAutoConfirm, WHSRFMenu
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Set up a mobile device menu item for completing work of type Purchase order
 
 [!include [banner](../../includes/banner.md)]

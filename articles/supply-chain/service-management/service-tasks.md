@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Service tasks overview
 description: Use service tasks to describe the task to be completed during a service order. Both technicians and customers can see this information. 
 author: ChristianRytt
-ms.date: 07/25/2019
-ms.topic: overview
-
-# optional metadata
-
-ms.search.form: SMAServiceTask
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: crytt
+ms.topic: overview
+ms.date: 07/25/2019
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMAServiceTask
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Service tasks overview

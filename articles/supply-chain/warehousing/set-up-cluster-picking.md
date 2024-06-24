@@ -1,15 +1,15 @@
 ---
 title: Set up cluster picking
-description: This article describes how to set up cluster picking and how to apply item confirmation with cluster picking.
+description: Learn how to set up cluster picking and how to apply item confirmation with cluster picking, including an outline on enabling cluster picking.
 author: Mirzaab
 ms.author: mirzaab
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 12/06/2022
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # Set up cluster picking

@@ -4,7 +4,7 @@ description: Learn about the Collections coordinator overview and workspace, inc
 author: JodiChristiansen
 ms.author: jchrist
 ms.topic: conceptual
-ms.date: 01/25/2024
+ms.date: 06/19/2024
 ms.reviewer: twheeloc
 ms.collection: bap-ai-copilot 
 audience: Application User
@@ -17,8 +17,6 @@ ms.dyn365.ops.version: 10.0.34
 
 # Collections coordinator workspace
 
-> [!NOTE]
-> Some or all of the functionality that's mentioned in this article is available as part of a preview release. The content and the functionality are subject to change.
 
 Collections coordinators (collections agents) have the daily task of contacting customers who have overdue balances. Before they contact a customer, they must know the customer's aged balances, the last payment that was received, outstanding invoice amounts, and many other data points. In the past, collections coordinators (collections agents) had to navigate multiple pages and lookups to find all this information. However, the **Collections coordinator** workspace helps save them time by showing much of this information on one page.
 
@@ -32,7 +30,7 @@ The **Collections coordinator** workspace shows collections coordinators (collec
 
 The **Customer account** list is restricted to customers in the collections coordinator's (collections agent's) assigned collection pool. If you aren't using pools, all customers are available for selection in the **Customer account** list. After a customer is selected, the page will only display information for that customer. 
 
-In 10.0.39 a new landing page was added for the Collections coordinator workspace called **Collections coordinator overview**. This new landing page is designed to help the collections coordinator focus on the activities that are assigned to them and display the customers that have the Highest balances and the most Aged balances in the other grids. Depending on what balances are the most important, the collections coordinator can get all relevant details so they can decide which customers need the most attention. **Selecting the Customer name in any grid will bring you to the existing Collections coordinator workspace** that was also updated in this version. Selecting the Customer account will drill into the Customers page. 
+In Dynamics 365 Finance version 10.0.39, a new landing page was added for the Collections coordinator workspace called **Collections coordinator overview**. This new landing page is designed to help the collections coordinator focus on the activities that are assigned to them and display the customers that have the Highest balances and the most Aged balances in the other grids. Depending on what balances are the most important, the collections coordinator can get all relevant details so they can decide which customers need the most attention. **Selecting the Customer name in any grid will bring you to the existing Collections coordinator workspace** that was also updated in this version. Selecting the Customer account will drill into the Customers page. 
 
 ## Collections coordinator overview 
 

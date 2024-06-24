@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Monitor service activities  
-description: The Dispatch board form provides an at-a-glance status update for the various scheduled service activities, and tools for tracking the general flow of service orders in your company.
+description: The Dispatch board form provides a status update for the scheduled service activities, and tools for tracking the general flow of service orders in your company.
 author: ChristianRytt
-ms.date: 05/04/2018
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: SMADispatchBoard
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: crytt
+ms.topic: article
+ms.date: 05/04/2018
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMADispatchBoard
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

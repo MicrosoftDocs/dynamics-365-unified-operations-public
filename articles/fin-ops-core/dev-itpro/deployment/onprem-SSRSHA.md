@@ -3,14 +3,13 @@ title: Configure high availability for SQL Server Reporting Services (SSRS) node
 description: Learn how to configure Microsoft SQL Server Reporting Services (SSRS) nodes for Dynamics 365 Finance + Operations (on-premises) deployments.
 author: faix
 ms.author: osfaixat
-ms.topic: article
-ms.date: 02/08/2023
-# ms.custom: NotInTOC
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
 ms.reviewer: johnmichalak
-audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-03-21
-ms.search.form:
 ms.dyn365.ops.version: 10.0.17
 ms.service: dynamics-365-op
 ---

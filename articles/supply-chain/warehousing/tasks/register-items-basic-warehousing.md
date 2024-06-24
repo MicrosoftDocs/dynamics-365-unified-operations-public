@@ -1,26 +1,20 @@
 --- 
-# required metadata 
- 
 title: Register items for a basic warehousing enabled item using an item an item arrival journal
-description: This procedure shows you how to register items using the item arrival journal when you are using "basic warehousing" in the Inventory management module. 
+description: Learn how to register items using the item arrival journal when you are using "basic warehousing" in the Inventory management module.
 author: Mirzaab
+ms.author: mirzaab
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, WMSJournalTable, WMSJournalCreate, PurchEditLines   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: kamaybac    
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mirzaab
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, WMSJournalTable, WMSJournalCreate, PurchEditLines 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Register items for a basic warehousing enabled item using an item an item arrival journal
 
 [!include [banner](../../includes/banner.md)]
