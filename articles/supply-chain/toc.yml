@@ -1719,6 +1719,8 @@
           href: inventory/inventory-visibility-setup.md
         - name: Set up product search for Inventory Visibility
           href: inventory/inventory-visibility-product-search.md
+        - name: Enable Inventory Visibility for Commerce
+          href: inventory/inventory-visibility-commerce-enable.md
         - name: The Inventory Visibility app in Power Apps
           items:
           - name: Inventory Visibility app user interface versions
