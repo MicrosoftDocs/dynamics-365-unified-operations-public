@@ -54,7 +54,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.38 PQU-5 | May 29, 2024 | June 3, 2024 to July 7, 2024| In-Progress |
 | 10.0.38 PQU-6 | June 26, 2024 | July 1, 2024 to August 4, 2024| Not Started |
 | 10.0.38 PQU-7 | July 24, 2024 | July 29, 2024 to September 1, 2024| Not Started |
-| 10.0.38 PQU-8 | August 28, 2024 | September 2, 2024 to October 6, 2024| Not Started |
+| 10.0.38 PQU-8 | August 23, 2024 | September 2, 2024 to October 6, 2024| Not Started |
 | 10.0.39 PQU-1 | April 10, 2024 | April 15, 2024 to May 19 2024| Completed |
 | 10.0.39 PQU-2 | May 8, 2024 | May 13, 2024 to June 16, 2024| In-Progress |
 | 10.0.39 PQU-3 | June 5, 2024 | June 10, 2024 to July 14, 2024| In-Progress |
@@ -63,7 +63,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.39 PQU-6 | August 28, 2024 | September 2, 2024 to October 6, 2024| Not Started |
 | 10.0.39 PQU-7 | September 25, 2024 | September 30, 2024 to November 3, 2024| Not Started |
 | 10.0.39 PQU-8 | October 23, 2024 | October 28, 2024 to December 8, 2024| Not Started |
-| 10.0.39 PQU-9 | November 27, 2024 | December 4, 2024 to January 19, 2025| Not Started |
+| 10.0.39 PQU-9 | November 22, 2024 | December 4, 2024 to January 19, 2025| Not Started |
 | 10.0.40 PQU-1 | July 10, 2024 | July 15, 2024 to August 18, 2024| Not Started |
 | 10.0.40 PQU-2 | August 7, 2024 | August 12, 2024 to September 15, 2024| Not Started |
 | 10.0.40 PQU-3 | September 4, 2024 | September 9, 2024 to October 13, 2024| Not Started |
@@ -72,7 +72,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.40 PQU-6 | December 4, 2024 | December 9, 2024 to January 19, 2025| Not Started |
 | 10.0.40 PQU-7 | January 8, 2025 | January 13, 2025 to February 16, 2025| Not Started |
 | 10.0.40 PQU-8 | February 5, 2025 | February 10, 2025 to March 16, 2025| Not Started |
-| 10.0.40 PQU-9 | March 5, 2025 | March 10, 2025 to April 13, 2025| Not Started |
+| 10.0.40 PQU-9 | February 18, 2025 | March 10, 2025 to April 13, 2025| Not Started |
 | 10.0.41 PQU-1 | October 9, 2024 | October 14, 2024 to November 17, 2024| Not Started |
 | 10.0.41 PQU-2 | November 6, 2024 | November 11, 2024 to January 5, 2025| Not Started |
 | 10.0.41 PQU-3 | December 31, 2024 | January 6, 2025 to February 9, 2025| Not Started |
@@ -80,7 +80,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.41 PQU-5 | February 26, 2025 | March 3, 2025 to April 6, 2025| Not Started |
 | 10.0.41 PQU-6 | March 26, 2025 | March 31, 2025 to May 4, 2025| Not Started |
 | 10.0.41 PQU-7 | April 23, 2025 | April 28, 2025 to June 1, 2025| Not Started |
-| 10.0.41 PQU-8 | May 28, 2025 | June 2, 2025 to July 6, 2025| Not Started |
+| 10.0.41 PQU-8 | May 23, 2025 | June 2, 2025 to July 6, 2025| Not Started |
 | 10.0.42 PQU-1 | February 12, 2025 | February 17, 2025 to March 23, 2025| Not Started |
 | 10.0.42 PQU-2 | March 12, 2025 | March 17, 2025 to April 20, 2025| Not Started |
 | 10.0.42 PQU-3 | April 9, 2025 | April 14, 2025 to May 8, 2025| Not Started |
@@ -88,7 +88,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.42 PQU-5 | June 4, 2025 | June 9, 2025 to July 13, 2025| Not Started |
 | 10.0.42 PQU-6 | July 2, 2025 | July 7, 2025 to August 10, 2025| Not Started |
 | 10.0.42 PQU-7 | July 30, 2025 | August 4, 2025 to September 7, 2025| Not Started |
-| 10.0.42 PQU-8 | August 27, 2025 | September 1, 2025 to October 5, 2025| Not Started |
+| 10.0.42 PQU-8 | August 22, 2025 | September 1, 2025 to October 5, 2025| Not Started |
 
 > [!Note]
 > Any new finance and operations apps environment that is provisioned after August 17th, 2023 is automatically signed up to receive PQUs per the schedule as applicable.
