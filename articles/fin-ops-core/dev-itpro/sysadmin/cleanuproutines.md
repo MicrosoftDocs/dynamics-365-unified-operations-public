@@ -4,7 +4,7 @@ description: Learn about cleanup routines in Microsoft Dynamics 365 Finance and 
 author: dvliegen
 ms.author: dvliegen
 ms.topic: article
-ms.date: 02/09/2024
+ms.date: 06/25/2024
 ms.custom: 
 ms.reviewer: johnmichalak 
 audience: IT Pro
@@ -40,7 +40,6 @@ In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, clea
 | Path | Description |
 |------|-------------|
 | In the **Data management** workspace, select **Job history cleanup**. | <p>By default, job history entries and related staging table data that are older than 90 days are automatically deleted (starting September 2023). To configure a job history retention period of less than 90 days, use the Execution history cleanup feature in Data management. It replaces the earlier Staging cleanup routine, which is now obsolete (deprecated).</p><p>The following tables are cleaned up:</p><ul><li>All staging tables</li><li>DMFSTAGINGVALIDATIONLOG</li><li>DMFSTAGINGEXECUTIONERRORS</li><li>DMFSTAGINGLOGDETAIL</li><li>DMFSTAGINGLOG</li><li>DMFDEFINITIONGROUPEXECUTIONHISTORY</li><li>DMFEXECUTION</li><li>DMFDEFINITIONGROUPEXECUTION</li><li>DMFDEFINITIONGROUPEXECUTIONPROGRESS</li></ul> |
-
 
 ## General ledger
 
@@ -110,7 +109,7 @@ In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, clea
 | Production control \> Periodic tasks \> Clean up \> Clean up registrations | <p>We recommend that you periodically clean up registrations. This cleanup routine deletes only data that has been processed.</p><p>**Note:** Make sure that you don't delete registrations that might be required later for documentation purposes.</p> |
 | Production control \> Periodic tasks \> Clean up \> Archive future registrations | This cleanup routine is used to remove future registrations from the raw registrations table. |
 
-## Cost management 
+## Cost management
 
 | Path | Description |
 |------|-------------|
@@ -123,6 +122,5 @@ In Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management, clea
 | Path | Description |
 |------|-------------|
 | Master planning \> Master planning \> Maintain plans \> Plan version cleanup | Usually, this cleanup is done automatically. However, automatic cleanup sometimes malfunctions, and orphan data remains in the system. This orphan data slows down queries and causes the database size to grow. We recommend that you do a preventive run one time per month, when master resource planning (MRP) isn't running. |
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
