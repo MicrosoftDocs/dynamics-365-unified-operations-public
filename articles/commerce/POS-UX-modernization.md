@@ -38,7 +38,7 @@ The default view for displaying search results can now be configured in the Visu
 
 To enable your search view preference, go to Headquarters, **POS visual profiles**, under  **General** section,  **Search view** sub-section, set **Default view** to **List view** or **Card view**.
 
-![defaultcardview.](media/defaultcardview.png)
+![cardview.](media/cardview.png)
 
 ## Reset button grids at the end of a transaction:
 
@@ -48,7 +48,7 @@ With this feature, the default button grid assigned to the first tab is restored
 
 To reduce number of clicks in reprinting receipts, **print receipt** button is available on the bottom of  **show journal** screen. To reprint receipts, select journal and **print receipt** in a single click. This is available beginning 10.0.40 release. 
 
-![printreceipt.](media/printreceipt.png)
+![reprinting.](media/reprinting.png)
 
 ## Enhanced date picker:
 
@@ -62,8 +62,13 @@ Store associates can persist the zoom settings to fix their display and not have
 
 ## Payment capture improvements 
 
-To enable intuitive payment workflows in point of sale application, pay by credit card, cash and check flows have been updated to provide consistent and enhanced user experience. The rest of payment method flows will be refreshed in the next wave. For more information on the payment capture improvements , please see [Check out faster with optimized payment flows](faster-checkout-pos.md). 
+To enable intuitive payment workflows in point of sale application, pay by credit card, cash and check flows have been updated to provide consistent and enhanced user experience. The rest of payment method flows will be refreshed in the next wave. For more information on the payment capture improvements , please see [Check out faster with optimized payment flows](faster-checkout-pos.md).  This is available beginning of 10.0.40 release.
 
 ## Fluent design
 
+To improve performance , allow for extensibility and remove legacy patterns, the number pad within the store commerce app has been updated to React in the payment workflows. This lays for larger react upgrade down the line extending to the transaction page and also enables customers to write their custom views in React.
+
+Following image shows the numpad design in the new payment workflows.
+
+![numpadfluent.](media/numpadfluent.png)
 
