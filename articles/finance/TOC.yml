@@ -1302,6 +1302,8 @@
                   href: general-ledger/set-up-subsidiary-company-for-consolidation.md
                 - name: Consolidate online
                   href: general-ledger/consolidate-online.md
+                - name: Consolidate online templates
+                  href: general-ledger/Consolidation-templates.md
                 - name: Import subsidiary data from files
                   href: general-ledger/import-subsidiary-data-from-files.md
                 - name: Export subsidiary data to a file
