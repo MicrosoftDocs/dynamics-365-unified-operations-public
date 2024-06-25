@@ -22,26 +22,27 @@ The second workflow allows the user to immediately navigate to the transaction p
 
 These workflows can be selected using  a new configuration option in the Visual profile in Headquarters beginning 10.0.40 release. 
 
-To bypass the confirmation dialog and always navigate to transaction page after adding an item, go to Headquarters **POS visual profiles**, under  **General** section, set **Bypass Item added dialog**  to **yes**.
+To bypass the confirmation dialog and always navigate to transaction page after adding an item, go to Headquarters **POS visual profiles**, under  **General** section, **Product details page** sub-sectiom, set **Bypass Item added dialog**  to **yes**.
+
+To see the confirmation dialog, set  **Bypass Item added** to **no**. The image below shows the setting in Headquarters.
 
 ![bypassitemadded.](media/bypassitemadded.png)
 
-To see the confirmation dialog, set  **Bypass Item added** to **no**.
-
+The image below shows the confirmation dialog.
 ![itemadded.](media/itemadded.png)
 
 
 ## Configure display of search results:
 
-The default view for displaying search results can now be configured in the Visual profile in Headquarters. Previously, the default view for search results for products, customer and categories was list view. With 10.0.40 release, the search results can default to a card view. To enable your search view preference, set **default view** for **Search view** under **General** section in **POS visual profiles** to **List view** or **Card view** in headquarters.
+The default view for displaying search results can now be configured in the Visual profile in Headquarters. Previously, the default view for search results for products, customer and categories was list view. With 10.0.40 release, the search results can default to a card view and allows easy browsing of products
 
-This is available beginning 10.0.40 release. 
+To enable your search view preference, go to Headquarters, **POS visual profiles**, under  **General** section,  **Search view** sub-section, set **Default view** to **List view** or **Card view**.
 
 ![defaultcardview.](media/defaultcardview.png)
 
 ## Reset button grids at the end of a transaction:
 
-To reduce confusion and provide a consistent experience for point of sale users, the default button grid assigned to the first tab is restored when a transaction is completed, suspended, or voided. This feature is enabled by default for all users. This is available beginning 10.0.40 release. 
+With this feature, the default button grid assigned to the first tab is restored when a transaction is completed, suspended, or voided. This helps to reduce confusion and number of clicks when multiple transactions are being handled by a store associate. This feature is enabled by default for all users. This is available beginning 10.0.40 release. 
 
 ## Reprint receipts from journal:
 
