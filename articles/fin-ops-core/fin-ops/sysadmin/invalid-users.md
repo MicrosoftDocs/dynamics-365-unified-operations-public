@@ -18,8 +18,6 @@ To view invalid users, follow these steps.
 1. Go **System administration** \> **Invalid users**.
 2. Select **Refresh**. This page shows a list of users who require attention from the system administrator. If there are no invalid users, the page is blank.
 
-After the administrator addresses the users in the list, select **Refresh** to confirm that there are no invalid users.
-
 The following sections describe the three types of invalid users that must be addressed.
 
 ## Users who aren't found in Microsoft Entra ID
@@ -44,3 +42,28 @@ Previously, some customers who had trouble signing in were advised to append the
 
 1. Go to **Users**.
 2. Select **Edit** to remove the prefix from the email addresses.
+
+## Users with duplicate telemetry IDs 
+
+Telemetry IDs are unique identifiers for every user. Duplicate telemetry IDs can cause serious security issues, such as user impersonation or inappropriate access levels. It is essential to ensure that each user has a distinct telemetry ID. 
+To ensure compliance, delete and reimport or edit the affected users to repopulate unique telemetry IDs from Azure Entra ID. 
+
+Important Note: Say if three users share the same telemetry ID and one user has the correct ID, the system will only flag the two incorrect users. The user with the correct ID will not be marked as invalid. 
+
+## Duplicate Users 
+
+Duplicate users imply users who have the same email address. This can cause inconsistent behavior due to conflicting roles or settings. You must ensure that every user has a unique email address. 
+
+To make these users compliant, you must delete the duplicates from System Administration -> Users page and ensure that only one user exists per email.
+
+## Automated fix 
+
+Some user issues can be automatically resolved using the "Repair Telemetry IDs" button. This feature performs the following actions: 
+
+1. Repair Incorrect Telemetry IDs: Fix users listed in Entra ID but with incorrect telemetry IDs in the F&O environment. 
+
+2. Handle Missing Users in Entra ID: If a user is not present in Entra ID, their telemetry ID will be set to null. Admins need to add these users to Entra ID and run the repair again. 
+
+3. Fix Users with Duplicate Telemetry IDs: Correct the telemetry ID for the user existing in Entra ID and set it to null for the others. 
+
+4. Disable Duplicate Users: For security reasons, duplicate users with the same email will be disabled, and their telemetry IDs set to null. The admins must ensure each user is unique and remove duplicates to resolve this issue.
