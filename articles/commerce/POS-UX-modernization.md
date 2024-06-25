@@ -10,9 +10,9 @@ ms.custom:
 ms.reviewer: v-chrgriffin
 ---
 
-# POS UX modernization
+# POS Modernization and Usability Improvements
 
-The article describes the store commerce UX modernization features and how to enable them.
+To improve the POS usablity and adapt to modern, intiutive workflows, there are numerous worklfow improvements that have been introduced in POS. 
 
 ## Streamlined workflow for adding items to a transaction from the product page:
 
@@ -63,3 +63,7 @@ Store associates can persist the zoom settings to fix their display and not have
 ## Payment capture improvements 
 
 With 
+
+## Fluent design
+
+
