@@ -93,7 +93,7 @@ items:
           href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?context=/dynamics365/context/human-resources        
       - name: Set up and manage instances
         items:
-        - name: Provision Human Resources in the finance and operations infrastructure
+        - name: Provision Dynamics 365 Human Resources 
           href: hr-admin-setup-provision-fo.md
       - name: Set up data integration
         items:
