@@ -34,6 +34,10 @@ When you create the Dataverse environment where you want to install the app, be 
 
 The [Power Apps component framework feature](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) must be enabled for your environment.
 
+## Licensing requirements
+
+To gain access to the app, users must have the appropriate security role(s) assigned to them in Supply Chain Management. The roles that are available for each user depend on the Supply Chain Management licenses assigned to the user in Microsoft Entra ID. For details about which security roles grant access to which functionality in the Asset Management mobile app, see [Configure users and workers in Supply Chain Management](#roles-workers). For details about which licenses grant access to which security roles, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2267806).
+
 ## <a name="install-in-dataverse"></a>Install the mobile app in Dataverse
 
 You must install the Asset Management mobile app in your Dataverse environment to enable users to access it when they sign in by using the Power Apps mobile app. The installation process also sets up the required user roles and other dependencies in Dataverse.
