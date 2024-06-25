@@ -62,7 +62,7 @@ Store associates can persist the zoom settings to fix their display and not have
 
 ## Payment capture improvements 
 
-With 
+To enable intuitive payment workflows in point of sale application, pay by credit card, cash and check flows have been updated to provide consistent and enhanced user experience. The rest of payment method flows will be refreshed in the next wave. For more information on the payment capture improvements , please see [Check out faster with optimized payment flows](faster-checkout-pos.md). 
 
 ## Fluent design
 
