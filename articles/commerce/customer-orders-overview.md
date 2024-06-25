@@ -4,18 +4,18 @@
 title: Customer orders in point of sale (POS)
 description: This article describes how to create and manage customer orders in Microsoft Dynamics 365 Commerce point of sale (POS).
 author: josaw1
-ms.date: 08/04/2023
-ms.topic: article
+ms.date: 06/25/2023
+ms.topic: how-to
 ms.search.form: RetailFunctionalityProfile 
 audience: Application User
 ms.reviewer: josaw
-ms.custom: ["260594"]
 ms.collection: get-started
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: Global
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
-
+ms.custom: 
+  - bap-template
 ---
 
 # Customer orders in point of sale (POS)
@@ -60,7 +60,7 @@ When you work with customer orders in POS, you must consider some of the setting
 
 Before you try to create customer orders in POS, you must configure the appropriate parameters in headquarters. These parameters can be found on the **Customer orders** tab of the **Commerce parameters** page.
 
-- **Default order type** – This is a legacy property and is not supported.
+- **Default order type** – This is a legacy property and isn't supported.
 - **Default deposit percentage** – Specify the percentage of the order total amount that the customer must pay as a deposit before an order can be confirmed. Depending on their privileges, store associates might be able to override the amount by using the **Deposit override** operation in POS, if that operation is configured for the transaction screen layout.
      > [!NOTE]
      > The deposit percentage setting is ignored if a business-to-business (B2B) type customer belonging to a customer hierarchy is added to the customer order. For such customers, the default deposit percentage is always set to zero, but the cashier can override the deposit percentage using the **Deposit override** operation.
