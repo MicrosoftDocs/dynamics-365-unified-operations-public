@@ -22,33 +22,33 @@ The following sections describe the three types of invalid users that must be ad
 
 ## Users who aren't found in Microsoft Entra ID
 
-All finance and operations apps users must be present in your Microsoft Entra ID tenant. (Microsoft Entra ID was previously known as Azure Active Directory \[Azure AD\].) Administrators can directly add users to your tenant through the Azure portal. For more information, see [Add or delete users](/entra/fundamentals/add-users).   
+All finance and operations apps users must be present in your Microsoft Entra ID tenant. Administrators can directly add users to your tenant through the Microsoft Entra ID portal. For more information, see [Add or delete users](/entra/fundamentals/add-users).   
 
-You can use business-to-business (B2B) functionality to include these users in Microsoft Entra ID. For more information, see [Export business-to-business (B2B) users to Azure Active Directory](../../dev-itpro/sysadmin/implement-b2b.md).
+You can use business-to-business (B2B) functionality to include these users in Microsoft Entra ID. For more information, see [Export business-to-business (B2B) users to Microsoft Entra ID](../../dev-itpro/sysadmin/implement-b2b.md).
 
 ## Users whose telemetry ID doesn't match the object ID from Microsoft Entra ID
 
 For sign-in functionality to work correctly, the telemetry ID of a user in finance and operations apps must be aligned with the object ID of the same user in Microsoft Entra ID. If the IDs don't match, we recommend that you delete and then reimport the user. For more information, see [Find the user object ID](/partner-center/find-ids-and-domain-names#find-the-user-object-id).
 
 1. Verify that a user who has the corresponding email address exists in your Microsoft Entra ID.
-2. Delete the user from finance and operations apps. Note the user roles before deleting so the roles can be added back after reimporting the users. 
-3. Reimport the user. For more information, see [Create new users](create-new-users.md).
+1. Delete the user from finance and operations apps. Note the user roles before deleting so the roles can be added back after reimporting the users. 
+1. Reimport the user. For more information, see [Create new users](create-new-users.md).
 
-If this process is challenging or requires substantial effort, administrators can update the email address on the **Users** page to a different user email that is present in Entra and change it back to the original email of the user. That change repopulates the object ID for the new email.
+If this process is challenging or requires substantial effort, administrators can update the email address on the **Users** page to a different user email that is present in Microsoft Entra ID and change it back to the original email of the user. That change repopulates the object ID for the new email.
 
 ## Users whose email address contains an invalid "MAIL#" prefix
 
 Previously, some customers who had trouble signing in were advised to append the prefix "MAIL\#" to their Gmail or Live email address. Because the issue has now been fixed, an administrator must follow these steps to remove the prefix from email addresses.
 
 1. Go to **Users**.
-2. Select **Edit** to remove the prefix from the email addresses.
+1. Select **Edit** to remove the prefix from the email addresses.
 
 ## Users with duplicate telemetry IDs 
 
-Telemetry IDs are unique identifiers for every user. Duplicate telemetry IDs can cause serious security issues, such as user impersonation or inappropriate access levels. It is essential to ensure that each user has a distinct telemetry ID. 
-To ensure compliance, delete and reimport or edit the affected users to repopulate unique telemetry IDs from Azure Entra ID. 
+Telemetry IDs are unique identifiers for every user. Duplicate telemetry IDs can cause serious security issues, such as user impersonation or inappropriate access levels. It's essential to ensure that each user has a distinct telemetry ID. 
+To ensure compliance, delete and reimport or edit the affected users to repopulate unique telemetry IDs from Microsoft Entra ID. 
 
-Important Note: Say if three users share the same telemetry ID and one user has the correct ID, the system will only flag the two incorrect users. The user with the correct ID will not be marked as invalid. 
+Important Note: Say if three users share the same telemetry ID and one user has the correct ID, the system will only flag the two incorrect users. The user with the correct ID isn't marked as invalid. 
 
 ## Duplicate Users 
 
@@ -60,10 +60,7 @@ To make these users compliant, you must delete the duplicates from System Admini
 
 Some user issues can be automatically resolved using the "Repair Telemetry IDs" button. This feature performs the following actions: 
 
-1. Repair Incorrect Telemetry IDs: Fix users listed in Entra ID but with incorrect telemetry IDs in the F&O environment. 
-
-2. Handle Missing Users in Entra ID: If a user is not present in Entra ID, their telemetry ID will be set to null. Admins need to add these users to Entra ID and run the repair again. 
-
-3. Fix Users with Duplicate Telemetry IDs: Correct the telemetry ID for the user existing in Entra ID and set it to null for the others. 
-
-4. Disable Duplicate Users: For security reasons, duplicate users with the same email will be disabled, and their telemetry IDs set to null. The admins must ensure each user is unique and remove duplicates to resolve this issue.
+1. Repair Incorrect Telemetry IDs: Fix users listed in Microsoft Entra ID but with incorrect telemetry IDs in the finance and operations environment. 
+1. Handle Missing Users in Microsoft Entra ID: If a user isn't present in Microsoft Entra ID, their telemetry ID is set to null. Admins need to add these users to Microsoft Entra ID and run the repair again. 
+1. Fix Users with Duplicate Telemetry IDs: Correct the telemetry ID for the user existing in Microsoft Entra ID and set it to null for the others. 
+1. Disable Duplicate Users: For security reasons, duplicate users with the same email is disabled, and their telemetry IDs set to null. The admins must ensure each user is unique and remove duplicates to resolve this issue.
