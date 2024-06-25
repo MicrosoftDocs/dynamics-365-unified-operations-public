@@ -1,8 +1,8 @@
 ---
 title: Reverse a vendor payment
 description: Learn about the differences between reversing, deleting, voiding, and rejecting a payment and how to reverse a vendor check. 
-author: twheeloc
-ms.author: twheeloc
+author: sunfzam
+ms.author: Raynezou
 ms.topic: article
 ms.date: 10/24/2022
 ms.reviewer: twheeloc
