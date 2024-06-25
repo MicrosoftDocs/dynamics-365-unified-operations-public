@@ -242,10 +242,36 @@ This functionality lets you export a composite entity and apply xslt file to sor
 
 To sort composite entity data using xslt, follow these steps.
 
-1. Create an xslt file to sort the data in XML file. For example, if you have an XSLT file for the out of the box entity Purchase orders composite V3, you can sort the XML attribute format data in order by INVOICEVENDORACCOUNTNUMBER for PURCHPURCHASEORDERHEADERV2ENTITY and order by LINENUMBER for PURCHPURCHASEORDERLINEV2ENTITY.
+1. Create an xslt file to sort the data in XML format. For example, if you have an XSLT file for the out of the box entity Purchase orders composite V3, you can sort the XML attribute format data in order by INVOICEVENDORACCOUNTNUMBER for PURCHPURCHASEORDERHEADERV2ENTITY and order by LINENUMBER for PURCHPURCHASEORDERLINEV2ENTITY.
 
-   ![image](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/29776190/421e7734-16a6-47e8-952b-8bce17c576d6)
-   
+``` xml
+
+<xsl:stylesheet version='1.0' xmlns:xsl="http://www.w3.org/1999/XSL/Transform"> 
+   <xsl:template match="/*"> 
+        <xsl:copy> 
+            <xsl:apply-templates select="@*" /> 
+<xsl:apply-templates> 
+     <xsl:sort select="@INVOICEVENDORACCOUNTNUMBER" data-type="text" order="ascending" /> 
+</xsl:apply-templates> 
+        </xsl:copy> 
+   </xsl:template>	 
+   <xsl:template match="PURCHPURCHASEORDERHEADERV2ENTITY"> 
+           <xsl:copy> 
+<xsl:apply-templates select="@*"/> 
+    <xsl:apply-templates select="*"> 
+        <xsl:sort select="@LINENUMBER" data-type="number" order="descending"/> 
+   </xsl:apply-templates> 
+          </xsl:copy> 
+    </xsl:template> 
+    <xsl:template match="@*|node()"> 
+           <xsl:copy> 
+<xsl:apply-templates select="@*|node()"/> 
+           </xsl:copy> 
+    </xsl:template> 
+</xsl:stylesheet> 
+
+```
+  
 1. Go to the **Data management** workspace.
 1. From the list of data export projects, select a project with XML data source and select **View map**.
 1. Select **View map** for any entity.
