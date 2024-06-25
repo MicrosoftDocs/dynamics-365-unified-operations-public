@@ -1,15 +1,15 @@
 ---
 title: Parameters not used by Planning Optimization
-description: This article lists the parameters that Planning Optimization doesn't currently consider during its operation.
+description: Learn about the parameters that Planning Optimization doesn't currently consider during its operation with an outline on the master planning parameters page.
 author: t-benebo
-ms.date: 03/08/2023
-ms.topic: article
-ms.search.form: ReqParameters, ReqGroup, ReqItemTable, ReqPlanSched, EcoResProductDetailsExtended, InventItemOrderSetup, WorkCalendarTable, PdsDispositionMaster
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
+ms.topic: article
+ms.date: 03/08/2023
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-06-29
+ms.search.form: ReqParameters, ReqGroup, ReqItemTable, ReqPlanSched, EcoResProductDetailsExtended, InventItemOrderSetup, WorkCalendarTable, PdsDispositionMaster
 ms.dyn365.ops.version: 10.0.20
 ---
 

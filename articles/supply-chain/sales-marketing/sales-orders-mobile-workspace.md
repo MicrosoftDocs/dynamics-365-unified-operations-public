@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Sales orders mobile workspace
-description: This article provides information about the Sales orders mobile workspace. This workspace helps you stay up to date about your sales orders anywhere and anytime. 
+description: Learn about the Sales orders mobile workspace, which helps you stay up to date about your sales orders anywhere and anytime.
 author: Henrikan
-ms.date: 05/24/2022
+ms.author: henrikan
 ms.topic: article
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/24/2022
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 0ce96511-002b-4de7-b31e-4303f94edc84
+audience: Application User
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: henrikan
 ms.dyn365.ops.version: Version 1611
+ms.search.form:
 ms.search.validFrom: 2016-11-30
-
+ms.assetid: 0ce96511-002b-4de7-b31e-4303f94edc84
 ---
 
 # Sales orders mobile workspace

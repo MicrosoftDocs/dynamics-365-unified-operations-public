@@ -1,15 +1,15 @@
 ---
 title: Install the Inventory Visibility Add-in
-description: This article describes how to install the Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management.
-author: yufeihuang
+description: Learn how to install the Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management, including Inventory Visibility prerequisites.
+author: yufei-huang
 ms.author: yufeihuang
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 05/27/2024
-audience: Application User
 ms.custom:
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form:
 ---
 
 # Install and set up Inventory Visibility
@@ -157,7 +157,7 @@ Once you've installed the add-in, prepare your Supply Chain Management system to
     - **Inventory summary** – This feature provides an inventory summary for products together with all dimensions. For information about how to enable and set up this feature, see [Inventory summary](inventory-visibility-inventory-summary.md).
     - **Preload a streamlined on-hand query** – This feature provides an aggregated inventory summary for products by configured dimensions. For information about how to enable and set up this feature, see [Preload a streamlined on-hand query](inventory-visibility-preload-on-hand.md).
 
-1. After you finish setting up the optional features you selected, go to **Inventory Management** \> **Periodic** \> **Inventory Visibility Integration** and enable the job. All inventory change events from Supply Chain Management will now be posted to Inventory Visibility.
+1. After you finish setting up the optional features you selected, go to **Inventory Management** \> **Periodic tasks** \> **Inventory Visibility Integration** and enable the job. All inventory change events from Supply Chain Management will now be posted to Inventory Visibility.
 
 > [!NOTE]
 > When you enable the Inventory Visibility integration job, if you receive an error that states that you must update the partition schema, see the [Update partition schema to two if you get an error when enabling the Inventory Visibility integration job](#update-partition-two) section of this article for instructions.
@@ -180,7 +180,7 @@ If you receive this error, follow these steps to update your [partition schema](
 1. Call the `Post` API with a body of `none` to change the partition schema (by using `/api/environment/{environmentId}/updatePartitionSchema?newversion=2`).
 1. In Power Apps, enable the [advanced warehouse inventory](inventory-visibility-whs-support.md) feature, and [update the configuration](inventory-visibility-power-platform.md#update-configuration).
 1. In Power Apps, [review the runtime configuration](inventory-visibility-power-platform.md#endpoint). The `CachePartitonIdVersion` field should show a value of `ByLocationAndProductIdMod64`.
-1. In Supply Chain Management, go to **Inventory Management** \> **Periodic** \> **Inventory Visibility Integration**, and enable the job.
+1. In Supply Chain Management, go to **Inventory Management** \> **Periodic tasks** \> **Inventory Visibility Integration**, and enable the job.
 
 ## <a name="update-add-in"></a>Update the Inventory Visibility Add-in
 
@@ -206,7 +206,7 @@ To update an installed version of the Inventory Visibility Add-in to the latest 
 To uninstall the Inventory Visibility Add-in, follow these steps:
 
 1. Sign in to Supply Chain Management.
-1. Go to **Inventory Management** \> **Periodic** \> **Inventory Visibility Integration** and disable the job.
+1. Go to **Inventory Management** \> **Periodic tasks** \> **Inventory Visibility Integration** and disable the job.
 1. Go to Lifecycle Services and open the page for the environment where you want to uninstall the add-in (see also the [Install the Inventory Visibility Add-in](#install-add-in) section).
 1. Select **Uninstall**.
 1. The uninstall process now terminates the Inventory Visibility Add-in, unregisters the add-in from Lifecycle Services, and deletes any temporary data that's stored in the Inventory Visibility Add-in data cache. However, primary inventory data that was synced to your Dataverse subscription is still stored there. To delete this data and all solutions related to Inventory Visibility, complete the rest of this procedure.
@@ -234,11 +234,11 @@ If you've been using Inventory Visibility and then restore your Supply Chain Man
 If you need to restore a Supply Chain Management database, use the following procedure:
 
 1. Sign in to Supply Chain Management.
-1. Go to **Inventory Management** \> **Periodic** \> **Inventory Visibility Integration** and disable the job.
+1. Go to **Inventory Management** \> **Periodic tasks** \> **Inventory Visibility Integration** and disable the job.
 1. Stop sending requests to Inventory Visibility from any other third-party systems.
 1. In Power Apps, open the **Configuration** page for Inventory Visibility. Then select **Clear User Data** in the upper-right corner. This clears the dirty inventory data from a restored database without affecting any existing configurations.
 1. Restore your Supply Chain Management database, for example as described in [Database point-in-time restore (PITR)](../../fin-ops-core/dev-itpro/database/database-point-in-time-restore.md) or [Point-in-time restore of the production database to a sandbox environment](../../fin-ops-core/dev-itpro/database/database-pitr-prod-sandbox.md).
-1. Go to **Inventory Management** \> **Periodic** \> **Inventory Visibility Integration** and reenable the job.
+1. Go to **Inventory Management** \> **Periodic tasks** \> **Inventory Visibility Integration** and reenable the job.
 
 > [!IMPORTANT]
 > There are several ways to migrate data between Dataverse environments, but we advise against doing so because Dataverse data includes its `EnvironmentId`, which means that migrating data directly between different environments will result in data corruption. If you experience this issue, please contact [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) for assistance.

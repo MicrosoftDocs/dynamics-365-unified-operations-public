@@ -1,26 +1,20 @@
 --- 
-# required metadata 
- 
 title: Define resource capabilities
-description: Resource capabilities describe what operations resources can do. 
+description: Learn how to define resource capabilities, including step-by-step processes for creating resource capabilities and assigning capacilities to resources.
 author: johanhoffmann
+ms.author: johanho
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: WrkCtrCapability   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: kamaybac 
+audience: Application User  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: WrkCtrCapability
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Define resource capabilities
 
 [!include [banner](../../includes/banner.md)]

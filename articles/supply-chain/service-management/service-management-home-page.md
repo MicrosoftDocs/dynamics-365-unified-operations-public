@@ -1,25 +1,15 @@
 ---
-# required metadata
-
 title: Service management overview
-description: Use Service management to establish service agreements and service subscriptions, handle service orders and customer inquiries, and to manage and analyze the delivery of services to customers. 
+description: Use Service management to establish service agreements and service subscriptions and handle service orders and customer inquiries.
 author: ChristianRytt
-ms.date: 07/25/2019
-ms.topic: overview
-
-# optional metadata
-
-ms.search.form: SMAServiceOrderTable
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: crytt
+ms.topic: overview
+ms.date: 07/25/2019
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMAServiceOrderTable
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

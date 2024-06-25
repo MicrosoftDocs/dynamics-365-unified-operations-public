@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Register sales commissions
-description: This article explains how sales commissions are calculated and registered. 
+description: Learn how sales commissions are calculated and registered, including a step-by-step process for invoicing sales orders that qualify salespeople for commissions.
 author: Henrikan
-ms.date: 08/06/2019
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines,  CustInvoiceJournal, CommissionTrans, LedgerTransVoucher, CustClassificationGroup   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: henrikan
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/06/2019
+ms.custom:
+ms.reviewer: kamaybac   
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines,  CustInvoiceJournal, CommissionTrans, LedgerTransVoucher, CustClassificationGroup
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Register sales commissions
 
 [!include [banner](../../includes/banner.md)]

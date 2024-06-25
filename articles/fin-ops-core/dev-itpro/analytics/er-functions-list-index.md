@@ -6,7 +6,7 @@ ms.author: filatovm
 ms.topic: article
 ms.date: 05/20/2021
 audience: IT Pro
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner

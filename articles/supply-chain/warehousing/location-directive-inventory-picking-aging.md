@@ -1,24 +1,16 @@
 ---
-# required metadata
-
 title: Location directive inventory picking aging
-description: This article explains how to use first in, first out (FIFO) and last in, first out (LIFO) location directive strategies during picking.
+description: Learn how to use first in, first out (FIFO) and last in, first out (LIFO) location directive strategies during picking.
 author: Mirzaab
-ms.date: 08/09/2022
-ms.topic: article
-
-# optional metadata
-
-ms.search.form:  WHSLocationProfile,WHSWorkTable,WHSWaveTableListPage
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
+ms.topic: article
+ms.date: 08/09/2022
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-07-15
+ms.search.form:  WHSLocationProfile,WHSWorkTable,WHSWaveTableListPage
 ms.dyn365.ops.version: 10.0.8
 ---
 

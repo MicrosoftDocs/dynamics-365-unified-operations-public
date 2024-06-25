@@ -1,5 +1,5 @@
 ---
-title: Customize embedded reports in analytical workspaces (contains video)
+title: Customize embedded reports in analytical workspaces
 description: Learn about how power users can customize the application reports that are embedded in analytical workspaces, including learning about how to customize an analytical workspace.
 author: sericks007
 ms.author: sericks

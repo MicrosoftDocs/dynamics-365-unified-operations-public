@@ -4,7 +4,7 @@ description: Learn how to create and edit reports in Business performance analyt
 author: jkhaira7
 ms.author: jkhaira 
 ms.reviewer: twheeloc
-ms.date: 04/25/2024
+ms.date: 06/04/2024
 ms.topic: conceptual
 audience: Application User
 ---
@@ -14,6 +14,9 @@ audience: Application User
 [This article is prerelease documentation and is subject to change.]
 
 Business performance analytics lets you create or customize reports that include the data fields that you're interested in. You can also change any visuals on the reports. To view all available reports, select **Reports** in the **Data explorer** pane on the left. Select **Refresh** to ensure that you have the most up-to-date reports.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW1lNCQ]
+
 
 ## Create a new report
 

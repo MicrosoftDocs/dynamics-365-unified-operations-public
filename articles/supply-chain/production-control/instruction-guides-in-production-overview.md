@@ -1,34 +1,20 @@
 ---
-# required metadata
-
 title: Provide mixed-reality Guides for workers in production
-description: This article explains how to integrate the production management module in Microsoft Dynamics 365 Supply Chain Management with Dynamics 365 Guides.
+description: Learn how to integrate the production management module in Microsoft Dynamics 365 Supply Chain Management with Dynamics 365 Guides.
 author: johanhoffmann
-ms.date: 11/13/2020
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: WorkGuidesManufacturing
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: a3847f07-fca4-4140-a26f-d83c6ac68dde
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: johanho
-ms.search.validFrom: 2020-08-01
-ms.dyn365.ops.version: AX 10.0.15
-
+ms.reviewer: kamaybac
+ms.search.form: WorkGuidesManufacturing
+ms.topic: how-to
+ms.date: 11/13/2020
+audience: Application User
+ms.custom: 
+  - bap-template
 ---
 
 # Provide mixed-reality Guides for workers in production
 
 [!include [banner](../includes/banner.md)]
-
 
 Workers in production processes will benefit from relevant instructions that are provided at the right time in the context of their work. *Instructions* apply in several domains of work, including: assembly, service, operations, certification, and safety. Across all of these core business functions, ongoing training instructions can help empower workers to achieve more and work better.
 
@@ -54,7 +40,7 @@ You can attach guides to various aspects of production control including:
 > [!NOTE]
 > You can also attach Guides with Asset Management. For more information about that option, see [Integrate Dynamics 365 Supply Chain Management (Asset Management) with Dynamics 365 Guides](../asset-management/asset-management-guides-integration.md).
 
-When a first-line worker chooses a job on the shop floor through Supply Chain Management, the worker can see [the relevant guides](#logic) on the job card. When the worker chooses a specific guide, a QR code for that guide is shown on the screen. The worker then uses their HoloLens to scan the QR code, which launches Guides and shows the required instructions.
+When a first-line worker chooses a job on the shop floor through Supply Chain Management, the worker can see [the relevant guides](#logic) on the [production floor execution interface](production-floor-execution-use.md). When the worker chooses a specific guide, a QR code for that guide is shown on the screen. The worker then uses their HoloLens to scan the QR code, which launches Guides and shows the required instructions.
 
 The following subsections describe a few selected scenarios where companies across industries can see the biggest value when using Guides to present instructions for manufacturing.
 

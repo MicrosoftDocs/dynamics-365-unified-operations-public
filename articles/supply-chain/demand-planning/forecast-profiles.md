@@ -1,24 +1,24 @@
 ---
 title: Work with forecast profiles
-description: This article describes how to work with forecast profiles. Forecast profiles prepare the data of an existing time series and then run forecasting algorithms to create a new time series that predicts demand over a coming period.
+description: Learn how to work with forecast profiles, which prepare the data of an existing time series and then run forecasting algorithms to create a new time series.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 10/19/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
 ms.collection:
   - bap-ai-copilot
+ms.search.form:
+audience: Application User
+ms.search.region: Global
 ---
 
 # Work with forecast profiles
 
 [!include [banner](../includes/banner.md)]
 
-The Demand planning app lets you build a collection of *forecast profiles*. Each profile takes an existing time series as input, prepares the data, and then runs forecasting algorithms to create a new time series that predicts demand over a coming period.
+Demand planning lets you build a collection of *forecast profiles*. Each profile takes an existing time series as input, prepares the data, and then runs forecasting algorithms to create a new time series that predicts demand over a coming period.
 
 Typically, a manager or system administrator creates the initial collection of required profiles. Forecasters and other users can then run the profiles to generate new calculated time series as they require.
 

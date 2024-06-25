@@ -1,15 +1,15 @@
 ---
 title: Create or modify an inbound load
-description: This article explains how to create or modify an inbound load.
+description: Learn how to create or modify an inbound load, including an outline on automatically created inbound loads for new purchase orders.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSInboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSParameters
 ms.topic: how-to
 ms.date: 01/29/2024
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: WHSInboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSParameters
 ---
 
 # Create or modify an inbound load

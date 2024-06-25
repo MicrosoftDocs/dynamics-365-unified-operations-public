@@ -17,9 +17,6 @@ ms.assetid:
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 You define table fields in a query to create workflow conditions. In a typical scenario, calculated fields are used to determine the behavior of a workflow. For example, a dynamic sales total of all records in a table can be used as a workflow condition to determine whether the step should be used. However, a limitation of queries is that you can't define calculated fields in the queries themselves. To overcome this query limitation, you must use a workflow document class. This article describes how to create a workflow document class.
 
 The workflow document class that you create defines table fields for conditions in two ways: the Application Explorer query and parameter methods. You must override the **getQueryName** method of the [WorkflowDocument class](/previous-versions/dynamics/ax-2012/application-classes/gg798542(v=ax.60)) to return the name of the query. You can optionally add calculated fields by adding parameter methods that have a specific signature on the class. For more information about workflow conditions, see [Configure workflow properties](../../fin-ops/organization-administration/configure-workflow-properties.md) and [Configure conditional decisions in a workflow](../../fin-ops/organization-administration/configure-conditional-decision-workflow.md).

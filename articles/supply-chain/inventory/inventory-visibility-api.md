@@ -1,16 +1,15 @@
 ---
 title: Inventory Visibility public APIs
-description: This article describes the public APIs that are provided by Inventory Visibility.
-author: yufeihuang
-ms.date: 10/17/2023
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
+description: Learn about the public APIs that are provided by Inventory Visibility, including an outline and step-by-step process for authentication.
+author: yufei-huang
 ms.author: yufeihuang
-ms.search.validFrom: 2021-08-02
-ms.dyn365.ops.version: 10.0.22
+ms.topic: how-to
+ms.date: 06/03/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: 
 ---
 
 # Inventory Visibility public APIs
@@ -39,6 +38,7 @@ The following table lists the APIs that are currently available:
 | `/api/environment/{environmentId}/onhand/unreserve` | Post | [Reverse one soft reservation event](#reverse-one-reservation-event) |
 | `/api/environment/{environmentId}/onhand/unreserve/bulk` | Post | [Reverse multiple soft reservation events](#reverse-multiple-reservation-events) |
 | `/api/environment/{environmentId}/onhand/reserve/resyncjob` |Post | [Clean up reservation data](#clean-up-reservation-data) |
+| `/api/environment/{environmentId}/getJobProgress` | Get | [Get job execution progress](#get-job-execution-progress) |
 | `/api/environment/{environmentId}/onhand/changeschedule` | Post | [Create one scheduled on-hand change](inventory-visibility-available-to-promise.md) |
 | `/api/environment/{environmentId}/onhand/changeschedule/bulk` | Post | [Create multiple on-hand changes with dates](inventory-visibility-available-to-promise.md) |
 | `/api/environment/{environmentId}/onhand/indexquery` | Post | [Query by using the post method](#query-with-post-method) (recommended) |
@@ -117,7 +117,13 @@ To get a security service token, follow these steps.
 
     - **URL:** `https://securityservice.operations365.dynamics.com/token`
     - **Method:** `POST`
-    - **HTTP header:** Include the API version. (The key is `Api-Version`, and the value is `1.0`.)
+    - **HTTP header:**
+
+        | Key | Value |
+        |--|--|
+        | Api-Version | 1.0 |
+        | Content-Type | application/json |
+
     - **Body content:** Include the JSON request that you created in the previous step.
 
     You should receive an access token (`access_token`) in response. You must use this token as a bearer token to call the Inventory Visibility API. Here's an example.
@@ -129,9 +135,6 @@ To get a security service token, follow these steps.
         "expires_in": 3600
     }
     ```
-
-> [!NOTE]
-> The `https://securityservice.operations365.dynamics.com/token` URL is a general URL for the security service. When you call the URL, the first response is an http redirect response with the status code `307` in the response headers, and an entry with the key "Location" that contains the target URL for the security service. The URL is in this format: `https://gw.{$geo}-il101.gateway.prod.island.powerapps.com/securityservice/token`. For example, if your environment locates in US geo, the URL could be `https://gw.us-il101.gateway.prod.island.powerapps.com/securityservice/token`. If the 307 response status code isn't acceptable for you, you can manually construct the actual URL according to your FinOps environment location. The simplest way is to open `https://gw.as-il101.gateway.prod.island.powerapps.com/securityservice/token` with your browser, and then copy the address in address bar.
 
 <!-- > [!IMPORTANT]
 > When you use the *Postman* request collection to call Inventory Visibility public APIs, you must add a bearer token for each request. To find your bearer token, select the **Authorization** tab under the request URL, select the **Bearer Token** type, and copy the access token that was fetched in the last step. In later sections of this article, `$access_token` will be used to represent the token that was fetched in the last step. -->
@@ -234,7 +237,7 @@ The following example shows sample body content without `dimensionDataSource`. I
 
 ### <a name="create-multiple-onhand-change-events"></a>Create multiple change events
 
-This API can create change events, just as the [single-event API](#create-one-onhand-change-event) can. The only difference is that this API can create multiple records at the same time. Therefore, the `Path` and `Body` values differ. For this API, `Body` provides an array of records. The maximum number of records is 512. Therefore, the on-hand change bulk API can support up to 512 change events at a time. 
+This API can create change events, just as the [single-event API](#create-one-onhand-change-event) can. The only difference is that this API can create multiple records at the same time. Therefore, the `Path` and `Body` values differ. For this API, `Body` provides an array of records. The maximum number of records is 512. Therefore, the on-hand change bulk API can support up to 512 change events at a time.
 
 For example, a retail store POS machine processed the following two transactions:
 
@@ -440,7 +443,7 @@ The following example shows a successful response.
     "message": "",
     "statusCode": 200
 }
-``` 
+```
 
 ### <a name="create-multiple-reservation-events"></a>Create multiple reservation events
 
@@ -598,6 +601,32 @@ Body:
         "iv",
         "pos"
     ]
+```
+
+If the clean up job is successfully created, a job ID will be returned in the response, which can be used to [get job execution progress](#get-job-execution-progress).
+
+## Get job execution progress
+
+Use the *get job execution progress* API to obtain the execution progress of a job. A job ID is required to identify the job.
+
+```txt
+Path:
+    /api/environment/{environmentId}/getJobProgress
+Method:
+    Get
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Query(Url Parameters):
+    jobId
+```
+
+Here's a sample get URL.
+
+```txt
+/api/environment/{environmentId}/getJobProgress?jobId=SomeJob:xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 ```
 
 ## Query on-hand

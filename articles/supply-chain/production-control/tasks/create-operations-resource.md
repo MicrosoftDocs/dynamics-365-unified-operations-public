@@ -1,26 +1,20 @@
 --- 
-# required metadata 
- 
 title: Create an operations resource
-description: An operations resource performs the activities of a project or a production process. 
+description: Learn about an operations resource performs the activities of a project or a production process, including a step-by-step process using the USMF demo data company.
 author: johanhoffmann
+ms.author: johanho
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: WrkCtrTable   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: kamaybac     
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: WrkCtrTable
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create an operations resource
 
 [!include [banner](../../includes/banner.md)]

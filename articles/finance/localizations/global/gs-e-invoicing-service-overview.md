@@ -4,7 +4,9 @@ description: Learn about Electronic invoicing in Microsoft Dynamics 365 Finance 
 author: ilikond
 ms.author: ikondratenko
 ms.topic: overview
-ms.date: 01/21/2022
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Application User

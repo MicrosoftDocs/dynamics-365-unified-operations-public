@@ -5,7 +5,8 @@ author: twheeloc
 ms.author: twheeloc
 ms.topic: overview
 ms.date: 04/04/2024
-ms.custom: ["248434"]
+ms.custom: 
+  - bap-template
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User

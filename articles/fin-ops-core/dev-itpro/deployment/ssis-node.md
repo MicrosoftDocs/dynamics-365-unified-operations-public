@@ -13,6 +13,7 @@ ms.search.region: Global
 ms.search.validFrom: 2023-08-17
 ms.search.form:
 ms.dyn365.ops.version: Platform update 58
+ms.service: dynamics-365-op
 ---
 
 # Add an SSIS node to an existing environment

@@ -1,15 +1,15 @@
 ---
 title: Vendor list prices and price adjustments (preview)
-description: This article provides information about vendor list prices, which come from a vendor price catalogue and can be used as the foundation for calculating the sales price of an item.
+description: Learn about vendor list prices, which come from a vendor price catalogue and can be used as the foundation for calculating the sales price of an item.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: overview
 ms.date: 04/03/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # Vendor list prices and price adjustments (preview)

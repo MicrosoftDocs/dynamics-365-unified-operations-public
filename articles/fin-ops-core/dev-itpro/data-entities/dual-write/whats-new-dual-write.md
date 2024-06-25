@@ -7,6 +7,7 @@ ms.topic: whats-new
 ms.date: 05/04/2024
 ms.custom: 
   - bap-template
+  - evergreen
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -20,11 +21,11 @@ ms.dyn365.ops.version: 10.0.8
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
-## May 2024
+## June 2024
 
 ### Global address book
 
-The May regular release of Dual-write GAB solution 3.5.2.89 contains the following bug fixes.
+The June regular release of Dual-write GAB solution 3.5.2.131 contains the following bug fixes.
 
 | Feature | Description | Status |
 |---|---|---|

@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create a hierarchy of product classification
-description: This procedure shows how to create a new category hierarchy and assign a commodity code hierarchy type. 
+description: Learn how to create a new category hierarchy and assign a commodity code hierarchy type, including processes for creating and building category hierarchies. 
 author: t-benebo
-ms.date: 07/11/2019
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyCreate, EcoResCategory, EcoResCategoryHierarchyRole, EcoResProductCategory, EcoResCategorySearchList, EcoResCategoryHierarchyFactbox, EcoResCategoryFriendlyName, EcoResCategoryAddProduct   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: benebotg
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 07/11/2019
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyCreate, EcoResCategory, EcoResCategoryHierarchyRole, EcoResProductCategory, EcoResCategorySearchList, EcoResCategoryHierarchyFactbox, EcoResCategoryFriendlyName, EcoResCategoryAddProduct
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create a hierarchy of product classification
 
 [!include [banner](../../includes/banner.md)]

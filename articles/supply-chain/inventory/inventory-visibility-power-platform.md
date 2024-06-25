@@ -1,15 +1,15 @@
 ---
 title: Use the Inventory Visibility app UI version 2
-description: This article describes how to use the Inventory Visibility app UI version 2.
-author: yufeihuang
+description: Learn how to use the Inventory Visibility app UI version 2, including an process for authenticating with the Inventory Visibility service.
+author: yufei-huang
 ms.author: yufeihuang
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 12/04/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # Use the Inventory Visibility app UI version 2

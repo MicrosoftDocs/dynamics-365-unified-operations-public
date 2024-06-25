@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "articles/human-resources/hr-infrastructure-merge-faq.md",
+      "redirect_url": "/dynamics365/human-resources/hr-infrastructure-merge",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/perf-test/perfsdk-tutorial-lbd.md",
+      "redirect_url": "https://community.dynamics.com/blogs/post/?postid=4fc1ab59-1948-ee11-be6d-00224827e8f9",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/finance/localizations/brazil/e-invoicing-bra-get-started.md",
       "redirect_url": "/dynamics365/finance/localizations/brazil/latam-bra-nf-e-process",
       "redirect_document_id": "false"
@@ -27712,6 +27722,26 @@
     {
       "source_path": "articles/supply-chain/rebate-management/rebate-management-enable.md",
       "redirect_url": "/dynamics365/supply-chain/rebate-management/rebate-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/demand-planning/intercompany-planning-groups-demand-forecasting.md",
+      "redirect_url": "/dynamics365/supply-chain/master-planning/intercompany-planning-groups-demand-forecasting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/production-control/config-job-card-device.md",
+      "redirect_url": "/dynamics365/supply-chain/production-control/production-floor-execution-configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/production-control/tasks/report-progress-mobile-job-device.md",
+      "redirect_url": "/dynamics365/supply-chain/production-control/production-floor-execution-use",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/production-control/tasks/worker-mobile-job-device.md",
+      "redirect_url": "/dynamics365/supply-chain/production-control/production-floor-execution-worker-accounts.md",
       "redirect_document_id": false
     }
   ]

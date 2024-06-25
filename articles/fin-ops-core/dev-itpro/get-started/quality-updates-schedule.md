@@ -4,7 +4,7 @@ description: Learn about the release schedule for proactive quality updates (PQU
 author: rashmansur
 ms.author: rashmim
 ms.topic: article
-ms.date: 05/07/2024
+ms.date: 06/04/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -47,15 +47,6 @@ The following table shows the high-level train schedule. It includes a descripti
 
 | PQU release train | Change cutoff date | PQU train duration | Status
 |---|---|---|---|
-| 10.0.35 PQU-2 | August 25, 2023 | September 4, 2023 to October 8, 2023| Completed |
-| 10.0.35 PQU-3 | October 20, 2023 | October 30, 2023 to December 17, 2023| Completed |
-| 10.0.36 PQU-1 | September 29, 2023 | October 9, 2023 to November 12, 2023| Completed |
-| 10.0.36 PQU-2 | October 27, 2023 | November 6, 2023 to January 14, 2023| Completed |
-| 10.0.36 PQU-3 | January 12, 2024 | January 22, 2023 to February 25, 2024| Completed |
-| 10.0.37 PQU-1 | November 3, 2023 | November 13, 2023 to January 14, 2024| Completed |
-| 10.0.37 PQU-2 | December 30, 2023 | January 8, 2024 to February 11, 2024| Completed |
-| 10.0.37 PQU-3 | January 27, 2024 | February 5, 2024 to March 10, 2024| Completed |
-| 10.0.37 PQU-4 | February 23, 2024 | March 4, 2024 to April 7, 2024| Completed |
 | 10.0.38 PQU-1 | February 7, 2024 | February 12, 2024 to March 17, 2024| Completed |
 | 10.0.38 PQU-2 | March 6, 2024 | March 11, 2024 to April 14, 2024| Completed |
 | 10.0.38 PQU-3 | April 3, 2024 | April 8, 2024 to May 12, 2024| Completed |
@@ -63,16 +54,16 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.38 PQU-5 | May 29, 2024 | June 3, 2024 to July 7, 2024| In-Progress |
 | 10.0.38 PQU-6 | June 26, 2024 | July 1, 2024 to August 4, 2024| Not Started |
 | 10.0.38 PQU-7 | July 24, 2024 | July 29, 2024 to September 1, 2024| Not Started |
-| 10.0.38 PQU-8 | August 28, 2024 | September 2, 2024 to October 6, 2024| Not Started |
+| 10.0.38 PQU-8 | August 23, 2024 | September 2, 2024 to October 6, 2024| Not Started |
 | 10.0.39 PQU-1 | April 10, 2024 | April 15, 2024 to May 19 2024| Completed |
 | 10.0.39 PQU-2 | May 8, 2024 | May 13, 2024 to June 16, 2024| In-Progress |
-| 10.0.39 PQU-3 | June 5, 2024 | June 10, 2024 to July 14, 2024| Not Started |
+| 10.0.39 PQU-3 | June 5, 2024 | June 10, 2024 to July 14, 2024| In-Progress |
 | 10.0.39 PQU-4 | July 3, 2024 | July 8, 2024 to August 11, 2024| Not Started |
 | 10.0.39 PQU-5 | July 31, 2024 | August 5, 2024 to September 8, 2024| Not Started |
 | 10.0.39 PQU-6 | August 28, 2024 | September 2, 2024 to October 6, 2024| Not Started |
 | 10.0.39 PQU-7 | September 25, 2024 | September 30, 2024 to November 3, 2024| Not Started |
 | 10.0.39 PQU-8 | October 23, 2024 | October 28, 2024 to December 8, 2024| Not Started |
-| 10.0.39 PQU-9 | November 27, 2024 | December 4, 2024 to January 19, 2025| Not Started |
+| 10.0.39 PQU-9 | November 22, 2024 | December 4, 2024 to January 19, 2025| Not Started |
 | 10.0.40 PQU-1 | July 10, 2024 | July 15, 2024 to August 18, 2024| Not Started |
 | 10.0.40 PQU-2 | August 7, 2024 | August 12, 2024 to September 15, 2024| Not Started |
 | 10.0.40 PQU-3 | September 4, 2024 | September 9, 2024 to October 13, 2024| Not Started |
@@ -81,7 +72,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.40 PQU-6 | December 4, 2024 | December 9, 2024 to January 19, 2025| Not Started |
 | 10.0.40 PQU-7 | January 8, 2025 | January 13, 2025 to February 16, 2025| Not Started |
 | 10.0.40 PQU-8 | February 5, 2025 | February 10, 2025 to March 16, 2025| Not Started |
-| 10.0.40 PQU-9 | March 5, 2025 | March 10, 2025 to April 13, 2025| Not Started |
+| 10.0.40 PQU-9 | February 18, 2025 | March 10, 2025 to April 13, 2025| Not Started |
 | 10.0.41 PQU-1 | October 9, 2024 | October 14, 2024 to November 17, 2024| Not Started |
 | 10.0.41 PQU-2 | November 6, 2024 | November 11, 2024 to January 5, 2025| Not Started |
 | 10.0.41 PQU-3 | December 31, 2024 | January 6, 2025 to February 9, 2025| Not Started |
@@ -89,7 +80,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.41 PQU-5 | February 26, 2025 | March 3, 2025 to April 6, 2025| Not Started |
 | 10.0.41 PQU-6 | March 26, 2025 | March 31, 2025 to May 4, 2025| Not Started |
 | 10.0.41 PQU-7 | April 23, 2025 | April 28, 2025 to June 1, 2025| Not Started |
-| 10.0.41 PQU-8 | May 28, 2025 | June 2, 2025 to July 6, 2025| Not Started |
+| 10.0.41 PQU-8 | May 23, 2025 | June 2, 2025 to July 6, 2025| Not Started |
 | 10.0.42 PQU-1 | February 12, 2025 | February 17, 2025 to March 23, 2025| Not Started |
 | 10.0.42 PQU-2 | March 12, 2025 | March 17, 2025 to April 20, 2025| Not Started |
 | 10.0.42 PQU-3 | April 9, 2025 | April 14, 2025 to May 8, 2025| Not Started |
@@ -97,7 +88,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.42 PQU-5 | June 4, 2025 | June 9, 2025 to July 13, 2025| Not Started |
 | 10.0.42 PQU-6 | July 2, 2025 | July 7, 2025 to August 10, 2025| Not Started |
 | 10.0.42 PQU-7 | July 30, 2025 | August 4, 2025 to September 7, 2025| Not Started |
-| 10.0.42 PQU-8 | August 27, 2025 | September 1, 2025 to October 5, 2025| Not Started |
+| 10.0.42 PQU-8 | August 22, 2025 | September 1, 2025 to October 5, 2025| Not Started |
 
 > [!Note]
 > Any new finance and operations apps environment that is provisioned after August 17th, 2023 is automatically signed up to receive PQUs per the schedule as applicable.
@@ -107,6 +98,8 @@ The following table shows the high-level train schedule. It includes a descripti
 **App version: 10.0.1777.184**
 
 **Platform version: 7.0.7120.168**
+
+**Unified Environment Provisioning Application Version: 10.0.38.7**
 
 | Stations | Upcoming Sandbox Schedule | Upcoming Production Schedule |
 |---|---|---|
@@ -123,6 +116,8 @@ The following table shows the high-level train schedule. It includes a descripti
 
 **Platform version: 7.0.7120.179**
 
+**Unified Environment Provisioning Application Version: 10.0.38.8**
+
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
 | Station 1 | June 3 to June 6, 2024 | NA |
@@ -138,6 +133,8 @@ The following table shows the high-level train schedule. It includes a descripti
 
 **Platform version: 7.0.7198.128**
 
+**Unified Environment Provisioning Application Version: 10.0.39.6**
+
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
 | Station 1 | May 13 to May 16, 2024 | NA |
@@ -146,6 +143,23 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | May 27 to May 30, 2024 | June 8 to June 9, 2024 |
 | Station 5 | June 3 to June 6, 2024 | June 15 to June 16, 2024 |
 | Station 6 | June 4 to June 7, 2024 | June 15 to June 16, 2024 |
+
+### <a name="schedule"></a>[New] Proactive quality update upcoming 10.0.39 Release-3 train schedule
+
+**App version: 10.0.1860.134**
+
+**Platform version: 7.0.7198.153**
+
+**Unified Environment Provisioning Application Version: 10.0.39.7**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | June 10 to June 13, 2024 | NA |
+| Station 2 | June 17 to June 20, 2024 | June 29 to June 30, 2024 |
+| Station 3 | June 18 to June 21, 2024 | June 29 to June 30, 2024|
+| Station 4 | June 24 to June 27, 2024 | July 6 to July 7, 2024 |
+| Station 5 | July 1 to July 4, 2024 | July 13 to July 14, 2024 |
+| Station 6 | July 2 to July 5, 2024 | July 14 to July 14, 2024 |
 
 > [!IMPORTANT] 
 > At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).

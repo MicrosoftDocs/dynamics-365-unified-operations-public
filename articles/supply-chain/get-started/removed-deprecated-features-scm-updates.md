@@ -1,15 +1,15 @@
 ---
 title: Removed or deprecated features in Dynamics 365 Supply Chain Management
-description: This article describes features that have been removed, or that are planned for removal in Dynamics 365 Supply Chain Management.
+description: Learn about features that have been removed, deprecated, or that are planned for removal in Dynamics 365 Supply Chain Management.
 author: kamaybac
 ms.author: kamaybac
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: conceptual
-ms.date: 05/19/2024
+ms.date: 06/14/2024
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # Removed or deprecated features in Dynamics 365 Supply Chain Management
@@ -27,6 +27,16 @@ This list is intended to help you consider these removals and deprecations for y
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.41 release
+
+### Job card terminal
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | The job card terminal is being replaced by the new [production floor execution interface](../production-control/production-floor-execution-use.md). |
+| **Replaced by another feature?**   | Yes, the job card terminal is to be replaced by the new [production floor execution interface](../production-control/production-floor-execution-use.md). |
+| **Product areas affected** | Supply Chain Management – production control |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | Deprecated. Approximately one year after the release of version 10.0.41, the job card terminal will no longer be supported and may eventually be removed from the product. |
 
 ### Inventory transactions support for internal warehouse operations
 
@@ -104,11 +114,11 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | The [job card device](../production-control/config-job-card-device.md) is being replaced by the new [production floor execution interface](../production-control/production-floor-execution-configure.md). |
-| **Replaced by another feature?**   | Yes, the [job card device](../production-control/config-job-card-device.md) is to be replaced by the new [production floor execution interface](../production-control/production-floor-execution-configure.md). |
+| **Reason for deprecation/removal** | The job card device is replaced by the [production floor execution interface](../production-control/production-floor-execution-configure.md). |
+| **Replaced by another feature?**   | Yes, the job card device is replaced by the [production floor execution interface](../production-control/production-floor-execution-configure.md). |
 | **Product areas affected** | Supply Chain Management – production control |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | Removed. As of April 2022, the job card device is no longer supported and customers must use the new production floor execution interface. |
+| **Status** | Unsupported. As of April 2022, the job card device is no longer supported and customers must use the new production floor execution interface. |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.18 release
 

@@ -1,16 +1,17 @@
 ---
 title: Assessed tax declaration (Russia)
 description: Learn how to set up and use assessed tax declarations for Russia, including an outline and step-by-step process on setting up assessed taxes.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 01/15/2020
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2019-05-01
 ms.dyn365.ops.version: 10.0.1
-ms.search.industry: 
+
 ---
 
 # Assessed tax declaration (Russia)

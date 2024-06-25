@@ -1,16 +1,17 @@
 ---
 title: SST-02 declaration for Malaysia
 description: This article explains how to configure and generate the SST-02 return form for Malaysia.
-author: AdamTrukawka
-ms.date: 09/11/2020
-ms.topic: article
-audience: Application User
+author: liza-golub
+ms.author: egolub
+ms.date: 06/20/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak
 ms.search.region: Bahrain
-ms.author: atrukawk
 ms.search.validFrom: 2020-06-03
 ms.dyn365.ops.version: 10.0.13
-ms.search.form: 
+
 ---
 
 # SST-02 declaration for Malaysia

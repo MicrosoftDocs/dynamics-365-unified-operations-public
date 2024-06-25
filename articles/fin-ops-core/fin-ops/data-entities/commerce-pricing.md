@@ -5,7 +5,7 @@ author: ShalabhjainMSFT
 ms.author: shajain
 ms.topic: article
 ms.date: 11/19/2020
-ms.reviewer: v-chgri
+ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: global
 ms.search.validFrom: 2020-01-06

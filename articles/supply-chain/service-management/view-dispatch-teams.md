@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: View dispatch teams  
-description: View dispatch teams.
+description: Learn how to view dispatch teams, including a step-by-step process for grouping dispatch boards by dispatch teams and additional resources.
 author: ChristianRytt
-ms.date: 05/07/2018
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: SMADispatchBoard
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: crytt
+ms.topic: article
+ms.date: 05/07/2018
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMADispatchBoard
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

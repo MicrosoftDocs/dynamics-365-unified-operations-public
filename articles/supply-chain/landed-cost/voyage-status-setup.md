@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Voyage status setup
-description: This article describes how to establish the status values that users can assign to voyages.
+description: Learn how to establish the status values that users can assign to voyages, including a table that defines various fields.
 author: Weijiesa
-ms.date: 01/13/2021
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: ITMStatusTable
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: weijiesa
+ms.topic: article
+ms.date: 01/13/2021
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-01-13
+ms.search.form: ITMStatusTable
 ms.dyn365.ops.version: 10.0.17
 ---
 

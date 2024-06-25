@@ -1,15 +1,15 @@
 ---
 title: Pricing management overview (preview)
-description: This article provides an overview of the Pricing management module in Microsoft Dynamics 365 Supply Chain Management.
+description: Access an overview of the Pricing management module in Microsoft Dynamics 365 Supply Chain Management, including a list of challenges.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: overview
 ms.date: 04/03/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # Pricing management overview (preview)

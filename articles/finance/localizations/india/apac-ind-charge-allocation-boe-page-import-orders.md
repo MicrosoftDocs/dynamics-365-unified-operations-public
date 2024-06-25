@@ -18,8 +18,6 @@ ms.dyn365.ops.version:
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [banner](../../includes/preview-banner.md)]
-
 For transactions for the import of goods, duty and taxes are calculated based on a custom cost, insurance, and freight (CIF) value that is determined by adding freight and insurance charges to the value of the imported goods. The custom CIF value is also known as the assessable value. Customs authorities determine this value when a bill of entry (BOE) is submitted.
 
 Generally, actual freight and insurance charges are added to the value of goods to determine the assessable value. Sometimes, the quantity of goods that are received against an import order or a purchase order differs from the actual quantity that was ordered. This difference affects the actual amount of charges that are incurred for freight and insurance, and the assessable value that is used to determine the customs duty and goods and services tax (GST). Therefore, this feature lets you edit the charge amount at the BOE stage and allocate charges to all BOE line items on a net amount or quantity basis. This capability will help you match the BOE assessable value with the value that customs authorities determine, for taxation purposes.

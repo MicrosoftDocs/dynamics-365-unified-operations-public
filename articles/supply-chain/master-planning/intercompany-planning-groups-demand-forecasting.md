@@ -3,22 +3,25 @@ title: Intercompany planning groups for demand forecasting
 description: Learn about intercompany planning groups and how they contribute to demand forecasting, which optimizes logistics operations across multiple companies.
 author: dereklh77
 ms.author: v-heuerderek
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: overview
 ms.date: 04/15/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form:
 ---
 
 # Intercompany planning groups for demand forecasting
+
+[!include [banner](../includes/banner.md)]
+[!INCLUDE [demand-planning-banner](../includes/demand-planning-banner.md)]
 
 This article describes how you can use intercompany planning groups during the demand forecasting process.
 
 Collaboration is a vital aspect for many large-scale projects. When working with other legal entities (companies) during the development of a product or service, you can create intercompany planning groups to assist you during the demand forecasting process.
 
-This gives all companies involved a greater understanding of the anticipated revenue that the product or service will generate and give all companies the information necessary to devise and conduct business plans accordingly.
+This gives all companies involved a greater understanding of the anticipated revenue that the product or service will generate. It also gives them the information necessary to devise and conduct business plans accordingly.
 
 Many organizations utilize other companies within their organization to oversee various facets within collaborations and projects. Logistics operations that depend on other companies are handled by using intercompany sales and purchases since each legal entity has a separate chart of accounts.
 
@@ -33,9 +36,13 @@ To further understand intercompany planning groups for demand forecasting, under
 
 A plan in one company can include planned intercompany demand that is related to orders from another company's plan. This capability is useful, because it provides full visibility into planned orders across companies. It also ensures that all required planned supply orders are created, but without requiring that planned orders be firmed for the intercompany demand.
 
-In order to propagate the demand throughout the intercompany chain, you must set parameters to ensure that planned purchase orders are automatically firmed; that is, orders can't be changed in terms of time or quantity. Set up the **Firming time fence** on the Coverage group, or the **Firming time fence** in the Master plan.
+To propagate the demand throughout the intercompany chain, you must set parameters to ensure that planned purchase orders are automatically firmed; that is, orders can't be changed in terms of time or quantity. Set up the **Firming time fence** on the coverage group, or the **Firming time fence** in the master plan.
 
 If no **Firming time fence** is set up, no intercompany purchase orders are created automatically. Only the first execution of the master scheduling results in planned orders; however, because the intercompany purchase order is not actually created, no intercompany sales order is created, and, therefore, no additional intercompany purchase orders are created, and so on.
+
+To learn more, see [Intercompany planning groups](../master-planning/demand-forecasting-setup.md#intercompany-planning-groups).
+
+<!-- KFM: The following text needs to be verified against SCM pages and settings. I think this text is describing Business Central, not SCM. 
 
 ## Overview of the steps to get started
 
@@ -68,6 +75,8 @@ Exchange the following authentication settings. Each partner can get this inform
 - Redirect URL
 
 Run the **IC Partner Cross-Environment Setup** assisted setup guide in all companies to specify the information. To start the guide, on the **Intercompany Partner** page, use the **Connect Externally Setup** action.  
+
+-->
 
 ## Related resources
 

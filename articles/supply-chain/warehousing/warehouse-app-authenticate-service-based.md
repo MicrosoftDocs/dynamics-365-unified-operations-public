@@ -1,15 +1,15 @@
 ---
 title: Service-based authentication for the Warehouse Management mobile app
-description: This article explains how to configure the Warehouse Management mobile app to connect to your Microsoft Dynamics 365 Supply Chain Management environment using service-based authentication.
+description: Learn how to configure the Warehouse Management app to connect to your Dynamics 365 Supply Chain Management environment using service-based authentication.
 author: JTOne123
 ms.author: pavlodatsiuk
-ms.reviewer: kamaybac
-ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 ms.topic: how-to
 ms.date: 10/18/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 ---
 
 # Service-based authentication for the Warehouse Management mobile app
@@ -32,9 +32,9 @@ Certificates can be used as secrets to prove the application's identity when a t
 
 You must make a certificate locally available on each device where you run the Warehouse Management mobile app. For information about how to manage certificates for Intune-controlled devices (if you're using Intune), see [Mass deploy the mobile app with service-based authentication](warehouse-app-intune.md).
 
-## <a name="create-service"></a>Create a web service application in Microsoft Entra ID
+## <a name="create-service"></a>Register an application in Microsoft Entra ID
 
-To enable the Warehouse Management mobile app to interact with a specific Supply Chain Management server, you must register a web service application for the Supply Chain Management tenant in Microsoft Entra ID. The following procedure shows one way to complete this task. For detailed information and alternatives, see the links after the procedure.
+To enable the Warehouse Management mobile app to interact with a specific Supply Chain Management server, you must register an application for the Supply Chain Management tenant in Microsoft Entra ID. The following procedure shows one way to complete this task. For detailed information and alternatives, see the links after the procedure.
 
 1. In a web browser, go to [https://portal.azure.com](https://portal.azure.com/).
 1. Enter the name and password of the user who has access to the Azure subscription.
@@ -50,11 +50,11 @@ To enable the Warehouse Management mobile app to interact with a specific Supply
     - **Upload certificate** – Upload a certificate to use as a secret. We recommend this approach, because it's more secure and can also be more completely automated. If you're running the Warehouse Management mobile app on Windows devices, make a note of the **Thumbprint** value that's shown after you upload the certificate. You'll need this value when you configure the certificate on Windows devices.
     - **New client secret** – Create a key by entering a key description and a duration in the **Passwords** section, and then select **Add**. Make a copy of the key, and store it securely.
 
-For more information about how to set up web service applications in Microsoft Entra ID, see the following resources:
+For more information about how to register applications in Microsoft Entra ID, see the following resources:
 
-- For instructions that show how to use Windows PowerShell to set up web service applications in Microsoft Entra ID, see [How to: Use Azure PowerShell to create a service principal with a certificate](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
+- For instructions that show how to use Windows PowerShell to register applications in Microsoft Entra ID, see [How to: Use Azure PowerShell to create a service principal with a certificate](/azure/active-directory/develop/howto-authenticate-service-principal-powershell).
 
-- For complete details about how to manually create a web service application in Microsoft Entra ID, see the following articles:
+- For complete details about how to manually register an application in Microsoft Entra ID, see the following articles:
     - [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app)
     - [How to: Use the portal to create a Microsoft Entra ID application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal)
 
@@ -74,7 +74,7 @@ To enable Supply Chain Management to use your Microsoft Entra ID application, fo
 
     1. Go to **System administration \> Setup \> Microsoft Entra ID applications**.
     1. On the Action Pane, select **New** to add a line.
-    1. In the **Client ID** field, enter the client ID that you made a note of when you set up the web service application in Microsoft Entra ID.
+    1. In the **Client ID** field, enter the client ID that you made a note of when you registered the application in Microsoft Entra ID.
     1. In the **Name** field, enter a name.
     1. In the **User ID** field, select the user ID that you just created.
 

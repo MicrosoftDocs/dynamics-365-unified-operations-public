@@ -3,14 +3,13 @@ title: Local agent pre-deployment and post-deployment scripts
 description: Learn about local agent pre-deployment and post-deployment scripts, including overviews on customizations and logging.
 author: faix
 ms.author: osfaixat
-ms.topic: article
-ms.date: 08/07/2019
-ms.custom:
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
 ms.reviewer: johnmichalak
-audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2019-07-31 
-ms.search.form:
 ms.dyn365.ops.version: Platform update 28 
 search.app:
   - financeandoperationsonprem-docs

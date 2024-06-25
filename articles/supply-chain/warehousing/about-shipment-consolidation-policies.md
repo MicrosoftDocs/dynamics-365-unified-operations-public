@@ -1,15 +1,15 @@
 ---
 title: Shipment consolidation policies overview
-description: This article provides an overview of the functionality that provides flexible configuration of shipment consolidation policies.
+description: Access an overview of the functionality that provides flexible configuration of shipment consolidation policies, including an overview of new functionality.
 author: Mirzaab
 ms.author: mirzaab
-ms.reviewer: kamaybac
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationError, WHSShipConsolidationSetShipment, WHSShipConsolidationPolicySelect, WHSShipPlanningListPage, TMSCarrierGroup, WHSShipConsolidationTemplate, WHSShipConsolidationTemplateApply, WHSShipConsolidationTemplateCreate, WHSOutboundLoadPlanningWorkbench
 ms.topic: overview
 ms.date: 01/29/2024
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationError, WHSShipConsolidationSetShipment, WHSShipConsolidationPolicySelect, WHSShipPlanningListPage, TMSCarrierGroup, WHSShipConsolidationTemplate, WHSShipConsolidationTemplateApply, WHSShipConsolidationTemplateCreate, WHSOutboundLoadPlanningWorkbench
 ---
 
 # Shipment consolidation policies overview

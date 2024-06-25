@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Shipment auto-updates
-description: This article provides an overview of functionality that provides automatic updates for shipments.
+description: Access an overview of functionality that provides automatic updates for shipments with an outline on main elements of the functionality.
 author: Mirzaab
-ms.date: 11/04/2019
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: WHSWaveTemplateTable,SalesTableListPage,SalesTable,WHSWaveTableListPage
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mirzaab
+ms.topic: article
+ms.date: 11/04/2019
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2019-08-31
+ms.search.form: WHSWaveTemplateTable,SalesTableListPage,SalesTable,WHSWaveTableListPage
 ms.dyn365.ops.version: 10.0.5
-
 ---
 
 # Shipment auto-updates

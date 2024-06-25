@@ -1,24 +1,16 @@
 ---
-# required metadata
-
 title: Confirm outbound shipments from batch jobs
-description: This article describes how to set up a batch job that automatically confirms outbound transfer-order shipments for ready-to-ship loads.
+description: Learn how to set up a batch job that confirms outbound transfer-order shipments for ready-to-ship loads with an outline on process outbound shipments.
 author: perlynne
-ms.date: 07/31/2020
-ms.topic: article
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: perlynne
+ms.topic: article
+ms.date: 07/31/2020
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-07-31
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.13
 ---
 
