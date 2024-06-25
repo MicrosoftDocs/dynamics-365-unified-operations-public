@@ -174,6 +174,9 @@ Workers follow these steps to register tracked components.
 [!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
 <!-- KFM: preview until further notice -->
 
+> [!NOTE]
+> This feature is generally available (GA) for non-WMS items, but is still in preview for WMS-enabled items.
+
 Workers can adjust material consumption for each production job. This functionality is used in scenarios where the actual quantity of materials that was consumed by a production job was more or less than the planned quantity. Therefore, it must be adjusted to keep the inventory levels current.
 
 Workers can also make reservations on the batch/serial numbers of materials. This functionality is used in scenarios where a worker must manually specify which material batch or serial numbers were consumed, to meet material traceability requirements.
@@ -226,7 +229,12 @@ The **Adjust material** button can be configured so that it appears on the prima
 [!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
 <!-- KFM: preview until further notice -->
 
+> [!NOTE]
+> This feature is generally available (GA) for non-WMS items, but is still in preview for WMS-enabled items.
+
 Workers can adjust material consumption for catch weight items. This functionality is used in scenarios where the actual quantity of a catch weight material that was consumed by a production job was more or less than the planned quantity. Therefore, it must be adjusted to keep the inventory levels current. When a worker adjusts consumption of a catch weight item, they can adjust both the catch weight quantity and the inventory quantity. For example, if a production job is planned to consume five boxes that have an estimated weight of 2 kilograms per box, the worker can adjust both the number of boxes to consume and the weight of the boxes. The system will validate that the specified weight of the boxes is within the defined minimum and maximum threshold that defined on the released product.
+
+For information about how to add this functionality to the interface, see [Configure the production floor execution interface](production-floor-execution-configure.md#tracked-components).
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
