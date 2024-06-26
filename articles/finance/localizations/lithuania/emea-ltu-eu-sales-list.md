@@ -1,8 +1,8 @@
 ---
 title: EU Sales list for Lithuania
 description: Learn about the European Union (EU) sales list report for Lithuania, including a step-by-step process on setting up information about the company.
-author: AdamTrukawka
-ms.author: atrukawk
+author: liza-golub
+ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
