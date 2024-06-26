@@ -3,10 +3,11 @@ title: Manual depreciation of fixed assets for Italy
 description: Learn about fixed assets depreciation for legal entities in Italy, including outlines on the calculation basis and depreciation run date fields.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Italy
 ms.search.validFrom: 2016-05-31
 ms.search.form: AssetDepreciationProfile, LedgerJournalTransApprove, LedgerJournalTransAsset, LedgerJournalTransDaily, LedgerJournalTransVendInvoice, PurchTable
