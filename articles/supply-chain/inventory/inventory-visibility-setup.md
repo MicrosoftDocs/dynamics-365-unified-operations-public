@@ -90,13 +90,7 @@ After you register an application and add a client secret to Microsoft Entra ID,
 1. On the environment page, scroll down until you find the **Environment add-ins** section in the **Power Platform integration** section. There, you can find the Dataverse environment name. Confirm that the Dataverse environment name is the one that you want to use for Inventory Visibility.
 
     > [!IMPORTANT]
-    > If *all* the following statements are true for your installation, you must fix the mapping issue before you install the Inventory Visibility Add-in:
-    >
-    > - You installed the Inventory Visibility Add-in by using Lifecycle Services.
-    > - Your Dataverse environment wasn't created by Lifecycle Services (for example, because it was created by using the Power Platform admin center).
-    > - Your Dataverse environment is linked to your Supply Chain Management environment.
-    >
-    > It's possible that your dual-write environment is linked to a Dataverse instance, but Lifecycle Services isn't set up for Power Platform integration. This linking mismatch can cause unexpected behavior. We recommend that your Lifecycle Services environment details match what you're connected to in dual-write, so that business events, virtual tables, and add-ins can use the same connection. For information about how to fix the mapping issue, see [Linking mismatch](../../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md#linking-mismatch). After the mapping issue is fixed, you can install Inventory Visibility.
+    > If your environment has a linking mismatch, Lifecycle Services shows a warning on your environment details page that resembles the following example: "Microsoft has detected that your environment is linked via dual-write to a different destination than specified in Power Platform Integration, which isn't recommended." If you see this warning, it's possible that your dual-write environment is linked to a Dataverse instance, but Lifecycle Services isn't set up for Power Platform integration. This linking mismatch can cause unexpected behavior. We recommend that your Lifecycle Services environment details match what you're connected to in dual-write, so that business events, virtual tables, and add-ins can use the same connection. For information about how to fix this issue, see [Linking mismatch](../../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md#linking-mismatch). After the linking mismatch is fixed, you can install Inventory Visibility.
 
 1. In the **Environment add-ins** section, select **Install a new add-in**.
 
@@ -129,7 +123,7 @@ After you register an application and add a client secret to Microsoft Entra ID,
 After you register an application and add a client secret to Microsoft Entra ID, you must install the Inventory Visibility Add-in.
 
 > [!IMPORTANT]
-> If your environment isn't a [unified environment](/power-platform/developer/unified-experience/finance-operations-dev-overview), and your Dataverse environment wasn't created by Lifecycle Services (for example, because you created it by using the Power Platform admin center), you must fix the mapping issue before you install the Inventory Visibility Add-in. For instructions, see [Linking mismatch](../../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md#linking-mismatch).
+> Before you start the installation, open the details page for your environment in Lifecycle Services to check for warning messages. If your environment has a linking mismatch, you'll see a warning that resembles the following example: "Microsoft has detected that your environment is linked via dual-write to a different destination than specified in Power Platform Integration, which isn't recommended." If you see this warning, it's possible that your dual-write environment is linked to a Dataverse instance, but Lifecycle Services isn't set up for Power Platform integration. This linking mismatch can cause unexpected behavior. We recommend that your Lifecycle Services environment details match what you're connected to in dual-write, so that business events, virtual tables, and add-ins can use the same connection. For information about how to fix this issue, see [Linking mismatch](../../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md#linking-mismatch). After the linking mismatch is fixed, you can install Inventory Visibility.
 
 Follow these steps to install the Inventory Visibility Add-in.
 

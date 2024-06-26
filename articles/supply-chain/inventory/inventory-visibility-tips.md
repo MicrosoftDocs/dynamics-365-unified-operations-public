@@ -19,14 +19,7 @@ ms.custom:
 
 Here are a few tips that you should consider when you set up and use the Inventory Visibility Add-in:
 
-- If *all* the following statements are true for your installation, you must [fix the mapping issue](../../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md#linking-mismatch) before you install the Inventory Visibility Add-in:
-
-    - You installed the Inventory Visibility Add-in by using Microsoft Dynamics Lifecycle Services.
-    - Your Dataverse environment wasn't created by Lifecycle Services (for example, because it was created by using the Power Platform admin center).
-    - Your Dataverse environment is linked to your Supply Chain Management environment.
-
-    For information about how to fix the mapping issue, see [Linking mismatch](../../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md#linking-mismatch). After the mapping issue is fixed, you can install Inventory Visibility.
-
+- Before you start installing Inventory Visibility, open the details page for your environment in Lifecycle Services to check for warning messages. If your environment has a linking mismatch, you'll see a warning that resembles the following example: "Microsoft has detected that your environment is linked via dual-write to a different destination than specified in Power Platform Integration, which isn't recommended." If you see this warning, it's possible that your dual-write environment is linked to a Dataverse instance, but Lifecycle Services isn't set up for Power Platform integration. This linking mismatch can cause unexpected behavior. We recommend that your Lifecycle Services environment details match what you're connected to in dual-write, so that business events, virtual tables, and add-ins can use the same connection. For information about how to fix this issue, see [Linking mismatch](../../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md#linking-mismatch). After the linking mismatch is fixed, you can install Inventory Visibility.
 - If you have more than one Supply Chain Management environment, create a different Microsoft Entra application for each environment. If you use the same application ID and tenant ID to install the Inventory Visibility Add-in for different environments, a token issue will occur for older environments. Only the latest installation of the Inventory Visibility Add-in will be valid.
 - Inventory Visibility isn't currently supported for cloud-hosted environments. It's supported only for Tier-2+ environments.
 - The application programming interface (API) allows multiple `SiteID` and `LocationID` values to be specified in each query. The maximum limit is defined by the following equation: `NumOf(SiteID)` &times; `NumOf(LocationID)` &le; 100.
