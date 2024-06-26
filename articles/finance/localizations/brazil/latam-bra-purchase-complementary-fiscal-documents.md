@@ -1,12 +1,13 @@
 ---
 title: Purchase complementary fiscal documents for Brazil
 description: Learn about the concept of a purchase complementary invoice for the Brazilian localization, including an outline on purchasing complementary fiscal document.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 08/08/2017
+author: ankviklis
+ms.author: ankviklis
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Brazil
 ms.search.validFrom: 2016-11-30
 ms.search.form: BrazilParameters, FBFiscalDocument_BR, PurchComplementaryInvoice, PurchComplementaryInvoiceCancel_BR, PurchComplementaryInvoiceListPage
