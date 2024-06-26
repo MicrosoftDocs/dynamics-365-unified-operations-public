@@ -100,6 +100,8 @@
                   href: ../fin-ops-core/dev-itpro/get-started/system-requirements-on-prem.md?context=/dynamics365/context/finance
                 - name: Buy Finance + Operations (on-premises)
                   href: ../fin-ops-core/dev-itpro/get-started/purchase-on-premises.md?context=/dynamics365/context/finance
+            - name: Enable copilot in Dynamics 365 Finance
+              href: accounts-receivable/Enable-copilot-in-finance.md       
             - name: Documentation resources
               items:
                 - name: Help system
@@ -384,6 +386,8 @@
               href: accounts-receivable/tasks/establish-customer-method-payment.md
             - name: Establish customer payment fees
               href: accounts-receivable/tasks/establish-customer-payment-fees.md
+            - name: Customer summary page
+              href: accounts-receivable/CustomerPageSummary.md    
             - name: Customer payment insights
               href: accounts-receivable/payment-insights-overview.md
             - name: Accounts receivable posting
