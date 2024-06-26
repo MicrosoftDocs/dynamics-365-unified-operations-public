@@ -114,7 +114,7 @@ This section lists the supported operating systems for each Commerce self-servic
     > [!NOTE]
     > Windows 10 Pro and Windows 11 Pro are not recommended, except as part of a domain, so that Windows updates can be appropriately scheduled.
 
-- Windows Server 2019 is supported.
+- Windows Server 2022 and Windows Server 2019 are supported.
 - We don't recommend that you use a self-service component on the same computer as another self-service component (for example, the Store Commerce app).
 - The legacy self-service installer also supports Windows Server 2016 and Windows 10 LTSB.
 
