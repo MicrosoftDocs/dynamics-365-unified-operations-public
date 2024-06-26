@@ -466,14 +466,22 @@
               href: dev-itpro/pos-image.md
             - name: Open URL in POS
               href: open-url-in-pos.md
+            - name: Export POS screen layouts for import to a new environment
+              href: export-pos-layouts.md
+            - name: Create point of sale (POS) visual profiles
+              href: tasks/create-pos-visual-profile-2016-02.md
           - name: Payments
             items:
+            - name: Check out faster with optimized payment flows
+              href: dev-itpro/faster-checkout-pos.md
             - name: Gift cards
               items:
               - name: Support for external gift cards
                 href: dev-itpro/gift-card.md
               - name: Cross-company data sharing for gift cards
                 href: dev-itpro/data-sharing-gift-cards.md
+              - name: Cash out gift card balance for a retail customer
+                href: dev-itpro/gift-card-cash-out.md
           - name: RSAT
             items:
             - name: Test recorder and Regression suite automation tool for Store Commerce for web
