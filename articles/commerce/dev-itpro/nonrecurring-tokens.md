@@ -2,12 +2,12 @@
 title: Configure nonrecurring payment tokens
 description: This article describes how to configure and use payment processing with nonrecurring payment tokens in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 06/14/2024
+ms.date: 06/26/2024
 ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: shajain
 ms.search.validFrom: 2024-04-10
 ms.custom: 
   - bap-template
@@ -95,7 +95,7 @@ To add a new card, on the **Customer credit cards** page, select **New**. On the
 
 A saved card on file can be used for future sales order references in a call center. For more information, see the [Call center payments](#call-center-payments) section.
 
-To delete a card on file, on the **Customer credit cards** page, select the card that you want to delete, and then select **Delete**. The credit card reference is now unavailable for selection on the page for future sales order payments in a call center.
+To delete a card on file, on the customer details form, select the **Customer** tab. In the **Setup** group, select **Credit cards** to open the **Customer credit cards** form. Select the card that you want to delete, and then select **Delete**.
 
 ### Call center payments
 
@@ -104,7 +104,7 @@ Call center users can create or edit existing sales orders in Commerce. When a p
 - Use the **Number** dropdown list to select among the saved cards on file for the customer account of the sales order. This list represents recurring payment card tokens that were previously saved against the customer record. It references the card holder information and the last four digits of the saved card's information.
 - Select the plus sign (**+**) to open the **New customer credit card** page. This page renders the configured payment service provider's payment acceptance page in an iFrame element. Credit card information is entered directly with the payment service provider. The lower **Billing Address** section is specific to the Commerce system. It can be used to include the payment request to the payment gateway and save the billing address information against the customer's record as an **Address** entry. When the **Restrict Payment Token usage to Order context** feature is enabled, a **Save payment information** checkbox is made available to the call center associate. If this checkbox is selected, the payment information that is entered can be saved as a recurring token for future reference in the **Number** dropdown list. This token can also be viewed as a listed reference on the **Customer credit cards** page (**Customer** \> **Customer credit cards**). The **Save payment information** checkbox should be selected only with the customer's agreement, as defined by your business compliance processes. Associates can select **View disclaimer** to open a dialog box that shows this suggestion.
 
-System administrators can use the **Allow customer card on file** option on the **Call center parameters** page to show (**Yes**) or hide (**No**) the **Save payment information** checkbox on the payment page. For more information, see [Limit payment token usage](limit-token-usage.md).
+On the **Call center parameters \> Payment** form, system administrators can set the **Allow customer card on file** option to show (**Yes**) or hide (**No**) the **Save payment information** checkbox on the payment page. For more information, see [Limit payment token usage](limit-token-usage.md).
 
 #### Future order authorizations
 
@@ -120,6 +120,9 @@ Orders can be recalled and edited in a call center or POS. If an active change (
 
 > [!WARNING]
 > Currently, the Commerce system doesn't try to extend the authorization period if the extension might lead to a higher rate of declines from issuers. This functionality will be reviewed for future Commerce releases when webhook support can handle asynchronous operations.
+
+> [!WARNING]
+> Currently, Commerce system doesn't extend the authorization for a non-recurring token. If a nonrecurring token expires before an order is invoiced, the invoice action fails unless the retailer obtains a new token from the customer. If your business generally has long lead times for customer orders, Microsoft recommends that you use regularly recurring tokens so that they can be extended and reauthorized. Alternatively, a capability is available that allows organizations to use nonrecurring tokens for cash and carry transactions and use recurring tokens for customer orders. Because this capability is currently controlled by the Commerce team, contact support if you want to enable the capability in your environment.
 
 ### Online storefront payments
 
