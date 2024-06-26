@@ -1,8 +1,8 @@
 ---
 title: Manual depreciation of fixed assets for Italy
 description: Learn about fixed assets depreciation for legal entities in Italy, including outlines on the calculation basis and depreciation run date fields.
-author: AdamTrukawka
-ms.author: atrukawk
+author: evgenypopov
+ms.author: evgenypopov
 ms.topic: conceptual
 ms.custom: 
   - bap-template
