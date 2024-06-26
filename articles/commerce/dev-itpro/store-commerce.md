@@ -3,7 +3,7 @@ title: Store Commerce app
 description: This article explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app for Windows.
 author: anush6121
 ms.author: anvenkat
-ms.date: 06/20/2024
+ms.date: 06/27/2024
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -176,7 +176,8 @@ The Store Commerce apps for Windows and mobile platforms are the next generation
 - SQL Server Express, SQL Server Standard, or SQL Server Enterprise (required only for offline mode). For information on which SQL Server edition to use, see [Commerce offline implementation and troubleshooting](implementation-considerations-offline.md).
 - Dynamics 365 Commerce (Commerce headquarters and Cloud Scale Unit)
 - .NET Framework version 4.8 or later is required for embedded Hardware Station components with version 10.0.41. For more information, see [Install the .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework).  
-- .NET Desktop Runtime 6.0.16 or later, which is used by the Store Commerce app for UI rendering. 
+- .NET Desktop Runtime 6.0.16 or later, which is used by the Store Commerce app for UI rendering.
+- When running Dynamics 365 Commerce version 10.0.41, use .NET Framework 4.8 or later to support the embedded hardware station component.
 
 ### Device setup in Commerce headquarters
 
