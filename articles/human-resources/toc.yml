@@ -294,9 +294,7 @@ items:
           - name: Human Resources doesn't appear in Dynamics 365 apps
             href: hr-admin-troubleshooting-not-in-apps.md
           - name: Reporting options
-            href: hr-admin-troubleshooting-reporting.md
-          - name: Integration FAQ
-            href: hr-admin-troubleshooting-integration.md      
+            href: hr-admin-troubleshooting-reporting.md    
       - name: Set up Human Resources
         items:
         - name: Configure Human resources parameters
