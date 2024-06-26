@@ -5,7 +5,7 @@ title: Configure and install Retail hardware station
 description: This article explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.
 author: anush6121
 ms.author: anvenkat
-ms.date: 06/20/2024
+ms.date: 06/27/2024
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -27,6 +27,22 @@ This article explains how to configure, download, and install the legacy Commerc
 
 > [!IMPORTANT]
 > It is critical to note that this component utilizes a server certificate. Server certificates must be managed for expiration. By default, a certificate expires in one calendar year (365 days).
+
+## Prerequisites
+
+When running Dynamics 365 Commerce version 10.0.41, you must add the following registry entries to support Transport Layer Security (TLS) 1.3.
+- TLS 1.2\Server:Enabled=0
+- TLS 1.3\Server:Enabled=1
+- TLS 1.2\Client:Enabled=0
+- TLS 1.3\Client:Enabled=1
+- TLS 1.1\Server:Enabled=0
+- TLS 1.1\Client:Enabled=0
+- TLS 1.0\Server:Enabled=0
+- TLS 1.0\Client:Enabled=0
+- SSL 3.0\Server:Enabled=0
+- SSL 3.0\Client:Enabled=0
+- SSL 2.0\Server:Enabled=0
+- SSL 2.0\Client:Enabled=0
 
 ## Download Retail hardware station by using self-service
 
