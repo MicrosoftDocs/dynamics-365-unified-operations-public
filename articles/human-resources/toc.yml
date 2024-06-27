@@ -1059,6 +1059,14 @@ items:
           href: hcm-position-type.md
         - name: HCM unions entity
           href: hcm-union.md
+        - name: Variable compensation type entity  
+        - name: HCM person identification entities
+          href: hcm-person-id.md
+        - name: HCM job compensation entities
+          href: hcm-job-comp.md
+        - name: HCM person details entities
+          href: hcm-person-details.md
+        - name: Variable compensation type entity  
         - name: HCM person identification entities
           href: hcm-person-id.md
         - name: HCM job compensation entities
