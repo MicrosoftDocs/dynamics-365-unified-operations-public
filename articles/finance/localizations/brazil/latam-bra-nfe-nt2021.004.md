@@ -1,8 +1,8 @@
 ---
 title: NT2021.004 – Layout and validation updates in the electronic fiscal document (NF-e)
 description: Learn about the updates to the XML layout and validation rules in technical note NT2021.004, including a step-by-step process on enabling technical notes.
-author: gionoder
-ms.author: johnmichalak
+author: ankviklis
+ms.author: ankviklis
 ms.topic: how-to
 ms.custom: 
   - bap-template
