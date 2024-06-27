@@ -1,8 +1,8 @@
 ---
 title: MX-00010 Inquire and print an electronic invoice
 description: Electronic invoices form to view, email, export, or print an already-generated CFDI electronic invoice based on a customer's request.
-author: AdamTrukawka
-ms.author: atrukawk
+author: ankviklis
+ms.author: ankviklis
 ms.topic: how-to
 ms.custom: 
   - bap-template
