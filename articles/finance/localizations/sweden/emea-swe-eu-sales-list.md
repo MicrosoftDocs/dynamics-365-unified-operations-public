@@ -1,15 +1,14 @@
 ---
 title: EU Sales list for Sweden
 description: Learn about the European Union (EU) sales list report for Sweden, including outlines and step-by-step processes for various setups.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 03/04/2022
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
 ms.reviewer: johnmichalak
-audience: Application User
-ms.search.region: 
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ 
 ---
 
 # EU Sales list for Sweden
