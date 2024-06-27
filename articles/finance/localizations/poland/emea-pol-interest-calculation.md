@@ -3,10 +3,11 @@ title: Tax interest and free-hand interest for Poland
 description: Learn about the process of setting up and calculating tax interest for Poland, with an outline on setting up Accounts receivable parameters to calculate interest.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
-ms.date: 05/18/2018
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Poland
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
