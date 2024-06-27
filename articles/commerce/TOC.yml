@@ -390,10 +390,6 @@
             href: dev-itpro/store-commerce-faq.md
           - name: Store Commerce app for mobile platforms
             href: dev-itpro/store-commerce-mobile.md
-          - name: Export POS screen layouts for import to a new environment
-            href: export-pos-layouts.md
-          - name: Check out faster with optimized payment flows
-            href: dev-itpro/faster-checkout-pos.md
           - name: Enable self-checkout in the Store Commerce app
             href: store-commerce-self-check-out.md
           - name: Migrate Modern POS to Store Commerce
@@ -424,8 +420,6 @@
             href: dev-itpro/pos-offline-functionality.md
           - name: Shift and cash drawer management
             href: shift-drawer-management.md
-          - name: Cash out gift card balance
-            href: dev-itpro/gift-card-cash-out.md
           - name: Ship orders from another store
             href: charge-send.md
           - name: Hide non-carrier delivery modes from POS shipment dialog
@@ -468,7 +462,7 @@
               href: open-url-in-pos.md
             - name: Export POS screen layouts for import to a new environment
               href: export-pos-layouts.md
-            - name: Create point of sale (POS) visual profiles
+            - name: Create POS visual profiles
               href: tasks/create-pos-visual-profile-2016-02.md
           - name: Payments
             items:
@@ -502,8 +496,6 @@
             href: tasks/create-financial-dimensions-pos.md
           - name: Create POS permissions group
             href: tasks/create-pos-permission-groups.md
-          - name: Create POS visual profiles
-            href: tasks/create-pos-visual-profile-2016-02.md
         - name: Configure and install Retail hardware station
           href: dev-itpro/retail-hardware-station-configuration-installation.md
         - name: Receipts
