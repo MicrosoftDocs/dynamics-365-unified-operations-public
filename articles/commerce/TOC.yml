@@ -396,14 +396,8 @@
             href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
           - name: Device management implementation guidance
             href: dev-itpro/implementation-considerations-devices.md
-          - name: Commerce offline implementation considerations
-            href: dev-itpro/implementation-considerations-offline.md
-          - name: Commerce offline implementation troubleshooting
-            href: dev-itpro/implementation-offline-troubleshooting.md
           - name: Choose between Store Commerce app and Store Commerce for web
             href: dev-itpro/MPOS-or-CPOS.md
-          - name: Online and offline POS operations
-            href: pos-operations.md
           - name: Device activation of a customized Modern POS
             href: dev-itpro/retail-POS-activation-changes.md
           - name: Configure Microsoft Entra authentication for POS sign-in
@@ -412,14 +406,10 @@
             href: POS-search-improvements.md
           - name: Search for products and product variants during order entry
             href: ../supply-chain/pim/search-products-product-variants.md?context=/dynamics365/context/commerce
-          - name: Cash management overview
-            href: cash-mgmt.md
           - name: Suspend and resume transactions in the POS
             href: pos-suspend-recall-transactions.md
           - name: Offline POS functionality
             href: dev-itpro/pos-offline-functionality.md
-          - name: Shift and cash drawer management
-            href: shift-drawer-management.md
           - name: Ship orders from another store
             href: charge-send.md
           - name: Hide non-carrier delivery modes from POS shipment dialog
@@ -496,6 +486,20 @@
             href: tasks/create-financial-dimensions-pos.md
           - name: Create POS permissions group
             href: tasks/create-pos-permission-groups.md
+          - name: Cash management
+            items:
+            - name: Cash management overview
+              href: dev-itpro/cash-mgmt.md
+            - name: Shift and cash drawer management
+              href: shift-drawer-management.md
+          - name: Offline
+            items:
+            - name: Commerce offline implementation considerations
+              href: dev-itpro/implementation-considerations-offline.md
+            - name: Commerce offline implementation troubleshooting
+              href: dev-itpro/implementation-offline-troubleshooting.md
+            - name: Online and offline POS operations
+              href: pos-operations.md
         - name: Configure and install Retail hardware station
           href: dev-itpro/retail-hardware-station-configuration-installation.md
         - name: Receipts
