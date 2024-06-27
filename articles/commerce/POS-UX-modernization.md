@@ -1,73 +1,69 @@
 ---
-title: POS UX upgrade
-description: This article describes store commerce UX modernization features.
+title: POS modernization and usability improvements
+description: This article describes POS modernization and usability improvements in Microsoft Dynamics 365 Commerce Store Commerce.
 author: anush6121
 ms.author: anvenkat 
 ms.topic: article 
-ms.date: 06/24/2024
+ms.date: 06/27/2024
 ms.custom: 
   - bap-template
 ms.reviewer: v-chrgriffin
 ---
 
-# POS Modernization and Usability Improvements
+# POS modernization and usability improvements
 
-To improve the POS usability and adapt to modern, intuitive workflows, there are numerous workflow improvements that have been introduced in POS. 
+[!include [banner](../includes/banner.md)]
+
+This article describes point of sale (POS) modernization and usability improvements in Microsoft Dynamics 365 Commerce Store Commerce.
+
+To improve POS usability and adapt to modern, intuitive workflows, numerous workflow improvements that have been introduced. 
 
 ## Streamlined workflow for adding items to a transaction from the product page:
 
-When you add an item to the cart from the product description page or search results, two new workflows are introduced in 10.0.40 release. The first workflow shows a confirmation dialog after an item is added to cart from product description page or search results to clearly indicate to the user that their action was successful. This workflow allows users to continue browsing for more products and is suited for assisted selling scenarios where store associates are browsing and adding many items to cart.
+When you add an item to the cart from the product description page or search results, two new workflows are introduced in the Commerce 10.0.40 release. 
 
-The second workflow allows the user to immediately navigate to the transaction page once the item is added to cart. This allows the user to immediately switch back to the transaction page and continue with the sale process. 
+The first workflow shows a confirmation dialog after an item is added to cart from the product description or search results page to clearly indicate to the user that their action was successful. This workflow allows users to continue browsing for more products and is suited for assisted selling scenarios where store associates are browsing and adding many items to the cart.
 
-These workflows can be selected using  a new configuration option in the Visual profile in Headquarters beginning 10.0.40 release. 
+The second workflow allows the user to immediately navigate to the transaction page once an item is added to the cart. This workflow allows user to immediately proceed to the transaction page to continue with the transaction process. 
 
-To bypass the confirmation dialog and always navigate to transaction page after adding an item, go to Headquarters **POS visual profiles**, under  **General** section, **Product details page** subsection, set the **Bypass Item added dialog** option to **Yes**.
+Starting with the Commerce 10.0.40 release, these workflows can be selected using a configuration option in the POS visual profile in Commerce headquarters. 
 
-To see the confirmation dialog, set  **Bypass Item added** to **no**. The image below shows the setting in Headquarters.
+To bypass the confirmation dialog and always navigate to transaction page after adding an item, in headquarters go to **POS visual profiles**. Under the **General** section, in the **Product details page** subsection, set the **Bypass Item added dialog** option to **Yes**.
 
-![bypassitemadded.](media/bypassitemadded.png)
+To see the confirmation dialog, set the **Bypass Item added dialog** option to **No**.
 
-The image below shows the confirmation dialog.
-![itemadded.](media/itemadded.png)
+## Configure display of search results
 
+You can now configure the default view for displaying search results in the POS visual profile in headquarters. Previously, the list view was the default view for search results for products, customers, and categories. Starting with the Commerce 10.0.40 release, search results can default to a card view to allow easy products browsing.
 
-## Configure display of search results:
+To enable your search view preference, in headquarters go to **POS visual profiles**. Under the **General** section, in the **Search view** subsection, set **Default view** to **List view** or **Card view**.
 
-The default view for displaying search results can now be configured in the Visual profile in Headquarters. Previously, the default view for search results for products, customers, and categories was the list view. With 10.0.40 release, the search results can default to a card view and allows easy browsing of products
+## Reset button grids at the end of a transaction
 
-To enable your search view preference, go to Headquarters, **POS visual profiles**, under  **General** section,  **Search view** sub-section, set **Default view** to **List view** or **Card view**.
+With this feature, the default button grid assigned to the first tab is restored when a transaction is completed, suspended, or voided. This helps reduce confusion and the number of clicks when multiple transactions are being handled by a store associate. This feature is enabled by default for all users and is available starting with the Commerce 10.0.40 release. 
 
-![cardview.](media/cardview.png)
+## Reprint receipts from journal
 
-## Reset button grids at the end of a transaction:
+To reduce number of clicks in reprinting receipts, the **Print receipt** button is available on the bottom of the **Show journal** screen. To reprint receipts, select the journal and **Print receipt** with a single click. This feature is available starting with the Commerce 10.0.40 release.
 
-With this feature, the default button grid assigned to the first tab is restored when a transaction is completed, suspended, or voided. This helps to reduce confusion and number of clicks when multiple transactions are being handled by a store associate. This feature is enabled by default for all users. This is available beginning 10.0.40 release. 
+## Enhanced date picker
 
-## Reprint receipts from journal:
+To enable intuitive interactions, the date picker in the Store Commerce app has been updated to a React control. This feature is available starting with the Commerce 10.0.39 release. 
 
-To reduce number of clicks in reprinting receipts, **print receipt** button is available on the bottom of  **show journal** screen. To reprint receipts, select journal and **print receipt** in a single click. This is available beginning 10.0.40 release. 
+## Persist zoom level
 
-![reprinting.](media/reprinting.png)
-
-## Enhanced date picker:
-
-To enable intuitive interactions, the date picker in store commerce app has been updated to a React control. This is available beginning 10.0.39 release. 
-
-![fluentdatepicker.](media/fluentdatepicker.png)
-
-## Persist Zoom level:
-
-Store associates can persist the zoom settings to fix their display and not have to adjust it every time the app is reopened. This is especially useful for those that run the devices in kiosk mode without keyboard and mouse. This is available beginning 10.0.39 release. 
+Store associates can persist the zoom settings to fix their display and avoid adjusting it every time the application is reopened. This is especially useful for users who run the devices in kiosk mode without a keyboard and mouse. This feature is available starting with the Commerce 10.0.39 release. 
 
 ## Payment capture improvements 
 
-To enable intuitive payment workflows in point of sale application, pay by credit card, cash, and check flows have been updated to provide consistent and enhanced user experience. The rest of payment method flows will be refreshed in the next wave. For more information on the payment capture improvements, please see [Check out faster with optimized payment flows](dev-itpro/faster-checkout-pos.md). This is available beginning of 10.0.40 release.
+To enable intuitive payment workflows in POS application, pay by credit card, cash, and check flows have been updated to provide a consistent and enhanced user experience. The rest of the payment method flows will be refreshed in a future release. For more information on the payment capture improvements, see [Check out faster with optimized payment flows](dev-itpro/faster-checkout-pos.md). This feature is available starting with the Commerce 10.0.40 release.
 
 ## Fluent design
 
-To improve performance, allow for extensibility and remove legacy patterns, the number pad within the store commerce app has been updated to React in the payment workflows. This lays for larger react upgrade down the line extending to the transaction page and also enables customers to write their custom views in React.
+To improve performance, allow for extensibility, and remove legacy patterns, the number pad in the Store Commerce app has been updated to a React control in the payment workflows. This prepares for a future larger React upgrade that will extend to the transaction page, and also enables customers to create their own custom views in React.
 
-Following image shows the numpad design in the new payment workflows.
 
-![numpadfluent.](media/numpadfluent.png)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
+
+
