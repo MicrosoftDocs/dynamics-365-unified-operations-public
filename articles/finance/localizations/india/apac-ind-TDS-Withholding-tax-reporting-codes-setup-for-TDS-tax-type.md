@@ -1,8 +1,8 @@
 ---
 title: Set up withholding tax reporting codes for the TDS tax type
 description: Learn how to set up withholding tax reporting codes steps so that you can set up Tax Deducted at Source (TDS) reporting codes.
-author: kailiang
-ms.author: kailiang
+author: epodkolzina
+ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
