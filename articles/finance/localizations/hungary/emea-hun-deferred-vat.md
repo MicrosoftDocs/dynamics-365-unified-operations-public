@@ -1,12 +1,13 @@
 ---
 title: Deferred sales tax calculations
 description: Learn how to set up deferred sales tax calculations and VAT posting for Hungary, including outlines on setting up deferred VAT posting and ledger accounts.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 09/04/2020
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Hungary
 ms.search.validFrom: 2016-11-30
 ms.search.form: AssetParameters
