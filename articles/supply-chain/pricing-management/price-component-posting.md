@@ -15,7 +15,7 @@ ms.search.form: GUPParameters, GUPPriceComponentCodePostingProfile, GUPPriceComp
 # Price component posting (preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 Pricing management lets you set up a different sales order posting ledger for each of the following types of [price component codes](price-component-code.md):

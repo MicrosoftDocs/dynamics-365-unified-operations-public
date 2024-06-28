@@ -154,7 +154,7 @@ When a worker completes or partially completes a job, they can report scrap by s
 
 Workers can use the production floor execution interface to register batch/serial numbers for tracked components and the finished products that they're producing. For information about how to add this functionality to the interface, see [Configure the production floor execution interface](production-floor-execution-configure.md#tracked-components).
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Workers follow these steps to register tracked components.
 
@@ -189,7 +189,7 @@ Workers can specify the quantity to adjust by selecting **Adjust material**. Thi
 
 For information about how to add this functionality to the interface, see [Configure the production floor execution interface](production-floor-execution-configure.md#tracked-components).
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ### Adjust material consumption from the Report scrap and Report progress dialog boxes
 
@@ -236,7 +236,7 @@ Workers can adjust material consumption for catch weight items. This functionali
 
 For information about how to add this functionality to the interface, see [Configure the production floor execution interface](production-floor-execution-configure.md#tracked-components).
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ### Reserve materials
 
