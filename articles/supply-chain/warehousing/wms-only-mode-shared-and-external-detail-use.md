@@ -18,7 +18,7 @@ ms.search.form: WHSSourceSystem, WHSEWManagementSystem,  WHSShipmentOrderIntegra
 
 This article explains how to use Warehouse only mode to perform day-to-day warehousing tasks.
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Monitor the integration
 

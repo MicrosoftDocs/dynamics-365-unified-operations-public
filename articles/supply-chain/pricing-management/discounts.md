@@ -15,7 +15,7 @@ ms.search.form:
 # Discount types (preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 This article introduces the different types of discounts that you can set up by using Pricing management.
