@@ -24,7 +24,8 @@ The **platform.settings.json** file under the **\\src\\settings\\** directory ho
 
 ```json
 {
-    "dataActionTimeoutInMs": 4000,
+    "serverSideDataActionTimeoutInMs": 4000,
+    "clientSideDataActionTimeoutInMs": 4000,
     "minClientChunkSize": 30000,
     "excludeModules": [ ],
     "namespaceExtensions" : [ ],
@@ -34,9 +35,15 @@ The **platform.settings.json** file under the **\\src\\settings\\** directory ho
 
 ## Properties
 
-### dataActionTimeoutInMs
+### serverSideDataActionTimeoutInMs
 
-The **dataActionTimeoutInMs** property defines the maximum amount of time, in milliseconds, that data actions wait for a response before they time out. The timeout value represents a lower bound for page response, because the action framework waits as long as the defined timeout value before it times out and returns the page. The default value is 4,000 milliseconds (4 seconds).
+The **serverSideDataActionTimeoutInMs** property defines the maximum amount of time, in milliseconds, that the server side data actions wait for a response before they time out. The timeout value represents a lower bound for page response, because the action framework waits as long as the defined timeout value before it times out and returns the page. The default value is 4000 milliseconds (4 seconds).
+If we set this value too high, it could potentially overload the CSU.
+
+### clientSideDataActionTimeoutInMs
+
+The **clientSideDataActionTimeoutInMs** property defines the maximum amount of time, in milliseconds, that the client side data actions wait for a response before they time out. The timeout value represents a lower bound for page response, because the action framework waits as long as the defined timeout value before it times out and returns the page. The default value is 4000 milliseconds (4 seconds).
+If we set this value too high, it could potentially overload the CSU.
 
 ### minClientChunkSize
 
