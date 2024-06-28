@@ -4,13 +4,14 @@ description: Learn how you can make electronic payments by transferring files be
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
-ms.date: 06/27/2017
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.search.industry: Manufacturing;Distribution;Service industries
+
 ---
 
 # Electronic payment management for vendor payments (Brazil)

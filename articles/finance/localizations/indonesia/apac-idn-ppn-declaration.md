@@ -1,15 +1,15 @@
 ---
 title: VAT declaration for Indonesia (ID-00004)
 description: Learn how to configure and generate the SPT Masa PPN 1111 (Pajak Pertambahan Nilai) form for Indonesia, including prerequisites.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 11/30/2021
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Indonesia
 ms.search.validFrom: 2021-09-01
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.20
 ---
 
