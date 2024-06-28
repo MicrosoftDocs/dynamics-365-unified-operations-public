@@ -93,7 +93,7 @@ items:
           href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?context=/dynamics365/context/human-resources        
       - name: Set up and manage instances
         items:
-        - name: Provision Human Resources in the finance and operations infrastructure
+        - name: Provision Dynamics 365 Human Resources 
           href: hr-admin-setup-provision-fo.md
       - name: Set up data integration
         items:
@@ -294,9 +294,7 @@ items:
           - name: Human Resources doesn't appear in Dynamics 365 apps
             href: hr-admin-troubleshooting-not-in-apps.md
           - name: Reporting options
-            href: hr-admin-troubleshooting-reporting.md
-          - name: Integration FAQ
-            href: hr-admin-troubleshooting-integration.md      
+            href: hr-admin-troubleshooting-reporting.md    
       - name: Set up Human Resources
         items:
         - name: Configure Human resources parameters
@@ -1061,6 +1059,14 @@ items:
           href: hcm-position-type.md
         - name: HCM unions entity
           href: hcm-union.md
+        - name: Variable compensation type entity  
+        - name: HCM person identification entities
+          href: hcm-person-id.md
+        - name: HCM job compensation entities
+          href: hcm-job-comp.md
+        - name: HCM person details entities
+          href: hcm-person-details.md
+        - name: Variable compensation type entity  
         - name: HCM person identification entities
           href: hcm-person-id.md
         - name: HCM job compensation entities

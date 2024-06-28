@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 10.0.30
 # Deploy an IoT solution on Azure (preview)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 <!-- KFM: Preview until further notice -->
 

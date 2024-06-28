@@ -15,7 +15,7 @@ ms.search.form: GUPPricingAttributeGroup
 # Price attribute groups (preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 Each *price attribute group* establishes a collection of price attributes. When you define a pricing rule, you can select a price attribute group and then specify values for each of the associated attributes. In this way, you define the match criteria that are used to select the sales orders and order lines that the rule applies to. This article explains how to configure price attribute groups for the **Pricing management** module.

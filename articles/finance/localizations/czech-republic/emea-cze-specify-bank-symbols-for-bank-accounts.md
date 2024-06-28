@@ -3,13 +3,13 @@ title: Bank symbols for bank accounts
 description: Learn about bank symbols for bank accounts, including an outline on setting up a list of constant symbols for bank accounts.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
-ms.date: 07/23/2021
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Czech Republic
 ms.search.validFrom: 2016-11-30
-ms.search.form: 
 ms.dyn365.ops.version: 
 ---
 

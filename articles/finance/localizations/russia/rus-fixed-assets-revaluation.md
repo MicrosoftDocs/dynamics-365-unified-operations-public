@@ -1,16 +1,17 @@
 ---
 title: Revaluate fixed asset cost and depreciation (Russia)
 description: Learn how to revaluate the cost and depreciation of fixed assets for Russia, including definitions for the indexing and direct recalculation methods.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 07/28/2021
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-ms.search.industry: 
+
 ---
 
 # Revaluate fixed asset cost and depreciation (Russia)

@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/human-resources//hr-admin-integration-linkedin.md",
+      "redirect_url": "/dynamics365/human-resources/welcome",
+      "redirect_document_id": "false"
+    },     
+    {
       "source_path": "articles/human-resources/hr-infrastructure-merge-faq.md",
       "redirect_url": "/dynamics365/human-resources/hr-infrastructure-merge",
       "redirect_document_id": "false"
