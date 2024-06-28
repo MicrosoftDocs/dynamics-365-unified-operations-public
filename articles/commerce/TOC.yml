@@ -496,6 +496,10 @@
             href: tasks/create-pos-permission-groups.md
           - name: Create POS visual profiles
             href: tasks/create-pos-visual-profile-2016-02.md
+          - name: POS modernization
+            items:
+            - name: POS modernization and usability improvements
+              href: POS-UX-modernization.md
         - name: Configure and install Retail hardware station
           href: dev-itpro/retail-hardware-station-configuration-installation.md
         - name: Receipts
