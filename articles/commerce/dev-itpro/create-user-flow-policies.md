@@ -51,6 +51,9 @@ To create a sign-up and sign-in user flow policy, follow these steps.
 
 1. Select **Create**.
 
+> [!NOTE]
+> The attributes **Given Name**, **Surname** and **Email address** are mandatory for correct  implementation and functionality of the policies.
+
 The following image is an example of the Microsoft Entra B2C sign-up and sign-in user flow.
 
 ![Sign Up and Sign In policy settings.](../media/B2CImage_11.png)
