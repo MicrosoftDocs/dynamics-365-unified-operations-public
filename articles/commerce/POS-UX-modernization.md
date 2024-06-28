@@ -3,8 +3,8 @@ title: POS modernization and usability improvements
 description: This article describes POS modernization and usability improvements in Microsoft Dynamics 365 Commerce Store Commerce.
 author: anush6121
 ms.author: anvenkat 
-ms.topic: article 
-ms.date: 06/27/2024
+ms.topic: how-to 
+ms.date: 06/28/2024
 ms.custom: 
   - bap-template
 ms.reviewer: v-chrgriffin
