@@ -2735,7 +2735,7 @@
             href: production-control/phantom-items.md
           - name: BOM calculations
             href: cost-management/bom-calculations.md
-          - name: Production parameters in Manufacturing execution
+          - name: Production parameters for manufacturing execution
             href: production-control/production-parameters-manufacturing-execution.md
           - name: Operations resources
             href: production-control/operations-resources.md
@@ -2965,7 +2965,7 @@
             href: production-control/tasks/copy-co-products-existing-formula-version.md
           - name: Create a formula by copying from an existing formula
             href: production-control/tasks/create-formula-copying-existing-formula.md
-          - name: Production parameters in Manufacturing execution
+          - name: Production parameters for manufacturing execution
             href: production-control/production-parameters-manufacturing-execution.md
           - name: Production setup requirements
             href: production-control/production-set-up-requirements.md

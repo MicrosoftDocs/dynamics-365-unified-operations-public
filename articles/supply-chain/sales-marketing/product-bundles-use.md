@@ -103,7 +103,7 @@ The *Product bundles in journals* feature extends the *Product bundle* feature (
 
 This section describes the changes that the *Product bundles in journals* feature introduces. These changes build on the features that were described earlier in this article.
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ### Changes in sales confirmation journals
 
