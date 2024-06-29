@@ -508,6 +508,10 @@
               href: charge-send.md
             - name: Enable consistent delivery mode handling in e-commerce channels
               href: consistent-delivery-mode-handling.md
+          - name: POS modernization
+            items:
+            - name: POS modernization and usability improvements
+              href: POS-UX-modernization.md  
         - name: Configure and install Retail hardware station
           href: dev-itpro/retail-hardware-station-configuration-installation.md
         - name: Receipts
