@@ -2,8 +2,8 @@
 title: VAT statement for Norway
 description: Learn how to set up and generate the VAT statement for legal entities that have a primary address in Norway, including a process for setting sales tax authorities.
 author: liza-golub
-ms.author: wangchen
-ms.topic: egolub
+ms.author: egolub
+ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 03/21/2022
