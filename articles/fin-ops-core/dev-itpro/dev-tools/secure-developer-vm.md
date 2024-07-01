@@ -3,7 +3,7 @@ title: Secure one-box development environments
 description: Learn about how to help secure one-box developer environments, including outlines on default congigurations and how to deploy to a custom virtual network.
 author: mnordick
 ms.author: mnordick
-ms.date: 06/28/2024
+ms.date: 07/01/2024
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -119,7 +119,7 @@ If you must use the previously mentioned capabilities in your one-box developmen
     <add key="GraphApi.GraphAPIServicePrincipalCert" value="<certificate thumbprint>" />
     ```
 
-5. In the **wif.config** file under **K:\\AosService\\webroot\\**, Add a new entry under `audienceUris` below the existing value for the customer's Entra AppId.
+5. In the **wif.config** file under **K:\\AosService\\webroot\\**, Add a new entry under `audienceUris` below the existing value for the customer's Entra AppId. Do not remove the spn:00000015-0000-0000-c000-000000000000 entry.
     ```
     <securityTokenHandlerConfiguration>
     <audienceUris>
