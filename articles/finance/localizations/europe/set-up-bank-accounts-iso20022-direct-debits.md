@@ -1,13 +1,13 @@
 --- 
 title: Set up customers and customer bank accounts for ISO20022 direct debits
 description: Learn how to set up a customer bank account and a customer direct debit mandate, which are required to generate customer payment files.
-author: mrolecki
-ms.author: mrolecki
+author: kailiang
+ms.author: kailiang
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 08/29/2018
-ms.custom:
 ms.reviewer: johnmichalak 
-audience: Application User 
 ms.search.region: Global
 ms.search.validFrom: 2016-06-30
 ms.search.form: CustTable, CustBankAccounts, CustDirectDebitMandate, BankAccountTableLookUp,  LogisticsAddressCityLookup
