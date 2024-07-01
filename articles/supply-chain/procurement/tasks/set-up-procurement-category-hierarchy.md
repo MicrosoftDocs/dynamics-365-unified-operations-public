@@ -31,7 +31,7 @@ This procedure shows you how to create new nodes in a procurement category hiera
 7. Select **Save**.
 
 ## Add products to your new procurement category
-1. Go to **Procurement and sourcing > Consignment > Procurement categories**. Select the node you just added. If you're running this procedure as a task guide you might need to unlock the task guide to select the node.  
+1. Go to **Procurement and sourcing > Procurement categories**. Select the node you just added. If you're running this procedure as a task guide you might need to unlock the task guide to select the node.  
 2. Toggle the expansion of the **Products** section.
 3. Select **Add** to associate products with the procurement category.
 4. Select the products you want to add to the procurement category.
