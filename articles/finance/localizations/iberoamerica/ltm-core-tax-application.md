@@ -3,8 +3,8 @@ title: Tax application for Latin America
 description: Learn about the tax application configuration for Latin America, including prerequisites and a step-by-step process for setting up tax application codes. 
 author: Fhernandez0088
 ms.author: v-federicohe
-ms.topic: article
-ms.date: 04/03/2023
+ms.topic: how-to
+ms.date: 07/01/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
