@@ -49,6 +49,8 @@ You can run this procedure in demo data company USMF or on your own data.
 14. In the list, mark the selected row. Orders that are currently on hold have the "Do not process" and "Hold" fields marked.
 15. On the Action Pane, click **Pick and pack**.
 
+Since you have put the sales order on hold, you are not able to process the sales order. 
+
 ## Manage order holds
 1. Go to **Sales and marketing > Sales orders > Open orders > Order holds**. **Order holds** page functions as a workbench where you can get an overview of all the current and processed holds, and handle them and associated sales orders.     
 2. In the list, mark the selected row.
