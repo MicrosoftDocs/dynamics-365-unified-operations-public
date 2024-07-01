@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.date: 04/05/2022
+ms.date: 07/01/2024
 ms.reviewer: johnmichalak
 ms.dyn365.ops.version: AX 10.0.23
 ---
