@@ -1,16 +1,15 @@
 ---
 title: Define GSTINs and reference number sequences
 description: Learn how to define Goods and Services Tax Identification Numbers and reference number sequences for legal entity, warehouse, vendor, and customer masters.
-author: EricWangChen
-ms.author: wangchen
-ms.topic: article
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 06/04/2019
-ms.custom:
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: India
 ms.search.validFrom: 2019-06-01
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.4
 ---
 
