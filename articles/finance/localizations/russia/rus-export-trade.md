@@ -1,16 +1,16 @@
 ---
 title: Process invoice factures for export trade
 description: Learn about invoice factures for export sales in Russia, including an overview on number sequences for export factures and VAT processing.
-author: v-nadyuz
-ms.author: atrukawk
-ms.topic: article
-ms.date: 05/14/2020
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-ms.search.industry: 
 ---
 
 # Process invoice factures for export trade

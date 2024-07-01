@@ -1,25 +1,15 @@
 ---
-# required metadata
-
 title: Delete a return order   
-description: Use the Delete return order form to delete multiple return orders.
+description: Learn how to use the Delete return order form to delete multiple return orders, including a step-by-step process for using the delete return order form.
 author: Henrikan
 ms.author: henrikan
-ms.date: 05/01/2018
 ms.topic: article
-
-# optional metadata
-
+ms.date: 05/01/2018
+ms.custom:
 ms.search.form: SalesDeleteOrder
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

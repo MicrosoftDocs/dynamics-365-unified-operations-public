@@ -3,11 +3,11 @@ title: Set up the downloadable VHD for first use
 description: Learn about how to set up the downloadable VHD for first use of the Application Object Server and register a new application in Microsoft Entra ID.
 author: josaw1
 ms.author: josaw
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/17/2022
 ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2022-02-09
 ms.dyn365.ops.version: AX 7.0.0

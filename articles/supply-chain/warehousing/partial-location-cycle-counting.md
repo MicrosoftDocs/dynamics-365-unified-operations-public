@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Partial location cycle counting 
-description: Cycle count plans guide the actual counting operations. You can request that only specific products and product variants be counted instead of all on-hand inventory in a location.
+description: Cycle count plans guide the actual counting operations. You can request that only specific products be counted instead of all on-hand inventory in a location.
 author: perlynne
-ms.date: 09/02/2020
+ms.author: perlynne
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable, WHSRFMenuItemCycleCount, WHSCycleCountPlanListPage
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 09/02/2020
 ms.custom: 
-ms.assetid:
+ms.reviewer: kamaybac
+audience: Application User
 ms.search.region: global
 ms.search.industry: Distribution
-ms.author: perlynne
 ms.search.validFrom: 2016-02-28
+ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable, WHSRFMenuItemCycleCount, WHSCycleCountPlanListPage
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

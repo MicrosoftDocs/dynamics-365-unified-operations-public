@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Create an item replacement order   
-description: Item replacement orders are usually created after a product is returned and inspected.
+description: Learn how to create an item replacement order, including a step-by-step process for creating a replacement order after receiving a returned item.
 author: Henrikan
 ms.author: henrikan
-ms.date: 05/01/2018
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: ReturnTableListPage, ReturnReplaceItem
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/01/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
 ms.search.validFrom: 2016-02-28
+ms.search.form: ReturnTableListPage, ReturnReplaceItem
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

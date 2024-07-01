@@ -1,15 +1,15 @@
 ---
 title: Receive unannounced sales returns
-description: This article explains how to set up Microsoft Dynamics 365 Supply Chain Management to support unannounced returns, and how to receive unannounced returns in the warehouse.
+description: Learn how to set up Microsoft Dynamics 365 Supply Chain Management to support unannounced returns, and how to receive unannounced returns in the warehouse.
 author: Mirzaab
 ms.author: mirzaab
-ms.reviewer: kamaybac
-ms.search.form: WHSParameters, ReturnDispositionCode, WHSDispositionTable, WHSReturnItemPolicy, WHSReturnItemReceivingPolicy, WHSRFMenuItem, WHSSourceSystemDispositionCode, WHSInboundShipmentOrder, WHSSourceSystem
 ms.topic: how-to
 ms.date: 04/11/2024
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: WHSParameters, ReturnDispositionCode, WHSDispositionTable, WHSReturnItemPolicy, WHSReturnItemReceivingPolicy, WHSRFMenuItem, WHSSourceSystemDispositionCode, WHSInboundShipmentOrder, WHSSourceSystem
 ---
 
 # Receive unannounced sales returns

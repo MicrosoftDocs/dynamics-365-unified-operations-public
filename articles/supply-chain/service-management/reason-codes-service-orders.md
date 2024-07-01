@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Reason codes for service orders   
-description: Use reason codes to help explain the status of a service order when the stage of a service order is updated. 
+description: Use reason codes to help explain the status of a service order when the stage of a service order is updated, including a step-by-step process. 
 author: ChristianRytt
-ms.date: 05/01/2018
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: SMAStageTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: crytt
+ms.topic: article
+ms.date: 05/01/2018
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMAStageTable
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Reason codes for service orders   

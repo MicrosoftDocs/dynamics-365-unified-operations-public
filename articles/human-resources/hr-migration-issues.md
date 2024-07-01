@@ -26,7 +26,7 @@ ms.dyn365.ops.version: Human Resources
 # Dynamics 365 Human Resources infrastructure merge known issues
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+
 
 ## Shared Dataverse environments
 

@@ -1,15 +1,15 @@
 ---
 title: Customize the production floor execution interface
-description: This article explains how to extend current forms or create new forms and buttons for the production floor execution interface.
+description: Learn how to extend current forms or create new forms and buttons for the production floor execution interface with a process for adding new buttons.
 author: johanhoffmann
-ms.date: 05/04/2022
-ms.topic: article
-ms.search.form:
-audience: Developer, IT Pro
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: johanho
+ms.topic: article
+ms.date: 05/04/2022
+ms.reviewer: kamaybac
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-11-08
+ms.search.form:
 ms.dyn365.ops.version: 10.0.25
 ---
 

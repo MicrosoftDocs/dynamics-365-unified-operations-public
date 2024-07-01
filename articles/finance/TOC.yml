@@ -100,6 +100,8 @@
                   href: ../fin-ops-core/dev-itpro/get-started/system-requirements-on-prem.md?context=/dynamics365/context/finance
                 - name: Buy Finance + Operations (on-premises)
                   href: ../fin-ops-core/dev-itpro/get-started/purchase-on-premises.md?context=/dynamics365/context/finance
+            - name: Enable copilot in Dynamics 365 Finance
+              href: accounts-receivable/Enable-copilot-in-finance.md       
             - name: Documentation resources
               items:
                 - name: Help system
@@ -384,6 +386,8 @@
               href: accounts-receivable/tasks/establish-customer-method-payment.md
             - name: Establish customer payment fees
               href: accounts-receivable/tasks/establish-customer-payment-fees.md
+            - name: Customer summary page
+              href: accounts-receivable/CustomerPageSummary.md    
             - name: Customer payment insights
               href: accounts-receivable/payment-insights-overview.md
             - name: Accounts receivable posting
@@ -588,9 +592,9 @@
                   href: accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
                 - name: Create a write-off journal for a customer
                   href: accounts-receivable/tasks/create-write-off-journal-customer.md
-                - name: Collections coordinator workspace (preview)
+                - name: Collections coordinator workspace 
                   href: accounts-receivable/CollectionsWorkspace.md
-                - name: Collections coordinator summary (preview)
+                - name: Collections coordinator summary 
                   href: accounts-receivable/CollectionsCoordinatorSummary.md
                 - name: Credit management setup
                   href: accounts-receivable/cm-credit-mgmt-setup.md
@@ -1302,6 +1306,8 @@
                   href: general-ledger/set-up-subsidiary-company-for-consolidation.md
                 - name: Consolidate online
                   href: general-ledger/consolidate-online.md
+                - name: Consolidate online templates
+                  href: general-ledger/Consolidation-templates.md
                 - name: Import subsidiary data from files
                   href: general-ledger/import-subsidiary-data-from-files.md
                 - name: Export subsidiary data to a file
@@ -1668,7 +1674,7 @@
                           href: localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
                         - name: Saudi Arabia - onboarding
                           href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
-                        - name: Malaysia (preview)
+                        - name: Malaysia
                           href: localizations//malaysia/apac-mys-e-invoices.md?context=/dynamics365/context/finance
                         - name: Poland (preview)
                           href: localizations/poland/gs-e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
@@ -4463,6 +4469,8 @@
               href: business-performance-planning/powerBI-visual-install.md
             - name: Install the Excel add-in
               href: business-performance-planning/install-excel-add.md
+            - name: Security
+              href: business-performance-planning/bpp-security.md
             - name: Dimensions
               items:
                 - name: Creating and maintaining dimensions

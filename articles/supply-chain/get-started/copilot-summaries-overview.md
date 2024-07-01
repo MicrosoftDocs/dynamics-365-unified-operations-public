@@ -24,9 +24,9 @@ Before you can use AI summaries with Copilot, your system must meet the followin
 
 - You must be running one of the following versions of Supply Chain Management:
 
-    - Version 10.0.38 with proactive quality update 5 (PQU-5) or later
-    - Version 10.0.39 with PQU-3 or later
-    - Any build of version 10.0.40 or later
+    - Version 10.0.39 with proactive quality update 3 (PQU-3) or later
+    - Version 10.0.40 with PQU-1 or later
+    - Any build of version 10.0.41 or later
 
 - Depending on the summaries that you want to use, the following features must be enabled in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). These features are turned on by default in Supply Chain Management version 10.0.40 and later.
 

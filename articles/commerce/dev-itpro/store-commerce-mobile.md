@@ -3,13 +3,12 @@
 
 title: Store Commerce app for mobile platforms
 description: This article describes how to get started using the Microsoft Dynamics 365 Commerce Store Commerce app for Android and iOS.
-author: stuharg
-ms.date: 05/14/2024
-ms.topic: article
-audience: Developer, IT Pro
+author: anush6121
+ms.author: anvenkat
+ms.date: 06/27/2024
+ms.topic: how-to
 ms.reviewer: v-chrgriffin
 ms.search.region: global
-ms.author: stuharg
 ms.search.validFrom: 2018-10-29
 ms.custom: 
   - bap-template
@@ -69,7 +68,7 @@ You can install Store Commerce mobile apps directly from the Google Play store o
 - [Store Commerce app for Android](https://aka.ms/storecommerceandroid)
 - [Store Commerce app for iOS](https://aka.ms/storecommerceios)
 
-The Android app (.apk) and Apple app (.ipa) packages can also be downloaded from the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). 
+The Android app (.apk) and Apple app (.ipa) packages can also be downloaded from the Shared asset library in Microsoft Dynamics Lifecycle Services. 
 
 ## Device and register setup
 
@@ -100,11 +99,11 @@ After devices and registers are configured, in Commerce headquarters go to **Ret
 To activate a device on a Store Commerce mobile app, follow these steps.
 
 1. Open the app on the mobile device.
-1. Enter the Store Commerce for web (formerly Cloud POS, or CPOS) URL, which you can find on the environment details page in LCS, or on the **Channel profiles** page in Commerce headquarters (**Retail and Commerce \> Channel setup \> Channel profiles**).
+1. Enter the Store Commerce for web (formerly Cloud POS, or CPOS) URL, which you can find on the environment details page in Lifecycle Services, or on the **Channel profiles** page in Commerce headquarters (**Retail and Commerce \> Channel setup \> Channel profiles**).
 1. Sign in by using the credentials of a worker who has permission to manage devices.
 1. Select the store that is associated with the register that you created or reused in Commerce headquarters.
 1. Select the register that you associated with the device that you created in Commerce headquarters.
-1. Your device should now be activated. You can sign in to the register by using the operator ID and password for of worker who is associated with the store that you selected. 
+1. Your device should now be activated. You can sign in to the register by using the operator ID and password of a worker who is associated with the store that you selected. 
 
 For more information about device activation, see [Activate Store Commerce using guided activation](retail-device-activation.md#activate-store-commerce-using-guided-activation).
 
@@ -126,9 +125,7 @@ The following options for barcode and quick-response (QR) code scanning are avai
 
 **Camera-based barcode scanning - native barcode scanning**: The Store Commerce app for Android and iOS can scan barcodes and QR codes with the rear-facing camera. This out-of-box solution supports all workflows where a barcode scanner can be used to capture product, customer, or receipt data. 
 
-To enable native scanning in Store Commerce app, go to Dynamics 365 Commerce headquarters, open the hardware profile for the register being used on the mobile device, and set the **Scanner** setting for the first scanner section to "Device". 
-
-**Camera-based barcode scanning - third party app**: Products such as Scandit Express and Samsung's Knox Capture can be used to scan barcodes on Store Commerce mobile apps. These products require a license to use, but they offer advantages and features that the out-of-box barcode scanning capabilities don't. 
+To enable native scanning in Store Commerce app, go to Dynamics 365 Commerce headquarters, open the hardware profile for the register being used on the mobile device, and set the **Scanner** setting for the first scanner section to "Device". In addition, to ensure that everything works as expected, make sure that the shell app on the device is updated to Commerce version 10.0.40 (from Microsoft Lifecycle Services for Android devices), CSU is updated to version 9.50 (10.0.40), and Commerce headquarters is updated to version 10.0.40. 
 
 **Optical scanner**: Handheld devices that are equipped with an optical barcode scanner usually include a location in settings or a utility that configures the scanner. Enabling barcode scanning for the Store Commerce app with one of these devices typically only requires that the optical scanner is configured for keyboard wedge mode, and that a newline character is appended to the decoded output. 
 

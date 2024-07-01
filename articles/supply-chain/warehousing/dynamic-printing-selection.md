@@ -1,15 +1,15 @@
 ---
 title: Dynamic printer selection
-description: This article explains how to set up your system to dynamically select a printer when license plate labels and container labels are printed.
+description: Learn how to set up your system to dynamically select a printer when license plate labels and container labels are printed.
 author: adesypri
 ms.author: adesypri
-ms.reviewer: kamaybac
-ms.search.form: WHSLicensePlateLabel, WHSWorkUserdefaultLabelPrinterTable, WHSLocationDefaultLabelPrinter, WHSLabelLayout, WHSDocumentRoutingLayout, WHSPrinterStockType, WHSSysCorpNetPrinters
 ms.topic: how-to
 ms.date: 07/31/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: WHSLicensePlateLabel, WHSWorkUserdefaultLabelPrinterTable, WHSLocationDefaultLabelPrinter, WHSLabelLayout, WHSDocumentRoutingLayout, WHSPrinterStockType, WHSSysCorpNetPrinters
 ---
 
 # Dynamic printer selection

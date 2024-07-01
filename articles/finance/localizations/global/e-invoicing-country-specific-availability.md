@@ -50,13 +50,13 @@ The following table shows the Electronic invoicing globalization features that a
 | Germany | German electronic invoice (DE) | Sales invoices and project invoices |
 | Indonesia | Indonesian electronic invoice (ID) | Sales invoices, project invoices, and vendor invoices |
 | Italy | FatturaPA (IT) | Sales invoices and project invoices |
+| Malaysia | [Malaysian electronic invoicing (MY)](../malaysia/apac-mys-e-invoices.md) | Sales invoices, project invoices, and self invoices |
 | Netherlands | Dutch electronic invoice (NL) | Sales invoices and project invoices |
 | New Zealand | [Electronic invoicing for Australia and New Zealand](../apac/GS-apac-aus-nzl-electronic-invoices.md) | Sales invoices and project invoices |
 | Norway | Norwegian electronic invoice (NO) | Sales invoices and project invoices |
 | Panama | LATAM e-invoice PA | Sales invoices and project invoices |
-| Saudi Arabia | Saudi Arabian electronic invoice (SA) | Phase 1: Sales invoices and project invoices |
-| Saudi Arabia | Saudi Arabian Zatca submission (SA) | Phase 2: Sales invoices and project invoices |
-| Saudi Arabia | Saudi Arabian Zatca compliance check (SA) | Phase 2: Onboarding process |
+| Saudi Arabia | [Saudi Arabian Zatca submission (SA)](../mea/gs-e-invoicing-sa-get-started.md) | Sales invoices and project invoices |
+| Saudi Arabia | [Saudi Arabian Zatca compliance check (SA)](../mea/gs-e-invoicing-sa-onboarding.md) | Onboarding process |
 | Spain | Spanish electronic invoice (ES) | Sales invoices and project invoices |
 
 > [!NOTE]
@@ -71,6 +71,5 @@ The following table shows the Electronic invoicing Service globalization feature
 | Brazil | Brazilian NF-e (BR)| Fiscal document model 55, correction letters, cancellations, and discards |
 | Brazil | Brazilian NFS-e ABRASF Curitiba (BR) | Service fiscal documents |
 | Brazil | Brazilian NF-e import from e-mail (BR) | Fiscal document model 55 |
-| Malaysia | (Preview) Malaysian electronic invoicing (MY) | Sales invoices, project invoices, and self invoices |
 | Mexico | Mexican CFDI Interfactura (MX) | Sales invoices, packing slips, inventory transfers, payment complements, and cancellations |
-| Poland | Polish KSeF submission (PL) | Sales invoices, project invoices, and advance invoices |
+| Poland | [Polish electronic invoice (PL)](../poland/gs-e-invoicing-pol-get-started.md) | Sales invoices, project invoices, and advance invoices |

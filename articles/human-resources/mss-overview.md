@@ -4,7 +4,7 @@
 title: Manager self service overview
 description: This article provides an overview of the Manager self service workspace.
 author: twheeloc
-ms.date: 03/10/2023
+ms.date: 06/24/2024
 ms.topic: overview
 # optional metadata
 

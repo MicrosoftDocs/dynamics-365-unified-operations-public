@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Cancel warehouse work for exception handling
-description: This article describes the cancel work functionality that lets warehouse supervisors handle blocked work.
+description: Learn about the cancel work functionality that lets warehouse supervisors handle blocked work witha n outline on warehouse work that can be canceled.
 author: Mirzaab
-ms.date: 10/15/2019
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: WHSTroubIeshootingSeIfService, WHSTroubleshootingSelfService
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mirzaab
+ms.topic: article
+ms.date: 10/15/2019
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2019-10-1
+ms.search.form: WHSTroubIeshootingSeIfService, WHSTroubleshootingSelfService
 ms.dyn365.ops.version: 10.0.5
-
 ---
 
 # Cancel warehouse work for exception handling
