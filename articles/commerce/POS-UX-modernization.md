@@ -63,7 +63,7 @@ To enable intuitive payment workflows in the POS application, the flows for paym
 ## Fluent design
 
 To improve performance, allow for extensibility, and remove legacy patterns, the number pad in the Store Commerce app is updated to use a React control in the payment workflows. This change prepares for a future larger React upgrade that extends to the transaction page and lets customers create their own custom views in React.
-Additionally there were minor updates the UX following fluent design constructs such as the rounded corners on tiles and buttons in transaction grid, drop shadows and rollover elevation on product and category cards and an updated logout screen available as default beginning 10.0.36 release.  
+Additionally there were minor updates made on the UX following fluent design constructs such as the rounded corners on tiles and buttons in transaction grid, drop shadows and rollover elevation on product and category cards and an updated logout available as default beginning 10.0.36 release.  
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
