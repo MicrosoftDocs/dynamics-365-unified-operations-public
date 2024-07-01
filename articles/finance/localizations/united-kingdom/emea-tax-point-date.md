@@ -1,8 +1,8 @@
 ---
 title: Tax point date (Date of VAT register)
 description: Learn about how to indicate when the tax date is different from the transaction date regarding VAT registration, with an outline on activating the date feature.
-author: ikondratenko
-ms.author: ikondratenko
+author: epodkolzina
+ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
