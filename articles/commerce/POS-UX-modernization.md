@@ -30,11 +30,15 @@ Starting with the Commerce 10.0.40 release, a configuration option in the POS vi
 
 To bypass the confirmation dialog box and always go to transaction page after you add an item, in headquarters, go to **POS visual profiles**. In the **General** section, in the **Product details page** subsection, set the **Bypass Item added dialog** option to **Yes**. To show the confirmation dialog box, set the **Bypass Item added dialog** option to **No**.
 
+Please note that after every change in config in Headquarters , you will need to run the 1090 job to reflect the change in POS.
+
 ## Configure the display of search results
 
 In the POS visual profile in headquarters, you can now configure the default view for the display of search results for products, customers, and categories. Previously, the list view was the default view. Starting with the Commerce 10.0.40 release, search results can be shown in a card view by default, to allow for easy product browsing.
 
 To set your preference for the default search view, in headquarters, go to **POS visual profiles**. In the **General** section, in the **Search view** subsection, set the **Default view** field to **List view** or **Card view**.
+
+Please note that after every change in config in Headquarters , you will need to run the 1090 job to reflect the change in POS.
 
 ## Reset button grids at the end of a transaction
 
@@ -59,5 +63,7 @@ To enable intuitive payment workflows in the POS application, the flows for paym
 ## Fluent design
 
 To improve performance, allow for extensibility, and remove legacy patterns, the number pad in the Store Commerce app is updated to use a React control in the payment workflows. This change prepares for a future larger React upgrade that extends to the transaction page and lets customers create their own custom views in React.
+Additionally there were minor updates the UX such as the rounded corners, shadows and bezels applied to transaction grid as part of 10.0.38 release to set foundation for fluent updates. 
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
