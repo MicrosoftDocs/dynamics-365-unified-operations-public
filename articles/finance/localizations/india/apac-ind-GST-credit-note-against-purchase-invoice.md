@@ -1,16 +1,15 @@
 ---
 title: Create a credit note against a purchase invoice
 description: Learn how to create a credit note against a purchase order invoice, including overviews on validating tax details and posting purchase invoices.
-author: EricWangChen
-ms.author: wangchen
-ms.topic: article
-ms.date: 06/04/2019
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
 ms.custom: 
+  - bap-template
+ms.date: 06/04/2019
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: India
 ms.search.validFrom: 2019-06-01
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.4
 ---
 
