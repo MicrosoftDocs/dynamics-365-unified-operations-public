@@ -1,8 +1,8 @@
 ---
 title: Formula designer for TDS calculations
 description: Learn how Tax Deducted at Source (TDS) is calculated based on the formula defined for each TDS tax code in the TDS group that's attached to the transaction.
-author: kailiang
-ms.author: kailiang
+author: epodkolzina
+ms.author: epodkolzina
 ms.topic: conceptual
 ms.custom: 
   - bap-template
