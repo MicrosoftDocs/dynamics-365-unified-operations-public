@@ -3,7 +3,7 @@ title: What is Business performance analytics
 description: Learn about Business performance analytics, including outlines on turning data into action to improve business performance.
 author: jinniew
 ms.author: jiwo
-ms.topic: bap-template
+ms.topic:
 ms.date: 05/17/2024
 ms.custom:
 ms.reviewer: twheeloc 
