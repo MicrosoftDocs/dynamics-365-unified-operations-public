@@ -72,7 +72,7 @@ You must complete the LCS project onboarding process before you can start to dep
 
 ## Deploy Human Resources environments
 
-Deployment of finance and operations apps, including Human Resources, in the cloud requires that you understand the environment and subscription that you're deploying to, who can perform which tasks, and what data and customizations you must manage. We recommend that you use a service account instead of a named user when you deploy new environments. For more information about how to deploy environments on the finance and operations infrastructure, see [Cloud deployment overview](/fin-ops-core/dev-itpro/deployment/cloud-deployment-overview).
+Deployment of finance and operations apps, including Human Resources, in the cloud requires that you understand the environment and subscription that you're deploying to, who can perform which tasks, and what data and customizations you must manage. We recommend that you use a service account instead of a named user when you deploy new environments.
 
 To deploy a production environment for Human Resources, you must complete the go-live readiness process. For more information, see [Prepare for go-live](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md). This process includes the subscription estimator in LCS. For more information, see [Subscription estimator](../fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator.md).
 
