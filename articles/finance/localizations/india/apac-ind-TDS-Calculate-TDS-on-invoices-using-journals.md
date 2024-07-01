@@ -1,8 +1,8 @@
 ---
 title: Calculate TDS on invoices using journals
 description: Learn about calculating Tax Deducted at Source (TDS) on journals, including a step-by-step process for making this calculation.
-author: kailiang
-ms.author: kailiang
+author: epodkolzina
+ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
