@@ -50,12 +50,11 @@ For more information, see the following articles:
  - Microsoft Entra
  - Create a security group and add members to the security group.
  - Associate the security group with an environment.
-•	https://learn.microsoft.com/en-us/power-platform/admin/control-user-access#create-a-security-group-and-add-members-to-the-security-group
 
 
 ### Roles
+The HR recruiting add-on includes following roles: 
 
-Recruiting add-on includes following roles. 
 |Roles|	Scope|
 |-----|------|
 |System administrator |	Supports all functionalities of hiring process and configurations.|
