@@ -44,6 +44,8 @@ When running Dynamics 365 Commerce version 10.0.41, you must add the following r
 - SSL 2.0\Server:Enabled=0
 - SSL 2.0\Client:Enabled=0
 
+ Please note that any external applications or programs such as antivirus apps should exclude registry entries above and the shared hardware station folder "C:\Users\RetailHardwareStationAppPool\AppData\Local\Microsoft Dynamics AX\Retail Hardware Station\". This will ensure the hardware station folders and registry entries do not get deleted in the process.
+
 ## Download Retail hardware station by using self-service
 
 ### Configure a new Retail hardware station
