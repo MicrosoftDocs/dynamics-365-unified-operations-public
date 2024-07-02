@@ -4,7 +4,7 @@
 title: Maintain employee injury and illness information
 description: This task describes how to create an injury or illness case.
 author: twheeloc
-ms.date: 11/03/2021
+ms.date: 07/03/2024
 ms.topic: how-to 
  
 # optional metadata 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: ajitchandran
+ms.author: anisagrawal
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -29,7 +29,7 @@ It is recommended to complete the 'Setup injury and illness' task guide first, a
 
 This task recording describes the basic steps for creating an injury or illness case. In addition to the details of the injury or illness, a case status is tracked. By default, cases have a status of **Open**. You can manage the status by using the **Case status** menu item at the top of the page.
 
-1. Go to **Human resources \> Workers \> Injury and illness \> Injury or illness incidents**.
+1. Go to **Human resources > Workers > Injury and illness > Injury or illness incidents**.
 2. Select **New**.
 3. In the **Case description** field, enter a value (for example, **Wrist injury**).
 4. In the **Worker** field, enter or select a value (for example, **Ana Bowman**).
