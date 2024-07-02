@@ -41,7 +41,7 @@ You can change many aspects of your careers site, such as the background, introd
 8.	Search for **Site name**.
 9.	Click **Site name** and change the value to your company name.
 
-You can update the **Sign-in** page, **Identity providers**, ans **Candidate profile** page labels.
+You can update the **Sign-in** page, **Identity providers**, and **Candidate profile** page labels.
 
 ### External identity providers
 
@@ -52,7 +52,7 @@ To configure, follow these steps:
 2.	Select your active site and click **Edit**.
 3.	Go to **Setup** on left panel and select **Identity providers**.
 4.	You can enable or disable any provider. The **Local sign in** and **Azure Active Directory** configuration for the providers contain dummy values. 
-For more informationabout how to setup providers, see [Set up an OAuth 2.0 provider](xxxxxx).
+For more information about how to set up providers, see [Set up an OAuth 2.0 provider](/power-pages/security/authentication/oauth2-provider).
 
 ### Enable email accounts to send notifications
 
