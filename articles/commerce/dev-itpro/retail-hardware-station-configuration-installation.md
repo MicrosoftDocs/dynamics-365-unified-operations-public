@@ -5,7 +5,7 @@ title: Configure and install Retail hardware station
 description: This article explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.
 author: anush6121
 ms.author: anvenkat
-ms.date: 06/27/2024
+ms.date: 07/02/2024
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -26,7 +26,8 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 This article explains how to configure, download, and install the legacy Commerce hardware station by using self-service functionality. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](Enhanced-Mass-Deployment.md). It also explains how to uninstall Retail hardware station.
 
 > [!IMPORTANT]
-> It is critical to note that this component utilizes a server certificate. Server certificates must be managed for expiration. By default, a certificate expires in one calendar year (365 days).
+> - It is critical to note that this component utilizes a server certificate. Server certificates must be managed for expiration. By default, a certificate expires in one calendar year (365 days).
+> - The use of self-signed certificates is not allowed for hardware station installations. Instead, you should use a trusted third-party certificate.
 
 ## Prerequisites
 
