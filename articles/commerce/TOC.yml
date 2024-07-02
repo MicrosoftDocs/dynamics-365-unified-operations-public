@@ -384,14 +384,14 @@
             href: dev-itpro/store-commerce-capabilities.md
           - name: Store Commerce app FAQ
             href: dev-itpro/store-commerce-faq.md
+          - name: Choose between Store Commerce app and Store Commerce for web
+            href: dev-itpro/MPOS-or-CPOS.md
           - name: Store Commerce app for mobile platforms
             href: dev-itpro/store-commerce-mobile.md
           - name: Enable self-checkout in the Store Commerce app
             href: store-commerce-self-check-out.md
           - name: Migrate Modern POS to Store Commerce
             href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
-          - name: Choose between Store Commerce app and Store Commerce for web
-            href: dev-itpro/MPOS-or-CPOS.md
           - name: Device management implementation guidance
             href: dev-itpro/implementation-considerations-devices.md
           - name: Device activation of a customized Modern POS
