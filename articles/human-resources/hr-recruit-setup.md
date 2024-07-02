@@ -118,8 +118,6 @@ For more information, see Visit Reactivate sites | Microsoft Learn
 >[!Important]
 > Verify the version of your site after it's activated. It should be at least version 9.6. If the version is lower than 9.6, contact us.
 
-To check the version of your site, you can append _services/about to the URL.
-For example: <Site name>/ _services/about
 
 
 
