@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up a prospect in the HR Recruiting app 
+title: Set up a prospect in the HR Recruiting app (preview)
 description: This article describes how to set up a prospect in the HR Recruiting app in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 07/01/2024
@@ -23,11 +23,14 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Set up a prospect in the HR Recruiting app 
+# Set up a prospect in the HR Recruiting app (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
 This article describes how to set up a prospect in the HR Recruiting app in Dynamics 365 Human Resources.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
 
 ## Prospect
 Prospect is a possible applicant who fits a certain job role. Recruiters find these candidates and mark them as a prospect. They can send an invitation to these prospects to learn about this job opportunity and apply for the role. 
