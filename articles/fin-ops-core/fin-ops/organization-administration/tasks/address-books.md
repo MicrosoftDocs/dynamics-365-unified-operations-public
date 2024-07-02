@@ -2,7 +2,7 @@
 title: Configure address books
 description: Use this procedure to set up additional address books for your organization with a step-by-step process for configuring address books. 
 author: msftbrking
-ms.author: brking
+ms.author: anisagrawal
 ms.topic: how-to
 ms.date: 08/09/2019
 ms.custom: 

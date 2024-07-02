@@ -1,6 +1,21 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/privacy/privacy-ax2012.md",
+      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-vcruntime.md",
+      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/financial/dimension-entry-control-dialog-support.md",
+      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page",
+      "redirect_document_id": "false"
+    }, 
+    {
       "source_path": "articles/human-resources//hr-admin-integration-linkedin.md",
       "redirect_url": "/dynamics365/human-resources/welcome",
       "redirect_document_id": "false"

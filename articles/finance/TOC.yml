@@ -5451,8 +5451,6 @@
                   href: ../fin-ops-core/dev-itpro/financial/dimensions.md
                 - name: Add dimensions to Excel templates
                   href: ../fin-ops-core/dev-itpro/financial/dimensions-overview.md
-                - name: Support for Dimension Entry controls on dialogs
-                  href: ../fin-ops-core/dev-itpro/financial/dimension-entry-control-dialog-support.md
                 - name: Migrate default dimensions controls to Dimension Entry controls
                   href: ../fin-ops-core/dev-itpro/financial/dimension-entry-control-migration.md
                 - name: Uptake of Dimension Entry controls
