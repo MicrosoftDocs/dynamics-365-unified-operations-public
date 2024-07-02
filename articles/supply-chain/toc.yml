@@ -2827,8 +2827,6 @@
             href: production-control/tasks/use-safety-stock-journal-update-minimum-coverage.md
           - name: Material substitution in manufacturing
             href: production-control/substitute-items-bom-lines.md
-          - name: Registration for manufacturing execution
-            href: production-control/registration-manufacturing-execution.md
           - name: Production feedback
             href: production-control/production-feedback.md
           - name: Configure a worker using the mobile job device
@@ -2841,18 +2839,6 @@
             href: production-control/consumption.md
           - name: Production posting
             href: cost-management/production-posting.md
-        - name: Time and attendance registration
-          items:
-          - name: Time and attendance registration overview
-            href: production-control/time-attendance-registrations.md
-          - name: Pay based on registrations
-            href: production-control/pay-based-on-registrations.md
-          - name: Absence registration in Time and attendance
-            href: production-control/absence-registration-in-time-and-attendance.md
-          - name: Flex groups
-            href: production-control/time-attendance-flex-groups.md
-          - name: Enable the payroll process for time and attendance
-            href: production-control/tasks/payroll-process-time-attendance.md
       - name: Lean manufacturing
         items:
         - name: Lean manufacturing overview
@@ -2991,8 +2977,6 @@
             href: production-control/tasks/sequence-production-jobs-process-manufacturing.md
           - name: Material substitution in manufacturing
             href: production-control/substitute-items-bom-lines.md
-          - name: Registration for manufacturing execution
-            href: production-control/registration-manufacturing-execution.md
           - name: Register and track batch/serial numbers for finished products and their components (preview)
             href: production-control/tracked-components.md
           - name: Production feedback
@@ -3007,6 +2991,20 @@
             href: production-control/consumption.md
           - name: Production posting
             href: cost-management/production-posting.md
+        - name: Time and attendance registration
+          items:
+          - name: Time and attendance registration overview
+            href: production-control/time-attendance-registrations.md
+          - name: Registration for manufacturing execution
+            href: production-control/registration-manufacturing-execution.md
+          - name: Pay based on registrations
+            href: production-control/pay-based-on-registrations.md
+          - name: Absence registration in Time and attendance
+            href: production-control/absence-registration-in-time-and-attendance.md
+          - name: Flex groups
+            href: production-control/time-attendance-flex-groups.md
+          - name: Enable the payroll process for time and attendance
+            href: production-control/tasks/payroll-process-time-attendance.md
       - name: Set up and use the production floor execution interface
         items:
         - name: Configure the production floor execution interface

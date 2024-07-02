@@ -17,7 +17,7 @@ ms.custom:
 
 This article describes key concepts and terms that you need to understand to configure and use manufacturing execution.
 
-Manufacturing execution is intended to be used primarily by manufacturing companies. Workers can register time and item consumption on production jobs by using the **Job registration** page. All registrations are approved and are later transferred to the relevant modules. Continuous approval and transfer of registrations lets managers easily track actual costs on production orders.
+Manufacturing execution is intended to be used primarily by manufacturing companies. Workers can register time and item consumption on production jobs by using the [production floor execution interface](production-floor-execution-use.md). All registrations are approved and are later transferred to the relevant modules. Continuous approval and transfer of registrations lets managers easily track actual costs on production orders.
 
 ## Set up operations to use cost for estimated or actual time
 
@@ -66,9 +66,9 @@ The following table contains terms that pertain to manufacturing execution and r
 | Term | Description |
 |--|--|
 | Manufacturing execution | A function that is used to register time, material consumption, costs on production jobs, projects, and indirect activities. Registration is done in a manufacturing execution registration client, such as the [production floor execution interface](production-floor-execution-use.md). |
-| Job list | On the **Job registration** page, workers are shown the list of jobs that they must perform on a specific resource, such as a machine. A worker can register time and item consumption on each job or task in the job list. |
-| Job bundling | If a worker starts more than one job at the same time on the **Job registration** page, this is called job bundling. The time that is spent on bundled jobs can be allocated to the individual jobs in various ways by using allocation keys. |
-| Pilot/assistant registrations | A worker can register as an assistant to a resource, and can create a small team where several workers work on the same production jobs. Resources that workers are connected to as assistants are called pilots. Only the pilot resource must make registrations. All assistants automatically get the same registrations. For example, if a machine acts as the pilot, workers who have registered as assistants to that machine can make registrations on the **Job registration** page, and both the machine and the workers who are connected as assistants will receive the same registrations. |
+| Job list | The [production floor execution interface](production-floor-execution-use.md) shows workers the list of jobs that they must perform on a specific resource, such as a machine. A worker can register time and item consumption on each job or task in the job list. |
+| Job bundling | If a worker starts more than one job at the same time on the [production floor execution interface](production-floor-execution-use.md), this is called job bundling. The time that is spent on bundled jobs can be allocated to the individual jobs in various ways by using allocation keys. |
+| Pilot/assistant registrations | A worker can register as an assistant to a resource, and can create a small team where several workers work on the same production jobs. Resources that workers are connected to as assistants are called pilots. Only the pilot resource must make registrations. All assistants automatically get the same registrations. For example, if a machine acts as the pilot, workers who have registered as assistants to that machine can make registrations on the [production floor execution interface](production-floor-execution-use.md), and both the machine and the workers who are connected as assistants will receive the same registrations. |
 | Indirect activity | An activity or task that isn't directly related to a production job or a project, such as a department meeting, a cleaning job, or a maintenance job on the shop floor. Workers can make registrations on indirect activities, in the same way that they can register on production jobs and projects. |
 
 ## Registrations in manufacturing execution
