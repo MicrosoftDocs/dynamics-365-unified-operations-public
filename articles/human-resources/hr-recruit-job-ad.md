@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up job ads in the Recruiting app 
+title: Set up job ads in the Recruiting app (preview)
 description: This article describes how to set up the job ads in the Recruiting app in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 07/01/2024
@@ -23,13 +23,15 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Set up job ads in the Recruiting app 
+# Set up job ads in the Recruiting app (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
 This article describes how to set up the job ads in the Recruiting app in Dynamics 365 Human Resources.
 
 Job ads are an essential part of the hiring process. This is used to advertise one or more job openings within a company. These ads are published on various platforms, such as job boards, company websites, social media, and other related channels. 
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 In the Recruiting app, job ads are a section where recruiters create job ads. Job ads contain a Job ID, number of openings, estimated start date, compensation, currency, company (legal entity), job location, skills, position type, and job description.
 
