@@ -4,14 +4,15 @@
 title: System requirements for cloud deployments of Dynamics 365 Commerce
 description: This article lists the system requirements for cloud deployments for the current version of Dynamics 365 Commerce.
 author: stuharg 
-ms.date: 08/22/2023
-ms.topic: article
+ms.date: 07/02/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: aneesa
 ms.search.validFrom: 2019-10-31
-
+ms.custom: 
+  - bap-template
 ---
 
 # System requirements for cloud deployments of Dynamics 365 Commerce
@@ -115,7 +116,7 @@ This section lists the supported operating systems for each Commerce self-servic
     > Windows 10 Pro and Windows 11 Pro are not recommended, except as part of a domain, so that Windows updates can be appropriately scheduled.
 
 - Windows Server 2022 and Windows Server 2019 are supported.
-- We don't recommend that you use a self-service component on the same computer as another self-service component (for example, the Store Commerce app).
+- Microsoft doesn't recommend that you use a self-service component on the same computer as another self-service component (for example, the Store Commerce app).
 - The legacy self-service installer also supports Windows Server 2016 and Windows 10 LTSB.
 
 ### System requirements
