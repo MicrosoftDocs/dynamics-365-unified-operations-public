@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configuration in the Recruiting app 
+title: Configuration in the Recruiting app (preview)
 description: This article describes how to configure the Human Resources Recruiting app.
 author: twheeloc
 ms.date: 07/01/2024
@@ -23,7 +23,7 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Configuration in the Recruiting app 
+# Configuration in the Recruiting app (preview)
 
 This article describes how to configure the Recruiting app.
 
@@ -38,6 +38,8 @@ Prerequisites:
  - Users and emails should be available in the tenant. 
  - Verify that the added user and email account belongs to the power platform environment by using Power platform admin center and has the basic user role.
  - Ensure the email account has a valid office license before setting it up.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 For users and email accounts to receive and send messages, follow these steps:
  
