@@ -1,7 +1,7 @@
 ---
 title: Global address book overview
 description: The global address book can help you understand the relationships among people and organizations that are associated with your organization.
-author: anisagrawal
+author: msftbrking
 ms.author: anisagrawal
 ms.topic: overview
 ms.date: 07/25/2019
