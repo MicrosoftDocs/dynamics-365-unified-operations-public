@@ -4,7 +4,7 @@
 title: Commerce Data Exchange best practices
 description: This article describes data synchronization with Commerce Data Exchange (CDX) in a Microsoft Dynamics 365 Commerce environment.
 author: aneesmsft
-ms.date: 07/02/2023
+ms.date: 07/02/2024
 ms.topic: article
 # optional metadata
 
@@ -12,7 +12,7 @@ ms.search.form: RetailTerminalTable, RetailDevice
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -75,7 +75,7 @@ To initialize the base configuration data, do the following:
 
 ### Enable database index compression
 
-Use database index compression features to help reduce the database size. More details can be found in this article: [**Commerce database index compression**](index-compression.md).
+Use database index compression features to help reduce the database size. See [**Commerce database index compression**](index-compression.md) for details on these features.
 
 ## Practices that affect performance
 
