@@ -40,28 +40,25 @@ To assign panel members, follow these steps:
 3. Click **+New panel member**.
 4. Select the hiring team member.
 5. Click **Save**.
-6. Change the **Hiring activity status** to **Scheduled**. 
+6. Change the **Hiring activity status** to **Scheduled**.
+
 >[!Note]
-> Interviewers can access the feedback page after the **Hiring activity status** is **Scheduled**.
+> Interviewers access the feedback page after the **Hiring activity status** is **Scheduled**.
  
 
 ### Provide feedback
-Panel members or interviewers can give their feedback by choosing whether candidate is recommended or not recommended and adding feedback. They can save their feedback and return later if they want to edit 
-their feedback. The feedback is submitted when they click **Submit**. After the feedback is submitted, interviewers can't modify their feedback.
+Panel members or interviewers provide feedback when a candidate is or isn't recommended and adding feedback. They can save their feedback and return later to edit their feedback. After clicking **Submit**, interviewers can't modify their feedback.
 
 To provide feedback, follow these steps: 
-1. Login to Recruiting app.
-2. Select **Feedback**.
-3. Click on the feedback to provide details.
-4. Select **Yes** or **No** in **Recommendation**.
-•	Provide descriptive feedback in ‘Interview feedback’.
+1. Login to Recruiting app, select **Feedback**.
+2. Click on the feedback to provide details.
+3. Select **Yes** or **No** in **Recommendation**.
+4. In **Interview feedback**, enter feedback about the candidate. 
 
  
 ### View feedback
 Recruiters or the hiring manager aren't allowed to change the feedback given by interviewer. They can only view the feedback provided by interviewer. 
-To see the feedback, follow these steps:
-1. Go to the activity.
-2. Select the stage or steps to see the feedback of panel member.
+To see feedback, go to the activity and select the stage or steps.
 
 ### Reject
 Recruiters can reject one or multiple applicants at a time. On the rejection of applicants, applicants get a notification in their email if the email template is set. 
@@ -72,22 +69,19 @@ The status of the application is changed **Rejected**.
 
 
 Reopen
-When an candidate application is reconsidered to be process after rejection, the application can be reopened. 
-To reopen the applicantion, follow these steps:
+When an candidate application is reconsidered after rejection, the application can be reopened. 
+To reopen the application, follow these steps:
 1. Go to **Job ads** > **Applicants** > **Applicant**.
-2. Click **Reopen**.
-The status of the application changes to **In progress**.
+2. Click **Reopen**. The status of the application changes to **In progress**.
 
 ### Ready to hire
-Recruiter can set the applicant to hire when the recruiter would like to hire the candidate. Setting the applicant as ready to hire sends the applicant information to Dynamics 365 Human Resources. The System 
+Recruiter can set the applicant to hire when the recruiter wants to hire the candidate. Setting the applicant as ready to hire, sends the applicant information to Dynamics 365 Human Resources. The System 
 administrator can create the worker.
 To set the applicant to ready to hire, follow these steps: 
 1. Go to **Job ad** > **Applicants**.
 2. Select the applicant.
 3. Click **Ready to hire**, a confirmation message is displayed.
-4. Click **OK**.
- 
-The status of the application changes to **Ready to hire**.
+4. Click **OK**. The application status changes to **Ready to hire**.
 
 ### Hire 
 
