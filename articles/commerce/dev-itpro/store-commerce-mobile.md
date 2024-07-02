@@ -125,9 +125,9 @@ The following options for barcode and quick-response (QR) code scanning are avai
 
 **Camera-based barcode scanning - native barcode scanning**: The Store Commerce app for Android and iOS can scan barcodes and QR codes with the rear-facing camera. This out-of-box solution supports all workflows where a barcode scanner can be used to capture product, customer, or receipt data. 
 
-To enable native scanning in Store Commerce app, go to headquarters, open the hardware profile for the register used on the mobile device, and set the **Scanner** setting for the first scanner section to "Device". Once this is done, run the **Registers (1090)** job to realize the change in POS. To run the register job manually, in headquarters go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedules**, in the left pane select **1090 Registers**, and then on the Action Pane select **Run now**.
+To enable native scanning in the Store Commerce app, go to headquarters, open the hardware profile for the register used on the mobile device, and set the **Scanner** setting for the first scanner section to **Device**. When done, run the **Registers (1090)** job to realize the change in POS. To run the register job manually, in headquarters go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedules**, in the left pane select **1090 Registers**, and then on the Action Pane select **Run now**.
 
-In addition, to ensure that everything works as expected, confirm that the shell app on the device is updated to Commerce version 10.0.40 (from Microsoft Lifecycle Services for Android devices), CSU is updated to version 9.50 (10.0.40), and Commerce headquarters is updated to version 10.0.40. 
+To ensure that everything works as expected, confirm that the shell application on the device is updated to Commerce version 10.0.40 (from Microsoft Lifecycle Services for Android devices), CSU is updated to version 9.50 (10.0.40), and Commerce headquarters is updated to version 10.0.40. 
 
 If the scan icon appears but the camera is blocked, confirm that you have camera permissions turned on for the app on your device.
 
