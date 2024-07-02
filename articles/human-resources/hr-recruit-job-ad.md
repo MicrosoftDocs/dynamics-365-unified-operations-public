@@ -45,7 +45,7 @@ To create a job ad, fill in the following fields:
  - **Position type** - Allows an option to create job ads for Full-time, part-time contract employees.
 
 ### Recruiting request
-A recruiting request is a document that is used to create the requirement for job openings by the hiring managers in Dynamics 365 Finance. To publish the recruiting request, it must be in a active status. After the recruiting request is published, the recruiting request can't be updated. For more information, see [Recruit job candidates](/hr-personnel-recruit.md). 
+A recruiting request is a document that is used to create the requirement for job openings by the hiring managers in Dynamics 365 Finance. To publish the recruiting request, it must be in a active status. After the recruiting request is published, the recruiting request can't be updated. For more information, see [Recruit job candidates](hr-personnel-recruit.md). 
 
 ### Job ad status
 There are five different job ad statuses:
