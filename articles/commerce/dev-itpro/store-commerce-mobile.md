@@ -127,6 +127,7 @@ The following options for barcode and quick-response (QR) code scanning are avai
 
 To enable native scanning in Store Commerce app, go to Dynamics 365 Commerce headquarters, open the hardware profile for the register being used on the mobile device, and set the **Scanner** setting for the first scanner section to "Device". Once this is done please run the register update job 1090 to reflect the change in POS. To run the register job go to **distribution schedule** and select **1090** and run the job manually.
 In addition, to ensure that everything works as expected, make sure that the shell app on the device is updated to Commerce version 10.0.40 (from Microsoft Lifecycle Services for Android devices), CSU is updated to version 9.50 (10.0.40), and Commerce headquarters is updated to version 10.0.40. 
+If the scan icon shows up, but the camera is blocked, please ensure you have camera permissions turned on for the app in your device.
 
 **Optical scanner**: Handheld devices that are equipped with an optical barcode scanner usually include a location in settings or a utility that configures the scanner. Enabling barcode scanning for the Store Commerce app with one of these devices typically only requires that the optical scanner is configured for keyboard wedge mode, and that a newline character is appended to the decoded output. 
 
