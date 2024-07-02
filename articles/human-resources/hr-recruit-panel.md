@@ -50,8 +50,8 @@ To assign panel members, follow these steps:
 Panel members or interviewers provide feedback when a candidate is or isn't recommended and adding feedback. They can save their feedback and return later to edit their feedback. After clicking **Submit**, interviewers can't modify their feedback.
 
 To provide feedback, follow these steps: 
-1. Login to Recruiting app, select **Feedback**.
-2. Click on the feedback to provide details.
+1. Log in to the Recruiting app, select **Feedback**.
+2. To provide details, click on the feedback.
 3. Select **Yes** or **No** in **Recommendation**.
 4. In **Interview feedback**, enter feedback about the candidate. 
 
@@ -68,8 +68,8 @@ To reject the applicant, follow these steps:
 The status of the application is changed **Rejected**.
 
 
-Reopen
-When an candidate application is reconsidered after rejection, the application can be reopened. 
+### Reopen
+When a candidate application is reconsidered after rejection, the application can be reopened. 
 To reopen the application, follow these steps:
 1. Go to **Job ads** > **Applicants** > **Applicant**.
 2. Click **Reopen**. The status of the application changes to **In progress**.
@@ -88,7 +88,7 @@ To set the applicant to ready to hire, follow these steps:
 When the candidate is transferred from Recruiting add-on, the system administrator can view the candidate details in the **Candidates** workspace.
 To view candidate details, follow these steps:
 1. On the **Candidate** page, select **Hire**.
-2. On the **Hire new worker** page > **Details**. Complete all the fields.
+2. On the **Hire new worker** page, > **Details**. Complete all the fields.
 3. Under **Position details**, verify and change information as necessary.
 4. Under **Onboarding checklists**, select the relevant onboarding checklists for this employee.
 5. Select **Continue** to create the employee record.
@@ -96,11 +96,11 @@ To view candidate details, follow these steps:
 #### Limitations and known issues
 
 •	If a level isn't specified in the **Recruiting request** in Dynamics 365 Human Resources, the education details from the recruiting request won't display in the Job ads.
-•	In the Email template - User is the Category.
+•	In the Email template, the user is the Category.
 •	There's no limit on how many times the same candidate can be sent as **Ready to hire**.
 •	Only the name is getting transferred to Dynamics 365 finance and operations environment when candidate data is moved from Recruiting Add-on to Dynamics 365 finance and operations environment. Other details 
 like **education background**, **Skills**, **Positions** aren't transferred.
-•	Localization is not complete.
+•	Localization isn't complete.
 •	Candidates need to click **Save as draft** to enable **Next**.
 •	Candidates need to click **Upload** after selecting the file while creating the profile in career site.
 •	If the administrator deletes a candidate's profile, candidates can still access the careers site, but they can't make a profile. To create a profile, candidates need to remove their account and make a new one. 
