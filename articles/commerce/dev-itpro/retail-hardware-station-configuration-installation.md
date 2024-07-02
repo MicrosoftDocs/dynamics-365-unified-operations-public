@@ -5,7 +5,7 @@ title: Configure and install Retail hardware station
 description: This article explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.
 author: anush6121
 ms.author: anvenkat
-ms.date: 06/27/2024
+ms.date: 07/02/2024
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -44,7 +44,8 @@ When running Dynamics 365 Commerce version 10.0.41, you must add the following r
 - SSL 2.0\Server:Enabled=0
 - SSL 2.0\Client:Enabled=0
 
- Please note that any external applications or programs such as antivirus apps should exclude registry entries above and the shared hardware station folder "C:\Users\RetailHardwareStationAppPool\AppData\Local\Microsoft Dynamics AX\Retail Hardware Station\". This will ensure the hardware station folders and registry entries do not get deleted in the process.
+> [!NOTE]
+> Any external applications or programs such as antivirus applications should exclude the registry entries listed above and the shared hardware station folder `C:\Users\RetailHardwareStationAppPool\AppData\Local\Microsoft Dynamics AX\Retail Hardware Station\`. This ensures that the registry entries and hardware station folders aren't deleted.
 
 ## Download Retail hardware station by using self-service
 
