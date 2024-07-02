@@ -4,7 +4,7 @@
 title: Benefits management workspace
 description: This article describes the Benefits management workspace in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 01/03/2022
+ms.date: 07/03/2024
 ms.topic: article
 # optional metadata
 
@@ -17,7 +17,7 @@ audience: Application User
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
 
