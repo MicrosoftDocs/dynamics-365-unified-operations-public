@@ -390,10 +390,10 @@
             href: store-commerce-self-check-out.md
           - name: Migrate Modern POS to Store Commerce
             href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
-          - name: Device management implementation guidance
-            href: dev-itpro/implementation-considerations-devices.md
           - name: Choose between Store Commerce app and Store Commerce for web
             href: dev-itpro/MPOS-or-CPOS.md
+          - name: Device management implementation guidance
+            href: dev-itpro/implementation-considerations-devices.md
           - name: Device activation of a customized Modern POS
             href: dev-itpro/retail-POS-activation-changes.md
           - name: Search for products and product variants during order entry
