@@ -4,7 +4,7 @@ description: This article describes POS modernization and usability improvements
 author: anush6121
 ms.author: anvenkat 
 ms.topic: how-to 
-ms.date: 06/28/2024
+ms.date: 07/02/2024
 ms.custom: 
   - bap-template
 ms.reviewer: v-chrgriffin
@@ -30,7 +30,8 @@ Starting with the Commerce 10.0.40 release, a configuration option in the POS vi
 
 To bypass the confirmation dialog box and always go to transaction page after you add an item, in headquarters, go to **POS visual profiles**. In the **General** section, in the **Product details page** subsection, set the **Bypass Item added dialog** option to **Yes**. To show the confirmation dialog box, set the **Bypass Item added dialog** option to **No**.
 
-Please note that after every change in config in Headquarters , you will need to run the 1090 job to reflect the change in POS.
+> [!NOTE]
+> After every configuration change made in headquarters, you must run the **Registers (1090)** job to realize the change in POS.
 
 ## Configure the display of search results
 
@@ -38,7 +39,8 @@ In the POS visual profile in headquarters, you can now configure the default vie
 
 To set your preference for the default search view, in headquarters, go to **POS visual profiles**. In the **General** section, in the **Search view** subsection, set the **Default view** field to **List view** or **Card view**.
 
-Please note that after every change in config in Headquarters , you will need to run the 1090 job to reflect the change in POS.
+> [!NOTE]
+> After every configuration change made in headquarters, you must run the **Registers (1090)** job to realize the change in POS.
 
 ## Reset button grids at the end of a transaction
 
@@ -63,7 +65,8 @@ To enable intuitive payment workflows in the POS application, the flows for paym
 ## Fluent design
 
 To improve performance, allow for extensibility, and remove legacy patterns, the number pad in the Store Commerce app is updated to use a React control in the payment workflows. This change prepares for a future larger React upgrade that extends to the transaction page and lets customers create their own custom views in React.
-Additionally there were minor updates made on the UX following fluent design constructs such as the rounded corners on tiles and buttons in transaction grid, drop shadows and rollover elevation on product and category cards and an updated logout available as default beginning 10.0.36 release.  
+
+Also, minor updates that follow fluent design constructs were made to the user experience, such as rounded corners on tiles and buttons in the transaction grid, drop shadows and rollover elevation on product and category cards, and a refreshed sign-out experience. These updates are available by default starting with the Commerce 10.0.36 release.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
