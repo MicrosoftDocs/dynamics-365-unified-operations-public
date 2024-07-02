@@ -4443,6 +4443,8 @@
               href: business-performance-analytics/configure-BPA.md
             - name: Install business performance analytics
               href: business-performance-analytics/install-bpa.md
+            - name: Connect business performance analytics data to Microsoft Fabric 
+              href: business-performance-analytics/bpa-fabric.md              
             - name: Business performance analytics data model
               href: business-performance-analytics/business-performance-analytics-data-model.md
             - name: Set up security in business performance analytics
@@ -5451,8 +5453,6 @@
                   href: ../fin-ops-core/dev-itpro/financial/dimensions.md
                 - name: Add dimensions to Excel templates
                   href: ../fin-ops-core/dev-itpro/financial/dimensions-overview.md
-                - name: Support for Dimension Entry controls on dialogs
-                  href: ../fin-ops-core/dev-itpro/financial/dimension-entry-control-dialog-support.md
                 - name: Migrate default dimensions controls to Dimension Entry controls
                   href: ../fin-ops-core/dev-itpro/financial/dimension-entry-control-migration.md
                 - name: Uptake of Dimension Entry controls

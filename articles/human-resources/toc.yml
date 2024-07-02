@@ -689,8 +689,6 @@ items:
           href: hr-benefits-setup-rounding-rules.md
         - name: Create employment categories
           href: hr-benefits-setup-employment-categories.md
-        - name: Set up employment types
-          href: hr-benefits-setup-employment-types.md
         - name: Configure employee self service
           href: hr-benefits-setup-employee-self-service.md
         - name: Create benefit plans
