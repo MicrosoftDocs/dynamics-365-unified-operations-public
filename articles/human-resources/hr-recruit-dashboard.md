@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Using the dashboard in the Recruiting app 
+title: Using the dashboard in the Recruiting app (preview)
 description: This article describes how to use the dashboard in the Recruiting app in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 07/01/2024
@@ -23,7 +23,7 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Using the dashboard in the Recruiting app 
+# Using the dashboard in the Recruiting app (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -37,6 +37,8 @@ The following built-in charts are available:
  - Upcoming interviews
  - Pending approvals
  - Ready to hire candidates
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ### Job ads by status
 This pie chart displays the statuses of the job ads that the user has been conneced to. For example, a recruiter has participated as a hiring team member in four job ads. Out of four, one is draft, 
