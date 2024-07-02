@@ -27,6 +27,7 @@ Index compression can be resource intensive based on the number of indexes and t
 
 ## Index compression features
 The table below lists the database index compression features available.
+
 | Feature name | Description |
 |--------------|-------------|
 | Offline database compression | This feature enables index compression to help reduce the size of the offline database for [offline-enabled point-of-sale (POS) devices](pos-offline-functionality.md) running the [Store Commerce app](store-commerce.md).<br/><br/>If [store hours are configured](store-hours.md), index compression will happen outside of store hours. If store hours are not configured, index compression can happen at any time in the day when the offline database is not being used. <br/><br/>To use this feature, go to the [**Feature management workspace**](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and enable **POS offline database compression**. After the feature has been enabled, run the **1070** distribution schedule job. <br/><br/>This feature is available in Commerce release 10.0.29 and later.|
