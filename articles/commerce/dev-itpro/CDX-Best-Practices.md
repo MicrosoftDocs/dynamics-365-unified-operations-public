@@ -3,8 +3,8 @@
 
 title: Commerce Data Exchange best practices
 description: This article describes data synchronization with Commerce Data Exchange (CDX) in a Microsoft Dynamics 365 Commerce environment.
-author: jashanno
-ms.date: 01/30/2023
+author: aneesmsft
+ms.date: 07/02/2023
 ms.topic: article
 # optional metadata
 
@@ -18,7 +18,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: jashanno
+ms.author: aneesa
 ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.12
 ---
@@ -73,40 +73,9 @@ To initialize the base configuration data, do the following:
 | <ul><li>Functionality profile</li><li>Data retention</li><li>Return policy</li> | Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profile**, and then, in the **Functions** section, set **Days transactions exist** to a value that is the same as, or close to the value that is defined for the return policy. For example, if the return policy states an item can be returned within 30 days, set this field to **30**, **31**, or **60** if special exceptions are allowed beyond the usual policy (this would be twice the usual policy, allowing for faster returns even beyond the usual policy limits). |
 | <ul><li>Channel database group</li><li>Distribution schedule</li><li>Offline profile</li><li>Pause</li><li>Data</li><li>Download</li></ul> | We highly recommend that you have either a "dummy" channel database group (that is, a group that isn't associated with any distribution schedule job) that you assign to the newly generated terminals, or a special offline profile where the **Pause offline synchronization** option is set to **Yes**. In this way, data generation can occur when it's required and when the system is most available to do it. (However, the system might pause multiple times as required.) |
 
-### Enable table and index compression
+### Enable database index compression
 
-> [!NOTE]
-> In Commerce version 10.0.29, a feature was added to automate index compression. The following guidance is intended exclusively for cases where that feature is turned off, or only for tables. For more information, see [Commerce offline implementation](implementation-considerations-offline.md). 
-   
-Before you read this article, we recommended that you read about the different recommended versions of SQL Server used in on-premises database components (offline database and channel database as part of a CSU) in [Commerce Data Exchange implementation guidance](implementation-considerations-cdx.md#implementation-considerations). It's important to enable table/index compression on their on-premises databases, such as the offline databases for the Store Commerce app and the channel databases for the CSU (self-hosted). This is supported only on SQL Server 2016 SP1 Express, SQL Server 2017 Express, SQL Server 2019 Express, and later. If you are still running SQL Server Express 2014, an upgrade to a newer, supported version will be required. Generate a report of the top tables using disk space (**SQL Server Management Studio \> Reports \> Standard Reports \> Disk Usage by Top Tables**). After that, you can enable compression for each table and index at the top of the report. The basic commands are shown below.
-
-```Console
-ALTER TABLE [ax].<table_name> REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
-ALTER INDEX <index1_name> ON [ax].<table_name> REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
-ALTER INDEX <index2_name> ON [ax].<table_name> REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
-```
-
-As an example of a table that often benefits from compression, this example uses ax.INVENTDIM:
-
-```Console
-sp_helpindex 'ax.INVENTDIM'
-```
-
-The above query will show all the indexes for the selected table (the list of which is shown below in the next set of commands). Based on that query, can take the basic commands originally shown in this article to compress the table and all related indices.
-
-```Console
-ALTER TABLE [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
-ALTER INDEX [I_-65082180_-588450352] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
-ALTER INDEX [I_-65082180_-997209838] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
-ALTER INDEX [IX_INVENTDIM_DATAAREAID_CONFIGID_INVENTSIZEID_INVENTCOLORID_INVENTSTYLEID_INVENTLOCATIONID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
-ALTER INDEX [IX_INVENTDIM_DATAAREAID_INVENTLOCATIONID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
-ALTER INDEX [IX_INVENTDIM_DATAAREAID_INVENTLOCATIONID_RECID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
-ALTER INDEX [IX_INVENTDIM_INVENTLOCATIONID_INVENTSITEID_LICENSEPLATEID_WMSLOCATIONID_WMSPALLETID_CONFIGID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
-ALTER INDEX [IX_INVENTDIM_RECID] ON [ax].[INVENTDIM] REBUILD PARTITION = ALL WITH (DATA_COMPRESSION = PAGE)
-```
-
-We recommend that you repeat this section for the top tables in the report, until an appropriate database size is reached.
-
+Use database index compression features to help reduce the database size. More details can be found in this article: [**Commerce database index compression**](index-compression.md).
 
 ## Practices that affect performance
 
