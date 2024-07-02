@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up panel members in the HR recruiting app
+title: Set up panel members in the HR recruiting app (preview)
 description: This article describes how to set up panel members in the HR recruiting app in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 07/01/2024
@@ -23,11 +23,13 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Set up panel members in the HR recruiting app
+# Set up panel members in the HR recruiting app (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
 This article describes how to set up panel members in the HR recruiting app in Dynamics 365 Human Resources.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Panel members and feedback
 Recruiters can assign one or more panel members to each stage and steps. 
