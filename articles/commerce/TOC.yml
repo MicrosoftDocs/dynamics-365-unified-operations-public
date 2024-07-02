@@ -266,8 +266,6 @@
           href: dev-itpro/retail-device-activation.md
         - name: Security best practices for Store Commerce for web in shared environments
           href: dev-itpro/secure-retail-cloud-pos.md
-        - name: Retail Hardware Station configuration and installation
-          href: dev-itpro/retail-hardware-station-configuration-installation.md
         - name: Mass deployment of sealed Commerce self-service components
           href: dev-itpro/Enhanced-Mass-Deployment.md
         - name: Mass deployment of legacy self-service components
@@ -410,6 +408,8 @@
               href: retail-peripherals-overview.md
             - name: Peripheral simulator
               href: dev-itpro/retail-peripheral-simulator.md
+            - name: Configure and install Retail hardware station
+              href: dev-itpro/retail-hardware-station-configuration-installation.md
             - name: Connect peripherals to the POS
               href: define-maintain-channel-clients-registers-hw-stations.md
             - name: Health check for POS peripherals and services
@@ -514,8 +514,6 @@
             items:
             - name: POS modernization and usability improvements
               href: POS-UX-modernization.md  
-        - name: Configure and install Retail hardware station
-          href: dev-itpro/retail-hardware-station-configuration-installation.md
         - name: Receipts
           items:
           - name: Set up and design receipt formats
