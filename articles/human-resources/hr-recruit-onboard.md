@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Onboard users to use the Human Resources recruit app 
+title: Onboard users to use the Human Resources recruit app (preview)
 description: This article describes how to onboard users to use the Human Resources recruit app.
 author: twheeloc
 ms.date: 07/01/2024
@@ -23,7 +23,7 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Onboard users to use the Human Resources recruit app 
+# Onboard users to use the Human Resources recruit app (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -32,7 +32,8 @@ This article describes how to onboard users to use the Human Resources recruit a
 Users with licenses are seamlessly onboarded to your Dataverse instance through automatic synchronization with their MS Entra ID in the background.
  - If there's not a security group in your Power Platform setup, all licensed users within your tenant are automatically synchronized.
  - If there's a security group (recommended), only licensed users within this group are automatically synced to your Power Platform.
-For more information, see [Add users to an environment automatically or manually](
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## How to synchronize users
 
