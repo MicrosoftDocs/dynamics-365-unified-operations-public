@@ -3,7 +3,7 @@ title: Store Commerce app
 description: This article explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app for Windows.
 author: anush6121
 ms.author: anvenkat
-ms.date: 06/27/2024
+ms.date: 07/02/2024
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -178,15 +178,12 @@ The Store Commerce apps for Windows and mobile platforms are the next generation
 - .NET Framework version 4.8 or later is required for embedded Hardware Station components with version 10.0.41. For more information, see [Install the .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework).  
 - .NET Desktop Runtime 6.0.16 or later, which is used by the Store Commerce app for UI rendering.
 - When running Dynamics 365 Commerce version 10.0.41, use .NET Framework 4.8 or later to support the embedded hardware station component.
-- Following store commerce folders should be excluded when running any external applications such as antivirus to prevent the folders and registry entries from getting deleted:
-- Store Commerce Folders to Exclude:
-  User Scoped Application Data:
- "C:\Users\**\Microsoft Dynamics 365\10.0\Data\Store Commerce"
--  Common Application Data:
- "C:\ProgramData\Microsoft Dynamics 365\10.0\Data\Store Commerce"
-- Store Commerce Registry Keys:
- HKLM:SOFTWARE\Microsoft\Dynamics\Commerce\10.0\Store Commerce\Configuration\*
- HKLM:Software\Policies\Microsoft\Edge\WebView2\UserDataFolder\Microsoft.Dynamics.Commerce.StoreCommerce.exe
+- The following Store Commerce folders should be excluded when running any external applications or prgrams such as antivirus applications to prevent the folders from being deleted:
+    - User-scoped application data: `C:\Users\**\Microsoft Dynamics 365\10.0\Data\Store Commerce`.
+    - Common application data: `C:\ProgramData\Microsoft Dynamics 365\10.0\Data\Store Commerce`.
+- The following Store Commerce registry entries should be excluded when running any external applications or prgrams such as antivirus applications to prevent the registry entries from being deleted:
+    - `HKLM:SOFTWARE\Microsoft\Dynamics\Commerce\10.0\Store Commerce\Configuration\*`.
+    - `HKLM:Software\Policies\Microsoft\Edge\WebView2\UserDataFolder\Microsoft.Dynamics.Commerce.StoreCommerce.exe`.
 
 ### Device setup in Commerce headquarters
 
