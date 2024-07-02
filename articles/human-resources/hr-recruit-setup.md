@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Set up Recruiting app 
+title: Set up Recruiting app (preview)
 description: This article describes how to set up the Recruiting app in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 07/01/2024
@@ -23,11 +23,13 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Set up Recruiting app 
+# Set up Recruiting app (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
 This article describes how to set up the Recruiting app in Dynamics 365 Human Resources.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 Before you can install the recruiting app, the following prerequisites must be met: 
