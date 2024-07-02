@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Applicants in HR recruiting app
+title: Applicants in HR recruiting app (preview)
 description: This article describes how to use applicants in the HR Recruiting app in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 07/01/2024
@@ -23,11 +23,13 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Applicants in HR recruiting app
+# Applicants in HR recruiting app (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
 This article describes applicants and activities in the HR Recruiting app in Dynamics 365 Human Resources. Candidates who submit their applications for job vacancies are applicants. The recruiter can view the applicants by going to **Job ads** > **Applicants**.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Applications
 An application is created when a candidate applies for a job. The application includes the interview process of the candidate.
