@@ -1,16 +1,15 @@
 ---
 title: Create a GSTIN master
 description: Learn how to create a Goods and Services Tax Identification Number (GSTIN) master, part of the master data setup required to make an India localization solution.
-author: EricWangChen
-ms.author: wangchen
-ms.topic: article
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 06/04/2019
-ms.custom:
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: India
 ms.search.validFrom: 2019-06-01
-ms.search.form:
 ms.dyn365.ops.version: 10.0.4
 ---
 
