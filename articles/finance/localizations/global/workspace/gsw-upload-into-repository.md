@@ -4,7 +4,7 @@ description: Learn how to create a Microsoft Dataverse solution by using the Upl
 author: filatovm
 ms.author: filatovm
 ms.topic: how-to 
-ms.date: 05/30/2024
+ms.date: 07/02/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -19,7 +19,7 @@ Instead of manually creating a Dataverse solution as described in [Upload ER con
 To use this functionality, you should have a Dataverse environment that's connected to your Dynamics 365 Finance environment and add a security role to access tables in Dataverse by following these steps:
 
 1. Create a new security role as described in [Create or edit a security role](/power-platform/admin/create-edit-security-role).
-2. In that security role add **Create, Read, Write, Delete, Append, Append to, Assign, Share** permissions for **Organization** to the following tables: **Solution, Publisher, Electronic Reporting Configuration File, Electronic Reporting Configurations Index File, Globalization Feature File, and Globalization Features Index File**. 
+2. In that security role add **Create, Read, Write, Delete, Append, Append to, Assign, Share** permissions for the **Organization** to the following tables: **Solution, Publisher, Electronic Reporting Configuration File, Electronic Reporting Configurations Index File, Globalization Feature File, and Globalization Features Index File**. 
 3. Assign the created security role to users as described in [Assign security roles](/power-platform/admin/assign-security-roles). 
 
 The process of creating a Dataverse solution by using Upload into repository has three phases:
