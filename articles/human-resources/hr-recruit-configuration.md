@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configuration in the Recruiting app 
-description: This article describes how to configure the Recruiting app.
+description: This article describes how to configure the Human Resources Recruiting app.
 author: twheeloc
 ms.date: 07/01/2024
 ms.topic: article
@@ -27,13 +27,13 @@ This article describes how to configure the Recruiting app.
 
 [This article is prerelease documentation and is subject to change.]
 
-## Set up an email account
+# Set up an email account
 
 To enable users and email accounts for incoming and outgoing messages, follow these steps:
  
 Prerequisites:
  - Confirm that you have permission as at least a conditional access administrator role or equivalent permissions.
- - Users and emails should be available in the tenant. For more information about setting up new users or email, see [Add users and assign licenses](xxxxx).
+ - Users and emails should be available in the tenant. 
  - Verify that the added user and email account belongs to the power platform environment by using Power platform admin center and has the basic user role.
  - Ensure the email account has a valid office license before setting it up.
 
@@ -83,8 +83,8 @@ The recruiting administrator or system administrator roles can set up email temp
  
 1.	Login to the Recruiting add-on app, go to **Configurations**.
 2.	The **Email templates** command bar shows you the templates that are available for recruiting solutions.  Note: Don't change the title. 
-3.	Fill in the description, subject, and body for the email template and save this information. You can use {!<Table name>:<Field name>} to add any dynamic content.
-For more information about how to create an email template in model-driven apps, see [Power Apps](xxxxxx). 
+3.	Fill in the description, subject, and body for the email template and save this information. 
+For more information about how to create an email template in model-driven apps, see [Power Apps](/power-apps/user/email-template-create). 
     
 
 ### Customize email templates with new template type
