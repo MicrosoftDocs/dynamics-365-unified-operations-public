@@ -40,6 +40,8 @@ This section contains a table that lists the features that are included in this 
 | Credit and collections | Customer account rename data maintenance | A new data maintenance page helps streamline data consistency. Customers can use this page to view and manually retry failed updates. | Feature management |
 | General ledger | Consolidation templates | Consolidation online templates let you set up the consolidation information one time and then use it every time that the consolidation process is run. The updated **Consolidate online** page now shows all consolidation runs, reruns, and reversals. To use this functionality, enable the **Consolidate online using templates** feature in Feature management. | Feature management |
 | General ledger | Reverse related journals | This feature reverses all related journals in a single step. As part of the automatic split of large journals, multiple journals can be created from one large journal. Users can now reverse all those journals at the same time. For more information, see [Reverse related journals with journals that were automatically split](../general-ledger/reverse-journal-posting.md#reverse-related-journals-with-journals-that-were-automatically-split). | |
+|Workflow |Workflow history summary|This feature displays an AI-generated summary on the **Workflow history** page. The concise summary shows the submitter, current status, due date and any comments and most recent approvals, rejections and change requests with comments. The most relevant history featured in the **Summary by copilot** fastTab helps approvers make faster decisions because they don't need to search through the history page.|Feature management |
+
 
 ## Feature enhancements included in this release
 
@@ -70,7 +72,8 @@ Dynamics 365 Finance version 10.0.40 includes platform updates. To learn more, s
 
 ### Bug fixes
 
-For information about the bug fixes included in this update, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=936136).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=932660).
+
 
 ### Regulatory updates
 

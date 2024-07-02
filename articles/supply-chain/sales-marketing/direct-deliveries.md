@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Direct deliveries
-description: This article provides information about direct deliveries. Direct deliveries are deliveries that are sent directly from the vendor to your customer.
+description: Learn about direct deliveries, which are deliveries that are sent directly from the vendor to your customer with outlines on delivery dates and order lines.
 author: Henrikan
-ms.date: 06/20/2017
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: PurchCreateFromSalesOrder, SalesTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 64c51384-8a4e-45d0-83c1-12cea22902f9
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: henrikan
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: PurchCreateFromSalesOrder, SalesTable
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 64c51384-8a4e-45d0-83c1-12cea22902f9
 ---
 
 # Direct deliveries

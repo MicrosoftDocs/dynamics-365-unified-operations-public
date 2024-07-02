@@ -4,13 +4,12 @@ description: Learn how to plan, set up, and deploy Microsoft Dynamics 365 Financ
 author: faix
 ms.author: osfaixat
 ms.topic: article
-ms.date: 02/08/2023
-ms.custom:
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-01-31 
-ms.search.form:
 ms.dyn365.ops.version: Platform update 56
 ---
 

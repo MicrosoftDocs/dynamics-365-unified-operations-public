@@ -4,7 +4,9 @@ description: Access links to documentation resources for the United Arab Emirate
 author: liza-golub
 ms.author: egolub
 ms.topic: overview
-ms.date: 06/07/2023
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: United Arab Emirates (UAE)

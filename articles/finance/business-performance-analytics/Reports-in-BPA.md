@@ -4,7 +4,7 @@ description: Learn about reports that are related to the record-to-report value 
 author: jinniew
 ms.author: jiwo
 ms.topic: conceptual
-ms.date: 05/20/2023
+ms.date: 05/20/2024
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User

@@ -5,7 +5,7 @@ author: kfend
 ms.author: kfend
 ms.topic: article
 ms.date: 10/02/2019
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 audience: Application user
 ms.search.region: China (PRC)
 ms.search.validFrom: 2019-04-01

@@ -1,6 +1,6 @@
 ---
 title: Registration for manufacturing execution
-description: This article describes key concepts and terms that you need to understand to configure and use manufacturing execution. 
+description: Learn about key concepts and terms that you need to understand to configure and use manufacturing execution with a table defining various terms. 
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac

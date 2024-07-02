@@ -1,15 +1,15 @@
 ---
 title: Set up shipping carriers
-description: This article shows how to set up a shipping carrier and define details such as service, shipment mode, transportation tender, transportation constraints, and shipping rate. 
+description: Learn how to set up a shipping carrier and define details such as service, shipment mode, transportation tender, transportation constraints, and shipping rate.
 author: Weijiesa
 ms.author: weijiesa
-ms.reviewer: kamaybac
-ms.search.form: TMSShippingCarrierCustomerAccount,TMSCarrier
 ms.topic: how-to
 ms.date: 05/27/2024
-audience: Application User
 ms.custom:
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: TMSShippingCarrierCustomerAccount,TMSCarrier
 ---
 
 # Set up shipping carriers

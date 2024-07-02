@@ -307,7 +307,7 @@ items:
           href: sysadmin/archive-data.md
         - name: Set up and manage archive
           items:
-          - name: Set up and manage archive data in Dynamics 365 Finance
+          - name: Set up and manage archive data in finance and operations apps
             href: sysadmin/archive-setup-manage.md
         - name: Archive customization
           href: sysadmin/archive-custom.md
@@ -325,7 +325,7 @@ items:
             href: sysadmin/archive-inventory.md
           - name: Archive Dynamics 365 Supply Chain inventory journals
             href: sysadmin/archive-inventory-journal.md
-        - name: Dynamics 365 archive with Dataverse long term retention FAQ
+        - name: Finance and operations apps archive with Dataverse long term retention FAQ
           href: sysadmin/archive-faq.md
     - name: Azure Data Lake
       items: 
@@ -995,8 +995,6 @@ items:
           href: perf-test/perfsdk-multi-user-testing.md
         - name: Troubleshooting guide for testing with the Performance SDK 
           href: perf-test/troubleshoot-perf-sdk-user-testing.md
-        - name: Performance SDK and multiuser testing in on-premises environments
-          href: perf-test/perfsdk-tutorial-lbd.md  
         - name: Diagnose issues and analyze performance using Trace parser
           href: perf-test/trace-parser.md
         - name: Performance timer

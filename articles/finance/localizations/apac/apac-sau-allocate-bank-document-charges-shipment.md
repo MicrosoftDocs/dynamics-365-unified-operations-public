@@ -2,15 +2,16 @@
 title: Allocate bank document charges to a shipment
 description: This article explains how you can allocate document bank charges to a shipment on a purchase order.
 author: AdamTrukawka
-ms.date: 11/20/2020
-ms.topic: article
-audience: Application User
-ms.reviewer: 
-ms.search.region: Saudi Arabia
 ms.author: atrukawk
+ms.date: 06/26/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.reviewer: johnmichalak
+ms.search.region: Saudi Arabia
 ms.search.validFrom: 2019-11-29
 ms.dyn365.ops.version: 10.0.8
-ms.search.form: 
+
 ---
  
 # Allocate bank document charges to a shipment

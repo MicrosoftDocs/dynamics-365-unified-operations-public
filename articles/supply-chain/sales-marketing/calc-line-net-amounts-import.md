@@ -1,15 +1,15 @@
 ---
 title: Recalculate line net amounts when importing sales orders and quotations
-description: This article describes whether and how the system recalculates line net amounts when sales orders and quotations are imported. It also explains how you can control the behavior in different versions of Microsoft Dynamics 365 Supply Chain Management.
+description: Learn how the system recalculates line net amounts when sales orders are imported and control the behavior in different versions Supply Chain Management.
 author: Henrikan
-ms.date: 08/05/2022
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: henrikan
+ms.topic: article
+ms.date: 08/05/2022
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-06-08
+ms.search.form:
 ms.dyn365.ops.version: 10.0.29
 ---
 

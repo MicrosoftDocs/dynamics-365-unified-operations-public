@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Change kanban rules for a process job
-description: This procedure focuses on changing the used kanban rule for a given kanban. 
+description: Learn about changing the used kanban rule for a given kanban, including step-by-step processes for copy and changing kanban rules.
 author: johanhoffmann
-ms.date: 08/29/2018
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: KanbanRules, KanbanRuleDuplicate, KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, KanbanReassignRuleLookup   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.custom:
+ms.reviewer: kamaybac   
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: KanbanRules, KanbanRuleDuplicate, KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, KanbanReassignRuleLookup  
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Change kanban rules for a process job
 
 [!include [banner](../../includes/banner.md)]

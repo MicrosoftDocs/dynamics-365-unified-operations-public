@@ -1,15 +1,15 @@
 ---
 title: Document routing label layouts
-description: This article describes how to use formatting methods to print values on labels.
+description: Learn how to use formatting methods to print values on labels with outlines on turn this feature on or off and custom number formats.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSLicensePlateLabel, WHSLicensePlateLabelBuildConfig, WHSLicensePlateLabel, WHSDocumentRoutingLayout
 ms.topic: how-to
 ms.date: 04/19/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: WHSLicensePlateLabel, WHSLicensePlateLabelBuildConfig, WHSLicensePlateLabel, WHSDocumentRoutingLayout
 ---
 
 # Document routing label layouts

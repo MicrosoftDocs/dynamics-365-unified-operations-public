@@ -1,15 +1,15 @@
 ---
 title: What's new or changed in the Warehouse Management mobile app
-description: This article lists the new and changed features for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+description: This article lists the new and changed features for each released version of the Warehouse Management app for Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 08/15/2023
-ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: mirzaab
+ms.topic: article
+ms.date: 08/15/2023
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-06-07
+ms.search.form:
 ms.dyn365.ops.version: 10.0.21
 ---
 
@@ -19,6 +19,29 @@ ms.dyn365.ops.version: 10.0.21
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+
+## Version 2.3.7.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- Increased stability.
+
+## Version 2.3.6.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- Increased stability.
+- Fixed an issue that could prevent the app from connecting to Copilot.
+- Fixed a crash that could occur on Android 11 devices shortly after starting up the app.
+
+## Version 2.3.4.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- Increased stability.
+- Added a new and improved user interface for the Copilot screen.
+- On devices that are still set up to use a deprecated authentication method, the app now shows a warning to tell users that the app will soon stop working if the connection settings aren't changed.
+- Fixed a crash that could occur on Android devices when restarting the app after a long pause.
 
 ## Version 2.3.3.0
 

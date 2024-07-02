@@ -5,7 +5,7 @@ author: ryanc
 ms.author: ryanc
 ms.topic: article
 ms.date: 04/21/2023
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2017-12-31

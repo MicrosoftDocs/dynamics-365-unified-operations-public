@@ -1,15 +1,15 @@
 ---
 title: Calendars and master planning
-description: This article provides an overview of supply chain calendars and how they affect master planning.
+description: Learn about supply chain calendars and how they affect master planning, including an definition of a calendar and outlines of various values.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: WorkCalendarTable, VendTable
 ms.topic: how-to
 ms.date: 11/24/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: WorkCalendarTable, VendTable
 ---
 
 # Calendars and master planning

@@ -3,24 +3,19 @@
 
 title: Configure and install Retail hardware station
 description: This article explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.
-author: jashanno
-ms.date: 04/26/2023
-ms.topic: article
-# optional metadata
-
+author: anush6121
+ms.author: anvenkat
+ms.date: 06/27/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.search.form: RetailHardwareStation
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+ms.reviewer: johnmichalak
 ms.assetid: eb164a9d-5538-4b6f-81ad-87e05d92eca5
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: jashanno
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
 
 ---
 
@@ -32,6 +27,22 @@ This article explains how to configure, download, and install the legacy Commerc
 
 > [!IMPORTANT]
 > It is critical to note that this component utilizes a server certificate. Server certificates must be managed for expiration. By default, a certificate expires in one calendar year (365 days).
+
+## Prerequisites
+
+When running Dynamics 365 Commerce version 10.0.41, you must add the following registry entries to support Transport Layer Security (TLS) 1.3.
+- TLS 1.2\Server:Enabled=0
+- TLS 1.3\Server:Enabled=1
+- TLS 1.2\Client:Enabled=0
+- TLS 1.3\Client:Enabled=1
+- TLS 1.1\Server:Enabled=0
+- TLS 1.1\Client:Enabled=0
+- TLS 1.0\Server:Enabled=0
+- TLS 1.0\Client:Enabled=0
+- SSL 3.0\Server:Enabled=0
+- SSL 3.0\Client:Enabled=0
+- SSL 2.0\Server:Enabled=0
+- SSL 2.0\Client:Enabled=0
 
 ## Download Retail hardware station by using self-service
 
@@ -80,7 +91,7 @@ This article explains how to configure, download, and install the legacy Commerc
 5. Select the hardware station to download, and then select **Download**.
 
     > [!NOTE]
-    > - Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then select **Download** again.
+    > Browsers might block the download pop-up that is generated. You must select either **Allow once** or **Options for this site** &gt; **Always allow**. Then select **Download** again.
 
 6. On the notification bar that appears at the bottom of the Microsoft Edge window, select **Save**. (The notification bar might appear in a different place in other browsers.)
 7. If needed for mass deployment or command line deployment, repeat the above steps for the configuration file download, which is a button next to the **Download** button that you previously selected.
@@ -127,8 +138,7 @@ The Retail hardware station installer first extracts the associated files and th
 
     > [!NOTE]
     > - If the hardware station that was installed won't be used for payment-related work, don't close the **Install merchant information** window without completing the remaining steps. The hardware station won't work unless this installation is successfully completed.
-    
-    > - For version 10.0.6 and above, the install merchant information tool is no longer used. Instead, the merchant information for the hardware station is set by the POS at the time of logon or when the hardware station is made active. If the retail server is not available when the hardware station is subsequently made active, the last known merchant properties will be used by until the connection to the retail server is re-established. If the POS client is not upgraded to version 10.0.6 at the same time the hardware station is upgraded, merchant properties will not be updated until the POS client is upgraded to an equal or later version. 
+    > - For version 10.0.6 and above, the install merchant information tool is no longer used. Instead, the merchant information for the hardware station is set by the POS at the time of logon or when the hardware station is made active. If the retail server is not available when the hardware station is subsequently made active, the last known merchant properties will be used until the connection to the retail server is re-established. If the POS client is not upgraded to version 10.0.6 at the same time the hardware station is upgraded, merchant properties will not be updated until the POS client is upgraded to an equal or later version. 
 
 8. The Install merchant information tool might request Azure AD credentials. Enter the Azure AD credentials of the user who is installing Retail hardware station.
 9. The Retail Server URL is determined through the Retail hardware station installation and is entered automatically. The installer uses this URL to load the list of stores that the user is connected to via the address book.
@@ -145,20 +155,20 @@ Current security standards state that the following options should be set in a p
 > The hardware station installer automatically makes these registry edits as part of the installation through self-service.
 
 - SSL should be disabled.
-- Only Transport Layer Security (TLS) version 1.2 (or the current highest version) should be enabled and used.
+- Only Transport Layer Security (TLS) version 1.3 (or the current highest version) should be enabled and used.
 
     > [!NOTE]
-    > By default, SSL and all version of TLS except TLS 1.2 are disabled. To edit or enable these values, follow these steps:
+    > By default, SSL and all version of TLS except TLS 1.3 are disabled. To edit or enable these values, follow these steps:
     >
     > 1. Press the Windows logo key+R to open a **Run** window.
     > 2. In the **Open** field, type **Regedit**, and then select **OK**.
     > 3. If a **User Account Control** window appears, select **Yes**.
-    > 4. In the new **Registry Editor** window, go to **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\SecurityProviders\\SCHANNEL\\Protocols**. The following keys have been automatically entered to allow for TLS 1.2 only:
-    >
-    >    - TLS 1.2\\Server:Enabled=1
-    >    - TLS 1.2\\Server:DisabledByDefault=0
-    >    - TLS 1.2\\Client:Enabled=1
-    >    - TLS 1.2\\Client:DisabledByDefault=0
+    > 4. In the new **Registry Editor** window, go to **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\SecurityProviders\\SCHANNEL\\Protocols**. The following keys have been automatically entered to allow for TLS 1.3 only:
+    >    
+    >    - TLS 1.2\\Server:Enabled=0
+    >    - TLS 1.3\\Server:Enabled=1
+    >    - TLS 1.2\\Client:Enabled=0
+    >    - TLS 1.3\\Client:Enabled=1
     >    - TLS 1.1\\Server:Enabled=0
     >    - TLS 1.1\\Client:Enabled=0
     >    - TLS 1.0\\Server:Enabled=0

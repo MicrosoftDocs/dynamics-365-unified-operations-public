@@ -3,14 +3,12 @@ title: Average VAT for purchase transactions
 description: Learn about average value-added tax (VAT) for Thailand, including an outline on how to settle transactions that have average VAT, and what reports can be generated.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
-ms.date: 03/24/2021
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience: 
-ms.search.region: 
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.search.scope: 
+
 ---
 
 # Average VAT for purchase transactions

@@ -1,21 +1,21 @@
 ---
 title: Customer and product price attribute groups (preview)
-description: This article explains how to configure customer and product price attribute groups for the Pricing management module.
+description: Learn how to configure customer and product price attribute groups for the Pricing management module, including usage examples.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: GUPPricingAttributeGroup, GUPPricingAttributeGroup
 ms.topic: how-to
 ms.date: 04/03/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: GUPPricingAttributeGroup, GUPPricingAttributeGroup
 ---
 
 # Customer and product price attribute groups (preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 *Customer price attribute groups* and *product price attribute groups* let you create logic to define groups of customers and products, respectively. The membership of each group is based on the values of attributes that you assign to that group. These groups can make it easier to set up collections of customers and products that you can target in your pricing rules.

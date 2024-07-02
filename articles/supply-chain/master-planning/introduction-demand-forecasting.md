@@ -1,16 +1,15 @@
 ---
 title: Demand forecasting overview
-description: Demand forecasting is used to predict independent demand from sales orders and dependent demand at any decoupling point for customer orders. The enhanced demand forecast reduction rules provide an ideal solution for mass customization.
+description: Demand forecasting is used to predict independent demand from sales orders and dependent demand at any decoupling point for customer orders.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: ReqDemPlanCreateForecastDialog
 ms.topic: overview
 ms.date: 01/06/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
-ms.collection:
+ms.search.form: ReqDemPlanCreateForecastDialog
 ---
 
 # Demand forecasting overview

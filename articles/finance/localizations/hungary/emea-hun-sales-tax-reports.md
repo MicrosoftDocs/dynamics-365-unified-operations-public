@@ -1,15 +1,14 @@
 ---
 title: Sales tax reports for Hungary
 description: Learn about the Sales tax declaration information and Itemized VAT statement reports, including an outline on generating sales tax declaration reports.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 11/19/2020
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Hungary
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
 ---
 
 # Sales tax reports for Hungary

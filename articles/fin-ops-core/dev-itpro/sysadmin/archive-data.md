@@ -52,7 +52,7 @@ When an archival job is initiated from the Finance and operations archive worksp
  -  Data that meets the archival criteria is marked as ready for archiving in the live finance and operations application tables.
  -  The live table records are marked as retained (archived) in Dataverse long term retention.
  -  A reconciliation process verifies that all the live application table records that were previously marked as ready for archiving are available in Dataverse long term retention.
- -  Live application data that was previously marked as ready for archiving is moved to history tables in the Dynamics 365 finance database and deleted from the live application tables. Specific inquiry pages in Dynamics 365 finance can access this history table data. Data from history tables can be either restored to the live table or permanently purged. The permanently purge functionality will be supported in a future release.
+ -  Live application data that was previously marked as ready for archiving is moved to history tables in the finance and operations apps database and deleted from the live application tables. Specific inquiry pages in Dynamics 365 finance and operations apps can access this history table data. Data from history tables can be either restored to the live table or permanently purged. The permanently purge functionality will be supported in a future release.
 
 ## Restoring data from history tables to live tables
 
@@ -77,9 +77,9 @@ The archival framework includes custom fields and custom tables in supported fun
 
 ## Understanding Dataverse storage costs for archived data
 
-On average, every gigabyte (GB) that's moved from the Finance application to Dataverse long term retention consumes 50 percent less database capacity. Live application data is compressed in Dataverse long term retention. Savings can vary, depending on the table data. You might notice savings that are more than or less than 50 percent. Savings might be more evident when higher volumes of data (hundreds of GBs) are retained.
+On average, every gigabyte (GB) that's moved from the finance and operations apps to Dataverse long term retention consumes 50 percent less database capacity. Live application data is compressed in Dataverse long term retention. Savings can vary, depending on the table data. You might notice savings that are more than or less than 50 percent. Savings might be more evident when higher volumes of data (hundreds of GBs) are retained.
 
-Archived data is made available in the history tables by allowing access through an inquiry page in Finance. History tables that have no indexes consume on average 30 percent (or more) less capacity than the live tables, depending on the table and indexes. If in-app access to archived data isn't required, permanently delete the data from the history tables to achieve full savings.
+Archived data is made available in the history tables by allowing access through an inquiry page in finance and operations apps. History tables that have no indexes consume on average 30 percent (or more) less capacity than the live tables, depending on the table and indexes. If in-app access to archived data isn't required, permanently delete the data from the history tables to achieve full savings.
 
 ## Storage capacity reports
 

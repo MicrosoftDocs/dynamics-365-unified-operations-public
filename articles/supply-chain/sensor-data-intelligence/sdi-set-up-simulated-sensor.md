@@ -1,22 +1,22 @@
 ---
 title: Set up a simulated sensor for testing (preview)
-description: This article describes how to set up a simulator that you can use to test Sensor Data Intelligence without installing any physical sensors.
+description: Learn how to set up a simulator that you can use to test Sensor Data Intelligence without installing any physical sensors, including video instructions.
 author: johanhoffmann
-ms.date: 09/02/2022
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: johanho
+ms.topic: article
+ms.date: 09/02/2022
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-09-02
+ms.search.form:
 ms.dyn365.ops.version: 10.0.30
 ---
 
 # Set up a simulated sensor for testing (preview)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 If you want to test Sensor Data Intelligence without installing any physical sensors, you can use the *Raspberry PI Azure IoT Online Simulator* service to emulate sensor signals and send them to your Internet of Things (IoT) solution on Microsoft Azure. For more information about the simulator, see [Connect Raspberry Pi online simulator to Azure IoT Hub (Node.js)](/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started).

@@ -3,8 +3,10 @@ title: JPK-V7 reporting
 description: Learn how to run a VAT declaration with registers (also known as a JPK-V7, VDEK) in Poland, including an outline on initial assumptions for the JPK-V7 report.
 author: liza-golub
 ms.author: egolub
-ms.topic: article
-ms.date: 07/11/2023
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Poland

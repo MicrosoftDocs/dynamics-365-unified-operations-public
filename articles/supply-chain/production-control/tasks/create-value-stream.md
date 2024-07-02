@@ -1,26 +1,20 @@
 --- 
-# required metadata 
- 
 title: Create a value stream
-description: Value streams are operating units, that group one or multiple production flows. 
+description: Value streams are operating units, that group one or multiple production flows. Learn about creating new value streams and select value stream managers.
 author: johanhoffmann
+ms.author: johanho
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: OMOperatingUnit, DefaultDashboard   
+ms.custom: 
+ms.reviewer: kamaybac 
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: OMOperatingUnit, DefaultDashboard  
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create a value stream
 
 [!include [banner](../../includes/banner.md)]

@@ -1,12 +1,13 @@
 ---
 title: Progressive withholding tax for Japan
 description: Learn about progressive withholding tax in Japan, including prerequisites, an outline on tax calculations, and an example.
-author: EricWangChen
-ms.author: wangchen
-ms.topic: article
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 03/21/2018
 ms.reviewer: johnmichalak
-audience: Application User 
 ms.search.region: Japan
 ms.search.validFrom: 2016-11-30
 ms.search.form: TaxWithholdGroup, TaxWithholdTable, TaxWithholdTrans

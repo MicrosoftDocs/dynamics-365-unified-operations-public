@@ -3,10 +3,10 @@ title: VAT declaration (France)
 description: Learn how to set up and generate a report for France that can be used to report a value-added tax (VAT) declaration, including a VAT declaration preview overview.
 author: liza-golub
 ms.author: egolub
-ms.topic: article
-ms.date: 03/10/2022
+ms.topic: how-to
 ms.custom: 
   - bap-template
+ms.date: 06/17/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: France

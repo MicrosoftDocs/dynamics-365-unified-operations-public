@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Kanban job scheduling for lean manufacturing
-description: This article provides information about visual control over kanban job scheduling and various ways to schedule kanban jobs.  
+description: Learn about visual control over kanban job scheduling and various ways to schedule kanban jobs with an outline on automatic scheduling of kanban jobs.  
 author: johanhoffmann
-ms.date: 06/20/2017
+ms.author: johanho
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: KanbanBoardScheduleJobForward, KanbanBoardShowJobs, KanbanJobSchedulingListPage
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: fe3b4822-6140-4b02-bebb-1fc17be2bce8
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
 ms.search.validFrom: 2016-02-28
+ms.search.form: KanbanBoardScheduleJobForward, KanbanBoardShowJobs, KanbanJobSchedulingListPage
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: fe3b4822-6140-4b02-bebb-1fc17be2bce8
 ---
 
 # Kanban job scheduling for lean manufacturing

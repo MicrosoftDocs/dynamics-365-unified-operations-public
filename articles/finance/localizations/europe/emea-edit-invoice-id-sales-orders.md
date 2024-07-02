@@ -3,10 +3,11 @@ title: Edit invoice IDs on sales orders for Eastern Europe
 description: Learn about accounts receivable parameters that affect invoice numbers on packing slips for the Czech Republic, Estonia, Hungary, Lithuania, Latvia, and Poland.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.search.validFrom: 2016-11-30
 ms.search.form: CustParameters

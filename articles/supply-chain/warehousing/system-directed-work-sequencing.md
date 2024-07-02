@@ -1,23 +1,16 @@
 ---
-# required metadata
-
 title: System-directed work sequencing
-description: This article provides information about system-directed work sequencing. This functionality lets you sort and filter the work orders that the system presents to users for execution. It's helpful in scenarios where additional criteria are required to drive the warehouse picking process.
+description: Learn bout system-directed work sequencing. This functionality lets you sort and filter the work orders that the system presents to users for execution.
 author: Mirzaab
-ms.date: 07/03/2020
-ms.topic: article
-
-# optional metadata
-ms.search.form:  WHSRFSystemDirectedWorkSequenceQuery, WHSLocDirTable
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
+ms.topic: article
+ms.date: 07/03/2020
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-07-03
+ms.search.form:  WHSRFSystemDirectedWorkSequenceQuery, WHSLocDirTable
 ms.dyn365.ops.version: 10.0.7
 ---
 
