@@ -402,6 +402,10 @@
             href: pos-suspend-recall-transactions.md
           - name: Task recorder and help for Store Commerce
             href: task-recorder-retail-pos.md
+          - name: Create financial dimensions for POS registers and configure dimension values on registers
+            href: tasks/create-financial-dimensions-pos.md
+          - name: Create POS permissions group
+            href: tasks/create-pos-permission-groups.md
           - name: Hardware peripherals
             items:
             - name: Peripherals
@@ -468,10 +472,6 @@
               href: extended-logon.md
             - name: Manage activation accounts and validate devices
               href: dev-itpro/set-up-activation-accounts-validate-devices-hq.md
-          - name: Create financial dimensions for POS registers and configure dimension values on registers
-            href: tasks/create-financial-dimensions-pos.md
-          - name: Create POS permissions group
-            href: tasks/create-pos-permission-groups.md
           - name: Cash management
             items:
             - name: Cash management overview
