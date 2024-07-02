@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure the careers site in the HR recruit app
+title: Configure the careers site in the HR recruit app (preview)
 description: This article describes how to configure the careers site in the HR recruit app.
 author: twheeloc
 ms.date: 07/01/2024
@@ -23,11 +23,13 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Configure the careers site in the HR recruit app
+# Configure the careers site in the HR recruit app (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
-This article describes how to configure the careers site in the HR recruit app
+This article describes how to configure the careers site in the HR recruit app.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 You can change many aspects of your careers site, such as the background, introduction, images, privacy policy, site name and so on. To do this, follow these steps:
 
