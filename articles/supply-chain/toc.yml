@@ -2831,8 +2831,6 @@
             href: production-control/registration-manufacturing-execution.md
           - name: Production feedback
             href: production-control/production-feedback.md
-          - name: Enable the payroll process for time and attendance
-            href: production-control/tasks/payroll-process-time-attendance.md
           - name: Configure a worker using the mobile job device
             href: production-control/tasks/worker-mobile-job-device.md
         - name: Manage financials in production
@@ -2853,6 +2851,8 @@
             href: production-control/absence-registration-in-time-and-attendance.md
           - name: Flex groups
             href: production-control/time-attendance-flex-groups.md
+          - name: Enable the payroll process for time and attendance
+            href: production-control/tasks/payroll-process-time-attendance.md
       - name: Lean manufacturing
         items:
         - name: Lean manufacturing overview
