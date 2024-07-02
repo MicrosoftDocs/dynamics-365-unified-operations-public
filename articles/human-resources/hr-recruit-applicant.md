@@ -27,8 +27,7 @@ ms.dyn365.ops.version: Human Resources
 
 [This article is prerelease documentation and is subject to change.]
 
-This article describes applicants and activities in the HR Recruiting app in Dynamics 365 Human Resources.
-Candidates who have submitted their applications for the job vacancies are applicants. The recruiter can view the applicants in job ads-> applicants.
+This article describes applicants and activities in the HR Recruiting app in Dynamics 365 Human Resources. Candidates who submit their applications for job vacancies are applicants. The recruiter can view the applicants by going to **Job ads** > **Applicants**.
 
 ## Applications
 An application is created when a candidate applies for a job. The application includes the interview process of the candidate.
@@ -38,10 +37,10 @@ To view the application, follow these steps:
 3. Select **Applicant** tab.
 
 ### Application status
-Every application has several statuses. These statuses show the different phases of application. There are internal and external application status. Internal status shows the internal process that is relevant for
-the recruiter. Internal status is hidden from the candidate. External status tells the candidate what the status is of his or her application.
+Every application has several statuses that show the different phases of application. There are internal and external application status. Internal status shows the internal process that is relevant for the recruiter. The internal status is hidden from the candidate. External status tells the candidate what the status is of their application.
 
-These are the internal and external status:
+Available statuses are:
+
 |Scenario |	Internal	| External|
 |------|----------|----------|
 |The application is submitted.|	Applied|	Submitted|
@@ -59,8 +58,7 @@ To delete the applicant, follow these steps:
 
 ### Activities
 
-The hiring template that was used when creating the job ad is shown in the activity. Recruiters can use stages and steps to manage the application process. Each application will have its own activities that will 
-record the information of the candidate's hiring process. They can assign the interviews for each stage or steps.
+The hiring template used when creating the job ad is shown in the activity. Recruiters can use stages and steps to manage the application process. Each application has its own activities to record the information about the candidate's hiring process. They can assign the interviews for each stage or steps.
 To go to activities, follow these steps:
 Go to **Job ads** > **Applicants** > **Applicant** > **Activities**.
 
