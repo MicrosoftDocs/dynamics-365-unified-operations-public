@@ -12,4 +12,4 @@ ms.search.region: Global
 ms.custom: bap-template
 ---
 
-# Create AI plugins for copilots with finance and operations business logic
+# Tutorial: Create AI plugins for copilots with finance and operations business logic
