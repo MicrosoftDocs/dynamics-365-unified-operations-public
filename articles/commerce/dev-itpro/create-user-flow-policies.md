@@ -2,14 +2,15 @@
 title: Create user flow policies
 description: This article describes how to create user flow policies in the Microsoft Azure portal.
 author: BrianShook
-ms.date: 11/15/2022
-ms.topic: article 
+ms.date: 07/03/2024
+ms.topic: how-to
 audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
-
+ms.custom: 
+  - bap-template
 ---
 
 # Create user flow policies
@@ -52,7 +53,7 @@ To create a sign-up and sign-in user flow policy, follow these steps.
 1. Select **Create**.
 
 > [!NOTE]
-> The attributes **Given Name**, **Surname** and **Email address** are mandatory for correct  implementation and functionality of the policies.
+> The **Email address**, **Given Name**, and **Surname** attributes are mandatory for correct implementation and functionality of the policies.
 
 The following image is an example of the Microsoft Entra B2C sign-up and sign-in user flow.
 
