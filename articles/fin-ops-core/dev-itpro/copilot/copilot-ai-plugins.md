@@ -172,6 +172,8 @@ You can add your AI operation to the in-app sidecar chat experiences in finance 
 4. Follow the steps in the wizard, selecting the inputs and outputs from your custom API.
 5. Click **Finish**.
 
+See [Use actions with custom copilots in Copilot Studio (preview)](https://learn.microsoft.com/microsoft-copilot-studio/advanced-plugin-actions) for more information on adding actions the actions to your copilot.
+
 ### Configuring the copilot to invoke the action
 The copilot where you added the new action needs to know when to invoke the action as part of the copilot orchestration. The copilot needs a way to match a user's prompt in the chat panel to your action, or sequence of actions. There are a couple of options for enabling the copilot to include the action in the copilot orchestration:
 1. Add a topic to the copilot that calls the action, or
@@ -187,6 +189,8 @@ By default, a copilot responds to users by triggering the topic whose trigger ph
    - Select **Class an action >> Plugin (preview)**.
    - Select your action from the list.
    - **Save** the topic and **Publish** the change to the copilot.
+  
+See [Call an action from within a topic](https://learn.microsoft.com/microsoft-copilot-studio/advanced-plugin-actions#call-action-from-within-a-topic) for more information.
 
 #### Let generative AI orchestrate copilot topics and actions
 When enabling generative mode for the copilot, Copilot Studio uses generative AI to identify the most appropriate action, topic, or combination of actions and topics to respond to a user prompt. Generative AI is used to determine the user's intent and determines the appropriate sequence of actions and topics to invoke to respond to the prompt. When generative mode is enabled for the copilot, you don't need to create a separate topic to invoke the action. See [Orchestrate copilot topics and actions with generative AI (preview)](https://learn.microsoft.com/microsoft-copilot-studio/advanced-generative-actions) for more information on generative mode.
