@@ -4,7 +4,7 @@ description: Access frequently asked questions about the migration process and t
 author: rashmim
 ms.author: rashmim
 ms.topic: conceptual 
-ms.date: 06/19/2024
+ms.date: 07/03/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -29,17 +29,15 @@ This article answers frequently asked questions about the migration process and 
 | South India | Central India |
 | Japan West | Japan East |
 | UK West | UK South |
+| China North 2 | China North 3 |
+| China East 2 | China North 3 |
 
 > [!NOTE]
-> As part of the migration effort, effective January 29th, 2024, the current regions will no longer be available to finance and operations apps customers for new sandbox and production environment provisioning using Lifecycle Services. Microsoft continues to support all customer environments in their existing regions until the migration is completed for all environments in customers' Lifecycle Services projects.
+> As part of the migration effort, the current regions aren't available to finance and operations apps customers for new sandbox and production environment provisioning using Lifecycle Services. Microsoft continues to support all customer environments in their existing regions until the migration is completed for all environments in customers' Lifecycle Services projects.
 
 ## What types of environments are being migrated?
 
 We plan to migrate all sandbox and production environments in a Lifecycle Services project. There's no impact on data movement or servicing actions if environments in the same Lifecycle Services project are in different regions before or after a migration.
-
-## What is the timeline for migration completion?
-
-We plan to move all the environments in Canada East, Australia Southeast, South India, Japan West, and UK West to the target regions by the end of March 2024.
 
 ## What are the integration impacts and other considerations for this migration?
 
