@@ -4,7 +4,7 @@ description: Access frequently asked questions about the migration process and t
 author: rashmim
 ms.author: rashmim
 ms.topic: conceptual 
-ms.date: 06/19/2024
+ms.date: 07/03/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -33,7 +33,7 @@ This article answers frequently asked questions about the migration process and 
 | China East 2 | China North 3 |
 
 > [!NOTE]
-> As part of the migration effort, the current regions will no longer be available to finance and operations apps customers for new sandbox and production environment provisioning using Lifecycle Services. Microsoft continues to support all customer environments in their existing regions until the migration is completed for all environments in customers' Lifecycle Services projects.
+> As part of the migration effort, the current regions aren't available to finance and operations apps customers for new sandbox and production environment provisioning using Lifecycle Services. Microsoft continues to support all customer environments in their existing regions until the migration is completed for all environments in customers' Lifecycle Services projects.
 
 ## What types of environments are being migrated?
 
