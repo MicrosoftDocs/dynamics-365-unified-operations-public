@@ -25,12 +25,64 @@ ms.search.form:
 Demand planning includes three popular demand forecasting algorithms: *auto-ARIMA*, *ETS*, and *prophet*. The demand forecasting algorithm that you use depends on the specific characteristics of your historical data.
 
 - Auto-ARIMA works best when data follows stable patterns.
-- ETS is a versatile choice for data that has trends or seasonality.
+- Error, trend, and seasonality (ETS) is a versatile choice for data that has trends or seasonality.
 - Prophet works best with complex, real-world data.
+
+Demand planning also provides a *best fit* model (which automatically selects the best of the available algorithms for each product and dimension combination) and allows you to develop and use your own custom models.
 
 By understanding these algorithms and their strengths, you can make informed decisions to optimize your supply chain and meet customer demand.
 
 This section describes how each algorithm works and its suitability for different types of historical demand data.
+
+### Best fit model
+
+The best fit model uses machine learning to determine which of the other available algorithms  (auto-ARIMA, ETS, or Prophet) best fits your data for each product and dimension combination. In this way, different models can be used for different products. In most cases, we recommend using the best fit model because it combines the strengths of all of the other standard models. The following example shows how.
+
+Suppose you have the historical demand time-series data that includes the dimensions listed in the following table.
+
+| Product | Store |
+|---|---|
+| A | 1 |
+| A | 2 |
+| B | 1 |
+| B | 2 |
+
+When you run a forecast calculation using the Prophet model, you get the following results. In this example, you always use the Prophet model, regardless of the calculated mean absolute percentage error (MAPE).
+
+| Product | Store | forecast model | MAPE |
+|---|---|---|---|
+| A | 1 | Prophet | 0.12 |
+| A | 2 | Prophet | 0.56 |
+| B | 1 | Prophet | 0.65 |
+| B | 2 | Prophet | 0.09 |
+
+When you run a forecast calculation using the ETS model, you get the following results. In this example, you always use the ETS model, regardless of the calculated MAPE.
+
+| Product | Store | forecast model | MAPE |
+|---|---|---|---|
+| A | 1 | ETS | 0.18 |
+| A | 2 | ETS | 0.15 |
+| B | 1 | ETS | 0.21 |
+| B | 2 | ETS | 0.31 |
+
+When you run a forecast calculation using the best fit model, the system optimizes the model selection for each product across all dimension combinations. The selection changes based on patterns found in the historical sales data.
+
+| Product | Store | Prophet MAPE | Auto-ARIMA MAPE | ETS MAPE | Best fit forecast model | Best fit MAPE |
+|---|---|---|---|---|---|---|
+| A | 1  | 0.12 | 0.34 | 0.18 | Prophet | 0.12 |
+| A | 2  | 0.56 | 0.23 | 0.15 | ETS | 0.15 |
+| B | 1  | 0.65 | 0.09 | 0.21 | Auto-ARIMA | 0.09 |
+| B | 2  | 0.10 | 0.27 | 0.31 | Prophet | 0.10 |
+
+The following graph shows sales forecasts for product A at store 2 over the next 9 months, found using three different models. The green line represents the best fit model.
+
+:::image type="content" source="media/forecast-model-compare-graph.png" alt-text="Forecast results from three different forecast models based on the same historical data":::
+
+Legend:
+
+- Red = Only Prophet
+- Blue = Only ETS
+- Green = Best fit
 
 ### Auto-ARIMA: The time traveler's delight
 
@@ -40,7 +92,7 @@ Auto-ARIMA works especially well with time series data that shows a stable patte
 
 ### ETS: The shape shifter
 
-ETS is a versatile demand forecasting algorithm that adapts to the shape of your data. It can change its approach based on the characteristics of your historical demand. Therefore, it's suitable for a wide range of scenarios.
+Error, trend, and seasonality (ETS) is a versatile demand forecasting algorithm that adapts to the shape of your data. It can change its approach based on the characteristics of your historical demand. Therefore, it's suitable for a wide range of scenarios.
 
 The name ETS is an abbreviation for the three essential components that the algorithm decomposes the time series data into: error, trend, and seasonality. By understanding and modeling these components, ETS generates forecasts that capture the underlying patterns in your data. It works best with data that shows clear seasonal patterns, trends, or both. Therefore, it's an excellent choice for businesses that have seasonally affected products or services.
 
@@ -49,10 +101,6 @@ The name ETS is an abbreviation for the three essential components that the algo
 Prophet was developed by Facebook's research team. It's a modern and flexible forecasting algorithm that can handle the challenges of real-world data. It's especially effective at handling missing values, outliers, and complex patterns.
 
 Prophet works by decomposing the time series data into several components, such as trend, seasonality, and holidays, and then fitting a model to each component. This approach enables Prophet to accurately capture the nuances in your data and produce reliable forecasts. Prophet is ideal for businesses that have irregular demand patterns or frequent outliers, or businesses that are affected by special events such as holidays or promotions.
-
-### Best fit model
-
-The best fit model uses machine learning to determine which of the other available algorithms best fits your data for each product and dimension combination. In this way, different models can be used for different products.
 
 ### Custom Azure Machine Learning algorithm
 
