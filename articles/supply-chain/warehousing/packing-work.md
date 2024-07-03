@@ -42,6 +42,9 @@ Use the following procedure to set up packing locations. For each location, you 
     - **Location** – Select or enter the packing location. This location must be assigned to a location profile that uses the location type that is configured as the packing location type for your company on the **Warehouse management parameters** page. For more information, see [Pack containers for shipment](packing-containers.md).
     - **Create packing work** – Select this checkbox to create packing work each time that items are delivered to the packing location. The work will include links to related load lines, so that partial loads can be packed and shipped.
 
+> [!CAUTION]
+> When enabling the option **Create packing work** for a packing station, no items should be present on the packing station.
+
 ## Example scenario
 
 This example scenario shows how to process an outbound sales order flow by packing a container and shipping a partial load.
