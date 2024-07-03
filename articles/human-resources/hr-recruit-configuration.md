@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configuration in the Recruiting app (preview)
-description: This article describes how to configure the Human Resources Recruiting app.
+title: Configuration in the HR Recruiting app (preview)
+description: This article explains how to configure the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 07/01/2024
 ms.topic: article
@@ -23,123 +23,133 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Configuration in the Recruiting app (preview)
-
-This article describes how to configure the Recruiting app.
+# Configuration in the HR Recruiting app (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
-## Set up an email account
-
-To enable users and email accounts for incoming and outgoing messages, follow these steps:
- 
-Prerequisites:
- - Confirm that you have permission as at least a conditional access administrator role or equivalent permissions.
- - Users and emails should be available in the tenant. 
- - Verify that the added user and email account belongs to the power platform environment by using Power platform admin center and has the basic user role.
- - Ensure the email account has a valid office license before setting it up.
+This article explains how to configure the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-For users and email accounts to receive and send messages, follow these steps:
- 
-1.	In the Recruiting add-on app, go to **Settings** > **Advanced settings**.
-2.	Select **Settings** > **Email configuration**.
-3.	Select **Mailboxes**. You can ignore the pop-up regarding approving the email.
-4.	Select **All mailboxes**.
-5.	Search for the user or email and select it.
-7.	Click **Approve email**. 
-8.	Click **Test and enable mailbox**.
-9.	Verify that the incoming and outgoing email status is showing **Success**. 
- 
-If the status doesn't display **Success** after refreshing the screen, go to **Name** > **Common** > **Alerts** to find the error message.
- 
-10.	The users assigned above must sign in and allow other users to send emails on their behalf, follow these steps:
-   1.	Sign in to the Recruiting add-on App.
-   2.	Go to **Settings** > **Personalization settings** > **Email**.
-   3.	Select **Allow other Microsoft Dynamics 365 users to send email on your behalf**. This enables the power automated flows to send notification emails on behalf of this user.
- 
-               
-### Settings in Recruiting add-on
+## Set up an email account
 
-To update the settings in the recruiting add-on, follow these steps: 
-1. As the recruiting administrator, log in to Recruiting add-on app.
-2. Go to **Configurations** > **Email account configurations**.
-3. Add the user account that has the mailbox enabled.
-4. Add email accounts for **Category – application**, **Prospect**, and **Rejection**.
- 
- 
-### Customize the email account by creating new category
+**Prerequisites:**
 
-1.	Log in to https://make.preview.powerapps.com
-2.	Select **Environment**.
-3.	Go to **Solutions** > **Default solution**.
-4.	Select **Tables** from left pane.
-5.	Select **Email account configuration**.
-6.	Select **Column** under **Schema**.
-7.	Edit **Category** column and add the new choice.
-8.	To configure the newly created email account category in the Recruiting add-on app, go to **Configurations** > **Email accounts configurations**.
+- Confirm that you have at least permission as a conditional access administrator role or equivalent permissions.
+- Users and emails should be available in the tenant.
+- In the Power Platform admin center, confirm that the added user and email account belongs to the Microsoft Power Platform environment and has the basic user role.
+- Ensure that the email account has a valid Office license.
 
+To enable users and email accounts to receive and send messages, follow these steps.
 
-### How to use email templates
+1. Sign in to the Recruiting add-on app.
+1. Go to **Settings** \> **Advanced settings**.
+1. Select **Settings** \> **Email configuration**.
+1. Select **Mailboxes**. You can ignore the pop-up message about approving the email.
+1. Select **All mailboxes**.
+1. Search for the user or email account, and select it.
+1. Select **Approve email**. 
+1. Select **Test and enable mailbox**.
+1. Confirm that the incoming and outgoing email status is **Success**.
 
-The recruiting administrator or system administrator roles can set up email templates. This section lets you set up email templates for prospect, rejection, and application.
- 
-1.	Log in to the Recruiting add-on app, go to **Configurations**.
-2.	The **Email templates** command bar shows you the templates that are available for recruiting solutions.   
-3.	Fill in the description, subject, and body for the email template and save this information. 
-For more information about how to create an email template in model-driven apps, see [Power Apps](/power-apps/user/email-template-create). 
-    
+    If the status isn't **Success** after you refresh the page, go to **Name** \> **Common** \> **Alerts** to find the error message.
 
-### Customize email templates with new template type
+1. The user that you assigned must follow these steps to allow other users to send email on their behalf:
 
-1.	On the **Email templates** command bar, select **New** > select **Start with a blank template**.  
-2.	Enter the following details:  
- - **Template name**  - Give your email template a detailed name to help you identify it later.
- - **Permission level** - Select **Organization** to share your template with others.
- - **Category** - The default value is **User**. Categories determine which dynamic text fields are available for use in your template.
- - **Language** - Display installed language packs. Language also helps to categorize your templates.
- - **Create** - Opens one of two editors where you can build your template.  
- 
-3.	Set up a new flow for newly created email category/template. 
-The Email notification flow is responsible for sending emails for the standard scenarios. This flow can be triggered with the following input parameters. 
- - Record ID
- - Account category (email account category) 
-Select the trigger point for the custom scenario.
-Call the email notification flow as a child flow to send the emails with the configured template.
-  
-4.	Update the **Email notification flow** with the new category/template: 
- - Add the new case condition for newly added email template and category. 
+    1. Sign in to the Recruiting add-on app.
+    1. Go to **Settings** \> **Personalization settings** \> **Email**.
+    1. Select **Allow other Microsoft Dynamics 365 users to send email on your behalf**. This step enables the Power Automate flows to send notification emails on behalf of this user.
 
-### Company logos
+## Update settings in the Recruiting add-on
 
-Each company can have a logo that appears when the job is posted. The logo is visible to the candidate on the career site.
-To set up a logo, follow these steps:
-1. From the left menu pane, select **Company logos**.
-2. Click **+New**.
-3. Select Company by clicking on the search icon in **Company**.
-4. Choose Company from the list.
-5. Click **Save** to upload a logo.
-6. Click **Choose file**, select the logo to upload, and click **Open**. This saves the company logo.
+To update the settings in the Recruiting add-on, follow these steps.
 
-### Hiring template
-A hiring template is a template that a recruiter can use for multiple job postings. You can adjust the stages and steps to suit your needs. A stage is a round that a recruiter wants to conduct for each candidate.
-A step is an additional that may be needed under a stage.
+1. Sign in to Recruiting add-on app as the recruiting administrator.
+1. Go to **Configurations** \> **Email account configurations**.
+1. Add the user account that the mailbox is enabled for.
+1. Add email accounts for **Category – application**, **Prospect**, and **Rejection**.
 
-To create a hiring template, follow these steps:
-1. Select the hiring template from the left menu panel. Any available templates are shown.
-2. To create a new template, select **+New**.
-3. Enter a template name and description.
-4. After saving, the following section of stage and steps are available:
+## Customize the email account by creating a new category
 
-#### Add stage
-1. Select **+New** in the stage and step section. A pop-up appears.
-2. Enable the toggle is stage.
-3. Enter a stage name.
-4. Click **Save** and **Close**.
+1. Sign in to [Power Apps](https://make.powerapps.com/).
+1. Select the environment.
+1. In the left pane, select **Solutions**.
+1. In the list of solutions, select **Default Solution**.
+1. In the left pane, select **Tables**.
+1. Select **Email account configuration**.
+1. Under **Schema**, select **Columns**.
+1. Edit the **Category** column, and add the new category.
+1. To configure the new email account category in the Recruiting add-on app, go to **Configurations** \> **Email accounts configurations**.
 
-#### Add steps
-1.	Choose +New in the stage and step section. A pop-up appears.
-2.	Enter a **Step** name.
-3.	Select the stage under which you want to create the step.
-4.	Click **Save** and **Close**.
+## Use email templates
+
+The recruiting administrator or system administrator role can set up email templates. Use the information in this section to set up email templates for prospects, rejections, and applications.
+
+1. Sign in to the Recruiting add-on app.
+1. Go to **Configurations**.
+1. The **Email templates** command bar shows the templates that are available for recruiting solutions.
+1. Enter a description, subject, and body for the email template, and then save this information.
+
+For more information about how to create an email template in model-driven apps, see [Create email templates](/power-apps/user/email-template-create).
+
+### Customize email templates with a new template type
+
+1. On the **Email templates** command bar, select **New**, and then select **Start with a blank template**.
+1. Enter the following details:
+
+    - **Template name** – Enter a detailed name for the email template, so that you can identify it later.
+    - **Permission level** – To share the email template with other users, select **Organization**.
+    - **Category** – The default value is **User**. Categories determine which dynamic text fields are available in your template.
+    - **Language** – This field shows the installed language packs. The language helps categorize your templates.
+    - **Create** – Open one of two editors where you can build your template.
+
+1. Set up a new flow for the new mail category/template.
+
+    The **Email notification** flow is responsible for sending emails for the standard scenarios. This flow can be triggered through the following input parameters:
+
+    - Record ID
+    - Account category (email account category)
+
+1. Select the trigger point for the custom scenario.
+1. To use the configured template to send emails, call the **Email notification** flow as a child flow.
+1. Update the **Email notification** flow with the new category/template. Add the new case condition for the new email template and category.
+
+## Set up a company logo
+
+Each company can have a logo that appears when the job is posted. The logo is visible to candidates on the careers site.
+
+To set up a company logo, follow these steps.
+
+1. In the left pane, select **Company logos**.
+1. Select **New**.
+1. In the **Company** field, use the search button to search for the company.
+1. Select the company in the list.
+1. Select **Save** to upload a logo.
+1. Select **Choose file**, select the logo to upload, and then select **Open**. The company logo is saved.
+
+## Create a hiring template
+
+A hiring template is a template that a recruiter can use for multiple job postings. You can adjust the stages and steps to suit your needs. A *stage* is a round that a recruiter wants to conduct for each candidate. A *step* is an additional that might be needed under a stage.
+
+To create a hiring template, follow these steps.
+
+1. In the left pane, select the hiring template. All available templates are shown.
+1. To create a new template, select **New**.
+1. Enter a name and description for the template.
+1. Save your changes.
+
+After you save the hiring template, a section for stages and steps becomes available.
+
+### Add a stage
+
+1. In the stage and step section, select **New**.
+1. In the dialog box, enable the **Is stage** option.
+1. Enter a name for the stage.
+1. Select **Save** and then **Close**.
+
+### Add steps
+
+1. In the stage and step section, select **New**.
+1. In the dialog box, enter a name for the step.
+1. Select the stage that you want to create the step under.
+1. Select **Save** and then **Close**.
