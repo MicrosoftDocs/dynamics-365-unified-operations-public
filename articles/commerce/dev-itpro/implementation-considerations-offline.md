@@ -56,7 +56,7 @@ SQL Server comes in a variety of versions (such as SQL Server 2022 and SQL Serve
 
 Customers must use a SQL Server version that is currently under mainstream support. SQL Server versions that are not under mainstream support are not supported for use with Microsoft Dynamics 365 Commerce. Mainstream support dates for SQL Server versions (and other products) can be found here: [Search Product and Services Lifecycle Information](/lifecycle/products/).
 
-Customers must also periodically track and ensure that the version of SQL Server they are using continues to remain under mainstream support. If the version of SQL Server they are using is approaching the end of mainstream support, they should upgrade proactively to avoid potential disruptions. 
+Customers must also periodically ensure that the version of SQL Server they are using continues to remain under mainstream support. If the version of SQL Server they are using is approaching the end of mainstream support, they should upgrade to the latest SQL Server version to avoid potential disruptions. 
 
 #### Which SQL Server edition to use
 While not an exhaustive list, here are the most used SQL Server editions for Dynamics 365 Commerce. Various details and use case scenarios are listed for each edition.
