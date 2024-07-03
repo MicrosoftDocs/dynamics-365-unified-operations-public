@@ -189,4 +189,9 @@ By default, a copilot responds to users by triggering the topic whose trigger ph
    - **Save** the topic and **Publish** the change to the copilot.
 
 #### Let generative AI orchestrate copilot topics and actions
-When enabling generative mode for the copilot, Copilot Studio uses generative AI to identify the most appropriate action, topic, or combination of actions and topics to respond to a user prompt.
+When enabling generative mode for the copilot, Copilot Studio uses generative AI to identify the most appropriate action, topic, or combination of actions and topics to respond to a user prompt. Generative AI is used to determine the user's intent and determines the appropriate sequence of actions and topics to invoke to respond to the prompt. When generative mode is enabled for the copilot, you don't need to create a separate topic to invoke the action. See [Orchestrate copilot topics and actions with generative AI (preview)](https://learn.microsoft.com/microsoft-copilot-studio/advanced-generative-actions) for more information on generative mode.
+
+> [!IMPORTANT]
+> Generative mode is currently in preview. You may consider testing this mode for your custom copilots that include AI actions with finance and operations business logic. However, enabling generative mode is not yet supported for Copilot for finance and operations apps. Generative mode will be supported and enabled by default in Copilot for finance and operations apps in a future release as feature and quality benchmarks are validated.
+
+
