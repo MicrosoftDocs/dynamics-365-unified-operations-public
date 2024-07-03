@@ -81,7 +81,8 @@ Your new class is creating definition for a [Dataverse custom API](https://learn
 
 The new class must implement the `ICustomAPI` class and be decorated with the `CustomAPIAttribute` class. This provides attributes to your new class indicating that it is a Custom API that is callable from Microsoft Dataverse.
 
-**Parameters**<br><p>
+**Parameters**
+
 | Parameter | Type | Description |
 | --------- | ---- | ----------- |
 | CustomAPIName | string | The natural language name for the action. |
