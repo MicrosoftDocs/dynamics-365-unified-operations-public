@@ -22,13 +22,13 @@ ms.search.form:
 
 ## <a name="forecasting-algorithms"></a>Demand forecasting algorithms
 
-Demand planning includes three popular demand forecasting algorithms: *auto-ARIMA*, *ETS*, and *prophet*. The demand forecasting algorithm that you use depends on the specific characteristics of your historical data.
+Demand planning includes three popular demand forecasting algorithms: *auto-ARIMA*, *ETS*, and *Prophet*. The demand forecasting algorithm that you use depends on the specific characteristics of your historical data.
 
 - Auto-ARIMA works best when data follows stable patterns.
 - Error, trend, and seasonality (ETS) is a versatile choice for data that has trends or seasonality.
 - Prophet works best with complex, real-world data.
 
-Demand planning also provides a *best fit* model (which automatically selects the best of the available algorithms for each product and dimension combination) and allows you to develop and use your own custom models.
+Demand planning also provides both a *best fit* model (which automatically selects the best of the available algorithms for each product and dimension combination) and the ability to develop and use your own custom models.
 
 By understanding these algorithms and their strengths, you can make informed decisions to optimize your supply chain and meet customer demand.
 
@@ -38,7 +38,7 @@ This section describes how each algorithm works and its suitability for differen
 
 The best fit model uses machine learning to determine which of the other available algorithms  (auto-ARIMA, ETS, or Prophet) best fits your data for each product and dimension combination. In this way, different models can be used for different products. In most cases, we recommend using the best fit model because it combines the strengths of all of the other standard models. The following example shows how.
 
-Suppose you have the historical demand time-series data that includes the dimensions listed in the following table.
+Suppose you have the historical demand time-series data that includes the dimension combinations listed in the following table.
 
 | Product | Store |
 |---|---|
@@ -74,7 +74,7 @@ When you run a forecast calculation using the best fit model, the system optimiz
 | B | 1  | 0.65 | 0.09 | 0.21 | Auto-ARIMA | 0.09 |
 | B | 2  | 0.10 | 0.27 | 0.31 | Prophet | 0.10 |
 
-The following graph shows sales forecasts for product A at store 2 over the next 9 months, found using three different models. The green line represents the best fit model.
+The following graph shows the overall sales forecast across all dimensions (all products in all stores) over the next nine months, found using three different forecast models. The green line represents the best fit model. Because best fit chooses the best forecast model for each product and dimension combination, it avoids the outliers that could occur from forcing a single model on all dimension combinations. As a result, the overall best-fit forecast resembles an average of the single-model forecasts.
 
 :::image type="content" source="media/forecast-model-compare-graph.png" alt-text="Forecast results from three different forecast models based on the same historical data":::
 
