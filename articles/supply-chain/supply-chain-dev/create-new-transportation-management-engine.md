@@ -1,15 +1,15 @@
 ---
 title: Create a new transportation management engine
-description: This article describes how to create a new transportation management engine in Dynamics 365 Supply Chain Management. 
+description: Learn how to create a new transportation management engine in Dynamics 365 Supply Chain Management, including an outline on creating new TMS engines. 
 author: Weijiesa
 ms.author: weijiesa
-ms.reviewer: kamaybac
-ms.search.form: TMSGenericEngine, TMSRateEngine, TMSMileageEngine, TMSEngineParameters
 ms.topic: how-to
 ms.date: 06/10/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: TMSGenericEngine, TMSRateEngine, TMSMileageEngine, TMSEngineParameters
 ---
 
 # Create a new transportation management engine

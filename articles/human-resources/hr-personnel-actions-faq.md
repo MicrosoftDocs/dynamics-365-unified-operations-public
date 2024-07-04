@@ -18,7 +18,7 @@ audience: Application User
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: ajitchandran
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 

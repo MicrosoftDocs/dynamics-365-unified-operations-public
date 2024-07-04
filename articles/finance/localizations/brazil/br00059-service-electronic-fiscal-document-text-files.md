@@ -1,12 +1,13 @@
 ---
 title: Service electronic fiscal document using text files (Brazil)
 description: After a sales invoice for a service is issued in São Paulo city, you can generate the RPS for a given service fiscal document that has been posted.
-author: AdamTrukawka
-ms.author: atrukawk
+author: ankviklis
+ms.author: ankviklis
 ms.topic: how-to
-ms.date: 06/27/2017
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0

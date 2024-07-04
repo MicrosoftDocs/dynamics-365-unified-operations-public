@@ -1,16 +1,16 @@
 ---
 title: Container packing strategies
-description: This article describes the differences between container packing strategies and provides examples.
+description: Learn about the differences between container packing strategies and provides examples with an example of the flow for container packing strategies.
 author: Mirzaab
-ms.date: 08/09/2022
+ms.author: mirzaab
 ms.topic: article
-ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable, WHSOutboundLoadPlanningWorkbench
-audience: Application User
+ms.date: 08/09/2022
 ms.reviewer: kamaybac
 ms.collection: get-started
+audience: Application User
 ms.search.region: Global
-ms.author: mirzaab
 ms.search.validFrom: 2021-06-11
+ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable, WHSOutboundLoadPlanningWorkbench
 ms.dyn365.ops.version: 10.0.19
 ---
 

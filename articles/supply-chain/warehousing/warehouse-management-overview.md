@@ -1,15 +1,15 @@
 ---
 title: Warehouse management overview
-description: Use Warehouse management to monitor and automate warehouse processes. 
+description: Learn how to use Warehouse management to monitor and automate warehouse processes, including a detailed list of warehouse management processes and resources. 
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSParameters, WHSWorkPool
 ms.topic: how-to
 ms.date: 05/16/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: WHSParameters, WHSWorkPool
 ---
 
 # Warehouse management overview

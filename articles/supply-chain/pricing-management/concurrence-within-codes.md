@@ -15,7 +15,7 @@ ms.search.form:
 # Resolve concurrency within price component codes (preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 Concurrency rules let you define what happens if multiple pricing rules apply to the same order and/or order line. You can set up concurrency rules to control whether the customer receives just one of the matching rules (and if so, which one they receive), or whether the rules are combined (and if so, how they're combined). There are two types of concurrency:

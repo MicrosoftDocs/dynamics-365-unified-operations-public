@@ -1,10 +1,12 @@
 ---
 title: Customer electronic invoices in Denmark
 description: Learn how to set up and process electronic invoices in Denmark, including prerequisites and anoutline on importing electronic reporting configurations.
-author: mrolecki
-ms.author: mrolecki
-ms.topic: article
-ms.date: 12/20/2021
+author: ilikond
+ms.author: ikondratenko
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Norway

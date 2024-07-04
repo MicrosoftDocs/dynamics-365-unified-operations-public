@@ -1,10 +1,12 @@
 ---
 title: Configure service environments and connected applications
 description: Learn about how to configure your service environments and connected applications, including an overview on creating a service environment.
-author: gionoder
-ms.author: johnmichalak
-ms.topic: article
-ms.date: 02/09/2022
+author: ilikond
+ms.author: ikondratenko
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Application User

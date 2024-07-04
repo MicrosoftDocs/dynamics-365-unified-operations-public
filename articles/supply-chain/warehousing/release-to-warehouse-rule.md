@@ -1,15 +1,15 @@
 ---
 title: Release to warehouse rule
-description: This article provides information about the Release to warehouse rule feature, which provides flexibility during release to the warehouse. It adds a configuration option that controls whether the system allows partially reserved order lines to be released.
+description: Learn about about the Release to warehouse rule feature, which provides flexibility during release to the warehouse, including a step-by-step process.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSParameters
 ms.topic: how-to
 ms.date: 06/07/2024
-audience: Application User
 ms.custom:
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: WHSParameters
 ---
 
 # Release to warehouse rule

@@ -13,8 +13,6 @@ items:
         href: hr-infrastructure-merge.md
       - name: Human Resources infrastructure customer migration
         href: hr-cust-migration.md  
-      - name: Human Resources infrastructure merge FAQ
-        href: hr-infrastructure-merge-faq.md
       - name: Human Resources customer migration FAQ
         href: customer-migration.md 
       - name: Human Resources infrastructure merge known issues
@@ -95,7 +93,7 @@ items:
           href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?context=/dynamics365/context/human-resources        
       - name: Set up and manage instances
         items:
-        - name: Provision Human Resources in the finance and operations infrastructure
+        - name: Provision Dynamics 365 Human Resources 
           href: hr-admin-setup-provision-fo.md
       - name: Set up data integration
         items:
@@ -296,9 +294,7 @@ items:
           - name: Human Resources doesn't appear in Dynamics 365 apps
             href: hr-admin-troubleshooting-not-in-apps.md
           - name: Reporting options
-            href: hr-admin-troubleshooting-reporting.md
-          - name: Integration FAQ
-            href: hr-admin-troubleshooting-integration.md      
+            href: hr-admin-troubleshooting-reporting.md    
       - name: Set up Human Resources
         items:
         - name: Configure Human resources parameters
@@ -463,6 +459,8 @@ items:
       items:
       - name: Employee self service overview
         href: hr-employee-manager-self-service-overview.md
+      - name: Employee self service workspace summary
+        href: ess-workspace-summary.md
       - name: Manager self service overview  
         href: mss-overview.md
       - name: Create custom links in Manager self service
@@ -691,8 +689,6 @@ items:
           href: hr-benefits-setup-rounding-rules.md
         - name: Create employment categories
           href: hr-benefits-setup-employment-categories.md
-        - name: Set up employment types
-          href: hr-benefits-setup-employment-types.md
         - name: Configure employee self service
           href: hr-benefits-setup-employee-self-service.md
         - name: Create benefit plans
@@ -1061,6 +1057,14 @@ items:
           href: hcm-position-type.md
         - name: HCM unions entity
           href: hcm-union.md
+        - name: Variable compensation type entity  
+        - name: HCM person identification entities
+          href: hcm-person-id.md
+        - name: HCM job compensation entities
+          href: hcm-job-comp.md
+        - name: HCM person details entities
+          href: hcm-person-details.md
+        - name: Variable compensation type entity  
         - name: HCM person identification entities
           href: hcm-person-id.md
         - name: HCM job compensation entities
@@ -1143,6 +1147,12 @@ items:
         items:
           - name: API payroll integration with Dayforce
             href: hr-admin-payroll-api-integration-dayforce.md
+  - name: Responsible AI
+    items:
+    - name: Overview 
+      href: transpar-note-hr.md
+    - name: Employee self service workspace summary
+      href: ess-workspace-summary.md
   - name: Development and administration for finance and operations apps 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 

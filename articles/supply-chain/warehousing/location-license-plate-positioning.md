@@ -1,15 +1,15 @@
 ---
 title: Location license plate positioning
-description: License plate location positioning lets you see where a license plate is located in a multi-pallet location, such as a location that uses double-deep pallet racking.
+description: License plate location positioning lets you see where a license plate is located in a multi-pallet location, such as locations with double-deep pallet racking.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form:  WHSLicensePlate, WHSLocationProfile, WHSLocDirTable
 ms.topic: how-to
 ms.date: 06/07/2024
-audience: Application User
 ms.custom:
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form:  WHSLicensePlate, WHSLocationProfile, WHSLocDirTable
 ---
 
 # Location license plate positioning

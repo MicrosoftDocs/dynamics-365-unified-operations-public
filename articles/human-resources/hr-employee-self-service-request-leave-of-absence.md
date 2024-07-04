@@ -4,7 +4,7 @@
 title: Request a leave of absence
 description: Submit a leave of absence request. 
 author: twheeloc
-ms.date: 06/01/2020
+ms.date: 06/20/2024
 ms.topic: article
 
 
@@ -19,7 +19,7 @@ audience: Application User
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: ajitchandran
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
 

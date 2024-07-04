@@ -1,11 +1,12 @@
 ---
 title: Import features from the Global repository
 description: Learn how to import Globalization features from the Global repository, with a step-by-step process detailing how to import features.
-author: gionoder
-ms.author: johnmichalak
-ms.topic: article
-ms.date: 02/11/2022
-ms.custom:
+author: ilikond
+ms.author: ikondratenko
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global

@@ -1,12 +1,13 @@
 ---
 title: Depreciation bonuses (Russia)
 description: Learn about depreciation bonuses for Russian fixed assets, including step-by-step processes for setting up and calculating depreciation bonuses.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 04/20/2020
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/20/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1

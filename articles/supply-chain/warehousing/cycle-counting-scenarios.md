@@ -3,13 +3,13 @@ title: Cycle counting example scenarios
 description: This article provides a collection of scenarios that explore the cycle counting features of Microsoft Dynamics 365 Supply Chain Management.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage, SalesShipmentDeviation, WHSRFMenuItemCycleCount, WHSWorkLineCycleCount
 ms.topic: how-to
 ms.date: 06/07/2024
-audience: Application User
 ms.custom:
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage, SalesShipmentDeviation, WHSRFMenuItemCycleCount, WHSWorkLineCycleCount
 ---
 
 # Cycle counting example scenarios

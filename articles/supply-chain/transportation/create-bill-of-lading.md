@@ -1,15 +1,15 @@
 ---
 title: Create a bill of lading
-description: This article describes how to create a bill of lading when using warehouse management processes (WMS).  
+description: Learn how to create a bill of lading when using warehouse management processes (WMS), including an outline on a master bill of lading.  
 author: Weijiesa
 ms.author: weijiesa
-ms.reviewer: kamaybac
-ms.search.form: WHSBillOfLading, WHSLoadPlanningWorkbench, WHSBillOfLadingCarrier, WHSBillOfLadingOrder, WHSOutboundLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench
 ms.topic: how-to
 ms.date: 06/07/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: WHSBillOfLading, WHSLoadPlanningWorkbench, WHSBillOfLadingCarrier, WHSBillOfLadingOrder, WHSOutboundLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench
 ---
 
 # Create a bill of lading

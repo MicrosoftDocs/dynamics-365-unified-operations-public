@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Scan bar codes using a camera in the Warehouse Management mobile app
-description: This article explains how to set up the Warehouse Management mobile app to scan bar codes using a camera on a mobile device. 
+description: Learn how to set up the Warehouse Management mobile app to scan bar codes using a camera on a mobile device, including an outline on supported bar code formats. 
 author: Mirzaab
-ms.date: 01/03/2018
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: WHSMobileAppField
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mirzaab
+ms.topic: article
+ms.date: 01/03/2018
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2017-01-03
+ms.search.form: WHSMobileAppField
 ms.dyn365.ops.version: AX 8.0.0
-
 ---
 
 # Scan bar codes using a camera in the Warehouse Management mobile app

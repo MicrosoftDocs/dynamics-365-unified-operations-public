@@ -1,9 +1,11 @@
 ---
 title: Use the electronic invoicing service to import vendor invoices
 description: Learn about how to import vendor invoices using the Electronic Invoicing service, including an outline on setting up vendor invoice import in RCS.
-author: gionoder
-ms.author: johnmichalak
-ms.topic: article
+author: ilikond
+ms.author: ikondratenko
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 09/03/2021
 ms.reviewer: johnmichalak
 ms.collection: get-started

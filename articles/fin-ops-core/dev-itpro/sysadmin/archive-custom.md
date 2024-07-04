@@ -118,3 +118,17 @@ final class LedgerArchiveAutomationJobRequestCreator_GeneralLedger_Extension
 | | SALESTABLE\_RU | SALESTABLEHISTORY\_RU | SalestableruBiEntity | mserp\_SalestableruBiEntity |
 | | SALESTABLE\_W | SALESTABLEHISTORY\_W | SalestablewBiEntity | mserp\_SalestablewBiEntity |
 | Supply Chain Management Inventory transaction | INVENTTRANSARCHIVE | INVENTTRANSARCHIVEHISTORY | InventtransarchiveBiEntity | mserp\_InventTransArchiveBiEntity |
+| Supply Chain Management Inventory Journal | INVENTJOURNALTABLE | INVENTJOURNALTABLEHISTORY | InventjournaltableBiEntity | mserp\_InventjournaltableBiEntity |
+| | INVENTJOURNALTABLE_IN | INVENTJOURNALTABLE_INHISTORY | InventjournaltableinBiEntity | mserp\_InventjournaltableinBiEntity |
+| | INVENTJOURNALTRANS | INVENTJOURNALTRANSHISTORY | InventjournaltransBiEntity | mserp\_InventjournaltransBiEntity |
+| | INVENTJOURNALTRANS_IN | INVENTJOURNALTRANS_INHISTORY | InventjournaltransinBiEntity | mserp\_InventjournaltransinBiEntity |
+| Finance Tax Trans | TAXTRANS | TAXTRANSHISTORY | TaxtransBiEntity | mserp\_TaxtransBiEntity |
+| | TAXTRANS\_BR | TAXTRANSHISTORY\_BR | TaxtransbrBiEntity | mserp\_TaxtransbrBiEntity |
+| | TAXTRANSGENERALJOURNALACCOUNTENTRY | TAXTRANSGENERALJOURNALACCOUNTENTRYHISTORY | TaxtransgeneraljournalaccountentryBiEntity | mserp\_TaxtransgeneraljournalaccountentryBiEntity |
+| | TAXTRANS\_IN | TAXTRANSHISTORY\_IN | TaxtransinBiEntity | mserp\_TaxtransinBiEntity |
+| | TAXTRANS_IT | TAXTRANSHISTORY\_IT | TaxtransitBiEntity | mserp\_TaxtransitBiEntity |
+| | TAXTRANS_REPORTING | TAXTRANSHISTORY_REPORTING | TaxtransreportingBiEntity | mserp\_TaxtransreportingBiEntity |
+| | TAXTRANS\_RU | TAXTRANSHISTORY\_RU | TaxtransruBiEntity | mserp\_TaxtransruBiEntity |
+| | TAXTRANSSUBLEDGERJOURNALACCOUNTENTRY | TAXTRANSSUBLEDGERJOURNALACCOUNTENTRYHISTORY | TaxtranssubledgerjournalaccountentryBiEntity | mserp\_TaxtranssubledgerjournalaccountentryBiEntity |
+| | TAXTRANS\_TH | TAXTRANSHISTORY\_TH | TaxtransthBiEntity | mserp\_TaxtransthBiEntity |
+| | TAXTRANS\_W | TAXTRANSHISTORY\_W | TaxtranswBiEntity | mserp\_TaxtranswBiEntity | 

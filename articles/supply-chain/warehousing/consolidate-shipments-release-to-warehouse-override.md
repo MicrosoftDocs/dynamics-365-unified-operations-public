@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Consolidate shipments when the shipment consolidation policy is overridden
-description: This article presents a scenario where one or more sales lines must be manually released to the warehouse from the Release to warehouse page, and the system-defined shipment consolidation policy must be overridden before the release.
+description: Learn about a scenario where one or more sales lines must be manually released to the warehouse from the Release to warehouse page.
 author: Mirzaab
-ms.date: 05/12/2020
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, WHSShipConsolidationSetShipment, WHSShipmentConsolidation, WHSFilterGenerallyAvail, WHSReleaseToWarehouse
-# ROBOTS:
-audience: Application User
-# ms.devlang:
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-# ms.custom:
-ms.search.region: Global
-# ms.search.industry:
 ms.author: mirzaab
+ms.topic: article
+ms.date: 05/12/2020
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-05-01
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, WHSShipConsolidationSetShipment, WHSShipmentConsolidation, WHSFilterGenerallyAvail, WHSReleaseToWarehouse
 ms.dyn365.ops.version: 10.0.6
 ---
 

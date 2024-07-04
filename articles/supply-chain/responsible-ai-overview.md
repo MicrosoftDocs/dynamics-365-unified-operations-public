@@ -1,15 +1,15 @@
 ---
 title: Responsible AI FAQs for Dynamics 365 Supply Chain Management
-description: Responsible AI FAQs provide information about the AI technology that's used in Microsoft Dynamics 365 Supply Chain Management. They include key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 06/19/2023
-ms.collection:
-  - bap-ai-copilot
-ms.custom:
-  - responsible-ai-faqs
-ms.topic: article
+description: Responsible AI FAQs provide information about the AI technology that's used in Microsoft Dynamics 365 Supply Chain Management.
 author: kamaybac
 ms.author: kamaybac
+ms.topic: article
+ms.date: 06/19/2023
+ms.custom:
+  - responsible-ai-faqs
 ms.reviewer: kamaybac
+ms.collection:
+  - bap-ai-copilot
 ---
 
 # Responsible AI FAQs for Dynamics 365 Supply Chain Management

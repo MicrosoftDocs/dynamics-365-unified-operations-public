@@ -1,22 +1,22 @@
 ---
 title: Machine status scenario (preview)
-description: This article describes the machine status scenario, which lets you use sensor data to monitor the availability of your equipment.
+description: Learn about the machine status scenario, which lets you use sensor data to monitor the availability of your equipment with an outline on scenario dependencies.
 author: johanhoffmann
-ms.date: 09/02/2022
-ms.topic: article
-ms.search.form: IoTIntCoreScenarioManagement, IoTIntCoreNotification, IoTIntMfgResourceStatusConfiguration, IoTIntMfgResourceStatus
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: johanho
+ms.topic: article
+ms.date: 09/02/2022
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-09-02
+ms.search.form: IoTIntCoreScenarioManagement, IoTIntCoreNotification, IoTIntMfgResourceStatusConfiguration, IoTIntMfgResourceStatus
 ms.dyn365.ops.version: 10.0.30
 ---
 
 # Machine status scenario (preview)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 The *machine status* scenario lets you use sensor data to monitor the availability of your equipment. If you set up a sensor that sends a signal when a production job on a machine resource produces output, but no sensor signal is received within a specified interval, a notification is shown on the supervisor's dashboard.

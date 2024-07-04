@@ -1,15 +1,15 @@
 ---
 title: Intercompany packing slips
-description: This article describes how to generate and print packing slips for intercompany transactions
+description: Learn how to generate and print packing slips for intercompany transactions, including an outline on printing intercompany packing slips.
 author: Henrikan
-ms.date: 09/01/2021
-ms.topic: article
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: henrikan
+ms.topic: article
+ms.date: 09/01/2021
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-09-01
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 ms.dyn365.ops.version: 10.0.22
 ---
 

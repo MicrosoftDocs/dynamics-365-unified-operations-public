@@ -1,16 +1,16 @@
 ---
 title: Transportation management overview
-description: This article gives an overview of the transportation management functionality in Supply Chain Management.
+description: Access an overview of the transportation management functionality in Supply Chain Management, including a table outlining information for various scenarios.
 author: Weijiesa
 ms.author: weijiesa
-ms.reviewer: kamaybac
-ms.search.form: TMSParameters,TMSRateRouteWorkbench, WHSLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench, TMSLoadBuildTemplateApply, WHSLoadTemplate, TMSTransportationStatus, TMSLoadSeal, TMSLoadBuildProposal, TMSLoadBuildWorkbench, TMSLoadBuildStrategy, TMSLoadBuildStrategyAttributeValue
 ms.topic: overview
 ms.date: 05/22/2024
-audience: Application User
-ms.search.region: Global
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
+ms.search.form: TMSParameters,TMSRateRouteWorkbench, WHSLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench, TMSLoadBuildTemplateApply, WHSLoadTemplate, TMSTransportationStatus, TMSLoadSeal, TMSLoadBuildProposal, TMSLoadBuildWorkbench, TMSLoadBuildStrategy, TMSLoadBuildStrategyAttributeValue
 ---
 
 # Transportation management overview

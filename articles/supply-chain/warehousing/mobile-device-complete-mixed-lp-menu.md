@@ -1,15 +1,15 @@
 ---
 title: Set up a mobile device menu item for completing mixed license plates
-description: This article explains how to set up a mobile device menu item that helps streamline warehouse operations by letting workers continue to process an incoming shipment immediately after they register its arrival.
+description: Learn how to set up a mobile device menu item that helps streamline warehouse operations by letting workers continue to process an incoming shipment.
 author: Mirzaab
 ms.author: mirzaab
-ms.reviewer: kamaybac
-ms.search.form: WHSRFMenuItem
 ms.topic: how-to
 ms.date: 03/19/2024
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: WHSRFMenuItem
 ---
 
 # Set up a mobile device menu item for completing mixed license plates

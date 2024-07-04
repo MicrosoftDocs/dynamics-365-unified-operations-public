@@ -16,7 +16,7 @@ audience: Application User
 ms.assetid: 6aee97ac-29f7-4b3c-8aa1-c65810de3090
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: ajitchandran
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 
 

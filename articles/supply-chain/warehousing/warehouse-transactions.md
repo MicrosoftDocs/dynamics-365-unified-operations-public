@@ -1,15 +1,15 @@
 ---
 title: Warehouse-specific inventory transactions
-description: This article provides information about warehouse-specific inventory transactions, which are database records that store information about how inventory is stored and moved around in the warehouse.
+description: Learn about warehouse-specific inventory transactions, which are database records that store information about how inventory is stored in the warehouse.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSParameters, WHSWarehouseTransactions
 ms.topic: how-to
 ms.date: 04/19/2024
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: WHSParameters, WHSWarehouseTransactions
 ---
 
 # Warehouse-specific inventory transactions

@@ -1,15 +1,15 @@
 ---
 title: Create sales orders
-description: This procedure shows you how to create a sales order. 
+description: Learn how to create a sales order, including outlines and step-by-step processes for entering sales order header details and entering sales order line details.
 author: Henrikan
 ms.author: henrikan
-ms.reviewer: kamaybac
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmFixed, InventProductDimensionLookup, SalesTotals, SalesTableDelete, SalesTableListPagePreviewPage, SalesUpdateRemain
 ms.topic: how-to
 ms.date: 05/03/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, InventDimParmFixed, InventProductDimensionLookup, SalesTotals, SalesTableDelete, SalesTableListPagePreviewPage, SalesUpdateRemain
 ---
 
 # Create sales orders

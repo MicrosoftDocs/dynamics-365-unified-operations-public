@@ -4,9 +4,10 @@ description: Learn how to configure Electronic reporting (ER) destinations for p
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: overview
-ms.date: 02/02/2022
+ms.custom: 
+  - bap-template
+ms.date: 06/20/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2022-01-27
 ms.dyn365.ops.version: 10.0.25

@@ -1,16 +1,16 @@
 ---
 title: Depreciation methods (Russia)
 description: Learn about the various fixed asset depreciation methods for Russia, including outlines on linear and non-linear depreciation methods.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 09/20/2018
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-ms.search.industry: 
 ---
 
 # Depreciation methods (Russia)
