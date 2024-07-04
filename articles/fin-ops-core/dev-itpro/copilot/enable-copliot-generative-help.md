@@ -1,6 +1,6 @@
 ---
 title: Enable generative help and guidance with Copilot
-description: This article describes how administrators can enable generative help and guidance with Copilot in finance and operations apps.
+description: This article describes how administrators can enable and troubleshoot generative help and guidance with Copilot in finance and operations apps.
 author: cabeln
 ms.author: cabeln
 ms.reviewer: johnmichalak
@@ -26,12 +26,11 @@ This article describes availability and explains how to enable generative help a
 
 After you complete the steps in this article, the Copilot icon appears at the top of all finance and operations apps. Users can then select the Copilot icon to access generative help and guidance.
 
-> [!NOTE]
-> Unless the Copilot capabilities that this article describes are turned off for the Dataverse environment or at the tenant level, you can use the Copilot icon to open the Copilot sidecar after the Copilot bot is successfully deployed and published.
+## Enable the feature
 
-## Prerequisites
+In most cases, generative help and guidance with Copilot is available by default provided [Power Platform integration](../power-platform/enable-power-platform-integration.md) is enabled for your environment.
 
-Make sure that you've  enabled Copilot capabilities in finance and operations apps, as described in [Enable Copilot capabilities in finance and operations apps](enable-copilot.md).
+If the feature isn't already available on your system, see [Enable Copilot capabilities in finance and operations apps](enable-copilot.md) for details about how to enable it.
 
 ## Troubleshooting
 
@@ -53,4 +52,4 @@ After a governing condition is addressed, you might have to take additional acti
 
 If you're running finance and operations apps version 10.0.38 or 10.0.39, you can turn off the conversational Copilot sidecar by going to the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace and disabling the feature *User experience for Copilot in Finance and Operations*.
 
-If you disable Bing Search ....
+In other versions of finance and operations apps, you can disable the conversational Copilot sidecar by turning off Bing Search. For more information, see [Enable copilots and generative AI features](/power-platform/admin/geographical-availability-copilot).

@@ -46,9 +46,9 @@ Each Copilot feature may be limited to only certain data regions and languages. 
 
 ## Power Platform requirements
 
-To use Copilot features in finance and operations apps, [Power Platform integration](../power-platform/enable-power-platform-integration.md) must be enabled in Microsoft Dynamics Lifecycle Services. (However, you don't have to enable dual-write for this feature.)
+To use Copilot features in finance and operations apps, [Power Platform integration](../power-platform/enable-power-platform-integration.md) must be enabled in Microsoft Dynamics Lifecycle Services. (You don't have to enable dual-write if you don't use it.)
 
-If you have Power Platform integration enabled, all of the required Copilot features are usually deployed automatically. If the features aren't working for you as expected, review the following subsections for information that may help you troubleshoot any issues.
+If you have Power Platform integration enabled, all of the required Copilot features are usually deployed to your environment automatically. If the features aren't working for you as expected, review the following subsections for information that may help you troubleshoot any issues.
 
 ### Confirm that the required Dynamics 365 apps are installed
 
@@ -75,11 +75,11 @@ Generative answers required Bing Search and, depending on the availability these
 
 You don't have to set up support for cross-region calls if the required AI services are already available in your Dataverse region.
 
-If Bing Search is disabled, or ff cross-region data movement is required, but it's disabled, users won't be able to open the Copilot sidecar, or the Copilot sidecar won't provide answers, depending on the situation.
+If Bing Search is disabled, or if cross-region data movement is required but is disabled, users won't be able to open the Copilot sidecar, or the Copilot sidecar won't provide answers, depending on the situation.
 
 ### Confirm that your Power Platform environment can publish bots with AI features
 
-The tenant-level setting that permits deployment of bots in Dataverse environments is enabled by default.
+The tenant-level setting that permits deployment of bots in Dataverse environments is enabled by default, but it can be disabled by a tenant admin. If this setting is disabled, you won't be able to use Copilot features in finance and operations apps.
 
 To check and enable Power Platform to publish bots with AI features, follow these steps.
 
@@ -89,7 +89,7 @@ To check and enable Power Platform to publish bots with AI features, follow thes
 1. The **Publish bots with AI features** dialog opens. Set the slider to **Enabled**.
 1. Select **Save**.
 
-## Further Copilot installation information
+## Feature-specific installations
 
 As mentioned previously, most Copilot features in finance and operations apps require that your environment has Power Platform integration enabled and also meets the other requirements outlined in this article. For some features, this foundation is all that's needed, but other features may require additional installations and/or feature management. The following table lists each Copilot feature and gives links to articles that describe how to enable them.
 
