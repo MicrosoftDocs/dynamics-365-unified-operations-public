@@ -3,14 +3,13 @@ title: Certificate rotation
 description: Learn how to place existing certificates and update the references within the environment to use the new certificates.
 author: faix
 ms.author: osfaixat
-ms.topic: article
-ms.date: 08/16/2023
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
 ms.reviewer: johnmichalak
-audience: IT Pro
 ms.search.region: Global 
 ms.search.validFrom: 2019-04-30
-# ms.search.form:  [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: Platform update 25 
 ---
 

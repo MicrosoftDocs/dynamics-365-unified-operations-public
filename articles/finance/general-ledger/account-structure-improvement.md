@@ -1,25 +1,17 @@
 ---
-# required metadata
-
 title: Account structure activation performance enhancement
-description: This article explains the new performance enhancement for the account structure activation process.
+description: Learn about the new performance enhancement for the account structure activation process, including an outline on account structure activation tips.
 author: RyanCCarlson2
-ms.date: 10/31/2022
-ms.topic: conceptual
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global 
-# ms.search.industry: 
 ms.author: rcarlson
+ms.topic: conceptual
+ms.date: 10/31/2022
+ms.custom:
+ms.reviewer: kfend
+audience: Application User 
+ms.search.region: Global 
 ms.search.validFrom: 2022-10-08
+ms.search.form:
 ms.dyn365.ops.version: 10.0.31
-
 ---
 
 # Account structure activation performance enhancement

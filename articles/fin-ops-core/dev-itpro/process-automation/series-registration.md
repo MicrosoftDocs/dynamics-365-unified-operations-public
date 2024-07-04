@@ -4,7 +4,7 @@ description: Learn about how to create a series for the process automation frame
 author: RyanCCarlson2
 ms.author: rcarlson
 ms.topic: article
-ms.date: 09/10/2020
+ms.date: 06/10/2024
 ms.custom:
 ms.reviewer: johnmichalak
 audience: Developer

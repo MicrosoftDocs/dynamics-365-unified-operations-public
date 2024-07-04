@@ -1,15 +1,15 @@
 ---
 title: Intercompany currency conversions
-description: This article explains currency conversions for intercompany transactions
+description: Learn about currency conversions for intercompany transactions, including a list of fields that are currency converted when synchronized.
 author: Henrikan
-ms.date: 09/01/2021
-ms.topic: article
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: henrikan
+ms.topic: article
+ms.date: 09/01/2021
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-09-01
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 ms.dyn365.ops.version: 10.0.22
 ---
 

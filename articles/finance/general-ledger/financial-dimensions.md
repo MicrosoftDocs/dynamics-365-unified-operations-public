@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Financial dimensions
-description: This article describes the various types of financial dimensions and how they're set up.
+description: Learn about the various types of financial dimensions and how they're set up, including outlines on custom dimensions, activating dimensions, and translations.
 author: aprilolson
-ms.date: 03/07/2024
-ms.topic: article
-ms.custom: evergreen
-
-# optional metadata
-
-ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
+ms.topic: article
+ms.date: 03/07/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2018-10-31
+ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Financial dimensions
@@ -143,7 +134,7 @@ When you use an entity to import data, if that entity imports dimensions, the de
 
 ## Financial dimension service
 
-The Financial dimension service add-in is available in your Microsoft Dynamics Lifecycle Services environment. It provides improved performance when you use the Data management framework to import a journal that has a large number of lines. To use the service, you must enable it on the **Financial dimension service parameters** page. Currently, the service works only on imported journals that have 500 lines or more. In addition, it can currently process only general journals where the **Ledger** account type is set on the journal lines. Other account types on journal lines, such as **Customer**, **Vendor**, and **Bank**, aren't currently supported. This service won't be invoked when derived dimensions are set up in the system.
+The Financial dimension service add-in is available in your Microsoft Dynamics Lifecycle Services environment. It provides improved performance when you use the Data management framework to import a journal that has a large number of lines. To use the service, you must enable it on the **Financial dimension service parameters** page. Currently, the service works only on imported journals. In addition, it can currently process only general journals where the **Ledger** account type is set on the journal lines. Other account types on journal lines, such as **Customer**, **Vendor**, and **Bank**, aren't currently supported. This service won't be invoked when derived dimensions are set up in the system.
 
 The Financial dimension service provides improved performance when journals are imported by using a new service that runs in parallel to the data import. It runs only on the main account and financial dimension data in the journal, and it generates the dimension combinations that are specified in the ledger account string field on the journal lines. The processing converts this string into the structured data storage that the Financial dimension framework uses throughout the rest of the product for validation, summary reporting, and inquiries. For more information about summary reporting of financial dimension data, see [Financial dimension sets](financial-dimension-sets.md).
 

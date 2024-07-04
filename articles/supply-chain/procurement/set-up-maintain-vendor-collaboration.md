@@ -1,15 +1,15 @@
 ---
 title: Set up and maintain vendor collaboration
-description: This article explains how to set up vendor collaboration in Dynamics 365 Supply Chain Management. It also explains how to provision new vendor collaboration users and manage the security roles for those users.
+description: Learn how to set up vendor collaboration in Dynamics 365 Supply Chain Management and how to provision new vendor collaboration users.
 author: Henrikan
 ms.author: henrikan
-ms.reviewer: kamaybac
-ms.search.form: DirExternalRole, SysUserRequestListPage, VendVendorPortalUsers, WorkflowTableListPageRnr
 ms.topic: how-to
 ms.date: 05/02/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: DirExternalRole, SysUserRequestListPage, VendVendorPortalUsers, WorkflowTableListPageRnr
 ---
 
 # Set up and maintain vendor collaboration

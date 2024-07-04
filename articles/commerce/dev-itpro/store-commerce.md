@@ -1,13 +1,15 @@
 ---
 title: Store Commerce app
 description: This article explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app for Windows.
-author: josaw1
-ms.date: 12/20/2023
-ms.topic: article
+author: anush6121
+ms.author: anvenkat
+ms.date: 07/02/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 audience: Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: josaw
 ms.search.validFrom: 2022-03-01
 
 ---
@@ -55,7 +57,7 @@ To review the capabilities of the Store Commerce app, see [Store Commerce app ca
 
 ## Application lifecycle management
 
-The Store Commerce app runs on Windows devices and can be downloaded from the [Shared asset library in Microsoft Lifecycle Services (LCS)](https://lcs.dynamics.com/V2/SharedAssetLibrary). On the **Shared asset library** page, select **Retail Self-service package** as the asset type, and then find the file that ends with "Store Commerce." Be sure to select the version for the Commerce release that you're using (for example, 10.0.25 or 10.0.26).
+The Store Commerce app runs on Windows devices and can be downloaded from the [Shared asset library in Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/V2/SharedAssetLibrary). On the **Shared asset library** page, select **Retail Self-service package** as the asset type, and then find the file that ends with "Store Commerce." Be sure to select the version for the Commerce release that you're using (for example, 10.0.25 or 10.0.26).
 
 ### Store Commerce deployment options
 
@@ -123,8 +125,8 @@ The Store Commerce apps for Windows and mobile platforms are the next generation
 </tr>
 <tr>
 <th scope="row">ALM</th>
-<td>Store Commerce is self-serviced by using LCS and Commerce headquarters. It's packaged and installed by using the Store Commerce installer, and Store Commerce for web is deployed through CSU.</td>
-<td>The Store Commerce app is self-serviced by using LCS and Commerce headquarters. It's packaged and installed by using the Store Commerce app installer.</td>
+<td>Store Commerce is self-serviced by using Lifecycle Services and Commerce headquarters. It's packaged and installed by using the Store Commerce installer, and Store Commerce for web is deployed through CSU.</td>
+<td>The Store Commerce app is self-serviced by using Lifecycle Services and Commerce headquarters. It's packaged and installed by using the Store Commerce app installer.</td>
 </tr>
 <tr>
 <th scope="row">Extensions</th>
@@ -173,8 +175,15 @@ The Store Commerce apps for Windows and mobile platforms are the next generation
 - [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) (Use the Evergreen Standalone Installer.)
 - SQL Server Express, SQL Server Standard, or SQL Server Enterprise (required only for offline mode). For information on which SQL Server edition to use, see [Commerce offline implementation and troubleshooting](implementation-considerations-offline.md).
 - Dynamics 365 Commerce (Commerce headquarters and Cloud Scale Unit)
-- .NET Framework version 4.7.2 or later is required for embedded Hardware Station components. For more information, see [Install the .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework).  
-- .NET Desktop Runtime 6.0.16 or later, which is used by the Store Commerce app for UI rendering. 
+- .NET Framework version 4.8 or later is required for embedded Hardware Station components with version 10.0.41. For more information, see [Install the .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework).  
+- .NET Desktop Runtime 6.0.16 or later, which is used by the Store Commerce app for UI rendering.
+- When running Dynamics 365 Commerce version 10.0.41, use .NET Framework 4.8 or later to support the embedded hardware station component.
+- The following Store Commerce folders should be excluded when running any external applications or programs such as antivirus applications to prevent the folders from being deleted:
+    - User-scoped application data: `C:\Users\**\Microsoft Dynamics 365\10.0\Data\Store Commerce`.
+    - Common application data: `C:\ProgramData\Microsoft Dynamics 365\10.0\Data\Store Commerce`.
+- The following Store Commerce registry entries should be excluded when running any external applications or programs such as antivirus applications to prevent the registry entries from being deleted:
+    - `HKLM:SOFTWARE\Microsoft\Dynamics\Commerce\10.0\Store Commerce\Configuration\*`.
+    - `HKLM:Software\Policies\Microsoft\Edge\WebView2\UserDataFolder\Microsoft.Dynamics.Commerce.StoreCommerce.exe`.
 
 ### Device setup in Commerce headquarters
 
@@ -186,7 +195,7 @@ You must create a [register](../tasks/create-associate-registers.md) and a [devi
 
 ### Device installation
 
-Store Commerce can be downloaded from the [LCS Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary). On the **Shared asset library** page, select **Retail Self-service package** as the asset type, and then find the file that ends with **Store Commerce**. After the file is downloaded, follow these steps to install the app.
+Store Commerce can be downloaded from the [Lifecycle Services Shared asset library](https://lcs.dynamics.com/V2/SharedAssetLibrary). On the **Shared asset library** page, select **Retail Self-service package** as the asset type, and then find the file that ends with **Store Commerce**. After the file is downloaded, follow these steps to install the app.
 
 1. Go to the folder where you downloaded Store Commerce, and open PowerShell in administrator mode.
 1. In PowerShell, find the Store Commerce installer, and pass the **install** parameter to install the app. To install offline components, pass the `--installoffline` parameter. (For example, enter `Store_Commerce Installer_exe_name install --installoffline`.) If you want to enable debugging mode during installation, pass the `--enablewebviewdevtools` parameter. 
@@ -219,7 +228,7 @@ You can also use the **help** command in PowerShell to find information about al
 | --trustsqlservercertificate | Trusts the SQL Server certificate when a connection is established to SQL Server. To help avoid security risks, you should never use this argument for production deployments. By default, the SQL Server certificate isn't trusted. |
 | --usecommonapplicationdata | Installs the Store Commerce app for all users on the device by placing a token in a common application data folder. To use the Store Commerce app, users must be added to the RetailChannelUsers group on the device. If this parameter is omitted, the Store Commerce app is only installed for the current user. |
 | --useremoteappcontent | Download and display the Store Commerce UI from the Commerce Scale Unit (CSU.) If this parameter is omitted, the local application content that is deployed with Store Commerce is used. For more information, see [Hybrid deployment](#hybrid-deployment). |
-| --verbosity | Specifies the verbosity of logs (0 - trace, 1 - debug, 2 - informational, 3 - warning, 4 - error, 5 - critical, 6 - silent). When this parameter is omitted, defaults to 2. |
+| --verbosity | Specifies the verbosity of logs (0 - trace, 1 - debug, 2 - informational, 3 - warning, 4 - error, 5 - critical, 6 - silent). When this parameter is omitted, the default value of 2 is used. |
 | --version | Shows information about the app version. |
 
 ### Activate Store Commerce
@@ -227,9 +236,9 @@ You can also use the **help** command in PowerShell to find information about al
 To activate Store Commerce after installation, follow these steps.
 
 1. On the Windows **Start** menu, search for **Store Commerce**, and then open the application. 
-    > NOTE
+    > [!NOTE]
     > The Store Commerce app shouldn't be run with elevated privileges, and shouldn't be run from an account with elevated privileges.
-1. On the application's start page, if you select **Remote app content** as the deployment option, enter the Cloud POS URL, and then select **Save**. You can find the Cloud POS URL on the environment details page in LCS, or on the **Channel profiles** page in Commerce (**Dynamics 365 Commerce \> Channel setup \> Channel profiles**).
+1. On the application's start page, if you select **Remote app content** as the deployment option, enter the Cloud POS URL, and then select **Save**. You can find the Cloud POS URL on the environment details page in Lifecycle Services, or on the **Channel profiles** page in Commerce (**Dynamics 365 Commerce \> Channel setup \> Channel profiles**).
 1. Activate Store Commerce by following the steps in the [Activate Store Commerce using guided activation](retail-device-activation.md#activate-store-commerce-using-guided-activation).
 1. After activation is completed, sign in to the application by using an employee account.
 

@@ -1,31 +1,18 @@
 ---
-# required metadata
-
 title: Sales tax overview
-description: This article provides an overview of the sales tax system. It explains the elements of the sales tax setup and how they work together.
+description: Learn about the sales tax system, including a table that defines and provides the requirement status for various setup activities.
 author: kailiang
-ms.date: 03/28/2024
-ms.topic: overview
-
-
-# optional metadata
-
-ms.search.form: TaxAuthority, TaxPeriod, TaxTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-
-
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kailiang
+ms.topic: overview
+ms.date: 03/28/2024
+ms.reviewer: twheeloc
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ---
 
 # Sales tax overview

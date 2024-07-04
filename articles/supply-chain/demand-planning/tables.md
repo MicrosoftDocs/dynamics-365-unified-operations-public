@@ -1,15 +1,15 @@
 ---
 title: View and customize tables for holding imported data
-description: To accommodate data that is imported into Demand planning, tables must be set up with the required fields and relations. This article describes the predefined tables that the app includes. It also explains how to customize the tables and create new ones.
+description: To accommodate data that is imported into Demand planning, tables must be set up with the required fields and relations.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: overview
 ms.date: 02/20/2024
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # View and customize tables for holding imported data
@@ -20,7 +20,7 @@ Data that's imported into Demand planning must be loaded into tables that are se
 
 ## View tables
 
-To view the full list of tables that are available to the Demand planning app, select **Data management** \> **Tables and data** on the navigation pane. The tables are listed by name.
+To view the full list of tables that are available to Demand planning, select **Data management** \> **Tables and data** on the navigation pane. The tables are listed by name.
 
 - The **Name** column shows the name of each table. Select a table name to view and edit details about that table, including column definitions, relationships, and data.
 - The **Is System** column indicates whether each table is a standard table that's provided by the system or a custom table that was added by a user. It shows one of the following values:

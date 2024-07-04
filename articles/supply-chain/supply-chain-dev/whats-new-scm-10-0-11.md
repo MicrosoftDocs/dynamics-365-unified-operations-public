@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.11 (June 2020)
-description: This article describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.11. 
+description: Learn about features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.11 with an outline on included features. 
 author: kamaybac
-ms.date: 04/17/2020
-ms.topic: article
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kamaybac
-ms.search.validFrom: 2020-04-17 
-ms.dyn365.ops.version: 10.0.11
+ms.topic: conceptual
+ms.date: 05/28/2024
+ms.custom:
+  - bap-template
+  - evergreen
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form:
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.11 (July 2020)

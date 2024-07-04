@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up policies for procurement category hierarchies
-description: Use this procedure to set up rules for ordering products in a category. 
+description: Learn how to set up rules for ordering products in a category, including proceses for finding procurement policies and creating category access rules. 
 author: Henrikan
-ms.date: 07/22/2019
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: SysPolicyListPage, SysPolicy, ProcCategoryAccessPolicyRule, ProcCategoryPolicyRule, EcoResCategorySingleLookup   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: henrikan
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 07/22/2019
+ms.custom:
+ms.reviewer: kamaybac   
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: SysPolicyListPage, SysPolicy, ProcCategoryAccessPolicyRule, ProcCategoryPolicyRule, EcoResCategorySingleLookup
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Set up policies for procurement category hierarchies
 
 [!include [banner](../../includes/banner.md)]

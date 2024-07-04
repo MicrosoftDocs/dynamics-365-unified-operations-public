@@ -1,12 +1,12 @@
 ---
 title: Configure journal names for Latin America
-description: This article explains how to configure journal names for Latin America.
+description: Learn how to configure journal names for Latin America, including prerequisites and outline on LATAM configuration of journal names.
 author: Fhernandez0088
-ms.date: 06/02/2023
-ms.topic: Article
-ms.reviewer: johnmichalak
 ms.author: v-federicohe 
+ms.topic: how-to
+ms.date: 07/01/2024
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Configure journal names for Latin America

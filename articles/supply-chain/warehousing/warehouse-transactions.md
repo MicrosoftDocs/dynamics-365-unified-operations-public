@@ -1,15 +1,15 @@
 ---
 title: Warehouse-specific inventory transactions
-description: This article provides information about warehouse-specific inventory transactions, which are database records that store information about how inventory is stored and moved around in the warehouse.
+description: Learn about warehouse-specific inventory transactions, which are database records that store information about how inventory is stored in the warehouse.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSParameters, WHSWarehouseTransactions
 ms.topic: how-to
 ms.date: 04/19/2024
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: WHSParameters, WHSWarehouseTransactions
 ---
 
 # Warehouse-specific inventory transactions
@@ -127,8 +127,8 @@ There are no current plans to decouple on-hand inventory from these tables.
 
 The `WHSInventoryTransactionTable` table includes the following four types of transactions (as defined by `WHSInventoryTransactionTypeEnum`).
 
-- **Physical issue** – Represents an item being physically issued.
-- **Physical receipt** – Represents an item being physically received.
+- **Registered issue** – Represents an item being physically issued.
+- **Registered receipt** – Represents an item being physically received.
 - **Physical reservation** – Represents item reservations.
 - **Removed physical reservation** – Represents an explicit, separate transaction type for removing a reservation. All reservation-related transactions can be dropped during the archival process to save space, depending on your settings.
 

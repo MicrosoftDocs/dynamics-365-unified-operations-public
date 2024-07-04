@@ -19,8 +19,6 @@ ms.assetid: 0bccad77-1a44-4f08-967b-12c62c02afc7
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 This article explains how to configure the properties of a manual decision.
 
 To configure a manual decision in the workflow editor, right-click the manual decision, and then click **Properties** to open the **Properties** page. Then use the following procedures to configure the properties of the manual decision.

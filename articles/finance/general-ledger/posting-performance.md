@@ -1,25 +1,17 @@
 ---
-# required metadata
-
 title: Financial journal posting performance 
-description: The article suggests ways to troubleshoot performance issues when you post financial journals. For example, you can adjust the number sequence setup and limit journal lines.
+description: Learn about ways to troubleshoot performance issues when you post financial journals. For example, you can adjust the number sequence setup and limit journal lines.
 author: Livbjerg
-ms.date: 02/24/2024
-ms.topic: article
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global 
-# ms.search.industry: 
 ms.author: JLivbjerg
+ms.topic: article
+ms.date: 02/24/2024
+ms.custom: 
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global 
 ms.search.validFrom: 2023-5-1
+ms.search.form:
 ms.dyn365.ops.version: 10.0.28
-
 ---
 
 # Financial journal posting performance

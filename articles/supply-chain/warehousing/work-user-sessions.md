@@ -1,15 +1,15 @@
 ---
 title: Inspect details of active Warehouse Management mobile app sessions
-description: This article describes how to view a detailed history of XML messages and errors that are associated with all active Warehouse Management mobile app sessions.
+description: Learn how to view a detailed history of XML messages and errors that are associated with all active Warehouse Management mobile app sessions.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSWorkUserSession, WHSGS1PolicyTable
 ms.topic: how-to
 ms.date: 05/26/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: WHSWorkUserSession, WHSGS1PolicyTable
 ---
 
 # Inspect details of active Warehouse Management mobile app sessions

@@ -1,19 +1,20 @@
 ---
 title: Connected applications
-description: This article explains how to set up connected applications in Electronic invoicing.
-author: gionoder
-ms.date: 02/07/2022
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
-ms.author: gionoder
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+description: Learn how to set up connected applications in Electronic invoicing, including an overview on creating a connected application with a step-by-step process.
+author: ilikond
+ms.author: ikondratenko
+ms.topic: how-to
 ms.custom: 
-ms.assetid: 
+  - bap-template
+ms.date: 06/17/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom:
 ms.search.form: 
+ms.dyn365.ops.version: 
 ---
+
 # Connected applications
 
 [!include [banner](../../includes/banner.md)]

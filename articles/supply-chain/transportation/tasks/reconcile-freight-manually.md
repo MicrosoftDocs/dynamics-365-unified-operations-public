@@ -1,26 +1,20 @@
 --- 
-# required metadata 
- 
 title: Reconcile freight manually
-description: This procedure shows how to reconcile freight manually. 
+description: Learn how to reconcile freight manually, including step-by-step processes for selecting a load to reconcile and creating carrier invoices. 
 author: Weijiesa
+ms.author: weijiesa
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: WHSLoadPlanningWorkbench, TMSFreightBillDetail, TMSInvoiceTable, TMSFreightBillInvoiceReconcile, TMSInvoiceJournal, LedgerJournalTable, LedgerJournalTransDaily, TMSFBDetailReconcile, WHSInboundLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: kamaybac 
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: weijiesa
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: WHSLoadPlanningWorkbench, TMSFreightBillDetail, TMSInvoiceTable, TMSFreightBillInvoiceReconcile, TMSInvoiceJournal, LedgerJournalTable, LedgerJournalTransDaily, TMSFBDetailReconcile, WHSInboundLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Reconcile freight manually
 
 [!include [banner](../../includes/banner.md)]

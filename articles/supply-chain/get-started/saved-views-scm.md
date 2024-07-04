@@ -1,15 +1,15 @@
 ---
 title: Standard saved views for Supply Chain Management
-description: This article describes the standard saved views that are available and explains how to enable them.
+description: Learn about the standard saved views that are available and explains how to enable them with an outline on customizing the standard saved views.
 author: kamaybac
 ms.author: kamaybac
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 04/19/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form:
 ---
 
 # Standard saved views for Supply Chain Management

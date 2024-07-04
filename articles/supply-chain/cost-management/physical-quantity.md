@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Inventory object values
-description: This article provides information about how the values of an inventory object are calculated. 
+description: Learn about how the values of an inventory object are calculated, including a table that outlines various aspects of object types. 
 author: JennySong-SH
-ms.date: 06/20/2017
+ms.author: yanansong
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: InventCostOnhandItem
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 56a7c8ba-bf4a-4b1d-918d-56bb96926c4f
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: yanansong
 ms.search.validFrom: 2016-02-28
+ms.search.form: InventCostOnhandItem
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 56a7c8ba-bf4a-4b1d-918d-56bb96926c4f
 ---
 
 # Inventory object values

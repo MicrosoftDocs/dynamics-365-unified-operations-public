@@ -1,21 +1,21 @@
 ---
 title: Price attributes for products, customers, and orders (preview)
-description: This article explains how to set up the configurable price attributes and link them to the products, customers, and orders.
+description: Learn how to set up the configurable price attributes and link them to the products, customers, and orders, including step-by-step processes.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: GUPParameters, EcoResAttribute, EcoResAttributeGroup, SalesTable
 ms.topic: how-to
 ms.date: 04/03/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: GUPParameters, EcoResAttribute, EcoResAttributeGroup, SalesTable
 ---
 
 # Price attributes for products, customers, and orders (preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 Pricing management provides a set of prefilled price attributes from fields in related tables that are associated with products, customers, orders, and order lines. It also lets you create custom price attributes and associate them with orders, customers, and items. You can use those price attributes when you create pricing rules and conditions. Then, when an order is placed, the pricing engine will then use the associations to determine the appropriate price.

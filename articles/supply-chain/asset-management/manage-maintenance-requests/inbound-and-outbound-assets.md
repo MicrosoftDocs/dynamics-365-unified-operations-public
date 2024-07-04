@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Inbound and outbound assets
-description: This article explains how to register inbound and outbound assets in Asset Management.
+description: Learn how to register inbound and outbound assets in Asset Management, including a step-by-step process for registering assets as inbound.
 author: johanhoffmann
-ms.date: 10/01/2019
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: EntAssetOutboundObjectsListPage, EntAssetOutboundObjectsDeliver, EntAssetInboundObjectsListPage, EntAssetInboundObjectsRecieve 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
+ms.topic: article
+ms.date: 10/01/2019
+ms.custom: 
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2019-10-31
+ms.search.form: EntAssetOutboundObjectsListPage, EntAssetOutboundObjectsDeliver, EntAssetInboundObjectsListPage, EntAssetInboundObjectsRecieve
 ms.dyn365.ops.version: 10.0.5
-
 ---
 
 # Inbound and outbound assets

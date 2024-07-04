@@ -1,15 +1,16 @@
 ---
 title: Netherlands Intrastat
-description: This article contains information about the Netherlands Intrastat report.
+description: Learn about the Netherlands Intrastat report with a table defining various fields and an outline on setting up Intrastat.
 author: AdamTrukawka
-ms.date: 10/19/2021
-ms.topic: article
-audience: 
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: atrukawk
+ms.topic: article
+ms.date: 10/19/2021
+ms.reviewer: johnmichalak
+audience: 
+ms.search.region: Global
 ms.search.validFrom: 
 ---
+
 # Netherlands Intrastat
 
 [!include [banner](../../includes/banner.md)]

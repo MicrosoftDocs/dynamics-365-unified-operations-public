@@ -3,10 +3,11 @@ title: Dual-write health check
 description: Learn about the dual-write configuration health check, including details on the error codes that can result from the health check.
 author: jaredha
 ms.author: jaredha
-ms.topic: article
-ms.date: 06/30/2023
-ms.reviewer: 
-audience: IT Pro
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
+ms.reviewer: johnmichalak
 ms.search.region: global
 ms.search.validFrom: 2023-06-06
 ---

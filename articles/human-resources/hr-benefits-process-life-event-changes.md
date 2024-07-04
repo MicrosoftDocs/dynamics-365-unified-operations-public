@@ -4,7 +4,7 @@
 title: Process life event changes
 description: This article explains how to process life event changes in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/23/2021
+ms.date: 07/02/2024
 ms.topic: article
 # optional metadata
 
@@ -17,7 +17,7 @@ audience: Application User
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -33,7 +33,6 @@ Process life event changes in Microsoft Dynamics 365 Human Resources for two lif
 - Eligibility rule override expiration changes 
 
 1. In the **Benefits management** workspace, under **Processing**, select **Life event change processing**.
-
 2. In the **Run life event change process** dialog box, specify values for the following fields:
 
    | Field | Description |
@@ -44,11 +43,8 @@ Process life event changes in Microsoft Dynamics 365 Human Resources for two lif
 3. If you want to run the process in the background, select **Run in the background** and do the following tasks:
 
    1. Enter information for the process.
-
    2. To set up a recurring job, select **Recurrence**, enter the recurrence information, and the select **OK**.
-
    3. To set up a job alert, select **Alerts**, select the alerts to receive, and then select **OK**.
-
    4. Select **OK**. The process will run with the parameters you set.
 
 4. Select **OK**.

@@ -1,15 +1,14 @@
 ---
 title: EU Sales list for Belgium
-description: This article provides information about the European Union (EU) sales list report for Belgium.
-author: AdamTrukawka
-ms.date: 05/20/2022
-ms.topic: article
-audience: Application User
+description: Learn about the European Union (EU) sales list report for Belgium, including overviews on setup and working with the EU sales list.
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
 ms.reviewer: johnmichalak
-ms.search.region: 
-ms.author: atrukawk
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ 
 ---
 
 # EU sales list for Belgium

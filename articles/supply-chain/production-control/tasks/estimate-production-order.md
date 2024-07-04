@@ -1,26 +1,20 @@
 ---
-# required metadata
-
 title: Estimate a production order
-description: You can run this procedure by using the USMF demo data company or your own data set.
+description: Learn about estimating production orders, including step-by-step processes for estimating production orders and viewing calculation details.
 author: johanhoffmann
-ms.date: 11/11/2016
+ms.author: johanho
 ms.topic: how-to
-
-# optional metadata
-
-# ms.search.form:   
-audience: Application User
-# ms.devlang:  
+ms.date: 11/11/2016
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
 ms.search.validFrom: 2016-06-30
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
 ---
+
 # Estimate a production order
 
 [!include [banner](../../includes/banner.md)]

@@ -6,7 +6,7 @@ ms.search.region: Global
 ms.author: josaw
 ms.topic: article
 ms.date: 08/27/2021
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0

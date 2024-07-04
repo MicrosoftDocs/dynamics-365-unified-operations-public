@@ -1,24 +1,16 @@
 ---
-# required metadata
-
 title: Engineering companies and data ownership rules
-description: This article explains how you can use one or more engineering companies to ensure that the master data for products is centrally created and maintained. An engineering company represents the company that owns the engineering products and its engineering-relevant data.
+description: Learn how you can use one or more engineering companies to ensure that the master data for products is centrally created and maintained.
 author: t-benebo
-ms.date: 09/28/2020
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: EngChgEngineeringOrganization
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
+ms.topic: article
+ms.date: 09/28/2020
+ms.custom: 
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-09-28
+ms.search.form: EngChgEngineeringOrganization
 ms.dyn365.ops.version: 10.0.15
 ---
 
