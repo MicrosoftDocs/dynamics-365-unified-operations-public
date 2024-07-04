@@ -51,9 +51,11 @@ The following solutions for respective Copilot features must be present in the P
 
 The Copilot side car uses conversational bots and Generative Answers from Copilot Studio.
 
-Depending on the availability these back-office services in your region, your Dataverse environment might also have to be set up to support cross-region calls. For more information, see [Enable copilots and generative AI features](/power-platform/admin/geographical-availability-copilot).
+Generative answers required Bing Search and, depending on the availability these back-office services in your region, your Dataverse environment might also have to be set up to support cross-region calls. For more information, see [Enable copilots and generative AI features](/power-platform/admin/geographical-availability-copilot). 
 
 You don't have to set up support for cross-region calls if the required AI services are already available in your Dataverse region.
+
+ If Bing Search is disabled, or ff cross-region data movement is required, but it's disabled, users won't be able to open the Copilot sidecar, or the Copilot sidecar won't provide answers, depending on the situation.
 
 ### Check that your Power Platform to publish bots with AI features
 
