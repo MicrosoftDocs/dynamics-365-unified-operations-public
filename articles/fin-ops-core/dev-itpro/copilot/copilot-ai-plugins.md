@@ -98,7 +98,7 @@ Request parameters are used to define the action inputs for the API, which are u
 
 You must also define an accessor method for each parameter to get and set the variables. The following examples shows defining an `accountNumber` request parameter. The parameter name is defined as a data member of the data contract.
 
-```x++
+```X++
 [CustomAPIRequestParameter('The customer account number', true),
   DataMember('accountNumber')]
   public CustAccount parmAccountNum(CustAccount _accountNum = accountNum)
@@ -117,7 +117,7 @@ Define response properties for the custom API using `CustomAPIResponseProperty`.
 
 As with request parameters, you must also define an accessor method for the properties to get and set the variables. The following example shows defining a `balance` response property, which is the output of the action.
 
-```x++
+```X++
 [CustomAPIResponseProperty('The current customer account balance'),
   DataMember('balance')]
   public AmountCur parmBalance(AmountCur _balance = balance)
@@ -147,7 +147,7 @@ With the operation defined in X++ and deployed in your finance and operation env
 
 To generate the custom API and AI plugin:
 1. Open the finance and operations apps client for the environment where you deployed your new X++ class.
-2. Navigate to **Synchronize Dataverse Custom APIs** page (System administration > Setup > Synchronize Dataverse Custom APIs). If the menu navigation isn't available in your environment you can navigate to the **CustomApiTable** menu item directly by adding the `mi=CustomApiTable` parameter to the environment URL. For example:<br>
+2. Navigate to **Synchronize Dataverse Custom APIs** page (System administration >> Setup >> Synchronize Dataverse Custom APIs). If the menu navigation isn't available in your environment you can navigate to the **CustomApiTable** menu item directly by adding the `mi=CustomApiTable` parameter to the environment URL. For example:<br>
    `https://<environment>.operations.dynamics.com/?cmp=USMF&mi=CustomApiTable`
 3. In the list page, ensure your class is included in the table as expected. This list will include all classes that meet the following criteria:
    - Implement the `ICustomApi` interface.
@@ -155,13 +155,13 @@ To generate the custom API and AI plugin:
    - Have an associated ActionMenuItem that is included in a security privilege assigned to a duty/role.
 4. Select the **Synchronize** action.
 
-The synchronization process will synchronize all listed classes with Microsoft Dataverse, adding them to the **Dynamics 365 ERP Virtual Entities** solution. You can verify that the classes were created and added to teh solution in the **Custom API** list, with the associated request parameters and response properties.
+The synchronization process will synchronize all listed classes with Microsoft Dataverse, adding them to the **Dynamics 365 ERP Virtual Entities** solution. You can verify that the classes were created and added to the solution in the **Custom API** list, with the associated request parameters and response properties.
 
 Each class that also includes the `[AIPluginOperationAttribute]` attribute will have a record created for the AI plugin in the same solution. An `AIPlugin` record is created for each security role configured in finance and operations apps that contains an assigned class with the `[AIPluginOperationAttribute]` attribute, with the associated `AIPluginOperaton` records linked to the plugin.
 
 ## Add the action to your copilot
 
-For each operation listed in the plugin registry, you can add teh action to any copilot connected to the registry in Copilot Studio, such as Copilot for finance and operations apps or custom copilots.
+For each operation listed in the plugin registry, you can add the action to any copilot connected to the registry in Copilot Studio, such as Copilot for finance and operations apps or custom copilots.
 
 > [!NOTE]
 > The option is not yet available to add the plugins to some Microsoft copilots, such as Copilot for Microsoft 365.
@@ -169,7 +169,7 @@ For each operation listed in the plugin registry, you can add teh action to any 
 You can add your AI operation to the in-app sidecar chat experiences in finance and operations apps, or a custom copilot, with the following steps:
 1. Open the copilot in Copilot Studio in which you want to add the plugin capability.
 2. On the **Actions** page, select **Add an action**.
-3. In the **Search** box, search for teh name of your AI plugin operation, and select your plugin.
+3. In the **Search** box, search for the name of your AI plugin operation, and select your plugin.
 4. Follow the steps in the wizard, selecting the inputs and outputs from your custom API.
 5. Click **Finish**.
 
