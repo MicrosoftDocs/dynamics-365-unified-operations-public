@@ -39,7 +39,7 @@ This tutorial has the following prerequisites:
 ## Step 1: Define the plugin operation in X++
 In your unified developer environment, you must create a class in X++ that is called and can execute code when Copilot Studio invokes the plugin. This class encapsulates the code/business logic that defines the AI operation.
 1. In your development project in Visual Studio, create a new model that references the following packages. For more information on creating models and working with unified developer environments, see [Tutorial: Write, deploy, and debug X++ code](https://learn.microsoft.com/power-platform/developer/unified-experience/finance-operations-debug).
-   -ApplicationCommon
+   - ApplicationCommon
    - ApplicationFoundation
    - ApplicationPlatform
    - ApplicationSuite
