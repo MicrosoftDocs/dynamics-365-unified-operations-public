@@ -36,7 +36,7 @@ This section describes how each algorithm works and its suitability for differen
 
 ### Best fit model
 
-The best fit model uses machine learning to determine which of the other available algorithms  (auto-ARIMA, ETS, or Prophet) best fits your data for each product and dimension combination. In this way, different models can be used for different products. In most cases, we recommend using the best fit model because it combines the strengths of all of the other standard models. The following example shows how.
+The best fit model automatically finds which of the other available algorithms (auto-ARIMA, ETS, or Prophet) best fits your data for each product and dimension combination. In this way, different models can be used for different products. In most cases, we recommend using the best fit model because it combines the strengths of all of the other standard models. The following example shows how.
 
 Suppose you have the historical demand time-series data that includes the dimension combinations listed in the following table.
 
