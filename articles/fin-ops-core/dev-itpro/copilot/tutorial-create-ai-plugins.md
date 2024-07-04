@@ -16,11 +16,12 @@ ms.custom: bap-template
 Finance and operations apps enables the creation of AI plugins to extend the capabilities of copilot experiences in Microsoft Copilot Studio, using the business logic in finance and operations code. These are headless operations that don't require specific application context in the finance and operations client, and can be added to **Copilot for finance and operations apps** to extend in in-app chat experience, or in other custom copilots. For more information, see [Create AI plugins for copilots with finance and operations business logic](copilot-ai-plugins.md).
 
 ## Scenario
-In this scenario, you will create an AI plugin that calculates the balance of a customer account in finance and operations apps. This enables the user to interact with the business logic in natural language, invoking X++ to respond to the user prompt in the copilot chat. This becomes a capability that can be added to the Copilot for finance and operations in-app chat, or to any custom copilot.
+In this scenario, you will create an AI plugin that calculates the balance of a customer account in finance and operations apps. This enables the user to interact with the business logic in natural language, invoking X++ to respond to the user prompt in the copilot chat. This becomes a capability that can be added to the **Copilot for finance and operations apps** in-app chat, or to any custom copilot.
 
 Here's an overview of the steps in this tutorial:
-
-MAKE SURE YOU FILL IN THE OVERVIEW OF THE STEPS!!!!!!
+1. In your unified developer environment, create a class in X++ to define the plugin operation, and add security privileges for the new class.
+2. In the finance and operations environment, run the process to generate the AI plugin and related plugin operations in Dataverse.
+3. Add the AI plugin as an action in your custom copilot.
 
 ## Prerequisites
 
