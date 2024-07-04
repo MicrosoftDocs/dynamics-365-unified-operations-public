@@ -31,8 +31,7 @@ After you complete the steps in this article, the Copilot icon appears at the to
 
 ## Prerequisites
 
-Make sure that you've  enabled Copilot capabilities in finance and operations apps, as described in [Copilot prerequisites](enable-copilot.md).
-
+Make sure that you've  enabled Copilot capabilities in finance and operations apps, as described in [Enable Copilot capabilities in finance and operations apps](enable-copilot.md).
 
 ## Troubleshooting
 

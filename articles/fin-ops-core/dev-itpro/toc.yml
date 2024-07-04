@@ -2263,9 +2263,7 @@ items:
         href: m365-copilot/chat-with-fno-data-on-m365copilot.md
       - name: Enable Copilot capabilities and features
         items:
-        - name: Overview of enabling Copilot capabilities and features
-          href: copilot/enable-copilot-overview.md
-        - name: Copilot prerequisites
+        - name: Enable Copilot capabilities in finance and operations apps
           href: copilot/enable-copilot.md
         - name: Enable Copilot support for managing changes to confirmed purchase orders
           href: copilot/purchase-order-changes-after-confirmation-enable.md

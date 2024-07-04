@@ -22,7 +22,7 @@ This article describes how to enable Copilot support for the **Confirmed purchas
 
 ## Turn on Copilot support for the Confirmed purchase orders with changes workspace
 
-The **Confirmed purchase orders with changes** workspace is enabled by default. The workspace can be used either with or without its AI-powered and Copilot functionality. If you want to enable its AI features, make sure that you've also enabled Copilot capabilities in finance and operations apps, as described in [Copilot prerequisites](enable-copilot.md).
+The **Confirmed purchase orders with changes** workspace is enabled by default. The workspace can be used either with or without its AI-powered and Copilot functionality. If you want to enable its AI features, make sure that you've also enabled Copilot capabilities in finance and operations apps, as described in [Enable Copilot capabilities in finance and operations apps](enable-copilot.md).
 
 ## Troubleshoot the Copilot configuration
 

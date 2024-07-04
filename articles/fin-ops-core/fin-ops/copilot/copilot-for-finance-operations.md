@@ -60,5 +60,5 @@ Microsoft is committed to applying [responsible AI practices](../../dev-itpro/re
 
 ## Next steps
 
-- [Overview of enabling Copilot capabilities and features](../../dev-itpro/copilot/enable-copilot-overview.md)
+- [Enable Copilot capabilities in finance and operations apps](../../dev-itpro/copilot/enable-copilot.md)
 - [Extend Copilot capabilities in finance and operations apps](../../dev-itpro/copilot/extend-copilot.md)
