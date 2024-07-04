@@ -30,7 +30,7 @@ The following options are set up as part of the **Warehouse management \> Setup 
  - One shipment per order - This limits the association of one shipment and one demand order. It is a prerequisite when using [Warehouse management only mode with externally managed warehouse processing](wms-only-mode-external-shared-warehouse.md), as it needs to be set up on the source system related to the externally managed warehouse.
  - Fill entire shipment - This configuration allows you to confirm that warehouse wave processing will only proceed with shipments when it is possible to create warehouse work for the full quantities of the shipment lines. The default value is "Respect customer settings" which adheres to the fill entire shipment setting defined for a customer.
 
-### How to define the *Outbound shipment processing policy* defaulting on orders
+### How to define the *Outbound shipment processing policy* defaulting
 The outbound shipment processing policy is a property assigned to shipments. However, it can be defaulted in multiple ways:
  - Orders - Policy can be set up on the outbound orders, and it will then be assigned to all shipments created from those orders.
  - Customer - Policy can be assigned to customers, and all orders created for that customer will have that policy, which will then propagate to shipments created from those orders.
