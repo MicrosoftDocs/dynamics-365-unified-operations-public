@@ -1,24 +1,16 @@
 ---
-# required metadata
-
 title: Create and manage Customer portal users
-description: This article explains how to create Customer portal user accounts and set permissions for them.
+description: Learn how to create Customer portal user accounts and set permissions for them, including outlines on the prerequisite setup and the invitation process.
 author: Henrikan
-ms.date: 07/31/2020
-ms.topic: article
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: henrikan
+ms.topic: article
+ms.date: 07/31/2020
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-04-22
+ms.search.form:
 ms.dyn365.ops.version: 10.0.13
 ---
 

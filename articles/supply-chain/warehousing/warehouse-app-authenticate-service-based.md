@@ -1,15 +1,15 @@
 ---
 title: Service-based authentication for the Warehouse Management mobile app
-description: This article explains how to configure the Warehouse Management mobile app to connect to your Microsoft Dynamics 365 Supply Chain Management environment using service-based authentication.
+description: Learn how to configure the Warehouse Management app to connect to your Dynamics 365 Supply Chain Management environment using service-based authentication.
 author: JTOne123
 ms.author: pavlodatsiuk
-ms.reviewer: kamaybac
-ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 ms.topic: how-to
 ms.date: 10/18/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 ---
 
 # Service-based authentication for the Warehouse Management mobile app

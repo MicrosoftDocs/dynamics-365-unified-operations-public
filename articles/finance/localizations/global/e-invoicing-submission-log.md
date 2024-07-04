@@ -1,11 +1,12 @@
 ---
 title: Work with the Electronic document submission log
 description: Learn how to work with the Electronic document submission log, including outlines on the Schedule, Completed, and Failed submission statuses.
-author: gionoder
-ms.author: johnmichalak
-ms.topic: article
-ms.date: 12/15/2021
+author: ilikond
+ms.author: ikondratenko
+ms.topic: how-to
 ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: 

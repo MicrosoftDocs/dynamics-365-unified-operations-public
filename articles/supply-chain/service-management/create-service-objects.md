@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Create service objects 
-description: This article provides a procedure that shows how to create service objects. 
+description: Access a procedure that shows how to create service objects, including a step-by-step process for creating service objects.
 author: ChristianRytt
-ms.date: 02/21/2018
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: SMAServiceObjectTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: crytt
+ms.topic: article
+ms.date: 02/21/2018
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMAServiceObjectTable
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Create service objects  

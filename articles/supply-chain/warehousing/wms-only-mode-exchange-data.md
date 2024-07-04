@@ -1,15 +1,15 @@
 ---
 title: Exchange data between systems
-description: This article explains how to exchange data and business events between systems in Warehouse management only mode.
+description: Learn how to exchange data and business events between systems in Warehouse management only mode with an outline on master and reference data.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSConsigner, WHSConsignerGroup, WHSConsignee, WHSConsignerGroup, WHSSourceSystemItem, EcoResStorageDimensionGroup, InventItemGroup, InventModelGroup, EcoResStorageDimensionGroup, EcoResTrackingDimensionGroup, WHSReservationHierarchy, UnitOfMeasure, WHSUOMSeqGroupTable, WHSSourceSystemProductMessage, WHSSourceSystemProductVariantMessage, WHSSourceSystemProductDocumentAttachmentMessage, WHSSourceSystemProductSpecificUnitOfMeasureConversionMessage, WHSSourceSystemProductBarcodeMessage, WHSSourceSystemProductGlobalTradeItemNumberMessage
 ms.topic: how-to
 ms.date: 04/27/2024
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSConsigner, WHSConsignerGroup, WHSConsignee, WHSConsignerGroup, WHSSourceSystemItem, EcoResStorageDimensionGroup, InventItemGroup, InventModelGroup, EcoResStorageDimensionGroup, EcoResTrackingDimensionGroup, WHSReservationHierarchy, UnitOfMeasure, WHSUOMSeqGroupTable, WHSSourceSystemProductMessage, WHSSourceSystemProductVariantMessage, WHSSourceSystemProductDocumentAttachmentMessage, WHSSourceSystemProductSpecificUnitOfMeasureConversionMessage, WHSSourceSystemProductBarcodeMessage, WHSSourceSystemProductGlobalTradeItemNumberMessage
 ---
 
 # Exchange data between systems

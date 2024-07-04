@@ -5,7 +5,8 @@ author: ChrisGarty
 ms.author: cgarty
 ms.topic: overview
 ms.date: 07/25/2019
-ms.custom: ["195583"]
+ms.custom: 
+  - bap-template
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User

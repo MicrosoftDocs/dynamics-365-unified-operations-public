@@ -1,16 +1,16 @@
 ---
-title: Dynamics 365 Translation Service Visual Studio Code extension (Public Preview)
+title: Dynamics 365 Translation Service Visual Studio Code extension
 description: Learn about how to integrate the Microsoft Dynamics 365 Translation Service (DTS) extension for Visual Studio Code into your Visual Studio Code workflow.
 author: joshsantana
 ms.author: joshsantana
 ms.topic: article
 ms.date: 04/18/2022
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2022-05-02
 ---
-# Dynamics 365 Translation Service Visual Studio Code extension (Public Preview)
+# Dynamics 365 Translation Service Visual Studio Code extension
 
 [!include[banner](../includes/banner.md)]
 

@@ -1,15 +1,15 @@
 ---
 title: Set up intercompany trade
-description: This article explains how to set up intercompany trade
+description: Learn how to set up intercompany trade, including outlines on what to do before setting up intercompany trade and setting up trading relations and products.
 author: Henrikan
-ms.date: 09/01/2021
-ms.topic: article
-ms.search.form: CustTable, VendTable, EcoResProductListPage, InterCompanyTradingRelationSetupCustomer
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: henrikan
+ms.topic: article
+ms.date: 09/01/2021
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-09-01
+ms.search.form: CustTable, VendTable, EcoResProductListPage, InterCompanyTradingRelationSetupCustomer
 ms.dyn365.ops.version: 10.0.22
 ---
 

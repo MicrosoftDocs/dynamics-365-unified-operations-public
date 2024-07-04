@@ -1,12 +1,13 @@
 ---
 title: EU Sales list for Finland
 description: Learn about the European Union (EU) sales list report for Finland, including outlines on setting up company information and foreign trade parameters.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 05/20/2022
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience:  Application User
 ms.search.region:
 ms.search.validFrom: 
 ms.dyn365.ops.version: 

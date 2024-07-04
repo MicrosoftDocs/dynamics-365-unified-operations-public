@@ -1,24 +1,17 @@
 --- 
-# required metadata 
- 
 title: Rating profiles
-description: This article describes how to set up data for rating profiles.
+description: Learn how to set up data for rating profiles, including an outline and process for creating or editing rating profiles on the rating profiles page.
 author: Weijiesa
+ms.author: weijiesa
+ms.topic: how-to
 ms.date: 10/30/2020
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: TMSRatingProfile
-audience: Application User 
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.custom:
+ms.reviewer: kamaybac 
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: weijiesa
-ms.search.validFrom: 2020-10-30 
+ms.search.validFrom: 2020-10-30
+ms.search.form: TMSRatingProfile
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 

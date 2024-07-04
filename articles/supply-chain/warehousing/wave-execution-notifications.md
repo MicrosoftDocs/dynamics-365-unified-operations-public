@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Wave execution notifications 
-description: This article describes wave execution notifications and explains how to set them up.
+description: Learn about wave execution notifications and explains how to set them up, including an outline on toggling the Wave execution notifications feature.
 author: Mirzaab
-ms.date: 08/09/2022
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: WhsWaveNotificationPolicy, WHSParameters, WHSWaveTemplateTable, BusinessEventsWorkspace
-# ROBOTS:
-audience: Application User
-# ms.devlang:
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-# ms.custom:
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
+ms.topic: article
+ms.date: 08/09/2022
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-04-01
+ms.search.form: WhsWaveNotificationPolicy, WHSParameters, WHSWaveTemplateTable, BusinessEventsWorkspace
 ms.dyn365.ops.version: 10.0.0
-
 ---
 
 # Wave execution notifications

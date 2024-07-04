@@ -1,16 +1,15 @@
 ---
 title: Manual settlement of an advance payment and invoice that include tax
 description: Learn about the tax entries that are generated in various scenarios when an invoice and a payment that include tax are settled.
-author: EricWangChen
-ms.author: wangchen
-ms.topic: article
-ms.date: 06/03/2019
-ms.custom:
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
 ms.reviewer: johnmichalak 
-audience: Application User
 ms.search.region: India
 ms.search.validFrom: 2019-06-01
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.4
 ---
 

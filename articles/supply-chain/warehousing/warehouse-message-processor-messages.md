@@ -1,15 +1,15 @@
 ---
 title: Message processor messages for warehouse management processes
-description: This article provides information about the Message processor messages feature for warehouse management.
+description: Learn about the Message processor messages feature for warehouse management with an outline on viewing the message log and message content.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: SysMessageProcessor, SysMessageProcessorMessage, BusinessEventsWorkspace 
 ms.topic: how-to
 ms.date: 01/30/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: SysMessageProcessor, SysMessageProcessorMessage, BusinessEventsWorkspace 
 ---
 
 # Message processor messages for warehouse management processes

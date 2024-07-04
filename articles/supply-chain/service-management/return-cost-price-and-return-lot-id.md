@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Return cost price and return lot ID    
-description: You might want the cost of the returned products to equal the cost of the products at the time when you sold the products to the customer. You can do this by using the **Return lot ID**.
+description: Learn about the cost price and return lot IDs, including outline on manually entering return cost prices and automatically generating cost prices.
 author: Henrikan
 ms.author: henrikan
-ms.date: 04/30/2018
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: ReturnTableListPage, ReturnInventTransIdLookup, ReturnItemNumLookup
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 04/30/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
+audience: Application User
+ms.search.region: Global 
 ms.search.validFrom: 2016-02-28
+ms.search.form: ReturnTableListPage, ReturnInventTransIdLookup, ReturnItemNumLookup
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Return cost price and return lot ID

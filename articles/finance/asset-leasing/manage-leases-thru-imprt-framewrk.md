@@ -4,8 +4,8 @@ description: Learn how to use the Lease import framework to adjust multiple leas
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 04/12/2021
-ms.reviewer: kfend
+ms.date: 06/12/2024
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-10-28
@@ -19,6 +19,8 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 [!include [banner](../includes/banner.md)]
 
 This article explains how to use the Lease import framework to adjust multiple leases in one step. By using this capability, you can save time, and you can also ensure more accurate adjustments by reducing the chance of human error. Additionally, this capability can connect Microsoft Dynamics 365 Finance with external data entities to efficiently upload data.
+
+Starting in Dynamics 365 Finance version 10.0.40, import records can be deleted. This update affects two tables associated with the lease import framework, specifically concerning the relationship between the tables AssetLeaseLeaseImportHeader and AssetLeaseLeaseDetailsImport.
 
 The following data entities can be used to integrate Asset leasing with external systems:
 

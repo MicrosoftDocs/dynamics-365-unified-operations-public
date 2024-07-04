@@ -3,10 +3,11 @@ title: Write off deferrals (Russia)
 description: Learn how to write off a deferral and how to reverse the writing off of a deferral, including a step-by-step process for writing off deferrals.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
-ms.date: 06/28/2019
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2019-06-28
 ms.search.form: 

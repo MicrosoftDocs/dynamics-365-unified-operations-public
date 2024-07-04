@@ -128,8 +128,6 @@ additionalContent:
         text: Human Resources infrastructure merge
       - url: /dynamics365/human-resources/hr-cust-migration
         text: Human Resources customer migration
-      - url: /dynamics365/human-resources/hr-infrastructure-merge-faq
-        text: Human Resources infrastructure merge FAQ
       - url: /dynamics365/human-resources/customer-migration
         text: Human Resources customer migration FAQ      
     - title: Human Resources business events

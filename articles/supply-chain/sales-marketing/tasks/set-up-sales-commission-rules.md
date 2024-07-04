@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up sales commission rules
-description: This procedure shows you how to set up and enable sales commission calculation and tracking. 
+description: Learn how to set up and enable sales commission calculation and tracking, including a step-by-step process using the USMF demo data company.
 author: Henrikan
-ms.date: 06/21/2019
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: CommissionCustomerGroup, CommissionItemGroup, CommissionSalesGroup, CommissionSalesMember, DirPartyLookup, CommissionCalc, InventPosting, CustTable, EcoResProductDetailsExtended, CommissionEmplSalesGroup   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: henrikan
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 06/21/2019
+ms.custom:
+ms.reviewer: kamaybac 
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: CommissionCustomerGroup, CommissionItemGroup, CommissionSalesGroup, CommissionSalesMember, DirPartyLookup, CommissionCalc, InventPosting, CustTable, EcoResProductDetailsExtended, CommissionEmplSalesGroup 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Set up sales commission rules
 
 [!include [banner](../../includes/banner.md)]

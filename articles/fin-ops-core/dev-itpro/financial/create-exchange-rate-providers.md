@@ -5,7 +5,7 @@ author: RyanCCarlson2
 ms.author: rcarlson
 ms.topic: article
 ms.date: 06/10/2024
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 audience: Developer
 ms.assetid: 24643037-f7a5-4acf-b3d6-9943642b618c
 ms.search.region: Global

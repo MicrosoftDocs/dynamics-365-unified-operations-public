@@ -6,7 +6,7 @@ ms.author: kweekley
 ms.topic: article
 ms.date: 08/24/2021
 # ms.custom: [used by loc for topics migrated from the wiki]
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 audience: IT Pro
 # ms.devlang: 
 # ms.tgt_pltfrm: 

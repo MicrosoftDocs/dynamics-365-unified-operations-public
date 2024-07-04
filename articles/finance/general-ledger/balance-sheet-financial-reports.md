@@ -4,7 +4,7 @@ description: Learn about the default reports for balance sheets. It also describ
 author: jinniew
 ms.author: jiwo
 ms.topic: article
-ms.date: 10/10/2022
+ms.date: 06/17/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -26,16 +26,16 @@ There are two default balance sheet reports. On one report, the sections are sta
 
 | Default report                       | What it does                                                                                                                           |
 |--------------------------------------|--------------------------------------------------------------------------------------|
-| Balance Sheet – Default              | Provides a view of the organization's financial position for the year.                    |
-| Balance Sheet and Income Statement Side by Side – Default | Provides a view of the organization's financial position for the year side by side. |
+| Balance sheet – default              | Provides a view of the organization's financial position for the year.                    |
+| Balance sheet and income statement side by side – default | Provides a view of the organization's financial position for the year side by side. |
 
 ## Building blocks
 The balance sheet financial reports use the following building blocks.
 
 | Default report                       | Row definition                       | Column definition             |
 |--------------------------------------|--------------------------------------|-------------------------------|
-| Balance Sheet - Default              | Balance Sheet - Default              | YTD and Variance - Default    |
-| Balance Sheet and Income Statement Side by Side – Default | Balance Sheet and Income Statement Side by Side – Default | Year to Date Column - Default |
+| Balance sheet - default              | Balance sheet - default              | YTD and variance - default    |
+| Balance sheet and income statement side by side – default | Balance sheet and income statement side by side – default | Year to date column - default |
 
 ### Row definition
 

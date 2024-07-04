@@ -3,9 +3,10 @@ title: Create a Globalization feature
 description: Learn how to create a Globalization feature (RCS), including an overview on creating a feature from scratch with a step-by-step process.
 author: ilikond
 ms.author: ikondratenko
-ms.topic: article
-ms.date: 02/14/2022
-ms.custom:
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global

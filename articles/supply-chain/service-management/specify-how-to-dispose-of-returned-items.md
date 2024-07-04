@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Specify how to dispose of returned items 
-description: Specify how to dispose of returned items.
+description: Learn how to specify how to dispose of returned items, including a table that defines and provides common codes for various disposition types.
 author: Henrikan
 ms.author: henrikan
-ms.date: 05/07/2018
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: InventQuarantineOrder
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 05/07/2018
 ms.custom: 
-ms.assetid: 
+ms.reviewer: kamaybac
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
 ms.search.validFrom: 2016-02-28
+ms.search.form: InventQuarantineOrder
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

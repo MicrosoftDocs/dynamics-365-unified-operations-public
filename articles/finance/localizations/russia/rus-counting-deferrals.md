@@ -1,10 +1,12 @@
 ---
 title: Deferrals counting (Russia)
 description: Learn how to do deferrals counting, including a table that defines various tabs and a step-by-step process creating deferrals and post writing-off transactions.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 06/28/2019
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/20/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Russia

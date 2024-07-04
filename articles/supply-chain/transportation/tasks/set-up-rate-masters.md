@@ -1,25 +1,20 @@
 --- 
-# required metadata 
- 
 title: Set up rate masters
-description: This procedure shows you how to set up a rate master. 
+description: Learn how to set up a rate master, including a step-by-step process for setting up break masters using the USMF demo data company. 
 author: Weijiesa
+ms.author: weijiesa
+ms.topic: how-to
 ms.date: 10/16/2020
-ms.topic: how-to 
- 
-# optional metadata 
-ms.search.form: TMSBreakMaster,TMSRateMaster,TMSRateMasterBase,TMSRateBaseType, TMSRouteWorkbench
-audience: Application User 
-# ms.devlang:  
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: weijiesa
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: TMSBreakMaster,TMSRateMaster,TMSRateMasterBase,TMSRateBaseType, TMSRouteWorkbench
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Set up rate masters
 
 [!include [banner](../../includes/banner.md)]
