@@ -15,46 +15,51 @@ ms.search.region: Global
 ms.search.form:
 ---
 
-# Copilot prerequisites
-
 [!include [banner](../includes/banner.md)]
 
-Copilot brings features that help users complete their tasks more efficiently. For example, one feature uses the power of generative AI to provide in-app help guidance.
+# What is behind Copilot and what you need to enable it
 
-This article describes how to enable basic Copilot capabilities in finance and operations apps. Most Copilot features in finance and operations apps require this basic foundation. For some features, this foundation is all that's needed, but other features may require additional installations and/or feature management (see also [Overview of enabling Copilot capabilities and features](enable-copilot-overview.md)).
+This article describes how Copilot capabilities in finance and operations apps are constructed to provide an understanding of this basic foundation. This understanding helps to answer question on how to enable or disable Copilot capabilities and troubleshoot.
 
-## Country/region and language availability
+Copilot in Finance and operations is built from user experience components, application code, and AI services such as Large Language Models (LLM) hosted on Azure and connected through Data Verse provided through Power Platform integration.
 
-For information about which countries/regions and languages the Copilot capability in Microsoft Dynamics 365 Supply Chain Management becomes available in, see the [Copilot international availability guide](https://dynamics.microsoft.com/availability-reports/copilotreport/).
+Finance and operations supports two fundamental types of Copilot.
 
-## Environment requirements
+- Copilot side car features, such as Generative Help and Guidance
+- Summarization and content generation features with Copilot, such as can be found in the Confirmed Purchase Orders With changes workspace, or various summarizations throughout the applications.
 
-Your environment must be a cloud-deployed environment. Copilot in finance and operations apps isn't supported in cloud-hosted development environments.
 
-## Enable Power Platform integration
+
+All of these require Power Platform integration and are supported only for cloud-hosted environments. Each Copilot feature may be limited to only certain data regions and languages. The region and language support is continuously growing to global availability. Go here to lookup the latest availability information per Copilot feature: [Copilot international availability guide](https://dynamics.microsoft.com/availability-reports/copilotreport/).
+
+## Power Platform requirements
 
 You must have enabled the [Power Platform integration](../power-platform/enable-power-platform-integration.md) in Microsoft Dynamics Lifecycle Services. (However, you don't have to enable dual-write for this feature.)
 
-> [!IMPORTANT]
-> Depending on the availability of Copilot and generative AI back-office services in your region, your Dataverse environment might also have to be set up to support cross-region calls. For more information, see [Enable copilots and generative AI features](/power-platform/admin/geographical-availability-copilot).
->
-> You don't have to set up support for cross-region calls if the required AI services are already available in your Dataverse environment.
->
-> For information about the capabilities and limitations of AI-powered Copilot features in Microsoft finance and operations apps, see [Responsible AI FAQs for the Microsoft Dynamics 365 finance and operations platform](../responsible-ai/responsible-ai-overview.md).
+If you have Power Platform integration enabled the deployment of Copilot features will happen automatically.
 
-## <a name="enable-sql-key"></a>Enable the Sql row version change tracking license key
+The following solutions for respective Copilot features must be present in the Power Platform environment.
 
-Follow these steps to check the status of the **Sql row version change tracking (Preview)** license key and enable it as required. If the key isn't enabled, you receive an error when you try to install the Copilot application in Power Platform admin center.
+|Copilot package | Solution name prefix | Copilot feature  |
+|---------|---------|---------|
+|Copilot for finance and operations apps | msdyn_FnoCopilot...  | Generative help and guidance and the bot for the Copilot side car |
+|Copilot in Supply Chain Management | msdyn_SCMAIApp...    | Copilot Summarization in Supply Chain Management |
+|Finance AI Solution | msdyn_FinanceAIApp... | Copilot Summarization in Finance |
+|Commerce AI Solution | TBD | Copilot Summarization in Commerce |
 
-1. Go to **System administration \> Setup \> License configuration**.
-1. On the **Configuration keys** tab, scroll down to the **Sql row version change tracking (Preview)** key. If the key is already enabled, skip the rest of this procedure. If it isn't enabled, move on to the next step.
-1. Put your system into maintenance mode as described in [Maintenance mode](../sysadmin/maintenance-mode.md).
-1. Return to the **License configuration** page, and enable the **Sql row version change tracking (Preview)** key.
-1. Turn off maintenance mode as described in [Maintenance mode](../sysadmin/maintenance-mode.md).
+### Additional requirements for using Copilot side car features
 
-## Enable Power Platform to publish bots with AI features
+The Copilot side car uses conversational bots and Generative Answers from Copilot Studio.
 
-To enable Power Platform to publish bots with AI features, follow these steps.
+Depending on the availability these back-office services in your region, your Dataverse environment might also have to be set up to support cross-region calls. For more information, see [Enable copilots and generative AI features](/power-platform/admin/geographical-availability-copilot).
+
+You don't have to set up support for cross-region calls if the required AI services are already available in your Dataverse region.
+
+### Check that your Power Platform to publish bots with AI features
+
+The Tenant level setting that permits deployment of bots in Dataverse environments is enabled by default. 
+
+To check and enable Power Platform to publish bots with AI features, follow these steps.
 
 1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Settings**.
@@ -62,22 +67,9 @@ To enable Power Platform to publish bots with AI features, follow these steps.
 1. The **Publish bots with AI features** dialog opens. Set the slider to **Enabled**.
 1. Select **Save**.
 
-## <a name="install-copilot-app"></a>Install the Copilot application in your finance and operations apps environment
+## Further Copilot installation information
+Detailed information for individual Copilot features that may require additional installations and/or feature management (see also [Overview of enabling Copilot capabilities and features](enable-copilot-overview.md)).
 
-Follow these steps to install the Copilot application in your finance and operations apps environment.
 
-1. Open the [Copilot in Microsoft Dynamics 365 Supply Chain Management](https://aka.ms/dynamicsfnocopilot_scmaiapp) page in the Microsoft commercial marketplace.
-1. Select **Get it now**.
-1. The deployment process opens [Power Platform admin center](https://admin.powerplatform.microsoft.com/). Select the Dataverse environment connected to your finance and operations apps environment to install the Copilot application.
-
-    > [!IMPORTANT]
-    > **Troubleshooting:** You might receive the following error message while you install the Copilot application in Power Platform admin center: "Unable to complete updates to the Track changes option for table: 'EcoResProductTranslationAIEntity'. Exception details: This functionality requires enabling sql row version change tracking feature. Please enable SQL Row version configuration key." If you receive this error, follow the instructions in the [Enable the Sql row version change tracking license key](#enable-sql-key) section.
-
-1. You can follow the status of the installation by opening the detail view of the environment. In the **Resources** field, select **Dynamics 365 apps**. During installation, the status of the Copilot application is *Installing*. After installation is completed, the status changes to *Installed*. If an error occurs, the status changes to *Failed*. In this case, you can find details about the error in the **Notifications** field.
-
-## Enable the required security roles
-
-Users who should have access to the functionality must be assigned the *AIB Roles* and *Finance and Operations AI* security roles in Dataverse.
-
-1. In the detail view of the environment, in the **Access** field, select *Users* or *Teams*.
-2. Select the users or teams that should have access, and assign the *AIB Roles* and *Finance and Operations AI* security roles to them.
+## Responsible AI FAQ
+For information about the capabilities and limitations of AI-powered Copilot features in Microsoft finance and operations apps, see [Responsible AI FAQs for the Microsoft Dynamics 365 finance and operations platform](../responsible-ai/responsible-ai-overview.md).
