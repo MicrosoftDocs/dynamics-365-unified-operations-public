@@ -96,15 +96,15 @@ As mentioned previously, most Copilot features in finance and operations apps re
 | Application | Feature | Required installation and setup |
 |---|---|---|
 | All finance and operations apps | Basic Copilot support | No additional requirements. |
-| All finance and operations apps | Generative help and guidance with Copilot | [Enable generative help and guidance with Copilot](enable-copliot-generative-help.md) |
-| Dynamics 365 Commerce | Use Copilot in site builder to enrich product detail pages | [Enable Copilot in site builder](../../../commerce/copilot-site-builder.md) |
-| Dynamics 365 Finance | Collections coordinator summary | [Enable collections coordinator summary](../../../finance/accounts-receivable/CollectionsCoordinatorSummary.md) |
-| Dynamics 365 Finance | Customer page summary | [Enable customer page summary](../../../finance/accounts-receivable/CustomerPageSummary.md) |
-| Dynamics 365 Finance | Workflow history summary | [Enable workflow history summary](../../fin-ops/organization-administration/workflow-history-summary.md) |
-| Dynamics 365 Supply Chain Management | AI summaries with Copilot | [Enable AI summaries with Copilot](../../../supply-chain/get-started/copilot-summaries-overview.md) |
+| All finance and operations apps | Generative help and guidance with Copilot | [Enable generative help and guidance with Copilot](enable-copliot-generative-help.md). |
+| Dynamics 365 Commerce | Use Copilot in site builder to enrich product detail pages | [Enable Copilot in site builder](../../../commerce/copilot-site-builder.md). |
+| Dynamics 365 Finance | Collections coordinator summary | [Enable collections coordinator summary](../../../finance/accounts-receivable/CollectionsCoordinatorSummary.md). |
+| Dynamics 365 Finance | Customer page summary | [Enable customer page summary](../../../finance/accounts-receivable/CustomerPageSummary.md). |
+| Dynamics 365 Finance | Workflow history summary | [Enable workflow history summary](../../fin-ops/organization-administration/workflow-history-summary.md). |
+| Dynamics 365 Supply Chain Management | AI summaries with Copilot | [Enable AI summaries with Copilot](../../../supply-chain/get-started/copilot-summaries-overview.md). |
 | Dynamics 365 Supply Chain Management | [Analyze demand plans with Copilot](../../../supply-chain/demand-planning/demand-planning-copilot.md) | Installed and enabled by default in Demand planning version 1.0.0.1067 or newer. |
 | Dynamics 365 Supply Chain Management | [Inquire into inventory with Copilot](../../../supply-chain/inventory/inventory-visibility-copilot-api.md) | Installed and enabled by default in Inventory Visibility version 1.2.2.127 or newer. |
-| Dynamics 365 Supply Chain Management | Review and accept changes to confirmed purchase orders | [Enable Copilot support for managing changes to confirmed purchase orders](purchase-order-changes-after-confirmation-enable.md) |
+| Dynamics 365 Supply Chain Management | Review and accept changes to confirmed purchase orders | [Enable Copilot support for managing changes to confirmed purchase orders](purchase-order-changes-after-confirmation-enable.md). |
 
 ## Responsible AI FAQs
 
