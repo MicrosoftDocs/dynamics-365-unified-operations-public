@@ -4,7 +4,7 @@
 title: Commerce Data Exchange best practices
 description: This article describes data synchronization with Commerce Data Exchange (CDX) in a Microsoft Dynamics 365 Commerce environment.
 author: aneesmsft
-ms.date: 07/02/2024
+ms.date: 07/05/2024
 ms.topic: how-to
 ms.search.form: RetailTerminalTable, RetailDevice
 audience: IT Pro
@@ -32,7 +32,7 @@ The main content of this article is organized into tables, where the first colum
 
 The following configurations are released but cause changes to logic that may not be useful for all usage scenarios. These features were tested but haven't been thoroughly validated in all scenarios. In the following table, maturity is included to provide insight into the confidence of functionality.
 
-Features change from month to month, so it's valuable to check back regarding the maturity of a particular feature and whether any new features are added. To apply any of the following features, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the leftmost menu, select **Configuration parameters**. On the page that appears, enter the key value (shown in the following table) into the **Name** field and the default value (shown in the **Description** column in the following table) into the **Value** field.
+Features change from month to month, so it's valuable to check back regarding the maturity of a particular feature and whether any new features are added. To apply any of the following features, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. On the left pane menu, select **Configuration parameters**. On the **Set up the configuration parameters** page, enter the key value (shown in the **Key** column in following table) into the **Name** field and the default value (shown in the **Description** column in the following table) into the **Value** field.
 
 | Feature | Key | Description | Maturity |
 |------------------|---------------------|------------------------------|-----------------------------------|
@@ -59,13 +59,13 @@ To initialize the base configuration data, follow these steps.
 
 | Associated areas | Best practice |
 |------------------|---------------|
-| <ul><li>Parameters</li><li>Commerce scheduler</li><li>Retry</li></ul> | Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce scheduler parameters**, and set **Try count** to **3**. If the value of this field is too high, download sessions might fail during high-usage times. Additionally, verify (or set) **Full dataset generation interval in days** to **0**. This means full dataset generation doesn't occur unless required by something other than time. Setting these values allows CDX to function in a more expected manner while reducing possible error or performance issues. |
+| <ul><li>Parameters</li><li>Commerce scheduler</li><li>Retry</li></ul> | Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce scheduler parameters**, and set **Try count** to **3**. If this value is set is too high, download sessions might fail during periods of high usage. Also, verify that the **Full dataset generation interval in days** is set to **0**. This setting means that full dataset generation doesn't occur unless required by something other than time. Setting these values allows CDX to function as expected while reducing possible error or performance issues. |
 | <ul><li>Functionality profile</li><li>Data retention</li><li>Return policy</li> | Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profile**, and then, in the **Functions** section, set **Days transactions exist** to a value that is the same as, or close to the value that is defined for the return policy. For example, if the return policy states an item can be returned within 30 days, set this field to **30** or **31**. If special exceptions are allowed beyond the usual policy, set the field to **60**, which allows for faster returns even beyond the usual policy limits). |
-| <ul><li>Channel database group</li><li>Distribution schedule</li><li>Offline profile</li><li>Pause</li><li>Data</li><li>Download</li></ul> | We highly recommend that you have either a "dummy" channel database group (that is, a group that isn't associated with any distribution schedule job) that you assign to the newly generated terminals, or a special offline profile where the **Pause offline synchronization** option is set to **Yes**. In this way, data generation occurs when required and when the system is most available to do it. (However, the system might pause multiple times as needed.) |
+| <ul><li>Channel database group</li><li>Distribution schedule</li><li>Offline profile</li><li>Pause</li><li>Data</li><li>Download</li></ul> | Microsoft highly recommends that you have either a "dummy" channel database group (in other words, a group that isn't associated with any distribution schedule job) that you assign to the newly generated terminals, or a special offline profile where the **Pause offline synchronization** option is set to **Yes**. In this way, data generation occurs when required and when the system is most available to do it. (However, the system might pause multiple times as needed.) |
 
 ## Enable database index compression
 
-Use database index compression features to help reduce the database size. See [**Commerce database index compression**](index-compression.md) for details on these features.
+Use database index compression features to help reduce the database size. For details on these features, see [Commerce database index compression](index-compression.md).
 
 ## Practices that affect performance
 
