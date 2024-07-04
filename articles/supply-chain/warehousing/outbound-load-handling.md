@@ -22,22 +22,19 @@ An outbound load is a set of shipments from a warehouse destined for various loc
 
 Each outbound load can be associated with one or more order line quantities for sales orders, transfer orders, and outbound shipment orders. Your system might also contain transportation plans. For more information about how to create and manage outbound transportation, see [Transportation management overview](../transportation/transportation-management-overview.md).
 
-
-<!-- The following MUST get review/edited by Juraj and a new WHAT'S NEW SECTION created for this! -->
 ## <a name="outbound-shipment-policies"></a> Outbound shipment processing policies
 To manage the process of shipping out your orders, you need to apply an *Outbound shipment processing policy* that has the desired flow set up to your shipments.
 
 The following options are set up as part of the **Warehouse management \> Setup \> Shipping \> Outbound shipment processing policies**:
 
- - One shipment per order - This limits the association of one shipment and one demand order. This is always the case when using [Warehouse management only mode with externally managed warehouse processing](wms-only-mode-external-shared-warehouse.md).
-- Fill entire shipment - This configuration allows you to confirm that warehouse wave processing will only proceed with shipments when it is possible to create warehouse work for the full quantities of the shipment lines.
+ - One shipment per order - This limits the association of one shipment and one demand order. It is a prerequisite when using [Warehouse management only mode with externally managed warehouse processing](wms-only-mode-external-shared-warehouse.md), as it needs to be set up on the source system related to the externally managed warehouse.
+ - Fill entire shipment - This configuration allows you to confirm that warehouse wave processing will only proceed with shipments when it is possible to create warehouse work for the full quantities of the shipment lines. The default value is "Respect customer settings" which adheres to the fill entire shipment setting defined for a customer.
 
 ### How to define the *Outbound shipment processing policy* defaulting on orders
-<!-- Juraj
- 
-For WOM from Source system
-Customer ???
--->
+The outbound shipment processing policy is a property assigned to shipments. However, it can be defaulted in multiple ways:
+ - Orders - Policy can be set up on the outbound orders, and it will then be assigned to all shipments created from those orders.
+ - Customer - Policy can be assigned to customers, and all orders created for that customer will have that policy, which will then propagate to shipments created from those orders.
+ - Source systems - This is related to [Warehouse only mode](wms-only-mode-overview.md). All shipments coming from a source system will inherit the policy that was set up on it.
 
 ## Overview: How outbound loads are created, registered, and shipped
 
