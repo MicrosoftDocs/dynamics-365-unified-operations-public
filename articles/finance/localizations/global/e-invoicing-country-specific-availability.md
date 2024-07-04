@@ -60,7 +60,7 @@ The following table shows the Electronic invoicing globalization features that a
 | Spain | Spanish electronic invoice (ES) | Sales invoices and project invoices |
 
 > [!NOTE]
-> In current implementations in Chile, Costa Rica, and Panama, the globalization features described above only generate electronic invoices and store their XML files on the service side, but they don’t submit the invoices. For the submission of Chilean, Costa Rican, and Panamanian electronic invoices, integration with the [Electronic Invoicing service ISV last-mile connector](../global/e-invoicing-isv-connector.md) is required. However, the integration hasn’t been released yet for these countries.
+> In current implementations in Costa Rica and Panama, the globalization features described above only generate electronic invoices and store their XML files on the service side, but they don’t submit the invoices. For the submission of Costa Rican and Panamanian electronic invoices, integration with the [Electronic Invoicing service ISV last-mile connector](../global/e-invoicing-isv-connector.md) is required. However, the integration hasn’t been released yet for these countries.
 
 ## Preview features
 
