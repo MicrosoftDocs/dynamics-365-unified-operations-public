@@ -81,7 +81,7 @@ The following table defines terms that pertain to manufacturing execution and re
 
 Workers can make various types of registrations in manufacturing execution for work that is performed on production jobs. Depending on the system setup, workers might also be able to make registrations on project activities and nonproductive tasks, such as breaks, absences, and indirect activities. The following list describes the registration types:
 
-- **Clock-in/clock-out** (available with time and attendance) – Workers clock in when they arrive at work and clock out when they leave to go home.
+- **Clock-in/clock-out** (available with time and attendance) – Workers clock in when they arrive at work, and they clock out when they leave to go home.
 - **Register on production jobs** – Workers can make registrations on the production jobs that appear on their job list. Examples of these registrations include starting a job and reporting feedback for a job. Workers can start several jobs at the same time. This approach is known as job bundling.
 - **Register on inventory** – Workers can make registrations on materials that are used on the shop floor, but that aren't directly related to production jobs. Examples of these materials include grease, lubricants, and other materials that are used to keep machinery running. Registration is done in an inventory journal.
 - **Register on projects** (available with time and attendance) – Workers can make registrations on the projects or project activities that appear on their job list. Examples of these registrations include starting work and finishing work.
