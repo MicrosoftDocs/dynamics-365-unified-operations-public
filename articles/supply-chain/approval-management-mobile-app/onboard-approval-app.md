@@ -28,7 +28,9 @@ To run the latest Approvals Management mobile app, you must be using Supply Chai
 
 ### Set up Dataverse for your Supply Chain Management environment
 
-The mobile app uses [Dataverse virtual tables that are connected to Supply Chain Management](../../../fin-ops-core/dev-itpro/power-platform/virtual-entities-overview.md). Therefore, a Dataverse environment must be integrated with your Supply Chain Management environment. If Dataverse isn't already set up for your environment, follow the instructions in [Microsoft Power Platform integration with finance and operations apps](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
+<!--KFM: This all came from the Asset Management app docs. Review and confirm all of this. -->
+
+The mobile app uses [Dataverse virtual tables that are connected to Supply Chain Management](../../fin-ops-core/dev-itpro/power-platform/virtual-entities-overview.md). Therefore, a Dataverse environment must be integrated with your Supply Chain Management environment. If Dataverse isn't already set up for your environment, follow the instructions in [Microsoft Power Platform integration with finance and operations apps](../../fin-ops-core/dev-itpro/power-platform/overview.md).
 
 When you create the Dataverse environment where you want to install the app, be sure to enable Dynamics 365 apps.
 
@@ -79,22 +81,21 @@ Each Supply Chain Management user who should be able to operate the Approvals Ma
 
 Users who have the *System administrator* role can also use the app both to manage purchase orders and purchase requisitions.
 
-Follow these steps to add the required security roles to a Supply Chain Management user and review that user's **Person** setting.
+Follow these steps to add the required security roles to a Supply Chain Management user.
 
 1. Sign in to your Supply Chain Management environment by using an administrator account.
 1. Go to **System administration \> Users \> Users**.
 1. Use the filter to find a user who should be able to use the app.
 1. Open the details page for the selected user by selecting the hyperlink in the **User ID** column.
-1. Review the value of the **Person** field to determine which person is assigned to the current user account. If a person is assigned, write down their name. If no person is assigned, you'll assign one in the next section. <!--KFM: I think this step is left over from Asset Management and should be removed here. -->
 1. On the **User's roles** FastTab, on the toolbar, select **Assign roles** to open the **Assign roles to user** dialog box.
 1. In the **Role name** column, find and select the *Buying agent*, *Purchasing agent* and/or *Purchasing manager* roles, as needed.
 1. Select **OK** to apply your settings and close the dialog box.
 
 > [!NOTE]
-> User role organization assignments aren't supported. If one or more organizations that differ from a selected user's [default company](../../../fin-ops-core/fin-ops/get-started/personalize-user-experience.md#system-wide-options-for-the-current-user) have been assigned to any security role that's set for that user, app installation will fail.
+> User role organization assignments aren't supported. If one or more organizations that differ from a selected user's [default company](../../fin-ops-core/fin-ops/get-started/personalize-user-experience.md#system-wide-options-for-the-current-user) have been assigned to any security role that's set for that user, app installation will fail.
 
 For more information about how to set up roles and security in Supply Chain Management, see
-[Security roles](../../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md#security-roles).
+[Security roles](../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md#security-roles).
 
 ## Install and open the Approvals Management mobile app
 

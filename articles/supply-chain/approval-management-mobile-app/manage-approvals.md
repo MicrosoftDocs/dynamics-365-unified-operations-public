@@ -29,7 +29,7 @@ To manage purchasing requests from the Approvals Management mobile app, you must
     - *Purchasing manager* – This role allows you to use the app to manage both purchase orders and purchase requisitions.
 
 For more information about how to set up roles and security in Supply Chain Management, see
-[Security roles](../../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md#security-roles).
+[Security roles](../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md#security-roles).
 
 ## Home page
 

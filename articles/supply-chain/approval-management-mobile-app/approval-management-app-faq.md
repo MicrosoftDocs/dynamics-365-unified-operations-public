@@ -25,11 +25,11 @@ The Approvals Management mobile app runs within the Power Apps mobile app. All p
 
 ## Why don't I see anything when I sign in to the app?
 
-If you don't see any features in the app, you probably lack the permissions required to access them. Access to each feature is controlled by security roles assigned to your user account in Supply Chain Management. For more information, see the [Configure users and workers in Supply Chain Management](onboard-app.md#roles-workers)
+If you don't see any features in the app, you probably lack the permissions required to access them. Access to each feature is controlled by security roles assigned to your user account in Supply Chain Management. For more information, see [Onboard the Approvals Management mobile app (Preview)](onboard-approval-app.md).
 
 ## What versions of Supply Chain Management support the app?
 
-The Approvals Management mobile app requires Supply Chain Management version 10.0.36 or newer.
+The Approvals Management mobile app requires Supply Chain Management version 10.0.40 or newer.
 
 ## <a name="customize"></a>Can I customize and extend the app?
 
