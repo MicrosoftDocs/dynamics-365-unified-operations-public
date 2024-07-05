@@ -1,5 +1,5 @@
 ---
-title: Manage approvals using the Approvals Management mobile app
+title: Manage approvals using the Approvals Management mobile app (preview)
 description: This article describes how to use the Approvals Management mobile app to approve, reject, or delegate approval requests.
 author: johanhoffmann
 ms.author: johanho
@@ -11,7 +11,7 @@ ms.custom:
   - bap-template
 ---
 
-# Manage approvals using the Approvals Management mobile app
+# Manage approvals using the Approvals Management mobile app (preview)
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -23,13 +23,7 @@ This article describes how to use the Approvals Management mobile app to approve
 To manage purchasing requests from the Approvals Management mobile app, you must meet the following requirements:
 
 - You must sign in to Power Apps by using a domain account that matches a user account in Supply Chain Management with the same Microsoft Entra ID username.
-- Your user account in Supply Chain Management must be assigned one of the following security roles, depending on which types purchases you want to manage.
-    - *Buying agent* - This role allows you to use the app to manage purchase orders.
-    - *Purchasing agent* – This role allows you to use the app to manage purchase requisitions.
-    - *Purchasing manager* – This role allows you to use the app to manage both purchase orders and purchase requisitions.
-
-For more information about how to set up roles and security in Supply Chain Management, see
-[Security roles](../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md#security-roles).
+- Your user account in Supply Chain Management must be assigned the required security roles based on which types approvals you need to manage. For details, see [Set up user accounts to manage approvals in Supply Chain Management](onboard-approval-app.md#roles-approvals)
 
 ## Home page
 

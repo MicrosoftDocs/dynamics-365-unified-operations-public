@@ -1,5 +1,5 @@
 ---
-title: Approvals Management mobile app overview
+title: Approvals Management mobile app overview (preview)
 description: This article introduces the Approvals Management mobile app.
 author: johanhoffmann
 ms.author: johanho
@@ -11,7 +11,7 @@ ms.custom:
   - bap-template
 ---
 
-# Approvals Management mobile app overview
+# Approvals Management mobile app overview (preview)
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: Approvals Management mobile app FAQs and known issues
+title: Approvals Management mobile app FAQs and known issues (preview)
 description: This article provides answers to several frequently asked questions (FAQs) about the Approvals Management mobile app. It also describes a few known issues that affect the app and how to work around them.
 author: johanhoffmann
 ms.author: johanho
@@ -13,9 +13,10 @@ ms.custom:
 
 <!--KFM: This is an exact  copy of the Asset Management app FAQ. Please review and revise as needed. -->
 
-# Approvals Management mobile app FAQs and known issues
+# Approvals Management mobile app FAQs and known issues (preview)
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article provides answers to several frequently asked questions (FAQs) about the Approvals Management mobile app. It also describes a few known issues that affect the app and how to work around them.
 

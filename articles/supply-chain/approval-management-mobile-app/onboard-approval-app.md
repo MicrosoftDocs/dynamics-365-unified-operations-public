@@ -1,5 +1,5 @@
 ---
-title: Onboard the Approvals Management mobile app (Preview)
+title: Onboard the Approvals Management mobile app (preview)
 description: This article describes how administrators can prepare your Microsoft Dynamics 365 Supply Chain Management and Dataverse environments to support the Approvals Management mobile app. It also describes how to install the app on your mobile devices.
 author: johanhoffmann
 ms.author: johanho
@@ -11,7 +11,7 @@ ms.custom:
   - bap-template
 ---
 
-# Onboard the Approvals Management mobile app (Preview)
+# Onboard the Approvals Management mobile app (preview)
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -67,11 +67,7 @@ Each relevant user must also have the *Finance and Operations Basic User* role.
 - To assign a role to a group team, follow the instructions in [Manage the security roles of a team](/power-platform/admin/manage-group-teams#manage-the-security-roles-of-a-team). We recommend that you use group teams if you must assign the role to multiple users. For information about how to manage team members, see [Manage team members](/power-platform/admin/manage-teams#manage-team-members).
 - To assign a role directly to a user, follow the instructions in [Assign a security role to a user](/power-platform/admin/assign-security-roles).
 
-## <a name="roles-approvals"></a>Configure approvers in Supply Chain Management
-
-Each user who will use the Approvals Management mobile app must be set up as described in this section.
-
-### Set up user accounts to manage approvals
+## <a name="roles-approvals"></a>Set up user accounts to manage approvals in Supply Chain Management
 
 Each Supply Chain Management user who should be able to operate the Approvals Management mobile app must have one or all of the following standard security roles:
 
