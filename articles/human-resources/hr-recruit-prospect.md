@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up a prospect in the HR Recruiting app (preview)
-description: This article describes how to set up a prospect in the HR Recruiting app in Dynamics 365 Human Resources.
+title: Set up prospects in the HR Recruiting app (preview)
+description: This article explains how to set up prospects in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 07/01/2024
 ms.topic: article
@@ -23,56 +23,60 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Set up a prospect in the HR Recruiting app (preview)
+# Set up prospects in the HR Recruiting app (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
-This article describes how to set up a prospect in the HR Recruiting app in Dynamics 365 Human Resources.
+This article explains how to set up prospects in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
+
+A *prospect* is a potential applicant who fits a specific job role. Recruiters find these candidates and mark them as prospects. They can then send an invitation that the prospects can use to learn about the job opportunity and apply for the role. 
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
+## Add candidates as prospects
 
-## Prospect
-Prospect is a possible applicant who fits a certain job role. Recruiters find these candidates and mark them as a prospect. They can send an invitation to these prospects to learn about this job opportunity and apply for the role. 
+A recruiter can use either of the following methods to add candidates as prospects in the Recruiting app.
 
-There are two methods a recruiter can use to add the candidate to the prospect.
-1. Create a new prospect in the job ad.
-   - Click **Job ads** from the menu.
-   - Click **Active job ads** from the job ads list.
-   - Select **Prospect** tab.
-   - Click **+New prospect**.
-   - Select the candidate in the pop up. Other information is automatically populated.
-   - Click **Save** and **Close**.
-    
-2. Add prospects from candidate
- - Select one or more candidates from the list of available candidates.
- - Click **Add as prospects**.
- - A pop-up appears, select one or more jobs to add the selected candidate as a prospect.
- - Select the jobs and click **Add**.
->[!Note]
-> Click **Close** or **X** to close the pop up.
- - Go to the job ad where the prospect is.
- - Click **Prospect** tab, the candidate is now a prospect.
+- Create a new prospect in a job ad.
+
+    1. On the menu, select **Job ads**.
+    1. In the job ad list, select **Active job ads**.
+    1. On the **Prospect** tab, select **New prospect**.
+    1. In the dialog box, select the candidate to add as a prospect. Other information is automatically filled in.
+    1. Select **Save** and then **Close**.
+
+- Add prospects from candidates.
+
+    1. In the list of available candidates, select one or more candidates to add as prospects.
+    1. Select **Add as prospects**.
+    1. In the dialog box, select one or more jobs to add the selected candidates to as prospects, and then select **Add**.
+
+        > [!NOTE]
+        > To close the dialog box, select **Close** or **X**.
+
+    1. Go to the job ad where a prospect was added.
+    1. On the **Prospect** tab, notice that the candidate is now a prospect.
  
+## Turn prospects into applicants
 
-### Move to applicants
-Recruiters can make prospects an applicant directly. 
-To make a prospect an applicant, follow these steps:
-1. Go to **Job ad** > **Prospects**.
-2. Select the prospects to turn into applicants.
-3. Click **Move to applicant**.
-4. The selected prospects disappear from the prospect list and will display in the applicant tab for the same job ad.
-You can select multiple prospects to move them as an applicant.
+Recruiters can turn prospects directly in applicants. 
 
-### Send invite
-Recruiters can send the invitation to prospects to notify them about job openings. Prospects will get a notification in their email.
+To turn prospects into applicants, follow these steps.
 
+1. Go to **Job ad** \> **Prospects**.
+1. Select one or more prospects to turn into applicants.
+1. Select **Move to applicant**.
 
-### Delete prospect
+The selected prospects are removed from the prospect list and now appear on the **Applicant** tab for the same job ad.
 
-To delete a prospect, follow these steps: 
-1. Go to **Job ad** > **Prospects**.
-2. Choose the prospects to delete.
-3. Click **Delete prospect**.
+## Send an invitation to prospects
 
+Recruiters can send an invitation to prospects to notify them about job openings. Prospects receive the notification by email.
 
+## Delete prospects
+
+To delete prospects, follow these steps.
+
+1. Go to **Job ad** \> **Prospects**.
+1. Select the prospects to delete.
+1. Select **Delete prospect**.
