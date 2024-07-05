@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Use the career site in the HR Recruiting app (preview)
-description: This article describes how to use the career site in the HR Recruiting app in Dynamics 365 Human Resources.
+title: Use the careers site in the HR Recruiting app (preview)
+description: This article explains how to use the careers site in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 07/01/2024
 ms.topic: article
@@ -23,69 +23,63 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-#  Use the career site in the HR Recruiting app (preview)
+# Use the careers site in the HR Recruiting app (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
-This article describes how to use the career site in the HR Recruiting app in Dynamics 365 Human Resources.
+This article explains how to use the careers site in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 
-Careers site allows candidates to create and update their personal profile, upload their resume and other documents, apply for jobs, and track their application status. Candidates can also view and accept job 
-offers, provide feedback, and communicate with recruiters through the Careers site. Careers site helps candidates to showcase their skills and qualifications, and to stay connected with the hiring process.
+The careers site helps candidates showcase their skills and qualifications, and stay connected with the hiring process. On the careers site, candidates can create and update their personal profile, upload their resume and other documents, apply for jobs, and track the status of their application. They can also view and accept job offers, provide feedback, and communicate with recruiters.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
  
-## Login
-Candidates need to create an account before using the Careers site. 
-To create an account on the Careers site, follow these steps:
-1. On the Careers site, click **Create one**.
-2. Click **Sign in** on the home page of the Careers site if you already have an account.
-3. Enter your email and password. 
+## Sign in to the careers site
+
+Candidates must have an account to sign in to the careers site.
+
+To sign in to the careers site if you already have an account, follow these steps.
+
+1. On the home page of the careers site, select **Sign in**.
+1. Enter your email address and password. 
+
+If you don't yet have an account, select **Create one**. After an account is created, you're signed in to the careers site.
+
+> [!NOTE]
+> Before you can sign in or create an account, you must agree to the privacy policy.
+
+An icon that contains the candidate's initials appears in the upper-right corner of the page. This icon indicates that the candidate is signed in. It can also be used to access the candidate's profile and settings. 
  
->[!Note]
->You have to agree to the Privacy policy before you can log in or create an account.
+## Create a profile
 
-After creating an account, the candidate is signed into the Careers site and sees an icon with their initials at the top right corner of the screen. This icon indicates that they're logged in and can access 
-their profile and settings. 
+To create a profile, follow these steps.
+
+1. Select the icon in the upper-right corner of the page, and then select **My profile**.
+1. Select **Create profile**.
+1. Enter personal details, such as your name, email address, and phone number. Mandatory fields that candidates must fill in are marked with an asterisk (\*).
+
+    > [!NOTE]
+    > When you enter personal details for the first time, or when you change them later, select **Save as draft**. The **Next** button then becomes available. Select **Next** to move to the next step, where you enter your educational background and work history, and upload a resume.
+
+1. To enter your educational background, select **Add education**, fill in all the required fields, and then select **Save**. You must enter at least one item in your educational background to enable the **Next** button.
+1. On the **Work history** tab, select **Add work history**, fill in all the relevant fields, and then select **Save**.
+1. If you just graduated from college, or if you have no work history, select the **I do not have work history** checkbox.
+1. To upload a resume, select **Choose file**, select the file, and then select **Upload**.
+1. Select **Submit**.
+
+After a candidate submits a profile, they can view and edit it as required. 
+
+## Apply for jobs
+
+The **Job** tab shows a list of available jobs that a candidate can apply for. The candidate can use the controls on the left to search or filter the results by keywords, location, or job type. They can also select a job title to view more information about the job, such as the description, requirements, and benefits. 
  
-### Create a profile
-To create a profile, follow these steps: 
-1. Click on the icon at the top right corner of the screen, click **My profile**.
-2. Select **Create profile**.
-3. Enter personal details, such as name, email address, and phone number. Candidates should fill in all the mandatory fields marked with an asterisk (*).
+To apply for a job, a candidate selects **Apply** and follows the on-screen instructions. A message notifies the candidate that they successfully applied for the job. The candidate also receives email alerts if the admin set up the email template for the application scenario.
 
->[!Note]
->Click **Save as draft** when personal details are entered for the first time or are changed. This activates **Next**, which moves to the next step of giving work history, education history and uploading a resume.
+## Action center
 
-4. To add education, click **Add education** button, fill in all the required fields, and click **Save**. One education background needs to be added to enable the next button.
-5. In the **Work history** tab, click **Add work history** to enter work history. Candidates should fill in all the relevant fields.
-6. Click **Save**.
-7. If the candidate has just graduated from college or has no work history, select **I do not have work history** checkbox.
-8. Upload a resume by clicking **Choose file**, click **Upload** to upload.
-9. Click **Submit**.
-10. After the profile is submitted, Candidates can view and edit their profile if needed. 
- 
+The **Action center** tab shows the jobs that a candidate applied for and the progress of each application. The candidate can select any job title to learn more about the job and how to apply for it.
 
-#### Apply for jobs
+To cancel a job application, the candidate selects **Withdraw** at the bottom of the job details page. 
 
-The candidates can go to the **Job** tab to see available jobs. A list of all the open jobs that they can apply for will be displayed. Candidates can also search or filter the results by keywords, location, or job 
-type on the left side. Click on a job title to see more information about the job, such as the description, requirements, and benefits. 
- 
-To apply for a job, click **Apply** and complete the steps on the screen. Candidates get a message after applying successfully. The candidate also gets email alerts if admin has set up the email template for the 
-application scenario.
- 
+## Candidate profile in the Recruiting add-on
 
-### Action center
-
-On the **Action center** tab, candidates can see the jobs that they have applied for and their progress for each application. Candidate can click on any job title to learn more about the job and how to apply.
-To cancel their job application, click **Withdraw** at the bottom of the job details page. 
-
-### Candidate profile on Recruiting add-on
-
-When candidate creates their profile in Careers site, recruiters can see the candidate profile on Recruiting add-on. Recruiters can also see the all the applications that are submitted by the candidate from careers
-site.
- 
-
-
-
-
-
+After a candidate creates a profile on the careers site, recruiters can view it in the Recruiting add-on. Recruiters can also view all the applications that the candidate submitted from the careers site.
