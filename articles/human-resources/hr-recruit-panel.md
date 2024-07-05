@@ -120,5 +120,5 @@ To view the candidate details and create an employee record for the candidate, f
 - When candidate data is moved from the Recruiting Add-on to the Dynamics 365 finance and operations environment, only the name is transferred. Other details, such as the educational background, skills, and positions, aren't transferred.
 - Localization isn't done.
 - When candidates enter personal details in their profile on the careers site, they must select **Save as draft** to enable the **Next** button. They can then select **Next** to provide their educational background and work history, and upload a resume.
-- When candidates create a profile on the careers site and want to upload a resume, they must select **Upload** after they selecting the file.
+- When candidates create a profile on the careers site and want to upload a resume, they must select **Upload** after they select the file.
 - If the administrator deletes a candidate's profile, the candidate can still access the careers site, but they can't create a profile. To create a profile, the candidate must remove their existing account and then create a new one. 
