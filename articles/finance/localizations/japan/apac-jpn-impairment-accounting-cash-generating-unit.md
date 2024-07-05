@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Fixed asset impairment accounting on cash-generating units for Japan
-description: This article gives the user an overview of the conceptual model for impairment accounting for Japan. 
+description: Learn about the conceptual model for impairment accounting for Japan, including outlines on cash-generating units and impairment recognition tests.
 author: kfend
-ms.date: 07/28/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetAllocationGoodwillSharedAsset_JP, AssetCashGeneratingUnit_JP, AssetCashGeneratingUnitGroup_JP, AssetImpairmentRecognitionMethod1_JP, AssetImpairmentRecognitionMethod2_JP
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.search.region: Japan
-# ms.search.industry: 
 ms.author: kfend
+ms.topic: article
+ms.date: 07/28/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-02-28
+ms.search.form: AssetAllocationGoodwillSharedAsset_JP, AssetCashGeneratingUnit_JP, AssetCashGeneratingUnitGroup_JP, AssetImpairmentRecognitionMethod1_JP, AssetImpairmentRecognitionMethod2_JP
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Fixed asset impairment accounting on cash-generating units for Japan

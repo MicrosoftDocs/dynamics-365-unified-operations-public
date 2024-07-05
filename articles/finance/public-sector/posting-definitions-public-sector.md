@@ -1,19 +1,16 @@
 ---
 title: Posting definitions in the public sector
-description: This article lists examples of public sector posting definitions that can be used to create subledger journal lines for originating transactions that meet selected criteria.
+description: Access examples of public sector posting definitions that can be used to create subledger journal lines for originating transactions that meet selected criteria.
 author: velofog
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
+audience: Application User
 ms.search.region: Global
-ms.author: velofog
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-ms.search.industry: Public sector
 ms.search.form: BudgetDetailsInquiry, CustGroup, JournalizingDefinition, JournalizingDefinitionTrans, LedgerFund, LedgerParameters, LedgerTransferOpening, MainAccount
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Posting definitions in the public sector

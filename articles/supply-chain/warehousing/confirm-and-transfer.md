@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Confirm and transfer
-description: This article explains how to use the Confirm and transfer feature, which lets users ship loads out of the warehouse before they complete all the work that is associated with those loads.
+description: Learn how to use the Confirm and transfer feature, which lets users ship loads out of the warehouse before they complete all the work associated with those loads.
 author: Mirzaab
-ms.date: 07/01/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
+ms.topic: article
+ms.date: 07/01/2020
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-07-01
+ms.search.form:  WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench
 ms.dyn365.ops.version: 10.0.8
 ---
 
@@ -141,11 +131,11 @@ To create a qualifying load, first create three sales orders by following these 
     - **Line 1:** Set the **Item number** field to *M9201*, the **Quantity** field to *20*, and the **Unit** field to *ea*.
     - **Line 2:** Set the **Item number** field to *M9202*, the **Quantity** field to *60*, and the **Unit** field to *ea*.
 
-#### Load planning workbench
+#### Outbound load planning workbench
 
-The load planning workbench will use the load template ID to build the shipments and release the sales order lines to the warehouse.
+The outbound load planning workbench will use the load template ID to build the shipments and release the sales order lines to the warehouse.
 
-1. Go to **Warehouse management \> Loads \> Load planning workbench**.
+1. Go to **Warehouse management \> Loads \> Outbound load planning workbench**.
 1. In the **Warehouse** field, select *51*.
 
     You will now build the load for the sales orders that you just created.
@@ -154,7 +144,7 @@ The load planning workbench will use the load template ID to build the shipments
 1. On the Action Pane, on the **Supply and demand** tab, in the **Add** group, select **To new load**.
 1. In the **Load template assignment** dialog box, in the **Load template ID** field, select *20' Container*.
 1. Select **OK**.
-1. In the **Loads** section of the **Load planning workbench** page, in the grid, find the newly created load ID for warehouse *51*. Scroll right until you see the **Allow load split during ship confirm** column. The check box should be selected for your load.
+1. In the **Loads** section of the **Outbound load planning workbench** page, in the grid, find the newly created load ID for warehouse *51*. Scroll right until you see the **Allow load split during ship confirm** column. The check box should be selected for your load.
 1. Select the load.
 1. On the **Release** menu above the grid, select **Release to warehouse** to create work.
 1. In the **Release load to warehouse** dialog box, verify that the **Records to include** FastTab shows your load ID.
@@ -162,8 +152,8 @@ The load planning workbench will use the load template ID to build the shipments
 
     You might receive a "Processing operation" message while the system creates the shipments and work.
 
-1. In the **Loads** section of the **Load planning workbench** page, your load should now have a load status of *Waved*. Select the load, and then, on the **Related information** menu above the grid, select **Wave details** to view the shipment IDs that were created. When you've finished, close the **Waves** page.
-1. In the **Loads** section of the **Load planning workbench** page, select the load, and then, on the **Related information** menu above the grid, select **Work details** to view the work that was created for the sales orders.
+1. In the **Loads** section of the **Outbound load planning workbench** page, your load should now have a load status of *Waved*. Select the load, and then, on the **Related information** menu above the grid, select **Wave details** to view the shipment IDs that were created. When you've finished, close the **Waves** page.
+1. In the **Loads** section of the **Outbound load planning workbench** page, select the load, and then, on the **Related information** menu above the grid, select **Work details** to view the work that was created for the sales orders.
 1. Make a note of the work IDs that were created. You might have to scroll right to see the sales order number and shipment ID that are associated with the work ID.
 
 ### Step 2: Set up the execution flow for mobile devices
@@ -200,7 +190,7 @@ The two work IDs will now be closed (loaded).
 
 In this step, you will confirm the two sales orders and work that have been completed for the load to ship the picked items of the load and create a new load for the unpicked items. Outbound shipment confirmation must be done on the **Load details** page.
 
-1. Go to **Warehouse management \> Loads \> Load planning workbench**.
+1. Go to **Warehouse management \> Loads \> Outbound load planning workbench**.
 1. In the **Loads** section, in the grid, select the row for the load ID that you created.
 1. Select the load ID link to open the **Load details** page.
 1. On the **Load details** page, on the Action Pane, on the **Ship and receive** tab, in the **Confirm** group, select **Outbound shipment** to initiate the confirmation.
@@ -211,7 +201,7 @@ In this step, you will confirm the two sales orders and work that have been comp
 
     You receive informational messages that indicate that the shipment for your load has been confirmed, and that a new load has been created from the split quantity.
 
-Refresh the **Load planning workbench** page to see the newly created load.
+Refresh the **Outbound load planning workbench** page to see the newly created load.
 
 You can also confirm that transaction relations have been updated in the following ways:
 

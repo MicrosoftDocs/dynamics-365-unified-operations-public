@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Ledger allocation rules
-description: This article provides information about ledger allocation rules. It describes the various components of these allocation rules and the allocation methods that can be used for them.
+description: Learn about ledger allocation rules. It describes the various components of these allocation rules and the allocation methods that can be used for them.
 author: kweekley
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerAllocation, LedgerAllocationBasisRule, LedgerAllocationRequest, LedgerAllocationRule
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 8147e148-7c11-45ef-95c6-f9889a875b54
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerAllocation, LedgerAllocationBasisRule, LedgerAllocationRequest, LedgerAllocationRule
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 8147e148-7c11-45ef-95c6-f9889a875b54
 ---
 
 # Ledger allocation rules

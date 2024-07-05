@@ -1,15 +1,15 @@
 ---
 title: System requirements for dual-write
-description: This article describes the system requirements for the setup of a dual-write connection.
+description: Learn about the system requirements for the setup of a dual-write connection as is currently supported for various regions.
 author: RamaKrishnamoorthy
-ms.date: 12/12/2023
+ms.author: ramasri
 ms.topic: conceptual
+ms.date: 12/12/2023
 ms.custom: 
   - bap-template
-audience: Developer
 ms.reviewer: johnmichalak
+audience: Developer
 ms.search.region: Global
-ms.author: ramasri
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -53,7 +53,7 @@ Dual-write has these limitations:
 + Dual-write currently has an initial synchronization limit of 40 legal entities.
 + Dual-write live synchronization has a limit of 250 legal entities.
 + Dual-write does not support [cross-company data sharing](../../sysadmin/cross-company-data-sharing.md).
-+ Dual-write requires that the finance and operations app and the customer engagement app must be in the same Microsoft Azure Active Directory (Azure AD) tenant.
++ Dual-write requires that the finance and operations app and the customer engagement app must be in the same Microsoft Microsoft Entra tenant.
 + Dual-write requires that the finance and operations app and the customer engagement app must be deployed in the same Microsoft Azure datacenter.
 + Dual-write is not triggered by the **doInsert**, **doUpdate**, and **doDelete** events of finance and operations apps. Use the **Insert**, **Update**, and **Delete** events in finance and operations apps when you want to trigger dual-write. 
 + Dual-write doesn't support distributed transactions. For example, if the [product receipt posting process is cancelled](../../../fin-ops/data-entities/scm-field-service-procurement.md#cancelling-the-posting-process), dual-write might create the product receipt in Dataverse but not create it in Supply Chain Management. 
@@ -66,4 +66,3 @@ Future updates of the dual-write solution will be available through One Version.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
-

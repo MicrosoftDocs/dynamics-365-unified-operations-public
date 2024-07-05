@@ -1,15 +1,15 @@
 ---
 title: Buffer profile and levels
-description: This article provides information about buffer profiles and levels, which determine the minimum and maximum stock levels that should be kept for each decoupling point.
+description: Learn about buffer profiles and levels, which determine the minimum and maximum stock levels that should be kept for each decoupling point.
 author: t-benebo
-ms.date: 06/30/2022
-ms.topic: article
-ms.search.form: EcoResProductDetailsExtended, ReqItemDecoupledLeadTime
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
+ms.topic: article
+ms.date: 06/30/2022
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-06-30
+ms.search.form: EcoResProductDetailsExtended, ReqItemDecoupledLeadTime
 ms.dyn365.ops.version: 10.0.28
 ---
 

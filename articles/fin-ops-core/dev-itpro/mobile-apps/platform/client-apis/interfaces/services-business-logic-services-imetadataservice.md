@@ -1,12 +1,13 @@
 ---
 title: MetadataService type
-description: Provides ability to access and configure various metadata elements under the application workspace.
+description: Learn about the MetadataService type, which provides ability to access and configure various metadata elements under the application workspace.
 author: jasongre
-ms.date: 05/24/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # MetadataService type

@@ -1,12 +1,13 @@
 ---
 title: X++ string runtime functions
-description: This article describes the string run-time functions.
+description: Learn about the string run-time functions, including syntax strings, parameters, return values, and remarks for various functions.
 author: josaw1
-ms.date: 08/15/2019
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 08/15/2019
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Invoice approvals mobile workspace
-description: This article provides information about the Invoice approvals mobile workspace.
-author: abruer 
-ms.date: 05/24/2022
+description: Learn about the Invoice approvals mobile workspace, including prerequisites and outlines and how to download and sign into the mobile app.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
+ms.date: 05/24/2022
+ms.custom:
+ms.reviewer: johnmichalak
 audience: Application User
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: abruer
-ms.search.validFrom: 2017-06-30 
+ms.search.validFrom: 2017-06-30
+ms.search.form:
 ms.dyn365.ops.version: July 2017 update 
 ---
 
@@ -78,7 +68,7 @@ Download and install the finance and operations mobile app:
 3.  The first time that you sign in, you're prompted for your user name and password. Enter your credentials.
 4.  After you sign in, the available workspaces for your company are shown. Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.
 
-    [![Pull to refresh.](../../dev-itpro/mobile-apps/media/pull-to-refresh-list-of-workspaces-183x300.png)](/media/pull-to-refresh-list-of-workspaces.png)
+    [![Pull to refresh.](../../dev-itpro/mobile-apps/media/pull-to-refresh-list-of-workspaces-183x300.png)]
 
 ## Approve invoices by using the Invoice approvals mobile workspace
 1.	On your mobile device, select the **Invoice approvals** workspace.

@@ -4,8 +4,6 @@ description: This article covers the pickup information module and describes how
 author: anupamar-ms
 ms.date: 11/06/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global

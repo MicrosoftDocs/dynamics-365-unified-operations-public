@@ -1,10 +1,13 @@
 ---
 title: Transition from the Dual-write Application Orchestration package to split packages
-description: The Dual-write Application Orchestration package is no longer a single package but has been split into smaller packages. This article explains how to switch to the split packages.
+description: The Dual-write Application Orchestration package is no longer a single package but has been split into smaller packages. Learn how to switch to the split packages.
 author: abunduc-ms
 ms.author: abunduc
-ms.date: 05/04/2023
-ms.topic: article
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
+ms.reviewer: johnmichalak
 ---
 
 # Transition from the Dual-write Application Orchestration package to split packages

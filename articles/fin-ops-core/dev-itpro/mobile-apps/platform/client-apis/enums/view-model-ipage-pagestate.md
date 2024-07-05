@@ -1,12 +1,13 @@
 ---
 title: PageState enumeration
-description: Represents the various high-level states the page can be in.
+description: Learn about the PageState enumeration, including learning about various enumberation members such as error, loaded, loading, offline, and refreshing.
 author: jasongre
-ms.date: 05/24/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # PageState enumeration

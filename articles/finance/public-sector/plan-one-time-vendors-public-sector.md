@@ -1,20 +1,17 @@
 ---
 title: Plan for one-time vendors in the public sector
-description: This article explains how organizations in the public sector can prepare to import and create multiple one-time vendors and invoices.
+description: Learn how organizations in the public sector can prepare to import and create multiple one-time vendors and invoices, including a table giving details for fields.
 author: v-kiarnd
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
+audience: Application User
 ms.search.region: Global
-ms.author: v-kiarnd
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerTransVoucher, SysConfiguration, Tax1099Summary, VendTableListPage
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 936570cb-932f-4027-b3c7-2235ad79bc1c
-ms.search.industry: Public sector
-ms.search.form: LedgerTransVoucher, SysConfiguration, Tax1099Summary, VendTableListPage
 ---
 
 # Plan for one-time vendors in the public sector

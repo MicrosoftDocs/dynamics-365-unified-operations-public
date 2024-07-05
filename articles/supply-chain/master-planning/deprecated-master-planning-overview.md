@@ -1,15 +1,15 @@
 ---
 title: Deprecated master planning overview
-description: This article describes how the new Planning Optimization planning engine is now replacing the legacy build-in planning engine.
+description: Learn how the new Planning Optimization planning engine is now replacing the legacy build-in planning engine and when the deprecated engine will be removed.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: overview
 ms.date: 11/11/2022
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # Deprecated master planning overview

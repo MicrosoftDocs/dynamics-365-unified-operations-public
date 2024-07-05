@@ -4,8 +4,6 @@ description: This article provides an overview N-1 support for Commerce customer
 author: josaw1
 ms.date: 10/03/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: India

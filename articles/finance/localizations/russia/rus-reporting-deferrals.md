@@ -1,18 +1,16 @@
 ---
 title: Reporting for deferrals (Russia)
-description: This article provides information about the various reports that are available for deferrals.
-author: AdamTrukawka
-ms.date: 06/28/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn about the various reports that are available for deferrals, including a step-by-step process and a table that defines various fields.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/20/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
-ms.author: atrukawk
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: 10.0.1
-ms.search.form: 
 ---
 
 # Reporting for deferrals (Russia)

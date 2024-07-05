@@ -1,18 +1,16 @@
 ---
 title: Credit note corrections (Russia)
-description: This article provides information about creating credit note corrections in Accounts receivable and Accounts payable.
-author: AdamTrukawka
-ms.date: 08/09/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn about creating credit note corrections in Accounts receivable and Accounts payable, including a process for setting up credit notes as corrections.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
-ms.author: atrukawk
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: 10.0.0
-ms.search.form: 
 ---
 
 # Credit note corrections (Russia)

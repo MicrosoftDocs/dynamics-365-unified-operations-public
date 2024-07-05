@@ -4,8 +4,6 @@ description: This article describes how to customize image focal points in Micro
 author: josaw1
 ms.date: 04/14/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

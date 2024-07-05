@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Integrate Dynamics 365 Supply Chain Management (Asset management) with Dynamics 365 Guides
-description: This article explains how to integrate the Asset management module in Microsoft  Dynamics 365 Supply Chain Management with Dynamics 365 Guides to take advantage of mixed-reality guides in your day-to-day service and maintenance workflows.
-author: johanhoffmann 
-ms.date: 04/28/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
+description: Learn how to integrate the Asset management module to take advantage of mixed-reality guides in your day-to-day service and maintenance workflows.
+author: johanhoffmann
 ms.author: johanho
+ms.topic: article
+ms.date: 04/28/2020
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-04-28
+ms.search.form:
 ms.dyn365.ops.version: 10.0.12
 ---
 
@@ -35,8 +25,7 @@ You can integrate the **Asset management** module in Microsoft Dynamics 365 Supp
 Before you can attach guides to Asset management work orders, you must complete these prerequisites:
 
 - [Set up Dynamics 365 Supply Chain Management](../../fin-ops-core/fin-ops/index.md) version 10.0.9 or later.
-- [Turn on dual-write for Supply Chain Management apps](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md).
-- [Turn on flight](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features) for the **MRGuidesFeature** feature. (For production environments, you must first submit a support ticket to have your tenant added to the flighting group.)
+- [Turn on dual-write for Supply Chain Management apps](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
 - [Turn on the following configuration keys](/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) on the **License configuration** page:
 
     - Asset management \> Asset management mixed reality

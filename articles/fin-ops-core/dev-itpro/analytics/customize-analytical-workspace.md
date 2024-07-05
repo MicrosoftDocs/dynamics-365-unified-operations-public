@@ -1,19 +1,17 @@
 ---
-title: Customize embedded reports in analytical workspaces (contains video)
-description: This article describes how power users can customize the application reports that are embedded in analytical workspaces.
-author: RichdiMSFT
-ms.date: 09/11/2020
+title: Customize embedded reports in analytical workspaces
+description: Learn about how power users can customize the application reports that are embedded in analytical workspaces, including learning about how to customize an analytical workspace.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 09/11/2020
+ms.reviewer: johnmichalak
 audience: IT Pro
-ms.reviewer: sericks
 ms.search.region: Global
-ms.author: richdi
 ms.search.validFrom: 2019-07-20
+ms.search.form: PowerBIConfiguration
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
-ms.search.form: PowerBIConfiguration
 ---
 
 # Customize embedded reports in analytical workspaces

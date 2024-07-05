@@ -6,9 +6,6 @@ description: This article is intended for people who implement functionality tha
 author: jashanno
 ms.date: 02/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: RetailTerminalTable, RetailDevice

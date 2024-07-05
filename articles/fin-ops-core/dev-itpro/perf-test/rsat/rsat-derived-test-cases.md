@@ -1,17 +1,15 @@
 ---
 title: Derived test cases
-description: This article shows how you can use the Regression suite automation tool to execute the same test case with multiple configurations.
+description: Learn about how you can use the Regression suite automation tool to execute the same test case with multiple configurations.
 author: FrankDahl
-ms.date: 11/27/2023
+ms.author: fdahl
 ms.topic: how-to
+ms.date: 11/27/2023
 ms.custom: 
   - bap-template
-ms.prod: 
-ms.technology: 
-audience: Developer
 ms.reviewer: johnmichalak
+audience: Developer
 ms.search.region: Global
-ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
 ---

@@ -1,14 +1,15 @@
 ---
 title: Czech Intrastat
-description: This article contains information about the Czech Intrastat report.
-author: AdamTrukawka
-ms.date: 01/18/2022
-ms.topic: article
-audience: 
-ms.reviewer: kfend
+description: Learn about the Czech Intrastat report, including a table the defines various field names and on outline on setting up Intrastat.
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
+ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: atrukawk
-ms.search.validFrom: 
+
 ---
 
 # Czech Intrastat

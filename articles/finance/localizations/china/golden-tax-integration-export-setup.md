@@ -1,19 +1,18 @@
 ---
 title: Golden tax integration export setup
-description: This procedure shows how to configure the export format for golden tax integration.
+description: Learn how to configure the export format for golden tax integration, including a step-by-step procedure using the CNMF demo data company.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: China (PRC)
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: China (PRC)
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Golden tax integration export setup
 
 [!include [banner](../../includes/banner.md)]

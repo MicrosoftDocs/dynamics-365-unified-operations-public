@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Service order stages  
-description: By defining the stages for a service order and assigning them to workers, you control the flow of a service order through the tasks that various people perform in the service organization.
-author: sorenva
-ms.date: 04/30/2018
+description: Learn how you can control the flow of a service order through the tasks that various people perform in the service organization.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMAServiceOrderTable, SMAStageTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 04/30/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMAServiceOrderTable, SMAStageTable
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

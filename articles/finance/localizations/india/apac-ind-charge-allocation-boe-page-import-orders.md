@@ -1,35 +1,22 @@
 ---
-# required metadata
-
 title: Charges allocation on Bill of entry page for import orders
-description: This article provides information about charge allocation for import orders.
+description: Learn about about charge allocation for import orders, including outlines on key changes introduced, enabling features, and creating purchase orders.
 author: EricWangChen
-ms.date: 03/21/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: India
-# ms.search.industry: 
 ms.author: wangchen
+ms.topic: article
+ms.date: 03/21/2022
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application User 
+ms.search.region: India
 ms.search.validFrom: 2022-03-01
+ms.search.form:
 ms.dyn365.ops.version:
-
 ---
 
 # Charges allocation on Bill of entry page for import orders
 
 [!include [banner](../../includes/banner.md)]
-
-[!include [banner](../../includes/preview-banner.md)]
 
 For transactions for the import of goods, duty and taxes are calculated based on a custom cost, insurance, and freight (CIF) value that is determined by adding freight and insurance charges to the value of the imported goods. The custom CIF value is also known as the assessable value. Customs authorities determine this value when a bill of entry (BOE) is submitted.
 

@@ -1,13 +1,13 @@
 ---
 title: Build the Customer form
-description: In this lab you’ll create a Master Details form and apply form pattern and subpatterns. A Master Details form shows primary data that has many fields.
+description: Learn about building the Customer form, including prerequisites, key concepts, setup, and overviews on various projects.
 author: jasongre
-ms.date: 06/20/2017
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

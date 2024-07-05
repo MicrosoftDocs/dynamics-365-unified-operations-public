@@ -1,18 +1,17 @@
 ---
 title: EE-00015 Payment reference generation tool
-description: This procedure walks you through generating the payment references.
-author: AdamTrukawka
-ms.date: 08/29/2018
+description: Learn about generating the payment references, including outlines on specifying number sequences for payment references and creating payment reference numbers.
+author: kailiang
+ms.author: kailiang
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+ms.custom: 
+  - bap-template
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
 ms.search.region: Estonia
-ms.author: atrukawk
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: MainAccount, LedgerJournalTable, LedgerJournalTransDaily
+ms.dyn365.ops.version: Version 7.0.0
 ---
 # EE-00015 Payment reference generation tool
 

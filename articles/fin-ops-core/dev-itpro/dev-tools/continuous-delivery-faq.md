@@ -1,13 +1,13 @@
 ---
 title: Development and continuous delivery FAQ
-description: This article answers to questions that are frequently asked by ISVs and partners about development, testing, delivery, and lifecycle management.
+description: Access answers to questions that are frequently asked by ISVs and partners about development, testing, delivery, and lifecycle management.
 author: laneswenka
-ms.date: 01/21/2020
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: laswenka
+ms.topic: article
+ms.date: 01/21/2020
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ---

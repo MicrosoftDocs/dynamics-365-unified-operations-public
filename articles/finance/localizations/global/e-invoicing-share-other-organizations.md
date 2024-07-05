@@ -1,20 +1,17 @@
 ---
 title: Share Globalization features with other organizations
-description: This article explains how to share Globalization features with external organizations.
+description: Learn how to share Globalization features with external organizations, including a step-by-step process for how to share.
 author: gionoder
-ms.date: 02/11/2022
+ms.author: johnmichalak
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 02/11/2022
+ms.custom:
+ms.reviewer: johnmichalak
 audience: Application User
-ms.reviewer: kfend
 ms.search.region: Global
-ms.author: gionoder
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.custom: 
-ms.assetid: 
+ms.search.validFrom:
 ms.search.form: 
+ms.dyn365.ops.version:
 ---
 
 # Share Globalization features with other organizations

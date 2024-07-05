@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Vendor collaboration with customers
-description: This article describes how you can use vendor collaboration to work with POs and monitor consignment inventory.
-author: GalynaFedorova
-ms.date: 09/15/2020
+description: Learn how you can use vendor collaboration to work with POs and monitor consignment inventory, including a list of workspaces.
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 09/15/2020
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: gfedorova
 ms.search.validFrom: 2020-11-01
+ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 ms.dyn365.ops.version: 10.0.15
-
+ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
 ---
 
 # Vendor collaboration with customers

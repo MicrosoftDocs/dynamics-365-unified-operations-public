@@ -1,18 +1,17 @@
 ---
 title: LISTJOIN ER function
-description: This article provides information about how the LISTJOIN Electronic reporting (ER) function is used.
+description: Learn about how the LISTJOIN Electronic reporting (ER) function is used, including syntax strings, arguments, return values, usage notes, and examples.
 author: kfend
-ms.date: 04/01/2020
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 04/01/2020
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ---
 
 # LISTJOIN ER function

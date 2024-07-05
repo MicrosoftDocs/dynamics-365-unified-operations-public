@@ -1,37 +1,22 @@
 ---
-# required metadata
-
 title: Form I-9 verification
-description: This article provides information about Form I-9 verification.
+description: Learn about Form I-9 verification, which must be completed for all new employees who will be working in the United States.
 author: ShielaSogge
-ms.date: 06/19/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: Hcmi9DocumentInquiry, Hcmi9DocumentTypeExpireList, Hcmi9DocumentType 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: d740ddb6-b8d7-4c12-b920-1f8afa25d026
-ms.search.region: USA
-# ms.search.industry: 
 ms.author: shielas
+ms.topic: article
+ms.date: 06/19/2017
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: USA
 ms.search.validFrom: 2016-02-28
+ms.search.form: Hcmi9DocumentInquiry, Hcmi9DocumentTypeExpireList, Hcmi9DocumentType 
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: d740ddb6-b8d7-4c12-b920-1f8afa25d026
 ---
 
 # Form I-9 verification
 
 [!include [banner](../../../../../finance/includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../../../includes/peap-1.md)]
 
 This article provides information about Form I-9 verification. Employers must complete Form I-9 for all new employees who will be working in the United States. The form documents that the employer has verified the identity of the new employee, and that the employee is authorized to work in the United States.
 

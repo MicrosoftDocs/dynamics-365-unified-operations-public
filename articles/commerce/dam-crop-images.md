@@ -4,8 +4,6 @@ description: This article describes how to crop images in Microsoft Dynamics 365
 author: josaw1
 ms.date: 04/14/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

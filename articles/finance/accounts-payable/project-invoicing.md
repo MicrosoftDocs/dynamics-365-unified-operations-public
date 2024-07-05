@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Project invoicing
-description: This article provides an overview of project invoicing for Time and material projects and Fixed-price projects. It includes information about invoice proposals (preliminary invoices), invoice control, on-account invoicing, vendor invoicing, and credit notes.
-author: TaylorVH
-ms.date: 07/10/2020
+description: Learn about project invoicing for Time and material projects and Fixed-price projects, including outlines on invoice proposals.
+author: sunfzam
+ms.author: Raynezou
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ProjInvoiceCashFlow, ProjInvoiceControl, ProjInvoiceListPage, ProjInvoiceProposalDetail, ProjInvoiceProposalListPage
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 07/10/2020
 ms.reviewer: zezhangzhao
-# ms.tgt_pltfrm: 
-ms.assetid: 1812d6f2-8b34-4258-8f5f-dcf12281547f
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: twheeloc
 ms.search.validFrom: 2020-07-06
+ms.search.form: ProjInvoiceCashFlow, ProjInvoiceControl, ProjInvoiceListPage, ProjInvoiceProposalDetail, ProjInvoiceProposalListPage
 ms.dyn365.ops.version: AX 10.0.13
-
+ms.assetid: 1812d6f2-8b34-4258-8f5f-dcf12281547f
 ---
 
 # Project invoicing

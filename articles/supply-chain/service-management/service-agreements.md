@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Develop and establish service agreements overview
 description: Service agreements let you define the resources that are used in a typical service visit and how those resources are invoiced to the customer.
-author: sorenva
-ms.date: 07/25/2019
+author: ChristianRytt
+ms.author: crytt
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMAAgreementTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 07/25/2019
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMAAgreementTable
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Develop and establish service agreements overview

@@ -4,8 +4,6 @@ description: This article describes how to configure a channel to use a channel 
 author: samjarawan
 ms.date: 09/01/2023
 ms.topic: article
-ms.prod:
-ms.technology:
 audience: IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global

@@ -1,20 +1,17 @@
 ---
 title: Sign up for and install the Electronic Invoicing service
-description: This article provides information about how to sign up for and install the Electronic Invoicing service.
+description: Learn about how to sign up for and install the Electronic Invoicing service, including outlines on signing up for RCS and installing add-ins for microservices.
 author: anuchansoriya
-ms.date: 01/22/2024
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: achansoriya 
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.topic: article
+ms.date: 01/22/2024
 ms.custom: 
-ms.assetid: 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom:
 ms.search.form: 
+ms.dyn365.ops.version:
 ---
 
 # Sign up for and install the Electronic Invoicing service

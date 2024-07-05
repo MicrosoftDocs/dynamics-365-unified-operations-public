@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Project deferrals
-description: This article provides information about project deferrals, which let you set up deferrals for project transactions for hours, expenses, fees, and sales orders.
-author: msftbrking
-ms.date: 05/06/2023
+description: Learn about project deferrals, which let you set up deferrals for project transactions for hours, expenses, fees, and sales orders.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/06/2023
 ms.reviewer: twheeloc
+audience: Application User
 ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: brking
 ms.search.validFrom: 2021-11-05
+ms.search.form:  
 ms.dyn365.ops.version: 10.0.34
-
 ---
 
 # Project deferrals

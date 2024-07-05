@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Map a cost element dimension
-description: A cost controller can use this procedure to map a cost element dimension to a cost element dimension in the MXMF legal entity. 
+description: A cost controller can use this procedure to map a cost element dimension to a cost element dimension in the MXMF legal entity.
 author: twheeloc
-ms.date: 03/28/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 03/28/2023
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User   
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Map a cost element dimension
 
 [!include [banner](../../includes/banner.md)]

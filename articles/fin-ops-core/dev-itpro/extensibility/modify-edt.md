@@ -1,13 +1,13 @@
 ---
 title: Modify extended data types (EDTs) through extension
-description: You can customize several properties on extended data types (EDTs) by using extensions.
+description: Learn about how you can customize several properties on extended data types (EDTs) by using extensions, including using property sheets.
 author: ivanv-microsoft
-ms.date: 04/30/2019
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: ivanv
+ms.topic: article
+ms.date: 04/30/2019
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
 ---

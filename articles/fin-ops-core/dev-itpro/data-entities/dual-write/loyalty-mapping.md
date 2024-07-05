@@ -1,13 +1,13 @@
 ---
 title: Customer loyalty cards and reward points
-description: This article describes the integration of data about customer loyalty cards and reward points in dual-write.
+description: Learn about the integration of data about customer loyalty cards and reward points in dual-write, including a table outlining various templates.
 author: RamaKrishnamoorthy
-ms.date: 03/10/2019
-ms.topic: article
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: global
 ms.author: ramasri
+ms.topic: article
+ms.date: 03/10/2019
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: global
 ms.search.validFrom: 2020-03-10
 ---
 

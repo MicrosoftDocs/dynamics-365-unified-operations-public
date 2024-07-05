@@ -1,28 +1,20 @@
 --- 
-# required metadata 
- 
 title: Set up project resource information
-description: This procedure shows how to set up a project resource. 
-author: GalynaFedorova
+description: Learn how to set up project resource information, including a step-by-step process using the USMF demo data company set.
+author: Henrikan
+ms.author: henrikan
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: ResResourcesListPage, ResAddResourceForm, ProjCostPriceHour, ProjSalesPriceHour   
+ms.custom:
+ms.reviewer: kamaybac   
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
 ms.search.industry: Service industries
-ms.author: gfedorova
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: ResResourcesListPage, ResAddResourceForm, ProjCostPriceHour, ProjSalesPriceHour
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Set up project resource information
 
 [!include [banner](../../includes/banner.md)]

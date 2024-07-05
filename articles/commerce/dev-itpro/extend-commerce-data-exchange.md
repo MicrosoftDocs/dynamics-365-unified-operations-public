@@ -4,8 +4,6 @@ description: This article explains how you can extend Commerce Data Exchange - R
 author: josaw1
 ms.date: 08/31/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

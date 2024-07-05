@@ -1,18 +1,18 @@
 ---
 title: Create a tax assessment - PIS and COFINS tax (Brazil)
-description: You can create the tax assessment for PIS/COFINS contributions for a given booking period.
+description: You can create the tax assessment for PIS/COFINS contributions for a given booking period, including a step-by-step process using the BRMF demo company.
 author: AdamTrukawka
-ms.date: 06/26/2017
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
+ms.reviewer: johnmichalak
+ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ---
+
 # Create a tax assessment - PIS and COFINS tax (Brazil)
 
 [!include [banner](../../includes/banner.md)]

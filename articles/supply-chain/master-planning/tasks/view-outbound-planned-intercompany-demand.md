@@ -6,8 +6,6 @@ description: This article provides a procedure that shows how to view outbound p
 author: t-benebo
 ms.date: 08/29/2018
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  

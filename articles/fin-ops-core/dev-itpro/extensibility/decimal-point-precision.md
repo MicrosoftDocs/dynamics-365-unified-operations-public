@@ -1,15 +1,13 @@
 ---
 title: Extending decimal point precision for selected data types
-description: This article describes how to extend decimal point precision for selected data types.
+description: Learn how to extend decimal point precision for selected data types, including overviews on data types for weight, width, height, and depth.
 author: MichaelFruergaardPontoppidan
-ms.date: 09/24/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: mfp
+ms.topic: article
+ms.date: 09/24/2019
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2018-10-10
 ms.dyn365.ops.version: Platform update 21
 ms.assetid: 8DA4DA85-0C2D-4CAF-B350-DAC9C1BE4DF9

@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Russia overview
-description: This article provides an overview of functionality that is specific to Russia.
-author: kfend
-ms.date: 09/12/2022
+description: Learn about the functionality that is specific to Russia, including links to resources about the general ledger, advance holders, and fixed assets.
+author: evgenypopov
+ms.author: evgenypopov
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: kfend
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Russia overview

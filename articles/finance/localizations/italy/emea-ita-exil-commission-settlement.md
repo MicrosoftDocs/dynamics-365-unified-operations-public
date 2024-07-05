@@ -1,18 +1,16 @@
 ---
 title: Commission settlement on payments
-description: This article provides information about commission settlement on payments.
+description: Learn about commission settlement on payments, including prerequisites and a process for setting up the default commission settlement method.
 author: mrolecki
-ms.date: 03/17/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Italy
 ms.author: mrolecki
+ms.topic: article
+ms.date: 03/17/2020
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Italy
 ms.search.validFrom: 2020-06-01
-ms.dyn365.ops.version: 10.0.10
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.10
 ---
 
 # Commission settlement on payments

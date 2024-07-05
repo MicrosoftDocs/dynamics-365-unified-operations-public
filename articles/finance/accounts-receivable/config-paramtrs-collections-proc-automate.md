@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Configure parameters for collection process automation
-description: This article describes the parameters that affect automated collection processes and provides guidance for setting them so that the automated process reflects your intentions and expectations.
+description: Learn about the parameters that affect automated collection processes and provides guidance for setting them to reflect your intentions and expectations.
 author: JodiChristiansen
-ms.date: 08/05/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  CustomerCollectionManagerWorkspace
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: shpandey
-ms.search.validFrom: 2017-08-26 
+ms.topic: article
+ms.date: 08/05/2021
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2017-08-26
+ms.search.form:  CustomerCollectionManagerWorkspace
 ms.dyn365.ops.version: 10.0.13 
 ---
 
@@ -32,6 +22,8 @@ This article describes the parameters that affect automated collection processes
 
 ## General
 Enter a number in the **Percentage of customers per batch task** to determine the number of batch tasks per automation process. Set **Post collection letters automatically** to **Yes** so the collection letter action type will post the letter during the automation. Set **Create activities for automations** to **Yes** to create and close activities for non-activity action types to view all automated steps taken on an account. Define the number of days collection history is stored in the **Days to keep collections process automation history**. When an invoice reaches the last step of the collections process it won’t be used to create future process automation action types if **Exclude invoice after activating last process step** is set to **Yes**. The next oldest invoice determines the next process automation step to ensure collection process automation actions continue. 
+
+Starting in version 10.0.39, a new **Track step in collections process automation** parameter is available. Use it to ensure that invoices go through all steps of the automation. Set this parameter to **Yes** if you want invoices to start at the first step in the process. For example, if the **Collections status** field was set to **Disputed**, but it was later set to **Resolved**, collections process automation starts at the first step on the **Process details** tab of the collections process setup. If this parameter is set to **No**, invoices start with the activity that most closely matches the date. 
 
 ## Payment predictions
 Starting in version 10.0.21, Customer payment predictions, found in Finance insights, projects whether an invoice will be paid on time, late, or very late. You can configure each of those categories in Finance insights. If invoices are predicted to be paid late, it's important to start the collections process before the invoice is due. Those predictions can be used to create collections activities when Collections process automations runs. Set **Enable payment predictions** to **Yes** to use customer payment predictions to create collections activities based on the probability that the invoice will be paid late. 

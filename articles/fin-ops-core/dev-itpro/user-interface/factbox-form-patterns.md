@@ -1,15 +1,13 @@
 ---
 title: FactBox form patterns
-description: This article provides information about the FactBox form patterns. FactBoxes are used to provide related information for a record.
+description: Learn about the FactBox form patterns, which are used to provide related information for a record, including overviews on usage and wireframes.
 author: jasongre
-ms.date: 11/09/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 11/09/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: b3d527bf-6b56-42fb-a135-493a62eb1435

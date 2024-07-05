@@ -4,8 +4,6 @@ description: This article is a deployment guide for the Commerce localization fo
 author: EvgenyPopovMBS
 ms.date: 04/13/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: India

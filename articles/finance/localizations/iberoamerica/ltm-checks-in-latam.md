@@ -1,12 +1,12 @@
 ---
 title: Use LATAM functionality for checks 
-description: This article explains how use LATAM functionality for checks.
-author: Cpicon85 
-ms.date: 10/20/2023 
-ms.topic: Article
-ms.reviewer: kfend
+description: Learn how to use LATAM functionality for checks, including prerequisites and outlines on accruing checks provided by your company and canceling checks.
+author: Cpicon85
 ms.author: v-cpicon 
+ms.topic: article
+ms.date: 10/20/2023 
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Use LATAM functionality for checks 

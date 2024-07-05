@@ -1,12 +1,13 @@
 ---
 title: EventHook type<T>
-description: EventHook type
+description: Learn about the EventHook type, including learning about the subscribe, unsubscribe, and unsubscribeAll methods and parameters.
 author: jasongre
-ms.date: 05/24/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # EventHook type&lt;T&gt;

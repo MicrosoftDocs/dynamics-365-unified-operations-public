@@ -1,37 +1,22 @@
 ---
-# required metadata
-
 title: Workflow system architecture
-description: This article describes the architecture of the workflow system.
+description: Learn about the architecture of the workflow system, including a table that outlines the runtime and activity for each step.
 author: ChrisGarty
-ms.date: 08/18/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 107a3f9f-aa1d-4087-9b35-196d8b82b0fb
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: cgarty
+ms.topic: article
+ms.date: 08/18/2017
+ms.reviewer: twheeloc 
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 107a3f9f-aa1d-4087-9b35-196d8b82b0fb
 ---
 
 # Workflow system architecture
 
 [!include [banner](../../../finance/includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article describes the architecture of the workflow system.
 
@@ -49,9 +34,11 @@ The managed workflow runtime consists of the Windows Workflow Foundation and fin
 
 Logically, the workflow infrastructure is an extension and is transparent to users. Physically, both the X++ workflow and the managed workflow runtimes are hosted on AOS. The workflow infrastructure uses batch processing on AOS and .NET Interop to integrate both subsystems, and to pass messages from one subsystem to the other. The X++ code that is run in the batch processor is compiled to .NET CIL. The batch processing runs in the .NET common language runtime (CLR).
 
+<!-- Image needs to be updated
+
 The following figure shows the high-level architecture of the workflow infrastructure.
 
-[![workflow\_architecturediagram2016.](../../fin-ops/organization-administration/media/workflow_architecturediagram2016.png)](/media/workflow_architecturediagram2016.png)
+[![workflow\_architecturediagram2016.](../../fin-ops/organization-administration/media/workflow_architecturediagram2016.png)](/media/workflow_architecturediagram2016.png) -->
 
 Users can use workflow pages and controls to participate in business processes.
 

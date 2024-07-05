@@ -1,12 +1,12 @@
 ---
 title: Format 1009 file for Colombia configuration
-description: This article explains how to set up and issue a format 1009 file for Colombia.
-author: Fhernandez0088 
-ms.date: 12/01/2023 
-ms.topic: articule
-ms.reviewer: kfend
+description: Learn how to set up and issue a format 1009 file for Colombia, including prerequisites and an outline on configuring application-specific parameters.
+author: Fhernandez0088
 ms.author: v-federicohe
+ms.topic: article
+ms.date: 12/01/2023 
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Format 1009 file for Colombia configuration

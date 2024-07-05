@@ -4,8 +4,6 @@ description: This article provides answers to frequently asked questions about t
 author: gvrmohanreddy
 ms.date: 09/02/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

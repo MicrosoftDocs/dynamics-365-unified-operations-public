@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Organizations and organizational hierarchies overview
-description: Organizational hierarchies represent the relationships between the organizations that make up your business.
+description: Organizational hierarchies represent the relationships between the organizations that make up your business, including overviews on operating unit types.
 author: sericks007
-ms.date: 01/03/2022
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: OMHierarchyManager, OMOperatingUnit,
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 76b7ca45-93d4-45cc-b191-66ee63afa1fd
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: sericks
+ms.topic: overview
+ms.date: 01/03/2022
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: OMHierarchyManager, OMOperatingUnit,
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 76b7ca45-93d4-45cc-b191-66ee63afa1fd
 ---
 
 # Organizations and organizational hierarchies overview
@@ -76,7 +64,7 @@ Organizations in a hierarchy can share parameters, policies, and transactions. A
 
 ## Using Organizational Hierarchies in Financial Reporting
 
-Organizational Hierarchies can be selected as a **Tree type** option in Financial Reporting. Financial reporting will select the current effective hierarch as noted by hierarchy. For more information, see [Reporting tree definitions in Financial Reports](/dev-itpro/analytics/financial-reporting-tree-definitions.md).
+Organizational Hierarchies can be selected as a **Tree type** option in Financial Reporting. Financial reporting will select the current effective hierarch as noted by hierarchy. <!-- Following link has been moved. For more information, see [Reporting tree definitions in Financial Reports](/dev-itpro/analytics/financial-reporting-tree-definitions.md). -->
 
 ## Additional resources
 - [Plan your organizational hierarchy](plan-organizational-hierarchy.md)

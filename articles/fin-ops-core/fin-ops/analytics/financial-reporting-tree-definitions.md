@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Reporting tree definitions in financial reports
-description: This article describes reporting tree definitions. A reporting tree definition is a report component that defines the structure of an organization. 
+description: Learn about reporting tree definitions. A reporting tree definition is a report component that defines the structure of an organization. 
 author: jinniew
-ms.date: 04/01/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: FinancialReports
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jiwo
+ms.topic: article
+ms.date: 04/01/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
+ms.search.form: FinancialReports
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ---
 
 # Reporting tree definitions in financial reports
@@ -178,23 +166,23 @@ Here is the structure of the reporting units in the following reporting tree:
 - The lowest-level detail reporting units (Home Sales, Auto Sales, Client Services, and Operations) represent departments in the financial data. These reporting units are in the shaded area of the diagram.
 - The higher-level summary units summarize information from the detail units.
 
-[![Contoso Summary Report Structure - Example 1.](../../dev-itpro/analytics/media/contosoentertainmentsummaryreportstructure.png)](/media/contosoentertainmentsummaryreportstructure.png)
+![Contoso Summary Report Structure - Example 1.](../../dev-itpro/analytics/media/contosoentertainmentsummaryreportstructure.png)
 
 ### Reporting unit structure – Example 2
 
 In the following diagram, the reporting tree has an organizational structure that is divided by business function.
 
-[![Contoso Summary Report Structure - Example 2.](../../dev-itpro/analytics/media/summaryofallunitscontoso.png)](/media/summaryofallunitscontoso.png)
+![Contoso Summary Report Structure - Example 2.](../../dev-itpro/analytics/media/summaryofallunitscontoso.png)
 
 ### Example of the Insert Reporting Units from Dimensions dialog box
 
 The following illustration shows an example of the **Insert Reporting Units from Dimensions** dialog box. For this example, the results will return the combination of business units, cost centers, and departments.
 
-[![Insert Reporting Units.](../../dev-itpro/analytics/media/insertreportingunits.png)](/media/insertreportingunits.png)
+![Insert Reporting Units.](../../dev-itpro/analytics/media/insertreportingunits.png)
 
 The resulting reporting tree definition is sorted by business unit, then by cost center, and then by department. The dimension for the fifth reporting unit is **Business Unit = \[001\], Cost Center =\[\], Department = \[022\]**, and identifies a reporting unit for accounts that are specific to business unit 001 and department 022.
 
-[![Illustration of the Reporting Tree.](../../dev-itpro/analytics/media/reportingtree-1024x646.png)](/media/reportingtree.png)
+![Illustration of the Reporting Tree.](../../dev-itpro/analytics/media/reportingtree-1024x646.png)
 
 ### Examples of data roll-up
 
@@ -202,11 +190,11 @@ The following examples show possible information that is used in a reporting tre
 
 #### Example 1
 
-[![Mutli-company roll-up.](../../dev-itpro/analytics/media/mutlicompanyrollup.png)](/media/mutlicompanyrollup.png)
+![Mutli-company roll-up.](../../dev-itpro/analytics/media/mutlicompanyrollup.png)
 
 #### Example 2
 
-[![Cross Company Department Roll-up.](../../dev-itpro/analytics/media/crosscompanydepartmentrollup.png)](/media/crosscompanydepartmentrollup.png)
+![Cross Company Department Roll-up.](../../dev-itpro/analytics/media/crosscompanydepartmentrollup.png)
 
 ## Additional resources
 

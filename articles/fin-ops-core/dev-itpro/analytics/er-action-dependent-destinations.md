@@ -1,19 +1,17 @@
 ---
 title: Configure action-dependent ER destinations
-description: This article explains how to configure action-dependent destinations for an Electronic reporting (ER) format that is configured to generate outbound documents.
+description: Learn about how to configure action-dependent destinations for an Electronic reporting (ER) format that is configured to generate outbound documents.
 author: kfend
-ms.date: 12/05/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 12/05/2022
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2020-12-01
+ms.search.form: ERSolutionTable, ERFormatDestinationTable
 ms.dyn365.ops.version: 10.0.17
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
-ms.search.form: ERSolutionTable, ERFormatDestinationTable
 ---
 
 # Configure action-dependent ER destinations

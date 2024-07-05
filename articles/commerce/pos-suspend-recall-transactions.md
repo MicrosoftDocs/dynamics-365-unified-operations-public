@@ -4,8 +4,6 @@ description: This article explains how users can suspend in-progress transaction
 author: josaw1
 ms.date: 11/27/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: global

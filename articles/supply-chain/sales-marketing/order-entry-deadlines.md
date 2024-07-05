@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Order entry deadlines
-description: This article provides information about order entry deadlines. An order entry deadline is a cut-off time that determines whether a customer order is treated (and fulfilled) as if it was received on the current day or the next day.
+description: Learn about order entry deadlines, which is a cut-off time that determines whether a customer order is treated as if it was received on the current or next day.
 author: Henrikan
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: InventOrderEntryDeadlineGroup, InventOrderEntryDeadlineParameters, InventOrderEntryDeadlineTable, MCRAutoTaxRules
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: bbc4f9a2-df4b-4d92-9f18-25282a85541f
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: henrikan
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: InventOrderEntryDeadlineGroup, InventOrderEntryDeadlineParameters, InventOrderEntryDeadlineTable, MCRAutoTaxRules
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: bbc4f9a2-df4b-4d92-9f18-25282a85541f
 ---
 
 # Order entry deadlines

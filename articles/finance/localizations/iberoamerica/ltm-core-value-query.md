@@ -1,12 +1,12 @@
 ---
 title: Value query for Latin America
-description: This article provides information about the Value query for Latin America. 
+description: Learn about the Value query for Latin America, including prerequisites and outlines on review values and optional query filters.
 author: Fhernandez0088
-ms.date: 05/04/2023
-ms.topic: Article
-ms.reviewer: kfend
-ms.author: v-federicohe 
+ms.author: v-federicohe
+ms.topic: how-to
+ms.date: 07/01/2024
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Value query for Latin America

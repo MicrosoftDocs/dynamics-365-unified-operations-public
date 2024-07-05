@@ -6,9 +6,6 @@ description: This article answers frequently asked questions about the migration
 author: twheeloc
 ms.date: 09/23/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace

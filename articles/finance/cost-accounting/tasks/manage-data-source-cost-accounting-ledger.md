@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Manage a data source for the cost accounting ledger
-description: Use this procedure to manage the general ledger data source for a cost accounting ledger. 
+description: Use this procedure to manage the general ledger data source for a cost accounting ledger, including a step-by-step process of managing data sources. 
 author: twheeloc
-ms.date: 03/27/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: CAMAXGeneralLedgerEntryProviderConfiguration
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kfend
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 03/27/2023
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User   
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: CAMAXGeneralLedgerEntryProviderConfiguration
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Manage a data source for the cost accounting ledger
 
 [!include [banner](../../includes/banner.md)]

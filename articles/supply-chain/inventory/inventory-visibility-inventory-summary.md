@@ -1,18 +1,20 @@
 ---
 title: Inventory Visibility inventory summary
-description: This article describes how to use inventory summary feature, which provides an inventory summary for products together with all dimensions.
-author: yufeihuang
+description: Learn how to use inventory summary feature, which provides an inventory summary for products together with all dimensions.
+author: yufei-huang
 ms.author: yufeihuang
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 12/01/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # Inventory Visibility inventory summary
+
+[!include [banner](../includes/banner.md)]
 
 The **Inventory summary** page is a customized view for the *Inventory OnHand Sum* entity. It provides an inventory summary for products together with all dimensions. Inventory summary data is periodically synced from Inventory Visibility.
 
@@ -23,15 +25,9 @@ The **Inventory summary** page is a customized view for the *Inventory OnHand Su
 >
 > If the **Inventory summary** page doesn't show all the on-hand information that you expect, open Dynamics 365 Supply Chain Management, go to **Inventory Management** \> **Periodic tasks** \> **Inventory Visibility integration**, disable the batch job, and then reenable it to do the initial push. All data will be synced to the *Inventory OnHand Sum* entity immediately after the initial push. If you want to use the inventory summary feature, we recommend that you turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
 
-## Turn on the inventory summary feature in UI version 2 (preview)
-
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
-
-<!--KFM: preview until further notice -->
+## Turn on the inventory summary feature in UI version 2
 
 This section applies when you're using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 To enable the **Inventory summary** page and set the synchronization frequency in UI version 2, follow these steps.
 

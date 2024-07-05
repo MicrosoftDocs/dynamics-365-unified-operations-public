@@ -1,15 +1,13 @@
 ---
 title: Primary forms for NVFA, Working clothes and Special riggings (Russia)
-description: This article provides information about Primary forms for NVFA, Working clothes and Special riggings for Russia.
+description: Learn about Primary forms for NVFA, Working clothes and Special riggings for Russia, including an outline on generating the NVFA account card and working clothes.
 author: AdamTrukawka
-ms.date: 04/12/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 04/12/2019
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 ---

@@ -6,9 +6,6 @@ description: This article describes using product recommendations on a point of 
 author: bebeale
 ms.date: 04/21/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: RetailParameters

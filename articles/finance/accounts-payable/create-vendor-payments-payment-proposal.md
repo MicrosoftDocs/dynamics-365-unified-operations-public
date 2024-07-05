@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Create vendor payments by using a payment proposal
-description: This article provides an overview of the payment proposal options and includes some examples that show how payment proposals work. 
-author: abruer
-ms.date: 06/13/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerJournalTransVendPaym
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about the payment proposal options and includes some examples that show how payment proposals work, including parameters and advanced options.
+author: twheeloc
 ms.author: shpandey
+ms.topic: article
+ms.date: 06/13/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerJournalTransVendPaym
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 ---
 
 # Create vendor payments by using a payment proposal

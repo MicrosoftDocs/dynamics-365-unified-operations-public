@@ -1,31 +1,20 @@
 ---
-# required metadata
-
 title: Planning Optimization extensibility
-description: This article describes the extensibility scenarios that are supported in Planning Optimization. 
+description: Learn about the extensibility scenarios that are supported in Planning Optimization with an outline on custom processing.
 author: t-benebo
-ms.date: 08/05/2020
+ms.author: benebotg
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ReqCreatePlanWorkspace
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
+ms.date: 08/05/2020
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: benebotg
 ms.search.validFrom: 2020-07-07
+ms.search.form: ReqCreatePlanWorkspace
 ms.dyn365.ops.version: 10.0.13
-
 ---
+
 # Planning Optimization extensibility
 
 [!include [banner](../../finance/includes/banner.md)]

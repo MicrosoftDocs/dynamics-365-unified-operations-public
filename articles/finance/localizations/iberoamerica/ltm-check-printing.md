@@ -1,12 +1,12 @@
 ---
 title: Print payment checks
-description: This article explains how print payment checks for Latin America.
+description: Learn how print payment checks for Latin America, including prerequisites and an outline and step-by-step process for printing checks.
 author: Fhernandez0088
-ms.date: 10/03/2023
-ms.topic: Article
-ms.reviewer: kfend
 ms.author: v-federicohe
+ms.topic: article
+ms.date: 10/03/2023
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Print payment checks

@@ -1,28 +1,20 @@
 --- 
-# required metadata 
- 
 title: Create a preliminary budget for Public sector
-description: You can create preliminary budget register entries for a specific budget model and dimension values. 
+description: Learn how you can create preliminary budget register entries for a specific budget model and dimension values, including a step-by-step process. 
 author: twheeloc
+ms.author: twheeloc
+ms.topic: how-to
 ms.date: 02/14/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: BudgetTransaction, BudgetAccountStructureLookup, BudgetTransactionMultiPost   
-audience: Application User 
-# ms.devlang:  
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User 
 ms.search.region: Global
 ms.search.industry: Service industries
-ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: BudgetTransaction, BudgetAccountStructureLookup, BudgetTransactionMultiPost
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create a preliminary budget for Public sector
 
 [!include [banner](../../includes/banner.md)]

@@ -1,21 +1,18 @@
 ---
 title: General ledger in the public sector overview
-description: This article describes the General ledger functionality that's available for organizations in the public sector.
+description: Learn about the General ledger functionality that's available for organizations in the public sector, including answers to various frequently asked questions.
 author: TaylorVH
-ms.date: 07/25/2019
+ms.author: twheeloc
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Application User
+ms.date: 07/25/2019
 ms.reviewer: twheeloc
-ms.search.region: Global
-ms.author: TaylorVH
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.collection: get-started
-ms.assetid: d737c743-e224-4a30-b4c3-e9568eaddd8c
-ms.search.industry: Public sector
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-02-28
 ms.search.form: AdvancedLedgerEntry, JournalizingDefinition, LedgerDerivedFinHierarchies, LedgerFundType, LedgerParameters
+ms.dyn365.ops.version: AX 7.0.0
+ms.assetid: d737c743-e224-4a30-b4c3-e9568eaddd8c
 ---
 
 # General ledger in the public sector overview

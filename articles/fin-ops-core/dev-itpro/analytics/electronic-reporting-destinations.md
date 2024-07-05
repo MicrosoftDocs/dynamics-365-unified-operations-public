@@ -1,19 +1,17 @@
 ---
 title: Electronic reporting (ER) destinations
-description: This article provides information about the management of Electronic reporting destinations, the types of supported destinations, and security considerations.
+description: Learn about the management of Electronic reporting destinations, the types of supported destinations, and security considerations.
 author: kfend
-ms.date: 08/28/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 08/28/2022
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
+ms.search.form: DocuType, ERSolutionTable
 ms.dyn365.ops.version: AX 7.0.1
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
-ms.search.form: DocuType, ERSolutionTable
 ---
 
 # Electronic reporting (ER) destinations

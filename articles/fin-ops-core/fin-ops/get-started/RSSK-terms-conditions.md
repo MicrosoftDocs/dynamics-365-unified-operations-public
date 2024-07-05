@@ -1,31 +1,19 @@
 ---
-# required metadata
-
 title: MICROSOFT PREVIEW SOFTWARE LICENSE TERMS
-description: These license terms are an agreement between you and Microsoft Corporation (or one of its affiliates).
+description: Learn about Microsoft Preview Software license terms, which are are an agreement between you and Microsoft Corporation (or one of its affiliates).
 author: ShellyBakke
-ms.date: 10/02/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-ROBOTS: NOINDEX, NOFOLLOW 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: smiller
+ms.topic: article
+ms.date: 10/02/2019
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2019-04-30
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.3
-
 ---
+
 # MICROSOFT PREVIEW SOFTWARE LICENSE TERMS
 
 [!include [banner](../includes/banner.md)]

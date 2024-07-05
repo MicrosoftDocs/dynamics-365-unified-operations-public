@@ -1,16 +1,15 @@
 ---
 title: Supply Chain Management troubleshooting and FAQs
-description: This article provides links to troubleshooting resources and frequently asked question articles for Dynamics 365 Supply Chain Management
+description: Access links to troubleshooting resources and frequently asked question articles for Dynamics 365 Supply Chain Management.
 author: kamaybac
-ms.date: 07/12/2022
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: kamaybac
-ms.search.validFrom: 2022-07-12
-ms.dyn365.ops.version: 10.0.28
+ms.topic: overview
+ms.date: 04/19/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form:
 ---
 
 # Supply Chain Management troubleshooting and FAQs

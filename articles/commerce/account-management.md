@@ -4,8 +4,6 @@ description: This article covers account management pages and modules in Microso
 author: v-chgri
 ms.date: 04/07/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

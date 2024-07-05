@@ -1,15 +1,14 @@
 ---
 title: Sales books, purchase books, and invoice-factures journals
-description: This article provides information about sales books, purchase books, and invoice-factures journals for Russia.
-author: AdamTrukawka
-ms.date: 01/25/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn about sales books, purchase books, and invoice-factures journals for Russia, including a step-by-step process for setting up parameters for sales.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
-ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 ---

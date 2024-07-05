@@ -1,37 +1,23 @@
 ---
-# required metadata
-
 title: Security and data entities
-description: This article provides information about security for data entities.
-author: peakerbl
-ms.date: 03/11/2019
+description: Learn about security for data entities, including overviews of entry points, target scenarios, and privileges.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
+ms.date: 03/11/2019
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
+audience: Developer, IT Pro
 ms.assetid: a9ede141-56fa-4310-997d-aeef184f7a52
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Security and data entities
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 > [!NOTE]
 > Data entities do not support the Extensible Data Security (XDS) concepts.

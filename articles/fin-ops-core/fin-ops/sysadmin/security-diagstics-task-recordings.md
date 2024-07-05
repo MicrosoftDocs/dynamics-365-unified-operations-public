@@ -1,19 +1,18 @@
 ---
 title: Security diagnostics for task recordings
-description: This article provides information about how to analyze and manage security permission requirements based on a task recording.
-author: Peakerbl
-ms.date: 05/05/2020
+description: Learn about how to analyze and manage security permission requirements based on a task recording, including an outline on managing security for task recordings.
+author: sericks007
+ms.author: sericks
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
+ms.date: 05/05/2020
+ms.reviewer: johnmichalak
 audience: Application User
-ms.reviewer: sericks
 ms.search.region: Global
-ms.author: peakerbl
-ms.search.validFrom: 
-ms.dyn365.ops.version: Version 10.0.9
-ms.search.form: 
+ms.search.validFrom:
+ms.search.form:
+ms.dyn365.ops.version: Version 10.0.9 
 ---
+
 # Security diagnostics for task recordings
 
 [!include [banner](../../../finance/includes/banner.md)]

@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Post a sales invoice with a payment slip
-description: This procedure walks you through posting a free text invoice with a payment slip attachment in a specified format. 
+description: Learn about the process of posting a free text invoice with a payment slip attachment in a specified format, with an example using the DEMF demo data company. 
 author: EvgenyPopovMBS
+ms.author: evgenypopov
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: johnmichalak  
+audience: Application User  
 ms.search.region: Denmark
-# ms.search.industry: 
-ms.author: epopov
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines  
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Post a sales invoice with a payment slip
 
 [!include [banner](../../includes/banner.md)]

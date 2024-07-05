@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Service endpoints overview
-description: This article describes the service endpoints that are available.
-author: peakerbl
-ms.date: 06/22/2020
+description: Learn about the service endpoints that are available, including a table that lists services avaialable for various service endpoints.
+author: pnghub
+ms.author: gned
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 06/22/2020
+ms.reviewer: johnmichalak
 audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
 ms.assetid: 5ff7fd93-1bb8-4883-9cca-c8c42ddc1746
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Service endpoints overview
@@ -56,14 +44,14 @@ OData services, JSON-based custom services, and the REST metadata service suppor
 
 We currently support both [Authorization Code Grant flow](/previous-versions/azure/dn645542(v=azure.100)) and [Service to service calls using client credentials (shared secret or certificate)](/azure/active-directory/develop/active-directory-protocols-oauth-service-to-service).
 
-Two kinds of application are supported in Microsoft Azure Active Directory (AAD):
+Two kinds of application are supported in Microsoft Entra ID (Microsoft Entra ID):
 
 - **Native client application** – This flow uses a user name and password for authentication and authorization.
 - **Web application (Confidential client)** – A confidential client is an application that can keep a client password confidential to the world. The authorization server assigned this client password to the client application.
 
 For more information, see:
 
-- [Authorize access to web applications using OAuth 2.0 and Azure Active Directory](/previous-versions/azure/dn645545(v=azure.100))
+- [Authorize access to web applications using OAuth 2.0 and Microsoft Entra ID](/previous-versions/azure/dn645545(v=azure.100))
 - [Troubleshoot service authentication issues](troubleshoot-service-authentication.md)
 
 The following illustration describes how authorization must be configured for Authorization code grant flow.
@@ -74,14 +62,14 @@ And below is the illustration describes how authorization works for Service to s
 
 ![Service to service calls using client credentials.](./media/S2SAuth.jpg)
 
-### Register a web application with AAD
+### Register a web application with Microsoft Entra ID
 
 > [!NOTE]
 > These steps don't have to be completed by all the people in your organization. Only one Azure Service Administrator user can add the application and share the client ID with the developers.
 
-**Prerequisite:** You must have an Azure subscription and admin access to Azure Active Directory (Azure AD).
+**Prerequisite:** You must have an Azure subscription and admin access to Microsoft Entra ID.
 
-Before any clients can communicate with the services, they must be registered in (Azure AD). These steps will help you register an application with (Azure AD). The steps are explained in the [Azure app registration training guide](/azure/active-directory/develop/app-registrations-training-guide-for-app-registrations-legacy-users). For specific configuration in this process, the following additional information must be used in context.
+Before any clients can communicate with the services, they must be registered in (Microsoft Entra ID). These steps will help you register an application with (Microsoft Entra ID). The steps are explained in the [Azure app registration training guide](/azure/active-directory/develop/app-registrations-training-guide-for-app-registrations-legacy-users). For specific configuration in this process, the following additional information must be used in context.
 
 Select **Microsoft Dynamics ERP (Microsoft.ERP)**. If you search for **Microsoft Dynamics ERP** in the search field within **Select an API** it might appear to be unavailable. In that case, make sure that you search for the full name, as shown above.
 Under **Delegated permissions**, you must select, at a minimum, the following options:
@@ -91,25 +79,25 @@ Under **Delegated permissions**, you must select, at a minimum, the following op
 - Access Dynamics AX online as organization users
 
  > [!IMPORTANT]
- > Make sure that you copy the key, because you won't see it again. You will be required to know this secret key to complete your OAuth authentication and receive an Azure AD token.
+ > Make sure that you copy the key, because you won't see it again. You will be required to know this secret key to complete your OAuth authentication and receive a Microsoft Entra token.
 
 ### Register your external application 
 
-1. In finance and operations apps, go to **System administration** \> **Setup** \> **Azure Active Directory applications**.
+1. In finance and operations apps, go to **System administration** \> **Setup** \> **Microsoft Entra applications**.
 2. Select **New**.
 3. Fill in the fields for the new record:
 
-    - In the **Client Id** field, enter the application ID that you registered in Azure AD.
+    - In the **Client Id** field, enter the application ID that you registered in Microsoft Entra ID.
     - In the **Name** field, enter a name for the application.
     - In the **User ID** field, select an appropriate service account user ID. For this example, we have selected the **Admin** user. However, as a better practice, you should provision a dedicated service account that has the correct permissions for the operations that must be performed.
 
     When you've finished, select **Save**.
 
-You've now finished setting up the prerequisites. After the external application retrieves an Azure AD authentication token, it should now be able to use the token in an authorization HTTP header to make subsequent service calls via OData or SOAP, for example.
+You've now finished setting up the prerequisites. After the external application retrieves an Microsoft Entra authentication token, it should now be able to use the token in an authorization HTTP header to make subsequent service calls via OData or SOAP, for example.
 
 ### Client sample code
 
-The following is C\# sample code for getting a token from AAD. In this flow, the user will be presented with a consent form (for cross-tenant application) and a sign-in form.
+The following is C\# sample code for getting a token from Microsoft Entra ID. In this flow, the user will be presented with a consent form (for cross-tenant application) and a sign-in form.
 
 ```csharp
 UriBuilder uri = new UriBuilder ("https://login.windows.net/contoso2ax.onmicrosoft.com");
@@ -147,4 +135,3 @@ Currently, this endpoint provides metadata for the following elements:
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

@@ -4,8 +4,6 @@ description: This article describes how to add a logo to your site in Microsoft 
 author: bicyclingfool
 ms.date: 09/15/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: global

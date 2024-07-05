@@ -2,12 +2,12 @@
 title: (ER) Import configurations from RCS
 description: This article provides information about how a user can import a new version of an ER configuration from RCS.
 author: kfend
-ms.date: 07/03/2019
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
+ms.date: 03/25/2024
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
 audience: Developer, IT Pro
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: filatovm
 ms.search.validFrom: 2019-07-28
@@ -17,6 +17,7 @@ ms.search.form:
 # (ER) Import configurations from RCS
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE[banner](../../../../finance/includes/rsc-to-gsw-banner.md)]
 
 The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can import a new version of an Electronic reporting (ER) configuration from Microsoft Regulatory Configuration Services (RCS). In this example, you will select the version of the ER configuration that has been configured in an RCS instance and import it into the current instance for sample company, Litware, Inc. These steps can be performed in any company because ER configurations are shared among companies. To complete these steps, you must first complete the steps in the article, [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md). To complete these steps, you must also have access to an RCS instance containing at least one ER configuration in either **Completed** or **Shared** status.
 

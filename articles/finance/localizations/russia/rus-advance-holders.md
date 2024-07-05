@@ -1,19 +1,17 @@
 ---
 title: Russia advance holders overview
-description: This article explains how to register and set up advance holders for Russia.
-author: mrolecki
-ms.date: 07/25/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Russia
-ms.author: mrolecki
-ms.search.validFrom: 2018-10-28
-ms.dyn365.ops.version: 8.1
+description: Learn how to register and set up advance holders for Russia, including a step-by-step process for setting up parameters for advance holders.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.reviewer: johnmichalak
 ms.collection: get-started
+ms.search.region: Russia
+ms.search.validFrom: 2018-10-28
 ms.search.form: HcmWorkerAdvHolderTableListPage_RU, HcmWorkerAdvHolderTable_RU
+ms.dyn365.ops.version: 8.1
 ---
 
 # Russia advance holders overview

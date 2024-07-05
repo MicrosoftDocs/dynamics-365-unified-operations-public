@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Japan overview
-description: This article provides an overview of functionality specific to Japan.
+description: Learn about functionality specific to Japan with links to resources about cash and bank management, fixed assets, invoicing, payments, and taxes.
 author: kfend
-ms.date: 01/18/2024
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-
-ms.search.region: Japan
-# ms.search.industry: 
 ms.author: kfend
+ms.topic: overview
+ms.date: 01/18/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-05-31
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.1
-
 ---
 
 # Japan overview

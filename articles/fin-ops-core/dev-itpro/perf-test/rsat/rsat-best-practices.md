@@ -1,17 +1,15 @@
 ---
 title: Regression suite automation tool best practices
-description: This article describes how to use the Regression suite automation tool (RSAT)/Task recorder to record client functions.
+description: Learn about how to use the Regression suite automation tool (RSAT)/Task recorder to record client functions, including best practices.
 author: FrankDahl
-ms.date: 11/27/2023
+ms.author: fdahl
 ms.topic: conceptual
+ms.date: 11/27/2023
 ms.custom: 
   - bap-template
-ms.prod: 
-ms.technology: 
-audience: Developer
 ms.reviewer: johnmichalak
+audience: Developer
 ms.search.region: Global
-ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
 ---

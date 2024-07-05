@@ -1,18 +1,17 @@
 ---
 title: Set up bank accounts (Russia)
-description: This article provides information about local settings and prerequisites for bank modules for Russia.
-author: AdamTrukawka
-ms.date: 12/06/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn about local settings and prerequisites for bank modules for Russia, including a process for creating a bank manually or updating information for a bank.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
-ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
-ms.dyn365.ops.version: 8.1
 ms.search.form: BankGroup, BankAccountTable
+ms.dyn365.ops.version: 8.1
 ---
 
 # Set up bank accounts (Russia)

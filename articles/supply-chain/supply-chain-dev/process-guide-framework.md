@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Process guide framework
-description: This article provides information about the process guide framework for developers who are extending our warehouse mobile processes in X++.
+description: Learn about the process guide framework for developers who are extending our warehouse mobile processes in X++ with an overview of the existing design.
 author: Mirzaab
-ms.date: 11/01/2018
+ms.author: mirzaab
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience:  Developer, IT Pro
-# ms.devlang: 
+ms.date: 11/01/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
+audience:  Developer, IT Pro
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: mirzaab
 ms.search.validFrom: 2018-4-30
+ms.search.form:
 ms.dyn365.ops.version: 8.0
-
 ---
 
 # Process guide framework

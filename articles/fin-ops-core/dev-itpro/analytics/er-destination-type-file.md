@@ -1,19 +1,17 @@
 ---
 title: File ER destination type
-description: This article provides information about configuring a file destination for an ER format.
+description: Learn about configuring a file destination for an ER format, including how to enable destination settings and additional resources.
 author: kfend
-ms.date: 01/27/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 01/27/2020
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
+ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 ms.dyn365.ops.version: AX 7.0.1
 ms.assetid: 
-ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 ---
 
 # File destination

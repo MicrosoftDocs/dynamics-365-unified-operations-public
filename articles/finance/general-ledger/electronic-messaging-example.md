@@ -1,19 +1,17 @@
 ---
 title: Set up and run processing to call a simple exporting ER format to generate an Excel report
-description: This article provides an example that shows how to set up and use electronic messages.
+description: Access an example that shows how to set up and use electronic messages, including step-by-step processes for creating message statuses and additional fields.
 author: AdamTrukawka
-ms.date: 07/06/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: atrukawk
-ms.search.validFrom: 2021-06-24
-ms.dyn365.ops.version: 10.0.21
+ms.topic: article
+ms.date: 07/06/2021
 ms.custom: 
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2021-06-24
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.21
 ---
 
 # Set up and run processing to call a simple exporting ER format to generate an Excel report

@@ -1,15 +1,14 @@
 ---
 title: Use an inventory profile in documents and queries
-description: This article provides information about using inventory profile.
-author: AdamTrukawka
-ms.date: 05/11/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn about using inventory profile, including a step-by-step process for defining a posting profile in purchase orders.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
-ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 ---

@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Quality management for warehouse processes
-description: This article provides information about the Quality management for warehouse processes feature. This feature extends the capabilities of quality management and lets users integrate item sampling controls into the warehouse receiving process by using warehouse management processes (WMS). 
-author: yufeihuang
-ms.date: 03/23/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
+description: Learn about the Quality management for warehouse processes feature, including key benefits and an outline on enabling a warehouse for quality management
+author: yufei-huang
 ms.author: yufeihuang
+ms.topic: article
+ms.date: 03/23/2021
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-04-02
+ms.search.form:
 ms.dyn365.ops.version: 10.0.10
 ---
 

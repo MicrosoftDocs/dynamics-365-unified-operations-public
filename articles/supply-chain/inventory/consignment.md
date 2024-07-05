@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Set up consignment
-description: This article explains how to use the inbound consignment inventory processes.
-author: yufeihuang
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-ms.search.form: ConsignmentDraftReplenishmentOrderJournal, ConsignmentProductReceiptLines, ConsignmentReplenishmentOrder, ConsignmentVendorPortalOnHand, InventJournalOwnershipChange, InventOnHandItemListPage, PurchTable, PurchTablePart, PurchVendorPortalConfirmedOrders, DirPartyTable, EcoResTrackingDimensionGroup, InventJournalName, InventOwner, InventTableInventoryDimensionGroups, VendTable
-# ROBOTS:
-audience: Application User
-# ms.devlang:
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-ms.assetid: 3c9d6de4-45d4-459a-aef7-0d9ad2c22b3a
-ms.search.region: Global
-# ms.search.industry:
+description: Learn how to use the inbound consignment inventory processes, including an overview and step-by-step process of the consignment process.
+author: yufei-huang
 ms.author: yufeihuang
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-11-30
+ms.search.form: ConsignmentDraftReplenishmentOrderJournal, ConsignmentProductReceiptLines, ConsignmentReplenishmentOrder, ConsignmentVendorPortalOnHand, InventJournalOwnershipChange, InventOnHandItemListPage, PurchTable, PurchTablePart, PurchVendorPortalConfirmedOrders, DirPartyTable, EcoResTrackingDimensionGroup, InventJournalName, InventOwner, InventTableInventoryDimensionGroups, VendTable
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: 3c9d6de4-45d4-459a-aef7-0d9ad2c22b3a
 ---
 
 # Set up consignment

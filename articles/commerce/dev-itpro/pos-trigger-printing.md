@@ -4,8 +4,6 @@ description: This article describes how to use triggers to capture events that o
 author: josaw1
 ms.date: 11/02/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global
@@ -41,7 +39,7 @@ The following table lists the available triggers and denotes whether they can be
 | PostLockTerminalTrigger   | Non-Cancelable | Executed after the POS register lock.   | 
 | PreUnlockTerminalTrigger         | Cancelable     | Executed before the POS register is unlocked.  |
 | PostDeviceActivationTrigger      | Non-Cancelable | Executed after the POS activation.   | 
-| PreElevateUserTrigger      | Cancelable | This trigger is executed before the manager override and only works for non-Microsoft Azure Active Directory (Azure AD) user authentication. If Azure AD is enabled, this trigger won't work.   | 
+| PreElevateUserTrigger      | Cancelable | This trigger is executed before the manager override and only works for non-Microsoft Microsoft Entra user authentication. If Microsoft Entra is enabled, this trigger won't work.   | 
 | PreRegisterAuditEventTrigger      | Cancelable | Executed before the audit event.   | 
 | PostRegisterAuditEventTrigger      | Non-Cancelable | Executed after the audit event.   | 
 | PreOpenUrlTrigger      | Cancelable | Executed before the open URL operation.   | 

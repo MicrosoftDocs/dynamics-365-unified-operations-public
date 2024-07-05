@@ -1,15 +1,13 @@
 ---
 title: Regulatory certification information in feature titles
-description: This article describes how information about certifications is used in the title of the feature.
+description: Learn about certifications is used in the title of the feature, including tables providing formats and examples for various feature types.
 author: kfend
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: kfend
-ms.search.region: global
 ms.author: filatovm
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: d0b8286a-b2c1-4fa2-905a-3383b1d34d56

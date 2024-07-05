@@ -1,12 +1,13 @@
 ---
 title: PageOptions type
-description: PageOptions type
+description: Learn about the PageOptions type, which includes the appId, design, excludeContext, filter, filterLocalOnly, pageContext, pageID, and readOptions properties.
 author: jasongre
-ms.date: 05/26/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # PageOptions type

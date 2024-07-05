@@ -4,8 +4,6 @@ description: This article covers data actions in Microsoft Dynamics 365 Commerce
 author: samjarawan
 ms.date: 01/31/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: MY-00005 Print GST tax invoices
-description: This procedure walks you through how to print a GST tax invoice. 
+description: Learn how to print a GST tax invoice, including step-by-step processes for SO_Print GST invoices and FTI_Print GST invoice report.
 author: EvgenyPopovMBS
+ms.author: evgenypopov
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, TaxGroupLookup, TaxTmpWorkTrans, SalesEditLines,  SrsReportViewerForm, CustFreeInvoice, CustTableLookup, DimensionLookup, CustPostInvoiceJob, SRSPrintDestinationSettingsForm   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom: 
+ms.reviewer: johnmichalak 
+audience: Application User  
 ms.search.region: Malaysia
-# ms.search.industry: 
-ms.author: epopov
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, TaxGroupLookup, TaxTmpWorkTrans, SalesEditLines,  SrsReportViewerForm, CustFreeInvoice, CustTableLookup, DimensionLookup, CustPostInvoiceJob, SRSPrintDestinationSettingsForm  
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # MY-00005 Print GST tax invoices
 
 [!include [banner](../../includes/banner.md)]

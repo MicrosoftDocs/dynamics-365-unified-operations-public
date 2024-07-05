@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Business performance planning dimensions
-description: This article describes dimensions and how they're used in Microsoft Dynamics 365 Finance business performance planning.
+description: Learn about dimensions and how they're used in Microsoft Dynamics 365 Finance business performance planning, including an outline on creating dimensions.
 author: ShielaSogge
-ms.date: 12/12/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-
-# ms.tgt_pltfrm: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: article
+ms.date: 06/04/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2023-12-03
+ms.search.form: 
 ms.dyn365.ops.version: 
-
 ---
+
 # Business performance planning dimensions
 
 This article describes dimensions and how they're used in Microsoft Dynamics 365 Finance business performance planning.
@@ -121,8 +109,11 @@ After you create a dimension, you might want to add more dimension values or add
 You can make the following changes to dimensions in the business performance planning app:
 
 - Edit data in Excel.
+- Add a new row of data.
+- Delete a row of data.
 - Add a new column of data.
 - Delete a column of data.
+- Add a linked column.
 - Delete the dimension.
 
 ### Edit data in Excel
@@ -141,7 +132,25 @@ After you publish your changes from Excel, select **Refresh** on the dimension t
 > [!IMPORTANT]
 > For every dimension, there's a **Source** column. The value can be either **User** or **System**. Rows that have a source type of **System** are updated with the values from the linked Dataverse table when a refresh is done. Rows that were created by using the **Table Edit** visual in Power BI have a source type of **User** and aren't overwritten by any data updates.
 
-When you create a new row of data or edit a cell value, you must select to refresh your data in Power BI to view the additional dimension values, rows, or columns.
+After you create a new row of data or edit a cell value, you must select **Refresh** to update your data in Power BI. Otherwise, you can't view the new dimension values, rows, or columns.
+
+### Add a new row of data
+
+To add new rows of data to a dimension, follow these steps.
+
+1. On the **Dimension detail** page, select **New row**.
+1. After you finish entering all the new rows of data, save your changes.
+1. After you create a new row of data or edit a cell value, you must select **Refresh** to update your data in Power BI. Otherwise, you can't view the new dimension values, rows, or columns.
+
+### Delete a row of data 
+
+To delete a row of data from a dimension, follow these steps.
+
+1. On the **Dimension detail** page, select **Delete row**.
+2. When you're prompted, confirm the deletion of the row.
+
+> [!NOTE]
+> The dimension value can't be deleted if it's included in a cube.
 
 ### Add a new column of data
 
@@ -156,11 +165,23 @@ The new column is added as the last column in the dimension. If you add a new co
 
 You can delete a column of data in a dimension. When a column of data in a dimension is deleted, the cube isn't updated. However, the Power BI visuals might be affected.
 
+### Add a linked column
+
+A linked column lets you create a restricted list of values that can be used when a new dimension value is created.
+
+For example, you want to have a **Scenario** dimension that you can use to track your various scenarios, such as the **Budget 2025** scenario. You want the **Scenario** dimension to have the following attributes: **Scenario name**, **Scenario description**, and **Status**. For the **Status** attribute, you don't want users to be able to make up their own status values and assign them to the scenarios. Instead, you want users to select from a list of specific status values, such as **Not started**, **In review**, and **Approved**. Therefore, you create a **Scenario** dimension that contains the **Scenario name** and **Description** fields. You then create a secondary **Status** dimension that contains the **Status name** and **Status description** fields. After the **Status** dimension is created and populated with the statuses, you go back to the **Scenario** dimension and add a linked column that points to the **Status** dimension. Then, when you add new scenarios to the **Scenario** dimension, you select the status from a list of status values.
+
+To add a linked column, follow these steps.
+
+1. On the **Dimension detail** page, select **New linked column**.
+1. In the **Target column** field, enter the name of the new column that's being added to the dimension. For the preceding example, enter **Status**.
+1. In the **Source dimension** field, select the source dimension. For the preceding example, select the **Status** dimension.
+1. In the **Source** field, select the source column. For the preceding example, select the **Status name** column.
+1. Select **Add**.
+
 ### Delete the dimension
 
 You can delete a dimension that isn't being used in a cube.
 
 1. On **Dimensions** page, select the dimension in the left preview pane.
 1. Select **Delete**.
-
-When a dimension is deleted, the cube isn't updated. However, the Power BI visuals might be affected.

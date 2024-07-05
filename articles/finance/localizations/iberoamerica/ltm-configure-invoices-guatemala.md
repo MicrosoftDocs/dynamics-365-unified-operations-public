@@ -1,12 +1,12 @@
 ---
 title: Configure sales and purchase invoices for Guatemala
-description: This topic explains how to configure sales and purchase invoices for a company in Guatemala.
+description: Learn how to configure sales and purchase invoices for a company in Guatemala, including an outline and process for sales invoice configurations.
 author: Cpicon85
-ms.date: 12/07/2023
-ms.topic: Article
-ms.reviewer: kfend
 ms.author: v-cpicon
+ms.topic: article
+ms.date: 12/07/2023
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Configure sales and purchase invoices for Guatemala

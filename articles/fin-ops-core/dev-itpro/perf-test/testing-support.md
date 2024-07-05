@@ -1,15 +1,13 @@
 ---
 title: Test projects in Visual Studio
-description: This article describes the options for testing in Visual Studio.
+description: Learn about the options for testing in Visual Studio, including author unit and component test code by using the SysTest framework.
 author: josaw1
-ms.date: 06/20/2017
+ms.author: josaw
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: d94f46f0-cde2-47c3-8994-c79e609eabce

@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Enable customer payment predictions
-description: This article explains how to configure the Customer payment predictions feature in Finance insights.
-author: ShivamPandey-msft
-ms.date: 10/11/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn how to configure the Customer payment predictions feature in Finance insights, including a step-by-step process on enabling this feature.
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: article
+ms.date: 06/11/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-05-29
+ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.12
-
+ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ---
 
 # Enable customer payment predictions
@@ -43,7 +31,7 @@ This article explains how to configure the Customer payment predictions feature 
         To use the default list of fields to create the prediction model, close the **Data fields for prediction model** page, and then, on the **Finance insights configuration** page, set the **Enable feature** option to **Yes**.
         
    > [!NOTE]
-   > The **Customer payment predictions** feature requires more than 100 transactions in the previous six to nine months. The transactions can include free text invoices, sales orders, and customer payments. This data must be spread across the **On-time**, **Late**, and **Very late** settings.    
+   > The **Customer payment predictions** feature requires more than 100 settled transactions in the previous six to nine months for the model to train successfully. This data must be spread across the **On-time**, **Late**, and **Very late** buckets with a minimum of 30 settled transactions in each bucket. The transactions can include free text invoices, sales orders, and customer payments.  
      
 
     2. Specify the "very late" transaction period to define what the **Very late** prediction bucket means for your business.

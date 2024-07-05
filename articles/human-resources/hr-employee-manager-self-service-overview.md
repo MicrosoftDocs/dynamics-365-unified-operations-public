@@ -6,9 +6,6 @@ description: This article provides an overview of the Employee self service work
 author: twheeloc
 ms.date: 03/06/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HRMParameters, EssWorkspace
@@ -21,7 +18,7 @@ ms.collection: get-started
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: ajitchandran
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
 
@@ -29,8 +26,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Employee self service overview
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

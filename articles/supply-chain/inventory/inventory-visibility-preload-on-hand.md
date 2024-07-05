@@ -1,15 +1,15 @@
 ---
 title: Preload a streamlined on-hand query
-description: This article describes how to preload a streamlined on-hand query, so that you can view preloaded on-hand query results according to their group-by configuration.
-author: yufeihuang
+description: Learn how to preload a streamlined on-hand query, so that you can view preloaded on-hand query results according to their group-by configuration.
+author: yufei-huang
 ms.author: yufeihuang
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 12/08/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # Preload a streamlined on-hand query
@@ -37,15 +37,9 @@ The **Onhand index query preload results** page provides a view for the *On-han
 
 <!--KFM: It ins't clear what the "set number", "group by", or "order" settings mean or do. We should add a section that explains this. -->
 
-## <a name="query-preload-configuration"></a>Turn on and configure preloaded on-hand queries in UI version 2 (preview)
-
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
-
-<!--KFM: preview until further notice -->
+## <a name="query-preload-configuration"></a>Turn on and configure preloaded on-hand queries in UI version 2
 
 This section applies when you're using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 To turn on and configure preloaded on-hand queries in UI version 2, follow these steps.
 

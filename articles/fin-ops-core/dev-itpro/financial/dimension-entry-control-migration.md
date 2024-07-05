@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Migrate default dimensions controls to Dimension Entry controls
-description: This article describes the steps necessary to migrate default dimensions controls to Dimension Entry controls after code upgrade is run.
+description: Learn about the steps necessary to migrate default dimensions controls to Dimension Entry controls after code upgrade is run.
 author: RyanCCarlson2
-ms.date: 10/26/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
+ms.author: rcarlson
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
+ms.reviewer: johnmichalak
 ms.assetid: 05e85771-44e1-4b0a-8dd2-a878be5a3309
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Migrate default dimensions controls to Dimension Entry controls
@@ -141,7 +129,6 @@ This article describes the steps necessary to migrate default dimensions control
 ## Additional resources
 
 - [Uptake of Dimension Entry controls](dimension-entry-control-uptake.md)
-- [Support for Dimension Entry controls on dialogs](dimension-entry-control-dialog-support.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

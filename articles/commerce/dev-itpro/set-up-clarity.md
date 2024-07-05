@@ -4,8 +4,6 @@ description: This article covers how to set up Microsoft Clarity in your Dynamic
 author: BrianShook
 ms.date: 01/28/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

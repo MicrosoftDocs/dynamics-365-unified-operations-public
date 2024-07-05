@@ -1,13 +1,13 @@
 ---
 title: Application lifecycle management
-description: This article describes the benefits of making dual-write solution-aware.
+description: Learna about application lifecycle management and the benefits of making dual-write solutions, including how to install dual-write solutions.
 author: nhelgren
-ms.date: 03/20/2020
-ms.topic: article
-audience: Developer
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: nhelgren
+ms.topic: article
+ms.date: 03/20/2020
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2020-03-20
 ms.dyn365.ops.version: AX 7.0.0
 ---

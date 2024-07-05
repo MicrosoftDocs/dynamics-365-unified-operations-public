@@ -1,15 +1,13 @@
 ---
 title: Accessibility features
-description: This article describes the functionality that is designed to help users who have various disabilities.
+description: Learn about the functionality that is designed to help users who have various disabilities, including overviews on Windows Narrator and shortcuts.
 author: jasongre
-ms.date: 12/02/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 12/02/2019
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ---
@@ -17,9 +15,6 @@ ms.dyn365.ops.version: 7.3
 # Accessibility features
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article describes the functionality that is designed to help users who have various disabilities use this app. For example, there are features for people who use sight-assistive technologies such as Microsoft Windows Narrator.
 

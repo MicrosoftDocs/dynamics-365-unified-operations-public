@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Add dimensions to Excel templates
-description: This article provides information about dimensions, dimensions that have entities, and the dimension controls that are available.
+description: Learn about dimensions, dimensions that have entities, and the dimension controls that are available, including additional resources.
 author: RyanCCarlson2
-ms.date: 03/16/2022
+ms.author: rcarlson
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
+ms.date: 06/10/2024
+ms.reviewer: johnmichalak
 ms.collection: get-started
+audience: Developer
 ms.assetid: 20e6b97e-30ed-48d4-b63c-a073f80300b2
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Add dimensions to Excel templates

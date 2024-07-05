@@ -1,15 +1,13 @@
 ---
 title: Extensible control layout guidelines
-description: This article provides guidelines that you should follow when you specify the layout and sizing of extensible controls.
+description: Learn about extensible control layout guidelines, including dos and don'ts for acheiving desired layouts with an outline on layout binding handlers.
 author: jasongre
-ms.date: 04/27/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 04/27/2020
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 53d1f66a-1e69-4548-9fd2-a87a3b370882

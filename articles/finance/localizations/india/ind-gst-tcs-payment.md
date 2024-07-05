@@ -1,15 +1,13 @@
 ---
 title: GST TCS on payment of goods and services
-description: This article provides information about how to deduct GST-TCS on payments of goods and services.
+description: Learn about how to deduct GST-TCS on payments of goods and services, including an outline on value that GST-TCS must be deducted on.
 author: EricWangChen
-ms.date: 08/17/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: India
 ms.author: kfend
+ms.topic: article
+ms.date: 08/17/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: India
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---

@@ -1,20 +1,18 @@
 ---
 title: Group records and aggregate calculations by using GROUPBY data sources
-description: This article explains how you can use GROUPBY type data sources in Electronic reporting (ER).
+description: Learn how you can use GROUPBY type data sources in Electronic reporting (ER), including aggregate functions, alternatives, and examples.
 author: kfend
-ms.date: 03/18/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.topic: article
+ms.date: 03/18/2022
 ms.custom: 
-ms.assetid: 
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
+ms.search.validFrom: 2016-02-28
 ms.search.form: ERModelMappingDesigner, EROperationDesigner
+ms.dyn365.ops.version: AX 7.0.0
+ms.assetid: 
 ---
 
 # Group records and aggregate calculations by using GROUPBY data sources

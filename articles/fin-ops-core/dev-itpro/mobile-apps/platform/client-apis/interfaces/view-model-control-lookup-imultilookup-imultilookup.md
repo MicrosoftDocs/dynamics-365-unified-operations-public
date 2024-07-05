@@ -1,12 +1,13 @@
 ---
 title: MultiLookup type
-description: Multi-Lookup control type. Multi-Lookup controls are similar to regular lookups except they allow multiple selections at once.
+description: Learn about the multi-Lookup control type. Multi-Lookup controls are similar to regular lookups except they allow multiple selections at once.
 author: jasongre
-ms.date: 05/24/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # MultiLookup type

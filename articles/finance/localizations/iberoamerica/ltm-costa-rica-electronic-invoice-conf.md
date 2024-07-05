@@ -1,12 +1,12 @@
 ---
 title: Configure electronic invoice parameters for Costa Rica
-description: This article explains how to configure the information required to generate the electronic invoice XML for Costa Rica.
+description: Learn how to configure the information required to generate the electronic invoice XML for Costa Rica, including an outline on the required configuration.
 author: Fhernandez0088
-ms.date: 10/18/2023
-ms.topic: Article
-ms.reviewer: kfend
 ms.author: v-federicohe
+ms.topic: article
+ms.date: 10/18/2023
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Configure electronic invoice parameters for Costa Rica

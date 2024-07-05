@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Client alert notifications by email
-description: This article provides information about how to set up rules that send email notifications predefined events occur.
-author: RichdiMSFT
-ms.date: 09/20/2019
+description: Learn about how to set up rules that send email notifications as predefined events occur, including an outline on notification templates.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EventCreateRule
-# ROBOTS:
+ms.date: 09/20/2019
+ms.custom:
+ms.reviewer: johnmichalak
 audience: Application user
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom:
 ms.search.region: Global
-# ms.search.industry:
-ms.author: richdi
 ms.search.validFrom: 2019-1-29
+ms.search.form: EventCreateRule
 ms.dyn365.ops.version: Platform update 24
 ---
 

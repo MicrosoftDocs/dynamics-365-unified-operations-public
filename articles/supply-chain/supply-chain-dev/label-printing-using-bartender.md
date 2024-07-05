@@ -1,13 +1,15 @@
 ---
 title: Print labels using the Seagull Scientific BarTender® label service solution
-description: This article describes how to set up and print labels by using the Seagull Scientific BarTender® label service solution.
-author: GalynaFedorova
-ms.author: gfedorova
-ms.reviewer: kamaybac
-ms.search.form: WHSLabelLayout, WHSLabelLayoutDataSource
+description: Learn how to set up and print labels by using the Seagull Scientific BarTender® label service solution, including prerequisites.
+author: perlynne
+ms.author: perlynne
 ms.topic: how-to
-ms.date: 01/05/2023
-ms.custom: bap-template
+ms.date: 05/16/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: WHSLabelLayout, WHSLabelLayoutDataSource
 ---
 
 # Print labels using the Seagull Scientific BarTender® label service solution

@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create a procurement catalog
-description: This article explains how to create a procurement catalog. 
-author: GalynaFedorova
+description: Learn how to create a procurement catalog, including a step-by-step process for ensuring that a procurement category hierarchy exists. 
+author: Henrikan
+ms.author: henrikan
+ms.topic: how-to
 ms.date: 07/19/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: ProcCategoryHierarchyManagement, CatProcureCatalogListPage, CatProcureCatalogCreate, CatProcureCatalogEdit, SysPolicyListPage, SysPolicy, CatCatalogPolicyRule, PurchReqTableListPage, PurchReqCreate, PurchReqTable, PurchReqAddItem   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom: 
+ms.reviewer: kamaybac 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: gfedorova
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: ProcCategoryHierarchyManagement, CatProcureCatalogListPage, CatProcureCatalogCreate, CatProcureCatalogEdit, SysPolicyListPage, SysPolicy, CatCatalogPolicyRule, PurchReqTableListPage, PurchReqCreate, PurchReqTable, PurchReqAddItem 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create a procurement catalog
 
 [!include [banner](../../includes/banner.md)]

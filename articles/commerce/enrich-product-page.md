@@ -4,8 +4,6 @@ description: This article describes how to customize product detail pages in Mic
 author: josaw1
 ms.date: 08/01/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global

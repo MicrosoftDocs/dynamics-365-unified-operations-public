@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Panama overview
-description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for Panama. 
+description: Access links to Microsoft Dynamics 365 Finance documentation resources for Panama directing to resources about legal entites, invoices, and records. 
 author: kfend
-ms.date: 11/02/2023
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-
-ms.search.region: Panama
-# ms.search.industry: 
 ms.author: kfend
+ms.topic: overview
+ms.date: 11/02/2023
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Panama
 ms.search.validFrom: 2023-10-20
+ms.search.form: 
 ms.dyn365.ops.version: App 10.0.38
-
 ---
 
 # Panama overview

@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Transfer a fixed asset
-description: This task guide will transfer the financial information for a fixed asset book from one financial dimension set to a new financial dimension set. 
+description: This task guide will transfer the financial information for a fixed asset book from one financial dimension set to a new financial dimension set.
 author: moaamer
-ms.date: 03/28/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: AssetTable, AssetTransfer, DimensionLookup, AssetTransferConfirmation   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 03/28/2023
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: AssetTable, AssetTransfer, DimensionLookup, AssetTransferConfirmation 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Transfer a fixed asset
 
 [!include [banner](../../includes/banner.md)]

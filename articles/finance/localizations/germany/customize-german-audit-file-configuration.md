@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Customize German audit file configuration
-description: This procedure shows how to customize the German audit file configuration by adding a new table group and selecting a table with fields for data export definition. 
+description: Learn how to customize the German audit file configuration by adding a new table group and selecting a table with fields for data export definition.
 author: mrolecki
-ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERTableNameLookup, ERModelGDPdUFunctionEditor,  ERExpressionDesignerFormula   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Germany
-# ms.search.industry: 
 ms.author: mrolecki
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.custom:
+ms.reviewer: johnmichalak    
+audience: Application User 
+ms.search.region: Germany
+ms.search.validFrom: 2016-06-30
+ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERTableNameLookup, ERModelGDPdUFunctionEditor,  ERExpressionDesignerFormula
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Customize German audit file configuration
 
 [!include [banner](../../includes/banner.md)]

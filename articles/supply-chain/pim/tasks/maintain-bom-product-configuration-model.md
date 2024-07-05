@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Maintain BOM for a product configuration model
-description: Running this procedure requires an existing product configuration model. 
+description: Learn about maintaining BOM for a product configuration model, including step-by-step processes for adding BOM lines and line details.
 author: t-benebo
-ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductConfigurationModelDetails, PCBOMLineDetails, InventItemIdLookupSimple   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: benebotg
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.custom:
+ms.reviewer: kamaybac   
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductConfigurationModelDetails, PCBOMLineDetails, InventItemIdLookupSimple 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Maintain BOM for a product configuration model
 
 [!include [banner](../../includes/banner.md)]

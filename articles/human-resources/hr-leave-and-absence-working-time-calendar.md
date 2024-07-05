@@ -6,9 +6,6 @@ description: Define a working time calendar, holidays, and non-work times in Dyn
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
@@ -20,7 +17,7 @@ audience: Application User
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: ajitchandran
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 

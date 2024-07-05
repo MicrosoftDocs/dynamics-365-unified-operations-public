@@ -1,15 +1,15 @@
 ---
 title: Create purchase orders
-description: This article describes the process and options when you manually create a purchase order.
-author: GalynaFedorova
-ms.author: gfedorova
-ms.reviewer: kamaybac
-ms.search.form: PurchTable, PurchTablePart
+description: Learn about the process and options when you manually create a purchase order, including an outline on creating a purchase order header.
+author: Henrikan
+ms.author: henrikan
 ms.topic: how-to
 ms.date: 01/09/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: PurchTable, PurchTablePart
 ---
 
 # Create purchase orders

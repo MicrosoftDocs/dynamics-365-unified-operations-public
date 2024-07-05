@@ -2,10 +2,12 @@
 title: What's new or changed in Dynamics 365 Commerce 10.0.33 (May 2023)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.33. 
 author: josaw1
-ms.date: 03/03/2023
+ms.date: 04/12/2024
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
+ms.custom: 
+  - bap-template
+  - evergreen
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
@@ -32,7 +34,7 @@ The following table lists the features that are included in this release. We mig
 |---|---|---|---|
 |  Geolocation |  Changes to geolocation targeting. | Commerce now supports resolving external geolocation providers in the first request. This behavior is turned off by default for all external segmentation providers to prevent unpredictable site performance. External provider information isn't resolved on the initial page request, and the default page is shown. To override this default behavior and allow external geolocation providers to show the targeted version of a page on the first request, file a support ticket with [Microsoft Support](https://support.microsoft.com/). | Contact Microsoft.<p><p>For more information, refer to [Device, market, and geolocation targeting](../targeting-overview.md).  |
 | Orders |  Create asynchronous customer orders in real time, and fallback to batch process if real time fails.  |  When this feature is enabled in the point of sale (POS) functionality profile, POS will attempt to create a customer order in real time using the Real-time service (RTS). However, the POS screen won't be blocked for the response of the service call. The customer order will be completed with a confirmation number, and if the real time order creation fails, the order will be created in batch after a few minutes.<p><p>[Customer orders in point of sale (POS)](../customer-orders-overview.md) | IT Pro opt-in   |
-| Orders  |  Enable on behalf of ordering (OBO).   |  This new functionality allows B2B account managers to sign into the B2B e-commerce website on behalf of the B2B buyers they work with. The account manager can see all the same information that the buyer sees and can take actions such as adding items to the cart and placing orders. The feature requires configuration in Azure Active Directory and site builder.<p><p>[Create and modify B2B pages for on behalf of (OBO) functionality](../obo-add-pages-site-builder.md)<p><p>[Set up and configure on behalf of (OBO) functionality](../obo-configure-hq.md)| IT Pro opt-in |
+| Orders  |  Enable on behalf of ordering (OBO).   |  This new functionality allows B2B account managers to sign into the B2B e-commerce website on behalf of the B2B buyers they work with. The account manager can see all the same information that the buyer sees and can take actions such as adding items to the cart and placing orders. The feature requires configuration in Microsoft Entra and site builder.<p><p>[Create and modify B2B pages for on behalf of (OBO) functionality](../obo-add-pages-site-builder.md)<p><p>[Set up and configure on behalf of (OBO) functionality](../obo-configure-hq.md)| IT Pro opt-in |
 | POS | Hide and show title bar in Store Commerce app. | The title bar in Store Commerce app for Windows can now be hidden and shown with the Alt-Enter keyboard shortcut. A Windows notification will be displayed when entering or leaving full-screen mode. | Enabled by default |
 
 ## Additional resources

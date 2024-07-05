@@ -1,15 +1,13 @@
 ---
 title: Register an integration point in the ID-porten web portal
-description: This article explains how to register an integration point in the ID-porten web portal in Norway.
-author: AdamTrukawka
-ms.date: 11/28/2021
+description: Learn how to register an integration point in the ID-porten web portal in Norway, including a table outling information on parameter names.
+author: liza-golub
+ms.author: egolub
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 02/08/2024
+ms.reviewer: johnmichalak
 audience: Application User
-ms.reviewer: kfend
 ms.search.region: Norway
-ms.author: atrukawk
 ms.search.validFrom: 2022-11-15
 ---
 
@@ -17,7 +15,7 @@ ms.search.validFrom: 2022-11-15
 
 [!include [banner](../../includes/banner.md)]
 
-Companies that are registered for value-added tax (VAT) in the territory of Norway have their accounts in the [ID-porten](https://samarbeid.digdir.no/id-porten/ta-i-bruk-id-porten/94) web portal. To enable the direct submission of VAT returns to Altinn, you must create an [integration point](https://docs.digdir.no/oidc_index.html) in the company's account in ID-porten. For more information, see [ID-Porten & Authentication](https://skatteetaten.github.io/mva-meldingen/english/idportenauthentication/).
+Companies that are registered for value-added tax (VAT) in the territory of Norway have their accounts in the [ID-porten](https://samarbeid.digdir.no/id-porten/ta-i-bruk-id-porten/94) web portal. To enable the direct submission of VAT returns to Altinn, you must create an integration point in the company's account in ID-porten. For more information, see [ID-Porten & Authentication](https://skatteetaten.github.io/mva-meldingen/english/idportenauthentication/).
 
 We recommend that you set the following parameters for your integration point for direct submission of VAT returns to Altinn from Microsoft Dynamics 365 Finance.
 
@@ -32,17 +30,17 @@ We recommend that you set the following parameters for your integration point fo
 | Tillatte grant types | Grant types allowed | A grant represents the user's consent to retrieve an access token. By selecting specific grants, you consent to the corresponding methods of retrieving an access token. | <p>Select the following grant types:</p><ul><li>**authorization_code**</li><li>**refresh_token**</li></ul> |
 | Klientautentiseringsmetode | Client authentication method | The method of authentication of your client. | Specify **client_secret_post**. |
 | Applikasjonstype | Application Type | The application (or client) type is the type of runtime environment that the client is running under. OAuth2 chapter 2.1 lists the available options. The choice of client type is a security assessment that the customer will perform. | Select **web**. |
-| Gyldig(e) redirect uri-er | Valid redirect URIs | This parameter applies only to personal sign-in integrations. It specifies the URIs that the client is allowed to go to after sign-in. | In Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, copy the HTTPS internet address (URL) from the brower's Address bar, and paste it into this field. |
-| Gyldig(e) post logout redirect uri-er | Valid mail logout redirect URIs | This parameter applies only to personal sign-in integrations. It specifies the URIs that the client is allowed to go to after sign-out. | Specify `https://skatteetaten.no`. |
-| Frontchannel logout uri | Frontchannel logout URI | The URI that the provider sends a request to upon sign-out that is triggered by another client in the same session. If you don't set this parameter, there is a risk that the user might still be signed in to your service when they sign out of ID-porten. | Specify `https://skatteetaten.no`. |
+| Gyldig(e) redirect uri-er | Valid redirect URIs | This parameter applies only to personal sign-in integrations. It specifies the URIs that the client is allowed to go to after sign-in. | In Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, copy the HTTPS internet address (URL) from the browser's address bar, and paste it into this field. |
+| Gyldig(e) post logout redirect uri-er | Valid mail logout redirect URIs | This parameter applies only to personal sign-in integrations. It specifies the URIs that the client is allowed to go to after sign-out. | Specify the base URL of your Finance environment. |
+| Frontchannel logout uri | Frontchannel logout URI | The URI that the provider sends a request to upon sign-out that is triggered by another client in the same session. If you don't set this parameter, there is a risk that the user might still be signed in to your service when they sign out of ID-porten. | Specify the base URL of your Finance environment. |
 | Frontchannel logout krever sesjons-id | Frontchannel logout requires session ID | This parameter applies only to personal sign-in integrations. It's a flag that determines whether the issuer and session ID parameters are passed together with **frontchannel_logout_uri**. | Leave this checkbox cleared. |
-| Tilbake-uri | Back URI | This parameter applies only to personal sign-in integrations. It specifies the URI that a user is sent back to when they cancel sign-in. | Specify `https://skatteetaten.no`. |
+| Tilbake-uri | Back URI | This parameter applies only to personal sign-in integrations. It specifies the URI that a user is sent back to when they cancel sign-in. | Specify the base URL of your Finance environment. |
 | Authorization levetid (sekunder) | Authorization lifetime (seconds) | The lifetime of the registered authorization. In an OpenID Connect context, this authorization will be access to the "userinfo" endpoint. The value must be specified in seconds. | Specify **31536000** (= one year). |
 | Access token levetid (sekunder) | Access token lifetime (seconds) | The lifetime of the issued **access_token** in seconds. | Specify **7200** (= two hours). |
 | Refresh token levetid (sekunder) | Refresh token lifetime (seconds) | The lifetime of the issued **refresh_token** in seconds. | Specify **0** (zero). |
 | Refresh token type | Refresh token type | <ul><li>**One-time** – You get a new **refresh_token** at each refresh of **access_token**.</li><li>**Reusable** – A refresh of **access_token** doesn't change **refresh_token**.</li></ul> | Specify **Engangs**. |
 
-![Registering an integration point in the ID-porten web portal.](../media/emea-nor-vat-return-integration-point.png)
+![Registering an integration point in the ID-porten web portal.](../media/emea-nor-vat-return-integration-point-2023.png)
 
 > [!IMPORTANT]
 > Make sure that you safely store the client ID and client secret of the integration point that you create for interoperation with ID-porten. You will need these credentials in the [Set up the client ID and client secret of your ID-porten integration point in Finance](emea-nor-vat-return-setup.md#client-credentials) step of your preparation for direct submission of VAT returns to Altinn in Finance.

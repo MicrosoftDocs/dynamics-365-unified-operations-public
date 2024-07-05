@@ -1,36 +1,22 @@
 ---
-# required metadata
-
 title: Personalize the user experience
-description: This article explains how you can personalize the app.
+description: Learn about how you can personalize the app and user experience, covering various subjects including system-wide options and full personalization access.
 author: jasongre
-ms.date: 06/03/2022
+ms.author: jasongre
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SysUserSetup, DefaultDashboard
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
+ms.date: 06/03/2022
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
+audience: IT Pro
 ms.assetid: 57b445d7-3e9e-4228-8728-f63b9dbd77a3
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: jasongre
 ms.search.validFrom: 2016-02-28
+ms.search.form: SysUserSetup, DefaultDashboard
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Personalize the user experience
 
 [!include [banner](../../../finance/includes/banner.md)]
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article explains how you can personalize the app and covers the following subjects: 
 
@@ -113,7 +99,7 @@ If you want to make multiple changes to a page, or changes that aren't available
 - Select **Personalize this page** in the **Personalize** group on the **Options** tab of any page's Action Pane.
 - Select the **Settings** button (the gear symbol) on the navigation bar, and then select **Personalize**.
 
-[![Personalization toolbar.](../../fin-ops/get-started/media/restyledPersonalizationToolbar.png)](/media/restyledPersonalizationToolbar.png)
+[![Personalization toolbar.](../../fin-ops/get-started/media/restyledPersonalizationToolbar.png)]
 
 #### Navigating the page
 
@@ -156,7 +142,7 @@ For some pages that include lists, the **Add to workspace** personalization feat
 > [!NOTE]
 > If the [Saved views](saved-views.md) feature is turned on, the content that you push to a workspace is directly linked to a view. The view's query is used to retrieve data into the workspace, and the corresponding tile or link in the workspace opens the page to that view, so that the view's query and personalizations are applied to it. If the view is updated, the corresponding workspace elements will be adjusted to the new view definition.
 
-[![Add to workspace.](../../fin-ops/get-started/media/personalization-addtoworkspace.png)](/media/personalization-addtoworkspace.png)
+[![Add to workspace.](../../fin-ops/get-started/media/personalization-addtoworkspace.png)]
 
 - To add a list to a workspace, first sort or filter the list on the page so that it shows the information as you want it to appear in the workspace. (If the **Saved views** feature is turned on, you can't continue until you save a view that has these conditions.) Then select **Add to workspace**. Select a workspace, and then, in the **Presentation** field, select **List**. After you select **Configure**, a dialog box appears, where you can select the columns that should appear in the list in the workspace. You can also specify the label that is used for the list in the workspace.
 - To add a tile to a workspace, first filter the list on the page so that it shows the data that should be summarized or that you want quick access to. (If the **Saved views** feature is turned on, you can't continue until you save a view that has these conditions.) Then select **Add to workspace**. Select a workspace, and then, in the **Presentation** field, select **Tile**. After you select **Configure**, a dialog box appears, where you can specify the label that should be used for the tile in the workspace. You can also specify whether the tile should show a count. After the tile is added to the workspace, you can select it to open the current page from the workspace. You can then view the filtered list that is associated with the tile.

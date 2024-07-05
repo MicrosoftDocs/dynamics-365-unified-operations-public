@@ -1,15 +1,17 @@
 ---
 title: Danish Intrastat
-description: This article contains information about the Danish Intrastat report.
-author: AdamTrukawka
-ms.date: 01/11/2022
-ms.topic: article
-audience: 
-ms.reviewer: kfend
+description: Learn about the Danish Intrastat report, including a table that defines and outlines arrivals and dispatches for various Intrastat report fields.
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
+ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: atrukawk
-ms.search.validFrom: 
+
 ---
+
 # Danish Intrastat
 
 [!include [banner](../../includes/banner.md)]

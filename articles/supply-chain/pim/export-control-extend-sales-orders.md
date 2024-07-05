@@ -1,15 +1,15 @@
 ---
 title: Extend export control sales order functionality
-description: This article provides information that's useful for developers who are extending sales order functionality for implementing export controls.
+description: Learn about what's useful for developers who are extending sales order functionality for implementing export controls with an outline on extended properties.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: overview
 ms.date: 08/29/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # Extend export control sales order functionality
@@ -24,9 +24,10 @@ The `SalesLine.QtyOrdered` field is passed for the quantity, and the `SalesLine.
 
 ## Extended properties
 
-Additional properties can be added to requests from Supply Chain Management to the advanced export control solution. These properties can then be referenced in Power Fx rules on both restrictions and exceptions.
+Additional properties can be added to requests from Supply Chain Management to the advanced export management solution. These properties can then be referenced in Power Fx rules on both restrictions and exceptions.
 
 To add additional properties, create a chain of command extension of the `COOValidateSalesTable` class and override the appropriate method for your property.
+
 - **Document properties:** `getExtendedProperties()`
 - **Line properties:** `getExtendedLineProperties()`
 - **Line code properties:** `getExtendedLineCodeProperties()`

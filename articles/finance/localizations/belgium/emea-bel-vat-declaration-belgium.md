@@ -1,18 +1,16 @@
 ---
 title: VAT declaration (Belgium)
-description: This article provides information about the VAT declaration for Belgium.
+description: Learn about the VAT declaration for Belgium, including an overview on urchase reverse charge VAT with examples with step-by-step processes.
 author: AdamTrukawka
-ms.date: 06/02/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Belgium
 ms.author: atrukawk
+ms.topic: article
+ms.date: 06/02/2022
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Belgium
 ms.search.validFrom: 2019-01-04
-ms.dyn365.ops.version: 10.0.1
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.1
 ---
 
 # VAT declaration (Belgium)
@@ -225,7 +223,7 @@ To automatically generate a VAT declaration, associate sales tax codes in the ap
 Follow these steps to define which sales tax codes generate which boxes on the VAT declaration.
 
 1. Go to **Workspaces** > **Electronic reporting** and select **Reporting configurations**.
-2.  Select the **VAT declaration XML (BE)** configuration, and then select **Configurations \> Application specific parameters setup**.
+2.  Select the **VAT declaration XML (BE)** configuration, and then select **Configurations \> Application specific parameters \> Setup**.
 3.  On the **Application specific parameters** page, on the **Lookups** FastTab, select **Report field lookup**.
 4.  On the **Conditions** FastTab, set the following fields to associate the sales tax codes and report fields.
 
@@ -342,7 +340,7 @@ Follow these steps to define which item sales tax groups generate which descript
 
 3. In the **State** field, change the value to **Completed**.
 4. On the Action Pane, select **Export** to export the settings in an XML file. Then close the page.
-5. Select the **VAT declaration Excel (BE)** configuration, and then select **Configurations** \> **Application specific parameters setup**.
+5. Select the **VAT declaration Excel (BE)** configuration, and then select **Configurations** \> **Application specific parameters** \> **Setup**.
 6. Select **Import**, and select the file that you exported earlier.
 
 ### Set up the VAT reporting format for preview amounts in Excel

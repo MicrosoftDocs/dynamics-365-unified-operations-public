@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Set up withholding tax settlement periods for the TDS tax type
-description: This article explains how to set up settlement periods for Tax Deducted at Source (TDS) settlement periods.
-author: kailiang
-ms.date: 02/12/2021
-ms.topic: article
-ms.prod: 
-
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# 
-# ms.tgt_pltfrm: 
-ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
+description: Learn how to set up settlement periods for Tax Deducted at Source (TDS) settlement periods, including a step-by-step process.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
+ms.reviewer: johnmichalak
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ---
 
 # Set up withholding tax settlement periods for the TDS tax type
@@ -36,7 +22,7 @@ This article explains how to set up settlement periods for Tax Deducted at Sourc
 
 1. Go to **Tax \> Indirect taxes \> Withholding tax \> Withholding tax settlement periods**.
 
-    [![Withholding tax settlement periods page.](../media/apac-ind-TDS-13.png)](/media/apac-ind-TDS-13.png)
+    [![Withholding tax settlement periods page.](../media/apac-ind-TDS-13.png)]
 
 2. In the **Tax type** field, select **TDS** to set up withholding tax settlement periods for the TDS tax type.
 3. Select **New** to create a line.
@@ -52,6 +38,6 @@ This article explains how to set up settlement periods for Tax Deducted at Sourc
     > [!NOTE]
     > To run the periodic TDS settlement process, go to **General ledger \> Periodic \> Withholding tax \> Withholding tax payment**.
 
-    [![Withholding tax payment page.](../media/apac-ind-TDS-15.png)](/media/apac-ind-TDS-15.png)
+    [![Withholding tax payment page.](../media/apac-ind-TDS-15.png)]
 
 12. Close the page.

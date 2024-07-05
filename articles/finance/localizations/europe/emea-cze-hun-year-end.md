@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Year-end close for Czech Republic and Hungary
-description: This article provides information about the year-end closing process and opening transactions for the Czech Republic and Hungary.
+description: Learn about the year-end closing process and opening transactions for the Czech Republic and Hungary, including an overview on the year-end closing process.
 author: EvgenyPopovMBS
-ms.date: 05/18/2018
+ms.author: evgenypopov
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
-audience: Application user
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
+ms.date: 05/18/2018
 ms.custom:
+ms.reviewer: johnmichalak
+audience: Application user
 ms.search.region: Czech Republic, Hungary
-# ms.industry: 
-ms.author: epopov
 ms.search.validFrom: 2016-02-28
+ms.search.form:  
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Year-end close for Czech Republic and Hungary

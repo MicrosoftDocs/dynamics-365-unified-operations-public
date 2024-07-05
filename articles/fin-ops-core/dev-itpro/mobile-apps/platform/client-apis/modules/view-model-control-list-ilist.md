@@ -1,12 +1,13 @@
 ---
 title: List module
-description: A list is a control that contains any numbers of rows.
+description: Learn about the list module, a list is a control that contains any numbers of rows, including the List, ListDesign, ListMetadata, and Row types.
 author: jasongre
-ms.date: 05/26/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # List module

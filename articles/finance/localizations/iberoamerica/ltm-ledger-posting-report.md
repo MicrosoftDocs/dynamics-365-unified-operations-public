@@ -1,12 +1,12 @@
 ---
 title: Print a Ledger Posting report for LATAM
-description: This article explains how to print a Ledger Posting report for Latin America.
+description: Learn how to print a Ledger Posting report for Latin America, including prerequisites and a process for printing a ledger posting report.
 author: Fhernandez0088
-ms.date: 10/06/2023
-ms.topic: Article
-ms.reviewer: kfend
 ms.author: v-federicohe
+ms.topic: article
+ms.date: 10/06/2023
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Print a Ledger Posting report for LATAM

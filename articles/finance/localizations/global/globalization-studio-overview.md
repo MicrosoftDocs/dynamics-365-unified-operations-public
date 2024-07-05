@@ -1,18 +1,14 @@
 ---
-# required metadata
 title: Globalization Studio overview
-description: This article provides information about the Globalization Studio.
-author: Filatovm
-ms.date: 09/19/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: 
-ms.author: wangchen
-ms.search.validFrom: 2022-09-20
-ms.dyn365.ops.version: 10.0.30
+description: Learn about the Globalization Studio, including outlines on no-code/low-code globalization tools and services and multi-country localization content.
+author: filatovm
+ms.author: filatovm
+ms.topic: overview
+ms.custom: 
+  - bap-template
+ms.date: 06/04/2024
+ms.reviewer: johnmichalak
+
 ---
 
 # Globalization Studio overview 

@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Refresh database
-description: This article explains how to perform a refresh of a database for Microsoft Dynamics 365 Finance.
+description: Learn how to perform a refresh of a database for Microsoft Dynamics 365 Finance, including an overview of known issues.
 author: LaneSwenka
-ms.date: 11/06/2023
+ms.author: laswenka
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
+ms.date: 11/06/2023
+ms.reviewer: johnmichalak
 audience: IT Pro, Developer
-# ms.devlang:
-ms.reviewer: sericks
-# ms.tgt_pltfrm:
 ms.assetid: 558598db-937e-4bfe-80c7-a861be021db1
 ms.search.region: Global
-# ms.search.industry:
-ms.author: laswenka
 ms.search.validFrom: 2016-09-30
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Refresh database
@@ -73,7 +61,7 @@ This is also referred to as [Golden configuration promotion](dbmovement-scenario
 * All users will have their partition value reset to the "initial" partition record ID.
 * All Microsoft-encrypted fields are cleared, because they can't be decrypted on a different database server. An example is the **Password** field in the SysEmailSMTPPassword table.
 * [Maintenance mode](../sysadmin/maintenance-mode.md) settings are disabled even if it was enabled in source.
-* Dual-write configuration.  To set up a new link on the target environment after this operation is successful, see [Dual-write environment linking](../data-entities/dual-write/link-your-environment.md).
+* Dual-write configuration.  To set up a new link on the target environment after this operation is successful, see [Enable Power Platform Integration](../../dev-itpro/power-platform/enable-power-platform-integration.md).
 * Any [change-tracking on entities](../data-entities/entity-change-track.md) are disabled.
 * [Service endpoints](../business-events/managing-business-event-endpoints.md) for business events and data events are removed.
 

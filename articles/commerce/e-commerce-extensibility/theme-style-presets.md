@@ -4,8 +4,6 @@ description: This article explains how to add style variables that are known as 
 author: samjarawan
 ms.date: 06/29/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

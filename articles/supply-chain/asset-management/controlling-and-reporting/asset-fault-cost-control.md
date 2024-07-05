@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Asset fault cost control
-description: This article explains asset fault cost control in Asset Management.
+description: Learn about asset fault cost control in Asset Management, including a step-by-step process and an example of an asset fault cost control calculation.
 author: johanhoffmann
-ms.date: 08/23/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EntAssetCostControlFault 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
+ms.topic: article
+ms.date: 08/23/2019
+ms.custom:
+ms.reviewer: kamaybac 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2019-08-31
+ms.search.form: EntAssetCostControlFault 
 ms.dyn365.ops.version: 10.0.5
-
 ---
 
 # Asset fault cost control

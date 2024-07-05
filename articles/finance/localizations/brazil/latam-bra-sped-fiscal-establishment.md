@@ -1,18 +1,16 @@
 ---
 title: Enable the Fiscal Establishment dimension
-description: This article explains how to set up the Fiscal Establishment dimension for the SPED-Reinf.
-author: AdamTrukawka
-ms.date: 08/07/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn how to set up the Fiscal Establishment dimension for the SPED-Reinf, including a step-by-step process outlining how to enable fiscal establishment.
+author: ankviklis
+ms.author: ankviklis
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/20/2024
+ms.reviewer: johnmichalak
 ms.search.region: Brazil
-ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 8.1
-ms.search.form: 
 ---
 
 # Enable the Fiscal Establishment dimension

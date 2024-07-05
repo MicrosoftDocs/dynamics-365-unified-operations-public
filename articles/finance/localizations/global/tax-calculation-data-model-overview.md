@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Tax calculation data model
-description: This article provides information about the tax data model, and how the field values of each data model are determined by the context of tax calculation transactions.
+description: Learn about the tax data model, and how the field values of each data model are determined by the context of tax calculation transactions.
 author: kailiang
-ms.date: 10/15/2021
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:
-audience: Application user
-# ms.devlang: 
-ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kailiang
+ms.topic: overview
+ms.date: 02/09/2024
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application user
+ms.search.region: Global
 ms.search.validFrom: 2021-08-02
+ms.search.form:
 ms.dyn365.ops.version: 10.0.21
-
 ---
+
 # Tax calculation data model
 
 This article provides information about how the field values in the tax data model are determined in tax calculation transactions.
@@ -36,29 +25,42 @@ The *tax data model* is made up of fields that are required for tax calculations
 
 Follow these steps to view the tax calculation data model.
 
-1. Sign in to Regulatory Configuration Service (RCS), and go to **Electronic reporting** \> **Tax configurations**.
+> [!NOTE]
+> The functionality of Regulatory Configuration Service (RCS) is merged to the **Globalization Studio** workspace in Microsoft Dynamics 365 Finance in version 10.0.39. For more information, see [Regulatory Configuration Service merge to the Globalization Studio workspace](workspace/merge-rcs-to-gsw.md).
+>
+> If you're using version 10.0.39 or later, use the **Globalization Studio** workspace in Finance instead of RCS.
+
+1. Follow one of these steps, depending on where you're completing the procedure:
+
+    - In [RCS](https://marketing.configure.global.dynamics.com/), select **Electronic reporting** \> **Tax configurations**.
+    - In Finance, open the **Globalization Studio** workspace, and select **Electronic reporting** \> **Tax configurations**.
+   
 2. Select **Tax Data Model** \> **Tax Calculation Data Model**.
 3. On the **Versions** FastTab, select a version.
 4. Select **Designer**.
 
-    [![Designer button.](../media/tax-calculation-model-mapping-1.png)](/media/tax-calculation-model-mapping-1.png)
+    [![Designer button.](../media/tax-calculation-model-mapping-1.png)](../media/tax-calculation-model-mapping-1.png)
 
-5. Expand the **Tax service** node.
+5. Expand the **Tax Calculation** node.
 6. Expand the **Header** node to view the header data models.
 7. Expand the **Lines** node to view the line data models.
 
-    [![Data models.](../media/tax-calculation-model-mapping-2.png)](/media/tax-calculation-model-mapping-2.png)
+    [![Data models.](../media/tax-calculation-model-mapping-2.png)](../media/tax-calculation-model-mapping-2.png)
 
 You can also view the tax calculation data model and the available columns in the applicability rules table.
 
-1. In RCS, go to **Globalization features** \> **Tax calculation**.
-2. Find a tax feature that has a status of **Draft**, and then select **Edit**.
+1. Follow one of these steps, depending on where you're completing the procedure:
+
+    - In [RCS](https://marketing.configure.global.dynamics.com/), open the **Globalization features** workspace, select **Features**, and then select the **Tax Calculation** tile.
+    - In Finance, open the **Globalization Studio** workspace, select **Globalization services**, and then select the **Tax Calculation** tile.
+
+2. On the **Tax calculation features** page, find a tax feature that has a status of **Draft**, and then select **Edit**.
 3. On the **General** tab, select the configuration version, based on the version of the tax calculation data model. For example, select **40.46.212**.
 4. On the **Tax group applicability** tab, select **Manage columns**.
 
-    [![Manage columns.](../media/tax-calculation-model-mapping-3.png)](/media/tax-calculation-model-mapping-3.png)
+    [![Manage columns.](../media/tax-calculation-model-mapping-3.png)](../media/tax-calculation-model-mapping-3.png)
 
-The tax calculation data model is integrated with finance and operations apps. During each transaction that is related to tax calculation, the values of the fields that is defined in the applicability rules tables are collected and sent to the tax calculation service for calculation. In version 40.46, 57 predefined data models are available for the following transaction types: purchase orders, sales orders, transfer orders, purchase requisitions, requests for quotation, and sales quotations.
+The tax calculation data model is integrated with finance and operations apps. During each transaction that is related to tax calculation, the values of the fields that is defined in the applicability rules tables are collected and sent to the tax calculation. In version 40.46, 57 predefined data models are available for the following transaction types: purchase orders, sales orders, transfer orders, purchase requisitions, requests for quotation, and sales quotations.
 
 ## Version updates and restrictions
 

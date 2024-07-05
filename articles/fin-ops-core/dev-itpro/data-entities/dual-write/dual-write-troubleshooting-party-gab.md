@@ -1,13 +1,13 @@
 ---
 title: Party and global address book troubleshooting
-description: This article provides troubleshooting information that can help you fix issues that are related to dual-write party and global address book functions.
+description: Learn about how you can fix issues that are related to dual-write party and global address book functions, including a table of prerequisites to verify.
 author: RamaKrishnamoorthy
-ms.date: 07/30/2021
-ms.topic: article
-audience: Developer
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: ramasri
+ms.topic: article
+ms.date: 07/30/2021
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: AX 7.0.0
 ---

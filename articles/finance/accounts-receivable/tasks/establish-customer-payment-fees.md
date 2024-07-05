@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Establish customer payment fees
-description: Create payment fees for customer payments. 
-author: ShivamPandey-msft
-ms.date: 03/24/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: CustPaymFee, CustPaymModeFee, BankAccountTableLookUp   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about how to create payment fees for customer payments, including a step-by-step process for establishing payment fees. 
+author: ShivamPandeyMSFT
 ms.author: shpandey
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 03/24/2023
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: CustPaymFee, CustPaymModeFee, BankAccountTableLookUp
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Establish customer payment fees
 
 [!include [banner](../../includes/banner.md)]

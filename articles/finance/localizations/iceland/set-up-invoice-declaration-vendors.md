@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up an invoice declaration for vendors
-description: This procedure walks you through setting up the Icelandic invoice declaration. 
+description: Learn about setting up the Icelandic invoice declaration, including an outline and step-by-step process for importing invoice declaration GER configurations.
 author: mrolecki
-ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport,  VendInvoiceDeclaration_IS   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Iceland
-# ms.search.industry: 
 ms.author: mrolecki
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.custom:
+ms.reviewer: johnmichalak    
+audience: Application User 
+ms.search.region: Iceland
+ms.search.validFrom: 2016-06-30
+ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport,  VendInvoiceDeclaration_IS
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up an invoice declaration for vendors
 
 [!include [banner](../../includes/banner.md)]

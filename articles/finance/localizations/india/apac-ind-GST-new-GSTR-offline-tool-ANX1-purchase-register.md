@@ -1,15 +1,13 @@
 ---
 title: New GSTR Offline Tool for ANX-1 and Purchase Register
-description: This article provides information about how to generate GSTR offline return format ANX-1 and the Purchase Register according to the new prototype that was released by the government.
+description: Learn about how to generate GSTR offline return format ANX-1 and the Purchase Register according to the new prototype that was released by the government.
 author: EricWangChen
-ms.date: 03/02/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: India
 ms.author: wangchen
+ms.topic: article
+ms.date: 03/02/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: India
 ms.search.validFrom: 2020-09-01
 ms.dyn365.ops.version: 10.0.13
 ---

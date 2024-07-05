@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Business events and Azure Event Hubs
 description: This tutorial describes the steps that you must follow to make business events work with Microsoft Azure Event Hubs.
 author: Sunil-Garg
-ms.date: 08/13/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: sunilg
+ms.topic: article
+ms.date: 08/13/2019
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: Platform update 28
+# ms.search.form: [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: 2019-07-31 
-
 ---
 
 # Business events and Azure Event Hubs
@@ -58,7 +48,7 @@ This tutorial describes the steps that you must follow to make business events w
 8. Select **Next**.
 9. In the **Endpoint name** field, enter a name for the endpoint.
 10. In the **Hub name** field, enter the name of your event hub.
-11. In the **Azure Active Directory application ID** field, enter the application ID that was created earlier.
+11. In the **Microsoft Entra application ID** field, enter the application ID that was created earlier.
 12. In the **Azure application secret** field, enter the value that was created earlier.
 13. In the **Key Vault DNS name** field, enter the Domain Name System (DNS) name of your key vault. You can find this value on the **Overview** tab of the key vault configuration in the Azure portal.
 14. In the **Key Vault secret name** field, enter the name from the secret that was created earlier.

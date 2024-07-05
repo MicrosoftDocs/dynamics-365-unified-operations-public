@@ -1,16 +1,15 @@
 ---
 title: Update model versions in the automated build
-description: The article explains how to update the models in a source package and deployable package of the build output with the version of the build that produced them.
-author: gianugo
-ms.date: 05/25/2017
+description: Learn about how to update the models in a source package and deployable package of the build output with the version of the build that produced them.
+author: josaw1
+ms.author: josaw
 ms.topic: article
+ms.date: 05/25/2017
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2017-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.assetid: 
 ---
 
 # Update model versions in the automated build

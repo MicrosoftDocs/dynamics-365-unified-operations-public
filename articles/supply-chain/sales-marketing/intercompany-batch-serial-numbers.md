@@ -1,15 +1,15 @@
 ---
 title: Intercompany batch and serial numbers
-description: This article explains what will happen when you register batch numbers and serial numbers for intercompany orders
+description: Learn what will happen when you register batch numbers and serial numbers for intercompany orders, including a step-by-step process.
 author: Henrikan
-ms.date: 09/01/2021
-ms.topic: article
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: henrikan
+ms.topic: article
+ms.date: 09/01/2021
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-09-01
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 ms.dyn365.ops.version: 10.0.22
 ---
 

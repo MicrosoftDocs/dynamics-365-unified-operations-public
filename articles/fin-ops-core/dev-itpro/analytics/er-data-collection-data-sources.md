@@ -1,19 +1,17 @@
 ---
 title: Use DATA COLLECTION data sources in Electronic reporting formats
-description: This article explains how to use DATA COLLECTION data sources in Electronic reporting (ER) formats.
+description: Learn about how to use DATA COLLECTION data sources in Electronic reporting (ER) formats, including frequently asked questions.
 author: kfend
-ms.date: 08/23/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 08/23/2021
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-01-01
+ms.search.form: EROperationDesigner
 ms.dyn365.ops.version: AX 10.0.16
 ms.assetid: 
-ms.search.form: EROperationDesigner
 ---
 
 # Use DATA COLLECTION data sources in Electronic reporting formats

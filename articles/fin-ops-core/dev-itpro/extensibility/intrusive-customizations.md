@@ -1,18 +1,15 @@
 ---
 title: Intrusive customizations
-description: This article defines the characteristics of an intrusive customization.
+description: Learn about characteristics of an intrusive customization, including a list of principles to avoid violating to prevent intrusiveness.
 author: MichaelFruergaardPontoppidan
-ms.date: 04/10/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: mfp
+ms.topic: article
+ms.date: 04/10/2018
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.assetid: 
 ---
 
 # Intrusive customizations

@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Engineering attributes and engineering attribute search
-description: This article explains how you can use engineering attributes to specify all non-standard characteristics, to ensure that all product master data can be registered in the system. It also explains how you can use engineering attribute search to easily find products, based on those registered characteristics.
+description: Learn how you can use engineering attributes to specify all non-standard characteristics, to ensure that all product master data can be registered in the system.
 author: t-benebo
-ms.date: 09/28/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  EngChgProductAttributeSearch, EngChgMaintainAttributeInheritance, EngChgAttribute
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
+ms.topic: article
+ms.date: 09/28/2020
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-09-28
+ms.search.form:  EngChgProductAttributeSearch, EngChgMaintainAttributeInheritance, EngChgAttribute
 ms.dyn365.ops.version: 10.0.15
 ---
 

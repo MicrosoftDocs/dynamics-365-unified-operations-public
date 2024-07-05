@@ -1,15 +1,13 @@
 ---
 title: Customize field descriptions
-description: This article describes how you can customize existing field descriptions and add your own descriptions.
+description: Learn about how you can customize existing field descriptions and add your own descriptions, with overviews on adding new descriptions and labeling file names.
 author: josaw1
-ms.date: 10/15/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 10/15/2019
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.assetid: 94d555d7-28f3-4d94-91b4-6038e2be5047

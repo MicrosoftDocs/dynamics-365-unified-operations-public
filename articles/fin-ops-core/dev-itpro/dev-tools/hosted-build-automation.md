@@ -1,16 +1,15 @@
 ---
 title: Build automation that uses Microsoft-hosted agents and Azure Pipelines
-description: The article explains how you can automate the process of building X++ on any agents in Microsoft Azure DevOps.
-author: gianugo
-ms.date: 09/29/2023
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
+description: Learn about how you can automate the process of building X++ on any agents in Microsoft Azure DevOps, including prerequisites.
+author: josaw1
 ms.author: josaw
+ms.topic: article
+ms.date: 09/29/2023
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: AX 7.0.0
-ms.assetid: 
 ---
 
 # Build automation that uses Microsoft-hosted agents and Azure Pipelines
@@ -47,6 +46,8 @@ Starting from version 10.0.18, the Application Suite package has been split into
 
 - **Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp** - This package contains the compiled X++ code for the Application Suite module. This code is optimized for building.
 
+Starting from version 10.0.40, the Application package has been replaced by two packages **Microsoft.Dynamics.AX.Application1.DevALM.BuildXpp** and **Microsoft.Dynamics.AX.Application2.DevALM.BuildXpp** and they are can be downloaded along with **Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp** package from the shared asset library.
+
 Download these packages from LCS, and add them to an Azure Artifacts feed in the Azure DevOps organization where the builds will run. For more information about how to create an Azure Artifacts feed and add NuGet packages, see these topics:
 
 - [Get started with NuGet packages in Azure DevOps Services and TFS](/azure/devops/artifacts/get-started-nuget)
@@ -82,6 +83,19 @@ The following example shows a **packages.config** file for the three main packag
         <package id="Microsoft.Dynamics.AX.Application.DevALM.BuildXpp" version="10.0.793.16" targetFramework="net40" />
         <package id="Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp" version="10.0.793.16" targetFramework="net40" />
         <package id="Microsoft.Dynamics.AX.Platform.CompilerPackage" version="7.0.5968.16973" targetFramework="net40" />
+    </packages>
+    ```
+
++ For version 10.0.40 or later, use the following packages.config layout:
+
+    ```xml
+    <?xml version="1.0" encoding="utf-8"?>
+    <packages>
+        <package id="Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp" version="7.0.7279.40" targetFramework="net40" />
+        <package id="Microsoft.Dynamics.AX.Application1.DevALM.BuildXpp" version="10.0.1935.21" targetFramework="net40" />
+        <package id="Microsoft.Dynamics.AX.Application2.DevALM.BuildXpp" version="10.0.1935.21" targetFramework="net40" />
+        <package id="Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp" version="10.0.1935.21" targetFramework="net40" />
+        <package id="Microsoft.Dynamics.AX.Platform.CompilerPackage" version="7.0.7279.40" targetFramework="net40" />
     </packages>
     ```
 
@@ -150,6 +164,16 @@ The following example of MSBuild arguments assumes that the NuGet packages are i
     /p:ReferenceFolder="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp\ref\net40;$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Application.DevALM.BuildXpp\ref\net40;$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp\ref\net40;$(Build.SourcesDirectory)\Metadata;$(Build.BinariesDirectory)"
     /p:ReferencePath="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage" /p:OutputDirectory="$(Build.BinariesDirectory)"
     ```
+
++ For version 10.0.40 or newer, use the following arguments:
+
+    ```dos
+    /p:BuildTasksDirectory="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage\DevAlm"
+    /p:MetadataDirectory="$(Build.SourcesDirectory)\Metadata"
+    /p:FrameworkDirectory="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage"
+    /p:ReferenceFolder="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.DevALM.BuildXpp\ref\net40;$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Application1.DevALM.BuildXpp\ref\net40;$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Application2.DevALM.BuildXpp\ref\net40;$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.ApplicationSuite.DevALM.BuildXpp\ref\net40;$(Build.SourcesDirectory)\Metadata;$(Build.BinariesDirectory)"
+    /p:ReferencePath="$(Pipeline.Workspace)\NuGets\Microsoft.Dynamics.AX.Platform.CompilerPackage" /p:OutputDirectory="$(Build.BinariesDirectory)"
+    ```    
 
 In the pipeline samples, variables for NuGet package names and paths are used to simplify these commands.
 

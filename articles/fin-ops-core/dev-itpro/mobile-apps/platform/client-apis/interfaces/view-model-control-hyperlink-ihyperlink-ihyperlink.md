@@ -1,12 +1,13 @@
 ---
 title: HyperLink type
-description: Hyperlink control type. Hyperlink control is a control to represent hyperlinks. Pagelinks can also be used in most cases.
+description: Learn about the Hyperlink control type. Hyperlink control is a control to represent hyperlinks. Pagelinks can also be used in most cases.
 author: jasongre
-ms.date: 05/24/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # HyperLink type

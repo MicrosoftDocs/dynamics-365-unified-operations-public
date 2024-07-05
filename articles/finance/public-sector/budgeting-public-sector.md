@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Budgeting in the public sector overview
-description: This overview introduces you to the budgeting functionality that is available for public sector. This includes budget analysis, preliminary budgets and apportionments, and posting definitions.
+description: Learn about the budgeting functionality available for public sector, including budget analysis, preliminary budgets and apportionments, and posting definitions.
 author: panolte
-ms.date: 07/25/2019
+ms.author: kfend
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: BudgetControlApportionments, BudgetControlConfiguration, BudgetControlStatistics, BudgetParameters
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 07/25/2019
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
 ms.collection: get-started
-ms.assetid: 8cecf3cc-8916-44d7-8c73-d6254a61f62b
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: panolte
 ms.search.validFrom: 2016-02-28
+ms.search.form: BudgetControlApportionments, BudgetControlConfiguration, BudgetControlStatistics, BudgetParameters
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 8cecf3cc-8916-44d7-8c73-d6254a61f62b
 ---
 
 # Budgeting in the public sector overview

@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Map configuration tax types - Customs
-description: This article explains how to map configuration tax types for customs.
-author: EricWangChen
-ms.date: 06/05/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
+description: Learn how to map configuration tax types for customs, including outlines on customs tax types, the GST tax types, and defining tax periods.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
+ms.reviewer: johnmichalak 
 ms.search.region: India
-# ms.search.industry: 
-ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
-
 ---
 
 # Map configuration tax types - Customs

@@ -1,16 +1,16 @@
 ---
 title: Independent software vendor (ISV) development home page
-description: This article provides links to topics about development by independent software vendors (ISVs).
+description: Access links to topics about development by independent software vendors (ISVs), including links to ISV licensing.
 author: josaw1
-ms.date: 08/27/2021
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 08/27/2021
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.collection: get-started
 ---
 
 # Independent software vendor (ISV) development home page

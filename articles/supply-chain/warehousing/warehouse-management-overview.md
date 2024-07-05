@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Warehouse management overview
-description: Use Warehouse management to monitor and automate warehouse processes. 
-author: Mirzaab
-ms.date: 04/20/2020
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: WHSParameters, WHSWorkPool
-audience: Application User
-# ms.devlang: 
+description: Learn how to use Warehouse management to monitor and automate warehouse processes, including a detailed list of warehouse management processes and resources. 
+author: perlynne
+ms.author: perlynne
+ms.topic: how-to
+ms.date: 05/16/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: mirzaab
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+audience: Application User
+ms.search.form: WHSParameters, WHSWorkPool
 ---
+
 # Warehouse management overview
 
 [!include [banner](../includes/banner.md)]
@@ -30,6 +19,7 @@ ms.dyn365.ops.version: AX 7.0.0
 The Warehouse management module lets you manage warehouse processes in manufacturing, distribution, and retail companies. This module has a wide range of features to support the warehouse facility at an optimal level, at any time. Warehouse management is fully integrated with other business processes such as transportation, manufacturing, quality control, purchase, transfer, sales, and returns.
 
 ## Get started
+
 To start working with Warehouse management, you need to complete the setup of the general warehouse parameters to support the business processes of your company.
 
 - Go to the **Warehouse management parameters** page under **Warehouse management** > **Setup** to set up general warehouse parameters.
@@ -39,10 +29,11 @@ You must configure components for inbound and outbound warehouse process workflo
 - [Warehouse configuration overview](warehouse-configuration.md)
 - [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md)
 - [Set up mobile devices for warehouse work](configure-mobile-devices-warehouse.md)
-- [Set up a location directive for purchase order put-away](../transportation/tasks/set-up-location-directive-purchase-order-put-away.md)
+- [Set up a location directive for purchase order putaway](../transportation/tasks/set-up-location-directive-purchase-order-put-away.md)
 - [Set up a work template for purchase orders](./tasks/set-up-work-template-purchase-orders.md)
 
 ## Warehouse management processes (WMS)
+
 - Integrated support for source documents for sales orders, returns, transfer orders, production orders, and kanban  
 - Flexible, inbound and outbound material workflow support based on queries
 - Full integration with the Manufacturing and Transportation offerings
@@ -73,9 +64,6 @@ Go to the [Dynamics 365 Release Planner](https://releaseplans.microsoft.com/?app
 ### Blogs
 
 You can find opinions, news, and other information about Warehouse management and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog).
-
-
- 
 
 
 

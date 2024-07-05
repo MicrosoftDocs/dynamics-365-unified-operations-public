@@ -1,15 +1,13 @@
 ---
 title: Application extensibility roadmap
-description: This article discusses the requirements and schedule for converting code from overlayering-based to extension-based.
+description: Learn about the requirements and schedule for converting code from overlayering-based to extension-based, including additional information about customizations.
 author: FrankDahl
-ms.date: 07/10/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: fdahl
+ms.topic: article
+ms.date: 07/10/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2017-07-10
 ms.dyn365.ops.version: Platform update 1
 ms.assetid: 

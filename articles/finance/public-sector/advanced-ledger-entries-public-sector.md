@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Advanced ledger entries in the public sector
-description: This article explains how organizations in the public sector can use advanced ledger entries to create, adjust, and reverse ledger entries.
+description: Learn how organizations in the public sector can use advanced ledger entries to create, adjust, and reverse ledger entries.
 author: v-kiarnd
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AdvancedLedgerEntry, BudgetControlConfiguration, LedgerParameters
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 3db0233e-d767-4dc0-b008-733098b6ca70
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
+ms.search.form: AdvancedLedgerEntry, BudgetControlConfiguration, LedgerParameters
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 3db0233e-d767-4dc0-b008-733098b6ca70
 ---
 
 # Advanced ledger entries in the public sector

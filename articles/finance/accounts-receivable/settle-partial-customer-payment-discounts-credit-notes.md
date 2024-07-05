@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Settle a partial customer payment that has discounts on credit notes
-description: This article walks you through a scenario where a cash discount is taken on a credit note when the original invoice also had a cash discount. 
-author: ShivamPandey-msft
-ms.date: 08/22/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: d9984cef-ddcf-46bd-816d-c01b8cc5cf48
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about a scenario where a cash discount is taken on a credit note when the original invoice also had a cash discount.
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: article
+ms.date: 08/22/2017
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: d9984cef-ddcf-46bd-816d-c01b8cc5cf48
 ---
 
 # Settle a partial customer payment that has discounts on credit notes

@@ -1,16 +1,15 @@
 ---
 title: Update LCS Connection authentication tasks to MSAL in Azure Pipelines
-description: This article explains how to update Azure Pipelines so that it uses the Microsoft Authentication Library (MSAL) for authentication.
-author: gianugo
-ms.date: 11/30/2021
+description: Learn about how to update Azure Pipelines so that it uses the Microsoft Authentication Library (MSAL) for authentication.
+author: josaw1
+ms.author: josaw
 ms.topic: article
+ms.date: 11/30/2021
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 
 ---
 
 # Update LCS Connection authentication tasks to MSAL in Azure Pipelines
@@ -32,7 +31,7 @@ To add the MSAL.PS install task to the build of your YML or Classic pipeline, se
 
 ## Update existing tasks
 
-To update the existing tasks so that they use the new MSAL authentication, you must update the task versions. For more information about how to update task versions, see [Task types & usage](/azure/devops/pipelines/process/tasks?view=azure-devops&tabs=classic#task-versions). The following table shows the tasks that use authentication. It also shows the earliest version of each task that uses MSAL.
+To update the existing tasks so that they use the new MSAL authentication, you must update the task versions. For more information about how to update task versions, see [Task types & usage](/azure/devops/pipelines/process/tasks?view=azure-devops&tabs=classic). The following table shows the tasks that use authentication. It also shows the earliest version of each task that uses MSAL.
 
 | Task name | Minimum version that uses MSAL |
 | --- | --- |

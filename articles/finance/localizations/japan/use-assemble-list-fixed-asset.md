@@ -1,19 +1,18 @@
 ---
 title: Use assemble list of a fixed asset
-description: In Japan, you can transfer an inventory item to a fixed asset.
+description: In Japan, you can transfer an inventory item to a fixed asset. Learn about assigning components in an assemply list, including a step-by-step process.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: AssetTable, AssetComponentList_JP, LedgerJournalTable, LedgerJournalTransAsset
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Use assemble list of a fixed asset
 
 [!include [banner](../../includes/banner.md)]

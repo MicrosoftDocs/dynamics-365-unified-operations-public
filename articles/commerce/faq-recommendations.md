@@ -6,9 +6,6 @@ description: This article provides information about processes and tools that yo
 author: bebeale
 ms.date: 05/26/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

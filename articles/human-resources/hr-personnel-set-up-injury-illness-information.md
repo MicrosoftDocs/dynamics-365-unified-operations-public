@@ -4,10 +4,8 @@
 title: Set up injury and illness information
 description: Employers need to know when their employees suffer injuries or illness resulting from hazards in the workplace. 
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 07/02/2024
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
@@ -19,22 +17,17 @@ audience: Application User
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Set up injury and illness information
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
 
 Employers have to know when their employees suffer injuries or illness because of hazards in the workplace. You can use the **Injury and illness** page to set up information that facilitates reporting of work-place injuries or illnesses. You can set up types of injuries and illnesses, including types of treatments, costs, and outcomes. The **USMF** demo data company was used to create this procedure.
 
-1. Go to **Human resources** \> **Workers** \> **Injury and illness** \> **Injury and illness setup**.
+1. Go to **Human resources** > **Workers** > **Injury and illness** > **Injury and illness setup**.
 2. Select **New**.
 3. In the **Injury or illness type** field, enter a value (for example, **Fracture**).
 4. In the **Description** field, enter a value (for example, **Bone fracture**).

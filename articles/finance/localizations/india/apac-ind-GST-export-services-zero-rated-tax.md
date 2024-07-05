@@ -1,28 +1,14 @@
 ---
-# required metadata
-
 title: Export services that have zero-rated tax
-description: This article explains how to export services that have zero-rated tax.
-author: EricWangChen
-ms.date: 06/04/2019
+description: Learn how to export services that have zero-rated tax, including step-by-step processes for exporting services and validating tax details.
+author: epodkolzina
+ms.author: epodkolzina
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.date: 06/04/2019
+ms.reviewer: johnmichalak
 ms.search.region: India
-# ms.search.industry: 
-ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
-
 ---
 
 # Export services that have zero-rated tax

@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Accruing subscriptions  
 description: With service subscriptions, you manually accrue revenue in the periods following the date when you invoiced a fee transaction.
-author: sorenva
-ms.date: 04/30/2018
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMASubscriptionGroup
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 04/30/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMASubscriptionGroup
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

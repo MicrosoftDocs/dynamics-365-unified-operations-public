@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Print a sales invoice in the United Arab Emirates layout
-description: This article includes country/region-specific information about how to print a sales invoice in the United Arab Emirates (UAE) layout.
+description: Learn about country/region-specific information about how to print a sales invoice in the United Arab Emirates (UAE) layout.
 author: liza-golub
-ms.date: 06/07/2023
+ms.author: egolub
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
+ms.reviewer: johnmichalak
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-
 ms.search.region: United Arab Emirates (UAE)
-# ms.search.industry: 
-ms.author: liza-golub
 ms.search.validFrom: 2017-06-30
+ms.search.form:
 ms.dyn365.ops.version: July 2017 update
-
 ---
 
 # Print a sales invoice in the United Arab Emirates layout
@@ -37,4 +27,4 @@ To achieve consistent printout results, set up other data in the system so that 
 
 The following illustration shows an example of the printout for a free text invoice.
 
-[![Example of a free text invoice printout.](../media/uae_vat_15.jpg)](/media/uae_vat_15.jpg)
+[![Example of a free text invoice printout.](../media/uae_vat_15.jpg)]

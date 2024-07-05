@@ -1,12 +1,13 @@
 ---
 title: X++ runtime function resources
-description: This article describes the X++ run-time functions.
+description: Learn about the X++ run-time functions, including a table that outlines descriptions for various categories and functions.
 author: josaw1
-ms.date: 07/23/2019
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 07/23/2019
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

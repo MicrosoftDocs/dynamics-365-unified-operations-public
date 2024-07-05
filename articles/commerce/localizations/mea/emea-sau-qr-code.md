@@ -2,12 +2,10 @@
 title: Generate QR codes and print them on receipts for Saudi Arabia
 description: This article provides an overview of the functionality for printing QR codes that is available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 07/05/2023
+ms.date: 02/08/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Saudi Arabia
 ms.search.industry: Retail
 ms.author: josaw
@@ -198,6 +196,27 @@ Follow these steps to create a new extension and add it to your environment.
     </Project>
     ```
 
+    # [Commerce 10.0.38 and later](#tab/commerce-10-0-38)
+
+    For information on the availability of the change, see [Details for issue 871646](https://fix.lcs.dynamics.com/Issue/Details?bugId=871646&dbType=3).
+
+
+    ```xml
+    <Project Sdk="Microsoft.NET.Sdk">
+        <PropertyGroup>
+            <TargetFramework>netstandard2.0</TargetFramework>
+            <AssemblyName>$(AssemblyNamePrefix).Commerce.Runtime.QrCodeExtension</AssemblyName>
+            <RootNamespace>Contoso.Commerce.Runtime.QrCodeExtension</RootNamespace>
+        </PropertyGroup>
+
+        <ItemGroup>
+            <PackageReference Include="Microsoft.Dynamics.Commerce.Runtime.Framework" Version="$(FrameworkRepoPackagesVersion)" />
+            <PackageReference Include="Microsoft.Dynamics.Commerce.Runtime.Services.Messages" Version="$(ChannelRepoPackagesVersion)" />
+            <PackageReference Include="Microsoft.Dynamics.Commerce.Runtime.Localization.Services.Messages" Version="$(ChannelRepoPackagesVersion)" />
+            <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+        </ItemGroup>
+    </Project>
+    ```
     ---
 
 1. Use the following code, based on your Commerce version, to create an extension class.
@@ -486,6 +505,61 @@ Follow these steps to create a new extension and add it to your environment.
     }
     ```
 
+    # [Commerce 10.0.38 and later](#tab/commerce-10-0-38)
+
+    ```C#
+    /**
+     * SAMPLE CODE NOTICE
+     * 
+     * THIS SAMPLE CODE IS MADE AVAILABLE AS ISMICROSOFT MAKES NO WARRANTIES, WHETHER EXPRESS OR IMPLIED,
+     * OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY OR COMPLETENESS OF RESPONSES, OF RESULTS, OR CONDITIONS OF MERCHANTABILITY.
+     * THE ENTIRE RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS SAMPLE CODE REMAINS WITH THE USER.
+     * NO TECHNICAL SUPPORT IS PROVIDED. YOU MAY NOT DISTRIBUTE THIS CODE UNLESS YOU HAVE A LICENSE AGREEMENT WITH MICROSOFT THAT ALLOWS YOU TO DO SO.
+     */
+    namespace Contoso
+    {
+        namespace Commerce.Runtime.QrCodeExtension
+        {
+            using System;
+            using System.Collections.Generic;
+            using System.Drawing.Imaging;
+            using System.Threading.Tasks;
+            using Microsoft.Dynamics.Commerce.Runtime;
+            using Microsoft.Dynamics.Commerce.Runtime.DataServices.Messages;
+            using Microsoft.Dynamics.Commerce.Runtime.Localization.Services.Messages;
+            using Microsoft.Dynamics.Commerce.Runtime.Messages;
+
+            /// <summary>
+            /// The extension for QR code printing.
+            /// </summary>
+            internal class QrCodeServiceExtension : IRequestTriggerAsync
+            {
+                /// <inheritdoc/>
+                public IEnumerable<Type> SupportedRequestTypes
+                {
+                    get => new[] { typeof(EncodeQrCodeServiceRequest) };
+                }
+
+                /// <inheritdoc/>
+                public Task OnExecuting(Request request)
+                {
+                    if (request is EncodeQrCodeServiceRequest encodeQrCodeServiceRequest)
+                    {
+                        encodeQrCodeServiceRequest.ImageFormat = ImageFormat.Bmp;
+                    }
+
+                    return Task.CompletedTask;
+                }
+
+                /// <inheritdoc/>
+                public Task OnExecuted(Request request, Response response)
+                {
+                    return Task.CompletedTask;
+                }
+            }
+        }
+    }
+    ```
     ---
 
 1. In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder, add the following lines to the **composition** section.

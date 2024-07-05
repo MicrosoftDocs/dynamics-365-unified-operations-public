@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up sales tax reporting codes
-description: The Sales tax reporting codes refer to a field number that's listed on a sales tax report.  
+description: The Sales tax reporting codes refer to a field number that's listed on a sales tax report. Learn about the process of setting up sales tax reporting codes.
 author: twheeloc
-ms.date: 08/08/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: TaxReportCollection   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/08/2019
+ms.custom:
+ms.reviewer: twheeloc  
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: TaxReportCollection 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up sales tax reporting codes
 
 [!include [banner](../../includes/banner.md)]

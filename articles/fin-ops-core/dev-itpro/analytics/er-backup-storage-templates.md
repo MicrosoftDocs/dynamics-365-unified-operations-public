@@ -2,18 +2,16 @@
 title: Backup storage of ER templates
 description: This article explains how to use the Electronic reporting (ER) backup storage for recovery of templates.
 author: kfend
+ms.author: filatovm
 ms.date: 04/29/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
-ms.reviewer: kfend
 ms.search.region: Global
-ms.author: filatovm
 ms.search.validFrom: 2019-08-13
+ms.search.form: ERWorkspace, ERSolutionTable
 ms.dyn365.ops.version: 10.0.5
 ms.assetid: 
-ms.search.form: ERWorkspace, ERSolutionTable
 ---
 
 # Backup storage of ER templates

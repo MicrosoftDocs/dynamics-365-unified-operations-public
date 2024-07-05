@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Specify how to dispose of returned items 
-description: Specify how to dispose of returned items.
-author: sorenva
-ms.date: 05/07/2018
+description: Learn how to specify how to dispose of returned items, including a table that defines and provides common codes for various disposition types.
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: InventQuarantineOrder
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 05/07/2018
 ms.custom: 
-ms.assetid: 
+ms.reviewer: kamaybac
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
 ms.search.validFrom: 2016-02-28
+ms.search.form: InventQuarantineOrder
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
@@ -123,7 +111,6 @@ You can define any disposition codes that you need in order to support the busin
 </tbody>
 </table>
 
-
 For each disposition code that you define, you must select a disposition action. The disposition action determines the physical and financial implications of the disposition codes. For example, the disposition action determines the physical handling of the returned item, the financial effect of the returned item, and if a replacement item must be sent to the customer. You can define an unlimited number of disposition codes according to your business needs, but there are only six predefined disposition actions that you can select from. The following table provides the disposition actions and their definitions.
 
 <table>
@@ -172,8 +159,7 @@ For each disposition code that you define, you must select a disposition action.
 
 ## See also
 
-[Quarantine order (form)](/dynamicsax-2012//quarantine-order-form)
-
-[Disposition codes (form)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))
+- [Quarantine order (form)](/dynamicsax-2012//quarantine-order-form)
+- [Disposition codes (form)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

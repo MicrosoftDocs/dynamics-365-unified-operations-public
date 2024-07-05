@@ -1,15 +1,15 @@
 ---
 title: Run custom X++ scripts with zero downtime
-description: This article describes how to upload and run deployable packages that contain custom X++ scripts without having to suspend your system.
-author: AndersGirke
-ms.date: 12/16/2021
+description: Learn how to upload and run deployable packages that contain custom X++ scripts without having to suspend your system.
+author: AndersEvenGirke
+ms.author: aevengir
 ms.topic: article
-ms.search.form:
+ms.date: 12/16/2021
 audience: Developer
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: aevengir
 ms.search.validFrom: 2021-12-16
+ms.search.form:
 ms.dyn365.ops.version: 10.0.25
 ---
 

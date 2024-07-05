@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Cancel service orders  
 description: You can cancel a service order or service order line from the service order itself, or you can cancel multiple service orders by running a periodic job.
-author: sorenva
-ms.date: 01/19/2023
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMAServiceOrderTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 01/19/2023
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMAServiceOrderTable
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

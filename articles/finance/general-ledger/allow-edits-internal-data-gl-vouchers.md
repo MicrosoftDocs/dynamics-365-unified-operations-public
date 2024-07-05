@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Allow edits to internal data on general ledger vouchers
-description: This article provides information about how to edit internal data on general ledger vouchers.
+description: Learn about how to edit internal data on general ledger vouchers, including an outline on auditing trails of voucher edits.
 author: kweekley
-ms.date: 08/01/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 08/01/2022
+ms.custom:
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-08-01
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.29
-
 ---
 
 # Allow edits to internal data on general ledger vouchers

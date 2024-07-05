@@ -1,20 +1,19 @@
 ---
 title: Trigger dual-write for mapped fields
-description: This article explains the dual-write triggering behavior for mapped fields.
-author: RamaKrishnamoorthy 
-ms.date: 12/22/2022
-ms.topic: article
-audience: Developer
-ms.reviewer: johnmichalak
-ms.search.region: Global
+description: Learn about the dual-write triggering behavior for mapped fields, outlining how dual-write platform core plugins will be triggered.
+author: RamaKrishnamoorthy
 ms.author: ramasri
+ms.topic: article
+ms.date: 12/22/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2022-12-21
 ---
 
 # Trigger dual-write for mapped fields
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 Today when a table participating in dual-write gets updated, the dual-write platform core plugins are triggered regardless of whether the updated table field is participating in dual-write map or not. As a result, there are performance issues due to redundant call overhead against dual-write tables.  
 

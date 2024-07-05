@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Hazardous materials inquiries and reports
-description: This article explains how to work with the various reports that are related to hazardous materials. Many of these reports are required so that you remain compliant with various hazardous material regulations during shipping and storage.
+description: Learn how to work with the various reports that are related to hazardous materials, including an outline and process on setting up hazardous materials reporting.
 author: t-benebo
-ms.date: 06/10/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
+ms.topic: article
+ms.date: 06/10/2020
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-06-10
+ms.search.form:
 ms.dyn365.ops.version: 10.0.11
 ---
 

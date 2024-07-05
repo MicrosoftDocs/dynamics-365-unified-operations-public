@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Unit of measure conversion per product variant
-description: This article explains how to set up unit of measure conversions for product variants. It includes an example of the setup.
+description: Learn how to set up unit of measure conversions for product variants, including outlines on setting up a product for unit conversion per variant.
 author: t-benebo
-ms.date: 05/11/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: UnitOfMeasureConversion
-ROBOTS: noindex, nofollow
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: benebotg
+ms.topic: article
+ms.date: 05/11/2020
+ms.custom:
+ms.reviewer: kamaybac 
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2019-04-01
+ms.search.form: UnitOfMeasureConversion
 ms.dyn365.ops.version: 10.0
-
 ---
 
 # Unit of measure conversion per product variant

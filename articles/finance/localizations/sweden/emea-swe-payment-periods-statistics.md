@@ -1,18 +1,16 @@
 ---
 title: Report statistics of vendor payment periods
-description: This article explains how to set up and generate the statistics of vendor payment periods that are required in Sweden.
+description: Learn how to set up and generate the statistics of vendor payment periods that are required in Sweden with an outline on calculating vendor payment statistics.
 author: AdamTrukawka
-ms.date: 09/20/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: APAC
 ms.author: atrukawk
+ms.topic: article
+ms.date: 09/20/2023
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: APAC
 ms.search.validFrom: 2023-09-12
-ms.dyn365.ops.version: 
 ms.search.form: 
+ms.dyn365.ops.version: 
 ---
 
 # Report statistics of vendor payment periods

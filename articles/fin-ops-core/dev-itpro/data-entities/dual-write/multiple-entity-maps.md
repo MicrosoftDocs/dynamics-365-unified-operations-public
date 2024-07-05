@@ -1,13 +1,13 @@
 ---
 title: Manage multiple table maps
-description: This article describes how to select table maps, list dependent table maps, enable the table maps and all of its related tables, and copy pre-existing data.
+description: Learn how to select table maps, list dependent table maps, enable the table maps and all of its related tables, and copy pre-existing data.
 author: nhelgren
-ms.date: 08/12/2020
-ms.topic: article
-audience: Developer
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: nhelgren
+ms.topic: article
+ms.date: 08/12/2020
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2020-08-10
 ms.dyn365.ops.version: AX 7.0.0
 ---

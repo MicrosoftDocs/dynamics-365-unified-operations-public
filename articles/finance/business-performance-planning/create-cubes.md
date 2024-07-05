@@ -1,37 +1,25 @@
 ---
-# required metadata
-
 title: Business performance planning cubes
-description: This article describes cubes in the Business performance planning application.
+description: Learn about cubes in the Business performance planning application, including outlines on key terms, creating and using cubes, and loading fact data.
 author: ShielaSogge
-ms.date: 12/08/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-
-# ms.tgt_pltfrm: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: article
+ms.date: 12/08/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2023-12-03
+ms.search.form: 
 ms.dyn365.ops.version: Human Resources
-
 ---
+
 # Business performance planning cubes
 
 [!include [banner](../includes/banner.md)]
 
 ## Key terms
 
-A cube is a dimension. It's made up of fact data that's used for modeling and analytical purposes. The dimensions in a cube are descriptors that define the facts. They're typically how you want to slide and view fact data. Common dimensions are people, product, place, and time. A dimension consists of one or more columns. For example, a time dimension might contain the date, month, year, and other aggregation details or attributes. These columns can be used to analyze the transactions. They can also be used to create a hierarchical structure that lets you drill down from Year to Month to Date.
+A cube is a collection of dimensions and fact data. It's made up of fact data that's used for modeling and analytical purposes. The dimensions in a cube are descriptors that define the facts. They're typically how you want to slice and view fact data. Common dimensions are people, product, place, and time. A dimension consists of one or more columns. For example, a time dimension might contain the date, month, year, and other aggregation details or attributes. These columns can be used to analyze the transactions. They can also be used to create a hierarchical structure that lets you drill down from Year to Month to Date.
 
 The fact data in a cube is made up of numeric values that can be aggregated and analyzed. Facts are the fundamental reason for defining a cube. Examples of fact data include sales invoices, production costs, or salaries and wages.
 

@@ -1,15 +1,15 @@
 ---
 title: Country of origin
-description: Many organizations issue certificates to their vendors to ensure that products meet specific certification standards. These certificates often depend on the country/region of origin. This article provides information about the country of origin feature, which lets you link a product to its country/region of origin and keep track of its product certifications.
+description: Learn about the country of origin feature, which lets you link a product to its country/region of origin and keep track of its product certifications.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form:  COOVendorCerts
 ms.topic: how-to
 ms.date: 11/20/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:  COOVendorCerts
 ---
 
 # Country of origin

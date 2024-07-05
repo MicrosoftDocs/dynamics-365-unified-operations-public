@@ -7,9 +7,6 @@ author: priyankasinha77
 ms.author: prsinha
 ms.date: 8/22/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 

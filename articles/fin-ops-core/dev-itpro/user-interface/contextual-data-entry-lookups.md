@@ -1,15 +1,13 @@
 ---
 title: Contextual data entry for lookups
-description: This article explains how contextual data entry works and provides implementation details and tips for developers who want their lookups to have this behavior.
+description: Learn about how contextual data entry works, including implementation details and tips for developers who want their lookups to have this behavior.
 author: jasongre
-ms.date: 03/07/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 03/07/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 5c41c565-5f83-47f9-a75e-ca5bb4b062e7

@@ -1,13 +1,13 @@
 ---
 title: Development system requirements
-description: This article lists the system requirements for development.
-author: gianugo
-ms.date: 06/20/2017
+description: Learn about the system requirements for development, which can be hosted locally or in Microsoft Azure. System requirements are provided for both environments.
+author: josaw1
+ms.author: josaw
 ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: f39dbe39-7dc3-463c-923e-f22af231b979

@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Modify row definition cells
-description: This article describes the information that is required for each cell in a row definition on a financial report and explains how to enter that information.
+description: Learn about what is required for each cell in a row definition on a financial report and understand how to enter that information.
 author: aprilolson
-ms.date: 08/11/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: FinancialReports
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
+ms.topic: article
+ms.date: 05/30/2024
+ms.reviewer: twheeloc
+audience: Application User 
+ms.search.region: Global
 ms.search.validFrom: 2016-11-30
+ms.search.form: FinancialReports
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ---
 
 # Modify row definition cells
@@ -178,7 +166,7 @@ In the **Format code** column in a row definition, the **DES**, **LFT**, **RGT**
 
 In the following example, a user wants to prevent the heading and underscores in the **Total cash** row of their report from being printed, because there was no activity in either of the cash accounts. Therefore, in row 220 (which, as the **---** format code indicates, is a formatting row), in the **Related Formulas/Rows/Units** cell, the user enters **250**, which is the row code of the amount row that the user wants to suppress.
 
-[![RelatedRowsRowDefinition.](../../dev-itpro/analytics/media/relatedrowsrowdefinition-1024x144.png)](/media/relatedrowsrowdefinition.png)
+![RelatedRowsRowDefinition.](../../dev-itpro/analytics/media/relatedrowsrowdefinition-1024x144.png)
 
 ## Select the base row for a column calculation
 In relational reporting, you assign one or more base rows in the row definition by using the **CBR** (change base row) format code. A base row is then referenced by a calculation in the column definition. Here are some typical examples of CBR calculations:
@@ -211,15 +199,15 @@ In a column definition, the **CALC** column type indicates a column that specifi
 
 In the following example of a row definition, row 100 shows that the base row for calculations is row 280.
 
-[![Example of base row calculation.](../../dev-itpro/analytics/media/cbrrowdefinition.png)](/media/cbrrowdefinition.png)
+![Example of base row calculation.](../../dev-itpro/analytics/media/cbrrowdefinition.png)
 
 In the following example of a column definition, the calculations use the **CBR** format code. The calculation in column C divides the value in column B of the report by the value in row 280 of column B. The format override in column B prints the result of the calculation as a percentage. Similarly, each amount in column E is the amount in column D as a percentage of net sales.
 
-[![Column definition example.](../../dev-itpro/analytics/media/cbrcolumndefinition2.png)](/media/cbrcolumndefinition2.png)
+![Column definition example.](../../dev-itpro/analytics/media/cbrcolumndefinition2.png)
 
 The following example shows a report that might be generated based on the previous calculations.
 
-[![Example report based on previous example calculations.](../../dev-itpro/analytics/media/cbrreport-1024x272.png)](/media/cbrreport.png)
+![Example report based on previous example calculations.](../../dev-itpro/analytics/media/cbrreport-1024x272.png)
 
 ## Select a sorting code for a row definition
 Sorting codes sort accounts or values, sort an actual or budget variance report by the largest variance, or sort the row descriptions alphabetically. The following sorting codes are available:
@@ -395,7 +383,6 @@ The **Link to financial dimensions** cell contains links to the financial data t
 | Link type that is selected       | The description of the Link column changes to this |
 |----------------------------------|----------------------------------------------------|
 | Financial Dimensions             | Link to Financial Dimensions                       |
-| Report Worksheet                 | Financial Reporting Report                         |
 
 ### Specify a dimension or range
 

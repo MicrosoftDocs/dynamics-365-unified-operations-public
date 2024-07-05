@@ -1,21 +1,20 @@
 ---
 title: Set up master data for inclusion of deductible expenses for multiple posting layers
-description: This procedure walks you through creating fixed asset rules with required master data for inclusion of deductible expenses for multiple posting layers.
+description: Learn about creating fixed asset rules with required master data for inclusion of deductible expenses for multiple posting layers.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: 
   - AssetAdvancedRule_JP, AssetAdvancedRuleCreateEdit_JP
   - AssetBookTable
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Set up master data for inclusion of deductible expenses for multiple posting layers
 
 [!include [banner](../../includes/banner.md)]

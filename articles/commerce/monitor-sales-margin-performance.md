@@ -6,9 +6,6 @@ description: You can monitor sales and margin performance in real time using Dyn
 author: ashishmsft
 ms.date: 06/20/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: RetailSales

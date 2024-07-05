@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Import postal codes for Japan
-description: This article explains how to import postal codes for Japan.
+description: Learn how to import postal codes for Japan, including outlines and step-by-step processes for preparing the ZIP code files and creating data import projects.
 author: EricWangChen
-ms.date: 11/22/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: DirPartyTable
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Japan
-# ms.search.industry: 
 ms.author: wangchen
+ms.topic: article
+ms.date: 11/22/2019
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2017-06-30
+ms.search.form: DirPartyTable
 ms.dyn365.ops.version: July 2017 update
-
 ---
 
 # Import postal codes for Japan

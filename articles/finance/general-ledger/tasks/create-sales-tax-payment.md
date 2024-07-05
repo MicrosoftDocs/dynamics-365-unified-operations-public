@@ -1,28 +1,16 @@
 --- 
-# required metadata 
- 
 title: Create a sales tax payment
 description: The settle and post sales tax job procedure settles sales tax balances on the sales tax accounts and offsets them to the sales tax settlement account for a given period. 
-author: twheeloc
-ms.date: 01/04/2022
+author: liza-golub
+ms.author: egolub
+ms.date: 06/27/2024
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: Dialog   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.custom: 
+  - bap-template 
+ms.reviewer: johnmichalak
+
 ---
+
 # Create a sales tax payment
 
 [!include [banner](../../includes/banner.md)]
@@ -30,9 +18,13 @@ ms.dyn365.ops.version: Version 7.0.0
 The settle and post sales tax job procedure settles sales tax balances on the sales tax accounts, and offsets them to the sales tax settlement account for a given period.
 
 1. Go to **Tax > Declarations > Sales tax > Settle and post sales tax**.
-2. In the **Settlement period** field, select the drop-down button to open the lookup.
-3. In the list, click the link in the selected row.
+2. In the **Settlement period** field, select the dropdown button to open the lookup.
+3. In the list, select the link in the selected row.
 4. In the **From date** field, enter a date. If you don't select the **Include corrections** option on the **General ledger parameters** page, the settlement can be processed for different versions. **Original** is the first settlement for a period interval and can be processed only once for a period interval. The latest corrections will settle sales tax transactions, which have been posted after the original version has been created.
+
+    > [!NOTE]
+    > You can make the **Include corrections** option available on the **Sales tax settlement periods** page by enabling the **Enable "Include corrections" option on Sales tax settlement periods** feature in the **Feature management** workspace. The **Include corrections** option affects the sales tax settlement process and periodic sales tax reporting. It lets you control the **Include corrections** option for each sales tax settlement period instead of the whole legal entity.
+
 5. In the **Transaction date** field, enter a date.
 6. Select **OK**. The **Sales tax payments** report is printed to review the settled sales tax transactions in the period.
 

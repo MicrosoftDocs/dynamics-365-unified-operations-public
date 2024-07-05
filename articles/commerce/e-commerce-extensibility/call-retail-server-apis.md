@@ -4,8 +4,6 @@ description: This article explains how to call application programming interface
 author: samjarawan
 ms.date: 09/21/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

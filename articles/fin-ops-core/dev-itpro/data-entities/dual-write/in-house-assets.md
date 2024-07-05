@@ -1,13 +1,13 @@
 ---
 title: In-house assets for servicing
-description: This article describes how you can use Microsoft Dynamics 365 Field Service to service both customer assets and in-house assets.
+description: Learn about how you can use Microsoft Dynamics 365 Field Service to service both customer assets and in-house assets.
 author: RamaKrishnamoorthy
-ms.date: 01/27/2020
-ms.topic: article
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: global
 ms.author: ramasri
+ms.topic: article
+ms.date: 01/27/2020
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: global
 ms.search.validFrom: 2020-01-27
 ---
 

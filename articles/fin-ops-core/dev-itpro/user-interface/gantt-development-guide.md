@@ -1,15 +1,13 @@
 ---
 title: Gantt control development guide
-description: This article describes how to create new forms by using the Gantt control.
+description: Learn about how to create new forms by using the Gantt control, including overviews of working times, color use, and interactions.
 author: josaw1
-ms.date: 11/10/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 11/10/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: e5cd372c-6ac2-4995-bb3c-ff863b40fedb

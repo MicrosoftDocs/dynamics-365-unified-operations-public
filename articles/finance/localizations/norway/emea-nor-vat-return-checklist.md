@@ -1,15 +1,13 @@
 ---
 title: Checklist for Electronic messages setup for VAT returns with direct submission to Altinn
-description: This article contains a checklist for setting up Electronic messages functionality for VAT returns of Norway.
+description: Access a checklist for setting up Electronic messages functionality for VAT returns of Norway, including an outline on web applications.
 author: AdamTrukawka
-ms.date: 12/13/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Norway
 ms.author: atrukawk
+ms.topic: article
+ms.date: 02/09/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Norway
 ms.search.validFrom: 2021-11-18
 ms.dyn365.ops.version: AX 10.0.22
 ---
@@ -40,13 +38,13 @@ Although this article includes the most important information about the setup, i
     | NO Altinn | Web application for interoperation with Altinn application programming interfaces (APIs). |
     | NO ID-Porten | Web application for interoperation with the integration point that you created in ID-porten. |
 
-The following table shows the web application parameters that the **NO VAT return** processing uses to interoperate with the *sandbox APIs* that the Norwegian Tax Administration provides.
+The following table shows the web application parameters that the **NO VAT return** processing uses to interoperate with the ***sandbox APIs*** that the Norwegian Tax Administration provides.
 
 | Parameter | Value for NO Altinn | Value for NO ID-Porten |
 |---|---|---|
-| Base URL | `https://platform.tt02.altinn.no/authentication/api/v1/exchange/id-porten` | `https://oidc-ver2.difi.no/idporten-oidc-provider` |
-| Authorization URL path | Blank | **/authorize** |
-| Token URL path | Blank | **/token** |
+| Base URL | `https://platform.tt02.altinn.no/authentication/api/v1/exchange/id-porten` | **Blank** |
+| Authorization URL path | Blank | `https://login.test.idporten.no/authorize` |
+| Token URL path | Blank | `https://test.idporten.no/token` |
 | Redirect URL | Blank | Set up the value according to the information in [Set up the internet address of ID-porten and Altinn web services](emea-nor-vat-return-setup.md#internet-address). |
 | Authorization format mapping | **Altinn VAT authorization format (NO)** | **Altinn VAT authorization format (NO)** |
 | Import token model mapping | **Altinn VAT import Altinn token format (NO)** | **Altinn VAT import ID-Porten token format (NO)** |
@@ -56,7 +54,7 @@ The following table shows the web application parameters that the **NO VAT retur
 > [!IMPORTANT]
 > To enable access to the access token and interoperation with ID-porten and Altinn APIs for business users, you must define security roles for both web applications.
 
-Internet addresses (base URLs) are subject to change by the Norwegian Tax Administration. We recommend that you check for actual internet addresses on the official Altinn and ID-porten website. For actual internet addresses of the **NO ID-Porten** web application, go to <https://docs.digdir.no/oidc_func_wellknown.html>.
+Internet addresses (base URLs, Authorization URL path, and Token URL path) are subject to change by the Norwegian Tax Administration. We recommend that you check for actual internet addresses on the official Altinn and ID-porten website. For actual internet addresses of the sandbox setup of the **NO ID-Porten** web application, go to <https://test.idporten.no/.well-known/openid-configuration>. For the production setup of the **NO ID-Porten** web application, go to <https://idporten.no/.well-known/openid-configuration>.
 
 ## Web service settings
 

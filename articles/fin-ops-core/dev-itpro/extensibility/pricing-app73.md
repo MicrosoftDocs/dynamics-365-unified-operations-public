@@ -1,18 +1,15 @@
 ---
 title: Price and discount extensibility
-description: This article describes how to extend pricing functionality.
+description: Learn about how to extend pricing functionality, including overviews of the PriceType and PriceGroupType enums and PriceDisc class.
 author: smithanataraj
-ms.date: 12/21/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: smnatara
+ms.topic: article
+ms.date: 12/21/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2017-12-10
 ms.dyn365.ops.version: Platform update 11
-ms.assetid: 
 ---
 
 # Price and discount extensibility

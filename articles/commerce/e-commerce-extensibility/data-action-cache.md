@@ -4,8 +4,6 @@ description: This article provides an overview of supported data action cache op
 author: samjarawan
 ms.date: 10/16/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

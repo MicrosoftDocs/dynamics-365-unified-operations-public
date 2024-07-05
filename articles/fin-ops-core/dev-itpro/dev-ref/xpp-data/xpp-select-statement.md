@@ -1,12 +1,13 @@
 ---
 title: Select statement
-description: This article describes the select statement in the X++ language.
+description: Learn about select statements in the X++ language, including examples for select, insert, update, and delete statements, including a syntax table.
 author: josaw1
-ms.date: 08/27/2021
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 08/27/2021
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -45,7 +46,7 @@ The following example inserts a new record into the CustTable table. The **Accou
 ```xpp
 ttsBegin;
     CustTable custTable;
-    select forUpdate custTable;
+    custTable.initValue();
     custTable.AccountNum = '2000';
     custTable.CustGroup = '1';
     custTable.insert();

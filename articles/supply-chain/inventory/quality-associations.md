@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Quality associations
-description: This article describes how you can use quality associations in Microsoft Dynamics 365 Supply Chain Management to automatically generate quality orders that are related to your sales, purchase, inbound shipment order, and production processes.
-author: yufeihuang
-ms.date: 03/23/2021
+description: Learn how you can use quality associations in Microsoft Dynamics 365 Supply Chain Management to automatically generate quality orders related to your sales.
+author: yufei-huang
+ms.author: yufeihuang
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-ms.search.form: InventTestAssociationTable, WHSConsigner, WHSConsignerGroup
-# ROBOTS:
-audience: Application User
-# ms.devlang:
+ms.date: 03/23/2021
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
 ms.search.validFrom: 2020-06-18
+ms.search.form: InventTestAssociationTable, WHSConsigner, WHSConsignerGroup
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ---
 
 # Quality associations

@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up electronic signatures
-description: Use this procedure to set up electronic signatures. 
-author: maertenm
-ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: SysConfiguration, SIGParameters, SIGReasonCode, SIGProcSetup   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: sericks
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about how to set up electronic signatures, including an outline on how to enable the electronic signature configuration key.
+author: sericks007
 ms.author: sericks
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: SysConfiguration, SIGParameters, SIGReasonCode, SIGProcSetup
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up electronic signatures
 
 [!include [banner](../../includes/banner.md)]

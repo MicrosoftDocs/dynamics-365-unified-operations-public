@@ -4,23 +4,14 @@
 title: What's new and changed in Dynamics 365 Commerce 10.0.16 (February 2021)
 description: This article describes features that are either new or changed in Dynamics 365 Commerce 10.0.16. 
 author: josaw1
-ms.date: 11/20/2020
+ms.date: 04/12/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.custom:
+  - bap-template
+  - evergreen
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: josaw
 ms.search.validFrom: 2020-11-30 
 ms.dyn365.ops.version: 10.0.16

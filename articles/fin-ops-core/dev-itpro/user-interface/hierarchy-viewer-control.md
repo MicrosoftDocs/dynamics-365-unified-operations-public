@@ -1,13 +1,13 @@
 ---
 title: HierarchyViewer control
-description: This article describes the HierarchyViewer control, which lets you represent hierarchical relationships for people, products, or organizations.
+description: Learn about the HierarchyViewer control, which lets you represent hierarchical relationships for people, products, or organizations.
 author: jasongre
-ms.date: 08/25/2021
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 08/25/2021
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

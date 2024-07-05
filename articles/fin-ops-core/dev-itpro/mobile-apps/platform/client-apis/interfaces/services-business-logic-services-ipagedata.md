@@ -1,12 +1,13 @@
 ---
 title: PageData type
-description: Represents the data that is loaded into a page.
+description: Learna bout the PageData type, which represents the data that is loaded into a page and includes the getControlValue and setControlValue methods.
 author: jasongre
-ms.date: 05/24/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # PageData type

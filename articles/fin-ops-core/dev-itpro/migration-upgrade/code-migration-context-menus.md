@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Code migration - Context menu code
-description: This article provides details about the programming model that is required for context menus (shortcut menus).
+description: Learn about details about the programming model that is required for context menus, including an overview on migrating context menu code.
 author: jasongre
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: 8f3b62f2-4de6-4ea3-b3e6-1101d0fe308e
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 8f3b62f2-4de6-4ea3-b3e6-1101d0fe308e
 ---
 
 # Code migration - Context menu code

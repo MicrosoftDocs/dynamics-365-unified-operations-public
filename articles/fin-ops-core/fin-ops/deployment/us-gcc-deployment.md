@@ -1,15 +1,13 @@
 ---
-# required metadata
-
 title: Dynamics 365 Finance and Supply Chain Management in US Government Community Cloud (GCC)
-description: This article provides information about Microsoft Dynamics 365 US Government products that are available to qualified government and private entities.
+description: Learn about Microsoft Dynamics 365 US Government products that are available to qualified government and private entities.
 author: hasaid
-ms.date: 11/12/2021
-ms.topic: article
-audience: Application User
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: hasaid
+ms.topic: article
+ms.date: 11/12/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-11-09
 ---
 

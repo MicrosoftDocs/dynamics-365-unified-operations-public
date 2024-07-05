@@ -1,15 +1,13 @@
 ---
 title: Patch SQL Server Reporting Services (SSRS) in one-box environments
-description: Apply SSRS hotfixes to a one-box development environment.
-author: RichdiMSFT
-ms.date: 06/20/2017
+description: Learn about the procedure on applying SSRS hotfixes to a one-box development environment, including an overview on patching the reporting service.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: sericks
 ms.search.region: Global
-ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 744bd1dc-d109-40df-a5dd-9db8982523a6

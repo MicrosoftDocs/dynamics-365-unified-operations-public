@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Service object groups 
-description: Object groups are useful for sorting and filtering the data about objects for reports and statistics.
-author: sorenva
-ms.date: 05/11/2018
+description: Object groups are useful for sorting and filtering the data about objects for reports and statistics, including outlines and examples.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMAServiceObjectGroups
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/11/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMAServiceObjectGroups
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Service object groups

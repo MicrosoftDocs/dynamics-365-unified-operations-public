@@ -1,19 +1,16 @@
 ---
 title: Extensibility changes in Finance and Operations update 8.0.1
-description: This article lists the extensibility features that were released in Dynamics 365 for Finance and Operations update 8.0.1.
+description: Learn about the extensibility features that were released in Dynamics 365 for Finance and Operations update 8.0.1.
 author: FrankDahl
-ms.date: 05/17/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: fdahl
+ms.topic: article
+ms.date: 05/17/2018
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2018-05-31
 ms.dyn365.ops.version: App 8.0.1
-ms.custom: 
-ms.assetid: 
 ---
 
 # Extensibility changes in Finance and Operations update 8.0.1

@@ -1,19 +1,16 @@
 ---
 title: Mobile platform resources
-description: The mobile platform lets you create mobile apps for your workspaces.
+description: Learn about mobile platform resources and how you can create mobile apps for your workspaces, including resources for getting started.
 author: jasongre
-ms.date: 05/26/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.collection: get-started
-ms.assetid: 
 ---
 
 # Mobile platform resources
@@ -156,7 +153,7 @@ On Android devices with non-English regions, using a comma as the decimal separa
 If Active Directory Federation Services (ADFS) is in use on the domain and the environment is on-premises, then **ADFS must be configured to provide a regular forms-based authentication screen** instead of using Windows Integrated Authentication (WIA). The finance and operations apps for iOS and Android require the regular forms-based authentication screen. ADFS should be configured to only provide WIA for browser clients (use cases). For more information, see [Configure intranet forms based authentication for devices that do not support WIA](/windows-server/identity/ad-fs/operations/configure-intranet-forms-based-authentication-for-devices-that-do-not-support-wia).
 
 ### Using multi-factor authentication with the finance and operations app
-The finance and operations (Mobile Client) app facilitates user authentication with Azure Active Directory (Azure AD) by presenting the Azure AD sign-in web page within an embedded browser. After a successful sign in, it will retrieve the user token from the cookies and use that when communicating with the user interaction service that it shares with the web client. Some multi-factor authentication mechanisms that involve switching to a different app on the same device will cause the embedded browser to close, so the sign in will fail. The workarounds for this include:
+The finance and operations (Mobile Client) app facilitates user authentication with Microsoft Entra ID by presenting the Microsoft Entra sign-in web page within an embedded browser. After a successful sign in, it will retrieve the user token from the cookies and use that when communicating with the user interaction service that it shares with the web client. Some multi-factor authentication mechanisms that involve switching to a different app on the same device will cause the embedded browser to close, so the sign in will fail. The workarounds for this include:
 
 - Different device - Use a different device for the multi-factor authentication response so the app remains active on the original device.
 - Multi-factor authentication via phone call - Use a phone call for the multi-factor authentication response so an app switch is not needed.
@@ -168,7 +165,7 @@ If there are continued problems with MFA authentication, it is helpful to [submi
 The finance and operations (Mobile Client) app does not have Microsoft Intune policies implemented, so it does not support Intune. Manually adding the app (following [Add iOS store apps to Microsoft Intune](/mem/intune/apps/store-apps-ios)) is also not supported because the device identifier cannot be passed.
 
 ### Trouble signing out of the app and signing in with new credentials
-If you experience trouble signing out of the app and signing in with new credentials, then you might need to "forget old credentials" on the Azure AD sign-in screen.
+If you experience trouble signing out of the app and signing in with new credentials, then you might need to "forget old credentials" on the Microsoft Entra sign-in screen.
 - To sign out of the app, follow these steps:
     - Open the app.
     - Sign out of the app.
@@ -176,12 +173,12 @@ If you experience trouble signing out of the app and signing in with new credent
 - To forget old credentials, follow these steps:
     - Open the app.
     - Connect to the server.
-    - On the Azure AD sign-in screen, if there are saved credentials, select the ellipsis (...) button on that card, and then select **Forget the credential**.
+    - On the Microsoft Entra sign-in screen, if there are saved credentials, select the ellipsis (...) button on that card, and then select **Forget the credential**.
     - Force close the app.
 - To sign in to the app, follow these steps:
     - Open the app.
     - Connect to the server
-    - Sign in using the Azure AD sign-in screen.
+    - Sign in using the Microsoft Entra sign-in screen.
 
 ## Troubleshooting app content
 
@@ -220,4 +217,3 @@ Avoid using forms with these patterns and controls when creating workspace recor
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
-

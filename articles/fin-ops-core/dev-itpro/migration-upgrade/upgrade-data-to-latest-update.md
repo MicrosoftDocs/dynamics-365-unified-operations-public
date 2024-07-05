@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Upgrade data in development or demo environments
-description: This article provides instructions for upgrading your finance and operations application release.
+description: Access instructions for upgrading your finance and operations application release, including an overview on selecting the correct data upgrade deployable package.
 author: laneswenka
-ms.date: 11/01/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: article
+ms.date: 11/01/2021
+ms.custom: 
+ms.reviewer: johnmichalak 
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
+ms.search.form:
 ms.dyn365.ops.version: Platform update 1
-
 ---
 
 # Upgrade data in development or demo environments

@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Cloud deployment overview
-description: This article describes the cloud environment and subscription, who can perform which tasks, and the data and customizations that you need to manage.
+description: Learn about the cloud environment and subscription, who can perform which tasks, and the data and customizations that you need to manage.
 author: LaneSwenka
-ms.date: 02/08/2023
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: overview
+ms.date: 02/08/2023
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: Platform Update 8
-
 ---
 # Cloud deployment overview
 
@@ -181,10 +168,10 @@ A demo environment includes only Microsoft demo data. You can use a demo environ
 To move customizations from a development to a sandbox or production environment, see [Create deployable packages of models](../deployment/create-apply-deployable-package.md)
 
 ### Can I bring my own domain name?
-You can bring your own domain name if it's running Azure Active Directory (Azure AD), and the administrator of your Azure AD instance has enabled the finance and operations apps within their Azure AD. This is usually done through the office email, after you buy a license. When you click the link to accept the offer, Azure AD is set up for you.
+You can bring your own domain name if it's running Microsoft Entra ID, and the administrator of your Microsoft Entra instance has enabled the finance and operations apps within their Microsoft Entra ID. This is usually done through the office email, after you buy a license. When you click the link to accept the offer, Microsoft Entra ID is set up for you.
 
-### Can I add guest Azure AD accounts as users?
-You can add guest Azure AD accounts if you've correctly configured them within Azure AD and enabled the finance and operations apps within your Azure AD. 
+### Can I add guest Microsoft Entra accounts as users?
+You can add guest Microsoft Entra accounts if you've correctly configured them within Microsoft Entra and enabled the finance and operations apps within your Microsoft Entra. 
 
 ### Why am I no longer able to see the Private AOS machines in one or more of my Tier 2 through Tier 5 sandbox environments?
 The Private AOS VMs were part of your environment configuration as they were needed to secure communication between the AOS and BI machines in the past. With recent updates, all communication between AOS and BI machines is secure directly and no longer need the intermediary Private AOS machines. Therefore, we're in the process of rolling out removing the Private AOS machines. As we're removing the machines in batches, you may notice that only some of your environments have the Private AOS machines removed. This change won't impact functionality or security in any way and will be transparent to you.
@@ -234,4 +221,3 @@ For example, when using the global Lifecycle Services endpoint, the project data
 For information about migrating Lifecycle Services project data to a different geography, see [Project migration manager](../lifecycle-services/project-migration-manager.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

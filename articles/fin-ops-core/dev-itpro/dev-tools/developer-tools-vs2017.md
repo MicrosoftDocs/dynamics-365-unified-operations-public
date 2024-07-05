@@ -1,12 +1,12 @@
 ---
 title: Visual Studio requirements for X++
-description: This article lists the Visual Studio components that are required to run the Visual Studio extension for X++.
-author: gianugo
-ms.date: 10/26/2021
+description: Learn about the Visual Studio components that are required to run the Visual Studio extension for X++ with tables that outline requirement statuses for components.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
+ms.date: 06/26/2024
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: josaw
-ms.author: gianura
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -18,16 +18,15 @@ ms.dyn365.ops.version: AX 7.0.0
 This article lists the Visual Studio components that are required to run the **Visual Studio** extension for X++.
 
 > [!NOTE]
-> We do not recommend installing Visual Studio manually on the downloadable virtual hard drive (VHD) or virtual machines deployed from Lifecycle Services (LCS). Instead, we strongly recommend that you download or deploy a new virtual machine. Virtual machines deployed with versions 10.0.13 or later all have Visual Studio and its prerequisites installed, and come with other updates outside of Visual Studio to help keep the machines compatible and secure.
+> We don't recommend installing Visual Studio manually on the downloadable virtual hard drive (VHD) or virtual machines deployed from Lifecycle Services (LCS). Instead, we strongly recommend that you download or deploy a new virtual machine. Virtual machines deployed with versions 10.0.13 or later all have Visual Studio and its prerequisites installed, and come with other updates outside of Visual Studio to help keep the machines compatible and secure.
 
 ## Visual Studio editions
 
 The supported editions of Visual Studio include:
 
-- Visual Studio 2017 Professional
-- Visual Studio 2017 Enterprise
-- Visual Studio 2019 Professional
-- Visual Studio 2019 Enterprise
+- Visual Studio 2022 Professional
+- Visual Studio 2022 Enterprise
+
 
 > [!NOTE]
 > Different Visual Studio editions have different licensing requirements and costs. For more information, see [Visual Studio](https://visualstudio.microsoft.com).

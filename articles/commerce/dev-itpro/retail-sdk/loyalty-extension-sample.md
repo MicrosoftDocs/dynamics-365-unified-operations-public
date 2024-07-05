@@ -4,8 +4,6 @@ description: This article explains how to set up the system so that customers ca
 author: ShalabhjainMSFT
 ms.date: 05/15/2017
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

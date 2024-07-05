@@ -1,36 +1,24 @@
 ---
-# required metadata
-
 title: Platform updates for version 10.0.12 of finance and operations apps (August 2020)
-description: This article lists the features are included in the platform updates for version 10.0.12 of finance and operations apps.
+description: Learn about the features are included in the platform updates for version 10.0.12 of finance and operations apps.
 author: sericks007
-ms.date: 10/15/2021
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 10/15/2021
+ms.custom:
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 
 ms.assetid:
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sericks
 ms.search.validFrom: 2020-05-31
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.12
 
 ---
+
 # Platform updates for version 10.0.12 of finance and operations apps (August 2020)
 
 [!include [banner](../includes/banner.md)]
-
-
 
 This article lists the features that are included in the platform updates for version 10.0.12 of finance and operations apps. (These updates were formerly referred to as *Platform update 36*.) This version has a build number of 7.0.5688 and is available on the following schedule:
 

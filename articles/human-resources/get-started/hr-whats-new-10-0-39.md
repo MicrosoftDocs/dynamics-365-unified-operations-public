@@ -6,8 +6,7 @@ description: This article describes features that are either new or changed in t
 author: twheeloc
 ms.date: 1/19/2024
 ms.topic: faq
-ms.prod: 
-ms.technology: 
+ms.custom: evergreen 
 
 # optional metadata
 
@@ -17,7 +16,6 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -31,7 +29,7 @@ ms.dyn365.ops.version: 10.0.39
 
 [!include [banner](../../includes/preview-banner.md)]
 
-This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.39. This version has a build number of 10.0.1860.18 and is available on the following schedule:
+This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.39. This version has a build number of 10.0.1860.32 and is available on the following schedule:
 
 - **Preview of release:** January 2024
 - **General availability of release (self-update):** March 2024

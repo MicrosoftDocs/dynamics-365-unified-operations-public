@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Apply a payment schedule to the invoice journal
-description: This article describes how to add a payment to the vendor invoice journal.
+description: Learn about how to add and apply a payment to the vendor invoice journal, including an overview on limitations.
 author: sunfzam
-ms.date: 01/31/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: shpandey
+ms.topic: article
+ms.date: 01/31/2022
+ms.reviewer: twheeloc
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-08-30
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.25
-
 ---
 
 # Apply a payment schedule to the invoice journal

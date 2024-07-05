@@ -4,8 +4,6 @@ description: This article describes how to set up and use the extended sign-on f
 author: boycezhu
 ms.date: 01/09/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: global
@@ -20,7 +18,6 @@ ms.search.form: RetailFunctionalityProfile
 # Set up extended sign-in functionality for Store Commerce
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article describes how to set up and use the extended sign-in functionality for the Microsoft Dynamics 365 Commerce Store Commerce app and Store Commerce for web.
 

@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Fixed asset management workspace
-description: This article provides information about the Fixed asset management workspace. This workspace shows information that is related to the fixed assets that are entered in the system. It includes a summary view and an analytics view.
+description: Learn about the Fixed asset management workspace. This workspace shows information that is related to the fixed assets that are entered in the system.
 author: moaamer
-ms.date: 01/12/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  AssetWorkspace
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 01/12/2018
+ms.custom:
+ms.reviewer: kfend
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2017-06-30
+ms.search.form:  AssetWorkspace
 ms.dyn365.ops.version: July 2017 update
-
 ---
 
 # Fixed asset management workspace

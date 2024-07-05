@@ -4,11 +4,8 @@
 title: Manager self service overview
 description: This article provides an overview of the Manager self service workspace.
 author: twheeloc
-ms.date: 03/10/2023
+ms.date: 06/24/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: HRMParameters, EssWorkspace
@@ -21,15 +18,13 @@ ms.collection: get-started
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: ajitchandran
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
 
 ---
 
 # Manager self service overview
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

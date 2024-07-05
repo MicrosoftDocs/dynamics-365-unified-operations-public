@@ -4,8 +4,6 @@ description: This article describes why, when, and how to use fragments in Micro
 author: phinneyridge
 ms.date: 02/03/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

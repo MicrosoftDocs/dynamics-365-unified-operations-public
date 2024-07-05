@@ -1,12 +1,12 @@
 ---
 title: Create customer and vendor records with an address in Guatemala
-description: This article explains how to set up records for customers and vendors in Guatemala.
+description: Learn how to set up records for customers and vendors in Guatemala, including prerequisites and an outline on creating a record for a customer.
 author: Cpicon85
-ms.date: 12/07/2023
-ms.topic: Article
-ms.reviewer: kfend
 ms.author: v-cpicon
+ms.topic: article
+ms.date: 12/07/2023
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Create customer and vendor records with an address in Guatemala

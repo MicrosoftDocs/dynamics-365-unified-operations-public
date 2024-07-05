@@ -1,18 +1,16 @@
 ---
 title: EU Entry certificates
-description: This article provides information about European Union (EU) entry certificates.
+description: Learn about European Union (EU) entry certificates, including prerequisites and technical information for system administrators.
 author: mrolecki
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: mrolecki
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.search.form: CustEntryCertificateJour_W, CustParameters, CustTable, SalesTable
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # EU entry certificates

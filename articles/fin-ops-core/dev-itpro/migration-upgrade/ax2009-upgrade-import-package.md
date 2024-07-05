@@ -1,15 +1,13 @@
 ---
 title: AX 2009 migration - Import packages
-description: This article explains how to import a migrated data package from Microsoft Dynamics AX 2009 into finance and operations.
+description: Learn about how to import a migrated data package from Microsoft Dynamics AX 2009 into finance and operations.
 author: sericks007
-ms.date: 09/13/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
+ms.topic: article
+ms.date: 09/13/2018
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
 ---

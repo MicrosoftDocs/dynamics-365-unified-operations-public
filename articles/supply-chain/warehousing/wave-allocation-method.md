@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Wave allocation
-description: This article describes how to set up the wave allocation step, including how to enable parallel processing for it.
+description: Learn how to set up the wave allocation step, including how to enable parallel processing for it, including an outline on performance enhancements.
 author: Mirzaab
-ms.date: 03/08/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
+ms.topic: article
+ms.date: 03/08/2021
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-03-08
+ms.search.form:
 ms.dyn365.ops.version: 10.0.18
 ---
 

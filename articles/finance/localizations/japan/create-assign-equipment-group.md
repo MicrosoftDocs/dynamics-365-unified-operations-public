@@ -1,19 +1,18 @@
 ---
 title: Create and assign an equipment group
-description: Use this procedure to learn how to create an equipment group and configure an equipment group it to a fixed asset.
+description: Learn how to create an equipment group and configure an equipment group it to a fixed asset, including a step-by-step process on creating equipment groups.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: AssetAcceleratedDepEquipmentGroup_JP, AssetTable
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Create and assign an equipment group
 
 [!include [banner](../../includes/banner.md)]

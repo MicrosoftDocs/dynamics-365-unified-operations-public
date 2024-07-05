@@ -6,9 +6,6 @@ description: This article covers how to connect peripherals to your Retail POS.
 author: BrianShook
 ms.date: 01/30/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: RetailTerminalTable, RetailDevice

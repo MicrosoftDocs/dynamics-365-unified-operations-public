@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Enable change management on existing products
-description: This article explains how you can enable change management for existing products. It also describes cases where your ability to enable change management is limited.
+description: Learn how you can enable change management for existing products, with a description on cases where your ability to enable change management is limited.
 author: t-benebo
-ms.date: 02/05/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
+ms.topic: article
+ms.date: 02/05/2021
+ms.custom: 
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-05-02
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.17
 ---
 

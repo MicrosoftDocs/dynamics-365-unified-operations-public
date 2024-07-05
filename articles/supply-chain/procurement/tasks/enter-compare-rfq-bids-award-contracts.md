@@ -1,26 +1,16 @@
 --- 
-# required metadata 
- 
 title: Enter and compare RFQ bids and award contracts
-description: This article explains how to enter replies to a request for quotation (RFQ), score and compare bids, and then award the contract to one of the vendors. 
-author: GalynaFedorova
+description: Learn how to enter replies to a request for quotation (RFQ), score and compare bids, and then award the contract to one of the vendors.
+author: Henrikan
+ms.author: henrikan
+ms.topic: how-to
 ms.date: 07/09/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable, PurchTablePart, PurchRFQCompareLinePrices, PurchRFQCompareRFQ
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: kamaybac 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: gfedorova
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable, PurchTablePart, PurchRFQCompareLinePrices, PurchRFQCompareRFQ
 ms.dyn365.ops.version: AX 7.0.0 
 ---
 

@@ -1,39 +1,33 @@
 --- 
-# required metadata 
- 
 title: Reconcile freight manually
-description: This procedure shows how to reconcile freight manually. 
+description: Learn how to reconcile freight manually, including step-by-step processes for selecting a load to reconcile and creating carrier invoices. 
 author: Weijiesa
+ms.author: weijiesa
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: WHSLoadPlanningWorkbench, TMSFreightBillDetail, TMSInvoiceTable, TMSFreightBillInvoiceReconcile, TMSInvoiceJournal, LedgerJournalTable, LedgerJournalTransDaily, TMSFBDetailReconcile
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: kamaybac 
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: weijiesa
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: WHSLoadPlanningWorkbench, TMSFreightBillDetail, TMSInvoiceTable, TMSFreightBillInvoiceReconcile, TMSInvoiceJournal, LedgerJournalTable, LedgerJournalTransDaily, TMSFBDetailReconcile, WHSInboundLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Reconcile freight manually
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows how to reconcile freight manually. This is typically done by a transportation coordinator. You can use this procedure in the USMF demo data company.
+This procedure shows how to reconcile freight manually. This is typically done by a transportation coordinator.
 
 ## Select a load to reconcile
 
-1. Go to **Transportation management \> Planning \> Load planning workbench**.
-2. Clear the **Hide shipped and received** checkbox.
-3. In the list, select the load that has load ID *00006*.
+1. Go to one of the following pages, depending on whether you are reconciling an inbound or outbound load:
+    - **Transportation management > Planning > Inbound load planning workbench**.
+    - **Transportation management > Planning > Outbound load planning workbench**.
+1. Clear the **Hide shipped and received** checkbox.
+1. In the **Load** grid, select the load you want to reconcile.
 
 ## Create a carrier invoice
 

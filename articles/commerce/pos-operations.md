@@ -4,8 +4,6 @@ description: This article provides details about the point of sale (POS) operati
 author: josaw1
 ms.date: 08/29/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: global
@@ -180,7 +178,7 @@ The following columns specify where the operations can be invoked:
 | 643  | Add coupon code                                   | Adds a coupon by entering its code in the POS.                                                                                                                                                                  | Yes            | Yes                | No             | Yes\*\*\*               | No              |
 | 644  | Remove coupon code                                | Prompts the user to remove coupons by selecting them from a list of coupons that are currently associated with the transaction.                                                                                   | Yes            | Yes                | No             | Yes               | No              |
 | 645  | View all discounts                                | Shows all the discounts that are currently running in a store.                                                                                                                                                  | Yes            | Yes                | Yes            | Yes               | No              |
-| 646  | View all discounts                                | Shows all the promotions that are applicable to a selected line, or to the whole cart.                                                                                                                     | Yes            | Yes                | Yes            | Yes               | Yes             |
+| 646  | View available discounts                                | Shows all the promotions that are applicable to a selected line, or to the whole cart.                                                                                                                     | Yes            | Yes                | Yes            | Yes               | Yes             |
 | 647  | Change delivery mode                              | Changes mode of delivery for preconfigured shipping sales lines.                                                                                                                                                | Yes            | Yes                | No             | No                | No              |
 | 648  | Cancel order                                      | Cancels the customer order.                                                                                                                                                                                     | No             | No                 | No             | No                | No              |
 | 649  | Create picking list                               | Creates a picking list for the selected order lines.                                                                                                                                                             | No             | No                 | No             | No                | No              |

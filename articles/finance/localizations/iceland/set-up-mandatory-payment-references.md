@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up mandatory payment references
-description: This article explains how to set up a mandatory payment reference for a specific ledger account and post a payment. 
+description: Learn how to set up a mandatory payment reference for a specific ledger account and post a payment, including a process on setting up main accounts. 
 author: kfend
-ms.date: 08/01/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: MainAccount, LedgerJournalTable, LedgerJournalTransDaily   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Iceland
-# ms.search.industry: 
 ms.author: kfend
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/01/2023
+ms.custom:
+ms.reviewer: johnmichalak  
+audience: Application User 
+ms.search.region: Iceland
+ms.search.validFrom: 2016-06-30
+ms.search.form: MainAccount, LedgerJournalTable, LedgerJournalTransDaily
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up mandatory payment references
 
 [!include [banner](../../includes/banner.md)]

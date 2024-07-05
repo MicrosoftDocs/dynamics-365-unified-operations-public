@@ -6,9 +6,6 @@ description: This article provides information about the capability to have a de
 author: BrianShook
 ms.date: 02/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

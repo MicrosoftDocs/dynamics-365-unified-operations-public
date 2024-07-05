@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: My team mobile workspace
-description: This article provides information about the My team mobile workspace, which lets managers view their direct reports and extended staff.
+description: Learn about the My team mobile workspace, which lets managers view their direct reports and extended staff, including prerequisites.
 author: ShielaSogge
-ms.date: 05/24/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: shielas
-ms.search.validFrom: 2017-06-30 
+ms.topic: article
+ms.date: 05/24/2022
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2017-06-30
+ms.search.form:
 ms.dyn365.ops.version: July 2017 update 
 ---
 
@@ -84,7 +74,7 @@ Download and install the finance and operations mobile app:
 3.  The first time that you sign in, you're prompted for your user name and password. Enter your credentials.
 4.  After you sign in, the available workspaces for your company are shown. Note that if your system administrator publishes a new workspace later, you will have to refresh the list of mobile workspaces.
 
-[![Pull to refresh.](../../dev-itpro/mobile-apps/media/pull-to-refresh-list-of-workspaces-183x300.png)](/media/pull-to-refresh-list-of-workspaces.png)
+[![Pull to refresh.](../../dev-itpro/mobile-apps/media/pull-to-refresh-list-of-workspaces-183x300.png)]
 
 ## View team members by using the My team mobile workspace
 1.	In the mobile app, select the **My team** workspace. A list of team members is shown. The list also shows each team member's title, and any direct reports that the member has.

@@ -1,12 +1,13 @@
 ---
 title: Hyperlink module
-description: Hyperlink control is a control to represent hyperlinks. Pagelinks can also be used in most cases.
+description: Learn about the Hyperlink module, a Hyperlink control is a control to represent hyperlinks. Pagelinks can also be used in most cases.
 author: jasongre
-ms.date: 05/26/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # Hyperlink module

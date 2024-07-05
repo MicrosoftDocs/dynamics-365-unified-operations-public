@@ -1,15 +1,13 @@
 ---
 title: Build extensible controls
-description: This article describes how to create new application controls that have a property sheet in Visual Studio and have server-side business logic.
+description: Learn about how to create new application controls that have a property sheet in Visual Studio and have server-side business logic.
 author: jasongre
-ms.date: 11/09/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 11/09/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: ccc9c341-a233-4bb0-93e7-399d19fdea18
@@ -75,11 +73,11 @@ Use FMTAggregateMeasurements to populate the Microsoft SQL Server Analysis Servi
 Before you begin to build the contact control, look at the appearance of the current implementation. In the following sections, you will use the Control Extensibility Framework to enrich the visualization of the controls and the form.
 
 1.  In Solution Explorer, expand **Forms**, right-click **FMTClerkWorkspace**, and then click **Set as Startup Object**.
-2.  Press Ctrl+F5 to open the **Fleet management clerk** page in Internet Explorer. As the following screen shot shows, the data on this page appears as a simple grid in a list style that contains several string and date controls. 
+2.  Press Ctrl+F5 to open the **Fleet management clerk** page in Microsoft Edge. As the following screen shot shows, the data on this page appears as a simple grid in a list style that contains several string and date controls. 
 
     [![Screen shot of Fleet management clerk page.](./media/ext2-1024x515.png)](./media/ext2.png)
 
-3.  Exit Internet Explorer.
+3.  Exit Microsoft Edge.
 
 ## Modify the build class for the contact control
 To save time, you will work on a partially completed extensible control that is named the contact control. You will extend the contact control to complete its design, run-time, and visualization behaviors. The partially completed contact control already supports multiple title fields, subfields, and action buttons. However, it doesn't currently support an image. To add image support, you must extend the design experience for the contact control. You will add a data field that can specify image data.
@@ -406,13 +404,13 @@ You will now update the **Fleet Management Clerk** workspace so that it uses the
 
 26. Press Ctrl+S to save your changes to **FMTRentalRatesPart**.
 27. In Solution Explorer, right-click the **FMTClerkWorkspace** form, and then click **Set as Startup Object**.
-28. Press Ctrl+F5 to open the updated contact control in Internet Explorer.
+28. Press Ctrl+F5 to open the updated contact control in Microsoft Edge.
 
     > [!NOTE]
-    > If you receive a JavaScript error, you might have to clear the Internet Explorer cache, so that the browser loads the new JavaScript file:
+    > If you receive a JavaScript error, you might have to clear the Microsoft Edge cache, so that the browser loads the new JavaScript file:
 
     1.  When you're prompted to open the debugger, click **No**.
-    2.  While Internet Explorer is open, press F12 (or click **Settings** &gt; **F12 Developer Tools**), and then press Ctrl+R.
+    2.  While Microsoft Edge is open, press F12 (or click **Settings** &gt; **F12 Developer Tools**), and then press Ctrl+R.
     3.  In the **Clear Browser Cache** dialog box, click **Yes**.
     4.  Reload the page by pressing Ctrl+F5.
 

@@ -1,12 +1,13 @@
 ---
 title: Group module
-description: A group control is a container control that has any number of controls as children.
+description: Learn about the group module, a group control is a container control that has any number of controls as children.
 author: jasongre
-ms.date: 05/26/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # Group module

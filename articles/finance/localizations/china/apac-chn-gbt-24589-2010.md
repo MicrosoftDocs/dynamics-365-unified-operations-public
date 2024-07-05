@@ -1,20 +1,15 @@
 ---
 title: GB/T 24589-2010 export
-description: This article explains how to export accounting data to several XML files for a specific period.
+description: Learn how to export accounting data to several XML files for a specific period, including a table that provides more details about each file's contents.
 author: AdamTrukawka
-ms.date: 06/17/2021
-ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: 
 ms.author: atrukawk
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
+ms.reviewer: johnmichalak
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.custom: 
-ms.assetid: 
-ms.search.form: 
 ---
 
 # GB/T 24589-2010 export

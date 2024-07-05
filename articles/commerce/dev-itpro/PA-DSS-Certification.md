@@ -6,8 +6,6 @@ description: This article explains the past, current, and pending listings of PA
 author: BrianShook
 ms.date: 10/13/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 # optional metadata
 
 ms.search.form: 

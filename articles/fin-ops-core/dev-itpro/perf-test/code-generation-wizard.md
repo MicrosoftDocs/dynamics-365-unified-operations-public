@@ -1,19 +1,16 @@
 ---
 title: Acceptance test library Code generation wizard
-description: This article provides information about the Code generation wizard for the Acceptance test library.
+description: Learn about the Code generation wizard for the Acceptance test library, including a step-by-step process on how to create the AtIEntity class using the wizard.
 author: MichaelFruergaardPontoppidan
-ms.date: 03/27/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: mfp
+ms.topic: article
+ms.date: 03/27/2019
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.custom: 
-ms.assetid: 
 ---
 
 # Acceptance test library Code generation wizard

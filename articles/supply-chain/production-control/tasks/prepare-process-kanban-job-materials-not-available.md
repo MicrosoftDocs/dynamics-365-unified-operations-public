@@ -1,28 +1,20 @@
 --- 
-# required metadata 
- 
 title: Prepare a process kanban job when materials are not available for the work cell
-description: This procedure focuses on preparing a process kanban job when some materials are not available for the work cell, therefore it's necessary to pick materials from the warehouse. 
+description: Learn about preparing a process kanban job when some materials are not available for the work cell, therefore it's necessary to pick materials from the warehouse.
 author: johanhoffmann
+ms.author: johanho
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: KanbanBoardWorkCell   
-audience: Application User 
-# ms.devlang:  
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: KanbanBoardWorkCell
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Prepare a process kanban job when materials are not available for the work cell
 
 [!include [banner](../../includes/banner.md)]

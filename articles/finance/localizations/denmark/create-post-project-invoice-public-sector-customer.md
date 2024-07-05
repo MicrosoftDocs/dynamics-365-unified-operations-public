@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create and post a project invoice for a public sector customer
-description: This task walks you through creating and posting a project invoice for a customer using OIOUBL electronic invoicing. 
+description: Learn about creating and posting a project invoice for a customer using OIOUBL electronic invoicing, including an overview on updating a project contract.
 author: mrolecki
-ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: ProjProjectContractsListPage, ProjInvoiceTable, ProjFundingSourceDetail, ContactPersonLookup, ProjSalesItemReq, ProjTableLookup, InventItemIdLookupSimple, SalesEditLines,  ProjInvoiceProposalListPage, ProjInvoiceProposalCreateLines, ProjInvoiceProposalDetail, ProjInvoiceEditLines, ProjInvoiceListPage, ERFormatMappingRunJobTable   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Denmark
-# ms.search.industry: 
 ms.author: mrolecki
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application User
+ms.search.region: Denmark
+ms.search.validFrom: 2016-06-30
+ms.search.form: ProjProjectContractsListPage, ProjInvoiceTable, ProjFundingSourceDetail, ContactPersonLookup, ProjSalesItemReq, ProjTableLookup, InventItemIdLookupSimple, SalesEditLines,  ProjInvoiceProposalListPage, ProjInvoiceProposalCreateLines, ProjInvoiceProposalDetail, ProjInvoiceEditLines, ProjInvoiceListPage, ERFormatMappingRunJobTable
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create and post a project invoice for a public sector customer
 
 [!include [banner](../../includes/banner.md)]

@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: MY-00011 02 Generate Customer Debit Note for Project sales (November 2016)
-description: This task walks you through creating and printing project debit note for GST. 
+description: Learn about creating and printing project debit note for GST, including step-by-step processes for creating project sales debit notes. 
 author: EvgenyPopovMBS
+ms.author: evgenypopov
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: ProjProjectsListPage, SalesCreateOrder, SalesTable, CustInvoiceJourLookup_MY, TaxGroupLookup, ProjJournalTable, ProjJournalTransEmpl, ResourceLookup, ProjInvoiceProposalCreateLines, ProjInvoiceProposalTransTypeLookup, ProjInvoiceProposalDetail, ProjInvoiceEditLines   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: johnmichalak   
+audience: Application User  
 ms.search.region: Malaysia
-# ms.search.industry: 
-ms.author: epopov
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: ProjProjectsListPage, SalesCreateOrder, SalesTable, CustInvoiceJourLookup_MY, TaxGroupLookup, ProjJournalTable, ProjJournalTransEmpl, ResourceLookup, ProjInvoiceProposalCreateLines, ProjInvoiceProposalTransTypeLookup, ProjInvoiceProposalDetail, ProjInvoiceEditLines 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # MY-00011 02 Generate Customer Debit Note for Project sales (November 2016)
 
 [!include [banner](../../includes/banner.md)]

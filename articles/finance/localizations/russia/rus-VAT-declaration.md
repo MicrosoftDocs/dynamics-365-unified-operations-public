@@ -1,18 +1,16 @@
 ---
 title: VAT declaration (Russia)
-description: This article provides information about the VAT declaration for Russia.
-author: AdamTrukawka
-ms.date: 04/25/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn about the VAT declaration for Russia, including an outline and a step-by-step process for setting up the VAT declaration.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
-ms.author: atrukawk
 ms.search.validFrom: 2019-01-04
 ms.dyn365.ops.version: 10.0.1
-ms.search.form: 
 ---
 
 # VAT declaration (Russia)

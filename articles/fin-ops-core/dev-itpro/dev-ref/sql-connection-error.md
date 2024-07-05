@@ -1,12 +1,13 @@
 ---
 title: SQL connection error X++ exception
-description: This article describes the SQL connection error exception types in X++.
+description: Learn about the SQL connection error exception types in X++, including an overview of the TransientSqlConnectionError exception.
 author: josaw1
-ms.date: 09/27/2018
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 09/27/2018
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Plaform update 21
 ---
@@ -18,6 +19,7 @@ ms.dyn365.ops.version: Plaform update 21
 This article describes the SQL connection error exception types in X++.
 
 ## TransientSqlConnectionError X++ exception
+
 During an X++ SQL query execution, when a transient SQL connection error occurs on the server side, a TransientSqlConnectionError X++ exception will occur. Depending on the application requirements, the application should catch and handle the exception.
 
 This exception usually occurs during a large transaction or when the database is under a lot of processing pressure.

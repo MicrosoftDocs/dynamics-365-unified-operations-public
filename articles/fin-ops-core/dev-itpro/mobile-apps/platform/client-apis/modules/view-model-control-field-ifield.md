@@ -1,12 +1,13 @@
 ---
 title: Field module
-description: Represents the run-time instance of a field.
+description: Learn about the field module, which represents the run-time instance of a field and include the Field, FieldDesign, and FieldMetadata types.
 author: jasongre
-ms.date: 05/26/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # Field module

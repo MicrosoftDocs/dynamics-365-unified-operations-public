@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Workflow subsystem updates in finance and operations
-description: This article reviews the workflow system in finance and operations.
+description: Learn about the workflow system in finance and operations, including an overview on primary changes to the workflow system.
 author: ChrisGarty
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: 0e3aa2cd-2327-45ba-bf38-0ef543fa8f67
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: cgarty
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 0e3aa2cd-2327-45ba-bf38-0ef543fa8f67
 ---
 
 # Workflow subsystem updates in finance and operations

@@ -4,8 +4,6 @@ description: This article provides an overview of improvements that have been ma
 author: ShalabhjainMSFT
 ms.date: 01/30/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: josaw
 ms.search.region: Global

@@ -4,8 +4,6 @@ description: This article describes how to configure a product so that it can be
 author: anupamar-ms
 ms.date: 10/27/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

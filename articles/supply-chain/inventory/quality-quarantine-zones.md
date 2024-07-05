@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Quarantine zones for nonconformances
-description: This article describes how to create and use quarantine zones for nonconformances.
-author: yufeihuang
-ms.date: 03/23/2021
+description: Learn how to create and use quarantine zones for nonconformances, including various examples of quarantine zones and a process for creating a quarantine zone.
+author: yufei-huang
+ms.author: yufeihuang
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-ms.search.form: InventQuarantineZone
-# ROBOTS:
-audience: Application User
-# ms.devlang:
+ms.date: 03/23/2021
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
 ms.search.validFrom: 2020-06-17
+ms.search.form: InventQuarantineZone
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ---
 
 # Quarantine zones for nonconformances

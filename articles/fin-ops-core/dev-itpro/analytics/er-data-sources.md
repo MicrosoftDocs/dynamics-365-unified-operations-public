@@ -1,20 +1,18 @@
 ---
 title: Supported data source types for ER components
-description: This article explains the data sources that are supported in the Electronic reporting (ER) framework.
-author: NickSelin
-ms.date: 04/28/2023
+description: Learn about the data sources that are supported in the Electronic reporting (ER) framework, including how to add new data sources.
+author: kfend
+ms.author: kfend
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
-ms.author: nselin
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: Release 7.0.0
+ms.date: 04/28/2023
 ms.custom: bap-template
-ms.assetid: 
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
+ms.search.validFrom: 2016-02-28
 ms.search.form: ERSolutionTable, EROperationDesigner, ERModelMappingDesigner, ERExpressionDesignerFormula
+ms.dyn365.ops.version: Release 7.0.0
+ms.assetid: 
 ---
 
 # Supported data source types for ER components
@@ -557,7 +555,7 @@ When you configure a data source of the *Table record* type that references an a
 
 The following illustration shows a field of the *Financial dimensions* type of the **Table record** data source that can be used to access default financial dimensions for every record in the **CustInvoiceJour** application table.
 
-![Configured data source of the Table record type on the Model mapping designer page.](./media/er-data-sources-ds-fin-dim-mapping1.png)
+![Screenshot of the configured data source of the Table record type on the Model mapping designer page.](./media/er-data-sources-ds-fin-dim-mapping1.png)
 
 Use the **Financial dimensions details** data source in the configured ER component to specify how the scope of financial dimensions will be defined for any report that uses this component when a field of the *Financial dimensions* type is accessed by a data consumer. If the **Financial dimensions details** data source isn't configured in the editable ER component, all financial dimensions of the current application instance will be used. 
 
@@ -573,7 +571,7 @@ Set the **Ask for main account** option to **Yes** to let the user select the ma
 
 The following illustration shows the data source of the *Financial dimensions details* type that can be used to specify the scope of financial dimensions for fields of the *Financial dimensions* type when the configured model mapping is used at runtime.
 
-![Configured data source of the Financial dimensions details type on the Model mapping designer page.](./media/er-data-sources-ds-fin-dim-mapping2.png)
+![Screenshot of the configured data source of the  financial dimensions details option being highlighted.](./media/er-data-sources-ds-fin-dim-mapping2.png)
 
 To learn more, complete the procedure in the following "ER Use financial dimensions as a data source" articles:
 

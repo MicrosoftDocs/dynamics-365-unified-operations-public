@@ -1,30 +1,18 @@
 ---
-# required metadata
-
-title: Microsoft Office-style user interface in Business document management (contains video)
+title: Microsoft Office-style user interface in Business document management
 description: This article explains how to use the new user interface in the Business document management feature of Electronic reporting (ER) framework.
-author: v-anamir
-ms.date: 01/05/2022
+author: kfend
+ms.author: kfend
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
+ms.date: 01/05/2022
+ms.custom:
+ms.reviewer: johnmichalak 
 ms.search.form: ERBDWorkspace, ERBDParameters
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
 ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: v-anamir
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-
 ---
 
 # Microsoft Office-style user interface in Business document management

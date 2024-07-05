@@ -1,14 +1,11 @@
 ---
 # required metadata
 
-title: Provision Human Resources in the finance and operations infrastructure
-description: This article explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources in the finance and operations infrastructure.
+title: Provision Dynamics 365 Human Resources
+description: This article explains how to provision a new production environment for Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 01/07/2022
+ms.date: 06/07/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SystemAdministrationWorkspaceForm
@@ -26,14 +23,10 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Provision Human Resources in the finance and operations infrastructure
+# Provision Dynamics 365 Human Resources 
 
-_**Applies To:** Human Resources on the finance and operations app infrastructure_ 
 
-> [!NOTE]
-> Starting July 2022, new Human Resources environments can't be provisioned on the stand-alone Human Resources infrastructure, and new Microsoft Dynamics Lifecycle Services (LCS) projects can't be created on it. Customers can deploy Human Resources environments on the finance and operations infrastructure.
-
-This article explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources in the finance and operations infrastructure.
+This article explains how to provision a new production environment for Microsoft Dynamics 365 Human Resources.
 
 ## Prerequisites
 
@@ -44,8 +37,7 @@ Before you start to provision a new environment, the following prerequisites mus
 
 ## Provision a Human Resources trial environment
 
-> [!NOTE]
-> Starting April 2022, the Human Resources trial environments won't be available in the stand-alone application. Potential customers who are interested in evaluating the Human Resources capabilities in finance and operations apps can use the free 30-day trial together with the demo data. Dynamics 365 Finance will include the Human Resources capabilities that are brought to the Finance infrastructure through the merge of the stand-alone application. For more information, see [Merging of HR offerings brings capabilities together for customers](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers). For more information about Dynamics 365 Finance trials, see the [step-by-step guide](../fin-ops-core/fin-ops/get-started/before-you-buy.md).
+Potential customers who are interested in evaluating the Human Resources capabilities in finance and operations apps can use the free 30-day trial together with the demo data. Dynamics 365 Finance includes the Human Resources capabilities. For more information about Dynamics 365 Finance trials, see the [step-by-step guide](../fin-ops-core/fin-ops/get-started/before-you-buy.md).
 
 ## Plan Human Resources environments
 
@@ -60,8 +52,6 @@ Here are some considerations for additional optional environments:
 - **Development** – In the finance and operations infrastructure, you can now extend the solution and develop your own customizations. Each developer is required to use their own development environment. For more information, see [Deploy and access development environments](../fin-ops-core/dev-itpro/dev-tools/access-instances.md).
 - **GOLD** – For new deployments, a common practice is to use a separate GOLD environment that is kept pristine for configuration and data migration. This environment can be used throughout the implementation to refresh other environments. It will be used to create the new production environment that has the base configuration and data migration. You can't deploy a production environment on the finance and operations infrastructure until you've completed the go-live readiness process. For more information, see [Prepare for go-live](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md).
 
-<!--NOTE: Need to come back and verify Tier-1 can be used and if a customer cannot purchase tier 3-5 need specific documentation about this.-->
-
 > [!IMPORTANT]
 > As you consider your environments, we recommend the following approach:
 >
@@ -71,7 +61,7 @@ Here are some considerations for additional optional environments:
 
 ## Create an LCS project
 
-To use LCS to manage your Human Resources environments, you must first create an LCS project. If you're migrating your Human Resources environment to the finance and operations infrastructure, you must create a new LCS project for finance and operations apps. If you already have an LCS project for other finance and operations apps, you can enable the Human Resources features in the **Feature management** workspace. For more information, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To use LCS to manage your Human Resources environments, you must first create an LCS project. If you already have an LCS project for other finance and operations apps, you can enable the Human Resources features in the **Feature management** workspace. For more information, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 When a new customer signs up for Human Resources, the subscription includes an Implementation project workspace. After the customer activates the service, the tenant administrator must sign in at <https://lcs.dynamics.com> by using the tenant account. The project workspace is automatically created for the organization. For more information, see [Lifecycle Services (LCS) for Finance and Operations apps customers](../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md).
 
@@ -82,9 +72,9 @@ You must complete the LCS project onboarding process before you can start to dep
 
 ## Deploy Human Resources environments
 
-Deployment of finance and operations apps, including Human Resources, in the cloud requires that you understand the environment and subscription that you're deploying to, who can perform which tasks, and what data and customizations you must manage. We recommend that you use a service account instead of a named user when you deploy new environments. For more information about how to deploy environments on the finance and operations infrastructure, see [Cloud deployment overview](/fin-ops-core/dev-itpro/deployment/cloud-deployment-overview).
+Deployment of finance and operations apps, including Human Resources, in the cloud requires that you understand the environment and subscription that you're deploying to, who can perform which tasks, and what data and customizations you must manage. We recommend that you use a service account instead of a named user when you deploy new environments.
 
-To deploy a production environment for Human Resources on the finance and operations infrastructure, you must complete the go-live readiness process. For more information, see [Prepare for go-live](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md). This process includes the subscription estimator in LCS. For more information, see [Subscription estimator](../fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator.md).
+To deploy a production environment for Human Resources, you must complete the go-live readiness process. For more information, see [Prepare for go-live](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md). This process includes the subscription estimator in LCS. For more information, see [Subscription estimator](../fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator.md).
 
 ## Integrate Microsoft Power Platform with Human Resources
 

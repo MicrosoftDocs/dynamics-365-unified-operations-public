@@ -1,20 +1,18 @@
 ---
 title: Service environments
-description: This article provides information about service environments for Electronic invoicing and explains how to set them up.
-author: gionoder
-ms.date: 02/28/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Global
-ms.author: gionoder
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+description: Learn about service environments for Electronic invoicing and explains how to set them up, including an outline on service environment statuses.
+author: ilikond
+ms.author: ikondratenko
+ms.topic: conceptual
 ms.custom: 
-ms.assetid: 
+  - bap-template
+ms.date: 06/17/2024 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom:
 ms.search.form: 
+ms.dyn365.ops.version:
 ---
 
 # Service environments
@@ -48,11 +46,11 @@ Each service environment must list the users who can connect to Electronic invoi
 
 ## Applications
 
-In some scenarios, applications other than Finance or Supply Chain Management might have to connect to the Electronic Invoicing service to submit electronic documents for further processing, or to retrieve information such as the submission status of a document. In these scenarios, the application should be defined in the list of applications. In this way, it will have access to the Electronic Invoicing service. The application must also be registered as an application in Azure Active Directory (Azure AD), and the object ID must be used to identify it. 
+In some scenarios, applications other than Finance or Supply Chain Management might have to connect to the Electronic Invoicing service to submit electronic documents for further processing, or to retrieve information such as the submission status of a document. In these scenarios, the application should be defined in the list of applications. In this way, it will have access to the Electronic Invoicing service. The application must also be registered as an application in Microsoft Entra ID, and the object ID must be used to identify it. 
 
 Because Microsoft requires a high-level of security control over applications that can connect to the Electronic Invoicing service, you must contact Microsoft at <DGXRegulatoryservicesengineering@service.microsoft.com> and provide the following details of your application:
 
-- Azure AD tenant ID
+- Microsoft Entra tenant ID
 - Microsoft Dynamics Lifecycle Services (LCS) environment ID
 - Application ID (client ID)
 - Object ID

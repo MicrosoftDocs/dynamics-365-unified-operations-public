@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Create exchange rate providers in finance and operations version 8.0
-description: This article explains how to set up an exchange rate provider in Microsoft Dynamics 365 Finance version 8.0 (April 2018).
+description: Learn how to set up an exchange rate provider in Microsoft Dynamics 365 Finance version 8.0 (April 2018), including terminology.
 author: RyanCCarlson2
-ms.date: 09/25/2018
+ms.author: rcarlson
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 09/25/2018
+ms.reviewer: johnmichalak
 audience: Developer
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
 ms.assetid: 24643037-f7a5-4acf-b3d6-9943642b618c
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rcarlson
 ms.search.validFrom: 2018-04-02
+ms.search.form: 
 ms.dyn365.ops.version: AX 8.0.0
-
 ---
 
 # Create exchange rate providers in finance and operations version 8.0

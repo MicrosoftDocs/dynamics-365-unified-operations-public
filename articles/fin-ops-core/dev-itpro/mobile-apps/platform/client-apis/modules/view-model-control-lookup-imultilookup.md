@@ -1,12 +1,13 @@
 ---
 title: Multi-Lookup module
-description: Multi-Lookup controls are similar to regular lookups except they allow multiple selections at once.
+description: Learn about the Multi-lookup module, which includes the MultiLookup, MultiLookupDesign, and MultiLookupMetadata index types.
 author: jasongre
-ms.date: 05/26/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # Multi-Lookup module

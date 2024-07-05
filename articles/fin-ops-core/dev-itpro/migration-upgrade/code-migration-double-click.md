@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Code migration - Mouse double-click logic
-description: This article explains how the mouseDblClick() override has been deprecated, and how you will need to move this logic to new controls.
+description: Learn about how the mouseDblClick() override has been deprecated, and how you will need to move this logic to new controls.
 author: jasongre
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: ba33ee49-2053-4e3c-b0fa-123c9410265d
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: ba33ee49-2053-4e3c-b0fa-123c9410265d
 ---
 
 # Code migration - Mouse double-click logic

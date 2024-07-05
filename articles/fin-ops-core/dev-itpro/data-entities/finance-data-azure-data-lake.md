@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Export to Data Lake in finance and operations apps
-description: This article explains how to choose data in a finance and operations apps environment so that the data is available in a data lake.
+description: Learn how to choose data in a finance and operations apps environment so that the data is available in a data lake.
 author: MilindaV2
-ms.date: 10/27/2023
+ms.author: milindav
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: NOINDEX, NOFOLLOW
-audience: Developer, IT Pro
-# ms.devlang: 
+ms.date: 10/27/2023
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
+audience: Developer, IT Pro
 ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: milindav
 ms.search.validFrom: 2020-03-01
+ms.search.form: 
 ms.dyn365.ops.version: Platform Update 34
-
 ---
 
 # Export to Data Lake in finance and operations apps 
@@ -138,7 +126,7 @@ When an error occurs in a table that you added to Export to Data Lake, you might
 | 401        | The table you added is missing in the database. | The table you added is no longer available in the database and the system can't continue updating data in the lake. The table might have been removed because of a software or database update. To resolve this issue, contact your database administrator or a developer. If this table was developed by your partner or ISV, contact the developer.  <br><br> You might also encounter this issue when you add "derived tables" such as the DirPerson table. Derived tables are currently not supported by the service. To choose derived tables, you need to choose the base table. There are plans to add support for derived tables in a future release.               |
 | 402        | The RecID field isn't indexed.                                            | The system has detected that the RecID field contained in the table isn't part of an index or isn't the first field in an index. This table might lead to poor performance in updating the data lake and updates might take longer to reflect in the data lake. You can include the RecID field in an index to resolve this issue. If this issue is from a table in a finance and operations app, contact Microsoft support. If this table was developed by your partner or ISV, contact the developer. |
 | 409        | Failed to access the storage account due to permissions. Verify the storage account configuration.      | The system is unable to access and write to the storage account. Ensure that you have enabled Hierarchical Name Spaces (HNS) and validate access roles. For more information, see [Configure export to Azure Data Lake - Grant access](configure-export-data-lake.md#grantaccess). To resolve this issue, contact the system administrator or the LCS administrator who configured the system. |
-| 410        | Failed to find Application ID to access the data lake. Application ID provided is incorrect or can't be found.      | The Application ID provided in the key vault can't be found in Azure Active Directory. Validate the Application ID provided in the key vault by following the steps in [Configure export to Azure Data Lake - Create application](configure-export-data-lake.md#createapplication). |
+| 410        | Failed to find Application ID to access the data lake. Application ID provided is incorrect or can't be found.      | The Application ID provided in the key vault can't be found in Microsoft Entra ID. Validate the Application ID provided in the key vault by following the steps in [Configure export to Azure Data Lake - Create application](configure-export-data-lake.md#createapplication). |
 | 411        | Failed to access data lake with given Application ID and Application secret. | Application ID (app-id) and Application secret (app-secret) provided can't be used to access the storage account. Verify the Application ID and Application secret are valid by following the steps in [Configure export to Azure Data Lake - Create Application](configure-export-data-lake.md#createapplication). <br><br> Next, validate that the application has required access to the storage account. For more information, see [Configure export to Azure Data Lake - Grant access](configure-export-data-lake.md#grantaccess). You need to contact the systems administrator or the LCS administrator who configured the system. | 
 | 412        | Chosen table isn't supported or has a missing RecID index. | Some internal and system tables aren't supported by the Export to Data Lake feature. If you're receiving this error, you might have chosen a table that isn't allowed. The selection form might not show such tables in the future. You should plan to extract the same information using a supported table. <br><br> You might also receive this error if the chosen table contains a large number of rows (more than one million) and a required RecID index is missing. The system requires larger tables to contain an index where RecID is the first field in that index. You can create a RecID index as a table extension to resolve this error. | 
 | 415        | Failed to access the storage account using the storage name provided in the key vault. | Storage account provided in the key vault can't be found or is invalid. Validate that the correct storage account name is entered into the key vault by following the steps in [Configure export to Azure Data Lake - Add secrets](configure-export-data-lake.md#addsecrets). <br><br> Verify that you have provided the correct secret name for the storage account by following the steps in [Configure export to Azure Data Lake Add secrets](configure-export-data-lake.md#addsecrets). | 
@@ -165,4 +153,3 @@ Error codes 9xx indicate a system configuration issue with Finance and Operation
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

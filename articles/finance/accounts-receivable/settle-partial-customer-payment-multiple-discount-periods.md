@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Settle a partial customer payment that has multiple discount periods
-description: This article shows how partial customer payments are settled when there are multiple discount periods.
-author: ShivamPandey-msft
-ms.date: 11/15/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: b633a7c4-c18d-42e7-91cc-adcdc8a3ba98
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about how partial customer payments are settled when there are multiple discount periods, including a table that outlines various aspects of invoices.
+author: ShivamPandeyMSFT
 ms.author: shpandey
+ms.topic: article
+ms.date: 11/15/2022
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: b633a7c4-c18d-42e7-91cc-adcdc8a3ba98
 ---
 
 # Settle a partial customer payment that has multiple discount periods

@@ -1,34 +1,31 @@
 ---
-# required metadata
-
 title: Dynamics Lifecycle Services API Authentication 
-description: This article explains how to access and use the Dynamics 365 Translation Service API.
+description: Learn about how to access and use the Dynamics 365 Translation Service API, including creating an application registration and configuring API permissions.
 author: joshsantana
-ms.date: 04/03/2023
-ms.topic: article
-audience: IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: joshsantana
+ms.topic: article
+ms.date: 04/03/2023
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2023-03-22
-
 ---
 
 # Dynamics Lifecycle Services API - Authentication
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview of the Azure Active Directory (Azure AD) setup for calling Lifecycle Services APIs including Dynamics Translation Service API. To access resources available using the API, you must get a bearer token from Azure AD and send it as a header along with each request. 
+This article provides an overview of the Microsoft Entra setup for calling Lifecycle Services APIs including Dynamics Translation Service API. To access resources available using the API, you must get a bearer token from Microsoft Entra and send it as a header along with each request. 
 
 The following steps are required to obtain a bearer token with the correct permissions:
 
-1. Create an application registration in your Azure AD tenant.
+1. Create an application registration in your Microsoft Entra tenant.
 2. Configure API permissions.
 3. Configure public client.
 4. Request an access token.
 
 ## Create an application registration
-1. Go to the [Azure AD app registration](https://go.microsoft.com/fwlink/?linkid=2083908) page and create a new registration.
+1. Go to the [Microsoft Entra app registration](https://go.microsoft.com/fwlink/?linkid=2083908) page and create a new registration.
 2. Name the application and verify that the **Single tenant** option is selected. You can skip the redirect URI setup.
 
 ## Configure API permissions
@@ -44,13 +41,13 @@ The following steps are required to obtain a bearer token with the correct permi
 
 ## Step 3. Configure public client
 
-To begin reading and writing resources on behalf of a user, enable the **Public Client** setting. This is the only way that Azure AD will accept username and password properties in the body of your token request. Ig plan to use this feature, it won't work for accounts that have multi-factor authentication enabled.  
+To begin reading and writing resources on behalf of a user, enable the **Public Client** setting. This is the only way that Microsoft Entra ID will accept username and password properties in the body of your token request. Ig plan to use this feature, it won't work for accounts that have multi-factor authentication enabled.  
 
 - To enable the **Public Client** setting, on the **Manage - Authentication** tab, in the the **Advanced Settings** section, set the **Public Client** switch to **Yes**. 
 
 ## Step 4. Request an access token
 
-To request a bearer token for username and password, send a POST request via HTTP to Azure AD with a username and password payload.
+To request a bearer token for username and password, send a POST request via HTTP to Microsoft Entra ID with a username and password payload.
 
 ```HTTP
   Content-Type: application/x-www-form-urlencoded
@@ -60,7 +57,7 @@ To request a bearer token for username and password, send a POST request via HTT
   BODY:
   client_id={CLIENT_ID_FROM_AZURE_CLIENT_APP}&scope=https://lcsapi.lcs.dynamics.com//.default&username={USER_EMAIL_ADDRESS}&password={PASSWORD}&grant_type=password
 ```
-The above example contains placeholders that you can retrieve from your client application in Azure Active Directory.  You'll receive a response that can be used to make subsequent calls to Power Platform API.
+The above example contains placeholders that you can retrieve from your client application in Microsoft Entra ID.  You'll receive a response that can be used to make subsequent calls to Power Platform API.
 
   ```JSON
   {

@@ -1,15 +1,15 @@
 ---
 title: Sealed bidding for RFQs
-description: This article describes how to set up sealed bidding to keep vendor bid replies secret until they are unsealed by purchasing personnel.
-author: GalynaFedorova
-ms.date: 08/02/2021
+description: Learn how to set up sealed bidding to keep vendor bid replies secret until they are unsealed by purchasing personnel with an outline on setup and configuration.
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
-ms.search.form:
-audience: Application User
+ms.date: 08/02/2021
 ms.reviewer: kamaybac
+audience: Application User
 ms.search.region: Global
-ms.author: gfedorova
 ms.search.validFrom: 2021-08-02
+ms.search.form:
 ms.dyn365.ops.version: 10.0.21
 ---
 

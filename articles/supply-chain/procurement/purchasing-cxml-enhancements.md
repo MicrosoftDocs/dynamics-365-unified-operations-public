@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Purchasing cXML Enhancements
 description: The Purchasing cXML Enhancements feature builds on the existing external catalog functionality, PunchOut, that is used for purchase requisitions.
-author: GalynaFedorova
-ms.date: 08/03/2020
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CatCXMLParameters, CatCXMLPurchRequest
-audience: Application User
-# ms.devlang: 
+ms.date: 08/03/2020
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: gfedorova
 ms.search.validFrom: 2020-08-03
+ms.search.form: CatCXMLParameters, CatCXMLPurchRequest
 ms.dyn365.ops.version: 10.0.13
 ---
 

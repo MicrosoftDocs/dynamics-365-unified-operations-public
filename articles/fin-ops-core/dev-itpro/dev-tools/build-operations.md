@@ -1,13 +1,13 @@
 ---
 title: Build operations
-description: This article reviews the process to build projects and full build of model packages.
+description: Learn about the process and operations to build projects and full build of model packages, including overviews on building and rebuilding projects.
 author: gianugo
-ms.date: 06/20/2017
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: gianura
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: f061b6cf-16f7-440e-94b9-f40666dd7431

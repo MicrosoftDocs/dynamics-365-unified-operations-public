@@ -1,15 +1,15 @@
 ---
 title: Standard Audit File for Tax (SAF-T) for Lithuania
-description: This article explains how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Lithuania.
+description: Learn how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Lithuania.
 author: liza-golub
-ms.date: 05/26/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Lithuania
 ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Lithuania
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---
@@ -17,8 +17,6 @@ ms.dyn365.ops.version:
 # Standard Audit File for Tax (SAF-T) for Lithuania
 
 [!include [banner](../../includes/banner.md)]
-
-[!include [banner](../../includes/preview-banner.md)]
 
 According to Article 16 of the Law on Accounting of the Republic of Lithuania, companies in Lithuania are legally required to provide a report in Standard Audit File for Tax (SAF-T) format. This article describes how Microsoft Dynamics 365 Finance supports the SAF-T requirements and explains how to prepare Finance to work with the SAF-T report for Lithuania.
 

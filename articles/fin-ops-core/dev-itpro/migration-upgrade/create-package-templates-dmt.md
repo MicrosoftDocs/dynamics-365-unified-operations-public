@@ -1,15 +1,13 @@
 ---
 title: AX 2009 migration - Create package templates
-description: This article explains how to create package templates that you can use to migrate data from Microsoft Dynamics AX 2009 to finance and operations.
-author: peakerbl
-ms.date: 09/12/2018
+description: Learn about how to create package templates that you can use to migrate data from Microsoft Dynamics AX 2009 to finance and operations.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 09/12/2018
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
-ms.reviewer: sericks
 ms.search.region: Global
-ms.author: peakerbl
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
 ---

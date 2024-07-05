@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Accruals overview
-description: This article describes accruals, and provides information about how to set them up and create transactions.
-author: aprilolson
-ms.date: 11/21/2022
+description: Learn about accruals and how to set them up and create transactions, including overviews on accrual schemes and ledger accruals.
+author: jchrist
+ms.author: jchrist
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerAccuralTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/13/2024
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
 ms.collection: get-started
-ms.assetid: 0489b59a-37a7-4a78-87bf-4b597e9efad9
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: aolson
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerAccuralTable
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 0489b59a-37a7-4a78-87bf-4b597e9efad9
 ---
 
 # Accruals overview

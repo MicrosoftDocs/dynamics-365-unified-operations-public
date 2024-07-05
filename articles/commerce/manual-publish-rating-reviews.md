@@ -4,8 +4,6 @@ description: This article describes how to enable manual publishing of ratings a
 author: gvrmohanreddy
 ms.date: 09/03/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

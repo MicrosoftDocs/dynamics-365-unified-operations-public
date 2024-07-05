@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up company bank accounts for ISO20022 credit transfers
-description: This article explains how to set up company-specific bank account information that's required to generate file payments. 
-author: mrolecki
+description: Learn how to set up company-specific bank account information that's required to generate file payments, including a process for setting up IBAN and SWIFT codes. 
+author: kailiang
+ms.author: kailiang
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 08/01/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: BankAccountTable, OMLegalEntity, BankAccountTableLookUp   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.reviewer: johnmichalak 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: mrolecki
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: BankAccountTable, OMLegalEntity, BankAccountTableLookUp
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up company bank accounts for ISO20022 credit transfers
 
 [!include [banner](../../includes/banner.md)]

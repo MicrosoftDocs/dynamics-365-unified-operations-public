@@ -4,8 +4,6 @@ description: This article covers module configuration presets and how to configu
 author: samjarawan
 ms.date: 04/23/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

@@ -1,15 +1,13 @@
 ---
 title: Person search report
-description: This article provides information about the Personal data report for finance and operations apps.
+description: Learn about the Personal data report for finance and operations apps, including an outline on how to download the default template.
 author: josaw1
-ms.date: 10/02/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 10/02/2019
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
 ---

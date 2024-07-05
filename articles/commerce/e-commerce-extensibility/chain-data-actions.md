@@ -4,8 +4,6 @@ description: This article describes how to chain data actions.
 author: samjarawan
 ms.date: 07/16/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

@@ -1,15 +1,15 @@
 ---
 title: Create and process message queues and message types
-description: This article describes how to design custom message queues and message types by using Visual Studio, and how to monitor and control the processing of all message types by using the Message processor messages page.
+description: Learn how to design custom message queues and message types by using Visual Studio, and how to monitor and control the processing of all message types.
 author: Henrikan
 ms.author: henrikan
-ms.reviewer: kamaybac
-ms.search.form: SysMessageProcessorMessage, BusinessEventsWorkspace 
 ms.topic: how-to
 ms.date: 11/02/2022
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: SysMessageProcessorMessage, BusinessEventsWorkspace 
 ---
 
 # Create and process message queues and message types
@@ -48,6 +48,8 @@ You can use the fields at the top of the **Message processor messages** page to 
     - *Production* – This queue holds messages that are created as part of the *Make finished goods physically available before posting to journals* feature. These messages are also listed on the **Deferred production order posting** page, which is like the **Message processor messages** page but is focused exclusively on that feature. For more information, see [Make finished goods physically available before posting to journals](../production-control/deferred-posting.md).
     - *Warehouse*  – This queue holds messages that are created for warehouse management, such as to post a sales packing slip when the last shipment container is closed as part of a [manual packing process](../warehousing/packing-containers.md). (This message has a message type of *Run packing slip for container*.)
     - *Shipment Orders* – This queue holds messages that support [Warehouse management only mode](../warehousing/wms-only-mode-overview.md).
+    - *Source System Products* – This queue holds messages that support [source product master data](../warehousing/wms-only-mode-exchange-data.md).
+    - *External warehouse shipment order updates* – This queue holds messages that support [external shared warehouse processing](../warehousing/wms-only-mode-external-shared-warehouse.md).
     - *Dynamics 365 Sales Integration* – This queue holds messages that integrate with Dynamics 365 Sales. For more information about this feature and the messages that it might add to this queue, see [Work with added efficiency in quote-to-cash with Dynamics 365 Sales](../../fin-ops-core/dev-itpro/data-entities/dual-write/add-efficiency-in-quote-to-cash-use.md).
     - *\<Custom queues\>* – If your system has been customized to support additional types of queues, they'll also be listed here. For more information about how to add custom queues, see [Implement a new queue](#custom-queue).
 

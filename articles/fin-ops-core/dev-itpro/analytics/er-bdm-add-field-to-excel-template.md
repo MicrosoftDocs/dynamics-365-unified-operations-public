@@ -1,20 +1,18 @@
 ---
 title: Add new fields to a business document template in Microsoft Excel
-description: This article provides information about how to add new fields to a business document template in Microsoft Excel by using Business document management feature.
+description: Learn about how to add new fields to a business document template in Microsoft Excel by using Business document management feature.
 author: kfend
-ms.date: 11/15/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 11/15/2019
+audience: Developer, IT Pro
+ms.reviewer: johnmichalak
+ms.search.region: Global
 ms.search.validFrom: 2019-10-01
+ms.search.form: ERBDWorkspace, ERBDParameters, ERBDTemplateEditor
 ms.dyn365.ops.version: 10.0.7
 ms.custom: 
 ms.assetid: 
-ms.search.form: ERBDWorkspace, ERBDParameters, ERBDTemplateEditor
 ---
 
 # Add new fields to a business document template in Microsoft Excel

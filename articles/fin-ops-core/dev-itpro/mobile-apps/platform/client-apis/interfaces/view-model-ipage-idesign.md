@@ -1,12 +1,13 @@
 ---
 title: Design type
-description: Design object type.
+description: Learn about the design object type, which includes the alignItems, alignSelf, bindings, border, color, flexFlow, flexSize and other properties.
 author: jasongre
-ms.date: 05/26/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # Design type

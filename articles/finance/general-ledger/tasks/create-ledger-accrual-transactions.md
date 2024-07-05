@@ -1,26 +1,16 @@
 --- 
-# required metadata 
- 
 title: Create ledger accrual transactions
-description: This task guide steps through generating ledger accrual transactions that are based on accrual schemes. 
+description: This task guide steps through generating ledger accrual transactions that are based on accrual schemes, including a step-by-step process based on accrual schemes. 
 author: aprilolson
-ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransAccrual, LedgerJournalTransAccrualTrans   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 04/01/2024
+ms.custom:
+ms.reviewer: twheeloc  
+audience: Application User   
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerJournalTable, LedgerJournalTransDaily, LedgerJournalTransAccrual, LedgerJournalTransAccrualTrans
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create ledger accrual transactions
@@ -34,8 +24,8 @@ This task guide steps through generating ledger accrual transactions that are ba
 3. Click to follow the link in the **Journal batch number** field.
 4. In the list, mark the selected row.
 5. In the **Account** field, specify the desired values.
-    * In this example, we are defining the expense for the insurance. It will be come periodic expense amount.  
-6. In the **Description** field, type a value.
+     In this example, we are defining the expense for the insurance. It will be come periodic expense amount.  
+6. In the **Description** field, enter a value.
 7. In the **Debit** field, enter a number.
 8. In the **Offset account** field, specify the desired values.
 9. Click **Functions**.

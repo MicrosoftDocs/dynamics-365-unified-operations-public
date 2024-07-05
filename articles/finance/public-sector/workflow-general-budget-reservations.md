@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Set up general budget reservations and submit them to a workflow
-description: This article explains how to set up general budget reservations and submit them to a workflow for Public sector.
+description: Learn how to set up general budget reservations and submit them to a workflow for Public sector with an outline on setting up reviewers for reservations.
 author: AlexRenney
-ms.date: 04/24/2019
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: BudgetReservation_PSN, BudgetReservationType_PSN
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 04/24/2019
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
+audience: Application User
 ms.search.region: Global
-ms.search.industry: Public sector
-ms.author: brpotter
 ms.search.validFrom: 2018-10-31
+ms.search.form: BudgetReservation_PSN, BudgetReservationType_PSN
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Set up general budget reservations and submit them to a workflow

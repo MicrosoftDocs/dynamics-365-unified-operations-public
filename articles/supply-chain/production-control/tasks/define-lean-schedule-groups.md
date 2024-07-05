@@ -1,28 +1,20 @@
 --- 
-# required metadata 
- 
 title: Define lean schedule groups
-description: Lean schedule groups are defined to group and distinguish products in kanban scheduling. 
+description: Lean schedule groups are defined to group and distinguish products in kanban scheduling. Learn about defining lean scheduling groups.
 author: johanhoffmann
+ms.author: johanho
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LeanScheduleGroup, GanttColorTableLookup   
+ms.custom:
+ms.reviewer: kamaybac    
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: LeanScheduleGroup, GanttColorTableLookup
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Define lean schedule groups
 
 [!include [banner](../../includes/banner.md)]

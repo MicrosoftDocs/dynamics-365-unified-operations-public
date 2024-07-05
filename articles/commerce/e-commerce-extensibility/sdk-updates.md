@@ -4,8 +4,6 @@ description: This article covers regular updates that will be released as part o
 author: samjarawan
 ms.date: 09/29/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

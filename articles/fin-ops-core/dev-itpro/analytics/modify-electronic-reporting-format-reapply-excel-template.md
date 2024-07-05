@@ -1,19 +1,17 @@
 ---
 title: Modify Electronic reporting formats by reapplying Excel templates
-description: This article describes how to modify the Electronic reporting (ER) format that is used to generate business documents by reapplying a modified Excel template.
+description: Learn how to modify the Electronic reporting (ER) format that is used to generate business documents by reapplying a modified Excel template.
 author: kfend
-ms.date: 05/18/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 05/18/2022
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: e3f7960d-2e01-46a7-9ac8-c355ac933cd6
-ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 ---
 # Modify Electronic reporting formats by reapplying Excel templates
 

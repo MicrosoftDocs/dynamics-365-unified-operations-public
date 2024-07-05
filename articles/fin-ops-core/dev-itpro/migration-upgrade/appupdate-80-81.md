@@ -1,29 +1,16 @@
 ---
-# required metadata
-
 title: Update environments from version 8.0 to 10.0.X
-description: This article explains the steps required to update existing finance and operations 8.0 environments to 10.0.X application releases.
+description: Learn about the steps required to update existing finance and operations 8.0 environments to 10.0.X application releases.
 author: laneswenka
-ms.date: 02/20/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: laswenka
+ms.topic: article
+ms.date: 02/20/2020
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2018-10-31
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.0
-
 ---
 
 # Update environments from version 8.0 to 10.0.X

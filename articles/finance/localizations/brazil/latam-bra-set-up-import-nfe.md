@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Set up, import, and verify NF-e XML documents and DANFE
-description: You can automatically extract and import the XML from the Nota Fiscal Eletrônica (NF-e) and its DANFE (Documento Auxiliar da Nota Fiscal Eletrônica) from e-mails sent by the vendor for your company.
-author: v-gonode
-ms.date: 12/14/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EFDocumentReceivedXML_BR  
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Brazil 
-# ms.search.industry: 
-ms.author: gionoder
+description: You can automatically extract and import the XML from the Nota Fiscal Eletrônica (NF-e) and its DANFE from emails sent by the vendor for your company.
+author: ankviklis
+ms.author: ankviklis
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
+ms.reviewer: johnmichalak
+ms.search.region: Brazil
 ms.search.validFrom: 
 ms.dyn365.ops.version: July 2017 update
-
+ms.search.form: EFDocumentReceivedXML_BR  
 ---
 
 # Set up, import, and verify NF-e XML documents and DANFE
@@ -37,8 +26,8 @@ The following prerequisites must be in place before you begin:
  - Set up NF-e parameters for fiscal establishments.
 
 > [!NOTE] 
-> To use modern authentication to authenticate the connections to the POP3 server to read emails, complete the steps outlined [here](/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) as a prerequisite to create an azure AAD application. The application you create will have the required mailbox permissions (POP) to read emails from the shared mailbox that you are using to receive emails sent by a vendor.
-> Next, add the azure AAD application client ID, the client secret, and the tenant IDs as secrets to a key vault in azure and configure the same in Dynamics 365 Finance.
+> To use modern authentication to authenticate the connections to the POP3 server to read emails, complete the steps outlined [here](/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) as a prerequisite to create an azure Microsoft Entra application. The application you create will have the required mailbox permissions (POP) to read emails from the shared mailbox that you are using to receive emails sent by a vendor.
+> Next, add the azure Microsoft Entra application client ID, the client secret, and the tenant IDs as secrets to a key vault in azure and configure the same in Dynamics 365 Finance.
 
 ## Set up email accounts to import XML files and DANFE for NF-e
 - On the **Configure email accounts** page, select **New**, and enter the account details.
@@ -51,9 +40,9 @@ The following prerequisites must be in place before you begin:
 - To support modern authentication due to the [deprecation of basic authentication in Exchange online](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online), enter additional details.
    - **Use modern authentication** - Select this checkbox to use modern OAuth-based authentication to connect to the POP3 server.
    - **Server resource ID** - Enter the exchange server URI (https://outlook.office.com/ or https://outlook.office365.com/ ).
-   - **Tenant ID** - Enter the key vault certificate reference for the tenant ID where the azure AAD application that has the required mailbox permissions is hosted.
-   - **Client ID** - Enter the key vault certificate reference for the app ID of the azure AAD application that has the required mailbox permissions.
-   - **Client secret** - Enter the key vault certificate reference for the client secret of the azure AAD application.
+   - **Tenant ID** - Enter the key vault certificate reference for the tenant ID where the azure Microsoft Entra application that has the required mailbox permissions is hosted.
+   - **Client ID** - Enter the key vault certificate reference for the app ID of the azure Microsoft Entra application that has the required mailbox permissions.
+   - **Client secret** - Enter the key vault certificate reference for the client secret of the azure Microsoft Entra application.
    - **Login authority** - Enter the login authority URI (https://login.microsoftonline.com/).
 
 > [!NOTE] 

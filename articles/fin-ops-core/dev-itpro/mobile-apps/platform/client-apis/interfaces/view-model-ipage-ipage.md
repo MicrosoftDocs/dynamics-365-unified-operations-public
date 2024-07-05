@@ -1,12 +1,13 @@
 ---
 title: Page type
-description: Page object type.
+description: Learn about the page object type, which includes the children, dataLoadedInitially, initialized, metadata, metadataLoaded, and other properties and methods.
 author: jasongre
-ms.date: 05/26/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # Page type

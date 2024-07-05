@@ -1,16 +1,16 @@
 ---
 title: Dual-write home page
-description: This article provides links to information about dual-write.
+description: Access various links to information about dual-write, including resources for dual-write setup and managing dual-write after setup.
 author: sericks007
-ms.date: 02/21/2023
-ms.topic: article
-audience: Developer
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: ramasri
+ms.topic: article
+ms.date: 02/21/2023
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
-ms.collection: get-started
 ---
 
 # Dual-write home page
@@ -35,9 +35,7 @@ These topics describe dual-write integration.
 + [Guidance for how to set up dual-write](connection-setup.md)
 + [Dual-write setup from Lifecycle Services](lcs-setup.md)
 + Enable dual-write for existing finance and operations apps
-    + [Enable dual-write for existing finance and operations apps](enable-dual-write.md)
-    + [System requirements and prerequisites](requirements-and-prerequisites.md)
-    + [How to use the dual-write wizard to link your environments](link-your-environment.md)
+    + [System requirements and prerequisites troubleshooting](requirements-and-prerequisites.md)
     + [Enable table map for dual-write](enable-entity-map.md)  
 + [Separated Dual-write Application Orchestration package](separated-solutions.md)
 + [Setup security roles and permissions](security-roles.md)

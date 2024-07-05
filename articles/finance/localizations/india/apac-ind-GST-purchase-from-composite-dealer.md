@@ -1,28 +1,14 @@
 ---
-# required metadata
-
 title: Purchases from composite dealers
-description: This article provides information about purchases that are made from a composite dealer.
-author: EricWangChen
-ms.date: 06/04/2019
+description: Learn about purchases that are made from a composite dealer, including an outline on validating a voucher and a step-by-step process for validating tax details.
+author: epodkolzina
+ms.author: epodkolzina
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.date: 06/04/2019
+ms.reviewer: johnmichalak 
 ms.search.region: India
-# ms.search.industry: 
-ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
-
 ---
 
 # Purchases from composite dealers

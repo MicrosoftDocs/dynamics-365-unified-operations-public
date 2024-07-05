@@ -1,20 +1,18 @@
 ---
-title: Help system (contains video)
-description: This article provides an overview of the Help system for finance and operations apps.
+title: Help system
+description: Learn about the Help system for finance and operations apps, including an overviews on task guide and in-app help options.
 author: edupont04
-ms.date: 04/20/2023
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: edupont
-ms.search.region: Global
 ms.author: edupont
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.topic: overview
+ms.date: 05/13/2024
+ms.reviewer: edupont
 ms.collection: get-started
-ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-02-28
 ms.search.form: SystemParameters
+ms.dyn365.ops.version: AX 7.0.0
+ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ---
 
 # Help system
@@ -44,19 +42,15 @@ The ([Microsoft Dynamics 365 documentation](/dynamics365/)) on Microsoft Learn i
 
 You can find content on Microsoft Learn by using any search engine. For the best results, we recommend that you use a site search, such as **site:learn.microsoft.com dynamics 365 "search term"**.
 
-## Generative help and guidance with Copilot (preview)
-
-[!INCLUDE [preview-banner-section](../../../supply-chain/includes/preview-banner-section.md)]
+## Generative help and guidance with Copilot
 
 *Generative help and guidance with Copilot* provides a conversational guide that's always nearby and ready to help. Users can ask questions in natural language. Copilot then identifies the relevant content in the documentation and composes a targeted response to the question.
-
-[!INCLUDE [preview-note](../../../supply-chain/includes/preview-note.md)]
 
 After generative help and guidance with Copilot is enabled for your system, users can open the Copilot sidecar by using the **Copilot** button :::image type="icon" source="../copilot/media/copilot-icon.png" border="false"::: at the top of the page.
 
 [<img src="../copilot/media/copilot-help-welcome.png" alt="Copilot help pane in the user experience." title="Copilot help pane in the user experience" width="720" />](../copilot/media/copilot-help-welcome.png#lightbox)
 
-For more information, see [Generative help and guidance with Copilot (preview)](../copilot/copliot-generative-help.md).
+For more information, see [Generative help and guidance with Copilot](../copilot/copliot-generative-help.md).
 
 ## Get notified about changes through an RSS feed
 
@@ -92,13 +86,8 @@ On the *learn.microsoft.com* website, each documentation article encourages you 
 
 ## Contribute to the documentation
 
-You can contribute and make edits to the documentation. To get started, select the **Edit** button (pencil symbol) on an article. The following video shows how you can contribute to our documentation.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
-
-The [How to contribute to the Microsoft Dynamics 365 documentation](https://youtu.be/m5djioozRbg) video (shown above) is included in the Microsoft Dynamics 365 channel on YouTube.
-
-For more information, see the [Microsoft Learn contributor guide](/contribute), which is published by the team that built the Microsoft Learn site.
+You can contribute and make edits to the documentation. To get started, select the **Edit** button (pencil symbol) on an article. 
+For more information, see [Contribute to Dynamics 365 documentation](/dynamics365/get-started/contribute), which is published by the team that built the Microsoft Learn site.
 
 > [!NOTE]
 > We only accept contributions to our English content at this time.
@@ -186,5 +175,6 @@ The following table lists our websites. Sites that have an asterisk (\*) next to
 | [Previous versions](/previous-versions/dynamics/) | This site hosts content from previous releases. |
 | [Dynamics Community](https://community.dynamics.com/) | This site hosts blogs, forums, and videos. |
 | [Microsoft.com/dynamics365](https://www.microsoft.com/dynamics365/home) | This site provides evaluation and sales information. |
+| [The Dynamics 365 guidance hub](/dynamics365/guidance/) | This site hosts or links to resources that can help with Dynamics 365 implementation projects. | 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

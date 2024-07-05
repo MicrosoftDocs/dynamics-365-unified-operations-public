@@ -1,19 +1,18 @@
 ---
 title: CONTAINS ER function
-description: This article provides information about how the CONTAINS Electronic reporting (ER) function is used.
+description: Learn about how the CONTAINS Electronic reporting (ER) function is used, including syntax strings, arguments, return values, usage notes, and examples.
 author: kfend
-ms.date: 02/11/2021
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
-ms.search.validFrom: 2021-02-01
-ms.dyn365.ops.version: AX 10.0.18
+ms.topic: article
+ms.date: 02/11/2021
 ms.custom: 
-ms.assetid: 
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
+ms.search.validFrom: 2021-02-01
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
+ms.dyn365.ops.version: AX 10.0.18
+ms.assetid: 
 ---
 
 # CONTAINS ER function

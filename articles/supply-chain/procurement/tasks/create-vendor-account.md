@@ -1,15 +1,15 @@
 ---
 title: Create a vendor account
-description: This procedure shows how to create a vendor account, and add an address and contact information. 
-author: GalynaFedorova
-ms.author: gfedorova
-ms.reviewer: kamaybac
-ms.search.form: VendTable, LogisticsPostalAddressGrid, DirPartyLookup, LogisticsPostalAddress, SysLookupMultiSelectGrid, WHSFilterGenerallyAvail
+description: Learn how to create a vendor account, and add an address and contact information, including step-by-step processes for adding addresses and contact info.
+author: Henrikan
+ms.author: henrikan
 ms.topic: how-to
 ms.date: 12/08/2022
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: VendTable, LogisticsPostalAddressGrid, DirPartyLookup, LogisticsPostalAddress, SysLookupMultiSelectGrid, WHSFilterGenerallyAvail
 ---
 
 # Create a vendor account

@@ -1,13 +1,13 @@
 ---
 title: Deploy and access development environments
-description: This article describes how to access development instances, configure local development VMs, and find configuration settings for developers and administrators.
+description: Learn how to access development instances, configure local development VMs, and find configuration settings for developers and administrators.
 author: laneswenka
-ms.date: 09/15/2022
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: laswenka
+ms.topic: article
+ms.date: 02/16/2024
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37
 ---
@@ -23,24 +23,25 @@ This article describes how to access development instances, configure local deve
 > - In certain circumstances, a fresh deploy of a Tier 1 environment may be requested by Microsoft Support to resolve an issue.
 > - Development environments shouldn't contain business critical data and are considered disposable.
 > - Only 120 environments are support per tenant. We recommend that you limit the number of cloud-hosted environments under a specific tenant to allow enough capacity to be able to deploy sandbox and production environments.
- 
+> - For cloud-hosted environments older than 6 months, it's advisable to review the supported software list on the [Microsoft Dynamics 365 Finance + Operations supported software](../deployment/onprem-compatibility.md) page.
+
 
 ## Definitions
 
 | Term      | Definition                             |
 |-----------|----------------------------------------|
-| End user  | A user who accesses an instance through the web client. The end user must have Microsoft Azure Active Directory (Azure AD) credentials to access an instance and must be provisioned/added as a user of that instance. |
-| Developer | A user who will develop code through the Microsoft Visual Studio environment. A developer requires Remote Desktop access to development environment (VM). The developer account must be an administrator on the VM. |
+| End user  | A user who accesses an instance through the web client. The end user must have Microsoft Microsoft Entra credentials to access an instance and must be provisioned/added as a user of that instance. |
+| Developer | A user who develops code through the Microsoft Visual Studio environment. A developer requires Remote Desktop access to development environment (VM). The developer account must be an administrator on the VM. |
 
 
 ## Deploy cloud development environments
 
-To deploy a cloud development environment in your Lifecycle Services (LCS) project:
+To deploy a cloud development environment in your Lifecycle Services project:
 
-1. Create a connection between an LCS project and your Azure subscription. You'll need your Azure subscription ID and authorize the use of the subscription.
+1. Create a connection between an Lifecycle Services project and your Azure subscription. You need your Azure subscription ID and authorize the use of the subscription.
 2. Select **+** under **Environments** to deploy.
 
-    ![LCS Onboard methodology.](media/access-instances-5.jpeg)
+    ![Lifecycle Services Onboard methodology.](media/access-instances-5.jpeg)
 
 3. Select an application and platform version.
 4. Select an environment topology. For more information, see [Sign up for preview subscriptions](sign-up-preview-subscription.md).
@@ -50,25 +51,25 @@ To deploy a cloud development environment in your Lifecycle Services (LCS) proje
 
 ![Cloud-hosted instances.](media/CloudHostedPicture.jpg)
 
-## Cloud environment that is provisioned through LCS
+## Cloud environment that is provisioned through Lifecycle Services
 
-When a cloud environment is provisioned through LCS:
+When a cloud environment is provisioned through Lifecycle Services:
 + The user who requests the cloud environment is provisioned as the administrator in that environment.
-+ User accounts are provisioned on the development VM to allow access to the environment using Remote Desktop, these credentials are accessible on the environment page in LCS.
++ User accounts are provisioned on the development VM to allow access to the environment using Remote Desktop, these credentials are accessible on the environment page in Lifecycle Services.
 
 ### Access an instance through a URL
 
-The system can be accessed by end users. The administrator can add users to this system by using the **Users** page in the instance. These additional users don't have to be users in LCS. You obtain the base URL for the cloud environment from your LCS project site.
+The system can be accessed by end users. The administrator can add users to this system by using the **Users** page in the instance. These users don't have to be users in Lifecycle Services. You obtain the base URL for the cloud environment from your Lifecycle Services project site.
 
-1. Go to your LCS project navigation menu, and select **Cloud-hosted environments**.
+1. Go to your Lifecycle Services project navigation menu, and select **Cloud-hosted environments**.
 2. In the environment list section, select the deployed environment.
 3. When the environment page opens, you can access the application by clicking **Login** &gt; **Log on to finance and operations** in the upper-right corner.
-4. Use valid end user credentials to sign in to the application. If the current LCS user is the user who originally deployed the environment, that user is probably a valid end user and the administrator of the application.
+4. Use valid end user credentials to sign in to the application. If the current Lifecycle Services user is the user who originally deployed the environment, that user is probably a valid end user and the administrator of the application.
 5. In your browser, make a note of the base URL after you sign in. For example, the base URL might be `https://dynamicsAx7aosContoso.cloud.dynamics.com`.
 
 ### Access the cloud instance through Remote Desktop
 
-Cloud environments can be accessed both as an end user and as a developer. The developer gets access to the system through Remote Desktop credentials. The Remote Desktop credentials are obtained from the environment page on the LCS project site (see the illustration earlier in this article).
+Cloud environments can be accessed both as an end user and as a developer. The developer gets access to the system through Remote Desktop credentials. The Remote Desktop credentials are obtained from the environment page on the Lifecycle Services project site (see the illustration earlier in this article).
 
 ![Restricted admin access.](media/restricted-admin.png)
 
@@ -76,19 +77,19 @@ For environments deployed **before Platform update 12**:
 1. Click the VM name.
 2. Use the local administrator user name and password that are shown to connect to the cloud VM through Remote Desktop. You can reveal the password by selecting the show password icon.
 
-For any environments deployed **on or after Platform update 12**, there are distinct accounts, a developer account and an admin account. 
+For any environments deployed **on or after Platform update 12**, there are distinct accounts, a developer account, and an admin account. 
 
-After you sign in to the environment through Remote Desktop, if you want to access the local application from the browser, use the same base URL that you use to access the application from a remote computer. The previous section explains how to obtain this base URL from LCS.
+After you sign in to the environment through Remote Desktop, if you want to access the local application from the browser, use the same base URL that you use to access the application from a remote computer. The previous section explains how to obtain this base URL from Lifecycle Services.
 
 ### Delete cloud-hosted developer environments
 
-When you're done with the developer environment, or in some cases where troubleshooting an infrastructure issue is too time consuming, you can always delete the environment from LCS and create a new one later.  To delete a cloud-hosted environment from LCS, use the following steps:
+When you're done with the developer environment, or in some cases where troubleshooting an infrastructure issue is too time consuming, you can always delete the environment from Lifecycle Services and create a new one later.  To delete a cloud-hosted environment from Lifecycle Services, use the following steps:
 
-1. Go to your LCS project navigation menu, and select **Cloud-hosted environments**.
-2. Highlight the environment that you want to remove and select **Deallocate**, which will power down the machine in your Azure subscription.
-3. After the deallocation is successful, the environment will be in a *Deallocated* state.  You may now use the **Delete** button to start the deletion process.
+1. Go to your Lifecycle Services project navigation menu, and select **Cloud-hosted environments**.
+2. Highlight the environment that you want to remove and select **Deallocate**, which power down the machine in your Azure subscription.
+3. After the deallocation is successful, the environment is in a *Deallocated* state.  You may now use the **Delete** button to start the deletion process.
 
-You can't delete a cloud-hosted environment if the virtual network (VNET) that was created with it is also being used by other cloud-hosted environments. This scenario isn't common, but in some cases customers want all their developer environments to reuse an existing VNET so that they can share files more easily between them. If you have implemented this scenario, you must delete the other environments before you delete the base environment that created the original VNET.
+You can't delete a cloud-hosted environment if the virtual network (VNET) that was created with it is also being used by other cloud-hosted environments. This scenario isn't common, but in some cases customers want all their developer environments to reuse an existing VNET so that they can share files more easily between them. If you implemented this scenario, you must delete the other environments before you delete the base environment that created the original VNET.
 
 If the delete operation fails, check to see if one of the following issues may have occurred:
 
@@ -97,18 +98,18 @@ If the delete operation fails, check to see if one of the following issues may h
 - The Azure subscription has been disabled.
 - There are Azure policies in your subscription that prevent you from deleting one or more resources in your environment's resource group.
 
-If LCS wasn't able to successfully complete the delete operation, the operation will be marked as *Incomplete*. Use the **Delete LCS metadata** button to clean up this environment's metadata from the LCS backend systems. 
+If Lifecycle Services wasn't able to successfully complete the delete operation, the operation is marked as *Incomplete*. Use the **Delete Lifecycle Services metadata** button to clean up this environment's metadata from the Lifecycle Services backend systems. 
 
 > [!NOTE]
 > This operation will not try to delete the resources in the Azure subscription. It is the customer's responsibility to manually remove the environment's resource group if it still exists. 
 
-You can easily identify the environment’s resource group in the Azure subscription, as it will have the same name as the environment in LCS.
+You can easily identify the environment’s resource group in the Azure subscription, as it has the same name as the environment in Lifecycle Services.
 
 ## VM that is running locally
 
-A virtual hard disk (VHD) is made available for download from LCS, so that you can set it up on a local machine. This system is intended to be accessed by a developer and is a preconfigured one-box development environment of finance and operations apps. The VHD is available in the Shared Asset library of LCS under the asset type **Downloadable VHD**.
+A virtual hard disk (VHD) is made available for download from Lifecycle Services, so that you can set it up on a local machine. This system is intended to be accessed by a developer and is a preconfigured one-box development environment of finance and operations apps. The VHD is available in the Shared Asset library of Lifecycle Services under the asset type **Downloadable VHD**.
 
-1. Go to the LCS main page and select **Shared asset library** or go to [Shared Asset Library](https://lcs.dynamics.com/V2/SharedAssetLibrary).
+1. Go to the Lifecycle Services main page and select **Shared asset library** or go to [Shared Asset Library](https://lcs.dynamics.com/V2/SharedAssetLibrary).
 2. Select the asset type **Downloadable VHD**.
 3. Find the VHD you're looking for based on the desired finance and operations version. The VHD is divided into multiple file parts that you need to download. For example, the asset files that start with "VHD - 10.0.5" are the different files you need in order to install version 10.0.5.
 4. Download all files (parts) associated with the desired VHD to a local folder.
@@ -156,13 +157,13 @@ For POS customizations, you must also follow these steps on the guest VM.
 
 ### Provision the administrator user
 
-For developer access, you must be an administrator on the instance. For environments that are provisioned through LCS, we encourage you to deploy with the correct user. For more information, see [Frequently asked questions](access-instances.md#frequently-asked-questions). To provision your own credentials as an administrator on a local VM, run the Admin user provisioning tool. On the local VM, a link is provided on the desktop.
+For developer access, you must be an administrator on the instance. For environments that are provisioned through Lifecycle Services, we encourage you to deploy with the correct user. For more information, see [Frequently asked questions](access-instances.md#frequently-asked-questions). To provision your own credentials as an administrator on a local VM, run the Admin user provisioning tool. On the local VM, a link is provided on the desktop.
 
 1. Run the admin user provisioning tool as an administrator (right-click the icon, and then click **Run as administrator**).
 2. Enter your email address, and then select **Submit**.
 
 > [!NOTE]
-> The Admin user provisioning tool isn't supported in environments that are provisioned through LCS. It should be used only on local VMs.
+> The Admin user provisioning tool isn't supported in environments that are provisioned through Lifecycle Services. It should be used only on local VMs.
 
 > [!NOTE]
 > For local VMs that use the virtual hard drive (VHD) that was released for versions 10.0.24 and later, the instructions in [Set up the downloadable VHD for first use](vhd-setup.md) should be used instead.
@@ -179,7 +180,7 @@ After the user is provisioned as an administrator, that user can access the inst
 
 The URL of the POS app is `https://usnconeboxax1pos.cloud.onebox.dynamics.com/`. 
 
-The URL of the Cloud POS app is `https://usnconeboxax1pos.cloud.onebox.dynamics.com`. After you complete the configuration steps, this VM is provisioned with your Azure AD tenant. Your Azure AD admin account is mapped to a cashier worker account in demo data. You can use this cashier account to easily activate a POS device in this environment.
+The URL of the Cloud POS app is `https://usnconeboxax1pos.cloud.onebox.dynamics.com`. After you complete the configuration steps, this VM is provisioned with your Microsoft Entra tenant. Your Microsoft Entra admin account is mapped to a cashier worker account in demo data. You can use this cashier account to easily activate a POS device in this environment.
 
 - Cashier user ID: **000160**
 - Cashier password: **123**
@@ -232,7 +233,7 @@ SELECT CONNECTIONSTRING FROM dbo.RETAILCONNDATABASEPROFILE -- payment service co
 If preloaded values are found, set the attribute values to empty with scripts similar to the following examples.
 
 > [!WARNING]
-> The example UPDATE scripts provided below are illustrative for newly provisioned environments experiencing the certificate issue described above. You should only update values for the intended table or rows to avoid disruptive or destructive data updates. Additional selectors may be required if updating specific rows for the tables being updated.
+> The example UPDATE scripts provided below are illustrative for newly provisioned environments experiencing the certificate issue described above. You should only update values for the intended table or rows to avoid disruptive or destructive data updates. More selectors may be required if updating specific rows for the tables being updated.
 
 ```SQL
 UPDATE dbo.RETAILHARDWAREPROFILE SET SECUREMERCHANTPROPERTIES=";)
@@ -265,44 +266,47 @@ This process might take a while. The process is completed when the cmd.exe windo
 
 ## Frequently asked questions
 
-### Can we join cloud-hosted environments to our Azure AD domain as it is currently deployed in a workgroup?
-These environments are self-contained and haven't been tested, nor are they supported when joined to an Azure AD domain when deployed via Azure.  
+### Can we join cloud-hosted environments to our Microsoft Entra domain as it is currently deployed in a workgroup?
+These environments are self-contained and haven't been tested, nor are they supported when joined to an Microsoft Entra domain when deployed via Azure.  
 
-### Is there a way to hide the local account passwords in LCS?
+### Is there a way to hide the local account passwords in Lifecycle Services?
 This is only possible if you lower a user's security role in the project to *Project team member* role, and it isn't possible to hide the local account passwords for the *Environment manager*, or *Project owner* roles.
 
 ### Are cloud-hosted environments supported with Azure Bastion?
 These environments haven't been tested, nor are they supported with Azure Bastion.  
 
-### Environment is in a failed state with the error message, "Updated AAD Tenant is missing reply URL configuration". How do I resolve this issue?
+### Environment is in a failed state with the error message, "Updated Microsoft Entra ID Tenant is missing reply URL configuration". How do I resolve this issue?
 This message indicates that a Tier 1/customer-managed environment is configured with an Azure AD tenant different from the one used at the time of deployment. There are different options available to help resolve this issue:
+
 1. (Recommended) Delete the environment and redeploy with the tenant in which the environment will be used. 
 2. Revert the settings to the tenant configuration used at the time of deployment.
 3. Follow the instructions in [How can I fix my existing environment when my environment is in a failed state or if I am getting sign-in errors?](access-instances.md#how-can-i-fix-my-existing-environment-when-my-environment-is-in-a-failed-state-or-i-am-getting-sign-in-errors) to update the reply URL in the target tenant.  
 
 ### As a partner/ISV, how can I facilitate cloud-hosted deployments for customers that I work with?
-A Tier 1/customer-managed environment should be deployed under the customer's Azure AD tenant, to ensure that all the configuration and integrations are correctly provisioned for any given environment. The tenant and environment association is determined based on the user who deployed the environment.
+A Tier 1/customer-managed environment should be deployed under the customer's Microsoft Entra tenant, to ensure that all the configuration and integrations are correctly provisioned for any given environment. The tenant and environment association is determined based on the user who deployed the environment.
 
 To facilitate cloud-hosted deployments, we recommend that partners follow this step to create customer-specific, cloud-hosted environments. In this way, they'll ensure that the deployment is registered under the correct tenant.
 
 - Deploy the environment via a user from the tenant that the environment will be used with. The Admin user provisioning tool shouldn't be used to change the tenant for a Tier 1/customer-managed/cloud-hosted environment.
 
 > [!NOTE]
-> The Azure AD tenant that is associated with the Azure subscription doesn't play any role in environment configuration. The Azure subscription and the corresponding connector configuration are used only to deploy Azure resources.
+> The Microsoft Entra tenant that is associated with the Azure subscription doesn't play any role in environment configuration. The Azure subscription and the corresponding connector configuration are used only to deploy Azure resources.
 
-### I have run the Admin user provisioning tool on my development environment, and now I receive the following sign-in error: "Error: AADSTS50011: The reply URL specified in the request doesn't match the reply URLs configured for the application."
-As was stated earlier, it's important that finance and operations environments be deployed under the correct Azure AD tenant. For Tier 1/customer-managed environments that are deployed via LCS, changes to the Azure AD tenant settings aren't supported after deployment.
+
+### I have run the Admin user provisioning tool on my development environment, and now I receive the following sign-in error: "Error: Microsoft EntraSTS50011: The reply URL specified in the request doesn't match the reply URLs configured for the application."
+As was stated earlier, it's important that finance and operations environments be deployed under the correct Microsoft Entra tenant. For Tier 1/customer-managed environments that are deployed via LCS, changes to the Microsoft Entra tenant settings aren't supported after deployment.
+
 
 ### How can I fix my existing environment when my environment is in a failed state or I am getting sign-in errors?
 
-If you have environments where the Admin user provisioning tool was previously used to update the tenant settings, we recommend that you delete those environments and then redeploy them under the correct Azure AD tenant.
+If you have environments where the Admin user provisioning tool was previously used to update the tenant settings, we recommend that you delete those environments and then redeploy them under the correct Microsoft Entra tenant.
 
-If an existing environment can't be deleted and redeployed, its URL must be added to the configured Azure AD tenant. The following commands can be run by the tenant admin. 
+If an existing environment can't be deleted and redeployed, its URL must be added to the configured Microsoft Entra tenant. The following commands can be run by the tenant admin. 
 
 > [!Note]
-> Since these URLs are being added manually, the clean-up of these URLs will also have to be done manually when the environment is deleted.
+> Since these URLs are being added manually, the clean-up of these URLs also has to be done manually when the environment is deleted.
 
-1. If not already on your machine you will need to install the Microsoft.Graph Powershell module.
+1. If not already on your machine you need to install the Microsoft.Graph PowerShell module.
 
     ```powershell
     Install-Module Microsoft.Graph
@@ -311,21 +315,21 @@ If an existing environment can't be deleted and redeployed, its URL must be adde
 2. Retrieve the following values from the web.config file.
 
     ```powershell
-    $AADTenant = <Value of Aad.TenantDomainGUID from web.config>
+    $Microsoft EntraTenant = <Value of Aad.TenantDomainGUID from web.config>
     $EnvironmentUrl = <Value of Infrastructure.HostUrl from web.config>
 
     # For example, if value is spn:fd663e81-110e-4c18-8995-ddf534bcf5e1 then take only fd663e81-110e-4c18-8995-ddf534bcf5e1
-    $AADRealm = <Value of Aad.Realm from web.config without spn: prefix. >
+    $Microsoft EntraRealm = <Value of Aad.Realm from web.config without spn: prefix. >
     ```
 
-3. Run the following commands **via the tenant admin account for the Azure AD tenant in the web.config file**.
+3. Run the following commands **via the tenant admin account for the Microsoft Entra tenant in the web.config file**.
 
     ```powershell
     # Using tenant admin account under this tenant login via Microsoft Graph PowerShell cmdlet.
-    Connect-MgGraph -TenantId $AADTenant -Scopes "Application.ReadWrite.All"
+    Connect-MgGraph -TenantId $Microsoft EntraTenant -Scopes "Application.ReadWrite.All"
 
     # Get Service Principal details
-    $SP = Get-MgServicePrincipal -Filter "AppId eq '$AADRealm'"
+    $SP = Get-MgServicePrincipal -Filter "AppId eq '$Microsoft EntraRealm'"
     
     # Add Reply URLs
     [System.Collections.ArrayList]$ReplyUrls = $SP.ReplyUrls
@@ -340,10 +344,9 @@ If an existing environment can't be deleted and redeployed, its URL must be adde
     ```
 
 ### I've fixed my environment, but it's still in a failed state. How do I resolve this issue?
-Restart your environment from LCS by first performing **Stop** and then **Start** operations against your environment. If the environment configuration is found to be correct, then the environment URL will be restored automatically **within 2 hours** of the **Start** operation.
+Restart your environment from Lifecycle Services by first performing **Stop** and then **Start** operations against your environment. If the environment configuration is found to be correct, then the environment URL is restored automatically **within 2 hours** of the **Start** operation.
 
-### While running the Admin user provisioning tool on my local development environment, I get the error "The value's length for key 'password' exceeds its limit of '128'."
+### When the Admin user provisioning tool is run on my local development environment, I get the error "The value's length for key 'password' exceeds its limit of '128'."
 If you're using the virtual hard drive (VHD) that was released for versions 10.0.24 and later, the Generate Self-Signed Certificates tool needs to be run before the Admin user provisioning tool. For more information, see [Set up the downloadable VHD for first use](vhd-setup.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

@@ -1,28 +1,14 @@
 ---
-# required metadata
-
 title: Sales of taxable goods that have a discount and a provisional assessment
-description: This article provides information about sales of taxable goods that have a discount and a provisional assessment.
-author: EricWangChen
-ms.date: 06/04/2019
+description: Learn about sales of taxable goods that have a discount and a provisional assessment, including processes for creating sales orders and posting invoices.
+author: epodkolzina
+ms.author: epodkolzina
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.date: 06/04/2019
+ms.reviewer: johnmichalak  
 ms.search.region: India
-# ms.search.industry: 
-ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
-
 ---
 
 # Sales of taxable goods that have a discount and a provisional assessment

@@ -1,28 +1,20 @@
 --- 
-# required metadata 
- 
 title: Count inventory in a warehouse
-description: This article describes the process of creating and posting an inventory counting journal in order to count a specific item at a location in the warehouse. 
-author: yufeihuang
+description: Learn about the process of creating and posting an inventory counting journal in order to count a specific item at a location in the warehouse.
+author: yufei-huang
+ms.author: yufeihuang
+ms.topic: how-to
 ms.date: 07/09/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: InventJournalCount, InventJournalCreate, HcmWorkerLookUp, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: kamaybac   
+audience: Application User   
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: InventJournalCount, InventJournalCreate, HcmWorkerLookUp, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Count inventory in a warehouse
 
 [!include [banner](../../includes/banner.md)]

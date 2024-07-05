@@ -1,13 +1,13 @@
 ---
 title: Integrated sites and warehouses
-description: This article describes the integration of site and warehouse data between finance and operations and Dataverse.
+description: Learn how the integration of site and warehouse data between finance and operations and Dataverse, including a table showing various templates.
 author: t-benebo
-ms.date: 10/09/2019
-ms.topic: article
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: global
 ms.author: benebotg
+ms.topic: article
+ms.date: 10/09/2019
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: global
 ms.search.validFrom: 2019-08-15
 ---
 

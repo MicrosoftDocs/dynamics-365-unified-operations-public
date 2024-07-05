@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up segregation of duties
-description: You can set up rules to separate tasks that must be performed by different users. 
-author: peakerbl
+description: Learn about how you can set up rules to separate tasks that must be performed by different users, including a step-by-step process. 
+author: sericks007
+ms.author: sericks
+ms.topic: how-to
 ms.date: 01/04/2021
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: SysSecSegregationOfDutiesRule   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: sericks
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application User  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: SysSecSegregationOfDutiesRule
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up segregation of duties
 
 [!include [banner](../../../finance/includes/banner.md)]

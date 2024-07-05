@@ -1,15 +1,14 @@
 ---
 title: SPED fiscal files
-description: This article explains how to set up and generate SPED fiscal export files for Brazil.
+description: Learn how to set up and generate SPED fiscal export files for Brazil, including an outline and process on generating the SPED fiscal export file for a month.
 author: AdamTrukawka
-ms.date: 08/27/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
+ms.reviewer: johnmichalak
+ms.search.region: Brazil
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ---

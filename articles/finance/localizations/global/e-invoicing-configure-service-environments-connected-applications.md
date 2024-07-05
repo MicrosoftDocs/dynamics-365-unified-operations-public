@@ -1,20 +1,19 @@
 ---
 title: Configure service environments and connected applications
-description: This article provides information about how to configure your service environments and connected applications.
-author: gionoder
-ms.date: 02/09/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Global
-ms.author: gionoder
-ms.search.validFrom: 2020-07-08
-ms.dyn365.ops.version: AX 10.0.12
+description: Learn about how to configure your service environments and connected applications, including an overview on creating a service environment.
+author: ilikond
+ms.author: ikondratenko
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
+ms.reviewer: johnmichalak
 ms.collection: get-started
-ms.assetid: 
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2020-07-08
 ms.search.form: 
+ms.dyn365.ops.version: AX 10.0.12
 ---
 
 # Configure service environments and connected applications

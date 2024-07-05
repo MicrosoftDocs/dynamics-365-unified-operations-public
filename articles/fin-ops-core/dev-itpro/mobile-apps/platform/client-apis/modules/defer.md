@@ -1,12 +1,13 @@
 ---
 title: Defer module
-description: Defer type
+description: Learn about the Defer module, which includes the Deferred type and the all, defer, reject, and resolve functions.
 author: jasongre
-ms.date: 05/26/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # Defer module

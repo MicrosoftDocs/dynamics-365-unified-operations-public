@@ -1,17 +1,14 @@
 ---
 title: EU Sales list for Lithuania
-description: This article provides information about the European Union (EU) sales list report for Lithuania.
-author: AdamTrukawka
-ms.date: 05/31/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
+description: Learn about the European Union (EU) sales list report for Lithuania, including a step-by-step process on setting up information about the company.
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
+ms.reviewer: johnmichalak
 audience: Application User
-ms.reviewer: kfend
-ms.search.region: 
-ms.author: atrukawk
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
 ---
 
 # EU Sales list for Lithuania

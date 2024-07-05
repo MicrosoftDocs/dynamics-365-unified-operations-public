@@ -1,12 +1,12 @@
 ---
 title: Set up a legal entity and tax information for Paraguay
-description: This article explains how to set up a legal entity and tax information for a company in Paraguay.
+description: Learn how to set up a legal entity and tax information for a company in Paraguay, including a step-by-step process on creating a legal entity.
 author: Cpicon85
-ms.date: 12/07/2023
-ms.topic: Article
-ms.reviewer: kfend
 ms.author: v-cpicon
+ms.topic: article
+ms.date: 12/07/2023
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Set up a legal entity and tax information for Paraguay

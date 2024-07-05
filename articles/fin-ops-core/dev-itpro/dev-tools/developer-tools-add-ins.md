@@ -1,13 +1,13 @@
 ---
 title: Tools add-ins for Visual Studio
-description: This article reviews the Add-ins infrastructure that has been added to Microsoft Visual Studio, so that developers can more easily add tools for development.
-author: gianugo
-ms.date: 08/17/2017
+description: Learn about the Add-ins infrastructure that has been added to Microsoft Visual Studio, so that developers can more easily add tools for development.
+author: josaw1
+ms.author: josaw
 ms.topic: article
+ms.date: 08/17/2017
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: a73c64e1-7e24-4845-b5da-35b1678ddb60

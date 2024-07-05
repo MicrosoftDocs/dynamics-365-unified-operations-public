@@ -1,18 +1,19 @@
 ---
-# required metadata
-
 title: Platform updates for version 10.0.35 of finance and operations apps (August 2023)
-description: This article lists the features that are included in the platform updates for version 10.0.35 of finance and operations apps.
+description: Learn about the features that are included in the platform updates for version 10.0.35 of finance and operations apps released in August 2023.
 author: johnmichalak
-ms.date: 05/25/2023
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: johnmichalak
+ms.topic: conceptual
+ms.date: 04/12/2024
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-10-14
-
 ---
+
 # Platform updates for version 10.0.35 of finance and operations apps (August 2023)
 
 [!include [banner](../../../finance/includes/banner.md)]

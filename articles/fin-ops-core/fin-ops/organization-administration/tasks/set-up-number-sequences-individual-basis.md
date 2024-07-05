@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up number sequences on an individual basis
-description: This article explains how to set up number sequences on an individual basis.  
-author: SunilGarg  
-ms.date: 08/16/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: NumberSequenceTableListPage, NumberSequenceDetails   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: sericks
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about how to set up number sequences on an individual basis, including a step-by-step process for using the set up number sequences wizard.  
+author: SunilGarg
 ms.author: sunilg
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/16/2019
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Application User   
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: NumberSequenceTableListPage, NumberSequenceDetails  
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up number sequences on an individual basis
 
 [!include [banner](../../includes/banner.md)]

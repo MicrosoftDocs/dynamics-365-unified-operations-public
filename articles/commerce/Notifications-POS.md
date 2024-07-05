@@ -2,32 +2,22 @@
 # required metadata
 
 title: Show order notifications in the point of sale (POS)
-description: This article describes how to enable order notifications in the point of sale and the notification framework.
+description: This article describes how to enable order notifications in the point of sale and the notification framework in Microsoft Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-ms.date: 03/12/2021
+ms.date: 05/28/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
 ms.search.form:  RetailOperations, RetailFunctionalityProfile
 audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: shajain
-ms.search.validFrom: 2017-10-30
-ms.dyn365.ops.version: 
-
 ---
 
 # Show order notifications in the point of sale (POS)
 
 [!include [banner](includes/banner.md)]
+
+This article describes how to enable order notifications in the point of sale and the notification framework in Microsoft Dynamics 365 Commerce.
 
 Store associates may be assigned various tasks in their store, such as fulfilling orders or performing inventory receiving or stock counts. The point of sale (POS) client provides a single application where associates can be notified of these tasks. The notification framework in the POS helps by letting retailers configure role-based notifications. Starting in Dynamics 365 Retail with application update 5, these notifications can be configured for POS operations.
 

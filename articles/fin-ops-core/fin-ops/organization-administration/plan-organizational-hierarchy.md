@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Plan your organizational hierarchy
-description: Before you set up organizations and organization hierarchies, make sure that you understand how to best model your business. 
+description: Before you set up organizations and organization hierarchies, make sure that you understand how to best model your business.
 author: sericks007
-ms.date: 02/19/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: babde0c6-bb5d-45ae-95ca-2af75a0ea292
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: sericks
+ms.topic: article
+ms.date: 02/19/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: OMHierarchyManager, OMLegalEntity, OMOperatingUnit
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: babde0c6-bb5d-45ae-95ca-2af75a0ea292
 ---
 
 # Plan your organizational hierarchy

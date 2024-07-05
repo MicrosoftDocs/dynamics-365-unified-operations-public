@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: MY-00007 Self-billed invoices
-description: This article explains how to create and print a vendor self-billed invoice. 
+description: Learn how to create and print a vendor self-billed invoice, including prerequisites and a step-by-step process for printing self-billing invoices. 
 author: kfend
-ms.date: 08/01/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LedgerParameters, DefaultDashboard, PurchTable, PurchCreateOrder, EnumLookupForm_RU, InventItemIdLookupPurchase, TaxGroupLookup, TaxTmpWorkTrans, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog, SrsReportViewerForm   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Malaysia
-# ms.search.industry: 
 ms.author: kfend
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/01/2023
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application User 
+ms.search.region: Malaysia
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerParameters, DefaultDashboard, PurchTable, PurchCreateOrder, EnumLookupForm_RU, InventItemIdLookupPurchase, TaxGroupLookup, TaxTmpWorkTrans, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog, SrsReportViewerForm
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # MY-00007 Self-billed invoices
 
 [!include [banner](../../includes/banner.md)]

@@ -1,18 +1,16 @@
 ---
 title: Exchange adjustment
-description: This article provides information about bank exchange adjustments for Russia.
+description: Learn about bank exchange adjustments for Russia, including outlines on accounting of exchange rate differences and setting up ledger accounts.
 author: AdamTrukawka
-ms.date: 08/16/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 08/16/2019
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2019-06-28
-ms.dyn365.ops.version: 10.0.0
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.0
 ---
 
 # Exchange adjustment

@@ -1,13 +1,13 @@
 ---
 title: Available geographies for Dynamics 365 finance and operations apps
-description: This article provides information about the supported geographies and endpoints for Microsoft Dynamics 365 finance and operations apps.
+description: Learn about the supported geographies and endpoints for Microsoft Dynamics 365 finance and operations apps, including an overview of data residency.
 author: ShaileshNikam-MSFT
-ms.date: 05/10/2023
-ms.topic: article
-audience: IT Pro
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: shailesn
+ms.topic: article
+ms.date: 05/10/2023
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2022-04-28
 ---
 

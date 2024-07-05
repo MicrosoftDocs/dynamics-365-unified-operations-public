@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Define a tax rate type and assign it to relevant master data  
-description: This article explains how to define the tax rate type and assign it to the relevant master data. 
-author: EricWangChen 
-ms.date: 03/18/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
+description: Learn how to define the tax rate type and assign it to the relevant master data, including outlines on tax rate types and when to use them. 
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
+ms.reviewer: johnmichalak  
 ms.search.region: India
-# ms.search.industry: 
-ms.author: wangchen
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 10.0.5
-
 ---
 
 # Define tax rate type

@@ -1,15 +1,13 @@
 ---
 title: Prepayments management
-description: This article provides information about paying value-added tax (VAT) when prepayments are received from customers.
+description: Learn about paying value-added tax (VAT) when prepayments are received from customers, including an outline on processing prepayments from customers.
 author: AdamTrukawka
-ms.date: 10/07/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 10/07/2019
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 ---

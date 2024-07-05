@@ -1,12 +1,13 @@
 ---
 title: PartMetadata type
-description: Part metadata type.
+description: Learn about the part metadata type, which includes the BoundEntity, BoundField, Description, Design, Editable, ExtType, HelpText, and other properties.
 author: jasongre
-ms.date: 05/24/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # PartMetadata type

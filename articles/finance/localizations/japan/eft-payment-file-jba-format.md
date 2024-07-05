@@ -1,19 +1,18 @@
 ---
 title: Generate EFT payment file with JBA format
-description: This article explains how to generate an EFT file with the JBA format.
+description: Learn how to generate an EFT file with the JBA format, including a step-by-step process using the JPMF demo data company.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Generate EFT payment file with JBA format
 
 [!include [banner](../../includes/banner.md)]

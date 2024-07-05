@@ -1,12 +1,13 @@
 ---
 title: While select statement
-description: This article describes while select statements in the X++ language.
+description: Learn about while select statements in the X++ language, including various examples and outlines of various functions and additional statements.
 author: josaw1
-ms.date: 06/16/2020
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 06/16/2020
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

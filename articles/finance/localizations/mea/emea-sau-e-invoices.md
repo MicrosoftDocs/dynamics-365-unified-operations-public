@@ -1,18 +1,16 @@
 ---
 title: Customer electronic invoices in Saudi Arabia
-description: This article explains how to configure and submit customer electronic invoices in Saudi Arabia.
-author: mrolecki
-ms.date: 11/08/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn how to configure and submit customer electronic invoices in Saudi Arabia, including prerequisites and an outline on configuring registration numbers.
+author: ilikond
+ms.author: ikondratenko
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
+ms.reviewer: johnmichalak
 ms.search.region: Saudi Arabia
-ms.author: mrolecki
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.21
-ms.search.form: 
 ---
 
 # Customer electronic invoices in Saudi Arabia

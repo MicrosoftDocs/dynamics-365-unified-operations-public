@@ -389,6 +389,7 @@ PRODUCTCONFIGURATIONID | > | msdyn_productconfiguration.msdyn_productconfigurati
 PRODUCTSIZEID | > | msdyn_productsize.msdyn_productsize |
 PRODUCTSTYLEID | > | msdyn_productstyle.msdyn_productstyle |
 FIELDSERVICEPRODUCTTYPE | >><br>`Inventory` : `690970000`<br>`NonInventory` : `690970001`<br>`Service` : `690970002` | msdyn_fieldserviceproducttype |
+[None] | >> | msdyn_shouldsyncwithsharedproductdetails | False
 
 ###  <a name="217"></a>CDS sales order headers (salesorders)
 
@@ -979,6 +980,145 @@ ISSALESPROCESSINGSTOPPED | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_issale
 ISINVENTORYWAREHOUSEMANDATORY | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_isinventorywarehousemandatory |
 ISPROCUREMENTWAREHOUSEMANDATORY | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_isprocurementwarehousemandatory |
 ISSALESWAREHOUSEMANDATORY | ><<br>`no` : `False`<br>`yes` : `True` | msdyn_issaleswarehousemandatory |
+
+###  <a name="242"></a>DV released distinct products (products)
+
+This template synchronizes data between finance and operations apps and Dataverse.
+
+Finance and operations field | Map type | Customer engagement column | Default value
+---|---|---|---
+PRODUCTNUMBER | > | msdyn_productnumber |
+PRODUCTNAME | > | name |
+PRODUCTDESCRIPTION | > | description |
+ITEMNUMBER | > | msdyn_itemnumber |
+PRODUCTTYPE | >><br>`item` : `1`<br>`service` : `3` | producttypecode |
+PRODUCTCOLORID | > | msdyn_productcolor.msdyn_productcolorname |
+PRODUCTCONFIGURATIONID | > | msdyn_productconfiguration.msdyn_productconfiguration |
+PRODUCTSIZEID | > | msdyn_productsize.msdyn_productsize |
+PRODUCTSTYLEID | > | msdyn_productstyle.msdyn_productstyle |
+ITEMNUMBER | > | msdyn_sharedproductdetailid.msdyn_itemnumber
+[None] | >> | msdyn_shouldsyncwithsharedproductdetails | True
+
+###  <a name="243"></a>DV released products (msdyn_sharedproductdetails)
+
+This template synchronizes data between finance and operations apps and Dataverse.
+
+Finance and operations field | Map type | Customer engagement column | Default value
+---|---|---|---
+PRODUCTNUMBER | > | msdyn_globalproduct.msdyn_productnumber |
+INTRASTATCHARGEPERCENTAGE | > | msdyn_intrastatchargepercentage |
+ITEMNUMBER | > | msdyn_itemnumber |
+APPROXIMATESALESTAXPERCENTAGE | > | msdyn_approximatesalestaxpercentage |
+BESTBEFOREPERIODDAYS | > | msdyn_bestbeforeperioddays |
+CARRYINGCOSTABCCODE | >><br>`none` : `806380000`<br>`a` : `806380001`<br>`b` : `806380002`<br>`c` : `806380003` | msdyn_carryingcostabccode |
+CONSTANTSCRAPQUANTITY | > | msdyn_constantscrapquantity |
+COSTCHARGESQUANTITY | > | msdyn_costchargesquantity |
+DEFAULTRECEIVINGQUANTITY | > | msdyn_defaultreceivingquantity |
+FIXEDPURCHASEPRICECHARGES | > | msdyn_fixedpurchasepricecharges |
+FIXEDSALESPRICECHARGES | > | msdyn_fixedsalespricecharges |
+GROSSDEPTH | > | msdyn_grossdepth |
+GROSSPRODUCTHEIGHT | > | msdyn_grossproductheight |
+GROSSPRODUCTWIDTH | > | msdyn_grossproductwidth |
+INVENTORYUNITSYMBOL | > | msdyn_inventoryunitsymbol.msdyn_symbol |
+ISDISCOUNTPOSREGISTRATIONPROHIBITED | >><br>`no` : `False`<br>`yes` : `True` | msdyn_isdiscountposregistrationprohibited |
+ISEXEMPTFROMAUTOMATICNOTIFICATIONANDCANCELLATION | >><br>`no` : `False`<br>`yes` : `True` | msdyn_exemptautomaticnotificationcancel |
+ISINSTALLMENTELIGIBLE | >><br>`no` : `False`<br>`yes` : `True` | msdyn_isinstallmenteligible |
+ISINTERCOMPANYPURCHASEUSAGEBLOCKED | >><br>`no` : `False`<br>`yes` : `True` | msdyn_isintercompanypurchaseusageblocked |
+ISINTERCOMPANYSALESUSAGEBLOCKED | >><br>`no` : `False`<br>`yes` : `True` | msdyn_isintercompanysalesusageblocked |
+ISMANUALDISCOUNTPOSREGISTRATIONPROHIBITED | >><br>`no` : `False`<br>`yes` : `True` | msdyn_ismanualdiscposregistrationprohibited |
+ISPHANTOM | >><br>`no` : `False`<br>`yes` : `True` | msdyn_isphantom |
+ISPOSREGISTRATIONBLOCKED | >><br>`no` : `False`<br>`yes` : `True` | msdyn_isposregistrationblocked |
+ISPOSREGISTRATIONQUANTITYNEGATIVE | >><br>`no` : `False`<br>`yes` : `True` | msdyn_isposregistrationquantitynegative |
+ISPURCHASEPRICEAUTOMATICALLYUPDATED | >><br>`no` : `False`<br>`yes` : `True` | msdyn_ispurchasepriceautomaticallyupdated |
+ISPURCHASEPRICEINCLUDINGCHARGES | >><br>`no` : `False`<br>`yes` : `True` | msdyn_ispurchasepriceincludingcharges |
+ISSALESWITHHOLDINGTAXCALCULATED | >><br>`no` : `False`<br>`yes` : `True` | msdyn_issaleswithholdingtaxcalculated |
+ISRESTRICTEDFORCOUPONS | >><br>`no` : `False`<br>`yes` : `True` | msdyn_isrestrictedforcoupons |
+ISSALESPRICEADJUSTMENTALLOWED | >><br>`no` : `False`<br>`yes` : `True` | msdyn_issalespriceadjustmentallowed |
+ISSALESPRICEINCLUDINGCHARGES | >><br>`no` : `False`<br>`yes` : `True` | msdyn_issalespriceincludingcharges |
+ISSCALEPRODUCT | >><br>`no` : `False`<br>`yes` : `True` | msdyn_isscaleproduct |
+ISSHIPALONEENABLED | >><br>`no` : `False`<br>`yes` : `True` | msdyn_isshipaloneenabled |
+ISUNITCOSTPRODUCTVARIANTSPECIFIC | >><br>`no` : `False`<br>`yes` : `True` | msdyn_isunitcostproductvariantspecific |
+ISVARIANTSHELFLABELSPRINTINGENABLED | >><br>`no` : `False`<br>`yes` : `True` | msdyn_isvariantshelflabelsprintingenabled |
+ISZEROPRICEPOSREGISTRATIONALLOWED | >><br>`no` : `False`<br>`yes` : `True` | msdyn_iszeropriceposregistrationallowed |
+KEYINPRICEREQUIREMENTSATPOSREGISTER | >><br>`notMandatory` : `806380000`<br>`newPrice` : `806380001`<br>`higherEqual` : `806380002`<br>`lowerEqual` : `806380003`<br>`noPrice` : `806380004` | msdyn_keyinpricerequirementsatposregister |
+KEYINQUANTITYREQUIREMENTSATPOSREGISTER | >><br>`notMandatory` : `806380000`<br>`keyIn` : `806380001`<br>`notKeyIn` : `806380002` | msdyn_keyinquantityrequirementsatposregister |
+MARGINABCCODE | >><br>`none` : `806380000`<br>`a` : `806380001`<br>`b` : `806380002`<br>`c` : `806380003` | msdyn_marginabccode |
+MAXIMUMPICKQUANTITY | > | msdyn_maximumpickquantity |
+MUSTKEYINCOMMENTATPOSREGISTER | >><br>`no` : `False`<br>`yes` : `True` | msdyn_mustkeyincommentatposregister |
+NECESSARYPRODUCTIONWORKINGTIMESCHEDULINGPROPERTYID | > | msdyn_necessaryproductionworkingtimeschedulingp |
+NETPRODUCTWEIGHT | > | msdyn_netproductweight |
+PACKINGDUTYQUANTITY | > | msdyn_packingdutyquantity |
+POSREGISTRATIONACTIVATIONDATE | > | msdyn_posregistrationactivationdate |
+POSREGISTRATIONBLOCKEDDATE | > | msdyn_posregistrationblockeddate |
+POSREGISTRATIONPLANNEDBLOCKEDDATE | > | msdyn_posregistrationplannedblockeddate |
+POTENCYBASEATTIBUTETARGETVALUE | > | msdyn_potencybaseattibutetargetvalue |
+POTENCYBASEATTRIBUTEVALUEENTRYEVENT | >><br>`purchProdReceipt` : `806380000`<br>`quality` : `806380001` | msdyn_potencybaseattributevalueentryevent |
+PRODUCTTYPE | >><br>`item` : `806380001`<br>`service` : `806380002` | msdyn_producttype |
+PRODUCTIONCONSUMPTIONDENSITYCONVERSIONFACTOR | > | msdyn_productionconsumptiondensityconversion |
+PRODUCTIONCONSUMPTIONDEPTHCONVERSIONFACTOR | > | msdyn_productionconsumptiondepthconversion |
+PRODUCTIONCONSUMPTIONHEIGHTCONVERSIONFACTOR | > | msdyn_productionconsumptionheightconversion |
+PRODUCTIONCONSUMPTIONWIDTHCONVERSIONFACTOR | > | msdyn_productionconsumptionwidthconversion |
+PRODUCTVOLUME | > | msdyn_productvolume |
+PURCHASECHARGESQUANTITY | > | msdyn_purchasechargesquantity |
+PURCHASEOVERDELIVERYPERCENTAGE | > | msdyn_purchaseoverdeliverypercentage |
+PURCHASEPRICE | > | msdyn_purchaseprice |
+PURCHASEPRICEDATE | > | msdyn_purchasepricedate |
+PURCHASEPRICINGPRECISION | > | msdyn_purchasepricingprecision |
+PURCHASEUNDERDELIVERYPERCENTAGE | > | msdyn_purchaseunderdeliverypercentage |
+RAWMATERIALPICKINGPRINCIPLE | >><br>`staging` : `806380000`<br>`orderPicking` : `806380001` | msdyn_rawmaterialpickingprinciple |
+SALESCHARGESQUANTITY | > | msdyn_saleschargesquantity |
+SALESOVERDELIVERYPERCENTAGE | > | msdyn_salesoverdeliverypercentage |
+SALESPRICE | > | msdyn_salesprice |
+SALESPRICECALCULATIONCHARGESPERCENTAGE | > | msdyn_salespricecalculationchargespercentage |
+SALESPRICECALCULATIONCONTRIBUTIONRATIO | > | msdyn_salespricecalculationcontributionratio |
+SALESPRICECALCULATIONMODEL | >><br>`none` : `806380000`<br>`contributionratio` : `806380001`<br>`percentMarkup` : `806380002` | msdyn_salespricecalculationmodel |
+SALESPRICEDATE | > | msdyn_salespricedate |
+SALESPRICINGPRECISION | > | msdyn_salespricingprecision |
+SALESUNDERDELIVERYPERCENTAGE | > | msdyn_salesunderdeliverypercentage |
+SALESUNITSYMBOL | > | msdyn_salesunitsymbol.msdyn_symbol |
+SCALEINDICATOR | >><br>`relevant` : `806380000`<br>`notRelevant` : `806380001` | msdyn_scaleindicator |
+SELLSTARTDATE | > | msdyn_sellstartdate |
+SHELFADVICEPERIODDAYS | > | msdyn_shelfadviceperioddays |
+SHELFLIFEPERIODDAYS | > | msdyn_shelflifeperioddays |
+SHIPSTARTDATE | > | msdyn_shipstartdate |
+TAREPRODUCTWEIGHT | > | msdyn_tareproductweight |
+TRANSFERORDEROVERDELIVERYPERCENTAGE | > | msdyn_transferorderoverdeliverypercentage |
+TRANSFERORDERUNDERDELIVERYPERCENTAGE | > | msdyn_transferorderunderdeliverypercentage |
+UNITCOST | > | msdyn_unitcost |
+UNITCOSTDATE | > | msdyn_unitcostdate |
+UNITCOSTQUANTITY | > | msdyn_unitcostquantity |
+VARIABLESCRAPPERCENTAGE | > | msdyn_variablescrappercentage |
+WAREHOUSEMOBILEDEVICEDESCRIPTIONLINE1 | > | msdyn_warehousemobiledevicedescriptionline1 |
+WAREHOUSEMOBILEDEVICEDESCRIPTIONLINE2 | > | msdyn_warehousemobiledevicedescriptionline2 |
+WILLINVENTORYISSUEAUTOMATICALLYREPORTASFINISHED | >><br>`no` : `False`<br>`yes` : `True` | msdyn_willinventoryissueautoreportasfinished |
+WILLINVENTORYRECEIPTIGNOREFLUSHINGPRINCIPLE | >><br>`no` : `False`<br>`yes` : `True` | msdyn_willinventoryreceiptignoreflushing |
+WILLPICKINGWORKBENCHAPPLYBOXINGLOGIC | >><br>`no` : `False`<br>`yes` : `True` | msdyn_willpickingworkbenchapplyboxinglogic |
+WILLTOTALPURCHASEDISCOUNTCALCULATIONINCLUDEPRODUCT | >><br>`no` : `False`<br>`yes` : `True` | msdyn_willtotalpurchdiscountcalcincludeproduct |
+WILLTOTALSALESDISCOUNTCALCULATIONINCLUDEPRODUCT | >><br>`no` : `False`<br>`yes` : `True` | msdyn_willtotalsalesdiscountcalcincludeproduct |
+WILLWORKCENTERPICKINGALLOWNEGATIVEINVENTORY | >><br>`no` : `False`<br>`yes` : `True` | msdyn_willworkcenterpickingallownegativeinvent |
+YIELDPERCENTAGE | > | msdyn_yieldpercentage |
+ISUNITCOSTAUTOMATICALLYUPDATED | >><br>`no` : `False`<br>`yes` : `True` | msdyn_isunitcostautomaticallyupdated |
+PURCHASEUNITSYMBOL | > | msdyn_purchaseunitsymbol.msdyn_symbol |
+PURCHASEPRICEQUANTITY | > | msdyn_purchasepricequantity |
+ISUNITCOSTINCLUDINGCHARGES | >><br>`no` : `False`<br>`yes` : `True` | msdyn_isunitcostincludingcharges |
+FIXEDCOSTCHARGES | > | msdyn_fixedcostcharges |
+MINIMUMCATCHWEIGHTQUANTITY | > | msdyn_minimumcatchweightquantity |
+MAXIMUMCATCHWEIGHTQUANTITY | > | msdyn_maximumcatchweightquantity |
+ALTERNATIVEITEMNUMBER | > | msdyn_alternativeitemnumber.msdyn_itemnumber |
+BOMUNITSYMBOL | > | msdyn_bomunitsymbol.msdyn_symbol |
+CATCHWEIGHTUNITSYMBOL | > | msdyn_catchweightunitsymbol.msdyn_symbol |
+COMPARISONPRICEBASEUNITSYMBOL | > | msdyn_comparisonpricebaseunitsymbol.msdyn_symbol |
+PRIMARYVENDORACCOUNTNUMBER | > | msdyn_vendorid.msdyn_vendoraccountnumber |
+ISCATCHWEIGHTPRODUCT | >><br>`no` : `False`<br>`yes` : `True` | msdyn_iscatchweight |
+PRODUCTDIMENSIONGROUPNAME | > | msdyn_productdimensiongroupid.msdyn_groupname |
+STORAGEDIMENSIONGROUPNAME | > | msdyn_storagedimensiongroup.msdyn_groupname |
+TRACKINGDIMENSIONGROUPNAME | > | msdyn_trackingdimensiongroup.msdyn_groupname |
+PRODUCTNAME | > | msdyn_productname |
+PRODUCTDESCRIPTION | > | msdyn_productdescription |
+ISSTOCKEDPRODUCT | >><br>`no` : `False`<br>`yes` : `True` | msdyn_isstockedproduct |
+FIELDSERVICEPRODUCTTYPE | >><br>`Inventory` : `690970000`<br>`NonInventory` : `690970001`<br>`Service` : `690970002` | msdyn_fieldserviceproducttype |
+CURRENCYCODE | > | msdyn_transactioncurrencyid.isocurrencycode |
+[None] | >> | msdyn_shouldsyncwithproducts | True
 
 ###  <a name="237"></a>Dynamics 365 Sales feature management states (msdyn_supplychainfeaturestates)
 
@@ -2289,6 +2429,7 @@ ISCATCHWEIGHTPRODUCT | >><br>`no` : `False`<br>`yes` : `True` | msdyn_iscatchwei
 PRODUCTDIMENSIONGROUPNAME | > | msdyn_productdimensiongroupid.msdyn_groupname |
 STORAGEDIMENSIONGROUPNAME | > | msdyn_storagedimensiongroup.msdyn_groupname |
 TRACKINGDIMENSIONGROUPNAME | > | msdyn_trackingdimensiongroup.msdyn_groupname |
+[None] | >> | msdyn_shouldsyncwithproducts | False
 
 ###  <a name="118"></a>Sales invoice headers V2 (invoices)
 

@@ -1,25 +1,21 @@
 ---
 title: Configure invoice layout for Bahrain
-description: This article explains how to configure the invoice layout for Bahrain.
+description: Learn how to configure the invoice layout for Bahrain, including prerequisites and outlines on turning on features and importing configurations.
 author: mrolecki
-ms.date: 09/08/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Bahrain
 ms.author: mrolecki
+ms.topic: article
+ms.date: 09/08/2020
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Bahrain
 ms.search.validFrom: 2020-06-03
-ms.dyn365.ops.version: 10.0.13
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.13
 ---
 
 # Configure invoice layout for Bahrain (BH-00003)
 
 [!include [banner](../../includes/banner.md)]
-
-[!include [banner](../../includes/preview-banner.md)]
 
 This article explains how to configure printable invoice layouts to ensure compliance with Bahraini legal requirements. Bahrain-specific invoice layouts are implemented by using the concept of *configurable business documents*. For more information about configurable business documents, see the [Business document management overview](../../../fin-ops-core/dev-itpro/analytics/er-business-document-management.md). 
 

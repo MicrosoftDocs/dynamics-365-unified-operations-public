@@ -1,12 +1,13 @@
 ---
 title: X++ language reference
-description: This article provides programming guidance for X++.
+description: Learn about programming guidance for X++, including a table that outlines descriptions for various X++ language features.
 author: josaw1
-ms.date: 08/27/2021
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 08/27/2021
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.collection: get-started

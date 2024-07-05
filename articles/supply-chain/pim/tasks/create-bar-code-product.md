@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create a bar code for a product
-description: This article shows how to manually create a bar code using the item number M0001 as an example. 
+description: Learn how to manually create a bar code using the item number M0001 as an example, including a step-by-step process using the USMF demo data company. 
 author: t-benebo
-ms.date: 07/08/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, InventItemBarcode, InventItemBarcodeLookup   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: benebotg
-ms.search.validFrom: 2016-06-30 
+ms.date: 07/08/2019
+ms.topic: how-to
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, InventItemBarcode, InventItemBarcodeLookup
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create a bar code for a product
 
 [!include [banner](../../includes/banner.md)]

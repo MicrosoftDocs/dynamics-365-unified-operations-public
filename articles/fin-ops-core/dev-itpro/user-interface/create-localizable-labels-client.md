@@ -1,15 +1,13 @@
 ---
 title: Create localizable labels
-description: This article explains how to create localizable labels for client components and HTML/JavaScript controls.
+description: Learn about creating localizable labels, with a step-by-step process detailing creating label files, adding label strings, and requesting label files.
 author: josaw1
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 73615d1b-9088-496e-989e-d8996f30e76b

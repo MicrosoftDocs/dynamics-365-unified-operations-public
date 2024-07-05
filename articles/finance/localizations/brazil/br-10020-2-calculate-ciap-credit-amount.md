@@ -2,17 +2,17 @@
 title: Calculate CIAP credit amount (Brazil)
 description: Every month, for each fiscal establishment, the tax credit amount is calculated for past fixed asset acquisitions for each fixed asset.
 author: AdamTrukawka
-ms.date: 06/26/2017
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
+ms.reviewer: johnmichalak
+ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ---
+
 # Calculate CIAP credit amount (Brazil)
 
 [!include [banner](../../includes/banner.md)]

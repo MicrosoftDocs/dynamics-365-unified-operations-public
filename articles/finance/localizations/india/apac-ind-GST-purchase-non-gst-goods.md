@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Purchases of non-GST goods
-description: This article provides information about the purchase of goods that aren't subject to Goods and Services Tax (GST).
-author: EricWangChen
+description: Learn about the purchase of goods that aren't subject to Goods and Services Tax (GST), including a step-by-step process on validating tax details.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 06/04/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: johnmichalak 
 ms.search.region: India
-# ms.search.industry: 
-ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
-
 ---
 
 # Purchases of non-GST goods

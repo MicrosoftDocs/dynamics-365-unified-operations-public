@@ -29,7 +29,7 @@ OBO functionality enables a retailer representative such an account manager to s
 
 To enable the OBO functionality, you must complete the following prerequisites:
 
-- Create an Azure Active Directory (Azure AD) B2B application. For instructions, see [Create and configure an Azure AD application for account manager sign-in](dev-itpro/obo-create-aad-application.md).
+- Create a Microsoft Entra B2B application. For instructions, see [Create and configure a Microsoft Entra application for account manager sign-in](dev-itpro/obo-create-aad-application.md).
 - Modify the B2B site's sign-in page in Commerce site builder so that it includes an employee sign-in button. For instructions, see [Create and modify pages for on behalf of (OBO) functionality](dev-itpro/obo-add-pages-site-builder.md).
 - Set up and configure OBO functionality for your environment in Commerce headquarters. For more information, see [Set up on behalf of (OBO) functionality](dev-itpro/obo-configure-hq.md).
 
@@ -66,7 +66,7 @@ You can also create a template for the buyer to use later. We recommend that you
 
 ## Additional resources
 
-[Create and configure an Azure AD application for account manager sign-in](dev-itpro/obo-create-aad-application.md)
+[Create and configure a Microsoft Entra application for account manager sign-in](dev-itpro/obo-create-aad-application.md)
 
 [Create and modify pages for on behalf of (OBO) functionality](dev-itpro/obo-add-pages-site-builder.md)
 

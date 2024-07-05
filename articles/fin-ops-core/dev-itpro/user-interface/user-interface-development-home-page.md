@@ -1,18 +1,16 @@
 ---
 title: User interface development home page
-description: This article contains links to topics about developing user interface elements.
+description: Access links to topics about developing user interface elements, including tutorials, forms, controls, and form pattern guidelines.
 author: jasongre
-ms.date: 10/15/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 10/15/2019
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.collection: get-started
 ms.assetid: aea345a3-2302-4b72-9887-f23f72b911f1
 ---
 

@@ -1,13 +1,13 @@
 ---
 title: Set up the mapping for the sales order status columns
-description: This article explains how to set up the sales order status columns for dual-write.
-author: dasani-madipalli
-ms.date: 06/25/2020
+description: Learn how to set up the sales order status columns for dual-write, including various tables that outline setup and mappings for dual-write solutions.
+author: sericks007
+ms.author: sericks
 ms.topic: article
+ms.date: 06/25/2020
+ms.reviewer: johnmichalak
 audience: IT Pro
-ms.reviewer: sericks
 ms.search.region: global
-ms.author: damadipa
 ms.search.validFrom: 2020-06-25
 ---
 

@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Flowcharts in Business process modeler (BPM)
-description: This article describes how to modify connected flowcharts, create and upload flowcharts from Task recorder, and import a business process model flowchart.
-author: AngelMarshall 
-ms.date: 02/01/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: c1735f54-e020-45c6-97d1-d6da2382881b
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about how to modify connected flowcharts, create and upload flowcharts from Task recorder, and import a business process model flowchart.
+author: AngelMarshall
 ms.author: tsmarsha
-ms.search.validFrom: 
+ms.topic: article
+ms.date: 02/01/2021
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
+ms.search.validFrom:
+ms.search.form: 
 ms.dyn365.ops.version: 7.0
-
+ms.assetid: c1735f54-e020-45c6-97d1-d6da2382881b
 ---
 
 # Flowcharts in Business process modeler (BPM)

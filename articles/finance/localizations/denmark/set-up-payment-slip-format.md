@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up payment slip format
-description: This article explains how to attach printed payment slips to invoices and provide a payment reference for posting and settlement. 
+description: Learn how to attach printed payment slips to invoices, provide payment references for posting and settlement, and setting up creditor ID numbers.
 author: EvgenyPopovMBS
+ms.author: evgenypopov
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: OMLegalEntity, CustFormletterParameters   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: johnmichalak   
+audience: Application User   
 ms.search.region: Denmark
-# ms.search.industry: 
-ms.author: epopov
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: OMLegalEntity, CustFormletterParameters
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up payment slip format
 
 [!include [banner](../../includes/banner.md)]

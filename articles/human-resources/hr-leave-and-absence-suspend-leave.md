@@ -6,9 +6,6 @@ description: You can suspend a leave of absence for an employee in Dynamics 365 
 author: twheeloc
 ms.date: 11/21/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: SuspendLeave, LeavePlanFormPart, LeaveAbsenceWorkspace
@@ -27,9 +24,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Suspend leave
-
->[!Important]
->The functionality noted in this article is currently available for customers on the stand-alone Dynamics 365 Human Resources. Some or all of the functionality will be available as part of a future release on the Finance infrastructure after Finance release 10.0.26.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

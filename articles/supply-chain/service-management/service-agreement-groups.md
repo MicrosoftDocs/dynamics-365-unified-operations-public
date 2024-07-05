@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Service agreements overview
-description: This article provides an overview of how service agreements work.
-author: sorenva
-ms.date: 07/25/2019
+description: Access an overview of how service agreements work, including an example with a detailed list for grouping service agreements.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMAAgreementGroup
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 07/25/2019
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMAAgreementGroup
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Service agreements overview

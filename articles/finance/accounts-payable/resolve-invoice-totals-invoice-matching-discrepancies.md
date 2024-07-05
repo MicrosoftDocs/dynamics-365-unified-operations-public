@@ -1,20 +1,18 @@
 ---
 title: Resolve discrepancies during invoice totals matching overview
 description: You can use invoice totals matching to help guarantee that total invoice amounts don't deviate from expected amounts by more than an acceptable variance.
-author: abruer
-ms.date: 07/25/2019
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: Global
+author: twheeloc
 ms.author: shpandey
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.topic: overview
+ms.date: 07/25/2019
+ms.reviewer: twheeloc
 ms.collection: get-started
-ms.assetid: 9ac42457-95b2-4191-ad06-c7e323704466
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-02-28
 ms.search.form: VendTotalPriceTolerance
+ms.dyn365.ops.version: AX 7.0.0
+ms.assetid: 9ac42457-95b2-4191-ad06-c7e323704466
 ---
 
 # Resolve discrepancies during invoice totals matching overview

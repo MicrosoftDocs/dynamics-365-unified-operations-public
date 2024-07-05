@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Budgeting home page
-description: This article provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities in Microsoft Dynamics 365 Finance.
-author: panolte
-ms.date: 04/29/2021
+description: Learn about the budgeting functionality components, budgeting tools, and reporting capabilities in Microsoft Dynamics 365 Finance.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: BudgetPlanningWorkspace
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
+ms.date: 03/28/2024
+ms.reviewer: twheeloc
 ms.collection: get-started
-ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-02-28
+ms.search.form: BudgetPlanningWorkspace
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ---
 
 # Budgeting home page
@@ -41,7 +29,7 @@ The resource planning cycle for a company typically consists of planning, budget
 
 The processes for both long-term strategic planning and annual budget planning are supported through a budget plan document. Budget plan documents are tightly integrated with Microsoft Excel. Users can configure unlimited monetary and quantitative scenarios, and can also define a budgeting organizational hierarchy to both support top-down and bottom-up budgeting methods. After a budget is established and approved in the application, you convert the budget plan to a budget register entry. Budget register entries provide tools for maintaining the budget and for keeping amounts traceable through budget codes. Budget register entries let you revise original budgets, perform transfers, and carry forward budget amounts from the previous year. Based on the established budget, a company can enable budget control. The level of control depends on the organizational culture and the organization's level of maturity. Organizations that have low maturity might leave the budget “as is” and might be more reactive than proactive if a budget doesn't meet expectations. Other organizations might enable budget control policies that prevent users from purchasing if budget funds aren't available.
 
-Finally, very mature organizations might establish an organizational culture where employees are educated about organizational targets and follow those targets through policies such as “Consider online meeting instead of a travel.” The application includes a budget control framework that lets the company's management select either hard control (which prevents postings that would go over the budget) or soft control (where users are warned that they will exceed the available budget funds but can decide for themselves how to proceed). Finally, you can use rolling forecasts. A rolling forecast is a regular comparison of budget to actuals and is used to define how well the company operates against the budget. A rolling forecast is also used to identify trends. In finance and operations, rolling forecasts are supported, through a budget plan document, as initial planning activities. Rolling forecasts can be done in parallel with the planning for the upcoming budget cycle.
+Finally, very mature organizations might establish an organizational culture where employees are educated about organizational targets and follow those targets through policies. The application includes a budget control framework that lets the company's management select either hard control (which prevents postings that would go over the budget) or soft control (where users are warned that they will exceed the available budget funds but can decide for themselves how to proceed). Finally, you can use rolling forecasts. A rolling forecast is a regular comparison of budget to actuals and is used to define how well the company operates against the budget. A rolling forecast is also used to identify trends. In finance and operations, rolling forecasts are supported, through a budget plan document, as initial planning activities. Rolling forecasts can be done in parallel with the planning for the upcoming budget cycle.
 
 -   [Budgeting overview](basic-budgeting-overview-configuration.md)
 -   [Budget control overview](budget-control-overview-configuration.md)

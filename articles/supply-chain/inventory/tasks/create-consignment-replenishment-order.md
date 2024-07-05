@@ -1,28 +1,20 @@
 --- 
-# required metadata 
- 
 title: Create a consignment replenishment order
-description: This article explains how to create a consignment replenishment order where you can track the expected delivery from a vendor into your consignment inventory. 
-author: yufeihuang
+description: Learn how to create a consignment replenishment order where you can track the expected delivery from a vendor into your consignment inventory.
+author: yufei-huang
+ms.author: yufeihuang
+ms.topic: how-to
 ms.date: 08/19/2019
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: ConsignmentReplenishmentOrder, ConsignmentReplenishmentOrderCreate, InventTrans, ConsignmentDraftReplenishmentOrderJournal, InventOnhandMovement, InventOnhandItem, InventItemIdLookupSimple, ConsignmentProductReceiptJournal, ConsignmentReplenishmentOrderLineQuantity
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: kamaybac 
+audience: Application User  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: ConsignmentReplenishmentOrder, ConsignmentReplenishmentOrderCreate, InventTrans, ConsignmentDraftReplenishmentOrderJournal, InventOnhandMovement, InventOnhandItem, InventItemIdLookupSimple, ConsignmentProductReceiptJournal, ConsignmentReplenishmentOrderLineQuantity
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create a consignment replenishment order
 
 [!include [banner](../../includes/banner.md)]

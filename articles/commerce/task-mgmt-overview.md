@@ -2,18 +2,13 @@
 title: Task management overview
 description: This article provides an overview of task management for managers and workers in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 02/10/2020
+ms.date: 05/28/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: gmohanv
+ms.author: ritakimani
 ms.search.validFrom: 2020-02-03
-ms.dyn365.ops.version: Release 10.0.9
-ms.search.industry: 
-ms.search.form: 
 ---
 
 # Task management overview

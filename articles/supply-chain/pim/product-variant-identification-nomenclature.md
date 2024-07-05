@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Nomenclature of product variant numbers and names
-description: This article describes how you can set up a product number nomenclature to replace the fixed [Product master number - Configuration - Size - Color - Style] format.
+description: Learn how you can set up a product number nomenclature to replace the fixed [Product master number - Configuration - Size - Color - Style] format.
 author: t-benebo
-ms.date: 11/03/2017
+ms.author: benebotg
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EcoResNomenclature, EcoResProductDimensionGroup, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelDetails
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 11/03/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 3fe69fb7-5c32-423c-98a8-2f53186cda68
+audience: Application User
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: benebotg
 ms.dyn365.ops.version: Version 1611
+ms.search.form: EcoResNomenclature, EcoResProductDimensionGroup, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelDetails
 ms.search.validFrom: 2016-11-30
-
+ms.assetid: 3fe69fb7-5c32-423c-98a8-2f53186cda68
 ---
 
 # Nomenclature of product variant numbers and names

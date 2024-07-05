@@ -1,12 +1,13 @@
 ---
 title: ApplicationMetadata type
-description: Represents the declarative metadata of an application
+description: Learn about the ApplicationMetadata type, which represents the declarative metadata of an application and includes various properties.
 author: jasongre
-ms.date: 05/24/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/24/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # ApplicationMetadata type

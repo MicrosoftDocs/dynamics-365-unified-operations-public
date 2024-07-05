@@ -1,37 +1,22 @@
 ---
-# required metadata
-
 title: Configuration keys and data entities
-description: This article describes the relationship between configuration keys and data entities.
-author: peakerbl
-ms.date: 05/10/2019
+description: Learn about the relationship between configuration keys and data entities, including overviews on key configurations and assignments.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 05/10/2019
+ms.reviewer: johnmichalak
 audience: Application user
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: 8e214c95-616b-4ee1-b5a4-fa5ce5147f2c
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2018-01-01
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 13
-
+ms.assetid: 8e214c95-616b-4ee1-b5a4-fa5ce5147f2c
 ---
 
 # Configuration keys and data entities
 
 [!include [banner](../../../finance/includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 Before you use data entities to import or export data, we recommended that you first determine the impact of configuration keys on the data entities that you are planning to use.
 
@@ -72,12 +57,12 @@ This information is shown using the metadata that is built during entity refresh
 ### Target fields
 The next step is to drill into the data entity to view the impact of configuration keys on tables and fields. The target fields form for a data entity shows configuration key and the key status information for the related tables and fields in the data entity. If the data entity itself has its configuration key disabled, a warning message is shown informing that the tables and fields in the target fields form for this entity will not be available at all regardless of their configuration key status.
 
-![Target fields.](../../dev-itpro/data-entities/media/Target_fields_1.png)
+<!--![Target fields.](../../dev-itpro/data-entities/media/Target_fields_1.png) -->
 
 ### Child entities 
 Certain entities have other entities as data sources, or are composite data entities: configuration key information for these entities is shown in the Child entities form. Use this form in the similar way to the entities list page described above. The target fields form for the child entity also behaves like what is described above.
 
-![Target fields.](../../dev-itpro/data-entities/media/Target_fields_2.png)
+<!--![Target fields.](../../dev-itpro/data-entities/media/Target_fields_2.png)-->
 
 ### Using data entities
 After understanding the full impact, if any, of configuration keys on the data entities that you would like to use, you can now proceed to using the data entities by adding them to data projects. 
@@ -99,7 +84,7 @@ Using the configuration key metadata built during entity refresh list, run time 
 ### Managing configuration key changes
 Anytime that you update configuration keys at the entity, table or field level, the entity list in the data management framework must be refreshed. This process ensures that the framework picks up the latest configuration key settings. Until the entity list is refreshed, the following warning will be shown in the entity list page. The updated configuration key changes will take effect immediately after the entity list is refreshed. We recommend that you validate existing data projects and jobs to make sure that they function as expected after the configuration keys changes are put in effect.
 
-![Target fields.](../../dev-itpro/data-entities/media/Target_fields_3.png)
+<!-- ![Target fields.](../../dev-itpro/data-entities/media/Target_fields_3.png) -->
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

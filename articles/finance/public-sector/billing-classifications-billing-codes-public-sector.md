@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Billing classifications and billing codes in the public sector
-description: This article explains how organizations in the public sector can use billing classifications and billing codes to help manage free text invoices. 
+description: Learn how organizations in the public sector can use billing classifications and billing codes to help manage free text invoices. 
 author: v-kiarnd
-ms.date: 11/02/2022
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustBillingClassification, CustBillingCode, CustCustomField
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 11/02/2022
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 47624566-0b4c-41dc-9cd4-801e213b5da3
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustBillingClassification, CustBillingCode, CustCustomField
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 47624566-0b4c-41dc-9cd4-801e213b5da3
 ---
 
 # Billing classifications and billing codes in the public sector

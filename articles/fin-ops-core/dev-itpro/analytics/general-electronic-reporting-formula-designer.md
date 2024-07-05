@@ -1,19 +1,17 @@
 ---
 title: Formula designer in Electronic reporting (ER)
-description: This article provides information about how to use the formula designer in Electronic reporting (ER).
+description: Learn about how to use the formula designer in Electronic reporting (ER), including a formula designer overview.
 author: kfend
-ms.date: 04/08/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 04/08/2022
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ---
 
 # Formula designer in Electronic reporting (ER)

@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Pay a vendor by endorsing a bill of exchange for Japan
-description: This article includes information about endorsing bills of exchange (BOE) to pay a vendor in Japan.
+description: Learn about endorsing bills of exchange (BOE) to pay a vendor in Japan, including outlines on endorsing a BOE to a vendor and settling vendor transactions.
 author: EricWangChen
-ms.date: 03/21/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseToVendor
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.search.region: Japan
-# ms.search.industry: 
 ms.author: wangchen
+ms.topic: article
+ms.date: 03/21/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseToVendor
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Pay a vendor by endorsing a bill of exchange for Japan

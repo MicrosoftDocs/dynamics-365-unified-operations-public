@@ -1,15 +1,14 @@
 ---
 title: Company divisions (Russia)
-description: This article walks you through setting up company divisions in Microsoft Dynamics 365 Finance in Russia.
-author: AdamTrukawka
-ms.date: 10/08/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn about setting up company divisions in Microsoft Dynamics 365 Finance in Russia, including a step-by-step processes for creating company divisions.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/20/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
-ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 ---

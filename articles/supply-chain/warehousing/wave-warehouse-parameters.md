@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Warehouse parameters for wave processing
-description: This article describes how to set up warehouse parameters for wave processing. You can use wave processing to group picking work for multiple work orders into a single wave.
+description: Learn how to set up warehouse parameters for wave processing. You can use wave processing to group picking work for multiple work orders into a single wave.
 author: Mirzaab
-ms.date: 03/08/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
+ms.topic: article
+ms.date: 03/08/2021
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-03-08
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.18
 ---
 

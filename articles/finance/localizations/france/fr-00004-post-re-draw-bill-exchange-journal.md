@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: FR-00004 Post re-draw bill of exchange journal
-description: This procedure walks you through posting a re-draw bill of exchange. 
+description: Learn about posting a re-draw bill of exchange for legal entities whose primary address is in France with a process using the FRSI demo data company. 
 author: EvgenyPopovMBS
+ms.author: evgenypopov
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LedgerJournalTable, LedgerJournalTransCustBillOfExchange, CustOpenTrans   
+ms.custom:
+ms.reviewer: johnmichalak    
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: France
-# ms.search.industry: 
-ms.author: epopov
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerJournalTable, LedgerJournalTransCustBillOfExchange, CustOpenTrans
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # FR-00004 Post re-draw bill of exchange journal
 
 [!include [banner](../../includes/banner.md)]

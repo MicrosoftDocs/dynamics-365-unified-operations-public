@@ -1,18 +1,16 @@
 ---
 title: Change code to enable users to configure and use named ER destinations
-description: This article describes how the Electronic reporting (ER) API can be used to enable users to configure and use named ER destinations.
+description: Learn about how the Electronic reporting (ER) API can be used to enable users to configure and use named ER destinations.
 author: kfend
-ms.date: 08/04/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 08/04/2021
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-08-01
-ms.dyn365.ops.version: 10.0.21
 ms.search.form: ERFormatDestinationTable
+ms.dyn365.ops.version: 10.0.21
 ---
 
 # Change code to enable users to configure and use named ER destinations

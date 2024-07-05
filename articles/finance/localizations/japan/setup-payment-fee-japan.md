@@ -1,21 +1,20 @@
 ---
 title: Setup payment fee for Japan
-description: This task walks you through setting up a payment fee for Japan.
+description: Learn about setting up a payment fee for Japan, including step-by-step processes for creating bank groups and creating vendor payment fee groups.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: 
   - BankGroup
   - VendPaymFeeGroup_JP, VendTable, PaymFeeBankRule_JP, SysFieldLookUp, VendPaymFee, VendPaymModeFee, TaxGroupLookup
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Setup payment fee for Japan
 
 [!include [banner](../../includes/banner.md)]

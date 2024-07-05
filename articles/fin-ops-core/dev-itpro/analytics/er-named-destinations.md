@@ -1,19 +1,17 @@
 ---
 title: Configure print management record-specific ER destinations
-description: This article explains how to configure print management record specific-destinations for an Electronic reporting (ER) format that is configured to generate outbound documents.
+description: Learn how to configure print management record specific-destinations for an Electronic reporting (ER) format that is configured to generate outbound documents.
 author: kfend
-ms.date: 08/03/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 08/03/2021
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-08-01
+ms.search.form: ERSolutionTable, ERFormatDestinationTable
 ms.dyn365.ops.version: 10.0.21
 ms.assetid: f3055a27-717a-4c94-a912-f269a1288be6
-ms.search.form: ERSolutionTable, ERFormatDestinationTable
 ---
 
 # Configure print management record-specific ER destinations

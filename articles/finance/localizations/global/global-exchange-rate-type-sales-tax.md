@@ -1,15 +1,13 @@
 ---
 title: Exchange rate type for sales tax
-description: This article explains the logic for calculating sales tax on the special exchange rate.
+description: Learn about the logic for calculating sales tax on the special exchange rate, including outlines on prerequisites, setup, and functionality.
 author: epodkolz
-ms.date: 07/10/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: 
 ms.author: epodkolzina
+ms.topic: article
+ms.date: 02/09/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: 
 ms.search.validFrom: 
 ms.dyn365.ops.version: AX 10.0.35
 ---
@@ -27,7 +25,7 @@ As of Microsoft Dynamics 365 Finance version 10.0.35, the functionality for [val
 
 ## Prerequisites and setup
 
-This functionality is available only for legal entities that have enabled Tax Calculation service for the selected business processes. For more information about Tax Calculation service, its capabilities, and how to set it up, see [Tax Calculation overview](global-tax-calcuation-service-overview.md).
+This functionality is available only for legal entities that have enabled Tax Calculation feature for the selected business processes. For more information about Tax Calculation, its capabilities, and how to set it up, see [Tax Calculation overview](global-tax-calcuation-service-overview.md).
 
 In addition, you must enable the following features in the **Feature management** workspace:
 
@@ -75,8 +73,6 @@ You can also use the **Adjusted amount origin (VAT exchange rate)** or **Adjuste
 When a document is posted, for transactions that are posted to the general ledger accounts that you've configured, you can view any differences in sales tax amount that are caused by the difference between the tax currency exchange rate and the accounting currency exchange rate for your organization. For the *Sales tax payable* sales tax direction, the tax difference is posted with a *Sales tax payable difference* tax direction. For the *Sales tax receivable* sales tax direction, the tax adjustment will be recorded with a *Sales tax receivable difference* tax direction. For use tax, the tax difference is posted with a *Use tax* sales tax direction.
 
 > [!NOTE]
-> Finance version 10.0.35 doesn't support adjustments for tax-exempt sales and purchase transactions.
-> 
 > After tax transactions are posted, an update of the **Date of VAT register** field on the **VAT register transactions** has no effect on the tax adjustment transaction posting.
 
 ### Example
@@ -124,6 +120,14 @@ On the **Subledger journal** page, you can review amounts and accounts for the c
 ![Subledger journal page.](../media/SalesTaxTransactionsTaxExchRateSubledger_4-2.PNG)
 
 After the document is posted, review the posted sales tax transactions and voucher. The tax difference is posted with a *Sales tax payable difference* tax direction.
+> [!NOTE]
+> For better user experience, you can add the following fields to the **Posted sales tax** page by using the _Insert columns_ function and saving the _View_: 
+> - Base amount in accounting currency
+> - Base amount in reporting currency
+> - Base amount in tax currency
+> - Sales tax amount in accounting currency
+> - Sales tax amount in reporting currency
+> - Sales tax amount in tax currency
 
 ![Posted sales tax page.](../media/PostedSalesTaxTaxExchRate_5-1.PNG)
 

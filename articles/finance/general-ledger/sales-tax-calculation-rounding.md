@@ -1,32 +1,18 @@
 ---
-# required metadata
-
 title: Sales tax calculation and rounding
-description: This article provides an overview of sales tax calculation and rounding and explains the parameters of the sales tax calculation and rounding setup.
-author: wangchen
-ms.date: 06/01/2022
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: TaxTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-
-
-# ms.tgt_pltfrm: 
-ms.collection: get-started
-ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
-ms.search.region: Global
-# ms.search.industry: 
+description: Access an overview of sales tax calculation and rounding and explains the parameters of the sales tax calculation and rounding setup.
+author: EricWangChen
 ms.author: wangchen
+ms.topic: overview
+ms.date: 06/01/2022
+ms.reviewer: kfend
+ms.collection: get-started
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-05-31
+ms.search.form: TaxTable
 ms.dyn365.ops.version: AX 10.0.28
-
+ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ---
 
 # Sales tax calculation and rounding

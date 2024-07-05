@@ -1,18 +1,16 @@
 ---
 title: Privacy overview
-description: This article provides information about the user log functionality in finance and operations apps.
+description: Learn about the user log functionality in finance and operations apps, including a table that outlines scenarios and implementations for various roles.
 author: ToddLefor
-ms.date: 07/23/2019
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: tlefor
+ms.topic: overview
+ms.date: 07/23/2019
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.collection: get-started
 ---
 
 # Privacy overview
@@ -333,11 +331,11 @@ As you use finance and operations apps, you might find that you generate or coll
 
 ### Overview
 
-Microsoft mandates that all users of Microsoft software where personal data is collected must use a Microsoft account (MSA) or Microsoft Azure Active Directory (Azure AD) account for authentication. Additionally, those accounts must be configured to enable minors who use the software or service to affirm parental consent for the service to use their personal data.
+Microsoft mandates that all users of Microsoft software where personal data is collected must use a Microsoft account (MSA) or Microsoft Microsoft Entra account for authentication. Additionally, those accounts must be configured to enable minors who use the software or service to affirm parental consent for the service to use their personal data.
 
 ### What is this feature?
 
-As the tenant admin of the service, you will be required to set up Azure AD Age Gating and/or MSA age gating.
+As the tenant admin of the service, you will be required to set up Microsoft Entra Age Gating and/or MSA age gating.
 
 Any user who isn't configured by using Azure Age Gating will be restricted from using the service, even if the user isn't a minor. Age Gating must be configured.
 
@@ -372,4 +370,3 @@ When you've completed your entries in the system parameters, the link to your or
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

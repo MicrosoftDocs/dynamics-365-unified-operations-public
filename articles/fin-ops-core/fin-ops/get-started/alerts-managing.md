@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Batch processing of alerts
-description: This article provides information about batch processing of alerts.
-author: RichdiMSFT
-ms.date: 08/24/2021
+description: Learn about batch processing of alerts, including overviews on setting up and processing for change-based events and due-date events.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
+ms.date: 08/24/2021
+ms.custom:
+ms.reviewer: johnmichalak
 audience: Application user
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom:
 ms.search.region: Global
-# ms.search.industry:
-ms.author: richdi
-ms.search.validFrom: 2018-3-30 
+ms.search.validFrom: 2018-3-30
+ms.search.form:
 ms.dyn365.ops.version: Platform update 15
 ---
 

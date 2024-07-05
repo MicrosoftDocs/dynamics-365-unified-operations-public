@@ -1,15 +1,13 @@
 ---
 title: Support for multiple VAT registration numbers in reporting for Italy
-description: This article explains how to support multiple value-added tax (VAT) registration numbers in reporting for Italy.
+description: Learn how to support multiple value-added tax (VAT) registration numbers in reporting for Italy, including a table the provides details for report names.
 author: liza-golub
-ms.date: 10/25/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Italy
 ms.author: egolub
+ms.topic: article
+ms.date: 10/25/2023
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Italy
 ms.search.validFrom: 2023-04-10
 ms.dyn365.ops.version: AX 10.0.36
 ---
@@ -28,5 +26,6 @@ When your legal entity is configured for reporting for multiple VAT registration
 |-------------|---------|-------------------------------------------|
 | [Intrastat](emea-ita-intrastat.md) | 10.0.38<br>10.0.37 - build 10.0.1725.25<br>10.0.36 - build 10.0.1695.56 | Intrastat (IT), version 24.36 |
 | [Yearly tax communication](emea-ita-yearly-tax-communication.md) | 10.0.38 | Yearly tax communication (IT), version 1.5 |
+| [Configure and report Italian sales tax books](emea-ita-sales-tax-books.md) | 10.0.39 | VAT Declaration PDF (IT), version 153.19 |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

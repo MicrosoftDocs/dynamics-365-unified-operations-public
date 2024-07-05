@@ -1,15 +1,13 @@
 ---
 title: Font and background colors for input, table, and grid controls
-description: This article provides information about the new color picker control that lets users select a color.
+description: Learn about the new color picker control that lets users select a color, with overviews on color selection in Dynamics AX 2012 and input controls.
 author: jasongre
-ms.date: 11/09/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 11/09/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 84e06ee2-be1c-443b-b595-9309eaea84c5

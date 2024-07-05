@@ -4,8 +4,6 @@ description: This article explains how you can use self-service to do silent ser
 author: jashanno
 ms.date: 01/12/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global

@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Install the business performance planning app
-description: This article describes how to install the business performance planning app in Microsoft Dynamics 365 Finance.
+description: Learn how to install the business performance planning app in Microsoft Dynamics 365 Finance, including a process on deleting the app as well.
 author: ShielaSogge
-ms.date: 11/28/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-
-# ms.tgt_pltfrm: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
+ms.topic: article
+ms.date: 11/28/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2023-12-03
+ms.search.form: 
 ms.dyn365.ops.version: Human Resources
-
 ---
+
 # Install the business performance planning app
 
 This article describes how to install the business performance planning app. To fully use the app, you must also install Microsoft Power BI visuals. For more information about how to install Power BI visuals, see [Power BI visuals](/power-bi/developer/visuals/).

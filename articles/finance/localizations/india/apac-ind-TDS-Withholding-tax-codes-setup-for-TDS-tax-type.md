@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Set up withholding tax codes for the TDS tax type
-description: This article explains how to set up tax codes for Tax Deducted at Source (TDS).
-author: kailiang
-ms.date: 02/12/2021
-ms.topic: article
-ms.prod: 
-
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# 
-# ms.tgt_pltfrm: 
-ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
+description: Learn how to set up tax codes for Tax Deducted at Source (TDS), including a step-by-step process for setting up tax codes.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
+ms.reviewer: johnmichalak
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ---
 
 # Set up withholding tax codes for the TDS tax type
@@ -36,7 +22,7 @@ This article explains how to set up tax codes for Tax Deducted at Source (TDS).
 
 1. Go to **Tax \> Indirect taxes \> Withholding tax \> Withholding tax codes**.
 
-    [![Withholding tax codes page.](../media/apac-ind-TDS-17.png)](/media/apac-ind-TDS-17.png)
+    [![Withholding tax codes page.](../media/apac-ind-TDS-17.png)]
 
 2. On the Action Pane, select **New** to create a withholding tax code for TDS, and enter the required details.
 3. On the **General** FastTab, in the **Tax type** field, select **TDS** to categorize the tax code as a TDS tax code.

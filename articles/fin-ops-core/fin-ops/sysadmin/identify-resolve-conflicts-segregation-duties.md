@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Identify and resolve conflicts in segregation of duties
-description: This article explains how to identify and resolve conflicts in segregation of duties.
-author: peakerbl
+description: Learn about how to identify and resolve conflicts in segregation of duties, including an outline on verifying compliance with new rules.
+author: sericks007
+ms.author: sericks
+ms.topic: how-to
 ms.date: 01/04/2021
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: SysSecSegregationOfDutiesConflict, SysSecSegregationOfDutiesRule   
+ms.custom:
+ms.reviewer: johnmichalak  
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: sericks
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2016-06-30 
+ms.search.form: SysSecSegregationOfDutiesConflict, SysSecSegregationOfDutiesRule   
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Identify and resolve conflicts in segregation of duties
 
 [!include [banner](../../../finance/includes/banner.md)]

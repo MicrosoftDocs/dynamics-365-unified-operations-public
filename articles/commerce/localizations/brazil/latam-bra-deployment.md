@@ -4,8 +4,6 @@ description: This article covers how to set up and deploy the Microsoft Dynamics
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Brazil

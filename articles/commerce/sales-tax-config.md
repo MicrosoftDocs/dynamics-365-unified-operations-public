@@ -4,8 +4,6 @@ description: This article provides an overview of sales tax group selection for 
 author: gvrmohanreddy
 ms.date: 04/02/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: global

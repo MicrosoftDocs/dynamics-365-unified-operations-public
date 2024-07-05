@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Copy a batch job
-description: This article provides information about copying a batch job and batch tasks.
+description: Learn about copying a batch job and batch tasks, including step-by-step processes detailing on copying and creating batch jobs.
 author: Peakerbl
-ms.date: 10/25/2018
+ms.author: johnmichalak
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 10/25/2018
+ms.reviewer: johnmichalak
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
 ms.search.validFrom: 2018-08-15
+ms.search.form: 
 ms.dyn365.ops.version: Platform update 20
-
+ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ---
 
 # Copy a batch job

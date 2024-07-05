@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Assign users to security roles
-description: To access finance and operations apps, users must be assigned to security roles. 
-author: Peakerbl
+description: Learn about how to manage users and security roles, including outlines on autoatically assigning users to roles and manually assigning users to roles.
+author: sericks007
+ms.author: sericks
+ms.topic: how-to
 ms.date: 02/09/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm, SysSecRoleExcludeUsers   
+ms.custom:
+ms.reviewer: johnmichalak  
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: sericks
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peakerbl
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm, SysSecRoleExcludeUsers
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Manage users and security roles
 
 [!include [banner](../../../finance/includes/banner.md)]

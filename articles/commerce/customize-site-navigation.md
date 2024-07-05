@@ -4,8 +4,6 @@ description: This article describes how to create a customized online navigation
 author: bicyclingfool
 ms.date: 01/03/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global

@@ -1,15 +1,14 @@
 ---
 title: Set up and process payment orders for Russia
-description: This article explains how to set up and process payment orders for Russia.
-author: AdamTrukawka
-ms.date: 10/28/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn how to set up and process payment orders for Russia, including an outline and step-by-step process for generating payment orders.
+author: kailiang
+ms.author: kailiang
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
-ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 ---

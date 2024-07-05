@@ -4,8 +4,6 @@ description: This article explains how to create a POS permission group.
 author: josaw1
 ms.date: 08/20/2019
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global

@@ -1,20 +1,18 @@
 ---
 title: Get started with electronic invoicing for Indonesia
-description: This article explains how to configure and process electronic invoice for Indonesia.
+description: Learn how to configure and process electronic invoice for Indonesia, including an outline on configuring the application-specific parameters.
 author: AdamTrukawka
-ms.date: 01/22/2024
+ms.author: atrukawk
 ms.topic: conceptual
+ms.date: 01/22/2024
 ms.custom: 
   - bap-template
-ms.prod: 
-ms.technology: 
-audience: Application User
 ms.reviewer: johnmichalak
+audience: Application User
 ms.search.region: Indonesia
-ms.author: atrukawk
-ms.search.validFrom: 
-ms.dyn365.ops.version: 10.0.23
+ms.search.validFrom:
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.23
 ---
 
 # Get started with electronic invoicing for Indonesia

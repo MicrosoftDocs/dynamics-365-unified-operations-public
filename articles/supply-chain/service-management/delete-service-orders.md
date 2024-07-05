@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Delete service orders   
-description: Delete service orders 
-author: sorenva
-ms.date: 01/19/2023
+description: Learn about how to delete service orders, including a step-by-step process for deleting service orders and additional resources.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMAServiceOrderTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 01/19/2023
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMAServiceOrderTable
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

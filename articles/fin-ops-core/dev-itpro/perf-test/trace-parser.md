@@ -1,13 +1,13 @@
 ---
 title: Diagnose issues and analyze performance by using Trace parser
-description: This article explains how you can use the Trace parser to consume traces and analyze performance in your deployment.
+description: Learn about how you can use the Trace parser to consume traces and analyze performance in your deployment, including overviews on capturing events.
 author: josaw1
-ms.date: 10/19/2017
+ms.author: josaw
 ms.topic: article
+ms.date: 10/19/2017
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

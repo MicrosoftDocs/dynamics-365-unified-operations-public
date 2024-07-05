@@ -1,15 +1,15 @@
 ---
 title: Mixed license plate receiving
-description: This article describes how to use mixed license plate receiving to register and create work for multiple items with a mobile device.
+description: Learn how to use mixed license plate receiving to register and create work for multiple items with a mobile device with an outline on where it applies.
 author: Mirzaab
 ms.author: mirzaab
-ms.reviewer: kamaybac
-ms.search.form:  WHSMixedLPReceiving, WHSRFAutoConfirm, WHSLicensePlate, WHSRFMenuItem, WHSDeferredReceivingPolicy
 ms.topic: how-to
 ms.date: 01/29/2024
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:  WHSMixedLPReceiving, WHSRFAutoConfirm, WHSLicensePlate, WHSRFMenuItem, WHSDeferredReceivingPolicy
 ---
 
 # Mixed license plate receiving
@@ -63,6 +63,8 @@ You can configure mobile device menu items that use one of the following **Work 
 - *Purchase order line receiving*
 - *Transfer order item receiving*
 - *Transfer order line receiving*
+- *Inbound shipment order item receiving*
+- *Inbound shipment order line receiving*
 - *Load item receiving*
 - *License plate receiving*
 

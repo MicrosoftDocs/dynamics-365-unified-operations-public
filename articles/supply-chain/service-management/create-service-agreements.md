@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Create service agreements
-description: This article describes how to use features in the Service management and the Project management and accounting modules to create service agreements.
-author: sorenva
-ms.date: 02/19/2018
+description: Learn how to use features in the Service management and the Project management and accounting modules to create service agreements.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMAAgreementTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 02/19/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMAAgreementTable
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Create service agreements

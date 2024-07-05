@@ -1,19 +1,16 @@
 ---
 title: Acceptance test library resources
-description: This article provides information about the Acceptance test library.
+description: Learn about the Acceptance test library and its benefits, including an example of a test that is written in ATL, concepts, and further reading.
 author: MichaelFruergaardPontoppidan
-ms.date: 07/23/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: mfp
+ms.topic: article
+ms.date: 07/23/2019
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.custom: 
-ms.assetid: 
 ---
 
 # Acceptance test library resources

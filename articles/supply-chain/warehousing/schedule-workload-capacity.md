@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Schedule workload capacity
-description: This article explains how to set up and schedule the workload capacity for workers in a warehouse or for an entire warehouse.
+description: Learn how to set up and schedule the workload capacity for workers in a warehouse or for an entire warehouse, including a step-by-step process.
 author: Mirzaab
-ms.date: 05/26/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  WMSWorkloadCapacity
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mirzaab
+ms.topic: article
+ms.date: 05/26/2017
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:  WMSWorkloadCapacity
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Schedule workload capacity

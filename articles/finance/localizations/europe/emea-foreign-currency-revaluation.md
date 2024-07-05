@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Foreign currency revaluation for bank accounts
-description: This article provides information about foreign currency revaluation for bank accounts.
+description: Learn about the process of creating a report to view bank transactions with adjustments for foreign currency revaluations.
 author: panolte
-ms.date: 03/28/2018
+ms.author: johnmichalak
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
+ms.date: 03/28/2018
+ms.reviewer: johnmichalak
+audience: Application User 
 ms.search.region: Czech Republic, Estonia, Latvia, Lithuania, Poland
-# ms.search.industry: 
-ms.author: panolte
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Foreign currency revaluation for bank accounts

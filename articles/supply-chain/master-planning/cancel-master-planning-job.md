@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Cancel a job that was created using the deprecated master planning engine
-description: This article explains how to cancel an active planning job that uses the deprecated master planning engine.
+description: Learn how to cancel an active planning job that uses the deprecated master planning engine with an outline on preferred cancel options.
 author: t-benebo
-ms.date: 05/14/2020
+ms.author: benebotg
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ReqCreatePlanWorkspace, ReqProcessList
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 05/14/2020
 ms.custom: 
-ms.assetid: 
+ms.reviewer: kamaybac
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: benebotg
 ms.search.validFrom: 2019-12-16
+ms.search.form: ReqCreatePlanWorkspace, ReqProcessList
 ms.dyn365.ops.version: 
-
 ---
 
 # Cancel a job that was created using the deprecated master planning engine

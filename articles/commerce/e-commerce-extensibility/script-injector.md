@@ -4,8 +4,6 @@ description: This article covers script injectors that can be used to add script
 author: samjarawan
 ms.date: 05/27/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

@@ -1,18 +1,17 @@
 ---
 title: Write off deferrals (Russia)
-description: This article explains how to write off a deferral and how to reverse the writing off of a deferral.
+description: Learn how to write off a deferral and how to reverse the writing off of a deferral, including a step-by-step process for writing off deferrals.
 author: AdamTrukawka
-ms.date: 06/28/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
+ms.reviewer: johnmichalak
+ms.search.region: Russia
 ms.search.validFrom: 2019-06-28
-ms.dyn365.ops.version: 10.0.1
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.1
 ---
 
 # Write off deferrals (Russia)

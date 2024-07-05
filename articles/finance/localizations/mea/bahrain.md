@@ -1,15 +1,13 @@
 ---
 title: Bahrain overview
-description: This article provides an overview of functionality specific to Bahrain.
+description: Learn about functionality specific to Bahrain, with links to documentation resources for Bahrain, including links to resources about invoices.
 author: mrolecki
-ms.date: 09/15/2021
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Bahrain
 ms.author: mrolecki
+ms.topic: overview
+ms.date: 09/15/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Bahrain
 ms.search.validFrom: 2020-06-04
 ms.dyn365.ops.version: 10.0.13
 ---

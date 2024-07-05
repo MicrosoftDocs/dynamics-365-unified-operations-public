@@ -1,19 +1,19 @@
 ---
 title: MX-00010 Inquire and print an electronic invoice
-description: Use the CFDI – Electronic invoices form to view, email, export, or print an already-generated CFDI electronic invoice based on a customer's request.
-author: AdamTrukawka
-ms.date: 08/29/2018
+description: Electronic invoices form to view, email, export, or print an already-generated CFDI electronic invoice based on a customer's request.
+author: ankviklis
+ms.author: ankviklis
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
+ms.reviewer: johnmichalak
 ms.search.region: Mexico
-ms.author: atrukawk
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: EInvoiceCFDIJournal_AR, EInvoiceXMLViewer_MX, DefaultDashboard
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # MX-00010 Inquire and print an electronic invoice
 
 [!include [banner](../../includes/banner.md)]

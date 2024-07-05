@@ -1,15 +1,13 @@
 ---
 title: Navigation search
-description: This article explains how to use the search functionality to navigate to pages.
+description: Learn about how to use the search functionality to navigate to pages, including an outline on how to quickly navigate to particular pages.
 author: jasongre
-ms.date: 08/11/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 08/11/2021
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: eef0676f-c4b1-490e-a032-e9c8580f3fea
@@ -18,9 +16,6 @@ ms.assetid: eef0676f-c4b1-490e-a032-e9c8580f3fea
 # Navigation search
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article explains how to use the search functionality to navigate to pages.
 

@@ -1,34 +1,33 @@
 ---
-title: Enable and configure Warehouse management only mode (preview)
-description: This article explains how to configure Warehouse management only mode by setting up source systems, master data, and business events.
+title: Enable and configure Warehouse management only mode
+description: Learn how to configure Warehouse management only mode by setting up source systems, master data, and business events with an outline on configuring source systems.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage
 ms.topic: how-to
-ms.date: 01/29/2024
-audience: Application User
-ms.search.region: Global
+ms.date: 04/27/2024
 ms.custom:
   - bap-template
   - ai-gen-docs-bap
   - ai-gen-desc
   - ai-seo-date:08/10/2023
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
+ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage
 ---
 
-# Enable and configure Warehouse management only mode (preview)
+# Enable and configure Warehouse management only mode
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-<!-- KFM: Preview until further notice -->
+This article explains how to configure Warehouse management only mode by setting up source systems, master data, and business events.
 
 ## <a name="feature-management"></a>Turn on Warehouse management only mode
 
 To use the Warehouse management only mode capability, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.36 or later.
-- The feature that's named *(Preview) Warehouse management only mode* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named *Warehouse management only mode* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="source-systems"></a>Configure your source systems
 
@@ -50,7 +49,7 @@ Use the **Source systems** page to set up each external system that you want to 
 > [!NOTE]
 > You can't find or search for the menu items that are related to Warehouse management only mode until you create at least one record on the **Source systems** page. In addition, searching for pages requires that the current user's default company has a **Source system** record.
 
-### Background processes
+### <a name="background-processes"></a>Background processes
 
 As part of the [Source system](#source-systems) creation process, the following [automated background processes](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) are automatically created:
 
@@ -78,6 +77,12 @@ If the order numbers that the external system provides don't match the order num
 - *Shipment receipt*
 - *Warehouse outbound notification ID*
 - *Load line inventory pick*
+- *Internal consigner's account number*
+- *Internal consignee's account number*
+- *External warehouse outbound shipment order origin ID*
+- *External warehouse inbound shipment order origin*
+- *External warehouse outbound shipment order update ID*
+- *External warehouse inbound shipment order update*
 
 > [!TIP]
 > You can quickly enable all number sequences by using the **Generate** option on the [**Number sequences**](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md) page.

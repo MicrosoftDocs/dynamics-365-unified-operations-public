@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Create item requirements for service orders 
-description: This article describes how to create item requirements for service orders.  
-author: sorenva
-ms.date: 05/01/2018
+description: Learn how to create item requirements for service orders, including a step-by-step process for creating item requirements for service orders.  
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMAServiceOrderTable
-# ROBOTS: 
+ms.date: 05/01/2018
+ms.custom:
+ms.reviewer: kamaybac 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMAServiceOrderTable
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

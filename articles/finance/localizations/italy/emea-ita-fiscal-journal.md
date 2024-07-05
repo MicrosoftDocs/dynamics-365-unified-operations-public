@@ -1,18 +1,17 @@
 ---
 title: Fiscal journal report
-description: This article provides information about the Fiscal journal report in Italy.
+description: Learn about the Fiscal journal report in Italy, including an outline and step-by-step process on fiscal journal page numbering improvements.
 author: liza-golub
-ms.date: 05/22/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.author: egolub
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 6/17/2024
+ms.reviewer: johnmichalak
 audience: Application User
-ms.reviewer: kfend
 ms.search.region: Italy
-ms.author: liza-golub
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-ms.custom: 
 ---
 
 # Fiscal journal report

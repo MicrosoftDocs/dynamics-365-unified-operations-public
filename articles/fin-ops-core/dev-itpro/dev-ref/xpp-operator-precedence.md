@@ -1,12 +1,14 @@
 ---
 title: Operator precedence
-description: This article describes operator precedence.
+description: Learn about operator precedence, including an overview of the order of operator precedence with a table that provides syntax for operators in precedence order.
 author: pvillads
-ms.date: 07/01/2019
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: pvillads
+ms.topic: article
+ms.custom: 
+  - bap-template
+ms.date: 06/13/2024
+ms.reviewer: johnmichalak
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

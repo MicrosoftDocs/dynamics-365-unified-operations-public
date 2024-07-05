@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Purchase order approval mobile workspace
-description: This article provides information about the Purchase order approval mobile workspace, which lets you view purchase orders and respond to them through actions. For example, you can approve or reject a purchase order.
-author: GalynaFedorova 
-ms.date: 05/24/2022
+description: Learn about the Purchase order approval mobile workspace, which lets you view purchase orders and respond to them through actions.
+author: Henrikan
+ms.author: henrikan
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: PurchVendorPortalRequests
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/24/2022
 ms.reviewer: kamaybac
-
-
-# ms.tgt_pltfrm: 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: gfedorova
-ms.search.validFrom: 2016-11-30 
+ms.search.validFrom: 2016-11-30
+ms.search.form: PurchVendorPortalRequests
 ms.dyn365.ops.version: Version 1611 
-
 ---
 
 # Purchase order approval mobile workspace

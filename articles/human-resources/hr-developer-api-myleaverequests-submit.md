@@ -6,9 +6,6 @@ description: In Microsoft Dynamics 365 Human Resources, you can use the MyLeaveR
 author: twheeloc
 ms.date: 02/03/2020
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: 
@@ -29,7 +26,6 @@ ms.dyn365.ops.version: Human Resources
 # Submit a leave request to workflow
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

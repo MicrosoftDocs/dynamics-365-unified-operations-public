@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Prerequisites for a standard cost conversion
-description: This article discusses tasks to perform before you run a standard cost conversion. 
+description: Learn about tasks to perform before you run a standard cost conversion, including a step-by-step process for running standard cost conversions. 
 author: JennySong-SH
-ms.date: 06/20/2017
+ms.author: yanansong
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: InventStdCostConv
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 73af66cf-c924-45be-837a-a648dbd05a31
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: yanansong
 ms.search.validFrom: 2016-02-28
+ms.search.form: InventStdCostConv
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 73af66cf-c924-45be-837a-a648dbd05a31
 ---
 
 # Prerequisites for a standard cost conversion

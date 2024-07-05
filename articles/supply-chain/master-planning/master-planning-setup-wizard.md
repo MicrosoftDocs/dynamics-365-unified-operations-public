@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Master planning setup wizard  (contains video)
-description: This article describes how to run the master planning setup wizard to set up master planning.
+description: Learn how to run the master planning setup wizard to set up master planning, including an outline on company-specific requirements.
 author: t-benebo
-ms.date: 10/21/2019
+ms.author: benebotg
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ReqCreatePlanWorkspace
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 10/21/2019
 ms.custom: 
-ms.assetid: 
+ms.reviewer: kamaybac 
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: benebotg
 ms.search.validFrom: 2019-05-31
+ms.search.form: ReqCreatePlanWorkspace
 ms.dyn365.ops.version: AX 10.0.0
-
 ---
 
 # Master planning setup wizard

@@ -1,18 +1,16 @@
 ---
 title: VAT declaration for Bahrain
-description: This article explains how to configure and generate the VAT return form for Bahrain.
-author: AdamTrukawka
-ms.date: 08/28/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn how to configure and generate the VAT return form for Bahrain, including prerequisites and an outline on downloading electronic reporting configurations.
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
+ms.reviewer: johnmichalak
 ms.search.region: Bahrain
-ms.author: atrukawk
 ms.search.validFrom: 2020-06-03
 ms.dyn365.ops.version: 10.0.13
-ms.search.form: 
 ---
 
 # VAT declaration for Bahrain (BH-00002)

@@ -1,25 +1,21 @@
 ---
 title: Change the banner or logo
-description: The following procedure lists the steps that system administrators can use to update the banner or logo image that is displayed for a legal entity.
+description: Learn about the steps that system administrators can use to update the banner or logo image that is displayed for a legal entity.
 author: jasongre
-ms.date: 06/21/2019
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: how-to
+ms.date: 06/21/2019
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: OMLegalEntity, DefaultDashboard
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Change the banner or logo
 
 [!include [banner](../../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../../includes/peap-3.md)]
 
 The following procedure lists the steps that system administrators can use to update the banner or logo image that is displayed for a legal entity. The demo data company used to create this procedure is USMF.
 

@@ -4,8 +4,6 @@ description: This article explains how to migrate the Retail SDK to Visual Studi
 author: josaw1
 ms.date: 05/03/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: global

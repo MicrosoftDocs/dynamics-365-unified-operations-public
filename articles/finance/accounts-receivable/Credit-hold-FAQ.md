@@ -1,35 +1,26 @@
 ---
-# required metadata
-
 title: Credit limit holds FAQ
-description: This article answers some frequently asked questions about credit checks, credit holds, and the warning and error messages that you might receive in Credit management.
+description: Access answers to some frequently asked questions about credit checks, credit holds, and the warning and error messages that you might receive in Credit management.
 author: JodiChristiansen
-ms.date: 11/29/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-ms.search.scope: Core, Operations
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: jchrist
+ms.topic: article
+ms.date: 04/04/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.scope: Core, Operations
+ms.search.region: Global
 ms.search.validFrom: 2023-11-29
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.35
-
 ---
+
 # Credit limit holds FAQ
 
 This article answers some frequently asked questions about credit checks, credit holds, and the warning and error messages that you might receive in Credit management.
 
 To open the **Credit and collections parameters** page, go to **Credit and collections** \> **Setup** \> **Credit and collections parameters**. To set up the blocking rules, go to **Credit and collections** \> **Setup** \> **Credit management setup** \> **Blocking rules**.
+
+For more information, see [Finance troubleshooting and FAQs](../finance-troubleshooting.md).
 
 ### After I upgrade to version 10.0.35 or later, the credit check is no longer working. However, it worked before the upgrade.
 

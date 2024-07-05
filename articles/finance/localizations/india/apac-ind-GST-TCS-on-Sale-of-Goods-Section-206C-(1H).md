@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: TCS on sales of goods 
-description: This article provides information about the functionality for Tax Collection at Source (TCS) on sales of goods.
+description: Learn about the functionality for Tax Collection at Source (TCS) on sales of goods, including an outline on base amount for TCS deduction.
 author: prabhatb
-ms.date: 03/16/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: India
-# ms.search.industry: 
 ms.author: kfend
+ms.topic: article
+ms.date: 03/16/2021
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application User 
+ms.search.region: India
 ms.search.validFrom: 2020-09-01
+ms.search.form:
 ms.dyn365.ops.version: 10.0.13
-
 ---
 
 # TCS on sales of goods

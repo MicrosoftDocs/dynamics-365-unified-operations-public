@@ -1,26 +1,17 @@
 --- 
-# required metadata 
- 
 title: Load templates
-description: This article describes how to set up load templates, and how to associate a load template with a new load.
+description: Learn how to set up load templates, and how to associate a load template with a new load, including a step-by-step process.
 author: Weijiesa
+ms.author: weijiesa
+ms.topic: how-to
 ms.date: 10/30/2020
-ms.topic: how-to 
-ms.prod: 
-ms.technology: 
- 
-# optional metadata 
- 
-ms.search.form: WHSLoadTemplate 
-audience: Application User 
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.custom:
+ms.reviewer: kamaybac 
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: weijiesa
-ms.search.validFrom: 2020-10-30 
+ms.search.validFrom: 2020-10-30
+ms.search.form: WHSLoadTemplate, WHSOutboundLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench
 ms.dyn365.ops.version: 10.0.15
 ---
 
@@ -50,8 +41,11 @@ This article describes how to set up load templates, and how to associate a load
 
 ## Associate a load template with a new load
 
-1. Go to **Transportation management \> Planning \> Load planning workbench**.
-1. In the upper part of the page, select one of the following tabs, depending on the type of source document that you're creating a load for: **Shipments**, **Sales lines**, **Transfer lines**, or **Purchase order lines**. 
+1. Go to one of the following pages, depending on whether you are setting up an inbound or outbound load:
+    - **Transportation management > Planning > Inbound load planning workbench**.
+    - **Transportation management > Planning > Outbound load planning workbench**.
+
+1. In the upper part of the page, select one of the following tabs, depending on the type of source document that you're creating a load for: **Shipments**, **Sales lines**, **Transfer lines**, or **Purchase order lines**.
 1. Select the specific document to plan the load for.
 1. On the Action Pane, on the **Supply and demand** tab, in the **Add** group, select **To new load**.
 1. In the **Load template** dialog box, in the **Load template ID** field, select the template to apply.

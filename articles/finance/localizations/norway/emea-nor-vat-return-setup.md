@@ -1,16 +1,13 @@
 ---
 title: Prepare your environment to interoperate with ID-porten and Altinn web services
-description: This article explains how to prepare your environment to interoperate with ID-porten and Altinn web services.
-author: AdamTrukawka
-ms.date: 08/09/2022
+description: Learn how to prepare your environment to interoperate with ID-porten and Altinn web services, including an outline on importing and setting up ER configurations.
+author: liza-golub
+ms.author: egolub
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 02/09/2024
+ms.reviewer: johnmichalak
 audience: Application User
-ms.reviewer: kfend
 ms.search.region: Norway
-# ms.search.industry: 
-ms.author: atrukawk
 ms.search.validFrom: 2021-11-18
 ms.dyn365.ops.version: AX 10.0.22
 ---
@@ -60,7 +57,7 @@ Import the following ER configurations to prepare Finance to generate VAT return
 | 13 | Altinn VAT import validation result format (NO) | Format (importing) | The ER format that is used to import the results of the VAT return validation that is received from the Altinn web service into the database. |
 | 14 | Altinn VAT web request headers format (NO) | Format (exporting) | A format that is used to create headers for the Hypertext Transfer Protocol over Secure Sockets Layer (HTTPS) request. |
 
-Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version. Use the number of the KB article in the [Issue search portal in Microsoft Dynamics Lifecycle Service (LCS)](https://lcs.dynamics.com/v2) to learn more about the changes that are introduced. If the latest configuration version contains references to objects that aren't available in your Finance version, the import process will be locked for that configuration version. In this case, import the latest version of the configuration that is available for your Finance version.
+Import the latest versions of these configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version. Use the number of the KB article in the [Issue search portal in Microsoft Dynamics Lifecycle Service](https://lcs.dynamics.com/v2) to learn more about the changes that are introduced. If the latest configuration version contains references to objects that aren't available in your Finance version, the import process will be locked for that configuration version. In this case, import the latest version of the configuration that is available for your Finance version.
 
 > [!NOTE]
 > After all the ER configurations from the preceding table are imported, set the **Default for model mapping** option to **Yes** for the following configurations:
@@ -192,8 +189,8 @@ For this lookup field, the following master data sources are available for setup
 
 - **Tax code** – The sales tax code.
 - **Tax classifier** – An enumerated list of values that represent different combinations of tax transaction directions and credit note criteria in Finance. For more information about how the tax classifier is calculated for a tax transaction, see [Detailed description of tax transaction classifier](#tax-transaction-classifier).
-- **Item sales tax group** - The item sales tax group.
-- **Sales tax group** - The sales tax group.
+- **Item sales tax group** – The item sales tax group.
+- **Sales tax group** – The sales tax group.
 
 Define the conditions from the current company's master data sources to determine which value from the enumerated list of values that the Norwegian Tax Administration requires must be reported in the `<spesifikasjon>` tag under the `<mvaSpesifikasjonslinje>` node for the corresponding combination of master data from your Finance environment.
 
@@ -232,7 +229,7 @@ The following table shows the lookup results for **StandardTaxCodes_Lookup**.
 
 | Lookup results | Description (Norwegian) | Description (English) |
 |---|---|---|
-| 1 | Fradragsberettiget innenlands inngående merverdiavgift, 25% | Deductible domestic input VAT, 25% |
+| 1 | Fradragsberettiget innenlands inngående merverdiavgift, 25%</span> | Deductible domestic input VAT, 25% |
 | 11 | Fradragsberettiget innenlands inngående merverdiavgift, 15 % | Deductible domestic input VAT, 15% |
 | 12 | Fradragsberettiget innenlands inngående merverdiavgift, 11,11% | Deductible domestic input VAT, 11.11% |
 | 13 | Fradragsberettiget innenlands inngående merverdiavgift, 12% | Deductible domestic input VAT, 12% |
@@ -276,7 +273,7 @@ The following table shows the lookup results for **StandardTaxCodes_Lookup**.
 >
 > - **82** – Purchases of goods from abroad without deduction entitlement (standard rate).
 > - **84** – Purchases of goods from abroad without deduction entitlement (middle rate).
-> - **85** – Basis for importatng goods that VAT isn't to be calculated from.
+> - **85** – Basis for importation of goods that VAT isn't to be calculated from.
 > - **87** – Purchases of services from abroad without deduction entitlement (standard rate).
 > - **89** – Purchases of services from abroad without deduction entitlement (low rate). 
 >
@@ -286,20 +283,20 @@ The following table shows the lookup results for **StandardTaxCodes_Lookup**.
 
 The process of setting up the EM functionality for VAT returns with direct submission to Altinn has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables. Some records in the data entities package include a link to ER configurations. Before you start to import the data entities package, import ER configurations into Finance.
 
-1. In [LCS](https://lcs.dynamics.com/v2), go to the **Shared asset library**, and select **Data package** as the asset type. 
-2. In the list of data package files, find **NO VAT return – Altinn**, and download it to your computer.
+1. In [Lifecycle Services](https://lcs.dynamics.com/v2), go to the **Shared asset library**, and select **Data package** as the asset type. 
+2. In the list of data package files, find **NO VAT return Altinn vN** (where "N" is the version of the package), and download it to your computer. We recommend that you download the latest available version of the package.
 3. In Finance, select the company that you will interoperate with Altinn from, and then go to **Workspaces** \> **Data management**.
 4. Before you import setup data from the data entities package, make sure that the data entities in your application are refreshed and synced. In the **Data management** workspace, go to **Framework parameters** \> **Entity settings**, and then select **Refresh entity list**. Wait for confirmation that the refresh has been completed. For more information about how to refresh the entity list, see [Entity list refresh](../../../fin-ops-core/dev-itpro/data-entities/data-entities.md#entity-list-refresh).
 5. Validate that the source data and target data are correctly mapped. For more information, see [Validate that the source data and target data are mapped correctly](../../../fin-ops-core/fin-ops/data-entities/data-import-export-job.md#validate-that-the-source-data-and-target-data-are-mapped-correctly).
 6. In the **Data management** workspace, select **Import**, and then, on the **Import** FastTab, set the **Group name** field.
 7. On the **Selected entities** FastTab, select **Add file**.
 8. In the **Source data format** field, select **Package**, and then select **Upload and add**. 
-9. Find and select the **NO VAT return – Altinn** setup file that you previously downloaded.
+9. Find and select the **NO VAT return Altinn vN** setup file that you previously downloaded.
 10. Wait until the data entities from the file are listed in the grid on the **Selected entities** FastTab, and then select **Close**.
 11. Before the data entities are used for the first time to import the data from the package, sync the mapping of the source data and the target data. In the list for the package, select a data entity, and then, on the Action Pane, select **Modify target mapping**. 
 12. Above the grid for the package, select **Generate mapping** to create a mapping from scratch. Then save the mapping.
 13. Repeat steps 11 and 12 for every data entity in the package before you start the import.
-14. You can now import data from the **NO VAT return – Altinn** setup file into the selected company. On the Action Pane, select **Import** to start the import.
+14. You can now import data from the **NO VAT return Altinn vN** setup file into the selected company. On the Action Pane, select **Import** to start the import.
 
     ![Importing a package of data entities that includes a predefined EM setup.](../media/emea-nor-vat-return-importem-setup.png)
 
@@ -425,7 +422,7 @@ If any of these file types aren't defined on the **File types** tab, add them.
 
 The Tax Administration web service validates VAT returns. This web service then sends the validation results in XML format. To make it easier for users to read and analyze the validation results, you can download and use an Extensible Stylesheet Language Transformations (XSLT) transformation.
 
-1. In [LCS](https://lcs.dynamics.com/v2), go to the **Shared asset library**, and select **Data package** as the asset type. 
+1. In [Lifecycle Services](https://lcs.dynamics.com/v2), go to the **Shared asset library**, and select **Data package** as the asset type. 
 2. In the list of data package files, find **NO VAT validation result converter**, and download it to your computer. The file name is, **NO VAT validation result converter.zip**.
 3. Unarchive the `NO VAT validation result converter.zip` file to get the `NO VAT validation result converter.xslt` file.
 4. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Message processing actions**, and select **NO VAT Import validation response action**.
@@ -472,24 +469,19 @@ When you [register an integration point in the ID-porten web portal](emea-nor-va
 
 Internet addresses (URLs) are subject to change by the Norwegian Tax Administration. We recommend that you check for actual URLs on the official Altinn and ID-porten website. 
 
-Follow these steps to set up a URL that is used in ID-porten.
+Follow these steps to set up a URL that is used in **ID-porten**.
 
 1. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web applications**, and select the **NO ID-Porten** web application in the list on the left.
-2. In the **Base URL** field, enter one of the following internet addresses:
-
-    - `https://oidc-ver2.difi.no/idporten-oidc-provider` to interoperate with the *sandbox* endpoint of ID-porten
-    - `https://oidc.difi.no/idporten-oidc-provider` to interoperate with the *production* endpoint of ID-porten
+2. **Base URL** field is blank.
 
     > [!IMPORTANT]
-    > For actual internet addresses, go to <https://docs.digdir.no/oidc_func_wellknown.html>.
+    > For actual production internet addresses, go to <https://idporten.no/.well-known/openid-configuration>.
 
-3. In the **Authorization URL path** field, enter **/authorize**.
-4. In the **Token URL path** field, enter **/token**.
-5. Copy the full URL of the current page from your browser's Address bar, and paste it into the **Redirect URL** field.
+3. In the **Authorization URL path** field, enter `https://login.idporten.no/authorize` for *production* integration or `https://login.test.idporten.no/authorize` for *sandbox* integration.
+4. In the **Token URL path** field, enter `https://idporten.no/token` for *production* integration or `https://test.idporten.no/token` for *sandbox* integration.
+5. Copy the full URL of the current page from your browser's address bar, and paste it into the **Redirect URL** field.
 
-    ![Copying the full URL of the current page from the browser's Address bar and pasting into the Redirect URL field.](../media/emea-nor-vat-return-redirect-url.png)
-
-Follow these steps to set up an internet address that is used by Altinn web services.
+Follow these steps to set up an internet address that is used by **Altinn** web services.
 
 1. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web applications**, and select the **NO Altinn** web application in the list on the left.
 2. In the **Base URL** field, enter one of the following internet addresses:

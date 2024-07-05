@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Ledger account combinations
-description: This article provides information about combinations of ledger accounts in the dimension framework.
+description: Learn about combinations of ledger accounts in the dimension framework, including outlines of the dimension framework and dimension enumerations.
 author: RyanCCarlson2
-ms.date: 05/01/2019
+ms.author: rcarlson
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 06/10/2024
+ms.reviewer: johnmichalak
 audience: Developer
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
 ms.assetid: 20e6b97e-30ed-48d4-b63c-a073f80300b2
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rcarlson
 ms.search.validFrom: 2019-01-16
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Ledger account combinations

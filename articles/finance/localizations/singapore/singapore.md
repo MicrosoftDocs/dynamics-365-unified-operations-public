@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Singapore overview
-description: This article provides links to documentation resources for Singapore. 
+description: Access links to documentation resources for Singapore, including links to resources about Reverse charge VAT and audit files.
 author: kfend
-ms.date: 06/20/2022
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.search.region: Singapore
-# ms.search.industry: 
 ms.author: kfend
+ms.topic: overview
+ms.date: 06/20/2022
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Singapore
 ms.search.validFrom: 2017-06-30
+ms.search.form:
 ms.dyn365.ops.version: July 2017 update
-
 ---
 
 # Singapore overview

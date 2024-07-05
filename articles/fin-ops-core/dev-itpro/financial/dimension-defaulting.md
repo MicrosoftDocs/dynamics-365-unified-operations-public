@@ -1,31 +1,18 @@
 ---
-# required metadata
-
 title: Default financial dimensions
-description: This article describes where the financial dimensions originate, the APIs that are used to merge them, and how they are used to create ledger dimensions.
+description: Learn about where the financial dimensions originate, the APIs that are used to merge them, and how they are used to create ledger dimensions.
 author: RyanCCarlson2
-ms.date: 01/09/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: rcarlson
+ms.topic: article
+ms.date: 06/10/2024
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2019-01-16
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
+
 # Default financial dimensions
 [!include [banner](../includes/banner.md)]
 

@@ -1,25 +1,14 @@
 ---
-# required metadata
 title: Invoice processing
-description: This article provides information about invoice processing for Eastern Europe.
+description: Learn about invoice processing for Eastern Europe, including an overview on country/region-specific scenarios, such as intra-communit value-added tax.
 author: EvgenyPopovMBS
-ms.date: 02/02/2022
+ms.author: evgenypopov
+ms.date: 06/05/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.custom: 
+  - bap-template
+ms.reviewer: johnmichalak
 
-# optional metadata
-ms.search.form: CustParameters, VendParameters
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia, Italy
-# ms.search.industry: 
-ms.author: epopov
-ms.search.validFrom: 2017-06-30
-ms.dyn365.ops.version: July 2017 update
 ---
 
 # Invoice processing
@@ -37,8 +26,8 @@ This article briefly describes some country/region-specific scenarios, such as i
 </thead>
 <tbody>
 <tr>
-<td>Accounts receivable and Accounts payable dates for VAT</td>
-<td>Czech Republic, Poland</td>
+<td>Accounts payable dates for VAT</td>
+<td>Czech Republic, Spain</td>
 <td>
 <p>When goods are purchased from European Union (EU) countries/regions, there is an obligation of self-assessment of VAT:</p>
 <ul>

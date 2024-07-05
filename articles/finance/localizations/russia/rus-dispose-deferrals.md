@@ -1,18 +1,16 @@
 ---
 title: Dispose of deferrals (Russia)
-description: This article explains how to dispose of deferrals.
-author: AdamTrukawka
-ms.date: 06/28/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn how to dispose of deferrals in Russia, including a step-by-step process and an outline on how to view the deferrals that are generated.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/20/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
-ms.author: atrukawk
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: 10.0.1
-ms.search.form: 
 ---
 
 # Dispose of deferrals (Russia)

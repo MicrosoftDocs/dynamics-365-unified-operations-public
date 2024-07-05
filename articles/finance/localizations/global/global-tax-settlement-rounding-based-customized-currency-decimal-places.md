@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Tax settlement rounding based on customized currency decimal places
-description: This article explains how to do tax settlement rounding that is based on customized currency decimal places.
+description: Learn how to do tax settlement rounding that is based on customized currency decimal places, including outlines on requirements and the background.
 author: shtao
-ms.date: 09/15/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region:
-# ms.search.industry: 
 ms.author: shtao
+ms.topic: article
+ms.date: 09/15/2021
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region:
 ms.search.validFrom:
+ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.23
 ---
 
@@ -44,6 +32,6 @@ Because of the high value of the currency in Gulf countries/regions, the **amoun
 
 Enable this feature when you have customized decimal places For example, enable it if you've extended the **amount** data type to three or more decimal places. Tax settlements can use the same rounding precision. You can set the **Round-off** field to the corresponding precision when you configure sales tax authorities in the **Tax** module.
 
-[![Round-off field set to three decimal places for a sales tax authority on the Sales tax authorities page.](../media/tax-settle-tax-authority-round-off.png)](/media/tax-settle-tax-authority-round-off.png)
+![Round-off field set to three decimal places for a sales tax authority on the Sales tax authorities page.](../media/tax-settle-tax-authority-round-off.png)]
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,19 +1,18 @@
 ---
 title: JP-00027 Form 26 for depreciable tax declaration
-description: This task walks you through assigning a registration number to a fixed asset and printing the form 26 report.
+description: Learn about assigning a registration number to a fixed asset and printing the form 26 report, including a process for creating a registration number.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: OMLegalEntity, LogisticsPostalAddress, SysLookupMultiSelectGrid, LogisticsAddressCityLookup, AssetLocation, AssetLocationEdit_JP, AssetGroup, AssetTable, LedgerJournalTable, LedgerJournalTransAsset, DefaultDashboard
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # JP-00027 Form 26 for depreciable tax declaration
 
 [!include [banner](../../includes/banner.md)]

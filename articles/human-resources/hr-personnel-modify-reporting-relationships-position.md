@@ -4,10 +4,8 @@
 title: Modify reporting relationships for a position
 description: This procedure shows how to change the reporting relationship for an employee. 
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 04/16/2024
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
@@ -26,15 +24,13 @@ ms.dyn365.ops.version: Version 7.0.0
 # Modify reporting relationships for a position
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
 This procedure shows how to change the reporting relationship for an employee. The reporting relationship can be used for routing documents through workflow. The procedure also shows how to assign the employee to additional hierarchies. For example, an employee might be a part of a project team with an informal reporting relationship to a project supervisor. Additional reporting relationships can be defined on the position to accommodate various project or matrix scenarios. The demo data company used to create this procedure is USMF.
 
-1. Go to **Human resources** \> **Positions** \> **Positions**.
+1. Go to **Human resources** \> **Positions** \> **All positions**.
 2. Use the Quick Filter to find records. For example, filter on a value of **000091** for the **Position** field.
 3. In the list, select the link in the selected row.
 4. Expand the **Reports to position** section.

@@ -1,29 +1,16 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Supply Chain Management version 10.0.18 (May 2021) 
-description: This article describes features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.18. 
+description: Learn about features that are either new or changed in Dynamics 365 Supply Chain Management 10.0.18 with an outline on included features. 
 author: kamaybac
-ms.date: 03/01/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kamaybac
-ms.search.validFrom: 2021-03-01 
-ms.dyn365.ops.version: 10.0.18
+ms.topic: conceptual
+ms.date: 05/28/2024
+ms.custom:
+  - bap-template
+  - evergreen
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form:
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management version 10.0.18 (May 2021)
@@ -44,7 +31,7 @@ The following features are included in this release. Follow the links to the [re
 
 - [Create and view certifications on the vendor collaboration interface](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/create-view-certifications-vendor-collaboration-interface)<br> - For more information, see [Maintain vendor certification](../../finance/public-sector/manage-vendor-certification.md).
 
-- [Enterprise-scale inventory performance improvements and archiving](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - For more information, see [Archive inventory transactions](../inventory/archive-inventory-transactions.md).
+- [Enterprise-scale inventory performance improvements and archiving](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - For more information, see [Consolidate inventory transactions](../inventory/archive-inventory-transactions.md).
 
 - [Rebate management](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - For more information, see [Rebate management module overview](../rebate-management/rebate-management-overview.md).
 

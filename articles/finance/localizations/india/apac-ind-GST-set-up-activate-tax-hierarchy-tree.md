@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Set up a sales tax hierarchy and the setoff rules
-description: This article explains how to set up a sale tax hierarchy and the setoff rules.
-author: EricWangChen
+description: Learn how to set up a sale tax hierarchy and the setoff rules, including a step-by-step process for maintaining setoff hierarchy profiles.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 06/05/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: johnmichalak
 ms.search.region: India
-# ms.search.industry: 
-ms.author: wangchen
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.4
-
 ---
 
 # Set up a sales tax hierarchy and the setoff rules

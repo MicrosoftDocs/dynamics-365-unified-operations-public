@@ -6,9 +6,6 @@ description: This article provides an overview of the data that is managed by th
 author: BrianShook
 ms.date: 12/03/2018
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 # ms.search.form: 

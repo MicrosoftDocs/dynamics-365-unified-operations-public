@@ -4,8 +4,6 @@ description: This article covers page summary modules and describes how to add t
 author: samjarawan
 ms.date: 04/09/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global

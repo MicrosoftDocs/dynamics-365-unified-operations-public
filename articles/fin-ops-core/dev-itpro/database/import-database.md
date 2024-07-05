@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Import a database
-description: This article explains how to import a database for finance and operations apps.
+description: Learn how to import a database for finance and operations apps, including prerequisites, and overviews of long-running operations.
 author: LaneSwenka
+ms.author: laswenka
 ms.date: 11/13/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
+audience: IT Pro
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: laswenka
 ms.search.validFrom: 2019-09-30
+ms.search.form: 
 ms.dyn365.ops.version: 8.1.3
-
 ---
 
 # Import a database
@@ -63,7 +51,7 @@ Specific activities must be completed when you import a database backup into a s
 * Make sure that batch jobs are set to a status of **Waiting**.
 * Make sure that users are re-enabled.
 * Make sure that dual-write is relinked if necessary.
-* Make sure that dual-write is relinked if necessary.  To set up a new link on the target environment after this operation is successful, see [Dual-write environment linking](../data-entities/dual-write/link-your-environment.md).
+* Make sure that dual-write is relinked if necessary.  To set up a new link on the target environment after this operation is successful, see [Enable Power Platform Integration](../../dev-itpro/power-platform/enable-power-platform-integration.md).
 
 ### Environment admin
 

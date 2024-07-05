@@ -45,6 +45,10 @@ For more information, see [Configure Human resources parameters](hr-setup-parame
 
 Before you can use the API, the virtual tables must be generated. For more information, see [Virtual tables for Human Resources in Dataverse](hr-admin-integration-payroll-api-introduction.md#virtual-tables-for-human-resources-in-dataverse).
 
+>[!NOTE]
+>For the payroll integration to work for customers using the mshr entities, the row version change tracking must be disabled. To disable row version change tracking, reach out to Microsoft support to enable the DMFDisableSqlRowVersionCtForCDSVirtualEntity flight. Enabling this flight will disable row version change tracking.
+
+
 ## Enable features
 
 You must enable features in Feature management to enable Microsoft APIs to be exposed to the integration and the data to be passed to Dayforce.
@@ -279,7 +283,7 @@ For more information, see the following resources:
 
 ### Add the Dayforce people connector to the Human Resources environment
 
-1. In Human Resources, go to **Azure Active Directory Application**, and select **New**.
+1. In Human Resources, go to **Microsoft Entra Application**, and select **New**.
 2. Add the Dayforce payroll connector that has the client ID **6817703f-e5b3-4eec-b11f-ba6367f1b156** and the user ID **DFAPIConnector**.
 
 ## Ready to pay

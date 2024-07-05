@@ -4,8 +4,6 @@ description: This article explains how to add support for additional languages t
 author: bicyclingfool
 ms.date: 12/12/2019
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global

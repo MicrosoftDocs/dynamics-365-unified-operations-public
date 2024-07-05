@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: 125 percent reducing balance depreciation
-description: This article presents an overview of the 125 percent reducing balance method of depreciation.
+description: Learn about the 125 percent reducing balance method of depreciation, including outlines on selecting a depreciation year and an example.
 author: moaamer
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetDepreciationProfile
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 3abc263e-59d6-4f1a-986d-1be388948bd3
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 04/12/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: AssetDepreciationProfile
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 3abc263e-59d6-4f1a-986d-1be388948bd3
 ---
 
 # 125 percent reducing balance depreciation

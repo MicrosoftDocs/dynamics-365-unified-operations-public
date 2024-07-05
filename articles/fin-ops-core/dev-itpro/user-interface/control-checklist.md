@@ -1,15 +1,13 @@
 ---
 title: Control checklist
-description: This article categorizes and describes all the release criteria for controls.
+description: Learn about control checklists, including overviews for various checklist types, including classes, resource, and X++ runtime.
 author: josaw1
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 9e67e62c-1ced-45bd-8591-941e9afb0ab1

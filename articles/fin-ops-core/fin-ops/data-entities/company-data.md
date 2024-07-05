@@ -1,13 +1,13 @@
 ---
 title: Company concept in Dataverse
-description: This article describes the integration of company data between finance and operations and Dataverse.
+description: Learn about the integration of company data between finance and operations and Dataverse, including an overview on company striping and bootstrapping.
 author: RamaKrishnamoorthy
-ms.date: 08/04/2020
-ms.topic: article
-audience: Application User
-ms.reviewer: sericks
-ms.search.region: global
 ms.author: ramasri
+ms.topic: article
+ms.date: 08/04/2020
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: global
 ms.search.validFrom: 2020-01-06
 ---
 

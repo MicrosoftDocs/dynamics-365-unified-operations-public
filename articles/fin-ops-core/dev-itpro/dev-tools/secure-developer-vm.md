@@ -1,17 +1,16 @@
 ---
 title: Secure one-box development environments
-description: This article describes how to help secure one-box developer environments.
+description: Learn about how to help secure one-box developer environments, including outlines on default congigurations and how to deploy to a custom virtual network.
 author: mnordick
-ms.date: 11/29/2023
+ms.author: mnordick
+ms.date: 07/01/2024
 ms.topic: how-to
 ms.custom: 
   - bap-template
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: mnordick
 ms.search.validFrom: 2022-09-13
-
 ---
 
 # Secure one-box development environments
@@ -62,7 +61,8 @@ The following table shows the regional instances of Lifecycle Services.
 | Geography | Lifecycle Services URL | Lifecycle Services IP addresses |
 |---|---|---|
 | United States/Public | lcs.dynamics.com | 191.239.20.104<br>40.76.5.241<br>40.112.209.123<br>40.121.208.21<br>40.118.145.241 |
-| Azure Government | gov.lcs.microsoftdynamics.us | 52.227.70.23<br>13.72.15.62<br>23.97.12.187<br>13.72.20.213 |
+| Azure Government/GCC | gov.lcs.microsoftdynamics.us | 20.141.106.7<br>20.141.192.69 |
+| Azure Government/GCC High | high.lcs.microsoftdynamics.us | 52.245.167.30<br>20.141.241.11 |
 | China | lcs.dynamics.cn | 40.73.5.94<br>40.73.64.218<br>40.112.209.123<br>40.121.208.21 |
 | Europe | eu.lcs.dynamics.com | 40.114.140.114<br>40.115.104.173 |
 | France | fr.lcs.dynamics.com | 40.89.132.81<br>40.89.155.166<br>40.89.130.72<br>52.136.130.60<br>52.136.130.76 |
@@ -72,7 +72,7 @@ The following table shows the regional instances of Lifecycle Services.
 
 - If you're using a higher-level firewall outside the virtual network's network security group, you must allow a broader range of inbound ports from the Lifecycle Services source IP addresses. This requirement exists because the load balancer is configured to map a randomized port in the range 50000–65535 to well-known ports, such as the ports for WinRM and RDP. Deployment from Lifecycle Services requires that ports in this range be accessible.
 - The HTTPS port (443) doesn't have to be exposed externally, and it isn't used during deployment or management operations.
-- Outbound internet access must remain open from the virtual network. Finance and operations apps require internet access for various product functionalities. For example, access to Azure Active Directory (Azure AD) is required for authentication.
+- Outbound internet access must remain open from the virtual network. Finance and operations apps require internet access for various product functionalities. For example, access to Microsoft Entra is required for authentication.
 
 Deployment to a custom virtual network is an advanced configuration. The preceding guidance is provided as an outline of the requirements that help you successfully use a custom virtual network. An incorrect virtual network configuration can prevent deployment or management operations from Lifecycle Services. Therefore, make sure that you understand how the customizations might affect external integrations.
 
@@ -83,7 +83,7 @@ Deployment to a custom virtual network is an advanced configuration. The precedi
 
 Microsoft Defender and Azure Well-Architected security assessments provide general security guidance that applies to any Azure resources that you provision in your subscription, including your one-box development environment resources.
 
-When you're considering whether the recommendations are appropriate for you and your organization's policies, it's important that you follow the preceding guidance. For example, management ports must be accessible for Lifecycle Services to manage your environment, even though security assessments recommend that you close access to those ports. As another example, the guidance might recommend that you restrict network access to the environment's storage account. However, these restrictions break some integration scenarios, such as export to Microsoft Excel, that require that files are externally accessible for download. Finally, some recommendations about diagnostic and telemetry logging might incur more costs that the resource owner must consider if those recommendations are applicable to their needs.
+When you're considering whether the recommendations are appropriate for you and your organization's policies, it's important that you follow the preceding guidance. For example, management ports must be accessible for Lifecycle Services to manage your environment, even though security assessments recommend that you close access to those ports. As another example, the guidance might recommend that you restrict network access to the environment's storage account. However, these restrictions break some integration scenarios, such as export to Microsoft Excel, that requires that files are externally accessible for download. Finally, some recommendations about diagnostic and telemetry logging might incur more costs that the resource owner must consider if those recommendations are applicable to their needs.
 
 ## External integrations
 
@@ -91,7 +91,9 @@ Your one-box development environment can integrate with your Microsoft Entra ten
 
 - Import users.
 - Import Microsoft Entra ID groups.
-- Import Electronic reporting (ER) configurations.
+- Import Electronic reporting (ER) configurations. For more information about how to import ER configurations, see [Dynamics 365 Finance + Operations (on-premises) environments and enable the functionality](../analytics/electronic-reporting-import-ger-configurations.md).
+- Report execution using WCF service.
+- Data Task Automation.
 
 To use these capabilities, you must configure certificate access to your tenant.
 
@@ -117,17 +119,32 @@ If you must use the previously mentioned capabilities in your one-box developmen
     <add key="GraphApi.GraphAPIServicePrincipalCert" value="<certificate thumbprint>" />
     ```
 
-5. Add the environment URL as a redirect URI for the application. For more information, see [Add a redirect URI](/entra/identity-platform/quickstart-register-app#add-a-redirect-uri).
-6. Assign the API permissions for the application:
+5. In the **wif.config** file under **K:\\AosService\\webroot\\**, Add a new entry under `audienceUris` below the existing value for the customer's Entra AppId. Do not remove the spn:00000015-0000-0000-c000-000000000000 entry.
+    ```
+    <securityTokenHandlerConfiguration>
+    <audienceUris>
+    <add value="spn:00000015-0000-0000-c000-000000000000" />
+    <add value="spn:<your application ID>" />
+    </audienceUris>
+    ```
+6. Add the environment URL as a redirect URI for the application under **Web App** platform. For more information, see [Add a redirect URI](/entra/identity-platform/quickstart-register-app#add-a-redirect-uri).
+7. Add the environment OAUTH URL (EnvironmentURL/oauth) as a redirect URI for the application under **Web App** platform.
+8. Assign the API permissions for the application:
 
     1. Go to **API Permissions**, select **Add a Permission**, and add the following permissions:
 
         - **Dynamics ERP** – This permission is required to access finance and operations environments.
         - **Microsoft Graph** (**User.Read.All** and **Group.Read.All** permissions of the **Application** type)
+        - **Dynamics Lifecycle service** (permission of type **Delegated**)
 
     2. In the cloud-hosted environment, grant **Read** access to the network service for the newly installed certificate.
-
-For more information about how to import ER configurations, see [Dynamics 365 Finance + Operations (on-premises) environments and enable the functionality](../analytics/electronic-reporting-import-ger-configurations.md).
+9. Clear any cached configurations for LCS access using the SQL query on AX DB:
+     ```
+     DELETE FROM SYSOAUTHCONFIGURATION where SECURERESOURCE = 'https://lcsapi.lcs.dynamics.com'
+  
+     DELETE FROM  SYSOAUTHUSERTOKENS where SECURERESOURCE = 'https://lcsapi.lcs.dynamics.com'
+     ```
+10. Perform IISRESET from administrator command prompt.    
 
 ## Frequently asked questions
 

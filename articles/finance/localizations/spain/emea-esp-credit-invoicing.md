@@ -1,18 +1,17 @@
 ---
 title: Create a corrective invoice (Spain)
-description: This procedure walks you through how to create a corrective invoice.
+description: Learn how to create a corrective invoice, including step-by-step processes for creating purchase invoices and posting a credit note on a purchase.
 author: kfend
-ms.date: 12/06/2017
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Spain
 ms.author: kfend
+ms.topic: how-to
+ms.date: 12/06/2017
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Spain
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Create a corrective invoice (Spain)
 
 [!include [banner](../../includes/banner.md)]

@@ -2,10 +2,8 @@
 title: Set up Dynamics 365 Payment Connector for Adyen
 description: This article describes how to sign up with Adyen and set up the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: Reza-Assadi
-ms.date: 08/10/2023
+ms.date: 02/15/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
@@ -33,7 +31,7 @@ To use the Dynamics 365 Payment Connector for Adyen, you must have a separate ag
 > These instructions assume that you've already signed up for a merchant account with Adyen, and that you have access to the Adyen merchant dashboard.
 
 > [!IMPORTANT]
-> Adyen no longer supports [hosted payment pages](https://docs.adyen.com/online-payments/classic-integrations/hosted-payment-pages) as of October 2022. When configuring the Dynamics 365 Payment Connector for Adyen, version V001 will no longer be supported for call center and e-commerce because it uses hosted payment pages from Adyen. Instead, use version V002 (with origin key) or version V003 (with client key). Version V003 is recommended by Microsoft and is available in Commerce versions 10.0.29 and higher. Also, ensure that you set the **Allowed Origins** in the Adyen configuration by adding the full URL (for example, 'https://www.adventure-works.com') for your site (for e-commerce) or Commerce headquarters (for call center).
+> Adyen no longer supports [hosted payment pages](https://docs.adyen.com/online-payments/classic-integrations/hosted-payment-pages) as of October 2022. When configuring the Dynamics 365 Payment Connector for Adyen, version V001 is no longer be supported for call center and Commerce e-commerce because it uses hosted payment pages from Adyen. You should instead use version V002 (with origin key) or version V003 (with client key). Microsoft recommends using version V003, which is available in Commerce versions 10.0.29 and later. Ensure that you set the **Allowed Origins** in the Adyen configuration by adding the full URL (for example, 'https://www.adventure-works.com') for your site (for e-commerce) or Commerce headquarters (for call center).
 
 ### Prerequisites
 
@@ -41,7 +39,7 @@ The following prerequisites must be completed before payments can be configured 
 
 #### Configure your Adyen account settings for Dynamics 365 Commerce
 
-In addition to the instructions below, you must also configure your Adyen account settings for Dynamics 365 Commerce. For instructions on setting up Adyen for Dynamics 365 Commerce, see [Set up the Adyen payment connector for Dynamics 365](https://docs.adyen.com/plugins/microsoft-dynamics).
+In addition to the following instructions, you must also configure your Adyen account settings for Dynamics 365 Commerce. For instructions on setting up Adyen for Dynamics 365 Commerce, see [Set up the Adyen payment connector for Dynamics 365](https://docs.adyen.com/plugins/microsoft-dynamics).
 
 #### Set up a processor for new credit cards
 
@@ -55,7 +53,7 @@ To process payments across point of sale (POS) terminals, a call center, or Comm
     | Payment service | Enter the name of the payment service to configure. | Adyen Payment Service |
     | Payment connector | Select the payment connector to use for new credit card payments. | Dynamics 365 Payment Connector for Adyen |
     | Test mode | For the Adyen connector, in production and test environments you should set this field to **false**. | false |
-    | Default processor for credit cards | Specify whether this payment processor should be the default processor that's used for new credit cards. | Yes |
+    | Default processor for credit cards | Specify whether this payment processor should be the default processor to use for new credit cards. | Yes |
     | Bypass payment processor for zero transactions | Specify whether this payment processor should be skipped for transactions that have a 0 (zero) amount. | Yes |
 
 1. On the **Payment service account** tab, enter the following information.
@@ -81,8 +79,8 @@ To process payments across point of sale (POS) terminals, a call center, or Comm
     | Allow saving payment information in e-commerce | (*E-commerce only*) Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
     | Authorization stale period (days) | (*POS only*) Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
     | Origin Key ("V002") or Client Key ("V003") | An origin key value is required when "V002" is the designated version. For instructions on obtaining this key, see [How to get an origin key](https://docs.adyen.com/development-resources/how-to-get-an-origin-key). A client key value is required when "V003" is the designated version. For instructions on obtaining this key, see [Migrate to Client key](https://docs.adyen.com/development-resources/client-side-authentication/migrate-from-origin-key-to-client-key#switch-to-using-the-client-key).| Yes | No | *The full origin or client key* |
-    | EnableRequestProtection | Adds retry logic to "card not present" payment calls, reducing potential for duplicate calls using a correlation ID. When "True", a correlation ID is added to provider requests to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
-    | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses that don't support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
+    | EnableRequestProtection | Adds retry logic to "card not present" payment calls, reducing potential for duplicate calls using a correlation ID. If set to **True**, a correlation ID is added to provider requests to prevent duplicates. If set to **False**, calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
+    | Nonincremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses that don't support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
     | Disable terminal line display | Removes the itemized digital receipt lines from the terminal interface used for preview to shoppers before paying. Disabling the terminal line display is helpful for smaller, handheld terminal devices. | No | No | True/False |
     | Omitted payment methods | (*E-commerce and call center only*) Use this field to omit a payment method from the configuration where an iFrame element is rendered for payments as configured against the merchant account. Separate multiple values with semicolons. Strings must match the label used in the Adyen portal. Some payment method security criteria may interfere with the iFrame element rendering, so it may be desirable to omit conflicting security criteria from the configuration.  | No | No | "applepay;googlepay" |
 
@@ -95,12 +93,12 @@ To process payments across point of sale (POS) terminals, a call center, or Comm
 > [!NOTE]
 > These instructions assume that you have access to an Adyen payment terminal.
 
-Go to the [In-person payments](https://docs.adyen.com/point-of-sale) page on the Adyen website and follow the instructions to onboard your Adyen payment terminal. Skip any steps that instruct you to download Adyen-specific apps. During the onboarding process, make a note of the following information for each payment terminal. You'll need this information in the [Configure the payment terminal IP address and EFT POS register number](#configure-the-payment-terminal-ip-address-and-eft-pos-register-number) section later in this article.
+Go to the [In-person payments](https://docs.adyen.com/point-of-sale) page on the Adyen website and follow the instructions to onboard your Adyen payment terminal. Skip any steps that instruct you to download Adyen-specific apps. During the onboarding process, make a note of the following information for each payment terminal. You'll need this information in the [Configure the payment terminal IP address and EFT POS register number](#configure-the-payment-terminal-ip-address-and-eft-pos-register-number) section.
 
-- IP address of the payment terminal
-- POIID (POIID is composed of the serial number and model number of the device. It's used to uniquely identify the device.)
+- IP address of the payment terminal.
+- POIID (POIID is composed of the serial number and model number of the device, and is used to uniquely identify the device.)
 
-After the payment terminal is onboarded, sign in to the [Adyen Customer Area](https://ca-test.adyen.com/ca/ca/login.shtml), go to the terminal that you want to configure, and make a note of the following information for each payment terminal. You'll need this information in the [EFT service for local network communication](#eft-service-for-local-network-communication) section later in this article.
+After the payment terminal is onboarded, sign in to the [Adyen Customer Area](https://ca-test.adyen.com/ca/ca/login.shtml), go to the terminal that you want to configure, and make a note of the following information for each payment terminal. You'll need this information in the [EFT service for local network communication](#eft-service-for-local-network-communication) section.
 
 - Key identifier
 - Key passphrase
@@ -140,7 +138,7 @@ The Adyen payment connector can be configured to communicate with devices via th
     |---|---|:-:|:-:|---|
     | Assembly Name | Auto populated name of the assembly for the Dynamics 365 Payment Connector for Adyen. | Yes | Yes | *Binary name* |
     | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
-    | Version | Set to **V001** for EFT settings in the hardware profile. **V002** is required for call center and storefront only.  | Yes | Yes | "V001" |
+    | Version | Set to **V003** for EFT settings in the hardware profile. **V002** is required for call center and storefront only. Version **V001** is no longer supported. | Yes | Yes | "V003" |
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
     | Optional Domain | The optional domain is required for live environments and should be obtained by contacting Adyen. This domain is the unique identifier for your live environment in the format **[random]-[company name]**, and is present as the prefix inside the API URLs under **Account \> API URLs** in your company's live account on the Adyen Customer Area portal. For more information, see [Live endpoints](https://docs.adyen.com/development-resources/live-endpoints).| Live only | No | Contact Adyen |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
@@ -157,8 +155,8 @@ The Adyen payment connector can be configured to communicate with devices via th
     | Allow saving payment information in e-commerce | (*E-commerce only*) Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
     | Authorization stale period (days) | (*POS only*) Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
     | Origin Key | (*Card not present only*)  |
-    | EnableRequestProtection | Adds retry logic to "card not present" payment calls, reducing potential for duplicate calls using a correlation ID. When "True", a correlation ID is added to provider requests to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
-    | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses that don't support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
+    | EnableRequestProtection | Adds retry logic to "card not present" payment calls, reducing potential for duplicate calls using a correlation ID. If set to **True**, a correlation ID is added to provider requests to prevent duplicates. If set to **False**, calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
+    | Nonincremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses that don't support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
     | Disable terminal line display | Removes the itemized digital receipt lines from the terminal interface used for preview to shoppers before paying. Disabling the terminal line display is helpful for smaller, handheld terminal devices. | No | No | True/False |
     | Omitted payment methods | (*E-commerce and call center only*) |
 
@@ -177,7 +175,7 @@ The Adyen payment connector can be configured to communicate with devices via th
     |---|---|:-:|:-:|---|
     | Assembly Name | Autopopulated name of the assembly for the Dynamics 365 Payment Connector for Adyen. | Yes | Yes | *Binary name* |
     | Service account ID | Autopopulated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
-    | Version | Set to **V001** for EFT settings in the hardware profile. **V002** is required for call center and storefront only.  | Yes | Yes | "V001" |
+    | Version | Set to **V003** for EFT settings in the hardware profile. **V002** is required for call center and storefront only. Version **V001** is no longer supported. | Yes | Yes | "V003" |
     | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
     | Optional Domain | The optional domain is required for live environments and should be obtained by contacting Adyen. This domain is the unique identifier for your live environment in the format **[random]-[company name]**, and is present as the prefix inside the API URLs under **Account \> API URLs** in your company's live account on the Adyen Customer Area portal. For more information, see [Live endpoints](https://docs.adyen.com/development-resources/live-endpoints).| Live only | No | Contact Adyen |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdenfier |
@@ -194,8 +192,8 @@ The Adyen payment connector can be configured to communicate with devices via th
     | Allow saving payment information in e-commerce | (*E-commerce only*) Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
     | Authorization stale period (days) | (*POS only*) Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
     | Origin Key | (*Card not present only*) |
-    | EnableRequestProtection | Adds retry logic to "card not present" payment calls, reducing potential for duplicate calls using a correlation ID. When "True", a correlation ID is added to provider requests to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
-    | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses that don't support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
+    | EnableRequestProtection | Adds retry logic to "card not present" payment calls, reducing potential for duplicate calls using a correlation ID. If set to **True**, a correlation ID is added to provider requests to prevent duplicates. If set to **False**, calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
+    | Nonincremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses that don't support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
     | Disable terminal line display | Removes the itemized digital receipt lines from the terminal interface used for preview to shoppers before paying. Disabling the terminal line display is helpful for smaller, handheld terminal devices. | No | No | True/False |
     | Omitted payment methods | (*E-commerce and call center only*) |
 
@@ -211,7 +209,7 @@ The Adyen payment connector can be configured to communicate with devices via th
 > [!NOTE]
 > These instructions assume that there is a dedicated mapping between a POS register and an Adyen payment terminal. For a hardware station that is based on Microsoft Internet Information Services (IIS), go to **Retail and Commerce \> Channels \> Stores \> All stores**, and select the store that you're setting up. Then, on the page for that store, on the **Hardware Stations** FastTab, follow the same instructions.
 
-Payment terminals may not be used by multiple hardware stations. If a payment terminal must be shared by multiple POS devices, an IIS hardware station must be deployed to manage communications with the payment terminal. 
+Payment terminals may not be used by multiple hardware stations. If a payment terminal is shared by multiple POS devices, an IIS hardware station must be deployed to manage communications with the payment terminal. 
 
 ##### Configure the payment terminal IP address and EFT POS register number
 
@@ -248,7 +246,7 @@ If you're packaging your own version of the Store Commerce app by using the Comm
 
 To configure the Dynamics 365 Payment Connector for Adyen for call center payments, follow the instructions in the [Set up a processor for new credit cards](#set-up-a-processor-for-new-credit-cards) section earlier in this article.
 
-The configuration in headquarters at **Accounts receivable \> Payments setup \> Payment service** is the connector configuration used in the call center. 3D Secure (3DS) authentication isn't supported in call center. Digital wallet modern payment methods requiring users to sign in are also not supported in call center, because call center agents are prohibited from collecting or using user passwords on behalf of customers.
+The configuration in headquarters at **Accounts receivable \> Payments setup \> Payment service** is the connector configuration used in the call center. 3D Secure (3DS) authentication isn't supported in call center. Digital wallet modern payment methods that require users to sign in are also not supported in call center, because call center agents are prohibited from collecting or using user passwords on behalf of customers.
 
 ### Configure additional information for the connector
 
@@ -281,8 +279,8 @@ To configure additional information for the connector in Commerce headquarters, 
     | Allow saving payment information in e-commerce | (*E-commerce only*) Gives signed-in users the option to save payment details for future online purchases.  | Yes | Yes | True/False |
     | Authorization stale period (days) | (*POS only*) Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
     | Origin Key ("V002") or Client key ("V003") | (*E-commerce only*) 'An origin key value is required when "V002" is the designated version. For instructions on obtaining this key, see [How to get an origin key](https://docs.adyen.com/development-resources/how-to-get-an-origin-key). A client key value is required when "V003" is the designated version. For instructions on obtaining this key, see [Migrate to Client key](https://docs.adyen.com/development-resources/client-side-authentication/migrate-from-origin-key-to-client-key#switch-to-using-the-client-key). | Yes | No | *The full origin or client key* |
-    | EnableRequestProtection | Adds retry logic to "card not present" payment calls, reducing potential for duplicate calls using a correlation ID. When "True", a correlation ID is added to provider requests to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
-    | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses that don't support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
+    | EnableRequestProtection | Adds retry logic to "card not present" payment calls, reducing potential for duplicate calls using a correlation ID. If set to **True**, a correlation ID is added to provider requests to prevent duplicates. If set to **False**, calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
+    | Nonincremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses that don't support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
     | Disable terminal line display | Removes the itemized digital receipt lines from the terminal interface used for preview to shoppers before paying. Disabling terminal line display is helpful for smaller, handheld terminal devices. | No | No | True/False |
     | Omitted payment methods | (*E-commerce and call center only*) Use this field to omit a payment method from the configuration where an iFrame element is rendered for payments as configured against the merchant account. Separate multiple values with semicolons. Strings used must match the label used in the Adyen portal. Some payment method's security criteria may interfere with the iFrame rendering, so it may be desirable to omit conflicting security criteria from the configuration.  | No | No | "applepay;googlepay" |
 

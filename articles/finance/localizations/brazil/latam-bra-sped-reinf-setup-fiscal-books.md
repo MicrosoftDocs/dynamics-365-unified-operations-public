@@ -1,18 +1,16 @@
 ---
 title: Set up fiscal books
-description: This article explains how to set up SPED-Reinf events by using Fiscal books in Microsoft Dynamics 365 Finance for Brazil.
+description: Learn how to set up SPED-Reinf events by using Fiscal books in Microsoft Dynamics 365 Finance for Brazil, including an overview on setting up service types.
 author: AdamTrukawka
-ms.date: 05/26/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
+ms.reviewer: johnmichalak
+ms.search.region: Brazil
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 8.1
-ms.search.form: 
 ---
 
 # Set up fiscal books

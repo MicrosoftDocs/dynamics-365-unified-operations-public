@@ -1,17 +1,14 @@
 ---
 title: Client-Bank interface and reconciliation procedure
-description: This article provides information about user settings for electronic outgoing payments and the reconciliation procedure.
-author: AdamTrukawka
-ms.date: 07/05/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: 
-ms.author: atrukawk
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+description: Learn about user settings for electronic outgoing payments and the reconciliation procedure, including an outline on setting up import configurations.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
+ms.reviewer: johnmichalak
+ 
 ---
 
 # Client-Bank interface and reconciliation procedure

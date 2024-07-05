@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Removed or deprecated features in previous releases
-description: This article describes features that have been removed, or that were planned for removal from Dynamics 365 for Finance and Operations and previous releases.
+description: Learn about features that have been removed, or that were planned for removal from Dynamics 365 for Finance and Operations and previous releases.
 author: sericks007
-ms.date: 02/16/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: sericks
+ms.topic: article
+ms.date: 02/16/2021
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28 
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0 
-
+ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ---
 
 # Removed or deprecated features in previous releases

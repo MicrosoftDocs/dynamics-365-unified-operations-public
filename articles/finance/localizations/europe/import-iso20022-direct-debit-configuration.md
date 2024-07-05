@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Import ISO20022 direct debit configuration
-description: This procedure demonstrates how to import a customer payment electronic reporting configuration. 
+description: Learn how to import a customer payment electronic reporting configuration, including a step-by-step process using the DEMF demo data company. 
 author: mrolecki
-ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionImport   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mrolecki
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.custom:
+ms.reviewer: johnmichalak  
+audience: Application User  
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionImport
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Import ISO20022 direct debit configuration
 
 [!include [banner](../../includes/banner.md)]

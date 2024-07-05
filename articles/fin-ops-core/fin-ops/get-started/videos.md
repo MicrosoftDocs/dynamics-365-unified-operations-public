@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Videos
-description: This page lists Microsoft-created "how-to" and Tech talk videos relating to finance and operations apps that are available on YouTube and other sites.
+description: Access a list of Microsoft-created "how-to" and Tech talk videos relating to finance and operations apps that are available on YouTube and other sites.
 author: sericks007
-ms.date: 06/13/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: global
-# ms.search.industry: 
 ms.author: sericks
+ms.topic: article
+ms.date: 06/13/2022
+ms.custom:
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: global
 ms.search.validFrom: 2018-04-30
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
-
 ---
 
 # Videos 

@@ -1,15 +1,13 @@
 ---
 title: Foreign currency sales, purchases, and transfers
-description: This article describes the functionality for registering transactions for the sale, purchase, and transfer of currency.
+description: Learn about the functionality for registering transactions for the sale, purchase, and transfer of currency, including step-by-step processes.
 author: AdamTrukawka
-ms.date: 02/20/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 02/20/2019
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 ---

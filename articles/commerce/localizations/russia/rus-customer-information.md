@@ -4,8 +4,6 @@ description: This article describes scenarios for handling customer information 
 author: EvgenyPopovMBS
 ms.date: 09/21/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Russia

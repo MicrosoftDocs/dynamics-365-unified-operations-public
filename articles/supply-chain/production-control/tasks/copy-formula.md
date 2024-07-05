@@ -1,28 +1,20 @@
 --- 
-# required metadata 
- 
 title: Copy a formula
-description: This procedure focuses on creating a formula that includes the same ingredients as an existing formula, but with minor differences. 
+description: Learn about creating a formula that includes the same ingredients as an existing formula, but with minor differences, including a step-by-step process. 
 author: johanhoffmann
+ms.author: johanho
+ms.topic: how-to
 ms.date: 11/11/2016
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
+ms.custom:
+ms.reviewer: kamaybac  
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Copy a formula
 
 [!include [banner](../../includes/banner.md)]

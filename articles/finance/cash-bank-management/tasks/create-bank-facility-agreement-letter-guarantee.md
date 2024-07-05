@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create a bank facility agreement for the letter of guarantee
-description: This task creates a bank facility agreement to process a letter of guarantee. 
-author: angelad116
+description: Learn about the process of creating a bank facility agreement for a letter of guarantee, including a detailed step-by-step process, which uses the demo company "USMF".
+author: twheeloc
+ms.author: twheeloc
+ms.topic: how-to
 ms.date: 11/15/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
+ms.custom:
+ms.reviewer: twheeloc  
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: angelading
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form:  
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create a bank facility agreement for the letter of guarantee
 
 [!include [banner](../../includes/banner.md)]

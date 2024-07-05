@@ -4,11 +4,8 @@
 title: Request time off
 description: Request time off in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 01/20/2023
+ms.date: 06/20/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: EssWorkspace
@@ -20,7 +17,7 @@ audience: Application User
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: ajitchandran
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -28,8 +25,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Request time off
 
->[!Important]
->The functionality noted in this article is currently available for customers on the stand-alone Dynamics 365 Human Resources. Some or all of the functionality will be available as part of a future release on the Finance infrastructure after Finance release 10.0.26.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -37,7 +32,7 @@ You can submit requests for time off, view your vacation and leave balances, and
 
 ## Request time off
 
-1. In the **Employee self service** workspace, select **Request time off** in the **Time Off Balances** tile.
+1. In the **Employee self service** workspace, select **Request time off** in the **Time off balances** tile.
 
 2. Enter information for **Leave type**, **Reason code**, **Start date**, and **End date**.
 

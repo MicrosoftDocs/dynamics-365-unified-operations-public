@@ -1,18 +1,14 @@
 ---
 title: Advanced notes management
-description: This article explains how to set up and print predefined notes for customers, vendors, and products.
-author: mrolecki
-ms.date: 10/15/2021
+description: Learn how to set up and print predefined notes for customers, vendors, and products, including prerequisites and an outline on setting up advanced notes.
+author: prabhatb 
+ms.author: prabhatb 
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Italy
-ms.author: mrolecki
-ms.search.validFrom: 2019-11-29
-ms.dyn365.ops.version: 10.0.8
-ms.search.form: MCROrderNotes
+ms.custom: 
+  - bap-template
+ms.date: 06/05/2024
+ms.reviewer: johnmichalak
+
 ---
 
 # Advanced notes management
@@ -20,12 +16,6 @@ ms.search.form: MCROrderNotes
 [!include [banner](../../includes/banner.md)]
 
 The Advanced notes management feature lets you set up predefined notes that apply to all or specific customers, vendors, and products. You can then add these notes to specific business documents.
-
-## Prerequisites
-
-Before you begin the setup, the following prerequisites must be met:
-
-- The **Advanced notes management** feature must be turned on in the **Feature management** workspace. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Advanced notes setup
 

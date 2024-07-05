@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Point-in-time restore of the production database to a sandbox environment
-description: This article describes how to use Microsoft Dynamics Lifecycle Services to do a point-in-time restore of the production database.
+description: Learn how to use Microsoft Dynamics Lifecycle Services to do a point-in-time restore of the production database.
 author: LaneSwenka
-ms.date: 11/06/2023
-ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
-audience: IT Pro, Developer
-# ms.devlang:
-ms.reviewer: sericks
-# ms.tgt_pltfrm:
-# ms.custom: 
-ms.search.region: Global
-# ms.search.industry:
 ms.author: laswenka
+ms.topic: article
+ms.date: 11/06/2023
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: IT Pro, Developer
+ms.search.region: Global
 ms.search.validFrom: 2020-02-29
+ms.search.form:
 ms.dyn365.ops.version: Platform update 33
-
 ---
 
 # Point-in-time restore of the production database to a sandbox environment
@@ -70,7 +58,7 @@ When you refresh a production environment to a sandbox environment, or a sandbox
 * All batch jobs will be set to **Withhold** status.
 * All users will have their partition value reset to the "initial" partition record ID.
 * All Microsoft-encrypted fields will be cleared, because they can't be decrypted on a different database server. An example is the **Password** field in the SysEmailSMTPPassword table.
-* Dual-write configuration.  To set up a new link on the target environment after this operation is successful, see [Dual-write environment linking](../data-entities/dual-write/link-your-environment.md).
+* Dual-write configuration.  To set up a new link on the target environment after this operation is successful, see [Enable Power Platform Integration](../../dev-itpro/power-platform/enable-power-platform-integration.md).
 
 Some of these elements aren't copied because they're environment-specific. Examples include BatchServerConfig and SysCorpNetPrinters records. Other elements aren't copied because of the volume of support tickets. For example, duplicate emails might be sent because SMTP is still turned on in the UAT environment, invalid integration messages might be sent because batch jobs are still enabled, and users might be enabled before admins can perform post restore cleanup activities.
 

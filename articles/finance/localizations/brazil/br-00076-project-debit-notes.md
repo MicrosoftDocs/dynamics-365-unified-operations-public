@@ -1,19 +1,19 @@
 ---
 title: Project debit notes (Brazil)
-description: You can generate debit notes for projects to get reimbursement of expenses occurred in the project.
+description: Learn how you can generate debit notes for projects to get reimbursement of expenses occurred in the project, including a step-by-step process.
 author: AdamTrukawka
-ms.date: 06/26/2017
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
+ms.reviewer: johnmichalak
+ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.industry: Manufacturing;Distribution;Service industries
 ---
+
 # Project debit notes (Brazil)
 
 [!include [banner](../../includes/banner.md)]

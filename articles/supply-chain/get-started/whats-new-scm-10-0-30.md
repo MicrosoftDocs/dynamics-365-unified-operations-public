@@ -1,15 +1,16 @@
 ---
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.30 (November 2022)
-description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.30. 
+description: Learn about features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.30 with a table that outlines feature areas. 
 author: kamaybac
-ms.date: 11/07/2022
-ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this article to]
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: kamaybac
+ms.topic: article
+ms.date: 04/19/2024
+ms.custom: evergreen
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-09-08
+ms.search.form:
 ms.dyn365.ops.version: 10.0.30
 ---
 

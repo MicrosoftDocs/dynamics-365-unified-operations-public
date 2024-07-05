@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: Call center sales functionality
-description: This article provides an overview of the call center sales functionality in Dynamics 365 Commerce.
+description: This article describes call center sales functionality in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 04/03/2018
+ms.date: 05/28/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+ms.reviewer: v-chrgriffin
 ms.assetid: c8ed2ba4-8d06-4d99-9728-2a83e6d95ca9
-ms.search.region: global
-ms.search.industry: Retail
-ms.author: josaw
+ms.search.region: Global
+ms.author: shajain
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
-
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Call center sales functionality
 
 [!include [banner](includes/banner.md)]
 
+This article describes call center sales functionality in Microsoft Dynamics 365 Commerce.
 
 In Dynamics 365 Commerce, a call center is a type of channel that can be defined in the application. Defining a specific channel for your call center entities allows the system to tie specific data defaults and order processing defaults to sales orders created by a user of the call center channel.
 

@@ -1,17 +1,14 @@
 ---
-# required metadata
-
 title: Upgrade from AX 2012 - Data upgrade in self-service environments
-description: This article explains how to upgrade data from Microsoft Dynamics AX 2012 in self-service environments.
-author: ttreen  
-ms.date: 11/03/2023
-ms.topic: article
-audience: IT Pro
-ms.reviewer: twheeloc
-ms.search.region: Global
+description: Learn about how to upgrade data from Microsoft Dynamics AX 2012 in self-service environments, including prerequisites.
+author: ttreen
 ms.author: ttreen
+ms.topic: article
+ms.date: 11/03/2023
+ms.reviewer: twheeloc
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-06-30
-
 ---
 
 # Upgrade from AX 2012 - Data upgrade in self-service environments
@@ -27,7 +24,7 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 
 ## Prerequisites
 
-1. A successful upgrade test has been completed in a cloud hosted (development) environment with customer data. This test should have been run against the same application version and customizations as the self-service environment. 
+1. A successful upgrade test has been completed in a cloud hosted (development) environment, or self hosted development VHD environment, with customer data. This test should have been run against the same application version and customizations as the self-service environment. 
 2. Download the **Data Migration Toolkit for Dynamics365 Version 1.0.8 (or higher)** from Microsoft Dynamics Lifecycle Services (LCS). In the Shared asset Library, select **Model** as the asset type, and then select the model file. Unblock the ZIP download via file properties before extracting. 
 3. Create a self-service environment in LCS. The environment should be in a **Deployed** state. It must be a self-service environment. Cloud-hosted, development environments can be used only for the [Upgrade from AX 2012 - Data upgrade in development environments](data-upgrade-2012.md) procedure.
 

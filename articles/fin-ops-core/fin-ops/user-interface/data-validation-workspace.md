@@ -1,16 +1,13 @@
 ---
 title: Data validation checklist workspace
-description: The Data validation checklist workspace lets you track data validation processes across companies, areas, and people.
+description: Learn about the Data validation checklist workspace, which lets you track data validation processes across companies, areas, and people.
 author: bking
-ms.date: 01/12/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: bking
-ms.assetid: 
+ms.topic: article
+ms.date: 06/05/2024
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.form: DataValidationWorkspace
 ---
 
@@ -18,8 +15,6 @@ ms.search.form: DataValidationWorkspace
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article provides an overview of the **Data validation checklist workspace** and the associated configuration.
 

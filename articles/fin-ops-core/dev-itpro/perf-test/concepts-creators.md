@@ -1,19 +1,16 @@
 ---
 title: Creators in the Acceptance test library
-description: This article provides information about Acceptance test library creators.
+description: Learn about Acceptance test library creators, including naming conventions, code examples, and fluent setter methods.
 author: MichaelFruergaardPontoppidan
-ms.date: 03/27/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: mfp
+ms.topic: article
+ms.date: 03/27/2019
+ms.custom: 
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-ms.custom: 
-ms.assetid: 
 ---
 
 # Creators in the Acceptance test library

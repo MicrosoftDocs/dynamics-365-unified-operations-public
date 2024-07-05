@@ -1,30 +1,16 @@
 ---
-# required metadata
-
 title: Service objects overview
-description: This article provides an overview of how to work with service objects.
-author: sorenva
-ms.date: 07/25/2019
+description: Access an overview of how to work with service objects, including an example of an intangible service object and additional resources.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMAServiceObjectTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 07/25/2019
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMAServiceObjectTable
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Service objects overview

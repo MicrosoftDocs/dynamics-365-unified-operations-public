@@ -1,18 +1,16 @@
 ---
 title: Set up electronic messages for SPED-Reinf events
-description: This article explains how to set up electronic messages for SPED-Reinf events for Brazil.
+description: Learn how to set up electronic messages for SPED-Reinf events for Brazil, including an outline on importing the configuration from data entries.
 author: AdamTrukawka
-ms.date: 04/09/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Brazil
 ms.author: atrukawk
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
+ms.reviewer: johnmichalak
+ms.search.region: Brazil
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 8.1
-ms.search.form: 
 ---
 
 # Set up electronic messages for SPED-Reinf events

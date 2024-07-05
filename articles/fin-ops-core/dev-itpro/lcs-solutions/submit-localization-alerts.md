@@ -1,15 +1,13 @@
 ---
 title: Submit alerts about country/region-specific regulatory features
-description: This article describes how to use Microsoft Dynamics Lifecycle Services (LCS) to submit alerts through the Localization and translation service.
+description: Learn about how to use Microsoft Dynamics Lifecycle Services (LCS) to submit alerts through the Localization and translation service.
 author: kfend
-ms.date: 12/14/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: global
 ms.author: filatovm
+ms.topic: article
+ms.date: 12/14/2021
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: b37140b4-5d6f-460f-ae36-f0d7bd90c0d3

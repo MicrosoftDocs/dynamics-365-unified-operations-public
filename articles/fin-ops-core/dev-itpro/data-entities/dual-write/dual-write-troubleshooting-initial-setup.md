@@ -1,13 +1,13 @@
 ---
 title: Troubleshoot issues during initial setup
-description: This article provides information that can help you fix issues that occur during the initial setup of dual-write integration.
+description: Learn about how you fix issues that occur during the initial setup of dual-write integration, including issues relating to links, limits, and connections.
 author: RamaKrishnamoorthy
-ms.date: 08/10/2021
-ms.topic: article
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: global
 ms.author: ramasri
+ms.topic: article
+ms.date: 08/10/2021
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: global
 ms.search.validFrom: 2020-03-16
 ---
 
@@ -18,7 +18,7 @@ ms.search.validFrom: 2020-03-16
 This article provides troubleshooting information for dual-write integration between finance and operations apps and Dataverse. Specifically, it provides information that can help you fix issues that might occur during the initial setup of dual-write integration.
 
 > [!IMPORTANT]
-> Some of the issues that this article addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
+> Some of the issues that this article addresses might require either the system admin role or Microsoft Microsoft Entra tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
 
 ## You can't link a finance and operations app to Dataverse
 
@@ -28,7 +28,7 @@ Errors on the **Setup link to Dataverse** page are usually caused by incomplete 
 
 ![Successful health check.](media/health_check.png)
 
-You must have Azure AD tenant admin credentials to link the finance and operations and Dataverse environments. After you link the environments, users can sign in by using their account credentials and update an existing table map.
+You must have Microsoft Entra tenant admin credentials to link the finance and operations and Dataverse environments. After you link the environments, users can sign in by using their account credentials and update an existing table map.
 
 ## Find the limit on the number of legal entities or companies that can be linked for dual-write
 
@@ -58,7 +58,7 @@ You might receive the following error message when you try to link a Dataverse e
 
 *Response status code does not indicate success: 404 (Not Found).*
 
-This error occurs when the app consent step is not complete. You can validate if consent has been provided by logging on to `portal.azure.com` using the tenant admin account, and check if the 3rd party app with ID `33976c19-1db5-4c02-810e-c243db79efde` shows up in AAD’s Enterprise applications list. If not, then rerun the consent step as described in the next section.
+This error occurs when the app consent step is not complete. You can validate if consent has been provided by logging on to `portal.azure.com` using the tenant admin account, and check if the 3rd party app with ID `33976c19-1db5-4c02-810e-c243db79efde` shows up in Microsoft Entra’s Enterprise applications list. If not, then rerun the consent step as described in the next section.
 
 ### Providing App consent
 
@@ -99,8 +99,7 @@ This error occurs because of the lack of a Power Apps license. Assign an appropr
 
 For more information about Power Apps license, see the following articles:
 
-- [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide)
+- [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users)
 - [Purchase Power Apps for your organization](/power-platform/admin/signup-for-powerapps-admin)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
-

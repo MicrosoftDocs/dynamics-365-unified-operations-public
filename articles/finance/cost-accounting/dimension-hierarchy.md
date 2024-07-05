@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Dimension hierarchy
-description: This article provides information about dimension hierarchies. You use a dimension hierarchy to define the reporting structure, cost policies, and security setup in Cost accounting.  
-author: AndersGirke
-ms.date: 06/16/2017
+description: Learn about dimension hierarchies. You use a dimension hierarchy to define the reporting structure, cost policies, and security setup in Cost accounting.  
+author: AndersEvenGirke
+ms.author: aevengir
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CAMDimensionHierarchy,
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/16/2017
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: Application User
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
+ms.search.form: CAMDimensionHierarchy,
 ms.dyn365.ops.version: Version 1611
-
 ---
 
 # Dimension hierarchy

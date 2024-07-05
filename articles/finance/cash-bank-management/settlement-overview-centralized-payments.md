@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Settlement overview for centralized payments
-description: This article describes settlement for centralized payments for Microsoft Dynamics 365 Finance. 
-author: angelad116
-ms.date: 11/22/2022
+description: Learn about settlement for centralized payments for Microsoft Dynamics 365 Finance, including outlines on posting types and currency exchange gains and losses. 
+author: twheeloc
+ms.author: twheeloc
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustOpenTrans 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
+ms.date: 11/22/2022
 ms.custom: ["222414"]
+ms.reviewer: twheeloc
 ms.collection: get-started
-ms.assetid: 610f6858-0f37-4d0f-8c68-bab5a971ef4a
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: angelading
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustOpenTrans
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 610f6858-0f37-4d0f-8c68-bab5a971ef4a
 ---
 
 # Settlement overview for centralized payments

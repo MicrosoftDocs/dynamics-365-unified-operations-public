@@ -1,13 +1,13 @@
 ---
 title: Troubleshoot issues from upgrades of finance and operations apps
-description: This article provides troubleshooting information that can help you fix issues that are related to upgrades of finance and operations apps.
+description: Learn about troubleshooting information that can help you fix issues that are related to upgrades of finance and operations apps.
 author: RamaKrishnamoorthy
-ms.date: 03/16/2020
-ms.topic: article
-audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: global
 ms.author: ramasri
+ms.topic: article
+ms.date: 03/16/2020
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: global
 ms.search.validFrom: 2020-01-06
 ---
 
@@ -22,7 +22,7 @@ ms.search.validFrom: 2020-01-06
 This article provides troubleshooting information for dual-write integration between finance and operations apps and Dataverse. Specifically, it provides information that can help you fix issues that are related to upgrades of finance and operations apps.
 
 > [!IMPORTANT]
-> Some of the issues that this article addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
+> Some of the issues that this article addresses might require either the system admin role or Microsoft Microsoft Entra tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
 
 ## Database synchronization errors
 
@@ -60,18 +60,18 @@ On the **Dual-write** page, you might receive an error message that resembles th
 
 To fix the issue, first follow these steps to make sure that the columns are in the table.
 
-1. Sign in to the VM for the finance and operations app.
-2. Go to **Workspaces \> Data management**, select the **Framework parameters** tile, and then, on the **Table settings** tab, select **Refresh table list** to refresh the tables.
-3. Go to **Workspaces \> Data management**, select the **Data tables** tab, and make sure that the table is listed. If the table isn't listed, sign in to the VM for the finance and operations app, and make sure the table is available.
+1. Sign into your finance and operations apps environment.
+2. Go to **Workspaces \> Data management**, select the **Framework parameters** tile, and then, on the **Entity settings** tab, select **Refresh entity list** to refresh the entities.
+3. Go to **Workspaces \> Data management**, select the **Data entities** tab, and make sure that the entity is listed. 
 4. Open the **Table mapping** page from the **Dual-write** page in the finance and operations app.
-5. Select **Refresh table list** to automatically fill the columns in the table mappings.
+5. Select **Refresh tables** to automatically fill the columns in the table mappings.
 
 If the issue still isn't fixed, follow these steps.
 
 > [!IMPORTANT]
 > These steps guide you through the process of deleting a table and then adding it again. To avoid issues, be sure to follow the steps exactly.
 
-1. In the finance and operations app, go to **Workspaces \> Data management**, and select the **Data tables** tile.
+1. In the finance and operations app, go to **Workspaces \> Data management**, and select the **Data entities** tile.
 2. Find the table that is missing the attribute. Click **Modify target mapping** in the toolbar.
 3. On the **Map staging to target** pane, click **Generate mapping**.
 4. Open the **Table mapping** page from the **Dual-write** page in the finance and operations app.

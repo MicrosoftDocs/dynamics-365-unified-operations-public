@@ -1,13 +1,13 @@
 ---
 title: Navigation concepts
-description: This articles describes the primary navigation concepts including the dashboard, the new navigation search feature, the navigation pane, workspaces, and tiles.
+description: Learn about the primary navigation concepts including the dashboard, the new navigation search feature, the navigation pane, workspaces, and tiles.
 author: jasongre
-ms.date: 06/20/2017
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

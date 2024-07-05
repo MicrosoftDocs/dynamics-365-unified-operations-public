@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Take a cash discount outside the cash discount period
-description: This article provides two scenarios that show how a cash discount can be taken even if the payment is made outside the cash discount period.
-author: angelad116
-ms.date: 10/24/2022
+description: Learn about two scenarios that show how a cash discount can be taken even if the payment is made outside the cash discount period.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 10/24/2022
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: bad10b7f-e550-4742-9261-8a094c9c624d
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: angelading
 ms.search.validFrom: 2016-02-28
+ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: bad10b7f-e550-4742-9261-8a094c9c624d
 ---
 
 # Take a cash discount outside the cash discount period

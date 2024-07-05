@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Audit trail and edit logs for accounting software
-description: This article provides information about the new Indian tax legislation guidelines for accounting software.
+description: Learn about the new Indian tax legislation guidelines for accounting software, including overviews on legislation and compliance.
 author: EricWangChen
-ms.date: 10/20/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: India
-# ms.search.industry: 
 ms.author: wangchen
-ms.search.validFrom: 
+ms.topic: article
+ms.date: 10/20/2023
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application User
+ms.search.region: India
+ms.search.validFrom:
+ms.search.form: 
 ms.dyn365.ops.version: 
-
 ---
 
 # Audit trail and edit logs for accounting software
@@ -139,7 +128,7 @@ The information in the electronic record of the document is shown in Finance. Th
 There is a proper system for storing, retrieving, displaying, and printing the electronic records. These electronic records must not be disposed of or rendered unusable unless those actions are permitted by law. Provided that a backup of the company's books of accounts and other books and papers is maintained in electronic mode, even in a location that is outside India, it will be kept on servers that are physically located in India.
 
 Finance can be deployed into a subset of Azure datacenters by using Microsoft Dynamics Lifecycle Services (LCS). Azure is generally available in datacenters and geographical locations around the world. Finance lets customers specify the region or datacenter where their customer data will be stored. Although Microsoft might replicate data to other regions for data durability, customer data won't be replicated or moved outside the geographical location.
-Microsoft provides business continuity and disaster recovery for production instances of Dynamics 365 software as a service (SaaS) applications if an Azure region-wide outage occurs. Paired regions reside within the same geography as their enabled set to meet data residency requirements for tax and law enforcement jurisdiction purposes. For more information, see [Business continuity and disaster recovery](../../../fin-ops-core/dev-itpro/sysadmin/business-continuity-disaster-recovery.md).
+Microsoft provides business continuity and disaster recovery for production instances of Dynamics 365 software as a service (SaaS) applications if an Azure region-wide outage occurs. Paired regions reside within the same geography as their enabled set to meet data residency requirements for tax and law enforcement jurisdiction purposes. For more information, see [Business continuity and disaster recovery](/power-platform/admin/business-continuity-disaster-recovery).
 
 ### Compliance 6: Information for filling of annual financial statement
 

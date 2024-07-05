@@ -1,19 +1,18 @@
 ---
 title: Create an accelerated depreciation document and enter usage data
-description: For Japan, Accelerated depreciation is declared on a per document basis.
+description: For Japan, Accelerated depreciation is declared on a per document basis, including a process for creating a fixed asset with accelerated depreciation.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, AssetAcceleratedDepDocument_JP, SysQueryForm
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Create an accelerated depreciation document and enter usage data
 
 [!include [banner](../../includes/banner.md)]

@@ -1,18 +1,15 @@
 ---
 title: Migrate from overlayering to extensions
-description: This article provides information about migration from customizations that are based on overlayered code to customizations that are based on extensions.
+description: Learn about migration from customizations that are based on overlayered code to customizations that are based on extensions.
 author: FrankDahl
-ms.date: 04/10/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: fdahl
+ms.topic: article
+ms.date: 04/10/2018
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-ms.assetid: 
 ---
 
 # Migrate from overlayering to extensions

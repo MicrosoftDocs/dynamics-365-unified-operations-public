@@ -1,18 +1,16 @@
 ---
 title: Respond to privacy data requests resources
-description: This article provides links to information that can help you respond to a data rights request.
+description: Access links to resources that can help you respond to a data rights request, including product-specific considerations.
 author: josaw1
-ms.date: 08/01/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 08/01/2023
+ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-ms.collection: get-started
 ---
 
 # Respond to privacy data requests resources
@@ -33,7 +31,6 @@ Your first step in responding to a request for data will usually be to use the P
 
 ## Product-specific considerations
 
-- [Respond to requests for personal data in AX 2012](privacy-ax2012.md)
 - [Respond to requests for personal data in Human Resources](respond-dsr-request-talent.md)
 - [General Data Protection Regulation overview](privacy-guide.md)
 - [Privacy data requests for Lifecycle Services (LCS)](privacy-lcs.md)

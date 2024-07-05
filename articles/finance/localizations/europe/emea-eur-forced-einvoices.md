@@ -1,18 +1,14 @@
 ---
 title: Forced electronic invoices generation
-description: This article explains how to set up and use the functionality for forced generation of electronic invoices.
-author: mrolecki
-ms.date: 02/01/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Europe
-ms.author: mrolecki
-ms.search.validFrom: 2019-12-01
-ms.dyn365.ops.version: 10.0.17
-ms.search.form: 
+description: Learn how to set up and use the functionality for forced generation of electronic invoices, including prerequisites and an outline on post invoices.
+author: ilikond
+ms.author: ikondratenko
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/04/2024
+ms.reviewer: johnmichalak
+
 ---
 
 # Forced electronic invoices generation

@@ -1,13 +1,13 @@
 ---
 title: Configure the Azure DevOps mapping during code migration
-description: This tutorial shows how to map your development box to the Azure DevOps project after the LCS code upgrade service has completed.
-author: gianugo
-ms.date: 01/10/2022
+description: Learn about how to map your development box to the Azure DevOps project after the LCS code upgrade service has completed.
+author: sericks007
+ms.author: sericks
 ms.topic: article
+ms.date: 01/10/2022
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: sericks
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

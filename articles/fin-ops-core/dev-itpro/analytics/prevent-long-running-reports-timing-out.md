@@ -1,15 +1,13 @@
 ---
 title: Help prevent long-running reports from timing out
-description: This article provides tips that can help you prevent reports that run for a long time from timing out.
-author: RichdiMSFT
-ms.date: 09/06/2019
+description: Learn about tips that can help you prevent reports that run for a long time from timing out, including how to use batch processing.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 09/06/2019
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: sericks
 ms.search.region: Global
-ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 74ffc94a-188f-4198-a4b0-f949ec4886cb

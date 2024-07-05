@@ -1,13 +1,14 @@
 ---
 title: Inventory transfer order for posting for Latin America
-description: This article provides information about inventory transfer order posting for Latin America.
+description: Learn about inventory transfer order posting for Latin America, including prerequisites and an outline on posting an inventory transfer order.
 author: Fhernandez0088
-ms.date: 05/26/2023
-ms.topic: Article
-ms.reviewer: kfend
 ms.author: v-federicohe 
+ms.topic: how-to
+ms.date: 07/01/2024
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
+
 # Inventory transfer order for posting for Latin America
 
 [!include [banner](../../includes/banner.md)]

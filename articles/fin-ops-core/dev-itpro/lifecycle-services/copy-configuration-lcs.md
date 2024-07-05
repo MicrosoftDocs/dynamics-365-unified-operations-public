@@ -2,14 +2,12 @@
 title: Copy configurations by using Configuration manager
 description: You can use the Configuration manager (beta) to copy a configuration from one instance of Microsoft Dynamics AX 2012 R3 to another.
 author: sericks007
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: sericks
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
 ms.assetid: 54283db7-6f1a-46e8-b74d-c67d54e6e5fb

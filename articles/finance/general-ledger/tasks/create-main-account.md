@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create a main account
-description: This procedures walks through how to add a main account to an existing chart of accounts. 
-author: aprilolson
+description: Learn how to add a main account to an existing chart of accounts with a step-by-step process that uses the USMF demo company.
+author: JodiChristiansen
+ms.author: jchrist
+ms.topic: how-to
 ms.date: 03/29/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: MainAccount, CompanyInfoList   
-audience: Application User 
-# ms.devlang:  
+ms.custom:
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: aolson
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: MainAccount, CompanyInfoList 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create a main account
 
 [!include [banner](../../includes/banner.md)]

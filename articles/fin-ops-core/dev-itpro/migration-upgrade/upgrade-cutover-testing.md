@@ -1,15 +1,13 @@
 ---
 title: Upgrade from AX 2012 - Cutover testing (Mock cutover)
-description: This article explains how to test the cutover process between turning off a Microsoft Dynamics AX 2012 environment and turning on finance and operations.
-author: gianugo
-ms.date: 08/27/2021
+description: Learn about how to test the cutover process between turning off a Microsoft Dynamics AX 2012 environment and turning on finance and operations.
+author: sericks007
+ms.author: sericks
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 08/27/2021
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
-ms.reviewer: sericks
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Platform update 8
 ---

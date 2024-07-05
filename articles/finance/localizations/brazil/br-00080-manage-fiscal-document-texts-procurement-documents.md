@@ -1,19 +1,19 @@
 ---
 title: Manage fiscal document text in procurement documents (Brazil)
-description: Set up fiscal document source text.
-author: AdamTrukawka
-ms.date: 06/24/2017
+description: Learn how to set up fiscal document source text, including a step-by-step process detailing managing fiscal document text text in procurement documents.
+author: ankviklis
+ms.author: ankviklis
 ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
+ms.reviewer: johnmichalak
 ms.search.region: Brazil
-ms.author: atrukawk
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.industry: Manufacturing;Distribution;Service industries
 ---
+
 # Manage fiscal document text in procurement documents (Brazil)
 
 [!include [banner](../../includes/banner.md)]

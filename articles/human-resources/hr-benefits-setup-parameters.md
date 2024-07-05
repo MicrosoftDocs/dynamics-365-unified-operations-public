@@ -5,8 +5,6 @@ description: Configure parameters for Benefits management and Employee self serv
 author: twheeloc
 ms.date: 08/24/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 # optional metadata
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 # ROBOTS: 

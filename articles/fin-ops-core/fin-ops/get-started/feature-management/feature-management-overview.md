@@ -1,34 +1,21 @@
 ---
-# required metadata
 title: Feature management overview
-description: This article describes Feature management and how you can use it.
-author: Peakerbl
-ms.date: 04/25/2023
+description: Learn about Feature management and how you can use it, including an overview on the Feature management workspace and Feature recommend notifications.
+author: twheeloc
+ms.author: twheeloc
 ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form:  FeatureManagementWorkspace
-audience: Application user
-# ms.devlang: 
+ms.date: 04/25/2023
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-
+audience: Application user
 ms.search.region: Global 
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: peakerbl
 ms.search.validFrom: [month/year of release that feature was introduced in, in format yyyy-mm-dd]
+ms.search.form:  FeatureManagementWorkspace
 ms.dyn365.ops.version: 10.0.2
 ---
 
 # Feature management overview
 
 [!include [banner](../../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../../includes/peap-3.md)]
 
 Features are added and updated in every release. The Feature management experience provides a workspace where you can view a list of features that have been delivered in each release. You can then use the workspace to view feature documentation, and to enable or disable features.
 

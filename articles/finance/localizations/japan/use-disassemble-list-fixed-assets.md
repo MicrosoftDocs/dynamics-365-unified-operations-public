@@ -1,19 +1,18 @@
 ---
 title: Use disassemble list for fixed assets
-description: In Japan, you can transfer a component of a fixed asset to inventory.
+description: Learn how to transfer a component of a fixed asset to inventory, including a step-by-step process for entering disassembly lists using the JPMF demo data company.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: AssetTable, AssetComponentList_JP, AssetComponentPriceCalcDropDialog_JP, LedgerJournalTable, LedgerJournalTransAsset
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Use disassemble list for fixed assets
 
 [!include [banner](../../includes/banner.md)]

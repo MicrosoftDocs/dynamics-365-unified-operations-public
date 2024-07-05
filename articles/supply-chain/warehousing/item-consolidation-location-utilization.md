@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Item consolidation - location utilization
-description: This article provides information about functionality that makes it easy for warehouse managers to view and filter the volumetric utilization of locations across the warehouse. Managers can select locations and create inventory movement work directly from the Item Consolidation page to consolidate items and therefore make better use of warehouse space.
+description: Learn about functionality that makes it easy for warehouse managers to view and filter the volumetric utilization of locations across the warehouse.
 author: Mirzaab
-ms.date: 08/09/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-ms.search.form: WHSPhysDimUOM, WHSMovementType, WHSItemConsolidationForm, WHSRFMenu, WHSRFMenuItem
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
+ms.topic: article
+ms.date: 08/09/2022
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-07-16
+ms.search.form: WHSPhysDimUOM, WHSMovementType, WHSItemConsolidationForm, WHSRFMenu, WHSRFMenuItem
 ms.dyn365.ops.version: 10.0.7
 ---
 

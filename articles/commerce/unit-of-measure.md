@@ -4,8 +4,6 @@ description: This article covers unit of measure settings and describes how to a
 author: anupamar-ms
 ms.date: 04/23/2021
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global

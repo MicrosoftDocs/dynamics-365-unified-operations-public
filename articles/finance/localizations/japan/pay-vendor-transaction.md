@@ -1,19 +1,18 @@
 ---
 title: Pay a vendor transaction by endorsing a customer bill of exchange
-description: This task walks you through paying a vendor transaction by endorsing a customer bill of exchange.
+description: Learn about paying a vendor transaction by endorsing a customer bill of exchange, including a step-by-step process using the JPMF demo data company.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Japan
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseToVendor, DimensionLookup, LedgerTransVoucher
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Pay a vendor transaction by endorsing a customer bill of exchange
 
 [!include [banner](../../includes/banner.md)]

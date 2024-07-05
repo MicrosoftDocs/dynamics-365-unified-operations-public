@@ -1,17 +1,14 @@
 ---
-# required metadata
-
 title: Pre-servicing and post-servicing
-description: This article explains new changes that have been introduced for the servicing process.
+description: Learn about new changes that have been introduced for the servicing process, including outlines on preservicing, post-servicing, and best practices.
 author: matapg007
-ms.date: 12/19/2022
-ms.topic: article
-audience: Developer, IT Pro
-ms.reviewer: sericks
-ms.search.region: Global
 ms.author: matgupta
+ms.topic: article
+ms.date: 12/19/2022
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2022-05-19
-
 ---
 
 # Pre-servicing and post-servicing

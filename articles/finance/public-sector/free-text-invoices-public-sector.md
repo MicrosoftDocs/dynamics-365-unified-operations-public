@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Free text invoices in the public sector
-description: This article describes the free text invoice functionality that's available for public sector entities, and answers common questions about using billing classifications and billing codes with free text invoices.
+description: Learn about the free text invoice functionality that's available for public sector entities, including answers to frequently asked questions.
 author: v-kiarnd
-ms.date: 06/20/2017
+ms.author: twheeloc
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustBillingClassification, CustBillingCode, CustFreeInvoice
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 483e2726-ec48-4d1f-82f5-bffddea301ce
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustBillingClassification, CustBillingCode, CustFreeInvoice
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 483e2726-ec48-4d1f-82f5-bffddea301ce
 ---
 
 # Free text invoices in the public sector

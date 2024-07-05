@@ -1,143 +1,84 @@
 --- 
-# required metadata 
- 
 title: Export letter of credit
-description: This procedure walks through the process of the Export letter of credit. 
-author: kweekley
-ms.date: 11/15/2022
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: CustTable, CustBankAccounts, DefaultDashboard, SalesTableListPage, SalesCreateOrder, SalesTable, BankLCExport, SalesEditLines,  LedgerJournalTable, LedgerJournalTransCustPaym, CustOpenTrans   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+description: Learn about creating an export letter of credit, which is an agreement that is issued by a bank, including a step-by-step process. 
+author: music727
+ms.author: mibeinar
+ms.topic: how-to
+ms.date: 06/16/2024
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kweekley
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: CustTable, CustBankAccounts, DefaultDashboard, SalesTableListPage, SalesCreateOrder, SalesTable, BankLCExport, SalesEditLines,  LedgerJournalTable, LedgerJournalTransCustPaym, CustOpenTrans
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Export letter of credit
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure walks through the process of the Export letter of credit.
+This article describes exporting a letter of credit. For more information, see [Set up bank facilities and posting profiles for letter of credit](set-up-bank-facilities-posting-profiles-letter-credit.md) to configure and create bank facilities and posting profiles. 
 
-A letter of credit is an agreement that is issued by a bank, in which the bank agrees to ensure payment on behalf of the buyer, if the terms of the agreement between the buyer and seller are met.
-
-
-
-Run the **Set up bank facilities and posting profiles** procedure and the **Letter of Credit_Create a bank facility agreement** procedure prior to this procedure. The USMF demo company must be selected in order to run this procedure successfully.
-
-
-## Create Sales Order for Export letter of credit
+## Create sales order for export letter of credit
 1. Go to **Accounts receivable > Orders > All sales orders**.
 2. Click **New**.
-3. In the **Customer account** field, click the drop-down button to open the lookup.
-4. In the list, find and select the desired record.
-5. In the list, click the link in the selected row.
-6. Expand or collapse the **General** section.
-7. In the **Site** field, click the drop-down button to open the lookup.
-    * Select the **Site** where the item to be issued is stocked.  
-8. In the list, click the link in the selected row.
-9. In the **Warehouse** field, click the drop-down button to open the lookup.
-    * Select the **Warehouse** where item to be issued is stocked.  
-10. In the list, click the link in the selected row.
-    * Note: The **Bank document type** field should be selected with **Letter of credit**.  
-11. In the **Bank document type** field, select **Letter of credit**.
-12. Expand or collapse the **Delivery** section.
-    * Select **Delivery date control** = **None**.  
-13. In the **Requested receipt date** field, enter a date.
-14. Click **OK**.
-15. In the **Item number** field, click the drop-down button to open the lookup.
-    * Select the required item to be Issued/Sold.  
-16. In the list, find and select the desired record.
-17. In the list, click the link in the selected row.
-18. In the **Unit price** field, enter a number.
-19. Expand or collapse the **Line details** section.
-20. Click the **Delivery** tab.
-21. In the **Requested ship date** field, enter a date.
-22. In the **Confirmed ship date** field, enter a date.
-23. On the Action Pane, click **Manage**.
-24. Click **Letter of credit**.
-25. In the **Bank document number** field, type a value.
-26. In the **Expiration date** field, enter a date and time.
-27. Expand or collapse the **Bank details** section.
-28. In the **Issuing bank** field, click the drop-down button to open the lookup.
-29. In the list, click the link in the selected row.
-30. In the **Advising bank** field, click the drop-down button to open the lookup.
-31. In the list, find and select the desired record.
-32. In the list, click the link in the selected row.
-33. Click **Fetch sales order shipments**.
-34. Click **Issue bank document**.
-35. Close the page.
+3. In the **Customer account** field, select a desired record.
+4. Expand the **General** section and fill **Site** and **Warehouse** fields.
+ -  Select the **Site** and **Warehouse** where the item to be issued is stocked.
+5. In the **Bank document type** field, select **Letter of credit**.
+6. Expand the **Delivery** section and select **Delivery date control** = **None**.
+7. Enter **Requested receipt date** and click **OK**.
+8. On the Sales order lines, select an **Item number** which will be issued or sold.
+9. Enter a **Unit price**, if it doesn't default from the price trade agreement.
+10. Expand **Line details** section and select the **Delivery** tab.
+11. Enter **Requested ship date** and **Confirmed ship date**.
+12. On the Action pane, click **Manage**
+13. Click **Letter of credit**.
+14. Enter **Bank document number** and the **Expiration date**.
+15. Expand **Bank details** section.
+16. In the **Issuing bank** field, select the customer bank account.
+17. Select the **Advising bank**.
+18. On the **Lines**, click **Fetch sales order shipments**.
+19. Click **Issue bank document**.
 
 ## Post Packing slip
-1. On the Action Pane, click **Pick and pack**.
+1. On the **Sales order** page, click **Pick and pack**.
 2. Click **Post packing slip**.
-3. Expand or collapse the **Parameters** section.
-4. In the **Quantity** field, select **All**.
-5. Expand or collapse the **Setup** section.
-6. In the **Packing slip date** field, enter a date.
-7. Select the Shipment number.
-8. In the list, click the link in the selected row.
-9. Click **OK**.
-10. Click **OK**.
+3. Expand the **Parameters** section and in the **Quantity** field, select **All**.
+4. Enter a **Packing slip date** field.
+5. Select the **Shipment number** and click **OK**.
 
 ## Post sales invoice
 1. On the Action Pane, click **Invoice**.
 2. Click **Invoice**.
-3. Expand or collapse the **Overview** section.
-4. Select the **Shipment number**.
-5. In the list, click the link in the selected row.
-6. Expand or collapse the **Setup** section.
-7. In the **Invoice date** field, enter a date.
-8. Click **OK**.
-9. Click **OK**.
+3. Select the corresponding **Shipment number**.
+4. In the **Setup** section, fill in the **Invoice date** and click **OK**.
 
 ## Shipment document submitted status
-1. On the Action Pane, click **Manage**.
+1. On the **Sales order**, click **Manage**.
 2. Click **Letter of credit**.
-3. Expand or collapse the **Lines** section.
-    * Note: The **Document submitted** field should be set to **Yes**.  
+3. Expand the **Lines** section.
+>[!NOTE]
+> The **Document submitted** field should be set to **Yes**.  
 
 ## Verify Export letter of credit
 1. Go to **Cash and bank management > Letters of credit > Export letter of credit and import collection**.
-2. In the list, find and select the desired record.
-3. In the list, click the link in the selected row.
-    * Verify that the **Export letter of credit** has a **Shipment status** of **Invoiced**.  
+2. Verify that the **Export letter of credit** has a **Shipment status** of **Invoiced** on the **Lines** section.
 
 ## Customer payment
 1. Go to **Accounts receivable > Payments > Payment journal**.
 2. Click **New**.
-3. In the list, mark the selected row.
-4. In the **Name** field, click the drop-down button to open the lookup.
-5. In the list, click the link in the selected row.
-6. Click **Lines**.
-7. In the **Date** field, enter a date.
-8. In the **Account** field, specify the desired values.
-9. Click **Settlement**.
-10. Select the check box on the header of Totals.
-    * Note: Set the **Show** field to **Letter of credit**.  
-11. In the list, find and select the desired record.
-12. Select or clear the **Mark** check box.
-13. Click **OK**.
-14. Click the **Payment** tab.
-    * Verify the Bank document number and Shipment number details  
-15. Click **Post**.
+3. In the **Name** field, select customer payment journal name and click **Lines**.
+4. Enter a **Date**.
+5. In the **Account** field, select customer account number. Click **Save**.
+6. Click **Settle transactions** and select an invoice to pay. Check **Bank document number** and **Shipment number**.
+7. Select the **Mark** checkbox next to the invoice to pay. Click **OK**.
+8. Click the **Payment** tab on the customer journal and verify the **Bank document number** and **Shipment number** details are filled.
+9. Click **Post**.
 
 ## Verify Export letter of credit after payment
 1. Go to **Cash and bank management > Letters of credit > Export letter of credit and import collection**.
-2. In the list, find and select the desired record.
-3. In the list, click the link in the selected row.
-    * Verify that the **Shipment status** = **Payment received** and **Balance amount** = **0.00**.  
-
-
+2. Verify that the **Shipment status** = **Payment received** and **Balance amount** = **0.00**.  
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

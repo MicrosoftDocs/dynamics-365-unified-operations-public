@@ -4,8 +4,6 @@ description: The Retail SDK includes code, code samples, templates, and tools th
 author: josaw1
 ms.date: 05/03/2023
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: josaw
 ms.search.region: Global

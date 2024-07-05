@@ -1,18 +1,16 @@
 ---
 title: Bank symbols for bank accounts
-description: This article provides information about bank symbols for bank accounts.
+description: Learn about bank symbols for bank accounts, including an outline on setting up a list of constant symbols for bank accounts.
 author: AdamTrukawka
-ms.date: 07/23/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Czech Republic
 ms.author: atrukawk
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
+ms.reviewer: johnmichalak
+ms.search.region: Czech Republic
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 
-ms.search.form: 
 ---
 
 # Bank symbols for bank accounts

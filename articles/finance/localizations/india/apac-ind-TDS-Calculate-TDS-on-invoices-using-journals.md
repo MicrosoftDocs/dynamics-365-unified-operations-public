@@ -1,31 +1,17 @@
 ---
-# required metadata
-
 title: Calculate TDS on invoices using journals
-description: This article lists the steps for calculating Tax Deducted at Source (TDS) on journals.
-author: kailiang
-ms.date: 02/12/2021
-ms.topic: article
-ms.prod: 
-
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# 
-# ms.tgt_pltfrm: 
-ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
+description: Learn about calculating Tax Deducted at Source (TDS) on journals, including a step-by-step process for making this calculation.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
+ms.reviewer: johnmichalak
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-
+ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ---
 
 # Calculate TDS on invoices using journals
@@ -36,7 +22,7 @@ This article lists the steps for calculating Tax Deducted at Source (TDS) on jou
 
 Begin by opening the **General journals** page (**General ledger > Journal entries > General journals**).
 
-[![General journals.](../media/apac-ind-TDS-57.png)](/media/apac-ind-TDS-57.png)
+[![General journals.](../media/apac-ind-TDS-57.png)]
 
 1. Create journal lines using the journal forms that are listed in the table. Select the account type and offset account type and enter the amount for the transaction. 
 

@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Generate financial reports
-description: This article provides information about generating a financial report.
+description: Learn about generating a financial report, including a table that provides definitions and states for various statuses.
 author: jinniew
-ms.date: 03/23/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: FinancialReports
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 271df6f4-12b7-4b3e-b2d7-36ea98ef1871
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
+ms.topic: article
+ms.date: 03/23/2023
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
+ms.search.form: FinancialReports
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.assetid: 271df6f4-12b7-4b3e-b2d7-36ea98ef1871
 ---
 
 # Generate financial reports

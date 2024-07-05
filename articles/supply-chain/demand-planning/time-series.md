@@ -1,23 +1,20 @@
 ---
-title: Time series and planning data (preview)
-description: This article provides information about time series, which represent the output from forecasts, calculations, and transformations in daily, weekly, or monthly time buckets.
+title: Time series and planning data
+description: Learn about time series, which represent the output from forecasts, calculations, and transformations in daily, weekly, or monthly time buckets.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 10/19/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
-# Time series and planning data (preview)
+# Time series and planning data
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until further notice -->
 
 Time series represent the output from forecasts, calculations, and transformations in daily, weekly, or monthly time buckets.
 

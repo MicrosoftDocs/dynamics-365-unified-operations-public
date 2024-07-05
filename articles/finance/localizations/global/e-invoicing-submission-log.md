@@ -1,19 +1,18 @@
 ---
 title: Work with the Electronic document submission log
-description: This article explains how to work with the Electronic document submission log.
-author: gionoder
-ms.date: 12/15/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: 
-ms.author: gionoder
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+description: Learn how to work with the Electronic document submission log, including outlines on the Schedule, Completed, and Failed submission statuses.
+author: ilikond
+ms.author: ikondratenko
+ms.topic: how-to
 ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: 
+ms.search.validFrom:
 ms.search.form: 
+ms.dyn365.ops.version: 
 ---
 
 # Work with Electronic document submission log

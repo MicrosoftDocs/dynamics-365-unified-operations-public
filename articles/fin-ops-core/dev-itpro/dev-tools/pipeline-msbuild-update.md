@@ -1,16 +1,15 @@
 ---
 title: Update a legacy pipeline in Azure Pipelines
-description: This article explains how to update a legacy pipeline in Azure Pipelines to use a newer version of Visual Studio.
-author: gianugo
-ms.date: 09/23/2020
+description: Learn about how to update a legacy pipeline in Azure Pipelines to use a newer version of Visual Studio, including a table that outlines property values for task names.
+author: josaw1
+ms.author: josaw
 ms.topic: article
+ms.date: 09/23/2020
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 
 ---
 
 # Update a legacy pipeline in Azure Pipelines

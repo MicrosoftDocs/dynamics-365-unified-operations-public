@@ -1,19 +1,17 @@
 ---
 title: Configure the Electronic reporting (ER) framework
-description: This article explains how to configure parameters of the Electronic reporting (ER) framework.
+description: Learn about how to configure parameters of the Electronic reporting (ER) framework, including learning about the prerequisites for electronic reporting setup.
 author: kfend
-ms.date: 04/23/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: Global
 ms.author: filatovm
+ms.topic: article
+ms.date: 04/23/2020
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace, ERParameters, ERFormatDestinationTable
 ms.dyn365.ops.version: July 2017 update
 ms.assetid: 3c1291de-230c-4e31-96c4-ba69a310690a
-ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace, ERParameters, ERFormatDestinationTable
 ---
 
 # Configure the Electronic reporting (ER) framework

@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Migrate upgraded AX 2012 R3 sales cubes to the entity store
-description: In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in a finance and operations application. 
+description: Learn about how to migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in a finance and operations application. 
 author: MilindaV2
-ms.date: 08/01/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: e992cdd8-abe8-42d0-97ad-6165822abbba
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: milindav
+ms.topic: article
+ms.date: 08/01/2022
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2016-05-31
+ms.search.form:
 ms.dyn365.ops.version: Platform update 1
-
+ms.assetid: e992cdd8-abe8-42d0-97ad-6165822abbba
 ---
 
 # Migrate upgraded AX 2012 R3 sales cubes to the entity store

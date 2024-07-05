@@ -4,8 +4,6 @@ description: This article explains how to configure optional features for a Micr
 author: josaw1
 ms.date: 06/14/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application user
 ms.reviewer: v-chgriffin
 ms.search.region: Global

@@ -4,23 +4,15 @@
 title: What's new or changed in Dynamics 365 Commerce 10.0.10 (May 2020)
 description: This article describes features that are either new or changed in Dynamics 365 Commerce 10.0.10. 
 author: josaw1
-ms.date: 04/08/2020
+ms.date: 04/12/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
+ms.custom:
+  - bap-template
+  - evergreen
 ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: josaw
 ms.search.validFrom: 2020-02-28 
 ms.dyn365.ops.version: 10.0.9
@@ -41,7 +33,7 @@ This article lists features that are either new or changed in Microsoft Dynamics
 
 The following features are included in this release. The feature titles link to additional information on the [Release plans](/dynamics365-release-plan/2020wave1/) site.
 
-- [Azure AD support for POS sign-in](/dynamics365-release-plan/2020wave1/dynamics365-commerce/aad-support-pos-logon)
+- [Microsoft Entra support for POS sign-in](/dynamics365-release-plan/2020wave1/dynamics365-commerce/aad-support-pos-logon)
 - [Channel-side calculations for available physical inventory for stores](/dynamics365-release-plan/2020wave1/dynamics365-commerce/channel-side-calculations-physical-inventory-stores)
 - [Change mode of delivery operation for POS](/dynamics365-release-plan/2020wave1/dynamics365-commerce/change-mode-delivery-operation-pos)
 - [Upsell and cross-sell using available discounts by enabling store associates to view promotions in POS](/dynamics365-release-plan/2020wave1/dynamics365-commerce/up-sell-cross-sell-using-discounts-enabling-store-associates-view-promotions-point-sale-pos.)

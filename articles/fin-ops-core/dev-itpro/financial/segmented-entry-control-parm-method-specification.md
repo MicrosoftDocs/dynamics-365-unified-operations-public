@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Parm methods for Segmented Entry controls
-description: Describes the parm methods that can be set in code on an instance of a Segmented Entry control.
+description: Learn about the parm methods that can be set in code on an instance of a Segmented Entry control, including a table that defines various methods.
 author: RyanCCarlson2
-ms.date: 06/20/2017
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
+ms.author: rcarlson
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
+ms.reviewer: johnmichalak
 ms.assetid: 0090efe3-3fd8-4988-83df-745d25b063d3
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: rcarlson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Parm methods for Segmented Entry controls

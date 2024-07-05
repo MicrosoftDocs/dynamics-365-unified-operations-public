@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Workflow business events
-description: Workflow business events are generated at various points in the processing of a workflow.
+description: Learn about workflow business events, which are generated at various points in the processing of a workflow, including an overview of workflow components.
 author: ChrisGarty
-ms.date: 01/18/2022
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global 
-# ms.search.industry: 
 ms.author: cgarty
+ms.topic: article
+ms.date: 01/18/2022
+# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global 
 ms.search.validFrom: 2019-3-31
+# ms.search.form:  [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: Platform update 24
 ---
 

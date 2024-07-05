@@ -1,13 +1,13 @@
 ---
 title: Application checker
-description: This article describes the application checker tool.
+description: Learn about the application checker tool, which allows you to gain insight into your application's source and metadata code.
 author: AndreasHassing
-ms.date: 09/22/2020
-ms.topic: article
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: anniels
+ms.topic: article
+ms.date: 09/22/2020
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2020-09-22
 ms.dyn365.ops.version: Platform update 25
 ---

@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Update vendor invoice declarations and generate the report
-description: This procedure walks you through posting a vendor invoice with invoice declaration information attached and generating an invoice declaration report. 
+description: Learn about posting a vendor invoice with invoice declaration information attached and generating an invoice declaration report.
 author: mrolecki
-ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LedgerJournalTable, LedgerJournalTransVendInvoice   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Iceland
-# ms.search.industry: 
 ms.author: mrolecki
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.custom:
+ms.reviewer: johnmichalak   
+audience: Application User 
+ms.search.region: Iceland
+ms.search.validFrom: 2016-06-30
+ms.search.form: LedgerJournalTable, LedgerJournalTransVendInvoice
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Update vendor invoice declarations and generate the report
 
 [!include [banner](../../includes/banner.md)]

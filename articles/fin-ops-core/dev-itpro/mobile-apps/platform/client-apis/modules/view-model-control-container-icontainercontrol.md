@@ -1,12 +1,13 @@
 ---
 title: Container module
-description: A container control can contain any number of controls.
+description: Learn about the container module, which includes the ContainerControl, ContainerControlDesign, and the ContainerControlMetadata types.
 author: jasongre
-ms.date: 05/26/2022
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: jasongre
+ms.topic: article
+ms.date: 05/26/2022
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ---
 
 # Container module (Client APIs)

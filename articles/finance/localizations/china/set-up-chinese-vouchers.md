@@ -1,19 +1,18 @@
 ---
 title: Set up Chinese vouchers
-description: This procedure walks you through setting up Chinese vouchers with specific demo data.
+description: Learn about setting up Chinese vouchers with specific demo data, including a step-by-step process that outlines setting up Chinese voucher types.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: China (PRC)
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: China (PRC)
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: LedgerVoucherType_CN, HcmWorkerLookUp, LedgerParameters, LedgerPrintLayoutGroup_CN
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Set up Chinese vouchers
 
 [!include [banner](../../includes/banner.md)]

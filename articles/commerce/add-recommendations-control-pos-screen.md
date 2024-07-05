@@ -6,9 +6,6 @@ description: This article describes how to add a recommendations control to the 
 author: bebeale
 ms.date: 04/21/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 
 ms.search.form: RetailStoreTable, RetailTillLayout

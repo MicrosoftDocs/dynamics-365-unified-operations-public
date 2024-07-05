@@ -4,8 +4,6 @@ description: This article explains the functionality and setup of simplified ele
 author: EvgenyPopovMBS
 ms.date: 07/05/2023
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Saudi Arabia

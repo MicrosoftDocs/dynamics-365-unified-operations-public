@@ -1,19 +1,16 @@
 ---
 title: Usage management dashboard
-description: This article explains how to use the Usage management dashboard to monitor usage of the Electronic Invoicing service and remain compliant.
+description: Learn how to use the Usage management dashboard to monitor usage of the Electronic Invoicing service and remain compliant.
 author: gionoder
-ms.date: 06/02/2021
+ms.author: johnmichalak
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 06/02/2021
+ms.reviewer: johnmichalak
 audience: Application User
-ms.reviewer: kfend
 ms.search.region: Global
-ms.author: gionoder
 ms.search.validFrom: 2020-07-08
-ms.dyn365.ops.version: AX 10.0.12
-ms.assetid: 
 ms.search.form: 
+ms.dyn365.ops.version: AX 10.0.12
 ---
 
 # Usage management dashboard

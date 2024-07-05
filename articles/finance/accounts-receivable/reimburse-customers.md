@@ -1,19 +1,16 @@
 ---
-# required metadata
-
 title: Reimburse customers
-description: This article explains how to create reimbursement transactions for a group of customers.  
+description: Learn how to create reimbursement transactions for a group of customers, including a table that describes various prerequisites.  
 author: JodiChristiansen
-ms.date: 11/08/2023
-ms.topic: article
-ms.search.form: LedgerJournalTransCustPaym, LedgerJournalTransVendPaym
-audience: Application User
-ms.reviewer: twheeloc
-ms.assetid: 53533ee3-470e-458a-ac8b-3815aa4cb502
-ms.search.region: Global
 ms.author: jchrist
+ms.topic: article
+ms.date: 11/08/2023
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
+ms.search.form: LedgerJournalTransCustPaym, LedgerJournalTransVendPaym
 ms.search.validFrom: 2016-02-28
-
+ms.assetid: 53533ee3-470e-458a-ac8b-3815aa4cb502
 ---
 
 # Reimburse customers

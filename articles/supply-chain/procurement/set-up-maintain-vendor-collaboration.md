@@ -1,29 +1,15 @@
 ---
-# required metadata
-
 title: Set up and maintain vendor collaboration
-description: This article explains how to set up vendor collaboration in Dynamics 365 Supply Chain Management. It also explains how to provision new vendor collaboration users and manage the security roles for those users.
-author: GalynaFedorova
-ms.date: 12/03/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: DirExternalRole, SysUserRequestListPage, VendVendorPortalUsers, WorkflowTableListPageRnr
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+description: Learn how to set up vendor collaboration in Dynamics 365 Supply Chain Management and how to provision new vendor collaboration users.
+author: Henrikan
+ms.author: henrikan
+ms.topic: how-to
+ms.date: 05/02/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 69d05e8b-7dc2-48ea-bc24-bea9ac963579
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: gfedorova
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
-
+audience: Application User
+ms.search.form: DirExternalRole, SysUserRequestListPage, VendVendorPortalUsers, WorkflowTableListPageRnr
 ---
 
 # Set up and maintain vendor collaboration
@@ -155,6 +141,5 @@ For more information about the process that is used in the **Send Azure B2B user
 [Vendor collaboration with external vendors](vendor-collaboration-work-external-vendors.md)
 
 Watch a short video on the vendor onboarding process: [Onboard a new vendor](https://www.youtube.com/watch?v=0KUc3AGaTKk&feature=youtu.be)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

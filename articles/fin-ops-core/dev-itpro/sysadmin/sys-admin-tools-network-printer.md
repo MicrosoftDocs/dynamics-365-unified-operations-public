@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Manage access to network printers across legal entities
-description: This article provides information about how to use the System administration utility to set up network printers.
+description: Learn about how to use the System administration utility to set up network printers, including overviews on accessing features and supported operations.
 author: RichdiMSFT
-ms.date: 12/11/2018
+ms.author: johnmichalak
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 12/11/2018
+ms.reviewer: johnmichalak
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: richdi
 ms.search.validFrom: 2018-12-04
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
 ---
 
 # Manage access to network printers across legal entities

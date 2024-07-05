@@ -4,12 +4,10 @@ description: This article describes how to synchronize task management between M
 author: gvrmohanreddy
 ms.date: 11/04/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
-ms.author: gmohanv
+ms.author: stuharg
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
 ---
@@ -61,7 +59,7 @@ To publish a test task list in Teams, follow these steps.
 For more information, see [Publish task lists to create and track work in your organization](https://support.microsoft.com/office/publish-task-lists-to-create-and-track-work-in-your-organization-095409b3-f5af-40aa-9f9e-339b54e705df).
 
 > [!NOTE]
-> After the task list is published successfully in Teams, the tasks will be displayed in POS. POS managers and cashiers then need to turn on Azure AD login in POS. For more information, refer to the [Enable Azure Active Directory authentication for POS sign-in](aad-pos-logon.md) article. 
+> After the task list is published successfully in Teams, the tasks will be displayed in POS. POS managers and cashiers then need to turn on Microsoft Entra login in POS. For more information, refer to the [Enable Microsoft Entra authentication for POS sign-in](aad-pos-logon.md) article. 
 
 ## Additional resources
 

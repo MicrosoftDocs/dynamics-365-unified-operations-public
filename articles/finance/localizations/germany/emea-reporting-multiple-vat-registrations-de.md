@@ -1,15 +1,15 @@
 ---
 title: Support for multiple VAT registration numbers in reporting for Germany
-description: This article explains how to support multiple value-added tax (VAT) registration numbers in reporting for Germany.
+description: Learn how to support multiple value-added tax (VAT) registration numbers in reporting for Germany, including a table providing reports for legal entities.
 author: liza-golub
-ms.date: 7/13/2023
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Germany
 ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Germany
 ms.search.validFrom: 2023-04-10
 ms.dyn365.ops.version: AX 10.0.13
 ---

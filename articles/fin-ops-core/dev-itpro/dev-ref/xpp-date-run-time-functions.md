@@ -1,12 +1,13 @@
 ---
 title: X++ date runtime functions
-description: This article describes the date run-time functions.
+description: Learn about the date run-time functions, including the dyName, dayOfMth, dayOfWk, and dayOfYr functions, with parameters, return values, and examples.
 author: josaw1
-ms.date: 11/03/2017
-audience: Developer
-ms.reviewer: josaw
-ms.search.region: Global
 ms.author: josaw
+ms.topic: article
+ms.date: 11/03/2017
+ms.reviewer: johnmichalak
+audience: Developer
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

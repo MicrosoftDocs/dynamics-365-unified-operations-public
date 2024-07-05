@@ -1,18 +1,17 @@
 ---
 title: Acquiring fixed assets and putting them into operation (Russia)
-description: This article provides information about fixed asset acquisitions for Russia.
-author: AdamTrukawka
-ms.date: 09/25/2018
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
+description: Learn about fixed asset acquisitions for Russia, including outlines and step-by-step processes for acquiring assets and creating standard printing forms.
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/20/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
-ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
-ms.dyn365.ops.version: 8.1
 ms.search.form: RAssetTable, LedgerJournalTable
+ms.dyn365.ops.version: 8.1
 ---
 
 # Acquiring fixed assets and putting them into operation (Russia)

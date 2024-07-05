@@ -1,22 +1,21 @@
 ---
-title: Reset dual-write connections (Preview)
-description: This article describes the reset button functionality of dual-write.
+title: Reset dual-write connections
+description: Learn about the reset button functionality of dual-write, including prerequisites and various reset scenarios.
 author: jaredha
-ms.date: 11/01/2023
-ms.topic: article
-audience: IT Pro
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: jaredha
+ms.topic: article
+ms.date: 11/01/2023
+ms.reviewer: johnmichalak
+audience: IT Pro
+ms.search.region: Global
 ms.search.validFrom: 12/12/2022
 ms.dyn365.ops.version: F&O 10.0.30 PU54
 ---
 
 
-# Reset dual-write connections (Preview)
+# Reset dual-write connections
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 The initial configuration of the dual-write connection between finance and operations apps and Microsoft Power Platform is done in Microsoft Dynamics Lifecycle Services by using the Power Platform integration setup. For more information about this initial configuration, see [Dual-write setup from Lifecycle Services](./lcs-setup.md). After it's done, there might be cases where you want to clear the dual-write connections and configuration, and start again from scratch. Alternatively, you might encounter a stuck state. In these cases, the dual-write platform lets you clear and reset all dual-write connections and configuration, so that you can set up dual-write again for the environment.
 

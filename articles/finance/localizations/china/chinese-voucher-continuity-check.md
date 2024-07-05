@@ -2,20 +2,19 @@
 title: Chinese voucher continuity check
 description: Before you can close a fiscal period, the Chinese voucher numbers for each voucher type must start at 1 and be sequential.
 author: kfend
-ms.date: 08/29/2018
-ms.topic: how-to
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: China (PRC)
 ms.author: kfend
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: China (PRC)
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: 
   - LedgerCalendar, LedgerCheckList_CN
   - SysQueryForm, SysDateLookUp, LedgerTransVoucher, SrsReportViewerForm, LedgerVoucherRenumberLog_CN
+ms.dyn365.ops.version: Version 7.0.0
 ---
+
 # Chinese voucher continuity check
 
 [!include [banner](../../includes/banner.md)]

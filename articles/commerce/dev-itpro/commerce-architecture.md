@@ -2,12 +2,10 @@
 title: Dynamics 365 Commerce architecture overview
 description: This article provides an overview of all components in the Microsoft Dynamics 365 Commerce ecosystem, including integration points to the suite of Dynamics 365 products.
 author: samjarawan
-ms.date: 01/30/2023
+ms.date: 05/24/2024
 ms.topic: overview
-ms.prod: 
-ms.technology: 
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-03-01
@@ -21,13 +19,11 @@ ms.search.form: RetailITWorkspace
 
 [!include [banner](../includes/banner.md)]
 
-
-
 This article provides an overview of all components in the Microsoft Dynamics 365 Commerce ecosystem, including integration points to the suite of Dynamics 365 products. 
 
 The following illustration shows an overview of Dynamics 365 Commerce components.
 
-![Dynamics 365 Commerce Component Overview](../media/Commerce_Architecture_Component_Overview.png)
+:::image type="content" source="../media/Commerce_Architecture_Component_Overview.png" alt-text="Dynamics 365 Commerce Component Overview" lightbox="../media/Commerce_Architecture_Component_Overview.png":::
 
 ## Architecture benefits
 
@@ -121,7 +117,7 @@ The ability to bring the Commerce Scale Units to edge computing helps accommodat
 
 #### Content management system
 
-A fully featured content management system (CMS) is integrated directly into the e-commerce platform. In addition to rich indexing features, the CMS provides lifecycle management for marketing materials that supplement the product information that is managed by the headless commerce engine. It includes features for localization and multi-item publishing through releases. The system is built on top of a scalable, resilient Azure infrastructure that includes Azure Active Directory (Azure AD) and Azure Cosmos DB.
+A fully featured content management system (CMS) is integrated directly into the e-commerce platform. In addition to rich indexing features, the CMS provides lifecycle management for marketing materials that supplement the product information that is managed by the headless commerce engine. It includes features for localization and multi-item publishing through releases. The system is built on top of a scalable, resilient Azure infrastructure that includes Microsoft Entra and Azure Cosmos DB.
 
 #### Digital asset management
 
@@ -139,7 +135,7 @@ The CMS stores its pages as a series of modules. The storefront web server assem
 
 #### Dynamics 365 Customer Insights
 
-Dynamics 365 Customer Insights helps you gain a deeper understanding of your customers by connecting data from various transactional, behavioral, and observational sources to create a 360-degree customer view and generate insights. Dynamics 365 Commerce makes it easy for retailers to enable the integration with Dynamics 365 Customer Insights and show the generated insights at the POS. These insights include churn probability and next best action, and they are valuable because they help sales associates have effective conversations with customers and deliver personalized shopping experiences to them. For more information, see [Dynamics 365 Customer Insights integration with Dynamics 365 Commerce](clienteling-overview.md#integration-with-dynamics-365-customer-insights).
+Dynamics 365 Customer Insights helps you gain a deeper understanding of your customers by connecting data from various transactional, behavioral, and observational sources to create a 360-degree customer view and generate insights. Dynamics 365 Commerce makes it easy for retailers to enable the integration with Dynamics 365 Customer Insights and show the generated insights at the POS. These insights include churn probability and next best action, and they are valuable because they help sales associates have effective conversations with customers and deliver personalized shopping experiences to them. For more information, see [Integrate Customer Insights with Commerce](clienteling-overview.md#integrate-customer-insights-with-commerce).
 
 #### Azure cognitive search
 

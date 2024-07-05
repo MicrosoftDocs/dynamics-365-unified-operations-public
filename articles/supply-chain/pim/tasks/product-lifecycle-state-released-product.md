@@ -1,29 +1,19 @@
 --- 
-# required metadata 
- 
 title: Assign a product lifecycle state to a released product
-description: This procedure shows how to assign a product lifecycle state to a released product. 
+description: Learn how to assign a product lifecycle state to a released product, including a step-by-step process for finding released products. 
 author: t-benebo
-ms.date: 12/05/2017
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: benebotg
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 12/05/2017
+ms.custom:
+ms.reviewer: kamaybac    
+audience: Application User 
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0 
-
 ---
+
 # Assign a product lifecycle state to a released product
 
 [!include [banner](../../includes/banner.md)]

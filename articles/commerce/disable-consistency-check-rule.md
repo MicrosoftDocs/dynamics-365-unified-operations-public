@@ -5,9 +5,6 @@ description: This article describes the functionality for disabling transaction 
 author: analpert
 ms.date: 12/11/2021
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
-
 # optional metadata
 # ms.search.form: 
 # ROBOTS: 

@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Before you buy
-description: Step-by-step guidance to use when you're considering purchasing Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce.  
+description: Access step-by-step guidance to use when you're considering purchasing Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce.  
 author: sericks007
-ms.date: 11/30/2021
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: sericks
+ms.topic: article
+ms.date: 11/30/2021
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2017-06-30
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0, Operations
-
 ---
 
 # Before you buy

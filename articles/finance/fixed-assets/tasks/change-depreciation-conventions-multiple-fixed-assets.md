@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Change depreciation conventions for multiple fixed assets
-description: This task updates the depreciation convention for a specified fixed asset group. 
+description: Learn about the depreciation convention for a specified fixed asset group, including a step-by-step process of a task guide that uses the USMF demo company. 
 author: moaamer
-ms.date: 03/28/2023
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: SysQueryForm, SrsReportViewerForm   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 03/28/2023
+ms.custom:
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: SysQueryForm, SrsReportViewerForm
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Change depreciation conventions for multiple fixed assets
 
 [!include [banner](../../includes/banner.md)]

@@ -1,12 +1,12 @@
 ---
 title: Print the Inventory and balance report for Chile
-description: The article describes how to set up and print the Inventory and balance report for Chile.
-author: Cpicon85 
-ms.date: 10/09/2023 
-ms.topic: article
-ms.reviewer: kfend
+description: Learn how to set up and print the Inventory and balance report for Chile, including an outline on prerequisites and a table that defines various fields.
+author: Cpicon85
 ms.author: kfend
+ms.topic: article
+ms.date: 10/09/2023 
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Print the Inventory and balance report for Chile

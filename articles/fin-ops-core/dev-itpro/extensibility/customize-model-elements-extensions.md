@@ -1,15 +1,13 @@
 ---
 title: Customize model elements through extension
-description: This article describes the Fleet Management Extension model. This model contains elements that extend the functionality of the Fleet Management application.
-author: gianugo
-ms.date: 11/08/2017
+description: Learn about the Fleet Management Extension model. This model contains elements that extend the functionality of the Fleet Management application.
+author: josaw1
+ms.author: josaw
 ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 11/08/2017
+ms.reviewer: johnmichalak
 audience: Developer
-ms.reviewer: josaw
 ms.search.region: Global
-ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 3190f6e2-698a-4cfa-9a2d-a6c57354920a
@@ -79,7 +77,7 @@ If you haven't opened the Fleet Management Solution in a previous tutorial, foll
 
 If you've already installed the demo data, you can skip to the next section.
 
-1. In the VM, open Internet Explorer and navigate to the application's base URL.
+1. In the VM, open Microsoft Edge and navigate to the application's base URL.
 2. Sign in.
 3. On the dashboard, open the navigation pane and navigate to **Fleet Management &gt; Setup &gt; Fleet Setup**.
 
@@ -97,7 +95,7 @@ If you've already installed the demo data, you can skip to the next section.
 
 ## Open the FMRental form on the one-box environment
 
-1. In the VM, open Internet Explorer and navigate to the base URL of your Dynamics AX application. For more information, see [Deploy and access development environments](../dev-tools/access-instances.md).
+1. In the VM, open Microsoft Edge and navigate to the base URL of your Dynamics AX application. For more information, see [Deploy and access development environments](../dev-tools/access-instances.md).
 2. Sign in, if prompted.
 3. Find the **Reservation Management** tile and select it to open the Reservation Management workspace.
 

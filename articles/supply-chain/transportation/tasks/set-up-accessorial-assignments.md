@@ -1,28 +1,20 @@
 --- 
-# required metadata 
- 
 title: Set up accessorial assignments
-description: This procedure shows how to set up an accessorial assignment. 
+description: Learn how to set up an accessorial assignment, including a step-by-step process for setting up accessorial assignments done by transportation coordinators.
 author: Weijiesa
+ms.author: weijiesa
+ms.topic: how-to
 ms.date: 11/14/2016
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: TMSAccessorialAssignment
-audience: Application User 
-# ms.devlang:  
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: weijiesa
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: TMSAccessorialAssignment 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Set up accessorial assignments
 
 [!include [banner](../../includes/banner.md)]

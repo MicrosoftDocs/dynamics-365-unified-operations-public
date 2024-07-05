@@ -1,29 +1,16 @@
 ---
-# required metadata
-
 title: Accrue subscription revenue  
-description: Accrue subscription revenue.
-author: sorenva
-ms.date: 05/01/2018
+description: Learn about how to accrue subscription revenue, including a step-by-step process for accruing subscription revenues and toggling the posting date field.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: SMASubscriptionAccrueDialog
-
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/01/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMASubscriptionAccrueDialog
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

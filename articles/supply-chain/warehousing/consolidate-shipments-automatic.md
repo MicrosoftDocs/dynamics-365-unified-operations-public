@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Consolidate shipments released to the warehouse using automatic release of sales orders
-description: This article presents a scenario where multiple orders are released to the warehouse in the same automated release-to-warehouse periodic procedure.
+description: Learn about a scenario where multiple orders are released to the warehouse in the same automated release-to-warehouse periodic procedure.
 author: Mirzaab
-ms.date: 05/12/2020
-ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, WHSShipmentConsolidation, WHSFilterGenerallyAvail
-# ROBOTS:
-audience: Application User
-# ms.devlang:
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-# ms.custom:
-ms.search.region: Global
-# ms.search.industry:
 ms.author: mirzaab
+ms.topic: article
+ms.date: 05/12/2020
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-05-01
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, WHSShipmentConsolidation, WHSFilterGenerallyAvail
 ms.dyn365.ops.version: 10.0.3
-
 ---
 
 # Consolidate shipments released to the warehouse using automatic release of sales orders

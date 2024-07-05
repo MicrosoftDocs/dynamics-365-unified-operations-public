@@ -52,7 +52,7 @@ The following FAQ articles discuss issues related to the platform shared by all 
 - [Go-live for implementation projects FAQ](../fin-ops-core/fin-ops/imp-lifecycle/go-live-faq.md)
 - [One Version service updates FAQ](../fin-ops-core/fin-ops/get-started/one-version.md)
 - [Open in Excel experiences FAQ](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md)
-- [Subscriptions, LCS projects, and Azure Active Directory tenants FAQ](../fin-ops-core/fin-ops/get-started/subscription-overview.md)
+- [Subscriptions, LCS projects, and Microsoft Entra tenants FAQ](../fin-ops-core/fin-ops/get-started/subscription-overview.md)
 - [Workflow FAQ](../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md)
 
 ## Other support resources

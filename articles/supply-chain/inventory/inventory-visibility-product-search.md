@@ -1,15 +1,15 @@
 ---
 title: Set up product search for Inventory Visibility
-description: This article describes how to set up product search for Inventory Visibility. This feature lets users search for products and on-hand inventory information based on specific attributes, such as size and color.
+description: Learn how to set up product search for Inventory Visibility, which lets users search for products and on-hand inventory information based on specific attributes.
 author: Weijiesa
 ms.author: weijiesa
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 11/20/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # Set up product search for Inventory Visibility
@@ -35,7 +35,7 @@ Before you can use the product search service, your system must meet the followi
 
 ### New Inventory Visibility installations
 
-The product search service is included in the current version of the Inventory Visibility add-in. Therefore, you don't have to install it separately if you haven't already installed the add-in for your environment. For information about how to install Inventory Visibility for the first time, see [Install and set up Inventory Visibility](inventory-visibility-setup.md).
+The product search service is included in the current version of the Inventory Visibility Add-in. Therefore, you don't have to install it separately if you haven't already installed the add-in for your environment. For information about how to install Inventory Visibility for the first time, see [Install and set up Inventory Visibility](inventory-visibility-setup.md).
 
 ### Existing Inventory Visibility installations
 
@@ -61,10 +61,9 @@ If some table maps fail to do an initial synchronization because of a permission
 
 1. Sign in to your Dataverse environment, go to **Settings** \> **Security**, and select **Teams**.
 1. Open your team, and select **Manage Roles**.
-1. Make sure that the following roles are assigned to your team:
-
-    - *Dual-write app user*
-    - *Dual-write runtime user*
+1. Make sure that the following role is assigned to your team:
+    
+    - *System Administrator*
 
 For more information about how to set up dual-write security roles, see [Set up dual-write security roles and permissions](../../fin-ops-core/dev-itpro/data-entities/dual-write/security-roles.md).
 

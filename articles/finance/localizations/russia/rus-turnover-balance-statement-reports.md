@@ -1,15 +1,13 @@
 ---
 title: Turnover balance statement reports
-description: This article provides information about turnover balance sheets for customers, vendors, and advanced holders.
+description: Learn about turnover balance sheets for customers, vendors, and advanced holders, including a step-by-step process on customer turnover register.
 author: AdamTrukawka
-ms.date: 04/15/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
-ms.reviewer: kfend
-ms.search.region: Russia
 ms.author: atrukawk
+ms.topic: article
+ms.date: 04/15/2020
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 ---

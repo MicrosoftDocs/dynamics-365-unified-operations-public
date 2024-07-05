@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up withholding tax
-description: This article explains how to set up withholding tax.   
+description: Learn how to set up withholding tax on vendors that do not create sales tax transaction, including a step-by-step process.
 author: twheeloc
-ms.date: 05/23/2023  
-ms.topic: how-to  
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: TaxWithholdTable, TaxWithholdData, TaxWithholdGroup   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.author: twheeloc
+ms.topic: how-to
+ms.date: 05/23/2024  
+ms.custom:
+ms.reviewer: twheeloc   
+audience: Application User  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kfend
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: TaxWithholdTable, TaxWithholdData, TaxWithholdGroup
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Set up withholding tax
 
 [!include [banner](../../includes/banner.md)]

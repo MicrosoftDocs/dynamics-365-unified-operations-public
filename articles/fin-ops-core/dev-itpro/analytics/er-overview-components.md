@@ -1,19 +1,17 @@
 ---
 title: Electronic reporting components
-description: This article describes the Electronic reporting (ER) components.
+description: Learn about the Electronic reporting (ER) components, including data model, model mapping, and format components.
 author: kfend
-ms.date: 09/28/2021
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-audience: Developer, IT Pro
-ms.reviewer: kfend
-ms.search.region: global
 ms.author: filatovm
+ms.topic: overview
+ms.date: 09/28/2021
+ms.reviewer: johnmichalak
+audience: Developer, IT Pro
+ms.search.region: global
 ms.search.validFrom: 2016-02-28
+ms.search.form: ERWorkspace
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
-ms.search.form: ERWorkspace
 ---
 
 # Electronic reporting components

@@ -1,24 +1,24 @@
 ---
 title: Inquire into inventory with Copilot (preview)
-description: The inventory visibility service interacts with Microsoft Copilot to provide a natural-language inventory search function. The functionality is available both from inside the Inventory Visibility app and through APIs (which developers can code against to create an interactive inventory chatbot for their own applications and web sites).
+description: Learn how the inventory visibility service interacts with Microsoft Copilot to provide a natural-language inventory search function.
 author: Weijiesa
 ms.author: weijiesa
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 11/07/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
 ms.collection:
   - bap-ai-copilot
+audience: Application User
+ms.search.region: Global
+ms.search.form:
 ---
 
 
 # Inquire into inventory with Copilot (preview)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 <!-- KFM: Preview until further notice -->
 
@@ -41,7 +41,7 @@ And Copilot could respond with the following answer:
 >
 > This is AI-generated content. AI-generated content can contain mistakes – please review.
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
@@ -113,7 +113,6 @@ The following example shows sample body content.
 ```
 
 You can choose a level of logging detail for the request by adding the optional `LogLevel` parameter in the body and setting it to `Debug`, `Trace`, or `Information`.
-
 
 ## See also
 

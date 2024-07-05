@@ -4,10 +4,8 @@
 title: Analyzing questionnaire results
 description: Questionnaire statistics can be used to calculate averages, totals, and percentages based on a set of demographic data. 
 author: twheeloc
-ms.date: 08/26/2021
+ms.date: 07/01/2024
 ms.topic: how-to 
-ms.prod:  
-ms.technology:  
  
 # optional metadata 
  
@@ -19,14 +17,13 @@ audience: Application User
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Analyzing questionnaire results
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

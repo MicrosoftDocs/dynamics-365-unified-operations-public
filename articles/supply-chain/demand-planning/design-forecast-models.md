@@ -1,23 +1,22 @@
 ---
-title: Design forecast models (preview)
-description: This article provides information about forecast models. These models let you arrange and configure tiles to define the forecast that is made by a forecast profile. Each model presents a flowchart that graphically represents the calculation that the model does.
+title: Design forecast models
+description: Learn about forecast models, which let you arrange and configure tiles to define the forecast that is made by a forecast profile.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 10/19/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.collection:
+  - bap-ai-copilot
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
-# Design forecast models (preview)
+# Design forecast models
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until further notice -->
 
 *Forecast models* let you arrange and configure tiles to define the forecast that's made by a forecast profile. Each model presents a flowchart that graphically represents the calculation that the model does.
 
@@ -57,7 +56,7 @@ The best fit model uses machine learning to determine which of the other availab
 
 ### Custom Azure Machine Learning algorithm
 
-If you have a custom Microsoft Azure Machine Learning algorithm that you want to use with your forecasting models, you can use it in the Demand planning app.
+If you have a custom Microsoft Azure Machine Learning algorithm that you want to use with your forecasting models, you can use it in Demand planning.
 
 ## Create and customize a forecast model
 
@@ -127,11 +126,28 @@ This section describes the purpose of each type of forecast tile. It also explai
 - *Prophet* – Facebook Prophet
 - *Best fit model*
 
-## Finance and operations – Azure Machine Learning tiles
+### Finance and operations – Azure Machine Learning tiles
 
-If you're already using your own Azure Machine Learning algorithms for demand forecasting in Supply Chain Management (as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md)), you can continue to use them while you use the Demand planning app. Just put a *Finance and operations – Azure Machine Learning* tile in your forecast model instead of a *Forecast* tile.
+If you're already using your own Azure Machine Learning algorithms for demand forecasting in Supply Chain Management (as described in [Demand forecasting overview](../master-planning/introduction-demand-forecasting.md)), you can continue to use them while you use Demand planning. Just put a *Finance and operations – Azure Machine Learning* tile in your forecast model instead of a *Forecast* tile.
 
-For information about how to set up the Demand planning app to connect to and use your Azure Machine Learning algorithms, see [Use your own custom Azure Machine Learning algorithms in Demand planning (preview)](custom-azure-machine-learning-algorithms.md).
+For information about how to set up Demand planning to connect to and use your Azure Machine Learning algorithms, see [Use your own custom Azure Machine Learning algorithms in Demand planning](custom-azure-machine-learning-algorithms.md).
+
+### Phase in/out tiles
+
+*Phase in/out* tiles modify the values of a data column in a time series to simulate the gradual phasing in of a new element (such as a new product or warehouse) or phasing out of an old element. The phase in/out calculation lasts for a specific period and uses values that are drawn from the same time series (from either the same data column that is being adjusted or another data column that represents a similar element).
+
+*Phase in/out* tiles have the following fields that you can set:
+
+- **Step name** – The specific name of the tile. This name is also shown in the flowchart.
+- **Description** – A short description of the tile.
+- **Created by** – The user who created the tile.
+- **Rule group** – The name of the rule group that defines the calculation that the tile does.
+
+When you set up your forecast model, the position of the *Phase in/out* tile affects the calculation result. To apply the phase in/out calculation to the historical sales numbers, put the *Phase in/out* tile before the *Forecast* tile (as shown on the left side of the following illustration). To apply the phase in/out calculation to the forecasted result, put the *Phase in/out* tile after the *Forecast* tile (as shown on the right side of the following illustration).
+
+:::image type="content" source="media/phase-tile-position.png" alt-text="Screenshots that show the Phase in/out tile in different positions relative to the Forecast tile." lightbox="media/phase-tile-position.png":::
+
+For more information about phase in/out functionality, including details about how to set up your phase in/out rule groups, see [Use phase in/out functionality to simulate planned changes](phase-in-out.md).
 
 ### Save tiles
 

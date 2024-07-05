@@ -1,28 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create and post a customer invoice for a public sector customer
-description: This procedure walks you through creating and posting a sales order invoice for a customer using OIOUBL electronic invoicing. 
+description: Learn about creating and posting a sales order invoice for a customer using OIOUBL electronic invoicing, including an outline on creating a sales order.
 author: mrolecki
-ms.date: 08/29/2018
-ms.topic: how-to 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, ContactPersonLookup, SalesEditLines,  CustInvoiceJournal, ERFormatMappingRunJobTable   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Denmark
-# ms.search.industry: 
 ms.author: mrolecki
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.custom:
+ms.reviewer: johnmichalak 
+audience: Application User  
+ms.search.region: Denmark
+ms.search.validFrom: 2016-06-30
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, ContactPersonLookup, SalesEditLines,  CustInvoiceJournal, ERFormatMappingRunJobTable
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # Create and post a customer invoice for a public sector customer
 
 [!include [banner](../../includes/banner.md)]

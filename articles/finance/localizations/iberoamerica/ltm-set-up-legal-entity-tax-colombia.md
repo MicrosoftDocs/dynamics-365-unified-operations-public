@@ -1,12 +1,12 @@
 ---
 title: Set up legal entity and tax information for Colombia
-description: This article explains how to set up legal entity and tax information for a company in Colombia.
+description: Learn how to set up legal entity and tax information for a company in Colombia, including a step-by-step process for creating a legal entity.
 author: Cpicon85
-ms.date: 12/08/2023
-ms.topic: Article
-ms.reviewer: kfend
 ms.author: v-cpicon
+ms.topic: article
+ms.date: 12/08/2023
 ms.custom: bap-template
+ms.reviewer: johnmichalak
 ---
 
 # Set up legal entity and tax information for Colombia
