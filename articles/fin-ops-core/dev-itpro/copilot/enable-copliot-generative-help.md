@@ -38,7 +38,7 @@ Specific conditions [govern and secure the deployment of Copilot Studio componen
 
 Here are some typical causes that can prevent Copilot from being deployed and enabled in finance and operations apps:
 
-- In the Power Platform admin center, your tenant admin disabled the ability to publish copilots with generative answers and actions for your tenant. This ability is governed by the **Publish bots with AI features** [tenant setting](/microsoft-copilot-studio/security-and-governance).
+- In the Power Platform admin center, your tenant admin disabled the ability to publish copilots with generative answers and actions for your tenant. This ability is governed by the **Publish Copilots with AI features** [tenant setting](/microsoft-copilot-studio/security-and-governance).
 - [Data movement across geographic locations](/microsoft-copilot-studio/manage-data-movement-outside-us) has been disabled for Copilot Studio generative AI features outside the United States.
 - Your admin disabled the use of Copilot for your organization through a support request.
 
