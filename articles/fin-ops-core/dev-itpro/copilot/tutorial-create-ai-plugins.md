@@ -4,12 +4,11 @@ description: This article provides guidance on creating AI plugins registered in
 author: jaredha
 ms.author: jaredha
 ms.reviewer: johnmichalak
-ms.search.form:
 ms.topic: how-to
-ms.date: 4/5/2024
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
+ms.custom: 
+   - bap-template
+ms.date: 07/05/2024
+
 ---
 
 # Tutorial: Create AI plugins for copilots with finance and operations business logic
@@ -28,17 +27,17 @@ Here's an overview of the steps in this tutorial:
 This tutorial has the following prerequisites:
 - You must have a unified developer environment. The development of AI plugins with finance and operations business logic is available only in the [unified developer experience](/power-platform/developer/unified-experience/finance-operations-dev-overview). For information about how to create a unified developer environment from the [unified admin experience for finance and operations apps](/power-platform/admin/unified-experience/finance-operations-apps-overview), see [Tutorial: Install the Finance and Operations Provisioning App](/power-platform/admin/unified-experience/tutorial-install-finance-operations-provisioning-app).
 - Your environment must be on version 10.0.40 PQU-3 with platform version 7.0.7279.80 or later.
-- The following solutions must be installed in the Power Platform environment. If not already installed, see [Manage Dynamics 365 apps](https://learn.microsoft.com/power-platform/admin/manage-apps) for information on installing Dynamics 365 solution packages in Dataverse.
+- The following solutions must be installed in the Power Platform environment. If not already installed, see [Manage Dynamics 365 apps](/power-platform/admin/manage-apps) for information on installing Dynamics 365 solution packages in Dataverse.
    - The Copilot for finance and operations package, which includes the following solutions:
       - Copilot for finance and operations apps
       - Copilot for finance and operations generation solution
       - Copilot for finance and operations anchor solution
    - Finance and Operations Virtual Entity
- - The **(Preview) Custom API Generation** feature must be enabled in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview).
+ - The **(Preview) Custom API Generation** feature must be enabled in [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Step 1: Define the plugin operation in X++
 In your unified developer environment, you must create a class in X++ that is called and can execute code when Copilot Studio invokes the plugin. This class encapsulates the code/business logic that defines the AI operation.
-1. In your development project in Visual Studio, create a new model that references the following packages. For more information on creating models and working with unified developer environments, see [Tutorial: Write, deploy, and debug X++ code](https://learn.microsoft.com/power-platform/developer/unified-experience/finance-operations-debug).
+1. In your development project in Visual Studio, create a new model that references the following packages. For more information on creating models and working with unified developer environments, see [Tutorial: Write, deploy, and debug X++ code](/power-platform/developer/unified-experience/finance-operations-debug).
    - ApplicationCommon
    - ApplicationFoundation
    - ApplicationPlatform
