@@ -5,16 +5,16 @@ author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form:
-ms.topic: how-to
-ms.date: 02/23/2024
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
+ms.topic: overview
+ms.date: 07/29/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Onboard the Approvals Management mobile app (Preview)
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 This article describes how administrators can prepare your Microsoft Dynamics 365 Supply Chain Management and Dataverse environments to support the Approvals Management mobile app. It also describes how to install the app on your mobile devices.
 
@@ -34,17 +34,29 @@ When you create the Dataverse environment where you want to install the app, be 
 
 The [Power Apps component framework feature](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) must be enabled for your environment.
 
+### Allow publishing of canvas apps in Dataverse
+
+To allow the Approvals Management mobile app to be installed in Dataverse, you must enable the **Allow publishing of canvas apps with code components** option for your environment. Follow these steps:
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. On the navigation pane, select **Environments** and then select the environment that's integrated with Supply Chain Management.
+1. From the toolbar, select **Settings**.
+1. On the **Settings** page, expand the **Product** section and select **Features**.
+1. Set **Allow publishing of canvas apps with code components** to *On*.
+
 ## <a name="install-in-dataverse"></a>Install the mobile app in Dataverse
 
 You must install the Approvals Management mobile app in your Dataverse environment to enable users to access it when they sign in by using the Power Apps mobile app. The installation process also sets up the required user roles and other dependencies in Dataverse.
 
 Follow these steps to install the Approvals Management mobile app in Dataverse.
 
-1. Go to ["Dynamics 365 Approvals Management mobile application" in Microsoft AppSource]().
+1. Go to ["Dynamics 365 Approvals Management" in Microsoft AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.d365-approvalsmanagementapp-preview?flightCodes=9e074b1814ff4c7889a84758ecdbbd16). <!--KFM: This might be the wrong link (includes "preview" and a flightCode). Please confirm the correct link for final release. -->
 1. Select **Get it now**.
 1. Follow the instructions on your screen to install the app in the Dataverse environment that is connected to your target Supply Chain Management environment.
 
 ## Grant access to the mobile app in Dataverse
+
+<!--KFM: This all came from the Asset Management app docs. Review and confirm all of this. -->
 
 After the mobile app solution is installed in your Dataverse environment, you must share it with your users. The Approvals Management mobile app is a canvas app. To share it, follow the instructions in [Share an app](/power-apps/maker/canvas-apps/share-app#share-an-app).
 
@@ -53,7 +65,7 @@ Each relevant user must also have the *Finance and Operations Basic User* role.
 - To assign a role to a group team, follow the instructions in [Manage the security roles of a team](/power-platform/admin/manage-group-teams#manage-the-security-roles-of-a-team). We recommend that you use group teams if you must assign the role to multiple users. For information about how to manage team members, see [Manage team members](/power-platform/admin/manage-teams#manage-team-members).
 - To assign a role directly to a user, follow the instructions in [Assign a security role to a user](/power-platform/admin/assign-security-roles).
 
-## <a name="roles-workers"></a>Configure users and workers in Supply Chain Management
+## <a name="roles-approvals"></a>Configure approvers in Supply Chain Management
 
 Each user who will use the Approvals Management mobile app must be set up as described in this section.
 
@@ -63,8 +75,9 @@ Each Supply Chain Management user who should be able to operate the Approvals Ma
 
 - *Buying agent* - This role allows a Supply Chain Management user account to use the app to manage purchase orders.
 - *Purchasing agent* – This role allows a Supply Chain Management user account to use the app to manage purchase requisitions.
+- *Purchasing manager* – This role allows a Supply Chain Management user account to use the app to manage both purchase orders and purchase requisitions.
 
-Users who have the *Purchasing manager or System administrator* role can use the app both to manage purchase orders and purchase requisitions.
+Users who have the *System administrator* role can also use the app both to manage purchase orders and purchase requisitions.
 
 Follow these steps to add the required security roles to a Supply Chain Management user and review that user's **Person** setting.
 
@@ -72,9 +85,9 @@ Follow these steps to add the required security roles to a Supply Chain Manageme
 1. Go to **System administration \> Users \> Users**.
 1. Use the filter to find a user who should be able to use the app.
 1. Open the details page for the selected user by selecting the hyperlink in the **User ID** column.
-1. Review the value of the **Person** field to determine which person is assigned to the current user account. If a person is assigned, write down their name. If no person is assigned, you'll assign one in the next section.
+1. Review the value of the **Person** field to determine which person is assigned to the current user account. If a person is assigned, write down their name. If no person is assigned, you'll assign one in the next section. <!--KFM: I think this step is left over from Asset Management and should be removed here. -->
 1. On the **User's roles** FastTab, on the toolbar, select **Assign roles** to open the **Assign roles to user** dialog box.
-1. In the **Role name** column, find and select the *Buying agent*, *Purchasing agent* and *Purchasing manager* roles.
+1. In the **Role name** column, find and select the *Buying agent*, *Purchasing agent* and/or *Purchasing manager* roles, as needed.
 1. Select **OK** to apply your settings and close the dialog box.
 
 > [!NOTE]
@@ -85,6 +98,8 @@ For more information about how to set up roles and security in Supply Chain Mana
 
 ## Install and open the Approvals Management mobile app
 
+<!--KFM: The hands-on lab suggests another procedure (something about the admin shares a link with specific users through Power Apps). This is the method from Asset Management, which I think will also work and seems easier. -->
+
 Follow these steps to install and use the Approvals Management mobile app on a mobile device.
 
 1. Install the Power Apps mobile app by following the instructions in [Install the Power Apps mobile app](/power-apps/mobile/run-powerapps-on-mobile).
@@ -93,6 +108,8 @@ Follow these steps to install and use the Approvals Management mobile app on a m
 1. Open the Approvals Management mobile app, and start to use it.
 
 ## Clear the Power Apps cache on a mobile device after an update of the back-end setup
+
+<!--KFM: This is from Asset Management. Still relevant here? -->
 
 If the back-end setup is updated in Supply Chain Management after you install the Power Apps mobile app on a mobile device (for example, if the legal entity setup is changed), you might have to clear the cache in Power Apps to update the local setup data. Power Apps will then be able to reload the settings that otherwise might not take effect until the cache is cleared.
 

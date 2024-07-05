@@ -1,115 +1,118 @@
 ---
-title: Manage work orders using the Asset Management mobile app
-description: This article describes how maintenance workers can use the Asset Management mobile app to manage and process maintenance work orders.
+title: Manage approvals using the Approvals Management mobile app
+description: This article describes how to use the Approvals Management mobile app to approve, reject, or delegate approval requests.
 author: johanhoffmann
 ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: 09/19/2023
-audience: Application User
-ms.search.region: Global
-ms.custom: bap-template
+ms.date: 07/29/2024
+ms.custom: 
+  - bap-template
 ---
 
-# Manage work orders using the Asset Management mobile app
+# Manage approvals using the Approvals Management mobile app
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Maintenance workers can use the Asset Management mobile app to manage and process maintenance work orders. The app supports maintenance workers through the following main capabilities:
-
-- It lists maintenance jobs and work orders that are assigned to a worker, including all information that the worker needs to process each job.
-- Workers can register the time and spare parts that are consumed for each job.
-- Workers can view and update the maintenance checklist that's associated with a job.
-
-For more information about maintenance work orders in Supply Chain Management, see [Introduction to work orders](../work-orders/introduction-to-work-orders.md).
+This article describes how to use the Approvals Management mobile app to approve, reject, or delegate approval requests.
 
 ## User requirements
 
-To view and process work orders by using the Asset Management mobile app, you must meet the following requirements:
+To manage purchasing requests from the Approvals Management mobile app, you must meet the following requirements:
 
-- Your user account in Supply Chain Management must be assigned the *Maintenance worker* security role. For more information, see [Onboard the Asset Management mobile app](onboard-app.md).
-- Your user account in Supply Chain Management must be associated with a human resources *Worker* record that's also set up as an Asset Management worker. For more information, see [Onboard the Asset Management mobile app](onboard-app.md).
-- You must sign in to Power Apps by using a domain account that matches a user account in Supply Chain Management that has the same Microsoft Entra ID username.
+- You must sign in to Power Apps by using a domain account that matches a user account in Supply Chain Management with the same Microsoft Entra ID username.
+- Your user account in Supply Chain Management must be assigned one of the following security roles, depending on which types purchases you want to manage.
+    - *Buying agent* - This role allows you to use the app to manage purchase orders.
+    - *Purchasing agent* – This role allows you to use the app to manage purchase requisitions.
+    - *Purchasing manager* – This role allows you to use the app to manage both purchase orders and purchase requisitions.
 
-## View the jobs and work orders assigned to you
+For more information about how to set up roles and security in Supply Chain Management, see
+[Security roles](../../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md#security-roles).
 
-When you open the Asset Maintenance mobile app and sign in as a user who has the *Maintenance worker* security role, the list of jobs and work orders is shown.
+## Home page
 
-The following illustration highlights the different user interface (UI) elements for working with maintenance work orders.
+When you open the Asset Maintenance mobile app and sign in, it shows the home page, which provides an overview of requests awaiting your approval.
 
-[<img src="media/manage-work-orders-ui.png" alt="UI elements for working with maintenance work orders." title="UI elements for working with maintenance work orders" width="720" />](media/manage-work-orders-ui.png#lightbox)
+The following illustration highlights user interface (UI) elements on the home page.
 
-The job and work order list includes the UI following elements. The numbers correspond to the numbers in the previous illustration.
+:::image type="content" source="media/approval-app-home.png" alt-text="User interface elements on the home page" lightbox="media/approval-app-home.png":::
 
-1. **Jobs tab** – Select this tab to view the job list. The list shows only maintenance jobs that both are assigned to you and belong to a maintenance work order that's *Active*.
-1. **Work orders tab** – Select this tab to view the work order list. The list shows only active work orders that have jobs that are assigned to you.
-1. **User image** – Select this image to view information about the app, such as terms and conditions and the current version of the app.
-1. **Legal entity identifier** – This label shows the legal entity (company) that you're currently working in. The lists show only jobs and work orders that are associated with this legal entity. If your Supply Chain Management user account is set up as an Asset Management worker in more than one legal entity, you can select this label to switch between legal entities.
-1. **Request button** – If your Supply Chain Management user account is assigned the *Maintenance requester* security role, you can use this button to create a maintenance request. For more information about this functionality, see [Maintenance requests](../manage-maintenance-requests/maintenance-request-overview.md).
-1. **Search button** – When you select this button, a search field appears. There, you can enter text to search for the ID of the work order, asset, or functional location that you're looking for.
-1. **Filter button** – Select this button to filter the jobs or work orders in the list, based on the following criteria:
+The home page includes the UI following elements, many of which are common to all pages in the app. The numbers correspond to the numbers in the previous illustration.
 
-    - *Today* – Show only jobs that are scheduled for today.
-    - *This week* – Show only jobs that are scheduled to start during the current week.
-    - *All time* – Show all jobs.
+1. **About button** – View information about the app, such as terms and conditions and the current version of the app.
+1. **Navigator** – Navigate between the main pages of the app (*Home*, *Purchase orders*, and *Purchase requisitions*).
+1. **Search** – Search for specific purchase orders or purchase requisitions. You can search, for example, for a specific purchase order number, vendor account, vendor name, legal entity, or item number.
+1. **Alerts** – Read your notifications. A red dot indicates that you have new notifications.
+1. **Purchase orders** – If you are able to manage purchase orders, this section shows the number of purchase orders that are awaiting your approval. Select this row to view the list of purchase orders.
+1. **Purchase requisitions** – If you are able to manage purchase requisitions, this section shows the number of purchase requisitions that are awaiting your approval. Select this row to view the list of purchase requisitions.
+1. **Refresh** – Refresh the list (the list refreshes automatically every 30 seconds).
+1. **Sort** – Choose how items are sorted in the list.
+1. **Filter** – Filter the list by specifying specific values to look for. This is useful on pages that show longer lists.
 
-1. **Sort order button** – Select this button to specify how the list is sorted. You can sort by work order service level, scheduled start date, or work order ID.
-1. **Job or work order cards** – Each job or work order in the list is presented as a *card* that summarizes the item. Tap a card to open its details page, which provides more information about the selected job or work order.
+## List pages
 
-## Job details page
+List pages show a list of orders, requisitions, or line items that are awaiting your approval. The type of item being shown depends on how you navigated to the list page. From here, you can select any listed item to see more detail or, if you enable multiselect, select one or more items to approve, reject, delegate, or request changed right from here.
 
-In the job lists, each job is presented as a *card* that shows summary information. Tap a card to open its details page, which provides more information about the selected job. The job details page provides access to both job information and the maintenance checklist.
+### List pages without multiselect
 
-### Job information
+List pages without multiselect enabled show a list of items that you can navigate and select to see more details. The following illustration highlights the UI elements on a list page without multiselect.
 
-To view the job information, select the **Jobs** tab at the top of the page. The following illustration highlights the different UI elements on the **Jobs** tab.
+:::image type="content" source="media/approval-app-list-single.png" alt-text="User interface elements on list pages without multiselect" lightbox="media/approval-app-list-single.png":::
 
-[<img src="media/manage-job-details-ui.png" alt="UI elements on the Jobs tab of a job details page." title="UI elements on the Jobs tab of a job details page" width="720" />](media/manage-job-details-ui.png#lightbox)
+List pages without multiselect include the UI following elements. The numbers correspond to the numbers in the previous illustration.
 
-The **Jobs** tab of the job details page includes the following UI elements. The numbers correspond to the numbers in the previous illustration.
+1. **List item** – Represents an individual purchase order/requisition header or line. A summary of the item is shown. Select the item to view details about it.
+1. **View comments** – View comments about the related item. These are usually comments written by the requester for the reviewer.
+1. **Multiselect** – Turn multiselect on or off. This illustration shows a list with multiselect turned off.
+1. **Header/Lines selector** – Choose whether to view a list of purchase order/requisition headers or individual lines.
 
-1. **Job and Checklist tabs** – Select a tab to switch between the job details and the checklist. The numbers in parentheses on the **Checklist** tab indicate the number of completed tasks and the total number of tasks on the checklist.
-1. **Work order identifier** – This heading shows the ID of the work order that the current job belongs to. The number in square brackets indicates the total number of jobs in the work order.
-1. **Job information** – This section shows the job description, and lets you view and edit a worker's remark and an internal note.
-1. **Attachment, time spent, and materials consumed information** – This section lets you view and open documents that are attached to the job. You can also adjust the time that's spent and the materials that are consumed while you work on the job. In Supply Chain Management, the hours that are spent on a maintenance job are accounted for in a project journal. For more information about how materials and time are accounted for in journals, see [Register consumption](../consumption/register-consumption.md).
+### List pages with multiselect
 
-    - To adjust the number of hours that are spent working on the job, select **Adjust** next to the **My time spent** heading.
-    - To adjust the materials that are consumed while you work on the job, select **Adjust** next to the **Items consumed** heading. You can adjust quantities in the list of items that are expected to be consumed for the job. You can also add new items. When you add new items, you can select from lists of released products, items on the asset bill of materials (BOM), and spare parts for the current asset. When you select a product that will be consumed, you can specify storage dimensions (site, warehouse, and location) and tracking dimensions (batch and serial number) as required. Items that have product variants (such as configuration, color, and size) aren't listed.
+List pages with multiselect enabled show a list where you can select one or more items to approve, reject, delegate, or request changed right from here. The following illustration highlights the UI elements on a list page with multiselect.
 
-1. **Scheduled start and end dates and times** – This section shows the dates and times when the current job was expected to be done.
-1. **Work order state** – This section shows the current state of the work order.
-1. **Change work order state button** – Select this button to change the state of the parent work order for the current job. You'll typically use this button to mark the work order as completed or to note a problem that prevents it from being completed.
-1. **Go to work order button** – Select this button to open the work order that the current job belongs to.
-1. **See jobs for this asset button** – Select this button to view a list of all open maintenance jobs that are associated with the same asset as the current job. This list includes jobs that are assigned to you. 
-1. **See jobs for this location** – Select this button to view a list of all open maintenance jobs that are associated with the same location as the current job. This list includes jobs that are assigned to you.
+:::image type="content" source="media/approval-app-list-multi.png" alt-text="User interface elements on list pages with multiselect" lightbox="media/approval-app-list-multi.png":::
 
-### Maintenance checklist
+List pages with multiselect include the UI following elements. The numbers correspond to the numbers in the previous illustration.
 
-A maintenance checklist is a set of tasks that the maintenance worker must complete to close the maintenance job. For more information about how to define a checklist for a job, including how to use item types and create groups, see [Maintenance checklists](../work-orders/maintenance-checklists.md). For more information about how to set up default checklists that can be assigned to various maintenance jobs or asset types, see [Maintenance job types, categories, variants, trades, and checklists](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
+1. **Select all** – Select or deselect all items in the list.
+1. **Checkbox** – Select or deselect the related item.
+1. **Action buttons** – Approve, reject, delegate, or request changes for the selected items.
+1. **Multiselect** – Turn multiselect on or off. This illustration shows a list with multiselect turned on.
 
-To view the maintenance checklist, select the **Checklist** tab at the top of the page. The following illustration highlights the different UI elements on the **Checklist** tab.
+## Detail pages
 
-[<img src="media/manage-work-orders-checklist-ui.png" alt="UI elements on the Checklist tab of a job details page." title="UI elements on the Checklist tab of a job details page" width="720" />](media/manage-work-orders-checklist-ui.png#lightbox)
+Detail pages show detailed information about a specific purchase order, requisition, or line item. The details provided vary slightly based on whether you are viewing header details or line details.
 
-The **Checklist** tab of the job details page includes the following UI elements. The numbers correspond to the numbers in the previous illustration.
+### Header details
 
-1. **Job and Checklist tabs** – Select a tab to switch between the job details and the checklist. The numbers in parentheses on the label of the **Checklist** tab indicate the number of completed items and the total number of items on the checklist.
-1. **Checklist line number** – Each checklist item has a system-generated line number. You can use this number to refer to the checklist item when you communicate with other workers. The text color changes to green when the item is marked as completed by the worker.
-1. **Group name** – Checklist items can be grouped under a heading. (You set up group names in Supply Chain Management by creating a checklist item of the *Header* type.)
-1. **Checklist item title** – This text shows the title of the checklist item.
-1. **Checklist item type** – This text shows the type of checklist item (*Variable*, *Text*, or *Measurement*).
-1. **Value** – This field shows the value that has been entered for checklist items of the *Measurement* or *Variable* type. To enter these values, select the checklist item card.
+Header details show information about a select purchase order or requisition as a whole. The following illustration highlights the UI elements on a header detail page.
 
-## Work order details page
+:::image type="content" source="media/approval-app-detail-header.png" alt-text="User interface elements for header details" lightbox="media/approval-app-detail-header.png":::
 
-The work order details page shows more information about a selected work order. To open it, select a card in the work order list. The following illustration highlights the different UI elements on a work order details page.
+Header details pages include the UI following elements. The numbers correspond to the numbers in the previous illustration.
 
-[<img src="media/manage-work-order-details-ui.png" alt="UI elements on a work order details page." title="UI elements on a work order details page" width="720" />](media/manage-work-order-details-ui.png#lightbox)
+1. **Back** – Go back to the page you came from.
+1. **Details tab** – View general information about the purchase order or requisition, as shown in the previous illustration.
+1. **Attachments tab** – View and open any attachments that are associated with the purchase order or requisition.
+1. **Timeline tab** – View a timeline of events related to the purchase order or requisition.
+1. **Accounting distribution details** – View accounting distribution details linked to the purchase order or requisition.
+1. **View workflow instructions** – View instructions for the workflow.
+1. **Header details** – View detailed information about the purchase order or requisition.
+1. **Lines** – Lines are listed under the header details. Each line shows a summary of the line item. Select a line to view more details about it.
+1. **Action buttons** – Approve, reject, delegate, or request changes for the current purchase order or requisition.
 
-The work order details page includes the following UI elements. The numbers correspond to the numbers in the previous illustration.
+### Line details
 
-1. **Work order and Jobs tabs** – Select a tab to switch between the work order details and the list of jobs that belong to the work order. The job list shows a list of job cards. Select a card to open the details page for that job.
-1. **Work order information** – Information about the work order is shown on various cards.
-1. **Change state button** – Select this button to change the lifecycle state of the work order. For more information about work order states, see [Work order lifecycle states](../setup-for-work-orders/work-order-lifecycle-states.md).
+Line details show information about a specific line item on a purchase order or requisition. The following illustration highlights the UI elements on a line detail page.
+
+:::image type="content" source="media/approval-app-detail-line.png" alt-text="User interface elements for line details" lightbox="media/approval-app-detail-line.png":::
+
+Line details pages include the UI following elements. The numbers correspond to the numbers in the previous illustration.
+
+1. **Back** – Go back to the page you came from.
+1. **View workflow instructions** – View instructions for the workflow.
+1. **Standard details** – Shows general information about the line item.
+1. **Extra details** – Expand or collapse additional information about the line item.
+1. **Action buttons** – Not all list details pages include these buttons. If they are shown, you can use them to approve, reject, delegate, or request changes for the current line.
