@@ -109,4 +109,4 @@ Line details pages include the UI following elements. The numbers correspond to 
 1. **View workflow instructions** – View instructions for the workflow.
 1. **Standard details** – Shows general information about the line item.
 1. **Extra details** – Expand or collapse additional information about the line item.
-1. **Action buttons** – Not all list details pages include these buttons. If they are shown, you can use them to approve, reject, delegate, or request changes for the current line.
+1. **Action buttons** – Not all line details pages include these buttons. If they are shown, you can use them to approve, reject, delegate, or request changes for the current line.
