@@ -1,5 +1,5 @@
 ---
-title: Create AI plugins for copilots with finance and operations business logic
+title: Tutorial: Create AI plugins for copilots with finance and operations business logic
 description: This article provides guidance on creating AI plugins registered in the Dataverse plugin registry using finance and operations business logic to be used in copilot experiences
 author: jaredha
 ms.author: jaredha
