@@ -137,7 +137,7 @@ For each class:
 1. In your development project in Visual Studio, create a new **Action Menu Item** with a name similar to your class.
    - Set the **ObjectType** value to **Class**.
    - Set the **Object** value to the name of your class.
-2. Add the menu item as a privileged item to a [security role](../sysadmin/role-based-security).
+2. Add the menu item as a privileged item to a [security role](../sysadmin/role-based-security.md).
 
 > [!NOTE]
 > The custom API, AI plugin, and AI plugin operation records aren't created in Dataverse if the menu item for the class has not been assigned to a security role.
