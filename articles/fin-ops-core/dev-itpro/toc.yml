@@ -2269,7 +2269,7 @@ items:
           href: copilot/copilot-application-context.md
         - name: Create client plugins for Copilot in finance and operations apps
           href: copilot/copilot-client-plugins.md
-        - name: Create AI plugins with finance and operations business logic
+        - name: Create AI plugins with finance and operations business logic (preview)
           href: copilot/copilot-ai-plugins.md
         - name: Tutorials
           items:
