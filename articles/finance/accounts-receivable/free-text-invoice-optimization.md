@@ -1,6 +1,6 @@
 --- 
 title: Free text invoice optimization
-description: This article explains how to optimize free text invoices in Dynamics 365 finance. 
+description: This article explains how to optimize free text invoices in Microsoft Dynamics 365 Finance.
 author: prabhatb-ship-it
 ms.author: prabhatb
 ms.topic: how-to
@@ -18,24 +18,25 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to speed up the performance of free text invoices page in Dynamics 365 Finance. Starting in Dynamics 365 Finance version 10.0.41, the performance of free text invoices can be optimized.
+As of Microsoft Dynamics 365 Finance version 10.0.41, the performance of free text invoices can be optimized. This article describes changes that can help speed up the performance of the free text invoice page in Dynamics 365 Finance.
 
 ## Performance challenges of free text invoices
-An increase in the volume of data leads to the free text invoice page loading slowly in Dynamics 365 Finance. 
 
-To address these performance challenges, two changes have been introduced in Dynamics 365 Finance version 10.0.41:
-1. The **All free text invoices** page displays invoices with a **Not posted** status. This reduces the initial data load and improve loading times.
-2. A new **Optimized invoice loading** page is available that provides an enhanced performance, faster data loading, and more efficient workflow processing.
+An increase in the volume of data causes the free text invoice page to be loaded slowly in Finance.
 
-### Optimized invoice loading feature
+To address this performance challenge, two changes are introduced in Finance version 10.0.41:
 
-The **Optimize invoice loading** feature highlights include:
- - Enhanced free text invoice page - Improved performance and usability of the Free text invoice in Dynamics 365 Finance.
- - Faster data loading - Addresses the slow loading of the free text invoice due to increased volume of data.
- - Optimized workflow - When the workflow is enabled, performance is enhanced.
- - **Not posted** invoices - When **All free text invoices** is selected, the page automatically displays invoices with a**Not posted** status.
- - **Optimized invoice loading page** -  A new **Optimised invoice loading page** provides users with a streamlined interface for free text invoices.
+- The **All free text invoices** page automatically shows invoices that have a **Not posted** status. This change reduces the initial data load and improves load times.
+- A new **Optimized invoice loading** page provides enhanced performance, faster data loading, and more efficient workflow processing.
 
-This feature enhancement improves the performance and usability of the free text invoice, addressing challenges by the growing volume of data and ensuring a more efficient workflow experience for users. 
+## Optimize invoice loading feature
 
+Here are some highlights of the **Optimize invoice loading** feature:
 
+- **Enhanced free text invoice page** – The feature improves the performance and usability of the free text invoice page in Finance.
+- **Faster data loading** – The feature addresses the slow loading of free text invoices that is caused by increased data volume.
+- **Optimized workflow** – When the workflow is enabled, performance is enhanced.
+- **"Not posted" invoices** – When **All free text invoices** is selected, the page automatically shows invoices that have a **Not posted** status.
+- **Optimized invoice loading page** – A new **Optimized invoice loading** page gives users a streamlined interface for free text invoices.
+
+This feature enhancement improves the performance and usability of the free text invoice page, addresses the challenges that are caused by increased data volume, and ensures a more efficient workflow experience for users.
