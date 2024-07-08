@@ -28,8 +28,7 @@ Before you can use AI summaries with Copilot, your system must meet the followin
     - Version 10.0.40 with PQU-1 or later
     - Any build of version 10.0.41 or later
 
-- [Power Platform integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md) must be enabled for your environment. Usually all of the components required to use Copilot summaries are deployed automatically when Power Platform integration is enabled, but if they aren't working as expected, see [Enable Copilot capabilities in finance and operations apps](../../fin-ops-core/dev-itpro/copilot/enable-copilot.md) for more detailed requirements.
-
+- [Power Platform Integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md) must be enabled for your environment. Usually, all the components that are required to use Copilot summaries are automatically deployed when Power Platform Integration is enabled. However, if they don't work as expected, see [Enable Copilot capabilities in finance and operations apps](../../fin-ops-core/dev-itpro/copilot/enable-copilot.md) for more detailed requirements.
 - Depending on the summaries that you want to use, the following features must be enabled in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). These features are turned on by default in Supply Chain Management version 10.0.40 and later.
 
     - Warehouse Management mobile app insights – *Context-aware worker summary screen in WMA*
