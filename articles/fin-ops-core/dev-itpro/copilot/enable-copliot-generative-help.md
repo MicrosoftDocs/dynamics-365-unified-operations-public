@@ -28,9 +28,9 @@ After you complete the steps in this article, the Copilot icon appears at the to
 
 ## Enable the feature
 
-In most cases, generative help and guidance with Copilot is available by default provided [Power Platform integration](../power-platform/enable-power-platform-integration.md) is enabled for your environment.
+In most cases, generative help and guidance with Copilot is available by default if [Power Platform Integration](../power-platform/enable-power-platform-integration.md) is enabled for your environment.
 
-If the feature isn't already available on your system, see [Enable Copilot capabilities in finance and operations apps](enable-copilot.md) for details about how to enable it.
+If the feature isn't already available on your system, see [Enable Copilot capabilities in finance and operations apps](enable-copilot.md) for information about how to enable it.
 
 ## Troubleshooting
 
