@@ -12,6 +12,9 @@ ms.date: 07/05/2024
 ---
 
 # Tutorial: Create AI plugins for copilots with finance and operations business logic
+
+[!include [banner](../includes/banner.md)]
+
 Finance and operations apps enables the creation of AI plugins to extend the capabilities of copilot experiences in Microsoft Copilot Studio, using the business logic in finance and operations code. These are headless operations that don't require specific application context in the finance and operations client, and can be added to **Copilot for finance and operations apps** to extend in in-app chat experience, or in other custom copilots. For more information, see [Create AI plugins for copilots with finance and operations business logic](copilot-ai-plugins.md).
 
 ## Scenario
@@ -145,3 +148,5 @@ You can then verify the custom API and AI plugins were created in your Dataverse
 
 ## Step 4: Test the new plugin action
 To test the plugin you can use the **Test your copilot** panel in Copilot Studio, or publish the copilot to a channel, such as Teams. In the chat pane, enter prompts to ask about customer balances from your finance and operations apps environment. For example: "What is the current balance for customer account US-001?"
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
