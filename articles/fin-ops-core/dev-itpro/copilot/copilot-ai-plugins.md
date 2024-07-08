@@ -199,4 +199,4 @@ When you enable generative mode for the copilot, Copilot Studio uses generative 
 > [!IMPORTANT]
 > Generative mode is currently in preview. You may consider testing this mode for your custom copilots that include AI actions with finance and operations business logic. However, enabling generative mode is not yet supported for Copilot for finance and operations apps. Generative mode is supported and enabled by default in Copilot for finance and operations apps in a future release as feature and quality benchmarks are validated.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
