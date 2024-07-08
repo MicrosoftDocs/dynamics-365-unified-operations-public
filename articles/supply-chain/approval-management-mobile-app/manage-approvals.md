@@ -27,7 +27,7 @@ To manage purchasing requests from the Approvals Management mobile app, you must
 
 ## Home page
 
-When you open the Asset Maintenance mobile app and sign in, it shows the home page, which provides an overview of requests awaiting your approval.
+When you open the Approvals Management mobile app and sign in, it shows the home page, which provides an overview of requests awaiting your approval.
 
 The following illustration highlights user interface (UI) elements on the home page.
 
