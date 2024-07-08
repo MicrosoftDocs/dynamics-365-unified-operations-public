@@ -13,7 +13,7 @@ ms.date: 07/05/2024
 
 # Create AI plugins for copilots with finance and operations business logic (preview)
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Finance and operations apps enable the creation of AI plugins to extend the capabilities of copilot experiences in Microsoft Copilot Studio. These plugins can be added to the in-app **Copilot for finance and operations apps**, other Microsoft copilots, or custom copilots. With finance and operations apps, you can create plugins using finance and operations business logic to use in your copilots across Microsoft products. The plugins, when created and deployed in X++, are automatically registered in the Dataverse plugin registry, making them available for use in copilots connected to the registry. This enables copilot users to chat in natural language, receiving copilot responses based in the business logic of the finance and operations code base. 
@@ -199,4 +199,4 @@ When enabling generative mode for the copilot, Copilot Studio uses generative AI
 > [!IMPORTANT]
 > Generative mode is currently in preview. You may consider testing this mode for your custom copilots that include AI actions with finance and operations business logic. However, enabling generative mode is not yet supported for Copilot for finance and operations apps. Generative mode will be supported and enabled by default in Copilot for finance and operations apps in a future release as feature and quality benchmarks are validated.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
