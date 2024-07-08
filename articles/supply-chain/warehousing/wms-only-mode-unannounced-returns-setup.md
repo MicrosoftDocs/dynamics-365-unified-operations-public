@@ -33,10 +33,10 @@ The basic setup is the same as for the [Receive unannounced sales returns](sales
 ## <a name="source-system-configuration"></a>Source system configuration
 
 1. Go to **Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Source systems**.
-2. Create a source system by following the above mentioned steps in the other article.
+2. Create a source system by following the above-mentioned steps in the other article.
 3. In the Inbound shipment orders fast tab, set the following:
   - Enable returns process to Yes.
-  - Number sequnce code.
+  - Number sequence code.
   - Return order type.
     > [!NOTE]
     > If your source system is Microsoft Dynamics 365 Supply Chain Management (external shared warehouse integration scenario), the value of the Return order type field must be set to 'Return' in order for the integration to work properly.
@@ -47,11 +47,11 @@ The basic setup is the same as for the [Receive unannounced sales returns](sales
 ## <a name="mobile-device-menu-item-configuration"></a>Mobile device menu item configuration
 
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu items**.
-2. Create a Mobile device menu items by following the above mentioned steps in the other article.
-3. Open the Return item receiving policies form (either directly by right-clicking on the Return item receiving policy ID field and clicking View details), and the the following:
+2. Create a Mobile device menu items by following the above-mentioned steps in the other article.
+3. Open the Return item receiving policies form (either directly by right-clicking on the Return item receiving policy ID field and clicking View details), and the following:
   - Return process to either Blind return or Return details.
   - Created return order to Inbound shipment order.
   - If Return process is set to Blind return, then the Return order identification field will become visible.
-  - If Return order identification is set to Account number, then the Return order type field will become visible.
+  - If Return order identification is set to Account number, then the Return order type field will become visible. If this field is not set, then the Return order type from the relevant Source system will be used.
     > [!NOTE]
     > If your source system is Microsoft Dynamics 365 Supply Chain Management (external shared warehouse integration scenario), the value of the Return order type field must either be left blank or be set to 'Return' in order for the integration to work properly.
