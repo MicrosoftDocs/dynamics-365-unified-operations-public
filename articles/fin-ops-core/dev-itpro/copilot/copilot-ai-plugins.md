@@ -18,7 +18,7 @@ ms.date: 07/05/2024
 
 Finance and operations apps enable the creation of AI plugins to extend the capabilities of copilot experiences in Microsoft Copilot Studio. These plugins can be added to the in-app **Copilot for finance and operations apps**, other Microsoft copilots, or custom copilots. With finance and operations apps, you can create plugins using finance and operations business logic to use in your copilots across Microsoft products. The plugins, when created and deployed in X++, are automatically registered in the Dataverse plugin registry, making them available for use in copilots connected to the registry. This enables copilot users to chat in natural language, receiving copilot responses based in the business logic of the finance and operations code base. 
 
-These plugins are headless operations. They don't require specific context in the finance and operations client. See [Plugin context](copilot-architecture.md#plugin-context) for a description and differentiation between headless and client plugins. For example, a method in finance and operations apps may have a calculation for a customer balance, with specified input and output parameters. A customer's balance doesn't require finance and operations application context to be useful, and may make sense in other natural language contexts, like a Teams chat or Outlook email message. With this capability, the customer balance calculation can be packaged as a copilot plugin and published to copilots across Microsoft products, enabling users to perform the operations heedlessly in natural language from the Copilot chat experience.
+These plugins are headless operations. They don't require specific context in the finance and operations client. For a description and differentiation between headless and client plugins, see [Plugin context](copilot-architecture.md#plugin-context). For example, a method in finance and operations apps may have a calculation for a customer balance, with specified input and output parameters. A customer's balance doesn't require finance and operations application context to be useful, and may make sense in other natural language contexts, like a Teams chat or Outlook email message. With this capability, the customer balance calculation can be packaged as a copilot plugin and published to copilots across Microsoft products, enabling users to perform the operations heedlessly in natural language from the Copilot chat experience.
 
 There are many finance and operations scenarios and opportunities for copilot plugins. For example:
 
@@ -63,7 +63,7 @@ A plugin operation can be added to multiple plugins, based on the security roles
 The development of AI plugins with finance and operations apps has three key components:
 - A method must be created in X++. This method is invoked by Copilot Studio and runs the defined application code and returns the response to copilot, which then translates the response into natural language for the user.
 - The plugin must be created in the Dataverse, with an associated custom API, making it available to add to copilots in Copilot Studio. 
-- The plugin operation must be added as an action in your selected copilot(s).
+- The plugin operation must be added as an action in your selected copilot.
 
 For more information about the plugin architecture and execution, see [Architecture of Copilot in finance and operations](copilot-architecture.md).
 
@@ -71,22 +71,22 @@ For more information about the plugin architecture and execution, see [Architect
 In X++ you must create a class that is called and can execute code when Copilot Studio invokes the plugin.
 
 ### AI Plugin
-The class must be decorated with the `AIPluginOperationAttribute` attribute defining the new class as an AI operation. Classes decorated with this attribute will be registered in the Plugin Registration Service in Dataverse during the process to synchronize Dataverse custom APIs, creating a record for the plugin operation in the `AIPlugin` and `AIPluginOperation` tables in Dataverse.
+The class must be decorated with the `AIPluginOperationAttribute` attribute defining the new class as an AI operation. Classes decorated with this attribute are registered in the Plugin Registration Service in Dataverse during the process to synchronize Dataverse custom APIs, creating a record for the plugin operation in the `AIPlugin` and `AIPluginOperation` tables in Dataverse.
 
 ### Data contract
-The method must be defined as a data contract. This enables passing complex data types as input and output parameters of the method so serialization and deserialization of the parameters isn't required for communication with Copilot Studio. Define the method as a data contract by decorating it with the `DataContract` attribute. See [Using Data Contracts in X++](/dynamicsax-2012/appuser-itpro/using-data-contracts-in-x) for more information on implmenting data contracts in X++.
+The method must be defined as a data contract. This enables passing complex data types as input and output parameters of the method so serialization and deserialization of the parameters isn't required for communication with Copilot Studio. Define the method as a data contract by decorating it with the `DataContract` attribute. For more information on implementing data contracts in X++, see [Using Data Contracts in X++](/dynamicsax-2012/appuser-itpro/using-data-contracts-in-x).
 
 ### Custom API
 Your new class is creating definition for a [Dataverse custom API](/power-apps/developer/data-platform/custom-api). The custom API is created in Dataverse and associated with your class during the synchronization process. When the plugin is invoked in Copilot Studio, the custom API is called, invoking the logic in your class.
 
-The new class must implement the `ICustomAPI` class and be decorated with the `CustomAPIAttribute` class. This provides attributes to your new class indicating that it is a Custom API that is callable from Microsoft Dataverse.
+The new class must implement the `ICustomAPI` class and be decorated with the `CustomAPIAttribute` class. This provides attributes to your new class indicating that it's a Custom API that is callable from Microsoft Dataverse.
 
 **Parameters**
 
 | Parameter | Type | Description |
 | --------- | ---- | ----------- |
 | CustomAPIName | string | The natural language name for the action. |
-| CustomAPIDescription | string | A natural language definition of what the action does. This definition will be used by Copilot Studio for plugin orchestration, determining when to invoke this plugin based on the user's prompt. |
+| CustomAPIDescription | string | A natural language definition of what the action does. This definition is used by Copilot Studio for plugin orchestration, determining when to invoke this plugin based on the user's prompt. |
 
 #### Request parameters
 Request parameters are used to define the action inputs for the API, which are used to pass values from the Copilot orchestration and finance and operations runtime. In the class you must define any custom API request parameters for the API using `CustomAPIRequestParameter`:
@@ -96,7 +96,7 @@ Request parameters are used to define the action inputs for the API, which are u
 | description | string | The natural language description of the parameter. This description is used by Copilot Studio to match text from the user's prompt to the parameter. | 
 | isOptional | boolean | Determines whether a value must be defined for the parameter when making a request to the custom API. Set to true if the parameter is optional when invoking the action. Otherwise set to false. | 
 
-You must also define an accessor method for each parameter to get and set the variables. The following examples shows defining an `accountNumber` request parameter. The parameter name is defined as a data member of the data contract.
+You must also define an accessor method for each parameter to get and set the variables. The following example shows defining an `accountNumber` request parameter. The parameter name is defined as a data member of the data contract.
 
 ```X++
 [CustomAPIRequestParameter('The customer account number', true),
@@ -128,10 +128,10 @@ As with request parameters, you must also define an accessor method for the prop
 ```
 
 #### Define the operation
-Use the `run` method of the `ICustomAPI` interface to define the code that runs when the operation is invoked. This is the business logic that defines that action that is run for the AI operation. Within this method set the value(s) of any response properties that should be returned to Copilot Studio when the operation is complete.
+Use the `run` method of the `ICustomAPI` interface to define the code that runs when the operation is invoked. This is the business logic that defines that action that is run for the AI operation. Within this method set the values of any response properties that should be returned to Copilot Studio when the operation is complete.
 
 ## Defining plugin security
-Each plugin operation must be assigned to a security role to grant user access to perform the operation from Copilot. When finance and operations synchronize the `AIPlugin` and `AIPluginOperation` records in Dataverse, they are grouped based on the security role to which the operation is assigned. The operation is only generated in Dataverse if it is assigned to a security role.
+Each plugin operation must be assigned to a security role to grant user access to perform the operation from Copilot. When finance and operations synchronize the `AIPlugin` and `AIPluginOperation` records in Dataverse, they're grouped based on the security role to which the operation is assigned. The operation is only generated in Dataverse if it's assigned to a security role.
 
 For each class:
 1. In your development project in Visual Studio, create a new **Action Menu Item** with a name similar to your class.
@@ -140,24 +140,24 @@ For each class:
 2. Add the menu item as a privileged item to a [security role](../sysadmin/role-based-security).
 
 > [!NOTE]
-> The custom API, AI plugin, and AI plugin operation records will not be created in Dataverse if the menu item for the class has not been assigned to a security role.
+> The custom API, AI plugin, and AI plugin operation records aren't created in Dataverse if the menu item for the class has not been assigned to a security role.
 
 ## Generating the Copilot plugin
 With the operation defined in X++ and deployed in your finance and operation environment, you then need to generate the custom API and AI plugin in Dataverse. The AI plugin is added to the Dataverse plugin registry, making it available to add as an action to copilots. Then plugin is configured to invoke the custom API, which runs the code defined in X++.
 
 To generate the custom API and AI plugin:
 1. Open the finance and operations apps client for the environment where you deployed your new X++ class.
-2. Navigate to **Synchronize Dataverse Custom APIs** page (System administration >> Setup >> Synchronize Dataverse Custom APIs). If the menu navigation isn't available in your environment you can navigate to the **CustomApiTable** menu item directly by adding the `mi=CustomApiTable` parameter to the environment URL. For example:<br>
+2. Navigate to **Synchronize Dataverse Custom APIs** page (System administration >> Setup >> Synchronize Dataverse Custom APIs). If the menu navigation isn't available in your environment, you can navigate to the **CustomApiTable** menu item directly by adding the `mi=CustomApiTable` parameter to the environment URL. For example:<br>
    `https://<environment>.operations.dynamics.com/?cmp=USMF&mi=CustomApiTable`
-3. In the list page, ensure your class is included in the table as expected. This list will include all classes that meet the following criteria:
+3. In the list page, ensure your class is included in the table as expected. This list includes all classes that meet the following criteria:
    - Implement the `ICustomApi` interface.
    - Contain the `[CustomApi]` attribute.
    - Have an associated ActionMenuItem that is included in a security privilege assigned to a duty/role.
 4. Select the **Synchronize** action.
 
-The synchronization process will synchronize all listed classes with Microsoft Dataverse, adding them to the **Dynamics 365 ERP Virtual Entities** solution. You can verify that the classes were created and added to the solution in the **Custom API** list, with the associated request parameters and response properties.
+The synchronization process synchronizes all listed classes with Microsoft Dataverse, adding them to the **Dynamics 365 ERP Virtual Entities** solution. You can verify that the classes were created and added to the solution in the **Custom API** list, with the associated request parameters and response properties.
 
-Each class that also includes the `[AIPluginOperationAttribute]` attribute will have a record created for the AI plugin in the same solution. An `AIPlugin` record is created for each security role configured in finance and operations apps that contains an assigned class with the `[AIPluginOperationAttribute]` attribute, with the associated `AIPluginOperaton` records linked to the plugin.
+Each class that also includes the `[AIPluginOperationAttribute]` attribute has a record created for the AI plugin in the same solution. An `AIPlugin` record is created for each security role configured in finance and operations apps that contains an assigned class with the `[AIPluginOperationAttribute]` attribute, with the associated `AIPluginOperaton` records linked to the plugin.
 
 ## Add the action to your copilot
 
@@ -173,7 +173,7 @@ You can add your AI operation to the in-app sidecar chat experiences in finance 
 4. Follow the steps in the wizard, selecting the inputs and outputs from your custom API.
 5. Click **Finish**.
 
-See [Use actions with custom copilots in Copilot Studio (preview)](/microsoft-copilot-studio/advanced-plugin-actions) for more information on adding actions the actions to your copilot.
+For more information on adding actions the actions to your copilot, see [Use actions with custom copilots in Copilot Studio (preview)](/microsoft-copilot-studio/advanced-plugin-actions).
 
 ### Configuring the copilot to invoke the action
 The copilot where you added the new action needs to know when to invoke the action as part of the copilot orchestration. The copilot needs a way to match a user's prompt in the chat panel to your action, or sequence of actions. There are a couple of options for enabling the copilot to include the action in the copilot orchestration:
@@ -181,7 +181,7 @@ The copilot where you added the new action needs to know when to invoke the acti
 2. Enable the copilot to let generative AI orchestrate copilot topics and actions.
 
 #### Create a topic in the copilot
-By default, a copilot responds to users by triggering the topic whose trigger phrases most closely match the user's prompt and fills the topic inputs from the conversation context. You can verify your copilot is in classic mode by selecting the **Classic** option in the **How should your copilot decide how to respond?** section of the **Generative AI** tab in the copilot settings. When in classic mode, you will need to create a topic to invoke the action added to the copilot.
+By default, a copilot responds to users by triggering the topic whose trigger phrases most closely match the user's prompt and fills the topic inputs from the conversation context. You can verify your copilot is in classic mode by selecting the **Classic** option in the **How should your copilot decide how to respond** section of the **Generative AI** tab in the copilot settings. When in classic mode, you need to create a topic to invoke the action added to the copilot.
 1. Open the copilot in Copilot Studio.
 2. Select the **Topics** tab and select **Add a topic >> From blank**.
 3. On the **Trigger** node, edit the trigger phrases to provide the types of user prompts that should trigger the action.
@@ -191,12 +191,12 @@ By default, a copilot responds to users by triggering the topic whose trigger ph
    - Select your action from the list.
    - **Save** the topic and **Publish** the change to the copilot.
   
-See [Call an action from within a topic](/microsoft-copilot-studio/advanced-plugin-actions#call-action-from-within-a-topic) for more information.
+For more information, see [Call an action from within a topic](/microsoft-copilot-studio/advanced-plugin-actions#call-action-from-within-a-topic).
 
 #### Let generative AI orchestrate copilot topics and actions
-When enabling generative mode for the copilot, Copilot Studio uses generative AI to identify the most appropriate action, topic, or combination of actions and topics to respond to a user prompt. Generative AI is used to determine the user's intent and determines the appropriate sequence of actions and topics to invoke to respond to the prompt. When generative mode is enabled for the copilot, you don't need to create a separate topic to invoke the action. See [Orchestrate copilot topics and actions with generative AI (preview)](/microsoft-copilot-studio/advanced-generative-actions) for more information on generative mode.
+When you enable generative mode for the copilot, Copilot Studio uses generative AI to identify the most appropriate action, topic, or combination of actions and topics to respond to a user prompt. Generative AI is used to determine the user's intent and determines the appropriate sequence of actions and topics to invoke to respond to the prompt. When generative mode is enabled for the copilot, you don't need to create a separate topic to invoke the action. For more information on generative mode, see [Orchestrate copilot topics and actions with generative AI (preview)](/microsoft-copilot-studio/advanced-generative-actions).
 
 > [!IMPORTANT]
-> Generative mode is currently in preview. You may consider testing this mode for your custom copilots that include AI actions with finance and operations business logic. However, enabling generative mode is not yet supported for Copilot for finance and operations apps. Generative mode will be supported and enabled by default in Copilot for finance and operations apps in a future release as feature and quality benchmarks are validated.
+> Generative mode is currently in preview. You may consider testing this mode for your custom copilots that include AI actions with finance and operations business logic. However, enabling generative mode is not yet supported for Copilot for finance and operations apps. Generative mode is supported and enabled by default in Copilot for finance and operations apps in a future release as feature and quality benchmarks are validated.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
