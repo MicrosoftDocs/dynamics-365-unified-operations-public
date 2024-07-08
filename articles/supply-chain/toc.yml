@@ -4036,7 +4036,7 @@
         - name: Warehouse management only mode frequently asked questions
           href: warehousing/wms-only-mode-faq.md
         - name: Enable and configure unannounced returns in Warehouse management only mode
-          href: warehousing/wms-only-mode-unannounced-returns.md
+          href: warehousing/wms-only-mode-unannounced-returns-setup.md
     - name: Supply Chain Management development 
       items:
       - name: Gantt control development guide
