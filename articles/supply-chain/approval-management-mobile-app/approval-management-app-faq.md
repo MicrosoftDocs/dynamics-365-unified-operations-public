@@ -75,21 +75,4 @@ Consider cloning the canvas app before removing your customizations, just in cas
 > [!NOTE]
 > Microsoft doesn't support [customizing or extending](#customize) the Approvals Management mobile app.
 
-## Are there any known issues affecting the release of the Approvals Management mobile app?
 
-Yes, the Approvals Management mobile app has a few known issues that we expect to correct in an upcoming release. The following subsections describe them.
-
-### Limited file-type support for attachments
-
-The current release provides only limited support for viewing file attachments on the job details page. We plan to add support for more file types in the final release.
-
-Supported attachment types:
-
-- URL (link)
-- PNG/JPEG/JPG/BMP/GIF (image)
-- PDF (document)
-
-Unsupported attachment types:
-
-- Note
-- All other file types
