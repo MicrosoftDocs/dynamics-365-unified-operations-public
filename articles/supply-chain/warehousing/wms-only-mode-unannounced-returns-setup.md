@@ -54,4 +54,4 @@ The basic setup is the same as for the [Receive unannounced sales returns](sales
   - If Return process is set to Blind return, then the Return order identification field will become visible.
   - If Return order identification is set to Account number, then the Return order type field will become visible. If this field is not set, then the Return order type from the relevant Source system will be used.
     > [!NOTE]
-    > If your source system is Microsoft Dynamics 365 Supply Chain Management (external shared warehouse integration scenario), the value of the Return order type field must either be left blank or be set to 'Return' in order for the integration to work properly.
+    > If your source system is Microsoft Dynamics 365 Supply Chain Management (external shared warehouse integration scenario), the value of the Return order identification field must be Account number, and Return order type field must either be left blank or be set to 'Return' in order for the integration to work properly.
