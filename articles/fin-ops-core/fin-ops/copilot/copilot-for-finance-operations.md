@@ -33,22 +33,27 @@ Copilot brings a growing set of skills that help users complete various tasks. I
 The following Copilot features are currently available in finance and operations apps:
 
 - For all finance and operations apps:
+
     - [Chat with finance and operations data on Microsoft 365 Copilot](../../dev-itpro/m365-copilot/chat-with-fno-data-on-m365copilot.md)
     - [Generative help and guidance with Copilot](copliot-generative-help.md)
 
 - For Dynamics 365 Commerce:
+
     - [Use Copilot in site builder to enrich product detail pages](../../../commerce/copilot-site-builder.md)
 
 - For Dynamics 365 Finance:
+
     - [Collections coordinator summary](../../../finance/accounts-receivable/CollectionsCoordinatorSummary.md)
     - [Customer page summary](../../../finance/accounts-receivable/CustomerPageSummary.md)
     - [Workflow history summary](../organization-administration/workflow-history-summary.md)
  
 - For Dynamics 365 Project Operations:
+
     - [Copilot for project overview](/dynamics365/project-operations/project-management/copilot-features)
     - [Use Copilot in time entry](/dynamics365/project-operations/time/copilot-in-time-entry)
 
 - For Dynamics 365 Supply Chain Management:
+
     - [AI summaries with Copilot](../../../supply-chain/get-started/copilot-summaries-overview.md)
     - [Analyze demand plans with Copilot (preview)](../../../supply-chain/demand-planning/demand-planning-copilot.md)
     - [Inquire into inventory with Copilot (preview)](../../../supply-chain/inventory/inventory-visibility-copilot-api.md)
