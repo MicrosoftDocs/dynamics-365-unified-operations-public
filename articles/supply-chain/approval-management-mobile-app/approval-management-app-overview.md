@@ -38,7 +38,7 @@ The Approvals Management mobile app replaces the now-deprecated [Purchase order 
 
 To enable the approval process for purchase orders and purchase requisitions, you must set up approval workflows in Dynamics 365 Supply Chain Management. For more information, see [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md), [Purchase requisition workflow](../procurement/purchase-requisitions-workflow.md), and [Procurement and sourcing workflows](../procurement/procurement-sourcing-workflows.md).
 
-One your approval workflows are set up, approval requests will appear in the Approvals Management mobile app just as they do when the same user signs in to Dynamics 365 Supply Chain Management to manage approvals in the web client.
+Once your approval workflows are set up, approval requests will appear in the Approvals Management mobile app just as they do when the same user signs in to Dynamics 365 Supply Chain Management to manage approvals in the web client.
 
 ## Next steps
 
