@@ -40,7 +40,7 @@ At the top of the workspace, three tiles summarize groups of changes to confirme
 - **High impact changes** – This tile highlights purchase orders that have known downstream impacts on demand. These changes are summarized together with the detected demand impacts, to help you investigate further and decide what action to take.
 - **Impacted downstream orders** – This tile summarizes impacts on different kinds of downstream demand orders by total per type of order. This information helps you review potential impacts on demand and identify each originating change.
 
-Each tile provides a **Show** link. When you select this link, the view beneath shows the changes to supplying purchase orders and the affected demand according to the tiles's classification and filter.
+Each tile provides a **Show** link. When you select this link, the view beneath shows the changes to supplying purchase orders and the affected demand according to the tile's classification and filter.
 
 ## Review changes to confirmed purchase orders
 
