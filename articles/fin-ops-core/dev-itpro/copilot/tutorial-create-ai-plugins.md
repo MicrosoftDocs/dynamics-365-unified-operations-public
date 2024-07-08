@@ -15,7 +15,7 @@ ms.date: 07/05/2024
 Finance and operations apps enables the creation of AI plugins to extend the capabilities of copilot experiences in Microsoft Copilot Studio, using the business logic in finance and operations code. These are headless operations that don't require specific application context in the finance and operations client, and can be added to **Copilot for finance and operations apps** to extend in in-app chat experience, or in other custom copilots. For more information, see [Create AI plugins for copilots with finance and operations business logic](copilot-ai-plugins.md).
 
 ## Scenario
-In this scenario, you will create an AI plugin that calculates the balance of a customer account in finance and operations apps. This enables the user to interact with the business logic in natural language, invoking X++ to respond to the user prompt in the copilot chat. This becomes a capability that can be added to the **Copilot for finance and operations apps** in-app chat, or to any custom copilot.
+In this scenario, you create an AI plugin that calculates the balance of a customer account in finance and operations apps. This enables the user to interact with the business logic in natural language, invoking X++ to respond to the user prompt in the copilot chat. This becomes a capability that can be added to the **Copilot for finance and operations apps** in-app chat, or to any custom copilot.
 
 Here's an overview of the steps in this tutorial:
 1. In your unified developer environment, create a class in X++ to define the plugin operation, and add security privileges for the new class.
@@ -121,7 +121,7 @@ In your unified developer environment, you must create a class in X++ that is ca
 6. Save, build, and deploy the code to your finance and operations apps environment.
 
 ## Step 2: Generate the AI plugin in Dataverse
-1. In finance and operations apps, navigate to the **Synchronize Dataverse Custom APIs** page (System administration >> Setup >> Synchronize Dataverse Custom APIs). If the menu navigation isn't available in your environment you can navigate to menu item directly by adding the `&mi=CustomApiTable` parameters to the environment URL. For example: <p>
+1. In finance and operations apps, navigate to the **Synchronize Dataverse Custom APIs** page (System administration >> Setup >> Synchronize Dataverse Custom APIs). If the menu navigation isn't available in your environment, you can navigate to menu item directly by adding the `&mi=CustomApiTable` parameters to the environment URL. For example: <p>
 `https://<environment>.operations.dynamics.com/?cmp=usmf&mi-CustomApiTable`
 2. In the list page, ensure you see the **CustomAPICalculateCustomerBalance** class in the list.
 3. Select the **Synchronize** action.
@@ -129,7 +129,7 @@ In your unified developer environment, you must create a class in X++ that is ca
 You can then verify the custom API and AI plugins were created in your Dataverse environment. Open the **Dynamics 365 ERP Virtual Entities** solution in the [Power Apps portal](https://make.powerapps.com). Verify:
    - The **mserp_xppapi_SalesTeamCopilotRole** record was created in the **AIPlugin** list.
    - The **Calculate customer balance** record was created in the **AIPluginOperation** list.
-   - The **Calculate customer balance** record was created in the **Custom API list**, with related **Custom API Request Perameter** record and **Custom API Response Property** records.
+   - The **Calculate customer balance** record was created in the **Custom API list**, with related **Custom API Request Parameter** record and **Custom API Response Property** records.
 
 ## Step 3: Add the plugin as an action in your copilot
 1. Open [Copilot Studio](https://web.powerva.microsoft.com) and select your environment.
@@ -141,7 +141,7 @@ You can then verify the custom API and AI plugins were created in your Dataverse
 7. Select **Save** and **Finish**.
 
 > [!NOTE]
-> This tutorial assumes you have enabled generative mode in your copilot for plugin orchestration. If you have selected to use the default classic mode in your copilot you will have an additional step of creating a topic in the copilot to invoke the action. See [Configuring the copilot to invoke the action](copilot-ai-plugins.md#configuring-the-copilot-to-invoke-the-action) for more information.
+> This tutorial assumes you have enabled generative mode in your copilot for plugin orchestration. If you have selected to use the default classic mode in your copilot you have an additional step of creating a topic in the copilot to invoke the action. See [Configuring the copilot to invoke the action](copilot-ai-plugins.md#configuring-the-copilot-to-invoke-the-action) for more information.
 
 ## Step 4: Test the new plugin action
 To test the plugin you can use the **Test your copilot** panel in Copilot Studio, or publish the copilot to a channel, such as Teams. In the chat pane, enter prompts to ask about customer balances from your finance and operations apps environment. For example: "What is the current balance for customer account US-001?"
