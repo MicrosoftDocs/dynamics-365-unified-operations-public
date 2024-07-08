@@ -28,7 +28,7 @@ Before you can use AI summaries with Copilot, your system must meet the followin
     - Version 10.0.40 with PQU-1 or later
     - Any build of version 10.0.41 or later
 
-- Depending on the summaries that you want to use, the following features must be enabled in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). These features are turned on by default in Supply Chain Management version 10.0.40 and later.
+- Depending on the summaries that you want to use, the following features must be enabled in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). All of these features are turned on by default.
 
     - Warehouse Management mobile app insights – *Context-aware worker summary screen in WMA*
     - Product hover summaries – *Product summary when hovering on item*
