@@ -39,4 +39,4 @@ Here are some highlights of the **Optimize invoice loading** feature:
 - **"Not posted" invoices** – When **All free text invoices** is selected, the page automatically shows invoices that have a **Not posted** status.
 - **Optimized invoice loading page** – A new **Optimized invoice loading** page gives users a streamlined interface for free text invoices.
 
-This feature enhancement improves the performance and usability of the free text invoice page, addresses the challenges that are caused by increased data volume, and ensures a more efficient workflow experience for users.
+This feature enhancement improves the performance and usability of the free text invoice page, addresses the challenges that increased data volume causes, and ensures a more efficient workflow experience for users.
