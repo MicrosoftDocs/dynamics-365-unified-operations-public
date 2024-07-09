@@ -129,7 +129,7 @@ To set up a company logo, follow these steps.
 
 ## Create a hiring template
 
-A hiring template is a template that a recruiter can use for multiple job postings. You can adjust the stages and steps to suit your needs. A *stage* is a round that a recruiter wants to conduct for each candidate. A *step* is an additional that might be needed under a stage.
+A hiring template is a template that a recruiter can use for multiple job postings. You can adjust the stages and steps to suit your needs. A *stage* is a round that a recruiter wants to conduct for each candidate. A *step* is an additional action that might be needed under a stage.
 
 To create a hiring template, follow these steps.
 
