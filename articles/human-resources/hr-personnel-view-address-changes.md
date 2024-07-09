@@ -5,7 +5,7 @@
 title: View and manage address changes
 description: This article explains how you can view and manage address changes in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 07/08/2024
 ms.topic: article
 # optional metadata
 
@@ -18,7 +18,7 @@ audience: Application User
 ms.assetid: 426c6127-42ee-4163-8dd0-b2867f95581d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: ajitchandran
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
 
