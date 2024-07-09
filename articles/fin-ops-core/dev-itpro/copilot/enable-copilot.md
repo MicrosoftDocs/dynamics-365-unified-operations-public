@@ -27,7 +27,7 @@ Copilot in finance and operations apps is built from the following components:
 
 - User experience (UX) components
 - Application code
-- AI services such as large language models (LLMs) that are hosted on Azure and connected through Dataverse (provided through Power Platform Integration)
+- AI services such as large language models (LLMs) that are hosted on Azure and connected through Dataverse (The Dataverse connection is provided through Power Platform Integration.)
 
 Finance and operations apps support two fundamental types of Copilot features:
 
