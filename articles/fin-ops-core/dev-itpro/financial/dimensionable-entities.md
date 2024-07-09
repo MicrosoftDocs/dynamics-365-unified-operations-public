@@ -4,7 +4,7 @@ description: Learn about the steps that you need to follow to make a backing tab
 author: RyanCCarlson2
 ms.author: rcarlson
 ms.topic: article
-ms.date: 06/19/2024
+ms.date: 07/09/2024
 ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
@@ -26,7 +26,7 @@ This article provides the steps to make a backing table usable as a Financial di
      
 Financial dimensions should be reusable values needed for transaction and analytical processes. These dimensions should represent sources of data that can provide high level of reuse across multiple transactions. Don't select a backing table that supplies identity data that represents high volatility when represented with other dimension values. This can increase storage and processing costs and negatively impact performance and analytical value.
 
-Examples of highly volatile data include timestamps and identifiers that are frequently incremented, such as:
+Examples of highly variable data include timestamps and identifiers that are frequently incremented, such as:
 
  - Documents
  - Sales orders
@@ -37,7 +37,7 @@ Examples of highly volatile data include timestamps and identifiers that are fre
  - Tickets
  - License numbers 
 
-These are considered highly volitile values and shouldn't be used as financial dimensions. The correct use is to implement these as financial tags. For more information about financial tags, see [Financial tags](../../../finance/general-ledger/financial-tag.md).
+These are considered highly variable values and shouldn't be used as financial dimensions. The correct use is to implement these as financial tags. For more information about financial tags, see [Financial tags](../../../finance/general-ledger/financial-tag.md).
 
 By following these steps, your view automatically appears in the **Use values from** drop-down menu on the **Financial dimensions** page, and the values are populated on the **Financial dimension values** page.
 
