@@ -230,12 +230,18 @@ For information, see [Set up POS hybrid app on Android and iOS](./dev-itpro/hybr
 
 ### OPOS device setup and configuration
 
-For more information about OPOS components, see the "Supported interfaces" section of this document. Typically, OPOS drivers are provided by the device manufacturer. When an OPOS device driver is installed, it adds a key to the Windows registry in one of the following locations:
+For more information about OPOS components, see the [Supported interfaces](./retail-peripherals-overview.md#opos) section of this document. Typically, OPOS drivers are provided by the device manufacturer. When an OPOS device driver is installed, it adds a key to the Windows registry in one of the following locations:
 
 -   **32-bit system:** HKEY\_LOCAL\_MACHINE\SOFTWARE\OLEforRetail\ServiceOPOS
 -   **64-bit system:** HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\OLEforRetail\ServiceOPOS
 
 Within the ServiceOPOS registry location, configured devices are organized according to the OPOS device class. Multiple device drivers are saved.
+
+When running Dynamics 365 Commerce version **10.0.41** and above, enable **"Keep Connection Open"** to minimize unnecessary OPEN and CLOSE OPOS operations thereby reducing the likelihood of connection errors on POS. This configuration is available when setting up hardware profile devices. Go to **Retail and Commerce** > **Channel Setup** > **POS Setup** > **POS Profiles** > **Hardware Profiles**. Run the 1070 job for registers configuration after enabling "Keep Connection Open".
+
+Only use this configuration with a **dedicated** hardware profile and for  **OPOS printers**, **cash drawers** and **line display** devices.
+
+![image](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/175039775/2fe13c73-3355-45f5-b2f9-6a081bd12b47)
 
 ## Supported scenarios by hardware station type
 ### Client support – IPC hardware station vs. IIS hardware station
@@ -278,7 +284,7 @@ Network peripherals can be supported directly through the hardware station that 
 <tr class="odd">
 <td>Printer</td>
 <td><ul>
-<li>OPOS</li>
+<li>OPOS</br><strong>Note:</strong> Enable <strong>"Keep Connection Open"</strong> to minimize unnecessary OPEN and CLOSE OPOS operations thereby reducing the likelihood of connection errors.</li>
 <li>Windows driver</li>
 <li>Device</li>
 <li>Network</li>
@@ -287,7 +293,7 @@ Network peripherals can be supported directly through the hardware station that 
 <tr class="even">
 <td>Printer 2</td>
 <td><ul>
-<li>OPOS</li>
+<li>OPOS</br><strong>Note:</strong> Enable <strong>"Keep Connection Open"</strong> to minimize unnecessary OPEN and CLOSE OPOS operations thereby reducing the likelihood of connection errors.</li>
 <li>Windows driver</li>
 <li>Device</li>
 <li>Network</li>
@@ -295,7 +301,7 @@ Network peripherals can be supported directly through the hardware station that 
 </tr>
 <tr class="odd">
 <td>Line display</td>
-<td>OPOS</td>
+<td>OPOS</br><strong>Note:</strong> Enable <strong>"Keep Connection Open"</strong> to minimize unnecessary OPEN and CLOSE OPOS operations thereby reducing the likelihood of connection errors.</td>
 </tr>
 <tr class="even">
 <td>Dual display</td>
@@ -312,7 +318,7 @@ Network peripherals can be supported directly through the hardware station that 
 <tr class="even">
 <td>Drawer</td>
 <td><ul>
-<li>OPOS</li>
+<li>OPOS</br><strong>Note:</strong> Enable <strong>"Keep Connection Open"</strong> to minimize unnecessary OPEN and CLOSE OPOS operations thereby reducing the likelihood of connection errors.</li>
 <li>Network </br><strong>Note:</strong> Only one drawer can be set up if <strong>Use shared shift</strong> is configured on the drawer.</li>
 </ul></td>
 </tr>
@@ -850,6 +856,17 @@ You can also use other payment providers with Dynamics 365 Commerce by creating 
     4.  Scroll down until you find dllhost.exe.
     5.  Select each DLL host, and then select **End task**.
     6.  After the DLL hosts have been closed, restart Modern POS.
+
+### Store Commerce unable to print with Epson printer using OPOS ADK Utility v3.0 and above
+
+**Potential issue**: After installation and adding EPSON Printer to the OPOS ADK the printer is registered for only the current user and not the shared hardware station user **RetailHwsUser**
+
+**Solution**: Add **RetailHwsUser** as an administrator and add the ESPON Printer again.
+1. To add *RetailHwsUser* as an administrator, on your windows machine, go to **Computer Management**. Open the **Local Users and Groups** folder and select **Administrators**. In the **Administrators Properties** dialog, click **Add** and type **RetailHwsUser**, validate name by clicking **Check Name** and then click **OK**. ![image](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/175039775/8b643265-7c83-496e-9d3b-5cf60d22eae5)
+   
+1. To add the EPSON printer, log in into Windows as **.\RetailHwsUser**. Open OPOS ADK as **Administrator** and add the EPSON printer again.
+
+1. Restart the IIS hardware station or PC and test again.
 
 
 ## Additional resources
