@@ -55,10 +55,8 @@ As required, select **Refresh** to manually trigger the synchronization process.
 By correctly setting up and configuring synchronization, you ensure that users are automatically integrated into your Microsoft Power Platform environment.
 
 For more information, see the following articles:
-
-- [Microsoft Entra]()
-- [Create a security group and add members to the security group]()
-- [Associate a security group with an environment]()
+- [Create a security group and add members to the security group](/power-platform/admin/control-user-access#create-a-security-group-and-add-members-to-the-security-group)
+- [Associate a security group with an environment](/power-platform/admin/control-user-access#associate-a-security-group-with-an-environment)
 
 ## Roles
 
@@ -81,7 +79,7 @@ To add multiple roles to multiple users in Microsoft Power Platform, follow thes
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a system administrator.
 1. Select your environment.
 1. Select users.
-1. In Dynamics 365 Finance, select **Manage users**.
+1. Click **Manage users in Dynamics 365**.
 1. Select one or more users.
 1. Select **Manage roles**.
 1. Select one or more roles.
