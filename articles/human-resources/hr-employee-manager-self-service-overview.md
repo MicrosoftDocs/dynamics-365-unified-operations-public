@@ -4,7 +4,7 @@
 title: Employee self service overview
 description: This article provides an overview of the Employee self service workspace.
 author: twheeloc
-ms.date: 03/06/2023
+ms.date: 07/09/2024
 ms.topic: overview
 # optional metadata
 
