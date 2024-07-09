@@ -40,8 +40,8 @@ Before you can install the Recruiting app, the following prerequisites must be m
 - You're a user who has system administrator permissions for both Dynamics 365 Human Resources and Power Apps.
 - One of the following Microsoft Power Platform integrations is completed:
 
-    - If you don't yet use Microsoft Power Platform and want to expand your finance and operations environments by adding platform capabilities, see [Connect finance and operations apps with a new Microsoft Dataverse instance](/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv).
-    - If you already have Dataverse and Microsoft Power Platform environments, and you want to connect them to finance and operations environments, see [Connect finance and operations apps with an existing Microsoft Dataverse instance](/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-existing-dv).
+    - If you don't yet use Microsoft Power Platform and want to expand your finance and operations environments by adding platform capabilities, see [Connect finance and operations apps with a new Microsoft Dataverse instance](/power-platform/environment-lifecycle-connect-finops-new-dv).
+    - If you already have Dataverse and Microsoft Power Platform environments, and you want to connect them to finance and operations environments, see [Connect finance and operations apps with an existing Microsoft Dataverse instance](/power-platform/environment-lifecycle-connect-finops-existing-dv).
 
 - You have a license and permissions for Power Automate, Power Apps, and Office 365.
 - The **Finance and Operations Virtual Entity** and **Microsoft Flow Approvals** solutions are installed. To install them, follow these steps:
