@@ -128,7 +128,7 @@ To approve or reject a job ad, an approver follows these steps.
 
 In the job ad, recruiters can view the input that the approver provided.
 
-After the job ad is approved or rejected by the assigned approvers, recruiters can move it to the next stage.
+After the job ad is approved by the assigned approvers, recruiters can move it to the next stage.
 
 > [!NOTE]
 > All thee assigned approvers must provide input before recruiters can move the job ad to the next stage.
