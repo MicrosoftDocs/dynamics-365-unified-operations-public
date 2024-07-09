@@ -47,7 +47,7 @@ Suppose you have the historical demand time-series data that includes the dimens
 | B | 1 |
 | B | 2 |
 
-When you run a forecast calculation using the Prophet model, you get the following results. In this example, you always use the Prophet model, regardless of the calculated mean absolute percentage error (MAPE).
+When you run a forecast calculation using the Prophet model, you get the following results. In this example, the system always uses the Prophet model, regardless of the calculated mean absolute percentage error (MAPE) for each product and dimension combination.
 
 | Product | Store | forecast model | MAPE |
 |---|---|---|---|
@@ -56,7 +56,7 @@ When you run a forecast calculation using the Prophet model, you get the followi
 | B | 1 | Prophet | 0.65 |
 | B | 2 | Prophet | 0.09 |
 
-When you run a forecast calculation using the ETS model, you get the following results. In this example, you always use the ETS model, regardless of the calculated MAPE.
+When you run a forecast calculation using the ETS model, you get the following results. In this example, the system always uses the ETS model, regardless of the calculated MAPE for each product and dimension combination.
 
 | Product | Store | forecast model | MAPE |
 |---|---|---|---|
@@ -65,7 +65,7 @@ When you run a forecast calculation using the ETS model, you get the following r
 | B | 1 | ETS | 0.21 |
 | B | 2 | ETS | 0.31 |
 
-When you run a forecast calculation using the best fit model, the system optimizes the model selection for each product across all dimension combinations. The selection changes based on patterns found in the historical sales data.
+When you run a forecast calculation using the best fit model, the system optimizes the model selection for each product and dimension combination. The selection changes based on patterns found in the historical sales data.
 
 | Product | Store | Prophet MAPE | Auto-ARIMA MAPE | ETS MAPE | Best fit forecast model | Best fit MAPE |
 |---|---|---|---|---|---|---|
