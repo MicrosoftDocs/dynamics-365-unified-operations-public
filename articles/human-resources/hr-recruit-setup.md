@@ -36,7 +36,7 @@ This article explains how to set up the HR Recruiting app in Microsoft Dynamics 
 Before you can install the Recruiting app, the following prerequisites must be met:
 
 - You have a Dynamics 365 finance and operations environment, version 10.0.40 or later, and the most recent quality update is installed.
-- You have a Dynamics 365 Human Resources license for the finance and operations environment.
+- You have a Dynamics 365 Human Resources license for the finance and operations environment.  
 - You're a user who has system administrator permissions for both Dynamics 365 Human Resources and Power Apps.
 - One of the following Microsoft Power Platform integrations is completed:
 
