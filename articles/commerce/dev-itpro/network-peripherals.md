@@ -62,7 +62,12 @@ For Commerce to support network peripherals, you must implement communication pr
 
 #### Epson prerequisite
 
-If your printer supports Epson ePOS-Print, see Epson's product manuals for information about how to access the Epson Printers Configuration Website and enable ePOS-Print. When ePOS-Print is configured, the printer will print a chit that shows its IP address after a power cycle.
+If your printer supports Epson ePOS-Print, see Epson's product manuals for information about how to access the Epson Printers Configuration Website. On the configuration Website, enable ePOS-Print and ensure that the printer is set up to transmit data to port 80. When ePOS-Print is configured, the printer will print a chit that shows its IP address after a power cycle.
+
+    > [!NOTE]
+    > If the printer is producing ePOS payload (or garbage), it could indicate that ePOS printing isn't enabled on the network printer, or the incorrect port might be configured.
+    > For Epson network printers, port 9100 is designated for RAW printing and shouldn't be used for printing with Store Commerce. Ensure that the printer is set up to transmit data to port 80. When configuring the IP of the networking printer in Dynamics 365 Commerce, leave the port number field empty and this will default to port 80.
+    > If printing to the default port results in an HTTP error code 404, this could indicate that either ePOS printing is not enabled on the printer, or it is not supported by the printer.
 
 #### Star Micronics prerequisite
 
