@@ -241,7 +241,7 @@ When running Dynamics 365 Commerce version **10.0.41** and above, enable **"Keep
 
 Only use this configuration with a **dedicated** hardware profile and for  **OPOS printers**, **cash drawers** and **line display** devices.
 
-![image](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/175039775/2fe13c73-3355-45f5-b2f9-6a081bd12b47)
+![Commerce Headquarters Hardware profiles page screenshot ](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/175039775/2fe13c73-3355-45f5-b2f9-6a081bd12b47)
 
 ## Supported scenarios by hardware station type
 ### Client support – IPC hardware station vs. IIS hardware station
@@ -862,7 +862,7 @@ You can also use other payment providers with Dynamics 365 Commerce by creating 
 **Potential issue**: After installation and adding EPSON Printer to the OPOS ADK the printer is registered for only the current user and not the shared hardware station user **RetailHwsUser**
 
 **Solution**: Add **RetailHwsUser** as an administrator and add the ESPON Printer again.
-1. To add *RetailHwsUser* as an administrator, on your windows machine, go to **Computer Management**. Open the **Local Users and Groups** folder and select **Administrators**. In the **Administrators Properties** dialog, click **Add** and type **RetailHwsUser**, validate name by clicking **Check Name** and then click **OK**. ![image](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/175039775/8b643265-7c83-496e-9d3b-5cf60d22eae5)
+1. To add *RetailHwsUser* as an administrator, on your windows machine, go to **Computer Management**. Open the **Local Users and Groups** folder and select **Administrators**. In the **Administrators Properties** dialog, click **Add** and type **RetailHwsUser**, validate name by clicking **Check Name** and then click **OK**. ![Screenshot of the administrators properties dialog](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/175039775/8b643265-7c83-496e-9d3b-5cf60d22eae5)
    
 1. To add the EPSON printer, log in into Windows as **.\RetailHwsUser**. Open OPOS ADK as **Administrator** and add the EPSON printer again.
 
