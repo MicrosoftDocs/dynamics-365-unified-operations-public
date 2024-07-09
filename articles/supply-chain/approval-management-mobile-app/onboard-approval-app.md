@@ -75,7 +75,7 @@ Each Supply Chain Management user who should be able to operate the Approvals Ma
 - *Purchasing agent* – This role allows a Supply Chain Management user account to use the app to manage purchase requisitions.
 - *Purchasing manager* – This role allows a Supply Chain Management user account to use the app to manage both purchase orders and purchase requisitions.
 
-Users who have the *System administrator* role can also use the app both to manage purchase orders and purchase requisitions.
+Users who have the *System administrator* role can use the app to manage all types of approval requests.
 
 Follow these steps to add the required security roles to a Supply Chain Management user.
 

@@ -46,7 +46,7 @@ Yes, the Approvals Management mobile app is available in all the same languages 
 
 ## Where can I go to discuss the app with the community and submit suggestions to Microsoft?
 
-The [Approvals Management Viva Engage (Yammer) group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=17556554&view=all) is a great place to go if you want to exchange tips, ask questions, or submit suggestions for improvement. Yammer group participants include Microsoft partners, customers, experts, and employees.
+The [Approvals Management Viva Engage (Yammer) group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=186908426240&view=all) is a great place to go if you want to exchange tips, ask questions, or submit suggestions for improvement. Yammer group participants include Microsoft partners, customers, experts, and employees.
 
 ## How can I diagnose "Error when trying to retrieve data from the network" issues?
 
@@ -68,7 +68,7 @@ This error can occur because the *Approvals Management app* role doesn't have th
 
 ## When updating the app, how can I solve the error: "Could not delete solution ... because it has been modified"?
 
-The update process fails with an error if it detects that the Approvals Management mobile application canvas app has been customized. This helps prevent the updater from overwriting your customizations. To solve this issue, remove any customization layers by restoring the oldest version of the app. If the oldest version is over six months old, you'll need to manually delete the `msdyn_EnterpriseAssetManagementMobileV2` solution and then reinstall the app from *Dynamics 365 apps* or *AppSource*.
+The update process fails with an error if it detects that the Approvals Management mobile application canvas app has been customized. This helps prevent the updater from overwriting your customizations. To solve this issue, remove any customization layers by restoring the oldest version of the app. If the oldest version is over six months old, you'll need to manually delete the `msdyn_EnterpriseAssetManagementMobileV2` solution and then reinstall the app from *Dynamics 365 apps* or *AppSource*. <!--KFM: Update solution name -->
 
 Consider cloning the canvas app before removing your customizations, just in case you want to copy the customizations to the updated app.
 
