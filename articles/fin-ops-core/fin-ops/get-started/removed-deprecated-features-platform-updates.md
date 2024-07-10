@@ -4,7 +4,7 @@ description: Learn about features that have been removed, or that are planned fo
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 04/16/2024
+ms.date: 07/10/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global
@@ -25,6 +25,18 @@ This article describes features that have been removed, or that are planned for 
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
 Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
+
+## Feature deprecation effective July 2024
+
+### SharePoint integration authentication using a Microsoft-managed high-trust connection
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The authentication mechanism used to integrate to SharePoint is being removed. |
+| **Replaced by another feature?**   | An alternate authentication mechanism is available via the **SharePoint user authentication** feature. For more information about setup, including a one-time permission grant to the application at the tenant level, see [Configure document management](../../dev-itpro/organization-administration/configure-document-management.md). Calling SharePoint as a user that isn't the currently logged in user is no longer supported. |
+| **Product areas affected**         | System administration  |
+| **Deployment option**              | Microsoft-managed cloud environments |
+| **Status**                         | The **SharePoint user authentication** feature is available in Dynamics 365 Finance version 10.0.40, and will be mandatory in version 10.0.42. Migration to the new SharePoint authentication must occur by February 28, 2025, at which time the current SharePoint connection stops working. |
 
 ## Feature deprecation effective May 2024
 
