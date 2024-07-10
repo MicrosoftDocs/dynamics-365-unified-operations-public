@@ -4,10 +4,10 @@ description: Microsoft Dynamics 365 Finance calculates Brazilian taxes based on 
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: overview
-ms.date: 07/25/2019
+ms.custom: 
+  - bap-template
+ms.date: 07/10/2024
 ms.reviewer: johnmichalak
-ms.collection: get-started
-audience: Application User
 ms.search.region: Brazil
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
