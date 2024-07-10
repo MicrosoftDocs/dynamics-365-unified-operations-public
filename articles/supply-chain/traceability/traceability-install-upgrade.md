@@ -11,7 +11,10 @@ ms.custom:
   - bap-template
 ---
 
-# Install and update Traceability
+# Install and update Traceability (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 This article describes how to install and upgrade the various components of the Traceability add-in for Dynamics 365 Supply Chain Management.
 
