@@ -18,11 +18,11 @@ ms.search.form: PurchTable, PurchTablePart, PurchOrderInReview, PurchOrderApprov
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to enable Copilot support for the **Confirmed purchase orders with changes** workspace and its optional support for Copilot features. For more information about how to use this workspace, see [Review and accept changes to confirmed purchase orders](purchase-order-changes-after-confirmation.md).
+This article describes how to enable Copilot support for the **Confirmed purchase orders with changes** workspace and its optional support for Copilot features. For more information about how to use this workspace, see [Review and accept changes to confirmed purchase orders](../../../supply-chain/procurement/purchase-order-changes-after-confirmation.md).
 
 ## Turn on Copilot support for the Confirmed purchase orders with changes workspace
 
-The **Confirmed purchase orders with changes** workspace is enabled by default. The workspace can be used either with or without its AI-powered and Copilot functionality. If you want to enable its AI features, make sure that you've also enabled Copilot capabilities in finance and operations apps, as described in [Enable Copilot capabilities in finance and operations apps](../../fin-ops-core/dev-itpro/copilot/enable-copilot.md).
+The **Confirmed purchase orders with changes** workspace is enabled by default. The workspace can be used either with or without its AI-powered and Copilot functionality. If you want to enable its AI features, make sure that you've enabled Copilot capabilities in finance and operations apps, as described in [Enable Copilot capabilities in finance and operations apps](enable-copilot.md).
 
 ## Troubleshoot the Copilot configuration
 
@@ -36,5 +36,5 @@ You can complete the outstanding configuration steps on a separate browser tab. 
 
 ## See also
 
-- [Review and accept changes to confirmed purchase orders](purchase-order-changes-after-confirmation.md)
-- [Responsible AI FAQ for the Confirmed purchase orders with changes workspace](../faq-confirmed-po-changes.md)
+- [Review and accept changes to confirmed purchase orders](../../../supply-chain/procurement/purchase-order-changes-after-confirmation.md)
+- [Responsible AI FAQ for the Confirmed purchase orders with changes workspace](../../../supply-chain/faq-confirmed-po-changes.md)

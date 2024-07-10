@@ -4,7 +4,7 @@
 title: Provision Human Resources
 description: This article explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 01/07/2023
+ms.date: 07/09/2024
 ms.topic: article
 # optional metadata
 
@@ -17,7 +17,7 @@ audience: Application User
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: ajitchandran
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -26,9 +26,6 @@ ms.dyn365.ops.version: Human Resources
 # Provision Human Resources
 
 _**Applies To:** Human Resources on the stand-alone infrastructure_ 
-
-> [!NOTE]
-> Starting June 2022, Human Resources environments can be deployed only on the finance and operations app infrastructure. For more information, see [Provision Human Resources in the finance and operations infrastructure](hr-admin-setup-provision-fo.md).
 
 This article explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources. 
 
