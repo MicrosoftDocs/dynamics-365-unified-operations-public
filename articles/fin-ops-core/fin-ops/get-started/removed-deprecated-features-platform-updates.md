@@ -33,7 +33,7 @@ Detailed information about objects in finance and operations apps can be found i
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | The authentication mechanism used to integrate to SharePoint is being removed. |
-| **Replaced by another feature?**   | An alternate authentication mechanism is available via the **SharePoint user authentication** feature. For more information about setup, including a one-time permission grant to the application at the tenant level, see [Configure document management](../../dev-itpro/organization-administration/configure-document-management.md). Note that calling SharePoint as a user that isn't the currently logged in user is no longer supported. |
+| **Replaced by another feature?**   | An alternate authentication mechanism is available via the **SharePoint user authentication** feature. For more information about setup, including a one-time permission grant to the application at the tenant level, see [Configure document management](../../dev-itpro/organization-administration/configure-document-management.md). Calling SharePoint as a user that isn't the currently logged in user is no longer supported. |
 | **Product areas affected**         | System administration  |
 | **Deployment option**              | Microsoft-managed cloud environments |
 | **Status**                         | The **SharePoint user authentication** feature is available in Dynamics 365 Finance version 10.0.40, and will be mandatory in version 10.0.42. Migration to the new SharePoint authentication must occur by February 28, 2025, at which time the current SharePoint connection stops working. |
