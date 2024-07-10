@@ -2,7 +2,7 @@
 title: Financial performance PowerBI.com solution
 description: Learn about the Financial performance PowerBI.com solution, including an outline on understanding the data model and entities. 
 author: kweekley
-ms.author: kweekley
+ms.author: jiwo
 ms.topic: article
 ms.date: 05/09/2018
 ms.reviewer: johnmichalak
