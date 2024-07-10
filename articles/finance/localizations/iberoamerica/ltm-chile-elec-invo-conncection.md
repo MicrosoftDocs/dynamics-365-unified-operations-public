@@ -13,9 +13,11 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to set up Microsoft Dynamics 365 Finance and Regulatory Configuration Service (RCS) to use Chilean electronic invoices formats.
+This article provides information that will help you get started with Electronic invoicing for Chile. It guides you through the configuration steps that are country/region-dependent in Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/e-invoicing-set-up-overview.md).
 
-This article provides information that will help you get started with Electronic invoicing for Chile. It guides you through the configuration steps that are country/region-dependent in RCS and in Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/e-invoicing-set-up-overview.md).
+After you configure electronic invoicing, you can generate, digitally sign, and submit the XML files of electronic invoices to the Authorized Certification Providee **Edicom** according to the [regulatory requirements in Chile](https://www.sii.cl/servicios_online/1039-1182.html).
+
+![Diagram of the electronic invoicing workflow in Chile.](ltm-chl-e-invoice-workflow.jpg)
 
 ## <a name="prerequisites"></a>Prerequisites
 
@@ -32,20 +34,23 @@ Before you begin the procedures in this article, the following prerequisites mus
 - Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
     - Inventory e-invoice (CL)
+	- Inventory Export e-Invoice (CL)
     - E-shipping guide (CL)
     - Project e-invoice (CL)
-    - Project e-shipping guide (CL)
+	- Project Export e-Invoice (CL)
+    - Edicom response processing (CL)
+	- Edicom response error log import
 
     > [!NOTE]
     > These formats are based on the corresponding **LATAM** format configurations that use the **Invoice model** and **Invoice model mapping** configurations. All required additional configurations are automatically imported.
 
 ## <a name="countryregion"></a>Country/region-specific configuration for Electronic invoicing for Chile
 
-Some parameters of the **Electronic invoicing for Chile** feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, review the default values, and update them as required, so that they better reflect your business operations.
+Some parameters of the **E-Invoicing for Chile: ISV last-mile connector with Edicom** feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, review the default values, and update them as required, so that they better reflect your business operations.
 
-1. Import the latest version of the **Electronic invoicing for Chile** Globalization feature. For more information, see [Import features from the Global repository](../global/e-invoicing-import-feature-global-repository.md).
+1. Import the latest version of the **Chilean electronic invoice (CL)** Globalization feature. For more information, see [Import features from the Global repository](../global/e-invoicing-import-feature-global-repository.md).
 2. Create a copy of the imported Globalization feature, and select your configuration provider. For more information, see [Create a Globalization feature](../global/e-invoicing-create-new-globalization-feature.md).
-
+3. Specify values on the **Feature parameters** tab. These are connection and integration parameters to interoperate with Edicom's API.
     > [!NOTE]
     > The **Electronic invoicing for Chile** feature is provided by Microsoft. The feature is ready to use and requires no additional configuration. For information about how to configure invoicing features if you must apply changes, see [Work with feature setups](../global/e-invoicing-feature-setup.md). For example, you can filter specific legal entities so that they're processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Chile.
 
