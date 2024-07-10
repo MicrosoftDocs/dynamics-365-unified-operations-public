@@ -4,13 +4,12 @@ description: Learn about the release schedule for proactive quality updates (PQU
 author: rashmansur
 ms.author: rashmim
 ms.topic: article
-ms.date: 06/04/2024
+ms.date: 07/10/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2022-08-19
-ms.search.form:
 ms.dyn365.ops.version: 10.0.29
 ---
 
