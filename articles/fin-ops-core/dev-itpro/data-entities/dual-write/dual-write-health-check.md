@@ -2,7 +2,7 @@
 title: Dual-write health check
 description: Learn about the dual-write configuration health check, including details on the error codes that can result from the health check.
 author: jaredha
-ms.author: jaredha
+ms.author: gned
 ms.topic: conceptual
 ms.custom: 
   - bap-template
