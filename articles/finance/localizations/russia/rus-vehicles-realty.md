@@ -3,7 +3,8 @@ title: Vehicles and realty as fixed assets (Russia)
 description: Learn how to set up vehicles and realty as fixed assets for Russia, including an outline on setting up the depreciation start date for vehicle and realty assets.
 author: evgenypopov
 ms.author: evgenypopov
-ms.topic: ms.custom: 
+ms.topic: how-to
+ms.custom: 
   - bap-template
 ms.date: 07/11/2024
 ms.reviewer: johnmichalak
