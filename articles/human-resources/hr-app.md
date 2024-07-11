@@ -95,7 +95,7 @@ To embed the Human Resources app in Microsoft Teams, see [Embed a model-driven a
 
 1. Expand **Leave details**, and select **Available balances**.
 2. For each leave plan that's assigned to the signed-in user, a tile shows the available balance. You can request leave directly from a tile by selecting the **Request** button.
-3. If the HR administrator has hidden the leave balance for a leave plan, "- -" is shown as the balance value for the leave plan.
+3. If the HR administrator hid the leave balance for a leave plan, "- -" is shown as the balance value for the leave plan.
 
 ### Request leave
 
