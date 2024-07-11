@@ -6,7 +6,7 @@ ms.author: atrukawk
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/20240
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
 ms.search.region: Spain
 ms.search.validFrom: 2016-11-30
