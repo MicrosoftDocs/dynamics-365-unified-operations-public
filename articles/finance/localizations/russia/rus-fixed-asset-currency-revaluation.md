@@ -1,8 +1,8 @@
 ---
 title: Fixed asset currency revaluation
 description: Learn about fixed asset currency revaluation for Russia, including a step-by-step process for revaluing the currency of fixed assets.
-author: AdamTrukawka
-ms.author: atrukawk
+author: evgenypopov
+ms.author: evgenypopov
 ms.topic: how-to
 ms.custom: 
   - bap-template
