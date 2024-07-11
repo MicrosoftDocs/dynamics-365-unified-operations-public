@@ -237,11 +237,17 @@ For more information about OPOS components, see [Supported interfaces](./retail-
 
 Within the ServiceOPOS registry location, configured devices are organized according to the OPOS device class. Multiple device drivers are saved.
 
-When running Commerce version 10.0.41 and later, enable **Keep Connection Open** to minimize unnecessary OPEN and CLOSE OPOS operations to reduce the likelihood of connection errors on POS. This configuration is available when setting up hardware profile devices. In Commerce headquarters, go to **Retail and Commerce \> Channel Setup \> POS Setup \> POS Profiles \> Hardware Profiles**. After enabling **Keep Connection Open**, run the 1070 job for registers configuration.
+To reduce the likelihood of connection errors on POS by minimizing unnecessary OPEN and CLOSE OPOS operations, when running Commerce version 10.0.41 or later you can enable the **Keep connection open** setting for hardware profile devices in Commerce headquarters.
 
-Only use this configuration with a dedicated hardware profile for OPOS printers, cash drawers, and line display devices.
+To enable the **Keep connection open** setting in Commerce version 10.0.41 or later, follow these steps.
 
-![Commerce Headquarters Hardware profiles page screenshot ](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/175039775/2fe13c73-3355-45f5-b2f9-6a081bd12b47)
+1. In Commerce headquarters, go to **Retail and Commerce \> Channel Setup \> POS Setup \> POS Profiles \> Hardware Profiles**.
+1. In the left pane, select a hardware profile.
+1. On the **POS hardware profile** form, on the **Printer** FastTab, set the **Keep connection open** option to **Yes**.
+1. Run the **1070 (Channel configuration)** job. 
+
+> [!NOTE]
+> Only use this configuration with a dedicated hardware profile for OPOS printers, cash drawers, and line display devices.
 
 ## Supported scenarios by hardware station type
 
