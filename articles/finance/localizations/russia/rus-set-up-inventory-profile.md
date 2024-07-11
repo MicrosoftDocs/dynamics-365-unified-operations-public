@@ -1,12 +1,13 @@
 ---
 title: Set up an inventory profile
 description: Learn about setting up inventory profile, including step-by-step processes for creating inventory profiles and setting up compatible inventory profiles.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 05/11/2020
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/10/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1

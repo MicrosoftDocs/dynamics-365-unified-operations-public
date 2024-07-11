@@ -1,12 +1,13 @@
 ---
 title: Fixed assets depreciation for Poland
 description: Learn about fixed assets depreciation for legal entities in Poland, including an outline on Poland-specific depreciation methods.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
 ms.date: 10/31/2017
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Poland
 ms.search.validFrom: 2016-05-31
 ms.search.form: AssetBook, AssetDepreciationGroup_W, AssetParameters, AssetPosting

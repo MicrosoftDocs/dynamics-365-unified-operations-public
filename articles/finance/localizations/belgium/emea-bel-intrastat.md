@@ -1,14 +1,14 @@
 ---
 title: Belgium Intrastat
 description: Learn about the Belgium Intrastat report, including outlines on setting up Intrastat, Intrastrat transfer, and examples with step-by-step processes.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 10/28/2021
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/10/2024
 ms.reviewer: johnmichalak
-audience: 
 ms.search.region: Global
-ms.search.validFrom: 
 ---
 
 # Belgium Intrastat
