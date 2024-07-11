@@ -1,15 +1,14 @@
 ---
 title: Example for generic European Union (EU) sales list
 description: Learn on how to set up and transfer a European Union (EU) sales list, including outlines on setting up country parameters and company information.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 02/28/2022
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
-ms.search.region: 
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ 
 ---
 
 # Example for generic EU Sales list 
