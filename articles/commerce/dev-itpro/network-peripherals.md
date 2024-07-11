@@ -1,6 +1,6 @@
 ---
 title: Support for network peripherals
-description: This article provides an overview of network peripherals that are supported by the Microsoft Dynamics 365 Commerce Store Commerce apps for Windows, Android, and iOS.
+description: This article provides an overview of network peripherals supported by the Microsoft Dynamics 365 Commerce Store Commerce apps for Windows, Android, and iOS.
 author: ritakimani1
 ms.date: 07/11/2024
 ms.topic: overview
@@ -18,7 +18,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview of network peripherals that are supported by the Microsoft Dynamics 365 Commerce Store Commerce apps for Windows, Android, and iOS.
+This article provides an overview of network peripherals supported by the Microsoft Dynamics 365 Commerce Store Commerce apps for Windows, Android, and iOS.
 
 ## Key terms
 
@@ -29,7 +29,7 @@ This article provides an overview of network peripherals that are supported by t
 | Dedicated hardware station | The hardware station business logic that is built into the Store Commerce apps for Windows, Android, and iOS. |
 | Drawer kick (DK) port | A traditional method for connecting a cash drawer to a receipt printer. |
 | Network peripherals | Built-in support for network-enabled payment terminals, receipt printers, and cash drawers. |
-| ESC/P | Epson Standard Code for Printers, aslo know as "Escape/P, is printer a control language created by Epson that is commonly used to send commands to point of sale printers. |
+| ESC/P | Epson Standard Code for Printers, also know as "Escape/P, is printer a control language created by Epson that is commonly used to send commands to point of sale printers. |
 
 ## Supported POS clients and devices
 
@@ -49,7 +49,7 @@ For information about how to set up an Adyen payment terminal, see the "POS paym
 
 ### Epson or Star Micronics receipt printer and a cash drawer
 
-For Commerce to support network peripherals, you must implement communication protocols that are unique for each manufacturer. If a printing protocol isn't listed here, it isn't supported out of box and will require customization. 
+For Commerce to support network peripherals, you must implement communication protocols that are unique for each manufacturer. If a printing protocol isn't listed here, it isn't supported out-of-box and requires customization. 
 
 > [!NOTE]
 > - For network printers, Store Commerce only supports using the "en-us" locale identifier. Other locale identifiers, including those that specify right-to-left text direction, aren't supported.
@@ -78,7 +78,7 @@ Network-enabled Star Micronics printers that support Ethernet can be configured 
     | Device | Type | Device name | Additional details |
     |---|---|---|---|
     | Printer | Network | **Epson** or **Star** | The device name is case-sensitive. Assign a **Receipt profile ID**. |
-    | Cash drawer | Network | **Epson** or **Star** | The device name is case-sensitive. Set the **Use shared shift** option to **Yes** if the cash drawer will be shared by multiple POS devices. |
+    | Cash drawer | Network | **Epson** or **Star** | The device name is case-sensitive. Set the **Use shared shift** option to **Yes** if the cash drawer is shared by multiple POS devices. |
 
 5. Select **Save**.
 
@@ -88,7 +88,7 @@ To set up the Store Commerce app for Windows, Android, or iOS, follow these step
 
 1. In Dynamics 365 Commerce, search for **Registers**.
 2. Select a register by selecting the register number, and then select **Edit**.
-3. Assign the hardware profile that you just created to the register that should use a dedicated payment terminal. The device that is mapped to this register must use either the Store Commerce application, the "Retail Modern POS - Android" application type, or the "Retail Modern POS - iOS" application type.
+3. Assign the hardware profile that you created to the register that should use a dedicated payment terminal. The device that is mapped to this register must use either the Store Commerce application, the "Retail Modern POS - Android" application type, or the "Retail Modern POS - iOS" application type.
 4. Select **Save**.
 5. On the Action Pane, on the **Registers** tab, select **Configure IP addresses**.
 6. On the **Printer** FastTab, enter the IP address of the printer. Leave the field for the port number blank.
@@ -129,7 +129,7 @@ Store Commerce for web doesn't have built-in hardware station logic. If you're u
 
 Network receipt printers and cash drawers can be shared by multiple POS devices. To share them, you can use a shared hardware station to broker the connection to the devices. Alternatively, if you're using Store Commerce for Windows, Android, or iOS, you can configure the same devices directly in the register properties.
 
-Payment terminals can be shared only if a shared hardware station is deployed to broker the connection to the payment terminal. You can't share a payment terminal by setting the same payment terminal IP address directly at the register level. If you try to use this approach, issues will occur when individual POS clients try to lock and claim the device.
+Payment terminals can only be shared if a shared hardware station is deployed to broker the connection to the payment terminal. You can't share a payment terminal by setting the same payment terminal IP address directly at the register level. If you try to use this approach, you will encounter issues when individual POS clients try to lock and claim the device.
 
 ## Related articles
 
