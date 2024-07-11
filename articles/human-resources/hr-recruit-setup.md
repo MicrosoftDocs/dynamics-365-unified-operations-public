@@ -4,7 +4,7 @@
 title: Set up the HR Recruiting app (preview)
 description: This article explains how to set up the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 07/01/2024
+ms.date: 07/11/2024
 ms.topic: article
 # optional metadata
 
@@ -78,7 +78,7 @@ The **Recruiting** workspace is now available in Dynamics 365 Finance.
 
 To install the Recruiting add-on app for the first time, follow these steps.
 
-1. Sign in to [AppSource](https://appsource.microsoft.com/) as an admin.
+1. Sign in to [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.hcmrecruiting-preview?flightCodes=4b09efddad8943cb82af3713c574a021) as an admin.
 1. Select **Dynamics 365 Human Resources recruiting add-on**, and then select **Get it now**.
 1. Select **Environments**, and then search for and select your environment.
 1. Select the checkboxes to agree to the privacy statement and legal terms.
