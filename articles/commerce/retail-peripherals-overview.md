@@ -230,7 +230,7 @@ For information, see [Set up POS hybrid app on Android and iOS](./dev-itpro/hybr
 
 ### OPOS device setup and configuration
 
-For more information about OPOS components, see [Supported interfaces](./retail-peripherals-overview.md#opos). Typically, OPOS drivers are provided by the device manufacturer. When an OPOS device driver is installed, it adds a key to the Windows registry in one of the following locations:
+For more information about OPOS components, see [Supported interfaces](#supported-interfaces). Typically, OPOS drivers are provided by the device manufacturer. When an OPOS device driver is installed, it adds a key to the Windows registry in one of the following locations:
 
 -   **32-bit system:** HKEY\_LOCAL\_MACHINE\SOFTWARE\OLEforRetail\ServiceOPOS
 -   **64-bit system:** HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\OLEforRetail\ServiceOPOS
@@ -239,9 +239,9 @@ Within the ServiceOPOS registry location, configured devices are organized accor
 
 To reduce the likelihood of connection errors on POS by minimizing unnecessary OPEN and CLOSE OPOS operations, when running Commerce version 10.0.41 or later you can enable the **Keep connection open** setting for hardware profile devices in Commerce headquarters.
 
-To enable the **Keep connection open** setting in Commerce version 10.0.41 or later, follow these steps.
+To enable the **Keep connection open** setting in Commerce headquarters version 10.0.41 or later, follow these steps.
 
-1. In Commerce headquarters, go to **Retail and Commerce \> Channel Setup \> POS Setup \> POS Profiles \> Hardware Profiles**.
+1. In headquarters, go to **Retail and Commerce \> Channel Setup \> POS Setup \> POS Profiles \> Hardware Profiles**.
 1. In the left pane, select a hardware profile.
 1. On the **POS hardware profile** form, on the **Printer** FastTab, set the **Keep connection open** option to **Yes**.
 1. Run the **1070 (Channel configuration)** job. 
