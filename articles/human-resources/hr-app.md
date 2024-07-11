@@ -61,7 +61,7 @@ To install the Human Resources app for the first time, follow these steps.
     1. Select **Save**.
 
 1. Select **Human Resources** to access the Human Resources app on AppSource, select **Get it now**.
-1. You will be redirected to the Power Platform admin center.
+1. You're redirected to the Power Platform admin center.
 2. Sign in to Power Platform admin center, select your environment, and then select **Install**.
 1. To check the status of the installation, in Power Platform admin center, select **Environments**, select your environment, and then, in the **Resources** section, select **Dynamics 365 apps**. If the installation is successful, the value in the **Status** column for Dynamics 365 Human Resources is changed to **Installed**. If the installation fails, try to install the app again by selecting **Retry installation** in Power Platform admin center.
 
@@ -73,13 +73,10 @@ Use this procedure if the previous version of the Human Resources app is install
 2. In the **Status** column for Dynamics 365 Human Resources, if an update is available, select it, and then select **Update**.
 3. If the installation fails, try to install the app again by selecting **Retry installation** in Power Platform admin center.
 
-For information about how to embed the Human Resources app in Microsoft Teams, see [Embed a model-driven app as personal app in Teams](/power-apps/teams/embed-model-driven-teams-personal). The Human Resource app can also be used in a web browser.
 
-## Embed the Human Resources app in Microsoft teams
-To embed the the Human Resources app in Microsoft teams, see [Embed a model-driven app as a personal app in Teams](power-apps/teams/embed-model-driven-teams-personal).
-
->[!Note]
->The Human Resource app can be used in a browser without having to be added to Microsoft Teams. 
+## Embed the Human Resources app in Microsoft Teams
+To embed the Human Resources app in Microsoft Teams, see [Embed a model-driven app as a personal app in Teams](power-apps/teams/embed-model-driven-teams-personal). The Human Resources app can also be used in a web browser.
+ 
 
 ## Onboard users to the Human Resources app
 
