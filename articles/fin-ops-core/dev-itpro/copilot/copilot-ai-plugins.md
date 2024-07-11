@@ -40,7 +40,7 @@ Finance and operations apps offer many scenarios and opportunities for copilot p
 Before you begin to develop AI plugins that use finance and operations business logic, your system must meet the following requirements:
 
 - You must have a unified developer environment. The development of AI plugins that use finance and operations business logic is available only in the [unified developer experience](/power-platform/developer/unified-experience/finance-operations-dev-overview). For information about how to create a unified developer environment from the [unified admin experience for finance and operations apps](/power-platform/admin/unified-experience/finance-operations-apps-overview), see [Tutorial: Install the Finance and Operations Provisioning App](/power-platform/admin/unified-experience/tutorial-install-finance-operations-provisioning-app).
-- Your environment must be on version 10.0.40 proactive quality update 3 (PQU-3) with platform version 7.0.7279.80 or later.
+- Your environment must be on version 10.0.40 proactive quality update 1 (PQU-1) with platform version 7.0.7279.80 or later.
 - The following solutions must be installed in the Power Platform environment. If they aren't already installed, see [Manage Dynamics 365 apps](/power-platform/admin/manage-apps) for information about how to install Dynamics 365 solution packages in Dataverse.
 
     - The Copilot for finance and operations package, which includes the following solutions:
