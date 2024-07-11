@@ -75,7 +75,7 @@ Use this procedure if the previous version of the Human Resources app is install
 
 
 ## Embed the Human Resources app in Microsoft Teams
-To embed the Human Resources app in Microsoft Teams, see [Embed a model-driven app as a personal app in Teams](power-apps/teams/embed-model-driven-teams-personal). The Human Resources app can also be used in a web browser.
+To embed the Human Resources app in Microsoft Teams, see [Embed a model-driven app as a personal app in Teams](/power-apps/teams/embed-model-driven-teams-personal). The Human Resources app can also be used in a web browser.
  
 
 ## Onboard users to the Human Resources app
