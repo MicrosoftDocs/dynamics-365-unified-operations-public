@@ -29,7 +29,7 @@ This article provides an overview of network peripherals supported by the Micros
 | Dedicated hardware station | The hardware station business logic that is built into the Store Commerce apps for Windows, Android, and iOS. |
 | Drawer kick (DK) port | A traditional method for connecting a cash drawer to a receipt printer. |
 | Network peripherals | Built-in support for network-enabled payment terminals, receipt printers, and cash drawers. |
-| ESC/P | Epson Standard Code for Printers, also know as "Escape/P, is printer a control language created by Epson that is commonly used to send commands to point of sale printers. |
+| ESC/P | Epson Standard Code for Printers (also known as "Escape/P") is printer a control language created by Epson that is commonly used to send commands to point of sale printers. |
 
 ## Supported POS clients and devices
 
@@ -57,12 +57,12 @@ For Commerce to support network peripherals, you must implement communication pr
 
 #### Epson prerequisite
 
-If your printer supports Epson ePOS-Print, see your Epson product manuals for information about how to access the Epson printers configuration website. On the configuration website, enable ePOS-Print and ensure that the printer is set up to transmit data to port 80. When ePOS-Print is configured, after a power cycle the printer prints a chit that shows the printer's IP address.
+If your printer supports Epson ePOS-Print, see your Epson product manual for information on how to access the Epson printers configuration website. On the configuration website, enable ePOS-Print and ensure that the printer is set up to transmit data to port 80. When ePOS-Print is configured, after a power cycle the printer prints a chit that shows the printer's IP address.
 
 > [!NOTE]
-> - If the printer is producing ePOS payload (or garbage), this could indicate that ePOS printing isn't enabled on the network printer, or that the incorrect port might be configured.
-> - For Epson network printers, port 9100 is designated for RAW printing and shouldn't be used for printing with Store Commerce. Ensure that the printer is set up to transmit data to port 80. When configuring the IP of the networking printer in Dynamics 365 Commerce, leave the port number field empty to default to port 80.
-> - If printing to the default port results in an HTTP error code 404, this could indicate that either ePOS printing isn't enabled on the printer, or it isn't supported by the printer.
+> - If the printer is producing an ePOS payload (or garbage), this could indicate that ePOS printing isn't enabled on the network printer, or that the incorrect port might be configured.
+> - For Epson network printers, port 9100 is designated for RAW printing and shouldn't be used for printing with Store Commerce. Ensure that the printer is set up to transmit data to port 80. When configuring the IP address of the networking printer in Dynamics 365 Commerce, leave the port number field empty to default to port 80.
+> - If printing to the default port results in an HTTP 404 error, this could indicate that either ePOS printing isn't enabled on the printer, or it isn't supported by the printer.
 
 #### Star Micronics prerequisite
 
@@ -88,7 +88,7 @@ To set up the Store Commerce app for Windows, Android, or iOS, follow these step
 
 1. In Dynamics 365 Commerce, search for **Registers**.
 2. Select a register by selecting the register number, and then select **Edit**.
-3. Assign the hardware profile that you created to the register that should use a dedicated payment terminal. The device that is mapped to this register must use either the Store Commerce application, the "Retail Modern POS - Android" application type, or the "Retail Modern POS - iOS" application type.
+3. Assign the hardware profile that you created to the register that should use a dedicated payment terminal. The device mapped to this register must use either the Store Commerce application, the "Retail Modern POS - Android" application type, or the "Retail Modern POS - iOS" application type.
 4. Select **Save**.
 5. On the Action Pane, on the **Registers** tab, select **Configure IP addresses**.
 6. On the **Printer** FastTab, enter the IP address of the printer. Leave the field for the port number blank.
