@@ -1,9 +1,9 @@
 ---
 title: Peripherals
-description: This article explains the concepts that are related to Commerce peripherals. 
+description: This article explains the concepts that are related to Microsoft Dynamics 365 Commerce peripherals. 
 author: anush6121
 ms.author: anvenkat
-ms.date: 06/27/2024
+ms.date: 07/11/2024
 ms.topic: conceptual
 ms.custom: 
   - bap-template
@@ -18,7 +18,7 @@ ms.search.validFrom: 2016-11-30
 
 [!include[banner](includes/banner.md)]
 
-This article explains the concepts that are related to store peripherals. It describes the various ways that peripherals can be connected to the point of sale (POS) and the components that are responsible for managing the connection with the POS.
+This article explains the concepts that are related to Microsoft Dynamics 365 Commerce peripherals. It describes the various ways that peripherals can be connected to the point of sale (POS) and the components that are responsible for managing the connection with the POS.
 
 ## Prerequisites
 
@@ -230,20 +230,21 @@ For information, see [Set up POS hybrid app on Android and iOS](./dev-itpro/hybr
 
 ### OPOS device setup and configuration
 
-For more information about OPOS components, see the [Supported interfaces](./retail-peripherals-overview.md#opos) section of this document. Typically, OPOS drivers are provided by the device manufacturer. When an OPOS device driver is installed, it adds a key to the Windows registry in one of the following locations:
+For more information about OPOS components, see [Supported interfaces](./retail-peripherals-overview.md#opos). Typically, OPOS drivers are provided by the device manufacturer. When an OPOS device driver is installed, it adds a key to the Windows registry in one of the following locations:
 
 -   **32-bit system:** HKEY\_LOCAL\_MACHINE\SOFTWARE\OLEforRetail\ServiceOPOS
 -   **64-bit system:** HKEY\_LOCAL\_MACHINE\SOFTWARE\WOW6432Node\OLEforRetail\ServiceOPOS
 
 Within the ServiceOPOS registry location, configured devices are organized according to the OPOS device class. Multiple device drivers are saved.
 
-When running Dynamics 365 Commerce version **10.0.41** and above, enable **"Keep Connection Open"** to minimize unnecessary OPEN and CLOSE OPOS operations thereby reducing the likelihood of connection errors on POS. This configuration is available when setting up hardware profile devices. Go to **Retail and Commerce** > **Channel Setup** > **POS Setup** > **POS Profiles** > **Hardware Profiles**. Run the 1070 job for registers configuration after enabling "Keep Connection Open".
+When running Commerce version 10.0.41 and later, enable **Keep Connection Open** to minimize unnecessary OPEN and CLOSE OPOS operations to reduce the likelihood of connection errors on POS. This configuration is available when setting up hardware profile devices. In Commerce headquarters, go to **Retail and Commerce \> Channel Setup \> POS Setup \> POS Profiles \> Hardware Profiles**. After enabling **Keep Connection Open**, run the 1070 job for registers configuration.
 
-Only use this configuration with a **dedicated** hardware profile and for  **OPOS printers**, **cash drawers** and **line display** devices.
+Only use this configuration with a dedicated hardware profile for OPOS printers, cash drawers, and line display devices.
 
 ![Commerce Headquarters Hardware profiles page screenshot ](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/175039775/2fe13c73-3355-45f5-b2f9-6a081bd12b47)
 
 ## Supported scenarios by hardware station type
+
 ### Client support – IPC hardware station vs. IIS hardware station
 
 The following table shows the topologies and deployment scenarios that are supported.
@@ -284,7 +285,7 @@ Network peripherals can be supported directly through the hardware station that 
 <tr class="odd">
 <td>Printer</td>
 <td><ul>
-<li>OPOS</br><strong>Note:</strong> Enable <strong>"Keep Connection Open"</strong> to minimize unnecessary OPEN and CLOSE OPOS operations thereby reducing the likelihood of connection errors.</li>
+<li>OPOS</br><strong>Note:</strong> Enable <strong>Keep Connection Open</strong> to minimize unnecessary OPEN and CLOSE OPOS operations and reduce the likelihood of connection errors.</li>
 <li>Windows driver</li>
 <li>Device</li>
 <li>Network</li>
@@ -293,7 +294,7 @@ Network peripherals can be supported directly through the hardware station that 
 <tr class="even">
 <td>Printer 2</td>
 <td><ul>
-<li>OPOS</br><strong>Note:</strong> Enable <strong>"Keep Connection Open"</strong> to minimize unnecessary OPEN and CLOSE OPOS operations thereby reducing the likelihood of connection errors.</li>
+<li>OPOS</br><strong>Note:</strong> Enable <strong>Keep Connection Open</strong> to minimize unnecessary OPEN and CLOSE OPOS operations and reduce the likelihood of connection errors.</li>
 <li>Windows driver</li>
 <li>Device</li>
 <li>Network</li>
@@ -301,7 +302,7 @@ Network peripherals can be supported directly through the hardware station that 
 </tr>
 <tr class="odd">
 <td>Line display</td>
-<td>OPOS</br><strong>Note:</strong> Enable <strong>"Keep Connection Open"</strong> to minimize unnecessary OPEN and CLOSE OPOS operations thereby reducing the likelihood of connection errors.</td>
+<td>OPOS</br><strong>Note:</strong> Enable <strong>Keep Connection Open</strong> to minimize unnecessary OPEN and CLOSE OPOS operations and reduce the likelihood of connection errors.</td>
 </tr>
 <tr class="even">
 <td>Dual display</td>
@@ -318,7 +319,7 @@ Network peripherals can be supported directly through the hardware station that 
 <tr class="even">
 <td>Drawer</td>
 <td><ul>
-<li>OPOS</br><strong>Note:</strong> Enable <strong>"Keep Connection Open"</strong> to minimize unnecessary OPEN and CLOSE OPOS operations thereby reducing the likelihood of connection errors.</li>
+<li>OPOS</br><strong>Note:</strong> Enable <strong>Keep Connection Open</strong> to minimize unnecessary OPEN and CLOSE OPOS operations and reduce the likelihood of connection errors.</li>
 <li>Network </br><strong>Note:</strong> Only one drawer can be set up if <strong>Use shared shift</strong> is configured on the drawer.</li>
 </ul></td>
 </tr>
@@ -859,15 +860,17 @@ You can also use other payment providers with Dynamics 365 Commerce by creating 
 
 ### Store Commerce unable to print with Epson printer using OPOS ADK Utility v3.0 and above
 
-**Potential issue**: After installation and adding EPSON Printer to the OPOS ADK the printer is registered for only the current user and not the shared hardware station user **RetailHwsUser**
+**Potential issue**: After installing and adding an EPSON printer to the OPOS application development kit (ADK), the printer is only registered for the current user and not the shared hardware station user "RetailHwsUser".
 
-**Solution**: Add **RetailHwsUser** as an administrator and add the ESPON Printer again.
-1. To add *RetailHwsUser* as an administrator, on your windows machine, go to **Computer Management**. Open the **Local Users and Groups** folder and select **Administrators**. In the **Administrators Properties** dialog, click **Add** and type **RetailHwsUser**, validate name by clicking **Check Name** and then click **OK**. ![Screenshot of the administrators properties dialog](https://github.com/MicrosoftDocs/Dynamics-365-Operations/assets/175039775/8b643265-7c83-496e-9d3b-5cf60d22eae5)
-   
-1. To add the EPSON printer, log in into Windows as **.\RetailHwsUser**. Open OPOS ADK as **Administrator** and add the EPSON printer again.
+**Solution**: Add "RetailHwsUser" as an administrator, and then add the ESPON printer again.
 
+To add "RetailHwsUser" as an administrator on your local Windows machine, follow these steps.
+
+1. On your local Windows machine, go to **Computer Management**.
+1. Open **Local Users and Groups**, and then select **Administrators**.
+1. In the **Administrators Properties** dialog, select **Add**, enter "RetailHwsUser", select **Check Name** to validate the name, and then select **OK**.
+1. To add the EPSON printer, sign in to Windows as "RetailHwsUser", open the OPOS ADK, and add the EPSON printer again.
 1. Restart the IIS hardware station or PC and test again.
-
 
 ## Additional resources
 
