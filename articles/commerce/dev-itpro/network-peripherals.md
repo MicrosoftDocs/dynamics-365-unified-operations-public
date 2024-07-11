@@ -62,18 +62,16 @@ For Commerce to support network peripherals, you must implement communication pr
 
 > [!NOTE]
 > - For network printers, Store Commerce only supports using the "en-us" locale identifier. Other locale identifiers, including those that specify right-to-left text direction, aren't supported.
-> - To use a locale identifier other than "en-us", set up the POS printer as a "Windows driver device" (only supported with Interprocess Communications [IPC] hardware stations) or an "OPOS device". For configuration details, see [OPOS device setup and configuration](../retail-peripherals-overview.md#opos-device-setup-and-configuration) and [IPC (built-in) hardware station configuration](../retail-peripherals-overview.md#modern-pos-for-windows-with-an-ipc-built-in-hardware-station-1).
+> - To use a locale identifier other than "en-us", set up the POS printer as a "Windows driver device" (only supported with Interprocess Communications [IPC] hardware stations) or as an "OPOS device". For configuration details, see [OPOS device setup and configuration](../retail-peripherals-overview.md#opos-device-setup-and-configuration) and [IPC (built-in) hardware station configuration](../retail-peripherals-overview.md#modern-pos-for-windows-with-an-ipc-built-in-hardware-station-1).
 
 #### Epson prerequisite
 
-If your printer supports Epson ePOS-Print, see Epson's product manuals for information about how to access the Epson Printers Configuration Website. On the configuration Website, ***enable ePOS-Print*** and ensure that the printer is set up to transmit data to ***port 80***. When ePOS-Print is configured, the printer will print a chit that shows its IP address after a power cycle.
+If your printer supports Epson ePOS-Print, see your Epson product manuals for information about how to access the Epson printers configuration website. On the configuration website, enable ePOS-Print and ensure that the printer is set up to transmit data to port 80. When ePOS-Print is configured, after a power cycle the printer prints a chit that shows the printer's IP address.
 
->[!NOTE]
-> If the printer is producing ePOS payload (or garbage), it could indicate that ePOS printing is not enabled on the network printer, or the incorrect port might be configured.
->
-> For Epson network printers, port 9100 is designated for RAW printing and should not be used for printing with Store Commerce. Ensure that the printer is set up to transmit data to ***port 80***. When configuring the IP of the networking printer in Dynamics 365 Commerce, leave the port number field empty and this will default to port 80.
->
-> If printing to the default port results in an HTTP error code 404, this could indicate that either ePOS printing is not enabled on the printer, or it is not supported by the printer.
+> [!NOTE]
+> - If the printer is producing ePOS payload (or garbage), this could indicate that ePOS printing isn't enabled on the network printer, or that the incorrect port might be configured.
+> - For Epson network printers, port 9100 is designated for RAW printing and shouldn't be used for printing with Store Commerce. Ensure that the printer is set up to transmit data to port 80. When configuring the IP of the networking printer in Dynamics 365 Commerce, leave the port number field empty to default to port 80.
+> - If printing to the default port results in an HTTP error code 404, this could indicate that either ePOS printing isn't enabled on the printer, or it isn't supported by the printer.
 
 #### Star Micronics prerequisite
 
