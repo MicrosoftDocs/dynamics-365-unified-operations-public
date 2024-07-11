@@ -2,10 +2,10 @@
 # required metadata
 
 title: Support for network peripherals
-description: This article provides an overview of network peripherals that are supported in the store.
-author: BrianShook
-ms.date: 02/01/2023
-ms.topic: article
+description: This article provides an overview of network peripherals that are supported by the Microsoft Dynamics 365 Commerce Store Commerce apps for Windows, Android, and iOS.
+author: ritakimani1
+ms.date: 07/11/2024
+ms.topic: overview
 # optional metadata
 
 # ms.search.form: 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the support for and setup of network peripherals in the store.
+This article provides an overview of network peripherals that are supported by the Microsoft Dynamics 365 Commerce Store Commerce apps for Windows, Android, and iOS.
 
 ## Key terms
 
@@ -36,7 +36,7 @@ This article describes the support for and setup of network peripherals in the s
 | Register | The entity that is used to configure an instance of a point of sale (POS) register. |
 | Device | A representation of the physical instance of a POS register and the Store Commerce app that is assigned to it. |
 | Dedicated hardware station | The hardware station business logic that is built into the Store Commerce apps for Windows, Android, and iOS. |
-| Drawer kick (d/k) port | A traditional method for connecting a cash drawer to a receipt printer. |
+| Drawer kick (DK) port | A traditional method for connecting a cash drawer to a receipt printer. |
 | Network peripherals | Built-in support for network-enabled payment terminals, receipt printers, and cash drawers. |
 | ESC/P | Epson Standard Code for Printers, aslo know as "Escape/P, is printer a control language created by Epson that is commonly used to send commands to point of sale printers. |
 
@@ -44,7 +44,7 @@ This article describes the support for and setup of network peripherals in the s
 
 Functionality for network peripherals is supported by the Store Commerce apps for Windows, Android, and iOS.
 
-This functionality supports network-enabled payment terminals and receipt printers. You can provide cash drawer support by connecting the cash drawer to the network-enabled receipt printer via the d/k port.
+This functionality supports network-enabled payment terminals and receipt printers. You can provide cash drawer support by connecting the cash drawer to the network-enabled receipt printer via the DK port.
 
 Out-of-box support for this functionality is provided by the [Microsoft Dynamics 365 Payment Connector for Adyen](./adyen-connector.md?tabs=8-1-3). However, other payment connectors might be supported via the Commerce software development kit (SDK). Supported receipt printers include network-enabled receipt printers from Star Micronics and Epson.
 
@@ -60,10 +60,9 @@ For information about how to set up an Adyen payment terminal, see the "POS paym
 
 For Commerce to support network peripherals, you must implement communication protocols that are unique for each manufacturer. If a printing protocol isn't listed here, it isn't supported out of box and will require customization. 
 
->[!NOTE]
->For network printers, Store Commerce only supports using the ***"en-us"*** CultureInfo (language formatting). Other CultureInfo such as ones specifying right-to-left text direction are not supported.
->
->To use a CultureInfo than "en-us", setup the POS printer as a ***Windows driver device***(Only supported with an IPC hardware station) or an ***OPOS device***. For details on how to configure this, See [OPOS device setup and configuration](../retail-peripherals-overview.md#opos-device-setup-and-configuration) and [IPC(built-in) hardware station configuration](../retail-peripherals-overview.md#modern-pos-for-windows-with-an-ipc-built-in-hardware-station-1).
+> [!NOTE]
+> - For network printers, Store Commerce only supports using the "en-us" locale identifier. Other locale identifiers, including those that specify right-to-left text direction, aren't supported.
+> - To use a locale identifier other than "en-us", set up the POS printer as a "Windows driver device" (only supported with Interprocess Communications [IPC] hardware stations) or an "OPOS device". For configuration details, see [OPOS device setup and configuration](../retail-peripherals-overview.md#opos-device-setup-and-configuration) and [IPC (built-in) hardware station configuration](../retail-peripherals-overview.md#modern-pos-for-windows-with-an-ipc-built-in-hardware-station-1).
 
 #### Epson prerequisite
 
