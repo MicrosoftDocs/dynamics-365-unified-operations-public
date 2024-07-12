@@ -153,3 +153,23 @@ After you save the hiring template, a section for stages and steps becomes avail
 1. In the dialog box, enter a name for the step.
 1. Select the stage that you want to create the step under.
 1. Select **Save** and then **Close**.
+
+### Screening template
+A screening template is a template that recruiters use to store one or more questions. Templates can be used in multiple job ads so new questions don't need to be created for every job ad. 
+
+### How to create screening template
+
+To create a screening template, follow these steps:
+1. Select the screening template from the left-side menu.
+2. To generate a new template, click **+ New**.
+3. Enter a name and description for your template.
+4. After the template is saved, you'll have the option to add questions.
+
+### Add questions to a screening template
+
+1. Click **+ New** and a sidebar pops up.
+2. Enter your question.
+3. Select the **Answer type**:
+ - For **Yes/No**, **Single-select**, or **Numeric answer** types, select **Qualifying** checkbox to require a preferred answer for the question.
+ - If the candidate gives the preferred answer, they pass the screening; if not, they fail.
+ - There can be more than one qualifying question.
