@@ -1,12 +1,13 @@
 ---
 title: Generate the Singapore GST-05 report
 description: Learn about the functionality for generating Singapore GST-05 reports in Microsoft Dynamics 365 Finance, which is used to file a goods and services tax return.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 12/05/2019
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Singapore
 ms.search.validFrom: 2016-02-28
 ms.search.form: TaxAuthority

@@ -1,8 +1,8 @@
 ---
 title: Import or manually create postal codes
 description: Learn how to import and manually create postal codes in the correct format. The import process lets you update the ZIP/postal codes for a specific country/region.
-author: EvgenyPopovMBS
-ms.author: evgenypopov
+author: AdamTrukawka
+ms.author: anisagrawal
 ms.topic: article
 ms.date: 10/31/2017
 ms.reviewer: johnmichalak

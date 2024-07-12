@@ -1,12 +1,13 @@
 ---
 title: Export ledger transactions
 description: Learn about how to export ledger account balances to a plain text (ASCII) file in CED format for Belgium, including prerequisites and an outline on setup.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 12/02/2020
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Belgium
 ms.search.validFrom: 2016-05-31
 ms.search.form: TaxReportExtraFieldsBE

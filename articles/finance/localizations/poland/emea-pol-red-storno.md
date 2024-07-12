@@ -3,10 +3,11 @@ title: Activate Storno accounting for Poland
 description: Learn about storno accounting for Poland, including outlines for activating storno accounting and creating an invoice storno credit note.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
-ms.date: 09/11/2018
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/10/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Poland
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1

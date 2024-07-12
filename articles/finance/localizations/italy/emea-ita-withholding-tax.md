@@ -1,12 +1,13 @@
 ---
 title: Withholding tax for Italy
 description: Learn how to configure up Italy-specific settings for withholding tax and Italian withholding tax reports with a table that defines various field groups.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 04/10/2017
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Italy
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611

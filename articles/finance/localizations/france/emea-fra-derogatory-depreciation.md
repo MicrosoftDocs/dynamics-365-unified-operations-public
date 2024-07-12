@@ -1,12 +1,13 @@
 ---
 title: Derogatory depreciation for France
 description: An extra amount of depreciation is calculated as the difference between the depreciation amount on the tax value model and the accounting value model.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
 ms.date: 06/20/2017
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: France
 ms.search.validFrom: 2016-02-28
 ms.search.form: AssetPosting, AssetBook, AssetBookTable
