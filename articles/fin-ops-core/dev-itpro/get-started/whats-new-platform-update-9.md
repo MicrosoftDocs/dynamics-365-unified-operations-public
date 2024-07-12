@@ -4,8 +4,10 @@ description: Learn about the new or changed features in Dynamics 365 for Finance
 author: sericks007
 ms.author: sericks
 ms.topic: article
-ms.date: 07/27/2017
-ms.custom:
+ms.date: 07/12/2024
+ms.custom: 
+  - bap-template
+  - evergreen
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global

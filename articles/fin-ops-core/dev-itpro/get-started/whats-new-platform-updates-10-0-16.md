@@ -4,8 +4,10 @@ description: Learn about the features that are included in the platform updates 
 author: sericks007
 ms.author: sericks
 ms.topic: article
-ms.date: 11/30/2020
-ms.custom:
+ms.date: 07/12/2024
+ms.custom: 
+  - bap-template
+  - evergreen
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
