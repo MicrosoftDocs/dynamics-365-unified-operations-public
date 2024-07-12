@@ -2,8 +2,8 @@
 
 # required metadata
 
-title: Dynamics 365 Human Resources (preview) app
-description: This article describes the Microsoft Dynamics 365 Human Resources (preview) app.
+title: Dynamics 365 Human Resources app (preview)
+description: This article describes the Microsoft Dynamics 365 Human Resources app (preview).
 author: twheeloc
 ms.date: 07/11/2024
 ms.topic: overview
@@ -23,12 +23,12 @@ ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
 
 ---
-# Dynamics 365 Human Resources (preview) app
+# Dynamics 365 Human Resources app (preview)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-The Human Resources (preview) app is integrated with Microsoft Dynamics 365 Human Resources. It helps organizations ensure that their employees can seamlessly request, edit, and cancel time off and leave of absence requests. Employees can view leave balances, upcoming leaves, and leave history in one app. Managers can also use the app to view requests, and approve or reject them.
+The Human Resources app (preview) is integrated with Microsoft Dynamics 365 Human Resources. It helps organizations ensure that their employees can seamlessly request, edit, and cancel time off and leave of absence requests. Employees can view leave balances, upcoming leaves, and leave history in one app. Managers can also use the app to view requests, and approve or reject them.
 
 The Human Resources app can be used in Microsoft Teams or in a web browser. It can be used on both mobile devices and desktop devices.
 
