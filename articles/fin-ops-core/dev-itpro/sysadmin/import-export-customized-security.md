@@ -4,7 +4,7 @@ description: Learn about how a customized security configuration can be exported
 author: pnghub
 ms.author: gned
 ms.topic: article
-ms.date: 907/12/2024
+ms.date: 07/12/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-07-31
