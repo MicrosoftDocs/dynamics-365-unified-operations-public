@@ -4,7 +4,10 @@ description: Learn about new or changed in Dynamics 365 for Operations platform 
 author: sericks007
 ms.author: sericks
 ms.topic: article
-ms.date: 08/16/2019
+ms.date: 07/12/2024
+ms.custom: 
+  - bap-template
+  - evergreen
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: global
