@@ -4,7 +4,7 @@ description: Learn how to set up and generate the Japan consumption tax report f
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 03/13/2024
+ms.date: 07/12/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
