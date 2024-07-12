@@ -95,6 +95,17 @@ To add a hiring template to a job ad, follow these steps.
 1. Open a job ad that's in **Draft** status.
 1. On the **Hiring process** tab, select the search field for the hiring template.
 1. Select the hiring template in the list.
+
+
+### Screening questions
+Recruiters can add a set of questions related to specific job ads. Candidates answer these questions during the application process. The responses provided by applicants can be used by recruiters to filter through applicants for job vacancies. Recruiters can tailor these questions to suit the needs of the job opening, such as years of experience or willingness to relocate. For instance, if a recruiter is looking for candidates with a minimum of 5 years’ experience, they could swiftly eliminate applicants who have less experience.
+
+To add screening questions, follow these steps. (optional)
+1. Go to **Screening questions** tab in a draft job ad.
+2. Click **Search** for the **Screening** template. This displays the **Screening** templates.
+3. Select the **Screening** template from the list. Multiple templates can be selected.
+4. All the questions on the selected templates will be displayed.
+
  
 ## Job ad approval
 
