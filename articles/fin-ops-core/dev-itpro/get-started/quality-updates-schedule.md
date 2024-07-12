@@ -166,6 +166,8 @@ The following table shows the high-level train schedule. It includes a descripti
 
 **Platform version: 7.0.7279.100**
 
+**Unified Environment Provisioning Application Version: 10.0.40.3**
+
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
 | Station 1 | July 15 to July 18, 2024 | NA |
