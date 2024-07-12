@@ -65,7 +65,7 @@ To install the Human Resources app for the first time, follow these steps.
 4. Select **Human Resources** to access the Human Resources app on AppSource, and then select **Get it now**.
 5. You're redirected to Power Platform admin center.
 6. Sign in to Power Platform admin center, select your environment, and then select **Install**.
-7. To check the status of the installation, in Power Platform admin center, select **Environments**, select your environment, and then, in the **Resources** section, select **Dynamics 365 apps**. If the installation is successful, the value in the **Status** column for Dynamics 365 Human Resources is changed to **Installed**. If the installation fails, try to install the app again by selecting **Retry installation** in Power Platform admin center.
+7. To check the status of the installation, in Power Platform admin center, select **Environments**, select your environment, and then, in the **Resources** section, select **Dynamics 365 apps**. If the installation is successful, the **Status** column for Dynamics 365 Human Resources is changed to **Installed**. If the installation fails, try to install the app again by selecting **Retry installation** in Power Platform admin center.
 
 ## Update the Human Resources app
 
@@ -99,7 +99,7 @@ To embed the Human Resources app in Microsoft Teams, see [Embed a model-driven a
 
 ### Request leave
 
-1. Select either the **Request** button on an available balance tile or the **Request time off** button. A new page contains **Leave type**, **Reason code**, **Start date**, and **End date** fields that must be set.
+1. Select either the **Request** button on the **Available balance** tile or the **Request time off** button. A new page contains **Leave type**, **Reason code**, **Start date**, and **End date** fields that must be set.
 2. Select **Add**.
 3. The selected number of days appears in **Selected dates**. To update the details of the dates, select **Edit days present**, and then follow these steps:
 
@@ -151,7 +151,7 @@ Users who have the HR Manager or HR Absence manager role can use the Human Resou
 
 If you must send a team's notifications to users who approve leave requests, the notifications are sent to both Outlook and Teams. For the team's application, confirm that the Approvals app is installed in the end user's Microsoft Teams. For Outlook, no additional setup is required. You can also approve or reject leave requests directly from Outlook.
 
-There are three new connection references. All the connection references are part of the default solution. Customers can update or edit the connections in the connection reference. These actions don't create an unmanaged version of the Human Resources Teams app.
+There are three new connection references. All the connection references are part of the default solution. Customers can update or edit the connections in the connection reference. These actions will not create an unmanaged version of the Human Resources Teams app.
 
 > [!NOTE]
 > All the connection references must be linked with the system administrator connection, because the system administrator runs the flows on behalf of the users.
