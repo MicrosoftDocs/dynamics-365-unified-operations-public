@@ -3,10 +3,11 @@ title: One-time customers
 description: Learn about one-time customers, including a step-by-step process for indicating that a customer is a one-time customer.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Spain
 ms.search.validFrom: 2016-11-30
 ms.search.form: CustTable

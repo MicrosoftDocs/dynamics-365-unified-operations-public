@@ -1,12 +1,13 @@
 ---
 title: Move a fixed asset to inventory
 description: Learn about country/region-specific functionality for Hungary that lets you transfer fixed assets to inventory at the net book value.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 04/20/2017
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Hungary
 ms.search.validFrom: 2016-11-30
 ms.search.form: InventJournalAsset

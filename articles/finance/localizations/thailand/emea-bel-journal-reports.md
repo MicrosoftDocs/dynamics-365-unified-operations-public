@@ -1,12 +1,13 @@
 ---
 title: Journal reports
 description: Learn how to work with journal reports that are specific to legal entities with a primary address in Belgium, including a table that defines various fields.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 04/08/2021
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Thailand
 ms.search.validFrom: 2016-11-30
 ms.search.form: TaxTable, VendParameters, CustParameters
