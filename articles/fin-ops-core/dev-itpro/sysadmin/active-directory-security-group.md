@@ -4,7 +4,7 @@ description: Learn about the Active Directory security groups feature, including
 author: pnghub
 ms.author: gned
 ms.topic: article
-ms.date: 007/12/2024
+ms.date: 07/12/2024
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2022-11-10
