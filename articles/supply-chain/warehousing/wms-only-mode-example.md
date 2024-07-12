@@ -45,6 +45,9 @@ The same message structure logic applies to both the inbound and outbound shipme
 
 - Complete
 
+> [!TIP]
+> More examples of HTTP requests for message creation, as well as inventory and product master data integration, are available on [GitHub](https://github.com/microsoft/dynamics365scm-warehouse/tree/main/wom-http).
+
 <!-- This example uses [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) to create simple orders that have minimal payload.
 
 If you want, you can create a *fork* of the [Postman environment and collection examples](https://go.microsoft.com/fwlink/?linkid=2250135). Be sure to select the environment and fill in the correct environment variables before you run the `CREATE TOKEN VARIABLE` collection.-->
