@@ -24,8 +24,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Deprecation of US payroll tax updates
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
 This article describes the deprecation of tax updates for US payroll.
 
 As of the 10.0.40 release of Microsoft Dynamics 365 Finance, tax updates are retired for the US payroll feature. Customers can now choose among different third-party solutions that are available on AppSource and other integrations with Dynamics 365 Human Resources.
@@ -59,5 +57,5 @@ The following table provides a detailed overview of functionality that still wor
 - Previously generated pay statements and processed payroll still exist. However, new ones can't be processed or generated.
 - Customers should integrate with third-party payroll providers by using the developed entities. For more information, see the following articles:
 
-    - [Payroll integration API introduction](hr-admin-integration-payroll-api-introduction.md)
-    - [Payroll entities](hr-admin-integration-payroll-api-payroll-employee.md)
+    - [Payroll integration API introduction](/human-resources/hr-admin-integration-payroll-api-introduction.md)
+    - [Payroll entities](/human-resources/hr-admin-integration-payroll-api-payroll-employee.md)
