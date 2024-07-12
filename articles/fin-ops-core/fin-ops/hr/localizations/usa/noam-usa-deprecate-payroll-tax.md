@@ -57,5 +57,5 @@ The following table provides a detailed overview of functionality that still wor
 - Previously generated pay statements and processed payroll still exist. However, new ones can't be processed or generated.
 - Customers should integrate with third-party payroll providers by using the developed entities. For more information, see the following articles:
 
-    - [Payroll integration API introduction](/human-resources/hr-admin-integration-payroll-api-introduction)
-    - [Payroll entities](/human-resources/hr-admin-integration-payroll-api-payroll-employee)
+    - [Payroll integration API introduction](../../../human-resources/hr-admin-integration-payroll-api-introduction.md)
+    - [Payroll entities](../../../human-resources/hr-admin-integration-payroll-api-payroll-employee.md)
