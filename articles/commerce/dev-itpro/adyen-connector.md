@@ -207,6 +207,7 @@ The following countries/regions have Commerce components available and card pres
 | Latvia | ✔ |
 | Lithuania | ✔ |
 | Malaysia | ✔ |
+| Mexico | ✔ |
 | Netherlands | ✔ |
 | New Zealand | ✔ |
 | Norway | ✔ |
