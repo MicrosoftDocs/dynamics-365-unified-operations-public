@@ -4,8 +4,10 @@ description: Learn aboutthe features are included in the platform updates for ve
 author: sericks007
 ms.author: sericks
 ms.topic: article
-ms.date: 10/15/2020
-ms.custom:
+ms.date: 07/12/2024
+ms.custom: 
+  - bap-template
+  - evergreen
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
