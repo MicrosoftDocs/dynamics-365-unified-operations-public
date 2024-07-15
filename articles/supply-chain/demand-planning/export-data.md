@@ -62,7 +62,7 @@ Each time that your organization has to run a new type of data export, a manager
 
         - If more than one version of the time series is available, select the version that you want to use in the **Output version** field.
         - To remove a time series, select it, and then select **Remove** on the toolbar.
-        - To set up one or more filter rules to apply to the exported data, select **Filter data source** on the toolbar. Each export profile can export to just one legal entity. If the time series has legal entity as a dimension, you must set up a legal entity filter to select which legal entity to export to. If you must export to multiple legal entities, create an export profile for each of them.
+        - To set up one or more filter rules to apply to the exported data, select **Filter data source** on the toolbar.
 
 1. When you've finished selecting and setting up the time series to export, select **Next**.
 1. On the **Map columns** page, use the dropdown lists to map each column in the selected time series to the appropriate column in the target Supply Chain Management data entity. When you've finished, select **Next**.
@@ -72,3 +72,9 @@ Each time that your organization has to run a new type of data export, a manager
 1. Select **Next**.
 1. On the **Review and finish** page, review the summary of settings that you've configured, and then select **Review and finish** to create the new profile.
 1. The profile is now available, but it hasn't yet run. To run it, follow the instructions in the [View and run existing data export profiles to export to Supply Chain Management](#existing-export-profiles) section.
+
+## Cleanup staging table in D365 Supply Chain Management
+If you’re experiencing a slowdown in performance, it may be necessary to clear the staging data from the **Forecast Sales Import Entity entity**. This can be accomplished in one of two ways:
+
+1. Set up an [automatic cleanup](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/staging-tables) process to regularly clear the staging data. 
+2. Manually clear the [staging data](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/staging-tables) as needed. 
