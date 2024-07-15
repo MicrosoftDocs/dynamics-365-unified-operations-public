@@ -59,8 +59,8 @@ To use matching rules to automatically settle open customer invocies, follow the
 1. Select **New** to create a matching rule.
 1. Set the **Matching rule code** and **Name** fields.
 1. In the **Action** field, select **Settle customer invoice**
-1. On the **Step 1: Find statement lines to generate customer payment journals** FastTab, define the criteria. This step will filter the relevant bank statement lines to run against this rule.
-1. On the **Step 2: Match open invoices** FastTab, define the criteria. This step will try to match bank statement line with the open customer invocies in the current legal entity. If an open customer invoices can be successfully matched, then a customer payment journal will be posted with the customer account found on the open customer invocie, and then this cusotmer payment journal will be settled with the open customer invoice.
+1. On the **Step 1: Find statement lines to generate customer payment journals** FastTab, define the criteria. This step filters the relevant bank statement lines to run against this rule.
+1. On the **Step 2: Match open invoices** FastTab, define the criteria. This step tries to match bank statement line with the open customer invocies in the current legal entity. If an open customer invoices can be successfully matched, then a customer payment journal is posted with the customer account found on the open customer invocie. The posted cusotmer payment journal is settled with the open customer invoice.
 1. On the **Step 3: Customer payment journal parameters** FastTab, set the following fields per legal entity:
 
     - **Default method of payment**
@@ -84,11 +84,13 @@ To use matching rules to automatically generate customer payment without settlin
 1. Select **New** to create a matching rule.
 1. Set the **Matching rule code** and **Name** fields.
 1. In the **Action** field, select **Generate customer payment** 
-1. On the **Step 1: Find statement lines to generate customer payment journals** FastTab, define the criteria. This step will filter the relevant bank statement lines to run against this rule.
-1. On the **Step 2 (Optional): Identify customer account through invoice matching** FastTab, define the criteria. This step will try to match bank statement line with the open or closed customer invocies in the current legal entity. If an open or closed customer invoices can be successfully matched, then a customer payment journal will be posted with the customer account found on the open customer invocie. Please notice that this rule will not settle the customer payment journal with the matched customer invoice.
+1. On the **Step 1: Find statement lines to generate customer payment journals** FastTab, define the criteria. This step filters the relevant bank statement lines to run against this rule.
+1. On the **Step 2 (Optional): Identify customer account through invoice matching** FastTab, define the criteria. This step tries to match bank statement line with the open or closed customer invocies in the current legal entity. If an open or closed customer invoices can be successfully matched, then a customer payment journal is posted with the customer account found on the open customer invocie. Notice that this rule does not settle the customer payment journal with the matched customer invoice.
 1. On the **Step 3: Customer payment journal parameters** FastTab, set the following fields:
 
-    - **Automatic customer account matching**. If this paramter is turned on, then the rule will try to match IBAN and bank account number fields on customer master data with the info on bank statement lines. If matched, then the relevant customer account will be used to post the customer payment journal. If this parameter is turned off, then the user must specify a customer account to post the customer payment journal.
+    - **Automatic customer account matching**.
+        - If this paramter is turned on, then the rule tries to match IBAN and bank account number fields on customer master data with the info on bank statement lines. If matched, then the relevant customer account is used to post the customer payment journal.
+        - If this parameter is turned off, then the user must specify a customer account to post the customer payment journal.
     - **Customer account** 
     - **Accounting date**
     - **Default method of payment**
@@ -111,7 +113,7 @@ To use matching rules to automatically generate customer payment without settlin
 1. Select **New** to create a matching rule.
 1. Set the **Matching rule code** and **Name** fields.
 1. In the **Action** field, select **Generate vendor payment** 
-1. On the **Step 1: Find statement lines to generate vendor payment** FastTab, define the criteria. This step will filter the relevant bank statement lines to run against this rule.
+1. On the **Step 1: Find statement lines to generate vendor payment** FastTab, define the criteria. This step filters the relevant bank statement lines to run against this rule.
 1. On the **Step 2: Vendor payment parameters** FastTab, set the following fields:
 
     - **Vendor account** 
