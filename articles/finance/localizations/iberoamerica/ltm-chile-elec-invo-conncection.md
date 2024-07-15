@@ -17,7 +17,7 @@ This article provides information that will help you get started with Electronic
 
 After you configure electronic invoicing, you can generate, digitally sign, and submit the XML files of electronic invoices to the Authorized Certification Providee **Edicom** according to the [regulatory requirements in Chile](https://www.sii.cl/servicios_online/1039-1182.html).
 
-![Diagram of the electronic invoicing workflow in Chile.](ltm-chl-e-invoice-workflow.jpg)
+![Diagram of the electronic invoicing workflow in Chile.](../global/ltm-chl-e-invoice-workflow.jpg)
 
 ## <a name="prerequisites"></a>Prerequisites
 
