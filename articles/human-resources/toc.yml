@@ -789,9 +789,9 @@ items:
         href: hr-learning-create-closed-ended-question.md
       - name: Create a dependent question
         href: hr-learning-depending-question.md
-    - name: Human Resources app (preview)
+    - name: Human Resources app for leave and absence
       items:
-        - name: Human Resources app (preview)
+        - name: Human Resources app for leave and absence
           href: hr-app.md
     - name: Use the Workflow system
       items:
