@@ -55,12 +55,12 @@ To manually complete cash application on the reconciliation worksheet, follow th
 
 To use matching rules to automatically settle open customer invoices, follow these steps.
 
-1. Go to **Cash and bank management** > **Setup** > **Advanced bank reconciliation setup** > **Reconciliation matching rules**.
+1. Go to **Cash and bank management** \> **Setup** \> **Advanced bank reconciliation setup** \> **Reconciliation matching rules**.
 2. Select **New** to create a matching rule.
 3. Set the **Matching rule code** and **Name** fields.
 4. In the **Action** field, select **Settle customer invoice**
 5. On the **Step 1: Find statement lines to generate customer payment journals** FastTab, define the criteria. This step filters the relevant bank statement lines to run against this rule.
-6. On the **Step 2: Match open invoices** FastTab, define the criteria. This step matches bank statement line with the open customer invoices in the current legal entity. If open customer invoices can be successfully matched, then a customer payment journal is posted with the customer account on the open customer invoice. The posted customer payment journal is settled with the open customer invoice.
+6. On the **Step 2: Match open invoices** FastTab, define the criteria. This step matches bank statement lines with the open customer invoices in the current legal entity. If open customer invoices can be successfully matched, a customer payment journal is posted with the customer account that's found on the open customer invoice. The posted customer payment journal is settled with the open customer invoice.
 7. On the **Step 3: Customer payment journal parameters** FastTab, set the following fields per legal entity:
 
     - **Default method of payment**
@@ -68,64 +68,66 @@ To use matching rules to automatically settle open customer invoices, follow the
     - **Accounting date**
     - **Financial dimensions**
 
-8. Click **Save** and then **Activate**.
+8. Select **Save** and then **Activate**.
 9. Optional: You can include the matching rule in matching rule sets.
-10. Go to **Cash and bank management** > **Bank statement reconciliation** > **Bank reconciliation**.
+10. Go to **Cash and bank management** \> **Bank statement reconciliation** \> **Bank reconciliation**.
 11. Open or create a bank reconciliation worksheet.
 12. Select **Run matching rules**.
-13. Select either the matching rule or a matching rule set that contains that matching rule.
+13. Select either the matching rule or a matching rule set that contains the matching rule.
 14. Select **OK** to run the automatic matching.
 
-### Generate customer payments 
+### Generate customer payments
 
 To use matching rules to automatically generate customer payments without settling customer invoices, follow these steps.
 
-1. Go to **Cash and bank management** > **Setup** > **Advanced bank reconciliation setup** > **Reconciliation matching rules**.
-2. Click **New** to create a matching rule.
+1. Go to **Cash and bank management** \> **Setup** \> **Advanced bank reconciliation setup** \> **Reconciliation matching rules**.
+2. Select **New** to create a matching rule.
 3. Set the **Matching rule code** and **Name** fields.
-4. In the **Action** field, select **Generate customer payment**. 
+4. In the **Action** field, select **Generate customer payment**.
 5. On the **Step 1: Find statement lines to generate customer payment journals** FastTab, define the criteria. This step filters the relevant bank statement lines to run against this rule.
-6. On the **Step 2 (Optional): Identify customer account through invoice matching** FastTab, define the criteria. This step matches bank statement line with the open or closed customer invoices in the current legal entity. If open or closed customer invoices can be successfully matched, a customer payment journal is posted with the customer account found on the open customer invoice. This rule doesn't settle the customer payment journal with the matched customer invoice.
+6. On the **Step 2 (Optional): Identify customer account through invoice matching** FastTab, define the criteria. This step matches bank statement lines with the open or closed customer invoices in the current legal entity. If open or closed customer invoices can be successfully matched, a customer payment journal is posted with the customer account that's found on the open customer invoice. This rule doesn't settle the customer payment journal with the matched customer invoice.
 7. On the **Step 3: Customer payment journal parameters** FastTab, set the following fields:
 
-    - **Automatic customer account matching**.
-        - If this parameter is turned on, then the rule tries to match IBAN and bank account number fields on customer master data with the info on bank statement lines. If matched, the relevant customer account is used to post the customer payment journal.
-        - If this parameter is turned off, a customer account must be specified to post the customer payment journal.
+    - **Automatic customer account matching**
+
+        - If this parameter is turned on, the rule tries to match International Bank Account Number (IBAN) and bank account number fields in customer master data with the information on bank statement lines. If matching is successful, the relevant customer account is used to post the customer payment journal.
+        - If this parameter is turned off, a customer account must be specified before the customer payment journal can be posted.
+
     - **Customer account** 
     - **Accounting date**
     - **Default method of payment**
     - **Default bank transaction type**
     - **Financial dimensions**
 
-8. Click **Save**, then **Activate**.
+8. Select **Save** and then **Activate**.
 9. Optional: You can include the matching rule in matching rule sets.
-10. Go to **Cash and bank management** > **Bank statement reconciliation** > **Bank reconciliation**.
+10. Go to **Cash and bank management** \> **Bank statement reconciliation** \> **Bank reconciliation**.
 11. Open or create a bank reconciliation worksheet.
-12. Click **Run matching rules**.
+12. Select **Run matching rules**.
 13. Select either a matching rule or a matching rule set that contains the matching rule.
-14. Click **OK** to run the automatic matching.
+14. Select **OK** to run the automatic matching.
 
-### Generate vendor payments 
+### Generate vendor payments
 
 To use matching rules to automatically generate vendor payments without settling vendor invoices, follow these steps.
 
-1. Go to **Cash and bank management** > **Setup** > **Advanced bank reconciliation setup** > **Reconciliation matching rules**.
-2. Click **New** to create a matching rule.
+1. Go to **Cash and bank management** \> **Setup** \> **Advanced bank reconciliation setup** \> **Reconciliation matching rules**.
+2. Select **New** to create a matching rule.
 3. Set the **Matching rule code** and **Name** fields.
-4. In the **Action** field, select **Generate vendor payment**. 
+4. In the **Action** field, select **Generate vendor payment**.
 5. On the **Step 1: Find statement lines to generate vendor payment** FastTab, define the criteria. This step filters the relevant bank statement lines to run against this rule.
 6. On the **Step 2: Vendor payment parameters** FastTab, set the following fields:
 
-    - **Vendor account** 
+    - **Vendor account**
     - **Accounting date**
     - **Method of payment**
     - **Bank transaction type**
     - **Financial dimensions**
 
-7. Click **Save** and then **Activate**.
+7. Select **Save** and then **Activate**.
 8. Optional: You can include the matching rule in matching rule sets.
-9. Go to **Cash and bank management** > **Bank statement reconciliation** > **Bank reconciliation**.
+9. Go to **Cash and bank management** \> **Bank statement reconciliation** \> **Bank reconciliation**.
 10. Open or create a bank reconciliation worksheet.
-11. Click **Run matching rules**.
+11. Select **Run matching rules**.
 12. Select either a matching rule or a matching rule set that contains the matching rule.
-13. Clcick **OK** to run the automatic matching.
+13. Select **OK** to run the automatic matching.
