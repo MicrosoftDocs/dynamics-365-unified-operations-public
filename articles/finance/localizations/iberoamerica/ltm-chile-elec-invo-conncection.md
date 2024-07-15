@@ -14,6 +14,7 @@ ms.reviewer: johnmichalak
 [!include [banner](../../includes/banner.md)]
 
 This article provides information that will help you get started with Electronic invoicing for Chile. It guides you through the configuration steps that are country/region-dependent in Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/e-invoicing-set-up-overview.md).
+For this, we are partnering with Edicom for the last-mile integration with the Chilean Tax Authorities.
 
 After you configure electronic invoicing, you can generate, digitally sign, and submit the XML files of electronic invoices to the Authorized Certification Providee **Edicom** according to the [regulatory requirements in Chile](https://www.sii.cl/servicios_online/1039-1182.html).
 
@@ -22,12 +23,19 @@ After you configure electronic invoicing, you can generate, digitally sign, and 
 > [!NOTE]
 > The electronic invoicing approach that this article describes is implemented by using an invoicing service that's applicable only to cloud deployments of Finance or Supply Chain Management.
 
+> [!IMPORTANT]
+> - This new E-Invoicing globalization feature for Chile requires you to be on MS Dynamics 365 Finance version 10.0.40 specifically on build number 10.0.1935.43 or above. It can only be imported into the new Globalization Studio and it is not supported in RCS.
+
 ## <a name="prerequisites"></a>Prerequisites
 
 Before you begin the procedures in this article, the following prerequisites must be met:
 
 - Gain familiarity with and understanding of Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
 - Do the common part of electronic invoicing service configuration as described in [Set up electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
+- You must enable the following features in **Feature management**:
+	- **Electronic invoicing integration**
+	- **E-Invoicing service workspace designer**
+	- **Execute update actions for submitted documents**
 - Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
     - Inventory e-invoice (CL)
@@ -62,10 +70,26 @@ Some parameters must be configured directly in Finance.
     > [!NOTE]
     > After you import the **Electronic invoicing for Chile** feature, electronic documents are configured by default. Follow these remaining steps of this procedure if you must make changes.
 
-2. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-3. In the **Electronic document** section, add records for the **Customer Invoice journal**, **Customer packing slip journal**, and **Project invoice** table names.
-4. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
-5. Save your changes, and close the page.
+1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+1. In the **Electronic document** section, add records for the **Customer Invoice journal**, **Customer packing slip journal**, and **Project invoice** table names.
+1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
+1. Save your changes, and close the page.
+1. For each table name, select **Response types**, select **New** to create a response type we would get from the back end, and enter the following values:
+
+    - In the **Response type** field, enter **SignedXML** (the default value).
+    - In the **Description** field, enter any meaningful name. Alternatively, leave the field blank.
+    - In the **Submission status** field, select **Pending** .
+    - In the **Data entity name** field, select one of the following values, depending on the table name that you're configuring: 
+
+        - **Customer invoice journal**.
+        - **Customer packing slip journal**.
+        - **Project invoice**.
+
+    - In the **Model mapping** field, select **Edicom source file response format**.
+	- Repeat the above steps for the **Submission status** having the value **Pending update actions execution** to continuously pull for updated statuses, etc. from the tax authority for the submitted documents, by the means of execution of a subset of the actions in the processing pipeline in a loop.
+	
+	> [!NOTE]
+    > The response includes the signed XML obtained from Edicom, which will be stored as an attachment to the corresponding invoice journal in the system. It will eventually be used to generate printable invoices with QR codes.
 
 ## <a name="issue"></a>Issue electronic invoices
 
