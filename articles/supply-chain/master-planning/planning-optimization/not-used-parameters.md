@@ -54,7 +54,7 @@ Planning Optimization doesn't use the following parameters or options on the **C
 
 - **Other** FastTab:
 
-  - **Freeze time fence (days)** – Freeze time fence is supported in Supply Chain Management version 10.0.39 and later. To use it, the feature that is named *Freeze time fence support for Planning Optimization* must be turned on in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+  - **Freeze time fence (days)** – Freeze time fence is supported in Supply Chain Management version 10.0.40 and later. To use it, the feature that is named *Freeze time fence support for Planning Optimization* must be turned on in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
   - **Forecast plan time fence** – Forecast plans aren't supported by Planning Optimization. Instead, create a master plan that specifies a forecast model.
 
 - **Delays** FastTab:
