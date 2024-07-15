@@ -51,26 +51,75 @@ To manually complete cash application on the reconciliation worksheet, follow th
 
 ## Complete cash application by using matching rules
 
-To use matching rules to automatically complete cash application, follow these steps.
+### Settle customer invocie ###
+
+To use matching rules to automatically settle open customer invocies, follow these steps.
 
 1. Go to **Cash and bank management** \> **Setup** \> **Advanced bank reconciliation setup** \> **Reconciliation matching rules**.
 1. Select **New** to create a matching rule.
 1. Set the **Matching rule code** and **Name** fields.
-1. In the **Action** field, select one of the following action types:
+1. In the **Action** field, select **Settle customer invoice**
+1. On the **Step 1: Find statement lines to generate customer payment journals** FastTab, define the criteria. This step will filter the relevant bank statement lines to run against this rule.
+1. On the **Step 2: Match open invoices** FastTab, define the criteria. This step will try to match bank statement line with the open customer invocies in the current legal entity. If an open customer invoices can be successfully matched, then a customer payment journal will be posted with the customer account found on the open customer invocie, and then this cusotmer payment journal will be settled with the open customer invoice.
+1. On the **Step 3: Customer payment journal parameters** FastTab, set the following fields per legal entity:
 
-    - **Generate customer payment** – Post the bank statement transaction as a customer payment journal only, without settling any open customer invoices.
-    - **Generate vendor payment** – Post the bank statement transaction as a vendor payment journal only, without settling any open vendor invoices.
-    - **Settle customer invoice** – Post the bank statement transaction as a customer payment journal, and settle it with matched open customer invoices.
+    - **Default method of payment**
+    - **Default bank transaction type**
+    - **Accounting date**
+    - **Financial dimensions**
 
-1. On the **Find statement lines to generate customer payment** or **Find statement lines to generate vendor payment** FastTab, define the criteria.
-1. On the **Customer payment parameters** or **Vendor payment parameters** FastTab, set the following fields:
+1. Select **Save** and then **Activate**.
+1. Optional: You can include the matching rule in matching rule sets.
+1. Go to **Cash and bank management** \> **Bank statement reconciliation** \> **Bank reconciliation**.
+1. Open or create a bank reconciliation worksheet.
+1. Select **Run matching rules**.
+1. Select either the matching rule that you defined or a matching rule set that contains that matching rule.
+1. Select **OK** to run the automatic matching.
 
-    - **Customer account** or **Vendor account**
+### Generate customer payment ###
+
+To use matching rules to automatically generate customer payment without settling any customer invoice, follow these steps.
+
+1. Go to **Cash and bank management** \> **Setup** \> **Advanced bank reconciliation setup** \> **Reconciliation matching rules**.
+1. Select **New** to create a matching rule.
+1. Set the **Matching rule code** and **Name** fields.
+1. In the **Action** field, select **Generate customer payment** 
+1. On the **Step 1: Find statement lines to generate customer payment journals** FastTab, define the criteria. This step will filter the relevant bank statement lines to run against this rule.
+1. On the **Step 2 (Optional): Identify customer account through invoice matching** FastTab, define the criteria. This step will try to match bank statement line with the open or closed customer invocies in the current legal entity. If an open or closed customer invoices can be successfully matched, then a customer payment journal will be posted with the customer account found on the open customer invocie. Please notice that this rule will not settle the customer payment journal with the matched customer invoice.
+1. On the **Step 3: Customer payment journal parameters** FastTab, set the following fields:
+
+    - **Automatic customer account matching**. If this paramter is turned on, then the rule will try to match IBAN and bank account number fields on customer master data with the info on bank statement lines. If matched, then the relevant customer account will be used to post the customer payment journal. If this parameter is turned off, then the user must specify a customer account to post the customer payment journal.
+    - **Customer account** 
+    - **Accounting date**
+    - **Default method of payment**
+    - **Default bank transaction type**
+    - **Financial dimensions**
+
+1. Select **Save** and then **Activate**.
+1. Optional: You can include the matching rule in matching rule sets.
+1. Go to **Cash and bank management** \> **Bank statement reconciliation** \> **Bank reconciliation**.
+1. Open or create a bank reconciliation worksheet.
+1. Select **Run matching rules**.
+1. Select either the matching rule that you defined or a matching rule set that contains that matching rule.
+1. Select **OK** to run the automatic matching.
+
+### Generate vendor payment ###
+
+To use matching rules to automatically generate customer payment without settling any customer invoice, follow these steps.
+
+1. Go to **Cash and bank management** \> **Setup** \> **Advanced bank reconciliation setup** \> **Reconciliation matching rules**.
+1. Select **New** to create a matching rule.
+1. Set the **Matching rule code** and **Name** fields.
+1. In the **Action** field, select **Generate vendor payment** 
+1. On the **Step 1: Find statement lines to generate vendor payment** FastTab, define the criteria. This step will filter the relevant bank statement lines to run against this rule.
+1. On the **Step 2: Vendor payment parameters** FastTab, set the following fields:
+
+    - **Vendor account** 
     - **Accounting date**
     - **Method of payment**
-    - **Bank transaction type**
+    - **Bbank transaction type**
+    - **Financial dimensions**
 
-1. If you selected **Settle customer invoice** as the action type, on the **Match open invoices** FastTab, define the criteria.
 1. Select **Save** and then **Activate**.
 1. Optional: You can include the matching rule in matching rule sets.
 1. Go to **Cash and bank management** \> **Bank statement reconciliation** \> **Bank reconciliation**.
