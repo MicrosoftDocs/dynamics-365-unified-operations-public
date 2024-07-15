@@ -2,8 +2,8 @@
 
 # required metadata
 
-title: Dynamics 365 Human Resources (preview) app
-description: This article describes the Microsoft Dynamics 365 Human Resources (preview) app.
+title: Dynamics 365 Human Resources app for leave and absence
+description: This article describes the Microsoft Dynamics 365 Human Resources app for leave and absence.
 author: twheeloc
 ms.date: 07/11/2024
 ms.topic: overview
@@ -23,14 +23,14 @@ ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
 
 ---
-# Dynamics 365 Human Resources (preview) app
+# Dynamics 365 Human Resources app for leave and absence
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-The Human Resources (preview) app is integrated with Microsoft Dynamics 365 Human Resources. It helps organizations ensure that their employees can seamlessly request, edit, and cancel time off and leave of absence requests. Employees can view leave balances, upcoming leaves, and leave history in one app. Managers can also use the app to view requests, and approve or reject them.
 
-The Human Resources app can be used in Microsoft Teams or in a web browser. It can be used on both mobile devices and desktop devices.
+The Human Resources app for leave and absence is integrated with Microsoft Dynamics 365 Human Resources. It helps organizations ensure that their employees can seamlessly request, edit, and cancel time off and leave of absence requests. Employees can view leave balances, upcoming leaves, and leave history in one app. Managers can also use the app to view requests, and approve or reject them.
+
+The Human Resources app for leave and absence can be used in Microsoft Teams or in a web browser. It can be used on both mobile devices and desktop devices.
 
 Administrators of an organization must install the Human Resources app and share it with Microsoft Teams before organization users can use it.
 
@@ -62,7 +62,7 @@ To install the Human Resources app for the first time, follow these steps.
     1. Search for **Power Apps component framework for canvas apps**, and enable it if it isn't already enabled.
     1. Select **Save**.
 
-4. Select **Human Resources** to access the Human Resources app on AppSource, and then select **Get it now**.
+4. Select **Human Resources** to access the Human Resources app for leave and absence on AppSource, and then select **Get it now**.
 5. You're redirected to Power Platform admin center.
 6. Sign in to Power Platform admin center, select your environment, and then select **Install**.
 7. To check the status of the installation, in Power Platform admin center, select **Environments**, select your environment, and then, in the **Resources** section, select **Dynamics 365 apps**. If the installation is successful, the **Status** column for Dynamics 365 Human Resources is changed to **Installed**. If the installation fails, try to install the app again by selecting **Retry installation** in Power Platform admin center.
