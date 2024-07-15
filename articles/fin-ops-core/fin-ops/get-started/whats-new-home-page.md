@@ -4,9 +4,10 @@ description: Access various resources and topics that describe the new and chang
 author: johnmichalak
 ms.author: johnmichalak
 ms.date: 04/26/2024
-ms.topic: article
+ms.topic: whats-new
 ms.custom: 
-  - bap-template 
+  - bap-template
+  - evergreen 
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Application User
