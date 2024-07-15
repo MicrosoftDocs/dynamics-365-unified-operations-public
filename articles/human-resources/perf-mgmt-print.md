@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up electronic reporting to print performance reviews
-description: This article explains how to set up electronic reporting to print performance reviews in Microsoft Dynamics 365 Human Resources.
+title: Set up Electronic reporting to print performance reviews
+description: This article explains how to set up Electronic reporting (ER) to print performance reviews in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 07/15/2024
 ms.topic: article
@@ -23,28 +23,26 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Set up electronic reporting to print performance reviews
+# Set up Electronic reporting to print performance reviews
 
-This article explains how to set up electronic reporting to print performance reviews in Microsoft Dynamics 365 Human Resources.
-The **Print review** in performance management, requires electronic reporting. For more information, see [Electronic reporting (ER) overview](../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md). 
+This article explains how to set up Electronic reporting (ER) to print performance reviews in Microsoft Dynamics 365 Human Resources.
 
-To set up electronic reporting, follow these steps:
+The **Print review** option in performance management requires ER. For more information, see [Electronic reporting (ER) overview](../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md). 
 
-1.	Go to **Organization administration** > **Electronic reporting**.
-2.	Select **Microsoft** > **Repositories**.
-3.	Choose the **Global type** in the configuration repositories.
-4.	Select **Open**.
-5.	Select **Performance review model** > **Performance review format**.
-6.	Select **Performance review format** configuration, click **Import**.
+To set up ER, follow these steps.
 
-## Print a preformance review
-To print a performance review, follow these steps:
+1. Go to **Organization administration** \> **Electronic reporting**.
+1. Select **Microsoft** \> **Repositories**.
+1. Select the configuration repository of the **Global** type.
+1. Select **Open**.
+1. Select **Performance review model** \> **Performance review format**.
+1. Select the **Performance review format** configuration, and then select **Import**.
 
-1. Go **Human Resources** > **Performance** > **Reviews**.
-2. Select **Print review** option.
-3. In the drop-down menu, select **Performance review format**.
-4. Click **OK**. The review is downloaded to the Downloads folder. 
+## Print a performance review
 
+To print a performance review, follow these steps.
 
-
-
+1. Go **Human Resources** \> **Performance** \> **Reviews**.
+1. Select the **Print review** option.
+1. On the dropdown menu, select **Performance review format**.
+1. Select **OK**. The review is downloaded to the *Downloads* folder.
