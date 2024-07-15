@@ -202,8 +202,7 @@ The next step is to start a new AOS server.
 9. If errors occur while you run **Complete-PreReqs.ps1**, you likely need to update your gMSA account. Run the following script from your infrastructure scripts folder.
 
     ```powershell
-    Import-Module .\D365FO-OP\D365FO-OP.psd1
-    Update-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Create-GMSAAccounts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Update
     ```
 
 12. Run the following script to validate the VM setup.
