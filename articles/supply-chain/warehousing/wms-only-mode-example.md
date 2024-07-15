@@ -46,7 +46,7 @@ The same message structure logic applies to both the inbound and outbound shipme
 - Complete
 
 > [!TIP]
-> More examples of HTTP requests for message creation, as well as inventory and product master data integration, are available on [GitHub](https://github.com/microsoft/dynamics365scm-warehouse/tree/main/wom-http).
+> For more examples of HTTP requests for creating messages and integrating inventory and product master data, go to the [dynamics365scm-warehouse repository on GitHub](https://github.com/microsoft/dynamics365scm-warehouse/tree/main/wom-http).
 
 ## Prerequisites
 
