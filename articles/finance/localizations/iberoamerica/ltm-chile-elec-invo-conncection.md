@@ -27,13 +27,7 @@ After you configure electronic invoicing, you can generate, digitally sign, and 
 Before you begin the procedures in this article, the following prerequisites must be met:
 
 - Gain familiarity with and understanding of Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
-- Sign up for RCS, and set up Electronic invoicing. For more information, see the following articles:
-
-    - [Sign up for and install the Electronic Invoicing service](../global/e-invoicing-sign-up-install.md)
-    - [Set up Azure resources for Electronic invoicing](../global/e-invoicing-set-up-azure-resources.md)
-    - [Install the add-in for microservices in Lifecycle Services](../global/e-invoicing-install-add-in-microservices-lcs.md)
-
-- Activate the integration between your Finance or Supply Chain Management app and the Electronic Invoicing service. For more information, see [Activate and set up integration with Electronic invoicing](../global/e-invoicing-activate-setup-integration.md).
+- Do the common part of electronic invoicing service configuration as described in [Set up electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
 - Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
     - Inventory e-invoice (CL)
