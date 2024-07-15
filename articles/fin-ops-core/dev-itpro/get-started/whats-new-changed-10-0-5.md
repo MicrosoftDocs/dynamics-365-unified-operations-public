@@ -3,7 +3,7 @@ title: What's new or changed in finance and operations apps version 10.0.5 (Octo
 description: Learn about new or changed features in finance and operations apps version 10.0.5. This version was released in October 2019.
 author: sericks007
 ms.author: sericks
-ms.topic: article
+ms.topic: whats-new
 ms.date: 07/12/2024
 ms.custom: 
   - bap-template
