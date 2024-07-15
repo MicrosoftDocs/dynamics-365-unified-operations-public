@@ -4,7 +4,7 @@ description: This article lists the features that are included in the platform u
 author: johnmichalak
 ms.author: johnmichalak
 ms.date: 06/12/2024
-ms.topic: conceptual
+ms.topic: whats-new
 ms.custom: 
   - bap-template
   - evergreen
