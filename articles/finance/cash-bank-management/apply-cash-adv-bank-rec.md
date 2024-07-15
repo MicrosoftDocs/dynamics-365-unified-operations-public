@@ -1,6 +1,6 @@
 ---
 title: Cash application in advanced bank reconciliation
-description: Learn how to complete cash application in advanced bank reconciliation, including prerequisites and an step-by-step processes.
+description: Learn how to complete cash application in advanced bank reconciliation, including prerequisites and a step-by-step processes.
 author: EricWangChen
 ms.author: wangchen
 ms.topic: article
@@ -60,7 +60,7 @@ To use matching rules to automatically settle open customer invoices, follow the
 3. Set the **Matching rule code** and **Name** fields.
 4. In the **Action** field, select **Settle customer invoice**
 5. On the **Step 1: Find statement lines to generate customer payment journals** FastTab, define the criteria. This step filters the relevant bank statement lines to run against this rule.
-6. On the **Step 2: Match open invoices** FastTab, define the criteria. This step matches bank statement lines with the open customer invoices in the current legal entity. If open customer invoices can be successfully matched, a customer payment journal is posted with the customer account that's found on the open customer invoice. The posted customer payment journal is settled with the open customer invoice.
+6. On the **Step 2: Match open invoices** FastTab, define the criteria. This step matches bank statement lines with the open customer invoices in the current legal entity. If open customer invoices can be successfully matched, a customer payment journal is posted with the customer account that is found on the open customer invoice. The posted customer payment journal is settled with the open customer invoice.
 7. On the **Step 3: Customer payment journal parameters** FastTab, set the following fields per legal entity:
 
     - **Default method of payment**
@@ -85,7 +85,7 @@ To use matching rules to automatically generate customer payments without settli
 3. Set the **Matching rule code** and **Name** fields.
 4. In the **Action** field, select **Generate customer payment**.
 5. On the **Step 1: Find statement lines to generate customer payment journals** FastTab, define the criteria. This step filters the relevant bank statement lines to run against this rule.
-6. On the **Step 2 (Optional): Identify customer account through invoice matching** FastTab, define the criteria. This step matches bank statement lines with the open or closed customer invoices in the current legal entity. If open or closed customer invoices can be successfully matched, a customer payment journal is posted with the customer account that's found on the open customer invoice. This rule doesn't settle the customer payment journal with the matched customer invoice.
+6. On the **Step 2 (Optional): Identify customer account through invoice matching** FastTab, define the criteria. This step matches bank statement lines with the open or closed customer invoices in the current legal entity. If open or closed customer invoices can be successfully matched, a customer payment journal is posted with the customer account that is found on the open customer invoice. This rule doesn't settle the customer payment journal with the matched customer invoice.
 7. On the **Step 3: Customer payment journal parameters** FastTab, set the following fields:
 
     - **Automatic customer account matching**
