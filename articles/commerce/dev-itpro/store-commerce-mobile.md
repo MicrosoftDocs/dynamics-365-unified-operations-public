@@ -46,6 +46,7 @@ The following table compares the capabilities of the Store Commerce app across W
 | Feature                                                      | Windows | Android | iOS  |
 | ------------------------------------------------------------ | ------- | ------- | ---- |
 | Dedicated hardware station                                   | Yes     | Yes     | Yes  |
+| Dedicated hardware station extensibility to support external payment connectors                                   | Yes     | Planned for 2024 Wave 2     | No  |
 | Shared hardware station                                      | Yes     | Yes     | Yes  |
 | Communication with networked peripherals (payment terminal, printer, and cash drawer) | Yes     | Yes     | Yes  |
 | OLE for Point of Sale (OPOS) peripherals through a local hardware station | Yes     | No      | No   |
