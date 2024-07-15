@@ -24,7 +24,7 @@ After you configure electronic invoicing, you can generate, digitally sign, and 
 > The electronic invoicing approach that this article describes is implemented by using an invoicing service that's applicable only to cloud deployments of Finance or Supply Chain Management.
 
 > [!IMPORTANT]
-> - This new E-Invoicing globalization feature for Chile requires you to be on MS Dynamics 365 Finance version 10.0.40 specifically on build number 10.0.1935.43 or above. It can only be imported into the new Globalization Studio and it is not supported in RCS.
+> This new E-Invoicing globalization feature for Chile requires you to be on MS Dynamics 365 Finance version 10.0.40 specifically on build number 10.0.1935.43 or above. It can only be imported into the new Globalization Studio and it is not supported in RCS.
 
 ## <a name="prerequisites"></a>Prerequisites
 
@@ -51,7 +51,15 @@ Before you begin the procedures in this article, the following prerequisites mus
 
 ## <a name="countryregion"></a>Country/region-specific configuration for Electronic invoicing for Chile
 
-Some parameters of the **E-Invoicing for Chile: ISV last-mile connector with Edicom** feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, review the default values, and update them as required, so that they better reflect your business operations.
+Some parameters of the **E-Invoicing for Chile: ISV last-mile connector with Edicom** feature are published with default values. 
+Before you deploy the electronic invoicing feature to the service environment, 
+review the default values, and update them as required, so that they better reflect your business operations.
+In addition, complete common parameters on the **Feature parameters** tab.
+In case of Chile, we interact with Edicom at least three times in the pipeline, first to submit the invoice, next to fetch the signed XML, and finally to fetch the status of the submitted invoice.
+Each of these interactions requires common parameters such as Edicom connection details and the authentication token provided by Edicom.
+These values will be provided by Edicom when a company onboards.
+
+
 
 1. Import the latest version of the **Chilean electronic invoice (CL)** Globalization feature. For more information, see [Import features from the Global repository](../global/e-invoicing-import-feature-global-repository.md).
 2. Create a copy of the imported Globalization feature, and select your configuration provider. For more information, see [Create a Globalization feature](../global/e-invoicing-create-new-globalization-feature.md).
