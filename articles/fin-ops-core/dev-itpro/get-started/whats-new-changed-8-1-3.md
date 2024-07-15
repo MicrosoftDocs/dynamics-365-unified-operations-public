@@ -9,7 +9,6 @@ ms.custom:
   - bap-template
   - evergreen
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Release 8.1.3 
