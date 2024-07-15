@@ -9,11 +9,8 @@ ms.custom:
   - bap-template
   - evergreen
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
-ms.search.validFrom: 
 ms.dyn365.ops.version: Release 10.0.6 
-ms.assetid: 
 ---
 
 # What's new or changed in finance and operations apps version 10.0.6 (November 2019)
