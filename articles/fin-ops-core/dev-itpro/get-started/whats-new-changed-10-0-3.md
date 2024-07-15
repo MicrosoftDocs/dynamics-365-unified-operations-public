@@ -9,9 +9,7 @@ ms.custom:
   - bap-template
   - evergreen
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
-ms.search.validFrom: 
 ms.dyn365.ops.version: Release 10.0.3
 ms.assetid: a362a31d-44df-45c5-b698-64c5264c592e
 ROBOTS: NOINDEX, NOFOLLOW
