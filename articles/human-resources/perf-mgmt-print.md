@@ -26,7 +26,7 @@ ms.dyn365.ops.version: Human Resources
 # Set up electronic reporting to print performance reviews
 
 This article explains how to set up electronic reporting to print performance reviews in Microsoft Dynamics 365 Human Resources.
-The **Print review** in performance management, requires electronic reporting. For more information, see [Electronic reporting (ER) overview](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md). 
+The **Print review** in performance management, requires electronic reporting. For more information, see [Electronic reporting (ER) overview](../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md). 
 
 To set up electronic reporting, follow these steps:
 
