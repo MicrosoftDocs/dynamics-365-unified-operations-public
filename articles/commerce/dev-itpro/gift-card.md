@@ -47,7 +47,7 @@ To configure a card type, follow these steps.
 To configure card numbers, follow these steps.
 
 1. In headquarters, on the **Card types** page, select the newly created gift card, and then select **Card numbers**.
-    ![Card types form with Card numbers selected](../media/card_types.png).
+    ![Card types form with Card numbers selected](../media/card_types.png)
 2. Specify the range of card numbers that should be used for external gift cards, and then select **Save**.
 
 In the following example, if the first four digits of a card number are **6036**, the card is mapped to the gift card that you set up [Configure card types](#configure-card-types).
