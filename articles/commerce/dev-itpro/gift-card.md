@@ -50,7 +50,7 @@ To configure card numbers, follow these steps.
     ![Card types form with Card numbers selected](../media/card_types.png).
 2. Specify the range of card numbers that should be used for external gift cards, and then select **Save**.
 
-In the following example, if the first four digits of a card number are **6036**, the card will be mapped to the gift card that you set up in the "Card types" section of this article.
+In the following example, if the first four digits of a card number are **6036**, the card is mapped to the gift card that you set up [Configure card types](#configure-card-types).
 
 | Field name         | Value |
 |--------------------|-------|
@@ -131,7 +131,7 @@ To update the button grid, follow these steps.
     | Gift card balance | External Gift Card | Ext Gift card balance |
     | Pay gift card     | External Gift Card | Ext Pay gift card     |
 
-    When you've finished, your button layout should resemble the following illustration.
+    When configured, your button layout should resemble the following example image.
 
     ![Completed button layout.](./media/10.png)
 
@@ -152,12 +152,12 @@ To configure and test Store Commerce, follow these steps.
 
 1. Start the Store Commerce application.
 2. Sign in by using the standard credentials.
-3. When you're prompted, select **Perform a non-drawer operation**.
+3. When prompted, select **Perform a nondrawer operation**.
 4. On the main screen, select **Select hardware station**.
 5. On the bar on the right side of the page, select **Manage**.
 6. Turn on **Virtual Peripherals**, and then select **OK**.
 7. In the **Available paired stations** field, select **Virtual Peripherals**.
-8. You're prompted to either open a new shift or perform non-drawer operations. You can now open a new shift.
+8. When prompted to either open a new shift or perform nondrawer operations, open a new shift.
 9. On the main screen, select **Current transaction**.
 10. Select **Gift cards**.
 11. Select **Ext Issue gift card**.
@@ -188,13 +188,13 @@ For the call center and storefront, the Adyen connector supports the following g
 
 ### Tokenization
 
-The out-of-box implementation and Payments software development kit (SDK) support for external gift cards in the call center and storefront requires tokenization. When external gift cards are processed, tokens are used to refer to the actual gift card number. This is important for 3rd party implementations because without tokens, external gift card processing may not function correctly. For example, if a gift card payment is captured when it's added to an order, but an issue occurs during order creation, the gift card payment will be reversed using references (tokens) to the transaction itself, not using the actual gift card number. 
+The out-of-box implementation and Payments software development kit (SDK) support for external gift cards in the call center and storefront requires tokenization. When external gift cards are processed, tokens are used to refer to the actual gift card number. Tokenization is important for third party implementations because without tokens, external gift card processing may not function correctly. For example, if a gift card payment is captured when it's added to an order but an issue occurs during order creation, the gift card payment is reversed using references (tokens) to the transaction itself, not using the actual gift card number. 
 
 ### Purchases and refunds
 
 When an external gift card is used for a purchase, the tender line for the gift card is saved as a prepayment. Therefore, the funds for the purchase are captured when the order is created.
 
-External gift cards aren't eligible for refunds. In part, this limitation is in place to prevent a refund from being given for a gift card that the user has discarded. If an unprocessed order includes an external gift card as payment, and the customer wants to cancel the order, a new gift card or some other form of credit must be issued to the customer.
+External gift cards aren't eligible for refunds. In part, this limitation is in place to prevent a refund from being given for a gift card discarded by the user. If an unprocessed order includes an external gift card as payment, and the customer wants to cancel the order, a new gift card, or some other form of credit must be issued to the customer.
 
 Gift cards lines that are issued as part of an order can be canceled before fulfillment.
 
@@ -210,7 +210,7 @@ Virtual gift cards are issued as part of order invoicing. When a gift card line 
 
 In the call center and storefront channels, unlike in POS, a dedication operation isn't used to issue gift cards. Instead, gift cards are issued by adding a line item to a transaction. Specifically, gift card products for e-commerce and the call center can be either mapped to product variants or modeled as standard products.
 
-If product variants are used, the person who creates the gift card order is prompted to select the variant. The relevant mode of delivery will then be available for that product variant.
+If product variants are used, the person who creates the gift card order is prompted to select the variant. The relevant mode of delivery is then available for that product variant.
 
 Modes of delivery must support the type of gift card. For example, a gift card product variant of the **Physical** style must be mapped to a mode of delivery that is related to shipping. A gift card product variant of the **Email** style must be mapped to an electronic mode of delivery. The electronic mode of delivery is defined on the **Customer orders** tab of the **Commerce parameters** page.
 
@@ -231,7 +231,7 @@ To set up call center, follow these steps.
 2. Select the **Fashion call center** store in the list.
 3. On the Action Pane, on the **Set up** tab, in the **Set up** group, select **Payment methods**.
 4. Select **New**.
-5. In the **Payment method** field, enter **12**. The **Payment method name** and **Function** fields will then be set automatically.
+5. In the **Payment method** field, enter **12**. The **Payment method name** and **Function** fields are then set automatically.
 6. On the **General** FastTab, set the following fields:
     - In the **Operation name** field, select **Pay gift card**.
     - In the **Connector name** field, select **TestConnector**.  
@@ -251,7 +251,7 @@ To set up an online store, follow these steps.
 2. Select the **Fabrikam extended online** store in the list.
 3. On the Action Pane, on the **Set up** tab, in the **Set up** group, select **Payment methods**.
 4. Select **New**.
-5. In the **Payment method** field, enter **12**. The **Payment method name** and **Function** fields will then be set automatically.
+5. In the **Payment method** field, enter **12**. The **Payment method name** and **Function** fields are then set automatically.
 6. On the **General** FastTab, set the following fields:
 
     - In the **Operation name** field, select **Pay gift card**.
@@ -388,14 +388,14 @@ To issue external gift cards in the call center, follow these steps.
 11. Select **Complete**, add a payment, and submit the order.
 
 For physical external gift cards, complete the following steps to register the gift card number:
-1. Select **Pick and pack > Generate picking list**. 
-2. Select **Quantity=All** and then select **OK**. A dialogue that warns about posting the doc without printing will be displayed. Select **OK**.
-3. Select **Pick and pack > Picking list registration**. Under the **Lines** menu, select **Register gift card number**. Under the **Register gift card number** property menu, enter the number in the **Number** field, and then select **OK**.
+1. Select **Pick and pack \> Generate picking list**. 
+2. Select **Quantity=All** and then select **OK**. A dialog warning about posting the doc without printing is displayed. Select **OK**.
+3. Select **Pick and pack \> Picking list registration**. Under the **Lines** menu, select **Register gift card number**. Under the **Register gift card number** property menu, enter the number in the **Number** field, and then select **OK**.
 
 > [!NOTE]
 > If the error message "Credit card process failed, due to 'Declined'" is displayed, the gift card has already been activated. You should select a different card number.
 
-When you're finished with the registration process, return to the sales order. The **Gift card number** and **Expiration** fields are displayed with the added information under the **Lines details > Packaging** section.
+When the registration process is completed, return to the sales order. The **Gift card number** and **Expiration** fields are displayed with the added information under the **Lines details \> Packaging** section.
 
 ### Pay using external gift cards in the call center
 
