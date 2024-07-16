@@ -53,7 +53,7 @@ In the following example, if the first four digits of a card number are **6036**
 | Digits to identify | 4     |
 
 Refer the below image for details.
- ![Card Types form with Card numbers button](./media/card_types.png "Card types form with card numbers").
+ ![Card Types form with Card numbers button](../media/card_types.png "Card types form with card numbers").
 
 ### Payment methods
 
