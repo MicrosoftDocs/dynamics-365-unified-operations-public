@@ -2,14 +2,15 @@
 title: Support for external gift cards
 description: This article explains how to set up external gift cards in the Microsoft Dynamics 365 Commerce Store Commerce app, the call center, and the storefront.
 author: BrianShook
-ms.date: 05/18/2023
-ms.topic: article
+ms.date: 07/16/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: shajain
 ms.search.validFrom: 2017-10-02
-
+ms.custom: 
+  - bap-template
 ---
 
 # Support for external gift cards
@@ -27,21 +28,26 @@ Like support for other card payment types, support for external gift cards must 
 > [!NOTE]
 > Some setup steps assume that demo data is used. The steps might vary, depending on the dataset that is used. 
 
-### Card types
+### Configure card types
 
-1. Search for **Card Types** or navigate to **Retail and Commerce** > **Channel setup** > **Payment methods** > **Card types**
+To configure a card type, follow these steps.
+
+1. In Dynamics 365 Commerce headquarters, search for **Card Types**, or go to **Retail and Commerce \> Channel setup \> Payment methods \> Card types**
 2. Select **New**, add the following values, and then select **Save**.
 
     | Field name     | Value                  |
     |----------------|------------------------|
-    | Card ID        | **EXTGC**              |
-    | Card type name | **External Gift Card** |
-    | Card types     | **Gift card**          |
+    | Card ID        | "EXTGC"              |
+    | Card type name | "External Gift Card" |
+    | Card types     | "Gift card"          |
     | Card issuer    | Enter any description. |
 
-### Card numbers
+### Configure card numbers
 
-1. On the **Card types** page, select the newly created gift card, and then select **Card numbers**. 
+To configure card numbers, follow these steps.
+
+1. In headquarters, on the **Card types** page, select the newly created gift card, and then select **Card numbers**.
+    ![Card types form with Card numbers selected](../media/card_types.png).
 2. Specify the range of card numbers that should be used for external gift cards, and then select **Save**.
 
 In the following example, if the first four digits of a card number are **6036**, the card will be mapped to the gift card that you set up in the "Card types" section of this article.
@@ -52,47 +58,50 @@ In the following example, if the first four digits of a card number are **6036**
 | Card number to     | 6999  |
 | Digits to identify | 4     |
 
-Refer the below image for details.
- ![Card Types form with Card numbers button](../media/card_types.png "Card types form with card numbers").
+### Configure payment methods
 
-### Payment methods
+To configure payment methods, follow these steps.
 
-1. Search for **Payment methods** to open the **Payment methods** page or navigate to **Retail and Commerce** > **Channel setup** > **Payment methods** > **Payment methods** .
+1. In headquarters, search for **Payment methods**, or go to **Retail and Commerce \> Channel setup \> Payment methods \> Payment methods** .
 2. Select **New**, and then follow these steps:
 
-    1. In the **Payment method** field, enter any number, for example **12** if it is not yet used.
+    1. In the **Payment method** field, enter any number that isn't yet used (for example, "12").
     2. In the **Payment method name** field, enter **External Gift Card**.
     3. In the **Default function** field, select **Card**.
     4. Select **Save**.
 
 ## Store setup
 
-1. Search for **All stores** to open the **All stores** page.
+To set up a store, follow these steps.
+
+1. In headquarters, search for **All stores** to open the **All stores** page.
 2. Select the **San Francisco** store in the list.
 3. On the Action Pane, on the **Set up** tab, in the **Set up** group, select **Payment methods**.
 4. Select **New**.
-5. In the **Payment method** field, enter the Payment method ID created in the above section, for example **12**. The **Payment method name** and **Function** fields should then be set automatically.
+5. In the **Payment method** field, enter the payment method ID number you created ("12" for our example). The **Payment method name** and **Function** field values are then set automatically.
 6. On the **General** FastTab, set the following fields:
 
     - Set the **Operation name** field to **Pay gift card**.
     - Set the **Connector name** field to **Dynamics 365 Payment Connector for Adyen**.
 
-9. On the **Posting** FastTab, set the **Gift card item number** field to an item created to represent an external gift card. For testing purposes, if you are using demo data, then you can set it to **0010**. The **Gift card item number** value selected for external gift cards should be different from the number used to configure internal gift cards (as described in [Set up gift cards](/dynamicsax-2012/appuser-itpro/set-up-gift-cards#set-up-gift-cards-1)). The system uses external and internal gift card values to determine the system processing route for the gift cards. Because external and internal gift cards are processed differently within the system (with external gift cards using the payment gateway), **Gift card item number** values for external gift cards shouldn't match any values in the **Commerce parameters \> Posting \> Gift card \> Gift card product** value set.
+9. On the **Posting** FastTab, set the **Gift card item number** field value to a number created to represent an external gift card. For testing purposes, if you're using demo data you can set it to "0010". The **Gift card item number** value selected for external gift cards should be different from the number used to configure internal gift cards (as described in [Set up gift cards](/dynamicsax-2012/appuser-itpro/set-up-gift-cards#set-up-gift-cards-1)). The system uses external and internal gift card values to determine the system processing route for the gift cards. Because external and internal gift cards are processed differently within the system (with external gift cards using the payment gateway), **Gift card item number** values for external gift cards shouldn't match any values in the **Commerce parameters \> Posting \> Gift card \> Gift card product** value set.
 
     ![Setting the Gift card item number field.](./media/05_02.png)
 
 10. Select **Save**.
-11. Select **Electronic payment setup**, then select **New** to map the gift card payment method to the newly created external gift card payment method for the San Francisco store.
+11. Select **Electronic payment setup**, and then select **New** to map the gift card payment method to the newly created external gift card payment method for the San Francisco store.
 12. If the gift card number can be entered in the POS in addition to on the payment terminal, expand the **General** FastTab and set **Allow manual entry** to **Yes**.
 
 ## POS setup
 
-1. In Dynamics 365 Commerce Headquarters, search for **Hardware profiles** to open the **POS hardware profile** page.
-2. In the left pane, select the hardware profile associated with the San Francisco store, for example **Virtual**.
+To set up POS, follow these steps.
+
+1. In headquarters, search for **Hardware profiles** to open the **POS hardware profile** page.
+2. In the left pane, select the hardware profile associated with the San Francisco store (for example, **Virtual**).
 3. Select **Edit**.
 4. On the **EFT service** FastTab, in the **Connectors** grid, select **Dynamics 365 Payment Connector for Adyen**.
-5. In the **Supported Tender Types** field, add **GiftCard** or add a **;** before **Giftcard** if other tender types are present
-6. Set the **Gift card provider** value to **svs** or **givex** depending on the gift card provider being used.
+5. In the **Supported Tender Types** field, add **GiftCard** or add a semicolon (";") before **Giftcard** if other tender types are present.
+6. Set the **Gift card provider** value to **svs** or **givex**, depending on the gift card provider you use.
 
     ![Adding GiftCard to the list of supported tender types.](./media/01.png)
 
@@ -103,7 +112,9 @@ Refer the below image for details.
 
 ### Update the button grid
 
-1. Go to the **Button grid** page.
+To update the button grid, follow these steps.
+
+1. In headquarters, go to the **Button grid** page.
 2. In the navigation bar on the left side of the page, search for **F2S1M**, and select the filtered option.
 3. On the Action Pane, select **Designer** to download the button designer application.
 4. When the grid designer appears, right-click on an empty (gray) area, and then select **New button**.
@@ -137,6 +148,8 @@ Refer the below image for details.
 
 ## Configure and test Store Commerce
 
+To configure and test Store Commerce, follow these steps.
+
 1. Start the Store Commerce application.
 2. Sign in by using the standard credentials.
 3. When you're prompted, select **Perform a non-drawer operation**.
@@ -156,7 +169,7 @@ Refer the below image for details.
 
 > [!NOTE]
 > External gift card support for call center and storefront is enabled in the **Feature management** workspace. Enable **Omni-channel payments**, then enable **Enable advanced external gift card**. For additional steps required to set up external gift cards in the storefront, please visit the docs article dedicated to  [E-commerce digital gift cards](../digital-gift-cards.md). 
-> 
+ 
 #### Adyen external gift card setup
 
 For an example that shows how to set up payment services, see the [documentation for the Adyen payment connector](adyen-connector.md?tabs=8-1-3).
@@ -172,7 +185,6 @@ For the call center and storefront, the Adyen connector supports the following g
 > [!NOTE]
 >  Only gift cards of type "Email" can be issued in an online order at this time. 
 >  In the out-of-box Adyen connector, gift cards are not configured by default. To specify the gift card provider in the merchant properties of the payment connector, follow the instructions in the [documentation for the Adyen payment connector](adyen-connector.md?tabs=8-1-3).
-
 
 ### Tokenization
 
@@ -194,7 +206,7 @@ Physical gift cards are gift cards that are mapped to a mode of delivery of the 
 
 Virtual gift cards are issued as part of order invoicing. When a gift card line is marked as **Packed**, it becomes eligible to be issued. Virtual gift cards are issued as part of invoicing. When invoicing occurs, the gift card number is obtained from the provider through the payment connector. The number for the activated gift card is then sent to the gift card recipient via email. When invoicing occurs, the masked gift card number is then saved back to the order line.
 
-### Using modes of delivery for gift card products in the call center and e-commerce
+### Use modes of delivery for gift card products in the call center and e-commerce
 
 In the call center and storefront channels, unlike in POS, a dedication operation isn't used to issue gift cards. Instead, gift cards are issued by adding a line item to a transaction. Specifically, gift card products for e-commerce and the call center can be either mapped to product variants or modeled as standard products.
 
@@ -212,6 +224,8 @@ Modes of delivery must support the type of gift card. For example, a gift card p
 In the back office, on the **Payment services** page, configure the payment services account for the call center. Each payment connector requires different setup steps. The payment service that the call center uses is marked as **Default**.
 
 ## Call center setup
+
+To set up call center, follow these steps.
 
 1. Search for **All call centers** to open the call centers page.
 2. Select the **Fashion call center** store in the list.
@@ -231,6 +245,8 @@ In the back office, on the **Payment services** page, configure the payment serv
 
 ## Online store setup
 
+To set up an online store, follow these steps.
+
 1. Search for **Online stores** to open the online stores page.
 2. Select the **Fabrikam extended online** store in the list.
 3. On the Action Pane, on the **Set up** tab, in the **Set up** group, select **Payment methods**.
@@ -249,7 +265,6 @@ In the back office, on the **Payment services** page, configure the payment serv
 
 To configure the payment accounts for your online store to use Adyen for external gift card processing, see [Configure additional information for the Adyen connector](adyen-connector-setup.md#configure-additional-information-for-the-connector). 
 
-
 #### Test connector external gift card setup
 
 To set up external gift cards for the test connector, on the **Payment services** page, select **Dyn Online**, and then, in the **Supported Tender Types** field, add **GiftCard** after **Debit**. Then select **Credit card types**, and assign a payment journal to the gift card payment method.
@@ -257,6 +272,8 @@ To set up external gift cards for the test connector, on the **Payment services*
 ### Gift card product setup
 
 The following procedure shows how to set up an external gift card by using product masters. Product masters aren't required for external gift cards. However, they can be helpful when both physical and virtual gift cards are used.
+
+To set up a gift card product, follow these steps.
 
 1. Search for **Style groups** to open the **Style groups** page.
 2. Select **New**.
@@ -310,7 +327,6 @@ For the storefront, the gift card must also be included in the storefront's asso
 > [!NOTE]
 > The gift card product used for external gift card setup in POS should not use product masters with item variants. Gift cards based on item variants may still be used for payments, balance inquiries, and cash out in POS, but gift card products associated with the POS for issuance must be standard products. 
 
-
 ### Set up notification emails for virtual gift cards
 
 For information about email setup, see [Configure email functionality](/dynamicsax-2012/appuser-itpro/configure-email-functionality-in-microsoft-dynamics-ax).
@@ -320,6 +336,8 @@ For information about how to set up email notifications for Commerce, see [Set u
 For gift cards that are issued via email, the value of the **Retail email notification type** field is **Issue gift card**.
 
 ### Call center setup
+
+To set up call center, follow these steps.
 
 1. Search for **All call centers** to open the **Call center** page.
 2. In the list, select a call center.
@@ -347,6 +365,8 @@ For gift cards that are issued via email, the value of the **Retail email notifi
 
 ### Issue external gift cards in the call center
 
+To issue external gift cards in the call center, follow these steps.
+
 1. As a call center user, search for **Customer service** to open the **Customer service** page.
 2. Add a customer by using the **Search** function.
 3. Select **New sales order**.
@@ -371,12 +391,15 @@ For physical external gift cards, complete the following steps to register the g
 1. Select **Pick and pack > Generate picking list**. 
 2. Select **Quantity=All** and then select **OK**. A dialogue that warns about posting the doc without printing will be displayed. Select **OK**.
 3. Select **Pick and pack > Picking list registration**. Under the **Lines** menu, select **Register gift card number**. Under the **Register gift card number** property menu, enter the number in the **Number** field, and then select **OK**.
+
 > [!NOTE]
 > If the error message "Credit card process failed, due to 'Declined'" is displayed, the gift card has already been activated. You should select a different card number.
 
 When you're finished with the registration process, return to the sales order. The **Gift card number** and **Expiration** fields are displayed with the added information under the **Lines details > Packaging** section.
 
-### Pay by using external gift cards in the call center
+### Pay using external gift cards in the call center
+
+To pay using external gift cards in the call center, follow these steps.
 
 1. As a call center user, create an order, and select **Complete**.
 2. On the **Payments** FastTab, select **Add**.
