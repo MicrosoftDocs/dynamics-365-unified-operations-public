@@ -35,7 +35,7 @@ To bypass the confirmation dialog box and always go to transaction page after yo
 
 ## Configure the display of search results
 
-In the POS visual profile in headquarters, you can now configure the default view for the display of search results for products, customers, and categories. Previously, the list view was the default view. Starting with the Commerce 10.0.40 release, search results using the phone view port can be shown in a card view by default to allow for easy product browsing. This update will be made available for other view ports in future releases.
+In the POS visual profile in headquarters, you can configure the phone view port default view for the display of search results for products, customers, and categories. Previously, the list view was the default view. Starting with the Commerce 10.0.40 release, search results in the phone view port can be shown in a card view by default to allow for easy product browsing. This update will be made available for other view ports in future releases.
 
 To set your preference for the default search view, in headquarters, go to **POS visual profiles**. In the **General** section, in the **Search view** subsection, set the **Default view** field to **List view** or **Card view**.
 
