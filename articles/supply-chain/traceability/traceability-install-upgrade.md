@@ -24,10 +24,10 @@ To use Traceability, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.39 or later.
 - If you also want to integrate Traceability with the production floor execution interface, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 or later.
-- The feature that is named *(Preview) Supply Chain Traceability* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). <!--KFM: Will this feature be renamed before release? -->
-- If you also want to integrate Traceability with the production floor execution interface, the feature that is named *Tracked components* must also be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Microsoft Azure configuration
+
+<!-- KFM: Do we only need to do this if we will use third-party integration and API? Maybe this isn't needed if we only want to integrate with SCM? -->
 
 ### Register a new Microsoft Entra application
 
@@ -65,7 +65,7 @@ Apply the following steps in Power Platform Admin Center to install the Traceabi
 1. Select **Install**.
 1. When installation is complete, you should be able to see that an app called *Dynamics 365 Supply Chain Traceability* is shown as installed in the list of Dynamics 365 apps for your environment. <!--KFM: Will this app be renamed before release? -->
 
-## Assign security roles to users
+## Assign security roles to users in Power Apps
 
 <!--KFM: First draft says this is for private preview. Do we need to update or remove this?-->
 
@@ -77,6 +77,13 @@ Use the [Power Platform admin center](https://admin.powerplatform.microsoft.com)
 - **Business users** – Create a copy of the *Traceability service role* and rename the copy (for example, to *Traceability business role*). Edit the copy to remove access to the table *Environment Configuration*. Assign the copied role to business users who need to use the Traceability app. You must also assign the *Finance and Operations Basic User* role to each of these users.
 
 For more information about how to complete these steps, see [Assign a security role to a user](/power-platform/admin/assign-security-roles), [Save time creating a security role by copying one](/power-platform/admin/copy-security-role), and [Create or edit a security role to manage access](/power-platform/admin/create-edit-security-role).
+
+## Turn on features in Supply Chain Management
+
+To use Traceability together with Dynamics 365 Supply Chain Management, you must enable one or both of the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *(Preview) Supply Chain Traceability* – <!--KFM: What does this give us if we don't turn on the next one? -->
+- *Tracked components* – Integrates Traceability with the [production floor execution interface](../production-control/production-floor-execution-use.md))
 
 ## Update the Supply Chain Traceability application in Power Apps
 
