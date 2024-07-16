@@ -16,7 +16,7 @@ ms.custom:
 
 # Dynamics 365 Commerce trials 
 
-With the new Dynamics 365 Commerce trial, you can automatically deploy a Commerce environment by completing a questionnaire that would provision backoffice (F&O), along with Commerce scale unit and its related components as applicable. This article provides information about how to:
+With the new Dynamics 365 Commerce trial, you can automatically deploy a Commerce environment by completing a questionnaire that would provision backoffice (F&O), along with Commerce scale unit (CSU) and its related components as applicable. This article provides information about how to:
 
 *   Redeem your trial offer.
 *   Initiate provisioning.
@@ -45,27 +45,23 @@ The following prerequisites are required to deploy a trial of Dynamics 365 Proje
 > [!IMPORTANT]
 > Only one person in an organization, the tenant administrator, needs to perform this task. If you aren't the subscriber to this release, wait until your organization has been signed up and you've received your user credentials.
 
-### Dynamics 365 Commerce - Preview trial 
+### Dynamics 365 Commerce - Preview trial  - Redeem Offer
 
 Before you begin, sign in to a browser with the user work account in the tenant where you want the Dynamics 365 Commerce Trial preview.
 
-1. Redeem the first offer code, **Dynamics 365 Commerce - Preview Trial** by pasting it into the browser URL.
+1. Go to [Microsoft 365 Admin Center](https://admin.microsoft.com/AdminPortal/home) 
 
-    ![Redeem Offer](./media/16RedeemFirstOfferNew.png)
+2. Next, go to Marketplace > All Products, search for "Dynamics 365 Commerce Trial"
 
-2. Confirm your order.
+3. Click on "Details", this should load details about "Dynamics 365 Commerce Trial" and click "Start Free Trial" and then on confirmation page click "Try now" and continue.
 
-    ![Confirm the order](./media/17ConfirmOrderNew.png)
+> [!Note]
+> If you maybe missing payment information on file, then you are required to update payment information before you can proceed to claim free trial. You shall not be charged without your consent. 
+     
+   
+## Provisioning
 
-  You will see that the confirmation offer was successfully redeemed.
-
-   ![Confirmation](./media/18OrderConfirmationNew.png)
-
-  You will be redirected to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/projectoperationstrial).
-
-## Questionnaire and provisioning
-
-1.	Go to the [Power Platform admin center](https://admin.powerplatform.com/projectoperationstrial) and complete the questionnaire.  
+1.	Go to the [Power Platform admin center](https://admin.powerplatform.com/) and 
 2.	Review the recommended deployment type, and select **Begin Setup** to initiate provisioning.
 3.	Review the terms and conditions and then select **Start**.
 
