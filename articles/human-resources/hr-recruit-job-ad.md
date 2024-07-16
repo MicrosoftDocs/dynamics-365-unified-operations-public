@@ -41,10 +41,10 @@ To create a job ad, fill in the following fields:
 
 - **Job title** – Enter the title of the position. A clear job title helps candidates quickly understand the role.
 - **Description** – Provide a detailed overview of the responsibilities, duties, and qualifications that are associated with the job. Outline what the role entails, and what skills or experience is required.
-- **Estimated start** – By highlighting the essential qualifications, such as education, experience, skills, and any specific certifications, you help candidates assess their suitability for the position.
+- **Estimated start** – Specify the estimated start date of the job requirement activities.
 - **Company** – By including information about the company's values, culture, and mission, you can help attract candidates who are aligned with the organization's goals.
 - **Job location** – It's important that you specify the job's location, so that candidates can determine whether the position is geographically suitable for them.
-- **Skills** – It's important that you provide clear instructions about how to apply. Include details about any required documents that must be submitted, such as a resume or cover letter.
+- **Skills** – Specify the skill set required for the job position.
 - **Compensation** – By including information about the salary range, benefits, and any perks that are associated with the position, you can help make the job ad attractive to potential candidates.
 - **Currency** – Select the currency of the compensation.
 - **Position type** – You can create job ads for full-time or part-time contract employees.
