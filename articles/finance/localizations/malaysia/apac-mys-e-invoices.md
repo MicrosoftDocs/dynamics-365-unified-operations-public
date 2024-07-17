@@ -354,7 +354,7 @@ Follow these steps to enable QR codes printing in full and simplified invoices.
 
 ## <a id="Retail"></a>Additional configuration for retail-related scenarios
 
-For the scenarios when shared customer were used for invoices posting but end buyers request to receive electronic invoices with their specific data, do the following additional configuration.
+For the scenarios when shared customers were used for invoices issuing, but end buyers request to receive electronic invoices with their specific individual data, do the following additional configuration.
 
 1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**.
 1. Select **New** to create an electronic document property type.
