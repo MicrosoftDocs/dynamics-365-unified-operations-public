@@ -65,19 +65,6 @@ Apply the following steps in Power Platform Admin Center to install the Traceabi
 1. Select **Install**.
 1. When installation is complete, you should be able to see that an app called *Dynamics 365 Supply Chain Traceability* is shown as installed in the list of Dynamics 365 apps for your environment. <!--KFM: Will this app be renamed before release? -->
 
-## Assign security roles to users in Power Apps
-
-<!--KFM: First draft says this is for private preview. Do we need to update or remove this?-->
-
-The Traceability app adds a security role called *Traceability service role* to your Power Platform environment. Use this role to grant access to the Traceability app.
-
-Use the [Power Platform admin center](https://admin.powerplatform.microsoft.com) to grant Traceability permissions to the following types of users:
-
-- **Administrator users** – Assign the default *Traceability service role*, as provided, to users who need to configure the Traceability app.
-- **Business users** – Create a copy of the *Traceability service role* and rename the copy (for example, to *Traceability business role*). Edit the copy to remove access to the table *Environment Configuration*. Assign the copied role to business users who need to use the Traceability app. You must also assign the *Finance and Operations Basic User* role to each of these users.
-
-For more information about how to complete these steps, see [Assign a security role to a user](/power-platform/admin/assign-security-roles), [Save time creating a security role by copying one](/power-platform/admin/copy-security-role), and [Create or edit a security role to manage access](/power-platform/admin/create-edit-security-role).
-
 ## Turn on features in Supply Chain Management
 
 To use Traceability together with Dynamics 365 Supply Chain Management, you must enable one or both of the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):

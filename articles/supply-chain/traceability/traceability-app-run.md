@@ -16,7 +16,7 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-Follow these steps to run the Traceability app in Power Apps after it's been [installed](traceability-install-upgrade.md) on your environment.
+Follow these steps to run the Traceability app in Power Apps after it's been [installed](traceability-install.md) on your environment.
 
 1. Sign in to [Power Platform maker](https://make.powerapps.com/).
 1. On the left navigation pane, select **Apps**.

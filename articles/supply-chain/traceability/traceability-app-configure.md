@@ -18,9 +18,7 @@ ms.custom:
 
 <!-- KFM: NOTE: UI uses the term "trace" while the doc uses the term "track". I used "trace" everywhere here. Should we do that everywhere? The FM feature name uses "tracked"; will that be changed?  -->
 
-## API endpoint
-
-<!-- KFM: This section is a guess. Please review carefully. -->
+## <a name="api-endpoint"></a>API endpoint
 
 The Traceability app provides an API endpoint that you can use to exchange messages with external systems. It lets you integrate Traceability with other systems, such as ERP systems, warehouse management systems, and quality management systems. To use the API, you need to know the URL of the endpoint. To find it, follow these steps:
 

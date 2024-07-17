@@ -20,38 +20,71 @@ ms.custom:
 
 The platform security token is used to call the Traceability public API. Therefore, you must generate a *Microsoft Entra token* by using your Microsoft Entra application. You must then use the Microsoft Entra token to get the *access token* from the security service.
 
-In Microsoft Azure \> App registrations \> Endpoints, you can get **OAuth 2.0 token endpoint (v2)** for *Entra token* generation.
+To obtain an access token, follow these steps:
 
-![A screenshot of a computer Description automatically generated](media/image30.png)
+1. Sign in to [Azure portal](https://ms.portal.azure.com/).
+1. Search for or navigate to the **App registrations** page.
+1. Open the app registration you created for the Traceability app.
+1. From the toolbar, select **Endpoints**.
+1. The Endpoints dialog opens. Copy the value shown for **OAuth 2.0 token endpoint (v2)** to a temporary text file.
+1. Fetch a Microsoft Entra token by submitting an HTTP request that has following properties:
 
-Fetch a Microsoft Entra token by submitting an HTTP request that has following properties:
+    - **URL** – Use the **OAuth 2.0 token endpoint (v2)** value you found earlier in this procedure.
+    - **Method** – GET
+    - **Body content** – Submit the body content listed in the following table as form data.
 
-- URL: OAuth 2.0 token endpoint (v2)
-- Method: GET
-- Body content (form data):
+        | Key | Value |
+        |--|--|
+        | client\_id | {Application (client) ID in Microsoft Azure} |
+        | client\_secret | {Client secret value} |
+        | grant\_type | client\_credentials |
+        | scope | 0cdb527f-a8d1-4bf8-9436-b352c68682b2/.default |
 
-| Key            | Value                                         |
-|----------------|-----------------------------------------------|
-| client\_id     | {Application (client) ID in Microsoft Azure}  |
-| client\_secret | {Client secretes value}                       |
-| grant\_type    | client\_credentials                           |
-| scope          | 0cdb527f-a8d1-4bf8-9436-b352c68682b2/.default |
+1. You should receive a Microsoft Entra token in response. It should resemble the following example:
 
-You should receive a Microsoft Entra token in response. It should resemble the following example.
+    ```json
+    {
+        "token_type": "Bearer",
+        "expires_in": 3599,
+        "ext_expires_in": 3599,
+        "access_token": "eyJ0eXAiOiJKV1QiLC…OUppUdgPQ"
+    }
+    ```
 
-Use Entra token (access token) to generate bear token by submitting an HTTP request that has following properties:
+1. Use the Entra token to generate a bearer token by submitting an HTTP request that has following properties:
 
-- URL: `https://securityservice.operations365.dynamics.com/token`
-- Method: POST
-- Body content (JSON)
+    - **URL** – `https://securityservice.operations365.dynamics.com/token`
+    - **Method** – POST
+    - **Body content** – Submit the following body content as JSON content:
 
-You should receive an access token in response. You must use this token as a bearer token to call the Supply Chain Traceability API. Below is the example of response:
+        ```json
+        {
+            "grant_type": "client_credentials",
+            "client_assertion_type": "aad_app",
+            "client_assertion": "{Entra token}",
+            "scope": "https://traceabilityservice.operations365.dynamics.com/.default",
+            "context": "{environmentId}",
+            "context_type": "finops-env"
+        }
+        ```
+
+1. You should receive an access token in response. You must use this token as a bearer token to call the Supply Chain Traceability API. Here is the example of a response:
+
+    ```json
+    {
+        "access_token": "{access token}",
+        "token_type": "bearer",
+        "expires_in": 3600
+    }
+    ```
+
+## Find the Traceability API URL
+
+To find the URL for accessing your Traceability API, follow the instructions provided in [API endpoint](traceability-app-configure.md#api-endpoint).
 
 ## Available APIs
 
-You can create the API URL by combining the General setup \> App setting \> Endpoint with the Path from below list.
-
-![A screenshot of a computer Description automatically generated](media/image31.png)
+The following table lists the APIs available for Traceability.
 
 | Path | Method | Description |
 |--|--|--|
@@ -60,22 +93,24 @@ You can create the API URL by combining the General setup \> App setting \> Endp
 
 <!--KFM: Do we have *Remove genealogy node*? -->
 
+The remaining sections provide detailed information about each API.
+
 ## API for events post (Add)
 
 This API is for events post which can be used for production component assembly, goods receipt in business activities. <!--KFM: A better/clearer description is needed. Also a better section heading. -->
 
-- **Path:** `/api/environments/{environmentId}/events/PostBatchEvents`
-- **Method**： `POST`
+- **Path** – `/api/environments/{environmentId}/events/PostBatchEvents`
+- **Method** – `POST`
 
 ### Events post request payload
 
-```json
+```txt
 [
     {
         "eventId": string,
         "description": string,
-        "activityType": string, refer to predefined “Activity Type”,
-        "activityCode": string, refer to configured “Activity Code” linked to “Activity Type”,
+        "activityType": string, refer to predefined "Activity Type",
+        "activityCode": string, refer to configured "Activity Code" linked to "Activity Type",
         "datetime": YYYY-MM-DDThh:mm:ss.sssz,
         "operator": string,
         "companyCode": string,
@@ -85,7 +120,7 @@ This API is for events post which can be used for production component assembly,
         "consumptionTransactions": [
             {
                 "transactionId": string,
-                "itemId": string, refer to configured “item” for tracing,
+                "itemId": string, refer to configured "item" for tracing,
                 "trackingId": string,
                 "serialId": string,
                 "batchId": string,
@@ -96,7 +131,7 @@ This API is for events post which can be used for production component assembly,
         "productTransactions": [
             {
                 "transactionId": string,
-                "itemId": string, refer to configured “item”,
+                "itemId": string, refer to configured "item",
                 "trackingId": string,
                 "serialId": string,
                 "batchId": string,
@@ -203,7 +238,7 @@ Produce finished goods **A** with component **B** and **C** by different event.
 
 #### Events post example request payload 2
 
-<!--KFM: Original used a table with the two payloads next to each other. That formatting won't work well here, and I'm not sure what it means, so I split into two sections. Is this correct? -->
+<!--KFM: Original used a table with the two payloads next to each other. That formatting won't work well here, and I'm not sure what it means, so I split into two sections. Is this correct? Or can we just combine these into one block of code? -->
 
 ```json
 [
@@ -259,12 +294,12 @@ After posting the above events, the Traceability app would show the results show
 
 This API is for traceability information query and retrieves genealogy, activity, and data collection information.
 
-- **Path:** `/api/environments/{environmentId}/traces/Query`
-- **Method:** `POST`
+- **Path** – `/api/environments/{environmentId}/traces/Query`
+- **Method** – `POST`
 
 ### Single query request payload
 
-```json
+```txt
 {
     "tracingDirection": Backward/Forward,
     "trackingId": string,
