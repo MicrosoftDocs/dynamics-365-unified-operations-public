@@ -109,6 +109,9 @@ To facilitate cloud and edge computing scenarios, a Commerce Scale Unit is avail
 
 Multiple Commerce Scale Units can be associated with each environment. Each Commerce Scale Unit can be independently serviced and updated, and each can serve one or more channels across one or more legal entities. Each Commerce Scale Unit can be deployed to any of the supported Azure regions, and multiple Commerce Scale Units can be deployed to the same region. The independent nature of each Commerce Scale Unit allows for phased rollout of updates across a collection of channels.
 
+> [!NOTE]
+> Using or relying on outbound Internet Protocol (IP) addresses for Commerce Scale Units (CSUs) is not a supported scenario. IP addresses can change at any time and should not be used as a stable identifier of network traffic. Failure to remove the usage may negatively impact your environment.
+
 #### Commerce Scale Units (self-hosted)
 
 The ability to bring the Commerce Scale Units to edge computing helps accommodate scenarios where internet connectivity is poor or unreliable. For retailers, this approach typically means having a physical footprint in their stores. By using a Commerce Scale Unit (self-hosted), retailers can bring the same business logic and capabilities that run in the Azure cloud into their stores. In these cases, although in-store connectivity is presumably more reliable, self-management of these components will involve additional overhead in terms of monitoring and updates. For more information, see [Select an in-store topology](retail-in-store-topology.md).
