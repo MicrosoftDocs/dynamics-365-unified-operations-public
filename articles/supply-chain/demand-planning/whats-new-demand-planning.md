@@ -29,7 +29,7 @@ This version of Demand planning introduces the following fixes and improvements:
 - Increased stability.
 - Improved the ARIMA forecast model. The model now provides better error messages if it fails due to a data error.
 - Improved the best fit forecast model. Calculations now succeed provided at least one other model provides a result.
-- Each organization instance can now run up to five forecasts in parallel. Newly created forecasts will only run in parallel provided all existing forecast jobs have already started (in the *Executing* state). If one or more existing forecast jobs are still waiting to start (in the *Created* state) when a new forecast is created, then all forecasts will be executed sequentially .
+- Each organization instance can now run up to five forecasts in parallel. Newly created forecasts will only run in parallel provided all existing forecast jobs have already started (in the *Executing* state). If one or more existing forecast jobs are still waiting to start (in the *Created* state) when a new forecast is created, then all forecasts will be executed sequentially.
 
 ## Version 1.0.0.1132
 
