@@ -73,8 +73,9 @@ Each time that your organization has to run a new type of data export, a manager
 1. On the **Review and finish** page, review the summary of settings that you've configured, and then select **Review and finish** to create the new profile.
 1. The profile is now available, but it hasn't yet run. To run it, follow the instructions in the [View and run existing data export profiles to export to Supply Chain Management](#existing-export-profiles) section.
 
-## Cleanup staging table in D365 Supply Chain Management
-If you’re experiencing a slowdown in performance, it may be necessary to clear the staging data from the **Forecast Sales Import Entity entity**. This can be accomplished in one of two ways:
+## Improve performance by clearing unneeded staging data
 
-1. Set up an [automatic cleanup](/articles/fin-ops-core/dev-itpro/data-entities/clean-up-data.md) process to regularly clear the staging data. 
-2. Manually clear the [staging data](/articles/fin-ops-core/dev-itpro/data-entities/staging-tables.md) as needed. 
+If you're experiencing performance issues, it might help to clear staging data from the *Forecast Sales Import Entity* entity. To do this, take one of the following actions:
+
+- Manually [clear the staging data](../../fin-ops-core/dev-itpro/data-entities/staging-tables.md) as needed.
+- Set up an [automatic cleanup process](../../fin-ops-core/dev-itpro/data-entities/clean-up-data.md) to clear the staging data on a regular basis.
