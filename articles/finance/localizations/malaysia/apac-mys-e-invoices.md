@@ -240,6 +240,10 @@ Follow these steps to configure the structure of the postal address to define al
     > - **EI00000000020** is used as the customer's **TIN**.
     > - **NA** is used as the customer's **BRN**.
 
+### Additional configuration for retail-related scenarios
+
+Please refer to the dedicated chapter for details: [Additional configuration for retail-related scenarios](#Retail)
+
 ## Configure funding sources
 
 If business processes assume that **project invoices** are issued, follow these additional configuration steps.
@@ -347,5 +351,7 @@ Follow these steps to enable QR codes printing in full and simplified invoices.
 > 
 > QR codes are printed only for invoices that were successfully submitted, validated, and accepted by the MyInvois system.
 
+
+## <a id="Retail"></a>Additional configuration for retail-related scenarios
 
 ![Screenshot that shows electronic document properties configuration for retail buyers.](apac-mys-e-invoice-retail-buyer.jpg)
