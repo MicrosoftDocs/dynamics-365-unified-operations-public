@@ -373,3 +373,10 @@ For the scenarios when shared customer were used for invoices posting but end bu
 1. Save and close the **Electronic document property types** page.
 
 ![Screenshot that shows electronic document properties configuration for retail buyers.](apac-mys-e-invoice-retail-buyer.jpg)
+
+To add
+
+> [!NOTE]
+> The described above electronic document properties values will override the respective default values from the shared customer master data.
+>
+> Entering of the electronic document properties values must be performed before submitting electronic invoices to the regulatory authority.
