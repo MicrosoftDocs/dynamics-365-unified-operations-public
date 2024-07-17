@@ -244,7 +244,7 @@ To enable the **Keep connection open** setting in Commerce headquarters version 
 1. In headquarters, go to **Retail and Commerce \> Channel Setup \> POS Setup \> POS Profiles \> Hardware Profiles**.
 1. In the left pane, select a hardware profile.
 1. On the **POS hardware profile** form, on the **Printer** FastTab, set the **Keep connection open** option to **Yes**.
-1. Run the **1070 (Channel configuration)** job. 
+1. Run the **1090** distribution schedule to sync the updated hardware profile to the store.
 
 > [!NOTE]
 > Only use this configuration with a dedicated hardware profile for OPOS printers, cash drawers, and line display devices.
