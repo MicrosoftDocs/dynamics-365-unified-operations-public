@@ -3,13 +3,14 @@ title: Introduction to Commerce Scale Unit (CSU) Core
 description: This article provides an introduction to Commerce Scale Unit (CSU) Core in Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 07/17/2024
-ms.topic: article
+ms.topic: how-to
 audience: Developer
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2022-03-30
-ms.dyn365.ops.version: AX 10.0.25
+ms.custom: 
+  - bap-template
 ---
 
 # Introduction to Commerce Scale Unit (CSU) Core
