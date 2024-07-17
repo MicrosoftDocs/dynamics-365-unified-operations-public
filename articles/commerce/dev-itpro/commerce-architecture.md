@@ -34,7 +34,7 @@ The headless commerce engine powers all native Dynamics 365 Commerce channels, i
 
 ### Interconnected business processes
 
-The platform that is shared among the various Dynamics 365 business applications, such as Dynamics 365 Commerce, Dynamics 365 Supply Chain Management, and Dynamics 365 Finance, provides a set of interconnected business processes that users can immediately benefit from. All back-office capabilities across these applications are built on the same web experience and data stores. Therefore, there is a seamless flow of business processes across various functions in the organization, but custom integrations across applications and services aren't required. The out-of-box integration between the headless commerce engine and the back office further expands the coverage of these interconnected business processes across the back office and commerce channels.
+The platform that is shared among the various Dynamics 365 business applications, such as Dynamics 365 Commerce, Dynamics 365 Supply Chain Management, and Dynamics 365 Finance, provides a set of interconnected business processes that users can immediately benefit from. All back-office capabilities across these applications are built on the same web experience and data stores. Therefore, there's a seamless flow of business processes across various functions in the organization, but custom integrations across applications and services aren't required. The out-of-box integration between the headless commerce engine and the back office further expands the coverage of these interconnected business processes across the back office and commerce channels.
 
 ### Unified data
 
@@ -42,11 +42,11 @@ Dynamics 365 Commerce provides a unified data solution through out-of-the-box in
 
 ### Powered by AI and analytics
 
-Because of the accessible, persistent, up-to-date, and unified organizational data that is available in Data Lake Storage, the whole organization has a "single source of truth" that analytics, artificial intelligence (AI), and machine learning (ML) can be applied on top of. In this way, the organization can derive insights and get key performance indicators (KPIs) that can be used optimize and automate business processes across all channels.
+Because of the accessible, persistent, up-to-date, and unified organizational data that is available in Data Lake Storage, the whole organization has a "single source of truth" that analytics, artificial intelligence (AI), and machine learning (ML) can be applied on top of. In this way, the organization can derive insights and get key performance indicators (KPIs) that can be used to optimize and automate business processes across all channels.
 
 #### Business and transactional analytical reports in POS and Commerce headquarters
 
-The prepackaged set of business and transactional analytical reports in Commerce provides retailers with intelligent insights across all points of the Commerce ecosystem by embedding high-charts and SSRS-based reports in Store commerce point of sale (POS) systems and Commerce headquarters. The commerce analytics solution provides a comprehensive set of out-of-the-box business and transactional reports, enabling retailers to take avantage of insights across all channels.
+The prepackaged set of business and transactional analytical reports in Commerce provides retailers with intelligent insights across all points of the Commerce ecosystem by embedding high-charts and SSRS-based reports in Store commerce point of sale (POS) systems and Commerce headquarters. The commerce analytics solution provides a comprehensive set of out-of-the-box business and transactional reports, enabling retailers to take advantage of insights across all channels.
 
 The highcharts-based reports on POS are real-time, enabling store associates to analyze their channel's transactional and other POS activities at the conclusion of a transaction. This contrasts with the out-of-the-box reports in Commerce headquarters, which enable retailers to view analytical reports for transactional activity across all channels, once the data is synced. Commerce headquarters reports are specifically designed for channel managers who focus on sales performance to predict trends and uncover insights, allowing them to drill down in reports about organization-wide sales performance across global geography by employee, category, product, terminal, channel, and more.
 
@@ -137,7 +137,7 @@ The CMS stores its pages as a series of modules. The storefront web server assem
 
 #### Dynamics 365 Customer Insights
 
-Dynamics 365 Customer Insights helps you gain a deeper understanding of your customers by connecting data from various transactional, behavioral, and observational sources to create a 360-degree customer view and generate insights. Dynamics 365 Commerce makes it easy for retailers to enable the integration with Dynamics 365 Customer Insights and show the generated insights at the POS. These insights include churn probability and next best action, and they are valuable because they help sales associates have effective conversations with customers and deliver personalized shopping experiences to them. For more information, see [Integrate Customer Insights with Commerce](clienteling-overview.md#integrate-customer-insights-with-commerce).
+Dynamics 365 Customer Insights helps you gain a deeper understanding of your customers by connecting data from various transactional, behavioral, and observational sources to create a 360-degree customer view and generate insights. Dynamics 365 Commerce makes it easy for retailers to enable the integration with Dynamics 365 Customer Insights and show the generated insights at the POS. These insights include churn probability and next best action, and they're valuable because they help sales associates have effective conversations with customers and deliver personalized shopping experiences to them. For more information, see [Integrate Customer Insights with Commerce](clienteling-overview.md#integrate-customer-insights-with-commerce).
 
 #### Azure cognitive search
 
@@ -145,7 +145,7 @@ Dynamics 365 Customer Insights helps you gain a deeper understanding of your cus
 
 #### Product recommendations
 
-Dynamics 365 Commerce can be used to show product recommendations on the e-commerce website and POS devices. These product recommendations are items that a customer might be interested in, and they are based on the purchase trends of other customers in online and brick-and-mortar stores.
+Dynamics 365 Commerce can be used to show product recommendations on the e-commerce website and POS devices. These product recommendations are items that a customer might be interested in, and they're based on the purchase trends of other customers in online and brick-and-mortar stores.
 
 Product recommendations let customers easily and quickly find products that they might want to purchase, and cross-selling and upselling can be used to help customers find additional products that they didn't originally intend to buy. When recommendations are used to assist with product discovery, they can help create more conversion opportunities, increase sales revenue, and enhance customer satisfaction and retention. For more information, see [Product recommendations overview](../product-recommendations.md).
 
