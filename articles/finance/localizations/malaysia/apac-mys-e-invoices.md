@@ -130,6 +130,7 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
     > - Project invoices
     > - Self invoices that are based on vendor invoices from foreign vendors
     > - Credit notes and debit notes for all the previously described invoice types
+    > - Refund notes which represent credit notes for already paid invoices.
 
 1. On the **Features** tab, select and enable the **Malaysian electronic invoice** feature.
 1. Save your changes on the **Electronic document parameters** page, and then close the page.
