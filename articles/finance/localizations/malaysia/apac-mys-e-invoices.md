@@ -376,12 +376,12 @@ For the scenarios when shared customer were used for invoices posting but end bu
 
 To enter the values for the described above electronic document properties, do the following steps.
 
-1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
-1. Select a legal entity, and then, on the Action Pane, select **Electronic document properties**.
-1. Select the line where the **Type** field is set to **ActivityCode**.
-1. In the **Value** field, enter the taxpayer business activity code.
+1. Go to **Account receivable** \> **Inquiries and reports** \> **Invoices** \> **Invoice journal**.
+1. Select a required invoice, and then, select the **Invoice** menu item from the top menu.
+1. On the Action Pane, select **Electronic document properties**.
+1. Enter required values in the **Value** field for each of the properties that needs to be overwritten in the electronic invoice.
 
 > [!NOTE]
-> The described above electronic document properties values will override the respective default values from the shared customer master data.
+> The described above electronic document properties non-empty values will override the respective default values from the shared customer master data.
 >
 > Entering of the electronic document properties values must be performed before submitting electronic invoices to the regulatory authority.
