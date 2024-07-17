@@ -354,4 +354,22 @@ Follow these steps to enable QR codes printing in full and simplified invoices.
 
 ## <a id="Retail"></a>Additional configuration for retail-related scenarios
 
+For the scenarios when shared customer were used for invoices posting but end buyers request to receive electronic invoices with their specific data, please do the following additional configuration.
+
+1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**.
+1. Select **New** to create an electronic document property type.
+1. In the **Type** field, enter **BuyerRegistrationName**. You must enter the value exactly as it appears here.
+1. On the Action Pane, select **Applicability**.
+1. In the **Table name** field, select **CustInvoiceJour**.
+1. Save and close the **Electronic document property type applicability setup** page.
+1. Repeat steps 2 through 6 for the remaining properties
+   - BuyerTIN
+   - BuyerBRN
+   - BuyerAddressLine
+   - BuyerCityName
+   - BuyerCountrySubentityCode
+   - BuyerIdentificationCode
+   - BuyerTelephone
+1. Save and close the **Electronic document property types** page.
+
 ![Screenshot that shows electronic document properties configuration for retail buyers.](apac-mys-e-invoice-retail-buyer.jpg)
