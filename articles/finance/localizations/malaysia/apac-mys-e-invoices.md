@@ -384,4 +384,4 @@ To enter the values for the described above electronic document properties, do t
 > [!NOTE]
 > The described above electronic document properties non-empty values will override the respective default values from the shared customer master data.
 >
-> Entering of the electronic document properties values must be performed before submitting electronic invoices to the regulatory authority.
+> Entering of the electronic document properties values must be performed before submitting electronic invoices to the authorities.
