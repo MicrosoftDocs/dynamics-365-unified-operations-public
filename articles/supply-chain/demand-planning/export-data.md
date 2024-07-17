@@ -75,7 +75,7 @@ Each time that your organization has to run a new type of data export, a manager
 
 ## Improve performance by clearing unneeded staging data
 
-If you're experiencing performance issues, it might help to clear staging data from the *Forecast Sales Import Entity* entity. To do this, take one of the following actions:
+If you're experiencing performance issues, it might help to clear staging data from the *Forecast Sales Import Entity* entity in Supply Chain Management. To do this, take one of the following actions:
 
 - Manually [clear the staging data](../../fin-ops-core/dev-itpro/data-entities/staging-tables.md) as needed.
 - Set up an [automatic cleanup process](../../fin-ops-core/dev-itpro/data-entities/clean-up-data.md) to clear the staging data on a regular basis.
