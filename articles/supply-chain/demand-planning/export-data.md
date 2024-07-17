@@ -76,5 +76,5 @@ Each time that your organization has to run a new type of data export, a manager
 ## Cleanup staging table in D365 Supply Chain Management
 If you’re experiencing a slowdown in performance, it may be necessary to clear the staging data from the **Forecast Sales Import Entity entity**. This can be accomplished in one of two ways:
 
-1. Set up an [automatic cleanup](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/staging-tables) process to regularly clear the staging data. 
-2. Manually clear the [staging data](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/staging-tables) as needed. 
+1. Set up an [automatic cleanup](/articles/fin-ops-core/dev-itpro/data-entities/clean-up-data.md) process to regularly clear the staging data. 
+2. Manually clear the [staging data](/articles/fin-ops-core/dev-itpro/data-entities/staging-tables.md) as needed. 
