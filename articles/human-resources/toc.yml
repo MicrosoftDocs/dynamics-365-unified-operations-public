@@ -747,6 +747,8 @@ items:
       items:
       - name: Performance management overview
         href: hr-develop-performance-management-overview.md
+      - name: Set up electronic reporting to print preformance reviews
+        href: perf-mgmt-print.md
       - name: Skills
         items:
         - name: Configure skills
