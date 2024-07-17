@@ -557,7 +557,7 @@ This configuration can be used for all Modern POS clients that have a hardware s
 5.  Select the **1090** distribution schedule to sync the new hardware profile to the store. Select **Run now** to sync changes to the POS.
 6.  Select the **1040** distribution schedule to sync the new hardware station to the store. Select **Run now** to sync changes to the POS.
 7.  Install the hardware station. For more information about how to install the hardware station, see [Configure and install Retail hardware station](dev-itpro/retail-hardware-station-configuration-installation.md).
-8.  Install and activate Modern POS. For more information about how to install Modern POS, see [Configure, install and activate Modern POS (MPOS)](dev-itpro/retail-modern-pos-device-activation.md).
+8.  Install and activate Modern POS. For more information about how to install Modern POS, see [Configure, install, and activate Modern POS (MPOS)](dev-itpro/retail-modern-pos-device-activation.md).
 9.  Sign in to Modern POS, and select **Perform nondrawer operations**.
 10. Start the **Manage hardware stations** operation.
 11. Select **Manage**.
@@ -678,7 +678,7 @@ The following peripherals were tested by using the IPC hardware station that is 
 
 Dynamics 365 Commerce provides an out-of-box solution for integration with Adyen for payment services. The [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md) uses the device-agnostic [Adyen Payment Terminal application programming interface (API)](https://www.adyen.com/blog/introducing-the-terminal-api) and can interact with all payment terminals that this API supports. For a complete list of supported payment terminals, see [Adyen POS terminals](https://www.adyen.com/pos-payments/terminals).
 
-You can also use other payment providers with Dynamics 365 Commerce by creating a custom connector. Any payment terminal supported by the payment provider can be used with Dynamics 365 Commerce. Similarly, Dynamics 365 Commerce allows for any payment device integration model supported by the payment provider, such as local IP, cloud API, or direct connection (for example, via USB) to the POS. For more information, see [Create an end-to-end payment integration for a payment terminal](dev-itpro/end-to-end-payment-extension.md).
+You can also use other payment providers with Dynamics 365 Commerce by creating a custom connector. Any payment terminal supported by the payment provider can be used with Dynamics 365 Commerce. Similarly, Dynamics 365 Commerce allows for any payment device integration model that is supported by the payment provider, such as local IP, cloud API, or direct connection (for example, via USB) to the POS. For more information, see [Create an end-to-end payment integration for a payment terminal](dev-itpro/end-to-end-payment-extension.md).
 
 #### Cash drawer
 
