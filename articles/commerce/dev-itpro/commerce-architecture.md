@@ -2,17 +2,16 @@
 title: Dynamics 365 Commerce architecture overview
 description: This article provides an overview of all components in the Microsoft Dynamics 365 Commerce ecosystem, including integration points to the suite of Dynamics 365 products.
 author: samjarawan
-ms.date: 05/24/2024
+ms.date: 07/17/2024
 ms.topic: overview
 audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-03-01
-ms.dyn365.ops.version: Release 10.0.11
-ms.assetid: 
-ms.search.industry: Retail
 ms.search.form: RetailITWorkspace
+ms.custom: 
+  - bap-template
 ---
 
 # Dynamics 365 Commerce architecture overview
@@ -110,7 +109,7 @@ To facilitate cloud and edge computing scenarios, a Commerce Scale Unit is avail
 Multiple Commerce Scale Units can be associated with each environment. Each Commerce Scale Unit can be independently serviced and updated, and each can serve one or more channels across one or more legal entities. Each Commerce Scale Unit can be deployed to any of the supported Azure regions, and multiple Commerce Scale Units can be deployed to the same region. The independent nature of each Commerce Scale Unit allows for phased rollout of updates across a collection of channels.
 
 > [!NOTE]
-> Using or relying on outbound Internet Protocol (IP) addresses for Commerce Scale Units (CSUs) cloud is not supported. IP addresses can change at any time and should not be used as a stable identifier of network traffic. Taking a dependency on any IP value for CSU (cloud) might negatively impact your environment.
+> Using or relying on outbound Internet Protocol (IP) addresses for cloud-hosted CSUs isn't supported. IP addresses can change at any time and shouldn't be used as a stable identifier of network traffic. Dependence on any IP value for cloud-hosted CSUs might negatively impact your environment.
 
 #### Commerce Scale Units (self-hosted)
 
