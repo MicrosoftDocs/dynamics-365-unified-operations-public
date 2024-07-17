@@ -38,6 +38,9 @@ CSU Core is available for new deployments as of the Dynamics 365 Commerce versio
 
 CSU Core offers highly performant headless commerce APIs and the benefits of .NET Core. 
 
+> [!NOTE]
+> Using or relying on outbound Internet Protocol (IP) addresses for Commerce Scale Units (CSUs) is not a supported scenario. IP addresses can change at any time and should not be used as a stable identifier of network traffic. Failure to remove the usage may negatively impact your environment.
+
 ### Migrate your existing Microsoft-hosted CSU to CSU Core
 
 The following instructions describe how to switch an existing CSU deployment from the legacy .NET Framework to .NET Core. 
