@@ -28,6 +28,17 @@ Detailed information about objects in finance and operations apps can be found i
 
 ## Feature deprecation effective July 2024
 
+### Azure Active Directory to Microsoft Graph Migration
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | To enhance platform security and compliance, we're deprecating Azure Active Directory Graph in finance and operations apps. |
+| **Replaced by another feature?**   | Microsoft Graph - To ensure the security and integrity of your system and data, we strongly encourage all our customers to migrate to the more secure Microsoft Graph for making graph calls. |
+| **What do you need to do?**         | We strongly recommend that any customers with dependencies on the GraphAPIClient class (responsible for making Azure Active Directory Graph calls) migrate to the MicrosoftGraphClient (responsible for making Microsoft Graph calls) as soon as possible to avoid service disruptions. |
+| **Product areas affected**         | Finance and operations apps |
+| **Deployment option**              | All |
+| **Status**                         | End of support date is targeted for Oct 2024. |
+
 ### SharePoint integration authentication using a Microsoft-managed high-trust connection
 
 | &nbsp;  | &nbsp; |
