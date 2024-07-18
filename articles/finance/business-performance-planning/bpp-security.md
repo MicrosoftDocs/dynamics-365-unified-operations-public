@@ -4,7 +4,7 @@ description: This article describes how to set up security for business performa
 author: ShielaSogge
 ms.author: twheeloc
 ms.topic: article
-ms.date: 06/04/2024
+ms.date: 07/18/2024
 ms.reviewer: twheeloc 
 audience: Application User
 ms.search.region: Global
@@ -55,6 +55,10 @@ The planning viewer has the following privileges:
 
 - Read data
 
+
+>[!Note]
+> Users who access business performance planning need to be granted the role App viewer. 
+
 For more information, see [Assigning roles in the Power Platform](/power-platform/admin/assign-security-roles).
 
 ## Set up dimension security
@@ -91,6 +95,14 @@ To set security on a dimension, follow these steps.
             > For all visuals except **Table edit**, users need access to at least one dimension value for each dimension in the cube.
 
         - **Row level access** – For each value in the dimension, read or edit privileges can be granted at the line level. For example, you might want users to see and act on the **Budget 2025** scenario only. In this case, unmark the **Budget 2025 best case** scenario for reading and editing.
+        - For **Row level access** to work, configure Semantic model data source credentials:
+                1. Log into Power BI with a user who has the authority to create a dashboard (Administrator or power user).
+                2. In the Power BI workspace, select the semantic model.
+                3. Go to **Settings** > **Data source credentials** > **Edit credentials**.
+                4. Select the **Report viewers can only access this data source with their own Power BI identities using direct query** checkbox.
+                5. Click **Sign in**.
+                6. Sign in as a contributor user and refresh the dimension. The dimension should display the rows that aree selected in business performance planning.
+          
 
     > [!IMPORTANT]
     > By default, only the user who creates a new dimension value can see it, unless the **Grant full access to all dimension values** or **Grant read-only access to all dimension values** option is selected for the dimension group. Other users can see the dimension value only if read or write access to the dimension value is granted to them.
