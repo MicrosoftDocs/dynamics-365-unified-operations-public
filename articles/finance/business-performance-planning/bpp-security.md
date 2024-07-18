@@ -95,11 +95,10 @@ To set security on a dimension, follow these steps.
             > For all visuals except **Table edit**, users need access to at least one dimension value for each dimension in the cube.
 
             - **Row level access** – For each value in the dimension, read or edit privileges can be granted at the line level. For example, you might want users to see and act on the **Budget 2025** scenario only. In this case, unmark the **Budget 2025 best case** scenario for reading and editing. For **Row level access** to work, configure Semantic model data source credentials:
-<ul><li> Log into Power BI with a user who has the authority to create a dashboard (Administrator or power user).</li><li> In the Power BI workspace, select the semantic model.</li><li> Go to **Settings** > **Data source credentials** > **Edit credentials**. </li><li> Select the **Report viewers can only access this data source with their own Power BI identities using direct query** checkbox. </li><li> Click **Sign in** and sign in as a contributor user and refresh the dimension. The dimension should display the rows that aree selected in business performance planning.</li></ul> 
+                    <ul><li> Log into Power BI with a user who has the authority to create a dashboard (Administrator or power user).</li><li> In the Power BI workspace, select the semantic model.</li><li> Go to **Settings** > **Data source credentials** > **Edit credentials**. </li><li> Select the **Report viewers can only access this data source with their own Power BI identities using direct query** checkbox. </li><li> Click **Sign in** and sign in as a contributor user and refresh the dimension. The dimension should display the rows that aree selected in business performance planning.</li></ul> 
           
-
-    > [!IMPORTANT]
-    > By default, only the user who creates a new dimension value can see it, unless the **Grant full access to all dimension values** or **Grant read-only access to all dimension values** option is selected for the dimension group. Other users can see the dimension value only if read or write access to the dimension value is granted to them.
+> [!IMPORTANT]
+> By default, only the user who creates a new dimension value can see it, unless the **Grant full access to all dimension values** or **Grant read-only access to all dimension values** option is selected for the dimension group. Other users can see the dimension value only if read or write access to the dimension value is granted to them.
 
 1. After you finish setting dimension access for all the dimensions in the dimension group, you can review your changes on the **Summary** page.
 
