@@ -16,6 +16,8 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
+This topic describes how to integrate the Traceability add-in for Dynamics 365 Supply Chain Management with third-party system through its API.
+
 ## Authentication
 
 The platform security token is used to call the Traceability public API. Therefore, you must generate a *Microsoft Entra token* by using your Microsoft Entra application. You must then use the Microsoft Entra token to get the *access token* from the security service.
@@ -52,7 +54,7 @@ To obtain an access token, follow these steps:
     }
     ```
 
-1. Use the Entra token to generate a bearer token by submitting an HTTP request that has following properties:
+1. Use the Microsoft Entra token to generate a bearer token by submitting an HTTP request that has following properties:
 
     - **URL** – `https://securityservice.operations365.dynamics.com/token`
     - **Method** – POST
@@ -62,7 +64,7 @@ To obtain an access token, follow these steps:
         {
             "grant_type": "client_credentials",
             "client_assertion_type": "aad_app",
-            "client_assertion": "{Entra token}",
+            "client_assertion": "{Microsoft Entra token}",
             "scope": "https://traceabilityservice.operations365.dynamics.com/.default",
             "context": "{environmentId}",
             "context_type": "finops-env"
@@ -71,7 +73,7 @@ To obtain an access token, follow these steps:
 
         Where *{environmentId}* is the environment ID of your Supply Chain Management environment in lifecycle services.
 
-1. You should receive an access token in response. You must use this token as a bearer token to call the Supply Chain Traceability API. Here is the example of a response:
+1. You should receive an access token in response. You must use this token as a bearer token to call the Supply Chain Traceability API. Here's the example of a response:
 
     ```json
     {
@@ -102,7 +104,7 @@ The remaining sections provide detailed information about each API.
 
 ## API for events post (Add)
 
-This API is for events post which can be used for production component assembly, goods receipt in business activities. <!--KFM: A better/clearer description is needed. Also a better section heading. -->
+This API is for events post that can be used for production component assembly, goods receipt in business activities. <!--KFM: A better/clearer description is needed. Also a better section heading. -->
 
 - **Path** – `/api/environments/{environmentId}/events/PostBatchEvents`
 - **Method** – `POST`
@@ -156,42 +158,42 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 
 | Field Name | Description |
 |--|--|
-| `eventId` | The key to each activity against unique identity (SerialId/BatchId). Duplicated value is not allowed. System generates value if there is no value input by user. |
-| `description` | The text of activity event description. |
-| `activityType` | This field refers to predefined "Activity Type": Purchase, Sales, Production etc. |
-| `activityCode` | This field refers to configured "Activity Code": GoodsReceipt, Add, Remove etc. |
+| `eventId` | Unique identifier for the activity (`SerialId`/`BatchId`). Duplicate values aren't allowed. The system generates this value if none is specified. |
+| `description` | Description of the activity event. |
+| `activityType` | Refers to a predefined "Activity Type" (*Purchase*, *Sales*, *Production*, and so on). |
+| `activityCode` | Refers to a configured "Activity Code" (*GoodsReceipt*, *Add*, *Remove*, and so on). |
 | `dateTime` | The date and time of activity event happened. |
-| `operator` | The operator who executed the activity event. You can input UserID, EmployeeID or more. |
-| `companyCode` | For FnO, this field maps to legal entity. |
-| *&lt;data collection name&gt;* | These fields are used to collect customization value. |
+| `operator` | The operator who executed the activity event. The value can be a user ID, employee ID, or similar. |
+| `companyCode` | For Supply Chain Management, this field maps to a legal entity. |
+| *&lt;data collection name&gt;* | These fields are used to collect custom values. |
 
 ### Events post productTransactions element field descriptions
 
 | Field Name | Description |
 |--|--|
-| `transactionId` | The key of transactions against per event. Duplicated value is not allowed. |
-| `itemId` | Item number of top finished goods. |
-| `trackingId` | This field is the key of genealogy node and is the combination of `itemId` and `companyCode` and `batchId` and `serialId`. |
-| `serialId` | The serial number of top finished goods. |
-| `batchId` | The batch number of top finished goods. |
-| `quantity` | The operation quantity of top finished goods. |
-| `unitOfMeasure` | The UoM of received quantity. |
+| `transactionId` | Unique identifier for the transaction. Duplicate values aren't allowed. |
+| `itemId` | Item number of the top finished good. |
+| `trackingId` | Key value for the genealogy node. It's a combination of the `itemId`, `companyCode`, `batchId`, and `serialId`. |
+| `serialId` | The serial number of the top finished good. |
+| `batchId` | The batch number of the top finished good. |
+| `quantity` | The operation quantity of the top finished good. |
+| `unitOfMeasure` | The unit of measure of the received quantity. |
 
 ### Events post consumptionTransactions element field descriptions
 
 | Field Name | Description |
 |--|--|
-| `transactionId` | The key of transactions against per event. Duplicated value is not allowed. |
+| `transactionId` | Unique identifier for the transaction. Duplicate values aren't allowed. |
 | `itemId` | Item number of component. |
-| `trackingId` | This field is the key of genealogy node and is the combination of `itemId` and `companyCode` and `batchId` and `serialId`. |
-| `serialId` | The serial number of component. |
-| `batchId` | The batch number of component. |
-| `quantity` | The consumption quantity of component. |
-| `unitOfMeasure` | The UoM of consumption quantity. |
+| `trackingId` | Key value for the genealogy node. It's a combination of the `itemId`, `companyCode`, `batchId`, and `serialId`. |
+| `serialId` | The serial number of the component. |
+| `batchId` | The batch number of the component. |
+| `quantity` | The consumption quantity of the component. |
+| `unitOfMeasure` | The unit of measure of the consumption quantity. |
 
 ### Events post API response
 
-On success, status code 204 will be returned.
+On success, status code 204 is returned.
 
 ### Events post example
 
@@ -293,7 +295,7 @@ Produce finished goods **A** with component **B** and **C** by different event.
 
 #### Events post example results
 
-After posting the above events, the Traceability app would show the results shown in the following screenshot.
+If you were to post the example events shown previously, the Traceability app would display the results shown in the following screenshot.
 
 :::image type="content" source="media/events-post-api-result-example.png" alt-text="Results of the events post example, shown in the Traceability app" lightbox="media/events-post-api-result-example.png":::
 
@@ -324,13 +326,13 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 
 | Field | Description |
 |--|--|
-| `tracingDirection` | This field control the search direction: Backward or Forward. Backward – From top finished goods to raw materials; Forward – From raw materials to top finished goods. |
-| `trackingId` | This field is the key of genealogy node and is the combination of `itemNumber` and `company` and `batchNumber` and `serialNumber`. |
-| `company` | The company of top finished goods. For FnO, this field maps to legal entity. |
-| `itemNumber` | item number of top finished goods. |
+| `tracingDirection` | Controls the search direction: *Backward* or *Forward*. *Backward* means from top finished goods to raw materials; *Forward* means from raw materials to top finished goods. |
+| `trackingId` | Key value for the genealogy node. It's a combination of the `itemNumber`,`company`, `batchNumber`, and `serialNumber`. |
+| `company` | The company of the top finished good. For Supply Chain Management, this field maps to the legal entity. |
+| `itemNumber` | The item number of the top finished good. |
 | `serialNumber` | The serial number of top finished goods. |
-| `batchNumber` | The batch number of top finished goods. |
-| `ShouldIncludeEvents` | This parameter controls whether or not event details be included. Default as "false". |
+| `batchNumber` | The batch number of the top finished good. |
+| `ShouldIncludeEvents` | Controls whether event details should be included. Default is *false*. |
 
 ### Single query request API response
 
@@ -395,50 +397,50 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 
 | Field | Description |
 |--|--|
-| `TracingDirection` | This field advises the search direction: Backward or Forward. Backward – From top finished goods to raw materials; Forward – From raw materials to top finished goods. Only return 1 level above or below result. |
+| `TracingDirection` | Controls the search direction: *Backward* or *Forward*. *Backward* means from top finished goods to raw materials; *Forward* means from raw materials to top finished goods. Only returns one level above or below result. |
 
 ### Single query request API response root element field descriptions
 
 | Field | Description |
 |--|--|
-| `trackingId` | This field is the key of genealogy node and is the combination of "itemId" and "companyCode" and "batchId" and "serialId". |
+| `trackingId` | Key value for the genealogy node. It's a combination of the `itemId`,`companyCode`, `batchId`, and `serialId`. |
 
 ### Single query request API response events element field descriptions
 
 | Field | Description |
 |--|--|
-| `eventId` | The key to each activity against unique identity (SerialId/BatchId). Duplicated value is not allowed. System generates value if there is no value input by user. |
-| `companyCode` | The companyCode of top finished goods. For FnO, this field maps to legal entity. |
-| `operator` | The operator who executed the activity event. You can input UserID, EmployeeID or more. |
-| `description` | The text of activity event description. |
-| `activityType` | This field refers to predefined activity type (*Purchase*, *Sales*, *Production*, and so on). |
-| `activityCode` | This field refers to configured activity type (*GoodsReceipt*, *Add*, *Remove*, and so on). |
-| `dateTime` | The date and time of activity event happened. |
+| `eventId` | Unique identifier for the event (`SerialId`/`BatchId`). Duplicate values aren't allowed. The system generates this value if no value is provided. |
+| `companyCode` | The company code of the top finished good. For Supply Chain Management, this field maps to the legal entity. |
+| `operator` | The operator who executed the activity event. The value can be a user ID, employee ID, or similar. |
+| `description` | Activity event description. |
+| `activityType` | Refers to a predefined activity type (*Purchase*, *Sales*, *Production*, and so on). |
+| `activityCode` | Refers to a configured activity type (*GoodsReceipt*, *Add*, *Remove*, and so on). |
+| `dateTime` | Date and time the activity event occurred. |
 | *&lt;data collection name&gt;* | These fields are used to collect customization value. |
 
 ### Single query request API response productTransaction element field descriptions
 
 | Field | Description |
 |--|--|
-| `transactionId` | The key of transactions against per event. Duplicated value is not allowed. |
-| `itemId` | Item number of top finished goods. |
-| `trackingId` | This field is the key of genealogy node and is the combination of `itemId` and `companyCode` and `batchId` and `serialId`. |
-| `serialId` | The serial number of top finished goods. |
-| `batchId` | The batch number of top finished goods. |
-| `quantity` | The operation quantity of top finished goods. |
-| `unitOfMeasure` | The UoM of received quantity. |
+| `transactionId` | Unique identifier for the transaction. Duplicate values aren't allowed. |
+| `itemId` | Item number of the top finished good. |
+| `trackingId` | Key value for the genealogy node. It's a combination of the `itemId`, `companyCode`, `batchId`, and `serialId`. |
+| `serialId` | Serial number of the top finished good. |
+| `batchId` | Batch number of the top finished good. |
+| `quantity` | Operation quantity of the top finished good. |
+| `unitOfMeasure` | Unit of measure of the received quantity. |
 
 ### Single query request API response consumptionTransactions element field descriptions
 
 | Field | Description |
 |--|--|
-| `transactionId` | The key of transactions against per event. Duplicated value is not allowed. |
-| `itemId` | Item number of component. |
-| `trackingId` | This field is the key of genealogy node and is the combination of `itemId` and `companyCode` and `batchId` and `serialId`. |
-| `serialId` | The serial number of component. |
-| `batchId` | The batch number of component. |
+| `transactionId` | Unique identifier for the transaction. Duplicate values aren't allowed. |
+| `itemId` | Item number of the component. |
+| `trackingId` | Key value for the genealogy node. It's a combination of the `itemId`, `companyCode`, `batchId`, and `serialId`. |
+| `serialId` | Serial number of the component. |
+| `batchId` | Batch number of the component. |
 | `quantity` | The consumption quantity of component. |
-| `unitOfMeasure` | The UoM of consumption quantity. |
+| `unitOfMeasure` | Unit of measure of the consumption quantity. |
 
 ### Single query request example
 

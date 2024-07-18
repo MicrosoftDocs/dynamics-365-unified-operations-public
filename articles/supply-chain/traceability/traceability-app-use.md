@@ -1,6 +1,6 @@
 ---
-title: Use the Traceability app (preview)
-description: Learn how to use the Traceability app in Power Apps.
+title: Work with the Traceability app (preview)
+description: Learn how to work with the Traceability app in Power Apps.
 author: banluo-ms
 ms.author: banluo
 ms.reviewer: kamaybac
@@ -11,7 +11,7 @@ ms.custom:
   - bap-template
 ---
 
-# Use the Traceability app (preview)
+# Work with the Traceability app (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
@@ -19,6 +19,14 @@ ms.custom:
 The Traceability app lets you search for specific batch and serial numbers and analyze the genealogy of your products. This topic describes the basics of how to work with it.
 
 <!--KFM: This topic should be more detailed. Right now, it mostly just repeats the "quick start", plus provides a couple of scenario examples. A more complete description of UI features might be helpful -->
+
+## In-app learning
+
+The Traceability app provides in-app learning to help you get started. To access the in-app learning, follow these steps:
+
+1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
+1. On the left navigation pane, select **Get started**.
+1. A collection of links to videos and tutorials is shown. Select each of the link that you're interested in.
 
 ## Backward search
 

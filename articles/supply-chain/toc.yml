@@ -3473,7 +3473,7 @@
           href: traceability/traceability-app-run.md
         - name: Traceability app quick start
           href: traceability/traceability-app-quick-start.md
-        - name: Use the Traceability app
+        - name: Work with the Traceability app
           href: traceability/traceability-app-use.md
       - name: Traceability integrations
         items:
@@ -3481,6 +3481,8 @@
           href: traceability/traceability-integration-scm.md
         - name: Traceability API
           href: traceability/traceability-api.md
+        - name: Use Traceability data in Power BI
+          href: traceability/traceability-power-bi.md
     - name: Transportation management
       items:
       - name: Transportation management overview
