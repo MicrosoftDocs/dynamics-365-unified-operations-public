@@ -69,4 +69,4 @@ Follow these steps to connect your Power BI report to Traceability:
 
 1. The data is now available in Power BI, where you can explore it, design visualizations and export the report as needed.
 
-    :::image type="content" source="media/powerbi-report-example.png" alt-text="Example of query results in the Power Query Editor" lightbox="media/powerbi-report-example.png":::
+    :::image type="content" source="media/powerbi-report-example.png" alt-text="Example of a Power BI report with Traceability data" lightbox="media/powerbi-report-example.png":::
