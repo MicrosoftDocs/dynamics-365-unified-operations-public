@@ -108,7 +108,6 @@ To set security on a dimension, follow these steps.
 ### Edit dimension groups
 
 To edit a dimension group, follow these steps.
-
 1. On the **Dimension groups** page, select the dimension group that must be edited.
 2. Select **Edit group**.
 3. The dimensions in the dimension group are shown on the left side of the page. Add new dimensions to the dimension group, delete existing dimensions, or update the access options for existing dimensions. If you add a new dimension or edit an existing dimension in a dimension group, there are three access options:
@@ -128,7 +127,6 @@ After a dimension group is created, you can assign users to it. You can also rem
 #### Assign users to a dimension group
 
 To assign users to a dimension group, follow these steps.
-
 1. Go to the **Dimension group** list, and select the dimension group that you want to work with.
 2. Select **Users**, and then select **Assign**.
 3. In the list of users who can be assigned to the selected dimension group, select a user to assign. You can also select multiple users to assign all of them to the dimension group at the same time.
@@ -137,7 +135,6 @@ To assign users to a dimension group, follow these steps.
     > The user list is filtered so that it shows only users who have access to the `msdyn_xpnadimension` table.
 
 Alternatively, follow these steps.
-
 1. Open the **Users list** page, and select a user.
 2. Select **Manage dimension groups**.
 3. A check mark appears next to the name of each dimension group that the selected user has access to. Select the checkbox next to the name of the dimension group that you want to assign the user to, and then select **OK**.
@@ -145,13 +142,11 @@ Alternatively, follow these steps.
 #### Remove users from a dimension group
 
 To remove users from a dimension group, follow these steps.
-
 1. Go to the **Dimension group** list, and select the dimension group that you want to work with.
 2. Select **Users**, and then select **Remove**.
 3. In the list of users who are currently assigned to the selected dimension group, select a user to remove. You can also select multiple users to remove all of them from the dimension group at the same time.
 
 Alternatively, follow these steps.
-
 1. Open the **Users list** page, and select a user.
 2. Select **Manage dimension groups**.
 3. A check mark appears next to the name of each dimension group that the selected user has access to. Clear the checkbox next to the name of the dimension group that you want to remove the user from.
@@ -159,12 +154,10 @@ Alternatively, follow these steps.
 #### View user/dimension group assignments
 
 To view the list of users who are currently assigned to a dimension group, follow these steps.
-
 1. Go to the **Dimension group** list, and select the dimension group that you want to work with.
 2. Select **Users**, and then select **View**.
 
 To view the list of dimension groups that a user is currently assigned to, follow these steps.
-
 1. Open the **Users list** page, and select a user.
 2. Select **View access**. The dimension groups that the user has access to are shown on the left side of the page, and the dimension access details are shown on the right side.
 
