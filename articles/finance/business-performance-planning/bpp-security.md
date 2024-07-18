@@ -96,12 +96,12 @@ To set security on a dimension, follow these steps.
 
         - **Row level access** – For each value in the dimension, read or edit privileges can be granted at the line level. For example, you might want users to see and act on the **Budget 2025** scenario only. In this case, unmark the **Budget 2025 best case** scenario for reading and editing.
         - For **Row level access** to work, configure Semantic model data source credentials:
-                1. Log into Power BI with a user who has the authority to create a dashboard (Administrator or power user).
-                2. In the Power BI workspace, select the semantic model.
-                3. Go to **Settings** > **Data source credentials** > **Edit credentials**.
-                4. Select the **Report viewers can only access this data source with their own Power BI identities using direct query** checkbox.
-                5. Click **Sign in**.
-                6. Sign in as a contributor user and refresh the dimension. The dimension should display the rows that aree selected in business performance planning.
+             a. Log into Power BI with a user who has the authority to create a dashboard (Administrator or power user).
+             b. In the Power BI workspace, select the semantic model.
+             c. Go to **Settings** > **Data source credentials** > **Edit credentials**.
+             d. Select the **Report viewers can only access this data source with their own Power BI identities using direct query** checkbox.
+             e. Click **Sign in**.
+             f. Sign in as a contributor user and refresh the dimension. The dimension should display the rows that aree selected in business performance planning.
           
 
     > [!IMPORTANT]
