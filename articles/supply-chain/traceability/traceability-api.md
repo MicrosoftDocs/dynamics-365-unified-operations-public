@@ -24,9 +24,10 @@ To obtain an access token, follow these steps:
 
 1. Sign in to [Azure portal](https://ms.portal.azure.com/).
 1. Search for or navigate to the **App registrations** page.
-1. Open the app registration you created for the Traceability app.
+1. Open the [app registration](traceability-install.md) you created for the Traceability app.
+1. From the left navigator, select **Overview**. Copy the value shown for **Application (client) ID** to a temporary text file.
 1. From the toolbar, select **Endpoints**.
-1. The Endpoints dialog opens. Copy the value shown for **OAuth 2.0 token endpoint (v2)** to a temporary text file.
+1. The **Endpoints** dialog opens. Copy the value shown for **OAuth 2.0 token endpoint (v2)** to a temporary text file.
 1. Fetch a Microsoft Entra token by submitting an HTTP request that has following properties:
 
     - **URL** – Use the **OAuth 2.0 token endpoint (v2)** value you found earlier in this procedure.
@@ -68,6 +69,8 @@ To obtain an access token, follow these steps:
         }
         ```
 
+        Where *{environmentId}* is the environment ID of your Supply Chain Management environment in lifecycle services.
+
 1. You should receive an access token in response. You must use this token as a bearer token to call the Supply Chain Traceability API. Here is the example of a response:
 
     ```json
@@ -93,6 +96,8 @@ The following table lists the APIs available for Traceability.
 
 <!--KFM: Do we have *Remove genealogy node*? -->
 
+Where *{environmentId}* is the environment ID of your Supply Chain Management environment in lifecycle services.
+
 The remaining sections provide detailed information about each API.
 
 ## API for events post (Add)
@@ -101,6 +106,8 @@ This API is for events post which can be used for production component assembly,
 
 - **Path** – `/api/environments/{environmentId}/events/PostBatchEvents`
 - **Method** – `POST`
+
+Where *{environmentId}* is the environment ID of your Supply Chain Management environment in lifecycle services.
 
 ### Events post request payload
 
@@ -296,6 +303,8 @@ This API is for traceability information query and retrieves genealogy, activity
 
 - **Path** – `/api/environments/{environmentId}/traces/Query`
 - **Method** – `POST`
+
+Where *{environmentId}* is the environment ID of your Supply Chain Management environment in lifecycle services.
 
 ### Single query request payload
 

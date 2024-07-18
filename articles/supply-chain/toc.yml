@@ -3469,10 +3469,12 @@
           href: traceability/traceability-app-configure.md
       - name: Use the Traceability app in Power Apps
         items:
-        - name: Run the Traceability app in Power Apps
+        - name: Open the Traceability app in Power Apps
           href: traceability/traceability-app-run.md
         - name: Traceability app quick start
           href: traceability/traceability-app-quick-start.md
+        - name: Use the Traceability app
+          href: traceability/traceability-app-use.md
       - name: Traceability integrations
         items:
         - name: Integrate Traceability with Supply Chain Management

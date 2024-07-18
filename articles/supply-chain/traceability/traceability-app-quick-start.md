@@ -71,7 +71,7 @@ This section shows how to explore the capabilities of the Traceability app using
 
 1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
 1. On the left navigation pane, select **Trace** \> **Genealogy trace**.
-1. Make a *backwards search*, which lets you enter a unique identifier of a finished  to retrieve its genealogy, activity, and data collection.
+1. Make a *backwards search*, which lets you enter a unique identifier of a finished good to retrieve its genealogy, activity, and data collection.
 
     Use the search field to look for a specific serial number of a finished good. For example, you can use the serial number *bike-s0001* or *bike-s0002* to find the genealogy tree of a bike from the demo data.
 

@@ -1,6 +1,6 @@
 ﻿---
 title: Traceability overview (preview)
-description: Traceability add-in for Dynamics 365 Supply Chain Management  enables you to trace raw materials and subassemblies in a product and track the usage and disposal over the full value chain. As a result, it helps you meet a wider range of business objectives, including efficiency, resilience, responsiveness, and sustainability.
+description: Traceability add-in for Dynamics 365 Supply Chain Management enables you to trace raw materials and subassemblies in a product and track the usage and disposal over the full value chain. As a result, it helps you meet a wider range of business objectives, including efficiency, resilience, responsiveness, and sustainability.
 author: banluo-ms
 ms.author: banluo
 ms.reviewer: kamaybac
