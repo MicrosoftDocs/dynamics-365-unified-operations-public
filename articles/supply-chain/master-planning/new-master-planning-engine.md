@@ -39,6 +39,14 @@ There's currently no timeline for full removal of the deprecated built-in planni
 
 Planning Optimization is now the standard master planning engine and must be used for all new cloud deployments. Starting with Supply Chain Management version 10.0.32, the first time you enable planning processes for any legal entity, the system will require you to install and enable Planning Optimization if you haven't already done so.
 
+From 10.0.41 for new deployments Planning Optimization use enforcement is made stricter by blocking the deprecated master planning in new environments. There will be no manual way to enable the deprecated planning engine. There are only 3 cases for which the deprecated planning engine will be allowed as a temporary solution until Planning Optimization will support each case:
+
+1. Use of lean manufacturing
+2. Use of dimension-based configuration
+3. Use of catch-weight
+
+If you require any of these functionality, please create a support ticket indicating it and deprecated planning will be enabled for you. Note this will be a temporary solution until Planning Optimization supports these features. No other reasons will be admitted for enabling deprecated planning in new environments. 
+
 ## Adding a new legal entity to an existing environment
 
 When you add a new legal entity (company) to an existing environment, that company must use Planning Optimization. Starting with Supply Chain Management version 10.0.32, the first time you enable planning processes for any newly added legal entity, the system will require you to install and enable Planning Optimization if you haven't already done so.
