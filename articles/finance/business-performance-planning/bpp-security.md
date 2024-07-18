@@ -94,13 +94,12 @@ To set security on a dimension, follow these steps.
             > [!NOTE]
             > For all visuals except **Table edit**, users need access to at least one dimension value for each dimension in the cube.
 
-        - **Row level access** – For each value in the dimension, read or edit privileges can be granted at the line level. For example, you might want users to see and act on the **Budget 2025** scenario only. In this case, unmark the **Budget 2025 best case** scenario for reading and editing. For **Row level access** to work, configure Semantic model data source credentials:
-                 a. Log into Power BI with a user who has the authority to create a dashboard (Administrator or power user).
-                 b. In the Power BI workspace, select the semantic model.
-                 c. Go to **Settings** > **Data source credentials** > **Edit credentials**.
-                 d. Select the **Report viewers can only access this data source with their own Power BI identities using direct query** checkbox.
-                 e. Click **Sign in**.
-                 f. Sign in as a contributor user and refresh the dimension. The dimension should display the rows that aree selected in business performance planning.
+            - **Row level access** – For each value in the dimension, read or edit privileges can be granted at the line level. For example, you might want users to see and act on the **Budget 2025** scenario only. In this case, unmark the **Budget 2025 best case** scenario for reading and editing. For **Row level access** to work, configure Semantic model data source credentials:
+                    Log into Power BI with a user who has the authority to create a dashboard (Administrator or power user).
+                    In the Power BI workspace, select the semantic model.
+                    Go to **Settings** > **Data source credentials** > **Edit credentials**.
+                    Select the **Report viewers can only access this data source with their own Power BI identities using direct query** checkbox.
+                    Click **Sign in** and sign in as a contributor user and refresh the dimension. The dimension should display the rows that aree selected in business performance planning.
           
 
     > [!IMPORTANT]
