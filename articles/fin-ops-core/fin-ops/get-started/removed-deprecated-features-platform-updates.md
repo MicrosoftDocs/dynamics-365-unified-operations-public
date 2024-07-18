@@ -28,7 +28,7 @@ Detailed information about objects in finance and operations apps can be found i
 
 ## Feature deprecation effective July 2024
 
-### Microsoft Entra ID to Microsoft Graph Migration
+### Azure Active Directory Graph to Microsoft Graph Migration
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
