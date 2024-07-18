@@ -4,7 +4,7 @@ description: Access links to troubleshooting resources and answers to various fr
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 11/06/2023
+ms.date: 07/18/2024
 ms.custom: bap-template
 ms.reviewer: twheeloc
 audience: Application User
@@ -38,6 +38,7 @@ The following FAQ articles discuss issues specific to Finance:
 - [Credit statistics FAQ](accounts-receivable/credit-statistics-faq.md)
 - [Financial Reporting Data mart resets FAQ](../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?context=/dynamics365/context/finance)
 - [Financial reporting FAQ](general-ledger/financial-reporting-faq.md)
+- [Intercompany journals: Dimension values on multi-line vs single line journal](general-ledger/intercompany-journal.md)
 
 The following FAQ articles discuss issues related to the platform shared by all finance and operations apps, including finance:
 
