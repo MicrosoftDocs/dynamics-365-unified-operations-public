@@ -365,6 +365,7 @@ For the scenarios when shared customers were used for invoices issuing, but end 
 1. Repeat steps 2 through 6 for the remaining properties
    - BuyerTIN
    - BuyerBRN
+   - BuyerSST
    - BuyerAddressLine
    - BuyerCityName
    - BuyerCountrySubentityCode
