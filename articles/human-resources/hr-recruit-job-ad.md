@@ -48,6 +48,7 @@ To create a job ad, fill in the following fields:
 - **Compensation** – By including information about the salary range, benefits, and any perks that are associated with the position, you can help make the job ad attractive to potential candidates.
 - **Currency** – Select the currency of the compensation.
 - **Position type** – You can create job ads for full-time or part-time contract employees.
+- **Recruiting request** – Select **Recruiting request** to view details about the job ad such as compensation, job description, and external title in the recruiting request.
 
 ## Recruiting requests
 
