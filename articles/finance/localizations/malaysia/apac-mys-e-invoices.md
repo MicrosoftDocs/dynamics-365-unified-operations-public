@@ -346,6 +346,13 @@ Follow these steps to enable QR codes printing in full and simplified invoices.
 1. Select the **Customer invoice** report, and then, in the **Report format** field, reference the **SalesInvoice.ReportFull\_MY** or **SalesInvoice.ReportSimplified\_MY** layout.
 1. Select the **Free text invoice** report, and then, in the **Report format** field, reference the **FreeTextInvoice.ReportFull\_MY** or **FreeTextInvoice.ReportSimplified\_MY** layout.
 
+In case of self-invoices do the following steps.
+
+1. Go to **Accounts payable** \> **Setup** \> **Forms** \> **Form setup**.
+2. Select **Print management**.
+3. Select the **Vendor invoice** report, and then, in the **Report format** field, refer to the **VendInvoiceDocument.ReportMY** layout.
+
+
 > [!NOTE]
 > The QR code that's shown on the printouts of invoices represents the URL that takes you to the official portal of MyInvois system, where you can find the details of the related electronic invoice.
 > 
