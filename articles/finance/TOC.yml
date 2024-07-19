@@ -1092,6 +1092,8 @@
                       href: general-ledger/tasks/create-assign-advanced-rule-structures.md
                     - name: How do I set up balancing financial dimensions?
                       href: general-ledger/set-up-balance-dimensions.md
+                    - name: Default financial dimensions on financial journals
+                      href: general-ledger/dimensions-default-values.md
             - name: Setup
               items:
                 - name: Process allocations
