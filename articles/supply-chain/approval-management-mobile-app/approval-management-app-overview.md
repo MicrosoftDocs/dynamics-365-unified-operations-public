@@ -27,18 +27,16 @@ The Approvals Management mobile app provides the following capabilities for mana
 - Delegate requests to another approver.
 - Ask requesters to make changes.
 
+The following image shows an example of the Approvals Management mobile app being used to manage multiple purchase order requests.
+
+:::image type="content" source="media/approval-app-list-example.png" alt-text="User interface elements on list pages without multiselect" lightbox="media/approval-app-list-example.png":::
+
 <!--KFM: Update the following licensing details as needed -->
 
 > [!NOTE]
 > Use of the Approvals Management mobile app is covered by the *Dynamics 365 Supply Chain Management* user licenses. Using the app requires a *Dynamics 365 Operations – Activity* license. Licensing terms are subject to change without notice. For complete and up-to-date licensing information, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
 The Approvals Management mobile app replaces the now-deprecated [Purchase order approval mobile workspace](../procurement/purchase-order-mobile-workspace.md).
-
-## Set up approval workflows
-
-To enable the approval process for a document type, you must set up approval workflows for it in Dynamics 365 Supply Chain Management. For more information, see [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
-
-Once your approval workflows are set up, approval requests will appear in the Approvals Management mobile app just as they do when the same user signs in to Dynamics 365 Supply Chain Management to manage approvals in the web client.
 
 ## Next steps
 

@@ -93,6 +93,12 @@ Follow these steps to add the required security roles to a Supply Chain Manageme
 For more information about how to set up roles and security in Supply Chain Management, see
 [Security roles](../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md#security-roles).
 
+## Set up approval workflows
+
+To enable the approval process for a document type, you must set up approval workflows for it in Dynamics 365 Supply Chain Management. For more information, see [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
+
+Once your approval workflows are set up, approval requests will appear in the Approvals Management mobile app just as they do when the same user signs in to Dynamics 365 Supply Chain Management to manage approvals in the web client.
+
 ## Install and open the Approvals Management mobile app
 
 <!--KFM: The hands-on lab suggests another procedure (something about the admin shares a link with specific users through Power Apps). This is the method from Asset Management, which I think will also work and seems easier. -->
