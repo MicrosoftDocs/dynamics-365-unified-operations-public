@@ -118,14 +118,21 @@ To work with quality orders that are related to your quarantine orders, go to **
 - Review the values in the **Quality order status** column. In this way, you can learn the overall status of all quality orders that are related to each quarantine order in grid.
 - Select a quarantine order in the grid, and then, on the Action Pane, select **Quality orders** to view, create, or update quality orders that are related to the quarantine order.
 
-### From goods-in-transit orders
+### From goods-in-transit orders (preview)
+
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
+
+You can initiate and run quality checks against goods-in-transit orders. This proactive approach enables discrepancies or defects that might occur during transportation to be detected early, thereby ensuring that only products that meet predefined quality standards can proceed to their final destination.
 
 To work with quality orders that are related to your goods-in-transit orders, follow any of these steps:
 
 - Go to **Landed cost \> Periodic tasks \> Goods in transit orders** and select a goods-in-transit order. Then, on the Action Pane, select **Quality orders** to open the **Quality orders** page. There, you can view, create, or update quality orders that are related to the goods-in-transit order.
 - Go to **Landed cost \> Voyages \> All voyages** and open or select a voyage or select a voyage. On the Action pane, on the **General** tab, in the **Inquiries** group, select **Goods in transit orders** to open the **Goods in transit orders** page. Select a goods-in-transit order. Then, on the Action Pane, select **Quality orders** to open the **Quality orders** page, where you can view, create, or update quality orders that are related to the selected goods-in-transit order.
 
-For more information, see [Turn on the Landed cost module and related features for your system](../landed-cost/landed-cost-enable.md).
+For details about how to enable this feature, see [Turn on the Landed cost module and related features for your system](../landed-cost/landed-cost-enable.md).
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Advanced actions for quality orders
 
