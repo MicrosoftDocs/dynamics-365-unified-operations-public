@@ -6,8 +6,7 @@ description: This article describes the rules that define how financial dimensio
 author: kweekley
 ms.date: 07/19/2024
 ms.topic: conceptual
-ms.prod: 
-ms.technology: 
+
 
 # optional metadata
 
