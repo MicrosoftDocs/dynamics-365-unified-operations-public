@@ -345,6 +345,17 @@ To cover scenarios for non-taxable, zero-rated, or exempted operations, define t
 1. In the **Exempt code** field, reference one of the exempt codes that you created in step 1.
 1. Save your changes, and close the page.
 
+## Configure units of measure
+
+1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
+2. Select a unit ID, and then select **External codes**.
+3. On the **External codes** page, in the **Overview** section, in the **Code** column, enter a code that corresponds to the selected unit ID.
+4. In the **Standard code** column, select the checkbox.
+5. In the **Value** section, in the **Value** field, enter the external code to use as the [units](https://sdk.myinvois.hasil.gov.my/codes/unit-types/) according to required codification.
+
+    > [!NOTE]
+    > For scenarios where no specific units of measure are assumed, the default value **EA** (each) is used.
+
 ## Issue electronic invoices
 
 After you complete all the required configuration steps, you can generate and submit electronic invoices for posted invoices by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. For more information about how to generate electronic invoices, see [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
