@@ -295,8 +295,17 @@ If business processes assume that self invoices are issued, you must also config
     > - **EI00000000030** is used as the vendor's **TIN**.
     > - **NA** is used as the vendor's **BRN**.
 
-> [!NOTE]
-> A Malaysian Standard Industrial Classification (MSIC) code might not be applicable to foreign vendors. In this case, the fixed value **00000** is used for the activity code, and the value **NA** is used as the activity description.
+### Enter a business activity code and description
+
+1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
+1. Select a vendor, and then, in the **Vendor** menu, on the Action Pane, select **Electronic document properties**.
+1. Select the line where the **Type** field is set to **ActivityCode**.
+1. In the **Value** field, enter the business activity code.
+1. Select the line where the **Type** field is set to **ActivityDescription**.
+1. In the **Value** field, enter the business activity description.
+
+   > [!NOTE]
+   > A Malaysian Standard Industrial Classification (MSIC) code might not be applicable to foreign vendors. In this case, the fixed value **00000** is used for the activity code, and the value **NA** is used as the activity description.
 
 ## Configure the application-specific parameters
 
