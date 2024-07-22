@@ -11,6 +11,9 @@ ms.custom:
   - bap-template
 ---
 
+<!-- In the table that starts in line 324, some rows mention "top finished good" and one says "top finished goods". Are they correct as is, or should they all be either "good" or "goods"? --> 
+
+
 # Traceability API (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -152,21 +155,13 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 
 ### Events post header field descriptions
 
-
-
-
-
-
-
-
-
 | Field Name | Description |
 |--|--|
 | `eventId` | Unique identifier for the activity (`SerialId`/`BatchId`). Duplicate values aren't allowed. The system generates this value if none is specified. |
 | `description` | Description of the activity event. |
 | `activityType` | Refers to a predefined "Activity Type" (*Purchase*, *Sales*, *Production*, and so on). |
 | `activityCode` | Refers to a configured "Activity Code" (*GoodsReceipt*, *Add*, *Remove*, and so on). |
-| `dateTime` | The date and time of activity event happened. |
+| `dateTime` | The date and time the activity event happened. |
 | `operator` | The operator who executed the activity event. The value can be a user ID, employee ID, or similar. |
 | `companyCode` | For Supply Chain Management, this field maps to a legal entity. |
 | *&lt;data collection name&gt;* | These fields are used to collect custom values. |
@@ -201,7 +196,7 @@ On success, status code 204 is returned.
 
 ### Events post example
 
-Produce finished goods **A** with component **B** and **C** by different event.
+Produce finished goods **A** with component **B** and **C** by different events.
 
 #### Events post example request payload 1
 
@@ -297,18 +292,18 @@ Produce finished goods **A** with component **B** and **C** by different event.
 
 #### Events post example results
 
-If you were to post the example events shown previously, the Traceability app would display the results shown in the following screenshot.
+If you were to post the example events shown previously, the Traceability Add-in would display the results shown in the following screenshot.
 
-:::image type="content" source="media/events-post-api-result-example.png" alt-text="Results of the events post example, shown in the Traceability app" lightbox="media/events-post-api-result-example.png":::
+:::image type="content" source="media/events-post-api-result-example.png" alt-text="Results of the events post example, shown in the Traceability Add-in" lightbox="media/events-post-api-result-example.png":::
 
 ## Single query API
 
 This API accepts queries for traceability information and returns genealogy, activity, and data collection information.
 
-- **Path** – `/api/environments/{environmentId}/traces/Query`
-- **Method** – `POST`
+- **Path**: `/api/environments/{environmentId}/traces/Query`
+- **Method**: `POST`
 
-Where *{environmentId}* is the environment ID of your Supply Chain Management environment in lifecycle services.
+Where *{environmentId}* is the environment ID of your Supply Chain Management environment in Lifecycle Services.
 
 ### Single query request payload
 
@@ -332,7 +327,7 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 | `trackingId` | Key value for the genealogy node. It's a combination of the `itemNumber`,`company`, `batchNumber`, and `serialNumber`. |
 | `company` | The company of the top finished good. For Supply Chain Management, this field maps to the legal entity. |
 | `itemNumber` | The item number of the top finished good. |
-| `serialNumber` | The serial number of top finished goods. |
+| `serialNumber` | The serial number of the top finished goods. |
 | `batchNumber` | The batch number of the top finished good. |
 | `ShouldIncludeEvents` | Controls whether event details should be included. Default is *false*. |
 
@@ -416,7 +411,7 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 | `activityType` | Refers to a predefined activity type (*Purchase*, *Sales*, *Production*, and so on). |
 | `activityCode` | Refers to a configured activity type (*GoodsReceipt*, *Add*, *Remove*, and so on). |
 | `dateTime` | Date and time the activity event occurred. |
-| *&lt;data collection name&gt;* | These fields are used to collect customization value. |
+| *&lt;data collection name&gt;* | These fields are used to collect customization values. |
 
 ### Single query response productTransaction element field descriptions
 
@@ -424,7 +419,7 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 |--|--|
 | `transactionId` | Unique identifier for the transaction. Duplicate values aren't allowed. |
 | `itemId` | Item number of the top finished good. |
-| `trackingId` | Key value for the genealogy node. It's a combination of the `itemId`, `companyCode`, `batchId`, and `serialId`. |
+| `trackingId` | Key value for the genealogy node. It's a combination of `itemId`, `companyCode`, `batchId`, and `serialId`. |
 | `serialId` | Serial number of the top finished good. |
 | `batchId` | Batch number of the top finished good. |
 | `quantity` | Operation quantity of the top finished good. |
@@ -436,15 +431,15 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 |--|--|
 | `transactionId` | Unique identifier for the transaction. Duplicate values aren't allowed. |
 | `itemId` | Item number of the component. |
-| `trackingId` | Key value for the genealogy node. It's a combination of the `itemId`, `companyCode`, `batchId`, and `serialId`. |
+| `trackingId` | Key value for the genealogy node. It's a combination of `itemId`, `companyCode`, `batchId`, and `serialId`. |
 | `serialId` | Serial number of the component. |
 | `batchId` | Batch number of the component. |
-| `quantity` | The consumption quantity of component. |
+| `quantity` | The consumption quantity of the component. |
 | `unitOfMeasure` | Unit of measure of the consumption quantity. |
 
 ### Single query request example
 
-Produce finished goods **A** with component **B** and **C** by different event. Query the result of finished goods **A**.
+Produce finished goods **A** with component **B** and **C** by different events. Query the result of finished goods **A**.
 
 #### Single query request example request payload
 
