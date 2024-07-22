@@ -1,6 +1,6 @@
 ---
 title: Configure the Traceability app in Power Apps (preview)
-description: This article describes how to configure the Traceability app in Power Apps
+description: This article describes how to configure the Traceability Add-in in Power Apps.
 author: banluo-ms
 ms.author: banluo
 ms.reviewer: kamaybac
@@ -10,6 +10,9 @@ ms.date: 07/29/2024
 ms.custom: 
   - bap-template
 ---
+
+<!-- The style guide says Traceability is an add-in, not an app (https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=72151), so I suggest changing the H1 to "Configure Traceability in Power Apps (preview)" -->
+
 
 # Configure the Traceability app in Power Apps (preview)
 
