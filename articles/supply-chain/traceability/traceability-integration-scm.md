@@ -1,6 +1,6 @@
 ﻿---
 title: Integrate Traceability with tracked components in Supply Chain Management (preview)
-description: Learn how to integrate the Traceability add-in for Dynamics 365 Supply Chain Management with with the tracked components feature in Supply Chain Management.
+description: Learn how to integrate the Traceability add-in for Dynamics 365 Supply Chain Management with the tracked components feature in Supply Chain Management.
 author: banluo-ms
 ms.author: banluo
 ms.reviewer: kamaybac
@@ -58,9 +58,9 @@ You must set up your Supply Chain Management system to record batch/serial numbe
 
 1. Add the *Tracked components* action to relevant areas of the production floor execution interface.
     1. Go to **Production control** \> **Setup** \> **Manufacturing execution** \> **Configure production floor execution**.
-    1. Select a relevant configuration and, from the Action Pane, select **Design tabs**. Add the *Tracked components* action to each relevant tab and toolbar. Repeat this for each relevant configuration
+    1. Select a relevant configuration and, from the Action Pane, select **Design tabs**. Add the *Tracked components* action to each relevant tab and toolbar. Repeat this step for each relevant configuration
 
-    If you are using *USMF* [demo data](../../fin-ops-core/dev-itpro/get-started/demo-data.md), then open the **Default** configuration, select the *Active jobs* design tab and add the *Tracked components* action to the **Primary toolbar**.
+    If you're using *USMF* [demo data](../../fin-ops-core/dev-itpro/get-started/demo-data.md), then open the **Default** configuration, select the *Active jobs* design tab and add the *Tracked components* action to the **Primary toolbar**.
 
     For more information about these settings, see [Design the production floor execution interface](../production-control/production-floor-execution-tabs.md).
 

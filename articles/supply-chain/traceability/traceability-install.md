@@ -33,13 +33,13 @@ To use Traceability, your system must meet the following requirements:
 1. Search for or navigate to the **App registrations** page.
 1. On the toolbar, select **New registration**.
 1. Fill out the **Register and application** page and select **Register**. For more information about these settings, see [Quickstart: Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app?tabs=certificate).
-1. You new app registration opens. On the left navigation pane, select **Overview**. Copy the following values to a temporary text file. You'll need them later.
+1. Your new app registration opens. On the left navigation pane, select **Overview**. Copy the following values to a temporary text file. You'll need them later.
     - **Application (client) ID**
     - **Directory (tenant) ID**
 
 ### Create client secrets for the new Microsoft Entra application
 
-1. In [Azure portal](https://ms.portal.azure.com/), open the application you just registered in the previous section.
+1. In [Azure portal](https://ms.portal.azure.com/), open the application you registered in the previous section.
 1. In the left navigation pane, select **Manage** \> **Certificates & secrets**.
 1. On the **Certificates & secrets** page, select **New client secret**.
 1. In the **Add a client secret** dialog, enter a description and choose an expiration date for the secret. Then select **Add**.
@@ -47,11 +47,11 @@ To use Traceability, your system must meet the following requirements:
 
 ## Install and configure the Traceability application in Power Apps
 
-Apply the following steps in Power Platform Admin Center to install the Traceability application in Power Apps.
+To install the Traceability application in Power Apps, complete the following steps in Power Platform Admin Center.
 
 1. Find the [*Dynamics 365 Supply Chain Traceability* app in AppSource](https://appsource.microsoft.com/en-US/product/dynamics-365/mscrm.d365-supply-chain-traceability-preview?flightCodes=sctprivatepreview).
 1. Select **Get it now**.
-1. You are transferred to the Power Platform admin center. Select the environment where you want to install the solution, agree to the license terms and privacy statement, and then select **Install** to install the app in your selected environment.
+1. You're transferred to the Power Platform admin center. Select the environment where you want to install the solution, agree to the license terms and privacy statement, and then select **Install** to install the app in your selected environment.
 
     > [!NOTE]
     > If you don't see your environment listed, you might need to change your geographic region in the Power Platform admin center. Select **Cancel** and then choose a supported region from the region selector in the top right corner of the page. Then try again.

@@ -32,7 +32,6 @@ To check whether demo data is install on your system, follow these steps.
     |--|--|--|--|--|--|
     | USMF | Goods Receipt | Production | Goods Receipt | Production | TRUE |
     | USMF | Consumption | Production | Consumption | Production | TRUE |
-    | USMF | Goods Receipt | Purchase | Goods Receipt | Purchase | TRUE |
 
     If the configuration settings aren't shown, then you can import the demo data as described in the next section.
 
@@ -43,7 +42,7 @@ If you'd like to explore the Traceability app using demo data, but the data isn'
 1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
 1. On the left navigation pane, select **Home** \> **Get started**.
 1. In the **Manage environment data** section, on the **Import demo data** tile, select **Import demo data**.
-1. Wait until the import process is complete. This might take several minutes.
+1. Wait until the import process is complete. The process might take several minutes to complete.
 
 ## Delete all data
 
@@ -57,7 +56,7 @@ To delete all data from the Traceability add-in, follow these steps.
 1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
 1. On the left navigation pane, select **Home** \> **Get started**.
 1. In the **Manage environment data** section, on the **Delete all data** tile, select **Delete all data**.
-1. Wait until the import process is complete. This might take several minutes.
+1. Wait until the import process is complete. This process might take several minutes to complete.
 
 ## Demo data model
 

@@ -1,6 +1,6 @@
 ﻿---
 title: Traceability API (preview)
-description: Learn how to integrate the Traceability add-in for Dynamics 365 Supply Chain Management with third-party system through its API.
+description: Learn how to integrate the Traceability add-in for Dynamics 365 Supply Chain Management with external system through its API.
 author: banluo-ms
 ms.author: banluo
 ms.reviewer: kamaybac
@@ -16,7 +16,7 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This topic describes how to integrate the Traceability add-in for Dynamics 365 Supply Chain Management with third-party system through its API.
+This article describes how to integrate the Traceability add-in for Dynamics 365 Supply Chain Management with external system through its API.
 
 ## Authentication
 
@@ -389,7 +389,7 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 
 | Field | Description |
 |--|--|
-| `TracingDirection` | Controls the search direction: *Backward* or *Forward*. *Backward* means from top finished goods to raw materials; *Forward* means from raw materials to top finished goods. Only returns one level above or below result. |
+| `TracingDirection` | Controls the search direction: *Backward* or *Forward*. *Backward* means from top finished goods to raw materials; *Forward* means from raw materials to top finished goods. Only returns one level above or below the result. |
 
 ### Single query response root element field descriptions
 

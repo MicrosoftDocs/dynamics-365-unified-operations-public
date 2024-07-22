@@ -18,7 +18,7 @@ ms.custom:
 
 ## <a name="api-endpoint"></a>API endpoint
 
-The Traceability app provides an API endpoint that you can use to exchange messages with external systems. It lets you integrate Traceability with other systems, such as ERP systems, warehouse management systems, and quality management systems. To use the API, you need to know the URL of the endpoint. To find it, follow these steps:
+The Traceability app provides an API endpoint that you can use to exchange messages with external systems. It lets you integrate Traceability with other systems, such as enterprise resource planning (ERP) systems, warehouse management systems, and quality management systems. To use the API, you need to know the URL of the endpoint. To find it, follow these steps:
 
 1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
 1. On the left navigation pane, select **Settings** \> **System**.
@@ -26,9 +26,9 @@ The Traceability app provides an API endpoint that you can use to exchange messa
 
 ## Exclude products from Traceability
 
-If you have products that don't need to be traced, you can choose to exclude them from the Traceability app. All products that aren't specifically included on the exclude list will be traced.
+If you have products that don't need to be traced, you can choose to exclude them from the Traceability app. All products that aren't on the exclude list are traced.
 
-To exclude or re-include a product, follow these steps:
+To exclude or reinclude a product, follow these steps:
 
 1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
 1. On the left navigation pane, select **Settings** \> **Exclude product**.
@@ -61,7 +61,7 @@ To configure activities that are traced in Traceability, follow these steps:
     - **Activity type** – Select the type of activity, as it should be shown to users (for example, *Sales*, *Purchase*, *Production*, *Quality*, *Warehouse*, *Maintenance*, or *Transportation*). The Traceability app displays this value to identify the activity when users make a genealogy trace.
     - **Source activity type** – Select the activity type reported by the source system (for example, *Sales*, *Purchase*, *Production*, *Quality*, *Warehouse*, *Maintenance*, or *Transportation*). See the table after this procedure for a list of source activity types and codes by Supply Chain Management.
     - **Source activity code** – Enter the activity code reported by the source system. See the table after this procedure for a list of source activity types and codes by Supply Chain Management.
-    - **Company** – Specify the legal entity of the activity to be traced. If the value is "\*", the activity will be traced for all companies.
+    - **Company** – Specify the legal entity of the activity to be traced. Enter an asterisk (\*) to trace the activity for all companies.
     - **Trace or Not** – Set to *True* for activities that should be traced. Set to *False*, for activities that shouldn't be traced.
 
 1. On the toolbar, select **Save**.
