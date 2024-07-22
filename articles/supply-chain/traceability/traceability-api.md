@@ -1,6 +1,6 @@
 ---
 title: Traceability API (preview)
-description: Learn how to integrate the Traceability add-in for Dynamics 365 Supply Chain Management with external system through its API.
+description: Learn how to integrate the Traceability Add-in for Dynamics 365 Supply Chain Management with external systems through its API.
 author: banluo-ms
 ms.author: banluo
 ms.reviewer: kamaybac
@@ -16,7 +16,7 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article describes how to integrate the Traceability add-in for Dynamics 365 Supply Chain Management with external system through its API.
+This article describes how to integrate the Traceability Add-in for Dynamics 365 Supply Chain Management with external systems through its API.
 
 ## Authentication
 
@@ -24,17 +24,17 @@ The platform security token is used to call the Traceability public API. Therefo
 
 To obtain an access token, follow these steps:
 
-1. Sign in to [Azure portal](https://ms.portal.azure.com/).
+1. Sign in to the [Azure portal](https://ms.portal.azure.com/).
 1. Search for or navigate to the **App registrations** page.
 1. Open the [app registration](traceability-install.md) you created for the Traceability app.
 1. From the left navigator, select **Overview**. Copy the value shown for **Application (client) ID** to a temporary text file.
 1. From the toolbar, select **Endpoints**.
 1. The **Endpoints** dialog opens. Copy the value shown for **OAuth 2.0 token endpoint (v2)** to a temporary text file.
-1. Fetch a Microsoft Entra token by submitting an HTTP request that has following properties:
+1. Fetch a Microsoft Entra token by submitting an HTTP request that has the following properties:
 
-    - **URL** – Use the **OAuth 2.0 token endpoint (v2)** value you found earlier in this procedure.
-    - **Method** – GET
-    - **Body content** – Submit the body content listed in the following table as form data.
+    - **URL**: Use the **OAuth 2.0 token endpoint (v2)** value you found earlier in this procedure.
+    - **Method**: GET
+    - **Body content**: Submit the body content listed in the following table as form data.
 
         | Key | Value |
         |--|--|
@@ -54,11 +54,11 @@ To obtain an access token, follow these steps:
     }
     ```
 
-1. Use the Microsoft Entra token to generate a bearer token by submitting an HTTP request that has following properties:
+1. Use the Microsoft Entra token to generate a bearer token by submitting an HTTP request that has the following properties:
 
-    - **URL** – `https://securityservice.operations365.dynamics.com/token`
-    - **Method** – POST
-    - **Body content** – Submit the following body content as JSON content:
+    - **URL**: `https://securityservice.operations365.dynamics.com/token`
+    - **Method**: POST
+    - **Body content**: Submit the following body content as JSON content:
 
         ```json
         {
@@ -73,7 +73,7 @@ To obtain an access token, follow these steps:
 
         Where *{environmentId}* is the environment ID of your Supply Chain Management environment in lifecycle services.
 
-1. You should receive an access token in response. You must use this token as a bearer token to call the Traceability API. Here's the example of a response:
+1. You should receive an access token in response. You must use this token as a bearer token to call the Traceability API. Here's an example of a response:
 
     ```json
     {
@@ -96,18 +96,18 @@ The following table lists the APIs available for Traceability.
 | /api/environments/{environmentId}/events/PostBatchEvents | Post | Create genealogy node and activity |
 | /api/environments/{environmentId}/traces/Query | Post | Query by tracking ID |
 
-Where *{environmentId}* is the environment ID of your Supply Chain Management environment in lifecycle services.
+Where *{environmentId}* is the environment ID of your Supply Chain Management environment in Lifecycle Services.
 
 The remaining sections provide detailed information about each API.
 
 ## Post activity events API
 
-This API lets external systems post activity events to the Traceability service. Activity evens include production component assembly, goods receipt in business activities.
+This API lets external systems post activity events to the Traceability service. Activity events include production component assembly and goods receipt in business activities.
 
-- **Path** – `/api/environments/{environmentId}/events/PostBatchEvents`
-- **Method** – `POST`
+- **Path**: `/api/environments/{environmentId}/events/PostBatchEvents`
+- **Method**: `POST`
 
-Where *{environmentId}* is the environment ID of your Supply Chain Management environment in lifecycle services.
+Where *{environmentId}* is the environment ID of your Supply Chain Management environment in Lifecycle Services.
 
 ### Post activity events request payload
 
@@ -151,6 +151,14 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 ```
 
 ### Events post header field descriptions
+
+
+
+
+
+
+
+
 
 | Field Name | Description |
 |--|--|
