@@ -4,10 +4,9 @@ description: Learn about features that are either new or changed in the Microsof
 author: twheeloc
 ms.author: twheeloc
 ms.topic: faq
-ms.date: 4/26/2024
-ms.custom:   
+ms.custom: 
   - bap-template
-  - evergreen
+ms.date: 07/22/2024
 ms.reviewer: twheeloc
 ms.search.region: Global
 ---
