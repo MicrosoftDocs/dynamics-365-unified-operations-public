@@ -74,7 +74,7 @@ To obtain an access token, follow these steps:
         }
         ```
 
-        Where *{environmentId}* is the environment ID of your Supply Chain Management environment in lifecycle services.
+        Where *{environmentId}* is the environment ID of your Supply Chain Management environment in Lifecycle Services.
 
 1. You should receive an access token in response. You must use this token as a bearer token to call the Traceability API. Here's an example of a response:
 
