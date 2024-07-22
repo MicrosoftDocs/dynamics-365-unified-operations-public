@@ -4,8 +4,9 @@ description: Learn about features that are either new or changed in the Microsof
 author: kfend
 ms.author: kfend
 ms.topic: article
-ms.date: 04/22/2022
-ms.custom: evergreen
+ms.custom: 
+  - bap-template
+ms.date: 07/22/2024
 ms.reviewer: kfend
 audience: Application User
 ms.search.region: Global
