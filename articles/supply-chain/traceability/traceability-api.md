@@ -1,4 +1,4 @@
-﻿---
+
 title: Traceability API (preview)
 description: Learn how to integrate the Traceability add-in for Dynamics 365 Supply Chain Management with external system through its API.
 author: banluo-ms
@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.date: 07/29/2024
 ms.custom: 
   - bap-template
----
+
 
 # Traceability API (preview)
 
