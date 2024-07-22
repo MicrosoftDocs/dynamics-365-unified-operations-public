@@ -3481,8 +3481,6 @@
           href: traceability/traceability-integration-scm.md
         - name: Traceability API
           href: traceability/traceability-api.md
-        - name: Use Traceability data in Power BI
-          href: traceability/traceability-power-bi.md
     - name: Transportation management
       items:
       - name: Transportation management overview

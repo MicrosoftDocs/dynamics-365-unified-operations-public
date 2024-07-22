@@ -27,8 +27,6 @@ To use Traceability, your system must meet the following requirements:
 
 ## Microsoft Azure configuration
 
-<!-- KFM: Do we only need to do this if we will use third-party integration and API? Maybe this isn't needed if we only want to integrate with SCM? -->
-
 ### Register a new Microsoft Entra application
 
 1. Sign in to [Azure portal](https://ms.portal.azure.com/).
@@ -51,26 +49,33 @@ To use Traceability, your system must meet the following requirements:
 
 Apply the following steps in Power Platform Admin Center to install the Traceability application in Power Apps.
 
-1. Find the [*Dynamics 365 Supply Chain Traceability* app in AppSource](https://appsource.microsoft.com/en-US/product/dynamics-365/mscrm.d365-supply-chain-traceability-preview?flightCodes=sctprivatepreview). <!--KFM: Will this app be renamed before release? -->
+1. Find the [*Dynamics 365 Supply Chain Traceability* app in AppSource](https://appsource.microsoft.com/en-US/product/dynamics-365/mscrm.d365-supply-chain-traceability-preview?flightCodes=sctprivatepreview).
 1. Select **Get it now**.
-1. You are transferred to the Power Platform admin center. Select the environment where you want to install the solution, agree to the license terms and privacy statement, and then select **Install** to install the app in your selected environment. <!--KFM: There was some info here about selecting a region, but it was confusing and seems like a special case, so I removed it. The UI provides a help link about it anyway. Please advise if we need to put this info back here. -->
-1. The **Dynamics 365 apps** \> **Dynamics 365 Supply Chain Traceability** page opens. Make the following settings: <!--KFM: This is how it worked for me, but it's different from what the original guide described. The guide described finding the not-configured app in a list and selecting **Manage**.  -->
+1. You are transferred to the Power Platform admin center. Select the environment where you want to install the solution, agree to the license terms and privacy statement, and then select **Install** to install the app in your selected environment.
+
+    > [!NOTE]
+    > If you don't see your environment listed, you might need to change your geographic region in the Power Platform admin center. Select **Cancel** and then choose a supported region from the region selector in the top right corner of the page. Then try again.
+
+1. The **Dynamics 365 apps** \> **Dynamics 365 Supply Chain Traceability** page opens. Make the following settings:
     - **Select an environment** – Select the environment where you want to set up the app.
     - **Enter application ID of service** – Enter the Application (client) ID that you copied after you registered the Microsoft Entra application.
     - **Enter tenant ID of service** – Enter the Directory (tenant) ID that you copied after you registered the Microsoft Entra application.
     - **I agree to the terms of service** – Select this check box.
 
-    <!--KFM: Original draft included the following. Do we really want this?   **Note: If there is no entry for application id and tenant id, please contact the product team.** --->
+    > [!NOTE]
+    >
+    > - If the **Dynamics 365 Supply Chain Traceability** page doesn't open, then find the *Dynamics 365 Supply Chain Traceability* app on the **Dynamics 365 apps** page of the Power Platform admin center. Select **More application actions** (the **...** button) for the app and then select **Manage**.
+    > - If you don't see the **Enter application ID of service** and/or **Enter tenant ID of service** fields, please contact the Traceability product team at [d365-Traceability-team@microsoft.com](mailto:d365-Traceability-team@microsoft.com)
 
 1. Select **Install**.
-1. When installation is complete, you should be able to see that an app called *Dynamics 365 Supply Chain Traceability* is shown as installed in the list of Dynamics 365 apps for your environment. <!--KFM: Will this app be renamed before release? -->
+1. When installation is complete, you should be able to see that an app called *Dynamics 365 Supply Chain Traceability* is shown as installed in the list of Dynamics 365 apps for your environment.
 
 ## Turn on features in Supply Chain Management
 
 To use Traceability together with Dynamics 365 Supply Chain Management, you must enable one or both of the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-- *(Preview) Supply Chain Traceability* – <!--KFM: What does this give us if we don't turn on the next one? -->
-- *Tracked components* – Integrates Traceability with the [production floor execution interface](../production-control/production-floor-execution-use.md))
+- *Tracked components* – Enables component tracking in Supply Chain Management
+- *(Preview) Traceability* – Integrates Traceability with the component tracking features in Supply Chain Management.
 
 ## Update the Supply Chain Traceability application in Power Apps
 

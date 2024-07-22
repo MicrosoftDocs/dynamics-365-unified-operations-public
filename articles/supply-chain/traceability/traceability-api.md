@@ -73,7 +73,7 @@ To obtain an access token, follow these steps:
 
         Where *{environmentId}* is the environment ID of your Supply Chain Management environment in lifecycle services.
 
-1. You should receive an access token in response. You must use this token as a bearer token to call the Supply Chain Traceability API. Here's the example of a response:
+1. You should receive an access token in response. You must use this token as a bearer token to call the Traceability API. Here's the example of a response:
 
     ```json
     {
@@ -96,22 +96,20 @@ The following table lists the APIs available for Traceability.
 | /api/environments/{environmentId}/events/PostBatchEvents | Post | Create genealogy node and activity |
 | /api/environments/{environmentId}/traces/Query | Post | Query by tracking ID |
 
-<!--KFM: Do we have *Remove genealogy node*? -->
-
 Where *{environmentId}* is the environment ID of your Supply Chain Management environment in lifecycle services.
 
 The remaining sections provide detailed information about each API.
 
-## API for events post (Add)
+## Post activity events API
 
-This API is for events post that can be used for production component assembly, goods receipt in business activities. <!--KFM: A better/clearer description is needed. Also a better section heading. -->
+This API lets external systems post activity events to the Traceability service. Activity evens include production component assembly, goods receipt in business activities.
 
 - **Path** – `/api/environments/{environmentId}/events/PostBatchEvents`
 - **Method** – `POST`
 
 Where *{environmentId}* is the environment ID of your Supply Chain Management environment in lifecycle services.
 
-### Events post request payload
+### Post activity events request payload
 
 ```txt
 [
@@ -152,9 +150,7 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 ]
 ```
 
-### Events post top-level field descriptions
-
-<!--KFM: I wasn't sure how to categorize these fields. Is "top-level" correct? -->
+### Events post header field descriptions
 
 | Field Name | Description |
 |--|--|
@@ -247,8 +243,6 @@ Produce finished goods **A** with component **B** and **C** by different event.
 
 #### Events post example request payload 2
 
-<!--KFM: Original used a table with the two payloads next to each other. That formatting won't work well here, and I'm not sure what it means, so I split into two sections. Is this correct? Or can we just combine these into one block of code? -->
-
 ```json
 [
     {
@@ -299,9 +293,9 @@ If you were to post the example events shown previously, the Traceability app wo
 
 :::image type="content" source="media/events-post-api-result-example.png" alt-text="Results of the events post example, shown in the Traceability app" lightbox="media/events-post-api-result-example.png":::
 
-## API for single query
+## Single query API
 
-This API is for traceability information query and retrieves genealogy, activity, and data collection information.
+This API accepts queries for traceability information and returns genealogy, activity, and data collection information.
 
 - **Path** – `/api/environments/{environmentId}/traces/Query`
 - **Method** – `POST`
@@ -391,21 +385,19 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 }
 ```
 
-### Single query request API response top-level field descriptions
-
-<!--KFM: I wasn't sure how to categorize these fields. Is "top-level" correct? -->
+### Single query response header field descriptions
 
 | Field | Description |
 |--|--|
 | `TracingDirection` | Controls the search direction: *Backward* or *Forward*. *Backward* means from top finished goods to raw materials; *Forward* means from raw materials to top finished goods. Only returns one level above or below result. |
 
-### Single query request API response root element field descriptions
+### Single query response root element field descriptions
 
 | Field | Description |
 |--|--|
 | `trackingId` | Key value for the genealogy node. It's a combination of the `itemId`,`companyCode`, `batchId`, and `serialId`. |
 
-### Single query request API response events element field descriptions
+### Single query response events element field descriptions
 
 | Field | Description |
 |--|--|
@@ -418,7 +410,7 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 | `dateTime` | Date and time the activity event occurred. |
 | *&lt;data collection name&gt;* | These fields are used to collect customization value. |
 
-### Single query request API response productTransaction element field descriptions
+### Single query response productTransaction element field descriptions
 
 | Field | Description |
 |--|--|
@@ -430,7 +422,7 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 | `quantity` | Operation quantity of the top finished good. |
 | `unitOfMeasure` | Unit of measure of the received quantity. |
 
-### Single query request API response consumptionTransactions element field descriptions
+### Single query response consumptionTransactions element field descriptions
 
 | Field | Description |
 |--|--|
@@ -644,13 +636,3 @@ Produce finished goods **A** with component **B** and **C** by different event. 
     }
 }
 ```
-
-
-
-<!--KFM: Do we need to add this now?
-
-## Remove genealogy node
-
-&lt;To be updated before public preview release&gt;
-
--->

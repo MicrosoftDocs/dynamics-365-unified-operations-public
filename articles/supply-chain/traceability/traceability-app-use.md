@@ -18,8 +18,6 @@ ms.custom:
 
 The Traceability app lets you search for specific batch and serial numbers and analyze the genealogy of your products. This topic describes the basics of how to work with it.
 
-<!--KFM: This topic should be more detailed. Right now, it mostly just repeats the "quick start", plus provides a couple of scenario examples. A more complete description of UI features might be helpful -->
-
 ## In-app learning
 
 The Traceability app provides in-app learning to help you get started. To access the in-app learning, follow these steps:
@@ -32,8 +30,8 @@ The Traceability app provides in-app learning to help you get started. To access
 
 *Backward searches* let you to retrieve the full history of a single product.
 
-- In maintenance, repair, and operations (MRO) scenarios <!--KFM: I think this is what "MRO" refers too. Correct? -->, backward search helps maintenance workers retrieve repair logs and component genealogy associated with a specific serial number for root cause analysis.
-- Retrieve the component genealogy data for a specific product serial number to get information that can help you decide whether the product is sustainable for purchasing. <!--KFM: I'm not sure what "sustainable" means in this context. -->
+- In maintenance, repair, and operations (MRO) scenario, backward search helps maintenance workers retrieve repair logs and component genealogy associated with a specific serial number for root cause analysis.
+- Retrieve the component genealogy data for a specific product serial number to get information that can help you decide whether the product is sustainable (environmentally friendly).
 
 To make a backward search, follow these steps:
 

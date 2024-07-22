@@ -16,8 +16,6 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-<!-- KFM: NOTE: UI uses the term "trace" while the doc uses the term "track". I used "trace" everywhere here. Should we do that everywhere? The FM feature name uses "tracked"; will that be changed?  -->
-
 ## <a name="api-endpoint"></a>API endpoint
 
 The Traceability app provides an API endpoint that you can use to exchange messages with external systems. It lets you integrate Traceability with other systems, such as ERP systems, warehouse management systems, and quality management systems. To use the API, you need to know the URL of the endpoint. To find it, follow these steps:
@@ -39,23 +37,19 @@ To exclude or re-include a product, follow these steps:
     - **Item number** – Specify the item number of the product that shouldn't be traced.
 
 > [!NOTE]
-> Your setting here only affect transactions that occur after you make the change. Transactions that occurred for a product before you added it to the exclude list will continue to be shown in the Traceability app. <!--KFM: Should we say "activities" or "activity event" instead of "transaction"? -->
+> Your setting here only affect activity events that occur after you make the change. Activity events that occurred for a product before you added it to the exclude list will continue to be shown in the Traceability app. Activity events that occurred for a product while it was on the exclude list will never be shown in the Traceability app, even after you remove the product from the list.
 
 ## Configure activities that are traced in Traceability
 
-All activities throughout the logistics process are logged as *activity events*. Activity events include *goods receipt*, *consumption*, *registration*, and so on. <!--KFM: What is the difference between activities and activity events? -->
-
-<!--KFM: I think some more background would help here. For example, I think these settings are important when integrating with external systems. -->
-
-To maintain the credibility of Traceability, the activity event is immutable. <!--KFM: I'm not sure what this means. Can we clarify or remove this? -->
+All activities throughout the logistics process are logged as *activity events*. Activity events include *goods receipt*, *consumption*, *registration*, and so on.
 
 You can make the following configuration settings for each activity:
 
-- Enable and disable transactions traced at the company level.
+- Enable and disable activity events traced at the company level.
 - Map original activities and activity types to specific activity codes.
 
 > [!NOTE]
-> Your configuration settings only affect transactions that occur after you make the change. Transactions that occurred for a product before you added it to the exclude list will continue to be shown in the Traceability app. <!--KFM: Should we say "activities" or "activity event" instead of "transaction"? -->
+> Your configuration settings only affect activity events that occur after you make the change. Events that occurred for an activity before you added it to the activities list will never be shown in the Traceability app. Events that occurred for an activity while it was on the activities list will continue to be shown in the Traceability app even after you remove the activity from the list.
 
 To configure activities that are traced in Traceability, follow these steps:
 
@@ -72,12 +66,9 @@ To configure activities that are traced in Traceability, follow these steps:
 
 1. On the toolbar, select **Save**.
 
-The following table lists the source activity codes and types that supported out of the box by Supply Chain Management. <!--KFM: Please confirm this. I think these should be the "source" values. Are these present by default, or should we tell users to enter these if they are integrating with SCM? -->
+The following table lists the source activity codes and types that supported out of the box by the tracked component feature of Supply Chain Management.
 
 | Source activity code | Source activity type | Integration Scenario |
 |--|--|--|
-| PurchaseGoodsReceipt | Purchase | Purchase order goods received. |
 | ProductionReportFinished | Production | Components consumed during manufacturing assembly. |
 | ProductionPickingList | Production | Finished goods produced during production.|
-
-<!--KFM: My system also includes other default values. What are those for? -->
