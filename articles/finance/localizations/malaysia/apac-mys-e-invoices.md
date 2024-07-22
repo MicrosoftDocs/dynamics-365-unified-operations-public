@@ -354,7 +354,7 @@ To cover scenarios for non-taxable, zero-rated, or exempted operations, define t
 5. In the **Value** section, in the **Value** field, enter the external code to use as the [units](https://sdk.myinvois.hasil.gov.my/codes/unit-types/) according to required codification.
 
     > [!NOTE]
-    > For scenarios where no specific units of measure are assumed, the default value **EA** (each) is used.
+    > For scenarios where no specific units of measure are assumed, the default value **C62** is used.
 
 ## Issue electronic invoices
 
