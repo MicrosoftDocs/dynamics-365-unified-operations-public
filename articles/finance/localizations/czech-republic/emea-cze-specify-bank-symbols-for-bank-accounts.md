@@ -22,19 +22,19 @@ Constant symbols are set up for bank accounts, and then used on sales orders, pu
 To set up a list of constant symbols for bank accounts, use the **Bank constant symbols** page (**Cash and bank management** \> **Setup** \> **Constant symbols**). 
 
 
-![Constant symbols form](../media/vendor-bank-account.png) 
+![Constant symbols form](../media/constant-symbol-form.png) 
 
 
 The constant symbol that you set up for a bank account is copied to sales orders, customer and vendor invoices, and free text invoices.
 
-![Constant and Specific symbols for vendor bank account](../media/company-bank-account.png)
-![Constant and Specific symbols for company's bank account](../media/vendor-invoice-printout.png)
+![Constant and Specific symbols for vendor bank account](../media/vendor-bank-account.png)
+![Constant and Specific symbols for company's bank account](../media/company-bank-account.png)
 
 
 > [!NOTE]
 > When you also set up or add a **specific** symbol for a bank account, both the **constant symbol** and **specific symbol** are shown on the Vendor invoice printout.
 
-![Vendor Invoice printout](https://github.com/user-attachments/assets/bba9c55d-7719-45e9-8ae7-9cc564979992)
+![Vendor Invoice printout](../media/vendor-invoice-printout.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
