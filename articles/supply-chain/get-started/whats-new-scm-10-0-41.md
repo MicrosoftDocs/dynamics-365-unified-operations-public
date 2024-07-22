@@ -1,5 +1,5 @@
 ---
-title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.41 (September)
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.41 (September 2024)
 description: Learn about features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.41 with a table outlining feature areas. 
 author: kamaybac
 ms.author: kamaybac
@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.search.form:
 ---
 
-# What's new or changed in Dynamics 365 Supply Chain Management 10.0.41 (September)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.41 (September 2024)
 
 [!include [banner](../includes/banner.md)]
 
