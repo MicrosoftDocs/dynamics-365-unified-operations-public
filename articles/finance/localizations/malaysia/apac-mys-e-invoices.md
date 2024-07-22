@@ -210,6 +210,9 @@ Follow these steps to configure the structure of the postal address to define al
 1. Select the line where the **Type** field is set to **ActivityDescription**.
 1. In the **Value** field, enter the taxpayer business activity description.
 
+> [!NOTE]
+> The contact information for the Legal entity will be automatically retrieved from the **Person** associated in Microsoft Dynamics 365 Finance with the current user.
+
 ## Configure customer data
 
 ### Enter the address
