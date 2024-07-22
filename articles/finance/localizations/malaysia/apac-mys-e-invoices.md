@@ -162,6 +162,8 @@ Follow these steps to configure the electronic document property type that's req
 1. In the **Type** field, enter **ActivityDescription**. You must enter the value exactly as it appears here.
 1. On the Action Pane, select **Applicability**.
 1. In the **Table name** field, select **CompanyInfo**.
+1. Select New to create the record for another applicable table.
+1. In the **Table name** field, select **VendTable**.
 1. Save and close the **Electronic document property type applicability setup** page.
 1. Save and close the **Electronic document property types** page.
 
