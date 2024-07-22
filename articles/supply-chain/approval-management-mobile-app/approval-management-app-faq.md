@@ -32,6 +32,10 @@ If you don't see any features in the app, you probably lack the permissions requ
 
 The Approvals Management mobile app requires Supply Chain Management version 10.0.40 or newer.
 
+## Does the Approval Management App support Microsoft Intune deployment?
+
+Yes, the Approval Management mobile app supports deployment through Intune. For more information, see [Manage your mobile app with Microsoft Intune](/power-apps/mobile/intune).
+
 ## <a name="customize"></a>Can I customize and extend the app?
 
 No, it isn't currently possible to customize or extend the app.
