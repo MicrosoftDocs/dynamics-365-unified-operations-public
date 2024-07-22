@@ -1,5 +1,5 @@
 ---
-title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.41 (CY25Q1)
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.41 (September)
 description: Learn about features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.41 with a table outlining feature areas. 
 author: kamaybac
 ms.author: kamaybac
@@ -12,18 +12,15 @@ ms.search.region: Global
 ms.search.form:
 ---
 
-# What's new or changed in Dynamics 365 Supply Chain Management 10.0.41 (CY25Q1)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.41 (September)
 
 [!include [banner](../includes/banner.md)]
 
 This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.41. This version has a build number of 10.0.1935 <!--KFM: Build number needed --> and is available on the following schedule:
 
-- **Preview availability:** July 29, 2024
-- **Preview latest possible update:** August 9, 2024
-- **General availability (self-update):** September 13, 2024
-- **First autoupdate schedule for production start date:** October 4, 2024
-- **Second autoupdate schedule for production start date:** Nov 1, 2024
-- **End of service:** May 23, 2025
+- **Preview of release:** July 2024
+- **General availability of release (self-update):** September 2024
+- **General availability of release (auto-update):** October 2024
 
 ## Features included in this release
 
@@ -31,15 +28,14 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Inventory and logistics | [Recalculate for weighted average cost including physical transaction](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/recalculate-weighted-average-cost-including-physical-transaction) | [Options for including physical value in cost calculations](../cost-management/include-physical-value.md) | Feature management:*(Preview) Recalculation for Weighted Average Cost including Physical Transaction* |
-| Inventory and logistics | [Enable quality control for goods-in-transit orders](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/enable-quality-control-goods-in-transit-orders) | *Coming soon* | Feature management:*(Preview) Enable Quality Control for Goods In-Transit Order.* |
+| Inventory and logistics | [Enable quality control for goods-in-transit orders](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/enable-quality-control-goods-in-transit-orders) | *Coming soon* | Feature management:<br>*(Preview) Enable Quality Control for Goods In-Transit Order.* |
+| Inventory and logistics | Pair sales order with transfer order <!--KFM: Won't be on release plan --> | *Coming soon* | Feature management:<br>*(Preview) Pair transfer order lines with sales order lines* |
+| Inventory and logistics | [Recalculate for weighted average cost including physical transaction](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/recalculate-weighted-average-cost-including-physical-transaction) | [Options for including physical value in cost calculations](../cost-management/include-physical-value.md) | Feature management:<br>*(Preview) Recalculation for Weighted Average Cost including Physical Transaction* |
+| Inventory and logistics | Sync external changes through Inventory Visibility <!--KFM: Add link when published --> | *Coming soon* | Feature management:<br>**Inventory Visibility transaction integration* |
 | Inventory and logistics | [Trace goods through the supply chain](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/trace-goods-through-supply-chain) | *Coming soon* | Feature management and Power Apps. <!--KFM: Add link --> |
 | Inventory and logistics | [Track time-series inventory in Inventory Visibility](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/track-time-series-inventory-inventory-visibility) | *Coming soon* | <!--KFM: How enabled? --> |
-| Inventory and logistics | Sync external changes through Inventory Visibility <!--KFM: Add link when published --> | *Coming soon* | <!--KFM: How enabled? --> |
-| Inventory and logistics | Pair sales order with transfer order <!--KFM: Not on release plan --> | *Coming soon* | <!--KFM: How enabled? --> |
-| Manufacturing and asset management | Decouple production registration from time and attendance <!--KFM: Add link when published --> | [Registration for manufacturing execution](../production-control/registration-manufacturing-execution.md) | Feature management:*Skip time adjustments when calculating actual cost per production order* |
-| Manufacturing and asset management | Register time spent working on projects for production <!--KFM: Add link when published --> | [Registration for manufacturing execution](../production-control/registration-manufacturing-execution.md) | Feature management:*Skip time adjustments when calculating actual cost per production order* |
-
+| Manufacturing and asset management | Decouple production registration from time and attendance <!--KFM: Add link when published --> | [Registration for manufacturing execution](../production-control/registration-manufacturing-execution.md) | Feature management:<br>*Skip time adjustments when calculating actual cost per production order* |
+| Manufacturing and asset management | Register time spent working on projects for production <!--KFM: Add link when published --> | [Registration for manufacturing execution](../production-control/registration-manufacturing-execution.md) | Feature management:<br>*Skip time adjustments when calculating actual cost per production order* |
 | Procurement | [Approve POs and requisitions from mobile device](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/approve-purchase-orders-requisitions-mobile-device) | *Coming soon* | Feature management and Power Apps. <!--KFM: Add link --> |
 
 ## <a name="enhancements"></a>Feature enhancements included in this release
@@ -50,33 +46,29 @@ Some of these features aren't visible on your system until you turn them on in [
 
 | Feature enhancement | Description |
 |---|---|
-|<p>**Module:** Procurement and sourcing</p><p>**Feature management name:** *Enable purch parameters to control delivery information sync on sales and purchase orders*</p> | Controls the creating and updating of the **Delivery mode** and **Delivery terms** fields on purchase orders. The new parameters are added for stock and direct delivery scenarios. |
-|<p>**Module:** Procurement and sourcing</p><p>**Feature management name:** *Choose whether to consolidate sales orders for direct deliveries*</p> | Makes it possible to choose whether the *Create direct delivery orders* batch job should consolidate qualifying sales orders into a single purchase order when creating a direct delivery. You can control this behavior using the new **Consolidate sales orders for direct deliveries** setting on the **Delivery** tab of the **Procurement and sourcing parameters** page. When you enable this feature, the system defaults to not consolidating qualifying sales orders, which is different from the previous behavior. Previously, the batch job always consolidated qualifying sales orders. |
-|<p>**Module:** Procurement and sourcing</p><p>**Feature management name:** *(Preview) Ubiquitous Buying*</p> | Enables an API for the Ubiquitous Buying eProcurement Dataverse application, which simplifies the creation of purchase requisitions for non-expert buyers. |
-|<p>**Module:** Product information management</p><p>**Feature management name:** *(Preview) Enable foreign trade parameters for all countries*</p> | Enables foreign trade parameters for all countries. |
+|<p>**Module:** Asset management</p><p>**Feature management name:** *(Preview) Print work order document attachments*</p> | Lets you print work order reports that include PDF documents attached to work order headers and lines. |
+|<p>**Module:** Inventory and warehouse management</p><p>**Feature management name:** *(Preview) Inventory dimensions with license plate id cleanup*</p> | Adds the ability to clean up inventory dimensions with license plate IDs that are more than one year old, are financial updated, and have no on-hand inventory. |
+|<p>**Module:** Master planning</p><p>**Feature management name:** *Enable the calculation of Batch CTP even when plan run ends with errors.*</p> | Allows for CTP-confirmed dates to be calculated for sales order lines, even when the Planning Optimization run ends with errors. Confirmed dates will be calculated for sales order lines that didn't have any errors. To enable or disable this behavior, use the **Calculate Batch CTP even with errors** setting in the plan settings for the dynamic plan. |
 |<p>**Module:** Master planning</p><p>**Feature management name:** *Improve Planning Optimization performance by merging and queueing plan regeneration jobs*</p> | Makes it faster to run certain master planning scenarios when there are multiple items being updated, such as during a net requirements update. It enables merging plan regeneration jobs for different items into a single job, which improves execution time for jobs in the queue. If a job can't be merged, it's added to the queue. |
 |<p>**Module:** Master planning</p><p>**Feature management name:** *Near real-time CTP*</p> | Enables the near-real time capable to promise (CTP) calculations for sales lines set to use CTP for delivery date control. When a sales line with CTP delivery date control is added or edited, the calculation starts automatically, and when the field **CTP status** is set to *Ready*, you'll be able to see the confirmed delivery date calculated by the system. |
-|<p>**Module:** Master planning</p><p>**Feature management name:** *Enable the calculation of Batch CTP even when plan run ends with errors.*</p> | Allows for CTP-confirmed dates to be calculated for sales order lines, even when the Planning Optimization run ends with errors. Confirmed dates will be calculated for sales order lines that didn't have any errors. To enable or disable this behavior, use the **Calculate Batch CTP even with errors** setting in the plan settings for the dynamic plan. |
+|<p>**Module:** Product information management</p><p>**Feature management name:** *(Preview) Enable foreign trade parameters for all countries*</p> | Enables foreign trade parameters for all countries. |
 |<p>**Module:** Production control</p><p>**Feature management name:** *Add filter to hide completed jobs on the Kanban board*</p> | Adds a **Hide completed jobs** checkbox to the Kanban board. The option lets you choose to hide all completed jobs, which provides a cleaner and more focused view. |
-
-
-
-
-| <p>**Module:** Warehouse management</p><p>**Enhancement:** *Location directives Locate by `ASN` for Transfer receipt*</p><p>**Feature management name:** *(None)*</p> | <p> Introduces the capability to put all the items on a license plate in one location and prevents the system from making you split the items into different locations for ASN (license plate receiving) of transfer orders. </p><p>For more information, see [Location directives using *Locate by* `ASN`](../warehousing/create-location-directive.md#locate-by).</p> |
-| <p>**Module:** Warehouse management</p><p>**Enhancement:** *Load packing slip posting*</p><p>**Feature management name:** *(None)*</p> | <p>Introduces the capability to execute the sales order packing slip procedure as background batch tasks, which is triggered according to the data associated with warehouse loads.</p><p>For more information, see [Load packing slip posting](../warehousing/outbound-load-handling.md#load-packing-slip-posting.md).</p> |
-| <p>**Module:** Warehouse management</p><p>**Enhancement:** *Outbound shipment processing policies*</p><p>**Feature management name:** *(None)*</p> | <p>Lets you manage the process of shipping out orders by applying an *Outbound shipment processing policy* that has the desired flow set up.</p><p>For more information, see [Outbound shipment processing policies](../warehousing/outbound-load-handling.md#outbound-shipment-policies.md).</p> |
-| <p>**Module:** Warehouse management</p><p>**Enhancement:** *Dynamic printer selection improvements*</p><p>**Feature management name:** *(None)*</p> | <p>Introduces the capability to execute the sales order packing slip procedure as background batch tasks, which is triggered according to the data associated with warehouse loads.</p><p>For more information, see [Dynamic printer selection](../warehousing/dynamic-printing-selection.md).</p> |
+|<p>**Module:** Procurement and sourcing</p><p>**Feature management name:** *Choose whether to consolidate sales orders for direct deliveries*</p> | Makes it possible to choose whether the *Create direct delivery orders* batch job should consolidate qualifying sales orders into a single purchase order when creating a direct delivery. You can control this behavior using the new **Consolidate sales orders for direct deliveries** setting on the **Delivery** tab of the **Procurement and sourcing parameters** page. When you enable this feature, the system defaults to not consolidating qualifying sales orders, which is different from the previous behavior. Previously, the batch job always consolidated qualifying sales orders. |
+|<p>**Module:** Procurement and sourcing</p><p>**Feature management name:** *Enable purch parameters to control delivery information sync on sales and purchase orders*</p> | Controls the creating and updating of the **Delivery mode** and **Delivery terms** fields on purchase orders. The new parameters are added for stock and direct delivery scenarios. |
+|<p>**Module:** Procurement and sourcing</p><p>**Feature management name:** *(Preview) Ubiquitous Buying*</p> | Enables an API for the Ubiquitous Buying eProcurement Dataverse application, which simplifies the creation of purchase requisitions for non-expert buyers. |
+|<p>**Module:** Sales and marketing</p><p>**Feature management name:** *Price and discount search for derived line creation*</p> | Adds the ability to search for new prices in trade agreements for derived intercompany sales orders and sales order lines. |
 | <p>**Module:** Warehouse management</p><p>**Enhancement:** *Container label printing improvement*</p><p>**Feature management name:** *(None)*</p> | <p>The system now allows printing of container labels when closing a container.</p><p>For more information, see [Container label layouts and printing](../warehousing/print-container-labels.md).</p> |
 | <p>**Module:** Warehouse management</p><p>**Enhancement:** *Custom label layout data source parameters*</p><p>**Feature management name:** *(None)*</p> | <p>On a custom label layout data source, it is now possible to define parameters that the user can specify when printing labels. These parameters can be then used in label layouts in addition to values retrieved from table records, for example, to specify a quantity of labels to print.</p><p>For more information, see [Custom label layouts and printing](../warehousing/custom-label-layouts-and-printing.md)</p> |
-
-
-
+| <p>**Module:** Warehouse management</p><p>**Enhancement:** *Dynamic printer selection improvements*</p><p>**Feature management name:** *(None)*</p> | <p>Introduces the capability to execute the sales order packing slip procedure as background batch tasks, which is triggered according to the data associated with warehouse loads.</p><p>For more information, see [Dynamic printer selection](../warehousing/dynamic-printing-selection.md).</p> |
+| <p>**Module:** Warehouse management</p><p>**Enhancement:** *Load packing slip posting*</p><p>**Feature management name:** *(None)*</p> | <p>Introduces the capability to execute the sales order packing slip procedure as background batch tasks, which is triggered according to the data associated with warehouse loads.</p><p>For more information, see [Load packing slip posting](../warehousing/outbound-load-handling.md#load-packing-slip-posting.md).</p> |
+| <p>**Module:** Warehouse management</p><p>**Enhancement:** *Location directives Locate by `ASN` for Transfer receipt*</p><p>**Feature management name:** *(None)*</p> | <p> Introduces the capability to put all the items on a license plate in one location and prevents the system from making you split the items into different locations for ASN (license plate receiving) of transfer orders. </p><p>For more information, see [Location directives using locate by ASN](../warehousing/create-location-directive.md#locate-by).</p> |
+| <p>**Module:** Warehouse management</p><p>**Enhancement:** *Outbound shipment processing policies*</p><p>**Feature management name:** *(None)*</p> | <p>Lets you manage the process of shipping out orders by applying an *Outbound shipment processing policy* that has the desired flow set up.</p><p>For more information, see [Outbound shipment processing policies](../warehousing/outbound-load-handling.md#outbound-shipment-policies.md).</p> |
 
 ## Additional resources
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.41 includes platform updates. To learn more, see [Platform updates for version 10.0.41 of Finance and Operations apps (June 2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-41.md). <!--KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.41 includes platform updates. To learn more, see [Platform updates for version 10.0.41 of Finance and Operations apps (September 2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-41.md). <!--KFM: Confirm link -->
 
 ### Bug fixes
 
