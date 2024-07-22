@@ -1,4 +1,4 @@
-﻿---
+
 title: Traceability app quick start (preview)
 description: Learn how to verify, import, and remove demo data how to use the demo data to explore the capabilities of the Traceability app in Power Apps.
 author: banluo-ms
@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.date: 07/29/2024
 ms.custom: 
   - bap-template
----
+
 
 # Traceability app quick start (preview)
 
