@@ -72,7 +72,7 @@ This error can occur because the *Approvals Management app* role doesn't have th
 
 ## When updating the app, how can I solve the error: "Could not delete solution ... because it has been modified"?
 
-The update process fails with an error if it detects that the Approvals Management mobile application canvas app has been customized. This helps prevent the updater from overwriting your customizations. To solve this issue, remove any customization layers by restoring the oldest version of the app. If the oldest version is over six months old, you'll need to manually delete the `msdyn_ApprovalsManagement` solution and then reinstall the app from *Dynamics 365 apps* or *AppSource*.
+The update process fails with an error if it detects that the Approvals Management mobile application canvas app has been customized. This helps prevent the updater from overwriting your customizations. To solve this issue, remove any customization layers by restoring the oldest version of the app. If the oldest version is over six months old, you'll need to manually delete the `msdyn_ApprovalsManagementAnchor` and `msdyn_ApprovalsManagement` solutions and then reinstall the app from *Dynamics 365 apps* or *AppSource*.
 
 Consider cloning the canvas app before removing your customizations, just in case you want to copy the customizations to the updated app.
 
