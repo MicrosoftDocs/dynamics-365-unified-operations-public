@@ -69,7 +69,17 @@ You can install Store Commerce mobile apps directly from the Google Play store o
 - [Store Commerce app for Android](https://aka.ms/storecommerceandroid)
 - [Store Commerce app for iOS](https://aka.ms/storecommerceios)
 
-The Android app (.apk) and Apple app (.ipa) packages can also be downloaded from the Shared asset library in Microsoft Dynamics Lifecycle Services. 
+The Android app (.apk) packages can be downloaded from the Shared asset library in Microsoft Dynamics Lifecycle Services. 
+
+### Accessing preview builds.
+Android preview builds can be accessed via playstore by going into the [link](https://aka.ms/StoreCommerceForAndroidPreview) for beta testing.
+iOS builds can be accessed through [testflight](aka.ms/StoreCommerceForiOSPreview)  on their iOS devices.
+
+ > [!NOTE]
+> Whenever a new release is GA'ed , it will supercede the previous version. For hot fixes - it is recommended to use the latest version. Also there wont be any new releases once the current version goes to GA until the next public preview date.
+> iOS and Android apps are always backward and forward compatible, customers can always update to latest version regardless of CSU version.
+> Customers should configure policies through app store and playstore to manage auto updates so they have the opportunity to test new versions of the apps before they are pushed to production.
+ 
 
 ## Device and register setup
 
