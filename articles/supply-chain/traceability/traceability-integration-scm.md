@@ -1,4 +1,4 @@
-﻿---
+﻿
 title: Integrate Traceability with tracked components in Supply Chain Management (preview)
 description: Learn how to integrate the Traceability add-in for Dynamics 365 Supply Chain Management with the tracked components feature in Supply Chain Management.
 author: banluo-ms
@@ -9,7 +9,9 @@ ms.topic: how-to
 ms.date: 07/29/2024
 ms.custom: 
   - bap-template
----
+
+
+<!-- The style guide says Traceability is an add-in, not an app (https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=72151), so I suggest changing the H1 to "Configure Traceability in Power Apps (preview)" -->
 
 # Integrate Traceability with tracked components in Supply Chain Management (preview)
 
