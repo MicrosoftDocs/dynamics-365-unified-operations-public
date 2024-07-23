@@ -59,7 +59,7 @@ To install the Traceability Add-in in Power Apps, complete the following steps i
     > [!NOTE]
     > If you don't see your environment listed, you might need to change your geographic region in the Power Platform admin center. Select **Cancel** and then choose a supported region from the region selector in the top right corner of the page. Then try again.
 
-1. The **Dynamics 365 apps** \> **Dynamics 365 Supply Chain Traceability** page opens. Make the following settings:
+1. The **Dynamics 365 apps** \> **Dynamics 365 Supply Chain Traceability** page opens. Update the following settings:
     - **Select an environment**: Select the environment where you want to set up the app.
     - **Enter application ID of service**: Enter the Application (client) ID that you copied after you registered the Microsoft Entra application.
     - **Enter tenant ID of service**: Enter the Directory (tenant) ID that you copied after you registered the Microsoft Entra application.
