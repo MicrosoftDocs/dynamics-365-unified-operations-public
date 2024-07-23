@@ -4,7 +4,7 @@ description: Learn about the shortcut key combinations that you can use when you
 author: jasongre
 ms.author: jasongre
 ms.topic: article
-ms.date: 01/29/2024
+ms.date: 07/23/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
