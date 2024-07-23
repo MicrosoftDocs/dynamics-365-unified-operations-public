@@ -140,6 +140,10 @@ The name of this variable must be used as the name of the import source for the 
 
 ![Screenshot that shows the ResponseXml import source on the Electronic document parameters page.](../media/isv_connector_import_channel.jpg)
 
+### Electronic invoicing in Chile
+
+For more information about electronic invoicing in Chile, see [Get started with Electronic invoicing for Chile](../iberoamerica/eltm-chile-elec-invo-conncection.md).
+
 ### Electronic invoicing in Denmark
 
 For more information about electronic invoicing in Denmark, including the integration with the [NemHandel](https://nemhandel.dk/) electronic invoicing infrastructure, see [Get started with Electronic invoicing for Denmark](../denmark/e-invoicing-dk-get-started.md).
