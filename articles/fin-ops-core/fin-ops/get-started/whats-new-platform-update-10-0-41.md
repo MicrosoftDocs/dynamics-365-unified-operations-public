@@ -1,5 +1,5 @@
 ---
-title: Platform updates for version 10.0.44 of finance and operations apps (September 2024)
+title: Platform updates for version 10.0.41 of finance and operations apps (September 2024)
 description: This article lists the features and enhancements that are included in the platform updates for version 10.0.41 of finance and operations apps.
 author: johnmichalak
 ms.author: johnmichalak
