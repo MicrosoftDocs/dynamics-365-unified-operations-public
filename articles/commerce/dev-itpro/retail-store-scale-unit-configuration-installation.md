@@ -394,7 +394,7 @@ According to current security standards, the following options should be set in 
 
 Here's a checklist of things to verify:
 
-1. Open the configuration file and verify that the Retail Server URL specified contains the suffix **/Commerce** and is correctly formed based on what is expected for the machine name and port used.Validate that there's no trailing or additional slash (the character **/**) in the URL or at the end of it.
+1. Open the configuration file and verify that the Retail Server URL specified contains the suffix **/Commerce** and is correctly formed based on what is expected for the machine name and port used. Validate that there's no trailing or additional slash (the character **/**) in the URL or at the end of it.
 2. In headquarters, on the **Commerce shared parameters** page, verify that the correct client ID is added to the **Relying parties** FastTab. Additionally, verify that the correct `https://retailstorescaleunit.retailserver.com` entry is added to the **Server resource IDs** FastTab.
 3. In headquarters, verify that every client ID that was generated for each store exists on the **Microsoft Entra applications** page.
 4. On the headquarters **Channel profile** page, verify that the computer name in each URL is correct, and that each URL is correctly formatted, and so on.
