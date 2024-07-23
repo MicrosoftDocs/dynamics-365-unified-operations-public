@@ -3,7 +3,7 @@ title: Copilot in Business performance analytics
 description: This article describes Copilot features within Business performance analytics
 author: Carylhenry
 ms.author: carylhenry
-ms.topic: application
+ms.topic: article
 ms.date: 07/22/2024
 
 ms.custom:
