@@ -24,7 +24,31 @@ Before you can start to onboard the Approvals Management mobile app, you must me
 
 ### System requirements
 
-To run the latest Approvals Management mobile app, you must be using Supply Chain Management version 10.0.40 or later.
+To run the Approvals Management mobile app, you must be using Supply Chain Management version 10.0.41 or later.
+
+### Region requirements
+
+The Approvals Management mobile app is only available in the following regions (excluding Microsoft Cloud for US Government and China (Mooncake)):
+
+- North America
+- South America
+- Canada
+- Europe
+- Middle East
+- Africa
+- India
+- Japan
+- Asia Pacific
+- Australia
+- United Kingdom
+- France
+- United Arab Emirates
+- South Africa
+- Germany
+- Switzerland
+- Korea
+- Norway
+- Singapore
 
 ### Set up Dataverse for your Supply Chain Management environment
 
@@ -52,8 +76,9 @@ You must install the Approvals Management mobile app in your Dataverse environme
 
 Follow these steps to install the Approvals Management mobile app in Dataverse.
 
-1. Go to [*Dynamics 365 Approvals Management* in Microsoft AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.d365-approvalsmanagementapp-preview?flightCodes=9e074b1814ff4c7889a84758ecdbbd16). <!--KFM: This might be the wrong link (includes "preview" and a flightCode). Please confirm the correct link for final release. -->
-1. Select **Get it now**.
+1. Join the [Dynamics 365 Procurement and Sourcing group on Viva Engage](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=69010219008&view=all).
+1. Search the Procurement and Sourcing group for the post from Microsoft that provides a link to the *Dynamics 365 Approvals Management* app in Microsoft AppSource. You can find it by entering *"Approval Management App Installation link"* into the **Search** field.
+1. Select the link to open the page in AppSource and then select **Get it now**.
 1. Follow the instructions on your screen to install the app in the Dataverse environment that is connected to your target Supply Chain Management environment.
 
 ## Grant access to the mobile app in Dataverse
