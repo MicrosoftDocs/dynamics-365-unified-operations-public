@@ -3651,6 +3651,8 @@
           href: warehousing/quality-check.md
       - name: Outbound warehouse operations
         items:
+        - name: Warehouse handling of outbound loads for sales, transfer, and outbound shipment orders
+          href: warehousing/outbound-load-handling.md
         - name: Flexible warehouse-level dimension reservation policy
           href: warehousing/flexible-warehouse-level-dimension-reservation.md
         - name: Release to warehouse

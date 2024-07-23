@@ -6,7 +6,7 @@ ms.author: perlynne
 ms.reviewer: kamaybac
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench, WHSOutboundShipmentOrder, WHSPackingSlipPostingParameters, WHSShipPlanningListPage, WHSShipmentDetails, WHSWaveTemplateTable, WHSPostMethod, WHSWorkTemplateTable, WHSLocDirTable, WHSEWManagementSystem, InventLocations 
 ms.topic: how-to
-ms.date: 05/10/2024
+ms.date: 07/29/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -18,23 +18,26 @@ ms.custom: bap-template
 
 This article describes the warehouse handling process for outbound loads.
 
-An outbound load is a set of shipments from a warehouse destined for various locations, such as customer addresses or other warehouses. Usually, it's linked to a physical delivery vehicle like a shipping container or truck. It's a component of the warehouse management's outbound procedure, which involves organizing, picking, packaging, and sending goods to complete orders. Outbound loads can be formed both manually or automatically, and their creation depends on predefined outbound operations that influence their dependencies and functional effects.
+An *outbound load* is a set of shipments from a warehouse destined for various locations, such as customer addresses or other warehouses. Usually, it's linked to a physical delivery vehicle like a shipping container or truck. It's a component of the warehouse management outbound procedure, which involves organizing, picking, packaging, and sending goods to complete orders. Outbound loads can be formed either manually or automatically, and their creation depends on predefined outbound operations that influence their dependencies and functional effects.
 
 Each outbound load can be associated with one or more order line quantities for sales orders, transfer orders, and outbound shipment orders. Your system might also contain transportation plans. For more information about how to create and manage outbound transportation, see [Transportation management overview](../transportation/transportation-management-overview.md).
 
 ## <a name="outbound-shipment-policies"></a> Outbound shipment processing policies
-To manage the process of shipping out your orders, you need to apply an *Outbound shipment processing policy* that has the desired flow set up to your shipments.
 
-The following options are set up as part of the **Warehouse management \> Setup \> Shipping \> Outbound shipment processing policies**:
+To manage the process of shipping out your orders, you must apply an *Outbound shipment processing policy* that has the desired flow set up for your shipments.
 
- - One shipment per order - This limits the association of one shipment and one demand order. It is a prerequisite when using [Warehouse management only mode with externally managed warehouse processing](wms-only-mode-external-shared-warehouse.md), as it needs to be set up on the source system related to the externally managed warehouse.
- - Fill entire shipment - This configuration allows you to confirm that warehouse wave processing will only proceed with shipments when it is possible to create warehouse work for the full quantities of the shipment lines. The default value is "Respect customer settings" which adheres to the fill entire shipment setting defined for a customer.
+The following options are set up on the **Outbound shipment processing policies** page (**Warehouse management \> Setup \> Shipping \> Outbound shipment processing policies**).
+
+- **Enforce shipment to order matching** – Set to *Yes* to allow just one shipment to be associated to each demand order. You must set this to *Yes* when using [Warehouse management only mode with externally managed warehouse processing](wms-only-mode-external-shared-warehouse.md) because it needs to be set up on the source system related to the externally managed warehouse.
+- **Fill entire shipment** – This configuration allows you to confirm that warehouse wave processing will only proceed with shipments when it is possible to create warehouse work for the full quantities of the shipment lines. The default value is "Respect customer settings" which adheres to the fill entire shipment setting defined for a customer.
 
 ### How to define the *Outbound shipment processing policy* defaulting
+
 The outbound shipment processing policy is a property assigned to shipments. However, it can be defaulted in multiple ways:
- - Orders - Policy can be set up on the outbound orders, and it will then be assigned to all shipments created from those orders.
- - Customer - Policy can be assigned to customers, and all orders created for that customer will have that policy, which will then propagate to shipments created from those orders.
- - Source systems - This is related to [Warehouse only mode](wms-only-mode-overview.md). All shipments coming from a source system will inherit the policy that was set up on it.
+
+- Orders - Policy can be set up on the outbound orders, and it will then be assigned to all shipments created from those orders.
+- Customer - Policy can be assigned to customers, and all orders created for that customer will have that policy, which will then propagate to shipments created from those orders.
+- Source systems - This is related to [Warehouse management only mode](wms-only-mode-overview.md). All shipments coming from a source system will inherit the policy that was set up on it.
 
 ## Overview: How outbound loads are created, registered, and shipped
 
