@@ -1,6 +1,6 @@
 ---
 title: Open URL in POS
-description: This article provides an overview of improvements that have been made to product and customer search functionality in  Dynamics 365 Commerce.
+description: This article provides an overview of improvements made to product and customer search functionality in Microsoft Dynamics 365 Commerce.
 author: ShalabhjainMSFT
 ms.date: 07/23/2024
 ms.topic: article
@@ -17,20 +17,20 @@ ms.custom:
 
 [!include [banner](includes/banner.md)]
 
-This article describes how you can configure a button in Dynamics 365 Commerce point of sale (POS) to open a URL. This feature does not require a code customization, and can be configured by someone in a non-developer role. 
+This article describes how you can configure a button in Dynamics 365 Commerce point of sale (POS) to open a URL. This feature doesn't require a code customization, and is configurable by someone in a nondeveloper role. 
 
-This feature allows configuration of a button in POS, using the button grid designer to open a URL. Currently, this is supported in the following configurations:
+This feature allows configuration of a button in POS using the button grid designer to open a URL. Currently, this feature is supported in the following configurations:
 
 - Open in new window.
 - Open within POS.
 
 ## Open in new window
 
-This configuration defines whether to open the URL in a new window or within the app. When configured to open a web URL within the app, the side navigation panel and top bar of POS are visible and available for user interaction. When configured to open in a new window, the URL will open in a new app window on the Store Commerce app for Windows, and in a new browser tab in all other POS clients. To enable this, you must configure the URL with the **Open in new window** option selected.
+This configuration defines whether to open the URL in a new window or within the app. When configured to open a web URL within the app, the side navigation panel and top bar of POS are visible and available for user interaction. When configured to open in a new window, the URL opens in a new window on the Store Commerce app for Windows, and in a new browser tab in all other POS clients. To enable this feature, you must configure the URL with the **Open in new window** option selected.
 
 ## Open within POS
 
-Opening a web URL within POS is currently only supported for the Store Commerce app for Windows. On other clients, this capability is under development and planned for release in future updates. To enable this, you must configure the URL with the **Open in new window** option not selected.
+Opening a web URL within POS is currently only supported for the Store Commerce app for Windows. On other clients, this capability is under development and planned for release in future updates. To enable this capability, you must configure the URL with the **Open in new window** option not selected.
 
 | Client                | Open in new window | Open within POS | Details                           |
 |-----------------------|:--------------------:|:-----------------:|-----------------------------------|
