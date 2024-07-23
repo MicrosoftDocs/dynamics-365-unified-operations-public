@@ -28,27 +28,7 @@ To run the Approvals Management mobile app, you must be using Supply Chain Manag
 
 ### Region requirements
 
-The Approvals Management mobile app is only available in the following regions (excluding Microsoft Cloud for US Government and China (Mooncake)):
-
-- North America
-- South America
-- Canada
-- Europe
-- Middle East
-- Africa
-- India
-- Japan
-- Asia Pacific
-- Australia
-- United Kingdom
-- France
-- United Arab Emirates
-- South Africa
-- Germany
-- Switzerland
-- Korea
-- Norway
-- Singapore
+The Approvals Management mobile app is available in all regions where Supply Chain Management and Power Apps are supported. However, the app isn't available for Microsoft Cloud for Sovereignty.
 
 ### Set up Dataverse for your Supply Chain Management environment
 
