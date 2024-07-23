@@ -8,6 +8,7 @@ ms.date: 07/22/2024
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
+ms.collection: bap-ai-copilot
 ---
 
 # Generative help and guidance FAQ
