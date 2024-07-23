@@ -265,10 +265,11 @@ Users can discover currently available shortcuts directly from the user interfac
 | Show more/less information in the animated pop-up prompt (while playing a task guide) | Alt+R,M                    |
 
 ## Focus management 
-Focus management describes how user focus is handled in an application. Finance and operations apps have specialized focus behaviors that are intended to optimize user productivity, especially for data entry scenarios. Focus behaviors include the following:  
+Focus management describes how user focus is handled in an application. Finance and operations apps have specialized focus behaviors that are intended to optimize user productivity, especially for data entry scenarios. Specialized focus behaviors include the following:  
 
 -  When a page is loaded, the first editable input control on the page will have focus and can accept user input immediately. If there is no editable input control on the page, the fallback option for initial focus is the first input control on the page followed by the first, focusable control on the page.   
 -  Typically when a button is selected, the action is processed and focus may return to the page. When this happens, focus tends to return to the button control that was selected. This is true in finance and operations apps **except** when the button is located in the Action Pane or on a toolbar. In these cases, when the action completes, focus returns to the last control *outside* of the Action Pane (or toolbar) that had focus before the button was selected.
+-  When a user opens a column header dropdown, the filter field will receive focus initially. This facilitates an optimal flow for filtering by allowing the user to immediately type a value and hit Enter to apply the filter.  
 
 ## Additional resources
 
