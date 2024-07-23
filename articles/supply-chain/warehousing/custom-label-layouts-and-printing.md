@@ -4,7 +4,7 @@ description: Learn how to set up and print custom labels, including prerequisite
 author: perlynne
 ms.author: perlynne
 ms.topic: how-to
-ms.date: 05/16/2024
+ms.date: 07/23/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
@@ -46,7 +46,7 @@ Follow these steps to define the data source that's used for a custom label and 
     - **Description** – Enter a short description of the data source (for example, *Locations*).
     - **Label layout type** – Select *Custom label*.
     - **Custom label root table** – Select the table that should be used as the main data source for the label (for example, *WMSLocation* to print labels for locations, *InventTable* to print labels for products, or *CustTable* to print labels for customers).
-    - **Join type** - Select the type of joins used when adding related tables. Selecting *Inner join* will only retrieve data if data exists in both joined tables, while selecting *Outer join* will retrieve data from the root table even if there is no data in the related table.
+    - **Join type** – Select the type of joins used when adding related tables. Selecting *Inner join* will only retrieve data if data exists in both joined tables, while selecting *Outer join* will retrieve data from the root table even if there is no data in the related table.
 
 1. On the Action Pane, select **Save**.
 
@@ -59,15 +59,15 @@ Follow these steps to define the data source that's used for a custom label and 
 1. If you want to use parameters specified at printing time, follow these steps to set up the parameters:
 
     1. On the Action Pane, select **Parameters**.
-    1. A new form **Label layout data source parameters** opens. Use the Action Pane buttons to add or delete rows as needed. For each parameter, specify the following fields:
+    1. The **Label layout data source parameters** page opens. Use the Action Pane buttons to add or delete rows as needed. For each parameter, specify the following fields:
 
-        - **Name** - Enter the name of the parameter. This name is used in the label layout to refer to the parameter (for example, *label_quantity*). It can only include letters A-Z (upper and lower case), numbers and the underscore (_) character.
-        - **Data types** - Specify the type of the data the parameter can hold. Currently, only *String* is supported, which means that no special number or date formatting will be available in label layouts when replacing the placeholder with the value. Using the *String* value should not pose any issues with whole numbers, such as quantity of labels printed.
-        - **Display name** - Enter the name that will be shown to the user on the custom label printing dialog (for example, *Quantity of labels*).
-        - **Mandatory** - Specify whether a value must be given for the parameter on the custom label printing dialog.
-        - **Default value** - Enter the value that will be initially presented to the user on the custom label printing dialog (for example, *1*).
+        - **Name** – Enter the name of the parameter. This name is used in the label layout to refer to the parameter (for example, *label_quantity*). It can only include letters A-Z (upper and lower case), numbers, and the underscore (_) character.
+        - **Data types** – Specify the type of data the parameter can hold. Currently, only *String* is supported, which means that no special number or date formatting will be available in label layouts when replacing the placeholder with the value. Using the *String* value should not pose any issues with whole numbers, such as quantity of labels printed.
+        - **Display name** – Enter the name that will be shown to the user on the custom label printing dialog (for example, *Quantity of labels*).
+        - **Mandatory** – Specify whether a value must be given for the parameter on the custom label printing dialog.
+        - **Default value** – Enter the value that will be initially presented to the user on the custom label printing dialog (for example, *1*).
 
-    1. Close the form.       
+    1. Close the page.
 
 ## Create and manage custom label layouts
 
@@ -108,7 +108,7 @@ Follow these steps to create a custom label layout that uses data from a label l
     ```
 
     > [!NOTE]
-    > Use *dsparams.parameter-name* to refer to label layout data source parameters.
+    > Use `dsparams.parameter-name` to refer to label layout data source parameters.
 
 1. On the Action Pane, select **Save**.
 

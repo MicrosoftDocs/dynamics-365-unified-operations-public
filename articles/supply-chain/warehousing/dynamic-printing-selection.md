@@ -4,7 +4,7 @@ description: Learn how to set up your system to dynamically select a printer whe
 author: adesypri
 ms.author: adesypri
 ms.topic: how-to
-ms.date: 07/31/2023
+ms.date: 07/23/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
 audience: Application User
@@ -110,8 +110,8 @@ Follow these steps to set up default label printers for each worker and/or locat
 1. On the **Devices** tab, the grid shows the default label printers that are assigned to mobile devices. Use the toolbar buttons to add or remove rows as required. For each row, set the following fields:
 
     - **Printer stock type** – Select the printer stock type that the row applies to.
-    - **Mobile device** - Select the ID or friendly name of the device that the row applies to.
-    - **Printer name** - Select the default printer to use for the device that the row applies to.
+    - **Mobile device** – Select the ID or friendly name of the device that the row applies to.
+    - **Printer name** – Select the default printer to use for the device that the row applies to.
 
 1. On the Action Pane, select **Save**.
 

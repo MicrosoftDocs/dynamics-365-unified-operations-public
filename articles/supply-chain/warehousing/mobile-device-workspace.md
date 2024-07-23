@@ -4,7 +4,7 @@ description: Learn about the Warehouse mobile devices workspace, which lets you 
 author: MichaelFruergaardPontoppidan
 ms.author: mfp 
 ms.topic: how-to
-ms.date: 09/01/2023
+ms.date: 07/23/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
 audience: Application User
@@ -21,7 +21,7 @@ The **Warehouse mobile devices** workspace lets you monitor the health and licen
 The first time that a user signs in to the Warehouse Management mobile app on a new device, the system collects information about that device and adds it to the **Warehouse mobile devices** workspace. The system then continuously monitors the status of each device to make sure that it's running a supported operation system and the latest version of the mobile app. Devices remain listed in the workspace until they're [manually deleted](#delete-devices).
 
 > [!NOTE]
-> If the Warehouse mobile application is reinstalled on the same device, you might have multiple device IDs for the same physical device. In this case, you will need to delete the inactive device IDs.
+> If the Warehouse Management mobile app is reinstalled on the same device, you might have multiple device IDs for the same physical device. In this case, you must delete the inactive device IDs.
 
 The **Warehouse mobile devices** workspace also helps you confirm that you're in compliance with [licensing requirements](#licenses) by showing how many devices you're running and letting you assign a device license status to each device. However, the system doesn't enforce licensing requirements. Your organization is responsible for ensuring that you've acquired the correct number of licenses for your devices.
 
@@ -82,16 +82,16 @@ The **Warehouse mobile devices** workspace lets you view information about each 
 
 ## <a name="rename-devices"></a>Rename a device
 
-Devices are primarily identified using a unique device ID, which is, due to privacy reasons, unrelated to any other device identifier, such as a device serial number or device name. In order to make it easier to identify which device ID correlated to which physical device, you have an option to give each device a friendly name in addition to the device ID. In order to rename a device, follow these steps.
+Devices are primarily identified using a unique device ID, which is, due to privacy reasons, unrelated to any other device identifier, such as a device serial number or device name. To make it easier to identify which device ID correlates to which physical device, you can give each device a friendly name in addition to the device ID. To rename a device, follow these steps.
 
 1. Open the **Warehouse mobile devices** workspace.
-1. On the **Summary** FastTab, select a tile to open the relevant device list (such as **Devices supported**). Alternatively, open the **Warehouse management \> Inquiries and reports \> Mobile device logs \> Mobile devices** form.
+1. On the **Summary** FastTab, select a tile to open the relevant device list (such as **Devices supported**). Alternatively, go to **Warehouse management \> Inquiries and reports \> Mobile device logs \> Mobile devices**.
 1. Find the target device in the list, and select it.
 1. On the Action Pane, select **Edit**.
 1. Change the **Friendly name** field.
 
 > [!NOTE]
-> Warehouse mobile application can, in some cases, provide a hardware identification of the device as well. In this case, this information will be shown in the **Hardware identification** field and a friendly name will be defaulted using the device brand, model and hardware identification.
+> The Warehouse Management mobile app can also provide a hardware identification of the device in some cases. If so, this information is shown in the **Hardware identification** field and a friendly name is generated using the device brand, model, and hardware identification.
 
 ## <a name="delete-devices"></a>Remove a device
 
