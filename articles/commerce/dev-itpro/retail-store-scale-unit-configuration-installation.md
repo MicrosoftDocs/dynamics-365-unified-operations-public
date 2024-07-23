@@ -22,11 +22,9 @@ ms.custom:
 This article explains how you can use self-service to configure a Commerce Scale Unit in Microsoft Dynamics 365 Commerce headquarters, download it, and install it on one or more computers in a brick-and-mortar store. Commerce Scale Unit (CSU) combines the Commerce channel database, Commerce async client, Retail Server, and Cloud point of sale (POS) components. A Commerce environment already provides these components in the cloud. However, you can now configure them so that they work locally in a store or datacenter, in either a single-computer setup (the default option) or a multiple-computer setup. This article also explains how to uninstall and troubleshoot Commerce Scale Unit.
 
 > [!IMPORTANT]
-> - A basic design principle to follow is that if you're not able to customize in a requested manner on a Commerce Scale Unit (Cloud), you should not customize this way with a CSU (self-hosted).  It is critical to understand that direct database access is not supported and can easily cause breaks in customizations that use this concept.  A CSU (self-hosted) is primarily for enabling cross-terminal scenarios, reducing latency or backup for poor WAN connectivity, and providing scale-out to spread the load of POS terminals across multiple CSU components.
+> - A basic design principle to follow is that if you're not able to customize in a requested manner on a Commerce Scale Unit (Cloud), you should not customize this way with a CSU (self-hosted). It is critical to understand that direct database access is not supported and can easily cause breaks in customizations that use this concept. A CSU (self-hosted) is primarily for enabling cross-terminal scenarios, reducing latency or backup for poor WAN connectivity, and providing scale-out to spread the load of POS terminals across multiple CSU components.
 > - Do not install a CSU on a developer environment, which typically already has a configured Retail Server and Channel database.
-
-> [!IMPORTANT]
-> - It's critical to note that this component utilizes a server certificate in addition to Azure Service-to-Service authentication.  Both the generated Azure web application keys (formerly called *secrets*) and the server certificate must be managed for expiration.  By default, a certificate and a generated Azure web application key expires in one calendar year (365 days).
+> - This component uses a server certificate in addition to Azure Service-to-Service authentication. Both the generated Azure web application keys (formerly called *secrets*) and the server certificate must be managed for expiration. By default, a certificate and a generated Azure web application key expires in one calendar year (365 days).
 > - It's critical that you have a plan to rotate this key at least one month prior to expiration. Planning is necessary when working with a high number of stores to ensure that there's sufficient time to roll out the change to all stores.
 
 ## Before you begin
@@ -46,9 +44,8 @@ This article explains how you can use self-service to configure a Commerce Scale
 To create a functioning Commerce Scale Unit, complete the procedures in all sections of this article until the "Multiple-computer installation" section. To complete the configuration and installation, you must first do the initial configuration in headquarters. Next, you must complete the installation. Finally, you must return to headquarters to finish the configuration, so that Commerce Scale Unit works correctly.
 
 > [!IMPORTANT]
-> Channel functionality in an on-premises environment is enabled exclusively via use of Commerce Scale Unit (self-hosted). For an overview, see Commerce Scale Unit (self-hosted). Unlike a cloud deployment, an on-premises environment does not enable seamless, high-availability deployment of channel components via Lifecycle Services (LCS). The only way to use channel components is by installing Commerce Scale Unit (self-hosted).
->
-> For on-premises deployments, perform the following steps:
+> - Channel functionality in an on-premises environment is enabled exclusively via use of Commerce Scale Unit (self-hosted). For an overview, see Commerce Scale Unit (self-hosted). Unlike a cloud deployment, an on-premises environment does not enable seamless, high-availability deployment of channel components via Lifecycle Services (LCS). The only way to use channel components is by installing Commerce Scale Unit (self-hosted).
+> - For on-premises deployments, perform the following steps:
 >   1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database group**.
 >   2. On the Action pane, select **New**.
 >   3. In the **Name** field, enter **Default**. Enter a description in the **Description** field, if needed.
@@ -56,7 +53,7 @@ To create a functioning Commerce Scale Unit, complete the procedures in all sect
 >   5. In the **Working folders** field, select **File storage**.
 >   6. On the Action Pane, select **Save**.
 
-1. In headquarters, go to  **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database**.
+1. In headquarters, go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database**.
 2. On the **Channel database** page, on the Action Pane, select **New**.
 3. In the **Channel database ID** field, enter a unique value.
 4. In the **Channel data group** field, select the **Default** option. Select any option that has been created.
@@ -74,9 +71,9 @@ To create a functioning Commerce Scale Unit, complete the procedures in all sect
     You can also add channels that don't use this database. In this way, you keep the data for those channels in the Commerce Scale Unit channel database. The channels that actively use this database can then access that data locally.
 
     > [!IMPORTANT]
-    > For on-premises deployments, select the **Download** button on the Action pane and select **Commerce Scale Unit package**.  This will cause a known error and initiate the upload logic so that the following step in this document can be correctly completed. Allow for at least one minute to pass while the upload logic completes.
+    > For on-premises deployments, select the **Download** button on the Action pane and select **Commerce Scale Unit package**. This will cause a known error and initiate the upload logic so that the following step in this document can be correctly completed. Allow for at least one minute to pass while the upload logic completes.
 
-8. On the **Commerce Scale Unit package** FastTab, in the **Package reference** field, select the appropriate Commerce Scale Unit package.  Each environment generates a base Commerce Scale Unit package. Therefore, this field always contains at least one option.
+8. On the **Commerce Scale Unit package** FastTab, in the **Package reference** field, select the appropriate Commerce Scale Unit package. Each environment generates a base Commerce Scale Unit package. Therefore, this field always contains at least one option.
 9. On the Action Pane, select **Save**.
 10. Go to **Retail and Commerce \> Channel setup \> Channel profiles**.
 11. On the Action Pane, select **New**.
@@ -101,9 +98,8 @@ To create a functioning Commerce Scale Unit, complete the procedures in all sect
 20. On the Action Pane, select **Save**.
 
     > [!NOTE]
-    > If media is commonly used, it will be necessary to generate a **Media Server Base URL** for the profile.  For testing and simplicity, the URL that exists for the **Default** Channel profile can be reused.
-    >
-    > For on-premises deployments, the **Media Server Base URL** will be where all media is stored for POS devices.
+    > - If media is commonly used, it will be necessary to generate a **Media Server Base URL** for the profile. For testing and simplicity, the URL that exists for the **Default** Channel profile can be reused.
+    > - For on-premises deployments, the **Media Server Base URL** will be where all media is stored for POS devices.
 
 21. Go to **Retail and Commerce \> Channels \> Stores \> All stores**.
 22. Select the channel ID for the store that uses the new channel database.
@@ -115,7 +111,7 @@ To create a functioning Commerce Scale Unit, complete the procedures in all sect
 28. Select the **Default** data group, and then, on the Action Pane, select **Full data sync**. In the **Select a distribution schedule** field, select job **9999**, and then select **OK**. In the dialog box that appears, select **OK** to confirm the full synchronization. All the data in the channel database is prepared for download.
 
     > [!IMPORTANT]
-    > For on-premises deployments, there's no **Default** channel data group.  Create a new data group (and associate it to the channel database and distribution schedule jobs).
+    > For on-premises deployments, there's no **Default** channel data group. Create a new data group (and associate it to the channel database and distribution schedule jobs).
 
 ### Download the Commerce Scale Unit installer
 
@@ -125,13 +121,12 @@ To create a functioning Commerce Scale Unit, complete the procedures in all sect
 4. On the drop-down menu, select **Configuration file**.
 
     > [!NOTE]
-    > To ensure that the Commerce Scale Unit installer correctly uses the configuration file (XML file), you must save the configuration file to the same location as the installer. If the configuration file is not the same file name as the installer executable, either the executable must be run using the command line to specify the configuration file or you need to rename the XML configuration file to have the same base name as the executable file name.
-    >
-    > For on-premises deployments, the configuration file (at this time) requires manual editing:
-    > - StoreSystemAosUrl should have the value used to access headquarters. It is critical to keep a trailing slash at the end of this URL (for example, `https://myContosoURL.com/namespaces/AXSF/`).
-    > - Microsoft Entra IDTokenIssuerPrefix should have the value `https://NOTUSED.microsoft.com`
-    > - TransactionServiceAzureAuthority should have the value `https://<ADFS FQDN including .com>/adfs`.
-    > - TransactionServiceAzureResource should have the base URL value of **StoreSystemAosUrl**. For example, `https://myContosoURL.com` is the base URL value, after removing the **/namespaces/AXSF/** portion of the URL.
+    > - To ensure that the Commerce Scale Unit installer correctly uses the configuration file (XML file), you must save the configuration file to the same location as the installer. If the configuration file is not the same file name as the installer executable, either the executable must be run using the command line to specify the configuration file or you need to rename the XML configuration file to have the same base name as the executable file name.
+    > - For on-premises deployments, currently the configuration file requires the following manual edits:
+    >     - StoreSystemAosUrl should have the value used to access headquarters. It is critical to keep a trailing slash at the end of this URL (for example, `https://myContosoURL.com/namespaces/AXSF/`).
+    >     - Microsoft Entra IDTokenIssuerPrefix should have the value `https://NOTUSED.microsoft.com`
+    >     - TransactionServiceAzureAuthority should have the value `https://<ADFS FQDN including .com>/adfs`.
+    >     - TransactionServiceAzureResource should have the base URL value of **StoreSystemAosUrl**. For example, `https://myContosoURL.com` is the base URL value, after removing the **/namespaces/AXSF/** portion of the URL.
 
 5. On the notification bar that appears at the bottom of the Microsoft Edge window, select **Save**. (The notification bar might appear in a different place in other browsers.)
 
@@ -177,7 +172,7 @@ The Commerce Scale Unit installer first extracts the associated files. It then b
 
     > [!NOTE]
     > - To meet the prerequisites, SQL Server must have full-text search, and it must support, at a minimum, Transport Layer Security (TLS) 1.2. Review the system requirements for the supported versions of SQL Server. It is highly recommended to review [SQL Server versions and licenses](../dev-itpro/implementation-considerations-cdx.md#sql-server-versions-and-licenses).
-    > - If a system restart is required, the installer will prompt the user.  This prompt is based upon a Windows system registry key that notifies all applications when a restart is required. While it is recommended to restart prior to continuing the installation, a restart is not required and the installer can continue without restarting the computer.
+    > - If a system restart is required, the installer will prompt the user. This prompt is based upon a Windows system registry key that notifies all applications when a restart is required. While it is recommended to restart prior to continuing the installation, a restart is not required and the installer can continue without restarting the computer.
 
 3. Verify the URL for Application Object Server (AOS), and then select **Next**. (The AOS URL is the URL used to access headquarters.)
 
@@ -195,7 +190,7 @@ The Commerce Scale Unit installer first extracts the associated files. It then b
 5. If a specific user is required, enter the user name and password that the application pool should run under. By default, the installer automatically generates a service account to use. This approach is more secure and is recommended.
 
     > [!NOTE]
-    > It is important to note that service accounts, out of box, still function under the same password policy that is defined for all other accounts.  This means that the minimum password age policy still applies to the Retail Server service account and must be updated when necessary.  By default, on Windows Server 2012 R2, this is typically 42 days.  If the password does expire on a used service account, the Commerce Scale Unit components fail to continue functioning until the issue is resolved.
+    > It is important to note that service accounts, out of box, still function under the same password policy that is defined for all other accounts. This means that the minimum password age policy still applies to the Retail Server service account and must be updated when necessary. By default, on Windows Server 2012 R2, this is typically 42 days. If the password does expire on a used service account, the Commerce Scale Unit components fail to continue functioning until the issue is resolved.
 
 6. On the next page, enter the user account and password for the Retail Server application pool and Async Client. By default, this account is automatically generated. However, you can manually enter the user account and password.
 7. Enter the HTTPS port to use, and verify that the host name of the computer is correct. Then select **Next** to continue.
@@ -242,8 +237,8 @@ The last steps require validation and verification that the Azure application ID
 6. In the new **Issuer** row, enter the URL of the newly installed Commerce Scale Unit. At the end of the URL, add **/auth**. The URL will resemble `https://<My Case-Sensitive Computer Name>:<Port Number>/RetailServer/auth`.
 
     > [!NOTE]
-    > The URL described above is case sensitive.
-    > There will be a new identity provider line for each Commerce Scale Unit that is installed. Each will have a URL that resembles this URL.
+    > - The URL described above is case sensitive.
+    > - There will be a new identity provider line for each Commerce Scale Unit that is installed. Each will have a URL that resembles this URL.
 
 7. In the **Name** column, enter a description for the store that the URL belongs to.
 8. In the **Type** column, select **Open ID Connect**.
@@ -265,18 +260,14 @@ The last steps require validation and verification that the Azure application ID
     The final page of the installer includes valuable information that you can use to test and validate that all components work correctly. Keep this page open until you've completed the validation.
 
 > [!NOTE]
-> If the installer doesn't show a check mark for Retail Server or Async Client, wait 10 minutes so that any cached values can be updated in the cloud. Then check again. If the installer still isn't fully successful, run a full synchronization on the new channel database that this installation uses.
->
-> If you followed all the steps correctly, your configuration should have these characteristics:
->
-> - In Azure, two web applications have been automatically generated through the installer:
->
->   - Retail Store Scale Unit Cloud POS
->   - Retail Store Scale Unit Retail Server for Cloud POS
->
-> - In Azure, a web application (that is, an App registration in the new Azure portal) has been manually created for each Commerce Scale Unit installation (for example, CommerceScaleUnitHouston). A key (secret) has been created that can be used in the installer, as described earlier.
-> - The application ID (client ID) of the manually created web application has been added to the **Microsoft Entra applications** page in Commerce, as explained in step 1 of the preceding procedure.
-> - The Cloud POS application ID (client ID) that was shown at the end of the Commerce Scale Unit installer has been added on the **Identity providers** FastTab, as explained in the final steps of the "Run the Commerce Scale Unit installer" section.
+> - If the installer doesn't show a checkmark for Retail Server or Async Client, wait 10 minutes so that any cached values can be updated in the cloud and then check again. If the installer still isn't fully successful, run a full synchronization on the new channel database that this installation uses.
+> - If you followed all the steps correctly, your configuration should have these characteristics:
+>     - In Azure, two web applications have been automatically generated through the installer:
+>         - Retail Store Scale Unit Cloud POS
+>         - Retail Store Scale Unit Retail Server for Cloud POS
+>     - In Azure, a web application (that is, an App registration in the new Azure portal) has been manually created for each Commerce Scale Unit installation (for example, CommerceScaleUnitHouston). A key (secret) has been created that can be used in the installer, as described earlier.
+>     - The application ID (client ID) of the manually created web application has been added to the **Microsoft Entra applications** page in Commerce, as explained in step 1 of the preceding procedure.
+>     - The Cloud POS application ID (client ID) that was shown at the end of the Commerce Scale Unit installer has been added on the **Identity providers** FastTab, as explained in the final steps of the "Run the Commerce Scale Unit installer" section.
 
 ### Multiple-computer installation
 
@@ -372,25 +363,25 @@ According to current security standards, the following options should be set in 
 - You should enable and use only TLS version 1.2 (or the current highest version).
 
     > [!NOTE]
-    > By default, SSL and all versions of TLS except TLS 1.2 are disabled. To edit or enable these settings, follow these steps:
-    >
-    > 1. Press the Windows logo key+R to open a **Run** window.
-    > 2. In the **Open** field, enter **Regedit**, and then select **OK**.
-    > 3. In the **User Account Control** window, select **Yes** (if this step is required), and then, in the new **Registry Editor** window, go to **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\SecurityProviders\\SCHANNEL\\Protocols**.
-    > 4. The following keys have been automatically entered to enable only TLS 1.2:
-    >
-    >     - TLS 1.2\\Server:Enabled=1
-    >     - TLS 1.2\\Server:DisabledByDefault=0
-    >     - TLS 1.2\\Client:Enabled=1
-    >     - TLS 1.2\\Client:DisabledByDefault=0
-    >     - TLS 1.1\\Server:Enabled=0
-    >     - TLS 1.1\\Client:Enabled=0
-    >     - TLS 1.0\\Server:Enabled=0
-    >     - TLS 1.0\\Client:Enabled=0
-    >     - SSL 3.0\\Server:Enabled=0
-    >     - SSL 3.0\\Client:Enabled=0
-    >     - SSL 2.0\\Server:Enabled=0
-    >     - SSL 2.0\\Client:Enabled=0
+    > By default, SSL and all versions of TLS except TLS 1.2 are disabled.
+
+    To edit or enable SSL and TLS settings, follow these steps:
+    1. Press the Windows logo key+R to open a **Run** window.
+    2. In the **Open** field, enter **Regedit**, and then select **OK**.
+    3. In the **User Account Control** window, select **Yes** (if this step is required), and then, in the new **Registry Editor** window, go to **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\SecurityProviders\\SCHANNEL\\Protocols**.
+    4. The following keys have been automatically entered to enable only TLS 1.2:
+        - TLS 1.2\\Server:Enabled=1
+        - TLS 1.2\\Server:DisabledByDefault=0
+        - TLS 1.2\\Client:Enabled=1
+        - TLS 1.2\\Client:DisabledByDefault=0
+        - TLS 1.1\\Server:Enabled=0
+        - TLS 1.1\\Client:Enabled=0
+        - TLS 1.0\\Server:Enabled=0
+        - TLS 1.0\\Client:Enabled=0
+        - SSL 3.0\\Server:Enabled=0
+        - SSL 3.0\\Client:Enabled=0
+        - SSL 2.0\\Server:Enabled=0
+        - SSL 2.0\\Client:Enabled=0
 
 - No additional network ports should be open, unless they're required for known, specified reasons.
 - You must disable cross-origin resource sharing, and you must specify the allowed origins that are accepted.
@@ -403,7 +394,7 @@ According to current security standards, the following options should be set in 
 
 Here's a checklist of things to verify:
 
-1. Open the configuration file and verify that the Retail Server URL specified contains the suffix **/Commerce** and is correctly formed based on what is expected for the machine name and port used.  Validate that there's no trailing or additional slash (the character **/**) in the URL or at the end of it.
+1. Open the configuration file and verify that the Retail Server URL specified contains the suffix **/Commerce** and is correctly formed based on what is expected for the machine name and port used.Validate that there's no trailing or additional slash (the character **/**) in the URL or at the end of it.
 2. In headquarters, on the **Commerce shared parameters** page, verify that the correct client ID is added to the **Relying parties** FastTab. Additionally, verify that the correct `https://retailstorescaleunit.retailserver.com` entry is added to the **Server resource IDs** FastTab.
 3. In headquarters, verify that every client ID that was generated for each store exists on the **Microsoft Entra applications** page.
 4. On the headquarters **Channel profile** page, verify that the computer name in each URL is correct, and that each URL is correctly formatted, and so on.
