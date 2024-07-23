@@ -5,6 +5,7 @@ author: Carylhenry
 ms.author: carylhenry
 ms.topic: article
 ms.date: 07/22/2024
+ms.collection: bap-ai-copilot
 
 ms.custom:
 ms.reviewer: twheeloc 
