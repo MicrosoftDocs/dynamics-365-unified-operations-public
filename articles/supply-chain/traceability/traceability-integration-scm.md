@@ -11,6 +11,9 @@ ms.custom:
   - bap-template
 ---
 
+<!-- A sentence in line 52 says "The following table summarizes the configuration settings...," but there is no table. Instead, there are steps. Is the table missing, or should the wording be updated? -->
+
+
 # Integrate Traceability with tracked components in Supply Chain Management (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -46,24 +49,24 @@ You must configure Traceability to recognize the activity codes submitted by Sup
 
 ## Configure Supply Chain Management
 
-
-
-
 You must set up your Supply Chain Management system to record batch/serial numbers for raw materials and finished goods. The following table summarizes the configuration settings you should be using.
 
 1. Set up a number sequence code for *Product component match ID*.
+    
     1. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters** and open the **Number sequences** tab.
     1. Set up a number sequence code for *Product component match ID*.
 
 1. Enable tracked components for bills of materials.
-    1. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters** and open the **Bills of materials** tab
+    
+    1. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters** and open the **Bills of materials** tab.
     1. Set **Enable tracked components** to *Yes*.
 
 1. Add the *Tracked components* action to relevant areas of the production floor execution interface.
+    
     1. Go to **Production control** \> **Setup** \> **Manufacturing execution** \> **Configure production floor execution**.
-    1. Select a relevant configuration and, from the Action Pane, select **Design tabs**. Add the *Tracked components* action to each relevant tab and toolbar. Repeat this step for each relevant configuration
+    1. Select a relevant configuration and, from the Action Pane, select **Design tabs**. Add the *Tracked components* action to each relevant tab and toolbar. Repeat this step for each relevant configuration.
 
-    If you're using *USMF* [demo data](../../fin-ops-core/dev-itpro/get-started/demo-data.md), then open the **Default** configuration, select the *Active jobs* design tab and add the *Tracked components* action to the **Primary toolbar**.
+    If you're using *USMF* [demo data](../../fin-ops-core/dev-itpro/get-started/demo-data.md), then open the **Default** configuration, select the *Active jobs* design tab, and add the *Tracked components* action to the **Primary toolbar**.
 
     For more information about these settings, see [Design the production floor execution interface](../production-control/production-floor-execution-tabs.md).
 
