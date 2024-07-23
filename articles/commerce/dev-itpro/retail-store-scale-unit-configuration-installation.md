@@ -2,17 +2,17 @@
 title: Configure and install Commerce Scale Unit (self-hosted)
 description: This article explains how to use self-service to configure and install Commerce Scale Unit (self-hosted) on computers in a brick-and-mortar store.
 author: jashanno
-ms.date: 01/31/2024
+ms.date: 07/23/2024
 ms.topic: article
 audience: IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: brstor
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
 ms.assetid: 5e28948f-d40a-40e8-843b-8c2747916546
-ms.search.industry: Retail
 ms.search.form: SysMicrosoft Entra IDClientTable, RetailCDXDataStore, RetailCDXDataGroup, RetailChannelProfile, RetailSharedParameters, RetailStoreTable
+ms.custom: 
+  - bap-template
 ---
 
 # Configure and install Commerce Scale Unit (self-hosted)
@@ -189,8 +189,8 @@ The Commerce Scale Unit installer first extracts the associated files. It then b
    - The SSL certificate must use private key storage, and server authentication must be listed in the enhanced key usage property.
    - The SSL certificate must be trusted locally, and it can't be expired.
    - The SSL certificate must be stored in the personal certificate store location on the local computer.
-   - The SSL certificate must contain the following `KeyUsage` property values: `KeyEncipherment`, and `DataEncipherment`.
-   - The SSL certificate must have the `KeySpec` property set to `KeyExchange`
+   - The SSL certificate must contain the following `KeyUsage` property values: `KeyEncipherment` and `DataEncipherment`.
+   - The SSL certificate must have the `KeySpec` property set to `KeyExchange`.
 
 5. If a specific user is required, enter the user name and password that the application pool should run under. By default, the installer automatically generates a service account to use. This approach is more secure and is recommended.
 
