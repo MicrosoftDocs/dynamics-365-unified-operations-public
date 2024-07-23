@@ -148,6 +148,10 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
 1. In the **Registration types** field, select the registration type that you created in step 2.
 1. In the **Registration categories** field, select **Enterprise ID (COID)**.
 
+## <a id="SST"></a>Configure Sales and Service Tax (SST) numbers
+
+To configure an SST numbers, follow the instructions in [SST registration number](apac-mys-gst.md#gstsst-registration-number).
+
 ## Configure electronic document property types
 
 Follow these steps to configure the electronic document property type that's required to define the taxpayer activity code.
@@ -200,6 +204,9 @@ Follow these steps to configure the structure of the postal address to define al
 1. On the **Registration ID** FastTab, select **Add** to create a registration ID.
 1. In the **Registration type** field, select the [BRN](#NRIC) registration type that you created earlier.
 1. In the **Registration number** field, enter a valid BRN registration number for the selected legal entity.
+1. Select **Add** to create another registration ID.
+1. In the **Registration type** field, select the [SST](#SST) registration type that you created earlier.
+1. In the **Registration number** field, enter a valid SST registration number for the selected legal entity.
 
 ### Enter a business activity code and description
 
