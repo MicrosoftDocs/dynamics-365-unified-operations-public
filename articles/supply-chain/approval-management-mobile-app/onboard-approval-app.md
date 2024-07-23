@@ -32,8 +32,6 @@ The Approvals Management mobile app is available in all regions where Supply Cha
 
 ### Set up Dataverse for your Supply Chain Management environment
 
-<!--KFM: This all came from the Asset Management app docs. Review and confirm all of this. -->
-
 The mobile app uses [Dataverse virtual tables that are connected to Supply Chain Management](../../fin-ops-core/dev-itpro/power-platform/virtual-entities-overview.md). Therefore, a Dataverse environment must be integrated with your Supply Chain Management environment. If Dataverse isn't already set up for your environment, follow the instructions in [Microsoft Power Platform integration with finance and operations apps](../../fin-ops-core/dev-itpro/power-platform/overview.md).
 
 When you create the Dataverse environment where you want to install the app, be sure to enable Dynamics 365 apps.
@@ -62,8 +60,6 @@ Follow these steps to install the Approvals Management mobile app in Dataverse.
 1. Follow the instructions on your screen to install the app in the Dataverse environment that is connected to your target Supply Chain Management environment.
 
 ## Grant access to the mobile app in Dataverse
-
-<!--KFM: This all came from the Asset Management app docs. Review and confirm all of this. -->
 
 After the mobile app solution is installed in your Dataverse environment, you must share it with your users. The Approvals Management mobile app is a canvas app. To share it, follow the instructions in [Share an app](/power-apps/maker/canvas-apps/share-app#share-an-app).
 
@@ -106,8 +102,6 @@ Once your approval workflows are set up, approval requests will appear in the Ap
 
 ## Install and open the Approvals Management mobile app
 
-<!--KFM: The hands-on lab suggests another procedure (something about the admin shares a link with specific users through Power Apps). This is the method from Asset Management, which I think will also work and seems easier. -->
-
 Follow these steps to install and use the Approvals Management mobile app on a mobile device.
 
 1. Install the Power Apps mobile app by following the instructions in [Install the Power Apps mobile app](/power-apps/mobile/run-powerapps-on-mobile).
@@ -116,8 +110,6 @@ Follow these steps to install and use the Approvals Management mobile app on a m
 1. Open the Approvals Management mobile app, and start to use it.
 
 ## Clear the Power Apps cache on a mobile device after an update of the back-end setup
-
-<!--KFM: This is from Asset Management. Still relevant here? -->
 
 If the back-end setup is updated in Supply Chain Management after you install the Power Apps mobile app on a mobile device (for example, if the legal entity setup is changed), you might have to clear the cache in Power Apps to update the local setup data. Power Apps will then be able to reload the settings that otherwise might not take effect until the cache is cleared.
 

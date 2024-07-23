@@ -31,8 +31,6 @@ The following image shows an example of the Approvals Management mobile app bein
 
 :::image type="content" source="media/approval-app-list-example.png" alt-text="User interface elements on list pages without multiselect" lightbox="media/approval-app-list-example.png":::
 
-<!--KFM: Update the following licensing details as needed -->
-
 > [!NOTE]
 > Use of the Approvals Management mobile app is covered by the *Dynamics 365 Supply Chain Management* user licenses. Using the app requires a *Dynamics 365 Operations – Activity* license. Licensing terms are subject to change without notice. For complete and up-to-date licensing information, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
