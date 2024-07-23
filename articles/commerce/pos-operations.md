@@ -2,18 +2,15 @@
 title: Online and offline point of sale (POS) operations
 description: This article provides details about the point of sale (POS) operations in Dynamics 365 Commerce. It specifies where in the application the operations can be invoked, and whether they are available in offline mode.
 author: josaw1
-ms.date: 08/29/2023
+ms.date: 07/23/2024
 ms.topic: article
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: global
-ms.author: josaw
+ms.author: aneesa
 ms.search.validFrom: 2017-09-27
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.custom: 
-ms.assetid: 
-ms.search.industry: Retail
-
+  - bap-template
 ---
 
 # Online and offline point of sale (POS) operations
