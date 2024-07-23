@@ -1,8 +1,8 @@
 ---
 title: Update the carry-forward budget after reductions in purchase orders and invoices
 description: Learn how to control what happens to the carry-forward budget when purchase orders are canceled or reduced, and when invoices are reduced.
-author: TaylorVH
-ms.author: twheeloc
+author: music727 
+ms.author: mibeina
 ms.topic: article
 ms.date: 7/23/2024
 ms.reviewer: twheeloc
@@ -37,11 +37,11 @@ Only purchase order lines that have distributions that include a fund are availa
 
 ## Invoice reductions
 
-You can also specify whether each fund should reduce the carry-forward budget when an invoice is reduced, in addition to when a purchase order is reduced or canceled. The invoice must be for a purchase order that has carry-forward budget. Reductions include price variances, charge variances, and tax variances. When a carry-forward purchase order is reduced during invoicing, a variance is created. When the invoice is posted, the purchase order encumbrance will be reduced by the amount of the variance. The system will also create the automatic budget adjustment for the amount of the variance.
+You can also specify whether each fund should reduce the carry-forward budget when an invoice is reduced, in addition to when a purchase order is reduced or canceled. The invoice must be for a purchase order that has carry-forward budget. Reductions include price variances, charge variances, and tax variances. When a carry-forward purchase order is reduced during invoicing, a variance is created. When the invoice is posted, the purchase order encumbrance is reduced by the amount of the variance. The automatic budget adjustment is created for the amount of the variance.
 
 ## Configure the carry-forward budget options for each fund
 
-Follow these steps for each general ledger fund that should be able to reduce carry-forward budget when a purchase order or invoice is reduced.
+For each general ledger fund that reduces the carry-forward budget when a purchase order or invoice is reduced, follow these steps:
 
 1. Go to **General ledger \> Chart of accounts \> Funds \> Funds**.
 2. Select the fund that you want to set up.
@@ -49,8 +49,8 @@ Follow these steps for each general ledger fund that should be able to reduce ca
 4. Under **Carry-forward budget status**, set the **Reinstate the budget when a carry-forward purchase order is canceled or reduced** field as needed. 
 
 The option settings work in the following way:
-- *No* – For invoice variances, the system creates a budget register entry against the purchase order for the variance reduction amount. When purchase orders have been canceled or reduced, a budget register entry is created for the remaining balance
-- *Yes* – For invoice variances, the system allows the invoice reduction but doesn't create a budget register entry. The carry-forward budget remains available for consumption by other documents. For canceled or reduced purchase orders, Purchase orders can be canceled or reduced, but doesn't create a budget register entry. The carry-forward budget remains available for consumption by other document.
+- **No** – For invoice variances, a budget register entry is created against the purchase order for the variance reduction amount. When purchase orders have been canceled or reduced, a budget register entry is created for the remaining balance
+- **Yes** – For invoice variances, the invoice reduction is allowed but doesn't create a budget register entry. The carry-forward budget remains available for consumption by other documents. For canceled or reduced purchase orders, Purchase orders can be canceled or reduced, but doesn't create a budget register entry. The carry-forward budget remains available for consumption by other document.
 
 ## Additional resources
 
