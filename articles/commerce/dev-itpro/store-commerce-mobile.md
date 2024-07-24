@@ -5,7 +5,7 @@ title: Store Commerce app for mobile platforms
 description: This article describes how to get started using the Microsoft Dynamics 365 Commerce Store Commerce app for Android and iOS.
 author: anush6121
 ms.author: anvenkat
-ms.date: 07/16/2024
+ms.date: 07/24/2024
 ms.topic: how-to
 ms.reviewer: v-chrgriffin
 ms.search.region: global
@@ -71,16 +71,15 @@ You can install Store Commerce mobile apps directly from the Google Play store o
 
 The Android app (.apk) packages can be downloaded from the Shared asset library in Microsoft Dynamics Lifecycle Services. 
 
-### Accessing preview builds.
-Android preview builds can be accessed via playstore by going into the [link](https://aka.ms/StoreCommerceForAndroidPreview) for beta testing.
-iOS builds can be accessed through [testflight](aka.ms/StoreCommerceForiOSPreview)  on their iOS devices.
+### Access preview builds
 
- > [!NOTE]
-> Whenever a new release is GA'ed , it will supercede the previous version. For hot fixes - it is recommended to use the latest version. Also there wont be any new releases once the current version goes to GA until the next public preview date.
-> iOS and Android apps are always backward and forward compatible, customers can always update to latest version regardless of CSU version.
-> Customers should configure policies through app store and playstore to manage auto updates so they have the opportunity to test new versions of the apps before they are pushed to production.
+To access Android Store Commerce preview builds for beta testing, go to [Android app testing](https://aka.ms/StoreCommerceForAndroidPreview) at the Google Play Store. To access iOS Store Commerce preview builds for beta testing, go to [Join the Store Commerce beta - TestFlight](https://aka.ms/StoreCommerceForiOSPreview) on your iOS device.
+
+> [!NOTE]
+> - Whenever a new release reaches GA, it supercedes the previous version. For hot fixes, Microsoft recommends that you use the latest version. Once a current version reaches GA, there aren't any new releases until the next public preview date.
+> - Android and iOS apps are backward and forward compatible. Customers can always update to the latest version regardless of the CSU version.
+> - To test new versions of the apps before they are pushed to production, customers should configure policies through Google Play Store and Apple App Store to manage automatic updates.
  
-
 ## Device and register setup
 
 Before a register can be activated on the Store Commerce mobile apps, you must set up a device and a register in Commerce headquarters. For more information, see [Devices and registers](../implementation-considerations-devices.md). 
