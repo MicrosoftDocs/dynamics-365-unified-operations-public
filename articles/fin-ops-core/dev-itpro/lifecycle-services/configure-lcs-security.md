@@ -68,47 +68,14 @@ Only an administrator can manage users. Follow these steps.
 ## Configuring project security
 You can invite users from inside or outside your organization to join your project as users. The following table describes the roles that are available for users.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Role</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Project owner</td>
-<td>Members of this role have access to all tools in LCS, can add other users in any role, and can delete the project.</td>
-</tr>
-<tr class="even">
-<td>Environment manager</td>
-<td>Members of this role have access to all tools in LCS and can manage cloud-hosted environments.</td>
-</tr>
-<tr class="odd">
-<td>Project team member</td>
-<td>Members of this role have access to all tools in LCS but can&#39;t manage cloud-hosted environments.</td>
-</tr>
-<tr class="even">
-<td>Project team member (prospect)</td>
-<td>Members of this role have limited access to all tools in an LCS project. Prospects are users who have been added to a project, but who don&#39;t have an account in VOICE or an Microsoft Entra account. You can identify that a user is a prospect, because <strong>prospect</strong> is listed as the organization.</td>
-</tr>
-<tr class="odd">
-<td>Operations user</td>
-<td>Members of this role have access to the following tools in LCS:
-<ul>
-<li>System diagnostics</li>
-<li>Issue search</li>
-<li>Cloud-powered support</li>
-<li>Updates</li>
-<li>Cloud-hosted environments</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| Role                           | Description |
+| ------------------------------ | ----------- |
+| Project owner                  | Members of this role have access to all tools in LCS, can add other users in any role, and can delete the project. |
+| Environment manager            | Members of this role have access to all tools in LCS and can manage cloud-hosted environments. |
+| Project team member            | Members of this role have access to all tools in LCS but can't manage cloud-hosted environments. |
+| Project team member (prospect) | Members of this role have limited access to all tools in an LCS project. Prospects are users who have been added to a project, but who don't have an account in VOICE or a Microsoft Entra account. You can identify that a user is a prospect, because **prospect** is listed as the organization. |
+| Operations user                | Members of this role have access to the following tools in LCS: <ul><li>Asset library</li><li>System diagnostics</li><li>Issue search</li><li>Cloud-powered support</li><li>Updates</li><li>Cloud-hosted environments</li></ul> |
+
 
 After you've configured security for one project, you can import the users to another project.
 
