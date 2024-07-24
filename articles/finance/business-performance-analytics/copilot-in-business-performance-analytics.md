@@ -41,4 +41,4 @@ After generative help and guidance is turned on as described in the previous sec
 
 - To form a response, Copilot looks at Business performance analytics documentation, including this article, on Microsoft Learn.
 - Prompts that are unrelated to Business performance analytics, or that have severe errors in spelling and grammar, don't receive an answer. Instead, they receive a default, fallback response.
-- For each response, users can use the thumbs up and thumbs down icons to provide feedback about whether the response is good or bad.
+- For each response, users can use the thumbs-up and thumbs-down icons to provide feedback about whether the response is good or bad.
