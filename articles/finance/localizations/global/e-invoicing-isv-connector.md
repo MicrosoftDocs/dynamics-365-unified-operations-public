@@ -142,7 +142,7 @@ The name of this variable must be used as the name of the import source for the 
 
 ### Electronic invoicing in Chile
 
-For more information about electronic invoicing in Chile, see [Get started with Electronic invoicing for Chile](../iberoamerica/eltm-chile-elec-invo-conncection.md).
+For more information about electronic invoicing in Chile, see [Get started with Electronic invoicing for Chile](../iberoamerica/ltm-chile-elec-invo-conncection.md).
 
 ### Electronic invoicing in Denmark
 
