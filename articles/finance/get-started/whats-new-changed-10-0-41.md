@@ -80,6 +80,11 @@ The following table lists the features that are turned on by default in version 
 | Enable batch mode for **Mark as reconciled** in advance bank reconciliation | Mandatory	| Cash and bank management |
 | Reverse correction amount in advanced bank reconciliation when use bank statements as confirmation of electronic payments parameter is enabled | On by default	| Cash and bank management |
 | Use the time zone option on bank statement import form for BAI2 format bank statement id generation | On by default	| Cash and bank management |
+| Petty cash | On by default	| Cash and bank management |
+| Enable check number validation | On by default	| Cash and bank management |
+| Exchange rate type enhancement for accounts payable and accounts receivable foreign currency revaluation | On by default	| Cash and bank management |
+| Exchange rate type enhancement for bank foreign currency revaluation | On by default	| Cash and bank management |
+| Accounts payable/ accounts receivable foreign currency revaluation performance improvement by splitting into even batches | On by default	| Cash and bank management |
 
 ## Features removed from Feature management
 
@@ -100,10 +105,13 @@ The following table lists the features that have been removed from Feature manag
 |Enable tax registration data advanced search for reports.|	The related functionality is enabled out of the box.	|Tax|
 |Copy tax registration number as default VAT exempt number.	|The related functionality is enabled out of the box.|	Tax|
 |Keep GST tax document for confirmation journal.|	The related functionality is enabled out of the box.|	Tax|
-|Disable Russian address format validation.	|The related functionality is enabled out of the box|.	Tax|
+|Disable Russian address format validation.	|The related functionality is enabled out of the box.| Tax|
 |Separate sales tax payment report generation from sales tax settlement.	|This feature is now controlled by the **Print report** option during sales tax settlement.|	Tax|
 |Sales tax payment performance improvement.	|This feature is now controlled by the **Combine transactions for tax settlement** parameter on the **General ledger parameters page**.|	Tax|
 |Populate financial dimensions to the realized currency adjustment profits/loss accounts for sales tax settlement	|This feature is now controlled by the **Populate financial dimensions for sales tax settlement** parameter on the **General ledger parameters**.|	Tax|
 |(India) Reversal of vendor TDS at the time of settlement when deducted on both the invoice and payment.|	The related functionality is enabled out of the box. To disable this feature, enable the **Disable vendor TDS reversal for duplicate deductio**" on the **General ledger parameters** page.|	Tax|
+| Ability to post detailed vendor and customer payments, but summarize amounts to bank account | The related functionality is enabled out of the box. | Cash and bank management |
+| Enhanced filtering on the cash position inquiry | The related functionality is enabled out of the box. | Cash and bank management |
+| Calculate the average exchange rate based on the main account code only | The related functionality is enabled out of the box. | Cash and bank management |
 
 
