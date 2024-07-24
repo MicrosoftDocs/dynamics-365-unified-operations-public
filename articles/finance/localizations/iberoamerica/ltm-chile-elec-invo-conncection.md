@@ -59,7 +59,6 @@ In addition, complete common parameters on the **Feature parameters** tab.
 In case of Chile, we interact with Edicom at least three times in the pipeline, first to submit the invoice, next to fetch the signed XML, and finally to fetch the status of the submitted invoice.
 Each of these interactions requires common parameters such as Edicom connection details and the authentication token provided by Edicom.
 These values will be provided by Edicom when a company onboards.
-
     > [!NOTE]
     > The simplification of configurations of common parameters - it is no longer needed to go to each action and specify these common connection parameters repeatedly - using the **Feature parameters** tab will only be availavle starting from version 10.0.41.
 
@@ -81,7 +80,7 @@ These values will be provided by Edicom when a company onboards.
 1. In the **Electronic document** section, add records for the **Customer Invoice journal**, **Customer packing slip journal**, and **Project invoice** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
 
-    ![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](ltm-chl-e-invoice-documents.jpg)
+    ![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](ltm-chl-e-invoice-documents.png)
 
 1. Save your changes, and close the page.
 1. For each table name, select **Response types**, select **New** to create a response type we would get from the back end, and enter the following values:
@@ -92,7 +91,7 @@ These values will be provided by Edicom when a company onboards.
     - In the **Model mapping** field, select **Edicom source file response format**.
 	- Repeat the above steps for the **Submission status** having the value **Pending update actions execution** to continuously pull for updated statuses, etc. from the tax authority for the submitted documents, by the means of execution of a subset of the actions in the processing pipeline in a loop.
 	
-	![Screenshot of the setup of the response type for the Customer Invoice journal table name on the Document updates for response types page.](ltm-chl-e-invoice-response-type.jpg)
+	![Screenshot of the setup of the response type for the Customer Invoice journal table name on the Document updates for response types page.](ltm-chl-e-invoice-response-type.png)
 	
 	> [!NOTE]
     > The response includes the signed XML obtained from Edicom, which will be stored as an attachment to the corresponding invoice journal in the system. It will eventually be used to generate printable invoices with QR codes.
