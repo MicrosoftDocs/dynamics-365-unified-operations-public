@@ -3557,7 +3557,7 @@
                     - name: Post packing slips for Latin America
                       href: localizations/iberoamerica/ltm-core-packing-slip-posting.md
                     - name: Configure journal names for Latin America
-                      href: localizations/iberoamerica/ltm-core-journal-name-configuration..md
+                      href: localizations/iberoamerica/ltm-core-journal-name-configuration.md
                     - name: Value query for Latin America
                       href: localizations/iberoamerica/ltm-core-value-query.md
                     - name: Configure electronic document references
