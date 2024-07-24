@@ -252,9 +252,49 @@ Follow these steps to configure the structure of the postal address to define al
     > - **EI00000000020** is used as the customer's **TIN**.
     > - **NA** is used as the customer's **BRN**.
 
-### Additional configuration for retail-related scenarios
+### Additional properties configuration
 
-Please refer to the dedicated chapter for details: [Additional configuration for retail-related scenarios](#Retail)
+The system allows users to configure **Electronic documents property types** to cover some specific scenarios without coding, by configuration only.  Customizable electronic documents property types can be then used to extend properties of Legal entities, Customers, Vendors and Invoice journals.
+
+To configure additional buyers and journals properties, do the following additional configuration.
+
+1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**.
+1. Select **New** to create an electronic document property type.
+1. In the **Type** field, enter **BuyerRegistrationName**. You must enter the value exactly as it appears here.
+1. On the Action Pane, select **Applicability**.
+1. In the **Table name** field, select **CustInvoiceJour**.
+1. Select New to create the record for another applicable table.
+1. In the **Table name** field, select **CustTable** where required.
+1. Save and close the **Electronic document property type applicability setup** page.
+1. Repeat steps 2 through 8 for the remaining properties
+   - BuyerTIN
+   - BuyerBRN
+   - BuyerAddressLine
+   - BuyerCityName
+   - BuyerCountrySubentityCode
+   - BuyerIdentificationCode
+   - BuyerTelephone
+   - BuyerSST
+   - BuyerTTX
+   - BuyerNRIC
+   - BuyerPASSPORT
+   - BuyerARMY
+     
+1. Save and close the **Electronic document property types** page.
+
+![Screenshot that shows electronic document properties configuration for retail buyers.](apac-mys-e-invoice-retail-buyer.jpg)
+
+To enter the values for the described above electronic document properties, do the following steps.
+
+1. Go to **Account receivable** \> **Inquiries and reports** \> **Invoices** \> **Invoice journal**.
+1. Select a required invoice, and then, select the **Invoice** menu item from the top menu.
+1. On the Action Pane, select **Electronic document properties**.
+1. Enter required values in the **Value** field for each of the properties that needs to be overwritten in the electronic invoice.
+
+> [!NOTE]
+> The described above electronic document properties non-empty values will override the respective default values from the shared customer master data.
+>
+> Entering of the electronic document properties values must be performed before submitting electronic invoices to the authorities.
 
 ## Configure funding sources
 
@@ -389,44 +429,3 @@ In case of self-invoices do the following steps.
 > The QR code that's shown on the printouts of invoices represents the URL that takes you to the official portal of MyInvois system, where you can find the details of the related electronic invoice.
 > 
 > QR codes are printed only for invoices that were successfully submitted, validated, and accepted by the MyInvois system.
-
-
-## <a id="Retail"></a>Additional configuration for retail-related scenarios
-
-For the scenarios when shared customers were used for invoices issuing, but end buyers request to receive electronic invoices with their specific individual data, do the following additional configuration.
-
-1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**.
-1. Select **New** to create an electronic document property type.
-1. In the **Type** field, enter **BuyerRegistrationName**. You must enter the value exactly as it appears here.
-1. On the Action Pane, select **Applicability**.
-1. In the **Table name** field, select **CustInvoiceJour**.
-1. Save and close the **Electronic document property type applicability setup** page.
-1. Repeat steps 2 through 6 for the remaining properties
-   - BuyerTIN
-   - BuyerBRN
-   - BuyerAddressLine
-   - BuyerCityName
-   - BuyerCountrySubentityCode
-   - BuyerIdentificationCode
-   - BuyerTelephone
-   - BuyerSST
-   - BuyerTTX
-   - BuyerNRIC
-   - BuyerPASSPORT
-   - BuyerARMY
-     
-1. Save and close the **Electronic document property types** page.
-
-![Screenshot that shows electronic document properties configuration for retail buyers.](apac-mys-e-invoice-retail-buyer.jpg)
-
-To enter the values for the described above electronic document properties, do the following steps.
-
-1. Go to **Account receivable** \> **Inquiries and reports** \> **Invoices** \> **Invoice journal**.
-1. Select a required invoice, and then, select the **Invoice** menu item from the top menu.
-1. On the Action Pane, select **Electronic document properties**.
-1. Enter required values in the **Value** field for each of the properties that needs to be overwritten in the electronic invoice.
-
-> [!NOTE]
-> The described above electronic document properties non-empty values will override the respective default values from the shared customer master data.
->
-> Entering of the electronic document properties values must be performed before submitting electronic invoices to the authorities.
