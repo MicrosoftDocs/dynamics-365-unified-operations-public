@@ -57,7 +57,7 @@ Before you begin the procedures in this article, the following prerequisites mus
 In case of Chile, we interact with Edicom at least three times in the pipeline, first to submit the invoice, next to fetch the signed XML, and finally to fetch the status of the submitted invoice. Each of these interactions requires common parameters such as Edicom connection details and the authentication token provided by Edicom. Also, these common parameters are reused in feature setup for all document types. These values will be provided by Edicom when a company onboards.
 
 > [!NOTE]
-> The simplification of configurations of common parameters - it is no longer needed to go to each action and specify these common connection parameters repeatedly - using the **Feature parameters** tab will only be availavle starting from version 10.0.41.
+> The simplification of configurations of common parameters - it is no longer needed to go to each action and feature setup, and specify these common connection parameters repeatedly - using the **Feature parameters** tab will only be availavle starting from version 10.0.41.
 
 1. Import the latest version of the **Chilean electronic invoice (CL)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md). Once you import the feature from Dataverse, this is how it will look.
     ![Screenshot 1 of the imported Globalization feature for Chile.](ltm-chl-e-invoice-glog-feature-imported.png)
@@ -84,15 +84,14 @@ To review the processing pipeline, go to the **Feature setup** upder the **Setup
 
 ## Configure applicability rules
 To provide context to find the exact Electronic Invoicing Globalization feature to run in the Electronic Invoicing Service, the Applicability rules must be poperly configured. These rules are provided out-of-the box checking the legal entity in the country ISO code. This particular feature setup supports all three types of invoices, customer invoices, debit notes, and credit notes.
-    
-	![Screenshot of the setup on the Applicability rules.](ltm-chl-e-invoice-applicability-rules.png)
+![Screenshot of the setup on the Applicability rules.](ltm-chl-e-invoice-applicability-rules.png)
 
 ## Configure variables
 There are the following Variables used in the outbound data flow actions of the Chilen feature:
 - **BusinessDocumentDataModel**: the inbound Business Document Data model variable received from Finance / SCM and transformed into the format required for submission.
 - **SignedXML**: the signed XML variable sent back to Finance / SCM, which contains the base 64 encoded response body from the Get Signed XML from Edicom step. As mentioned above, it is used in the response types to save as an attachment to the invoice journal and generate printable reports with QR codes.
 
-	![Screenshot of the setup on the Variables.](ltm-chl-e-invoice-variables.png)
+![Screenshot of the setup on the Variables.](ltm-chl-e-invoice-variables.png)
 	
 After you imported the **Electronic invoicing for Chile** feature comprising out-of-the-box default feature setup, follow these remaining steps to configure electronic documents.
 
