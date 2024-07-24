@@ -4,7 +4,7 @@ description: Learn about how to upgrade data from Microsoft Dynamics AX 2012 in 
 author: ttreen
 ms.author: ttreen
 ms.topic: article
-ms.date: 11/03/2023
+ms.date: 07/24/2024
 ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.search.validFrom: 2021-06-30
 
 This Microsoft Dynamics AX 2012 data upgrade process is for self-service environments. Complete the sections of this article in the following order:
 
-1. **[Prerequisites](data-upgrade-self-service.md#prerequisites)**
-2. **[Data upgrade process](data-upgrade-self-service.md#data-upgrade-process)** – Run the DataMigrationTool.exe application to complete the upgrade process.
-3. **[Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application)** – Review the reports of the replication validation, replication status, data upgrade status, and rollback data upgrade status.
-4. **[Tooling section of the application](data-upgrade-self-service.md#tooling-section-of-the-application)**  – This section will help you reset the process parameters and restart any of the processes.
+1. [Prerequisites](data-upgrade-self-service.md#prerequisites)
+2. [Data upgrade process](data-upgrade-self-service.md#data-upgrade-process) – Run the DataMigrationTool.exe application to complete the upgrade process.
+3. [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) – Review the reports of the replication validation, replication status, data upgrade status, and rollback data upgrade status.
+4. [Tooling section of the application](data-upgrade-self-service.md#tooling-section-of-the-application)  – This section will help you reset the process parameters and restart any of the processes.
 
 ## Prerequisites
 
@@ -29,15 +29,15 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 3. Create a self-service environment in LCS. The environment should be in a **Deployed** state. It must be a self-service environment. Cloud-hosted, development environments can be used only for the [Upgrade from AX 2012 - Data upgrade in development environments](data-upgrade-2012.md) procedure.
 
 > [!IMPORTANT]
-> It is recommended that before you run the upgrade, that you apply the latest **Quality Update** for the Dynamics 365 version you are using.
+> It's recommended that before you run the upgrade, apply the latest **Quality Update** for the Dynamics 365 version you are using.
 
 
 > [!NOTE]
 > Keep the following points in mind:
 > 
-> - The Microsoft Dynamics AX 2012 data upgrade process is for finance and operations self-service, sandbox (UAT) environments only. It can never be run against a production environment.
+> - The Microsoft Dynamics AX 2012 data upgrade process is for finance and operations self-service, sandbox (UAT) environments only. It can't be run against a production environment.
 > - Make sure you download the latest version of the **Data Migration Toolkit for Dynamics 365** from LCS.
-> - Do not deploy or use the linked Power Platform environment for the AX 2012 data upgrade. The Power Platform environment can be deployed and used after the data upgrade is completed.
+> - Don't deploy or use the linked Power Platform environment for the AX 2012 data upgrade. The Power Platform environment can be deployed and used after the data upgrade is completed.
 
 4. Download and install the [.NET Framework version 4.7.1](https://dotnet.microsoft.com/download/dotnet-framework/net471) if it isn't already installed.
 5. Make sure that the replication feature is installed and enabled for the source SQL Server instance. To determine whether replication is enabled, run the following SQL script.
