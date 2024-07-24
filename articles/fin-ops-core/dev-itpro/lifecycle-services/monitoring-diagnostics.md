@@ -1,10 +1,10 @@
 ---
-title: Monitoring and diagnostics tools in Lifecycle Services (LCS)
+title: Monitoring and diagnostics tools in Lifecycle Services
 description: Learn about the tools that Microsoft Dynamics Lifecycle Services provides to help you monitor, diagnose, and analyze the health of the environments.
 author: angelmarshall
 ms.author: tsmarsha
 ms.topic: article
-ms.date: 05/25/2022
+ms.date: 07/24/2024
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -14,13 +14,12 @@ ms.dyn365.ops.version: Version 1611
 ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
 ---
 
-# Monitoring and diagnostics tools in Lifecycle Services (LCS)
+# Monitoring and diagnostics tools in Lifecycle Services
 
 [!include [banner](../includes/banner.md)]
+[!include [Lifecycle Services deprecation](../includes/lcs-deprecation.md)]
 
-[!include [LCS deprecation](../includes/lcs-deprecation.md)]
-
-Monitoring capabilities in Lifecycle Services are being rebuilt in [Monitoring and telemetry using Application Insights](../sysadmin/monitoring-and-telemetry-appinsights.md) experiences for Finance and Operations apps.  Below you will find a detailed description of the available pages in LCS monitoring, however some capabilities will begin to be disabled starting in September, 2024.
+Monitoring capabilities in Lifecycle Services are being rebuilt in [Monitoring and telemetry using Application Insights](../sysadmin/monitoring-and-telemetry-appinsights.md) experiences for Finance and Operations apps.  Below you will find a detailed description of the available pages in Lifecycle Services monitoring, however some capabilities will begin to be disabled starting in September, 2024.
 
 ## Overview
 
@@ -31,7 +30,7 @@ This tab provides a summary of the environment's health and performance. It incl
 The Activity tab displays user and system activities. You can filter activities by user, time, and specific actions. This helps in tracking and troubleshooting user-reported issues.
 
 ### Deprecated Activity Logs in September, 2024
-As part of the first wave of monitoring deprecation, the following queries will be disabled as they now have feature parity in [Monitoring and telemetry using Application Insights](../sysadmin/monitoring-and-telemetry-appinsights.md).
+As part of the first wave of monitoring deprecation, the following queries are disabled because they now have feature parity in [Monitoring and telemetry using Application Insights](../sysadmin/monitoring-and-telemetry-appinsights.md).
 * Get user Login Events
 * Get Error Events for Form
 * Get Connection Outages
@@ -50,10 +49,10 @@ The Health Metrics tab offers insights into system health indicators such as CPU
 
 ## SQL Insights
 
-SQL Insights provide advanced SQL performance analysis tools. It helps in diagnosing and troubleshooting SQL-related issues. 
+SQL Insights provide advanced SQL performance analysis tools. SQL Insights helps in diagnosing and troubleshooting SQL-related issues. 
 
 ### Deprecated SQL Insights in September, 2024
-As part of the first wave of monitoring deprecation, the following capabilities will be disabled as they are now managed by Microsoft as part of the managed service.
+As part of the first wave of monitoring deprecation, the following capabilities are disabled because they are now managed by Microsoft as part of the managed service.
 
 * End SQL Process
 
