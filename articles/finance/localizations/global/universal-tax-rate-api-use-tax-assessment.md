@@ -1,18 +1,18 @@
 ---
 title: Use tax assessment
-description: This article explains the use tax assessment functionality.
+description: Learn about the use tax assessment functionality, including overviews on the Accrue use tax option and the Adjust sales tax option.
 author: Kai-Cloud
-ms.date: 01/22/2024
+ms.author: kailiang
 ms.topic: conceptual
+ms.date: 01/22/2024
 ms.custom: 
   - bap-template
-audience: Application user
 ms.reviewer: johnmichalak
+audience: Application user
 ms.search.region: Global
-ms.author: kailiang
 ms.search.validFrom: 2024-02-01
-ms.dyn365.ops.version: 10.0.39
 ms.search.form: 
+ms.dyn365.ops.version: 10.0.39
 ---
 
 # Use tax assessment

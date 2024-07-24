@@ -2,16 +2,14 @@
 title: Commerce component events for diagnostics and troubleshooting
 description: This article explains where to find events from Commerce-specific components.
 author: ShalabhjainMSFT
-ms.date: 12/07/2022
+ms.date: 05/28/2024
 ms.topic: article
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.author: shajain
+ms.author: bennettray
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.assetid: a22c9493-c000-4514-bb0d-b3cc674439d9
-ms.search.industry: Retail
 ---
 
 # Commerce component events for diagnostics and troubleshooting

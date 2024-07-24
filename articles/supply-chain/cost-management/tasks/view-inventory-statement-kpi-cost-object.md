@@ -1,26 +1,20 @@
 --- 
-# required metadata 
- 
 title: View inventory statement and KPI by cost object
-description: This article shows how to view inventory statement and KPI by cost object. 
+description: Learn how to view inventory statement and KPI by cost object, including a step-by-step process using the USMF demo data company. 
 author: JennySong-SH
+ms.author: yanansong
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: DefaultDashboard, CostAdminWorkspace, CostLastInventoryCloseCard, CostLastBackflushCostingCard, CostStatementCacheCard, CostReleasedProductsMissingCostingDataFormPart, CostCalculationPeriodTopVariancesChartFormPart, EcoResProductDetailsExtended, InventCostOnhandItem, CostStatement, CostInventoryFlowChart, CostInventoryTurnCard, CostInventoryAccuracyCard   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: kamaybac   
+audience: Application User  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: yanansong
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: DefaultDashboard, CostAdminWorkspace, CostLastInventoryCloseCard, CostLastBackflushCostingCard, CostStatementCacheCard, CostReleasedProductsMissingCostingDataFormPart, CostCalculationPeriodTopVariancesChartFormPart, EcoResProductDetailsExtended, InventCostOnhandItem, CostStatement, CostInventoryFlowChart, CostInventoryTurnCard, CostInventoryAccuracyCard
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # View inventory statement and KPI by cost object
 
 [!include [banner](../../includes/banner.md)]

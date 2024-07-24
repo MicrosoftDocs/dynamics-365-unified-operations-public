@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Foreign currency revaluation for General ledger
-description: This article provides an overview of the setup, running the process, calculation for the process, and how to reverse the revaluation transactions for the general ledger foreign currency revaluation process.
+description: Learn about the setup, calculation for the process, and how to reverse the revaluation transactions for the foreign currency revaluation process.
 author: kweekley
-ms.date: 03/15/2024
-ms.topic: article
-ms.custom: evergreen
-
-# optional metadata
-
-ms.search.form: CurrencyLedgerGainLossAccount
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.assetid: 842e8561-560f-4cc6-8668-70cca60b1ba3
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: kweekley
+ms.topic: article
+ms.date: 03/15/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: CurrencyLedgerGainLossAccount
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 842e8561-560f-4cc6-8668-70cca60b1ba3
 ---
 
 # Foreign currency revaluation for General ledger

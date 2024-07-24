@@ -1,18 +1,18 @@
 ---
 title: Create an Azure key vault in the Azure portal
-description: This article explains how to create a Microsoft Azure key vault for Electronic invoicing (RCS).
+description: Learn how to create a Microsoft Azure key vault for Electronic invoicing (RCS), including a step-by-step process for setting references to the key vault.
 author: ilikond
-ms.date: 02/14/2021
-ms.topic: article
-audience: 
-ms.reviewer: johnmichalak
-ms.search.region: 
 ms.author: ikondratenko
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.topic: how-to
 ms.custom: 
-ms.assetid: 
+  - bap-template
+ms.date: 06/17/2024 
+ms.reviewer: johnmichalak
+audience: 
+ms.search.region: 
+ms.search.validFrom:
 ms.search.form: 
+ms.dyn365.ops.version: 
 ---
 
 # Create an Azure key vault in the Azure portal

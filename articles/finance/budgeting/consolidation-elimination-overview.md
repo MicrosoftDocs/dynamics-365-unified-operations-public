@@ -4,7 +4,7 @@ description: Learn about the consolidation and elimination process, including ou
 author: twheeloc
 ms.author: twheeloc
 ms.topic: overview
-ms.date: 11/11/2022
+ms.date: 05/11/2024
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User

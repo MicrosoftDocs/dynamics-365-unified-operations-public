@@ -1,16 +1,18 @@
 ---
 title: Include CIAP credit from a previous period (Brazil)
-description: Use the CIAP fixed asset transactions page to create CIAP credit installments.
+description: Use the CIAP fixed asset transactions page to create CIAP credit installments, including a step-by-step process using the BRMF demo company.
 author: AdamTrukawka
-ms.date: 06/26/2017
+ms.author: atrukawk
 ms.topic: how-to
-audience: Application User
+ms.custom: 
+  - bap-template
+ms.date: 06/20/2024
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
-ms.author: atrukawk
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ---
+
 # Include CIAP credit from a previous period (Brazil)
 
 [!include [banner](../../includes/banner.md)]

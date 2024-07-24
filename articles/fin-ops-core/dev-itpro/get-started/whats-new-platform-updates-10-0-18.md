@@ -3,14 +3,14 @@ title: Platform updates for version 10.0.18 of finance and operations apps (May 
 description: Learn about the features that are included in the platform updates for version 10.0.18 of finance and operations apps.
 author: sericks007
 ms.author: sericks
-ms.topic: article
-ms.date: 04/15/2021
-ms.custom:
+ms.topic: whats-new
+ms.date: 07/12/2024
+ms.custom: 
+  - bap-template
+  - evergreen
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-03-31
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.18
 ---
 

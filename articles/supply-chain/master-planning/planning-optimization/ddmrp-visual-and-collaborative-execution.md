@@ -1,15 +1,15 @@
 ---
 title: Visual and collaborative execution
-description: This article describes how to monitor your Demand Driven Material Requirements Planning (DDMRP) decoupling points, buffer zones, planned orders, and history.
+description: Learn how to monitor your Demand Driven Material Requirements Planning (DDMRP) decoupling points, buffer zones, planned orders, and history.
 author: t-benebo
-ms.date: 06/30/2022
-ms.topic: article
-ms.search.form: EcoResProductDetailsExtended, ReqDDMRPWorkspace, ReqDecouplingPointsStatusByNetFlow, ReqDecouplingPointStatusByOnHand, ReqPlannedOrderForm, ReqItemDecoupledLeadTime
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
+ms.topic: article
+ms.date: 06/30/2022
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-06-30
+ms.search.form: EcoResProductDetailsExtended, ReqDDMRPWorkspace, ReqDecouplingPointsStatusByNetFlow, ReqDecouplingPointStatusByOnHand, ReqPlannedOrderForm, ReqItemDecoupledLeadTime
 ms.dyn365.ops.version: 10.0.28
 ---
 

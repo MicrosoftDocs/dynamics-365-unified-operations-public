@@ -5,7 +5,7 @@ author: josaw1
 ms.author: josaw
 ms.topic: article
 ms.date: 08/27/2021
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -236,6 +236,12 @@ The concept of macros is fully supported. Constants have the following advantage
 - You can see the value of a constant or a read-only variable in the debugger.
 
 Macros that are defined in class scopes (that is, in class declarations) are effectively available in all methods of all derived classes. This feature was originally a bug in the implementation of the legacy compiler macro, however, many application programmers often take advantage of it now. The X++ compiler still honors this feature, but no new code that uses it should be written. This feature also has a significant effect on the performance of the compiler.
+
+As an option you can use a macros on class declarations level, but with a specific reference to the value in that macro. This will have no impact on compiler performance, and you can enable existing standard macros to have cross-references (as well as all the capabilities of a constant variable) in your development.
+
+```xpp
+private const int RetryNum = #OCCRetryCount#RetryNum;
+```
 
 Constants can be declared at the class level, as shown in the following example.
 

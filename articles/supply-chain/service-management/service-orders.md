@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Service orders  
-description: This article provides an overview of how to work with service orders.
-author: sorenva
-ms.date: 05/01/2018
+description: Access an overview of how to work with service orders, including outlines on creating service orders and monitoring the progress of service orders.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: SMAServiceOrderTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/01/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMAServiceOrderTable
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: Set up time and attendance information in Dynamics 365 Human Resources
 description: Learn how to set up calculation and approval groups for time and attendance and set up absence information in Dynamics 365 Human Resources.
-author: tonyafehr
-ms.author: tfehr
+author: twheeloc
+ms.author: twheeloc
 ms.date: 01/24/2024
 ms.topic: article
 f1_keywords:

@@ -19,8 +19,6 @@ ms.assetid: 8b478e3d-d6b4-403b-aae0-f639a71ca36c
 [!include [banner](../includes/banner.md)]
 
 
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 This article explains how to configure the properties of an approval step.
 
 To configure an approval step in the workflow editor, right-click the approval step, and then click **Properties** to open the **Properties** page. Then use the following procedures to configure the properties of the approval step.

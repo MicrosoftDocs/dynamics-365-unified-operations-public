@@ -1,12 +1,12 @@
 ---
 title: Latin America overview
-description: This article provides an overview of functionality specific to Latin American.
-author: kfend
-ms.author: kfend
-ms.reviewer: johnmichalak 
+description: Access an overview of functionality specific to Latin American, including an outline on country/region localization availability.
+author: EvgenyPopovMBS
+ms.author: evgenypopov 
 ms.topic: overview
-ms.date: 08/22/2023
-ms.custom: bap-template 
+ms.date: 06/17/2024
+ms.custom: bap-template
+ms.reviewer: johnmichalak  
 ---
 
 # Latin America overview
@@ -31,15 +31,15 @@ Some of the functionality that's referred to in this article might not yet be av
 | Nicaragua | Available | Available |
 | Panama | Available | Available |
 | Colombia | 2023 wave 2 | 2024 wave 1 |
+| Guatemala | 2023 wave 2 | 2024 wave 1 |
 | Paraguay | 2023 wave 2  | 2024 wave 1 |
 | Uruguay | 2023 wave 2 | 2024 wave 1 |
-| Guatemala | 2023 wave 2 | 2024 wave 1 |
-| Ecuador | 2024 wave 1 | 2024 wave 1 |
-| Bolivia | 2024 wave 1  | 2024 wave 1 |
-| Peru | 2024 wave 1  | 2024 wave 1 |
-| Dominican Republic | 2024 wave 1 | 2024 wave 1 |
-| Venezuela | 2024 wave 1 | 2024 wave 1 |
-| Argentina | 2024 wave 2 | 2024 wave 2 |
+| Bolivia | Not planned | 2024 wave 2 |
+| Dominican Republic | Not planned | 2024 wave 2 |
+| Ecuador | Not planned | 2024 wave 2 |
+| Peru | Not planned  | 2024 wave 2 |
+| Venezuela | Not planned | 2024 wave 2 |
+| Argentina | 2025 wave 1 | 2025 wave 1 |
 
 ## See also
 

@@ -1,15 +1,15 @@
 ---
 title: Inventory Visibility adjustment offset
-description: This article describes how to offset inventory adjustments that were updated through Inventory Visibility and then also updated in Microsoft Dynamics 365 Supply Chain Management.
-author: yufeihuang
+description: Learn how to offset inventory adjustments that were updated through Inventory Visibility and then also updated in Microsoft Dynamics 365 Supply Chain Management.
+author: yufei-huang
 ms.author: yufeihuang
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 04/18/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form:
 ---
 
 # Inventory Visibility adjustment offset

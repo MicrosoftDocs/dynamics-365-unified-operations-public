@@ -4,7 +4,7 @@ description: Learn about how to create, print, and post collection letters, incl
 author: twheeloc
 ms.author: twheeloc
 ms.topic: how-to
-ms.date: 03/28/2023
+ms.date: 05/13/2024
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User 

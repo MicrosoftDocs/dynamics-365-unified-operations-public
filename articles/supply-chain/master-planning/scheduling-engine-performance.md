@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Improve scheduling engine performance
-description: This article provides information about the scheduling engine and how to improve performance. 
+description: Learn about the scheduling engine and how to improve performance, including an overview of basic scheduling flow and loading data into the engine. 
 author: t-benebo
-ms.date: 09/03/2020
+ms.author: benebotg
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 09/03/2020
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
+audience: Application User 
 ms.search.region: Global
 ms.search.industry: 
-ms.author: benebotg
 ms.search.validFrom: 2020-09-03
+ms.search.form: 
 ms.dyn365.ops.version: 
-
+ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ---
 
 # Improve scheduling engine performance

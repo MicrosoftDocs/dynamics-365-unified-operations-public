@@ -1,15 +1,15 @@
 --- 
 title: Check the availability of stock
-description: This procedure shows you how to check on-hand and physical on-hand inventory for a specific item number. 
-author: yufeihuang
+description: Learn how to check on-hand and physical on-hand inventory for a specific item number, including a step-by-step process for checking on-hand inventory items.
+author: yufei-huang
 ms.author: yufeihuang
-ms.reviewer: kamaybac
-ms.search.form: InventOnHandItemListPage, SysQueryForm, InventDimParmFixed, InventSupply, DefaultDashboard, WHSInventPhysicalOnhand, WHSOnHand, InventOnhandItem
 ms.topic: how-to
 ms.date: 04/19/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: InventOnHandItemListPage, SysQueryForm, InventDimParmFixed, InventSupply, DefaultDashboard, WHSInventPhysicalOnhand, WHSOnHand, InventOnhandItem
 ---
 
 # Check the availability of stock

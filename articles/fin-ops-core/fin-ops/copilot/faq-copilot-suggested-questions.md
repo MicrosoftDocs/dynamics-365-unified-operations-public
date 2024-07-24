@@ -1,5 +1,5 @@
 ---
-title: Responsible AI FAQ for Suggested questions within Copilot (preview)
+title: Responsible AI FAQ for Suggested questions within Copilot
 description: This FAQ provides answers to frequently asked questions about the AI technology that's used to generate suggested questions within Copilot. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 04/27/2024
 ms.collection:
@@ -12,14 +12,16 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ---
 
-# Responsible AI FAQ for Suggested questions within Copilot (preview)
+# Responsible AI FAQ for Suggested questions within Copilot
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../../../supply-chain/includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+<!-- KFM: Preview until further notice -->
 
 This FAQ provides answers to frequently asked questions about the *Suggested questions within Copilot* AI feature. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 
-[!INCLUDE [preview-note](../../../supply-chain/includes/preview-note.md)]
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## What is Suggested questions within Copilot?
 
@@ -51,7 +53,7 @@ Microsoft might disable Copilot-driven features for selected customers if abuse 
 
 ## See also
 
-- [Overview of Copilot capabilities in finance and operations apps](copilot-for-finance-operations.md)
-- [Enable Copilot capabilities in finance and operations apps](../../dev-itpro/copilot/enable-copilot.md)
+- [Generative help and guidance with Copilot](copliot-generative-help.md)
+- [Responsible AI FAQ for Generative help and guidance with Copilot in finance and operations apps](faq-copilot-generative-help.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

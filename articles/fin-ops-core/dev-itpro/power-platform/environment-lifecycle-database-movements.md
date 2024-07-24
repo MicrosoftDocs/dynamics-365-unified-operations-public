@@ -4,8 +4,9 @@ description: Learn about how to perform database and environment movements when 
 author: abunduc-ms
 ms.author: abunduc
 ms.topic: conceptual
-ms.date: 06/02/2023
-ms.custom: bap-template
+ms.date: 06/19/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak
 ---
 

@@ -1,27 +1,19 @@
 --- 
-# required metadata 
- 
 title: View posted sales tax transactions
-description: This article describes some ways to view posted sales tax transactions.
+description: Learn about some ways to view posted sales tax transactions, including outlines on posted sales tax pages and sales tax setlements periods pages.
 author: twheeloc
-ms.date: 04/05/2024
-ms.topic: how-to 
-  
- 
-# optional metadata 
- 
-ms.search.form: TaxTrans, TaxPeriod, TaxTable   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: twheeloc
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: twheeloc
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 04/05/2024
+ms.custom:
+ms.reviewer: twheeloc 
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: TaxTrans, TaxPeriod, TaxTable
 ms.dyn365.ops.version: Version 7.0.0 
 ---
+
 # View posted sales tax transactions
 
 [!include [banner](../../includes/banner.md)]

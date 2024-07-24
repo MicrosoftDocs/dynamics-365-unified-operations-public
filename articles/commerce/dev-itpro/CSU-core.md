@@ -2,14 +2,15 @@
 title: Introduction to Commerce Scale Unit (CSU) Core
 description: This article provides an introduction to Commerce Scale Unit (CSU) Core in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 01/12/2024
-ms.topic: article
+ms.date: 07/17/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: aneesa
 ms.search.validFrom: 2022-03-30
-ms.dyn365.ops.version: AX 10.0.25
+ms.custom: 
+  - bap-template
 ---
 
 # Introduction to Commerce Scale Unit (CSU) Core
@@ -37,6 +38,9 @@ CSU Core is available for new deployments as of the Dynamics 365 Commerce versio
 ## Deploy or migrate to CSU Core
 
 CSU Core offers highly performant headless commerce APIs and the benefits of .NET Core. 
+
+> [!WARNING]
+> Using or relying on outbound Internet Protocol (IP) addresses for cloud-hosted CSUs isn't supported. IP addresses can change at any time and shouldn't be used as a stable identifier of network traffic. Dependence on any IP value for cloud-hosted CSUs might negatively impact your environment.
 
 ### Migrate your existing Microsoft-hosted CSU to CSU Core
 

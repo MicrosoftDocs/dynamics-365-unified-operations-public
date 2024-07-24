@@ -1,26 +1,15 @@
 ---
-# required metadata
-
 title: Wave creation and processing
-description: This article describes how to create, process, and release a wave to create picking work for a load, shipment, production order, or kanban order.
-author: Mirzaab
-ms.date: 08/09/2022
-ms.topic: article
-
-# optional metadata
-
-ms.search.form:  WHSWaveTemplateTable, WHSParameters, whswavetablecreatenew, WHSWaveTable, WHSWaveAttributes, WHSKanbanWaveTable, WHSWaveTableListPage, WHSKanbanWaveTableListPage, WHSProdWaveTable
-audience: Application User
-# ms.devlang: 
+description: Learn how to create, process, and release a wave to create picking work for a load, shipment, production order, or kanban order.
+author: perlynne
+ms.author: perlynne
+ms.topic: how-to
+ms.date: 05/16/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: mirzaab
-ms.search.validFrom: 2021-03-08
-ms.dyn365.ops.version: 10.0.18
+audience: Application User
+ms.search.form:  WHSWaveTemplateTable, WHSParameters, whswavetablecreatenew, WHSWaveTable, WHSWaveAttributes, WHSKanbanWaveTable, WHSWaveTableListPage, WHSKanbanWaveTableListPage, WHSProdWaveTable
 ---
 
 # Wave creation and processing
@@ -29,7 +18,7 @@ ms.dyn365.ops.version: 10.0.18
 
 This article describes how to create, process, and release a wave to create picking work for a load, shipment, production order, or kanban order. You can create waves for the following types of orders:
 
-- **Sales orders** – Use shipping waves to include lines from sales orders. When a sales order is released to the warehouse, the sales order lines can be included in the wave.
+- **Sales orders**, **Transfer orders**, and **Outbound shipment orders** – Use shipping waves to include lines from sales orders, transfer orders, and outbound shipment orders. When an order is released to the warehouse, its order lines can be included in the wave.
 - **Production orders** – Use production waves to include lines from the bill of materials (BOM) for a product.
 - **Kanban orders** – Kanban waves include picking list lines from kanban orders.
 

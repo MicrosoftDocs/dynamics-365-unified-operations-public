@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Straight line service life depreciation
-description: This article gives an overview of the Straight line service life method of depreciation.
+description: Learn about the Straight line service life method of depreciation, including an example of straight line depreciation of an unchanged fixed asset.
 author: moaamer
-ms.date: 04/05/2024
-ms.topic: article
-ms.reviewer: twheeloc
-ms.custom: evergreen
-
-# optional metadata
-
-ms.search.form: AssetDepreciationProfile
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-# ms.tgt_pltfrm: 
-ms.assetid: ae5ceaeb-aeb7-45cd-b835-23cf9c5cf95a
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: moaamer
+ms.topic: article
+ms.date: 04/05/2024
+ms.custom: evergreen
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: AssetDepreciationProfile
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: ae5ceaeb-aeb7-45cd-b835-23cf9c5cf95a
 ---
 
 # Straight line service life depreciation

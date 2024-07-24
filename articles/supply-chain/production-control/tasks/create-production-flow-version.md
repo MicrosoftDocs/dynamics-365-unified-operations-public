@@ -1,26 +1,20 @@
 --- 
-# required metadata 
- 
 title: Create a production flow version
-description: This procedure focuses on creating a new production flow version. 
+description: Learn about creating a new production flow version, including a step-by-step process for creating production flows using the USMF demo data company. 
 author: johanhoffmann
+ms.author: johanho
+ms.topic: how-to
 ms.date: 11/03/2017
-ms.topic: how-to 
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create a production flow version
 
 [!include [banner](../../includes/banner.md)]

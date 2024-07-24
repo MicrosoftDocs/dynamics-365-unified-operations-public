@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Packing materials and fees
-description: This article provides information about packing material fees that are paid to recycling companies at specific intervals.
+description: Learn about packing material fees that are paid to recycling companies at specific intervals with a process for setting up packing material allocation.
 author: Mirzaab
-ms.date: 02/19/2020
+ms.author: mirzaab
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagingMaterialFee, InventPackagingMaterialTrans, InventPackagingMaterialTransPurch, InventPackagingUnit
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 02/19/2020
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 040b65dc-43c9-4256-b69f-b2d6e736fbe9
+audience: Application User
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mirzaab
 ms.search.validFrom: 2020-02-19
+ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagingMaterialFee, InventPackagingMaterialTrans, InventPackagingMaterialTransPurch, InventPackagingUnit
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 040b65dc-43c9-4256-b69f-b2d6e736fbe9
 ---
 
 # Packing materials and fees

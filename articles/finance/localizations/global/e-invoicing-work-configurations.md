@@ -1,13 +1,15 @@
 ---
 title: Work with configurations
-description: This article provides an overview of the main scenario for working with Electronic reporting (ER) configurations from the Globalization features workspace (RCS).
+description: Learn about the main scenario for working with Electronic reporting (ER) configurations from the Globalization features workspace (RCS).
 author: ilikond
-ms.date: 01/26/2022
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Global
 ms.author: ikondratenko
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---

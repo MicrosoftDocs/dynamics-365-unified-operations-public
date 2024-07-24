@@ -1,15 +1,15 @@
 ---
 title: Turn on the DDMRP feature for your system
-description: This article describes how to turn on the DDMRP feature and its prerequisites for your system.
+description: Learn how to turn on the DDMRP feature and its prerequisites for your system, including definitions of various features.
 author: t-benebo
-ms.date: 06/30/2022
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
+ms.topic: article
+ms.date: 06/30/2022
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-06-30
+ms.search.form:
 ms.dyn365.ops.version: 10.0.28
 ---
 

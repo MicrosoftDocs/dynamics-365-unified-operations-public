@@ -1,16 +1,17 @@
 ---
 title: INTERVAT tax declaration
-description: This article provides country/region-specific information about how to set up and create the INTERVAT tax declaration for legal entities in Belgium only.
-author: AdamTrukawka
-ms.date: 06/02/2022
-ms.topic: article
-audience: Application User
+description: Learn about how to set up and create the INTERVAT tax declaration for legal entities in Belgium only, including prerequisites and settings.
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
 ms.search.region: Belgium
-ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
 ms.search.form: TaxIntervat
+ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # INTERVAT tax declaration

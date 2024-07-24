@@ -1,16 +1,17 @@
 ---
 title: Local specific posting of sales VAT
-description: This article explains specific settings for posting value-added tax (VAT) payable transactions in accordance with Russian legislation.
-author: AdamTrukawka
-ms.date: 07/23/2019
-ms.topic: article
-audience: Application User
+description: Learn about specific settings for posting value-added tax (VAT) payable transactions in accordance with Russian legislation.
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
+audience: Application User
 ms.search.region: Russia
-ms.author: atrukawk
 ms.search.validFrom: 2019-07-23
 ms.dyn365.ops.version: 10.0.1
-ms.search.form: 
 ---
 
 # Local specific posting of sales VAT 

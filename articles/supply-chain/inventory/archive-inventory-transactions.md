@@ -1,26 +1,19 @@
 ---
-# required metadata
-
 title: Consolidate inventory transactions
-description: This article describes how to consolidate inventory transaction data to help improve system performance.
-author: yufeihuang
-ms.date: 04/11/2024
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: InventTransArchiveProcessForm
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
+description: Learn how to consolidate inventory transaction data to help improve system performance with an outline on toggling the feature in your system.
+author: yufei-huang
 ms.author: yufeihuang
+ms.topic: article
+ms.date: 04/11/2024
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-03-01
+ms.search.form: InventTransArchiveProcessForm
 ms.dyn365.ops.version: 10.0.18
 ---
+
 # Consolidate inventory transactions
 
 [!include [banner](../../includes/banner.md)]
@@ -104,9 +97,9 @@ For each consolidation in the grid, the following information is provided:
 
 The toolbar above the grid provides the following buttons that you can use to work with a selected consolidation:
 
-- **Consolidated transaction** – View the full details of the selected consolidation. The **Consolidated transaction** page that appears shows all the transactions in the consolidation.
+- **Consolidated transactions** – View the full details of the selected consolidation. The **Consolidated transactions** page that appears shows all the transactions in the consolidation.
 
-    To view more information about a specific transaction on the **Consolidated transaction** page, select it in the grid, and then, on the Action Pane, select **Consolidated transaction details**. The **Consolidated transaction details** page that appears shows information such as the ledger posting, related subledger references, and financial dimensions.
+    To view more information about a specific transaction on the **Consolidated transactions** page, select it in the grid, and then, on the Action Pane, select **Consolidated transaction details**. The **Consolidated transaction details** page that appears shows information such as the ledger posting, related subledger references, and financial dimensions.
 
 - **Pause** – Pause a selected consolidation that is currently being processed. The pause takes effect only after the archiving task is generated. Therefore, there might be a short delay before the pause takes effect. If a consolidation is paused, a check mark appears in its **Stop current update** field.
 - **Resume** – Resume processing for a selected consolidation that is currently paused.

@@ -11,7 +11,7 @@ metadata:
   ms.topic: hub-page # Required
   author: kamaybac #Required; your GitHub user alias, with correct capitalization.
   ms.author: kamaybac #Required; microsoft alias of author; optional team alias.
-  ms.date: 06/06/2023 #Required; mm/dd/yyyy format.
+  ms.date: 05/28/2024 #Required; mm/dd/yyyy format.
   hide_bc: true
 
 # highlightedContent section (optional)
@@ -284,12 +284,12 @@ additionalContent:
       links: 
       - url: /dynamics365/supply-chain/master-planning/master-planning-home-page
         text: Master planning home page
-      - url: /dynamics365/supply-chain/master-planning/master-plans
-        text: Set up master plans
       - url: /dynamics365/supply-chain/master-planning/planning-optimization/ddmrp-overview
         text: Demand Driven Material Requirements Planning (DDMRP)
-      - url: /dynamics365/supply-chain/master-planning/inventory-forecast
-        text: Inventory forecasts
+      - url: /dynamics365/supply-chain/demand-planning/demand-planning-home-page
+        text: Demand planning home page
+      - url: /dynamics365/supply-chain/master-planning/master-plans
+        text: Set up master plans
       - url: /dynamics365/supply-chain/master-planning/maintain-planned-orders
         text: Manage planned orders
     - title: Manufacturing and production

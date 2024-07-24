@@ -14,7 +14,7 @@ ms.search.region: Global
 ms.search.form:
 ---
 
-# Extend Copilot capabilities with low-code plugins
+# Tutorial: Extend Copilot capabilities with low-code plugins
 
 [!include [banner](../includes/banner.md)]
 

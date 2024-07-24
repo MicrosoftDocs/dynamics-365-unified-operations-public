@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Attach inventory items to service objects  
-description: This article explains how to attach an inventory item to a service object.
-author: sorenva
-ms.date: 05/01/2018
+description: Learn how to attach an inventory item to a service object, including a step-by-step process for attaching inventory items to service objects.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: SMAServiceObjectTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/01/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMAServiceObjectTable
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

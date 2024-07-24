@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Work with location directives
-description: This article describes how to work with location directives. Location directives are user-defined rules that help identify pick and put locations for inventory movement.
-author: Mirzaab
-ms.date: 09/28/2022
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: WHSLocDirTable, WHSLocDirHint, WHSLocDirTableUOM, WHSLocDirFailure
-audience: Application User
-# ms.devlang: 
+description: Learn how to work with location directives. Location directives are user-defined rules that help identify pick and put locations for inventory movement.
+author: perlynne
+ms.author: perlynne
+ms.topic: how-to
+ms.date: 05/16/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: mirzaab
-ms.search.validFrom: 2020-11-13
-ms.dyn365.ops.version: 10.0.15
+audience: Application User
+ms.search.form: WHSLocDirTable, WHSLocDirHint, WHSLocDirTableUOM, WHSLocDirFailure
 ---
+
 # Work with location directives
 
 [!include [banner](../includes/banner.md)]
@@ -59,8 +50,6 @@ To use this feature, it must be turned on for your system. As of Supply Chain Ma
 ## Work order types for location directives
 
 Many of the fields that can be set for location directives are common to all work order types. However, other fields are specific to particular work order types.
-
-![Location directives work order types.](media/Location_Directives_Work_Order_Types.png "Location directives work order types")
 
 > [!NOTE]
 > Two work order types, *Canceled work* and *Cycle counting*, are used only by the system. Location directives can't be created for these work order types.

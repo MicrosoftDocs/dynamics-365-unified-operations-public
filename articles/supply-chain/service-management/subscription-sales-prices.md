@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Subscription sales prices  
 description: When you create a subscription, the sales price is derived from the sales price setup that was created in the Sales price (subscription) form.
-author: sorenva
-ms.date: 05/01/2018
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: SMASalespriceSubscription
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/01/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMASalespriceSubscription
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

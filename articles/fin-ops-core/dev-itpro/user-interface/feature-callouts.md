@@ -6,7 +6,7 @@ ms.author: jasongre
 ms.topic: article
 ms.date: 05/16/2019
 ms.custom:
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2019-05-31

@@ -1,15 +1,15 @@
 ---
 title: Pack containers for shipment
-description: This article describes the packing process that lets you validate inventory items and pack them into containers.
+description: Learn about the packing process that lets you validate inventory items and pack them into containers, including a step-by-step process.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSLocationType, WHSLocationProfile, WHSParameters, WHSContainerType, WHSPackProfile, WHSCloseContainerProfile, InventLocationIdLookup, UnitOfMeasureLookup, WHSPack, WHSContainerTable, WHSPackingSlipPostingParameters
 ms.topic: how-to
 ms.date: 04/19/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: WHSLocationType, WHSLocationProfile, WHSParameters, WHSContainerType, WHSPackProfile, WHSCloseContainerProfile, InventLocationIdLookup, UnitOfMeasureLookup, WHSPack, WHSContainerTable, WHSPackingSlipPostingParameters
 ---
 
 # Pack containers for shipment

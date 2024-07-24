@@ -1,15 +1,15 @@
 ---
 title: Product receipt against purchase orders
-description: This article describes the various options for registering products as received.
+description: Learn about the various options for registering products as received, including an outline on preregistration and registration.
 author: Henrikan
 ms.author: henrikan
-ms.reviewer: kamaybac
-ms.search.form: PurchTable, PurchTablePart, VendPackingSlipJournalListPage, VendPackingSlipJournal
 ms.topic: conceptual
-ms.date: 01/06/2023
+ms.date: 05/02/2024
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: PurchTable, PurchTablePart, VendPackingSlipJournalListPage, VendPackingSlipJournal
 ---
 
 # Product receipt against purchase orders

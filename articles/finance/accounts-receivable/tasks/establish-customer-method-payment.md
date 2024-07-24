@@ -1,12 +1,12 @@
 --- 
 title: Establish customer method of payment
 description: Learn about how to create a method of payment for customer payments, including a step-by-step process that outlines creating payment methods. 
-author: ShivamPandeyMSFT
-ms.author: shpandey
+author: prabhatb-ship-it
+ms.author: prabhatb
 ms.topic: how-to
-ms.date: 03/23/2023
+ms.date: 05/23/2024
 ms.custom:
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 audience: Application User 
 ms.search.region: Global
 ms.search.validFrom: 2016-06-30

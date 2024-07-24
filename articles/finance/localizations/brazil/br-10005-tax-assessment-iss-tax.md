@@ -1,17 +1,19 @@
 ---
 title: Tax assessment for ISS tax (Brazil)
-description: You can make the tax assessment for ISS tax for a given booking period, considering the amount of ISS tax to recover and the amount of ISS tax to pay from the fiscal documents.
+description: You can make the tax assessment for ISS tax for a given booking period, considering the amount of ISS tax to recover and the amount of ISS tax to pay.
 author: AdamTrukawka
-ms.date: 06/26/2017
+ms.author: atrukawk
 ms.topic: how-to
-audience: Application User
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
-ms.author: atrukawk
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.industry: Manufacturing;Distribution;Service industries
 ---
+
 # Tax assessment for ISS tax (Brazil)
 
 [!include [banner](../../includes/banner.md)]

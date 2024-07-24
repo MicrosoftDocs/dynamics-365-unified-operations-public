@@ -1,15 +1,15 @@
 ---
 title: Demand-driven planning
-description: The article describes how to generate planned orders for items that are set up as decoupling points.
+description: Learn how to generate planned orders for items that are set up as decoupling points with an outline on net flow and qualified demand.
 author: t-benebo
-ms.date: 06/30/2022
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
+ms.topic: article
+ms.date: 06/30/2022
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2022-06-30
+ms.search.form:
 ms.dyn365.ops.version: 10.0.28
 ---
 

@@ -3,13 +3,13 @@ title: Removed or deprecated platform features
 description: Learn about features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 author: twheeloc
 ms.author: twheeloc
-ms.topic: article
-ms.date: 04/16/2024
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 07/18/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-02-29
-ms.search.form: 
 ms.dyn365.ops.version: Platform update 33
 ---
 
@@ -17,14 +17,37 @@ ms.dyn365.ops.version: Platform update 33
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-This article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
+This article describes features that are removed, or that are planned for removal in platform updates of finance and operations apps.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature isn't in active development and may be removed in a future update.
 
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
-Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
+Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that are changed or been removed in each version of finance and operations apps.
+
+## Feature deprecation effective July 2024
+
+### Azure Active Directory Graph to Microsoft Graph Migration
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | To enhance platform security and compliance, we're deprecating Azure Active Directory Graph in finance and operations apps. |
+| **Replaced by another feature?**   | Microsoft Graph - To ensure the security and integrity of your system and data, we strongly encourage all our customers to migrate to the more secure Microsoft Graph for making graph calls. |
+| **What do you need to do?**         | We strongly recommend that any customers with dependencies on the GraphAPIClient class (responsible for making Azure Active Directory Graph calls) migrate to the MicrosoftGraphClient (responsible for making Microsoft Graph calls) as soon as possible to avoid service disruptions. |
+| **Product areas affected**         | Finance and operations apps |
+| **Deployment option**              | All |
+| **Status**                         | End of support date is targeted for Oct 2024. |
+
+### SharePoint integration authentication using a Microsoft-managed high-trust connection
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The authentication mechanism used to integrate to SharePoint is being removed. |
+| **Replaced by another feature?**   | An alternate authentication mechanism is available via the **SharePoint user authentication** feature. For more information about setup, including a one-time permission grant to the application at the tenant level, see [Configure document management](../../dev-itpro/organization-administration/configure-document-management.md). Calling SharePoint as a user that isn't the currently logged in user is no longer supported. |
+| **Product areas affected**         | System administration  |
+| **Deployment option**              | Microsoft-managed cloud environments |
+| **Status**                         | The **SharePoint user authentication** feature is available in Dynamics 365 Finance version 10.0.40, and is mandatory in version 10.0.42. Migration to the new SharePoint authentication must occur by February 28, 2025, at which time the current SharePoint connection stops working. |
 
 ## Feature deprecation effective May 2024
 
@@ -33,7 +56,7 @@ Detailed information about objects in finance and operations apps can be found i
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | To enhance the security and performance of finance and operations apps, we're announcing the deprecation of support for unregistered Microsoft account users and external Microsoft Entra users in finance and operations apps. |
-| **What is changing?**   | If a [Microsoft account](/entra/external-id/microsoft-account) or [Microsoft Entra ID account](/entra/external-id/default-account) isn't registered in your Microsoft Entra ID tenant, you won't be able to access finance and operations apps. You'll receive the following error message: "AADSTS50020: user account '`contoso@contoso.com`;' from identity provider '`https://sts.windows.net/{tenant Id}/`' doesn't exist in tenant '\{tenant name\}' and can't access the application '\{application Id\}'(Finance and operations environment name) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Microsoft Entra ID user account". The user will be blocked at the Microsoft Entra ID tenant level. This change doesn't affect granular delegated admin permissions (GDAP) or CSP users. |
+| **What is changing?**   | If a [Microsoft account](/entra/external-id/microsoft-account) or [Microsoft Entra ID account](/entra/external-id/default-account) isn't registered in your Microsoft Entra ID tenant, you won't be able to access finance and operations apps. You'll receive the following error message: "AADSTS50020: user account '`contoso@contoso.com`;' from identity provider '`https://sts.windows.net/{tenant Id}/`' doesn't exist in tenant '\{tenant name\}' and can't access the application '\{application Id\}'(Finance and operations environment name) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Microsoft Entra ID user account". The user is blocked at the Microsoft Entra ID tenant level. This change doesn't affect granular delegated admin permissions (GDAP) or CSP users. |
 | **What do you need to do?**         | If a user who isn't part of your Microsoft Entra requires access to finance and operations apps, that user must be added to the Microsoft Entra ID tenant as an external user or guest user. For more information, see [B2B collaboration overview](/entra/external-id/what-is-b2b/). |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
@@ -41,25 +64,29 @@ Detailed information about objects in finance and operations apps can be found i
 
 ## Feature deprecation effective April 2024
 
-### Tokens without an environment URL in finance and operations apps 
+### Token resource or audience without an environment URL in finance and operations apps 
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | To enhance security compliance, we're deprecating the use of tokens that aren't acquired with the resource or audience that's set as the environment URL in finance and operations apps. |
-| **Replaced by another feature?**   | To ensure the security and integrity of your system and data, we strongly encourage all our customers to ensure that tokens are acquired only with the resource or audience that's set as the environment URL. Failure to comply with this requirement will result in API calls in finance and operations apps beginning to fail. We encourage all developers and administrators to update their token acquisition processes accordingly to avoid any disruption in API functionality. |
+| **Replaced by another feature?**   | To ensure the security and integrity of your system and data, we strongly encourage all our customers to ensure that tokens are acquired only with the resource or audience that's set as the environment URL. Failure to comply with this requirement results in API calls in finance and operations apps beginning to fail. We encourage all developers and administrators to update their token acquisition processes accordingly to avoid any disruption in API functionality. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | To enhance security compliance, support for tokens with an audience claim value other than the environment URL will be removed by April 2024 for non-production environments and by May 2024 for production environments. |
+| **Status**                         | To enhance security compliance, support for tokens with an audience claim value other than the environment URL is removed by April 2024 for non-production environments and by May 2024 for production environments. Platform update 63 and Dynamics 365 finance version 10.0.39 and later. |
+
+To troubleshoot unauthorized 401 errors, see [Check token compliance](../../dev-itpro/data-entities/troubleshoot-service-authentication.md#check-token-compliance).
 
 ### Multitenant apps without a service principal in the Microsoft Entra ID tenant 
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Multitenant apps that don't have a client service principal have been recognized as vulnerable, because they pose a significant risk of acquiring cross-tenant Open Authorization (OAuth) app-only tokens for multitenant services across arbitrary tenants. To address this security vulnerability, apps without a service principal in the tenant will no longer be authenticated. Finance and operations APIs will start to fail from these apps in deprecated environments. To review your onboarded applications, in finance and operations apps, go to **System administration** > **Setup** > **Microsoft Entra applications**. For information about how to review your onboarded applications, see [Register your external application](../../dev-itpro/data-entities/services-home-page.md#register-your-external-application). |
+| **Reason for deprecation/removal** | [Multitenant apps](/entra/identity-platform/single-and-multi-tenant-apps) that don't have a client service principal have been recognized as vulnerable, because they pose a significant risk of acquiring cross-tenant Open Authorization (OAuth) app-only tokens for multitenant services across arbitrary tenants. To address this security vulnerability, apps without a service principal in the tenant is no longer authenticated. Finance and operations APIs will start to fail from these apps in deprecated environments. To review your onboarded applications, in finance and operations apps, go to **System administration** > **Setup** > **Microsoft Entra applications**. For information about how to review your onboarded applications, see [Register your external application](../../dev-itpro/data-entities/services-home-page.md#register-your-external-application). |
 | **Replaced by another feature?**   | To ensure the security and integrity of your system and data, we strongly encourage all our customers to provision the multitenant apps in their Microsoft Entra ID tenant. For more information, see [Create an enterprise application from a multitenant application](/entra/identity/enterprise-apps/create-service-principal-cross-tenant?pivots=ms-graph). Note – If application onboarding isn't expected, remove that app or replace with a compliant app that has a client service principal in tenant. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | Support for app-only tokens by multitenant apps that don't have a service principal ID will be removed by February 2024 for non-production environments and by April 2024 for production environments. |
+| **Status**                         | Support for app-only tokens by multitenant apps that don't have a service principal ID will be removed by February 2024 for non-production environments and by April 2024 for production environments. Platform update 63 and Dynamics 365 finance version 10.0.39 and later |
+
+To troubleshoot unauthorized 401 errors, see [Check token compliance](../../dev-itpro/data-entities/troubleshoot-service-authentication.md#check-token-compliance).
 
 ## Feature deprecation effective March 2024
 
@@ -71,7 +98,7 @@ Detailed information about objects in finance and operations apps can be found i
 | **Replaced by another feature?**   | No, to ensure compliance among existing users, you must either extend invitations to users with the same email addresses to your Microsoft Entra ID or remove these users from the Finance and Operations system, create new user accounts within your Microsoft Entra ID, and proceed to import them accordingly. For more information, refer [How to create or delete users in Microsoft Entra ID - Microsoft Entra](/entra/fundamentals/how-to-create-delete-users).|
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | The rollout for sandbox environments will begin from Feb 2024 and for prod environments from March 2024. |
+| **Status**                         | The rollout for sandbox environments begins from Feb 2024 and for prod environments from March 2024. |
 
 ## Feature deprecation effective February 2024
 

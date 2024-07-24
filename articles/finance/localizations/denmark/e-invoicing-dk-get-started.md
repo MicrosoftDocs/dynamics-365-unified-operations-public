@@ -1,18 +1,17 @@
 ---
 title: Get started with Electronic invoicing for Denmark
-description: This article explains how to get started with Electronic invoicing for Denmark in Microsoft Dynamics 365 Finance.
+description: Learn how to get started with Electronic invoicing for Denmark in Microsoft Dynamics 365 Finance, including prerequisites.
 author: ikondratenko
-ms.date: 02/12/2024
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Denmark
 ms.author: ikondratenko
-ms.search.validFrom: 2023-12-01
-ms.dyn365.ops.version: AX 10.0.36
+ms.topic: article
+ms.date: 02/12/2024
 ms.custom: 
-ms.assetid: 
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Denmark
+ms.search.validFrom: 2023-12-01
 ms.search.form: 
+ms.dyn365.ops.version: AX 10.0.36
 ---
 
 # Get started with Electronic invoicing for Denmark

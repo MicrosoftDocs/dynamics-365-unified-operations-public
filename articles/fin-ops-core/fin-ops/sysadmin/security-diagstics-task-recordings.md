@@ -5,7 +5,7 @@ author: sericks007
 ms.author: sericks
 ms.topic: how-to
 ms.date: 05/05/2020
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom:

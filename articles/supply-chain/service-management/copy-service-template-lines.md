@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Copy service templates lines 
-description: Template information can be copied to either a service agreement or a service order.
-author: sorenva
-ms.date: 10/11/2018
+description: Template information can be copied to either a service agreement or a service order. Learn about copy service template lines.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: SMAAgreementTable, SMAServiceOrderTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 10/11/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMAAgreementTable, SMAServiceOrderTable
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Copy service templates lines 

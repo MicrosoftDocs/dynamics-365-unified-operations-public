@@ -1,16 +1,17 @@
 ---
 title: ICMS tax fiscal documents for Brazil
-description: This article explains the concept of tax fiscal documents and describes the requirements for generating them.
+description: Learn the concept of tax fiscal documents and describes the requirements for generating them, including outlines on prerequisites and examples.
 author: AdamTrukawka
-ms.date: 08/08/2017
-ms.topic: article
-audience: Application User
+ms.author: atrukawk
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 07/10/2024
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
-ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
 ms.search.form: TaxFiscalDocument_BR, TaxFiscalDocumentCancel_BR, TaxFiscalDocumentListPage_BR, TaxFiscalDocumentPost_BR
+ms.dyn365.ops.version: Version 1611
 ---
 
 # ICMS tax fiscal documents for Brazil

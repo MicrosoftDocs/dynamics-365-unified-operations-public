@@ -1,17 +1,19 @@
 ---
 title: Receive vendor fiscal documents (fixed assets - ICMS long term recoverable) (Brazil)
-description: This article explains how to post a fiscal document received from the acquisition of fixed assets and then recover the ICMS taxes.
+description: Learn how to post a fiscal document received from the acquisition of fixed assets and then recover the ICMS taxes, including a step-by-step process.
 author: AdamTrukawka
-ms.date: 06/24/2017
+ms.author: atrukawk
 ms.topic: how-to
-audience: Application User
+ms.custom: 
+  - bap-template
+ms.date: 06/20/2024
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
-ms.author: atrukawk
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.industry: Manufacturing;Distribution;Service industries
 ---
+
 # Receive vendor fiscal documents (fixed assets - ICMS long term recoverable) (Brazil)
 
 [!include [banner](../../includes/banner.md)]
