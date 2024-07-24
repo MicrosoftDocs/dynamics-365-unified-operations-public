@@ -46,26 +46,41 @@ Before you begin the procedures in this article, the following prerequisites mus
 	- Edicom source file response import format
     - Edicom response processing (CL)
 	- Edicom response error log import
+	
     > [!NOTE]
     > These formats are based on the corresponding **LATAM** format configurations that use the **Invoice model** and **Invoice model mapping** configurations. All required additional configurations are automatically imported.
 
 ## <a name="countryregion"></a>Configure the electronic invoicing feature
 
-Some parameters of the **Chilean electronic invoice (CL) "E-Invoicing for Chile: ISV last-mile connector with Edicom"** feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, add a feature based on the one provided by Microsoft, complete common parameters on the **Feature parameters** tab, review the default values, and update them as required, so that they better reflect your business operations.
+**Chilean electronic invoice (CL) "E-Invoicing for Chile: ISV last-mile connector with Edicom"** feature represents an outbound flow to issue sales documents. Some parameters of the feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, add a feature based on the one provided by Microsoft, complete common parameters on the **Feature parameters** tab, review the default values, and update them as required, so that they better reflect your business operations.
 
-In case of Chile, we interact with Edicom at least three times in the pipeline, first to submit the invoice, next to fetch the signed XML, and finally to fetch the status of the submitted invoice. Each of these interactions requires common parameters such as Edicom connection details and the authentication token provided by Edicom. These values will be provided by Edicom when a company onboards.
+In case of Chile, we interact with Edicom at least three times in the pipeline, first to submit the invoice, next to fetch the signed XML, and finally to fetch the status of the submitted invoice. Each of these interactions requires common parameters such as Edicom connection details and the authentication token provided by Edicom. Also, these common parameters are reused in feature setup for all document types. These values will be provided by Edicom when a company onboards.
 
-    > [!NOTE]
-    > The simplification of configurations of common parameters - it is no longer needed to go to each action and specify these common connection parameters repeatedly - using the **Feature parameters** tab will only be availavle starting from version 10.0.41.
+> [!NOTE]
+> The simplification of configurations of common parameters - it is no longer needed to go to each action and specify these common connection parameters repeatedly - using the **Feature parameters** tab will only be availavle starting from version 10.0.41.
 
 1. Import the latest version of the **Chilean electronic invoice (CL)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md). Once you import the feature from Dataverse, this is how it will look.
     ![Screenshot of the imported Globalization feature for Chile.](ltm-chl-e-invoice-glog-feature-imported.png)
 	![Screenshot of the imported Globalization feature for Chile.](ltm-chl-e-invoice-glog-feature-imported2.png)
 1. Create a copy of the imported Globalization feature, and select your configuration provider. For more information, see [Create a Globalization feature](../global/e-invoicing-create-new-globalization-feature.md).
+1. On the **Versions** tab, verify that the **Draft** version is selected.
 1. Specify values on the **Feature parameters** tab. These are connection and integration parameters to interoperate with Edicom's API.
     > [!NOTE]
-    > The **Chilean electronic invoice (CL)** feature is provided by Microsoft. Before usage, it requires additional configuration as described above. For information about how to configure invoicing features and apply changes, see [Work with feature setups](../global/e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they're processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Chile.
+    > The **Chilean electronic invoice (CL)** feature is provided by Microsoft. Before usage, it requires additional configuration as described in this article. For information about how to configure invoicing features and apply changes, see [Work with feature setups](../global/e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they're processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Chile.
 1. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, you must complete, publish, and deploy the feature as described in [Complete, publish, and deploy a Globalization feature](../global/e-invoicing-complete-publish-deploy-globalization-feature.md).
+
+## Outbound flow pipeline
+To review the processing pipeline, go to the **Feature setup** upder the **Setups** tab, select the desired derived document type, and click **Edit**. The outbound flow consist of the following actions:
+1. Transform document: a format that can be sent to Edicom is generated.
+1. Integrate with Edicom: the generated invoice is submitted to Edicom
+1. Get status from Edicom for an invoice: after the submission, the signed XML is fetched from Edicom. This document might not be immediately available as it takes some time for the PAC to generate it.
+    > [!NOTE]
+    > This is where the concept of update actions comes into play. Notice that the **Update action** checkbox is turned on for this step. This means that this step and all subsequent steps will be executed in a loop until it will be determined that a terminal state has been reached.
+1. Get status from Edicom for an invoice: next, we fetch the status of the submitted invoice from Edicom in the loop.
+1. Process response: the received response is then processed to determine if the terminal state has been reached. If the status response indicates a failure, the pipeline will be terminated and the submission marked as failed. If the response indicates a successful submission to the SII Chilean Internal Revenue Service, the pipeline cannot be completed yet because in Chile invoices can be rejected by customers for up to 8 days. During this time, the pipeline will be kept on hold in a state called Pending Execute Update action. If the response indicating that the customer has rejected the invoice is received, this will be detected in the process response step and the pipeline will be marked as failed.
+1. Terminate pipeline: finally, there is the Terminate pipeline action having the number of days to wait before terminating specified. In the out-of-the-box default setup, the pipeline will terminate with a completed status if more than nine days have passed since the invoice was submitted. If there are no rejections, the terminate pipeline step will mark the pipeline as completed.
+
+    ![Screenshot of the outbound pipeline.](ltm-chl-e-invoice-outbound-pipeline.png)
 
 ## Configure electronic document parameters
 After you import the **Electronic invoicing for Chile** feature, follow these remaining steps to configure electronic documents.
