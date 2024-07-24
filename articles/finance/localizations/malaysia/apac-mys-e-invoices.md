@@ -404,12 +404,16 @@ For the scenarios when shared customers were used for invoices issuing, but end 
 1. Repeat steps 2 through 6 for the remaining properties
    - BuyerTIN
    - BuyerBRN
-   - BuyerSST
    - BuyerAddressLine
    - BuyerCityName
    - BuyerCountrySubentityCode
    - BuyerIdentificationCode
    - BuyerTelephone
+   - BuyerSST
+   - BuyerNRIC
+   - BuyerPASSPORT
+   - BuyerARMY
+     
 1. Save and close the **Electronic document property types** page.
 
 ![Screenshot that shows electronic document properties configuration for retail buyers.](apac-mys-e-invoice-retail-buyer.jpg)
