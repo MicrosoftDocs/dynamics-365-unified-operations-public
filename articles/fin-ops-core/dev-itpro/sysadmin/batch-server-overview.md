@@ -4,13 +4,13 @@ description: Learn about batch processing and batch servers and how to plan for 
 author: raanandm
 ms.author: raanandm
 ms.topic: overview
+ms.custom: 
+  - bap-template
 ms.date: 03/21/2024
 ms.reviewer: johnmichalak
 ms.collection: get-started
-audience: IT Pro 
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 22a56b7d-4e07-4161-8416-0cac4a0b65a2
 ---
