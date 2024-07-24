@@ -43,6 +43,7 @@ Before you begin the procedures in this article, the following prerequisites mus
     - E-shipping guide (CL)
     - Project e-invoice (CL)
 	- Project Export e-Invoice (CL)
+	- Edicom source file response import format
     - Edicom response processing (CL)
 	- Edicom response error log import
 
@@ -79,20 +80,19 @@ These values will be provided by Edicom when a company onboards.
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. In the **Electronic document** section, add records for the **Customer Invoice journal**, **Customer packing slip journal**, and **Project invoice** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
+
+    ![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](ltm-chl-e-invoice-documents.jpg)
+
 1. Save your changes, and close the page.
 1. For each table name, select **Response types**, select **New** to create a response type we would get from the back end, and enter the following values:
 
     - In the **Response type** field, enter **SignedXML** (the default value).
     - In the **Description** field, enter any meaningful name. Alternatively, leave the field blank.
     - In the **Submission status** field, select **Pending** .
-    - In the **Data entity name** field, select one of the following values, depending on the table name that you're configuring: 
-
-        - **Customer invoice journal**.
-        - **Customer packing slip journal**.
-        - **Project invoice**.
-
     - In the **Model mapping** field, select **Edicom source file response format**.
 	- Repeat the above steps for the **Submission status** having the value **Pending update actions execution** to continuously pull for updated statuses, etc. from the tax authority for the submitted documents, by the means of execution of a subset of the actions in the processing pipeline in a loop.
+	
+	![Screenshot of the setup of the response type for the Customer Invoice journal table name on the Document updates for response types page.](ltm-chl-e-invoice-response-type.jpg)
 	
 	> [!NOTE]
     > The response includes the signed XML obtained from Edicom, which will be stored as an attachment to the corresponding invoice journal in the system. It will eventually be used to generate printable invoices with QR codes.
