@@ -126,14 +126,14 @@ Before you begin the replication process, the LCS environment will be in a **Dep
 1. Run the **DataMigrationTool.exe** application.
 
     A console window opens where you can provide the cloud environment type.  
-        - Public: **\[ lcs.dynamics.com \]** 
-        - GCC: **\[ gov.lcs.microsoftdynamics.us \]**
-        - UAE: **\[ uae.lcs.dynamics.com \]**     
+    - Public: **\[ lcs.dynamics.com \]**
+    - GCC: **\[ gov.lcs.microsoftdynamics.us \]**
+    - UAE: **\[ uae.lcs.dynamics.com \]**     
     After you enter the cloud environment, you will receive a prompt to sign in.
 
-2. Provide the credentials that are used to sign in to LCS.
+3. Provide the credentials that are used to sign in to LCS.
 
-3. After you're successfully authenticated, in the console window, provide the **Project-Id** value and then the **Environment-Id** value.
+4. After you're successfully authenticated, in the console window, provide the **Project-Id** value and then the **Environment-Id** value.
 
     To validate the given values, you need to sign in using the credentials that are used to sign in to LCS.
 
