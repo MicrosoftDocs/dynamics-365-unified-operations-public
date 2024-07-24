@@ -1,6 +1,6 @@
 ---
 title: Responsible AI FAQ for generative help and guidance
-description: Understand how Microsoft has minimized the potential harms related to AI features in Business performance analytics.
+description: Learn how Microsoft has minimized the potential harm related to AI features in Business performance analytics.
 author: Carylhenry
 ms.author: carylhenry
 ms.topic: article 
@@ -19,7 +19,7 @@ Generative help and guidance is a feature in Business performance analytics. It 
 
 ## What can generative help and guidance do?
 
-Generative help and guidance scans Business performance analytics documentation to search for an answer to a user's prompt. If an answer is found, generative help and guidance summarizes the documentation and provides a link to the documentation pages that were used to generate the response. Otherwise, Copilot encourages the user to try to change their question.
+Generative help and guidance scans Business performance analytics documentation to search for an answer to a user's prompt. If an answer is found, generative help and guidance summarizes the documentation. It also provides links to the documentation pages that were used to generate the response. If no answer is found, Copilot encourages the user to try to change their question.
 
 ## What are generative help and guidance's intended uses?
 
