@@ -49,7 +49,7 @@ Before you begin the procedures in this article, the following prerequisites mus
     > [!NOTE]
     > These formats are based on the corresponding **LATAM** format configurations that use the **Invoice model** and **Invoice model mapping** configurations. All required additional configurations are automatically imported.
 
-## <a name="countryregion"></a>Country/region-specific configuration for Electronic invoicing for Chile
+## <a name="countryregion"></a>Configure the electronic invoicing feature
 
 Some parameters of the **E-Invoicing for Chile: ISV last-mile connector with Edicom** feature are published with default values. 
 Before you deploy the electronic invoicing feature to the service environment, 
@@ -59,7 +59,7 @@ In case of Chile, we interact with Edicom at least three times in the pipeline, 
 Each of these interactions requires common parameters such as Edicom connection details and the authentication token provided by Edicom.
 These values will be provided by Edicom when a company onboards.
 
-	> [!NOTE]
+    > [!NOTE]
     > The simplification of configurations of common parameters - it is no longer needed to go to each action and specify these common connection parameters repeatedly - using the **Feature parameters** tab will only be availavle starting from version 10.0.41.
 
 2. Create a copy of the imported Globalization feature, and select your configuration provider. For more information, see [Create a Globalization feature](../global/e-invoicing-create-new-globalization-feature.md).
@@ -69,14 +69,12 @@ These values will be provided by Edicom when a company onboards.
 
 3. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, you must complete, publish, and deploy the feature as described in [Complete, publish, and deploy a Globalization feature](../global/e-invoicing-complete-publish-deploy-globalization-feature.md).
 
-## <a name="finance"></a>Finance configuration
-
-Some parameters must be configured directly in Finance.
+## Configure electronic document parameters
 
 1. Make sure that the country/region-specific ER configurations for the document context and electronic document model mapping that are required for Chile are imported. For more information, see [Set up Electronic document parameters](../global/e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
     > [!NOTE]
-    > After you import the **Electronic invoicing for Chile** feature, electronic documents are configured by default. Follow these remaining steps of this procedure if you must make changes.
+    > After you import the **Electronic invoicing for Chile** feature, electronic documents are configured by default. Follow these remaining steps of this procedure if you must make changes. Otherwise, consider this section informational only.
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. In the **Electronic document** section, add records for the **Customer Invoice journal**, **Customer packing slip journal**, and **Project invoice** table names.
@@ -98,6 +96,11 @@ Some parameters must be configured directly in Finance.
 	
 	> [!NOTE]
     > The response includes the signed XML obtained from Edicom, which will be stored as an attachment to the corresponding invoice journal in the system. It will eventually be used to generate printable invoices with QR codes.
+
+## Configure applicability rules
+These rules are quite standard checking the legal entity in the country ISO code. This particular feature setup supports all three types of invoices, customer invoices, debit notes, and credit notes.
+
+
 
 ## <a name="issue"></a>Issue electronic invoices
 
