@@ -31,13 +31,13 @@ The following options are set up on the **Outbound shipment processing policies*
 - **Enforce shipment to order matching** – Set to *Yes* to allow just one shipment to be associated to each demand order. You must set this to *Yes* when using [Warehouse management only mode with externally managed warehouse processing](wms-only-mode-external-shared-warehouse.md) because it needs to be set up on the source system related to the externally managed warehouse.
 - **Fill entire shipment** – This configuration allows you to confirm that warehouse wave processing will only proceed with shipments when it is possible to create warehouse work for the full quantities of the shipment lines. The default value is "Respect customer settings" which adheres to the fill entire shipment setting defined for a customer.
 
-### How to define the *Outbound shipment processing policy* defaulting
+## Define outbound shipment processing policy defaults
 
 The outbound shipment processing policy is a property assigned to shipments. However, it can be defaulted in multiple ways:
 
-- Orders - Policy can be set up on the outbound orders, and it will then be assigned to all shipments created from those orders.
-- Customer - Policy can be assigned to customers, and all orders created for that customer will have that policy, which will then propagate to shipments created from those orders.
-- Source systems - This is related to [Warehouse management only mode](wms-only-mode-overview.md). All shipments coming from a source system will inherit the policy that was set up on it.
+- Orders – Policy can be set up on the outbound orders, and it will then be assigned to all shipments created from those orders.
+- Customer – Policy can be assigned to customers, and all orders created for that customer will have that policy, which will then propagate to shipments created from those orders.
+- Source systems – This is related to [Warehouse management only mode](wms-only-mode-overview.md). All shipments coming from a source system will inherit the policy that was set up on it.
 
 ## Overview: How outbound loads are created, registered, and shipped
 
@@ -45,11 +45,11 @@ This illustration offers an overview of how outbound loads for sales orders (as 
 
 :::image type="content" source="media/outbound-load-process.svg" alt-text="The outbound load handling process." lightbox="media/outbound-load-process.svg":::
 
-**Sales order creation**
+### Sales order creation
 
 The commencement of the process involves [entering sales orders](../sales-marketing/tasks/create-sales-orders.md) into the system. [Reservations](../inventory/reserve-inventory-quantities.md) for order lines can be set up to occur automatically, performed manually, or delayed according to system setup preferences.
 
-**Create load before release to warehouse**
+### Create load before release to warehouse
 
 An existing sales order is required to generate an outbound load. Nonetheless, it's possible to establish the outbound loads prior to executing the [release to warehouse](#release-to-warehouse) procedure.
 
@@ -59,13 +59,13 @@ The [Outbound load planning workbench](tasks/use-load-planning-workbench-plan-lo
 
 The [release to warehouse](release-to-warehouse-process.md) process creates *load lines* and groups them into shipments. The shipment consolidation process allows for automated [shipment consolidation](about-shipment-consolidation-policies.md). Shipments related to an [externally managed warehouse](wms-only-mode-external-shared-warehouse.md) are locked with **Outbound shipment processing ownership** set to *External* until order data updates is returned.
 
-**Wave and warehouse work processing**
+### Wave and warehouse work processing
 
 The system generates picking work through [*wave processing*](wave-processing.md) and can create loads when required. There needs to be an available [*wave template*](wave-templates.md) which determines whether the [advanced load building](advanced-load-building-during-wave.md) method is utilized.
 The *work templates* determine how work is performed for each warehouse process, and the *location directives* specify the pick and put locations for inventory movements. For more information, see [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md).
 Warehouse *work* is used to control any warehouse operation performed by a warehouse worker or [material handling system](mhax.md). Typically, warehouse work operations consist of at least two consecutive actions: a pick and a put of inventory.
 
-**Outbound load shipment confirmation**
+### Outbound load shipment confirmation
 
 Once the warehouse tasks are finished for a load, a subsequent shipment confirmation procedure can be executed, updating the **Load status** to *Shipped* and the **Load packing slip background posting status** will be updated from *None* to *Queued*. This process may function as part of an automated [background process](confirm-outbound-shipments-from-batch-jobs.md), depending on the configuration.
 
