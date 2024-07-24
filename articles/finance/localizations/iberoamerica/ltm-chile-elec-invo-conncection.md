@@ -30,14 +30,14 @@ After you configure electronic invoicing, you can generate, digitally sign, and 
 
 Before you begin the procedures in this article, the following prerequisites must be met:
 
-- Gain familiarity with and understanding of Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
-- Do the common part of electronic invoicing service configuration as described in [Set up electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
-- You must enable the following features in **Feature management**:
+1. Ensure that the settings for the Chilean legal entity are in place. For more information, see [Set up legal entity and tax information for Chile ](ltm-chile-set-up-legal-entity-tax-information.md).
+1. Gain familiarity with and understanding of Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
+1. Do the common part of electronic invoicing service configuration as described in [Set up electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
+1. You must enable the following features in **Feature management**:
 	- **Electronic invoicing integration**
 	- **E-Invoicing service workspace designer**
 	- **Execute update actions for submitted documents**
-- Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
-
+1. Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
     - Inventory e-invoice (CL)
 	- Inventory Export e-Invoice (CL)
     - E-shipping guide (CL)
@@ -46,36 +46,31 @@ Before you begin the procedures in this article, the following prerequisites mus
 	- Edicom source file response import format
     - Edicom response processing (CL)
 	- Edicom response error log import
-
     > [!NOTE]
     > These formats are based on the corresponding **LATAM** format configurations that use the **Invoice model** and **Invoice model mapping** configurations. All required additional configurations are automatically imported.
 
 ## <a name="countryregion"></a>Configure the electronic invoicing feature
 
-Some parameters of the **E-Invoicing for Chile: ISV last-mile connector with Edicom** feature are published with default values. 
-Before you deploy the electronic invoicing feature to the service environment, 
-review the default values, and update them as required, so that they better reflect your business operations.
-In addition, complete common parameters on the **Feature parameters** tab.
-In case of Chile, we interact with Edicom at least three times in the pipeline, first to submit the invoice, next to fetch the signed XML, and finally to fetch the status of the submitted invoice.
-Each of these interactions requires common parameters such as Edicom connection details and the authentication token provided by Edicom.
-These values will be provided by Edicom when a company onboards.
+Some parameters of the **Chilean electronic invoice (CL) "E-Invoicing for Chile: ISV last-mile connector with Edicom"** feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, add a feature based on the one provided by Microsoft, complete common parameters on the **Feature parameters** tab, review the default values, and update them as required, so that they better reflect your business operations.
+
+In case of Chile, we interact with Edicom at least three times in the pipeline, first to submit the invoice, next to fetch the signed XML, and finally to fetch the status of the submitted invoice. Each of these interactions requires common parameters such as Edicom connection details and the authentication token provided by Edicom. These values will be provided by Edicom when a company onboards.
+
     > [!NOTE]
     > The simplification of configurations of common parameters - it is no longer needed to go to each action and specify these common connection parameters repeatedly - using the **Feature parameters** tab will only be availavle starting from version 10.0.41.
 
-2. Create a copy of the imported Globalization feature, and select your configuration provider. For more information, see [Create a Globalization feature](../global/e-invoicing-create-new-globalization-feature.md).
-3. Specify values on the **Feature parameters** tab. These are connection and integration parameters to interoperate with Edicom's API.
+1. Import the latest version of the **Chilean electronic invoice (CL)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md). Once you import the feature from Dataverse, this is how it will look.
+    ![Screenshot of the imported Globalization feature for Chile.](ltm-chl-e-invoice-glog-feature-imported.png)
+	![Screenshot of the imported Globalization feature for Chile.](ltm-chl-e-invoice-glog-feature-imported2.png)
+1. Create a copy of the imported Globalization feature, and select your configuration provider. For more information, see [Create a Globalization feature](../global/e-invoicing-create-new-globalization-feature.md).
+1. Specify values on the **Feature parameters** tab. These are connection and integration parameters to interoperate with Edicom's API.
     > [!NOTE]
-    > The **Electronic invoicing for Chile** feature is provided by Microsoft. Before usage, it requires additional configuration as described above. For information about how to configure invoicing features and apply changes, see [Work with feature setups](../global/e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they're processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Chile.
-
-3. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, you must complete, publish, and deploy the feature as described in [Complete, publish, and deploy a Globalization feature](../global/e-invoicing-complete-publish-deploy-globalization-feature.md).
+    > The **Chilean electronic invoice (CL)** feature is provided by Microsoft. Before usage, it requires additional configuration as described above. For information about how to configure invoicing features and apply changes, see [Work with feature setups](../global/e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they're processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Chile.
+1. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, you must complete, publish, and deploy the feature as described in [Complete, publish, and deploy a Globalization feature](../global/e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ## Configure electronic document parameters
+After you import the **Electronic invoicing for Chile** feature, follow these remaining steps to configure electronic documents.
 
 1. Make sure that the country/region-specific ER configurations for the document context and electronic document model mapping that are required for Chile are imported. For more information, see [Set up Electronic document parameters](../global/e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
-
-    > [!NOTE]
-    > After you import the **Electronic invoicing for Chile** feature, electronic documents are configured by default. Follow these remaining steps of this procedure if you must make changes. Otherwise, consider this section informational only.
-
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. In the **Electronic document** section, add records for the **Customer Invoice journal**, **Customer packing slip journal**, and **Project invoice** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
