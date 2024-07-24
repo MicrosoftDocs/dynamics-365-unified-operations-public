@@ -3,13 +3,13 @@ title: Configure Lifecycle Services security
 description: Learn about how security in Microsoft Dynamics Lifecycle Services is controlled at both the organization level and the project level.
 author: AngelMarshall
 ms.author: tsmarsha
-ms.topic: article
-ms.date: 03/15/2022
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/24/2024
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 79396ff8-538f-4f6f-80d0-898fc5618fb5
 ---
