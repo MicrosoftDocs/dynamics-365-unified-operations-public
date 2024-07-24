@@ -410,6 +410,7 @@ For the scenarios when shared customers were used for invoices issuing, but end 
    - BuyerIdentificationCode
    - BuyerTelephone
    - BuyerSST
+   - BuyerTTX
    - BuyerNRIC
    - BuyerPASSPORT
    - BuyerARMY
