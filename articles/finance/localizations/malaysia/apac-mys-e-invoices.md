@@ -284,7 +284,15 @@ To configure additional buyers and journals properties, do the following additio
 
 ![Screenshot that shows electronic document properties configuration for retail buyers.](apac-mys-e-invoice-retail-buyer.jpg)
 
-To enter the values for the described above electronic document properties, do the following steps.
+To enter the values for the described above electronic document properties at customer level, do the following steps.
+
+1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
+1. Select a customer, and then, select the **Customer** menu item from the top menu.
+1. On the Action Pane, select **Electronic document properties**.
+1. Enter required values in the **Value** field for each of the properties that needs to be overwritten in the electronic invoice.
+
+
+To enter the values for the electronic document properties at invoice level, do the following steps.
 
 1. Go to **Account receivable** \> **Inquiries and reports** \> **Invoices** \> **Invoice journal**.
 1. Select a required invoice, and then, select the **Invoice** menu item from the top menu.
@@ -292,8 +300,7 @@ To enter the values for the described above electronic document properties, do t
 1. Enter required values in the **Value** field for each of the properties that needs to be overwritten in the electronic invoice.
 
 > [!NOTE]
-> The described above electronic document properties non-empty values will override the respective default values from the shared customer master data.
->
+> The described above electronic document properties non-empty values will override the respective default values automatically populated from either customer or invoice master data.
 > Entering of the electronic document properties values must be performed before submitting electronic invoices to the authorities.
 
 ## Configure funding sources
