@@ -4281,7 +4281,7 @@
                     - name: Uruguay overview
                       href: localizations/iberoamerica/uruguay.md
                     - name: Configure sales and purchase invoices for Uruguay
-                      herf: localizations/iberoamerica/ltm-configure-invoices-uruguay.md
+                      href: localizations/iberoamerica/ltm-configure-invoices-uruguay.md
                     - name: Create customer and vendor records with an address in Uruguay
                       href: localizations/iberoamerica/ltm-create-customer-vendor-uruguay.md
                     - name: Set up a legal entity and tax information for Uruguay
