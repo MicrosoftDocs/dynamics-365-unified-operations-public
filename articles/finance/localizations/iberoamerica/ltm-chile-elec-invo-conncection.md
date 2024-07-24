@@ -26,7 +26,7 @@ After you configure electronic invoicing, you can generate, digitally sign, and 
 > [!IMPORTANT]
 > This new E-Invoicing globalization feature for Chile (outbound flow) requires you to be on MS Dynamics 365 Finance version 10.0.40 specifically on build number 10.0.1935.60 or above. It can only be imported into the new Globalization Studio and it is not supported in RCS.
 
-## <a name="prerequisites"></a>Prerequisites
+## Prerequisites
 
 Before you begin the procedures in this article, the following prerequisites must be met:
 
@@ -50,9 +50,9 @@ Before you begin the procedures in this article, the following prerequisites mus
     > [!NOTE]
     > These formats are based on the corresponding **LATAM** format configurations that use the **Invoice model** and **Invoice model mapping** configurations. All required additional configurations are automatically imported.
 
-## <a name="countryregion"></a>Configure the electronic invoicing feature
+## Configure the electronic invoicing feature
 
-**Chilean electronic invoice (CL) "E-Invoicing for Chile: ISV last-mile connector with Edicom"** feature represents an outbound flow to issue sales documents. Some parameters of the feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, add a feature based on the one provided by Microsoft, complete common parameters on the **Feature parameters** tab, review the default values, and update them as required, so that they better reflect your business operations.
+The **Chilean electronic invoice (CL) "E-Invoicing for Chile: ISV last-mile connector with Edicom"** feature represents an outbound flow to issue sales documents. Some parameters of the feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, add a feature based on the one provided by Microsoft, complete common parameters on the **Feature parameters** tab, review the default values, and update them as required, so that they better reflect your business operations.
 
 In case of Chile, we interact with Edicom at least three times in the pipeline, first to submit the invoice, next to fetch the signed XML, and finally to fetch the status of the submitted invoice. Each of these interactions requires common parameters such as Edicom connection details and the authentication token provided by Edicom. Also, these common parameters are reused in feature setup for all document types. These values will be provided by Edicom when a company onboards.
 
@@ -69,7 +69,7 @@ In case of Chile, we interact with Edicom at least three times in the pipeline, 
     > The **Chilean electronic invoice (CL)** feature is provided by Microsoft. Before usage, it requires additional configuration as described in this article. For information about how to configure invoicing features and apply changes, see [Work with feature setups](../global/e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they're processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Chile.
 1. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, you must complete, publish, and deploy the feature as described in [Complete, publish, and deploy a Globalization feature](../global/e-invoicing-complete-publish-deploy-globalization-feature.md).
 
-## Outbound flow pipeline
+### Outbound flow pipeline
 To review the processing pipeline, go to the **Feature setup** upder the **Setups** tab, select the desired derived document type, and click **Edit**. The outbound flow consist of the following actions:
 1. **Transform document**: a format that can be sent to Edicom is generated.
 1. **Integrate with Edicom**: the generated invoice is submitted to Edicom
@@ -82,13 +82,13 @@ To review the processing pipeline, go to the **Feature setup** upder the **Setup
 
     ![Screenshot of the outbound pipeline.](ltm-chl-e-invoice-outbound-pipeline.png)
 
-## Configure applicability rules
+### Applicability rules
 To provide context to find the exact Electronic Invoicing Globalization feature to run in the Electronic Invoicing Service, the Applicability rules must be poperly configured. These rules are provided out-of-the box checking the legal entity in the country ISO code. This particular feature setup supports all three types of invoices, customer invoices, debit notes, and credit notes.
 ![Screenshot of the setup on the Applicability rules.](ltm-chl-e-invoice-applicability-rules.png)
 
-## Configure variables
-There are the following Variables used in the outbound data flow actions of the Chilen feature:
-- **BusinessDocumentDataModel**: the inbound Business Document Data model variable received from Finance / SCM and transformed into the format required for submission.
+### Variables
+There are the following Variables used in the outbound data flow actions of the Chilen feature (provided out-of-the-box):
+- **BusinessDocumentDataModel**: the Business Document Data model variable received from Finance / SCM and transformed into the format required for submission.
 - **SignedXML**: the signed XML variable sent back to Finance / SCM, which contains the base 64 encoded response body from the Get Signed XML from Edicom step. As mentioned above, it is used in the response types to save as an attachment to the invoice journal and generate printable reports with QR codes.
 
 ![Screenshot of the setup on the Variables.](ltm-chl-e-invoice-variables.png)
@@ -106,7 +106,7 @@ After you imported the **Electronic invoicing for Chile** feature comprising out
 1. Save your changes, and close the page.
 1. For each table name, select **Response types**, select **New** to create a response type we would get from the back end, and enter the following values:
 
-    - In the **Response type** field, enter **SignedXML** (the default value).
+    - In the **Response type** field, enter **SignedXML** (the default value, see the Variables chapter above).
     - In the **Description** field, enter any meaningful name. Alternatively, leave the field blank.
     - In the **Submission status** field, select **Pending** .
     - In the **Model mapping** field, select **Edicom source file response format**.
@@ -117,14 +117,11 @@ After you imported the **Electronic invoicing for Chile** feature comprising out
 	> [!NOTE]
     > The response includes the signed XML obtained from Edicom, which will be stored as an attachment to the corresponding invoice journal in the system. It will eventually be used to generate printable invoices with QR codes.
 
-## <a name="issue"></a>Issue electronic invoices
+## Issue electronic invoices
 
-After you complete all the required configuration steps, you can generate electronic invoices for posted invoices. You can inquire about the results of the submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and selecting the required document type.
+After you complete all the required configuration steps, you can generate and submit electronic invoices for posted invoices by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. For more information about how to generate electronic invoices, see [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
 
-To download the XML files of electronic invoices for successfully processed invoices, select **Electronic document** \> **Download file**.
-
-> [!IMPORTANT]
-> In current implementations, the standard submission procedure described above only generates electronic invoices and stores their XML files on the service side, but it doesn't submit the invoices. For the submission of Chilean electronic invoices, integration with the [Electronic Invoicing service ISV last-mile connector](../global/e-invoicing-isv-connector.md) is required. However, this connector hasn't been released yet.
+You can inquire about the results of a submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and selecting the required document type. For more information, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
 
 ## More resources
 
@@ -132,5 +129,7 @@ To download the XML files of electronic invoices for successfully processed invo
 - [Get started with Electronic invoicing service administration](../e-invoicing-get-started-service-administration.md)
 - [Get started with Electronic invoicing](../e-invoicing-get-started.md)
 - [Electronic Invoicing service independent software vendor (ISV) last-mile connector](../global/e-invoicing-isv-connector.md)
+- [Dynamics 365 Country expansion: localizations for LATAM countries | June 27, 2024](https://community.dynamics.com/blogs/post/?postid=7bd2efc7-9344-ef11-840a-6045bdeef618)
+- [Dynamics 365 Country expansion: localizations for LATAM countries | D365 FastTrack Tech Talks (youtube.com)](https://www.youtube.com/watch?v=eK8TJmnhpJo)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
