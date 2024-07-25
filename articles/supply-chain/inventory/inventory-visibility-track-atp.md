@@ -15,7 +15,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!--KFM: Preview until 10.0.41 GA -->
+<!--KFM: Preview until further notice -->
 
 The Inventory Visibility service enables external systems to query Dynamics 365 Supply Chain Management for inventory changes occurring up to 180 days in the future. As a result, users working in an external system can view future inventory availability details and make accurate projections for when orders can be delivered. The Inventory Visibility service can import information about planned inbound and outbound inventory changes together with the related dates. Available-to-promise (ATP) functionality in Inventory Visibility can then query these time-series based inventory changes and calculate your omnichannel ATP. External systems can query and retrieve this information from Inventory Visibility in near real time by calling its API.
 
