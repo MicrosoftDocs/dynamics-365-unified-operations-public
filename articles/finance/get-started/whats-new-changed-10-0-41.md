@@ -30,6 +30,9 @@ This section contains a table that lists the features that are included in this 
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
+|Accounts payable	|Financial tag for purchase order invoicing|	This feature helps tracking processes and ensuring accurate analysis of financial data across procurement-to-pay transactions by leveraging financial tags.|	Feature management |
+|Accounts receivable|	Prepayment customer invoice feature|	This feature creates and manage invoices for customer prepayments. Customers can issue prepayment invoices to require a deposit before fulfilling the sales order.|	Feature management|
+|Accounts receivable|	Free text invoice performance boost |The increasing volume of data was causing slow loading of the Free text invoice page in Dynamics 365 Finance, as well as performance issues when the workflow was enabled. To address this, two key changes were made: 1) **All free text invoices** menu item now displays only invoices with a **Not posted** status.  2) A new **Optimized invoice loading page** menu item is added, providing a streamlined interface with faster data loading capabilities. |	Feature management|
 | Cash and bank management | Modern bank reconciliation | This feature improves the usability and performance of advanced bank reconciliation and provides feature enhancements. Several new capabilities are available on the bank reconciliation worksheet, including clearing reversal company transactions, generating vouchers and payment journals, and settling open customer invoices. Bank reconciliation matching rules are enhanced to automatically run these capabilities through user-defined criteria. | Feature management |
 | Cash and bank management | Automatic clear bridged transactions through advanced bank reconciliation | This feature automatically clears bridged payment transactions through bank reconciliation. The transactions don't have to be manually cleared in the general ledger. Users can set up a bridging account per bank account. | Feature management |
 | Cash and bank management | Skip reversal flag validation when matching reversal bank statement lines | A mandatory validation that checks if one of the bank statement lines has the reversal field set to **Yes** to match with the corresponding original statement line. This new feature skips the validation for manual matching and configurable parameter for matching rule setup.| Feature management |
@@ -68,6 +71,9 @@ The following table lists the features that are turned on by default in version 
 
 | Feature name | Feature state | Module |
 |--------------|---------------|--------|
+|Vendor invoice automation with tax registration|On by default	|Accounts payable |
+|Enable recurring Accounts payable invoice|On by default	|Accounts payable |
+|Vendor invoice register approved |On by default	|Accounts payable |
 |Enable external tax solution providers for Tax calculation service (Universal tax rate API)	|On by default	|Tax|
 |Sales tax rate on invoice date in purchase order credit note	|Mandatory	|Tax|
 |(India) Enable initial TDS threshold under section 194Q	|On by default|	Tax|
@@ -117,4 +123,4 @@ The following table lists the features that have been removed from Feature manag
 | Enhanced filtering on the cash position inquiry | The related functionality is enabled out of the box. | Cash and bank management |
 | Calculate the average exchange rate based on the main account code only | The related functionality is enabled out of the box. | Cash and bank management |
 |(Italy) Posting invoices with zero amount|The related functionality is enabled out of the box.| Accounts payable and Accounts receivable |
-
+|Product name translation fix|	The related functionality is enabled out of the box.|	Accounts receivable|
