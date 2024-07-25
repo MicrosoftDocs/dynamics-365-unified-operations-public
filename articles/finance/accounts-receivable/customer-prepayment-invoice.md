@@ -1,6 +1,6 @@
 --- 
-title: Create customer prepayment invoice
-description: This article describes how to create a prepayment invoice for a customer.
+title: Create customer prepayment invoices
+description: This article explains how to create a prepayment invoice for a customer.
 author: raynezou
 ms.author: raynezou
 ms.topic: how-to
@@ -10,71 +10,75 @@ ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-06-30
-ms.search.form: SalesTableListPage, SalesEditLines,  SysQueryForm, SysRecurrence
+ms.search.form: SalesTableListPage, SalesEditLines, SysQueryForm, SysRecurrence
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 
-# Create customer prepayment invoice
+# Create customer prepayment invoices
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to create a prepayment invoice for a customer.
+This article explains how to create a prepayment invoice for a customer.
 
-## Customer prepayment invoice 
+## Customer prepayment invoices
 
-Organizations often receive prepayments (advance payments) from customers for goods or services before those goods or services are delivered. These prepayments ensure that the organization has sufficient 
-funds to fulfill the customer's order and manage cash flow effectively. This article explains prepayments for sales order invoices in Dynamics 365 Finance.  
+Organizations often receive prepayments (advance payments) from customers for goods or services before those goods or services are delivered. These prepayments ensure that the organization has enough funds to fulfill the customer's order and effectively manage cash flow. This article explains prepayments for sales order invoices in Microsoft Dynamics 365 Finance.
 
-## Set up Accounts receivable for prepayment customer invoices 
+## Set up Accounts receivable for customer prepayment invoices
 
-To set up prepayment customer invoices, follow these steps:
-1. Enable the **Prepayment customer invoice** feature under **Feature management**.
-2. Go to **Inventory management** > **Setup** > **Posting** > **Posting** > **Sales order** > **Prepayment**.
-3. Set up the default ledger account for posting with the **Customer prepayment** type.
-4. Go to **Accounts receivable parameters** > **Ledger and sales tax** > **Payment** and complete the **Posting profile** setup with prepayment journal voucher.
-5. Go to **Accounts receivable parameters** > **Number sequences** and set up the number sequence for **Prepayment invoice**, **Prepayment invoice voucher**, **Prepayment invoice reversal** and **Prepayment invoice reversal voucher**.
-6. Go to **System administration** > **Setup** and click **Initialize process automations**.
+To set up customer prepayment invoices, follow these steps.
+
+1. Go to **Feature management**, and enable the **Prepayment customer invoice** feature.
+2. Go to **Inventory management** \> **Setup** \> **Posting** \> **Posting** \> **Sales order** \> **Prepayment**.
+3. Set up the default ledger account for posting. Set the type to **Customer prepayment**.
+4. Go to **Accounts receivable parameters** \> **Ledger and sales tax** \> **Payment**, and complete the **Posting profile** setup with a prepayment journal voucher.
+5. Go to **Accounts receivable parameters** \> **Number sequences**, and set up number sequences for the **Prepayment invoice**, **Prepayment invoice voucher**, **Prepayment invoice reversal**, and **Prepayment invoice reversal voucher** references.
+6. Go to **System administration** \> **Setup**, and select **Initialize process automations**.
 7. Enable the **Automated prepayment settlement posting** background process.
-8. Update the interval for this process automation to 1 minute.
-9. Go to **Electronic reporting** > **Reporting configuations** > **Exchange** > **Load from XML file**.
-10. Enable electronic reporting configurations.
+8. Update the interval for the process automation to one minute.
+9. Go to **Electronic reporting** \> **Reporting configurations** \> **Exchange** \> **Load from XML file**.
+10. Enable Electronic reporting (ER) configurations.
 11. Import the following files from Dataverse:
- - Customer prepayment invoice model xml
- - Prepayment invoice template xml
- - Customer prepayment invoice model mapping xml    
 
-### Overview of the prepayment invoice process 
+    - Customer prepayment invoice model xml
+    - Prepayment invoice template xml
+    - Customer prepayment invoice model mapping xml
 
-The overview process of customer prepayment invoicing includes: 
+## Overview of the prepayment invoice process
+
+The process for customer prepayment invoicing includes the following steps.
+
 1. Define a prepayment value on the sales order.
 2. Confirm and post a prepayment invoice.
 3. Settle the prepayment invoice.
-4. Apply the prepayment invoice to the final invoice.  
+4. Apply the prepayment invoice to the final invoice.
 
-### Create prepayment proposal 
+## Create a prepayment proposal
 
-When you create a sales order, you can define the prepayment amount by following these steps: 
-1. Go to the sales order, **Invoice** > **Prepayment** and click **Payment proposal**.
-2. Select the prepayment type.
- - **Percentage** - If you select **Percentage**, the **Prepayment value** field is enabled. This field represents the percentage of the total sales order amount that is required as the prepayment. The calculated prepayment amount is displayed in the **Total prepayment amount** field.
- - **Fixed** - If you select **Fixed**, the **Total prepayment amount** field is enabled and you enter the prepayment amount directly. A value higher than the sales order amount isn't allowed.    
-3. In the **Sales category** field, select the appropriate sales category that determines the revenue account according to the posting settings. 
+When you create a sales order, you can define the prepayment amount by following these steps.
 
-### Generate prepayment invoices 
+1. From the sales order, go to **Invoice** \> **Prepayment**, and select **Payment proposal**.
+2. Select the prepayment type:
 
-After the prepayment proposal is confirmed, generate the prepayment invoice by: 
-1. Go to **Invoice** > **Prepayment**, click **Prepayment invoice**.
-2. Review and post prepayment invoice.
-3. Click **Post**. The open customer transaction is created, and the prepayment invoice status is **Pending**. 
+    - **Percentage** – If you select **Percentage**, the **Prepayment value** field is enabled. This field represents the percentage of the total sales order amount that is required as a prepayment. The **Total prepayment amount** field shows the calculated prepayment amount.
+    - **Fixed** – If you select **Fixed**, the **Total prepayment amount** field is enabled, and you manually enter the prepayment amount. The amount that you enter can't exceed the sales order amount.
 
-### Settle the prepayment invoice 
+3. In the **Sales category** field, select the appropriate sales category that determines the revenue account according to the posting settings.
 
-When you receive the payment for the prepayment, the customer payment journal is posted to settle the prepayment invoice amount. After prepayment invoice settlement, the status of the prepayment invoice is **Received** and **Apply prepayment** is available.  
+## Generate a prepayment invoice
 
-### Post the invoice with prepayment application 
+After the prepayment proposal is confirmed, generate the prepayment invoice by following these steps.
 
-Click **Apply prepayment**. The **Apply prepayment page opens. Apply the prepayment by selecting the prepayment from **Select prepayments to apply** list and click **Apply prepayment**. 
+1. Go to **Invoice** \> **Prepayment**, and select **Prepayment invoice**.
+2. Review and post the prepayment invoice.
+3. Select **Post**. The open customer transaction is created, and the status of the prepayment invoice is **Pending**.
 
-After posting the sales order invoices, the selected prepayment is applied to the invoice when **Automated prepayment settlement posting** is successfully executed. 
+## Settle the prepayment invoice
 
- 
+When you receive the payment for the prepayment, the customer payment journal is posted to settle the prepayment invoice amount. After prepayment invoice settlement, the status of the prepayment invoice is **Received**, and the **Apply prepayment** button becomes available.
+
+## Post the invoice and apply the prepayment
+
+Select **Apply prepayment**. On the **Apply prepayment** page, select the prepayment in the **Select prepayments to apply** list, and then select **Apply prepayment**.
+
+After the sales order invoice is posted, the selected prepayment is applied to the invoice when the **Automated prepayment settlement posting** background process is successfully run.
