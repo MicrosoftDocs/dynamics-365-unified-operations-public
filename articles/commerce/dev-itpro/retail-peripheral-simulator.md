@@ -25,15 +25,17 @@ The peripheral simulator is a utility that Microsoft provides as part of Microso
 - **POS simulator** - The POS simulator tests the compatibility of physical peripheral devices without having to deploy the POS client.
 
 ## Install the peripheral simulator
-
-1. Go to **Retail and Commerce** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.
-2. Click **Download**, and then click **PeripheralSimulator**.
+The peripheral simulator package file can be found under the Shared Asset library in Microsoft Dynamics Lifecycle Services (LCS)
+1. Sign in to the application.
+2. Go to **Shared Asset Library**
+3. Select **Retail Self-service package**
+4. Click to download the **Commerce Peripheral Simulator** version that corresponds with the Store Commerce version you intend to use.
 
     > [!NOTE]
     > You must turn off pop-up blockers before you can download the peripheral simulator.
 
-3. After the download is completed, open the **Downloads** folder, and double-click **VirtualPeripherals.msi** to start the installer.
-4. Install the peripheral simulator by using the default settings.
+7. After the download is completed, open the **Downloads** folder, and double-click **VirtualPeripherals.msi** to start the installer.
+8. Install the peripheral simulator by using the default settings.
 
 Besides the peripheral simulator, you must install the common control objects from Monroe Consulting Services. Otherwise, the peripheral simulator won't work correctly. To download the common control objects, go to <http://monroecs.com/oposccos_current.htm>.
 
