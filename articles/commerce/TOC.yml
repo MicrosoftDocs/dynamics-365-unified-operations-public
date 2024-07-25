@@ -180,6 +180,14 @@
           href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-users-preferred-time-zone.md?context=/dynamics365/context/commerce
         - name: Understand Lifecycle Services
           href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json?context=/dynamics365/context/commerce
+      - name: Copilot in Dynamics 365 Commerce
+        items:
+        - name: Store report insights using Copilot
+          href: articles/commerce/pos-report-insights-using-copilot.md
+        - name: Statement posting summaries by Copilot
+          href: articles/commerce/copilot-statement-summaries.md
+        - name: Copilot in Sitebuilder for product enrichment on eCommerce websites
+          href: articles/commerce/copilot-site-builder.md
       - name: Implementation lifecycle management
         items:
         - name: Implementation lifecycle management home page
