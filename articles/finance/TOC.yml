@@ -430,6 +430,8 @@
               href: accounts-receivable/tasks/post-recurring-free-text-invoices.md
             - name: Create sales order invoices
               href: accounts-receivable/tasks/create-sales-order-invoices.md
+            - name: Create customer prepayment invoice
+              href: accounts-receivable/customer-prepayment-invoice.md
             - name: Create a customer invoice
               href: accounts-receivable/configure-customer-invoices.md
             - name: Improve performance of Sales entities
