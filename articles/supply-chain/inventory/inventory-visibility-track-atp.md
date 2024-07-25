@@ -1,5 +1,5 @@
 ---
-title: Track time-series inventory in Inventory Visibility
+title: Track time-series inventory in Inventory Visibility (preview)
 description: This article describes how to set up Dynamics 365 Supply Chain Management inventory time-series data integration with Inventory Visibility so that you can query the projected inventory by date and calculate ATP
 author: yufeihuang
 ms.author: yufeihuang
@@ -11,11 +11,17 @@ ms.custom:
   - bap-template
 ---
 
-# Integrate Supply Chain Management ATP with Inventory Visibility
+# Integrate Supply Chain Management ATP with Inventory Visibility (preview)
+
+[!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!--KFM: Preview until 10.0.41 GA -->
 
 The Inventory Visibility service enables external systems to query Dynamics 365 Supply Chain Management for inventory changes occurring up to 180 days in the future. As a result, users working in an external system can view future inventory availability details and make accurate projections for when orders can be delivered. The Inventory Visibility service can import information about planned inbound and outbound inventory changes together with the related dates. Available-to-promise (ATP) functionality in Inventory Visibility can then query these time-series based inventory changes and calculate your omnichannel ATP. External systems can query and retrieve this information from Inventory Visibility in near real time by calling its API.
 
 The *Inventory Visibility integration with ATP* feature described in this article adds support for out-of-the-box ATP integration between Supply Chain Management and Inventory Visibility. It makes it easy to bring expected inventory issue and receipts with time-series information from Supply Chain Management into Inventory Visibility, and to post updated scheduling information back to Supply Chain Management.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
