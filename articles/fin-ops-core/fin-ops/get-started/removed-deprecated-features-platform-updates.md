@@ -37,7 +37,7 @@ Detailed information about objects in finance and operations apps can be found i
 | **What do you need to do?**         | We strongly recommend that any customers with dependencies on the GraphAPIClient class (responsible for making Azure Active Directory Graph calls) migrate to the MicrosoftGraphClient (responsible for making Microsoft Graph calls) as soon as possible to avoid service disruptions. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | End of support date is targeted for Oct 2024. |
+| **Status**                         | The Support for Azure Active Directory Graph will end in PU66. |
 
 ### SharePoint integration authentication using a Microsoft-managed high-trust connection
 
