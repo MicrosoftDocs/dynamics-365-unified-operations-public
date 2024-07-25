@@ -223,7 +223,7 @@ At install time, it's possible that certain assemblies related to the virtual pe
 
 The POS simulator lets device manufacturers, independent software vendors (ISVs), and retailers test peripheral devices without having to deploy the POS. By using the same business logic for peripherals as the Store Commerce app and the standalone hardware station, the POS simulator can determine device driver compatibility with the POS as a standalone utility. Therefore, device selection can occur independently of POS setup and deployment.
 
-The POS simulator is also provided as a standalone utility that is independent of Commerce. As a standalone utility, the POS simulator is primarily used to test peripheral device compatibility. Only devices that are tested by using the POS simulator are acceptable for new deployments of the POS. Testing should be driven by the device manufacturers themselves. Parts of the POS simulator overview are intended to explain how the POS simulator is used for compatibility testing. Manufacturers that are interested in testing their devices for compatibility with the POS or standalone hardware station should send an email to drpc@microsoft.com to request information about the program.
+The POS simulator is also provided as a standalone utility that is independent of Commerce. As a standalone utility, the POS simulator is primarily used to test peripheral device compatibility. Testing should be driven by the device manufacturers themselves.
 
 ### Using the POS simulator
 
@@ -449,79 +449,6 @@ The **Payment info** tab contains data that is received from the payment connect
 - **Payment SDK data** – Additional data that the payment software development kit (SDK) can provide, such as the authorization code and other data that the payment processor provides.
 - **Signature data** – Hexadecimal signature data that is provided by the device.
 - **Payment errors** – Any errors that occurred during the authorization request.
-
-## Instructions for device manufacturers
-
-To submit a device so that it can be listed for compatibility with Commerce,  follow these steps.
-
-1. On the **Settings** tab, specify all contact information that is requested. All fields are required. The personal contact information is for Microsoft internal use. It will be used only if there are issues with devices that have been submitted as compatible.
-2. For each device, on the **Devices** tab, set up the device, and provide values for all fields. For each permutation, a new device must be specified. For example, if a given device mode is tested for USB and serial, two compatibility reports must be submitted. Any variance from one device to the next should be indicated. Then, when devices are listed for compatibility, very specific information can be provided to people who implement the devices. The more information that can be provided about device compatibility, the higher the success rate for implementations and the fewer support issues will be raised.
-3. After you've entered the required information for devices and settings, test the device.
-
-    1. Clear the log for the device that you're testing.
-    2. Click **Self-test**.
-    3. When a test has been completed successfully, export the test results, and save them. Give the file a name that will make the test easy to identify. We suggest that you use an abbreviated form of the manufacturer's name and the device model as the file name.
-
-The following example shows the data that is included in the exported file.
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>  
-<Report xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Microsoft.Dynamics.Commerce.VirtualPeripherals.Modules">  
-   <CreationDateTime>05/27/2017 19:34:50</CreationDateTime>  
-   <ManufacturerInfo>  
-    <ManufacturerName>Contoso </ManufacturerName>  
-    <ManufacturerWebsite>http://www.contoso.com</ManufacturerWebsite>  
-    <SupportEmail>support@contoso.com</SupportEmail>  
-    <SupportTelephoneNumber>555-555-5555</SupportTelephoneNumber>  
-    <SupportWebsite>http://www.contoso.com</SupportWebsite>  
-    <TechnicalContactEmail>karen@contoso.com</TechnicalContactEmail>  
-    <TechnicalContactName>Karen Berg</TechnicalContactName>  
-    <TechnicalContactPhone>555-555-5555</TechnicalContactPhone>  
-  </ManufacturerInfo>  
-  <DeviceInfo i:type="OposDevice">  
-   <DeviceDriverName>MockOPOSDrawer1</DeviceDriverName>  
-   <DeviceModel>Model1</DeviceModel>  
-   <DriverVersion>V2</DriverVersion>  
-   <FirmwareVersion>V1</FirmwareVersion>  
-  <HardwareType>OPOS</HardwareType>  
-  <ConnectionType>USB</ConnectionType>  
-  <DriverDownloadLink>htttp://model1.drivers.contoso.com</DriverDownloadLink>  
- <DeviceInfo i:type="OposDevice">
- <LogItems>  
-  <LogMessage>  
-     <LogType>Info</LogType>  
-     <Message>The cash drawer is opened successfully.</Message>  
-     <Timestamp>05/27/2017 19:48:14</Timestamp>  
-  </LogMessage>  
-  <LogMessage>  
-     <LogType>Info</LogType>  
-     <Message>The cash drawer open operation elapsed time: 00:00:00.053</Message>  
-     <Timestamp>05/27/2017 19:48:14</Timestamp>  
-  </LogMessage>  
-  <LogMessage>  
-      <LogType>Info</LogType>  
-      <Message>The cash drawer status check operation is completed successfully.</Message>  
-      <Timestamp>05/27/2017 19:48:14</Timestamp>  
-   </LogMessage>  
-   <LogMessage>  
-      <LogType>Info</LogType>  
-      <Message>The cash drawer status check operation elapsed time: 00:00:00.045</Message>  
-      <Timestamp>05/27/2017 19:48:14</Timestamp>  
-   </LogMessage>  
-      <LogMessage>  
-      <LogType>Info</LogType>  
-      <Message>Test finished successfully.</Message>  
-      <Timestamp>05/27/2017 19:48:14</Timestamp>  
-    </LogMessage>  
-  </LogItems>  
-</Report>
-```
-
-Eventually, the data that is included in the report (except personal contact information) will be listed on a device compatibility website. It will also be listed in design and deployment tools that are used to manage customer environments.
-
-Successful logs should be sent to drpc@microsoft.com. Include the manufacturer’s name and the device model in the subject line.
-
-For support if you're performing compatibility tests, and for other inquiries, send an email to drpc@microsoft.com.
 
 ## Additional resources
 
