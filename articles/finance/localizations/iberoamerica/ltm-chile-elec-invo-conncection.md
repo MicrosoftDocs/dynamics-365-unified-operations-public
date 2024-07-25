@@ -59,7 +59,7 @@ In case of Chile, we interact with Edicom at least three times in the pipeline, 
 > [!NOTE]
 > The simplification of configurations of common parameters - it is no longer needed to go to each action and feature setup, and specify these common connection parameters repeatedly - using the **Feature parameters** tab will only be availavle starting from version 10.0.41.
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > The **Chilean electronic invoice (CL)** feature is provided by Microsoft. Before usage, it requires additional configuration as described in this article. For information about how to configure invoicing features and apply changes, see [Work with feature setups](../global/e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they're processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Chile.
 
 1. Import the latest version of the **Chilean electronic invoice (CL)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md). Once you import the feature from Dataverse, this is how it will look.
@@ -68,21 +68,19 @@ In case of Chile, we interact with Edicom at least three times in the pipeline, 
 1. Create a copy of the imported Globalization feature, and select your configuration provider. For more information, see [Create a Globalization feature](../global/e-invoicing-create-new-globalization-feature.md).
 1. On the **Versions** tab, verify that the **Draft** version is selected.
 1. Specify values on the **Feature parameters** tab. These are connection and integration parameters to interoperate with Edicom's API:
-- Select **Application**, and then enter the service ID number that you obtained.
-- Select **Domain**, and then enter the same service ID number.
-- Select **Get status schema name**, and then enter the schema name.
-- Select **Group**, and then enter the group code that you obtained.
-- Select **Signed XML schema name**, and then enter the schema name.
-- Select **Destination name**, and then enter the service ID number concatenated with the string _EDIWIN. For example, if the service ID number is 123456, enter 123456_EDIWIN.
-- Select **Submit invoice schema name**, and then enter the schema name.
-- Select **Auth token**, and then select the name of the secret that you created for the token.
-- Select **Web service URL** and check the web-address.
-
-On the screenshot below you can see these feature parameters with the values provided to Microsoft by Edicom for our testing. These values will differ for you and will be provided by Edicom when you onboard.
-    ![Screenshot of the outbound pipeline.](ltm-chl-e-invoice-glob-feature-parameters.png)
-
-    
+	- Select **Application**, and then enter the service ID number that you obtained.
+	- Select **Domain**, and then enter the same service ID number.
+	- Select **Get status schema name**, and then enter the schema name.
+	- Select **Group**, and then enter the group code that you obtained.
+	- Select **Signed XML schema name**, and then enter the schema name.
+	- Select **Destination name**, and then enter the service ID number concatenated with the string _EDIWIN. For example, if the service ID number is 123456, enter 123456_EDIWIN.
+	- Select **Submit invoice schema name**, and then enter the schema name.
+	- Select **Auth token**, and then select the name of the secret that you created for the token.
+	- Select **Web service URL** and check the web-address.
 1. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, you must complete, publish, and deploy the feature as described in [Complete, publish, and deploy a Globalization feature](../global/e-invoicing-complete-publish-deploy-globalization-feature.md).
+
+On the screenshot below you can see these feature parameters with the values provided to Microsoft by Edicom for testing. These values will differ for you and will be provided by Edicom when you onboard.
+    ![Screenshot of the feature parameters.](ltm-chl-e-invoice-glob-feature-parameters.png)
 
 ### Outbound flow pipeline
 To review the processing pipeline, go to the **Feature setup** upder the **Setups** tab, select the desired derived document type, and click **Edit**. The outbound flow consist of the following actions:
