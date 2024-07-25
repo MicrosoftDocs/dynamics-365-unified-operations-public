@@ -2,14 +2,15 @@
 title: Debug Store Commerce extensions using Visual Studio Code
 description: This article describes how to debug Microsoft Dynamics 365 Commerce Store Commerce extensions by using Visual Studio Code.
 author: josaw1
-ms.date: 04/21/2022
-ms.topic: article
+ms.date: 07/25/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: asharchw
 ms.search.validFrom: 2022-03-30
-ms.dyn365.ops.version: AX 10.0.25
+ms.custom: 
+  - bap-template
 ---
 
 # Debug Store Commerce extensions using Visual Studio Code
