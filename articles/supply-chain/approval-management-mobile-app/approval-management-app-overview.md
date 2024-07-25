@@ -16,27 +16,27 @@ ms.custom:
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Many businesses make use of approval workflows to make sure new requests (such as proposed purchase requisitions and purchase orders) are valid, in-budget, and in line with all business practices and standards. Unfortunately, this extra layer of security can sometimes add delays to the purchasing process. Therefore, Dynamics 365 Supply Chain Management now provides a mobile approval experience, which adds flexibility, efficiency, resiliency, and responsiveness to the approval process.
+Many businesses use approval workflows to ensure that new requests (such as proposed purchase requisitions and purchase orders) are valid, within budget, and in line with all business practices and standards. Unfortunately, this extra layer of security can sometimes add delays to the purchasing process. Therefore, Dynamics 365 Supply Chain Management now provides a mobile approval experience that adds flexibility, efficiency, resiliency, and responsiveness to the approval process.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 The Approvals Management mobile app provides the following capabilities for managing approval requests:
 
-- View requests assigned to you.
+- View requests that are assigned to you.
 - Approve or deny requests.
 - Delegate requests to another approver.
 - Ask requesters to make changes.
 
-The following image shows an example of the Approvals Management mobile app being used to manage multiple purchase order requests.
+The following illustration shows an example where the Approvals Management mobile app is being used to manage multiple purchase order requests.
 
-:::image type="content" source="media/approval-app-list-example.png" alt-text="User interface elements on list pages without multiselect" lightbox="media/approval-app-list-example.png":::
+:::image type="content" source="media/approval-app-list-example.png" alt-text="Screenshot that shows multiple purchase orders selected for action in the Approvals Management mobile app." lightbox="media/approval-app-list-example.png":::
 
 > [!NOTE]
-> Use of the Approvals Management mobile app is covered by the *Dynamics 365 Supply Chain Management* user licenses. Using the app requires a *Dynamics 365 Operations – Activity* license. Licensing terms are subject to change without notice. For complete and up-to-date licensing information, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
+> Use of the Approvals Management mobile app is covered by the *Dynamics 365 Supply Chain Management* user licenses and requires a *Dynamics 365 Operations – Activity* license. Licensing terms are subject to change without notice. You can find complete and up-to-date licensing information in the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
 The Approvals Management mobile app replaces the now-deprecated [Purchase order approval mobile workspace](../procurement/purchase-order-mobile-workspace.md).
 
 ## Next steps
 
-- [Onboard the Approvals Management mobile app (Preview)](onboard-approval-app.md)
+- [Onboard the Approvals Management mobile app](onboard-approval-app.md)
 - [Manage approvals using the Approvals Management mobile app](manage-approvals.md)
