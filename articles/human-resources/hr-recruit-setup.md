@@ -72,7 +72,7 @@ To configure the Recruiting app in Dynamics 365 Finance, follow these steps.
 
 1. Refresh the page.
 
-The **Recruiting** workspace is now available in Dynamics 365 Finance.
+To see Recruiting requests and candidates, go to **Human Resources** > **Recruitment**.
 
 ## Install the Recruiting add-on app in Dataverse
 
