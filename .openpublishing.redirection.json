@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/azure-data-explorer.md",
+      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights",
+      "redirect_document_id": "false"
+    }, 
+    {
       "source_path": "articles/human-resources/hr-admin-setup-provision.md",
       "redirect_url": "dynamics365/human-resources/hr-admin-setup-provision-fo",
       "redirect_document_id": "false"
