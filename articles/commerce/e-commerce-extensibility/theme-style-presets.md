@@ -81,41 +81,19 @@ The following example shows a style preset instance file for a dark theme. The f
     "$type": "styleDefinition",
     "name": "modern-dark",
     "friendlyName": "modern dark",
-    "description": "This is a spring modern light theme template style preset",
+    "description": "This is a spring modern dark theme template style preset",
     "global": {
-        "brandPrimaryColor": {
-            "friendlyName": "Brand primary",
-            "description": "Brand primary color",
-            "type": "string",
-            "format": "color",
-            "default": "#AAAAAA",
-            "group": "Colors"
-        },
-        "brandSecondaryColor": {
-            "friendlyName": "Brand secondary",
-            "description": "Brand secondary color",
-            "type": "string",
-            "format": "color",
-            "default": "#CCCCCC",
-            "group": "Colors"
-        },
-        "textDefaultColor": {
-            "friendlyName": "Text default",
-            "description" : "Text default color",
-            "type": "string",
-            "format": "color", 
-            "default": "#555555",
-            "group": "Colors" 
-        },
-        "backgroundDefaultColor": {
-            "friendlyName": "Background default",
-            "description" : "Background default color",
-            "type": "string",
-            "format": "color",
-            "default": "#000000",
-            "group": "Colors"         
-        },
-        ...
+        "brandPrimaryColor": "#AAAAAA",
+        "brandSecondaryColor": "#606060",
+        "borderRadius": "0"
+    },
+    "modules": {
+        "header": {
+            "categoryColor": "#000",
+            "expandedCategoryColor": "#000"
+        }
+    }
+}
 ```
 
 ## Localize style preset names and descriptions
