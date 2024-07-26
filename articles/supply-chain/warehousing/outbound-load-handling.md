@@ -16,72 +16,77 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the warehouse handling process for outbound loads.
+This article describes the warehouse handling process for outbound loads for sales orders, transfer orders, and outbound shipment orders.
 
-An *outbound load* is a set of shipments from a warehouse destined for various locations, such as customer addresses or other warehouses. Usually, it's linked to a physical delivery vehicle like a shipping container or truck. It's a component of the warehouse management outbound procedure, which involves organizing, picking, packaging, and sending goods to complete orders. Outbound loads can be formed either manually or automatically, and their creation depends on predefined outbound operations that influence their dependencies and functional effects.
+An *outbound load* is a set of shipments from a warehouse that are destined for various locations, such as customer addresses or other warehouses. Usually, outbound loads are linked to a physical delivery vehicle, such as a shipping container or truck.
 
-Each outbound load can be associated with one or more order line quantities for sales orders, transfer orders, and outbound shipment orders. Your system might also contain transportation plans. For more information about how to create and manage outbound transportation, see [Transportation management overview](../transportation/transportation-management-overview.md).
+An outbound load is a component of the warehouse management outbound procedure, which involves organizing, picking, packaging, and sending goods to complete orders. Outbound loads can be formed either manually or automatically. Their creation depends on predefined outbound operations that influence their dependencies and functional effects.
 
-## <a name="outbound-shipment-policies"></a> Outbound shipment processing policies
+Each outbound load can be associated with one or more order line quantities for sales orders, transfer orders, and outbound shipment orders. Your system might also contain transportation plans. Learn more about how to create and manage outbound transportation in [Transportation management overview](../transportation/transportation-management-overview.md).
 
-To manage the process of shipping out your orders, you must apply an *Outbound shipment processing policy* that has the desired flow set up for your shipments.
+## <a name="outbound-shipment-policies"></a>Outbound shipment processing policies
 
-The following options are set up on the **Outbound shipment processing policies** page (**Warehouse management \> Setup \> Shipping \> Outbound shipment processing policies**):
+To manage the process of shipping your orders, you must apply an *outbound shipment processing policy* where the desired flow is set up for your shipments.
 
-- **Enforce shipment to order matching** – Set to *Yes* to allow just one shipment to be associated to each demand order. You must set this to *Yes* when using [Warehouse management only mode with externally managed warehouse processing](wms-only-mode-external-shared-warehouse.md) because that functionality is set up on the source system related to the externally managed warehouse.
-- **Fill entire shipment** – This setting lets you control whether warehouse wave processing will only proceed with shipments when it's possible to create warehouse work for the full quantities of the shipment lines. The default value is *Respect customer settings*, which adheres to the **Fill entire shipment** setting defined for each customer.
+The following settings are configured on the **Outbound shipment processing policies** page (**Warehouse management** \> **Setup** \> **Shipping** \> **Outbound shipment processing policies**):
 
-## Define outbound shipment processing policy defaults
+- **Enforce shipment to order matching** – Set this option to *Yes* to allow just one shipment to be associated with each demand order. If you use [Warehouse management only mode with externally managed warehouse processing](wms-only-mode-external-shared-warehouse.md), you must set this option to *Yes*, because that functionality is set up on the source system that is related to the externally managed warehouse.
+- **Fill entire shipment** – Use this field to control whether warehouse wave processing proceeds with shipments only when warehouse work can be created for the full quantities of the shipment lines. The default value is *Respect customer settings*. When that value is used, the **Fill entire shipment** setting that is defined for each customer is respected.
 
-Each shipment can be assigned an *outbound shipment processing policy*. The default policy can be assigned in any of several ways:
+## Define default outbound shipment processing policies
 
-- **By order** – Policies set up on outbound orders are assigned to all shipments created from those orders.
-- **By customer** – When a policy is assigned to a customer, then outbound orders created for that customer will inherit that policy, which will then propagate to shipments created from those orders.
-- **By source system** – This is related to [Warehouse management only mode](wms-only-mode-overview.md). All shipments coming from a source system will inherit the policy that was assigned to that system.
+An outbound shipment processing policy can be assigned to each shipment. The default policy can be assigned in any of the following ways:
+
+- **By order** – Policies that are set up on outbound orders are assigned to all shipments that are created from those orders.
+- **By customer** – A policy that is assigned to a customer is inherited by outbound orders that are created for that customer. It's then propagated to shipments that are created from those orders.
+- **By source system** – This method is related to [Warehouse management only mode](wms-only-mode-overview.md). All shipments that come from a source system inherit the policy that is assigned to that system.
 
 ## How outbound loads are created, registered, and shipped
 
-The following illustration provides an overview of how outbound loads for sales orders (as an example) are managed. If the order lines must be processed by an externally managed warehouse, then the outbound flow will separate and proceed exclusively under the Warehouse management only mode process through *outbound shipment orders*. For more information about  this method, see [Warehouse management only mode with external shared warehouses](wms-only-mode-external-shared-warehouse.md).
+The following illustration provides an overview of the outbound load handling process. It uses outbound loads for sales orders as an example. If the order lines must be processed by an externally managed warehouse, the outbound flow branches off and proceeds exclusively through the Warehouse management only mode process via *outbound shipment orders*. Learn more about this method in [Warehouse management only mode with external shared warehouses](wms-only-mode-external-shared-warehouse.md).
 
-:::image type="content" source="media/outbound-load-process.svg" alt-text="The outbound load handling process." lightbox="media/outbound-load-process.svg":::
+:::image type="content" source="media/outbound-load-process.svg" alt-text="Diagram of the outbound load handling process." lightbox="media/outbound-load-process.svg":::
 
 ### Sales order creation
 
-This process begins when [sales orders are created](../sales-marketing/tasks/create-sales-orders.md). [Reservations](../inventory/reserve-inventory-quantities.md) for order lines can be set up to occur automatically, performed manually, or delayed according to system setup preferences.
+This process begins when [sales orders are created](../sales-marketing/tasks/create-sales-orders.md). [Reservations](../inventory/reserve-inventory-quantities.md) for order lines can be set up to occur automatically, they can be performed manually, or they can be delayed according to system setup preferences.
 
-### Create load before release to warehouse
+### Create a load before the release to a warehouse
 
-An existing sales order is required to generate an outbound load. Nonetheless, it's possible to establish the outbound loads prior to executing the [release to warehouse](#release-to-warehouse) procedure.
+A sales order must exist before an outbound load can be generated. Nevertheless, outbound loads can be defined before the [release to warehouse](#release-to-warehouse) procedure is run.
 
-The [Outbound load planning workbench](tasks/use-load-planning-workbench-plan-loads-shipments.md) and the [Load building workbench](../transportation/tasks/load-building-workbench.md) processes are available for choosing the order lines and quantities that will comprise a load.
+The [Outbound load planning workbench](tasks/use-load-planning-workbench-plan-loads-shipments.md) and [Load building workbench](../transportation/tasks/load-building-workbench.md) processes can be used to select the order lines and quantities that comprise a load.
 
 ### <a name="release-to-warehouse"></a>Release to warehouse
 
-The [release to warehouse](release-to-warehouse-process.md) process creates *load lines* and groups them into *shipments*. The shipment consolidation process allows for automated [shipment consolidation](about-shipment-consolidation-policies.md). Shipments related to an [externally managed warehouse](wms-only-mode-external-shared-warehouse.md) are locked by setting **Outbound shipment processing ownership** to *External* until updated order data is returned.
+The [release to warehouse](release-to-warehouse-process.md) process creates *load lines* and groups them into *shipments*. The shipment consolidation process allows for automated [shipment consolidation](about-shipment-consolidation-policies.md). Shipments that are related to an [externally managed warehouse](wms-only-mode-external-shared-warehouse.md) are locked by setting the **Outbound shipment processing ownership** value to *External* until updated order data is returned.
 
 ### Wave and warehouse work processing
 
-The system generates picking work through [*wave processing*](wave-processing.md) and can create loads when required. An available [*wave template*](wave-templates.md) must exist to determines whether the [advanced load building](advanced-load-building-during-wave.md) method is used.
+The system generates picking work through [*wave processing*](wave-processing.md) and can create loads as required. An available [*wave template*](wave-templates.md) must exist to determine whether the [advanced load building](advanced-load-building-during-wave.md) method is used.
 
-*Work templates* determine how work is performed for each warehouse process, and *location directives* specify the pick and put locations for inventory movements. For more information, see [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md).
+*Work templates* determine how work is performed for each warehouse process. *Location directives* specify the pick and put locations for inventory movements. Learn more in [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md).
 
-Warehouse *work* is used to control any warehouse operation performed by a warehouse worker or [material handling system](mhax.md). Typically, warehouse work operations consist of at least two consecutive actions: a *pick* and a *put* of inventory.
+Warehouse *work* is used to control any warehouse operation that a warehouse worker or [material handling system](mhax.md) performs. Typically, warehouse work operations consist of at least two consecutive actions: a *pick* and a *put* of inventory.
 
 ### Outbound load shipment confirmation
 
-When all the warehouse tasks for a load have been completed, a subsequent shipment confirmation procedure can be executed, which updates the **Load status** to *Shipped* and changes the **Load packing slip background posting status** from *None* to *Queued*. This process can function as part of an automated [background process](confirm-outbound-shipments-from-batch-jobs.md), depending on the configuration.
+When all the warehouse tasks for a load are completed, a shipment confirmation procedure can be run. This procedure updates the **Load status** value to *Shipped*. It also changes the **Load packing slip background posting status** value from *None* to *Queued*. This process can be run as part of an automated [background process](confirm-outbound-shipments-from-batch-jobs.md), depending on the configuration.
 
 > [!NOTE]
-> When using the [confirm and transfer](confirm-and-transfer.md) capability, the system can create a new load for any load lines that weren't fully picked.
+> When the [confirm and transfer](confirm-and-transfer.md) capability is used, the system can create a new load for any load lines that weren't fully picked.
 
 ### <a name="load-packing-slip-posting"></a>Load packing slip posting
 
-When the *Packing slip* from a load is processed, the system updates the related sales order line transactions to *Deducted*, which makes it possible to start the invoicing process. The *Load packing slip posting* scheduled task (**Warehouse management \> Periodic \> Load packing slip posting**) processes *Shipped* outbound loads that have **Load packing slip background posting status** set to *Queued*. Upon successful posting, the system change the status to *None*. If any errors occur during posting, the status is instead changed to *Error* (you can check the details in the generated batch job info log for more information about failed postings). The background posting procedure requires a status of *Queued*, but it's possible to manually post a load packing slip even if an *Error* is indicated. Upon successful posting, the status is changed to *None*.
+When the *packing slip* from a load is processed, the system updates the related sales order line transactions to *Deducted*. At that point, the invoicing process can begin. The *Load packing slip posting* scheduled task (**Warehouse management** \> **Periodic** \> **Load packing slip posting**) processes *Shipped* outbound loads where the **Load packing slip background posting status** value is set to *Queued*. After successful posting, the system changes the status to *None*. If any errors occur during posting, the status is changed to *Error* instead. (For more information about failed postings, you can review the details in the information log that is generated for the batch job.)
 
-For the *Load packing slip posting* task to operate in the background, you must make appropriate settings on the **Packing slip posting parameters** page (**Warehouse management \> Setup \> Inventory \> Packing slip posting parameters**). Remember that if printing is included in this process, you should avoid printing to screen because this task executes in the background within a batch job.
+Although the background posting procedure requires a status of *Queued*, a load packing slip can be manually posted even if the status is *Error*. After successful posting, the status is changed to *None*.
+
+To enable the *Load packing slip posting* task to work in the background, you must configure appropriate settings on the **Packing slip posting parameters** page (**Warehouse management** \> **Setup** \> **Inventory** \> **Packing slip posting parameters**). Because this task is run in the background, within a batch job, you should avoid printing to the screen if printing is included in the process.
 
 > [!TIP]
-> By setting the **Packing slip creation policy** to *Shipment* for the load, and supplying each associated shipment with a **Preallocated packing slip ID** and **Preallocated packing slip document date** in the *Packing slip posting parameters* section, enables automatic distribution of sales packing slips for each shipment based on the predetermined values.
-> This process applies automatically when running the [externally managed warehouse](wms-only-mode-external-shared-warehouse.md) process.
+> To enable automatic distribution of sales packing slips for each shipment, based on the predetermined values, set the **Packing slip creation policy** value to *Shipment* for the load, and supply **Preallocated packing slip ID** and **Preallocated packing slip document date** values for each associated shipment in the *Packing slip posting parameters* section.
+>
+> This process automatically applies when the [externally managed warehouse](wms-only-mode-external-shared-warehouse.md) process is run.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
