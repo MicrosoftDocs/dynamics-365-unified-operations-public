@@ -183,13 +183,13 @@
       - name: Copilot in Dynamics 365 Commerce
         items:
         - name: Store report insights by Copilot
-          href: articles/commerce/pos-report-insights-using-copilot.md
+          href: pos-report-insights-using-copilot.md
         - name: Customer insights by Copilot
-          href: articles/commerce/pos-customer-insights-using-copilot.md
+          href: pos-customer-insights-using-copilot.md
         - name: Statement posting summaries by Copilot
-          href: articles/commerce/copilot-statement-summaries.md
+          href: copilot-statement-summaries.md
         - name: Copilot in Sitebuilder for product enrichment on eCommerce websites
-          href: articles/commerce/copilot-site-builder.md
+          href: copilot-site-builder.md
       - name: Implementation lifecycle management
         items:
         - name: Implementation lifecycle management home page
