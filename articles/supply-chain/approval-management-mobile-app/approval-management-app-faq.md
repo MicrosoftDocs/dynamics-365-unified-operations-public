@@ -24,7 +24,7 @@ The Approvals Management mobile app runs within the Power Apps mobile app. All p
 
 ## Why isn't anything shown when I sign in to the mobile app?
 
-If no features are visible in the Approvals Management mobile app, you probably lack the permissions that are required to access them. Access to each feature is controlled by security roles that are assigned to your user account in Dynamics 365 Supply Chain Management. Learn more in [Onboard the Approvals Management mobile app](onboard-approval-app.md).
+If no features are visible in the Approvals Management mobile app, you probably lack the permissions that are required to access them. Access to each feature is controlled by security roles that are assigned to your user account in Dynamics 365 Supply Chain Management. Learn more in [Onboard the Approvals Management mobile app](developer/onboard-approval-app.md).
 
 ## What versions of Supply Chain Management support the mobile app?
 

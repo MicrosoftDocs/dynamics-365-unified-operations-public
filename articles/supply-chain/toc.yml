@@ -375,7 +375,7 @@
       - name: Approvals Management mobile app overview
         href: approval-management-mobile-app/approval-management-app-overview.md
       - name: Onboard the Approvals Management mobile app
-        href: approval-management-mobile-app/onboard-approval-app.md
+        href: approval-management-mobile-app/developer/onboard-approval-app.md
       - name: Manage approvals using the Approvals Management mobile app
         href: approval-management-mobile-app/manage-approvals.md
       - name: Approvals Management mobile app FAQs and known issues

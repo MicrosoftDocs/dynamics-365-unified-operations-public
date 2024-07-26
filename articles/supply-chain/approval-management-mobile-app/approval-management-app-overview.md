@@ -38,5 +38,5 @@ The Approvals Management mobile app replaces the now-deprecated [Purchase order 
 
 ## Next steps
 
-- [Onboard the Approvals Management mobile app](onboard-approval-app.md)
+- [Onboard the Approvals Management mobile app](developer/onboard-approval-app.md)
 - [Manage approvals using the Approvals Management mobile app](manage-approvals.md)

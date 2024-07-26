@@ -32,7 +32,7 @@ The Approvals Management mobile app is available in all regions where Supply Cha
 
 ### Set up Dataverse for your Supply Chain Management environment
 
-The Approvals Management mobile app uses [Dataverse virtual tables that are connected to Supply Chain Management](../../fin-ops-core/dev-itpro/power-platform/virtual-entities-overview.md). Therefore, a Dataverse environment must be integrated with your Supply Chain Management environment. If Dataverse isn't already set up for your environment, follow the instructions in [Microsoft Power Platform integration with finance and operations apps](../../fin-ops-core/dev-itpro/power-platform/overview.md).
+The Approvals Management mobile app uses [Dataverse virtual tables that are connected to Supply Chain Management](../../../fin-ops-core/dev-itpro/power-platform/virtual-entities-overview.md). Therefore, a Dataverse environment must be integrated with your Supply Chain Management environment. If Dataverse isn't already set up for your environment, follow the instructions in [Microsoft Power Platform integration with finance and operations apps](../../fin-ops-core/dev-itpro/power-platform/overview.md).
 
 When you create the Dataverse environment where you want to install the app, be sure to enable Dynamics 365 apps.
 
@@ -90,13 +90,13 @@ Follow these steps to add the required security roles to a Supply Chain Manageme
 1. Select **OK** to apply your settings and close the dialog box.
 
 > [!NOTE]
-> User role organization assignments aren't supported. If one or more organizations that differ from a selected user's [default company](../../fin-ops-core/fin-ops/get-started/personalize-user-experience.md#system-wide-options-for-the-current-user) have been assigned to any security role that is set for that user, app installation fails.
+> User role organization assignments aren't supported. If one or more organizations that differ from a selected user's [default company](../../../fin-ops-core/fin-ops/get-started/personalize-user-experience.md#system-wide-options-for-the-current-user) have been assigned to any security role that is set for that user, app installation fails.
 
-Learn more about how to set up roles and security in Supply Chain Management in [Security roles](../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md#security-roles).
+Learn more about how to set up roles and security in Supply Chain Management in [Security roles](../../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md#security-roles).
 
 ## Set up approval workflows
 
-To enable the approval process for a document type, you must set up approval workflows for it in Supply Chain Management. Learn more in [Workflow system overview](../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
+To enable the approval process for a document type, you must set up approval workflows for it in Supply Chain Management. Learn more in [Workflow system overview](../../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
 
 After your approval workflows are set up, approval requests appear in the Approvals Management mobile app just as they do when the same user signs in to Supply Chain Management to manage approvals in the web client.
 
