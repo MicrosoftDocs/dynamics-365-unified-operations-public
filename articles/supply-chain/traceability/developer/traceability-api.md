@@ -85,7 +85,7 @@ To obtain an access token, follow these steps:
 
 ## Find the Traceability API URL
 
-To find the URL for accessing your Traceability API, follow the instructions provided in [API endpoint](traceability--configure.md#api-endpoint).
+To find the URL for accessing your Traceability API, follow the instructions provided in [API endpoint](traceability-configure.md#api-endpoint).
 
 ## Available APIs
 
@@ -291,7 +291,7 @@ Produce finished good **A** with component **B** and **C** by different events.
 
 If you were to post the example events shown previously, the Traceability Add-in would display the results shown in the following screenshot.
 
-:::image type="content" source="media/events-post-api-result-example.png" alt-text="Results of the events post example, shown in the Traceability Add-in" lightbox="media/events-post-api-result-example.png":::
+:::image type="content" source="../media/events-post-api-result-example.png" alt-text="Results of the events post example, shown in the Traceability Add-in" lightbox="media/events-post-api-result-example.png":::
 
 ## Single query API
 

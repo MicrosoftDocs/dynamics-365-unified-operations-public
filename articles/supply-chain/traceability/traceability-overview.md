@@ -38,3 +38,8 @@ For more help and support, we recommend joining the [Traceability group on Yamme
 
 - On the **Conversations** tab, you can read conversation threads, ask questions, share experiences, and connect with other users. The group includes consultants, Microsoft partners, Microsoft product team members, and other experts and users who can share tips, help answer questions, and provide guidance.
 - On the **Files** tab, you can find presentations, videos, tutorials, and hands-on labs that will help you learn more about Traceability.
+
+## Next steps
+
+- [Install and update Traceability](developer/traceability-install.md)
+- [Traceability app quick start](traceability-app-quick-start.md)

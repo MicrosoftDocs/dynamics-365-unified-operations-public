@@ -22,7 +22,7 @@ This article describes how to configure the Traceability Add-in.
 
 The Traceability Add-in for Supply Chain Management provides an API endpoint that you can use to exchange messages with external systems. It lets you integrate Traceability with other systems, such as enterprise resource planning (ERP) systems, warehouse management systems, and quality management systems. To use the API, you need to know the URL of the endpoint. To find it, follow these steps:
 
-1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
+1. [Open the Traceability app](../traceability-app-run.md) in Power Apps.
 1. On the left navigation pane, select **Settings** \> **System**.
 1. On the **General** tab of the System page, you can find the API endpoint URL in the **Endpoint** field. You can use the copy button to copy the URL to the clipboard.
 
@@ -32,7 +32,7 @@ If you have products that don't need to be traced, you can choose to exclude the
 
 To exclude or reinclude a product, follow these steps:
 
-1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
+1. [Open the Traceability app](../traceability-app-run.md) in Power Apps.
 1. On the left navigation pane, select **Settings** \> **Exclude product**.
 1. The **Exclude product** page opens, showing a list of currently excluded products (if any). Use the buttons in the toolbar to add, remove, or edit rows in the list. For each row, make the following settings:
     - **Company** – Specify the legal entity (company) of the product that shouldn't be traced.
@@ -55,7 +55,7 @@ You can make the following configuration settings for each activity:
 
 To configure activities that are traced in Traceability, follow these steps:
 
-1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
+1. [Open the Traceability app](../traceability-app-run.md) in Power Apps.
 1. On the left navigation pane, select **Settings** \> **Activity**.
 1. The **Activity** page opens, showing a list of activities currently configured for your environment. Use the buttons in the toolbar to add, remove, or edit rows in the list. For each row, make the following settings:
 

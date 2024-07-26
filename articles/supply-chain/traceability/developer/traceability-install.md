@@ -74,7 +74,7 @@ To install the Traceability app in Power Apps, complete the following steps in t
 
 ## Turn on features in Supply Chain Management
 
-To use Traceability together with Dynamics 365 Supply Chain Management, you must enable one or both of the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+To use Traceability together with Dynamics 365 Supply Chain Management, you must enable one or both of the following features in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - *Tracked components* – Enables component tracking in Supply Chain Management.
 - *(Preview) Traceability* – Integrates Traceability with the component tracking features in Supply Chain Management.
