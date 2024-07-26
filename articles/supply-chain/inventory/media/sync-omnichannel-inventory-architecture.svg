@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1322.7883"
+   height="578.36066"
+   overflow="hidden"
+   version="1.1"
+   id="svg54"
+   sodipodi:docname="sync-omnichannel-inventory-architecture.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs54" />
+  <sodipodi:namedview
+     id="namedview54"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.8119213"
+     inkscape:cx="668.16821"
+     inkscape:cy="303.60086"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg54" />
+  <g
+     id="g54"
+     transform="translate(-195.83179,-56.655738)">
+    <rect
+       x="0"
+       y="0"
+       width="1728"
+       height="720"
+       fill="#ffffff"
+       id="rect1" />
+    <rect
+       x="360.5"
+       y="74.500099"
+       width="336"
+       height="68"
+       stroke="#7f7f7f"
+       stroke-width="2.66667"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       id="rect2" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="24px"
+       transform="translate(378.958,115)"
+       id="text2">External Inventory Changes</text>
+    <rect
+       x="360.5"
+       y="313.5"
+       width="336"
+       height="300"
+       stroke="#7f7f7f"
+       stroke-width="2.66667"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       id="rect3" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="24px"
+       transform="translate(378.958,354)"
+       id="text3">IVS Business Layer</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(378.958,412)"
+       id="text4">Transaction processing:</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(378.958,441)"
+       id="text5">1.</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(414.958,441)"
+       id="text6">Create transactions</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(378.958,470)"
+       id="text7">2.</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(414.958,470)"
+       id="text8">Update Inventory Visibility</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(414.958,498)"
+       id="text9">service (cache)</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(378.958,527)"
+       id="text10">3.</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(414.958,527)"
+       id="text11">Aggregate transactions</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(378.958,556)"
+       id="text12">4.</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(414.958,556)"
+       id="text13">Sync to Supply Chain</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(414.958,585)"
+       id="text14">Management</text>
+    <rect
+       x="999.5"
+       y="74.500099"
+       width="336"
+       height="68"
+       stroke="#7f7f7f"
+       stroke-width="2.66667"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       id="rect14" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="24px"
+       transform="translate(1017.78,115)"
+       id="text15">Query inventory</text>
+    <rect
+       x="999.5"
+       y="313.5"
+       width="336"
+       height="68"
+       stroke="#7f7f7f"
+       stroke-width="2.66667"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       id="rect15" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="24px"
+       transform="translate(1017.78,354)"
+       id="text16">Inventory Visibility Service</text>
+    <rect
+       x="999.5"
+       y="516.5"
+       width="336"
+       height="97"
+       stroke="#7f7f7f"
+       stroke-width="2.66667"
+       stroke-linejoin="round"
+       stroke-miterlimit="10"
+       fill="none"
+       id="rect16" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="24px"
+       transform="translate(1017.78,557)"
+       id="text17">Dynamics 365 Supply Chain</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="24px"
+       transform="translate(1017.78,586)"
+       id="text18">Management</text>
+    <path
+       d="m 396.167,142.5 v 157.356 h -5.334 V 142.5 Z m 5.333,154.689 -8,16 -8,-16 z"
+       fill="#7f7f7f"
+       id="path18" />
+    <path
+       d="m 696.5,344.833 289.006,10e-4 v 5.333 H 696.5 Z m 286.34,-5.333 16,8 -16,8 z"
+       fill="#7f7f7f"
+       id="path19" />
+    <path
+       d="m 696.5,562.833 h 289.006 v 5.334 H 696.5 Z m 286.34,-5.333 16,8 -16,8 z"
+       fill="#7f7f7f"
+       id="path20" />
+    <path
+       d="M 2.66667,-1.6402e-6 2.66676,157.356 H -2.66657 L -2.66667,1.6402e-6 Z M 8.0001,154.689 l -7.999995013,16 -8.000004987,-16 z"
+       fill="#7f7f7f"
+       transform="matrix(1,0,0,-1,1036.5,313.189)"
+       id="path21" />
+    <path
+       d="M 2.66665,-0.00945555 3.10431,123.418 -2.22899,123.437 -2.66665,0.00945555 Z M 8.42815,120.733 0.484934,136.761 -7.57175,120.789 Z"
+       fill="#7f7f7f"
+       transform="matrix(1,0,0,-1,1036.5,518.261)"
+       id="path22" />
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(407.244,178)"
+       id="text22">Call</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(448.078,178)"
+       id="text23">API to update inventory</text>
+    <text
+       fill="#569cd6"
+       font-family="Consolas, Consolas_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="15px"
+       transform="translate(407.244,216)"
+       id="text24">/</text>
+    <text
+       fill="#569cd6"
+       font-family="Consolas, Consolas_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="15px"
+       transform="translate(415.244,216)"
+       id="text25">api</text>
+    <text
+       fill="#569cd6"
+       font-family="Consolas, Consolas_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="15px"
+       transform="translate(439.244,216)"
+       id="text26">/environment/{</text>
+    <text
+       fill="#569cd6"
+       font-family="Consolas, Consolas_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="15px"
+       transform="translate(551.244,216)"
+       id="text27">environmentId</text>
+    <text
+       fill="#569cd6"
+       font-family="Consolas, Consolas_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="15px"
+       transform="translate(655.244,216)"
+       id="text28">}/transaction/adjustment/bulk</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(1054.98,178)"
+       id="text29">Call inventory query API</text>
+    <text
+       fill="#569cd6"
+       font-family="Consolas, Consolas_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="15px"
+       transform="translate(1054.98,216)"
+       id="text30">/</text>
+    <text
+       fill="#569cd6"
+       font-family="Consolas, Consolas_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="15px"
+       transform="translate(1062.98,216)"
+       id="text31">api</text>
+    <text
+       fill="#569cd6"
+       font-family="Consolas, Consolas_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="15px"
+       transform="translate(1086.98,216)"
+       id="text32">/</text>
+    <text
+       fill="#569cd6"
+       font-family="Consolas, Consolas_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="15px"
+       transform="translate(1094.98,216)"
+       id="text33">environment/{</text>
+    <text
+       fill="#569cd6"
+       font-family="Consolas, Consolas_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="15px"
+       transform="translate(1198.98,216)"
+       id="text34">environmentId</text>
+    <text
+       fill="#569cd6"
+       font-family="Consolas, Consolas_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="15px"
+       transform="translate(1302.98,216)"
+       id="text35">}/</text>
+    <text
+       fill="#569cd6"
+       font-family="Consolas, Consolas_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="15px"
+       transform="translate(1318.98,216)"
+       id="text36">onhand</text>
+    <text
+       fill="#569cd6"
+       font-family="Consolas, Consolas_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="15px"
+       transform="translate(1366.98,216)"
+       id="text37">/</text>
+    <text
+       fill="#569cd6"
+       font-family="Consolas, Consolas_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="15px"
+       transform="translate(1374.98,216)"
+       id="text38">indexquery</text>
+    <text
+       fill="#569cd6"
+       font-family="Consolas, Consolas_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="15px"
+       transform="translate(1054.98,234)"
+       id="text39">/</text>
+    <text
+       fill="#569cd6"
+       font-family="Consolas, Consolas_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="15px"
+       transform="translate(1062.98,234)"
+       id="text40">api</text>
+    <text
+       fill="#569cd6"
+       font-family="Consolas, Consolas_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="15px"
+       transform="translate(1086.98,234)"
+       id="text41">/environment/{</text>
+    <text
+       fill="#569cd6"
+       font-family="Consolas, Consolas_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="15px"
+       transform="translate(1198.98,234)"
+       id="text42">environmentId</text>
+    <text
+       fill="#569cd6"
+       font-family="Consolas, Consolas_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="15px"
+       transform="translate(1302.98,234)"
+       id="text43">}/</text>
+    <text
+       fill="#569cd6"
+       font-family="Consolas, Consolas_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="15px"
+       transform="translate(1318.98,234)"
+       id="text44">onhand</text>
+    <text
+       fill="#569cd6"
+       font-family="Consolas, Consolas_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="15px"
+       transform="translate(1366.98,234)"
+       id="text45">/</text>
+    <text
+       fill="#569cd6"
+       font-family="Consolas, Consolas_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="15px"
+       transform="translate(1374.98,234)"
+       id="text46">exactquery</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(709.119,381)"
+       id="text47">Inventory</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(807.652,381)"
+       id="text48">u</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(820.319,381)"
+       id="text49">pdate to service</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(709.119,405)"
+       id="text50">(periodic, default every 1 min.</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(936.906,405)"
+       id="text51">)</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(709.119,595)"
+       id="text52">Create journal</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="19px"
+       transform="translate(709.119,619)"
+       id="text53">(periodic, default every 2 min.)</text>
+    <text
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(1054.98,417)"
+       id="text54">Inventory sum and offset</text>
+  </g>
+</svg>

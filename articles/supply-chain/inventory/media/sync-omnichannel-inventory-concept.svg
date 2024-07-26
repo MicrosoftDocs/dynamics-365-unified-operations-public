@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1295.6921"
+   height="323.40982"
+   overflow="hidden"
+   version="1.1"
+   id="svg35"
+   sodipodi:docname="Slide1.SVG"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs35" />
+  <sodipodi:namedview
+     id="namedview35"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.8119213"
+     inkscape:cx="671.86315"
+     inkscape:cy="165.65645"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg35" />
+  <g
+     id="g35"
+     transform="translate(-192.13685,-194.60014)">
+    <rect
+       x="0"
+       y="0"
+       width="1728"
+       height="720"
+       id="rect1" />
+    <rect
+       x="316.5"
+       y="226.5"
+       width="220"
+       height="267"
+       stroke="#ed7d31"
+       stroke-width="0.666667"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect2" />
+    <text
+       fill="#ed7d31"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="24px"
+       transform="translate(359.778,262)"
+       id="text2">Omnichannel</text>
+    <text
+       fill="#ed7d31"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="24px"
+       transform="translate(335.778,291)"
+       id="text3">i</text>
+    <text
+       fill="#ed7d31"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="24px"
+       transform="translate(341.612,291)"
+       id="text4">nventory</text>
+    <text
+       fill="#ed7d31"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="24px"
+       transform="translate(436.205,291)"
+       id="text5">c</text>
+    <text
+       fill="#ed7d31"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="24px"
+       transform="translate(446.205,291)"
+       id="text6">hanges</text>
+    <rect
+       x="745.5"
+       y="226.5"
+       width="219"
+       height="267"
+       stroke="#00b0f0"
+       stroke-width="0.666667"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect6" />
+    <text
+       fill="#00b0f0"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="24px"
+       transform="translate(761.146,262)"
+       id="text7">Inventory Visibility</text>
+    <rect
+       x="1153.5"
+       y="226.5"
+       width="228"
+       height="267"
+       stroke="#00b0f0"
+       stroke-width="0.666667"
+       stroke-miterlimit="8"
+       fill="none"
+       id="rect7" />
+    <text
+       fill="#00b0f0"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="24px"
+       transform="translate(1161.97,262)"
+       id="text8">Dynamics 365</text>
+    <text
+       fill="#00b0f0"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="24px"
+       transform="translate(1305.47,262)"
+       id="text9">Supply</text>
+    <text
+       fill="#00b0f0"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="700"
+       font-size="24px"
+       transform="translate(1169.96,291)"
+       id="text10">Chain Management</text>
+    <path
+       d="m 561.5,351 h 154.514 v 3 H 561.5 Z m 153.013,-3 9,4.5 -9,4.5 z"
+       fill="#ed7d31"
+       id="path10" />
+    <path
+       d="m 982.5,349 h 147.97 v 3 H 982.5 Z m 146.47,-3 9,4.5 -9,4.5 z"
+       fill="#00b0f0"
+       id="path11" />
+    <text
+       fill="#00b0f0"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(984.643,384)"
+       id="text11">Create journal</text>
+    <text
+       fill="#ed7d31"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="24px"
+       transform="translate(552.708,387)"
+       id="text12">Update inventory</text>
+    <text
+       fill="#00b0f0"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(755.474,354)"
+       id="text13">•</text>
+    <text
+       fill="#00b0f0"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(769.874,354)"
+       id="text14">Create trans</text>
+    <text
+       fill="#00b0f0"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(875.394,354)"
+       id="text15">actions</text>
+    <text
+       fill="#00b0f0"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(755.474,387)"
+       id="text16">•</text>
+    <text
+       fill="#00b0f0"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(769.874,387)"
+       id="text17">Aggregate</text>
+    <text
+       fill="#00b0f0"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(769.874,413)"
+       id="text18">trans</text>
+    <text
+       fill="#00b0f0"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(813.768,413)"
+       id="text19">actions</text>
+    <text
+       fill="#00b0f0"
+       font-family="Arial, Arial_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(755.474,447)"
+       id="text20">•</text>
+    <text
+       fill="#00b0f0"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(769.874,447)"
+       id="text21">Sync to</text>
+    <text
+       fill="#00b0f0"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(837.241,447)"
+       id="text22">Supply Chain</text>
+    <text
+       fill="#00b0f0"
+       font-family="Calibri, Calibri_MSFontService, sans-serif"
+       font-weight="400"
+       font-size="21px"
+       transform="translate(769.874,472)"
+       id="text23">Management</text>
+    <g
+       id="g25">
+      <g
+         id="g24">
+        <g
+           id="g23">
+          <path
+             d="m 366.938,457.833 h -22.876 v -40.666 h 22.876 z m -13.98,-45.75 h 5.084 c 0.699,0 1.27,0.572 1.27,1.271 0,0.699 -0.571,1.271 -1.27,1.271 h -5.084 c -0.699,0 -1.27,-0.572 -1.27,-1.271 0,-0.699 0.571,-1.271 1.27,-1.271 z m 16.521,-2.541 h -27.958 c -0.699,0 -1.271,0.572 -1.271,1.27 v 53.376 c 0,0.698 0.572,1.27 1.271,1.27 h 27.958 c 0.699,0 1.271,-0.572 1.271,-1.27 v -53.376 c 0,-0.698 -0.572,-1.27 -1.271,-1.27 z"
+             fill="#ed7d31"
+             id="path23" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g31">
+      <g
+         id="g30">
+        <g
+           id="g29">
+          <path
+             d="m 427.5,452.75 c 1.08,0 1.906,0.826 1.906,1.906 0,1.08 -0.826,1.906 -1.906,1.906 -1.08,0 -1.906,-0.826 -1.906,-1.906 0,-1.08 0.826,-1.906 1.906,-1.906 z m -25.417,6.354 h 50.834 v -8.896 h -50.834 z"
+             fill="#ed7d31"
+             id="path25" />
+          <path
+             d="m 414.792,428.604 h 6.354 v 2.542 h -6.354 z"
+             fill="#ed7d31"
+             id="path26" />
+          <path
+             d="m 414.792,423.521 h 6.354 v 2.541 h -6.354 z"
+             fill="#ed7d31"
+             id="path27" />
+          <path
+             d="m 414.792,418.438 h 6.354 v 2.541 h -6.354 z"
+             fill="#ed7d31"
+             id="path28" />
+          <path
+             d="m 445.292,433.688 h -15.25 v -6.355 h 15.25 z m -21.604,0 H 412.25 v -17.792 h 11.438 z m 25.416,0 v -7.626 c 0,-1.397 -1.144,-2.541 -2.542,-2.541 h -20.333 v -8.896 c 0,-0.699 -0.572,-1.271 -1.271,-1.271 h -13.979 c -0.699,0 -1.271,0.572 -1.271,1.271 v 8.896 h -1.27 c -1.398,0 -2.542,1.144 -2.542,2.541 v 7.626 l -3.813,8.895 v 5.084 h 50.834 v -5.084 z"
+             fill="#ed7d31"
+             id="path29" />
+        </g>
+      </g>
+    </g>
+    <g
+       id="g34">
+      <g
+         id="g33">
+        <g
+           id="g32">
+          <path
+             d="m 47.0208,47.6562 h -7.625 v -5.7187 h 7.625 z m -12.7083,0 h -7.625 v -5.7187 h 7.625 z m -12.7083,0 h -7.625 v -5.7187 h 7.625 z M 34.9479,34.9479 V 26.0521 L 17.7917,34.9479 15.8854,8.89583 H 10.8021 L 8.89583,34.9479 V 52.1042 H 52.1042 V 34.9479 26.0521 Z"
+             fill="#ed7d31"
+             transform="matrix(1.01639,0,0,1,469,407)"
+             id="path31" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
