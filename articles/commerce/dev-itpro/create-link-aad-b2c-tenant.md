@@ -2,14 +2,15 @@
 title: Create or link to an existing Microsoft Entra B2C tenant in the Azure portal
 description: This article describes how create or link to an existing Microsoft Entra business-to-consumer (B2C) tenant in the Microsoft Azure portal.
 author: BrianShook
-ms.date: 11/15/2022
-ms.topic: article 
+ms.date: 07/25/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: asharchw
 ms.search.validFrom: 2020-02-13
-
+ms.custom: 
+  - bap-template
 ---
 
 # Create or link to an existing Microsoft Entra B2C tenant in the Azure portal
