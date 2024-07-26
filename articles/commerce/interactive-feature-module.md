@@ -2,12 +2,12 @@
 title: Interactive feature module
 description: This article covers interactive feature modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/26/2026
+ms.date: 07/26/2024
 ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: aaharchw
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.custom: 
   - bap-template
