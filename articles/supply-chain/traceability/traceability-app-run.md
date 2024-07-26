@@ -16,9 +16,9 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-Follow these steps to open the Traceability app in Power Apps after it's been [installed](traceability-install.md) on your environment.
+Follow these steps to open the Traceability app in Power Apps after it's been [installed](traceability-install.md) in your environment.
 
 1. Sign in to [Power Platform maker](https://make.powerapps.com/).
-1. On the left navigation pane, select **Apps**.
-1. The **Apps** page opens, open to the **My apps** tab. Look for the app with a **Name** of *Traceability*. If you don't see it on the **My apps** tab, switch to the **All** tab and look for it there.
-1. Hover your mouse pointer over the *Traceability* app to reveal the **Play** button next to it. Select the **Play** button to run the app.
+1. On the left navigation pane, select **Apps**. The **Apps** page opens.
+1. Open the **My apps** tab. Look for the app with a **Name** of *Traceability*. If you don't see it on the **My apps** tab, switch to the **All** tab and look for it there.
+1. Hover your mouse over the *Traceability* app to reveal the **Play** button next to it. Select the **Play** button to run the app.

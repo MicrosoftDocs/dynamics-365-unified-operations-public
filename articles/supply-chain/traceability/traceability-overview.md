@@ -1,6 +1,6 @@
-﻿---
+---
 title: Traceability overview (preview)
-description: Traceability add-in for Dynamics 365 Supply Chain Management enables you to trace raw materials and subassemblies in a product and track the usage and disposal over the full value chain. As a result, it helps you meet a wider range of business objectives, including efficiency, resilience, responsiveness, and sustainability.
+description: Traceability Add-in for Dynamics 365 Supply Chain Management enables you to trace raw materials and subassemblies in a product and track the usage and disposal over the full value chain. 
 author: banluo-ms
 ms.author: banluo
 ms.reviewer: kamaybac
@@ -10,14 +10,13 @@ ms.date: 07/29/2024
 ms.custom: 
   - bap-template
 ---
-
 # Traceability overview (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-Companies are under increasing pressure to comply with legislation (such as the EU and German Supply Chain Act), especially when it comes to recalling defective and potentially unsafe products, or for the sake of linking products with certain documents. The Traceability add-in for Dynamics 365 Supply Chain Management lets you collect business and industry-specific data across the product value chain, which can be used for regulation audits and compliance process. Beyond compliance, Traceability also enables companies to meet a wide range of business objectives, including efficiency, resilience, responsiveness, and sustainability.
+Companies are under increasing pressure to comply with legislation (such as the EU and German Supply Chain Act), especially when it comes to recalling defective and potentially unsafe products, or for the sake of linking products with certain documents. The Traceability Add-in for Dynamics 365 Supply Chain Management lets you collect business and industry-specific data across the product value chain, which can be used for regulation audits and compliance process. Beyond compliance, Traceability also enables companies to meet a wide range of business objectives, including efficiency, resilience, responsiveness, and sustainability.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 

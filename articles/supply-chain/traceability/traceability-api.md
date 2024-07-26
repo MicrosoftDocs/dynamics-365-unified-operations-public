@@ -1,6 +1,6 @@
-﻿---
+---
 title: Traceability API (preview)
-description: Learn how to integrate the Traceability add-in for Dynamics 365 Supply Chain Management with external system through its API.
+description: Learn how to integrate the Traceability Add-in for Dynamics 365 Supply Chain Management with external systems through its API.
 author: banluo-ms
 ms.author: banluo
 ms.reviewer: kamaybac
@@ -16,7 +16,7 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article describes how to integrate the Traceability add-in for Dynamics 365 Supply Chain Management with external system through its API.
+This article describes how to integrate the Traceability Add-in for Dynamics 365 Supply Chain Management with external systems through its API.
 
 ## Authentication
 
@@ -24,13 +24,13 @@ The platform security token is used to call the Traceability public API. Therefo
 
 To obtain an access token, follow these steps:
 
-1. Sign in to [Azure portal](https://ms.portal.azure.com/).
+1. Sign in to the [Azure portal](https://ms.portal.azure.com/).
 1. Search for or navigate to the **App registrations** page.
 1. Open the [app registration](traceability-install.md) you created for the Traceability app.
 1. From the left navigator, select **Overview**. Copy the value shown for **Application (client) ID** to a temporary text file.
 1. From the toolbar, select **Endpoints**.
 1. The **Endpoints** dialog opens. Copy the value shown for **OAuth 2.0 token endpoint (v2)** to a temporary text file.
-1. Fetch a Microsoft Entra token by submitting an HTTP request that has following properties:
+1. Fetch a Microsoft Entra token by submitting an HTTP request that has the following properties:
 
     - **URL** – Use the **OAuth 2.0 token endpoint (v2)** value you found earlier in this procedure.
     - **Method** – GET
@@ -54,7 +54,7 @@ To obtain an access token, follow these steps:
     }
     ```
 
-1. Use the Microsoft Entra token to generate a bearer token by submitting an HTTP request that has following properties:
+1. Use the Microsoft Entra token to generate a bearer token by submitting an HTTP request that has the following properties:
 
     - **URL** – `https://securityservice.operations365.dynamics.com/token`
     - **Method** – POST
@@ -71,9 +71,9 @@ To obtain an access token, follow these steps:
         }
         ```
 
-        Where *{environmentId}* is the environment ID of your Supply Chain Management environment in lifecycle services.
+        Where *{environmentId}* is the environment ID of your Supply Chain Management environment in Lifecycle Services.
 
-1. You should receive an access token in response. You must use this token as a bearer token to call the Traceability API. Here's the example of a response:
+1. You should receive an access token in response. You must use this token as a bearer token to call the Traceability API. Here's an example of a response:
 
     ```json
     {
@@ -96,18 +96,18 @@ The following table lists the APIs available for Traceability.
 | /api/environments/{environmentId}/events/PostBatchEvents | Post | Create genealogy node and activity |
 | /api/environments/{environmentId}/traces/Query | Post | Query by tracking ID |
 
-Where *{environmentId}* is the environment ID of your Supply Chain Management environment in lifecycle services.
+Where *{environmentId}* is the environment ID of your Supply Chain Management environment in Lifecycle Services.
 
 The remaining sections provide detailed information about each API.
 
 ## Post activity events API
 
-This API lets external systems post activity events to the Traceability service. Activity evens include production component assembly, goods receipt in business activities.
+This API lets external systems post activity events to the Traceability service. Activity events include production component assembly and goods receipt in business activities.
 
 - **Path** – `/api/environments/{environmentId}/events/PostBatchEvents`
 - **Method** – `POST`
 
-Where *{environmentId}* is the environment ID of your Supply Chain Management environment in lifecycle services.
+Where *{environmentId}* is the environment ID of your Supply Chain Management environment in Lifecycle Services.
 
 ### Post activity events request payload
 
@@ -158,7 +158,7 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 | `description` | Description of the activity event. |
 | `activityType` | Refers to a predefined "Activity Type" (*Purchase*, *Sales*, *Production*, and so on). |
 | `activityCode` | Refers to a configured "Activity Code" (*GoodsReceipt*, *Add*, *Remove*, and so on). |
-| `dateTime` | The date and time of activity event happened. |
+| `dateTime` | The date and time the activity event happened. |
 | `operator` | The operator who executed the activity event. The value can be a user ID, employee ID, or similar. |
 | `companyCode` | For Supply Chain Management, this field maps to a legal entity. |
 | *&lt;data collection name&gt;* | These fields are used to collect custom values. |
@@ -193,7 +193,7 @@ On success, status code 204 is returned.
 
 ### Events post example
 
-Produce finished goods **A** with component **B** and **C** by different event.
+Produce finished good **A** with component **B** and **C** by different events.
 
 #### Events post example request payload 1
 
@@ -289,9 +289,9 @@ Produce finished goods **A** with component **B** and **C** by different event.
 
 #### Events post example results
 
-If you were to post the example events shown previously, the Traceability app would display the results shown in the following screenshot.
+If you were to post the example events shown previously, the Traceability Add-in would display the results shown in the following screenshot.
 
-:::image type="content" source="media/events-post-api-result-example.png" alt-text="Results of the events post example, shown in the Traceability app" lightbox="media/events-post-api-result-example.png":::
+:::image type="content" source="media/events-post-api-result-example.png" alt-text="Results of the events post example, shown in the Traceability Add-in" lightbox="media/events-post-api-result-example.png":::
 
 ## Single query API
 
@@ -300,7 +300,7 @@ This API accepts queries for traceability information and returns genealogy, act
 - **Path** – `/api/environments/{environmentId}/traces/Query`
 - **Method** – `POST`
 
-Where *{environmentId}* is the environment ID of your Supply Chain Management environment in lifecycle services.
+Where *{environmentId}* is the environment ID of your Supply Chain Management environment in Lifecycle Services.
 
 ### Single query request payload
 
@@ -320,11 +320,11 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 
 | Field | Description |
 |--|--|
-| `tracingDirection` | Controls the search direction: *Backward* or *Forward*. *Backward* means from top finished goods to raw materials; *Forward* means from raw materials to top finished goods. |
+| `tracingDirection` | Controls the search direction: *Backward* or *Forward*. *Backward* means from top finished good to raw materials; *Forward* means from raw materials to top finished good. |
 | `trackingId` | Key value for the genealogy node. It's a combination of the `itemNumber`,`company`, `batchNumber`, and `serialNumber`. |
 | `company` | The company of the top finished good. For Supply Chain Management, this field maps to the legal entity. |
 | `itemNumber` | The item number of the top finished good. |
-| `serialNumber` | The serial number of top finished goods. |
+| `serialNumber` | The serial number of the top finished good. |
 | `batchNumber` | The batch number of the top finished good. |
 | `ShouldIncludeEvents` | Controls whether event details should be included. Default is *false*. |
 
@@ -389,7 +389,7 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 
 | Field | Description |
 |--|--|
-| `TracingDirection` | Controls the search direction: *Backward* or *Forward*. *Backward* means from top finished goods to raw materials; *Forward* means from raw materials to top finished goods. Only returns one level above or below the result. |
+| `TracingDirection` | Controls the search direction: *Backward* or *Forward*. *Backward* means from top finished good to raw materials; *Forward* means from raw materials to top finished good. Only returns one level above or below the result. |
 
 ### Single query response root element field descriptions
 
@@ -408,7 +408,7 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 | `activityType` | Refers to a predefined activity type (*Purchase*, *Sales*, *Production*, and so on). |
 | `activityCode` | Refers to a configured activity type (*GoodsReceipt*, *Add*, *Remove*, and so on). |
 | `dateTime` | Date and time the activity event occurred. |
-| *&lt;data collection name&gt;* | These fields are used to collect customization value. |
+| *&lt;data collection name&gt;* | These fields are used to collect customization values. |
 
 ### Single query response productTransaction element field descriptions
 
@@ -416,7 +416,7 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 |--|--|
 | `transactionId` | Unique identifier for the transaction. Duplicate values aren't allowed. |
 | `itemId` | Item number of the top finished good. |
-| `trackingId` | Key value for the genealogy node. It's a combination of the `itemId`, `companyCode`, `batchId`, and `serialId`. |
+| `trackingId` | Key value for the genealogy node. It's a combination of `itemId`, `companyCode`, `batchId`, and `serialId`. |
 | `serialId` | Serial number of the top finished good. |
 | `batchId` | Batch number of the top finished good. |
 | `quantity` | Operation quantity of the top finished good. |
@@ -428,15 +428,15 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 |--|--|
 | `transactionId` | Unique identifier for the transaction. Duplicate values aren't allowed. |
 | `itemId` | Item number of the component. |
-| `trackingId` | Key value for the genealogy node. It's a combination of the `itemId`, `companyCode`, `batchId`, and `serialId`. |
+| `trackingId` | Key value for the genealogy node. It's a combination of `itemId`, `companyCode`, `batchId`, and `serialId`. |
 | `serialId` | Serial number of the component. |
 | `batchId` | Batch number of the component. |
-| `quantity` | The consumption quantity of component. |
+| `quantity` | The consumption quantity of the component. |
 | `unitOfMeasure` | Unit of measure of the consumption quantity. |
 
 ### Single query request example
 
-Produce finished goods **A** with component **B** and **C** by different event. Query the result of finished goods **A**.
+Produce finished good **A** with component **B** and **C** by different events. Query the result of finished good **A**.
 
 #### Single query request example request payload
 

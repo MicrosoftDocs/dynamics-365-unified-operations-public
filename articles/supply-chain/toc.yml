@@ -3465,7 +3465,7 @@
           href: traceability/traceability-install.md
         - name: Traceability security roles in Power Apps
           href: traceability/traceability-security-roles.md
-        - name: Configure the Traceability app in Power Apps
+        - name: Configure Traceability
           href: traceability/traceability-app-configure.md
       - name: Use the Traceability app in Power Apps
         items:

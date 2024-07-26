@@ -42,7 +42,7 @@ To make a backward search, follow these steps:
 
     :::image type="content" source="media/backward-search-example.png" alt-text="Example of backward search results in the graphic view" lightbox="media/backward-search-example.png":::
 
-1. Now you can do an *activity verification* by following these steps.
+1. Now you can do an *activity verification* by following these steps:
 
     1. Select a node in the genealogy tree.
     1. Select the **View detail** button for your selected node to open a dialog.
@@ -56,8 +56,9 @@ To make a backward search, follow these steps:
 
 *Forward searches* help you locate the batch or serial number of finished products that contain semi-products or raw materials with a specific batch or serial number.
 
-- In recall scenarios, manufacturers can find the batch or serial number of specific impacted finish goods and then run a specific, accurate recall that minimizes the loss.
-- For example, in the electric vehicles industry, manufactures can use the serial number of a battery that is going to out of service to locate the cars that use it. They can then offer recycling and warranty services to the affected customers.
+In recall scenarios, manufacturers can find the batch or serial number of specific impacted finished goods and then run a specific, accurate recall that minimizes the loss.
+
+For example, in the electric vehicles industry, manufacturers can use the serial number of a battery that is going out of service to locate the cars that use it. They can then offer recycling and warranty services to the affected customers.
 
 To make a forward search, follow these steps:
 
