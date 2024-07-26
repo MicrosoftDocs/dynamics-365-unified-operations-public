@@ -1,5 +1,5 @@
 ---
-title: Customer insights using Copilot: Transforming Clienteling in Retail
+title: Customer insights using Copilot - Transforming Clienteling in Retail
 description: This article describes how Store associates can leverage Copilot to enhance customer interactions and create personalized shopping experiences.
 author: ashishmsft
 ms.date: 07/19/2024
