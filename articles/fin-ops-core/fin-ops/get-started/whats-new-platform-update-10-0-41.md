@@ -34,7 +34,7 @@ This section contains a table that lists the features that are included in this 
 This section contains a table that lists the enhancements that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
 
 | Module or feature area | Feature name | More information | Enabled by |
-|---|---|---|---|
+| Web client | Deep link to F&O records from corresponding Dataverse virtual entities | For more information, see [Create sharable, secure URLs](../../dev-itpro/user-interface/create-deep-links) | Default |   
 
 ### Bug fixes
 
