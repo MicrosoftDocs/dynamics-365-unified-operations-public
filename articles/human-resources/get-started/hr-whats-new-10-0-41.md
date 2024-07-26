@@ -26,9 +26,9 @@ This article lists features that are new or changed for Microsoft Dynamics 365 H
 
 This section contains a table that lists the features that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
 
-| Module or feature area | Feature name | More information | Enabled by |
+| Module or feature area | Feature name | More information | 
 |---|---|---|---|
-|Leave and absence | Human Resources app for Leave and absence |The Human Resources app for leave and absence is integrated with Microsoft Dynamics 365 Human Resources. It helps organizations ensure that their employees can seamlessly request, edit, and cancel time off and leave of absence requests. Employees can view leave balances, upcoming leaves, and leave history in one app. Managers can also use the app to view requests, and approve or reject them.| |
+|Leave and absence | Human Resources app for Leave and absence |The Human Resources app for leave and absence is integrated with Microsoft Dynamics 365 Human Resources. It helps organizations ensure that their employees can seamlessly request, edit, and cancel time off and leave of absence requests. Employees can view leave balances, upcoming leaves, and leave history in one app. Managers can also use the app to view requests, and approve or reject them.| 
 
 ## Feature enhancements included in this release
 
