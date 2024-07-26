@@ -22,8 +22,6 @@ Customer and vendor balance netting is a process where the balances for a vendor
 
 This article provides an overview of the customer and vendor balance netting process in Microsoft Dynamics 365 Finance. It also explains how to set up the netting agreement, manually net customer and vendor balances, and reverse posted netting transactions.
 
-> [!NOTE]
-> This feature is a preview feature in Dynamics 365 Finance version 10.0.38 and is available only in sandbox environment. The general availability date in production environments will be announced later.
 
 ## Set up a journal name and main account
 
