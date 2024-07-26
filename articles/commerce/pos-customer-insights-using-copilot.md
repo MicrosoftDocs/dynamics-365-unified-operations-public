@@ -1,3 +1,4 @@
+
 ---
 title: Customer insights using Copilot: Transforming Clienteling in Retail
 description: This article describes how Store associates can leverage Copilot to enhance customer interactions and create personalized shopping experiences.
@@ -21,6 +22,8 @@ That store is possible with Customer insights by Copilot, a new feature in Store
 - View a summarized timeline of each customer's activity, such as store visits, notes, events, and previous interactions, and easily pick up the conversation where it left off or provide a tailored follow-up.
 - Spark a conversation with personalized ice-breaker questions based on the customer's recent purchases within the last year.
 - Offer relevant and customized recommendations based on the customer's purchase history, interests, and budget.
+  
+![Customer insights using Copilot](./media/CustomerInsightsUsingCopilot.png)
 
 ## Why use Customer insights by Copilot? 
 
