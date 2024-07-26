@@ -1,18 +1,18 @@
 ---
 title: Peripheral simulator for Commerce
-description: This article describes the peripheral simulator tool that is provided with Dynamics 365 Commerce.
+description: This article describes the peripheral simulator tool that is provided with Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 08/22/2023
-ms.topic: article
+ms.date: 07/26/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: global
-ms.author: brshoo
+ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.assetid: 16f31e70-15fc-441e-9727-e6a31c3a48f5
-ms.search.industry: Retail
 ms.search.form: RetailHardwareProfile, RetailTerminalTable, EcoResProductDetailsExtended, RetailCDXSchedule, RetailStoreTable
-
+ms.custom: 
+  - bap-template
 ---
 
 # Peripheral simulator for Commerce
@@ -24,18 +24,22 @@ The peripheral simulator is a utility that Microsoft provides as part of Microso
 - **Virtual peripheral simulator** - The virtual peripheral simulator primarily supports the testing of scenarios that usually require physical POS peripheral devices, and is also useful for diagnosing peripheral problems. If a peripheral isn't functioning correctly when physically connected but does function correctly when configured as a virtual peripheral, the issue is probably caused by the physical device or the manufacturer-provided device driver. In these cases, Microsoft recommends that you contact the manufacturer to resolve the issue. 
 - **POS simulator** - The POS simulator tests the compatibility of physical peripheral devices without having to deploy the POS client.
 
-## Install the peripheral simulator
-The peripheral simulator package file can be found under the Shared Asset library in Microsoft Dynamics Lifecycle Services (LCS)
-1. Sign in to the application.
-2. Go to **Shared Asset Library**
-3. Select **Retail Self-service package**
-4. Click to download the **Commerce Peripheral Simulator** version that corresponds with the Store Commerce version you intend to use.
+## Download and install the peripheral simulator
+
+The peripheral simulator package file to download is located in the Microsoft Dynamics Lifecycle Services (LCS) Shared asset library.
+
+To install the peripheral simulator, follow these steps.
+
+1. Sign in to [LCS](https://lcs.dynamics.com/Logon/Index).
+2. Go to **Shared asset Library**.
+3. Select **Retail Self-service package**.
+4. Select the **Commerce Peripheral Simulator** version to download that corresponds with the Store Commerce version you intend to use.
 
     > [!NOTE]
-    > You must turn off pop-up blockers before you can download the peripheral simulator.
+    > You must disable your browser's pop-up blockers before you can download the peripheral simulator.
 
 7. After the download is completed, open the **Downloads** folder, and double-click **VirtualPeripherals.msi** to start the installer.
-8. Install the peripheral simulator by using the default settings.
+8. Install the peripheral simulator using the default settings.
 
 Besides the peripheral simulator, you must install the common control objects from Monroe Consulting Services. Otherwise, the peripheral simulator won't work correctly. To download the common control objects, go to <http://monroecs.com/oposccos_current.htm>.
 
