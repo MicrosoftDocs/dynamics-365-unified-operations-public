@@ -6,7 +6,7 @@ author: jinniew
 ms.author: jiwo
 ms.reviewer: twheeloc 
 ms.date: 07/26/2024
-ms.topic: welcome
+ms.topic: article
 ms.custom:
 ms.search.form: business-performance-analytics
 audience: Application User
