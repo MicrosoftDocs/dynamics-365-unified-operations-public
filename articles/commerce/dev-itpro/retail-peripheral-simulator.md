@@ -7,7 +7,7 @@ ms.topic: how-to
 audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
 ms.search.region: global
-ms.author: asharchw
+ms.author: ritakimani
 ms.search.validFrom: 2016-06-30
 ms.assetid: 16f31e70-15fc-441e-9727-e6a31c3a48f5
 ms.search.form: RetailHardwareProfile, RetailTerminalTable, EcoResProductDetailsExtended, RetailCDXSchedule, RetailStoreTable
