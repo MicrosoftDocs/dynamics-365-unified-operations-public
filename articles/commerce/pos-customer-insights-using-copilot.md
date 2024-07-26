@@ -1,4 +1,3 @@
-
 ---
 title: Customer insights using Copilot: Transforming Clienteling in Retail
 description: This article describes how Store associates can leverage Copilot to enhance customer interactions and create personalized shopping experiences.
@@ -45,6 +44,8 @@ This capability is available for Dynamics 365 Commerce customers on following ve
 
 > [!Note]
 > AI-generated maybe incorrect. [Learn more](https://aka.ms/BusinessApplicationLegal)
+>
+> For performance reasons, Customer insights by Copilot are cached for 15 mins at a Store-level, that way if any associate is accessing same customer information on different registers they will get to view the cached response. 
 >
 > For Copilot experiences in Store Commerce app, it depends on your Dataverse instance being linked to your environment. For this, Copilot capabilities should be enabled in your finance and operations apps. For more information, see [Enable Copilot capabilities in finance and operations apps](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/copilot/enable-copilot).
 > 
