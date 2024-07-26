@@ -119,12 +119,7 @@
       "source_path": "articles/finance/general-ledger/rvrs-settgs-on-jrnls-lines.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/vouchers-not-reversed-posting-journal",
       "redirect_document_id": "false"
-    },     
-     {
-      "source_path": "articles/finance/general-ledger/set-up-balance-dimensions.md",
-      "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/set-up-balance-dimensions",
-      "redirect_document_id": "false"
-    },    
+    },        
      {
       "source_path": "articles/finance/general-ledger/dimension-default-values.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/dimension-default-values",

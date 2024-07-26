@@ -5,7 +5,7 @@ author: moaamer
 ms.author: moaamer
 ms.topic: article
 ms.date: 04/12/2021
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2021-1-28
@@ -17,14 +17,12 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 # Asset leasing conventions
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+
 
 This article describes conventions for leased assets. Leasing conventions are used to determine the commencement date of a lease book. If the leasing convention is set to **None**, the commencement date is the same as the start date for the lease (that is, the value of the **Lease start date** field). If the leasing convention is set to **Full month**, the commencement date is the first day of the month that the lease's start date falls in.
 
 The commencement date determines the start date of the period for the liability amortization and asset depreciation schedules. Interest expenses and depreciation expenses are posted on the period end date of the corresponding schedules. The initial recognition and adjustment journal entry are posted on the commencement date.
 
-> [!NOTE]
-> The feature for leasing conventions must be turned on through Feature Management. In the **Feature management** workspace, find and select the feature that is named **Leasing convention for asset leasing** feature, and then select **Enable now**.
 
 Leasing conventions are assigned to the setup for a lease asset book.
 
