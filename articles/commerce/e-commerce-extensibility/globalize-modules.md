@@ -1,23 +1,22 @@
 ---
 title: Globalize modules by using the CultureInfoFormatter class
-description: This article describes how to globalize modules by using the CultureInfoFormatter class.
+description: This article describes how to globalize modules using the CultureInfoFormatter class in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 12/04/2020
-ms.topic: article
+ms.date: 07/26/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template 
 ---
 # Globalize modules by using the CultureInfoFormatter class
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to globalize modules by using the **CultureInfoFormatter** class.
+This article describes how to globalize modules using the **CultureInfoFormatter** class in Microsoft Dynamics 365 Commerce.
 
 Globalization of an online site should include not only string localization, but also number, date, and currency formatting for the various languages and regions that your website serves.
 
