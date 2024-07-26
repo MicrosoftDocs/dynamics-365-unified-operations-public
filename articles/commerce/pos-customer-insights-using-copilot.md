@@ -36,7 +36,7 @@ To use Customer insights by Copilot in Store Commerce app, you need to follow th
 2.	From Commerce shared parameters, enable the permanent flag "Enable Copilot in Store Commerce" giving additional governing control to your organization's administrators to control the availability of Copilot features in Store Commerce app. This flag will get automatically enabled once you enable the temporary flag, and shall continue to be available even after temporary flag is retired. 
 3.	From POS functionality profile, you would notice new fast-tab for "Copilot" settings, enable "Customer insights" to get Store reports insights by Copilot in Store Commerce app and run CDX jobs for these updated settings to be synced to Channel database for it to take effect.
 
-This capability is available for Dynamics 365 Commerce customers on following versions - 
+This capability is available for Dynamics 365 Commerce customers on following versions for stores using English languages - 
 
 - 10.0.39, PQU-4 onwards (CSU : 9.49.24184.3, Store Comm. App 9.49.24193.1)
 - 10.0.40, PQU-1 onwards (CSU : 9.50.24184.2, Store Comm. App 9.50.24189.1)
