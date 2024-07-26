@@ -26,11 +26,11 @@ Traceability enables you to trace raw materials and subassemblies in a product a
 
 Traceability follows products and goods as they move through the supply chain and collects information about the provenance of inputs, supplier sourcing practices, and conversion processes. It provides the following features and benefits:
 
-- **Accurate tracking**: Track and document the chain of custody based on individual identifiers (such as serial numbers or batch numbers) across the entire value chain, and throughout the full lifecycle of an item.
-- **As-built BOM registration**: Document composition genealogy information (as-built bill of materials (BOM)) and activity events (such as procurement, production, and distribution) against each serial and batch number. You can trace all the way back to find the origin of each single part.
-- **Forward and backward search**: Use the where-used functionality to track the consumption of materials throughout your entire value chain and find finished or semi-finished goods that could be impacted by a defective component.
-- **Public API**: Integrate with external systems using the robust Traceability API. While this integration requires some initial setup and configuration, it offers a high degree of flexibility and customization to cater to specific business needs.
-- **Integration with the [production floor execution interface](../production-control/production-floor-execution-use.md)**: Production floor workers can register the serial numbers and batch numbers of each component and each finished good.
+- **Accurate tracking** – Track and document the chain of custody based on individual identifiers (such as serial numbers or batch numbers) across the entire value chain, and throughout the full lifecycle of an item.
+- **As-built BOM registration** – Document composition genealogy information (as-built bill of materials (BOM)) and activity events (such as procurement, production, and distribution) against each serial and batch number. You can trace all the way back to find the origin of each single part.
+- **Forward and backward search** – Use the where-used functionality to track the consumption of materials throughout your entire value chain and find finished or semi-finished goods that could be impacted by a defective component.
+- **Public API** – Integrate with external systems using the robust Traceability API. While this integration requires some initial setup and configuration, it offers a high degree of flexibility and customization to cater to specific business needs.
+- **Integration with the [production floor execution interface](../production-control/production-floor-execution-use.md)** – Production floor workers can register the serial numbers and batch numbers of each component and each finished good.
 
 ## Join the Traceability group on Yammer
 

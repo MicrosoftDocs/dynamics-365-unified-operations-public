@@ -11,9 +11,6 @@ ms.custom:
   - bap-template
 ---
 
-<!-- In the table that starts in line 324, some rows mention "top finished good" and one says "top finished goods". Are they correct as is, or should they all be either "good" or "goods"? --> 
-
-
 # Traceability API (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -35,9 +32,9 @@ To obtain an access token, follow these steps:
 1. The **Endpoints** dialog opens. Copy the value shown for **OAuth 2.0 token endpoint (v2)** to a temporary text file.
 1. Fetch a Microsoft Entra token by submitting an HTTP request that has the following properties:
 
-    - **URL**: Use the **OAuth 2.0 token endpoint (v2)** value you found earlier in this procedure.
-    - **Method**: GET
-    - **Body content**: Submit the body content listed in the following table as form data.
+    - **URL** – Use the **OAuth 2.0 token endpoint (v2)** value you found earlier in this procedure.
+    - **Method** – GET
+    - **Body content** – Submit the body content listed in the following table as form data.
 
         | Key | Value |
         |--|--|
@@ -59,9 +56,9 @@ To obtain an access token, follow these steps:
 
 1. Use the Microsoft Entra token to generate a bearer token by submitting an HTTP request that has the following properties:
 
-    - **URL**: `https://securityservice.operations365.dynamics.com/token`
-    - **Method**: POST
-    - **Body content**: Submit the following body content as JSON content:
+    - **URL** – `https://securityservice.operations365.dynamics.com/token`
+    - **Method** – POST
+    - **Body content** – Submit the following body content as JSON content:
 
         ```json
         {
@@ -107,8 +104,8 @@ The remaining sections provide detailed information about each API.
 
 This API lets external systems post activity events to the Traceability service. Activity events include production component assembly and goods receipt in business activities.
 
-- **Path**: `/api/environments/{environmentId}/events/PostBatchEvents`
-- **Method**: `POST`
+- **Path** – `/api/environments/{environmentId}/events/PostBatchEvents`
+- **Method** – `POST`
 
 Where *{environmentId}* is the environment ID of your Supply Chain Management environment in Lifecycle Services.
 
@@ -196,7 +193,7 @@ On success, status code 204 is returned.
 
 ### Events post example
 
-Produce finished goods **A** with component **B** and **C** by different events.
+Produce finished good **A** with component **B** and **C** by different events.
 
 #### Events post example request payload 1
 
@@ -300,8 +297,8 @@ If you were to post the example events shown previously, the Traceability Add-in
 
 This API accepts queries for traceability information and returns genealogy, activity, and data collection information.
 
-- **Path**: `/api/environments/{environmentId}/traces/Query`
-- **Method**: `POST`
+- **Path** – `/api/environments/{environmentId}/traces/Query`
+- **Method** – `POST`
 
 Where *{environmentId}* is the environment ID of your Supply Chain Management environment in Lifecycle Services.
 
@@ -323,11 +320,11 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 
 | Field | Description |
 |--|--|
-| `tracingDirection` | Controls the search direction: *Backward* or *Forward*. *Backward* means from top finished goods to raw materials; *Forward* means from raw materials to top finished goods. |
+| `tracingDirection` | Controls the search direction: *Backward* or *Forward*. *Backward* means from top finished good to raw materials; *Forward* means from raw materials to top finished good. |
 | `trackingId` | Key value for the genealogy node. It's a combination of the `itemNumber`,`company`, `batchNumber`, and `serialNumber`. |
 | `company` | The company of the top finished good. For Supply Chain Management, this field maps to the legal entity. |
 | `itemNumber` | The item number of the top finished good. |
-| `serialNumber` | The serial number of the top finished goods. |
+| `serialNumber` | The serial number of the top finished good. |
 | `batchNumber` | The batch number of the top finished good. |
 | `ShouldIncludeEvents` | Controls whether event details should be included. Default is *false*. |
 
@@ -392,7 +389,7 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 
 | Field | Description |
 |--|--|
-| `TracingDirection` | Controls the search direction: *Backward* or *Forward*. *Backward* means from top finished goods to raw materials; *Forward* means from raw materials to top finished goods. Only returns one level above or below the result. |
+| `TracingDirection` | Controls the search direction: *Backward* or *Forward*. *Backward* means from top finished good to raw materials; *Forward* means from raw materials to top finished good. Only returns one level above or below the result. |
 
 ### Single query response root element field descriptions
 
@@ -439,7 +436,7 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 
 ### Single query request example
 
-Produce finished goods **A** with component **B** and **C** by different events. Query the result of finished goods **A**.
+Produce finished good **A** with component **B** and **C** by different events. Query the result of finished good **A**.
 
 #### Single query request example request payload
 
