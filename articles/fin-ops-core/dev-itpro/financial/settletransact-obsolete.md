@@ -115,7 +115,7 @@ CustTrans::settleTransact(recipientCustVendTable);
 ```X++
 //Mark for settlement
 SpecTransExecutionContext specTransExecutionContext = SpecTransExecutionContext::newFromSource(custTable);
-specTransManager = SpecTransManager::construct(specTransExecutionContext.parmSpecContext());
+specTransManager = SpecTransManager::newFromSpec(specTransExecutionContext.parmSpecContext());
 
 specTransManager.insert(…) //Invoice(s)
 specTransManager.insert(…) //Payment(s)
