@@ -38,13 +38,13 @@ originally published.
 | Feature name | More information | 
 |---|---|
 |Include weekends and holidays	|The **Include weekends and holidays** functionality has been improved. Holidays and weekends are now separated, giving users the flexibility to choose either or both when setting up a leave type. |
-|Streamlined employee entry|	Streamlined employee entry page will be mandatory starting in Dynamics 365 Human Resources 10.0.43 release, extended from the earlier 10.0.41 version|
+|Streamlined employee entry|	**Streamlined employee entry** page is mandatory starting in Dynamics 365 Human Resources 10.0.43 release, extended from the earlier 10.0.41 version.|
 |Additional payroll entities	|Additional entities are available for Dynamics 365 Human Resources payroll integration.|
 
 
 ## Features turned on by default in this release
 
-The following table lists the features that are turned on by default in version 10.0.41. Most features that have been turned on atomically can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In the future, some features that have been turned on automatically might be removed from Feature management and will become mandatory. This change ensures that customers are using current functionality, so that as enhancements are added, they can build on the current functionality. Features will never be automatically enabled in less than one year, unless they are determined to be essential.
+The following table lists the features that are turned on by default in version 10.0.41. Most features that have been turned on atomically can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In the future, some features that have been turned on automatically might be removed from Feature management and will become mandatory. This change ensures that customers are using current functionality, so that as enhancements are added, they can build on the current functionality. Features will never be automatically enabled in less than one year, unless they're determined to be essential.
 
 | Feature name | Feature state | Module |
 |--------------|---------------|--------|
