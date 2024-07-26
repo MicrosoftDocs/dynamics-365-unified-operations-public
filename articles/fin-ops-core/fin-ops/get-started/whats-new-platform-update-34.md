@@ -3,16 +3,14 @@ title: Platform updates for version 10.0.10 of finance and operations apps (May 
 description: Learn about the features are included in the platform updates for version 10.0.10 of finance and operations apps released in May 2020.
 author: sericks007
 ms.author: sericks
-ms.topic: conceptual
-ms.date: 04/12/2024
+ms.topic: whats-new
 ms.custom: 
   - bap-template
   - evergreen
+ms.date: 04/12/2024
 ms.reviewer: johnmichalak 
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2020-02-29
-ms.search.form:
 ms.dyn365.ops.version: Platform update 34
 ---
 # Platform updates for version 10.0.10 of finance and operations apps (May 2020)

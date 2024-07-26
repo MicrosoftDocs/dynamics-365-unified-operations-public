@@ -1092,6 +1092,8 @@
                       href: general-ledger/tasks/create-assign-advanced-rule-structures.md
                     - name: How do I set up balancing financial dimensions?
                       href: general-ledger/set-up-balance-dimensions.md
+                    - name: Default financial dimensions on financial journals
+                      href: general-ledger/dimensions-default-values.md
             - name: Setup
               items:
                 - name: Process allocations
@@ -5497,6 +5499,10 @@
           href: ../finance/transparency-note.md
         - name: Collections coordinator summary FAQ
           href: accounts-receivable/collections-coordinator-summary-faq.md
+        - name: Customer page summary FAQ
+          href: accounts-receivable/customerpagesummary.md
+        - name: Workflow history summary FAQ
+          href: ../fin-ops-core/fin-ops/copilot/workflow-history-summary-faq.md
     - name: Development and administration for finance and operations apps
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Supply Chain Management
