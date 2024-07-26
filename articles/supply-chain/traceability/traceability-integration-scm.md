@@ -35,7 +35,7 @@ You must configure Traceability to recognize the activity codes submitted by Sup
 
 1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
 1. On the left navigation pane, select **Settings** \> **Activity**.
-1. The **Activity** page opens. Make sure the following activity codes are available. For more information about these settings, see [Configure Traceability (preview)](traceability-app-configure.md).
+1. The **Activity** page opens. Make sure the following activity codes are available. For more information about these settings, see [Configure Traceability](developer/traceability-configure.md).
 
     | Source activity code | Source activity type | Integration Scenario |
     |--|--|--|

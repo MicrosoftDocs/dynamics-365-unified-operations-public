@@ -85,7 +85,7 @@ To obtain an access token, follow these steps:
 
 ## Find the Traceability API URL
 
-To find the URL for accessing your Traceability API, follow the instructions provided in [API endpoint](traceability-app-configure.md#api-endpoint).
+To find the URL for accessing your Traceability API, follow the instructions provided in [API endpoint](traceability--configure.md#api-endpoint).
 
 ## Available APIs
 

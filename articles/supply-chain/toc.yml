@@ -3462,11 +3462,11 @@
       - name: Install and configure Traceability
         items:
         - name: Install and update Traceability
-          href: traceability/traceability-install.md
+          href: traceability/developer/traceability-install.md
         - name: Traceability security roles in Power Apps
-          href: traceability/traceability-security-roles.md
+          href: traceability/developer/traceability-security-roles.md
         - name: Configure Traceability
-          href: traceability/traceability-app-configure.md
+          href: traceability/developer/traceability-configure.md
       - name: Use the Traceability app in Power Apps
         items:
         - name: Open the Traceability app in Power Apps
@@ -3480,7 +3480,7 @@
         - name: Integrate Traceability with Supply Chain Management
           href: traceability/traceability-integration-scm.md
         - name: Traceability API
-          href: traceability/traceability-api.md
+          href: traceability/developer/traceability-api.md
     - name: Transportation management
       items:
       - name: Transportation management overview
