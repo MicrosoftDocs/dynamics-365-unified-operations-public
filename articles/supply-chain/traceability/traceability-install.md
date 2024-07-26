@@ -11,9 +11,6 @@ ms.custom:
   - bap-template
 ---
 
-<!-- note from editor: This article is about the Traceability Add-in for Dynamics 365 Supply Chain Management, but midway through, the article begins describing the Dynamics 365 Supply Chain Traceability app, which I think is the same thing but the different naming is confusing. -->
-
-
 # Install and update Traceability (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -48,13 +45,15 @@ To use Traceability, your system must meet the following requirements:
 1. In the **Add a client secret** dialog, enter a description and choose an expiration date for the secret. Then select **Add**.
 1. The **Certificates & secrets** page now includes your new secret. Copy the **Value** and **Secret ID** of the secret and store it in a secure location. You'll need these values later. **IMPORTANT:** the **Value** is only displayed once, so you won't be able to retrieve it again after closing this page.
 
-## Install and configure the Traceability Add-in in Power Apps
+## Install and configure the Traceability app in Power Apps
 
-To install the Traceability Add-in in Power Apps, complete the following steps in the Power Platform admin center.
+The Traceability app is part of the Traceability Add-in for Dynamics 365 Supply Chain Management. It's a Power Apps application that provides a user interface for configuring and using the Traceability Add-in.
+
+To install the Traceability app in Power Apps, complete the following steps in the Power Platform admin center.
 
 1. Find the [*Dynamics 365 Supply Chain Traceability* app in AppSource](https://appsource.microsoft.com/en-US/product/dynamics-365/mscrm.d365-supply-chain-traceability-preview?flightCodes=sctprivatepreview).
 1. Select **Get it now**.
-1. You're transferred to the Power Platform admin center. Select the environment where you want to install the solution, agree to the license terms and privacy statement, and then select **Install** to install the add-in in your selected environment.
+1. You're transferred to the Power Platform admin center. Select the environment where you want to install the app, agree to the license terms and privacy statement, and then select **Install** to install the app in your selected environment.
 
     > [!NOTE]
     > If you don't see your environment listed, you might need to change your geographic region in the Power Platform admin center. Select **Cancel** and then choose a supported region from the region selector in the top right corner of the page. Then try again.
@@ -77,8 +76,8 @@ To install the Traceability Add-in in Power Apps, complete the following steps i
 
 To use Traceability together with Dynamics 365 Supply Chain Management, you must enable one or both of the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-- *Tracked components*: Enables component tracking in Supply Chain Management.
-- *(Preview) Traceability*: Integrates Traceability with the component tracking features in Supply Chain Management.
+- *Tracked components* – Enables component tracking in Supply Chain Management.
+- *(Preview) Traceability* – Integrates Traceability with the component tracking features in Supply Chain Management.
 
 ## Update the Supply Chain Traceability application in Power Apps
 

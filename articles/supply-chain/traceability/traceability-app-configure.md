@@ -1,6 +1,6 @@
 ---
-title: Configure the Traceability app in Power Apps (preview)
-description: This article describes how to configure the Traceability Add-in in Power Apps.
+title: Configure Traceability (preview)
+description: This article describes how to configure the Traceability Add-in.
 author: banluo-ms
 ms.author: banluo
 ms.reviewer: kamaybac
@@ -11,13 +11,12 @@ ms.custom:
   - bap-template
 ---
 
-<!-- The style guide says Traceability is an add-in, not an app (https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=72151), so I suggest changing the H1 to "Configure Traceability in Power Apps (preview)" -->
-
-
-# Configure the Traceability app in Power Apps (preview)
+# Configure Traceability (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
+
+This article describes how to configure the Traceability Add-in.
 
 ## <a name="api-endpoint"></a>API endpoint
 
@@ -33,14 +32,14 @@ If you have products that don't need to be traced, you can choose to exclude the
 
 To exclude or reinclude a product, follow these steps:
 
-1. [Open Traceability](traceability-app-run.md) in Power Apps.
+1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
 1. On the left navigation pane, select **Settings** \> **Exclude product**.
 1. The **Exclude product** page opens, showing a list of currently excluded products (if any). Use the buttons in the toolbar to add, remove, or edit rows in the list. For each row, make the following settings:
     - **Company** – Specify the legal entity (company) of the product that shouldn't be traced.
     - **Item number** – Specify the item number of the product that shouldn't be traced.
 
 > [!NOTE]
-> Your setting here only affects activity events that occur after you make the change. Activity events that occurred for a product before you added it to the exclude list will continue to be shown in the Traceability Add-in. Activity events that occurred for a product while it was on the exclude list will never be shown in the Traceability Add-in, even after you remove the product from the list.
+> Your settings here only affect activity events that occur after you make the change. Activity events that occurred for a product before you added it to the exclude list will continue to be included in Traceability. Activity events that occurred for a product while it was on the exclude list will never be included in Traceability, even after you remove the product from the list.
 
 ## Configure activities that are traced in Traceability
 
@@ -52,16 +51,16 @@ You can make the following configuration settings for each activity:
 - Map original activities and activity types to specific activity codes.
 
 > [!NOTE]
-> Your configuration settings only affect activity events that occur after you make the change. Events that occurred for an activity before you added it to the activities list will never be shown in the Traceability Add-in. Events that occurred for an activity while it was on the activities list will continue to be shown in the Traceability Add-in even after you remove the activity from the list.
+> Your configuration settings only affect activity events that occur after you make the change. Events that occurred for an activity before you added it to the activities list will never be included in Traceability. Events that occurred for an activity while it was on the activities list will continue to be included in Traceability even after you remove the activity from the list.
 
 To configure activities that are traced in Traceability, follow these steps:
 
-1. [Open Traceability](traceability-app-run.md) in Power Apps.
+1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
 1. On the left navigation pane, select **Settings** \> **Activity**.
 1. The **Activity** page opens, showing a list of activities currently configured for your environment. Use the buttons in the toolbar to add, remove, or edit rows in the list. For each row, make the following settings:
 
-    - **Activity code** – Enter a name that identifies the activity to users. The Traceability Add-in displays this name to identify the activity when users make a genealogy trace.
-    - **Activity type** – Select the type of activity, as it should be shown to users (for example, *Sales*, *Purchase*, *Production*, *Quality*, *Warehouse*, *Maintenance*, or *Transportation*). The Traceability Add-in displays this value to identify the activity when users make a genealogy trace.
+    - **Activity code** – Enter a name that identifies the activity to users. Traceability displays this name to identify the activity when users make a genealogy trace.
+    - **Activity type** – Select the type of activity, as it should be shown to users (for example, *Sales*, *Purchase*, *Production*, *Quality*, *Warehouse*, *Maintenance*, or *Transportation*). Traceability displays this value to identify the activity when users make a genealogy trace.
     - **Source activity type** – Select the activity type reported by the source system (for example, *Sales*, *Purchase*, *Production*, *Quality*, *Warehouse*, *Maintenance*, or *Transportation*). See the table after this procedure for a list of source activity types and codes by Supply Chain Management.
     - **Source activity code** – Enter the activity code reported by the source system. See the table after this procedure for a list of source activity types and codes by Supply Chain Management.
     - **Company** – Specify the legal entity of the activity to be traced. Enter an asterisk (\*) to trace the activity for all companies.

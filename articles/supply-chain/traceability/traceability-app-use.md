@@ -1,6 +1,6 @@
 ---
 title: Work with the Traceability app (preview)
-description: Learn how to work with the Traceability Add-in in Power Apps.
+description: Learn how to work with the Traceability app in Power Apps.
 author: banluo-ms
 ms.author: banluo
 ms.reviewer: kamaybac
@@ -11,20 +11,18 @@ ms.custom:
   - bap-template
 ---
 
-<!-- The style guide says Traceability is an add-in, not an app (https://styleguides.azurewebsites.net/Styleguide/Read?id=2696&topicid=72151), so I suggest changing the H1 to "Work with Traceability" -->
-
 # Work with the Traceability app (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-The Traceability Add-in for Supply Chain Management lets you search for specific batch and serial numbers and analyze the genealogy of your products. This article describes the basics of how to work with it.
+The Traceability app lets you search for specific batch and serial numbers and analyze the genealogy of your products. This article describes the basics of how to work with it.
 
 ## In-app learning
 
-The Traceability Add-in provides in-app learning to help you get started. To access the in-app learning, follow these steps:
+The Traceability app provides in-app learning to help you get started. To access the in-app learning, follow these steps:
 
-1. [Open the Traceability Add-in](traceability-app-run.md) in Power Apps.
+1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
 1. On the left navigation pane, select **Get started**.
 1. A collection of links to videos and tutorials is shown. Select each link that you're interested in.
 
@@ -37,7 +35,7 @@ The Traceability Add-in provides in-app learning to help you get started. To acc
 
 To make a backward search, follow these steps:
 
-1. [Open the Traceability Add-in](traceability-app-run.md) in Power Apps.
+1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
 1. On the left navigation pane, select **Trace** \> **Genealogy trace**.
 1. In the search form, enter a unique identifier (such as a serial, batch, asset, or lot number) of a finished good to retrieve its genealogy, activity, and data collection.
 1. Traceability shows a genealogy tree for the serial number you entered.
@@ -64,7 +62,7 @@ For example, in the electric vehicles industry, manufacturers can use the serial
 
 To make a forward search, follow these steps:
 
-1. [Open the Traceability Add-in](traceability-app-run.md) in Power Apps.
+1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
 1. On the left navigation pane, select **Trace** \> **Genealogy trace**.
 1. Enter a unique identifier of a raw material or semi-product to see the higher-level assembly related to a selected genealogy tree node.
 

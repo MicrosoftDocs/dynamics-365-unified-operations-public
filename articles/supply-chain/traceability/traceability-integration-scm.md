@@ -11,9 +11,6 @@ ms.custom:
   - bap-template
 ---
 
-<!-- A sentence in line 52 says "The following table summarizes the configuration settings...," but there is no table. Instead, there are steps. Is the table missing, or should the wording be updated? -->
-
-
 # Integrate Traceability with tracked components in Supply Chain Management (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -36,9 +33,9 @@ To integrate Traceability with the tracked components feature Supply Chain Manag
 
 You must configure Traceability to recognize the activity codes submitted by Supply Chain Management. Follow these steps:
 
-1. [Open Traceability](traceability-app-run.md) in Power Apps.
+1. [Open the Traceability app](traceability-app-run.md) in Power Apps.
 1. On the left navigation pane, select **Settings** \> **Activity**.
-1. The **Activity** page opens. Make sure the following activity codes are available. For more information about these settings, see [Configure the Traceability app in Power Apps (preview)](traceability-app-configure.md).
+1. The **Activity** page opens. Make sure the following activity codes are available. For more information about these settings, see [Configure Traceability (preview)](traceability-app-configure.md).
 
     | Source activity code | Source activity type | Integration Scenario |
     |--|--|--|
@@ -49,20 +46,20 @@ You must configure Traceability to recognize the activity codes submitted by Sup
 
 ## Configure Supply Chain Management
 
-You must set up your Supply Chain Management system to record batch/serial numbers for raw materials and finished goods. The following table summarizes the configuration settings you should be using.
+You must set up your Supply Chain Management system to record batch/serial numbers for raw materials and finished goods. The following procedure summarizes the configuration settings you should be using.
 
 1. Set up a number sequence code for *Product component match ID*.
-    
+
     1. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters** and open the **Number sequences** tab.
     1. Set up a number sequence code for *Product component match ID*.
 
 1. Enable tracked components for bills of materials.
-    
+
     1. Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters** and open the **Bills of materials** tab.
     1. Set **Enable tracked components** to *Yes*.
 
 1. Add the *Tracked components* action to relevant areas of the production floor execution interface.
-    
+
     1. Go to **Production control** \> **Setup** \> **Manufacturing execution** \> **Configure production floor execution**.
     1. Select a relevant configuration and, from the Action Pane, select **Design tabs**. Add the *Tracked components* action to each relevant tab and toolbar. Repeat this step for each relevant configuration.
 
