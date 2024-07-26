@@ -104,7 +104,7 @@ The batch server might be restarted for several reasons. Here's an overview of t
 	- [Operating System Maintenance Schedule](../deployment/plannedmaintenance-selfservice.md) – Learn more about planned operating system maintenance schedules.
 	- [Experience during the nZDT Maintenance Window](../deployment/plannedmaintenance-selfservice.md#batch-service) – Gain insights into system behavior during the nZDT maintenance window.
 
-- **Batch server failures ("crashes")** – Batch server failures on batch servers might occur because of batch jobs that are currently running on their respective servers. Detailed failure information is available in Microsoft Dynamics Lifecycle Services. For more information about how to monitor failure information, see [Raw information logs](../lifecycle-services/monitoring-diagnostics.md#raw-information-logs).
+- **Batch server failures ("crashes")** – Batch server failures on batch servers might occur because of batch jobs that are currently running on their respective servers. Detailed failure information is available in Microsoft Dynamics Lifecycle Services. For more information about how to monitor failure information, see [Monitoring and telemetry using Application Insights](monitoring-and-telemetry-appinsights.md).
 - **Infrastructure failover** – Restarts can occur if infrastructure issues lead to an internal failover. Autoscaling and capacity management are used to ensure optimal environment performance and availability.
 - **Use of the Enhanced batch abort feature** – If it becomes necessary to forcibly halt a running batch job, you should use the [Enhanced batch abort feature](../sysadmin/batch-abort.md). This action triggers a restart of the specific batch servers where the job was running.
 
