@@ -29,7 +29,7 @@ To use the features described in this article, your system must meet the followi
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.41 or later.
 - The feature that is named *Inventory Visibility integration with ATP* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-- You must be running the latest version of Inventory Visibility. <!--KFM: Can we provide a required version number? --> For more information about how to install Inventory Visibility, view version information, and check for updates, see [Install and set up Inventory Visibility](inventory-visibility-setup.md).
+- You must be running the latest version of Inventory Visibility. For more information about how to install Inventory Visibility, view version information, and check for updates, see [Install and set up Inventory Visibility](inventory-visibility-setup.md).
 
 ## Enable Inventory Visibility integration with ATP in Supply Chain Management
 
@@ -38,8 +38,6 @@ To configure Supply Chain Management to exchange ATP information with Inventory 
 1. Sign in to Dynamics 365 Supply Chain Management.
 1. Go to **Inventory Management** \> **Inventory Visibility** \> **Inventory Visibility integration with ATP**.
 1. On the Action Pane, select **Enable** to enable the integration. (If you ever need to disable the integration, you can select **Disable** here.)
-
-<!--KFM: We should describe the other information provided on this page (Status, Executed date, and Records to be posted to the Inventory) -->
 
 ## Default calculated measure for ATP in Supply Chain Management
 
