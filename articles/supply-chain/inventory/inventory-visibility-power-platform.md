@@ -237,7 +237,7 @@ Use the **On hand query** page in the **Operational visibility** group to query 
 1. Select **Edit Dimensions** to choose which dimensions to include in the query body. Then enter values for the selected dimensions in the **Product** section.
 
     > [!NOTE]
-    > If you are planning to make an ATP query, then make sure that all dimensions that are included in ATP index are also shown in the **Product** section. For example, if your ATP index includes both `ColorId` and `SizeId`, then these must be listed here. If any dimensions are missing, select **Edit Dimensions** to add them. In the search form, you can leave some of the dimension values blank, but they must be included in the query body if they are configured in the ATP index.
+    > If you plan to make an ATP query, ensure that every dimension that is included in the ATP index is also listed in the **Product** section. For example, if your ATP index includes `ColorId` and `SizeId`, both those dimensions must be listed in the **Product** section. If any dimensions are missing, select **Edit Dimensions** to add them. In the search form, you can leave some of the dimension values blank. However, the dimensions must be included in the query body if they are included in the ATP index.
 
 1. For each field that you want to include in the query, but without filtering on any specific value, select **Use all values**.
 1. In the **Query Settings** section, set the following options:
@@ -277,7 +277,7 @@ Follow these steps to set up and submit a soft reservation.
 
 1. Select **Post** on the toolbar to send the request.
 
-### Change schedule
+### Change a schedule
 
 Use the **Post on hand change schedule** page in the **Operational visibility** group to post inventory changes with dates to the Inventory Visibility service. Follow these steps to set up and submit a schedule change.
 
