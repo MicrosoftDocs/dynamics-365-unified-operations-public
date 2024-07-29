@@ -1,6 +1,6 @@
 ---
-title: Sync external inventory changes through Inventory Visibility (preview)
-description: This article describes how to set up the system to sync inventory changes registered in an external system to Dynamics 365 Supply Chain Management and Inventory Visibility through the Inventory Visibility service business layer.
+title: Sync external inventory adjustments through Inventory Visibility (preview)
+description: This article describes how to set up the system to sync inventory adjustments registered in an external system to Dynamics 365 Supply Chain Management and Inventory Visibility through the Inventory Visibility service business layer.
 author: yufeihuang
 ms.author: yufeihuang
 ms.reviewer: kamaybac
@@ -11,23 +11,23 @@ ms.custom:
   - bap-template
 ---
 
-# Sync external inventory changes through Inventory Visibility (preview)
+# Sync external inventory adjustments through Inventory Visibility (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!--KFM: Preview until 10.0.41 GA -->
 
-<!--KFM: There is some confusion in this article related to "transaction" vs "adjustment" vs "line". Are these always the same thing? -->
+<!--KFM: There is some confusion in this article related to "transaction" vs "adjustment" vs "change". Are these always the same thing? -->
 
-This article describes how to set up the system to sync inventory changes registered in an external system to Dynamics 365 Supply Chain Management and Inventory Visibility through the Inventory Visibility service business layer.
+This article describes how to set up the system to sync inventory adjustments registered in an external system to Dynamics 365 Supply Chain Management and Inventory Visibility through the Inventory Visibility service business layer.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 This feature lets organizations that have multiple sources or channels of inventory operations working outside of Supply Chain Management use Inventory Visibility to store their omnichannel inventory transactions. Based on these transactions, Inventory Visibility can create and post inventory journals to Supply Chain Management. These capabilities provide the following key business benefits:
 
-- **Manage all omnichannel inventory changes all in one place** – You can post inventory changes across all channels and data sources to Inventory Visibility, which takes care of the aggregation and posting to Supply Chain Management
+- **Manage all omnichannel inventory adjustments all in one place** – You can post inventory adjustments across all channels and data sources to Inventory Visibility, which takes care of the aggregation and posting to Supply Chain Management
 
-- **Track inventory flow from end to end** – You can track inventory flows from source transactions/documents all the way to Supply Chain Management inventory and financial records. The system stores source document types and reference numbers when posting inventory changes to Inventory Visibility. Inventory Visibility also links Supply Chain Management journal numbers back to their original inventory transaction.
+- **Track inventory flow from end to end** – You can track inventory flows from source transactions/documents all the way to Supply Chain Management inventory and financial records. The system stores source document types and reference numbers when posting inventory adjustments to Inventory Visibility. Inventory Visibility also links Supply Chain Management journal numbers back to their original inventory transaction.
 
 :::image type="content" source="media/sync-omnichannel-inventory-concept.svg" alt-text="Concept diagram." lightbox="media/sync-omnichannel-inventory-concept.svg":::
 
@@ -81,9 +81,9 @@ To set up the feature, follow these steps:
 
 1. If **Periodically synchronize transaction to Fno** is set to *True*, then you must configure your system to offset inventory adjustments to prevent inventory quantities from being updated twice. For details, see [Inventory Visibility adjustment offset](inventory-visibility-adjustment-offset.md).
 
-## Manually enter inventory changes in the Inventory Visibility app
+## Manually enter inventory adjustments in the Inventory Visibility app
 
-You can manually enter inventory changes directly into the Inventor Visibility business layer using the Inventory Visibility app in Power Apps. Here's how to do it:
+You can manually enter inventory adjustments directly into the Inventor Visibility business layer using the Inventory Visibility app in Power Apps. Here's how to do it:
 
 1. Sign in to Power Apps, and open the **Inventory Visibility** app.
 1. On the navigation pane, select **Inquiries and reports** \> **Inventory transactions**.
@@ -100,9 +100,9 @@ You can manually enter inventory changes directly into the Inventor Visibility b
 1. If you'd like to see how your inventory adjustment will look when posted to the Inventory Visibility business layer through the API, select **Developer reference**. This will show you the JSON body that will be sent to the Inventory Visibility business layer when you post the transaction.
 1. From the toolbar, select **Post**.
 
-## Submit inventory changes to the Inventory Visibility API
+## Submit inventory adjustments to the Inventory Visibility API
 
-External systems typically submit inventory changes to the Inventory Visibility business layer through the transaction adjustment API. Here are the API and body content details:
+External systems typically submit inventory adjustments to the Inventory Visibility business layer through the transaction adjustment API. Here are the API and body content details:
 
 <!--KFM: IMPORTANT!!  I added this specification based on what we have in the existing API documentation. I guessed the data types and many other details, including the method (POST). PLEASE REVIEW THIS CAREFULLY! Other details may be missing (for example, how to submit bulk updates). -->
 
@@ -156,7 +156,7 @@ To view detailed inventory transactions, follow these steps:
     - **Source line status** – Shows the current status of the transaction using one of the following values:
         - *Created* - The adjustment was created in Inventory Visibility business layer. <!--KFM: and is waiting to be posted? -->
         - *IVPosted* - The adjustment was successfully updated in Inventory Visibility cache. <!--KFM: and is waiting/ready to be aggregated? -->
-        - *Aggregated* - Detailed lines were successfully aggregated based on matching dimension values. <!--KFM: and is ready (has been?) to be posted to SCM? Has also been posted to IV? -->
+        - *Aggregated* - Detailed lines were successfully aggregated based on matching dimension values. <!--KFM: and is ready to be(has been?)  posted to SCM? Has also been posted to IV? -->
     - **Aggregated line ID** –  <!--KFM: briefly describe what this is -->. Select this link to open details about the linked aggregated line. Once the aggregated lines are successfully created/posted in Supply Chain Management, the returned Supply Chain Management journal ID and journal line ID will be included in the aggregated transaction details.
 
 ### View aggregated inventory transactions
@@ -170,7 +170,7 @@ To view aggregated inventory transactions, follow these steps:
     - **Line record ID** – <!--KFM: briefly describe what this is -->. Select this link to view more details about the aggregated transaction. Once the aggregated lines are successfully created/posted in Supply Chain Management, the returned Supply Chain Management journal ID and journal line ID will be included in the aggregated transaction details.
     - **Aggregated line status** – Shows the current status of the aggregated transaction using one of the following values:
         - *Created* - The aggregated transaction record was created successfully. <!--KFM: And is waiting to sync? -->
-        - *DoNotSync* - The line won't be synced to Supply Chain Management. This is typically because the aggregated line inventory change quantity is 0 (inventory quantity wasn't changed, so there is no need to sync it).
+        - *DoNotSync* - The line won't be synced to Supply Chain Management. This is typically because the aggregated line inventory change quantity is 0 (inventory quantity wasn't changed, so there is no need to sync it). <!--KFM: Might this also happen due to configuration setting? -->
         - *Supply Chain ManagementSent* - Inventory Visibility sent a request to synchronize the line with Supply Chain Management
         - *FnOCreateError* - An error occurred when trying to create the transaction in Supply Chain Management. <!--KFM: What now? -->
         - *FnOCreated* - Supply Chain Management successfully processed the sync request and created the transaction.
