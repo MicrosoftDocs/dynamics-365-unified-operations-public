@@ -54,7 +54,6 @@ Before you begin the procedures in this article, the following prerequisites mus
 ## Configure the electronic invoicing feature
 
 The **Chilean electronic invoice (CL) "E-Invoicing for Chile: ISV last-mile connector with Edicom"** feature represents an outbound flow to issue the following sales documents:
-
 	- **Invoice - cod 33, Factura Electrónica**
 	- **Packing slip (e-shipping guide) - cod 52, Guía de Despacho Electrónica**
 	- **Debit note - cod 56, Nota de Débito Electrónica**
