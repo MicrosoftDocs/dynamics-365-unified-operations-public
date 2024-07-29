@@ -48,7 +48,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Deployment option** | Cloud and on-premises |
 | **Status** | <p>Supported until version 10.0.40. As of version 10.0.41, inventory transactions will be deprecated for tracking on-hand inventory for internal warehouse operations. Existing customers will be able to continue using this scenario after that version, but new features and bug fixes for this scenario will only be implemented for [warehouse-specific inventory transactions](../warehousing/warehouse-transactions.md).</p><p>Approximately one year after the release of version 10.0.41, support for this scenario will be removed and all customers will be required to move to [warehouse-specific inventory transactions](../warehousing/warehouse-transactions.md) for tracking on-hand inventory for internal warehouse operations.</p> |
 
-### Release to warehouse
+### Release to warehouse page
 
 | &nbsp;  | &nbsp;  |
 |---|---|
