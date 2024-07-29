@@ -54,13 +54,14 @@ Before you begin the procedures in this article, the following prerequisites mus
 ## Configure the electronic invoicing feature
 
 The **Chilean electronic invoice (CL) "E-Invoicing for Chile: ISV last-mile connector with Edicom"** feature represents an outbound flow to issue the following sales documents:
-	- **Invoice - cod 33, Factura Electrónica**
-	- **Packing slip (e-shipping guide) - cod 52, Guía de Despacho Electrónica**
-	- **Debit note - cod 56, Nota de Débito Electrónica**
-	- **Credit note - cod 61, Nota de Crédito Electrónica**
-	- **Export invoice - cod 110, Factura de Exportación**
-	- **Export debit note - cod 111, Nota de Débito de Exportación**
-	- **Export credit note - cod 112, Nota de Crédito de Exportación**
+
+- **Invoice - cod 33, Factura Electrónica**
+- **Packing slip (e-shipping guide) - cod 52, Guía de Despacho Electrónica**
+- **Debit note - cod 56, Nota de Débito Electrónica**
+- **Credit note - cod 61, Nota de Crédito Electrónica**
+- **Export invoice - cod 110, Factura de Exportación**
+- **Export debit note - cod 111, Nota de Débito de Exportación**
+- **Export credit note - cod 112, Nota de Crédito de Exportación**
 
 Some parameters of the feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, add a feature based on the one provided by Microsoft, complete common parameters on the **Feature parameters** tab, review the default values, and update them as required, so that they better reflect your business operations.
 
