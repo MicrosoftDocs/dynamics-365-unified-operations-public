@@ -763,7 +763,7 @@
         items:
         - name: Physical and financial updates
           href: cost-management/physical-financial-updates.md
-        - name: Include physical value
+        - name: Options for including physical value in cost calculations
           href: cost-management/include-physical-value.md
         - name: Fixed receipt price
           href: cost-management/fixed-receipt-price.md
