@@ -38,7 +38,8 @@ Before you begin the procedures in this article, the following prerequisites mus
 	- **E-Invoicing service workspace designer**
 	- **Execute update actions for submitted documents**
 1. Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
-    - Inventory e-invoice (CL)
+    - Customer invoice context model
+	- Inventory e-invoice (CL)
 	- Inventory Export e-Invoice (CL)
     - E-shipping guide (CL)
     - Project e-invoice (CL)
@@ -48,7 +49,7 @@ Before you begin the procedures in this article, the following prerequisites mus
 	- Edicom response error log import
 	
     > [!NOTE]
-    > These formats are based on the corresponding **LATAM** format configurations that use the **Invoice model** and **Invoice model mapping** configurations. All required additional configurations are automatically imported.
+    > These formats are based on the corresponding **LATAM** format configurations that use the **Invoice model LATAM** and **Invoice model mapping LATAM** configurations. All required additional configurations are automatically imported.
 
 ## Configure the electronic invoicing feature
 
@@ -135,6 +136,31 @@ After you imported the **Electronic invoicing for Chile** feature comprising out
 After you complete all the required configuration steps, you can generate and submit electronic invoices for posted invoices by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. For more information about how to generate electronic invoices, see [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
 
 You can inquire about the results of a submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and selecting the required document type. For more information, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
+
+Specifically for Chile, once you have submitted the invoice, the submission status is set to **Pending Update Actions execution**. 
+you would see that the response body would most likely be empty for the signed XML and get invoice status call. it is an empty XML which means that it was not available immediately after the submission.
+To process the peding status, we have introduced a function called **Execute Update actions**: this function will resume the pipeline starting from the action marked as an update action and execute all the subsequent actions.
+
+	![Screenshot of the Execute update action.](ltm-chl-e-invoice-execute-update-action.png)
+
+    > [!NOTE]
+    > You can configure it to run in batch mode and on a periodic basis by setting a recurrence schedule.
+
+This should change the status to Executing again and after a few seconds it is back to the Pending Update actions execution state.
+
+Looking at the submission details now you will observe that these steps are executed again and this time the signed XML as been received.
+
+	![Screenshot of the Signed XML.](ltm-chl-e-invoice-signed-XML.png)
+
+As a result of the completed outbound flow, the signed XML has been attached to the Invoice journal: Edicom source file:
+	
+	![Screenshot of the Execute update action.](ltm-chl-e-invoice-attached-source-file.png)
+
+Eventually, after 9 days , the **Terminate pipeline** action completes the pipeline if a business rejection or acceptance has not been received from a buyer earlier.
+
+	![Screenshot of the Terminate pipeline action.](ltm-chl-e-invoice-outbound-pipeline-terminated.png)
+
+
 
 ## More resources
 
