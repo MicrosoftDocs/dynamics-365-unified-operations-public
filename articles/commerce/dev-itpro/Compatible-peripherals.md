@@ -1,14 +1,14 @@
 ---
 title: Peripheral compatibility for Commerce 
 description: This article lists peripheral devices that have been tested for compatibility with Dynamics 365 Commerce.
-author: BrianShook
+author: ritakimani
 ms.date: 07/29/2024
 ms.topic: conceptual
 ms.custom: 
   - bap-template
 ms.reviewer: josaw
 ms.search.region: Global
-ms.author: brshoo
+ms.author: ritakimani
 ms.search.validFrom: 2017-10-08
 
 ---
