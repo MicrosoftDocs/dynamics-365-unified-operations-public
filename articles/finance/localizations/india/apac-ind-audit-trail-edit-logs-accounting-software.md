@@ -179,7 +179,7 @@ To use a finance and operations application, a finance and operations apps envir
 
 •	Administrators can restore their environments to a specific point in time in the past by using LCS. For more information, see [Database point-in-time restore (PITR)](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/database/database-point-in-time-restore).
 
-[Manage environment.](../media/manage-environment.png)
+![Manage environment.](../media/manage-environment.png)
 
 ###### Finance and operations apps environments that are deployed outside of India
 
