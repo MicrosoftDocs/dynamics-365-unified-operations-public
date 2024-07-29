@@ -1,23 +1,20 @@
 ---
-title: Warehouse management only mode with external shared warehouses (preview)
-description: This article explains how to run Warehouse management only mode with external shared warehouse processing.
+title: Warehouse management only mode with external shared warehouses
+description: Learn how to run Warehouse management only mode with external shared warehouse processing with an outline on a high-level implementation example.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSSourceSystem, WHSEWManagementSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSEWInboundShipmentOrderRequest, WHSEWOutboundShipmentOrderRequest, WHSEWOutboundShipmentOrderUpdate, WHSInventoryOwner, WHSInventoryUpdateLog, WHSExternalInventoryAdjustment, WHSEWInboundShipmentOrderUpdate
 ms.topic: overview
 ms.date: 04/27/2024
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: WHSSourceSystem, WHSEWManagementSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSEWInboundShipmentOrderRequest, WHSEWOutboundShipmentOrderRequest, WHSEWOutboundShipmentOrderUpdate, WHSInventoryOwner, WHSInventoryUpdateLog, WHSExternalInventoryAdjustment, WHSEWInboundShipmentOrderUpdate
 ---
 
-# Warehouse management only mode with external shared warehouses (preview)
+# Warehouse management only mode with external shared warehouses
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until further notice -->
 
 This article explains how to use Warehouse management only mode to support external shared warehouse processing. This approach enables warehouse management (WMS) functionality to be consolidated into a separate legal entity that handles requests from multiple sales subsidiaries (legal entities) in Microsoft Dynamics 365 Supply Chain Management.
 
@@ -32,8 +29,6 @@ The following articles provide detailed information about how *Warehouse managem
 - [Warehouse management only mode with external ERP system](wms-only-mode-external-erp.md)
 - [Exchange data between systems](wms-only-mode-exchange-data.md)
 - [Create and process message queues and message types](../supply-chain-dev/message-processor.md)
-
-[!INCLUDE [preview-note](../includes/preview-note.md)]
 
 ## High-level implementation example
 

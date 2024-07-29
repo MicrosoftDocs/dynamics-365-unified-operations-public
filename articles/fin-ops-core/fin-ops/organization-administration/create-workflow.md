@@ -5,7 +5,8 @@ author: ChrisGarty
 ms.author: cgarty
 ms.topic: overview
 ms.date: 07/25/2019
-ms.custom: ["195583"]
+ms.custom: 
+  - bap-template
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -19,9 +20,6 @@ ms.assetid: 836ddd01-cc34-45c3-a4b0-20647357dbc6
 # Create workflows overview
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 This article explains how to create a workflow.
 

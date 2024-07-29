@@ -1,21 +1,20 @@
 ---
-title: Example of using inbound and outbound shipment orders (preview)
-description: This article provides an example scenario that shows how to create inbound and outbound shipment orders. 
+title: Example of using inbound and outbound shipment orders
+description: This article provides an example scenario that shows how to create inbound and outbound shipment orders, including an outline on testing the creation process. 
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage
 ms.topic: how-to
 ms.date: 01/29/2024
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage
 ---
 
-# Example of using inbound and outbound shipment orders (preview)
+# Example of using inbound and outbound shipment orders
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 <!-- KFM: Preview until further notice -->
@@ -46,14 +45,8 @@ The same message structure logic applies to both the inbound and outbound shipme
 
 - Complete
 
-<!-- This example uses [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) to create simple orders that have minimal payload.
-
-If you want, you can create a *fork* of the [Postman environment and collection examples](https://go.microsoft.com/fwlink/?linkid=2250135). Be sure to select the environment and fill in the correct environment variables before you run the `CREATE TOKEN VARIABLE` collection.-->
-
-The example data that's provided in this article uses a process that doesn't depend on the default company to authorize users. Therefore, the messages must include a `dataAreaId` value.
-
-<!-- [!NOTE]
-> To make messages processing easier, [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) supports collections and environment variables that can be reused for all requests, including authorization. In this example, variables are indicated by double braces (\{\{&hellip;\}\}).-->
+> [!TIP]
+> For more examples of HTTP requests for creating messages and integrating inventory and product master data, go to the [dynamics365scm-warehouse repository on GitHub](https://github.com/microsoft/dynamics365scm-warehouse/tree/main/wom-http).
 
 ## Prerequisites
 

@@ -1,13 +1,13 @@
 ---
 title: License plate label layouts and printing
-description: This article describes how to set up and print license plate labels using label layouts.
+description: Learn how to set up and print license plate labels using label layouts, including an outline on enabling license plate label layouts.
 author: Mirzaab
 ms.author: mirzaab
+ms.topic: how-to
+ms.date: 07/23/2024
+ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSLabelLayout, WHSLabelLayoutDataSource, WHSDocumentRouting
-ms.topic: how-to
-ms.date: 07/31/2023
-ms.custom: bap-template
 ---
 
 # License plate label layouts and printing
@@ -215,6 +215,7 @@ To specify the license plate label layouts that are used and where they're print
 1. On the **Document routing printers** FastTab, assign the printer and label layout that should be used when the criteria for the routing record are met. Select **New** on the toolbar to add a line to the grid. Then set the following fields for the new line:
 
     - **Name** – Select an appropriate ZPL printer. For more information, see [Install the Document Routing Agent to enable network printing](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md). Leave this field blank if you want to use [dynamic printer selection](dynamic-printing-selection.md).
+    - **Use specified printer** – If you want to use dynamic printer selection and use the configured printer as a fallback when dynamic printer selection doesn't find a more specific printer, set this field to *As fallback printer*. If this field is set to *Always* and a printer is configured, then dynamic printer selection is disabled.
     - **Label layout ID** – Select the label layout to use. The example label layout ID value that was suggested earlier in this article was *License plate*.
 
 ## Automatically print labels when purchase orders are received by using the mobile app

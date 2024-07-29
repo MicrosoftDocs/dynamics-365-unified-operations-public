@@ -1,15 +1,15 @@
 ---
 title: Global mobile device parameters
-description: This article explains how to set up mobile device settings on the Warehouse management parameters page.
+description: Learn how to set up mobile device settings on the Warehouse management parameters page with an outline on opening the Warehouse management parameters page.
 author: Mirzaab
-ms.date: 08/13/2021
-ms.topic: article
-ms.search.form: WHS
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: mirzaab
+ms.topic: article
+ms.date: 08/13/2021
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-08-13
+ms.search.form: WHS
 ms.dyn365.ops.version: 10.0.18
 ---
 

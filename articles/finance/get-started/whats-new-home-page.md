@@ -4,13 +4,13 @@ description: Access topics that describe the new and changed features in each re
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 04/26/2024
+ms.custom: 
+  - bap-template
+ms.date: 07/22/2024
 ms.reviewer: twheeloc
 ms.collection: get-started
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-02-29
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.9
 ---
 

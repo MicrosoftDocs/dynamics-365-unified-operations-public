@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Receive partial deliveries of returned items   
-description: Partial deliveries are defined in terms of return order lines, not return order shipments.
+description: Learn how partial deliveries are defined in terms of return order lines, not return order shipments, including a step-by-step process.
 author: Henrikan
 ms.author: henrikan
-ms.date: 05/01/2018
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 05/01/2018
 ms.custom: 
-ms.assetid: 
+ms.reviewer: kamaybac
+audience: Application User
 ms.search.region: Global
-# ms.search.industry: 
 ms.search.validFrom: 2016-02-28
+ms.search.form:
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Receive partial deliveries of returned items

@@ -1,15 +1,15 @@
 ---
 title: Master plans overview
-description: Use various master plans to support your company's daily working operations, simulate different planning strategies that you want to monitor, and implement a company policy, such as a policy about internal performance or customer satisfaction. This article describes various important strategies and parameters that are used to set up master plans.
+description: Learn how to use various master plans to support your company's daily working operations with an outline on strategies and parameters used to set up master plans.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: ReqCreatePlanWorkspace, ReqParameters, ReqPlanSched
 ms.topic: overview
 ms.date: 01/05/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: ReqCreatePlanWorkspace, ReqParameters, ReqPlanSched
 ---
 
 # Master plans overview

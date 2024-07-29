@@ -1,15 +1,15 @@
 ---
 title: Dynamic printer selection
-description: This article explains how to set up your system to dynamically select a printer when license plate labels and container labels are printed.
+description: Learn how to set up your system to dynamically select a printer when license plate labels and container labels are printed.
 author: adesypri
 ms.author: adesypri
-ms.reviewer: kamaybac
-ms.search.form: WHSLicensePlateLabel, WHSWorkUserdefaultLabelPrinterTable, WHSLocationDefaultLabelPrinter, WHSLabelLayout, WHSDocumentRoutingLayout, WHSPrinterStockType, WHSSysCorpNetPrinters
 ms.topic: how-to
-ms.date: 07/31/2023
+ms.date: 07/23/2024
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: WHSLicensePlateLabel, WHSWorkUserdefaultLabelPrinterTable, WHSLocationDefaultLabelPrinter, WHSLabelLayout, WHSDocumentRoutingLayout, WHSPrinterStockType, WHSSysCorpNetPrinters
 ---
 
 # Dynamic printer selection
@@ -107,6 +107,12 @@ Follow these steps to set up default label printers for each worker and/or locat
     - **Warehouse** – Select the warehouse that the row applies to. You can set up multiple rows for workers who work in more than one warehouse. Leave this field blank to set the default printer that's used for a worker if no other, more specific row applies. When the worker requests printing, the system will select the printer that's most specific to the warehouse where the worker is signed in.
     - **Printer name** – Select the default printer to use for the combination of a worker, warehouse, and stock type on the row.
 
+1. On the **Devices** tab, the grid shows the default label printers that are assigned to mobile devices. Use the toolbar buttons to add or remove rows as required. For each row, set the following fields:
+
+    - **Printer stock type** – Select the printer stock type that the row applies to.
+    - **Mobile device** – Select the ID or friendly name of the device that the row applies to.
+    - **Printer name** – Select the default printer to use for the device that the row applies to.
+
 1. On the Action Pane, select **Save**.
 
 ## Create a menu item that lets workers override their default printer
@@ -123,8 +129,10 @@ When a print job is run, the system uses the following sequence to identify whic
 1. If no printer override exists, the system checks the default printer setup.
 
     1. If a default label printer that uses the required stock type is set up for the location or zone that's specified in the current flow (for example, when a container label is printed from the packing station), the system uses that printer.
+    1. If a default label printer that uses the required stock type is set up for the mobile device the current flow is executing on (for example, forklift mounted mobile device and printer), the system uses that printer.
     1. Otherwise, the system uses the default label printer that uses the required stock type and that's set up for the current user and warehouse.
 
+1. If no printer is found, a fallback printer, if provided, is used. Fallback printers are configured for specific label printing scenarios, such as license plate label printing or container label printing. See Additional resources for more information.
 1. If no override or default printer is found, no label is printed.
 
 ## Additional resources

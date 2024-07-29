@@ -1,16 +1,14 @@
 ---
 title: EU sales list for Netherlands
-description: This article provides information about how to generate the EU sales list for Netherlands.
-author: AdamTrukawka
-ms.date: 09/20/2021
-ms.topic: article
-audience: Application User
+description: Learn about how to generate the EU sales list for Netherlands, including an outline and step-by-step process for setting up EU eales lists.
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-ms.search.region: 
-ms.author: atrukawk
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
-ms.search.form: 
+
 ---
 
 # EU sales list for Netherlands

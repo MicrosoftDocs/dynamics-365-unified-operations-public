@@ -1,21 +1,21 @@
 ---
 title: Price structure overview (preview)
-description: This article provides an overview of how price structures work in Pricing management.
+description: Learn how price structures work in Pricing management, including outlines on price component types and concurrency rules.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: GUPPricingTree, GUPPriceComponentCodeSetup
 ms.topic: overview
 ms.date: 04/03/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: GUPPricingTree, GUPPriceComponentCodeSetup
 ---
 
 # Price structure overview (preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 When a sales order is placed, you can review the detailed price breakdown, including the price component. The breakdown corresponds to the price structure that you've configured. The price details provide an audit record that shows how the price was determined, and they can serve as a starting point for future price investigation.

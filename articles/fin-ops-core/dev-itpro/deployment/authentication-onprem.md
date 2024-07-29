@@ -3,15 +3,15 @@ title: Authentication in Dynamics 365 Finance + Operations (on-premises) environ
 description: Learn about how the authentication process works for Dynamics 365 finance and operations apps so that if you have issues you can work to resolve them.
 author: faix
 ms.author: osfaixat
-ms.topic: article
-ms.date: 11/18/2020
+ms.topic: how-to
 ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
 ms.reviewer: johnmichalak
-audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2020-09-30
-ms.search.form:
 ms.dyn365.ops.version: 10.0.15
+ms.service: dynamics-365-op
 ---
 
 # Authentication in Dynamics 365 Finance + Operations (on-premises) environments

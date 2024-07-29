@@ -1,21 +1,21 @@
 ---
 title: Pricing management overview (preview)
-description: This article provides an overview of the Pricing management module in Microsoft Dynamics 365 Supply Chain Management.
+description: Access an overview of the Pricing management module in Microsoft Dynamics 365 Supply Chain Management, including a list of challenges.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: overview
 ms.date: 04/03/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form:
 ---
 
 # Pricing management overview (preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 This article provides an overview of the **Pricing management** module for Microsoft Dynamics 365 Supply Chain Management.
@@ -40,7 +40,7 @@ Supply Chain Management uses the [Commerce Scale Unit (CSU) Core](../../commerce
 - Use enhanced discount budget controls to help avoid margin leakage from fund consumption.
 - Use the [CSU-based pricing API](../../commerce/pricing-apis.md) for Dynamics 365 Commerce to enable pricing calculations to be retrieved by a native Commerce point of sale (POS) system and/or consumed by external applications to support different pricing scenarios.
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Pricing components
 

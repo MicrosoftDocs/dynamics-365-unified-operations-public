@@ -3,22 +3,20 @@ title: What's new or changed in Dynamics 365 Finance 10.0.23
 description: Learn about features that are either new or changed in the Dynamics 365 Finance version 10.0.23 preview release distributed in January 2022.
 author: kfend
 ms.author: kfend
-ms.topic: article
-ms.date: 10/15/2021
+ms.topic: whats-new
 ms.custom:
+  - bap-template
+  - evergreen
+ms.date: 07/15/2024
 ms.reviewer: kfend
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-10-15
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.23
 ---
 
 # Preview features in Dynamics 365 Finance 10.0.23 (January 2022)
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 This article lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.23. This version has a build number of 10.0.1037 and is available as follows:
 

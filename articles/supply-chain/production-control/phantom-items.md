@@ -1,23 +1,21 @@
 ---
 title: Phantom items
-description: This article describes how the Phantom line type can be used for the lines of a bill of materials (BOM) and a formula in Dynamics 365 Supply Chain Management.
+description: Learn how the Phantom line type can be used for the lines of a bill of materials (BOM) and a formula in Dynamics 365 Supply Chain Management.
 author: johanhoffmann
-ms.date: 05/05/2022
-ms.topic: article
-ms.search.form: SysOperationTemplateForm   
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: johanho
-ms.search.validFrom: 2022-05-05
-ms.dyn365.ops.version: 10.0.23
+ms.reviewer: kamaybac
+ms.search.form: SysOperationTemplateForm
+ms.topic: conceptual
+ms.date: 06/28/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Phantom items
 
 [!include [banner](../includes/banner.md)]
 
-This article describes, in detail, how the Phantom line type can be used for the lines of a bill of materials (BOM) and a formula.
+This article describes, in detail, how the *Phantom* line type can be used for the lines of a bill of materials (BOM) and a formula.
 
 In figure 1, (a) is the BOM for product H and parts F and G, and (b) is the route sheet for products H and part F.
 
@@ -39,20 +37,20 @@ Figure 2 shows how the preceding Engineering BOM is transitioned into a Manufact
 ![Figure 2: Manufacturing BOM.](media/product-H-part-B.png)
 *Figure 2: Manufacturing BOM*
 
-In this structure, you can see that there is no notion of parts F and G, and the materials that these parts consist of have been elevated to the next BOM level.
+In this structure, you can see that there's no notion of parts F and G, and the materials that these parts consist of have been elevated to the next BOM level.
 
 Unlike the Engineering BOM, which had two operations sheets, the Manufacturing BOM has only one operations sheet. The packaging operation that was linked to part G has also been elevated and is now part of the operations sheet for product H. The assembly of the electrical unit is the first operation. This order makes good sense, because this unit is used in the next operation, which is the machine assembly. The last operation is the packaging operation, which consumes two packing materials (C and D).
 
-The transition between the Engineering BOM and the Manufacturing BOM is enabled through the Phantom BOM line type. As the term “phantom” indicates, parts F and G have disappeared during the transition between the two BOM types. In this example, the Phantom line type is applied to the BOM lines for parts F and G in the Engineering BOM. When a production or batch order is created, the Engineering BOM is copied to the production or batch order. Then, when the order is estimated, the transition from the Engineering BOM to the Manufacturing BOM occurs, as shown in figure 2. From the operations sheet in figure 2, packaging materials C and D are input for the operation.
+The transition between the Engineering BOM and the Manufacturing BOM is enabled through the *Phantom* BOM line type. As the term *phantom* indicates, parts F and G have disappeared during the transition between the two BOM types. In this example, the *Phantom* line type is applied to the BOM lines for parts F and G in the Engineering BOM. When a production or batch order is created, the Engineering BOM is copied to the production or batch order. Then, when the order is estimated, the transition from the Engineering BOM to the Manufacturing BOM occurs, as shown in figure 2. From the operations sheet in figure 2, packaging materials C and D are input for the operation.
 
 ## Multilevel phantom BOM structures
 
-The Phantom line type can be used in multilevel BOM structures, as shown in figure 3. In figure 3, (a) is the BOM for product G, and (b) is the route sheet for parts E and F and product G.
+The *Phantom* line type can be used in multilevel BOM structures, as shown in figure 3. In figure 3, (a) is the BOM for product G, and (b) is the route sheet for parts E and F and product G.
 
 ![Figure 3: Engineering BOM part G.](media/product-G.png)
 *Figure 3: Engineering BOM part G*
 
-Figure 4 shows the resulting Manufacturing BOM and route sheet if the BOM lines for parts E and F are configured so that the line type is Phantom. In figure 4, (a) is the BOM for product G, and (b) is the route sheet for product G.
+Figure 4 shows the resulting Manufacturing BOM and route sheet if the BOM lines for parts E and F are configured so that the line type is *Phantom*. In figure 4, (a) is the BOM for product G, and (b) is the route sheet for product G.
 
 ![Figure 4: Manufacturing BOM part G.](media/product-G-route-sheet-G.png)
 *Figure 4: Manufacturing BOM part G*
@@ -68,6 +66,5 @@ In figure 6, (a) is the BOM for product G and part F, and (b) is the route sheet
 
 ![Figure 6: Manufacturing BOM part G, route network.](media/product-G-part-F-with-route-sheet.png)
 *Figure 6: Manufacturing BOM part G, route network*
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

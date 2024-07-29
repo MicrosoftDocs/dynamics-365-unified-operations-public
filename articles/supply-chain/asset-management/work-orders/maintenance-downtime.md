@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Maintenance downtime for work orders
-description: This article describes how to create maintenance downtime registrations on the asset that is selected on a work order.
+description: Learn how to create maintenance downtime registrations on the asset that is selected on a work order, including a process for creating downtime reason codes.
 author: johanhoffmann
-ms.date: 10/15/2019
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
+ms.topic: article
+ms.date: 10/15/2019
+ms.custom: 
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2019-09-30
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.5
 
 ---

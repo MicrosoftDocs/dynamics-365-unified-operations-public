@@ -1,15 +1,15 @@
 ---
 title: Rebate management parameters
-description: This article describes the Rebate management parameters page. This page contains settings that affect posting, status updates, number sequences, and other behavior.
+description: Learn about the Rebate management parameters page. This page contains settings that affect posting, status updates, number sequences, and other behavior.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: TAMRebateParameters
 ms.topic: how-to
 ms.date: 05/15/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: TAMRebateParameters
 ---
 
 # Rebate management parameters

@@ -28,7 +28,7 @@ This article explains how to set up Customer Lockbox, and how access requests ar
 
 ## Enable Customer Lockbox
 
-You can enable Customer Lockbox as required for the data sources on your tenant. Global administrators and Microsoft Power Platform administrators can enable the Customer Lockbox policy. After it's enabled, you'll also be able to use Customer Lockbox for other finance and operations apps that run on your tenant and are integrated with Microsoft Power Platform.
+You can enable Customer Lockbox as required for the data sources on your tenant. Administrators can enable the Customer Lockbox policy in the Power Platform admin center at the tenant level. After it's enabled, you'll also be able to use Customer Lockbox for other finance and operations apps that run on your tenant and are integrated with Microsoft Power Platform.
 
 To enable Customer Lockbox for your finance and operations apps environment, follow these steps.
 

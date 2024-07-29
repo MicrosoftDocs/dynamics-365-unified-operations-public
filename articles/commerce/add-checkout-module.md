@@ -1,21 +1,21 @@
 ---
-title: Checkout module (preview)
+title: Checkout module
 description: This article describes how to add a checkout module to a page and set the required properties.
 author: anupamar-ms
-ms.date: 05/09/2024
+ms.date: 05/28/2024
 ms.topic: article
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: anupamar
+ms.author: niholman
 ms.search.validFrom: 2019-10-31
-
+ms.custom: 
+  - bap-template
 ---
 
-# Checkout module (preview)
+# Checkout module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article describes how to add a checkout module to a page and set the required properties.
 

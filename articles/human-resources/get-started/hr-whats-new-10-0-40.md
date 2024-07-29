@@ -18,9 +18,19 @@ ms.search.region: Global
 
 This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.40. This version has a build number of 10.0.1935.5 and is available on the following schedule:
 
-- **Preview of release:** April 2024
-- **General availability of release (self-update):** May 2024
-- **General availability of release (auto-update):** June 2024
+- **Preview of release**: April 2024
+- **General availability of release (self-update)**: May 2024
+- **General availability of release (auto-update)**: June 2024
+
+## Features included in this release
+
+This section contains a table that lists the features that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
+
+| Module or feature area | Feature name | More information | Enabled by |
+|---|---|---|---|
+|Human Resources |Employee self service leave summary| This feature displays an AI-generated summary on the **Employee self service** workspace. The AI-generated summary includes information about an employee's time off and benefit information.| Feature management |
+
+
 
 
 ## Feature enhancements included in this release
@@ -32,7 +42,7 @@ originally published.
 |---|---|
 | Streamlined employee entry	|Streamlined employee entry page will be mandatory starting in Dynamics 365 Human Resources 10.0.41 release. |
 | Additional payroll entities | Additional entities are available for Dynamics 365 Human Resources payroll integration. |
-| Alternate key | Additional fields are available as alternate keys in performance management. For more information, see [Alternate keys in performance management tables](hr-developer-alternate-key-perf-mgmt.md). |
+| Alternate key | Additional fields are available as alternate keys in performance management. For more information, see [Alternate keys in performance management tables](../hr-developer-alternate-key-perf-mgmt.md). |
 
 ## Additional resources
 
@@ -44,9 +54,6 @@ Dynamics 365 Finance version 10.0.40 includes platform updates. To learn more, s
 
 For information about the bug fixes included in this update, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=932660).
 
-### Regulatory updates
-
-For information about regulatory updates for finance and operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to Lifecycle Services and view the planned regulatory updates using the issue search tool. Issue search lets you search by country/region, type of feature, and release.
 
 ### Dynamics 365 and industry clouds: 2024 release wave 1 plan
 

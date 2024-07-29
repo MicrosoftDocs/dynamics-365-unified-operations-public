@@ -4,9 +4,10 @@ description: Learn how to complete a party search using a registration ID, inclu
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.search.validFrom: 2016-06-30
 ms.search.form: DirPartyTable, DirPartTaxRegistrationSearch

@@ -5,7 +5,7 @@ author: edupont04
 ms.author: edupont
 ms.topic: article
 ms.date: 04/12/2023
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28

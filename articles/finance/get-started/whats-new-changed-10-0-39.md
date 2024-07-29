@@ -4,13 +4,12 @@ description: Learn about features that are either new or changed in the Microsof
 author: twheeloc
 ms.author: twheeloc
 ms.topic: faq
-ms.date: 2/19/2024
-ms.custom: evergreen
+ms.custom: 
+  - bap-template
+ms.date: 07/22/2024
 ms.reviewer: twheeloc
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2022-09-02
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.39
 ---
 
@@ -20,7 +19,7 @@ ms.dyn365.ops.version: 10.0.39
 
 [!include [banner](../includes/preview-banner.md)]
 
-This article lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.39. This version has a build number of 10.0.1860.18 and is available on the following schedule:
+This article lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.39. This version has a build number of 10.0.1860.32 and is available on the following schedule:
 
 - **Preview of release:** January 2024
 - **General availability of release (self-update):** March 2024
@@ -36,7 +35,7 @@ The following table lists the features that are included in this release. We mig
 | Accounts payable | New vendor invoice center | This feature introduces a new workspace that replaces the current **Vendor invoice automation** workspace. The new workspace provides an intuitive view of the invoices in the different stages of vendor invoice processing. Detailed drill-down lists and Copilot integration for exception handling will be introduced in upcoming releases. | Default off |
 | Accounts payable (Invoice capture) | Document type settings for transferred invoice document from Invoice capture | This feature lets customers decide which document type to apply to documents that are transferred from Invoice capture. The document type can be set across legal entities. | |
 | Accounts payable (Invoice capture) | Support the transfer of default financial dimensions on the header of cost invoice | This feature copies the default financial dimensions (Business unit, Cost center, and Department) that are transferred from Invoice capture and appear on the header of cost invoices. This feature streamlines the invoice process and redirects the invoices to the correct person for approval. No additional extension in Dynamics 365 Finance is required. | |
-| Accounts payable | Adding purchase order's requester and orderer as the invoice approver | In typical purchase order invoice processing, if there's a discrepancy between the invoice and postings, the purchase order requester or the orderer must be added to approve the invoice after the purchase order is corrected in the workflow. This feature provides an additional type of participant in vendor invoice workflow: **Vendor invoice PO approver**. It also add two participants: **Purchase order - requester** and **Purchase order - orderer**. | Default off |
+| Accounts payable | Adding purchase order's requester and orderer as the invoice approver | In typical purchase order invoice processing, if there's a discrepancy between the invoice and postings, the purchase order requester or the orderer must be added to approve the invoice after the purchase order is corrected in the workflow. This feature provides an additional type of participant in vendor invoice workflow: **Vendor invoice PO approver**. It also adds two participants: **Purchase order - requester** and **Purchase order - orderer**. | Default off |
 | Cash and bank management | Modern bank reconciliation | This feature improves the usability and performance of advanced bank reconciliation. It also provides feature enhancements. Several new capabilities are available on the bank reconciliation worksheet, including the capability to clear reversal company transactions, generate vouchers, generate payment journals, and settle open customer invoices. Bank reconciliation matching rules are enhanced to automatically run these capabilities through user-defined criteria. This feature is a preview feature and is available in sandbox environments in Dynamics 365 Finance version 10.0.39. | Feature management |
 | Cash and bank management | Petty cash | Petty cash is now a global feature for all countries/regions in Dynamics 365 Finance version 10.0.39. You can use the petty cash functionality to automate operations for receipts and expenditures of cash, the creation of primary documents, and the printing of related reports. | Feature management |
 | Cash and bank management | Customer and vendor netting | This feature enables netting capability between open customer balances and open vendor balances. Customer and vendor payment journals are no longer created to settle open vendor and customer transactions. Instead, netting journals are created. This feature is a preview feature and is available in production environments in Dynamics 365 Finance version 10.0.39. | Feature management |
@@ -45,6 +44,7 @@ The following table lists the features that are included in this release. We mig
 | Cash and bank management | Exchange rate type enhancement for bank foreign currency revaluation | This feature provides additional exchange rate type options for bank foreign currency revaluation. Users can define an accounting currency exchange rate type and a reporting currency exchange rate type per legal entity or bank account. In this way, they can override the default type in the ledger setup when they run foreign currency revaluation. | Feature management |
 | Tax | Universal tax rate API | The connection to an external tax solution provider helps simplify and reduce the effort of maintaining the tax rates and tax applicability rules for Tax calculation. This benefit is especially critical when you implement Tax calculation for countries/regions where a significant number of tax jurisdictions must be covered. The Universal Tax Rate API is a set of standard application programming interfaces that Microsoft has defined in Tax calculation, based on the taxable document data model. It's an extended feature of Tax calculation that enables external tax services to be connected under the same framework. | Feature management |
 | System administration | Archive with Dataverse long term retention | This feature lets you archive data for select high volume areas of the product. The data archive is performed by a micro-service and a connection to Dataverse. You must first install the service from the Power platform admin center (PPAC). | Feature management |
+| Accounts receivable | Customer page summary | This feature shows an AI-generated summary of customer data, based on customer invoices, customer payments, sales orders, sales agreements, rebates, overdue invoices, delayed order lines, and so on. By showing transaction status and insights, it helps users make faster decisions. | Feature management |
 
 
 ## Feature enhancements included in this release

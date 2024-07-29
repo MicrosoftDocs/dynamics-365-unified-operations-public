@@ -12,7 +12,7 @@ ms.search.region: Global
 ms.search.validFrom: 2017-12-31
 ms.search.form: SysCorpNetPrinterList
 ms.dyn365.ops.version: 7.3
-ms.service: dynamics-365
+ms.service: dynamics-365-op
 search.app:
   - financeandoperationsonprem-docs
 ---

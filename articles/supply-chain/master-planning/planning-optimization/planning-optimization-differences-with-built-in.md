@@ -1,13 +1,13 @@
 ---
 title: Differences between Planning Optimization and the deprecated master planning engine
-description: This article lists features that Planning Optimization doesn't yet support and that aren't listed on the Planning Optimization fit analysis page.
+description: Learn about features that Planning Optimization doesn't yet support and that aren't listed on the Planning Optimization fit analysis page.
 author: t-benebo
-ms.date: 01/09/2023
-ms.topic: article
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: benebotg
+ms.topic: article
+ms.date: 01/09/2023
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
 ---

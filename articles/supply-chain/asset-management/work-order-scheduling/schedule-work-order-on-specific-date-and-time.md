@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Schedule work order on specific date and time
-description: This article explains how to schedule a work order on a specific date and time in Asset Management.
+description: Learn how to schedule a work order on a specific date and time in Asset Management, including a step-by-step process for creating a specific schedule.
 author: johanhoffmann
-ms.date: 08/19/2019
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
+ms.topic: article
+ms.date: 08/19/2019
+ms.custom: 
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2019-08-31
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.5
-
 ---
 
 # Schedule work order on specific date and time

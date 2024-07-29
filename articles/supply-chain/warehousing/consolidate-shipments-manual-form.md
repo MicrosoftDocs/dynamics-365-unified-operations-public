@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Consolidate shipments manually by using the Consolidate shipments page
-description: This article presents a scenario where multiple orders are released to the warehouse and then consolidated later by using the Consolidate shipments page.
+description: Learn about a scenario where multiple orders are released to the warehouse and then consolidated later by using the Consolidate shipments page.
 author: Mirzaab
-ms.date: 05/12/2020
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
-# ROBOTS:
-audience: Application User
-# ms.devlang:
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-# ms.custom:
-ms.search.region: Global
-# ms.search.industry:
 ms.author: mirzaab
+ms.topic: article
+ms.date: 05/12/2020
+ms.custom:
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2020-05-01
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
 ms.dyn365.ops.version: 10.0.3
-
 ---
 
 # Consolidate shipments manually by using the Consolidate shipments page

@@ -1,8 +1,8 @@
 ---
 title: Communicate with and deploy assignments to workers
 description: Learn how to send messages to workers during registration and assign workers to temporary assignments and groups in Dynamics 365 Human Resources.
-author: tonyafehr
-ms.author: tfehr
+author: twheeloc
+ms.author: twheeloc
 ms.date: 01/24/2024
 ms.topic: article
 f1_keywords:

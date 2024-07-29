@@ -3,14 +3,14 @@ title: Support for Segmented Entry controls on dialogs
 description: Learn about the code pattern to add Segmented Entry controls to dialogs, including various code examples for legacy and current releases.
 author: RyanCCarlson2
 ms.author: rcarlson
-ms.topic: article
-ms.date: 06/20/2017
-ms.reviewer: kfend
-audience: Developer
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/19/2024
+ms.reviewer: johnmichalak
 ms.assetid: cd09af5e-2e6e-41fd-8e74-6612afb016f5
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

@@ -1,16 +1,15 @@
 ---
 title: Inventory Visibility Add-in overview
-description: This article explains what Inventory Visibility is and describes its features.
-author: yufeihuang
-ms.date: 11/04/2022
-ms.topic: overview
-ms.search.form:
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
+description: Learn about what Inventory Visibility is and describes its features, including outlines on extensibility, scalability, and feature highlights.
+author: yufei-huang
 ms.author: yufeihuang
-ms.search.validFrom: 2020-10-26
-ms.dyn365.ops.version: 10.0.15
+ms.topic: overview
+ms.date: 05/27/2024
+ms.custom:
+  - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form:
 ---
 
 # Inventory Visibility Add-in overview
@@ -80,12 +79,12 @@ The following illustration shows a high-level summary of existing features and h
 
 The Inventory Visibility service is available in the following versions:
 
-- **Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management** – For companies that have a valid Supply Chain Management license, Inventory Visibility is available at no extra cost. Because Inventory Visibility is based on Microsoft Power Platform, it's subject to Microsoft Power Platform storage capacity and API limits. Your Supply Chain Management license should include default storage and API capacity. If you require more storage and API capacity, you can purchase a professional license. For details about default API allocation and the professional license, see [Request limits and allocations](/power-platform/admin/api-request-limits-allocations) and [Licensing overview for Microsoft Power Platform](/power-platform/admin/pricing-billing-skus). With the default storage and API allocations, you can start to try out the Inventory Visibility add-in today. For installation details, see [Install and set up Inventory Visibility](inventory-visibility-setup.md). If your estimated API and storage usage exceeds the standard allocation, you can contact your sales representative and ask them to reach out to the platform team for an exception.
+- **Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management** – For companies that have a valid Supply Chain Management license, Inventory Visibility is available at no extra cost. Because Inventory Visibility is based on Microsoft Power Platform, it's subject to Microsoft Power Platform storage capacity and API limits. Your Supply Chain Management license should include default storage and API capacity. If you require more storage and API capacity, you can purchase a professional license. For details about default API allocation and the professional license, see [Request limits and allocations](/power-platform/admin/api-request-limits-allocations) and [Licensing overview for Microsoft Power Platform](/power-platform/admin/pricing-billing-skus). With the default storage and API allocations, you can start to try out the Inventory Visibility Add-in today. For installation details, see [Install and set up Inventory Visibility](inventory-visibility-setup.md). If your estimated API and storage usage exceeds the standard allocation, you can contact your sales representative and ask them to reach out to the platform team for an exception.
 - **Inventory Visibility Service as a component of IOM** – This version is for either Intelligent Order Management (IOM) customers or companies that aren't using Supply Chain Management as their ERP system. The license is included in the Intelligent Order Management bundle. For more information, see [Intelligent Order Management overview](/dynamics365/intelligent-order-management/overview).
 
 ## Inventory Visibility terminology
 
-It's important that you understand the following concepts and terms when you're working with the Inventory Visibility add-in:
+It's important that you understand the following concepts and terms when you're working with the Inventory Visibility Add-in:
 
 - **Data source** – A data source represents the system that your data is from.
 - **Dimensions** – Dimensions identify product characteristics. They can be storage dimensions (such as site or warehouse) or product dimensions (such as color, size, or style).

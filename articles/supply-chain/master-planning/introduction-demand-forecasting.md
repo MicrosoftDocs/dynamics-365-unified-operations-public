@@ -1,21 +1,21 @@
 ---
 title: Demand forecasting overview
-description: Demand forecasting is used to predict independent demand from sales orders and dependent demand at any decoupling point for customer orders. The enhanced demand forecast reduction rules provide an ideal solution for mass customization.
+description: Demand forecasting is used to predict independent demand from sales orders and dependent demand at any decoupling point for customer orders.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: ReqDemPlanCreateForecastDialog
 ms.topic: overview
 ms.date: 01/06/2023
+ms.custom: bap-template
+ms.reviewer: kamaybac
 audience: Application User
 ms.search.region: Global
-ms.custom: bap-template
-ms.collection:
+ms.search.form: ReqDemPlanCreateForecastDialog
 ---
 
 # Demand forecasting overview
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [demand-planning-banner](../includes/demand-planning-banner.md)]
 
 Demand forecasting is used to predict independent demand from sales orders and dependent demand at any decoupling point for customer orders. The enhanced demand forecast reduction rules provide an ideal solution for mass customization.
 
@@ -86,7 +86,7 @@ The first part of authorizing forecast (**Demand forecast UOM \> Inventory UOM**
 - [Authorize an adjusted forecast](authorize-adjusted-forecast.md)
 - [Monitor forecast accuracy](monitor-forecast-accuracy.md)
 - [Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md)
-- [Intercompany planning groups for demand forecasting](../demand-planning/intercompany-planning-groups-demand-forecasting.md)  
+- [Intercompany planning groups for demand forecasting](intercompany-planning-groups-demand-forecasting.md)  
 - [Video: Extend the demand forecasting functionality](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
 - [Webinar: Demand Forecasting with Azure Machine Learning Series](https://aka.ms/DemandForecastingwithAzureMachineLearningSeries)
 

@@ -4,7 +4,7 @@ description: Learn how postings are configured in Accounts payable with examples
 author: leizi2015
 ms.author: raynezou
 ms.topic: article
-ms.date: 01/19/2022
+ms.date: 06/19/2024
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User

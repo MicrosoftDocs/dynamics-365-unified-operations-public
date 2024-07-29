@@ -4,7 +4,7 @@
 title: Ready to pay
 description: This article shows how to mark an employee as ready to pay in Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 08/25/2021
+ms.date: 07/09/2024
 ms.topic: article
 # optional metadata
 
@@ -18,15 +18,13 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: ajitchandran
 ms.search.validFrom: 2021-07-13
 ms.dyn365.ops.version: Human Resources
 
 ---
 
 # Ready to pay
-
-
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -47,7 +45,6 @@ To mark an employee as ready to pay:
     ![Compensation management workspace.](./media/hr-ready-to-pay-1-workspace.png)
 
 2. Select the **Employees not ready to pay** tile.
-
 3. Select the employees to be validated. On the **Payroll tab**, in the **Ready to pay** group, select **Validate**.
     ![Validate employees.](./media/hr-ready-to-pay-2-validate.png)
 
@@ -55,14 +52,14 @@ To mark an employee as ready to pay:
 
 ## Validation
 
-Before marking an employee as ready to pay, the employee's profile will be validated for completeness.
+Before marking an employee as ready to pay, the employee's profile is validated for completeness.
 
 ![Validate results.](./media/hr-ready-to-pay-3-results.png)
 
 | Validation | Details |
 | --- | --- |
 | **Address purpose parameter** | Confirms the **Use payroll addresses purpose** parameter is selected. |
-| **Payroll address** | Confirms the worker profile has at least one address with the purpose **Payroll residency location** or **Payroll work location**, and there is only one address per purpose. |
+| **Payroll address** | Confirms the worker profile has at least one address with the purpose **Payroll residency location** or **Payroll work location**, and there's only one address per purpose. |
 | **Employment** | Confirms the worker has at least one employment (current, previous, or future). |
 | **Identification number** | Confirms the **Use identification types in payroll processing** field is **Yes** on the **Human resources parameters** page, and if the identification type indicated in the parameter is filled in the worker profile. |
 | **First and last name** | Confirms the fields **Name** and **Last name** are filled in.|
@@ -70,9 +67,9 @@ Before marking an employee as ready to pay, the employee's profile will be valid
 | **Birth date** | Confirms the **Birthday** field is filled in. |
 | **Compensation** | Confirms the worker is enrolled in a fixed compensation plan. |
 
-If one of these validations fails, you cannot mark the employee as ready to pay.
+If one of these validations fails, you can't mark the employee as ready to pay.
 
-If the **Ready to pay** field is **No**, this is an indication that you must perform an action to ensure the worker profile is complete. This will not stop the data to be exposed in any data entity. 
+If the **Ready to pay** field is **No**, this is an indication that you must perform an action to ensure the worker profile is complete. This won't stop the data to be exposed in any data entity. 
 
 ## Process Automation
 

@@ -1,11 +1,12 @@
 ---
 title: Connected applications
 description: Learn how to set up connected applications in Electronic invoicing, including an overview on creating a connected application with a step-by-step process.
-author: gionoder
-ms.author: johnmichalak
-ms.topic: article
-ms.date: 02/07/2022
-ms.custom:
+author: ilikond
+ms.author: ikondratenko
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global

@@ -1,27 +1,15 @@
 ---
-# required metadata
-
 title: Create a bill of lading
-description: This article describes how to create a bill of lading when using warehouse management processes (WMS).  
+description: Learn how to create a bill of lading when using warehouse management processes (WMS), including an outline on a master bill of lading.  
 author: Weijiesa
-ms.date: 06/20/2017
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: WHSBillOfLading, WHSLoadPlanningWorkbench, WHSBillOfLadingCarrier, WHSBillOfLadingOrder, WHSOutboundLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 1ad0c1cb-4346-4042-a59b-923115fac03e
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: weijiesa
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
-
+ms.topic: how-to
+ms.date: 06/07/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: WHSBillOfLading, WHSLoadPlanningWorkbench, WHSBillOfLadingCarrier, WHSBillOfLadingOrder, WHSOutboundLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench
 ---
 
 # Create a bill of lading
@@ -35,7 +23,7 @@ A bill of lading is a legal document between the company that ships the items an
 - Create the report manually, using the **Bill of lading** page.
 - Generate the report from the **Outbound load planning workbench** or **Inbound load planning workbench**, depending on whether the load is inbound or outbound.
 
-If you generate the bill of lading from the **Outbound load planning workbench** or **Inbound load planning workbench**, the load status must be *Shipped*. If there's more than one shipment in the load, a bill of lading is created for each shipment. After a bill of lading has been created you can make changes to it on the **Bill of lading** page.
+If you generate the bill of lading from the **Outbound load planning workbench** or **Inbound load planning workbench**, the load status must be *Shipped*. If there's more than one shipment in the load, a bill of lading is created for each shipment. After a bill of lading has been created, you can make changes to it on the **Bill of lading** page.
 
 ## Master bill of lading
 

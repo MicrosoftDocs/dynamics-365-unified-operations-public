@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Return reason codes and disposition codes
-description: Create and use return reason codes and disposition codes to support the process for returning products.
+description: Create and use return reason codes and disposition codes to support the process for returning products, including an example of creating disposition codes.
 author: Henrikan
-ms.date: 07/25/2019
-ms.topic: overview
-
-# optional metadata
-
-ms.search.form: ReturnTableListPage, ReturnReasonCodeLookup
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: henrikan
+ms.topic: overview
+ms.date: 07/25/2019
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: ReturnTableListPage, ReturnReasonCodeLookup
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Return reason codes and disposition codes

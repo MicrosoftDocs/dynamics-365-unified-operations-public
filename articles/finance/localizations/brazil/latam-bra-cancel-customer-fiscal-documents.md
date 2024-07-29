@@ -1,12 +1,13 @@
 ---
 title: Cancel a customer fiscal document (Brazil)
 description: Learn about canceling a customer fiscal document for Brazil, which marks the fiscal document as canceled and reverses all ledger and financial transactions.
-author: gionoder
-ms.author: johnmichalak
-ms.topic: article
+author: ankviklis
+ms.author: ankviklis
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 06/05/2018
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Brazil
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3

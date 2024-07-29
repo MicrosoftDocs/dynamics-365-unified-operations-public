@@ -1,15 +1,15 @@
 ---
 title: Catch weight product processing with warehouse management
-description: This article describes how to use work templates and location directives to determine how and where work is done in the warehouse.
+description: Learn how to use work templates and location directives to determine how and where work is done in the warehouse, including prerequisites.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench, WHSCatchWeightTagRegistration, WHSCatchWeightTagFullDimDiscrepancies, WHSCatchWeightTagChangeWeightDropDownDialog, WHSCatchWeightLinkWorkLineTagDropDownDialog
 ms.topic: how-to
 ms.date: 04/19/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+audience: Application User
+ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench, WHSCatchWeightTagRegistration, WHSCatchWeightTagFullDimDiscrepancies, WHSCatchWeightTagChangeWeightDropDownDialog, WHSCatchWeightLinkWorkLineTagDropDownDialog
 ---
 
 # Catch weight product processing with warehouse management

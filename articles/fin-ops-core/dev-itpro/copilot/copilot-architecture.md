@@ -30,7 +30,7 @@ The Copilot interface for the chat experience in finance and operations apps use
 
 [Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) provides the central AI orchestration of the Copilot capabilities in finance and operations apps. When a prompt is entered in the Copilot chat panel, it's sent to Copilot Studio. Copilot Studio determines what the intent of the prompt is, and which topics or plugins should be invoked to provide a response. Copilot Studio then runs plugins, gets the required data, and provides output in natural language. This output is returned to the user in the Copilot interface. For more information about the architecture and execution of plugins in Copilot Studio, see [Microsoft Copilot Studio plugin architecture](/microsoft-copilot-studio/copilot-plugins-architecture).
 
-Copilot in finance and operations apps is bound to a single chatbot in Copilot Studio. This chatbot is named **Copilot in Finance and Operation**. The chatbot is deployed as part of the Copilot in the finance and operations solution (msdyn\_FnoCopilot). For guidance about how to install the solution and chatbot in your environment, see [Install the Copilot application in your finance and operations apps environment](enable-copilot.md#install-copilot-app).
+Copilot in finance and operations apps is bound to a single chatbot in Copilot Studio. This chatbot is named **Copilot in Finance and Operation**. The chatbot is deployed as part of the Copilot in the finance and operations solution (msdyn\_FnoCopilot). For guidance about how to install the solution and chatbot in your environment, see [Enable Copilot capabilities in finance and operations apps](enable-copilot.md).
 
 ## Plugins
 
