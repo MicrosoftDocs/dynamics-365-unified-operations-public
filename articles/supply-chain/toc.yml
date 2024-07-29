@@ -3453,6 +3453,32 @@
               href: service-management/delete-service-orders.md
             - name: Invoice subscription transactions
               href: service-management/invoice-subscription-transactions.md
+    - name: Traceability (preview)
+      items:
+      - name: Traceability overview
+        href: traceability/traceability-overview.md
+      - name: Install and configure Traceability
+        items:
+        - name: Install and update Traceability
+          href: traceability/developer/traceability-install.md
+        - name: Traceability security roles in Power Apps
+          href: traceability/developer/traceability-security-roles.md
+        - name: Configure Traceability
+          href: traceability/developer/traceability-configure.md
+      - name: Use the Traceability app in Power Apps
+        items:
+        - name: Open the Traceability app in Power Apps
+          href: traceability/traceability-app-run.md
+        - name: Traceability app quick start
+          href: traceability/traceability-app-quick-start.md
+        - name: Work with the Traceability app
+          href: traceability/traceability-app-use.md
+      - name: Traceability integrations
+        items:
+        - name: Integrate Traceability with Supply Chain Management
+          href: traceability/traceability-integration-scm.md
+        - name: Traceability API
+          href: traceability/developer/traceability-api.md
     - name: Transportation management
       items:
       - name: Transportation management overview
