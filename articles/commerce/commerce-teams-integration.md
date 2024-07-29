@@ -2,9 +2,10 @@
 title: Dynamics 365 Commerce and Microsoft Teams integration overview
 description: This article presents an overview of Microsoft Dynamics 365 Commerce and Microsoft Teams integration.
 author: gvrmohanreddy
-ms.date: 03/31/2021
+ms.date: 07/29/2024
 ms.topic: overview
-audience: Application User
+ms.custom: 
+  - bap-template
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
