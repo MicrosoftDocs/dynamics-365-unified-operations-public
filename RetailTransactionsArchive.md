@@ -52,59 +52,59 @@ The **Archive with Dataverse long term retention** workspace shows the full arch
 To view details about a selected archive, follow these steps.
 
 1. Select the job, and then select **View history data** on the toolbar.
-1. The history page shows every retail transaction that's included in the archive job. 
+1. The **Archived retail transactions** page shows every retail transaction that's included in the archive job. 
 
-## Tables that are archived with the Retail transactions job
-RetailTransactionTable
-RetailTransactionCashManagementTrans
-RetailTransactionFiscalCustomer
-RetailTransactionSupplementaryInvoice
-RetailTransactionTable_RU
-RetailTransactionBankedTenderTrans
-RetailTransactionValidationError
-RetailTransactionTenderDeclarationTrans
-RetailTransactionTaxMeasure
-RetailTransactionSalesTrans
-RetailTransactionPaymentTrans
-RetailTransactionPaymentTrans_BR
-RetailTransactionSafeTenderTrans
-RetailTransactionPaymentRefundableAmounts
-RetailTransactionAdditionalAddressTrans
-RetailTransactionAddressTrans
-RetailTransactionAffiliationTrans
-RetailTransactionAttributeTrans
-RetailTransactionChargeTaxMeasure
-RetailTransactionChargeTaxTrans
-RetailTransactionChargeTaxTransGTE
-RetailTransactionCustomerAccountDepositTrans
-RetailTransactionDiscountTrans
-RetailTransactionFiscalTrans
-RetailTransactionFiscalTransExtendedData
-RetailTransactionIncomeExpenseTrans
-RetailTransactionInfocodeTrans
-RetailTransactionKitsDisassemblyTrans
-RetailTransactionLoyaltyRewardPointTrans                          
-RetailTransactionMarkupTrans
-RetailTransactionNoteTrans
-RetailTransactionOrderInvoiceTrans
-RetailTransactionTaxTrans_IN
-RetailTransactionTaxTrans
-RetailTransactionTaxTransGTE
-RetailEodStatementControllerLog
-RetailEodStatementEventLog
-RetailEodTransactionAggregationHeader
-RetailEodTransactionAggregationTrans
-RetailEodTransactionError
-RetailEodTransactionBankedTenderTrans
-RetailEodTransactionIncomeExpenseTrans
-RetailEodTransactionInfocodeTrans
-RetailEodTransactionOrderInvoiceTrans
-RetailEodTransactionPaymentTrans
-RetailEodTransactionSafeTenderTrans
-RetailEodTransactionSalesTrans
-RetailEodTransactionTable
-RetailEodTransactionTenderDeclarationTrans
-RetailStatementJour
-RetailStatementTrans
-RetailStatementVoucher
+## Tables that are archived with Retail long term retention job
+- RetailTransactionTable
+- RetailTransactionCashManagementTrans
+- RetailTransactionFiscalCustomer
+- RetailTransactionSupplementaryInvoice
+- RetailTransactionTable_RU
+- RetailTransactionBankedTenderTrans
+- RetailTransactionValidationError
+- RetailTransactionTenderDeclarationTrans
+- RetailTransactionTaxMeasure
+- RetailTransactionSalesTrans
+- RetailTransactionPaymentTrans
+- RetailTransactionPaymentTrans_BR
+- RetailTransactionSafeTenderTrans
+- RetailTransactionPaymentRefundableAmounts
+- RetailTransactionAdditionalAddressTrans
+- RetailTransactionAddressTrans
+- RetailTransactionAffiliationTrans
+- RetailTransactionAttributeTrans
+- RetailTransactionChargeTaxMeasure
+- RetailTransactionChargeTaxTrans
+- RetailTransactionChargeTaxTransGTE
+- RetailTransactionCustomerAccountDepositTrans
+- RetailTransactionDiscountTrans
+- RetailTransactionFiscalTrans
+- RetailTransactionFiscalTransExtendedData
+- RetailTransactionIncomeExpenseTrans
+- RetailTransactionInfocodeTrans
+- RetailTransactionKitsDisassemblyTrans
+- RetailTransactionLoyaltyRewardPointTrans                          
+- RetailTransactionMarkupTrans
+- RetailTransactionNoteTrans
+- RetailTransactionOrderInvoiceTrans
+- RetailTransactionTaxTrans_IN
+- RetailTransactionTaxTrans
+- RetailTransactionTaxTransGTE
+- RetailEodStatementControllerLog
+- RetailEodStatementEventLog
+- RetailEodTransactionAggregationHeader
+- RetailEodTransactionAggregationTrans
+- RetailEodTransactionError
+- RetailEodTransactionBankedTenderTrans
+- RetailEodTransactionIncomeExpenseTrans
+- RetailEodTransactionInfocodeTrans
+- RetailEodTransactionOrderInvoiceTrans
+- RetailEodTransactionPaymentTrans
+- RetailEodTransactionSafeTenderTrans
+- RetailEodTransactionSalesTrans
+- RetailEodTransactionTable
+- RetailEodTransactionTenderDeclarationTrans
+- RetailStatementJour
+- RetailStatementTrans
+- RetailStatementVoucher  
 
