@@ -57,7 +57,7 @@ The **Chilean electronic invoice (CL) "E-Invoicing for Chile: ISV last-mile conn
     - **Invoice - cod 33, Factura Electrónica**
 	- **Packing slip (e-shipping guide) - cod 52, Guía de Despacho Electrónica**
 	- **Debit note - cod 56, Nota de Débito Electrónica**
-    - **Credit note - cod 61, Nota de Crédito Electrónica**
+	- **Credit note - cod 61, Nota de Crédito Electrónica**
     - **Export invoice - cod 110, Factura de Exportación**
 	- **Export debit note - cod 111, Nota de Débito de Exportación**
 	- **Export credit note - cod 112, Nota de Crédito de Exportación**
