@@ -43,8 +43,6 @@ Inventory Visibility introduces a new concept called the *business layer*, which
 
 :::image type="content" source="media/sync-omnichannel-inventory-architecture.svg" alt-text="Architecture and data flow diagram." lightbox="media/sync-omnichannel-inventory-architecture.svg":::
 
-<!--KFM: Should the top-right arrow point down instead? -->
-
 ## Prerequisites
 
 To use the features described in this article, your system must meet the following requirements:
