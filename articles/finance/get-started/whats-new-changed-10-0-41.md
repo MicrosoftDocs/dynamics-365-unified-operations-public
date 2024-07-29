@@ -18,7 +18,7 @@ ms.search.region: Global
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This article lists the features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.41. This version has a build number of 10.0.xxxxx and is available on the following schedule:
+This article lists the features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.41. This version has a build number of 10.0.2015.16 and is available on the following schedule:
 
 - **Preview of release:** July 2024
 - **General availability of release (self-update):** September 2024
@@ -122,3 +122,24 @@ The following table lists the features that have been removed from Feature manag
 | Calculate the average exchange rate based on the main account code only | The related functionality is enabled out of the box. | Cash and bank management |
 |(Italy) Posting invoices with zero amount | The related functionality is enabled out of the box. | Accounts payable and Accounts receivable |
 | Product name translation fix | The related functionality is enabled out of the box. | Accounts receivable |
+
+## Additional resources
+
+### Platform updates for finance and operations apps
+
+Dynamics 365 Finance version 10.0.41 includes platform updates. To learn more, see [Platform updates for version 10.0.41 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-41.md).
+
+### Bug fixes
+
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=948711).
+
+
+### Regulatory updates
+
+For information about regulatory updates for finance and operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to Lifecycle Services and view the planned regulatory updates using the issue search tool. Issue search lets you search by country/region, type of feature, and release.
+
+### Dynamics 365 and industry clouds: 2024 release wave 1 plan
+
+Wondering about upcoming and recently released capabilities in any of our business apps or platform?
+
+Check out [Dynamics 365 and industry clouds: 2024 release wave 2 plan](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-finance). We've captured all the details, end to end, top to bottom, that you can use for planning.
