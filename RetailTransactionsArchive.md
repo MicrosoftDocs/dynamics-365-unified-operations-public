@@ -40,9 +40,7 @@ To schedule the long-term retention job, follow these steps.
 1. On the last page of the wizard, confirm the details, and then select **Finish** to schedule the **Retail transactions archive ** job for the selected interval and company.
 
 The archive jobs appear on the dashboard.
-Refer the below image showing the Archive with Dataverse long term retention workspace with a completed archive job for retail
-![Archive with Dataverse long term retention workspace for Retail](../media/Retail_LTR.png "Archive with Dataverse long term retention workspace for Retail")
-
+    
 ## View the status of the long term retention job
 
 Select **View progress** on the archival job dashboard to view job status details.
@@ -55,6 +53,9 @@ To view details about a selected archive, follow these steps.
 
 1. Select the job, and then select **View history data** on the toolbar.
 1. The **Archived retail transactions** page shows every retail transaction that's included in the archive job. 
+
+The below image shows the Archive with Dataverse long term retention workspace with a completed archive job for retail:
+![Archive with Dataverse long term retention workspace for Retail](./articles/commerce/media/Retail_LTR.png "Archive with Dataverse long term retention workspace for Retail")
 
 ## Tables that are archived with Retail long term retention job
 - RetailTransactionTable
