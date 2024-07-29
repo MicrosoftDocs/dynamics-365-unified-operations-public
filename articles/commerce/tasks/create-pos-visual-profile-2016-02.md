@@ -1,7 +1,7 @@
 --- 
 title: Create point of sale (POS) visual profiles
 description: This procedure walks through creating a new point of sale (POS) visual profile. 
-author: jashanno
+author: ritakimani
 ms.date: 07/29/2024
 ms.topic: how-to 
 ms.custom: 
@@ -9,7 +9,7 @@ ms.custom:
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: jashanno
+ms.author: ritakimani
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
