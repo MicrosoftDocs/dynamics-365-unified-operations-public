@@ -489,7 +489,7 @@ The following example shows how to create an index query request URL as a `GET` 
 https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&LocationId=11&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true&ATPToDate=2022-02-01&ATPToDate=2022-02-10
 ```
 
-The result of this `GET` request is exactly the same as the result of `POST` request in the previous example.
+The result of this `GET` request is exactly the same as the result of the `POST` request in the previous example.
 
 ### Exact query by using the POST method
 
