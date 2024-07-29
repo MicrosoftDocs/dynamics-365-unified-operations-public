@@ -133,32 +133,28 @@ After you imported the **Electronic invoicing for Chile** feature comprising out
 
 ## Issue electronic invoices
 
-After you complete all the required configuration steps, you can generate and submit electronic invoices for posted invoices by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. For more information about how to generate electronic invoices, see [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
+After completing all the required configuration steps, you can generate and submit electronic invoices for posted invoices by navigating to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. For more information on generating electronic invoices, refer to [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
 
-You can inquire about the results of a submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and selecting the required document type. For more information, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
+To inquire about the results of a submission, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and select the required document type. For more details, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
 
-Specifically for Chile, once you have submitted the invoice, the submission status is set to **Pending Update Actions execution**. 
-you would see that the response body would most likely be empty for the signed XML and get invoice status call. it is an empty XML which means that it was not available immediately after the submission.
-To process the peding status, we have introduced a function called **Execute Update actions**: this function will resume the pipeline starting from the action marked as an update action and execute all the subsequent actions.
+For Chile specifically, once you have submitted the invoice, the submission status is set to **Pending Update Actions execution**. You may notice that the response body is likely empty for the signed XML and the get invoice status call, indicating that the XML was not available immediately after submission. To address the pending status, a function called **Execute Update actions** is used. This function resumes the pipeline starting from the action marked as an update action and executes all subsequent actions, running the rest of the pipeline in a loop. This should change the status to **Executing** again, and after a few seconds, it will revert to the **Pending Update Actions execution** state.
 
-	![Screenshot of the Execute update action.](ltm-chl-e-invoice-execute-update-action.png)
+![Screenshot of the Execute update action.](ltm-chl-e-invoice-execute-update-action.png)
 
     > [!NOTE]
     > You can configure it to run in batch mode and on a periodic basis by setting a recurrence schedule.
 
-This should change the status to Executing again and after a few seconds it is back to the Pending Update actions execution state.
+Upon reviewing the submission details, you will observe that these steps are executed again, and this time the signed XML has been received. 
 
-Looking at the submission details now you will observe that these steps are executed again and this time the signed XML as been received.
+![Screenshot of the Signed XML.](ltm-chl-e-invoice-signed-XML.png)
 
-	![Screenshot of the Signed XML.](ltm-chl-e-invoice-signed-XML.png)
-
-As a result of the completed outbound flow, the signed XML has been attached to the Invoice journal: Edicom source file:
+As a result of the completed outbound flow, the signed XML is attached to the Invoice journal as the **Edicom source file**.
 	
-	![Screenshot of the Execute update action.](ltm-chl-e-invoice-attached-source-file.png)
+![Screenshot of the Execute update action.](ltm-chl-e-invoice-attached-source-file.png)
 
-Eventually, after 9 days , the **Terminate pipeline** action completes the pipeline if a business rejection or acceptance has not been received from a buyer earlier.
+Eventually, after nine days, the **Terminate pipeline** action completes the pipeline if a business rejection or acceptance has not been received from the buyer earlier.
 
-	![Screenshot of the Terminate pipeline action.](ltm-chl-e-invoice-outbound-pipeline-terminated.png)
+![Screenshot of the Terminate pipeline action.](ltm-chl-e-invoice-outbound-pipeline-terminated.png)
 
 
 
