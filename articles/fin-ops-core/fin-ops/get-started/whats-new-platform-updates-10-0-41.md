@@ -35,7 +35,8 @@ This section contains a table that lists the enhancements that are included in t
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-| Web client | Deep link to F&O records from corresponding Dataverse virtual entities | For more information, see [Create sharable, secure URLs](../../dev-itpro/user-interface/create-deep-links) | Default |   
+| Web client | Deep link to finance and operations records from corresponding Dataverse virtual entities. | For more information, see [Create sharable, secure URLs](../../dev-itpro/user-interface
+/create-deep-links) | Default |   
 
 ### Bug fixes
 
