@@ -143,18 +143,86 @@ This information is protected by server security. We don't recommend that you in
 
 ### Compliance 7: Books of accounts must remain accessible in India
 
-Under new guidelines of the Companies Act, the books of accounts and other relevant books and papers that are maintained in electronic mode must always remain accessible in India, and their backup must be kept in servers that are physically located in India.
+#### Requirement
 
-* The books of accounts and other relevant books and papers that are maintained in electronic mode in finance and operations apps environments are always accessible in India for subsequent reference.
-* Finance and operations apps provide that the backup of the books of accounts and other books and papers of the company that are maintained in electronic mode in finance and operations apps are kept in servers that are physically located in India.
-* Finance and operations apps environments are deployed in a defined region or datacenter where customer data will be stored. Customers choose where to deploy their environments when they create the environment through Lifecycle Services admin center. Although Microsoft might replicate data to other regions for data durability, customer data won't be replicated or moved outside the geographical location.
-* Microsoft provides business continuity and disaster recovery for production instances of the finance and operations apps SaaS application if an Azure region-wide outage occurs.
-* Databases are protected by automatic backups that are kept for 28 days. The backups include data from the database's production and sandbox environments. 
-* Administrators of a finance and operations apps tenant can't directly access or manage these backups, because they're automatically managed by Microsoft. Using the **Lifecycle Services admin center**, an administrator can view evidence about which finance and operations apps environments have daily backups enabled, and may capture a screenshot of this on a daily basis to create a log of such evidence. 
-* Administrators of a finance and operations apps tenant can check where the database is deployed through Lifecycle Services admin center, by looking at the **Database backup location** field on the environment details page.
-* Administrators of a finance and operations apps tenant can check if the database backups have been enabled for the last 24 hour period by looking at the **Daily backups enabled** field on the environment details page.
-* Administrators in Lifecycle Services admin center may use the [Environment Metadata API](../../../fin-ops-core/dev-itpro/lifecycle-services/api/v1/reference-environment-metadata.md) to create a log of evidence pertaining to the database backup location and daily backups enabled status on a daily basis.  This can be done using any software which supports HTTP and RESTful APIs.
-* Administrators can also restore their environments to a specific point in time in the past by using Lifecycle Services admin center. For more information, see [Restoring an environment in the Admin center](../../../fin-ops-core/dev-itpro/database/database-point-in-time-restore.md).
+The Ministry of Corporate Affairs (MCA) in India introduced amendments to Rule 3 of the Companies (Accounts) Rules. These changes specifically pertain to the maintenance of books of accounts in electronic form. The key modifications are as follows:
 
+**I. Accessibility requirement**: Amended *Rule 3 (1)* emphasizes that books of accounts and other relevant documents maintained in electronic mode must remain accessible within India at all times for subsequent reference.
+
+**II. Daily backup requirement**: Under the amended *Rule 3 (5)*, companies are now mandated to maintain a daily backup of their electronic books of accounts and other relevant documents on servers physically located in India, even if backups are also maintained outside the country.
+
+**III. Annual intimation requirement**: *Rule 3 (6)* requires companies to inform the Registrar annually, during the filing of financial statements, about details such as the service provider’s name, internet protocol address, and location. If books of accounts are maintained on the cloud, the address provided by the service provider must also be disclosed.
+
+#### Supported scope
+
+##### I. Accessibility requirement
+
+The books of accounts and other relevant documents that are maintained in electronic mode in finance and operations apps are always accessible in India for subsequent reference. The access to data and functionality of finance and operations apps is determined by Role-based security concept. For more information, see [Role-based security](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security) documentation. 
+
+##### II. Daily backup requirement
+
+To use a finance and operations application, a finance and operations apps environment must be deployed through [Dynamics Lifecycle Services](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide) (LCS). Finance and operations apps environments are deployed in a defined region or datacenter where customer data will be stored. Companies using finance and operations apps choose where to deploy their environments when they create the environment through LCS. Although Microsoft might replicate data to other regions for data durability, customer data won't be replicated or moved outside the geographical location. For more information, see [Azure paired](https://learn.microsoft.com/en-us/azure/reliability/cross-region-replication-azure#azure-paired-regions) regions. The specific activities required to meet the daily backup requirement may vary based on the chosen geographical location (whether inside or outside of India) for finance and operations apps environment deployment. 
+
+###### Finance and operations apps environments that are deployed in India
+
+•	Finance and operations apps provide that the backup of the books of accounts and other books and papers of the company that are maintained in electronic mode in finance and operations apps are kept in servers that are physically located in India.
+
+•	A customer’s representative with an administrator role in a finance and operations apps tenant (administrators) can check where the database is deployed through LCS, by looking at the **Database backup location** field.
+
+•	Microsoft provides business continuity and disaster recovery for production instances of the finance and operations apps SaaS application if an Azure region-wide outage occurs.
+
+•	Databases are protected by Microsoft Power Platform’s automatic backups of production environments that are kept for up to 28 days. For more information, see [Back up and restore environments](https://learn.microsoft.com/en-us/power-platform/admin/backup-restore-environments). The underlying technology used is Azure SQL Database. For more information, see the SQL Database documentation [Automated backups for details](https://learn.microsoft.com/en-us/azure/sql-database/sql-database-automated-backups). 
+
+•	Administrators can view evidence about which finance and operations apps environments have daily backups enabled and may capture a screenshot of this on a daily basis to create a log of such evidence.
+
+•	Administrators in LCS may use the Environment Metadata API to create a log of evidence pertaining to the database backup location and daily backups enabled status on a daily basis. For more information, see [Fetch environment metadata](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/api/v1/reference-environment-metadata). This can be done using any software which supports HTTP and RESTful APIs.
+
+•	Administrators can restore their environments to a specific point in time in the past by using LCS. For more information, see [Database point-in-time restore (PITR)](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/database/database-point-in-time-restore).
+
+[Manage environment.](../media/manage-environment.png)
+
+###### Finance and operations apps environments that are deployed outside of India
+
+If finance and operations apps environment is deployed outside of India, to fulfill the daily backup requirement, a company can consider the following options.
+
+**Option (1). Geo to geo migration.**
+
+In certain conditions company, operating in India and having their finance and operations apps environment deployed outside of India, to fulfill the daily backup requirement, can consider migrating finance and operations apps environment that have Indian legal entity to a datacenter in India. For more information, see [Geo to geo migration overview](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations). When a finance and operations apps environment containing data necessary to fulfill the daily backup requirement migrated to a datacenter in India, the approach described in “Finance and operations apps environments that are deployed in India” section is applicable.
+
+**Option (2). Multi-instance installation.**
+
+In certain conditions company, operating in India and having their finance and operations apps environment deployed outside of India, can consider a multi-instance installation where the Indian legal entities are installed on a finance and operations apps environment located in a datacenter in India. Other legal entities can be installed in environments in different geolocation depending on other countries’ legal requirements and company’s needs. For more information, see [Plan your environment strategy for Dynamics 365](https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/environment-strategy-overview). When finance and operations apps legal entities with address in India are installed in a finance and operations apps environment located in datacenter in India, the approach described in “Finance and operations apps environments that are deployed in India” section is applicable.
+
+**Option (3). Azure Synapse Link for Dataverse with Azure Data Lake.**
+
+For finance and operations apps environments that are deployed outside of India, companies can consider leveraging **Azure Synapse Link for Dataverse** to daily replicate their electronic books of accounts and other relevant documents from their finance and operations apps to an **Azure Data Lake** in datacenter in India. For more information, see [What is Azure Synapse Link for Dataverse](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/export-to-data-lake)?
+This service allows selecting both standard and custom finance and operations entities and tables. It supports continuous replication of entity and table data, including create, update, and delete (CUD) transactions. For more information, see [Create an Azure Synapse Link for Dataverse with Azure Data Lake](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/azure-synapse-link-data-lake).
+
+> [!NOTE]
+> We recommend using finance and operations tables for data replication to Azure Data Lake.
+
+**1. Enable Azure Data Lake.** Azure Data Lake is a powerful cloud service provided by Microsoft that allows you to store and analyze large volumes of data. For more information, see [Introduction to Azure Data Lake Storage Gen2](https://learn.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-introduction). To fulfill the daily backup requirement, create a storage account in India to use with your Azure Data Lake Storage. For more information, see [Create a storage account to use with Azure Data Lake Storage Gen2](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create).
+
+> [!NOTE]
+> Enabling the possibility to choose an Azure Synapse Data Lake Storage in India for finance and operations apps environment deployed outside of India is work in progress with availability plan in June 2024. Availability plan is subject to change. 
+
+**2. Choose data.** In Power Apps, select your desired Azure Synapse Link from the list and navigate to the **Azure Synapse** workspace. Expand **Databases** and choose your **Dataverse container**. The exported tables will be displayed under the **Tables** directory on the left sidebar. For more information, see [Choose finance and operations data in Azure Synapse Link for Dataverse](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/azure-synapse-link-select-fno-data).
+
+**3. Data replication.** Data from finance and operations apps is continuously replicated using Azure Synapse Link into Azure Synapse Data Lake Storage. The data is stored in the Common Data Model format, ensuring semantic consistency across apps and deployments.
+
+**4. Query and transform.** Once the data is exported, you can use tools like **Apache Spark** to query and transform it. For more information, see [Transform Azure Synapse Link for Dataverse data with Apache Spark](https://learn.microsoft.com/en-us/power-apps/maker/data-platform/azure-synapse-link-spark). 
+
+> [!IMPORTANT]
+> Determining the data sources’ scope for books of accounts and other relevant books and papers that are maintained in electronic mode for replicating data to fulfill the daily backup requirement withing a specific company using finance and operations apps falls beyond the purview of Microsoft’s support.
+
+##### III. Annual intimation requirement
+
+The company shall intimate to the Registrar on an annual basis at the time of filing of financial statement:
+
+a)	The name of the service provider.
+b)	The internet protocol address of service provider.
+c)	The location of the service provider (wherever applicable).
+d)	Where the books of accounts and other books and papers are maintained on cloud, such address as provided by the service provider.
+e)	Where the service provider is located outside India, the name and address of the person in control of the books of account and other books and papers in India.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
