@@ -53,7 +53,16 @@ Before you begin the procedures in this article, the following prerequisites mus
 
 ## Configure the electronic invoicing feature
 
-The **Chilean electronic invoice (CL) "E-Invoicing for Chile: ISV last-mile connector with Edicom"** feature represents an outbound flow to issue sales documents. Some parameters of the feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, add a feature based on the one provided by Microsoft, complete common parameters on the **Feature parameters** tab, review the default values, and update them as required, so that they better reflect your business operations.
+The **Chilean electronic invoice (CL) "E-Invoicing for Chile: ISV last-mile connector with Edicom"** feature represents an outbound flow to issue the following sales documents:
+    - **Invoice - cod 33, Factura Electrónica**
+	- **Packing slip (e-shipping guide) - cod 52, Guía de Despacho Electrónica**
+	- **Debit note - cod 56, Nota de Débito Electrónica**
+    - **Credit note - cod 61, Nota de Crédito Electrónica**
+    - **Export invoice - cod 110, Factura de Exportación**
+	- **Export debit note - cod 111, Nota de Débito de Exportación**
+	- **Export credit note - cod 112, Nota de Crédito de Exportación**
+
+Some parameters of the feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, add a feature based on the one provided by Microsoft, complete common parameters on the **Feature parameters** tab, review the default values, and update them as required, so that they better reflect your business operations.
 
 In case of Chile, we interact with Edicom at least three times in the pipeline, first to submit the invoice, next to fetch the signed XML, and finally to fetch the status of the submitted invoice. Each of these interactions requires common parameters such as Edicom connection details and the authentication token provided by Edicom. Also, these common parameters are reused in feature setup for all document types. These values will be provided by Edicom when a company onboards.
 
