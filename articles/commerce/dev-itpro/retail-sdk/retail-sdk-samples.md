@@ -2,9 +2,10 @@
 title: Extend Commerce Store receipts
 description: This article describes how to extend Commerce store receipts.
 author: josaw1
-ms.date: 03/02/2021
-ms.topic: article
-audience: Developer
+ms.date: 07/29/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
