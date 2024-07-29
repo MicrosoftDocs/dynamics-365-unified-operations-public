@@ -4,7 +4,7 @@ description: Learn about how to install the Invoice capture solution and integra
 author: sunfzam
 ms.author: zezhangzhao
 ms.topic: overview
-ms.date: 02/01/2024
+ms.date: 07/16/2024
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -92,7 +92,7 @@ To install Invoice capture, follow this step.
 - In AppSource, search for **Invoice Capture for Dynamics 365 Finance**. The preview version of Invoice capture can be found [here](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dynamics365-fno-invoice-capture-preview?flightCodes=15e3cf87e5e04ac5872c702deb9f7ae7). After the installation is completed, you should see the solution installed in the selected environment in Power Apps.
 
 > [!NOTE]
-> After installation, go to **Setup system \> Manage legal entities** and **Manage vendors** to sync the entries from Dynamics 365 Finance.
+> After installation, in Invoice capture, go to **Setup system \> Manage legal entities** and **Manage vendors** to sync the entries from Dynamics 365 Finance.
 > 
 > You can find the implementation guide at **Details and support \> Links**. 
 
