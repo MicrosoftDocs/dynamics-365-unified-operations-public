@@ -40,6 +40,8 @@ To schedule the long-term retention job, follow these steps.
 1. On the last page of the wizard, confirm the details, and then select **Finish** to schedule the **Retail transactions archive ** job for the selected interval and company.
 
 The archive jobs appear on the dashboard.
+Refer the below image showing the Archive with Dataverse long term retention workspace with a completed archive job for retail
+![Archive with Dataverse long term retention workspace for Retail](../media/Retail_LTR.png "Archive with Dataverse long term retention workspace for Retail")
 
 ## View the status of the long term retention job
 
