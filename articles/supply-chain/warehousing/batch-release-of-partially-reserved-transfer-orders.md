@@ -63,6 +63,7 @@ The **Quantity** parameter specifies whether the whole quantity or the physicall
 
 - To set the **Quantity** and **Allow release of partially released orders** parameters for transfer orders, go to **Warehouse management \> Release to warehouse \> Automatic release of transfer orders**.
 - To set the **Quantity** and **Allow release of partially released orders** parameters for sales orders, go to **Warehouse management \> Release to warehouse \> Automatic release of sales orders**.
+- To set the **Quantity** and **Allow release of partially released orders** parameters for outbound shipment orders, go to **Warehouse management \> Release to warehouse \> Automatic release of outbound shipment orders**.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
