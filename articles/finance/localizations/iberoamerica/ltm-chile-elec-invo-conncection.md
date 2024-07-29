@@ -137,12 +137,13 @@ After completing all the required configuration steps, you can generate and subm
 
 To inquire about the results of a submission, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and select the required document type. For more details, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
 
-For Chile specifically, once you have submitted the invoice, the submission status is set to **Pending update actions execution**. You may notice that the response body is likely empty for the signed XML and the get invoice status call, indicating that the XML was not available immediately after submission. To address the pending status, a function called **Execute Update actions** is used. This function resumes the pipeline starting from the action marked as an update action and executes all subsequent actions, running the rest of the pipeline in a loop. This should change the status to **Executing** again, and after a few seconds, it will revert to the **Pending update actions execution** state.
+For Chile specifically, once you have submitted the invoice, the submission status is set to **Pending update actions execution**. You may notice that the response body is likely empty for the signed XML and the get invoice status call, indicating that the XML was not available immediately after submission. To address the pending status, a function called **Execute update actions** is used. This function resumes the pipeline starting from the action marked as an update action and executes all subsequent actions, running the rest of the pipeline in a loop. This should change the status to **Executing** again, and after a few seconds, it will revert to the **Pending update actions execution** state.
 
 ![Screenshot of the Execute update action.](ltm-chl-e-invoice-execute-update-action.png)
 	
 	> [!NOTE]
     > You can configure it to run in batch mode and on a periodic basis by setting a recurrence schedule.
+
 
 Upon reviewing the submission details, you will observe that these steps are executed again, and this time the signed XML has been received. 
 
