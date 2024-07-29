@@ -32,8 +32,8 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-|Point of sale |Improve OPOS device connection reliability |To reduce the likelihood of OPOS device connection errors on POS, you can now enable the 'Keep connection open' setting for hardware profile devices in Commerce headquarters. This will minimize unnecessary OPEN and CLOSE OPOS operations that often lead to connection errors. |Admin|
-|Point of sale | Support for android hardware station extensibility | With android hardware station extensibility, you can build extensions to support HW station requirements, to support fiscal integration with fiscal printers with android devices| Admin |
+|Point of sale |Improve OPOS device connection reliability |To reduce the likelihood of OPOS device connection errors on POS, you can now enable the **Keep connection open** setting for hardware profile devices in Commerce headquarters. This minimizes unnecessary OPEN and CLOSE OPOS operations that often lead to connection errors. |Admin|
+|Point of sale | Support for android hardware station extensibility | With android hardware station extensibility, you can build extensions to support HW station requirements to support fiscal integration with fiscal printers with android devices.| Admin |
 
 
 
