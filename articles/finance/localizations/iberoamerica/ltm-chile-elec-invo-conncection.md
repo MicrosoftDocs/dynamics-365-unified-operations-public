@@ -151,7 +151,7 @@ Upon reviewing the submission details, you will observe that these steps are exe
 
 As a result of the completed outbound flow, the signed XML is attached to the Invoice journal as the **Edicom source file**.
 	
-![Screenshot of the Execute update action.](ltm-chl-e-invoice-attached-source-file.png)
+![Screenshot of attached source file.](ltm-chl-e-invoice-attached-source-file.png)
 
 Eventually, after nine days, the **Terminate pipeline** action completes the pipeline if a business rejection or acceptance has not been received from the buyer earlier.
 
