@@ -37,16 +37,16 @@ Before you begin the procedures in this article, the following prerequisites mus
 	- **Electronic invoicing integration**
 	- **E-Invoicing service workspace designer**
 	- **Execute update actions for submitted documents**
-1. Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
-    - Customer invoice context model
-	- Inventory e-invoice (CL)
-	- Inventory Export e-Invoice (CL)
-    - E-shipping guide (CL)
-    - Project e-invoice (CL)
-	- Project Export e-Invoice (CL)
-	- Edicom source file response import format
-    - Edicom response processing (CL)
-	- Edicom response error log import
+1. Make sure that the following **Electronic reporting (ER) format configurations** are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+    - **Customer invoice context model**
+	- **Inventory e-invoice (CL)**
+	- **Inventory Export e-Invoice (CL)**
+    - **E-shipping guide (CL)**
+    - **Project e-invoice (CL)**
+	- **Project Export e-Invoice (CL)**
+	- **Edicom source file response import format**
+    - **Edicom response processing (CL)**
+	- **Edicom response error log import**
 	
     > [!NOTE]
     > These formats are based on the corresponding **LATAM** format configurations that use the **Invoice model LATAM** and **Invoice model mapping LATAM** configurations. All required additional configurations are automatically imported.
@@ -91,7 +91,7 @@ To review the processing pipeline, go to the **Feature setup** upder the **Setup
     > [!NOTE]
     > This is where the concept of update actions comes into play. Notice that the **Update action** checkbox is turned on for this step. This means that this step and all subsequent steps will be executed in a loop until it will be determined that a terminal state has been reached.
 1. **Get status from Edicom for an invoice**: next, we fetch the status of the submitted invoice from Edicom in the loop.
-1. **Process response**: the received response is then processed to determine if the terminal state has been reached. If the status response indicates a failure, the pipeline will be terminated and the submission marked as failed. If the response indicates a successful submission to the SII Chilean Internal Revenue Service, the pipeline cannot be completed yet because in Chile invoices can be rejected by customers for up to 8 days. During this time, the pipeline will be kept on hold in a state called Pending Execute Update action. If the response indicating that the customer has rejected the invoice is received, this will be detected in the process response step and the pipeline will be marked as failed.
+1. **Process response**: the received response is then processed to determine if the terminal state has been reached. If the status response indicates a failure, the pipeline will be terminated and the submission marked as failed. If the response indicates a successful submission to the SII Chilean Internal Revenue Service, the pipeline cannot be completed yet because in Chile invoices can be rejected by customers / buyers for up to 8 days. During this time, the pipeline will be kept on hold in a state called **Pending execute update action**. If the response indicating that the customer has rejected the invoice is received, this will be detected in the process response step and the pipeline will be marked as failed.
 1. **Terminate pipeline**: finally, there is the Terminate pipeline action having the number of days to wait before terminating specified. In the out-of-the-box default setup, the pipeline will terminate with a completed status if more than nine days have passed since the invoice was submitted. If there are no rejections, the terminate pipeline step will mark the pipeline as completed.
 
     ![Screenshot of the outbound pipeline.](ltm-chl-e-invoice-outbound-pipeline.png)
@@ -137,7 +137,7 @@ After completing all the required configuration steps, you can generate and subm
 
 To inquire about the results of a submission, go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and select the required document type. For more details, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
 
-For Chile specifically, once you have submitted the invoice, the submission status is set to **Pending update actions execution**. You may notice that the response body is likely empty for the signed XML and the get invoice status call, indicating that the XML was not available immediately after submission. To address the pending status, a function called **Execute update actions** is used. This function resumes the pipeline starting from the action marked as an update action and executes all subsequent actions, running the rest of the pipeline in a loop. This should change the status to **Executing** again, and after a few seconds, it will revert to the **Pending update actions execution** state.
+For Chile specifically, once you have submitted the invoice, the submission status is set to **Pending update actions execution**. The response body is likely empty for the signed XML and the get invoice status call, indicating that the XML was not available immediately after submission. To address the pending status, a function called **Execute update actions** is used. This function resumes the pipeline starting from the action marked as an update action and executes all subsequent actions, running the rest of the pipeline in a loop. This should change the status to **Executing** again, and after a few seconds, it will revert to the **Pending update actions execution** state.
 
 ![Screenshot of the Execute update action.](ltm-chl-e-invoice-execute-update-action.png)
 
