@@ -31,7 +31,7 @@ The production floor execution interface is always available in Supply Chain Man
 
 ### Register material consumption (preview)
 
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 <!-- KFM: Preview until further notice -->
 
 This feature enables workers to use the production floor execution interface to register material consumption, batch numbers, and serial numbers. Some manufacturers, especially those in the process industries, must explicitly register the amount of material that is consumed for each batch or production order. For example, workers might use a scale to weigh the amount of material that is consumed as they work. To ensure full material traceability, these organizations must also register the batch numbers that were consumed to produce each product.
@@ -55,7 +55,7 @@ There are two versions of this feature. One supports items that *are not* enable
 
 ### <a name="tracked-components"></a>Tracked components (preview)
 
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 <!-- KFM: Preview until further notice -->
 
 This feature lets workers and managers register batch/serial numbers for materials and components that are used in manufacturing processes. They can then associate those numbers with the batch/serial numbers of the products that are produced. In this way, manufacturers can optimize their processes, enhance product quality, and respond quickly to any issues that arise. Managers can use the item tracing report to effectively track batch/serial numbers that are registered through the *Tracked components* feature.
