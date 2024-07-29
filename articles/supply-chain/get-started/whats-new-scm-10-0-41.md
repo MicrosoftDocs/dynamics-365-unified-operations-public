@@ -16,7 +16,7 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.41. This version has a build number of 10.0.1935 <!--KFM: Build number needed --> and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.41. This version has a build number of 10.0.2015 and is available on the following schedule:
 
 - **Preview of release:** July 2024
 - **General availability of release (self-update):** September 2024
@@ -28,15 +28,15 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Inventory and logistics | [Enable quality control for goods-in-transit orders](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/enable-quality-control-goods-in-transit-orders) | *Coming soon* | Feature management:<br>*(Preview) Enable Quality Control for Goods In-Transit Order.* |
+| Inventory and logistics | [Enable quality control for goods-in-transit orders](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/enable-quality-control-goods-in-transit-orders) | [Quality orders](../inventory/quality-orders.md) | Feature management:<br>*(Preview) Enable Quality Control for Goods In-Transit Order.* |
 | Inventory and logistics | Pair sales order with transfer order <!--KFM: Won't be on release plan --> | *Coming soon* | Feature management:<br>*(Preview) Pair transfer order lines with sales order lines* |
 | Inventory and logistics | [Recalculate for weighted average cost including physical transaction](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/recalculate-weighted-average-cost-including-physical-transaction) | [Options for including physical value in cost calculations](../cost-management/include-physical-value.md) | Feature management:<br>*(Preview) Recalculation for Weighted Average Cost including Physical Transaction* |
 | Inventory and logistics | Sync external changes through Inventory Visibility <!--KFM: Add link when published --> | *Coming soon* | Feature management:<br>*Inventory Visibility transaction integration* |
-| Inventory and logistics | [Trace goods through the supply chain](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/trace-goods-through-supply-chain) | *Coming soon* | Feature management and Power Apps. <!--KFM: Add link --> |
+| Inventory and logistics | [Trace goods through the supply chain](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/trace-goods-through-supply-chain) | [Traceability overview](../traceability/traceability-overview.md) | Feature management and Power Apps.<br><br>See [Install and update Traceability](../traceability/developer/traceability-install.md) |
 | Inventory and logistics | [Track time-series inventory in Inventory Visibility](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/track-time-series-inventory-inventory-visibility) | *Coming soon* | Feature management:<br>*Inventory Visibility integration with ATP* |
 | Manufacturing and asset management | Decouple production registration from time and attendance <!--KFM: Add link when published --> | [Registration for manufacturing execution](../production-control/registration-manufacturing-execution.md) | Feature management:<br>*Skip time adjustments when calculating actual cost per production order* |
 | Manufacturing and asset management | Register time spent working on projects for production <!--KFM: Add link when published --> | [Registration for manufacturing execution](../production-control/registration-manufacturing-execution.md) | Feature management:<br>*Skip time adjustments when calculating actual cost per production order* |
-| Procurement | [Approve POs and requisitions from mobile device](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/approve-purchase-orders-requisitions-mobile-device) | *Coming soon* | Feature management and Power Apps. <!--KFM: Add link --> |
+| Procurement | [Approve POs and requisitions from mobile device](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/approve-purchase-orders-requisitions-mobile-device) | [Approvals Management mobile app overview](../approval-management-mobile-app/approval-management-app-overview.md) | Feature management and Power Apps.<br><br>See [Onboard the Approvals Management mobile app](../approval-management-mobile-app/developer/onboard-approval-app.md) |
 
 ## <a name="enhancements"></a>Feature enhancements included in this release
 
@@ -71,7 +71,7 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.41 includes platform updates
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.41, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=). <!--KFM: Get new link -->
+For information about the bug fixes included in each of the updates that are part of version 10.0.41, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=948711).
 
 ### Dynamics 365: 2024 release wave 1 plan
 

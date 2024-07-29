@@ -59,7 +59,7 @@ Legend:
 
 1. **List item** – Each item in the list represents an individual document header or line. A summary of the item is shown. Select the item to view details about it.
 1. **View comments** – View comments about the related item. These comments are usually comments that the requester wrote for the reviewer.
-1. **Multiselect** – Turn multiselect on or off. (In the preceding illustration, multiselect is turned off.)
+1. **Multiselect** – Turn multiselect on or off. (In this illustration, multiselect is turned off.)
 1. **Header/Lines selector** – Select whether to view a list of document headers or individual lines.
 
 ### List pages with multiselect
@@ -73,7 +73,7 @@ Legend:
 1. **Select all** – Select or clear the selection of all items in the list.
 1. **Checkbox** – Select or clear the selection of the related item.
 1. **Action buttons** – Approve, reject, delegate, or request changes for all the selected items.
-1. **Multiselect** – Turn multiselect on or off. (In the preceding illustration, multiselect is turned on.)
+1. **Multiselect** – Turn multiselect on or off. (In this illustration, multiselect is turned on.)
 
 ## Detail pages
 
@@ -88,7 +88,7 @@ Header details pages show information about the selected document as a whole. Th
 Legend:
 
 1. **Back** – Return to the page that you came from.
-1. **Details tab** – View general information about the document. (In the preceding illustration, this tab is selected.)
+1. **Details tab** – View general information about the document. (In this illustration, this tab is selected.)
 1. **Attachments tab** – View and open any attachments that are associated with the document.
 1. **Timeline tab** – View a timeline of events that are related to the document.
 1. **Accounting distribution details** – View accounting distribution details that are linked to the document.
