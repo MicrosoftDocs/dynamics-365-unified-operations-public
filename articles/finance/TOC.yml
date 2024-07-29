@@ -1092,6 +1092,8 @@
                       href: general-ledger/tasks/create-assign-advanced-rule-structures.md
                     - name: How do I set up balancing financial dimensions?
                       href: general-ledger/set-up-balance-dimensions.md
+                    - name: Default financial dimensions on financial journals
+                      href: general-ledger/dimensions-default-values.md
             - name: Setup
               items:
                 - name: Process allocations
@@ -3555,7 +3557,7 @@
                     - name: Post packing slips for Latin America
                       href: localizations/iberoamerica/ltm-core-packing-slip-posting.md
                     - name: Configure journal names for Latin America
-                      href: localizations/iberoamerica/ltm-core-journal-name-configuration..md
+                      href: localizations/iberoamerica/ltm-core-journal-name-configuration.md
                     - name: Value query for Latin America
                       href: localizations/iberoamerica/ltm-core-value-query.md
                     - name: Configure electronic document references
@@ -4279,7 +4281,7 @@
                     - name: Uruguay overview
                       href: localizations/iberoamerica/uruguay.md
                     - name: Configure sales and purchase invoices for Uruguay
-                      herf: localizations/iberoamerica/ltm-configure-invoices-uruguay.md
+                      href: localizations/iberoamerica/ltm-configure-invoices-uruguay.md
                     - name: Create customer and vendor records with an address in Uruguay
                       href: localizations/iberoamerica/ltm-create-customer-vendor-uruguay.md
                     - name: Set up a legal entity and tax information for Uruguay
@@ -4443,6 +4445,8 @@
               href: business-performance-analytics/configure-BPA.md
             - name: Install business performance analytics
               href: business-performance-analytics/install-bpa.md
+            - name: Connect business performance analytics data to Microsoft Fabric 
+              href: business-performance-analytics/bpa-fabric.md              
             - name: Business performance analytics data model
               href: business-performance-analytics/business-performance-analytics-data-model.md
             - name: Set up security in business performance analytics
@@ -5373,6 +5377,8 @@
           items:
             - name: US Payroll overview
               href: ../fin-ops-core/fin-ops/hr/localizations/usa/noam-usa-payroll.md
+            - name: Deprecation of US payroll tax updates
+              href: ../fin-ops-core/fin-ops/hr/localizations/usa/noam-usa-deprecate-payroll-tax.md           
             - name: Payroll setup
               items:
                 - name: Set up payroll for workers
@@ -5451,8 +5457,6 @@
                   href: ../fin-ops-core/dev-itpro/financial/dimensions.md
                 - name: Add dimensions to Excel templates
                   href: ../fin-ops-core/dev-itpro/financial/dimensions-overview.md
-                - name: Support for Dimension Entry controls on dialogs
-                  href: ../fin-ops-core/dev-itpro/financial/dimension-entry-control-dialog-support.md
                 - name: Migrate default dimensions controls to Dimension Entry controls
                   href: ../fin-ops-core/dev-itpro/financial/dimension-entry-control-migration.md
                 - name: Uptake of Dimension Entry controls
@@ -5495,6 +5499,10 @@
           href: ../finance/transparency-note.md
         - name: Collections coordinator summary FAQ
           href: accounts-receivable/collections-coordinator-summary-faq.md
+        - name: Customer page summary FAQ
+          href: accounts-receivable/customerpagesummary.md
+        - name: Workflow history summary FAQ
+          href: ../fin-ops-core/fin-ops/copilot/workflow-history-summary-faq.md
     - name: Development and administration for finance and operations apps
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Supply Chain Management

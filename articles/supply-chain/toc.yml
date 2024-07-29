@@ -2365,8 +2365,6 @@
           href: procurement/purchase-order-approval-confirmation.md
         - name: Calculate requested ship dates for purchase orders
           href: master-planning/supplier-requested-confirmed-dates.md
-        - name: Enable Copilot support for managing changes to confirmed purchase orders
-          href: procurement/purchase-order-changes-after-confirmation-enable.md
         - name: Review and accept changes to confirmed purchase orders
           href: procurement/purchase-order-changes-after-confirmation.md
         - name: Purchase order approval mobile workspace
@@ -2735,7 +2733,7 @@
             href: production-control/phantom-items.md
           - name: BOM calculations
             href: cost-management/bom-calculations.md
-          - name: Production parameters in Manufacturing execution
+          - name: Production parameters for manufacturing execution
             href: production-control/production-parameters-manufacturing-execution.md
           - name: Operations resources
             href: production-control/operations-resources.md
@@ -2825,12 +2823,10 @@
             href: production-control/tasks/use-safety-stock-journal-update-minimum-coverage.md
           - name: Material substitution in manufacturing
             href: production-control/substitute-items-bom-lines.md
-          - name: Registration for manufacturing execution
-            href: production-control/registration-manufacturing-execution.md
           - name: Production feedback
             href: production-control/production-feedback.md
-          - name: Enable the payroll process for time and attendance
-            href: production-control/tasks/payroll-process-time-attendance.md
+          - name: Configure a worker using the mobile job device
+            href: production-control/tasks/worker-mobile-job-device.md
         - name: Manage financials in production
           items:
           - name: Allocate time to jobs in a job bundle
@@ -2839,16 +2835,6 @@
             href: production-control/consumption.md
           - name: Production posting
             href: cost-management/production-posting.md
-        - name: Time and attendance registration
-          items:
-          - name: Time and attendance registration overview
-            href: production-control/time-attendance-registrations.md
-          - name: Pay based on registrations
-            href: production-control/pay-based-on-registrations.md
-          - name: Absence registration in Time and attendance
-            href: production-control/absence-registration-in-time-and-attendance.md
-          - name: Flex groups
-            href: production-control/time-attendance-flex-groups.md
       - name: Lean manufacturing
         items:
         - name: Lean manufacturing overview
@@ -2965,7 +2951,7 @@
             href: production-control/tasks/copy-co-products-existing-formula-version.md
           - name: Create a formula by copying from an existing formula
             href: production-control/tasks/create-formula-copying-existing-formula.md
-          - name: Production parameters in Manufacturing execution
+          - name: Production parameters for manufacturing execution
             href: production-control/production-parameters-manufacturing-execution.md
           - name: Production setup requirements
             href: production-control/production-set-up-requirements.md
@@ -2987,8 +2973,6 @@
             href: production-control/tasks/sequence-production-jobs-process-manufacturing.md
           - name: Material substitution in manufacturing
             href: production-control/substitute-items-bom-lines.md
-          - name: Registration for manufacturing execution
-            href: production-control/registration-manufacturing-execution.md
           - name: Register and track batch/serial numbers for finished products and their components (preview)
             href: production-control/tracked-components.md
           - name: Production feedback
@@ -3003,6 +2987,20 @@
             href: production-control/consumption.md
           - name: Production posting
             href: cost-management/production-posting.md
+      - name: Time and attendance registration
+        items:
+        - name: Time and attendance registration overview
+          href: production-control/time-attendance-registrations.md
+        - name: Registration for manufacturing execution
+          href: production-control/registration-manufacturing-execution.md
+        - name: Pay based on registrations
+          href: production-control/pay-based-on-registrations.md
+        - name: Absence registration in Time and attendance
+          href: production-control/absence-registration-in-time-and-attendance.md
+        - name: Flex groups
+          href: production-control/time-attendance-flex-groups.md
+        - name: Enable the payroll process for time and attendance
+          href: production-control/tasks/payroll-process-time-attendance.md
       - name: Production floor execution interface
         items:
         - name: How workers use the production floor execution interface

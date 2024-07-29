@@ -266,8 +266,6 @@
           href: dev-itpro/retail-device-activation.md
         - name: Security best practices for Store Commerce for web in shared environments
           href: dev-itpro/secure-retail-cloud-pos.md
-        - name: Retail Hardware Station configuration and installation
-          href: dev-itpro/retail-hardware-station-configuration-installation.md
         - name: Mass deployment of sealed Commerce self-service components
           href: dev-itpro/Enhanced-Mass-Deployment.md
         - name: Mass deployment of legacy self-service components
@@ -386,6 +384,8 @@
             href: dev-itpro/store-commerce-capabilities.md
           - name: Store Commerce app FAQ
             href: dev-itpro/store-commerce-faq.md
+          - name: Choose between Store Commerce app and Store Commerce for web
+            href: dev-itpro/MPOS-or-CPOS.md
           - name: Store Commerce app for mobile platforms
             href: dev-itpro/store-commerce-mobile.md
           - name: Enable self-checkout in the Store Commerce app
@@ -394,24 +394,26 @@
             href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
           - name: Device management implementation guidance
             href: dev-itpro/implementation-considerations-devices.md
-          - name: Choose between Store Commerce app and Store Commerce for web
-            href: dev-itpro/MPOS-or-CPOS.md
           - name: Device activation of a customized Modern POS
             href: dev-itpro/retail-POS-activation-changes.md
           - name: Search for products and product variants during order entry
             href: ../supply-chain/pim/search-products-product-variants.md?context=/dynamics365/context/commerce
           - name: Suspend and resume transactions in the POS
             href: pos-suspend-recall-transactions.md
-          - name: Offline POS functionality
-            href: dev-itpro/pos-offline-functionality.md
           - name: Task recorder and help for Store Commerce
             href: task-recorder-retail-pos.md
+          - name: Create financial dimensions for POS registers and configure dimension values on registers
+            href: tasks/create-financial-dimensions-pos.md
+          - name: Create POS permissions group
+            href: tasks/create-pos-permission-groups.md
           - name: Hardware peripherals
             items:
             - name: Peripherals
               href: retail-peripherals-overview.md
             - name: Peripheral simulator
               href: dev-itpro/retail-peripheral-simulator.md
+            - name: Configure and install Retail hardware station
+              href: dev-itpro/retail-hardware-station-configuration-installation.md
             - name: Connect peripherals to the POS
               href: define-maintain-channel-clients-registers-hw-stations.md
             - name: Health check for POS peripherals and services
@@ -470,10 +472,6 @@
               href: extended-logon.md
             - name: Manage activation accounts and validate devices
               href: dev-itpro/set-up-activation-accounts-validate-devices-hq.md
-          - name: Create financial dimensions for POS registers and configure dimension values on registers
-            href: tasks/create-financial-dimensions-pos.md
-          - name: Create POS permissions group
-            href: tasks/create-pos-permission-groups.md
           - name: Cash management
             items:
             - name: Cash management overview
@@ -482,12 +480,16 @@
               href: shift-drawer-management.md
           - name: Offline
             items:
+            - name: Offline POS functionality
+              href: dev-itpro/pos-offline-functionality.md
             - name: Commerce offline implementation considerations
               href: dev-itpro/implementation-considerations-offline.md
             - name: Commerce offline implementation troubleshooting
               href: dev-itpro/implementation-offline-troubleshooting.md
             - name: Online and offline POS operations
               href: pos-operations.md
+            - name: Commerce database index compression
+              href: dev-itpro/index-compression.md
           - name: Authentication
             items:
             - name: Dynamics 365 Commerce authentication flows
@@ -508,8 +510,10 @@
               href: charge-send.md
             - name: Enable consistent delivery mode handling in e-commerce channels
               href: consistent-delivery-mode-handling.md
-        - name: Configure and install Retail hardware station
-          href: dev-itpro/retail-hardware-station-configuration-installation.md
+          - name: POS modernization
+            items:
+            - name: POS modernization and usability improvements
+              href: POS-UX-modernization.md  
         - name: Receipts
           items:
           - name: Set up and design receipt formats

@@ -1,13 +1,13 @@
 --- 
 title: Set up company bank accounts for ISO20022 credit transfers
 description: Learn how to set up company-specific bank account information that's required to generate file payments, including a process for setting up IBAN and SWIFT codes. 
-author: mrolecki
-ms.author: mrolecki
+author: kailiang
+ms.author: kailiang
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 08/01/2023
-ms.custom:
 ms.reviewer: johnmichalak 
-audience: Application User 
 ms.search.region: Global
 ms.search.validFrom: 2016-06-30
 ms.search.form: BankAccountTable, OMLegalEntity, BankAccountTableLookUp

@@ -2,9 +2,10 @@
 title: Set up Operational Insights
 description: This article describes how to set up and use the Operational Insights feature in Microsoft Dynamics 365 Commerce.
 author: ashishMSFT
-ms.date: 05/28/2024
-ms.topic: article
-audience: Developer, IT Pro
+ms.date: 06/20/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw

@@ -4,10 +4,9 @@ description: Learn about features that are either new or changed in the Microsof
 author: twheeloc
 ms.author: twheeloc
 ms.topic: faq
-ms.date: 4/26/2024
-ms.custom:   
+ms.custom: 
   - bap-template
-  - evergreen
+ms.date: 07/22/2024
 ms.reviewer: twheeloc
 ms.search.region: Global
 ---
@@ -72,7 +71,8 @@ Dynamics 365 Finance version 10.0.40 includes platform updates. To learn more, s
 
 ### Bug fixes
 
-For information about the bug fixes included in this update, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=936136).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=932660).
+
 
 ### Regulatory updates
 

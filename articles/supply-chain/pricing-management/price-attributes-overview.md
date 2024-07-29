@@ -15,7 +15,7 @@ ms.search.form:
 # Price attributes overview (preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 One of the key functions of a price manager is to work together with the product manager to accomplish the following tasks:

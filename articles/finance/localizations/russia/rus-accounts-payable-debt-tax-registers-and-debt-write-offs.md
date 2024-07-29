@@ -1,14 +1,14 @@
 ---
 title: Accounts payable debt tax registers and debt write-offs
 description: Learn about accounts payable debt tax registers and debt write-offs, including a step-by-step process on setting up Accounts payable parameters.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 04/08/2021
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/10/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
-ms.search.validFrom: 
 ms.dyn365.ops.version: 10.0.1
 ---
 

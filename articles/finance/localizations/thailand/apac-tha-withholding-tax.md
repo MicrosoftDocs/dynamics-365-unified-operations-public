@@ -1,12 +1,13 @@
 ---
 title: Withholding tax in Thailand
 description: Learn about withholding tax and how to set it up for Thailand, including an outline and step-by-step process for setting up Thailand withholding tax.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 03/05/2021
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Thailand
 ms.search.validFrom: 2016-11-30
 ms.search.form: TaxWithholdGroup, TaxWithholdTable, TaxWithholdTrans

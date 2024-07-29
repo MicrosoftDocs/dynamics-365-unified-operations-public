@@ -3,13 +3,13 @@ title: Swiss QR-bills
 description: Learn about how to generate QR-bills (QR-slips) and process incoming QR-bills, including an outline on electronic reporting configurations.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
-ms.date: 03/25/2020
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Switzerland
 ms.search.validFrom: 2020-06-01
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.9
 ---
 
