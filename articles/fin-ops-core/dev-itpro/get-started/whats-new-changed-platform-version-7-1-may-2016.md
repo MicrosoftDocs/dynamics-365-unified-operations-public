@@ -3,13 +3,12 @@ title: What's new or changed in Dynamics AX platform update 1 (May 2016)
 description: Learn about new or changed features in Microsoft Dynamics AX platform update 1. This version was released in May 2016.
 author: sericks007
 ms.author: sericks
-ms.topic: article
+ms.topic: whats-new
 ms.date: 07/12/2024
 ms.custom: 
   - bap-template
   - evergreen
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1

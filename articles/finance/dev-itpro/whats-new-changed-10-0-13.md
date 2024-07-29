@@ -4,13 +4,13 @@ description: Learn about features that are either new or changed in the Dynamics
 author: kfend
 ms.author: kfend
 ms.topic: article
-ms.date: 09/03/2020
+ms.date: 07/15/2024
 ms.custom:
+  - bap-template
+  - evergreen
 ms.reviewer: kfend
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2020-07-31
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.13
 ---
 

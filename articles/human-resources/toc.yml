@@ -4,7 +4,7 @@ items:
   - name: Dynamics 365 Human Resources  
     items:
     - name: Dynamics 365 Human Resources documentation
-      href: index.yml
+      href: index.yml 
     - name: Welcome to Dynamics 365 Human Resources 
       href: welcome.md  
     - name: Human Resources infrastructure merge
@@ -555,6 +555,32 @@ items:
           items:
           - name: Recruit job candidates
             href: hr-personnel-recruit.md  
+        - name: Human Resources Recruiting app (preview)
+          items:
+          - name: Configure the Human Resources recruiting app
+            items:
+            - name: Set up the HR Recruiting app 
+              href: hr-recruit-setup.md 
+            - name: Onboard users to use the HR Recruiting app 
+              href: hr-recruit-onboard.md 
+            - name: Configuration in the HR Recruiting app   
+              href: hr-recruit-configuration.md
+            - name: Configure the careers site in the HR Recruiting app
+              href: hr-recruit-career.md 
+          - name: Use the Human Resources recruiting app
+            items: 
+            - name: Use the dashboard in the HR Recruiting app 
+              href: hr-recruit-dashboard.md 
+            - name: Set up job ads in the HR Recruiting app
+              href: hr-recruit-job-ad.md
+            - name: Use the careers site in the HR Recruiting app
+              href: hr-recruit-career-site.md 
+            - name: Set up prospects in the HR Recruiting app
+              href: hr-recruit-prospect.md 
+            - name: Applicants in HR recruiting app 
+              href: hr-recruit-applicant.md 
+            - name: Set up panel members in the HR Recruiting app
+              href: hr-recruit-panel.md
     - name: Time and attendance
       items:
       - name: Time and attendance information
@@ -747,6 +773,8 @@ items:
       items:
       - name: Performance management overview
         href: hr-develop-performance-management-overview.md
+      - name: Set up electronic reporting to print preformance reviews
+        href: perf-mgmt-print.md
       - name: Skills
         items:
         - name: Configure skills
