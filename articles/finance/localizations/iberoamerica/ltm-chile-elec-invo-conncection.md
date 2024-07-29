@@ -4,7 +4,7 @@ description: Learn how to set up Microsoft Dynamics 365 Finance and Regulatory C
 author: Fhernandez0088
 ms.author: v-federicohe
 ms.topic: article
-ms.date: 02/15/2024 
+ms.date: 07/29/2024 
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
