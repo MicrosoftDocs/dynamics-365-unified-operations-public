@@ -54,7 +54,7 @@ This list is intended to help you consider these removals and deprecations for y
 |---|---|
 | **Reason for deprecation/removal** | The **Release to warehouse** page has performance issues. |
 | **Replaced by another feature?**   | Yes. The  **Release to warehouse** page has been split into two new release to warehouse pages, which together provide equivalent functionality with significantly improved performance. The new pages are **Release sales orders to warehouse** and **Release transfer orders to warehouse**. |
-| **Product areas affected** | Supply Chain Management – Release to warehouset |
+| **Product areas affected** | Supply Chain Management – Release to warehouse |
 | **Deployment option** | Cloud and on-premises |
 | **Status** | <p>Deprecated. The **Release to warehouse** page is now hidden in the app, but you can enable it if necessary by contacting Microsoft Support. We strongly recommend that you instead use the new pages (**Release sales orders to warehouse** and **Release transfer orders to warehouse**) because they provide equivalent functionality with significantly improved performance. The **Release to warehouse** page will be completely removed from the product one year after the release of Supply Chain Management version 10.0.41.</p> |
 
