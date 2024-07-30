@@ -186,7 +186,7 @@
           href: pos-report-insights-using-copilot.md
         - name: Customer insights by Copilot
           href: pos-customer-insights-using-copilot.md
-        - name: Statement posting summaries by Copilot
+        - name: Enable Copilot statement posting summaries
           href: copilot-statement-summaries.md
         - name: Use Copilot in site builder to enrich product detail pages
           href: copilot-site-builder.md
