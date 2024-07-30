@@ -1200,6 +1200,8 @@
                       href: general-ledger/tasks/post-periodic-journals.md
                     - name: Create and validate journals
                       href: general-ledger/tasks/create-validate-journals.md
+                    - name: Default financial dimensions on finanical journals
+                      href: general-ledger/dimensions-default-values.md
                     - name: Journal posting failure due to imbalance
                       href: general-ledger/posting-fail-imbalance.md
                     - name: Reverse journal posting
