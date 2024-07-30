@@ -1,5 +1,5 @@
 ---
-title: Streamline Your Merchandising Process with Copilot based insights
+title: Streamline your Merchandising Process with Copilot based insights
 description: This article explains how to use Copilot proactively provides a comprehensive summary of insights for your merchandising configurations for your retail channels simplifying your merchandising workflows
 author: ashishmsft
 ms.date: 07/19/2024
@@ -13,7 +13,7 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Streamline Your Merchandising Process with Copilot based insights
+# Streamline your Merchandising Process with Copilot based insights
 This article explains how to Copilot proactively provides a comprehensive summary of insights for your merchandising configurations for your retail channels simplifying your merchandising workflows. The summary enables you to understand the status and performance of your products across different channels, as well as identify and resolve any issues related to your product, category and catalog data.
 
 ## Prerequisites
