@@ -33,7 +33,7 @@ A deprecated feature is a feature that's no longer in active development and mig
 - Customers who have received an exception so that they can continue to use the deprecated built-in planning engine.
 - All on-premises customers.
 
-There's currently no timeline for full removal of the deprecated built-in planning engine from Supply Chain Management. If Microsoft does make plans to remove it, we'll announce those plans 12 months before the removal date, so that all remaining customers can migrate.
+There's currently no timeline for full removal of the deprecated built-in planning engine from Supply Chain Management. If Microsoft does make plans to remove it, we'll announce those plans 12 months before the removal date.
 
 ## New deployments
 
