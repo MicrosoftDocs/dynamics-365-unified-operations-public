@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Analyze store performance
 description: This article explains how you can use the in-memory and real-time analytics to access, explore, and gain insight about store performance, based on your Dynamics 365 Commerce data. 
 author: ashishmsft
-ms.date: 06/20/2017
-ms.topic: article
-# optional metadata
-
+ms.date: 07/30/2024
+ms.topic: how-to
 ms.search.form: RetailChannelReport, RetailChannelManagementWorkspace
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+ms.reviewer: v-chrgriffin
 ms.assetid: 495a66f0-491a-4688-842d-51c33c37676f
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: asharchw
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
-
+ms.custom: 
+  - bap-template
 ---
 
 # Analyze store performance

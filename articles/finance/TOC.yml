@@ -1674,16 +1674,18 @@
                           href: localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/finance
                         - name: Australia and New Zealand
                           href: localizations/apac/gs-apac-aus-nzl-electronic-invoices.md?context=/dynamics365/context/finance
+                        - name: Chile
+                          href: localizations//iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/finance                          
                         - name: Indonesia
                           href: localizations/indonesia/gs-e-invoicing-id-get-started.md?context=/dynamics365/context/finance
-                        - name: Saudi Arabia
-                          href: localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
-                        - name: Saudi Arabia - onboarding
-                          href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
                         - name: Malaysia
                           href: localizations//malaysia/apac-mys-e-invoices.md?context=/dynamics365/context/finance
                         - name: Poland (preview)
                           href: localizations/poland/gs-e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
+                        - name: Saudi Arabia
+                          href: localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
+                        - name: Saudi Arabia - onboarding
+                          href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
                     - name: Electronic Invoicing FAQ
                       href: localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/finance
                 - name: Electronic Invoicing (RCS)
@@ -2322,7 +2324,7 @@
                   items:
                     - name: Chile overview
                       href: localizations/iberoamerica/chile.md
-                    - name: Configure connections for Chilean electronic invoicing
+                    - name: Get started with Electronic invoicing for Chile
                       href: localizations/iberoamerica/ltm-chile-elec-invo-conncection.md
                     - name: Configure electronic invoice parameters for Chile
                       href: localizations/iberoamerica/ltm-chile-conf-electronic-invoice.md
