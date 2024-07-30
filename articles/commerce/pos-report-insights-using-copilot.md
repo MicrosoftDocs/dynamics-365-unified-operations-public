@@ -43,4 +43,4 @@ This capability is available for Dynamics 365 Commerce customers on following ve
 > - If your hosting environment is in one of the regions where Azure Open AI is currently not available, then through Power Platform Admin Center (PPAC) consider enabling "Move data across regions". If your Dynamics 365 environments are hosted in the EU Data Boundary, we use an Azure OpenAI endpoint in the same boundary.If the required AI services are already available in your Dataverse region, you don't have to set up support for cross-region calls. If cross-region data movement is required but is disabled, users won't be able to view Copilot generated summaries in Store Commerce app[Learn more](/power-platform/admin/geographical-availability-copilot).
 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
