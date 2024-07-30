@@ -1,23 +1,22 @@
 ---
 title: Add custom resources to your customization code
-description: This article describes how to add custom static resources to your SDK customization code so that they can be accessed from within your theme.
+description: This article describes how to add custom static resources to your SDK customization code so that they can be accessed from within your theme in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 05/27/2021
-ms.topic: article
+ms.date: 07/30/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 # Add custom resources to your customization code
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to add custom static resources such as font, image, and Cascading Style Sheet (CSS) files to your software development kit (SDK) customization code so that they can be accessed from within your theme.
+This article describes how to add custom static resources such as font, image, and Cascading Style Sheet (CSS) files to your software development kit (SDK) customization code so that they can be accessed from within your theme in Microsoft Dynamics 365 Commerce.
 
 Some scenarios require adding custom static resources such as font, image, or CSS files that can be accessed from within a module or a theme. These static files can be added to a ```/public``` folder within your SDK customization code so that they will be included in the configuration package generated with the [CLI **yarn msdyn365 pack** command](cli-command-reference.md#pack). Relative paths can then be used to access the resources.
 
