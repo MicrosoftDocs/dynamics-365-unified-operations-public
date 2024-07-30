@@ -1,22 +1,15 @@
 ---
-# required metadata 
-
 title: Set up tax codes
 description: This article explains how to set up tax codes in the Tax Calculation Service. 
-author: wangchen
-ms.date: 02/09/2024
+author: liza-golub
+ms.date: 07/30/2024
 ms.topic: how-to 
-# optional metadata 
-
+ms.custom: 
+  - bap-template
 ms.search.form: TaxTable, TaxData   
-audience: Application User 
-# ms.devlang:  
 ms.reviewer: johnmichalak
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: wangchen
+ms.author: egolub
 ms.search.validFrom: 2021-10-26 
 ms.dyn365.ops.version: Version 10.0.21 
 ---
