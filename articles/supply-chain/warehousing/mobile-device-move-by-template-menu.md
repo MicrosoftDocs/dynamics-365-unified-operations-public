@@ -1,15 +1,14 @@
 ---
 title: Set up a mobile device menu item for moving items by template
-description: This article explains how to set up a mobile device menu item that lets workers register movements of items. The target location is calculated based on the work template and/or location directive configured for the menu item.
+description: Learn how to set up a mobile device menu item that lets workers register movements of items, including a step-by-step process.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSRFMenuItem
 ms.topic: how-to
 ms.date: 02/05/2024
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form: WHSRFMenuItem
 ---
 
 # Set up a mobile device menu item for moving items by template

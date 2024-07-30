@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Consolidate shipments by releasing to warehouse from the outbound load planning workbench
-description: This article presents a scenario where multiple orders are released to the warehouse in the same load and are then automatically consolidated into shipments.
+description: Learn about a scenario where multiple orders are released to the warehouse in the same load and are then automatically consolidated into shipments.
 author: Mirzaab
-ms.date: 05/12/2020
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSOutboundLoadPlanningWorkbench
-# ROBOTS:
-audience: Application User
-# ms.devlang:
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-# ms.custom:
-ms.search.region: Global
-# ms.search.industry:
 ms.author: mirzaab
+ms.topic: article
+ms.date: 05/12/2020
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.region: Global
 ms.search.validFrom: 2020-05-01
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSOutboundLoadPlanningWorkbench
 ms.dyn365.ops.version: 10.0.3
-
 ---
 
 # Consolidate shipments by releasing to warehouse from the outbound load planning workbench

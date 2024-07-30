@@ -1,15 +1,14 @@
 ---
 title: License plate receiving via the Warehouse Management mobile app
-description: This article explains how to set up the Warehouse Management mobile app to support using a license plate receiving process to receive physical inventory.
+description: Learn how to set up the Warehouse Management mobile app to support using a license plate receiving process to receive physical inventory.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSParameters, WHSRFMenuItem, WHSLicensePlate, WHSPackingStructure
 ms.topic: how-to
 ms.date: 01/29/2024
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form: WHSParameters, WHSRFMenuItem, WHSLicensePlate, WHSPackingStructure
 ---
 
 # License plate receiving via the Warehouse Management mobile app

@@ -4,7 +4,8 @@ description: The main account types determine how a main account is used in the 
 author: jchrist
 ms.author: jchrist
 ms.topic: article
-ms.date: 11/21/2022
+ms.date: 05/13/2024
+ms.custom: evergreen
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global

@@ -1,28 +1,15 @@
 ---
-# required metadata
-
 title: Service level agreements overview
 description: In a service level agreement, the customer agrees to a minimum response time based on when the service company records the issue and when the issue is resolved.
-author: sorenva
-ms.date: 07/25/2019
+author: ChristianRytt
+ms.author: crytt
 ms.topic: overview
-
-# optional metadata
-
-ms.search.form: SMAServicelevelagreement
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 07/25/2019
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMAServicelevelagreement
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Service level agreements overview       

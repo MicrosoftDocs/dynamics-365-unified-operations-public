@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: Master planning and multisite functionality overview
-description: Master planning takes the settings of the site and warehouse inventory dimensions into account. 
+description: Learn about master planning and multisite functionality, which take the settings of the site and warehouse inventory dimensions into account. 
 author: t-benebo
-ms.date: 07/25/2019
+ms.author: benebotg
 ms.topic: overview
-
-# optional metadata
-
-ms.search.form: InventLocation, InventSite
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 07/25/2019
 ms.custom:
+ms.reviewer: kamaybac
 ms.collection: get-started
-ms.assetid: 7f05c031-a446-4168-8cce-03a6305f5c4d
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: benebotg
 ms.search.validFrom: 2016-02-28
+ms.search.form: InventLocation, InventSite
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 7f05c031-a446-4168-8cce-03a6305f5c4d
 ---
 
 # Master planning and multisite functionality overview

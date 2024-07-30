@@ -1,15 +1,14 @@
 ---
 title: Mobile device container packing policies
-description: This article provides information about mobile device container packing policies, which let you control the packing process that's supported by the Warehouse Management mobile app.
+description: Learn about mobile device container packing policies, which let you control the packing process that's supported by the Warehouse Management mobile app.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 01/30/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form:
 ---
 
 # Mobile device container packing policies

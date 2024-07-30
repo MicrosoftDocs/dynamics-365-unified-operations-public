@@ -1,15 +1,14 @@
 ---
 title: Packing containers with the Warehouse Management mobile app
-description: This article describes the process for packing containers by using the Warehouse Management mobile app.
+description: Learn about the process for packing containers by using the Warehouse Management mobile app with an outline on the Warehouse Management packing process.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields, WHSRFMenuItem, WHSPackProfile, WHSWorker, WHSPack, WHSMobileDeviceContainerPackingPolicy
 ms.topic: conceptual
 ms.date: 01/30/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields, WHSRFMenuItem, WHSPackProfile, WHSWorker, WHSPack, WHSMobileDeviceContainerPackingPolicy
 ---
 
 # Packing containers with the Warehouse Management mobile app

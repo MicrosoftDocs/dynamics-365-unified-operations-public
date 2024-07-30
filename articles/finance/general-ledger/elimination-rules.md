@@ -4,7 +4,7 @@ description: Learn about elimination rules and the various options for reporting
 author: jchrist
 ms.author: jchrist
 ms.topic: article
-ms.date: 01/11/2018
+ms.date: 05/13/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global

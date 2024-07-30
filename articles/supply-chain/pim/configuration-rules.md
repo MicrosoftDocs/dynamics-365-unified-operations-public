@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Configuration rules
-description: This article provides general information about configuration rules. Configuration rules define relationships between items in a bill of materials (BOM) for products that use the dimension-based configuration technology.
+description: Learn about configuration rules, which define relationships between items in a bill of materials for products that use dimension-based configuration technology.
 author: t-benebo
-ms.date: 06/20/2017
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: BOMConfigRule
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: e4c6622d-1e2d-4a4d-8047-c553a25d4f87
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: benebotg
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: kamaybac
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: BOMConfigRule
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: e4c6622d-1e2d-4a4d-8047-c553a25d4f87
 ---
 
 # Configuration rules

@@ -5,7 +5,6 @@ author: t-benebo
 ms.date: 08/12/2019
 ms.topic: how-to
 ms.search.form: EcoResProductDetailsExtended, ForecastSales   
-audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
@@ -16,6 +15,8 @@ ms.dyn365.ops.version: AX 7.0.0
 # Guide: Modify a demand forecast manually
 
 [!include [banner](../../includes/banner.md)]
+
+[!INCLUDE [demand-planning-banner](../../includes/demand-planning-banner.md)]
 
 This procedure shows how to modify the forecast for an item. This procedure is intended for the production planner.
 

@@ -1,15 +1,14 @@
 ---
 title: Import data into Demand planning
-description: This article describes how to import data from different sources and file types, and also data that is stored in a Microsoft Azure data lake.
+description: Learn how to import data from different sources and file types, and also data that is stored in a Microsoft Azure data lake.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 10/19/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form:
 ---
 
 # Import data into Demand planning
@@ -18,7 +17,7 @@ ms.custom: bap-template
 
 You can import data from a range of sources and file types. For example, you can import data directly from Microsoft Dynamics 365 Supply Chain Management or by importing text files in Excel or comma-separated values (CSV) format. You can also import data that's stored in an Azure data lake. Before you import the data into Demand planning, you can use Power Query to transform it as you require.
 
-The Demand planning app lets you build a collection of *import profiles*. Each profile imports data from a specific external source into one or more specific tables in Demand planning.
+Demand planning lets you build a collection of *import profiles*. Each profile imports data from a specific external source into one or more specific tables in Demand planning.
 
 Typically, a manager or system administrator creates the initial collection of required profiles. Forecasters and other users can then run the profiles to update the data as they require.
 
@@ -60,7 +59,7 @@ To import directly from Supply Chain Management (and other finance and operation
 1. On the **Select data provider** page, select the **Microsoft finance and operations apps** tile.
 1. A setup wizard is opened. On the **Get started** page, enter a name and description for the new profile. Then select **Next**.
 1. On the **Configure data provider** page, in the **Connection URL** field, enter the URL of your Supply Chain Management environment. Then select **Next**.
-1. The **Entity selection** page lists every Supply Chain Management data entity that the solution supports out of the box. It also shows which Demand planning table each data entity maps to. Turn on the **Enabled** option for each entity that you want to import from for the new profile. All Supply Chain Management data entities are supported and can be imported. Note that a table must previously be created in the Demand Planning app before you can map the fields.
+1. The **Entity selection** page lists every Supply Chain Management data entity that the solution supports out of the box. It also shows which Demand planning table each data entity maps to. Turn on the **Enabled** option for each entity that you want to import from for the new profile. All Supply Chain Management data entities are supported and can be imported. Note that a table must previously be created in Demand planning before you can map the fields.
 1. Select **Next**.
 1. On the **Set run schedule** page, you can choose to set up a schedule for the profile to run automatically. For details about this functionality and how to configure it, see [Rolling forecasts](rolling-forecasts.md).
 1. Select **Next**.

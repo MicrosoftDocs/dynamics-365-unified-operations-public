@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Packing slip updates for returns  
 description: Before returned items can be received into inventory, the packing slip for the order to which they belong must be updated.
 author: Henrikan
 ms.author: henrikan
-ms.date: 05/01/2018
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: CustPackingSlipJournalHistory, SalesParmPackingSlipTrackingInformation
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 05/01/2018
 ms.custom: 
-ms.assetid: 
+ms.reviewer: kamaybac
 ms.search.region: Global
-# ms.search.industry: 
 ms.search.validFrom: 2016-02-28
+ms.search.form: CustPackingSlipJournalHistory, SalesParmPackingSlipTrackingInformation
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Packing slip updates for returns  

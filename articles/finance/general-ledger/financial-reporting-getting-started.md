@@ -4,7 +4,7 @@ description: Learn about where to access financial reporting in Microsoft Dynami
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 11/28/2023
+ms.date: 05/20/2024
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -182,6 +182,7 @@ The slipstream process is fully automated and doesn't require any customer actio
 
 - [View financial reports](view-financial-reports.md)
 - [Reporting tree definitions in financial reports](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
+- [Troubleshoot report designer issues with Event Viewer](/troubleshoot/dynamics-365/finance/financial-reporting/troubleshoot-report-designer-with-event-viewer)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 

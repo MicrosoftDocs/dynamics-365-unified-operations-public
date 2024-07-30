@@ -1,15 +1,14 @@
 ---
 title: Onboard the Asset Management mobile app
-description: This article describes how administrators can prepare your Microsoft Dynamics 365 Supply Chain Management and Dataverse environments to support the Asset Management mobile app, and how to install the app on your mobile devices.
+description: Learn how administrators can prepare your Microsoft Dynamics 365 Supply Chain Management and Dataverse environments to support the Asset Management mobile app.
 author: johanhoffmann
 ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 09/19/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form:
 ---
 
 # Onboard the Asset Management mobile app
@@ -33,6 +32,10 @@ The mobile app uses [Dataverse virtual tables that are connected to Supply Chain
 When you create the Dataverse environment where you want to install the app, be sure to enable Dynamics 365 apps.
 
 The [Power Apps component framework feature](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) must be enabled for your environment.
+
+## Licensing requirements
+
+To gain access to the app, users must have the appropriate security role(s) assigned to them in Supply Chain Management. The roles that are available for each user in Supply Chain Management depend on the licenses assigned to them in Microsoft Entra ID. For details about which security roles grant access to which functionality in the Asset Management mobile app, see [Configure users and workers in Supply Chain Management](#roles-workers). For details about which licenses grant access to which security roles, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2267806).
 
 ## <a name="install-in-dataverse"></a>Install the mobile app in Dataverse
 

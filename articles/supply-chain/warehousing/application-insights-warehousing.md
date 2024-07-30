@@ -1,15 +1,14 @@
 ---
 title: Enable warehousing telemetry with Application Insights
-description: This article describes how to set up Microsoft Dynamics 365 Supply Chain Management to send warehousing telemetry data to Application Insights.
+description: Learn how to set up Microsoft Dynamics 365 Supply Chain Management to send warehousing telemetry data to Application Insights.
 author: Mirzaab
 ms.author: mirzaab
-ms.reviewer: kamaybac
-ms.search.form: SysIntParameters
 ms.topic: how-to
 ms.date: 03/19/2024
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form: SysIntParameters
 ---
 
 # Enable warehousing telemetry with Application Insights

@@ -1,24 +1,15 @@
 ---
-# required metadata
-
 title: Configure product filters for warehouse transactions
-description: This article describes how to configure product filters and filter codes to categorize inventory items in a warehouse. You can also use filters to specify which customers can order a particular item and which items can be purchase from a particular vendor.
+description: Learnhow to configure product filters and filter codes to categorize inventory items in a warehouse, including instructions for various prerequisites.
 author: Mirzaab
-ms.date: 01/04/2021
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: WHSFilters,WHSFilterGroupTable,EcoResProductDetailsExtended,WHSFilterGenerallyAvail
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
+ms.topic: article
+ms.date: 01/04/2021
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.region: Global
 ms.search.validFrom: 2021-01-04
+ms.search.form: WHSFilters,WHSFilterGroupTable,EcoResProductDetailsExtended,WHSFilterGenerallyAvail
 ms.dyn365.ops.version: 10.0.16
 ---
 

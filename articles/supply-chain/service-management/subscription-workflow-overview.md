@@ -1,26 +1,14 @@
 ---
-# required metadata
-
 title: Subscription workflow overview 
-description: This article provides an overview of subscription workflow. 
-author: sorenva
-ms.date: 05/07/2018
+description: Access an overview of subscription workflow, including outlines on setting up subscriptions and creating subscription transactions. 
+author: ChristianRytt
+ms.author: crytt
 ms.topic: overview
-
-# optional metadata
-
-ms.search.form: SMASubscriptionGroup, SMASubscriptionCreateDialog
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/07/2018
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMASubscriptionGroup, SMASubscriptionCreateDialog
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

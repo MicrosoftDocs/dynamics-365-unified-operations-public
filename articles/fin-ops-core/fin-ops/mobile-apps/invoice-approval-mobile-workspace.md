@@ -6,7 +6,7 @@ ms.author: sericks
 ms.topic: article
 ms.date: 05/24/2022
 ms.custom:
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2017-06-30

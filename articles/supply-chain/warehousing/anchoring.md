@@ -1,15 +1,14 @@
 ---
 title: Anchoring
-description: This article explains how to enable and use anchoring.
+description: Learn how to enable and use anchoring, including an outline on scenario setup and a process for setting up a mobile device menu item to enable anchoring.
 author: Mirzaab
-ms.date: 07/29/2021
+ms.author: mirzaab
 ms.topic: article
-ms.search.form: WHSRFMenuItem, WHSOutboundLoadPlanningWorkbench
-audience: Application User
+ms.date: 07/29/2021
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mirzaab
 ms.search.validFrom: 2021-07-29
+ms.search.form: WHSRFMenuItem, WHSOutboundLoadPlanningWorkbench
 ms.dyn365.ops.version: 10.0.21
 ---
 

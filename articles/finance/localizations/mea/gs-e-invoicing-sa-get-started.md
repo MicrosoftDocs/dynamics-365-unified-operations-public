@@ -1,18 +1,18 @@
 ---
 title: Electronic invoicing in Saudi Arabia
-description: This article provides information that will help you get started with phase two of Electronic invoicing for Saudi Arabia (preview).
+description: Learn about what will help you get started with phase two of Electronic invoicing for Saudi Arabia, including an outline on configuring parameters.
 author: ilikond
-ms.date: 04/10/2024
+ms.author: ikondratenko
 ms.topic: how-to
+ms.date: 04/10/2024
 ms.custom: 
   - bap-template
-audience: Application User
 ms.reviewer: johnmichalak
+ms.collection: get-started
+audience: Application User
 ms.search.region: Global
-ms.author: ikondratenko
 ms.search.validFrom: 2024-01-29
 ms.dyn365.ops.version: 10.0.39
-ms.collection: get-started
 ---
 
 # Electronic invoicing in Saudi Arabia 

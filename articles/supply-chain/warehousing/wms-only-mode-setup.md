@@ -1,27 +1,23 @@
 ---
-title: Enable and configure Warehouse management only mode (preview)
-description: This article explains how to configure Warehouse management only mode by setting up source systems, master data, and business events.
+title: Enable and configure Warehouse management only mode
+description: Learn how to configure Warehouse management only mode by setting up source systems, master data, and business events with an outline on configuring source systems.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage
 ms.topic: how-to
 ms.date: 04/27/2024
-audience: Application User
-ms.search.region: Global
 ms.custom:
   - bap-template
   - ai-gen-docs-bap
   - ai-gen-desc
   - ai-seo-date:08/10/2023
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage
 ---
 
-# Enable and configure Warehouse management only mode (preview)
+# Enable and configure Warehouse management only mode
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until further notice -->
 
 This article explains how to configure Warehouse management only mode by setting up source systems, master data, and business events.
 
@@ -30,7 +26,7 @@ This article explains how to configure Warehouse management only mode by setting
 To use the Warehouse management only mode capability, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.36 or later.
-- The feature that's named *(Preview) Warehouse management only mode* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named *Warehouse management only mode* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="source-systems"></a>Configure your source systems
 

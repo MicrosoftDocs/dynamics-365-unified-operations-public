@@ -1,15 +1,14 @@
 ---
 title: Priority-based planning
-description: This article describes the priority-based planning feature of Microsoft Dynamics 365 Supply Chain Management.
+description: Learn about the priority-based planning feature of Microsoft Dynamics 365 Supply Chain Management with an outline on toggling priority-based planning.
 author: t-benebo
-ms.date: 10/15/2021
+ms.author: benebotg
 ms.topic: article
-ms.search.form:
-audience: Application User
+ms.date: 10/15/2021
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
 ms.search.validFrom: 2021-10-15
+ms.search.form:
 ms.dyn365.ops.version: 10.0.23
 ---
 

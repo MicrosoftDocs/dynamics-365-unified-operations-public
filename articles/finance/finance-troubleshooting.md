@@ -1,17 +1,17 @@
 ---
 title: Finance troubleshooting and FAQs
-description: This article provides links to troubleshooting resources and frequently asked question articles for Dynamics 365 Finance
+description: Access links to troubleshooting resources and answers to various frequently asked question articles for Dynamics 365 Finance.
 author: twheeloc
-ms.date: 11/06/2023
-ms.topic: article
-ms.search.form:
-audience: Application User
-ms.reviewer: twheeloc
-ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2023-02-28
-ms.dyn365.ops.version: 10.0.28
+ms.topic: article
+ms.date: 07/18/2024
 ms.custom: bap-template
+ms.reviewer: twheeloc
+audience: Application User
+ms.search.region: Global
+ms.search.validFrom: 2023-02-28
+ms.search.form:
+ms.dyn365.ops.version: 10.0.28
 ---
 
 # Finance Troubleshooting and FAQs
@@ -38,6 +38,7 @@ The following FAQ articles discuss issues specific to Finance:
 - [Credit statistics FAQ](accounts-receivable/credit-statistics-faq.md)
 - [Financial Reporting Data mart resets FAQ](../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?context=/dynamics365/context/finance)
 - [Financial reporting FAQ](general-ledger/financial-reporting-faq.md)
+- [Intercompany journals: Dimension values on multi-line vs single line journal](general-ledger/intercompany-journal.md)
 
 The following FAQ articles discuss issues related to the platform shared by all finance and operations apps, including finance:
 

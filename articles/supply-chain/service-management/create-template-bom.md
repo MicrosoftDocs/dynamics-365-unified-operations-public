@@ -1,26 +1,15 @@
 ---
-# required metadata
-
 title: Create a template BOM   
-description: You can create a template BOM by using a variety of methods. 
-author: sorenva
-ms.date: 05/01/2018
+description: Learn how to create a template BOM by using a variety of methods with processes for creating BOM templates either manually or based on other template BOMs. 
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: SMATemplateBOMTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/01/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMATemplateBOMTable
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

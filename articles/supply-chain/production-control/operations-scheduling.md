@@ -1,15 +1,16 @@
 ---
 title: Operations scheduling
-description: This article provides information about operations scheduling. You can use operations scheduling to provide a general estimate of the production process over time.
+description: Learn about operations scheduling. You can use operations scheduling to provide a general estimate of the production process over time.
 author: johanhoffmann
 ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form: ProdSchedule
 ms.topic: conceptual
-ms.date: 01/09/2023
-audience: Application User
+ms.date: 05/22/2024
+ms.custom:
+  - bap-template
+  - evergreen
+ms.reviewer: kamaybac
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: ProdSchedule
 ---
 
 # Operations scheduling
@@ -59,7 +60,7 @@ The operations schedule also drives master planning and determines calculations 
 - **Capacity availability** – Resources that are required for production
 
 > [!NOTE]
-> If you're using multi-threaded master planning and operations scheduling, finite capacity will not be considered. 
+> If you're using multi-threaded master planning and operations scheduling, finite capacity will not be considered.
 
 ## Cancellations
 

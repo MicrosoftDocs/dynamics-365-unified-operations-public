@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Cost management home page
 description: Cost management lets you handle the valuation and accounting of raw materials, semi-finished goods, finished goods, and work in progress assets. 
 author: JennySong-SH
-ms.date: 05/16/2023
+ms.author: yanansong
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace  
-# ROBOTS:
-audience: Application User
-# ms.devlang: 
+ms.date: 05/16/2023
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
 ms.collection: get-started
-ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: yanansong
 ms.search.validFrom: 2016-02-28
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace  
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Cost management home page

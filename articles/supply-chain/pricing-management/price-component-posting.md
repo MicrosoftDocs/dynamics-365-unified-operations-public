@@ -1,21 +1,20 @@
 ---
 title: Price component posting (preview)
-description: This article describes how to set up different sales order posting ledgers for different price component codes.
+description: Learn how to set up different sales order posting ledgers for different price component codes, including an outline on setting up price component pricing.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: GUPParameters, GUPPriceComponentCodePostingProfile, GUPPriceComponentCodeSetup, GUPPricingTree
 ms.topic: how-to
 ms.date: 04/03/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form: GUPParameters, GUPPriceComponentCodePostingProfile, GUPPriceComponentCodeSetup, GUPPricingTree
 ---
 
 # Price component posting (preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 Pricing management lets you set up a different sales order posting ledger for each of the following types of [price component codes](price-component-code.md):

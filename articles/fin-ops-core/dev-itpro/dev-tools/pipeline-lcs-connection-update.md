@@ -5,7 +5,7 @@ author: josaw1
 ms.author: josaw
 ms.topic: article
 ms.date: 11/30/2021
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2020-08-19
@@ -31,7 +31,7 @@ To add the MSAL.PS install task to the build of your YML or Classic pipeline, se
 
 ## Update existing tasks
 
-To update the existing tasks so that they use the new MSAL authentication, you must update the task versions. For more information about how to update task versions, see [Task types & usage](/azure/devops/pipelines/process/tasks?view=azure-devops&tabs=classic#task-versions). The following table shows the tasks that use authentication. It also shows the earliest version of each task that uses MSAL.
+To update the existing tasks so that they use the new MSAL authentication, you must update the task versions. For more information about how to update task versions, see [Task types & usage](/azure/devops/pipelines/process/tasks?view=azure-devops&tabs=classic). The following table shows the tasks that use authentication. It also shows the earliest version of each task that uses MSAL.
 
 | Task name | Minimum version that uses MSAL |
 | --- | --- |

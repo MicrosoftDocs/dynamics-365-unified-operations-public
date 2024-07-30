@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Mobile device user settings
-description: This article explains how to manage mobile device user settings for warehouse workers.
+description: Learn how to manage mobile device user settings for warehouse workers, including an outline on creating and managing user settings.
 author: Mirzaab
-ms.date: 02/09/2021
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: WHSMobileAppDeviceBrand,WHSMobileAppUserDisplaySettings
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: global
-# ms.search.industry: 
 ms.author: mirzaab
+ms.topic: article
+ms.date: 02/09/2021
+ms.custom: 
+ms.reviewer: kamaybac
+ms.search.region: global
 ms.search.validFrom: 2021-02-09
+ms.search.form: WHSMobileAppDeviceBrand,WHSMobileAppUserDisplaySettings
 ms.dyn365.ops.version: 10.0.17
-
 ---
 
 # Mobile device user settings

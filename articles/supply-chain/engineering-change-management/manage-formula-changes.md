@@ -1,15 +1,14 @@
 ---
 title: Manage changes in formulas and their ingredients
-description: This article describes how to do formula management and manage changes to process manufacturing master data.
+description: Learn how to do formula management and manage changes to process manufacturing master data, including an outline on toggling this feature.
 author: t-benebo
-ms.date: 05/19/2021
+ms.author: benebotg
 ms.topic: article
-# ms.search.form:[Operations AOT form name to tie this article to]
-audience: Application User
+ms.date: 05/19/2021
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
 ms.search.validFrom: 2021-05-19
+ms.search.form:
 ms.dyn365.ops.version: 10.0.20
 ---
 

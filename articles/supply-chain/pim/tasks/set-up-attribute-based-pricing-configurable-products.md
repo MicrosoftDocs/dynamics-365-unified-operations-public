@@ -1,26 +1,18 @@
 --- 
-# required metadata 
- 
 title: Set up attribute-based pricing for configurable products
-description: This article explains how to set up attribute-based pricing. 
+description: Learn how to set up attribute-based pricing for configurable products, including processes for creating new price models and price elements. 
 author: t-benebo
-ms.date: 08/20/2019
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCPriceModelList, PCPriceModel, PCConstraintEditor   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: benebotg
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/20/2019
+ms.custom:
+ms.reviewer: kamaybac    
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCPriceModelList, PCPriceModel, PCConstraintEditor 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Set up attribute-based pricing for configurable products
 
 [!include [banner](../../includes/banner.md)]

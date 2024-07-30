@@ -1,15 +1,14 @@
 ---
 title: Schedule wave label printing during wave
-description: This article describes how to set up and use the functionality for task-based wave label printing.
+description: Learn how to set up and use the functionality for task-based wave label printing with a process for manually enabling the new wave step method.
 author: perlynne
-ms.date: 12/02/2022
+ms.author: perlynne
 ms.topic: article
-ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder
-audience: Application User
+ms.date: 12/02/2022
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: perlynne
 ms.search.validFrom: 2021-06-09
+ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder
 ms.dyn365.ops.version: 10.0.16
 ---
 

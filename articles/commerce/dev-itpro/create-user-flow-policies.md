@@ -2,14 +2,15 @@
 title: Create user flow policies
 description: This article describes how to create user flow policies in the Microsoft Azure portal.
 author: BrianShook
-ms.date: 11/15/2022
-ms.topic: article 
+ms.date: 07/03/2024
+ms.topic: how-to
 audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
-
+ms.custom: 
+  - bap-template
 ---
 
 # Create user flow policies
@@ -25,7 +26,7 @@ Microsoft Entra ID B2C provides three basic user flow types:
 - Profile editing
 - Password reset
 
-You can choose to use the default user flows provided by Microsoft Entra ID, which will display a page hosted by Microsoft Entra ID B2C. Alternately, you can create an HTML page to control the look and feel of these user flow experiences. 
+You can choose to use the default user flows provided by Microsoft Entra ID, which displays a page hosted by Microsoft Entra ID B2C. Alternately, you can create an HTML page to control the look and feel of these user flow experiences. 
 
 To customize the user policy pages with pages built in Dynamics 365 Commerce, see [Set up custom pages for user logins](../custom-pages-user-logins.md). For more information, see [Customize the interface of user experiences in Microsoft Entra ID B2C](/azure/active-directory-b2c/tutorial-customize-ui).
 
@@ -36,7 +37,7 @@ To create a sign-up and sign-in user flow policy, follow these steps.
 1. In the Azure portal, select **User flows (policies)** in the left navigation pane.
 1. On the **Microsoft Entra B2C – User flows (policies)** page, select **New User Flow**.
 1. Select the **Sign up and sign in** policy, and then select the **Recommended** version.
-1. Under **Name**, enter a policy name. This name will display afterwards with a prefix the portal assigns (for example, "B2C_1_").
+1. Under **Name**, enter a policy name. This name displays afterwards with a prefix the portal assigns (for example, "B2C_1_").
 1. Under **Identity providers**, in the **Local accounts** section, select **Email signup**. Email authentication is used in most common scenarios for Commerce. If you're also using social identity provider authentication, you can also select them at this time.
 1. Under **Multifactor Authentication**, select the appropriate choice for your company. 
 1. Under **User attributes and claims**, select options to collect attributes or return claims as appropriate. Select **Show more...** to get the full list of attributes and claims options. Commerce requires the following default options:
@@ -51,6 +52,9 @@ To create a sign-up and sign-in user flow policy, follow these steps.
 
 1. Select **Create**.
 
+> [!NOTE]
+> The **Email address**, **Given Name**, and **Surname** attributes are mandatory for correct implementation and functionality of the policies.
+
 The following image is an example of the Microsoft Entra B2C sign-up and sign-in user flow.
 
 ![Sign Up and Sign In policy settings.](../media/B2CImage_11.png)
@@ -63,7 +67,7 @@ To create a profile editing user flow policy, follow these steps.
 1. In the Azure portal, select **User flows (policies)** in the left navigation pane.
 1. On the **Microsoft Entra B2C – User flows (policies)** page, select **New User Flow**.
 1. Select **Profile editing**, and then select the **Recommended** version.
-1. Under **Name**, enter the profile editing user flow. This name will display afterwards with a prefix the portal assigns (for example, "B2C_1_").
+1. Under **Name**, enter the profile editing user flow. This name displays afterwards with a prefix the portal assigns (for example, "B2C_1_").
 1. Under **Identity providers**, in the **Local accounts** section, select **Email SignIn**.
 1. Under **User attributes**, select the following check boxes:
     

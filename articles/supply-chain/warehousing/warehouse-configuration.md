@@ -1,15 +1,14 @@
 ---
 title: Warehouse configuration overview
-description: This article explains how to configure a warehouse. It includes information about how to enable a warehouse layout and warehouse processes.
+description: Learn how to configure a warehouse, including information about how to enable a warehouse layout and warehouse processes.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfile, WHSLocationType, WHSLocDirTable, WHSParameters, WHSWaveTemplateTable, WHSWorkPool, WHSWorkTemplateTable, WHSZone, WHSZoneGroup
 ms.topic: conceptual
 ms.date: 04/19/2024
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfile, WHSLocationType, WHSLocDirTable, WHSParameters, WHSWaveTemplateTable, WHSWorkPool, WHSWorkTemplateTable, WHSZone, WHSZoneGroup
 ---
 
 # Warehouse configuration overview

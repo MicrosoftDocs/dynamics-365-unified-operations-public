@@ -1,15 +1,14 @@
 ---
 title: Configure locations in a WMS-enabled warehouse
-description: This guide shows you how to configure the location setup for a new WMS-enabled warehouse (a warehouse that uses warehouse management processes (WMS)). 
+description: Learn how to configure the location setup for a new WMS-enabled warehouse (a warehouse that uses warehouse management processes (WMS)). 
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: InventLocation, WHSLocationFormat, WHSLocationType, WHSLocationProfile, WHSParameters, WHSZoneGroup, WHSZone, WHSLocationBuild, WHSLocation, WHSPackSizeCategory, WHSLocationLimit, WHSInventFixedLocation, WMSLocationIdLookup, WMSBlockingCause   
 ms.topic: how-to
 ms.date: 04/19/2024
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac  
+ms.search.region: Global
+ms.search.form: InventLocation, WHSLocationFormat, WHSLocationType, WHSLocationProfile, WHSParameters, WHSZoneGroup, WHSZone, WHSLocationBuild, WHSLocation, WHSPackSizeCategory, WHSLocationLimit, WHSInventFixedLocation, WMSLocationIdLookup, WMSBlockingCause 
 ---
 
 # Configure locations in a WMS-enabled warehouse

@@ -1,17 +1,16 @@
 ---
 title: Review and accept changes to confirmed purchase orders
-description: This article describes how to use the Confirmed purchase orders with changes workspace, where you can review and accept changes to confirmed purchase orders, based on their downstream impact.
+description: Learn how to use the Confirmed purchase orders with changes workspace, where you can review and accept changes to confirmed purchase orders.
 author: cabeln
 ms.author: cabeln
-ms.reviewer: kamaybac
-ms.search.form: PurchTable, PurchTablePart, PurchOrderInReview, PurchOrderApproved, PurchOrderInDraft, PurchOrderAssignedToMe, VendPurchOrderJournalListPage, PurchTableWorkflowDropDialog, VendPurchOrderJournal
 ms.topic: how-to
 ms.date: 07/06/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
 ms.collection:
   - bap-ai-copilot
+ms.search.region: Global
+ms.search.form: PurchTable, PurchTablePart, PurchOrderInReview, PurchOrderApproved, PurchOrderInDraft, PurchOrderAssignedToMe, VendPurchOrderJournalListPage, PurchTableWorkflowDropDialog, VendPurchOrderJournal
 ---
 
 # Review and accept changes to confirmed purchase orders
@@ -22,7 +21,7 @@ During procurement planning, any changes that are made to confirmed purchase ord
 
 ## Prerequisites
 
-The **Confirmed purchase orders with changes** workspace is enabled by default. However, its AI-powered and Copilot functionality must be enabled separately. If you also want to take advantage of the Copilot features, see [Enable Copilot support for managing changes to confirmed purchase orders](purchase-order-changes-after-confirmation-enable.md) for the system requirements and information about how to set them up.
+The **Confirmed purchase orders with changes** workspace is enabled by default. However, its AI-powered and Copilot functionality must be enabled separately. If you also want to take advantage of the Copilot features, see [Enable Copilot support for managing changes to confirmed purchase orders](../../fin-ops-core/dev-itpro/copilot/purchase-order-changes-after-confirmation-enable.md) for the system requirements and information about how to set them up.
 
 ## The Confirmed purchase orders with changes workspace
 
@@ -40,7 +39,7 @@ At the top of the workspace, three tiles summarize groups of changes to confirme
 - **High impact changes** – This tile highlights purchase orders that have known downstream impacts on demand. These changes are summarized together with the detected demand impacts, to help you investigate further and decide what action to take.
 - **Impacted downstream orders** – This tile summarizes impacts on different kinds of downstream demand orders by total per type of order. This information helps you review potential impacts on demand and identify each originating change.
 
-Each tile provides a **Show** link. When you select this link, the view beneath shows the changes to supplying purchase orders and the affected demand according to the tiles's classification and filter.
+Each tile provides a **Show** link. When you select this link, the view beneath shows the changes to supplying purchase orders and the affected demand according to the tile's classification and filter.
 
 ## Review changes to confirmed purchase orders
 
@@ -105,4 +104,4 @@ A good way to focus on the most pressing downstream impact is to sort and filter
 ## See also
 
 - [Responsible AI FAQ for the Confirmed purchase orders with changes workspace](../faq-confirmed-po-changes.md)
-- For administrators: [Enable Copilot support for managing changes to confirmed purchase orders](purchase-order-changes-after-confirmation-enable.md)
+- For administrators: [Enable Copilot support for managing changes to confirmed purchase orders](../../fin-ops-core/dev-itpro/copilot/purchase-order-changes-after-confirmation-enable.md)

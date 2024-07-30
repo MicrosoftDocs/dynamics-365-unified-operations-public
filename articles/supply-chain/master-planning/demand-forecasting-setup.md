@@ -1,21 +1,20 @@
 ---
 title: Demand forecasting setup
-description: This article describes the setup tasks that you must perform to prepare for demand forecasting.  
+description: Learn about the setup tasks that you must perform to prepare for demand forecasting, including an outline on item allocation keys.  
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters, ForecastItemAllocation, ReqIntercompanyPlanningGroupSetup
 ms.topic: how-to
 ms.date: 01/05/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
-ms.collection:
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters, ForecastItemAllocation, ReqIntercompanyPlanningGroupSetup
 ---
 
 # Demand forecasting setup
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [demand-planning-banner](../includes/demand-planning-banner.md)]
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 This article describes how to set up demand forecasting.  
@@ -67,7 +66,7 @@ To set up your intercompany planning groups, follow these steps.
 
 1. By default, if no item allocation keys are assigned to intercompany planning group members, a demand forecast is calculated for all items that are assigned to all item allocation keys from all companies. Additional filtering options for companies and item allocation keys are available in the **Generate statistical baseline forecast** dialog box (**Master planning \> Forecasting \> Demand forecasting \> Generate statistical baseline forecast**). To assign item allocation keys to a company in the selected intercompany planning group, select the company, and then, on the **Intercompany planning group members** FastTab, select **Item allocation keys** on the toolbar.
 
-To learn more, see [Intercompany planning groups for demand forecasting](../demand-planning/intercompany-planning-groups-demand-forecasting.md)
+To learn more, see [Intercompany planning groups for demand forecasting](intercompany-planning-groups-demand-forecasting.md).
 
 > [!IMPORTANT]
 > Be careful to include only relevant item allocation keys in each intercompany planning group. Unnecessary items might cause increased costs when you use Azure Machine Learning.
@@ -104,7 +103,7 @@ The **Forecast generation strategy** field lets you select the method that is us
 
 - *Copy over historical demand* – Create forecasts by just copying historical data.
 - *Azure Machine Learning Service* – Use a forecast model that uses the Azure Machine Learning Service. The Azure Machine Learning Service is the current machine learning solution for Azure. Therefore, we recommend that you use it if you want to use a forecast model.
-- *Azure Machine Learning* – Use a forecast model that uses Azure Machine Learning studio (classic). Azure Machine Learning studio (classic) has been deprecated and will soon be removed from Azure. Therefore, so we recommend that you select *Azure Machine Learning Service* if you're setting up demand forecasting for the first time. If you're currently using Azure Machine Learning studio (classic), you should plan to switch to the Azure Machine Learning Service as soon as possible.
+- *Azure Machine Learning* – Use a forecast model that uses Azure Machine Learning studio (classic). Azure Machine Learning studio (classic) has been deprecated and will soon be removed from Azure. Therefore, we recommend that you select *Azure Machine Learning Service* if you're setting up demand forecasting for the first time. If you're currently using Azure Machine Learning studio (classic), you should plan to switch to the Azure Machine Learning Service as soon as possible.
 
 You can override the forecast generation method for one or more specific item allocation keys by using the **Item allocation keys** tab. That tab provides similar fields.
 
@@ -298,7 +297,7 @@ Pipelines provide a way to start forecasting scripts from Supply Chain Managemen
 
 ### <a name="aad-app"></a>Set up a new Active Directory application
 
-An Active Directory application is required to authenticate with the resources that are dedicated to demand forecasting by using service principal. Therefore, the application should have the lowest level of privilege that is required to generate the forecast.
+An Active Directory application is required to authenticate with the resources that are dedicated to demand forecasting by using a service principal. Therefore, the application should have the lowest level of privilege that is required to generate the forecast.
 
 1. Sign in to your Azure portal.
 1. Register a new application in the tenant's Microsoft Entra ID. For instructions, see [Use the portal to create a Microsoft Entra application and service principal that can access resources](/azure/active-directory/develop/howto-create-service-principal-portal).

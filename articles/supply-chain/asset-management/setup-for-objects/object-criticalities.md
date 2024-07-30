@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Asset criticality types
-description: The article explains asset criticality types in Asset Management.
+description: Learn about asset criticality types in Asset Management, including step-by-step processes for setting up criticality types and asset criticalities.
 author: johanhoffmann
-ms.date: 06/26/2019
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: EntAssetCriticality, EntAssetObjectCriticality
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
+ms.topic: article
+ms.date: 06/26/2019
+ms.reviewer: kamaybac
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: EntAssetCriticality, EntAssetObjectCriticality
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ---
 
 # Asset criticality types

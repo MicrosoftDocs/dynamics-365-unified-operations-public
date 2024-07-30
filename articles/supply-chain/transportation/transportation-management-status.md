@@ -1,24 +1,15 @@
 ---
-# required metadata
-
 title: Transportation management statuses
-description: This article explains how to create a transportation status and map that status to a carrier status.
+description: Learn how to create a transportation status and map that status to a carrier status, including a step-by-step process for creating transportation statuses.
 author: Weijiesa
-ms.date: 10/16/2020
-ms.topic: article
-
-# optional metadata
-
-# ms.search.form:TMSTransportationStatus,TMSTransportationStatusMaster
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: weijiesa
+ms.topic: article
+ms.date: 10/16/2020
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.region: Global
 ms.search.validFrom: 2020-09-08
+ms.search.form: TMSTransportationStatus,TMSTransportationStatusMaster
 ms.dyn365.ops.version: 10.0.14
 ---
 

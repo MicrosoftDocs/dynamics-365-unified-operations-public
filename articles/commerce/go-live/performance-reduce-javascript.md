@@ -4,13 +4,15 @@
 title: Reduce JavaScript by excluding unused modules
 description: This article describes how you can help improve performance by reducing the amount of JavaScript that is used in your Microsoft Dynamics 365 Commerce implementation.
 author: mssle
-ms.date: 01/28/2022
-ms.topic: article
+ms.date: 07/26/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: sheaton
+ms.author: asharchw
 ms.search.validFrom: 2021-09-20
+ms.custom: 
+  - bap-template
 ---
 
 # Reduce JavaScript by excluding unused modules

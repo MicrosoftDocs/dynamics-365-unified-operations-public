@@ -1,15 +1,14 @@
 ---
 title: Inventory Visibility app user interface versions
-description: This article describes the differences between version 1 and version 2 of the Inventory Visibility app user interface. It also describes the new operations that are supported in UI version 2 and how to migrate from UI version 1 to UI version 2.
-author: yufeihuang
+description: Learn about the differences between version 1 and version 2 of the Inventory Visibility app user interface with an outline on supported features and configurations.
+author: yufei-huang
 ms.author: yufeihuang
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 11/27/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form:
 ---
 
 # Inventory Visibility app user interface version

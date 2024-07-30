@@ -1,28 +1,14 @@
 ---
-# required metadata
-
 title: Inventory aging report storage
-description: This article describes the functionality that lets you run an Inventory aging report and make the output available as a form and a chart.
+description: Learn about the functionality that lets you run an Inventory aging report and make the output available as a form and a chart.
 author: JennySong-SH
-ms.date: 11/11/2019
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails
-# ROBOTS:
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: yanansong
-ms.search.validFrom: 2019-01-10
-ms.dyn365.ops.version: 
-
+ms.topic: how-to
+ms.date: 05/27/2024
+ms.custom:
+  - bap-template
+ms.reviewer: kamaybac
+ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails
 ---
 
 # Inventory aging report storage
@@ -53,6 +39,5 @@ To use this feature, it must be turned on for your system. As of Supply Chain Ma
     > The form won't include subtotals that are defined in the report layout.
 
 The **Inventory aging report** data entity lets you export the output of an **Inventory aging report storage** report by applying a filter for the **Process Identifier – Name** field to any format that Data management supports.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

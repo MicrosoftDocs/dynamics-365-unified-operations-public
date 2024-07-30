@@ -1,15 +1,14 @@
 ---
 title: EU Sales list for Poland
-description: This article provides information about the European Union (EU) sales list report for Poland.
-author: AdamTrukawka
-ms.date: 05/20/2022
-ms.topic: article
-audience: Application User
+description: Learn about the European Union (EU) sales list report for Poland, including outlines on setup and importing electronic reporting configurations.
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-ms.search.region: 
-ms.author: atrukawk
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+
 ---
 
 # EU Sales list for Poland

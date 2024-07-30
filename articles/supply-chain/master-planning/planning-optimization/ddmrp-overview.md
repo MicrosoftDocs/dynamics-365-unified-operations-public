@@ -1,15 +1,14 @@
 ---
 title: Demand Driven Material Requirements Planning (DDMRP) overview
-description: This article provides information about Demand Driven Material Requirements Planning (DDMRP), a planning methodology that is based on the decoupling of supply and demand.
+description: Learn about Demand Driven Material Requirements Planning (DDMRP), a planning methodology that is based on the decoupling of supply and demand.
 author: t-benebo
-ms.date: 06/30/2022
+ms.author: benebotg
 ms.topic: article
-ms.search.form:
-audience: Application User
+ms.date: 06/30/2022
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
 ms.search.validFrom: 2022-06-30
+ms.search.form:
 ms.dyn365.ops.version: 10.0.28
 ---
 

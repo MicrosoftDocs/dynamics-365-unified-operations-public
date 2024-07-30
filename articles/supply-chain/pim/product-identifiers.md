@@ -1,15 +1,14 @@
 ---
 title: Product identifiers 
-description: This article provides information about the various types of product identifiers and explains how you can add product identifiers in your product data.
+description: Learn about the various types of product identifiers and explains how you can add product identifiers in your product data.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
 ms.topic: how-to
 ms.date: 12/08/2022
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
 ---
 
 # Product identifiers

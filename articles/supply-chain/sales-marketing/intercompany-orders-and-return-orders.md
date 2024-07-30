@@ -1,15 +1,14 @@
 ---
 title: Intercompany orders and return orders
-description: This article explains intercompany orders and return orders
+description: Learn about intercompany orders and return orders, including outlines on intercompany order examples and intercompany return orders.
 author: Henrikan
-ms.date: 09/01/2021
+ms.author: henrikan
 ms.topic: article
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
-audience: Application User
+ms.date: 09/01/2021
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
 ms.search.validFrom: 2021-09-01
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 ms.dyn365.ops.version: 10.0.22
 ---
 

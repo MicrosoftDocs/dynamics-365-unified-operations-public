@@ -1,15 +1,14 @@
 ---
 title: Synchronize intercompany prices and discounts
-description: This article explains synchronization of prices and discounts for intercompany sales orders and purchase orders
+description: Learn about synchronization of prices and discounts for intercompany sales orders and purchase orders, including an outline on the price and discount field.
 author: Henrikan
-ms.date: 09/01/2021
+ms.author: henrikan
 ms.topic: article
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
-audience: Application User
+ms.date: 09/01/2021
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
 ms.search.validFrom: 2021-09-01
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 ms.dyn365.ops.version: 10.0.22
 ---
 

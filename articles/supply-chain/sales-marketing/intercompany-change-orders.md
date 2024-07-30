@@ -1,15 +1,14 @@
 ---
 title: Change intercompany orders
-description: This article explains changing intercompany orders functionality
+description: Learn about changing intercompany orders functionality, including outlines on adding new lines and changing prices and discounts.
 author: Henrikan
-ms.date: 09/01/2021
+ms.author: henrikan
 ms.topic: article
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
-audience: Application User
+ms.date: 09/01/2021
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
 ms.search.validFrom: 2021-09-01
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable
 ms.dyn365.ops.version: 10.0.22
 ---
 

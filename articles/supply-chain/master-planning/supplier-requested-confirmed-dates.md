@@ -1,15 +1,14 @@
 ---
 title: Calculate requested ship dates for purchase orders
-description: This article describes how the system calculates requested ship dates for purchase orders. It also explains how to set up this calculation.
+description: Learn how the system calculates requested ship dates for purchase orders, including prerquisites and an outline on receipt dates on purchase orders.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: VendCustTransportPoint2Point, SrmParameters, VendTable
 ms.topic: how-to
 ms.date: 11/16/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form: VendCustTransportPoint2Point, SrmParameters, VendTable
 ---
 
 # Calculate requested ship dates for purchase orders

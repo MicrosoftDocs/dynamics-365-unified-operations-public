@@ -1,15 +1,14 @@
 ---
 title: Define configuration groups
-description: This procedure shows how to define product configuration groups by creating two groups in the demo data company USMF Company. 
+description: Learn how to define product configuration groups by creating two groups in the demo data company USMF Company, including a step-by-step process. 
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: ConfigGroup   
 ms.topic: how-to
 ms.date: 11/10/2022
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form: ConfigGroup
 ---
 
 # Define configuration groups

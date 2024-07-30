@@ -1,15 +1,14 @@
 ---
 title: Product lifecycle state overview
-description: A product lifecycle state documents the lifecycle state of a released product or product variant.  
+description: Learn about product lifecycle states, which document the lifecycle state of a released product or product variant with an outline on creating new lifecycle states.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: EcoResProductLifecycleState, EcoResReleasedProductLifecycleStateChanges
 ms.topic: overview
 ms.date: 01/05/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form: EcoResProductLifecycleState, EcoResReleasedProductLifecycleStateChanges
 ---
 
 # Product lifecycle state overview

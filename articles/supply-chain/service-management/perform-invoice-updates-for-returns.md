@@ -1,26 +1,15 @@
 ---
-# required metadata
-
 title: Perform invoice updates for returns  
-description: This functionality supports the business processes of organizations that choose to have return orders and sales orders invoiced at the same time and by the same person.
+description: This functionality supports business processes of organizations that have return orders and sales orders invoiced at the same time and by the same person.
 author: Henrikan
 ms.author: henrikan
-ms.date: 05/01/2018
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: SMAServiceOrderTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 05/01/2018
 ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
+ms.reviewer: kamaybac
+ms.search.region: Global 
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMAServiceOrderTable
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

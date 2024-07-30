@@ -1,26 +1,15 @@
 ---
-# required metadata
-
 title: Post arrival journal for returned products 
-description: Post arrival journal for returned products.
+description: Learn how to post arrival journal for returned products, including a step-by-step process for posting the item arrival journal for return orders.
 author: Henrikan
 ms.author: henrikan
-ms.date: 05/01/2018
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: WMSArrivalOverview
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 05/01/2018
 ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
+ms.reviewer: kamaybac
+ms.search.region: Global 
 ms.search.validFrom: 2016-02-28
+ms.search.form: WMSArrivalOverview
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

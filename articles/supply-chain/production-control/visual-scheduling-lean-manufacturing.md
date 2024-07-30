@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Visual scheduling for lean manufacturing 
-description: This article provides information about the Kanban schedule board, which the production planner can use to control and optimize the production plan for kanban jobs.
+description: Learn about the Kanban schedule board, which the production planner can use to control and optimize the production plan for kanban jobs.
 author: johanhoffmann
-ms.date: 06/16/2017
+ms.author: johanho
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: KanbanBoard, KanbanJobSchedulingListPage, LeanProductionFlowVisualization, KanbanBoardUnplannedJobs
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 06/16/2017
 ms.custom: 
-ms.assetid:
+ms.reviewer: kamaybac 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: johanho
 ms.search.validFrom: 2016-02-28
+ms.search.form: KanbanBoard, KanbanJobSchedulingListPage, LeanProductionFlowVisualization, KanbanBoardUnplannedJobs
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

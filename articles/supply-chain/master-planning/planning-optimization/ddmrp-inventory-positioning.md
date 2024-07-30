@@ -1,15 +1,14 @@
 ---
 title: Inventory positioning
-description: This article provides information about strategic inventory positioning, which involves identifying decoupling points in your supply chain, where you can build up on-hand inventory to help compress lead times and absorb shocks to your supply chain.
+description: Learn about strategic inventory positioning, which involves identifying decoupling points in your supply chain, where you can build up on-hand inventory.
 author: t-benebo
-ms.date: 06/30/2022
+ms.author: benebotg
 ms.topic: article
-ms.search.form: ReqGroup, EcoResProductDetailsExtended
-audience: Application User
+ms.date: 06/30/2022
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
 ms.search.validFrom: 2022-06-30
+ms.search.form: ReqGroup, EcoResProductDetailsExtended
 ms.dyn365.ops.version: 10.0.28
 ---
 

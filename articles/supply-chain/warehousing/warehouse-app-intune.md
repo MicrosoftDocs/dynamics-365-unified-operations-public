@@ -1,15 +1,14 @@
 ---
 title: Mass deploy the mobile app with service-based authentication
-description: This article explains how to mass deploy the Warehouse Management mobile app with service-based authentication by using a mobile device management (MDM) solution such as Microsoft Intune.
+description: Learn how to mass deploy the Warehouse Management app with service-based authentication by using a mobile device management (MDM) solution such as Microsoft Intune.
 author: Mirzaab
 ms.author: mirzaab
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 02/20/2024
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form:
 ---
 
 # Mass deploy the mobile app with service-based authentication

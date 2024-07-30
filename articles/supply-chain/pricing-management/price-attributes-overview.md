@@ -1,21 +1,20 @@
 ---
 title: Price attributes overview (preview)
-description: This article introduces the concept of price attributes.
+description: Learn about the concept of price attributes, including an outline on price attribute sources and a table providing information about price attributes.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: overview
 ms.date: 04/03/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form:
 ---
 
 # Price attributes overview (preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 One of the key functions of a price manager is to work together with the product manager to accomplish the following tasks:

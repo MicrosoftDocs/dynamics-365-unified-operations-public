@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: View, manage, and approve planned orders
-description: This article provides information about how to view, manage, and approve planned orders. 
+description: Learn about how to view, manage, and approve planned orders, including outlines and step-by-step processes for viewing and editing planned order statuses. 
 author: t-benebo
-ms.date: 04/07/2021
+ms.author: benebotg
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: ReqCreatePlanWorkspace
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 04/07/2021
 ms.custom: 
-ms.assetid: 
+ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: benebotg
 ms.search.validFrom: 2020-08-21
+ms.search.form: ReqCreatePlanWorkspace
 ms.dyn365.ops.version: 10.0.13
-
 ---
+
 # View, manage, and approve planned orders
 
 [!include [banner](../../includes/banner.md)]

@@ -1,15 +1,14 @@
 ---
 title: Inventory Visibility reservations
-description: This article describes how to set up the reservation feature to create reservations, consume reservations, and/or unreserve specified inventory quantities by using Inventory Visibility.
-author: yufeihuang
-ms.date: 03/03/2023
+description: Learn how to set up the reservation feature to create reservations and/or unreserve specified inventory quantities by using Inventory Visibility.
+author: yufei-huang
+ms.author: yufeihuang
 ms.topic: article
-ms.search.form:
-audience: Application User
+ms.date: 03/03/2023
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
+ms.search.form:
 ms.dyn365.ops.version: 10.0.21
 ---
 

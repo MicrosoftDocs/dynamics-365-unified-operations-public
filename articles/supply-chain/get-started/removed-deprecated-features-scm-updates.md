@@ -1,15 +1,14 @@
 ---
 title: Removed or deprecated features in Dynamics 365 Supply Chain Management
-description: This article describes features that have been removed, or that are planned for removal in Dynamics 365 Supply Chain Management.
+description: Learn about features that have been removed, deprecated, or that are planned for removal in Dynamics 365 Supply Chain Management.
 author: kamaybac
 ms.author: kamaybac
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: conceptual
-ms.date: 10/30/2023
-audience: Application User
-ms.search.region: Global
+ms.date: 06/14/2024
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form:
 ---
 
 # Removed or deprecated features in Dynamics 365 Supply Chain Management
@@ -28,6 +27,16 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.41 release
 
+### Job card terminal
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | The job card terminal is being replaced by the new [production floor execution interface](../production-control/production-floor-execution-use.md). |
+| **Replaced by another feature?**   | Yes, the job card terminal is to be replaced by the new [production floor execution interface](../production-control/production-floor-execution-use.md). |
+| **Product areas affected** | Supply Chain Management – production control |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | Deprecated. Approximately one year after the release of version 10.0.41, the job card terminal will no longer be supported and may eventually be removed from the product. |
+
 ### Inventory transactions support for internal warehouse operations
 
 | &nbsp;  | &nbsp;  |
@@ -37,6 +46,28 @@ This list is intended to help you consider these removals and deprecations for y
 | **Product areas affected** | Supply Chain Management – Warehouse management |
 | **Deployment option** | Cloud and on-premises |
 | **Status** | <p>Supported until version 10.0.40. As of version 10.0.41, inventory transactions will be deprecated for tracking on-hand inventory for internal warehouse operations. Existing customers will be able to continue using this scenario after that version, but new features and bug fixes for this scenario will only be implemented for [warehouse-specific inventory transactions](../warehousing/warehouse-transactions.md).</p><p>Approximately one year after the release of version 10.0.41, support for this scenario will be removed and all customers will be required to move to [warehouse-specific inventory transactions](../warehousing/warehouse-transactions.md) for tracking on-hand inventory for internal warehouse operations.</p> |
+
+### Release to warehouse page
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | The **Release to warehouse** page has performance issues. |
+| **Replaced by another feature?**   | Yes. The  **Release to warehouse** page has been split into two new release to warehouse pages, which together provide equivalent functionality with significantly improved performance. The new pages are **Release sales orders to warehouse** and **Release transfer orders to warehouse**. |
+| **Product areas affected** | Supply Chain Management – Release to warehouse |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | <p>Deprecated. The **Release to warehouse** page is now hidden in the app, but you can enable it if necessary by contacting Microsoft Support. We strongly recommend that you instead use the new pages (**Release sales orders to warehouse** and **Release transfer orders to warehouse**) because they provide equivalent functionality with significantly improved performance. The **Release to warehouse** page will be completely removed from the product one year after the release of Supply Chain Management version 10.0.41.</p> |
+
+## Features removed or deprecated in the Supply Chain Management 10.0.40 release
+
+### Scale unit capability for Supply Chain Management
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| Reason for deprecation/removal | The scale unit capability for Microsoft Dynamics 365 Supply Chain Management has been paused for new customers since July 2022 and is now deprecated. |
+| Replaced by another feature? | Yes. [Warehouse management only mode](../warehousing/wms-only-mode-overview.md) replaces some of the functionality planned for scale units and adds many new architectural and integration possibilities. |
+| Product areas affected | Supply Chain Management – Warehouse management<br><br>Supply Chain Management – Production control |
+| Deployment options | Cloud and on-premises |
+| Status | The scale unit capability for Microsoft Dynamics 365 Supply Chain Management has been paused for new customers since July 2022. The capability is formally deprecated as of Supply Chain Management version 10.0.40 and will be completely removed for all customers one year after the release of that version. |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.39 release
 
@@ -92,11 +123,11 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | The [job card device](../production-control/config-job-card-device.md) is being replaced by the new [production floor execution interface](../production-control/production-floor-execution-configure.md). |
-| **Replaced by another feature?**   | Yes, the [job card device](../production-control/config-job-card-device.md) is to be replaced by the new [production floor execution interface](../production-control/production-floor-execution-configure.md). |
+| **Reason for deprecation/removal** | The job card device is replaced by the [production floor execution interface](../production-control/production-floor-execution-configure.md). |
+| **Replaced by another feature?**   | Yes, the job card device is replaced by the [production floor execution interface](../production-control/production-floor-execution-configure.md). |
 | **Product areas affected** | Supply Chain Management – production control |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | Removed. As of April 2022, the job card device is no longer supported and customers must use the new production floor execution interface. |
+| **Status** | Unsupported. As of April 2022, the job card device is no longer supported and customers must use the new production floor execution interface. |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.18 release
 
@@ -148,6 +179,4 @@ This list is intended to help you consider these removals and deprecations for y
 
 To learn more about features that have been removed or deprecated in previous releases, see [Removed or deprecated features in previous releases](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md).
 
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-

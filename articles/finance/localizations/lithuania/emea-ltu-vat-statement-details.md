@@ -1,16 +1,17 @@
 ---
 title: VAT statement details for Lithuania
-description: This article explains how to set up a VAT statement for legal entities in Lithuania.
-author: AdamTrukawka
-ms.date: 06/20/2017
-ms.topic: article
-audience: Application User
+description: Learn how to set up a VAT statement for legal entities in Lithuania, including outlines on setting up sales tax authorities and reporting codes.
+author: liza-golub
+ms.author: egolub
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
 ms.search.region: Lithuania
-ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
-ms.dyn365.ops.version: AX 7.0.1
 ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
+ms.dyn365.ops.version: AX 7.0.1
 ---
 
 # VAT statement details for Lithuania

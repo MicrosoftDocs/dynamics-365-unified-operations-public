@@ -1,13 +1,13 @@
 ---
 title: Dynamics 365 Finance - a digital standard bookkeeping system registered in Denmark 
-description: This article provides detailed information about how Dynamics 365 Finance supports requirements to digital standard bookkeeping system registered in Denmark.
+description: Learn about how Dynamics 365 Finance supports requirements to digital standard bookkeeping system registered in Denmark.
 author: liza-golub
-ms.date: 01/31/2024
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Denmark
 ms.author: egolub
+ms.topic: article
+ms.date: 01/31/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Denmark
 ms.search.validFrom: 2024-01-31
 ms.dyn365.ops.version: AX 10.0.37
 ---

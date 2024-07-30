@@ -1,15 +1,14 @@
 ---
 title: Integrate with third-party manufacturing execution systems
-description: This article explains how you can integrate Microsoft Dynamics 365 Supply Chain Management with a third-party manufacturing execution system (MES).
+description: Learn how you can integrate Microsoft Dynamics 365 Supply Chain Management with a third-party manufacturing execution system (MES).
 author: johanhoffmann
 ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 04/19/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+ms.search.form:
 ---
 
 # Integrate with third-party manufacturing execution systems
@@ -122,9 +121,9 @@ The following table shows the fields that each line in the `ReportFinishedLines`
 | `AutomaticBOMConsumptionRule` | Optional | Enum (FlushingPrincip \| Always \| Never) |
 | `AutomaticRouteConsumptionRule` | Optional |Enum (RouteDependent \| Always \| Never) |
 | `RespectFlushingPrincipleDuringOverproduction` | Optional | Enum (Yes \| No) |
-| `ProductionJournalNameId` | Optional | String |
-| `PickingListProductionJournalNameId` | Optional | String|
-| `RouteCardProductionJournalNameId` | Optional | String |
+| `JournalNameId` | Optional | String |
+| `PickingListJournalNameId` | Optional | String|
+| `RouteCardJournalNameId` | Optional | String |
 | `FromOperationNumber` | Optional | Integer|
 | `ToOperationNumber` | Optional | Integer|
 | `InventoryLotId` | Optional | String |

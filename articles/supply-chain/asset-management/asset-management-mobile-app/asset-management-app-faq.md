@@ -1,15 +1,14 @@
 ---
 title: Asset Management mobile app FAQs and known issues
-description: This article provides answers to several frequently asked questions (FAQs) about the Asset Management mobile app. It also describes a few known issues that affect the app and how to work around them.
+description: Access answers to several frequently asked questions (FAQs) about the Asset Management mobile app, including questions about supported platforms and devices.
 author: johanhoffmann
 ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: overview
 ms.date: 09/19/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form:
 ---
 
 # Asset Management mobile app FAQs and known issues

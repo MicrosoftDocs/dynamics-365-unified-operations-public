@@ -1,15 +1,14 @@
 ---
 title: Scheduling with resource selection based on capability
-description: This article describes resource selection during infinite capacity scheduling when you specify capabilities as resource requirements for an operation.
+description: Learn about resource selection during infinite capacity scheduling when you specify capabilities as resource requirements for an operation.
 author: t-benebo
-ms.date: 08/09/2022
+ms.author: benebotg
 ms.topic: article
-ms.search.form: RouteInventProd, WrkCtrTable, WrkCtrCapability
-audience: Application User
+ms.date: 08/09/2022
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
 ms.search.validFrom: 2021-09-03
+ms.search.form: RouteInventProd, WrkCtrTable, WrkCtrCapability
 ms.dyn365.ops.version: 10.0.20
 ---
 

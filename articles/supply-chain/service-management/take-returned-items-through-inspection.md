@@ -1,26 +1,15 @@
 ---
-# required metadata
-
 title: Take returned items through inspection   
-description: Take returned items through inspection.
+description: Learn how to take returned items through inspection, including a step-by-step process for returning items through inspection.
 author: Henrikan
 ms.author: henrikan
-ms.date: 05/07/2018
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: InventQuarantineOrder
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 05/07/2018
 ms.custom: 
-ms.assetid: 
+ms.reviewer: kamaybac
 ms.search.region: Global
-# ms.search.industry: 
 ms.search.validFrom: 2016-02-28
+ms.search.form: InventQuarantineOrder
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

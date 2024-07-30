@@ -1,26 +1,20 @@
 --- 
-# required metadata 
- 
 title: Set up a transportation tender
-description: This procedure shows how to set up a transportation tender. 
+description: Learn how to set up a transportation tender typically done by a transportation coordinator, including a step-by-step process. 
 author: Weijiesa
+ms.author: weijiesa
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: WHSLoadPlanningWorkbench, TMSRouteWorkbench, TMSTransportationTender, WHSOutboundLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench
-audience: Application User 
-# ms.devlang:  
+ms.custom: 
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+audience: Application User 
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: weijiesa
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: WHSLoadPlanningWorkbench, TMSRouteWorkbench, TMSTransportationTender, WHSOutboundLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Set up a transportation tender
 
 [!include [banner](../../includes/banner.md)]

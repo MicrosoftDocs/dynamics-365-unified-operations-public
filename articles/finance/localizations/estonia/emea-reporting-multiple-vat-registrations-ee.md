@@ -1,13 +1,13 @@
 ---
 title: Support for multiple VAT registration numbers in reporting for Estonia
-description: This article explains how to support multiple value-added tax (VAT) registration numbers in reporting for Estonia.
+description: Learn how to support multiple value-added tax (VAT) registration numbers in reporting for Estonia with a table that outlines versions for various report names.
 author: liza-golub
-ms.date: 1/15/2024
-ms.topic: article
-audience: Application User
-ms.reviewer: johnmichalak
-ms.search.region: Estonia
 ms.author: egolub
+ms.topic: article
+ms.date: 1/15/2024
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Estonia
 ms.search.validFrom: 2024-01-15
 ms.dyn365.ops.version: AX 10.0.36
 ---

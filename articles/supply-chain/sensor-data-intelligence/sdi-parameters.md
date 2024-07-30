@@ -1,22 +1,21 @@
 ---
 title: Sensor Data Intelligence parameters (preview)
-description: This article provides information about configuration settings that are available on the Sensor Data Intelligence parameters page.
+description: Learn about configuration settings that are available on the Sensor Data Intelligence parameters page with an outline on setting the lifetime of alert messages.
 author: johanhoffmann
-ms.date: 09/02/2022
+ms.author: johanho
 ms.topic: article
-ms.search.form: IoTIntCoreServiceParameters
-audience: Application User
+ms.date: 09/02/2022
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: johanho
 ms.search.validFrom: 2022-09-02
+ms.search.form: IoTIntCoreServiceParameters
 ms.dyn365.ops.version: 10.0.30
 ---
 
 # Sensor Data Intelligence parameters (preview)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 <!-- KFM: Preview until further notice -->

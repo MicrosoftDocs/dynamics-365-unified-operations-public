@@ -1,26 +1,15 @@
 ---
-# required metadata
-
 title: Pass returned items on to inspection 
 description: When registering a returned item, determine that an item should be sent for inspection before it's returned to inventory or disposed of in some other way.
 author: Henrikan
 ms.author: henrikan
-ms.date: 05/01/2018
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: WMSJournalTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 05/01/2018
 ms.custom: 
-ms.assetid: 
+ms.reviewer: kamaybac
 ms.search.region: Global
-# ms.search.industry: 
 ms.search.validFrom: 2016-02-28
+ms.search.form: WMSJournalTable
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

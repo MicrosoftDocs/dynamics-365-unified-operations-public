@@ -1,28 +1,15 @@
 ---
-# required metadata
-
 title: Maintenance requests
-description: This article provides an overview about managing maintenance requests in Asset Management
+description: Access an overview about managing maintenance requests in Asset Management, including an outline on viewing maintenance requests.
 author: johanhoffmann
-ms.date: 10/01/2019
-ms.topic: overview
-
-# optional metadata
-
-ms.search.form: EntAssetRequestTable, EntAssetRequestWorkspace, EntAssetRequestActivePart, EntAssetRequestWorkOrderActive, EntAssetRequestType, EntAssetRequestTableCreateWO, EntAssetRequestTableLookup, EntAssetRequestTableActivePart, EntAssetMobileRequestDetails 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
+ms.topic: overview
+ms.date: 10/01/2019
+ms.reviewer: kamaybac
+ms.search.region: Global
 ms.search.validFrom: 2019-10-31
+ms.search.form: EntAssetRequestTable, EntAssetRequestWorkspace, EntAssetRequestActivePart, EntAssetRequestWorkOrderActive, EntAssetRequestType, EntAssetRequestTableCreateWO, EntAssetRequestTableLookup, EntAssetRequestTableActivePart, EntAssetMobileRequestDetails
 ms.dyn365.ops.version: 10.0.5
-
 ---
 
 # Maintenance requests

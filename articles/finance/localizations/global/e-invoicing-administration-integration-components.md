@@ -1,13 +1,15 @@
 ---
 title: Electronic invoicing administration and integration components
-description: This article provides an overview of the Electronic invoicing administration and integration components.
-author: gionoder
-ms.date: 01/20/2022
-ms.topic: article
-audience: Application User
+description: Learn about the Electronic invoicing administration and integration components, including overviews on Microsoft Azure, Finance, and Supply Chain Management.
+author: ilikond
+ms.author: ikondratenko
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/17/2024
 ms.reviewer: johnmichalak
+audience: Application User
 ms.search.region: 
-ms.author: gionoder
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---

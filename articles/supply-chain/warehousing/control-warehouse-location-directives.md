@@ -1,15 +1,14 @@
 ---
 title: Control warehouse work by using work templates and location directives
-description: This article describes how to use work templates and location directives to determine how and where work is carried out in the warehouse.
+description: Learn how to use work templates and location directives to determine how and where work is carried out in the warehouse.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSLocDirFailure, WHSLocDirHint, WHSLocDirTable, WHSLocDirTableUOM, WHSRFMenuItem, WHSWork, WHSWorkClass, WHSWorkPool, WHSWorkTemplateTable
 ms.topic: how-to
 ms.date: 04/19/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+ms.search.form: WHSLocDirFailure, WHSLocDirHint, WHSLocDirTable, WHSLocDirTableUOM, WHSRFMenuItem, WHSWork, WHSWorkClass, WHSWorkPool, WHSWorkTemplateTable
 ---
 
 # Control warehouse work by using work templates and location directives

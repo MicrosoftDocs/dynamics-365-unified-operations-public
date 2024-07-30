@@ -1,15 +1,16 @@
 ---
 title: Polish Intrastat
-description: This article contains information about Intrastat reporting in Poland.
-author: AdamTrukawka
-ms.date: 11/09/2021
-ms.topic: article
-audience: Application User
+description: Learn about Intrastat reporting in Poland, including a table that defines various field names and an outline on setting up VAT IDs and enterprise numbers.
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: atrukawk
-ms.search.validFrom: 
 ---
+
 # Polish Intrastat
 
 [!include[banner](../../includes/banner.md)]

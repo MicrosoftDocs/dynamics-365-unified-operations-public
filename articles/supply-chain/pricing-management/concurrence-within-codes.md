@@ -1,21 +1,20 @@
 ---
 title: Resolve concurrency within price component codes (preview)
-description: Concurrency rules let you define what happens if multiple discounts and price adjustments apply to the same order and/or order line. This article explains how to manage within-price-component-code concurrency.
+description: Concurrency within price component rules let you define what happens if multiple discounts and price adjustments apply to the same order and/or order line.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: 
 ms.topic: conceptual
 ms.date: 04/03/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form: 
 ---
 
 # Resolve concurrency within price component codes (preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 Concurrency rules let you define what happens if multiple pricing rules apply to the same order and/or order line. You can set up concurrency rules to control whether the customer receives just one of the matching rules (and if so, which one they receive), or whether the rules are combined (and if so, how they're combined). There are two types of concurrency:

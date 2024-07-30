@@ -1,15 +1,14 @@
 ---
 title: Inventory Visibility inventory summary
-description: This article describes how to use inventory summary feature, which provides an inventory summary for products together with all dimensions.
-author: yufeihuang
+description: Learn how to use inventory summary feature, which provides an inventory summary for products together with all dimensions.
+author: yufei-huang
 ms.author: yufeihuang
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 12/01/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form:
 ---
 
 # Inventory Visibility inventory summary
@@ -33,7 +32,7 @@ To enable the **Inventory summary** page and set the synchronization frequency i
 
 1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
 1. On the navigation pane, select **Feature management**.
-1. On the **Data source settings** tile, select **Manage**.
+1. On the **Inventory summary** tile, select **Manage**.
 1. Set the following fields:
 
     - **Enable feature** – Set this option to *True*.

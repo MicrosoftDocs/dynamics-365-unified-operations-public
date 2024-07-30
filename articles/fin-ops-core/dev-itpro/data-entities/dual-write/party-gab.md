@@ -21,9 +21,8 @@ ms.search.validFrom: 2021-02-22
 
 ## Party
 
-A party is a person or an organization that is involved in a business. When the party concept is used, a person or an organization can play more than one role in a business (for example, worker, customer, vendor, or contact). The role is based on the context and purpose. Here are some examples of roles from two fictitious companies, Contoso and Fabrikam:
+A party is a person or an organization that is involved in a business. When the party concept is used, a person or an organization can play more than one role in a business (for example, customer, vendor, or contact). The role is based on the context and purpose. Here are some examples of roles from two fictitious companies, Contoso and Fabrikam:
 
-+ **Worker** – An employee. An example is an employee of Contoso.
 + **Vendor** – A supplier organization, or a sole proprietor who supplies goods or services to a business. For example, if Fabrikam sells supplies to Contoso, Fabrikam is a vendor of Contoso.
 + **Contact** – A person to contact. For example, if Contoso buys supplies from Fabrikam, employees at Contoso will reach out to the contact at Fabrikam.
 + **Customer** – A person or company that buys things from a company. For example, if Contoso buys supplies from Fabrikam, Contoso is a customer of Fabrikam.
@@ -149,7 +148,7 @@ During the lead qualification process, you can provide both a business phone num
 
 4. Open the finance and operations app. Navigate to the Data Management module and select the Dual-write tab. The dual-write administration page opens.
 
-5. Apply both the solutions installed in steps 2 and 3 using the [Apply Solution](link-your-environment.md) function.
+5. Apply both the solutions installed in steps 2 and 3 using the [Apply Solution]((../../dev-itpro/power-platform/enable-power-platform-integration.md) function.
 
 6. Stop the following maps, because they aren't required anymore. Instead, run the `Contacts V2 (msdyn_contactforparties)` map.
 

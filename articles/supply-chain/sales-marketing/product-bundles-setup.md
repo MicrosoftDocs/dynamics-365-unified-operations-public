@@ -1,15 +1,14 @@
 ---
 title: Enable and set up product bundles 
-description: This article describes how to set up product bundles.
+description: Learn how to set up product bundles, including prerequisites and an outline on toggling product bundle features for your system.
 author: henrikan
 ms.author: henrikan
-ms.reviewer: kamaybac
-ms.search.form: Customer
 ms.topic: how-to
 ms.date: 04/29/2024
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form: Customer
 ---
 
 # Enable and set up product bundles
@@ -40,12 +39,12 @@ To make product bundle functionality available, you must turn it on for your sys
 
 ### Turn on the product bundles in journals feature (preview)
 
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 <!--KFM: Preview until further notice -->
 
 The *Product bundles in journals* feature extends the *Product bundle* feature. It enables the system to preserve detailed product bundle information in its database. Therefore, you can reprint original sales order confirmations and invoices even after the related sales order is deleted or archived and purged. This feature also improves the ability to exchange order confirmations and invoices electronically. Because product bundles are now represented in journals, you can electronically exchange order confirmations and invoices that include product bundles.
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 To make the *Product bundles in journals* feature available, you must turn it on for your system.
 

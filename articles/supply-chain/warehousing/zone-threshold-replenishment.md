@@ -1,23 +1,15 @@
 ---
-# required metadata
-
 title: Zone threshold replenishment
-description: Zone-based replenishment uses a minimum/maximum (min/max) replenishment strategy, but it evaluates whole warehouse zones instead of just individual locations. Therefore, warehouse managers can more quickly learn when additional inventory is required in a picking zone.
+description: Zone-based replenishment uses a minimum/maximum (min/max) replenishment strategy, but it evaluates whole warehouse zones instead of just individual locations.required in a picking zone.
 author: Mirzaab
-ms.date: 07/01/2020
-ms.topic: article
-
-# optional metadata
-ms.search.form: WHSReplenishmentTemplates, WHSLocDirHint, WHSLocDirTable, WHSRequestType
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
+ms.topic: article
+ms.date: 07/01/2020
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.region: Global
 ms.search.validFrom: 2020-07-01
+ms.search.form: WHSReplenishmentTemplates, WHSLocDirHint, WHSLocDirTable, WHSRequestType
 ms.dyn365.ops.version: 10.0.8
 ---
 

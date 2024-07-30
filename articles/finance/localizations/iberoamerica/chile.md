@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: Chile overview
-description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for Chile. 
+description: Access links to Microsoft Dynamics 365 Finance documentation resources for Chile, including links that direct to resources about electronic invoicing. 
 author: kfend
-ms.date: 10/31/2023
-ms.topic: overview
-# optional metadata
-
-# ms.search.form: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: johnmichalak
-# ms.tgt_pltfrm: 
-
-ms.search.region: Chile
-# ms.search.industry: 
 ms.author: kfend
+ms.topic: overview
+ms.date: 10/31/2023
+ms.reviewer: johnmichalak
+audience: Application User
+ms.search.region: Chile
 ms.search.validFrom: 2023-10-20
+ms.search.form: 
 ms.dyn365.ops.version: App 10.0.38
-
 ---
 
 # Chile overview

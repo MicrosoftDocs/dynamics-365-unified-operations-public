@@ -1,15 +1,14 @@
 ---
 title: Configure promoted fields for steps in the Warehouse Management mobile app
-description: This article describes how to promote and highlight specific information for any step in the task flows for the Warehouse Management mobile app.
+description: Learn how to promote and highlight specific information for any step in the task flows for the Warehouse Management mobile app.
 author: Mirzaab
-ms.date: 08/09/2022
+ms.author: mirzaab
 ms.topic: article
-ms.search.form: WHSMobileAppFlowStepSelectPromotedFields, WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour, WHSMobileAppFlowStepDetourSelectFields
-audience: Application User
+ms.date: 08/09/2022
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
+ms.search.form: WHSMobileAppFlowStepSelectPromotedFields, WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour, WHSMobileAppFlowStepDetourSelectFields
 ms.dyn365.ops.version: 10.0.23
 ---
 

@@ -1,16 +1,17 @@
 ---
 title: Tax Calculation overview
-description: This article explains the overall scope and features of the Tax Calculation capability.
+description: Learn about the overall scope and features of the Tax Calculation capability, including outlines on versions, data flows, and supported transactions.
 author: EricWangChen
-ms.date: 02/09/2024
+ms.author: wangchen
 ms.topic: overview
-audience: Application user
+ms.custom: 
+  - bap-template
+ms.date: 06/21/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
-ms.author: wangchen
 ms.search.validFrom: 2021-04-01
-ms.dyn365.ops.version: 10.0.18
 ms.search.form: TaxIntegrationTaxServiceParameters
+ms.dyn365.ops.version: 10.0.18
 ---
 
 # Tax Calculation overview
@@ -76,6 +77,7 @@ We recommend that you import and set up your Tax Calculation configuration with 
 
 | Finance or Supply Chain Management version | Tax configuration version |
 | --------------- | --------------------------------------- |
+| 10.0.40         | Tax Calculation Configuration 43.68.254 |
 | 10.0.39         | Tax Calculation Configuration 40.65.249 |
 | 10.0.38         | Tax Calculation Configuration 40.61.246 |
 | 10.0.33         | Tax Calculation Configuration 40.60.244 |

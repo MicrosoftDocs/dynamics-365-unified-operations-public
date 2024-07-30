@@ -1,26 +1,15 @@
 ---
-# required metadata
-
 title: Use stage reason codes 
-description: You use a reason code to indicate why a service level agreement (SLA) has been canceled, or why a service order has exceeded the time limit that is you define in the SLA.
-author: sorenva
-ms.date: 05/07/2018
+description: You use a reason code to indicate why a service level agreement (SLA) has been canceled, or why a service order has exceeded the defined time limit.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: SMAServiceOrderTable, SMAParameters
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/07/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMAServiceOrderTable, SMAParameters
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

@@ -1,13 +1,12 @@
 ---
 title: Planning Optimization release process and release history
-description: This article provides information about the release process and release history for Planning Optimization.
+description: Learn about the release process and release history for Planning Optimization, including a table outling various changes.
 author: t-benebo
-ms.date: 02/20/2023
+ms.author: benebotg
 ms.topic: article
-audience: Application User
+ms.date: 02/20/2023
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.31
 ---
@@ -28,6 +27,7 @@ Because notifications aren't shown when Planning Optimization is updated in your
 
 | Changes | Feature management details | Release dates |
 |---|---|---|
+| <p>General performance, quality, and stability improvements.</p> | No feature management required | May  20–28, 2024 |
 | <p>General performance, quality, and stability improvements.</p> | No feature management required | March  15–20, 2024 |
 | <p>General performance, quality, and stability improvements.</p> | No feature management required | February  10–15, 2024 |
 | <p>General performance, quality, and stability improvements.</p> | No feature management required | January  19–25, 2024 |

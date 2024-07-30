@@ -1,15 +1,14 @@
 ---
 title: React to last-minute changes in production
-description: This article describes some types of changes that are often made to components or routes just before production orders are released to the shop floor. It also explains how to manage these changes in Microsoft Dynamics 365 Supply Chain Management.
+description: Learn about types of changes that are often made to components or routes just before production orders are released to the shop floor.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 03/21/2024
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form:
 ---
 
 # React to last-minute changes in production

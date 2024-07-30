@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: Safety margins
-description: This article describes how safety margins work during master planning.
+description: Learn how safety margins work during master planning, including definitions for the order, receipt, and issue saftety margin types.
 author: t-benebo
-ms.date: 08/09/2022
+ms.author: benebotg
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: ReqCreatePlanWorkspace
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 08/09/2022
 ms.custom: 
-ms.assetid: 
+ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: benebotg
 ms.search.validFrom: 2020-9-14
+ms.search.form: ReqCreatePlanWorkspace
 ms.dyn365.ops.version: AX 10.0.13
-
 ---
+
 # Safety margins
 
 [!include [banner](../../includes/banner.md)]

@@ -1,26 +1,15 @@
 ---
-# required metadata
-
 title: Set up disposition codes   
-description: You can set up disposition codes to specify how to process an item that is returned by a customer.
+description: You can set up disposition codes to specify how to process an item that is returned by a customer, including a step-by-step process.
 author: Henrikan
-ms.date: 05/01/2018
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: ReturnDispositionCode
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: henrikan
+ms.topic: article
+ms.date: 05/01/2018
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: ReturnDispositionCode
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Coverage time fences
-description: This article describes how to set up coverage time fences. A coverage time fence indicates your planning horizon and limit.
+description: Learn how to set up coverage time fences. A coverage time fence indicates your planning horizon and limit including definitions for coverage time fence levels.
 author: t-benebo
-ms.date: 01/18/2021
+ms.author: benebotg
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: ReqGroup, ReqItemTable, ReqPlanSched
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 01/18/2021
 ms.custom: 
-ms.assetid: 
+ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: benebotg
 ms.search.validFrom: 2021-01-18
+ms.search.form: ReqGroup, ReqItemTable, ReqPlanSched
 ms.dyn365.ops.version: 10.0.17
 ---
 

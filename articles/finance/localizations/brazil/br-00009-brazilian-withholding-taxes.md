@@ -1,17 +1,19 @@
 ---
 title: Brazilian withholding taxes
-description: This procedure sets up a withholding tax code, withholding tax type, and calculation parameter to calculate withholding taxes for consultancy services or professional service payments.
+description: This procedure sets up a withholding tax code, withholding tax type, and calculation parameter to calculate withholding taxes for consultancy services.
 author: AdamTrukawka
-ms.date: 06/24/2017
+ms.author: atrukawk
 ms.topic: how-to
-audience: Application User
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
 ms.search.region: Brazil
-ms.author: atrukawk
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.industry: Manufacturing;Distribution;Service industries
 ---
+
 # Brazilian withholding taxes 
 
 [!include [banner](../../includes/banner.md)]

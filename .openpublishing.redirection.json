@@ -1,8 +1,78 @@
 {
   "redirections": [
-     {
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/azure-data-explorer.md",
+      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/human-resources/hr-admin-setup-provision.md",
+      "redirect_url": "dynamics365/human-resources/hr-admin-setup-provision-fo",
+      "redirect_document_id": "false"
+    },    
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/privacy/privacy-ax2012.md",
+      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-vcruntime.md",
+      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/financial/dimension-entry-control-dialog-support.md",
+      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/human-resources//hr-admin-integration-linkedin.md",
+      "redirect_url": "/dynamics365/human-resources/welcome",
+      "redirect_document_id": "false"
+    },     
+    {
+      "source_path": "articles/human-resources/hr-infrastructure-merge-faq.md",
+      "redirect_url": "/dynamics365/human-resources/hr-infrastructure-merge",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/perf-test/perfsdk-tutorial-lbd.md",
+      "redirect_url": "https://community.dynamics.com/blogs/post/?postid=4fc1ab59-1948-ee11-be6d-00224827e8f9",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/brazil/e-invoicing-bra-get-started.md",
+      "redirect_url": "/dynamics365/finance/localizations/brazil/latam-bra-nf-e-process",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/iberoamerica/e-invoicing-mex-get-started.md",
+      "redirect_url": "/dynamics365/finance/localizations/iberoamerica/latam-mex-cfdi-electronic-invoices",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/human-resources/hr-admin-whats-new.md",
+      "redirect_url": "/dynamics365/human-resources/whats-new-home-page",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/finance/finance-insights/finance-insights-troubleshooting-faq.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/finance-insights/finance-insights-troubleshooting-faq",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/business-performance-analytics/bus-matrix.md",
+      "redirect_url": "/finance/business-performance-analytics/business-performance-analytics-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/business-performance-analytics/field-mappings.md",
+      "redirect_url": "/finance/business-performance-analytics/business-performance-analytics-home-page",
+      "redirect_document_id": "false"
+    },      
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/dev-tools/real-async.md",
+      "redirect_url": "/fin-ops-core/fin-ops",
       "redirect_document_id": "false"
     },
     {
@@ -54,12 +124,7 @@
       "source_path": "articles/finance/general-ledger/rvrs-settgs-on-jrnls-lines.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/vouchers-not-reversed-posting-journal",
       "redirect_document_id": "false"
-    },     
-     {
-      "source_path": "articles/finance/general-ledger/set-up-balance-dimensions.md",
-      "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/set-up-balance-dimensions",
-      "redirect_document_id": "false"
-    },    
+    },        
      {
       "source_path": "articles/finance/general-ledger/dimension-default-values.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/dimension-default-values",
@@ -27677,6 +27742,41 @@
     {
       "source_path": "articles/supply-chain/warehousing/wms-only-mode-using.md",
       "redirect_url": "/dynamics365/supply-chain/warehousing/wms-only-mode-shared-and-external-detail-use",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/rebate-management/rebate-management-enable.md",
+      "redirect_url": "/dynamics365/supply-chain/rebate-management/rebate-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/demand-planning/intercompany-planning-groups-demand-forecasting.md",
+      "redirect_url": "/dynamics365/supply-chain/master-planning/intercompany-planning-groups-demand-forecasting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/production-control/config-job-card-device.md",
+      "redirect_url": "/dynamics365/supply-chain/production-control/production-floor-execution-configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/production-control/tasks/report-progress-mobile-job-device.md",
+      "redirect_url": "/dynamics365/supply-chain/production-control/production-floor-execution-use",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/production-control/tasks/worker-mobile-job-device.md",
+      "redirect_url": "/dynamics365/supply-chain/production-control/production-floor-execution-worker-accounts.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/purchase-order-changes-after-confirmation-enable.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/copilot/purchase-order-changes-after-confirmation-enable",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/m365-copilot/faq-for-chat-with-fno-data-on-m365copilot.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/m365-copilot/chat-with-fno-data-on-m365copilot",
       "redirect_document_id": false
     }
   ]

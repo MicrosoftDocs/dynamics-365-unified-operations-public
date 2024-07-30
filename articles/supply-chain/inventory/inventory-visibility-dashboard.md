@@ -1,15 +1,14 @@
 ---
 title: Inventory Visibility Power BI dashboard
-description: This topic describes how to download a sample Microsoft Power BI dashboard file and connect to your Inventory Visibility instance and other data sources. In this way, you can visualize your inventory levels across regions, entities, and channels.
-author: yufeihuang
+description: Learn how to download a sample Microsoft Power BI dashboard file and connect to your Inventory Visibility instance and other data sources.
+author: yufei-huang
 ms.author: yufeihuang
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 07/31/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form:
 ---
 
 # Inventory Visibility Power BI dashboard

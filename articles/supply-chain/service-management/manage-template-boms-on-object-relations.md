@@ -1,26 +1,15 @@
 ---
-# required metadata
-
 title: Manage template BOMs on object relations 
-description: Manage template BOMs on object relations. 
-author: sorenva
-ms.date: 05/03/2018
+description: Learn how you can manage template BOMs on object relations, including a step-by-step process for attaching template BOMs to service objective. 
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: SMAAgreementTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/03/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMAAgreementTable
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

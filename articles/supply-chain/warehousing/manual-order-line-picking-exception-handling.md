@@ -1,15 +1,14 @@
 ---
 title: Manually handle sales and transfer line picking exceptions
-description: This article describes how administrators can manually pick (or unpick) inventory transactions to fix issues that are caused by corrupted sales and transfer order data.
+description: Learn how administrators can manually pick (or unpick) inventory transactions to fix issues that are caused by corrupted sales and transfer order data.
 author: perlynne
-ms.date: 08/19/2022
+ms.author: perlynne
 ms.topic: article
-ms.search.form: WHSManualSalesLinePicking, WHSManualInventTransferLinePicking, InventTransPick, WHSLoadLineManualCorrection, WHSTroubleshootingSelfService
-audience: Application User
+ms.date: 08/19/2022
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: perlynne
 ms.search.validFrom: 2022-08-01
+ms.search.form: WHSManualSalesLinePicking, WHSManualInventTransferLinePicking, InventTransPick, WHSLoadLineManualCorrection, WHSTroubleshootingSelfService
 ms.dyn365.ops.version: 10.0.29
 ---
 

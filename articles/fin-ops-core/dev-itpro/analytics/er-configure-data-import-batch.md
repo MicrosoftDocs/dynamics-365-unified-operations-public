@@ -5,7 +5,7 @@ author: kfend
 ms.author: filatovm
 ms.topic: article
 ms.date: 01/07/2022
-ms.reviewer: kfend
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2022-01-01
@@ -17,7 +17,6 @@ ms.assetid:
 # Import data from manually selected files in batch mode
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 To use the [Electronic reporting (ER)](general-electronic-reporting.md) framework to import data from manually selected inbound files in batch mode, configure an ER [format](er-overview-components.md#format-component) that supports the import. Then run a [model mapping](er-overview-components.md#model-mapping-component) of the **To destination** type that uses that format as a data source. To import data, browse to the file that you want to import, and manually select it. 
 
