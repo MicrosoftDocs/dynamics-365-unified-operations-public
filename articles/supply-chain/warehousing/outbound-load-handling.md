@@ -7,7 +7,6 @@ ms.reviewer: kamaybac
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench, WHSOutboundShipmentOrder, WHSPackingSlipPostingParameters, WHSShipPlanningListPage, WHSShipmentDetails, WHSWaveTemplateTable, WHSPostMethod, WHSWorkTemplateTable, WHSLocDirTable, WHSEWManagementSystem, InventLocations 
 ms.topic: conceptual
 ms.date: 07/29/2024
-audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
 ---

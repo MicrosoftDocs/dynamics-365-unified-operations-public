@@ -7,7 +7,6 @@ ms.topic: article
 ms.date: 02/01/2021
 ms.custom: 
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2019-08-31
 ms.search.form: EntAssetMaintenancePlan, EntAssetObjectCalendarListPage, EntAssetObjectCalendarListPagePoolsOpen

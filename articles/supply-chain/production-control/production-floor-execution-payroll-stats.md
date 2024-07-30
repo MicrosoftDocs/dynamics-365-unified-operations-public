@@ -6,7 +6,6 @@ ms.author: johanho
 ms.topic: article
 ms.date: 04/22/2022
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2022-04-22
 ms.search.form:

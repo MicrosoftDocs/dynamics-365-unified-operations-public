@@ -7,7 +7,6 @@ ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
 ms.date: 06/17/2024
-audience: Application User
 ms.custom: 
   - bap-template
 ---

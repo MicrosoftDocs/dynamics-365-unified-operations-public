@@ -3,15 +3,12 @@ title: Transportation management modes and methods
 description: Learn how to set up Transportation management modes and methods, including step-by-step processes for creating modes and transportation methods.
 author: Weijiesa
 ms.author: weijiesa
-ms.topic: article
-ms.date: 10/16/2020
-ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-10-16
 ms.search.form: TMSMode,TMSMethod
-ms.dyn365.ops.version: 10.0.14
+ms.topic: how-to
+ms.date: 07/30/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Transportation management modes and methods
@@ -39,6 +36,5 @@ To create a transportation method, follow these steps:
 1. Select **New** to create a new transportation method.
 1. Enter a unique ID and descriptive name for the transportation method.
 1. Close the page.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

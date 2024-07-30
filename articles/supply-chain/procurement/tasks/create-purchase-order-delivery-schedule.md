@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 08/01/2019
 ms.custom:
 ms.reviewer: kamaybac   
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-06-30
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventItemIdLookupPurchase, PurchDeliverySchedule, PurchEditLines 

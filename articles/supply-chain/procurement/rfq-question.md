@@ -7,7 +7,6 @@ ms.topic: article
 ms.date: 01/22/2020
 ms.custom:
 ms.reviewer: kamaybac 
-audience: Application User
 ms.search.region: Global
 ms.search.industry: public sector
 ms.search.validFrom: 2020-1-22

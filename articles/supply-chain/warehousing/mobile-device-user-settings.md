@@ -7,7 +7,6 @@ ms.topic: article
 ms.date: 02/09/2021
 ms.custom: 
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: global
 ms.search.validFrom: 2021-02-09
 ms.search.form: WHSMobileAppDeviceBrand,WHSMobileAppUserDisplaySettings

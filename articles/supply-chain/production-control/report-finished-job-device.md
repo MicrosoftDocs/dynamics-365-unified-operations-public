@@ -7,7 +7,6 @@ ms.reviewer: kamaybac
 ms.search.form: JmgRegistrationSetupTouch
 ms.topic: how-to
 ms.date: 08/05/2022
-audience: Application User
 ms.custom: 
   - bap-template
   - evergreen

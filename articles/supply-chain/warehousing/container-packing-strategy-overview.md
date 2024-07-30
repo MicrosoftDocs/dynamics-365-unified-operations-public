@@ -7,7 +7,6 @@ ms.topic: article
 ms.date: 08/09/2022
 ms.reviewer: kamaybac
 ms.collection: get-started
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2021-06-11
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable, WHSOutboundLoadPlanningWorkbench

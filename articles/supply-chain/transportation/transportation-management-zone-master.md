@@ -6,7 +6,6 @@ ms.author: weijiesa
 ms.topic: article
 ms.date: 10/16/2020
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-01-09
 ms.search.form: TMSZoneMaster

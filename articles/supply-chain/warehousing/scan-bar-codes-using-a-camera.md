@@ -6,7 +6,6 @@ ms.author: mirzaab
 ms.topic: article
 ms.date: 01/03/2018
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2017-01-03
 ms.search.form: WHSMobileAppField
