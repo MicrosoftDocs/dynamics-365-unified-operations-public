@@ -3,13 +3,18 @@ title: Archive Dynamics 365 Commerce transactions
 description: Learn about how to archive Dynamics 365 Commerce transactions.
 author: shajain
 ms.author: shajain
-ms.topic: conceptual
-ms.date: 7/26/2024
-ms.custom:
+ms.topic: how-to    
+ms.date: 7/30/2024
 ms.reviewer: v-chrgriffin
+ms.search.region: Global
+ms.search.validFrom: 2024-07-01
+ms.custom: 
+  - bap-template
 ---
 
 # Archive Dynamics 365 Commerce transactions
+
+[!include [banner](includes/banner.md)]
 
 This article explains how to archive Dynamics 365 Commerce transactions.
 
@@ -111,3 +116,5 @@ The below image shows the Archive with Dataverse long term retention workspace w
 - RetailStatementTrans
 - RetailStatementVoucher  
 
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
