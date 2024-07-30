@@ -58,11 +58,11 @@ The summary consists of four sections:
 Click on "Review all" to be directed to detailed view of each issue and learn about individual records that are having issue with a deep-link to fix those issues to specific record, ensuring you never lose context and it guides you to resolve the issue in every step. Learn more about what kind of rules being validated for your merchandising data for physical stores and online channels by [Channel merchandising configuration validator](./articles/commerce/dev-itpro/channel-merch-config-validator.md)
 
 > [!Note] 
-> Note that enabling this feature will activate batch jobs that detect risks across your product, category and catalog data for all physical stores and online channels.
+> AI-generated maybe incorrect. [Learn more](https://aka.ms/BusinessApplicationLegal)
 >
-> These jobs run every 24 hours and update the summary with the latest insights.
+> View [Responsible AI FAQ](./articles/commerce/responsible-ai/faqs-ai-summarization-hq.md)
 >
-> You can also manually trigger the jobs from the **Channel merchandising configuration validator** if you want to refresh the summary at any time. [Learn more ](./articles/commerce/dev-itpro/channel-merch-config-validator.md)
+>Enabling this feature will activate batch jobs that detect risks across your product, category and catalog data for all physical stores and online channels. These jobs run every 24 hours and update the summary with the latest insights. You can also manually trigger the jobs from the **Channel merchandising configuration validator** if you want to refresh the summary at any time. [Learn more ](./articles/commerce/dev-itpro/channel-merch-config-validator.md)
 >
 
 
