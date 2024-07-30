@@ -4,7 +4,7 @@ description: Learn about the out-of-box features that are available for each cou
 author: ilikond
 ms.author: ikondratenko
 ms.topic: article
-ms.date: 06/11/2024
+ms.date: 07/29/2024
 ms.custom:
 ms.reviewer: johnmichalak
 audience: Application User
@@ -21,12 +21,12 @@ ms.dyn365.ops.version:
 The availability of Electronic invoicing Service globalization features depends on the country or region where you're located. Although some features are generally available, others are still in preview.
 
 > [!NOTE]
-> This article is related only to the globalization features introduced in the scope of the Electronic Invoicing Service. This article doesn’t cover other approaches for supported e-Invoicing capabilities for some countries designed based on built-in X++ code and the Electronic Messaging framework.
+> This article is related only to the globalization features introduced in the scope of the Electronic Invoicing Service. This article doesn't cover other approaches for supported e-Invoicing capabilities for some countries designed based on built-in X++ code and the Electronic Messaging framework.
 > For more information, see [Electronic Invoicing](gs-e-invoicing-service-overview.md) and [Electronic messaging](../../general-ledger/electronic-messaging.md).
 
 > [!IMPORTANT]
-> It’s important to note that we had planned to transition NF-e/NFS-e and CFDI to our Electronic Invoicing Service and the features and formats have been under preview for quite a while in Brazil and Mexico, respectively. However, due to lack of interest for adoption and transition to the new approach, we are still evaluating the timing of the switch to the Electronic Invoicing Service platform in these countries. The documents’ formats will not contain the latest compliance changes published since the preview release. 
-> In the meantime, **we recommend continuing to use our built-in X++ implementation in Brazil and Mexico, which are kept up-to-date with the legislation**.
+> It's important to note that we had planned to transition NF-e/NFS-e and CFDI to our Electronic Invoicing Service and the features and formats have been under preview for quite a while in Brazil and Mexico, respectively. However, due to lack of interest for adoption and transition to the new approach, we are still evaluating the timing of the switch to the Electronic Invoicing Service platform in these countries. The documents' formats will not contain the latest compliance changes published since the preview release. 
+> In the meantime, **we recommend continuing to use our built-in X++ implementation in Brazil and Mexico, which are kept up to date with the legislation**.
 > For more information, see [NF-e process overview](../brazil/latam-bra-nf-e-process.md) and [Electronic invoices (CFDI)](../iberoamerica/latam-mex-CFDI-electronic-invoices.md).
 
 ## Generally available features
@@ -60,7 +60,7 @@ The following table shows the Electronic invoicing globalization features that a
 | Spain | Spanish electronic invoice (ES) | Sales invoices and project invoices |
 
 > [!NOTE]
-> In current implementations in Chile, Costa Rica, and Panama, the globalization features described above only generate electronic invoices and store their XML files on the service side, but they don’t submit the invoices. For the submission of Chilean, Costa Rican, and Panamanian electronic invoices, integration with the [Electronic Invoicing service ISV last-mile connector](../global/e-invoicing-isv-connector.md) is required. However, the integration hasn’t been released yet for these countries.
+> In current implementations in Costa Rica and Panama, the globalization features in the preceding table only generate electronic invoices and store their XML files on the service side. They don't submit the invoices. The submission of Costa Rican and Panamanian electronic invoices requires integration with the [Electronic Invoicing service ISV last-mile connector](../global/e-invoicing-isv-connector.md). However, the integration hasn't yet been released for those countries.
 
 ## Preview features
 
