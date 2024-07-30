@@ -188,7 +188,7 @@
           href: pos-customer-insights-using-copilot.md
         - name: Statement posting summaries by Copilot
           href: copilot-statement-summaries.md
-        - name: Copilot in Sitebuilder for product enrichment on eCommerce websites
+        - name: Use Copilot in site builder to enrich product detail pages
           href: copilot-site-builder.md
       - name: Implementation lifecycle management
         items:
