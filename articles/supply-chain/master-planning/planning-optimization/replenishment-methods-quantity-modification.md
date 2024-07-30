@@ -6,7 +6,6 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 6/1/2021
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2021-06-01
 ms.search.form: ReqGroup, ReqItemTable, InventItemOrderSetup

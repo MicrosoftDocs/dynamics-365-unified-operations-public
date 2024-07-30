@@ -5,7 +5,6 @@ author: t-benebo
 ms.date: 08/12/2019
 ms.topic: how-to
 ms.search.form: EcoResProductDetailsExtended, ForecastSales   
-audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg

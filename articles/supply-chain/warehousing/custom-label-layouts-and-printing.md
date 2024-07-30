@@ -8,7 +8,6 @@ ms.date: 07/23/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: WHSLabelLayout, WHSLabelLayoutDataSource
 ---
 

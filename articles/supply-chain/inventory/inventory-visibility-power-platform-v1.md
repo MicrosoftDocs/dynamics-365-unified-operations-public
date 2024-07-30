@@ -6,7 +6,6 @@ ms.author: yufeihuang
 ms.topic: article
 ms.date: 09/15/2022
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2021-08-02
 ms.search.form:
