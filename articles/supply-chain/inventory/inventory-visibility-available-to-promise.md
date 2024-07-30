@@ -239,7 +239,7 @@ For more information, see [Inventory Visibility public APIs](inventory-visibilit
 
 ### Create one on-hand change schedule
 
-An on-hand change schedule is created by submitting a `POST` request to the relevant Inventory Visibility service URL (see the [Submit change schedules, change events, and ATP queries through the API](#api-urls) section). You can also submit bulk requests.
+An on-hand change schedule is created by submitting a `POST` request to the relevant Inventory Visibility service URL. You can also submit bulk requests.
 
 An on-hand change schedule can be created only if the scheduled date is between the current date and the end of the current schedule period. The datetime format should be *year-month-day* (for example, **2022-02-01**). The time format must be accurate only to the day.
 
@@ -379,7 +379,7 @@ The following example shows sample body content.
 
 ### Create on-hand change events
 
-On-hand change events are made by submitting a `POST` request to the relevant Inventory Visibility service URL (see the [Submit change schedules, change events, and ATP queries through the API](#api-urls) section). You can also submit bulk requests.
+On-hand change events are made by submitting a `POST` request to the relevant Inventory Visibility service URL (see the start of the [Submit change schedules, change events, and ATP queries through the API](#api-urls) section).
 
 > [!NOTE]
 > On-hand change events aren't unique to the ATP functionality but are part of the standard Inventory Visibility API. This example has been included because events are relevant when you work with ATP. On-hand change events resemble on-hand change reservations, but event messages must be sent to a different API URL, and events use `quantities` instead of `quantityByDate` in the message body. For more information about the on-hand change events and other features of the Inventory Visibility API, see [Inventory Visibility public APIs](inventory-visibility-api.md#create-one-onhand-change-event).
@@ -489,7 +489,7 @@ The following example shows how to create an index query request URL as a `GET` 
 https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&LocationId=11&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true&ATPToDate=2022-02-01&ATPToDate=2022-02-10
 ```
 
-The result of this `GET` request is exactly the same as the result of `POST` request in the previous example.
+The result of this `GET` request is exactly the same as the result of the `POST` request in the previous example.
 
 ### Exact query by using the POST method
 

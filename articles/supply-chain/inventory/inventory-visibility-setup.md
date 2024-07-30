@@ -179,12 +179,13 @@ Once you've installed the add-in, prepare your Supply Chain Management system to
     - **Inventory Visibility endpoint** – Enter the URL of the environment where you're running Inventory Visibility. For more information, see [Find your service endpoint and read the configuration](inventory-visibility-power-platform.md#endpoint).
     - **Maximum number of records in a single request** – Set to the maximum number of records to include in a single request. You must enter a positive integer less than or equal to 1000. The default value is 512. We strongly recommend keeping the default value unless you've received advice from Microsoft Support or are otherwise certain that you need to change it.
 
-1. The following optional features enhance the functionality of Inventory Visibility. Decide whether you want to use one or both of these features. If you do, set them up. (You can also set them up later.)
+1. The following optional features enhance the functionality of Inventory Visibility. Decide whether you want to use any of these features. If you do, set them up. (You can also set them up later.)
 
     - **Soft reservations and offsets** – Soft reservations help organizations achieve a single source of truth for available inventory, especially during the order fulfillment process. For information about how to enable and set up this feature, see [Inventory Visibility reservations](inventory-visibility-reservations.md).
     - **Support for warehouse management processes (WMS) items** – This feature lets you use WMS items with Inventory Visibility. For information about how to enable and set up this feature, see [Inventory Visibility support for WMS items](inventory-visibility-whs-support.md).
     - **Inventory summary** – This feature provides an inventory summary for products together with all dimensions. For information about how to enable and set up this feature, see [Inventory summary](inventory-visibility-inventory-summary.md).
     - **Preload a streamlined on-hand query** – This feature provides an aggregated inventory summary for products by configured dimensions. For information about how to enable and set up this feature, see [Preload a streamlined on-hand query](inventory-visibility-preload-on-hand.md).
+    - **Track time-series inventory in Inventory Visibility** – This feature enables Supply Chain Management to send its on-hand change schedule to Inventory Visibility to support available-to-promise (ATP) calculations. For information about how to enable and set up this feature, see [Track time-series inventory in Inventory Visibility](inventory-visibility-track-atp.md).
 
 1. After you finish setting up the optional features you selected, go to **Inventory Management** \> **Periodic tasks** \> **Inventory Visibility Integration**, and enable the job. All inventory change events from Supply Chain Management will now be posted to Inventory Visibility.
 
