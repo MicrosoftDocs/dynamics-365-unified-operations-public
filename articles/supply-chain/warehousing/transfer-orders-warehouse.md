@@ -7,7 +7,6 @@ ms.topic: article
 ms.date: 01/18/2019
 ms.custom:
 ms.reviewer: kamaybac 
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2018-4-30
 ms.search.form: InventLocation,CustVendTransportPoint2Point

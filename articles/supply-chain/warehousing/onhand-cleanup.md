@@ -7,7 +7,6 @@ ms.topic: article
 ms.date: 04/23/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-04-03
 ms.search.form:  SysOperationTemplateForm

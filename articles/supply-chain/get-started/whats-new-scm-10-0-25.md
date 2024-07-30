@@ -7,7 +7,6 @@ ms.topic: article
 ms.date: 04/19/2024
 ms.custom: evergreen
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2021-02-01
 ms.search.form:

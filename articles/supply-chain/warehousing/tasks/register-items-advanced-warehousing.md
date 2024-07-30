@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 03/24/2021
 ms.custom: 
 ms.reviewer: kamaybac  
-audience: Application User
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.search.validFrom: 2016-06-30
