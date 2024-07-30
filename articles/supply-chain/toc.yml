@@ -1759,9 +1759,9 @@
           href: inventory/inventory-visibility-allocation.md
         - name: Inventory Visibility ATP
           items:
-          - name: Inventory Visibility on-hand change schedule and available to promise
+          - name: Inventory Visibility on-hand change schedule and ATP
             href: inventory/inventory-visibility-available-to-promise.md
-          - name: Integrate Supply Chain Management ATP with Inventory Visibility (preview)
+          - name: Track time-series inventory in Inventory Visibility (preview)
             href: inventory/inventory-visibility-track-atp.md
         - name: Inventory Visibility Power BI dashboard
           href: inventory/inventory-visibility-dashboard.md
