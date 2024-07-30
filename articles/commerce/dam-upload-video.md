@@ -2,17 +2,15 @@
 title: Upload videos
 description: This article describes how to upload videos in Microsoft Dynamics 365 Commerce site builder.
 author: josaw1
-ms.date: 06/09/2021
-ms.topic: article
+ms.date: 07/30/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: 
 ms.custom: 
-ms.assetid: 
-ms.search.industry: 
+  - bap-template
 ---
 
 # Upload videos
