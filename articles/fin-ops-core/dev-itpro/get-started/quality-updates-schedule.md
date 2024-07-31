@@ -53,13 +53,13 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.38 PQU-4 | May 1, 2024 | May 6, 2024 to June 9, 2024| Completed |
 | 10.0.38 PQU-5 | May 29, 2024 | June 3, 2024 to July 7, 2024| Completed |
 | 10.0.38 PQU-6 | June 26, 2024 | July 1, 2024 to August 4, 2024| In-Progress |
-| 10.0.38 PQU-7 | July 24, 2024 | July 29, 2024 to September 1, 2024| Not Started |
+| 10.0.38 PQU-7 | July 24, 2024 | July 29, 2024 to September 1, 2024| In-Progress |
 | 10.0.38 PQU-8 | August 23, 2024 | September 2, 2024 to October 6, 2024| Not Started |
 | 10.0.39 PQU-1 | April 10, 2024 | April 15, 2024 to May 19 2024| Completed |
 | 10.0.39 PQU-2 | May 8, 2024 | May 13, 2024 to June 16, 2024| Completed |
-| 10.0.39 PQU-3 | June 5, 2024 | June 10, 2024 to July 14, 2024| In-Progress |
+| 10.0.39 PQU-3 | June 5, 2024 | June 10, 2024 to July 14, 2024| Completed |
 | 10.0.39 PQU-4 | July 3, 2024 | July 8, 2024 to August 11, 2024| In-Progress |
-| 10.0.39 PQU-5 | July 31, 2024 | August 5, 2024 to September 8, 2024| Not Started |
+| 10.0.39 PQU-5 | July 31, 2024 | August 5, 2024 to September 8, 2024| In-Progress |
 | 10.0.39 PQU-6 | August 28, 2024 | September 2, 2024 to October 6, 2024| Not Started |
 | 10.0.39 PQU-7 | September 25, 2024 | September 30, 2024 to November 3, 2024| Not Started |
 | 10.0.39 PQU-8 | October 23, 2024 | October 28, 2024 to December 8, 2024| Not Started |
@@ -132,7 +132,6 @@ The following table shows the high-level train schedule. It includes a descripti
 **App version: 10.0.1860.149**
 
 **Platform version: 7.0.7198.167**
-
 **Unified Environment Provisioning Application Version: 10.0.39.8**
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
@@ -143,6 +142,23 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | July 22 to July 25, 2024 | August 3 to August 4, 2024 |
 | Station 5 | July 29 to August 1, 2024 | August 10 to August 11, 2024 |
 | Station 6 | July 30 to August 2, 2024 | August 11 to August 11, 2024 |
+
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.39 Release-5 train schedule
+
+**App version: 10.0.1860.168**
+
+**Platform version: 7.0.7198.186**
+
+**Unified Environment Provisioning Application Version: 10.0.39.9**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | August 5 to August 8, 2024 | NA |
+| Station 2 | August 12 to August 15, 2024 | August 24 to August 25, 2024 |
+| Station 3 | August 13 to August 16, 2024 | August 24 to August 25, 2024|
+| Station 4 | August 19 to August 22, 2024 | August 31 to September 1, 2024 |
+| Station 5 | August 26 to August 29, 2024 | September 7 to September 8, 2024 |
+| Station 6 | August 27 to August 30, 2024 | September 7 to September 8, 2024 |
 
 ### <a name="schedule"></a>[NEW] Proactive quality update upcoming 10.0.40 Release-1 train schedule
 
