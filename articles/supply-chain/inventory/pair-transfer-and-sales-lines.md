@@ -4,7 +4,7 @@ description: Learn how to link transfer order lines to the sales order lines fro
 author: yufeihuang
 ms.author: yufeihuang
 ms.reviewer: kamaybac
-ms.search.form: 
+ms.search.form: SalesTable, InventTransferOrderSalesLineSupplyForm, InventTransferOrders, InventTrans
 ms.topic: how-to
 ms.date: 07/31/2024
 ms.custom: 
