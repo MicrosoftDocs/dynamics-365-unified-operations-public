@@ -18,7 +18,7 @@ ms.custom:
 
 This article describes how to add a channel to an organizational hierarchy in Microsoft Dynamics 365 Commerce.
 
-Channels need to be associated with one or more organizational hierarchies. Before creating channels, you need to confirm that your organizational hierarchies have been set up.  
+Channels need to be associated with one or more organizational hierarchies. Before creating channels, you need to confirm that your organizational hierarchies are set up.  
 
 See [Organizational hierarchies](channels-org-hierarchies.md) for more details on how to create organizational hierarchies.
 
@@ -27,19 +27,19 @@ See [Organizational hierarchies](channels-org-hierarchies.md) for more details o
 To select a hierarchy, follow these steps.
 
 1. In the navigation pane, go to **Go to Navigation pane > Modules > Organization administration > Organizations > Organization hierarchies**.
-1. From the list, select the organization hierarchy that you'll be adding the channel to.
+1. From the list, select the organization hierarchy to which you're adding the channel.
 1. On the action pane, select **View** to view hierarchy details.
 
 The following image shows organizational hierarchy details for the selected hierarchy.
 
 ![Organizational hierarchy details for the selected hierarchy.](media/channel-add-to-org-hierarchy-1.png)
 
-## Add a channel to a hierachy node
+## Add a channel to a hierarchy node
 
-To add a channel to a hierachy node, follow these steps.
+To add a channel to a hierarchy node, follow these steps.
 
 1. On the action pane, select **Edit**.
-1. Select the hierachy node you want the channel added to, then from the **Insert** drop-down list, select **Retail Channel**. 
+1. Select the hierarchy node you want the channel added to, then from the **Insert** drop-down list, select **Retail Channel**. 
 1. Select the channel to add, then select the **OK** button.
 1. On the action pane, select **Save**.
 1. On the action pane, select **Publish** and provide an **Effective date** in the past to have this action go into effect immediately.
