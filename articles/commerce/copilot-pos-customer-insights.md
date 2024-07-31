@@ -59,5 +59,8 @@ This capability is available for customers using the following English language 
 > - For Copilot experiences in the Store Commerce app, your Dataverse instance must be linked to your environment by enabling Copilot capabilities in your finance and operations apps. For more information, see [Enable Copilot capabilities in finance and operations apps](/dynamics365/fin-ops-core/dev-itpro/copilot/enable-copilot).
 > - If your hosting environment is in one of the regions where Azure Open AI isn't currently available, consider enabling the **Move data across regions** capability in the Power Platform Admin Center (PPAC). If your Dynamics 365 Commerce environments are hosted in the EU Data Boundary, you use an Azure OpenAI endpoint in the same boundary. If the required AI services are already available in your Dataverse region, you don't have to set up support for cross-region calls. If cross-region data movement is required but is disabled, users aren't able to view Copilot-generated summaries in the Store Commerce app. [Learn more](/power-platform/admin/geographical-availability-copilot).
 
+## Additional resources
+
+[FAQ for Copilot-based insights](responsible-ai/faqs-ai-copilot-store-comm-summaries.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
