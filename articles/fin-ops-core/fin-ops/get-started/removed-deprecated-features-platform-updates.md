@@ -49,18 +49,18 @@ Detailed information about objects in finance and operations apps can be found i
 | **Deployment option**              | Microsoft-managed cloud environments |
 | **Status**                         | The **SharePoint user authentication** feature is available in Dynamics 365 Finance version 10.0.40, and is mandatory in version 10.0.42. Migration to the new SharePoint authentication must occur by February 28, 2025, at which time the current SharePoint connection stops working. |
 
-## Feature deprecation effective May 2024
+## Feature deprecation effective August 2024
 
 ### Support for unregistered Microsoft account and external Microsoft Entra ID users
-
+**Login will be blocked for unregistered [Microsoft Account (MSA)](/entra/external-id/microsoft-account) and [External Microsoft Entra ID users](/entra/external-id/default-account) in Finance and Operation Apps**
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | To enhance the security and performance of finance and operations apps, we're announcing the deprecation of support for unregistered Microsoft account users and external Microsoft Entra users in finance and operations apps. |
-| **What is changing?**   | If a [Microsoft account](/entra/external-id/microsoft-account) or [Microsoft Entra ID account](/entra/external-id/default-account) isn't registered in your Microsoft Entra ID tenant, you won't be able to access finance and operations apps. You receive the following error message: "AADSTS50020: user account '`contoso@contoso.com`;' from identity provider '`https://sts.windows.net/{tenant ID}/`' doesn't exist in tenant '\{tenant name\}' and can't access the application '\{application ID\}'(Finance and operations environment name) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Microsoft Entra ID user account." The user is blocked at the Microsoft Entra ID tenant level. This change doesn't affect granular delegated admin permissions (GDAP) or CSP users. |
-| **What do you need to do?**         | If a user who isn't part of your Microsoft Entra requires access to finance and operations apps, that user must be added to the Microsoft Entra ID tenant as an external user or guest user. For more information, see [B2B collaboration overview](/entra/external-id/what-is-b2b/). |
+| **What is changing?**   | If a [Microsoft account](/entra/external-id/microsoft-account) or [Microsoft Entra ID account](/entra/external-id/default-account) isn't registered in your Microsoft Entra ID tenant, you won't be able to access finance and operations apps. You receive the following error message: "[AADSTS50020](/troubleshoot/azure/entra/entra-id/app-integration/error-code-aadsts50020-user-account-identity-provider-does-not-exist): user account '`contoso@contoso.com`;' from identity provider '`https://sts.windows.net/{tenant ID}/`' doesn't exist in tenant '\{tenant name\}' and can't access the application '\{application ID\}'(Finance and operations environment name) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Microsoft Entra ID user account." Such users will be blocked at the Microsoft Entra ID tenant level. This change doesn't affect [granular delegated admin permissions (GDAP)](/partner-center/customers/gdap-introduction) or CSP users. |
+| **What do you need to do?**         | If a user who isn't part of your Microsoft Entra requires access to finance and operations apps, that user must be added to the Microsoft Entra ID tenant as an external user or guest user. For more information, see [B2B collaboration overview](/entra/external-id/what-is-b2b/). For environments in version PU63 and greater can use [Invalid Users Page](/dynamics365/fin-ops-core/fin-ops/sysadmin/invalid-users) to identify such users|
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | End of support date is targeted for May 2024. |
+| **Status**                         | This change will reach your environment any time starting August 2024. |
 
 ## Feature deprecation effective April 2024
 
