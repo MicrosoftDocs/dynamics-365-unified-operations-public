@@ -25,7 +25,7 @@ Customer insights by Copilot is a feature in the Dynamics 365 Commerce Store Com
     - Price ranges.
     - Recency, frequency, monetary (RFM) analysis.
     - Lifetime value.
-- View a summarized timeline of each customer's activity, such as store visits, notes, events, and previous interactions, and easily pick up the conversation where it left off or provide a tailored follow-up.
+- View a summarized timeline of each customer's activity such as store visits, notes, events, and previous interactions to easily pick up the conversation where it left off or provide a custom follow-up.
 - Spark a conversation with personalized icebreaker questions based on a customer's recent purchases within the last year.
 - Offer relevant and customized recommendations based on a customer's purchase history, interests, and budget.
   
@@ -35,7 +35,7 @@ Customer insights by Copilot is a feature in the Dynamics 365 Commerce Store Com
 
 Customer expectations are increasing, with a growing desire for individualized experiences when entering a store. Store staff is presented with the considerable task of manually scrutinizing customer behavior, an approach that is both inefficient and daunting, ultimately obstructing the provision of effective personalized encounters. 
 
-Harnessing the power of Copilot simplifies the process of understanding your clientele. Monitoring each customer's timeline of activities such as store visits, notes, and events can be challenging. Copilot efficiently summarizes each customer's engagement timeline and updates you on their previous interactions, which simplifies the process of picking up conversations where they were left or providing custom follow-up suggestions.
+Harnessing the power of Copilot simplifies the process of understanding your clientele. Monitoring each customer's timeline of activities such as store visits, notes, and events can be challenging. Copilot efficiently summarizes each customer's engagement timeline and updates you on their previous interactions, which simplifies the process of picking up conversations where they were left off or providing custom follow-up suggestions.
 
 Customer insights by Copilot empowers store associates to excel in service delivery, turning transactions into lasting customer relationships. It also benefits customers by providing them with a personalized and memorable shopping experience that meets their needs and expectations. Customer insights by Copilot is the ultimate tool for clienteling in retail, as it shifts the focus from sales to crafting individual experiences, and creates loyal customers through exceptional service.
 
@@ -50,8 +50,8 @@ To enable Customer insights by Copilot in the Store Commerce app, follow these s
 
 This capability is available for customers using the following English language Commerce versions:
 
-- Commerce version 10.0.39, PQU-4 onwards (CSU : 9.49.24184.3, Store Comm. App 9.49.24193.1)
-- Commerce version 10.0.40, PQU-1 onwards (CSU : 9.50.24184.2, Store Comm. App 9.50.24189.1)
+- Commerce version 10.0.39, PQU-4 onwards (Commerce Scale Unit: 9.49.24184.3, Store Commerce app version 9.49.24193.1)
+- Commerce version 10.0.40, PQU-1 onwards (Commerce Scale Unit: 9.50.24184.2, Store Commerce app version 9.50.24189.1)
 
 > [!NOTE]
 > - AI-generated content may be incorrect. For more information, see [Service Agreement & Microsoft Products and Services Data Protection Addendum](https://aka.ms/BusinessApplicationLegal).
