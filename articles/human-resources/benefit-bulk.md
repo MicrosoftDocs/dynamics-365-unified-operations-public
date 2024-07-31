@@ -4,7 +4,7 @@
 title: Benefit bulk update page 
 description: This article describes features of the Benefit bulk update page.
 author: twheeloc
-ms.date: 03/03/2023
+ms.date: 07/03/2024
 ms.topic: article
 # optional metadata
 
@@ -17,7 +17,7 @@ audience: Application User
 ms.assetid: eb5dcacb-a5fe-451d-b30a-7ef14da65d81
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 

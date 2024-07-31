@@ -7,7 +7,6 @@ ms.topic: article
 ms.date: 11/11/2020
 ms.custom:
 ms.reviewer: kamaybac 
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-11-11
 ms.search.form: WHSLocationLimit

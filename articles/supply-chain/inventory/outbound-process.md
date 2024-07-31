@@ -8,7 +8,6 @@ ms.date: 07/25/2019
 ms.custom:
 ms.reviewer: kamaybac
 ms.collection: get-started
-audience: Application User
 ms.search.region: global
 ms.search.industry: Distribution
 ms.dyn365.ops.version: AX 7.0.0

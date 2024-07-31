@@ -7,7 +7,6 @@ ms.topic: article
 ms.date: 07/03/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-07-03
 ms.search.form:  WHSRFSystemDirectedWorkSequenceQuery, WHSLocDirTable

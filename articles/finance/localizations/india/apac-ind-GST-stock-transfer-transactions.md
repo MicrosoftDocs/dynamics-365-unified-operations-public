@@ -1,16 +1,15 @@
 ---
 title: Stock transfer orders that have tax on the transfer price
 description: Learn how to create a stock transfer order that has tax on the transfer price, including a step-by-step proces for creating a stock transfer order.
-author: EricWangChen
-ms.author: wangchen
-ms.topic: article
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 06/29/2022
-ms.custom:
 ms.reviewer: johnmichalak 
-audience: Application User
 ms.search.region: India
 ms.search.validFrom: 2019-06-01
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.4
 ---
 

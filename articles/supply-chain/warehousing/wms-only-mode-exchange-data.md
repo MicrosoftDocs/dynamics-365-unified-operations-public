@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 04/27/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSConsigner, WHSConsignerGroup, WHSConsignee, WHSConsignerGroup, WHSSourceSystemItem, EcoResStorageDimensionGroup, InventItemGroup, InventModelGroup, EcoResStorageDimensionGroup, EcoResTrackingDimensionGroup, WHSReservationHierarchy, UnitOfMeasure, WHSUOMSeqGroupTable, WHSSourceSystemProductMessage, WHSSourceSystemProductVariantMessage, WHSSourceSystemProductDocumentAttachmentMessage, WHSSourceSystemProductSpecificUnitOfMeasureConversionMessage, WHSSourceSystemProductBarcodeMessage, WHSSourceSystemProductGlobalTradeItemNumberMessage
 ---
@@ -131,6 +130,8 @@ Several out-of-box business events are supported for warehouse integrations. The
 | `WHSQualityOrderValidatedBusinessEvent` | Quality order validated |
 | `WHSEWInboundShipmentOrderRequestCreatedBusinessEvent` | Inbound shipment order request created (can be used to integrate Supply Chain Management with another WMS) |
 | `WHSEWOutboundShipmentOrderRequestCreatedBusinessEvent` | Outbound shipment order request created (can be used to integrate Supply Chain Management with another WMS) |
+| `WHSEWInboundShipmentOrderUpdateChangedStatusBusinessEvent` | Inbound shipment order update is being processed and has therefore changed status (can be used to integrate Supply Chain Management with another warehouse management system (WMS)) |
+| `WHSEWOutboundShipmentOrderUpdateChangedStatusBusinessEvent` | Outbound shipment order update is being processed and has therefore changed status (can be used to integrate Supply Chain Management with another WMS) |
 
 At a minimum, we recommend that you use the following business events for integration with an external ERP system:
 

@@ -1,12 +1,13 @@
 ---
 title: VAT declaration for Egypt
 description: Learn how to configure and generate the VAT return form for Egypt, including prerequisites and an outline on downloading electronic reporting configurations.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 06/03/2021
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.17

@@ -7,7 +7,6 @@ ms.reviewer: kamaybac
 ms.search.form: JmgProductionFloorExecution
 ms.topic: how-to
 ms.date: 06/14/2024
-audience: Application User
 ms.custom: 
   - bap-template
 ---
@@ -149,7 +148,7 @@ When a worker completes or partially completes a job, they can report scrap by s
 
 ## <a name="tracked-components"></a>Register batch/serial numbers for finished products and their components (preview)
 
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 <!-- KFM: preview until further notice -->
 
 Workers can use the production floor execution interface to register batch/serial numbers for tracked components and the finished products that they're producing. For information about how to add this functionality to the interface, see [Configure the production floor execution interface](production-floor-execution-configure.md#tracked-components).
@@ -171,7 +170,7 @@ Workers follow these steps to register tracked components.
 
 ## Adjust material consumption and make material reservations (preview)
 
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 <!-- KFM: preview until further notice -->
 
 > [!NOTE]
@@ -226,7 +225,7 @@ The **Adjust material** button can be configured so that it appears on the prima
 
 ### Adjust material consumption for catch weight items (preview)
 
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 <!-- KFM: preview until further notice -->
 
 > [!NOTE]

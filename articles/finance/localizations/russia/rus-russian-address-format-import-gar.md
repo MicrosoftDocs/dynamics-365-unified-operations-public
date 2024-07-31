@@ -1,16 +1,15 @@
 ---
 title: Import from State Address Register (GAR)
 description: Learn how to import addresses in the State Address Register (GAR) format, including a step-by-step process for enabling the Import from GAR feature.
-author: epodkolz
-ms.author: kfend
-ms.topic: article
-ms.date: 06/29/2022
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
 ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom:
-ms.search.form:  
 ms.dyn365.ops.version: Version 10.0.29
 ---
 

@@ -1,12 +1,13 @@
 ---
 title: DIOT declaration statement
 description: Learn about the DIOT declaration statement for Mexico, including prerequisites and an outline on tax information for unmanaged vendors.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 06/20/2017
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Mexico
 ms.search.validFrom: 2016-02-28
 ms.search.form: DIOTDeclarationConcept_MX, DIOTDeclarationTaxCode_MX, VendTable

@@ -4,7 +4,7 @@
 title: Personnel actions FAQ
 description: This article contains answers to questions that you might have if your organization uses personnel actions.
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 07/09/2024
 ms.topic: article
 # optional metadata
 

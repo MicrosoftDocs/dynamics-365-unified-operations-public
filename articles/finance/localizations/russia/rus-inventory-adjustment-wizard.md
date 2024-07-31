@@ -1,12 +1,13 @@
 ---
 title: Inventory adjustment wizard
 description: Learn about the Inventory adjustment wizard which is used to adjust on-hand inventory and transactions, including an outline on preliminary setup.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 02/07/2020
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1

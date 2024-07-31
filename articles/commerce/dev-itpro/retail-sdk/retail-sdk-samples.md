@@ -1,13 +1,14 @@
 ---
 title: Extend Commerce Store receipts
 description: This article describes how to extend Commerce store receipts.
-author: josaw1
-ms.date: 03/02/2021
-ms.topic: article
-audience: Developer
+author: ritakimani
+ms.date: 07/29/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.reviewer: josaw
 ms.search.region: Global
-ms.author: josaw
+ms.author: ritakimani
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.assetid: d24470fd-07ad-4c3f-b23a-3f6c1401edc6

@@ -1,27 +1,26 @@
 ---
-title: Platform updates for version 10.0.39 of finance and operations apps (March 2024)
-description: Learn aboutthe features that are included in the platform updates for version 10.0.39 of finance and operations apps released in March 2024.
+title: Platform updates for version 10.0.39 of finance and operations apps (February 2024)
+description: Learn about the features that are included in the platform updates for version 10.0.39 of finance and operations apps released in February 2024.
 author: johnmichalak
 ms.author: johnmichalak
-ms.topic: conceptual
-ms.date: 04/12/2024
+ms.topic: whats-new
 ms.custom: 
   - bap-template
   - evergreen
+ms.date: 04/12/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Global
 ---
 
-# Platform updates for version 10.0.39 of finance and operations apps (March 2024)
+# Platform updates for version 10.0.39 of finance and operations apps (February 2024)
 
 [!include [banner](../includes/banner.md)]
 
 This article lists the features that are included in the platform updates for version 10.0.39 of finance and operations apps. This version has a build number of 7.0.7198.18 and is available on the following schedule:
 
 - **Preview of release:** January 2024
-- **General availability of release (self-update):** March 2024
-- **General availability of release (auto-update):** April 2024
+- **General availability of release (self-update):** February 2024
+- **General availability of release (auto-update):** March 2024
 
 ## Features included in this release
 
