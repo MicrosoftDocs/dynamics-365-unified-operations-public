@@ -6,7 +6,6 @@ ms.author: johanho
 ms.topic: article
 ms.date: 05/26/2017
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2017-09-20
 ms.search.form: JMGParameters, JmgAbsenceCalendar

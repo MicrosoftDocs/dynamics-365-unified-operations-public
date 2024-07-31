@@ -1,12 +1,13 @@
 ---
 title: ESR customer payments import
 description: Learn about importing customer payments in the ESR format, including an outline and step-by-step process on generating payment references.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
+author: kailiang
+ms.author: kailiang
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 06/20/2017
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Switzerland
 ms.search.validFrom: 2016-11-30
 ms.search.form: CustPaymMode, LedgerJournalTransCustPaym

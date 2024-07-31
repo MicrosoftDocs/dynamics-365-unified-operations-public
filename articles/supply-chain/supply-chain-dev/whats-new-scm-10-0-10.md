@@ -10,7 +10,6 @@ ms.custom:
   - evergreen
 ms.reviewer: kamaybac
 ms.search.form:
-audience: Application User
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.10 (May 2020)

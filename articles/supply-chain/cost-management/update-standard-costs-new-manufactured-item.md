@@ -6,7 +6,6 @@ ms.author: yanansong
 ms.date: 06/20/2017
 ms.topic: article
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28

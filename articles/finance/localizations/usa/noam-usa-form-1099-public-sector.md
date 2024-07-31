@@ -2,7 +2,7 @@
 title: Form 1099 in the public sector
 description: Learn about about how to set up Form 1099 functionality for Accounts payable in the public sector, including an outline on how to specify vendor settlements.
 author: brpotter
-ms.author: johnmichalak
+ms.author: brpotter
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: johnmichalak

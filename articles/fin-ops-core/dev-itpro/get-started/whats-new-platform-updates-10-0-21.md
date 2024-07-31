@@ -3,14 +3,14 @@ title: Platform updates for version 10.0.21 of finance and operations apps (Octo
 description: Learn about the features that are included in the platform updates for version 10.0.21 of finance and operations apps.
 author: sericks007
 ms.author: sericks
-ms.topic: article
-ms.date: 10/28/2021
+ms.topic: whats-new
+ms.date: 07/12/2024
 ms.custom: 
+  - bap-template
+  - evergreen
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2021-05-31
-ms.search.form:
 ms.dyn365.ops.version: 10.0.21
 ---
 

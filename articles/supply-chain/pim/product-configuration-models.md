@@ -8,7 +8,6 @@ ms.date: 06/20/2017
 ms.custom:
 ms.reviewer: kamaybac
 ms.collection: get-started
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.search.form: PCProductConfigurationModelDetails, PCProductConfigurationModelListPage, PCModalWaitDialog, PCTemplateConfigurationManager, PCConfigurationUIGrouping

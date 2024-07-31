@@ -1,12 +1,13 @@
 ---
 title: CFDI layout version 3.3
 description: Learn about Comprobante Fiscal Digital por Internet (CFDI) layout version 3.3 for Mexico, including an outline on changes introduced in this layout version.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
+author: ankviklis
+ms.author: ankviklis
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
 ms.date: 10/16/2019
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Mexico
 ms.search.validFrom: 2017-12-01
 ms.search.form: CustPosting, VendParameters

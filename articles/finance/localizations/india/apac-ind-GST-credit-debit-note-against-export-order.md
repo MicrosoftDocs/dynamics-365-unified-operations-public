@@ -1,12 +1,13 @@
 ---
 title: Credit or debit note against an export order
 description: Learn about how to post a credit note against an export invoice in Microsoft Dynamics 365 transactions and set up a credit or debit note against an export invoice.
-author: EricWangChen
-ms.author: wangchen
-ms.topic: article
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 03/02/2021
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: India
 ms.search.validFrom: 2020-09-01
 ms.dyn365.ops.version: 10.0.13

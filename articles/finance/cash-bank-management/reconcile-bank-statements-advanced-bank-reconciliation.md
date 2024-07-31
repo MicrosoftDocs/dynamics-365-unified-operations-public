@@ -4,7 +4,7 @@ description: The Advanced bank reconciliation feature lets you import electronic
 author: EricWangChen
 ms.author: wangchen
 ms.topic: article
-ms.date: 04/20/2024
+ms.date: 07/20/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: global
@@ -100,6 +100,11 @@ Bank statement validation verifies the following details:
 - The opening balance and summarized line amounts equal the ending balance.
 
 When the validation is completed, the status of the bank statement is updated to **Validated**. A bank statement must be validated before it can be reconciled.
+
+If the **Modern bank reconciliation** feature is turned on, the **Validate** and **Confirm** buttons are available on the bank statement header.
+
+- **Validate** – Verify the bank statement data.
+- **Confirm** – Update the bank statement status to **Confirmed**.
 
 ## Reconcile the bank statement
 After you've imported an electronic bank statement and validated the statement on the **Bank statements** page, you can reconcile the bank statement by using the **Bank reconciliation** and **Bank reconciliation worksheet** pages. 

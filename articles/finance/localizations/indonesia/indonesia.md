@@ -4,9 +4,10 @@ description: Learn about functionality that is specific to Indonesia with links 
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: overview
-ms.date: 12/09/2021
+ms.custom: 
+  - bap-template
+ms.date: 07/10/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Indonesia
 ms.search.validFrom: 2021-09-30
 ms.dyn365.ops.version: 10.0.20

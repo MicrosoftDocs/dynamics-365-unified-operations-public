@@ -22,7 +22,7 @@ This task guide will help you create a vendor invoice from a purchase order and 
 
 
 ## Create a purchase order
-1. In the Navigation pane, go to **Modules > Accounts payable > Purchase orders > All purchase orders**.
+1. Go to **Accounts payable** > **Purchase orders** > **All purchase orders**.
 2. Click **New**.
 3. In the **Vendor account** field, click the drop-down button to open the lookup.
 4. Find a vendor to select. For example, scroll down to US-104.
@@ -31,7 +31,7 @@ This task guide will help you create a vendor invoice from a purchase order and 
 7. In the **Item number** field, click the drop-down button to open the lookup.
 8. Select an inventory item. For example, select item number 1000.
 9. Expand the **Line details** FastTab.
-10. Click the **Setup** tab. You can override the matching policy to use no matching, 2-way matching, or 3-way matching.  
+10. Click the **Setup** tab. You can override the **Matching policy** to use **No matching**, **2-way matching**, or **3-way matching**.  
 11. On the Action Pane, click **Purchase**.
 12. Click **Confirm**.
 
@@ -43,7 +43,7 @@ This task guide will help you create a vendor invoice from a purchase order and 
 5. Close the page.
 
 ## Create a vendor invoice
-1. In the Navigation pane, go to **Modules > Accounts payable > Purchase orders > Purchase orders received but not invoiced**.
+1. Go to **Accounts payable** > **Purchase orders** > **Purchase orders received but not invoiced**.
 2. Select the purchase order that you created.
 3. On the Action Pane, click **Invoice**.
 4. Click **Invoice**.

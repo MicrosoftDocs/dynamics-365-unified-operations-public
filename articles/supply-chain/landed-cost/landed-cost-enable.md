@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 08/09/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.form:
 ---
@@ -28,3 +27,4 @@ The following table describes the *Landed cost* feature and each of its availabl
 | <p>**Feature name:**<br>*Specify Goods In Transit Order when receiving via mobile device*</p><p>**Version required:**<br>10.0.35 or later</p> | This feature for the Landed cost module enables workers to select a specific goods-in-transit order for receiving when multiple goods-in-transit orders exist for the same voyage, container, item number, and purchase order number. For more information, see [Specify goods-in-transit orders when receiving with a mobile device](in-transit-processing.md#specify-GIT-order).  |
 | <p>**Feature name:**<br>*Split Goods In Transit Order quantity and assign batch/serial number when receiving via mobile device.*</p><p>**Version required:**<br>10.0.35 or later</p> | This feature for the Landed cost module lets workers who use a mobile device assign multiple batch/serial numbers for different quantities of goods that are received from goods-in-transit orders. During the receiving process, all assigned batch/serial numbers are consolidated into one work record and processed together. For more information, see [Assign batch/serial numbers when receiving with a mobile device](in-transit-processing.md#batch-serial). |
 | <p>**Feature name:**<br>*Match vendor invoice journal with voyage cost in different currency.*</p><p>**Version required:**<br>10.0.36 or later</p> | This feature for the Landed cost module lets users specify a currency code on the vendor invoice journal and match it with voyage cost in another currency. |
+| <p>**Feature name:**<br>*(Preview) Enable Quality Control for Goods In-Transit Order.*</p><p>**Version required:**<br>10.0.41 or later</p> | This feature enables organization to initiate and run quality checks against goods-in-transit orders. This proactive approach enables discrepancies or defects that might occur during transportation to be detected early, thereby ensuring that only products that meet predefined quality standards can proceed to their final destination. For more information, see [Quality orders](../inventory/quality-orders.md). |

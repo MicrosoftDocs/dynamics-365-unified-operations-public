@@ -7,7 +7,6 @@ ms.topic: article
 ms.date: 08/25/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-07-08
 ms.search.form:  WHSClusterProfile

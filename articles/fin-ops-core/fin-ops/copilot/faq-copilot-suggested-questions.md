@@ -53,7 +53,7 @@ Microsoft might disable Copilot-driven features for selected customers if abuse 
 
 ## See also
 
-- [Overview of Copilot capabilities in finance and operations apps](copilot-for-finance-operations.md)
-- [Enable Copilot capabilities in finance and operations apps](../../dev-itpro/copilot/enable-copilot.md)
+- [Generative help and guidance with Copilot](copliot-generative-help.md)
+- [Responsible AI FAQ for Generative help and guidance with Copilot in finance and operations apps](faq-copilot-generative-help.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

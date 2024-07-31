@@ -4,7 +4,7 @@ description: Learn about the document class letter configuration for Latin Ameri
 author: Fhernandez0088
 ms.author: v-federicohe
 ms.topic: article
-ms.date: 01/31/2023
+ms.date: 07/01/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak 
 ---

@@ -6,7 +6,6 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 03/18/2021
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2021-03-18
 ms.search.form: PCProductConfigurationModelListPage, PCProductConfigurationModelDetails

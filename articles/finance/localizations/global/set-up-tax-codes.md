@@ -1,16 +1,16 @@
 ---
 title: Set up tax codes
-description: Learn how to set up tax codes in the Tax Calculation Service, including overviews on simple setup and calculation origin.
-author: wangchen
-ms.author: wangchen
-ms.topic: how-to
-ms.date: 02/09/2024
-ms.custom:  
+description: Learn how to set up tax codes in the Tax Calculation Service, including overviews on simple setup and calculation origin. 
+author: liza-golub
+ms.date: 07/30/2024
+ms.topic: how-to 
+ms.custom: 
+  - bap-template
+ms.search.form: TaxTable, TaxData   
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Global
-ms.search.validFrom: 2021-10-26
-ms.search.form: TaxTable, TaxData
+ms.author: egolub
+ms.search.validFrom: 2021-10-26 
 ms.dyn365.ops.version: Version 10.0.21 
 ---
 
@@ -89,7 +89,30 @@ If you select **By quantity** in the **Calculation origin** field, the tax amoun
 For example, the tax code is set up as 1.20 per unit. On a sales invoice line, 25 units of an item are sold. In this case, the tax amount is calculated as 25 × 1.20 = 30.00.
 
 > [!NOTE] 
-> Unit conversion isn't supported for **By quantity** calculation. However, you can create multiple tax codes in RCS for different units and maintain converted tax rates by quantity.
+> If the transaction is entered in a unit other than the unit that's specified on the tax code, the unit is automatically converted based on the unit conversions that are set up on the **Unit conversions** page. This function is available starting from the 10.0.40 update.
+
+#### By quantity, additional option
+You can choose whether a tax amount By quantity is calculated before other tax codes and added to the net amount before other tax codes are calculated where **Calculation origin** = **By Net Amount**.
+
+##### Examples
+Assume two tax codes are calculated on a transaction:
+
+- **Duty**: Calculation origin = By quantity, the value is set to 5.00 per unit = pcs
+- **Tax**: Calculation origin = as shown in the examples below, the value is set to 25%
+
+One piece of an item is sold at a unit price of 10.00.
+
+###### Example 1
+**Tax**: Calculation origin = By Gross Amount method. The **Calculate before sales tax** option has no effect, because **Tax** is calculated as a percentage of the gross amount. Duty: 1 × 5.00 = 5.00. Gross amount: 10.00 + 5.00 = 15.00. Tax: 15.00 × 25% = 3.75. Total tax: 5.00 + 3.75 = 8.75. Total amount: 10.00 + 8.75 = 18.75.
+
+###### Example 2
+**Tax**: Calculation origin = By Net Amount. The **Calculate before sales tax** option isn't selected for the **Duty** calculation. Net amount: 10.00. Duty: 1 × 5.00 = 5.00. Tax: 10.00 × 25% = 2.50. Total tax: 5.00 + 2.50 = 7.50. Total amount: 10.00 + 7.50 = 17.50.
+
+###### Example 3
+**Tax**: Calculation origin = By Net Amount. The **Calculate before sales tax option** is selected for the **Duty** calculation. Net amount: 10.00. Duty: 1 × 5.00 = 5.00. Tax: (10.00 + 5.00) × 25% = 3.75. Total tax: 5.00 + 3.75 = 8.75. Total amount: 10.00 + 8.75 = 18.75.
+
+###### Example 4
+The results of example 3 and example 1 are the same, because there's only one duty. Assume that you have two duties, and only one of them is included in the net amount for the sales tax calculation: Duty 1: 5.00, using the By Quantity method, and the **Calculate before sales tax** option is selected. Duty 2: 2.50, using the By Quantity method, and the **Calculate before sales tax** option isn't selected. Tax: 25%, using the By Net Amount method. Net amount: 10.00. Duty 1: 1 × 5.00 = 5.00. Duty 2: 1 × 2.50 = 2.50. Net amount subject to tax: 10.00 + 5.00 = 15.00. Tax: 15.00 × 25% = 3.75. Total taxes, including duties: 5.00 + 2.50 + 3.75 = 11.25. Total amount: 10.00 + 11.25 = 21.25. The 25% **Tax** is calculated for the sum of the net amount (10.00) + Duty 1 (5.00) = 15.00. Duty 2 is added to the tax amount after the sales tax is calculated.
 
 ### By margin
 

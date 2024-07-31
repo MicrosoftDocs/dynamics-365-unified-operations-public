@@ -7,7 +7,6 @@ ms.topic: article
 ms.date: 05/24/2022
 ms.custom:
 ms.reviewer: kamaybac 
-audience: Application User
 ms.search.region: Global
 ms.dyn365.ops.version: 10.0.5
 ms.search.form: 

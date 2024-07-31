@@ -1,12 +1,13 @@
 ---
 title: Making Tax Digital – VAT return submission in the United Kingdom
 description: Learn how to set up and use the Making Tax Digital for VAT (MTD VAT) feature for VAT return submission in the United Kingdom.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 09/07/2021
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: United Kingdom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0

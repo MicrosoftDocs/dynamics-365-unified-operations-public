@@ -4,7 +4,7 @@
 title: Create an open-ended leave of absence
 description: This article explains how to create an open-ended leave of absence in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 11/21/2022
+ms.date: 07/02/2024
 ms.topic: article
 # optional metadata
 
@@ -17,7 +17,7 @@ audience: Application User
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -32,7 +32,7 @@ You can submit requests for a leave of absence that is open-ended and view the s
 
 ## Prerequisites
 
-1. Under **Feature management**, make sure that the **Open ended leave** feature is turned on.
+1. Under **Feature management**, confirm the **Open ended leave** feature is turned on.
 
     > [!IMPORTANT]
     > This feature can't be turned off after it has been turned on.
@@ -45,7 +45,7 @@ You can submit requests for a leave of absence that is open-ended and view the s
 7. A return-to-work notice can optionally be required for open-ended leave of absence requests.
 
 > [!NOTE]
-> After this feature is enabled, the **Attachment required** feature will be enabled.
+> After this feature is enabled, the **Attachment required** feature is enabled.
 
 ## Request an open-ended leave of absence
 

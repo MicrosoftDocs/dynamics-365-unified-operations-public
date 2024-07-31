@@ -1,18 +1,16 @@
 ---
-
-# required metadata
-
 title: Create Commerce catalogs for B2B sites
 description: This article describes how to create Commerce catalogs for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites.
 author: ashishmsft
-ms.date: 06/27/2023
-ms.topic: article
+ms.date: 07/25/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-
+ms.custom: 
+  - bap-template
 ---
 
 # Create Commerce catalogs for B2B sites

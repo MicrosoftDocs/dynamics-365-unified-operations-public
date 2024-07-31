@@ -7,7 +7,6 @@ ms.topic: article
 ms.date: 08/05/2022
 ms.custom:
 ms.reviewer: kamaybac 
-audience: Application User
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2020-03-01

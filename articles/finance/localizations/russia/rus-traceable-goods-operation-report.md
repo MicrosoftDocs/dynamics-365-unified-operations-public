@@ -1,12 +1,13 @@
 ---
 title: Generate a Traceable goods operation report (Russia)
 description: Learn how set up and generate a report about operations that involve traceable goods, including an outline on generating Traceable goods operation reports.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 06/09/2022
-ms.reviewer: 
-audience: Application User
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
+ms.reviewer: johnmichalak
 ms.search.region: Russia
 ms.search.validFrom: 2022-06-04
 ms.search.form: InventTrans, RAssettrans
