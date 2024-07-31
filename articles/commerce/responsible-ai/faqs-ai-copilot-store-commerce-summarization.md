@@ -17,7 +17,7 @@ ms.collection:
 
 [!include [banner](../includes/banner.md)]
 
-This article provides answers to frequently asked questions about the Microsoft Copilot AI technology used to generate summaries in the Microsoft Dynamics 365 Commerce Store Commerce app. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
+This article provides answers to frequently asked questions about the Microsoft Copilot artificial intelligence (AI) technology used to generate summaries in the Microsoft Dynamics 365 Commerce Store Commerce app. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 
 ## What is Copilot-based insights for Store Commerce?
 
@@ -25,7 +25,7 @@ The Copilot-powered Store Commerce app is designed to streamline retail operatio
 
 ## What can Copilot-based insights for Store Commerce do? 
 
-Using the advanced capabilities of [Azure Open AI](/azure/ai-services/openai/overview), this AI feature is engineered to synthesize summary content tailored for various Store Commerce scenarios, including report insights, customer insights, and product insights. It intelligently uses the provided datasets to craft concise, meaningful, and contextual summaries. These summaries serve as valuable references for store managers, sales associates, and cashiers, enabling them to make data-driven decisions that drive store sales, enhance operational efficiency, and improve customer service.
+Using the advanced capabilities of [Azure Open AI](/azure/ai-services/openai/overview), this AI feature is engineered to synthesize summary content that is tailored for various Store Commerce scenarios including report insights, customer insights, and product insights. It intelligently uses the provided datasets to craft concise, meaningful, and contextual summaries. These summaries serve as valuable references for store managers, sales associates, and cashiers, enabling them to make data-driven decisions that drive store sales, enhance operational efficiency, and improve customer service.
 
 ## What are the intended uses of Copilot-based insights for Store Commerce?
 
@@ -36,14 +36,14 @@ The intended use is for the users to have immediate access to relevant summary o
 
 ## How is Copilot-based insights for Store Commerce evaluated? What metrics are used to measure performance?
 
-The features undergo substantial testing before they are made available for customers in production. AI-generated summaries are evaluated by manually comparing the results against the values in the current and associated entities. The feature also relies on user feedback. If the AI-generated summary contains irrelevant or inappropriate responses, report it to Microsoft using the thumbs down gesture. Microsoft associates each thumbs up and thumbs down gesture with the corresponding AI-generated output. Your feedback helps improve the functionality moving forward. Microsoft also tracks the feature's service-level agreement (SLA) to ensure that it's always available.
+The features undergo substantial testing before they're made available for customers in production. AI-generated summaries are evaluated by manually comparing the results against the values in the current and associated entities. The feature also relies on user feedback. If the AI-generated summary contains irrelevant or inappropriate responses, report it to Microsoft using the thumbs down gesture. Microsoft associates each thumbs up and thumbs down gesture with the corresponding AI-generated output. Your feedback helps improve the functionality moving forward. Microsoft also tracks the feature's service-level agreement (SLA) to ensure that it's always available.
 
 ## What are the limitations of Copilot-based insights for Store Commerce?
 
 - The first release of these features is available only for English. Support for additional languages will be added in future releases.
 - The [Availability of Copilot in your geographical region](/power-platform/admin/geographical-availability-copilot).
 - There are no open-ended prompts to allow further modification to the style of summarization by Copilot for any insights.
-- For performance reasons, caching of 15 minutes for Copilot-generated summaries is introduced for customer and product insights at a store level so that if any associate is accessing the same customer or product information on different registers in same store, they're allowed to view the cached response for those 15 minutes. 
+- For performance reasons, caching of 15 minutes for Copilot-generated summaries is implemented for customer and product insights at a store level so that if any associate is accessing the same customer or product information on different registers in same store, they're allowed to view the cached response for those 15 minutes. 
 - For Customer insights, the **Spark-a-conversation** section considers a maximum of 20 transactions from the past year for an individual customer.
 - The dataset of previous orders and products a customer has purchased that's used for calculating average customer spending, price range, average items per order, lifetime value, year-to-date spending, and orders places in last year uses the 50 latest order headers and the 50 latest order lines.
 - For customer insights, Microsoft doesn't consider cash and carry orders due to a current limitation of the API.
