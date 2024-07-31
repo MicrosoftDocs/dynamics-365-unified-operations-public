@@ -57,13 +57,20 @@ The features undergo substantial testing before they're made available for custo
 
 No plug-ins or extensibility functionality is currently supported.
 
-### What data can Copilot based insights for Store Commerce provide to plug-ins? What permissions do Copilot based insights for Store Commerce plug-ins have? 
+## What data can Copilot based insights for Store Commerce provide to plug-ins? What permissions do Copilot based insights for Store Commerce plug-ins have? 
 
 No plug-in or extensibility functionality is currently supported.
   
-### What kinds of issues may arise when using Copilot based insights for Store Commerce enabled with plug-ins?  
+## What kinds of issues may arise when using Copilot based insights for Store Commerce enabled with plug-ins?  
 
 No plug-in or extensibility functionality is currently supported.
+
+## See also
+
+[Customer insights by Copilot](copilot-pos-customer-insights.md)
+
+[Store report insights by Copilot](copilot-pos-report-insights.md)
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
