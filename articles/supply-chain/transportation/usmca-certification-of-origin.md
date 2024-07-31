@@ -3,15 +3,13 @@ title: USMCA certification of origin
 description: This feature lets you print the certification of origin documents required by the United States-Mexico-Canada Agreement (USMCA).
 author: Weijiesa
 ms.author: weijiesa
-ms.topic: article
-ms.date: 08/09/2022
-ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-10-23
 ms.search.form: WHSShipPlanningListPage, WHSShipmentDetails
-ms.dyn365.ops.version: 10.0.16
+ms.topic: how-to
+ms.date: 07/30/2024
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # USMCA certification of origin
@@ -129,6 +127,5 @@ The user signing the certification must manually enter the number of pages (for 
 ### Page numbers
 
 Current page and number of pages printed at the bottom of the document.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

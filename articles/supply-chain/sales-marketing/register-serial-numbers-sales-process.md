@@ -6,7 +6,6 @@ ms.author: henrikan
 ms.topic: article
 ms.date: 10/31/2019
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.search.validFrom: 2016-02-28

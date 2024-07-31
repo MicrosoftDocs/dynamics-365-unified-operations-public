@@ -6,7 +6,6 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 06/30/2022
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2022-06-30
 ms.search.form: EcoResProductDetailsExtended, ReqDDMRPWorkspace, ReqDecouplingPointsStatusByNetFlow, ReqDecouplingPointStatusByOnHand, ReqPlannedOrderForm, ReqItemDecoupledLeadTime

@@ -7,7 +7,6 @@ ms.topic: conceptual
 ms.date: 11/24/2022
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.form:
 ---

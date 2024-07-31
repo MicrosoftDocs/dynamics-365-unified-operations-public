@@ -6,7 +6,6 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-11-30

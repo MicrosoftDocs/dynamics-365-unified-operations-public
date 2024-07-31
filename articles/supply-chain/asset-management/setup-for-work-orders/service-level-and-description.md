@@ -7,7 +7,6 @@ ms.topic: article
 ms.date: 08/13/2019
 ms.custom: 
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2019-08-30
 ms.search.form: EntAssetObjectServiceLevel, EntAssetWorkOrderStandardDescription, EntAssetWorkOrderServiceLevel, EntAssetServiceLevelLookup

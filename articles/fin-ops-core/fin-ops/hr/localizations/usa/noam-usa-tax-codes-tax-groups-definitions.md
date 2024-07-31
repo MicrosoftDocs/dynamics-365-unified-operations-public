@@ -73,9 +73,6 @@ Yes, but you can't disable posting definitions for a tax group that is used in a
 
 A tax code can belong to only one tax group that is enabled for posting definitions, because this restriction helps guarantee that the tax is posted to the correct account. If a tax code were included in two groups, the system would use the posting definition for the group that was processed first. For example, you could include the Colorado state income tax in both the state income tax group and the Colorado tax group. If both groups were enabled for posting definitions, the system would not consistently use the same posting definition for the Colorado state income tax. Sometimes, the tax might be posted by using the posting definition for the state income tax group. At other times, the tax might by posted by using the posting definition for the Colorado tax group. You would never know which posting definition was used.
 
-## Don't see your question here?
-
-We're working to include as many questions as we can, so that Microsoft Dynamics AX Help will be more useful to people just like you. Tell us what question you would like to add to this article. Send email to <adocs@microsoft.com>.
 
 
 [!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

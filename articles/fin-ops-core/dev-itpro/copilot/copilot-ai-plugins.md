@@ -7,7 +7,7 @@ ms.reviewer: johnmichalak
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/05/2024
+ms.date: 07/24/2024
 
 ---
 
@@ -163,7 +163,9 @@ For each class, follow these steps.
 1. Add the menu item to a [security role](../sysadmin/role-based-security.md) as a privileged item.
 
 > [!NOTE]
-> The menu item for the class must be assigned to a security role. Otherwise, the custom API, AI plugin, and AI plugin operation records aren't created in Dataverse.
+> The menu item for the class must be assigned to a security role. Otherwise, the custom API, AI plugin, and AI plugin operation records aren't created in Dataverse. <br><p>
+> After deploying the new classes to your environment, you need to ensure the extension cache is flushed before the new classes can be invoked. This is done as part of database synchronization, or by running the `SysFlushAOD` class in your environment. You can do this by adding the class runner to your environment URL:<br><p>
+> `https://<environment>.operations.dynamics.com/?cmp=usmf&mi=SysClassRunner&cls=SysFlushAOD`
 
 ## Generate the Copilot plugin
 

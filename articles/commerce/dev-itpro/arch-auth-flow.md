@@ -2,18 +2,17 @@
 title: Dynamics 365 Commerce authentication flows
 description: This article provides an overview of the various authentication flows in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 01/30/2023
-ms.topic: article
+ms.date: 07/25/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2020-03-01
-ms.dyn365.ops.version: Release 10.0.11
-ms.custom: 
-ms.assetid: 
 ms.search.industry: Retail
 ms.search.form: RetailITWorkspace
+ms.custom: 
+  - bap-template
 ---
 
 # Dynamics 365 Commerce authentication flows
