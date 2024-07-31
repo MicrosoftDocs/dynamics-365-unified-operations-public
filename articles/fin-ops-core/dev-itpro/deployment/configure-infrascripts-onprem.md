@@ -245,6 +245,14 @@ Currently, only a single database has to be restored from a backup when the envi
 </Database>
 ```
 
+Some databases have the collation element defined. If you want to change the collation of a database, you can update the **Collation** field. However, please note that only a very limited collation set is supported. For more information on supported collations, see [Microsoft Dynamics 365 Finance + Operations (on-premises) supported software](./onprem-compatibility.md#microsoft-sql-server). If a database doesn't have a collation defined, that means that only the default collation is supported or that the database will use the collation of the backup file provided.
+
+```xml
+<Database refName="axdw" dbName="AXDW">
+    <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+</Database>
+```
+
 ### FileShares
 
 The file shares have default share names. If you must update the name of the share, you can update the **name** attribute. This approach is important if the same file server will host the shares for multiple environments. 
@@ -448,7 +456,7 @@ For the **DomainName** field, the NetBIOS name of the domain is **Contoso**.
 
 Contoso Corporation wants to use differentiated gMSAs per environment. Because they're preparing the configuration for their production environment, they've added the suffix "-Prod" to all the accounts. For each **ADServiceAccount** element of the **gMSA** type, they've updated the **name** attribute and the **DNSHostName** field. 
 
-Contoso is deploying a base package of 10.0.29. The **axserviceuser** account remains disabled, because it won't be used.
+Contoso is deploying a base package of 10.0.40. The **axserviceuser** account remains disabled, because it won't be used.
 
 ```xml
 <ADServiceAccounts>
@@ -611,7 +619,7 @@ Additionally, Contoso wants to use the Entity Store feature. Therefore, they set
 
 ### Databases section
 
-Contoso Corporation will leave the default values for its database names (**dbName** attribute). They haven't downloaded the empty or demo databases from Microsoft Dynamics Lifecycle Services. In addition, they haven't yet filled in the **BackupFile** field but will be sure to fill it in later.
+Contoso Corporation will leave the default values for its database names (**dbName** attribute). They haven't downloaded the empty or demo databases from Microsoft Dynamics Lifecycle Services. In addition, they haven't yet filled in the **BackupFile** field but will be sure to fill it in later. Furthermore they will use the default collation so they won't modify the **Collation** element.
 
 ```xml
 <Databases>
@@ -623,9 +631,14 @@ Contoso Corporation will leave the default values for its database names (**dbNa
         <LogFileSizeGB value="5" />
         </DbTuning>
     </Database>
-    <Database refName="financialReporting" dbName="FinancialReporting"></Database>
+    <Database refName="financialReporting" dbName="FinancialReporting">
+      <!-- Override the default collation. This should only be done to databases that predefine the collation element. Not all collations are supported, please check the documentation. -->
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </Database>
     <Database refName="orchestratorData" dbName="OrchestratorData"></Database>
-    <Database refName="axdw" dbName="AXDW"></Database>
+    <Database refName="axdw" dbName="AXDW">
+      <Collation>SQL_Latin1_General_CP1_CI_AS</Collation>
+    </Database>
 </Databases>
 ```
 
@@ -740,7 +753,7 @@ To make it easier to find the **FabricDataRoot** and **FabricLogRoot** folders, 
 
 ### SQLCluster section
 
-Contoso Corporation has created a SQL Always On cluster that has availability groups and that consists of two VMs. They've added each SQL Server VM under the **SQLVMList** element. Additionally, because they have availability groups, they've specified the **ListenerName** value of their availability group.
+Contoso Corporation has created a SQL Always On cluster that has availability groups and that consists of two VMs. They've added each SQL Server VM under the **SQLVMList** element. Additionally, because they have availability groups, they've specified the **ListenerName** value of their availability group. The certificate generation scripts will use these values to generate the correct certificate to secure traffic with the SQL Server.
 
 ```xml
 <SQLCluster>

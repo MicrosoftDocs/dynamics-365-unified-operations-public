@@ -752,6 +752,10 @@ You can verify that everything has been configured correctly by running the foll
 
     | Release | Database |
     |---------|----------|
+    | Version 10.0.40 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.40 Chinese Demo Data |
+    | Version 10.0.40 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.40 Chinese Empty Data |
+    | Version 10.0.40 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.40 Demo Data |
+    | Version 10.0.40 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.40 Empty Data |
     | Version 10.0.39 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.39 Demo Data |
     | Version 10.0.39 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.39 Empty Data |
     | Version 10.0.38 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.38 Demo Data |

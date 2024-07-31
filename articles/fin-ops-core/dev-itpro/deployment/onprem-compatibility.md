@@ -37,6 +37,7 @@ Both Microsoft Windows Server Standard and Microsoft Windows Server Datacenter a
 
 ## Microsoft SQL Server
 
+### Software
 Both Microsoft SQL Server Standard Edition and Enterprise Edition are supported.
 
 This section covers the following SQL Server components:
@@ -54,6 +55,18 @@ This section covers the following SQL Server components:
 
 > [!IMPORTANT]
 > Using multiple versions of Microsoft SQL Server throughout a single environment is not supported.
+
+### Database Collation
+
+Finance + Operations (on-premises) supports a limited set of collations. The following table lists the supported collations.
+
+> [!IMPORTANT]
+> The Orchestrator database used by the local agent must use the `SQL_Latin1_General_CP1_CI_AS` collation.
+
+| Name                                            | Supported since  | Notes         |
+|-------------------------------------------------|------------------|---------------|
+| Chinese_Simplified_Pinyin_160_CI_AS_SC_UTF8     | 10.0.40          | Supported only on SQL Server 2022 CU12 and above |
+| SQL_Latin1_General_CP1_CI_AS                    | Original release |               |
 
 ## Active Directory Federation Services (AD FS)
 
