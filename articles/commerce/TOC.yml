@@ -3110,7 +3110,7 @@
             href: dev-itpro/pos-app-signing-certificate.md
           - name: Set up POS hybrid app on Android and iOS
             href: dev-itpro/hybridapp.md
-    - name: Copilot in Dynamics 365 Commerce
+    - name: Copilot capabilities in Commerce
       items:
       - name: Store report insights by Copilot
         href: copilot-pos-customer-insights.md
