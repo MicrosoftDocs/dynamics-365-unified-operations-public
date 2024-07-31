@@ -67,9 +67,9 @@ No plug-in or extensibility functionality is currently supported.
 
 ## See also
 
-[Customer insights by Copilot](copilot-pos-customer-insights.md)
+[Customer insights by Copilot](../copilot-pos-customer-insights.md)
 
-[Store report insights by Copilot](copilot-pos-report-insights.md)
+[Store report insights by Copilot](../copilot-pos-report-insights.md)
 
 
 
