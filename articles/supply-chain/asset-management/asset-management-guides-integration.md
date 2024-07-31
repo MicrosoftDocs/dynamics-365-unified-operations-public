@@ -7,7 +7,6 @@ ms.topic: article
 ms.date: 04/28/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-04-28
 ms.search.form:
@@ -25,7 +24,7 @@ You can integrate the **Asset management** module in Microsoft Dynamics 365 Supp
 Before you can attach guides to Asset management work orders, you must complete these prerequisites:
 
 - [Set up Dynamics 365 Supply Chain Management](../../fin-ops-core/fin-ops/index.md) version 10.0.9 or later.
-- [Turn on dual-write for Supply Chain Management apps](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md).
+- [Turn on dual-write for Supply Chain Management apps](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
 - [Turn on the following configuration keys](/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) on the **License configuration** page:
 
     - Asset management \> Asset management mixed reality

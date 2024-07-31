@@ -6,7 +6,6 @@ ms.author: yanansong
 ms.topic: article
 ms.date: 04/20/2017
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.dyn365.ops.version: AX 7.0.0

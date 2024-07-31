@@ -8,7 +8,6 @@ ms.date: 07/25/2019
 ms.custom:
 ms.reviewer: kamaybac
 ms.collection: get-started
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, CatDisplayProductRelationAdd

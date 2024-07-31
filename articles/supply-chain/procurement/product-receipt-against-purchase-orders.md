@@ -7,7 +7,6 @@ ms.topic: conceptual
 ms.date: 05/02/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.form: PurchTable, PurchTablePart, VendPackingSlipJournalListPage, VendPackingSlipJournal
 ---

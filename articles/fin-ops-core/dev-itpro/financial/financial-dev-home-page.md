@@ -25,7 +25,6 @@ This article provides links to topics about financials development.
     + [Default financial dimensions](../financial/dimension-defaulting.md)
     + [Support for different dimension patterns](../financial/dimensions.md)
     + [Add dimensions to Excel templates](../financial/dimensions-overview.md)
-    + [Support for Dimension Entry controls on dialogs](../financial/dimension-entry-control-dialog-support.md)
     + [Migrate default dimensions controls to Dimension Entry controls](../financial/dimension-entry-control-migration.md)
     + [Uptake of Dimension Entry controls](../financial/dimension-entry-control-uptake.md)
     + [Dimension Expression Builder subpattern](../financial/dimension-expression-builder-subpattern.md)

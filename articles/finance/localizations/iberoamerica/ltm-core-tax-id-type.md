@@ -3,8 +3,8 @@ title: Tax ID types for Latin America
 description: Learn about the tax ID type configuration for Latin America, including prerequisites and a process for setting up a tax ID type.
 author: Fhernandez0088
 ms.author: v-federicohe 
-ms.topic: article
-ms.date: 01/31/2023
+ms.topic: how-to
+ms.date: 07/01/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---

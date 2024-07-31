@@ -1,16 +1,15 @@
 ---
 title: Create main accounts for the GST posting type
 description: Learn how to create main accounts for the GST posting type, part of the master data setup that is required to make an India localization solution.
-author: EricWangChen
-ms.author: wangchen
-ms.topic: article
-ms.date: 06/04/2019
-ms.custom:
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
 ms.reviewer: johnmichalak 
-audience: Application User
 ms.search.region: India
 ms.search.validFrom: 2019-06-01
-ms.search.form:
 ms.dyn365.ops.version: 10.0.4
 ---
 

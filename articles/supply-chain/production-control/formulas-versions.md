@@ -9,7 +9,6 @@ ms.custom:
   - bap-template
   - evergreen
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule, EcoResProductProdTypeFormulaNoActiveFormulaFormPart
 ---
 

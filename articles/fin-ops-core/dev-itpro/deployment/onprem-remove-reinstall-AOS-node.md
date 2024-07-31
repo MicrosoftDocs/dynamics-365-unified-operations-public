@@ -6,7 +6,7 @@ ms.author: ttreen
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/19/2024
+ms.date: 07/19/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-03-31
@@ -202,11 +202,10 @@ The next step is to start a new AOS server.
 9. If errors occur while you run **Complete-PreReqs.ps1**, you likely need to update your gMSA account. Run the following script from your infrastructure scripts folder.
 
     ```powershell
-    Import-Module .\D365FO-OP\D365FO-OP.psd1
-    Update-D365FOGMSAAccounts -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Create-GMSAAccounts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Update
     ```
 
-12. Run the following script to validate the VM setup.
+10. Run the following script to validate the VM setup.
 
     ```powershell
     # If Remoting, execute
@@ -215,36 +214,36 @@ The next step is to start a new AOS server.
     .\Test-D365FOConfiguration.ps1 
     ```
 
-13. Before you continue, fix anything that fails as part of the validation script.
-14. In Service Fabric Explorer, select **Cluster**, and make a note of the Microsoft Service Fabric cluster version, e.g. **8.2.1686.XXXX**.
-15. On one of the orchestrator nodes, open File Explorer. On the **View** tab, in the **Show/hide** group, make sure that the **File name extensions** and **Hidden items** check boxes are selected.
+11. Before you continue, fix anything that fails as part of the validation script.
+12. In Service Fabric Explorer, select **Cluster**, and make a note of the Microsoft Service Fabric cluster version, e.g. **8.2.1686.XXXX**.
+13. On one of the orchestrator nodes, open File Explorer. On the **View** tab, in the **Show/hide** group, make sure that the **File name extensions** and **Hidden items** check boxes are selected.
 
     ![View options.](media/bb83d249cdce333bdbb2e276ebce559c.png)
 
-16. Expand drive C, and then drill down into the following folder. (Note that the bold parts of the path will vary, depending on the node name and setup.)
+14. Expand drive C, and then drill down into the following folder. (Note that the bold parts of the path will vary, depending on the node name and setup.)
 
     C:\\ProgramData\\SF\\**ORCH1**\\Fabric\\work\\Applications\\\_\_FabricSystem\\**_App4294967295**\\work\\Store\\**131811633624852852**
 
     In the folder, you should see a list of folders for various versions of Service Fabric. 
 
-17. Open the folder that has the same name as the version of Microsoft Service Fabric cluster that you made a note of earlier. 
-18. In the folder, you should see a .cab file.
-19. Copy the .cab file to C:\\Temp, and rename the copied file **MicrosoftAzureServiceFabric.cab**. (If you don't have a Temp folder, create it.)
-20. Open a Windows PowerShell Command Prompt windows as an admin.
-21. Run the following command to connect to your Service Fabric cluster. (Edit the command as you require.)
+15. Open the folder that has the same name as the version of Microsoft Service Fabric cluster that you made a note of earlier. 
+16. In the folder, you should see a .cab file.
+17. Copy the .cab file to C:\\Temp, and rename the copied file **MicrosoftAzureServiceFabric.cab**. (If you don't have a Temp folder, create it.)
+18. Open a Windows PowerShell Command Prompt windows as an admin.
+19. Run the following command to connect to your Service Fabric cluster. (Edit the command as you require.)
 
     ```powershell
     #Connect to the Service Fabric Cluster. 
     Connect-ServiceFabricCluster 
     ```
 
-22. Run the following command to add the node back in. Before you run it, make the required edits to the **NodeName**, **IPAddress**, **UpgradeDomain**, and **FaultDomain** parameters. (If you're replacing an existing server, you should have made a note of the values earlier.)
+20. Run the following command to add the node back in. Before you run it, make the required edits to the **NodeName**, **IPAddress**, **UpgradeDomain**, and **FaultDomain** parameters. (If you're replacing an existing server, you should have made a note of the values earlier.)
 
     ```powershell
     Add-ServiceFabricNode -NodeName "AOS4" -NodeType "AOSNodeType" -IpAddressOrFQDN "10.0.0.19" -UpgradeDomain "ud0" -FaultDomain "fd:/fd0" -FabricRuntimePackagePath "C:\Temp\MicrosoftAzureServiceFabric.cab"
     ```
 
-23. After the node has been added back in, return to Service Fabric Explorer, and view the application deployment status. Several minutes will be required before all the AOS applications are restored (**AXBootstrapperAppType**, **AXSFType**, **RTGatewayAppType**, and **LBDTelemetryType-<envname\>** or **MonitoringAgentAppType**) are pushed out again and installed on the node.
+21. After the node has been added back in, return to Service Fabric Explorer, and view the application deployment status. Several minutes will be required before all the AOS applications are restored (**AXBootstrapperAppType**, **AXSFType**, **RTGatewayAppType**, and **LBDTelemetryType-<envname\>** or **MonitoringAgentAppType**) are pushed out again and installed on the node.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

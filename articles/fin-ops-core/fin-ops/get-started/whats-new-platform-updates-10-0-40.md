@@ -4,7 +4,7 @@ description: This article lists the features that are included in the platform u
 author: johnmichalak
 ms.author: johnmichalak
 ms.date: 06/12/2024
-ms.topic: conceptual
+ms.topic: whats-new
 ms.custom: 
   - bap-template
   - evergreen
@@ -18,8 +18,8 @@ ms.search.region: Global
 This article lists the features that are included in the platform updates for version 10.0.40 of finance and operations apps. This version has a build number of 7.0.7279.17 and is available on the following schedule:
 
 - **Preview of release:** April 2024
-- **General availability of release (self-update):** May 2024
-- **General availability of release (auto-update):** June 2024
+- **General availability of release (self-update):** June 2024
+- **General availability of release (auto-update):** July 2024
 
 ## Features included in this release
 

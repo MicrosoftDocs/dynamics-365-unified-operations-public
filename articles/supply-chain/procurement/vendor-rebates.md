@@ -7,7 +7,6 @@ ms.topic: article
 ms.date: 06/20/2017
 ms.custom: no wiki article
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.search.form:  TAMVendRebateAgreement

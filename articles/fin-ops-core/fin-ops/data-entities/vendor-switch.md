@@ -5,7 +5,7 @@ author: RamaKrishnamoorthy
 ms.author: ramasri
 ms.topic: article
 ms.date: 09/20/2019
-ms.reviewer: tfehr
+ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: global
 ms.search.validFrom: 2020-01-06

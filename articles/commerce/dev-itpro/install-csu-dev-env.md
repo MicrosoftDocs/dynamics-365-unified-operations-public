@@ -2,13 +2,15 @@
 title: Install Commerce Scale Unit on a development environment
 description: This article explains how to install Commerce Scale Unit (CSU) on virtual hard disk (VHD) local development and cloud development environments for Microsoft Dynamics 365 Commerce.
 author: bstorie
-ms.date: 04/05/2024
-ms.topic: article
+ms.date: 07/30/2024
+ms.topic: how-to
 audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: brstor
 ms.search.validFrom: 2022-03-01
+ms.custom: 
+  - bap-template
 ---
 
 # Install Commerce Scale Unit on a development environment
@@ -31,7 +33,7 @@ To create the SSL certificate, follow these steps.
 1. Open PowerShell with administrator privileges from Command Prompt.
 1. Enter the following command.
 ```cmd
-$cert = New-SelfSignedCertificate -Subject "CN=$env:computerName" -DnsName $env:computerName,$([System.Net.Dns]::GetHostByName($env:computerName).HostName) -KeyAlgorithm RSA -KeyLength 2048 -CertStoreLocation "Cert:\LocalMachine\My" -NotBefore (Get-Date) -NotAfter (Get-Date).AddYears(2) -KeyUsage KeyEncipherment,DataEncipherment,CertSign,DigitalSignature,CRLSign -FriendlyName "$env:computerName" -KeyExportPolicy Exportable -KeySpec Signature
+$cert = New-SelfSignedCertificate -Subject "CN=$env:computerName" -DnsName $env:computerName,$([System.Net.Dns]::GetHostByName($env:computerName).HostName) -KeyAlgorithm RSA -KeyLength 2048 -CertStoreLocation "Cert:\LocalMachine\My" -NotBefore (Get-Date) -NotAfter (Get-Date).AddYears(2) -KeyUsage KeyEncipherment,DataEncipherment,CertSign,CRLSign -KeyUsageProperty All -FriendlyName "$env:computerName" -KeyExportPolicy Exportable
 Export-Certificate -Cert $cert -FilePath "$env:temp\https.cer"
 Import-Certificate -CertStoreLocation cert:\LocalMachine\Root -FilePath "$env:temp\https.cer"'
 ```
@@ -39,7 +41,7 @@ Import-Certificate -CertStoreLocation cert:\LocalMachine\Root -FilePath "$env:te
 4. Copy the thumbprint value of the new certificate for use later during the CSU install section.
 
 > [!NOTE]
-> If you create your SSL certificate using a method other than the PowerShell command, ensure that the SSL certificate contains the following `keyUsage` property values: `digitalSignature`, `keyEncipherment`, and `dataEncipherment`.
+> If you create your SSL certificate using a method other than the PowerShell command, ensure that the SSL certificate contains the following `keyUsage` property values: `keyEncipherment`, and `dataEncipherment`. The SSL certificate should also be capable of performing KeyExchange. 
 
 ## Convert the SSL certificate you created to the .CER file format
 

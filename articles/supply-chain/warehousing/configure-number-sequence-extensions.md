@@ -7,7 +7,6 @@ ms.topic: article
 ms.date: 06/10/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-06-10
 ms.search.form: WHSNumberSequenceExt

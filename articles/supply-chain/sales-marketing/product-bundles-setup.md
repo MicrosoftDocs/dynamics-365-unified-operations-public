@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 04/29/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.form: Customer
 ---
@@ -40,7 +39,7 @@ To make product bundle functionality available, you must turn it on for your sys
 
 ### Turn on the product bundles in journals feature (preview)
 
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 <!--KFM: Preview until further notice -->
 
 The *Product bundles in journals* feature extends the *Product bundle* feature. It enables the system to preserve detailed product bundle information in its database. Therefore, you can reprint original sales order confirmations and invoices even after the related sales order is deleted or archived and purged. This feature also improves the ability to exchange order confirmations and invoices electronically. Because product bundles are now represented in journals, you can electronically exchange order confirmations and invoices that include product bundles.

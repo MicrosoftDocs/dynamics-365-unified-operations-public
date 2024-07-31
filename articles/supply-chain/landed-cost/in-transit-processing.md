@@ -8,7 +8,6 @@ ms.date: 05/22/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: DeliveryTerms, InventLocation, InventPosting, ITMGoodsInTransitOrder, ITMTableListPage, ITMTable, ITMContainersListPage, ITMContainers, ITMFolioTableListPage, ITMFolioTable, ITMGoodsInTransitOrderEditLines, SysOperationTemplateForm, WHSRFMenuItem, WHSLocDirTable, WHSWorkTemplateTable
 ---
 

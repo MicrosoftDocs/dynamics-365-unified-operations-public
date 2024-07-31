@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 12/12/2022
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.form: WHSContainerType, WHSAllowedContainerTypeGroup, WHSLocationProfile, WHSLocationLimit, WHSParameters, InventLocation, WHSUOMSeqGroupTable, WHSRFMenuItem, UnitOfMeasureLookup, UnitOfMeasureConversion 
 ---

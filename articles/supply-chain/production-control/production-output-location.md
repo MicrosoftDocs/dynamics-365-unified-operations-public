@@ -6,7 +6,6 @@ ms.author: johanho
 ms.topic: article
 ms.date: 04/04/2017
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.search.form:
