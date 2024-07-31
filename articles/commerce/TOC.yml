@@ -183,9 +183,9 @@
       - name: Copilot in Dynamics 365 Commerce
         items:
         - name: Store report insights by Copilot
-          href: pos-report-insights-using-copilot.md
+          href: copilot-pos-customer-insights.md
         - name: Customer insights by Copilot
-          href: pos-customer-insights-using-copilot.md
+          href: copilot-pos-report-insights.md
         - name: Enable Copilot statement posting summaries
           href: copilot-statement-summaries.md
         - name: Use Copilot in site builder to enrich product detail pages
