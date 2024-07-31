@@ -5506,7 +5506,7 @@
         - name: Collections coordinator summary FAQ
           href: accounts-receivable/collections-coordinator-summary-faq.md
         - name: Customer page summary FAQ
-          href: accounts-receivable/customerpagesummary.md
+          href: accounts-receivable/customerpagesummaryfaq.md
         - name: Workflow history summary FAQ
           href: ../fin-ops-core/fin-ops/copilot/workflow-history-summary-faq.md
     - name: Development and administration for finance and operations apps
