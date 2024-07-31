@@ -23,7 +23,9 @@ Store report insights using Copilot is a feature that uses artificial intelligen
 
 ![Top 10 products Report insights using Copilot in Store Commerce App](./media/StoreReportInsightsUsingCopilot.png)
 
-Store report insights by Copilot enhances store associate efficiency by providing real-time analysis of your store data. You can access Copilot-generated summaries every time you load a report in the Store Commerce app, without having to spend time on manual data interpretation. Copilot summaries are governed by data access control settings so you can ensure that only authorized users can view the reports. For example, a store cashier can analyze or view reports that are related to their own point-of-sale (POS) activity, while a store manager has broader permissions to access reports for the entire store's POS activity. Copilot can generate narrative summaries for channel reports, providing you with a clear and concise overview of key indicators such as sales, revenue, profit, margin, and overall store performance. You can also get real-time analysis because Copilot updates the summaries as new data comes in.
+Store report insights by Copilot enhances store associate efficiency by providing real-time analysis of your store data. You can access Copilot-generated summaries every time you load a report in the Store Commerce app, without having to spend time on manual data interpretation. Copilot summaries are governed by data access control settings so you can ensure that only authorized users can view the reports. 
+
+For example, a store cashier can analyze or view reports that are related to their own point-of-sale (POS) activity, while a store manager has broader permissions to access reports for the entire store's POS activity. Copilot can generate narrative summaries for channel reports, providing you with a clear and concise overview of key indicators such as sales, revenue, profit, margin, and overall store performance. You can also get real-time analysis because Copilot updates the summaries as new data comes in.
 
 ## Enable Copilot in the Store Commerce app
 
