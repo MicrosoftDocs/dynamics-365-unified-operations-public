@@ -46,7 +46,7 @@ If you created a new HQ table and a new channel database table, follow these ste
 1. Create a custom project and use the Application Object Tree (AOT) to add a custom table.
 2. Create a new resource file to add all custom job information. Here is the template for the resource file.
 
-```csharp
+```xml
     <RetailCdxSeedData ChannelDBMajorVersion="7" ChannelDBSchema="ext" Name="AX7">
         <Jobs>
         </jobs>
