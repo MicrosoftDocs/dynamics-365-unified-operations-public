@@ -13,11 +13,13 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Streamline your Merchandising Process with Copilot based insights
+# Streamline your merchandising process with Copilot-based insights
 
 [!include [banner](includes/banner.md)]
 
 This article explains how to use Copilot to proactively provide a comprehensive summary of insights for the merchandising configurations of your retail channels to simplify your merchandising workflows in Microsoft Dynamics 365 Commerce. The summary of insights enables you to understand the status and performance of your products across different channels, as well as identify and resolve any issues that are related to your product, category, and catalog data.
+
+## Enhance merchandiser efficiency by streamlining merchandising workflows
 
 Merchandising is a complex and time-consuming process that involves configuring various aspects of products, categories, catalogs, and attributes for each channel. Merchandisers need to ensure that their products are displayed correctly and accurately on the online store, and that they comply with the business rules and policies of each channel. However, manual validation of these configurations is prone to human errors, and can result in misconfigured products that affect customer experience and sales. Moreover, manual validation isn't scalable for large-scale businesses that have millions of products, thousands of attributes, and hundreds of categories and catalogs across hundreds of stores.
 
