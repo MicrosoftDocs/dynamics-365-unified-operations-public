@@ -127,7 +127,7 @@ Certificates can be generated through Active Directory Certificate Services (AD&
 </Certificate>
 ```
 
-If you've generated a certificate somewhere else, and the certificate is already provisioned on your machines, you can set the **exportable** attribute to **false**. In this case, the Export-Certificates.ps1 script won't try to export the certificate. However, you should still define the thumbprint, so that the correct access control list (ACL) can be generated and applied.
+If you generated a certificate somewhere else, and the certificate is already provisioned on your machines, you can set the **exportable** attribute to **false**. In this case, the Export-Certificates.ps1 script won't try to export the certificate. However, you should still define the thumbprint, so that the correct access control list (ACL) can be generated and applied.
 
 ```xml
 <Certificate type="" exportable="false" generateSelfSignedCert="false" generateADCSCert="true" disabled="false">
@@ -149,7 +149,7 @@ When the **ProtectTo** field for a certificate is set, common practice is to spe
 </Certificate>
 ```
 
-The certificate of the **ServiceFabric** type is your wildcard certificate that protects your cluster and is presented by other services that are hosted in the cluster. The **Name** field is mapped to the friendly name of a certificate. The **FileName** field is used to give the certificate a file name when exported. The **DNSName** field is mapped to the subject alternative names (SANs) of a certificate. The **Subject** field is mapped to the subject name (also known as the common name) of the certificate. Never update the **Provider**, **KeyUsage**, **EnhancedKeyUsage**, and **CertificateType** fields, because they're hard-coded as required to correctly generate the certificate. If you update those fields, there's no guarantee that the certificate will work, or that the scripts themselves will support the specified values.
+The certificate of the **ServiceFabric** type is your wildcard certificate that protects your cluster and is presented by other services that are hosted in the cluster. The **Name** field is mapped to the friendly name of a certificate. The **FileName** field is used to give the certificate a file name when exported. The **DNSName** field is mapped to the subject alternative names (SANs) of a certificate. The **Subject** field is mapped to the subject name (also known as the common name) of the certificate. Never update the **Provider**, **KeyUsage**, **EnhancedKeyUsage**, and **CertificateType** fields, because they're hard-coded as required to correctly generate the certificate. If you update those fields, there's no guarantee that the certificate works, or that the scripts themselves support the specified values.
 
 ```xml
 <Certificate type="ServiceFabric" exportable="true" generateSelfSignedCert="false" generateADCSCert="true">
@@ -230,7 +230,7 @@ When you update a database entry, you can update the name of the database by upd
 <Database refName="axdw" dbName="DataWarehouse"></Database>
 ```
 
-Currently, only a single database needs to be restored from a backup when the environment is created. Set the **BackupFile** field to the full path where the backup file is located. Note that the path must be accessible by the user that your SQL Server database engine is running under. We don't recommend that you modify the **DbTuning** section. However, if you do modify it, make sure that the values that you specify are the minimum values, and that you don't go lower. Otherwise, the deployment will fail.
+Currently, only a single database needs to be restored from a backup when the environment is created. Set the **BackupFile** field to the full path where the backup file is located. The path must be accessible by the user that your SQL Server database engine is running under. We don't recommend that you modify the **DbTuning** section. However, if you do modify it, make sure that the values that you specify are the minimum values, and that you don't go lower. Otherwise, the deployment will fail.
 
 ```xml
 <Database refName="axDB" dbName="AXDB">
@@ -243,7 +243,7 @@ Currently, only a single database needs to be restored from a backup when the en
 </Database>
 ```
 
-Some databases have the collation element defined. If you want to change the collation of a database, you can update the **Collation** field. However, only a very limited collation set is supported. For more information on supported collations, see [Microsoft Dynamics 365 Finance + Operations (on-premises) supported software](./onprem-compatibility.md#microsoft-sql-server). If a database doesn't have a collation defined, this means only the default collation is supported or the database will use the collation of the backup file provided.
+Some databases have the collation element defined. If you want to change the collation of a database, you can update the **Collation** field. However, only a limited collation set is supported. For more information on supported collations, see [Microsoft Dynamics 365 Finance + Operations (on-premises) supported software](./onprem-compatibility.md#microsoft-sql-server). If a database doesn't have a collation defined, this means only the default collation is supported or the database uses the collation of the backup file provided.
 
 ```xml
 <Database refName="axdw" dbName="AXDW">
@@ -253,7 +253,7 @@ Some databases have the collation element defined. If you want to change the col
 
 ### FileShares
 
-The file shares have default share names. If you must update the name of the share, you can update the **name** attribute. This approach is important if the same file server will host the shares for multiple environments. 
+The file shares have default share names. If you must update the name of the share, you can update the **name** attribute. This approach is important if the same file server hosts the shares for multiple environments. 
 
 ```xml
 <FileShare refName="agent" name="D365Agent" disabled="false">
@@ -273,7 +273,7 @@ By default, file shares are created in the C:\\Shares directory. However, you ca
 </FileShare>
 ```
 
-If you don't want one of the scripts to create and configure the file share for you, you can set the **disabled** attribute to **true**. The file share will then be ignored. 
+If you don't want one of the scripts to create and configure the file share for you, you can set the **disabled** attribute to **true** to ignore the file share. 
 
 ```xml
 <FileShare refName="agent" name="agent" disabled="true">
@@ -494,7 +494,7 @@ Contoso doesn't want to lose access to the certificate private keys if the curre
 
 As it did for the gMSAs, Contoso added the **-prod** suffix to all its other certificates (except the **SQLCluster**, **OnpremLocalAgent**, and **RSAT** certificates), so that they're easier to distinguish.
 
-According to the setup guide, the infrastructure scripts automatically generate the information for the **SQLCluster** certificate, provided that the **SQLCluster** configuration is specified further down in the configuration template. Therefore, Contoso left everything blank except the **ProtectTo** field.
+According to the setup guide, the infrastructure scripts automatically generate the information for the **SQLCluster** certificate, provided the **SQLCluster** configuration is specified further down in the configuration template. Therefore, Contoso left everything blank except the **ProtectTo** field.
 
 Because this isn't its first environment, Contoso already registered the **OnpremLocalAgent** certificate against its Microsoft Entra tenant and doesn't have to generate a new one. Instead, they specify the thumbprint of the existing certificate and set the **generateADCSCert** attribute to **false**.
 
@@ -642,7 +642,7 @@ Contoso Corporation leaves the default values for its database names (**dbName**
 
 ### FileShares section
 
-Contoso Corporation has a file server that with a single node. However, they'll be sure to set up a high availability solution soon, before they go live. For now, they created a specific volume to host the **sfDiagnostics** share and a separate volume to host the remaining shares. For each file share, they filled in only the **BasePath** field, because all the remaining fields are filled in by the infrastructure scripts.
+Contoso Corporation has a file server that with a single node. However, they are sure to set up a high availability solution soon, before they go live. For now, they created a specific volume to host the **sfDiagnostics** share and a separate volume to host the remaining shares. For each file share, they filled in only the **BasePath** field, because all the remaining fields are filled in by the infrastructure scripts.
 
 ```xml
 <FileShares>
@@ -671,7 +671,7 @@ Contoso Corporation has a file server that with a single node. However, they'll 
 
 ### ServiceFabricCluster section
 
-To correctly identify the cluster that it's connected to, Contoso Corporation updated the **ClusterName** field to reflect the fact that this cluster is the production cluster.
+To correctly identify the cluster it's connected to, Contoso Corporation updated the **ClusterName** field to reflect the fact that this cluster is the production cluster.
 
 Contoso observed that it has resource-heavy batch jobs that run during normal operation hours. Because they don't want these jobs to affect their users, they chose to split batch and interactive sessions into separate nodes. Therefore, they set the **disabled** attribute to **false** for the **BatchOnlyAOSNodeType** and **InteractiveOnlyAOSNodeType** node types, but they set it to **true** for the **AOSNodeType** node type.
 
