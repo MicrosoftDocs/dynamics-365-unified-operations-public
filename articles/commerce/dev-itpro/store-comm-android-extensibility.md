@@ -15,7 +15,7 @@ ms.custom:
 
 # Store Commerce Hardware station extensibility for Android devices
 
-[!include [banner](includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This article describes how to build out the Microsoft Dynamics 365 Commerce Store Commerce app for Android with hardware station extensibility.
 
@@ -39,4 +39,4 @@ To build the Store Commerce app for Android using the Store Commerce mobile soft
 1. Build the Hardware station samples solution.
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
