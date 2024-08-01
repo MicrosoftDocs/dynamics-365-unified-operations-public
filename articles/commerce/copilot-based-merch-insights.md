@@ -2,7 +2,7 @@
 title: Streamline your merchandising process with Copilot-based insights
 description: This article explains how to use Microsoft Copilot to proactively provide a comprehensive summary of insights for the merchandising configurations of your retail channels to simplify your merchandising workflows in Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 07/31/2024
+ms.date: 08/01/2024
 ms.topic: how-to
 audience: Application user
 ms.reviewer: v-chrgriffin
@@ -66,6 +66,6 @@ Select **Review all** to go to a detailed view of each issue and learn about ind
 
 ## Additional resources
 
-[Responsible AI FAQ](responsible-ai/faqs-ai-summarization-hq.md)
+[FAQ for Copilot AI summarization in Commerce headquarters](responsible-ai/faqs-ai-summarization-hq.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
