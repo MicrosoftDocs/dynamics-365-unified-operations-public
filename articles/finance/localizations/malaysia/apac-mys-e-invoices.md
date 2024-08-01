@@ -204,7 +204,7 @@ Follow these steps to configure the structure of the postal address to define al
 1. On the **Registration ID** FastTab, select **Add** to create a registration ID.
 1. In the **Registration type** field, select the [BRN](#NRIC) registration type that you created earlier.
 1. In the **Registration number** field, enter a valid BRN registration number for the selected legal entity.
-1. Select **Add** to create another registration ID.
+1. Select **Add** to create another registration ID, if required.
 1. In the **Registration type** field, select the [SST](#SST) registration type that you created earlier.
 1. In the **Registration number** field, enter a valid SST registration number for the selected legal entity.
 
@@ -244,7 +244,10 @@ Follow these steps to configure the structure of the postal address to define al
 1. On the Action Pane, on the **Customer** tab, in the **Registration** group, select **Registration IDs**.
 1. On the **Registration ID** FastTab, select **Add** to create a registration ID.
 1. In the **Registration type** field, select the [BRN](#NRIC) registration type that you created earlier.
-1. In the **Registration number** field, enter a valid BRN registration number for the selected customer. 
+1. In the **Registration number** field, enter a valid BRN registration number for the selected customer.
+1. Select **Add** to create another registration ID, if required.
+1. In the **Registration type** field, select the [SST](#SST) registration type that you created earlier.
+1. In the **Registration number** field, enter a valid SST registration number for the selected customer.
 
     > [!NOTE]
     > For **foreign** customers, actual tax registration numbers aren't always mandatory. If no tax registration numbers are defined for them, the following general numbers are used:
@@ -341,7 +344,10 @@ If business processes assume that self invoices are issued, you must also config
 1. On the Action Pane, on the **Vendor** tab, in the **Registration** group, select **Registration IDs**.
 1. On the **Registration ID** FastTab, select **Add** to create a registration ID.
 1. In the **Registration type** field, select the [BRN](#NRIC) registration type that you created earlier.
-1. In the **Registration number** field, enter a valid BRN registration number for the selected vendor. 
+1. In the **Registration number** field, enter a valid BRN registration number for the selected vendor.
+1. Select **Add** to create another registration ID, if required.
+1. In the **Registration type** field, select the [SST](#SST) registration type that you created earlier.
+1. In the **Registration number** field, enter a valid SST registration number for the selected vendor.
 
     > [!NOTE]
     > For **foreign** vendors, actual tax registration numbers aren't always mandatory. If no tax registration numbers are defined for them, the following general numbers are used:
