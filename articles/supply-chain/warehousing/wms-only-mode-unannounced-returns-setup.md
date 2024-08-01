@@ -26,12 +26,14 @@ To use the features described in this article, your system must meet the followi
 
 <!--KFM: I removed mentions of enabling WMO mode and/or external warehouse. I think that's implied for all topics in this area of the TOC. -->
 
-## Source system configuration
+## Configure source systems
 
-To use Warehouse management only mode, you must have at least one *source system* set up. Each source system record configures the way a specific external system integrates with Supply Chain Management in Warehouse management only mode. Follow these steps to configure the options that are related to unannounced returns.
+To use Warehouse management only mode, you must have at least one *source system* set up. Each source system record configures the way a specific external system integrates with Supply Chain Management in Warehouse management only mode.
+
+For general information about how to set up source systems for use with Warehouse management only mode, see [Configure your source systems](wms-only-mode-setup.md#source-systems). The following procedure highlights the settings that are important for setting up unannounced returns.
 
 1. Go to **Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Source systems**.
-1. Either select the source system you want to set up from the list pane or create a new one. For details, see [Configure your source systems](wms-only-mode-setup.md#source-systems).
+1. Either select the source system you want to set up from the list pane or create a new one. 
 1. On the **Inbound shipment orders** FastTab, set up unannounced returns options by making the following settings:
     - **Enable returns process** – Set to *Yes*.
     - **Number sequence code** – Select the number sequence that should be used to generate order numbers for inbound shipment orders created during the returns process.
@@ -44,25 +46,23 @@ To use Warehouse management only mode, you must have at least one *source system
     - **Outbound shipment processing policy** – Select a policy that has **Enforce shipment to order matching** set to *Yes*. See also [Outbound shipment processing policies](outbound-load-handling.md#outbound-shipment-policies)
     - **Enable return details creation** – If you're using return details receiving, set this to *Yes*. <!--KFM: Always *No* for blind returns? -->
 
-## Mobile device menu item configuration
+## Set up return item receiving policies and mobile device menu items
 
-To enable workers to process unannounced returns in the warehouse, you must set up mobile device menu items and return item receiving policies for blind returns and/or return details receiving. The required menu items are nearly the same as those used for [receiving unannounced returns](sales-returns-unannounced.md) without Warehouse management only mode. This section points out the differences.
+To enable workers to process unannounced returns in the warehouse, you must set up mobile device menu items and return item receiving policies. The required settings are nearly the same as those used for [receiving unannounced returns](sales-returns-unannounced.md) without Warehouse management only mode; this section points out the differences.
 
-### Return item receiving policy
+### Return item receiving policies
 
-Return item receiving policies enable each menu item to process the return correctly. You set them up by going to **Warehouse management** \> **Setup** \> **Mobile device** \> **Return item receiving policies**.
-
-When setting up policies for use with Warehouse management only mode, you must use return receiving policies that have the following settings:
+Return item receiving policies enable each menu item to process the return correctly. You set them up by going to **Warehouse management** \> **Setup** \> **Mobile device** \> **Return item receiving policies**. Policies for use with Warehouse management only mode must use the following settings:
 
 - **Return process** – Set to either *Blind return* or *Return details*, depending on the type of return you're menu item should process.
 - **Create return order** – Set to *Inbound shipment order*.
 - **Return order identification** – This field is visible when **Return process** is set to *Blind return*. Set it to one of the following values
-    - *None* – The system doesn't use any specific identification method. The app won't ask the worker to enter any additional information during receiving.
-    - *Account number* – The system uses an account number to identify the return order. The app will ask the worker to enter the account number during receiving.
+    - *None* – The system doesn't use any specific method to identify return orders. The app won't ask the worker to enter any additional information during receiving.
+    - *Account number* – The system uses an account number to identify each return order. The app will ask the worker to enter the account number during receiving. <!--KFM: What kind of account is this? sales account? bank account? other? -->
 - **Return order type** – This field is visible when **Return order identification** is set to *Account number*. Enter the name used to identify return orders in the source system. Refer to your external system's documentation to find this value. If you leave this blank, then this setting will be inherited from the relevant [source system configuration](wms-only-mode-setup.md#source-systems).
 
 > [!IMPORTANT]
-> If your source system is Dynamics 365 Supply Chain Management (as it would be when running an [external shared warehouse scenario](wms-only-mode-external-shared-warehouse)), then you must set **Return order type** to `Return` because that's the return order type used in Supply Chain Management (or leave it blank if `Return` is already specified as the default for the source system).
+> If your source system is Dynamics 365 Supply Chain Management (as it would be when running an [external shared warehouse scenario](wms-only-mode-external-shared-warehouse)), then you must set **Return order type** to `Return` because that's the return order type used in Supply Chain Management (or leave it blank if `Return` is already specified as the default for the [source system](wms-only-mode-setup.md#source-systems)).
 
 For more information, see [Create return item receiving policies](sales-returns-unannounced.md#return-receive-policy).
 
