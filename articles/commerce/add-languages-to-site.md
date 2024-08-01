@@ -30,9 +30,9 @@ To add a language to an online store, follow these steps.
 1. On the **Languages** FastTab, select **Add**.
 1. In the **Language** field, select the language to add.
 
-The language that you added will now be available so that you can configure your site to use it in the site authoring environment.
+The language that you added is now available so that you can configure your site to use it in the site authoring environment.
 
-### Languages that are supported by Dynamics 365 Commerce
+### Languages that are supported by Dynamics 36 5 Commerce
 
 - af
 - ar
