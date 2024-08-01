@@ -43,7 +43,7 @@ Use the following procedure to set up packing locations. For each location, you 
     - **Create packing work** – Select this checkbox to create packing work each time that items are delivered to the packing location. The work will include links to related load lines, so that partial loads can be packed and shipped.
 
 > [!CAUTION]
-> Before enabling the **Create packing work** option, make the packing station is empty (no items are present).
+> Before enabling the **Create packing work** option, make sure the packing station is empty (no items are present).
 
 ## Example scenario
 
