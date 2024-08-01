@@ -57,7 +57,7 @@ To view the status of the long-term retention job, select **View progress** on t
 
 The **Archive with Dataverse long term retention** workspace shows the full archiving history. Each row in the grid shows information such as the date when the archive was created, the user who created it, and its status.
 
-To view details about a selected archive, select the job, and then select **View history data**. The **Archived retail transactions** page shows every retail transaction that's included in the archive job. 
+To view details about a selected archive, select the job, and then select **View history data**. The **Archived retail transactions** page shows every retail transaction that is included in the archive job. 
 
 The following illustration shows an example of the **Archive with Dataverse long-term retention** workspace that includes a completed archive job for retail.
 
@@ -65,7 +65,7 @@ The following illustration shows an example of the **Archive with Dataverse long
 
 ## Tables archived by the retail long-term retention job
 
-The following tables are archived by the retail long-term retention job:
+The retail long-term retention job archives the following tables:
 
 - RetailTransactionTable
 - RetailTransactionCashManagementTrans
