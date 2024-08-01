@@ -1,8 +1,8 @@
 ---
 title: Responsible AI FAQ for Warehouse Management mobile app insights with Copilot
 description: Access answers to frequently asked questions about the AI technology that's used in Warehouse Management mobile app insights with Copilot in Dynamics 365 Supply Chain Management.
-author: t-benebo
-ms.author: benebotg
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: article
 ms.date: 08/01/2024
 ms.custom:
