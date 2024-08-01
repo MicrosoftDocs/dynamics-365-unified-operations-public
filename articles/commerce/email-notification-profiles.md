@@ -2,14 +2,15 @@
 title: Set up an email notification profile
 description: This article describes how to create an email notification profile in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 01/30/2022
-ms.topic: article
+ms.date: 07/25/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: stuharg
+ms.author: asharchw
 ms.search.validFrom: 2020-01-20
-
+ms.custom: 
+  - bap-template
 ---
 # Set up an email notification profile
 

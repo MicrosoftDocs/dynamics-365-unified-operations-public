@@ -6,7 +6,6 @@ ms.author: mirzaab
 ms.topic: article
 ms.date: 05/17/2021
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2021-05-17
 ms.search.form:

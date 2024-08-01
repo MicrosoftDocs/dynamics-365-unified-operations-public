@@ -6,7 +6,6 @@ ms.author: mirzaab
 ms.topic: article
 ms.date: 07/06/2022
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2021-04-13
 ms.search.form: ScaleUnitWorkloadsWorkspace

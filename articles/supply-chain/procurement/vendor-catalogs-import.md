@@ -7,7 +7,6 @@ ms.topic: article
 ms.date: 03/20/2018
 ms.custom: 
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.industry: 
 ms.search.validFrom: 2018-04-20

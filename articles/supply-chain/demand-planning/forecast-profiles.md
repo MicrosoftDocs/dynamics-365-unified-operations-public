@@ -10,7 +10,6 @@ ms.reviewer: kamaybac
 ms.collection:
   - bap-ai-copilot
 ms.search.form:
-audience: Application User
 ms.search.region: Global
 ---
 

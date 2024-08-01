@@ -2,16 +2,15 @@
 title: Enable location-based store detection
 description: This article describes how to turn on location-based store detection for your Dynamics 365 Commerce site.
 author: brianshook
-ms.date: 07/02/2020
-ms.topic: article
+ms.date: 07/31/2024
+ms.topic: how-to
 audience: Application user
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template 
 ---
 # Enable location-based store detection
 

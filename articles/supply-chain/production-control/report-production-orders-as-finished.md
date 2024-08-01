@@ -7,7 +7,6 @@ ms.reviewer: kamaybac
 ms.search.form: ProdJournalTransJob, ProdJournalTransProd, ProdJournalTransRoute, ProdParmReportFinished, ProdRouteOprOverview
 ms.topic: conceptual
 ms.date: 06/20/2017
-audience: Application User
 ms.custom: 
   - bap-template
 ---

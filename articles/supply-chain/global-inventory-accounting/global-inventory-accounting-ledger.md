@@ -6,7 +6,6 @@ ms.author: yanansong
 ms.topic: article
 ms.date: 06/18/2021
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2021-06-18
 ms.search.form:

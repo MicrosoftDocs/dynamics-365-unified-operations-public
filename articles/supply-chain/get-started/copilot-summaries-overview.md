@@ -7,7 +7,6 @@ ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
 ms.date: 06/17/2024
-audience: Application User
 ms.custom: 
   - bap-template
 ---
@@ -42,12 +41,14 @@ Before you can use AI summaries with Copilot, your system must meet the followin
 
 ## Warehouse Management mobile app insights
 
-Warehouse Management mobile app insights are provided on the home page of the mobile app. The information that's shown can include the following details:
+Warehouse Management mobile app insights are provided to warehouse workers when they sign in (depending on configuration) and are available on demand by going to the **Summary** page. The information that's shown can include the following details:
 
-- The number of pick and receive work lines.
-- The number of other warehouse workers who are online in the warehouse where the worker is signed in.
-- Insights into the kind of work that's being done. For example, the page might show a worker that most of the current work is related to picking sales orders. It can also show the zone and location where most items must be picked.
-- The average number of items per order, plus the average weight and volume of the items.
+- The number of pick and receive work headers or lines.
+- The number of Warehouse Management mobile app sessions that are active in the warehouse.
+- Insights into the types of work waiting to be completed. This information lets warehouse workers get an overview of the workload so they can better plan their shifts.
+- Overall workload, displayed as headers or lines.
+- Details of available work by work type.
+- AI-generated insights that provide more information about available work.
 
 ## Product hover summaries
 
