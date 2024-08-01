@@ -1,32 +1,57 @@
-## What is the Context-aware worker summary screen in WMA 
+---
+title: Responsible AI FAQ for Warehouse Management mobile app insights with Copilot
+description: Access answers to frequently asked questions about the AI technology that's used in Warehouse Management mobile app insights with Copilot in Dynamics 365 Supply Chain Management.
+author: t-benebo
+ms.author: benebotg
+ms.topic: article
+ms.date: 08/01/2024
+ms.custom:
+  - responsible-ai-faqs
+ms.reviewer: kamaybac
+ms.collection:
+  - bap-ai-copilot
+---
 
-Context-aware worker summary screen in WMA provides visibility in to the warehouse workload when workers are starting shifts. It uses [Copilot](https://learn.microsoft.com/en-us/power-platform/faqs-copilot-data-security-privacy) to generate natural-language work insights.
+# Responsible AI FAQ for Warehouse Management mobile app insights with Copilot
 
-## What are capabilities of the Context-aware worker summary screen in WMA 
+[!include [banner](../includes/banner.md)]
 
-The feature provides insights into available work headers, pick lines, receiving lines and as well insights of available workforce and Copilot generated work insights.
+This FAQ provides answers to frequently asked questions about the AI technology that's used in *Warehouse Management mobile app insights with Copilot* in Dynamics 365 Supply Chain Management. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 
-## What is the intended use of the Context-aware worker summary screen in WMA 
+## What is Warehouse Management mobile app insights with Copilot?
 
-The **Context-aware worker summary screen in WMA** feature is intended to help workers to understand warehouse workload and Copilot generated warehouse trends in order to be able to be as effective as possible during their shift. 
+Warehouse Management mobile app insights with Copilot provides visibility in to the warehouse workload when workers start their shifts. It uses [Copilot](https://learn.microsoft.com/en-us/power-platform/faqs-copilot-data-security-privacy) to generate natural-language work insights.
 
-## How was the Context-aware worker summary screen in WMA evaluated? What metrics are used to measure performance?
+## What are capabilities of Warehouse Management mobile app insights with Copilot?
 
-The **Context-aware worker summary screen in WMA** underwent substantial testing before it was released. It relies on user feedback to report inappropriate content. 
+The feature provides insights into available work headers, pick lines, and receiving lines. It also provides information about available workforce and Copilot-generated insights into pending warehouse work.
+
+## What is the intended use of Warehouse Management mobile app insights with Copilot?
+
+The Warehouse Management mobile app insights with Copilot feature is intended to help workers understand the current warehouse workload through Copilot-generated analyses and summaries of warehouse trends. It helps workers plan their day so they can be as effective as possible during their shift.
+
+## How was Warehouse Management mobile app insights with Copilot evaluated? What metrics are used to measure performance?
+
+Warehouse Management mobile app insights with Copilot underwent substantial testing before it was released. It relies on user feedback to report inappropriate content.
 
 If you encounter inappropriate generated content, report it to Microsoft by using this feedback form: [Report abuse](https://msrc.microsoft.com/report). Your feedback helps improve the functionality.
 
 Microsoft might disable the Copilot-driven features for selected customers if abuse of the functionality is detected.
 
-## What are the limitations of the Context-aware worker summary screen in WMA? How can users minimize the impact of its limitations when they use it?
+## What are the limitations of Warehouse Management mobile app insights with Copilot? How can users minimize the impact of its limitations when they use it?
 
-The **Context-aware worker summary screen in WMA** uses Copilot to generate a summary of warehouse insights into the workload.
+Warehouse Management mobile app insights uses Copilot to generate a summary of warehouse insights into the workload.
 
 The generated content should never be used without manual review or supervision.
 
-## What operational factors and settings allow for effective and responsible use of the Context-aware worker summary screen in WMA?
+## What operational factors and settings allow for effective and responsible use of Warehouse Management mobile app insights with Copilot?
 
 When you use the feature, follow these recommendations:
+
 - Make sure that your company has sufficient control over data permissions to ensure that business data can't be manipulated to influence AI data processing in an undesirable way.
 - Always review generated summaries, and study the detailed information before you make decisions about workload actions.
 
+## See also
+
+- [AI summaries with Copilot](get-started/copilot-summaries-overview.md)
+- [Transparency note for Copilot data security and privacy in Microsoft Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)

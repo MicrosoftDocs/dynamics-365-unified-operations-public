@@ -125,3 +125,4 @@ As appropriate, the **Insights** section provides buttons that let you filter th
 ## See also
 
 - [Responsible AI FAQ for AI summaries with Copilot](../faq-summaries.md)
+- [Responsible AI FAQ for Warehouse Management mobile app](../faq-wma-copilot.md)

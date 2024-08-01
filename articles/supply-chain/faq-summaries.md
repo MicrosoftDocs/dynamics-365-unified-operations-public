@@ -34,7 +34,7 @@ This section describes the intended use for each of the available summaries.
 
 ### Warehouse Management mobile app insights
 
-Warehouse Management mobile app insights give workers information about the number of lines that must be picked as open work, the number of workers who are online at the warehouse, and the type of work that must be picked.
+Warehouse Management mobile app insights give workers information about the number of lines that must be picked as open work, the number of workers who are online at the warehouse, and the type of work that must be picked. See also [Responsible AI FAQ for Warehouse Management mobile app insights with Copilot](faq-wma-copilot.md).
 
 ### Product hover and released product summaries
 
@@ -76,6 +76,7 @@ When you use the feature, follow these recommendations:
 ## See also
 
 - [AI summaries with Copilot](get-started/copilot-summaries-overview.md)
+- [Responsible AI FAQ for Warehouse Management mobile app insights with Copilot](faq-wma-copilot.md)
 - [Transparency note for Copilot data security and privacy in Microsoft Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
