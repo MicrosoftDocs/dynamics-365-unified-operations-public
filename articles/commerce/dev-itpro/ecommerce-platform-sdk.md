@@ -1,23 +1,23 @@
 ---
-title: e-Commerce platform software development kit (SDK)
-description: This article describes the e-Commerce Platform SDK.
+title: E-commerce platform software development kit (SDK)
+description: This article describes the e-commerce Platform SDK.
 author: josaw1
-ms.date: 07/09/2018
-ms.topic: article
+ms.date: 08/01/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: asharchw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.assetid: c0b1740b-1cbb-47c4-94e8-779cde8411af
+ms.custom: 
+  - bap-template
 ---
 
-#  e-Commerce platform software development kit (SDK)
+#  E-commerce platform software development kit (SDK)
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the e-Commerce Platform SDK. The e-Commerce Platform software development kit (SDK) consists of the following components:
+This article describes the e-commerce Platform SDK. The e-commerce Platform software development kit (SDK) consists of the following components:
 
 -   Framework
 -   Controls
@@ -31,8 +31,8 @@ This article describes the e-Commerce Platform SDK. The e-Commerce Platform soft
 
 The Retail SDK is available in development environments, and in hotfix packages in a Retail SDK folder.
 
-- If you get the SDK from a development instance, it is immediately ready for configuration and use. For more information, see [Access instances](../../fin-ops-core/dev-itpro/dev-tools/access-instances.md). 
-- If you get the SDK from a hotfix, it is included in the hotfix package as a zipped folder. Hotfixes are cumulative and include all other fixes. 
+- If you get the SDK from a development instance, it's immediately ready for configuration and use. For more information, see [Access instances](../../fin-ops-core/dev-itpro/dev-tools/access-instances.md). 
+- If you get the SDK from a hotfix, it's included in the hotfix package as a zipped folder. Hotfixes are cumulative and include all other fixes. 
 
 We recommend that you put the SDK in a source control system such as Visual Studio Online.
 
@@ -41,11 +41,10 @@ We recommend that you put the SDK in a source control system such as Visual Stud
 2.  Open C:\\Microsoft Dynamics AX70\\RetailSdkOnlineStoreOnlineStore.sln contains all the framework components.
 3.  The sample online store is available at C:\\Microsoft Dynamics AX70\\RetailSdkSampleExtensionsOnlineStore.
 4.  Compile and publish the web store front, from within Visual Studio.
-5.  Update the path of the RetailStorefrontWebSite from IIS Manager.
+5.  Update the path of the RetailStorefrontWebSite from Internet Information Services (IIS) Manager.
     -  Note that RetailStorefrontWebSite created by the default setup points to C:\\Microsoft Dynamics AX70\\Retail Store Front\\Package.
-    -  However, the publishing of the web storefront from RetailSDK will drop the files at C:\\inetpub\\RetailWeb\\Storefront.
-    -  Hence, the physical path of the RetailStorefrontWebSite must be updated to point to “C:\\inetpub\\RetailWeb\\Storefront” to access web storefront on the same ports as before. Another option would be to create a new website and have that point to the inetpub location.
-
+    -  However, the publishing of the web storefront from RetailSDK drops the files at C:\\inetpub\\RetailWeb\\Storefront.
+    -  Hence, the physical path of the RetailStorefrontWebSite must be updated to point to C:\\inetpub\\RetailWeb\\Storefront to access web storefront on the same ports as before. Another option would be to create a new website and have that point to the inetpub location.
 6.  Browse to `http://localhost:55080` or access `https://usnconeboxax1ecom.cloud.onebox.dynamics.com/` to see a test ASP.NET website.
 
 ### Enable anonymous access
@@ -58,23 +57,23 @@ add key="IsAnonymousEnabled" value="true"
 
 ### Externally accessing the ASP.NET website
 
-The following configuration changes will be required if either of these conditions applies:
+The following configuration changes are required if either of these conditions applies:
 
--   You are accessing web storefront from within a browser that is not on the same box as the e-Commerce server.
--   The e-Commerce server and Commerce Scale Unit are on two different boxes.
+-   You're accessing web storefront from within a browser that isn't on the same box as the e-commerce server.
+-   The e-commerce server and Commerce Scale Unit are on two different boxes.
 
-You will need to update the “retailServerUrl” inside the web.config file of the RetailStorefrontWebSite. The following two fields will need to be updated to use the machine name instead of local host:
+You need to update the “retailServerUrl” inside the web.config file of the RetailStorefrontWebSite. The following two fields need to be updated to use the machine name instead of local host:
 
 ```xml
 retailServerUrl=<http://localhost:35080/RetailServer/V1>
 <add key="RetailServerRoot" value="<http://localhost:35080/RetailServer/V1>" />
 ```
 
-If you are accessing the web storefront over HTTPS, then you will need to update the above URLs to the HTTPS equivalent.
+If you're accessing the web storefront over HTTPS, then you need to update the above URLs to the HTTPS equivalent.
 
 ### Operating unit or channel configuration
 
-The e-Commerce website will operate on an operating unit number(channel) specified in the web.config. To change it, change the OU \# below. Note that Fabrikam is “077” in the demo data. You will need to update the “retailServerUrl” inside web.config of the RetailStorefrontWebSite. The following two fields will need to be updated to use the machine name instead of local host:
+The e-commerce website operates on an operating unit number (channel) specified in the web.config file. To change it, update the `operatingUnitNumber` as shown in the following example. Fabrikam is "077" in the demo data. You need to update the “retailServerUrl” inside web.config of the RetailStorefrontWebSite. The following two fields need to be updated to use the machine name instead of local host:
 
 ```xml
 <ecommerceControls productUrlFormat="/Pages/ProductDetails/ProductDetails.aspx?itemId={0}" retailServerUrl="http://localhost:35080/RetailServer/V1" operatingUnitNumber="068">
@@ -82,9 +81,9 @@ The e-Commerce website will operate on an operating unit number(channel) specifi
 ```
 
 ## Configure authentication providers
-### Authentication providers that you are using
+### Authentication providers that you're using
 
-The e-Commerce platform uses OpenID as the mechanism for authentication. You can register any OpenID provider of your choice to the tables below to make this work. You can then log in to test as needed.
+The e-commerce platform uses OpenID as the mechanism for authentication. You can register any OpenID provider of your choice in the following tables to make this work. You can then log in to test as needed.
 
 1.  Edit the web.config file and change it to the following.
 
