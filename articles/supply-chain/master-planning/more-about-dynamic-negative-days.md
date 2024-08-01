@@ -6,7 +6,6 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 05/25/2021
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2019-06-07
 ms.search.form: 

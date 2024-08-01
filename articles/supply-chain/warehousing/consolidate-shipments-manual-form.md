@@ -7,7 +7,6 @@ ms.topic: article
 ms.date: 05/12/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-05-01
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench

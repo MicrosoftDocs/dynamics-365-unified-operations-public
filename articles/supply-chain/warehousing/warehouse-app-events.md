@@ -7,7 +7,6 @@ ms.topic: article
 ms.date: 09/02/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-10-09
 ms.search.form: WHSMobileDeviceQueueEvent 

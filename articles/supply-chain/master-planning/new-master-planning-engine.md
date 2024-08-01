@@ -7,7 +7,6 @@ ms.topic: conceptual
 ms.date: 06/04/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form:
 ---
 
@@ -27,13 +26,13 @@ Microsoft has deprecated the built-in master planning engine in favor of Plannin
 
 For more information about the deprecated master planning engine, see the announcements in [Removed or deprecated features in Dynamics 365 Supply Chain Management](../get-started/removed-deprecated-features-scm-updates.md).
 
-A deprecated feature is a feature that's no longer in active development and might be removed in a future release. For the deprecated master planning engine, there will be no new features, and support will be provided only for blocking issues (where master planning doesn't create any planned orders and/or continuously fails) and for regressions in the functionality. In March 2023, Microsoft will adopt a strict policy against providing support for the deprecated master planning engine, except for blocking issues or regressions. These conditions apply to all customers, including the following types:
+A deprecated feature is a feature that's no longer in active development and might be removed in a future release. For the deprecated master planning engine, there will be no new features, and support will be provided only for blocking issues (where master planning doesn't create any planned orders and/or continuously fails) and for regressions in the functionality. In March 2023, Microsoft adopted a strict policy against providing support for the deprecated master planning engine, except for blocking issues or regressions. These conditions apply to all customers, including the following types:
 
-- Customers whose needs aren't yet fully supported by Planning Optimization. We expect to support all customer requirements by the end of 2023 release wave 1.
+- Customers whose needs aren't yet fully supported by Planning Optimization. 
 - Customers who have received an exception so that they can continue to use the deprecated built-in planning engine.
 - All on-premises customers.
 
-There's currently no timeline for full removal of the deprecated built-in planning engine from Supply Chain Management. If Microsoft does make plans to remove it, we'll announce those plans 12–18 months before the removal date, so that all remaining customers can migrate.
+There's currently no timeline for full removal of the deprecated built-in planning engine from Supply Chain Management. If Microsoft does make plans to remove it, we'll announce those plans 12 months before the removal date.
 
 ## New deployments
 

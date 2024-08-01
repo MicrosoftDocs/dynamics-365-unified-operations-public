@@ -7,7 +7,6 @@ ms.topic: article
 ms.date: 04/11/2024
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2021-03-01
 ms.search.form: InventTransArchiveProcessForm
@@ -103,6 +102,7 @@ The toolbar above the grid provides the following buttons that you can use to wo
 
 - **Pause** – Pause a selected consolidation that is currently being processed. The pause takes effect only after the archiving task is generated. Therefore, there might be a short delay before the pause takes effect. If a consolidation is paused, a check mark appears in its **Stop current update** field.
 - **Resume** – Resume processing for a selected consolidation that is currently paused.
+- **Progress details** – Open a log that shows the progress of your inventory consolidation jobs.
 
 ## Extend your code to support custom fields
 

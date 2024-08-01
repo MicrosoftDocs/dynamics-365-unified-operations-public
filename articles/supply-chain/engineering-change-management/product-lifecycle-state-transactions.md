@@ -7,7 +7,6 @@ ms.topic: article
 ms.date: 02/17/2022
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-09-28
 ms.search.form: EngChgEcoResProductLifecycleStateChange

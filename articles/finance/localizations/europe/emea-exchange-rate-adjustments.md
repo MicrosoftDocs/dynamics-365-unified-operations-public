@@ -3,10 +3,11 @@ title: Exchange rate adjustments
 description: Learn about the exchange rate adjustment functionality for users in legal entities in Estonia, Hungary, Czech Republic, Latvia, Lithuania, Poland, and Russia.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
-ms.date: 04/10/2017
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.search.validFrom: 2016-11-30
 ms.search.form: LedgerParameters

@@ -5,7 +5,7 @@ author: moaamer
 ms.author: moaamer
 ms.topic: article
 ms.date: 04/12/2021
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-10-28
@@ -14,11 +14,9 @@ ms.dyn365.ops.version: 10.0.14
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ---
 
-# Record right-of-use asset depreciation (Preview)
+# Record right-of-use asset depreciation 
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
 
 For leases that are recognized on an organization's balance sheet, the right-of-use (ROU) asset is amortized on a monthly basis. This article explains how to create the journal entry for the amortization. The amortization debits the expense ledger account and credits the accumulated depreciation ledger account, based on the setup of your posting profile and the lease type. These entries can be created for each lease, or they can be created for multiple leases by using the batch journal functionality.
 
@@ -52,7 +50,7 @@ The depreciation expense of an operating lease is calculated as the difference b
 | Compounding Interval                           | Monthly     |
 | Present value of future minimum lease payments | 22,888.87   |
 
-As was previously mentioned, the straight-line lease expense is calculated as the sum of all payments divided by the lease term. The system automatically calculates the monthly interest expense on the liability amortization schedule. The interest expense is calculated by using the effective interest rate method. The system will use the straight-line lease cost to subtract the interest expense for each month. The value is used to reduce the ROU asset.
+As was previously mentioned, the straight-line lease expense is calculated as the sum of all payments divided by the lease term. The monthly interest expense is automatically calculated on the liability amortization schedule. The interest expense is calculated by using the effective interest rate method. The straight-line lease cost is used to subtract the interest expense for each month. The value is used to reduce the ROU asset.
 
 | Month | Straight-line lease cost | Interest expense                        | Calculation of ROU asset amortization expense |
 |-------|--------------------------|-----------------------------------------|-----------------------------------------------|

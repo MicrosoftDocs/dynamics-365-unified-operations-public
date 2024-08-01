@@ -1,26 +1,25 @@
 ---
 title: Data action hooks
-description: This article describes how to hook into pre- and post- data action events to further process data if needed.
+description: This article describes how to hook into pre- and post-data action events to further process data if needed in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 07/16/2020
-ms.topic: article
+ms.date: 07/26/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2020-01-31
-ms.dyn365.ops.version: Release 10.0.10
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 # Data action hooks
 
 [!include [banner](../includes/banner.md)]
 
+This article describes how to hook into pre- and post-data action events to further process data if needed in Microsoft Dynamics 365 Commerce.
+
 > [!IMPORTANT]
 > The data action hooks feature has been deprecated. To avoid performance issues, we strongly recommend that you use [data action overrides](data-action-overrides.md) to modify business logic in the data action layer.
-
-This article describes how to hook into pre- and post- data action events to further process data if needed.
 
 The modules included with the Dynamics 365 Commerce software development kit (SDK) use pre-existing actions to fetch data for the modules to use. You may have scenarios where you want to change some business logic in the data action layer. In addition to support for data action overrides, the Commerce platform also has the ability to hook into pre- and post- data action events.
 

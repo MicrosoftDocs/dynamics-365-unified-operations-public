@@ -1,12 +1,13 @@
 ---
 title: Prepare your environment to interoperate with HMRC's MTD VAT web service
 description: Learn how to set up Making Tax Digital for value-added tax (MTD VAT) in the United Kingdom with an outline on importing and setting up ER configurations.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 11/22/2021
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: United Kingdom
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: AX 10.0.22

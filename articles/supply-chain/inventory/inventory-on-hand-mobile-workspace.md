@@ -6,7 +6,6 @@ ms.author: yufeihuang
 ms.topic: article
 ms.date: 05/24/2022
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.dyn365.ops.version: Version 1611

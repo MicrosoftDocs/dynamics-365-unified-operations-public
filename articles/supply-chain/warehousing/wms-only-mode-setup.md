@@ -11,7 +11,6 @@ ms.custom:
   - ai-gen-desc
   - ai-seo-date:08/10/2023
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage
 ---

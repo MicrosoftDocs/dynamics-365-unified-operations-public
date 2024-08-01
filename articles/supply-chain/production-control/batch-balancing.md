@@ -6,7 +6,6 @@ ms.author: johanho
 ms.topic: article
 ms.date: 01/04/2021
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.search.form: BOMTable, WHSReservationHierarchy, WHSInventTableReservationHierarchy

@@ -1,17 +1,14 @@
 ---
 title: Set up customs clearance
 description: Learn how to set up the registration information that reflects the customs clearance process for products transported across the border of the Russian Federation.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 09/12/2022
-ms.custom:
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak 
-audience: Application User
-ms.search.region: 
-ms.dyn365.ops.version:
-ms.search.form:
-ms.search.validFrom: 
+
 ---
 
 # Set up customs clearance

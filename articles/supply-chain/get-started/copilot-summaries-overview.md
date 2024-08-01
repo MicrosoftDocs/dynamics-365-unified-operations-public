@@ -7,7 +7,6 @@ ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
 ms.date: 06/17/2024
-audience: Application User
 ms.custom: 
   - bap-template
 ---
@@ -28,8 +27,9 @@ Before you can use AI summaries with Copilot, your system must meet the followin
     - Version 10.0.40 with PQU-1 or later
     - Any build of version 10.0.41 or later
 
-- Depending on the summaries that you want to use, the following features must be enabled in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). All of these features are turned on by default.
+- [Power Platform Integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md) must be enabled for your environment. Usually, all the components that are required to use Copilot summaries are automatically deployed when Power Platform Integration is enabled. However, if they don't work as expected, see [Enable Copilot capabilities in finance and operations apps](../../fin-ops-core/dev-itpro/copilot/enable-copilot.md) for more detailed requirements.
 
+- Depending on the summaries that you want to use, the following features must be enabled in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). All of these features are turned on by default.
     - Warehouse Management mobile app insights – *Context-aware worker summary screen in WMA*
     - Product hover summaries – *Product summary when hovering on item*
     - Released product details summary – *Product details summary*
@@ -41,12 +41,14 @@ Before you can use AI summaries with Copilot, your system must meet the followin
 
 ## Warehouse Management mobile app insights
 
-Warehouse Management mobile app insights are provided on the home page of the mobile app. The information that's shown can include the following details:
+Warehouse Management mobile app insights are provided to warehouse workers when they sign in (depending on configuration) and are available on demand by going to the **Summary** page. The information that's shown can include the following details:
 
-- The number of pick and receive work lines.
-- The number of other warehouse workers who are online in the warehouse where the worker is signed in.
-- Insights into the kind of work that's being done. For example, the page might show a worker that most of the current work is related to picking sales orders. It can also show the zone and location where most items must be picked.
-- The average number of items per order, plus the average weight and volume of the items.
+- The number of pick and receive work headers or lines.
+- The number of Warehouse Management mobile app sessions that are active in the warehouse.
+- Insights into the types of work waiting to be completed. This information lets warehouse workers get an overview of the workload so they can better plan their shifts.
+- Overall workload, displayed as headers or lines.
+- Details of available work by work type.
+- AI-generated insights that provide more information about available work.
 
 ## Product hover summaries
 

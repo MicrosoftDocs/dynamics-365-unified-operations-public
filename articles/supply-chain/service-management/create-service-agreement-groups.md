@@ -6,7 +6,6 @@ ms.author: crytt
 ms.topic: article
 ms.date: 06/15/2020
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.search.form: SMAAgreementGroup
