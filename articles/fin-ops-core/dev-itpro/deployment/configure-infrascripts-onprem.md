@@ -73,7 +73,7 @@ The FileShareTopologyDefinition.xml configuration file describes the following d
 - The file share settings
 - The sharing permissions for the file share
 - The New Technology File System (NTFS) permissions for the file share
-- Additional folder-level permissions
+- Other folder-level permissions
 
 > [!NOTE]
 > You don't have to modify this file.
@@ -138,7 +138,7 @@ If you've generated a certificate somewhere else, and the certificate is already
 </Certificate>
 ```
 
-When the **ProtectTo** field for a certificate is set, its common practice to specify the user who's performing the deployment. However, we don't recommend this approach. If the specified user leaves your company, you lose access to those exported certificates. Instead, set the **ProtectTo** field to an Active Directory group that the IT administrators for your Dynamics 365 deployment belong to. You can specify multiple groups, multiple users, or a combination of groups and users.
+When the **ProtectTo** field for a certificate is set, common practice is to specify the user who's performing the deployment. However, we don't recommend this approach. If the specified user leaves your company, you lose access to those exported certificates. Instead, set the **ProtectTo** field to an Active Directory group that the IT administrators for your Dynamics 365 deployment belong to. You can specify multiple groups, multiple users, or a combination of groups and users.
 
 ```xml
 <Certificate type="" exportable="false" generateSelfSignedCert="false" generateADCSCert="true" disabled="false">
@@ -230,7 +230,7 @@ When you update a database entry, you can update the name of the database by upd
 <Database refName="axdw" dbName="DataWarehouse"></Database>
 ```
 
-Currently, only a single database has to be restored from a backup when the environment is created. Set the **BackupFile** field to the full path where the backup file is located. Note that the path must be accessible by the user that your SQL Server database engine is running under. We don't recommend that you modify the **DbTuning** section. However, if you do modify it, make sure that the values that you specify are the minimum values, and that you don't go lower. Otherwise, the deployment will fail.
+Currently, only a single database needs to be restored from a backup when the environment is created. Set the **BackupFile** field to the full path where the backup file is located. Note that the path must be accessible by the user that your SQL Server database engine is running under. We don't recommend that you modify the **DbTuning** section. However, if you do modify it, make sure that the values that you specify are the minimum values, and that you don't go lower. Otherwise, the deployment will fail.
 
 ```xml
 <Database refName="axDB" dbName="AXDB">
@@ -387,7 +387,7 @@ If you want to customize your cluster, you can create more settings in the templ
 
 ### SQLCluster
 
-The **ListenerName** field is required only if you have a SQL Server cluster. If have a single SQL Server VM, because you're deploying a sandbox environment, be sure to leave the **ListenerName** field blank.
+The **ListenerName** field is required only if you have a SQL Server cluster. If you have a single SQL Server VM, because you're deploying a sandbox environment, be sure to leave the **ListenerName** field blank.
 
 ```xml
 <ListenerName></ListenerName>
@@ -452,7 +452,7 @@ Contoso Corporation fills in the ConfigTemplate.xml file based on the following 
 
 For the **DomainName** field, the NetBIOS name of the domain is **Contoso**.
 
-Contoso Corporation wants to use differentiated gMSAs per environment. Because they're preparing the configuration for their production environment, they've added the suffix "-Prod" to all the accounts. For each **ADServiceAccount** element of the **gMSA** type, they've updated the **name** attribute and the **DNSHostName** field. 
+Contoso Corporation wants to use differentiated gMSAs per environment. Because they're preparing the configuration for their production environment, they added the suffix "-Prod" to all the accounts. For each **ADServiceAccount** element of the **gMSA** type, they updated the **name** attribute and the **DNSHostName** field. 
 
 Contoso is deploying a base package of 10.0.40. The **axserviceuser** account remains disabled, because it won't be used.
 
@@ -486,19 +486,19 @@ Contoso is deploying a base package of 10.0.40. The **axserviceuser** account re
 
 ### Certificates section
 
-Contoso Corporation has acquired a certificate for its **ServiceFabric** certificate from a public certificate authority. Because they don't need the scripts to generate the certificate, they set the **generateADCSCert** attribute to **false**. They also fill in the thumbprint of the certificate, so that it can be exported later.
+Contoso Corporation acquired a certificate for its **ServiceFabric** certificate from a public certificate authority. Because they don't need the scripts to generate the certificate, they set the **generateADCSCert** attribute to **false**. They also fill in the thumbprint of the certificate, so that it can be exported later.
 
-Contoso has an AD&nbsp;CS server and has decided to use it to generate all the other certificates.
+Contoso has an AD&nbsp;CS server and decided to use it to generate all the other certificates.
 
-Contoso doesn't want to lose access to the certificate private keys if the current IT administrator leaves. Therefore, they haven't set the **ProtectTo** field to an individual user. Instead, they've specified an Active Directory group that all their IT administrators belong to. This approach is a best practice.
+Contoso doesn't want to lose access to the certificate private keys if the current IT administrator leaves. Therefore, they haven't set the **ProtectTo** field to an individual user. Instead, they specified an Active Directory group that all their IT administrators belong to. This approach is a best practice.
 
-As it did for the gMSAs, Contoso has added the **-prod** suffix to all its other certificates (except the **SQLCluster**, **OnpremLocalAgent**, and **RSAT** certificates), so that they're easier to distinguish.
+As it did for the gMSAs, Contoso added the **-prod** suffix to all its other certificates (except the **SQLCluster**, **OnpremLocalAgent**, and **RSAT** certificates), so that they're easier to distinguish.
 
-According to the setup guide, the infrastructure scripts automatically generate the information for the **SQLCluster** certificate, provided that the **SQLCluster** configuration is specified further down in the configuration template. Therefore, Contoso has left everything blank except the **ProtectTo** field.
+According to the setup guide, the infrastructure scripts automatically generate the information for the **SQLCluster** certificate, provided that the **SQLCluster** configuration is specified further down in the configuration template. Therefore, Contoso left everything blank except the **ProtectTo** field.
 
-Because this isn't its first environment, Contoso has already registered the **OnpremLocalAgent** certificate against its Microsoft Entra tenant and doesn't have to generate a new one. Instead, they specify the thumbprint of the existing certificate and set the **generateADCSCert** attribute to **false**.
+Because this isn't its first environment, Contoso already registered the **OnpremLocalAgent** certificate against its Microsoft Entra tenant and doesn't have to generate a new one. Instead, they specify the thumbprint of the existing certificate and set the **generateADCSCert** attribute to **false**.
 
-Even though Contoso wants to use RSAT, RSAT should only be used with *sandbox* environments. Because they're specifying the configuration for their *production* environment, they've left the **disabled** attribute of the **RSAT** certificate set to **true**.
+Even though Contoso wants to use RSAT, RSAT should only be used with *sandbox* environments. Because they're specifying the configuration for their *production* environment, they left the **disabled** attribute of the **RSAT** certificate set to **true**.
 
 ```xml
 <Certificates>
@@ -597,7 +597,7 @@ Even though Contoso wants to use RSAT, RSAT should only be used with *sandbox* e
 
 ### DbServer section
 
-Contoso Corporation dedicates the SQL Server cluster that it has created to the exclusive use of its production instance of Finance + Operations (on-premises). Therefore, they've decided to leave the default values for the **userName** attribute.
+Contoso Corporation dedicates the SQL Server cluster that it created to the exclusive use of its production instance of Finance + Operations (on-premises). Therefore, they've decided to leave the default values for the **userName** attribute.
 
 Contoso wants to use the Entity Store feature. Therefore, they set the **generateUser** attribute to **true** for the **axdwadmin** and **axdwruntimeuser** accounts. 
 
@@ -617,7 +617,7 @@ Contoso wants to use the Entity Store feature. Therefore, they set the **generat
 
 ### Databases section
 
-Contoso Corporation leaves the default values for its database names (**dbName** attribute). They haven't downloaded the empty or demo databases from Microsoft Dynamics Lifecycle Services. In addition, they haven't yet filled in the **BackupFile** field but will be sure to fill it in later. Furthermore they'll use the default collation so they won't modify the **Collation** element.
+Contoso Corporation leaves the default values for its database names (**dbName** attribute). They haven't downloaded the empty or demo databases from Microsoft Dynamics Lifecycle Services. In addition, they haven't yet filled in the **BackupFile** field but will be sure to fill it in later. Furthermore, they'll use the default collation so they won't modify the **Collation** element.
 
 ```xml
 <Databases>
@@ -642,7 +642,7 @@ Contoso Corporation leaves the default values for its database names (**dbName**
 
 ### FileShares section
 
-Contoso Corporation has a file server that has a single node. However, they'll be sure to set up a high availability solution soon, before they go live. For now, they've created a specific volume to host the **sfDiagnostics** share and a separate volume to host the remaining shares. For each file share, they've filled in only the **BasePath** field, because all the remaining fields are filled in by the infrastructure scripts.
+Contoso Corporation has a file server that with a single node. However, they'll be sure to set up a high availability solution soon, before they go live. For now, they created a specific volume to host the **sfDiagnostics** share and a separate volume to host the remaining shares. For each file share, they filled in only the **BasePath** field, because all the remaining fields are filled in by the infrastructure scripts.
 
 ```xml
 <FileShares>
@@ -671,19 +671,19 @@ Contoso Corporation has a file server that has a single node. However, they'll b
 
 ### ServiceFabricCluster section
 
-To correctly identify the cluster that it's connected to, Contoso Corporation has updated the **ClusterName** field to reflect the fact that this cluster is the production cluster.
+To correctly identify the cluster that it's connected to, Contoso Corporation updated the **ClusterName** field to reflect the fact that this cluster is the production cluster.
 
-Contoso has observed that it has resource-heavy batch jobs that run during normal operation hours. Because they don't want these jobs to affect their users, they've chosen to split batch and interactive sessions into separate nodes. Therefore, they've set the **disabled** attribute to **false** for the **BatchOnlyAOSNodeType** and **InteractiveOnlyAOSNodeType** node types, but they've set it to **true** for the **AOSNodeType** node type.
+Contoso observed that it has resource-heavy batch jobs that run during normal operation hours. Because they don't want these jobs to affect their users, they chose to split batch and interactive sessions into separate nodes. Therefore, they set the **disabled** attribute to **false** for the **BatchOnlyAOSNodeType** and **InteractiveOnlyAOSNodeType** node types, but they set it to **true** for the **AOSNodeType** node type.
 
-For each machine that belongs to a node type, they've filled in the name and IP address of the VM, the fault domain, and the update domain.
+For each machine that belongs to a node type, they filled in the name and IP address of the VM, the fault domain, and the update domain.
 
-Contoso has a fault-tolerant setup. However, they don't have enough fault tolerance to provide three fault domains. They've chosen to randomly assign the fault tolerance values so that they're spread out across the minimum requirement of three fault domains.
+Contoso has a fault-tolerant setup. However, they don't have enough fault tolerance to provide three fault domains. They chose to randomly assign the fault tolerance values so that they're spread out across the minimum requirement of three fault domains.
 
-Contoso doesn't expect that it will have to update its cluster often. However, they know that they must follow the best practices for updating domain definitions. Therefore, they've made sure that each node for each node type is put in a different update domain. This approach ensures that only one node of each node type is taken down at a time if there's a cluster update or upgrade.
+Contoso doesn't expect that it needs to update its cluster often. However, they know that they must follow the best practices for updating domain definitions. Therefore, they made sure that each node for each node type is put in a different update domain. This approach ensures that only one node of each node type is taken down at a time if there's a cluster update or upgrade.
 
-Contoso noticed that a new service has been introduced for DMF since Application version 10.0.32. This service removes the need to have SSIS installed and licensed on all AOS nodes. They're also aware that they can disable the **SSISNodeType** node type, and that they can instead use the **ReportServerType** node type to host the DMF service by setting the **hasSSIS** to **true** on each node of the **ReportServerType** node type. However, because they have very resource-intensive DMF operations, they don't want to disrupt report generation. Therefore, they've chosen to have dedicated nodes for the service. 
+Contoso noticed that a new service was introduced for DMF since Application version 10.0.32. This service removes the need to have SSIS installed and licensed on all AOS nodes. They're also aware that they can disable the **SSISNodeType** node type, and that they can instead use the **ReportServerType** node type to host the DMF service by setting the **hasSSIS** to **true** on each node of the **ReportServerType** node type. However, because they have resource-intensive DMF operations, they don't want to disrupt report generation. Therefore, they chose to have dedicated nodes for the service. 
 
-To make it easier to find the **FabricDataRoot** and **FabricLogRoot** folders, Contoso has updated the paths so that they're in the root directory.
+To make it easier to find the **FabricDataRoot** and **FabricLogRoot** folders, Contoso updated the paths so that they're in the root directory.
 
 ```xml
 <ServiceFabricCluster>
@@ -751,7 +751,7 @@ To make it easier to find the **FabricDataRoot** and **FabricLogRoot** folders, 
 
 ### SQLCluster section
 
-Contoso Corporation has created a SQL Always On cluster that has availability groups and that consists of two VMs. They've added each SQL Server VM under the **SQLVMList** element. Because they have availability groups, they've specified the **ListenerName** value of their availability group. The certificate generation scripts uses these values to generate the correct certificate to secure traffic with the SQL Server.
+Contoso Corporation created a SQL Always On cluster with availability groups and that consists of two VMs. They added each SQL Server VM under the **SQLVMList** element. Because they have availability groups, they specified the **ListenerName** value of their availability group. The certificate generation scripts use these values to generate the correct certificate to secure traffic with the SQL Server.
 
 ```xml
 <SQLCluster>
