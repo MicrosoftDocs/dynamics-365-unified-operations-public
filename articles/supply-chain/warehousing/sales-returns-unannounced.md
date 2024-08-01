@@ -163,7 +163,7 @@ Return item policies let you control the conditions under which the system allow
 1. Repeat this procedure for each item or item group, as you require. When returns are processed, the most specific return item policy applies to each item in the return.
 1. On the Action Pane, select **Save**.
 
-### Create return item receiving policies
+### <a name="return-receive-policy"></a>Create return item receiving policies
 
 You must define the required return item receiving policies before you create the related mobile device menu items. These policies enable each menu item to process the return correctly.
 
@@ -175,14 +175,24 @@ You must define the required return item receiving policies before you create th
     - **Description** – Enter a short description of the policy.
     - **Return process** – Select the type of return process that the policy represents (*Return details* or *Blind return*).
 
-1. If you set **Return process** to *Blind return*, then the **Create return order** setting becomes available. Use this setting to control which type of return order the system should create to manage the blind return. Choose one of the following values:
+1. If you set **Return process** to *Blind return*, then the **Create return order** setting becomes available. Use this setting to control which type of return order the system should create to manage the blind return. Choose one of the following values: <!--KFM: This setting now appears for both types of returns. How does it affect the return details process? -->
 
     - *Return order* – The system creates a return order for each blind return. Choose this option unless you're using [Warehouse management only mode](wms-only-mode-overview.md).
     - *Inbound shipment order* – The system creates an [inbound shipment order](wms-only-mode-using.md#inbound-shipment-orders) for each blind return. Choose this option if you're using [Warehouse management only mode](wms-only-mode-overview.md).
 
+1. If you set **Return process** to *Blind return* and **Create return order** to *Inbound shipment order*, then the **Return order identification** field becomes available. Use this field to specify how the system should identify the return order. Choose one of the following values:
+
+    - *None* – The system doesn't use any specific identification method. The app won't ask the worker to enter any additional information during receiving.
+    - *Account number* – The system uses an account number to identify the return order. The app will ask the worker to enter the account number during receiving.
+
+    If you set **Return order identification** to *Account number*, then the **Return order type** field becomes visible. Use this field to specify the return order type that the system should use when creating the return order. Enter the name used to identify return orders in the source system. If you leave this blank, then this setting will be inherited from the relevant [source system configuration](wms-only-mode-setup.md#source-systems).
+
+    > [!IMPORTANT]
+    > If your source system is Dynamics 365 Supply Chain Management (as it would be when running an [external shared warehouse scenario](wms-only-mode-external-shared-warehouse)), then you must set **Return order type** to `Return` because that's the return order type used in Supply Chain Management (or leave it blank if `Return` is already specified as the default for the source system).
+
 1. If you support both types of unannounced return processes (*Return details* and *Blind return*), repeat this procedure to add a return item receiving policy for the other process.
 
-### Set up mobile device menu items
+### <a name="mdmi"></a>Set up mobile device menu items to process unannounced returns
 
 To enable workers to process unannounced returns, you must create a separate mobile device menu item for each type of unannounced return process (*Return details* or *Blind return*) that you support.
 
