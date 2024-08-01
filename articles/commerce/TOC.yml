@@ -3128,6 +3128,8 @@
         href: responsible-ai/faqs-copilot-site-builder.md
       - name: FAQ for Copilot AI summarization in Commerce headquarters
         href: responsible-ai/faqs-ai-summarization-hq.md
+      - name: FAQ for Copilot-based insights
+        href: responsible-ai/faqs-ai-copilot-store-comm-summaries
     - name: Dynamics 365 Commerce troubleshooting and FAQs
       href: commerce-troubleshooting.md
   - name: Development and administration for finance and operations apps
