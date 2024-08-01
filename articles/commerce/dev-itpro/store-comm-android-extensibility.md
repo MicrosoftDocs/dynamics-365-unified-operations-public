@@ -1,9 +1,9 @@
 ---
-title: Store commerce hardware station extensibility for Android devices
-description: This article describes how to build out store commerce app for Android with hardware station extensibility.
+title: Store Commerce Hardware station extensibility for Android devices
+description: This article describes how to build out the Microsoft Dynamics 365 Commerce Store Commerce app for Android with hardware station extensibility.
 author: anush6121
 ms.author: anvenkat
-ms.date: 07/31/2024
+ms.date: 08/01/2024
 ms.topic: how-to
 ms.reviewer: v-chrgriffin
 ms.search.region: global
@@ -13,23 +13,30 @@ ms.custom:
 
 ---
 
-# Support for Android Hardware station extensibility
+# Store Commerce Hardware station extensibility for Android devices
 
-Beginning release 10.0.41, Store commerce app for Android will support hardware station extensibility. This allows customers to do the following:
-- Allow customers to build extensions to support their various hardware station requirements.
-- Allow organizations with fiscal integration requirements to use android mobile devices with fiscal printers.
-- Allow customers to create their own APK and publish to google play store or google play for business store.
+[!include [banner](includes/banner.md)]
 
-## Steps to build your store commerce app for Android using store commerce mobile SDK.
+This article describes how to build out the Microsoft Dynamics 365 Commerce Store Commerce app for Android with hardware station extensibility.
+
+Starting with the Dynamics 365 Commerce version 10.0.41 release, the Store Commerce app for Android supports Hardware station extensibility. This allows the following:
+- Customers can build extensions to support their various Hardware station requirements.
+- Organizations with fiscal integration requirements can use Android mobile devices with fiscal printers.
+- Customers can create their own Android Application Package (APK) and publish it to the Google Play Store or the Google Play for Business Store.
   
-### Pre-requisites:
-  Install the .NET Multi-platform App UI development Visual Studio 2022 workload.
+## Prerequisites
+
+You must first install the .NET Multi-platform App UI workload in Visual Studio 2022.
   
-### Steps
-  -  Navigate to the [LCS Shared Asset Library](https://lcs.dynamics.com/V2/SharedAssetLibrary)
-  -  Under the Retail Self-service package, download the latest Store Commerce for Android package, starting with version 10.0.41.
-  -  Unzip the Store Commerce for Android package and copy the ```packages``` folder to your repository root.
-  -  Modify the nuget.config file to include the packages folder as a package source. In the ```<packageSources>``` node, add: ```<add key="Dynamics365Commerce-Android-Dependencies" value="./packages" />```.
-  -  Build the Hardware Station samples solution.
-  
-  
+## Build the Store Commerce app for Android using the Store Commerce mobile SDK
+
+To build the Store Commerce app for Android using the Store Commerce mobile software development kit (SDK), follow these steps.
+
+1. Navigate to the [Microsoft Lifecycle Services Shared Asset Library](https://lcs.dynamics.com/V2/SharedAssetLibrary).
+1. Under **Retail Self-service package**, download the latest Store Commerce for Android package (version 10.0.41 or later).
+1. Unzip the Store Commerce for Android package and copy the `packages` folder to your repository root.
+1. Modify the nuget.config file to include the packages folder as a package source. In the `<packageSources>` node, add: `<add key="Dynamics365Commerce-Android-Dependencies" value="./packages" />`.
+1. Build the Hardware station samples solution.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
