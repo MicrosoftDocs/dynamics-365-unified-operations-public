@@ -2,17 +2,15 @@
 title: Upload files other than images and videos
 description: This article describes how to upload binary files other than images and videos in Microsoft Dynamics 365 Commerce site builder.
 author: josaw1
-ms.date: 03/03/2020
-ms.topic: article
+ms.date: 08/01/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: 
 ms.custom: 
-ms.assetid: 
-ms.search.industry: 
+  - bap-template
 ---
 
 # Upload files other than images and videos
