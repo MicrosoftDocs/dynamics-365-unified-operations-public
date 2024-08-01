@@ -218,7 +218,7 @@ Follow these steps to configure the structure of the postal address to define al
 1. In the **Value** field, enter the taxpayer business activity description.
 
 > [!NOTE]
-> The contact information for the Legal entity will be automatically picked up from the related invoice header's **Recipient** field, which is, in turn,  defaulted from the **Person** associated in Microsoft Dynamics 365 Finance with the current user.
+> The contact information for the Legal entity will be automatically retrieved from the related **Person** associated in Microsoft Dynamics 365 Finance with the current user.
 
 ## Configure customer data
 
