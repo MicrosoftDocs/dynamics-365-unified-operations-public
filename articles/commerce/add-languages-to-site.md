@@ -2,16 +2,15 @@
 title: Add languages to your site
 description: This article explains how to add support for additional languages to a Microsoft Dynamics 365 Commerce site.
 author: bicyclingfool
-ms.date: 12/12/2019
-ms.topic: article
+ms.date: 08/01/2024
+ms.topic: how-to
 audience: Application user
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: StuHarg
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 # Add languages to your site
 
