@@ -174,21 +174,23 @@ You must define the required return item receiving policies before you create th
     - **Return item receiving policy ID** – Enter a name for the policy (for example, *Blind return* or *Return details*).
     - **Description** – Enter a short description of the policy.
     - **Return process** – Select the type of return process that the policy represents (*Return details* or *Blind return*).
-    - **Create return order** – Use this setting to control which type of return order the system should create to manage the return. Choose one of the following values:
-        - *Return order* – The system creates a return order for each return. Choose this option unless you're using [Warehouse management only mode](wms-only-mode-overview.md).
-        - *Inbound shipment order* – The system creates an [inbound shipment order](wms-only-mode-using.md#inbound-shipment-orders) for each return. Choose this option if you're using [Warehouse management only mode](wms-only-mode-overview.md).
+    - **Create return order** – Select the type of return order that the system should create to manage returns:
 
-    - **Return order identification** – This field is only available when **Return process** is *Blind return* and **Create return order** is *Inbound shipment order*. Use this field to specify whether an extra ID value should be returned to the source system when registering the return order. The way you use it depends on the needs of your external system (see the documentation for your external system). Choose one of the following values:
-        - *None* – The system won't return this type of value. The app won't ask the worker to enter any additional information during receiving.
-        - *Account number* – The system returns an account number to help identify the return order. This value could typically be the ID of the customer who is returning the items (the customer account number). The mobile app will ask the worker to scan or enter this number during receiving.
+        - *Return order* – The system creates a return order for each return. Select this value if you aren't using [Warehouse management only mode](wms-only-mode-overview.md).
+        - *Inbound shipment order* – The system creates an [inbound shipment order](wms-only-mode-using.md#inbound-shipment-orders) for each return. Select this value if you're using [Warehouse management only mode](wms-only-mode-overview.md).
 
-    - **Return order type** – This field is only available when **Return order identification** is shown and set to *Account number*. Like the account number, the value in this field is returned to the source system when registering the return order. It's intended to hold the name used to identify the document type for return orders in the source system. The way you use it depends on the needs of your external system (see the documentation for your external system). If you leave this field blank, then this setting is inherited from the relevant [source system configuration](wms-only-mode-unannounced-returns-setup.md#source-systems).
+    - **Return order identification** – This field is available only when the **Return process** field is set to *Blind return* and the **Create return order** field is set to *Inbound shipment order*. The way that you use it depends on the needs of your external system. (See the documentation for your external system.) Select the type of extra identifying information that the system should return to the source system when it registers a return order:
+
+        - *None* – The system doesn't return any extra identifying information, and the app doesn't prompt the worker to enter any extra information during receiving.
+        - *Account number* – The system returns an account number to help identify the return order. This value is typically the ID of the customer who is returning the items (the customer account number). The mobile app prompts the worker to scan or enter this number during receiving.
+
+    - **Return order type** – This field is available only when the **Return order identification** is available and set to *Account number*. Like the account number, the value in this field is returned to the source system when a return order is registered. It's intended to hold the name that identifies the document type for return orders in the source system. The way that you use it depends on the needs of your external system. (See the documentation for your external system.) If you leave this field blank, the value is inherited from the relevant [source system configuration](wms-only-mode-unannounced-returns-setup.md#source-systems).
 
     > [!IMPORTANT]
-    > If your source system is Dynamics 365 Supply Chain Management (as it would be when running an [external shared warehouse scenario](wms-only-mode-external-shared-warehouse.md)), then you must set the following values for your blind return policies:
+    > If your source system is Dynamics 365 Supply Chain Management (as is the case when you run an [external shared warehouse scenario](wms-only-mode-external-shared-warehouse.md)), you must set the following values for your blind return policies:
     >
-    > - **Return order identification** – Set to *Account number* and instruct workers to enter the customer ID (account number) when prompted by the mobile app during receiving.
-    > - **Return order type** – Set to  `Return` because that's the return order type used in Supply Chain Management (or leave it blank if `Return` is already specified as the default for the source system).
+    > - **Return order identification** – Select *Account number*, and instruct workers to enter the customer ID (account number) when the mobile app prompts them during receiving.
+    > - **Return order type** – Enter *Return*, which is the return order type that is used in Supply Chain Management. (Alternatively, if *Return* is already specified as the default return order type for the source system, leave this field blank.)
 
 1. If you support both types of unannounced return processes (*Return details* and *Blind return*), repeat this procedure to add a return item receiving policy for the other process.
 
