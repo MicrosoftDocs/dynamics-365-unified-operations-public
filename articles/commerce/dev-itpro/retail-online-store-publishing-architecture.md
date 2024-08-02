@@ -1,22 +1,23 @@
 ---
 title: Publish an online store catalog
-description: This article contains conceptual information to understand how catalogs are published from the Commerce module to an online store.
+description: This article contains conceptual information to understand how catalogs are published from the commerce module to a Microsoft Dynamics 365 Commerce online store.
 author: josaw1
-ms.date: 06/20/2017
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: asharchw
 ms.search.validFrom: 2020-02-28
-ms.dyn365.ops.version: AX 10.0.10
+ms.custom: 
+  - bap-template
 ---
 
 # Publish an online store catalog
 
 [!include [banner](../includes/banner.md)]
 
-This article contains conceptual information to understand how catalogs are published from the Commerce module to an online store.
+This article contains conceptual information to understand how catalogs are published from the commerce module to a Microsoft Dynamics 365 Commerce online store.
 
 ## Publish an online store catalog
 
