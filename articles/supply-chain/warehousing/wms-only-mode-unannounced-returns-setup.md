@@ -3,7 +3,6 @@ title: Enable and configure unannounced returns in Warehouse management only mod
 description: Learn how to set up Supply Chain Management to handle unannounced returns when you're using Warehouse management only mode. Most aspects of the unannounced returns process work the same way regardless of whether you're using Warehouse management only mode or not. This article highlights the differences.
 author: mq55qm
 ms.author: ivanma
-ms.topic: how-to
 ms.reviewer: kamaybac
 ms.search.form: WHSSourceSystem, WHSSourceSystemDispositionCode, WHSInboundShipmentOrder, WHSParameters, WHSInboundShipmentOrderMessage, WHSReturnItemReceivingPolicy
 ms.topic: how-to
@@ -38,7 +37,7 @@ For general information about how to set up source systems for use with Warehous
     - **Return order type** – Enter the name used to identify the document type for return orders in the source system. Refer to your external system's documentation to find this value.
   
     > [!IMPORTANT]
-    > If your source system is Dynamics 365 Supply Chain Management (as it would be when running an [external shared warehouse scenario](wms-only-mode-external-shared-warehouse)), then you must set **Return order type** to `Return` because that's the return order type used in Supply Chain Management.
+    > If your source system is Dynamics 365 Supply Chain Management (as it would be when running an [external shared warehouse scenario](wms-only-mode-external-shared-warehouse.md)), then you must set **Return order type** to `Return` because that's the return order type used in Supply Chain Management.
 
 1. On the **Outbound shipment orders** FastTab, set up unannounced returns options by making the following settings:
     - **Outbound shipment processing policy** – Select a policy that has **Enforce shipment to order matching** set to *Yes*. See also [Outbound shipment processing policies](outbound-load-handling.md#outbound-shipment-policies)
@@ -61,7 +60,7 @@ Return item receiving policies enable each menu item to process the return corre
 - **Return order type** – This field is visible when **Return order identification** is set to *Account number*. Like the account number, the value in this field is returned to the source system when registering the return with your external system. It's intended to hold the name used to identify the document type for return orders in the source system. The way you use it depends on the needs of your external system (see the documentation for your external system). If you leave this blank, then this setting will be inherited from the relevant [source system configuration](#source-systems).
 
 > [!IMPORTANT]
-> If your source system is Dynamics 365 Supply Chain Management (as it would be when running an [external shared warehouse scenario](wms-only-mode-external-shared-warehouse)), then you must set the following values for your blind return policies:
+> If your source system is Dynamics 365 Supply Chain Management (as it would be when running an [external shared warehouse scenario](wms-only-mode-external-shared-warehouse.md)), then you must set the following values for your blind return policies:
 >
 > - **Return order identification** – Set to *Account number* and instruct workers to enter the customer ID (account number) when prompted by the mobile app during receiving.
 > - **Return order type** – Set to `Return` because that's the return order type used in Supply Chain Management (or leave it blank if `Return` is already specified as the default for the [source system](#source-systems)).

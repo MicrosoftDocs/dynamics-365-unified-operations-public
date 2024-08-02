@@ -185,7 +185,7 @@ You must define the required return item receiving policies before you create th
     - **Return order type** – This field is only available when **Return order identification** is shown and set to *Account number*. Like the account number, the value in this field is returned to the source system when registering the return order. It's intended to hold the name used to identify the document type for return orders in the source system. The way you use it depends on the needs of your external system (see the documentation for your external system). If you leave this field blank, then this setting is inherited from the relevant [source system configuration](wms-only-mode-unannounced-returns-setup.md#source-systems).
 
     > [!IMPORTANT]
-    > If your source system is Dynamics 365 Supply Chain Management (as it would be when running an [external shared warehouse scenario](wms-only-mode-external-shared-warehouse)), then you must set the following values for your blind return policies:
+    > If your source system is Dynamics 365 Supply Chain Management (as it would be when running an [external shared warehouse scenario](wms-only-mode-external-shared-warehouse.md)), then you must set the following values for your blind return policies:
     >
     > - **Return order identification** – Set to *Account number* and instruct workers to enter the customer ID (account number) when prompted by the mobile app during receiving.
     > - **Return order type** – Set to  `Return` because that's the return order type used in Supply Chain Management (or leave it blank if `Return` is already specified as the default for the source system).
@@ -209,7 +209,7 @@ To enable workers to process unannounced returns, you must create a separate mob
     - **Generate license plate** – Set this option to *Yes* to automatically create new license plates as they're needed. Set it to *No* if the worker must always select an existing license plate.
     - **Display disposition code** – Select whether workers should be prompted to select a disposition code during the receiving process. The disposition code determines the inventory status, work template, and location directive for the returned items.
     - **Print label** – Set this option to *Yes* to always print a license plate label after all steps in the related work template are completed (regardless of whether a print step is included in the work template). If you want to allow the work template to print the license plate label at a different point in the process, set this option to *No*. The license plate label includes a bar code that provides the ID of the license plate where the worker places the returned items. For more information, see [License plate label layouts and printing](print-license-plate-labels-using-label-layouts.md).
-    - **Return item receiving policy ID** – Select the [item receiving policy](#create-return-item-receiving-policies) that you created for the type of return process (*Return details* and *Blind return*) that this menu item supports.
+    - **Return item receiving policy ID** – Select the [item receiving policy](#return-receive-policy) that you created for the type of return process (*Return details* and *Blind return*) that this menu item supports.
 
 1. If you support both types of unannounced return processes (*Return details* and *Blind return*), repeat steps 2 and 3 to create a menu item for the other process
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu**.
@@ -337,7 +337,7 @@ Follow these steps to create return item receiving policies for the scenarios.
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Return item receiving policies**.
 1. Add two return item receiving policies: one for the *Blind return* process and one for the *Return details* process.
 
-For more information, see the [Create return item receiving policies](#create-return-item-receiving-policies) section.
+For more information, see the [Create return item receiving policies](#return-receive-policy) section.
 
 #### Set up mobile device menu items and menus
 
@@ -355,7 +355,7 @@ Follow these steps to create mobile device menu items for the scenarios.
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu**.
 1. Add both menu items to an appropriate place in your mobile device menu structure.
 
-For more information, see the [Set up mobile device menu items](#set-up-mobile-device-menu-items) section.
+For more information, see the [Set up mobile device menu items](#mdmi) section.
 
 ## Example scenario 1: Customer return with a blind return policy
 
