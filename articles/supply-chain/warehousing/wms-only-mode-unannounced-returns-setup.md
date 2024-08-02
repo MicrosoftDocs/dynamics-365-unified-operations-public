@@ -1,6 +1,6 @@
 ---
 title: Enable and configure unannounced returns in Warehouse management only mode
-description: Learn how to set up Supply Chain Management to handle unannounced returns when you're using Warehouse management only mode. Most aspects of the unannounced returns process work the same way regardless of whether you're using Warehouse management only mode or not. This article highlights the differences.
+description: Learn how to set up Microsoft Dynamics 365 Supply Chain Management to handle unannounced returns when you use Warehouse management only mode. This article highlights aspects of the unannounced returns process that work differently, depending on whether you use Warehouse management only mode.
 author: mq55qm
 ms.author: ivanma
 ms.reviewer: kamaybac
@@ -15,58 +15,61 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to set up Supply Chain Management to handle unannounced returns when you're using Warehouse management only mode. Most aspects of the unannounced returns process work the same way regardless of whether you're using Warehouse management only mode or not. This article highlights the differences. For more information about the unannounced returns process and how to set it up, see [Receive unannounced sales returns](sales-returns-unannounced.md).
+This article explains how to set up Microsoft Dynamics 365 Supply Chain Management to handle unannounced returns when you use Warehouse management only mode. Most aspects of the unannounced returns process work in the same way, regardless of whether you use Warehouse management only mode. This article highlights the differences. Learn more about the unannounced returns process and how to set it up in [Receive unannounced sales returns](sales-returns-unannounced.md).
 
 ## Prerequisites
 
-To use the features described in this article, your system must meet the following requirements:
+Before you can use the features that are described in this article, your system must meet the following requirements:
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.41 or later.
+- You must be running Supply Chain Management version 10.0.41 or later.
 
 ## <a name="source-systems"></a>Set up source systems
 
-To use Warehouse management only mode, you must have at least one *source system* set up. Each source system record configures the way a specific external system integrates with Supply Chain Management in Warehouse management only mode.
+To use Warehouse management only mode, you must have at least one *source system*. Each source system record configures the way that a specific external system integrates with Supply Chain Management in Warehouse management only mode.
 
-For general information about how to set up source systems for use with Warehouse management only mode, see [Configure your source systems](wms-only-mode-setup.md#source-systems). The following procedure highlights the settings that are important for setting up unannounced returns.
+In [Configure your source systems](wms-only-mode-setup.md#source-systems), you can find general information about how to set up source systems so that they can be used with Warehouse management only mode. The following procedure highlights the settings that are important for unannounced returns.
 
 1. Go to **Warehouse management** \> **Setup** \> **Warehouse management integration** \> **Source systems**.
-1. Either select the source system you want to set up from the list pane or create a new one. 
-1. On the **Inbound shipment orders** FastTab, set up unannounced returns options by making the following settings:
-    - **Enable returns process** – Set to *Yes*.
-    - **Number sequence code** – Select the number sequence that should be used to generate order numbers for inbound shipment orders created during the returns process.
-    - **Return order type** – Enter the name used to identify the document type for return orders in the source system. Refer to your external system's documentation to find this value.
-  
-    > [!IMPORTANT]
-    > If your source system is Dynamics 365 Supply Chain Management (as it would be when running an [external shared warehouse scenario](wms-only-mode-external-shared-warehouse.md)), then you must set **Return order type** to `Return` because that's the return order type used in Supply Chain Management.
+1. In the list pane, select the source system that you want to set up. Alternatively, create a new source system 
+1. On the **Inbound shipment orders** FastTab, set the following fields to configure the options for unannounced returns:
 
-1. On the **Outbound shipment orders** FastTab, set up unannounced returns options by making the following settings:
-    - **Outbound shipment processing policy** – Select a policy that has **Enforce shipment to order matching** set to *Yes*. See also [Outbound shipment processing policies](outbound-load-handling.md#outbound-shipment-policies)
-    - **Enable return details creation** – If you're using return details receiving, set this to *Yes*. If you only use blind returns, then you can save system resources by setting this to *No*.
+    - **Enable returns process** – Set this option to *Yes*.
+    - **Number sequence code** – Select the number sequence that should be used to generate order numbers for inbound shipment orders that are created during the returns process.
+    - **Return order type** – Enter the name that identifies the document type for return orders in the source system. To find the value, consult your external system's documentation.
+
+    > [!IMPORTANT]
+    > If your source system is Dynamics 365 Supply Chain Management (as is the case when you run an [external shared warehouse scenario](wms-only-mode-external-shared-warehouse.md)), you must set the **Return order type** field to *Return*, which is the return order type that is used in Supply Chain Management.
+
+1. On the **Outbound shipment orders** FastTab, set the following fields to configure the options for unannounced returns:
+
+    - **Outbound shipment processing policy** – Select a policy where the **Enforce shipment to order matching** option is set to *Yes*. Learn more in [Outbound shipment processing policies](outbound-load-handling.md#outbound-shipment-policies).
+    - **Enable return details creation** – If you use return details receiving, set this option to *Yes*. If you use only blind returns, you can save system resources by setting this option to *No*.
 
 ## Set up return item receiving policies and mobile device menu items
 
-To enable workers to process unannounced returns in the warehouse, you must set up mobile device menu items and return item receiving policies. The required settings are nearly the same as those used for [receiving unannounced returns](sales-returns-unannounced.md) without Warehouse management only mode; this section points out the differences.
+To enable workers to process unannounced returns in the warehouse, you must set up mobile device menu items and return item receiving policies. The required settings are almost the same as the settings for [receiving unannounced returns](sales-returns-unannounced.md) without Warehouse management only mode. This section points out the differences.
 
 ### Return item receiving policies
 
-Return item receiving policies enable each menu item to process the return correctly. You set them up by going to **Warehouse management** \> **Setup** \> **Mobile device** \> **Return item receiving policies**. Policies for use with Warehouse management only mode must use the following settings:
+Return item receiving policies enable each menu item to process the return correctly. You set them up by going to **Warehouse management** \> **Setup** \> **Mobile device** \> **Return item receiving policies**. Policies that are used with Warehouse management only mode must have the following settings:
 
-- **Return process** – Set to either *Blind return* or *Return details*, depending on the type of return your menu item should process.
-- **Create return order** – Set to *Inbound shipment order*.
-- **Return order identification** – This field is visible when **Return process** is set to *Blind return*. Set it to one of the following values
-    - *None* – The system doesn't return any extra identifying information when registering return orders with your external system. The app won't ask the worker to enter any additional information during receiving.
-    - *Account number* – When Supply Chain Management registers the return with your external system, it returns an account number to help identify the return order. The way you use it depends on the needs of your external system (see the documentation for your external system). This could typically be the ID of the customer who is returning the items (their customer account number). The mobile app will ask the worker to scan or enter this number during receiving.
+- **Return process** – Select either *Blind return* or *Return details*, depending on the type of return that your menu item should process.
+- **Create return order** – Select *Inbound shipment order*.
+- **Return order identification** – This field is available only when the **Return process** field is set to *Blind return*. Select the type of extra identifying information that the system should return when it registers a return order with your external system:
 
-- **Return order type** – This field is visible when **Return order identification** is set to *Account number*. Like the account number, the value in this field is returned to the source system when registering the return with your external system. It's intended to hold the name used to identify the document type for return orders in the source system. The way you use it depends on the needs of your external system (see the documentation for your external system). If you leave this blank, then this setting will be inherited from the relevant [source system configuration](#source-systems).
+    - *None* – The system doesn't return any extra identifying information, and the app doesn't prompt the worker to enter any additional information during receiving.
+    - *Account number* – When Supply Chain Management registers a return with your external system, it returns an account number to help identify the return order. The way that you use this value depends on the needs of your external system. (See the documentation for your external system.) It's typically the ID of the customer who is returning the items (their customer account number). The mobile app prompts the worker to scan or enter this number during receiving.
+
+- **Return order type** – This field is available only when the **Return order identification** field is set to *Account number*. Like the account number, the value in this field is returned to the source system when a return is registered with your external system. It's intended to hold the name that identifies the document type for return orders in the source system. The way that you use it depends on the needs of your external system. (See the documentation for your external system.) If you leave this field blank, the value is inherited from the relevant [source system configuration](#source-systems).
 
 > [!IMPORTANT]
-> If your source system is Dynamics 365 Supply Chain Management (as it would be when running an [external shared warehouse scenario](wms-only-mode-external-shared-warehouse.md)), then you must set the following values for your blind return policies:
+> If your source system is Dynamics 365 Supply Chain Management (as is the case when you run an [external shared warehouse scenario](wms-only-mode-external-shared-warehouse.md)), you must set the following values for your blind return policies:
 >
-> - **Return order identification** – Set to *Account number* and instruct workers to enter the customer ID (account number) when prompted by the mobile app during receiving.
-> - **Return order type** – Set to `Return` because that's the return order type used in Supply Chain Management (or leave it blank if `Return` is already specified as the default for the [source system](#source-systems)).
+> - **Return order identification** – Select *Account number*, and instruct workers to enter the customer ID (account number) when the mobile app prompts them during receiving.
+> - **Return order type** – Enter *Return*, which is the return order type that is used in Supply Chain Management. (Alternatively, if *Return* is already specified as the default return order type for the [source system](#source-systems), leave this field blank.)
 
-For more information, see [Create return item receiving policies](sales-returns-unannounced.md#return-receive-policy).
+Learn more in [Create return item receiving policies](sales-returns-unannounced.md#return-receive-policy).
 
 ### Mobile device menu items
 
-Follow the instructions given in [Set up mobile device menu items to process unannounced returns](sales-returns-unannounced.md#mdmi) to create the mobile device menu items you'll need. Be sure to configure each of them to use a return item receiving policy set up as described in the previous section.
+To create the mobile device menu items that you need, follow the instructions in [Set up mobile device menu items to process unannounced returns](sales-returns-unannounced.md#mdmi). Be sure to configure each menu item so that it uses a return item receiving policy that was set up as described in the previous section.
