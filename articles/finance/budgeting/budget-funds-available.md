@@ -2,10 +2,10 @@
 title: Budget funds available
 description: Learn about the budget funds available parameter and how to configure budget control to optimize management of your organization's financial resources.
 author: mibeinar
-ms.author: rcarlson
+ms.author: music727
 ms.topic: article
 ms.date: 07/24/2024
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
 ms.search.region: Global
@@ -20,7 +20,7 @@ ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This article explains functionality of the **Only track amounts in the budget funds available calculation** parameter and provides information that can help you configure budget control to optimize management of your organization's financial resources.
+This article explains the **Only track amounts in the budget funds available calculation** parameter and provides information that helps you configure budget control to optimize management of your organization's financial resources.
 
 ## Enhanced calculation parameter for budget funds available
 
@@ -34,6 +34,6 @@ Some budget control configuration options must have specific settings for this p
 | Budget reservations for encumbrances | Actual expenditures |
 | Budget reservations for encumbrances with Purchase Requisition type documents | Budget reservations for pre-encumbrances |
 
-This parameter affects only new documents as well as new budget control configurations during activation. Amounts for existing documents will continue to be tracked and shown in the budget control statistics inquiry until a budget funds available setting is changed and the new budget control configuration is activated. At that point, budget tracking data will be removed for documents that were removed from the budget funds available calculation. If you try to activate new budget control configuration that does not align with the requirements defined in the table above, the error message will pop-up. 
+This parameter affects only new documents as well as new budget control configurations during activation. Amounts for existing documents will continue to be tracked and shown in the budget control statistics inquiry until a budget funds available setting is changed and the new budget control configuration is activated. At that point, budget tracking data will be removed for documents that were removed from the budget funds available calculation. If you try to activate new budget control configuration that doesn't align with the requirements defined in the table above, an error message will appear. 
 
 We recommend that you leave the **Unposted actual expenditures** option cleared. If it's selected, a time-consuming budget control calculation will be done on unposted documents, such as pending vendor invoices.
