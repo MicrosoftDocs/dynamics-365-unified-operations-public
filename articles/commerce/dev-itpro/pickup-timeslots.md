@@ -2,16 +2,15 @@
 title: Create and update time slots for customer pickup
 description: This article describes how to create, configure, and update customer pickup time slots in Commerce headquarters.
 author: anupamar-ms
-ms.date: 01/05/2020
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: anupamar
+ms.author: asharchw
 ms.search.validFrom: 2020-09-20
-ms.dyn365.ops.version: Retail 10.0.15 update
 ms.custom: 
-ms.search.industry: Retail
+  - bap-template
 ---
 
 # Create and update time slots for customer pickup
