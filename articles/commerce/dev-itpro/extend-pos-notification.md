@@ -2,15 +2,15 @@
 title: Show custom notifications in the POS
 description: This article explains how to add custom notifications in the point of sale (POS).
 author: josaw1
-ms.date: 02/01/2023
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: anvenkat
 ms.search.validFrom: 2019-09-2019
-ms.dyn365.ops.version: AX 10.0.5
-ms.assetid: 
+ms.custom: 
+  - bap-template
 ---
 
 # Show custom notifications in the POS

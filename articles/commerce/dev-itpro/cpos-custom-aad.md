@@ -4,14 +4,15 @@
 title: Configure Store Commerce for web to use a custom Microsoft Entra app
 description: This article explains how to configure Microsoft Dynamics 365 Commerce Store Commerce for web to use a custom Microsoft Entra app.
 author: boycez
-ms.date: 01/30/2023
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: IT Pro
-ms.reviewer: josaw
-ms.search.region: global
-ms.author: boycez
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
+ms.author: anvenkat
 ms.search.validFrom: 2017-06-20
-
+ms.custom: 
+  - bap-template
 ---
 
 # Configure Store Commerce for web to use a custom Microsoft Entra app
