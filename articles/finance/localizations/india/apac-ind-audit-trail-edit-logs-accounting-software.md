@@ -1,17 +1,14 @@
 ---
 title: Audit trail and edit logs for accounting software
 description: Learn about the new Indian tax legislation guidelines for accounting software, including overviews on legislation and compliance.
-author: EricWangChen
-ms.author: wangchen
-ms.topic: article
-ms.date: 10/20/2023
-ms.custom:
+author: liza-golub
+ms.author: egolub
+ms.topic: conceptual
+ms.date: 08/02/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak 
-audience: Application User
 ms.search.region: India
-ms.search.validFrom:
-ms.search.form: 
-ms.dyn365.ops.version: 
 ---
 
 # Audit trail and edit logs for accounting software
@@ -127,7 +124,7 @@ The information in the electronic record of the document is shown in Finance. Th
 
 There is a proper system for storing, retrieving, displaying, and printing the electronic records. These electronic records must not be disposed of or rendered unusable unless those actions are permitted by law. Provided that a backup of the company's books of accounts and other books and papers is maintained in electronic mode, even in a location that is outside India, it will be kept on servers that are physically located in India.
 
-Finance can be deployed into a subset of Azure datacenters by using Microsoft Dynamics Lifecycle Services (LCS). Azure is generally available in datacenters and geographical locations around the world. Finance lets customers specify the region or datacenter where their customer data will be stored. Although Microsoft might replicate data to other regions for data durability, customer data won't be replicated or moved outside the geographical location.
+Finance can be deployed into a subset of Azure datacenters by using Microsoft Dynamics Lifecycle Services. Azure is generally available in datacenters and geographical locations around the world. Finance lets customers specify the region or datacenter where their customer data will be stored. Although Microsoft might replicate data to other regions for data durability, customer data won't be replicated or moved outside the geographical location.
 Microsoft provides business continuity and disaster recovery for production instances of Dynamics 365 software as a service (SaaS) applications if an Azure region-wide outage occurs. Paired regions reside within the same geography as their enabled set to meet data residency requirements for tax and law enforcement jurisdiction purposes. For more information, see [Business continuity and disaster recovery](/power-platform/admin/business-continuity-disaster-recovery).
 
 ### Compliance 6: Information for filling of annual financial statement
@@ -145,11 +142,11 @@ This information is protected by server security. We don't recommend that you in
 
 #### Requirement
 
-The Ministry of Corporate Affairs (MCA) in India introduced amendments to Rule 3 of the Companies (Accounts) Rules. These changes specifically pertain to the maintenance of books of accounts in electronic form. The key modifications are as follows:
+The Ministry of Corporate Affairs (MCA) in India introduced amendments to Rule 3 of the Companies (Accounts) rules. These changes specifically pertain to the maintenance of books of accounts in electronic form. The key modifications are as follows:
 
 **I. Accessibility requirement**: Amended *Rule 3 (1)* emphasizes that books of accounts and other relevant documents maintained in electronic mode must remain accessible within India at all times for subsequent reference.
 
-**II. Daily backup requirement**: Under the amended *Rule 3 (5)*, companies are now mandated to maintain a daily backup of their electronic books of accounts and other relevant documents on servers physically located in India, even if backups are also maintained outside the country.
+**II. Daily backup requirement**: Under the amended *Rule 3 (5)*, companies are mandated to maintain a daily backup of their electronic books of accounts and other relevant documents on servers physically located in India, even if backups are also maintained outside the country.
 
 **III. Annual intimation requirement**: *Rule 3 (6)* requires companies to inform the Registrar annually, during the filing of financial statements, about details such as the service provider’s name, internet protocol address, and location. If books of accounts are maintained on the cloud, the address provided by the service provider must also be disclosed.
 
@@ -161,23 +158,17 @@ The books of accounts and other relevant documents that are maintained in electr
 
 ##### II. Daily backup requirement
 
-To use a finance and operations application, a finance and operations apps environment must be deployed through [Dynamics Lifecycle Services](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide) (LCS). Finance and operations apps environments are deployed in a defined region or datacenter where customer data will be stored. Companies using finance and operations apps choose where to deploy their environments when they create the environment through LCS. Although Microsoft might replicate data to other regions for data durability, customer data won't be replicated or moved outside the geographical location. For more information, see [Azure paired](https://learn.microsoft.com/en-us/azure/reliability/cross-region-replication-azure#azure-paired-regions) regions. The specific activities required to meet the daily backup requirement may vary based on the chosen geographical location (whether inside or outside of India) for finance and operations apps environment deployment. 
+To use a finance and operations application, a finance and operations apps environment must be deployed through [Dynamics Lifecycle Services](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide). Finance and operations apps environments are deployed in a defined region or datacenter where customer data is stored. Companies using finance and operations apps choose where to deploy their environments when they create the environment through Lifecucle Services. Although Microsoft might replicate data to other regions for data durability, customer data won't be replicated or moved outside the geographical location. For more information, see [Azure paired](https://learn.microsoft.com/en-us/azure/reliability/cross-region-replication-azure#azure-paired-regions) regions. The specific activities required to meet the daily backup requirement may vary based on the chosen geographical location (whether inside or outside of India) for finance and operations apps environment deployment. 
 
 ###### Finance and operations apps environments that are deployed in India
 
-•	Finance and operations apps provide that the backup of the books of accounts and other books and papers of the company that are maintained in electronic mode in finance and operations apps are kept in servers that are physically located in India.
-
-•	A customer’s representative with an administrator role in a finance and operations apps tenant (administrators) can check where the database is deployed through LCS, by looking at the **Database backup location** field.
-
-•	Microsoft provides business continuity and disaster recovery for production instances of the finance and operations apps SaaS application if an Azure region-wide outage occurs.
-
-•	Databases are protected by Microsoft Power Platform’s automatic backups of production environments that are kept for up to 28 days. For more information, see [Back up and restore environments](https://learn.microsoft.com/en-us/power-platform/admin/backup-restore-environments). The underlying technology used is Azure SQL Database. For more information, see the SQL Database documentation [Automated backups for details](https://learn.microsoft.com/en-us/azure/sql-database/sql-database-automated-backups). 
-
-•	Administrators can view evidence about which finance and operations apps environments have daily backups enabled and may capture a screenshot of this on a daily basis to create a log of such evidence.
-
-•	Administrators in LCS may use the Environment Metadata API to create a log of evidence pertaining to the database backup location and daily backups enabled status on a daily basis. For more information, see [Fetch environment metadata](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/api/v1/reference-environment-metadata). This can be done using any software which supports HTTP and RESTful APIs.
-
-•	Administrators can restore their environments to a specific point in time in the past by using LCS. For more information, see [Database point-in-time restore (PITR)](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/database/database-point-in-time-restore).
+- Finance and operations apps provide that the backup of the books of accounts and other books and papers of the company that are maintained in electronic mode in finance and operations apps are kept in servers that are physically located in India.
+- A customer’s representative with an administrator role in a finance and operations apps tenant (administrators) can check where the database is deployed through Lifecycle Services, by looking at the **Database backup location** field.
+- Microsoft provides business continuity and disaster recovery for production instances of the finance and operations apps SaaS application if an Azure region-wide outage occurs.
+- Databases are protected by Microsoft Power Platform’s automatic backups of production environments that are kept for up to 28 days. For more information, see [Back up and restore environments](https://learn.microsoft.com/en-us/power-platform/admin/backup-restore-environments). The underlying technology used is Azure SQL Database. For more information, see the SQL Database documentation [Automated backups for details](https://learn.microsoft.com/en-us/azure/sql-database/sql-database-automated-backups). 
+- Administrators can view evidence about which finance and operations apps environments have daily backups enabled and may capture a screenshot of this daily to create a log of such evidence.
+- Administrators in Lifecycle Services may use the Environment Metadata API to create a log of evidence pertaining to the database backup location and daily backups enabled status on a daily basis. For more information, see [Fetch environment metadata](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/api/v1/reference-environment-metadata). This can be done using any software which supports HTTP and RESTful APIs.
+- Administrators can restore their environments to a specific point in time in the past by using Lifecycle Services. For more information, see [Database point-in-time restore (PITR)](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/database/database-point-in-time-restore).
 
 ![Manage environment.](../media/manage-environment.png)
 
@@ -219,10 +210,10 @@ This service allows selecting both standard and custom finance and operations en
 
 The company shall intimate to the Registrar on an annual basis at the time of filing of financial statement:
 
-a)	The name of the service provider.
-b)	The internet protocol address of service provider.
-c)	The location of the service provider (wherever applicable).
-d)	Where the books of accounts and other books and papers are maintained on cloud, such address as provided by the service provider.
-e)	Where the service provider is located outside India, the name and address of the person in control of the books of account and other books and papers in India.
+- The name of the service provider.
+- The internet protocol address of service provider.
+- The location of the service provider (wherever applicable).
+- Where the books of accounts and other books and papers are maintained on cloud, such address as provided by the service provider.
+- Where the service provider is located outside India, the name and address of the person in control of the books of account and other books and papers in India.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
