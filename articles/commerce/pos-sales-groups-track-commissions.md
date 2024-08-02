@@ -1,22 +1,24 @@
 ---
 title: Track commissions in the point of sale (POS) by using sales groups
-description: It's a common retail practice to track sales by the associate who worked with the customer—providing assistance, up-selling, cross-selling, and processing the transaction.
+description: This article describes how to track commissions in the point of sale (POS) by using sales groups in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 06/20/2017
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: josaw
-ms.search.region: global
-ms.author: josaw
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
+ms.author: anvenkat
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
 ms.assetid: 7cd68ecc-cc09-48ab-8cb8-48d5c304effa
-ms.search.industry: Retail
+ms.custom: 
+  - bap-template
 ---
 
 # Track commissions in the point of sale (POS) by using sales groups
 
 [!include [banner](includes/banner.md)]
+
+This article describes how to track commissions in the point of sale (POS) by using sales groups in Microsoft Dynamics 365 Commerce.
 
 It's a common retail practice to track sales by the associate who worked with the customer by—providing assistance, up-selling, cross-selling, and processing the transaction.
 
