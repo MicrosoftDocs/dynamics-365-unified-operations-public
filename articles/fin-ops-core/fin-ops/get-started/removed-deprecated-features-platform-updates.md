@@ -26,6 +26,21 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that are changed or removed in each version of finance and operations apps.
 
+
+## Feature deprecation effective October 2024
+
+### Platform is changing the authentication protocol from password based auth to Entra Id based authentication for 10.0.39 and greater releases.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Improve platform security and remove dependency on password-based authentication. |
+| **Replaced by another feature?**   | Entra Id based authentication. |
+| **What do you need to do?**         | This can impact the following set of functionalities. |
+| **Product areas affected**         | Finance and operations apps |
+| **Deployment option**              | All |
+| **Status**                         | End of support date is Oct 2024 starting with 10.0.39 (PU63) and greater releases. |
+
+
 ## Feature deprecation effective July 2024
 
 ### Azure Active Directory Graph to Microsoft Graph Migration
