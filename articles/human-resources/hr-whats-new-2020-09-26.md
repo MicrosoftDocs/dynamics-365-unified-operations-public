@@ -13,7 +13,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang:
 # ms.tgt_pltfrm:
-ms.custom:
+ms.custom: evergreen
 ms.assetid:
 ms.search.region: Global
 # ms.search.industry:
