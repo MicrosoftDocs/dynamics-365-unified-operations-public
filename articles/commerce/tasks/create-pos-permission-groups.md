@@ -7,7 +7,7 @@ ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: advenkat
+ms.author: anvenkat
 ms.search.validFrom: 2016-06-30
 ms.search.form: RetailPosPermissionGroup, HcmJob
 ms.custom: 
