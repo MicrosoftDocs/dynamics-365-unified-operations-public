@@ -1,22 +1,22 @@
 ---
-title: Configure unannounced returns in Warehouse management only mode
-description: Learn how to set up unannounced returns when you're using Warehouse management only mode. Most aspects of the unannounced returns process work the same way regardless of whether you're using Warehouse management only mode or not. This article highlights the differences.
+title: Enable and configure unannounced returns in Warehouse management only mode
+description: Learn how to set up Supply Chain Management to handle unannounced returns when you're using Warehouse management only mode. Most aspects of the unannounced returns process work the same way regardless of whether you're using Warehouse management only mode or not. This article highlights the differences.
 author: mq55qm
 ms.author: ivanma
 ms.topic: how-to
 ms.reviewer: kamaybac
 ms.search.form: WHSSourceSystem, WHSSourceSystemDispositionCode, WHSInboundShipmentOrder, WHSParameters, WHSInboundShipmentOrderMessage, WHSReturnItemReceivingPolicy
 ms.topic: how-to
-ms.date: 08/01/2024
+ms.date: 08/05/2024
 ms.custom: 
   - bap-template
 ---
 
-# Configure unannounced returns in Warehouse management only mode
+# Enable and configure unannounced returns in Warehouse management only mode
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to set up unannounced returns when you're using Warehouse management only mode. Most aspects of the unannounced returns process work the same way regardless of whether you're using Warehouse management only mode or not. This article highlights the differences. For more information about the unannounced returns process and how to set it up, see [Receive unannounced sales returns](sales-returns-unannounced.md).
+This article explains how to set up Supply Chain Management to handle unannounced returns when you're using Warehouse management only mode. Most aspects of the unannounced returns process work the same way regardless of whether you're using Warehouse management only mode or not. This article highlights the differences. For more information about the unannounced returns process and how to set it up, see [Receive unannounced sales returns](sales-returns-unannounced.md).
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ To use the features described in this article, your system must meet the followi
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.41 or later.
 
-## <a name="source-systems"></a>Configure source systems
+## <a name="source-systems"></a>Set up source systems
 
 To use Warehouse management only mode, you must have at least one *source system* set up. Each source system record configures the way a specific external system integrates with Supply Chain Management in Warehouse management only mode.
 
