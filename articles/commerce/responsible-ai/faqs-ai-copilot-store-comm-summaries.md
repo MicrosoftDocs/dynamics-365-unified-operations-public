@@ -31,7 +31,7 @@ This AI feature uses the advanced capabilities of [Azure OpenAI Service](/azure/
 
 The intended use is to give users immediate access to a relevant summary of an entity, so that they can make faster, better decisions.
 
-- **Report insights**: Generates narrative summaries for channel reports to provide insights into sales and performance metrics. Enhances accuracy and offers real-time analysis. Provides customizable prompts for tailored report generation.
+- **Report insights**: Generates narrative summaries for channel reports to provide insights into sales and performance metrics. Enhances accuracy and offers real-time analysis. 
 - **Customer insights**: Helps store associates create personalized interactions by summarizing customer transactional activity, interactions, and profile data. Empowers associates through a deeper understanding of customers and enables them to provide personalized recommendations.
 - **Product insights**: Helps store associates drive product sales by providing description, top benefits, inventory, and discount information. Helps associates cross-sell related products to deliver on the sales strategy and boost the customer experience.
 
