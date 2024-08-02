@@ -178,7 +178,7 @@ If finance and operations apps environment is deployed outside of India, to fulf
 
 **Option (1). Geo to geo migration.**
 
-In certain conditions company, operating in India and having their finance and operations apps environment deployed outside of India, to fulfill the daily backup requirement, can consider migrating finance and operations apps environment that have Indian legal entity to a datacenter in India. For more information, see [Geo to geo migration overview](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations). When a finance and operations apps environment containing data necessary to fulfill the daily backup requirement migrated to a datacenter in India, the approach described in “Finance and operations apps environments that are deployed in India” section is applicable.
+In certain conditions company, operating in India and having their finance and operations apps environment deployed outside of India, to fulfill the daily backup requirement, can consider migrating finance and operations apps environment that have Indian legal entity to a datacenter in India. For more information, see [Geo to geo migration overview](/dynamics365/fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations). When a finance and operations apps environment containing data necessary to fulfill the daily backup requirement migrated to a datacenter in India, the approach described in “Finance and operations apps environments that are deployed in India” section is applicable.
 
 **Option (2). Multi-instance installation.**
 
