@@ -2,7 +2,7 @@
 title: Support for network peripherals
 description: This article provides an overview of network peripherals supported by the Microsoft Dynamics 365 Commerce Store Commerce apps for Windows, Android, and iOS.
 author: ritakimani1
-ms.date: 07/11/2024
+ms.date: 08/02/2024
 ms.topic: overview
 audience: IT Pro
 ms.reviewer: v-chrgriffin
