@@ -4,7 +4,7 @@ description: The global address book can help you understand the relationships a
 author: msftbrking
 ms.author: anisagrawal
 ms.topic: overview
-ms.date: 07/25/2019
+ms.date: 08/05/2024
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: IT Pro
@@ -23,6 +23,8 @@ The global address book is a centralized repository for master data that must be
 
 - The data shows the relationships that people and organizations have with other areas of the company. The relationship between two organizations changes when one organization has multiple roles, such as vendor and customer. Communication between the two organization also changes. There might be special agreements that can be negotiated to encourage a closer partnership with the other organization.
 - Setup and maintenance are easier. For example, when an address changes, the update must be made in only one place. All the other associated records are updated automatically.
+
+Any party in the global address book that's a legal entity, can't be deleted from the global address book. The **Delete** button is unavailable for these parties. 
 
 ## How the global address book works
 
