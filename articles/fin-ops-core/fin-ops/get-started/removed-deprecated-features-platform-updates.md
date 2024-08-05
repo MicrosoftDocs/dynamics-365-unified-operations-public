@@ -6,7 +6,7 @@ ms.author: twheeloc
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.date: 07/25/2024
+ms.date: 08/05/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-02-29
@@ -35,7 +35,7 @@ Detailed information about objects in finance and operations apps can be found i
 |------------|--------------------|
 | **Reason for deprecation/removal** | Improve platform security and remove dependency on password-based authentication. |
 | **Replaced by another feature?**   | Entra Id based authentication. |
-| **What do you need to do?**         | This can impact the following set of functionalities. |
+| **What do you need to do?**        | This can impact the following set of functionalities. <br><br> 1. The SQL Connection string acquired by 3rd party code which is not using any platforms public API present in platform. <br> <br>Recommendation: Switch to public API rather than reading it directly from config. <br><br> 2. Long running transactions which are running over multiple hours.<br><br>    Recommendation: Reduce the time for which the connection is opened and keep the transactions as short lived as possible. <br><br>  NOTE: LBD and CHE environment will still use password-based auth. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
 | **Status**                         | End of support date is Oct 2024 starting with 10.0.39 (PU63) and greater releases. |
