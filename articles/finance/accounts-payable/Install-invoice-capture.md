@@ -73,7 +73,7 @@ When the invoice journal is selected, the **Invoice journal name** column in the
 
 In Dynamics 365 Finance release version 10.0.38 and later, the **Invoice capture** tile is available on the home page. The **Invoice capture for Dynamics 365 finance and operations** feature controls whether the tile is displayed.
 
-When Invoice capture isn't installed in the integrated Power Platform environment, the tile goes to the installation page of Dynamics 365 Finance. When Invoice capture is installed, the tile goes to the Invoice capture home page. The **Enable Finance and Operations User Impersonation in Dataverse** option at **Environment settings \> Product \> Feature** must be enabled beforehand.
+When Invoice capture isn't installed in the integrated Power Platform environment, the tile goes to the installation page of Dynamics 365 Finance. When Invoice capture is installed, the tile goes to the Invoice capture home page.
 
 ## Install and set up the solution
 
