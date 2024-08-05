@@ -6,7 +6,7 @@ ms.author: twheeloc
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.date: 07/25/2024
+ms.date: 08/05/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-02-29
@@ -25,6 +25,21 @@ This article describes features that are removed, or that are planned for remova
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
 Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that are changed or removed in each version of finance and operations apps.
+
+
+## Feature deprecation effective October 2024
+
+### Platform is changing the authentication protocol from password based auth to Microsoft Entra ID based authentication for 10.0.39 and greater releases.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Improve platform security and remove dependency on password-based authentication. |
+| **Replaced by another feature?**   | Microsoft Entra ID based authentication. |
+| **What do you need to do?**        | This can impact the following set of functionalities. <br><br> 1. The SQL Connection string acquired by third-party code that isn't using any platforms public API present in platform. <br> <br>**Recommendation**: Switch to public API rather than reading it directly from config. <br><br> 2. Long-running transactions that run for several hours.<br><br> **Recommendation**: Reduce the time the connection is opened and keep the transactions as short-lived as possible. <br><br>  NOTE: LBD and CHE environments still use password-based authentication. |
+| **Product areas affected**         | Finance and operations apps |
+| **Deployment option**              | All |
+| **Status**                         | End of support date is Oct 2024 starting with 10.0.39 (PU63) and greater releases. |
+
 
 ## Feature deprecation effective July 2024
 
@@ -56,7 +71,7 @@ Detailed information about objects in finance and operations apps can be found i
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | To enhance the security and performance of finance and operations apps, we're announcing the deprecation of support for unregistered Microsoft account users and external Microsoft Entra users in finance and operations apps. |
-| **What is changing?**   | If a [Microsoft account](/entra/external-id/microsoft-account) or [Microsoft Entra ID account](/entra/external-id/default-account) isn't registered in your Microsoft Entra ID tenant, you won't be able to access finance and operations apps. You receive the following error message: "AADSTS50020: user account '`contoso@contoso.com`;' from identity provider '`https://sts.windows.net/{tenant ID}/`' doesn't exist in tenant '\{tenant name\}' and can't access the application '\{application ID\}'(Finance and operations environment name) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Microsoft Entra ID user account." The user is blocked at the Microsoft Entra ID tenant level. This change doesn't affect granular delegated admin permissions (GDAP) or CSP users. |
+| **What is changing?**   | If a [Microsoft account](/entra/external-id/microsoft-account) or [Microsoft Entra ID account](/entra/external-id/default-account) isn't registered in your Microsoft Entra ID tenant, you aren't able to access finance and operations apps. You receive the following error message: "AADSTS50020: user account '`contoso@contoso.com`;' from identity provider '`https://sts.windows.net/{tenant ID}/`' doesn't exist in tenant '\{tenant name\}' and can't access the application '\{application ID\}'(Finance and operations environment name) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Microsoft Entra ID user account." The user is blocked at the Microsoft Entra ID tenant level. This change doesn't affect granular delegated admin permissions (GDAP) or CSP users. |
 | **What do you need to do?**         | If a user who isn't part of your Microsoft Entra requires access to finance and operations apps, that user must be added to the Microsoft Entra ID tenant as an external user or guest user. For more information, see [B2B collaboration overview](/entra/external-id/what-is-b2b/). |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
@@ -137,7 +152,7 @@ Migrating to SHA256 is straightforward: You need to use signature version 2 or k
 | **Replaced by another feature?**   | Customers who use the Exchange email provider should migrate to the Microsoft Graph email provider. For more information, see [Configure and send email](../../dev-itpro/organization-administration/configure-email.md). |
 | **Product areas affected**         | System administration  |
 | **Deployment option**              | All |
-| **Status**                         | The Exchange email provider will stop sending emails as of September 15, 2024. |
+| **Status**                         | The Exchange email provider stops sending emails as of September 15, 2024. |
 
 ## Feature deprecation effective October 2022
 
@@ -245,7 +260,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Replaced by another feature?**   | No, customers and ISVs should consider reimplementing their solutions based on X++ language, in place of XSLT scripting. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated <br><br>**Exception:** Customers who are currently using XLST scripting can continue to use it until they update to version 10.0.30 or later. For earlier versions, the exception will expire effective January 31, 2023. Customers with this exception have received a notification in the Message center available in the Microsoft 365 Admin Center. |
+| **Status**                         | Deprecated <br><br>**Exception:** Customers who are currently using XLST scripting can continue to use it until they update to version 10.0.30 or later. For earlier versions, the exception expires effective January 31, 2023. Customers with this exception have received a notification in the Message center available in the Microsoft 365 Admin Center. |
 
 ## Feature removal effective October 2021
 
@@ -315,7 +330,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Replaced by another feature?**   | Not currently, although we may consider adding presence from Teams in the future.|
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated. The **Skype enabled** setting was turned off starting in release 10.0.21. The removal of this setting is targeted for April 2022; however, the feature will stop functioning after the Skype team shuts down the service. |
+| **Status**                         | Deprecated. The **Skype enabled** setting was turned off starting in release 10.0.21. The removal of this setting is targeted for April 2022; however, the feature stops functioning after the Skype team shuts down the service. |
  
 ## Feature deprecation effective August 2021
 
