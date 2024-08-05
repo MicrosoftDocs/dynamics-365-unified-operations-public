@@ -121,8 +121,9 @@ The entities include legal entity, vendor account, and item number. If derivatio
     2. Derived vendor account
     3. Item description or external item number
 
-4. **Currency code** – The currency code must be determined before the invoice can be transferred from Invoice capture to Dynamics 365 Finance.
+4. **Currency code** – The currency code must be determined before the invoice can be transferred from Invoice capture to Dynamics 365 Finance. Differnet ways are implemented to derive the currency code in the standard:
 
+    - If the currency symbol is captured and can be used to uniquely identify the currency code, the currency code will be then automatically derived. 
     - If an invoice is associated with a purchase order (PO invoice or Header-only invoice), the currency code between the invoice and the purchase order must be the same. If no currency code is returned from the recognition result, the currency code from the purchase order is entered by default.
     - If you want a cost invoice to derive the currency code from the vendor master data, select the **Derive currency code for cost invoice** parameter at **Setup system** \> **Manage processing rules**.
 
@@ -142,7 +143,15 @@ The derivation process occurs before the validation process, and all warnings or
 
 ## Continuous learning
 
-To help increase the touchless rate of invoice processing in Invoice capture, **Continuous learning** can derive entities (legal entity, vendor account, and item numbers) based on the mapping from the last transferred invoice. Manual intervention is required.
+To help increase the touchless rate of invoice processing in Invoice capture, **Continuous learning** can derive entities (legal entity, vendor account, and item numbers) based on the mapping from the last transferred invoice. 
+
+**Difference between continusous learning and mapping rules**
+
+The continuous learning feature is trying to record the patterns between the invoice context and manual selected entities right after the invoice is successfully transferred. The affected entities include legal entity, vendor account, item number, expense type, Charge code, Key-value pair mapping. As of now, it will check all the header information such as company name, company address, vendor name, address, vendor tax registration number etc. to determine the value of legal entity and vendor account. When the first invoice arrives, the user needs to manually decide the legal entity and vendor account if it cannot be successfully derived from other mapping rules. After completing the review and transfer it to Dynamics 365 Finance, the relationship is recorded. When the invoice with the same context arrives, it will try to find the same pattern and derive the legal entity and vendor account automatically. 
+
+The mapping rules are somehow an optional approach to derive the entities' value. It can derive the entity value when the conditions fulfill for all the fields. Considering that the maintenance load is quite high, we are not suggesting customers to use this approach. The only exception is the expense type. Because we recommend using pending vendor invoice framework for Non-PO invoices. Within this approach, you could define a default expense type (procurement category) to be applied on all the lines for the invoices from a specific vendor. This assigned procurement category is to derive the expense accounting during accounting distribution on the D365FO side. It can increase the touchless rate for processing Non-PO invoices.  
+
+From the logic sequence perspective, the continuous learning will be applied prior to the mapping rules. 
 
 ## Void and delete an invoice
 
