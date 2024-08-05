@@ -1,15 +1,14 @@
 ---
 title: Automatic rewaving of nonallocated shipment lines
-description: This article provides information about automatic rewaving of nonallocated shipment lines. This feature automatically creates work orders for failed shipments. Therefore, those work orders don't have to be manually monitored and created.
+description: Learn about automatic rewaving of nonallocated shipment lines. This feature automatically creates work orders for failed shipments.
 author: Mirzaab
 ms.author: mirzaab
-ms.reviewer: kamaybac
-ms.search.form: WHSParameters, WHSWaveProcessingRemovedShipment
 ms.topic: how-to
 ms.date: 04/11/2024
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form: WHSParameters, WHSWaveProcessingRemovedShipment
 ---
 
 # Automatic rewaving of nonallocated shipment lines

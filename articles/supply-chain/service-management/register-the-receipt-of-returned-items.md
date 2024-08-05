@@ -1,26 +1,15 @@
 ---
-# required metadata
-
 title: Register the receipt of returned items
-description: You can register the receipt of returned items using the Arrival overview page or the Registration page.
+description: Learn how you can register the receipt of returned items using the Arrival overview page or the Registration page, including a step-by-step process.
 author: Henrikan
 ms.author: henrikan
-ms.date: 05/01/2018
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: WMSArrivalOverview, InventTransRegister
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 05/01/2018
 ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
+ms.reviewer: kamaybac
+ms.search.region: Global 
 ms.search.validFrom: 2016-02-28
+ms.search.form: WMSArrivalOverview, InventTransRegister
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

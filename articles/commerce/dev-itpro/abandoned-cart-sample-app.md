@@ -4,14 +4,15 @@
 title: Detect abandoned carts and send notifications to customers
 description: This article describes how to customize the Microsoft Dynamics 365 Commerce abandoned cart connector sample app to detect abandoned carts and send reminder email notifications to customers.
 author: bicyclingfool
-ms.date: 02/25/2022
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: stuharg
+ms.author: asharchw
 ms.search.validFrom: 2017-06-20
-
+ms.custom: 
+  - bap-template
 ---
 
 # Detect abandoned carts and send notifications to customers
@@ -50,10 +51,7 @@ The following illustration shows the components of the abandoned cart connector 
 
 ## Obtain the code sample
 
-The abandoned cart connector sample app is included in the Retail SDK as of version 10.0.16. The code can be found under **\\RetailSDK\\Code\\SampleExtensions\\RetailServer\\Extensions.AbandonedCartSample**. For more information about the Retail SDK and where to obtain it, see [Retail software development kit (SDK)](retail-sdk/retail-sdk-overview.md).
-
-> [!NOTE]
-> Although the sample code was first made available in version 10.0.16 builds, it's compatible with version 10.0.13 and later builds of Retail Server.
+The abandoned cart connector sample app is included in the [Dynamics365Commerce.Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions). The code can be found in project [AbandonedCartSample](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.50/src/Extensions.AbandonedCartSample).
 
 ## Prerequisites and dependencies
 

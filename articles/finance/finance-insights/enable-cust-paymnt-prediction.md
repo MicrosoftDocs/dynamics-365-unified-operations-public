@@ -4,7 +4,7 @@ description: Learn how to configure the Customer payment predictions feature in 
 author: ShivamPandeyMSFT
 ms.author: shpandey
 ms.topic: article
-ms.date: 10/11/2023
+ms.date: 06/11/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -31,7 +31,7 @@ This article explains how to configure the Customer payment predictions feature 
         To use the default list of fields to create the prediction model, close the **Data fields for prediction model** page, and then, on the **Finance insights configuration** page, set the **Enable feature** option to **Yes**.
         
    > [!NOTE]
-   > The **Customer payment predictions** feature requires more than 100 transactions in the previous six to nine months. The transactions can include free text invoices, sales orders, and customer payments. This data must be spread across the **On-time**, **Late**, and **Very late** settings.    
+   > The **Customer payment predictions** feature requires more than 100 settled transactions in the previous six to nine months for the model to train successfully. This data must be spread across the **On-time**, **Late**, and **Very late** buckets with a minimum of 30 settled transactions in each bucket. The transactions can include free text invoices, sales orders, and customer payments.  
      
 
     2. Specify the "very late" transaction period to define what the **Very late** prediction bucket means for your business.

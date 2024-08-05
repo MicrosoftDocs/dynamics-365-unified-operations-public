@@ -1,26 +1,18 @@
 --- 
-# required metadata 
- 
 title: Add a calculation to a product configuration model
-description: This procedure shows how to add a new calculation to a product configuration model. 
+description: Learn how to add a new calculation to a product configuration model, including a step-by-step process for creating a calculation expression. 
 author: t-benebo
+ms.author: benebotg
 ms.date: 08/29/2018
 ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductConfigurationModelDetails, PCConstraintEditor, PCRuntimeConfiguratorValidate   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: kamaybac 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: benebotg
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductConfigurationModelDetails, PCConstraintEditor, PCRuntimeConfiguratorValidate
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Add a calculation to a product configuration model
 
 [!include [banner](../../includes/banner.md)]

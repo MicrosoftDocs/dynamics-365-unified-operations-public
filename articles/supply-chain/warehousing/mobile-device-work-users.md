@@ -1,15 +1,14 @@
 ---
 title: Mobile device user accounts
-description: This article describes how to set up and manage warehouse worker records and their associated mobile device user accounts, which enable workers to sign in and use the warehouse app.
+description: Learn how to set up and manage warehouse worker records and their associated mobile device user accounts, which enable workers to sign in and use the warehouse app.
 author: Mirzaab
 ms.author: mirzaab
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 03/07/2024
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form:
 ---
 
 # Mobile device user accounts
@@ -101,6 +100,9 @@ For each user record that you created in the previous section, you must create a
     - **Maximum percentage limit** – Enter the highest percentage limit that a cycle count can vary from the expected count without requiring approval by a cycle count supervisor.
     - **Maximum quantity limit** – Enter the total quantity that the entered quantity can differ from the expected quantity (in units) without requiring approval by a cycle count supervisor.
     - **Maximum value limit** – Enter the maximum amount that the cost of the inventory can differ from the expected cost without requiring approval by a cycle count supervisor.
+
+    > [!NOTE]
+    > To skip supervisor approval, all limit checks must succeed. If you wish to allow all non-supervisor users to skip the approval step, set suitably high values for each of the **Maximum percentage limit**, **Maximum quantity limit**, and **Maximum value limit** fields. Provided all recorded values are below these limits, supervisor approval won't be required.
 
 1. On the Action Pane, select **Save**.
 1. If you added a new mobile device user account, the **Set password** dialog box appears, where you can create a simple password that the user can use to sign in to the mobile app. Enter the simple password two times, and then select **Save password** to continue.

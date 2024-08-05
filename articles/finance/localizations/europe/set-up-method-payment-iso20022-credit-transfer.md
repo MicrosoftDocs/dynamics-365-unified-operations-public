@@ -1,13 +1,13 @@
 --- 
 title: Set up method of payment for ISO20022 credit transfer
 description: Learn how to set up the vendor method of payment for ISO20022 credit transfer or any other payment type using electronic reporting to generate a file. 
-author: mrolecki
-ms.author: mrolecki
+author: kailiang
+ms.author: kailiang
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 08/29/2018
-ms.custom:
 ms.reviewer: johnmichalak    
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-06-30
 ms.search.form: VendPaymMode

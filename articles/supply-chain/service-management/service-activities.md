@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Service activities 
-description: Create service activities to define and maintain tasks in a service order.
-author: sorenva
-ms.date: 05/01/2018
+description: Create service activities to define and maintain tasks in a service order. Learn about how service activities are defined in the Activity types form.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: smmActivityTypeGroup, SMADispatchBoard
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/01/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
 ms.search.validFrom: 2016-02-28
+ms.search.form: smmActivityTypeGroup, SMADispatchBoard
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Service activities        

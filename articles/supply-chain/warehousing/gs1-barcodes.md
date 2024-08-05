@@ -1,15 +1,14 @@
 ---
 title: GS1 bar codes
-description: This article describes how to set up GS1 bar codes and QR codes so that labels can be scanned in a warehouse.
+description: Learn how to set up GS1 bar codes and QR codes so that labels can be scanned in a warehouse with an outline on the GS1 bar code format.
 author: Mirzaab
 ms.author: mirzaab
-ms.reviewer: kamaybac
-ms.search.form: WHSGS1ParsingSetup, WHSGS1GenericSetup, WHSGS1PolicyTable, WHSWorkUserSession
 ms.topic: how-to
 ms.date: 05/26/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form: WHSGS1ParsingSetup, WHSGS1GenericSetup, WHSGS1PolicyTable, WHSWorkUserSession
 ---
 
 # GS1 bar codes

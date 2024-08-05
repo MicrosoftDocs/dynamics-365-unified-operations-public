@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Quarantine orders
-description: This article describes how to use quarantine orders to block inventory.
-author: yufeihuang
-ms.date: 03/23/2021
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: InventLocation, InventModelGroup, InventQuarantineOrder, InventQuarantineParmEnd, InventQuarantineParmReportFinished, InventQuarantineParmStartUp, InventTrans
-# ROBOTS:
-audience: Application User
-# ms.devlang:
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-ms.assetid: d5047727-653c-49da-b489-6fd3fe50445e
-ms.search.region: Global
-# ms.search.industry:
+description: Learn how to use quarantine orders to block inventory, including an outline and step-by-step process on quarantine on-hand inventory.
+author: yufei-huang
 ms.author: yufeihuang
+ms.topic: article
+ms.date: 03/23/2021
+ms.reviewer: kamaybac
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: InventLocation, InventModelGroup, InventQuarantineOrder, InventQuarantineParmEnd, InventQuarantineParmReportFinished, InventQuarantineParmStartUp, InventTrans
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: d5047727-653c-49da-b489-6fd3fe50445e
 ---
 
 # Quarantine orders

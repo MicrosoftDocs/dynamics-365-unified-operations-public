@@ -1,15 +1,14 @@
 ---
 title: Intercompany parameters
-description: This article explains intercompany parameters
+description: Learn about intercompany parameters, including examples involving two-level intercompany chains and three-level intercompany chains.
 author: Henrikan
-ms.date: 09/01/2021
+ms.author: henrikan
 ms.topic: article
-ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder, InterCompanyTradingRelationSetupCustomer
-audience: Application User
+ms.date: 09/01/2021
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
 ms.search.validFrom: 2021-09-01
+ms.search.form: PurchTable, PurchTablePart, PurchLineOpenOrder, InterCompanyTradingRelationSetupCustomer
 ms.dyn365.ops.version: 10.0.22
 ---
 

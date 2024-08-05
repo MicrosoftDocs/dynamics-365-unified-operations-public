@@ -1,22 +1,21 @@
 ---
 title: Work with calculation profiles
-description: This article describes how to work with calculation profiles. Calculation profiles apply a set of predefined calculations to one or more existing time series to generate a new time series as output.
+description: Learn how to work with calculation profiles, which apply predefined calculations to one or more existing time series to generate a new time series as output.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 10/19/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form:
 ---
 
 # Work with calculation profiles
 
 [!include [banner](../includes/banner.md)]
 
-The Demand planning app lets you build a collection of *calculation profiles*. Each profile takes one or more existing time series as input, and applies a set of predefined calculations to generate a new time series as output.
+Demand planning in Microsoft Dynamics 365 Supply Chain Management lets you build a collection of *calculation profiles*. Each profile takes one or more existing time series as input, and applies a set of predefined calculations to generate a new time series as output.
 
 Here are some examples of purposes that you might use calculations for:
 

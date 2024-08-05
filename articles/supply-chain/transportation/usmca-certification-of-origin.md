@@ -1,25 +1,15 @@
 ---
-# required metadata
-
 title: USMCA certification of origin
 description: This feature lets you print the certification of origin documents required by the United States-Mexico-Canada Agreement (USMCA).
 author: Weijiesa
-ms.date: 08/09/2022
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: WHSShipPlanningListPage, WHSShipmentDetails
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: weijiesa
-ms.search.validFrom: 2020-10-23
-ms.dyn365.ops.version: 10.0.16
+ms.reviewer: kamaybac
+ms.search.form: WHSShipPlanningListPage, WHSShipmentDetails
+ms.topic: how-to
+ms.date: 07/30/2024
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # USMCA certification of origin
@@ -137,6 +127,5 @@ The user signing the certification must manually enter the number of pages (for 
 ### Page numbers
 
 Current page and number of pages printed at the bottom of the document.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

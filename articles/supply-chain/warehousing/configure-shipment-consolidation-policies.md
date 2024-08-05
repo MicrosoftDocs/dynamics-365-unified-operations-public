@@ -1,25 +1,15 @@
 ---
-# required metadata
-
 title: Configure shipment consolidation policies
-description: This article explains how to set up default and custom shipment consolidation policies.
+description: Learn how to set up default and custom shipment consolidation policies with an outline on turning on the Shipment consolidation policies feature.
 author: Mirzaab
-ms.date: 09/07/2022
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, TMSMode, WHSShipmentConsolidation, WHSFilterGenerallyAvail, WHSOutboundLoadPlanningWorkbench
-# ROBOTS:
-audience: Application User
-# ms.devlang:
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-# ms.custom:
-ms.search.region: Global
-# ms.search.industry:
 ms.author: mirzaab
+ms.topic: article
+ms.date: 09/07/2022
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.region: Global
 ms.search.validFrom: 2020-05-01
+ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, TMSMode, WHSShipmentConsolidation, WHSFilterGenerallyAvail, WHSOutboundLoadPlanningWorkbench
 ms.dyn365.ops.version: 10.0.3
 ---
 

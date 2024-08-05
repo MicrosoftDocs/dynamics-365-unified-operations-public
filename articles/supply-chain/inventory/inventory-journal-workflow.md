@@ -1,24 +1,15 @@
 ---
-# required metadata
-
 title: Inventory journal approval workflows
-description: This article describes how to set up and use inventory journal approval workflows for various types of physical inventory transactions. Inventory journal workflows help ensure that only approved inventory journals can be posted to transactions.
-author: yufeihuang
-ms.date: 08/05/2022
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: InventJournalTableWorkflowDropDialog
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
+description: Learn how to set up and use inventory journal approval workflows for various types of physical inventory transactions, including a step-by-step process.
+author: yufei-huang
 ms.author: yufeihuang
+ms.topic: article
+ms.date: 08/05/2022
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.region: Global
 ms.search.validFrom: 2020-07-21
+ms.search.form: InventJournalTableWorkflowDropDialog
 ms.dyn365.ops.version: 10.0.13
 ---
 

@@ -1,15 +1,16 @@
 ---
 title: Gantt chart for job scheduling 
-description: Production planners can control and optimize productions plans by using Gantt charts.
+description: Production planners can control and optimize productions plans by using Gantt charts, including an outline on Gantt chart views.
 author: johanhoffmann
 ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage, GanttColorTable, GanttReqExplosionColor, GanttReqExplosionSetup, GanttTable, GanttTimescaleSetup, GanttWrkCtr, GanttWrkCtrColor, GanttWrkCtrJobInfo, GanttWrkCtrLoadResources, GanttWrkCtrMoveJob, GanttWrkCtrSetup, GanttWrkCtrView
 ms.topic: how-to
-ms.date: 01/27/2023
-audience: Application User
+ms.date: 05/22/2024
+ms.custom:
+  - bap-template
+  - evergreen
+ms.reviewer: kamaybac
 ms.search.region: Global
-ms.custom: bap-template
+ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage, GanttColorTable, GanttReqExplosionColor, GanttReqExplosionSetup, GanttTable, GanttTimescaleSetup, GanttWrkCtr, GanttWrkCtrColor, GanttWrkCtrJobInfo, GanttWrkCtrLoadResources, GanttWrkCtrMoveJob, GanttWrkCtrSetup, GanttWrkCtrView
 ---
 
 # Gantt chart for job scheduling

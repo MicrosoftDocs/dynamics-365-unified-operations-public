@@ -1,13 +1,12 @@
 ---
 title: Date and time parameters used by Planning Optimization
-description: This article provides information about the date and time parameters that Planning Optimization uses during its operation.
+description: Learn about the date and time parameters that Planning Optimization uses during its operation, including a table that outlines various aspects of parameters.
 author: t-benebo
-ms.date: 09/21/2021
+ms.author: benebotg
 ms.topic: article
-audience: Application User
+ms.date: 09/21/2021
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
 ms.search.validFrom: 2021-09-21
 ms.dyn365.ops.version: 10.0.20
 ---

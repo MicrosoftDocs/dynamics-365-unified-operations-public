@@ -1,13 +1,14 @@
 ---
 title: Print labels using an external service
-description: This article describes how to set up and print labels by using an external service.
-author: Mirzaab
-ms.author: mirzaab
+description: Learn how to set up and print labels by using an external service, including prerequisites and an overview of required configurations.
+author: perlynne
+ms.author: perlynne
+ms.topic: how-to
+ms.date: 05/16/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: kamaybac
 ms.search.form: WHSLabelLayout, WHSLabelLayoutDataSource
-ms.topic: how-to
-ms.date: 03/27/2023
-ms.custom: bap-template
 ---
 
 # Print labels using an external service

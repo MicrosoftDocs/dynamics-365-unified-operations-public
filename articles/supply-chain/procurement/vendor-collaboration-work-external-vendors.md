@@ -1,15 +1,14 @@
 ---
 title: Vendor collaboration with external vendors
-description: This article explains how purchasing agents can collaborate with external vendors to exchange information about purchase orders and consignment inventory.
+description: Learn how purchasing agents can collaborate with external vendors to exchange information about purchase orders and consignment inventory.
 author: Henrikan
 ms.author: henrikan
-ms.reviewer: kamaybac
-ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart, PurchaseOrderResponseActionRemarks, PurchVendorPortalAllResponse, PurchOrderInExternalReview, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 ms.topic: how-to
 ms.date: 05/02/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+ms.search.form: PurchRFQCaseTableListPage, VendVendorPortalInvoicePart, PurchaseOrderResponseActionRemarks, PurchVendorPortalAllResponse, PurchOrderInExternalReview, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 ---
 
 # Vendor collaboration with external vendors

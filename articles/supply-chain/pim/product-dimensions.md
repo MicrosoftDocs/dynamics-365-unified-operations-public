@@ -1,15 +1,14 @@
 ---
 title: Product dimensions
-description: There are five product dimensions - color, configuration, size, style, and version. You combine product dimensions in dimension groups and assign dimension groups to product masters. The combinations of product dimensions determine how product variants are defined.
+description: Learn about product dimensions, with outlines on product variants, setting up product dimensions, version product dimensions, and examples.
 author: t-benebo 
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
 ms.topic: how-to
 ms.date: 01/06/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
 ---
 
 # Product dimensions

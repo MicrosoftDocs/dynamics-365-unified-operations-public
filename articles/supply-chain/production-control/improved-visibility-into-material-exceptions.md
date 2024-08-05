@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Visibility into material exceptions
 description: This article describes how you can get better visibility into exceptions for raw materials for production orders and batch orders.
 author: johanhoffmann
-ms.date: 10/30/2017
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage, WHSProdWaveTableManageBOMPool
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
+ms.topic: article
+ms.date: 10/30/2017
+ms.reviewer: kamaybac
+ms.search.region: Global
 ms.search.validFrom: 2017-12-31
+ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage, WHSProdWaveTableManageBOMPool
 ms.dyn365.ops.version: 7.3
 ---
+
 # Visibility into material exceptions
 
 [!include [banner](../includes/banner.md)]

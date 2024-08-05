@@ -1,15 +1,14 @@
 ---
 title: Material handling equipment interface (MHAX)
-description: This article describes how to set up the material handling equipment interface (MHAX) so that you can connect to external physical material handling (MH) systems.
+description: Learn how to set up the material handling equipment interface (MHAX) so that you can connect to external physical material handling (MH) systems.
 author: Mirzaab
 ms.author: mirzaab
-ms.reviewer: kamaybac
-ms.search.form: WMHEParameters, WMHESubscription, WMHEQueueManagerWorkspace, WMHEInboundQueue, WMHEOutboundQueue
 ms.topic: how-to
 ms.date: 01/29/2024
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form: WMHEParameters, WMHESubscription, WMHEQueueManagerWorkspace, WMHEInboundQueue, WMHEOutboundQueue
 ---
 
 # Material handling equipment interface (MHAX)

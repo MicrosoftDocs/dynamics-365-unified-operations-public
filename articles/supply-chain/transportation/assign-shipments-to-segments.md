@@ -1,15 +1,14 @@
 ---
 title: Assign shipments to related route segments
-description: This article describes how to configure the system to apportion freight costs for multi-segment scheduled routes that use the inbound and outbound logistic process. It also describes how this feature works.
+description: Learnhow to configure the system to apportion freight costs for multi-segment scheduled routes that use the inbound and outbound logistic process.
 author: Weijiesa
 ms.author: weijiesa
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 01/17/2024
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form:
 ---
 
 # Assign shipments to related route segments

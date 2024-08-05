@@ -4,7 +4,7 @@ description: Learn how to create an account alias that provides a shortcut for e
 author: aprilolson
 ms.author: aolson
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 07/25/2024
 ms.custom:
 ms.reviewer: twheeloc   
 audience: Application User  

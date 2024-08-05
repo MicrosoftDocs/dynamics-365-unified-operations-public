@@ -1,15 +1,14 @@
 ---
 title: Master planning with demand forecasts
-description: This article explains how to include demand forecasts during master planning.
+description: Learn how to include demand forecasts during master planning, with an outline on setting up a master plan to include a demand forecast.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
 ms.topic: how-to
 ms.date: 01/06/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
 ---
 
 # Master planning with demand forecasts

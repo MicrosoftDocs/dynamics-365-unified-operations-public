@@ -1,15 +1,14 @@
 ---
 title: Create and process message queues and message types
-description: This article describes how to design custom message queues and message types by using Visual Studio, and how to monitor and control the processing of all message types by using the Message processor messages page.
+description: Learn how to design custom message queues and message types by using Visual Studio, and how to monitor and control the processing of all message types.
 author: Henrikan
 ms.author: henrikan
-ms.reviewer: kamaybac
-ms.search.form: SysMessageProcessorMessage, BusinessEventsWorkspace 
 ms.topic: how-to
 ms.date: 11/02/2022
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form: SysMessageProcessorMessage, BusinessEventsWorkspace 
 ---
 
 # Create and process message queues and message types

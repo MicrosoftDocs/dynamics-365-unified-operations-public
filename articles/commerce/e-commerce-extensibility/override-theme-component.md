@@ -2,16 +2,15 @@
 title: Override a module library component in a theme
 description: This article describes how to override module library components to allow for customizations in a theme.
 author: samjarawan
-ms.date: 10/20/2020
-ms.topic: article
+ms.date: 07/31/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 # Override a module library component in a theme
 

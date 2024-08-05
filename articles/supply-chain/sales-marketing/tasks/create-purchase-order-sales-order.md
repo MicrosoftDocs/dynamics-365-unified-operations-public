@@ -1,26 +1,18 @@
 --- 
-# required metadata 
- 
 title: Create a purchase order from a sales order
-description: This procedure shows you how to create a purchase order that is based on a sales order. 
+description: Learn how to create a purchase order that is based on a sales order, including a step-by-step process for creating purchases orders from sales orders. 
 author: Henrikan
-ms.date: 06/26/2019
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchTablePart   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: henrikan
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 06/26/2019
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchTablePart
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create a purchase order from a sales order
 
 [!include [banner](../../includes/banner.md)]

@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Delays
-description: This article provides information about delayed dates in master planning. A delayed date is a realistic due date that a transaction receives if the earliest fulfillment date that master planning calculates is later than the requested date.
+description: Learn about delayed dates in master planning, which is a due date that a transaction receives if the earliest fulfillment date is later than the requested date.
 author: t-benebo
-ms.date: 03/31/2020
+ms.author: benebotg
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: ReqTransFuturesListPage
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 03/31/2020
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: benebotg
 ms.search.validFrom: 2016-02-28
+ms.search.form: ReqTransFuturesListPage
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ---
 
 # Delays

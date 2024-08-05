@@ -1,26 +1,18 @@
 --- 
-# required metadata 
- 
 title: Create sales price selection criteria
-description: This procedure shows how to create a sales price selection criterion for attribute-based sales price models. 
+description: Learn how to create a sales price selection criterion for attribute-based sales price models, including a step-by-step process for adding new criteria. 
 author: t-benebo
-ms.date: 08/29/2018
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCPriceModelSelectionCriteria, SysQueryForm, SysQueryTableLookUp, SysQueryFieldLookUp   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: benebotg
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 08/29/2018
+ms.custom:
+ms.reviewer: kamaybac    
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCPriceModelSelectionCriteria, SysQueryForm, SysQueryTableLookUp, SysQueryFieldLookUp 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create sales price selection criteria
 
 [!include [banner](../../includes/banner.md)]

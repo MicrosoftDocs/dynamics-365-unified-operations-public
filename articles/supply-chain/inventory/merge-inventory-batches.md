@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Merge inventory batches
-description: This article provides information about how to consolidate two or more inventory batches into a merged batch.
-author: yufeihuang
-ms.date: 06/20/2017
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
-# ROBOTS:
-audience: Application User
-# ms.devlang:
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
-ms.search.region: Global
-# ms.search.industry:
+description: Learn about how to consolidate two or more inventory batches into a merged batch, including a table that defines various pages.
+author: yufei-huang
 ms.author: yufeihuang
+ms.topic: article
+ms.date: 06/20/2017
+ms.reviewer: kamaybac
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ---
 
 # Merge inventory batches

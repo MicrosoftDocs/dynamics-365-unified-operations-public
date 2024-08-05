@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Quality orders
-description: This article describes how to manually or automatically create quality orders, and how to work with them to perform inspections and record test results in Microsoft Dynamics 365 Supply Chain Management.
-author: yufeihuang
-ms.date: 03/23/2021
+description: Learn how to manually or automatically create quality orders, and how to work with them to perform inspections and record test results.
+author: yufei-huang
+ms.author: yufeihuang
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: InventQualityOrderTable
-# ROBOTS:
-audience: Application User
-# ms.devlang:
+ms.date: 03/23/2021
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:
-ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
+ms.search.form: InventQualityOrderTable
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ---
 
 # Quality orders
@@ -129,17 +119,19 @@ To work with quality orders that are related to your quarantine orders, go to **
 
 ### From goods-in-transit orders (preview)
 
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
 
-> [!IMPORTANT]
-> This feature is currently in private preview and is therefore only available to a limited number of customers. If you are interested in testing this feature, please contact Microsoft Support.
+You can initiate and run quality checks against goods-in-transit orders. This proactive approach enables discrepancies or defects that might occur during transportation to be detected early, thereby ensuring that only products that meet predefined quality standards can proceed to their final destination.
 
 To work with quality orders that are related to your goods-in-transit orders, follow any of these steps:
 
 - Go to **Landed cost \> Periodic tasks \> Goods in transit orders** and select a goods-in-transit order. Then, on the Action Pane, select **Quality orders** to open the **Quality orders** page. There, you can view, create, or update quality orders that are related to the goods-in-transit order.
 - Go to **Landed cost \> Voyages \> All voyages** and open or select a voyage or select a voyage. On the Action pane, on the **General** tab, in the **Inquiries** group, select **Goods in transit orders** to open the **Goods in transit orders** page. Select a goods-in-transit order. Then, on the Action Pane, select **Quality orders** to open the **Quality orders** page, where you can view, create, or update quality orders that are related to the selected goods-in-transit order.
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
+For details about how to enable this feature, see [Turn on the Landed cost module and related features for your system](../landed-cost/landed-cost-enable.md).
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Advanced actions for quality orders
 

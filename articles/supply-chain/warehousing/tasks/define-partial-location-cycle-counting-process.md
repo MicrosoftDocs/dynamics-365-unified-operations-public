@@ -1,25 +1,18 @@
 --- 
-# required metadata 
- 
 title: Define partial location cycle counting process 
-description: When you use cycle count plans to create counting work, you can guide the actual counting operations by requesting that only specific products and product variants be counted instead of all on-hand inventory at the location. 
+description: Learn how to guide the actual counting operations by requesting that only specific products be counted instead of all on-hand inventory at the location. 
 author: Mirzaab
-ms.date: 06/23/2017
-ms.topic: how-to 
- 
-# optional metadata 
-ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSWorkTemplateTable
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mirzaab
-ms.search.validFrom: 2016-06-30 
+ms.topic: how-to
+ms.date: 06/23/2017
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.validFrom: 2016-06-30
+ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSWorkTemplateTable
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Define partial location cycle counting process 
 
 [!include [banner](../../includes/banner.md)]

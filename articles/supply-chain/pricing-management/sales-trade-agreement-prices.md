@@ -1,21 +1,20 @@
 ---
 title: Sales trade agreement prices (preview)
-description: This article provides information about sales trade agreement prices.
+description: Learn about sales trade agreement prices, including an outline on configuring sales trade agreements and concurrence rules.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: GUPPricingSetupInquiryResult, GUPParameters, PriceDiscAdmName, PriceDiscAdmTable, PriceDiscAdm
 ms.topic: overview
 ms.date: 04/03/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form: GUPPricingSetupInquiryResult, GUPParameters, PriceDiscAdmName, PriceDiscAdmTable, PriceDiscAdm
 ---
 
 # Sales trade agreement prices (preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 *Sales trade agreement prices* are negotiated prices for specific products that apply to specific customers. For sales where a sales trade agreement applies, this price takes priority over the item base price.

@@ -1,26 +1,15 @@
 ---
-# required metadata
-
 title: Credit subscription transactions  
-description: This article shows how to credit subscription transactions.
-author: sorenva
-ms.date: 05/01/2018
+description: Learn how to credit subscription transactions, including a step-by-step process for creditting subscription transactions.
+author: ChristianRytt
+ms.author: crytt
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: SMASubscriptionTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 05/01/2018
+ms.custom:
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sorenand
 ms.search.validFrom: 2016-02-28
+ms.search.form: SMASubscriptionTable
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

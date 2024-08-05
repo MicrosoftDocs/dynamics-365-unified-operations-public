@@ -1,13 +1,12 @@
 ---
 title: Delay tolerance (negative days)
-description: This article provides information about the delay tolerance calculation and how it affects planned order creation in Planning Optimization.
+description: Learn about the delay tolerance calculation and how it affects planned order creation in Planning Optimization with an outline on toggling delay tolerance.
 author: t-benebo
-ms.date: 08/09/2022
+ms.author: benebotg
 ms.topic: article
-audience: Application User
+ms.date: 08/09/2022
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
 ---

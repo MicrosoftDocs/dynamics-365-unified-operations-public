@@ -1,26 +1,15 @@
 ---
-# required metadata
-
-title:  Set up return reason codes
-description:  Set up return reason code groups. 
+title: Set up return reason codes
+description: Learn how to set up return reason codes, including step-by-step processes for setting up return reason code grups and setting up return reason codes.
 author: Henrikan
 ms.author: henrikan
-ms.date: 05/01/2018
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: ReturnReasonCodeGroup, ReturnReasonCode
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
+ms.date: 05/01/2018
 ms.custom: 
-ms.assetid: 
+ms.reviewer: kamaybac
 ms.search.region: Global
-# ms.search.industry: 
 ms.search.validFrom: 2016-02-28
+ms.search.form: ReturnReasonCodeGroup, ReturnReasonCode
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

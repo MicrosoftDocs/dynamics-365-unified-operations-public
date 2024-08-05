@@ -1,15 +1,14 @@
 ---
 title: Make-to-order supply automation
-description: This article describes how to set up and use the various enhancements that are added by the Make-to-order supply automation feature.
+description: Learn how to set up and use the various enhancements that are added by the Make-to-order supply automation feature, including step-by-step processes.
 author: t-benebo
-ms.date: 07/27/2022
+ms.author: benebotg
 ms.topic: article
-ms.search.form:
-audience: Application User
+ms.date: 07/27/2022
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
 ms.search.validFrom: 2022-07-27
+ms.search.form:
 ms.dyn365.ops.version: 10.0.29
 ---
 

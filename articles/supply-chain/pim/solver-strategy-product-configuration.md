@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Solver strategy for product configuration
-description: This article describes how you can use the solver strategy to improve the performance of product configuration. 
-author: t-benebo 
-ms.date: 02/19/2019
-ms.topic: article
-
-# optional metadata
-ms.search.form: PCCreateProductConfigurationModel, PCProductConfigurationModelListPage 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-ms.search.industry: 
+description: Learn how you can use the solver strategy to improve the performance of product configuration, including an outline on solver strategies. 
+author: t-benebo
 ms.author: benebotg
+ms.topic: article
+ms.date: 02/19/2019
+ms.custom:
+ms.reviewer: kamaybac 
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: PCCreateProductConfigurationModel, PCProductConfigurationModelListPage 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Solver strategy for product configuration

@@ -1,26 +1,20 @@
 --- 
-# required metadata 
- 
 title: Create a fixed quantity kanban rule for manufacturing
-description: This procedure focuses on the setup needed to create a fixed manufacturing kanban rule for triggering transforming activities, at a work cell, in a lean environment. 
+description: Learn about the setup needed to create a fixed manufacturing kanban rule for triggering transforming activities, at a work cell, in a lean environment.
 author: johanhoffmann
+ms.author: johanho
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, UnitOfMeasureLookup, KanbanCreate   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: kamaybac   
+audience: Application User  
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, UnitOfMeasureLookup, KanbanCreate 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create a fixed quantity kanban rule for manufacturing
 
 [!include [banner](../../includes/banner.md)]

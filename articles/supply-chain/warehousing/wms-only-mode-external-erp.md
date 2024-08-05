@@ -1,27 +1,23 @@
 ---
-title: Warehouse management only mode with external ERP systems (preview)
-description: This article explains how to perform day-to-day warehousing tasks when you use Warehouse only mode to integrate with an external ERP system.
+title: Warehouse management only mode with external ERP systems
+description: Learn how to perform day-to-day warehousing tasks when you use Warehouse only mode to integrate with an external ERP system.
 author: perlynne
 ms.author: perlynne
-ms.reviewer: kamaybac
-ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSInventoryUpdateLog
 ms.topic: how-to
 ms.date: 04/27/2024
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSInventoryUpdateLog
 ---
 
-# Warehouse management only mode with external ERP systems (preview)
+# Warehouse management only mode with external ERP systems
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-
-<!-- KFM: Preview until further notice -->
 
 This article explains how to perform day-to-day warehousing tasks when you use Warehouse only mode to integrate with an external enterprise resource planning (ERP) system.
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 There are numerous ways to use [Warehouse management only mode](wms-only-mode-overview.md). For example, you can enable Microsoft Dynamics 365 Supply Chain Management to handle logistics operations, and then connect warehouses to external ERP systems that do all the order and financial processing.
 

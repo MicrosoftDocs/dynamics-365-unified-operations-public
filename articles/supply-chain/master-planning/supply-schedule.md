@@ -1,15 +1,14 @@
 ---
 title: Supply schedule
-description: This article provides information about the Supply schedule page and its capabilities.
+description: Learn about the Supply schedule page and its capabilities, including outlines on opening the supply schedule page and using the supply schedule page.
 author: t-benebo
-ms.date: 9/3/2021
+ms.author: benebotg
 ms.topic: article
-ms.search.form: ReqSupplyDemandSchedule, ReqSupplyDemandScheduleFilters, ReqSupplyDemandItemDetails, ReqTransFuturesActionsPart, ReqSupplyDemandOverviewLegendPart
-audience: Application User
+ms.date: 9/3/2021
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
 ms.search.validFrom: 2021-06-09
+ms.search.form: ReqSupplyDemandSchedule, ReqSupplyDemandScheduleFilters, ReqSupplyDemandItemDetails, ReqTransFuturesActionsPart, ReqSupplyDemandOverviewLegendPart
 ms.dyn365.ops.version: 10.0.22
 ---
 

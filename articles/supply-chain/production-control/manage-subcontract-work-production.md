@@ -1,15 +1,14 @@
 ---
 title: Manage subcontracting work in production
-description: This article explains how subcontracted operations are managed in Dynamics 365 Supply Chain Management. In other words, it explains how production operations that are allocated to a resource are managed by a vendor.
+description: Learn how subcontracted operations are managed in Dynamics 365 Supply Chain Management, including an outline on allocated production operations.
 author: johanhoffmann
 ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage, ProdRoute, ProdTable, ProdTableListPage, PurchAgreementSubcontractorLookup, RouteTable, WrkCtrResourceGroup, ProdBOMVendorListPagePreviewPane, ProdBOMVendor
 ms.topic: overview
 ms.date: 04/19/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.reviewer: kamaybac
+ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage, ProdRoute, ProdTable, ProdTableListPage, PurchAgreementSubcontractorLookup, RouteTable, WrkCtrResourceGroup, ProdBOMVendorListPagePreviewPane, ProdBOMVendor
 ---
 
 # Manage subcontracting work in production

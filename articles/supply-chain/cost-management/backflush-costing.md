@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Backflush costing
-description: This article introduces the concept of backflush costing that is used for Lean manufacturing. 
+description: Learn about the concept of backflush costing that is used for Lean manufacturing, including an outline on configuring backflush costing.
 author: JennySong-SH
-ms.date: 04/10/2017
+ms.author: yanansong
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: LeanCosting, LeanCostingTimeBucket
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 04/10/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 62a2a7da-ff79-49bf-a6e8-29460ba5252f
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: yanansong
 ms.dyn365.ops.version: Version 1611
+ms.search.form: LeanCosting, LeanCostingTimeBucket
 ms.search.validFrom: 2016-11-30
-
+ms.assetid: 62a2a7da-ff79-49bf-a6e8-29460ba5252f
 ---
 
 # Backflush costing

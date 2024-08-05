@@ -1,25 +1,15 @@
 ---
-# required metadata
-
 title: Schedule load utilization
-description: This article explains how to set up and schedule the load for a warehouse.
+description: Learn how to set up and schedule the load for a warehouse, including an outline on scheduling and viewing the load for a warehouse or site.
 author: Mirzaab
-ms.date: 05/26/2017
-ms.topic: article
-
-# optional metadata
-
-ms.search.form:  WMSSpaceUtilSetup
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mirzaab
+ms.topic: article
+ms.date: 05/26/2017
+ms.reviewer: kamaybac
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form:  WMSSpaceUtilSetup
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Schedule load utilization

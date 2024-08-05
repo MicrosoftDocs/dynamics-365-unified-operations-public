@@ -20,9 +20,6 @@ ms.assetid: 05d8f7af-df6a-452f-a532-0f059eba4377
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
 Learn about creating Open in Office experiences for Excel and Word.
 
 ## What are Open in Excel experiences?

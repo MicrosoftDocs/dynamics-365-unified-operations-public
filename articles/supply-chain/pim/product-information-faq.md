@@ -1,15 +1,14 @@
 ---
 title: Product information management FAQ
-description: This article provides answers to frequently asked questions (FAQs) about the product information management functionality of Supply Chain Management.
+description: Access answers to frequently asked questions (FAQs) about the product information management functionality of Supply Chain Management.
 author: t-benebo
-ms.date: 06/03/2021
+ms.author: benebotg
 ms.topic: article
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
+ms.date: 06/03/2021
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
 ms.search.validFrom: 2021-06-03
+ms.search.form:
 ms.dyn365.ops.version: 10.0.18
 ---
 

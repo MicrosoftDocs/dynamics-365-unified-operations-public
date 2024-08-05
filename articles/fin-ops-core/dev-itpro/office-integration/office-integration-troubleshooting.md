@@ -20,10 +20,6 @@ ms.assetid: 89588fed-b47f-4f01-9328-325518f016d6
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
-
-
 This article provides answers to questions, tips, and troubleshooting information about the capabilities of the Microsoft Office integration. The questions and issues that are discussed range across user, administration, and development scenarios.
 
 ## Frequently asked questions

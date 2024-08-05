@@ -1,21 +1,20 @@
 ---
 title: Arrange price component codes into a price structure (preview)
-description: This article explains how to arrange price component codes into a price structure.
+description: Learn how to arrange price component codes into a price structure, including an outline and step-by-step process on configuring a price structure.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: GUPPricingTree, GUPParameters, GUPPriceComponentCodeSetup
 ms.topic: how-to
 ms.date: 04/03/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form: GUPPricingTree, GUPParameters, GUPPriceComponentCodeSetup
 ---
 
 # Arrange price component codes into a price structure (preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 Regardless of whether you're using a single price structure or multiple price structures, you use the same basic procedure to arrange your price component codes into a price structure. The only difference is that, if you use multiple price structures, you also define a condition to select the structure that's used in each situation.

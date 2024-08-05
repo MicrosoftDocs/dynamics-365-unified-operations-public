@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Warranty agreements
-description: This article explains warranty agreements in Asset Management.
+description: Learn about warranty agreements in Asset Management, including an outline and step-by-step process for creating a warranty agreement.
 author: johanhoffmann
-ms.date: 08/24/2020
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
+ms.topic: article
+ms.date: 08/24/2020
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.region: Global
 ms.search.validFrom: 2019-08-30
+ms.search.form: 
 ms.dyn365.ops.version: 10.0.5
-
 ---
 
 # Warranty agreements

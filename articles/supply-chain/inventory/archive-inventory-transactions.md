@@ -1,26 +1,18 @@
 ---
-# required metadata
-
 title: Consolidate inventory transactions
-description: This article describes how to consolidate inventory transaction data to help improve system performance.
-author: yufeihuang
-ms.date: 04/11/2024
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: InventTransArchiveProcessForm
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
+description: Learn how to consolidate inventory transaction data to help improve system performance with an outline on toggling the feature in your system.
+author: yufei-huang
 ms.author: yufeihuang
+ms.topic: article
+ms.date: 04/11/2024
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.region: Global
 ms.search.validFrom: 2021-03-01
+ms.search.form: InventTransArchiveProcessForm
 ms.dyn365.ops.version: 10.0.18
 ---
+
 # Consolidate inventory transactions
 
 [!include [banner](../../includes/banner.md)]
@@ -110,6 +102,7 @@ The toolbar above the grid provides the following buttons that you can use to wo
 
 - **Pause** – Pause a selected consolidation that is currently being processed. The pause takes effect only after the archiving task is generated. Therefore, there might be a short delay before the pause takes effect. If a consolidation is paused, a check mark appears in its **Stop current update** field.
 - **Resume** – Resume processing for a selected consolidation that is currently paused.
+- **Progress details** – Open a log that shows the progress of your inventory consolidation jobs.
 
 ## Extend your code to support custom fields
 

@@ -1,21 +1,20 @@
 ---
 title: Price component codes (preview)
-description: This article describes how to create a price structure for pricing at the macro level by using Pricing management.
+description: Learn how to create a price structure for pricing at the macro level by using Pricing management with a table defining various names.
 author: sherry-zheng
 ms.author: chuzheng
-ms.reviewer: kamaybac
-ms.search.form: GUPPriceComponentCode, GUPPriceComponentCodeGroup
 ms.topic: how-to
 ms.date: 04/03/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form: GUPPriceComponentCode, GUPPriceComponentCodeGroup
 ---
 
 # Price component codes (preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 The purpose of making pricing decisions is to increase profitability. Good decision making demands a thorough understanding of the different elements that are involved in determining the price. By providing a list of pricing building blocks, Pricing management lets you create a price structure (price tree) for pricing at the macro level. The price component code is the basic unit of the price structure.

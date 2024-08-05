@@ -1,15 +1,14 @@
 ---
 title: Inventory Visibility support for WMS items
-description: This article describes Inventory Visibility support for items that are enabled for warehouse management processes (WMS items).
-author: yufeihuang
-ms.date: 11/04/2022
+description: Learn about Inventory Visibility support for items that are enabled for warehouse management processes (WMS items) with an outline on the scope of the feature.
+author: yufei-huang
+ms.author: yufeihuang
 ms.topic: article
-ms.search.form:
-audience: Application User
+ms.date: 11/04/2022
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: yufeihuang
 ms.search.validFrom: 2022-03-10
+ms.search.form:
 ms.dyn365.ops.version: 10.0.26
 ---
 

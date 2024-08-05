@@ -17,9 +17,7 @@ ms.dyn365.ops.version: Platform update 28
 # Saved views
 
 [!include [banner](../../../finance/includes/banner.md)]
-[!include [preview banner](../../../finance/includes/preview-banner.md)]
 
-[!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
 ## Introduction
 

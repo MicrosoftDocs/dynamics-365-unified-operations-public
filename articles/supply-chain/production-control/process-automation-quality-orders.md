@@ -1,15 +1,14 @@
 ---
 title: Invoke process automation flows to create quality orders
-description: This article provides resources for using Power Automate to automate business processes, using the example of quality orders.
+description: Access resources for using Power Automate to automate business processes, using the example of quality orders, including resources to overviews of capabilities.
 author: johanhoffmann
-ms.date: 05/28/2021
+ms.author: johanho
 ms.topic: article
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User
+ms.date: 05/28/2021
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: johanho
 ms.search.validFrom: 2021-05-28
+ms.search.form:
 ms.dyn365.ops.version: 10.0.20
 ---
 

@@ -1,15 +1,14 @@
 ---
 title: Create dimension-based configurations
-description: This procedure shows how to define a configuration for a dimension-based product. 
+description: Learn how to define a configuration for a dimension-based product, including an outline and process for finding dimension-based product masters. 
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
-ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, EcoResDimensionBasedConfiguration, ConfigChooseFromRoute, ConfigChooseFromGroup, ConfigChoiceApprove   
 ms.topic: how-to
 ms.date: 11/10/2022
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, EcoResDimensionBasedConfiguration, ConfigChooseFromRoute, ConfigChooseFromGroup, ConfigChoiceApprove
 ---
 
 # Create dimension-based configurations

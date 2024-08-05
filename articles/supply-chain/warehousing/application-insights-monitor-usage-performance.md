@@ -1,15 +1,14 @@
 ---
 title: Monitor Warehouse Management usage and performance
-description: The Supply Chain Management tenant and the Warehouse Management mobile app emit telemetry data, which lets you monitor and analyze the activities and general health of your system. You can use the information to diagnose issues and analyze operations that affect performance.
+description: The Supply Chain Management tenant emit telemetry data, which lets you monitor and analyze the activities and general health of your system.
 author: Mirzaab
 ms.author: mirzaab
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 09/14/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form:
 ---
 
 # Monitor Warehouse Management usage and performance

@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Set up automatic freight reconciliation
-description: This procedure shows how to set up data for automatic freight reconciliation. 
+description: Learn how to set up data for automatic freight reconciliation, including a step-by-step process for setting up freight bill types.
 author: Weijiesa
+ms.author: weijiesa
+ms.topic: how-to
 ms.date: 10/16/2018
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: TMSFreightBillType, TMSFreightBillTypeAssignment, TMSCarrierCodeLookup, DefaultDashboard, TMSAuditMaster   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: kamaybac  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: weijiesa
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: TMSFreightBillType, TMSFreightBillTypeAssignment, TMSCarrierCodeLookup, DefaultDashboard, TMSAuditMaster 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Set up automatic freight reconciliation
 
 [!include [banner](../../includes/banner.md)]

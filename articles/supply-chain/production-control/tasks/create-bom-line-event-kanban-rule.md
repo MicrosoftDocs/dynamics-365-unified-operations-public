@@ -1,26 +1,19 @@
 --- 
-# required metadata 
- 
 title: Create a BOM line event kanban rule
-description: This task focuses on the setup needed to create an event kanban rule to ensure supply for production BOM lines in a mixed lean and classic production environment. 
+description: Learn about the setup needed to create an event kanban rule to ensure supply for production BOM lines in a mixed lean and classic production environment.
 author: johanhoffmann
+ms.author: johanho
+ms.topic: how-to
 ms.date: 08/29/2018
-ms.topic: how-to 
- 
-# optional metadata 
- 
-ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, ProdTableListPage, ProdTableCreate, InventItemIdLookupPurchase, ProdTable, ProdBOM, ProdParmCostEstimation   
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.custom:
+ms.reviewer: kamaybac 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
-ms.search.validFrom: 2016-06-30 
+ms.search.validFrom: 2016-06-30
+ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, ProdTableListPage, ProdTableCreate, InventItemIdLookupPurchase, ProdTable, ProdBOM, ProdParmCostEstimation
 ms.dyn365.ops.version: AX 7.0.0 
 ---
+
 # Create a BOM line event kanban rule
 
 [!include [banner](../../includes/banner.md)]

@@ -1,24 +1,15 @@
 ---
-# required metadata
-
 title: Peripheral compatibility for Commerce 
 description: This article lists peripheral devices that have been tested for compatibility with Dynamics 365 Commerce.
-author: BrianShook
-ms.date: 11/30/2021
-ms.topic: article
-# optional metadata
-# ms.search.form:  RetailHardwareProfile
-audience: IT Pro
-# ms.devlang: 
+author: ritakimani
+ms.date: 07/29/2024
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
 ms.reviewer: josaw
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: brshoo
+ms.author: ritakimani
 ms.search.validFrom: 2017-10-08
-ms.dyn365.ops.version: 
 
 ---
 
@@ -63,7 +54,7 @@ Devices can be tested for compatibility using the peripheral simulator. For info
 
 ## Supported devices
 
-Only devices that have been previously tested for compatibility, with results submitted to Microsoft, will be supported for new implementations. This is necessary to ensure new implementations have been adequately tested and to help build a library of previously tested devices. Previously, Microsoft has performed internal testing on devices and the results have been listed in places such as on the [Peripherals](../retail-peripherals-overview.md). Due to the sheer variance in devices in the market, that process is not does not scale. So, moving forward, the majority of testing must be done by partners, customers and – most importantly – device manufacturers. Ideally, devices will be tested proactively by manufacturers to ensure that partners and customers can make peripheral selections based on the list of compatible devices.
+Only devices that have been previously tested for compatibility, with results submitted to Microsoft, will be supported for new implementations. This is necessary to ensure new implementations have been adequately tested and to help build a library of previously tested devices. Previously, Microsoft has performed internal testing on devices and the results have been listed in places such as on the [Peripherals](../retail-peripherals-overview.md). Due to the sheer variance in devices in the market, that process doesn't scale. So, moving forward, the majority of testing must be done by partners, customers and – most importantly – device manufacturers. Ideally, devices will be tested proactively by manufacturers to ensure that partners and customers can make peripheral selections based on the list of compatible devices.
 
 ## Disclaimer
 
@@ -71,7 +62,7 @@ Only devices that have been previously tested for compatibility, with results su
 
 This document is for informational purposes only. Results are based on testing specific devices and configurations in a controlled lab environment in which the specified Microsoft Dynamics software was used. Any difference in system hardware, software design or configuration, customizations, or transaction mix may affect actual performance or results.
 
-MICROSOFT MAKES NO WARRANTIES, EXPRESS OR IMPLIED, IN THIS SUMMARY. This document is provided "as-is." Information and views expressed in this document, including URL and other Internet Web site references, may change without notice. You bear the risk of using it. This document does not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes.
+MICROSOFT MAKES NO WARRANTIES, EXPRESS OR IMPLIED, IN THIS SUMMARY. This document is provided "as-is." Information and views expressed in this document, including URL and other Internet Web site references, may change without notice. You bear the risk of using it. This document doesn't provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this document for your internal, reference purposes.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

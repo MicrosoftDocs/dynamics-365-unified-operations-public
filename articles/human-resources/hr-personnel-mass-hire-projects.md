@@ -4,7 +4,7 @@
 title: Mass hire projects
 description: This article describes mass hire projects, which allow human resources specialists to create multiple positions and efficiently hire workers into those positions.
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 07/02/2024
 ms.topic: article
 # optional metadata
 
@@ -17,7 +17,7 @@ audience: Application User
 ms.assetid: 5f5eb271-76eb-4305-bd1c-5d171dafccc9
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -66,7 +66,7 @@ On the **Mass hire project** page, select **Open project** or **Close project** 
 <tbody>
 <tr>
 <td>Created</td>
-<td>You can create and modify information, but cannot create positions for the project. This is the default status for new projects.</td>
+<td>You can create and modify information, but can't create positions for the project. This is the default status for new projects.</td>
 </tr>
 <tr>
 <td>Open</td>

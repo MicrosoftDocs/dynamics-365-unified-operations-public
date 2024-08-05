@@ -1,24 +1,15 @@
 ---
-# required metadata
-
 title: Product owners
-description: This article provides information about product owners. A product owner is a group of users who are responsible for specific products. Only members of the group can release those products. The product owner can also be used in the approval workflow.
+description: Learn about product owner, including overviews and step-by-step processes for creating product owner groups and assigning a product owner to a product.
 author: t-benebo
-ms.date: 09/28/2020
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: EngChgProductOwner
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
+ms.topic: article
+ms.date: 09/28/2020
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.region: Global
 ms.search.validFrom: 2020-09-28
+ms.search.form: EngChgProductOwner
 ms.dyn365.ops.version: 10.0.15
 ---
 

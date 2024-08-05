@@ -1,26 +1,14 @@
 ---
-# required metadata
-
 title: Track inbound voyages and shipping container journeys
-description: This article explains how you can use the Inbound tracking page to track the progress of your voyages and shipping container journeys.
+description: Learn how you can use the Inbound tracking page to track the progress of your voyages and shipping container journeys with an outline on filtering activity lists.
 author: Weijiesa
-ms.date: 01/13/2021
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: ITMContainerActivityTable
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: weijiesa
-ms.search.validFrom: 2021-01-13
-ms.dyn365.ops.version: 10.0.17
+ms.reviewer: kamaybac
+ms.search.form: ITMContainerActivityTable
+ms.topic: how-to
+ms.date: 07/30/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Track inbound voyages and shipping container journeys

@@ -1,18 +1,18 @@
 ---
 title: Japan consumption tax report
-description: This article explains how to set up and generate the Japan consumption tax report for legal entities in Japan.
+description: Learn how to set up and generate the Japan consumption tax report for legal entities in Japan, including a process for enabling the consumption tax report.
 author: liza-golub
-ms.date: 03/13/2024
+ms.author: egolub
 ms.topic: how-to
+ms.date: 07/12/2024
 ms.custom: 
   - bap-template
-audience: Application User
 ms.reviewer: johnmichalak
+audience: Application User
 ms.search.region: Japan
-ms.author: egolub
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ms.search.form: LedgerConsumptionTaxCalcTrans_JP,LedgerConsumptionTaxCalcTrans2023_JP, LedgerConsumptionTaxReportTrans_JP, LedgerConsumptionTaxReportTrans2023_JP
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Japan consumption tax report
@@ -176,9 +176,9 @@ Set up ledger accounts for bad debt and collected bad debt that will be used to 
     | Item8  | Taxable sales ratio （④／⑦） | The value of this field is calculated as **Item4** ÷ **Item7**. |
     | Item9  | Amount of expenses relating to taxable purchases (tax included) | The value of this field is calculated as \[208\] + \[214\] + \[215\] + \[8208\] + \[8214\] + \[8215\] – \[9208\] – \[9214\] – \[9215\] – \[7208\] – \[7214\] – \[7215\]. |
     | Item10 | Amount of consumption taxes on taxable purchases | The value of this field is calculated as the sum of consumption tax amounts of **Item8** by tax rate. |
-    | Item11 | Amount of consideration paid for specified taxable purchases | The value of this field is calculated as the sum of consumption tax amounts of (\[210\] + \[8210\] – \[9210\] – \[7210\]) by tax rate. |
-    | Item12 | Consumption tax amount related to specified tax purchases | The value of this field is **0** (zero). |
-    | Item13 | Amount of consumption tax relating to taxable freight | The value of this field is calculated as **Item9** + **Item10** + **Item11**. |
+    | Item11 | Amount of consideration paid for specified taxable purchases | The value of this field is calculated as \[12\]. |
+    | Item12 | Consumption tax amount related to specified tax purchases | The value of this field is calculated as the sum of consumption tax amounts of **Item11** by tax rate. |
+    | Item13 | Amount of consumption tax relating to taxable freight | The value of this field is calculated as the sum of consumption tax amounts of (\[210\] + \[8210\] – \[9210\] – \[7210\]) by tax rate. |
     | Item14 | Amount of consumption tax adjustment (addition & subtraction) in the event tax liability exemption status is granted or lost | The value of this field is calculated as \[8014\] - \[7014\]. |
     | Item15 | Total amount of taxes on taxable purchases, etc. （⑩＋⑫＋⑬±⑭） | The value of this field is calculated as the sum of consumption tax amounts of (\[208\] + \[8208\] – \[9208\] – \[7208\]) by tax rate. |
     | Item16 | Taxable sales are 500 million yen or less, and if the taxable sales ratio is 95% or more (Amount of ⑮) | If the value of the **Ratio of taxable sales** field is 0.95 or more, the value of this field is calculated as **Item15**. |

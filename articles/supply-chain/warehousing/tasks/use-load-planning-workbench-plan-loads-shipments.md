@@ -1,25 +1,16 @@
---- 
-# required metadata 
- 
-title: Plan loads and shipments using the outbound load planning workbench
-description: This article shows how to use the outbound load planning workbench to create a load for a sales order. 
-author: Mirzaab
-ms.date: 07/08/2019
-ms.topic: how-to 
- 
-# optional metadata 
-ms.search.form: WHSHistory, WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench
-audience: Application User 
-# ms.devlang:  
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.author: mirzaab
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
 ---
+title: Plan loads and shipments using the outbound load planning workbench
+description: Learn how to use the outbound load planning workbench to create a load for a sales order, including a step-by-step process for creating sales orders. 
+author: perlynne
+ms.author: perlynne
+ms.topic: how-to
+ms.date: 06/07/2024
+ms.custom: 
+  - bap-template
+ms.reviewer: kamaybac
+ms.search.form: WHSHistory, WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench
+---
+
 # Plan loads and shipments using the outbound load planning workbench
 
 [!include [banner](../../includes/banner.md)]

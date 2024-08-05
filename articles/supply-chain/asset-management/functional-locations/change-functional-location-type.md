@@ -1,27 +1,26 @@
 ---
 title: Change the type of existing functional locations (preview)
-description: This article explains how to change the functional location type of an existing functional location.
+description: Learn how to change the functional location type of an existing functional location, including prerequisites and a step-by-step process.
 author: johanhoffmann
 ms.author: johanho
-ms.reviewer: kamaybac
-ms.search.form:
 ms.topic: how-to
 ms.date: 10/27/2023
-audience: Application User
-ms.search.region: Global
 ms.custom: bap-template
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.search.form:
 ---
 
 # Change the type of existing functional locations (preview)
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 <!-- KFM: Preview until further notice -->
 
 This article explains how to change the [functional location type](../setup-for-functional-locations/functional-location-types.md) of an existing functional location.
 
-[!INCLUDE [preview-note](../../includes/preview-note.md)]
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 

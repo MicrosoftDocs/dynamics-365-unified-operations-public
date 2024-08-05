@@ -1,29 +1,16 @@
 ---
-# required metadata
-
 title: Use the Asset management mobile workspace
-
-description: This article provides information about the Asset management mobile workspace.
-author: johanhoffmann 
-ms.date: 05/24/2022
-ms.topic: article
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
+description: Learn about the Asset management mobile workspace, including an overview, prerequisites, and step-by-step process for signing into the mobile app.
+author: johanhoffmann
 ms.author: johanho
+ms.topic: article 
+ms.date: 05/24/2022
+ms.custom:
+ms.reviewer: kamaybac 
+ms.search.region: Global
 ms.dyn365.ops.version: 10.0.5
+ms.search.form: 
 ms.search.validFrom: 2019-08-31
-
 ---
 
 # Use the Asset management mobile workspace

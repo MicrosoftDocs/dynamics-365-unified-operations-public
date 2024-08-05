@@ -1,29 +1,29 @@
 ---
 title: Responsible AI FAQ for Analyze demand plans with Copilot (preview)
-description: This FAQ provides answers to frequently asked questions about the AI technology that's used in the "Analyze demand plans with Copilot" feature in Demand planning app for Microsoft Dynamics 365 Supply Chain Management. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
+description: Access answers to frequently asked questions about the AI technology that's used in the "Analyze demand plans with Copilot" feature for Demand planning.
 author: t-benebo
 ms.author: benebotg
-ms.reviewer: kamaybac
+ms.topic: article
 ms.date: 04/01/2024
-ms.collection:
-  - bap-ai-copilot
 ms.custom:
   - responsible-ai-faqs
-ms.topic: article
+ms.reviewer: kamaybac
+ms.collection:
+  - bap-ai-copilot
 ---
 
 # Responsible AI FAQ for Analyze demand plans with Copilot (preview)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-This FAQ provides answers to frequently asked questions about the AI technology that's used in the *Analyze demand plans with Copilot* feature in Demand planning app for Microsoft Dynamics 365 Supply Chain Management. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
+This FAQ provides answers to frequently asked questions about the AI technology that's used in the *Analyze demand plans with Copilot* feature for Demand planning in Microsoft Dynamics 365 Supply Chain Management. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 
-[!INCLUDE [preview-note](includes/preview-note.md)]
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## What is Analyze demand plans with Copilot?
 
-The Demand planning app for Supply Chain Management lets you use Copilot to analyze your demand plans. You can select from a set of predefined questions. The app then provides answers in real time by using natural language.
+Demand planning in Supply Chain Management lets you use Copilot to analyze your demand plans. You can select from a set of predefined questions. The app then provides answers in real time by using natural language.
 
 By using Copilot, you can quickly gain valuable insights across multiple dimensions. You can use these insights to improve operational efficiency, increase profitability, and improve customer satisfaction.
 

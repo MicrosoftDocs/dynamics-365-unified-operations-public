@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Introduction to functional locations
-description: This article provides an overview of functional locations in Asset Management.
+description: Learn about functional locations in Asset Management, including outlines on the functional, process-related, and spatial functional locations.
 author: johanhoffmann
-ms.date: 06/25/2019
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: EntAssetFunctionalLocationEditSubLocations, EntAssetFunctionalLocationLookup, EntAssetFunctionalLocationRename, EntAssetFunctionalLocation
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom:
-ms.collection: get-started
-ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: johanho
+ms.topic: article
+ms.date: 06/25/2019
+ms.custom:
+ms.reviewer: kamaybac
+ms.collection: get-started
+ms.search.region: Global
 ms.search.validFrom: 2016-02-28
+ms.search.form: EntAssetFunctionalLocationEditSubLocations, EntAssetFunctionalLocationLookup, EntAssetFunctionalLocationRename, EntAssetFunctionalLocation
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ---
 
 # Introduction to functional locations

@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Prepare to maintain standard costs for manufactured items
-description: This article describes the steps for preparing to maintain costs for manufactured items. 
+description: Learn about the steps for preparing to maintain costs for manufactured items, including a step-by-step process for preparing to maintain costs. 
 author: JennySong-SH
-ms.date: 01/17/2018
+ms.author: yanansong
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: InventStdCostConv 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.date: 01/17/2018
+ms.custom:
+ms.reviewer: kamaybac 
 ms.search.region: global
 ms.industry: Manufacturing 
-ms.author: yanansong
 ms.search.validFrom: 2016-02-28
+ms.search.form: InventStdCostConv 
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 

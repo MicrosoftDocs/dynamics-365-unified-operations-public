@@ -12,6 +12,7 @@ ms.search.region: Global
 ms.search.validFrom: 2019-11-30
 # ms.search.form:  [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: Platform update 30
+ms.service: dynamics-365-op
 ---
 
 # Scripts for resolving issues in on-premises environments

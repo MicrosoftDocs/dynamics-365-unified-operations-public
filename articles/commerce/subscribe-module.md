@@ -2,16 +2,15 @@
 title: Subscribe module
 description: This article covers subscribe modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 05/18/2022
-ms.topic: article
+ms.date: 07/26/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: anupamar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.8
-ms.search.industry: 
-ms.search.form: 
+ms.custom: 
+  - bap-template
 ---
 # Subscribe module
 

@@ -1,15 +1,15 @@
 ---
 title: Style the production floor execution interface
-description: The article explains how to configure form controls so that the default production floor execution styles are applied to them.
+description: Learn how to configure form controls so that the default production floor execution styles are applied to them with an outline on forms and dialogs.
 author: johanhoffmann
-ms.date: 11/08/2021
-ms.topic: article
-ms.search.form:
-audience: Developer, IT Pro
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: johanho
+ms.topic: article
+ms.date: 11/08/2021
+ms.reviewer: kamaybac
+audience: Developer, IT Pro
+ms.search.region: Global
 ms.search.validFrom: 2021-02-22
+ms.search.form:
 ms.dyn365.ops.version: 10.0.15
 ---
 

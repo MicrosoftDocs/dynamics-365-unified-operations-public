@@ -1,22 +1,21 @@
 ---
 title: Asset maintenance scenario (preview)
-description: This article describes the asset maintenance scenario, which lets you use sensor data to create counter records that track the use of a machine asset.
+description: Learn about the asset maintenance scenario, which lets you use sensor data to create counter records that track the use of a machine asset.
 author: johanhoffmann
-ms.date: 09/02/2022
+ms.author: johanho
 ms.topic: article
-ms.search.form: IoTIntCoreScenarioManagement, IoTIntCoreScenarioConfigurationWizardV2, EntAssetCounter
-audience: Application User
+ms.date: 09/02/2022
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: johanho
 ms.search.validFrom: 2022-09-02
+ms.search.form: IoTIntCoreScenarioManagement, IoTIntCoreScenarioConfigurationWizardV2, EntAssetCounter
 ms.dyn365.ops.version: 10.0.30
 ---
 
 # Asset maintenance scenario (preview)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 The *asset maintenance* scenario lets you use sensor data to create counter records. Counter records track the use of a machine asset and are used as input to generate the maintenance schedule for machine assets.

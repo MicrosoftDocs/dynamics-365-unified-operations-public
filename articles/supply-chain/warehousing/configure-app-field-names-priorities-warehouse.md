@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Configure fields for the Warehouse Management mobile app
-description: This article describes how to define and configure names and priorities of fields shown in the Warehouse Management mobile app. 
+description: Learn how to define and configure names and priorities of fields shown in the Warehouse Management mobile app, with an outline on warehouse app field names. 
 author: Mirzaab
-ms.date: 06/20/2017
+ms.author: mirzaab
 ms.topic: article
-
-# optional metadata
-
-ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.date: 06/20/2017
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.assetid: 6cf3d7da-29bb-4d3d-aaf5-544ca9cc2980
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: mirzaab
 ms.search.validFrom: 2016-11-30
+ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
 ms.dyn365.ops.version: Version 1611
-
+ms.assetid: 6cf3d7da-29bb-4d3d-aaf5-544ca9cc2980
 ---
 
 # Configure fields for the Warehouse Management mobile app

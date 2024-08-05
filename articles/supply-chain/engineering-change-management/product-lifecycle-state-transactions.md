@@ -1,24 +1,15 @@
 ---
-# required metadata
-
 title: Product lifecycle states and transactions
-description: This article explains how you can control which transactions are allowed for each lifecycle state as an engineering product goes through its lifecycle.
+description: Learn how you can control which transactions are allowed for each lifecycle state as an engineering product goes through its lifecycle.
 author: t-benebo
-ms.date: 02/17/2022
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: EngChgEcoResProductLifecycleStateChange
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
+ms.topic: article
+ms.date: 02/17/2022
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.region: Global
 ms.search.validFrom: 2020-09-28
+ms.search.form: EngChgEcoResProductLifecycleStateChange
 ms.dyn365.ops.version: 10.0.15
 ---
 

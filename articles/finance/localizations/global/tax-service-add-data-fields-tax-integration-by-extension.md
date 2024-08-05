@@ -1,16 +1,15 @@
 ---
 title: Add data fields in the tax integration by using extensions
 description: Learn how to use X++ extensions to add data fields in the tax integration, including outlines on data models, integrations flows, and extension implementation.
-author: qire
-ms.author: wangchen
-ms.topic: article
-ms.date: 04/27/2022
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
 ms.custom: 
+  - bap-template
+ms.date: 04/27/2022
 ms.reviewer: johnmichalak
-audience: Application user
 ms.search.region: Global
 ms.search.validFrom: 2021-04-01
-ms.search.form:
 ms.dyn365.ops.version: 10.0.18
 ---
 
@@ -33,7 +32,7 @@ Here is a list of the major objects:
 
 The following illustration shows how these objects are related.
 
-[![Data model object relationship.](../media/tax-service-customize-image1.png)]
+![Data model object relationship.](../media/tax-service-customize-image1.png)]
 
 A **Document** object can contain many **Line** objects. Each object contains metadata for the tax service.
 

@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Pick line grouping
-description: This article provides an overview of pick line grouping.
+description: Access an overview of pick line grouping, including outlines on toggling the pick line grouping feature and setting up pick line grouping.
 author: Mirzaab
-ms.date: 12/15/2019
-ms.topic: article
-
-# optional metadata
-
-ms.search.form: WHSRFMenuItem,WHSWorkTemplateTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: perlynne
+ms.topic: article
+ms.date: 12/15/2019
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.region: Global
 ms.search.validFrom: 2019-12-31
+ms.search.form: WHSRFMenuItem,WHSWorkTemplateTable
 ms.dyn365.ops.version: 10.0.1
-
 ---
 
 # Pick line grouping

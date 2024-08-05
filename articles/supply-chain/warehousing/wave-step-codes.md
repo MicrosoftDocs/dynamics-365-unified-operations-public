@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Wave step codes
-description: This article provides an overview of wave step codes and how they are used.
+description: Access an overview of wave step codes and how they are used, including outlines on a setup demo and an example scenario.
 author: Mirzaab
-ms.date: 09/06/2019
-ms.topic: article
-
-# optional metadata
-ms.search.form: WHSWaveTableListPage, WHSWaveStepCode, WHSReplenishmentTemplates, WHSWaveTemplateTable
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: mirzaab
+ms.topic: article
+ms.date: 09/06/2019
+ms.custom:
+ms.reviewer: kamaybac
+ms.search.region: Global
 ms.search.validFrom: 2019-09-30
+ms.search.form: WHSWaveTableListPage, WHSWaveStepCode, WHSReplenishmentTemplates, WHSWaveTemplateTable
 ms.dyn365.ops.version: 10.0.5
-
 ---
 
 # Wave step codes

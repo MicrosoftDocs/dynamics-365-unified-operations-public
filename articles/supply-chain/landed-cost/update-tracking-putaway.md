@@ -1,15 +1,14 @@
 ---
 title: Update tracking for put away
-description: This article describes how to set up and run the Update tracking for put away periodic task.
+description: Learn how to set up and run the Update tracking for put away periodic task, including a step-by-step process running periodic tasks.
 author: Weijiesa
-ms.date: 08/02/2021
+ms.author: weijiesa
 ms.topic: article
-ms.search.form:
-audience: Application User
+ms.date: 08/02/2021
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: weijiesa
 ms.search.validFrom: 2021-08-02
+ms.search.form:
 ms.dyn365.ops.version: 10.0.21
 ---
 

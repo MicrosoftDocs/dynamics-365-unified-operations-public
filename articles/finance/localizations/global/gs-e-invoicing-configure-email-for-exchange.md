@@ -1,5 +1,5 @@
 ---
-title: Configure an email channel for Office 365 Exchange Online (preview)
+title: Configure an email channel for Office 365 Exchange Online
 description: Learn how to configure an email channel for Microsoft Office 365 Exchange Online to receive electronic invoices, including a step-by-step process.
 author: ilikond
 ms.author: ikondratenko
@@ -14,10 +14,9 @@ ms.search.form:
 ms.dyn365.ops.version: 10.0.39
 ---
 
-# Configure an email channel for Office 365 Exchange Online (preview)
+# Configure an email channel for Office 365 Exchange Online
 
 [!INCLUDE[banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 If the Electronic invoicing feature that you created imports electronic vendor invoices from attached files that are received by email, you should configure an email account channel.
 
