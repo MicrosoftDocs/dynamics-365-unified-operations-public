@@ -90,7 +90,9 @@ To set up a store, follow these steps.
 
 10. Select **Save**.
 11. Select **Electronic payment setup**, and then select **New** to map the gift card payment method to the newly created external gift card payment method for the San Francisco store.
-12. If the gift card number can be entered in the POS in addition to on the payment terminal, expand the **General** FastTab and set **Allow manual entry** to **Yes**.
+12. External gift card numbers can be added either via the Pin Pad or directly on POS. This is determined by the configuration **Allow manual card numbers** present under the “Electronic payment setup” menu of the external gift card payment method associated with the store. If this configuration is set to **Yes**, then the cashier will have to use POS to add the gift card number. To add the gift card number, POS displays a dialog box where the cashier can manually type or scan the gift card number. If the gift card requires a pin, then the Pin Pad gets activated for the customer to add the pin number.
+If this configuration is set to **No**, then the cashier will have to use Pin Pad to add the gift card number. While using the Pin Pad, the default way to add a gift card is by swiping the gift card. However, Adyen connector can be configured to give an option of manually keying the gift card number via the Pin Pad. To enable this manual entry on Pin Pad, navigate to the Hardware profile associated with the register and under the EFT service fast tab, set the property **Terminal gift card entry** as **True** for the Adyen payment connector. Refer the below image showcasing the gift card entry experience on Pin Pad.
+![Swipe or manually key in gift card on Pin Pad](./media/Terminal_Entry.png)
 
 ## POS setup
 
