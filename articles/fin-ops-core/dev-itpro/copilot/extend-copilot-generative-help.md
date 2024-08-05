@@ -1,20 +1,20 @@
 ---
-title: Add custom knowledge to generative help and guidance with Copilot
+title: Add knowledge to generative help and guidance with Copilotwith Copilot
 description: Learn about how to add custom knowledge to generative help and guidance to support users with additional information.
 author: cabeln
 ms.author: cabeln
 ms.topic: how-to
-ms.date: 08/02/2024
-ms.custom: bap-template
-ms.reviewer: 
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: how-to
+ms.date: 08/07/2024
+ms.custom: 
+  - bap-template
 ms.collection:
   - bap-ai-copilot
-audience: Application User
-ms.search.region: Global
-ms.search.form:
 ---
 
-# Add custom knowledge to generative help and guidance with Copilot
+# Add knowledge to generative help and guidance with Copilot
 
 Copilot uses *knowledge sources* as the basis of the information it provides to users. Copilot capabilities in finance and operations apps come with the out-of-the-box *conversational boosting* topic, which uses [Generative answers in Microsoft Copilot Studio](/microsoft-copilot-studio/nlu-boost-conversations) to answer user questions based on information provided by the knowledge sources it has been given.
 
@@ -23,9 +23,9 @@ Copilot uses *knowledge sources* as the basis of the information it provides to 
 >
 > The out-of-the-box *conversational boosting* topic assumes that all information in its knowledge sources relates to using product functionality. If you add unrelated knowledge, Copilot might generate responses that imply that the added knowledge is related to the use of finance and operations apps.  
 
-You can extend Copilot's knowledge by adding new knowledge to the bot in Copilot Studio. For example, you can add individual document files (using file formats such as PDF, RTF, or Microsoft Word) or link to other information sources (such as SharePoint).
+You can extend Copilot's knowledge by adding new knowledge to it in Copilot Studio. For example, you can add individual document files (using file formats such as PDF, RTF, or Microsoft Word) or link to other information sources (such as SharePoint).
 
-## Adding specific knowledge
+## Add specific knowledge
 
 To add custom knowledge sources to generative help and guidance with Copilot, use [AI general knowledge](/microsoft-copilot-studio/nlu-ai-general-knowledge).
 
@@ -48,7 +48,7 @@ Follow these steps:
 > [!TIP]
 > After adding and publishing new knowledge, you should close any open Copilot sessions and start a new session to ensure that the new knowledge is available.
 
-## Including general knowledge to answer questions
+## Include general knowledge
 
 You can add the ability for Copilot to use [AI general knowledge](https://learn.microsoft.com/microsoft-copilot-studio/nlu-ai-general-knowledge) to answer general questions. This content incudes information that's part of the used language model, Web content identified through Bing Search, and other sources. Copilot will use this information after it has exhausted the information from your specific knowledge sources. This option is enabled by default, but you can enable it if you want.
 
