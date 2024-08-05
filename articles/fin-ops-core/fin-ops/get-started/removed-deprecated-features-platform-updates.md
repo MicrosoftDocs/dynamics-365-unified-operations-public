@@ -29,13 +29,13 @@ Detailed information about objects in finance and operations apps can be found i
 
 ## Feature deprecation effective October 2024
 
-### Platform is changing the authentication protocol from password based auth to Entra Id based authentication for 10.0.39 and greater releases.
+### Platform is changing the authentication protocol from password based auth to Microsoft Entra ID based authentication for 10.0.39 and greater releases.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Improve platform security and remove dependency on password-based authentication. |
-| **Replaced by another feature?**   | Entra Id based authentication. |
-| **What do you need to do?**        | This can impact the following set of functionalities. <br><br> 1. The SQL Connection string acquired by 3rd party code which is not using any platforms public API present in platform. <br> <br>Recommendation: Switch to public API rather than reading it directly from config. <br><br> 2. Long running transactions which are running over multiple hours.<br><br>    Recommendation: Reduce the time for which the connection is opened and keep the transactions as short lived as possible. <br><br>  NOTE: LBD and CHE environment will still use password-based auth. |
+| **Replaced by another feature?**   | Microsoft Entra ID based authentication. |
+| **What do you need to do?**        | This can impact the following set of functionalities. <br><br> 1. The SQL Connection string acquired by third-party code which isn't using any platforms public API present in platform. <br> <br>**Recommendation**: Switch to public API rather than reading it directly from config. <br><br> 2. Long-running transactions that run for several hours.<br><br> **Recommendation**: Reduce the time the connection is opened and keep the transactions as short-lived as possible. <br><br>  NOTE: LBD and CHE environments still use password-based authentication. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
 | **Status**                         | End of support date is Oct 2024 starting with 10.0.39 (PU63) and greater releases. |
@@ -152,7 +152,7 @@ Migrating to SHA256 is straightforward: You need to use signature version 2 or k
 | **Replaced by another feature?**   | Customers who use the Exchange email provider should migrate to the Microsoft Graph email provider. For more information, see [Configure and send email](../../dev-itpro/organization-administration/configure-email.md). |
 | **Product areas affected**         | System administration  |
 | **Deployment option**              | All |
-| **Status**                         | The Exchange email provider will stop sending emails as of September 15, 2024. |
+| **Status**                         | The Exchange email provider stops sending emails as of September 15, 2024. |
 
 ## Feature deprecation effective October 2022
 
@@ -260,7 +260,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Replaced by another feature?**   | No, customers and ISVs should consider reimplementing their solutions based on X++ language, in place of XSLT scripting. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated <br><br>**Exception:** Customers who are currently using XLST scripting can continue to use it until they update to version 10.0.30 or later. For earlier versions, the exception will expire effective January 31, 2023. Customers with this exception have received a notification in the Message center available in the Microsoft 365 Admin Center. |
+| **Status**                         | Deprecated <br><br>**Exception:** Customers who are currently using XLST scripting can continue to use it until they update to version 10.0.30 or later. For earlier versions, the exception expires effective January 31, 2023. Customers with this exception have received a notification in the Message center available in the Microsoft 365 Admin Center. |
 
 ## Feature removal effective October 2021
 
@@ -330,7 +330,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Replaced by another feature?**   | Not currently, although we may consider adding presence from Teams in the future.|
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated. The **Skype enabled** setting was turned off starting in release 10.0.21. The removal of this setting is targeted for April 2022; however, the feature will stop functioning after the Skype team shuts down the service. |
+| **Status**                         | Deprecated. The **Skype enabled** setting was turned off starting in release 10.0.21. The removal of this setting is targeted for April 2022; however, the feature stops functioning after the Skype team shuts down the service. |
  
 ## Feature deprecation effective August 2021
 
