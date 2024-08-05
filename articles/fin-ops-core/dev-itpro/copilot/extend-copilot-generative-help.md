@@ -1,5 +1,5 @@
 ---
-title: Add knowledge to generative help and guidance with Copilot
+title: Add custom knowledge to generative help and guidance with Copilot
 description: Learn about how to add custom knowledge to generative help and guidance to support users with additional information.
 author: cabeln
 ms.author: cabeln
@@ -14,7 +14,7 @@ ms.search.region: Global
 ms.search.form:
 ---
 
-# Add knowledge to generative help and guidance with Copilot
+# Add custom knowledge to generative help and guidance with Copilot
 
 Copilot uses *knowledge sources* as the basis of the information it provides to users. Copilot capabilities in finance and operations apps come with the out-of-the-box *conversational boosting* topic, which uses [Generative answers in Microsoft Copilot Studio](/microsoft-copilot-studio/nlu-boost-conversations) to answer user questions based on information provided by the knowledge sources it has been given.
 
@@ -65,3 +65,9 @@ To add AI general knowledge to Copilot, follow these steps:
 1. On the **Overview** tab, in the **Knowledge** section, set **Allow the AI to use its own general knowledge** to *Enabled*. It's usually ready after just a few seconds.
 1. From the toolbar, select the **Test** button and then enter some test questions to see whether general knowledge is working as expected.
 1. On the toolbar, select **Publish**  to roll out the changes and make the new knowledge available to users in finance and operations apps.
+
+## See also
+
+- [Generative help and guidance with Copilot](../../fin-ops/copilot/copliot-generative-help.md)
+- [Responsible AI FAQ for Generative help and guidance with Copilot in finance and operations apps](../../fin-ops/copilot/faq-copilot-generative-help.md)
+- [Responsible AI FAQ for Suggested questions within Copilot](../../fin-ops/copilot/faq-copilot-suggested-questions.md)
