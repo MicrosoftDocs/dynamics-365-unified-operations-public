@@ -23,16 +23,18 @@ After the Invoice capture solution is installed, default configurations for usin
 
 ## System preference
 
-1. **AI Builder model** – The default model is set to **Invoice processing model**. This prebuilt model can handle the most common invoices in various languages.
+1. **AI Builder model** – The default model is set to **Invoice processing model**. This prebuilt model can handle the most common invoices in various languages. However, the prebuilt model cannot well cover more complex invoice layouts. To accommodate this, customers can consider introducing their own models, by uploading additional sample invoices, tagging the fields, and training the model. Additionally, customers can define new model fields and map them to the fields in Invoice Capture. These additional captured fields can then be transferred to Dynamics 365 Finance to fulfill specific business requirements. The custom invoice model is built on top of the prebuilt model with some limitations. Before applying the custom invoice model, please be aware that these limitations are accepted:
+   - Key-value pairs are not returned, and the "Map key-value pair fields" icon will be disabled.
+   - Confidence scores are not returned.
+   - The position of invoice lines is not returned.
+   - Only one decimal precision formatting is allowed when defining a new currency field.
+   - Currency codes are not returned, which may affect the derivation of the currency code.
 
-    > [!NOTE]
-    > In a future release, customers can create their own custom prebuilt models to handle invoices that have more complex layouts. After a model is published, additional mapping is required to map the model fields to the invoice files.
-
-2. **Channel for file upload** – A default channel is provided for directly uploading the invoice files.
-3. **File filter** – Select the file filter to apply additional filtering to incoming files at the application level.
-4. **Configuration group** – The configuration group that is used if a configuration group isn't set at the legal entity or vendor account level during invoice processing.
-5. **Use continuous learning** – Select this option to turn on the continuous learning feature.
-6. **Auto invoice cleanup** - Select this option to automatically clean up the transferred invoices and voided invoices older than 180 days every day.
+3. **Channel for file upload** – The channel is used for directly uploading invoice files.
+4. **File filter** – Select the file filter to apply additional filtering to incoming files at the application level. This will halt the invoice file processing at the 'Received files' stage.
+5. **Configuration group** – The configuration group that is used if a configuration group isn't set at the legal entity or vendor account level during invoice processing.
+6. **Use continuous learning** – Select this option to turn on the continuous learning feature. The continuous learning feature is trying to record the patterns between the invoice context and manual selected entities. Right after the invoice is successfully transferred, the relationship is recorded and applied to the invoice with the same context which arrives in the future. 
+7. **Auto invoice cleanup** - Select this option to automatically clean up the transferred invoices and voided invoices older than 180 days every day. The job will delete both the invoice data and the original invoice files.
 
 ## Manage processing rules
 
@@ -49,7 +51,9 @@ In invoice capture processing, different derivation rules are applied to ensure 
     - Purchase order number: "P.O.125", Format: "USMF-\#\#\#\#\#\#\#\#", Formatted purchase order number: "USMF-00000125"
     - Purchase order number: "125", Format: "PO-\#\#\#\#\#\#\#\#", Formatted purchase order number: "PO-00000125"
 
-- **Derive currency code for cost invoice** – Select this parameter to automatically derive the currency code from invoice master data in Dynamics 365 Finance. The logic is applied only for cost invoices, because the currency code must be identical to the currency code on the purchase order.
+- **Derive currency code for cost invoice** – Select this parameter to automatically derive the currency code from the invoice master data for invoices of type "Cost Invoice" in Dynamics 365 Finance. For purchase order invoices, if the currency codes on the derived purchase orders are unique, the system will use this currency code for the invoice.
+- **User confidence score** - Select the parameter to skip the confidence score validation.
+- **Validate unit of meansure for PO invoice** - Select the parameter to ensure the consistency of the unit of measure between the invoice line and its associated purchase order line.
 - **Validate total sales tax amount** – Select this parameter to validate the consistency between the sales tax amount on the **Sales tax** card and the total sales tax amount. If there's no sales tax line, the validation logic is skipped.
 - **Validate total amount** – Select this parameter to confirm alignment between the calculated total invoice amount and the captured total amount.
 
@@ -59,7 +63,9 @@ In invoice capture processing, different derivation rules are applied to ensure 
     *Total amount* == *Sum (line amount)* + *Sum (charge lines)* &minus; *ABS(Discount)* + *Total sales tax*
 
     If there's no invoice line, or if the sum of the line amount is zero, the total amount validation is skipped.
-
+  
+- **Credit note process** - Enable the "Support credit note" parameter to automatically classify a document as a credit note if the document header contains terms such as "Credit Note" or "Credit Memo," as defined in the "Credit Note Dictionary."
+  
 ## Manage file filters (optional)
 
 **Manage file filters** lets administrators define additional filters for incoming invoice files. Files that don't meet the filter criteria are received, but they appear in the **Received files (Pending)** list with a status of **Canceled**. Clerks can review the files and decide whether to void and obsolete them. 
