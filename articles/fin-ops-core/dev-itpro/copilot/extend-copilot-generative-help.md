@@ -1,6 +1,6 @@
 ---
-title: Add knowledge to generative help and guidance with Copilotwith Copilot
-description: Learn how to add custom knowledge to generative help and guidance to support users through additional information.
+title: Add knowledge to generative help and guidance with Copilot
+description: Learn how to add custom knowledge to generative help and guidance with Copilot to support users through additional information.
 author: cabeln
 ms.author: cabeln
 ms.topic: how-to
