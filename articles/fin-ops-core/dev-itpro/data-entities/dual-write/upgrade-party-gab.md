@@ -47,7 +47,7 @@ The following prerequisites must be in place before you can upgrade to the party
 + You must have an [Azure subscription](https://portal.azure.com/).
 + You must have access to [the templates](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Dual-write/Upgrade%20data%20to%20dual-write%20Party-GAB%20schema).
 + You must be an existing dual-write customer.
-+ If the party and global address book solution is installed, you must disable the plugin named Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead. To disable the plugin, contact support.
++ If the party and global address book solution is installed, disable the plugin named Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead. 
 
 
 ## Prepare for the upgrade
@@ -271,7 +271,7 @@ This section describes the setup that is required before you run the Party posta
 
     ![Importing the Dataverse Party records.](media/data-factory-import-party.png)
 
-9. In the data factory, run the Party electronic address and then the Party postal address templates, one after the other.
+9. In the data factory, run the Party postal address and then the Party electronic address, one after the other.
 
     + The Party postal address template upserts all postal address records in the customer engagement app, and associates them with corresponding **Account**, **Contact**, and **Vendor** records. It also generates three .csv files: ImportFONewPostalAddressLocation.csv, ImportFONewPartyPostalAddress.csv, and ImportFONewPostalAddress.csv.
     + The Party electronic address template upserts all electronic addresses in the customer engagement app, and associates them with corresponding **Account**, **Contact**, and **Vendor** records. It also generates one .csv file: ImportFONewElectronicAddress.csv.
