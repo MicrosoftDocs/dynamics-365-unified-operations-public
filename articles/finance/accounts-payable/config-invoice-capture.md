@@ -1,10 +1,10 @@
 ---
 title: Configure the Invoice capture solution
 description: Learn about how to configure the Invoice capture solution, including a step-by-step process that outlines various system preferences.
-author: sunfzam
+author: leizi2015
 ms.author: zezhangzhao
 ms.topic: overview
-ms.date: 11/20/2023
+ms.date: 08/05/2024
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -23,12 +23,12 @@ After the Invoice capture solution is installed, default configurations for usin
 
 ## System preference
 
-1. **AI Builder model** – The default model is set to **Invoice processing model**. This prebuilt model can handle the most common invoices in various languages. However, the prebuilt model cannot well cover more complex invoice layouts. To accommodate this, customers can consider introducing their own models, by uploading additional sample invoices, tagging the fields, and training the model. Additionally, customers can define new model fields and map them to the fields in Invoice Capture. These additional captured fields can then be transferred to Dynamics 365 Finance to fulfill specific business requirements. The custom invoice model is built on top of the prebuilt model with some limitations. Before applying the custom invoice model, please be aware that these limitations are accepted:
-   - Key-value pairs are not returned, and the "Map key-value pair fields" icon will be disabled.
-   - Confidence scores are not returned.
-   - The position of invoice lines is not returned.
+1. **AI Builder model** – The default model is set to **Invoice processing model**. This prebuilt model can handle the most common invoices in various languages. The prebuilt model can't understand more complex invoice layouts. To accommodate this, customers can introduce their own models, by uploading additional sample invoices, tagging the fields, and training the model. Additionally, customers can define new model fields and map them to the fields in Invoice capture. These additional captured fields can then be transferred to Dynamics 365 Finance to fulfill specific business requirements. The custom invoice model is built on top of the prebuilt model with some limitations. Before applying the custom invoice model, there are the following limitations:
+   - Key-value pairs aren't returned, and the **Map key-value pair fields** icon is disabled.
+   - Confidence scores aren't returned.
+   - The position of invoice lines isn't returned.
    - Only one decimal precision formatting is allowed when defining a new currency field.
-   - Currency codes are not returned, which may affect the derivation of the currency code.
+   - Currency codes aren't returned, which may affect the derivation of the currency code.
 
 3. **Channel for file upload** – The channel is used for directly uploading invoice files.
 4. **File filter** – Select the file filter to apply additional filtering to incoming files at the application level. This will halt the invoice file processing at the 'Received files' stage.
@@ -51,7 +51,7 @@ In invoice capture processing, different derivation rules are applied to ensure 
     - Purchase order number: "P.O.125", Format: "USMF-\#\#\#\#\#\#\#\#", Formatted purchase order number: "USMF-00000125"
     - Purchase order number: "125", Format: "PO-\#\#\#\#\#\#\#\#", Formatted purchase order number: "PO-00000125"
 
-- **Derive currency code for cost invoice** – Select this parameter to automatically derive the currency code from the invoice master data for invoices of type "Cost Invoice" in Dynamics 365 Finance. For purchase order invoices, if the currency codes on the derived purchase orders are unique, the system will use this currency code for the invoice.
+- **Derive currency code for cost invoice** – Select this parameter to automatically derive the currency code from invoices of type **Cost** invoices in Dynamics 365 Finance. For purchase order invoices, if the currency codes on the derived purchase orders are unique, this currency code is used for the invoice.
 - **User confidence score** - Select the parameter to skip the confidence score validation.
 - **Validate unit of meansure for PO invoice** - Select the parameter to ensure the consistency of the unit of measure between the invoice line and its associated purchase order line.
 - **Validate total sales tax amount** – Select this parameter to validate the consistency between the sales tax amount on the **Sales tax** card and the total sales tax amount. If there's no sales tax line, the validation logic is skipped.
@@ -64,7 +64,7 @@ In invoice capture processing, different derivation rules are applied to ensure 
 
     If there's no invoice line, or if the sum of the line amount is zero, the total amount validation is skipped.
   
-- **Credit note process** - Enable the "Support credit note" parameter to automatically classify a document as a credit note if the document header contains terms such as "Credit Note" or "Credit Memo," as defined in the "Credit Note Dictionary."
+- **Credit note process** - Select the **Support credit note** parameter to automatically classify a document as a credit note if the document header contains terms such as **Credit note** or **Credit memo**.
   
 ## Manage file filters (optional)
 
