@@ -25,9 +25,9 @@ This version of the Warehouse Management mobile app introduces the following fix
 
 - Increased stability.
 - User-based authentication (device code or username/password) is now required. Support for service-based authentication methods (certificate and client secret) has been removed. You must update the connection settings on all devices that are still using service-based authentication.
-- The Copilot button is now shown at the top of most pages (instead of as an entry on the Main Menu page) and has been relabeled to Workload because it opens the Copilot-generated workload summary.
-- The Settings button is now shown as a gear icon at the right side of the title bar on most pages (instead of as an entry on the Main Menu page).
-- Fixed an issue that could cause the app to freeze.  
+- The Copilot button is now shown at the top of most pages (instead of as an entry on the **Main Menu** page) and has been relabeled to **Workload** because it opens the Copilot-generated workload summary.
+- The **Settings** button is now shown as a gear icon at the right side of the title bar on most pages (instead of as an entry on the **Main Menu** page).
+- Fixed an issue that could cause the app to freeze.
 
 ## Version 2.3.7.0
 
