@@ -1,5 +1,10 @@
 {
   "redirections": [
+       {
+      "source_path": "articles/finance/cash-bank-management/letters-of-credit.md",
+      "redirect_url": "dynamics365/finance/cash-bank-management/letters-of-credit-import-collections",
+      "redirect_document_id": "false"
+    },     
     {
       "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/azure-data-explorer.md",
       "redirect_url": "dynamics365/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights",
