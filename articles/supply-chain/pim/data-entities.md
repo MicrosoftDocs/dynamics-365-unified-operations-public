@@ -7,7 +7,6 @@ ms.topic: conceptual
 ms.date: 04/28/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 

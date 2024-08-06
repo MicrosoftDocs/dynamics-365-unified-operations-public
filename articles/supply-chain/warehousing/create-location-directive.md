@@ -1,8 +1,8 @@
 ---
 title: Work with location directives
 description: Learn how to work with location directives. Location directives are user-defined rules that help identify pick and put locations for inventory movement.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 07/29/2024
 ms.custom: 

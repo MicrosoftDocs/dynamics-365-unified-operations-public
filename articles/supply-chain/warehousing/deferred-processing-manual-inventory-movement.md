@@ -6,10 +6,7 @@ ms.author: mirzaab
 ms.topic: article
 ms.date: 08/09/2022
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-04-27
 ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
-ms.dyn365.ops.version: 10.0.17
 ---
 
 # Deferred processing of manual inventory movement

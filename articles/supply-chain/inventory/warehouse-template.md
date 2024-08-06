@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 11/16/2017
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2017-12-31
 ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
-ms.dyn365.ops.version: 7.3
 ---
 
 # Set up a warehouse by using a warehouse configuration template

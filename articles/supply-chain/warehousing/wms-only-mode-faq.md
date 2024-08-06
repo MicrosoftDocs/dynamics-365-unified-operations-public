@@ -1,13 +1,12 @@
 ---
 title: Warehouse management only mode FAQ
 description: Access answers to frequently asked questions about Warehouse management only mode, including questions about messages in the queued state.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: conceptual
 ms.date: 04/27/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 

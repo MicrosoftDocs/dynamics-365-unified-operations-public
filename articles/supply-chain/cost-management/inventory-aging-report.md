@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 5/29/2020
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2020-5-29
 ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageDetails
-ms.dyn365.ops.version: 
 ---
 
 # Inventory aging report examples and logic

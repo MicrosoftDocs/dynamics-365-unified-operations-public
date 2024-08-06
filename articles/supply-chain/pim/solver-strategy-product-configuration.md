@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 02/19/2019
 ms.custom:
 ms.reviewer: kamaybac 
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: PCCreateProductConfigurationModel, PCProductConfigurationModelListPage 
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Solver strategy for product configuration

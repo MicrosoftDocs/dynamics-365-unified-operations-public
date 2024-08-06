@@ -6,11 +6,7 @@ ms.author: benebotg
 ms.date: 04/15/2020
 ms.topic: article
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: ReqPlanSched, ReqReduceKeyDefaultDataWizard, ReqReduceKey
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: aa9e0dfb-6052-4a2e-9378-89507c02fdf2
 ---
 

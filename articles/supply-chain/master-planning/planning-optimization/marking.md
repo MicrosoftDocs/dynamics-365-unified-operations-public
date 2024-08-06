@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 12/02/2020
 ms.custom: 
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2020-12-02
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
-ms.dyn365.ops.version: AX 10.0.13
 ---
 
 # Inventory marking

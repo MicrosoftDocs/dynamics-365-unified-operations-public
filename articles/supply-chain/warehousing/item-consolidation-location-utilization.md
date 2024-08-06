@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 08/09/2022
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-07-16
 ms.search.form: WHSPhysDimUOM, WHSMovementType, WHSItemConsolidationForm, WHSRFMenu, WHSRFMenuItem
-ms.dyn365.ops.version: 10.0.7
 ---
 
 # Item consolidation - location utilization

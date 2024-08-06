@@ -1,13 +1,12 @@
 ---
 title: Example scenario – Pack containers with the Warehouse Management mobile app
 description: Learn about a scenario that shows how to pack containers by using the Warehouse Management mobile app, including prerequisites.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 10/14/2022
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields, WHSRFMenuItem, WHSPackProfile, WHSWorker, WHSPack, WHSMobileDeviceContainerPackingPolicy
 ---
 

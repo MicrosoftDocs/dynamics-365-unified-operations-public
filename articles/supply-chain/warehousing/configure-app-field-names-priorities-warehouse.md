@@ -6,11 +6,7 @@ ms.author: mirzaab
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-11-30
 ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
-ms.dyn365.ops.version: Version 1611
 ms.assetid: 6cf3d7da-29bb-4d3d-aaf5-544ca9cc2980
 ---
 

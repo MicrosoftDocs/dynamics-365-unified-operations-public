@@ -8,11 +8,7 @@ ms.date: 07/26/2019
 ms.custom:
 ms.reviewer: kamaybac 
 audience: Application User  
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2016-06-30
 ms.search.form: InventCountGroup, InventJournalName, InventParameters, EcoResProductDetailsExtended, InventItemLocation, InventLocationIdLookup
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Define inventory counting processes

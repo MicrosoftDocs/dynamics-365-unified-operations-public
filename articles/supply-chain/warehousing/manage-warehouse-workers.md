@@ -1,15 +1,12 @@
 ---
 title: Manage warehouse workers
 description: Learn how you can use the Warehouse Management mobile app to help control and monitor the work that's carried out by employees in your warehouses.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage, WHSResetUserPassword
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: feaa6f15-49d2-41f5-9b87-453463c52e4e
 ---
 

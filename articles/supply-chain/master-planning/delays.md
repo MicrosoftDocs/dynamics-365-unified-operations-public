@@ -6,11 +6,7 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 03/31/2020
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: ReqTransFuturesListPage
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ---
 

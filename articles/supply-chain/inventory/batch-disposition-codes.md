@@ -6,10 +6,7 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 09/16/2022
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2022-09-16
 ms.search.form: PdsDispositionMaster, InventBatch
-ms.dyn365.ops.version: 10.0.29
 ---
 
 # Use batch disposition codes to mark batches as available or unavailable

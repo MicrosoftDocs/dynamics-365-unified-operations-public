@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 02/05/2021
 ms.custom: 
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-05-02
 ms.search.form: 
-ms.dyn365.ops.version: 10.0.17
 ---
 
 # Enable change management on existing products

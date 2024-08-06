@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 08/27/2019
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2019-08-31
 ms.search.form: EntAssetMaintenanceStopCopy, EntAssetMaintenanceStopObject, EntAssetObjectProductionStop, EntAssetProductionStopType, EntAssetMaintenanceStop 
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Maintenance downtime activities

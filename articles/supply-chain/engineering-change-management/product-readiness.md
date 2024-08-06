@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 09/28/2020
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-09-28
 ms.search.form:  EngChgReadinessPersonUserLookup, EngChgReadinessList_Assigned,EngChgProductReadinessPolicy, EngChgProductReadinessList, EngChgProductReadinessChecksInfo, EngChgProductReadinessChecks, EngChgProductReadinessCheckPart 
-ms.dyn365.ops.version: 10.0.15
 ---
 
 # Product readiness

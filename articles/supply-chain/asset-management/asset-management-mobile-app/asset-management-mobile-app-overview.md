@@ -7,7 +7,6 @@ ms.topic: overview
 ms.date: 09/19/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 

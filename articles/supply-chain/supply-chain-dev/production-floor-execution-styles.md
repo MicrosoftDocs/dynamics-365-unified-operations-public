@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 11/08/2021
 ms.reviewer: kamaybac
 audience: Developer, IT Pro
-ms.search.region: Global
-ms.search.validFrom: 2021-02-22
 ms.search.form:
-ms.dyn365.ops.version: 10.0.15
 ---
 
 # Style the production floor execution interface

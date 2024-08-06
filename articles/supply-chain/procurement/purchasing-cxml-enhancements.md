@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 08/03/2020
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-08-03
 ms.search.form: CatCXMLParameters, CatCXMLPurchRequest
-ms.dyn365.ops.version: 10.0.13
 ---
 
 # Purchasing cXML Enhancements

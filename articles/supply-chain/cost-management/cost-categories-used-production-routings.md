@@ -6,11 +6,7 @@ ms.author: yanansong
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: ProjCategory, RouteCostCategoryPrice
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: a3fdc76c-0a27-4723-b1c7-4322f707d89e
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: Control warehouse work by using work templates and location directives
 description: Learn how to use work templates and location directives to determine how and where work is carried out in the warehouse.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 04/19/2024
 ms.custom: 

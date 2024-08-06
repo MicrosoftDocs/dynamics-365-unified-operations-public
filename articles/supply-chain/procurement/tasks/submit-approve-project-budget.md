@@ -6,10 +6,7 @@ ms.author: henrikan
 ms.topic: article
 ms.date: 11/22/2021
 ms.reviewer: kamaybac  
-ms.search.region: Global
-ms.search.validFrom: 2016-06-30
 ms.search.form: ProjProjectsListPage, ProjTable, ProjBudget, WorkflowSubmitDialog  
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Create and submit a project budget workflow

@@ -1,16 +1,13 @@
 ---
 title: Location stocking limits
 description: Learn about the functionality for location stocking limits, including an outline of an example of purchasing order receiving.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: article
 ms.date: 11/11/2020
 ms.custom:
 ms.reviewer: kamaybac 
-ms.search.region: Global
-ms.search.validFrom: 2020-11-11
 ms.search.form: WHSLocationLimit
-ms.dyn365.ops.version: 10.0.16
 ---
 
 # Location stocking limits

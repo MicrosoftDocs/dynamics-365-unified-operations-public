@@ -6,10 +6,7 @@ ms.author: mirzaab
 ms.topic: article
 ms.date: 08/13/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-08-13
 ms.search.form: WHS
-ms.dyn365.ops.version: 10.0.18
 ---
 
 # Global mobile device parameters

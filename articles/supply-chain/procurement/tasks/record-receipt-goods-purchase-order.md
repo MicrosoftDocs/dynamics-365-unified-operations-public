@@ -8,10 +8,7 @@ ms.date: 07/09/2019
 ms.custom:
 ms.reviewer: kamaybac   
 audience: Application User  
-ms.search.region: Global
-ms.search.validFrom: 2016-06-30
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventItemIdLookupPurchase, PurchEditLines
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Record the receipt of goods on the purchase order

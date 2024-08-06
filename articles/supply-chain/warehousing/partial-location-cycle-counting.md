@@ -1,17 +1,13 @@
 ---
 title: Partial location cycle counting 
 description: Cycle count plans guide the actual counting operations. You can request that only specific products be counted instead of all on-hand inventory in a location.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: article
 ms.date: 09/02/2020
 ms.custom: 
 ms.reviewer: kamaybac
-ms.search.region: global
-ms.search.industry: Distribution
-ms.search.validFrom: 2016-02-28
 ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable, WHSRFMenuItemCycleCount, WHSCycleCountPlanListPage
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Partial location cycle counting

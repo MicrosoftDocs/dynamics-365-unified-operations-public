@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 04/11/2024
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-03-01
 ms.search.form: InventTransArchiveProcessForm
-ms.dyn365.ops.version: 10.0.18
 ---
 
 # Consolidate inventory transactions

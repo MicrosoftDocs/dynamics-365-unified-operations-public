@@ -1,8 +1,8 @@
 ---
 title: Print labels using an external service
 description: Learn how to set up and print labels by using an external service, including prerequisites and an overview of required configurations.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 05/16/2024
 ms.custom: 

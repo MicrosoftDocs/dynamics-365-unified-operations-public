@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 08/09/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: ITMTableListPage, ITMTable
 ---
 

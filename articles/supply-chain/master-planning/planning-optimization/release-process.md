@@ -6,9 +6,6 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 02/20/2023
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-07-28
-ms.dyn365.ops.version: 10.0.31
 ---
 
 # Planning Optimization release process and release history

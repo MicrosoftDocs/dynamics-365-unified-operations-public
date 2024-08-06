@@ -8,9 +8,7 @@ ms.date: 06/24/2021
 ms.reviewer: kamaybac
 audience: Application User 
 ms.search.region: Global 
-ms.search.validFrom: 2021-06-24
 ms.search.form: SalesTable, SalesTableListPage, SalesTableListPage_SalesCancelOrder
-ms.dyn365.ops.version: 10.0.20 
 --- 
  
 # Sales order FAQs
