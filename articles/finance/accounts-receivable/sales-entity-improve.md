@@ -34,7 +34,7 @@ Similarly, in the header V4 entity, the **Invoice header tax amount** field that
 To ensure a smooth transition, a **SysSetup** async script is available. This script updates the newly created columns for existing records in the **CustInvoiceJour** and **CustInvoiceTrans** tables. When customers upgrade to version 10.0.40, the **CustInvoiceTaxFieldsSysSetup** script automatically creates a batch job that's responsible for updating the **Total tax**, **Total charge**, and **Header tax** fields in the appropriate tables.
 
 > [!NOTE]
-> This script might take a few hours to run.
+> The job may take 3 days or more to avoid potential system corruption.
 
 We made these necessary improvements to address the performance issues that customers have reported. Users are encouraged to use the **Sales invoice headers V4** and **Sales invoice lines V4** entities for improved performance and efficiency.
 
