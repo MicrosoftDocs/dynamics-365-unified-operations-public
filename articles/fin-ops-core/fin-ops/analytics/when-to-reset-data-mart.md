@@ -6,7 +6,7 @@ ms.author: jiwo
 ms.topic: faq
 ms.custom: 
   - bap-template
-ms.date: 06/04/2024
+ms.date: 08/04/2024
 ms.reviewer: johnmichalak
 
 ---
@@ -27,7 +27,7 @@ If one or more of the following statements apply to your situation, your organiz
 
 - **The application database was restored**
 - **You opened a support ticket** - A support engineer instructed you to reset the data mart as part of a troubleshooting step.
-- **Large percentage of versioned records** - versioned records by themselves don't necessarily justify a data mart reset. High percentages of versioned records can degrade the overall report generation and integration performance, and incur extra database space usage. We recommend that you complete a datamart reset to remove the versioned records when there's more than 80% versioned records in the data mart.
+- **Large percentage of versioned records** - High percentages of versioned records can degrade the overall report generation and integration performance, and incur extra database space usage. We recommend that you complete a datamart reset to remove the versioned records when there's more than 80% versioned records in the data mart.
 - **Your data mart integration is (soft) disabled**
    
 > [!NOTE]
