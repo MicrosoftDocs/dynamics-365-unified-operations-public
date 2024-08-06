@@ -2,16 +2,16 @@
 title: Cash register functionality for France
 description: This article provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-ms.date: 06/11/2023
-ms.topic: article
+ms.date: 08/06/2024
+ms.topic: how-to
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: France
 ms.author: josaw
 ms.search.validFrom: 2018-02-28
-ms.dyn365.ops.version: 7.3.2
-ms.search.industry: Retail
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
+ms.custom: 
+  - bap-template
 ---
 # Cash register functionality for France
 
@@ -114,9 +114,8 @@ The signature is created and recorded in the channel database at the same time t
 1. Transfer the fiscal response to the enterprise resource planning (ERP) system in Commerce headquarters, together with the transaction or event.
 
 > [!NOTE]
-> The following hash functions aren't acceptable: CRC16, CRC32, SHA-1, and MD5. Commerce supports only the SHA256, SHA384, and SHA512 hash functions. If you want to use a different hash function, you must implement a customization.
->
-> You can use either a digital certificate that is issued by an accredited body or a self-signed certificate for digital signing. Only certificates that have RSA-2048-bit or Elliptic Curve Digital Signature Algorithm (ECDSA) 256-bit minimum private keys are acceptable. Commerce supports only RSA-2048-bit or longer keys. If you want to use an ECDSA key, you must implement a customization.
+> - The following hash functions aren't acceptable: CRC16, CRC32, SHA-1, and MD5. Commerce supports only the SHA256, SHA384, and SHA512 hash functions. If you want to use a different hash function, you must implement a customization.
+> - You can use either a digital certificate that is issued by an accredited body or a self-signed certificate for digital signing. Only certificates that have RSA-2048-bit or Elliptic Curve Digital Signature Algorithm (ECDSA) 256-bit minimum private keys are acceptable. Commerce supports only RSA-2048-bit or longer keys. If you want to use an ECDSA key, you must implement a customization.
 
 ### Digital signing of sales and return transactions
 
