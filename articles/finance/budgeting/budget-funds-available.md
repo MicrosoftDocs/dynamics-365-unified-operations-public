@@ -1,8 +1,8 @@
 ---
 title: Budget funds available
 description: Learn about the budget funds available parameter and how to configure budget control to optimize management of your organization's financial resources.
-author: mibeinar
-ms.author: music727
+author: music727
+ms.author: mibeinar
 ms.topic: article
 ms.date: 07/24/2024
 ms.reviewer: twheeloc
