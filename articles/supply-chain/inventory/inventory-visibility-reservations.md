@@ -6,10 +6,7 @@ ms.author: yufeihuang
 ms.topic: article
 ms.date: 03/03/2023
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-08-02
 ms.search.form:
-ms.dyn365.ops.version: 10.0.21
 ---
 
 # Inventory Visibility reservations

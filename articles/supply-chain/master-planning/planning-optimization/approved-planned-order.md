@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 04/07/2021
 ms.custom: 
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2020-08-21
 ms.search.form: ReqCreatePlanWorkspace
-ms.dyn365.ops.version: 10.0.13
 ---
 
 # View, manage, and approve planned orders

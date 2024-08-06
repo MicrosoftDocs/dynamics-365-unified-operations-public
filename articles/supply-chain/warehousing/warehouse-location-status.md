@@ -1,8 +1,8 @@
 ---
 title: Warehouse location status
 description: Access an overview of the Warehouse location status feature, including an outline on setting up warehouse location status.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 06/07/2024
 ms.custom:

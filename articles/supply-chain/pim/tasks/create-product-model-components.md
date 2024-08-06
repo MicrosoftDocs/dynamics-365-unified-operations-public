@@ -7,10 +7,7 @@ ms.topic: how-to
 ms.date: 08/29/2018
 ms.custom:
 ms.reviewer: kamaybac   
-ms.search.region: Global
-ms.search.validFrom: 2016-06-30
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCComponentList
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Create product model components

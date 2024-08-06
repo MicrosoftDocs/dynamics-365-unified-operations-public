@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 04/07/2022
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-09-28
 ms.search.form: EngChgLookupDynastring, EngChgProductVersionNumberRule, EngChgEcmProductRoute, EngChgEcmRequestProducts, EngChgEcmProductRoute, EngChgEcmProductPreview,EngChgEcmProductBOMItemIdLookup, EngChgEcmProductBOMConsistOf, EngChgEcmProductCreate, EngChgEcmProductLookup, EngChgProductVersionPrCompany, ngChgProductTypeLookup, EngChgProductType, EngChgProductItemPart, EngChgProductItem, EngChgEcmCategory, EngChgEcmBomDesignerEditBom, EngChgEcmBomDesigner, EngChgEcmBOMCopyDialog
-ms.dyn365.ops.version: 10.0.15
 ---
 
 # Engineering versions and engineering product categories

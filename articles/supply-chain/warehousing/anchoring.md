@@ -6,10 +6,7 @@ ms.author: mirzaab
 ms.topic: article
 ms.date: 07/29/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-07-29
 ms.search.form: WHSRFMenuItem, WHSOutboundLoadPlanningWorkbench
-ms.dyn365.ops.version: 10.0.21
 ---
 
 # Anchoring

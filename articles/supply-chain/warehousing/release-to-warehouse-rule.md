@@ -1,8 +1,8 @@
 ---
 title: Release to warehouse rule
 description: Learn about about the Release to warehouse rule feature, which provides flexibility during release to the warehouse, including a step-by-step process.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 06/07/2024
 ms.custom:

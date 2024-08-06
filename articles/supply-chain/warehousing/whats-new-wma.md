@@ -6,10 +6,7 @@ ms.author: mirzaab
 ms.topic: article
 ms.date: 08/05/2024
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-06-07
 ms.search.form:
-ms.dyn365.ops.version: 10.0.21
 ---
 
 # What's new or changed in the Warehouse Management mobile app

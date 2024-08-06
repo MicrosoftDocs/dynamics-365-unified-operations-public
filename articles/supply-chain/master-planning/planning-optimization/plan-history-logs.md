@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 06/01/2020
 ms.custom: 
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2019-10-31
 ms.search.form: MPSPlanRegenerationJobList, MPSPlanRegenerationJobLogs
-ms.dyn365.ops.version: AX 10.0.5
 ---
 
 # View plan history and planning logs

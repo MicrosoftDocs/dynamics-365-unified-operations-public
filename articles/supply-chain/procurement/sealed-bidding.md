@@ -6,10 +6,7 @@ ms.author: henrikan
 ms.topic: article
 ms.date: 08/02/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-08-02
 ms.search.form:
-ms.dyn365.ops.version: 10.0.21
 ---
 
 # Sealed bidding for RFQs

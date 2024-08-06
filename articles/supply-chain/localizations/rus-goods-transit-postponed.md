@@ -8,9 +8,7 @@ ms.date: 04/24/2019
 ms.custom: 
 ms.reviewer: kamaybac
 ms.search.region: Russia
-ms.search.validFrom: 2018-10-28
 ms.search.form: 
-ms.dyn365.ops.version: 8.1
 ---
 
 # Register goods shipped to customers (Russia)

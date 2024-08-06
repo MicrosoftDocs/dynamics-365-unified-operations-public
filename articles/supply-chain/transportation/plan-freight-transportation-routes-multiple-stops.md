@@ -7,7 +7,6 @@ ms.topic: overview
 ms.date: 11/28/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: TMSHubMaster, TMSLoadBuildTemplates, TMSRateRouteWorkbench, TMSRouteGuide, TMSRoutePlan, TMSRouteWorkbench, WHSLoadTemplate, TMSRouteSchedule, TMSRouteRateDetail
 ---
 

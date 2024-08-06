@@ -6,11 +6,7 @@ ms.author: yanansong
 ms.topic: article
 ms.date: 04/15/2017
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: BOMConsistOf, PmfFormulaCoBy
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 7c14c3e5-9476-4a79-a210-e77fc91cc7fc
 ---
 

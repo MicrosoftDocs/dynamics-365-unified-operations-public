@@ -6,10 +6,7 @@ ms.author: mirzaab
 ms.topic: article
 ms.date: 01/03/2018
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2017-01-03
 ms.search.form: WHSMobileAppField
-ms.dyn365.ops.version: AX 8.0.0
 ---
 
 # Scan bar codes using a camera in the Warehouse Management mobile app

@@ -1,8 +1,8 @@
 ---
 title: Pack containers for shipment
 description: Learn about the packing process that lets you validate inventory items and pack them into containers, including a step-by-step process.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 04/19/2024
 ms.custom: 

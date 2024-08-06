@@ -8,11 +8,7 @@ ms.date: 11/03/2017
 ms.custom:
 ms.reviewer: kamaybac
 audience: Application User  
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-06-30
 ms.search.form:
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Create a production flow version

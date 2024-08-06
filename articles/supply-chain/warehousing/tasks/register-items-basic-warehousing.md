@@ -7,11 +7,7 @@ ms.topic: how-to
 ms.date: 08/29/2018
 ms.custom:
 ms.reviewer: kamaybac    
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2016-06-30
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, WMSJournalTable, WMSJournalCreate, PurchEditLines 
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Register items for a basic warehousing enabled item using an item an item arrival journal

@@ -6,10 +6,7 @@ ms.author: johanho
 ms.topic: article
 ms.date: 04/22/2022
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2022-04-22
 ms.search.form:
-ms.dyn365.ops.version: 10.0.XX
 ---
 
 # Show vacation balances in the production floor execution interface

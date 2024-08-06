@@ -1,13 +1,12 @@
 ---
 title: Warehouse handling of inbound loads for purchase and inbound shipment orders
 description: Learn about the warehouse handling process for inbound loads for purchase and inbound shipment orders, including a step-by-step process.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 08/30/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem, WHSParameters, WHSInboundLoadPlanningWorkbench, WHSInboundShipmentOrder, WHSInboundLoadPlanningWorkbench
 ---
 

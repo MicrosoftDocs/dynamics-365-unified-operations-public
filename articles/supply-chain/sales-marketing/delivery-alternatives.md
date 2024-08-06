@@ -6,11 +6,7 @@ ms.author: henrikan
 ms.topic: article
 ms.date: 04/10/2017
 ms.reviewer: kamaybac
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.dyn365.ops.version: Version 1611
 ms.search.form: SalesLineDeliveryDetails
-ms.search.validFrom: 2016-11-30
 ms.assetid: 527f6084-44fe-41bb-924f-4386e926358a
 ---
 

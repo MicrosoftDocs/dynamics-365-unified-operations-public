@@ -6,10 +6,7 @@ ms.author: johanho
 ms.topic: article
 ms.date: 10/30/2017
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2017-12-31
 ms.search.form: SysOperationTemplateForm, ProdParmReleaseToWarehouse, WHSReleaseToWarehouseProdBOM
-ms.dyn365.ops.version: 7.3
 ---
 
 # Release BOM and formula lines to the warehouse

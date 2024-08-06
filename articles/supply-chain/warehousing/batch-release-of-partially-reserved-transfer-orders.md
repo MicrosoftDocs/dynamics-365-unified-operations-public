@@ -1,15 +1,12 @@
 ---
 title: Batch release of partially reserved transfer orders
 description: Learn how to set up and apply batch release of partially reserved transfer orders from a mobile device with an outline on where batch releases apply.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: article
 ms.date: 05/26/2017
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2017-09-20
 ms.search.form: WHSLoadPlanningWorkbench, WHSFulfillmentPolicy
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Batch release of partially reserved transfer orders
