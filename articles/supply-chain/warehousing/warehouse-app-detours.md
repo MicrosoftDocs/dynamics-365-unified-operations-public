@@ -1,8 +1,8 @@
 ---
 title: Configure detours for steps in mobile device menu items
 description: Learn how to configure detours for menu items so that workers can park the current task, perform another task, and return to the original task without data loss.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 06/07/2024
 ms.custom:

@@ -1,8 +1,8 @@
 ---
 title: Custom label layouts and printing
 description: Learn how to set up and print custom labels, including prerequisites and an outline on setting up your system to show print buttons for custom labels.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 07/23/2024
 ms.custom: 

@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 07/01/2020
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-07-01
 ms.search.form: WHSReplenishmentTemplates, WHSLocDirHint, WHSLocDirTable, WHSRequestType
-ms.dyn365.ops.version: 10.0.8
 ---
 
 # Zone threshold replenishment

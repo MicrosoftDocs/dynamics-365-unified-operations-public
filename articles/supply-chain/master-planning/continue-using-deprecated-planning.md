@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 09/18/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 ---
 

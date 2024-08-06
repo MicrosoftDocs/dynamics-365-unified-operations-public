@@ -6,11 +6,7 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 11/03/2017
 ms.reviewer: kamaybac
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.dyn365.ops.version: Version 1611
 ms.search.form: EcoResNomenclature, EcoResProductDimensionGroup, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelDetails
-ms.search.validFrom: 2016-11-30
 ms.assetid: 3fe69fb7-5c32-423c-98a8-2f53186cda68
 ---
 

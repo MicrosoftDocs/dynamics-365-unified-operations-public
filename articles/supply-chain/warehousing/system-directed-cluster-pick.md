@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 05/26/2020
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2019-12-31
 ms.search.form: WHSWorkCluster, WHSClusterProfile
-ms.dyn365.ops.version: 10.0.1
 ---
 
 # System-directed cluster picking

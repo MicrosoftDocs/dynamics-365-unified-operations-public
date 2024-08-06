@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
 audience: Application User 
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: BOMCalcTrans, InventCostTrans, ProdCalcTrans, ProdTableJour, ProdTableListPage
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: b4625d10-c852-4fda-b718-79df458de0d4
 ---
 

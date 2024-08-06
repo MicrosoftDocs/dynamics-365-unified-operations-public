@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 05/04/2022
 ms.reviewer: kamaybac
 audience: Developer, IT Pro
-ms.search.region: Global
-ms.search.validFrom: 2021-11-08
 ms.search.form:
-ms.dyn365.ops.version: 10.0.25
 ---
 
 # Customize the production floor execution interface

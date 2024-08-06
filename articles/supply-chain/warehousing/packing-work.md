@@ -1,15 +1,12 @@
 ---
 title: Packing work for packing outbound containers and processing shipments
 description: Learn about the "Packing" work order type, which manages work for packing containers and supports partial shipments of packed containers.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: article
 ms.date: 7/13/2022
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2022-08-01
 ms.search.form: WHSPackingWorkLocationSetup, WHSPack, WHSContainerTable
-ms.dyn365.ops.version: 10.0.29
 ---
 
 # Packing work for packing outbound containers and processing shipments

@@ -6,10 +6,7 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 03/18/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-03-18
 ms.search.form: PCProductConfigurationModelListPage, PCProductConfigurationModelDetails
-ms.dyn365.ops.version: 10.0.18
 ---
 
 # Product configuration model calculations

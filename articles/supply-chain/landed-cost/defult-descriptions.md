@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 12/07/2020
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-12-07
 ms.search.form: TransactionTexts
-ms.dyn365.ops.version: 10.0.17
 ---
 
 # Default descriptions for the general ledger

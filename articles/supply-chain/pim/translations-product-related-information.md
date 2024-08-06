@@ -6,11 +6,7 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 08/06/2020
 ms.reviewer: kamaybac
-ms.search.region: global
-ms.search.industry: Product information
-ms.search.validFrom: 2016-02-28
 ms.search.form: SysTranslationDetail, SysTranslationLanguage, SysTranslationList, EcoResProductListPage, EcoResProductVariants, EcoResProductDetailsExtended, EcoResProductCreate, EcoResProductDetails, RetailSizeGroupTable, RetailStyleGroupTable, RetailColorGroupTable, PCTranslationLanguageLookup, EcoResProductCategory
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: c0286bba-f54b-42de-904c-81fd796bdd1d
 ---
 

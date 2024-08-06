@@ -6,10 +6,7 @@ ms.author: mirzaab
 ms.topic: article
 ms.date: 08/09/2022
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-08-11
 ms.search.form: WHSMobileAppFlowStepListPage
-ms.dyn365.ops.version: 10.0.21
 ---
 
 # Customize step titles and instructions for the Warehouse Management mobile app

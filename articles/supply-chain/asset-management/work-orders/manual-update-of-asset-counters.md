@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 10/15/2019
 ms.custom: 
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2019-09-30
 ms.search.form: EntAssetCounter 
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Manual update of asset counters

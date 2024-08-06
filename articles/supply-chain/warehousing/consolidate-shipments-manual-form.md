@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 05/12/2020
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-05-01
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
-ms.dyn365.ops.version: 10.0.3
 ---
 
 # Consolidate shipments manually by using the Consolidate shipments page

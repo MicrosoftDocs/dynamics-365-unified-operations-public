@@ -1,13 +1,12 @@
 ---
 title: Set up a mobile device menu item for moving items by template
 description: Learn how to set up a mobile device menu item that lets workers register movements of items, including a step-by-step process.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 02/05/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: WHSRFMenuItem
 ---
 

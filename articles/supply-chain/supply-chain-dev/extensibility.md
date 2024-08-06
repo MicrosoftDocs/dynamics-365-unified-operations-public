@@ -8,11 +8,7 @@ ms.date: 08/05/2020
 ms.custom:
 ms.reviewer: kamaybac
 audience: Developer, IT Pro
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2020-07-07
 ms.search.form: ReqCreatePlanWorkspace
-ms.dyn365.ops.version: 10.0.13
 ---
 
 # Planning Optimization extensibility

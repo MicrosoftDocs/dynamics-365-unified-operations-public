@@ -6,9 +6,6 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 08/09/2022
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-07-30
-ms.dyn365.ops.version: 10.0.21
 ---
 
 # Delay tolerance (negative days)

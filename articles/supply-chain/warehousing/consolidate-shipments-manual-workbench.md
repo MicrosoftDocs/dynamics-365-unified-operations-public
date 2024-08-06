@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 08/09/2022
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-05-01
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationSetShipment
-ms.dyn365.ops.version: 10.0.6
 ---
 
 # Consolidate shipments by using the shipment consolidation workbench

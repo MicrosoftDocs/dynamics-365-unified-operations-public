@@ -9,7 +9,6 @@ ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.collection:
   - bap-ai-copilot
-ms.search.region: Global
 ms.search.form:
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: Cycle counting
 description: Learn how you can use cycle counting with the warehousing solution that is available in Warehouse management, including a step-by-step process.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 05/16/2024
 ms.custom: 

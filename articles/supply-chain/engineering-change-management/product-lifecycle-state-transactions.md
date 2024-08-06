@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 02/17/2022
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-09-28
 ms.search.form: EngChgEcoResProductLifecycleStateChange
-ms.dyn365.ops.version: 10.0.15
 ---
 
 # Product lifecycle states and transactions
