@@ -2267,6 +2267,8 @@ items:
           href: copilot/purchase-order-changes-after-confirmation-enable.md
         - name: Enable generative help and guidance with Copilot
           href: copilot/enable-copliot-generative-help.md
+        - name: Add knowledge to generative help and guidance with Copilot
+          href: copilot/extend-copilot-generative-help.md
       - name: Extending Copilot capabilities in finance and operations apps
         items:
         - name: Overview
