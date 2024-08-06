@@ -4,7 +4,7 @@ description: Learn about the budget control feature and how to configure budget 
 author: jchrist  
 ms.author: jchrist
 ms.topic: overview
-ms.date: 05/23/2024
+ms.date: 08/06/2024
 ms.reviewer: twheeloc
 ms.collection: get-started
 ms.custom: evergreen
@@ -70,7 +70,11 @@ Next, on the **Over budget permissions** tab, you can specify user groups. You c
 Next, on the **Budget funds available** tab, you can define the formula that is used to calculate available budget funds. Depending on how conservatively an organization manages its financial resources, or depending on regulations or industry requirements, the calculation can include draft or unposted documents. 
 
 > [!NOTE]
-> If the calculation is modified during a budget cycle, the changes won't affect any documents that previously passed the budget control checks and were posted or completed. A feature that is named **Only track amounts in the budget funds available calculation** lets you change what data is tracked in the BudgetSourceTracking tables. When this feature is turned on, amounts are stored only if they are selected to be used in the available budget funds calculation. For more information, see [Budget funds available](budget-funds-available.md).
+> If the calculation is modified during a budget cycle, the changes won't affect any documents that previously passed the budget control checks and were posted or completed.
+
+> [!Important]
+> A feature named **Only track amounts in the budget funds available calculation** lets you change what data is tracked in the BudgetSourceTracking tables. When this feature is turned on, amounts are stored only if they are selected to be used in the available budget funds calculation. Some budget control configuration options must have specific settings to work correctly. For more information, see [Budget funds available](budget-funds-available.md).
+
 
 ### Documents and journals
 
@@ -106,6 +110,15 @@ If budget control warning messages should be suppressed for any user groups, you
 ### Activate budget control
 
 After budget control has been configured, you can turn it on and activate it on the **Activate budget control** tab. The draft version will then become effective.
+
+> [!Important]
+> When a feature **Only track amounts in the budget funds available calculation** is enabled, budget control must have specific rule configurations to work correctly. Otherwise, you will not be able activate the defined budget control configuration. The following table shows the guidelines that must be followed. For more information, see [Budget funds available](budget-funds-available.md).
+>
+| If this option is selected | This option must also be selected |
+| ------------------------- | -------------------------------- |
+| Budget reservations for pre-encumbrances | Budget reservations for encumbrances *and* Actual expenditures |
+| Budget reservations for encumbrances | Actual expenditures |
+| Budget reservations for encumbrances with Purchase Requisition type documents | Budget reservations for pre-encumbrances |
 
 > [!Important]
 > After budget control is turned on and active, and after transactions are posted, it should not be turned off mid-year. When budget control is turned off, activities aren't recorded for budget control purposes, and budget checks are no longer performed. Therefore, documents that have already been posted might not correctly reflect any relieving amounts or balances in inquiries and reports that are related to budget control. These include budget control statistics for any downstream or adjusting documents and journals. 
