@@ -6,8 +6,7 @@ ms.author: cabeln
 ms.topic: how-to
 ms.reviewer: kamaybac
 ms.search.form:
-ms.topic: how-to
-ms.date: 08/07/2024
+ms.date: 08/06/2024
 ms.custom: 
   - bap-template
 ms.collection:
@@ -37,7 +36,7 @@ To add specific knowledge to Copilot, follow these steps.
 1. Open [Copilot Studio](https://copilotstudio.microsoft.com/), and select the Dataverse environment that is associated with your finance and operations apps environment.
 1. On the navigation pane on the left, select **Copilots**.
 1. Open the copilot that is named *Copilot for finance and operations apps*.
-1. On the **Knowledge** tab, select **Add knowledge**, and then select the type of knowledge source that you want to add. For example, select **Files** to [upload files](https://learn.microsoft.com/microsoft-copilot-studio/nlu-documents) from your local computer as additional knowledge.
+1. On the **Knowledge** tab, select **Add knowledge**, and then select the type of knowledge source that you want to add. For example, select **Files** to [upload files](/microsoft-copilot-studio/nlu-documents) from your local computer as additional knowledge.
 1. The new knowledge source is added to the grid. The new knowledge might take a few minutes to become available for answering questions. You can follow the progress in the **Status** column.
 1. When the system finishes processing the new knowledge source, you can test it. On the toolbar, select **Test**. Then enter some test questions to determine whether the new knowledge source works as you expect.
 1. On the toolbar, select **Publish** to roll out the changes and make the new knowledge available to users in finance and operations apps.
@@ -50,7 +49,7 @@ To add specific knowledge to Copilot, follow these steps.
 
 ## Include general knowledge
 
-You can add the capability for Copilot to use [AI general knowledge](https://learn.microsoft.com/microsoft-copilot-studio/nlu-ai-general-knowledge) to answer general questions. This content includes information that is part of the language model that is used, web content that is identified through Bing Search, and information from other sources. Copilot uses this information after it exhausts the information from your custom knowledge sources.
+You can add the capability for Copilot to use [AI general knowledge](/microsoft-copilot-studio/nlu-ai-general-knowledge) to answer general questions. This content includes information that is part of the language model that is used, web content that is identified through Bing Search, and information from other sources. Copilot uses this information after it exhausts the information from your custom knowledge sources.
 
 This capability is disabled by default, but you can enable it if you want to use it.
 
