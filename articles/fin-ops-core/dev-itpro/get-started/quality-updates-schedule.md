@@ -143,7 +143,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | August 26 to August 29, 2024 | September 7 to September 8, 2024 |
 | Station 6 | August 27 to August 30, 2024 | September 7 to September 8, 2024 |
 
-### <a name="schedule"></a>[NEW] Proactive quality update upcoming 10.0.40 Release-1 train schedule
+### <a name="schedule"></a>Proactive quality update upcoming 10.0.40 Release-1 train schedule
 
 **App version: 10.0.1935.69**
 
