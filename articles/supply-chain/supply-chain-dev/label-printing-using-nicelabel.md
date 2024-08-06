@@ -52,7 +52,7 @@ Before you can access NiceLabel Cloud by using either the Cloud Print API or the
 > [!IMPORTANT]
 > When you register in the NiceLabel Developer Portal, be sure to make a copy of your primary or secondary subscription key. (Use the primary key by default.) You'll need this key to configure the external service definition later.
 
-If you want to use printers that are enabled for the Internet of Things (IoT), you must connect them to your NiceLabel Cloud instance. For instructions, see [Cloud Printers](https://help.nicelabel.com/hc/en-001/articles/4407466158737-Cloud-Printers) in the NiceLabel Help Center.
+If you want to use printers that are enabled for the Internet of Things (IoT), you must connect them to your NiceLabel Cloud instance. For instructions, see [Printers](https://help.nicelabel.com/hc/en-001/articles/23460015754001-Printers) in the NiceLabel Help Center.
 
 ## Configure Supply Chain Management to print to cloud printers by using the Cloud Print API
 
