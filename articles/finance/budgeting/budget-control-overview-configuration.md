@@ -1,8 +1,8 @@
 ---
 title: Budget control overview
 description: Learn about the budget control feature and how to configure budget control to optimize management of your organization's financial resources.
-author: jchrist  
-ms.author: jchrist
+author: music727  
+ms.author: mibeinar
 ms.topic: overview
 ms.date: 08/06/2024
 ms.reviewer: twheeloc
@@ -73,7 +73,7 @@ Next, on the **Budget funds available** tab, you can define the formula that is 
 > If the calculation is modified during a budget cycle, the changes won't affect any documents that previously passed the budget control checks and were posted or completed.
 
 > [!Important]
-> A feature named **Only track amounts in the budget funds available calculation** lets you change what data is tracked in the BudgetSourceTracking tables. When this feature is turned on, amounts are stored only if they are selected to be used in the available budget funds calculation. Some budget control configuration options must have specific settings to work correctly. For more information, see [Budget funds available](budget-funds-available.md).
+> The **Only track amounts in the budget funds available calculation** feature changes what data is tracked in the BudgetSourceTracking tables. When this feature is on, amounts are stored only if they are selected to be used in the available budget funds calculation. Some budget control configuration options must have specific settings to work correctly. For more information, see [Budget funds available](budget-funds-available.md).
 
 
 ### Documents and journals
@@ -112,13 +112,15 @@ If budget control warning messages should be suppressed for any user groups, you
 After budget control has been configured, you can turn it on and activate it on the **Activate budget control** tab. The draft version will then become effective.
 
 > [!Important]
-> When a feature **Only track amounts in the budget funds available calculation** is enabled, budget control must have specific rule configurations to work correctly. Otherwise, you will not be able activate the defined budget control configuration. The following table shows the guidelines that must be followed. For more information, see [Budget funds available](budget-funds-available.md).
->
+> The **Only track amounts in the budget funds available calculation** feature is enabled, budget control has specific rule configurations to work correctly. Otherwise, you won't be able activate the defined budget control configuration. For more information, see [Budget funds available](budget-funds-available.md).
+
+The following table shows the guidelines to follow:  
+
 | If this option is selected | This option must also be selected |
 | ------------------------- | -------------------------------- |
-| Budget reservations for pre-encumbrances | Budget reservations for encumbrances *and* Actual expenditures |
-| Budget reservations for encumbrances | Actual expenditures |
-| Budget reservations for encumbrances with Purchase Requisition type documents | Budget reservations for pre-encumbrances |
+| **Budget reservations for pre-encumbrances** | **Budget reservations for encumbrances *and* Actual expenditures** |
+| **Budget reservations for encumbrances** | **Actual expenditures** |
+| **Budget reservations for encumbrances with Purchase requisition type documents** | **Budget reservations for pre-encumbrances** |
 
 > [!Important]
 > After budget control is turned on and active, and after transactions are posted, it should not be turned off mid-year. When budget control is turned off, activities aren't recorded for budget control purposes, and budget checks are no longer performed. Therefore, documents that have already been posted might not correctly reflect any relieving amounts or balances in inquiries and reports that are related to budget control. These include budget control statistics for any downstream or adjusting documents and journals. 
@@ -126,9 +128,9 @@ After budget control has been configured, you can turn it on and activate it on 
 Additionally, note that transactions, including budget register entries, that have been posted before budget control is turned on aren't considered for budget control. Therefore, it's a good idea to turn on budget control only at the beginning of a new budget cycle. Make sure that budget register entries that contain beginning budget balances for budget control have their budget balances updated only after budget control is turned on. Any open document (for example, a purchase order) will be checked for available budget funds and will get a budget reservation for budget control when a user manually triggers a budget control check in the document.
 
 ## Using budget control
-After budget control is turned on, you will receive budget control warning and error messages in documents and journals that are configured for budget control. Remember, you can configure budget control so that users are warned when they exceed the budget funds, but can still continue to confirm or post transactions. You can view the details of failed budget checks on the **Budget control errors and warnings** page.
+After budget control is turned on, you receive budget control warning and error messages in documents and journals that are configured for budget control. Remember, you can configure budget control so that users are warned when they exceed the budget funds, but can still continue to confirm or post transactions. You can view the details of failed budget checks on the **Budget control errors and warnings** page.
 
-From this page, users can drill into the **Budget control statistics by period** page to view budget availability details and reservations for a selected budget control dimension combination. Users can also drill into the **Budget control statistic** page to view the budget availability for all financial dimension combinations that are used in budget control. 
+From this page, users can drill into the **Budget control statistics by period** page to view budget availability details and reservations for a selected budget control dimension combination. Users can drill into the **Budget control statistic** page to view the budget availability for all financial dimension combinations used in budget control. 
 
 If budget control is turned on for purchase orders, the budget manager can use the **Ledger budgets and forecasts** workspace to review the queue of all unconfirmed purchase orders that have budget check warnings and errors. If the budget manager has permissions over budgets configured, the purchase orders can be confirmed directly in the workspace.
 
