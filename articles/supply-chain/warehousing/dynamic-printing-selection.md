@@ -23,7 +23,10 @@ When dynamic printer selection is used, and a worker requests printing, the syst
 
 ## Prerequisites
 
-This feature requires Supply Chain Management version 10.0.36 or higher.
+To use the features described in this article, your system must meet the following requirements:
+
+- Dynamic printer selection requires Microsoft Dynamics 365 Supply Chain Management version 10.0.36 or later.
+- The added ability to set up default printers for specific mobile devices (on the **Devices** tab of the **Default label printers** page) requires Supply Chain Management version 10.0.41.
 
 ## Basic printing and label layout setup
 
