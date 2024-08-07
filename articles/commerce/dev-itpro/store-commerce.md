@@ -3,15 +3,14 @@ title: Store Commerce app
 description: This article explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app for Windows.
 author: anush6121
 ms.author: anvenkat
-ms.date: 07/02/2024
+ms.date: 08/07/2024
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 audience: Developer, IT Pro
-ms.reviewer: johnmichalak
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.search.validFrom: 2022-03-01
-
+ms.custom: 
+  - bap-template
 ---
 
 # Store Commerce app
@@ -230,6 +229,13 @@ You can also use the **help** command in PowerShell to find information about al
 | --useremoteappcontent | Download and display the Store Commerce UI from the Commerce Scale Unit (CSU.) If this parameter is omitted, the local application content that is deployed with Store Commerce is used. For more information, see [Hybrid deployment](#hybrid-deployment). |
 | --verbosity | Specifies the verbosity of logs (0 - trace, 1 - debug, 2 - informational, 3 - warning, 4 - error, 5 - critical, 6 - silent). When this parameter is omitted, the default value of 2 is used. |
 | --version | Shows information about the app version. |
+
+### Uninstall Store Commerce
+
+To uninstall the Store Commerce application from a device, follow these steps.
+
+1. Open PowerShell in administrator mode and navigate to the folder where you downloaded the Store Commerce installer executable.
+1. In PowerShell, find the Store Commerce installer executable and pass the `StoreCommerce.Installer.exe uninstall` parameter to uninstall the app. When executed, this command runs immediately and doesn't provide a confirmation dialog before uninstalling Store Commerce.
 
 ### Activate Store Commerce
 
