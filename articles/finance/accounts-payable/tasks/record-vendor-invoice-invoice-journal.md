@@ -36,13 +36,13 @@ This task guide shows how to record vendor invoices that aren't associated with 
     * The **Due date** is calculated based on the **Terms of payment**.  
     * The **Cash discount** defaults from the **Vendor account**.
 12. If you have enabled the Vendor invoice journal workflow, click **Workflow > Submit**.
-    * When your submission is approved, the date will be advanced to the first day of the next open period, if the transaction posting date falls within a period that is **On hold** or **Closed** for ledger posting.
+    * When your submission is approved and the transaction posting date falls within a period that's **On hold** or **Closed** for ledger posting, the date is advanced to the first day of the next open period.
 13. Click **Post**.
 14. Close the page.
 
 ## Validation and simulation posting in vendor invoice journal
 
-On the **Vendor invoice** journal, the **Validation** and **Simulate posting** options are available on the **Validate** menu. 
+On the **Vendor invoice** journal, the **Validate** and **Simulate posting** options are available on the **Validate** menu. 
  - **Validate** -  The journal is tested for specific error conditions. The validation returns only successful or error messages. 
  - **Simulate posting** - The posting process is run without posting the journal and the details of voucher transactions are diplayed. 
 
