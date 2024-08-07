@@ -1,29 +1,24 @@
 ---
-# required metadata
-
 title: Configure and install Retail hardware station
-description: This article explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.
+description: This article explains how to configure, download, and install the legacy Retail hardware station by using self-service functionality. It also explains how to uninstall Retail hardware station.
 author: anush6121
 ms.author: anvenkat
-ms.date: 07/02/2024
+ms.date: 08/07/2024
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.search.form: RetailHardwareStation
-ms.reviewer: johnmichalak
+ms.reviewer: v-chrgriffin
 ms.assetid: eb164a9d-5538-4b6f-81ad-87e05d92eca5
 ms.search.region: Global
-ms.search.industry: Retail
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 
+  - bap-template
 ---
 
 # Configure and install Retail hardware station
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to configure, download, and install the legacy Commerce hardware station by using self-service functionality. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](Enhanced-Mass-Deployment.md). It also explains how to uninstall Retail hardware station.
+This article explains how to configure, download, and install the legacy Retail hardware station by using self-service functionality. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](Enhanced-Mass-Deployment.md). It also explains how to uninstall Retail hardware station.
 
 > [!IMPORTANT]
 > - It is critical to note that this component uses a server certificate. Server certificates must be managed for expiration. By default, a certificate expires in one calendar year (365 days).
