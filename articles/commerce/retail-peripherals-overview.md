@@ -628,10 +628,10 @@ By default, SSL and all version of TLS except TLS 1.3 are disabled starting with
 
 To edit or enable these values, follow these steps:
 
-1. Press the Windows logo key+R to open a **Run** window.
-2. In the **Open** field, enter "Regedit", and then select **OK**.
-3. If a **User Account Control** dialog appears, select **Yes**.
-4. In the **Registry Editor** window, go to **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\SecurityProviders\\SCHANNEL\\Protocols**.
+1. Select the Windows key + R to open a **Run** command window.
+1. In the **Open** field, enter "Regedit", and then select **OK**.
+1. If a **User Account Control** dialog appears, select **Yes**.
+1. In the **Registry Editor** window, go to **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\SecurityProviders\\SCHANNEL\\Protocols**.
 
    The following keys are automatically entered for Commerce versions 10.0.42 and later to allow for TLS 1.3 only:
 
