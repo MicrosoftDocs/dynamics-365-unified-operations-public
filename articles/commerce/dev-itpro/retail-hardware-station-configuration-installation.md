@@ -172,7 +172,7 @@ Current security standards state that the following options should be set in a p
 - Only Transport Layer Security (TLS) version 1.3 (or the current highest version) should be enabled and used.
 
 > [!NOTE]
-> By default, SSL and all version of TLS except TLS 1.3 are disabled starting with Commerce versions 10.0.42 and later. For Commerce versions 10.0.41 and earlier, TLS 1.2 is used instead. To edit or enable these values, follow these steps:
+> By default, SSL and all versions of TLS except TLS 1.3 are disabled starting with Commerce versions 10.0.42 and later. For Commerce versions 10.0.41 and earlier, TLS 1.2 is used instead. To edit or enable these values, follow these steps:
 >   1. Select the Windows key + R to open a **Run** command window.
 >   1. In the **Open** field, enter "Regedit", and then select **OK**.
 >   1. If a **User Account Control** dialog appears, select **Yes**.
