@@ -190,6 +190,7 @@ Current security standards state that the following options should be set in a p
 >        - SSL 3.0\Client:Enabled=0
 >        - SSL 2.0\Server:Enabled=0
 >        - SSL 2.0\Client:Enabled=0
+>
 >      - The following keys are automatically entered for Commerce versions 10.0.41 and earlier to allow for TLS 1.2 only:
 >        - TLS 1.2\Server:Enabled=1
 >        - TLS 1.2\Client:Enabled=1
