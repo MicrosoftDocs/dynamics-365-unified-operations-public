@@ -26,11 +26,23 @@ This article explains how to configure, download, and install the legacy Retail 
 
 ## Prerequisites
 
-When running Dynamics 365 Commerce version 10.0.41, you must add the following registry entries to support Transport Layer Security (TLS) 1.3.
-- TLS 1.2\Server:Enabled=0
+When configuring hardware station for Dynamics 365 Commerce versions 10.0.42 and later, you must add the following registry entries to support Transport Layer Security (TLS) 1.3:
 - TLS 1.3\Server:Enabled=1
-- TLS 1.2\Client:Enabled=0
 - TLS 1.3\Client:Enabled=1
+- TLS 1.2\Server:Enabled=0
+- TLS 1.2\Client:Enabled=0
+- TLS 1.1\Server:Enabled=0
+- TLS 1.1\Client:Enabled=0
+- TLS 1.0\Server:Enabled=0
+- TLS 1.0\Client:Enabled=0
+- SSL 3.0\Server:Enabled=0
+- SSL 3.0\Client:Enabled=0
+- SSL 2.0\Server:Enabled=0
+- SSL 2.0\Client:Enabled=0
+
+When configuring hardware station for Commerce versions 10.0.41 and earlier, you must add the following registry entries to support TLS 1.2:
+- TLS 1.2\Server:Enabled=1
+- TLS 1.2\Client:Enabled=1
 - TLS 1.1\Server:Enabled=0
 - TLS 1.1\Client:Enabled=0
 - TLS 1.0\Server:Enabled=0
@@ -155,28 +167,37 @@ Current security standards state that the following options should be set in a p
 
 - SSL should be disabled.
 - Only Transport Layer Security (TLS) version 1.3 (or the current highest version) should be enabled and used.
+- By default, SSL and all version of TLS except TLS 1.3 are disabled starting with Commerce versions 10.0.42 and later. For Commerce versions 10.0.41 and earlier, TLS 1.2 is used instead. To edit or enable these values, follow these steps:
+    1. Select the Windows key + R to open a **Run** command window.
+    1. In the **Open** field, enter "Regedit", and then select **OK**.
+    1. If a **User Account Control** dialog appears, select **Yes**.
+    1. In the new **Registry Editor** window, go to **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\SecurityProviders\\SCHANNEL\\Protocols**.
 
-    > [!NOTE]
-    > By default, SSL and all version of TLS except TLS 1.3 are disabled. To edit or enable these values, follow these steps:
-    >
-    > 1. Press the Windows logo key+R to open a **Run** window.
-    > 2. In the **Open** field, type **Regedit**, and then select **OK**.
-    > 3. If a **User Account Control** window appears, select **Yes**.
-    > 4. In the new **Registry Editor** window, go to **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\SecurityProviders\\SCHANNEL\\Protocols**. The following keys have been automatically entered to allow for TLS 1.3 only:
-    >    
-    >    - TLS 1.2\\Server:Enabled=0
-    >    - TLS 1.3\\Server:Enabled=1
-    >    - TLS 1.2\\Client:Enabled=0
-    >    - TLS 1.3\\Client:Enabled=1
-    >    - TLS 1.1\\Server:Enabled=0
-    >    - TLS 1.1\\Client:Enabled=0
-    >    - TLS 1.0\\Server:Enabled=0
-    >    - TLS 1.0\\Client:Enabled=0
-    >    - SSL 3.0\\Server:Enabled=0
-    >    - SSL 3.0\\Client:Enabled=0
-    >    - SSL 2.0\\Server:Enabled=0
-    >    - SSL 2.0\\Client:Enabled=0
+       The following keys are automatically entered for Commerce versions 10.0.42 and later to allow for TLS 1.3 only: 
+        - TLS 1.3\Server:Enabled=1
+        - TLS 1.3\Client:Enabled=1
+        - TLS 1.2\Server:Enabled=0
+        - TLS 1.2\Client:Enabled=0
+        - TLS 1.1\Server:Enabled=0
+        - TLS 1.1\Client:Enabled=0
+        - TLS 1.0\Server:Enabled=0
+        - TLS 1.0\Client:Enabled=0
+        - SSL 3.0\Server:Enabled=0
+        - SSL 3.0\Client:Enabled=0
+        - SSL 2.0\Server:Enabled=0
+        - SSL 2.0\Client:Enabled=0
 
+        The following keys are automatically entered for Commerce versions 10.0.41 and earlier to allow for TLS 1.2 only:
+        - TLS 1.2\Server:Enabled=1
+        - TLS 1.2\Client:Enabled=1
+        - TLS 1.1\Server:Enabled=0
+        - TLS 1.1\Client:Enabled=0
+        - TLS 1.0\Server:Enabled=0
+        - TLS 1.0\Client:Enabled=0
+        - SSL 3.0\Server:Enabled=0
+        - SSL 3.0\Client:Enabled=0
+        - SSL 2.0\Server:Enabled=0
+        - SSL 2.0\Client:Enabled=0
 - No additional network ports should be open, unless they are required for known, specified reasons.
 - Cross-origin resource sharing must be disabled and must specify the allowed origins that are accepted.
 - Only trusted certificate authorities should be used to procure certificates that will be used on computers that run Retail hardware station.
