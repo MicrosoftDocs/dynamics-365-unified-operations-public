@@ -1,24 +1,23 @@
 ---
 title: Peripherals
-description: This article explains the concepts that are related to Microsoft Dynamics 365 Commerce peripherals. 
+description: This article provides an overview of the concepts related to Microsoft Dynamics 365 Commerce peripherals. 
 author: anush6121
 ms.author: anvenkat
-ms.date: 07/17/2024
-ms.topic: conceptual
-ms.custom: 
-  - bap-template
+ms.date: 08/07/2024
+ms.topic: overview
 audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
-
+ms.custom: 
+  - bap-template
 ---
 
 # Peripherals
 
 [!include[banner](includes/banner.md)]
 
-This article explains the concepts that are related to Microsoft Dynamics 365 Commerce peripherals. It describes the various ways that peripherals can be connected to the point of sale (POS) and the components that are responsible for managing the connection with the POS.
+This article provides an overview of the concepts related to Microsoft Dynamics 365 Commerce peripherals. It describes the various ways that peripherals can be connected to the point of sale (POS) and the components that are responsible for managing the connection with the POS.
 
 ## Prerequisites
 
