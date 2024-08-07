@@ -18,9 +18,16 @@ ms.custom:
 
 <!--KFM: Preview until further notice. -->
 
-This feature lets you create transfer order lines from sales order lines and links the related lines together. You can choose to create a new transfer order or select an existing one to add the new lines to. <!--KFM: Can we briefly describe the business value of doing this? What are the benefits? What problems does this solve? Maybe use an example scenario. -->
+Dynamics 365 Supply Chain Management lets you create transfer order lines directly from sales order lines, which is useful when the goods you need to supply are located in another warehouse than the one you're shipping from. The feature described in this article expands on this functionality by linking and marking the related transfer and sales order lines together. This makes it easier to track the relationship between the sales and transfer orders and helps you manage your inventory more effectively. The feature adds the following capabilities and benefits:
 
-Automatic marking is supported for non-settled item model groups, but catch-weight items aren't supported for automatic marking. <!--KFM: It's not clear what this does and how it's related. Explain what "marking" is what "automatic marking" means. Maybe this relates to https://learn.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/marking.  Add some context around what "non-settled" is. Later we mention "standard moving average items"; maybe explain that here too and tell what it means. -->
+- View all transfer orders generated for a specific sales order line.
+- View all sales orders related to a specific transfer order line.
+- Choose to add transfer lines to either an existing or newly created transfer order when creating them from a sales order.
+- Avoid creating multiple transfer orders for the same sales order line. The system shows a warning if you try to do this action.
+- Automatically reserve transfer order quantities for the sales order from which they were created, thereby preventing them from being used to fulfill another sales order by mistake. (The inventory transaction record for the sales order line is automatically set with an **Issue** status of *Reserved ordered*, which means that when the transferred stock is received, it's immediately reserved against the sales order.)
+- Automatically mark new transfer order lines with their related sales order lines. Marking matches specific inventory receipts (transfer order line inventory transactions) with inventory issues (sales order line inventory transactions) for the purpose of inventory costing.  <!--KFM: Please confirm this -->
+
+<!--KFM: Maybe add a bullet to describe what the **Reserve items automatically** function does. -->
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -33,72 +40,88 @@ To use the features described in this article, your system must meet the followi
 
 ## Add and link lines to a new or existing transfer order from a sales order
 
-<!--KFM: Introduce this procedure. Explain when/why we would want to do this and what the result will be. -->
+To create transfer order lines directly from sales order lines, link the lines together, and (optionally) reserve the transferred inventory, follow these steps:
 
 1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 1. Open the sales order for which you want to add lines to a transfer order.
 1. On the **Sales order lines** FastTab, select the lines that you want to add to the transfer order.
 1. From the **Sales order lines** FastTab toolbar, select **Product and supply** \> **New** \> **Transfer order**.
 1. The **Transfer order** dialog opens. Make the following settings:
-    - **From warehouse** - Select warehouse from which the items will be transferred.
-    - **To warehouse** - Select warehouse to which the items will be transferred. This is the warehouse that is associated with the sales order line and should already be selected.
+    - **From warehouse** - Select warehouse from which the items should be transferred.
+    - **To warehouse** - Select warehouse to which the items should be transferred. This is the warehouse associated with the sales order line and should already be selected.
     - **Add to an existing transfer order** - If you want to add the items to an existing transfer order, select the transfer order from the list. The list only shows open transfer orders that use the **From warehouse** and **To warehouse** selected in this dialog. If you want to create a new transfer order, leave this field blank.
     - **Ship date** - The date on which the items should be shipped.
-    - **Reserve items automatically** - If you want the items to be reserved automatically, set this to *Yes*. <!--KFM: A little more info would be nice. What does this actually do? What if and why would I set this to *No*? -->
+    - **Reserve items automatically** - If you want the items to be reserved automatically for the sales order that created the transfer order line, set this option to *Yes*. <!--KFM: Are we reserving the stock for the sales order (in the To warehouse) or for the transfer order (in the From warehouse), or both? -->
+
 1. Select **OK**.
 1. The new or selected transfer order opens. You can now view the transfer order lines and other details.
 
 ## View transfer order lines related to a sales order
 
-<!--KFM: Introduce this procedure. Explain when/why we would want to do this and what the result will be. -->
+When you're reviewing sales orders, you can confirm whether the required transfer order lines exist for each sales order line. To do so, follow these steps:
 
 1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 1. Open the sales order that you want to check.
-1. On the **Sales order lines** FastTab, select the line you want to view the related transfer order for. <!--KFM: Does it actually matter whether I pick a line here? Seems like we search for the all lines in this order; is that true? -->
 1. From the **Sales order lines** FastTab toolbar, select **Product and supply** \> **View** \> **Related transfer orders**.
-1. The **Paired transfer order and sales order lines** page opens. <!--KFM: Explain what this page is showing me and what I can do here. I think I am seeing all transfer order lines related to the previously shown sales order, regardless of what sales lines were selected before I came here. I think this only shows transfer orders that were created using this feature (I guess this is the "link" added by this feature). Looks like I can open the related item details, sales order and transfer order for each line by clicking in the grid. We have two Action Pane buttons, **Sales order line transactions** and **Transfer order line transactions**; we should describe what these are for. -->
+1. The **Paired transfer order and sales order lines** page opens. It lists the following information about all transfer order lines that are linked to the sales order you selected:
+    - **Item number** – The item number of product in the sales order line and transfer order line. Select this link to see the item details.
+    - **Sales order** – The identifier of the sales order. Select this link to open the sales order.
+    - **Line number** – Line number of the sales line.
+    - **Sales quantity** – Sales quantity of the sales line.
+    - **Transfer number** – The identifier of the transfer order. Select this link to open the transfer order.
+    - **From warehouse** – The source warehouse of the transfer order.
+    - **To warehouse** – The destination warehouse of the transfer order. This is also the warehouse for the related sales order line.
+    - **Line number** – Line number of the transfer order line.
+    - **Transfer quantity** – Transfer quantity of the transfer order line.
+    - **Ship date** – Ship date of the transfer order line.
+    - **Receive date** – Receipt date of the transfer order line.
+    - **Remaining** – Remaining status of the transfer order line (possible values include: *Nothing*, *Receive updates*, and *Shipping updates*).
+
+    From this page, you can also see more information about a selected line by selecting one of the following actions from the Action Pane:
+
+    - **Sales order line transactions** – View all inventory transactions related to the sales order line.
+    - **Transfer order line transactions** – View all inventory transactions related to the transfer order line.
 
 ## View sales orders related to a transfer order line
 
-<!--KFM: Introduce this procedure. Explain when/why we would want to do this and what the result will be. -->
+When you're reviewing transfer orders, you can check to see whether they contain lines that are related to a specific sales order. This process can help you understand the context of the transfer order and why it was created. To do so, follow these steps:
 
-1. Go to one of the following pages: <!--KFM: Which should I pick? Is there any difference at all? -->
+1. Go to one of the following pages:
     - **Inventory management** \> **Inbound orders** \> **Transfer order**.
     - **Inventory management** \> **Outbound orders** \> **Transfer order**.
 1. Open the transfer order that you want to check.
 1. On the **Transfer order lines** FastTab, select the line you want to view the related sales order for.
 1. From the **Transfer order lines** FastTab toolbar, select **Inventory** \> **Related sales order**.
-1. The **Paired transfer order and sales order lines** page opens. <!--KFM: Explain what this page is showing me and what I can do here. I think I am seeing all sales order lines related to the transfer order line I had selected before coming here (selection seems to matter). I think this only shows sales orders that created the selected transfer order line using this feature (I guess this is the "link" added by this feature). Looks like I can open the related item details, sales order and transfer order for each line by clicking in the grid. We have two Action Pane buttons, **Sales order line transactions** and **Transfer order line transactions**; we should describe what these are for. -->
+1. The **Paired transfer order and sales order lines** page opens. It lists information about the sales order line that's related to the transfer order line you selected. The columns and Action Pane commands are the same as those described in the previous section.
 
 ## Automatic marking between sales and transfer order lines
 
-Automatic marking is only supported for standard moving average items. Non-settled item model group and catch-weight items aren't supported for automatic marking. <!--KFM: This seems to contradict the intro. Please confirm. Explain what makes an item a "standard moving average item" (this isn't mentioned in the intro); is this something to do with costing? -->
+*Marking* matches specific inventory receipts (transfer order line inventory transactions) with inventory issues (sales order line inventory transactions) for the purpose of inventory costing <!--KFM: Is it right that this is about costing? Is at also about reserving the transferred inventory for fulfilling the matching sales order? Is it also about preventing multiple transfers for the same sales order line? -->. When you create a transfer order line from a sales order line, the system automatically marks the two lines together if possible.
 
-<!--KFM: What are we doing here? Just looking for "markings" or also editing them somehow?-->
+> [!IMPORTANT]
+> Automatic marking is only supported for *non-settled items*, which are items from transactions that haven't been matched or processed according to the inventory model you are using (such as standard cost, moving average, or non-valuated). Catch-weight items are likewise not supported for automatic marking. In theses cases you must do the marking manually.
 
-The system automatically creates a marking when you create a transfer order line from from sales order line.
-
-To view markings from a sale order line, follow these steps:
+To view and edit markings from a sale order line, follow these steps:
 
 1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 1. Open the sales order that you want to check.
 1. On the **Sales order lines** FastTab, select the line you want to view the marking for.
 1. On the **Sales order lines** FastTab toolbar, select **Inventory** \> **Maintain** \> **Marking**.
-1. The **Marking** dialog opens, showing the marked quantities. <!--KFM: What am I looking at and what can I do here? -->
+1. The **Marking** dialog opens, showing the marked quantities. You can edit the markings if needed.
 
-To view markings for a specific inventory transaction, follow these steps: <!--KFM: I wasn't sure where what **Inventory transactions** page you were referring to. I found the following one. Please confirm this is what you meant.  -->
+To view and edit markings for a specific inventory transaction, follow these steps:
 
 1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
 1. Open the sales order that you want to check.
 1. On the **Sales order lines** FastTab, select the line you want to view transactions for.
 1. On the **Sales order lines** FastTab toolbar, select **Inventory** \> **View** \> **Transactions**.
-1. The **Inventory transactions** page opens. Select the transaction you want to inspect.
+1. The **Inventory transactions** page opens. Select the transaction you want to inspect. You can inspect both shipment and receipt transactions.
 1. On the Action Pane, open the **Inventory** tab and, from the **View** group, select **Marking**.
-1. The **Marking** dialog opens, showing the marked quantities. <!--KFM: What am I looking at and what can I do here? -->
+1. The **Marking** dialog opens, showing the marked quantities. You can edit the markings if needed.
 
-To view markings from a transfer order line, follow these steps:
+To view and edit markings from a transfer order line, follow these steps:
 
-1. Go to one of the following pages: <!--KFM: Which should I pick? Is there any difference at all? -->
+1. Go to one of the following pages:
     - **Inventory management** \> **Inbound orders** \> **Transfer order**.
     - **Inventory management** \> **Outbound orders** \> **Transfer order**.
 1. Open the transfer order that you want to check.
@@ -106,4 +129,4 @@ To view markings from a transfer order line, follow these steps:
 1. From the **Transfer order lines** FastTab toolbar, select **Inventory** \> **Transactions**.
 1. The **Inventory transactions** page opens. Select the transaction you want to inspect.
 1. On the Action Pane, open the **Inventory** tab and, from the **View** group, select **Marking**.
-1. The **Marking** dialog opens, showing the marked quantities. <!--KFM: What am I looking at and what can I do here? -->
+1. The **Marking** dialog opens, showing the marked quantities. You can edit the markings if needed.
