@@ -152,6 +152,9 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
 
 To configure an SST numbers, follow the instructions in [SST registration number](apac-mys-gst.md#gstsst-registration-number).
 
+> [!NOTE]
+> Make sure that the configured SST registration number is of **VAT ID** registration category.
+
 ## Configure electronic document property types
 
 Follow these steps to configure the electronic document property type that's required to define the taxpayer activity code.
