@@ -23,7 +23,7 @@ Dynamics 365 Supply Chain Management lets you create transfer order lines direct
 - View all transfer orders generated for a specific sales order line.
 - View all sales orders related to a specific transfer order line.
 - Choose to add transfer lines to either an existing or newly created transfer order when creating them from a sales order.
-- Avoid creating multiple transfer orders for the same sales order line. The system shows a warning if you try to do this action.
+- Avoid creating multiple transfer orders for the same sales order line. The system shows a warning if you try to do this.
 - Automatically reserve transfer order quantities for the sales order from which they were created, thereby preventing them from being used to fulfill another sales order by mistake. (The inventory transaction record for the sales order line is automatically set with an **Issue** status of *Reserved ordered*, which means that when the transferred stock is received, it's immediately reserved against the sales order.)
 - Automatically mark new transfer order lines with their related sales order lines. Marking matches specific inventory receipts (transfer order line inventory transactions) with inventory issues (sales order line inventory transactions) for the purpose of inventory costing.  <!--KFM: Please confirm this -->
 
@@ -51,7 +51,7 @@ To create transfer order lines directly from sales order lines, link the lines t
     - **To warehouse** - Select warehouse to which the items should be transferred. This is the warehouse associated with the sales order line and should already be selected.
     - **Add to an existing transfer order** - If you want to add the items to an existing transfer order, select the transfer order from the list. The list only shows open transfer orders that use the **From warehouse** and **To warehouse** selected in this dialog. If you want to create a new transfer order, leave this field blank.
     - **Ship date** - The date on which the items should be shipped.
-    - **Reserve items automatically** - If you want the items to be reserved automatically for the sales order that created the transfer order line, set this option to *Yes*. <!--KFM: Are we reserving the stock for the sales order (in the To warehouse) or for the transfer order (in the From warehouse), or both? -->
+    - **Reserve items automatically** - If you want the items in the **From warehouse** to be reserved automatically for the transfer order, set this option to *Yes*. <!--KFM: Are we reserving the stock for the sales order (in the To warehouse) or for the transfer order (in the From warehouse), or both? -->
 
 1. Select **OK**.
 1. The new or selected transfer order opens. You can now view the transfer order lines and other details.
