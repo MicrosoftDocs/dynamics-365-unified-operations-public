@@ -624,7 +624,7 @@ The hardware station installer automatically makes the following registry edits 
 
 ### SSL and TLS
 
-By default, SSL and all version of TLS except TLS 1.3 are disabled starting with Commerce versions 10.0.42 and later. For Commerce versions 10.0.41 and earlier, TLS 1.2 is used instead.
+By default, SSL and all version of TLS except TLS 1.3 are disabled starting with Commerce version 10.0.42 and later. For Commerce versions 10.0.41 and earlier, TLS 1.2 is used instead.
 
 To edit or enable these values, follow these steps:
 
