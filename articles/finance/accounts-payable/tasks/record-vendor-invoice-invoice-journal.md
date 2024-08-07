@@ -1,6 +1,6 @@
 --- 
 title: Record a vendor invoice in the invoice journal
-description: Learn about how to record vendor invoices that are not associated with purchase orders, including a step-by-step process. 
+description: Learn about how to record vendor invoices that are not associated with purchase orders. 
 author: sunfzam
 ms.author: Raynezou
 ms.topic: how-to
@@ -30,7 +30,7 @@ This task guide shows how to record vendor invoices that aren't associated with 
 8. In the **Invoice** field, enter the invoice number.
 9. In the **Description** field, type a value.
 10. In the **Credit** field, enter a number.
-11. In the **Offset account** field, enter the account number or click the drop down button to open the lookup
+11. In the **Offset account** field, enter the account number or click the drop down button to open the lookup.
     * The **Sales tax group** defaults from the vendor account.  
     * The **Item sales tax group** defaults from the main account specified in the **Offset account** field.  
     * The **Due date** is calculated based on the **Terms of payment**.  
