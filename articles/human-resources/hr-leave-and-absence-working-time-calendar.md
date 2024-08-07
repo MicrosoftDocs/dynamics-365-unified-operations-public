@@ -43,15 +43,12 @@ You can add the last two items while you're setting up a working time calendar. 
 Set up at least one working time calendar that shows your days and hours of operation. If you have locations in multiple countries and regions, you might want to set up a working time calendar for each area.
 
 1. On the **Organization administration** page, select **Calendars**.
-
 2. Select **New** and enter a name and description for your calendar.
-
 3. Under **Generation options**, select the work days for your organization and enter work times. 
    - To add a holiday or closure, select the **Add** button next to **Holidays and closures**.
    - To add non-work time, like lunches or breaks, select **Add** under **Non-work time** and enter the name and time range.
 
 4. Under **Days**, select **Generate** to generate the days in your calendar. Enter the date range for your calendar and then select **Generate days**.
-
 5. To add work schedules, under **Work schedule**, select **Add** and then enter the times for each work schedule.
 
 ## Configure holidays and closures
@@ -59,7 +56,6 @@ Set up at least one working time calendar that shows your days and hours of oper
 You can add or change holidays and closures separately from a working time calendar.
 
 1. On the **Organization administration** page, select **Holidays and closures**.
-
 2. Select **New** and enter a name and date for the holiday or closure.
 
 ## Configure non-work time
@@ -67,7 +63,6 @@ You can add or change holidays and closures separately from a working time calen
 You can add or change non-work times separately from a working time calendar.
 
 1. On the **Organization administration** page, select **Non-work time**.
-
 2. Select **New** and enter a name and time range for the non-work time.
 
 If you've enabled the Leave and absence bank holiday corrections preview feature, Human Resources uses holidays and closure dates to determine the number of days to adjust for employees enrolled in the calendar.
