@@ -1,8 +1,9 @@
 ---
 title: Time and attendance information
 description: Learn about the various types of time and attendance registrations and the intended users of such registrations in Dynamics 365 Human Resources.
-author: tonyafehr
-ms.author: daxcpft
+author: twheeloc
+ms.author: twheeloc
+ms.reviewer: twheeloc
 ms.date: 01/24/2024
 ms.topic: article
 audience: Application User
