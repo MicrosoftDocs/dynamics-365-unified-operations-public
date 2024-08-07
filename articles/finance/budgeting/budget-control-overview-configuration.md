@@ -25,7 +25,7 @@ This article introduces the budget control feature and provides information to h
 
 Budget control supports the management of an organization's financial resources through the chart of accounts, workflows, user groups, source documents and journals, configurable calculation of available funds, budget cycles, and thresholds. When controls are in place, an organization can plan, measure, manage, and forecast its financial resources throughout its fiscal year. 
 
-After budgets have been approved in the system, you can use budget plans to generate budget register entries to record the expenditure budget for an organization. Alternatively, you can create or import budget register entries from a third-party program instead of using budget planning functionality. 
+After budgets are approved in the system, you can use budget plans to generate budget register entries to record the expenditure budget for an organization. Alternatively, you can create or import budget register entries from a third-party program instead of using budget planning functionality. 
 
 Expenditures can be recorded by using main accounts and financial dimensions. You can configure control of the overall expenditure to meet the organization's policies and requirements by grouping combinations of financial dimensions and main accounts. 
 
@@ -108,7 +108,7 @@ If budget control warning messages should be suppressed for any user groups, you
 
 ### Activate budget control
 
-After budget control has been configured, you can turn it on and activate it on the **Activate budget control** tab. The draft version will then become effective.
+After budget control is configured, you can turn it on and activate it on the **Activate budget control** tab. The draft version then becomes effective.
 
 > [!Important]
 > When the **Only track amounts in the budget funds available calculation** feature is on, budget control must have specific rule configurations to work correctly. Otherwise, you can't activate the defined budget control configuration. For more information, see [Budget funds available](budget-funds-available.md).
@@ -124,7 +124,7 @@ The following table shows the guidelines to follow.
 > [!Important]
 > After budget control is turned on and active, and after transactions are posted, it should not be turned off mid-year. When budget control is turned off, activities aren't recorded for budget control purposes, and budget checks are no longer performed. Therefore, documents that have already been posted might not correctly reflect any relieving amounts or balances in inquiries and reports that are related to budget control. These include budget control statistics for any downstream or adjusting documents and journals. 
 
-Additionally, note that transactions, including budget register entries, that have been posted before budget control is turned on aren't considered for budget control. Therefore, it's a good idea to turn on budget control only at the beginning of a new budget cycle. Make sure that budget register entries that contain beginning budget balances for budget control have their budget balances updated only after budget control is turned on. Any open document (for example, a purchase order) will be checked for available budget funds and will get a budget reservation for budget control when a user manually triggers a budget control check in the document.
+Additionally, note that transactions, including budget register entries, that were posted before budget control is turned on aren't considered for budget control. Therefore, it's a good idea to turn on budget control only at the beginning of a new budget cycle. Make sure that budget register entries that contain beginning budget balances for budget control have their budget balances updated only after budget control is turned on. Any open document (for example, a purchase order) will be checked for available budget funds and will get a budget reservation for budget control when a user manually triggers a budget control check in the document.
 
 ## Using budget control
 
