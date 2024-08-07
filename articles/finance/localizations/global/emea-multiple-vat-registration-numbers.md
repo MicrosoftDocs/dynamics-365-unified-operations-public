@@ -120,9 +120,16 @@ On the **Tax calculation parameters** page, make sure that the **Enable advanced
 
 If the sales tax codes on lines that are created for a sales order or purchase order are assigned to different sales tax settlement periods and tax registrations, there are multiple registration numbers for the order. To control the system behavior in this scenario, the **Check Tax registration number in document lines** option has been added on the **Accounts receivable parameters** and **Accounts payable parameters** pages.
 
-Currently, the scenario where sales tax codes are assigned to different registration numbers on a sales order or purchase order isn't supported. During sales tax calculation and document posting, you receive an error message and can't continue the process. For information about the item ID, sales tax codes, settlement periods, and tax registration numbers that are identified for the order lines, view the message details.
+Before the the 10.0.41 version, the scenario where sales tax codes are assigned to different registration numbers on a sales order or purchase order isn't supported. During sales tax calculation and document posting, you receive an error message and can't continue the process. For information about the item ID, sales tax codes, settlement periods, and tax registration numbers that are identified for the order lines, view the message details.
 
 ![Error message about different tax registration numbers on document lines.](../media/Tax-Service-MultVATID-Order-processing-10.png)
+
+Starting from the 10.0.41 version, sales orders and sales quotations can be created with lines having different tax registration numbers. The level of validation is still controlled by the **Check Tax registration number in document lines** option on the **Accounts receivable parameters**: *None*, *Warning*, or *Error*.
+
+> [!IMPORTANT]
+> Multiple tax registrations assigned to individual sales order document line are not allowed. If tax calculation determines that different tax registrations numbers (VAT IDs) of the legal entity are assigned to an individual line, an error will be displayed.
+
+When posting, sales order will be automatically split into different sales confirmations, picking lists, packing slips, and invoices per the VAT IDs determined for document lines. Under **Account receivable parameters** > **Summary update** > **Split based on**, you can select whether sales confirmation and/or picking list should be split based on the tax registration number. For packing slip and invoice posting, this option is mandatory and set to **Yes**.
 
 ### Temporary sales tax and posted sales tax
 
