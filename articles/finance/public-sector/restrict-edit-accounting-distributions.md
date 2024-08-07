@@ -1,10 +1,10 @@
 ---
 title: Restrict editing of accounting distributions on invoices
 description: Learn how to require that the financial dimensions on a purchase order (PO) match the dimensions on the corresponding vendor invoice.
-author: v-kiarnd
-ms.author: twheeloc
+author: leizi2015
+ms.author: raynezou
 ms.topic: article
-ms.date: 10/14/2020
+ms.date: 08/07/2024
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -40,4 +40,4 @@ You can view financial dimensions for the invoice.
 3. On the **Vendor invoice** page, on the **Lines** FastTab, select **Financials \> Distribute amount**.
 
 > [!NOTE]
-> The financial dimension advanced rule setting of the accounting structure is incompatible with this feature. Please do not introduce additional segments for the main account which is defined under **General ledger >> Ledger setup >> Ledger >> Select Account structure >> Select main account >> Choose Advanced rules** when using the "Restrict editing of accounting distributions on invoices" feature. 
+> The financial dimension advanced rule setting of the accounting structure is incompatible with this feature. When using the **Restrict editing of accounting distributions on invoices** feature, don't introduce additional segments for the main account.  
