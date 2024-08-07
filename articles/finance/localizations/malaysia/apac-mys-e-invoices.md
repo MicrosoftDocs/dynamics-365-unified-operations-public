@@ -412,7 +412,7 @@ To cover scenarios for non-taxable, zero-rated, or exempted operations, define t
 
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 2. Select a unit ID, and then select **External codes**.
-3. On the **External codes** page, in the **Overview** section, in the **Code** column, enter a code that corresponds to the selected unit ID.
+3. On the **External codes** page, in the **Overview** section, in the **Code** column, enter a code which is equal to the selected unit ID.
 4. In the **Standard code** column, select the checkbox.
 5. In the **Value** section, in the **Value** field, enter the external code to use as the [units](https://sdk.myinvois.hasil.gov.my/codes/unit-types/) according to required codification.
 
