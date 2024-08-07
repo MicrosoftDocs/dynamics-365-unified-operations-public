@@ -37,7 +37,7 @@ To build out the Store Commerce app for Android using the Store Commerce mobile 
 1. Unzip the Store Commerce for Android package, and then copy the `packages` folder to your repository root.
 1. Next, you must modify the nuget.config file to include the `packages` folder as a package source. Under the `<packageSources>` node, add `<add key="Dynamics365Commerce-Android-Dependencies" value="./packages" />`.
 1. Modify the app name displayed in the Android launcher in the MainActivity.cs file by updating the `Label` property of the `Activity` attribute.
-1. Modify the package name in the AndroidManifest.xml file by changing the package attribute of the manifest node. You should also modify the `android:label` attribute of the application node.
+1. Modify the package name in the AndroidManifest.xml file by changing the `package` attribute of the manifest node. You should also modify the `android:label` attribute of the `application` node.
 1. Build the mobile samples solution.
 1. Assuming that an Android emulator is configured, you can start debugging the app from Visual Studio 2022.
 
