@@ -21,11 +21,23 @@ This article provides an overview of the concepts related to Microsoft Dynamics 
 
 ## Prerequisites
 
-When running Dynamics 365 Commerce version 10.0.41, you must add the following registry entries to support Transport Layer Security (TLS) 1.3.
-- TLS 1.2\Server:Enabled=0
+When configuring hardware station for Dynamics 365 Commerce versions 10.0.42 and later, you must add the following registry entries to support Transport Layer Security (TLS) 1.3:
 - TLS 1.3\Server:Enabled=1
-- TLS 1.2\Client:Enabled=0
 - TLS 1.3\Client:Enabled=1
+- TLS 1.2\Server:Enabled=0
+- TLS 1.2\Client:Enabled=0
+- TLS 1.1\Server:Enabled=0
+- TLS 1.1\Client:Enabled=0
+- TLS 1.0\Server:Enabled=0
+- TLS 1.0\Client:Enabled=0
+- SSL 3.0\Server:Enabled=0
+- SSL 3.0\Client:Enabled=0
+- SSL 2.0\Server:Enabled=0
+- SSL 2.0\Client:Enabled=0
+
+When configuring hardware station for Commerce versions 10.0.41 and earlier, you must add the following registry entries to support TLS 1.2:
+- TLS 1.2\Server:Enabled=1
+- TLS 1.2\Client:Enabled=1
 - TLS 1.1\Server:Enabled=0
 - TLS 1.1\Client:Enabled=0
 - TLS 1.0\Server:Enabled=0
