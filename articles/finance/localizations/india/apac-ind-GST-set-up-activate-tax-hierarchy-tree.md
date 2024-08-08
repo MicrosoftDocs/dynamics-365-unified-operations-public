@@ -1,8 +1,8 @@
 ---
 title: Set up a sales tax hierarchy and the setoff rules
 description: Learn how to set up a sale tax hierarchy and the setoff rules, including a step-by-step process for maintaining setoff hierarchy profiles.
-author: epodkolzina
-ms.author: epodkolzina
+author: epodkolz
+ms.author: epodkolz
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -58,6 +58,22 @@ ms.dyn365.ops.version: 10.0.4
 5. Select **OK**, and then select **Activate**.
 6. Select **Yes**.
 7. Close the message that you receive, and then close the page.
+
+## Enable adding and synchronizing of tax hierarchy version in batch mode
+
+Starting from the 10.0.41 version, you can add and synchronize tax hierarchy version in batch mode. In the **Feature management workspace** enable the E**nable adding and synchronizing of tax hierarchy version in batch mode** feature.
+Now, when adding a new version in the **Sales tax hierarchies** (**Tax** > **Setup** > **Sales tax** > **Sales tax hierarchies**), you can switch on **Batch processing** in the **Add version of sales tax hierarchy dialog**:
+
+PICTURE1
+
+Note. After clicking **OK**, you will receive a message "The Add version of sales tax hierarchy job is added to the batch queue".
+If there is a batch job that is not completed, then you will receive the message "Cannot start a new job, as a batch job to Add version of sales tax hierarchy is already running".
+For the **Synchronize** operation, you can also enable B**atch processing** in the **Synchronize version of sales tax hierarchy dialog**:
+
+PICTURE2
+
+Note. After clicking **OK**, you will receive a message: "The Synchronize version of sales tax hierarchy job is added to the batch queue".
+If there is a batch job that is not completed, then you will receive the message "Cannot start a new job, as a batch job to Synchronize version of sales tax hierarchy is already running”.
 
 ## GST minor codes
 
