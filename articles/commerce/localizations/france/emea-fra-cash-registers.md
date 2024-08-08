@@ -2,12 +2,12 @@
 title: Cash register functionality for France
 description: This article provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-ms.date: 08/06/2024
+ms.date: 08/07/2024
 ms.topic: how-to
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: France
-ms.author: josaw
+ms.author: ritakimani
 ms.search.validFrom: 2018-02-28
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 ms.custom: 
@@ -205,18 +205,18 @@ You can view the event signature, together with the event data that was used to 
 
 Receipts for France can include additional information that was implemented by using custom fields:
 
-- **Transaction type** – You can add a field to a receipt format layout to identify the type of transaction. For example, a sales receipt will include the text "Sales."
-- **Sequential number of signed sales transaction** – A receipt can include the sequential number of a signed sales transaction. This number is used to associate the printed receipt with a digital signature in the database.
-- **Extract from digital signature** – A receipt can include an extract from the digital signature. This extract is used to confirm that the transaction is signed. It consists of a concatenation of the third, seventh, thirteenth, and nineteenth symbols of the signature.
+- **Transaction type** – You should add a field to a receipt format layout to identify the type of transaction. For example, a sales receipt will include the text "Sales."
+- **Sequential number of signed sales transaction** – A receipt should include the sequential number of a signed sales transaction. This number is used to associate the printed receipt with a digital signature in the database.
+- **Extract from digital signature** – A receipt should include an extract from the digital signature. This extract is used to confirm that the transaction is signed. It consists of a concatenation of the third, seventh, thirteenth, and nineteenth symbols of the signature.
 - Information about a receipt copy:
 
-    - **Reprint message** – A receipt copy can include a "Copy" caption.
+    - **Reprint message** – A receipt copy should include a "Copy" caption.
     - **Reprint number** – An original receipt or a receipt copy can include the number of the receipt copy. For an original receipt, the value is **0** (zero).
     - **Reprint date** – A receipt copy can include the date of the copy.
     - **Reprint time** – A receipt copy can include the time of the copy in either the 12-hour format or the 24-hour format.
     - **Reprint signature** – A receipt copy can include an extract from the digital signature of the copy.
 
-- **Line count** – A receipt can include the number of printed item lines on the receipt.
+- **Line count** – A receipt should include the number of printed item lines on the receipt.
 - **Sales totals** – Custom fields for receipt totals exclude non-sales amounts from the total transaction amounts. Non-sales amounts include amounts for the following operations:
 
     - Prepayments (customer account deposits)
@@ -224,8 +224,8 @@ Receipts for France can include additional information that was implemented by u
     - Issuing a gift card
     - Adding funds to a gift card
 
-- **Certification data** – A receipt can include the category and number of a certificate of compliance that an authorized body issued per the NF 525 certification requirements.
-- **Software version** – A receipt can include the version of the software that was certified per the NF 525 certification requirements and that is used to produce receipts.
+- **Certification data** – A receipt should include the category and number of a certificate of compliance that an authorized body issued per the NF 525 certification requirements.
+- **Software version** – A receipt should include the version of the software that was certified per the NF 525 certification requirements and that is used to produce receipts.
 
 ### Restricting the duration of shifts
 
@@ -431,6 +431,7 @@ In the Receipt format designer, add the following custom fields to the appropria
 - **Footer:** Add the following fields:
 
     - **Sales total** – This field prints the receipt's total cash sale amount. The amount excludes tax. Prepayments and gift card operations are excluded.
+    - **Sum All Discounts** – This field prints the receipt's total discount.
     - **Sales total tax** – This field prints the receipt's total tax amount for cash sales. Prepayments and gift card operations are excluded. 
     - **Sales total including tax** – This field prints the receipt's total cash sale amount. The amount includes tax. Prepayments and gift card operations are excluded.
     - **Tax ID** – This standard field enables a sales tax summary to be printed per sales tax code. The field must be added to a new line.
