@@ -1,12 +1,12 @@
 ---
 title: Set up a sales tax hierarchy and the setoff rules
 description: Learn how to set up a sale tax hierarchy and the setoff rules, including a step-by-step process for maintaining setoff hierarchy profiles.
-author: epodkolz
-ms.author: epodkolz
+author: epodkolzina
+ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/05/2019
+ms.date: 08/08/2024
 ms.reviewer: johnmichalak
 ms.search.region: India
 ms.search.validFrom: 2019-06-01
