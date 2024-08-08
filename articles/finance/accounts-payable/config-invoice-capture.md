@@ -31,11 +31,11 @@ After the Invoice capture solution is installed, default configurations for usin
     - Only one decimal precision formatting is allowed when a new currency field is defined.
     - Currency codes aren't returned. This limitation might affect the derivation of the currency code.
 
-2. **Channel for file upload** – The channel that is used to directly upload invoice files.
-3. **File filter** – Select the file filter to apply additional filtering to incoming files at the application level. In this case, invoice file processing is halted at the "Received files" stage.
+2. **Channel for file upload** – The channel that's used to directly upload invoice files.
+3. **File filter** – Select the file filter to apply additional filtering to incoming files at the application level. In this case, invoice file processing is halted at the **Received files** stage.
 4. **Configuration group** – The configuration group that is used if a configuration group isn't set at the legal entity or vendor account level during invoice processing.
 5. **Use continuous learning** – Select this option to turn on the continuous learning feature. The continuous learning feature tries to record patterns between the invoice context and manually selected entities. Immediately after the invoice is successfully transferred, the relationship is recorded and applied to any invoice that arrives in the future and has the same context. 
-6. **Auto invoice cleanup** – Select this option to automatically clean up transferred invoices and voided invoices that are older than 180 days every day. The job deletes both the invoice data and the original invoice files.
+6. **Auto invoice cleanup** – Select this option to automatically clean up transferred invoices and voided invoices that are older than 180 days every day. The job deletes both the invoice data and the original invoice file.
 
 ## Manage processing rules
 
