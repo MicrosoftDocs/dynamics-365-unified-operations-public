@@ -4,7 +4,7 @@ description: Learn about the Invoice capture solution workspace, including on ou
 author: sunfzam
 ms.author: zezhangzhao
 ms.topic: overview
-ms.date: 11/20/2023
+ms.date: 08/08/2024
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
