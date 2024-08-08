@@ -4,7 +4,7 @@ description: This article explains how to get started with electronic invoicing 
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 05/13/2024
+ms.date: 00/08/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -49,6 +49,8 @@ Add the following required elements in the key vault:
 
 ## Configure Key Vault parameters for electronic invoicing
 
+To configure Key Vault parameters for electronic invoicing, follow these steps.
+
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. On the **Electronic invoicing** tab, in the **Key Vault settings** section, in the **Key Vault** field, select the reference to the key vault that you created in the previous section.
 1. In the **SAS token secret** field, select the name of the storage account secret URL that must be used to authenticate access to the storage account.
@@ -65,6 +67,8 @@ Add the following required elements in the key vault:
 ## Configure the electronic invoicing feature
 
 Some of the parameters from the **Malaysian electronic invoicing (MY)** electronic invoicing feature are published with default values. Before you deploy this feature to the service, review the default values, and update them as required, so that they better reflect your business operations.
+
+To configure the electronic invoicing feature, follow these steps.
 
 1. Import the latest version of the **Malaysian electronic invoicing (MY)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 1. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
@@ -90,6 +94,8 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
 1. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ## Configure electronic document parameters
+
+To configure electronic document parameters, follow these steps.
 
 1. Make sure that the country/region-specific Electronic reporting (ER) configurations for the document context and electronic document model mapping that are required for Malaysia are imported. For more information, see [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
@@ -150,14 +156,14 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
 
 ## <a id="SST"></a>Configure Sales and Service Tax (SST) numbers
 
-To configure an SST numbers, follow the instructions in [SST registration number](apac-mys-gst.md#gstsst-registration-number).
+To configure SST numbers, follow the instructions in [SST registration number](apac-mys-gst.md#gstsst-registration-number).
 
 > [!NOTE]
 > Make sure that the configured SST registration number is of **VAT ID** registration category.
 
 ## Configure electronic document property types
 
-Follow these steps to configure the electronic document property type that's required to define the taxpayer activity code.
+To configure the electronic document property type that's required to define the taxpayer activity code, follow these steps.
 
 1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**.
 1. Select **New** to create an electronic document property type.
@@ -169,7 +175,7 @@ Follow these steps to configure the electronic document property type that's req
 1. In the **Type** field, enter **ActivityDescription**. You must enter the value exactly as it appears here.
 1. On the Action Pane, select **Applicability**.
 1. In the **Table name** field, select **CompanyInfo**.
-1. Select New to create the record for another applicable table.
+1. Select **New** to create the record for another applicable table.
 1. In the **Table name** field, select **VendTable**.
 1. Save and close the **Electronic document property type applicability setup** page.
 1. Save and close the **Electronic document property types** page.
@@ -178,7 +184,7 @@ Follow these steps to configure the electronic document property type that's req
 
 ## Configure address structure
 
-Follow these steps to configure the structure of the postal address to define all required elements.
+To configure the structure of the postal address to define all required elements, follow these steps.
 
 1. Go to **Organization administration** \> **Global address book** \> **Addresses** \> **Address setup**.
 1. Make sure that all the following mandatory elements are configured:
@@ -195,11 +201,15 @@ Follow these steps to configure the structure of the postal address to define al
 
 ### Enter the address
 
+To enter the address, follow these steps.
+
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select a legal entity.
 1. On the **Addresses** FastTab, add a valid primary address for the selected legal entity.
 
 ### Enter the registration numbers
+
+To enter the registration numbers, follow these steps.
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select a legal entity, and then, on the **Tax registration** FastTab, in the **Tax registration number** field, enter the company's TIN.
@@ -213,6 +223,8 @@ Follow these steps to configure the structure of the postal address to define al
 
 ### Enter a business activity code and description
 
+To enter a business activity code and description, follow these steps.
+
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 1. Select a legal entity, and then, on the Action Pane, select **Electronic document properties**.
 1. Select the line where the **Type** field is set to **ActivityCode**.
@@ -221,17 +233,21 @@ Follow these steps to configure the structure of the postal address to define al
 1. In the **Value** field, enter the taxpayer business activity description.
 
 > [!NOTE]
-> The contact information for the Legal entity will be automatically retrieved from the related **Person** associated in Microsoft Dynamics 365 Finance with the current user.
+> The contact information for the Legal entity is automatically retrieved from the related **Person** associated in Microsoft Dynamics 365 Finance with the current user.
 
 ## Configure customer data
 
 ### Enter the address
+
+To enter the address, follow these stepsl
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer.
 1. On the **Addresses** FastTab, add a valid address for the selected customer.
 
 ### Enter the contact person
+
+To enter the contact person, follow these steps.
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer.
@@ -241,6 +257,8 @@ Follow these steps to configure the structure of the postal address to define al
     > All available contact persons must already be defined for the selected customer. Make sure that the selected contact person has a valid email address and phone number.
 
 ### Enter the registration numbers
+
+To enter the registration numbers, follow these steps.
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer, and then, on the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid TIN for the customer.
@@ -260,16 +278,16 @@ Follow these steps to configure the structure of the postal address to define al
 
 ### Additional properties configuration
 
-The system allows users to configure **Electronic documents property types** to cover some specific scenarios without coding, by configuration only.  Customizable electronic documents property types can be then used to extend properties of Legal entities, Customers, Vendors and Invoice journals.
+The system allows users to configure **Electronic documents property types** to cover some specific scenarios without coding using only configuration. Customizable electronic documents property types can be used to extend properties of Legal entities, Customers, Vendors and Invoice journals.
 
-To configure additional buyers and journals properties, do the following additional configuration.
+To configure additional buyers and journals properties, follow these additional configuration steps.
 
 1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**.
 1. Select **New** to create an electronic document property type.
 1. In the **Type** field, enter **BuyerRegistrationName**. You must enter the value exactly as it appears here.
-1. On the Action Pane, select **Applicability**.
+1. On the **Action** pane, select **Applicability**.
 1. In the **Table name** field, select **CustInvoiceJour**.
-1. Select New to create the record for another applicable table.
+1. To create the record for another applicable table, select **New**.
 1. In the **Table name** field, select **CustTable** where required.
 1. Save and close the **Electronic document property type applicability setup** page.
 1. Repeat steps 2 through 8 for the remaining properties
@@ -290,19 +308,18 @@ To configure additional buyers and journals properties, do the following additio
 
 ![Screenshot that shows electronic document properties configuration for retail buyers.](apac-mys-e-invoice-retail-buyer.jpg)
 
-To enter the values for the described above electronic document properties at customer level, do the following steps.
+To enter the values for the described above electronic document properties at customer level, follow these steps.
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
-1. Select a customer, and then, select the **Customer** menu item from the top menu.
-1. On the Action Pane, select **Electronic document properties**.
+1. Select a customer, and select the **Customer** menu item from the top menu.
+1. On the **Action** pane, select **Electronic document properties**.
 1. Enter required values in the **Value** field for each of the properties that needs to be overwritten in the electronic invoice.
 
-
-To enter the values for the electronic document properties at invoice level, do the following steps.
+To enter the values for the electronic document properties at invoice level, follow these steps.
 
 1. Go to **Account receivable** \> **Inquiries and reports** \> **Invoices** \> **Invoice journal**.
-1. Select a required invoice, and then, select the **Invoice** menu item from the top menu.
-1. On the Action Pane, select **Electronic document properties**.
+1. Select a required invoice, and select the **Invoice** menu item from the top menu.
+1. On the **Action** pane, select **Electronic document properties**.
 1. Enter required values in the **Value** field for each of the properties that needs to be overwritten in the electronic invoice.
 
 > [!NOTE]
@@ -327,11 +344,15 @@ If business processes assume that self invoices are issued, you must also config
 
 ### Enter the address
 
+To enter the address, follow these steps.
+
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
 1. Select a vendor.
 1. On the **Addresses** FastTab, add a valid address for the selected vendor.
 
 ### Enter the contact person
+
+To enter the contact person, follow these steps.
 
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
 1. Select a vendor.
@@ -341,6 +362,8 @@ If business processes assume that self invoices are issued, you must also config
     > All available contact persons must already be defined for the selected vendor. Make sure that the selected contact person has a valid email address and phone number.
 
 ### Enter the registration numbers
+
+To enter the registration numbers, follow these steps.
 
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
 1. Select a vendor, and then, on the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid TIN for the vendor.
@@ -360,8 +383,10 @@ If business processes assume that self invoices are issued, you must also config
 
 ### Enter a business activity code and description
 
+To enter a business activity code and descriptions, follow these steps.
+
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
-1. Select a vendor, and then, in the **Vendor** menu, on the Action Pane, select **Electronic document properties**.
+1. Select a vendor, and then, in the **Vendor** menu, on the **Action** pane, select **Electronic document properties**.
 1. Select the line where the **Type** field is set to **ActivityCode**.
 1. In the **Value** field, enter the business activity code.
 1. Select the line where the **Type** field is set to **ActivityDescription**.
@@ -380,7 +405,7 @@ Make sure that the following ER format configurations are imported:
 - Project invoice (MY)
 - Self invoice (MY)
 
-Follow these steps to complete the configuration.
+To complete the configuration, follow these steps.
 
 1. In the **Globalization Studio** workspace, select the **Electronic reporting** tile, and then select the **Reporting configurations** tile.
 1. On the **Configurations** page, select the **Sales invoice (MY)** format configuration.
@@ -398,7 +423,7 @@ Follow these steps to complete the configuration.
 
 ## Configure sales tax codes
 
-To cover scenarios for non-taxable, zero-rated, or exempted operations, define tax exempt codes in the system.
+To cover scenarios for non-taxable, zero-rated, or exempted operations, define tax exempt codes in the system, follow these steps.
 
 1. Go to **Tax** \> **Setup** \> **Sales tax** \> **Sales tax exempt codes**.
 1. Add the required exempt codes together with descriptions.
@@ -410,11 +435,13 @@ To cover scenarios for non-taxable, zero-rated, or exempted operations, define t
 
 ## Configure units of measure
 
+To configure units of measure, follow these steps.
+
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
-2. Select a unit ID, and then select **External codes**.
-3. On the **External codes** page, in the **Overview** section, in the **Code** column, enter a code which is equal to the selected unit ID.
-4. In the **Standard code** column, select the checkbox.
-5. In the **Value** section, in the **Value** field, enter the external code to use as the [units](https://sdk.myinvois.hasil.gov.my/codes/unit-types/) according to required codification.
+1. Select a unit ID, and then select **External codes**.
+1. On the **External codes** page, in the **Overview** section, in the **Code** column, enter a code which is equal to the selected unit ID.
+1. In the **Standard code** column, select the checkbox.
+1. In the **Value** section, in the **Value** field, enter the external code to use as the [units](https://sdk.myinvois.hasil.gov.my/codes/unit-types/) according to required codification.
 
     > [!NOTE]
     > For scenarios where no specific units of measure are assumed, the default value **EA** is used.
@@ -427,18 +454,18 @@ You can inquire about the results of a submission by going to **Organization adm
 
 ## Configure printable invoice layouts
 
-Follow these steps to enable QR codes printing in full and simplified invoices.
+To enable QR codes printing in full and simplified invoices, follow these steps.
 
 1. Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Form setup**.
 1. Select **Print management**.
 1. Select the **Customer invoice** report, and then, in the **Report format** field, reference the **SalesInvoice.ReportFull\_MY** or **SalesInvoice.ReportSimplified\_MY** layout.
 1. Select the **Free text invoice** report, and then, in the **Report format** field, reference the **FreeTextInvoice.ReportFull\_MY** or **FreeTextInvoice.ReportSimplified\_MY** layout.
 
-In case of self-invoices do the following steps.
+When using self-invoices, follow these steps.
 
 1. Go to **Accounts payable** \> **Setup** \> **Forms** \> **Form setup**.
-2. Select **Print management**.
-3. Select the **Vendor invoice** report, and then, in the **Report format** field, refer to the **VendInvoiceDocument.ReportMY** layout.
+1. Select **Print management**.
+1. Select the **Vendor invoice** report, and then, in the **Report format** field, refer to the **VendInvoiceDocument.ReportMY** layout.
 
 
 > [!NOTE]
