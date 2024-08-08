@@ -23,13 +23,13 @@ This article provides troubleshooting guidance for upgrades of Microsoft Dynamic
 
 **Solution**
 
-Ensure your Cloud Hosted Environment is a suitabily scaled Azure VM SKU, and that you use premium storage when the virtual machine (VM) is deployed from Microsoft Dynamics Lifecycle Services (LCS).
+Ensure that your cloud-hosted environment is a suitably scaled Azure virtual machine (VM) stockkeeping unit (SKU). Also ensure that you use premium storage when the VM is deployed from Microsoft Dynamics Lifecycle Services.
 
 ## Scenario 2: Log files on Dynamics AX 2012 SQL database AX fill up the disk.
 
 **Solution**
 
-Set the recovery mode on the database to **Simple**. Confirm there's enough free disk space for the upgrade database to grow.
+Set the recovery mode on the database to **Simple**. Confirm that there's enough free disk space for the upgrade database to grow.
 
 ## Scenario 3: A "Failed to create a session" error is generated during a prerequisite step.
 
@@ -51,33 +51,31 @@ During the additive or partial synchronization that is done as part of the prere
     TRUNCATE TABLE SYSCLIENTSESSIONS;
     ```
 
-## Scenario 4: Running upgrade deployable package you get error "The term 'new' is not recognized as the name of a cmdlet"
+## Scenario 4: When you run the upgrade deployable package, you receive the following error: "The term 'new' is not recognized as the name of a cmdlet."
 
-When running the upgrade depployable package on a Cloud Hosted Environment or VHD, you get the following error:
+When you run the upgrade deployable package on a cloud-hosted environment or virtual hard disk (VHD), you receive the following error:
 
-```
-GlobalUpdate script for service mode: AOSService on machine: localhost
-perform data upgrade, sync AX database and deploy SSRS report
-The term 'new' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling...
-```
+> GlobalUpdate script for service mode: AOSService on machine: localhost  
+> perform data upgrade, sync AX database and deploy SSRS report  
+> The term 'new' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling...
+
 **Cause**
-The cause is due to a missing environment variable that the PowerShell script **AutoDataUpgradeOperations.ps1** references.
+
+An environment variable that the *AutoDataUpgradeOperations.ps1* PowerShell script references is missing.
 
 **Solution**
-1. Click the Windows icon, and enter **Environment Variables**, select the **Edit the system environment variables** page.
-2. Click **Environment Variables...**.
-3. Add the following to the user variables if it doesn't exist.
 
-> [!NOTE]
-> Edit the value for your service drive, for VHDs this is **C:**, for Cloud Hosted Environments it is **J:**. The drive letter is the drive that has the AOSService folder in. 
+1. In Windows, select **Start**, enter *Environment Variables* in the search field, and then select to open **Edit the system environment variables**.
+2. In the **System Properties** dialog box, select **Environment Variables**.
+3. In the upper half of the **Environment Variables** dialog box, select **New** to add the following user variable if it doesn't already exist.
 
-   Variable Name: SERVICEDRIVE
+    - **Variable name:** *SERVICEDRIVE*
+    - **Variable value:** *C:*
 
-   Variable Value: C:
+    > [!NOTE]
+    > For this environment variable, the **Variable value** field specifies the letter of the drive that has the *AOSService* folder. Edit the value as required for your service drive. For VHDs, it's *C:*. For cloud-hosted environments, it's *J:*.
 
-4. Click **OK**.
-5. Click **OK** to close all windows.
-6. Open a new PowerShell prompt again to ensure the new environment variable is loaded into the session. 
-7. Start the run book again using the -rerunstep option.
-
-
+4. Select **OK**.
+5. Select **OK** to close all dialog boxes.
+6. Open a new PowerShell prompt to ensure that the new environment variable is loaded into the session.
+7. Start the runbook again by using the `-rerunstep` option.
