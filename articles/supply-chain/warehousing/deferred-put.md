@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 11/18/2019
 ms.custom:
 ms.reviewer: kamaybac 
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2019-6-31
 ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Deferred processing of warehouse work

@@ -1,14 +1,13 @@
 ---
 title: Plan loads and shipments using the outbound load planning workbench
 description: Learn how to use the outbound load planning workbench to create a load for a sales order, including a step-by-step process for creating sales orders. 
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 06/07/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: WHSHistory, WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSOutboundLoadPlanningWorkbench
 ---
 

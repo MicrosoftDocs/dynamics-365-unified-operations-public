@@ -7,12 +7,7 @@ ms.topic: article
 ms.date: 06/16/2017
 ms.custom: 
 ms.reviewer: kamaybac 
-audience: Application User
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: KanbanBoard, KanbanJobSchedulingListPage, LeanProductionFlowVisualization, KanbanBoardUnplannedJobs
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Visual scheduling for lean manufacturing

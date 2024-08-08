@@ -1,14 +1,12 @@
 ---
 title: Set up a mobile device menu item for moving items in the warehouse
 description: Learn how to set up a mobile device menu item that lets workers register manual movements of items in the warehouse, including a step-by-step process.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 12/12/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: WHSRFMenuItem
 ---
 

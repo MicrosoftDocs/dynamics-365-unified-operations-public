@@ -6,11 +6,7 @@ ms.author: henrikan
 ms.topic: article
 ms.date: 09/01/2021
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2021-09-01
 ms.search.form: CustTable, VendTable, EcoResProductListPage
-ms.dyn365.ops.version: 10.0.22
 ---
 
 # Set up vendors, customers, and items for intercompany trade

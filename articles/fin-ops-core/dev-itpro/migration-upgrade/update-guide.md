@@ -21,7 +21,7 @@ This article describes application lifecycle use cases for finance and operation
 + Applying the next version of a Microsoft service update
 + Applying a new version of your custom code
 
-This article applies to Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, and Dynamics 365 Project Operations.
+This article applies to Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Human Resources, Dynamics 365 Commerce, and Dynamics 365 Project Operations.
 
 The main goal is to show how to complete the following tasks:
 

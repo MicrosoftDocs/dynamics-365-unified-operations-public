@@ -8,11 +8,7 @@ ms.date: 08/14/2019
 ms.custom:
 ms.reviewer: kamaybac    
 audience: Application User 
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2016-06-30
 ms.search.form: InventJournalOwnershipChange, InventJournalCreate 
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Change the ownership of consignment inventory based on production demand

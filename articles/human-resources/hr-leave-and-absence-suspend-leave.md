@@ -32,13 +32,9 @@ You can suspend a leave of absence for an employee to stop accruing leave from b
 ## Suspend leave and absence for an employee
 
 1. On the employee's record, select **Leave**.
-
 2. Select **Suspend leave**.
-
 3. Select **New**.
-
 4. In the **Suspend leave accrual** dialog box, select the **Leave type** along with the **Start date** and **End date** for the suspension.
-
 5. Optionally, you can add a **Comment** for the suspension. 
 
 If accruals are processed while the employee's leave is suspended, no accrual will be made for the suspended leave types.

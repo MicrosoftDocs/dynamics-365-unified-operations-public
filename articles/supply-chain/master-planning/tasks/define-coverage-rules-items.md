@@ -1,25 +1,13 @@
 --- 
-# required metadata 
- 
 title: Define coverage rules for items
 description: This procedure shows how to create coverage rules and override coverage settings for a specific item. It also shows how to specify default inventory settings.
 author: t-benebo
 ms.date: 07/01/2019
 ms.topic: how-to 
- 
-# optional metadata 
- 
 ms.search.form: ReqGroup, DefaultDashboard, EcoResProductDetailsExtended, EcoResProductCreate, InventItemOrderSetup, ReqItemTable   
 audience: Application User 
-# ms.devlang:  
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
-ms.search.region: Global
-# ms.search.industry: 
 ms.author: benebotg
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 # Define coverage rules for items
 

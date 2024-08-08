@@ -1,23 +1,15 @@
 ---
-# required metadata
-
 title: Health check for POS peripherals and services
 description: This article describes the health check operation in Microsoft Dynamics 365 Commerce point of sale (POS).
-author: BrianShook
-ms.date: 04/26/2023
+author: ritakimani
+ms.date: 07/29/2024
 ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+ms.custom: 
+  - bap-template
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: brshoo
+ms.author: ritakimani
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
 

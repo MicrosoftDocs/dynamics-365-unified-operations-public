@@ -1,8 +1,8 @@
 ---
 title: Enable and configure Warehouse management only mode
 description: Learn how to configure Warehouse management only mode by setting up source systems, master data, and business events with an outline on configuring source systems.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 04/27/2024
 ms.custom:
@@ -11,8 +11,6 @@ ms.custom:
   - ai-gen-desc
   - ai-seo-date:08/10/2023
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage
 ---
 

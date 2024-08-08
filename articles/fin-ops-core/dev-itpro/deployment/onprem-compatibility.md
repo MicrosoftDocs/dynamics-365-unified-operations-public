@@ -3,14 +3,13 @@ title: Microsoft Dynamics 365 Finance + Operations (on-premises) supported softw
 description: Learn about which software component versions are compatible with Microsoft Dynamics 365 Finance + Operations (on-premises).
 author: faix
 ms.author: osfaixat
-ms.topic: article
-ms.date: 02/16/2024
-# ms.custom: [used by loc for topics migrated from the wiki]
-audience: IT Pro
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 08/01/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-06-30
-ms.search.form: [Operations AOT form name to tie this article to]
 ms.dyn365.ops.version: Platform update 44 
 ms.service: dynamics-365-op
 ---
@@ -37,6 +36,7 @@ Both Microsoft Windows Server Standard and Microsoft Windows Server Datacenter a
 
 ## Microsoft SQL Server
 
+### Software
 Both Microsoft SQL Server Standard Edition and Enterprise Edition are supported.
 
 This section covers the following SQL Server components:
@@ -54,6 +54,18 @@ This section covers the following SQL Server components:
 
 > [!IMPORTANT]
 > Using multiple versions of Microsoft SQL Server throughout a single environment is not supported.
+
+### Database Collation
+
+Finance + Operations (on-premises) supports a limited set of collations. The following table lists the supported collations.
+
+> [!IMPORTANT]
+> The Orchestrator database used by the local agent must use the `SQL_Latin1_General_CP1_CI_AS` collation.
+
+| Name                                            | Supported since  | Notes         |
+|-------------------------------------------------|------------------|---------------|
+| Chinese_Simplified_Pinyin_160_CI_AS_SC_UTF8     | 10.0.40          | Supported only on SQL Server 2022 CU12 and later |
+| SQL_Latin1_General_CP1_CI_AS                    | Original release |               |
 
 ## Active Directory Federation Services (AD FS)
 

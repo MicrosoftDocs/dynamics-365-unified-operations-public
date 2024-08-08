@@ -6,11 +6,7 @@ ms.author: henrikan
 ms.topic: article
 ms.date: 09/15/2020
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-11-01
 ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
-ms.dyn365.ops.version: 10.0.15
 ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
 ---
 

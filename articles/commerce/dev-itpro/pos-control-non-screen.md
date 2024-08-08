@@ -1,15 +1,16 @@
 ---
 title: Add custom controls to non-screen designer-based POS views
-description: This article demonstrates how to add a custom control to a non-screen layout designer-based view.
+description: This article demonstrates how to add a custom control to a non-screen layout designer-based view in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 12/08/2017
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: anvenkat
 ms.search.validFrom: 2017-12-01
-ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
+ms.custom: 
+  - bap-template
 ---
 
 
@@ -17,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-You can enhance the information displayed on a Dynamics 365 Commerce POS view by adding custom controls. A custom control allows you to add your own custom information to the existing POS views. Custom controls can be implemented by using the POS extension framework. Currently, you cannot place the custom control in the desired location, at runtime, POS will load it in a fixed position.
+You can enhance the information displayed on a Microsoft Dynamics 365 Commerce point of sale (POS) view by adding custom controls. A custom control allows you to add your own custom information to the existing POS views. Custom controls can be implemented by using the POS extension framework. Currently, you cannot place the custom control in the desired location, at runtime, POS will load it in a fixed position.
 
 This article applies to Dynamics 365 Finance, and Dynamics 365 Retail with Platform update 8, and Retail Application update 4 hotfix. 
 

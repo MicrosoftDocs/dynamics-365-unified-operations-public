@@ -1,14 +1,12 @@
 ---
 title: Upgrade warehouse management from Microsoft Dynamics AX 2012 to Supply Chain Management 
 description: Access an overview of product and warehouse management migration options with an outline on upgrading to Supply Chain Management.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 01/30/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form:  InventLocationWHSProcessEnablement, WHSLocationProfile, InventTableStorageDimensionGroupChange, InventUpdateBlockedItem, WHSParameters, WHSReservationHierarchy, WHSUOMSeqGroupTable
 ---
 

@@ -1,17 +1,16 @@
 ---
-# required metadata
-
 title: Mass deployment of sealed Commerce self-service components
 description: This article explains how to use the framework for self-service component installers to silently install and service deployments.
 author: jashanno
-ms.date: 02/17/2023
-ms.topic: article
+ms.date: 07/25/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: sericks
+ms.reviewer: v-chrgriffin
 ms.search.region: Global 
-ms.author: stuharg
+ms.author: asharchw
 ms.search.validFrom: 2021-04-30
-
+ms.custom: 
+  - bap-template
 ---
 
 # Mass deployment of sealed Commerce self-service components

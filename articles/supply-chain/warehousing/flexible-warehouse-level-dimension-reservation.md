@@ -1,14 +1,13 @@
 ---
 title: Flexible warehouse-level dimension reservation policy
 description: Learn about the inventory reservation policy that lets businesses that sell batch-tracked products and run their logistics as WMS-enabled operations.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: conceptual
 ms.date: 04/19/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form:
 ---
 

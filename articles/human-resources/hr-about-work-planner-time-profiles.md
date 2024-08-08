@@ -1,8 +1,9 @@
 ---
 title: Work planner and time profiles
 description: Learn about the work planner to shift work and print plans, including calculating and approving registrations in Dynamics 365 Human Resources.
-author: tonyafehr
-ms.author: daxcpft
+author: twheeloc
+ms.author: twheeloc
+ms.reviewer: twheeloc
 ms.date: 01/24/2024
 ms.topic: article
 audience: Application User
@@ -58,37 +59,23 @@ Two types of workflow approval can be created in time and attendance:
       - Regarding registration in time and attendance and manufacturing execution:
         
           - **Clock in**
-        
-          - **Clock out**
-        
-          - **Absence**
-        
-          - **Break**
-        
-          - **Switch code**
-        
-          - **Project**
-        
-          - **Project activity**
-        
+          - **Clock out**       
+          - **Absence**        
+          - **Break**        
+          - **Switch code**        
+          - **Project**        
+          - **Project activity**        
           - **Indirect activity**
     
       - Regarding registration on production jobs in manufacturing execution:
         
-          - **Queue before**
-        
-          - **Setup**
-        
-          - **Process**
-        
-          - **Overlap**
-        
-          - **Transport**
-        
-          - **Queue after**
-        
-          - **Start assistance**
-        
+          - **Queue before**        
+          - **Setup**        
+          - **Process**        
+          - **Overlap**        
+          - **Transport**        
+          - **Queue after**        
+          - **Start assistance**        
           - **Stop assistance**
 
 ## Transferring registrations
@@ -112,11 +99,8 @@ After you calculate or approve registrations, you can view error descriptions on
 ## Update an absence registration
 
 1.  Click **Human resources** \> **Common** \> **Time and attendance** \> **Calculate**. In the **Calculate** dialog box, in the **Date** and **Calculation group** fields, enter the date and calculation group to calculate registrations for. Click **OK**.
-
-2.  In the **Calculate** form, select the worker in the upper pane, and then, on the **Absence** tab, modify the absence registration that was entered during calculation. You can also press CTRL+N to create a new absence registration.
-
+2.  On the **Calculate** page, select the worker in the upper pane, and then, on the **Absence** tab, modify the absence registration that was entered during calculation. You can also press CTRL+N to create a new absence registration.
 3.  Press CTRL+S to save absence records. The absence records are displayed in the lower pane on the **Overview** tab.
-
 4.  Follow steps 1 through 3 for every worker for whom an absence registration is required.
 
 > [!NOTE]
@@ -125,67 +109,53 @@ After you calculate or approve registrations, you can view error descriptions on
 ## Approve switch codes for a worker
 
 1.  Click **Human resources** \> **Common** \> **Time and attendance** \> **Calculate**. In the **Calculate** dialog box, in the **Date** and **Calculation group** fields, enter the date and calculation group to approve switch codes for. Click **OK**.
-
-2.  In the **Calculate** form, select the worker in the upper pane, and then click **Switch code**.
-
-3.  Select the **Approved** check box, and close the form.
+2.  On the **Calculate** page, select the worker in the upper pane, and then click **Switch code**.
+3.  Select the **Approved** check box, and close the page.
 
 ## Add a missing clock-out registration
 
 1.  Click **Human resources** \> **Common** \> **Time and attendance** \> **Calculate**. In the **Calculate** dialog box, in the **Date** and **Calculation group** fields, enter the date and calculation group to add clock-out registrations for. Click **OK**.
-
-2.  In the **Calculate** form, select the worker in the upper pane, and then click **Clock-in and out** \> **Missing clock-out**.
-
+2.  In the **Calculate** page, select the worker in the upper pane, and then click **Clock-in and out** \> **Missing clock-out**.
 3.  In the **Clock out** section, select the date and time for the clock-out registration.
-
-4.  Select the **Create lines** check box, and then click **OK**.
+4.  Select the **Create lines** checkbox, and then click **OK**.
 
 ## Clock out all workers in a calculation group
 
 1.  Click **Human resources** \> **Common** \> **Time and attendance** \> **Calculate**. In the **Calculate** dialog box, in the **Date** and **Calculation group** fields, enter the date and calculation group to calculate registrations for. Click **OK**.
-
-2.  In the **Calculate** form, click **Clock-in and out** \> **Clock out workers**.
-
+2.  In the **Calculate** page, click **Clock-in and out** \> **Clock out workers**.
 3.  In the **Profile date** field, select the clock-out date, and then click **OK**.
 
 > [!NOTE]
-> All workers in the selected calculation group are clocked out according to their work time profile. About profiles for time and attendance registrations.
-> Also, you can create a batch job that clocks out all workers in a calculation group. Submit a batch processing job from a form.
+> All workers in the selected calculation group are clocked out according to their work time profile. Also, you can create a batch job that clocks out all workers in a calculation group. 
 
 ## Correct errors and add registrations
 
 1.  Click **Human resources** \> **Common** \> **Time and attendance** \> **Calculate**. In the **Calculate** dialog box, in the **Date** and **Calculation group** fields, enter the date and calculation group to calculate registrations for. Click **OK**.
-
-2.  In the **Calculate** form, select the worker in the upper pane. In lower pane, click the registration to modify, or press CTRL+N to add a new line.
-
+2.  In the **Calculate** page, select the worker in the upper pane. In lower pane, click the registration to modify, or press CTRL+N to add a new line.
 3.  Enter information for the registration line.
-
-4.  To recalculate the worker’s registrations, in the upper pane, on the **Overview** tab, select the **Calculated** check box.
+4.  To recalculate the worker’s registrations, in the upper pane, on the **Overview** tab, select the **Calculated** checkbox.
 
 > [!IMPORTANT]
-> Do not create a new journal line for a clock-out registration if a worker did not clock out. To create missing clock-out registrations, click **Clock-in and out**, and then select the appropriate option. Only these two options make sure that the clock-out registration is entered in the **Raw registrations** table. Raw registrations determine whether the worker is clocked in or clocked out.
+> Don't create a new journal line for a clock-out registration if a worker didn't clock out. To create missing clock-out registrations, click **Clock-in and out**, and then select the appropriate option. Only these two options make sure that the clock-out registration is entered in the **Raw registrations** table. Raw registrations determine whether the worker is clocked in or clocked out.
 
 ## Calculate time and attendance for workers 
 
 You can calculate time and attendance registrations for workers in the following ways:
 
   - Calculate registrations for all workers who are assigned to a calculation group.
-
   - Calculate registrations for a specific worker.
-
   - Calculate registrations by using a batch job.
 
 You can use the **Day view** and **Week view** filters as follows:
 
   - **Day view** – View registrations for all workers for a selected weekday.
-
   - **Week view** – View registrations for a selected worker for a selected week.
 
 ## Calculate registrations for all workers in a calculation group
 
-You can calculate registrations for all workers in a calculation group by navigating to the **Calculate** option in the **Time and attendance** menu. You can select the week or date to calculate registrations for in the **Week** and/or **Date** fields. In the **Calculation group** field, select the calculation group to calculate registrations for, then select **Update** and **Calculate** in the **Calculate** form.
+You can calculate registrations for all workers in a calculation group by navigating to the **Calculate** option in the **Time and attendance** menu. You can select the week or date to calculate registrations for in the **Week** and/or **Date** fields. In the **Calculation group** field, select the calculation group to calculate registrations for, then select **Update** and **Calculate** in the **Calculate** page.
 
-In the **Calculates jobs** form, verify that the calculation group is selected in the **Calculation group** field. If you use a workflow for approvals, select **Submit to workflow** in the **Calculates jobs** form.
+In the **Calculates jobs** page, verify that the calculation group is selected in the **Calculation group** field. If you use a workflow for approvals, select **Submit to workflow** in the **Calculates jobs** page.
 
 > [!NOTE]
 > If registrations contain errors because of missing information or for other reasons, you must correct the registrations, and then calculate the registrations again. To view the worker registrations that contain errors, click **Display errors**. The **Error** tab displays information about the type of error.
@@ -195,31 +165,21 @@ In the **Calculates jobs** form, verify that the calculation group is selected i
 You can calculate registrations for a specific worker. Typically, you calculate registrations for a worker after you have corrected registration errors for that worker.
 
 1.  Click **Human resources** \> **Common** \> **Time and attendance** \> **Calculate**.
-
 2.  In the **Week** or **Date** field, select the week or date to calculate registrations for.
-
 3.  In the **Calculation group** field, select the calculation group to calculate registrations for, and then click **OK**.
-
-4.  In the **Calculate** form, select the worker in the upper pane and click **Select**.
-
-5.  Select the **Calculated** check box for the registration.
-
+4.  In the **Calculate** page, select the worker in the upper pane and click **Select**.
+5.  Select the **Calculated** checkbox for the registration.
 6.  Click **Close**.
 
 ## Reverse calculated registrations
 
-You can reverse the registrations that have been calculated for a worker. However, you can't reverse calculated registrations after payroll information for the period has been exported to the payroll system. Also, if registrations have been approved, you can reverse the calculated registration only in the **Approve** form.
+You can reverse the registrations that have been calculated for a worker. However, you can't reverse calculated registrations after payroll information for the period has been exported to the payroll system. Also, if registrations have been approved, you can reverse the calculated registration only on the **Approve** page.
 
 1.  Click **Human resources** \> **Common** \> **Time and attendance** \> **Calculate**.
-
 2.  In the **Week** or **Date** field, select the week or date to calculate registrations for.
-
 3.  In the **Calculation group** field, select the calculation group to calculate registrations for, and then click **OK**.
-
-4.  In the **Calculate** form, select the worker in the upper pane and click **Select**.
-
-5.  Clear the **Calculated** check box for the registration.
-
+4.  In the **Calculate** page, select the worker in the upper pane and click **Select**.
+5.  Clear the **Calculated** checkbox for the registration.
 6.  Click **Close**.
 
 > [!TIP]
@@ -229,9 +189,10 @@ You can reverse the registrations that have been calculated for a worker. Howeve
 
 To calculate registrations, navigate to the **Time and attendance** page and access the **Week** or **Date** fields to select the week or date to calculate registrations for.
 
-Then, select the calculation group to calculate registrations for in the **Calculation group** field. In the **Calculate** form, select **Update**, and then **Calculate**. Start the batch job by following prompts in the **Batch** tab's **Calculates jobs** form
-   > [!NOTE]
-> If you use a workflow for approvals, select the **Submit to workflow** check box.
+Then, select the calculation group to calculate registrations for in the **Calculation group** field. On the **Calculate** page, select **Update**, and then **Calculate**. Start the batch job by following prompts in the **Batch** tab's **Calculates jobs** page.
+
+> [!NOTE]
+> If you use a workflow for approvals, select the **Submit to workflow** checkbox.
 
 ## Modify registrations before or after approval 
 
@@ -240,11 +201,8 @@ You can change worker registrations during the approval process. Click **Human r
 Examples of changes include the following:
 
   - Edit an absence registration.
-
   - Apply changes to a pay agreement by overriding the standard pay agreement for the worker.
-
   - Add premium lines, such as mileage, to worker registrations.
-
   - Allocate overtime to specific jobs.
 
 > [!NOTE]
@@ -252,35 +210,30 @@ Examples of changes include the following:
 
 ## Change an absence registration
 
-Change absence registrations by entering changes in the **Approve** form. Select the worker, then navigate to the **Absence** tab to begin making changes for the absence registration.
+Change absence registrations by entering changes on the **Approve** page. Select the worker, then navigate to the **Absence** tab to begin making changes for the absence registration.
 
-   > [!NOTE]
+> [!NOTE]
 > Only the **Absence job** and **Pay units** fields can be edited during approval.
 
 ## Override a pay agreement
 
 You can override the pay agreement for a specific worker to generate the correct pay for the day.
 
-1.  In the **Approve** form, select the worker.
-
+1.  In the **Approve** page, select the worker.
 2.  Click **Override**, and then select **Override pay agreement**.
-
 3.  Click **Retrieve pay agreement**.
-
 4.  Enter the changes to the pay agreement lines for the day.
 
 ## Add manual premium lines
 
-You can add manual premium lines by selecting the worker and navigating to the **Premium lines** option in the **Approve** form. After creating a new premium line with **CTRL+N**, you can select the premium to add in the **Premiums** field. Additionally, you can enter the number and price of units to add in the **Price** field. Lastly, you can select the cost to be assigned to a specific job in the **Transaction ID** field.
+You can add manual premium lines by selecting the worker and navigating to the **Premium lines** option in the **Approve** page. After creating a new premium line with **CTRL+N**, you can select the premium to add in the **Premiums** field. Additionally, you can enter the number and price of units to add in the **Price** field. Lastly, you can select the cost to be assigned to a specific job in the **Transaction ID** field.
 
 ## Allocate overtime
 
 Overtime can be allocated to the relevant jobs performed during the work day.
 
 1.  In the **Approve** form, select the worker.
-
 2.  Click **Overtime allocation**.
-
 3.  In the **Percent** box, enter a percentage for each job.
 
 > [!NOTE]
@@ -302,37 +255,31 @@ On the specified date, the batch job searches for clock-out registrations. When 
   - If a clock-in registration or a job registration is after the end time specified on the workers profile, then the worker has worked overtime. In this case, the batch job doesn't add a clock-out registration.
 
 > [!NOTE]
-> You can also create clock-out registrations for a worker in the **Calculate** form and the **Approve** form.
+> You can also create clock-out registrations for a worker in the **Calculate** and the **Approve** pages.
 
 ## Add clock-out registrations for workers 
 
 A supervisor or manager can insert missing clock-out registrations for workers who forgot to make those registrations. Missing clock-out registrations can be inserted by running a batch job for a group of workers, or for one worker at a time.
 
 > [!NOTE]
-> It is also possible to make clock-in registrations for workers, but it is more likely that a missing registration form a worker is a clock-out registration.
+> It is also possible to make clock-in registrations for workers, but it is more likely that a missing registration for a worker is a clock-out registration.
 
 ## Clock out an individual worker or group of workers
 
 To clock out a single worker:
 
 1.  Click **Human resources** \> **Common** \> **Time and attendance** \> **Calculate**.
-
 2.  Select the worker, and then click **Clock-in and out** \> **Missing clock-out**.
-
 3.  In the **Clock out** section, insert the **Date** and **Time** for the clock-out registration.
-
-4.  To create a clock out registration record in the raw registrations table, select the **Create lines** check box.
+4.  To create a clock out registration record in the raw registrations table, select the **Create lines** checkbox.
 
 To clock out a group of workers:
 
 1.  Click **Human resources** \> **Common** \> **Time and attendance** \> **Approve**.
-
 2.  Click **Clock-in and out** \> **Clock out workers**.
     
-      - If you want to clock out all the workers in the selected calculation group or approval group, enter the profile date for the clock-out registration and then click **OK**.
-    
-      - If you want to clock out specific workers, click **Select** and then select the relevant workers.
-    
+      - If you want to clock out all the workers in the selected calculation group or approval group, enter the profile date for the clock-out registration and then click **OK**.    
+      - If you want to clock out specific workers, click **Select** and then select the relevant workers.    
       - If you want to set up the clock-out registration as a batch job, select the **Batch** tab, and create the batch job.
 
 > [!NOTE]
@@ -343,13 +290,9 @@ To clock out a group of workers:
 After each work day, workers’ registrations must be calculated and approved. You can approve registrations after they have been calculated, and no errors occurred during calculation. You can approve registrations by using one of the following:
 
   - A workflow
-
   - A batch job
-
   - Manually for an approval group
-
   - Manually for one worker at a time
-
 ## Approve registrations using a workflow
 
 The approval workflow is an automatic approval process. All registrations are validated against the rules in the approval workflow. Only deviations that aren't accepted in the workflow must be approved manually.
@@ -357,17 +300,12 @@ The approval workflow is an automatic approval process. All registrations are va
 The worker who is responsible for calculating registrations, for example, a team leader, initiates the approval process. The worker who is responsible for approving registrations, for example, a payroll administrator, receives a message regarding the need for manual approval only when some registrations couldn't be approved according to the approval workflow.
 
 1.  Click **Human resources** \> **Common** \> **Time and attendance** \> **Approve**.
-
 2.  Select the approval date in the **Date** field.
-
 3.  Select your group in the **Approval group** field.
-
-4.  In the **Approve** form, select the worker in the upper pane, on the **Overview** tab.
-
+4.  In the **Approve** page, select the worker in the upper pane, on the **Overview** tab.
 5.  Click the **Action** button. If the worker’s registrations are ready for approval, the **Approve** and **Reject** options are available.
     
-      - To approve, click **Approve**.
-    
+      - To approve, click **Approve**.    
       - To reject, click **Reject**, and insert a note explaining why the registrations are rejected.
 
 ## Approve registrations using a batch job
@@ -375,25 +313,17 @@ The worker who is responsible for calculating registrations, for example, a team
 You can approve registrations using a batch job. To do this:
 
 1.  Click **Human resources** \> **Common** \> **Time and attendance** \> **Approve**.
-
 2.  Select the approval date in the **Date** field.
-
 3.  Select your group in the **Approval group** field.
-
 4.  Click **Update** and **Approve**.
-
 5.  Start the batch job.
 
 To approve registrations for all workers in an approval group:
 
 1.  Click **Human resources** \> **Common** \> **Time and attendance** \> **Approve**.
-
 2.  Select the approval date in the **Date** field.
-
 3.  Select your group in the **Approval group** field.
-
 4.  Click **Update** and **Approve**.
-
 5.  Click **OK**.
 
 > [!NOTE]
@@ -406,17 +336,15 @@ To approve registrations for all workers in an approval group:
 
 You typically must approve registrations for an individual worker after you have corrected errors for that worker.
 
-1.  In the **Approve** form, select the worker in the upper pane.
-
-2.  Select the **Approved** check box for the worker.
+1.  In the **Approve** page, select the worker in the upper pane.
+2.  Select the **Approved** checkbox for the worker.
 
 ## Reverse an approval
 
 Approved registrations for a worker can be reversed until payroll information for the period has been exported to the payroll system. Do the following to reverse approved registrations for a worker:
 
-1.  In the **Approve** form, select the worker in the upper pane.
-
-2.  Clear the **Approved** check box.
+1.  In the **Approve** page, select the worker in the upper pane.
+2.  Clear the **Approved** checkbox.
 
 > [!TIP]
 > If you have made several corrections to the registrations, and, therefore, must restore the lines to their original value, delete all lines, and then click **Restore lines**.
@@ -426,39 +354,28 @@ Registrations must be transferred to journals, such as production or project jou
 After workers’ registrations are approved, and no errors occur, you can transfer the registrations. You can transfer registrations in one of the following ways:
 
   - Transfer registrations by using a workflow.
-
   - Transfer registrations by using a batch job.
-
   - Transfer registrations manually for an approval group.
-
   - Transfer registrations manually for one worker at a time.
 
 ## Transfer registrations using a workflow
 
-If an approval workflow is set up to approve registrations based on a set of predefined rules, the system transfers all approved registrations to the appropriate journals. Only deviations that are not accepted in the workflow are handled manually. This means that approval and transferal of those registrations is performed by the worker responsible for approving registrations, for example, a payroll administrator.
+If an approval workflow is set up to approve registrations based on a set of predefined rules, all approved registrations are transferred to the appropriate journals. Only deviations that aren't accepted in the workflow are handled manually. This means that approval and transferal of those registrations is performed by the worker responsible for approving registrations, for example, a payroll administrator.
 
 ## Transfer registrations using a batch job
 
 1.  Click **Human resources** \> **Common** \> **Time and attendance** \> **Approve**.
-
 2.  Select the approval date in the **Date** field.
-
 3.  Select your group in the **Approval group** field.
-
 4.  Click **Update** and then **Transfer**.
-
 5.  Start the batch job. For more information, see [Transfer registrations (class form)](https://technet.microsoft.com/library/aa548840\(v=ax.60\)).
 
 ## Transfer registrations for all workers in an approval group
 
 1.  Click **Human resources** \> **Common** \> **Time and attendance** \> **Approve**.
-
 2.  Select the approval date in the **Date** field.
-
 3.  Select your group in the **Approval group** field.
-
 4.  Click **Update** and **Transfer**.
-
 5.  Click **OK**.
 
 
@@ -472,17 +389,15 @@ If an approval workflow is set up to approve registrations based on a set of pre
 
 When an error is found in a worker registration, you can transfer the registration after you have corrected the error.
 
-1.  In the **Approve** form, select the worker in the upper pane.
-
-2.  Select the **Transferred** check box for the worker.
+1.  In the **Approve** page, select the worker in the upper pane.
+2.  Select the **Transferred** checkbox for the worker.
 
 ## Reverse a transferred registration
 
 You can reverse transferred registrations for a worker before payroll information for the period is exported to the payroll system. Do the following to reverse transferred registrations for a worker:
 
-1.  In the **Approve** form, select the worker in the upper pane.
-
-2.  Clear the **Transferred** check box.
+1.  In the **Approve** page, select the worker in the upper pane.
+2.  Clear the **Transferred** checkbox.
 
 ## See also
 

@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 08/23/2019
 ms.custom:
 ms.reviewer: kamaybac   
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2019-08-31
 ms.search.form: EntAssetStatusCalculate, EntAssetStatus
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Maintenance status

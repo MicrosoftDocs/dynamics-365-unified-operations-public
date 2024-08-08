@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 10/16/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-09-08
 ms.search.form: TMSTransportationStatus,TMSTransportationStatusMaster
-ms.dyn365.ops.version: 10.0.14
 ---
 
 # Transportation management statuses

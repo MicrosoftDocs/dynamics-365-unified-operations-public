@@ -6,12 +6,7 @@ ms.author: mirzaab
 ms.topic: article
 ms.date: 02/19/2020
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2020-02-19
 ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagingMaterialFee, InventPackagingMaterialTrans, InventPackagingMaterialTransPurch, InventPackagingUnit
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 040b65dc-43c9-4256-b69f-b2d6e736fbe9
 ---
 

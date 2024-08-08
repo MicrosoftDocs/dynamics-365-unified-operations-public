@@ -1,18 +1,13 @@
 ---
 title: Replenishment with withdrawal kanbans
 description: Learn how the withdrawal kanban is used for material replenishment for manufacturing activities with an outline on workflows for material replenishments.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: article
 ms.date: 06/16/2017
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules, WHSKanbanWaveTable, WHSKanbanWaveTableListPage
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Replenishment with withdrawal kanbans

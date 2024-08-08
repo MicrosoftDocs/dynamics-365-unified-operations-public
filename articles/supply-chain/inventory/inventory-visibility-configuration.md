@@ -7,8 +7,6 @@ ms.topic: how-to
 ms.date: 11/30/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -26,7 +24,7 @@ Each data source configuration includes the following components:
 - Calculated measures
 
 > [!NOTE]
-> If you recently transitioned from UI version 1 to UI version 2, see the [Differences between Inventory Visibility UI version 1 and UI version 2](#differences-between-v1-and-v2) section of this article to learn what has changed. 
+> If you recently transitioned from UI version 1 to UI version 2, see the [Differences between Inventory Visibility UI version 1 and UI version 2](#differences-between-v1-and-v2) section of this article to learn what has changed.
 >
 > For new installations, we recommend that you use UI version 2 from the start. If you're still using UI version 1, we recommend that you test the new version and then [upgrade to UI version 2](inventory-visibility-ui-version-2.md) as soon as possible.
 
@@ -56,7 +54,7 @@ Each data source represents a system that your data comes from. Example data sou
 > [!IMPORTANT]
 > When you add a data source, be sure to validate the data source name, physical measures, and dimension mappings before you update the configuration for the Inventory Visibility service. You won't be able to modify these settings after you select **Update Configuration**.
 
-### Add a data source in UI version 2 
+### Add a data source in UI version 2
 
 This section applies when you're using [Inventory Visibility UI version 2](inventory-visibility-ui-version-2.md).
 
@@ -248,7 +246,7 @@ To add a calculated measure in UI version 2, follow these steps.
 1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
 1. On the navigation pane, select **Feature management**.
 1. On the **Data source settings** tile, select **Manage**.
-1. On the **Data source settings** page, select the data source where you want to do the dimension mapping. Then, in the **Calculated measures** section, select **New calculated measure** on the toolbar. <!--KFM: Note that the current label is **New Dimension Mapping** -->
+1. On the **Data source settings** page, select the data source where you want to do the dimension mapping. Then, in the **Calculated measures** section, select **New calculated measure** on the toolbar.
 1. On the **New calculated measure** page, set the following fields for the new calculated measure:
 
     - **Calculated measure display name** – Enter a name that's unique not only within the new measure's own data source but also across all data sources. The recommended format is \<*Data source*\>.\<*Calculated measure name*\> (for example, *iv.TotalAvailable*). This format ensures that the display name is distinct and unique across all data sources. <!--KFM: Is it really the display name, not the measure name, that must be unique? -->

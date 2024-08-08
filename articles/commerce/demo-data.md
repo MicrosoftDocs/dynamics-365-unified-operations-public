@@ -1,17 +1,16 @@
 ---
-# required metadata
-
 title: Demo data screen layouts in Store Commerce
 description: This article provides information about the screen layouts that are included with the demo data set for the Store Commerce point of sale (POS) experiences in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 01/30/2023
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: anvenkat
 ms.search.validFrom: 2017-10-05
-
+ms.custom: 
+  - bap-template
 ---
 
 # Demo data screen layouts in Store Commerce

@@ -6,10 +6,6 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 01/09/2023
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2021-07-30
-ms.dyn365.ops.version: 10.0.21
 ---
 
 # Differences between Planning Optimization and the deprecated master planning engine

@@ -6,6 +6,7 @@ ms.author: twheeloc
 ms.topic: faq
 ms.custom: 
   - bap-template
+  - evergreen
 ms.date: 07/22/2024
 ms.reviewer: twheeloc
 ms.search.region: Global
@@ -93,6 +94,4 @@ The [Removed or deprecated features in Dynamics 365 Finance](removed-deprecated-
 
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Finance](removed-deprecated-features-finance.md) article 12 months prior to the removal.
 
-### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=932660).

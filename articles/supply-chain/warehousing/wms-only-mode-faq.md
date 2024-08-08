@@ -1,14 +1,12 @@
 ---
 title: Warehouse management only mode FAQ
 description: Access answers to frequently asked questions about Warehouse management only mode, including questions about messages in the queued state.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: conceptual
 ms.date: 04/27/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -86,7 +84,7 @@ In addition to setting up item model groups that don't use costing and general l
 
 ## Can I attach documents and notes to inbound and outbound shipment orders?
 
-Yes. Both inbound and outbound shipment order messages support document attachments. <!-- For example, the [Open Data Protocol (OData) Postman example](https://go.microsoft.com/fwlink/?linkid=2250135) contains both `InboundShipmentOrderDocumentAttachmentMessages` and `OutboundShipmentOrderDocumentAttachmentMessages`.--> For more information, see the descriptions of *Inbound shipment order messages composite entity* and *Outbound shipment order messages composite entity* in [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). These entities contain the child entities *Inbound shipment order document attachment messages* and *Outbound shipment order document attachment messages*.
+Yes. Both inbound and outbound shipment order messages support document attachments. For more information, see the descriptions of *Inbound shipment order messages composite entity* and *Outbound shipment order messages composite entity* in [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). These entities contain the child entities *Inbound shipment order document attachment messages* and *Outbound shipment order document attachment messages*.
 
 ## Why can't I see and search for page names that are related to Warehouse management only mode?
 

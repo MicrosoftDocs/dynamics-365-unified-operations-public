@@ -1,17 +1,13 @@
 ---
 title: Reprint and void wave labels
 description: Learn how to void and reprint existing wave labels, including outlines on reprinting labels from the web client and reprinting labels from the warehousing app.
-author: perlynne
+author: Mirzaab
 ms.author: mirzaab
 ms.topic: article
 ms.date: 07/09/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-07-09
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
-ms.dyn365.ops.version: 10.0.2
 ---
 
 # Reprint and void wave labels

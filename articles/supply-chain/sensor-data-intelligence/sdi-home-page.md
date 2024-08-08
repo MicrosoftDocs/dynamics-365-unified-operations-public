@@ -6,11 +6,7 @@ ms.author: johanho
 ms.topic: article
 ms.date: 09/02/2022
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2022-09-02
 ms.search.form:
-ms.dyn365.ops.version: 10.0.30
 ---
 
 # Sensor Data Intelligence home page (preview)

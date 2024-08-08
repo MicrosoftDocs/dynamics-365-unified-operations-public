@@ -7,12 +7,7 @@ ms.topic: article
 ms.date: 12/02/2020
 ms.custom: 
 ms.reviewer: kamaybac 
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2020-12-02
 ms.search.form: ReqCreatePlanWorkspace
-ms.dyn365.ops.version: 10.0.14
 ---
 
 # Intercompany planning

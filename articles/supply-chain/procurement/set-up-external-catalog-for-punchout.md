@@ -6,11 +6,7 @@ ms.author: henrikan
 ms.topic: article
 ms.date: 11/02/2017
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: PurchTable, PurchTablePart, PurchVendorPortalRequests, CatExternalCatalogConfiguration, CatCXMLCartLogList
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ---
 

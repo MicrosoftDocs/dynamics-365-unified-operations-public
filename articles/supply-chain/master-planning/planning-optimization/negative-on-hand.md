@@ -7,12 +7,7 @@ ms.topic: article
 ms.date: 07/22/2021
 ms.custom:
 ms.reviewer: kamaybac 
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2020-02-18
 ms.search.form: ReqCreatePlanWorkspace
-ms.dyn365.ops.version: AX 10.0.5
 ---
 
 # Planning with negative on-hand quantities

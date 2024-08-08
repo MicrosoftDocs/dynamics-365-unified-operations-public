@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 10/15/2019
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2019-10-1
 ms.search.form: WHSTroubIeshootingSeIfService, WHSTroubleshootingSelfService
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Cancel warehouse work for exception handling

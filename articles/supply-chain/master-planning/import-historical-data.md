@@ -7,12 +7,7 @@ ms.topic: article
 ms.date: 05/10/2017
 ms.custom: 
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-11-30
 ms.search.form:  ReqDemPlanCreateForecastDialog
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 59c0d269-9db0-48e7-b8c7-9a388781a9ca
 ---
 

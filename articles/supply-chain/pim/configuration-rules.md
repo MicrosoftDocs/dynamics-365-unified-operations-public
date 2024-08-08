@@ -6,11 +6,7 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: BOMConfigRule
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: e4c6622d-1e2d-4a4d-8047-c553a25d4f87
 ---
 

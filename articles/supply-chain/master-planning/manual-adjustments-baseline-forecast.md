@@ -6,12 +6,7 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 01/07/2020
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: ReqDemPlanForecastViewer
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
 ---
 

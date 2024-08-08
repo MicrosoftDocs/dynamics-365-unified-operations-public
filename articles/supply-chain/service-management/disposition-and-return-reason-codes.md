@@ -6,11 +6,7 @@ ms.author: henrikan
 ms.topic: overview
 ms.date: 07/25/2019
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: ReturnTableListPage, ReturnReasonCodeLookup
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Return reason codes and disposition codes

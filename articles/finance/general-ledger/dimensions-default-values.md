@@ -34,9 +34,9 @@ This article describes the rules that define how financial dimension values are 
 
 The financial dimension values are not set as expected on the Account or Offset account within a financial journal. The following scenarios are two examples:
 
-A voucher is entered in a journal a general journal. The Account is a vendor Account, and the Offset account is a bank Account. The vendor's financial dimensions are entered by default on the Account, but the bank's financial dimensions aren't entered by default on the Offset account. Instead, the dimension values from the Account are entered by default on the Offset account.
+A voucher is entered in a journal a general journal. The Account is a vendor account, and the offset account is a bank account. The vendor's financial dimensions are entered by default on the account, but the bank's financial dimensions aren't entered by default on the offset account. Instead, the dimension values from the account are entered by default on the offset account.
 
-A customer has default financial dimension values assigned, and a revenue main account has a fixed dimension value assigned for the Department financial dimension. A voucher is entered in a general journal.  The Account is the customer and the Offset account is a ledger account, specifically the revenue account with the fixed dimension value. The fixed dimension isn’t set on the Offset account for the revenue main account. Instead, it is set to the Department dimension value from the Account, which came from the customer.  After posting the voucher, the fixed dimension value is used on the posted accounting entry, but the voucher still shows the customer’s department value on the revenue account. 
+A customer has default financial dimension values assigned, and a revenue main account has a fixed dimension value assigned for the Department financial dimension. A voucher is entered in a general journal. The Account is the customer and the offset account is a ledger account, specifically the revenue account with the fixed dimension value. The fixed dimension isn’t set on the offset account for the revenue main account. Instead, it is set to the Department dimension value from the account, which came from the customer. After posting the voucher, the fixed dimension value is used on the posted accounting entry, but the voucher still shows the customer’s department value on the revenue account. 
 
 What rules are followed for financial dimension values set on vouchers within a journal?
 
@@ -54,19 +54,19 @@ The following rules are followed to enter financial dimension values by default 
    - If any financial dimensions are blank, their values are entered by default from customer, vendor, bank, fixed asset, project, or ledger dimensions.
 
      - If the account type is **Ledger**, a fixed dimension on a ledger account is treated like a default dimension during transaction entry.
-     - If the account type is **Customer**, **Vendor**, **Bank**, **Fixed assets**, or **Project**, the main account can't yet be determined. Therefore, a fixed dimension will never be entered by default for the account.
+     - If the account type is **Customer**, **Vendor**, **Bank**, **Fixed assets**, or **Project**, the main account can't yet be determined. Therefore, a fixed dimension is never be entered by default for the account.
 
 3. **Journal line offset account**
 
  - First, journal line Offset account dimensions default from journal line Account dimensions.
 
- - If any financial dimensions are blank, the next default entry will come from the default dimensions from the Customer, Vendor, Bank, Fixed assets, Project, or Ledger.
+ - If any financial dimensions are blank, the next default entry comes from the default dimensions from the Customer, Vendor, Bank, Fixed assets, Project, or Ledger.
    1. If the Offset account type is **Ledger**, a fixed dimension on a Ledger account is treated like a default dimension during transaction entry. If a dimension value was already entered by default from the Account, the main account’s default or fixed dimension value will not override the existing value.
    2. If the Offset account type is **Customer**, **Vendor**, **Bank**, **Fixed assets**, or **Project**, the main account isn't known yet so a fixed dimension will never default for the Offset account.
 
 4. **Posting**
 
-    1. During posting, the main account for each line of the accounting entry (for both the Account and the Offset account) is evaluated to determine whether there is a fixed dimension value. If a fixed dimension is defined, any existing or blank values are replaced with that fixed dimension value.
+    1. During posting, the main account for each line of the accounting entry (for both the Account and the Offset account) is evaluated to determine whether there's a fixed dimension value. If a fixed dimension is defined, any existing or blank values are replaced with that fixed dimension value.
 
         The fixed dimension value is **not** shown on the journal lines after posting. Instead, it's shown on the accounting entry when you view the voucher after it's posted.
 

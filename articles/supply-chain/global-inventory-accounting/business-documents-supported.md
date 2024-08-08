@@ -6,11 +6,7 @@ ms.author: yanansong
 ms.topic: article
 ms.date: 06/18/2021
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2021-06-18
 ms.search.form:
-ms.dyn365.ops.version: 10.0.20
 ---
 
 # Business documents supported by Global Inventory Accounting

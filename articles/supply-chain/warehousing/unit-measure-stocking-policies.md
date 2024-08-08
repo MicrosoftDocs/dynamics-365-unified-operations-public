@@ -1,16 +1,12 @@
 ---
 title: Unit of measure and stocking policies
 description: Learn how default units, unit sequences, and unit conversions are used in warehouse processes with an outline on unit sequence groups for released products.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: EcoResProductDetails, EcoResProductDetailsExtended, EcoResStorageDimensionGroup, InventItemOrderSetup, UnitOfMeasureConversion, WHSRFMenuItem, WHSUOMSeqGroupTable
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 4b5ca875-9a06-416d-9ac0-cc3ab8f7338e
 ---
 
