@@ -23,7 +23,7 @@ This article provides troubleshooting guidance for upgrades of Microsoft Dynamic
 
 **Solution**
 
-Ensure that your cloud-hosted environment is a suitably scaled Azure virtual machine (VM) stockkeeping unit (SKU). Also ensure that you use premium storage when the VM is deployed from Microsoft Dynamics Lifecycle Services.
+Ensure that your cloud-hosted environment is a suitably scaled Azure virtual machine (VM) stock keeping unit (SKU). Also ensure that you use premium storage when the VM is deployed from Microsoft Dynamics Lifecycle Services.
 
 ## Scenario 2: Log files on Dynamics AX 2012 SQL database AX fill up the disk.
 
