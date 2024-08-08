@@ -27,16 +27,16 @@ When users generate the report, the following parameters are available.
 
 | Field | Description |
 | ----- | ----------- |
-| Dimension criteria | Select a financial dimension set for the report. A financial dimension set is a named group of accounts or dimensions. It contains either account values for the account or dimension values for a single dimension. Examples include main accounts, departments, and cost centers, or combinations such as a cost center and main account, or a department and cost center. Financial dimension sets are defined on the **Financial dimension sets** page. |
-| Budget model | Select a budget model. |
-| Budget cycle time span | Select a budget cycle time span. |
-| Include carry-forward amounts | Set this option to *Yes* to include budget amounts that were carried forward from a previous fiscal year.|
-| Dates to include | Select either the **Budget cycle** option or the **Date range** option. |
-| Budget cycle | If you selected the **Budget cycle** option, select the name of a budget cycle. In this case, the report includes the dates that are set up for the selected budget cycle on the **Budget cycle time spans** page. |
-| From date | If you selected the **Date range** option, select the start date for the budget account entries to include on the report. The date must be in one of the fiscal years that are included in the fiscal calendar that was selected when the budget cycle time span was set up. For example, a fiscal calendar for a budget cycle includes fiscal years that have dates from January 1, 2020, through December 31, 2024. In this case, the **From date** value can't be before January 1, 2020.|
-| To date | If you selected the **Date range** option, select the end date for the budget account entries to include on the report. The date must be in one of the fiscal years that are included in the fiscal calendar that was selected when the budget cycle time span was set up. For example, a fiscal calendar for a budget cycle includes fiscal years that have dates from January 1, 2020, through December 31, 2024. In this case, the **To date** value can't be after December 31, 2024.|
-| From account | Select the first account in the range of accounts to include. |
-| To account | Select the last account in the range of accounts to include. |
+| **Dimension criteria** | Select a financial dimension set for the report. A financial dimension set is a named group of accounts or dimensions. It contains either account values for the account or dimension values for a single dimension. Examples include main accounts, departments, and cost centers, or combinations such as a cost center and main account, or a department and cost center. Financial dimension sets are defined on the **Financial dimension sets** page. |
+| **Budget model** | Select a budget model. |
+| **Budget cycle time span** | Select a budget cycle time span. |
+| **Include carry-forward amounts** | Set this option to *Yes* to include budget amounts that were carried forward from a previous fiscal year.|
+| **Dates to include** | Select either the **Budget cycle** option or the **Date range** option. |
+| **Budget cycle** | If you selected the **Budget cycle** option, select the name of a budget cycle. In this case, the report includes the dates that are set up for the selected budget cycle on the **Budget cycle time spans** page. |
+| **From date** | If you selected the **Date range** option, select the start date for the budget account entries to include on the report. The date must be in one of the fiscal years that are included in the fiscal calendar that was selected when the budget cycle time span was set up. For example, a fiscal calendar for a budget cycle includes fiscal years that have dates from January 1, 2020, through December 31, 2024. In this case, the **From date** value can't be before January 1, 2020.|
+| **To date** | If you selected the **Date range** option, select the end date for the budget account entries to include on the report. The date must be in one of the fiscal years that are included in the fiscal calendar that was selected when the budget cycle time span was set up. For example, a fiscal calendar for a budget cycle includes fiscal years that have dates from January 1, 2020, through December 31, 2024. In this case, the **To date** value can't be after December 31, 2024.|
+| **From account** | Select the first account in the range of accounts to include. |
+| **To account** | Select the last account in the range of accounts to include. |
 
 ![Screenshot that shows the configuration parameters for generation of the Budget control account detail history report.](https://github.com/user-attachments/assets/99a7f195-d139-4a03-b282-308b7b6a5649)
 
