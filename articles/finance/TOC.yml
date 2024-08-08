@@ -5499,6 +5499,8 @@
           href: ../finance/transparency-note.md
         - name: Collections coordinator summary FAQ
           href: accounts-receivable/collections-coordinator-summary-faq.md
+        - name: Generative help and guidance FAQ
+          href: business-performance-analytics/responsible-ai-faq.md
     - name: Development and administration for finance and operations apps
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Supply Chain Management
