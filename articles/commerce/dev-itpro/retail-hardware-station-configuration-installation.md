@@ -1,29 +1,24 @@
 ---
-# required metadata
-
 title: Configure and install Retail hardware station
-description: This article explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.
+description: This article explains how to configure, download, and install the legacy Retail hardware station by using self-service functionality. It also explains how to uninstall Retail hardware station.
 author: anush6121
 ms.author: anvenkat
-ms.date: 07/02/2024
+ms.date: 08/07/2024
 ms.topic: how-to
-ms.custom: 
-  - bap-template
 ms.search.form: RetailHardwareStation
-ms.reviewer: johnmichalak
+ms.reviewer: v-chrgriffin
 ms.assetid: eb164a9d-5538-4b6f-81ad-87e05d92eca5
 ms.search.region: Global
-ms.search.industry: Retail
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 
+  - bap-template
 ---
 
 # Configure and install Retail hardware station
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to configure, download, and install the legacy Commerce hardware station by using self-service functionality. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](Enhanced-Mass-Deployment.md). It also explains how to uninstall Retail hardware station.
+This article explains how to configure, download, and install the legacy Retail hardware station by using self-service functionality. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](Enhanced-Mass-Deployment.md). It also explains how to uninstall Retail hardware station.
 
 > [!IMPORTANT]
 > - It is critical to note that this component uses a server certificate. Server certificates must be managed for expiration. By default, a certificate expires in one calendar year (365 days).
@@ -31,11 +26,23 @@ This article explains how to configure, download, and install the legacy Commerc
 
 ## Prerequisites
 
-When running Dynamics 365 Commerce version 10.0.41, you must add the following registry entries to support Transport Layer Security (TLS) 1.3.
-- TLS 1.2\Server:Enabled=0
+When configuring hardware station for Dynamics 365 Commerce versions 10.0.42 and later, you must add the following registry entries to support Transport Layer Security (TLS) 1.3:
 - TLS 1.3\Server:Enabled=1
-- TLS 1.2\Client:Enabled=0
 - TLS 1.3\Client:Enabled=1
+- TLS 1.2\Server:Enabled=0
+- TLS 1.2\Client:Enabled=0
+- TLS 1.1\Server:Enabled=0
+- TLS 1.1\Client:Enabled=0
+- TLS 1.0\Server:Enabled=0
+- TLS 1.0\Client:Enabled=0
+- SSL 3.0\Server:Enabled=0
+- SSL 3.0\Client:Enabled=0
+- SSL 2.0\Server:Enabled=0
+- SSL 2.0\Client:Enabled=0
+
+When configuring hardware station for Commerce versions 10.0.41 and earlier, you must add the following registry entries to support TLS 1.2:
+- TLS 1.2\Server:Enabled=1
+- TLS 1.2\Client:Enabled=1
 - TLS 1.1\Server:Enabled=0
 - TLS 1.1\Client:Enabled=0
 - TLS 1.0\Server:Enabled=0
@@ -159,32 +166,42 @@ Current security standards state that the following options should be set in a p
 > The hardware station installer automatically makes these registry edits as part of the installation through self-service.
 
 - SSL should be disabled.
-- Only Transport Layer Security (TLS) version 1.3 (or the current highest version) should be enabled and used.
-
-    > [!NOTE]
-    > By default, SSL and all version of TLS except TLS 1.3 are disabled. To edit or enable these values, follow these steps:
-    >
-    > 1. Press the Windows logo key+R to open a **Run** window.
-    > 2. In the **Open** field, type **Regedit**, and then select **OK**.
-    > 3. If a **User Account Control** window appears, select **Yes**.
-    > 4. In the new **Registry Editor** window, go to **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\SecurityProviders\\SCHANNEL\\Protocols**. The following keys have been automatically entered to allow for TLS 1.3 only:
-    >    
-    >    - TLS 1.2\\Server:Enabled=0
-    >    - TLS 1.3\\Server:Enabled=1
-    >    - TLS 1.2\\Client:Enabled=0
-    >    - TLS 1.3\\Client:Enabled=1
-    >    - TLS 1.1\\Server:Enabled=0
-    >    - TLS 1.1\\Client:Enabled=0
-    >    - TLS 1.0\\Server:Enabled=0
-    >    - TLS 1.0\\Client:Enabled=0
-    >    - SSL 3.0\\Server:Enabled=0
-    >    - SSL 3.0\\Client:Enabled=0
-    >    - SSL 2.0\\Server:Enabled=0
-    >    - SSL 2.0\\Client:Enabled=0
-
 - No additional network ports should be open, unless they are required for known, specified reasons.
 - Cross-origin resource sharing must be disabled and must specify the allowed origins that are accepted.
 - Only trusted certificate authorities should be used to procure certificates that will be used on computers that run Retail hardware station.
+- Only Transport Layer Security (TLS) version 1.3 (or the current highest version) should be enabled and used.
+
+> [!NOTE]
+> By default, SSL and all versions of TLS except TLS 1.3 are disabled starting with Commerce versions 10.0.42 and later. For Commerce versions 10.0.41 and earlier, TLS 1.2 is used instead. To edit or enable these values, follow these steps:
+>   1. Select the Windows key + R to open a **Run** command window.
+>   1. In the **Open** field, enter "Regedit", and then select **OK**.
+>   1. If a **User Account Control** dialog appears, select **Yes**.
+>   1. In the new **Registry Editor** window, go to **HKEY\_LOCAL\_MACHINE\\System\\CurrentControlSet\\SecurityProviders\\SCHANNEL\\Protocols**.
+>      - The following keys are automatically entered for Commerce versions 10.0.42 and later to allow for TLS 1.3 only: 
+>        - TLS 1.3\Server:Enabled=1
+>        - TLS 1.3\Client:Enabled=1
+>        - TLS 1.2\Server:Enabled=0
+>        - TLS 1.2\Client:Enabled=0
+>        - TLS 1.1\Server:Enabled=0
+>        - TLS 1.1\Client:Enabled=0
+>        - TLS 1.0\Server:Enabled=0
+>        - TLS 1.0\Client:Enabled=0
+>        - SSL 3.0\Server:Enabled=0
+>        - SSL 3.0\Client:Enabled=0
+>        - SSL 2.0\Server:Enabled=0
+>        - SSL 2.0\Client:Enabled=0
+>
+>      - The following keys are automatically entered for Commerce versions 10.0.41 and earlier to allow for TLS 1.2 only:
+>        - TLS 1.2\Server:Enabled=1
+>        - TLS 1.2\Client:Enabled=1
+>        - TLS 1.1\Server:Enabled=0
+>        - TLS 1.1\Client:Enabled=0
+>        - TLS 1.0\Server:Enabled=0
+>        - TLS 1.0\Client:Enabled=0
+>        - SSL 3.0\Server:Enabled=0
+>        - SSL 3.0\Client:Enabled=0
+>        - SSL 2.0\Server:Enabled=0
+>        - SSL 2.0\Client:Enabled=0
 
 > [!IMPORTANT]
 > - Most common, lower-security software and services will stop working after all lower-security standards are disabled. To use them again, go to the preceding registry keys, and set the **Enabled** key from **0** to **1**.
