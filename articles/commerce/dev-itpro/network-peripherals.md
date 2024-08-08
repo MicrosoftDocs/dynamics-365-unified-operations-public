@@ -86,7 +86,7 @@ Network-enabled Star Micronics printers that support Ethernet can be configured 
 
 To enable a *dedicated* hardware station, follow these steps in Commerce headquarters for each store for which you want to configure network-enabled receipt printers and cash drawers.
 
-1. Go to **Retail and Commerce \> Channels \> Stores \> All stores** and select the store for which you are configuring a network-enabled receipt printer or cash drawer.
+1. Go to **Retail and Commerce \> Channels \> Stores \> All stores** and select the store for which you're configuring a network-enabled receipt printer or cash drawer.
 1. On the **Hardware Station** FastTab, select **Add**.
 1. For **Hardware Station type**, select **Dedicated**.
 1. Enter a description, but don't specify a hardware profile or set any other values for this hardware station.
@@ -96,7 +96,7 @@ To enable a *dedicated* hardware station, follow these steps in Commerce headqua
 
 To enable a *shared* hardware station, follow these steps in Commerce headquarters for each store for which you want to configure network-enabled receipt printers and cash drawers. 
 
-1. Go to **Retail and Commerce \> Channels \> Stores \> All stores** and select the store for which you are configuring a network-enabled receipt printer or cash drawer.
+1. Go to **Retail and Commerce \> Channels \> Stores \> All stores** and select the store for which you're configuring a network-enabled receipt printer or cash drawer.
 1. Select the store by selecting its **Retail Channel Id** value, and then select **Edit**.
 1. On the **Hardware stations** FastTab, select **Add**.
 1. Set the **Hardware station type** field to **Shared**.
@@ -110,7 +110,7 @@ To enable a *shared* hardware station, follow these steps in Commerce headquarte
 For detailed information about how to set up shared hardware stations, see [Configure and install Retail hardware station](../retail-hardware-station-configuration-installation.md). 
 
  > [!NOTE]
- > - Store Commerce for web does not support dedicated (built-in) hardware station logic. If you are configuring peripherals for Store Commerce for web, you must set up a shared hardware station and configure each peripheral's IP address at the store level.
+ > - Store Commerce for web does not support dedicated (built-in) hardware station logic. If you're configuring peripherals for Store Commerce for web, you must set up a shared hardware station and configure each peripheral's IP address at the store level.
  > - Network-enabled receipt printers and cash drawers can be shared by multiple POS devices. To share them, you can use a shared hardware station to broker the connection to the devices. Alternatively, if you're using Store Commerce for Windows, Android, or iOS, you can configure the same devices directly in the register properties.
  > - Payment terminals can only be shared if a shared hardware station is deployed to broker the connection to the payment terminal. You can't share a payment terminal by setting the same payment terminal IP address directly at the register level. If you try to use this approach, you'll encounter issues when individual POS clients try to lock and claim the payment terminal.
 
