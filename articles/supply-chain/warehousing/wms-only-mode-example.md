@@ -73,7 +73,7 @@ For the `InboundShipmentOrderMessages` inbound shipment order header message, yo
 - `OrderNumber`: *IO1*
 - `ReceivingWarehouseId`: *51*
 
-When you use <!--[Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) with --> variables, the `InboundShipmentOrderMessages` message looks like the following example.
+When you use variables, the `InboundShipmentOrderMessages` message looks like the following example.
 
 ``` JSON example
 POST {{resource}}/data/InboundShipmentOrderMessages
@@ -123,7 +123,7 @@ For the `OutboundShipmentOrderMessages` outbound shipment order header message, 
 - `ConsigneeName` or `ReceiverName`: *Microsoft*
 - `ConsigneeCountryRegionId` or `ReceiverCountryRegionId`: *USA*
 
-When you use <!-- [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) with--> variables, the `OutboundShipmentOrderMessages` message looks like the following example.
+When you use variables, the `OutboundShipmentOrderMessages` message looks like the following example.
 
 ``` JSON
 POST {{resource}}/data/OutboundShipmentOrderMessages
