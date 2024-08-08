@@ -23,13 +23,13 @@ This article provides troubleshooting guidance for upgrades of Microsoft Dynamic
 
 **Solution**
 
-Use premium storage when you deploy the virtual machine (VM) from Microsoft Dynamics Lifecycle Services (LCS).
+Ensure your Cloud Hosted Environment is a suitabily scaled Azure VM SKU, and that you use premium storage when you deploy the virtual machine (VM) from Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Scenario 2: Log files on Dynamics AX 2012 SQL database AX fill up the disk.
 
 **Solution**
 
-Set the recovery mode on the database to **Simple**.
+Set the recovery mode on the database to **Simple**. Esnure you have enough free disck space for the upgrade database to grow.
 
 ## Scenario 3: A "Failed to create a session" error is generated during a prerequisite step.
 
@@ -50,4 +50,30 @@ During the additive or partial synchronization that is done as part of the prere
     ```SQL
     TRUNCATE TABLE SYSCLIENTSESSIONS;
     ```
+
+## Scenario 4: Running upgrade deployable package you get error "The term 'new' is not recognized as the name of a cmdlet"
+
+Whilst running the upgrade depployable package on a Cloud Hosted Environment or VHD, you get the following error:
+
+```
+GlobalUpdate script for service mode: AOSService on machine: localhost
+perform data upgrade, sync AX database and deploy SSRS report
+The term 'new' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling...
+```
+**Cause**
+The cause is due to a missing environment variable that the PowerShell script **AutoDataUpgradeOperations.ps1** references.
+
+**Solution**
+1. Click on the Windows Icon, and type Environment Variables, select the Edit the system environment variables form.
+2. Click the **Environment Variables...** button
+3. Add in to the user variables the following if it doesn't exist. NOTE! Edit value to you service drive, for VHDs this is **C:**, for Cloud Hosted Environments it is normall **J:**. The drive letter is the drive that has the AOSService folder in. 
+
+   Variable Name: SERVICEDRIVE
+
+   Variable Value: C:
+
+4. Click OK and OK to close all windows.
+5. You'll need to open a new PowerShell prompt again to ensure the new environment variable is loaded into the session. 
+6. Start the run book again using the -rerunstep option.
+
 
