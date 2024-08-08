@@ -1669,7 +1669,7 @@
           href: inventory/inventory-transactions-details.md
         - name: Initialize stock levels in the warehouse
           href: inventory/tasks/initialize-stock-levels-warehouse.md
-        - name: Link transfer order lines with sales order lines
+        - name: Link transfer order lines with sales order lines (preview)
           href: inventory/pair-transfer-and-sales-lines.md
         - name: Transfer physical inventory within the warehouse
           href: inventory/tasks/transfer-physical-inventory-within-warehouse.md
