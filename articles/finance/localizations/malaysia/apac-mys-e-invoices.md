@@ -136,7 +136,7 @@ To configure electronic document parameters, follow these steps.
     > - Project invoices
     > - Self invoices that are based on vendor invoices from foreign vendors
     > - Credit notes and debit notes for all the previously described invoice types
-    > - Refund notes which represent credit notes for already paid invoices.
+    > - Refund notes, which represent credit notes for already paid invoices.
 
 1. On the **Features** tab, select and enable the **Malaysian electronic invoice** feature.
 1. Save your changes on the **Electronic document parameters** page, and then close the page.
@@ -154,12 +154,12 @@ To configure electronic document parameters, follow these steps.
 1. In the **Registration types** field, select the registration type that you created in step 2.
 1. In the **Registration categories** field, select **Enterprise ID (COID)**.
 
-## <a id="SST"></a>Configure Sales and Service Tax (SST) numbers
+## <a id="SST"></a>Configure Sales and Service Tax numbers
 
-To configure SST numbers, follow the instructions in [SST registration number](apac-mys-gst.md#gstsst-registration-number).
+To configure Sales and Service Tax (SST) numbers, follow the instructions in [SST registration number](apac-mys-gst.md#gstsst-registration-number).
 
 > [!NOTE]
-> Make sure that the configured SST registration number is of **VAT ID** registration category.
+> Make sure that the configured SST registration number is in the **VAT ID** registration category.
 
 ## Configure electronic document property types
 
@@ -233,13 +233,13 @@ To enter a business activity code and description, follow these steps.
 1. In the **Value** field, enter the taxpayer business activity description.
 
 > [!NOTE]
-> The contact information for the Legal entity is automatically retrieved from the related **Person** associated in Microsoft Dynamics 365 Finance with the current user.
+> The contact information for the legal entity is automatically retrieved from the related **Person** that is associated with the current user in Dynamics 365 Finance.
 
 ## Configure customer data
 
 ### Enter the address
 
-To enter the address, follow these stepsl
+To enter the address, follow these steps.
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
 1. Select a customer.
@@ -276,55 +276,55 @@ To enter the registration numbers, follow these steps.
     > - **EI00000000020** is used as the customer's **TIN**.
     > - **NA** is used as the customer's **BRN** and **SST**.
 
-### Additional properties configuration
+### Additional property configuration
 
-The system allows users to configure **Electronic documents property types** to cover some specific scenarios without coding using only configuration. Customizable electronic documents property types can be used to extend properties of Legal entities, Customers, Vendors and Invoice journals.
+**Customizable electronic document property types** can be used to extend the properties of legal entities, customers, vendors, and invoice journals. Users can configure them to cover some specific scenarios through configuration only. No coding is required.
 
-To configure additional buyers and journals properties, follow these additional configuration steps.
+To configure additional buyer and journal properties, follow these additional configuration steps.
 
 1. Go to **Accounts receivable** \> **Setup** \> **Electronic document property types**.
 1. Select **New** to create an electronic document property type.
 1. In the **Type** field, enter **BuyerRegistrationName**. You must enter the value exactly as it appears here.
-1. On the **Action** pane, select **Applicability**.
+1. On the Action Pane, select **Applicability**.
 1. In the **Table name** field, select **CustInvoiceJour**.
 1. To create the record for another applicable table, select **New**.
-1. In the **Table name** field, select **CustTable** where required.
-1. Save and close the **Electronic document property type applicability setup** page.
-1. Repeat steps 2 through 8 for the remaining properties
-   - BuyerTIN
-   - BuyerBRN
-   - BuyerAddressLine
-   - BuyerCityName
-   - BuyerCountrySubentityCode
-   - BuyerIdentificationCode
-   - BuyerTelephone
-   - BuyerSST
-   - BuyerTTX
-   - BuyerNRIC
-   - BuyerPASSPORT
-   - BuyerARMY
-     
-1. Save and close the **Electronic document property types** page.
+1. In the **Table name** field, select **CustTable** as required.
+1. Save your changes, and close the **Electronic document property type applicability setup** page.
+1. Repeat steps 2 through 8 for the remaining properties:
 
-![Screenshot that shows electronic document properties configuration for retail buyers.](apac-mys-e-invoice-retail-buyer.jpg)
+    - BuyerTIN
+    - BuyerBRN
+    - BuyerAddressLine
+    - BuyerCityName
+    - BuyerCountrySubentityCode
+    - BuyerIdentificationCode
+    - BuyerTelephone
+    - BuyerSST
+    - BuyerTTX
+    - BuyerNRIC
+    - BuyerPASSPORT
+    - BuyerARMY
 
-To enter the values for the described above electronic document properties at customer level, follow these steps.
+1. Save your changes, and close the **Electronic document property types** page.
+
+![Screenshot that shows the electronic document properties configuration for retail buyers.](apac-mys-e-invoice-retail-buyer.jpg)
+
+To enter the values for the previously described electronic document properties at the customer level, follow these steps.
 
 1. Go to **Accounts receivable** \> **Customers** \> **All customers**.
-1. Select a customer, and select the **Customer** menu item from the top menu.
-1. On the **Action** pane, select **Electronic document properties**.
-1. Enter required values in the **Value** field for each of the properties that needs to be overwritten in the electronic invoice.
+1. Select a customer, and then, on the Action Pane, on the **Customer** tab, select **Electronic document properties**.
+1. For each property that must be overridden in the electronic invoice, enter the required value in the **Value** field.
 
-To enter the values for the electronic document properties at invoice level, follow these steps.
+To enter the values for the electronic document properties at the invoice level, follow these steps.
 
 1. Go to **Account receivable** \> **Inquiries and reports** \> **Invoices** \> **Invoice journal**.
-1. Select a required invoice, and select the **Invoice** menu item from the top menu.
-1. On the **Action** pane, select **Electronic document properties**.
-1. Enter required values in the **Value** field for each of the properties that needs to be overwritten in the electronic invoice.
+1. Select a required invoice, and then, on the Action Pane, on the **Invoice** tab, select **Electronic document properties**.
+1. For each property that must be overridden in the electronic invoice, enter the required value in the **Value** field.
 
 > [!NOTE]
-> The described above electronic document properties non-empty values will override the respective default values automatically populated from either customer or invoice master data.
-> Entering of the electronic document properties values must be performed before submitting electronic invoices to the authorities.
+> Non-blank values in the previously described electronic document properties override the corresponding default values that are automatically populated from either customer or invoice master data.
+>
+> Values must be entered for the electronic document properties before electronic invoices are submitted to the authorities.
 
 ## Configure funding sources
 
@@ -386,14 +386,14 @@ To enter the registration numbers, follow these steps.
 To enter a business activity code and descriptions, follow these steps.
 
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**.
-1. Select a vendor, and then, in the **Vendor** menu, on the **Action** pane, select **Electronic document properties**.
+1. Select a vendor, and then, on the Action Pane, on the **Vendor** tab, select **Electronic document properties**.
 1. Select the line where the **Type** field is set to **ActivityCode**.
 1. In the **Value** field, enter the business activity code.
 1. Select the line where the **Type** field is set to **ActivityDescription**.
 1. In the **Value** field, enter the business activity description.
 
-   > [!NOTE]
-   > A Malaysian Standard Industrial Classification (MSIC) code might not be applicable to foreign vendors. In this case, the fixed value **00000** is used for the activity code, and the value **NA** is used as the activity description.
+> [!NOTE]
+> A Malaysian Standard Industrial Classification (MSIC) code might not be applicable to foreign vendors. In this case, the fixed value **00000** is used for the activity code, and the value **NA** is used as the activity description.
 
 ## Configure the application-specific parameters
 
@@ -423,7 +423,7 @@ To complete the configuration, follow these steps.
 
 ## Configure sales tax codes
 
-To cover scenarios for non-taxable, zero-rated, or exempted operations, define tax exempt codes in the system, follow these steps.
+To cover scenarios for non-taxable, zero-rated, or exempted operations, define tax exempt codes in the system by following these steps.
 
 1. Go to **Tax** \> **Setup** \> **Sales tax** \> **Sales tax exempt codes**.
 1. Add the required exempt codes together with descriptions.
@@ -439,9 +439,9 @@ To configure units of measure, follow these steps.
 
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 1. Select a unit ID, and then select **External codes**.
-1. On the **External codes** page, in the **Overview** section, in the **Code** column, enter a code which is equal to the selected unit ID.
+1. On the **External codes** page, in the **Overview** section, in the **Code** column, enter a code that is equal to the selected unit ID.
 1. In the **Standard code** column, select the checkbox.
-1. In the **Value** section, in the **Value** field, enter the external code to use as the [units](https://sdk.myinvois.hasil.gov.my/codes/unit-types/) according to required codification.
+1. In the **Value** section, in the **Value** field, enter the external code to use as the [units](https://sdk.myinvois.hasil.gov.my/codes/unit-types/) according to the required codification.
 
     > [!NOTE]
     > For scenarios where no specific units of measure are assumed, the default value **EA** is used.
@@ -454,19 +454,18 @@ You can inquire about the results of a submission by going to **Organization adm
 
 ## Configure printable invoice layouts
 
-To enable QR codes printing in full and simplified invoices, follow these steps.
+To enable QR code printing in full and simplified invoices, follow these steps.
 
 1. Go to **Accounts receivable** \> **Setup** \> **Forms** \> **Form setup**.
 1. Select **Print management**.
 1. Select the **Customer invoice** report, and then, in the **Report format** field, reference the **SalesInvoice.ReportFull\_MY** or **SalesInvoice.ReportSimplified\_MY** layout.
 1. Select the **Free text invoice** report, and then, in the **Report format** field, reference the **FreeTextInvoice.ReportFull\_MY** or **FreeTextInvoice.ReportSimplified\_MY** layout.
 
-When using self-invoices, follow these steps.
+If you use self invoices, follow these steps.
 
 1. Go to **Accounts payable** \> **Setup** \> **Forms** \> **Form setup**.
 1. Select **Print management**.
-1. Select the **Vendor invoice** report, and then, in the **Report format** field, refer to the **VendInvoiceDocument.ReportMY** layout.
-
+1. Select the **Vendor invoice** report, and then, in the **Report format** field, reference the **VendInvoiceDocument.ReportMY** layout.
 
 > [!NOTE]
 > The QR code that's shown on the printouts of invoices represents the URL that takes you to the official portal of **MyInvois** system, where you can find the details of the related electronic invoice.
