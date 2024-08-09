@@ -25,10 +25,53 @@ This article explains how to configure and use vendor electronic invoice import 
 Before you complete the tasks in this article, the following prerequisites must be met:
 
 - The primary address of the legal entity must be in Chile.
+- **Enable application response for vendor invoices** feature must be enabled in Feature management.
 - The latest version of the Electronic reporting (ER) format configuration that's named **Inventory e-invoice (xml) CL - import** must be imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
 
+1. Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+
+    - Customer invoice context model
+    - Inventory e-invoice (CL) XML Import
+    - Edicom source file response import format
+    - Edicom response processing (CL)
+    - Edicom response error log import
+
 > [!NOTE]
-> The ER format is based on the **Invoice model** configuration and uses the **Vendor Invoice Mapping to Destination** configuration. All required additional configurations are automatically imported.
+> The ER format is based on the **Invoice model LATAM** configuration and uses the **Vendor Invoice Mapping to Destination LATAM** configuration. All required additional configurations are automatically imported.
+
+## Configure the Electronic invoicing feature
+
+### Import channel
+
+To enable an inbound flow, a **feature setup** of the **Import channel** type nedds to be created for the **Chilean electronic invoice (CL) "E-Invoicing for Chile: ISV last-mile connector with Edicom"** globalization feature as follows:
+1. Switch to the **Setups** tab of the derived feature.
+1. Click **Add** and opt for **Custom setup**.
+1. Specify **Name** and **Description** of the feature setup.
+1. Choose the **Import channel** setup type and select the **Edicom service** data channel.
+1. Click on the **Create** button.
+1. Position on the created feature setup for the vendor invoice import.
+1. Click on **Edit**.
+1. Complete the **Import channel parameters**. 
+
+    The following illustration shows these feature setup parameters set to the values that Edicom provided to Microsoft for testing purposes. The values that you enter will differ. Edicom provides these values to you when you're onboarded.
+
+    ![Screenshot that shows the configured Feature setup parameters for of the Import channel for the Globalization feature for Chile.](ltm-chl-vend-e-invoice-import-channel-parms.png)
+
+### Applicability rules
+
+Applicability rules must be correctly configured to provide context, so that the exact Electronic invoicing Globalization feature that must run in Electronic Invoicing service can be found. Create a new applicability rule for the same channel name as specified for the Import channel configuration above. For example, like this:
+
+![Screenshot of the setup on the Applicability rules tab of the Import channel Feature version setup page.](ltm-chl-vend-e-invoice-applicaility-rules.png)
+
+### Variables
+
+Variables are provided out-of-box with the particular feature setup supporting the following variables: EdicomId, Response, and ResponseXML as shown on the picture below:
+
+![Screenshot of the setup on the Applicability rules tab of the Feature version setup page.](ltm-chl-vend-e-invoice-variables.png)
+
+> [!NOTE]
+> Once the feature setup is completed, save, complete, and deploy the version.
+
 
 ## Configure parameters
 
