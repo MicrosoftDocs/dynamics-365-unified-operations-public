@@ -67,43 +67,38 @@ Applicability rules must be correctly configured to provide context, so that the
 
 Variables are provided out-of-box with the particular feature setup supporting the following variables: EdicomId, Response, and ResponseXML as shown on the picture below:
 
-![Screenshot of the setup on the Applicability rules tab of the Feature version setup page.](ltm-chl-vend-e-invoice-variables.png)
+![Screenshot of the setup on the Variables tab of the Feature version setup page.](ltm-chl-vend-e-invoice-variables.png)
 
 > [!NOTE]
 > Once the feature setup is completed, save, complete, and deploy the version.
 
+## Configure Electronic reporting
+
+1. Go to the **Electronic reporting** workspace, open **Reporting configurations**.
+1. **Derive** a configuration from **Customer Invoice Context Model**.
+![Screenshot that shows the configured Feature setup parameters for of the Import channel for the Globalization feature for Chile.](ltm-chl-vend-e-invoice-CustInvContextModel-derive.png)
+1. In the new created configuration, go to **Designer** \> **Map model to datasource** \> **Data channel** \> **Designer**.
+1. Update the **Data channel context** with the value of your **Channel name**, save the changes. 
+1. The change would look like this (an example):
+![Screenshot of the change of Data channel context.](ltm-chl-vend-e-invoice-CustInvContextModel-channel-name.png)
+1. Return back to **Reporting configurations**.
+1. Position to **Vendor invoice Mapping to destination LATAM** configuration.
+1. Set the **Default for model mapping** to **Yes**.
 
 ## Configure parameters
 
-### Reference the imported ER format configurations
+## Configure electronic document parameters
 
-1. Go to **Accounts payable** \> **Setup** \> **Accounts payable parameters**.
-2. On the **Electronic documents** tab, on the **Electronic reporting** FastTab, in the **Vendor invoice** field, select the imported **Vendor Invoice Import (DK)** format.
+1. Make sure that the country/region-specific ER configurations for the document context and electronic document model mapping that are required for Chile are imported. For more information, see [Set up Electronic document parameters](../global/e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
+1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+1. In the **Integration channels** section, create records: specify a **Channel** name of **Import** type and the document context configuration for every required company.
+1. For each channel, add the **Import source** as follows:
+	- fill in the response format in the **Name** field,
+	- select the **Vendor invoice header** data entity,
+	- and put the **model mapping** for the invoice import.
+1. Save your changes, and close the page.
 
-### Configure the sources to import files in a batch mode
-
-You can configure a SharePoint folder as a source location for incoming vendor invoice files.
-
-1. Go to **Organization administration** \> **Document management** \> **Document types**.
-2. Create a new document type, or configure an existing one.
-3. On the **General** FastTab, in the **Location** field, select **SharePoint**.
-4. In the **SharePoint Address** field, select the folder where import files will be located.
-5. Go to **Organization administration** \> **Electronic reporting** \> **Electronic reporting source**.
-6. Create a new ER source.
-7. In the **Format** field, select the **Inventory e-invoice (xml) CL - import** format configuration.
-8. On the **File source** FastTab, in the **Name** field, assign a source name. Then select **Settings**.
-9. On the **Source settings** page, enable the **Sharepoint** option.
-10. In the **Document type for input sources** field, select the document type that you created in step 2.
-11. Optional: Set up three more document types, and use them to define different *post-process* locations:
-
-    - **Document type for imported files** – Move the files that were successfully imported.
-    - **Document type for files with warnings** – Move the files that were imported with warnings.
-    - **Document type for failed files** – Move the files that failed with errors.
-
-    ![ER source settings](../media/emea-dnk-er-source.jpg)
-
-> [!NOTE]
-> If no source is defined for import in batch mode, the system requests to define an individual import file before the start of the import process.
+![Screenshot of Integration channels of the Electronic document parameters page.](ltm-chl-vend-e-invoice-parms-integration-channels.png)
 
 ### Configure vendor data
 
@@ -136,9 +131,9 @@ You can optionally configure external codes for units of measure, if specific un
 
 To run the import vendor electronic invoices, follow these steps.
 
-1. Go to **Accounts payable** \> **Periodic tasks** \> **Import vendor invoices**.
-2. On the **Electronic report parameters** page, on the **File source** FastTab, in the **Source settings** field, select the source location for batch mode import. If no source for batch import is defined, the system prompts you to select a single file for import.
-3. Select **OK** to immediately start the import process or to schedule the import to run in the background.
+1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Receive electronic documents**.
+2. On the **Receive electronic documents** dialog, cpecify the parameters as required.
+3. Click **OK** to immediately start the import process or to schedule the import to run in the background.
 
 ### Import process description
 
@@ -154,6 +149,8 @@ Here's an overview of the steps in the import process and the order that they oc
 8. Taxes are calculated in the system, based on the imported data and tax settings. Taxes aren't imported as fixed amounts from the incoming XML file. The results of the calculation can be manually adjusted as required.
 
 Successfully imported vendor electronic invoices are shown in the system as pending invoices. To review imported invoices, go to **Accounts payable** \> **Invoices** \> **Pending vendor invoices**. 
+
+### Application response
 
 > [!NOTE]
 > There are some limitations to this import process:
