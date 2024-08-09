@@ -4,7 +4,7 @@ description: Learn about how to collect invoice files from different sources in 
 author: sunfzam
 ms.author: zezhangzhao
 ms.topic: overview
-ms.date: 07/19/2023
+ms.date: 08/09/2024
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -46,11 +46,11 @@ The **Received file (captured)** page shows all files that have been successfull
 | Waiting | The invoice has been captured by a Power Automate flow and is awaiting file validation. | No action is required. |
 | Processing | File filter rules are being applied to validate the invoice, or the invoice has passed filter validation and is being recognized. | **Retry** |
 | Cancelled | An exception occurred during file validation, or the call to the recognitive service failed. | **Retry** or **Void** |
-| Captured | The form recognizer result has been moved to captured invoice staging. | **View captured invoice** |
+| Captured | The form recognizer result has moved to captured invoice staging. | **View captured invoice** |
 | Voided | If the invoice isn't needed, select **Voided**. If an invoice has a status of **Voided**, you can permanently delete it from Dataverse by selecting **Obsoleted**. | **Obsolete** |
 
 **Duplicate file check**
-It utilizes the checksum method to verify if the same file has been previously received. If a file with the same checksum result is detected, the invoice file status will be set to "Cancelled" with the reason "Duplicate file found." However, the file can still be processed further by selecting the entry and clicking the "Retry" button. This duplicate check differs from the validation that ensures an invoice with the same number hasn't been received before. Such validation doesn't existing in the standard but can be implemented via a custom extension during the invoice transfer on the Dynamics 365 Finance side.
+It utilizes the checksum method to verify if the same file has been previously received. If a file with the same checksum result is detected, the invoice file status is set to **Cancelled** with the reason **Duplicate file found**. The file can still be processed further by selecting the entry and clicking the "Retry" button. This duplicate check differs from the validation that ensures an invoice with the same number hasn't been received before. Such validation doesn't exist in the standard but can be implemented via a custom extension during the invoice transfer on the Dynamics 365 Finance side.
 
 ## Upload invoice files
 
