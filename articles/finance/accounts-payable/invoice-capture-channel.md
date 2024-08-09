@@ -4,7 +4,7 @@ description: Learn about how to manage channels in the Invoice capture solution,
 author: sunfzam
 ms.author: zezhangzhao
 ms.topic: overview
-ms.date: 11/01/2023
+ms.date: 08/09/2024
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -72,7 +72,7 @@ The channel type determines whether the scenario is interactive or silent.
 Administrators can decide how they want to integrate the Document receive API. On the **Channel** page, set the **Use managed flow** option to one of the following values:
 
 - **Yes** – The flow is automatically generated based on the flow setting.
-- **No** – The user must integrate the received API and bind the current channel ID to the API parameter.
+- **No** – Users must integrate the received API and bind the current channel ID to the API parameter.
 
 #### With a flow template
 
@@ -120,20 +120,15 @@ The flow is generated based on the selected template and preset required paramet
 
 Various errors can appear:
 
-- "Generate flow failed"
+- **Generate flow failed**: 
+      - Cause - The flow would have been successfully generated. However, generation failed because of a time-out, a lack of licenses, or other system reasons.
+      - Solution - Error messages provide details, and **Generate flow** generates temporary errors or the system-level fixes.
 
-    **Cause:** The flow would have been successfully generated. However, generation failed because of a time-out, a lack of licenses, or other system reasons.
-
-    **Solution:** Error messages provide details, and **Generate flow** generates temporary errors or the system-level fixes.
-
-- "Turn on flow failed"
-
-    **Cause:** There are multiple reasons why a flow might fail when it's turned on:
-
-    - A flow connects operations together, and different operations require different connections and credentials to different applications. A connection is a reusable artifact, but if the user hasn't yet created any connections, the flow will fail when it's turned on.
-    - Different parameters are required for different flow templates. For example, the **Microsoft 365 Outlook** template requires that the user select the email folder that triggers the flow. Incorrect parameters can cause the flow to fail when it's turned on.
-
-    **Solution:** To help administrators access the flow editing UI, the message bar that shows the error message includes a **Fix it** button. If the message has already been closed, select **Edit** in the **Manage flow** pane to open the flow editing UI.
+- **Turn on flow failed**:
+     - Cause - There are multiple reasons why a flow might fail when it's turned on:
+             - A flow connects operations together, and different operations require different connections and credentials to different applications. A connection is a reusable artifact, but if the user hasn't yet created any connections, the flow will fail when it's turned on.
+             - Different parameters are required for different flow templates. For example, the **Microsoft 365 Outlook** template requires users select the email folder that triggers the flow. Incorrect parameters can cause the flow to fail when it's turned on.
+     - Solution - To help administrators access the flow editing UI, the message bar that shows the error message includes a **Fix it** button. If the message has already been closed, select **Edit** in the **Manage flow** pane to open the flow editing UI.
 
 ### Without a flow template
 
@@ -181,7 +176,7 @@ Here are the steps how to create a Channel with unmanged flow within Invoice cap
     
 ## Assign legal entity on the channel
 
-Administrators can designate distinct channels for various legal entities. After assigning the appropriate legal entity to the corresponding channel, the legal entity will be determined when the document is received via the channel. During Invoice capture preprocessing, the legal entity value is automatically assigned without applying additional derivation logic. Note that security control is applied to both captured invoices and received files.
+Administrators can designate distinct channels for various legal entities. After assigning the appropriate legal entity to the corresponding channel, the legal entity will be determined when the document is received via the channel. During Invoice capture preprocessing, the legal entity value is automatically assigned without applying additional derivation logic. Security control is applied to both captured invoices and received files.
 
 ## Deactivate and activate the channel
 
