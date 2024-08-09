@@ -4,7 +4,7 @@ description: Learn about the process for moving to the latest update of finance 
 author: laneswenka
 ms.author: laswenka
 ms.topic: article
-ms.date: 11/01/2021
+ms.date: 08/09/2024
 ms.custom:
 ms.reviewer: johnmichalak 
 audience: Developer, IT Pro
@@ -98,8 +98,6 @@ Before you begin your upgrade, we highly recommend that you make sure that your 
 ### Begin the upgrade
 
 In your sandbox environment, on the **Maintain** menu, select **Upgrade**.
-
-<img src="media/UpgradeAutomation/01_Select.png" width="700px" alt="Maintain menu" />
 
 A dialog box appears, where you can select the latest combination of an application version and a platform update.
 
