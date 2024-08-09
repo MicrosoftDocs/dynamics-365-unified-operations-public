@@ -4,7 +4,7 @@ description: Learn about how to review collections information as well as variou
 author: ShivamPandeyMSFT
 ms.author: shpandey
 ms.topic: how-to
-ms.date: 03/28/2023
+ms.date: 08/08/2024
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User 
@@ -54,6 +54,10 @@ This article explains how to review collections information as well as various s
   - **Forward** – Print columns in the same order in which the headings appear in the table, starting with the top row.  
   - **Backward** – Print columns in the reverse order in which the headings appear in the table, starting with the bottom row.    
 
+>[!Note]
+> No more than six aging periods can be used on external statements, aging period snapshots, or on the **Collections list** page. This aging period definition isn't available on those pages. 
+
+In case the default aging period (Account Receivables Parameters > Collections > Collection Defaults > Aging Period Definition) is edited and has more than six periods, the default aging period will not be respected. 
 ## Setup collections parameters
 1. Go to **Credit and collections > Setup > Accounts receivable parameters**.
 2. Select the **Collections** tab.
