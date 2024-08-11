@@ -35,7 +35,6 @@ Before you complete the tasks in this article, the following prerequisites must 
 > The ER format is based on the **Invoice model LATAM** configuration and uses the **Vendor Invoice Mapping to Destination LATAM** configuration. All required additional configurations are automatically imported.
 
 ## Configure the Electronic invoicing feature
-
 ### Import channel
 
 To enable an inbound flow, a **feature setup** of the **Import channel** type nedds to be created for the **Chilean electronic invoice (CL) "E-Invoicing for Chile: ISV last-mile connector with Edicom"** globalization feature as follows:
