@@ -26,15 +26,10 @@ Before you complete the tasks in this article, the following prerequisites must 
 
 - The primary address of the legal entity must be in Chile.
 - **Enable application response for vendor invoices** feature must be enabled in Feature management.
-- The latest version of the Electronic reporting (ER) format configuration that's named **Inventory e-invoice (xml) CL - import** must be imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
-
-1. Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
-
-    - Customer invoice context model
-    - Inventory e-invoice (CL) XML Import
-    - Edicom source file response import format
-    - Edicom response processing (CL)
-    - Edicom response error log import
+- Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+    - **Customer invoice context model**
+    - **Inventory e-invoice (CL) XML Import**
+    - **Edicom response processing (CL)**
 
 > [!NOTE]
 > The ER format is based on the **Invoice model LATAM** configuration and uses the **Vendor Invoice Mapping to Destination LATAM** configuration. All required additional configurations are automatically imported.
@@ -76,7 +71,7 @@ Variables are provided out-of-box with the particular feature setup supporting t
 
 1. Go to the **Electronic reporting** workspace, open **Reporting configurations**.
 1. **Derive** a configuration from **Customer Invoice Context Model**.
-![Screenshot that shows the configured Feature setup parameters for of the Import channel for the Globalization feature for Chile.](ltm-chl-vend-e-invoice-CustInvContextModel-derive.png)
+![Screenshot that shows the configured Feature setup parameters for of the Customer Invoice Context Model for Chile.](ltm-chl-vend-e-invoice-CustInvContextModel-derive.png)
 1. In the new created configuration, go to **Designer** \> **Map model to datasource** \> **Data channel** \> **Designer**.
 1. Update the **Data channel context** with the value of your **Channel name**, save the changes. 
 1. The change would look like this (an example):
@@ -151,6 +146,7 @@ Here's an overview of the steps in the import process and the order that they oc
 Successfully imported vendor electronic invoices are shown in the system as pending invoices. To review imported invoices, go to **Accounts payable** \> **Invoices** \> **Pending vendor invoices**. 
 
 ### Application response
+
 
 > [!NOTE]
 > There are some limitations to this import process:
