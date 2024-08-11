@@ -2,7 +2,7 @@
 title: Get started with Electronic invoicing for Chile
 description: Learn how to set up Microsoft Dynamics 365 Finance to use Chilean electronic invoice formats.
 author: Fhernandez0088
-ms.author: v-federicohe
+ms.author: ankviklis
 ms.topic: article
 ms.date: 07/29/2024 
 ms.custom: bap-template

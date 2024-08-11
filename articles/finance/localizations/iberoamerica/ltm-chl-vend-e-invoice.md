@@ -26,7 +26,7 @@ Before you complete the tasks in this article, the following prerequisites must 
 
 - The primary address of the legal entity must be in Chile.
 - **Enable application response for vendor invoices** feature must be enabled in Feature management.
-- Make sure that the following Electronic reporting (ER) format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+- Make sure that the following Electronic reporting (ER) format configurations are imported.
     - **Customer invoice context model**
     - **Inventory e-invoice (CL) XML Import**
     - **Edicom response processing (CL)**
