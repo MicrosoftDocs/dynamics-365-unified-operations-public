@@ -50,7 +50,7 @@ The following Copilot features are currently available in finance and operations
     - [Collections coordinator summary](../../../finance/accounts-receivable/CollectionsCoordinatorSummary.md)
     - [Customer page summary](../../../finance/accounts-receivable/CustomerPageSummary.md)
     - [Workflow history summary](../organization-administration/workflow-history-summary.md)
- 
+
 - For Dynamics 365 Project Operations:
 
     - [Copilot for project overview](/dynamics365/project-operations/project-management/copilot-features)
