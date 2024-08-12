@@ -33,6 +33,7 @@ On the **Main account** page:
 
 - Verify that the **Main account type** field is correctly set for each main account. The main account type determines whether the balance of the main account will be brought forward as an opening balance or closed into retained earnings in the opening transaction.
 - The balance of the main account can be transferred to a new main account during the year-end close. Enter the new main account in the **Opening account** field. Typically, this field is used for balance sheet main accounts when the main account is inactivated and a new main account is used for the new fiscal year.
+- In version 10.0.41, introduced a new feature **Validate year-end close** This feature conducts thorough validation checks before year-end closing to detect issues and suggest a resolution. It ensures accurate ledger balances in both accounting and reporting currencies, advises best practices for managing large dimension sets, thereby improving year-end close experience.  You'll need to select the target legal entity and the target year. 
 
 On the **General ledger parameters** page under **Fiscal year close**:
 
