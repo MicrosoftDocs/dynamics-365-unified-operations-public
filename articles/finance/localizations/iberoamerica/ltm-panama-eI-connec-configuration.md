@@ -23,13 +23,13 @@ After you configure electronic invoicing, you can generate, digitally sign, and 
 > The electronic invoicing approach that this article describes is implemented using an invoicing service that's applicable only to cloud deployments of Finance or Supply Chain Management.
 
 > [!IMPORTANT]
-> This new E-Invoicing globalization feature for Panama (outbound flow) requires you to be on Dynamics 365 Finance version 10.0.40 specifically on build number 10.0.1935.60 or later. It can only be imported into the new Globalization Studio and it is not supported in RCS.
+> This new E-Invoicing globalization feature for Panama (outbound flow) requires you to be on Dynamics 365 Finance version 10.0.41 specifically on build number 10.0.XXXX.?? or later. It can only be imported into the new Globalization Studio and it is not supported in RCS.
 
 ## Prerequisites
 
 Before you begin the procedures in this article, the following prerequisites must be met:
 
-1. Ensure that the settings for the Panamanian legal entity are in place. For more information, see REVISAR[Set up legal entity and tax information for Panama ](ltm-Panama-set-up-legal-entity-tax-information.md).ltm-set-up-legal-entity-tax-panama
+1. Ensure that the settings for the Panamanian legal entity are in place. For more information, see [Set up legal entity and tax information for Panama ](ltm-Panama-set-up-legal-entity-tax-information.md).
 1. Gain familiarity with and understanding of Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
 1. Do the common part of electronic invoicing service configuration as described in [Set up electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
 1. You must enable the following features in **Feature management**:
