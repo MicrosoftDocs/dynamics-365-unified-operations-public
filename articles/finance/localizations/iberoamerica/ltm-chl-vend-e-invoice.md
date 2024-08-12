@@ -24,9 +24,13 @@ This article explains how to configure and use vendor electronic invoice import 
 
 Before you complete the tasks in this article, the following prerequisites must be met:
 
-- The primary address of the legal entity must be in Chile.
-- **Enable application response for vendor invoices** feature must be enabled in Feature management.
-- Make sure that the following Electronic reporting (ER) format configurations are imported.
+1. The primary address of the legal entity must be in Chile.
+1. Ensure that the settings for the Chilean legal entity are in place. For more information, see [Set up legal entity and tax information for Chile](ltm-chile-set-up-legal-entity-tax-information.md).
+1. [Configure electronic invoice parameters for Chile](ltm-chile-conf-electronic-invoice).
+1. Gain familiarity with and understanding of Electronic invoicing as it's described in [Electronic Invoicing service overview](../global/e-invoicing-service-overview.md).
+1. Do the common part of Electronic Invoicing service configuration as it's described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
+1. **Enable application response for vendor invoices** feature must be enabled in Feature management.
+1. Make sure that the following Electronic reporting (ER) format configurations are imported.
     - **Customer invoice context model**
     - **Inventory e-invoice (CL) XML Import**
 	- **Vendor Invoice Mapping to Destination LATAM**
@@ -151,7 +155,7 @@ To fill in the application response, perform the following steps:
 	- Accept with discrepancies
 	- Reject
 1. Specify the **Comments** in case of **Accept of discrepancies** or **Reject**.
-1. Choose the Reason for rejection among the following values:
+1. Choose the **Reason for rejection** among the following values:
 	- Claim to the content of the document
 	- Claim for Partial Shortage of Goods
 	- Claim for Total Shortage of Goods
