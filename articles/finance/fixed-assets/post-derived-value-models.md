@@ -4,8 +4,8 @@ description: Learn how to use derived books, which include transactions that are
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 06/20/2017
-ms.reviewer: kfend
+ms.date: 08/12/2024
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -28,7 +28,7 @@ When you post transactions for a book that contains derived books, the derived b
 > [!WARNING]
 > Depreciation posted in the derived book will be the same amount that was posted for the primary book. If the depreciation methods are different between the books, you should not generate depreciation transactions using the derived process.
 
-In version 10.0.41, a feature called "Consider split transaction in derived books posting" is introduced in feature management as a (Public preview). This feature automates the process of splitting transactions from the main book to designated derived books based on asset book configurations. It ensures accurate recording across primary and secondary ledgers without manual input, and maintaining consistency. Once enabled, the system automatically posts split transactions according to the predefined settings in the asset book, eliminating manual intervention and keeping derived books updated in real-time.
+In version 10.0.41, the **Consider split transaction in derived books posting** feature automates the process of splitting transactions from the main book to designated derived books based on asset book configurations. It ensures accurate recording across primary and secondary ledgers without manual input, and maintaining consistency. Once enabled, split transactions are automatically posted according to the predefined settings in the asset book, eliminating manual intervention and keeping derived books updated in real-time.
 
 ## Example 
 The following information describes how to set up acquisition transactions with the derived book functionality.
