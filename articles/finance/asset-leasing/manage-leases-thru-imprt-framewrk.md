@@ -4,7 +4,7 @@ description: Learn how to use the Lease import framework to adjust multiple leas
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 06/12/2024
+ms.date: 08/12/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -68,7 +68,7 @@ After the leases are compared, you can run a report to view the differences for 
 > [!NOTE]
 > To compare multiple leases at the same time, go to **Asset leasing \> Lease import framework \> Periodic** and select **Compare**.
 
-In version 10.0.41 a feature involves enhancements made to the Asset Leasing module's Lease Import framework, specifically targeting two tables: AssetLeaseLeaseImportHeader and AssetLeaseLeaseDetailsImport. The modifications introduce additional functionality that allows for easier deletion within the lease import records. This means you can now more efficiently manage and remove lease-related data imported using lease import framework, improving the overall flexibility and control over data management operations within the Asset Leasing.
+In Dynamics 365 Finance version 10.0.41, enhancements have been made to the Lease import framework, specifically targeting two tables: AssetLeaseLeaseImportHeader and AssetLeaseLeaseDetailsImport. The modifications introduce additional functionality that allows for easier deletion within the lease import records. Users can more efficiently manage and remove lease-related data imported using lease import framework, improving the overall flexibility and control over data management operations within the Asset leasing.
 
 ## Set up update fields
 
