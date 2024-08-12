@@ -4,7 +4,7 @@ description: Learn about how to install the Invoice capture solution and integra
 author: sunfzam
 ms.author: zezhangzhao
 ms.topic: overview
-ms.date: 07/16/2024
+ms.date: 08/12/2024
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -69,7 +69,7 @@ When the invoice journal is selected, the **Invoice journal name** column in the
 > [!NOTE]
 > The **Document type** and **Invoice journal name** columns are available in Dynamics 365 Finance version 10.0.39 and later.
 > 
-> It only supports the attachment transfer of cost invoice to invoice journal header level. 
+> The attachment transfer of cost invoice to invoice journal header level is supported. 
 
 ## Invoice capture in Dynamics 365 Finance
 
