@@ -1,10 +1,10 @@
 ---
 title: Create a depreciation proposal
 description: Learn how depreciation batch proposals work and explains how to propose depreciation for fixed assets, including a step-by-step process. 
-author: abruer
-ms.author: twheeloc
+author: moaamer
+ms.author: moaamer
 ms.topic: how-to
-ms.date: 03/28/2023
+ms.date: 08/12/2024
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User   
@@ -40,6 +40,6 @@ This article describes how depreciation batch proposals work and explains how to
 4. Select **Post**.
 
 > [!NOTE]                                                                                                                               
-> In version 10.0.42, fixed asset journals are excluded from the automatic splitting of large financial journals feature. Additionally, an option has been added to the fixed asset journal header to allow transactions to be posted via batch jobs. This feature has been backported to version 10.0.39 through the respective update installation.    
+> In Dynamics Finance 365 version 10.0.42, fixed asset journals are excluded from the automatic splitting of large financial journals feature. Additionally, an option has been added to the fixed asset journal header to allow transactions to be posted via batch jobs. This feature has been backported to version 10.0.39 through the respective update installation.    
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
