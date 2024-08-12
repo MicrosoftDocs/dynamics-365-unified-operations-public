@@ -68,6 +68,8 @@ When the invoice journal is selected, the **Invoice journal name** column in the
 
 > [!NOTE]
 > The **Document type** and **Invoice journal name** columns are available in Dynamics 365 Finance version 10.0.39 and later.
+> 
+> It only supports the attachment transfer of cost invoice to invoice journal header level. 
 
 ## Invoice capture in Dynamics 365 Finance
 
