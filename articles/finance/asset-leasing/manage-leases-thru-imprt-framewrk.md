@@ -66,7 +66,9 @@ To process an individual lease, select **Migrate lease records** on the **Import
 After the leases are compared, you can run a report to view the differences for each lease that is included in the import ID. To run the report for one lease, select that lease in the staging data, and then select **Compare and view report \> Differences report**.
 
 > [!NOTE]
-> To compare multiple leases at the same time, go to **Asset leasing \> Lease import framework \> Periodic** and select **Compare**. 
+> To compare multiple leases at the same time, go to **Asset leasing \> Lease import framework \> Periodic** and select **Compare**.
+
+In version 10.0.41 a feature involves enhancements made to the Asset Leasing module's Lease Import framework, specifically targeting two tables: AssetLeaseLeaseImportHeader and AssetLeaseLeaseDetailsImport. The modifications introduce additional functionality that allows for easier deletion within the lease import records. This means you can now more efficiently manage and remove lease-related data imported using lease import framework, improving the overall flexibility and control over data management operations within the Asset Leasing.
 
 ## Set up update fields
 
