@@ -69,7 +69,9 @@ The **Lock asset books in a depreciation journal** parameter lets you lock asset
 
 The **Post disposal transactions in detail** determines which disposal scrap/sale to consider which detailed disposal posting of acquisition to **Acquisition this year** and **Acquisition prior years**. 
  - If this option is set to **Yes**, the disposal sale/scrap posting process will validate the posting profile that the posting profile has all posting types. 
- - If this option is set to **No**, the disposal scrap/sale posting process will validate the posting profile that **Acquisition value** is defined in the posting profile.  
+ - If this option is set to **No**, the disposal scrap/sale posting process will validate the posting profile that **Acquisition value** is defined in the posting profile.
+
+The "Allow depreciation when placed in service and disposal are in the same fiscal year" option is introduced in 10.0.41 as a public preview under feature management. This feature propagates Allow depreciation when placed in service and disposal are in the same fiscal year option in the fixed assets parameter page. When the option "Allow depreciation when placed in service and disposal are in the same fiscal year" is enabled in the fixed assets parameters, it means that depreciation calculations will proceed even if an asset is both placed into service and disposed of within the same fiscal year. This setting becomes the default behavior for any new asset books created thereafter. However, it's possible to modify this setting at the individual asset book level if needed. Importantly, any changes made at the asset book level will only apply to new asset books created after the modification and will not retroactively affect existing asset books already in the system. 
 
 [!NOTE]
 >You can’t define the both options of posting types **Acquisition value** and **Acquisition this year** or **Acquisition prior year** in the disposal sale/scrap at the same time to ensure accurate disposal posting.
