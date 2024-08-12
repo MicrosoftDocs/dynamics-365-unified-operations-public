@@ -26,7 +26,9 @@ When you post transactions for a book that contains derived books, the derived b
 -   Other values for the transaction type can also apply. For example, if the primary book and the derived books have the same intervals regarding sale or disposal, all fixed asset transaction types are available for the setup of a derived book.
 
 > [!WARNING]
-> Depreciation posted in the derived book will be the same amount that was posted for the primary book. If the depreciation methods are different between the books, you should not generate depreciation transactions using the derived process. 
+> Depreciation posted in the derived book will be the same amount that was posted for the primary book. If the depreciation methods are different between the books, you should not generate depreciation transactions using the derived process.
+
+In version 10.0.41, a feature called "Consider split transaction in derived books posting" is introduced in feature management as a (Public preview). This feature automates the process of splitting transactions from the main book to designated derived books based on asset book configurations. It ensures accurate recording across primary and secondary ledgers without manual input, and maintaining consistency. Once enabled, the system automatically posts split transactions according to the predefined settings in the asset book, eliminating manual intervention and keeping derived books updated in real-time.
 
 ## Example 
 The following information describes how to set up acquisition transactions with the derived book functionality.
