@@ -130,26 +130,36 @@ To run the import vendor electronic invoices, follow these steps.
 
 Here's an overview of the steps in the import process and the order that they occur in.
 
-1. Vendors are identified by using the tax exempt number that's defined in the vendor record. If no vendor matches the data that's being searched, the import process fails, and a related error message is shown.
-2. Products that are used on invoice lines are identified by using an external item number, which might be vendor-specific. If no product matches the external description, the import process fails, and a related error message is shown.
-3. If units of measure are used on invoices lines, they're identified by using external codes values. If no unit that has a matching external code value is found in the system, the import process fails, and a related error message is shown.
-4. If an incoming import file contains the information about purchase orders and its lines in the **Invoice\\cac:OrderReference\\cbc:ID** and **Invoice\\cac:InvoiceLine\\cac:OrderLineReference\\cbc:LineID** elements, the numbers are used for invoice matching with purchase orders and lines that are entered in the system.
-5. If no order or line references are defined in an incoming file, the system tries to automatically match incoming vendor invoices with existing purchase orders.
-6. If no purchase order is found, the system raises a warning but continues the import. It now considers products on invoice lines **Non-stock** items. The system expects that these products belong to an item model group where the **Stocked product** checkbox is cleared on the **Inventory policy** page.
-7. If no related **Non-stock** products exist, the system tries to import invoice lines by referring to a default item. The default item must be configured in the system as a released product where the code is defined exactly as **DEFAULT\_ITEM**, and the product must belong to an item model group where the **Stocked product** checkbox is cleared on the **Inventory policy** page. If no default item is configured in the system, the import process fails, and a related error message is shown.
-8. Taxes are calculated in the system, based on the imported data and tax settings. Taxes aren't imported as fixed amounts from the incoming XML file. The results of the calculation can be manually adjusted as required.
+1. Vendors are identified by using the Country identification number that's defined in the vendor record. If no vendor matches the data that's being searched, the import process fails, and a related error message is shown.
+1. Products that are used on invoice lines are identified by using an external item number, which might be vendor-specific. If no product matches the external description, the import process fails, and a related error message is shown.
+1. If an incoming import file contains the information about purchase orders and its lines in the **Invoice\\cac:OrderReference\\cbc:ID** and **Invoice\\cac:InvoiceLine\\cac:OrderLineReference\\cbc:LineID** elements, the numbers are used for invoice matching with purchase orders and lines that are entered in the system.
+1. If no order or line references are defined in an incoming file, the system tries to automatically match incoming vendor invoices with existing purchase orders.
+1. If no purchase order is found, the system raises a warning but continues the import. It now considers products on invoice lines **Non-stock** items. The system expects that these products belong to an item model group where the **Stocked product** checkbox is cleared on the **Inventory policy** page.
+1. If no related **Non-stock** products exist, the system tries to import invoice lines by referring to a default item. The default item must be configured in the system as a released product where the code is defined exactly as **DEFAULT\_ITEM**, and the product must belong to an item model group where the **Stocked product** checkbox is cleared on the **Inventory policy** page. If no default item is configured in the system, the import process fails, and a related error message is shown.
+1. Taxes are calculated in the system, based on the imported data and tax settings. Taxes aren't imported as fixed amounts from the incoming XML file. The results of the calculation can be manually adjusted as required.
 
 Successfully imported vendor electronic invoices are shown in the system as pending invoices. To review imported invoices, go to **Accounts payable** \> **Invoices** \> **Pending vendor invoices**. 
 
 ### Application response
 
+Once the imported vendor electronic invoice has been reviewed in the **Accounts payable** \> **Invoices** \> **Pending vendor invoices** form, an application response with an acceptance or a rejection along with the corresponding comment and reason for rejection can be saved and submitted.
 
-> [!NOTE]
-> There are some limitations to this import process:
->
-> - The import of miscellaneous charges isn't supported.
-> - Only the import of line-level discounts is supported.
+To fill in the application response, perform the following steps:
+1. In the **Pending vendor invoices** opened in the edit mode for the desired invoice, click on the **Review** button on the top ribbon.
+1. Select the response type as required:
+	- Accept
+	- Accept with discrepancies
+	- Reject
+1. Specify the **Comments** in case of **Accept of discrepancies** or **Reject**.
+1. Choose the Reason for rejection among the following values:
+	- Claim to the content of the document
+	- Claim for Partial Shortage of Goods
+	- Claim for Total Shortage of Goods
+1. Click **Save**.
 
+For example:
+![Screenshot of Application response.](ltm-chl-vend-e-invoice-app-response.png)
+ 
 ## Learn more
 
 - [Get started with Electronic invoicing for Chile](ltm-chile-elec-invo-conncection.md)
