@@ -15,7 +15,7 @@ ms.reviewer: johnmichalak
 
 This article provides information that helps you get started with Electronic invoicing for Panama. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Microsoft Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/e-invoicing-set-up-overview.md). For this, we are partnering with Edicom for the last-mile integration with the Panamanian Tax Authorities.
 
-After you configure electronic invoicing, you can generate, digitally sign, and submit the XML files of electronic invoices to the Authorized Certification Provider [**Edicom**](https://edicomgroup.com/electronic-invoicing/Panama) according to the [regulatory requirements in Panama](https://dgi.mef.gob.pa/_7FacturaElectronica/).
+After you configure electronic invoicing, you can generate, digitally sign, and submit the XML files of electronic invoices to the Authorized Certification Provider [**Edicom**](https://edicomgroup.com/electronic-invoicing/panama) according to the [regulatory requirements in Panama](https://dgi.mef.gob.pa/_7FacturaElectronica/).
 
 ![Diagram of the electronic invoicing workflow in Panama.](ltm-pan-e-invoice-workflow.jpg.png)
 
@@ -29,7 +29,7 @@ After you configure electronic invoicing, you can generate, digitally sign, and 
 
 Before you begin the procedures in this article, the following prerequisites must be met:
 
-1. Ensure that the settings for the Panamanian legal entity are in place. For more information, see [Set up legal entity and tax information for Panama ](ltm-Panama-set-up-legal-entity-tax-information.md).
+1. Ensure that the settings for the Panamanian legal entity are in place. For more information, see [Set up legal entity and tax information for Panama ](ltm-set-up-legal-entity-tax-panama.md).
 1. Gain familiarity with and understanding of Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
 1. Do the common part of electronic invoicing service configuration as described in [Set up electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
 1. You must enable the following features in **Feature management**:
