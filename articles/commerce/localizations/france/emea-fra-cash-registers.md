@@ -2,7 +2,7 @@
 title: Cash register functionality for France
 description: This article provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-ms.date: 08/07/2024
+ms.date: 08/09/2024
 ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
