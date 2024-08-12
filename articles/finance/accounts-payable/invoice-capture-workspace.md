@@ -54,11 +54,11 @@ Here are some key features of the side-by-side viewer:
         - The **Charges code** value must be assigned before the invoice can be transferred to Dynamics 365 Finance. The charges lines will be imported together with the invoice header and lines by using the **Vendor invoice charges** data entity.
         - If the value of the **Total sales tax** field is null or zero, and multiple sales tax lines are defined, the sum of the sales tax amount is automatically calculated and entered in the **Total sales tax** field on the invoice header. If the **Validate total sales tax amount** parameter at **Setup system** \> **Manage processing rule** is enabled, the consistency between the sum of the sales tax amount and the total sales tax amount is validated. If no sales tax line is defined, the validation is skipped. 
 
-## Captured invoice statuses
+### Captured invoice statuses
 
 | Status | Description | Action |
 |---|---|---|
-| In Processing | The invoice has been successfully captured and is currently in pre-processing and validation. | No action is required. |
+| In Process | The invoice has been successfully captured and is currently in pre-processing and validation. | No action is required. |
 | Captured | Exceptions occurred during the pre-processing and validation steps. Manual intervention is required to correct the invoice. | Select **Classify invoice**, **Start review**, or **Void**. |
 | In Review | The invoice is being reviewed and corrected in the side-by-side viewer. | Select **Classify invoice**, **Complete review**, or **Void**. |
 | Verified | The invoice has been reviewed but not transferred. | Select **Transfer**, **Classify invoice**, **Start review**, or **Void**. |
@@ -66,14 +66,16 @@ Here are some key features of the side-by-side viewer:
 | Voided | The invoice is no longer needed and is obsolete. | <p>Select **Obsolete**.</p><p>When you select **Obsolete**, both captured invoices and received files are permanently deleted from Dataverse.</p> |
 | Awaiting | The invoice has been submitted to the waiting list so that the automation job in Dynamics 365 Finance can pick it up for further processing. | No action is required. |
 
-## Navigate to the side-by-side viewer
+### Navigate to the side-by-side viewer
 
-In Dynamics 365 Finance, you can open the side-by-side viewer from two places:
+You can open the side-by-side viewer from two places:
 
 - In the **Captured invoices** list, double-tap (or double-click) a record, or single-tap (or single-click) the invoice number.
 - On the **Received files** page, select an invoice that has been successfully captured, and then select **View capture invoices**.
 
-## Assign a legal entity
+### Classify invoice
+
+#### Assign legal entity in the list form
 
 In the **Captured invoices** list, the legal entity might be missing because it wasn't successfully derived. The legal entity must be assigned before an invoice can be processed. Users can then review the invoices and make corrections.
 
@@ -83,7 +85,7 @@ In the **Captured invoices** list, the legal entity might be missing because it 
 
 Correct assignment of the legal entity ensures that Accounts payable (AP) clerks can view the status of the invoice that they are responsible for.
 
-## Classify an invoice
+#### Classify an invoice in the detailed form
 
 For the vendor invoice to be successfully created in Dynamics 365 Finance, entities such as legal entity, vendor account, and item number must be determined before the transfer. Of these entities, legal entity and vendor account are the most important, because they determine whether the derived invoice type is acceptable according to the setting in the assigned configuration group.
 
@@ -95,7 +97,7 @@ If the legal entity and vendor account aren't determined by the derivation rule,
 
 The derivation and validation logic is triggered again immediately after the user selects **Save and close**.
 
-## Manual review process
+### Review process
 
 An invoice document that has been captured might require manual review because of errors or warnings. In the side-by-side viewer, the document header will show a status of **Captured**, and the current version will be **Original Version**.
 
@@ -107,11 +109,23 @@ The AP clerk can enter values for the invoice header. Alternatively, they can ad
 
 The AP clerk can select the upper-right icon in the document preview pane to put the invoice into mapping mode. The AP clerk can then correct or add the mapping by selecting the key-value pair and the **Mapped invoice** field. After the changes are saved, the value is extracted and applied to the corresponding invoice field. When the continuous learning feature is enabled, the system learns the changes and applies the same logic to invoices from the same vendor.
 
-## Derivation and validation logic
+### Map Key-Value-Pairs (KVPs) with fields
 
-Some entity fields in the side-by-side viewer don't exist immediately after the invoice is recognized but are required to generate the invoice in Dynamics 365 Finance. These entities are derived from a combination of the recognized invoice data and master data from Dynamics 365 Finance.
+Sometimes, the prebuilt model doesn’t extract the value from the right position of the document for some fields, users want to do some corrections and let application constantly extract the right value for the subsequent incoming invoices if they are coming from the same vendor with the same pattern. This can be done within the KVPs mapping form if the value that needs to be extracted is returned as a KVP from the AI model. In the meantime, the KVP mapping will be learned only when the continuous learning feature is enabled.  
 
-The entities include legal entity, vendor account, and item number. If derivation of a field fails, the process stops.
+This key-value pair (KVP) mapping function is only applied when using the prebuilt model. If you are using a custom invoice model, please utilize the custom field mapping to extract additional fields. By clicking the top-right icon in the document preview pane, the invoice will enter the mapping mode. The light yellow will indicate that the KVPs have already been mapped with invoice fields. The light blue will indicate the available KVPs that haven’t yet been mapped with any invoice fields. AP clerk can then correct/add the mapping by selecting the key-value pair and the mapped invoice field. After saving the changes, it will extract the value and apply it to the corresponding invoice field. When the continuous learning feature is enabled, the system will learn the changes and apply the same on the invoice from the same vendor.
+
+>[!Note]
+>The icon to call out KVPs mapping form is only available for invoices that are received after upgrading to 1.1.0.32. For invoices that were received before the upgrade, this button is disabled.
+
+### Download the original invoice document
+In the document preview panel, the download button can help the user to download the original invoice document. 
+
+### Derivation and validation
+
+Some entity fields in the side-by-side viewer don't exist on the original invoice document but are required to generate the invoice in Dynamics 365 Finance. These entities are derived from a combination of the recognized invoice data and master data from Dynamics 365 Finance.
+
+The entities include **Legal entity**, **Vendor account**, **Item number** and **currency code**. If derivation of a field fails, the process stops.
 
 1. **Legal entity** – If an active mapping rule is found for the legal entity, the legal entity is selected based on the company's name and address.
 2. **Vendor account** – Next, the vendor account is selected based on an active mapping rule and a combination of the selected legal entity and the vendor's name, address, or tax number.
@@ -141,11 +155,13 @@ The derivation process occurs before the validation process, and all warnings or
 > [!NOTE]
 > The current derivation and validation logic includes the most common scenarios. More specific validations can be implemented through customer extension.
 
-## Continuous learning
+### Continuous learning
 
-To help increase the touchless rate of invoice processing in Invoice capture, the **Continuous learning** feature can derive entities (legal entity, vendor account, and item number) based on the mapping from the last transferred invoice. 
+To help increase the touchless rate of invoice processing in Invoice capture, Continuous learning can derive entities (legal entity, vendor account, and item numbers) based on the mapping from the last transferred invoice. Meanwhile, it also supports the automatic value extraction from key-value pair (KVPs) and assigning it to the corresponding invoice fields. When it is an entry on the Charges, it will derive the Charges code as well based on the last matched record. 
+The feature can be switched on/off in **Setup system >> System preferences**. 
 
-### Difference between continuous learning and mapping rules
+
+#### Difference between continuous learning and mapping rules
 
 The **Continuous learning** feature tries to record patterns between the invoice context and manually selected entities immediately after the invoice is successfully transferred. The affected entities include legal entity, vendor account, item number, expense type, charge code, and key-value pair mapping. Currently, continuous learning checks all the header information, such as the company name, company address, vendor name, address, and vendor tax registration number, to determine the value of the legal entity and vendor account. When the first invoice arrives, users must manually specify the legal entity and vendor account if they can't be successfully derived from other mapping rules. After the invoices are reviewed and transferred to Dynamics 365 Finance, the relationship is recorded. When any invoice that has the same context arrives, continuous learning tries to find the same pattern and to derive the legal entity and vendor account automatically. 
 
@@ -153,7 +169,25 @@ Mapping rules are in some ways an optional approach to derive the value of entit
 
 From a logic sequence perspective, continuous learning is applied before mapping rules. 
 
-## Void and delete an invoice
+### Link purchase order(s)
+
+#### Header-only invoice
+
+When the invoice type is header-only, the user can select one or multiple purchase orders from the lookup list by clicking the field “Purchase order” on invoice header. The purchase orders from the same vendor account with status “Open order”, “Received” will be shown under the list.
+If the recognized purchase order(s) is invalid, it will show in red color and the users must remove the invalid purchase order(s) by clicking the “x” button first before choosing the ones from the lookup list.   
+
+#### Purchase-order invoice
+
+When the invoice type is a PO invoice, the relationship between the invoice line and the purchase line must be established correctly within Invoice capture. If the purchase line cannot be automatically derived, Accounts Payable clerk can manually establish this relationship using the “Link purchase line with invoice line” form. This form can be accessed by clicking the purchase order field on the invoice header or by clicking the purchase order number (or purchase order line number) on the invoice line.
+
+In the form, the first section displays the currently selected invoice line. AP clerk can navigate to the previous or next record by clicking the corresponding arrow button(s).
+
+The "Available purchase lines" section shows all the purchase line candidates that match the item (or expense type) on the invoice line based on specific criteria. These criteria include purchase order, item number, expense type, and item description. The available purchase lines will have the same quantity sign as the invoice line.
+
+When an invoice line is linked to a purchase line, a radio button is enabled for the corresponding record, and the icon changes to a green check mark in the top right of the invoice line pane. If no purchase line is associated, a red cross icon is displayed. 
+After confirming the association, the linked purchase line and item number (or expense type) are written back to the invoice line. Additionally, the purchase order on the invoice header is updated based on the associated purchase order(s).
+
+### Void and delete an invoice
 
 If the invoice contains errors, users can void it by selecting **Void**. After an invoice is voided, it appears on the **Capture invoices (Voided)** page and can't be reviewed and included again unless the status is changed from **Void** to **Capture from Dataverse**.
 
