@@ -101,7 +101,7 @@ Variables are provided out-of-box with the particular feature setup supporting t
 During the import process, vendors are identified by their tax exempt number. To enable correct vendor identification, follow these steps.
 
 1. Go to **Accounts payable** \> **Vendors** \> **All vendors**, and select a vendor.
-2. On the **Invoice and delivery** FastTab, in the **Tax exempt number** field, enter a valid tax registration number for the vendor. This number is used to identify the vendor during import, by matching it to the value of the **Invoice\\cac:AccountingSupplierParty\\cac:Party\\cac:PartyLegalEntity\\cbc:CompanyID** element in the import XML file.
+2. On the **LATAM** FastTab, in the **Country identification number** field, enter a valid identification number of the country for the vendor. This number is used to identify the vendor during import, by matching it to the value of the **DTE\\Documento\\Encabezado\\RUTEmisor** element in the import XML file.
 
 ### Configure products
 
@@ -112,16 +112,11 @@ During the import process, products are identified by their external description
 3. Create a new external description for the selected product.
 4. In the **Account code** column, select **Table** to define an external product description for a specific vendor.
 5. In the **Vendor relation** column, select a vendor.
-6. In the **External item number** column, enter an external product code. This code is used to identify the product during import, by matching the code to the value of the **Invoice\\cac:InvoiceLine\\cac:Item\\cbc:Name** element in the import XML file.
+6. In the **External item number** column, enter an external product code. This code is used to identify the product during import, by matching the code to the value of the **DTE\\Documento\\Detalle\\NmbItem** element in the import XML file.
 
-### Configure units of measure (optional)
-
-You can optionally configure external codes for units of measure, if specific units are explicitly defined in the incoming import files.
-
-1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
-2. Select a unit ID, and then select **External codes**.
-3. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit ID.
-4. In **Value** section, in **Value** field, enter the external unit code that's expected in import files.
+> [!IMPORTANT]
+> If there must be non-stocked items, the system expects that these products belong to an item model group where the Stocked product checkbox is cleared on the Inventory policy page. 
+> If no related Non-stock products exist, the system tries to import invoice lines by referring to a default item. The default item must be configured in the system as a released product where the code is defined exactly as DEFAULT_ITEM, and the product must belong to an item model group where the Stocked product checkbox is cleared on the Inventory policy page.
 
 ## Import vendor electronic invoices
 
