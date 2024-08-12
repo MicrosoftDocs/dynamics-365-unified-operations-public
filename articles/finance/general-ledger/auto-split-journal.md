@@ -4,7 +4,7 @@ description: Learn about the performance improvements from automatically splitti
 author: Livbjerg
 ms.author: JLivbjerg
 ms.topic: article
-ms.date: 06/07/2024
+ms.date: 08/07/2024
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
