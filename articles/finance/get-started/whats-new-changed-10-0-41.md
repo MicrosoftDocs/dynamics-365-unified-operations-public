@@ -45,6 +45,7 @@ This section contains a table that lists the features that are included in this 
 | Tax | Enable Include corrections option on Sales tax settlement periods | The **Include corrections** option affects the sales tax settlement process and periodic sales tax reporting. This feature controls the **Include corrections** option for each sales tax settlement period instead of the whole legal entity. | Feature management |
 | Tax (India) | Add and synchronize tax hierarchy versions in batch mode | This feature improves performance when a sales tax hierarchy version is added and synced, by enabling the processes to run in batch mode. | Feature management |
 | Tax | Adjust sales tax amount per vendor charged sales tax | The **Accrue sales tax type - adjustment** feature in the vendor master and the vendor invoice header allows for the vendor charged sales tax amount to be entered on the vendor invoice header. This amount overrides the sales tax result calculated using sales tax adjustment. | Feature management |
+|Electronic Invoicing |E-Invoicing for Panama: ISV last-mile connector with Edicom|This feature is the last-mile integration with the Panamanian Tax Authorities via the Certification Authorization Provider Edicom. It provides the required end-to-end process of the outbound flow of e-invoices submission. For more information, see: [Get started with Electronic invoicing for Panama](../localizations/iberoamerica/ltm-panama-ei-connec-configuration.md).|  |
 
 ## Feature enhancements included in this release
 
