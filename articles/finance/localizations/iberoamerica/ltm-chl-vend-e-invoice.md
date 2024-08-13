@@ -31,11 +31,11 @@ Before you complete the tasks in this article, the following prerequisites must 
 1. Do the common part of Electronic Invoicing service configuration as it's described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
 1. **Enable application response for vendor invoices** feature must be enabled in Feature management.
 1. Make sure that the following Electronic reporting (ER) format configurations are imported.
-    - **Customer invoice context model**
-    - **Inventory e-invoice (CL) XML Import**
-	- **Vendor Invoice Mapping to Destination LATAM**
-    - **Application response (CL)**
-	- **Pending vendor invoice model mapping**
+    - Customer invoice context model
+    - Inventory e-invoice (CL) XML Import
+	- Vendor Invoice Mapping to Destination LATAM
+    - Application response (CL)
+	- Pending vendor invoice model mapping
 
 > [!NOTE]
 > The ER format is based on the **Invoice model LATAM** configuration and uses the **Vendor Invoice Mapping to Destination LATAM** configuration. All required additional configurations are automatically imported.
