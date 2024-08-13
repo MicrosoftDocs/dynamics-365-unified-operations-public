@@ -31,7 +31,7 @@ A **Default** channel is used to upload invoices into Invoice capture. The invoi
 
 ## What is the Document receive API?
 
-The Document receive API, **vis\_ExternalDocumentReceive**, is a Dataverse unbound custom API. It's used to receive the invoice documents. Administrators follow the API standards and provide the correct input parameters to confirm that the API is correctly called.
+The Document receive API, **vis\_ExternalDocumentReceive**, is a Dataverse unbound custom API. It's used to receive the invoice documents. Administrators follow the API standards and provide the correct input parameters to confirm that the API is correctly called.
 
 ### Input parameters
 
@@ -41,9 +41,9 @@ The Document receive API, **vis\_ExternalDocumentReceive**, is a Dataverse u
 | FileName | string | Yes | A file name with extension. |
 | FileContent | string | Yes | A Base64-encoded file. |
 | FileSetId | string | No | An optional parameter. |
-| AdditionalInfo | string | Yes | A stringified object. For more information, see the [Channel information](#channel-information) section. |
+| AdditionalInfo | string | Yes | A stringified object. For more information, see the [Channel information](#channel-information) section. |
 
-A valid channel ID has to be entered. If the document receive API is called without a valid channel ID, the request is ignored and the invoice document won't be captured or available the **Received files** list page.
+A valid channel ID must be entered. If the Document receive API is called without a valid channel ID, the request is ignored, and the invoice document isn't captured or available on the **Received files** list page.
 
 #### Channel information
 
@@ -52,10 +52,12 @@ A valid channel ID has to be entered. If the document receive API is called with
 | ChannelId | string | Yes | The identifier of the channel that must be bound. |
 | SendFrom | string | No | Additional information to track the sender. |
 
-Below is an example of a payload:
+Here is an example of a payload.
 
+```
 { "ChannelId": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx", 
 "SendFrom": "xxxx.xxx@contoso.com" }
+```
 
 ### Output parameters
 
@@ -63,11 +65,11 @@ Below is an example of a payload:
 |----------------|------|----------|-------------|
 | Data | string | No | The file ID of a successful file on the **Received files** page (**vis\_externaldocumentinfo**). |
 
-### Generate the Channel with a flow
+### Generate the channel with a flow
 
-Administrators can decide how to integrate the **Document receive** API. On the **Channel** page, you can enable the **Use managed flow** parameter.
+Administrators can decide how to integrate the Document receive API. On the **Channel** page, you can enable the **Use managed flow** parameter.
 
-When the **Use managed flow** parameter is set to **Yes**, the flow setting is enabled. The user can then select a flow template, which assists in building the flow by providing the necessary parameters. The following templates are available out-of-the-box:
+When the **Use managed flow** parameter is set to **Yes**, the flow setting is enabled. The user can then select a flow template. A flow template helps build the flow by providing the necessary parameters. The following templates are available out of the box:
 
 - Outlook.com
 - Microsoft Outlook 365
@@ -83,19 +85,19 @@ The following table describes the additional properties that the user must defin
 | Flow template | Property | Description |
 |---------------|----------|-------------|
 | **Outlook.com** or **Microsoft Outlook 365** | Folder | The email folder under the root directory. The default folder is **Inbox**. (Subfolders aren't supported.) |
-| **Microsoft Outlook 365 shared mailbox** | Mailbox address and folder | The mailbox address is the shared mailbox address and the default folder is **Inbox**. |
-| **SharePoint** | Site address | The address of the SharePoint site, such as `https://contoso.sharepoint.com/sites/sitename`. |
+| **Microsoft Outlook 365 shared mailbox** | Mailbox address and folder | The mailbox address is the shared mailbox address, and the default folder is **Inbox**. |
+| **SharePoint** | Site address | The address of the SharePoint site, such as `https://contoso.sharepoint.com/sites/sitename`. |
 | | Library | The name of the SharePoint library. |
 | | Folder | Select a folder, or leave the property blank to use the whole library. |
 | **OneDrive** or **OneDrive for business** | Folder | The directory name. |
 
-When the channel is saved, and the **Use managed flow** option is set **Yes**, the flow is automatically generated, and the flow details pane is shown. This pane allows for the following operations:
+When the channel is saved, if the **Use managed flow** option is set **Yes**, the flow is automatically generated, and the flow details pane is shown. This pane allows for the following operations:
 
 - Turn the flow on and off.
 - Edit the flow, and either customize the flow or fix it.
 - View the running details of the flow and other flow-related information.
 
-The action **“Manage flow”** helps you to manage the flow lifecycle management:
+The **Manage flow** action helps you manage the flow lifecycle:
 
 - If no flow is associated with the current channel:
 
@@ -109,16 +111,16 @@ The action **“Manage flow”** helps you to manage the flow lifecycle manageme
 
 The flow is generated based on the selected template and preset required parameters. However, a flow owner who has advanced flow knowledge can update the flow for more advanced functions.
 
-### Generate the channel without the flow
+### Generate the channel without a flow
 
 If the **Use managed flow** option is set **No**, the Document receive API is called without using a flow template. We recommend that only administrators use this approach. The channel ID must be specified in the API payload. The channel ID can be found in the URL after it's saved.
 
 ## Create a new channel
 
-To create a new channel, Administrators can follow these steps:
+To create a new channel, administrators can follow these steps.
 
 1. In the navigation pane, select **Manage channels**.
-2. On the Action Pane, select **New**.
+2. On the Action Pane, select **New**.
 3. Enter a name and description, set the **Use managed flow** option to **Yes**, and select a flow template.
 4. Select **Save**. The new channel page appears.
 
@@ -126,7 +128,7 @@ To create a new channel, Administrators can follow these steps:
 
     - If the flow is successfully generated and activated, the **Manage flow** status will be **On**.
     - If the flow is generated but isn't activated, an administrator can select **Edit** to set up the flow.
-  
+
 ## Deactivate and activate a channel
 
 Administrators can use **Activate**/**Deactivate** to specify whether the invoice document should be received from the channel. 
@@ -135,15 +137,17 @@ If the channel is assigned as the **Channel for file upload** at **Setup system 
 
 ## Legal entity or group assignment
 
-Administrators can create distinct channels for various levels within the company organization. 
-1. In the Power Platform admin portal, go to **Environment** and select the desired environment.
-2. Go to **Business units** to create new business units and assign existing ones as child nodes. These business units can act as group levels for multiple legal entities, with security roles to manage data access. This setup ensures that only users with the appropriate privileges can access the received invoice files and their corresponding captured invoices when the business unit is assigned to the channel. 
+Administrators can create distinct channels for different levels in the company organization.
 
-When a legal entity is assigned to a channel, the corresponding business unit will automatically be set as the access level when an invoice file is received through that channel. During the invoice capture process, the legal entity is automatically assigned, removing the need for additional derivation logic.
+1. In the Power Platform admin center, go to **Environment**, and select the desired environment.
+2. Go to **Business units** to create new business units and assign existing ones as child nodes. These business units can act as group levels for multiple legal entities. Security roles are used to manage data access. This setup ensures that only users who have the appropriate privileges can access the received invoice files and their corresponding captured invoices when the business unit is assigned to the channel. 
+
+When a legal entity is assigned to a channel, the corresponding business unit is automatically set as the access level when an invoice file is received through that channel. During the invoice capture process, the legal entity is automatically assigned. Therefore, no additional derivation logic is required.
 
 ## Create a new channel using an unmanaged flow
 
-Here are the steps how to create a Channel with unmanged flow within Invoice capture:
+To create a channel by using an unmanaged flow in Invoice capture, follow these steps.
+
 1. Select **New** to create a channel. 
 2. Enter a channel name, and set the **Use Manage channel** option to **No**.
 3. Save your changes, and record the **channel id** value from the URL in the browser's address bar.
@@ -168,6 +172,6 @@ Here are the steps how to create a Channel with unmanged flow within Invoice cap
     additionalInfo:{<br>
     &nbsp; &nbsp; "SendFrom": @\{triggerOutputs()?\['body/from'\]\}<br>
     \}
-    
+
 > [!NOTE]
-> If you have Invoice capture solution version 1.1.0.10 or higher, you can select **Microsoft Outlook 365 Shared Mailbox** as the **Flow template**.
+> If you have Invoice capture solution version 1.1.0.10 or later, you can select **Microsoft Outlook 365 Shared Mailbox** as the flow template.
