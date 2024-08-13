@@ -43,21 +43,22 @@ The **Received file (captured)** page shows all files that have been successfull
 
 | Status | Description | Action |
 |---|---|---|
-| **Waiting** | The invoice has been captured by a Power Automate flow and is awaiting file validation. | No action is required. |
-| **In-process** | File filter rules are used to validate the invoice, or the invoice has passed filter validation and is being recognized. | **Reset processing status** |
-| **Cancelled** | An exception occurred when a duplicate file was found, file filter validation or the call to the recognitive service failed. | **Retry** or **Void** |
-| **Captured** | The form recognizer result has moved to captured invoice staging. | **View captured invoice** |
-| **Voided** | If the invoice isn't needed, select **Voided**. If an invoice has a status of **Voided**, you can permanently delete it from Dataverse by selecting **Obsoleted**. | **Obsolete** |
+| Waiting | The invoice was captured by a Power Automate flow and is awaiting file validation. | No action is required. |
+| In-process | File filter rules are being used to validate the invoice, or the invoice passed filter validation and is being recognized. | **Reset processing status** |
+| Cancelled | An exception occurred when a duplicate file was found, or file filter validation or the call to the recognitive service failed. | **Retry** or **Void** |
+| Captured | The form recognizer result was moved to captured invoice staging. | **View captured invoice** |
+| Voided | If the invoice isn't needed, select **Voided**. If an invoice has a status of **Voided**, you can permanently delete it from Dataverse by selecting **Obsoleted**. | **Obsolete** |
 
 ### Reset processing status
 
-Due to occasional system issues, an invoice may become stuck at the **Processing** status, potentially blocking the business process as the user is unable to take further action. To prevent such disruptions, a **Reset processing status** option appears in the ribbon if an invoice remains stuck for more than 5 minutes. Users can then reset the status and attempt to resubmit the invoice in case of system failure. 
+Occasionally, system issues might cause an invoice to become stuck in the **Processing** status. In this case, the business process might be blocked, because the user can't take further action. To prevent the disruptions that this issue can cause, a **Reset processing status** button appears on the Action Pane if an invoice remains stuck for more than five minutes. Users can use this option to reset the status and try to resubmit the invoice in the event of system failure.
 
 ### Duplicate file check
-The duplicate file check utilizes the checksum method to verify if the same file has been previously received. If a file with the same checksum result is detected, the invoice file status is set to **Cancelled** with the reason **Duplicate file found**. The file can still be processed further by selecting the entry and clicking **Retry** button. 
+
+The duplicate file check uses the checksum method to determine whether the same file was previously received. If a file that has the same checksum result is detected, the invoice file status is set to **Cancelled**, and the reason is set to **Duplicate file found**. Users can still process the file further by selecting the entry and then selecting the **Retry** button.
 
 > [!NOTE]
-> The duplicate check differs from the validation that ensures an invoice with the same number hasn't been received before. Such validation doesn't exist but can be implemented via a custom extension during the invoice transfer in the Dynamics 365 Finance.
+> The duplicate file check differs from validation that ensures that an invoice that has the same number wasn't previously received. Although such validation doesn't exist, it can be implemented via a custom extension during the invoice transfer in Dynamics 365 Finance.
 
 ## Upload invoice files
 
