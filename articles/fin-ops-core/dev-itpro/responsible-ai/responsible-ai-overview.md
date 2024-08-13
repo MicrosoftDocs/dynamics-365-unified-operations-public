@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQs for the Microsoft Dynamics 365 finance and operations platform
 description: Learn about the AI technology that's used in the Microsoft Dynamics 365 finance and operations platform, including considerations and details about how the AI is used.
-ms.date: 09/09/2023
+ms.date: 08/13/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.collection:
@@ -20,3 +20,4 @@ ms.reviewer: johnmichalak
 
 - [Responsible AI FAQ for Generative help and guidance with Copilot in finance and operations apps](../../fin-ops/copilot/faq-copilot-generative-help.md)
 - [Responsible AI FAQ for Suggested questions within Copilot (preview)](../../fin-ops/copilot/faq-copilot-suggested-questions.md)
+- [Responsible AI FAQ for Workflow history summary](../../fin-ops/copilot/workflow-history-summary-FAQ.md)
