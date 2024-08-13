@@ -373,7 +373,7 @@ A custom control is an HTML page with the custom information to be displayed. A 
     }
     ```
 
-17. Open the **extensions.json** file under the **POS.Extensions** project and add the **ProdDetailsCustomColumnExtensions** samples, so during runtime POS will include the extension.
+17. Open the **extensions.json** file under the **POS.Extensions** project and add the **ProdDetailsCustomColumnExtensions** samples, so that during runtime POS includes the extension.
  
      ```typescript
      {
@@ -408,7 +408,7 @@ A custom control is an HTML page with the custom information to be displayed. A 
 
 ### Access static resources in extensions
 
-To access static resources in extensions to be able to load them in POS, see the following example code that does this by using `context.extensionPackageInfo.baseUrl`.
+To access static resources in extensions to be able to load them in POS, see the following example code that does this using `context.extensionPackageInfo.baseUrl`.
 
 ```typescript
 import { IPostProductSaleTriggerOptions, PostProductSaleTrigger } from "PosApi/Extend/Triggers/ProductTriggers";
