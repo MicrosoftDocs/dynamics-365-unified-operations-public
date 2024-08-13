@@ -2,7 +2,7 @@
 title: Add custom controls to non-screen designer-based POS views
 description: This article demonstrates how to add a custom control to a non-screen layout designer-based view in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 08/02/2024
+ms.date: 08/14/2024
 ms.topic: how-to
 audience: Developer
 ms.reviewer: v-chrgriffin
@@ -403,10 +403,40 @@ A custom control is an HTML page with the custom information to be displayed. A 
     ```
 19. Compile and rebuild the project.
 
+### Access static resources in extensions
+
+To access static resources in extensions to be able to load them in POS, see the following example code that does this by using `context.extensionPackageInfo.baseUrl`.
+
+```typescript
+import { IPostProductSaleTriggerOptions, PostProductSaleTrigger } from "PosApi/Extend/Triggers/ProductTriggers";
+
+/**
+ * Example implementation of a PostProductSale trigger that triggers a beep sound.
+ */
+export default class BeepSoundPostProductSaleTrigger extends PostProductSaleTrigger {
+
+    /**
+     * Executes the trigger functionality.
+     * @param {IPostProductSaleTriggerOptions} options The options provided to the trigger.
+     */
+    public execute(options: IPostProductSaleTriggerOptions): Promise<void> {
+        this.context.logger.logInformational("Executing BeepSoundPostProductSaleTrigger with options " + JSON.stringify(options) + ".");
+        // You have to provide a full path to your resource file starting from the root of POS project.
+        let resourcePath: string = "/Resources/audio/beep.wav";
+        // And the apply it to the base URL of the extension package.
+        let filePath: string = this.context.extensionPackageInfo.baseUrl + resourcePath;
+        let beeper: HTMLAudioElement = new Audio(filePath);
+        beeper.play();
+
+        return Promise.resolve();
+    }
+}
+```
+
 ## Validate the customization
 
 1. Press **F5** and deploy the POS to test your customization.
-2. After POS launches, login to POS. Search for any product and navigate to the product details view. You should see the custom control that you added.
+2. After POS launches, sign in to POS. Search for any product and navigate to the product details view. You should see the custom control that you added.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
