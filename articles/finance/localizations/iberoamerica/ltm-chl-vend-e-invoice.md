@@ -91,14 +91,15 @@ Variables are provided out-of-box with the particular feature setup supporting t
 
 1. Make sure that the country/region-specific ER configurations for the document context and electronic document model mapping that are required for Chile are imported. For more information, see [Set up Electronic document parameters](../global/e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+1. Under the section **Electronic document** section, add the record for **Application response** as follows:
+    ![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](ltm-chl-e-invoice-documents-app-response.png)
 1. In the **Integration channels** section, create records: specify a **Channel** name of **Import** type and the document context configuration for every required company.
 1. For each channel, add the **Import source** as follows:
 	- fill in the response format in the **Name** field,
 	- select the **Vendor invoice header** data entity,
 	- and put the **model mapping** for the invoice import.
 1. Save your changes, and close the page.
-
-![Screenshot of Integration channels of the Electronic document parameters page.](ltm-chl-vend-e-invoice-parms-integration-channels.png)
+    ![Screenshot of Integration channels of the Electronic document parameters page.](ltm-chl-vend-e-invoice-parms-integration-channels.png)
 
 ### Configure vendor data
 
@@ -118,7 +119,7 @@ During the import process, products are identified by their external description
 5. In the **Vendor relation** column, select a vendor.
 6. In the **External item number** column, enter an external product code. This code is used to identify the product during import, by matching the code to the value of the **DTE\\Documento\\Detalle\\NmbItem** element in the import XML file.
 
-> [!IMPORTANT]
+> [!NOTE]
 > If there must be non-stocked items, the system expects that these products belong to an item model group where the Stocked product checkbox is cleared on the Inventory policy page. 
 > If no related Non-stock products exist, the system tries to import invoice lines by referring to a default item. The default item must be configured in the system as a released product where the code is defined exactly as DEFAULT_ITEM, and the product must belong to an item model group where the Stocked product checkbox is cleared on the Inventory policy page.
 
@@ -136,7 +137,7 @@ Here's an overview of the steps in the import process and the order that they oc
 
 1. Vendors are identified by using the Country identification number that's defined in the vendor record. If no vendor matches the data that's being searched, the import process fails, and a related error message is shown.
 1. Products that are used on invoice lines are identified by using an external item number, which might be vendor-specific. If no product matches the external description, the import process fails, and a related error message is shown.
-1. If an incoming import file contains the information about purchase orders and its lines in the **Invoice\\cac:OrderReference\\cbc:ID** and **Invoice\\cac:InvoiceLine\\cac:OrderLineReference\\cbc:LineID** elements, the numbers are used for invoice matching with purchase orders and lines that are entered in the system.
+1. If an incoming import file contains the information about purchase orders and its lines in the **DTE\\Documento\\Referencia\\FolioRef** elements, the numbers are used for invoice matching with purchase orders and lines that are entered in the system.
 1. If no order or line references are defined in an incoming file, the system tries to automatically match incoming vendor invoices with existing purchase orders.
 1. If no purchase order is found, the system raises a warning but continues the import. It now considers products on invoice lines **Non-stock** items. The system expects that these products belong to an item model group where the **Stocked product** checkbox is cleared on the **Inventory policy** page.
 1. If no related **Non-stock** products exist, the system tries to import invoice lines by referring to a default item. The default item must be configured in the system as a released product where the code is defined exactly as **DEFAULT\_ITEM**, and the product must belong to an item model group where the **Stocked product** checkbox is cleared on the **Inventory policy** page. If no default item is configured in the system, the import process fails, and a related error message is shown.
@@ -160,10 +161,20 @@ To fill in the application response, perform the following steps:
 	- Claim for Partial Shortage of Goods
 	- Claim for Total Shortage of Goods
 1. Click **Save**.
-
 For example:
 ![Screenshot of Application response.](ltm-chl-vend-e-invoice-app-response.png)
- 
+1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**.
+1. Expand the **Records to include** fast tab and click on **Filter**.
+1. In **Joins**, add vendor invoices to the join for application response.
+![Screenshot of Join for Application response.](ltm-chl-vend-e-invoice-join-4-app-response.png)
+1. Add the **Range** \> **Criteria** with the invoice number to the **Vendor invoices** table.
+![Screenshot of Submit Application response.](ltm-chl-vend-e-invoice-app-response-submit-range.png)
+1. **Submit** the application response.
+1. Once submitted, the application response cannot be modified.
+
+> [!IMPORTANT]
+> Application responses need to be sent before the pending vendor invoices are posted. The application response capability is not available for posted invoices.
+
 ## Learn more
 
 - [Get started with Electronic invoicing for Chile](ltm-chile-elec-invo-conncection.md)
