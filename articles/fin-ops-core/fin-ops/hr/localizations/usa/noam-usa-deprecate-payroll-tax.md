@@ -48,7 +48,7 @@ The following table provides a detailed overview of functionality that still wor
 | Tax processing | Tax transaction history, tax register report | *Limited. All previous records still exist, but new reports can't be created. |
 | Payroll positive pay | Positive pay configuration and positive payroll setup | Positive pay configuration and positive payroll setup don't work as expected. |
 
-*Functionality is limited. For more details, see [LCS](../dev-itpro/lifecycle-services/issue-search-lcs.md). If you can't find the information you need, contact support.
+*Functionality is limited. For more details, see [LCS](../dev-itpro/lifecycle-services/issue-search-lcs). If you can't find the information you need, contact support.
 
 > [!NOTE]
 > Pay statement generation doesn't work as it worked in earlier versions.
