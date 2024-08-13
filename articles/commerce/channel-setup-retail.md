@@ -25,7 +25,7 @@ Before a retail channel is created, ensure you follow the [channel prerequisites
 
 ## Create and configure a new retail channel
 
-1. In the navigation pane, go to **Modules \> Channels \> Stores \> All stores**.
+1. In the navigation pane, go to **Modules \> Retail and Commerce \> Channels \> Stores \> All stores**.
 1. On the Action Pane, select **New**.
 1. In the **Name** field, provide a name for the new channel.
 1. In the **Store number** field, provide a unique store number. The number can be alphanumeric with a maximum of 10 characters.
