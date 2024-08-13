@@ -14,7 +14,7 @@ ms.reviewer: johnmichalak
 
 [!INCLUDE[banner](../../../includes/banner.md)]
 
-Instead of manually creating a Dataverse solution as described in [Upload ER configurations and Globalization features as a Dataverse solution](gsw-upload-er-config.md), you can now use the Upload into repository functionality to upload one or all of your custom Electronic reporting (ER) configurations and Globalization features.
+Starting from version 10.0.40, instead of manually creating a Dataverse solution as described in [Upload ER configurations and Globalization features as a Dataverse solution](gsw-upload-er-config.md), you can now use the Upload into repository functionality to upload one or all of your custom Electronic reporting (ER) configurations and Globalization features.
 
 To use this functionality, you should have a Dataverse environment that's connected to your Dynamics 365 Finance environment and add a security role to access tables in Dataverse by following these steps:
 
