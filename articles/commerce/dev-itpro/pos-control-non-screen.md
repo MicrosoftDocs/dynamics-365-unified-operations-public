@@ -1,6 +1,6 @@
 ---
-title: Add custom controls to non-screen designer-based POS views
-description: This article demonstrates how to add a custom control to a non-screen layout designer-based view in Microsoft Dynamics 365 Commerce.
+title: Add custom controls to nonscreen designer-based POS views
+description: This article demonstrates how to add a custom control to a nonscreen layout designer-based view in Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 08/14/2024
 ms.topic: how-to
@@ -14,7 +14,7 @@ ms.custom:
 ---
 
 
-# Add custom controls to non-screen designer-based POS views
+# Add custom controls to nonscreen designer-based POS views
 
 [!include [banner](../../includes/banner.md)]
 
@@ -25,7 +25,7 @@ You can enhance the information displayed on a Microsoft Dynamics 365 Commerce p
 
 This article applies to Dynamics 365 Finance, and Dynamics 365 Retail with Platform update 8, and Retail Application update 4 hotfix. 
 
-The following table lists the non-screen layout designer-based views that support custom controls.
+The following table lists the nonscreen layout designer-based views that support custom controls.
 
 | POS views              | Support custom control | Number of custom controls |
 |------------------------|------------------------|--------------------------|
