@@ -170,11 +170,11 @@ The Store Commerce apps for Windows and mobile platforms are the next generation
   - Windows 10 (Pro, Enterprise, Enterprise LTSC, and IoT Enterprise LTSC) with the latest available updates.
   - Windows Server 2022 (Standard, Essentials.) 
   - Windows Server 2019 (Standard, Essentials) with the latest available updates.
-  - Windows 10 version 17763.0 or later (Pro, Enterprise, and Enterprise LTSC), Windows 11 (Pro, Enterprise, LTSC, and IOT Enterprise editions), or Windows Server 2019 (Standard, Essentials)
+  - Windows 10 version 17763.0 or later (Pro, Enterprise, and Enterprise LTSC), Windows 11 (Pro, Enterprise, LTSC, and IoT Enterprise editions), or Windows Server 2019 (Standard, Essentials)
 - [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) (Use the Evergreen Standalone Installer.)
 - SQL Server Express, SQL Server Standard, or SQL Server Enterprise (required only for offline mode). For information on which SQL Server edition to use, see [Commerce offline implementation and troubleshooting](implementation-considerations-offline.md).
 - Dynamics 365 Commerce (Commerce headquarters and Cloud Scale Unit)
-- To support the embedded Hardware Station components, you must install the correct version of .NET Framework. For Commerce version 10.0.42 and later, install .NET Framework 4.8. For Commerce version 10.0.41 and earlier, install .NET Framework 4.7.2. For more information, see [Install the .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework).  
+- To support the embedded Hardware Station components, you must install the correct version of .NET Framework. For Commerce versions 10.0.42 and later, install .NET Framework 4.8. For Commerce versions 10.0.41 and earlier, install .NET Framework 4.7.2. For more information, see [Install the .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework).  
 - .NET Desktop Runtime 6.0.16 or later, which is used by the Store Commerce app for UI rendering.
 - The following Store Commerce folders should be excluded when running any external applications or programs such as antivirus applications to prevent the folders from being deleted:
     - User-scoped application data: `C:\Users\**\Microsoft Dynamics 365\10.0\Data\Store Commerce`.
@@ -206,7 +206,7 @@ You can also use the **help** command in PowerShell to find information about al
 |---|---|
 | --config \<path to config file\> | Specifies the path of the configuration file used as part of the installation. |
 | --device \<device identifier\> | Specifies the device identifier to be used for Store Commerce application as a default value. If this parameter is omitted, the user is prompted to input the device identifier during device activation. |
-| --disableaadauthentication | Disables the usage of Microsoft Entra authentication during device activation. This parameter is supported in on-premises ADFS based deployments only. |
+| --disableaadauthentication | Disables the usage of Microsoft Entra authentication during device activation. This parameter is supported in on-premises Active Directory Federation Services (ADFS) based deployments only. |
 | --enablewebviewdevtools | Enables developer tools for Store Commerce. If this parameter is omitted, developer tools are only enabled if Windows Developer Mode is enabled. |
 | --help | Shows parameter information. |
 | --inplaceupgradefrommodernpos | Executes an in-place upgrade from Modern POS. If this parameter is omitted, users will be required to activate Store Commerce after installation. |
@@ -275,7 +275,7 @@ To manage WebView2 versions, follow these steps.
     > A given version of the standalone installer always installs the same version of the WebView2 runtime. 
 1. Test each incremental release of the Store Commerce app with the latest version of the WebView2 runtime and update the WebView2 runtime on the registers at the same time you update the Store Commerce app. 
 1. Use the standalone evergreen installer to deploy the specific version of the WebView2 runtime used during user acceptance testing (UAT) for the Store Commerce app. 
-1. Use the [Install (WebView)](/deployedge/microsoft-edge-update-policies#install-webview) policy to force machine-wide installs for the WebView2, or to disable installs. This policy ensures that all users on the machine use the same version of the WebView2 runtime. 
+1. Use the [Install (WebView)](/deployedge/microsoft-edge-update-policies#install-webview) policy to force machine-wide installs for the WebView2 runtime, or to disable installs. This policy ensures that all users on the machine use the same version of the WebView2 runtime. 
 1. Use the [Update (WebView)](/deployedge/microsoft-edge-update-policies#update-webview) policy to disable all WebView2 runtime updates by Microsoft Edge update. 
     > [!NOTE]
     >  Disabling all WebView2 runtime updates by Microsoft Edge update shouldn't impact the Edge browser version because Edge has a separate [Update policy](/deployedge/microsoft-edge-update-policies#update).
