@@ -244,7 +244,7 @@ To activate Store Commerce after installation, follow these steps.
     > [!NOTE]
     > The Store Commerce app shouldn't be run with elevated privileges, and shouldn't be run from an account with elevated privileges.
 1. On the application's start page, if you select **Remote app content** as the deployment option, enter the Cloud POS URL, and then select **Save**. You can find the Cloud POS URL on the environment details page in Lifecycle Services, or on the **Channel profiles** page in Commerce (**Dynamics 365 Commerce \> Channel setup \> Channel profiles**).
-1. Activate Store Commerce by following the steps in the [Activate Store Commerce using guided activation](retail-device-activation.md#activate-store-commerce-using-guided-activation).
+1. Activate Store Commerce by following the steps in [Activate Store Commerce using guided activation](retail-device-activation.md#activate-store-commerce-using-guided-activation).
 1. After activation is completed, sign in to the application by using an employee account.
 
 ### Troubleshoot setup issues
@@ -263,7 +263,7 @@ You can extend Store Commerce to integrate it with hardware devices. You can use
 
 The Store Commerce app for Windows uses the [Microsoft Edge WebView2 control](/microsoft-edge/webview2/) for rendering. Microsoft preinstalls and automatically updates the WebView2 evergreen runtime on all Windows 11 and eligible Windows 10 devices. The evergreen runtime distribution model has the advantage of not requiring additional effort to manage, but it doesn't allow you to control the version of WebView2 used with a particular release of the Store Commerce app. 
 
-Microsoft recommends that you explicitly manage the WebView2 version that is used by a particular update of the Store Commerce app to mitigate the risk of regressions caused by incompatibilities between the Store Commerce app and the latest WebView2 control.  
+Microsoft recommends that you explicitly manage the WebView2 version that is used by a particular update of the Store Commerce app to mitigate the risk of regressions that are caused by incompatibilities between the Store Commerce app and the latest WebView2 control.  
 
 ### Manage WebView2 versions
 
@@ -273,7 +273,7 @@ To manage WebView2 versions, follow these steps.
 1. Use the standalone installer to install a specific version of the WebView2 control.
     > [!NOTE]
     > A given version of the standalone installer always installs the same version of the WebView2 runtime. 
-1. Test each incremental release of the Store Commerce app with the latest version of the WebView2 runtime and update the WebView2 runtime on the registers at the same time Store Commerce is updated. 
+1. Test each incremental release of the Store Commerce app with the latest version of the WebView2 runtime and update the WebView2 runtime on the registers at the same time you update the Store Commerce app. 
 1. Use the standalone evergreen installer to deploy the specific version of the WebView2 runtime used during user acceptance testing (UAT) for the Store Commerce app. 
 1. Use the [Install (WebView)](/deployedge/microsoft-edge-update-policies#install-webview) policy to force machine-wide installs for the WebView2, or to disable installs. This policy ensures that all users on the machine use the same version of the WebView2 runtime. 
 1. Use the [Update (WebView)](/deployedge/microsoft-edge-update-policies#update-webview) policy to disable all WebView2 runtime updates by Microsoft Edge update. 
