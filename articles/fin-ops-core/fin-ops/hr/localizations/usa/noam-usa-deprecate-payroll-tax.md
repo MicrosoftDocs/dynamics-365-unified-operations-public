@@ -5,7 +5,7 @@ title: Deprecation of US payroll tax updates
 description: This article describes the deprecation of tax updates for US payroll.
 author: jaredha
 ms.date: 08/08/2024
-ms.topic: article
+ms.topic: article 
 # optional metadata
 
 # ms.search.form: 
