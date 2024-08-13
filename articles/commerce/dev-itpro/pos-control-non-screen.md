@@ -18,7 +18,10 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 
-You can enhance the information displayed on a Microsoft Dynamics 365 Commerce point of sale (POS) view by adding custom controls. A custom control allows you to add your own custom information to the existing POS views. Custom controls can be implemented by using the POS extension framework. Currently, you cannot place the custom control in the desired location, at runtime, POS will load it in a fixed position.
+You can enhance the information displayed on a Microsoft Dynamics 365 Commerce point of sale (POS) view by adding custom controls. A custom control allows you to add your own custom information to the existing POS views. You can implement custom controls by using the POS extension framework. 
+
+> [!NOTE]
+> Currently, you can't place a custom control in a particular location of a POS view. At runtime, the POS loads it in a fixed position.
 
 This article applies to Dynamics 365 Finance, and Dynamics 365 Retail with Platform update 8, and Retail Application update 4 hotfix. 
 
