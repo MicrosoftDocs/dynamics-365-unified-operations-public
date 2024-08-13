@@ -3,7 +3,7 @@ title: Store Commerce app
 description: This article explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app for Windows.
 author: anush6121
 ms.author: anvenkat
-ms.date: 08/13/2024
+ms.date: 08/14/2024
 ms.topic: how-to
 audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
@@ -259,7 +259,28 @@ Store Commerce can be customized by using the Commerce SDK. You can modify and c
 
 You can extend Store Commerce to integrate it with hardware devices. You can use the [sample extension code](https://github.com/microsoft/Dynamics365Commerce.InStore) in GitHub to generate Store Commerce hardware station extension packages. For more information, see [Integrate the POS with a new hardware device](hardware-device-extension.md).
 
-## Known issues with the Microsoft Edge WebView2 control
+## Microsoft Edge WebView2 control
+
+The Store Commerce app for Windows uses the [Microsoft Edge WebView2 control](/microsoft-edge/webview2/) for rendering. Microsoft preinstalls and automatically updates the WebView2 evergreen runtime on all Windows 11 and eligible Windows 10 devices. The evergreen runtime distribution model has the advantage of not requiring additional effort to manage, but it doesn't allow you to control the version of WebView2 used with a particular release of the Store Commerce app. 
+
+Microsoft recommends that you explicitly manage the WebView2 version that is used by a particular update of the Store Commerce app to mitigate the risk of regressions caused by incompatibilities between the Store Commerce app and the latest WebView2 control.  
+
+### Manage WebView2 versions
+
+To manage WebView2 versions, follow these steps.
+
+1. Disable automatic WebView2 updates via Group Policy or registry keys. 
+1. Use the standalone installer to install a specific version of the WebView2 control.
+    > [!NOTE]
+    > A given version of the standalone installer always installs the same version of the WebView2 runtime. 
+1. Test each incremental release of the Store Commerce app with the latest version of the WebView2 runtime and update the WebView2 runtime on the registers at the same time Store Commerce is updated. 
+1. Use the standalone evergreen installer to deploy the specific version of the WebView2 runtime used during user acceptance testing (UAT) for the Store Commerce app. 
+1. Use the [Install (WebView)](/deployedge/microsoft-edge-update-policies#install-webview) policy to force machine-wide installs for the WebView2, or to disable installs. This policy ensures that all users on the machine use the same version of the WebView2 runtime. 
+1. Use the [Update (WebView)](/deployedge/microsoft-edge-update-policies#update-webview) policy to disable all WebView2 runtime updates by Microsoft Edge update. 
+    > [!NOTE]
+    >  Disabling all WebView2 runtime updates by Microsoft Edge update shouldn't impact the Edge browser version because Edge has a separate [Update policy](/deployedge/microsoft-edge-update-policies#update).
+ 
+### Known issues with the Microsoft Edge WebView2 control
 
 During activation, when prompted to enter the Microsoft Entra password with multiple options, choose the password option. The other options might not work.
 
