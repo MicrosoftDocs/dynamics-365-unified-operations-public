@@ -87,7 +87,7 @@ Variables are provided out-of-box with the particular feature setup supporting t
 
 ## Configure parameters
 
-## Configure electronic document parameters
+### Configure electronic document parameters
 
 1. Make sure that the country/region-specific ER configurations for the document context and electronic document model mapping that are required for Chile are imported. For more information, see [Set up Electronic document parameters](../global/e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
@@ -123,7 +123,7 @@ During the import process, products are identified by their external description
 > If there must be non-stocked items, the system expects that these products belong to an item model group where the Stocked product checkbox is cleared on the Inventory policy page. 
 > If no related Non-stock products exist, the system tries to import invoice lines by referring to a default item. The default item must be configured in the system as a released product where the code is defined exactly as DEFAULT_ITEM, and the product must belong to an item model group where the Stocked product checkbox is cleared on the Inventory policy page.
 
-## Import vendor electronic invoices
+## Import Vendor electronic invoices and send Application responses
 
 To run the import vendor electronic invoices, follow these steps.
 
