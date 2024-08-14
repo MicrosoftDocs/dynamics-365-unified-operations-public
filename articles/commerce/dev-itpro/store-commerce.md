@@ -3,7 +3,7 @@ title: Store Commerce app
 description: This article explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app for Windows.
 author: anush6121
 ms.author: anvenkat
-ms.date: 08/07/2024
+ms.date: 08/14/2024
 ms.topic: how-to
 audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
@@ -170,13 +170,12 @@ The Store Commerce apps for Windows and mobile platforms are the next generation
   - Windows 10 (Pro, Enterprise, Enterprise LTSC, and IoT Enterprise LTSC) with the latest available updates.
   - Windows Server 2022 (Standard, Essentials.) 
   - Windows Server 2019 (Standard, Essentials) with the latest available updates.
-  - Windows 10 version 17763.0 or later (Pro, Enterprise, and Enterprise LTSC), Windows 11 (Pro, Enterprise, LTSC, and IOT Enterprise editions), or Windows Server 2019 (Standard, Essentials)
+  - Windows 10 version 17763.0 or later (Pro, Enterprise, and Enterprise LTSC), Windows 11 (Pro, Enterprise, LTSC, and IoT Enterprise editions), or Windows Server 2019 (Standard, Essentials)
 - [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) (Use the Evergreen Standalone Installer.)
 - SQL Server Express, SQL Server Standard, or SQL Server Enterprise (required only for offline mode). For information on which SQL Server edition to use, see [Commerce offline implementation and troubleshooting](implementation-considerations-offline.md).
 - Dynamics 365 Commerce (Commerce headquarters and Cloud Scale Unit)
-- .NET Framework version 4.8 or later is required for embedded Hardware Station components with version 10.0.41. For more information, see [Install the .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework).  
+- To support the embedded Hardware Station components, you must install the correct version of .NET Framework. For Commerce versions 10.0.42 and later, install .NET Framework 4.8. For Commerce versions 10.0.41 and earlier, install .NET Framework 4.7.2. For more information, see [Install the .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework).  
 - .NET Desktop Runtime 6.0.16 or later, which is used by the Store Commerce app for UI rendering.
-- When running Dynamics 365 Commerce version 10.0.41, use .NET Framework 4.8 or later to support the embedded hardware station component.
 - The following Store Commerce folders should be excluded when running any external applications or programs such as antivirus applications to prevent the folders from being deleted:
     - User-scoped application data: `C:\Users\**\Microsoft Dynamics 365\10.0\Data\Store Commerce`.
     - Common application data: `C:\ProgramData\Microsoft Dynamics 365\10.0\Data\Store Commerce`.
@@ -207,7 +206,7 @@ You can also use the **help** command in PowerShell to find information about al
 |---|---|
 | --config \<path to config file\> | Specifies the path of the configuration file used as part of the installation. |
 | --device \<device identifier\> | Specifies the device identifier to be used for Store Commerce application as a default value. If this parameter is omitted, the user is prompted to input the device identifier during device activation. |
-| --disableaadauthentication | Disables the usage of Microsoft Entra authentication during device activation. This parameter is supported in on-premises ADFS based deployments only. |
+| --disableaadauthentication | Disables the usage of Microsoft Entra authentication during device activation. This parameter is supported in on-premises Active Directory Federation Services (ADFS) based deployments only. |
 | --enablewebviewdevtools | Enables developer tools for Store Commerce. If this parameter is omitted, developer tools are only enabled if Windows Developer Mode is enabled. |
 | --help | Shows parameter information. |
 | --inplaceupgradefrommodernpos | Executes an in-place upgrade from Modern POS. If this parameter is omitted, users will be required to activate Store Commerce after installation. |
@@ -245,7 +244,7 @@ To activate Store Commerce after installation, follow these steps.
     > [!NOTE]
     > The Store Commerce app shouldn't be run with elevated privileges, and shouldn't be run from an account with elevated privileges.
 1. On the application's start page, if you select **Remote app content** as the deployment option, enter the Cloud POS URL, and then select **Save**. You can find the Cloud POS URL on the environment details page in Lifecycle Services, or on the **Channel profiles** page in Commerce (**Dynamics 365 Commerce \> Channel setup \> Channel profiles**).
-1. Activate Store Commerce by following the steps in the [Activate Store Commerce using guided activation](retail-device-activation.md#activate-store-commerce-using-guided-activation).
+1. Activate Store Commerce by following the steps in [Activate Store Commerce using guided activation](retail-device-activation.md#activate-store-commerce-using-guided-activation).
 1. After activation is completed, sign in to the application by using an employee account.
 
 ### Troubleshoot setup issues
@@ -260,7 +259,28 @@ Store Commerce can be customized by using the Commerce SDK. You can modify and c
 
 You can extend Store Commerce to integrate it with hardware devices. You can use the [sample extension code](https://github.com/microsoft/Dynamics365Commerce.InStore) in GitHub to generate Store Commerce hardware station extension packages. For more information, see [Integrate the POS with a new hardware device](hardware-device-extension.md).
 
-## Known issues with the Microsoft Edge WebView2 control
+## Microsoft Edge WebView2 control
+
+The Store Commerce app for Windows uses the [Microsoft Edge WebView2 control](/microsoft-edge/webview2/) for rendering. Microsoft preinstalls and automatically updates the WebView2 evergreen runtime on all Windows 11 and eligible Windows 10 devices. The evergreen runtime distribution model has the advantage of not requiring additional effort to manage, but it doesn't allow you to control the version of WebView2 used with a particular release of the Store Commerce app. 
+
+Microsoft recommends that you explicitly manage the WebView2 version that is used by a particular update of the Store Commerce app to mitigate the risk of regressions that are caused by incompatibilities between the Store Commerce app and the latest WebView2 control.  
+
+### Manage WebView2 versions
+
+To manage WebView2 versions, follow these steps.
+
+1. Disable automatic WebView2 updates via Group Policy or registry keys. 
+1. Use the standalone installer to install a specific version of the WebView2 control.
+    > [!NOTE]
+    > A given version of the standalone installer always installs the same version of the WebView2 runtime. 
+1. Test each incremental release of the Store Commerce app with the latest version of the WebView2 runtime and update the WebView2 runtime on the registers at the same time you update the Store Commerce app. 
+1. Use the standalone evergreen installer to deploy the specific version of the WebView2 runtime used during user acceptance testing (UAT) for the Store Commerce app. 
+1. Use the [Install (WebView)](/deployedge/microsoft-edge-update-policies#install-webview) policy to force machine-wide installs for the WebView2 runtime, or to disable installs. This policy ensures that all users on the machine use the same version of the WebView2 runtime. 
+1. Use the [Update (WebView)](/deployedge/microsoft-edge-update-policies#update-webview) policy to disable all WebView2 runtime updates by Microsoft Edge update. 
+    > [!NOTE]
+    >  Disabling all WebView2 runtime updates by Microsoft Edge update shouldn't impact the Edge browser version because Edge has a separate [Update policy](/deployedge/microsoft-edge-update-policies#update).
+ 
+### Known issues with the Microsoft Edge WebView2 control
 
 During activation, when prompted to enter the Microsoft Entra password with multiple options, choose the password option. The other options might not work.
 
