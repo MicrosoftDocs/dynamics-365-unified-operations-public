@@ -2,16 +2,15 @@
 title: Configure theme style presets
 description: This article explains how to add style variables that are known as style presets to custom themes in Microsoft Dynamics 365 Commerce site builder.
 author: samjarawan
-ms.date: 06/29/2020
-ms.topic: article
+ms.date: 08/14/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 
 # Configure theme style presets
