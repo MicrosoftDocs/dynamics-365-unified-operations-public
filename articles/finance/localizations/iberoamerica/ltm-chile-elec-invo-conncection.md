@@ -125,8 +125,8 @@ To review the processing pipeline, on the **Setups** tab, go to **Feature setup*
 
 ![Screenshot of the outbound pipeline.](ltm-chl-e-invoice-outbound-pipeline.png)
 
-	> [!NOTE]
-    > For each format included in the **Chilean electronic invoice (CL)** feature there is a similiar setup. For Chile there are six. Five for sales documents (Outbound flow) and one for Import vendor invoice (Inbound flow).
+> [!NOTE]
+> For each format included in the **Chilean electronic invoice (CL)** feature there is a similiar setup. For Chile there are six. Five for sales documents (Outbound flow) and one for Import vendor invoice (Inbound flow).
 
 So in case for Chile the setups are:
 
