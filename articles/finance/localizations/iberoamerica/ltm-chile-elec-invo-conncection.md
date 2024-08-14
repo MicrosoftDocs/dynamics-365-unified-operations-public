@@ -125,6 +125,13 @@ To review the processing pipeline, on the **Setups** tab, go to **Feature setup*
 
 ![Screenshot of the outbound pipeline.](ltm-chl-e-invoice-outbound-pipeline.png)
 
+    > [!NOTE]
+    > For each format included in the **Chilean electronic invoice (CL)** feature there is a similiar setup. For Chile there are six. Five for sales documents (Outbound flow) and one for Import vendor invoice (Inbound flow).
+
+So in case for Chile the setups are:
+
+![Screenshot of diferent setups.](ltm-chl-e-invoice-setups.png)
+
 ### Applicability rules
 
 Applicability rules must be correctly configured to provide context, so that the exact Electronic invoicing Globalization feature that must run in Electronic Invoicing service can be found. Applicability rules are provided out of the box by checking the legal entity in the International Organization for Standardization (ISO) country/region code. This particular feature setup supports all three types of invoices: customer invoices, debit notes, and credit notes.
