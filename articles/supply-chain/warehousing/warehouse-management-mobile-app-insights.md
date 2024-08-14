@@ -14,7 +14,7 @@ Insights for the Warehouse Management mobile app are provided to warehouse worke
 
 -   Page includes AI generated insights that are providing additional information about available work.
 
-1![](media/image1.png)
+![](media/image1.png)
 
 ## Business value
 
