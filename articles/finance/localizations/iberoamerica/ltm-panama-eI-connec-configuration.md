@@ -2,7 +2,7 @@
 title: Get started with Electronic invoicing for Panama
 description: Learn how to set up Microsoft Dynamics 365 Finance to use Panamanian electronic invoices formats.
 author: Fhernandez0088
-ms.author: v-federicohe
+ms.author: ankviklis
 ms.topic: article
 ms.date: 07/29/2024 
 ms.custom: bap-template
@@ -17,7 +17,7 @@ This article provides information that helps you get started with Electronic inv
 
 After you configure electronic invoicing, you can generate, digitally sign, and submit the XML files of electronic invoices to the Authorized Certification Provider [**Edicom**](https://edicomgroup.com/electronic-invoicing/panama) according to the [regulatory requirements in Panama](https://dgi.mef.gob.pa/_7FacturaElectronica/).
 
-![Diagram of the electronic invoicing workflow in Panama.](ltm-pan-e-invoice-workflow.jpg.png)
+![Diagram of the electronic invoicing workflow in Panama.](ltm-pan-e-invoice-workflow.png)
 
 > [!NOTE]
 > The electronic invoicing approach that this article describes is implemented using an invoicing service that's applicable only to cloud deployments of Finance or Supply Chain Management.
@@ -38,11 +38,11 @@ Before you begin the procedures in this article, the following prerequisites mus
 	- **Execute update actions for submitted documents**
 1. Make sure that the following **Electronic reporting (ER) format configurations** are imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
     - **Customer invoice context model**
-	- **Inventory e-invoice (PA)**
+    - **Inventory e-invoice (PA)**
     - **Project e-invoice (PA)**
-	- **Edicom source file response import format**
+    - **Edicom source file response import format**
     - **Edicom response processing LATAM**
-	- **Edicom response error log import**
+    - **Edicom response error log import**
 	
     > [!NOTE]
     > These formats are based on the corresponding **LATAM** format configurations that use the **Invoice model LATAM** and **Invoice model mapping LATAM** configurations. All required additional configurations are automatically imported.
