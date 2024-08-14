@@ -1,10 +1,10 @@
 ---
 title: Get started with Electronic invoicing for Panama
-description: Learn how to get started with Electronic invoicing for Panama in Microsoft Dynamics 365 Finance.
-author: Cpicon85
-ms.author: v-cpicon
+description: Learn how to set up Microsoft Dynamics 365 Finance to use Panamanian electronic invoices formats.
+author: Fhernandez0088
+ms.author: v-federicohe
 ms.topic: article
-ms.date: 02/15/2024 
+ms.date: 07/29/2024 
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -23,13 +23,13 @@ After you configure electronic invoicing, you can generate, digitally sign, and 
 > The electronic invoicing approach that this article describes is implemented using an invoicing service that's applicable only to cloud deployments of Finance or Supply Chain Management.
 
 > [!IMPORTANT]
-> This new E-Invoicing globalization feature for Panama (outbound flow) requires you to be on Dynamics 365 Finance version 10.0.41 specifically on build number 10.0.XXXX.?? or later. It can only be imported into the new Globalization Studio and it is not supported in RCS.
+> This new E-Invoicing globalization feature for Panama (outbound flow) requires you to be on Dynamics 365 Finance version 10.0.40 specifically on build number 10.0.1935.60 or later. It can only be imported into the new Globalization Studio and it is not supported in RCS.
 
 ## Prerequisites
 
 Before you begin the procedures in this article, the following prerequisites must be met:
 
-1. Ensure that the settings for the Panamanian legal entity are in place. For more information, see [Set up legal entity and tax information for Panama ](ltm-set-up-legal-entity-tax-panama.md).
+1. Ensure that the settings for the Panamanian legal entity are in place. For more information, see REVISAR[Set up legal entity and tax information for Panama ](ltm-Panama-set-up-legal-entity-tax-information.md).ltm-set-up-legal-entity-tax-panama
 1. Gain familiarity with and understanding of Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
 1. Do the common part of electronic invoicing service configuration as described in [Set up electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
 1. You must enable the following features in **Feature management**:
@@ -41,7 +41,7 @@ Before you begin the procedures in this article, the following prerequisites mus
 	- **Inventory e-invoice (PA)**
     - **Project e-invoice (PA)**
 	- **Edicom source file response import format**
-    - **Edicom response processing (CL)**
+    - **Edicom response processing LATAM**
 	- **Edicom response error log import**
 	
     > [!NOTE]
@@ -70,7 +70,7 @@ For Panama we interact with Edicom at least three times in the pipeline, first t
 > The simplification of configurations of common parameters - it is no longer needed to go to each action and feature setup, and specify these common connection parameters repeatedly - using the **Feature parameters** tab is only availavle starting from version 10.0.41.
 
 > [!IMPORTANT]
-> The **Panamanian electronic invoice (PA)** feature is provided by Microsoft. Before usage, it requires additional configuration as described in this article. For information about how to configure invoicing features and apply changes, see [Work with feature setups](../global/e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they're processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Panama.
+> The **Panama electronic invoice (PA)** feature is provided by Microsoft. Before usage, it requires additional configuration as described in this article. For information about how to configure invoicing features and apply changes, see [Work with feature setups](../global/e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they're processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Panama.
 
 1. Import the latest version of the **Panamanian electronic invoice (PA)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md). Once you import the feature from Dataverse, this is how it will look.
 
@@ -106,9 +106,17 @@ To review the processing pipeline, go to the **Feature setup** upder the **Setup
 
     ![Screenshot of the outbound pipeline.](ltm-pan-e-invoice-outbound-pipeline.png)
 
+	> [!NOTE]
+    > For each format included in the **Panama electronic invoice (PA)** feature there is a similiar setup. For Panama there are two. One for inventory and free text invoices (**Inventory e-invoice (PA)**) and the other for project invoices (**Project e-invoice (PA)**).
+
+So in case for Panama the setup are:
+
+![Screenshot of diferent setups.](ltm-pan-e-invoice-setups.png)
+
 ### Applicability rules
 To provide context to find the exact Electronic Invoicing Globalization feature to run in the Electronic Invoicing Service, the Applicability rules must be poperly configured. These rules are provided out-of-the box checking the legal entity in the country ISO code. This particular feature setup supports all three types of invoices, customer invoices, debit notes, and credit notes.
 ![Screenshot of the setup on the Applicability rules.](ltm-pan-e-invoice-applicability-rules.png)
+	
 
 ### Variables
 These are the following variables used in the outbound data flow actions of the Panaman feature (provided out-of-the-box):
@@ -163,7 +171,7 @@ As a result of the completed outbound flow, the signed XML is attached to the In
 	
 ![Screenshot of attached source file.](ltm-pan-e-invoice-attached-source-file.png)
 
-for Panama pipeline, the **Terminate pipeline** action completes the pipeline after a few minutes.
+for Panama pipeline, the **Process response** action completes the pipeline after a few minutes.
 
 ![Screenshot of the Terminate pipeline action.](ltm-pan-e-invoice-outbound-pipeline-terminated.png)
 
