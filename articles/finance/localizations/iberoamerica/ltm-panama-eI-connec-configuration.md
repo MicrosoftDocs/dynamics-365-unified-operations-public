@@ -15,7 +15,7 @@ ms.reviewer: johnmichalak
 
 This article provides information that helps you get started with Electronic invoicing for Panama. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Microsoft Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/e-invoicing-set-up-overview.md). For this, we are partnering with Edicom for the last-mile integration with the Panamanian Tax Authorities.
 
-After you configure electronic invoicing, you can generate, digitally sign, and submit the XML files of electronic invoices to the Authorized Certification Provider [**Edicom**](https://edicomgroup.com/electronic-invoicing/Panama) according to the [regulatory requirements in Panama](https://dgi.mef.gob.pa/_7FacturaElectronica/).
+After you configure electronic invoicing, you can generate, digitally sign, and submit the XML files of electronic invoices to the Authorized Certification Provider [**Edicom**](https://edicomgroup.com/electronic-invoicing/panama) according to the [regulatory requirements in Panama](https://dgi.mef.gob.pa/_7FacturaElectronica/).
 
 ![Diagram of the electronic invoicing workflow in Panama.](ltm-pan-e-invoice-workflow.jpg.png)
 
