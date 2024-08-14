@@ -14,7 +14,7 @@ Insights for the Warehouse Management mobile app are provided to warehouse worke
 
 -   Page includes AI generated insights that are providing additional information about available work.
 
-![](media/image1.png)
+Following image shows main screen of the feature
 
 ## Business value
 
@@ -28,7 +28,11 @@ The workload screen offers insights into relevant warehouse operations, such as 
 
 Workload page includes AI generated insights that are providing additional information about available work.
 
+Following image shows workload available currently in the warehousethat has not been started yet
+
 ![Et billede  der indeholder tekst  elektronik  skærmbillede  software Automatisk genereret beskrivelse](media/image2.png)
+
+Following image shows details of the workload available currently in the warehousethat has not been started yet
 
 ![Et billede  der indeholder tekst  skærmbillede  software  Multimediesoftware Automatisk genereret beskrivelse](media/image3.png)
 
@@ -42,9 +46,14 @@ Workload page will be displayed to every worker upon login as soon as prerequisi
 
 However, user can disable automatic display of the Workload page on every login in mobile app user settings Show copilot on startup &gt; Yes/No
 
+Following image highlights where you can choose whether you wil lshow copilot feature when loggin on to the device or not. 
+
 ![Et billede  der indeholder tekst  skærmbillede  software  Operationssystem Automatisk genereret beskrivelse](media/image4.png)
 
 Furthermore, users can on the same user settings decide if workload data will be displayed in work headers or lines using Show copilot data as &gt; Work Lines / Work Headers.
+
+
+Following image shows you how to choose to view data as header or lines
 
 ![Et billede  der indeholder tekst  skærmbillede  software  Multimediesoftware Automatisk genereret beskrivelse](media/image5.png)
 
