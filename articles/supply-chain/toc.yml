@@ -3937,6 +3937,8 @@
             href: warehousing/pick-oldest-batch.md
         - name: Global mobile device parameters
           href: warehousing/mobile-device-parameters.md
+        - name: Warehouse Management mobile app insights
+          href: warehousing/warehouse-management-mobile-app-insights.md
         - name: Warehouse mobile devices workspace
           href: warehousing/mobile-device-workspace.md
         - name: Mobile device user settings
