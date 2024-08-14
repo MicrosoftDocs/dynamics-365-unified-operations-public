@@ -109,7 +109,7 @@ To review the processing pipeline, go to the **Feature setup** upder the **Setup
 	> [!NOTE]
     > For each format included in the **Panama electronic invoice (PA)** feature there is a similiar setup. For Panama there are two. One for inventory and free text invoices (**Inventory e-invoice (PA)**) and the other for project invoices (**Project e-invoice (PA)**).
 
-So in case for Panama the setup are:
+So in case for Panama the setups are:
 
 ![Screenshot of diferent setups.](ltm-pan-e-invoice-setups.png)
 
