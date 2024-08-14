@@ -15,7 +15,7 @@ ms.reviewer: johnmichalak
 
 This article provides information that helps you get started with Electronic invoicing for Panama. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Microsoft Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/e-invoicing-set-up-overview.md). For this, we are partnering with Edicom for the last-mile integration with the Panamanian Tax Authorities.
 
-After you configure electronic invoicing, you can generate, digitally sign, and submit the XML files of electronic invoices to the Authorized Certification Provider [**Edicom**](https://edicomgroup.com/electronic-invoicing/panama) according to the [regulatory requirements in Panama](https://dgi.mef.gob.pa/_7FacturaElectronica/).
+After you configure electronic invoicing, you can generate, digitally sign, and submit the XML files of electronic invoices to the Authorized Certification Provider [**Edicom**](https://edicomgroup.com/electronic-invoicing/Panama) according to the [regulatory requirements in Panama](https://dgi.mef.gob.pa/_7FacturaElectronica/).
 
 ![Diagram of the electronic invoicing workflow in Panama.](ltm-pan-e-invoice-workflow.jpg.png)
 
@@ -91,7 +91,7 @@ For Panama we interact with Edicom at least three times in the pipeline, first t
 1. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, you must complete, publish, and deploy the feature as described in [Complete, publish, and deploy a Globalization feature](../global/e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 On the screenshot below you can see these feature parameters with the values provided to Microsoft by Edicom for testing. These values will differ for you and will be provided by Edicom when you onboard.
-    ![Screenshot of the feature parameters.](ltm-e-invoice-glob-feature-parameters.png)
+    ![Screenshot of the feature parameters.](ltm-pan-e-invoice-glob-feature-parameters.png)
 
 ### Outbound flow pipeline
 To review the processing pipeline, go to the **Feature setup** upder the **Setups** tab, select the desired derived document type, and click **Edit**. The outbound flow consist of the following actions:
