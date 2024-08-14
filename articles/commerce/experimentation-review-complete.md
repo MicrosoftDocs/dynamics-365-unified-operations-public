@@ -1,16 +1,16 @@
 ---
-# required metadata
-
 title: Promote a variation and complete an experiment
-description: This article describes how to promote a successful variation and complete an experiment in Dynamics 365 Commerce.
+description: This article describes how to promote a successful variation and complete an experiment in Microsoft Dynamics 365 Commerce.
 author: sushma-rao 
-ms.date: 06/07/2022
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: sushmar
+ms.author: asharchw
 ms.search.validFrom: 2020-09-30
+ms.custom: 
+  - bap-template
 ---
 
 # Promote a variation and complete an experiment

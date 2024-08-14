@@ -6,7 +6,7 @@ ms.author: jiwo
 ms.topic: faq
 ms.custom: 
   - bap-template
-ms.date: 06/04/2024
+ms.date: 08/04/2024
 ms.reviewer: johnmichalak
 
 ---
@@ -19,7 +19,7 @@ This article provides answers to some frequently asked questions about data mart
 
 A data mart reset disables the integration tasks, delete all the data mart data, and then re-enable integration.
 
-To ensure that old data isn't inserted, a data mart reset can be started only after existing tasks are completed. If you try to reset the data mart before all tasks are completed, you might receive a message such as, "The data mart reset was unable to be processed because of an active task.Try again later."
+To ensure that old data isn't inserted, a data mart reset can be started only after existing tasks are completed. If you try to reset the data mart before all tasks are completed, you might receive a message such as, "The data mart reset was unable to be processed because of an active task. Try again later."
 
 ## When do I have to do a data mart reset?
 
@@ -27,8 +27,9 @@ If one or more of the following statements apply to your situation, your organiz
 
 - **The application database was restored**
 - **You opened a support ticket** - A support engineer instructed you to reset the data mart as part of a troubleshooting step.
-- **Large percentage of stale records** - Stale records by themselves don't necessarily justify a data mart reset. High percentages of stale data can degrade the overall report generation and integration performance, and incur extra database space usage. We recommend that you complete a datamart reset to remove the stale data when there's more than 80% stale data in the data mart.
- 
+- **Large percentage of versioned records** - High percentages of versioned records can degrade the overall report generation and integration performance, and incur extra database space usage. We recommend that you complete a datamart reset to remove the versioned records when there's more than 80% versioned records in the data mart.
+- **Your data mart integration is (soft) disabled**
+   
 > [!NOTE]
 > The process of resetting a data mart is affected by the number of general ledger and budget transactions in your database. Depending on the number of transactions in your system, a data mart reset can be completed in as little as 15 minutes, or it can take up to four hours. However, if your reset takes longer than four hours, we recommend that you contact Support.
  
@@ -44,7 +45,7 @@ Here are some of the circumstances where we don't recommend that you reset the d
 - You have a recurring reset pattern for any of the following reasons:
 
     - **Missing or unexpected data in the report** – If you notice that data is missing, open a support ticket with Microsoft to review your report format and possible data synchronization issues.
-    - **Stuck integration state** - If you notice the integration status is stuck in running, this may be due to a large volume of transactions in the system. This state resolves itself. However, if you notice the integration status is stuck for more than four hours, open a support ticket with Microsoft. 
+    - **Stuck integration state** - If you notice the integration status is stuck in running, this may be due to a large volume of transactions. This state resolves itself. However, if you notice the integration status is stuck for more than four hours, open a support ticket with Microsoft. 
    
 ## If I reset the data mart, do I lose reports that I've already designed?
 

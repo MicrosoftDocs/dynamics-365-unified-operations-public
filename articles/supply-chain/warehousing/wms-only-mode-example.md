@@ -1,14 +1,12 @@
 ---
 title: Example of using inbound and outbound shipment orders
 description: This article provides an example scenario that shows how to create inbound and outbound shipment orders, including an outline on testing the creation process. 
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 01/29/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage
 ---
 
@@ -75,7 +73,7 @@ For the `InboundShipmentOrderMessages` inbound shipment order header message, yo
 - `OrderNumber`: *IO1*
 - `ReceivingWarehouseId`: *51*
 
-When you use <!--[Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) with --> variables, the `InboundShipmentOrderMessages` message looks like the following example.
+When you use variables, the `InboundShipmentOrderMessages` message looks like the following example.
 
 ``` JSON example
 POST {{resource}}/data/InboundShipmentOrderMessages
@@ -125,7 +123,7 @@ For the `OutboundShipmentOrderMessages` outbound shipment order header message, 
 - `ConsigneeName` or `ReceiverName`: *Microsoft*
 - `ConsigneeCountryRegionId` or `ReceiverCountryRegionId`: *USA*
 
-When you use <!-- [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) with--> variables, the `OutboundShipmentOrderMessages` message looks like the following example.
+When you use variables, the `OutboundShipmentOrderMessages` message looks like the following example.
 
 ``` JSON
 POST {{resource}}/data/OutboundShipmentOrderMessages

@@ -1,14 +1,12 @@
 ---
 title: Manage inbound putaway based on container types
 description: Learn how to use container types to drive the putaway process, including an outline and step-by-step process on setting up container types.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 12/12/2022
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: WHSContainerType, WHSAllowedContainerTypeGroup, WHSLocationProfile, WHSLocationLimit, WHSParameters, InventLocation, WHSUOMSeqGroupTable, WHSRFMenuItem, UnitOfMeasureLookup, UnitOfMeasureConversion 
 ---
 

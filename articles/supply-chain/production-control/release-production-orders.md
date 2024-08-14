@@ -7,7 +7,6 @@ ms.reviewer: kamaybac
 ms.search.form: ProdParmRelease
 ms.topic: conceptual
 ms.date: 03/02/2021
-audience: Application User
 ms.custom: 
   - bap-template
 ---

@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
 audience: Application User 
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: PCGlobalTableConstraintEdit, PCProductConfigurationModelDetails, PCTableConstraintAttachAttributeTree, PCTableConstraintDefinition
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 5c12b1f2-eb89-4648-a755-de412f2eadd6
 ---
 

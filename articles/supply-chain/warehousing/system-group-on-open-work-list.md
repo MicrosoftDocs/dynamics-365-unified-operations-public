@@ -6,11 +6,7 @@ ms.author: mirzaab
 ms.topic: article
 ms.date: 05/26/2017
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form:  WHSRFMenuItem
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # System grouping on an open work list

@@ -7,11 +7,7 @@ ms.topic: how-to
 ms.date: 06/23/2017
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-06-30
 ms.search.form: WHSRFMenuItemCycleCount, WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSWorkTemplateTable
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Define partial location cycle counting process 

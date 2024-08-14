@@ -15,6 +15,8 @@ items:
         items:
         - name: What's new or changed in Platform updates home page
           href: ../fin-ops/get-started/whats-new-home-page.md
+        - name: Platform updates for version 10.0.41 (September 2024)
+          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-41.md
         - name: Platform updates for version 10.0.40 (June 2024)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-40.md
         - name: Platform updates for version 10.0.39 (March 2024)
@@ -321,6 +323,8 @@ items:
             href: sysadmin/archive-inventory.md
           - name: Archive Dynamics 365 Supply Chain inventory journals
             href: sysadmin/archive-inventory-journal.md
+          - name: Archive Commerce transactions
+            href: ../../commerce/archive-transactions.md
         - name: Finance and operations apps archive with Dataverse long term retention FAQ
           href: sysadmin/archive-faq.md
     - name: Azure Data Lake
@@ -2263,6 +2267,8 @@ items:
           href: copilot/purchase-order-changes-after-confirmation-enable.md
         - name: Enable generative help and guidance with Copilot
           href: copilot/enable-copliot-generative-help.md
+        - name: Add knowledge to generative help and guidance with Copilot
+          href: copilot/extend-copilot-generative-help.md
       - name: Extending Copilot capabilities in finance and operations apps
         items:
         - name: Overview

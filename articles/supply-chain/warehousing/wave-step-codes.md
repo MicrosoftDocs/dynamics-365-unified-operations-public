@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 09/06/2019
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2019-09-30
 ms.search.form: WHSWaveTableListPage, WHSWaveStepCode, WHSReplenishmentTemplates, WHSWaveTemplateTable
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Wave step codes

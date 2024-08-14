@@ -4,14 +4,15 @@
 title: Detect abandoned carts and send notifications to customers
 description: This article describes how to customize the Microsoft Dynamics 365 Commerce abandoned cart connector sample app to detect abandoned carts and send reminder email notifications to customers.
 author: bicyclingfool
-ms.date: 02/25/2022
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: stuharg
+ms.author: asharchw
 ms.search.validFrom: 2017-06-20
-
+ms.custom: 
+  - bap-template
 ---
 
 # Detect abandoned carts and send notifications to customers

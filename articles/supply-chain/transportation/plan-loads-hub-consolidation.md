@@ -7,12 +7,7 @@ ms.topic: overview
 ms.date: 07/25/2019
 ms.reviewer: kamaybac
 ms.collection: get-started
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2016-02-28
 ms.search.form: WHSLoadPlanningWorkbench, WHSHistory, WHSLoadTable, WHSLoadPlanningListPage, TMSParameters, WHSOutboundLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: d27b0926-a534-4caf-a2a3-acbc7c440bca
 ---
 

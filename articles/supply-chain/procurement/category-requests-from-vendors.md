@@ -6,11 +6,7 @@ ms.author: henrikan
 ms.topic: article
 ms.date: 04/19/2021
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2021-04-19
 ms.search.form: VendRequestNewCategory
-ms.dyn365.ops.version: 10.0.18
 ---
 
 # Category requests from vendors

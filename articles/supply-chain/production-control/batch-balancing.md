@@ -6,11 +6,7 @@ ms.author: johanho
 ms.topic: article
 ms.date: 01/04/2021
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: BOMTable, WHSReservationHierarchy, WHSInventTableReservationHierarchy
-ms.dyn365.ops.version: AX 8.0.0
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ---
 

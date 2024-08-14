@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 07/31/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-04-22
 ms.search.form:
-ms.dyn365.ops.version: 10.0.13
 ---
 
 # Create and manage Customer portal users

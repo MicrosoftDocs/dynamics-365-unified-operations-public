@@ -6,11 +6,7 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 07/20/2022
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2022-07-20
 ms.search.form: SalesAvailableDlvDates, SalesTable, CustParameters, InventItemOrderSetup
-ms.dyn365.ops.version: 10.0.28
 ---
 
 # Calculate sales order delivery dates using CTP

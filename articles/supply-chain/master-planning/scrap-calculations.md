@@ -7,8 +7,6 @@ ms.topic: how-to
 ms.date: 12/08/2022
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: Route, RouteTable, EcoResProductDetailsExtended, BOMConsistOf, BOMTable
 ---
 

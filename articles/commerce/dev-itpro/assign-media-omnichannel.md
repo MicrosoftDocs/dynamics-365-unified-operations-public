@@ -2,14 +2,15 @@
 title: Assign media to products and categories
 description: This article describes how to assign media to products and categories by using omnichannel media management in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 06/09/2023
-ms.topic: overview
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: niholman
+ms.author: asharchw
 ms.search.validFrom: 2023-03-01
-
+ms.custom: 
+  - bap-template
 ---
 
 # Assign media to products and categories

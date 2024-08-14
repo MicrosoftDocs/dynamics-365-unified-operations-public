@@ -1,14 +1,13 @@
 ---
 title: Wave creation and processing
 description: Learn how to create, process, and release a wave to create picking work for a load, shipment, production order, or kanban order.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 05/16/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form:  WHSWaveTemplateTable, WHSParameters, whswavetablecreatenew, WHSWaveTable, WHSWaveAttributes, WHSKanbanWaveTable, WHSWaveTableListPage, WHSKanbanWaveTableListPage, WHSProdWaveTable
 ---
 

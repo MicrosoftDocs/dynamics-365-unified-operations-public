@@ -8,11 +8,7 @@ ms.date: 11/01/2018
 ms.custom:
 ms.reviewer: kamaybac
 audience:  Developer, IT Pro
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2018-4-30
 ms.search.form:
-ms.dyn365.ops.version: 8.0
 ---
 
 # Process guide framework

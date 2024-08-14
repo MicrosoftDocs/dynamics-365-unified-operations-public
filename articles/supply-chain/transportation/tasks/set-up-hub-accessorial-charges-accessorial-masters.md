@@ -7,12 +7,7 @@ ms.topic: how-to
 ms.date: 11/11/2016
 ms.custom: 
 ms.reviewer: kamaybac 
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2016-06-30
 ms.search.form: TMSCarrierAccessorial,TMSAccessorialMaster, TMSHubAccessorial
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Set up hub accessorial charges and accessorial masters

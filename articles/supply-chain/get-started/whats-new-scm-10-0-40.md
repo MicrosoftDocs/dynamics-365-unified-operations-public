@@ -7,8 +7,6 @@ ms.topic: conceptual
 ms.date: 04/27/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -29,7 +27,7 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Copilot and AI innovation | [Enable efficient, accurate demand planning with Copilot](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/enable-more-efficient-accurate-demand-planning-using-copilot) | [Analyze demand plans with Copilot (preview)](../demand-planning/demand-planning-copilot.md) | Enabled by default  |
-| Copilot and AI innovation | [Generate context-aware insights for warehouse workers](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/generate-context-aware-insights-warehouse-workers) | [AI summaries with Copilot](copilot-summaries-overview.md) | <p>Feature management:<br>*Context-aware worker summary screen in WMA*</p><p>Requires Warehouse Management mobile app version 2.3.2.0 or later.</p><p>Requires Supply Chain Management version 10.0.40 with proactive quality update 1 (PQU-1) or later.</p> | |
+| Copilot and AI innovation | [Generate context-aware insights for warehouse workers](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/generate-context-aware-insights-warehouse-workers) | [AI summaries with Copilot](copilot-summaries-overview.md) | <p>Feature management:<br>*Context-aware worker summary screen in WMA*</p><p>Requires Warehouse Management mobile app version 2.3.2.0 or later.</p><p>Requires Supply Chain Management version 10.0.40 with proactive quality update 1 (PQU-1) or later.</p> |
 | Copilot and AI innovation | AI summaries with Copilot | [AI summaries with Copilot](copilot-summaries-overview.md) | <p>Feature management:</p><ul><li>*Product summary when hovering on item*</li><li>*Product details summary*</li><li>*Purchase order summary*</li><li>*Sales order summary*</li><li>*Vendor summary*</li></ul><p>Requires Supply Chain Management version 10.0.40 with PQU-1 or later.</p> |
 | Copilot and AI innovation | Suggested questions within Copilot | [Responsible AI FAQ for Suggested questions within Copilot (preview)](../../fin-ops-core/fin-ops/copilot/faq-copilot-suggested-questions.md) | Enabled by default  |
 | Planning | Item substitution for bills of materials in Planning Optimization | [Item substitution for formulas and bills of materials](../master-planning/item-substitution.md) | Feature management:<br>*Item substitution for bill of materials in Planning optimization* |
@@ -76,7 +74,7 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.40 includes platform updates
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.38, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=932660).
+For information about the bug fixes included in each of the updates that are part of version 10.0.40, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=932660).
 
 ### Dynamics 365: 2024 release wave 1 plan
 

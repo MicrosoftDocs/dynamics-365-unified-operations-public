@@ -2,15 +2,15 @@
 title: Advance invoices for Commerce for Eastern Europe
 description: This article explains how to set up advance notices for Commerce for Eastern Europe.
 author: EvgenyPopovMBS
-ms.date: 07/05/2023
-ms.topic: article
+ms.date: 08/09/2024
+ms.topic: how-to
 audience: Application user
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Czech Republic, Hungary, Poland
-ms.author: josaw
+ms.author: anupamar
 ms.search.validFrom: 2018-10-01
-ms.dyn365.ops.version: 8.1
-ms.search.industry: Retail
+ms.custom: 
+  - bap-template
 ---
 
 # Advance invoices for Commerce for Eastern Europe

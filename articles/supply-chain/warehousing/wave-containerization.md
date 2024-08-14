@@ -1,14 +1,13 @@
 ---
 title: Containerization
 description: Learn how to automate the containerization of loads, which create containers and the picking work for shipments when a wave is processed.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 06/07/2024
 ms.custom:
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable, WHSContainerizatonHistory, WHSContainerPackingPolicyChange, WHSManifestShipmentContainers, WHSAllowedContainerTypeGroup, WHSPostMethod, WHSContainerCreateDialog, WHSContainerCloseDiag, WHSContainer
 ---
 

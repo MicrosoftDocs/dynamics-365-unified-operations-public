@@ -6,11 +6,7 @@ ms.author: yufeihuang
 ms.topic: article
 ms.date: 09/15/2022
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2021-08-02
 ms.search.form:
-ms.dyn365.ops.version: 10.0.21
 ---
 
 # Use the Inventory Visibility app UI version 1

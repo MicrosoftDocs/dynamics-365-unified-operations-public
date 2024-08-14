@@ -6,12 +6,7 @@ ms.author: yanansong
 ms.topic: article
 ms.date: 01/15/2021
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: CostingVersion, InventItemPrice, InventParameters
-ms.dyn365.ops.version: 10.0.17
 ms.assetid: 468de7af-c7b5-4345-bd5a-ba3aa5a900cc
 ---
 

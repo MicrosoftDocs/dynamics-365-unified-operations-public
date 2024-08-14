@@ -1,23 +1,26 @@
 ---
 title: Install the POS layout designer
-description: You can use the one-click designer to design different Store Commerce app and Store Commerce for web layouts, in either Landscape mode or Portrait mode, for stores, registers, cashiers, and managers.
+description: This article describes how to install and troubleshoot the one-click designer in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 02/02/2023
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: anvenkat
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.assetid: 2e2c4eea-c6e2-4912-9832-a6b22416e39f
-ms.search.industry: Retail
 ms.search.form: RetailTillLayout
+ms.custom: 
+  - bap-template
 ---
 
 # Install the POS layout designer
 
 [!include [banner](includes/banner.md)]
+
+This article describes how to install and troubleshoot the one-click designer in Microsoft Dynamics 365 Commerce.
 
 You can use the one-click designer to design different Store Commerce app and Store Commerce for web layouts, in either Landscape mode or Portrait mode, for stores, registers, cashiers, and managers.
 

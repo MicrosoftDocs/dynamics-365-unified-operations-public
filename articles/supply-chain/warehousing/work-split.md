@@ -7,12 +7,7 @@ ms.topic: article
 ms.date: 10/15/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.industry: WHSWorkTableListPage
-ms.search.validFrom: 2020-10-15
 ms.search.form:
-ms.dyn365.ops.version: 10.0.8
 ---
 
 # Work split

@@ -1,14 +1,13 @@
 ---
 title: Wave label printing
 description: Learn about wave label printing and explains how to set it up, including outlines for various scenarios for creating wave labels.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 06/07/2024
 ms.custom:
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSDocumentRouting, WHSWaveTableListPage, WHSPostMethod, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelType, WHSWaveLabelTemplateGroup, WHSDocumentRoutingLayout
 ---
 

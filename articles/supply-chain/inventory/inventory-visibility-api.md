@@ -8,7 +8,6 @@ ms.date: 06/03/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: 
 ---
 
@@ -57,15 +56,11 @@ The following table lists the APIs that are currently available:
 >
 > The bulk API can return a maximum of 512 records for each request.
 
-<!-- Microsoft has provided an out-of-box *Postman* request collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/95a57891aff1c5f2a7c2>.
-
 You can find the [service endpoint](inventory-visibility-power-platform.md#endpoint) in the Inventory Visibility app in Power Apps.-->
 
 ## <a name="inventory-visibility-authentication"></a>Authentication
 
 The platform security token is used to call the Inventory Visibility public API. Therefore, you must generate a *Microsoft Entra token* by using your Microsoft Entra application. You must then use the Microsoft Entra token to get the *access token* from the security service.
-
-<!--Microsoft provides an out-of-box *Postman* get token collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/496645018f96b3f0455e>.-->
 
 To get a security service token, follow these steps.
 
@@ -135,9 +130,6 @@ To get a security service token, follow these steps.
         "expires_in": 3600
     }
     ```
-
-<!-- > [!IMPORTANT]
-> When you use the *Postman* request collection to call Inventory Visibility public APIs, you must add a bearer token for each request. To find your bearer token, select the **Authorization** tab under the request URL, select the **Bearer Token** type, and copy the access token that was fetched in the last step. In later sections of this article, `$access_token` will be used to represent the token that was fetched in the last step. -->
 
 ## <a name="create-onhand-change-event"></a>Create on-hand change events
 

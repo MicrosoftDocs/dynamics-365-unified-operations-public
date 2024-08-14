@@ -1,14 +1,13 @@
 ---
 title: Create transfer orders from the warehouse app
 description: Learn how to create and process transfer orders from the Warehouse Management mobile app, including a step-by-step process.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 04/19/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: WHSMobileDeviceQueueEvent 
 ---
 

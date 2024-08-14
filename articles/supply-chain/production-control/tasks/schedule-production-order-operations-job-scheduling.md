@@ -8,10 +8,7 @@ ms.date: 08/19/2019
 ms.custom:
 ms.reviewer: kamaybac   
 audience: Application User  
-ms.search.region: Global
-ms.search.validFrom: 2016-06-30
 ms.search.form: ProdTableListPage, ProdTableCreate, InventItemIdLookupPurchase, ProdSchedule, ProdTable, ProdRouteJob
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Schedule a production order with operations and job scheduling

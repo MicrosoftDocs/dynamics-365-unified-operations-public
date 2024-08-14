@@ -2,16 +2,15 @@
 title: Data action overrides
 description: This article describes how to override default data actions with custom data actions in Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 07/16/2020
-ms.topic: article
+ms.date: 07/31/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2020-01-31
-ms.dyn365.ops.version: Release 10.0.10
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 # Data action overrides
 

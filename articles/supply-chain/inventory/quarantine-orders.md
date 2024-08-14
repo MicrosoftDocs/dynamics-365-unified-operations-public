@@ -6,11 +6,7 @@ ms.author: yufeihuang
 ms.topic: article
 ms.date: 03/23/2021
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: InventLocation, InventModelGroup, InventQuarantineOrder, InventQuarantineParmEnd, InventQuarantineParmReportFinished, InventQuarantineParmStartUp, InventTrans
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: d5047727-653c-49da-b489-6fd3fe50445e
 ---
 

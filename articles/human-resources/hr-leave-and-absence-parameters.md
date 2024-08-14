@@ -38,15 +38,10 @@ Before you set up leave and absence plans in Dynamics 365 Human Resources, it's 
 ## View and change human resources parameters
 
 1. On the **Leave and absence** page, select the **Links** tab.
-
 2. Under **Setup**, select **Human resources parameters**.
-
 3. On the **Number sequences** tab, verify the **Number sequence code** for **Leave request ID** and change as necessary. This setting determines the sequence used for automatically assigning IDs to leave requests.
-
 4. On the **FMLA** tab, verify the FMLA settings and change as necessary.
-
 5. On the **Employee self service** tab, indicate whether managers can enter leave and absence requests on behalf of their employees.
-
 7. Select **Save**.
 
 >[!IMPORTANT]
@@ -55,39 +50,27 @@ Before you set up leave and absence plans in Dynamics 365 Human Resources, it's 
 ## View and change Human resources shared parameters
 
 1. On the **Personnel management** page, select the **Links** tab.
-
 2. Under **Setup**, select **Human resources shared parameters**.
-
 3. On the **Advance access** tab, select **Yes** for **Enable cross company leave view** to allow leave to be viewed across company.
-
 4. Select **Save**.
 
 ## View and change leave and absence parameters
 
 1. On the **Leave and absence** page, select the **Links** tab.
-
 2. Under **Setup**, select **Leave and absence parameters**.
-
 3. On the **General** tab, set the following parameters:
  
-    - Set **Unit for leave and absence** to either hours or days. If days, you can select **Enable half day definition** to allow employees to choose either first or second half of day in their time-off requests. 
-
+    - Set **Unit for leave and absence** to either hours or days. If days, you can select **Enable half day definition** to allow employees to choose either first or second half of day in their time-off requests.
     - Select **Months of service effective date** to set when the accrual rates take effect for leave plans using months of service.
-
     - Select **Balance calculation** to display balances as of today or as of the accrual period. If you select **Balance as of today**, the balance displays the total of all accruals, adjustments, and requests as of today. If you select **Balance as of accrual period**, the balance displays the total of all accruals, adjustments, and requests as of the accrual period defined by the frequency in the leave plan. 
-
-    - Set the **Start time** for the **Carry forward expiration** batch job.  
-    
+    - Set the **Start time** for the **Carry forward expiration** batch job.     
     - Select **Yes** for **Allow employees to buy leave** and **Allow employees to sell leave**. If you select **Yes** for these options, you can create buy and sell leave policies and enable employees to submit buy and sell leave requests.
 
 ## Configure calendar parameters
 
 1. On the **Leave and absence** page, select the **Links** tab.
-
 2. Under **Setup**, select **Leave and absence parameters**.
-
 3. On the **Calendar** tab, change calendar settings as necessary.
-
 4. Select **Save**.
 
 ## See also

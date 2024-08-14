@@ -4,14 +4,15 @@
 title: Enable on behalf of (OBO) functionality
 description: This article describes how to enable on behalf of (OBO) functionality for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites.
 author: mariash529
-ms.date: 08/09/2023
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: mashneer
+ms.author: asharchw
 ms.search.validFrom: 2023-02-28
-
+ms.custom: 
+  - bap-template
 ---
 
 # Enable on behalf of (OBO) functionality
