@@ -23,7 +23,7 @@ After you configure electronic invoicing, you can generate, digitally sign, and 
 > The electronic invoicing approach that this article describes is implemented using an invoicing service that's applicable only to cloud deployments of Finance or Supply Chain Management.
 
 > [!IMPORTANT]
-> This new E-Invoicing globalization feature for Panama (outbound flow) requires you to be on Dynamics 365 Finance version 10.0.40 specifically on build number 10.0.1935.60 or later. It can only be imported into the new Globalization Studio and it is not supported in RCS.
+> This new E-Invoicing globalization feature for Panama (outbound flow) requires you to be on Dynamics 365 Finance version 10.0.41 or later. It can only be imported into the new Globalization Studio and it is not supported in RCS.
 
 ## Prerequisites
 
