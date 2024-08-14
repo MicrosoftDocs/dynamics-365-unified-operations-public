@@ -9,7 +9,7 @@ ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
 
-# Connection configuration for Panamanian electronic invoicing
+# Get started with Electronic invoicing for Panama
 
 [!include [banner](../../includes/banner.md)]
 
