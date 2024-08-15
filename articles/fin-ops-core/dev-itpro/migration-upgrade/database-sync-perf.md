@@ -1,6 +1,6 @@
 ---
 title: Database synchronize performance 
-description: This article describes the **Shadow Copy Sync** process that can be used to improve the database synchronize performance in upgrade from AX 2012 within self-service environments.
+description: This article describes the **Shadow Copy Sync** process that improves the database synchronize performance during an upgrade.
 author: ttreen
 ms.author: ttreen
 ms.topic: article
@@ -17,19 +17,19 @@ ms.service: dynamics-365-op
 
 [!include[banner](../includes/banner.md)]
 
-This article describes the **Shadow copy sync** process to improve the database synchronize performance in upgrade from AX 2012 within self-service environments.
+This article describes the **Shadow copy sync** process that improves the database synchronize performance during AX 2012 upgrade within self-service environments.
 
 ## Background
 
-During the upgrade three different database synchronize processes are run:
+During the upgrade, three different synchronize processes are run:
 
-- AdditiveSync - Run as part of the PreReq steps and adds new tables and fields, and most new indexes to existing tables (excludes unique indexes). 
-- DBSync – This step does the first full synchronization. New fields are added to existing tables, and change to existing fields. Unique indexes that were disabled during the PreSync step aren't created during this step.
+- AdditiveSync - Run as part of the Pre-req steps and adds new tables and fields, and most new indexes to existing tables (excludes unique indexes). 
+- DBSync – This is the first full synchronization. New fields are added to existing tables, and change to existing fields. Unique indexes that were disabled during the PreSync step aren't created during this step.
 - FinalDBSync – The final database synchronization that synchronizes all remaining objects in the database and runs the final sync data preparation steps.
 
 It's not unusual for the synchronization processes to take several hours or longer. The length of time depends on the size of the database, but more specifically is related to large tables where there are changes to the design. 
 
-One of the slowest changes in the sync process is when a numeric field type has its precision changed, this occurs during the DBSync step. If a table has multiple **Numeric** field types with changes, each **Alter column** statement can take minutes or hours to complete. If there's a high number of these column types in each table, this adds to the sync running time. In Microsoft Dynamics AX 2012, most numeric field types had the precision set to 32,16. In Dynamics 365 Finance, the precision is set is 32,6, for most.
+During the DBSync, one of the slowest changes in the sync process is when a numeric field type changes precision. If a table has multiple **Numeric** fields with changes, each **Alter column** statement can take minutes or hours to complete. If there's a high number of these column types in each table, this adds to the sync running time. In Microsoft Dynamics AX 2012, most numeric field types had the precision set to 32,16. In Dynamics 365 Finance, the precision is set is 32,6, for most.
 
 ## Solution
 
@@ -39,10 +39,9 @@ As a solution, the sync engine has a **Shadow copy sync** process. A new version
  - the shadow schema table reassigned back to the dbo schema
 
 The **Shadow copy sync** is enabled for all upgrades with the following thresholds:
- - Table size must be greater that 20480 MB (20GB)
- - If the size threshold is met, the table must have one or more numeric fields where the precision is changed.
-
-If a table doesn't meet the threshold, it's synchronized the standard way.
+ - Table size must be greater that 20480 MB (20GB).
+ - The table must have one or more numeric fields where the precision is changed.
+ - If a table doesn't meet the threshold, it's synchronized the standard way.
 
 ## Checking table sizes
 
