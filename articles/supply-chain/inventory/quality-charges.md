@@ -38,7 +38,7 @@ A fee structure is defined for each circumstance and specified in the contract. 
 
 For details about how to add operations to a nonconformance and apply charges to them, see [Operations for nonconformances](quality-operations.md).
 
-## Additional resources
+## Related information
 
 - [Quality management overview](quality-management-processes.md)
 - [Enable quality and nonconformance management](enable-quality-management.md)

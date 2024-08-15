@@ -31,7 +31,7 @@ Before you can use the product in Warehouse management, you must do some basic p
 - Set up a unit sequence group where the catch weight unit is defined as the lowest stock keeping unit (SKU).
 - Set up a catch weight item handling policy.
 
-For more information, see [Setting up and maintaining catch weight items](/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-catch-weight-items).
+Learn more in [Setting up and maintaining catch weight items](/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-catch-weight-items).
 
 ## Transaction adjustments
 

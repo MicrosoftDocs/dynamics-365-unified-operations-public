@@ -28,7 +28,7 @@ ms.search.form: SMADispatchBoard
 
 6.  Click **Save**.
 
-## See also
+## Related information
 
 [Dispatch board](dispatch-board.md)
 

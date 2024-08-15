@@ -57,7 +57,7 @@ The following illustration shows how you can use the **Status** value that is as
 > [!TIP]
 > We recommend that you approve any modified planned orders. Otherwise, the edits will be ignored and overwritten by the next planning run.
 
-## Additional resources
+## Related information
 
 - [Firm planned orders](planned-order-firming.md)
 

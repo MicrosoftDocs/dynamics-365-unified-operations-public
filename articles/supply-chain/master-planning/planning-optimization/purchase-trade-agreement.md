@@ -68,7 +68,7 @@ The following table provides examples that show how various settings for a relea
 | *(Blank)* | 1 | No | Yes: 2 | ***US003*** | ***3*** | No | **US003** | **3** |
 | *(Blank)* | 1 | No | ***Yes: 2*** | ***US003*** | 3 | Yes | **US003** | **2** |
 
-## Additional resources
+## Related information
 
 - [Purchase agreements](../../procurement/purchase-agreements.md)
 

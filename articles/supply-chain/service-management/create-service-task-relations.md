@@ -52,7 +52,7 @@ Repeat this procedure until you have created all the necessary service task rela
 
 Service task relations that are created on a service order are available on the specific service order.
 
-## See also
+## Related information
 
 [Service tasks overview](service-tasks.md)
 

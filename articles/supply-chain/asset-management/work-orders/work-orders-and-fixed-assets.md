@@ -30,7 +30,7 @@ The following procedure describes the relation between assets, work orders, work
 
 ![Figure 2.](media/25-work-orders.png)
 
-2. When you set up work order types on the **Work order types** page (**Asset management** > **Setup** > **Work orders** > **Work order types**), you create a work order type for handling investments. See also [Work order types](../setup-for-work-orders/work-order-types.md).
+2. When you set up work order types on the **Work order types** page (**Asset management** > **Setup** > **Work orders** > **Work order types**), you create a work order type for handling investments. Learn more in [Work order types](../setup-for-work-orders/work-order-types.md).
 
 ![Figure 3.](media/26-work-orders.png)
 

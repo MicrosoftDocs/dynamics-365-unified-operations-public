@@ -132,7 +132,7 @@ Information on this FastTab is related to the delivery alternative line that is 
 
 This FastTab highlights the impact of the selected delivery alternative. If you select **OK**, the sales line is updated with the highlighted values in the SELECTED columns. Note that, if the quantity on the selected delivery alternative is less than quantity on the sales line, a delivery schedule is created, and the order line is split into two lines: one line for the selected quantity and one line for the remaining quantity. You can also update the commercial line so that it matches the schedule lines and affects the pricing.
 
-## Additional resources
+## Related information
 
 [Order promising](delivery-dates-available-promise-calculations.md)
 

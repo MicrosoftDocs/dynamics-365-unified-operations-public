@@ -2041,6 +2041,8 @@
         href: demand-planning/whats-new-demand-planning.md
       - name: Setup and administration
         items:
+        - name: Demand planning license requirements
+          href: demand-planning/demand-planning-licensing.md
         - name: Install and enable Demand planning
           href: demand-planning/install-demand-planning.md
         - name: Security roles and row-level security
@@ -2335,11 +2337,9 @@
           href: pricing-management/concurrence-cross-codes.md
     - name: Procurement and sourcing
       items:
-      - name: Procurement and sourcing home page
-        href: procurement/procurement-sourcing.md
       - name: Procurement and sourcing overview
         href: procurement/procurement-sourcing-overview.md
-      - name: Procurement and sourcing workflow
+      - name: Procurement and sourcing workflows
         href: procurement/procurement-sourcing-workflows.md
       - name: Procurement catalogs
         items:

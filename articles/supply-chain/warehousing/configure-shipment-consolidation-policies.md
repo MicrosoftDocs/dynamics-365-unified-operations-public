@@ -307,7 +307,7 @@ The following scenarios illustrate how you could use the shipment consolidation 
 - Scenario 5: [Consolidate shipments manually by using the Consolidate shipments page](../warehousing/consolidate-shipments-manual-form.md)
 
 
-## Additional resources
+## Related information
 
 - [Shipment consolidation policies overview](about-shipment-consolidation-policies.md)
 

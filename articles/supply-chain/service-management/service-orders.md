@@ -32,11 +32,11 @@ You can also create service orders individually, without associating them with a
 
 The following scenario describes another situation where it is useful to create a service order that is not associated with a service agreement.
 
-The company dispatcher receives a call requesting emergency service on an elevator. There is no time to set up a service agreement and a project for the service. Therefore, the dispatcher creates a service order directly in the **Service orders** page, attaches the service order to an existing project, and creates the service order lines. The dispatcher also creates a task or object relation for an existing service order, to record work that is not related to the service agreement. For more information, see [Create service orders manually](create-service-orders-manually.md) and [Create service task relations](create-service-task-relations.md).
+The company dispatcher receives a call requesting emergency service on an elevator. There is no time to set up a service agreement and a project for the service. Therefore, the dispatcher creates a service order directly in the **Service orders** page, attaches the service order to an existing project, and creates the service order lines. The dispatcher also creates a task or object relation for an existing service order, to record work that is not related to the service agreement. Learn more in [Create service orders manually](create-service-orders-manually.md) and [Create service task relations](create-service-task-relations.md).
 
 ## Monitor the progress of service orders
 
-To monitor the progress of a sales order through the different teams and work processes, you can set up a system of stages and reason codes for service orders. For each stage, you can specify the actions that are allowed. For more information, see [Create reason codes](create-reason-codes.md).
+To monitor the progress of a sales order through the different teams and work processes, you can set up a system of stages and reason codes for service orders. For each stage, you can specify the actions that are allowed. Learn more in [Create reason codes](create-reason-codes.md).
 
 ### Example
 
@@ -52,21 +52,21 @@ The service orders that are created from the service agreement are processed by 
 
 ## Move and post lines
 
-A service technician returns from a service visit, and then modifies and updates the service order lines. During the service visit, the technician performed a service job that was scheduled for the next service visit. Therefore, the technician moves the lines from the next service visit to the current service visit. The technician then posts the service order. For more information, see [Move service order lines](move-service-order-lines.md).
+A service technician returns from a service visit, and then modifies and updates the service order lines. During the service visit, the technician performed a service job that was scheduled for the next service visit. Therefore, the technician moves the lines from the next service visit to the current service visit. The technician then posts the service order. Learn more in [Move service order lines](move-service-order-lines.md).
 
 ## Cancel service orders
 
-One of the other service orders that was generated for the month of January becomes obsolete, because the job is canceled. Therefore, the service dispatcher cancels the service order. For more information, see [Cancel service orders](cancel-service-orders.md).
+One of the other service orders that was generated for the month of January becomes obsolete, because the job is canceled. Therefore, the service dispatcher cancels the service order. Learn more in [Cancel service orders](cancel-service-orders.md).
 
 ## Post from projects
 
-At the end of each week, the dispatcher wants to post all service orders that are attached to a specific project. Therefore, the dispatcher locates the relevant project in the **Projects** page and posts the service orders that have been completed. For more information, see [Post service orders (class form)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
+At the end of each week, the dispatcher wants to post all service orders that are attached to a specific project. Therefore, the dispatcher locates the relevant project in the **Projects** page and posts the service orders that have been completed. Learn more in [Post service orders (class form)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
 
 ## Delete service orders
 
-During the second half of the year, your customer decides that the service visits are too infrequent. You must create a new, more frequent series of service visits for the remaining time on the service agreement. Therefore, you must delete the existing service orders and create new service orders. For more information, see [Delete service orders](delete-service-orders.md).
+During the second half of the year, your customer decides that the service visits are too infrequent. You must create a new, more frequent series of service visits for the remaining time on the service agreement. Therefore, you must delete the existing service orders and create new service orders. Learn more in [Delete service orders](delete-service-orders.md).
 
-## See also
+## Related information
 
 [Service orders (form)](https://technet.microsoft.com/library/aa554361\(v=ax.60\))
 

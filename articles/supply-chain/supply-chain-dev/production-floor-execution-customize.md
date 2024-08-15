@@ -207,7 +207,7 @@ The following procedure shows an example of how to add date and time controls to
     }
     ```
 
-## Additional resources
+## Related information
 
 - [Style the production floor execution interface](../production-control/production-floor-execution-styles.md)
 - [Design the production floor execution interface](../production-control/production-floor-execution-tabs.md)

@@ -26,7 +26,7 @@ Service orders in the **Dispatch board** form are grouped by dispatch team.
 
 For information about how to assign a worker to a team, see [Set up a preferred technician](set-up-preferred-technician.md).
 
-## See also
+## Related information
 
 - [Prioritize service orders](prioritize-service-orders.md)
 - [View the status of service orders](view-the-status-of-service-orders.md)

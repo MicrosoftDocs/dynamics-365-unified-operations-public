@@ -43,7 +43,7 @@ For this example, only item number A0001 must be counted in warehouse 61.
 1. A new cycle counting plan is created that references the newly created work template. The cycle counting plan includes all locations in warehouse 61 (**Select locations** query) that hold inventory for item number A0001. The selection of specific products is defined in the **Cycle count product selections** section.
 1. You can select products for cycle counting plans by setting the **Empty locations** field to **Exclude empty**. When the cycle counting plan is processed, partial cycle count work for item number A0001 is created. The actual counting process can be performed by using a mobile device menu item for guided cycle counting.
 
-## Additional resources
+## Related information
 
 [Cycle counting](cycle-counting.md)
 

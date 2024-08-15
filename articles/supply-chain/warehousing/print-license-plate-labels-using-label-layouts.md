@@ -56,8 +56,8 @@ Follow these steps to create a license plate label layout.
     - **Definition type** – Select the method that's used to define the label layout:
 
         - *ZPL* – Define the label layout by using ZPL.
-        - *Variables* – Define a label layout that can be used with an external service. (For more information, see [Print labels using an external service](../supply-chain-dev/label-printing-using-external-label-service.md).) If you select this option, the **Printer text layout** FastTab provides grids where you define system variables and data variables. Under **System variables**, set the **LabelFile** field to the path of the label design in the external system, and set the **Quantity** field to the number of labels to print. Under **Data variables**, define the values that are sent from Microsoft Dynamics 365 Supply Chain Management by mapping them to the corresponding placeholders in the label design from the external system.
-        - *Variables (script)* – Use the script format to define a label layout that can be used with an external service. (For more information, see [Print labels using an external service](../supply-chain-dev/label-printing-using-external-label-service.md).) On the **Printer text layout** FastTab, define the label file, the quantity, and the values to send. Here's an example.
+        - *Variables* – Define a label layout that can be used with an external service. (Learn more in [Print labels using an external service](../supply-chain-dev/label-printing-using-external-label-service.md).) If you select this option, the **Printer text layout** FastTab provides grids where you define system variables and data variables. Under **System variables**, set the **LabelFile** field to the path of the label design in the external system, and set the **Quantity** field to the number of labels to print. Under **Data variables**, define the values that are sent from Microsoft Dynamics 365 Supply Chain Management by mapping them to the corresponding placeholders in the label design from the external system.
+        - *Variables (script)* – Use the script format to define a label layout that can be used with an external service. (Learn more in [Print labels using an external service](../supply-chain-dev/label-printing-using-external-label-service.md).) On the **Printer text layout** FastTab, define the label file, the quantity, and the values to send. Here's an example.
 
             ```plaintext
             "filePath": "/Instant Print/GS1-128.nlbl", 
@@ -214,7 +214,7 @@ To specify the license plate label layouts that are used and where they're print
 
 1. On the **Document routing printers** FastTab, assign the printer and label layout that should be used when the criteria for the routing record are met. Select **New** on the toolbar to add a line to the grid. Then set the following fields for the new line:
 
-    - **Name** – Select an appropriate ZPL printer. For more information, see [Install the Document Routing Agent to enable network printing](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md). Leave this field blank if you want to use [dynamic printer selection](dynamic-printing-selection.md).
+    - **Name** – Select an appropriate ZPL printer. Learn more in [Install the Document Routing Agent to enable network printing](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md). Leave this field blank if you want to use [dynamic printer selection](dynamic-printing-selection.md).
     - **Use specified printer** – If you want to use dynamic printer selection and use the configured printer as a fallback when dynamic printer selection doesn't find a more specific printer, set this field to *As fallback printer*. If this field is set to *Always* and a printer is configured, then dynamic printer selection is disabled.
     - **Label layout ID** – Select the label layout to use. The example label layout ID value that was suggested earlier in this article was *License plate*.
 
@@ -249,9 +249,9 @@ If you created a new mobile device menu item, you must add it to the mobile devi
 
 ## Run a scenario to print license plate labels
 
-If you want to experiment with printing license plate labels, you can set up a scenario for doing mixed license plate receiving through the Warehouse Management mobile app. For more information, see [Mixed license plate receiving](mixed-license-plate-receiving.md). Follow the instructions there, and confirm that the scenario that's described in this article is supported.
+If you want to experiment with printing license plate labels, you can set up a scenario for doing mixed license plate receiving through the Warehouse Management mobile app. Learn more in [Mixed license plate receiving](mixed-license-plate-receiving.md). Follow the instructions there, and confirm that the scenario that's described in this article is supported.
 
-## Additional resources
+## Related information
 
 - [Document routing label layouts](document-routing-layout-for-license-plates.md)
 

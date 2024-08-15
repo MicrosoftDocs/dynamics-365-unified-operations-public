@@ -263,7 +263,7 @@ To view the content of a vendor acknowledgment or error response, select the **R
 
 ![Response XML tab.](media/cxml-response-xml.png "Response XML tab")
 
-## Additional resources
+## Related information
 
 - [Set up an external catalog for PunchOut e-procurement](set-up-external-catalog-for-punchout.md)
 - [Use external catalogs for PunchOut e-procurement](use-external-catalogs-for-punchout.md)

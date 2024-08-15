@@ -75,7 +75,7 @@ As an alternative to using the **Arrival overview** page, you can use the **Regi
 
 1. Select **Post all**.
 
-## See also
+## Related information
 
 - [Arrival overview (form)](https://technet.microsoft.com/library/hh227654\(v=ax.60\))
 

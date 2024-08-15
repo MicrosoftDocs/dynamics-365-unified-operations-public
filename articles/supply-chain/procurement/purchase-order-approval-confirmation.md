@@ -72,7 +72,7 @@ To cancel the whole quantity on a PO line, you should cancel the delivery remain
 
 If a PO is under change management, any change, such as cancellation of the order or the delivery remainder, must be submitted to the workflow system and approved before the process can be completed and the inventory transactions can be updated as canceled.
 
-## Additional resources
+## Related information
 
 - [Purchase order overview](purchase-order-overview.md)
 - [Create purchase orders](purchase-order-creation.md)

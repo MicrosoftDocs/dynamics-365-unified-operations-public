@@ -56,7 +56,4 @@ For a deep dive into the capabilities of Demand planning, watch the following vi
 
 ## Licensing
 
-To use Demand planning in a production environment, each relevant user must have a license for it.
-
-- For licensing options and pricing details, see [Dynamics 365 pricing](https://dynamics.microsoft.com/pricing/).
-- After purchasing the required licenses, an administrator must assign one to each user that needs it. For details about how to assign licenses to users, see [Assign licenses](/power-platform/admin/assign-licenses) and [Assign or unassign licenses for users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
+To use Demand planning in a production environment, each relevant user must have a license for it. Learn more in [Demand planning license requirements](demand-planning-licensing.md).

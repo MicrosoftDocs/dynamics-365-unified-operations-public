@@ -1,8 +1,8 @@
 ---
 title: Intercompany planning groups for demand forecasting
 description: Learn about intercompany planning groups and how they contribute to demand forecasting, which optimizes logistics operations across multiple companies.
-author: dereklh77
-ms.author: v-heuerderek
+author: t-benebo
+ms.author: benebotg
 ms.topic: overview
 ms.date: 04/15/2024
 ms.custom: 
@@ -39,7 +39,7 @@ To propagate the demand throughout the intercompany chain, you must set paramete
 
 If no **Firming time fence** is set up, no intercompany purchase orders are created automatically. Only the first execution of the master scheduling results in planned orders; however, because the intercompany purchase order is not actually created, no intercompany sales order is created, and, therefore, no additional intercompany purchase orders are created, and so on.
 
-To learn more, see [Intercompany planning groups](../master-planning/demand-forecasting-setup.md#intercompany-planning-groups).
+Learn more in [Intercompany planning groups](../master-planning/demand-forecasting-setup.md#intercompany-planning-groups).
 
 <!-- KFM: The following text needs to be verified against SCM pages and settings. I think this text is describing Business Central, not SCM. 
 
@@ -55,7 +55,7 @@ Use the **Intercompany Setup** page to set up the following components of interc
 - The companies that are the intercompany partners.
 - The companies that are vendors or customers, or both.
 
-To learn more, see [Demand forecasting setup](../master-planning/demand-forecasting-setup.md#intercompany-planning-groups).
+Learn more in [Demand forecasting setup](../master-planning/demand-forecasting-setup.md#intercompany-planning-groups).
 
 ## Synchronization partners
 

@@ -99,7 +99,7 @@ You can set up the expenditure reviewers on the **Purchase requisition expenditu
 
 To use one of the expenditure reviewers that you set up in a workflow, you must set the **Type of participant** option to **Expenditure participants** in the **Assignment** properties for the relevant workflow element.
 
-## Additional resources
+## Related information
 
 - [Create a requisition for consumption](tasks/create-requisition-consumption.md)
 - [Defining business process workflows for purchase requisitions](https://www.microsoft.com/download/details.aspx?id=101821)

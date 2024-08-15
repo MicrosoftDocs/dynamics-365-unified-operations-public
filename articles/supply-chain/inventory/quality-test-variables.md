@@ -52,7 +52,7 @@ Follow these steps to create a test variable.
 1. Repeat the previous step for each additional outcome. Make sure that at least one outcome has an outcome status of *Pass* and at least one has an outcome status of *Fail*.
 1. Close the pages.
 
-## Additional resources
+## Related information
 
 - [Quality management test instruments](quality-test-instruments.md)
 - [Quality management tests](quality-tests.md)

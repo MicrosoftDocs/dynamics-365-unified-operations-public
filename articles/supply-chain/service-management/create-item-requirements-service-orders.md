@@ -38,7 +38,7 @@ Item requirements for service orders are processed through a project. To create 
 1. On the **Line details** FastTab, on the **Product dimensions** tab, in the **Site** field, select the inventory site for the item.
 1. To create a service order from the agreement line, on the **Lines** FastTab, select **Create service orders**, and then enter the relevant information in the **Create service orders** form.
 
-## See also
+## Related information
 
 [Create service orders automatically](create-service-orders-automatically.md).
 

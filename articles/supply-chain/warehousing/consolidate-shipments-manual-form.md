@@ -81,7 +81,7 @@ Follow these steps to release each sales order that you created for this scenari
 1. In the **Filters** pane, remove the **Order number** filter, and then select **Apply**.
 1. Verify the shipments that are suggested for consolidation. Only one shipment that has the same policy should be suggested for consolidation.
 
-## Additional resources
+## Related information
 
 - [Shipment consolidation policies overview](about-shipment-consolidation-policies.md)
 - [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md)

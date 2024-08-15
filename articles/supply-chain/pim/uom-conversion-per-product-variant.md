@@ -26,7 +26,7 @@ If you don't already see this feature in your system, go to [Feature management]
 
 ## Set up a product for unit conversion per variant
 
-Product variants can be created only for products that are product masters. For more information, see [Create a product master](tasks/create-product-master.md). The *Unit of measure conversions for product variants* feature isn't available for products that are set up for catch-weight processes.
+Product variants can be created only for products that are product masters. Learn more in [Create a product master](tasks/create-product-master.md). The *Unit of measure conversions for product variants* feature isn't available for products that are set up for catch-weight processes.
 
 To configure a product master to support unit conversion per variant, follow these steps.
 
@@ -90,7 +90,7 @@ If a product has many product variants that have different unit conversions, it'
 
 To export unit conversions to Excel, on the **Unit conversions** page, on the Action Pane, select **Open in Microsoft Office**.
 
-## Additional resources
+## Related information
 
 [Manage units of measure](tasks/manage-unit-measure.md)
 
