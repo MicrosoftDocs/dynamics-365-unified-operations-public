@@ -23,13 +23,13 @@ This article describes the **Shadow copy sync** process that improves the databa
 
 During the upgrade, three different synchronize processes are run:
 
-- AdditiveSync - Run as part of the Pre-req steps and adds new tables and fields, and most new indexes to existing tables (excludes unique indexes). 
-- DBSync – This is the first full synchronization. New fields are added to existing tables, and change to existing fields. Unique indexes that were disabled during the PreSync step aren't created during this step.
+- AdditiveSync - Run as part of the Prereq steps and adds new tables and fields, and most new indexes to existing tables (excludes unique indexes). 
+- DBSync – The first full synchronization where new fields are added to existing tables and changes to existing fields. Unique indexes that were disabled during the Pre-Sync step aren't created during this step.
 - FinalDBSync – The final database synchronization that synchronizes all remaining objects in the database and runs the final sync data preparation steps.
 
-It's not unusual for the synchronization processes to take several hours or longer. The length of time depends on the size of the database, but more specifically is related to large tables where there are changes to the design. 
+It's not unusual for the synchronization processes to take several hours or longer. The length of time depends on the size of the database, but more specifically, related to large tables with changes to the design. 
 
-During the DBSync, one of the slowest changes in the sync process is when a numeric field type changes precision. If a table has multiple **Numeric** fields with changes, each **Alter column** statement can take minutes or hours to complete. If there's a high number of these column types in each table, this adds to the sync running time. In Microsoft Dynamics AX 2012, most numeric field types had the precision set to 32,16. In Dynamics 365 Finance, the precision is set is 32,6, for most.
+During the DBSync, one of the slowest changes is when a numeric field type changes precision. If a table has multiple **Numeric** fields with changes, each **Alter column** statement can take minutes or hours to complete. If there's a high number of these column types in each table, this increases the sync running time. In Microsoft Dynamics AX 2012, most numeric field types had the precision set to 32,16. In Dynamics 365 Finance, the precision is set is 32,6, for most.
 
 ## Solution
 
@@ -38,14 +38,14 @@ As a solution, the sync engine has a **Shadow copy sync** process. A new version
  - the old table in the dbo schema is dropped
  - the shadow schema table reassigned back to the dbo schema
 
-The **Shadow copy sync** is enabled for all upgrades with the following thresholds:
- - Table size must be greater that 20480 MB (20GB).
+The **Shadow copy sync** is enabled for all upgrades that meet the following thresholds:
+ - The table size must be greater that 20480 MB (20GB).
  - The table must have one or more numeric fields where the precision is changed.
- - If a table doesn't meet the threshold, it's synchronized the standard way.
+ - If a table doesn't meet the threshold, the table is synchronized the standard way.
 
 ## Checking table sizes
 
-You can run the following SQL script to show all tables over 500 MB. This needs to be run on the target Dynamics 365 Finance Azure SQL database for the environment. You need to enable a Just in time (JIT) session from Lifecycle services to connect to the database.
+Run the following SQL script to find tables over 500 MB on the target Dynamics 365 Finance Azure SQL database for the environment. You need to enable a Just in time (JIT) session from Lifecycle services to connect to the database.
 
 ```SQL
 SELECT t.NAME AS TableName, (sum(a.used_pages) * 8) / 1024 as UsedSpaceMB
@@ -62,7 +62,7 @@ ORDER BY sum(a.used_pages) desc
 
 ## Tuning the shadow copy sync thresholds
 
-Depending on your dataset, you can increase or decrease the tables that are included in the **Shadow copy synce** process. 
+Depending on your dataset, you can increase or decrease the tables that are included in the **Shadow copy sync** process. 
 
 Typically, threshold values are decreased to include more tables in the shadow sync. There's a point where enabling too many tables to be synchronized with the shadow schema will be slower than if you do less. You need to experiment to find the ideal values for your specific database. 
 
