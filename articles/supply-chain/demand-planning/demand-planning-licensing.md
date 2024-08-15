@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-## Demand planning license requirements
+# Demand planning license requirements
 
 [!include [banner](../includes/banner.md)]
 

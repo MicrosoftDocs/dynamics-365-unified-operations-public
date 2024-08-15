@@ -47,12 +47,12 @@ To use the features that are described in this article, you must be running Supp
 
 ## <a name="prepare-integration"></a>Prepare for NiceLabel Cloud integration
 
-Before you can access NiceLabel Cloud by using either the Cloud Print API or the Cloud Trigger API, you must register in the NiceLabel Developer Portal and then link your Developer Portal subscription with your NiceLabel Cloud instance. For instructions, see [Cloud Integrations](https://help.nicelabel.com/hc/en-001/articles/4402966072209-Cloud-Integrations#cloud-integrations-1-0) in the NiceLabel Help Center.
+Before you can access NiceLabel Cloud by using either the Cloud Print API or the Cloud Trigger API, you must register in the NiceLabel Developer Portal and then link your Developer Portal subscription with your NiceLabel Cloud instance. For instructions, see [the NiceLabel Help Center](https://help.nicelabel.com/hc/).
 
 > [!IMPORTANT]
 > When you register in the NiceLabel Developer Portal, be sure to make a copy of your primary or secondary subscription key. (Use the primary key by default.) You'll need this key to configure the external service definition later.
 
-If you want to use printers that are enabled for the Internet of Things (IoT), you must connect them to your NiceLabel Cloud instance. For instructions, see [Cloud Printers](https://help.nicelabel.com/hc/en-001/articles/4407466158737-Cloud-Printers) in the NiceLabel Help Center.
+If you want to use printers that are enabled for the Internet of Things (IoT), you must connect them to your NiceLabel Cloud instance. For instructions, see [the NiceLabel Help Center](https://help.nicelabel.com/hc/).
 
 ## Configure Supply Chain Management to print to cloud printers by using the Cloud Print API
 
@@ -197,7 +197,7 @@ You can now create label printers and label layouts by using either variables or
 
 By using the Cloud Trigger API, you can call an on-premises installation of the NiceLabel Automation Service, which then processes the request and performs preprogrammed actions. Before you move on to the next steps, install NiceLabel on the computers that will run the NiceLabel Automation Service, and set up the required printers for those computers. For guidance that will help you install and set up printers, see the NiceLabel documentation.
 
-To simplify the configuration of the NiceLabel Automation Service, use the NiceLabel Cloud Data Integration pack, and follow the instructions in [Appendix A: Integration bundle](https://help.nicelabel.com/hc/en-001/articles/7361192275217-Appendix-A-Integration-bundle) in the NiceLabel Help Center. The following procedure summarizes the required steps. More details are provided in the NiceLabel Help Center.
+To simplify the configuration of the NiceLabel Automation Service, use the NiceLabel Cloud Data Integration pack, and follow the instructions provided in [the NiceLabel Help Center](https://help.nicelabel.com/hc/). The following procedure summarizes the required steps. More details are provided in the NiceLabel Help Center.
 
 1. Download the integration pack by using the link that's provided.
 1. Sign in to NiceLabel Control Center.
