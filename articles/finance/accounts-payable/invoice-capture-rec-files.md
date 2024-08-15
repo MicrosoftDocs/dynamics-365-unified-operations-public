@@ -45,7 +45,7 @@ The **Received file (captured)** page shows all files that have been successfull
 |---|---|---|
 | Waiting | The invoice was captured by a Power Automate flow and is awaiting file validation. | No action is required. |
 | In-process | File filter rules are being used to validate the invoice, or the invoice passed filter validation and is being recognized. | **Reset processing status** |
-| Cancelled | An exception occurred when a duplicate file was found, or file filter validation or the call to the recognitive service failed. | **Retry** or **Void** |
+| Canceled | An exception occurred when a duplicate file was found, or file filter validation or the call to the recognitive service failed. | **Retry** or **Void** |
 | Captured | The form recognizer result was moved to captured invoice staging. | **View captured invoice** |
 | Voided | If the invoice isn't needed, select **Voided**. If an invoice has a status of **Voided**, you can permanently delete it from Dataverse by selecting **Obsoleted**. | **Obsolete** |
 
