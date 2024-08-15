@@ -27,7 +27,7 @@ This article describes how depreciation batch proposals work and explains how to
 3. In the **To date** field, enter a date.
 
     - Select the **Summarize depreciation** option to summarize monthly depreciations into one journal line.  
-    - For example, if the **To date** value is March 31, 2022, the following description is generated: **Depreciation since January 31, 2022.** The **Date** field on the proposed journal lines is then set to March 31, 2022.  
+    - For example, if the **To date** value is March 31, 2022, the following description is generated: **Depreciation since January 31, 2022**. The **Date** field on the proposed journal lines is then set to March 31, 2022.  
     - The depreciation proposal can be filtered by asset, asset group, or other criteria using the **Filter** option.  
     - When you use the **Create acquisition or depreciation proposals for fixed assets** page, you can propose depreciation in batches. This is recommended for larger proposals that will use more system resources. If you select the batch option, you can still complete other tasks during that time. When you propose depreciation in this way, depreciation is calculated for value models for fixed assets.  
 
@@ -40,6 +40,6 @@ This article describes how depreciation batch proposals work and explains how to
 4. Select **Post**.
 
 > [!NOTE]
-> In Microsoft Dynamics Finance 365 version 10.0.42, fixed asset journals are excluded from the automatic splitting of large financial journals feature. Additionally, an option has been added to the fixed asset journal header to enable transactions to be posted via batch jobs. This feature has been backported to version 10.0.39 through the appropriate update installation.
+> In Microsoft Dynamics Finance 365 version 10.0.42, fixed asset journals are excluded from the automatic splitting of large financial journals feature. Additionally, an option has been added to the fixed asset journal header to enable transactions to be posted via batch jobs. This feature has been backported to version 10.0.39 and later versions through the appropriate update installation.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
