@@ -27803,7 +27803,11 @@
       "source_path": "articles/fin-ops-core/dev-itpro/help/preparing-content.md",
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/help/custom-help-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/procurement-sourcing.md",
+      "redirect_url": "/dynamics365/supply-chain/procurement/procurement-sourcing-overview",
+      "redirect_document_id": false
     }
-
   ]
 }
