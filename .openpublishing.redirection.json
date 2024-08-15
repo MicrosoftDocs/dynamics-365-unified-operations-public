@@ -27811,12 +27811,12 @@
     },
     {
       "source_path": "articles/commerce/task-recorder-retail-pos.md",
-      "redirect_url": "/dynamics365/commerce",
+      "redirect_url": "/dynamics365/commerce/welcome",
       "redirect_document_id": false
     },
     {
       "source_path": "articles/commerce/dev-itpro/pos-rsat.md",
-      "redirect_url": "/dynamics365/commerce",
+      "redirect_url": "/dynamics365/commerce/welcome",
       "redirect_document_id": false
     }
   ]
