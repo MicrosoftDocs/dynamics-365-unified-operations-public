@@ -29,7 +29,7 @@ Maintenance job type forecasts serve two purposes:
 - You can track costs on maintenance job type forecasts in the **Project management and accounting** module. 
 - Forecasts are automatically transferred to a work order job project when you select a maintenance job type on a work order job.
 
-To track costs on work order jobs, you must first set up work order projects. For more information, see [Work order project setup](../setup-for-work-orders/work-order-project-setup.md).
+To track costs on work order jobs, you must first set up work order projects. Learn more in [Work order project setup](../setup-for-work-orders/work-order-project-setup.md).
 
 ## Work order job projects
 

@@ -27,7 +27,7 @@ Warehouse management only mode uses lightweight source documents that are dedica
 
 Warehouse management only mode provides several deployment options to support the business needs of running your [warehouse management](warehouse-management-overview.md) processes.
 
-You can [start a free trial of Dynamics 365 Supply Chain Management](https://go.microsoft.com/fwlink/?linkid=2252982) via the [unified admin experience for finance and operations apps](/power-platform/admin/unified-experience/finance-operations-apps-overview). You can then try out an implementation as shown in the following high-level diagram of the elements and processes of an integrated system. For more information, see [this example that shows how to use inbound and outbound shipment orders](wms-only-mode-example.md).
+You can [start a free trial of Dynamics 365 Supply Chain Management](https://go.microsoft.com/fwlink/?linkid=2252982) via the [unified admin experience for finance and operations apps](/power-platform/admin/unified-experience/finance-operations-apps-overview). You can then try out an implementation as shown in the following high-level diagram of the elements and processes of an integrated system. Learn more in [this example that shows how to use inbound and outbound shipment orders](wms-only-mode-example.md).
 
 :::image type="content" source="media/wms-only-high-level-integrations.svg" alt-text="High-level integration diagram." lightbox="media/wms-only-high-level-integrations.svg":::
 

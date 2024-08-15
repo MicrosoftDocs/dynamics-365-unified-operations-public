@@ -55,7 +55,7 @@ To open the **Capacity load** page so that you can review the available capacity
 
 These options are also available in the **Update marking** field on the **Standard update** tab of the **Master planning parameters** page, where you define the default selection for the **Firming** dialog box.
 
-For more information, see [Inventory marking](planning-optimization/marking.md).
+Learn more in [Inventory marking](planning-optimization/marking.md).
 
 ## Set delay tolerance (negative days) at the master plan level
 
@@ -191,4 +191,4 @@ To specify external item IDs and text descriptions for a purchase order line for
 1. On the **Line details** FastTab, on the **General** tab, in the **Order line** section, in the **Text** field, provide an external description of the item that is specified on the selected order line. This value will be synced with the related intercompany sales order line.
 1. In the **Reference** section, in the **External** field, provide an external item ID for the item that is specified on the selected order line. This value will be synced with the related intercompany sales order line.
 
-For more information, see [Create and invoice an intercompany sales order for an external customer](../sales-marketing/intercompany-sales-order-for-external-customer.md).
+Learn more in [Create and invoice an intercompany sales order for an external customer](../sales-marketing/intercompany-sales-order-for-external-customer.md).

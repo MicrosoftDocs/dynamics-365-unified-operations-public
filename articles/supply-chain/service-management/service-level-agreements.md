@@ -58,7 +58,7 @@ When you create a new service order for a service agreement that an SLA is assig
 
   - You can define reason codes that must be set if the time interval of the service level agreement is exceeded.
 
-## See also
+## Related information
 
 [View compliance with service level agreements](view-compliance-with-service-level-agreements.md)
 

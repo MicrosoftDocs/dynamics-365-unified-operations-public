@@ -34,7 +34,7 @@ During the scheduling process, the system also considers the *resource requireme
 - Resource type
 - Resource
 - Resource group
-- Capability (For more information, see [Scheduling with resource selection based on capability](capability-based-scheduling.md).)
+- Capability (Learn more in [Scheduling with resource selection based on capability](capability-based-scheduling.md).)
 
 > [!NOTE]
 >

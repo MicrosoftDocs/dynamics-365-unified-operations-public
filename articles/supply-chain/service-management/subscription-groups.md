@@ -31,7 +31,7 @@ You can also complete the following tasks for all subscriptions that are attache
 
   - Post accrued revenue for subscription transactions.
 
-## See also
+## Related information
 
 [Subscription groups (form)](https://technet.microsoft.com/library/aa553150\(v=ax.60\))
 

@@ -24,7 +24,7 @@ When you consolidate inventory transactions, all related transactions are moved 
 If an `itemId` and `inventDimId` combination contains only one receipt or issue transaction, the transaction won't be consolidated.
 
 > [!NOTE]
-> After consolidating your inventory transactions, you can further optimize storage and system performance my using the *Archive with Dataverse long term retention* feature to move `InventTransArchive` records to a Microsoft Azure data lake. For more information, see [Archive inventory transaction data in Dynamics 365 Supply Chain Management](../../fin-ops-core/dev-itpro/sysadmin/archive-inventory.md).
+> After consolidating your inventory transactions, you can further optimize storage and system performance my using the *Archive with Dataverse long term retention* feature to move `InventTransArchive` records to a Microsoft Azure data lake. Learn more in [Archive inventory transaction data in Dynamics 365 Supply Chain Management](../../fin-ops-core/dev-itpro/sysadmin/archive-inventory.md).
 
 ## Turn on the feature in your system
 

@@ -125,7 +125,7 @@ You can combine this format with other types that were described earlier in this
 $DisplayListOfItemsNumbers()[1]$
 ```
 
-## Additional resources
+## Related information
 
 For more information about how to set up and print labels, see the following articles:
 

@@ -47,7 +47,7 @@ For this example, the following operations can be created to represent the work 
 
 1. Close the page.
 
-## Additional resources
+## Related information
 
 - [Quality management overview](quality-management-processes.md)
 - [Enable quality and nonconformance management](enable-quality-management.md)

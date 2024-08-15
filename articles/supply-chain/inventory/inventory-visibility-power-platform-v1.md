@@ -153,7 +153,7 @@ Use the **Onhand query** tab of the **Operational visibility** page to query rea
 Use the **Reservation posting** tab of the **Operational visibility** page to make soft reservations of inventory.
 
 > [!IMPORTANT]
-> The capability to make soft reservations through the user interface should be used only to test the feature. Every soft reservation request should be associated with a transaction order line change (create, modify, delete, and so on). Therefore, we recommend that you make only soft reservations that are linked to back-end orders. For more information, see [Inventory Visibility soft reservations](inventory-visibility-reservations.md).
+> The capability to make soft reservations through the user interface should be used only to test the feature. Every soft reservation request should be associated with a transaction order line change (create, modify, delete, and so on). Therefore, we recommend that you make only soft reservations that are linked to back-end orders. Learn more in [Inventory Visibility soft reservations](inventory-visibility-reservations.md).
 
 Follow these steps to set up and submit a soft reservation.
 

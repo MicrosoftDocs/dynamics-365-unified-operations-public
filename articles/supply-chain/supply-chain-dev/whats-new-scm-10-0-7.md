@@ -30,7 +30,7 @@ Feature management now allows you to enable all new features by default, require
 
 
 
-## Additional resources
+## Related information
 
 ### Bug fixes 
 For information about the bug fixes included in each of the updates that are part of 10.0.7, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?kb=4528173&bugId=386529&dbType=3&qc=d6f5cd3ead06907477eae511043a52c1d4290a12bf52374dd55faf0d28ae732e).

@@ -39,7 +39,7 @@ Manufacturing accounting lets you handle [Job order costing](production-order-co
 
 The [Cost management Power BI content](../../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md) provides managerial insight into inventory and work-in-progress (WIP) inventory, and how cost flows through them by category over time. The information can also be used as a detailed supplement to the financial statement.
 
-## Additional resources
+## Related information
 
 ### What's new and in development
 

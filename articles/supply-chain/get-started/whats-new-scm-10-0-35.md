@@ -48,8 +48,8 @@ If you want to turn any of these features on or off, you must do so in [feature 
 | Inventory and warehouse management | *Cascade transfer order header date change to lines* | Automatically updates line dates when a transfer order header's ship or receipt date is changed. |
 | Sales and marketing | *(Preview) Pricing management workspace* | Provides a pricing management workspace, which lets sales managers know about impending price rule status changes and supports their choice to modify pricing policies. Sales managers can perform light tasks to enable or disable the pricing rules without leaving the workspaces. |
 | Sales and marketing | *Keep existing sorting on intercompany sales lines when updating them* | Adds an option that lets users keep existing sorting on intercompany sales line update. |
-| Transportation management | *Specify Goods In Transit Order when receiving via mobile device.* | Enables workers using a mobile device to choose which specific goods to receive when multiple goods-in-transit orders exist for the same voyage, container, item number, and purchase order number.<br><br>See also [Specify goods-in-transit orders when receiving with a mobile device](../landed-cost/in-transit-processing.md#specify-GIT-order). |
-| Transportation management | *Split Goods In Transit Order quantity and assign batch/serial number when receiving via mobile device.* | Enables workers using a mobile device to assign multiple batch/serial numbers for various quantities of goods received from a goods-in-transit order. All of the assigned batch/serial numbers will be consolidated into one work record and then processed together.<br><br>See also [Assign batch/serial numbers when receiving with a mobile device](../landed-cost/in-transit-processing.md#batch-serial). |
+| Transportation management | *Specify Goods In Transit Order when receiving via mobile device.* | Enables workers using a mobile device to choose which specific goods to receive when multiple goods-in-transit orders exist for the same voyage, container, item number, and purchase order number.<br><br>Learn more in [Specify goods-in-transit orders when receiving with a mobile device](../landed-cost/in-transit-processing.md#specify-GIT-order). |
+| Transportation management | *Split Goods In Transit Order quantity and assign batch/serial number when receiving via mobile device.* | Enables workers using a mobile device to assign multiple batch/serial numbers for various quantities of goods received from a goods-in-transit order. All of the assigned batch/serial numbers will be consolidated into one work record and then processed together.<br><br>Learn more in [Assign batch/serial numbers when receiving with a mobile device](../landed-cost/in-transit-processing.md#batch-serial). |
 
 ## New and updated documentation resources
 
@@ -59,11 +59,11 @@ We have recently added or significantly updated the following help articles. The
 |---|---|
 | Warehouse management | [Inspect details of active Warehouse Management mobile app sessions](../warehousing/work-user-sessions.md) |
 
-## Additional resources
+## Related information
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.35 includes platform updates. To learn more, see [Platform updates for version 10.0.35 of Finance and Operations apps (August 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-35.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.35 includes platform updates. Learn more in [Platform updates for version 10.0.35 of Finance and Operations apps (August 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-35.md).
 
 ### Bug fixes
 

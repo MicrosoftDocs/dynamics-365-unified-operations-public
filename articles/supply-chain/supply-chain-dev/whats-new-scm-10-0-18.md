@@ -26,13 +26,13 @@ This article lists features that are either new or changed in Microsoft Dynamics
 
 The following features are included in this release. Follow the links to the [release plan](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) to see the official release dates for each feature.
 
-- Automatic release of purchase orders (enhancement for [Warehouse execution with scale units in the cloud](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud))<br> - For more information, see [Warehouse management workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-warehousing.md).
+- Automatic release of purchase orders (enhancement for [Warehouse execution with scale units in the cloud](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-scale-units-cloud))<br> - Learn more in [Warehouse management workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-warehousing.md).
 
-- [Create and view certifications on the vendor collaboration interface](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/create-view-certifications-vendor-collaboration-interface)<br> - For more information, see [Maintain vendor certification](../../finance/public-sector/manage-vendor-certification.md).
+- [Create and view certifications on the vendor collaboration interface](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/create-view-certifications-vendor-collaboration-interface)<br> - Learn more in [Maintain vendor certification](../../finance/public-sector/manage-vendor-certification.md).
 
-- [Enterprise-scale inventory performance improvements and archiving](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - For more information, see [Consolidate inventory transactions](../inventory/archive-inventory-transactions.md).
+- [Enterprise-scale inventory performance improvements and archiving](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enterprise-scale-inventory-performance-improvements-archiving)<br> - Learn more in [Consolidate inventory transactions](../inventory/archive-inventory-transactions.md).
 
-- [Rebate management](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - For more information, see [Rebate management module overview](../rebate-management/rebate-management-overview.md).
+- [Rebate management](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/rebate-management)<br> - Learn more in [Rebate management module overview](../rebate-management/rebate-management-overview.md).
 
 - [Sales data entity export setup policy](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-data-entity-export-setup-policy)
 
@@ -42,7 +42,7 @@ The following features are included in this release. Follow the links to the [re
 
 - [Sales order to purchase order line deletion policy](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-purchase-order-line-deletion-policy)
 
-- Simplified interface for clock in and out only (enhancement for [Enhanced production floor execution interface for manufacturing](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - For more information, see [Configure the production floor execution interface](../production-control/production-floor-execution-configure.md).
+- Simplified interface for clock in and out only (enhancement for [Enhanced production floor execution interface for manufacturing](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing))<br> - Learn more in [Configure the production floor execution interface](../production-control/production-floor-execution-configure.md).
 
 Most of these features must be enabled using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) before you can use them.
 
@@ -55,11 +55,11 @@ We have recently added or significantly updated the following help articles. The
 - [Material handling equipment interface (MHAX)](../warehousing/mhax.md)
 - [Planning Optimization fit analysis](../master-planning/planning-optimization/planning-optimization-fit-analysis.md)
 
-## Additional resources
+## Related information
 
 ### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.18 includes platform updates. To learn more, see [Platform updates for version 10.0.18 of finance and operations apps (May 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.18 includes platform updates. Learn more in [Platform updates for version 10.0.18 of finance and operations apps (May 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18.md).
 
 ### Bug fixes
 

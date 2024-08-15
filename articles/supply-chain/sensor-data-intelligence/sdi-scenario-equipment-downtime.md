@@ -30,7 +30,7 @@ If you want to use a demo system to test the *machine status* scenario, use a sy
 
 ### Set up a sensor simulator
 
-If you want to try this scenario without using a physical sensor, you can set up a simulator to generate the required signals. For more information, see [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md).
+If you want to try this scenario without using a physical sensor, you can set up a simulator to generate the required signals. Learn more in [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md).
 
 ### Verify that resource 3118 is used for product P0111
 

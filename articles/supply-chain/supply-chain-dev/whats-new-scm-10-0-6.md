@@ -37,7 +37,7 @@ You now have the ability to define primary and secondary responsible parties on 
 ## RFQ link on the Purchase order line
 You can add a reference link from the Purchase order lines back to the corresponding RFQ lines they originated from, allowing the user to easily be provided with the supporting request for quotation document.
 
-## Additional resources
+## Related information
 
 ### Bug fixes
 For information about the bug fixes included in each of the updates that are part of 10.0.6, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=369581&dbType=3&qc=ba058110be40fe16a39469298041b1a7baf82eb65bb9df4d864602d2c6bf93d7).

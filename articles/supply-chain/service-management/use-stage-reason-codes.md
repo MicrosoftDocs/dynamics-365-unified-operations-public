@@ -52,7 +52,7 @@ If you have specified that a reason code is required, you must enter a reason co
 
 2.  In the **Service management parameters** form, click the **General** link, and then select the **Reason code on exceeding time** check box.
 
-## See also
+## Related information
 
 [Start and stop time recording on a service order](start-and-stop-time-recording-on-a-service-order.md)
 

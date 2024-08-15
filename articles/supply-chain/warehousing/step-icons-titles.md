@@ -423,7 +423,7 @@ public class WHSMobileAppStepInfoBuilderWeighContainer extends WHSMobileAppStepI
 
 You then construct a `WHSMobileAppStepInfo` object, and set the icon and/or title directly.
 
-## Additional resources
+## Related information
 
 - [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
 - [Mobile device user settings](mobile-device-user-settings.md)

@@ -29,7 +29,7 @@ Reason codes are optional. You can decide whether to require a reason code when 
 
 3.  Close the form to save your changes.
 
-## See also
+## Related information
 
 [Set up service order stages](set-up-service-order-stages.md)
 

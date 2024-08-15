@@ -36,7 +36,7 @@ When you set up the invoice update for batch processing, the sales order of type
 
 1. Select **OK**. The credit note is posted.
 
-## See also
+## Related information
 
 - [Packing slip updates for returns](packing-slip-updates-returns.md)
 

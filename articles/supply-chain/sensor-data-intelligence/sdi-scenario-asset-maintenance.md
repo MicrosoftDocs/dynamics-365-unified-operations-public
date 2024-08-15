@@ -31,7 +31,7 @@ In this section, you will set up the *AK-101, Air knife* asset in demo data as a
 
 ### Set up a sensor simulator
 
-If you want to try this scenario without using a physical sensor, you can set up a simulator to generate the required signals. For more information, see [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md).
+If you want to try this scenario without using a physical sensor, you can set up a simulator to generate the required signals. Learn more in [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md).
 
 ### Create an asset counter to track production hours
 

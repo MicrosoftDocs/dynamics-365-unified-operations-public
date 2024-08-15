@@ -42,7 +42,7 @@ Three bins and two racks are used to store items that are nonconforming. In this
 
 1. Close the page.
 
-## Additional resources
+## Related information
 
 - [Quality management overview](quality-management-processes.md)
 - [Enable quality and nonconformance management](enable-quality-management.md)

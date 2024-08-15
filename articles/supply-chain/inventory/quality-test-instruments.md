@@ -33,7 +33,7 @@ You're performing various tests on electrical components. Some tests are for the
 
 1. Close the page.
 
-## Additional resources
+## Related information
 
 - [Quality management test](quality-tests.md)
 - [Quality management test groups](quality-test-groups.md)

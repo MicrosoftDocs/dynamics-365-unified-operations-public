@@ -260,7 +260,7 @@ Use the **Inventory Adjustment** page in the **Operational visibility** group to
 Use the **Soft reserve** page in the **Operational visibility** group to make soft reservations of inventory.
 
 > [!IMPORTANT]
-> The capability to make soft reservations through the user interface should be used only to test the feature. Every soft reservation request should be associated with a transaction order line change (create, modify, delete, and so on). Therefore, we recommend that you make only soft reservations that are linked to back-end orders. For more information, see [Inventory Visibility soft reservations](inventory-visibility-reservations.md).
+> The capability to make soft reservations through the user interface should be used only to test the feature. Every soft reservation request should be associated with a transaction order line change (create, modify, delete, and so on). Therefore, we recommend that you make only soft reservations that are linked to back-end orders. Learn more in [Inventory Visibility soft reservations](inventory-visibility-reservations.md).
 
 Follow these steps to set up and submit a soft reservation.
 

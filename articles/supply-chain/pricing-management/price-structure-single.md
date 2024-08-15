@@ -20,7 +20,7 @@ This article explains how to configure a company to use a single price structure
 
 In this scenario, companies and price structures have a one-to-one (1:1) relationship, and the single price structure is called the *price component code setup*. The pricing engine matches each sales order with the price component codes, based on the pricing sequence that's defined in the single structure.
 
-The price component code setup is the single-structure equivalent of the price trees that are used for multiple price structures, and it provides almost all the same settings. For more information, see [Set up a company to use multiple price structures](price-structure-multiple.md).
+The price component code setup is the single-structure equivalent of the price trees that are used for multiple price structures, and it provides almost all the same settings. Learn more in [Set up a company to use multiple price structures](price-structure-multiple.md).
 
 ## Configure a company to use a single price structure
 
