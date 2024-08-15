@@ -1,6 +1,6 @@
 ---
 title: Database synchronize performance 
-description: This article describes 
+description: This article describes the **Shadow Copy Sync** process that can be used to improve the database synchronize performance in upgrade from AX 2012 within self-service environments.
 author: ttreen
 ms.author: ttreen
 ms.topic: article
@@ -17,33 +17,33 @@ ms.service: dynamics-365-op
 
 [!include[banner](../includes/banner.md)]
 
-This article describes the **Shadow Copy Sync** process that can be used to improve the database synchronize performance in upgrade from AX 2012 within self-service environments.
+This article describes the **Shadow copy sync** process to improve the database synchronize performance in upgrade from AX 2012 within self-service environments.
 
 ## Background
 
 During the upgrade three different database synchronize processes are run:
 
 - AdditiveSync - Run as part of the PreReq steps. This adds new tables and new fields and most new indexes to existing tables (excludes unique indexes). 
-- DBSync – This step does the first full synchronization. New fields are added to existing tables, and, if needed, changes to existing fields are made. Unique indexes that were disabled during the PreSync step aren't created during this step.
+- DBSync – This step does the first full synchronization. New fields are added to existing tables, and changes to existing fields are made. Unique indexes that were disabled during the PreSync step aren't created during this step.
 - FinalDBSync – This step does the final database synchronization that synchronizes all remaining objects in the database and runs final sync data preparation steps.
 
 It's not unusual for the synchronization processes to take several hours or longer. The length of time generally depends on the size of the database, but more specifically is related to large tables where there are changes to the design. 
 
-One of the slowest changes in the sync process is when a numeric field type has its precision changed, this occurs during the DBSync step. If a table has multiple **Numeric** field types with changes, then each **Alter Column** statement can take many minutes or hours to complete, and if there a high number of these column types in each table, this will add to the sync running time. In Microsoft Dynamics AX 2012, most numeric field types had the precision set to 32,16, in D365 this is now 32,6 for most.
+One of the slowest changes in the sync process is when a numeric field type has its precision changed, this occurs during the DBSync step. If a table has multiple **Numeric** field types with changes, then each **Alter Column** statement can take many minutes or hours to complete, and if there a high number of these column types in each table, this adds to the sync running time. In Microsoft Dynamics AX 2012, most numeric field types had the precision set to 32,16, in Dynamics 365 Finance this is now 32,6 for most.
 
 ## Solution
 
-As a solution, the sync engine has a process called **Shadow Copy Sync**. This creates a new version of the table in the upgraded D365 format, with an owner schema named **Shadow**, and then inserts the data from the old table into this new one. This is much quicker on these numeric type fields than individual alter column statements. Once the records are inserted, indexes are applied to the shadow table, then at the end the old table in the dbo schema is dropped, and the shadow schema table reassigned back to the dbo schema. 
+As a solution, the sync engine has a **Shadow copy sync** process. This creates a new version of the table in the upgraded Dynamics 365 Finance format, with an owner schema named **Shadow**, and then inserts the data from the old table into this new one. After the records are inserted, indexes are applied to the shadow table, and the old table in the dbo schema is dropped, and the shadow schema table reassigned back to the dbo schema. 
 
-This **Shadow Copy Sync** is enabled for all upgrades, with the following thresholds:
+This **Shadow copy sync** is enabled for all upgrades, with the following thresholds:
  - Table must be greater that 20480MB (20GB)
- - Also, if the size threshold is met, then the table must have 1 or more numeric fields where the precision has changed.
+ - If the size threshold is met, the table must have 1 or more numeric fields where the precision has changed.
 
-If a table does not meet the threshold, then it will be synchronized the standard way.
+If a table doesn't meet the threshold, then it will be synchronized the standard way.
 
 ## Checking table sizes
 
-You can run the following SQL script to show all tables over 500MB. This needs to be run on the target D365 Azure SQL database for the environment. You will need to enable a JIT session from LCS to connect to the database.
+You can run the following SQL script to show all tables over 500MB. This needs to be run on the target Dynamics 365 Finance Azure SQL database for the environment. You need to enable a JIT session from LCS to connect to the database.
 
 ```SQL
 SELECT t.NAME AS TableName, (sum(a.used_pages) * 8) / 1024 as UsedSpaceMB
@@ -60,9 +60,9 @@ ORDER BY sum(a.used_pages) desc
 
 ## Tuning the shadow copy sync thresholds
 
-Depending on your dataset, you might want to tune the **Shadow Copy Sync** thresholds, to increase or decrease the tables that are included in this process. 
+Depending on your dataset, you might want to tune the **Shadow copy sync** thresholds, to increase or decrease the tables that are included in this process. 
 
-Typically, you will more likely decrease the threshold values, to include more tables in the shadow sync. There will be a tipping point where enabling too table tables to be synchronized with the shadow schema will be slower than if you do less. You'll need to experiment to find the ideal values for your specific database. 
+Typically, you will decrease the threshold values, to include more tables in the shadow sync. There will be a tipping point where enabling too many tables to be synchronized with the shadow schema will be slower than if you do less. You'll need to experiment to find the ideal values for your specific database. 
 
 > [!NOTE]
 > The following SQL script needs to be run prior to triggering the database upgrade for self-service from the data migration toolkit Step 10.
