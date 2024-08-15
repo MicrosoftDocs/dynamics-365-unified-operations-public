@@ -43,7 +43,7 @@ If you want to turn any of these features on or off, you must do that in [featur
 | Procurement and sourcing | Synchronize tracking dimensions on intercompany sales and purchase order lines | This feature lets you control whether the serial and batch number tracking dimensions are synchronized across intercompany sales and purchase order lines. It adds new settings to both the **Purchase order policies** and **Sales order policies** tabs of the **Intercompany** setup page for customers and vendors. It also updates the names of a few related, nearby settings for clarity.<br><br>If you are using warehouse management processes (WMS), then be aware that this feature will only synchronize batch and serial numbers when those dimensions are above location in the target destination reservation hierarchy. |
 | Product information management | Clean up product attribute values | This feature adds a periodic task called **Clean up product attribute values**, which cleans up product attribute value records that are no longer associated with any product via a product category. |
 | Inventory and warehouse management | (Russia) Prevent discrepancies when issuing GTDs for purchase orders that include WMS-enabled items | This feature is for Russian localization only. It prevents discrepancies that occur when issuing Russian customs declaration numbers (GTDs) for import purchase orders that include items enabled for warehouse management processes (WMS). The GTD-issuing process changes some inventory dimension values on the related inventory transactions for invoices included in the custom journal, which leads to discrepancies between the work records for the purchase order and the inventory transactions for the purchase. When this feature is enabled, the GTD-issuing process generates adjustment work that eliminates such discrepancies. |
-| Warehouse management | Enhanced parser for GS1 barcodes | This feature adds an enhanced parser for GS1 symbol data. The new parser implements the GS1 General Specification algorithm for parsing GS1 symbols and provides stronger data validation. For more information, see [GS1 bar code scanning](../warehousing/gs1-barcodes.md). |
+| Warehouse management | Enhanced parser for GS1 barcodes | This feature adds an enhanced parser for GS1 symbol data. The new parser implements the GS1 General Specification algorithm for parsing GS1 symbols and provides stronger data validation. Learn more in [GS1 bar code scanning](../warehousing/gs1-barcodes.md). |
 | Warehouse management | Warehouse management application - blank GTD | This feature is for Russian localization only. It allows workers using the Warehouse Management mobile app to leave Russian customs declaration numbers (GTDs) blank when needed. If the GTD tracking dimension is set up to allow blank values, the system will accept blank values for GTD for inventory operations provided on-hand inventory is available. |
 
 ## New and updated documentation resources
@@ -54,11 +54,11 @@ We have recently added or significantly updated the following help articles. The
 |---|---|
 | Cost management | Updated examples and diagrams were added to each of the following articles:<ul><li>[FIFO with physical value and marking](../cost-management/fifo-physical-value-marking.md)</li><li>[LIFO with physical value and marking](../cost-management/lifo-physical-value-marking.md)</li><li>[LIFO Date with physical value and marking](../cost-management/lifo-date-physical-value-marking.md)</li><li>[Running average cost price](../cost-management/running-average-cost-price.md)</li><li>[Weighted average with physical value and marking](../cost-management/weighted-average-physical-value-marking.md)</li></ul> |
 
-## Additional resources
+## Related information
 
 ### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.26 includes platform updates. To learn more, see [Platform updates for version 10.0.26 of finance and operations apps (May 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.26 includes platform updates. Learn more in [Platform updates for version 10.0.26 of finance and operations apps (May 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).
 
 ### Bug fixes
 

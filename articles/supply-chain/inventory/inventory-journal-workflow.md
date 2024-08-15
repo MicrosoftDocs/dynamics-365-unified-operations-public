@@ -102,7 +102,7 @@ To review the workflow history for a journal:
 
 1. On the navigation pane, expand **Inventory management \> Journal entries \> Items** and then select an inventory journal type.
 1. Open the relevant journal.
-1. Select the **Workflow** button on the Action Pane to open a drop-down dialog box. Select **Workflow history**. For more information, see [View workflow history](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
+1. Select the **Workflow** button on the Action Pane to open a drop-down dialog box. Select **Workflow history**. Learn more in [View workflow history](../../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

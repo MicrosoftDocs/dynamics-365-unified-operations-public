@@ -219,7 +219,7 @@ For information about how to set up document routing, see [License plate label l
 
 ## Run a scenario to print custom labels
 
-If you want to experiment with printing labels, you can set up a scenario for printing location labels. For more information, see [Custom label layouts printing](../warehousing/custom-label-layouts-and-printing.md). Follow the instructions there, and confirm that the scenario that's described in this article is supported.
+If you want to experiment with printing labels, you can set up a scenario for printing location labels. Learn more in [Custom label layouts printing](../warehousing/custom-label-layouts-and-printing.md). Follow the instructions there, and confirm that the scenario that's described in this article is supported.
 
 ## <a name="review-log"></a>Review the external service request log
 
@@ -236,7 +236,7 @@ Follow these steps to review the request log that's generated while labels are p
 1. On the Action Pane, select **Request details**.
 1. Review the log.
 
-## Additional resources
+## Related information
 
 - [Label Layouts](../warehousing/print-license-plate-labels-using-label-layouts.md)
 - [Document routing label layouts](../warehousing/document-routing-layout-for-license-plates.md)

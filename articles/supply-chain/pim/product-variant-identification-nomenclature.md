@@ -175,7 +175,7 @@ Depending on the nomenclature, the system might try to assign a non-unique produ
 
 During one step of the configuration process, the system suggests a configuration value according to the nomenclature. In this step, you can manually change the configuration value. When you save the configuration, the system verifies that the configuration value is unique. If the value that you entered isn't unique, you receive an error message. To save the configuration, you must enter a unique configuration value.
 
-## Additional resources
+## Related information
 
 [Create a product number nomenclature for predefined product variants](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)
 

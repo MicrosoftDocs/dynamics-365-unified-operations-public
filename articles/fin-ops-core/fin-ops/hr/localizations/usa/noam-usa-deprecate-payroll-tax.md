@@ -4,8 +4,8 @@
 title: Deprecation of US payroll tax updates
 description: This article describes the deprecation of tax updates for US payroll.
 author: jaredha
-ms.date: 07/08/2024
-ms.topic: article
+ms.date: 08/08/2024
+ms.topic: article 
 # optional metadata
 
 # ms.search.form: 
@@ -40,13 +40,16 @@ The following table provides a detailed overview of functionality that still wor
 |------|---------------|--------|
 | Payroll setup | Pay cycles and pay periods | Working. Pay cycles and pay periods can be set up independently. |
 | Payroll setup | Payroll calculation frequencies | Working. Pay cycle and pay cycle frequency can be set up. |
-| Codes and taxes | Earning codes and earning groups | Working. |
-| Codes and taxes | Taxes, tax regions, tax codes, and tax groups | Deprecated. |
+| Earning codes  |	Earning codes and earning groups |	Working. |
+| Tax codes | Taxes, tax regions, tax codes, and tax groups | *Limited. |
 | Payroll processing tasks – earning statement processing | Generate and release earning statements for workers | Working. Earning statements can be generated and released for a specific period. |
-| Payroll processing tasks – pay statements | All pay statements, issued pay statements, and submitted pay statements | Deprecated. |
-| Payroll processing tasks – pay statement processing | Generate, submit, and post payroll statements | Deprecated. |
-| Tax processing | Tax transaction history, tax register report | Deprecated. All previous records still exist, but new reports can't be created. |
-| Payroll positive pay | Positive pay configuration and positive payroll setup | Positive pay configuration and positive payroll setup don't work as expected. |
+| Payroll processing tasks – pay statements | All pay statements, issued pay statements, and submitted pay statements | *Limited. |
+| Payroll processing tasks – pay statement processing | Generate, submit, and post payroll statements | *Limited. |
+| Tax processing | Tax transaction history, tax register report | *Limited. All previous records still exist, but new reports can't be created. |
+| Payroll positive pay | Positive pay configuration and positive payroll setup | Positive pay configuration and positive payroll setup are working. However, because a pay statement has to be generated and it won't work as expected. |
+|Benefits	|Benefits including garnishments and tax levies| *Limited. |
+
+*Functionality is limited. For more details, see [Issue search in Lifecycle services](../../dev-itpro/lifecycle-services/issue-search-lcs.md). If you can't find the information you need, contact support.
 
 > [!NOTE]
 > Pay statement generation doesn't work as it worked in earlier versions.

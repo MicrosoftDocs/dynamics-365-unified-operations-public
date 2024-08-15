@@ -233,7 +233,7 @@ MRP creates a planned order that is attached to the first sales order. Then, as 
 
 To help guarantee that the correct values are entered for your business, you must think in terms of both functionality and MRP running time. Therefore, it can take a little trial and error to determine the optimal values.
 
-## See also
+## Related information
 
 For more discussion, see the original [More about (dynamic) negative days](/archive/blogs/axmfg/more-about-dynamic-negative-days) blog post.
 

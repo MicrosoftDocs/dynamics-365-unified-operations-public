@@ -36,7 +36,7 @@ Use the following steps to reassign an activity to another worker:
     
       - On the **All** tab, **Team** tab, **Undispatched** tab, or **Related** tab, in the **Worker** field, enter the name of the worker who is replacing the current worker for the activity.
 
-## See also
+## Related information
 
 [Service activities](service-activities.md)
 

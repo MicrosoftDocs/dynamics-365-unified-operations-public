@@ -55,7 +55,7 @@ If the forecast isn't generated for a large set of items, but, for example, for 
 > [!NOTE]
 > A potentially flat looking forecast can be due to the historical data that has to be of a longer historical timeframe (a minimum of three time periods in order to pick out patterns, such as three years with monthly forecast). To get a better result, you can try changing the granularity of the time range or increase the time range.
 
-## Additional resources
+## Related information
 
 - [Demand forecasting setup](demand-forecasting-setup.md)
 - [Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)

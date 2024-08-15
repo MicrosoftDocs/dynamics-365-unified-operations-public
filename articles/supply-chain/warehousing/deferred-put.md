@@ -18,7 +18,7 @@ This article describes the functionality that makes deferred processing of put o
 
 The deferred processing functionality lets warehouse workers continue to do other work while the put operation is processed in the background. Deferred processing is useful when many work lines must be processed and the worker can let that work be processed asynchronously. It's also useful when the server can have ad-hoc or unplanned increases in processing time, and the increased processing time might affect the user's productivity.
 
-Background processing is achieved by using the SysOperation framework. For more information, see [SysOperation Framework Overview](/dynamicsax-2012/developer/sysoperation-framework-overview).
+Background processing is achieved by using the SysOperation framework. Learn more in [SysOperation Framework Overview](/dynamicsax-2012/developer/sysoperation-framework-overview).
 
 ## Configuring the work processing policies
 
@@ -98,7 +98,7 @@ The **Outbound work monitoring** workspace has two tiles that help you monitor d
 
 You can delete deferred put processing tasks that have been completed by selecting them and deleting them on the page.
 
-## Additional resources
+## Related information
 
 - [Deferred processing of manual inventory movement operation](deferred-processing-manual-inventory-movement.md)
 

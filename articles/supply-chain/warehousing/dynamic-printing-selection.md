@@ -136,7 +136,7 @@ When a print job is run, the system uses the following sequence to identify whic
 1. If no printer is found, a fallback printer, if provided, is used. Fallback printers are configured for specific label printing scenarios, such as license plate label printing or container label printing. See Additional resources for more information.
 1. If no override or default printer is found, no label is printed.
 
-## Additional resources
+## Related information
 
 - [License plate label layouts and printing](print-license-plate-labels-using-label-layouts.md)
 - [Container label layouts and printing](print-container-labels.md)

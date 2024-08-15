@@ -41,7 +41,7 @@ Use this procedure to start and stop time recording for a service order for whic
 
 
 
-## See also
+## Related information
 
 [Start SLA time recording (form)](https://technet.microsoft.com/library/hh242297\(v=ax.60\))
 

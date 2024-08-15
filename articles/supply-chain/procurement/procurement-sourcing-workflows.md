@@ -61,7 +61,7 @@ You can assign an approval step to the following groups of participants.
 | Queue | Assign the approval step to a work item queue. |
 | User | Assign the approval step to specific users. |
 
-## Additional resources
+## Related information
 
 - [Defining business process workflows for purchase requisitions](https://www.microsoft.com/download/details.aspx?id=101821)
 - [Purchase requisition workflow](purchase-requisitions-workflow.md)

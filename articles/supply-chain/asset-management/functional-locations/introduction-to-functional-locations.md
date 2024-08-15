@@ -43,11 +43,11 @@ Functional locations provide traceability of assets in relation to requests, wor
 
 Functional locations are **not** flexible. Therefore, after you set up a functional location hierarchy, you can't move locations around in it. 
 
-After you create a functional location hierarchy, the next step is to install assets on it. For more information, see [Install assets on functional locations](../functional-locations/install-objects-on-functional-locations.md).
+After you create a functional location hierarchy, the next step is to install assets on it. Learn more in [Install assets on functional locations](../functional-locations/install-objects-on-functional-locations.md).
 
 ## All functional locations
 
-Select **Asset management** \> **Functional locations** \> **All functional locations** to open the **All functional locations** list page. This page shows all functional locations and some of the information that is related to each. To view only active functional locations, select **Active functional locations**. To view only the functional locations that you're related to as a worker, select **My active functional locations**. (This relation is set up on the **Workers** page. For more information, see [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md).)
+Select **Asset management** \> **Functional locations** \> **All functional locations** to open the **All functional locations** list page. This page shows all functional locations and some of the information that is related to each. To view only active functional locations, select **Active functional locations**. To view only the functional locations that you're related to as a worker, select **My active functional locations**. (This relation is set up on the **Workers** page. Learn more in [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md).)
 
 On the **All functional locations** list page, select a link in the **Functional location** column to view the details of the selected record. To edit the functional location, select the **Edit** button. The details view shows detailed information that is related to the location. It also includes a **Related information** pane on the right. This pane shows the functional location hierarchy. You can expand and collapse the **Related information** pane.
 

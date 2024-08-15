@@ -237,7 +237,7 @@ Therefore, when **Activation** is selected for the row with a **Route/job type**
 > [!NOTE]
 > When you upgrade versions, you might encounter the following error: *CRL Error occurred while invoking the scheduling engine*. If you receive this error, go to the **Route groups** page and for all the routes where you have activated the **Route/job type** *Overlap*, clear the **Job management**, **Working time**, and **Capacity** check boxes.
 
-## Additional resources
+## Related information
 
 - [Bills of materials and formulas](bill-of-material-bom.md)
 - [Cost categories used in production routing](../cost-management/cost-categories-used-production-routings.md)

@@ -73,7 +73,7 @@ When you use the feature, follow these recommendations:
 - Make sure that your company has enough control over data permissions to ensure that business data can't be manipulated to influence AI data processing in an undesirable way.
 - Always review the generated summaries before you make decisions based on the information that's provided.
 
-## See also
+## Related information
 
 - [AI summaries with Copilot](get-started/copilot-summaries-overview.md)
 - [Transparency note for Copilot data security and privacy in Microsoft Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)

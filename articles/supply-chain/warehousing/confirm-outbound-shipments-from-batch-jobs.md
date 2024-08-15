@@ -38,7 +38,7 @@ To set up a scheduled batch job to run the outbound shipment confirmation for lo
 1. Select **OK** to return to the **Confirm shipment** dialog box.
 1. Select **OK** on the **Confirm shipment** dialog box to add the batch job to the batch queue.
 
-For more information, see [Batch processing overview](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
+Learn more in [Batch processing overview](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

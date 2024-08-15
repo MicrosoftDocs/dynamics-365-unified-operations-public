@@ -356,6 +356,6 @@ The following procedure lets you verify the shipments that have been created. Us
 1. On the Action Pane, on the **Transportation** tab, select **View containers**.
 1. Confirm that the items from the sales orders were containerized into two different containers.
 
-## Additional resources
+## Related information
 
 - [Containerization](wave-containerization.md)

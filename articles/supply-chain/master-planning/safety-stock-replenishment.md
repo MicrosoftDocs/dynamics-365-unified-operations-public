@@ -146,7 +146,7 @@ During the coverage phase of master planning, safety stock replenishment is no l
 
 If the plan or the item is not set up for delayed calculation, then the safety stock constraint will have the same priority as any other demand types. This means there is a reserve of on-hand and other available inventory before other demand types.
 
-## Additional resources
+## Related information
 
 - [Use the safety stock journal to update minimum coverage for items](safety-stock-journal.md)
 

@@ -26,7 +26,7 @@ If an item is sent back from quarantine to the Shipping and Receiving department
 
 When you update a packing slip for a returned item that is from a sales agreement, the sales agreement commitment for that item is automatically updated to reflect the change in the quantity or the amount. 
 
-## See also
+## Related information
 
 - [Perform invoice updates for returns](perform-invoice-updates-for-returns.md)
 

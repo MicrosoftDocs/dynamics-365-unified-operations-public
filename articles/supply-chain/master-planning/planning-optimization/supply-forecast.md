@@ -40,7 +40,7 @@ You can specify whether each master plan should consider forecasts when it runs.
             - If actual order transactions exceed the forecasted requirements, the remaining transactions aren't forwarded to the next forecast period.
 
         > [!NOTE]
-        > The **Method used to reduce forecast requirements** setting also applies to demand forecasts if you've enabled them for the master plan, and it affects them in a similar way. For more information, see [Master planning with demand forecasts](demand-forecast.md).
+        > The **Method used to reduce forecast requirements** setting also applies to demand forecasts if you've enabled them for the master plan, and it affects them in a similar way. Learn more in [Master planning with demand forecasts](demand-forecast.md).
 
 ## Set reduction options for coverage groups
 
@@ -55,7 +55,7 @@ To set options that control how a coverage group will reduce its forecast requir
 
     For example, the default order settings for an item indicate that it should be produced. There is a supply forecast line for a quantity of 50, and there is an existing purchase order for a quantity of 20. If the **Reduce forecast by** field is set to *Orders*, a planned production order will be created for a quantity of 50. If it's set to *All transactions*, the planned production order will be reduced to a quantity of 30.
 
-    This setting also applies to demand forecasting reduction. For more information, see [Master planning with demand forecasts](demand-forecast.md).
+    This setting also applies to demand forecasting reduction. Learn more in [Master planning with demand forecasts](demand-forecast.md).
 
 ## Enter a supply forecast for a product
 

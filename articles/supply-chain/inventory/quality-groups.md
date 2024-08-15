@@ -87,7 +87,7 @@ To manually add a quality group from the **Released products** page, follow thes
 1. Repeat the previous step for each additional quality group that you want to assign to the product.
 1. Close the pages.
 
-## Additional resources
+## Related information
 
 - [Quality management test instruments](quality-test-instruments.md)
 - [Quality management tests](quality-tests.md)

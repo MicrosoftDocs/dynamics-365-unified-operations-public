@@ -154,7 +154,7 @@ Follow these steps to set up a carrier service account.
 
 Follow these steps to set up a container packing policy.
 
-1. If you haven't already set up a ZPL printer definition, use the Document Routing Agent application to set it up. For more information, see [Document printing overview](../../fin-ops-core/dev-itpro/analytics/print-documents.md) and related articles.
+1. If you haven't already set up a ZPL printer definition, use the Document Routing Agent application to set it up. Learn more in [Document printing overview](../../fin-ops-core/dev-itpro/analytics/print-documents.md) and related articles.
 1. Go to **Warehouse Management \> Setup \> Containers \> Container packing policies**.
 1. On the Action Pane, select **New** to add a container packing policy.
 1. On the header of the new policy, set the following values:

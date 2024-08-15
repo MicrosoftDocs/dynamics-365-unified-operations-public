@@ -112,6 +112,6 @@ To define rules for conversions between units of measure, follow these steps.
 1. Close the page.
 
 > [!TIP]
-> You can also set up unit conversions per product variant. For more information, see [Unit of measure conversion per product variant](../uom-conversion-per-product-variant.md).
+> You can also set up unit conversions per product variant. Learn more in [Unit of measure conversion per product variant](../uom-conversion-per-product-variant.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

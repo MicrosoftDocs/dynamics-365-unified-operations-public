@@ -36,7 +36,7 @@ Outbound shipment orders must be able to create a shipping address. Therefore, y
 - `ReceiverName`
 - `ReceiverCountryRegionId`
 
-For more information, see [Master and reference data](wms-only-mode-exchange-data.md#master-data).
+Learn more in [Master and reference data](wms-only-mode-exchange-data.md#master-data).
 
 ## Why does Supply Chain Management show all the modules instead of just those that are related to warehouse management?
 
@@ -52,11 +52,11 @@ Warehouse management only mode is part of a larger deployment of Microsoft Dynam
 
 ## Why do I receive the following error when I post a counting journal: "No fiscal calendar has been defined for the ledger. In general ledger setup, select a fiscal calendar for the ledger"?
 
-Usually, Supply Chain Management requires that you configure several costing and general ledger settings, including [fiscal calendars](../../finance/budgeting/fiscal-calendars-fiscal-years-periods.md). However, you can remove this requirement by setting up item model groups that don't use these features and associating those item model groups with the relevant released products. For more information, see [Master and reference data](wms-only-mode-exchange-data.md#master-data).
+Usually, Supply Chain Management requires that you configure several costing and general ledger settings, including [fiscal calendars](../../finance/budgeting/fiscal-calendars-fiscal-years-periods.md). However, you can remove this requirement by setting up item model groups that don't use these features and associating those item model groups with the relevant released products. Learn more in [Master and reference data](wms-only-mode-exchange-data.md#master-data).
 
 ## Why do I receive the following error when I process warehouse operations: "The accounting currency hasn't been defined for the ledger. You must define the currency in the Ledger form"?
 
-Usually, Supply Chain Management requires that you configure several costing and general ledger settings, including a [ledger currency](../../finance/general-ledger/configure-ledger.md). However, you can remove this requirement by setting up item model groups that don't use these features and associating those item model groups with the relevant released products. For more information, see [Master and reference data](wms-only-mode-exchange-data.md#master-data).
+Usually, Supply Chain Management requires that you configure several costing and general ledger settings, including a [ledger currency](../../finance/general-ledger/configure-ledger.md). However, you can remove this requirement by setting up item model groups that don't use these features and associating those item model groups with the relevant released products. Learn more in [Master and reference data](wms-only-mode-exchange-data.md#master-data).
 
 ## Why do I receive the following error when I process different order types: "The accounting currency hasn't been defined for the ledger. You must define the currency in the Ledger form"?
 
@@ -88,7 +88,7 @@ Yes. Both inbound and outbound shipment order messages support document attachme
 
 ## Why can't I see and search for page names that are related to Warehouse management only mode?
 
-Even if the *Warehouse management only mode* feature is enabled, you must create a record on the **Source systems** page before the system can look up the related pages. In addition, the current user's default company must have a source system set up to search for the page names. For more information, see [Enable and configure Warehouse management only mode (preview)](wms-only-mode-setup.md).
+Even if the *Warehouse management only mode* feature is enabled, you must create a record on the **Source systems** page before the system can look up the related pages. In addition, the current user's default company must have a source system set up to search for the page names. Learn more in [Enable and configure Warehouse management only mode (preview)](wms-only-mode-setup.md).
 
 ## Why doesn't my registered inventory transaction have a load ID?
 

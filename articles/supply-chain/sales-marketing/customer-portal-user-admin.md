@@ -45,7 +45,7 @@ Before you invite a customer to join the Customer portal, make sure that the cus
 
 After a contact is created, you should be able to see it in Supply Chain Management.
 
-For more information, see [Configure a contact for use on a portal](/powerapps/maker/portals/configure/configure-contacts) in the Power Apps portals documentation.
+Learn more in [Configure a contact for use on a portal](/powerapps/maker/portals/configure/configure-contacts) in the Power Apps portals documentation.
 
 ## Out-of-box web roles and table permissions
 
