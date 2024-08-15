@@ -1953,6 +1953,8 @@ items:
             href: migration-upgrade/pre-post-upgrade-scripts.md
         - name: Environment operations
           items:
+          - name: Database synchronize performance 
+            href: migration-upgrade/database-sync-perf.md
           - name: Monitoring replication
             href: migration-upgrade/monitor-replication.md
           - name: Migrate document attachments
