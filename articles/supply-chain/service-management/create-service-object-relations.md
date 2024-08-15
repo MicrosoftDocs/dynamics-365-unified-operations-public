@@ -46,7 +46,7 @@ Use the following steps to create a service object relation for a service order:
 5.  To assign a template BOM to the service agreement, click **Functions**, and then select **Attach template BOM**. In the **Select template BOM** form, in the **Template BOM** field, select a template. 
 
 
-## See also
+## Related information
 
 [Service objects overview](service-objects.md)
 

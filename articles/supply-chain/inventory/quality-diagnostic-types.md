@@ -36,7 +36,7 @@ When you configure the diagnostic types, you can create multiple records, each o
 
 1. Close the page.
 
-## Additional resources
+## Related information
 
 - [Quality management overview](quality-management-processes.md)
 - [Enable quality and nonconformance management](enable-quality-management.md)

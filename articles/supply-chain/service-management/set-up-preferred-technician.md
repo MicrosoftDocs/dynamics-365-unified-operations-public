@@ -44,7 +44,7 @@ You can select any worker as a preferred technician for a service agreement or s
 
 3.  On the **Related** tab, use the **Worker** list to assign a member of the appropriate dispatch team as the preferred technician for the service call.
 
-## See also
+## Related information
 
 [Develop and establish service agreements overview](service-agreements.md)
 

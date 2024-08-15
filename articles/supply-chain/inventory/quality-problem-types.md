@@ -50,7 +50,7 @@ Here are some examples of scenarios for problem types that can be used with the 
 1. Repeat the previous step for each additional nonconformance type that you want to authorize for the problem type.
 1. Close the pages.
 
-## Additional resources
+## Related information
 
 - [Quality management overview](quality-management-processes.md)
 - [Enable quality and nonconformance management](enable-quality-management.md)

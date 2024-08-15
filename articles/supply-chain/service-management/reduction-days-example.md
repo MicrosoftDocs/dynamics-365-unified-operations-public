@@ -97,7 +97,7 @@ You create a new transaction of the **Reduction days** type, as described in the
 
 When the transactions for March 2011 are invoiced, the sales price of EUR 200 is reduced by EUR 12.90. The chargeable amount for the subscription transaction is therefore EUR 187.10, and two transactions are invoiced at a total of EUR 187.10.
 
-## See also
+## Related information
 
 [Reduce the days on subscription fees](reduce-the-days-on-subscription-fees.md)
 

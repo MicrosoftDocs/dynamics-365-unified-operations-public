@@ -91,7 +91,7 @@ In total, 10 service orders are created. Because the combined setting that you s
 
 Additional grouping of service order lines into service orders occurs according to any time window that you specify on the service agreement lines.
 
-## See also
+## Related information
 
 [Create service orders automatically](create-service-orders-automatically.md)
 

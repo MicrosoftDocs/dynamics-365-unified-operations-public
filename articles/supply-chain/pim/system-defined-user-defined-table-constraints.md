@@ -44,7 +44,7 @@ When you create a system-defined table constraint, you select a table, optionall
 
 Before a table constraint can take effect on a product configuration model, the table constraint must be included in a constraint on one of the model's components. The procedure is to create a new constraint, select the table constraint type, and then select the table constraint definition to use. Finally, all fields in the table constraint must be mapped to attributes in the product configuration model.
 
-## Additional resources
+## Related information
 
 [Product configuration models overview](product-configuration-models.md)
 

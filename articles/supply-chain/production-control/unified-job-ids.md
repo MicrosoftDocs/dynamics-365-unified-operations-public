@@ -26,7 +26,7 @@ After enabling this feature, the existing **Job identification** number-sequence
 To set up the unified number sequence for job IDs:
 
 1. Turn on the feature as described in the previous section.
-1. Either identify the number sequence you want to use for your unified job IDs, or create a new one. For more information, see [Number sequences overview](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md).
+1. Either identify the number sequence you want to use for your unified job IDs, or create a new one. Learn more in [Number sequences overview](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md).
 1. Go to the **Production control parameters**, **Manufacturing execution parameters**, or **Time and attendance parameters** page. It doesn't matter which one you choose because when you make this setting on any of those pages, all of the other pages will update automatically.
 1. Open the **Number sequences** tab on your selected parameters page.
 1. Assign the **Number sequence code** that you identified previously to the **Unified job IDs** row of the grid.

@@ -34,7 +34,7 @@ ms.search.form: SMASubscriptionTable
 
 The base price or index of the subscription is updated with the specified value.
 
-## See also
+## Related information
 
 [Index subscription (class form)](https://technet.microsoft.com/library/aa558579\(v=ax.60\))
 

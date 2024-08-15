@@ -15,7 +15,7 @@ ms.search.form:  WMSWorkloadCapacity
 
 You can schedule workload capacity for warehouses, and you can also project the current and future workloads for the workers in individual warehouses. You can project the workload for the whole warehouse, or you can project the workload separately for incoming and outgoing workloads.
 
-To project workload output for selected warehouses, master scheduling data must be available for those warehouses. For more information, see [Master plans overview](../master-planning/master-plans.md).
+To project workload output for selected warehouses, master scheduling data must be available for those warehouses. Learn more in [Master plans overview](../master-planning/master-plans.md).
 
 ## Schedule and view workloads for a warehouse
 

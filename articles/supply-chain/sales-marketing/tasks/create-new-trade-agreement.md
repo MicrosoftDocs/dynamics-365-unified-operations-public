@@ -49,7 +49,7 @@ This procedure shows you how to create a trade agreement where you register a ne
 4. Select **View trade agreements**. Review the details of the price trade agreement you have just created.
 5. Close the page.
 
-## Additional resources
+## Related information
 
 ### Whitepaper
 

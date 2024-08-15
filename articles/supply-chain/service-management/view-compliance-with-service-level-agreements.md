@@ -27,7 +27,7 @@ ms.search.form: SMAServiceOrderTable
 
 
 
-## See also
+## Related information
 
 [Service level agreements overview](service-level-agreements.md)
 

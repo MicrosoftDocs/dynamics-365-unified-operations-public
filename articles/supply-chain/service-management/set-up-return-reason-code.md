@@ -38,7 +38,7 @@ This procedure helps you set up return reason codes that you can use to indicate
 
 1. Use the **Return reason code group** drop-down list to add the code to a return reason code group.
 
-## See also
+## Related information
 
 - [Return reason code groups (form)](https://technet.microsoft.com/library/hh209604\(v=ax.60\))
 - [Return reason codes (form)](https://technet.microsoft.com/library/hh227372\(v=ax.60\))

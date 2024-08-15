@@ -89,7 +89,7 @@ A new template BOM is created by using lines that correspond to the lines of the
 
 A new template BOM is created by using lines that correspond to the lines of the BOM listed in **BOM**.
 
-## See also
+## Related information
 
 [Template BOMs](template-boms.md)
 

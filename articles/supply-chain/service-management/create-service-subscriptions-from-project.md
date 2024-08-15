@@ -33,7 +33,7 @@ You can now create subscription transactions for the subscription.
 
 
 
-## See also
+## Related information
 
 [Subscription sales prices](subscription-sales-prices.md)
 

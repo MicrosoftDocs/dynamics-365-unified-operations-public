@@ -52,7 +52,7 @@ The available capacity by day or week is defined by the calendar that is assigne
 
 The **Kanban job scheduling** list page contains a FactBox that shows the available and booked period capacity for the selected work cell. Depending on the selected schedule periods in the production flow model, the periods show days or weeks.
 
-## Additional resources
+## Related information
 
 
 

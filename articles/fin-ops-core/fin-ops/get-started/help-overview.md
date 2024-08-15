@@ -4,7 +4,7 @@ description: Learn about the Help system for finance and operations apps, includ
 author: edupont04
 ms.author: edupont
 ms.topic: overview
-ms.date: 05/13/2024
+ms.date: 07/17/2024
 ms.reviewer: edupont
 ms.collection: get-started
 audience: Application User
@@ -18,7 +18,6 @@ ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 # Help system
 
 [!include [banner](../includes/banner.md)]
-
 
 [!INCLUDE [PEAP](../../../includes/peap-3.md)]
 
@@ -35,12 +34,26 @@ In all these apps, you can access product-specific Help from the **Help** pane.
 
 ## Help on Microsoft Learn
 
-The ([Microsoft Dynamics 365 documentation](/dynamics365/)) on Microsoft Learn is the default source for product documentation for the previously listed apps. This site offers the following features:
+Microsoft publishes content for the Dynamics 365 apps on the Microsoft Learn site. Get an overview at [Microsoft Dynamics 365 documentation](/dynamics365/). This site offers the following features:
 
 - **Access to the most up-to-date content** – The site gives Microsoft a faster and more flexible way to create, deliver, and update product documentation. Therefore, you have easy access to the latest technical information.
 - **Content that is written by experts** – Content on the site is open to contributions by community members both inside and outside Microsoft.
 
 You can find content on Microsoft Learn by using any search engine. For the best results, we recommend that you use a site search, such as **site:learn.microsoft.com dynamics 365 "search term"**.
+
+### Find other content
+
+If you land on an article that doesn't answer your question, you can find other content in two ways on Microsoft Learn:
+
+- Use the **Filter by title** field in the table of contents on the left side of the website
+
+  This way, you can filter by words used in the titles of the various articles. For example, type *invoice*, and then choose one of the offered links, such as [Apply a payment schedule to the invoice journal](../../../finance/accounts-payable/payment-invoice-journal.md) or [Vendor invoices overview](../../../finance/accounts-payable/vendor-invoices-overview.md).
+
+  Underneath each link, you can see where that article is in the table of contents. That way, you can easily see if the article is in the *Accounts payable* section or in the section for *accounts receivable*, for example.
+
+- Use the **Search** field in the top-right corner of the website
+
+  This way, you can search for any term, and you can choose to search for that term in the documentation for a different Dynamics 365 app, for example. The site then searches all the content for that term or expression. Search for *invoice* again, and scroll through the list of hundreds of articles that uses that word somewhere in the text.
 
 ## Generative help and guidance with Copilot
 
@@ -48,7 +61,8 @@ You can find content on Microsoft Learn by using any search engine. For the best
 
 After generative help and guidance with Copilot is enabled for your system, users can open the Copilot sidecar by using the **Copilot** button :::image type="icon" source="../copilot/media/copilot-icon.png" border="false"::: at the top of the page.
 
-[<img src="../copilot/media/copilot-help-welcome.png" alt="Copilot help pane in the user experience." title="Copilot help pane in the user experience" width="720" />](../copilot/media/copilot-help-welcome.png#lightbox)
+:::image type="content" source="../copilot/media/copilot-help-welcome.png" alt-text="Copilot help pane in the user experience." lightbox="../copilot/media/copilot-help-welcome.png":::
+<!-- [<img src="../copilot/media/copilot-help-welcome.png" alt="" title="Copilot help pane in the user experience" width="720" />](../copilot/media/copilot-help-welcome.png#lightbox) -->
 
 For more information, see [Generative help and guidance with Copilot](../copilot/copliot-generative-help.md).
 
@@ -86,8 +100,7 @@ On the *learn.microsoft.com* website, each documentation article encourages you 
 
 ## Contribute to the documentation
 
-You can contribute and make edits to the documentation. To get started, select the **Edit** button (pencil symbol) on an article. 
-For more information, see [Contribute to Dynamics 365 documentation](/dynamics365/get-started/contribute), which is published by the team that built the Microsoft Learn site.
+You can contribute and make edits to the documentation. To get started, select the **Edit** button (pencil symbol) on an article. Learn more in the article [Contribute to Dynamics 365 documentation](/dynamics365/get-started/contribute).
 
 > [!NOTE]
 > We only accept contributions to our English content at this time.

@@ -32,7 +32,7 @@ If a return shipment contains less than the full quantity of a return order line
 
 1. On the **Journal lines, locations** page, select the line for the quantity of items that has arrived, and then select **Post**. You can post the line for the additional quantity after the items have arrived.
 
-## See also
+## Related information
 
 - [Receive unannounced sales returns](../warehousing/sales-returns-unannounced.md)
 - [Receive returned items](receiving-returned-items.md)

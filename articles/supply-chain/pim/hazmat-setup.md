@@ -104,7 +104,7 @@ To manage your hazardous material definitions, follow these steps.
 
     The **Regulation code** field is read-only and shows the regulation that you selected in step 2.
 
-5. Use the remaining fields on this page to create and set up each hazardous material that applies to your selected regulation. The fields that are available are a subset of the hazardous material fields that are available for individual released products. For more information, see [Hazardous materials in products, orders, shipments, and loads](hazmat-items.md).
+5. Use the remaining fields on this page to create and set up each hazardous material that applies to your selected regulation. The fields that are available are a subset of the hazardous material fields that are available for individual released products. Learn more in [Hazardous materials in products, orders, shipments, and loads](hazmat-items.md).
 
 ## <a name="classification-groups"></a>Hazardous material classification groups
 

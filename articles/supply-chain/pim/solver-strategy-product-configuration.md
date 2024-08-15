@@ -50,7 +50,7 @@ The following table provides recommendations about the solver strategy to use in
 | Top-down             | The **Minimal domains first** and **Top-down** strategies are closely related. Customer implementation studies have shown that the **Top-down** strategy, outperforms the **Minimal domains first** strategy. However, the **Minimal domains first** strategy is kept in the product for backward compatibility. Both these solver strategies have been shown to be more efficient at solving models that contain several arithmetic expressions where no table constraints are used. However, in some cases, the **Default** strategy outperforms these two strategies. Therefore, remember to try each strategy. |
 | Z3                   | We recommend that you use the **Z3** strategy as the default solver strategy. If you're concerned about performance and scalability, you can evaluate the other strategies. |
 
-## Additional resources
+## Related information
 
 [Product configuration overview](build-product-configuration-model.md)
 

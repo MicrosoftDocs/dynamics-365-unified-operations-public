@@ -37,7 +37,7 @@ In Application Insights, telemetry data from Supply Chain Management tenants and
 
 ## View telemetry data in Application Insights
 
-As an alternative to Power BI, you can view your telemetry data directly in Application Insights. Telemetry is stored in Azure Monitor Logs in the `customEvents` table. You can view the collected data by writing log queries in the Kusto Query Language (KQL). For more information, see [Azure Monitor Logs overview](/azure/azure-monitor/logs/data-platform-logs) and [Log queries in Azure Monitor](/azure/azure-monitor/logs/log-query-overview).
+As an alternative to Power BI, you can view your telemetry data directly in Application Insights. Telemetry is stored in Azure Monitor Logs in the `customEvents` table. You can view the collected data by writing log queries in the Kusto Query Language (KQL). Learn more in [Azure Monitor Logs overview](/azure/azure-monitor/logs/data-platform-logs) and [Log queries in Azure Monitor](/azure/azure-monitor/logs/log-query-overview).
 
 As a simple example, follow these steps.
 

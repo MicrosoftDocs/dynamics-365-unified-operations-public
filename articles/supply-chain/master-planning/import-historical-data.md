@@ -29,6 +29,6 @@ To use the data entity, you must have a Microsoft Excel file or comma-separated 
 
 For more information about how to import data, including how to clean up data after an import, see [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) and its related articles.
 
-See also [Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md).
+Learn more in [Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -71,11 +71,11 @@ If you want to turn any of these features on or off, you must do so in [feature 
 | Sales and marketing | Pricing management performance enhancement | Improves performance of pricing calculations by using pricing rule hash strings to filter potential pricing rules and speed up matching logic. The first time you enable the feature, it generates a hash string for all existing rules. Thereafter, it automatically generates a hash string for each new pricing rule. The feature adds a new batch job, *Generate pricing rule hash value*, which you can manually schedule either to generate hash strings for rules that are missing them (delta), or to regenerate hash strings for all existing pricing rules. |
 | Warehouse management | Prevent production orders to be released when full material is not available | Fixes an issue where the production control parameter **Requirement for material reservation** is set to *Require full reservation*. Previously, when a production order was released while this option was selected, its status was always changed from *Scheduled* to *Released*, even if all material couldn't be fully reserved. When this feature is enabled, when a production order is released with this option selected, the production order will only change status once all material is fully available for reservation. |
 
-## Additional resources
+## Related information
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.38 includes platform updates. To learn more, see [Platform updates for version 10.0.38 of Finance and Operations apps (February 2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-38.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.38 includes platform updates. Learn more in [Platform updates for version 10.0.38 of Finance and Operations apps (February 2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-38.md).
 
 ### Bug fixes
 

@@ -116,7 +116,7 @@ You can save the current values as default values. There are two options:
 - Set as my default
 - Set as default for everyone
 
-## Additional resources
+## Related information
 
 [Operations scheduling](operations-scheduling.md)
 

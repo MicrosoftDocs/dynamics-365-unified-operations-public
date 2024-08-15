@@ -86,7 +86,7 @@ Information about a customer’s balance and remaining credit amount is calculat
 and stored when you create an aging snapshot, and is displayed in the
 **Collections** page. The amounts that are displayed in the **Collections** page
 might not include all transaction activity until a new aging snapshot is
-created. For more information, see [Collections and credit in Accounts
+created. Learn more in [Collections and credit in Accounts
 receivable](/dynamicsax-2012/appuser-itpro/collections-and-credit-in-accounts-receivable).
 
 Depending on the documents that are selected, information about a customer’s

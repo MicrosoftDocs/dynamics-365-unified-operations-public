@@ -26,8 +26,8 @@ To view the messages that are processed by the message processor, go to **System
 
 ## Message processor batch job
 
-You should schedule a periodic batch job to process the messages, by going to **System administration \> Message processor \> Message processor**. In the dialog box that appears, you must select a value in the **Message queue** field (for example, *Warehouse*), and you must specify a processing interval. For more information, see [Schedule message processing by using the message processor batch job](../supply-chain-dev/message-processor.md#processor-batch-job).
+You should schedule a periodic batch job to process the messages, by going to **System administration \> Message processor \> Message processor**. In the dialog box that appears, you must select a value in the **Message queue** field (for example, *Warehouse*), and you must specify a processing interval. Learn more in [Schedule message processing by using the message processor batch job](../supply-chain-dev/message-processor.md#processor-batch-job).
 
 ## Set up business events to deliver alerts for failed processing results
 
-On the **Message processor messages** page, you can filter on the  *Failed* value of the **Message state** field to inquire about failed messages. In addition, you can set up [business events](../../fin-ops-core/dev-itpro/business-events/home-page.md) to alert you about failed processing results. For more information, see [Set up business events to deliver alerts for failed processing results](../supply-chain-dev/message-processor.md#business-events).
+On the **Message processor messages** page, you can filter on the  *Failed* value of the **Message state** field to inquire about failed messages. In addition, you can set up [business events](../../fin-ops-core/dev-itpro/business-events/home-page.md) to alert you about failed processing results. Learn more in [Set up business events to deliver alerts for failed processing results](../supply-chain-dev/message-processor.md#business-events).

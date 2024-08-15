@@ -33,7 +33,7 @@ ms.search.form: SMAServiceOrderTable
 
 
 
-## See also
+## Related information
 
 [Service orders](service-orders.md)
 

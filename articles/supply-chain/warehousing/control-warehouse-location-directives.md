@@ -59,7 +59,7 @@ Location directives determine *where* items should be picked and *where* they sh
 > [!NOTE]
 > There are special cases where the pick location or put location is pre-selected. For example, during *purchase registration*, the first pick is always from the location where the registration occurs. Another example is *inventory movement by template*, where the warehouse worker selects the pick location, and only the put locations are found through location directives.
 
-## Additional resources
+## Related information
 
 - Video: [Warehouse management configuration deep dive](https://www.youtube.com/watch?v=kVwIaFxHxy8)
 - Help article: [Work with location directives](create-location-directive.md)

@@ -37,7 +37,7 @@ When you create service orders manually or automatically from the service agreem
 1. Select **Select** to make selections to add or remove criteria to use to create service orders.
 1. Select **OK**.
 
-## Additional resources
+## Related information
 
 - [Service orders](service-orders.md)
 - [Automatically create service orders](auto-create-service-orders.md)

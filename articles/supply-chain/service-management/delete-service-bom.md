@@ -26,7 +26,7 @@ ms.search.form: SMAServiceObjectRelation
 
 
 
-## See also
+## Related information
 
 [Template BOMs](template-boms.md)
 
