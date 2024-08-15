@@ -40,6 +40,6 @@ This article describes how depreciation batch proposals work and explains how to
 4. Select **Post**.
 
 > [!NOTE]
-> In Microsoft Dynamics Finance 365 version 10.0.42, fixed asset journals are excluded from the automatic splitting of large financial journals feature. Additionally, an option has been added to the fixed asset journal header to enable transactions to be posted via batch jobs. This feature has been backported to version 10.0.39 and later versions through the appropriate update installation.
+> In Microsoft Dynamics Finance 365 version 10.0.42, the automatic splitting of large financial journals feature doesn't include fixed asset journals. Additionally, an option has been added to the fixed asset journal header to enable transactions to be posted via batch jobs. This feature has been backported to version 10.0.39 and later versions through the appropriate update installation.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
