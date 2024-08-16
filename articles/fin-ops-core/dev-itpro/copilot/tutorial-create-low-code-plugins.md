@@ -18,18 +18,18 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-Microsoft Copilot Studio provides the orchestration of the AI capabilities for Copilot in finance and operations apps. Therefore, it enables a low-code maker experience for customizing the Copilot capabilities. This tutorial goes through an example that shows how to add new capabilities to Copilot by using Copilot Studio to add a plugin to the **Copilot in Finance and Operation** chatbot.
+Microsoft Copilot Studio provides the orchestration of the AI capabilities for Copilot for finance and operations apps. Therefore, it enables a low-code maker experience for customizing the Copilot capabilities. This tutorial goes through an example that shows how to add new capabilities to Copilot by using Copilot Studio to add a plugin to the **Copilot for Finance and Operation** chatbot.
 
 ## Scenario
 
-In this scenario, you'll add the Copilot capability to translate a course description into another language when a prompt such as **Translate the course description into French** is entered in the Copilot panel. The steps provide guidance about how to create low-code plugins by using Copilot Studio and the AI translation capabilities of AI Builder.
+In this scenario, you'll add the Copilot capability to translate a course description into another language when a prompt such as "Translate the course description into French" is entered in the Copilot panel. The steps provide guidance about how to create low-code plugins by using Copilot Studio and the AI translation capabilities of AI Builder.
 
 Here's an overview of the steps in this tutorial:
 
 1. In Copilot Studio, create a new topic that's triggered by a prompt to translate the course description.
 1. Add questions to the user to determine the course ID and language.
 1. Create an action that uses a Power Automate flow to get the course description.
-1. Create an action that uses Power Automate and AI Builder to translate the course description text.
+1. Create an action that uses AI Builder to translate the course description text.
 1. Create a message response to send the translated text back to the user in the Copilot pane.
 1. Test the new Copilot capability.
 
@@ -47,22 +47,26 @@ In this step, you create a new topic in the **Copilot in Finance and Operation**
 1. On the **Trigger** node, on the **Phrases** card, select **Edit**.
 1. In the **Phrases** pane, in the **Enter text** field, enter **Translate the course description**, and then select **Enter**.
 
-## Step 2: Add questions to determine the course ID and language
+## Step 2: Determine the course ID and language
 
-In the new topic, add questions that Copilot will ask the user to determine the course ID of the course description that must be translated and the language that it must be translated into.
+In the new topic, you'll use variables that are set with the user's page and record context to determine the course ID of the course, and add a question that Copilot will ask the user to determine the language the description must be translated into.
 
 > [!NOTE]
 > In an upcoming release, the record that the user is currently viewing in finance and operations apps will be available as a variable in Copilot Studio. This variable will be similar to other contextual variables that are highlighted in [Use application context with Copilot](copilot-application-context.md). In this way, Copilot will know the current record and won't have to ask the user to provide the course ID.
 
-1. Below the **Trigger** node, select the plus sign (**+**), and then select **Ask a question** to create a **Question** node.
-1. Set the following values for the new node:
+1. Below the **Trigger** node, select the plus sign (**+**), and then select **Add a condition**.
+2. On the **Condition** node, set the condition to verify the user is on the Courses page.
+   - Select the **Select a variable** field, and select the `Global.PA_Copilot_ServerForm_PageContext.metadataName` variable.
+   - Set the condition for the variable to be **is equal to** the value **HRMCourseTable**.
+   - On the node, select **New condition**.
+   - Set the new condition to verify the `Global.PA_Copilot_ServerForm_PageContext.titleField1Value` variable **is not Blank**.
+4. Under the **All other conditions** node, select the plus sign (**+**), and select **Ask a question** to create a **Question** node.Set the following values for the new node:
 
     - **Enter a message:** Enter **What is the course ID for the course description you want to translate?**
     - **Identify:** Specify **User's entire response**.
     - **Save response as:** Select the variable, and change the **Variable name** value to **CourseID**.
 
-1. Below the **Question** node, select the plus sign (**+**), and then select **Ask a question** to create a second **Question** node.
-1. Set the following values for the new node:
+1. Below the condition section, after the condition forks merge, select the plus sign (**+**), and then select **Ask a question** to create a second **Question** node. Set the following values for the new node:
 
     - **Enter a message:** Enter **Into what language do you want the description translated?**
     - **Identify:** Specify **Language**.
@@ -89,13 +93,13 @@ In the new topic, add questions that Copilot will ask the user to determine the 
 In the topic, create an action that uses a flow to get the course description.
 
 1. Select the plus sign (**+**), and then select **Call an action** \> **Create a flow**. Power Automate is opened.
-1. In Power Automate, below the **When Power Virtual Agents calls a flow** node, select the plus sign (**+**), and then select **Add an action**.
 1. Select the **When Power Virtual Agents calls a flow** node to open the options, and define the following parameters:
 
     - Select **Text** as the type of user input.
     - In the **Input** field, enter **CourseID**.
 
-1. In the **Add an action** pane, search for and select the **List rows** action in the **Microsoft Dataverse** connector.
+1. In Power Automate, below the **When Power Virtual Agents calls a flow** node, select the plus sign (**+**), and then select **Add an action**.
+2. In the **Add an action** pane, search for and select the **List rows** action in the **Microsoft Dataverse** connector.
 1. On the **Parameters** tab for the **List rows** options, set the following values:
 
     - **Table Name:** Courses V2 (mserp)
@@ -113,7 +117,7 @@ In the topic, create an action that uses a flow to get the course description.
 
     1. Below the **List rows** action, select the plus sign (**+**), and then select **Add an action**.
     1. In the **Add an action** pane, search for and select the **Compose** data operation.
-    1. Use the **Parameters** action on the **Inputs** field to select the **body/value** parameter from the **List rows** action as the input value.
+    1. Use the **Parameters** action on the **Inputs** field to select the **value** parameter from the **List rows** action as the input value.
 
 1. Add an action to parse the JavaScript Object Notation (JSON) for the course record.
 
@@ -192,24 +196,26 @@ In the topic, create an action that uses a flow to get the course description.
 
 ## Step 4: Create an action to translate the course description
 
-In the topic, create an action that uses a flow and AI Builder to translate the course description that was retrieved in the previous step.
+In the topic, create an action that uses AI Builder to translate the course description that was retrieved in the previous step.
 
-1. Below the **Get course description demo** action node, select the plus sign (**+**), and then select **Call an action** \> **Create a flow**.
-1. In Power Automate, select the **When Power Virtual Agents calls a flow** node.
-1. On the **Parameters** tab of the options, select **Add an input**.
+1. Below the **Get course description demo** action node, select the plus sign (**+**), and then select **Call an action** \> **Create a prompt**.
+1. In the Prompt by AI Builder window, enter "TranslateText" for the prompt name.
+1. In the **Prompt settings** pane, open the **Input** fast tab and select **Add input**
 1. Set the following values for the new input:
 
-    - **Input type:** Text
-    - **Input:** TextToTranslate
+    - **Name:** Course Description
+    - **Sample data:** This course introduces you to the health and safety role at Contoso.
 
-1. Select **Add an input** again.
-1. Set the following values for the new input:
+1. Select **Add input** again.
 
-    - **Input type:** Text
-    - **Input:** LanguageCode
+    - **Name:** Language
+    - **Sample data:** Italian
 
-1. Below the **When Power Virtual Agents calls a flow** node of the flow, select the plus sign (**+**), and then select **Add an action**.
-1. Search for and select the **Translate text into another language** action in the **AI Builder** connector.
+1. In the **Prompt** field, enter "Translate `Course Description` into language `Language`", using the **Insert** action to select the variables in the prompt.
+2. Select **Test prompt** to test the prompt action.
+3. Select **Save custom prompt** and close the Prompt Builder window.
+
+
 1. Set the following values:
 
     - **Translate from:** Specify **Detect automatically**.
