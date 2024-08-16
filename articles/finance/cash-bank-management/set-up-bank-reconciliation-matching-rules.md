@@ -1,10 +1,10 @@
 ---
 title: Set up bank reconciliation matching rules
 description: Learn how to set up reconciliation matching rules and reconciliation matching rule sets to help with the bank reconciliation process.
-author: EricWangChen
+author: music727 
 ms.author: wangchen
 ms.topic: article
-ms.date: 05/22/2024
+ms.date: 08/16/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -29,7 +29,7 @@ On the **Reconciliation matching rules** page, you can select which actions and 
 
 By default, matching rules will match to the first bank document (transaction) that meets the matching rule criteria. If multiple bank documents (transactions) meet the rule criteria, the parameter to require manual matching can be turned on by going to **Cash and bank management > Setup > Cash and bank management parameters > Bank reconciliation > Require manual matching when advanced bank reconciliation matching rules find multiple documents that match on amount**.
 
-The feature **Advanced bank reconciliation improvement: enable group conditions in reconciliation matching rules** is enabled by default and addsthree additional matching types: 
+The feature **Advanced bank reconciliation improvement: enable group conditions in reconciliation matching rules** is enabled by default and adds three additional matching types: 
 
 - One to many
 - Many to one
