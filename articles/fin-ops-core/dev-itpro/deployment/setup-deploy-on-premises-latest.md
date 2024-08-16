@@ -522,7 +522,10 @@ You can configure more than one SSRS node. For more information, see [Configurin
         .\Configure-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName BI
         ```
 
-        The Initialize-Database.ps1 script maps the gMSA to the following databases and roles.
+        The Initialize-Database.ps1 script performs the following actions:
+       
+        - Creates empty databases for reporting services called: DynamicsAxReportServer & DynamicsAxReportServerTempDB
+        - Maps the gMSA to the following databases and roles.
 
         | User           | Database | Database role |
         |----------------|----------|---------------|
