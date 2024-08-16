@@ -216,12 +216,6 @@ In the topic, create an action that uses AI Builder to translate the course desc
 3. Select **Save custom prompt** and close the Prompt Builder window.
 
 
-1. Set the following values:
-
-    - **Translate from:** Specify **Detect automatically**.
-    - **Text:** Select the `TextToTranslate` variable from the **When Power Virtual Agents calls a flow** step.
-    - **Translate To:** Select **Enter custom value**, and then select the `LanguageCode` variable from the **When Power Virtual Agents calls a flow** step.
-
 1. Select the value to return to Copilot Studio.
 
     1. Select the **Return value(s) to Power Virtual Agents** node.
