@@ -49,7 +49,7 @@ The following table provides a detailed overview of functionality that still wor
 | Payroll positive pay | Positive pay configuration and positive payroll setup | Positive pay configuration and positive payroll setup are working. However, because a pay statement has to be generated and it won't work as expected. |
 |Benefits	|Benefits including garnishments and tax levies| *Limited. |
 
-*Functionality is limited. For more details, see [Issue search in Lifecycle services](../../dev-itpro/lifecycle-services/issue-search-lcs.md). If you can't find the information you need, contact support.
+*Functionality is limited. For more details, see [Issue search in Lifecycle services](../../../../dev-itpro/lifecycle-services/issue-search-lcs.md). If you can't find the information you need, contact support.
 
 > [!NOTE]
 > Pay statement generation doesn't work as it worked in earlier versions.

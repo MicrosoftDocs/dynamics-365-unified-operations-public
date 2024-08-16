@@ -400,8 +400,6 @@
             href: ../supply-chain/pim/search-products-product-variants.md?context=/dynamics365/context/commerce
           - name: Suspend and resume transactions in the POS
             href: pos-suspend-recall-transactions.md
-          - name: Task recorder and help for Store Commerce
-            href: task-recorder-retail-pos.md
           - name: Create financial dimensions for POS registers and configure dimension values on registers
             href: tasks/create-financial-dimensions-pos.md
           - name: Create POS permissions group
@@ -456,10 +454,6 @@
                 href: dev-itpro/data-sharing-gift-cards.md
               - name: Cash out gift card balance for a retail customer
                 href: dev-itpro/gift-card-cash-out.md
-          - name: RSAT
-            items:
-            - name: Test recorder and Regression suite automation tool for Store Commerce for web
-              href: dev-itpro/pos-rsat.md
           - name: Sales associates
             items:
             - name: Track commissions in the POS using sales groups
