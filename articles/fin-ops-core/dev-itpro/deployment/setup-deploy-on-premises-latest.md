@@ -523,14 +523,14 @@ You can configure more than one SSRS node. For more information, see [Configurin
         ```
 
         The Initialize-Database.ps1 script performs the following actions:
-       
-        - Creates empty databases for reporting services called: DynamicsAxReportServer & DynamicsAxReportServerTempDB
-        - Maps the gMSA to the following databases and roles.
 
-        | User           | Database | Database role |
-        |----------------|----------|---------------|
-        | svc-ReportSvc$ | master   | db\_owner |
-        | svc-ReportSvc$ | msdb     | db\_datareader, db\_datawriter, db\_securityadmin |
+        - Create two empty databases for reporting services: **DynamicsAxReportServer** and **DynamicsAxReportServerTempDB**.
+        - Map the gMSA to the following databases and roles.
+
+            | User           | Database | Database role |
+            |----------------|----------|---------------|
+            | svc-ReportSvc$ | master   | db\_owner |
+            | svc-ReportSvc$ | msdb     | db\_datareader, db\_datawriter, db\_securityadmin |
 
         The Configure-Database.ps1 script performs the following action:
 
