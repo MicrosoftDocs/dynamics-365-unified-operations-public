@@ -142,7 +142,7 @@ This information is protected by server security. We don't recommend that you in
 
 #### Requirement
 
-The Ministry of Corporate Affairs (MCA) in India introduced amendments to Rule 3 of the Companies (Accounts) rules. These changes pertain specifically to the maintenance of books of accounts in electronic form. The key modifications are as follows.
+In March 2021, the Ministry of Corporate Affairs (MCA) in India introduced amendments to Rule 3 of the Companies (Accounts) rules concerning the maintenance of books of accounts in electronic form. The key modifications are as follows.
 
 **I. Accessibility requirement**: Amended *Rule 3 (1)* emphasizes that books of accounts and other relevant documents that are maintained in electronic mode must remain accessible in India at all times for later reference.
 
@@ -154,15 +154,15 @@ The Ministry of Corporate Affairs (MCA) in India introduced amendments to Rule 3
 
 ##### I. Accessibility requirement
 
-Books of accounts and other relevant documents that are maintained in electronic mode in finance and operations apps are always accessible in India for later reference. Access to the data and functionality of finance and operations apps is determined by the role-based security concept. For more information, see [Role-based security](/dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security).
+Books of accounts and other relevant documents that are maintained in electronic mode in Dynamics 365 finance and operations apps are accessible in India for later reference. Access to the data and functionality of finance and operations apps is determined by the role-based security concept. For more information, see [Role-based security](/dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security).
 
 ##### II. Daily backup requirement
 
-To use a finance and operations app, companies must deploy a finance and operations apps environment through [Lifecycle Services](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide). Finance and operations apps environments are deployed in a defined region or datacenter where customer data is stored. Companies that use finance and operations apps choose where they want to deploy their environments when they create the environment through Lifecycle Services. Although Microsoft might replicate data to other regions for data durability, customer data isn't replicated or moved outside the geographical location. For more information, see [Azure paired regions](/azure/reliability/cross-region-replication-azure#azure-paired-regions). The specific activities that are required to meet the daily backup requirement might vary, based on the geographical location (whether inside or outside of India) that was chosen for deployment of finance and operations apps environments.
+To use a finance and operations app, companies must deploy a finance and operations apps environment through [Lifecycle Services](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide). Finance and operations apps environments are deployed in a customer-selected Azure region where customer data is stored. Companies that use finance and operations apps choose where they want to deploy their environments when they create the environment through Lifecycle Services. Although Microsoft might replicate data to other regions for data durability, customer data isn't replicated or moved outside the geographical location. For more information, see [Azure paired regions](/azure/reliability/cross-region-replication-azure#azure-paired-regions). The specific activities that are required to meet the daily backup requirement may vary, based on the geographical location (whether inside or outside of India) that was chosen for deployment of finance and operations apps environments.
 
 ###### Finance and operations apps environments that are deployed in India
 
-- Finance and operations apps provide that backups of books of accounts and other books and papers of the company that are maintained in electronic mode in finance and operations apps are kept in servers that are physically located in India.
+- Finance and operations apps infrastructure ensures that backups of the company's books of accounts, along with other records maintained electronically within finance and operations apps, are stored on servers that are physically located in India.
 - A customer's representative who has an administrator role in a finance and operations apps tenant (that is, an administrator) can check where the database is deployed by looking at the **Database backup location** field in Lifecycle Services.
 - If an Azure region-wide outage occurs, Microsoft provides business continuity and disaster recovery for production instances of the finance and operations apps software as a service (SaaS) application.
 - Databases are protected by Microsoft Power Platform's automatic backups of production environments. These backups are kept for up to 28 days. For more information, see [Back up and restore environments](/power-platform/admin/backup-restore-environments). The underlying technology is Azure SQL Database. For more information, see [Automated backups in Azure SQL Database](/azure/sql-database/sql-database-automated-backups).
@@ -174,11 +174,11 @@ To use a finance and operations app, companies must deploy a finance and operati
 
 ###### Finance and operations apps environments that are deployed outside of India
 
-If a finance and operations apps environment is deployed outside of India, a company can consider using the following options to fulfill the daily backup requirement.
+If a finance and operations apps environment is deployed outside of India, a company can consider using the following options to fulfill India's daily backup requirement.
 
 **Option (1). Geo to geo migration**
 
-Under some conditions, to fulfill the daily backup requirement, a company that operates in India and has its finance and operations apps environment deployed outside of India can consider migrating the finance and operations apps environment that has an Indian legal entity to a datacenter in India. For more information, see [Geo to geo migration overview](/dynamics365/fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations). When a finance and operations apps environment that contains the data that is necessary to fulfill the daily backup requirement is migrated to a datacenter in India, the approach that is described in the [Finance and operations apps environments that are deployed in India](#finance-and-operations-apps-environments-that-are-deployed-in-india) section is applicable.
+Under some conditions, to fulfill India's daily backup requirement, a company that operates in India and has its finance and operations apps environment deployed outside of India can consider migrating the finance and operations apps environment that has an Indian legal entity to a datacenter in India. For more information, see [Geo to geo migration overview](/dynamics365/fin-ops-core/dev-itpro/deployment/geo-to-geo-migrations). When a finance and operations apps environment that contains data necessary to fulfill the daily backup requirement is migrated to a datacenter in India, the approach that is described in the [Finance and operations apps environments that are deployed in India](#finance-and-operations-apps-environments-that-are-deployed-in-india) section is applicable.
 
 **Option (2). Multi-instance installation**
 
