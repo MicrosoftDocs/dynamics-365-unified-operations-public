@@ -4,14 +4,12 @@ description: Learn how to set up and generate the Standard Audit File for Tax (S
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 04/11/2024
+ms.date: 08/16/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Norway
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
 ---
 
 # Standard Audit File for Tax (SAF-T) for Norway
@@ -21,7 +19,7 @@ ms.dyn365.ops.version:
 This article includes country/region-specific information about how to set up the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Norway.
 
 > [!NOTE]
-> As of version 175.137 of `SAF-T Format (NO)` and 175.92 of `SAF-T Financial data model mapping`, the version 1.30 of SAF-T Financial is supported. SAF-T Financial of version 1.30 is required from 1 January 2025, but can be used for earlier periods if preferable. The old form, version 1.20, can be used for previous years (financial year 2024 and before).
+> As of version 175.137 of `SAF-T Format (NO)` and 175.92 of `SAF-T Financial data model mapping`, the version 1.30 of SAF-T Financial is supported. SAF-T Financial of version 1.30 is required on January 1 2025, but can be used for earlier periods if preferred. The old form, version 1.20, can be used for previous years (financial year 2024 and earlier).
 
 > [!NOTE]
 > Use of the [One voucher](../../general-ledger/one-voucher.md) functionality introduces a limitation on further SAF-T reporting for some scenarios that are subject to SAF-T. Specifically, a bank statement scenario must be posted by using different vouchers for transactions that have different counteragent accounts. For more information about how to use the One voucher functionality and SAF-T, see the [SAF-T report and One voucher](#one-voucher) section later in this article.
@@ -48,7 +46,7 @@ In Finance, import the following ER configurations from the Global repository.
 | SAF-T Financial data model mapping | Model mapping      |
 | SAF-T Format (NO)                  | Format (exporting) |
 
-For more information about how to import ER configurations, see [Import Electronic reporting (ER) configurations from Dataverse](https://learn.microsoft.com/en-us/dynamics365/finance/localizations/global/workspace/gsw-import-er-config-dataverse.md).
+For more information about how to import ER configurations, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 Import the most recent versions of the configurations. The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version.
 
@@ -134,7 +132,7 @@ As of version 175.119 of the **SAF-T Format (NO)** ER format, you can use of the
 If option 1 is used, the report doesn't consider option 2. If any of the main accounts that are used in Finance aren't associated with a value by using either the application-specific parameters of the ER format or additional consolidation accounts, you receive a warning message when you generate the report. This message includes information about the missing mapping.
 
 > [!NOTE]
-> SAF-T Financial of version 1.30 supports only `Grouping category` and `Grouping code` fileds, `Standard accounts` are no longer supported. Due to this change, as of version 175.137 of `SAF-T Format (NO)` introduces a validation with warning before January 1, 2025 and blocking exception starting from January 1, 2025, if option 2 is used. Statring from version 175.137 of `SAF-T Format (NO)`, option 2 will no longer be supported, **Use grouping category** parameter is mandatory, when you run the SAF-T report.
+> SAF-T Financial of version 1.30 supports only `Grouping category` and `Grouping code` fields, `Standard accounts` are no longer supported. Due to this change, as of version 175.137 of `SAF-T Format (NO)` introduces a validation with warning before January 1, 2025 and blocking exception starting January 1, 2025, if option 2 is used. Starting with version 175.137 of `SAF-T Format (NO)`, option 2 will no longer be supported, **Use grouping category** parameter is mandatory, when you run the SAF-T report.
 
 #### Option 1: Associate main accounts used in Finance with Norwegian standard accounts or an Income statement by using additional consolidation accounts
 
@@ -146,8 +144,8 @@ For more information about additional consolidation accounts, see [Consolidation
 #### Option 2: Associate main accounts used in Finance with Norwegian standard accounts by using the application-specific parameters of the ER format
 
 > [!NOTE]
-> This option is not supported as of January 1, 2025, due to changes introduced in SAF-T Financial of version 1.30.
-> It is recommended to use following or higher version of ER configurations:
+> This option isn't supported after January 1, 2025, due to changes introduced in SAF-T Financial of version 1.30.
+> It's recommended to use the following or a higher version of the ER configurations:
 > - SAF-T Format (NO) **175.137**
 > - SAF-T Financial data model mapping **175.92**
 
