@@ -1,6 +1,6 @@
 ---
-title: Database synchronize performance 
-description: This article describes the **Shadow Copy Sync** process that improves the database synchronize performance during an upgrade.
+title: Database synchronization performance
+description: This article describes the Shadow copy sync process that improves the performance of database synchronization during an upgrade.
 author: ttreen
 ms.author: ttreen
 ms.topic: article
@@ -13,39 +13,42 @@ ms.search.form: 2022-04-08
 ms.service: dynamics-365-op
 ---
 
-# Database synchronize performance 
+# Database synchronization performance
 
 [!include[banner](../includes/banner.md)]
 
-This article describes the **Shadow copy sync** process that improves the database synchronize performance during AX 2012 upgrade within self-service environments.
+This article describes the **Shadow copy sync** process that improves the performance of database synchronization during a Microsoft Dynamics AX 2012 upgrade in self-service environments.
 
 ## Background
 
-During the upgrade, three different synchronize processes are run:
+During the upgrade, three synchronization processes are run:
 
-- AdditiveSync - Run as part of the Prereq steps and adds new tables and fields, and most new indexes to existing tables (excludes unique indexes). 
-- DBSync – The first full synchronization where new fields are added to existing tables and changes to existing fields. Unique indexes that were disabled during the Pre-Sync step aren't created during this step.
-- FinalDBSync – The final database synchronization that synchronizes all remaining objects in the database and runs the final sync data preparation steps.
+- **AdditiveSync** – This process is run as part of the Prereq steps. It adds new tables and fields. It also adds most new indexes (except unique indexes) to existing tables.
+- **DBSync** – This process is the first full synchronization, where new fields are added to existing tables, and changes are made to existing fields. Unique indexes that were disabled during the Pre-Sync step aren't created during this step.
+- **FinalDBSync** – This process is the final database synchronization that syncs all remaining objects in the database and runs the final synchronization data preparation steps.
 
-It's not unusual for the synchronization processes to take several hours or longer. The length of time depends on the size of the database, but more specifically, related to large tables with changes to the design. 
+It isn't unusual for the synchronization processes to take several hours or longer. The time that is required depends on the size of the database. More specifically, it's related to large tables that have changes to the design.
 
-During the DBSync, one of the slowest changes is when a numeric field type changes precision. If a table has multiple **Numeric** fields with changes, each **Alter column** statement can take minutes or hours to complete. If there's a high number of these column types in each table, this increases the sync running time. In Microsoft Dynamics AX 2012, most numeric field types had the precision set to 32,16. In Dynamics 365 Finance, the precision is set is 32,6, for most.
+During the DBSync process, one of the slowest changes is a change in the precision of a numeric field type. If a table contains multiple numeric fields that have changes, each **Alter column** statement can take minutes or hours to be completed. If each table has many of these column types, the running time of the synchronization increases. In AX 2012, the precision for most numeric field types is set to **32,16**. In Dynamics 365 Finance, the precision for most numeric field types is set to **32,6**.
 
 ## Solution
 
-As a solution, the sync engine has a **Shadow copy sync** process. A new version of the table is created in the upgraded Dynamics 365 Finance format with an owner schema named **Shadow**. Data from the old table is inserted into the new one. After the records are inserted, the following happens:
- - indexes are applied to the shadow table
- - the old table in the dbo schema is dropped
- - the shadow schema table reassigned back to the dbo schema
+As a solution, the synchronization engine has a **Shadow copy sync** process. A new version of the table is created in the upgraded Dynamics 365 Finance format. This table has an owner schema that is named **Shadow**. Data from the old table is inserted into the new one. The following actions then occur:
 
-The **Shadow copy sync** is enabled for all upgrades that meet the following thresholds:
- - The table size must be greater that 20480 MB (20GB).
- - The table must have one or more numeric fields where the precision is changed.
- - If a table doesn't meet the threshold, the table is synchronized the standard way.
+1. Indexes are applied to the shadow table.
+2. The old table in the **dbo** schema is dropped.
+3. The shadow table is reassigned to the **dbo** schema.
 
-## Checking table sizes
+The **Shadow copy sync** process is enabled for all upgrades that meet the following conditions:
 
-Run the following SQL script to find tables over 500 MB on the target Dynamics 365 Finance Azure SQL database for the environment. You need to enable a Just in time (JIT) session from Lifecycle services to connect to the database.
+- The table size is more than 20,480 megabytes (MB) (20 gigabytes \[GB\]).
+- The table has one or more numeric fields where the precision is changed.
+
+Any table that doesn't meet these conditions is synced in the standard way.
+
+## Check table sizes
+
+Run the following SQL script to find tables that are larger than 500 MB in the target Dynamics 365 Finance Azure SQL database for the environment. To connect to the database, you must enable a just-in-time (JIT) session from Microsoft Dynamics Lifecycle Services.
 
 ```SQL
 SELECT t.NAME AS TableName, (sum(a.used_pages) * 8) / 1024 as UsedSpaceMB
@@ -60,16 +63,16 @@ HAVING ((sum(a.used_pages) * 8) / 1024) > 500 --Edit this to a lower number if n
 ORDER BY sum(a.used_pages) desc
 ```
 
-## Tuning the shadow copy sync thresholds
+## Tune the shadow copy sync thresholds
 
-Depending on your dataset, you can increase or decrease the tables that are included in the **Shadow copy sync** process. 
+Depending on your dataset, you can increase or decrease the tables that are included in the **Shadow copy sync** process.
 
-Typically, threshold values are decreased to include more tables in the shadow sync. There's a point where enabling too many tables to be synchronized with the shadow schema will be slower than if you do less. You need to experiment to find the ideal values for your specific database. 
+Typically, threshold values are decreased to include more tables in the shadow synchronization. However, if you enable too many tables to be synced with the **Shadow** schema, a point is reached where the performance becomes slower than it would be for fewer tables. You must experiment to find the ideal values for your specific database.
 
 > [!NOTE]
-> Run the following SQL script prior to triggering the database upgrade for self-service from the data migration toolkit Step 10.
+> Run the following SQL script before you trigger the database upgrade for self-service from step 10 of the data migration toolkit.
 
-If you wish to tune the sync threshold, then edit and run the following SQL Script:
+To tune the synchronization threshold, edit and run the following SQL script.
 
 ```SQL
 --
@@ -100,7 +103,7 @@ END
 ELSE
 BEGIN
     UPDATE [dbo].[SQLSYSTEMVARIABLES]
-   SET VALUE = @minNumericFieldsThreshold
+    SET VALUE = @minNumericFieldsThreshold
     WHERE PARM='SHADOWCOPYREALSCALECHANGELIMIT'
 END
 -- Main Script End
