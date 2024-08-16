@@ -75,7 +75,7 @@ You can open the side-by-side viewer from two places:
 
 ### Classify captured invoices
 
-#### Assign legal entity in the list page
+#### Assign a legal entity on the list page
 
 In the **Captured invoices** list, the legal entity might be missing because it wasn't successfully derived. The legal entity must be assigned before an invoice can be processed. Users can then review the invoices and make corrections.
 
@@ -85,7 +85,7 @@ In the **Captured invoices** list, the legal entity might be missing because it 
 
 Correct assignment of the legal entity ensures that Accounts payable (AP) clerks can view the status of the invoice that they are responsible for.
 
-#### Classify an invoice in the detailed page
+#### Classify an invoice on the detailed page
 
 For the vendor invoice to be successfully created in Dynamics 365 Finance, entities such as legal entity, vendor account, and item number must be determined before the transfer. Of these entities, legal entity and vendor account are the most important, because they determine whether the derived invoice type is acceptable according to the setting in the assigned configuration group.
 
@@ -109,26 +109,27 @@ The AP clerk can enter values for the invoice header. Alternatively, they can ad
 
 The AP clerk can select the upper-right icon in the document preview pane to put the invoice into mapping mode. The AP clerk can then correct or add the mapping by selecting the key-value pair and the **Mapped invoice** field. After the changes are saved, the value is extracted and applied to the corresponding invoice field. When the continuous learning feature is enabled, the system learns the changes and applies the same logic to invoices from the same vendor.
 
-### Map Key-Value-Pairs (KVPs) with fields
+### Map key-value pairs with fields
 
-Sometimes, the prebuilt model doesn’t extract the value from the right position of the document for some fields. Users want to correct the extraction and let the application constantly extract the right value for the subsequent incoming invoices if they are coming from the same vendor with the same pattern. This is done within the key-value pair mapping page if the value that needs to be extracted is returned as a key-value pair from the AI model. The key-value pair mapping learns when the continuous learning feature is enabled.  
+Sometimes, the prebuilt model doesn't extract the value from the correct position of the document for some fields. Users want to correct the extraction and let the application constantly extract the correct value for subsequent incoming invoices that come from the same vendor and have the same pattern. If the value that must be extracted is returned as a key-value pair from the AI model, this correction is done on the key-value pair mapping page. When the continuous learning feature is enabled, the key-value pair mapping learns.
 
-The key-value pair (KVP) mapping function is applied when using the prebuilt model. If you are using a custom invoice model, utilize the custom field mapping to extract additional fields. Click the top-right icon in the document preview pane, invoices change to the mapping mode. 
- - Light yellow indicates that the key-value pair has already been mapped with invoice fields.
- - Light blue indicates the available key-value pair that haven’t yet been mapped with any invoice fields.
-The AP clerk can correct or add the mapping by selecting the key-value pair and the mapped invoice field. After saving the changes, the value is extracted and applied to the corresponding invoice field. When the continuous learning feature is enabled, the system learns the changes and applies it to invoices from the same vendor.
+The key-value pair mapping function is applied when the prebuilt model is used. If you're using a custom invoice model, use the custom field mapping to extract additional fields. Select the icon in the upper right of the document preview pane to change invoices to mapping mode.
 
->[!Note]
->The key-value pair mapping page button is available for invoices that are received after upgrading to version 1.1.0.32. For invoices that were received before the upgrade, the button is disabled.
+- Light yellow indicates that the key-value pair has already been mapped with invoice fields.
+- Light blue indicates that the key-value pair hasn't yet been mapped with any invoice fields. The AP clerk can correct or add the mapping by selecting the key-value pair and the mapped invoice field. After the changes are saved, the value is extracted and applied to the corresponding invoice field. When the continuous learning feature is enabled, the system learns the changes and applies them to invoices from the same vendor.
+
+> [!NOTE]
+> The key-value pair mapping page button is available only for invoices that are received after an upgrade to version 1.1.0.32. It's unavailable for invoices that were received before the upgrade.
 
 ### Download the original invoice document
-In the document preview panel, the download button can help the user to download the original invoice document. 
+
+In the document preview pane, the download button can help users download the original invoice document.
 
 ### Derivation and validation
 
 Some entity fields in the side-by-side viewer don't exist on the original invoice document but are required to generate the invoice in Dynamics 365 Finance. These entities are derived from a combination of the recognized invoice data and master data from Dynamics 365 Finance.
 
-The entities include **Legal entity**, **Vendor account**, **Item number** and **currency code**. If derivation of a field fails, the process stops.
+The entities include **Legal entity**, **Vendor account**, **Item number**, and **currency code**. If derivation of a field fails, the process stops.
 
 1. **Legal entity** – If an active mapping rule is found for the legal entity, the legal entity is selected based on the company's name and address.
 2. **Vendor account** – Next, the vendor account is selected based on an active mapping rule and a combination of the selected legal entity and the vendor's name, address, or tax number.
@@ -140,8 +141,8 @@ The entities include **Legal entity**, **Vendor account**, **Item number** and *
 
 4. **Currency code** – The currency code must be determined before the invoice can be transferred from Invoice capture to Dynamics 365 Finance. Different methods are implemented to derive the currency code:
 
-    - If the currency symbol is captured and can be used to uniquely identify the currency code, the currency code will be automatically derived. 
-    - If an invoice is associated with a purchase order (PO invoice or header-only invoice), the currency code between the invoice and the purchase order must be the same. If no currency code is returned from the recognition result, the currency code from the purchase order is entered by default.
+    - If the currency symbol is captured and can be used to uniquely identify the currency code, the currency code is automatically derived. 
+    - If an invoice is associated with a purchase order (PO invoice or header-only invoice), the invoice and the purchase order must use the same currency code. If no currency code is returned from the recognition result, the currency code from the purchase order is entered by default.
     - If you want a cost invoice to derive the currency code from the vendor master data, select the **Derive currency code for cost invoice** parameter at **Setup system** \> **Manage processing rules**.
 
 After the fields are derived, the following additional validation checks are run:
@@ -160,34 +161,32 @@ The derivation process occurs before the validation process, and all warnings or
 
 ### Continuous learning
 
-To help increase the touchless rate of invoice processing in Invoice capture, Continuous learning can derive entities (legal entity, vendor account, and item numbers) based on the mapping from the last transferred invoice. It also supports the automatic value extraction from a key-value pair and assign it to the corresponding invoice fields. When there's an entry on the **Charges**, it derives the **Charges code** based on the last matched record. The feature can be switched on/off in **Setup system >> System preferences**. 
-
+To help increase the touchless rate of invoice processing in Invoice capture, the **Continuous learning** feature can derive entities (legal entity, vendor account, and item numbers) based on the mapping from the last transferred invoice. It also supports automatic extraction of a value from a key-value pair and assignment of that value to the corresponding invoice fields. When there's an entry on the **Charges** card, continuous learning derives the **Charges code** value based on the last matched record. The feature can be turned on and off at **Setup system** \> **System preferences**.
 
 #### Difference between continuous learning and mapping rules
 
-The **Continuous learning** feature tries to record patterns between the invoice context and manually selected entities immediately after the invoice is successfully transferred. The affected entities include legal entity, vendor account, item number, expense type, charge code, and key-value pair mapping. Currently, continuous learning checks all the header information, such as the company name, company address, vendor name, address, and vendor tax registration number, to determine the value of the legal entity and vendor account. When the first invoice arrives, users must manually specify the legal entity and vendor account if they can't be successfully derived from other mapping rules. After the invoices are reviewed and transferred to Dynamics 365 Finance, the relationship is recorded. When any invoice that has the same context arrives, continuous learning tries to find the same pattern and to derive the legal entity and vendor account automatically. 
+The **Continuous learning** feature tries to record patterns between the invoice context and manually selected entities immediately after the invoice is successfully transferred. The affected entities include legal entity, vendor account, item number, expense type, charge code, and key-value pair mapping. Currently, continuous learning checks all the header information, such as the company name, company address, vendor name, address, and vendor tax registration number, to determine the value of the legal entity and vendor account. When the first invoice arrives, users must manually specify the legal entity and vendor account if they can't be successfully derived from other mapping rules. After the invoices are reviewed and transferred to Dynamics 365 Finance, the relationship is recorded. When any invoice that has the same context arrives, continuous learning tries to find the same pattern and to derive the legal entity and vendor account automatically.
 
-Mapping rules are in some ways an optional approach to derive the value of entities. They can derive entity values when the conditions are fulfilled for all the fields. Because the maintenance load is quite high, we don't recommend that customers use this approach. The only exception is the expense type, we recommend that customers use the pending vendor invoice framework for non-PO invoices. For this approach, you can define a default expense type (procurement category) that is applied to all the lines for invoices from a specific vendor. This assigned procurement category is used to derive the expense accounting during accounting distribution on the finance and operations apps side. It can increase the touchless rate for the processing of non-PO invoices.
+Mapping rules are in some ways an optional approach to derive the value of entities. They can derive entity values when the conditions are fulfilled for all the fields. Because the maintenance load is quite high, we don't recommend that customers use this approach. The only exception is the expense type. For the expense type, we recommend that customers use the pending vendor invoice framework for non-PO invoices. For this approach, you can define a default expense type (procurement category) that is applied to all the lines for invoices from a specific vendor. This assigned procurement category is used to derive the expense accounting during accounting distribution on the finance and operations apps side. It can increase the touchless rate for the processing of non-PO invoices.
 
-From a logic sequence perspective, continuous learning is applied before mapping rules. 
+From a logic sequence perspective, continuous learning is applied before mapping rules.
 
 ### Link purchase orders
 
 #### Header-only invoice
 
-When the invoice type is header-only, users can select one or multiple purchase orders from the lookup list by clicking **Purchase order** on the invoice header. The purchase orders from the same vendor account with an **Open order** or **Received** statuses are displayed in the list.
-If the recognized purchase order(s) is invalid, it displays red and users must remove the invalid purchase order(s) by clicking **X** before selecting purchase orders from the lookup list.   
+When the invoice type is **Header-only**, users can select one or multiple purchase orders in the lookup list by selecting **Purchase order** on the invoice header. The list shows all purchase orders from the same vendor account that have an **Open order** or **Received** status. Any recognized purchase orders that aren't valid appear in red. Users must remove these purchase orders by selecting **X** before they select purchase orders in the lookup list.
 
 #### Purchase-order invoice
 
-When the invoice type is a Purchase-order invoice, the relationship between the invoice line and the purchase line must be established correctly within Invoice capture. If the purchase line can't be automatically derived, Accounts Payable clerk can manually establish this relationship using the **Link purchase line with invoice line** page. 
-To get to the **Link purchase line with invoice line** page, click the purchase order field on the invoice header or by clicking the purchase order number (or purchase order line number) on the invoice line.
+When the invoice type is **Purchase-order invoice**, the relationship between the invoice line and the purchase line must be established correctly in Invoice capture. If the purchase line can't be automatically derived, the AP clerk can manually establish the relationship on the **Link purchase line with invoice line** page. To open this page, select the purchase order field on the invoice header or the purchase order number (or purchase order line number) on the invoice line.
 
-In the page, the following sections are available:
- - The first section displays the currently selected invoice line.
- - The **Available purchase lines** section displays all the purchase line candidates that match the item (or expense type) on the invoice line based on specific criteria. These criteria include purchase order, item number, expense type, and item description. The available purchase lines will have the same quantity sign as the invoice line.
- - When an invoice line is linked to a purchase line, a radio button is enabled for the corresponding record, and the icon changes to a green check mark in the top right of the invoice line pane. If no purchase line is associated, a red cross icon is displayed.
- - After confirming the association, the linked purchase line and item number (or expense type) are written back to the invoice line. Additionally, the purchase order on the invoice header is updated based on the associated purchase order(s).
+On the **Link purchase line with invoice line** page, the following sections are available:
+
+- The first section shows the currently selected invoice line.
+- The **Available purchase lines** section shows all the purchase line candidates that match the item (or expense type) on the invoice line, based on specific criteria. These criteria include purchase order, item number, expense type, and item description. The available purchase lines have the same quantity sign as the invoice line.
+- When an invoice line is linked to a purchase line, an option button (also known as a radio button) is enabled for the corresponding record, and the icon in the upper right of the invoice line pane changes to a green check mark. If there is no associated purchase line, a red cross icon is shown.
+- After you confirm the association, the linked purchase line and item number (or expense type) are written back to the invoice line. Additionally, the purchase order on the invoice header is updated based on the associated purchase orders.
 
 ### Void and delete an invoice
 
