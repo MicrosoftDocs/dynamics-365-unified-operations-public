@@ -55,16 +55,11 @@ Here is an overview of the procedures that you must complete:
    <img alt="Service Bus Topic" src="../../media/BEF-Howto-servicebus-03.png" width="70%">
 
 2. Select the new article, and then create a new subscription that is named **BE-USMF**.
-
-    <img alt="Service Bus subscription" src="../../media/BEF-Howto-servicebus-04.png" width="70%">
-
 3. Go back to the blade for your Service Bus, and create a new shared access policy to send events. Only the **Send** policy is required to send events to the Service Bus article.
 
     <img alt="Service Bus Shared access policy" src="../../media/BEF-Howto-servicebus-05.png" width="70%">
 
 4. Select the new **Send** policy, and then copy and save the **Primary Connection String** value. You will use this value later.
-
-    <img alt="Service Bus connection string" src="../../media/BEF-Howto-servicebus-06.png" width="70%">
 
   > [!NOTE]
   > The shared access policy must be at the name space level and not at the article level. If the shared access policy from the article level is used, the trailing string with semi colon EntityPath= must not be included when configuring the endpoint for business events.
@@ -83,9 +78,6 @@ In this procedure, you will create a key vault to store the key that you copied 
     <img alt="Key vault DNS name" src="../../media/BEF-Howto-Keyvault-03.png" width="70%">
 
 4. Select **BE-key vault \> Secrets \> Generate/Import**. Enter a name for your secret, and paste the Service Bus connection string that you saved earlier.
-
-    <img alt="Key vault secret " src="../../media/BEF-Howto-Keyvault-04.png" width="70%">
-
 5. Select **Create**.
 
 ## Register a new application
@@ -96,20 +88,12 @@ In this procedure, you will register a new application with Microsoft Entra ID, 
 2. Select **App registrations (preview) \> New registration**, and enter a name for your application.
 3. Select **Register**.
 4. Select the new application, and then select **Certificates & secrets \> New client secret**. Enter a name for your secret, and set the secret so that it never expires. Then select **Add**.
-
-    <img alt="Azure App secret " src="../../media/BEF-Howto-Keyvault-07.png" width="50%">
-
 5. Copy and save your new secret. You will use it later.
 
     > [!IMPORTANT]
     > Secrets are visible only one time. If you forget to copy the secret, you will have to delete it and create a new secret.
 
-    <img alt="Copy App secret " src="../../media/BEF-Howto-Keyvault-08.png" width="70%">
-
 6. Select **Overview**, and copy and save the application ID. You will use this value later.
-
-    <img alt="Copy App ID " src="../../media/BEF-Howto-Keyvault-09.png" width="70%">
-
 7. Select **All services \> Security \> Key vaults**.
 8. Select the key vault that you created earlier, and then select **Access policies \> Add new**.
 9. On the **Principal** blade, select your new registered application. Select the check boxes for the **Get** and **List** secret permissions to retrieve key vault secrets.
@@ -126,9 +110,6 @@ In this procedure, you will register a new application with Microsoft Entra ID, 
 4. Select **Azure Service Bus Topic**.
 5. Select **Next**.
 6. Set the required parameter values.
-
-    <img alt="Service Bus endpoint" src="../../media/BEF-Howto-servicebus-08.png" width="70%">
-
 7. Select **OK**.
 
 ## Consume a business event
@@ -137,9 +118,6 @@ The business scenario involves sending an email or a message to a team channel w
 
 1. Select the business event catalog and look for **customer payment posted** business event
 2. Activate the business event for USMF company.
-
-    <img alt="Activate business event " src="../../media/BEF-Howto-servicebus-09.png" width="30%">
-
     After you activate a business event that uses the new Service Bus endpoint, the application sends a test message to verify that the configuration is accurate and to cache the connection.
 
 3. To verify that the test message has been received, in the Azure portal, select your **BE-Topic** Service Bus article, and then go into the **BE-USMF** Service Bus subscription that you created earlier. Verify that the message count for the subscription shows a value of at least **1**. If it doesn't, wait for the batch job to pick up your message.

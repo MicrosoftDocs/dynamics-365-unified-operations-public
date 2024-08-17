@@ -249,4 +249,4 @@ In the chatbot, add a message node that returns the translated course descriptio
 1. On the navigation bar, select the **Copilot** button to open the Copilot pane.
 1. In the chat panel, enter **Translate the course description into Japanese**, and follow the prompt to get a response.
 
-    <img alt="Screenshot that shows Copilot translating a course description into another language." src="../media/Copilot-extensibility-translate-course-description.png" width="70%">
+

@@ -61,7 +61,6 @@ To export configurations to Dataverse, follow these steps.
 1. To upload a single configuration version that has a status of **Completed**, use the **Upload into repository** button on the **Versions** FastTab of the **Electronic reporting Configurations** page. The system uploads all parent configuration versions to make the solution independently deployable.
 1. To upload all the latest **Completed** configuration versions with the active provider, select **Upload all configurations into repository** on the **Configurations** tab on the Action Pane of the **Electronic reporting Configurations** page. Then use the **Upload into repository** dropdown dialog box.
 
-:::image type="content" source="media/upload-all configurations.png" alt-text="Screenshot of the Upload into repository dropdown dialog box on the Electronic reporting Configurations page.":::
 
 ## View configurations as a Dataverse solution
 
