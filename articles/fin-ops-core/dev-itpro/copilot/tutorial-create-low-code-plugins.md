@@ -4,7 +4,7 @@ description: Learn how to use Microsoft Copilot Studio to create low-code plugin
 author: jaredha
 ms.author: jaredha
 ms.topic: how-to
-ms.date: 02/08/2024
+ms.date: 08/19/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.collection:
@@ -22,11 +22,11 @@ Microsoft Copilot Studio provides the orchestration of the AI capabilities for C
 
 ## Scenario
 
-In this scenario, you'll add the Copilot capability to translate a course description into another language when a prompt such as "Translate the course description into French" is entered in the Copilot panel. The steps provide guidance about how to create low-code plugins by using Copilot Studio and the AI translation capabilities of AI Builder.
+In this scenario, you add the Copilot capability to translate a course description into another language when a prompt such as "Translate the course description into French" is entered in the Copilot panel. The steps provide guidance about how to create low-code plugins by using Copilot Studio and the AI translation capabilities of AI Builder.
 
 Here's an overview of the steps in this tutorial:
 
-1. In Copilot Studio, create a new topic that's triggered by a prompt to translate the course description.
+1. In Copilot Studio, create a new topic that gets triggered by a prompt to translate the course description.
 1. Add questions to the user to determine the course ID and language.
 1. Create an action that uses a Power Automate flow to get the course description.
 1. Create an action that uses AI Builder to translate the course description text.
@@ -41,7 +41,7 @@ For this tutorial, you must first enable Copilot in finance and operations apps 
 
 In this step, you create a new topic in the **Copilot in Finance and Operation** chatbot.
 
-1. Open [Copilot Studio](https://web.powerva.microsoft.com) in the environment that's linked to your finance and operations apps.
+1. Open [Copilot Studio](https://web.powerva.microsoft.com) in the environment linked to your finance and operations apps.
 1. Open the **Copilot for finance and operations apps** Copilot chatbot.
 1. On the **Topics & Plugins** tab, in the **Add** dropdown list, select **Topic** \> **From blank**.
 1. On the **Trigger** node, on the **Phrases** card, select **Edit**.
@@ -49,7 +49,7 @@ In this step, you create a new topic in the **Copilot in Finance and Operation**
 
 ## Step 2: Determine the course ID and language
 
-In the new topic, you'll use variables that are set with the user's page and record context to determine the course ID of the course, and add a question that Copilot will ask the user to determine the language the description must be translated into. For more information on user context of finance and operations apps in copilot scenarios, see [Use application context with Copilot](copilot-application-context.md).
+In the new topic, you use variables that are set with the user's page and record context to determine the course ID of the course, and add a question that Copilot asks the user to determine the language the description must be translated into. For more information on user context of finance and operations apps in copilot scenarios, see [Use application context with Copilot](copilot-application-context.md).
 
 1. Below the **Trigger** node, select the plus sign (**+**), and then select **Add a condition**.
 2. On the **Condition** node, set the condition to verify the user is on the Courses page.
@@ -179,13 +179,13 @@ In the topic, create an action that uses a flow to get the course description.
 1. In the **Select an action** dialog box, select the **Get course description demo** action that you created in the flow.
 1. On the **Course description demo** action node, select the `Topic.CourseID` variable for the **CourseID (String)** input.
 
-## Step 4: Create an action to translate the course description
+## Step 4: Create an action that translates the course description
 
 In the topic, create an action that uses AI Builder to translate the course description that was retrieved in the previous step.
 
 1. Below the **Get course description demo** action node, select the plus sign (**+**), and then select **Call an action** \> **Create a prompt**.
 1. In the Prompt by AI Builder window, enter "TranslateText" for the prompt name.
-1. In the **Prompt settings** pane, open the **Input** fast tab and select **Add input**
+1. In the **Prompt settings** pane, open the **Input** FastTab and select **Add input**
 1. Set the following values for the new input:
 
     - **Name:** Course Description
