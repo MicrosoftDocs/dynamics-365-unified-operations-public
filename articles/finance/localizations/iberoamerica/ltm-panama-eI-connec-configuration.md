@@ -4,7 +4,7 @@ description: Learn how to set up Microsoft Dynamics 365 Finance to use Panamania
 author: Fhernandez0088
 ms.author: ankviklis
 ms.topic: article
-ms.date: 07/29/2024 
+ms.date: 08/19/2024 
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---
@@ -67,7 +67,7 @@ Some feature's parameters are published with default values. Before you deploy t
 For Panama we interact with Edicom at least three times in the pipeline, first to submit the invoice, next to fetch the signed XML, and finally to fetch the status of the submitted invoice. Each of these interactions requires common parameters such as Edicom connection details and the authentication token provided by Edicom. Also, these common parameters are reused in feature setup for all document types. These values are provided by Edicom when a company onboards.
 
 > [!NOTE]
-> The simplification of configurations of common parameters - it is no longer needed to go to each action and feature setup, and specify these common connection parameters repeatedly - using the **Feature parameters** tab is only availavle starting from version 10.0.41.
+> The simplification of configurations of common parameters - it is no longer needed to go to each action and feature setup, and specify these common connection parameters repeatedly - using the **Feature parameters** tab is only available starting from version 10.0.41.
 
 > [!IMPORTANT]
 > The **Panama electronic invoice (PA)** feature is provided by Microsoft. Before usage, it requires additional configuration as described in this article. For information about how to configure invoicing features and apply changes, see [Work with feature setups](../global/e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they're processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Panama.
@@ -94,7 +94,7 @@ On the screenshot below you can see these feature parameters with the values pro
     ![Screenshot of the feature parameters.](ltm-pan-e-invoice-glob-feature-parameters.png)
 
 ### Outbound flow pipeline
-To review the processing pipeline, go to the **Feature setup** upder the **Setups** tab, select the desired derived document type, and click **Edit**. The outbound flow consist of the following actions:
+To review the processing pipeline, go to the **Feature setup** in the **Setups** tab, select the desired derived document type, and click **Edit**. The outbound flow consist of the following actions:
 1. **Transform document**: a format that can be sent to Edicom is generated.
 1. **Integrate with Edicom**: the generated invoice is submitted to Edicom
 1. **Get status from Edicom for an invoice**: after the submission, the signed XML is fetched from Edicom. This document might not be immediately available as it takes some time for the PAC to generate it.
@@ -107,19 +107,19 @@ To review the processing pipeline, go to the **Feature setup** upder the **Setup
     ![Screenshot of the outbound pipeline.](ltm-pan-e-invoice-outbound-pipeline.png)
 
 	> [!NOTE]
-    > For each format included in the **Panama electronic invoice (PA)** feature there is a similiar setup. For Panama there are two. One for inventory and free text invoices (**Inventory e-invoice (PA)**) and the other for project invoices (**Project e-invoice (PA)**).
+    > For each format included in the **Panama electronic invoice (PA)** feature there is a similar setup. For Panama there are two. One for inventory and free text invoices (**Inventory e-invoice (PA)**) and the other for project invoices (**Project e-invoice (PA)**).
 
 So in case for Panama the setups are:
 
-![Screenshot of diferent setups.](ltm-pan-e-invoice-setups.png)
+![Screenshot of different setups.](ltm-pan-e-invoice-setups.png)
 
 ### Applicability rules
-To provide context to find the exact Electronic Invoicing Globalization feature to run in the Electronic Invoicing Service, the Applicability rules must be poperly configured. These rules are provided out-of-the box checking the legal entity in the country ISO code. This particular feature setup supports all three types of invoices, customer invoices, debit notes, and credit notes.
+To provide context to find the exact Electronic Invoicing Globalization feature to run in the Electronic Invoicing Service, the Applicability rules must be properly configured. These rules are provided out-of-the box checking the legal entity in the country ISO code. This particular feature setup supports all three types of invoices, customer invoices, debit notes, and credit notes.
 ![Screenshot of the setup on the Applicability rules.](ltm-pan-e-invoice-applicability-rules.png)
 	
 
 ### Variables
-These are the following variables used in the outbound data flow actions of the Panaman feature (provided out-of-the-box):
+These are the following variables used in the outbound data flow actions of the Panama feature (provided out-of-the-box):
 - **BusinessDocumentDataModel**: the Business Document Data model variable received from Finance / SCM and transformed into the format required for submission.
 - **SignedXML**: the signed XML variable sent back to Finance / SCM, which contains the base 64 encoded response body from the Get Signed XML from Edicom step. As mentioned above, it is used in the response types to save as an attachment to the invoice journal and generate printable reports with QR codes.
 
