@@ -302,7 +302,7 @@ The sample CDX resource file in the Retail SDK contains additional customization
 
 **ChannelDBSchema='ext'** – This field is included so that the resource reads from the extension schema in the channel database.
 
-**Subjob Id="RetailTransactionTable"** – You must make sure that the SubJob ID is the same as the original subjob id for that table. so that the extensibility framework can determine that you're customizing the existing subjob. If you use new subjob di, system will throw duplicate subjob error for the same table.
+**Subjob Id="RetailTransactionTable"** – You must make sure that the SubJob ID is the same as the original subjob id for that table. so that the extensibility framework can determine that you're customizing the existing subjob. If you use new subjob ID, system will throw duplicate subjob error for the same table.
 
 **TargetTableName ="CONTOSORETAILTRANSACTIONTABLE"** - Your channel extension table name.
 
