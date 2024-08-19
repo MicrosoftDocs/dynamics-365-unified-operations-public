@@ -35,7 +35,7 @@ ms.search.form: SMASubscriptionTable
 
 If the **Reverse accruals on crediting** field in the **Service management parameters** form is set to **Manual**, you have to reverse each accrued revenue transaction individually before you create a credit note proposal for the transaction.
 
-## See also
+## Related information
 
 [Invoice subscription transactions](invoice-subscription-transactions.md)
 

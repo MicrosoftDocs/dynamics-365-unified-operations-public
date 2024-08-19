@@ -18,7 +18,7 @@ ms.search.form:
 
 ## Create and customize a calculation model
 
-To create and customize a calculation model, you must first open an existing calculation profile. (For more information, see [Work with calculation profiles](calculation-profiles.md).) You can then fully customize the model that the selected profile uses by adding, removing, and arranging tiles, and configuring settings for each of them.
+To create and customize a calculation model, you must first open an existing calculation profile. (Learn more in [Work with calculation profiles](calculation-profiles.md).) You can then fully customize the model that the selected profile uses by adding, removing, and arranging tiles, and configuring settings for each of them.
 
 Follow these steps to create and customize a calculation model.
 
@@ -171,7 +171,7 @@ f(x) = a(x) &times; Price(product-ID)
 - **Step name** – The specific name of the tile. The name is also shown in the flowchart.
 - **Description** – A short description of the tile.
 - **Created by** – The user who created the tile.
-- **Primary price list** – Select the primary data table that contains your price list. The list includes all the tables that are currently defined for use with Demand planning. (For more information, see [Set up tables](import-data.md).) The price list must include columns for product IDs and prices.
+- **Primary price list** – Select the primary data table that contains your price list. The list includes all the tables that are currently defined for use with Demand planning. (Learn more in [Set up tables](import-data.md).) The price list must include columns for product IDs and prices.
 - **Fallback price list** – If the system can't find a matching price in the primary price list, it checks any price list that you select here.
 
 ### Phase in/out tiles

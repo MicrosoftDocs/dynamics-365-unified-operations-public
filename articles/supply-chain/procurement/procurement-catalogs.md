@@ -56,7 +56,7 @@ Updates are published either automatically or manually, depending on the option 
 -   **Both** – If the catalog includes product categories that have a default update type of **Static**, it must be manually updated when these categories are updated. If the catalog includes product categories that have a default update type of **Dynamic**, it is automatically updated whenever it's changed.
 
 
-## Additional resources
+## Related information
 
 [Set up a procurement category hierarchy](tasks/set-up-procurement-category-hierarchy.md)
 

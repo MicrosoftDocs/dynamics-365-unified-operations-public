@@ -42,8 +42,8 @@ You can use the fields at the top of the **Message processor messages** page to 
 - **Message type** – The type of message.
 - **Message queue** – The name of the queue that the message will be processed in. The following queues are provided:
 
-    - *Manufacturing Execution 3rd Party* – This queue holds messages that are created as part of the *Manufacturing execution system integration* feature. These messages are also listed on the **Manufacturing execution systems integration** page, which is like the **Message processor messages** page but is focused exclusively on that feature. For more information, see [Integrate with third-party manufacturing execution systems](../production-control/mes-integration.md).
-    - *Production* – This queue holds messages that are created as part of the *Make finished goods physically available before posting to journals* feature. These messages are also listed on the **Deferred production order posting** page, which is like the **Message processor messages** page but is focused exclusively on that feature. For more information, see [Make finished goods physically available before posting to journals](../production-control/deferred-posting.md).
+    - *Manufacturing Execution 3rd Party* – This queue holds messages that are created as part of the *Manufacturing execution system integration* feature. These messages are also listed on the **Manufacturing execution systems integration** page, which is like the **Message processor messages** page but is focused exclusively on that feature. Learn more in [Integrate with third-party manufacturing execution systems](../production-control/mes-integration.md).
+    - *Production* – This queue holds messages that are created as part of the *Make finished goods physically available before posting to journals* feature. These messages are also listed on the **Deferred production order posting** page, which is like the **Message processor messages** page but is focused exclusively on that feature. Learn more in [Make finished goods physically available before posting to journals](../production-control/deferred-posting.md).
     - *Warehouse*  – This queue holds messages that are created for warehouse management, such as to post a sales packing slip when the last shipment container is closed as part of a [manual packing process](../warehousing/packing-containers.md). (This message has a message type of *Run packing slip for container*.)
     - *Shipment Orders* – This queue holds messages that support [Warehouse management only mode](../warehousing/wms-only-mode-overview.md).
     - *Source System Products* – This queue holds messages that support [source product master data](../warehousing/wms-only-mode-exchange-data.md).
@@ -262,7 +262,7 @@ Because a bottleneck can occur when records are picked up for processing for mul
 - Bundle 2 - Production order 2 – Start message
 - Bundle 2 - Production order 2 – Report as finished message
 
-For scalability, when you develop a new queue, you can configure the number of tasks that should process the bundles. (For more information, see [Implement a new queue](#custom-queue).) If the configuration uses two message processor tasks, the two bundles can be processed in parallel.
+For scalability, when you develop a new queue, you can configure the number of tasks that should process the bundles. (Learn more in [Implement a new queue](#custom-queue).) If the configuration uses two message processor tasks, the two bundles can be processed in parallel.
 
 ## Implementation examples
 

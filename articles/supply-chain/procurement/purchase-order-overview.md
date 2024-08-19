@@ -65,7 +65,7 @@ The **Approval status** field is used when a PO goes through a review process or
 - *In external review* – This status is used in scenarios where a purchase inquiry is sent to the vendor, so that the vendor can confirm terms of the PO. This status is also used in the process that is initiated by the **Confirmation request** action. For this process, the vendor is asked to confirm terms of the PO by connecting to your system and registering whether it confirms or rejects the order.
 - *Confirmed* – This status is assigned after the order has been confirmed. Typically, this status is the last approval status that is assigned to an order.
 
-## Additional resources
+## Related information
 
 - [Create purchase orders](purchase-order-creation.md)
 - [Approve and confirm purchase orders](purchase-order-approval-confirmation.md)

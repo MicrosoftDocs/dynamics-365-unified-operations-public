@@ -13,7 +13,7 @@ ms.search.form: VendRequestNewCategory
 
 [!include [banner](../includes/banner.md)]
 
-The category request process lets vendors request that new procurement categories be associated with their account. Those procurement categories can then be used by the related procurement and sourcing processes. (For more information, see [Procurement catalogs overview](procurement-catalogs.md).)
+The category request process lets vendors request that new procurement categories be associated with their account. Those procurement categories can then be used by the related procurement and sourcing processes. (Learn more in [Procurement catalogs overview](procurement-catalogs.md).)
 
 Category requests are initiated by vendors in the **Vendor information** workspace. They are then submitted to your agency for review and approval. Approved categories are added to the list of procurement categories for the vendor's account.
 
@@ -29,7 +29,7 @@ Before a vendor can interact with category requests, it must be set up for vendo
 
 The vendor must have at least one vendor collaboration user. Only vendor users with the *Vendor admin (external)* security role can create and submit category requests.
 
-For more information, see [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md).
+Learn more in [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md).
 
 ## Set up the Vendor category request workflow
 

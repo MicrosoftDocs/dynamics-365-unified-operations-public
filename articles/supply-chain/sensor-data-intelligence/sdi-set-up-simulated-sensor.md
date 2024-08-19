@@ -27,7 +27,7 @@ The following video shows how to set up a simulated sensor for testing. The rema
 
 You must first set up a device to authenticate the sensor signals to the Azure IoT Hub.
 
-1. In Azure, go to the list of resources for the resource group that you created for use with Sensor Data Intelligence. (For more information, see [Deploy an IoT solution on Azure](sdi-deploy-iot-solution-on-azure.md).)
+1. In Azure, go to the list of resources for the resource group that you created for use with Sensor Data Intelligence. (Learn more in [Deploy an IoT solution on Azure](sdi-deploy-iot-solution-on-azure.md).)
 1. In the resource list, find the record where the **Type** field is set to *IoT Hub*. In the **Name** column, select the name to open the details page for the resource.
 1. In the left navigation pane, select **Devices**.
 1. On the **Devices** page, select **Add device**.

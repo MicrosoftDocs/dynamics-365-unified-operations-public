@@ -36,7 +36,7 @@ Before a user can approve or reject nonconformances, you must link their user re
 3. In the **Worker** field, select the worker that enters quality data.
 4. In the **Worker responsible** field, select the worker that the selected worker enters work on behalf of. When nonconformances are created and updated, this worker will be entered by default in **Worker** fields.
 
-## Additional resources
+## Related information
 
 - [Quality management overview](quality-management-processes.md)
 - [Enable quality and nonconformance management](enable-quality-management.md)

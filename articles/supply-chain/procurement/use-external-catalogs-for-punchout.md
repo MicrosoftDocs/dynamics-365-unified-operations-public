@@ -37,7 +37,7 @@ After lines have been added to a requisition, you can add more lines without usi
 
 When the requisition is ready, use the **Workflow** > **Submit** action to submit it for approval.
 
-### Additional resources
+### Related information
 
 - [Set up an external catalog for PunchOut e-procurement](set-up-external-catalog-for-punchout.md)
 - [Purchasing cXML enhancements](purchasing-cxml-enhancements.md)

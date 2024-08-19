@@ -30,7 +30,7 @@ In order to help you quickly gauge the urgency of a service order, the Gantt cha
 
 
 
-## See also
+## Related information
 
 [Prioritize service orders](prioritize-service-orders.md)
 

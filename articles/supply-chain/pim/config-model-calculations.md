@@ -21,7 +21,7 @@ Calculations are used in a product configuration model to calculate the configur
 
 ## Create a calculation
 
-A calculation consists of an expression and a target attribute. For more information, see [Calculations for product configuration models FAQ](calculate-product-configuration-models.md).
+A calculation consists of an expression and a target attribute. Learn more in [Calculations for product configuration models FAQ](calculate-product-configuration-models.md).
 
 To create a calculation for an existing product model, follow these steps.
 
@@ -95,7 +95,7 @@ If the `textAttribute` value has a solver value that equals *1aa*, this expressi
 > - The conditional statement must use the solver value of the attribute.
 > - Only fixed-list text attributes can be used in calculations.
 
-## See also
+## Related information
 
 - [Calculations for product configuration models FAQ](calculate-product-configuration-models.md)
 - [Add an expression constraint to a product configuration model](tasks/add-expression-constraint-product-configuration-model.md)

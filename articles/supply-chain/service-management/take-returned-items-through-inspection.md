@@ -34,7 +34,7 @@ ms.search.form: InventQuarantineOrder
 
 1. Close the form to save your changes.
 
-## See also
+## Related information
 
 - [Specify how to dispose of returned items](specify-how-to-dispose-of-returned-items.md)
 

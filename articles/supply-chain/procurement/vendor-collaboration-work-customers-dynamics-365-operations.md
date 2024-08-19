@@ -136,7 +136,7 @@ As a vendor, you can access part of the information that the customer maintains 
 
 The accessible information is the vendor name, addresses, contact information, contact persons and their contact information, identification numbers, tax registration numbers, procurement categories that the vendor is approved to sell to the customer in, and information about certifications.
 
-## Additional resources
+## Related information
 
 [Manage vendor collaboration users](manage-vendor-collaboration-users.md)
 

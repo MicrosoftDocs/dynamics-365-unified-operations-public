@@ -21,7 +21,7 @@ In the **Create subscription fee** form, set the **Get pricing from** field to *
 
 For example, if the base price is EUR 1,000, and the index is 110, the sales price is EUR 1,100.
 
-## See also
+## Related information
 
 [Create subscription fee transactions](create-subscription-fee-transactions.md)
 

@@ -78,7 +78,7 @@ The following table describes the commands that are available on the Action Pane
 | New | Add a forecast line to the upper grid. |
 | Delete | Remove the selected forecast line from the upper grid. |
 | Forecast balances | View forecast balances that have been calculated for the selected line's model ID for the current fiscal year. The balances are split by period (month). |
-| Cash flow forecasts | View forecast transactions that have been allocated to the general ledger. For more information, see [Cash flow forecasting](../../finance/cash-bank-management/cash-flow-forecasting.md). |
+| Cash flow forecasts | View forecast transactions that have been allocated to the general ledger. Learn more in [Cash flow forecasting](../../finance/cash-bank-management/cash-flow-forecasting.md). |
 | Inventory \> Display dimensions | Select the inventory dimensions that should be shown in the grid on the **Overview** tab. |
 
 ### Toolbar commands on the Overview tab of the Supply forecast page
@@ -183,7 +183,7 @@ The following table describes the commands that are available on the Action Pane
 | New | Add a forecast line to the upper grid. |
 | Delete | Remove the selected forecast line from the upper grid. |
 | Forecast balances | View forecast balances that have been calculated for the selected line's model ID for the current fiscal year. The balances are split by period (month). |
-| Cash flow forecast | View forecast transactions that must be allocated to the general ledger. For more information, see [Cash flow forecasting](../../finance/cash-bank-management/cash-flow-forecasting.md). |
+| Cash flow forecast | View forecast transactions that must be allocated to the general ledger. Learn more in [Cash flow forecasting](../../finance/cash-bank-management/cash-flow-forecasting.md). |
 | Display dimensions | Select the product, storage, and tracking dimensions that should be shown in the grid on the **Overview** tab. |
 | General ledger preview | View the general ledger entries for the selected transaction. |
 | Transfer quotation lines | Transfer quotation lines to the selected project. |
@@ -233,13 +233,13 @@ The **General** tab shows more information about the line that is currently sele
 | Report | Set this option to *Yes* to include the transaction in reporting. |
 | Comments | Enter any comments that you have about the forecast transaction. |
 | Active | Select this checkbox to include the transaction in budget reporting. The setting of this checkbox can't be modified for reporting transactions. |
-| Include in cash flow forecasts | Select this checkbox to allocate the forecast transaction to the general ledger. The setting of this checkbox can't be modified for reporting transactions. For more information, see [Cash flow forecasting](../../finance/cash-bank-management/cash-flow-forecasting.md). |
+| Include in cash flow forecasts | Select this checkbox to allocate the forecast transaction to the general ledger. The setting of this checkbox can't be modified for reporting transactions. Learn more in [Cash flow forecasting](../../finance/cash-bank-management/cash-flow-forecasting.md). |
 | Sales tax group | The tax group that is used to specify tax for the forecast transaction. |
 | Item sales tax group | The item tax group that is used to specify tax for the forecast transaction. |
 | Method | <p>Select the method that is used to allocate the forecast transaction:</p><ul><li>**None** – No allocation occurs.</li><li>**Period** – Forecast the same quantity for each period. If you select this value, specify a quantity in the **Per** field and a unit of time in the **Unit** field.</li><li>**Key** – Allocate the forecast according to the period allocation key that you specify in the **Period key** field. You can use this method when you want seasonal variation to be considered.</li><ul>|
 | Per | <p>Enter the number of time intervals into the future that the forecast extends. This field is available only if you select *Period* in the **Method** field.</p><p>For example, you select *Period* in the **Method** field, enter *1* in the **Per** field, and select *Months* in the **Unit** field. In the **End** field, you specify an end date that extends one year into the future. In this case, one forecast line will be created for each month of the upcoming year, based on the item and quantity that are specified on the header line. |
 | Unit | Select the unit of the time interval: *Days*, *Months*, or *Years*. Allocation then corresponds to the number of days, months, or years that you specify in the **Per** field.|
-| Period key | Specify the period allocation key that is used to allocate the forecast. For more information, see [Budget planning data allocation](../../finance/budgeting/budget-planning-data-allocation.md). |
+| Period key | Specify the period allocation key that is used to allocate the forecast. Learn more in [Budget planning data allocation](../../finance/budgeting/budget-planning-data-allocation.md). |
 | End | Specify the end date when you use the **Per** and **Unit** fields. |
 
 ### The Item tab on the Demand forecast page
@@ -335,7 +335,7 @@ Use the following procedure to process selected forecast transaction lines. When
     | Method | <p>Select the method that is used to allocate the forecast transaction:</p><ul><li>**None** – No allocation occurs.</li><li>**Period** – Forecast the same quantity for each period. If you select this value, specify a quantity in the **Per** field and a unit of time in the **Unit** field.</li><li>**Key** – Allocate the forecast according to the period allocation key that you specify in the **Period key** field. You can use this method when you want seasonal variations to be considered.</li><ul>|
     | Per | <p>Enter the number of time intervals into the future that the forecast extends. This field is available only if you select *Period* in the **Method** field.</p><p>For example, you select *Period* in the **Method** field, enter *1* in the **Per** field, and select *Months* in the **Unit** field. Then, in the **End** field, you specify an end date one year into the future. In this case, one forecast line will be created for each month of the upcoming year, based on the item and quantity that are specified on the header line. |
     | Unit | Select the unit of the time interval: *Days*, *Months*, or *Years*. Allocation then corresponds to the number of days, months, or years that you specify in the **Per** field.|
-    | Period key | Specify the period allocation key that is used to allocate the forecast. For more information, see [Budget planning data allocation](../../finance/budgeting/budget-planning-data-allocation.md). |
+    | Period key | Specify the period allocation key that is used to allocate the forecast. Learn more in [Budget planning data allocation](../../finance/budgeting/budget-planning-data-allocation.md). |
     | End | Specify the end date that applies to your settings in the **Per** and **Unit** fields. |
 
 1. Select **OK** to confirm your settings.
@@ -380,7 +380,7 @@ To set up a master plan so that it includes an inventory forecast, follow these 
     - **Forecast model** – Select the forecast model to apply. This model will be considered when a supply suggestion is generated for the current master plan.
     - **Include supply forecast** – Set this option to *Yes* to include the supply forecast in the current master plan. If you set it to *No*, supply forecast transactions won't be included in the master plan.
     - **Include demand forecast** – Set this option to *Yes* to include the demand forecast in the current master plan. If you set it to *No*, demand forecast transactions won't be included in the master plan.
-    - **Method used to reduce forecast requirements** – Select the method that should be used to reduce forecast requirements. For more information, see [Forecast reduction keys](planning-optimization/demand-forecast.md#reduction-keys).
+    - **Method used to reduce forecast requirements** – Select the method that should be used to reduce forecast requirements. Learn more in [Forecast reduction keys](planning-optimization/demand-forecast.md#reduction-keys).
 
 1. On the **Time fences in days** FastTab, you can set the following fields to specify the period that the forecast is included during:
 
@@ -408,7 +408,7 @@ To view the requirements that are calculated, open the **Gross requirement** pag
 
 To view the planned orders that are generated, go to **Master planning \> Common \> Planned orders**, and select the appropriate forecast plan.
 
-## Additional resources
+## Related information
 
 - [Demand forecasting overview](introduction-demand-forecasting.md)
 - [Demand forecasting setup](demand-forecasting-setup.md)

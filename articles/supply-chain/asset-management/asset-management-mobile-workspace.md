@@ -31,7 +31,7 @@ Specifically, the **Asset management** mobile workspace lets users perform these
 
 ## Prerequisites
 
-Before you can use the **Asset management** mobile workspace, your admin must set up the required user and worker accounts, and publish the workspace. For more information, see [Set up the Asset management mobile workspace](set-up-asset-management-mobile.md).
+Before you can use the **Asset management** mobile workspace, your admin must set up the required user and worker accounts, and publish the workspace. Learn more in [Set up the Asset management mobile workspace](set-up-asset-management-mobile.md).
 
 ## Download and install the mobile app
 

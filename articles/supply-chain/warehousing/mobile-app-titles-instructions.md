@@ -25,7 +25,7 @@ Before you can use this feature, it must be turned on for your system. As of Sup
 
 ## Step titles and step instructions in the app
 
-Every step in a task flow on the Warehouse Management mobile app is identified by a step ID. Additionally, every step has a title, icon, and instruction. (For more information, see [Assign step icons and titles for the Warehouse Management mobile app](step-icons-titles.md).)
+Every step in a task flow on the Warehouse Management mobile app is identified by a step ID. Additionally, every step has a title, icon, and instruction. (Learn more in [Assign step icons and titles for the Warehouse Management mobile app](step-icons-titles.md).)
 
 ### Step titles
 

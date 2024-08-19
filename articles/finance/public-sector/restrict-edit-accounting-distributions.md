@@ -1,10 +1,10 @@
 ---
 title: Restrict editing of accounting distributions on invoices
 description: Learn how to require that the financial dimensions on a purchase order (PO) match the dimensions on the corresponding vendor invoice.
-author: v-kiarnd
-ms.author: twheeloc
+author: leizi2015
+ms.author: raynezou
 ms.topic: article
-ms.date: 10/14/2020
+ms.date: 08/07/2024
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -31,7 +31,7 @@ Follow these steps to define the financial dimensions that must match between a 
 
 ## Work with locked financial dimensions on an invoice
 
-When you create a vendor invoice from a PO, you can't edit the locked financial dimensions. If you try to edit a locked financial dimension, you receive an error message, and the whole financial dimension string reverts to the original string.
+When you create a vendor invoice from a purchase order, you can't edit the locked financial dimensions. If you try to edit a locked financial dimension, you receive an error message, and the whole financial dimension string reverts to the original string.
 
 You can view financial dimensions for the invoice.
 
@@ -40,4 +40,4 @@ You can view financial dimensions for the invoice.
 3. On the **Vendor invoice** page, on the **Lines** FastTab, select **Financials \> Distribute amount**.
 
 > [!NOTE]
-> Financial dimensions aren't locked on lines that are manually added to an invoice and not based on PO. In this case, you can change the financial dimensions on the invoice as you require, until the invoice is posted.
+> The financial dimension advanced rule setting of the accounting structure is incompatible with this feature. When using the **Restrict editing of accounting distributions on invoices** feature, don't introduce additional segments for the main account.  

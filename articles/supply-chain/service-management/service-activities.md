@@ -21,7 +21,7 @@ Service activities are defined in the **Activity types** form. (Click **Sales an
 
 You can view the status of service activities in the **Dispatch board** form. You can also reassign activities from one worker to another worker in that form.
 
-## See also
+## Related information
 
 [Dispatch board (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))
 

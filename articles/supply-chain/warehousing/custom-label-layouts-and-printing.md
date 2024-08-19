@@ -131,7 +131,7 @@ Follow these steps to print a custom label.
 
 1. Select **OK**.
 
-## Additional resources
+## Related information
 
 - [Document routing label layouts](document-routing-layout-for-license-plates.md)
 

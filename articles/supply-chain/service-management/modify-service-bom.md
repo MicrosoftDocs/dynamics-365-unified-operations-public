@@ -51,7 +51,7 @@ You can record the history of an element in a service BOM. Every time that you u
 
 5.  In the **Designer** form, select the BOM line to delete, and then click **Delete BOM line**.
 
-## See also
+## Related information
 
 [Template BOMs](template-boms.md)
 

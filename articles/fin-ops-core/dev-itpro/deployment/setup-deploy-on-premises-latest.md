@@ -522,12 +522,15 @@ You can configure more than one SSRS node. For more information, see [Configurin
         .\Configure-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName BI
         ```
 
-        The Initialize-Database.ps1 script maps the gMSA to the following databases and roles.
+        The Initialize-Database.ps1 script performs the following actions:
 
-        | User           | Database | Database role |
-        |----------------|----------|---------------|
-        | svc-ReportSvc$ | master   | db\_owner |
-        | svc-ReportSvc$ | msdb     | db\_datareader, db\_datawriter, db\_securityadmin |
+        - Create two empty databases for reporting services: **DynamicsAxReportServer** and **DynamicsAxReportServerTempDB**.
+        - Map the gMSA to the following databases and roles.
+
+            | User           | Database | Database role |
+            |----------------|----------|---------------|
+            | svc-ReportSvc$ | master   | db\_owner |
+            | svc-ReportSvc$ | msdb     | db\_datareader, db\_datawriter, db\_securityadmin |
 
         The Configure-Database.ps1 script performs the following action:
 

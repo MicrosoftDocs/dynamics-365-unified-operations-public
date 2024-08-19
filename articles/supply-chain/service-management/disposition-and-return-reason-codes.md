@@ -23,7 +23,7 @@ Assign a disposition code when an item is received or during the physical inspec
 - Return the item to inventory and credit the customer for the cost of the item.
 - Repair the item and return it to the customer.
 
-## See also
+## Related information
 
 - [Set up return reason codes](set-up-return-reason-code.md)
 - [Set up disposition codes](set-up-disposition-codes.md)
