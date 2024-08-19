@@ -56,28 +56,34 @@ To use the features described in this article, your system must meet the followi
 
 ## Configure inventory transaction synchronization
 
-To set up the feature, follow these steps:
+To set up the feature for the first time, follow these steps to perfrom configure initialization:
+
+1. Sign in to Dynamics 365 FnO.
+1. Go to **Inventory Management > Setup > Inventory Visibility integration parameters**.
+1. Go to **Transaction** page.
+1. Enable **Enable adjustment journal sync** toggle.
+1. Click **Generate configurations**, this button will run auto-deploy script to create configure initialization in the FnO and the Inventory Visiblity Service side.
+1. Click **Enable posting job**, this button will open posting job sync periodic job setup page in the FnO.
+
+To update the feature configuration, follow these steps:
 
 1. Sign in to Power Apps, and open the **Inventory Visibility** app.
 1. On the navigation pane, select **Settings** \> **Feature management**.
 1. On the **Inventory transactions** tile, select **Manage**.
 1. Make the following sections in the top section of the **Transaction** page:
-    - **Enable feature** – Set to *True* to enable the feature. Set to *False* to disable. It's turned on by default
-    - **Is feature initialized** – <!--KFM: Description needed. -->
-    - **Fno adjustment integration activity Id** – <!--KFM: Description needed. -->
-    - **Fno environment URL** – <!--KFM: Description needed. -->
-    - **Fno sync max line count in adjustment journal** – <!--KFM: Description needed. -->
-    - **Periodically synchronize transaction to IV** - Set to *True* to set the system to synchronize inventory updates from the Inventory Visibility business layer to the Inventory Visibility service at regular intervals. Set to *False* to disable this functionality.
-    - **Periodically synchronize transaction to Fno** - Set to *True* to set the system to aggregate and synchronize inventory updates from the Inventory Visibility business layer to Supply Chain Management at regular intervals. When this is set to *False*, omnichannel transactions are still stored in the Inventory Visibility business layer, but they won't be synced to Supply Chain Management.
-    - **Inventory Visibility synchronization frequency** – Enter an integer to control how often (in minutes) the system should synchronize inventory updates from the Inventory Visibility business layer to Supply Chain Management (provided you've enabled this functionality). The default value is 1.
-    - **Fno synchronization frequency** – Enter an integer to control how often (in minutes) the system should synchronize inventory updates from the Inventory Visibility business layer to the Inventory visibility service (provided you've enabled this functionality). The default value is 2.
+    - **Enable feature** – Set to *True* to enable the feature. Set to *False* to disable. It's turned on once the configure initilization is completed from FnO.    
+    - **Periodically synchronize transaction to IV** - Set to *True* to set the system to auto synchronize inventory updates from the Inventory Visibility business layer to the Inventory Visibility service at regular intervals. Set to *False* to disable this functionality.
+    - **Inventory Visibility synchronization frequency** – Enter an integer to control how often (in minutes) the system should synchronize inventory updates from the Inventory Visibility business layer to Supply Chain Management (provided you've enabled this functionality). The default value is 5.     
+    - **Periodically synchronize transaction to Fno** - Set to *True* to set the system to auto aggregate and synchronize inventory updates from the Inventory Visibility business layer to Supply Chain Management at regular intervals. When this is set to *False*, omnichannel transactions are still stored in the Inventory Visibility business layer, but they won't be synced to Supply Chain Management.
+    - **Fno synchronization frequency** – Enter an integer to control how often (in minutes) the system should synchronize inventory updates from the Inventory Visibility business layer to the Inventory visibility service (provided you've enabled this functionality). The default value is 1440.
+    - **Fno sync max line count in adjustment journal** – Enter an integer to control the allowed maximum inventory adjustment lines per adjustment journal during sync back to Supply Chain Management. The default value is 10,000. 
 
 1. Use the **Fno integration mappings** section to control how data is mapped from the Inventory Visibility business layer to Supply Chain Management <!--KFM: This might be wrong. Please review/clarify. -->. Use buttons in the toolbar to add, edit, or delete mappings as needed. Make the following settings for each mapping:
     - **Physical measure name** – <!--KFM: Description needed. -->
-    - **Target Fno transaction type** – <!--KFM: Description needed. (default to Inventory adjustment journal) -->
-    - **Target FnO Transaction Status** – <!--KFM: General description of this setting is needed. --> Set to one of the following values:
-        - *None* – <!--KFM: Description needed. -->
-        - *Created* – The system won't automatically post transactions to Supply Chain Management. <!--KFM: This could be clearer. -->
+    - **Target Fno transaction type** –  Define the type of inventory journal created in Supply Chain Managment, default to Inventory adjustment journal
+    - **Target FnO Transaction Status** – Define the status of inventory journal created in Supply Chain Management, set to one of the following values:
+        - *None* – Select this status represent system will not allow to post transactions to Supply Chain Management.
+        - *Created* – The system won't automatically post transactions to Supply Chain Management. 
         - *Posted* – The journal will be posted financially when synced to Supply Chain Management.
 
 1. If **Periodically synchronize transaction to Fno** is set to *True*, then you must configure your system to offset inventory adjustments to prevent inventory quantities from being updated twice. For details, see [Inventory Visibility adjustment offset](inventory-visibility-adjustment-offset.md).
@@ -88,10 +94,10 @@ You can manually enter inventory adjustments directly into the Inventor Visibili
 
 1. Sign in to Power Apps, and open the **Inventory Visibility** app.
 1. On the navigation pane, select **Inquiries and reports** \> **Inventory transactions**.
-1. From the toolbar, select **Create transaction** \> **Inventory adjustment**. <!--KFM: Will we have other options here? -->
+1. From the toolbar, select **Create transaction** \> **Inventory adjustment**. <!--KFM: Will we have other options here?  Roger: No, this is the same page customer review the posted inventory adjustment transaction via API or Manual posted. The button on the toolbar provide the manual operation entrance. -->
 1. The **Create inventory adjustment** page opens. On the **Product and dimension information** FastTab, specify the product you want to adjust inventory for. If you don't see all of the product dimensions you need (such as color or style), then select **Edit dimensions** to add them.
-1. On the **Adjustment quantity** FastTab, select the **Data source**, **Physical measure**, and **Quantity** of the inventory adjustment.
-1. On the Additional information FastTab, you can specify the following optional information:
+1. On the **Adjustment quantity** FastTab, select the **Data source**, **Physical measure**, and **Quantity** of the inventory adjustment. By select Checkbox **Instant update to IV service** will directly update the inventory adjustment into the Inventory Visibility service cache from the staging area.
+1. On the **Additional information** FastTab, you can specify the following optional information:
     - **External reference category** – Specify the source transaction type for this inventory adjustment, such as sales order, inventory counting delta, or POS transaction.
     - **External reference ID** – Enter the source document ID from the external system.
     - **Supply Chain Management journal name** – Specify the inventory adjustment journal to use in Supply Chain Management. If you leave this field blank, the default journal name set in Supply Chain Management will be used.
