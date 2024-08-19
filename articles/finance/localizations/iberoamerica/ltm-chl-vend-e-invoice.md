@@ -3,15 +3,14 @@ title: Vendor electronic invoice import in Chile
 description: Learn how to configure and use vendor electronic invoice import for Chile in Microsoft Dynamics 365 Finance, including prerequisites.
 author: ankviklis
 ms.author: ankviklis
-ms.topic: article
-ms.date: 08/07/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 08/19/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Chile
 ms.search.validFrom: 2024-08-07
-ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.41
-ms.assetid: 
 ---
 
 # Vendor electronic invoice import in Chile
@@ -43,7 +42,7 @@ Before you complete the tasks in this article, the following prerequisites must 
 ## Configure the Electronic invoicing feature
 ### Import channel
 
-To enable an inbound flow, a **feature setup** of the **Import channel** type nedds to be created for the **Chilean electronic invoice (CL) "E-Invoicing for Chile: ISV last-mile connector with Edicom"** globalization feature as follows:
+To enable an inbound flow, a **feature setup** of the **Import channel** type needs to be created for the **Chilean electronic invoice (CL) "E-Invoicing for Chile: ISV last-mile connector with Edicom"** globalization feature as follows:
 1. Switch to the **Setups** tab of the derived feature.
 1. Click **Add** and opt for **Custom setup**.
 1. Specify **Name** and **Description** of the feature setup.
@@ -128,7 +127,7 @@ During the import process, products are identified by their external description
 To run the import vendor electronic invoices, follow these steps.
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Receive electronic documents**.
-2. On the **Receive electronic documents** dialog, cpecify the parameters as required.
+2. On the **Receive electronic documents** dialog, specify the parameters as required.
 3. Click **OK** to immediately start the import process or to schedule the import to run in the background.
 
 ### Import process description
