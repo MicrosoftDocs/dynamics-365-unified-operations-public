@@ -49,10 +49,7 @@ In this step, you create a new topic in the **Copilot in Finance and Operation**
 
 ## Step 2: Determine the course ID and language
 
-In the new topic, you'll use variables that are set with the user's page and record context to determine the course ID of the course, and add a question that Copilot will ask the user to determine the language the description must be translated into.
-
-> [!NOTE]
-> In an upcoming release, the record that the user is currently viewing in finance and operations apps will be available as a variable in Copilot Studio. This variable will be similar to other contextual variables that are highlighted in [Use application context with Copilot](copilot-application-context.md). In this way, Copilot will know the current record and won't have to ask the user to provide the course ID.
+In the new topic, you'll use variables that are set with the user's page and record context to determine the course ID of the course, and add a question that Copilot will ask the user to determine the language the description must be translated into. For more information on user context of finance and operations apps in copilot scenarios, see [Use application context with Copilot](copilot-application-context.md).
 
 1. Below the **Trigger** node, select the plus sign (**+**), and then select **Add a condition**.
 2. On the **Condition** node, set the condition to verify the user is on the Courses page.
@@ -60,33 +57,21 @@ In the new topic, you'll use variables that are set with the user's page and rec
    - Set the condition for the variable to be **is equal to** the value **HRMCourseTable**.
    - On the node, select **New condition**.
    - Set the new condition to verify the `Global.PA_Copilot_ServerForm_PageContext.titleField1Value` variable **is not Blank**.
-4. Under the **All other conditions** node, select the plus sign (**+**), and select **Ask a question** to create a **Question** node.Set the following values for the new node:
+3. Under the **Condition** node, create a new **Set variable value** node (Variable management \> Set a variable value).
+   - For the **Set variable** value, create a new variable named **CourseID**.
+   - For the **To value** value, enter the `Global.PA_Copilot_ServerForm_PageContext.titleField1Value` variable.
+
+5. On the other condition fork, under the **All other conditions** node, select the plus sign (**+**), and select **Ask a question** to create a **Question** node. Set the following values for the new node:
 
     - **Enter a message:** Enter **What is the course ID for the course description you want to translate?**
     - **Identify:** Specify **User's entire response**.
-    - **Save response as:** Select the variable, and change the **Variable name** value to **CourseID**.
+    - **Save response as:** Select the variable, and change the **Variable name** value to `CourseID`.
 
 1. Below the condition section, after the condition forks merge, select the plus sign (**+**), and then select **Ask a question** to create a second **Question** node. Set the following values for the new node:
 
     - **Enter a message:** Enter **Into what language do you want the description translated?**
     - **Identify:** Specify **Language**.
     - **Save response as:** Select the variable, and change the **Variable name** value to **LanguageChoice**.
-
-1. Select the plus sign (**+**), and then select **Variable management** \> **Set a variable value** to create a new node.
-1. Set the following values for the new node:
-
-    - **Set variable:** Create a new variable, and name it **LanguageCode**.
-    - **To value:** On the **Formula** tab, enter the following Microsoft Power Fx code.
-
-        ```powerapps-dot
-        Switch(Topic.LanguageChoice,
-            "Italian", "it",
-            "French", "fr",
-            "Spanish", "es",
-            "Russian", "ru",
-            "German", "de",
-            "Japanese", "ja")
-        ```
 
 ## Step 3: Create an action to get the course description
 
@@ -190,7 +175,7 @@ In the topic, create an action that uses a flow to get the course description.
     <img alt="Screenshot of an action that uses a flow to get the course description." src="../media/Copilot-extensibillity-get-course-description.png" width="70%">
 
 1. Back in Copilot Studio, in the **Save and refresh** dialog box, select **Done**.
-1. Below the **Set variable value** node, select the plus sign (**+**), and then select **Call an action**.
+1. Below the **Question** node for the language selection, select the plus sign (**+**), and then select **Call an action**.
 1. In the **Select an action** dialog box, select the **Get course description demo** action that you created in the flow.
 1. On the **Course description demo** action node, select the `Topic.CourseID` variable for the **CourseID (String)** input.
 
@@ -214,31 +199,17 @@ In the topic, create an action that uses AI Builder to translate the course desc
 1. In the **Prompt** field, enter "Translate `Course Description` into language `Language`", using the **Insert** action to select the variables in the prompt.
 2. Select **Test prompt** to test the prompt action.
 3. Select **Save custom prompt** and close the Prompt Builder window.
-
-
-1. Select the value to return to Copilot Studio.
-
-    1. Select the **Return value(s) to Power Virtual Agents** node.
-    1. Add an output of the **Text** type.
-    1. Enter **TranslatedText** as the name of the output.
-    1. In the **Enter a value to respond with** field, select the **Translated text** variable from the outputs of the **Translate text into another language** action node.
-
-1. Change the flow name to **Translate text demo**, and then select **Save**.
-
-    <img alt="Screenshot of an action that uses a flow to translate text into another language." src="../media/Copilot-extensibility-translate-text.png" width="70%">
-
 1. Back in Copilot Studio, in the **Save and refresh** dialog box, select **Done**.
-1. Below the **Course description demo** node, select the plus sign (**+**), and then select **Call an action** \> **Translate text demo**.
-1. On the **Translate text demo** action node, select the `Topic.CourseDescription` variable for the **TextToTranslate (String)** input.
-1. Select the `Topic.LanguageCode` variable for the **LanguageCode (String)** input.
-
-    <img alt="Screenshot of an action that translates a course description into a another language." src="../media/Copilot-extensibility-create-actions.png" width="70%">
+1. Below the **Course description demo** action node, select the plus sign (**+**), and then select **Call an action** \> **TranslateText**.
+   - On the **TranslateText** action node, select the `Topic.CourseDescription` variable for the **Course Description (String)** input.
+   - Select the `Topic.LanguageCode` variable for the **Language (String)** input.
+   - For the **predictionOutput** output, create a new `TextTranslation` variable.
 
 ## Step 5: Create a message to return the translated text to Copilot
 
 In the chatbot, add a message node that returns the translated course description output to Copilot in finance and operations apps.
 
-1. Below the **Translate text demo** action node, select the plus sign (**+**), and then select **Send a message**.
+1. Below the **TranslateText** action node, select the plus sign (**+**), and then select **Send a message**.
 1. In the **Enter a message** field, select the **Insert variable** action, and select the `Topic.TranslatedText` variable.
 
 ## Step 6: Test the new capability in Copilot
