@@ -32,7 +32,7 @@ The workload page offers insights into relevant warehouse operations, such as th
 
 When workers first open the workload page, they're shown an overview of unstarted tasks scheduled for the current warehouse. The following illustration shows how it looks. First, the app shows an overview (left). The worker can then tap the screen to see detailed information about open work by type, which lets them quickly grasp their day's objectives (right). Select the check-mark button to... <!--KFM: What does it do? -->. <!--KFM: Please review this paragraph; is this what we mean to say? -->
 
-:::image type="content" source="media/wma-insights-worklines.png" alt-text="Overview of un-started tasks scheduled for the current warehouse" lightbox="media/wma-insights-worklines.png":::
+:::image type="content" source="media/wma-insights-worklines.png" alt-text="Initial and detailed views of un-started work lines scheduled for the current warehouse" lightbox="media/wma-insights-worklines.png":::
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ Workers can choose whether or not to see the workload page each time they sign i
 1. Open the **Settings** menu. <!--KFM: How do we open this menu? -->
 1. Select the **Show copilot on startup** entry.
 
-    :::image type="content" source="media/wma-insights-startup.png" alt-text="The Show copilot on startup option in the settings menu" lightbox="media/wma-insights-startup.png":::
+    :::image type="content" source="media/wma-insights-startup.png" alt-text="The Show copilot on startup entry in the Settings menu" lightbox="media/wma-insights-startup.png":::
 
 1. Choose one of the following options:
    - *Yes*: Display the workload page each time you sign in (default setting).
@@ -65,7 +65,7 @@ Workers can choose whether to see workload data as headers or lines. To set this
 1. Open the **Settings** menu. <!--KFM: How do we open this menu? -->
 1. Select the **Show copilot data as** entry.
 
-    :::image type="content" source="media/wma-insights-data-option.png" alt-text="The Show copilot on startup option in the settings menu" lightbox="media/wma-insights-data-option.png":::
+    :::image type="content" source="media/wma-insights-data-option.png" alt-text="The Show copilot data as entry in the Settings menu" lightbox="media/wma-insights-data-option.png":::
 
 1. Choose one of the following options:
    - *Work lines*: Display the workload data as lines.
@@ -78,4 +78,4 @@ Regardless of whether a worker chooses to see the workload page at sign-in, they
 1. Open the **Main menu**. <!--KFM: How do we open this menu? -->
 1. Select the **Workload** button at the top of the screen.
 
-    :::image type="content" source="media/wma-insights-workload-button.png" alt-text="The Show copilot on startup option in the settings menu" lightbox="media/wma-insights-workload-button.png":::
+    :::image type="content" source="media/wma-insights-workload-button.png" alt-text="The workload button at the top of the Main menu" lightbox="media/wma-insights-workload-button.png":::
