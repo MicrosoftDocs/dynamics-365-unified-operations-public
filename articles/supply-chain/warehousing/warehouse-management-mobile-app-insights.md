@@ -11,7 +11,6 @@ ms.custom:
   - bap-template
 ---
 
-
 # Warehouse Management mobile app insights
 
 [!include [banner](../includes/banner.md)]
@@ -31,11 +30,9 @@ Workers can use these AI-generated insights to get an overview of their workday 
 
 The workload page offers insights into relevant warehouse operations, such as the number of active warehouse mobile sessions working in the same warehouse. This fosters a more connected and efficient workplace by promoting awareness and coordination among workers.
 
-When workers first open the workload page, they're shown an overview of unstarted tasks scheduled for the current warehouse. The following illustration shows how it looks. First, the app shows an overview (left). The worker can then tap the screen to see detailed information about open work by type, which lets them quickly grasp their day's objectives (right). Select the check-mark button to... <!--KFM: What does it do? -->.
+When workers first open the workload page, they're shown an overview of unstarted tasks scheduled for the current warehouse. The following illustration shows how it looks. First, the app shows an overview (left). The worker can then tap the screen to see detailed information about open work by type, which lets them quickly grasp their day's objectives (right). Select the check-mark button to... <!--KFM: What does it do? -->. <!--KFM: Please review this paragraph; is this what we mean to say? -->
 
 :::image type="content" source="media/wma-insights-worklines.png" alt-text="Overview of un-started tasks scheduled for the current warehouse" lightbox="media/wma-insights-worklines.png":::
-
-<!--KFM: What do we select here? I think we should tell a little bit more about this view. -->
 
 ## Prerequisites
 
