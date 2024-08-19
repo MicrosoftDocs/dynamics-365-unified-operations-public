@@ -117,7 +117,7 @@ The following calendars are relevant for ship and receipt date calculations:
 
 The purchase and vendor ship calendars are considered when the ship date is calculated. The warehouse (item coverage group) calendar is used when the receipt date is calculated.
 
-For more information, see [Calendars and master planning](supply-chain-calendars-master-planning.md).
+Learn more in [Calendars and master planning](supply-chain-calendars-master-planning.md).
 
 The following examples show how calendars affect the calculation of requested ship and receipt dates for purchase orders.
 

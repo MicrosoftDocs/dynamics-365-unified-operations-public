@@ -51,11 +51,11 @@ If you want to turn any of these features on or off, you must do so in [feature 
 | Transportation management | Performance improvements for post receipt function in Landed Cost | Improves performance of the Landed cost module by reducing the amount of information queried and updated when posting product receipts for large purchase orders. |
 | Transportation management | Post landed cost with the specified posting type and account value on cost type code when credit type is 'Ledger Account'. | Posts landed costs with the specified posting type and account value on cost type code when the credit type is *Ledger Account*. As a result, landed costs won't be posted to clearing account consistently. |
 
-## Additional resources
+## Related information
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.33 includes platform updates. To learn more, see [Platform updates for version 10.0.33 of Finance and Operations apps (May 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-33.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.33 includes platform updates. Learn more in [Platform updates for version 10.0.33 of Finance and Operations apps (May 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-33.md).
 
 ### Bug fixes
 

@@ -21,7 +21,7 @@ You use the **Tests** page to define and view the individual tests that determin
 - For quantitative tests, the **Type** field is set to *Integer* or *Fraction*. A unit of measure is also specified. Quality specifications and test results are expressed as numbers.
 - For qualitative tests, the **Type** field is set to *Option*. Qualitative tests require additional information about the test variable that is being measured and its enumerated options. Quality specifications and test results are expressed according to an outcome.
 
-You can optionally assign a test instrument to a test. However, test instruments aren't required to create and use tests with quality orders. For more information, see [Quality management test instruments](quality-test-instruments.md).
+You can optionally assign a test instrument to a test. However, test instruments aren't required to create and use tests with quality orders. Learn more in [Quality management test instruments](quality-test-instruments.md).
 
 You can also optionally specify a unit for a test, to indicate the unit of measure that test results are recorded in. For example, a test for temperature might include a unit of either degrees Fahrenheit or degrees Celsius.
 
@@ -47,7 +47,7 @@ Follow these steps to create a test.
 > [!NOTE]
 > After you save a test, you can no longer edit the **Type** field in the grid. If you must change the type of test results that will be recorded for a test, select **Change quality test type** on the Action Pane. In the **Change quality test type** dialog box, set the **New type** field to the desired type, and then select **OK** to close the dialog box.
 
-## Additional resources
+## Related information
 
 - [Quality management test instruments](quality-test-instruments.md)
 - [Quality management test groups](quality-test-groups.md)

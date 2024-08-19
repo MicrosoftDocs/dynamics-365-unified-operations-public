@@ -78,8 +78,6 @@ To turn on the clienteling functionality in your environment, follow these steps
 
 6. On the **Commerce parameters** page, on the **Clienteling** tab, in the **Client book attribute group** field, select the attribute group that you created.
 
-    ![Client book attribute group selected.](../media/Client%20book%20attributes.png "Client book attribute group selected")
-
 7. To capture activities that occur at the POS, define the activity types on the **Activity types** page (**Retail and Commerce \> Customers \> Activity types**).
 
     > [!NOTE]

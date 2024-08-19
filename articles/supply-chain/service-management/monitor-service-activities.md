@@ -35,7 +35,7 @@ While monitoring the day's service activity, you notice that John, a service tec
 
 Click **Service management** \> **Periodic** \> **Dispatch board**.
 
-## See also
+## Related information
 
 [Prioritize service orders](prioritize-service-orders.md)
 

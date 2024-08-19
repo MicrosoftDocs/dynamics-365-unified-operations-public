@@ -42,7 +42,7 @@ Separate reports provide information about each type of transaction. Use these r
 -   **Finished items in process** − This report lists current production orders and the report-as-finished transactions as of a specified transaction date.
 
 
-## Additional resources
+## Related information
 
 [Common sources of production variances](common-sources-of-production-variances.md)
 

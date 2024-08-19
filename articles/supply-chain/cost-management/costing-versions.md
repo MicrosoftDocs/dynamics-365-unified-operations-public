@@ -55,7 +55,7 @@ To enable purchase price content, you first define a BOM calculation group that 
 
 The purchase price records for items are also used as reference information. By changing the status of an item’s purchase price record from **Pending** to **Active**, you can update the item’s base purchase price. However, the base purchase price isn't site-specific and can be manually overridden. The item's base purchase price is used as a default purchase price on purchase orders.
 
-## Additional resources
+## Related information
 
 - [Glossary of terms in Dynamics 365 business processes](/dynamics365/guidance/business-processes/glossary#costing-methodology)
 - [Define service costing overview and relation to other business processes](/dynamics365/guidance/business-processes/concept-to-market-define-service-costing-overview)

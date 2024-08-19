@@ -80,7 +80,7 @@ The **Variance analysis statement** report lets you analyze revaluation variance
 -   Analyze back-dated inventory movements. Use the **Inventory value** report to view back-dated inventory movements that were entered after the conversion. The "From date and the To date for the report should correspond to the transition start date and the conversion date, minus one day. The report selection criteria should reflect the converted items. The report shows inventory movements that were made at standard cost during the transition period.
 
 
-## Additional resources
+## Related information
 
 [Prerequisites for a standard cost conversion](prerequisites-standard-cost-conversion.md)
 

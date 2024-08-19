@@ -18,7 +18,7 @@ When a return shipment arrives, you match it to a return order that has already 
 
 Depending on company policies, the items in the return shipment can be sent to quarantine for additional inspection or they can be returned to inventory.
 
-## See also
+## Related information
 
 - [Register the receipt of returned items](register-the-receipt-of-returned-items.md)
 - [Post arrival journal for returned products](post-arrival-journal-for-returned-products.md)

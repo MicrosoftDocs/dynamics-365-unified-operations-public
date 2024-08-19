@@ -18,7 +18,7 @@ This article explains how to enter replies to a request for quotation (RFQ), sco
 
 Before you start this procedure, you must have an RFQ that has two lines, and that has been sent to at least two vendors. To create this RFQ, complete the [Create a request for quotation](create-request-quotation.md) procedure. Scoring criteria must also be set up before you can complete this procedure.
 
-You can enter the bid as either a vendor or a procurement professional. For more information, see [Set up and maintain vendor collaboration](../set-up-maintain-vendor-collaboration.md).
+You can enter the bid as either a vendor or a procurement professional. Learn more in [Set up and maintain vendor collaboration](../set-up-maintain-vendor-collaboration.md).
 
 ## Enter a reply as a vendor
 

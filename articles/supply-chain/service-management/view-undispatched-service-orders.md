@@ -34,7 +34,7 @@ This article describes how to view activities in a service order that don’t ha
 
 5.  To view a list of service orders that don’t have a dispatch team assigned, click the **Undispatched** tab.
 
-## See also
+## Related information
 
 [Dispatch board (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))
 

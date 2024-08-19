@@ -30,7 +30,7 @@ Use the following steps to attach an inventory item to a service object:
 
 The item is now attached to the service object, and any inventory dimensions specified for the item are also copied to the service object.
 
-## See also
+## Related information
 
 [Service objects overview](service-objects.md)
 

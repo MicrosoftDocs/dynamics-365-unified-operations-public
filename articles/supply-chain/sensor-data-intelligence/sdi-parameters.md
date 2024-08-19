@@ -21,7 +21,7 @@ The **Sensor Data Intelligence parameters** page provides a few settings that yo
 
 ## Read and change connection details for your Azure IoT solution
 
-Typically, you will set up your Azure IoT solution and connect it to Microsoft Dynamics 365 Supply Chain Management from the **Deploy and connect Azure resources** page, which will guide you through both procedures. (For more information, see [Deploy an IoT solution on Azure](sdi-deploy-iot-solution-on-azure.md).) You can also view and edit the connection details at any time in Supply Chain Management by following these steps.
+Typically, you will set up your Azure IoT solution and connect it to Microsoft Dynamics 365 Supply Chain Management from the **Deploy and connect Azure resources** page, which will guide you through both procedures. (Learn more in [Deploy an IoT solution on Azure](sdi-deploy-iot-solution-on-azure.md).) You can also view and edit the connection details at any time in Supply Chain Management by following these steps.
 
 1. Go to **System administration \> Setup \> Sensor Data Intelligence \> Sensor Data Intelligence parameters**.
 1. On the **Time series** tab, in the **Redis metric store connection string** field, enter the **Primary connection string (StackExchange.Redis)** value for the Azure IoT solution that you want to connect to. For more information about how to find this value, see [Deploy an IoT solution on Azure](sdi-deploy-iot-solution-on-azure.md).

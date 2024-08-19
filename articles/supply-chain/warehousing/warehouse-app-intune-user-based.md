@@ -101,7 +101,7 @@ Follow these steps to set up Intune to fetch the Warehouse Management mobile app
 
 The Warehouse Management mobile app (version 2.0.41.0 and later) lets you import connection settings as a managed configuration through an MDM solution. The same **ConnectionsJson** configuration key is shared across all platforms.
 
-The following subsections provide examples that show how to set up Intune to provide managed configuration for each of the supported mobile platforms. For more information, see [App configuration policies for Microsoft Intune](/mem/intune/apps/app-configuration-policies-overview).
+The following subsections provide examples that show how to set up Intune to provide managed configuration for each of the supported mobile platforms. Learn more in [App configuration policies for Microsoft Intune](/mem/intune/apps/app-configuration-policies-overview).
 
 ### Create a connection JSON file
 
@@ -203,7 +203,7 @@ To enroll an Android or iOS device, install the [Intune Company Portal app](/mem
 
 There are several ways to enroll a Windows device. For example, you can install the [Intune Company Portal app](/mem/intune/user-help/sign-in-to-the-company-portal) on it. For information about how to set up the Company Portal app and how to use the other options that are available, see [Enroll Windows 10/11 devices in Intune](/mem/intune/user-help/enroll-windows-10-device).
 
-## Additional resources
+## Related information
 
 - [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)
 - [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md)

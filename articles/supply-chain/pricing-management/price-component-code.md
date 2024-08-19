@@ -92,7 +92,7 @@ Follow these steps to set up your price component codes.
         - **Line price attribute group** – If you set the **Line type** field to *Group*, specify the attribute group that the price attribute group combination will provide so that line attributes can be specified in pricing rules.
         - **Combination rank** – Assign a rank to the price attribute group combination. The rank is used to resolve concurrency if more than one pricing rule applies to the price component code. For more information, see the [Price attribute combination rank](#rank) section of this article.
 
-    - For price component codes where **Price component** is *Sales trade agreement*, the toolbar on the **Price attribute group combination** FastTab includes a **Trade agreement journals** button. Select a row, and then select this button to create a new trade agreement journal for the selected row. The selected row will be the default **Price attribute group combination** field in the trade agreement journal. For more information, see [Sales trade agreement prices](sales-trade-agreement-prices.md).
+    - For price component codes where **Price component** is *Sales trade agreement*, the toolbar on the **Price attribute group combination** FastTab includes a **Trade agreement journals** button. Select a row, and then select this button to create a new trade agreement journal for the selected row. The selected row will be the default **Price attribute group combination** field in the trade agreement journal. Learn more in [Sales trade agreement prices](sales-trade-agreement-prices.md).
 
 1. If you set the **Maintenance mode** field to *Separate*, use these guidelines to set up the **Price attribute group combination** FastTab:
 
@@ -108,7 +108,7 @@ Follow these steps to set up your price component codes.
         - **Line price attribute group** – If you set the **Line type** field *Group*, specify the attribute group that the price attribute group combination will provide so that line attribute can be specified in pricing rules.
         - **Combination rank** – Assign a rank to the price attribute group combination. The rank is used to resolve concurrency if more than one pricing rule applies to the price component code. For more information, see the [Price attribute combination rank](#rank) section.
 
-    - For price component codes where the **Price component** field is set to *Sales trade agreement*, the toolbar on the **Price attribute group combination** FastTab includes a **Trade agreement journals** button. Select a row, and then select this button to create a new trade agreement journal for the selected row. The selected row will be the default **Price attribute group combination** field in the trade agreement journal. For more information, see [Sales trade agreement prices](sales-trade-agreement-prices.md).
+    - For price component codes where the **Price component** field is set to *Sales trade agreement*, the toolbar on the **Price attribute group combination** FastTab includes a **Trade agreement journals** button. Select a row, and then select this button to create a new trade agreement journal for the selected row. The selected row will be the default **Price attribute group combination** field in the trade agreement journal. Learn more in [Sales trade agreement prices](sales-trade-agreement-prices.md).
 
 1. On the Action Pane, select **Save**.
 

@@ -66,7 +66,7 @@ If wave label generation fails (for example, if conversion of the work quantity 
 1. Follow the on-screen instructions to send the labels for printing.
 1. On the Action Pane, on the **Wave** tab, in the **Wave** group, select **Release** to manually release the work for the selected wave.
 
-## Additional resources
+## Related information
 
 - [Wave label printing](configure-wave-label-printing.md)
 - [Schedule work creation during wave](configure-wave-schedule-work-creation.md)

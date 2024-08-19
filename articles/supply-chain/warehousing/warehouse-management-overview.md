@@ -54,7 +54,7 @@ You must configure components for inbound and outbound warehouse process workflo
 - Cluster picking
 - Simple cross docking
 
-## Additional resources
+## Related information
 
 ### What's new and in development
 

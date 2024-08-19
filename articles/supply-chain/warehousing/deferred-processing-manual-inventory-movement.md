@@ -73,7 +73,7 @@ The batch job will process the warehouse app events according to the recurrence 
 
 The details of the message contain the details of the movement (for example, the "from" and "to" locations).
 
-For more information, see [Warehouse app event processing](warehouse-app-events.md).
+Learn more in [Warehouse app event processing](warehouse-app-events.md).
 
 ## Configure the mobile device menu to skip the deferred processing policy
 
@@ -83,7 +83,7 @@ For details about how to configure the mobile device menu to skip the deferred p
 
 For details about the impact on closed work dates, see [Deferred processing of warehouse work](deferred-put.md).
 
-## Additional resources
+## Related information
 
 - [Deferred processing of warehouse work](deferred-put.md)
 - [Warehouse app event processing](warehouse-app-events.md)

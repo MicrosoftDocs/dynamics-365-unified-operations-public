@@ -33,7 +33,7 @@ Use this procedure to set up a template that represents objects at a customer si
 
 8.  Close the forms to save your changes.
 
-## See also
+## Related information
 
 [Manage template BOMs on object relations](manage-template-boms-on-object-relations.md)
 
