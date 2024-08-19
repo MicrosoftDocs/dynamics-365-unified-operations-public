@@ -18,12 +18,13 @@ ms.custom:
 <!--KFM: Preview until 10.0.41 GA -->
 
 <!--KFM: There is some confusion in this article related to "transaction" vs "adjustment" vs "change". Are these always the same thing? -->
+<!--Roger: "Transaction" represent all type of business activities managed in the IVS, which include ("Adjustment / Counting / Transfer / etc..") , those transactions will lead to inventory "Change" in the backend FnO system. -->
 
-This article describes how to set up the system to sync inventory adjustments registered in an external system to Dynamics 365 Supply Chain Management and Inventory Visibility through the Inventory Visibility service business layer.
+This article describes how to set up the system to sync inventory adjustment transactions registered in an external system to Dynamics 365 Supply Chain Management and Inventory Visibility through the Inventory Visibility service business layer.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-This feature lets organizations that have multiple sources or channels of inventory operations working outside of Supply Chain Management use Inventory Visibility to store their omnichannel inventory transactions. Based on these transactions, Inventory Visibility can create and post inventory journals to Supply Chain Management. These capabilities provide the following key business benefits:
+This feature lets organizations that have multiple sources or channels of inventory operations working outside of Supply Chain Management use Inventory Visibility to store their omnichannel inventory transactions. Based on these transactions, Inventory Visibility can create and post inventory adjustment journals to Supply Chain Management. These capabilities provide the following key business benefits:
 
 - **Manage all omnichannel inventory adjustments all in one place** – You can post inventory adjustments across all channels and data sources to Inventory Visibility, which takes care of the aggregation and posting to Supply Chain Management
 
@@ -33,13 +34,13 @@ This feature lets organizations that have multiple sources or channels of invent
 
 ## Architecture and data flow
 
-Inventory Visibility introduces a new concept called the *business layer*, which sits on top of the Inventory Visibility service. The Inventory Visibility service processes and updates data in the cache, but doesn't directly write data back to Supply Chain Management. The business layer adds the following elements and capabilities:
+Inventory Visibility introduces a new concept called the *business layer*, which sits on top of the Inventory Visibility service. The Inventory Visibility service processes and updates data in the cache, but doesn't directly write data back to Supply Chain Management. The business layer feature adds the following elements and capabilities:
 
-- An inventory adjustment API (`/api/environment/{environmentId}/transaction/adjustment/bulk`), which has columns for integrating with Supply Chain Management journals and tracking source transactions/documents.
+- An inventory adjustment API (`/api/environment/{environmentId}/transaction/adjustment/bulk`) is designed to create inventory adjustment transactions in the Inventory Visibility business layer, which has columns for integrating with Supply Chain Management journals and tracking source transactions/documents.
 - An entity that stores omnichannel inventory transactions details that are posted to the Inventory Visibility business layer using the new API.
-- A configurable mechanism that auto-updates the Inventory Visibility service (in-memory cache service) at a regular interval.
-- A configurable mechanism that aggregates the detailed transactions and synchronizes to Supply Chain Management at a regular interval and according to defined rules.
-- A new user interface page for the Inventory Visibility app in Power Apps that lets you manually post inventory adjustments to the Inventory Visibility business layer, just as though you had used the API. The user interface also lets you view transactions in a detailed or aggregated format.
+- A configurable mechanism that auto-updates posted Inventory Adjustment transactions to the Inventory Visibility service (in-memory cache service) at a regular interval.
+- A configurable mechanism that aggregates the detailed Inventory Adjustment transactions and synchronizes to Supply Chain Management at a regular interval and according to defined rules.
+- A new user interface page for the Inventory Visibility app in Power Apps that lets you manually post inventory adjustment transactions to the Inventory Visibility business layer, just as though you had used the API. The user interface also lets you view transactions in a detailed or aggregated format.
 
 :::image type="content" source="media/sync-omnichannel-inventory-architecture.svg" alt-text="Architecture and data flow diagram." lightbox="media/sync-omnichannel-inventory-architecture.svg":::
 
@@ -48,8 +49,10 @@ Inventory Visibility introduces a new concept called the *business layer*, which
 To use the features described in this article, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.41 or later.
-- The feature that is named *Inventory Visibility integration with inventory adjustment posting* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 - You must be running Inventory Visibility Service version 1.2.3.88 or higher. For information about how to install Inventory Visibility, check its version number, and update it if needed, see [Install and set up Inventory Visibility](inventory-visibility-setup.md).
+- The feature that is named *Inventory Visibility integration with inventory adjustment posting* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+> [!NOTE]
+> Two dependent features: *Inventory Visibility integration with inventory adjustment offset* and *Inventory Visibility transaction integration* must be turned on in feature management.
 
 ## Configure inventory transaction synchronization
 
