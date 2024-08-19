@@ -234,7 +234,9 @@ The **ImportFromPackage** API is used to initiate an import from the data packag
 There's an async version of this API **ImportFromPackageAsync**. The specifications are the same. It will be required to capture the execution ID returned and the latter call the **GetExecutionSummaryStatus** API to determine when the execution has completed.   
 
 > [!NOTE]
-> The **ImportFromPackage** API supports composite entities. However, the limitation is that there can be only one composite entity in a package.
+> The **ImportFromPackage** API supports composite entities. However, the limitation is that package that consists of a composite data entity must only have that one composite data entity.
+>
+> The XMLField tags must be mapped to entities in manifest file for mapping to load correctly.    
 
 ```csharp
 POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ImportFromPackage
