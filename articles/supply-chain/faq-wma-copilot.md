@@ -20,7 +20,7 @@ This FAQ provides answers to frequently asked questions about the AI technology 
 
 ## What is Warehouse Management mobile app insights with Copilot?
 
-Warehouse Management mobile app insights with Copilot provides visibility in to the warehouse workload when workers start their shifts. It uses [Copilot](https://learn.microsoft.com/en-us/power-platform/faqs-copilot-data-security-privacy) to generate natural-language work insights.
+Warehouse Management mobile app insights with Copilot provides visibility in to the warehouse workload when workers start their shifts. It uses [Copilot](/power-platform/faqs-copilot-data-security-privacy) to generate natural-language work insights.
 
 ## What are capabilities of Warehouse Management mobile app insights with Copilot?
 
