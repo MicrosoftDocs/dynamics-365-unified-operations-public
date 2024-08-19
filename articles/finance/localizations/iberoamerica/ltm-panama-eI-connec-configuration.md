@@ -3,7 +3,9 @@ title: Get started with Electronic invoicing for Panama
 description: Learn how to set up Microsoft Dynamics 365 Finance to use Panamanian electronic invoices formats.
 author: Fhernandez0088
 ms.author: ankviklis
-ms.topic: article
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 08/19/2024 
 ms.custom: bap-template
 ms.reviewer: johnmichalak
