@@ -207,3 +207,7 @@ final class InventTransArchiveSqlStatementHelper_Extension
     }
 }
 ```
+
+## Learn more
+
+- [Consolidate inventory transactions FAQ](inventory-transactions-consolidation-faq.md)

@@ -1,5 +1,5 @@
 ﻿---
-title: Inventory transactions consolidation FAQ
+title: Consolidate inventory transactions FAQ
 description: Find answers to frequently asked questions about inventory transactions consolidation in Dynamics 365 Supply Chain Management.
 author: banluo-ms
 ms.author: banluo
@@ -11,7 +11,7 @@ ms.custom:
   - bap-template
 ---
 
-# Inventory transactions consolidation FAQ
+# Consolidate inventory transactions FAQ
 
 [!include [banner](../includes/banner.md)]
 
@@ -32,7 +32,7 @@ For WMS transactions, a new record with reference category `WHSInventTransArchiv
 
 We suggest that you lower the consolidation frequency to minimize the increase in the `InventTransOrigin` table.
 
-You can further optimize storage using the *Archive with Dataverse long term retention* feature to remove and archive old records from the `InventTransOrigin` table (learn more in [Archive Dynamics 365 Supply Chain Management Inventory transactions data](../../fin-ops-core/dev-itpro/sysadmin/archive-inventory.md)). This will be released later. <!-- KFM: I strongly recommend against making promises regarding unreleased features. Please consider removing or hiding this for now... -->
+You can further optimize storage using the *Archive with Dataverse long term retention* feature to remove and archive old records from the `InventTransOrigin` table (this will be released later<!-- KFM: I recommend against making promises regarding unreleased features in documentation. Please consider removing or hiding this for now... -->). Learn more in [Archive Dynamics 365 Supply Chain Management Inventory transactions data](../../fin-ops-core/dev-itpro/sysadmin/archive-inventory.md).
 
 ## Why are some transactions not moved to the InventTransArchive table during consolidation?
 
