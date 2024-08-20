@@ -4097,6 +4097,8 @@
         href: faq-confirmed-po-changes.md
       - name: Responsible AI FAQ for Inquire into inventory with Copilot (preview)
         href: faq-inventory-query.md
+      - name: Responsible AI FAQ for Warehouse Management mobile app insights with Copilot
+        href: faq-wma-copilot.md
   - name: Development and administration for finance and operations apps 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 
