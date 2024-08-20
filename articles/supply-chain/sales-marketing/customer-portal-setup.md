@@ -19,8 +19,8 @@ ms.search.form:
 
 To implement the Customer portal, you must have the following licenses:
 
-- **Power Apps portals** – This license is required to host the Customer portal. Portals are licensed based on usage. For more information, see the [Power Apps portals licensing requirements](/power-platform/admin/powerapps-flow-licensing-faq#portals).
-- **Dual-write** – You must have the necessary licenses to enable dual-write for Supply Chain Management tables. For more information, see the [system requirements for dual-write](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
+- **Power Apps portals** – This license is required to host the Customer portal. Portals are licensed based on usage. Learn more in the [Power Apps portals licensing requirements](/power-platform/admin/powerapps-flow-licensing-faq#portals).
+- **Dual-write** – You must have the necessary licenses to enable dual-write for Supply Chain Management tables. Learn more in the [system requirements for dual-write](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-system-req.md).
 
 ## Dependencies on dual-write and Power Apps portals
 

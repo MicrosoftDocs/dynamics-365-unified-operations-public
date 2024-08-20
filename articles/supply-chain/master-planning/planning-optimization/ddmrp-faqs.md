@@ -60,7 +60,7 @@ Yes, DDMRP works with any functionality that the deprecated master planning engi
 
 ### Is the Demand Driven Institute part of Microsoft?
 
-No, the Demand Driven Institute is a separate organization that developed the DDMRP methodology. Microsoft developed the functionality that supports the DDMRP methodology in Supply Chain Management, and our solution has been certified by the Demand Driven Institute. For more information, see the [Demand Driven institute website](https://www.demanddriveninstitute.com/).
+No, the Demand Driven Institute is a separate organization that developed the DDMRP methodology. Microsoft developed the functionality that supports the DDMRP methodology in Supply Chain Management, and our solution has been certified by the Demand Driven Institute. Learn more at the [Demand Driven institute website](https://www.demanddriveninstitute.com/).
 
 ### Which Demand Driven Institute certifications are recommended for consulting teams?
 

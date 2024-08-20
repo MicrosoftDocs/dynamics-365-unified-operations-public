@@ -34,7 +34,7 @@ Warehouse transactions differ from inventory transactions in several ways. Here 
 
 Before you can use this feature, the following prerequisites must be in place:
 
-- You must update any customizations that rely on inventory transactions that will be replaced by warehouse transactions. For more information, see the [Audit and update your customizations to support warehouse transactions](#audit-customizations) section of this article.
+- You must update any customizations that rely on inventory transactions that will be replaced by warehouse transactions. Learn more in the [Audit and update your customizations to support warehouse transactions](#audit-customizations) section of this article.
 - You must be running Dynamics 365 Supply Chain Management version 10.0.32 or later.
 - If you are running Supply Chain Management version 10.0.35 or earlier, the feature that's named *Warehouse-specific inventory transactions* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In newer versions, this feature is fully integrated into the product, so it's either mandatory or no longer listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
@@ -42,7 +42,7 @@ Before you can use this feature, the following prerequisites must be in place:
 
 After you enable the *Warehouse-specific inventory transactions* feature, the following changes will occur in your system:
 
-- The system will no longer generate inventory transactions for warehouse operations. It will use warehouse transactions instead. Therefore, any customizations and extensions that rely on the relevant inventory transactions for warehouse operations must be updated. This change affects only those warehouse scenarios that you configure to use warehouse transactions. (For more information, see the [Choose which scenarios should use warehouse transactions](#choose-scenarios) section of this article.)
+- The system will no longer generate inventory transactions for warehouse operations. It will use warehouse transactions instead. Therefore, any customizations and extensions that rely on the relevant inventory transactions for warehouse operations must be updated. This change affects only those warehouse scenarios that you configure to use warehouse transactions. (Learn more in the [Choose which scenarios should use warehouse transactions](#choose-scenarios) section of this article.)
 - Several existing methods will no longer be called when warehouse operations are processed.
 
 When you try to enable the feature, the system performs a set of checks to identify extensions that might break because of these changes. If any issues are found, you receive an error message that identifies the extension and explains how it must be updated. If you receive such a message when you try to enable the feature, follow these steps.

@@ -44,7 +44,7 @@ To work with shipping containers, go to **Landed cost \> Containers setup \> Shi
 | Field | Description |
 |---|---|
 | Shipping container | Enter a unique identification name/number for the shipping container. |
-| Shipping container type | Select the type of shipping container. For more information, see the [Set up shipping container types](#shipping-container-types) section earlier in this article. |
+| Shipping container type | Select the type of shipping container. Learn more in the [Set up shipping container types](#shipping-container-types) section earlier in this article. |
 
 > [!NOTE]
 >

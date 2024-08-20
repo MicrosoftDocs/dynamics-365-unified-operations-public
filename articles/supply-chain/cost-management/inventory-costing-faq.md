@@ -427,7 +427,7 @@ When there's a price difference between the posting of a physical update and a f
 
 ### When I use moving average, what happens if there's an issue before the receipt?
 
-Typically, there might be an issue before the receipt either because you allow physical negative inventory for the item model group or because the issue is backdated. For more information, see the [Negative inventory](#negative-inventory) section of this article.
+Typically, there might be an issue before the receipt either because you allow physical negative inventory for the item model group or because the issue is backdated. Learn more in the [Negative inventory](#negative-inventory) section of this article.
 
 If you're backdating transactions, we recommend that you carefully consider your business process and operations to determine whether there's a way to avoid this scenario. If you backdate a transaction for an item that uses moving average, the system will assign the current moving average to the transaction. Later issues aren't adjusted. For more information about moving average with backdated transactions, see [Moving average](moving-average.md).
 

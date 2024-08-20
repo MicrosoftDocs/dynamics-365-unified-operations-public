@@ -242,7 +242,7 @@ Use the following procedure to create a new machine learning workspace.
 1. Complete the wizard by following the on-screen instructions. Keep the following points in mind as you work:
 
     - Use default settings unless other points in this list recommend different settings.
-    - Be sure to select the geographic region that matches the region where your instance of Supply Chain Management is deployed. Otherwise, some of your data might pass through region boundaries. For more information, see the [privacy notice](#privacy) later in this article.
+    - Be sure to select the geographic region that matches the region where your instance of Supply Chain Management is deployed. Otherwise, some of your data might pass through region boundaries. Learn more in the [privacy notice](#privacy) later in this article.
     - Use dedicated resources, such as resource groups, storage accounts, container registries, Azure key vaults, and networking resources.
     - On the **Set up Azure Machine Learning Service connection parameters** page of the wizard, you must provide a storage account name. Use an account that is dedicated to demand forecasting. Demand forecasting input and output data will be stored in this storage account.
 
@@ -323,7 +323,7 @@ Use the following procedure to connect your Supply Chain Management environment 
     - **Tenant ID** – Enter the ID for your Azure tenant. Supply Chain Management will use this ID to authenticate with the Azure Machine Learning Service. You can find your tenant ID on the **Overview** page for Microsoft Entra ID in the Azure portal.
     - **Service principal application ID** – Enter the application ID for the application that you created in the [Active Directory Application](#aad-app) section. This value is used to authorize API requests to Azure Machine Learning Service.
     - **Service principal secret** – Enter the service principal application secret for the application that you created in the [Active Directory Application](#aad-app) section. This value is used to acquire the access token for the security principal that you created to perform authorized operations against Azure Storage and the Azure Machine Language workspace.
-    - **Storage account name** – Enter the Azure storage account name that you specified when you ran the setup wizard in your Azure workspace. (For more information, see the [Set up machine learning in Azure](#ml-workspace) section.)
+    - **Storage account name** – Enter the Azure storage account name that you specified when you ran the setup wizard in your Azure workspace. (Learn more in the [Set up machine learning in Azure](#ml-workspace) section.)
     - **Pipeline endpoint address** – Enter the URL of the pipeline REST endpoint for your Azure Machine Learning Service. You created this pipeline as the last step when you [set up machine learning in Azure](#ml-workspace). To get the pipeline URL, sign in to your Azure portal, select **Pipelines** on the navigation. On the **Pipeline** tab, select the pipeline endpoint that is named **TriggerDemandForecastGeneration**. Then copy the REST endpoint that is shown.
 
     ![Parameters on the Azure Machine Learning Service tab of the Demand forecasting parameters page.](media/azure-ml-service-parameters.png "Parameters on the Azure Machine Learning Service tab of the Demand forecasting parameters page")

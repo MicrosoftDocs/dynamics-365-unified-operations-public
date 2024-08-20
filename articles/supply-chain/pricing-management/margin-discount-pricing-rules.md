@@ -58,8 +58,8 @@ Set the following fields on the **General** FastTab for all types of pricing rul
 - **Currency** – Select the currency that the rule applies to.
 - **Price component** – This read-only field shows the type of pricing rule (*Discounts* or *Margin component*).
 - **Price component code** – Select the [price component code](price-component-code.md) that the rule applies to. Only existing price component codes of the applicable type are listed.
-- **Header price attribute group type** – This read-only field indicates how customers that the rule applies to are selected. It shows *All* if the rule applies to all customers. It shows *Group* if the rule applies to only a set of customers, as defined by values that are assigned to attributes that are part of an attribute group. You can set the value for the current rule by selecting **Header price attribute group** on the Action Pane. For more information, see the [Set up header price attribute values](#header-attributes) section of this article.
-- **Price attribute group** – If the **Header price attribute group type** field is set to *Group*, this read-only field shows the attribute group that's being used to define the set of customers that the current rule applies to. For more information, see the [Set up header price attribute values](#header-attributes) section.
+- **Header price attribute group type** – This read-only field indicates how customers that the rule applies to are selected. It shows *All* if the rule applies to all customers. It shows *Group* if the rule applies to only a set of customers, as defined by values that are assigned to attributes that are part of an attribute group. You can set the value for the current rule by selecting **Header price attribute group** on the Action Pane. Learn more in the [Set up header price attribute values](#header-attributes) section of this article.
+- **Price attribute group** – If the **Header price attribute group type** field is set to *Group*, this read-only field shows the attribute group that's being used to define the set of customers that the current rule applies to. Learn more in the [Set up header price attribute values](#header-attributes) section.
 
 ### General settings that apply only to margin price adjustments
 
@@ -103,7 +103,7 @@ The **Details** FastTab lets you enter more information about the pricing rule. 
 - **Description** – Enter a description of the pricing rule.
 - **Disclaimer** – Enter a disclaimer for the pricing rule.
 - **Text for fiscal receipt** – Enter text that will appear on the related fiscal receipt.
-- **Header price attribute details** – This read-only field summarizes the header price attribute values for the pricing rule. (You can access the header price attribute values by selecting **Header price attribute group** on the Action Pane.) For more information, see the [Set up header price attribute values](#header-attributes) section of this article.
+- **Header price attribute details** – This read-only field summarizes the header price attribute values for the pricing rule. (You can access the header price attribute values by selecting **Header price attribute group** on the Action Pane.) Learn more in the [Set up header price attribute values](#header-attributes) section of this article.
 
 ## Enter information on the Price/discount FastTab
 
@@ -270,7 +270,7 @@ If you want to add a note that gives more information about a line on the **Line
 
 ## <a name="header-attributes"></a>Set up header price attribute values
 
-Use header price attributes to control which customers the current pricing rule applies to. The limits apply to all lines and items that the rule applies to. (For more information, see the [Enter information on the Lines and Line details FastTabs](#items-lines) section of this article.) Follow these steps to set the header price attributes for the current pricing rule.
+Use header price attributes to control which customers the current pricing rule applies to. The limits apply to all lines and items that the rule applies to. (Learn more in the [Enter information on the Lines and Line details FastTabs](#items-lines) section of this article.) Follow these steps to set the header price attributes for the current pricing rule.
 
 > [!NOTE]
 > Before you can set header price attributes, you must assign a price component code on the **General** FastTab.

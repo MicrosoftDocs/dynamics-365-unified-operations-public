@@ -38,7 +38,7 @@ Product filters provide up to 10 **Filter title** characteristics, which are enu
 
     ![Setting up a product filter.](media/Product_Filters10.png "Setting up a product filter")
 
-1. In the **Description** field, enter a name for the code. For example, *Code 2* might represent vendors. You can then create a product filter for a specific vendor or group of vendors. For more information, see the [Setup vendor filter codes](#vendor-product-filters) section later in this article.
+1. In the **Description** field, enter a name for the code. For example, *Code 2* might represent vendors. You can then create a product filter for a specific vendor or group of vendors. Learn more in the [Setup vendor filter codes](#vendor-product-filters) section later in this article.
 
     ![Set of product filters.](media/Product_Filters.png "Set of product filters")
 

@@ -193,7 +193,7 @@ This section describes how and when the system calculates and recalculates reque
 
 The requested ship date calculation considers lead time (lead time per vendor if it's set up on trade agreements), the mode of delivery, and the vendor ship calendar. The lead time is the time that the vendor takes to produce the item. It doesn't include transport days (from vendor to company).
 
-You can configure how the system handles requested ship dates that are in the past. For more information, see the [Specify whether requested ship dates can be in the past](#parameters) section.
+You can configure how the system handles requested ship dates that are in the past. Learn more in the [Specify whether requested ship dates can be in the past](#parameters) section.
 
 ### Order date of planned purchase orders
 
@@ -246,13 +246,13 @@ In this scenario, there are two purchase transport days from the vendor shipping
     - **Requested receipt date** – The value is a date that's two days later than the **Requested ship date** value for the purchase order. The system calculates this date based on your setup on the **Purchase transport days** page. The following settings can also affect the calculation:
 
         - If the product that's ordered has lead time, the system adds that lead time to the transport time when it calculates the receipt date. (Therefore, the formula is *Requested ship date* = *Requested ship date* &plus; *Product lead time*.)
-        - The vendor ship calendar and warehouse calendar can also affect the date calculation by allowing for closing times at one or both locations. (For more information, see the [How calendars affect ship and receipt date calculations](#calendars) section.)
+        - The vendor ship calendar and warehouse calendar can also affect the date calculation by allowing for closing times at one or both locations. (Learn more in the [How calendars affect ship and receipt date calculations](#calendars) section.)
 
     Any update to the **Requested ship date** or **Requested receipt date** value causes the system to recalculate the dates. An update to the **Requested ship date** value triggers a forward calculation of the **Requested receipt date** value, and an update to the **Requested receipt date** value triggers a backward calculation of the **Requested ship date** value.
 
 ### Example scenario 2: Purchase order with dates in the past
 
-This scenario shows how the system handles requested ship dates that are in the past, based on the **Requested ship date in the past** setting. (For more information, see the [Specify whether requested ship dates can be in the past](#parameters) section.)
+This scenario shows how the system handles requested ship dates that are in the past, based on the **Requested ship date in the past** setting. (Learn more in the [Specify whether requested ship dates can be in the past](#parameters) section.)
 
 The default value of the **Requested ship date in the past** field is *None*. In this case, requested ship dates in the past are always allowed, and no warning is shown. This scenario shows what happens if you change the value to *Disallow with warning*. In this case, a warning message is always shown if requested ship dates are in the past. The system then finds the next earliest ship date that's after the current date.
 

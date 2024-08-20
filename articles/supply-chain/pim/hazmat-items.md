@@ -100,7 +100,7 @@ Here is a key to the formula:
 - *&lt;UnitConversion&gt;* is a conversion factor for converting between the unit that is used for the load line quantity and the unit that is specified for a product in the **Unit** field on the **Material management** FastTab.
 - *&lt;Multiplier&gt;* is the multiplier that is specified for a product in the **Multiplier** field on the **Material management** FastTab.
 
-This score is reported for each load line that contains a product where these values are specified. For more information, see the [Shipments that include hazardous materials](#hazmat-shipments) and [Loads that include hazardous materials](#hazmat-loads) sections later in this article.
+This score is reported for each load line that contains a product where these values are specified. Learn more in the [Shipments that include hazardous materials](#hazmat-shipments) and [Loads that include hazardous materials](#hazmat-loads) sections later in this article.
 
 #### How the hazardous material weight is calculated
 
