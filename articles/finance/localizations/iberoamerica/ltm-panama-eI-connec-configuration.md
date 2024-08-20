@@ -15,21 +15,21 @@ ms.reviewer: johnmichalak
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information that helps you get started with Electronic invoicing for Panama. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Microsoft Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/e-invoicing-set-up-overview.md). For this, we are partnering with Edicom for the last-mile integration with the Panamanian Tax Authorities.
+This article provides information that helps you get started with Electronic invoicing for Panama. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Microsoft Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/e-invoicing-set-up-overview.md). We are partnering with Edicom for the last-mile integration with the Panamanian Tax Authorities.
 
 After you configure electronic invoicing, you can generate, digitally sign, and submit the XML files of electronic invoices to the Authorized Certification Provider [**Edicom**](https://edicomgroup.com/electronic-invoicing/panama) according to the [regulatory requirements in Panama](https://dgi.mef.gob.pa/_7FacturaElectronica/).
 
 ![Diagram of the electronic invoicing workflow in Panama.](ltm-pan-e-invoice-workflow.png)
 
 > [!NOTE]
-> The electronic invoicing approach that this article describes is implemented using an invoicing service that's applicable only to cloud deployments of Finance or Supply Chain Management.
+> The electronic invoicing approach that this article describes is implemented using an invoicing service that's applicable only to cloud deployments of Microsoft Dynamics 365 Finance or Microsoft Dynamics 365 Supply Chain Management.
 
 > [!IMPORTANT]
-> This new E-Invoicing globalization feature for Panama (outbound flow) requires you to be on Dynamics 365 Finance version 10.0.41 or later. It can only be imported into the new Globalization Studio and it is not supported in RCS.
+> This new E-Invoicing globalization feature for Panama (outbound flow) requires you to be on Dynamics 365 Finance version 10.0.41 or later. It can only be imported into the new Globalization Studio, and it isn't supported in RCS.
 
 ## Prerequisites
 
-Before you begin the procedures in this article, the following prerequisites must be met:
+Before you begin the procedures in this article, the following prerequisites must be met.
 
 1. Ensure that the settings for the Panamanian legal entity are in place. For more information, see [Set up legal entity and tax information for Panama ](ltm-set-up-legal-entity-tax-panama.md).
 1. Gain familiarity with and understanding of Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
@@ -51,7 +51,7 @@ Before you begin the procedures in this article, the following prerequisites mus
 
 ## Configure the electronic invoicing feature
 
-The **Panama electronic invoice (PA) "E-Invoicing for Panama: ISV last-mile connector with Edicom"** feature represents an outbound flow to issue the following sales documents:
+The **Panama electronic invoice (PA) "E-Invoicing for Panama: ISV last-mile connector with Edicom"** feature represents an outbound flow to issue the following sales documents.
 
 |Name                      |Code|Original Name               |
 |--------------------------|----|----------------------------|
@@ -66,10 +66,12 @@ The **Panama electronic invoice (PA) "E-Invoicing for Panama: ISV last-mile conn
 
 Some feature's parameters are published with default values. Before you deploy the electronic invoicing feature to the service environment, add a feature based on the one provided by Microsoft, complete common parameters on the **Feature parameters** tab, review the default values, and update them as required, so that they better reflect your business operations.
 
-For Panama we interact with Edicom at least three times in the pipeline, first to submit the invoice, next to fetch the signed XML, and finally to fetch the status of the submitted invoice. Each of these interactions requires common parameters such as Edicom connection details and the authentication token provided by Edicom. Also, these common parameters are reused in feature setup for all document types. These values are provided by Edicom when a company onboards.
+For Panama we interact with Edicom at least three times in the pipeline, first to submit the invoice, next to fetch the signed XML, and finally to fetch the status of the submitted invoice. Each of these interactions requires common parameters, such as Edicom connection details and the authentication token provided by Edicom. These common parameters are reused in feature setup for all document types. These values are provided by Edicom when a company onboards.
 
 > [!NOTE]
-> The simplification of configurations of common parameters - it is no longer needed to go to each action and feature setup, and specify these common connection parameters repeatedly - using the **Feature parameters** tab is only available starting from version 10.0.41.
+> The simplification of configurations of common parameters.
+> - You no longer needed to go to each action and feature setup and specify these common connection parameters repeatedly.
+> - Using the **Feature parameters** tab is only available starting from version 10.0.41.
 
 > [!IMPORTANT]
 > The **Panama electronic invoice (PA)** feature is provided by Microsoft. Before usage, it requires additional configuration as described in this article. For information about how to configure invoicing features and apply changes, see [Work with feature setups](../global/e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they're processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Panama.
