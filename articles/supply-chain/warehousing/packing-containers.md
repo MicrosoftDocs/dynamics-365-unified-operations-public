@@ -234,7 +234,7 @@ Follow these steps to set up a packing profile.
 
     - **Packing profile ID** – Enter a short ID for the profile.
     - **Description** – Enter a description of the packing profile.
-    - **Container packing policy** – Select the packing policy that applies to the profile. For more information, see the [Set up container packing policies](#packing-policy) section of this article.
+    - **Container packing policy** – Select the packing policy that applies to the profile. Learn more in the [Set up container packing policies](#packing-policy) section of this article.
     - **Container ID mode** – Select whether a container ID should automatically be generated when a container is created, or whether it must be manually created.
     - **Container type** – Select the container type that is used by default when a new container is created.
     - **Autocreate container at container close** – Select this checkbox to automatically create a new container if the previous container is closed, and one or more lines remain in the current shipment.

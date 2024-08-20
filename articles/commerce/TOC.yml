@@ -1582,26 +1582,6 @@
           href: localizations/dev-itpro/emea-aut-fi-sample.md
         - name: Deployment guidelines for fiscal integration sample for Austria (legacy)
           href: localizations/dev-itpro/emea-aut-fi-sample-sdk.md
-      - name: Brazil
-        items:
-        - name: Commerce localization for Brazil
-          href: localizations/brazil/latam-bra-commerce-localization.md
-        - name: Set up and deploy Commerce localization for Brazil
-          href: localizations/brazil/latam-bra-deployment.md
-        - name: NFC-e fiscal document functionality in Commerce POS for Brazil
-          href: localizations/brazil/latam-bra-nfce.md
-        - name: Manage customer information in POS for Brazil
-          href: localizations/brazil/latam-bra-customer-information.md
-        - name: Cancellation and return of NFC-e documents in Commerce POS for Brazil
-          href: localizations/brazil/latam-bra-nfce-cancel-return.md
-        - name: Postponed registration of NFC-e documents issued in offline contingency mode
-          href: localizations/brazil/latam-bra-nfce-contingency-mode.md
-        - name: Post Brazilian fiscal documents via retail statements in Commerce headquarters
-          href: localizations/brazil/latam-bra-retail-statements.md
-        - name: CF-e fiscal document and integration with SAT functionality in Commerce POS for Brazil
-          href: localizations/brazil/latam-bra-cf-e-sat.md
-        - name: Dynamics 365 Payment Connector for Adyen in Commerce POS for Brazil
-          href: localizations/brazil/latam-bra-adyen.md
       - name: Eastern Europe
         items:
         - name: Common
@@ -1680,20 +1660,6 @@
           href: localizations/dev-itpro/emea-nor-fi-migration.md
         - name: Deployment guidelines for cash registers (legacy)
           href: localizations/dev-itpro/emea-nor-loc-deployment-guidelines.md
-      - name: Russia
-        items:
-        - name: Commerce localization for Russia
-          href: localizations/russia/rus-commerce-localization.md
-        - name: Set up Commerce localization for Russia
-          href: localizations/russia/rus-commerce-setup.md
-        - name: Prepayments in Commerce for Russia
-          href: localizations/russia/rus-commerce-prepayments.md
-        - name: Simplified customer address format in Commerce POS for Russia
-          href: localizations/russia/rus-simplified-address.md
-        - name: Fiscal printer integration sample for Russia
-          href: localizations/russia/rus-fpi-sample.md
-        - name: Customer information management for Russia
-          href: localizations/russia/rus-customer-information.md
       - name: Saudi Arabia
         items:
         - name: Generate QR codes and print them on receipts for Saudi Arabia

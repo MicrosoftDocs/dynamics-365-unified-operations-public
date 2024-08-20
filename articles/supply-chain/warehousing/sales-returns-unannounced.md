@@ -329,7 +329,7 @@ Follow these steps to create return item policies for the items that are used in
     - **Return acceptance:** *Allowed days after shipment*
     - **Allowed days for return:** *28*
 
-For more information, see the [Set up return item policies](#set-up-return-item-policies) section.
+Learn more in the [Set up return item policies](#set-up-return-item-policies) section.
 
 #### Set up return item receiving policies
 
@@ -338,7 +338,7 @@ Follow these steps to create return item receiving policies for the scenarios.
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Return item receiving policies**.
 1. Add two return item receiving policies: one for the *Blind return* process and one for the *Return details* process.
 
-For more information, see the [Create return item receiving policies](#return-receive-policy) section.
+Learn more in the [Create return item receiving policies](#return-receive-policy) section.
 
 #### Set up mobile device menu items and menus
 
@@ -356,7 +356,7 @@ Follow these steps to create mobile device menu items for the scenarios.
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu**.
 1. Add both menu items to an appropriate place in your mobile device menu structure.
 
-For more information, see the [Set up mobile device menu items](#mdmi) section.
+Learn more in the [Set up mobile device menu items](#mdmi) section.
 
 ## Example scenario 1: Customer return with a blind return policy
 

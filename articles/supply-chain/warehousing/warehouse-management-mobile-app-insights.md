@@ -9,6 +9,8 @@ ms.topic: how-to
 ms.date: 08/19/2024
 ms.custom: 
   - bap-template
+ms.collection:
+  - bap-ai-copilot
 ---
 
 # Workload insights with Copilot in the Warehouse Management mobile app
