@@ -466,7 +466,7 @@ The following table describes the various work types that you can use work confi
 
 The menu items that you create using the **Mobile device menu items** page will only become available to mobile device users after you add them to one or more menus using the **Mobile device menu** page.
 
-On the **Work users** page (**Warehouse management** \> **Setup** \> **Worker**), you can choose the top-level menu that each worker has access to on the mobile app (learn more in [Mobile device user accounts](mobile-device-work-users.md)). This way, you can set up a system that supports several different menu structures, where each worker only sees the menu items that are relevant to them.
+On the **Work users** page (**Warehouse management** \> **Setup** \> **Worker**), you can select the top-level menu that each worker has access to on the mobile app. (Learn more in [Mobile device user accounts](mobile-device-work-users.md).) In this way, you can set up a system that supports several different menu structures, where each worker sees only the menu items that are relevant to them.
 
 To set up menus for mobile devices, follow these steps:
 
