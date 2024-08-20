@@ -42,14 +42,15 @@ Before you complete the tasks in this article, the following prerequisites must 
 ## Configure the Electronic invoicing feature
 ### Import channel
 
-To enable an inbound flow, a **feature setup** of the **Import channel** type needs to be created for the **Chilean electronic invoice (CL) "E-Invoicing for Chile: ISV last-mile connector with Edicom"** globalization feature as follows:
+To enable an inbound flow, a **feature setup** of the **Import channel** type needs to be created for the **Chilean electronic invoice (CL) "E-Invoicing for Chile: ISV last-mile connector with Edicom"** globalization feature. To enable an inbound flow, follow these steps.
+
 1. Switch to the **Setups** tab of the derived feature.
-1. Click **Add** and opt for **Custom setup**.
+1. Select **Add** and opt for **Custom setup**.
 1. Specify **Name** and **Description** of the feature setup.
 1. Choose the **Import channel** setup type and select the **Edicom service** data channel.
-1. Click on the **Create** button.
+1. Select the **Create** button.
 1. Position on the created feature setup for the vendor invoice import.
-1. Click on **Edit**.
+1. Select on **Edit**.
 1. Complete the **Import channel parameters**. 
 
     The following illustration shows these feature setup parameters set to the values that Edicom provided to Microsoft for testing purposes. The values that you enter will differ. Edicom provides these values to you when you're onboarded.
@@ -128,7 +129,7 @@ To run the import vendor electronic invoices, follow these steps.
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Receive electronic documents**.
 2. On the **Receive electronic documents** dialog, specify the parameters as required.
-3. Click **OK** to immediately start the import process or to schedule the import to run in the background.
+3. Select **OK** to immediately start the import process or to schedule the import to run in the background.
 
 ### Import process description
 
@@ -148,7 +149,7 @@ Successfully imported vendor electronic invoices are shown in the system as pend
 Once the imported vendor electronic invoice has been reviewed in the **Accounts payable** \> **Invoices** \> **Pending vendor invoices** form, an application response with an acceptance or a rejection along with the corresponding comment and reason for rejection can be saved and submitted.
 
 To fill in the application response, perform the following steps:
-1. In the **Pending vendor invoices** opened in the edit mode for the desired invoice, click on the **Review** button on the top ribbon.
+1. In the **Pending vendor invoices** opened in the edit mode for the desired invoice, select the **Review** button on the top ribbon.
 1. Select the response type as required:
 	- Accept
 	- Accept with discrepancies
@@ -158,11 +159,11 @@ To fill in the application response, perform the following steps:
 	- Claim to the content of the document
 	- Claim for Partial Shortage of Goods
 	- Claim for Total Shortage of Goods
-1. Click **Save**.
+1. Select **Save**.
 For example:
 ![Screenshot of Application response.](ltm-chl-vend-e-invoice-app-response.png)
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**.
-1. Expand the **Records to include** fast tab and click on **Filter**.
+1. Expand the **Records to include** fast tab and select **Filter**.
 1. In **Joins**, add vendor invoices to the join for application response.
 ![Screenshot of Join for Application response.](ltm-chl-vend-e-invoice-join-4-app-response.png)
 1. Add the **Range** \> **Criteria** with the invoice number to the **Vendor invoices** table.
