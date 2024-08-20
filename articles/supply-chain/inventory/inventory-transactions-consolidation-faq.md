@@ -32,7 +32,8 @@ For WMS transactions, a new record with reference category `WHSInventTransArchiv
 
 We suggest that you lower the consolidation frequency to minimize the increase in the `InventTransOrigin` table.
 
-You can further optimize storage using the *Archive with Dataverse long term retention* feature to remove and archive old records from the `InventTransOrigin` table (this will be released later<!-- KFM: I recommend against making promises regarding unreleased features in documentation. Please consider removing or hiding this for now... -->). Learn more in [Archive Dynamics 365 Supply Chain Management Inventory transactions data](../../fin-ops-core/dev-itpro/sysadmin/archive-inventory.md).
+<!-- (KFM: Replace this when the feature is available)
+You can further optimize storage using the *Archive with Dataverse long term retention* feature to remove and archive old records from the `InventTransOrigin` table. Learn more in [Archive Dynamics 365 Supply Chain Management Inventory transactions data](../../fin-ops-core/dev-itpro/sysadmin/archive-inventory.md). -->
 
 ## Why are some transactions not moved to the InventTransArchive table during consolidation?
 
