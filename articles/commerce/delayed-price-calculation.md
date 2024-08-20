@@ -7,7 +7,7 @@ ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: yanonsong
+ms.author: yanansong
 ms.search.validFrom: 2017-06-20
 ms.custom: 
   - bap-template
