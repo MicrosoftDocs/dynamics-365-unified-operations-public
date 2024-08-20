@@ -6,11 +6,7 @@ ms.author: yanansong
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: InventCostOnhandItem
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: ec776b98-813a-490d-848f-468452d98fac
 ---
 
@@ -55,7 +51,7 @@ The following table shows what is a cost object and what is an inventory object.
 
 **Note:** The **Include physical value **parameter has no effect on the preceding calculations.
 
-## Additional resources
+## Related information
 
 [Product dimension group](/dynamicsax-2012/appuser-itpro/about-product-dimensions)
 

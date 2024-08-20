@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: ReturnDispositionCode
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 
@@ -32,7 +29,7 @@ You can also set up a reason code to help explain why an item was returned. For 
 
 1. If you want to define any external codes to match with the company's own disposition codes, select the **External codes** button to open the **External codes** form.
 
-## See also
+## Related information
 
 - [Return reason codes and disposition codes](disposition-and-return-reason-codes.md)
 - [Disposition codes (form)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))

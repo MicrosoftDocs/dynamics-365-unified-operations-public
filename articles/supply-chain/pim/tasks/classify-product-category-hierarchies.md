@@ -7,11 +7,7 @@ ms.topic: how-to
 ms.date: 08/02/2019
 ms.custom:
 ms.reviewer: kamaybac    
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-06-30
 ms.search.form: EcoResCategoryHierarchyListPage, EcoResCategoryHierarchyCreate, EcoResCategory, EcoResCategoryHierarchyRole
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Classify a product using category hierarchies

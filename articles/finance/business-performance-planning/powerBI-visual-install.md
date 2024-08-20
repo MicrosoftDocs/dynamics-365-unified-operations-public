@@ -4,7 +4,7 @@ description: Learn how to install business performance planning visuals, includi
 author: ShielaSogge
 ms.author: twheeloc
 ms.topic: article
-ms.date: 04/10/2024
+ms.date: 08/10/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -27,7 +27,7 @@ This article describes how to install business performance planning visuals. To 
 
 
     > [!NOTE]
-    > - You must have the **Allow custom visuals to get user Azure Active Directory access tokens** feature enabled in step 4. If this feature isn't enabled, you receive the following error: **Unable to authenticate to Dataverse service**.
+    > - You must have the AppSource Custom Visuals SSO feature enabled in step 4. If this feature isn't enabled, you receive the following error: **Unable to authenticate to Dataverse service**.
     > - In step 5, don't use Dataverse connector, because there are limits on the import of data that has logical names. This data is required for visual write-back functionality.
 
 ## Connect to your data

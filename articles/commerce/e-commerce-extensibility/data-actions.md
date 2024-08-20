@@ -2,16 +2,15 @@
 title: Data actions
 description: This article covers data actions in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 01/31/2020
-ms.topic: article
+ms.date: 08/01/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 # Data actions
 

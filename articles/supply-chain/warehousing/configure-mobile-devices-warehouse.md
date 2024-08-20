@@ -1,8 +1,8 @@
 ---
 title: Set up mobile devices for warehouse work
 description: Learn how to configure the menu items that warehouse workers use to perform work on a mobile device with a table that defines various options.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 05/16/2024
 ms.custom: 
@@ -51,12 +51,12 @@ If the **Mode** field for a menu item is set to **Indirect**, you can create a m
 | Flush number sequence cache | Delete number sequence numbers from the number sequence cache. This activity is typically performed by a system administrator to resolve caching issues when mobile devices are used. |
 | Change batch disposition | Allow a worker to specify a batch disposition code for an item and batch. This selection updates the disposition code that is specified for the batch. |
 | Display open work list | Show a list of available work to a particular user. The user can then select work to perform and will be directed to it. This list is intended to be viewed on tablet devices that have a screen size of 7 inches or more. When you select this option, the **Edit query** and **Field list** menu items become available. The **Edit query** page lets you set up criteria for the work that appears in the list. The **Field list** page lets you select what fields appear in the work list. For example, you can reduce the number of fields that appear, so that the user can more quickly select the most appropriate work item. On the **General** FastTab, in the **Records per page** field, you can also select how many work records are shown per page. If the **Allow users to filter work by transaction type** option is selected, the work list will include a **Filter work** control that the user can use to filter by transaction type. In the work list, users will see only work that they have permission to access. You must make sure that users have permission for one or more user-directed menu items that support the specific work class types that they should be able to access. Permissions are verified when a user tries to perform work from the list.|
-| Create transfer order from license plates | Allow warehouse workers to create and process transfer orders directly from the Warehouse Management mobile app. A worker starts by selecting the destination warehouse. The worker can then scan one or more license plates by using the app. After the warehouse worker selects **Complete order**, a batch job will create the required transfer order and order lines, based on the on-hand inventory that is registered for those license plates. For more information, see [Create transfer orders from the warehouse app](create-transfer-order-from-warehouse-app.md). |
-| Data inquiry | Enable the creation of warehouse app menu items that can be used to look up data from the mobile device as an inquiry list. For more information, see [Warehouse app data inquiry](warehouse-app-data-inquiry.md). |
-| Pack inventory into containers | Enable support for warehouse workers as they pack inventory items into containers. A worker starts by scanning a shipment to identify the inventory items that must be packed. The worker then identifies the destination shipping container by entering its ID or scanning its bar code. Finally, when the container is fully packed, the worker registers it as closed. This step makes the container ready for further processing by Microsoft Dynamics 365 Supply Chain Management. For more information, see [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md). |
+| Create transfer order from license plates | Allow warehouse workers to create and process transfer orders directly from the Warehouse Management mobile app. A worker starts by selecting the destination warehouse. The worker can then scan one or more license plates by using the app. After the warehouse worker selects **Complete order**, a batch job will create the required transfer order and order lines, based on the on-hand inventory that is registered for those license plates. Learn more in [Create transfer orders from the warehouse app](create-transfer-order-from-warehouse-app.md). |
+| Data inquiry | Enable the creation of warehouse app menu items that can be used to look up data from the mobile device as an inquiry list. Learn more in [Warehouse app data inquiry](warehouse-app-data-inquiry.md). |
+| Pack inventory into containers | Enable support for warehouse workers as they pack inventory items into containers. A worker starts by scanning a shipment to identify the inventory items that must be packed. The worker then identifies the destination shipping container by entering its ID or scanning its bar code. Finally, when the container is fully packed, the worker registers it as closed. This step makes the container ready for further processing by Microsoft Dynamics 365 Supply Chain Management. Learn more in [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md). |
 | Container creation | Enable the container creation process. This process is typically part of the process of [packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md). |
 | Container closing | Enable the container closing process. This process is typically part of the process of [packing containers by using the Warehouse Management mobile app](warehouse-app-packing-containers.md). |
-| Print container label | Enable container label printing. This process is typically part of the process of [packing containers by using the Warehouse Management mobile app](warehouse-app-packing-containers.md). For more information, see [Container label layouts and printing](print-container-labels.md). |
+| Print container label | Enable container label printing. This process is typically part of the process of [packing containers by using the Warehouse Management mobile app](warehouse-app-packing-containers.md). Learn more in [Container label layouts and printing](print-container-labels.md). |
 | Receiving completed confirmation | Enable support for receiving clerks to indicate *Receiving completed* for a load. |
 | Complete mixed license plate | Enable support for warehouse workers to [complete license plates](sales-returns-unannounced.md#complete-mixed-license-plate-receiving) recorded during [mixed license plate receiving](mixed-license-plate-receiving.md). |
 
@@ -487,7 +487,7 @@ To set up menus for mobile devices, follow these steps:
 
 1. On the Action Pane, select **Save**.
 
-## Additional resources
+## Related information
 
 - [Set up a mobile device menu item for completing work of type Purchase order](tasks/set-up-mobile-device-menu.md)
 - [Set up a mobile device menu item to register received items](tasks/set-up-mobile-device-menu-item-register-received-items.md)

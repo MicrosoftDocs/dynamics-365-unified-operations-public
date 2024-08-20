@@ -6,10 +6,7 @@ ms.author: yufeihuang
 ms.topic: article
 ms.date: 11/02/2017
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: fdd0939a-855c-430f-a684-94f3baea1df4
 ---
 

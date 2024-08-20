@@ -2,18 +2,15 @@
 title: Manage e-commerce users and roles
 description: This article explains how to grant users access to the authoring environment for your Microsoft Dynamics 365 Commerce site.
 author: bicyclingfool
-ms.date: 10/01/2019
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Application user
-ms.reviewer: v-chgriffin
-ms.search.region: global
-ms.author: stuharg
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: 10.0.5
 ms.custom: 
-ms.assetid: 
-ms.search.industry: 
-ms.search.form: 
+  - bap-template
 ---
 
 # Manage e-commerce users and roles

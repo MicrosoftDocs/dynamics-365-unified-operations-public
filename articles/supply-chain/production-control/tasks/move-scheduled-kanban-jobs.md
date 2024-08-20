@@ -8,10 +8,7 @@ ms.date: 11/07/2018
 ms.custom:
 ms.reviewer: kamaybac   
 audience: Application User 
-ms.search.region: Global
-ms.search.validFrom: 2016-06-30
 ms.search.form: KanbanJobSchedulingListPage
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Move scheduled kanban jobs

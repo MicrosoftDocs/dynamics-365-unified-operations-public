@@ -6,10 +6,7 @@ ms.author: henrikan
 ms.topic: article
 ms.date: 08/02/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-08-02
 ms.search.form:
-ms.dyn365.ops.version: 10.0.21
 ---
 
 # Sealed bidding for RFQs
@@ -61,8 +58,8 @@ In the next three steps, you will set up the connection to Key Vault. First, you
 To set up your key vault, follow these steps. The order of the steps is important.
 
 1. If you haven't already set up an Azure subscription that is separate from the subscription where you're running Supply Chain Management, set it up.
-1. Set up a key vault in your separate Azure storage. For more information, see [Maintaining Azure Key Vault storage](https://support.microsoft.com/help/4040294/maintaining-azure-key-vault-storage).
-1. Set up your Supply Chain Management app to work as a client for your key vault. For more information, see [Setting up Azure Key Vault Client](https://support.microsoft.com/help/4040305/setting-up-azure-key-vault-client).
+1. Set up a key vault in your separate Azure storage. Learn more in [Maintaining Azure Key Vault storage](https://support.microsoft.com/help/4040294/maintaining-azure-key-vault-storage).
+1. Set up your Supply Chain Management app to work as a client for your key vault. Learn more in [Setting up Azure Key Vault Client](https://support.microsoft.com/help/4040305/setting-up-azure-key-vault-client).
 
 ### Step 5: Configure Key Vault parameters in Supply Chain Management
 

@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 01/04/2021
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-01-04
 ms.search.form: WHSFilters,WHSFilterGroupTable,EcoResProductDetailsExtended,WHSFilterGenerallyAvail
-ms.dyn365.ops.version: 10.0.16
 ---
 
 # Configure product filters for warehouse transactions
@@ -151,7 +148,7 @@ To set up vendor filter codes, follow these steps.
 > [!NOTE]
 > The setup of vendor product filters applies to released products where warehouse management processes (WMS) are enabled for the associated storage dimension group. The filter codes are used to determine whether the system will allow users to purchase a given item from a given vendor when they create purchase order lines. Microsoft Dynamics 365 Supply Chain Management has two methods for handling vendor approval. If one or more released products exist where the **Approved vendor check method** field is set to *Warning only* or *Not allowed*, both vendor approval methods could be enabled for those items. This situation might cause issues when users create purchase order lines.
 
-## See also
+## Related information
 
 [For more information see the blog post WMS-Warehouse Filter Codes](http://blog.dynamics-for-operations.com/2017/09/26/wms-warehouse-filter-codes/)
 

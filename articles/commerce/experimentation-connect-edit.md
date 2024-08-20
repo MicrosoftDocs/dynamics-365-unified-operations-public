@@ -4,13 +4,15 @@
 title: Connect an experiment and edit variations
 description: This article describes how to connect an experiment in a third-party service to Dynamics 365 Commerce, and how to edit variations for the experiment.
 author: sushma-rao 
-ms.date: 06/07/2022
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: sushmar
+ms.author: asharchw
 ms.search.validFrom: 2020-09-30
+ms.custom: 
+  - bap-template
 ---
 
 # Connect an experiment and edit variations

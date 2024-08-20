@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 09/19/2018
 ms.custom: 
 ms.reviewer: kamaybac 
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMATemplateBOMTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Template BOMs
@@ -75,7 +72,7 @@ You have set up a three-year service agreement for a customer's car. During that
 
 ## Modify the template BOM
 
-If a template BOM has not been attached to a service object, you can modify or delete lines in it. After the template BOM is attached to a service object, you can modify only the local version of the BOM. If you want to duplicate the setup of a local version of a template BOM, you can create a new template BOM based on the local version. For more information, see [Modify a Service BOM](modify-service-bom.md).
+If a template BOM has not been attached to a service object, you can modify or delete lines in it. After the template BOM is attached to a service object, you can modify only the local version of the BOM. If you want to duplicate the setup of a local version of a template BOM, you can create a new template BOM based on the local version. Learn more in [Modify a Service BOM](modify-service-bom.md).
 
 If you replace an item in the BOM, you can register the replacement on the BOM line in the BOM designer. Optionally, you can create a service order line for the replacement object. If you create a service order line, you can invoice the replacement item. If you do not create a service order line for a replacement, the replacement registration is kept to track the history of the service object.
 
@@ -100,7 +97,7 @@ To use template BOMs, you must set up two number sequences. Set up one number se
 > [!NOTE]
 > The BOM history line number is used by the system to associate the transactions in the BOM history with a service agreement or service order. The number is not displayed in the user interface.
 
-## See also
+## Related information
 
 [Create a template BOM](create-template-bom.md)
 

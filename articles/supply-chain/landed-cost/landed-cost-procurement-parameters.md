@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 12/09/2020
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-12-09
 ms.search.form: SrmParameters
-ms.dyn365.ops.version: 10.0.17
 ---
 
 # Procurement and sourcing parameters for Landed cost

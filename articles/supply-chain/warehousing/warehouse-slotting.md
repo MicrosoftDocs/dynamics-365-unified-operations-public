@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 11/13/2020
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-07-01
 ms.search.form: WHSInventFixedLocation, WHSSlotDemandLocated, WHSSlotDemand, WHSSlotUOMTier, WHSSlotTemplate, WHSLocDirHint, WHSLocDirTable
-ms.dyn365.ops.version: 10.0.9
 ---
 
 # Warehouse slotting

@@ -9,7 +9,6 @@ ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.collection:
   - bap-ai-copilot
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -18,6 +17,8 @@ ms.search.form:
 [!include [banner](../includes/banner.md)]
 
 *Forecast models* let you arrange and configure tiles to define the forecast that's made by a forecast profile. Each model presents a flowchart that graphically represents the calculation that the model does.
+
+For a presentation about how forecast models and outlier removal methods work in Demand planning, see the following video on YouTube (starting at 16:53): [Deep dive into Demand Planning for Supply Chain Management | Dynamics 365 TechTalk](https://www.youtube.com/watch?v=H27SRU1ua-8&t=1013s).
 
 ## <a name="forecasting-algorithms"></a>Demand forecasting algorithms
 
@@ -107,7 +108,7 @@ If you have a custom Microsoft Azure Machine Learning algorithm that you want to
 
 ## Create and customize a forecast model
 
-To create and customize a forecast model, you must first open an existing forecast profile. (For more information, see [Work with forecast profiles](forecast-profiles.md).) You can then fully customize the model that the selected profile uses by adding, removing, and arranging tiles, and configuring settings for each of them.
+To create and customize a forecast model, you must first open an existing forecast profile. (Learn more in [Work with forecast profiles](forecast-profiles.md).) You can then fully customize the model that the selected profile uses by adding, removing, and arranging tiles, and configuring settings for each of them.
 
 Follow these steps to create and customize a forecast model.
 

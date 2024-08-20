@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMASubscriptionTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 
@@ -37,7 +34,7 @@ If a subscription transaction period runs from January 1 to January 31, and you 
 
 Also, if the **From date** on the reduction period is January 21 (31 minus 10), you could set the **To date** to any date after January 31, and 10 days will still be removed from the fee transaction period.
 
-## See also
+## Related information
 
 [Reduction days example](reduction-days-example.md)
 

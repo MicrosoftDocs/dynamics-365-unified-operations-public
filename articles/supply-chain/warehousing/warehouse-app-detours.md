@@ -1,8 +1,8 @@
 ---
 title: Configure detours for steps in mobile device menu items
 description: Learn how to configure detours for menu items so that workers can park the current task, perform another task, and return to the original task without data loss.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 06/07/2024
 ms.custom:
@@ -32,7 +32,7 @@ Before you can configure detours for steps in mobile device menu items, you must
     - *Warehouse management app detours*<br>(As of Supply Chain Management version 10.0.29, this feature is turned on by default.)
     - *Multi-level detours for the Warehouse Management mobile app*<br>(As of Supply Chain Management version 10.0.36, this feature is mandatory and can't be turned off.)
     - *Auto-submit detour steps for the Warehouse Management mobile app*<br>(As of Supply Chain Management version 10.0.36, this feature is turned on by default.)
-1. If the *Warehouse management app detours* and/or *Multi-level detours for the Warehouse Management mobile app* features were't already turned on, update the field names in the Warehouse Management mobile app by going to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names** and selecting **Create default setup**. For more information, see [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
+1. If the *Warehouse management app detours* and/or *Multi-level detours for the Warehouse Management mobile app* features were't already turned on, update the field names in the Warehouse Management mobile app by going to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names** and selecting **Create default setup**. Learn more in [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
 1. Repeat the previous step for each legal entity (company) where you use the Warehouse Management mobile app.
 
 ## Configure a detour from a menu-specific override

@@ -1,17 +1,16 @@
 ---
-# required metadata
-
 title: Customer information management for Italy
 description: This article describes how to handle customer information in POS for Italy.
 author: EvgenyPopovMBS
-ms.date: 08/18/2022
-ms.topic: article
+ms.date: 08/09/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Italy
-ms.author: josaw
+ms.author: anupamar
 ms.search.validFrom: 2019-10-08
-
+ms.custom: 
+  - bap-template
 ---
 # Customer information management for Italy
 

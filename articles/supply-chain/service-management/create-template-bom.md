@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMATemplateBOMTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Create a template BOM   
@@ -92,7 +89,7 @@ A new template BOM is created by using lines that correspond to the lines of the
 
 A new template BOM is created by using lines that correspond to the lines of the BOM listed in **BOM**.
 
-## See also
+## Related information
 
 [Template BOMs](template-boms.md)
 

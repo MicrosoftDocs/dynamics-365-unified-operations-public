@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 06/10/2020
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-06-10
 ms.search.form:
-ms.dyn365.ops.version: 10.0.11
 ---
 
 # Hazardous materials in products, orders, shipments, and loads
@@ -150,7 +147,7 @@ For safety reasons, you might have to limit the total amount of a given product 
 1. On the Action Pane, on the **Manage inventory** tab, in the **Compliance** group, select **Reporting details**.
 1. In the **Hazardous stock limit** and **Hazardous warning limit** fields, set appropriate values for the selected product.
 
-The **Hazardous material stock limit** report lets you monitor the stock levels of the hazardous materials in your warehouse locations, to make sure that they remain under the safe limits that are established here. For more information, see [Hazardous material stock limit report](hazmat-reports.md#stock-limit-report).
+The **Hazardous material stock limit** report lets you monitor the stock levels of the hazardous materials in your warehouse locations, to make sure that they remain under the safe limits that are established here. Learn more in [Hazardous material stock limit report](hazmat-reports.md#stock-limit-report).
 
 ## Sales order transactions that include hazardous materials
 
@@ -175,7 +172,7 @@ The **Shipment details** page for a shipment shows the total hazardous material 
 
 ### Check for compatibility among hazardous materials that are included in a shipment
 
-The system can evaluate whether all the hazardous materials that are included in a shipment are suitable to be shipped together. To evaluate compatibility, the system checks the compatibility group that is assigned to each product that is included in the shipment. For more information, see [Hazardous material compatibility groups](hazmat-setup.md#compatibility-groups).
+The system can evaluate whether all the hazardous materials that are included in a shipment are suitable to be shipped together. To evaluate compatibility, the system checks the compatibility group that is assigned to each product that is included in the shipment. Learn more in [Hazardous material compatibility groups](hazmat-setup.md#compatibility-groups).
 
 To run the compatibility check, follow these steps.
 
@@ -202,7 +199,7 @@ The **Load details** page for a load shows the total hazardous material weight a
 
 ### Check for compatibility among hazardous materials that are included in a load
 
-The system can evaluate whether all the hazardous materials that are included in a load are suitable to be shipped together. To evaluate compatibility, the system checks the compatibility group that is assigned to each product that is included in the load. For more information, see [Hazardous material compatibility groups](hazmat-setup.md#compatibility-groups).
+The system can evaluate whether all the hazardous materials that are included in a load are suitable to be shipped together. To evaluate compatibility, the system checks the compatibility group that is assigned to each product that is included in the load. Learn more in [Hazardous material compatibility groups](hazmat-setup.md#compatibility-groups).
 
 To run the compatibility check, follow these steps.
 

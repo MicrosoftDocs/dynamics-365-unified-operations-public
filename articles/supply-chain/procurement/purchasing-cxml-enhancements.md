@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 08/03/2020
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-08-03
 ms.search.form: CatCXMLParameters, CatCXMLPurchRequest
-ms.dyn365.ops.version: 10.0.13
 ---
 
 # Purchasing cXML Enhancements
@@ -266,7 +263,7 @@ To view the content of a vendor acknowledgment or error response, select the **R
 
 ![Response XML tab.](media/cxml-response-xml.png "Response XML tab")
 
-## Additional resources
+## Related information
 
 - [Set up an external catalog for PunchOut e-procurement](set-up-external-catalog-for-punchout.md)
 - [Use external catalogs for PunchOut e-procurement](use-external-catalogs-for-punchout.md)

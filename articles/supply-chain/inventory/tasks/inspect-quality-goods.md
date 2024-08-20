@@ -8,11 +8,7 @@ ms.date: 03/23/2021
 ms.custom:
 ms.reviewer: kamaybac   
 audience: Application User  
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2016-06-30
 ms.search.form: InventQualityOrderTable, InventQualityOrderLineResults, HcmWorkerLookUp
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Inspect the quality of goods

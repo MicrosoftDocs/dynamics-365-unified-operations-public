@@ -6,10 +6,7 @@ ms.author: henrikan
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-11-30
 ms.search.form: smmContactPerson, VendVendorContactPerson, VendVendorPortalUser
-ms.dyn365.ops.version: Version 1611
 ms.assetid: edc19ad0-3565-4d47-98ac-dda6098f63ac
 ---
 
@@ -54,7 +51,7 @@ Before you can request that a new user is provisioned, that person must be set u
 4. In the **Assign user roles** section, select the **Assign** check box for the security roles that the new user should have.
 5. Click **Submit**.
 
-When the vendor user request is submitted, the **Vendor collaboration access allowed** field is set to **Yes** for the selected vendor account and a user request workflow is started. As part of the workflow, a new user is created, and security roles are assigned. In addition, an Azure B2B service is activated which initiates interaction with Azure portal and associates a new or existing Microsoft Entra account with the Supply Chain Management user account. For more information, see [What is Microsoft Entra B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
+When the vendor user request is submitted, the **Vendor collaboration access allowed** field is set to **Yes** for the selected vendor account and a user request workflow is started. As part of the workflow, a new user is created, and security roles are assigned. In addition, an Azure B2B service is activated which initiates interaction with Azure portal and associates a new or existing Microsoft Entra account with the Supply Chain Management user account. Learn more in [What is Microsoft Entra B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ### Inactivate a user
 

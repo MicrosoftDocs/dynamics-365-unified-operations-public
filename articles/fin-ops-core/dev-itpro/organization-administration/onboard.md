@@ -4,7 +4,7 @@ description: Learn about how to onboard a project by using Microsoft Dynamics Li
 author: OlgaPetrovaFT
 ms.author: johnmichalak 
 ms.topic: article
-ms.date: 06/21/2022
+ms.date: 08/19/2024
 ms.custom:
 ms.reviewer: johnmichalak 
 audience: IT Pro
@@ -22,7 +22,7 @@ This article describes how to onboard a finance and operations project by using 
 
 ## Microsoft 365 Admin Center
 
-After your organization has purchased a subscription to a finance and operations app, the service must be activated on your organization's Microsoft Entra tenant by a tenant administrator. In this article, **tenant administrator** refers to any user of the Microsoft Entra tenant with the **Global Administrator** security role. For more information about Microsoft Entra roles, please see [Understand roles in Microsoft Entra ID](/azure/active-directory/roles/concept-understand-roles).
+After your organization has purchased a subscription to a finance and operations app, the service must be activated on your organization's Microsoft Entra tenant by a tenant administrator. For more information about Microsoft Entra roles, please see [Understand roles in Microsoft Entra ID](/azure/active-directory/roles/concept-understand-roles).
 
 The tenant administrator must complete the following steps:
 

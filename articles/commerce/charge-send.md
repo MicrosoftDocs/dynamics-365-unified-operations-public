@@ -4,24 +4,15 @@
 title: Ship orders from another store by using the Charge send feature
 description: This article describes the Charge send feature.
 author: ashishmsft
-ms.date: 10/10/2017
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.date: 08/01/2024
+ms.topic: how-to
 audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2017-10-10
-ms.dyn365.ops.version: Retail July 2017 update
-
+ms.custom: 
+  - bap-template
 ---
 
 # Ship orders from another store by using the Charge send feature

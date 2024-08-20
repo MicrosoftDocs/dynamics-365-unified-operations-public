@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 05/12/2020
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-05-01
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, WHSShipConsolidationSetShipment, WHSShipmentConsolidation, WHSFilterGenerallyAvail, WHSReleaseToWarehouse, WHSReleaseToWarehouseSalesOrder
-ms.dyn365.ops.version: 10.0.6
 ---
 
 # Consolidate shipments when the shipment consolidation policy is overridden
@@ -70,7 +67,7 @@ Follow these steps to review the shipments that were created.
 1. Find and select the required shipment.
 1. In the **Shipment consolidation policy** field, review the consolidation policy that was used when the shipment was created.
 
-## Additional resources
+## Related information
 
 - [Shipment consolidation policies overview](about-shipment-consolidation-policies.md)
 - [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md)

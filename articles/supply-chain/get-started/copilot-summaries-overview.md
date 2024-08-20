@@ -122,7 +122,7 @@ As appropriate, the **Insights** section provides buttons that let you filter th
 - **Overdue or nearly overdue lines** – Show only order lines that are overdue or nearly overdue.
 - **Lines without confirmed ship dates** – Show only order lines that aren't fully shipped (packing slip posted) and don't have a confirmed ship date.
 
-## See also
+## Related information
 
 - [Responsible AI FAQ for AI summaries with Copilot](../faq-summaries.md)
 - [Responsible AI FAQ for Warehouse Management mobile app](../faq-wma-copilot.md)

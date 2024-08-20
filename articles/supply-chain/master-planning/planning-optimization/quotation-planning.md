@@ -6,10 +6,7 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 09/20/2022
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2022-09-20
 ms.search.form: SalesQuotationListPage, ReqPlanSched, SalesQuotationTable, smmOpportunityTable
-ms.dyn365.ops.version: 10.0.30
 ---
 
 # Plan based on quotations and RFQs

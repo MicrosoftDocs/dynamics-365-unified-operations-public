@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 05/16/2023
 ms.reviewer: kamaybac
 ms.collection: get-started
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace  
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Cost management home page
@@ -43,7 +39,7 @@ Manufacturing accounting lets you handle [Job order costing](production-order-co
 
 The [Cost management Power BI content](../../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md) provides managerial insight into inventory and work-in-progress (WIP) inventory, and how cost flows through them by category over time. The information can also be used as a detailed supplement to the financial statement.
 
-## Additional resources
+## Related information
 
 ### What's new and in development
 

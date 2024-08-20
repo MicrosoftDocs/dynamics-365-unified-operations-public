@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 09/28/2020
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-09-28
 ms.search.form: EngChgProductOwner
-ms.dyn365.ops.version: 10.0.15
 ---
 
 # Product owners
@@ -50,7 +47,7 @@ For example, product X is assigned to the *Design cabinets* product owner group.
 
 ## Product owners and approvals
 
-Because product owners know whether specific engineering changes will benefit their products, it often makes sense to include them as part of the approval process in engineering change management. You can implement this approach by setting up the product owners as participant providers in the workflows that are used for engineering change management. The system will then assign approval tasks in the workflows, based on the products that are in engineering change requests and engineering change orders. For more information, see [Manage changes to engineering products](engineering-change-management.md).
+Because product owners know whether specific engineering changes will benefit their products, it often makes sense to include them as part of the approval process in engineering change management. You can implement this approach by setting up the product owners as participant providers in the workflows that are used for engineering change management. The system will then assign approval tasks in the workflows, based on the products that are in engineering change requests and engineering change orders. Learn more in [Manage changes to engineering products](engineering-change-management.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

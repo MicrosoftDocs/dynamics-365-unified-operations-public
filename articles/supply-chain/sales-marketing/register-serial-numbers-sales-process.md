@@ -6,11 +6,7 @@ ms.author: henrikan
 ms.topic: article
 ms.date: 10/31/2019
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2016-02-28
 ms.search.form: EcoResTrackingDimensionGroup, InventTrackingRegisterTrans, SalesEditLines, SalesTable, InventSerial
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 5d39630f-607e-492b-8c1e-790ca53effa0
 ---
 

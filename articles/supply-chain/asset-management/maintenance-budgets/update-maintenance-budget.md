@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 08/13/2019
 ms.custom: 
 ms.reviewer: kamaybac 
-ms.search.region: Global
-ms.search.validFrom: 2019-08-30
 ms.search.form: 
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Update maintenance budgets
@@ -19,7 +16,7 @@ ms.dyn365.ops.version: 10.0.5
 
  
 
-The **Maintenance budget lines** page shows all the budget lines that have been created for the budget that is selected on the **Maintenance budgets** page. (For more information, see [Create maintenance budgets](create-maintenance-budget.md).) You can recalculate and adjust maintenance budget lines until the maintenance budget is approved. After the budget period has passed, and costs have been posted in Asset Management, you can also update the budget lines with actual costs.
+The **Maintenance budget lines** page shows all the budget lines that have been created for the budget that is selected on the **Maintenance budgets** page. (Learn more in [Create maintenance budgets](create-maintenance-budget.md).) You can recalculate and adjust maintenance budget lines until the maintenance budget is approved. After the budget period has passed, and costs have been posted in Asset Management, you can also update the budget lines with actual costs.
 
 ## Recalculate a maintenance budget
 

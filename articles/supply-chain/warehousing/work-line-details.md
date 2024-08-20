@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 07/01/2020
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-07-01
 ms.search.form:  WHSWorkLocationChange, WHSWorkLineDetails
-ms.dyn365.ops.version: 10.0.8
 ---
 
 # Work line details
@@ -58,7 +55,7 @@ If you're working with the **USMF** demo data, you should first make sure that y
 
 Follow these steps to verify that enough inventory is available and to make any adjustments that are required.
 
-1. Go to **Warehouse management \> Setup \> Location directives**, and determine which picking locations are used for sales order picking at warehouse 51. (For more information, see [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md).)
+1. Go to **Warehouse management \> Setup \> Location directives**, and determine which picking locations are used for sales order picking at warehouse 51. (Learn more in [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md).)
 1. Check the inventory levels at the relevant locations.
 1. Adjust inventory as required. You can create manual movements, use replenishment, or apply any other flow to adjust the inventory.
 

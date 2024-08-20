@@ -7,7 +7,6 @@ ms.topic: overview
 ms.date: 01/06/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: ReqDemPlanCreateForecastDialog
 ---
 
@@ -77,7 +76,7 @@ The first part of authorizing forecast (**Demand forecast UOM \> Inventory UOM**
 > [!NOTE]
 > The demand forecast UOM doesn't have to have any specific meaning. It can be defined as *Demand forecast unit*. For each of the products, you can define the conversion to be 1:1 with the inventory UOM.
 
-## Additional resources
+## Related information
 
 - [Demand forecasting setup](demand-forecasting-setup.md)
 - [Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md)

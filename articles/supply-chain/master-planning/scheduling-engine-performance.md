@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 09/03/2020
 ms.reviewer: kamaybac
 audience: Application User 
-ms.search.region: Global
-ms.search.industry: 
-ms.search.validFrom: 2020-09-03
 ms.search.form: 
-ms.dyn365.ops.version: 
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ---
 

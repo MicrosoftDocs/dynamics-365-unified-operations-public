@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 05/07/2018
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMASubscriptionGroup
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Set up subscription groups 
@@ -28,7 +25,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 5.  To accrue revenue for subscription transactions, select the **Accrue revenue** check box, and then in the **Accrual** field, select a frequency. The accrual frequency is based on a period code that is set up in the **Periods** form.
 
-## See also
+## Related information
 
 [Subscription groups (form)](https://technet.microsoft.com/library/aa553150\(v=ax.60\))
 

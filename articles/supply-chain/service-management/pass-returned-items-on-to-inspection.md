@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 05/01/2018
 ms.custom: 
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: WMSJournalTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Pass returned items on to inspection
@@ -34,7 +31,7 @@ When registering a returned item, you may determine that an item should be sent 
 
 This prompts the system to create a quarantine order, and the person or department that performs inspections respond to this order using the **Quarantine order** form.
 
-## See also
+## Related information
 
 - [Take returned items through inspection](take-returned-items-through-inspection.md)
 - [Specify how to dispose of returned items](specify-how-to-dispose-of-returned-items.md)

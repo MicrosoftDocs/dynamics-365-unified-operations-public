@@ -10,7 +10,6 @@ ms.reviewer: kamaybac
 ms.collection:
   - bap-ai-copilot
 ms.search.form:
-ms.search.region: Global
 ---
 
 # Work with forecast profiles

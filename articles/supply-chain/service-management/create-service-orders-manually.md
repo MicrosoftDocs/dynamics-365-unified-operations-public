@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Create service orders manually    
@@ -82,7 +79,7 @@ You can create a service order from the **Sales orders** form by using the **Cre
 6.  Select **Next \>**, and then select **Finish**.
 
 
-## See also
+## Related information
 
 [Service orders](service-orders.md)
 

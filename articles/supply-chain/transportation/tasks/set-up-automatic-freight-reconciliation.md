@@ -7,11 +7,7 @@ ms.topic: how-to
 ms.date: 10/16/2018
 ms.custom:
 ms.reviewer: kamaybac  
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2016-06-30
 ms.search.form: TMSFreightBillType, TMSFreightBillTypeAssignment, TMSCarrierCodeLookup, DefaultDashboard, TMSAuditMaster 
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Set up automatic freight reconciliation

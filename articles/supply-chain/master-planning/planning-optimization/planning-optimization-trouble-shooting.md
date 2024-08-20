@@ -7,7 +7,6 @@ ms.topic: conceptual
 ms.date: 05/01/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: ReqCreatePlanWorkspace
 ---
 
@@ -104,7 +103,7 @@ For more information about how to reduce scheduling times, see [Improve scheduli
 Review the following settings to make sure that you're planning only for the products that you need:
 
 - Use the **Product lifecycle state** field to indicate products or variants that don't have to be fulfilled by master planning. For each such product, select a product lifecycle state where the **Is active for planning** option is set to *No*. You can use the **Change lifecycle state for obsolete products** page to identify products that haven't been used in any transactions for a while. These products might now be obsolete. Therefore, you can remove them from your planning.
-- For plans that should only apply for a certain set of items, set up a plan filter to limit the run to just those items. See also [Run planning for a subset of items](plan-filters.md#apply-a-plan-filter).
+- For plans that should only apply for a certain set of items, set up a plan filter to limit the run to just those items. Learn more in [Run planning for a subset of items](plan-filters.md#apply-a-plan-filter).
 - Set item coverage to manual for each warehouse that doesn't need to be supplied by master planning. For each such warehouse listed on the **Warehouses** page, expand the **Master Planning** FastTab and, in the **Item Coverage** field group, set **Manual** to *Yes*.
 
 ### Split large planning jobs into several smaller jobs
@@ -234,7 +233,7 @@ Follow these steps to review your setup for time fences and options that you don
 
 Your data export might be able to be completed more quickly if you reduce the number of products that are considered for each planning run. Consider using one or both of the following strategies:
 
-- Identify product and variants that don't have to be fulfilled by master planning, and set their **Product lifecycle state** value to a state where the **Is active for planning** option is set to *No*. (For more information, see [Exclude products that have specific product lifecycle states](product-lifecycle-state.md)). The **Change lifecycle state for obsolete products** page can help you identify products that haven't been used in any transactions for a while. These products might now be obsolete. Therefore, you can remove them from your planning.
+- Identify product and variants that don't have to be fulfilled by master planning, and set their **Product lifecycle state** value to a state where the **Is active for planning** option is set to *No*. (Learn more in [Exclude products that have specific product lifecycle states](product-lifecycle-state.md)). The **Change lifecycle state for obsolete products** page can help you identify products that haven't been used in any transactions for a while. These products might now be obsolete. Therefore, you can remove them from your planning.
 - Use a [plan filter](plan-filters.md#apply-a-plan-filter) to remove unneeded items from your plan.
 
 ## No planned orders are created
@@ -255,11 +254,11 @@ When you enable Planning Optimization, the deprecated master planning engine is 
 
 Planning Optimization differs from the deprecated master planning engine design in some areas. This can also be caused by pending features.
 
-**Fix**: Run Planning Optimization fit analysis and then analyze the results while referring to the related documentation to understand the impact. For more information, see [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
+**Fix**: Run Planning Optimization fit analysis and then analyze the results while referring to the related documentation to understand the impact. Learn more in [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
 
 ## Can't enable Planning Optimization
 
-The **Connection status** must be **Connected** before you can set **Use Planning Optimization** to **Yes**. For more information, see [Get started with Planning Optimization](get-started.md).
+The **Connection status** must be **Connected** before you can set **Use Planning Optimization** to **Yes**. Learn more in [Get started with Planning Optimization](get-started.md).
 
 **Fix**: Make sure that the Planning Optimization Add-in was installed successfully.
 
@@ -279,7 +278,7 @@ After running a master plan, you might receive the following error:
 
 If you see this error, check the tracking and coverage dimensions for the specified product. For example, if the product is being tracked by serial number, then the serial number dimension can't be used as a coverage dimension because the system doesn't know which serial numbers should be supplied. Either deselect the serial number as a coverage dimension or change the item coverage group to a group that doesn't use serial number tracking (if serial tracking isn't needed for the specified product).
 
-## Additional resources
+## Related information
 
 - [Get started with master planning](get-started.md)
 - [Planning Optimization fit analysis](planning-optimization-fit-analysis.md)

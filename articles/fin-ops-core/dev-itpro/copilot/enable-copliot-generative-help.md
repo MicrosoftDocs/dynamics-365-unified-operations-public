@@ -32,6 +32,10 @@ In most cases, generative help and guidance with Copilot is available by default
 
 If the feature isn't already available on your system, see [Enable Copilot capabilities in finance and operations apps](enable-copilot.md) for information about how to enable it.
 
+## Add custom knowledge
+
+You can add custom knowledge sources and/or enable general knowledge for generative help and guidance with Copilot. For more information and instructions, see [Add knowledge to generative help and guidance with Copilot](extend-copilot-generative-help.md).
+
 ## Troubleshooting
 
 Specific conditions [govern and secure the deployment of Copilot Studio components and the way that generative AI features can be used in your organization](/microsoft-copilot-studio/security-and-governance). These conditions determine whether Copilot can be enabled in your organization.
@@ -53,3 +57,9 @@ After a governing condition is addressed, you might have to take additional acti
 If you're running finance and operations apps version 10.0.38 or 10.0.39, you can turn off the conversational Copilot sidecar by going to the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace and disabling the feature *User experience for Copilot in Finance and Operations*.
 
 In other versions of finance and operations apps, you can disable the conversational Copilot sidecar by turning off Bing Search. For more information, see [Enable copilots and generative AI features](/power-platform/admin/geographical-availability-copilot).
+
+## See also
+
+- [Add custom knowledge to generative help and guidance with Copilot](extend-copilot-generative-help.md)
+- [Responsible AI FAQ for Generative help and guidance with Copilot in finance and operations apps](../../fin-ops/copilot/faq-copilot-generative-help.md)
+- [Responsible AI FAQ for Suggested questions within Copilot](../../fin-ops/copilot/faq-copilot-suggested-questions.md)

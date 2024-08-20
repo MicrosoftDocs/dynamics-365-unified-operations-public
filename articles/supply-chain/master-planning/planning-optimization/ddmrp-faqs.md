@@ -7,7 +7,6 @@ ms.topic: conceptual
 ms.date: 11/24/2022
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -80,7 +79,7 @@ When you're choosing where to put decoupling points in your supply chain, consid
 - **Sales order visibility horizon** – Add buffers at points where you must quickly react to meet new demand.
 - **Market potential lead time** – Add buffers at points where you can sell items at a higher price if the lead time is shorter.
 
-For more information, see [Inventory positioning](ddmrp-inventory-positioning.md).
+Learn more in [Inventory positioning](ddmrp-inventory-positioning.md).
 
 ### Are negative and positive days considered for coverage code decoupling points?
 

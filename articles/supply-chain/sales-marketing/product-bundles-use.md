@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 04/29/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: Customer
 ---
 
@@ -147,7 +146,7 @@ The following important limitations apply when you use product bundle items:
 - Unless you're using the *(Preview) Product bundles in journals* feature, you can reprint an invoice or sales order confirmation only if the related sales order that includes the product bundle order lines still exists. If the sales order lines were deleted, the reprinted invoices and sales order confirmations include the component items but not the parent item.
 - Miscellaneous charges that are added to a parent item line aren't allocated to the component item lines when the parent item is exploded.
 
-## Additional resources
+## Related information
 
 - [Product bundles overview](product-bundles-overview.md)
 - [Enable and set up product bundles](product-bundles-setup.md)

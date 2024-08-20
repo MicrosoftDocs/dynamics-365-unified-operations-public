@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 01/06/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
 ---
 

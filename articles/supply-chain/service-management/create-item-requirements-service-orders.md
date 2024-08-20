@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac 
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMAServiceOrderTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Create item requirements for service orders
@@ -41,7 +38,7 @@ Item requirements for service orders are processed through a project. To create 
 1. On the **Line details** FastTab, on the **Product dimensions** tab, in the **Site** field, select the inventory site for the item.
 1. To create a service order from the agreement line, on the **Lines** FastTab, select **Create service orders**, and then enter the relevant information in the **Create service orders** form.
 
-## See also
+## Related information
 
 [Create service orders automatically](create-service-orders-automatically.md).
 

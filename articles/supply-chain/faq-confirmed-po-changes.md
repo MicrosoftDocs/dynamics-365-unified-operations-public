@@ -54,7 +54,7 @@ When you use the feature, follow these recommendations:
 - Always review generated summaries, and study the detailed lists of changes and impacts, before you make decisions about reconfirming purchase orders.
 - Always review generated communication drafts before you send them by email or post them to a Teams message.
 
-## See also
+## Related information
 
 - [Review and accept changes to confirmed purchase orders](procurement/purchase-order-changes-after-confirmation.md)
 - [Transparency note for Copilot data security and privacy in Microsoft Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)

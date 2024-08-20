@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 08/09/2022
 ms.custom: 
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2020-05-29
 ms.search.form: ReqCreatePlanWorkspace
-ms.dyn365.ops.version: AX 10.0.12
 ---
 
 # Master planning with purchase trade agreements
@@ -72,7 +68,7 @@ The following table provides examples that show how various settings for a relea
 | *(Blank)* | 1 | No | Yes: 2 | ***US003*** | ***3*** | No | **US003** | **3** |
 | *(Blank)* | 1 | No | ***Yes: 2*** | ***US003*** | 3 | Yes | **US003** | **2** |
 
-## Additional resources
+## Related information
 
 - [Purchase agreements](../../procurement/purchase-agreements.md)
 

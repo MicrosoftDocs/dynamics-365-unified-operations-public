@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 04/19/2024
 ms.custom: evergreen
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2022-05-27
 ms.search.form: 
-ms.dyn365.ops.version: 10.0.28
 ---
 
 # What's new or changed in Dynamics 365 Supply Chain Management 10.0.28 (August 2022)
@@ -46,7 +43,7 @@ If you want to turn any of these features on or off, you must do so in [feature 
 | Inventory and warehouse management | (India) For transfer price rules, ignore location when "From warehouse code" is set to "All" | <p>This feature applies only to India localizations. It makes the process of setting up transfer prices for items in stock transfers more intuitive.</p><p>You set up transfer prices by configuring each item with transfer pricing rules. One way to do this configuration is to include a rule line where the **From warehouse code** field is set to *All*. This setting indicates that the transfer price that is defined by the line should apply regardless of the warehouse that the item is picked from. When this feature is enabled, transfer price rules where the **From warehouse code** field is set to *All* will ignore the **Location** setting. Therefore, the rule will apply regardless of the location that is specified on the transfer order. This behavior is probably what is expected, because location is below warehouse in the storage dimension hierarchy.</p><p>Without this feature, the system will apply rules of this type only when the location on the transfer order exactly matches the location that is set for the rule. (If a blank location is set for the rule, the system will apply the rule only to transfer orders that also have a blank value for the location.)</p> |
 | Inventory and warehouse management | Inventory on-hand report data clean up | This feature provides a way to clean up the data that is used to create *Inventory on-hand report storage* reports. |
 | Production control | Assign project activities for service agreement and service order lines | This feature adds a field that is named **Project activity** to service agreement and service order lines, so that you can set a project activity for them. The feature will help prevent blocking errors when you post service management project journals that require that a project activity be set.  |
-| Warehouse management | Manual transfer line picking service for admin or similar trusted users | This feature lets administrators manually pick inventory transactions that are related to transfer lines. These lines include lines that have already been released to the warehouse. Administrators should do this picking only in exceptional cases, such as when the system is in a corrupted state. For more information, see [Manually handle sales and transfer line picking exceptions](../warehousing/manual-order-line-picking-exception-handling.md). |
+| Warehouse management | Manual transfer line picking service for admin or similar trusted users | This feature lets administrators manually pick inventory transactions that are related to transfer lines. These lines include lines that have already been released to the warehouse. Administrators should do this picking only in exceptional cases, such as when the system is in a corrupted state. Learn more in [Manually handle sales and transfer line picking exceptions](../warehousing/manual-order-line-picking-exception-handling.md). |
 
 ## New and updated documentation resources
 
@@ -59,11 +56,11 @@ We have recently added or significantly updated the following Help articles. The
 | Cost management | [Post to charge account accounting principle](../cost-management/post-to-charge-account-accounting-principle.md) |
 | Inventory management | [Inventory transaction details](../inventory/inventory-transactions-details.md) |
 
-## Additional resources
+## Related information
 
 ### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.28 includes platform updates. To learn more, see [Platform updates for version 10.0.28 of finance and operations apps (August 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-28.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.28 includes platform updates. Learn more in [Platform updates for version 10.0.28 of finance and operations apps (August 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-28.md).
 
 ### Bug fixes
 

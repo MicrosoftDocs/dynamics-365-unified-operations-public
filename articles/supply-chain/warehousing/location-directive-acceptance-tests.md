@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 04/24/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: WHSLocDirTable, WHSLocationDirectiveAcceptanceTest
 ---
 

@@ -7,7 +7,6 @@ ms.topic: overview
 ms.date: 01/05/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: EcoResProductLifecycleState, EcoResReleasedProductLifecycleStateChanges
 ---
 
@@ -91,7 +90,7 @@ Use the following criteria to select and update the released products and produc
 - No active or future sales or purchase agreement lines for the product or product variant.
 - The product or product variant isn't used in a BOM that is associated with a non-expired approved BOM version for a product or variant that is active for planning.
 
-## Additional resources
+## Related information
 
 - [Create a new product lifecycle state](tasks/new-product-lifecycle-state.md)
 - [Create a default product lifecycle state](tasks/default-product-lifecycle-state.md)

@@ -8,11 +8,7 @@ ms.date: 08/29/2018
 ms.custom:
 ms.reviewer: kamaybac
 audience: Application User   
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2016-06-30
 ms.search.form: InventJournalMovement, InventJournalCreate, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup   
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Initialize stock levels in the warehouse

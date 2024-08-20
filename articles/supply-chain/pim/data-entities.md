@@ -7,7 +7,6 @@ ms.topic: conceptual
 ms.date: 04/28/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -19,7 +18,7 @@ To import and export product data, you must use data entities. Learn more at [Co
 
 ## Product-related data entities
 
-The following table provides details about the product-related data entities and describes the purpose of each. See also [Built-in entities](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities#built-in-entities).
+The following table provides details about the product-related data entities and describes the purpose of each. Learn more in [Built-in entities](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities#built-in-entities).
 
 | Entity | Application Object Tree (AOT) name (type) | Notes |
 |--------|-------------------------------------------|-------|

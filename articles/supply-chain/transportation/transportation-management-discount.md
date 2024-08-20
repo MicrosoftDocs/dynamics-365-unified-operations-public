@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 10/16/2020
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-10-16
 ms.search.form:
-ms.dyn365.ops.version: 10.0.14
 ---
 
 # Transportation management discounts

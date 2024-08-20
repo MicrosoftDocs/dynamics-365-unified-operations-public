@@ -7,7 +7,6 @@ ms.topic: overview
 ms.date: 04/03/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: GUPPricingSetupInquiryResult, GUPParameters, PriceDiscAdmName, PriceDiscAdmTable, PriceDiscAdm
 ---
 
@@ -68,8 +67,8 @@ The following two records are posted for sales trade agreement price lines that 
 
 To use sales trade agreements, you must have the following configurations in your system:
 
-- You must have exactly one price component code where the **Price component** field is set to *Sales trade agreement*. This setting lets you include sales trade agreements as part of your price structures. For more information, see [Price component codes](price-component-code.md).
-- Each price structure where you want to consider sales trade agreement prices must include the previously mentioned *Sales trade agreement* price component code. For more information, see [Arrange price component codes into a price structure](price-structure-details.md).
+- You must have exactly one price component code where the **Price component** field is set to *Sales trade agreement*. This setting lets you include sales trade agreements as part of your price structures. Learn more in [Price component codes](price-component-code.md).
+- Each price structure where you want to consider sales trade agreement prices must include the previously mentioned *Sales trade agreement* price component code. Learn more in [Arrange price component codes into a price structure](price-structure-details.md).
 
 ## Manage trade agreement journal names
 

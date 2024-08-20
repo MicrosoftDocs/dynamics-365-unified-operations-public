@@ -323,6 +323,8 @@ items:
             href: sysadmin/archive-inventory.md
           - name: Archive Dynamics 365 Supply Chain inventory journals
             href: sysadmin/archive-inventory-journal.md
+          - name: Archive Commerce transactions
+            href: ../../commerce/archive-transactions.md
         - name: Finance and operations apps archive with Dataverse long term retention FAQ
           href: sysadmin/archive-faq.md
     - name: Azure Data Lake
@@ -595,20 +597,10 @@ items:
         items:
         - name: Custom help overview
           href: help/custom-help-overview.md
-        - name: Preparing content for use with the Help pane
-          href: help/preparing-content.md
-        - name: The ConvertHtmlToJson tool
-          href: help/custom-help-toolkit-ConvertHtmlToJson.md
-        - name: The HtmlLocaleChanger tool
-          href: help/custom-help-toolkit-HtmlLocaleChanger.md
-        - name: Convert Dynamics AX custom Help for use in Dynamics 365
-          href: help/migrate-dynamicsax2012.md
         - name: Connect your custom help to the Help pane
           href: help/connect-help-pane.md
         - name: Language and locale descriptors in across product and help
           href: help/language-locale.md
-        - name: Extend and collaborate on the help
-          href: help/contributor-guide.md      
         - name: Contribute to the Help
           href: help/contributor-guide.md
     - name: Develop and customize
@@ -1961,6 +1953,8 @@ items:
             href: migration-upgrade/pre-post-upgrade-scripts.md
         - name: Environment operations
           items:
+          - name: Database synchronize performance 
+            href: migration-upgrade/database-sync-perf.md
           - name: Monitoring replication
             href: migration-upgrade/monitor-replication.md
           - name: Migrate document attachments
@@ -2265,6 +2259,8 @@ items:
           href: copilot/purchase-order-changes-after-confirmation-enable.md
         - name: Enable generative help and guidance with Copilot
           href: copilot/enable-copliot-generative-help.md
+        - name: Add knowledge to generative help and guidance with Copilot
+          href: copilot/extend-copilot-generative-help.md
       - name: Extending Copilot capabilities in finance and operations apps
         items:
         - name: Overview

@@ -9,7 +9,6 @@ ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.collection:
   - bap-ai-copilot
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -113,6 +112,6 @@ The following example shows sample body content.
 
 You can choose a level of logging detail for the request by adding the optional `LogLevel` parameter in the body and setting it to `Debug`, `Trace`, or `Information`.
 
-## See also
+## Related information
 
 - [Responsible AI FAQ for Inquire into inventory with Copilot (preview)](../faq-inventory-query.md)

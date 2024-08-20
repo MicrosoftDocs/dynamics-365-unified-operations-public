@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 01/29/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: WMHEParameters, WMHESubscription, WMHEQueueManagerWorkspace, WMHEInboundQueue, WMHEOutboundQueue
 ---
 
@@ -231,14 +230,3 @@ To retrieve messages from the outbound queue, use one of the following methods:
 
 - Use `readOutboundSubscriptionQueue` to retrieve the events based on the subscription ID.
 - Use `readOutboundWarehouseQueue` to retrieve the events based on the event type and warehouse ID across multiple subscriptions.
-
-<!--
-## Simulate material handling interface processing
-
-You can experiment with the material handling interface by using [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman), for example.
-
-You can create a *fork* of the [Postman environment and collection examples](https://go.microsoft.com/fwlink/?linkid=2250135). Be sure to select the environment and enter the correct environment variables before you run the `CREATE TOKEN VARIABLE` collection. In this way, you can run all the collections that have a name that starts with *MHE*.
-
-> [!TIP]
-> If you want to simulate inbound messages by creating records directly from the **Inbound queue** page, turn on the **Enable manual inbound message creation** option on the **Material handling equipment interface parameters** page.
--->

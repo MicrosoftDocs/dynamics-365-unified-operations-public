@@ -9,7 +9,6 @@ ms.custom:
   - bap-template
   - evergreen
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -46,8 +45,8 @@ Some of these features aren't visible on your system until you turn them on in [
 
 | Feature enhancement | Description |
 |---|---|
-|<p>**Module:** Warehouse management</p><p>**Enhancement:** *Consolidate including incoming work* location directive action strategy</p><p>**Feature management name:** *(None)*</p> | <p>Adds a new [location directive action](../warehousing/create-location-directive.md#location-directive-actions-fasttab) strategy called *Consolidate including incoming work*. It works like the existing *Consolidate* strategy, except it also considers locations where items on incoming put-work lines aren't already available. This is beneficial when receiving multiple license plates with the same item and the items should be moved to the same location. This can be useful, for example, when receiving based on advance shipping notices (ASNs).</p><p>For more information, see [Work with location directives](../warehousing/create-location-directive.md). |
-|<p>**Module:** Warehouse management</p><p>**Enhancement:** Full license plate movement policy</p><p>**Feature management name:** *(None)*</p> | <p>Lets workers move license plates more quickly in the warehouse by reducing the number of scans needed when using a *Movement* or *Movement by template* mobile device menu item.</p><p>For more information, see [Set up a mobile device menu item for moving items in the warehouse](../warehousing/mobile-device-movement-menu.md) and [Set up a mobile device menu item for moving items by template](../warehousing/mobile-device-move-by-template-menu.md). |
+|<p>**Module:** Warehouse management</p><p>**Enhancement:** *Consolidate including incoming work* location directive action strategy</p><p>**Feature management name:** *(None)*</p> | <p>Adds a new [location directive action](../warehousing/create-location-directive.md#location-directive-actions-fasttab) strategy called *Consolidate including incoming work*. It works like the existing *Consolidate* strategy, except it also considers locations where items on incoming put-work lines aren't already available. This is beneficial when receiving multiple license plates with the same item and the items should be moved to the same location. This can be useful, for example, when receiving based on advance shipping notices (ASNs).</p><p>Learn more in [Work with location directives](../warehousing/create-location-directive.md). |
+|<p>**Module:** Warehouse management</p><p>**Enhancement:** Full license plate movement policy</p><p>**Feature management name:** *(None)*</p> | <p>Lets workers move license plates more quickly in the warehouse by reducing the number of scans needed when using a *Movement* or *Movement by template* mobile device menu item.</p><p>Learn more in [Set up a mobile device menu item for moving items in the warehouse](../warehousing/mobile-device-movement-menu.md) and [Set up a mobile device menu item for moving items by template](../warehousing/mobile-device-move-by-template-menu.md). |
 |<p>**Module:** Warehouse management</p><p>**Enhancement:** Split transfer order registration and receiving when using the Warehouse Management mobile app</p><p>**Feature management name:** *(None)*</p> | <p>Makes it possible to split the registration and cost-update processes for transfer orders, which lets receiving clerks use the Warehouse Management mobile app to update a transfer order receipt without waiting for any financial background processing, regardless of the receiving flow.  Previously, it was only possible to split registrations and cost updates during license plate receiving.</p><p>To enable this capability, go to the **Warehouse management parameters** page, open the **General** tab, expand the **Receiving** FastTab and set **Transfer order receiving process** to *Split the registration and receiving for all flows*.</p> |
 |<p>**Module:** Warehouse management</p><p>**Feature management name:** *Inventory transaction details page's performance improvement.*</p> | <p>Improves the performance of the **Inventory transactions details** page. Users can now set default filters, so that the page shows only frequently checked inventory transactions. In addition, the page shows only inventory-related fields.</p><p>To access the **Inventory transaction details** page, go to **Inventory management** \> **Inquiries and reports** \> **Transactions**.</p> |
 |<p>**Module:** Inventory and warehouse management</p><p>**Feature management name:** *Inventory Visibility integration with ATP*</p>| Enables the system to send the on-hand change schedule to Inventory Visibility to support available-to-promise (ATP) calculations. |
@@ -80,11 +79,11 @@ We have recently added or significantly updated the following help articles. The
 | Warehouse management | [Set up a mobile device menu item for moving items by template](../warehousing/mobile-device-move-by-template-menu.md) |
 | Warehouse management | [Warehouse management only mode overview (preview)](../warehousing/wms-only-mode-overview.md) – The preview functionality that's described in this article and its related articles is frequently updated. The documentation is regularly updated to match the changes that are released with each version of Supply Chain Management. |
 
-## Additional resources
+## Related information
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.39 includes platform updates. To learn more, see [Platform updates for version 10.0.39 of Finance and Operations apps (April 2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-39.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.39 includes platform updates. Learn more in [Platform updates for version 10.0.39 of Finance and Operations apps (April 2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-39.md).
 
 ### Bug fixes
 

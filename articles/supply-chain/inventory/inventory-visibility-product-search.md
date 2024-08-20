@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 11/20/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -38,7 +37,7 @@ The product search service is included in the current version of the Inventory V
 
 ### Existing Inventory Visibility installations
 
-If your system is running Inventory Visibility version 1.2.2.53 or earlier, you must update Inventory Visibility in your Microsoft Dynamics Lifecycle Services project and then install the newest version. For more information, see [Install and set up Inventory Visibility](inventory-visibility-setup.md).
+If your system is running Inventory Visibility version 1.2.2.53 or earlier, you must update Inventory Visibility in your Microsoft Dynamics Lifecycle Services project and then install the newest version. Learn more in [Install and set up Inventory Visibility](inventory-visibility-setup.md).
 
 ## Configure the product search service
 

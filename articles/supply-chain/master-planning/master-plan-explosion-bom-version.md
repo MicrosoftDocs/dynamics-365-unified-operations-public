@@ -6,11 +6,7 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: ReqTransExplosion
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: fe08c2e6-9cc5-4e34-bbb2-cd07843403b5
 ---
 
@@ -27,7 +23,7 @@ A demand explosion of a bill of materials (BOM) version creates a demand for eac
 
 The following illustration shows how the process for master planning demand explosion. ![Demand explosion using BOM version.](./media/multisitedemandexplosionscenariousingbomversion.gif)
 
-## Additional resources
+## Related information
 
 - [Determine the BOM version](master-plan-bom-version-determined.md)
 - [Master planning and multisite functionality overview](master-plan-multisite-functionality.md)

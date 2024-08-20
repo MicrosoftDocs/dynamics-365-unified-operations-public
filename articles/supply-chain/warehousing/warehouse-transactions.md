@@ -1,13 +1,12 @@
 ---
 title: Warehouse-specific inventory transactions
 description: Learn about warehouse-specific inventory transactions, which are database records that store information about how inventory is stored in the warehouse.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 04/19/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: WHSParameters, WHSWarehouseTransactions
 ---
 
@@ -135,6 +134,6 @@ The `WHSInventoryTransactionTable` table includes the following four types of tr
 
 `InventTrans`-based inventory wasn't designed to represent inventory operations (such as *issue*, *receipt*, and *reservation*) over a set of items. License plates (such as target license plates in warehouse work) are one example of such a *set of items*. From the perspective of the `InventTrans`-based inventory stack, a license plate is just a dimension similar to other storage dimensions in `InventDim`. The concept of item sets in the new inventory stack aims to address this gap. During initial picks, an item set is constructed, and subsequent operations (such as *put to stage*, *pick from stage*, and *put-away to bay door*) reuse that item set. This approach avoids recording redundant information about items being moved. However, license plates are still used in the new system.
 
-## Additional resources
+## Related information
 
 - For more information about this feature, consider joining the [Warehouse Inventory Transactions](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=120106196992&view=all) Yammer group, where you can find useful guides, get our latest updates, and post any questions you may have about using warehouse transactions.
