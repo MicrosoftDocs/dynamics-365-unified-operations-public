@@ -43,12 +43,12 @@ Before you can use AI summaries with Copilot, your system must meet the followin
 
 Workload insights with Copilot in the Warehouse Management mobile app are provided to warehouse workers when they sign in (depending on configuration) and are available on demand by going to the **Summary** page. The information that's shown can include the following details:
 
-- The number of pick and receive work headers or lines.
-- The number of Warehouse Management mobile app sessions that are active in the warehouse.
-- Insights into the types of work waiting to be completed. This information lets warehouse workers get an overview of the workload so they can better plan their shifts.
-- Overall workload, displayed as headers or lines.
-- Details of available work by work type.
-- AI-generated insights that provide more information about available work.
+- The number of pick and receive work headers or work lines.
+- The number of active warehouse mobile app sessions in the warehouse.
+- Insights into the available work types. This information lets warehouse workers get an overview of the workload so they can better plan their shifts.
+- The current workload. This information can be shown either as work headers or work lines.
+- Details of the available work per work type.
+- More information about the available work. Microsoft Copilot generates this information in natural language.
 
 ## Product hover summaries
 
