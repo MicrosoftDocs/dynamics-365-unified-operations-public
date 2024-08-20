@@ -1,5 +1,5 @@
 ---
-title: Price attributes overview (deprecated)
+title: Price attributes overview (preview)
 description: Learn about the concept of price attributes, including an outline on price attribute sources and a table providing information about price attributes.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Price attributes overview (deprecated)
+# Price attributes overview (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -96,4 +96,4 @@ Each pricing rule allows for the combination of one header attribute group and o
 
 ## Next steps
 
-- [Price attributes for products, customers, and orders](price-attributes-setup.md)
+- [Price attributes for products, customers, and orders](upm-price-attributes-setup.md)

@@ -1,5 +1,5 @@
 ---
-title: Price attributes for products, customers, and orders (deprecated)
+title: Price attributes for products, customers, and orders (preview)
 description: Learn how to set up the configurable price attributes and link them to the products, customers, and orders, including step-by-step processes.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.form: GUPParameters, EcoResAttribute, EcoResAttributeGroup, SalesTable
 ---
 
-# Price attributes for products, customers, and orders (deprecated)
+# Price attributes for products, customers, and orders (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]

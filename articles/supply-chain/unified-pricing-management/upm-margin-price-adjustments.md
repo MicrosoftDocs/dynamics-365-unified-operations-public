@@ -1,5 +1,5 @@
 ---
-title: Margin price adjustments (deprecated)
+title: Margin price adjustments (preview)
 description: Learn how to set up and use margin price adjustments, including a list of configuration you must complete to use margin component price adjustments.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.form: GUPPriceComponentCode, GUPPriceComponentCodeSetup, GUPPricingTree, RetailPeriodicDiscount, GUPParameters
 ---
 
-# Margin price adjustments (deprecated)
+# Margin price adjustments (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -26,11 +26,11 @@ Margin component price adjustments can be associated with many types of agreemen
 
 To use margin component price adjustments, you must complete the following configuration:
 
-- Create one or more [price component codes](price-component-code.md) to set up the different types of margin price adjustments that you can include in your price structures.
-- Create one or more [price structures](price-structure-overview.md) to define how your margin price adjustments combine with other price elements (such as base prices and discounts) to determine the final unit price.
-- Set up one or more [margin price adjustment pricing rules](margin-discount-pricing-rules.md) to configure the margin price adjustments that you need, and to define which customers and items they apply to, and how they're calculated. You'll associate each price adjustment with a specific price component code and then define the details of the calculation.
+- Create one or more [price component codes](upm-price-component-code.md) to set up the different types of margin price adjustments that you can include in your price structures.
+- Create one or more [price structures](upm-price-structure-overview.md) to define how your margin price adjustments combine with other price elements (such as base prices and discounts) to determine the final unit price.
+- Set up one or more [margin price adjustment pricing rules](upm-margin-discount-pricing-rules.md) to configure the margin price adjustments that you need, and to define which customers and items they apply to, and how they're calculated. You'll associate each price adjustment with a specific price component code and then define the details of the calculation.
 
-For information about how to create pricing rules for each margin price adjustment (and discount), see [Pricing rules for discounts and margin price adjustments](margin-discount-pricing-rules.md).
+For information about how to create pricing rules for each margin price adjustment (and discount), see [Pricing rules for discounts and margin price adjustments](upm-margin-discount-pricing-rules.md).
 
 For example, the following illustration shows a price structure that contains two sequential margin component price adjustments (*General price adjustments* and *Seasonal price adjustments*).
 

@@ -1,5 +1,5 @@
 ---
-title: Price structure overview (preview)
+title: Price structure overview (deprecated)
 description: Learn how price structures work in Pricing management, including outlines on price component types and concurrency rules.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.form: GUPPricingTree, GUPPriceComponentCodeSetup
 ---
 
-# Price structure overview (preview)
+# Price structure overview (deprecated)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]

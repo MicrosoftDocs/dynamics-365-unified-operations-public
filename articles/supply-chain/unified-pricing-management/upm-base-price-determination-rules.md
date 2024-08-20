@@ -1,5 +1,5 @@
 ---
-title: Sales order base price determination rules (deprecated)
+title: Sales order base price determination rules (preview)
 description: Learn about the price determination rules for calculating an item's base price with a table that defines usage for various terms.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Sales order base price determination rules (deprecated)
+# Sales order base price determination rules (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -34,5 +34,5 @@ The following flow chart shows the sales order base price determination rules.
 
 ## Next steps
 
-- [Base price versions](base-price-versions.md)
-- [Sales trade agreement prices](sales-trade-agreement-prices.md)
+- [Base price versions](upm-base-price-versions.md)
+- [Sales trade agreement prices](upm-sales-trade-agreement-prices.md)

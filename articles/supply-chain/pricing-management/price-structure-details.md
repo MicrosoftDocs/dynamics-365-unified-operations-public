@@ -1,5 +1,5 @@
 ---
-title: Arrange price component codes into a price structure (preview)
+title: Arrange price component codes into a price structure (deprecated)
 description: Learn how to arrange price component codes into a price structure, including an outline and step-by-step process on configuring a price structure.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.form: GUPPricingTree, GUPParameters, GUPPriceComponentCodeSetup
 ---
 
-# Arrange price component codes into a price structure (preview)
+# Arrange price component codes into a price structure (deprecated)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]

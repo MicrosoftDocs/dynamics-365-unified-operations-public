@@ -1,5 +1,5 @@
 ---
-title: Turn on the Pricing management module for your system (deprecated)
+title: Turn on the Pricing management module for your system (preview)
 description: Learn how to turn on the Pricing management module for your system, including prerequisites and an outline on feature management.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Turn on the Pricing management module for your system (deprecated)
+# Turn on the Pricing management module for your system (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]

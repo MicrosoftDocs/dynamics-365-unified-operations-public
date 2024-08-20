@@ -2279,62 +2279,118 @@
         href: ../fin-ops-core/dev-itpro/organization-administration/configure-email.md?context=/dynamics365/context/supply-chain
       - name: Date/time data and time zones
         href: ../fin-ops-core/dev-itpro/organization-administration/date-time-zones.md?context=/dynamics365/context/supply-chain
-    - name: Pricing management (preview)
+    - name: Pricing management (deprecated)
       items:
-      - name: Pricing management overview
+      - name: Pricing management overview (deprecated)
         href: pricing-management/pricing-management-overview.md
-      - name: Turn on the Pricing management module for your system
+      - name: Turn on the Pricing management module for your system (deprecated)
         href: pricing-management/pricing-management-enable.md
       - name: Price attributes
         items:
-        - name: Price attributes overview
+        - name: Price attributes overview (deprecated)
           href: pricing-management/price-attributes-overview.md
-        - name: Price attributes for products, customers, and orders
+        - name: Price attributes for products, customers, and orders (deprecated)
           href: pricing-management/price-attributes-setup.md
-        - name: Price attribute groups
+        - name: Price attribute groups (deprecated)
           href: pricing-management/price-attribute-groups.md
-        - name: Customer and product price attribute groups
+        - name: Customer and product price attribute groups (deprecated)
           href: pricing-management/customer-product-attribute-groups.md
       - name: Price component codes
         items:
-        - name: Price component codes
+        - name: Price component codes (deprecated)
           href: pricing-management/price-component-code.md
-        - name: Price component code posting
+        - name: Price component code posting (deprecated)
           href: pricing-management/price-component-posting.md
       - name: Price structures
         items:
-        - name: Price structure overview
+        - name: Price structure overview (deprecated)
           href: pricing-management/price-structure-overview.md
-        - name: Set up company to use a single price structure
+        - name: Set up company to use a single price structure (deprecated)
           href: pricing-management/price-structure-single.md
-        - name: Set up company to use a multiple price structures
+        - name: Set up company to use a multiple price structures (deprecated)
           href: pricing-management/price-structure-multiple.md
-        - name: Arrange price component codes into a price structure
+        - name: Arrange price component codes into a price structure (deprecated)
           href: pricing-management/price-structure-details.md
       - name: Base prices and sales trade agreements
         items:
-        - name: Vendor list price and price adjustments
+        - name: Vendor list price and price adjustments (deprecated)
           href: pricing-management/vendor-list-price.md
-        - name: Sales order base price determination rules
+        - name: Sales order base price determination rules (deprecated)
           href: pricing-management/base-price-determination-rules.md
-        - name: Base price versions
+        - name: Base price versions (deprecated)
           href: pricing-management/base-price-versions.md
-        - name: Sales trade agreement prices
+        - name: Sales trade agreement prices (deprecated)
           href: pricing-management/sales-trade-agreement-prices.md
       - name: Discounts and margin price adjustments
         items:
-        - name: Margin price adjustments
+        - name: Margin price adjustments (deprecated)
           href: pricing-management/margin-price-adjustments.md
-        - name: Discounts
+        - name: Discounts (deprecated)
           href: pricing-management/discounts.md
-        - name: Pricing rules for discounts and margin price adjustments
+        - name: Pricing rules for discounts and margin price adjustments (deprecated)
           href: pricing-management/margin-discount-pricing-rules.md
       - name: Concurrency within and across price component codes
         items:
-        - name: Resolving concurrency within price component codes
+        - name: Resolving concurrency within price component codes (deprecated)
           href: pricing-management/concurrence-within-codes.md
-        - name: Resolving concurrency across price component codes
+        - name: Resolving concurrency across price component codes (deprecated)
           href: pricing-management/concurrence-cross-codes.md
+    - name: Unified pricing management (preview)
+      items:
+      - name: Pricing management overview
+        href: unified-pricing-management/upm-pricing-management-overview.md
+      - name: Turn on the Pricing management module for your system
+        href: unified-pricing-management/upm-pricing-management-enable.md
+      - name: Price attributes
+        items:
+        - name: Price attributes overview
+          href: unified-pricing-management/upm-price-attributes-overview.md
+        - name: Price attributes for products, customers, and orders
+          href: unified-pricing-management/upm-price-attributes-setup.md
+        - name: Price attribute groups
+          href: unified-pricing-management/upm-price-attribute-groups.md
+        - name: Customer and product price attribute groups
+          href: unified-pricing-management/upm-customer-product-attribute-groups.md
+      - name: Price component codes
+        items:
+        - name: Price component codes
+          href: unified-pricing-management/upm-price-component-code.md
+        - name: Price component code posting
+          href: unified-pricing-management/upm-price-component-posting.md
+      - name: Price structures
+        items:
+        - name: Price structure overview
+          href: unified-pricing-management/upm-price-structure-overview.md
+        - name: Set up company to use a single price structure
+          href: unified-pricing-management/upm-price-structure-single.md
+        - name: Set up company to use a multiple price structures
+          href: unified-pricing-management/upm-price-structure-multiple.md
+        - name: Arrange price component codes into a price structure
+          href: unified-pricing-management/upm-price-structure-details.md
+      - name: Base prices and sales trade agreements
+        items:
+        - name: Vendor list price and price adjustments
+          href: unified-pricing-management/upm-vendor-list-price.md
+        - name: Sales order base price determination rules
+          href: unified-pricing-management/upm-base-price-determination-rules.md
+        - name: Base price versions
+          href: unified-pricing-management/upm-base-price-versions.md
+        - name: Sales trade agreement prices
+          href: unified-pricing-management/upm-sales-trade-agreement-prices.md
+      - name: Discounts and margin price adjustments
+        items:
+        - name: Margin price adjustments
+          href: unified-pricing-management/upm-margin-price-adjustments.md
+        - name: Discounts
+          href: unified-pricing-management/upm-discounts.md
+        - name: Pricing rules for discounts and margin price adjustments
+          href: unified-pricing-management/upm-margin-discount-pricing-rules.md
+      - name: Concurrency within and across price component codes
+        items:
+        - name: Resolving concurrency within price component codes
+          href: unified-pricing-management/upm-concurrence-within-codes.md
+        - name: Resolving concurrency across price component codes
+          href: unified-pricing-management/upm-concurrence-cross-codes.md
     - name: Procurement and sourcing
       items:
       - name: Procurement and sourcing overview

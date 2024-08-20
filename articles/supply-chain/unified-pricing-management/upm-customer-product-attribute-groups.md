@@ -1,5 +1,5 @@
 ---
-title: Customer and product price attribute groups (deprecated)
+title: Customer and product price attribute groups (preview)
 description: Learn how to configure customer and product price attribute groups for the Pricing management module, including usage examples.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.form: GUPPricingAttributeGroup, GUPPricingAttributeGroup
 ---
 
-# Customer and product price attribute groups (deprecated)
+# Customer and product price attribute groups (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -20,7 +20,7 @@ ms.search.form: GUPPricingAttributeGroup, GUPPricingAttributeGroup
 
 ## Usage examples
 
-The following examples show how you can simplify your [price attribute groups](price-attribute-groups.md) and pricing rules by setting up a customer price attribute group. Although these examples are focused on customer price attribute groups, product price attribute groups work in a similar way (but define groups of products instead of groups of prices).
+The following examples show how you can simplify your [price attribute groups](upm-price-attribute-groups.md) and pricing rules by setting up a customer price attribute group. Although these examples are focused on customer price attribute groups, product price attribute groups work in a similar way (but define groups of products instead of groups of prices).
 
 The more often you have to use a given customer price attribute group in your price attribute groups and pricing rules, the more useful that group will be.
 
@@ -104,7 +104,7 @@ To add, edit, or delete a price attribute group, follow these steps.
     - **Friendly name** – Enter a descriptive or common name for the group. For new groups, the value initially matches the value that you entered in the **Price attribute group** field, but you can change it.
     - **Description** – Enter a short description of the group.
     - **Help text** – Enter help text that will be shown to describe the group on other pages of Microsoft Dynamics 365 Supply Chain Management.
-    - **Sales order matching scope** – This read-only field indicates whether the group applies to the overall order header values or to individual order line values. If you're creating a customer price attribute group, the value is always *Header*. If you're creating a product price attribute group, the value is always *Line*. For more information about order matching scopes, see [Price attribute groups](price-attribute-groups.md).
+    - **Sales order matching scope** – This read-only field indicates whether the group applies to the overall order header values or to individual order line values. If you're creating a customer price attribute group, the value is always *Header*. If you're creating a product price attribute group, the value is always *Line*. For more information about order matching scopes, see [Price attribute groups](upm-price-attribute-groups.md).
 
 1. On the Action Pane, select **Save**.
 1. On the **Attributes** FastTab, review  the attributes that belong to the group, and edit them as required. Use the following toolbar buttons to work with the list:
@@ -146,4 +146,4 @@ You can use the **Price attribute source** filter in the **Add price attribute**
 
 [<img src="media/add-ProductPriceAttributeGroup.png" alt="Attributes filtered by price attribute source in the Add price attribute dialog box." title="Attributes filtered by price attribute source in the Add price attribute dialog box" width="720" />](media/add-ProductPriceAttributeGroup.png#lightbox)
 
-For more information about how to set up price attribute groups, see [Price attribute groups](price-attribute-groups.md).
+For more information about how to set up price attribute groups, see [Price attribute groups](upm-price-attribute-groups.md).

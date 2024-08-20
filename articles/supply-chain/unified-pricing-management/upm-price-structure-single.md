@@ -1,5 +1,5 @@
 ---
-title: Set up a company to use a single price structure (deprecated)
+title: Set up a company to use a single price structure (preview)
 description: Learn how to configure a company to use a single price structure, and how to set up that structure, including a step-by-step process.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.form: GUPPriceComponentCodeSetup, GUPParameters
 ---
 
-# Set up a company to use a single price structure (deprecated)
+# Set up a company to use a single price structure (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -39,7 +39,7 @@ To set up the price structure for a company that uses a single structure, follow
 
     [<img src="media/price-component-code-setup.png" alt="Current price structure on the Price component code setup page." title="Current price structure on the Price component code setup page" width="720" />](media/price-component-code-setup.png#lightbox)
 
-1. Set up your price structure by adding and removing lines to define a price sequence. Set the fields for each price component code that you want to include. These fields work just as they do on the **Price component code list** FastTab of the **Price trees** page. For information about how to set these fields, and examples that show how they work, see [Arrange price component codes into a price structure](price-structure-details.md).
+1. Set up your price structure by adding and removing lines to define a price sequence. Set the fields for each price component code that you want to include. These fields work just as they do on the **Price component code list** FastTab of the **Price trees** page. For information about how to set these fields, and examples that show how they work, see [Arrange price component codes into a price structure](upm-price-structure-details.md).
 1. When you've set up all lines as required, select **Save** on the Action Pane.
 
 ## Auto charges in single and multiple price structures

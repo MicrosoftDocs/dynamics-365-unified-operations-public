@@ -1,5 +1,5 @@
 ---
-title: Price component posting (deprecated)
+title: Price component posting (preview)
 description: Learn how to set up different sales order posting ledgers for different price component codes, including an outline on setting up price component pricing.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,13 +10,13 @@ ms.reviewer: kamaybac
 ms.search.form: GUPParameters, GUPPriceComponentCodePostingProfile, GUPPriceComponentCodeSetup, GUPPricingTree
 ---
 
-# Price component posting (deprecated)
+# Price component posting (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-Pricing management lets you set up a different sales order posting ledger for each of the following types of [price component codes](price-component-code.md):
+Pricing management lets you set up a different sales order posting ledger for each of the following types of [price component codes](upm-price-component-code.md):
 
 - Base price
 - Sales trade agreement price
@@ -25,7 +25,7 @@ Pricing management lets you set up a different sales order posting ledger for ea
 
 This capability enables the system to keep ledger accounts that distinguish the many layers of your pricing composition at the price component level.
 
-For more information about how to set up your price structures, including how to assign posting profiles for each relevant price component code in a structure, see [Arrange price component codes into a price structure](price-structure-details.md).
+For more information about how to set up your price structures, including how to assign posting profiles for each relevant price component code in a structure, see [Arrange price component codes into a price structure](upm-price-structure-details.md).
 
 ## Set up price component posting
 
@@ -96,8 +96,8 @@ Follow these steps to set up your price structures to use a specific posting pro
 
 1. Follow one of these steps:
 
-    - For companies that use a single price structure, go to **Price management \> Setup \> Price component codes \> Price component code setup**. (Learn more in [Set up a company to use a single price structure](price-structure-single.md).)
-    - For companies that use multiple price structures, go to **Price management \> Setup \> Price component codes \> Price trees**, and select a price tree in the list pane. (Learn more in [Set up a company to use multiple price structures](price-structure-multiple.md).)
+    - For companies that use a single price structure, go to **Price management \> Setup \> Price component codes \> Price component code setup**. (Learn more in [Set up a company to use a single price structure](upm-price-structure-single.md).)
+    - For companies that use multiple price structures, go to **Price management \> Setup \> Price component codes \> Price trees**, and select a price tree in the list pane. (Learn more in [Set up a company to use multiple price structures](upm-price-structure-multiple.md).)
 
 1. Find the price component code line that you want to assign posting for, and select its **Post to price component code** checkbox. Then set the **Posting profile** field to the profile that you want to use for the line.
 

@@ -1,5 +1,5 @@
 ---
-title: Discount types (deprecated)
+title: Discount types (preview)
 description: Learn about the different types of discounts that you can set up by using Pricing management with outlines on simple and quantity discounts.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.form: 
 ---
 
-# Discount types (deprecated)
+# Discount types (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -20,14 +20,14 @@ This article introduces the different types of discounts that you can set up by 
 
 To use discounts, you must complete the following setup:
 
-- Create one or more [price component codes](price-component-code.md) to set up the different types of discounts that you can include in your price structures.
-- Create one or more [price structures](price-structure-overview.md) to define how your discounts are combined with other price elements (such as the base price and margin price adjustments) to determine the final unit price.
-- Set up one or more [discount pricing rules](margin-discount-pricing-rules.md) to configure each discount that you need, and define which customers and items they apply to, and how they're calculated. For each rule, you select the type of discount and associate it with a specific price component code. You then define the discount by using a combination of settings that are common to all discounts and settings that are specific to your selected discount type.
+- Create one or more [price component codes](upm-price-component-code.md) to set up the different types of discounts that you can include in your price structures.
+- Create one or more [price structures](upm-price-structure-overview.md) to define how your discounts are combined with other price elements (such as the base price and margin price adjustments) to determine the final unit price.
+- Set up one or more [discount pricing rules](upm-margin-discount-pricing-rules.md) to configure each discount that you need, and define which customers and items they apply to, and how they're calculated. For each rule, you select the type of discount and associate it with a specific price component code. You then define the discount by using a combination of settings that are common to all discounts and settings that are specific to your selected discount type.
 
-For information about how to create pricing rules for each type of discount (and for margin price adjustments), see [Pricing rules for discounts and margin price adjustments](margin-discount-pricing-rules.md).
+For information about how to create pricing rules for each type of discount (and for margin price adjustments), see [Pricing rules for discounts and margin price adjustments](upm-margin-discount-pricing-rules.md).
 
 > [!NOTE]
-> The *pricing sequence* of your [price structure](price-structure-overview.md) isn't associated with discount types.
+> The *pricing sequence* of your [price structure](upm-price-structure-overview.md) isn't associated with discount types.
 
 ## Simple discounts
 
@@ -155,10 +155,10 @@ However, if the customer orders ten of item *EV009*, they've still have ordered 
 
 ## "Always apply" discounts
 
-*Always apply* isn't a discount type. It's a concurrency mode that's available for all discount types. All discounts that are created by using the *Always apply* mode will be applied to the appropriate items after all the existing discounts have been applied. Learn more in [Resolve concurrency within price component codes](concurrence-within-codes.md).
+*Always apply* isn't a discount type. It's a concurrency mode that's available for all discount types. All discounts that are created by using the *Always apply* mode will be applied to the appropriate items after all the existing discounts have been applied. Learn more in [Resolve concurrency within price component codes](upm-concurrence-within-codes.md).
 
 ## Next steps
 
-- Create [price component codes](price-component-code.md).
-- Create [price structures](price-structure-overview.md).
-- Configure [discount pricing rules](margin-discount-pricing-rules.md) for each discount.
+- Create [price component codes](upm-price-component-code.md).
+- Create [price structures](upm-price-structure-overview.md).
+- Configure [discount pricing rules](upm-margin-discount-pricing-rules.md) for each discount.

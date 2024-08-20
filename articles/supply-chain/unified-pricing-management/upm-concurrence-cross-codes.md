@@ -1,5 +1,5 @@
 ---
-title: Resolve concurrency across price component codes (deprecated)
+title: Resolve concurrency across price component codes (preview)
 description: Concurrency across price component rules let you define what happens if multiple discounts and price adjustments apply to the same order and/or order line.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.form: GUPPricingTree, GUPParameters, GUPPriceComponentCodeSetup
 ---
 
-# Resolve concurrency across price component codes (deprecated)
+# Resolve concurrency across price component codes (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -18,8 +18,8 @@ ms.search.form: GUPPricingTree, GUPParameters, GUPPriceComponentCodeSetup
 
 Concurrency rules let you define what happens if multiple pricing rules apply to the same order and/or order line. You can set up concurrency rules to control whether the customer receives just one of the matching rules (and if so, which one they receive), or whether the rules are combined (and if so, how they're combined). There are two types of concurrency:
 
-- **Across-price-component-code concurrency** – This type of concurrency controls how the different [price component codes](price-component-code.md) that are included in a [price structure](price-structure-overview.md) combine with each other. A price structure defines a collection of different types of price component codes (including base price, sales agreement price, margin components, discounts, and/or charges), the order that the codes are calculated in, and the way that the price adjustments are calculated and combined to determine the final price.
-- **Within-price-component-code concurrency** – Any number of [pricing rules](margin-discount-pricing-rules.md) can be associated with each price component code that's included in a price structure. This principle is especially true of discounts. This type of concurrency occurs when an order or order line qualifies for more than one pricing rule that's associated with the same component code. For example, if you define a price component code that's named *Seasonal promotion events*, and you associate multiple discount rules with it, multiple pricing rules might apply to the same order line. Therefore, in the *Seasonal promotion events* price component code, you'll set up concurrency rules to control whether the customer receives just one of the matching discounts (and if so, which one they receive), or whether the discounts are combined (and if so, how they're combined).
+- **Across-price-component-code concurrency** – This type of concurrency controls how the different [price component codes](upm-price-component-code.md) that are included in a [price structure](upm-price-structure-overview.md) combine with each other. A price structure defines a collection of different types of price component codes (including base price, sales agreement price, margin components, discounts, and/or charges), the order that the codes are calculated in, and the way that the price adjustments are calculated and combined to determine the final price.
+- **Within-price-component-code concurrency** – Any number of [pricing rules](upm-margin-discount-pricing-rules.md) can be associated with each price component code that's included in a price structure. This principle is especially true of discounts. This type of concurrency occurs when an order or order line qualifies for more than one pricing rule that's associated with the same component code. For example, if you define a price component code that's named *Seasonal promotion events*, and you associate multiple discount rules with it, multiple pricing rules might apply to the same order line. Therefore, in the *Seasonal promotion events* price component code, you'll set up concurrency rules to control whether the customer receives just one of the matching discounts (and if so, which one they receive), or whether the discounts are combined (and if so, how they're combined).
 
 This article explains how to manage *across-price-component-code concurrency*. For information about how to manage *within-price-component-code concurrency*, see [Resolve concurrency within price component codes](concurrence-within-codes.md).
 
@@ -34,7 +34,7 @@ The **Concurrency mode across priority** setting affects discount calculations o
 
 As was mentioned, margin components are always compounded across components (in other words, the **Concurrency mode across priority** field is always set to *Compounded* for margin components in your price structures). However, you must still set up each price structure to control whether each adjustment is calculated by using the base price or the compound price (that is, the running total). The option that you choose can have a significant effect on your final prices for margin price adjustments that are calculated as a percentage. For each margin component in your price structures, you can set the option by using the **Compound** checkbox. For an example that shows how the setting of this checkbox affects your final prices, see the [Example price calculation using a mix of compound and non-compound margin components](#margin-example) section of this article.
 
-For information about how to set up price structures, see [Arrange price component codes into a price structure](price-structure-details.md).
+For information about how to set up price structures, see [Arrange price component codes into a price structure](upm-price-structure-details.md).
 
 ## <a name="parameters"></a>System settings for resolving discount concurrency across price component codes
 

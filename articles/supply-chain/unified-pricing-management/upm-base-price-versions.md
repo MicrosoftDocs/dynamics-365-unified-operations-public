@@ -1,5 +1,5 @@
 ---
-title: Base price versions (deprecated)
+title: Base price versions (preview)
 description: Learn how base price versions work in Pricing management, including outlines on determining the base price and base price determination exceptions.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.form: GUPBasePriceVersion, GUPItemBasePrice
 ---
 
-# Base price versions (deprecated)
+# Base price versions (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -19,7 +19,7 @@ ms.search.form: GUPBasePriceVersion, GUPItemBasePrice
 
 This article describes how base price versions work in Pricing management. The primary purpose of a base price version is to maintain a list of *item base prices* for a specific period. The base price is a common price at the level of the stock keeping unit (SKU). Pricing management lets you build selling prices by using *cost-plus pricing*. When you use cost-plus pricing, you first build a price structure that starts with the base price.
 
-The following tables shows an example of a [price structure](price-structure-overview.md) that can be used to build final selling prices based on base prices.
+The following tables shows an example of a [price structure](upm-price-structure-overview.md) that can be used to build final selling prices based on base prices.
 
 | Pricing sequence | Price component code | Price component type | Description | Price details on the sales order |
 |---|---|---|---|---|
@@ -64,7 +64,7 @@ The following table shows how sales trade agreements are related to selling pric
 > [!NOTE]
 > To use sales trade agreement prices, your price structure must include a price component code where the **Price component** field is set to *Sales trade agreement*.
 
-The following tables shows an example of a [price structure](price-structure-overview.md) that includes a sales trade agreement.
+The following tables shows an example of a [price structure](upm-price-structure-overview.md) that includes a sales trade agreement.
 
 | Pricing sequence | Price component code | Price component type | Description | Price details on the sales order |
 |---|---|---|---|---|
@@ -86,4 +86,4 @@ Therefore, the selling price for the sales order line is 8 + 3 + 2 – 1 = $12.
 
 ## Next steps
 
-- [Sales trade agreement prices](sales-trade-agreement-prices.md)
+- [Sales trade agreement prices](upm-sales-trade-agreement-prices.md)

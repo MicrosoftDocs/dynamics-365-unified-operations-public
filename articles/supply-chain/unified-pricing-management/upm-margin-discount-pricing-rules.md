@@ -1,5 +1,5 @@
 ---
-title: Pricing rules for discounts and margin price adjustments (deprecated)
+title: Pricing rules for discounts and margin price adjustments (preview)
 description: Learn how to configure pricing rules for margin component price adjustments, simple discounts, quantity discounts, and free-item discounts.
 author: sherry-zheng
 ms.author: chuzheng
@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.form: RetailPeriodicDiscount, RetailMixAndMatchLineGroups, GUPPriceAdjustPriceAttributeGroupEdit, GUPDiscountPriceComponentGroupExclusionList, GUPFundList, RetailMixAndMatchLineGroupSetup
 ---
 
-# Pricing rules for discounts and margin price adjustments (deprecated)
+# Pricing rules for discounts and margin price adjustments (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
@@ -57,7 +57,7 @@ Set the following fields on the **General** FastTab for all types of pricing rul
 - **Status** – Set this field to *Enabled* or *Disabled*. Only enabled records are available for calculations. New records are set to *Disabled* and can be enabled only after you've finished setting all the required fields. All fields are read-only for enabled rules. Therefore, you must disable a rule before you can edit it.
 - **Currency** – Select the currency that the rule applies to.
 - **Price component** – This read-only field shows the type of pricing rule (*Discounts* or *Margin component*).
-- **Price component code** – Select the [price component code](price-component-code.md) that the rule applies to. Only existing price component codes of the applicable type are listed.
+- **Price component code** – Select the [price component code](upm-price-component-code.md) that the rule applies to. Only existing price component codes of the applicable type are listed.
 - **Header price attribute group type** – This read-only field indicates how customers that the rule applies to are selected. It shows *All* if the rule applies to all customers. It shows *Group* if the rule applies to only a set of customers, as defined by values that are assigned to attributes that are part of an attribute group. You can set the value for the current rule by selecting **Header price attribute group** on the Action Pane. Learn more in the [Set up header price attribute values](#header-attributes) section of this article.
 - **Price attribute group** – If the **Header price attribute group type** field is set to *Group*, this read-only field shows the attribute group that's being used to define the set of customers that the current rule applies to. Learn more in the [Set up header price attribute values](#header-attributes) section.
 
@@ -75,12 +75,12 @@ If you're setting up a pricing rule for a margin component price adjustment, set
 
 If you're setting up a pricing rule for a discount, set the following fields on the **General** FastTab. Not all these fields are available for every type of discount.
 
-- **Discount account** – If you want to post the discount amount for the discount record to a separate general ledger account, specify that account. This field overrides the similar field that's available for price structures (**Price component code setup** or **Price tree**). Learn more in [Price component posting](price-component-posting.md).
+- **Discount account** – If you want to post the discount amount for the discount record to a separate general ledger account, specify that account. This field overrides the similar field that's available for price structures (**Price component code setup** or **Price tree**). Learn more in [Price component posting](upm-price-component-posting.md).
 - **Discount concurrency mode** – Select one of the following values to specify how the system should handle situations where more than one discount rule applies to the same price component code in a price structure. (This type of situation is known as concurrency.)
 
     - *Exclusive* – The discount is an exclusive discount. Therefore, it can't be combined with other discounts. If there are multiple exclusive discounts, the price engine will apply only the one that gives the largest discount.
     - *Best price* – Discounts of this concurrency mode will compete for the largest discount (lowest price).
-    - *Compounded* – The discount will be combined with other discounts according to the pricing sequence that's defined in the price structure. Settings on the **Pricing management parameters** page control whether the compounded discount calculation is based on the original price or the compounded amount. (Learn more in [Resolve concurrency within price component codes](concurrence-within-codes.md).)
+    - *Compounded* – The discount will be combined with other discounts according to the pricing sequence that's defined in the price structure. Settings on the **Pricing management parameters** page control whether the compounded discount calculation is based on the original price or the compounded amount. (Learn more in [Resolve concurrency within price component codes](upm-concurrence-within-codes.md).)
     - *Always apply* – The discount will always be applied. Always-apply discounts are applied last. Therefore, they represent universal discounts that apply to all sales orders.
     - *Price attribute combination rank* – Discounts of this concurrency mode don't compete based on price. Instead, they compete based on which discount has the highest price attribute combination rank. If multiple discounts have the same highest rank, they all apply to the sales order.
 
@@ -168,7 +168,7 @@ The grid on the **Quantity discount configuration** FastTab defines a set of qua
 
 ## View information on the Calculation FastTab
 
-The **Calculation** FastTab provides information about how the price component code that's selected for the pricing rule is set up in your [price structure](price-structure-overview.md).
+The **Calculation** FastTab provides information about how the price component code that's selected for the pricing rule is set up in your [price structure](upm-price-structure-overview.md).
 
 The following information is shown:
 
@@ -215,7 +215,7 @@ Each line assigns calculation rules that apply to a specific collection of items
 
 1. On the **Lines** FastTab, select **New** on the toolbar.
 1. The **Edit price attributes** dialog box appears. This dialog box lets you set up the logic for finding the items that the current line will apply to. On the **Header price attribute group** FastTab, review the logic that's set up for selecting the customers that the current pricing rule applies to. The values apply to all lines in the current pricing rule and are read-only here. (You can change them in the [header price attribute group settings](#header-attributes).)
-1. In the **Price attribute group combination** field, select the combination of price attributes that you'll use to define the items for the current line. The combinations that are available for selection are defined for the [price component code](price-component-code.md) that's selected for the current pricing rule. However, only the right side of the combination name (the [line price attribute group](price-attribute-groups.md) name) is relevant, because the header attributes are common to all lines for the pricing rule, as was mentioned in the previous step. Select the combination where the right side of the name matches the way that you want to define the collection of items that the line applies to.
+1. In the **Price attribute group combination** field, select the combination of price attributes that you'll use to define the items for the current line. The combinations that are available for selection are defined for the [price component code](upm-price-component-code.md) that's selected for the current pricing rule. However, only the right side of the combination name (the [line price attribute group](upm-price-attribute-groups.md) name) is relevant, because the header attributes are common to all lines for the pricing rule, as was mentioned in the previous step. Select the combination where the right side of the name matches the way that you want to define the collection of items that the line applies to.
 1. If the selected price attribute group combination considers item (line) attribute values (that is, if it doesn't apply to *all* items), the **Line price attribute group** FastTab is available. In this case, for each row on the **Line price attribute group** FastTab, enter or select one or more values in the **Value** column to define the rules for selecting items. The collection of attributes that's shown comes from the price attribute group combination that you selected. The following rules apply:
 
     - All rows are combined by using a logical AND operator. Therefore, only those items that have matching values for *all* rows will be included.
@@ -239,9 +239,9 @@ If you ever have to return to the **Edit price attributes** dialog box to change
 The settings for each line on the **Lines** FastTab vary based on the type of pricing rule that you're working with. The following fields and information might be available:
 
 - **Line group type** – This field shows whether the line applies to a specific group of items or to all items.
-- **Line price attribute group** – If the **Line group type** field is set to *Group*, this field shows the name of the selected [line price attribute group](price-attribute-groups.md).
+- **Line price attribute group** – If the **Line group type** field is set to *Group*, this field shows the name of the selected [line price attribute group](upm-price-attribute-groups.md).
 - **Price attribute detail** – This field summarizes the values that were set for the line in the **[Edit price attributes](#add-line)** dialog box. To change these values, select **Edit price attribute** on the FastTab toolbar.
-- **Combination rank** – This field shows the combination rank that was generated for the price attribute group combination that was selected for the line in the **[Edit price attributes](#add-line)** dialog box. Rankings enable the system to determine which pricing rule is used if an order or order line qualifies for more than one rule. Learn more in [Price component codes](price-component-code.md).
+- **Combination rank** – This field shows the combination rank that was generated for the price attribute group combination that was selected for the line in the **[Edit price attributes](#add-line)** dialog box. Rankings enable the system to determine which pricing rule is used if an order or order line qualifies for more than one rule. Learn more in [Price component codes](upm-price-component-code.md).
 - **Required line quantity** – For free-item discounts where the **Criteria type** field is set to *Quantity*, enter the minimum quantity that must be ordered to qualify for the discount.
 - **Required line amount** – For free-item discounts where the **Criteria type** field is set to *Amount*, enter the minimum amount that must be ordered to qualify for the discount.
 - **Allow unit conversion** – Select this checkbox to convert the selling unit to the unit that's used for the pricing rule as required.
@@ -261,7 +261,7 @@ The settings for each line on the **Lines** FastTab vary based on the type of pr
 - **Unit price** – If you're using the *Unit price* calculation type, enter the new unit price.
 - **Quantity limit** – The field shows the maximum order quantity that the discount applies to. This limit applies to all lines on the **Lines** FastTab. You can't edit this separately for each line, but you can edit it for all lines at the same time by using the **Quantity limit** field on the **Price/discount** FastTab.
 - **Number of products needed** – This field shows the number of items that the customer must buy in this line group to qualify for the discount. For mix-and-match discounts, the value is read-only and is taken from the group that's selected in the **Line group** field.
-- **Line group** – If you're setting up a mix-and-match discount, select the line group that applies to the line. Before you can select a value, you must set up your line groups, add them to the current pricing rule, and configure a color and item threshold for them, as described in [Mix-and-match discounts](discounts.md#mix-match). The line will then be highlighted in the color that was configured for the selected line group (if any color was configured), and the **Number of products needed** value will be updated to match the selected line group configuration.
+- **Line group** – If you're setting up a mix-and-match discount, select the line group that applies to the line. Before you can select a value, you must set up your line groups, add them to the current pricing rule, and configure a color and item threshold for them, as described in [Mix-and-match discounts](upm-discounts.md#mix-match). The line will then be highlighted in the color that was configured for the selected line group (if any color was configured), and the **Number of products needed** value will be updated to match the selected line group configuration.
 - *Other dimensions* – The grid might include additional columns that show item, storage, and tracking dimensions (such as **Color**, **Warehouse**, and **Serial number**). To select which dimensions are shown, select **Display dimensions** on the toolbar. Enter values in these columns to limit the line so that it applies only to items that match the specified dimension values.
 
 ### Enter information on the Lines details FastTab
@@ -279,12 +279,12 @@ Use header price attributes to control which customers the current pricing rule 
 1. The **Edit price attributes** dialog box appears. This dialog box lets you set up the logic for finding the customers that the current pricing rule will apply to. On the **Header price attribute group** FastTab, review and set the following fields:
 
     - **Scope of price attributes** – This read-only field indicates the type of attributes that your settings will apply to. It will always show *Header*.
-    - **Group type** – Select the type of customer selection that you want to set up. The available values depend on the price attribute combinations that are available for your selected [price component code](price-component-code.md). The following values might be available:
+    - **Group type** – Select the type of customer selection that you want to set up. The available values depend on the price attribute combinations that are available for your selected [price component code](upm-price-component-code.md). The following values might be available:
 
         - *Group* – If you select this value, the dialog box will provide a group of header attributes that you can assign values for, so that you can limit the set of customers that the pricing rule will apply to.
         - *All* – The pricing rule will apply to all customers. If you select this value, no further steps are required. Therefore, you can skip the rest of this procedure and just select **OK** to apply your settings.
 
-    - **Price attribute group** – If you set the **Group type** field to *All*, select a price attribute group. The available values depend on the attribute groups that you've enabled for the selected [price component code](price-component-code.md). The value that you select will affect the set of attributes that you can work with in the dialog box.
+    - **Price attribute group** – If you set the **Group type** field to *All*, select a price attribute group. The available values depend on the attribute groups that you've enabled for the selected [price component code](upm-price-component-code.md). The value that you select will affect the set of attributes that you can work with in the dialog box.
 
 1. If you selected a price attribute group, the attributes from it are shown on the **Header price attribute group** FastTab. For each row, enter or select one or more values in the **Value** column to define the rules for selecting customers. The following rules apply:
 
@@ -302,4 +302,4 @@ Use header price attributes to control which customers the current pricing rule 
 
 ## Set up mix-and-match line groups
 
-If you're working with a mix-and-match discount pricing rule, select **Mix and match line groups** to select which mix-and-match line groups can be assigned on the **Lines** FastTab, and specify the number of products that must be bought from each group to qualify for the discount. For information about how to set up mix-and-match line groups, see [Mix-and-match discounts](discounts.md#mix-match).
+If you're working with a mix-and-match discount pricing rule, select **Mix and match line groups** to select which mix-and-match line groups can be assigned on the **Lines** FastTab, and specify the number of products that must be bought from each group to qualify for the discount. For information about how to set up mix-and-match line groups, see [Mix-and-match discounts](upm-discounts.md#mix-match).
