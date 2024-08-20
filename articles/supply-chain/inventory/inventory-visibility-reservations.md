@@ -58,13 +58,13 @@ Follow these steps to turn on the reservation feature in UI version 2.
 1. On the navigation pane, select **Soft Reservation**.
 1. On the **Data source settings** tile, select **Manage**.
 1. Set the **Enable feature** option to *True*.
-1. The **Filter unconfigured dimensions** option controls how the system behaves if a user submits reservation requests that include dimensions that aren't specified on the **Reservation dimensions** FastTab. (For more information, see the [Configure reservation mappings and dimensions](#config-mappings-dimensions) section of this article.) Select one of the following values:
+1. The **Filter unconfigured dimensions** option controls how the system behaves if a user submits reservation requests that include dimensions that aren't specified on the **Reservation dimensions** FastTab. (Learn more in the [Configure reservation mappings and dimensions](#config-mappings-dimensions) section of this article.) Select one of the following values:
 
     - *True* – Reservation requests that include dimensions that aren't defined on the **Reservation dimensions** FastTab succeed, but undefined dimensions are ignored.
     - *False* – Reservation requests that include dimensions that aren't defined on the **Reservation dimensions** FastTab fail.
 
     > [!IMPORTANT]
-    > If you've enabled the *Inventory Visibility integration with soft reservation on sales order lines* feature in Supply Chain Management, you must set the **Filter unconfigured dimensions** option to *True*. For more information, see the [Integrate soft reservations and offsets with Supply Chain Management](#offset-scm) section.
+    > If you've enabled the *Inventory Visibility integration with soft reservation on sales order lines* feature in Supply Chain Management, you must set the **Filter unconfigured dimensions** option to *True*. Learn more in the [Integrate soft reservations and offsets with Supply Chain Management](#offset-scm) section.
 
 1. On the toolbar, select **Save**.
 1. If you changed the setting of the **Filter unconfigured dimensions** option, you must reverse all existing reservations to preserve data consistency. Use the [clean up reservation data API](inventory-visibility-api.md#clean-up-reservation-data) to clean up existing soft reservation records.

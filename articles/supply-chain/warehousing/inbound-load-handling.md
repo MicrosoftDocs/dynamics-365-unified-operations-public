@@ -190,7 +190,7 @@ The following table summarizes the effects of the **Allow multiple product recei
 | Yes | No updates | *Received*, if the total registered load quantity is equal to or more than the load quantity | |
 | Yes | No updates | *Shipped* or *In process*, if the total registered load quantity is less than the load quantity | |
 
-After the **Load status** field is set to *Received*, no more product receipt postings can be done for that load. However, the worker can register the remaining order quantity against the received load under the following conditions. (For more information, see the [Load over-receiving](#load-over-receiving) section earlier in this article.)
+After the **Load status** field is set to *Received*, no more product receipt postings can be done for that load. However, the worker can register the remaining order quantity against the received load under the following conditions. (Learn more in the [Load over-receiving](#load-over-receiving) section earlier in this article.)
 
 - The version of Supply Chain Management is older than version 10.0.11.
 - The *Over receipt of load quantities* feature is turned on, and the **Load line quantity over receipt** field on the mobile device menu item for the load item receiving action is set to *Allow*. (As of Supply Chain Management version 10.0.32, the *Over receipt of load quantities* feature is turned on by default. As of Supply Chain Management version 10.0.36, this feature is mandatory and can't be turned off.)

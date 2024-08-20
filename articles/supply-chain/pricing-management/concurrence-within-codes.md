@@ -29,7 +29,7 @@ The following types of within-price-component-code concurrency modes are availab
 
 - **Exclusive** – The pricing rule can't be combined with other rules that are associated with the same price component code. If more than one of these rules are set up as exclusive, the price engine applies the rule that has the largest discount.
 - **Best price** – Pricing rules that use this concurrency mode will compete for the largest discount (lowest price).
-- **Compounded** – All applicable pricing rules are combined. On the **Pricing management parameters** page, you can configure the system so that each calculation is based on either the original price or a running total of all adjustments so far. For more information, see the [System settings for resolving discount concurrency within a price component code](#parameters) section of this article.
+- **Compounded** – All applicable pricing rules are combined. On the **Pricing management parameters** page, you can configure the system so that each calculation is based on either the original price or a running total of all adjustments so far. Learn more in the [System settings for resolving discount concurrency within a price component code](#parameters) section of this article.
 - **Always apply** – The pricing rule always applies. This calculation is always applied last within a price component code.
 - **Price attribute combination rank** – Pricing rules that use this concurrency mode don't compete for prices. Instead, they compete based on which rule has the highest *price attribute combination rank*. If multiple rules have the same highest rank in the same price component code, they're combined.
 

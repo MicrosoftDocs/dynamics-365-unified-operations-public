@@ -52,7 +52,7 @@ If a new engineering *version* is created for a product, the system checks wheth
 - The engineering version is set to inactive to block the product from being used.
 
 > [!NOTE]
-> You can also set up readiness check policies for standard (non-engineering) products. For more information, see the [Readiness checks on standard products](#standard-products) section later in this article.
+> You can also set up readiness check policies for standard (non-engineering) products. Learn more in the [Readiness checks on standard products](#standard-products) section later in this article.
 
 ## View readiness checks
 
@@ -183,7 +183,7 @@ You create readiness policies for standard products just as you do for engineeri
 
 ### Assign readiness policies to standard products
 
-To assign a readiness policy to a standard product, open the related shared product, and set the **Product readiness policy** field to the name of the policy that should apply. For more information, see the [Assign readiness policies to standard and engineering products](#assign-policy) section earlier in this article.
+To assign a readiness policy to a standard product, open the related shared product, and set the **Product readiness policy** field to the name of the policy that should apply. Learn more in the [Assign readiness policies to standard and engineering products](#assign-policy) section earlier in this article.
 
 ### View and process readiness checks on standard products
 

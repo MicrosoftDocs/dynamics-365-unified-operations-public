@@ -64,7 +64,7 @@ The **Vendor (external) role** can be used for external vendors that will work w
 
 ## Set up security roles that are used when prospective vendors are onboarded
 
-To onboard vendors that are initiated via a prospective vendor registration request, you must set up an external security role. This role will be assigned to new users during the provisioning process that is controlled by the workflow of the **User request workflow (platform)** type. For more information, see the [Set up workflows to process vendor collaboration user requests](#set-up-workflows-to-process-vendor-collaboration-user-requests) section later in this article.
+To onboard vendors that are initiated via a prospective vendor registration request, you must set up an external security role. This role will be assigned to new users during the provisioning process that is controlled by the workflow of the **User request workflow (platform)** type. Learn more in the [Set up workflows to process vendor collaboration user requests](#set-up-workflows-to-process-vendor-collaboration-user-requests) section later in this article.
 
 For information about how to onboard prospective vendors, see [Onboard vendors](vendor-onboarding.md).
 
