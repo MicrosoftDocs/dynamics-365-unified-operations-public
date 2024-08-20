@@ -30,6 +30,7 @@ Before you can use AI summaries with Copilot, your system must meet the followin
 - [Power Platform Integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md) must be enabled for your environment. Usually, all the components that are required to use Copilot summaries are automatically deployed when Power Platform Integration is enabled. However, if they don't work as expected, see [Enable Copilot capabilities in finance and operations apps](../../fin-ops-core/dev-itpro/copilot/enable-copilot.md) for more detailed requirements.
 
 - Depending on the summaries that you want to use, the following features must be enabled in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). All of these features are turned on by default.
+
     - Workload insights with Copilot in the Warehouse Management mobile app – *Context-aware worker summary screen in WMA*
     - Product hover summaries – *Product summary when hovering on item*
     - Released product details summary – *Product details summary*
@@ -45,7 +46,7 @@ Workload insights with Copilot in the Warehouse Management mobile app are provid
 
 - The number of pick and receive work headers or work lines.
 - The number of active warehouse mobile app sessions in the warehouse.
-- Insights into the available work types. This information lets warehouse workers get an overview of the workload so they can better plan their shifts.
+- Insights into the available work types. This information lets warehouse workers get an overview of the workload, so that they can better plan their shifts.
 - The current workload. This information can be shown either as work headers or work lines.
 - Details of the available work per work type.
 - More information about the available work. Microsoft Copilot generates this information in natural language.
