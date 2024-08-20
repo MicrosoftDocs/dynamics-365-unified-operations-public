@@ -114,7 +114,7 @@ The document provides several sections that list specific item details, which ar
 
 - **Origin criterion:** You must manually enter data in this section the first time you release the document.
 
-- **Country of origin:** Prints the country of origin, which you apply by going to **Product information management \> Setup \> Product compliance \> Country of origin** (see also [Country of origin](../pim/country-of-origin.md)). The ISO code for the country of origin is printed based on the country/region of destination in the shipment delivery address and the item. If no country of origin data has been set up, then this value reverts back to the setting found at **Released product \> Foreign trade \> Origin**. If still no country of origin data is found, then you must manually enter the country of origin after generating the document.
+- **Country of origin:** Prints the country of origin, which you apply by going to **Product information management \> Setup \> Product compliance \> Country of origin** (learn more in [Country of origin](../pim/country-of-origin.md)). The ISO code for the country of origin is printed based on the country/region of destination in the shipment delivery address and the item. If no country of origin data has been set up, then this value reverts back to the setting found at **Released product \> Foreign trade \> Origin**. If still no country of origin data is found, then you must manually enter the country of origin after generating the document.
 
 ### Certifier signature and date
 

@@ -241,7 +241,7 @@ Your data export might be able to be completed more quickly if you reduce the nu
 If master planning ran by didn't create any orders, check the following settings:
 
 - Make sure the items you're expecting to generate supply for are set up with a lifecycle state where **Exclude from master planning** is set to *No*.
-- If you're running a filtered plan, make sure there aren't any typos in your filter values (see also [Run planning for a subset of items](plan-filters.md#apply-a-plan-filter)).
+- If you're running a filtered plan, make sure there aren't any typos in your filter values (learn more in [Run planning for a subset of items](plan-filters.md#apply-a-plan-filter)).
 - Make sure that there's demand for the items you're expecting master planning to create supply for.
 
 ## Planning of batch jobs fails when Planning Optimization is enabled

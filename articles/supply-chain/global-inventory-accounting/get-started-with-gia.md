@@ -101,7 +101,7 @@ Follow these steps to set up the integration between Global Inventory Accounting
 1. Select **Enable now**.
 1. Go to **Global inventory accounting \> Setup \> Global inventory accounting parameters \> Integrations parameters**.
 1. Depending on which version of Supply Chain Management you're running, do one of the following steps:
-    - **Supply Chain Management version 10.0.19 to 10.0.26**: In the **Data service endpoint** and **Global inventory accounting endpoint** fields, enter the URLs that were sent to you by email from the Global Inventory Accounting team (see also [How to get the Global Inventory Accounting add-in](#sign-up)).
+    - **Supply Chain Management version 10.0.19 to 10.0.26**: In the **Data service endpoint** and **Global inventory accounting endpoint** fields, enter the URLs that were sent to you by email from the Global Inventory Accounting team (learn more in [How to get the Global Inventory Accounting add-in](#sign-up)).
     - **Supply Chain Management version 10.0.27 and newer**: You don't need to enter the endpoints, so you can skip this step.
 
 Global Inventory Accounting is now ready to use.
