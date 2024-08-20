@@ -83,7 +83,7 @@ Suppose you take the following steps:
 
 1. You receive item *A0001* on January 25, 2020 and the transaction isn't financially updated
 1. You run the inventory closing on February 1, 2020.
-1. On February 5, 2020, you run the *Inventory transactions consolidation* job with archive period January 1, 2020 – January 31, 22020.
+1. On February 5, 2020, you run the *Inventory transactions consolidation* job with archive period January 1, 2020 – January 31, 2020.
 1. Sometime after February 5, 2020, you change the session date and time back to January 30, 2020.
 1. You financially update the received transaction of item *A0001* to *Purchased*.
 
