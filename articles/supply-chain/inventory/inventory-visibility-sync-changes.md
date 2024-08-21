@@ -86,7 +86,7 @@ To update the feature configuration, follow these steps:
         - *Created* – The system won't automatically post transactions to Dynamics 365 Supply Chain Management. 
         - *Posted* – The journal will be posted financially when synced to Dynamics 365 Supply Chain Management.
 
-1. If **Periodically synchronize transaction to Fno** is set to *True*, then you must configure your system to offset inventory adjustments to prevent inventory quantities from being updated twice. For details, see [Inventory Visibility adjustment offset](inventory-visibility-adjustment-offset.md).
+1. If **Periodically synchronize transaction to Fno** is set to *True*, then you must ensure the inventory adjustments offset configuration is setup in your system to prevent inventory quantities from being updated twice. For details, see [Inventory Visibility adjustment offset](inventory-visibility-adjustment-offset.md).
 
 ## Manually enter inventory adjustments in the Inventory Visibility app
 
