@@ -54,5 +54,4 @@ When you use the feature, follow these recommendations:
 ## Related information
 
 - [Workload insights with Copilot in the Warehouse Management mobile app](warehousing/warehouse-management-mobile-app-insights.md)
-- [AI summaries with Copilot](get-started/copilot-summaries-overview.md)
 - [Transparency note for Copilot data security and privacy in Microsoft Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)
