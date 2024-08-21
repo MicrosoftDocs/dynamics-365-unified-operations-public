@@ -37,7 +37,7 @@ ORDER BY EndTime DESC
 ## Database Activity  
 It can appear that the upgrade process isn't running as a step is taking some time to complete, and you want to validate that it's running.
 
-Use the following SQL script to check for database activity. This is useful for checking on the database synchronize steps: 
+Use the following SQL script to check for database activity and the database synchronize steps: 
  - PreReqs-AdditiveDbSync
  - PreReqs-PartialDbSync
  - DbSync-SyncSchema
@@ -64,11 +64,11 @@ FROM sys.dm_exec_requests er
 WHERE st.text IS NOT NULL
 ```
 
-## Pre-sync and post-sync scripts
-Following queries are used to check the pre-sync and post-sync job statuses.
+## Presync and post-sync scripts
+Following queries are used to check the presync and post-sync job statuses.
 
 ### Scheduled upgrade jobs
-The following script returns the pre-sync or post-sync jobs scheduled to run. This table is populated a few mins after the pre-sync or post-sync step is started.
+The following script returns the presync or post-sync jobs scheduled to run. This table is populated after the presync or post-sync step starts.
 ```SQL
 --Scheduled upgrade jobs that will get run
 select * from RELEASEUPDATESCRIPTS
@@ -139,7 +139,7 @@ select * from RELEASEUPDATELOG
 order by LOGTIME desc
 ```
 ### Upgrade job history
-After the presync or post-sync jobs are completed, you can check the timing for each of them. This can be useful when you are trying to tune the upgrade and determines what the longer running jobs are. 
+After the presync or post-sync jobs are completed, you can check the timing for each of them. This is useful when you're trying to tune the upgrade and determines what the longer running jobs are. 
 ```SQL
 --Shows the details of each upgrade job method
 select * from RELEASEUPDATESCRIPTSLOG
