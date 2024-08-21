@@ -13,7 +13,7 @@ ms.search.form:
 # Discount types (deprecated)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE [pricing-management-deprecation-banner](../includes/pricing-management-deprecation-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 This article introduces the different types of discounts that you can set up by using Pricing management.

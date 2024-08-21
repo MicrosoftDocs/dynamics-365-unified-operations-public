@@ -13,7 +13,7 @@ ms.search.form: GUPPricingTree, GUPParameters
 # Set up a company to use multiple price structures (deprecated)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE [pricing-management-deprecation-banner](../includes/pricing-management-deprecation-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 This article explains how to set up multiple price structures in a company. The purpose of a price structure is to define the order that the system calculates each type of price adjustment in, and to define other options for each price component code, such as concurrency and compounding rules.

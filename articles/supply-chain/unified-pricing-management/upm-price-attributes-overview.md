@@ -21,7 +21,7 @@ One of the key functions of a price manager is to work together with the product
 - Identify and classify products, customers, and order modes (for example, by region, pack size, brand, or age) to reflect each product's differentiating features, customer segments, and price sensitivity.
 - Set up pricing rules that consider any combination of the customer, product, and order attributes to set up a flexible pricing architecture.
 
-The **Pricing management** module provides *price attributes*. These attributes let price managers and sales promotion managers mark and group price differentiators that are defined for *products*, *customers*, and *sales order information*, and set up the pricing rules. Here are some examples of pricing rules:
+The Unified pricing management module provides *price attributes*. These attributes let price managers and sales promotion managers mark and group price differentiators that are defined for *products*, *customers*, and *sales order information*, and set up the pricing rules. Here are some examples of pricing rules:
 
 - Sales trade agreement prices
 - Margin component price adjustments

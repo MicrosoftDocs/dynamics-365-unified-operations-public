@@ -1,6 +1,6 @@
 ---
-title: Pricing management overview (preview)
-description: Access an overview of the Pricing management module in Microsoft Dynamics 365 Supply Chain Management, including a list of challenges.
+title: Unified pricing management module overview (preview)
+description: Access an overview of the Unified pricing management module in Microsoft Dynamics 365 Supply Chain Management, including a list of challenges.
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: overview
@@ -10,15 +10,15 @@ ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Pricing management overview (preview)
+# Unified pricing management module overview (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article provides an overview of the **Pricing management** module for Microsoft Dynamics 365 Supply Chain Management.
+This article provides an overview of the Unified pricing management module for Microsoft Dynamics 365 Supply Chain Management.
 
-For a video overview of the Pricing management module, see [Pricing Management Overview in Dynamics 365 Supply Chain Management - TechTalk](https://www.youtube.com/watch?v=Pc9nBoHN5m0).
+For a video overview of the Unified pricing management module, see [Pricing Management Overview in Dynamics 365 Supply Chain Management - TechTalk](https://www.youtube.com/watch?v=Pc9nBoHN5m0).
 
 Increasingly, traditional business-to-business (B2B) companies are considering converting to omnichannel sales and selling directly to customers, so that they can gain more control over pricing and margins. The omnichannel transformation causes massive changes to pricing models and rules. Pricing management helps B2B companies that are converting to omnichannel pricing by enabling attribute-based pricing rules that use attributes and data from customers, products, and order segments.
 
@@ -57,9 +57,9 @@ The following illustration shows many of the elements that affect Pricing manage
 
 ## Architecture overview
 
-The following illustration shows the architecture of the **Pricing management** module.
+The following illustration shows the architecture of the Unified pricing management module.
 
-[<img src="media/pricing-management-architecture.png" alt="Pricing management module architecture." title="Pricing management module architecture" width="720" />](media/pricing-management-architecture.png#lightbox)
+[<img src="media/pricing-management-architecture.png" alt="Unified pricing management module architecture." title="Unified pricing management module architecture" width="720" />](media/pricing-management-architecture.png#lightbox)
 
 > [!NOTE]
 > You can create and maintain the pricing rules in Supply Chain Management.

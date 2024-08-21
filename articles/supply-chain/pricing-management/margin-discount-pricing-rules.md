@@ -13,7 +13,7 @@ ms.search.form: RetailPeriodicDiscount, RetailMixAndMatchLineGroups, GUPPriceAdj
 # Pricing rules for discounts and margin price adjustments (deprecated)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE [pricing-management-deprecation-banner](../includes/pricing-management-deprecation-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 This article explains how to configure pricing rules for margin component price adjustments, simple discounts, quantity discounts, mix-and-match discounts, threshold discounts, and free-item discounts.

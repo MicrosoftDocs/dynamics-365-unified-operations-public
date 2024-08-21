@@ -13,7 +13,7 @@ ms.search.form: GUPParameters, EcoResAttribute, EcoResAttributeGroup, SalesTable
 # Price attributes for products, customers, and orders (deprecated)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE [pricing-management-deprecation-banner](../includes/pricing-management-deprecation-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 Pricing management provides a set of prefilled price attributes from fields in related tables that are associated with products, customers, orders, and order lines. It also lets you create custom price attributes and associate them with orders, customers, and items. You can use those price attributes when you create pricing rules and conditions. Then, when an order is placed, the pricing engine will then use the associations to determine the appropriate price.

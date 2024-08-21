@@ -13,7 +13,7 @@ ms.search.form: GUPBasePriceVersion, GUPItemBasePrice
 # Base price versions (deprecated)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+[!INCLUDE [pricing-management-deprecation-banner](../includes/pricing-management-deprecation-banner.md)]
 
 <!-- KFM: Preview until further notice -->
 
