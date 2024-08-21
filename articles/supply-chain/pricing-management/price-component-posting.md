@@ -1,6 +1,6 @@
 ---
 title: Price component posting (deprecated)
-description: Learn how to set up different sales order posting ledgers for different price component codes, including an outline on setting up price component pricing.
+description: Learn how to set up different sales order posting ledgers for different price component codes, including an outline on setting up price component pricing. This article describes functionality that has been deprecated. We recommend that you use the Unified pricing management module instead.
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: how-to

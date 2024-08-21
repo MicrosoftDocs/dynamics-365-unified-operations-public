@@ -1,6 +1,6 @@
 ---
 title: Price attributes for products, customers, and orders (deprecated)
-description: Learn how to set up the configurable price attributes and link them to the products, customers, and orders, including step-by-step processes.
+description: Learn how to set up the configurable price attributes and link them to the products, customers, and orders, including step-by-step processes. This article describes functionality that has been deprecated. We recommend that you use the Unified pricing management module instead.
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: how-to

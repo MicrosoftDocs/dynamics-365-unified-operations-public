@@ -1,6 +1,6 @@
 ---
 title: Customer and product price attribute groups (deprecated)
-description: Learn how to configure customer and product price attribute groups for the Pricing management module, including usage examples.
+description: Learn how to configure customer and product price attribute groups for the Pricing management module, including usage examples. This article describes functionality that has been deprecated. We recommend that you use the Unified pricing management module instead.
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: how-to

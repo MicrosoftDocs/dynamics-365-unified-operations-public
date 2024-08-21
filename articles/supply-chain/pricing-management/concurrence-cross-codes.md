@@ -1,6 +1,6 @@
 ---
 title: Resolve concurrency across price component codes (deprecated)
-description: Concurrency across price component rules let you define what happens if multiple discounts and price adjustments apply to the same order and/or order line.
+description: Concurrency across price component rules let you define what happens if multiple discounts and price adjustments apply to the same order and/or order line. This article describes functionality that has been deprecated. We recommend that you use the Unified pricing management module instead.
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: conceptual

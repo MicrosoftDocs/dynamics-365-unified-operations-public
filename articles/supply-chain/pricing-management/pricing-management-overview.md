@@ -1,6 +1,6 @@
 ---
-title: Pricing management overview (preview)
-description: Access an overview of the Pricing management module in Microsoft Dynamics 365 Supply Chain Management, including a list of challenges.
+title: Pricing management overview (deprecated)
+description: Access an overview of the Pricing management module in Microsoft Dynamics 365 Supply Chain Management, including a list of challenges. This article describes functionality that has been deprecated. We recommend that you use the Unified pricing management module instead.
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: overview
@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Pricing management overview (preview)
+# Pricing management overview (deprecated)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]

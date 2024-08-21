@@ -1,6 +1,6 @@
 ---
 title: Arrange price component codes into a price structure (deprecated)
-description: Learn how to arrange price component codes into a price structure, including an outline and step-by-step process on configuring a price structure.
+description: Learn how to arrange price component codes into a price structure, including an outline and step-by-step process on configuring a price structure. This article describes functionality that has been deprecated. We recommend that you use the Unified pricing management module instead.
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: how-to

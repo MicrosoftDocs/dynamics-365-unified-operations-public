@@ -1,6 +1,6 @@
 ---
 title: Price structure overview (deprecated)
-description: Learn how price structures work in Pricing management, including outlines on price component types and concurrency rules.
+description: Learn how price structures work in Pricing management, including outlines on price component types and concurrency rules. This article describes functionality that has been deprecated. We recommend that you use the Unified pricing management module instead.
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: overview

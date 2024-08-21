@@ -1,6 +1,6 @@
 ---
 title: Set up a company to use multiple price structures (deprecated)
-description: Learn how to set up multiple price structures in a company, including a step-by-step process for configuring a company to use multiple price structures.
+description: Learn how to set up multiple price structures in a company, including a step-by-step process for configuring a company to use multiple price structures. This article describes functionality that has been deprecated. We recommend that you use the Unified pricing management module instead.
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: how-to

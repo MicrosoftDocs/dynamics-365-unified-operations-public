@@ -1,6 +1,6 @@
 ---
 title: Discount types (deprecated)
-description: Learn about the different types of discounts that you can set up by using Pricing management with outlines on simple and quantity discounts.
+description: Learn about the different types of discounts that you can set up by using Pricing management with outlines on simple and quantity discounts. This article describes functionality that has been deprecated. We recommend that you use the Unified pricing management module instead.
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: overview

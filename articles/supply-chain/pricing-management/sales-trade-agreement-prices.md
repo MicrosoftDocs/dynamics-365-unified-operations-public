@@ -1,6 +1,6 @@
 ---
-title: Sales trade agreement prices (preview)
-description: Learn about sales trade agreement prices, including an outline on configuring sales trade agreements and concurrence rules.
+title: Sales trade agreement prices (deprecated)
+description: Learn about sales trade agreement prices, including an outline on configuring sales trade agreements and concurrence rules. This article describes functionality that has been deprecated. We recommend that you use the Unified pricing management module instead.
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: overview
@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.form: GUPPricingSetupInquiryResult, GUPParameters, PriceDiscAdmName, PriceDiscAdmTable, PriceDiscAdm
 ---
 
-# Sales trade agreement prices (preview)
+# Sales trade agreement prices (deprecated)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]

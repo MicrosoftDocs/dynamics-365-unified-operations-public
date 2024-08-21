@@ -1,6 +1,6 @@
 ---
 title: Set up a company to use a single price structure (deprecated)
-description: Learn how to configure a company to use a single price structure, and how to set up that structure, including a step-by-step process.
+description: Learn how to configure a company to use a single price structure, and how to set up that structure, including a step-by-step process. This article describes functionality that has been deprecated. We recommend that you use the Unified pricing management module instead.
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: how-to

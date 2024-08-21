@@ -1,6 +1,6 @@
 ---
 title: Price attributes overview (deprecated)
-description: Learn about the concept of price attributes, including an outline on price attribute sources and a table providing information about price attributes.
+description: Learn about the concept of price attributes, including an outline on price attribute sources and a table providing information about price attributes. This article describes functionality that has been deprecated. We recommend that you use the Unified pricing management module instead.
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: overview

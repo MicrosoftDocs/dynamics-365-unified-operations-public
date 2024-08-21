@@ -1,6 +1,6 @@
 ---
 title: Turn on the Pricing management module for your system (deprecated)
-description: Learn how to turn on the Pricing management module for your system, including prerequisites and an outline on feature management.
+description: Learn how to turn on the Pricing management module for your system, including prerequisites and an outline on feature management. This article describes functionality that has been deprecated. We recommend that you use the Unified pricing management module instead.
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: how-to

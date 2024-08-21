@@ -1,6 +1,6 @@
 ---
 title: Sales order base price determination rules (deprecated)
-description: Learn about the price determination rules for calculating an item's base price with a table that defines usage for various terms.
+description: Learn about the price determination rules for calculating an item's base price with a table that defines usage for various terms. This article describes functionality that has been deprecated. We recommend that you use the Unified pricing management module instead.
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: conceptual

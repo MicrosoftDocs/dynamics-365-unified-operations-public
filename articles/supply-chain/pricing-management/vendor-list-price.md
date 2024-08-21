@@ -1,6 +1,6 @@
 ---
-title: Vendor list prices and price adjustments (preview)
-description: Learn about vendor list prices, which come from a vendor price catalogue and can be used as the foundation for calculating the sales price of an item.
+title: Vendor list prices and price adjustments (deprecated)
+description: Learn about vendor list prices, which come from a vendor price catalogue and can be used as the foundation for calculating the sales price of an item. This article describes functionality that has been deprecated. We recommend that you use the Unified pricing management module instead.
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: overview
@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Vendor list prices and price adjustments (preview)
+# Vendor list prices and price adjustments (deprecated)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]

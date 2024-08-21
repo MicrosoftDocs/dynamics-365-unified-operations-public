@@ -1,6 +1,6 @@
 ---
 title: Price component codes (deprecated)
-description: Learn how to create a price structure for pricing at the macro level by using Pricing management with a table defining various names.
+description: Learn how to create a price structure for pricing at the macro level by using Pricing management with a table defining various names. This article describes functionality that has been deprecated. We recommend that you use the Unified pricing management module instead.
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: how-to

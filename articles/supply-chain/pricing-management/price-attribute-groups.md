@@ -1,6 +1,6 @@
 ---
 title: Price attribute groups (deprecated)
-description: Learn how to configure price attribute groups for the Pricing management module, including an outline on price attribute scopes.
+description: Learn how to configure price attribute groups for the Pricing management module, including an outline on price attribute scopes. This article describes functionality that has been deprecated. We recommend that you use the Unified pricing management module instead.
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: how-to

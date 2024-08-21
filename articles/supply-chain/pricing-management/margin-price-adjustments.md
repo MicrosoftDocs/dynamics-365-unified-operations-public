@@ -1,6 +1,6 @@
 ---
 title: Margin price adjustments (deprecated)
-description: Learn how to set up and use margin price adjustments, including a list of configuration you must complete to use margin component price adjustments.
+description: Learn how to set up and use margin price adjustments, including a list of configuration you must complete to use margin component price adjustments. This article describes functionality that has been deprecated. We recommend that you use the Unified pricing management module instead.
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: how-to
