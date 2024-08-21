@@ -67,6 +67,9 @@ There are several methods for processing cycle counting work by using Supply Cha
 - **Cycle count grouping** – The worker can group cycle counting work IDs that are specific to a particular location, zone, or work pool.
 - **Spot cycle counting** – The worker can count items in a warehouse location at any time, even if no open cycle counting work exists for that location. To initiate spot cycle counting in a location, the worker enters the location ID. If no open cycle counting work exists for that location, then the system creates a new work record for spot cycle counting. If open cycle counting work does exist for the location, then the existing work record will be used for spot cycle counting.
 
+> [!NOTE]
+> The **Add LP or item** button allows you to count on-hand inventory that the system doesn't expect. Currently, there are some limitations to this process. For example, if the location is license plate controlled, then it is only possible to count a license plate once, which means if the item is batch tracked, for example, it will only allow counting a single batch on that license plate, or if there are multiple items on the license plate, only one item will be allowed to be counted.
+
 The following example shows how you can perform spot cycle counting by using a mobile device. The instructions that the worker sees on the device vary, depending on the setup of the menu item for spot cycle counting.
 
 1. On the mobile device, select the menu item to process spot cycle counting work.
