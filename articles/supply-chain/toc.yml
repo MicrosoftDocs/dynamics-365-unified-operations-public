@@ -2337,9 +2337,9 @@
           href: pricing-management/concurrence-cross-codes.md
     - name: Unified pricing management (preview)
       items:
-      - name: Pricing management overview
+      - name: Unified pricing management module overview
         href: unified-pricing-management/upm-pricing-management-overview.md
-      - name: Turn on the Pricing management module for your system
+      - name: Turn on the Unified pricing management module module for your system
         href: unified-pricing-management/upm-pricing-management-enable.md
       - name: Price attributes
         items:
