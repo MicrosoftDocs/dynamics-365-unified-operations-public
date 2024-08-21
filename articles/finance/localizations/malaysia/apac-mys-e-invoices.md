@@ -471,3 +471,8 @@ If you use self invoices, follow these steps.
 > The QR code that's shown on the printouts of invoices represents the URL that takes you to the official portal of **MyInvois** system, where you can find the details of the related electronic invoice.
 > 
 > QR codes are printed only for invoices that were successfully submitted, validated, and accepted by the **MyInvois** system.
+
+
+## Batch submission of electronic invoices
+
+To do...
