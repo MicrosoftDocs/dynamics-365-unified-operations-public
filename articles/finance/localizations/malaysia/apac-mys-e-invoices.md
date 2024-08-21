@@ -478,4 +478,4 @@ If you use self invoices, follow these steps.
 Additionally, to individual submission of electronic invoices described in the previous chapters, there is the possibility to submit posted invoices in batches, as consolidated electronic invoices.
 By default, all invoices that were originated from **Retail** operations are subjects for consolidating and are not subject for individual submission. Although the system allows to forcibly individually submit some specifically selected Retail-related invoices.
 
-To activate batch submission of invoices, enable the **Electronic document batch submission** feature in Feature management.
+To activate batch submission of invoices, enable the **Electronic document batch submission** feature in Feature management. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
