@@ -50,9 +50,9 @@ To use the features described in this article, your system must meet the followi
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.41 or later.
 - You must be running Inventory Visibility Service version 1.2.3.88 or higher. For information about how to install Inventory Visibility, check its version number, and update it if needed, see [Install and set up Inventory Visibility](inventory-visibility-setup.md).
-- The feature that is named *Inventory Visibility integration with inventory adjustment posting* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *Inventory Visibility transaction integration* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 > [!NOTE]
-> Two dependent features: *Inventory Visibility integration with inventory adjustment offset* and *Inventory Visibility transaction integration* must be turned on in feature management.
+> Two dependent features: *Inventory Visibility integration with inventory adjustment offset* and *Inventory Visibility integration* must be turned on in feature management.
 
 ## Configure inventory transaction synchronization
 
