@@ -479,3 +479,13 @@ Additionally, to individual submission of electronic invoices described in the p
 By default, all invoices that were originated from **Retail** operations are subjects for consolidating and are not subject for individual submission. Although the system allows to forcibly individually submit some specifically selected Retail-related invoices.
 
 To activate batch submission of invoices, enable the **Electronic document batch submission** feature in Feature management. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+### Configure electronic document parameters
+
+To configure electronic document parameters for batch submissions, follow these steps.
+
+1. Make sure that the country/region-specific Electronic reporting (ER) configurations for the document context and electronic document model mapping that are required for Malaysia are imported. For more information, see [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
+1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+1. On the **Electronic document** tab, add a new record for the **Customer Invoice journal** table name.
+1. Turn on the option in the **Batch submission** column.
+1. Set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
