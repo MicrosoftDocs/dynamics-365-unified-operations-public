@@ -20,9 +20,9 @@ ms.service: dynamics-365-op
 This article provides scripts that can be run to monitor the upgrade process.
 
 ## Data upgrade step status
-For Cloud Hosted Environments or VHD bases upgrades the following SQL script can be run to view the steps and status of the upgrade.
+For cloud hosted environments or virtual hard drive (VHD) base upgrades, run the following SQL script to view the steps and status of the upgrade.
 
-For self-service upgrade, this is the equivalent of running the **DS** command from the Data migration toolkit. 
+For self-service upgrade, the script is the equivalent of running the **DS** command from the Data migration toolkit. 
 ```SQL
 --Following query shows the status of the data upgrade servicing 
 SELECT StartTime
@@ -87,7 +87,7 @@ where batchjobid in (select recid from batchjob where caption = 'Data upgrade' a
  ```
 
 ### Upgrade batch task summary
-The following script summarizes the status of the tasks. You can see how many have run, are pending, executing or failed. 
+The following script summarizes the status of the tasks. You can see how many tasks have been run, are pending, executing, or failed. 
 ```SQL
 --Check status of batch tasks for data upgrade job
 select t1.status, case 
@@ -107,7 +107,7 @@ where t1.batchjobid in (select t2.recid from batchjob t2 where t2.caption = 'Dat
 group by t1.status
 ```
 ### Upgrade batch task running
-The following script returns the current running upgrade batch tasks and their associated upgrade job class and method. If you don’t see any results, run it again as you might be between tasks when it’s executed. This is most used for monitoring a longer running upgrade job. 
+The following script returns the current running upgrade batch tasks and their associated upgrade job class and method. If you don’t see any results, run it again. This is most used for monitoring a longer running upgrade job. 
 ```SQL
 --Get details upgrade scripts executing
 select 
@@ -139,7 +139,7 @@ select * from RELEASEUPDATELOG
 order by LOGTIME desc
 ```
 ### Upgrade job history
-After the pre-sync or post-sync jobs are completed, you can check the timing for each of them. This can be useful when you are trying to tune the upgrade and determines what the longer running jobs are. 
+After the presync or post-sync jobs are completed, you can check the timing for each of them. This can be useful when you are trying to tune the upgrade and determines what the longer running jobs are. 
 ```SQL
 --Shows the details of each upgrade job method
 select * from RELEASEUPDATESCRIPTSLOG
@@ -156,7 +156,7 @@ order by sum(durationmins) desc
 ```
 
 ### Upgrade job errors
-If the pre-sync or post-sync step fails, run this script for details on the errors. 
+If the presync or post-sync step fails, run this script for details on the errors. 
 ```SQL
 --Shows upgrade jobs that were in error, including error messages
 select * from RELEASEUPDATESCRIPTSERRORLOG
