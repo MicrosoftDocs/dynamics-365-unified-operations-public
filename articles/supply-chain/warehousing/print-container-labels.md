@@ -22,7 +22,7 @@ As for [license plate labels](document-routing-layout-for-license-plates.md), th
 
 To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.36, it's turned on by default. Admins can turn this functionality on or off by searching for the *Pack containers using the Warehouse Management mobile app* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
-For more information, see also [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md).
+Learn more in [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md).
 
 ## Example scenario: Print container labels when containers are created by using the Warehouse Management mobile app
 

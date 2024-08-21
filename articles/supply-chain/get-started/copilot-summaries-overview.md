@@ -32,25 +32,28 @@ Before you can use AI summaries with Copilot, your system must meet the followin
 - [Power Platform Integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md) must be enabled for your environment. Usually, all the components that are required to use Copilot summaries are automatically deployed when Power Platform Integration is enabled. However, if they don't work as expected, see [Enable Copilot capabilities in finance and operations apps](../../fin-ops-core/dev-itpro/copilot/enable-copilot.md) for more detailed requirements.
 
 - Depending on the summaries that you want to use, the following features must be enabled in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). All of these features are turned on by default.
-    - Warehouse Management mobile app insights – *Context-aware worker summary screen in WMA*
+
+    - Workload insights with Copilot in the Warehouse Management mobile app – *Context-aware worker summary screen in WMA*
     - Product hover summaries – *Product summary when hovering on item*
     - Released product details summary – *Product details summary*
     - Purchase order summary – *Purchase order summary*
     - Sales order summary – *Sales order summary*
     - Vendor summary – *Vendor summary*
 
-- To use Warehouse Management mobile app insights, you must be running Warehouse Management mobile app version 2.3.2.0 or later.
+- To use Workload insights with Copilot in the Warehouse Management mobile app, you must be running Warehouse Management mobile app version 2.3.2.0 or later.
 
-## Warehouse Management mobile app insights
+## Workload insights with Copilot in the Warehouse Management mobile app
 
-Warehouse Management mobile app insights are provided to warehouse workers when they sign in (depending on configuration) and are available on demand by going to the **Summary** page. The information that's shown can include the following details:
+The Warehouse Management mobile app provides a *workload* page that shows work summaries and AI-generated insights to help warehouse workers better plan their shift. The information can include the following details:
 
-- The number of pick and receive work headers or lines.
-- The number of Warehouse Management mobile app sessions that are active in the warehouse.
-- Insights into the types of work waiting to be completed. This information lets warehouse workers get an overview of the workload so they can better plan their shifts.
-- Overall workload, displayed as headers or lines.
-- Details of available work by work type.
-- AI-generated insights that provide more information about available work.
+- The number of pick and receive work headers or work lines.
+- The number of active warehouse mobile app sessions in the warehouse.
+- Insights into the available work types.
+- The current workload. This information can be shown either as work headers or work lines.
+- Details of the available work per work type.
+- More information about the available work. Microsoft Copilot generates this information in natural language.
+
+Learn more in [Workload insights with Copilot in the Warehouse Management mobile app](../warehousing/warehouse-management-mobile-app-insights.md).
 
 ## Product hover summaries
 
@@ -126,4 +129,6 @@ As appropriate, the **Insights** section provides buttons that let you filter th
 
 ## Related information
 
+- [Workload insights with Copilot in the Warehouse Management mobile app](../warehousing/warehouse-management-mobile-app-insights.md)
 - [Responsible AI FAQ for AI summaries with Copilot](../faq-summaries.md)
+- [Responsible AI FAQ for Workload insights with Copilot](../faq-wma-copilot.md)

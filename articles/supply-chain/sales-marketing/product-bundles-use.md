@@ -97,7 +97,7 @@ The invoice journal must not include the parent item from the product bundle, be
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 <!-- KFM: Preview until further notice -->
 
-The *Product bundles in journals* feature extends the *Product bundle* feature (see also [Enable and set up product bundles](product-bundles-setup.md)). It enables the system to preserve detailed product bundle information in its database. Therefore, you can reprint original sales order confirmations and invoices even after the related sales order is deleted or archived and purged. This feature also improves the ability to exchange order confirmations and invoices electronically. Because product bundles are now represented in journals, you can electronically exchange order confirmations and invoices that include product bundles.
+The *Product bundles in journals* feature extends the *Product bundle* feature. (Learn more in [Enable and set up product bundles](product-bundles-setup.md).) It enables the system to preserve detailed product bundle information in its database. Therefore, you can reprint original sales order confirmations and invoices even after the related sales order is deleted or archived and purged. This feature also improves the ability to exchange order confirmations and invoices electronically. Because product bundles are now represented in journals, you can electronically exchange order confirmations and invoices that include product bundles.
 
 This section describes the changes that the *Product bundles in journals* feature introduces. These changes build on the features that were described earlier in this article.
 
