@@ -59,11 +59,11 @@ To use the features described in this article, your system must meet the followi
 To set up the feature for the first time, follow these steps to perfrom configure initialization:
 
 1. Sign in to Dynamics 365 FnO.
-1. Go to **Inventory Management > Setup > Inventory Visibility integration parameters**.
+1. Go to **Inventory Management > Setup > Inventory Visibility > Inventory Visibility integration parameters**.
 1. Go to **Transaction** page.
 1. Enable **Enable adjustment journal sync** toggle.
-1. Click **Generate configurations**, this button will run auto-deploy script to create configure initialization in the FnO and the Inventory Visiblity Service side.
-1. Click **Enable posting job**, this button will open posting job sync periodic job setup page in the FnO.
+1. Click **Generate configurations**, this button will run auto-deploy script to create configure initialization in the Dynamics 365 Supply Chain Management and the Inventory Visiblity Service.
+1. Click **Enable posting job**, this button will open posting job periodic job setup page.
 
 To update the feature configuration, follow these steps:
 
@@ -109,9 +109,10 @@ You can manually enter inventory adjustments directly into the Inventor Visibili
 
 ## Submit inventory adjustments to the Inventory Visibility API
 
-External systems typically submit inventory adjustments to the Inventory Visibility business layer through the transaction adjustment API. Here are the API and body content details:
+External systems typically submit inventory adjustments to the Inventory Visibility business layer through the Inventory adjustment API. Here are the API and body content details:
 
 <!--KFM: IMPORTANT!!  I added this specification based on what we have in the existing API documentation. I guessed the data types and many other details, including the method (POST). PLEASE REVIEW THIS CAREFULLY! Other details may be missing (for example, how to submit bulk updates). -->
+<!--Roger Sa: API details corrected. -->
 
 ```txt
 Path:
@@ -123,24 +124,28 @@ Headers:
     Authorization="Bearer $access_token"
 ContentType:
     application/json
+Query(Url Parameters):
+    createWithIVSync # bool, optional
 Body:
+[
     {
-        productId: string,
-        organizationId: string,
-        dimensions: {
-            siteId: string,
-            locationId: string,
+        "id": string
+        "organizationId": string,
+        "productId": string,
+        "quantityDataSource": string,
+        "physicalMeasure": string,
+        "dimensions": {
+            "siteId": string,
+            "locationId": string,
             [key:string]: string, # optional
         },
-        quantityDataSource: string,
-        physicalMeasure: string,
-        quantity: number,
-        externalReferenceCategory: string, # optional
-        externalReferenceId: string, # optional
-        fnoJournalNameId: string, # optional
-        costPrice: number, # optional
-        transDate: datetime, # optional
-    }
+        "quantity": number,
+        "externalReferenceCategory": string, # optional
+        "externalReferenceId": string, # optional
+        "fnoJournalNameId": string, # optional
+        "costPrice": number, # optional
+        "transDate": date, # optional
+    },
 ```
 
 For more information about how to work with the Inventory Visibility API, including how to authenticate and get an access token, see [Inventory Visibility public APIs](inventory-visibility-api.md).
@@ -148,6 +153,16 @@ For more information about how to work with the Inventory Visibility API, includ
 ## View inventory transactions in the Inventory Visibility app
 
 The Inventory Visibility app in Power Apps provides a user interface for viewing detailed and aggregated inventory transactions.
+- Detail inventory transactions view shows inventory transactions with full original detailed information.
+- Aggregated inventory transactions view shows aggregated inventory transactions based on same dimension values, such as site/warehouse/color/etc. Some information may be omitted.Instead of showing every individual transaction, it shows totals or averages over the specified dimensions. The aggregated transactions will be used to sync back to Dynamics 365 Supply Chain Management.
+
+ Difference between Detailed and Aggregated transactions:
+1. Granularity 
+   - Detailed Transactions: Show individual original inventory adjustment transactions, providing fine-grained data.
+   - Aggregated Transactions: Show summarized data, providing a higher-level overview.
+1. Data Volume
+   - Detailed Transactions: Typically, the dataset is much larger because it includes every single transaction.
+   - Aggregated Transactions: The dataset is smaller as it condenses multiple transactions into a single record per aggregation.
 
 <!--KFM: Briefly describe why we might do this and how detailed transactions differ from aggregated transactions. Define what aggregated transactions are and why we do that. -->
 
@@ -159,11 +174,11 @@ To view detailed inventory transactions, follow these steps:
 1. On the navigation pane, select **Inquiries and reports** \> **Inventory transactions**.
 1. Select the **View** button in the **Action** column for the row where **Type** is *Detail*.
 1. The **Transaction details** page opens, showing a grid that lists details for each successful transaction. Most columns are self-explanatory, but here are some key columns to note:
-    - **Line record ID** – <!--KFM: briefly describe what this is -->. Select this link to view more details about the transaction.
+    - **Line record ID** – Auto generated GUID for each original inventory adjustment transaction. Select this link to view more details about the transaction.
     - **Source line status** – Shows the current status of the transaction using one of the following values:
-        - *Created* - The adjustment was created in Inventory Visibility business layer. <!--KFM: and is waiting to be posted? -->
-        - *IVPosted* - The adjustment was successfully updated in Inventory Visibility cache. <!--KFM: and is waiting/ready to be aggregated? -->
-        - *Aggregated* - Detailed lines were successfully aggregated based on matching dimension values. <!--KFM: and is ready to be(has been?)  posted to SCM? Has also been posted to IV? -->
+        - *Created* - The adjustment was created in Inventory Visibility business layer. This is the initial status for the Inventory Adjustment records. <!--KFM: and is waiting to be posted?   Roger Sa: Correct, the next status will be IVPosted .-->
+        - *IVPosted* - The adjustment was successfully updated in Inventory Visibility cache from staging area. This is the pre-requisite status for aggregation. <!--KFM: and is waiting/ready to be aggregated?  -->
+        - *Aggregated* - Detailed lines were successfully aggregated based on matching dimension values. This is the pre-requisite status for sync back to Supply Chain Management.  <!--KFM: and is ready to be(has been?)  posted to SCM? Has also been posted to IV?   Roger Sa: Aggregation is triggered when the details level transactions are being transfer back to Fno. -->
     - **Aggregated line ID** –  <!--KFM: briefly describe what this is -->. Select this link to open details about the linked aggregated line. Once the aggregated lines are successfully created/posted in Supply Chain Management, the returned Supply Chain Management journal ID and journal line ID will be included in the aggregated transaction details.
 
 ### View aggregated inventory transactions
@@ -174,15 +189,16 @@ To view aggregated inventory transactions, follow these steps:
 1. On the navigation pane, select **Inquiries and reports** \> **Inventory transactions**.
 1. Select the **View** button in the **Action** column for the row where **Type** is *Aggregated*.
 1. The **Transaction aggregated** page opens, showing a grid that lists details for each successful aggregated transaction. Most columns are self-explanatory, but here are some key columns to note:
-    - **Line record ID** – <!--KFM: briefly describe what this is -->. Select this link to view more details about the aggregated transaction. Once the aggregated lines are successfully created/posted in Supply Chain Management, the returned Supply Chain Management journal ID and journal line ID will be included in the aggregated transaction details.
+    - **Line record ID** – <!--KFM: briefly describe what this is -->. Auto generated GUID for each aggregated inventory adjustment transactions.  Select this link to view more details about the aggregated transaction. Once the aggregated lines are successfully created/posted in Supply Chain Management, the returned Supply Chain Management journal ID and journal line ID will be included in the aggregated transaction details.
     - **Aggregated line status** – Shows the current status of the aggregated transaction using one of the following values:
-        - *Created* - The aggregated transaction record was created successfully. <!--KFM: And is waiting to sync? -->
-        - *DoNotSync* - The line won't be synced to Supply Chain Management. This is typically because the aggregated line inventory change quantity is 0 (inventory quantity wasn't changed, so there is no need to sync it). <!--KFM: Might this also happen due to configuration setting? -->
-        - *Supply Chain ManagementSent* - Inventory Visibility sent a request to synchronize the line with Supply Chain Management
-        - *FnOCreateError* - An error occurred when trying to create the transaction in Supply Chain Management. <!--KFM: What now? -->
-        - *FnOCreated* - Supply Chain Management successfully processed the sync request and created the transaction.
-        - *FnOPostError* - The post failed. <!--KFM: What now? How is this different from the create error? -->
-        - *FnOPosted* - The post succeeded. <!--KFM: How is this different from *FnOCreated*? -->
+        - *Created* - The aggregated transaction record was created successfully. This is the initial status for the aggregated transaction record.<!--KFM: And is waiting to sync? -->
+        - *DoNotSync* - The line won't be synced to Supply Chain Management. This is typically because the aggregated line inventory change quantity is 0 (inventory quantity wasn't changed, so there is no need to sync it). <!--KFM: Might this also happen due to configuration setting?  Roger: No, purely probabilities based on mathematical calculation. -->
+        - *FnOSyncEnqueued* - Inventory Visibility sent a request to synchronize the line with Supply Chain Management, represent this record has been synced in the Supply Chain Management and waiting for further process.
+        - *FnOTransCreated* - Supply Chain Management successfully processed the sync request and created the Inventory Journal.
+        - *FnOTransCreateError* - An error occurred when trying to create the Inventory Journal in Supply Chain Management. You can use the Fno Message Id to check the error in the **Suppy Chain Managment > System administration workspace > Data Management IT > Recurring data jobs**. <!--KFM: What now? -->
+        - *FnOTransPosted* - The Inventory Journal post succeeded. <!--KFM: How is this different from *FnOCreated*?  Roger: Inventory Journal first get created with aggregated record, then goes for Post.-->
+        - *FnOTransPostError* - The Inventory Journal post failed. <!--KFM: What now? How is this different from the create error? -->
+
 
         <!--KFM: In my test system, I don't see any of the above status values. Instead I see *FnoTransPosted* and *FNOTransPostError*. Please update the above list to include these and double-check the other values. -->
 
@@ -194,7 +210,10 @@ To export transaction details, you must access them from the Dataverse entity an
 
 <!--KFM: We should either explain how to do this here, or provide a link, or remove this section. -->
 
-Aggregated lines that were successfully posted or created in Supply Chain Management can be seen in Supply Chain Management.
+Aggregated lines that were successfully posted or created in Supply Chain Management can be seen in Supply Chain Management, follow these steps:
+1. Sign in to Dynamics 365 FnO Supply Chain Management.
+1. Go to **Inventory Management > Journal entries > Items > Inventory adjustment**.
+1. Change the filter **Posted** value to *Yes* for column **Posted** in the view.
 
 > [!NOTE]
 > Some of the optional fields that you're able to submit to the Inventory Visibility business layer doesn't exist as standard fields in Supply Chain Management (including **External reference category**, **External reference ID**, and external dimensions <!--KFM: Can we really have external dimensions? -->). These fields aren't synced to Supply Chain Management, but they are stored in the business layer and can be read using the Inventory Visibility app, as described previously in this article.
