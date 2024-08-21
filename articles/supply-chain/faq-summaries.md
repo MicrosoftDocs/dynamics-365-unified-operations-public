@@ -32,10 +32,6 @@ AI summaries with Copilot use Copilot to generate natural-language summaries of 
 
 This section describes the intended use for each of the available summaries.
 
-### Warehouse Management mobile app insights
-
-Warehouse Management mobile app insights give workers information about the number of lines that must be picked as open work, the number of workers who are online at the warehouse, and the type of work that must be picked.
-
 ### Product hover and released product summaries
 
 Many different people need product information, including sellers, planners, and purchasers. Unlike product information managers, people who work in these roles often lack deep knowledge of each product and where all its information can be found in the system. Product summaries provide high-level information about what each product is, its availability, and its purchase and sale information.

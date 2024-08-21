@@ -2,7 +2,7 @@
 title: Mock the signed-in state during local development
 description: This article describes how to mock a signed-in user in a Microsoft Dynamics 365 Commerce online local development environment.
 author: samjarawan
-ms.date: 07/25/2024
+ms.date: 08/21/2024
 ms.topic: how-to
 audience: Developer
 ms.reviewer: v-chrgriffin
@@ -23,7 +23,7 @@ Over the course of developing your e-commerce online site, it may become necessa
  
 ## Configure your Microsoft Entra B2C tenant
 
-To take advantage of this feature, you must perform a one-time setup in your Microsoft Entra business-to-consumer (B2C) tenant to allow you to mock the signed-in user status. To proceed with the following steps, you need to be signed in as a user with global administrator privileges.
+To take advantage of this feature, you must perform a one-time setup in your Microsoft Entra business-to-consumer (B2C) tenant to allow you to mock the signed-in user status. To proceed with the following steps, you need to be signed in as a user with tenant administrator privileges.
 
 ### Create a new resource owner password credentials (ROPC) flow
  
@@ -31,7 +31,7 @@ The first step is to create a new resource owner password credentials (ROPC) flo
 
 To create a new ROPC flow, follow these steps.
 
-1.	Sign in to the [Azure portal](https://ms.portal.azure.com/) as the global administrator of your Microsoft Entra B2C tenant, and then select the **Microsoft Entra B2C** service.
+1.	Sign in to the [Azure portal](https://ms.portal.azure.com/) as the tenant administrator of your Microsoft Entra B2C tenant, and then select the **Microsoft Entra B2C** service.
 1.	Select **User flows** and **New user flow**.
 1.	Select **Sign in using resource owner password credentials (ROPC)**, and then select **Create**.
 1.	Enter a name for the user flow, for example "ROPC_Auth". Copy and save the full name to use as the `ropcUserFlowName` value in your credentials.json file.

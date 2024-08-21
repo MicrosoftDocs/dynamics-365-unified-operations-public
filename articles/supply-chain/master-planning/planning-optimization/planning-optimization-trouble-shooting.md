@@ -16,13 +16,13 @@ ms.search.form: ReqCreatePlanWorkspace
 
 This article describes how to fix common issues that you might encounter while working with Planning Optimization.
 
-## Installation of the Planning Optimization Add-in doesn't complete or fails with an error
+## Installation of the Planning Optimization Add-in isn't completed or fails with an error
 
 If you're having trouble installing the Planning Optimization Add-in, consider the advice provided in the following subsections.
 
 ### Make sure your environment meets the prerequisites
 
-Planning Optimization requires a Lifecycle Services (LCS) enabled, high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.23 or later. If you try to install the add-in on a OneBox environment, the installation won't complete.
+Planning Optimization requires a Microsoft Dynamics Lifecycle Services–enabled, high-availability environment, tier 2 or higher (not a OneBox environment), with Dynamics 365 Supply Chain Management version 10.0.23 or later. If you try to install the add-in on a OneBox environment, the installation won't be completed.
 
 **Fix**: Cancel the installation and use a high-availability environment, tier 2 or higher (not a OneBox environment).
 
@@ -241,7 +241,7 @@ Your data export might be able to be completed more quickly if you reduce the nu
 If master planning ran by didn't create any orders, check the following settings:
 
 - Make sure the items you're expecting to generate supply for are set up with a lifecycle state where **Exclude from master planning** is set to *No*.
-- If you're running a filtered plan, make sure there aren't any typos in your filter values (see also [Run planning for a subset of items](plan-filters.md#apply-a-plan-filter)).
+- If you're running a filtered plan, make sure that there aren't any typos in your filter values. (Learn more in [Run planning for a subset of items](plan-filters.md#apply-a-plan-filter).)
 - Make sure that there's demand for the items you're expecting master planning to create supply for.
 
 ## Planning of batch jobs fails when Planning Optimization is enabled

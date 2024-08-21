@@ -56,8 +56,6 @@ The following table lists the APIs that are currently available:
 >
 > The bulk API can return a maximum of 512 records for each request.
 
-You can find the [service endpoint](inventory-visibility-power-platform.md#endpoint) in the Inventory Visibility app in Power Apps.-->
-
 ## <a name="inventory-visibility-authentication"></a>Authentication
 
 The platform security token is used to call the Inventory Visibility public API. Therefore, you must generate a *Microsoft Entra token* by using your Microsoft Entra application. You must then use the Microsoft Entra token to get the *access token* from the security service.
