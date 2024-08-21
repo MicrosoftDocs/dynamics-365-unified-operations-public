@@ -1,6 +1,6 @@
 ---
 title: Monitor the upgrade
-description: This article describes how to monitor the upgrade from Microsoft Dynamics 2012 to Dynamics 365 Finance.
+description: This article explains how to monitor the upgrade from Microsoft Dynamics AX 2012 to Dynamics 365 Finance.
 author: ttreen
 ms.author: ttreen
 ms.topic: article
@@ -17,34 +17,37 @@ ms.service: dynamics-365-op
 
 [!include[banner](../includes/banner.md)]
 
-This article provides scripts that can be run to monitor the upgrade process.
+This article provides scripts that you can run to monitor the upgrade process.
 
 ## Data upgrade step status
-For cloud hosted environments or virtual hard drive (VHD) base upgrades, run the following SQL script to view the steps and status of the upgrade.
 
-For self-service upgrade, the script is the equivalent of running the **DS** command from the Data migration toolkit. 
+For cloud-hosted environments or virtual hard drive (VHD) base upgrades, run the following SQL script to view the steps and status of the upgrade.
+
+For self-service upgrades, this script is equivalent to running the **DS** command from the Data migration toolkit.
+
 ```SQL
 --Following query shows the status of the data upgrade servicing 
 SELECT StartTime
-	,EndTime
-	,Steps
-	,SubSteps
-	,STATUS
+    ,EndTime
+    ,Steps
+    ,SubSteps
+    ,STATUS
 FROM [DBUPGRADE].[DATAUPGRADESTATUS]
 ORDER BY EndTime DESC
 ```
 
-## Database Activity  
-It can appear that the upgrade process isn't running as a step is taking some time to complete, and you want to validate that it's running.
+## Database activity
 
-Use the following SQL script to check for database activity and the database synchronize steps: 
- - PreReqs-AdditiveDbSync
- - PreReqs-PartialDbSync
- - DbSync-SyncSchema
- - FinalDbSync-SyncSchema
- 
- 
- ```SQL
+If a step takes a long time to be completed, it can appear that the upgrade process isn't running. In this case, you might want to validate that the process is running.
+
+Run the following SQL script to check for database activity and the database synchronization steps:
+
+- PreReqs-AdditiveDbSync
+- PreReqs-PartialDbSync
+- DbSync-SyncSchema
+- FinalDbSync-SyncSchema
+
+```SQL
 SELECT SPID       = er.session_id
     ,STATUS         = ses.STATUS
     ,[Login]        = ses.login_name
@@ -64,17 +67,23 @@ FROM sys.dm_exec_requests er
 WHERE st.text IS NOT NULL
 ```
 
-## Presync and post-sync scripts
-Following queries are used to check the presync and post-sync job statuses.
+## Presynchronization and post-synchronization scripts
+
+Use the following queries to check the status of the presynchronization and post-synchronization jobs.
 
 ### Scheduled upgrade jobs
-The following script returns the presync or post-sync jobs scheduled to run. This table is populated after the presync or post-sync step starts.
+
+The following SQL script returns the presynchronization or post-synchronization jobs that are scheduled to run. The table is populated after the presynchronization or post-synchronization step begins.
+
 ```SQL
 --Scheduled upgrade jobs that will get run
 select * from RELEASEUPDATESCRIPTS
- ```
+```
+
 ### Upgrade batch job and tasks
-The following script is used to see the batch job running the upgrade jobs, and the tasks scheduled in that job.
+
+Run the following SQL script to view the batch job that is running the upgrade jobs, and the tasks that are scheduled in that job.
+
 ```SQL
 --Find main batch job running the upgrade tasks
 select * from batchjob
@@ -84,10 +93,12 @@ and status = 2
 --Check batch tasks for data upgrade job
 select caption, classnumber, status, company from batch
 where batchjobid in (select recid from batchjob where caption = 'Data upgrade' and status = 2)
- ```
+```
 
 ### Upgrade batch task summary
-The following script summarizes the status of the tasks. You can see how many tasks have been run, are pending, executing, or failed. 
+
+The following SQL script summarizes the status of the tasks. You can view how many tasks have been run, are pending, are running, or failed.
+
 ```SQL
 --Check status of batch tasks for data upgrade job
 select t1.status, case 
@@ -106,8 +117,11 @@ count(*) as Total from batch t1
 where t1.batchjobid in (select t2.recid from batchjob t2 where t2.caption = 'Data upgrade' and t2.status = 2)
 group by t1.status
 ```
+
 ### Upgrade batch task running
-The following script returns the current running upgrade batch tasks and their associated upgrade job class and method. If you don’t see any results, run it again. This is most used for monitoring a longer running upgrade job. 
+
+The following SQL script returns the upgrade batch tasks that are currently running and their associated upgrade job class and method. If no results are shown, run the script again. This script is mostly used to monitor longer-running upgrade jobs.
+
 ```SQL
 --Get details upgrade scripts executing
 select 
@@ -125,21 +139,27 @@ when t1.status = 9 then 'Scheduled'
 end as ScriptStatus,
 t1.caption as BatchTaskCpation, t3.description as ScriptDescription, t3.method as ScriptMethod, t3.classid as ClassId, 
 (select name from classidtable where id = t3.classid) as ClassName,
-T3.scriptid as ScriptId, t2.company as Company, t1.serverid as ServerId, t1.startdatetime as ScriptStartTime, t1.enddatetime as ScriptEndTime   
+T3.scriptid as ScriptId, t2.company as Company, t1.serverid as ServerId, t1.startdatetime as ScriptStartTime, t1.enddatetime as ScriptEndTime 
 from batch t1
 join releaseupdatejobstatus T2 on t1.recid = t2.batchid
 join releaseupdatescripts T3 on t2.scriptid = t3.scriptid
 where t1.status = 2
+```
 
 ### Upgrade job active summary
-During the upgrade the following script can be executed to see the number of pending, completed, executing and failed jobs. It’s similar to the ** Upgrade batch task summary** script above, but data for this is coming from the upgrade framework. 
- ```SQL
+
+During the upgrade, you can run the following SQL script to view the number of pending, completed, running, and failed jobs. This script resembles the **Upgrade batch task summary** script that is described earlier in this article, but the data for it comes from the upgrade framework.
+
+```SQL
 --Shows current state and historical summary of jobs waiting or ran
 select * from RELEASEUPDATELOG
 order by LOGTIME desc
 ```
+
 ### Upgrade job history
-After the presync or post-sync jobs are completed, you can check the timing for each of them. This is useful when you're trying to tune the upgrade and determines what the longer running jobs are. 
+
+After the presynchronization or post-synchronization jobs are completed, you can run the following SQL script to check the timing for each job. This script is useful when you're trying to tune the upgrade and determine what the longer-running jobs are.
+
 ```SQL
 --Shows the details of each upgrade job method
 select * from RELEASEUPDATESCRIPTSLOG
@@ -156,9 +176,10 @@ order by sum(durationmins) desc
 ```
 
 ### Upgrade job errors
-If the presync or post-sync step fails, run this script for details on the errors. 
+
+If the presynchronization or post-synchronization step fails, run the following SQL script to get details of the errors.
+
 ```SQL
 --Shows upgrade jobs that were in error, including error messages
 select * from RELEASEUPDATESCRIPTSERRORLOG
 ```
-
