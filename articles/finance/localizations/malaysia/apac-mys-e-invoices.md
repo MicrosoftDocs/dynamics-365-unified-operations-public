@@ -489,3 +489,12 @@ To configure electronic document parameters for batch submissions, follow these 
 1. Turn on the option in the **Batch submission** column.
 1. In the **Document context** field, select the **Batch submission** mapping name from the **Customer invoice context model** configuration.
 1. In the **Electronic document model mapping** field, select the **YYY** mapping name from the **ZZZ** configuration.
+
+...responses...
+
+### Configure the electronic invoicing feature
+
+Some of the parameters from the **Malaysian electronic invoicing (MY)** electronic invoicing feature are published with default values. Before you deploy this feature to the service, review the default values, and update them as required, so that they better reflect your business operations.
+
+To configure the electronic invoicing feature, follow these steps...........
+
