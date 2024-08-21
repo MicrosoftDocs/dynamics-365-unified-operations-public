@@ -483,7 +483,7 @@ Follow these steps to receive returned items into the warehouse.
 
 ### Complete mixed license plate receiving
 
-The returned products have now been put onto a mixed license plate for further processing (learn more in [Mixed license plate receiving](mixed-license-plate-receiving.md)). Follow these steps to finish receiving the returned items.
+The returned products have now been put onto a mixed license plate for further processing. (Learn more in [Mixed license plate receiving](mixed-license-plate-receiving.md).) Follow these steps to finish receiving the returned items.
 
 1. Go to **Warehouse Management** \> **Inquiries and reports** \> **Mixed license plate receiving**.
 1. In the **License plate** grid, find the mixed license plate that you processed by using the mobile app.

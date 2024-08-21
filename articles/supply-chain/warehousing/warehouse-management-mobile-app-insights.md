@@ -38,7 +38,7 @@ Before you can get workload insights with Copilot in the Warehouse Management mo
 
 - You must be running Dynamics 365 Supply Chain Management version 10.0.39 or later.
 - You must be running Warehouse Management mobile app version 2.3.2.0 or later.
-- The feature that is named *Context-aware worker summary screen in WMA* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). (On by default as of Supply Chain Management version 10.0.39.)
+- The feature that is named *Context-aware worker summary screen in WMA* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). (As of Supply Chain Management version 10.0.39, the feature is turned on by default.)
 
 ## Worker preferences and options
 
