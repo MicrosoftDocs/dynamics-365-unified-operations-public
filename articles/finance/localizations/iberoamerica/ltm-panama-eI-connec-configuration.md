@@ -69,9 +69,7 @@ Some feature's parameters are published with default values. Before you deploy t
 For Panama we interact with Edicom at least three times in the pipeline, first to submit the invoice, next to fetch the signed XML, and finally to fetch the status of the submitted invoice. Each of these interactions requires common parameters, such as Edicom connection details and the authentication token provided by Edicom. These common parameters are reused in feature setup for all document types. These values are provided by Edicom when a company onboards.
 
 > [!NOTE]
-> The simplification of configurations of common parameters.
-> - You no longer needed to go to each action and feature setup and specify these common connection parameters repeatedly.
-> - Using the **Feature parameters** tab is only available starting from version 10.0.41.
+> The configuration of common parameters is simplified. You no longer have to go to each action and feature setup, and repeatedly specify the common connection parameters. Use of the **Feature parameters** tab is only available starting from version 10.0.41.
 
 > [!IMPORTANT]
 > The **Panama electronic invoice (PA)** feature is provided by Microsoft. Before usage, it requires additional configuration as described in this article. For information about how to configure invoicing features and apply changes, see [Work with feature setups](../global/e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they're processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Panama.
