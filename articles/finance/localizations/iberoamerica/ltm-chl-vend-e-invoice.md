@@ -59,9 +59,7 @@ To enable an inbound flow, a **feature setup** of the **Import channel** type ne
 
 ### Applicability rules
 
-Applicability rules must be correctly configured to provide context, so that the exact Electronic invoicing Globalization feature that must run in Electronic Invoicing service can be found. Create a new applicability rule for the same channel name as specified for the Import channel configuration above. For example, like this:
-
-![Screenshot of the setup on the Applicability rules tab of the Import channel Feature version setup page.](ltm-chl-vend-e-invoice-applicaility-rules.png)
+Applicability rules must be correctly configured to provide context, so that the exact Electronic invoicing Globalization feature that must run in Electronic Invoicing service can be found. Create a new applicability rule for the same channel name as specified for the Import channel configuration above. For example, add an applicability rule with an **And** clause that uses the Channel field equal to the value of the "edi_in" string.
 
 ### Variables
 
@@ -76,7 +74,6 @@ Variables are provided out-of-box with the particular feature setup supporting t
 
 1. Go to the **Electronic reporting** workspace, open **Reporting configurations**.
 1. **Derive** a configuration from **Customer Invoice Context Model**.
-![Screenshot that shows the configured Feature setup parameters for of the Customer Invoice Context Model for Chile.](ltm-chl-vend-e-invoice-CustInvContextModel-derive.png)
 1. In the new created configuration, go to **Designer** \> **Map model to datasource** \> **Data channel** \> **Designer**.
 1. Update the **Data channel context** with the value of your **Channel name**, save the changes. 
 1. The change would look like this (an example):
@@ -165,9 +162,7 @@ For example:
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**.
 1. Expand the **Records to include** fast tab and select **Filter**.
 1. In **Joins**, add vendor invoices to the join for application response.
-![Screenshot of Join for Application response.](ltm-chl-vend-e-invoice-join-4-app-response.png)
 1. Add the **Range** \> **Criteria** with the invoice number to the **Vendor invoices** table.
-![Screenshot of Submit Application response.](ltm-chl-vend-e-invoice-app-response-submit-range.png)
 1. **Submit** the application response.
 1. Once submitted, the application response cannot be modified.
 
