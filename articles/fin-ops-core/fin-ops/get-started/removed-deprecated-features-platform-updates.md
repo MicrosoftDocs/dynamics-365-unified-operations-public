@@ -6,7 +6,7 @@ ms.author: twheeloc
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.date: 07/25/2024
+ms.date: 08/22/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-02-29
@@ -55,8 +55,8 @@ Detailed information about objects in finance and operations apps can be found i
 **Login will be blocked for unregistered [Microsoft Account (MSA)](/entra/external-id/microsoft-account) and [External Microsoft Entra ID users](/entra/external-id/default-account) in Finance and Operation Apps**
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | To enhance the security and performance of finance and operations apps, we are announcing the deprecation of support for unregistered Microsoft account users and external Microsoft Entra users in finance and operations apps. |
-| **What is changing?**   | If a [Microsoft account](/entra/external-id/microsoft-account) or [Microsoft Entra ID account](/entra/external-id/default-account) is not registered in your Microsoft Entra ID tenant, you would not be able to access finance and operations apps. You receive the following error message: "[AADSTS50020](/troubleshoot/azure/entra/entra-id/app-integration/error-code-aadsts50020-user-account-identity-provider-does-not-exist): user account '`contoso@contoso.com`;' from identity provider '`https://sts.windows.net/{tenant ID}/`' does not exist in tenant '\{tenant name\}' and can not access the application '\{application ID\}'(Finance and operations environment name) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Microsoft Entra ID user account." Such users will be blocked at the Microsoft Entra ID tenant level. This change does not affect [granular delegated admin permissions (GDAP)](/partner-center/customers/gdap-introduction) or CSP users. |
+| **Reason for deprecation/removal** | To enhance the security and performance of finance and operations apps, we're announcing the deprecation of support for unregistered Microsoft account users and external Microsoft Entra users in finance and operations apps. |
+| **What is changing?**   | If a [Microsoft account](/entra/external-id/microsoft-account) or [Microsoft Entra ID account](/entra/external-id/default-account) isn't registered in your Microsoft Entra ID tenant, you aren't able to access finance and operations apps. You receive the following error message: "[AADSTS50020](/troubleshoot/azure/entra/entra-id/app-integration/error-code-aadsts50020-user-account-identity-provider-does-not-exist): user account '`contoso@contoso.com`;' from identity provider '`https://sts.windows.net/{tenant ID}/`' does not exist in tenant '\{tenant name\}' and can not access the application '\{application ID\}'(Finance and operations environment name) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Microsoft Entra ID user account." Such users will be blocked at the Microsoft Entra ID tenant level. This change doesn't affect [granular delegated admin permissions (GDAP)](/partner-center/customers/gdap-introduction) or CSP users. |
 | **What do you need to do?**         | If a user who is not part of your Microsoft Entra requires access to finance and operations apps, that user must be added to the Microsoft Entra ID tenant as an external user or guest user. For more information, see [B2B collaboration overview](/entra/external-id/what-is-b2b/). For environments in version PU63 and greater can use [Invalid Users Page](/dynamics365/fin-ops-core/fin-ops/sysadmin/invalid-users) to identify such users|
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
