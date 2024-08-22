@@ -20,7 +20,7 @@ ms.dyn365.ops.version: App 10.0.38
 This article includes information and links to resources that can help you set up legal entities with a primary address in Chile.
 - [Connection configuration for Chilean electronic invoicing](ltm-chile-elec-invo-conncection.md)
 - [Configure electronic invoice parameters for Chile](ltm-chile-conf-electronic-invoice.md)
-- Vendor electronic invoice import in Chile
+- [Vendor electronic invoice import in Chile](ltm-chl-vend-e-invoice.md)
 - [Generate and print the Fees certificate report - Chile](ltm-chile-fees-certificate-resume.md)
 - [Generate and print the Withholding tax book report for Chile](ltm-chile-withholding-book.md)
 - [Print the inventory and balance report for Chile](ltm-chile-inventory-balance-report.md)
