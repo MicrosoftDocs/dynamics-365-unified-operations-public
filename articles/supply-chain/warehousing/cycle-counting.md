@@ -75,7 +75,7 @@ The following example shows how you can perform spot cycle counting by using the
 1. Repeat step 3 as needed to count the remaining items in the location, and confirm that no additional items are available for counting.
 
 > [!NOTE]
-> Counting workflows in the mobile app provide an **Add LP or item** button, which lets workers count on-hand inventory that the system doesn't expect, though with a few limitations. For example, in license-plate controlled locations, you can only count each license plate once. As a result, when counting batch-tracked items, workers can only count one batch per license plate. Similarly, if a license plate contains multiple batch-tracked items, only one of those items can be counted.
+> Counting workflows in the mobile app provide an **Add LP or item** button, which lets workers count on-hand inventory that the system doesn't expect, though with a few limitations. For example, in license-plate controlled locations, you can only count each license plate once. As a result, when counting batch-tracked items, workers can only count one batch per license plate. Similarly, if a license plate contains multiple items, only one of those items can be counted.
 
 ## Resolve cycle counting differences
 
