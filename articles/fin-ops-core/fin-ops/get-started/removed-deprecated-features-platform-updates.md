@@ -6,7 +6,7 @@ ms.author: twheeloc
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.date: 08/05/2024
+ms.date: 08/22/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-02-29
@@ -64,9 +64,11 @@ Detailed information about objects in finance and operations apps can be found i
 | **Deployment option**              | Microsoft-managed cloud environments |
 | **Status**                         | The **SharePoint user authentication** feature is available in Dynamics 365 Finance version 10.0.40, and is mandatory in version 10.0.42. Migration to the new SharePoint authentication must occur by February 28, 2025, at which time the current SharePoint connection stops working. |
 
-## Feature deprecation effective May 2024
+## Feature deprecation effective August 2024
 
 ### Support for unregistered Microsoft account and external Microsoft Entra ID users
+
+**Login will be blocked for unregistered [Microsoft Account (MSA)](/entra/external-id/microsoft-account) and [External Microsoft Entra ID users](/entra/external-id/default-account) in Finance and Operation Apps**
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -75,7 +77,7 @@ Detailed information about objects in finance and operations apps can be found i
 | **What do you need to do?**         | If a user who isn't part of your Microsoft Entra requires access to finance and operations apps, that user must be added to the Microsoft Entra ID tenant as an external user or guest user. For more information, see [B2B collaboration overview](/entra/external-id/what-is-b2b/). |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | End of support date is targeted for May 2024. |
+| **Status**                         | This change will reach your environment any time starting August 2024. |
 
 ## Feature deprecation effective April 2024
 
