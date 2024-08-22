@@ -67,7 +67,9 @@ Detailed information about objects in finance and operations apps can be found i
 ## Feature deprecation effective August 2024
 
 ### Support for unregistered Microsoft account and external Microsoft Entra ID users
+
 **Login will be blocked for unregistered [Microsoft Account (MSA)](/entra/external-id/microsoft-account) and [External Microsoft Entra ID users](/entra/external-id/default-account) in Finance and Operation Apps**
+
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | To enhance the security and performance of finance and operations apps, we're announcing the deprecation of support for unregistered Microsoft account users and external Microsoft Entra users in finance and operations apps. |
