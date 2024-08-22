@@ -34,7 +34,7 @@ To update your data by running an existing data import profile, follow these ste
     The details page for the selected profile appears. It contains the following tabs:
 
     - **Summary** – This tab provides basic information about the profile. You can edit the name and/or description to make the profile easier to identify and work with.
-    - **Configure provider** – This tab lets you view and edit the settings that are specific to the data provider that the profile uses.  For information about how to work with the settings on this tab, see the [Create and manage data import profiles](#create-and-manage-data-import-profiles) section.
+    - **Configure provider** – This tab lets you view and edit the settings that are specific to the data provider that the profile uses. For information about how to work with the settings on this tab, see the [Create and manage data import profiles](#create-and-manage-data-import-profiles) section.
     - **Run schedule** – This tab lets you set up a schedule for the profile to run automatically. For details about this functionality and how to configure it, see [Rolling forecasts](rolling-forecasts.md).
     - **Jobs** – This tab shows a list of every run of the profile. It includes date information, the job status, the provider that was used, the table that was updated, and the number of records that were imported. Links to more information are provided.
 

@@ -43,6 +43,24 @@ To generate a new forecast by running an existing forecast profile, follow these
 1. Select **Save and close**.
 1. The new job is added to the grid on the **Jobs** tab. There, you can follow the status of the new calculation. To update the status information, select **Refresh** on the grid toolbar.
 
+## Review forecast job run history
+
+Each time you run a forecast profile, the system creates a record of the job run. To review the details of a job run, follow these steps.
+
+1. On the navigation pane, select **Operations** \> **Forecast profiles**.
+1. Select the forecast profile that you want to inspect.
+1. Open the **Jobs** tab, which shows a grid with a row for each time the profile ran.
+1. Find the job run that you want to inspect and select the link in the **Job run name** column for that run.
+1. On the **Forecast job run** page, browse through the following tabs to review the details of the job run:
+
+    - **Summary** – This tab provides basic information about the job run, including how ran it, when it was run, and a link to the time series that was generated or updated. You can also see the job status and any error messages that occurred.
+    - **Forecast model** – This tab shows the forecast model run by the job.
+    - **Explainability** – This tab lists each combination of dimensions (such as item variant, warehouse location, and so on) that the forecast was calculated for. For each combination, it shows the forecast model that was used and the mean average percentage error (MAPE) for the calculation. A lower MAPE value indicates greater accuracy. You can select a column heading to sort the grid by values in that column. Select the menu button on the header of any column to open a menu where you can to resize, filter, or search the column.
+
+The following image shows an example of the **Explainability** tab of the **Forecast job run** page. This job ran using the *best fit* forecast model, so the system chose the best model for each combination of dimensions (rather than forcing the same model on all of them). Note that the forecast for a single product variant (*Car Audio Unit-200*) used varying forecast models based on which warehouse was analyzed.
+
+:::image type="content" source="media/forecast-job-run.png" alt-text="Explainability tab of the Forecast job run page showing best fit forecast results." lightbox="media/forecast-job-run.png":::
+
 ## <a name="create-profile"></a> Create and manage forecast profiles
 
 Each time that your organization requires a new type of forecast, a manager or admin must create a new forecast profile. After the profile is created, it becomes available to users, who can run it as often as they require.
