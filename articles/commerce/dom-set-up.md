@@ -17,6 +17,9 @@ ms.search.validFrom: 2023-11-07
 
 This article describes how to set up distributed order management (DOM) functionality in Microsoft Dynamics 365 Commerce.
 
+> [!Important]
+> Bing Maps for Enterprise is deprecated and will be retired. Enterprise account customers can continue to use Bing Maps for Enterprise until **June 30th, 2028** and Free(Basics) account customers until **June 30th 2025**. However, if you do not already have a Bing Maps key, you can no longer get one and will have to build your own customization to bring in longitude/latitude data for addresses for DOM to work. You will also need to disable Bing Maps usage for DOM as you configure DOM parameters as described below.
+
 ## Enable the DOM configuration key
 
 To enable the DOM configuration key, follow these steps.
