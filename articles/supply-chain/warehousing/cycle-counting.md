@@ -60,22 +60,22 @@ To create cycle counting work manually, you can use the **Cycle count work by it
 
 ## Perform a cycle count by using a mobile device
 
-There are several methods for processing cycle counting work by using Supply Chain Management on a mobile device:
+The following methods are available for processing cycle counting work using the Warehouse Management mobile app:
 
 - **User directed** – The worker can specify a cycle counting work ID that has a status of **Open**.
 - **System directed** – Supply Chain Management assigns a cycle counting work ID to the worker.
 - **Cycle count grouping** – The worker can group cycle counting work IDs that are specific to a particular location, zone, or work pool.
 - **Spot cycle counting** – The worker can count items in a warehouse location at any time, even if no open cycle counting work exists for that location. To initiate spot cycle counting in a location, the worker enters the location ID. If no open cycle counting work exists for that location, then the system creates a new work record for spot cycle counting. If open cycle counting work does exist for the location, then the existing work record will be used for spot cycle counting.
 
-> [!NOTE]
-> The **Add LP or item** button allows you to count on-hand inventory that the system doesn't expect. Currently, there are some limitations to this process. For example, if the location is license plate controlled, then it is only possible to count a license plate once, which means if the item is batch tracked, for example, it will only allow counting a single batch on that license plate, or if there are multiple items on the license plate, only one item will be allowed to be counted.
-
-The following example shows how you can perform spot cycle counting by using a mobile device. The instructions that the worker sees on the device vary, depending on the setup of the menu item for spot cycle counting.
+The following example shows how you can perform spot cycle counting by using the Warehouse Management mobile app. The instructions that workers see on the device vary, depending on the setup of the menu item for spot cycle counting.
 
 1. On the mobile device, select the menu item to process spot cycle counting work.
 1. Register the location to perform spot cycle counting for.
 1. Register and confirm the item number and the counted item quantity. **Note:** The status of the cycle counting work is updated to either **Pending review** or **Closed** on the **All work** page, depending on the parameters that are set on the **Worker** page.
-1. Optional: Repeat step 3 for the remaining items in the location, and confirm that no additional items are available for counting.
+1. Repeat step 3 as needed to count the remaining items in the location, and confirm that no additional items are available for counting.
+
+> [!NOTE]
+> Counting workflows in the mobile app provide an **Add LP or item** button, which lets workers count on-hand inventory that the system doesn't expect, though with a few limitations. For example, in license-plate controlled locations, you can only count each license plate once. As a result, when counting batch-tracked items, workers can only count one batch per license plate. Similarly, if a license plate contains multiple batch-tracked items, only one of those items can be counted.
 
 ## Resolve cycle counting differences
 
