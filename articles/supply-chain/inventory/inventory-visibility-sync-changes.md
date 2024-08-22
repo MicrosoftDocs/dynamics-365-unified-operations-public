@@ -20,7 +20,7 @@ ms.custom:
 <!--KFM: There is some confusion in this article related to "transaction" vs "adjustment" vs "change". Are these always the same thing? -->
 <!--Roger: "Transaction" represent all type of business activities managed in the IVS, which include ("Adjustment / Counting / Transfer / etc..") , those transactions will lead to inventory "Change" in the backend FnO system. -->
 
-This article describes how to set up the system to sync inventory adjustment transactions registered in an external system to Dynamics 365 Supply Chain Management and Inventory Visibility through the Inventory Visibility service business layer.
+This article describes how to set up the system to sync inventory adjustment transactions registered in an external system to Microsoft Dynamics 365 Supply Chain Management and Inventory Visibility through the Inventory Visibility service business layer.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -56,14 +56,18 @@ To use the features described in this article, your system must meet the followi
 
 ## Configure inventory transaction synchronization
 
-To set up the feature for the first time, follow these steps to perfrom configure initialization:
+### First time setup
 
-1. Sign in to Dynamics 365 FnO.
+To set up the feature for the first time, follow these steps to perform configure initialization:
+
+1. Sign in to Supply Chain Management.
 1. Go to **Inventory Management > Setup > Inventory Visibility > Inventory Visibility integration parameters**.
 1. Go to **Transaction** page.
 1. Enable **Enable adjustment journal sync** toggle.
-1. Click **Generate configurations**, this button will run auto-deploy script to create configure initialization in the Dynamics 365 Supply Chain Management and the Inventory Visiblity Service.
+1. Click **Generate configurations**, this button will run auto-deploy script to create configure initialization in the Dynamics 365 Supply Chain Management and the Inventory Visibility Service.
 1. Click **Enable posting job**, this button will open posting job periodic job setup page.
+
+### Update feature configuration
 
 To update the feature configuration, follow these steps:
 
@@ -71,19 +75,19 @@ To update the feature configuration, follow these steps:
 1. On the navigation pane, select **Settings** \> **Feature management**.
 1. On the **Inventory transactions** tile, select **Manage**.
 1. Make the following sections in the top section of the **Transaction** page:
-    - **Enable feature** – Set to *True* to enable the feature. Set to *False* to disable. It's turned on once the configure initilization is completed from FnO.    
+    - **Enable feature** – Set to *True* to enable the feature. Set to *False* to disable. It's turned on once the configure initialization is completed from FnO.    
     - **Periodically synchronize transaction to IV** - Set to *True* to set the system to auto synchronize inventory updates from the Inventory Visibility business layer to the Inventory Visibility service at regular intervals. Set to *False* to disable this functionality.
     - **Inventory Visibility synchronization frequency** – Enter an integer to control how often (in minutes) the system should synchronize inventory updates from the Inventory Visibility business layer to Dynamics 365 Supply Chain Management (provided you've enabled this functionality). The default value is 5.     
     - **Periodically synchronize transaction to Fno** - Set to *True* to set the system to auto aggregate and synchronize inventory updates from the Inventory Visibility business layer to Dynamics 365  Supply Chain Management at regular intervals. When this is set to *False*, omnichannel transactions are still stored in the Inventory Visibility business layer, but they won't be synced to Supply Chain Management.
     - **Fno synchronization frequency** – Enter an integer to control how often (in minutes) the system should synchronize inventory updates from the Inventory Visibility business layer to the Inventory visibility service (provided you've enabled this functionality). The default value is 1440.
     - **Fno sync max line count in adjustment journal** – Enter an integer to control the allowed maximum inventory adjustment lines per adjustment journal during sync back to Dynamics 365 Supply Chain Management. The default value is 10,000. 
 
-1. Use the **Fno integration mappings** section to control how data is mapped from the Inventory Visibility business layer to Dynamics 365 Supply Chain Management <!--KFM: This might be wrong. Please review/clarify. -->. Use buttons in the toolbar to add, edit, or delete mappings as needed. Make the following settings for each mapping:
-    - **Physical measure name** – Define the quantity takes from which physical measure <!--KFM: Description needed. -->
-    - **Target FnO Transaction type** –  Define the type of inventory journal created in Dynamics 365 Supply Chain Managment, default to Inventory adjustment journal
+1. Use the **Fno integration mappings** section to control how data is mapped from the Inventory Visibility business layer to Dynamics 365 Supply Chain Management. Use buttons in the toolbar to add, edit, or delete mappings as needed. Make the following settings for each mapping:
+    - **Physical measure name** – Select the physical measure that provides the quantity of the inventory.
+    - **Target FnO Transaction type** –  Define the type of inventory journal created in Dynamics 365 Supply Chain Management, default to Inventory adjustment journal
     - **Target FnO Transaction Status** – Define the status of inventory journal created in Dynamics 365 Supply Chain Management, set to one of the following values:
         - *None* – Select this status represent system will not allow to post transactions to Dynamics 365 Supply Chain Management.
-        - *Created* – The system won't automatically post transactions to Dynamics 365 Supply Chain Management. 
+        - *Created* – The system won't automatically post transactions to Dynamics 365 Supply Chain Management.
         - *Posted* – The journal will be posted financially when synced to Dynamics 365 Supply Chain Management.
 
 1. If **Periodically synchronize transaction to Fno** is set to *True*, then you must ensure the inventory adjustments offset configuration is setup in your system to prevent inventory quantities from being updated twice. For details, see [Inventory Visibility adjustment offset](inventory-visibility-adjustment-offset.md).
@@ -94,7 +98,7 @@ You can manually enter inventory adjustments directly into the Inventor Visibili
 
 1. Sign in to Power Apps, and open the **Inventory Visibility** app.
 1. On the navigation pane, select **Inquiries and reports** \> **Inventory transactions**.
-1. From the toolbar, select **Create transaction** \> **Inventory adjustment**. <!--KFM: Will we have other options here?  Roger: No, this is the same page customer review the posted inventory adjustment transaction via API or Manual posted. The button on the toolbar provide the manual operation entrance. -->
+1. From the toolbar, select **Create transaction** \> **Inventory adjustment**.
 1. The **Create inventory adjustment** page opens. On the **Product and dimension information** FastTab, specify the product you want to adjust inventory for. If you don't see all of the product dimensions you need (such as color or style), then select **Edit dimensions** to add them.
 1. On the **Adjustment quantity** FastTab, select the **Data source**, **Physical measure**, and **Quantity** of the inventory adjustment. By select Checkbox **Instant update to IV service** will directly update the inventory adjustment into the Inventory Visibility service cache from the staging area.
 1. On the **Additional information** FastTab, you can specify the following optional information:
@@ -110,9 +114,6 @@ You can manually enter inventory adjustments directly into the Inventor Visibili
 ## Submit inventory adjustments to the Inventory Visibility API
 
 External systems typically submit inventory adjustments to the Inventory Visibility business layer through the Inventory adjustment API. Here are the API and body content details:
-
-<!--KFM: IMPORTANT!!  I added this specification based on what we have in the existing API documentation. I guessed the data types and many other details, including the method (POST). PLEASE REVIEW THIS CAREFULLY! Other details may be missing (for example, how to submit bulk updates). -->
-<!--Roger Sa: API details corrected. -->
 
 ```txt
 Path:
@@ -146,6 +147,7 @@ Body:
         "costPrice": number, # optional
         "transDate": date, # optional
     },
+]
 ```
 
 For more information about how to work with the Inventory Visibility API, including how to authenticate and get an access token, see [Inventory Visibility public APIs](inventory-visibility-api.md).
@@ -153,11 +155,13 @@ For more information about how to work with the Inventory Visibility API, includ
 ## View inventory transactions in the Inventory Visibility app
 
 The Inventory Visibility app in Power Apps provides a user interface for viewing detailed and aggregated inventory transactions.
+
 - Detail inventory transactions view shows inventory transactions with full original detailed information.
 - Aggregated inventory transactions view shows aggregated inventory transactions based on same dimension values, such as site/warehouse/color/etc. Some information may be omitted.Instead of showing every individual transaction, it shows totals or averages over the specified dimensions. The aggregated transactions will be used to sync back to Dynamics 365 Supply Chain Management.
 
- Difference between Detailed and Aggregated transactions:
-1. Granularity 
+Difference between Detailed and Aggregated transactions:
+
+1. Granularity
    - Detailed Transactions: Show individual original inventory adjustment transactions, providing fine-grained data.
    - Aggregated Transactions: Show summarized data, providing a higher-level overview.
 1. Data Volume
@@ -195,12 +199,11 @@ To view aggregated inventory transactions, follow these steps:
         - *DoNotSync* - The line won't be synced to Supply Chain Management. This is typically because the aggregated line inventory change quantity is 0 (inventory quantity wasn't changed, so there is no need to sync it). <!--KFM: Might this also happen due to configuration setting?  Roger: No, purely probabilities based on mathematical calculation. -->
         - *FnOSyncEnqueued* - Inventory Visibility sent a request to synchronize the line with Supply Chain Management, represent this record has been synced in the Supply Chain Management and waiting for further process.
         - *FnOTransCreated* - Supply Chain Management successfully processed the sync request and created the Inventory Journal.
-        - *FnOTransCreateError* - An error occurred when trying to create the Inventory Journal in Supply Chain Management. You can use the Fno Message Id to check the error in the **Suppy Chain Managment > System administration workspace > Data Management IT > Recurring data jobs**. <!--KFM: What now? -->
+        - *FnOTransCreateError* - An error occurred when trying to create the Inventory Journal in Supply Chain Management. You can use the Fno Message Id to check the error in the **Supply Chain Management > System administration workspace > Data Management IT > Recurring data jobs**. <!--KFM: What now? -->
         - *FnOTransPosted* - The Inventory Journal post succeeded. <!--KFM: How is this different from *FnOCreated*?  Roger: Inventory Journal first get created with aggregated record, then goes for Post.-->
         - *FnOTransPostError* - The Inventory Journal post failed. <!--KFM: What now? How is this different from the create error? -->
 
 
-        <!--KFM: In my test system, I don't see any of the above status values. Instead I see *FnoTransPosted* and *FNOTransPostError*. Please update the above list to include these and double-check the other values. -->
 
 ## Export transaction details
 
@@ -211,9 +214,10 @@ To export transaction details, you must access them from the Dataverse entity an
 <!--KFM: We should either explain how to do this here, or provide a link, or remove this section. -->
 
 Aggregated lines that were successfully posted or created in Dynamics 365 Supply Chain Management can be seen in Dynamics 365, follow these steps:
+
 1. Sign in to Dynamics 365 Supply Chain Management.
 1. Go to **Inventory Management > Journal entries > Items > Inventory adjustment**.
 1. Change the value of filter **Posted** for column **Posted** in the view if needed.
 
 > [!NOTE]
-> Some of the optional fields that you're able to submit to the Inventory Visibility business layer doesn't exist as standard fields in Dynamics 365  Supply Chain Management (including **External reference category**, **External reference ID**, and external dimensions <!--KFM: Can we really have external dimensions? -->). These fields aren't synced to Supply Chain Management, but they are stored in the business layer and can be read using the Inventory Visibility app, as described previously in this article.
+> Some of the optional fields that you're able to submit to the Inventory Visibility business layer doesn't exist as standard fields in Dynamics 365  Supply Chain Management (including **External reference category**, **External reference ID**, and any other external dimensions). These fields aren't synced to Supply Chain Management, but they are stored in the business layer and can be read using the Inventory Visibility app, as described previously in this article.
