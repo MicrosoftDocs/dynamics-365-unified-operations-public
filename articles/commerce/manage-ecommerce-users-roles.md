@@ -1,6 +1,6 @@
 ---
 title: Manage e-commerce users and roles
-description: This article explains how to grant users access to the authoring environment for your Microsoft Dynamics 365 Commerce site.
+description: This article explains how to grant users access to the site builder authoring environment for your Microsoft Dynamics 365 Commerce site.
 author: bicyclingfool
 ms.date: 08/02/2024
 ms.topic: how-to
@@ -15,16 +15,15 @@ ms.custom:
 
 # Manage e-commerce users and roles
 
-
 [!include [banner](includes/banner.md)]
 
-This article explains how to grant users access to the authoring environment for your Microsoft Dynamics 365 Commerce site.
+This article explains how to grant users access to the site builder authoring environment for your Microsoft Dynamics 365 Commerce site.
 
-To help control user access and grant users permission to perform specific tasks, the site authoring environment uses security groups that you create in Microsoft Entra ID. You first assign a new or existing security group from Microsoft Entra to each role in the authoring environment. You then grant or revoke permissions for individual users by either adding those users to an appropriate security group or removing them from a security group.
+To help control user access and grant users permission to perform specific tasks, Commerce site builder uses security groups that you create in Microsoft Entra. You first assign a new or existing security group from Microsoft Entra to each role in site builder. You then grant or revoke permissions for individual users by either adding those users to an appropriate security group or removing them from a security group.
 
-## Overview of roles in the authoring environment
+## Roles in site builder
 
-The Dynamics 365 for Commerce authoring environment supports the following roles.
+Site builder supports the following roles.
 
 | Role                 | Description |
 |----------------------|-------------|
@@ -44,7 +43,7 @@ When you create a new site in Commerce, you're asked to provide a security group
 
 ## Add or update security groups
 
-After your site is created, only users who are in the security groups that are associated with the **System Administrator** and **Administrator** roles can access the authoring environment for that site. To assign users to the **Web Producer**, **RnR Moderator**, and **Reader** roles, you must assign security groups to those roles. To add a security group to a role, or to update a security group that is currently assigned to a role, follow these steps.
+After your site is created, only users who are in the security groups that are associated with the **System Administrator** and **Administrator** roles can access site builder for that site. To assign users to the **Web Producer**, **RnR Moderator**, and **Reader** roles, you must assign security groups to those roles. To add a security group to a role, or to update a security group that is currently assigned to a role, follow these steps.
 
 1. Go to the site that you want to update.
 1. In **Site management**, open the **Security** page.
