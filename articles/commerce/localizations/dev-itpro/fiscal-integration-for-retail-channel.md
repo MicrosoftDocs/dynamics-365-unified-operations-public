@@ -2,13 +2,15 @@
 title: Fiscal integration overview for Commerce channels
 description: This article provides an overview of the fiscal integration capabilities that are available in Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 12/06/2022
-ms.topic: article
+ms.date: 08/20/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: anupamar
 ms.search.validFrom: 2017-06-20
+ms.custom: 
+  - bap-template
 ---
 # Fiscal integration overview for Commerce channels
 
@@ -94,8 +96,8 @@ The fiscal integration framework provides the following options to handle failur
 - **Skip** – The operator can use this option when it's not possible to complete the fiscal registration of the current transaction or event, for example if the fiscal printer is out of order, **and** the fiscal registration can be omitted under specific conditions. For example, this option can be used when a sales transaction that the fiscal registration failed for can be registered in a special paper journal. After skipping the fiscal registration, regular operations can be continued on the POS. 
 - **Mark as registered** – The operator can use this option when the current transaction or event has actually been registered in the fiscal device, for example a fiscal receipt has been printed, but a failure occurs when the fiscal response is being saved to the channel database. After marking the current transaction or event as registered, regular operations can be continued on the POS.
 - **Postpone** – The operator can use this option when the transaction hasn't been registered because the registration device or service is unavailable **and** one of the following apply:
-    - There is a backup fiscal registration option and it's possible to continue the fiscal registration process for the current transaction. For example, a local [fiscal device](../brazil/latam-bra-cf-e-sat.md#scenario-4-make-a-cash-and-carry-sale-of-goods-by-using-sat-as-contingency-mode) can be a backup option for an online fiscal registration service when the service is unavailable.
-    - The fiscal registration can be completed later by means other than the fiscal integration framework. For example, postponed transactions can later be fiscally registered in a batch by a [separate functionality](../brazil/latam-bra-nfce.md#scenario-3-make-a-cash-and-carry-sale-of-goods-in-offline-contingency-mode).
+    - There is a backup fiscal registration option and it's possible to continue the fiscal registration process for the current transaction. For example, a local fiscal device can be a backup option for an online fiscal registration service when the service is unavailable.
+    - The fiscal registration can be completed later by means other than the fiscal integration framework. For example, postponed transactions can later be fiscally registered in a batch by a separate functionality.
     
     After postponing the current transaction or event, regular operations can be continued on the POS.
 
@@ -165,12 +167,10 @@ The following fiscal integration samples are currently available in the Commerce
 - [Fiscal registration service integration sample for Czech Republic](emea-cze-fi-sample.md)
 - [Control unit integration sample for Sweden](emea-swe-fi-sample.md)
 - [Fiscal registration service integration sample for Germany](emea-deu-fi-sample.md)
-- [Fiscal printer integration sample for Russia](../russia/rus-fpi-sample.md)
 - [Digital signature sample for Norway](../norway/emea-nor-cash-registers.md)
 
 The following fiscal integration functionality is also implemented by using the fiscal integration framework, but it's available out of the box and isn't included in the Commerce SDK:
 
-- [Fiscal registration for Brazil](../brazil/latam-bra-commerce-localization.md#fiscal-registration-for-brazil)
 - [Digital signature for France](../france/emea-fra-cash-registers.md)
 
 The following legacy fiscal integration functionality that is available in the Commerce SDK doesn't use the fiscal integration framework and will be deprecated in later updates:

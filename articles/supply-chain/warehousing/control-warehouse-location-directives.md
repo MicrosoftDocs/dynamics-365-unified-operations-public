@@ -1,8 +1,8 @@
 ---
 title: Control warehouse work by using work templates and location directives
 description: Learn how to use work templates and location directives to determine how and where work is carried out in the warehouse.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 04/19/2024
 ms.custom: 
@@ -59,7 +59,7 @@ Location directives determine *where* items should be picked and *where* they sh
 > [!NOTE]
 > There are special cases where the pick location or put location is pre-selected. For example, during *purchase registration*, the first pick is always from the location where the registration occurs. Another example is *inventory movement by template*, where the warehouse worker selects the pick location, and only the put locations are found through location directives.
 
-## Additional resources
+## Related information
 
 - Video: [Warehouse management configuration deep dive](https://www.youtube.com/watch?v=kVwIaFxHxy8)
 - Help article: [Work with location directives](create-location-directive.md)

@@ -6,10 +6,7 @@ ms.author: henrikan
 ms.topic: article
 ms.date: 08/05/2022
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2022-06-08
 ms.search.form:
-ms.dyn365.ops.version: 10.0.29
 ---
 
 # Recalculate line net amounts when importing sales orders and quotations

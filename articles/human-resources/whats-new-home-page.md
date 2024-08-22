@@ -14,7 +14,9 @@ ms.topic: whats-new
 ms.reviewer: twheeloc
 ms.author: edupont
 audience: Application User
-ms.custom: bap-template
+ms.custom: 
+ - bap-template
+ - evergreen
 ms.collection: get-started
 ms.search.region: Global
 # ms.search.industry: 

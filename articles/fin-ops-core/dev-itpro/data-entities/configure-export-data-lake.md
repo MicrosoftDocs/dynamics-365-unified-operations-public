@@ -4,7 +4,7 @@ description: Learn about configuring the export to Azure Data Lake and configuri
 author: MilindaV2
 ms.author: milindav
 ms.topic: article
-ms.date: 10/16/2023
+ms.date: 08/19/2023
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -36,9 +36,6 @@ The following step-by-step instructions guide you through the process.
 ## <a name="createServicePrincipal"></a> Create Service Principal for Microsoft Dynamics ERP Microservices
 
 The **Export to Azure Data Lake** feature is built using a microservice that exports finance and operations app data to Azure Data Lake and keeps the data fresh. Microservice uses the Azure service principal, **Microsoft Dynamics ERP Microservices**, to securely connect to your Azure resources. Before you configure the Export to Data Lake feature, add the **Microsoft Dynamics ERP Microservices** service principal to your Microsoft Entra. This step enables Microsoft Entra to authenticate the microservice. 
-
-> [!NOTE]
-> You need **Microsoft Entra global administrator** rights to perform these steps.
 
 To add the service principal, complete the following steps.
 

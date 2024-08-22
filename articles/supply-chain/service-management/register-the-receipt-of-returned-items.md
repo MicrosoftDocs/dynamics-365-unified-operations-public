@@ -8,9 +8,7 @@ ms.date: 05/01/2018
 ms.custom: 
 ms.reviewer: kamaybac
 ms.search.region: Global 
-ms.search.validFrom: 2016-02-28
 ms.search.form: WMSArrivalOverview, InventTransRegister
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Register the receipt of returned items
@@ -77,7 +75,7 @@ As an alternative to using the **Arrival overview** page, you can use the **Regi
 
 1. Select **Post all**.
 
-## See also
+## Related information
 
 - [Arrival overview (form)](https://technet.microsoft.com/library/hh227654\(v=ax.60\))
 

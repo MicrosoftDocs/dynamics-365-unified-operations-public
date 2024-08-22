@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 08/09/2022
 ms.custom: 
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2020-9-14
 ms.search.form: ReqCreatePlanWorkspace
-ms.dyn365.ops.version: AX 10.0.13
 ---
 
 # Safety margins

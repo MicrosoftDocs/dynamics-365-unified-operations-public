@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 09/28/2020
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-09-28
 ms.search.form:  EngChgEcmRequestSelection,EngChgEcmRequestProducts,EngChgEcmRequestPriorityChart,EngChgEcmRequestListPage,EngChgEcmRequestFilteredPart,EngChgEcmRequestDetails,EngChgEcmReason,EngChgEcmProjTableInformation,EngChgEcmProductRoute,EngChgEcmProductRelease,EngChgEcmProductPreview, EngChgEcmWhereUsed, EngChgEcmInventTrans,EngChgEcmHeaderSelection,EngChgEcmHeaderPreviewPart,EngChgEcmHeaderFilteredPart,EngChgEcmHeaderDetails, EngChgCaseWhereUsedAnalysis, EngChgCaseValidatorMessage
-ms.dyn365.ops.version: 10.0.15
 ---
 
 # Manage changes to engineering products
@@ -46,9 +43,9 @@ The **General** FastTab lets you provide a basic description of the change reque
 |---|---|
 | Change request | Enter a name for the engineering change request. |
 | Title | Enter text that briefly describes or identifies the changes in the request. |
-| Priority | Select a value to indicate how high the priority of the change is. You can customize the available values for your company, as required. (For more information, see [Establish common values for engineering change management](engineering-change-management-setup.md).) |
-| Category | Select a value to describe the type of change that you're requesting. You can customize the available values for your company, as required. (For more information, see [Establish common values for engineering change management](engineering-change-management-setup.md).) |
-| Severity | Select a value to indicate the severity of the issue that should be fixed by implementing the request. You can customize the available values for your company, as required. (For more information, see [Establish common values for engineering change management](engineering-change-management-setup.md).) |
+| Priority | Select a value to indicate how high the priority of the change is. You can customize the available values for your company, as required. (Learn more in [Establish common values for engineering change management](engineering-change-management-setup.md).) |
+| Category | Select a value to describe the type of change that you're requesting. You can customize the available values for your company, as required. (Learn more in [Establish common values for engineering change management](engineering-change-management-setup.md).) |
+| Severity | Select a value to indicate the severity of the issue that should be fixed by implementing the request. You can customize the available values for your company, as required. (Learn more in [Establish common values for engineering change management](engineering-change-management-setup.md).) |
 | Requested by | The name of the user who created the request. |
 | On | The date when the request was created. |
 | Status | The status of the request. When a request is first created, the status is *Created*. When the request is approved, the status changes to *Approved*. If a related change order has been created for the request, the status changes to *Followed up*. |
@@ -174,11 +171,11 @@ As is described in [Engineering companies and data ownership rules](engineering-
     - **New product** – Create a completely new product that is based on the selected product version.
     - **New variant** – Create a new variant based on the selected product version. Its BOM and route information will be copied.
 
-- For engineering change orders in an *operational company*, you can change the logistical data of the product. For example, you can enrich the existing BOM with settings for sourcing, add local routes or local BOMs, and even enrich a BOM by adding new BOM lines for local packaging materials, lubrication fluids, or instructions in the local language. Enrichments that users make in the operational company will be preserved when new updates are sent from the engineering company. For more information, see [Engineering companies and data ownership rules](engineering-org-data-ownership-rules.md).
+- For engineering change orders in an *operational company*, you can change the logistical data of the product. For example, you can enrich the existing BOM with settings for sourcing, add local routes or local BOMs, and even enrich a BOM by adding new BOM lines for local packaging materials, lubrication fluids, or instructions in the local language. Enrichments that users make in the operational company will be preserved when new updates are sent from the engineering company. Learn more in [Engineering companies and data ownership rules](engineering-org-data-ownership-rules.md).
 
     When engineering change orders are processed in the engineering company, the products are created and/or updated only in the engineering company. Therefore, if the product master data should also be updated, you must also release the products to operational companies.
 
-- You can release products directly from engineering change orders. Open the change order, and then, on the Action Pane, on the **Change order** tab, in the **Product releases** group, select **Release product structure**. The process works just as it works when you release products from the **Released products** page. For more information, see [Release product structures](release-product-structure.md).
+- You can release products directly from engineering change orders. Open the change order, and then, on the Action Pane, on the **Change order** tab, in the **Product releases** group, select **Release product structure**. The process works just as it works when you release products from the **Released products** page. Learn more in [Release product structures](release-product-structure.md).
 - You can have products automatically released from engineering change orders, based on the following factors:
 
     - Re-releases to companies where products were previously released. Select **Search** to scan all previous releases, and then select **View** to view the results. The **View** page shows the previous product releases, and you can select which products you want to re-release. Then close the **View** page, and select **Process** to re-release the selected products.

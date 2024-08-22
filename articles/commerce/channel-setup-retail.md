@@ -2,14 +2,15 @@
 title: Set up a retail  channel
 description: This article describes how to create a new retail channel in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 08/03/2023
-ms.topic: article
+ms.date: 08/20/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2020-01-20
-
+ms.custom: 
+  - bap-template
 ---
 
 # Set up a retail channel
@@ -24,7 +25,9 @@ Before a retail channel is created, ensure you follow the [channel prerequisites
 
 ## Create and configure a new retail channel
 
-1. In the navigation pane, go to **Modules \> Channels \> Stores \> All stores**.
+To create and configure a new retail channel, follow these steps.
+
+1. In the navigation pane, go to **Modules \> Retail and Commerce \> Channels \> Stores \> All stores**.
 1. On the Action Pane, select **New**.
 1. In the **Name** field, provide a name for the new channel.
 1. In the **Store number** field, provide a unique store number. The number can be alphanumeric with a maximum of 10 characters.
@@ -69,7 +72,7 @@ The following image shows various additional retail channel setup options on the
 
 ### Set up payment methods
 
-To set up payment methods, for each payment type supported on this channel follow these steps.
+To set up payment methods, for each payment type supported on this channel, follow these steps.
 
 1. On the Action Pane, select the **Set Up** tab, then select **Payment methods**.
 1. On the Action Pane, select **New**.

@@ -6,10 +6,7 @@ ms.author: crytt
 ms.topic: overview
 ms.date: 07/25/2019
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMAServicelevelagreement
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Service level agreements overview       
@@ -61,7 +58,7 @@ When you create a new service order for a service agreement that an SLA is assig
 
   - You can define reason codes that must be set if the time interval of the service level agreement is exceeded.
 
-## See also
+## Related information
 
 [View compliance with service level agreements](view-compliance-with-service-level-agreements.md)
 

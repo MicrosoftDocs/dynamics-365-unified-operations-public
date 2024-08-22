@@ -6,11 +6,7 @@ ms.author: henrikan
 ms.topic: article
 ms.date: 04/10/2017
 ms.reviewer: kamaybac
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.dyn365.ops.version: Version 1611
 ms.search.form: SalesLineDeliveryDetails
-ms.search.validFrom: 2016-11-30
 ms.assetid: 527f6084-44fe-41bb-924f-4386e926358a
 ---
 
@@ -136,7 +132,7 @@ Information on this FastTab is related to the delivery alternative line that is 
 
 This FastTab highlights the impact of the selected delivery alternative. If you select **OK**, the sales line is updated with the highlighted values in the SELECTED columns. Note that, if the quantity on the selected delivery alternative is less than quantity on the sales line, a delivery schedule is created, and the order line is split into two lines: one line for the selected quantity and one line for the remaining quantity. You can also update the commercial line so that it matches the schedule lines and affects the pricing.
 
-## Additional resources
+## Related information
 
 [Order promising](delivery-dates-available-promise-calculations.md)
 

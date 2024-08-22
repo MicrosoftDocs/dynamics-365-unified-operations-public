@@ -7,11 +7,7 @@ ms.topic: how-to
 ms.date: 08/08/2019
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.industry: Service industries
-ms.search.validFrom: 2016-06-30
 ms.search.form: SalesAgreementListPage, SalesAgreementCreate, SalesAgreement, InventItemIdLookupSimple, AgreementConfirmRunForm, SrsReportViewerForm, SalesAgreementCustomerReferencesPart
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Enter sales agreements

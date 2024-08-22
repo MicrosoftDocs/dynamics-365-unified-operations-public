@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 05/27/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 ---
 
@@ -293,7 +292,7 @@ If a device is lost or compromised, you must remove its ability to access Supply
 - If you use user-based authentication, see [User-based authentication](warehouse-app-authenticate-user-based.md#revoke)
 - If you use service-based authentication (deprecated), see [Service-based authentication](warehouse-app-authenticate-service-based.md#revoke)
 
-## Additional resources
+## Related information
 
 - [User-based authentication for the Warehouse Management mobile app](warehouse-app-authenticate-user-based.md)
 - [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md)

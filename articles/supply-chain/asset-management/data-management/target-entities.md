@@ -7,10 +7,7 @@ ms.topic: article
 ms.custom:
 ms.date: 09/26/2019
 ms.reviewer: kamaybac 
-ms.search.region: Global
-ms.search.validFrom: 2019-08-31
 ms.search.form:
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Target entities

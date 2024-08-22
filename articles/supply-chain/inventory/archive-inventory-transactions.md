@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 04/11/2024
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-03-01
 ms.search.form: InventTransArchiveProcessForm
-ms.dyn365.ops.version: 10.0.18
 ---
 
 # Consolidate inventory transactions
@@ -27,7 +24,7 @@ When you consolidate inventory transactions, all related transactions are moved 
 If an `itemId` and `inventDimId` combination contains only one receipt or issue transaction, the transaction won't be consolidated.
 
 > [!NOTE]
-> After consolidating your inventory transactions, you can further optimize storage and system performance my using the *Archive with Dataverse long term retention* feature to move `InventTransArchive` records to a Microsoft Azure data lake. For more information, see [Archive inventory transaction data in Dynamics 365 Supply Chain Management](../../fin-ops-core/dev-itpro/sysadmin/archive-inventory.md).
+> After consolidating your inventory transactions, you can further optimize storage and system performance my using the *Archive with Dataverse long term retention* feature to move `InventTransArchive` records to a Microsoft Azure data lake. Learn more in [Archive inventory transaction data in Dynamics 365 Supply Chain Management](../../fin-ops-core/dev-itpro/sysadmin/archive-inventory.md).
 
 ## Turn on the feature in your system
 
@@ -102,6 +99,7 @@ The toolbar above the grid provides the following buttons that you can use to wo
 
 - **Pause** – Pause a selected consolidation that is currently being processed. The pause takes effect only after the archiving task is generated. Therefore, there might be a short delay before the pause takes effect. If a consolidation is paused, a check mark appears in its **Stop current update** field.
 - **Resume** – Resume processing for a selected consolidation that is currently paused.
+- **Progress details** – Open a log that shows the progress of your inventory consolidation jobs.
 
 ## Extend your code to support custom fields
 

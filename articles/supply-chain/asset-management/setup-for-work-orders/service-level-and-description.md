@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 08/13/2019
 ms.custom: 
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2019-08-30
 ms.search.form: EntAssetObjectServiceLevel, EntAssetWorkOrderStandardDescription, EntAssetWorkOrderServiceLevel, EntAssetServiceLevelLookup
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Service level and description

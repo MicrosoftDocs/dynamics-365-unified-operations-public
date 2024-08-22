@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 08/05/2022
 ms.custom:
 ms.reviewer: kamaybac 
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2020-03-01
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, InventItemPriceCompareStorage, InventItemPriceCompareStorageDetailsChart, InventItemPriceCompareStorageDetails
-ms.dyn365.ops.version: 10.0.9
 ms.assetid:
 ---
 

@@ -1,22 +1,23 @@
 ---
 title: Create a B2C application
-description: This article describes how to create a business-to-consumer (B2C) application in the Microsoft Azure portal.
+description: This article describes how to create a Microsoft Dynamics 365 Commerce business-to-consumer (B2C) application in the Microsoft Azure portal.
 author: BrianShook
-ms.date: 11/15/2022
-ms.topic: article 
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: asharchw
 ms.search.validFrom: 2020-02-13
-
+ms.custom: 
+  - bap-template
 ---
 
 # Create a B2C application
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to create a business-to-consumer (B2C) application in the Microsoft Azure portal.
+This article describes how to create a Microsoft Dynamics 365 Commerce business-to-consumer (B2C) application in the Microsoft Azure portal.
 
 Once you create your B2C tenant, you'll create a B2C application within your new Microsoft Entra tenant to interact with Commerce.
 

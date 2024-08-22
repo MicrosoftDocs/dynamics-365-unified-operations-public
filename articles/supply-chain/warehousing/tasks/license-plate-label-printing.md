@@ -1,18 +1,14 @@
 --- 
 title: Enable license plate label printing
 description: Learn how to enable the automatic printing of a Serial shipping container code (SSCC) label after the last item is picked from inventory.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 07/19/2019
 ms.custom:
 ms.reviewer: kamaybac 
 audience: Application User 
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2016-06-30
 ms.search.form: SysCorpNetPrinterList, WHSParameters, NumberSequenceTableListPage, NumberSequenceDetails, WHSDocumentRoutingLayout, WHSDocumentRouting, WHSRFMenuItem, WHSRFMenu, WHSWorkTemplateTable, WHSLicensePlateLabelBuildConfig, WHSLicensePlateLabel
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Enable license plate label printing

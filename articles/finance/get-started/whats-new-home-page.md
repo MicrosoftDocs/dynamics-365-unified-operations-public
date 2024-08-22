@@ -7,6 +7,7 @@ ms.topic: article
 ms.date: 07/29/2024
 ms.custom: 
   - bap-template
+  - evergreen
 ms.reviewer: twheeloc
 ms.collection: get-started
 ms.search.region: Global

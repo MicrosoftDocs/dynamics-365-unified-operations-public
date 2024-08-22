@@ -7,7 +7,6 @@ ms.topic: conceptual
 ms.date: 04/03/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: 
 ---
 
@@ -30,7 +29,7 @@ The following types of within-price-component-code concurrency modes are availab
 
 - **Exclusive** – The pricing rule can't be combined with other rules that are associated with the same price component code. If more than one of these rules are set up as exclusive, the price engine applies the rule that has the largest discount.
 - **Best price** – Pricing rules that use this concurrency mode will compete for the largest discount (lowest price).
-- **Compounded** – All applicable pricing rules are combined. On the **Pricing management parameters** page, you can configure the system so that each calculation is based on either the original price or a running total of all adjustments so far. For more information, see the [System settings for resolving discount concurrency within a price component code](#parameters) section of this article.
+- **Compounded** – All applicable pricing rules are combined. On the **Pricing management parameters** page, you can configure the system so that each calculation is based on either the original price or a running total of all adjustments so far. Learn more in the [System settings for resolving discount concurrency within a price component code](#parameters) section of this article.
 - **Always apply** – The pricing rule always applies. This calculation is always applied last within a price component code.
 - **Price attribute combination rank** – Pricing rules that use this concurrency mode don't compete for prices. Instead, they compete based on which rule has the highest *price attribute combination rank*. If multiple rules have the same highest rank in the same price component code, they're combined.
 
@@ -38,9 +37,9 @@ The following types of within-price-component-code concurrency modes are availab
 
 You can view and/or set within-price-component-code concurrency modes in several places in the system:
 
-- **Price component code level** – Each relevant price component code has a default within-price-component-code concurrency setting. The available modes vary, based on the type of price component code. This setting can be overwritten in any or all pricing rules as required. For more information, see [Price component codes](price-component-code.md).
-- **Price structure level** – Each price component code that's included in a price structure shows its default concurrency mode, but you can't edit it here. For more information, see [Arrange price component codes into a price structure](price-structure-details.md).
-- **Pricing rule level for discounts and margin price adjustments** – The concurrency mode that's assigned to a pricing rule overrides the default mode that's assigned by its associated price component code. For more information, see [Pricing rules for discounts and margin price adjustments](margin-discount-pricing-rules.md).
+- **Price component code level** – Each relevant price component code has a default within-price-component-code concurrency setting. The available modes vary, based on the type of price component code. This setting can be overwritten in any or all pricing rules as required. Learn more in [Price component codes](price-component-code.md).
+- **Price structure level** – Each price component code that's included in a price structure shows its default concurrency mode, but you can't edit it here. Learn more in [Arrange price component codes into a price structure](price-structure-details.md).
+- **Pricing rule level for discounts and margin price adjustments** – The concurrency mode that's assigned to a pricing rule overrides the default mode that's assigned by its associated price component code. Learn more in [Pricing rules for discounts and margin price adjustments](margin-discount-pricing-rules.md).
 - **Company level for sales trade agreements** – Sales trade agreements are set up by using trade agreement journals, where the pricing rules are defined by the related journal lines. Concurrency rules for sales trade agreements are defined on the **Pricing management parameters** page for each company. For information about the options that are available and how to use them, see [Sales trade agreement prices](sales-trade-agreement-prices.md).
 
 ## <a name="parameters"></a>System settings for resolving discount concurrency within a price component code

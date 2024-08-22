@@ -2,14 +2,15 @@
 title: Call Retail Server extension APIs
 description: This article describes how to call Microsoft Dynamics 365 Retail Server extension APIs from data actions or directly from module code.
 author: samjarawan
-ms.date: 08/18/2020
-ms.topic: article
+ms.date: 08/01/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2020-01-22
-ms.dyn365.ops.version: Release 10.0.8
+ms.custom: 
+  - bap-template
 ---
 # Call Retail Server extension APIs
 

@@ -1,13 +1,12 @@
 ---
 title: Set up a mobile device menu item for moving items by template
 description: Learn how to set up a mobile device menu item that lets workers register movements of items, including a step-by-step process.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 02/05/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: WHSRFMenuItem
 ---
 
@@ -32,7 +31,7 @@ This article explains how to set up a mobile device menu item that lets workers 
     - **Display inventory status** – Set this option to *Yes* to show the inventory status on the device. Set it to *No* to use the default inventory status. If the items that are moved have only one inventory status, that status is the default status. If you use only one inventory status, you typically won't have to show this information.
     - **Use default data** – Set this option to *Yes* if you want specific data fields to be shown by default to workers who use the mobile app. Default data field values can provide information that workers typically need in their daily work. After you set this option to *Yes*, select **Default data** on the Action Pane to open a page where you can select the fields to show. For example, the *From location* field is often useful. Set this option to *No* if you don't want to select any default data for the menu item.
     - **Use process guide** – Set this option to *No*, because process guide isn't currently supported for movements of items.
-    - **Barcode data policy** – Select the policy to use when multiple fields are filled in based on a single bar code scan. For more information, see [GS1 bar codes](gs1-barcodes.md).
+    - **Barcode data policy** – Select the policy to use when multiple fields are filled in based on a single bar code scan. Learn more in [GS1 bar codes](gs1-barcodes.md).
     - **Generate license plate** – Set this option to *Yes* to automatically create new license plates as they're needed. Set it to *No* if the worker must always select an existing license plate. A license plate is needed if part of the quantity is moved from a license plate. A license plate is also needed if the "from" location isn't license plate controlled, but the "to" location is.
     - **Create movement** – Set to *Yes* to all workers to create work for a movement without requiring that the worker do the work immediately. This option is useful, for example, after a quality inspection has been completed and the inspector wants the item to be moved from the quality inspection area.
     - **Work template** – Select a work template to use when creating the movement work.

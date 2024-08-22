@@ -8,9 +8,7 @@ ms.date: 05/01/2018
 ms.custom: 
 ms.reviewer: kamaybac
 ms.search.region: Global 
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMAServiceOrderTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 
@@ -38,7 +36,7 @@ When you set up the invoice update for batch processing, the sales order of type
 
 1. Select **OK**. The credit note is posted.
 
-## See also
+## Related information
 
 - [Packing slip updates for returns](packing-slip-updates-returns.md)
 

@@ -1,14 +1,16 @@
 ---
 title: Search engine optimization (SEO) considerations for your site
-description: This article covers search engine optimization (SEO) considerations for your site from development to production.
+description: This article covers search engine optimization (SEO) considerations for your Microsoft Dynamics 365 Commerce site from development to production.
 author: josaw1
-ms.date: 05/25/2022
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
+ms.custom: 
+  - bap-template
 ---
 
 # Search engine optimization (SEO) considerations for your site
@@ -16,7 +18,7 @@ ms.search.validFrom: 2019-10-31
 
 [!include [banner](includes/banner.md)]
 
-This article covers search engine optimization (SEO) considerations for your site from development to production.
+This article covers search engine optimization (SEO) considerations for your Microsoft Dynamics 365 Commerce site from development to production.
 
 ## A site that is under development
 

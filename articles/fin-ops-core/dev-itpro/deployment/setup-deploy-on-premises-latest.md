@@ -6,7 +6,7 @@ ms.author: osfaixat
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 06/19/2024
+ms.date: 08/01/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-01-31 
@@ -70,7 +70,7 @@ Finance + Operations (on-premises) bits are distributed through Microsoft Dynami
 
 ## Authentication
 
-The on-premises application works with AD&nbsp;FS. To interact with Lifecycle Services, you must also configure Microsoft Entra ID. To complete the deployment and configure the Lifecycle Services local agent, you must have Microsoft Entra ID. If you don't already have an Microsoft Entra tenant, you can get one for free by using one of the options that Microsoft Entra ID provides. For more information, see [Quickstart: Set up a tenant](/azure/active-directory/develop/active-directory-howto-tenant).
+The on-premises application works with AD&nbsp;FS. To interact with Lifecycle Services, you must also configure Microsoft Entra ID. To complete the deployment and configure the Lifecycle Services local agent, you must have Microsoft Entra ID. If you don't already have a Microsoft Entra tenant, you can get one for free by using one of the options that Microsoft Entra ID provides. For more information, see [Quickstart: Set up a tenant](/azure/active-directory/develop/active-directory-howto-tenant).
 
 ## Standalone Service Fabric
 
@@ -202,7 +202,7 @@ Before you start the setup process, the following prerequisites must be in place
 - SSRS must be installed (but not configured) in **Native** mode on the SSRS machines.
 - Optional: AD&nbsp;CS is installed and configured in your network.
 
-The following table shows the Windows features that are installed on the VMs by the infrastructure setup scripts that are downloaded from Lifecycle Services. For information about additional prerequisite software that must be downloaded and installed, see the [Set up VMs](#setupvms) section later in this article.
+The following table shows the Windows features that are installed on the VMs by the infrastructure setup scripts that are downloaded from Lifecycle Services. For information about prerequisite software that must be downloaded and installed, see the [Set up VMs](#setupvms) section later in this article.
 
 | Node type | Component | Details |
 |-----------|-----------|---------|
@@ -244,7 +244,7 @@ Self-signed certificates can be used only for testing purposes. For the sake of 
 
 #### Overview of required certificates
 
-| Purpose                                      | Explanation | Additional requirements |
+| Purpose                                      | Explanation | Other requirements |
 |----------------------------------------------|-------------|-------------------------|
 | SQL Server SSL certificate                   | This certificate is used to encrypt data that's transmitted across a network between an instance of SQL Server and a client application. | <p>The domain name of the certificate should match the fully qualified domain name (FQDN) of the SQL Server instance or listener. For example, if the SQL listener is hosted on machine LBDEN01SQLA01, the certificate's DNS name is LBDEN01SQLA01.contoso.com.</p><ul><li>**Common name (CN):** LBDEN01SQLA01.contoso.com</li><li>**DNS name:** LBDEN01SQLA01.contoso.com</li></ul> |
 | Service Fabric Server certificate            | This certificate is used to help secure the node-to-node communication between the Service Fabric nodes. It's also used as the server certificate that's presented to the client that connects to the cluster. | <p>For this certificate, you can also use the wildcard SSL certificate for your domain, such as \*.contoso.com. (For more information, see the text that follows this table.) Otherwise, use the following values:</p><ul><li>**CN:** sf.d365ffo.onprem.contoso.com</li><li>**DNS name:** sf.d365ffo.onprem.contoso.com</li></ul> |
@@ -327,7 +327,7 @@ In the new DNS zone, for **each** Service Fabric cluster node of the **AOSNodeTy
 1. Select and hold (or right-click) the new zone, and then select **New Host**.
 1. Enter the name and IP address of the Service Fabric node. (For example, enter **ax** as the name and **10.179.108.12** as the IP address.) Then select **Add Host**.
 1. Leave both checkboxes cleared.
-1. Repeat steps 1 through 4 for each additional AOS node.
+1. Repeat steps 1 through 4 for each AOS node.
 
 #### Set up an A record for the orchestrator
 
@@ -336,7 +336,7 @@ In the new DNS zone, for **each** Service Fabric cluster node of the **Orchestra
 1. Select and hold (or right-click) the new zone, and then select **New Host**.
 1. Enter the name and IP address of the Service Fabric node. (For example, enter **sf** as the name and **10.179.108.15** as the IP address.) Then select **Add Host**.
 1. Leave both checkboxes cleared.
-1. Repeat steps 1 through 3 for each additional orchestrator node.
+1. Repeat steps 1 through 3 for each orchestrator node.
 
 ### <a name="joindomain"></a>Step 5. Join VMs to the domain
 
@@ -469,7 +469,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 1. If you're using SSL certificates that were previously generated, skip certificate generation, and update the thumbprints in the **ConfigTemplate.xml** file. The certificates can be installed in the **CurrentUser\\My** or **LocalMachine\\My** certificate store. Additionally, their private keys must be exportable.
 
     > [!WARNING]
-    > Because of a leading non-printable special character, the presence of which is difficult to determine, the Certificate Manager tool (certlm.msc) shouldn't be used to copy thumbprints on Windows Server 2016. If the non-printable special character is present, you'll receive the following error message: "X509 certificate not valid." To retrieve the thumbprints, see the results from Windows PowerShell commands, or run the following commands in Windows PowerShell.
+    > Because of a leading non-printable special character, the presence of which is difficult to determine, the Certificate Manager tool (certlm.msc) shouldn't be used to copy thumbprints on Windows Server 2016. If the non-printable special character is present, you receive the following error message: "X509 certificate not valid." To retrieve the thumbprints, see the results from Windows PowerShell commands, or run the following commands in Windows PowerShell.
     >
     > ```powershell
     > dir cert:\CurrentUser\My
@@ -522,12 +522,15 @@ You can configure more than one SSRS node. For more information, see [Configurin
         .\Configure-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName BI
         ```
 
-        The Initialize-Database.ps1 script maps the gMSA to the following databases and roles.
+        The Initialize-Database.ps1 script performs the following actions:
 
-        | User           | Database | Database role |
-        |----------------|----------|---------------|
-        | svc-ReportSvc$ | master   | db\_owner |
-        | svc-ReportSvc$ | msdb     | db\_datareader, db\_datawriter, db\_securityadmin |
+        - Create two empty databases for reporting services: **DynamicsAxReportServer** and **DynamicsAxReportServerTempDB**.
+        - Map the gMSA to the following databases and roles.
+
+            | User           | Database | Database role |
+            |----------------|----------|---------------|
+            | svc-ReportSvc$ | master   | db\_owner |
+            | svc-ReportSvc$ | msdb     | db\_datareader, db\_datawriter, db\_securityadmin |
 
         The Configure-Database.ps1 script performs the following action:
 
@@ -620,7 +623,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
     .\New-SFClusterConfig.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -TemplateConfig <ServiceFabricStandaloneInstallerPath>\ClusterConfig.X509.MultiMachine.json
     ```
 
-1. You might have to make additional modifications to your cluster configuration, based on your environment. For more information, see [Step 1B: Create a multi-machine cluster](/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster), [Secure a standalone cluster on Windows using X.509 certificates](/azure/service-fabric/service-fabric-windows-cluster-x509-security), and [Create a standalone cluster running on Windows Server](/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster).
+1. You might have to make more modifications to your cluster configuration, based on your environment. For more information, see [Step 1B: Create a multi-machine cluster](/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster), [Secure a standalone cluster on Windows using X.509 certificates](/azure/service-fabric/service-fabric-windows-cluster-x509-security), and [Create a standalone cluster running on Windows Server](/azure/service-fabric/service-fabric-cluster-creation-for-windows-server#create-the-cluster).
 1. Copy the **ClusterConfig.json** file that's generated to **\<ServiceFabricStandaloneInstallerPath\>**.
 1. Open Windows PowerShell in elevated mode, go to **\<ServiceFabricStandaloneInstallerPath\>**, and run the following command to test the **ClusterConfig.json** file.
 
@@ -659,7 +662,7 @@ Only user accounts that have the Global Administrator directory role can add cer
 
 > [!IMPORTANT]
 > - You must configure the certificate exactly **one** time per tenant. All on-premises environments under the same tenant must use the same certificate to connect with Lifecycle Services.
-> - If you run the script below on a server machine (for example, a machine that's running Windows Server 2019), you must temporarily turn off the Internet Explorer Enhanced Security Configuration. Otherwise, the content on the Azure sign-in page is blocked.
+> - If you run the following script on a server machine (for example, a machine that's running Windows Server 2019), you must temporarily turn off the Internet Explorer Enhanced Security Configuration. Otherwise, the content on the Azure sign-in page is blocked.
 
 1. Sign in to the customer's [Azure portal](https://portal.azure.com) to verify that you have the Global Administrator directory role.
 1. From the **infrastructure** folder, run the following commands to determine whether the certificate is already registered.
@@ -752,6 +755,10 @@ You can verify that everything has been configured correctly by running the foll
 
     | Release | Database |
     |---------|----------|
+    | Version 10.0.40 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.40 Chinese Demo Data |
+    | Version 10.0.40 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.40 Chinese Empty Data |
+    | Version 10.0.40 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.40 Demo Data |
+    | Version 10.0.40 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.40 Empty Data |
     | Version 10.0.39 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.39 Demo Data |
     | Version 10.0.39 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.39 Empty Data |
     | Version 10.0.38 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.38 Demo Data |
@@ -877,7 +884,7 @@ You can verify that everything has been configured correctly by running the foll
 
 Before you can complete this procedure, AD&nbsp;FS must be deployed on Windows Server. For information about how to deploy AD&nbsp;FS, see [Deployment Guide Windows Server 2016 and 2012 R2 AD&nbsp;FS Deployment Guide](/windows-server/identity/ad-fs/deployment/windows-server-2012-r2-ad-fs-deployment-guide).
 
-Finance + Operations (on-premises) requires additional configuration of AD&nbsp;FS, beyond the default out-of-box configuration. The following Windows PowerShell commands must be run on the machine where the AD&nbsp;FS role service is installed. The user account must have enough permissions to administer AD&nbsp;FS. For example, the user must have a domain administrator account. For complex AD&nbsp;FS scenarios, consult your domain administrator.
+Finance + Operations (on-premises) requires more configuration of AD&nbsp;FS, beyond the default out-of-box configuration. The following Windows PowerShell commands must be run on the machine where the AD&nbsp;FS role service is installed. The user account must have enough permissions to administer AD&nbsp;FS. For example, the user must have a domain administrator account. For complex AD&nbsp;FS scenarios, consult your domain administrator.
 
 1. Configure the AD&nbsp;FS identifier so that it matches the AD&nbsp;FS token issuer.
 
@@ -903,7 +910,7 @@ Finance + Operations (on-premises) requires additional configuration of AD&nbsp;
 
 1. For sign-in, the user's email address must be acceptable authentication input.
 
-    This command is related to setting up email claims. Other options, such as transformation rules, might be available but require additional setup.
+    This command is related to setting up email claims. Other options, such as transformation rules, might be available but require more setup.
 
     ```powershell
     Add-Type -AssemblyName System.Net
@@ -929,7 +936,7 @@ Before AD&nbsp;FS can trust Finance + Operations (on-premises) for the exchange 
 For more information about how to use the script, see the documentation that's listed in the script. Make a note of the client IDs that are specified in the output, because you'll need this information in Lifecycle Services later. If you lose the client IDs, sign in to the machine where AD&nbsp;FS is installed, open Server Manager, and go to **Tools** \> **AD&nbsp;FS Management** \> **Application Groups** \> **Microsoft Dynamics 365 for Operations On-premises**. You can find the client IDs under the native applications.
 
 > [!NOTE]
-> If you want to reuse your previously configured AD&nbsp;FS server for additional environments, see [Reuse the same AD&nbsp;FS instance for multiple environments](./onprem-reuseadfs.md).
+> If you want to reuse your previously configured AD&nbsp;FS server for other environments, see [Reuse the same AD&nbsp;FS instance for multiple environments](./onprem-reuseadfs.md).
 
 Connect to a server that's hosting your AD&nbsp;FS instance or farm, open Windows PowerShell with administrator privileges, and go to the **Infrastructure** folder in your file share. Then run the following command.
 
@@ -972,7 +979,7 @@ You've now completed the setup of the infrastructure. The following sections des
 
 1. Save the configuration, and then select **Download configurations** to download the **localagent-config.json** configuration file.
 1. Copy the **localagent-config.json** file to the machine where the agent installer package is located.
-1. The local agent has some additional, optional configurations that can be set to specify environment-specific setup/requirements. For information about the additional options, see [Deployment configurations for the local agent](./onprem-localagent-options.md). 
+1. The local agent has some optional configurations that can be set to specify environment-specific setup/requirements. For information about the options, see [Deployment configurations for the local agent](./onprem-localagent-options.md). 
 1. In a **PowerShell** window, go to the folder that contains the agent installer, and run the following command.
 
     ```powershell

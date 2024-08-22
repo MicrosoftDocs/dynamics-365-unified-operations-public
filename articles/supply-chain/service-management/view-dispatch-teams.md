@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 05/07/2018
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMADispatchBoard
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # View dispatch teams
@@ -29,7 +26,7 @@ Service orders in the **Dispatch board** form are grouped by dispatch team.
 
 For information about how to assign a worker to a team, see [Set up a preferred technician](set-up-preferred-technician.md).
 
-## See also
+## Related information
 
 - [Prioritize service orders](prioritize-service-orders.md)
 - [View the status of service orders](view-the-status-of-service-orders.md)

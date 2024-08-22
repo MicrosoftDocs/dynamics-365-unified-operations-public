@@ -2,17 +2,16 @@
 title: Create a variant group
 description: This article describes how to create a size, style, or color variant group for a product in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 01/27/2020
-ms.topic: article
+ms.date: 08/01/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2020-01-20
-ms.dyn365.ops.version: Release 10.0.8
-ms.custom: 
-ms.assetid: 
 ms.search.form: RetailSizeGroupTable, ConfigGroupIdLookup, RetailStyleGroupTable
+ms.custom: 
+  - bap-template
 ---
 # Create a variant group
 

@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 09/03/2020
 ms.reviewer: kamaybac
 ms.collection: get-started
-ms.search.region: Global
-ms.search.validFrom: 2020-09-03
 ms.search.form:
-ms.dyn365.ops.version: 10.0.13
 ---
 
 # Set up a mobile device menu item to provide a pick line overview

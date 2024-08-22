@@ -3,12 +3,12 @@ title: Create purchase orders
 description: Learn about the process and options when you manually create a purchase order, including an outline on creating a purchase order header.
 author: Henrikan
 ms.author: henrikan
-ms.topic: how-to
-ms.date: 01/09/2023
-ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: PurchTable, PurchTablePart
+ms.topic: how-to
+ms.date: 07/31/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Create purchase orders
@@ -57,7 +57,7 @@ Charges can be automatically added to PO lines, if automatic charges have been s
 
 ## Purchase order actions
 
-After you've added the header and lines to the PO, you must often complete additional steps before the order is ready to be confirmed. Because so many options are available, you might find it helpful to use [Action search](../../fin-ops-core/fin-ops/get-started/action-search.md) to find the relevant menu item.  
+After you've added the header and lines to the PO, you must often complete additional steps before the order is ready to be sent to the vendor. Because so many options are available, you might find it helpful to use [Action search](../../fin-ops-core/fin-ops/get-started/action-search.md) to find the relevant menu item.  
 
 You can configure products on the order so that they have supplementary items. Supplementary items are products that must or can be bought together with other products. Supplementary products might be added free of charge as accompanying products, or you may be able to decide whether to add them to the order or not. You can review the supplementary items after each order line that is added. However, you'll probably find it more convenient to review and add relevant supplementary items for all the order lines by using the **Supplementary items** page, which you can open from the Action Pane.  
 
@@ -66,13 +66,13 @@ Discounts are usually added to lines as they're created. However, a few discount
 - The **Total discount** action calculates a total discount percentage that is applied to the full order. Don't confuse this discount with the cash discount percentage. Cash discounts are applied when the invoice is paid, and they depend on payment settlement by a specific date.
 - If a multi-line discount applies, you must use the **Multiline discount** action to calculate and assign it to the order. Multi-line discounts are discounts that can be offered if a mix of products on the order exceeds a joint threshold. Only a few companies use this type of discount.
 
-Charges that have a charge code that uses the **Item** debit type must be assigned to the line level before the order can be confirmed. You might find it convenient to assign these charges at the order header level, so that you can specify the total amount of the charge. However, in this case, the charge must then be allocated down to each line before the order can be confirmed. You can use the **Allocate charges** action to split amounts from charges that are assigned at the header level down to the order lines. Charges can be split according to the net amount of each line, according to the quantity that has been ordered, or evenly across the order lines. After you've allocated charges to the lines, the charge is removed from the order header.  
+Charges that have a charge code that uses the **Item** debit type must be assigned to the line level before the order can be sent to the vendor. You might find it convenient to assign these charges at the order header level, so that you can specify the total amount of the charge. However, in this case, the charge must then be allocated down to each line before the order can be confirmed. You can use the **Allocate charges** action to split amounts from charges that are assigned at the header level down to the order lines. Charges can be split according to the net amount of each line, according to the quantity that has been ordered, or evenly across the order lines. After you've allocated charges to the lines, the charge is removed from the order header.  
 
 POs can be configured to require that budget funds be allocated to the order before it can be processed. In this case, you can use the **Budget checking** action to allocate the budget.  
 
-You might have to delay the completion of a PO. For example, you might require additional information about products or services, or you might have to get authorization for the spend. There are several ways to hold back an order. For example, you can wait to confirm the order. Alternatively, if a change management workflow is being used, don't submit the order for approval. If you must block all orders for a particular vendor, you can also mark the vendor as *On hold* for processing on the vendor master. There are also circumstances that might prevent the order from being processed. For example, processing might be prevented if credit limits have been exceeded, or if the required budget funds aren't available.
+You might have to delay the completion of a PO. For example, you might require additional information about products or services, or you might have to get authorization for the spend. There are several ways to hold back an order. For example, you can wait to send the order. Alternatively, if a change management workflow is being used, don't submit the order for approval. If you must block all orders for a particular vendor, you can also mark the vendor as *On hold* for processing on the vendor master. There are also circumstances that might prevent the order from being processed. For example, processing might be prevented if credit limits have been exceeded, or if the required budget funds aren't available.
 
-## Additional resources
+## Related information
 
 - [Purchase order overview](purchase-order-overview.md)
 - [Approve and confirm purchase orders](purchase-order-approval-confirmation.md)

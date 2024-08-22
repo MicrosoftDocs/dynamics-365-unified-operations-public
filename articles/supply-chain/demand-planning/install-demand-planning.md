@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 02/24/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -21,9 +20,11 @@ This article describes how to install, enable, and set up Demand planning in Mic
 
 To use Demand planning with Supply Chain Management, you must be running one of the following versions of Supply Chain Management:
 
-- Supply Chain Management version 10.0.36, build 10.0.1695.83
-- Supply Chain Management version 10.0.37, build 10.0.1725.60
+- Supply Chain Management version 10.0.36, build 10.0.1695.83 or later
+- Supply Chain Management version 10.0.37, build 10.0.1725.60 or later
 - Supply Chain Management version 10.0.38 (any build) or later
+
+To use Demand planning in a production environment, each relevant user must have a license for it. Learn more in [Demand planning license requirements](demand-planning-licensing.md).
 
 > [!IMPORTANT]
 > **Demand planning no longer supports Supply Chain Management *Cloud hosted* environments.**

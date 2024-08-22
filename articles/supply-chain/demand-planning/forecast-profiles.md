@@ -7,10 +7,7 @@ ms.topic: how-to
 ms.date: 10/19/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.collection:
-  - bap-ai-copilot
 ms.search.form:
-ms.search.region: Global
 ---
 
 # Work with forecast profiles

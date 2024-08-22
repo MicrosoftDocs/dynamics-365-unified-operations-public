@@ -6,10 +6,7 @@ ms.author: crytt
 ms.topic: overview
 ms.date: 07/25/2019
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMAAgreementTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Develop and establish service agreements overview

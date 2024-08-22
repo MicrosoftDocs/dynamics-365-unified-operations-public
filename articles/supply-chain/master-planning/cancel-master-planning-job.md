@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 05/14/2020
 ms.custom: 
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2019-12-16
 ms.search.form: ReqCreatePlanWorkspace, ReqProcessList
-ms.dyn365.ops.version: 
 ---
 
 # Cancel a job that was created using the deprecated master planning engine

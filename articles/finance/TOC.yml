@@ -2864,42 +2864,6 @@
                       href: localizations/india/india.md
                     - name: Scope of the Indian localizations
                       href: localizations/india/apac-ind-scope.md
-                    - name: What's new or changed for India localization
-                      items:
-                        - name: What's new or changed in 10.0.20 - 10.0.22
-                          href: localizations/india/ind-news-letter-10-0-20-22.md
-                        - name: What's new or changed in 10.0.15 - 10.0.19
-                          href: localizations/india/ind-news-letter-10-0-15-19.md
-                        - name: What's new or changed in 10.0.14
-                          href: localizations/india/apac-ind-news-letter-10-0-14.md
-                        - name: What's new or changed in 10.0.13
-                          href: localizations/india/ind-news-letter-10-0-13.md
-                        - name: What's new or changed in 10.0.12
-                          href: localizations/india/apac-ind-news-letter-10-0-12.md
-                        - name: What's new or changed in 10.0.11
-                          href: localizations/india/apac-ind-news-letter-10-0-11.md
-                        - name: What's new or changed in 10.0.10
-                          href: localizations/india/apac-ind-news-letter-10-0-10.md
-                        - name: What's new or changed in 10.0.09
-                          href: localizations/india/apac-ind-news-letter-10-0-09.md
-                        - name: What's new or changed in 10.0.08
-                          href: localizations/india/apac-ind-news-letter-10-0-08.md
-                        - name: What's new or changed in 10.0.07
-                          href: localizations/india/apac-ind-news-letter-10-0-07.md
-                        - name: What's new or changed in 10.0.06
-                          href: localizations/india/apac-ind-news-letter-10-0-06.md
-                        - name: What's new or changed in 10.0.05
-                          href: localizations/india/apac-ind-news-letter-10-0-05.md
-                        - name: What's new or changed in 10.0.04
-                          href: localizations/india/apac-ind-news-letter-10-0-04.md
-                        - name: What's new or changed in 10.0.03
-                          href: localizations/india/apac-ind-news-letter-10-0-03.md
-                        - name: What's new or changed in 10.0.02
-                          href: localizations/india/apac-ind-news-letter-10-0-02.md
-                        - name: What's new or changed in 10.0.01
-                          href: localizations/india/apac-ind-news-letter-10-0-01.md
-                        - name: What's new or changed in 10.0.0
-                          href: localizations/india/apac-ind-news-letter-10-0-00.md
                     - name: Audit trail and edit logs for accounting software
                       href: localizations/india/apac-ind-audit-trail-edit-logs-accounting-software.md
                     - name: Electronic invoices in India
@@ -4447,26 +4411,34 @@
           items:
             - name: Business performance analytics
               href: business-performance-analytics/business-performance-analytics-home-page.md
-            - name: Install prerequisites for business performance analytics
-              href: business-performance-analytics/configure-BPA.md
-            - name: Install business performance analytics
-              href: business-performance-analytics/install-bpa.md
-            - name: Connect business performance analytics data to Microsoft Fabric 
-              href: business-performance-analytics/bpa-fabric.md              
-            - name: Business performance analytics data model
-              href: business-performance-analytics/business-performance-analytics-data-model.md
-            - name: Set up security in business performance analytics
-              href: business-performance-analytics/set-up-security.md
-            - name: Access business performance analytics
-              href: business-performance-analytics/access-bpa.md
+            - name: Setup and administration
+              items: 
+                - name: Configure business performance analytics
+                  href: business-performance-analytics/configure-BPA.md
+                - name: Install business performance analytics
+                  href: business-performance-analytics/install-bpa.md
+                - name: Configure security in business performance analytics
+                  href: business-performance-analytics/set-up-security.md
+            - name: Key concepts in business performance analytics
+              items:
+                - name: Business performance analytics data model
+                  href: business-performance-analytics/business-performance-analytics-data-model.md
+            - name: Use business performance analytics
+              items:
+                - name: Access business performance analytics
+                  href: business-performance-analytics/access-bpa.md
+                - name: Business performance analytics Microsoft reports
+                  href: business-performance-analytics/Reports-in-BPA.md 
+                - name: Create business performance analytics reports
+                  href: business-performance-analytics/how-to-create-and-edit-reports.md  
+                - name: Business performance analytics Excel add-in
+                  href: business-performance-analytics/bpa-excel.md     
+            - name: Extend business performance analytics
+              items:             
+                - name: Extend business performance analytics in Microsoft Fabric 
+                  href: business-performance-analytics/bpa-fabric.md      
             - name: Business performance analytics FAQ
               href: business-performance-analytics/bpa-faq.md
-            - name: Business performance analytics reports
-              href: business-performance-analytics/Reports-in-BPA.md
-            - name: Create business performance analytics reports
-              href: business-performance-analytics/how-to-create-and-edit-reports.md
-            - name: Business performance analytics Excel add-in
-              href: business-performance-analytics/bpa-excel.md
         - name: Business performance planning
           items:
             - name: Business performance planning overview
@@ -5506,7 +5478,7 @@
         - name: Collections coordinator summary FAQ
           href: accounts-receivable/collections-coordinator-summary-faq.md
         - name: Customer page summary FAQ
-          href: accounts-receivable/customerpagesummary.md
+          href: accounts-receivable/customerpagesummaryfaq.md
         - name: Workflow history summary FAQ
           href: ../fin-ops-core/fin-ops/copilot/workflow-history-summary-faq.md
     - name: Development and administration for finance and operations apps

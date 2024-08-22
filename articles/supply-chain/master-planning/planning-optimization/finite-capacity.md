@@ -6,10 +6,7 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 09/19/2022
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2022-09-19
 ms.search.form: ReqParameters, ReqPlanSched, WrkCtrTable
-ms.dyn365.ops.version: 10.0.29
 ---
 
 # Finite capacity planning and scheduling

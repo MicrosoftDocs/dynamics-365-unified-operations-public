@@ -15,7 +15,7 @@ ms.dyn365.ops.version:
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ---
 
-# Invoice capture customer fields
+# Invoice capture custom fields
 
 [!include [banner](../includes/banner.md)]
 

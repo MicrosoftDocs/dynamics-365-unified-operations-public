@@ -8,11 +8,7 @@ ms.date: 08/16/2019
 ms.custom:
 ms.reviewer: kamaybac
 audience: Application User  
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2016-06-30
 ms.search.form: WHSRFMenuItem, WHSRFMenu, WHSRFDefaultData
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Set up a mobile device menu item to register received items

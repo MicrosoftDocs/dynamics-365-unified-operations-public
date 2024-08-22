@@ -6,10 +6,7 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 10/15/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-10-15
 ms.search.form:
-ms.dyn365.ops.version: 10.0.23
 ---
 
 # Priority-based planning

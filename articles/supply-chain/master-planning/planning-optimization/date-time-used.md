@@ -6,9 +6,6 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 09/21/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2021-09-21
-ms.dyn365.ops.version: 10.0.20
 ---
 
 # Date and time parameters used by Planning Optimization

@@ -1669,6 +1669,8 @@
           href: inventory/inventory-transactions-details.md
         - name: Initialize stock levels in the warehouse
           href: inventory/tasks/initialize-stock-levels-warehouse.md
+        - name: Link transfer order lines with sales order lines (preview)
+          href: inventory/pair-transfer-and-sales-lines.md
         - name: Transfer physical inventory within the warehouse
           href: inventory/tasks/transfer-physical-inventory-within-warehouse.md
         - name: Adjust stock levels in the warehouse (basic warehousing)
@@ -2039,6 +2041,8 @@
         href: demand-planning/whats-new-demand-planning.md
       - name: Setup and administration
         items:
+        - name: Demand planning license requirements
+          href: demand-planning/demand-planning-licensing.md
         - name: Install and enable Demand planning
           href: demand-planning/install-demand-planning.md
         - name: Security roles and row-level security
@@ -2333,11 +2337,9 @@
           href: pricing-management/concurrence-cross-codes.md
     - name: Procurement and sourcing
       items:
-      - name: Procurement and sourcing home page
-        href: procurement/procurement-sourcing.md
       - name: Procurement and sourcing overview
         href: procurement/procurement-sourcing-overview.md
-      - name: Procurement and sourcing workflow
+      - name: Procurement and sourcing workflows
         href: procurement/procurement-sourcing-workflows.md
       - name: Procurement catalogs
         items:
@@ -3873,6 +3875,8 @@
           href: warehousing/whats-new-wma.md
         - name: Warehouse Mobile app accessibility features
           href: warehousing/warehouse-app-accessibility.md
+        - name: Workload insights with Copilot
+          href: warehousing/warehouse-management-mobile-app-insights.md
         - name: Install, set up, and use mobile devices
           items:
           - name: Install the Warehouse Management mobile app
@@ -4061,14 +4065,16 @@
         items:
         - name: Warehouse management only mode overview
           href: warehousing/wms-only-mode-overview.md
-        - name: Enable and configure warehouse management only mode
-          href: warehousing/wms-only-mode-setup.md
         - name: Warehouse management only mode with external ERP systems
           href: warehousing/wms-only-mode-external-erp.md
         - name: Warehouse management only mode with external shared warehouses
           href: warehousing/wms-only-mode-external-shared-warehouse.md
         - name: Exchange data between systems
           href: warehousing/wms-only-mode-exchange-data.md
+        - name: Enable and configure warehouse management only mode
+          href: warehousing/wms-only-mode-setup.md
+        - name: Enable and configure unannounced returns in Warehouse management only mode
+          href: warehousing/wms-only-mode-unannounced-returns-setup.md
         - name: Work with warehouse management only mode in Supply Chain Management
           href: warehousing/wms-only-mode-shared-and-external-detail-use.md
         - name: Example of using inbound and outbound shipment orders
@@ -4097,6 +4103,8 @@
         href: faq-confirmed-po-changes.md
       - name: Responsible AI FAQ for Inquire into inventory with Copilot (preview)
         href: faq-inventory-query.md
+      - name: Responsible AI FAQ for Workload insights with Copilot
+        href: faq-wma-copilot.md
   - name: Development and administration for finance and operations apps 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 

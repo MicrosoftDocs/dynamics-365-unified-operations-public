@@ -6,11 +6,7 @@ ms.author: yanansong
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: InventCostTrans, ProdCalcTrans, ProdTableJour, ProdTableListPage, ProdSetupHistoricalCost
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: ded5da04-f787-49f7-b5e5-75c2a2b92930
 ---
 
@@ -46,7 +42,7 @@ Separate reports provide information about each type of transaction. Use these r
 -   **Finished items in process** − This report lists current production orders and the report-as-finished transactions as of a specified transaction date.
 
 
-## Additional resources
+## Related information
 
 [Common sources of production variances](common-sources-of-production-variances.md)
 

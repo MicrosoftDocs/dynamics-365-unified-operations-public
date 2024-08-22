@@ -1,15 +1,16 @@
 ---
 title: Migrate to the Commerce SDK
-description: This article explains how to migrate to the Commerce software development kit (SDK).
+description: This article explains how to migrate to the Microsoft Dynamics 365 Commerce software development kit (SDK).
 author: josaw1
-ms.date: 05/03/2023
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: anvenkat
 ms.search.validFrom: 2021-02-11
-ms.dyn365.ops.version: AX 10.0.19
+ms.custom: 
+  - bap-template
 ---
 
 # Migrate to the Commerce SDK
@@ -17,7 +18,7 @@ ms.dyn365.ops.version: AX 10.0.19
 [!include [banner](../../includes/banner.md)]
 [!include [banner](../../includes/retail-sdk-deprecation-banner.md)]
 
-The Commerce software development kit (SDK) and sealed installers simplify the Commerce developer and upgrade experience. The new Commerce SDK minimizes the effort that is involved in upgrades, and helps reduce the time and effort that must be spent on the upgrade process. Additionally, integration with Git, Microsoft Azure DevOps, and Visual Studio Code brings the .NET development experience to the Commerce SDK.
+The Microsoft Dynamics 365 Commerce software development kit (SDK) and sealed installers simplify the Commerce developer and upgrade experience. The new Commerce SDK minimizes the effort that is involved in upgrades, and helps reduce the time and effort that must be spent on the upgrade process. Additionally, integration with Git, Microsoft Azure DevOps, and Visual Studio Code brings the .NET development experience to the Commerce SDK.
 
 The main difference between the Commerce SDK and the older (legacy) Retail SDK is that extensions can be independently developed and deployed. This process reduces the upgrade and deployment time, and the new sealed installers separate the extension from the base installers. Therefore, the base and extension installers can be independently installed and serviced. You don't need a code merge or combined packaging.
 

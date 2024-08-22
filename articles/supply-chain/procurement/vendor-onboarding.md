@@ -141,7 +141,7 @@ For an overview of the access permissions of a vendor collaboration user, see [S
 
 If a vendor request is rejected, a reason for rejection must be selected in the vendor request.
 
-When a vendor request is rejected, a request is submitted to inactivate the user. In this case, the workflow to inactivate a user request must be set up. For more information, see [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md).
+When a vendor request is rejected, a request is submitted to inactivate the user. In this case, the workflow to inactivate a user request must be set up. Learn more in [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md).
 
 When a vendor request is rejected, the status *Rejected* appears on both the initial prospective vendor registration request and the vendor request.
 

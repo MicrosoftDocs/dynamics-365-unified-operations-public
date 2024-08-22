@@ -83,7 +83,7 @@ The following table describes the fields that are available on the **General** F
 | Vendor account | Select the vendor that is associated with the folio. This field is for informational purposes only. It doesn't affect any functionality. |
 | Name | The name of the selected vendor account. |
 | Remarks | Enter any additional information that is related to the folio. |
-| Description of goods | Select a goods description to help identify the folio. For more information, see [Description of goods](shipping-information-setup.md#description-of-goods). |
+| Description of goods | Select a goods description to help identify the folio. Learn more in [Description of goods](shipping-information-setup.md#description-of-goods). |
 | Valuation date | This field is related to the duty entry page. The **Landed cost** module will use the customs exchange rate for the date that you set here. The default value is the date on the duty entry page. |
 | Customs ID | Enter the customs ID. The customs departments in countries/regions provide this ID. |
 | Tariff code | Enter a tariff code to associate with the folio. This code is typically required (and defined) by the country/region that you're shipping to. |

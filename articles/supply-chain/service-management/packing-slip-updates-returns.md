@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 05/01/2018
 ms.custom: 
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: CustPackingSlipJournalHistory, SalesParmPackingSlipTrackingInformation
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Packing slip updates for returns  
@@ -29,7 +26,7 @@ If an item is sent back from quarantine to the Shipping and Receiving department
 
 When you update a packing slip for a returned item that is from a sales agreement, the sales agreement commitment for that item is automatically updated to reflect the change in the quantity or the amount. 
 
-## See also
+## Related information
 
 - [Perform invoice updates for returns](perform-invoice-updates-for-returns.md)
 

@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 12/06/2022
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -71,6 +70,6 @@ When cluster picking is applied, item confirmation is crucial to verify the item
 1. Mark the **Product confirm** check box for your new or selected line. This will allow workers to verify each piece of inventory using the mobile device.
 
 > [!NOTE]
-> If you have multiple work records for an item that has **Material picking in license plate locations** set to *Staging*, then the Warehouse Management mobile app may show the error message "Current work is frozen" during the cluster picking process. As a workaround, either make sure that you only pick inventory from locations that aren't license plate tracked for the raw material cluster picking process or set **Material picking in license plate locations** to *Order picking* for these items. See also [Release a production order](../production-control/tasks/release-production-order.md).
+> If you have multiple work records for an item that has **Material picking in license plate locations** set to *Staging*, then the Warehouse Management mobile app may show the error message "Current work is frozen" during the cluster picking process. As a workaround, either make sure that you only pick inventory from locations that aren't license plate tracked for the raw material cluster picking process or set **Material picking in license plate locations** to *Order picking* for these items. Learn more in [Release a production order](../production-control/tasks/release-production-order.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

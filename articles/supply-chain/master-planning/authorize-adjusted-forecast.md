@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
 audience: Application User 
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: ReqDemPlanImportForecastDialog
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: cb8fd809-605a-4a8b-a390-636edfec21f9
 ---
 
@@ -32,7 +28,7 @@ You can select the companies and the forecast models to authorize the forecast f
 
 It's very important that you understand how the **Save the manual adjustments made to the baseline demand forecast** checkbox works. If you've made manual adjustments to the statistical baseline forecast, the adjusted values are authorized for use, even if this checkbox is cleared. However, the changes are discarded after the authorization. Therefore, the next time that a forecast is generated, that forecast is only a statistical forecast and doesn't have any manual overrides, even if **Transfer manual adjustments to the demand forecast** is selected. Therefore, you can consider the **Save the manual adjustments made to the baseline demand forecast** checkbox a mechanism that lets you keep or discard all manual changes.
 
-## Additional resources
+## Related information
 
 - [Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
 - [Monitor forecast accuracy](monitor-forecast-accuracy.md)

@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 12/01/2020
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-12-01
 ms.search.form: JmgProductionFloorExecutionConfiguration, JmgProductionFloorExecutionConfigurationTab
-ms.dyn365.ops.version: 10.0.16
 ---
 
 # Design the production floor execution interface

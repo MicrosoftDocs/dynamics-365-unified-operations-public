@@ -95,7 +95,7 @@ The **Components** section lists the components of the finished product that's s
 - **Pick** – Manually pick the quantity that's planned for consumption, as specified in the **Consumption** field.
 - **Adjust consumption** – Generate a production picking list journal to manually adjust the consumption. In this case, the quantity that's specified in the **Consumption** field is automatically entered in the picking list journal.
 
-## Additional resources
+## Related information
 
 - [How workers use the production floor execution interface](production-floor-execution-use.md#tracked-components)
 - [Traceability overview](../traceability/traceability-overview.md)
