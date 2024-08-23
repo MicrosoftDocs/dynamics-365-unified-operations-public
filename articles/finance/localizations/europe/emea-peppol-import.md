@@ -1,6 +1,6 @@
 ---
-title: Import vendor electronic invoices in PEPPOL format
-description: Learn how to configure and use the vendor electronic invoice import in PEPPOL format in Microsoft Dynamics 365 Finance, including prerequisites.
+title: Import vendor electronic invoices
+description: Learn how to configure and use the vendor electronic invoice import in PEPPOL-based formats in Microsoft Dynamics 365 Finance, including prerequisites.
 author: ilikond
 ms.author: ikondratenko
 ms.topic: article
@@ -105,11 +105,11 @@ The following is an overview of the steps in the import process.
 2. Products that are used on invoice lines are identified by using an external item number, which might be vendor-specific. If no product matches the external description, the import process fails, and a related error message is shown.
 3. If units of measure are used on invoices lines, they're identified by using external codes values. If no unit that has a matching external code value is found in the system, the import process fails, and a related error message is shown.
 4. If an incoming import file contains information about purchase orders and their lines in the **Invoice\\cac:OrderReference\\cbc:ID** and **Invoice\\cac:InvoiceLine\\cac:OrderLineReference\\cbc:LineID** elements, the numbers are used to match invoices with purchase orders and lines that are entered in the system.
-5. If no order or line references are defined in an incoming file, the system tries to automatically match incoming vendor invoices with existing **confirmed** purchase orders.
+5. If no order or line references are defined in an incoming file, the system tries to automatically match incoming vendor invoices with existing **confirmed** purchase orders. Products purchase **prices** are used for matching.
 6. If no purchase order is found, the system raises a warning but continues the import. It now considers the products on invoice lines **Non-stock** items. Therefore, the system expects that these products belong to an item model group where the **Stocked product** checkbox is cleared on the **Inventory policy** page.
 7. If no related **Non-stock** products exist, the system tries to import invoice lines by referring to a default item. The default item must be configured in the system as a released product where the code is defined exactly as **DEFAULT\_ITEM**, and the product must belong to an item model group where the **Stocked product** checkbox is cleared on the **Inventory policy** page. If no default item is configured in the system, the import process fails, and a related error message is shown.
 8. Taxes are calculated in the system, based on the imported data and tax settings. Taxes aren't imported as fixed amounts from the incoming XML file. The results of the calculation can be manually adjusted as required.
-9. File attachments are supported during the import. All attached files that are specified in the **Invoice\\cac:AdditionalDocumentReference** element of PEPPOL import files should have extensions. If an attached file has no extension, the system raises a warning, and the attachment is skipped during the import.
+9. File attachments are supported during the import. All attached files that are specified in the **Invoice\\cac:AdditionalDocumentReference** element of import files should have extensions. If an attached file has no extension, the system raises a warning, and the attachment is skipped during the import.
 
 Successfully imported vendor electronic invoices are shown in the system as pending invoices. To review imported invoices, go to **Accounts payable** \> **Invoices** \> **Pending vendor invoices**.
 
