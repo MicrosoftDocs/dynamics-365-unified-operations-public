@@ -96,8 +96,8 @@ Out of the box, variables are provided with the specific feature setup to suppor
 1. On the **Electronic document** tab, add a record, and set the following values for it:
 
     - **Table name:** Application response
-	- **Document context:** Customer invoice context model - Application response context
-	- **Electronic document model mapping:** Pending vendor invoice model mapping - Application response
+    - **Document context:** Customer invoice context model - Application response context
+    - **Electronic document model mapping:** Pending vendor invoice model mapping - Application response
 
     ![Screenshot of the setup on the Electronic document tab of the Electronic document parameters page.](ltm-chl-e-invoice-documents-app-response.png)
 
