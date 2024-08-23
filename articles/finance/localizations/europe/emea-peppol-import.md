@@ -14,7 +14,7 @@ ms.search.form:
 ms.dyn365.ops.version: AX 10.0.32
 ---
 
-# Import vendor electronic invoices in PEPPOL format
+# Import vendor electronic invoices
 
 [!include [banner](../../includes/banner.md)]
 
