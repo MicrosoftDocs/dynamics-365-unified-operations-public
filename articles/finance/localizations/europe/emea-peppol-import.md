@@ -95,6 +95,12 @@ To run the import of vendor electronic invoices, follow these steps.
 
 1. Go to **Accounts payable** \> **Periodic tasks** \> **Import vendor invoices**.
 2. On the **Electronic report parameters** page, on the **File source** FastTab, in the **Source settings** field, select the source location for batch mode import. If no source is defined for batch import, the system prompts you to select a single file for import.
+
+> [!NOTE]
+> Empty description.
+
+![Screenshot that shows empty description before the import.](emea-e-invoice-import-description.jpg)
+
 3. Select **OK** to immediately start the import process or to schedule the import to run in the background.
 
 ### Import process description
