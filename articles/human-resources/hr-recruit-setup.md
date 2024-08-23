@@ -4,7 +4,7 @@
 title: Set up the HR Recruiting app (preview)
 description: This article explains how to set up the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 07/11/2024
+ms.date: 08/23/2024
 ms.topic: article
 # optional metadata
 
@@ -47,10 +47,10 @@ Before you can install the Recruiting app, the following prerequisites must be m
 - The **Finance and Operations Virtual Entity** and **Microsoft Flow Approvals** solutions are installed. To install them, follow these steps:
 
     1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-    1. In the left pane, select **Resources** \> **Dynamics 365 apps**.
-    1. Select **Install app**.
-    1. Install the **Microsoft Flow Approvals** solution.
-    1. Install the **Finance and Operations Virtual Entity** solution.
+    2. In the left pane, select **Resources** \> **Dynamics 365 apps**.
+    3. Select **Install app**.
+    4. Install the **Microsoft Flow Approvals** solution.
+    5. Install the **Finance and Operations Virtual Entity** solution.
 
     For more information, see [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#install-an-app).
 
@@ -59,12 +59,12 @@ Before you can install the Recruiting app, the following prerequisites must be m
 To configure the Recruiting app in Dynamics 365 Finance, follow these steps.
 
 1. In Dynamics 365 Finance, open the **Feature management** workspace.
-1. Select **Check for updates**.
-1. On the **New** tab, search for the **(Preview) Enable recruitment add-on** feature.
-1. Select **Enable now**.
-1. Refresh the page.
-1. Open the **Human resources parameters** page.
-1. On the **Recruitment** tab, update the following fields:
+2. Select **Check for updates**.
+3. On the **New** tab, search for the **(Preview) Enable recruitment add-on** feature.
+4. Select **Enable now**.
+5. Refresh the page.
+6. Open the **Human resources parameters** page.
+7. On the **Recruitment** tab, update the following fields:
 
     - Set the **Recruitment enabled** option to **Yes**.
     - In the **Recruitment experience** field, select **HR Recruitment**.
@@ -79,13 +79,13 @@ To see Recruiting requests and candidates, go to **Human Resources** > **Recruit
 To install the Recruiting add-on app for the first time, follow these steps.
 
 1. Sign in to [AppSource](https://appsource.microsoft.com/product/dynamics-365/mscrm.hcmrecruiting-preview?flightCodes=4b09efddad8943cb82af3713c574a021) as an admin.
-1. Select **Dynamics 365 Human Resources recruiting add-on**, and then select **Get it now**.
-1. Select **Environments**, and then search for and select your environment.
-1. Select the checkboxes to agree to the privacy statement and legal terms.
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Select your environment, and then select the mandatory checkboxes.
-1. Select **Install**.
-1. To check the status of the installation, follow these steps:
+2. Select **Dynamics 365 Human Resources recruiting add-on**, and then select **Get it now**.
+3. Select **Environments**, and then search for and select your environment.
+4. Select the checkboxes to agree to the privacy statement and legal terms.
+5. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+6. Select your environment, and then select the mandatory checkboxes.
+7. Select **Install**.
+8. To check the status of the installation, follow these steps:
 
     1. In the Power Platform admin center, select **Environments**, and then select your environment.
     1. Select **Resources** \> **Dynamics 365 apps**.
@@ -96,24 +96,24 @@ To install the Recruiting add-on app for the first time, follow these steps.
 To activate connections and flows for the Recruiting app, follow these steps.
 
 1. Sign in to [Power Apps](https://make.powerapps.com/).
-1. Select the environment where you installed the Recruiting add-on app.
-1. In the left pane, select **Solutions**.
-1. In the list of solutions, select **Default Solution**.
-1. Select **Connection reference**.
-1. Search for **Recruiting**. The following solutions should be available:
+2. Select the environment where you installed the Recruiting add-on app.
+3. In the left pane, select **Solutions**.
+4. In the list of solutions, select **Default Solution**.
+5. Select **Connection reference**.
+6. Search for **Recruiting**. The following solutions should be available:
 
     - Recruiting approvals connection
     - Recruiting dataverse connection
 
-1. Edit each connection reference. Add a new or existing connection, and make sure that it's enabled.
+7. Edit each connection reference. Add a new or existing connection, and make sure that it's enabled.
 
     - **Recruiting approvals connection:** Add the **Approvals** connector.
     - **Recruiting dataverse connection:** Add the **Microsoft Dataverse** connector.
 
-1. Go to **Solutions**, and select the **Managed** solution.
-1. Select **HCM recruiting flows**.
-1. Select **Cloud flows**, and then select **Turn on** for the cloud flows that are disabled.
-1. Repeat steps 8 through 10 for **HCM Recruiting**.
+8. Go to **Solutions**, and select the **Managed** solution.
+9. Select **HCM recruiting flows**.
+10. Select **Cloud flows**, and then select **Turn on** for the cloud flows that are disabled.
+11. Repeat steps 8 through 10 for **HCM Recruiting**.
 
     > [!NOTE]
     > Make sure that all the **HCM Recruiting** flows are active. Otherwise, issues can occur. For example, if the **Portal create candidate** flow isn't active, candidates can't create a profile.
@@ -125,10 +125,13 @@ To activate connections and flows for the Recruiting app, follow these steps.
 To activate the careers site, follow these steps.
 
 1. Sign in to [Power Pages](https://make.powerpages.microsoft.com/) as an admin.
-1. Select your environment.
-1. Select the **Inactive sites** tab.
-1. Select **Reactivate** for **Recruiting-careers site** to activate the site.
-1. Provide a name and web address for the website, and then select **Done**.
+2. Select your environment.
+3. Select the **Inactive sites** tab.
+> [!Note]
+> If you can't view the inactive site, create a temporary site using any available template. After creating a temporary site, you'll be able to access the inactive site.”
+ 
+4. Select **Reactivate** for **Recruiting-careers site** to activate the site.
+5. Provide a name and web address for the website, and then select **Done**.
 
     > [!NOTE]
     > To ensure that future updates can be installed, don't modify the input of the **Reactivated website** field.
@@ -138,4 +141,4 @@ Site activation might take up to 10 minutes. After the site activated, it's avai
 For more information, see [Reactivate sites](/power-pages/admin/reactivate-website).
 
 > [!IMPORTANT]
-> After your site is activated, confirm that the version number is at least 9.6. If it's earlier than 9.6, contact us.
+> After your site is activated, confirm that the version number is at least 9.6. If it's earlier than 9.6, contact us. To find the version, execute {siteUrl}/_services/about in the browser.
