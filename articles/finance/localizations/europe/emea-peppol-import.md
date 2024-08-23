@@ -18,7 +18,12 @@ ms.dyn365.ops.version: AX 10.0.32
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to configure and import vendor electronic invoices in the Pan-European Public Procurement Online ([PEPPOL](https://peppol.org/)) format in Microsoft Dynamics 365 Finance.
+This article explains how to configure and import vendor electronic invoices in the formats based on the Pan-European Public Procurement Online ([PEPPOL](https://peppol.org/)) into Microsoft Dynamics 365 Finance.
+
+The import from the follwoing electronic invoice formats are supported:
+ 
+ - Standard **PEPPOL** format;
+ - Germany-specific **XRechnung** format.
 
 ## Prerequisites
 
