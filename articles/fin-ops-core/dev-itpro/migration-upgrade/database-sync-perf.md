@@ -71,6 +71,7 @@ Typically, threshold values are decreased to include more tables in the shadow s
 
 > [!NOTE]
 > Run the following SQL script before you trigger the database upgrade for self-service from step 10 of the data migration toolkit.
+> This can also be run in your 2012 database prior to upgrading, and will not impact any existing functionility. 
 
 To tune the synchronization threshold, edit and run the following SQL script.
 
