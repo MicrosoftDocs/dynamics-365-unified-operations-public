@@ -1722,7 +1722,11 @@
       - name: Inventory On-hand mobile app
         href: inventory/inventory-onhand-mobile-app.md
       - name: Consolidate inventory transactions
-        href: inventory/archive-inventory-transactions.md
+        items:
+        - name: Consolidate inventory transactions
+          href: inventory/archive-inventory-transactions.md
+        - name: Consolidate inventory transactions FAQ
+          href: inventory/inventory-transactions-consolidation-faq.md
       - name: Inventory Visibility Add-in
         items:
         - name: Inventory Visibility Add-in overview
