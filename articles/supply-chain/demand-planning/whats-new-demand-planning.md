@@ -19,7 +19,7 @@ This article lists new features, fixes, improvements, and known issues for each 
 
 ### New features introduced in version 1.0.0.1225
 
-Forecast calculation job-run records now provide an **Explainability** tab, which lists each combination of dimensions (such as item variant, warehouse location, and so on) the forecast was calculated for. For each combination, it shows the forecast model that was used and the mean average percentage error (MAPE) for the calculation. A lower MAPE value indicates greater accuracy.  Learn more in [Work with forecast profiles](forecast-profiles.md).
+Forecast calculation job-run records now provide an **Explainability** tab, which lists each combination of dimensions (such as item variant, warehouse location, and so on) the forecast was calculated for. For each combination, it shows the forecast algorithm that was used and the mean average percentage error (MAPE) for the calculation. A lower MAPE value indicates greater accuracy.  Learn more in [Work with forecast profiles](forecast-profiles.md).
 
 ### New fixes and improvements in version 1.0.0.1225
 
