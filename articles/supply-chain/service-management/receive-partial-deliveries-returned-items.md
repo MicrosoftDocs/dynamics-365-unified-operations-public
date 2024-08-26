@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 05/01/2018
 ms.custom: 
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form:
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Receive partial deliveries of returned items
@@ -36,7 +32,7 @@ If a return shipment contains less than the full quantity of a return order line
 
 1. On the **Journal lines, locations** page, select the line for the quantity of items that has arrived, and then select **Post**. You can post the line for the additional quantity after the items have arrived.
 
-## See also
+## Related information
 
 - [Receive unannounced sales returns](../warehousing/sales-returns-unannounced.md)
 - [Receive returned items](receiving-returned-items.md)

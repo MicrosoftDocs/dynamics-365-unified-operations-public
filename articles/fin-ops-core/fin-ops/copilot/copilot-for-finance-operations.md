@@ -6,7 +6,7 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 07/05/2024
+ms.date: 08/02/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -39,6 +39,10 @@ The following Copilot features are currently available in finance and operations
 
 - For Dynamics 365 Commerce:
 
+    - [Customer insights by Copilot](../../../commerce/copilot-pos-customer-insights.md)
+    - [Store report insights by Copilot](../../../commerce/copilot-pos-report-insights.md)
+    - [Enable Copilot statement posting summaries](../../../commerce/copilot-statement-summaries.md)
+    - [Streamline your merchandising process with Copilot-based insights](../../../commerce/copilot-based-merch-insights.md)
     - [Use Copilot in site builder to enrich product detail pages](../../../commerce/copilot-site-builder.md)
 
 - For Dynamics 365 Finance:

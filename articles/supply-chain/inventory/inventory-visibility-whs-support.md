@@ -6,11 +6,7 @@ ms.author: yufeihuang
 ms.topic: article
 ms.date: 11/04/2022
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2022-03-10
 ms.search.form:
-ms.dyn365.ops.version: 10.0.26
 ---
 
 # Inventory Visibility support for WMS items
@@ -118,7 +114,7 @@ For detailed information about how on-hand calculations for WMS items work, see 
 
 The **Preload the Inventory Visibility Summary** page provides a view for the *On-hand Index Query Preload Results* entity. Unlike the *Inventory summary* entity, the *On-hand Index Query Preload Results* entity provides an on-hand inventory list for products together with selected dimensions. Inventory Visibility syncs the preloaded summary data every 15 minutes.
 
-If you use Inventory Visibility with WMS items and want to view the on-hand list for WMS items, we recommend that you enable the *Preload the Inventory Visibility Summary* feature. (For more information, see [Preload a streamlined on-hand query](inventory-visibility-preload-on-hand.md).) A corresponding data entity in Dataverse stores your preloaded query result, which is updated every 15 minutes. The name of the data entity is *Onhand Index Query Preload Result*.
+If you use Inventory Visibility with WMS items and want to view the on-hand list for WMS items, we recommend that you enable the *Preload the Inventory Visibility Summary* feature. (Learn more in [Preload a streamlined on-hand query](inventory-visibility-preload-on-hand.md).) A corresponding data entity in Dataverse stores your preloaded query result, which is updated every 15 minutes. The name of the data entity is *Onhand Index Query Preload Result*.
 
 > [!IMPORTANT]
 > The Dataverse entity is read-only. You can view and export the data in the Inventory Visibility entities, but **don't modify it**.

@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 09/28/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-09-28
 ms.search.form:  EngChgReadinessPersonUserLookup, EngChgReadinessList_Assigned,EngChgProductReadinessPolicy, EngChgProductReadinessList, EngChgProductReadinessChecksInfo, EngChgProductReadinessChecks, EngChgProductReadinessCheckPart 
-ms.dyn365.ops.version: 10.0.15
 ---
 
 # Product readiness
@@ -22,7 +18,7 @@ You can use readiness checks to help ensure that all the required master data ha
 
 You can mark the **Active** check box for an engineering product, variant, or version after all the required data has been entered and verified, and after all the readiness checks have been processed. If one or more checks haven't been processed for the product, version, or variant, then when you try to mark the **Active** check box, you will receive a prompt warning you that not all checks have been completed.
 
-You can create readiness checks for new engineering products, variants, and versions. You can also apply readiness checks to standard (non-engineering) products (see also [Readiness checks on standard products](#standard-products)). 
+You can create readiness checks for new engineering products, variants, and versions. You can also apply readiness checks to standard (non-engineering) products. (Learn more in the [Readiness checks on standard products](#standard-products) section later in this article.)
 
 You can use standard products in transactions even though not all readiness checks have been completed. If you need to block a product from being used in transactions, use its lifecycle state. You can assign a lifecycle state that blocks a product from being used in transactions and then, after all readiness checks have been completed, assign a new lifecycle state that allows the required transactions.
 
@@ -56,7 +52,7 @@ If a new engineering *version* is created for a product, the system checks wheth
 - The engineering version is set to inactive to block the product from being used.
 
 > [!NOTE]
-> You can also set up readiness check policies for standard (non-engineering) products. For more information, see the [Readiness checks on standard products](#standard-products) section later in this article.
+> You can also set up readiness check policies for standard (non-engineering) products. Learn more in the [Readiness checks on standard products](#standard-products) section later in this article.
 
 ## View readiness checks
 
@@ -187,7 +183,7 @@ You create readiness policies for standard products just as you do for engineeri
 
 ### Assign readiness policies to standard products
 
-To assign a readiness policy to a standard product, open the related shared product, and set the **Product readiness policy** field to the name of the policy that should apply. For more information, see the [Assign readiness policies to standard and engineering products](#assign-policy) section earlier in this article.
+To assign a readiness policy to a standard product, open the related shared product, and set the **Product readiness policy** field to the name of the policy that should apply. Learn more in the [Assign readiness policies to standard and engineering products](#assign-policy) section earlier in this article.
 
 ### View and process readiness checks on standard products
 

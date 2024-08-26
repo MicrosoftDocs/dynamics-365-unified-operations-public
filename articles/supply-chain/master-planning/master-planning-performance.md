@@ -7,12 +7,7 @@ ms.topic: article
 ms.date: 12/18/2019
 ms.custom: 
 ms.reviewer: kamaybac 
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2019-05-31
 ms.search.form: ReqCreatePlanWorkspace
-ms.dyn365.ops.version: AX 10.0.0
 ---
 
 # Improve master planning performance

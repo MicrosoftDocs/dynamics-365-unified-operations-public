@@ -8,7 +8,6 @@ ms.date: 05/27/2024
 ms.custom:
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: InventModelGroup, InventOnhandItem, InventTrans
 ---
 
@@ -47,7 +46,7 @@ The following table shows when the system posts inventory transactions by using 
 \*\* Denominator = (Physical quantity + Financial quantity)
 
 > [!NOTE]
-> If the **Include physical value** option isn't selected for an item, the system uses 0 (zero) for both the physical amount and the physical quantity. For information about this option, see [Include physical value](include-physical-value.md).
+> If the **Include physical value** option isn't selected for an item, the system uses 0 (zero) for both the physical amount and the physical quantity. For information about this option, see [Options for including physical value in cost calculations](include-physical-value.md).
 
 ## Avoiding pricing amplification
 

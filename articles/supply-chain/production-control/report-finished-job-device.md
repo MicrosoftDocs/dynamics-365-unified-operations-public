@@ -7,7 +7,6 @@ ms.reviewer: kamaybac
 ms.search.form: JmgRegistrationSetupTouch
 ms.topic: how-to
 ms.date: 08/05/2022
-audience: Application User
 ms.custom: 
   - bap-template
   - evergreen
@@ -224,7 +223,7 @@ To control whether workers should reuse an existing license plate or generate a 
 ![Configure job card for devices page.](media/config-job-card-raf.png "Configure job card for devices page")
 
 > [!NOTE]
-> To configure the label, go to **Warehouse management \> Setup \> Document routing \> Document routing**. For more information, see [Document routing label layouts](../warehousing/document-routing-layout-for-license-plates.md).
+> To configure the label, go to **Warehouse management \> Setup \> Document routing \> Document routing**. Learn more in [Document routing label layouts](../warehousing/document-routing-layout-for-license-plates.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

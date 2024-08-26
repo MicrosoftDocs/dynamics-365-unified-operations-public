@@ -7,8 +7,6 @@ ms.topic: how-to
 ms.date: 03/07/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 ---
 
@@ -51,7 +49,7 @@ When you use username/password authentication, each human worker must enter the 
 The Warehouse Management mobile app uses a Microsoft Entra ID application to authenticate and connect to your Supply Chain Management environment. You can use a global application that's provided and maintained by Microsoft, or you can register your own application in Microsoft Entra ID by following the procedure in this section.
 
 > [!IMPORTANT]
-> In most situations, we recommend that you use the global Microsoft Entra ID application, because it's easier to set up, use, and maintain. (For more information, see [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md).) In that case, you can skip this section. However, if you have specific requirements that the global application doesn't meet (such as the requirements for some on-premises environments), you can register your own application as described here.
+> In most situations, we recommend that you use the global Microsoft Entra ID application, because it's easier to set up, use, and maintain. (Learn more in [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md).) In that case, you can skip this section. However, if you have specific requirements that the global application doesn't meet (such as the requirements for some on-premises environments), you can register your own application as described here.
 
 The following procedure shows one way to register an application in Microsoft Entra ID. For detailed information and alternatives, use the links after the procedure.
 
@@ -158,7 +156,7 @@ To disable a user account in Microsoft Entra ID, follow these steps.
 > [!NOTE]
 > Depending on how you set up your authentication system, you might also want to change the user account's password or completely disable the user account.
 
-## Additional resources
+## Related information
 
 - [User-based authentication FAQ](warehouse-app-user-based-auth-faq.md)
 - [Install the Warehouse Management mobile app](install-configure-warehouse-management-app.md)

@@ -2,15 +2,16 @@
 title: Configure online stores
 description: This article provides links to articles that will help you centrally configure and manage an online store.
 author: josaw1
-ms.date: 06/20/2017
-ms.topic: article
+ms.date: 07/31/2024
+ms.topic: how-to
 audience: IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: asharchw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.assetid: 7a25f9b4-a0bb-4e8c-95c0-c0799ec0620d
+ms.custom: 
+  - bap-template
 ---
 
 # Configure online stores

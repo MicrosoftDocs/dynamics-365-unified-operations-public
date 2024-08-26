@@ -4,7 +4,7 @@ description: Learn about how to subscribe to the preview/partner offer and deplo
 author: josaw1
 ms.author: josaw
 ms.topic: article
-ms.date: 12/16/2020
+ms.date: 08/19/2024
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -148,15 +148,8 @@ Lifecycle Services is the starting point for performing online administrative ac
     The available tiles include various tools and services in Lifecycle Services. They also include the following additional tiles:
 
     - **My subscription** – The Microsoft 365 subscription management portal is where you can view and work with your online subscriptions. By selecting **User and Groups** in the left navigation section of the page, you can also manage your online users.
-
-        > [!NOTE]
-        > To access the page, you must be a member of the **Global Administrator** role for your organization's Microsoft Online Services tenant.
-
     - **Feedback and bugs** – This tile opens the **General Feedback** page in Microsoft Connect. Use this page to record bugs, and to design change requests, feature requests, and suggestions.
     - **Microsoft 365 users** – This tile opens the **Users and groups** page in Microsoft 365 admin center. You can add, update, and remove users, reset passwords, and assign licenses for other services.
-
-        > [!NOTE]
-        > To access the page, you must be a member of the **Global Administrator** role for your organization's Microsoft Online Services tenant. The installing user is always a global administrator, but other users must be added to this role.
 
         [![Active users in Microsoft 365 admin center.](./media/activeusersadmin.png)](./media/activeusersadmin.png)
 

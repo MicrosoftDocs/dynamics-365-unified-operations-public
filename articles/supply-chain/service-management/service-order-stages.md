@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 04/30/2018
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMAServiceOrderTable, SMAStageTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Service order stages   
@@ -27,7 +23,7 @@ You can also define the actions that are permitted at each stage. For example, i
 
 When you set up a service stage, you can create multiple options, or branches, to select from for the next service stage. All the branches that you create are available to select from when the initial stage is completed. For example, you set up **Planning** as an initial stage. You create two stages named **In process** and **Cancel**, and then select **Planning** as the parent for them. You assign the **Planning** stage to sales order. When the planning stage for the sales order is completed, you can select the **In process** stage if the sales order is ready to work on, or you can select the **Cancel** stage if the sales order is canceled.
 
-## See also
+## Related information
 
 [Set up service order stages](set-up-service-order-stages.md)
 

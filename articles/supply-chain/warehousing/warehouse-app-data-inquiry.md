@@ -1,16 +1,12 @@
 ---
 title: Query data using Warehouse Management mobile app detours
 description: Learn how to configure data inquiry mobile device menu items and use them as part of detours, including a feature introduction.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: article
 ms.date: 08/09/2022
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2022-08-01
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
-ms.dyn365.ops.version: 10.0.29
 ---
 
 # Query data using Warehouse Management mobile app detours
@@ -44,7 +40,7 @@ Before you can use the functionality that is described in this article, you must
 
     This feature is a prerequisite for the *Warehouse management app data inquiry flow* feature. As of Supply Chain Management version 10.0.29, it's turned on by default. For more information about the *Warehouse management app detours* feature, see [Configure detours for steps in mobile device menu items](warehouse-app-detours.md).
 
-1. If the *Warehouse management app detours* feature wasn't already turned on, update the field names in the Warehouse Management mobile app by going to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names** and selecting **Create default setup**. Repeat this step for each legal entity (company) where you use the Warehouse Management mobile app. For more information, see [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
+1. If the *Warehouse management app detours* feature wasn't already turned on, update the field names in the Warehouse Management mobile app by going to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names** and selecting **Create default setup**. Repeat this step for each legal entity (company) where you use the Warehouse Management mobile app. Learn more in [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
 1. Turn on the feature that is listed in the following way:
 
     - **Module:** *Warehouse management*
@@ -109,7 +105,7 @@ Create the **Look up POs by vendor** menu item by following these steps.
     | Purchase orders | Purchase orders | Vendor name | |
 
     > [!TIP]
-    > In this example, the filter doesn't include any warehouse criteria and will therefore return open purchase orders for all warehouses within the current legal entity. To limit the search results to only find purchase orders for the current worker's warehouse, add a query line with **Field** set to *Warehouse* and **Criteria** set to *(WhsWorkUserSessionSysQueryRangeUtil::whsWorkUserSessionCurrentWarehouse())*. You could also use this value for fields from joined tables (such as the *Inventory dimensions* table). See also [The work user session query range utility tool](#session-query).
+    > In this example, the filter doesn't include any warehouse criteria and will therefore return open purchase orders for all warehouses within the current legal entity. To limit the search results to only find purchase orders for the current worker's warehouse, add a query line with **Field** set to *Warehouse* and **Criteria** set to *(WhsWorkUserSessionSysQueryRangeUtil::whsWorkUserSessionCurrentWarehouse())*. You could also use this value for fields from joined tables (such as the *Inventory dimensions* table). Learn more in [The work user session query range utility tool](#session-query).
 
 1. Select **OK**.
 
@@ -160,7 +156,7 @@ Create the **Look up POs for today** menu item by following these steps.
     | Purchase order | Purchase order | Warehouse              | (WhsWorkUserSessionSysQueryRangeUtil::whsWorkUserSessionCurrentWarehouse()) |
 
     > [!NOTE]
-    > In this example, the query filters search results by warehouse because it includes a line with the *Warehouse* field. If you set this line with a blank value for **Criteria**, the system will show a filter page that automatically displays the worker's current warehouse and allows the worker to update the value as needed. If you set this line to have a **Criteria** value of *(WhsWorkUserSessionSysQueryRangeUtil::whsWorkUserSessionCurrentWarehouse())*, the application can automatically use this value without showing it to the worker for confirmation. See also [The work user session query range utility tool](#session-query).
+    > In this example, the query filters search results by warehouse because it includes a line with the *Warehouse* field. If you set this line with a blank value for **Criteria**, the system will show a filter page that automatically displays the worker's current warehouse and allows the worker to update the value as needed. If you set this line to have a **Criteria** value of *(WhsWorkUserSessionSysQueryRangeUtil::whsWorkUserSessionCurrentWarehouse())*, the application can automatically use this value without showing it to the worker for confirmation. Learn more in [The work user session query range utility tool](#session-query).
 
 1. Select **OK**.
 
@@ -210,7 +206,7 @@ Create the **Look up POs by item** menu item by following these steps.
     | Purchase order lines | Purchase order lines | Item number | |
 
     > [!TIP]
-    > In this example, the filter doesn't include any warehouse criteria and will therefore return open purchase orders for all warehouses within the current legal entity. To limit the search results to the current worker's warehouse, you could join to the *Inventory dimensions* table, then include the *Warehouse* field as part of the range query, and enter *(WhsWorkUserSessionSysQueryRangeUtil::whsWorkUserSessionCurrentWarehouse())* as the **Criteria** for the *Warehouse* field. See also [The work user session query range utility tool](#session-query).
+    > In this example, the filter doesn't include any warehouse criteria and will therefore return open purchase orders for all warehouses within the current legal entity. To limit the search results to the current worker's warehouse, you could join to the *Inventory dimensions* table, then include the *Warehouse* field as part of the range query, and enter *(WhsWorkUserSessionSysQueryRangeUtil::whsWorkUserSessionCurrentWarehouse())* as the **Criteria** for the *Warehouse* field. Learn more in [The work user session query range utility tool](#session-query).
 
 1. Select **OK**.
 

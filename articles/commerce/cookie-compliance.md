@@ -2,22 +2,20 @@
 title: Cookie compliance
 description: This article describes considerations for cookie compliance and the default policies included in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 04/21/2023
-ms.topic: article
+ms.date: 07/25/2024
+ms.topic: how-to
 audience: Application user
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 
 # Cookie compliance
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article describes considerations for cookie compliance and the default policies included in Microsoft Dynamics 365 Commerce.
 

@@ -8,7 +8,6 @@ ms.date: 05/27/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: 
 ---
 
@@ -101,7 +100,7 @@ The following list outlines some concepts for the charge and cost features in La
 
 TMS can match freight bills that contain estimated costs and invoices with the actual cost of the freight. Invoices can be received either electronically or on paper. Matching variance between the estimated cost and actual cost doesn't affect the inventory valuation.
 
-For more information, see [Reconcile freight in transportation management](../transportation/reconcile-freight-transportation-management.md).
+Learn more in [Reconcile freight in transportation management](../transportation/reconcile-freight-transportation-management.md).
 
 ### Landed cost bill and invoice matching features
 
@@ -131,7 +130,7 @@ The journey concept identifies where the goods are in the process and controls t
 
 In TMS, routes can be broken down into route segments to represent multi-leg journeys. TMS can allocate spot rates and accessorial charges to individual route segments.
 
-For more information, see [Plan freight transportation routes with multiple stops](../transportation/plan-freight-transportation-routes-multiple-stops.md).
+Learn more in [Plan freight transportation routes with multiple stops](../transportation/plan-freight-transportation-routes-multiple-stops.md).
 
 ### Landed cost multi-leg journey features
 
@@ -167,7 +166,7 @@ TMS lets you identify vendor and routing solutions for inbound and outbound orde
 
 TMS provides full rate shopping and freight optimization through the rate route workbench, flexible rating options through the rating engine, a rating engine API for integration with external parties, and support for volumetric weight.
 
-For more information, see [Transportation management engines](../transportation/transportation-management-engines.md).
+Learn more in [Transportation management engines](../transportation/transportation-management-engines.md).
 
 ### Landed cost rate shopping features
 

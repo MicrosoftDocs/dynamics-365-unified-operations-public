@@ -26,7 +26,7 @@ A report definition is a report component (or building block) that uses a row de
 - Financial and Account
 - Financial, Account, and Transaction
 
-However, depending on how data is stored in the Microsoft Dynamics ERP system, transaction details might not be available in reports.
+However, depending on how data is stored in Microsoft Dynamics 365 Finance, transaction details might not be available in reports.
 
 ## Create a report definition
 1. In Report designer, on the **File** menu, click **New**, and then select **Report definition**.

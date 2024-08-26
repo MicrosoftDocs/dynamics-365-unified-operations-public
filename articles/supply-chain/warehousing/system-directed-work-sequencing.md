@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 07/03/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-07-03
 ms.search.form:  WHSRFSystemDirectedWorkSequenceQuery, WHSLocDirTable
-ms.dyn365.ops.version: 10.0.7
 ---
 
 # System-directed work sequencing

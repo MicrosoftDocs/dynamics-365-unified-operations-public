@@ -2,13 +2,15 @@
 title: Configure Service-to-Service authentication
 description: This article describes how to configure Service-to-Service authentication in Microsoft Dynamics 365 Commerce to securely call service APIs for ratings and reviews.
 author: gvrmohanreddy
-ms.date: 01/12/2022
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: stuharg
+ms.author: asharchw
 ms.search.validFrom: 2017-06-20
+ms.custom: 
+  - bap-template
 ---
 
 # Configure Service-to-Service authentication

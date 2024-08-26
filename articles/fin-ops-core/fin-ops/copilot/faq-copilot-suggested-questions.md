@@ -54,6 +54,7 @@ Microsoft might disable Copilot-driven features for selected customers if abuse 
 ## See also
 
 - [Generative help and guidance with Copilot](copliot-generative-help.md)
+- [Add knowledge to generative help and guidance with Copilot](../../dev-itpro/copilot/extend-copilot-generative-help.md)
 - [Responsible AI FAQ for Generative help and guidance with Copilot in finance and operations apps](faq-copilot-generative-help.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

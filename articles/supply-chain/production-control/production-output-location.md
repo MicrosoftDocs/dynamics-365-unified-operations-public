@@ -6,11 +6,7 @@ ms.author: johanho
 ms.topic: article
 ms.date: 04/04/2017
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-11-30
 ms.search.form:
-ms.dyn365.ops.version: Version 1611
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ---
 

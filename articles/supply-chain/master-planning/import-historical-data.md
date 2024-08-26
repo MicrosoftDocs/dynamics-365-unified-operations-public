@@ -7,12 +7,7 @@ ms.topic: article
 ms.date: 05/10/2017
 ms.custom: 
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-11-30
 ms.search.form:  ReqDemPlanCreateForecastDialog
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 59c0d269-9db0-48e7-b8c7-9a388781a9ca
 ---
 
@@ -34,6 +29,6 @@ To use the data entity, you must have a Microsoft Excel file or comma-separated 
 
 For more information about how to import data, including how to clean up data after an import, see [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) and its related articles.
 
-See also [Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md).
+Learn more in [Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMASubscriptionTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Credit subscription transactions 
@@ -39,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 If the **Reverse accruals on crediting** field in the **Service management parameters** form is set to **Manual**, you have to reverse each accrued revenue transaction individually before you create a credit note proposal for the transaction.
 
-## See also
+## Related information
 
 [Invoice subscription transactions](invoice-subscription-transactions.md)
 

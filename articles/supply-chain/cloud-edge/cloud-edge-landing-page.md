@@ -6,11 +6,7 @@ ms.author: mirzaab
 ms.topic: article
 ms.date: 07/06/2022
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2021-04-13
 ms.search.form: ScaleUnitWorkloadsWorkspace
-ms.dyn365.ops.version: 10.0.28
 ---
 
 # Scale unit capability for Supply Chain Management is deprecated and no longer available to new customers

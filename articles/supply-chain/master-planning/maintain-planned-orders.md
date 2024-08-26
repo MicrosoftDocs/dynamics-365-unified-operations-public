@@ -6,12 +6,7 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 12/10/2019
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: ReqTransPo, ReqTransFirmLog
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 54123f4c-b4ca-4ce4-9358-b067aa04c968
 ---
 
@@ -50,7 +45,7 @@ If you are planning to firm many orders at the same time, parallelizing the run 
 > [!NOTE]
 > The option for **Parallelize firming** is only shown when you have more than one planned order selected for firming.
 
-## Additional resources
+## Related information
 
 - [Master plans overview](master-plans.md)
 

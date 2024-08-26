@@ -6,7 +6,7 @@ ms.author: epodkolzina
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/05/2019
+ms.date: 08/08/2024
 ms.reviewer: johnmichalak
 ms.search.region: India
 ms.search.validFrom: 2019-06-01
@@ -16,6 +16,8 @@ ms.dyn365.ops.version: 10.0.4
 # Set up a sales tax hierarchy and the setoff rules
 
 [!include [banner](../../includes/banner.md)]
+
+## Maintain tax hierarchies
 
 1. Go to **Tax** \> **Setup** \> **Sales tax** \> **Sales tax hierarchies**.
 2. Select **New**.
@@ -58,6 +60,28 @@ ms.dyn365.ops.version: 10.0.4
 5. Select **OK**, and then select **Activate**.
 6. Select **Yes**.
 7. Close the message that you receive, and then close the page.
+
+## Enable the addition and synchronization of tax hierarchy versions in batch mode
+
+As of version 10.0.41, you can add and synchronize tax hierarchy versions in batch mode.
+
+In the **Feature management** workspace, enable the **Enable adding and synchronizing of tax hierarchy version in batch mode** feature. Then, when you add a new version on the **Sales tax hierarchies** page (**Tax** \> **Setup** \> **Sales tax** \> **Sales tax hierarchies**), you can enable batch processing by setting the **Batch processing** option to **Yes** in the **Add version of sales tax hierarchy** dialog box.
+
+![Adding a tax hierarchy version in batch mode.](../media/TaxHierarchyVersionAddBatch.png)
+
+> [!NOTE]
+> After you select **OK** in the dialog box, you receive the following message: "The Add version of sales tax hierarchy job is added to the batch queue."
+>
+> If there is a batch job that isn't completed, you receive the following message: "Cannot start a new job, as a batch job to Add version of sales tax hierarchy is already running."
+
+For the **Synchronize** operation, you can also enable batch processing in the **Synchronize version of sales tax hierarchy** dialog box.
+
+![Syncing a tax hierarchy in batch mode.](../media/TaxHierarchyVersionSyncBatch.png)
+
+> [!NOTE]
+> After you select **OK** in the dialog box, you receive the following message: "The Synchronize version of sales tax hierarchy job is added to the batch queue."
+>
+> If there is a batch job that isn't completed, you receive the following message: "Cannot start a new job, as a batch job to Synchronize version of sales tax hierarchy is already running."
 
 ## GST minor codes
 

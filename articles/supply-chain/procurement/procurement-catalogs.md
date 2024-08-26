@@ -8,11 +8,7 @@ ms.date: 07/25/2019
 ms.custom:
 ms.reviewer: kamaybac
 ms.collection: get-started
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, CatDisplayProductRelationAdd
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ---
 
@@ -60,7 +56,7 @@ Updates are published either automatically or manually, depending on the option 
 -   **Both** – If the catalog includes product categories that have a default update type of **Static**, it must be manually updated when these categories are updated. If the catalog includes product categories that have a default update type of **Dynamic**, it is automatically updated whenever it's changed.
 
 
-## Additional resources
+## Related information
 
 [Set up a procurement category hierarchy](tasks/set-up-procurement-category-hierarchy.md)
 

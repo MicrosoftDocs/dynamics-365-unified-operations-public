@@ -7,8 +7,6 @@ ms.topic: conceptual
 ms.date: 01/05/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: ReqCreatePlanWorkspace
 ---
 
@@ -103,7 +101,7 @@ The net change minimized planning method generates planned orders to cover only 
 
 Other aspects of setting up master plans (including Scheduling methods, time fences, positive days, and negative days) work the same way when using the deprecated planning engine as they do when using Planning Optimization. For more information about these topics, see [Master plans overview](master-plans.md).
 
-## Additional resources
+## Related information
 
 - [Coverage settings](coverage-settings.md)
 - [Separating tactical and operative planning for master scheduling](https://community.dynamics.com/ax/b/dynamicsaxmanufacturingrdteamblog/posts/separating-tactical-and-operative-planning-for-master-scheduling)

@@ -7,7 +7,6 @@ ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
 ms.date: 04/19/2024
-audience: Application User
 ms.custom: 
   - bap-template
 ---
@@ -62,7 +61,7 @@ For information about other finance and operations apps, see the following docum
 Check out the following collections of videos to learn more about Dynamics 365 Supply Chain Management, finance and operations apps, and other related technologies. Topics include feature introductions, event presentations, tech talks, customer stories, and more.
 
 - [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/@MicrosoftDynamics365)
-- [Microsoft Dynamics 365 community videos](https://community.dynamics.com/videos/)
+- [Microsoft Dynamics 365 Community YouTube channel](https://www.youtube.com/@MSD365Community)
 
 ## Blogs
 

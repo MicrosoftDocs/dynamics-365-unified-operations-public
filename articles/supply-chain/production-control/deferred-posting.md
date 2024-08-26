@@ -6,11 +6,7 @@ ms.author: johanho
 ms.topic: article
 ms.date: 08/02/2022
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2022-08-02
 ms.search.form: ProdParameters, JmgProdParameters, InventLocation, JmgMES3PMessageProcessorMessage
-ms.dyn365.ops.version: 10.0.29
 ---
 
 # Make finished goods physically available before posting to journals

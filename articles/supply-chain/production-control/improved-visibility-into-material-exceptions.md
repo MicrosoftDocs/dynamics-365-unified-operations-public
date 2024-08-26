@@ -6,11 +6,7 @@ ms.author: johanho
 ms.topic: article
 ms.date: 10/30/2017
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2017-12-31
 ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage, WHSProdWaveTableManageBOMPool
-ms.dyn365.ops.version: 7.3
 ---
 
 # Visibility into material exceptions
@@ -39,7 +35,7 @@ A BOM or formula line can be released to the warehouse in three ways:
 - As a manual release
 - Automatically through a batch job
 
-For more information, see [Release BOM and formula lines to the warehouse](releasing-bom-and-formula-lines-to-warehouse.md). 
+Learn more in [Release BOM and formula lines to the warehouse](releasing-bom-and-formula-lines-to-warehouse.md). 
 
 If a BOM or formula line hasn't been released or has been only partly released, and if the date and filter criteria of the workspace are met, the line is included in the calculation of the number that appears on the **Unreleased material lines needing attention** tile.
 

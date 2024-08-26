@@ -9,8 +9,6 @@ ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.collection:
   - bap-ai-copilot
-audience: Application User
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -87,6 +85,6 @@ The *Analyze demand plans with Copilot* feature is on by default. Follow these s
 1. In the dropdown list, select *Yes* to enable the feature for the current environment, or select *No* to disable it.
 1. Select **Save**.
 
-### See also
+### Related information
 
 - [Responsible AI FAQ for Analyze demand plans with Copilot (preview)](../faq-demand-planning-copilot.md)

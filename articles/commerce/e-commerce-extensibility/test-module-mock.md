@@ -2,16 +2,15 @@
 title: Test modules with module mocks
 description: This article describes how to test modules by using module mocks.
 author: samjarawan
-ms.date: 09/14/2021
-ms.topic: article
+ms.date: 07/31/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: samjar
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
-ms.assetid: 
+  - bap-template 
 ---
 # Test modules with module mocks
 

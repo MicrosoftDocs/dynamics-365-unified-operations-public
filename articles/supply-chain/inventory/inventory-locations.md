@@ -6,12 +6,7 @@ ms.author: yufeihuang
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2016-02-28
 ms.search.form: WMSLocation, WMSBlockingCause, WHSLocation
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 69bf6922-4151-447f-b678-4ba95637f54c
 ---
 
@@ -51,7 +46,7 @@ It is possible to copy locations from one warehouse to another and to create loc
 
 
 
-## Additional resources
+## Related information
 
 [Create a new warehouse layout](tasks/create-new-warehouse-layout.md)
 

@@ -5,7 +5,7 @@ author: moaamer
 ms.author: moaamer
 ms.topic: article
 ms.date: 04/12/2021
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-10-28
@@ -17,9 +17,9 @@ ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 # Compounding interval functionality
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This article provides information that will help you choose among monthly, quarterly, semiannual, and annual compounding intervals. The compounding interval functionality is used to determine the number of compounding periods per year in a lease's payment schedule. Each of the four examples in this article shows what a lease's payment schedule will look like for a different interval.
+
+This article provides information to help choose monthly, quarterly, semiannual, and annual compounding intervals. The compounding interval functionality is used to determine the number of compounding periods per year in a lease's payment schedule. Each of the four examples in this article shows what a lease's payment schedule looks like for a different interval.
 
 You can't select a compounding interval that is less frequent than the lease's payment frequency. For example, a quarterly compounding interval can't be used with a monthly payment frequency, and an annual compounding interval can't be used with a semiannual payment frequency. If you try to select a compounding interval that is less frequent than the lease's payment frequency, you receive an error message.
 
@@ -58,7 +58,7 @@ The following tables show the values that are set on the **General** and **Payme
 The following table lists the first 12 months of the payment schedule. Note the following details:
 
 - The value in the "Period" column increases by 1 every month, because each month is a new compounding interval.
-- In the formula in the "Present value" column, the rate is divided by 12, because there are 12 compounding periods per year. The exponent (that is, the superscript numeral) equals the value in the "Period" column.
+- In the formula in the "Present value" column, the rate is divided by 12, because there are 12 compounding periods per year. The exponent (the superscript numeral) equals the value in the "Period" column.
 
 | Period | Month | Date       | Payment amount | Present value                                       |
 |--------|-------|------------|----------------|-----------------------------------------------------|

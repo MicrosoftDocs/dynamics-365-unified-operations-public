@@ -8,7 +8,6 @@ ms.date: 06/07/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: CatProcureCatalogListPage, CatVendorCatalogListPage, PurchTable, PurchTablePart
 ---
 
@@ -80,5 +79,16 @@ Invoiced purchase orders will record the liability into the vendor account withi
 ## Vendor performance
 
 Performance and review of purchasing is supported through *procurement and account payable reports*, which include spend analysis and vendor performance analysis.
+
+## Related information
+
+- [Defining business process workflows for purchase requisitions](https://www.microsoft.com/download/details.aspx?id=101821) (white paper)
+- [Importing vendor catalogs](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/) (blog post)
+- [Inbound consignment inventory demo script](https://www.microsoft.com/download/details.aspx?id=101945) (white paper)
+- [Monitor consignment inventory using vendor collaboration](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
+- [Create a purchase order from a sales order](../sales-marketing/tasks/create-purchase-order-sales-order.md)
+- [Create a consignment replenishment order](../inventory/tasks/create-consignment-replenishment-order.md)
+- [Overview of vendor invoices](../../finance/accounts-payable/vendor-invoices-overview.md)
+- [Vendor posting profiles](../../finance/accounts-payable/vendor-posting-profiles.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

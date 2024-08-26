@@ -7,8 +7,6 @@ ms.topic: overview
 ms.date: 01/05/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: ReqCreatePlanWorkspace, ReqParameters, ReqPlanSched
 ---
 
@@ -135,7 +133,7 @@ As a rule, the positive days are set to a number that is between the longest lea
 
 ### Dynamic positive days
 
-Dynamic positive days work like positive days, but they also consider the lead time. For more information, see [Dynamic positive days for last-minute orders](dynamic-positive-days.md).
+Dynamic positive days work like positive days, but they also consider the lead time. Learn more in [Dynamic positive days for last-minute orders](dynamic-positive-days.md).
 
 ### Negative days
 
@@ -155,6 +153,6 @@ Lead time + Negative days + Current date – Requirement date
 
 The system uses only the planned supply orders that are within this time fence, and it creates a new planned order outside it. The advantage of dynamic negative days is that it will include the individual product lead time, to reuse existing orders and avoid creating new planned orders that will end up with a later day, due to delays caused by lead time.
 
-For more information, see [Negative days and dynamic negative days](more-about-dynamic-negative-days.md).
+Learn more in [Negative days and dynamic negative days](more-about-dynamic-negative-days.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

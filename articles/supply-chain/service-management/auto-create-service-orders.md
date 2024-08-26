@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMAServiceOrderTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Automatically create service orders 
@@ -25,13 +21,13 @@ The service orders that you generate from a service agreement are all attached t
 
 Service orders are generated automatically from the following settings:
 
-  - The service agreement interval that is set up in the service agreement lines. The service agreement interval indicates the frequency that service-order lines are created. For more information, see [Service intervals](service-intervals.md).
+  - The service agreement interval that is set up in the service agreement lines. The service agreement interval indicates the frequency that service-order lines are created. Learn more in [Service intervals](service-intervals.md).
 
-  - The period that you specify to define the service period in the **From date** and **To date** fields in the **Create service orders** form. For more information, see [Create service orders automatically](create-service-orders-automatically.md).
+  - The period that you specify to define the service period in the **From date** and **To date** fields in the **Create service orders** form. Learn more in [Create service orders automatically](create-service-orders-automatically.md).
 
-  - The **Combine service orders** option on the service agreement header. This option defines whether service order lines generated from a service agreement, combines service orders according to employee, service task, service object, or service agreement. For more information, see [Combine service orders](combine-service-orders.md).
+  - The **Combine service orders** option on the service agreement header. This option defines whether service order lines generated from a service agreement, combines service orders according to employee, service task, service object, or service agreement. Learn more in [Combine service orders](combine-service-orders.md).
 
-  - The **Time window** option on the service agreement line. The time window defines how far a service order line can move with regard to its calculated date. For more information, see [Time windows](time-windows.md).
+  - The **Time window** option on the service agreement line. The time window defines how far a service order line can move with regard to its calculated date. Learn more in [Time windows](time-windows.md).
 
 
 > [!NOTE]

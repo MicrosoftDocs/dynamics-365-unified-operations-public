@@ -2,15 +2,15 @@
 title: Create deployable packages
 description: This article explains how to create a deployable package for Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 11/30/2021
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: asharchw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.assetid: 0fa3c8e7-49e4-417d-afe9-fa2055f6546f
+ms.custom: 
+  - bap-template
 ---
 
 # Create deployable packages

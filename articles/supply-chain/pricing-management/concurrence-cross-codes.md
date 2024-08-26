@@ -7,8 +7,6 @@ ms.topic: conceptual
 ms.date: 04/03/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: GUPPricingTree, GUPParameters, GUPPriceComponentCodeSetup
 ---
 
@@ -32,7 +30,7 @@ Concurrency across price components codes affects only discounts and margin pric
 - *Compounded* – The system first computes the price adjustment or discount for each line in the price structure. It then calculates the final discount or adjustment by adding the value of every line. This value is available only for lines where the **Price component** field is set to *Discounts* or *Margin component*. (For margin components, this value is the only one that's available.)
 - *Best price* – If the price structure includes more than one price component code that has this value, only one of the lines (the one that has the largest discount) will contribute to the final unit price. This value is available only for lines where the **Price component** field is set to *Discounts*.
 
-The **Concurrency mode across priority** setting affects discount calculations only when the *Best price and compound within priority, best price and compound across priority* option is selected under **Best price and compound concurrency control model** on the **Pricing management parameters** page. For more information, see the [System settings for resolving discount concurrency across price component codes](#parameters) section of this article.
+The **Concurrency mode across priority** setting affects discount calculations only when the *Best price and compound within priority, best price and compound across priority* option is selected under **Best price and compound concurrency control model** on the **Pricing management parameters** page. Learn more in the [System settings for resolving discount concurrency across price component codes](#parameters) section of this article.
 
 As was mentioned, margin components are always compounded across components (in other words, the **Concurrency mode across priority** field is always set to *Compounded* for margin components in your price structures). However, you must still set up each price structure to control whether each adjustment is calculated by using the base price or the compound price (that is, the running total). The option that you choose can have a significant effect on your final prices for margin price adjustments that are calculated as a percentage. For each margin component in your price structures, you can set the option by using the **Compound** checkbox. For an example that shows how the setting of this checkbox affects your final prices, see the [Example price calculation using a mix of compound and non-compound margin components](#margin-example) section of this article.
 

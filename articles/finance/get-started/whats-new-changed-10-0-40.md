@@ -4,10 +4,10 @@ description: Learn about features that are either new or changed in the Microsof
 author: twheeloc
 ms.author: twheeloc
 ms.topic: faq
-ms.date: 4/26/2024
-ms.custom:   
+ms.custom: 
   - bap-template
   - evergreen
+ms.date: 07/22/2024
 ms.reviewer: twheeloc
 ms.search.region: Global
 ---
@@ -41,7 +41,7 @@ This section contains a table that lists the features that are included in this 
 | General ledger | Consolidation templates | Consolidation online templates let you set up the consolidation information one time and then use it every time that the consolidation process is run. The updated **Consolidate online** page now shows all consolidation runs, reruns, and reversals. To use this functionality, enable the **Consolidate online using templates** feature in Feature management. | Feature management |
 | General ledger | Reverse related journals | This feature reverses all related journals in a single step. As part of the automatic split of large journals, multiple journals can be created from one large journal. Users can now reverse all those journals at the same time. For more information, see [Reverse related journals with journals that were automatically split](../general-ledger/reverse-journal-posting.md#reverse-related-journals-with-journals-that-were-automatically-split). | |
 |Workflow |Workflow history summary|This feature displays an AI-generated summary on the **Workflow history** page. The concise summary shows the submitter, current status, due date and any comments and most recent approvals, rejections and change requests with comments. The most relevant history featured in the **Summary by copilot** fastTab helps approvers make faster decisions because they don't need to search through the history page.|Feature management |
-
+|Electronic Invoicing |E-Invoicing for Chile: ISV last-mile connector with Edicom|This feature is the last-mile integration with the Chilean Tax Authorities via the Certification Authorization Provider Edicom. It provides the required end-to-end process of the outbound flow of e-invoices submission. For more information, see: [Get started with Electronic invoicing for Chile](../localizations/iberoamerica/ltm-chile-elec-invo-conncection.md).|  |
 
 ## Feature enhancements included in this release
 
@@ -94,6 +94,4 @@ The [Removed or deprecated features in Dynamics 365 Finance](removed-deprecated-
 
 Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Finance](removed-deprecated-features-finance.md) article 12 months prior to the removal.
 
-### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=932660).

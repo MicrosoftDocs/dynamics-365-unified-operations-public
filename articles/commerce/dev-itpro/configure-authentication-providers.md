@@ -2,15 +2,16 @@
 title: Configure authentication providers
 description: This article provides an overview of the process for configuring a new OpenID authentication provider.
 author: josaw1
-ms.date: 11/14/2017
-ms.topic: article
+ms.date: 07/25/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: asharchw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.assetid: fef883f3-981a-4bba-9a41-d9dde63b0cd0
+ms.custom: 
+  - bap-template
 ---
 
 # Configure authentication providers

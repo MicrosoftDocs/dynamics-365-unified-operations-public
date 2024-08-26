@@ -6,11 +6,7 @@ ms.author: johanho
 ms.topic: article
 ms.date: 09/02/2022
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2022-09-02
 ms.search.form: IoTIntCoreScenarioManagement, IoTIntCoreNotification, IoTIntMfgResourceStatusConfiguration, IoTIntMfgResourceStatus
-ms.dyn365.ops.version: 10.0.30
 ---
 
 # Product quality scenario (preview)
@@ -36,7 +32,7 @@ In this section, you will set up the demo data so that you can use released prod
 
 ### Set up a sensor simulator
 
-If you want to try this scenario without using a physical sensor, you can set up a simulator to generate the required signals. For more information, see [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md).
+If you want to try this scenario without using a physical sensor, you can set up a simulator to generate the required signals. Learn more in [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md).
 
 ### Associate a batch attribute and resource with product P0111
 

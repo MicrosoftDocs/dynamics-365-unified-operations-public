@@ -9,8 +9,6 @@ ms.custom:
   - bap-template
   - evergreen
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: ProdSchedule
 ---
 
@@ -71,7 +69,7 @@ When you run operations scheduling, you can cancel specific parts of the routing
 
 If you're working with finite materials, scheduling also depends on the availability of the materials that are required for production. If there aren't enough available components for the production, production can be delayed. You can base scheduling on the use of materials by specifying the materials that must be available for production. When you optimize on both resource capacity and the availability of materials, production is calculated according to these restrictions. A production order can't be scheduled to start until capacity and materials are available at the same time and in the required quantities.
 
-## Additional resources
+## Related information
 
 - [Operations scheduling options](operation-scheduling-options.md)
 

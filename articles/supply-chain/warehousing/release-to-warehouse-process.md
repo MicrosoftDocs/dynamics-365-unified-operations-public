@@ -7,8 +7,6 @@ ms.topic: how-to
 ms.date: 01/29/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: WHSReleaseToWarehouse, WHSReleaseToWarehouseSalesOrder, WHSReleaseToWarehouseTransferOrder, WHSReleaseToWarehouseOutboundShipmentOrder, WHSLoadPlanningWorkbench, WHSWaveTemplateTable, WHSWorkTemplateTable, WHSLocDirTable, WHSOutboundLoadPlanningWorkbench 
 ---
 
@@ -28,18 +26,18 @@ A *load* is a group of order lines that are grouped together, and that typically
 
 Warehouse *work* is any warehouse operation that is performed by a warehouse worker. Typically, warehouse work operations consist of at least two consecutive actions: a warehouse worker picks up on-hand inventory in one location and then puts it away in another location.
 
-When orders are released to the warehouse, the system creates *load lines* and groups them into shipments. The shipment consolidation process allows for automated shipment consolidation during the release to warehouse process. For more information, see [Shipment consolidation policies overview](about-shipment-consolidation-policies.md).
+When orders are released to the warehouse, the system creates *load lines* and groups them into shipments. The shipment consolidation process allows for automated shipment consolidation during the release to warehouse process. Learn more in [Shipment consolidation policies overview](about-shipment-consolidation-policies.md).
 
 The system uses *waves* to create picking work and loads for shipment. A *wave template* must be available for the type of wave that you want to create and for the warehouse of the order line. Wave templates of the *Shipping* type are used to ship items for sales orders and transfer orders.
 
-Each wave template contains *wave methods*. Wave methods perform actions such as creating work for the wave or creating loads. For example, a wave template for shipping waves can contain methods for creating loads, allocating lines to waves, replenishment, and creating picking work for the wave. The wave template establishes settings that define how the wave will be generated and processed, which steps must be done manually, and which steps will be done automatically. For more information, see [Wave templates](wave-templates.md). Therefore, depending on the configuration of your wave template, either a wave is automatically created, processed, and released when you release an order to warehouse, or some or all of those actions are manually performed after the release to warehouse is done.
+Each wave template contains *wave methods*. Wave methods perform actions such as creating work for the wave or creating loads. For example, a wave template for shipping waves can contain methods for creating loads, allocating lines to waves, replenishment, and creating picking work for the wave. The wave template establishes settings that define how the wave will be generated and processed, which steps must be done manually, and which steps will be done automatically. Learn more in [Wave templates](wave-templates.md). Therefore, depending on the configuration of your wave template, either a wave is automatically created, processed, and released when you release an order to warehouse, or some or all of those actions are manually performed after the release to warehouse is done.
 
-When a wave is processed, the system creates picking work, based on a suitable *work template* and *location directive*, and makes that work available on mobile devices. The work template determines how the work is performed for each warehouse process, and the location directive specifies the pick and put locations for inventory movement. For more information, see [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md).
+When a wave is processed, the system creates picking work, based on a suitable *work template* and *location directive*, and makes that work available on mobile devices. The work template determines how the work is performed for each warehouse process, and the location directive specifies the pick and put locations for inventory movement. Learn more in [Control warehouse work by using work templates and location directives](control-warehouse-location-directives.md).
 
 > [!NOTE]
 > By default, waves are processed in batch mode.
 
-During wave processing, the system usually creates a new load for each shipment that no load is assigned to. If you want the system to assign unassigned shipments to existing loads instead, you can use the advanced wave load building functionality. For more information, see [Advanced load building during wave](advanced-load-building-during-wave.md).
+During wave processing, the system usually creates a new load for each shipment that no load is assigned to. If you want the system to assign unassigned shipments to existing loads instead, you can use the advanced wave load building functionality. Learn more in [Advanced load building during wave](advanced-load-building-during-wave.md).
 
 On the **Sales orders**, **Transfer orders**, and **Outbound shipment orders** pages, you can review the entities created for order lines during the release to warehouse process.
 

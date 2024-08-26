@@ -84,8 +84,6 @@ The following example describes the general steps for subscribing to a change-ba
 
     <img alt="Preparing to send the request for approval, part 2" src="../../media/Image8.png" width="70%">
 
-    <img alt="Preparing to send the request for approval, part 3" src="../../media/Image9.png" width="70%">
-
 6. Start the approval process.
 
     In this step, the approval request is sent from Power Automate.
@@ -101,10 +99,6 @@ The following example describes the general steps for subscribing to a change-ba
 8. Update the task with the approval outcome.
 
     Based on the outcome of the approval process, the task is updated with the result.
-
-    <img alt="Updating the task, part 1" src="../../media/Image12.png" width="70%">
-
-    <img alt="Updating the task, part 2" src="../../media/Image13.png" width="70%">
 
 ## Conclusion
 

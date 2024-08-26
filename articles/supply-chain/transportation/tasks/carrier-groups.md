@@ -7,12 +7,7 @@ ms.topic: how-to
 ms.date: 10/30/2020
 ms.custom:
 ms.reviewer: kamaybac    
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2020-10-30
 ms.search.form: TMSCarrierGroup 
-ms.dyn365.ops.version: 10.0.15
 ---
 
 # Carrier groups

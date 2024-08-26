@@ -6,11 +6,7 @@ ms.author: yanansong
 ms.topic: article
 ms.date: 05/31/2021
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2021-05-31
 ms.search.form: PurchTable, PurchTablePart, PurchRFQTable
-ms.dyn365.ops.version: 10.0.13
 ---
 
 # Procurement FAQ

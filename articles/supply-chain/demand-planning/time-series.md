@@ -7,8 +7,6 @@ ms.topic: how-to
 ms.date: 10/19/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -76,7 +74,7 @@ The row for each time series that's listed in the **Select data** dialog box pro
 - **Show in grid** – Enable this option for each time series that you want to include in the data table.
 - **Grid formatting** – Select the **Customize** link in this column to open a dialog box where you can specify logic to highlight cells in the data table. You can highlight cells for the selected series according to either their own values or values from another time series for the same time bucket. (If you want to compare the selected series to another series, set the **Use values from another time series** option to *Yes*, and then specify a series and version.) You can add as many rules as you need. For each rule, specify the logic (for example, find values that are less than 4,000,000) and the style (color and symbol) that are applied to cells that match that rule.
 
-After you've spent time customizing and formatting your time series, you'll probably want to save your settings as a new data view that you can return to later. To save the current settings as a data view, select **Save as new dataview** on the dropdown menu in the upper left of the page. (For more information, see the [Explore time series](#explore) section.) You can save as many data views as you need for each time series.
+After you've spent time customizing and formatting your time series, you'll probably want to save your settings as a new data view that you can return to later. To save the current settings as a data view, select **Save as new dataview** on the dropdown menu in the upper left of the page. (Learn more in the [Explore time series](#explore) section.) You can save as many data views as you need for each time series.
 
 ## Time series versions, version control, and change log
 

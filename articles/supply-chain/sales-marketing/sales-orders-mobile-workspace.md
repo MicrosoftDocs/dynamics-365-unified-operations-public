@@ -6,12 +6,7 @@ ms.author: henrikan
 ms.topic: article
 ms.date: 05/24/2022
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.dyn365.ops.version: Version 1611
 ms.search.form:
-ms.search.validFrom: 2016-11-30
 ms.assetid: 0ce96511-002b-4de7-b31e-4303f94edc84
 ---
 

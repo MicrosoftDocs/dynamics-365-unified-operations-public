@@ -33,15 +33,10 @@ You can submit requests for time off, view your vacation and leave balances, and
 ## Request time off
 
 1. In the **Employee self service** workspace, select **Request time off** in the **Time off balances** tile.
-
 2. Enter information for **Leave type**, **Reason code**, **Start date**, and **End date**.
-
 3. Under **Dates**, select the dates for your leave request.
-
 4. If you need to submit any supporting documentation, select **Upload** under **Attachments**.
-
 5. Enter information in **Comment**, if needed.
-
 6. Select **Submit** when you're ready to submit your request. Otherwise, select **Save draft**.
 
 Employees who submit a new leave request can select different leave types to construct their leave request. However, all leave types that are selected as part of a single leave request should have the same leave unit. Employees can view the leave unit for each leave type on the **Request time off** page.
@@ -53,13 +48,11 @@ When updating an existing time off request, you can add an attachment. You can a
 ## View leave balances
 
 1. In the **Employee self service** workspace, select **More** (...) in the **Time Off Balances** tile.
-
 2. Select **Balances**.
 
 ## View leave request status
 
 1. In the **Employee self service** workspace, select **More** (...) in the **Time Off Balances** tile.
-
 2. To view your approved time off requests, select **Approved time off**. To view your pending time off requests, select **Time off requests**.
 
 ## Cancel time off requests
@@ -69,11 +62,8 @@ When updating an existing time off request, you can add an attachment. You can a
 
 
 1. In the **Employee self service** workspace, select **View time off** in the **Time Off Balances** tile.
-
 2. On the **Time off** page, select one or more time off requests to cancel.
-
 3. Select the **Cancel time off** button.
-
 4. In the **Cancellation details** pane, enter a comment and then select **Submit**.
 
    ![Cancel leave request.](media/hr-leave-and-absence-cancel.png)

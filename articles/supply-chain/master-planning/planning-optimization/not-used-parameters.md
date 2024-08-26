@@ -6,11 +6,7 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 03/08/2023
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2021-06-29
 ms.search.form: ReqParameters, ReqGroup, ReqItemTable, ReqPlanSched, EcoResProductDetailsExtended, InventItemOrderSetup, WorkCalendarTable, PdsDispositionMaster
-ms.dyn365.ops.version: 10.0.20
 ---
 
 # Parameters not used by Planning Optimization

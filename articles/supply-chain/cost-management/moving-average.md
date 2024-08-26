@@ -7,8 +7,6 @@ ms.topic: how-to
 ms.date: 03/01/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: InventModelGroup
 ---
 

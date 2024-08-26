@@ -4,14 +4,15 @@
 title: Product search in the point of sale (POS)
 description: This article provides an overview of improvements that have been made to product search functionality in Microsoft Dynamics 365 Commerce. 
 author: ShalabhjainMSFT
-ms.date: 08/03/2023
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: shajain
+ms.author: asharchw
 ms.search.validFrom: 2017-06-30
-
+ms.custom: 
+  - bap-template
 ---
 
 # Product search in the point of sale (POS)

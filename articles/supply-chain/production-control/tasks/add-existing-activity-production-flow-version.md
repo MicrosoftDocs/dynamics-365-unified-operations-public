@@ -8,11 +8,7 @@ ms.date: 08/29/2018
 ms.custom:
 ms.reviewer: kamaybac   
 audience: Application User 
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-06-30
 ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityAddExisting, PlanActivityAddExistingLookup  
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Add an existing activity to a production flow version

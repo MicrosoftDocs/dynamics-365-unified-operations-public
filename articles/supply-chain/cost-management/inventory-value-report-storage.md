@@ -8,7 +8,6 @@ ms.date: 05/27/2024
 ms.custom:
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: InventValueProcess, InventValueReportSetup, InventValueExecutionHistory, DataManagementWorkspace
 ---
 
@@ -71,7 +70,7 @@ Use the **Inventory value reports** page to set up the content that is included 
 
     - **Date interval** – Select a predefined date interval. You can override this date interval when you run the report.
     - **Range** – Select either *Posting date* or *Transaction Time*, depending on the date and time that should be used when records are retrieved for the report.
-    - **Dimension set** – Select the set of dimensions to run the data for. (The dimensions are defined in the general ledger.) For example, you might run the data for *Main account* or for *Main account + Business unit*. The dimension set that you select must have no more than two dimensions. For more information, see [Financial dimension sets](../../finance/general-ledger/financial-dimension-sets.md).
+    - **Dimension set** – Select the set of dimensions to run the data for. (The dimensions are defined in the general ledger.) For example, you might run the data for *Main account* or for *Main account + Business unit*. The dimension set that you select must have no more than two dimensions. Learn more in [Financial dimension sets](../../finance/general-ledger/financial-dimension-sets.md).
 
 1. On the **Columns** FastTab, set the following fields. These fields control the columns that your report includes and the types of data that those columns contain.
 

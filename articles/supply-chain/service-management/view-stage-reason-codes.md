@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 05/07/2018
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMAServiceOrderTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 
@@ -28,7 +24,7 @@ View and modify the list of stage reasons for a service order. Use stage reasons
 
   - On the **Stage reasons** form, click **New** to create a new stage reason code.
 
-## See also
+## Related information
 
 [Stage reasons (form)](https://technet.microsoft.com/library/aa582897\(v=ax.60\))
 

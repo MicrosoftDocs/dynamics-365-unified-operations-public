@@ -6,11 +6,7 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 03/25/2021
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2021-03-25
 ms.search.form:
-ms.dyn365.ops.version: 10.0.18
 ---
 
 # Engineering change management FAQ

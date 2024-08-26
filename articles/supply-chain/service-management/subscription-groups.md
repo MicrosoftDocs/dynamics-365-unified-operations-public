@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMASubscriptionGroup
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Subscription groups    
@@ -35,7 +31,7 @@ You can also complete the following tasks for all subscriptions that are attache
 
   - Post accrued revenue for subscription transactions.
 
-## See also
+## Related information
 
 [Subscription groups (form)](https://technet.microsoft.com/library/aa553150\(v=ax.60\))
 

@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 09/28/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-09-28
 ms.search.form:  EngChgProductAttributeSearch, EngChgMaintainAttributeInheritance, EngChgAttribute
-ms.dyn365.ops.version: 10.0.15
 ---
 
 # Engineering attributes and engineering attribute search
@@ -96,7 +92,7 @@ For more information about how to work with engineering product categories, incl
 
 ## Set attribute values for engineering attributes
 
-The engineering attributes that are connected to an engineering product category are presented when you create a new engineering product that is based on that category. At that time, you can set values for the attributes. Later, those values can be changed on the **Engineering version** page or as part of engineering change management in an engineering change order. For more information, see [Manage changes to engineering products](engineering-change-management.md).
+The engineering attributes that are connected to an engineering product category are presented when you create a new engineering product that is based on that category. At that time, you can set values for the attributes. Later, those values can be changed on the **Engineering version** page or as part of engineering change management in an engineering change order. Learn more in [Manage changes to engineering products](engineering-change-management.md).
 
 ## Create an engineering product
 

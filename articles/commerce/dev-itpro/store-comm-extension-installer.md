@@ -2,14 +2,15 @@
 title: Create a Store Commerce extension installer package
 description: This article describes how to create a Microsoft Dynamics 365 Commerce Store Commerce extension installer package.
 author: josaw1
-ms.date: 04/21/2022
-ms.topic: article
+ms.date: 08/06/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: anupamar
 ms.search.validFrom: 2022-03-30
-ms.dyn365.ops.version: AX 10.0.25
+ms.custom: 
+  - bap-template
 ---
 
 # Create a Store Commerce extension installer package
@@ -23,14 +24,14 @@ This article describes how to create a Microsoft Dynamics 365 Commerce Store Com
 
 To create the extension installer for Store Commerce extension, follow these steps.
 
-1. In Microsoft Visual Studio 2017, create a new console application (.NET Core) that is named **StoreCommerce.ExtInstaller**.
-1. In the **.proj** file, change the target framework to the .NET Framework version 4.6.1, as shown in the following XML example.
+1. In Microsoft Visual Studio 2022, create a new .NET console application project named "StoreCommerce.ExtInstaller". For **Framework**, select **.NET 7.0 (Standard Term Support)**.
+1. In the **.proj** file, change the target framework to the .NET Framework version 4.7.2, as shown in the following XML example.
 
     ```XML
     <Project Sdk="Microsoft.NET.Sdk">
         <PropertyGroup>
             <OutputType>Exe</OutputType>
-            <TargetFramework>net461</TargetFramework>
+            <TargetFramework>net472</TargetFramework>
         </PropertyGroup>
     </Project>
     ```
@@ -38,21 +39,21 @@ To create the extension installer for Store Commerce extension, follow these ste
 1. Delete the **Program.cs** file that was generated.
 1. Add a reference to the **Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce** NuGet package:
 
-    1. In Solution Explorer, select and hold (or right-click) the project, and then select **Manage NuGet packages**.
+    1. In Solution Explorer, right-click the project, and then select **Manage NuGet packages**.
     1. In the **NuGet Package Manager** window, on the **Browse** tab, search for **Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce**.
     1. Select the package, and then select **Install**.
     1. Select the version that matches your go-live version.
 
 1. Add a reference to the Store Commerce extension .csproj projects, Commerce runtime (CRT), and database script project extensions:
 
-    1. In Solution Explorer, select and hold (or right-click) the project, and then select **Add \> Reference**.
+    1. In Solution Explorer, right-click the project, and then select **Add \> Reference**.
     1. In Reference Manager, on the **Projects** tab on the left, select the extension project that you created earlier.
 
 1. Compile and build the project. The output of this project will contain the Store Commerce extension installer. When you select the **F5** key and build the project, the installer will automatically be deployed.
 1. To manually install the extension, open Windows PowerShell in administrator mode, go to the extension installer folder, and run the following **install** command.
 
     ```PowerShell
-    PS C:\StoreCommerce.ExtInstaller\bin\Debug\net461> .\ StoreCommerce.ExtInstaller.exe install
+    PS C:\StoreCommerce.ExtInstaller\bin\Debug\net472> .\ StoreCommerce.ExtInstaller.exe install
     ```
 
     > [!NOTE]
@@ -61,7 +62,7 @@ To create the extension installer for Store Commerce extension, follow these ste
     To uninstall the extension, run the following **uninstall** command.
 
     ```PowerShell
-    PS C:\StoreCommerce.ExtInstaller\bin\Debug\net461> .\ StoreCommerce.ExtInstaller.exe uninstall
+    PS C:\StoreCommerce.ExtInstaller\bin\Debug\net472> .\ StoreCommerce.ExtInstaller.exe uninstall
     ```
 
 1. After you've finished installing the extension, close Store Commerce if it's running. Then, to load the extension, open Store Commerce by using the Store Commerce shortcut on the desktop.
@@ -73,7 +74,7 @@ To create the extension installer for Store Commerce extension, follow these ste
     <Import Project="..\CustomizationPackage.props " />
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>net461</TargetFramework>
+        <TargetFramework>net472</TargetFramework>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="Microsoft.Dynamics.Commerce.Sdk.Installers.StoreCommerce" Version="$(CommerceSdkPackagesVersion)" />

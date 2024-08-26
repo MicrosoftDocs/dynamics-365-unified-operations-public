@@ -7,11 +7,7 @@ ms.topic: how-to
 ms.date: 11/14/2016
 ms.custom:
 ms.reviewer: kamaybac  
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-06-30
 ms.search.form: PurchTable, PurchTablePart
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Add variant products to purchase orders using variant weights

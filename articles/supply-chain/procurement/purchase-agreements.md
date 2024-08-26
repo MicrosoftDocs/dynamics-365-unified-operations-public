@@ -8,7 +8,6 @@ ms.date: 06/07/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
 ---
 
@@ -95,7 +94,7 @@ If you create an intercompany PO that uses the intercompany purchase agreement i
 
 You can copy financial dimensions to document headers or to individual lines of a purchase agreement. If you change the dimensions in the agreement header or on the agreement line, the change doesn't affect any released orders, but it will be reflected on any new orders.
 
-## Additional resources
+## Related information
 
 - [Create a purchase agreement](tasks/create-purchase-agreement.md)
 - [Apply a purchase agreement when creating a purchase order](tasks/create-purchase-release-order-purchase-agreement.md)

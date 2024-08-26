@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
 audience: Application User 
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: InventCostTrans, ProdCalcVarianceTrans
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 14ac7db4-fb40-43c1-bb0d-1d51fc91d24f
 ---
 

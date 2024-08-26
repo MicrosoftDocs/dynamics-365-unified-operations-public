@@ -7,12 +7,7 @@ ms.topic: article
 ms.date: 01/18/2021
 ms.custom: 
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2021-01-18
 ms.search.form: ReqGroup, ReqItemTable, ReqPlanSched
-ms.dyn365.ops.version: 10.0.17
 ---
 
 # Coverage time fences

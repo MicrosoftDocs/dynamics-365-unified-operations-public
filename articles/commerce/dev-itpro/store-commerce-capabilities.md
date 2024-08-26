@@ -2,14 +2,15 @@
 title: Store Commerce app capabilities
 description: This article describes the functionality that is available in the Store Commerce app for Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/26/2023
-ms.topic: article
+ms.date: 07/25/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: anupamar
+ms.author: asharchw
 ms.search.validFrom: 2022-09-30
-
+ms.custom: 
+  - bap-template
 ---
 
 # Store Commerce app capabilities

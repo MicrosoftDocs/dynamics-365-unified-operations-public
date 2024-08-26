@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMAServiceObjectTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Attach templates to service objects    
@@ -37,7 +33,7 @@ A template bill of materials (BOM) can be attached to a service object relation.
 
 
 
-## See also
+## Related information
 
 [Create service objects](create-service-objects.md)
 

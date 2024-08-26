@@ -4,13 +4,14 @@ description: Access topics that describe the new and changed features in each re
 author: twheeloc
 ms.author: twheeloc
 ms.topic: article
-ms.date: 04/26/2024
+ms.date: 07/29/2024
+ms.custom: 
+  - bap-template
+  - evergreen
 ms.reviewer: twheeloc
 ms.collection: get-started
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-02-29
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.9
 ---
 
@@ -22,6 +23,7 @@ To see what's new or changed in each release of Dynamics 365 Finance, see the fo
 
 | Version | Build number | Auto-update availability | Learn more |
 |---------|--------------|---------------|-------------|
+| 10.0.41 |  10.0.2015.16 | September 2024 |  [What's new and changed in Dynamics 365 Finance version 10.0.41](whats-new-changed-10-0-41.md)
 | 10.0.40 |  10.0.1935.5 | June 2024    |  [What's new and changed in Dynamics 365 Finance version 10.0.40](whats-new-changed-10-0-40.md)
 | 10.0.39 |  10.0.1860.32   | April 2024    |  [What's new and changed in Dynamics 365 Finance version 10.0.39](whats-new-changed-10-0-39.md)
 | 10.0.38 |  10.0.1777   | February 2024  | [What's new and changed in Dynamics 365 Finance version 10.0.38](whats-new-changed-10-0-38.md)  | 

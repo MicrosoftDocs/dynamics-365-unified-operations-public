@@ -1,14 +1,12 @@
 ---
 title: Example scenario – Pack containers with the Warehouse Management mobile app
 description: Learn about a scenario that shows how to pack containers by using the Warehouse Management mobile app, including prerequisites.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 10/14/2022
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields, WHSRFMenuItem, WHSPackProfile, WHSWorker, WHSPack, WHSMobileDeviceContainerPackingPolicy
 ---
 
@@ -44,7 +42,7 @@ Before you can pack containers by using the Warehouse Management mobile app, you
     1. *Warehouse management app data inquiry flow* (For more information about this feature, see [Query data using Warehouse Management mobile app detours](warehouse-app-data-inquiry.md).)
     1. *Pack containers using the Warehouse Management mobile app* (This feature is the one that is described in this article.) As of Supply Chain Management version 10.0.36, this feature is turned on by default.
 
-1. Go to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names**, and then, on the Action Pane, select **Create default setup** to update the field names in the Warehouse Management mobile app. Repeat this step for each legal entity (company) where you use the Warehouse Management mobile app. For more information, see [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
+1. Go to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names**, and then, on the Action Pane, select **Create default setup** to update the field names in the Warehouse Management mobile app. Repeat this step for each legal entity (company) where you use the Warehouse Management mobile app. Learn more in [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device steps**, and then, on the Action Pane, select **Create default setup**. Repeat this step for each legal entity (company) where you use the Warehouse Management mobile app.
 
 ### Use the Warehouse Management mobile app version 2.0.37.0 or later
@@ -78,7 +76,7 @@ For each worker that will use the Warehouse Management mobile app to pack contai
 1. On the Action Pane, select **Save**.
 
 > [!NOTE]
-> You can set up the system to automatically print container labels when a new container record is created. For more information, see [Container label layouts and printing](print-container-labels.md).
+> You can set up the system to automatically print container labels when a new container record is created. Learn more in [Container label layouts and printing](print-container-labels.md).
 
 ## <a name="create-mdmi-packing-inventory-into-containers"></a>Create a mobile device menu item for packing inventory into containers
 
@@ -97,7 +95,7 @@ Follow these steps to create a mobile device menu item that workers can use to p
 1. On the Action Pane, select **Save**.
 
 > [!TIP]
-> You can control several other aspects of the packing process by creating a packing policy and using the **Packing policy ID** field to assign it to your menu device menu item. For more information, see [Mobile device container packing policies](warehouse-app-pack-containers-policies.md).
+> You can control several other aspects of the packing process by creating a packing policy and using the **Packing policy ID** field to assign it to your menu device menu item. Learn more in [Mobile device container packing policies](warehouse-app-pack-containers-policies.md).
 
 ## Create a mobile device menu item for creating containers
 

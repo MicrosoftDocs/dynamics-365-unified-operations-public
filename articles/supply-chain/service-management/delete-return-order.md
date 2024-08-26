@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 05/01/2018
 ms.custom:
 ms.search.form: SalesDeleteOrder
-audience: Application User
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 

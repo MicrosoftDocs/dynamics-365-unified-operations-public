@@ -4,13 +4,13 @@ description: Learn about features that are either new or changed in the Microsof
 author: twheeloc
 ms.author: twheeloc
 ms.topic: faq
-ms.date: 05/23/2023
-ms.custom: evergreen
+ms.custom: 
+  - bap-template
+  - evergreen
+ms.date: 07/22/2024
 ms.reviewer: twheeloc
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2022-09-02
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.35
 ---
 

@@ -7,8 +7,6 @@ ms.topic: how-to
 ms.date: 06/27/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: TradeNonStockedConversion, TradeNonStockedConversionChangeWizard, TradeNonStockedConversionCheckWorksheet, TradeNonStockedConversionWizard, TradeNonStockedRegister
 ---
 
@@ -51,7 +49,7 @@ This procedure shows you how to create a trade agreement where you register a ne
 4. Select **View trade agreements**. Review the details of the price trade agreement you have just created.
 5. Close the page.
 
-## Additional resources
+## Related information
 
 ### Whitepaper
 

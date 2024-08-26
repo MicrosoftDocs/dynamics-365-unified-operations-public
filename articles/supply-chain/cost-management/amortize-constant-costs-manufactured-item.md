@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 04/20/2017
 ms.reviewer: kamaybac
 audience: Application User 
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.dyn365.ops.version: AX 7.0.0
 ms.search.form: BOMCalcDialog, BOMCalcTable, BOMCalcTrans
-ms.search.validFrom: 2016-02-28
 ms.assetid: 535ab25d-a031-4e8c-84ec-478f2987a1ad
 ---
 

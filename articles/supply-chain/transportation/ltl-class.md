@@ -8,7 +8,6 @@ ms.date: 06/07/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: WHSLTLClass
 ---
 
@@ -21,7 +20,7 @@ A less than truckload (LTL) class is a freight shipping class that is used to cl
 This feature lets you use your system to perform the following tasks:
 
 - Define the LTL freight classes that are used at your company.
-- Assign each LTL class to an NMFC code on the **NMFC Codes** page. For more information, see [Work with NMFC codes in Dynamics 365 Supply Chain Management](nmfc-codes.md).
+- Assign each LTL class to an NMFC code on the **NMFC Codes** page. Learn more in [Work with NMFC codes in Dynamics 365 Supply Chain Management](nmfc-codes.md).
 - Assign an NMFC code (and therefore its associated LTL code) to each product on the **Products** page.
 - Accurately assess the LTL class of each product that an NMFC code is assigned to.
 - Determine packing requirements for each LTL class by checking the international LTL standards. In this way, you ensure that your products will be well protected and safely shipped.
@@ -66,7 +65,7 @@ The following example shows how to set up two different LTL classes that you can
 
 1. On the Action Pane, select **Save**.
 
-## Additional resources
+## Related information
 
 - [Work with NMFC codes in Dynamics 365 Supply Chain Management](nmfc-codes.md)
 - [Create a bill of lading](create-bill-of-lading.md)

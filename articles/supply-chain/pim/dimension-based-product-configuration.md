@@ -7,12 +7,7 @@ ms.topic: overview
 ms.date: 07/25/2019
 ms.reviewer: kamaybac
 ms.collection: get-started
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: BOMConfigRule, BOMTable, ConfigChooseFromRoute, ConfigGroup, ConfigHierarchy, EcoResDimensionBasedConfiguration
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 4db9890b-306b-4be7-ba98-3be2094d561f
 ---
 

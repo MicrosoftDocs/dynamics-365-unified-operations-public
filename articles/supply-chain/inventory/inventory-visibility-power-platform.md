@@ -7,8 +7,6 @@ ms.topic: how-to
 ms.date: 12/04/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -235,6 +233,10 @@ Use the **On hand query** page in the **Operational visibility** group to query 
 1. In the **Product** section, enter the **Organization ID**, **Site ID**, and **Location ID** values of the products that you want to find.
 1. In the **Product ID** field, enter one or more product IDs to get an exact match for your query. Alternatively, leave the field blank to include all products at the specified site and location.
 1. Select **Edit Dimensions** to choose which dimensions to include in the query body. Then enter values for the selected dimensions in the **Product** section.
+
+    > [!NOTE]
+    > If you plan to make an ATP query, ensure that every dimension that is included in the ATP index is also listed in the **Product** section. For example, if your ATP index includes `ColorId` and `SizeId`, both those dimensions must be listed in the **Product** section. If any dimensions are missing, select **Edit Dimensions** to add them. In the search form, you can leave some of the dimension values blank. However, the dimensions must be included in the query body if they are included in the ATP index.
+
 1. For each field that you want to include in the query, but without filtering on any specific value, select **Use all values**.
 1. In the **Query Settings** section, set the following options:
 
@@ -258,7 +260,7 @@ Use the **Inventory Adjustment** page in the **Operational visibility** group to
 Use the **Soft reserve** page in the **Operational visibility** group to make soft reservations of inventory.
 
 > [!IMPORTANT]
-> The capability to make soft reservations through the user interface should be used only to test the feature. Every soft reservation request should be associated with a transaction order line change (create, modify, delete, and so on). Therefore, we recommend that you make only soft reservations that are linked to back-end orders. For more information, see [Inventory Visibility soft reservations](inventory-visibility-reservations.md).
+> The capability to make soft reservations through the user interface should be used only to test the feature. Every soft reservation request should be associated with a transaction order line change (create, modify, delete, and so on). Therefore, we recommend that you make only soft reservations that are linked to back-end orders. Learn more in [Inventory Visibility soft reservations](inventory-visibility-reservations.md).
 
 Follow these steps to set up and submit a soft reservation.
 
@@ -271,6 +273,15 @@ Follow these steps to set up and submit a soft reservation.
     - **Reserve on measure** – Select the data source and physical measure to perform the soft reservation on.
     - **Quantity** – Specify the quantity to reserve.
 
+1. Select **Post** on the toolbar to send the request.
+
+### Change a schedule
+
+Use the **Post on hand change schedule** page in the **Operational visibility** group to post inventory changes with dates to the Inventory Visibility service. Follow these steps to set up and submit a schedule change.
+
+1. On the [UI version 2](#ui-version) navigation pane, select **Change schedule**.
+1. In the **Product** section, enter the dimension values of the products that you want to update.
+1. In the **Change schedule measure, quantity and date** section, sect **Add** to specify the date, data source, physical measure, and quantity for the change.
 1. Select **Post** on the toolbar to send the request.
 
 ## Search for products in the Inventory Visibility app

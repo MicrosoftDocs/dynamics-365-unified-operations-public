@@ -1,14 +1,12 @@
 ---
 title: Exchange data between systems
 description: Learn how to exchange data and business events between systems in Warehouse management only mode with an outline on master and reference data.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 04/27/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage, WHSConsigner, WHSConsignerGroup, WHSConsignee, WHSConsignerGroup, WHSSourceSystemItem, EcoResStorageDimensionGroup, InventItemGroup, InventModelGroup, EcoResStorageDimensionGroup, EcoResTrackingDimensionGroup, WHSReservationHierarchy, UnitOfMeasure, WHSUOMSeqGroupTable, WHSSourceSystemProductMessage, WHSSourceSystemProductVariantMessage, WHSSourceSystemProductDocumentAttachmentMessage, WHSSourceSystemProductSpecificUnitOfMeasureConversionMessage, WHSSourceSystemProductBarcodeMessage, WHSSourceSystemProductGlobalTradeItemNumberMessage
 ---
 
@@ -60,7 +58,7 @@ You can import the required master data into Supply Chain Management by using [d
 
 - **Item groups** – Can be used to group business processes, especially when [product filter codes](filters-and-filter-codes.md) are used. No account setup is required when *Non-valuated* inventory model groups are used.
 - **Storage dimension groups** – Enable the use of storage inventory dimensions values such as sites, warehouses, locations, and license plates. Be sure to enable the **Use warehouse management processes** parameter.
-- **Tracking dimension groups** – Enable the use of tracking inventory dimensions such as owner, batch, and serial numbers. Note that the *Owner* dimension value must equal the company that a warehouse is associated with. For more information, see [Unsupported processes](wms-only-mode-overview.md#unsupported-processes).
+- **Tracking dimension groups** – Enable the use of tracking inventory dimensions such as owner, batch, and serial numbers. Note that the *Owner* dimension value must equal the company that a warehouse is associated with. Learn more in [Unsupported processes](wms-only-mode-overview.md#unsupported-processes).
 - **Reservation hierarchy** – Defines which dimensions are reserved during the outbound shipment order reservation process. Dimensions that are put below the *Location* dimension are controlled by the warehouse management processes.
 - **Units** – Each quantity that a warehouse process handles must be associated with a unit. When multiple units (such as each, box, and/or pallet) are used for an item, be sure to define the *inventory unit* as the smallest unit for the item.
 - **Unit sequence groups** – Define the sequence of units that can be used in warehouse operations. For more information about the required setup, see [Unit of measure and stocking policies](unit-measure-stocking-policies.md).
@@ -131,6 +129,8 @@ Several out-of-box business events are supported for warehouse integrations. The
 | `WHSQualityOrderValidatedBusinessEvent` | Quality order validated |
 | `WHSEWInboundShipmentOrderRequestCreatedBusinessEvent` | Inbound shipment order request created (can be used to integrate Supply Chain Management with another WMS) |
 | `WHSEWOutboundShipmentOrderRequestCreatedBusinessEvent` | Outbound shipment order request created (can be used to integrate Supply Chain Management with another WMS) |
+| `WHSEWInboundShipmentOrderUpdateChangedStatusBusinessEvent` | Inbound shipment order update is being processed and has therefore changed status (can be used to integrate Supply Chain Management with another warehouse management system (WMS)) |
+| `WHSEWOutboundShipmentOrderUpdateChangedStatusBusinessEvent` | Outbound shipment order update is being processed and has therefore changed status (can be used to integrate Supply Chain Management with another WMS) |
 
 At a minimum, we recommend that you use the following business events for integration with an external ERP system:
 

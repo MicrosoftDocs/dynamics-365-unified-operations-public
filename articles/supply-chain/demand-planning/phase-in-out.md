@@ -8,7 +8,6 @@ ms.date: 05/29/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form:
 ---
 
@@ -93,9 +92,9 @@ In the **Edit rule** dialog box, set the following fields for each rule:
     - *Phase out* – The rule takes a value from the data column that you identify in the **Copy data from** section, multiplies it by the **Uplift/reduction factor (%)** value, and sets the result as the new value for the same data column that you identify in the **Copy data from** section.
 
 - **Uplift/reduction factor (%)** – Specify a factor (as a percentage) to apply to the input time series values.
-- **Copy data from** – Use this section to specify criteria for selecting input values for the calculation. You can use the **Add condition** button to add as many rows as you need. The data tables that are listed are the data tables that are defined in Demand planning. (For more information, see [View and customize tables for holding imported data](tables.md).) You typically use this section to identify a product from the product table that you want to phase in or out.
+- **Copy data from** – Use this section to specify criteria for selecting input values for the calculation. You can use the **Add condition** button to add as many rows as you need. The data tables that are listed are the data tables that are defined in Demand planning. (Learn more in [View and customize tables for holding imported data](tables.md).) You typically use this section to identify a product from the product table that you want to phase in or out.
 - **Apply data to** – This section applies only to phase in rules. (Phase out rules always apply to the same data columns that are identified in the **Copy data from** section.) Specify criteria for selecting the data column that the phase in rule applies to. You typically use this section to identify a new product that you're phasing in. You can use the **Add condition** button to add as many rows as you need.
 
 ## Assign rule groups to phase in/out tiles
 
-After you finish setting up your rule groups, you can use them by putting *Phase in/out* tiles at the appropriate positions in your calculation models and forecast models. For more information, see [Design calculation models](design-calculation-models.md) and [Design forecast models](design-forecast-models.md).
+After you finish setting up your rule groups, you can use them by putting *Phase in/out* tiles at the appropriate positions in your calculation models and forecast models. Learn more in [Design calculation models](design-calculation-models.md) and [Design forecast models](design-forecast-models.md).

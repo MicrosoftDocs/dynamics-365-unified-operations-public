@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 08/29/2019
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2019-08-31
 ms.search.form: EntAssetWorkOrderProjCostInfoPart 
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Forecasts, work orders, and projects
@@ -33,7 +29,7 @@ Maintenance job type forecasts serve two purposes:
 - You can track costs on maintenance job type forecasts in the **Project management and accounting** module. 
 - Forecasts are automatically transferred to a work order job project when you select a maintenance job type on a work order job.
 
-To track costs on work order jobs, you must first set up work order projects. For more information, see [Work order project setup](../setup-for-work-orders/work-order-project-setup.md).
+To track costs on work order jobs, you must first set up work order projects. Learn more in [Work order project setup](../setup-for-work-orders/work-order-project-setup.md).
 
 ## Work order job projects
 

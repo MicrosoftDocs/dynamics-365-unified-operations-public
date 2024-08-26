@@ -1,17 +1,16 @@
 ---
-
-# required metadata
-
 title: Catalog picker module
 description: This article covers catalog picker modules and describes how to add them to Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce sites.
 author: ashishmsft
-ms.date: 07/11/2022
-ms.topic: article
+ms.date: 07/26/2022
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-04-21
+ms.custom: 
+  - bap-template
 ---
 
 # Catalog picker module

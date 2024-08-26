@@ -1,11 +1,9 @@
 ---
-# required metadata
-
 title: Store Commerce app for mobile platforms
 description: This article describes how to get started using the Microsoft Dynamics 365 Commerce Store Commerce app for Android and iOS.
 author: anush6121
 ms.author: anvenkat
-ms.date: 07/16/2024
+ms.date: 07/24/2024
 ms.topic: how-to
 ms.reviewer: v-chrgriffin
 ms.search.region: global
@@ -69,8 +67,17 @@ You can install Store Commerce mobile apps directly from the Google Play store o
 - [Store Commerce app for Android](https://aka.ms/storecommerceandroid)
 - [Store Commerce app for iOS](https://aka.ms/storecommerceios)
 
-The Android app (.apk) and Apple app (.ipa) packages can also be downloaded from the Shared asset library in Microsoft Dynamics Lifecycle Services. 
+The Android app (.apk) packages can be downloaded from the Shared asset library in Microsoft Dynamics Lifecycle Services. 
 
+### Access preview builds
+
+To access Android Store Commerce preview builds for beta testing, go to [Android app testing](https://aka.ms/StoreCommerceForAndroidPreview) at the Google Play Store. To access iOS Store Commerce preview builds for beta testing, go to [Join the Store Commerce beta - TestFlight](https://aka.ms/StoreCommerceForiOSPreview) on your iOS device.
+
+> [!NOTE]
+> - Whenever a new release reaches GA, it supercedes the previous version. For hot fixes, Microsoft recommends that you use the latest version. Once a current version reaches GA, there aren't any new releases until the next public preview date.
+> - Android and iOS apps are backward and forward compatible. Customers can always update to the latest version regardless of the CSU version.
+> - To test new versions of the apps before they are pushed to production, customers should configure policies through Google Play Store and Apple App Store to manage automatic updates.
+ 
 ## Device and register setup
 
 Before a register can be activated on the Store Commerce mobile apps, you must set up a device and a register in Commerce headquarters. For more information, see [Devices and registers](../implementation-considerations-devices.md). 
@@ -91,7 +98,7 @@ You can create a new register and associate it with the device that you created,
 
 ### Screen layout setup
 
-If you're repurposing a screen layout that is included in the demo data that is provided with your Dynamics 365 Commerce license, the Store Commerce app automatically selects the included compact layout if the screen resolution of your device is less than 480 &times; 853 pixels in the portrait orientation. However, if you're creating a screen layout from scratch, or if your mobile device uses a larger resolution than the compact layout supports, ensure that you create a resolution and associated button grids that are appropriate for the phone or tablet that you plan to deploy to. For more information about screen layout configurations, see [POS user interface visual configurations](../pos-screen-layouts.md). 
+If you're repurposing a screen layout included in the demo data that is provided with your Dynamics 365 Commerce license, the Store Commerce app automatically selects the included compact layout if the screen resolution of your device is less than 480 &times; 853 pixels in the portrait orientation. However, if you're creating a screen layout from scratch, or if your mobile device uses a larger resolution than the compact layout supports, ensure that you create a resolution and associated button grids that are appropriate for the phone or tablet that you plan to deploy to. For more information about screen layout configurations, see [POS user interface visual configurations](../pos-screen-layouts.md). 
 
 After devices and registers are configured, in Commerce headquarters go to **Retail and Commerce \> Retail and Commerce ID \> Distribution Schedules** and run the registers job.
 

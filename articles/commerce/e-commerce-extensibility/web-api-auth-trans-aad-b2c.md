@@ -1,16 +1,16 @@
 ---
-# required metadata
-
 title: Set up web API authentication transfer using Microsoft Entra ID B2C
 description: This article describes how to set up the transfer of web API authentication to a Microsoft Dynamics 365 Commerce e-commerce site by using Microsoft Entra business-to-consumer (B2C).
 author: BrianShook
-ms.date: 05/27/2022
-ms.topic: article
+ms.date: 07/30/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: asharchw
 ms.search.validFrom: 2017-06-20
+ms.custom: 
+  - bap-template
 ---
 
 # Set up web API authentication transfer using Microsoft Entra ID B2C

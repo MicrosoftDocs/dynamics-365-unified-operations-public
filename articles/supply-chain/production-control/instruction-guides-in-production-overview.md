@@ -7,7 +7,6 @@ ms.reviewer: kamaybac
 ms.search.form: WorkGuidesManufacturing
 ms.topic: how-to
 ms.date: 11/13/2020
-audience: Application User
 ms.custom: 
   - bap-template
 ---

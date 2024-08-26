@@ -9,7 +9,6 @@ ms.custom:
   - bap-template
   - evergreen
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form:
 ---
 
@@ -37,9 +36,9 @@ The following table lists the feature enhancements that are included in this rel
 
 | Module | Feature name in feature management | More information |
 |---|---|---|
-| Distributed hybrid topology | *(No feature management is required.)* | <p>This release expands the outbound load planning capabilities of the warehouse management workload for cloud and edge scale units.</p><p>For more information, see [Warehouse management workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-warehousing.md).</p> |
-| Engineering change management | Variant generation for engineering products | <p>This feature lets you generate several variants for an engineering product, based on its color, size, style, or configuration dimensions.</p><p>For more information, see [Generate variants for engineering products](../engineering-change-management/engineering-variants.md).</p> |
-| Inventory and warehouse management | Inventory Visibility integration with reservation offset | <p>This feature can be enabled only after the *Inventory Visibility Integration* feature is enabled. It provides functionality to offset reservations that are made on Inventory Visibility.</p><p>For more information, see [Inventory Visibility reservations](../inventory/inventory-visibility-reservations.md).</p> |
+| Distributed hybrid topology | *(No feature management is required.)* | <p>This release expands the outbound load planning capabilities of the warehouse management workload for cloud and edge scale units.</p><p>Learn more in [Warehouse management workloads for cloud and edge scale units](../cloud-edge/cloud-edge-workload-warehousing.md).</p> |
+| Engineering change management | Variant generation for engineering products | <p>This feature lets you generate several variants for an engineering product, based on its color, size, style, or configuration dimensions.</p><p>Learn more in [Generate variants for engineering products](../engineering-change-management/engineering-variants.md).</p> |
+| Inventory and warehouse management | Inventory Visibility integration with reservation offset | <p>This feature can be enabled only after the *Inventory Visibility Integration* feature is enabled. It provides functionality to offset reservations that are made on Inventory Visibility.</p><p>Learn more in [Inventory Visibility reservations](../inventory/inventory-visibility-reservations.md).</p> |
 
 ## New and updated documentation resources
 
@@ -52,11 +51,11 @@ We have recently added or significantly updated the following help articles. The
 | Master planning | [Net requirements and pegging information](../master-planning/planning-optimization/net-requirements.md) |
 | Warehouse management | [Release to warehouse](../warehousing/release-to-warehouse-process.md) provides a detailed overview of the full release to warehouse process |
 
-## Additional resources
+## Related information
 
 ### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.22 includes platform updates. To learn more, see [Platform updates for version 10.0.22 of finance and operations apps (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.22 includes platform updates. Learn more in [Platform updates for version 10.0.22 of finance and operations apps (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md).
 
 ### Bug fixes
 

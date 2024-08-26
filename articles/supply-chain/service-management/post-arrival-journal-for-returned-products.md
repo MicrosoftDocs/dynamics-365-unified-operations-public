@@ -7,11 +7,8 @@ ms.topic: article
 ms.date: 05/01/2018
 ms.custom: 
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.region: Global 
-ms.search.validFrom: 2016-02-28
 ms.search.form: WMSArrivalOverview
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 
@@ -38,7 +35,7 @@ To process a return, first validate the return quantity, update the quantity fie
 
 After the journal is posted, the returned items are registered in inventory, and the **Return orders** form indicates that the items have arrived at the warehouse.
 
-## See also
+## Related information
 
 - [Location journal (form)](https://technet.microsoft.com/library/aa584822\(v=ax.60\))
 

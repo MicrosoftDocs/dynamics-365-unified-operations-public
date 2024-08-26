@@ -6,11 +6,7 @@ ms.author: henrikan
 ms.topic: article
 ms.date: 11/02/2017
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: PurchTable, PurchTablePart, PurchVendorPortalRequests, CatExternalCatalogConfiguration, CatCXMLCartLogList
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ---
 
@@ -35,7 +31,7 @@ When setting up the external catalog, you need to make sure that the purpose of 
 
 ### To set up an external vendor catalog, complete the following tasks:
 
-1. Set up a procurement category hierarchy. For more information, see [Set up policies for procurement category hierarchies](tasks/set-up-policies-procurement-category-hierarchies.md).
+1. Set up a procurement category hierarchy. Learn more in [Set up policies for procurement category hierarchies](tasks/set-up-policies-procurement-category-hierarchies.md).
 2. Register the vendor in Supply Chain Management. Before you can set up configurations to access an external vendor's catalog, you must set up the vendor and the vendor contact in Microsoft Dynamics 365. The external catalog's vendor must also be added to the selected procurement category. For more information about registering vendors, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md). 
 For information about how to assign vendors to a procurement category, see [Approve vendors for specific procurement categories](tasks/approve-vendors-specific-procurement-categories.md).
 3. Make sure that the units of measure and the currency that the vendor uses are set up. For information about how to create a unit of measure, see [Manage units of measure](../pim/tasks/manage-unit-measure.md).
@@ -105,7 +101,7 @@ Delete an external catalog with the Delete action on the page.
 
 If a product from the external vendor catalog has been requested, the external vendor catalog cannot be deleted. Instead, the status of the external vendor catalog is set to inactive. If you want to remove access to the external vendor's catalog site, but not delete it, change the external catalog status to Inactive.
 
-## Additional resources
+## Related information
 
 - [Purchasing cXML enhancements](purchasing-cxml-enhancements.md)
 - [Use external catalogs for PunchOut e-procurement](use-external-catalogs-for-punchout.md)

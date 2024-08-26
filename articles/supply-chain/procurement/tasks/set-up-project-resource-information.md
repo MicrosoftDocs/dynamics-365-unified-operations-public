@@ -8,11 +8,7 @@ ms.date: 08/29/2018
 ms.custom:
 ms.reviewer: kamaybac   
 audience: Application User 
-ms.search.region: Global
-ms.search.industry: Service industries
-ms.search.validFrom: 2016-06-30
 ms.search.form: ResResourcesListPage, ResAddResourceForm, ProjCostPriceHour, ProjSalesPriceHour
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Set up project resource information

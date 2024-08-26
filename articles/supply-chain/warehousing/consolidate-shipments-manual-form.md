@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 05/12/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-05-01
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
-ms.dyn365.ops.version: 10.0.3
 ---
 
 # Consolidate shipments manually by using the Consolidate shipments page
@@ -85,7 +81,7 @@ Follow these steps to release each sales order that you created for this scenari
 1. In the **Filters** pane, remove the **Order number** filter, and then select **Apply**.
 1. Verify the shipments that are suggested for consolidation. Only one shipment that has the same policy should be suggested for consolidation.
 
-## Additional resources
+## Related information
 
 - [Shipment consolidation policies overview](about-shipment-consolidation-policies.md)
 - [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md)

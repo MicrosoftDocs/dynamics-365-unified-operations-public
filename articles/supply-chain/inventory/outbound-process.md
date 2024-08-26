@@ -8,12 +8,7 @@ ms.date: 07/25/2019
 ms.custom:
 ms.reviewer: kamaybac
 ms.collection: get-started
-audience: Application User
-ms.search.region: global
-ms.search.industry: Distribution
-ms.dyn365.ops.version: AX 7.0.0
 ms.search.form: WMSOrder, WMSShipment, MCRPickingWorkbench, WMSPickingRegistration, CustomFilterGroup
-ms.search.validFrom: 2016-02-28
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ---
 

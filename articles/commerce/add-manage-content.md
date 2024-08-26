@@ -3,15 +3,15 @@
 title: Ways to add content
 description: This article provides an overview and select links for where and how to begin managing content using the Microsoft Dynamics 365 Commerce site builder web authoring tool set.
 author: phinneyridge
-ms.date: 08/01/2023
-ms.topic: article 
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: niholman
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+  - bap-template
 ---
 
 # Ways to add content

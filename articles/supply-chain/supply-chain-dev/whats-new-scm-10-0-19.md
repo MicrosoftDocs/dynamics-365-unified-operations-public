@@ -9,7 +9,6 @@ ms.custom:
   - bap-template
   - evergreen
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form:
 ---
 
@@ -46,7 +45,7 @@ The following table lists the feature enhancements included in this release. Eac
 
 | Module | Feature&nbsp;name&nbsp;in feature&nbsp;management | More information |
 |---|---|---|
-| Sales and marketing | Sales history cleanup performance improvements | Sales history cleanup can take a long time if run infrequently on environments with a high volume of sales updates. To reduce duration and improve reliability, this feature splits clean-up into batches that run for a limited duration. Where possible, database capabilities will be leveraged to minimize locking and avoid joining transactional tables during cleanup. For more information, see [Schedule sales history data cleanup](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
+| Sales and marketing | Sales history cleanup performance improvements | Sales history cleanup can take a long time if run infrequently on environments with a high volume of sales updates. To reduce duration and improve reliability, this feature splits clean-up into batches that run for a limited duration. Where possible, database capabilities will be leveraged to minimize locking and avoid joining transactional tables during cleanup. Learn more in [Schedule sales history data cleanup](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Sales and marketing | Update Requested receipt date with Confirmed date for intercompany orders | This feature lets you control what will happen to sales and purchase date field values when using intercompany direct delivery. You can choose whether the system will update requested dates or skip updating them. If you skip the update, the requested dates will represent what the customer has requested. If you enable updating, the requested dates (when using delivery date control) only initially represent what the customer requested. Delivery date control, when different from *None*, will overrule what has initially been requested. You can set this option using the new **Update Requested receipt date with Confirmed date** setting on the intercompany vendor or customer settings.<br><br>If the feature is disabled, the system will overwrite the requested receipt date on original sales orders based on the delivery date control rule, but the requested shipping date will remain as is. |
 | Warehouse management | Round quantities down to nearest sales unit on release to warehouse | This feature adds an option that can restrict order quantities on release to warehouse. When enabled, order quantities will be rounded down to the nearest whole sales unit, and orders that include quantities for less than one sales unit will be rejected for release. |
 | Warehouse management | Organization-wide "Schedule work creation" wave method | On enabling this feature, the *Schedule work creation* wave method will be configured to run in parallel across all legal entities. Several additional settings will also be affected. For complete details, see [Schedule work creation during wave](../warehousing/configure-wave-schedule-work-creation.md). |
@@ -64,11 +63,11 @@ We have recently added or significantly updated the following help articles. The
 | Transportation management | [LTL classes](../transportation/ltl-class.md)<br><br>[Work with NMFC codes in Dynamics 365 Supply Chain Management](../transportation/nmfc-codes.md) |
 | Warehouse management, wave creation and processing | [Wave creation and processing](../warehousing/wave-processing.md)<br><br>[Warehouse parameters for wave processing](../warehousing/wave-warehouse-parameters.md)<br><br>[Wave templates](../warehousing/wave-templates.md)<br><br>[Wave allocation](../warehousing/wave-allocation-method.md)<br><br>[Schedule work creation during wave](../warehousing/configure-wave-schedule-work-creation.md)<br><br>[Containerization](../warehousing/wave-containerization.md)<br><br>[Wave execution notifications](../warehousing/wave-execution-notifications.md) |
 
-## Additional resources
+## Related information
 
 ### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.19 includes platform updates. To learn more, see [Platform updates for version 10.0.19 of finance and operations apps (June 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.19 includes platform updates. Learn more in [Platform updates for version 10.0.19 of finance and operations apps (June 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19.md).
 
 ### Bug fixes
 

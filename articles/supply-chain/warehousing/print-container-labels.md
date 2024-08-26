@@ -1,14 +1,12 @@
 ---
 title: Container label layouts and printing
 description: Learn how to set up and print container labels, including an outline on toggling the container label printing functionality.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
-ms.date: 07/31/2023
+ms.date: 07/23/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: WHSContainerLabelRouting, WHSLabelLayout, WHSLabelLayoutDataSource, SysCorpNetPrinterList, WHSDocumentRouting, WHSPackProfile, WHSContainerTable, WHSRFMenuItem
 ---
 
@@ -24,7 +22,7 @@ As for [license plate labels](document-routing-layout-for-license-plates.md), th
 
 To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.36, it's turned on by default. Admins can turn this functionality on or off by searching for the *Pack containers using the Warehouse Management mobile app* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
-For more information, see also [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md).
+Learn more in [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md).
 
 ## Example scenario: Print container labels when containers are created by using the Warehouse Management mobile app
 
@@ -56,8 +54,8 @@ Follow these steps to create a container label layout.
     - **Definition type** – Select the method that's used to define the label layout:
 
         - *ZPL* – Define the label layout by using ZPL.
-        - *Variables* – Define a label layout that can be used with an external service. (For more information, see [Print labels using an external service](../supply-chain-dev/label-printing-using-external-label-service.md).) If you select this option, the **Printer text layout** FastTab provides grids where you define system variables and data variables. Under **System variables**, set the **LabelFile** field to the path of the label design in the external system, and set the **Quantity** field to the number of labels to print. Under **Data variables**, define the values that are sent from Supply Chain Management by mapping them to the corresponding placeholders in the label design from the external system.
-        - *Variables (script)* – Use the script format to define a label layout that can be used with an external service. (For more information, see [Print labels using an external service](../supply-chain-dev/label-printing-using-external-label-service.md).) On the **Printer text layout** FastTab, define the label file, the quantity, and the values to send. Here's an example.
+        - *Variables* – Define a label layout that can be used with an external service. (Learn more in [Print labels using an external service](../supply-chain-dev/label-printing-using-external-label-service.md).) If you select this option, the **Printer text layout** FastTab provides grids where you define system variables and data variables. Under **System variables**, set the **LabelFile** field to the path of the label design in the external system, and set the **Quantity** field to the number of labels to print. Under **Data variables**, define the values that are sent from Supply Chain Management by mapping them to the corresponding placeholders in the label design from the external system.
+        - *Variables (script)* – Use the script format to define a label layout that can be used with an external service. (Learn more in [Print labels using an external service](../supply-chain-dev/label-printing-using-external-label-service.md).) On the **Printer text layout** FastTab, define the label file, the quantity, and the values to send. Here's an example.
 
             ```plaintext
             "filePath": "/Instant Print/GS1-128.nlbl", 
@@ -245,6 +243,7 @@ To specify the container label layouts that are used and where they're printed, 
     - **Worker** – Specify the worker that the routing should be used for. To use the routing for any worker, leave this blank.
     - **Mobile device user ID** – Specify the user ID that the routing should be used for. To use the routing for any worker, leave this blank.
     - **Container type** – Specify the container type that the routing should be used for.
+    - **Container status** - Specify the container status (*Open* or *Closed*) that the routing should be used for.
     - **Account number** – Specify the customer account that the routing should be used for. To use the routing for any customer, leave this blank.
     - **Carrier** – Specify the shipping carrier that the routing should be used for. To use the routing for any carrier, leave this blank.
     - **Run query** – To add custom selection criteria to a routing record, set this option to *Yes*, and then select **Edit query** on the Action Pane. A standard query editor dialog box appears, where you can add more selection criteria.
@@ -252,10 +251,17 @@ To specify the container label layouts that are used and where they're printed, 
     > [!NOTE]
     > When you print a container label from the Warehouse Management mobile app, the current user's warehouse, location, worker ID, and user ID are passed as possible filter values for selecting the printer and layout. Other values will be found based on the selected shipment.
 
+    > [!NOTE]
+    > When a worker prints a container label from the **Close container** dialog, their worker ID, packing station warehouse, and location are passed as possible filter values for selecting the printer and layout. Other values are found based on the selected shipment.
+
 1. On the **Container label routing printer** FastTab, assign the printer and label layout that should be used when the criteria for the routing record are met. Select **New** on the toolbar to add a line to the grid. Then set the following fields for the new line:
 
-    - **Name** – Select an appropriate ZPL printer. For more information, see [Install the Document Routing Agent to enable network printing](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md). Leave this field blank if you want to use [dynamic printer selection](dynamic-printing-selection.md).
+    - **Name** – Select an appropriate ZPL printer. Learn more in [Install the Document Routing Agent to enable network printing](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md). Leave this field blank if you want to use [dynamic printer selection](dynamic-printing-selection.md), or select *As fallback printer* in the **Use specified printer** field.
+    - **Use specified printer** – If you want to use dynamic printer selection and use the configured printer as a fallback when dynamic printer selection doesn't find a more specific printer, set this field to *As fallback printer*. If this field is set to *Always* and a printer is configured, then dynamic printer selection is disabled.
     - **Label layout ID** – Select the label layout to use. The example label layout ID value that was suggested earlier in this scenario was *Container*.
+
+    > [!NOTE]
+    > To reduce the number of label routings, consider using dynamic printer selection with printers associated with packing station locations, mobile device users, or mobile devices. In those cases, label routings only specify the label layouts to be printed based on the properties of the container and you don't need to duplicate the setup when new packing stations and printers are added.
 
 ### Set container labels to be printed automatically when new containers are created
 
@@ -269,6 +275,16 @@ If you want a container label to be printed automatically each time that a new c
 
 > [!NOTE]
 > The **Container ID mode** field for packing profile *WH62* is set to *Auto*. Therefore, the [number sequence](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md) that is defined for the *Container ID* reference will be used as part of the container creation process.
+
+### Set container labels to be printed automatically when containers are closed
+
+If you want a container label to be printed automatically each time a container is closed, configure the container packing policy as described in the following procedure.
+
+1. Go to **Warehouse management \> Setup \> Containers \> Container packing policies**.
+1. On the Action Pane, select **Edit**.
+1. Select the policy that container labels should automatically be printed for. If you're working with sample data, select the row where the **Packing profile ID** field is set to *WHS62Close*.
+1. Set **Print container labels on container close** to *Always*.
+1. Close the page.
 
 ### Create a new mobile device menu item for printing container labels
 
@@ -311,7 +327,7 @@ Here are a few suggestions for ways that you can customize and fine-tune this sc
 - When a worker selects the **Print container label** mobile device menu item on the **Outbound** menu, the app automatically submits the current **User ID** and **Warehouse** values. If workers want to specify a **Location** value, they can do so in the app.
 - If you want the **Location** value to be assigned automatically when a worker selects **Print container label** from the **Pack inventory into containers** menu item, set up a [detour]( warehouse-app-detours.md).
 
-## Additional resources
+## Related information
 
 - [Pack containers for shipment](packing-containers.md)
 - [Document routing label layouts](document-routing-layout-for-license-plates.md)
