@@ -1675,7 +1675,11 @@
                         - name: Australia and New Zealand
                           href: localizations/apac/gs-apac-aus-nzl-electronic-invoices.md?context=/dynamics365/context/finance
                         - name: Chile
-                          href: localizations//iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/finance                          
+                          items:
+                            - name: Get started with Electronic invoicing for Chile
+                              href: localizations//iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/finance
+                            - name: Vendor electronic invoice import in Chile
+                              href: localizations//iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/finance
                         - name: Indonesia
                           href: localizations/indonesia/gs-e-invoicing-id-get-started.md?context=/dynamics365/context/finance
                         - name: Malaysia
@@ -1683,9 +1687,11 @@
                         - name: Poland (preview)
                           href: localizations/poland/gs-e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
                         - name: Saudi Arabia
-                          href: localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
-                        - name: Saudi Arabia - onboarding
-                          href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
+                          items:
+                            - name: Electronic invoicing in Saudi Arabia
+                              href: localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
+                            - name: Onboarding for electronic invoicing in Saudi Arabia
+                              href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
                     - name: Electronic Invoicing FAQ
                       href: localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/finance
                 - name: Electronic Invoicing (RCS)
@@ -2328,6 +2334,8 @@
                       href: localizations/iberoamerica/ltm-chile-elec-invo-conncection.md
                     - name: Configure electronic invoice parameters for Chile
                       href: localizations/iberoamerica/ltm-chile-conf-electronic-invoice.md
+                    - name: Vendor electronic invoice import in Chile
+                      href: localizations/iberoamerica/ltm-chl-vend-e-invoice.md                      
                     - name: Generate and print the Fees certificate report
                       href: localizations/iberoamerica/ltm-chile-fees-certificate-resume.md
                     - name: Generate and print the Withholding tax book report for Chile
