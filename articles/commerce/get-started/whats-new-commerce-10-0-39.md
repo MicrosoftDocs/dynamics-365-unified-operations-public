@@ -33,6 +33,16 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Point of sale (POS) | Exclude orders from aggregation - Poland | Poland fiscal regulations mandate that customers must be provided with a printed invoice upon request for up to four weeks following a transaction under certain conditions. However, order aggregation prevents those orders from being retrieved in Commerce headquarters. This feature excludes qualifying orders from being aggregated so that they're available to be opened individually in headquarters. | IT administrators |
+| Point of sale (POS)| Customer insights by Copilot^ | Enhance customer interactions and create personalized shopping experiences with Copilot, empowering store associates through data-driven insights. [Learn more](https://learn.microsoft.com/en-us/dynamics365/commerce/copilot-pos-customer-insights)| IT administrators |
+| Point of sale (POS) | Report insights by Copilot^| Enhance efficiency, accuracy, and real-time sales analysis with Copilot’s narrative summaries for store reports in the Store Commerce app. [Learn more](https://learn.microsoft.com/en-us/dynamics365/commerce/copilot-pos-report-insights)| IT administrators |
+| Point of sale (POS) | Product insights by Copilot^| Copilot empowers store associates to efficiently share product details and promotions, enhancing cross-selling and customer experience. | IT administrators |
+| Backoffice (HQ) | Statement insights by Copilot*| Copilot’s statement posting summary and insights feature provides actionable insights on failed transactions, helping you prioritize and resolve issues efficiently, saving time and effort for your operations team. [Learn more](https://learn.microsoft.com/en-us/dynamics365/commerce/copilot-statement-summaries) | IT administrators (Enabled by default) |
+| Backoffice (HQ) | Merchandising insights by Copilot* | Copilot streamlines your retail merchandising by proactively summarizing insights and resolving configuration issues effortlessly. [Learn more](https://learn.microsoft.com/en-us/dynamics365/commerce/copilot-based-merch-insights)| IT administrators |
+
+^ 10.0.39, PQU-4 onwards (CSU : 9.49.24184.3, Store Comm. App 9.49.24193.1)
+
+\* 10.0.39 with PQU-3 onwards
+
 
 ## Additional resources
 
