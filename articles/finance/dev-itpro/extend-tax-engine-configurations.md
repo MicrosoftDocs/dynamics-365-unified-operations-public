@@ -21,6 +21,7 @@ The [Tax engine](../general-ledger/tax-engine.md) (also referred to as GTE) lets
 
 -   Extend the Tax engine configuration for Union Territory Goods and Services Tax (UTGST).
 -   Use a reference model to apply a tax rate of Basic Customs Duty (BCD) for import order of goods from different countries/regions.
+-   Extend the Tax engine configuration for slab price.
 
 > [!NOTE]
 > The Tax engine functionality is only available for legal entities with a primary address in India.
@@ -517,5 +518,9 @@ After the status is updated to **Complete**, the configuration is ready for depl
 5. After you resolve the conflict, the **Resolved** check box is marked.
 
 	[![rebase step 4.](../general-ledger/media/extend-tax-engine-configurations-rebase4.png)]
+
+## Scenario 3: Extend the Tax engine configuration for Slab Price
+
+To add slab price function in India, we need to extend the tax engine configuration. For details, please refer to [Extend tax engine configuration for slab price](extend-tax-engine-configuration-for-slab-price.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
