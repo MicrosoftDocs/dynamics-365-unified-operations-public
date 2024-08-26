@@ -6,7 +6,6 @@ ms.author: benebotg
 ms.date: 06/20/2017
 ms.topic: article
 ms.reviewer: kamaybac
-audience: Application User 
 ms.search.form: ReqTransExplosion
 ms.assetid: 9bc9bfbe-a7a9-437b-a947-826229b0585a
 ---

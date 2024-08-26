@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 03/17/2021
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User  
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSParameters, ProdParameters, whswavetablecreatenew, WHSWaveTable, WHSWaveAttributes, WHSKanbanWaveTable, WHSWaveTableListPage, WHSKanbanWaveTableListPage
 ---
 

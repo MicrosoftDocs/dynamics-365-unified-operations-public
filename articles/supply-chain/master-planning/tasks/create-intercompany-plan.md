@@ -5,7 +5,6 @@ author: t-benebo
 ms.date: 08/13/2019
 ms.topic: how-to 
 ms.search.form: ReqIntercompanyPlanningGroupSetup,  ReqCreatePlanWorkspace   
-audience: Application User 
 ms.reviewer: kamaybac
 ms.author: benebotg
 ---

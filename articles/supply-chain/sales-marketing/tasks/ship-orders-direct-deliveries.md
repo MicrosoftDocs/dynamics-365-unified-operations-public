@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 07/11/2019  
 ms.custom:
 ms.reviewer: kamaybac   
-audience: Application User  
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchTablePart, PurchEditLines, PurchTable, PurchTableReferences, MCRDropShipWorkbench, SalesShippingLine
 ---
 

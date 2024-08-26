@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 08/29/2018
 ms.custom:
 ms.reviewer: kamaybac 
-audience: Application User  
 ms.search.form: DefaultDashboard, CostAdminWorkspace, CostLastInventoryCloseCard, CostLastBackflushCostingCard, CostStatementCacheCard, CostReleasedProductsMissingCostingDataFormPart, CostCalculationPeriodTopVariancesChartFormPart, EcoResProductDetailsExtended, InventCostOnhandItem, InventValueTrans  
 ---
 

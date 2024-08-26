@@ -85,7 +85,6 @@ You can create a service order from the **Sales orders** form by using the **Cre
 
 [Create service orders automatically](create-service-orders-automatically.md)
 
-[Create service orders (class form)](https://technet.microsoft.com/library/aa553901\(v=ax.60\)) 
 
 
 

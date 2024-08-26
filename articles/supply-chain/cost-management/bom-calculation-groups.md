@@ -6,7 +6,6 @@ ms.author: yanansong
 ms.date: 06/20/2017
 ms.topic: article
 ms.reviewer: kamaybac
-audience: Application User 
 ms.search.form: BOMCalcGroup, BOMCalcTable, BOMCalcTrans, InventItemPrice
 ms.assetid: 63e1b7dc-c2c5-41b0-81ed-e3e02d1b39e0
 ---

@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 07/09/2019
 ms.custom:
 ms.reviewer: kamaybac   
-audience: Application User   
 ms.search.form: InventJournalCount, InventJournalCreate, HcmWorkerLookUp, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans
 ---
 

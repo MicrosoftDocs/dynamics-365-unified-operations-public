@@ -6,7 +6,6 @@ ms.author: yanansong
 ms.topic: article
 ms.date: 04/20/2017
 ms.reviewer: kamaybac
-audience: Application User 
 ms.search.form: BOMCalcDialog, BOMCalcTable, BOMCalcTrans
 ms.assetid: 535ab25d-a031-4e8c-84ec-478f2987a1ad
 ---
