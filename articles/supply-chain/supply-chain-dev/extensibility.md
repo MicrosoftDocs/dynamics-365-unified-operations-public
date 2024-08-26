@@ -7,7 +7,6 @@ ms.topic: article
 ms.date: 08/05/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Developer, IT Pro
 ms.search.form: ReqCreatePlanWorkspace
 ---
 
