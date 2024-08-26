@@ -482,13 +482,15 @@ To activate batch submission of invoices, enable the **Electronic document batch
 
 ### Configure electronic document parameters
 
+import **Consolidated Invoice Model Mapping (MY)**
+
 To configure electronic document parameters for batch submissions, follow these steps.
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 1. On the **Electronic document** tab, add a new record for the **Customer Invoice journal** table name.
 1. Turn on the option in the **Batch submission** column.
 1. In the **Document context** field, select the **Batch submission** mapping name from the **Customer invoice context model** configuration.
-1. In the **Electronic document model mapping** field, select the **YYY** mapping name from the **ZZZ** configuration.
+1. In the **Electronic document model mapping** field, select the **YYY** mapping name from the **Consolidated Invoice Model Mapping (MY)** configuration.
 
 ...responses...
 
