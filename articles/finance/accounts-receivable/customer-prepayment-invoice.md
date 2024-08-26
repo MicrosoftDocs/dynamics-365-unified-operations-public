@@ -28,7 +28,7 @@ Sellers can request a deposit or advance payment to secure a commitment from the
 
 ### Prepayment as a billing invoice
 
-The buyer makes an initial partial payment, or a deposit, to secure the goods, services, or a contract. This deposit is a percentage of the total purchase price or a fixed amount which needs to be paid before the seller delivers the goods or services. The prepayment invoice functions similarly to a billing document. The final invoice is issued later, reflecting the remaining amount of the order. 
+The buyer makes an initial partial payment, or a deposit, to secure the goods, services, or a contract. This deposit is a percentage of the total purchase price or a fixed amount that needs to be paid before the seller delivers the goods or services. The prepayment invoice functions similarly to a billing document. The final invoice is issued later, reflecting the remaining amount of the order. 
 
 ### Prepayment invoice as a tax invoice 
 
