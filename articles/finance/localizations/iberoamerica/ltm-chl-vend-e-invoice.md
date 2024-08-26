@@ -77,7 +77,9 @@ Out of the box, variables are provided with the specific feature setup to suppor
 1. Go to the **Electronic reporting** workspace, and open **Reporting configurations**.
 1. Derive a configuration from **Customer Invoice Context Model**.
 1. In the new configuration, go to **Designer** \> **Map model to datasource** \> **Data channel** \> **Designer**.
-1. Update the data channel context with your channel name, and then save your change.
+1. Point to the Data model source type under the **Mapping** tab on the left.
+1. To set up the data channel context, expand the **$Context_Channel** container and update the **Value** calculated field with your channel name.
+1. Save your change.
 
     The following illustration shows an example of the change.
 
