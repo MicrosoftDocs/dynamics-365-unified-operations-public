@@ -126,15 +126,36 @@ configuration.
     ![image](https://github.com/user-attachments/assets/9e898523-680f-4c14-8f17-91a8b4dca877)
 
 ## Modify the data provider in Microsoft Dynamics AX
-### Check the system name of the Net Price
-1. Add a tax engine model field for Net Price.
-   - In the AOT, open Classes > TaxableDocRowDataProviderExtensionLine. In classDeclaration, add a new macro for Net Price. `#define.NetPrice('Net Price')`
-
 ### Implement logic to determine Net Price
-1. Add a new method for the TaxableDocRowDataProviderExtensionLine class, and implement the determination logic in the method.
+1. In the AOT, open Classes > TaxEngineModelFields. Add a new const variable for Net Price.
+
+   ![image](https://github.com/user-attachments/assets/9eb7a4fc-b10a-42ed-bdf8-4ade18f1cb0d)
+
+2. Add a new method for the **TaxModelDocLineBaseImpl_IN** class, and implement the determination logic in the method.
+   
+   ```
+    public Amount getNetPrice()
+    {
+        if (this.getQuantity())
+        {
+            return this.getLineAmount() / this.getQuantity();
+        }
+        else
+        {
+            return this.getLineAmount();
+        }
+
+    }
+   ```
 
 ### Pass the Net Price to GTE
-1. Pass the Net Price to GTE in `TaxableDocRowDataProviderExtensionLine.fillInExtensionFields()`.
+1. Pass the Net Price to GTE in `TaxableDocumentRowDataProviderLine_IN_Extension.fillInFields()`.
+
+   ![image](https://github.com/user-attachments/assets/837e1066-8e7b-4c07-9be6-27983bfb09dc)
+
+2. Add the Net Price to the method `TaxableDocumentRowDataProviderLine_IN_Extension.initValidFields()`.
+
+   ![image](https://github.com/user-attachments/assets/0c3e03b2-ab33-4bf7-9304-64383dc5a4b9)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
