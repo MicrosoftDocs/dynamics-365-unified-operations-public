@@ -22,41 +22,41 @@ This article explains how to configure and process Customer prepayment invoices.
 
 ## Customer prepayment invoices
 
-Sellers often request a deposit (advance payment) to secure financial commitment before delivering goods or services. The customer prepayment invoice feature provides sellers with upfront funds to cover initial costs, reduce financial risk, and ensure that the buyer is committed to the transaction. 
+Sellers can request a deposit or advance payment to secure a commitment from the customer before delivering goods or services. The customer prepayment invoice feature provides upfront funds to cover initial costs, reduce financial risk, and ensure that the buyer is committed to the transaction. 
 
 ### Types of prepayment processes 
 
 ### Prepayment as a billing invoice
 
-In this process, the buyer makes an initial partial payment, commonly referred to as a deposit, to secure goods, services, or a contract. This deposit is a percentage of the total purchase price or a fixed amount which needs to be paid before the seller deliveries the goods or services. The prepayment invoice functions similarly to a billing document. The final invoice will be issued later, reflecting the complete amount of the order. 
+The buyer makes an initial partial payment, or a deposit, to secure the goods, services, or a contract. This deposit is a percentage of the total purchase price or a fixed amount which needs to be paid before the seller delivers the goods or services. The prepayment invoice functions similarly to a billing document. The final invoice is issued later, reflecting the remaining amount of the order. 
 
 ### Prepayment invoice as a tax invoice 
 
-In this type, the seller issues a real prepayment invoice (with sales tax) to the buyer before delivering goods or services. The buyer pays the invoice amount upfront, and only after this payment does the seller proceed with delivery of goods or services. Later, after goods and services are delivered, the official invoice will be sent out by deducting the amount in prepayment invoices.  
+In this type, the seller issues a prepayment invoice with sales tax, to the buyer before delivering goods or services. The buyer pays the invoice amount upfront, and after this payment, the seller delivers the goods or services. After goods and services are delivered, the official invoice is sent out and deducts prepayment invoice amounts.  
 
-This article explains how to configure the **Customer prepayment invoice** and what the process looks like. Currently, only the Prepayment as a billing invoice process is supported. Prepayment invoice as a tax invoice process will be available in a later release.  
+This article explains how to configure **Customer prepayment invoice** and what the process is. Currently, the **Prepayment as a billing invoice** process is supported. **Prepayment invoice as a tax invoice**  will be available in a later release.  
 
 ### Example of Customer prepayment invoice
 A customer places an order for $10,000 and agrees to pay $3,000 as a prepayment. The final invoice is issued after the goods and services are fully delivered. 
 The following accounting entries are recorded: 
 
 Prepayment invoice creation: 
-    Debit: Accounts Receivable 		$3,000 
+    Debit: Accounts receivable 		$3,000 
     Credit: Prepayment (Deposit) 	$3,000 
 
 Payment of prepayment invoice: 
     Debit: Cash/Bank 			    $3,000 
-    Credit: Accounts Receivable 	$3,000 
+    Credit: Accounts receivable 	$3,000 
 
 Apply the prepayment on customer invoice: 
     Debit: Prepayment (Deposit)		$3,000 
-    Credit: Accounts Receivable		$3,000 
+    Credit: Accounts receivable		$3,000 
 
 Final customer invoice creation: 
-    Debit: Accounts Receivable 		$10,000 
+    Debit: Accounts receivable 		$10,000 
     Credit: Revenue 				$10,000 
 
-In this example, the final invoice is issued with the total order amount ($10,000) and with corresponding tax entries. At customer side, the open amount to be paid should be total invoice amount ($10,000) minus the prepaid amount ($3,000), leaving a balance of $7,000. The entries ensure that the prepayment is properly recorded and offset against the final invoice when goods or services are delivered. 
+In this example, the final invoice with the total order amount ($10,000) and corresponding tax entries. The customer should pay the open amount, which is the total invoice amount ($10,000) minus the prepaid amount ($3,000), leaving a balance of $7,000. The entries ensure that the prepayment is properly recorded and offset against the final invoice when goods or services are delivered. 
 
 
 ## Set up Accounts receivable for customer prepayment invoices
