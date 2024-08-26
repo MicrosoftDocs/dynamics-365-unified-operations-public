@@ -82,7 +82,6 @@ To set up customer prepayment invoices, follow these steps.
 8. Go to **System administration** \> **Setup**, and select **Initialize process automations**.
 9. Enable the **Automated prepayment settlement posting** background process.
 10. Update the interval for the process automation to one minute.
-11. Open the **Electronic reporting** workspace, and select the **Reporting configurations** tile. Then, on the **Configurations** pages, on the Action Pane, select **Exchange** \> **Load from XML file**.
 
 If you use Electronic reporting (ER), follow these additional steps.
 
