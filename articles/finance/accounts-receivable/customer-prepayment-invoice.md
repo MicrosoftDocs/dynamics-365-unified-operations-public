@@ -1,6 +1,6 @@
 --- 
 title: Create customer prepayment invoices
-description: This article explains how to create a prepayment invoice for a customer.
+description: This article explains how to configure and process Customer prepayment invoices.
 author: raynezou
 ms.author: raynezou
 ms.topic: how-to
@@ -18,11 +18,23 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to create a prepayment invoice for a customer.
+This article explains how to configure and process Customer prepayment invoices.
 
 ## Customer prepayment invoices
 
-Organizations often receive prepayments (advance payments) from customers for goods or services before those goods or services are delivered. These prepayments ensure that the organization has enough funds to fulfill the customer's order and effectively manage cash flow. This article explains prepayments for sales order invoices in Microsoft Dynamics 365 Finance.
+Sellers often request a deposit (advance payment) to secure financial commitment before delivering goods or services. The customer prepayment invoice feature provides sellers with upfront funds to cover initial costs, reduce financial risk, and ensure that the buyer is committed to the transaction. 
+
+### Types of prepayment processes 
+
+### Prepayment as a billing invoice
+
+In this process, the buyer makes an initial partial payment, commonly referred to as a deposit, to secure goods, services, or a contract. This deposit is a percentage of the total purchase price or a fixed amount which needs to be paid before the seller deliveries the goods or services. The prepayment invoice functions similarly to a billing document. The final invoice will be issued later, reflecting the complete amount of the order. 
+
+### Prepayment invoice as a tax invoice 
+
+In this type, the seller issues a real prepayment invoice (with sales tax) to the buyer before delivering goods or services. The buyer pays the invoice amount upfront, and only after this payment does the seller proceed with delivery of goods or services. Later, after goods and services are delivered, the official invoice will be sent out by deducting the amount in prepayment invoices.  
+
+This article explains how to configure the **Customer prepayment invoice** and what the process looks like. Currently, only the Prepayment as a billing invoice process is supported. Prepayment invoice as a tax invoice process will be available in a later release.  
 
 ## Set up Accounts receivable for customer prepayment invoices
 
@@ -70,15 +82,15 @@ When you create a sales order, you can define the prepayment amount by following
 After the prepayment proposal is confirmed, generate the prepayment invoice by following these steps.
 
 1. Go to **Invoice** \> **Prepayment**, and select **Prepayment invoice**.
-2. Review and post the prepayment invoice.
+2. Review and post the prepayment invoice. The page displays the overall prepayment invoice information, including the customer invoice account, date, prepayment invoice number, prepayment status, and prepayment amount.
 3. Select **Post**. The open customer transaction is created, and the status of the prepayment invoice is **Pending**.
 
 ## Settle the prepayment invoice
 
-When you receive the payment for the prepayment, the customer payment journal is posted to settle the prepayment invoice amount. After prepayment invoice settlement, the status of the prepayment invoice is **Received**, and the **Apply prepayment** button becomes available.
+When you receive the payment for the prepayment, the customer payment journal is posted to settle the prepayment invoice amount. After prepayment invoice settlement, the status of the prepayment invoice is **Received**, and **Apply prepayment** is available.
 
-## Post the invoice and apply the prepayment
+## Post the final invoice and apply the prepayment
 
 Select **Apply prepayment**. On the **Apply prepayment** page, select the prepayment in the **Select prepayments to apply** list, and then select **Apply prepayment**.
 
-After the sales order invoice is posted, the selected prepayment is applied to the invoice when the **Automated prepayment settlement posting** background process is successfully run.
+After the sales order invoice is posted, the selected prepayment is applied to the invoice when the **Automated prepayment settlement posting** background process is successfully run. The remaining amount of the sales order invoice can be settled through a customer payment journal and should display the outstanding amount to be received. 
