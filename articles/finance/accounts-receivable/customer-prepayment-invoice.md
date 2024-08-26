@@ -129,6 +129,7 @@ When you receive the payment for the prepayment, the customer payment journal is
 
 ## Post the final invoice and apply the prepayment
 
-Select **Apply prepayment**. On the **Apply prepayment** page, select the prepayment in the **Select prepayments to apply** list, and then select **Apply prepayment**.
-
-After the sales order invoice is posted, the selected prepayment is applied to the invoice when the **Automated prepayment settlement posting** background process is successfully run. The remaining amount of the sales order invoice can be settled through a customer payment journal and should display the outstanding amount to be received. 
+1. On the **Apply prepayment** page, select the prepayment in the **Select prepayments to apply** list.
+2. Select **Apply prepayment**.
+3. After the sales order invoice is posted, the selected prepayment is applied to the invoice when the **Automated prepayment settlement posting** background process is successfully run.
+4. The remaining amount of the sales order invoice can be settled through a customer payment journal and displays the outstanding amount. 
