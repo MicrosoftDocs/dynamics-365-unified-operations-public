@@ -16,27 +16,44 @@ These frequently asked questions (FAQ) describe the AI impact of the *Chat with 
 
 ## What is Chat with finance and operations data on Microsoft 365 Copilot?
 
-[Describe the system in plain English. What type of system or feature is this? What does it do? At a high level, what does the system or feature take as input? What kind of outputs does the system or feature produce?]
+This feature allows the users to use Microsoft 365 Copilot to chat with finance and operations data through virtual entities in Dataverse. 
 
 ## What are capabilities of the Chat with finance and operations data on Microsoft 365 Copilot?
 
-[Building on the previous question, provide semi-technical, high-level information on how the system or feature offers functionality for various uses.]
+This feature enables users with guided conversation experience to quickly identify the available inventory in Dynamics 365 finance and operation apps without leaving the work context in Microsoft 365.  
 
 ## What is the intended use of the Chat with finance and operations data on Microsoft 365 Copilot?
 
-[Explain intended use(s), as identified in your Impact Assessment.]
+A Microsoft 365 Copilot license enables authorized users to engage in a natural-language conversation with finance and operations data. For example, they can ask the following questions: 
+
+- I need six Southridge Video Laptop16 M1601 in Silver color and 5 Laptop15 M1501 in Red color, can you check the availability? Give me the details by product name, site, warehouse, color, available quantity. 
+- Do we have red Laptop15 M1501 model in warehouses other than Chicago within the site Central? Give me the details by product name, site, warehouse, color, available quantity. 
+
+Microsoft 365 Copilot is based on the data that resides inside finance and operation apps and responds to users.  
+
+The interested users are M365 Copilot users, those who also have the necessary security role and privilege to access the related querying data in Dynamics 365 Supply Chain Management, for example the access of the query on-hand inventory.  
 
 ## How was Chat with finance and operations data on Microsoft 365 Copilot evaluated? What metrics are used to measure performance?
 
-[Provide evidence of system or feature accuracy and performance, and, when applicable, a description of the extent to which these results are generalizable across use cases that were not part of the evaluation.]
+The feature is evaluated by its usage and accuracy. 
 
 ## What are the limitations of Chat with finance and operations data on Microsoft 365 Copilot? How can users minimize the impact of these limitations when using the system?
 
-[See Impact Assessment. Describe the known limitations of the system or feature including uses for which the system was not designed or evaluated. Discuss steps that the user can take to minimize errors and the impact of trade-offs for the user.]
+When the feature does not work as intended, it provides the inaccurate inventory quantity that can bring negative impacts on customer’s business, such as:  
+
+- Lost sales: If Copilot responds with more stock than Dynamics 365 SCM on-hand inventory records, and especially in a stock out scenario, the inaccurate inventory availability may cause sales manager to lose potential customers.   
+- Wasted resources: If Copilot responds with inaccurate inventory amount, it may cause the overstock of products.  
+- Poor customer satisfactions: If Copilot respond is inaccurate, this may cause the fail to deliver orders on time. This can lead to customer dissatisfaction and lower retention rates.   
+- Insufficient inventory management: Copilot’s responses may cause poor inventory management if they are inaccurate. This could cause unnecessary inventory transfers between locations, creating the risks of understocking or overstocking in different warehouses.   
+
+Users can minimize the impact by using only the prompts documented in the documentation.  
 
 ## What operational factors and settings allow for effective and responsible use of the feature?
 
-[Describe the operational factors and ranges within which the system is expected to perform reliably and safely. List the choices that end users can make (e.g., customization, settings, etc.), with a description of how those choices may impact system behavior in the real world.]
+With the understanding of the above potential negative impact, we plan to implement the following mitigations:   
+
+- We are fixing the plugin invocation pipeline to improve the hit ratio which increases the probability of invoking the plugin based on user utterances.
+- We are coming up with a more advanced and stable concept called Knowledge. Plugin needs to upgrade to knowledge at some point when it becomes ready to consume. 
 
 ## See also
 
