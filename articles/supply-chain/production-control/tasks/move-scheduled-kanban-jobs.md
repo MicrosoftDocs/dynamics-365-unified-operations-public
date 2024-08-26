@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 11/07/2018
 ms.custom:
 ms.reviewer: kamaybac   
-audience: Application User 
 ms.search.form: KanbanJobSchedulingListPage
 ---
 

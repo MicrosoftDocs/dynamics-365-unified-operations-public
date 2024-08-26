@@ -31,7 +31,6 @@ For information about how to assign a worker to a team, see [Set up a preferred 
 - [Prioritize service orders](prioritize-service-orders.md)
 - [View the status of service orders](view-the-status-of-service-orders.md)
 - [Monitor service activities](monitor-service-activities.md)
-- [Dispatch board (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))
 - [Set up dispatch teams](set-up-dispatch-teams.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

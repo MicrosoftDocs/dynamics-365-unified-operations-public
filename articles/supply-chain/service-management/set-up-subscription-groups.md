@@ -27,8 +27,6 @@ ms.search.form: SMASubscriptionGroup
 
 ## Related information
 
-[Subscription groups (form)](https://technet.microsoft.com/library/aa553150\(v=ax.60\))
-
 [Subscription groups](subscription-groups.md)
 
   

@@ -38,10 +38,6 @@ You can also view when the time recording for a service order was started and st
 
 2.  On the **Action Pane**, click the **Dispatch** tab \> **Time recording** to open the **SLA time recording** form and view the time recording entries for the service order.
 
-## Related information
-
-[Service orders (form)](https://technet.microsoft.com/library/aa554361\(v=ax.60\))
-
   
 
 

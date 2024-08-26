@@ -5,7 +5,6 @@ author: t-benebo
 ms.date: 08/29/2018
 ms.topic: how-to 
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqTransPOUrgentFormPart, SysQueryForm   
-audience: Application User 
 ms.reviewer: kamaybac
 ms.author: benebotg
 ---

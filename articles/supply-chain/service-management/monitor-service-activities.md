@@ -41,7 +41,6 @@ Click **Service management** \> **Periodic** \> **Dispatch board**.
 
 [View the status of service orders](view-the-status-of-service-orders.md)
 
-[Dispatch board (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))
 
   
 

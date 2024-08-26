@@ -6,7 +6,6 @@ ms.author: yanansong
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-audience: Application User 
 ms.search.form: InventOnhandItem
 ms.assetid: 68cc00f4-0f7a-4a7d-be90-8f2e0d0563d3
 ---

@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 09/30/2020
 ms.custom:
 ms.reviewer: kamaybac    
-audience: Application User 
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, PurchCopying 
 ---
 
