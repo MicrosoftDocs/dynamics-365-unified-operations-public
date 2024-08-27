@@ -52,14 +52,33 @@ Follow this guide to set up the Tax engine configuration extension for slab pric
    - **Item type:** Real
 
       ![CreateNewLineFieldOnTaxConfiguration](https://github.com/user-attachments/assets/936738ed-3ab7-408e-9af5-e8d570ef3a72)
+   
+4. Open **Map model to datasource** to bind **Net Price** with data model.
 
-     
-4. In the **Configurations** workspace, click **Change status**, and then select **Complete**.
+   ![OpenMapModelToDataSource](https://github.com/user-attachments/assets/1af1b90f-7b1f-41c9-a0df-ec44eae0750f)
+
+5. Here takes sales order as an example, select **Sales order document type** and open ***Designer**.
+
+   ![OpenSalesOrderModelDesigner](https://github.com/user-attachments/assets/7fa09507-d30b-4213-8ee2-81896aed3ac1)
+  
+6. Expand the **DATA MODEL > Header = 'Sales order'.Header > Lines = 'Sales order'.Header.Lines**, find the **Net Price** and click **Edit**.
+
+   ![OpenEditNetPriceFormulaDesigner](https://github.com/user-attachments/assets/1e8b7e63-5097-46d9-96ef-c9dbff574e9f)
+
+7. Click **Go to @**, then find the **Net Price**.
+
+   ![ExpandDataSourceFields](https://github.com/user-attachments/assets/1ae5d730-5469-4fc5-aaef-43a174d54fe9)
+
+8. Add **Net Price** formula.
+
+   ![AddNetPriceFormula](https://github.com/user-attachments/assets/1ed23538-c72e-427a-887e-68063b45cc72)
+
+9. In the **Configurations** workspace, click **Change status**, and then select **Complete**.
 
    ![CompleteTaxableDocumentIndiaConfigurationExtension](https://github.com/user-attachments/assets/f080fc26-e3ca-41a6-b84c-254f6483f204)
 
-5. Enter a description such as **Slab price**, and then click **OK**.
-6. If there are any errors, open the designer, click **Validate**, and fix the errors.
+10. Enter a description such as **Slab price**, and then click **OK**.
+11. If there are any errors, open the designer, click **Validate**, and fix the errors.
 
 After the status is updated to **Complete**, the configuration is ready for deployment.
 
@@ -143,6 +162,10 @@ configuration.
 ## Modify the data provider in Microsoft Dynamics AX
 ### Implement logic to determine Net Price
 1. In the AOT, open Classes > TaxEngineModelFields. Add a new const variable for Net Price.
+   
+   ```
+   public static const str NetPrice = 'Net Price';
+   ```
 
    ![AddNetPriceConstVariable](https://github.com/user-attachments/assets/9eb7a4fc-b10a-42ed-bdf8-4ade18f1cb0d)
 
@@ -165,10 +188,18 @@ configuration.
 
 ### Pass the Net Price to GTE
 1. Pass the Net Price to GTE in `TaxableDocumentRowDataProviderLine_IN_Extension.fillInFields()`.
+   
+   ```
+   this.addFieldValue(_lineObj, TaxEngineModelFields::NetPrice, taxModelDocLineBaseImpl.getNetPrice());
+   ```
 
-   ![FillNetPriceFieldAX](https://github.com/user-attachments/assets/837e1066-8e7b-4c07-9be6-27983bfb09dc)
+   ![AddNetPriceFieldToDataProvider](https://github.com/user-attachments/assets/c731c2dd-7ebd-49a6-a217-fee5de365dfe)
 
 2. Add the Net Price to the method `TaxableDocumentRowDataProviderLine_IN_Extension.initValidFields()`.
+
+   ```
+   validFields.add(TaxEngineModelFields::NetPrice, Types::Real);
+   ```
 
    ![AddValidNetPriceFieldAX](https://github.com/user-attachments/assets/0c3e03b2-ab33-4bf7-9304-64383dc5a4b9)
 
