@@ -215,10 +215,6 @@ In Commerce headquarters, follow these steps to set up e-invoice submission para
     1. Select number sequences for submitted file names and batch submission IDs.
 
 1. On the **Features** tab, mark the **Saudi Arabia electronic invoice** feature as **Enabled**.
-1. On the **Electronic Invoicing** tab, set the following fields:
-
-    1. In the **Endpoint URL** field, specify the endpoint URL of the Electronic invoicing service instance that you're using.
-    1. In the **Environment** field, specify the name of your Electronic Invoicing environment in RCS.
 
 ### Enable the digital signature in offline mode
 
