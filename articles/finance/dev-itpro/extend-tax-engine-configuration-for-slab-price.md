@@ -21,33 +21,31 @@ This article describes how to extend the Tax engine configuration for slab price
 ## Activate the tax configuration
 ### Create extension configurations
 1. Create a new taxable document derived from a taxable document (India).
-   - Open the **Electronic reporting** workspace.
-   - Click **Tax configurations**.
-   - Navigate to the **Taxable Document (India)** configuration, and then click **Create configuration**.
-   - Select the **Taxable document model derived from Name: Taxable Document (India), Microsoft** option, and then enter a name and description for the derived taxable document. Then click **Create configuration**.
+2. Go to the **Electronic reporting** workspace.
+3. Click **Tax configurations**.
+4. Navigate to the **Taxable Document (India)** configuration, and then click **Create configuration**.
+5. Select **Taxable document model derived from Name: Taxable Document (India), Microsoft** option, and then enter a name and description for the derived taxable document.
+6. Click **Create configuration** and create a new tax document that is derived from Tax (India GST).
+7. Go to **Tax (India GST)** configuration, and click **Create configuration**.
+8. Select **Tax configuration derived from Name: Tax (India GST), Microsoft** option.
+9. Enter a name and description for the derived tax document.
+10. Click **Create configuration**.
 
 
-
-2. Create a new tax document that is derived from Tax (India GST).
-   - Navigate to the **Tax (India GST)** configuration, and then click **Create configuration**.
-   - Select the **Tax configuration derived from Name: Tax (India GST), Microsoft** option, and then enter a name and description for the derived tax document. Then click **Create configuration**.
-
-
-
-### Add the Net price to Taxable Document India (India Contoso)
-1. Navigate to the **Taxable Document (India Contoso)** configuration, and then click **Designer**.
-2. Navigate to **Tax document > Header > Lines**, and then click **New** to create a new node.
+### Add the net price to taxable document India (India Contoso)
+1. Go to **Taxable Document (India Contoso)** configuration, and click **Designer**.
+2. Navigate to **Tax document > Header > Lines**, and click **New** to create a new node.
 3. Enter a name for the node, and select the item type:
    - **Name:** Net Price
    - **Item type:** Real
   
 4. Open **Map model to datasource** to bind **Net Price** with data model.
 5. Here takes sales order as an example, select **Sales order document type** and open **Designer**.
-6. Expand the **DATA MODEL > Header = 'Sales order'.Header > Lines = 'Sales order'.Header.Lines**, find the **Net Price** and click **Edit**.
-7. Click **Go to @**, then find the **Net Price**.
+6. Expand the **DATA MODEL > Header = 'Sales order'.Header > Lines = 'Sales order'.Header.Lines**, find the **Net price** and click **Edit**.
+7. Click **Go to @**, and find the **Net Price**.
 8. Add **Net Price** formula.
-9. In the **Configurations** workspace, click **Change status**, and then select **Complete**.
-10. Enter a description such as **Slab price**, and then click **OK**.
+9. In the **Configurations** workspace, click **Change status**, and select **Complete**.
+10. Enter a description such as **Slab price**, and click **OK**.
 11. If there are any errors, open the designer, click **Validate**, and fix the errors.
 
 After the status is updated to **Complete**, the configuration is ready for deployment.
@@ -64,38 +62,35 @@ After the status is updated to **Complete**, the configuration is ready for depl
 4. Select the same attributes that SGST uses.
 
 > [!NOTE]
-> Don't click **Add**. Values that you enter here have no effect on the actual rate table. That table should be 
-completed at **Tax > Tax configuration > Tax setup**.
+> Don't click **Add**. Values that you enter here have no effect on the actual rate table. The table should be completed at **Tax > Tax configuration > Tax setup**.
 
 5. Save the tax document.
 
 ### Complete the tax document configuration
 1. Save the configuration, and close the designer.
-2. In the **Configurations** workspace, click **Change status**, and then select **Complete**.
-3. Enter a description such as **Slab price**, and then click **OK**.
+2. In the **Configurations** workspace, click **Change status**, and select **Complete**.
+3. Enter a description such as **Slab price**, and click **OK**.
 4.  If there are any errors, open the designer, click **Validate**, and fix the errors.
 
 After the status is updated to **Complete**, the configuration is ready for deployment.
 
-## Import the configuration and deploy it to a specific company
+### Import the configuration and deploy it to a specific company
 1. Go to **Tax > Setup > Tax configuration > Tax setup**.
 2. Select the current working tax setup.
 3. Click **Configurations**.
-4. Click the **Tax configuration** tab, and then, under **Available configurations**, click **New** to create a tax 
-configuration.
+4. Click the **Tax configuration** tab > **Available configurations**, click **New** to create a tax configuration.
 
 > [!NOTE]
 > Any tax configurations that you add are listed in the **Available configurations** grid.
 
  5. Select the required configuration (for example, **Tax (India GST Contoso)** and version (for example, **1**)), and then click **Save** and **Synchronize**.
 
-
 > [!NOTE]
 > If you want to copy the tax setup data from original configuration, you can check the **Copy tax setup data from** button and choose the configuration you want to copy.
 
 6. Click **Activate**.
-7. Back to **Tax setup** form and go to the **Companies** FastTab.
-8. Click **New** and then select **INMF** in the Companies field.
+7. Back to **Tax setup** page and go to the **Companies** FastTab.
+8. Click **New** and then select **INMF** in the **Companies** field.
 9. Click **Save**.
 10. Click **Activate** to activate the configuration for the company.
 11. Click **Setup** to set up data for the new version.
@@ -104,7 +99,7 @@ configuration.
  
 ## Modify the data provider in Microsoft Dynamics AX
 ### Implement logic to determine Net Price
-1. In the AOT, open Classes > TaxEngineModelFields. Add a new const variable for Net Price.
+1. In the AOT, open Classes > TaxEngineModelFields. Add a new constant variable for Net Price.
    
    ```
    public static const str NetPrice = 'Net Price';
