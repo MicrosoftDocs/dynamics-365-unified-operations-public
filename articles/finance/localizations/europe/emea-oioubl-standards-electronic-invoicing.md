@@ -31,8 +31,8 @@ The following country/region-specific formats of electronic invoices are availab
 -   PEPPOL BIS v.2 for Austria, France, and Belgium
 -   UBL-OHNL 1.9 for the Netherlands
 -   FacturaE v.3.2.1 for Spain
--   FatturaPA v.1.2 for Italy
--   xRechnung v.1.2 for Germany
+-   FatturaPA v.1.8 for Italy
+-   xRechnung v.3.0 for Germany
 -   Open PEPPOL BIS Billing v.3.0 for European Union
 -   Estonian specific format version 1.2
 -   Finvoice 3.0 for Finland
@@ -54,10 +54,14 @@ Electronic invoicing is based on [Electronic reporting (ER)](../../../fin-ops-co
 
 The **Invoice model** data model, invoice model mapping, and country/region-specific ER format configurations include:
 
--   OIOUBL Sales invoice - for AT, DK, and NO
--   OIOUBL Sales credit note - for AT, DK, and NO
--   OIOUBL Project invoice - for AT, DK, and NO
--   OIOUBL Project credit note - for AT, DK, and NO
+-   OIOUBL Sales invoice - for AT and NO
+-   OIOUBL Sales credit note - for AT and NO
+-   OIOUBL Project invoice - for AT and NO
+-   OIOUBL Project credit note - for AT and NO
+-   OIOUBL Sales invoice (DK) - for DK
+-   OIOUBL Sales credit note (DK) - for DK
+-   OIOUBL Project invoice (DK) - for DK
+-   OIOUBL Project credit note (DK) - for DK
 -   UBL Sales Invoice FR
 -   UBL Sales Credit Note FR
 -   UBL Project Invoice FR
