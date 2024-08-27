@@ -1,6 +1,6 @@
 ---
 title: Deploy a Commerce trial (Preview) environment
-description: This article explains how to subscribe to a partner offer to deploy a Microsoft Dynamics 365 Deploy a Commerce trial (Preview) environment.
+description: This article explains how to subscribe to a partner offer to deploy a Microsoft Dynamics 365 Commerce trial (Preview) environment.
 author: ashishmsft
 ms.date: 08/27/2024
 ms.topic: how-to
@@ -16,7 +16,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to subscribe to a partner offer to deploy a Microsoft Dynamics 365 Deploy a Commerce trial (Preview) environment.
+This article explains how to subscribe to a partner offer to deploy a Microsoft Dynamics 365 Commerce trial (Preview) environment.
 
 By subscribing to a Dynamics 365 Commerce trial (Preview), you can automatically deploy a trial Commerce environment by completing a questionnaire that provisions Commerce headquarters and Commerce Scale Unit (CSU) and its related components as applicable. 
 
@@ -33,7 +33,7 @@ The following table outlines the details of the new trial offer.
 
 ## Prerequisites
 
-The following prerequisites are required to deploy the Dynamics 365 Commerce trial (Preview) environment.
+The following prerequisites are required to deploy a Dynamics 365 Commerce trial (Preview) environment.
 
 - You must first sign up for the Dynamics 365 Commerce trial (Preview) offer.
 - The user who deploys the Commerce trial (Preview) environment must have Azure tenant administrator rights.
@@ -45,7 +45,7 @@ The following prerequisites are required to deploy the Dynamics 365 Commerce tri
 
 To sign up for the Dynamics 365 Commerce trial (Preview), follow these steps.
 
-1. Sign in to a browser with the user work account of the tenant where you want to host the Dynamics 365 Commerce preview trial.
+1. Sign in to a browser with the user work account of the tenant where you want to host the Commerce trial (Preview) environment.
 1. Go to the [Microsoft 365 Admin Center](https://admin.microsoft.com/AdminPortal/home).
 1. Go to **Marketplace \> All Products** and search for "Dynamics 365 Commerce Trial".
 1. Select **Details**.
@@ -68,7 +68,7 @@ To assign licenses to users, follow these steps.
 
 ## Provision your Commerce trial (Preview) environment
 
-To continue provisioning your Commerce trial (Preview) environment, follow these steps.
+To provision your Commerce trial (Preview) environment, follow these steps.
 
 1. Go to the [Power Platform Admin Center] (https://admin.powerplatform.com/).
 1. At the top left, select the **Environments** tab.
