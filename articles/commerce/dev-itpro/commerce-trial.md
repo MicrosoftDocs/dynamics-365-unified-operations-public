@@ -18,7 +18,7 @@ ms.custom:
 
 This article explains how to subscribe to a partner offer to deploy a Microsoft Dynamics 365 Commerce preview trial environment.
 
-By subscribing to a Dynamics 365 Commerce trial, you can automatically deploy a trial Commerce environment by completing a questionnaire that provisions Commerce headquarters and Commerce Scale Unit (CSU) and its related components as applicable. 
+By subscribing to a Dynamics 365 Commerce preview trial, you can automatically deploy a trial Commerce environment by completing a questionnaire that provisions Commerce headquarters and Commerce Scale Unit (CSU) and its related components as applicable. 
 
 The following table outlines the details of the new trial offer.
 
@@ -35,7 +35,7 @@ The following table outlines the details of the new trial offer.
 
 The following prerequisites are required to deploy the Dynamics 365 Commerce preview trial.
 
-- You must sign up for the Dynamics 365 Commerce preview trial offer.
+- You must first sign up for the Dynamics 365 Commerce preview trial offer.
 - The user who deploys the Commerce preview trial must have Azure tenant administrator rights.
 
 > [!IMPORTANT]
@@ -55,9 +55,9 @@ To sign up for the Dynamics 365 Commerce preview trial, follow these steps.
 > [!NOTE]
 > If your payment information isn't on file, you must update your payment information before you can proceed to claim the free trial. You aren't charged without your consent. 
      
-## Start provisioning your Dynamics 365 Commerce trial preview environment
+## Start provisioning your Commerce preview trial environment
 
-To start provisioning your Dynamics 365 Commerce Trial preview environment, follow these steps.
+To start provisioning your Dynamics 365 Commerce preview trial environment, follow these steps.
 
 1. Go to the [Power Platform Admin Center](https://admin.powerplatform.com/).
 1. Review the recommended deployment type, and select **Begin Setup** to initiate provisioning.
@@ -75,9 +75,9 @@ To assign licenses to users, follow these steps.
 1. On the **Active users** page, select the users to whom you want to assign a license.
 1. Confirm that the **Dynamics 365 Commerce Trial** license is selected, and then select **Save changes**.
 
-### Continue provisioning your Dynamics 365 Commerce trial preview environment
+### Continue provisioning your Commerce preview trial environment
 
-To continue provisioning your Dynamics 365 Commerce trial preview environment, follow these steps.
+To continue provisioning your Dynamics 365 Commerce preview trial environment, follow these steps.
 
 1. Go to the [Power Platform Admin Center] (https://admin.powerplatform.com/).
 1. At the top left, select the **Environments** tab.
@@ -88,22 +88,22 @@ To continue provisioning your Dynamics 365 Commerce trial preview environment, f
 1. For **Automatically deploy these apps**, select **Commerce (Preview)**
 
 > [!NOTE]
-> - Ensure that you have assigned the Commerce trial license to the user account you're using to provision a trial environment.
+> - Ensure that you assigned the Commerce trial license to the user account you're using to provision the Commerce preview trial environment.
 > - If you're not able to see **Commerce (Preview)** right away, try again later. It may take a while for all systems to sync and update that your account has the right licenses available.
  
-## View environment details for your Dynamics 365 Commerce preview trial 
+## View environment details for your Commerce preview trial 
 
 To view environment details for your Dynamics 365 Commerce preview trial, follow these steps.
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.com/).
 1. At the top left, select the **Environments** tab.
-1. Locate your environment (for example, "Contoso Trial 101") and confirm that the status shows as **Ready**.
+1. Locate your environment (for example, "Contoso Trial 101") and confirm that the state shows as **Ready**.
 1. To view environment details, select your environment.
 1. Under **Resources**, select **Dynamics 365 Apps**. You should see the **Dynamics 365 Commerce – Cloud Scale Unit** status as **Published**.
  
-## View Cloud Scale Units for your Dynamics 365 Commerce Trial preview environment
+## View Cloud Scale Units for your Commerce preview trial environment
 
-To view the Cloud Scale Units (CSUs) used for your Dynamics 365 Commerce trial preview environment, follow these steps.
+To view the Cloud Scale Units (CSUs) used for your Dynamics 365 Commerce preview trial environment, follow these steps.
 
 1. Go to the [Dataverse Maker Apps portal](https://make.powerapps.com/).
 1. At the top right, select your environment.
@@ -111,7 +111,7 @@ To view the Cloud Scale Units (CSUs) used for your Dynamics 365 Commerce trial p
 1. Search for "Commerce Scale Unit", and then select the search result to view details.
 
 > [!NOTE]
-> If you're unable to view **Cloud Point of Sale Public Endpoint** and **Commerce Engine Public Endpoint** columns, in the table details select the columns to add them.
+> If you're unable to view **Cloud Point of Sale Public Endpoint** and **Commerce Engine Public Endpoint** columns, in the table details, select the missing columns to add them.
 
 ## Frequently asked questions
 
@@ -124,15 +124,15 @@ Yes. To extend your trial, follow these steps.
 1. Select **Dynamics 365 Project Operations (CE) - Preview Trial**.
 1. Under **Expiration Date**, select **Extend Date**.
 
-### Can I upgrade from the Commerce trial deployment to a Commerce production/sandbox deployment?
+### Can I upgrade from the Commerce preview trial deployment to a Commerce production/sandbox deployment?
 
 Currently there's no support to upgrade a trial environment.
 
-### Can I access the Commerce trial environment via Microsoft Lifecycle Services?
+### Can I access the Commerce preview trial environment via Microsoft Lifecycle Services?
 
 No. For this trial, deployment is handled through the Power Platform Admin Center.
 
-### Can I deploy custom extensions to the Commerce trial environment?
+### Can I deploy custom extensions to the Commerce preview trial environment?
 
 No. Commerce trial environments are to be used as-is, so you're not allowed to deploy any custom extensions.
 
