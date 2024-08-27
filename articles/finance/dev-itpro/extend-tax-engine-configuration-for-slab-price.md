@@ -57,7 +57,7 @@ Follow this guide to set up the Tax engine configuration extension for slab pric
 
    ![OpenMapModelToDataSource](https://github.com/user-attachments/assets/1af1b90f-7b1f-41c9-a0df-ec44eae0750f)
 
-5. Here takes sales order as an example, select **Sales order document type** and open ***Designer**.
+5. Here takes sales order as an example, select **Sales order document type** and open **Designer**.
 
    ![OpenSalesOrderModelDesigner](https://github.com/user-attachments/assets/7fa09507-d30b-4213-8ee2-81896aed3ac1)
   
