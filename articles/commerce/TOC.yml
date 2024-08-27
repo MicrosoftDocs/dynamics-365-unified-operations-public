@@ -40,7 +40,7 @@
         href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?context=/dynamics365/context/commerce
       - name: Deploy a demo environment
         href: ../fin-ops-core/dev-itpro//deployment/deploy-demo-environment.md?context=/dynamics365/context/commerce
-      - name: Subscribe to and deploy a Commerce trial environment
+      - name: Subscribe to and deploy a Commerce preview trial environment
         href: dev-itpro/commerce-trial.md
       - name: One Version service updates
         items:
