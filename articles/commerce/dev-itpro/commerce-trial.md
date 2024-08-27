@@ -41,7 +41,7 @@ The following prerequisites are required to deploy the Dynamics 365 Commerce tri
 > [!IMPORTANT]
 > Only the tenant administrator of an organization can deploy the Commerce trial. If you aren't the tenant administrator, wait until your organization has been signed up and you've received your user credentials to proceed.
 
-### Sign up for the Dynamics 365 Commerce trial (Preview)
+## Sign up for the Dynamics 365 Commerce trial (Preview)
 
 To sign up for the Dynamics 365 Commerce trial (Preview), follow these steps.
 
@@ -66,7 +66,7 @@ To assign licenses to users, follow these steps.
 1. On the **Active users** page, select the users to whom you want to assign a license.
 1. Confirm that the **Dynamics 365 Commerce Trial** license is selected, and then select **Save changes**.
 
-### Provision your Commerce trial (Preview) environment
+## Provision your Commerce trial (Preview) environment
 
 To continue provisioning your Commerce trial (Preview) environment, follow these steps.
 
