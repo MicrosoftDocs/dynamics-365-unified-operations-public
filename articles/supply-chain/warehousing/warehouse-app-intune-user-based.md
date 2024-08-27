@@ -105,7 +105,7 @@ The following subsections provide examples that show how to set up Intune to pro
 
 ### Create a connection JSON file
 
-As a prerequisite for setting up managed configuration of all mobile platforms, you must create a connection JSON file as described in [Create a connection settings file or QR code](/dynamics365/supply-chain/warehousing/install-configure-warehouse-management-app#create-a-connection-settings-file-or-qr-code). This file enables the mobile app to connect to and authenticate with your Dynamics 365 Supply Chain Management environment.
+As a prerequisite for setting up managed configuration of all mobile platforms, you must create a connection JSON file as described in [Create a connection settings file or QR code](install-configure-warehouse-management-app.md#connection-file-qr). This file enables the mobile app to connect to and authenticate with your Dynamics 365 Supply Chain Management environment.
 
 > [!TIP]
 > If your JSON file includes more than one connection, one of them should be set as the default connection (by setting the `IsDefaultConnection` parameter to *true* for it). If no default connection is set, the app will prompt the user to manually select an initial connection among the available options.
