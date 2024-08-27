@@ -30,13 +30,7 @@ Some steps are required to configure the **French Chorus Pro submission (FR)** E
 Before you begin the procedures in this article, complete the following prerequisites:
 
 - Become familiar with Electronic invoicing. For more information, see [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
-- Sign up for RCS, and set up Electronic invoicing. For more information, see the following articles:
-
-    - [Sign up for and install the Electronic Invoicing service](../global/e-invoicing-sign-up-install.md)
-    - [Set up Azure resources for Electronic invoicing](../global/e-invoicing-set-up-azure-resources.md)
-    - [Install the add-in for microservices in Lifecycle Services](../global/e-invoicing-install-add-in-microservices-lcs.md)
-    - [Activate and setup integration with Electronic invoicing](../global/e-invoicing-activate-setup-integration.md) – Use the information in this article to activate the integration between your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management app and the Electronic Invoicing service.
-
+- Do the common part of Electronic Invoicing service configuration as it's described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
 - Your organization must be registered to operate with Chorus Pro. Microsoft provides integration with Chorus pro in OAuth2 Mode via an application programming interface (API). For detailed information about Chorus Pro registration and application activation, see the [official documentation](https://communaute.chorus-pro.gouv.fr/documentation/help-for-api-developers-in-oauth2-mode/).
 
     Follow these steps to register with Chorus Pro.
@@ -50,7 +44,8 @@ Before you begin the procedures in this article, complete the following prerequi
 
 ## Country/region-specific configuration of the application setup for the French Chorus Pro submission (FR) Electronic invoicing feature
 
-Some of the parameters from the **French Chorus Pro submission (FR)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, review and update the default values as required, so that they better reflect your business operations.
+Some of the parameters from the **French Chorus Pro submission (FR)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, add a feature that is based on the Microsoft-provided feature, and complete the common parameters on the **Feature parameters** tab. Review and update the default values as required, so that they better reflect your business operations.
+
 
 1. In the Azure key vault, create secrets and the corresponding reference to them. For more information, see [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md).
 2. Import the latest version of the **French Chorus Pro submission (FR)** globalization feature as described in [Import features from the Global repository](../global/e-invoicing-import-feature-global-repository.md).
@@ -75,10 +70,13 @@ Some of the parameters from the **French Chorus Pro submission (FR)** electronic
 ### Prerequisites
 
 - The primary address of the legal entity must be in France.
-- The following Feature management key must be enabled: **(France) Electronic invoicing integration with Chorus Pro**.
+- The following features must be enabled in Feature management:
+    - **Electronic invoicing integration**
+    - **E-Invoicing service workspace designer**
+    - **(France) Electronic invoicing integration with Chorus Pro**.
 
 > [!NOTE]
-> If you want to be able to track the status of submitted documents in Chorus Pro, you must enable two features in the **Feature management** workspace: **Extended document identification in submission log** and **Execute update actions for submitted documents**.
+> If you want to be able to track the status of submitted documents in Chorus Pro, you must enable two additional features in the **Feature management** workspace: **Extended document identification in submission log** and **Execute update actions for submitted documents**.
 
 ### Configure legal entity data
 
@@ -139,13 +137,13 @@ Follow these steps to complete the configuration.
 2. On the **Electronic document** tab, add records for the **Customer Invoice journal** and **Project invoice** tables.
 3. For each table name, set the **Document context** and **Electronic document model mapping** fields as specified in [Electronic invoicing parameters](../global/e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 4. In the **Customer Invoice journal** table name field, select **Response types**.
-5. Create a new response type that has the same name that was defined for the related variable in the corresponding feature setups in RCS.
+5. Create a new response type that has the same name that was defined for the related variable in the corresponding feature setups.
 
     1. In the **Submission status** field, select **Pending**.
     2. In the **Data entity name** field, select **Sales invoice Chorus Pro entity**.
     3. In the **Configuration** field, select **Chorus Pro response invoice data import format (FR)**.
 
-6. Create another new response type that has the same name that was defined for the related variable in the corresponding feature setups in RCS.
+6. Create another new response type that has the same name that was defined for the related variable in the corresponding feature setups.
 
     1. In the **Submission status** field, select **Pending update actions execution**.
     2. In the **Data entity name** field, select **Sales invoice Chorus Pro entity**.
