@@ -482,7 +482,7 @@ To activate batch submission of invoices, enable the **Electronic document batch
 
 ### Configure electronic document parameters
 
-import **Consolidated Invoice Model Mapping (MY)**
+Import the **Consolidated Invoice Model Mapping (MY)** Electronic Reporting configuration from the Dataverse repository. For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 To configure electronic document parameters for batch submissions, follow these steps.
 
@@ -490,7 +490,7 @@ To configure electronic document parameters for batch submissions, follow these 
 1. On the **Electronic document** tab, add a new record for the **Customer Invoice journal** table name.
 1. Turn on the option in the **Batch submission** column.
 1. In the **Document context** field, select the **Batch submission** mapping name from the **Customer invoice context model** configuration.
-1. In the **Electronic document model mapping** field, select the **YYY** mapping name from the **Consolidated Invoice Model Mapping (MY)** configuration.
+1. In the **Electronic document model mapping** field, select the ***Consolidated Invoice Model Mapping (MY)** mapping name from the **Consolidated Invoice Model Mapping (MY)** configuration.
 
 ...responses...
 
