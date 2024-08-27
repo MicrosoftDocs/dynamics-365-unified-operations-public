@@ -1,6 +1,6 @@
 ---
-title: Sign up for Commerce trials
-description: This article explains how to subscribe to a preview partner offer to deploy a trial Microsoft Dynamics 365 Commerce environment.
+title: Subscribe to and deploy a Commerce preview trial environment
+description: This article explains how to subscribe to a partner offer to deploy a Microsoft Dynamics 365 Commerce preview trial environment.
 author: ashishmsft
 ms.date: 08/27/2024
 ms.topic: how-to
@@ -12,11 +12,11 @@ ms.custom:
   - bap-template
 ---
 
-# Dynamics 365 Commerce trials 
+# Subscribe to and deploy a Commerce preview trial environment
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to subscribe to a preview partner offer to deploy a trial Microsoft Dynamics 365 Commerce environment. This article provides information about how to redeem your trial offer and initiate provisioning.
+This article explains how to subscribe to a partner offer to deploy a Microsoft Dynamics 365 Commerce preview trial environment.
 
 By subscribing to a Dynamics 365 Commerce trial, you can automatically deploy a trial Commerce environment by completing a questionnaire that provisions Commerce headquarters and Commerce Scale Unit (CSU) and its related components as applicable. 
 
