@@ -41,10 +41,10 @@ The *[Follow-up questions in the Copilot sidecar](../../fin-ops/copilot/faq-copi
 
 To use this capability in your environment, your system must meet the following requirements:
 
-- You must be running finance and operations apps version 10.0.40 or later. <!--KFM: I have conflicting input for this. What is the requirement? FM feature looks like it is first in 10.0.41. -->
+- You must be running finance and operations apps version 10.0.41 or later.
 - The feature that is named *(Preview) AI-generated follow-up questions for the Copilot sidecar in finance and operations apps* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-<!-- KFM "(Preview) AI-generated follow-up questions for the Copilot sidecar in finance and operations apps" may soon change to "(Preview) Follow-up questions in the Copilot sidecar". When will this happen? Should we mention both names here? We also need to update [Platform updates for version 10.0.41 of finance and operations apps (September 2024)](../../fin-ops/get-started/whats-new-platform-updates-10-0-41.md) or for 10.0.40, whichever is right. -->
+<!-- KFM "(Preview) AI-generated follow-up questions for the Copilot sidecar in finance and operations apps" may soon change to "(Preview) Follow-up questions in the Copilot sidecar". When will this happen? Should we mention both names here? -->
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
