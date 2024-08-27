@@ -165,12 +165,7 @@ After you configure certificate profiles, follow these steps.
 
 ### Specify ER configurations
 
-Depending on your purposes, you can download the ER configurations for electronic invoicing from the following sources:
-
-- If you don't have to customize the ER configurations that are provided by Microsoft or create your own ER configurations, you can import the Microsoft-provided configurations from Microsoft Dynamics Lifecycle Services. For more information, see [Import a configuration from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md). Alternatively, you can [download ER configurations from the Global repository of Configuration service](../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
-- If you must customize the ER configurations that are provided by Microsoft or create your own ER configurations, you must provision a Regulatory Configuration Service (RCS) environment. For more information about how to work with RCS, see [Import ER configurations from RCS](../../../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md).
-
-You must download the latest versions of the following configurations:
+You must download the latest versions of the following configurations from the Dataverse repository. For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../../../finance/localizations/global/workspace/gsw-import-er-config-dataverse.md).
 
 - E-invoice generation configurations:
 
@@ -201,7 +196,7 @@ You must also configure legal entity–specific parameters of the e-invoice form
 
 ### Configure e-invoice submission
 
-Before you set up e-invoice submission parameters for Commerce, configure the Electronic invoicing service so that it can be used for Saudi Arabia. For more information, see [Get started with Electronic invoicing for Saudi Arabia](../../../finance/localizations/mea/e-invoicing-sa-get-started.md). To support the configuration of CSIDs per POS register, follow these steps for each POS register in your Electronic Invoicing environment.
+Before you set up e-invoice submission parameters for Commerce, configure the Electronic invoicing service so that it can be used for Saudi Arabia. For more information, see [Get started with Electronic invoicing for Saudi Arabia](../../../finance/localizations/mea/gs-e-invoicing-sa-get-started.md). To support the configuration of CSIDs per POS register, follow these steps for each POS register in your Electronic Invoicing environment.
 
 1. Add a corresponding CSID certificate to the Key Vault parameters of the environment.
 1. Create a feature setup of the **Processing pipeline** type for the electronic invoicing feature. To complete this step, configure the first feature setup, and then create new feature setups by copying them from the first one and modifying the parameters.
