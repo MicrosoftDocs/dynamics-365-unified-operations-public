@@ -2,18 +2,16 @@
 title: Preview features in Dynamics 365 Commerce 10.0.40 (June 2024)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.40. 
 author: johnmichalak
-ms.date: 04/12/2024
-ms.topic: article
+ms.date: 08/27/2024
+ms.topic: whats-new
 audience: Application User
-ms.custom: 
-  - bap-template
-  - evergreen
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: johnmichalak
 ms.search.validFrom: 2023-11-01
-ms.dyn365.ops.version: 10.0.40
-
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # What's new or changed in Dynamics 365 Commerce 10.0.40 (June 2024)
@@ -41,8 +39,8 @@ The following table lists the features that are included in this release. We mig
 | Point of sale (POS)| Check out faster with optimized payment flows | An updated user interface for cash and credit card POS payment flows saves time at checkout using modern, redesigned single-window interactions to accept payments. These flows also bring 'Exact payment' options to quickly send the checkout to the payment terminal or process an exact-change payment. The cash payment flow also introduces "Smart denominations," that offer logical cash grouping payment options a shopper is likely to use for the transaction.  | Admins |
 | Payments | Support for nonrecurring payment tokens in Commerce | Commerce now supports payment operations without the need to store a card token for payment processing. Online store, Call Center, and POS Customer Orders are updated to process payments within a single authorization request. Sales Order adjustments uses 'authorization adjustment' actions to increase or decrease the original authorization instance. System authorization expiry parameters can now be set at the card type level. Expired authorizations can also be monitored in the Credit card authorization management form in Headquarters.  | Admins |
 | Digital commerce | Provide multiple shipping address, notes, and delivery date | Consumer and business buyers can now choose multiple shipping addresses for the items within a single order and add notes such as delivery instructions and optionally add a delivery date for the items. | Admins |
-| Point of sale (POS)| Customer insights by Copilot^ | Enhance customer interactions and create personalized shopping experiences with Copilot, empowering store associates through data-driven insights. [Learn more](https://learn.microsoft.com/en-us/dynamics365/commerce/copilot-pos-customer-insights)| IT administrators |
-| Point of sale (POS) | Report insights by Copilot^| Enhance efficiency, accuracy, and real-time sales analysis with Copilot’s narrative summaries for store reports in the Store Commerce app. [Learn more](https://learn.microsoft.com/en-us/dynamics365/commerce/copilot-pos-report-insights)| IT administrators |
+| Point of sale (POS)| Customer insights by Copilot^ | Enhance customer interactions and create personalized shopping experiences with Copilot, empowering store associates through data-driven insights. For more information, see [Customer insights by Copilot](../copilot-pos-customer-insights.md)| IT administrators |
+| Point of sale (POS) | Report insights by Copilot^| Enhance efficiency, accuracy, and real-time sales analysis with Copilot’s narrative summaries for store reports in the Store Commerce app. For more information, see [Store report insights by Copilot](../copilot-pos-report-insights.md)| IT administrators |
 | Point of sale (POS) | Product insights by Copilot^| Copilot empowers store associates to efficiently share product details and promotions, enhancing cross-selling and customer experience. | IT administrators |
 
 ^ 10.0.40, PQU-1 onwards (CSU : 9.50.24184.2, Store Comm. App 9.50.24189.1)
