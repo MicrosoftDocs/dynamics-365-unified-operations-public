@@ -4,8 +4,8 @@ description: Learn about extending tax engine configurations, including prerequi
 author: Kai-Cloud
 ms.author: kailiang
 ms.topic: article
-ms.date: 05/24/2021
-ms.reviewer: kfend
+ms.date: 05/24/2024
+ms.reviewer: twheeloc
 audience: IT Pro 
 ms.search.region: India
 ms.search.validFrom: 2017-12-31
@@ -519,8 +519,8 @@ After the status is updated to **Complete**, the configuration is ready for depl
 
 	[![rebase step 4.](../general-ledger/media/extend-tax-engine-configurations-rebase4.png)]
 
-## Scenario 3: Extend the Tax engine configuration for Slab Price
+## Scenario 3: Extend the Tax engine configuration for slab price
 
-To add slab price function in India, we need to extend the tax engine configuration. For details, please refer to [Extend tax engine configuration for slab price](extend-tax-engine-configuration-for-slab-price.md).
+To add the slab price function in India, extend the tax engine configuration. For more information, see [Extend tax engine configuration for slab price](extend-tax-engine-configuration-for-slab-price.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
