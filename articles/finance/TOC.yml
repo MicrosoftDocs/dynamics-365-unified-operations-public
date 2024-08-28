@@ -5368,7 +5368,7 @@
             - name: Deprecation of US payroll tax updates
               href: ../fin-ops-core/fin-ops/hr/localizations/usa/noam-usa-deprecate-payroll-tax.md     
             - name: US payroll tax update deprecation FAQ
-              href: ../fin-ops-core/fin-ops/hr/localizations/usa/noam-usa-payroll-tax-deprecate.md
+              href: ../fin-ops-core/fin-ops/hr/localizations/usa/noam-usa-payroll-tax-deprecate-faq.md
             - name: Payroll setup
               items:
                 - name: Set up payroll for workers
