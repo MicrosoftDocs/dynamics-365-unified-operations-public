@@ -53,13 +53,13 @@ Each time you run a forecast profile, the system creates a record of the job run
 1. Find the job run that you want to inspect and select the link in the **Job run name** column for that run.
 1. On the **Forecast job run** page, browse through the following tabs to review the details of the job run:
 
-    - **Summary** – This tab provides basic information about the job run, including how ran it, when it was run, and a link to the time series that was generated or updated. You can also see the job status and any error messages that occurred.
+    - **Summary** – This tab provides basic information about the job run, including who ran it, when it was run, and a link to the time series that was generated or updated. You can also see the job status and any error messages that occurred.
     - **Forecast model** – This tab shows the forecast model run by the job.
     - **Explainability** – This tab lists each combination of dimensions (such as item variant, warehouse location, and so on) that the forecast was calculated for. For each combination, it shows the [demand forecasting algorithm](design-forecast-models.md) that was used and the mean average percentage error (MAPE) for the calculation. A lower MAPE value indicates greater accuracy. You can sort the grid by selecting the column heading you want to sort by. To resize, filter, or search in a column, select the menu button on the appropriate column heading.
 
-The following image shows an example of the **Explainability** tab of the **Forecast job run** page. This job ran using the *best fit* forecast algorithm, so the system chose the best standard [demand forecasting algorithm](design-forecast-models.md) for each combination of dimensions (rather than forcing the same algorithm on all of them). Note that the forecast for a single product variant (*Car Audio Unit-200*) used varying forecast algorithms based on which warehouse was analyzed.
+The following image shows an example of the **Explainability** tab of the **Forecast job run** page. This job ran using the *best fit* forecast algorithm, which calculates results for each of the standard [demand forecasting algorithms](design-forecast-models.md) and then picks the one with the lowest MAPE for each row. This is why forecasts for the same product variant (such as *Car Audio Unit-200*) used varying algorithms depending on which warehouse was analyzed.
 
-:::image type="content" source="media/forecast-job-run.png" alt-text="Explainability tab of the Forecast job run page showing best fit forecast results." lightbox="media/forecast-job-run.png":::
+:::image type="content" source="media/forecast-job-run.png" alt-text="Explainability tab of the Forecast job run page showing best-fit forecast results." lightbox="media/forecast-job-run.png":::
 
 ## <a name="create-profile"></a> Create and manage forecast profiles
 

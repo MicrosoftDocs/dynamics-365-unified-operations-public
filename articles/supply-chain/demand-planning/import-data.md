@@ -4,7 +4,7 @@ description: Learn how to import data from different sources and file types, and
 author: t-benebo
 ms.author: benebotg
 ms.topic: how-to
-ms.date: 10/19/2023
+ms.date: 08/28/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -60,8 +60,8 @@ To import directly from Supply Chain Management (and other finance and operation
 1. On the **Configure connection** page, in the **Connection URL** field, enter the URL of your Supply Chain Management environment. Then select **Next**.
 1. The **Entity selection** page lets you map **Source** data entities from Supply Chain Management to **Target** tables in Demand planning. It initially lists all of the mappings that the solution supports out of the box. You can edit the list, remap fields, and add more mappings as needed. You can make the following settings here:
     - For each listed **Source** entity that you want to import, set **Synchronize** to *Yes*. If you set **Synchronize** to *No*, the profile will ignore that entity when it runs.
-    - To delete all data from a listed **Target** table each time the profile runs, set **Delete data** to *Yes*. <!--KFM: What happens when set to *No*? Do we get duplicate records, or do we try to merge? What might go wrong? What do we recommend? -->
-    - Source entities that include company-specific data provide a drop-down dialog box in the **Company** column. To limit the import to only include data from one or more specific companies (data entities), select those companies here. <!--KFM: Selecting none means import all? --> This feature supports all data entities that contain a *Data area ID* field, including custom-built data entities. If none of the listed source entities include company-specific data, then the **Company** column is hidden.
+    - To delete all data from a listed **Target** table each time the profile runs, set **Delete data** to *Yes*.
+    - Source entities that include company-specific data provide a drop-down dialog box in the **Company** column. To limit the import to only include data from one or more specific companies (data entities), select those companies here. This feature supports all data entities that contain a *Data area ID* field, including custom-built data entities. If none of the listed source entities include company-specific data, then the **Company** column is hidden.
     - To view or edit the field mappings for any listed entity, select that entity and then select **Edit** from the toolbar. Then use the **Add mapping** dialog to map source entity fields to target table fields.
     - To add an unlisted entity, select **Add** from the toolbar. Use the **Add mapping** dialog to identify the **Source** entity and **Target** table. Then map the required source entity fields to their matching target table fields. The target table and fields must already exist in Demand planning (learn more in [View and customize tables for holding imported data](tables.md)).
 1. Select **Next**.
