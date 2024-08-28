@@ -27,7 +27,7 @@ This article describes how to extend the Tax engine configuration for slab price
 
    ![TaxableDocumentIndiaCreateConfiguration](../general-ledger/media/TaxableDocumentIndiaCreateConfiguration.png)
    
-5. Select **Taxable document model derived from Name: Taxable Document (India), Microsoft** option, and then enter a name and description for the derived taxable document.
+5. Select **Taxable document model derived from Name: Taxable Document (India), Microsoft** option, and then enter a name (i.e., **Taxable document India (India Contoso)**) and description for the derived taxable document.
 
    ![TaxableDocumentIndiaDeriveConfiguration](../general-ledger/media/TaxableDocumentIndiaDeriveConfiguration.png)
    
@@ -37,7 +37,7 @@ This article describes how to extend the Tax engine configuration for slab price
    ![TaxIndiaGSTCreateConfiguration](../general-ledger/media/TaxIndiaGSTCreateConfiguration.png)
    
 8. Select **Tax configuration derived from Name: Tax (India GST), Microsoft** option.
-9. Enter a name and description for the derived tax document.
+9. Enter a name (i.e., **Tax (India GST Contoso)**) and description for the derived tax document.
 10. Click **Create configuration**.
 
     ![TaxIndiaGSTDeriveConfiguration](../general-ledger/media/TaxIndiaGSTDeriveConfiguration.png)
