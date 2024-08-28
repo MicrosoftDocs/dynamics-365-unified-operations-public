@@ -1,7 +1,6 @@
 ---
 # required metadata
-
-title: Deprecation of US payroll tax updates
+title: Deprecation of US payroll tax updates FAQ
 description: This article describes the deprecation of tax updates for US payroll and summarizes questions that are frequently asked.
 author: aolson
 ms.date: 08/28/2024
@@ -23,6 +22,9 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Deprecation of US payroll tax updates FAQ
+
+[!include [banner](../../../../../finance/includes/banner.md)]
+
 Tax updates have been retired for U.S. payroll feature in Microsoft Dynamics 365 Human Resources and impacted payroll functionality 
 
 ## Overview
