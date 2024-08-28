@@ -4,7 +4,7 @@ description: The behavior of the email subsystem is influenced by a combination 
 author: jasongre
 ms.author: jasongre
 ms.topic: article
-ms.date: 01/04/2024
+ms.date: 08/24/2024
 ms.reviewer: twheeloc
 audience: IT Pro
 ms.search.region: Global
@@ -178,7 +178,7 @@ On the **Email parameters** page, note the following settings on the **SMTP sett
 </table>
 
 > [!NOTE]
-> Finance and operations apps don't support multifactor authentication or Modern auth (OAuth 2.0) for SMTP. The Microsoft Graph email provider can be used if a more modern integration is desired. Administrators might have to re-enable Basic authentication to allow for SMTP AUTH. For more information, see [Enable or disable SMTP AUTH](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission). Note that the [deprecation of Basic authentication for Exchange online](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online#pop-imap-and-smtp-auth) only impacts the use of Office 365 SMTP servers. Other SMTP servers that still support Basic authentication will not be impacted by this Office 365 deprecation."
+> Finance and operations apps don't support multifactor authentication or Modern auth (OAuth 2.0) for SMTP. The Microsoft Graph email provider can be used if a more modern integration is desired. Administrators might have to re-enable Basic authentication to allow for SMTP AUTH. For more information, see [Enable or disable SMTP AUTH](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission). Note that the [deprecation of Basic authentication for Exchange online](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online#pop-imap-and-smtp-auth) only impacts the use of Office 365 SMTP servers. Other SMTP servers that still support basic authentication won't be impacted by this Office 365 deprecation.
 
 ## [Administrator] Email distributor batch process
 
