@@ -29,10 +29,10 @@ The import from the follwoing electronic invoice formats are supported:
 
 Before you complete the tasks in this article, the following prerequisites must be met:
 
-- The latest version of the **Vendor Invoice Import** Electronic reporting (ER) format configuration must be imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+- The latest version (280.6 or later) of the **Vendor Invoice Import** Electronic reporting (ER) format configuration must be imported. For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 > [!NOTE]
-> The ER format is based on the **Invoice model** configuration and uses the **Vendor Invoice Mapping to Destination** configuration. All additional configurations that are required are automatically imported.
+> The ER format is based on the **Invoice model** configuration and uses the **Vendor Invoice Mapping to Destination** configuration (version 280.45 or later). All additional configurations that are required are automatically imported.
 
 ## Configure parameters
 
