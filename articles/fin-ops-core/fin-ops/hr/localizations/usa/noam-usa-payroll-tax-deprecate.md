@@ -71,7 +71,7 @@ If a page or artifact was removed that was responsible for updating the data in 
 
 ### Is there a plan to deprecate the payroll module in Dynamics 365 Human Resources?
 Currently, there are no plans to deprecate or remove the payroll module from Dynamics 365 Human Resources. If this happens in the future, the formal deprecation guidelines would be followed. For more information,
-see [One Version service updates FAQ](../../../dev-itpro/get-started/one-version.md). 
+see [One Version service updates FAQ](../../../../dev-itpro/get-started/one-version.md). 
 
 ### Will Microsoft continue to provide support for the Payroll module?  
 No. Microsoft won't make additional enhancements to our U.S. Payroll feature or other payroll functionality, but customers can still report any issues with the existing functionality and we will address those on 
