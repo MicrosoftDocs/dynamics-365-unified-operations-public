@@ -36,9 +36,12 @@ In Asset Management, you can create maintenance rounds for various assets, on wh
     - **Auto create** – Set to *Yes* if work orders should automatically be created from maintenance schedule lines that are created from this maintenance round.
     - **Work order type** – Select the work order type to be used on work orders created from this maintenance round.
     - **Service level** – Select the work order service level to be used on work orders created from this maintenance round.
-    - **Active** – Set to *Yes* to activate the maintenance round. If you set this to *No*, no schedule posts will be created in the maintenance schedule when you run a schedule maintenance plan job.
+    - **Active** – Set to *Yes* to activate the maintenance round.
     - **Assets** – This read-only value shows the number of assets related to the maintenance round.
     - **Lines** – This read-only value shows the number of lines related to the maintenance round.
+
+    > [!IMPORTANT]
+    > If you set **Active** to *No*, the system won't add any lines for this round to the maintenance schedule when the *Schedule maintenance rounds* job runs.
 
 1. On the **Asset lines** FastTab, select **Add** to add an asset to the maintenance round. Make the following settings for the new line:
     - **Line number** – A line number is automatically inserted in this field to indicate the sequence of the assets in the maintenance round.
