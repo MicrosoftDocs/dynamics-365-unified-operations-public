@@ -25,7 +25,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [banner](../../../../../finance/includes/banner.md)]
 
-Tax updates have been retired for U.S. payroll feature in Microsoft Dynamics 365 Human Resources and impacted payroll functionality 
+This article discusses the retired tax updates for the US payroll feature in Microsoft Dynamics 365 Human Resources and the impacted payroll functionality. 
 
 ## Overview
 On August 1, 2019, Microsoft made the following announcement: Microsoft strives to bring best in class Dynamics 365 offerings to its entire customer base. To that end, Microsoft continues to evaluate its portfolio
