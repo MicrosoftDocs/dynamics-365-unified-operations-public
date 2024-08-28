@@ -30,10 +30,11 @@ Tax updates have been retired for U.S. payroll feature in Microsoft Dynamics 365
 ## Overview
 On August 1, 2019, Microsoft made the following announcement: Microsoft strives to bring best in class Dynamics 365 offerings to its entire customer base. To that end, Microsoft continues to evaluate its portfolio
 of offerings. As Microsoft evaluates the impact of certain features and enhances functionality offered via ISV solutions, tax updates for the U.S. Payroll feature will no longer be supported.
-•	Tax update support will end effective October 1, 2021 for online and on-premises customers of the following solutions: Dynamics 365 for Finance (aka Unified Operations | Finance and Operations) 
-    o	Dynamics 365 Finance (online and on-premises)
-    o	Dynamics 365 Finance, Enterprise edition (online and on-premises) 
-    o	Dynamics AX 2012 R3 
+ - Tax update support ends effective October 1, 2021 for online and on-premises customers of the following solutions: Dynamics 365 for Finance (aka Unified Operations | Finance and Operations)
+     - Dynamics 365 Finance (online and on-premises)
+     - Dynamics 365 Finance, Enterprise edition (online and on-premises)
+     - Dynamics AX 2012 R3 
+
 To ensure our customers have ample time to provide for the safety of their employees, protect the health and well-being of their communities, and react to the changes needed due to COVID-19, we will extend the 
 support date for the US Payroll tax updates to July 31, 2024 for Dynamics 365 Finance. 
 
@@ -70,7 +71,7 @@ If a page or artifact was removed that was responsible for updating the data in 
 
 ### Is there a plan to deprecate the payroll module in Dynamics 365 Human Resources?
 Currently, there are no plans to deprecate or remove the payroll module from Dynamics 365 Human Resources. If this happens in the future, the formal deprecation guidelines would be followed. For more information,
-see [One Version service updates FAQ](../../dev-itpro/get-started/one-version.md). 
+see [One Version service updates FAQ](../../../dev-itpro/get-started/one-version.md). 
 
 ### Will Microsoft continue to provide support for the Payroll module?  
 No. Microsoft won't make additional enhancements to our U.S. Payroll feature or other payroll functionality, but customers can still report any issues with the existing functionality and we will address those on 
