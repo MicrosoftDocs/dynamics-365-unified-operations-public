@@ -6,7 +6,7 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 12/05/2023
+ms.date: 08/28/2024
 audience: Application User
 ms.search.region: Global
 ms.custom: bap-template
@@ -36,7 +36,7 @@ Copilot uses state-of-the-art generative AI to dynamically interpret user inquir
 
 ## Keep conversations going with Copilot follow-up questions
 
-Copilot can generate and display up to three follow-up questions that you can select to keep the conversation going. Each question is generated based on the existing conversation so far and represents something that Copilot thinks you're likely to want to ask next. This feature makes it fast and easy to post follow-up questions and get answers from Copilot. It's designed to provide a diversity of follow-up questions, and avoids repeating questions you have already asked.
+Copilot can generate and display up to three follow-up questions that you can select to keep the conversation going. Each question is generated based on the existing conversation so far and represents something that Copilot thinks you're likely to want to ask next. This feature makes it fast and easy to post follow-up questions and get answers from Copilot. It's designed to provide a diversity of follow-up questions, and avoids repeating questions you've already asked.
 
 For more information about this feature, see [Responsible AI FAQ for Follow-up questions in the Copilot sidecar](faq-copilot-suggested-questions.md).
 

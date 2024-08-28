@@ -103,10 +103,10 @@ As was previously mentioned, most Copilot features in finance and operations app
 | All finance and operations apps | Basic Copilot support | There are no additional requirements. |
 | All finance and operations apps | Generative help and guidance with Copilot | [Enable generative help and guidance with Copilot](enable-copliot-generative-help.md). |
 | All finance and operations apps | Follow-up questions in the Copilot sidecar | [Enable generative help and guidance with Copilot](enable-copliot-generative-help.md). |
+| All finance and operations apps | Workflow history summary | [Turn on Copilot support for the Workflow history page](../../fin-ops/organization-administration/workflow-history-summary.md) |
 | Dynamics 365 Commerce | Use Copilot in site builder to enrich product detail pages | [Enable Copilot in site builder](../../../commerce/copilot-site-builder.md). |
 | Dynamics 365 Finance | Collections coordinator summary | [Enable collections coordinator summary](../../../finance/accounts-receivable/CollectionsCoordinatorSummary.md). |
 | Dynamics 365 Finance | Customer page summary | [Enable customer page summary](../../../finance/accounts-receivable/CustomerPageSummary.md). |
-| Dynamics 365 Finance | Workflow history summary | [Enable workflow history summary](../../fin-ops/organization-administration/workflow-history-summary.md). |
 | Dynamics 365 Supply Chain Management | AI summaries with Copilot | [Enable AI summaries with Copilot](../../../supply-chain/get-started/copilot-summaries-overview.md). |
 | Dynamics 365 Supply Chain Management | [Analyze demand plans with Copilot](../../../supply-chain/demand-planning/demand-planning-copilot.md) | This feature is installed and enabled by default in Demand planning version 1.0.0.1067 and later. |
 | Dynamics 365 Supply Chain Management | [Inquire into inventory with Copilot](../../../supply-chain/inventory/inventory-visibility-copilot-api.md) | This feature is installed and enabled by default in Inventory Visibility version 1.2.2.127 and later. |
