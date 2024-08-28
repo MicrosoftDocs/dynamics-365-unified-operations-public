@@ -70,5 +70,6 @@ To add AI general knowledge to Copilot, follow these steps.
 ## Related information
 
 - [Generative help and guidance with Copilot](../../fin-ops/copilot/copliot-generative-help.md)
+- [Enable generative help and guidance with Copilot](enable-copliot-generative-help.md)
 - [Responsible AI FAQ for Generative help and guidance with Copilot in finance and operations apps](../../fin-ops/copilot/faq-copilot-generative-help.md)
-- [Responsible AI FAQ for Suggested questions within Copilot](../../fin-ops/copilot/faq-copilot-suggested-questions.md)
+- [Responsible AI FAQ for Follow-up questions in the Copilot sidecar (preview)](../../fin-ops/copilot/faq-copilot-suggested-questions.md)
