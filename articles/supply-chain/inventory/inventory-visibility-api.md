@@ -50,6 +50,7 @@ The following table lists the APIs that are currently available:
 | `/api/environment/{environmentId}/allocation/query` | Post | [Query allocation result](inventory-visibility-allocation.md#using-allocation-api) |
 | `/api/environment/{environmentId}/onhand/productsearch/indexquery` | Post | [Post index query with product search](#query_with_product_search) |
 | `/api/environment/{environmentId}/onhand/productsearch/exactquery` | Post | [Post exact query with product search](#exact-query-with-product-search) |
+| `/api/environment/{environmentId}/transaction/adjustment/bulk` | Post | [Sync external inventory changes through Inventory Visibility](inventory-visibility-sync-changes.md) |
 
 > [!NOTE]
 > The {environmentId} part of the path is the environment ID of Microsoft Dynamics 365 Supply Chain Management.
