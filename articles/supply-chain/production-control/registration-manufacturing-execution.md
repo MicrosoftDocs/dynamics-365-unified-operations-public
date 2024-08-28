@@ -53,7 +53,6 @@ Before you can use the **Skip time adjustments** option, your system must meet t
 > This feature changes the way that automatic route consumption works.
 >
 > - When the feature is enabled, route groups that are set up to use estimated production times to calculate actual production order costs don't also include recorded times.
-> - When the feature is disabled, both recorded and estimated times are used in cost calculations. This behavior can produce unexpected results.
 
 ### Set the Skip time adjustments option
 
