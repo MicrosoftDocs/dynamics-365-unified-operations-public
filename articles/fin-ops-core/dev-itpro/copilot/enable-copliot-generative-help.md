@@ -42,7 +42,7 @@ The *[Follow-up questions in the Copilot sidecar](../../fin-ops/copilot/faq-copi
 To use this capability in your environment, your system must meet the following requirements:
 
 - You must be running finance and operations apps version 10.0.41 or later.
-- The feature that is named *(Preview) Follow-up questions in the Copilot sidecar* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that is named *(Preview) Follow-up questions in the Copilot sidecar* must be turned on in [feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md).
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
