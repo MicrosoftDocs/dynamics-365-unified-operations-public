@@ -63,7 +63,8 @@ To set up the feature for the first time, follow these steps.
 1. On the **Transaction** tab, set the **Enable adjustment journal sync** option to *Yes*.
 1. Select **Generate configurations** to run an automatic deployment script that initializes the configuration in Supply Chain Management and the Inventory Visibility service.
 1. Select **Enable posting job** to open the **Inventory Visibility posting job** dialog box.
-1. Select **OK** to run the job and close the dialog box.
+1. Each time the *Inventory Visibility posting job* runs, it automatically posts the inventory adjustment journals submitted from the Inventory Visibility business layer. You should schedule this job to run as often as is appropriate for your business. Depending on the volume of incoming data, this job can be resource intensive, so we recommend scheduling it to run during off-peak hours. Select the **Recurrence** link to open the **Define recurrence** dialog, use it to set up your schedule, and then select **OK** to save your settings.
+1. Select **OK** to close the dialog box.
 
 ### Manage the feature configuration
 
