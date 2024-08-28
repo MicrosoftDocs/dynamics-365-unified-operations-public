@@ -6,7 +6,6 @@ ms.author: yanansong
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-audience: Application User 
 ms.search.form: CostingVersion, InventItemPrice
 ms.assetid: 7ba0c408-2450-4042-9542-6fdf83c12e6c
 ---

@@ -5,7 +5,6 @@ author: t-benebo
 ms.date: 11/04/2019
 ms.topic: how-to 
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, SysQueryForm, InventItemIdLookupSimple, ReqLog, ReqProcessTaskTrace
-audience: Application User 
 ms.reviewer: kamaybac
 ms.author: benebotg
 ---

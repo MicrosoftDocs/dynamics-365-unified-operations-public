@@ -6,7 +6,6 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-audience: Application User 
 ms.search.form: PCGlobalTableConstraintEdit, PCProductConfigurationModelDetails, PCTableConstraintAttachAttributeTree, PCTableConstraintDefinition
 ms.assetid: 5c12b1f2-eb89-4648-a755-de412f2eadd6
 ---
@@ -45,7 +44,7 @@ The next table shows the combinations that are defined by the **Color and finish
 | Black          | Black                       |
 | Black          | Metal                       | 
 
-You can create system-defined and user-defined table constraints. For more information, see [System-defined and user-defined table constraints](system-defined-user-defined-table-constraints.md).
+You can create system-defined and user-defined table constraints. Learn more in [System-defined and user-defined table constraints](system-defined-user-defined-table-constraints.md).
 
 ## What syntax should be used to write constraints?
 You must use Optimization Modeling Language (OML) syntax when you write constraints. The system uses Microsoft Solver Foundation constraint solver to solve the constraints.
@@ -230,7 +229,7 @@ You can't use reserved keywords as solver names for attributes, components, or s
 -   Goal
 
 
-## Additional resources
+## Related information
 
 [Create an expression constraint](tasks/add-expression-constraint-product-configuration-model.md)
 

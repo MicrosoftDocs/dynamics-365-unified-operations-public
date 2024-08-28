@@ -60,8 +60,8 @@ You can set up functional location stages and functional location types to handl
 
 Before you can automatically create an asset on a functional location, the following setup data must be available:
 
-- Create a functional location type to handle the automatic creation of an asset. In the **Asset type** field, select an asset type. For more information, see [Functional location types](../setup-for-functional-locations/functional-location-types.md).
-- Create a functional location lifecycle state to handle the automatic creation of an asset. Set the **Create asset** option to **Yes**. For more information, see [Functional location lifecycle states](../setup-for-functional-locations/functional-location-stages.md).
+- Create a functional location type to handle the automatic creation of an asset. In the **Asset type** field, select an asset type. Learn more in [Functional location types](../setup-for-functional-locations/functional-location-types.md).
+- Create a functional location lifecycle state to handle the automatic creation of an asset. Set the **Create asset** option to **Yes**. Learn more in [Functional location lifecycle states](../setup-for-functional-locations/functional-location-stages.md).
 
 After the setup data is available, you're ready to create an asset.
 

@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 08/09/2019
 ms.custom:
 ms.reviewer: kamaybac   
-audience: Application User  
 ms.search.form: ReqItemJournalName, ReqItemJournalSafetyStock, EcoResProductInformationDialog, EcoResProductDetailsExtended, ReqItemTable
 ---
 

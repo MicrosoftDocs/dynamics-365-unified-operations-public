@@ -5,7 +5,6 @@ author: t-benebo
 ms.date: 07/01/2019
 ms.topic: how-to 
 ms.search.form: ReqGroup, DefaultDashboard, EcoResProductDetailsExtended, EcoResProductCreate, InventItemOrderSetup, ReqItemTable   
-audience: Application User 
 ms.reviewer: kamaybac
 ms.author: benebotg
 ---

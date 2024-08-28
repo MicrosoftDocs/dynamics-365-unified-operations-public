@@ -90,7 +90,7 @@ To simplify the inventory transactions when quality orders that sample inventory
 
 To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, it's turned on by default. As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off. If you're running a version older than 10.0.32, then admins can turn this functionality on or off by searching for the *Disable expected receipts from quality orders that sample blocked inventory* feature in the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-## Additional resources
+## Related information
 
 - [Create and maintain an inventory blocking](tasks/create-maintain-inventory-blocking.md)
 - [Quality management processes](quality-management-processes.md)

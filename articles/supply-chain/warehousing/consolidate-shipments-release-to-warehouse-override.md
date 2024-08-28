@@ -67,7 +67,7 @@ Follow these steps to review the shipments that were created.
 1. Find and select the required shipment.
 1. In the **Shipment consolidation policy** field, review the consolidation policy that was used when the shipment was created.
 
-## Additional resources
+## Related information
 
 - [Shipment consolidation policies overview](about-shipment-consolidation-policies.md)
 - [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md)

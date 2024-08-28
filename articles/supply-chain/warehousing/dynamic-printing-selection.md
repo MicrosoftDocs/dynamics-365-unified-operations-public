@@ -88,7 +88,7 @@ Follow these steps to configure the license plate label routing.
 
 ## Set up default label printers for specific workers and locations
 
-After your printers and label layouts are set up, you can set up default label printers for specific workers and locations. The settings define the printer that the system selects for the current worker and/or location when you use dynamic printer selection. For more information, see the [How the system selects a printer](#resolve-printer) section later in this article.
+After your printers and label layouts are set up, you can set up default label printers for specific workers and locations. The settings define the printer that the system selects for the current worker and/or location when you use dynamic printer selection. Learn more in the [How the system selects a printer](#resolve-printer) section later in this article.
 
 Follow these steps to set up default label printers for each worker and/or location.
 
@@ -136,7 +136,7 @@ When a print job is run, the system uses the following sequence to identify whic
 1. If no printer is found, a fallback printer, if provided, is used. Fallback printers are configured for specific label printing scenarios, such as license plate label printing or container label printing. See Additional resources for more information.
 1. If no override or default printer is found, no label is printed.
 
-## Additional resources
+## Related information
 
 - [License plate label layouts and printing](print-license-plate-labels-using-label-layouts.md)
 - [Container label layouts and printing](print-container-labels.md)

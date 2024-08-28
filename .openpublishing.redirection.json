@@ -27783,6 +27783,116 @@
       "source_path": "articles/fin-ops-core/dev-itpro/m365-copilot/faq-for-chat-with-fno-data-on-m365copilot.md",
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/m365-copilot/chat-with-fno-data-on-m365copilot",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/help/custom-help-toolkit-converthtmltojson.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/help/custom-help-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/help/custom-help-toolkit-htmllocalechanger.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/help/custom-help-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/help/migrate-dynamicsax2012.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/help/custom-help-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/help/preparing-content.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/help/custom-help-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/procurement-sourcing.md",
+      "redirect_url": "/dynamics365/supply-chain/procurement/procurement-sourcing-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/task-recorder-retail-pos.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/pos-rsat.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-adyen.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-cf-e-sat.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-commerce-localization.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-customer-information.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-deployment.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-nfce-cancel-return.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-nfce-contingency-mode.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-nfce.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-retail-statements.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/russia/rus-commerce-localization.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/russia/rus-commerce-prepayments.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/russia/rus-commerce-setup.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/russia/rus-customer-information.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/russia/rus-fpi-sample.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/russia/rus-simplified-address.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
     }
   ]
 }

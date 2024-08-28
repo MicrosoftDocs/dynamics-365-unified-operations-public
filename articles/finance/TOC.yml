@@ -1675,17 +1675,25 @@
                         - name: Australia and New Zealand
                           href: localizations/apac/gs-apac-aus-nzl-electronic-invoices.md?context=/dynamics365/context/finance
                         - name: Chile
-                          href: localizations//iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/finance                          
+                          items:
+                            - name: Get started with Electronic invoicing for Chile
+                              href: localizations//iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/finance
+                            - name: Vendor electronic invoice import in Chile
+                              href: localizations//iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/finance
                         - name: Indonesia
                           href: localizations/indonesia/gs-e-invoicing-id-get-started.md?context=/dynamics365/context/finance
                         - name: Malaysia
                           href: localizations//malaysia/apac-mys-e-invoices.md?context=/dynamics365/context/finance
+                        - name: Panama
+                          href: localizations//iberoamerica/ltm-panama-ei-connec-configuration.md?context=/dynamics365/context/finance                           
                         - name: Poland (preview)
                           href: localizations/poland/gs-e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
                         - name: Saudi Arabia
-                          href: localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
-                        - name: Saudi Arabia - onboarding
-                          href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
+                          items:
+                            - name: Electronic invoicing in Saudi Arabia
+                              href: localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
+                            - name: Onboarding for electronic invoicing in Saudi Arabia
+                              href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
                     - name: Electronic Invoicing FAQ
                       href: localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/finance
                 - name: Electronic Invoicing (RCS)
@@ -2328,6 +2336,8 @@
                       href: localizations/iberoamerica/ltm-chile-elec-invo-conncection.md
                     - name: Configure electronic invoice parameters for Chile
                       href: localizations/iberoamerica/ltm-chile-conf-electronic-invoice.md
+                    - name: Vendor electronic invoice import in Chile
+                      href: localizations/iberoamerica/ltm-chl-vend-e-invoice.md                      
                     - name: Generate and print the Fees certificate report
                       href: localizations/iberoamerica/ltm-chile-fees-certificate-resume.md
                     - name: Generate and print the Withholding tax book report for Chile
@@ -2864,42 +2874,6 @@
                       href: localizations/india/india.md
                     - name: Scope of the Indian localizations
                       href: localizations/india/apac-ind-scope.md
-                    - name: What's new or changed for India localization
-                      items:
-                        - name: What's new or changed in 10.0.20 - 10.0.22
-                          href: localizations/india/ind-news-letter-10-0-20-22.md
-                        - name: What's new or changed in 10.0.15 - 10.0.19
-                          href: localizations/india/ind-news-letter-10-0-15-19.md
-                        - name: What's new or changed in 10.0.14
-                          href: localizations/india/apac-ind-news-letter-10-0-14.md
-                        - name: What's new or changed in 10.0.13
-                          href: localizations/india/ind-news-letter-10-0-13.md
-                        - name: What's new or changed in 10.0.12
-                          href: localizations/india/apac-ind-news-letter-10-0-12.md
-                        - name: What's new or changed in 10.0.11
-                          href: localizations/india/apac-ind-news-letter-10-0-11.md
-                        - name: What's new or changed in 10.0.10
-                          href: localizations/india/apac-ind-news-letter-10-0-10.md
-                        - name: What's new or changed in 10.0.09
-                          href: localizations/india/apac-ind-news-letter-10-0-09.md
-                        - name: What's new or changed in 10.0.08
-                          href: localizations/india/apac-ind-news-letter-10-0-08.md
-                        - name: What's new or changed in 10.0.07
-                          href: localizations/india/apac-ind-news-letter-10-0-07.md
-                        - name: What's new or changed in 10.0.06
-                          href: localizations/india/apac-ind-news-letter-10-0-06.md
-                        - name: What's new or changed in 10.0.05
-                          href: localizations/india/apac-ind-news-letter-10-0-05.md
-                        - name: What's new or changed in 10.0.04
-                          href: localizations/india/apac-ind-news-letter-10-0-04.md
-                        - name: What's new or changed in 10.0.03
-                          href: localizations/india/apac-ind-news-letter-10-0-03.md
-                        - name: What's new or changed in 10.0.02
-                          href: localizations/india/apac-ind-news-letter-10-0-02.md
-                        - name: What's new or changed in 10.0.01
-                          href: localizations/india/apac-ind-news-letter-10-0-01.md
-                        - name: What's new or changed in 10.0.0
-                          href: localizations/india/apac-ind-news-letter-10-0-00.md
                     - name: Audit trail and edit logs for accounting software
                       href: localizations/india/apac-ind-audit-trail-edit-logs-accounting-software.md
                     - name: Electronic invoices in India
@@ -3770,7 +3744,7 @@
                       href: localizations/iberoamerica/panama.md
                     - name: Set up a legal entity and tax information for Panama
                       href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-panama.md
-                    - name: Set up electronic invoicing for Panama
+                    - name: Get started with Electronic invoicing for Panama
                       href: localizations/iberoamerica/ltm-panama-ei-connec-configuration.md
                     - name: Configure electronic invoice parameters for Panama
                       href: localizations/iberoamerica/ltm-panama-elect-inv-conf.md

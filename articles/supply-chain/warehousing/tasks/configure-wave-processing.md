@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 03/17/2021
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User  
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSParameters, ProdParameters, whswavetablecreatenew, WHSWaveTable, WHSWaveAttributes, WHSKanbanWaveTable, WHSWaveTableListPage, WHSKanbanWaveTableListPage
 ---
 
@@ -54,7 +53,7 @@ This example scenario walks through many of the diverse settings that affect how
     For sales orders and kanban orders, inventory must be reserved before the order is released to the warehouse. Otherwise, the items or allocation lines cannot be processed in a wave. For production orders, you also have the option of choosing **Allow partial reservation**. For example, this is useful if you have the materials that you need to start production, and can wait until the additional materials become available to finish the process. If you select this option, you must manually repeat the release to warehouse process when the additional materials become available.
 1. Close the page.
 
-## Additional resources
+## Related information
 
 - [Wave creation and processing](../wave-processing.md)
 

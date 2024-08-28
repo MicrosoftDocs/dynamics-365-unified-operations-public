@@ -43,10 +43,6 @@ If an item requirement is created on a service order, you cannot delete the serv
 1. In the **Projects** form, in the right pane, select **Item requirements**. The **Item requirements** form lists the item requirements that are associated with the selected project.
 1. Select the item requirement to delete, and then select **Delete**.
 
-## See also
-
-[Item requirements (form)](https://technet.microsoft.com/library/aa552021\(v=ax.60\))
-
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -35,8 +35,5 @@ To process a return, first validate the return quantity, update the quantity fie
 
 After the journal is posted, the returned items are registered in inventory, and the **Return orders** form indicates that the items have arrived at the warehouse.
 
-## See also
-
-- [Location journal (form)](https://technet.microsoft.com/library/aa584822\(v=ax.60\))
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

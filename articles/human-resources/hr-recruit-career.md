@@ -4,7 +4,7 @@
 title: Configure the careers site in the HR Recruiting app (preview)
 description: This article explains how to configure the careers site in the HR Recruiting app in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 07/01/2024
+ms.date: 08/23/2024
 ms.topic: article
 # optional metadata
 
@@ -53,7 +53,7 @@ To configure external identity providers, follow these steps.
 
 1. Sign in to [Power Pages](https://make.powerpages.microsoft.com/).
 1. Select your active site, and then select **Edit**.
-1. In the left pane, select **Setup**.
+1. In the left pane, select **Security**.
 1. Select **Identity providers**.
 1. You can enable or disable any provider. The **Local sign in** and **Azure Active Directory** configurations for the providers contain "dummy" values.
 

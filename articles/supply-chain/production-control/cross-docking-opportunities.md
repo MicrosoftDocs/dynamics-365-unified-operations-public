@@ -106,9 +106,9 @@ After a product is reported as finished at the production line it is transferred
 8.  Go to the mobile device portal, and select the **Report as finished and put away** menu item.
 9.  Report item number **L0101** as finished from the handheld device. Note that the put location is now **BAYDOOR 2**. This location is found from the appointment schedule instead of the **Transfer receipt** location directive.
 
-### Additional information
+## Related information
 
--   The cross docking scenario is supported for batch and serial controlled items, both with the batch and serial number dimensions defined above and below location in the reservation hierarchy. 
+- The cross docking scenario is supported for batch and serial controlled items, both with the batch and serial number dimensions defined above and below location in the reservation hierarchy. 
 
 
 

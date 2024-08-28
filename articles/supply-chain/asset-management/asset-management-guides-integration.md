@@ -99,7 +99,7 @@ To associate a guide with a maintenance checklist template, follow these steps.
 > [!IMPORTANT]
 > There is a known issue where, when you associate a maintenance checklist template with a default maintenance job type, the guide that is linked to the template doesn't appear on the **Associated guides** FastTab of the **Maintenance job type defaults** page. However, the guide will appear after that job type is applied to a work order on the **Associated guides** FastTab.
 
-## See also
+## Related information
 
 - [Dual-write overview](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md)
 - [Asset management overview](index.md)

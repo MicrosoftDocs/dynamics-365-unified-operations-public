@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 01/30/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Developer
 ms.search.form:
 ---
 
@@ -19,7 +18,7 @@ ms.search.form:
 
 Microsoft Power Platform provides a unified developer experience that includes tools and environments for writing and debugging extensions for the Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management. This topic provides an overview of the process for setting up a development environment and testing your extensions.
 
-For more information, see [Unified developer experience for finance and operations apps](/power-platform/developer/unified-experience/finance-operations-dev-overview).
+Learn more in [Unified developer experience for finance and operations apps](/power-platform/developer/unified-experience/finance-operations-dev-overview).
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 

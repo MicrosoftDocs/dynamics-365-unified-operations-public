@@ -51,7 +51,7 @@ The illustration below shows an example of the **Asset aggregated value** page.
 
 Note the following points:
 
-- You can still create manual counter value registrations for counter types that are automatically updated. For more information, see [Manual update of asset counters](../work-orders/manual-update-of-asset-counters.md).
+- You can still create manual counter value registrations for counter types that are automatically updated. Learn more in [Manual update of asset counters](../work-orders/manual-update-of-asset-counters.md).
 
 - You can set up counters that are related to another counter. In this case, when a counter is updated, related counters are automatically updated at the same time. For more information about how to set up related counters, see [Counters](../setup-for-objects/counters.md).
 

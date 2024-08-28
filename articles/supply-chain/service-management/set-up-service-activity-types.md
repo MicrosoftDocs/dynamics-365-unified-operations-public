@@ -30,9 +30,7 @@ ms.search.form: smmActivityTypeGroup
 
 5.  Close the form to save your changes.
 
-## See also
-
-[Activity types (form)](https://technet.microsoft.com/library/aa583718\(v=ax.60\))
+## Related information
 
 [Dispatch board](dispatch-board.md)
 

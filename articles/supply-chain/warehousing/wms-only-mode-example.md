@@ -52,7 +52,7 @@ Before you can work through this example by using a Supply Chain Management envi
 
 - Check the version requirements, and enable the feature as described in [Enable and configure warehouse management only mode](wms-only-mode-setup.md).
 - Work in a system where the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) is installed, and select the *USMF* legal entity.
-- Set up at least one record on the **Source systems** page. This example scenario assumes that you've set up a source system where the **Source system** field is set to *ERP*. For more information, see [Configure your source systems](wms-only-mode-setup.md#source-systems).
+- Set up at least one record on the **Source systems** page. This example scenario assumes that you've set up a source system where the **Source system** field is set to *ERP*. Learn more in [Configure your source systems](wms-only-mode-setup.md#source-systems).
 - Set up the required number sequences as described in [Set up number sequences](wms-only-mode-setup.md#number-sequences).
 
 ## Set up authentication for the example

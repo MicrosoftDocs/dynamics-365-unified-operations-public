@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 03/23/2021
 ms.custom:
 ms.reviewer: kamaybac 
-audience: Application User 
 ms.search.form:
 ---
 
@@ -215,7 +214,7 @@ To close a nonconformance, follow these steps.
 1. You're prompted to confirm your selection. Select **Yes** to continue.
 1. Close the pages.
 
-## Additional resources
+## Related information
 
 - [Quality management overview](../quality-management-processes.md)
 - [Enable quality and nonconformance management](../enable-quality-management.md)

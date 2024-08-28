@@ -85,7 +85,7 @@ For a mobile device container packing policy to take effect, you must assign it 
     - **Activity code** – This field must be set to *Pack inventory into containers*.
     - **Packing policy ID** – Select the mobile device container packing policy to use with the menu item.
 
-## Additional resources
+## Related information
 
 - [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md)
 - [Example scenario – Pack containers with the Warehouse Management mobile app](warehouse-app-pack-containers-scenario.md)

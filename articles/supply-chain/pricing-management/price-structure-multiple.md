@@ -20,7 +20,7 @@ This article explains how to set up multiple price structures in a company. The 
 
 In this scenario, companies and price structures have a one-to-many (1:N) relationship, and the multiple price structures are also known as *price trees*. The pricing engine will select a price structure based on the specified *price tree attribute*, which is one of the order attributes. After it determines the applicable price structure, the price engine will match the sales order with the price component codes according to the pricing sequence that's defined in the applicable price tree.
 
-Price trees are the multiple-structure equivalent of the price component code setup for single price structures, and they provide almost all the same settings. For more information, see [Set up a company to use a single price structure](price-structure-single.md).
+Price trees are the multiple-structure equivalent of the price component code setup for single price structures, and they provide almost all the same settings. Learn more in [Set up a company to use a single price structure](price-structure-single.md).
 
 ## Configure a company to use multiple price structures
 

@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 11/11/2016
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User 
 ms.search.form:
 ---
 

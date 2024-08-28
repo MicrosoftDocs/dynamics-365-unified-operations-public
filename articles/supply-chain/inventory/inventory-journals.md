@@ -88,7 +88,7 @@ Data entities support the following types of integration scenarios:
 - Synchronous service (OData)
 - Asynchronous integration
 
-For more information, see [Data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
+Learn more in [Data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
 
 > [!NOTE]
 > Not all inventory journals are OData-enabled, therefore you cannot use the Excel data connector to get data published, updated, and imported back to Supply Chain Management.
@@ -106,7 +106,7 @@ These two inventory journals only support the *Initialize stock* scenario as par
     - Header 3: will contain 20 lines
 - It's assumed that unique line information exists per inventory dimension, which can be a product, storage, and tracking dimension. Therefore, it’s not possible to import journal lines where only the date field differs on the lines within the same import project.
 
-## Additional resources
+## Related information
 
 - [Data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities.md)
 

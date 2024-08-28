@@ -25,7 +25,7 @@ ms.search.form: SMAServiceOrderTable
 >
 > Also, you can only delete service orders with a stage that lets you delete them.
 
-## Additional resources
+## Related information
 
 - [Service orders](service-orders.md)
 

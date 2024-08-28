@@ -65,7 +65,7 @@ To create service object groups, follow these steps:
 
 You can assign service objects to the group by using the **Service objects** form. 
 
-## See also
+## Related information
 
 [Create service objects](create-service-objects.md)
 

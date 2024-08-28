@@ -51,11 +51,11 @@ If you want to turn any of these features on or off, you must do so in [feature 
 | Sales and marketing | (Preview) Pricing management - Allow applying adjustments to standard trade agreements | Allows sales managers to choose whether or not to apply adjustments to standard trade agreements. |
 | Sales and marketing | (Preview) Skip Completion for pricing management enhanced orders | When this feature is enabled, you no longer need to select **Complete** to proceed with a a sales order that uses Pricing management features. However, you still need to select **Recalculate** to update outdated sales line prices. Funds aren't supported for sales orders where the user opted to skip order completion. |
 
-## Additional resources
+## Related information
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.37 includes platform updates. To learn more, see [Platform updates for version 10.0.37 of finance and operations apps (November 2023)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-37.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.37 includes platform updates. Learn more in [Platform updates for version 10.0.37 of finance and operations apps (November 2023)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-37.md).
 
 ### Bug fixes
 

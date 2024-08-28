@@ -219,13 +219,13 @@ For information about how to set up document routing, see [License plate label l
 
 ## Run a scenario to print custom labels
 
-If you want to experiment with printing labels, you can set up a scenario for printing location labels. For more information, see [Custom label layouts printing](../warehousing/custom-label-layouts-and-printing.md). Follow the instructions there, and confirm that the scenario that's described in this article is supported.
+If you want to experiment with printing labels, you can set up a scenario for printing location labels. Learn more in [Custom label layouts printing](../warehousing/custom-label-layouts-and-printing.md). Follow the instructions there, and confirm that the scenario that's described in this article is supported.
 
 ## <a name="review-log"></a>Review the external service request log
 
 The external service request log contains information about each request that the system sends to an external service. It can help you troubleshoot issues.
 
-The amount of detail that's recorded in the log depends on the **Log level** and **Log request bodies** settings that are specified for each external service instance. (For more information, see the [External service instance configuration](#service-instance) section earlier in this article.)
+The amount of detail that's recorded in the log depends on the **Log level** and **Log request bodies** settings that are specified for each external service instance. (Learn more in the [External service instance configuration](#service-instance) section earlier in this article.)
 
 For each request, the system will confirm that the external service has returned the HTTP success code (200). If a different HTTP code is returned (for example 4xx or 5xx), the system will report an error, provided that you've enabled the relevant logging options.
 
@@ -236,7 +236,7 @@ Follow these steps to review the request log that's generated while labels are p
 1. On the Action Pane, select **Request details**.
 1. Review the log.
 
-## Additional resources
+## Related information
 
 - [Label Layouts](../warehousing/print-license-plate-labels-using-label-layouts.md)
 - [Document routing label layouts](../warehousing/document-routing-layout-for-license-plates.md)

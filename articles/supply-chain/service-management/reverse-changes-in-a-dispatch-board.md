@@ -28,7 +28,7 @@ Use the following steps to reverse unsaved changes in a dispatch board:
 
 4.  To reverse a series of changes that are not saved, continue clicking **Undo** until each change that you want to discard is reversed.
 
-## See also
+## Related information
 
 [Dispatch board](dispatch-board.md)
 

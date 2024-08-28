@@ -16,7 +16,7 @@ ms.search.form:
 
  
 
-The **Maintenance budget lines** page shows all the budget lines that have been created for the budget that is selected on the **Maintenance budgets** page. (For more information, see [Create maintenance budgets](create-maintenance-budget.md).) You can recalculate and adjust maintenance budget lines until the maintenance budget is approved. After the budget period has passed, and costs have been posted in Asset Management, you can also update the budget lines with actual costs.
+The **Maintenance budget lines** page shows all the budget lines that have been created for the budget that is selected on the **Maintenance budgets** page. (Learn more in [Create maintenance budgets](create-maintenance-budget.md).) You can recalculate and adjust maintenance budget lines until the maintenance budget is approved. After the budget period has passed, and costs have been posted in Asset Management, you can also update the budget lines with actual costs.
 
 ## Recalculate a maintenance budget
 

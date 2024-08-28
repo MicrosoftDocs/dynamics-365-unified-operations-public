@@ -24,11 +24,6 @@ View and modify the list of stage reasons for a service order. Use stage reasons
 
   - On the **Stage reasons** form, click **New** to create a new stage reason code.
 
-## See also
-
-[Stage reasons (form)](https://technet.microsoft.com/library/aa582897\(v=ax.60\))
-
-  
 
 
 

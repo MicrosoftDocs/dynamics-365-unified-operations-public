@@ -6,7 +6,6 @@ ms.author: johanho
 ms.topic: article
 ms.date: 05/04/2022
 ms.reviewer: kamaybac
-audience: Developer, IT Pro
 ms.search.form:
 ---
 
@@ -207,7 +206,7 @@ The following procedure shows an example of how to add date and time controls to
     }
     ```
 
-## Additional resources
+## Related information
 
 - [Style the production floor execution interface](../production-control/production-floor-execution-styles.md)
 - [Design the production floor execution interface](../production-control/production-floor-execution-tabs.md)

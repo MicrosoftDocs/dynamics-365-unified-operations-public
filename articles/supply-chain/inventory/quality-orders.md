@@ -18,7 +18,7 @@ This article describes how to manually or automatically create quality orders, a
 
 ## Automatically created quality orders
 
-You can configure the system so that it automatically creates quality orders, based on item sampling rules. For more information, see [Quality management item sampling](quality-item-sampling.md).
+You can configure the system so that it automatically creates quality orders, based on item sampling rules. Learn more in [Quality management item sampling](quality-item-sampling.md).
 
 ## <a name="manual-quality-orders"></a>Manually create quality orders
 
@@ -166,7 +166,7 @@ When a quality order is automatically generated from a quality association, the 
 
 If you aren't using full blocking, or if you're manually creating a quality order, the system automatically creates an inventory blocking record for the quantity of the item that is being tested on the quality order. In the record that is created on the **Inventory blocking** page, the **Inventory blocking type** field is set to *Quality order*.
 
-To view and edit the inventory blocking for a quality order that is selected on the **Inventory blocking** page, select **Inquiries \> Inventory blocking** on the Action Pane. For more information, see [Inventory blocking](inventory-blocking.md).
+To view and edit the inventory blocking for a quality order that is selected on the **Inventory blocking** page, select **Inquiries \> Inventory blocking** on the Action Pane. Learn more in [Inventory blocking](inventory-blocking.md).
 
 ### Inquire about the details of a quality order
 
@@ -190,7 +190,7 @@ You work for a manufacturing company that must follow strict regulations that ar
 
 You work for a distribution company that ships products that can be customized for various countries and regions. Some customers have strict specifications that must be followed. Otherwise, fees and returns or chargebacks might be incurred. You use quality orders to track the details about each test and results that match customer requirements. Cases are used to review and approve the details for the CoA before the document is generated and attached together with other shipping paperwork.
 
-## Additional resources
+## Related information
 
 - [Quality management processes](quality-management-processes.md)
 - [Quality test](quality-tests.md)

@@ -66,7 +66,7 @@ ms.search.form: SMAAgreementTable
 
 4.  Close the forms to save your changes.
 
-## See also
+## Related information
 
 [Delete a service BOM](delete-service-bom.md)
 

@@ -30,13 +30,12 @@ In order to help you quickly gauge the urgency of a service order, the Gantt cha
 
 
 
-## See also
+## Related information
 
 [Prioritize service orders](prioritize-service-orders.md)
 
 [Monitor service activities](monitor-service-activities.md)
 
-[Dispatch board (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))
 
   
 
