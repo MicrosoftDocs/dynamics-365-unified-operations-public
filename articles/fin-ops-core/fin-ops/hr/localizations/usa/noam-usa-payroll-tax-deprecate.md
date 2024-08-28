@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deprecation of US payroll tax updates
-description: This article describes the deprecation of tax updates for US payroll.
+description: This article describes the deprecation of tax updates for US payroll and summarizes questions that are frequently asked.
 author: aolson
 ms.date: 08/28/2024
 ms.topic: article 
@@ -22,8 +22,8 @@ ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
 ---
 
-# Deprecation of US payroll tax updates
-Tax updates retired for U.S. payroll feature in Microsoft Dynamics 365 Human Resources and impacted payroll functionality 
+# Deprecation of US payroll tax updates FAQ
+Tax updates have been retired for U.S. payroll feature in Microsoft Dynamics 365 Human Resources and impacted payroll functionality 
 
 ## Overview
 On August 1, 2019, Microsoft made the following announcement: Microsoft strives to bring best in class Dynamics 365 offerings to its entire customer base. To that end, Microsoft continues to evaluate its portfolio
@@ -68,7 +68,7 @@ If a page or artifact was removed that was responsible for updating the data in 
 
 ### Is there a plan to deprecate the payroll module in Dynamics 365 Human Resources?
 Currently, there are no plans to deprecate or remove the payroll module from Dynamics 365 Human Resources. If this happens in the future, the formal deprecation guidelines would be followed. For more information,
-see [One Version service updates FAQ](../dev-itpro/get-started/one-version.md). 
+see [One Version service updates FAQ](../../dev-itpro/get-started/one-version.md). 
 
 ### Will Microsoft continue to provide support for the Payroll module?  
 No. Microsoft won't make additional enhancements to our U.S. Payroll feature or other payroll functionality, but customers can still report any issues with the existing functionality and we will address those on 
