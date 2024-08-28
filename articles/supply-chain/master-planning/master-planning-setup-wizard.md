@@ -7,12 +7,7 @@ ms.topic: article
 ms.date: 10/21/2019
 ms.custom: 
 ms.reviewer: kamaybac 
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2019-05-31
 ms.search.form: ReqCreatePlanWorkspace
-ms.dyn365.ops.version: AX 10.0.0
 ---
 
 # Master planning setup wizard
@@ -37,13 +32,13 @@ The first page of the wizard asks about the specific requirements of your compan
 
 If the number of threads that is calculated exceeds 75 percent of the available number of threads, it's capped at 75 percent of the number of threads that is available for each customer. (The number of available threads will be determined for each customer.)
 
-For more information, see [Number of threads](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads).
+Learn more in [Number of threads](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads).
 
 ### Bundle size
 
 The bundle size will be set to **1**. This value is often the best value, because it helps improve the performance of master planning.
 
-For more information, see [Number of tasks in helper task bundle](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle).
+Learn more in [Number of tasks in helper task bundle](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle).
 
 ### Firming bundle size
 
@@ -56,7 +51,7 @@ Bundle calculation = (Number of planned orders × (Firming time fence ÷ Coverag
 
 The cache size will be set to **Maximum**. This value is often the best value, because it helps improve the performance of master planning.
 
-For more information, see [Allocate time to jobs in a job bundle](/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle).
+Learn more in [Allocate time to jobs in a job bundle](/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle).
 
 ### Manufacturing setup
 
@@ -80,7 +75,7 @@ The remaining questions on this page and their answers follow the same schema:
 - **Yes, as defined in this master plan** – The **Forecast plan (time fence)** option will be set to **Yes**. The number of days that you enter will be used and will override the values that are set in the coverage groups.
 - **Yes, as defined in the coverage group** – The **Forecast plan (time fence)** option will be set to **No**.
 
-For more information, see [Job scheduling](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Learn more in [Job scheduling](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## Scheduling options
 
@@ -91,7 +86,7 @@ Your answer to the first question on this page ("Do you need to schedule operati
 - **Yes** – Job scheduling will be used.
 - **No** – Operations scheduling will be used.
 
-For more information, see [Operations scheduling](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) and [Job scheduling](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+Learn more in [Operations scheduling](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) and [Job scheduling](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## Updates of demand and supply
 

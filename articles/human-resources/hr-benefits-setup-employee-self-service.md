@@ -4,7 +4,7 @@
 title: Configure Employee self service
 description: In Microsoft Dynamics 365 Human Resources, you can configure tiles for top-level navigation in Employee self service.
 author: twheeloc
-ms.date: 12/06/2021
+ms.date: 07/02/2024
 ms.topic: article
 # optional metadata
 
@@ -17,7 +17,7 @@ audience: Application User
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -51,9 +51,7 @@ In Microsoft Dynamics 365 Human Resources, you can configure tiles for top-level
 ## Set up a flex credit plan tile
 
 1. In the **Benefits management** workspace, under **Setup**, select **Employee self service parameters**.
-
 2. Select the **Flex credit plan tile setup** tab, and then select **New**.
-
 3. Specify values for the following fields.
 
    | Field | Description |

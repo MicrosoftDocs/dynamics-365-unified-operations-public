@@ -4,7 +4,7 @@
 title: Restrict access to workers by legal entity
 description: This article explains how to set up worker access by legal entity.
 author: twheeloc
-ms.date: 11/28/2022
+ms.date: 07/08/2024
 ms.topic: article
 # optional metadata
 
@@ -17,7 +17,7 @@ audience: Application User
 ms.assetid: c7d8f58c-d78a-4035-abbf-2b0ce16109fe
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: ajitchandran
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 

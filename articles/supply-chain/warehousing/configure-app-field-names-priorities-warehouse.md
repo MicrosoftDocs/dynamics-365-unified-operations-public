@@ -6,12 +6,7 @@ ms.author: mirzaab
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-11-30
 ms.search.form: WHSMobileAppField, WHSMobileAppFieldPriority
-ms.dyn365.ops.version: Version 1611
 ms.assetid: 6cf3d7da-29bb-4d3d-aaf5-544ca9cc2980
 ---
 
@@ -129,7 +124,7 @@ Based on the warehouse app field priority set up in the table above, the followi
 
 The remaining metadata, for example, Location, won't be displayed on the task page, but will be displayed on a details page. To learn more and see examples of the user interface, refer to the blog post [Announcing Dynamics 365 Supply Chain Management - Warehousing](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
 
-## Additional resources
+## Related information
 
 [Install the Warehouse Management mobile app](../warehousing/install-configure-warehouse-management-app.md)
 

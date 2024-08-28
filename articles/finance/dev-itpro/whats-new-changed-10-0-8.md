@@ -3,14 +3,14 @@ title: What's new or changed in Dynamics 365 Finance version 10.0.8 (February 20
 description: Learn about features that are new or changed in Dynamics 365 Finance version 10.0.8, including an outline on removed and deprecated features.
 author: kfend
 ms.author: kfend
-ms.topic: article
-ms.date: 01/23/2020
+ms.topic: whats-new
 ms.custom:
+  - bap-template
+  - evergreen
+ms.date: 07/15/2024
 ms.reviewer: kfend
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2019-11-20
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.8
 
 ---

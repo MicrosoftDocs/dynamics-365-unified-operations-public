@@ -1,14 +1,13 @@
 ---
 title: Work policies
 description: Learn how to set up work policies, including prerequisites, an outline on the work policies page, and a table outlines processes for various work order types.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 04/19/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: WHSWorkPolicy
 ---
 

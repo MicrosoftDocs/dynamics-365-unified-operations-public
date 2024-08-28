@@ -2,7 +2,7 @@
 title: Computed columns and virtual fields in data entities
 description: Learn about computed and virtual fields, which are the two types of unmapped fields that a data entity can have.
 author: jaredha
-ms.author: jaredha
+ms.author: kamanick
 ms.topic: conceptual
 ms.custom: 
   - bap-template

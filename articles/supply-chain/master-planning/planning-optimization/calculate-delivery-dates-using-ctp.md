@@ -6,11 +6,7 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 07/20/2022
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2022-07-20
 ms.search.form: SalesAvailableDlvDates, SalesTable, CustParameters, InventItemOrderSetup
-ms.dyn365.ops.version: 10.0.28
 ---
 
 # Calculate sales order delivery dates using CTP
@@ -93,7 +89,7 @@ To set up a batch job to run a dynamic plan on a regular schedule, follow these 
 
 ### Create a new order by using CTP for the deprecated master planning engine
 
-Each time that you add a new sales order or order line, the system assigns a default delivery date control method to it. The order header always starts with the global default method. If an override is assigned to an ordered item, the new order line will use that override. Otherwise, the new order line will also use the global default method. Therefore, you should set your default methods so that they match the delivery date control method that you most often use. After you create an order, you can override the default method at the order header and/or order line level as you require. For more information, see [Set default delivery date control methods](#default-methods) and [Change existing sales orders to use CTP](#change-orders).
+Each time that you add a new sales order or order line, the system assigns a default delivery date control method to it. The order header always starts with the global default method. If an override is assigned to an ordered item, the new order line will use that override. Otherwise, the new order line will also use the global default method. Therefore, you should set your default methods so that they match the delivery date control method that you most often use. After you create an order, you can override the default method at the order header and/or order line level as you require. Learn more in [Set default delivery date control methods](#default-methods) and [Change existing sales orders to use CTP](#change-orders).
 
 ### View confirmed delivery dates when you use CTP for the deprecated master planning engine
 
@@ -108,7 +104,7 @@ For sales lines that use CTP for the deprecated master planning engine, the syst
 
 ### Create a new order by using CTP for Planning Optimization
 
-Each time that you add a new sales order or order line, the system assigns a default delivery date control method to it. The order header always starts with the global default method. If an override is assigned to an ordered item, the new order line will use that override. Otherwise, the new order line will also use the global default method. Therefore, you should set your default methods so that they match the delivery date control method that you most often use. After you create an order, you can override the default method at the order header and/or order line level as you require. For more information, see [Set default delivery date control methods](#default-methods) and [Change existing sales orders to use CTP](#change-orders).
+Each time that you add a new sales order or order line, the system assigns a default delivery date control method to it. The order header always starts with the global default method. If an override is assigned to an ordered item, the new order line will use that override. Otherwise, the new order line will also use the global default method. Therefore, you should set your default methods so that they match the delivery date control method that you most often use. After you create an order, you can override the default method at the order header and/or order line level as you require. Learn more in [Set default delivery date control methods](#default-methods) and [Change existing sales orders to use CTP](#change-orders).
 
 ### View confirmed delivery dates when using CTP for Planning Optimization
 

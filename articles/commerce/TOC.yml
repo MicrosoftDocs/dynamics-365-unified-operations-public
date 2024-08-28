@@ -14,12 +14,12 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.41 (September 2024)
+          href: get-started/whats-new-commerce-10-0-41.md
         - name: Commerce 10.0.40 (June 2024)
           href: get-started/whats-new-commerce-10-0-40.md
         - name: Commerce 10.0.39 (April 2024)
           href: get-started/whats-new-commerce-10-0-39.md
-        - name: Commerce 10.0.38 (February 2024)
-          href: get-started/whats-new-commerce-10-0-38.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -40,6 +40,8 @@
         href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?context=/dynamics365/context/commerce
       - name: Deploy a demo environment
         href: ../fin-ops-core/dev-itpro//deployment/deploy-demo-environment.md?context=/dynamics365/context/commerce
+      - name: Deploy a Commerce trial (Preview) environment
+        href: dev-itpro/commerce-trial.md
       - name: One Version service updates
         items:
         - name: One Version service updates overview
@@ -224,8 +226,6 @@
         items:
         - name: Dynamics 365 Commerce architecture overview
           href: dev-itpro/commerce-architecture.md
-        - name: Dynamics 365 Commerce authentication flows
-          href: dev-itpro/arch-auth-flow.md
         - name: Headless commerce architecture
           href: dev-itpro/retail-server-architecture.md
         - name: Select an in-store topology
@@ -268,8 +268,6 @@
           href: dev-itpro/retail-device-activation.md
         - name: Security best practices for Store Commerce for web in shared environments
           href: dev-itpro/secure-retail-cloud-pos.md
-        - name: Retail Hardware Station configuration and installation
-          href: dev-itpro/retail-hardware-station-configuration-installation.md
         - name: Mass deployment of sealed Commerce self-service components
           href: dev-itpro/Enhanced-Mass-Deployment.md
         - name: Mass deployment of legacy self-service components
@@ -388,58 +386,34 @@
             href: dev-itpro/store-commerce-capabilities.md
           - name: Store Commerce app FAQ
             href: dev-itpro/store-commerce-faq.md
+          - name: Choose between Store Commerce app and Store Commerce for web
+            href: dev-itpro/MPOS-or-CPOS.md
           - name: Store Commerce app for mobile platforms
             href: dev-itpro/store-commerce-mobile.md
-          - name: Export POS screen layouts for import to a new environment
-            href: export-pos-layouts.md
-          - name: Check out faster with optimized payment flows
-            href: dev-itpro/faster-checkout-pos.md
           - name: Enable self-checkout in the Store Commerce app
             href: store-commerce-self-check-out.md
           - name: Migrate Modern POS to Store Commerce
             href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
           - name: Device management implementation guidance
             href: dev-itpro/implementation-considerations-devices.md
-          - name: Commerce offline implementation considerations
-            href: dev-itpro/implementation-considerations-offline.md
-          - name: Commerce offline implementation troubleshooting
-            href: dev-itpro/implementation-offline-troubleshooting.md
-          - name: Choose between Store Commerce app and Store Commerce for web
-            href: dev-itpro/MPOS-or-CPOS.md
-          - name: Online and offline POS operations
-            href: pos-operations.md
           - name: Device activation of a customized Modern POS
             href: dev-itpro/retail-POS-activation-changes.md
-          - name: Configure Microsoft Entra authentication for POS sign-in
-            href: aad-pos-logon.md
-          - name: Product search in the POS
-            href: POS-search-improvements.md
           - name: Search for products and product variants during order entry
             href: ../supply-chain/pim/search-products-product-variants.md?context=/dynamics365/context/commerce
-          - name: Cash management overview
-            href: cash-mgmt.md
           - name: Suspend and resume transactions in the POS
             href: pos-suspend-recall-transactions.md
-          - name: Offline POS functionality
-            href: dev-itpro/pos-offline-functionality.md
-          - name: Shift and cash drawer management
-            href: shift-drawer-management.md
-          - name: Cash out gift card balance
-            href: dev-itpro/gift-card-cash-out.md
-          - name: Ship orders from another store
-            href: charge-send.md
-          - name: Hide non-carrier delivery modes from POS shipment dialog
-            href: hide-non-carrier-modes.md
-          - name: Task recorder and help for Store Commerce
-            href: task-recorder-retail-pos.md
-          - name: Configure Store Commerce for web to use a custom Microsoft Entra app
-            href: dev-itpro/cpos-custom-aad.md
+          - name: Create financial dimensions for POS registers and configure dimension values on registers
+            href: tasks/create-financial-dimensions-pos.md
+          - name: Create POS permissions group
+            href: tasks/create-pos-permission-groups.md
           - name: Hardware peripherals
             items:
             - name: Peripherals
               href: retail-peripherals-overview.md
             - name: Peripheral simulator
               href: dev-itpro/retail-peripheral-simulator.md
+            - name: Configure and install Retail hardware station
+              href: dev-itpro/retail-hardware-station-configuration-installation.md
             - name: Connect peripherals to the POS
               href: define-maintain-channel-clients-registers-hw-stations.md
             - name: Health check for POS peripherals and services
@@ -466,18 +440,22 @@
               href: dev-itpro/pos-image.md
             - name: Open URL in POS
               href: open-url-in-pos.md
+            - name: Export POS screen layouts for import to a new environment
+              href: export-pos-layouts.md
+            - name: Create POS visual profiles
+              href: tasks/create-pos-visual-profile-2016-02.md
           - name: Payments
             items:
+            - name: Check out faster with optimized payment flows
+              href: dev-itpro/faster-checkout-pos.md
             - name: Gift cards
               items:
               - name: Support for external gift cards
                 href: dev-itpro/gift-card.md
               - name: Cross-company data sharing for gift cards
                 href: dev-itpro/data-sharing-gift-cards.md
-          - name: RSAT
-            items:
-            - name: Test recorder and Regression suite automation tool for Store Commerce for web
-              href: dev-itpro/pos-rsat.md
+              - name: Cash out gift card balance for a retail customer
+                href: dev-itpro/gift-card-cash-out.md
           - name: Sales associates
             items:
             - name: Track commissions in the POS using sales groups
@@ -490,14 +468,48 @@
               href: extended-logon.md
             - name: Manage activation accounts and validate devices
               href: dev-itpro/set-up-activation-accounts-validate-devices-hq.md
-          - name: Create financial dimensions for POS registers and configure dimension values on registers
-            href: tasks/create-financial-dimensions-pos.md
-          - name: Create POS permissions group
-            href: tasks/create-pos-permission-groups.md
-          - name: Create POS visual profiles
-            href: tasks/create-pos-visual-profile-2016-02.md
-        - name: Configure and install Retail hardware station
-          href: dev-itpro/retail-hardware-station-configuration-installation.md
+          - name: Cash management
+            items:
+            - name: Cash management overview
+              href: cash-mgmt.md
+            - name: Shift and cash drawer management
+              href: shift-drawer-management.md
+          - name: Offline
+            items:
+            - name: Offline POS functionality
+              href: dev-itpro/pos-offline-functionality.md
+            - name: Commerce offline implementation considerations
+              href: dev-itpro/implementation-considerations-offline.md
+            - name: Commerce offline implementation troubleshooting
+              href: dev-itpro/implementation-offline-troubleshooting.md
+            - name: Online and offline POS operations
+              href: pos-operations.md
+            - name: Commerce database index compression
+              href: dev-itpro/index-compression.md
+          - name: Authentication
+            items:
+            - name: Dynamics 365 Commerce authentication flows
+              href: dev-itpro/arch-auth-flow.md
+            - name: Configure Microsoft Entra authentication for POS sign-in
+              href: aad-pos-logon.md
+            - name: Configure Store Commerce for web to use a custom Microsoft Entra app
+              href: dev-itpro/cpos-custom-aad.md
+          - name: Search
+            items:
+            - name: Product search in POS
+              href: pos-search-improvements.md
+          - name: Delivery modes
+            items:
+            - name: Hide non-carrier delivery modes from the shipping options in POS
+              href: hide-non-carrier-modes.md
+            - name: Ship orders from another store
+              href: charge-send.md
+            - name: Enable consistent delivery mode handling in e-commerce channels
+              href: consistent-delivery-mode-handling.md
+          - name: POS modernization
+            items:
+            - name: POS modernization and usability improvements
+              href: POS-UX-modernization.md  
         - name: Receipts
           items:
           - name: Set up and design receipt formats
@@ -514,8 +526,6 @@
           href: tasks/create-financial-dimensions-retail-channels.md
         - name: Set up number sequences for retail statements
           href: retail-statements-number-sequences.md
-        - name: Enable consistent delivery mode handling in e-commerce channels
-          href: consistent-delivery-mode-handling.md
       - name: Set up an online channel
         items:
         - name: Set up an online channel
@@ -578,6 +588,8 @@
             href: dev-itpro/manage-payment-authorizations.md
           - name: Limit payment token usage
             href: dev-itpro/limit-token-usage.md
+          - name: Configure nonrecurring payment tokens
+            href: dev-itpro/nonrecurring-tokens.md
           - name: Configure cash denominations for the POS
             href: cash-denominations.md
           - name: Configure credit card processing
@@ -1572,26 +1584,6 @@
           href: localizations/dev-itpro/emea-aut-fi-sample.md
         - name: Deployment guidelines for fiscal integration sample for Austria (legacy)
           href: localizations/dev-itpro/emea-aut-fi-sample-sdk.md
-      - name: Brazil
-        items:
-        - name: Commerce localization for Brazil
-          href: localizations/brazil/latam-bra-commerce-localization.md
-        - name: Set up and deploy Commerce localization for Brazil
-          href: localizations/brazil/latam-bra-deployment.md
-        - name: NFC-e fiscal document functionality in Commerce POS for Brazil
-          href: localizations/brazil/latam-bra-nfce.md
-        - name: Manage customer information in POS for Brazil
-          href: localizations/brazil/latam-bra-customer-information.md
-        - name: Cancellation and return of NFC-e documents in Commerce POS for Brazil
-          href: localizations/brazil/latam-bra-nfce-cancel-return.md
-        - name: Postponed registration of NFC-e documents issued in offline contingency mode
-          href: localizations/brazil/latam-bra-nfce-contingency-mode.md
-        - name: Post Brazilian fiscal documents via retail statements in Commerce headquarters
-          href: localizations/brazil/latam-bra-retail-statements.md
-        - name: CF-e fiscal document and integration with SAT functionality in Commerce POS for Brazil
-          href: localizations/brazil/latam-bra-cf-e-sat.md
-        - name: Dynamics 365 Payment Connector for Adyen in Commerce POS for Brazil
-          href: localizations/brazil/latam-bra-adyen.md
       - name: Eastern Europe
         items:
         - name: Common
@@ -1670,20 +1662,6 @@
           href: localizations/dev-itpro/emea-nor-fi-migration.md
         - name: Deployment guidelines for cash registers (legacy)
           href: localizations/dev-itpro/emea-nor-loc-deployment-guidelines.md
-      - name: Russia
-        items:
-        - name: Commerce localization for Russia
-          href: localizations/russia/rus-commerce-localization.md
-        - name: Set up Commerce localization for Russia
-          href: localizations/russia/rus-commerce-setup.md
-        - name: Prepayments in Commerce for Russia
-          href: localizations/russia/rus-commerce-prepayments.md
-        - name: Simplified customer address format in Commerce POS for Russia
-          href: localizations/russia/rus-simplified-address.md
-        - name: Fiscal printer integration sample for Russia
-          href: localizations/russia/rus-fpi-sample.md
-        - name: Customer information management for Russia
-          href: localizations/russia/rus-customer-information.md
       - name: Saudi Arabia
         items:
         - name: Generate QR codes and print them on receipts for Saudi Arabia
@@ -2840,6 +2818,8 @@
             href: dev-itpro/pos-extension/cpos-extension-package.md
           - name: Create a Store Commerce extension installer package
             href: dev-itpro/store-comm-extension-installer.md
+          - name: Store Commerce Hardware station extensibility for Android devices
+            href: dev-itpro/store-comm-android-extensibility.md            
       - name: E-commerce
         items:
         - name: Overview
@@ -3094,6 +3074,18 @@
             href: dev-itpro/pos-app-signing-certificate.md
           - name: Set up POS hybrid app on Android and iOS
             href: dev-itpro/hybridapp.md
+    - name: Copilot capabilities in Commerce
+      items:
+      - name: Store report insights by Copilot
+        href: copilot-pos-report-insights.md
+      - name: Customer insights by Copilot
+        href: copilot-pos-customer-insights.md
+      - name: Enable Copilot statement posting summaries
+        href: copilot-statement-summaries.md
+      - name: Use Copilot in site builder to enrich product detail pages
+        href: copilot-site-builder.md
+      - name: Streamline your merchandising process with Copilot-based insights
+        href: copilot-based-merch-insights.md
     - name: Responsible AI FAQs
       items: 
       - name: Overview
@@ -3102,6 +3094,8 @@
         href: responsible-ai/faqs-copilot-site-builder.md
       - name: FAQ for Copilot AI summarization in Commerce headquarters
         href: responsible-ai/faqs-ai-summarization-hq.md
+      - name: FAQ for Copilot-based insights
+        href: responsible-ai/faqs-ai-copilot-store-comm-summaries.md
     - name: Dynamics 365 Commerce troubleshooting and FAQs
       href: commerce-troubleshooting.md
   - name: Development and administration for finance and operations apps

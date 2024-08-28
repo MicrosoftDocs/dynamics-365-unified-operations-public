@@ -1,12 +1,13 @@
 ---
 title: Inventory cost structure
 description: Learn about the inventory cost structure of miscellaneous charges in inventory transactions, including a process for setting up miscellaneous charge structures.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 02/05/2020
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1

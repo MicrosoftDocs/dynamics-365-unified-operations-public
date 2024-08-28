@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 07/31/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-04-22
 ms.search.form:
-ms.dyn365.ops.version: 10.0.13
 ---
 
 # Create and manage Customer portal users
@@ -49,7 +45,7 @@ Before you invite a customer to join the Customer portal, make sure that the cus
 
 After a contact is created, you should be able to see it in Supply Chain Management.
 
-For more information, see [Configure a contact for use on a portal](/powerapps/maker/portals/configure/configure-contacts) in the Power Apps portals documentation.
+Learn more in [Configure a contact for use on a portal](/powerapps/maker/portals/configure/configure-contacts) in the Power Apps portals documentation.
 
 ## Out-of-box web roles and table permissions
 

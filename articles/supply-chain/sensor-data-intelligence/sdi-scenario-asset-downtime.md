@@ -6,17 +6,13 @@ ms.author: johanho
 ms.topic: article
 ms.date: 09/02/2022
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2022-09-02
 ms.search.form: IoTIntCoreScenarioManagement, IoTIntCoreScenarioConfigurationWizardV2, EntAssetObjectProductionStop
-ms.dyn365.ops.version: 10.0.30
 ---
 
 # Asset downtime scenario (preview)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 The asset downtime scenario generates a maintenance downtime record if no signal is received from a machine within a defined time threshold since the last signal was received. The scenario requires that you fit your machine with a sensor that periodically sends a signal to your Azure IoT Hub while the machine is operating, but doesn't send a signal when the machine isn't operating.

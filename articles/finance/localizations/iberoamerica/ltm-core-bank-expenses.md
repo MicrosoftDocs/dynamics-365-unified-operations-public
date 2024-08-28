@@ -3,8 +3,8 @@ title: Post bank expenses for Latin America
 description: Learn how to post bank expenses for Latin America, including prerequisites and a process for post bank expenses with LATAM information.
 author: Fhernandez0088
 ms.author: v-federicohe 
-ms.topic: article
-ms.date: 06/02/2023
+ms.topic: how-to
+ms.date: 07/01/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---

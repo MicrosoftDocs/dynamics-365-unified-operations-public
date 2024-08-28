@@ -1,12 +1,13 @@
 ---
 title: Not valuable fixed assets (NVFAs) (Russia)
 description: Learn about how to maintain not valuable fixed assets (NVFAs) for Russia, including a step-by-step process for setting up Fixed assets parameters for NVFAs.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 11/06/2018
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1

@@ -6,12 +6,7 @@ ms.author: yufeihuang
 ms.topic: article
 ms.date: 03/23/2021
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2020-06-17
 ms.search.form: InventTestInstrument
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ---
 
@@ -38,7 +33,7 @@ You're performing various tests on electrical components. Some tests are for the
 
 1. Close the page.
 
-## Additional resources
+## Related information
 
 - [Quality management test](quality-tests.md)
 - [Quality management test groups](quality-test-groups.md)

@@ -1,13 +1,13 @@
 ---
 title: Set up, import, and verify NF-e XML documents and DANFE
 description: You can automatically extract and import the XML from the Nota Fiscal Eletrônica (NF-e) and its DANFE from emails sent by the vendor for your company.
-author: v-gonode
-ms.author: johnmichalak
-ms.topic: article
-ms.date: 12/14/2022
+author: ankviklis
+ms.author: ankviklis
+ms.topic: how-to
 ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Brazil
 ms.search.validFrom: 
 ms.dyn365.ops.version: July 2017 update

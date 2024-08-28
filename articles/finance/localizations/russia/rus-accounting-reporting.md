@@ -1,12 +1,13 @@
 ---
 title: Accounting reporting in electronic format (Russia)
 description: Learn how to set up accounting reporting for Russia, including a step-by-step process and tables that provide report codes for various reports.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 09/03/2020
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/25/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2019-04-30
 ms.dyn365.ops.version: 10.0.1

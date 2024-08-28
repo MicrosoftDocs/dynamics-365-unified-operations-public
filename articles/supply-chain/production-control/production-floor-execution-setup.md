@@ -7,7 +7,6 @@ ms.reviewer: kamaybac
 ms.search.form: JmgProductionFloorExecution, HcmWorker, JmgProductionFloorExecutionDeviceConfiguration
 ms.topic: how-to
 ms.date: 10/05/2020
-audience: Application User
 ms.custom: 
   - bap-template
 ---

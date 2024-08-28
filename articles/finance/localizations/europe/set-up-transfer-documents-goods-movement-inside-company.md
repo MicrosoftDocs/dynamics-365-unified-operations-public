@@ -4,9 +4,10 @@ description: Learn how to set up transfer documents for goods movement inside a 
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-06-30
 ms.search.form: InventTransferOrders, InventLocationIdLookup, TransportationDocument, HcmWorkerLookUp, SrsReportViewerForm, InventTransferParmShip

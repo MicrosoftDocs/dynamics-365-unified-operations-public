@@ -1,13 +1,13 @@
 ---
 title: Out-of-box security reports
 description: Learn about the security reports that help you understand the set of security roles running in your environment and the users assigned to each role.
-author: peakerbl
-ms.author: johnmichalak
+author: pnghub
+ms.author: gned
 ms.topic: article
 ms.date: 08/14/2019
-ms.custom:
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak 
-audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2017-06-30
 ms.search.form:  SysSecConfiguration, SrsReportViewerForm

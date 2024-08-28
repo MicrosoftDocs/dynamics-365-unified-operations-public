@@ -1,15 +1,15 @@
 ---
 title: India fixed assets overview
 description: Learn about fixed assets for India in Microsoft Dynamics 365 Finance, including links directing to resources about parameters and assets transactions.
-author: AdamTrukawka
-ms.author: atrukawk
+author: evgenypopov
+ms.author: evgenypopov
 ms.topic: overview
+ms.custom: 
+  - bap-template
 ms.date: 07/25/2019
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: India
 ms.search.validFrom: 2017-12-31
-ms.search.form: 
 ms.dyn365.ops.version: 7.3
 ---
 

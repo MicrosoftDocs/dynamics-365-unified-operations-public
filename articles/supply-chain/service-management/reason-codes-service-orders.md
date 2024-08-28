@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMAStageTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Reason codes for service orders   
@@ -33,7 +29,7 @@ Reason codes are optional. You can decide whether to require a reason code when 
 
 3.  Close the form to save your changes.
 
-## See also
+## Related information
 
 [Set up service order stages](set-up-service-order-stages.md)
 

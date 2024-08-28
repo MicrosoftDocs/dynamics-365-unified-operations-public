@@ -1,16 +1,15 @@
 ---
 title: Set up rate and percentage tables
 description: Learn how to set up rate and percentage tables, including step-by-step processes for importing, exporting, and validating tax setups.
-author: EricWangChen
-ms.author: wangchen
-ms.topic: article
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 03/18/2020
-ms.custom:
 ms.reviewer: johnmichalak 
-audience: Application User
 ms.search.region: India
 ms.search.validFrom: 2019-06-01
-ms.search.form:
 ms.dyn365.ops.version: 10.0.4
 ---
 

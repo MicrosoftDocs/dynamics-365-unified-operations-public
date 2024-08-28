@@ -1,12 +1,13 @@
 ---
 title: INTERVAT tax declaration
 description: Learn about how to set up and create the INTERVAT tax declaration for legal entities in Belgium only, including prerequisites and settings.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 06/02/2022
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Belgium
 ms.search.validFrom: 2016-05-31
 ms.search.form: TaxIntervat

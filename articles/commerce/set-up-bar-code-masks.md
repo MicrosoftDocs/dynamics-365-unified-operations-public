@@ -4,16 +4,16 @@
 title: Set up barcode masks
 description: This article describes how to set up barcode mask characters and barcode masks, and how to assign barcode masks to barcodes in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 07/18/2023
-ms.topic: article
+ms.date: 07/29/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.search.form: RetailBarcodeMaskCharacter, RetailBarcodeMaskSetup
-audience: Application User
 ms.reviewer: josaw
 ms.assetid: 5831c74d-d2a1-4fa5-9a9a-a5aba8848381
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2016-02-28
-
 
 ---
 

@@ -4,7 +4,7 @@
 title: Manage participants in training courses
 description: This article explains how Human resources administrators and managers can use the course features to maintain information about course participants.
 author: twheeloc
-ms.date: 03/20/2023
+ms.date: 07/02/2024
 ms.topic: article
 # optional metadata
 
@@ -17,7 +17,7 @@ audience: Application User
 ms.assetid: a6950c29-8b3e-45b2-9084-ddfb1317ffaa
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 

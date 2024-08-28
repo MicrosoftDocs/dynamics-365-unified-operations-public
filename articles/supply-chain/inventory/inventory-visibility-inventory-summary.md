@@ -7,8 +7,6 @@ ms.topic: how-to
 ms.date: 12/01/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -33,7 +31,7 @@ To enable the **Inventory summary** page and set the synchronization frequency i
 
 1. Sign in to your Power Apps environment, and open the **Inventory Visibility** app.
 1. On the navigation pane, select **Feature management**.
-1. On the **Data source settings** tile, select **Manage**.
+1. On the **Inventory summary** tile, select **Manage**.
 1. Set the following fields:
 
     - **Enable feature** – Set this option to *True*.

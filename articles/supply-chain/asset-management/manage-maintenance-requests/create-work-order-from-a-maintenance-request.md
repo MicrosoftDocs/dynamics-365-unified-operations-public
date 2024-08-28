@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 10/01/2019
 ms.custom: 
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2019-10-31
 ms.search.form: 
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Create work orders from maintenance requests

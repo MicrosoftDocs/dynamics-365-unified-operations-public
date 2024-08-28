@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 08/09/2022
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-07-15
 ms.search.form:  WHSLocationProfile,WHSWorkTable,WHSWaveTableListPage
-ms.dyn365.ops.version: 10.0.8
 ---
 
 # Location directive inventory picking aging
@@ -28,7 +24,7 @@ When inventory is first received or created in the warehouse, the system updates
 
 To make this functionality available, turn on the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), in this order:
 
-1. *Warehouse location status*  (As of version 10.0.29, this feature is mandatory and can't be turned off. For more information, see [Warehouse location status](warehouse-location-status.md).)
+1. *Warehouse location status*  (As of version 10.0.29, this feature is mandatory and can't be turned off. Learn more in [Warehouse location status](warehouse-location-status.md).)
 1. *Location directive inventory picking aging* (As of Supply Chain Management version 10.0.32, this feature is mandatory and can't be turned off.)
 
 ## Feature requirements

@@ -7,15 +7,13 @@ ms.topic: overview
 ms.date: 04/03/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: 
 ---
 
 # Discount types (preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 This article introduces the different types of discounts that you can set up by using Pricing management.
@@ -157,7 +155,7 @@ However, if the customer orders ten of item *EV009*, they've still have ordered 
 
 ## "Always apply" discounts
 
-*Always apply* isn't a discount type. It's a concurrency mode that's available for all discount types. All discounts that are created by using the *Always apply* mode will be applied to the appropriate items after all the existing discounts have been applied. For more information, see [Resolve concurrency within price component codes](concurrence-within-codes.md).
+*Always apply* isn't a discount type. It's a concurrency mode that's available for all discount types. All discounts that are created by using the *Always apply* mode will be applied to the appropriate items after all the existing discounts have been applied. Learn more in [Resolve concurrency within price component codes](concurrence-within-codes.md).
 
 ## Next steps
 

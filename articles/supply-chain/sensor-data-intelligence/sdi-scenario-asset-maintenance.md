@@ -6,17 +6,13 @@ ms.author: johanho
 ms.topic: article
 ms.date: 09/02/2022
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2022-09-02
 ms.search.form: IoTIntCoreScenarioManagement, IoTIntCoreScenarioConfigurationWizardV2, EntAssetCounter
-ms.dyn365.ops.version: 10.0.30
 ---
 
 # Asset maintenance scenario (preview)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 The *asset maintenance* scenario lets you use sensor data to create counter records. Counter records track the use of a machine asset and are used as input to generate the maintenance schedule for machine assets.
@@ -35,7 +31,7 @@ In this section, you will set up the *AK-101, Air knife* asset in demo data as a
 
 ### Set up a sensor simulator
 
-If you want to try this scenario without using a physical sensor, you can set up a simulator to generate the required signals. For more information, see [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md).
+If you want to try this scenario without using a physical sensor, you can set up a simulator to generate the required signals. Learn more in [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md).
 
 ### Create an asset counter to track production hours
 

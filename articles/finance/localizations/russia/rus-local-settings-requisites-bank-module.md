@@ -1,12 +1,13 @@
 ---
 title: Set up bank accounts (Russia)
 description: Learn about local settings and prerequisites for bank modules for Russia, including a process for creating a bank manually or updating information for a bank.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 12/06/2018
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.search.form: BankGroup, BankAccountTable

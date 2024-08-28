@@ -6,12 +6,7 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 07/08/2019
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: ReqDemPlanCreateForecastDialog
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 42190463-2a64-4f63-b653-10cac3df0692
 ---
 
@@ -60,7 +55,7 @@ If the forecast isn't generated for a large set of items, but, for example, for 
 > [!NOTE]
 > A potentially flat looking forecast can be due to the historical data that has to be of a longer historical timeframe (a minimum of three time periods in order to pick out patterns, such as three years with monthly forecast). To get a better result, you can try changing the granularity of the time range or increase the time range.
 
-## Additional resources
+## Related information
 
 - [Demand forecasting setup](demand-forecasting-setup.md)
 - [Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)

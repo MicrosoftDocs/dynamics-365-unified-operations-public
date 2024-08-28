@@ -6,12 +6,7 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: PCTableConstraintAttachAttributeTree, PCTableConstraintColumnSystem, PCTableConstraintContentUserDef, PCTableConstraintDefinition, PCTableConstraintWizard
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 0a4ea930-b344-43a8-871e-d5cd077892c4
 ---
 
@@ -49,7 +44,7 @@ When you create a system-defined table constraint, you select a table, optionall
 
 Before a table constraint can take effect on a product configuration model, the table constraint must be included in a constraint on one of the model's components. The procedure is to create a new constraint, select the table constraint type, and then select the table constraint definition to use. Finally, all fields in the table constraint must be mapped to attributes in the product configuration model.
 
-## Additional resources
+## Related information
 
 [Product configuration models overview](product-configuration-models.md)
 

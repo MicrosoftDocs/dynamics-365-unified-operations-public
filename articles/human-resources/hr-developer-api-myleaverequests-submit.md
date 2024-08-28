@@ -4,7 +4,7 @@
 title: Submit a leave request to workflow
 description: In Microsoft Dynamics 365 Human Resources, you can use the MyLeaveRequests submit() application programming interface (API) to submit a leave request to workflow.
 author: twheeloc
-ms.date: 02/03/2020
+ms.date: 07/09/2024
 ms.topic: article
 # optional metadata
 
@@ -17,7 +17,7 @@ audience: Application User
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: ajitchandran
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -70,9 +70,9 @@ Don't supply a request body for this method.
 
 A successful response is always a **204 No Content** response.
 
-Unauthorized callers will receive a **401 Unauthorized** or a **403 Forbidden** response.
+Unauthorized callers receive a **401 Unauthorized** or a **403 Forbidden** response.
 
-If submission is unsuccessful (because of validation, for example), the response will be a **500 Server Error**, and the response body will include a JSON object with further details.
+If submission is unsuccessful (because of validation, for example), the response is a **500 Server Error**, and the response body will include a JSON object with further details.
 
 ## Example
 
@@ -99,12 +99,12 @@ POST https://aos-rts-sf-550e5c091f6-prod-westus2.hr.talent.dynamics.com/namespac
 As part of the call to the submit API, Human Resources performs business logic validation before submission, which ensures the leave request is in a valid state for submission. The possible error messages you may receive in the response if validations fail are:
 
  - The request would put the '{LeaveTypeId}' balance below the allowed minimum balance on {date}.
- - Time off request in Completed state cannot be submitted.
+ - Time off request in **Completed** state can't be submitted.
  - Unable to submit or save request as no changes have been made. Add or update the amount or the leave type and try again.
- - The time off request entered contains one or more days with the same date and leave type as an existing pending request. Please recall the existing request to make changes.
+ - The time off request entered contains one or more days with the same date and leave type as an existing pending request. Recall the existing request to make changes.
  - Reason code '{ReasonCodeId}' doesn't apply to any of the leave types in the request.
  - Leave type '{LeaveTypeId}' requires a reason code. Select the appropriate type and reason code.
- - The time off was not submitted successfully. The time off has been saved as a draft request.
+ - The time off wasn't submitted successfully. The time off has been saved as a draft request.
 
 ## See also
 

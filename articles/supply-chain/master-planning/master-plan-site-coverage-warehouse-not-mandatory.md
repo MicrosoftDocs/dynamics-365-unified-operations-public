@@ -6,12 +6,7 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: EcoResStorageDimensionGroup, ReqItemTable
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 316da918-67ae-43c5-baea-00ae559e29b0
 ---
 
@@ -37,7 +32,7 @@ The following graphic illustrates how master planning proceeds. The parameters t
 
 
 
-## Additional resources
+## Related information
 
 - [Master planning and multisite functionality overview](master-plan-multisite-functionality.md)
 - [Master planning for site and warehouse coverage, warehouse mandatory](master-plan-site-coverage-warehouse-mandatory.md)

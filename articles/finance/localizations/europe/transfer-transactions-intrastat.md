@@ -1,12 +1,13 @@
 ---
 title: Transfer transactions to the Intrastat
 description: Learn about how to set up Intrastat parameters and transfer transactions to Intrastat, including a process for creating new and updating existing commodity code.
-author: AdamTrukawka
-ms.author: atrukawk
+author: liza-golub
+ms.author: egolub
 ms.topic: how-to
-ms.date: 08/01/2023
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.search.validFrom: 2016-06-30
 ms.search.form: 

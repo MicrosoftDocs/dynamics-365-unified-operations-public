@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 08/19/2019
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2019-08-31
 ms.search.form: EntAssetWorkerPreferred 
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Set up preferred maintenance workers
@@ -53,7 +49,7 @@ The more selections you make for the same record, the more specific your setup w
 
 ![Figure 1.](media/02-work-order-scheduling.png)
 
-You can also set up *responsible* maintenance workers who can be selected when a maintenance request or a work order is created. You can edit the selection in **All work orders** and **All maintenance requests**, if required. For more information, see [Responsible maintenance workers](../setup-for-maintenance-requests/responsible-workers.md).
+You can also set up *responsible* maintenance workers who can be selected when a maintenance request or a work order is created. You can edit the selection in **All work orders** and **All maintenance requests**, if required. Learn more in [Responsible maintenance workers](../setup-for-maintenance-requests/responsible-workers.md).
 
 During work order scheduling, different scores are calculated to determine which workers should complete the jobs related to a work order (those scores are set up in **Asset management parameters** > **Work order scheduling** link). If two or more preferred maintenance workers or responsible maintenance workers get the same score during work order scheduling, one worker is randomly selected. Otherwise, it is always the worker with the highest score who is allocated to complete a work order.
 

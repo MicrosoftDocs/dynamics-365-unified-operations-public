@@ -1,12 +1,12 @@
 ---
 title: Enable generative help and guidance with Copilot
-description: This article describes how administrators can enable generative help and guidance with Copilot in finance and operations apps.
+description: This article describes how administrators can enable and troubleshoot generative help and guidance with Copilot in finance and operations apps.
 author: cabeln
 ms.author: cabeln
 ms.reviewer: johnmichalak
 ms.search.form:
 ms.topic: how-to
-ms.date: 04/19/2024
+ms.date: 08/28/2024
 audience: Application User
 ms.custom: 
   - bap-template
@@ -26,76 +26,29 @@ This article describes availability and explains how to enable generative help a
 
 After you complete the steps in this article, the Copilot icon appears at the top of all finance and operations apps. Users can then select the Copilot icon to access generative help and guidance.
 
-> [!NOTE]
-> Unless the Copilot capabilities that this article describes are turned off for the Dataverse environment or at the tenant level, you can use the Copilot icon to open the Copilot sidecar after the Copilot bot is successfully deployed and published.
+## Enable the feature
 
-## Prerequisites
+In most cases, generative help and guidance with Copilot is available by default if [Power Platform Integration](../power-platform/enable-power-platform-integration.md) is enabled for your environment.
 
-To enable generative help and guidance with Copilot in finance and operations apps, you must be running version 10.0.38 or later of finance and operations apps.
+If the feature isn't already available on your system, refer to [Enable Copilot capabilities in finance and operations apps](enable-copilot.md) for information about how to enable it.
 
-> [!NOTE]
-> As of version 10.0.40, and in proactive quality updates (PQUs) for versions 10.0.39 and 10.0.38, the required Copilot solutions are automatically deployed in the Dataverse environment that's associated with the organization where you're running finance and operations apps.
+## <a name="follow-ups"></a>Enable follow-up questions in the Copilot sidecar (preview)
 
-## Country/region and language availability
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
 
-For information about which countries/regions and languages the Copilot capability in Dynamics 365 Supply Chain Management is available for, see the [Copilot international availability guide](https://dynamics.microsoft.com/availability-reports/copilotreport/).
+The *[Follow-up questions in the Copilot sidecar](../../fin-ops/copilot/faq-copilot-suggested-questions.md)* feature makes it fast and easy to post follow-up questions and get answers from Copilot. It's designed to provide a diversity of follow-up questions, and avoids repeating questions you have already asked. The suggested questions are answered using [Generative Answers](/microsoft-copilot-studio/faqs-generative-answers), which is the foundation for the Generative help and guidance with Copilot feature in finance and operation apps.
 
-## Step 1: Connect your finance and operations apps to a Dataverse environment
+To use this capability in your environment, your system must meet the following requirements:
 
-The subscription for your finance and operations apps includes an initial Dataverse environment that's deployed in your tenant. To support copilots, your finance and operations apps environment must be associated with a Dataverse environment. Typically, this association is automatically enabled. However, in some situations, the tenant or environment admin must enable it.
+- You must be running finance and operations apps version 10.0.41 or later.
+- The feature that is named *(Preview) Follow-up questions in the Copilot sidecar* must be turned on in [feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md).
 
-Confirm that [Power Platform Integration is enabled](../power-platform/enable-power-platform-integration.md) in [Microsoft Dynamics Lifecycle Services](../lifecycle-services/lcs-user-guide.md). You don't have to enable dual-write for this feature.
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-## Step 2: Assign the required user role in Power Platform
+## Add custom knowledge
 
-When a user opens a finance and operations app, the system checks with your Power Platform environment to make sure that the required AI features haven't been disabled by the administrator. To make this check, each finance and operations user that should have access to the Copilot sidecar must be assigned the *Finance and Operations Basic User* security role in Dataverse.
-
-Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), open the Power Platform environment details, and under **Access**, assign the *Finance and Operations Basic User* security role to all users that should have access to the Copilot sidecar. You can assign the role to individual users, teams, and/or business units as needed.
-
-## Step 3: Turn on copilots and generative AI features
-
-> [!NOTE]
-> Copilots and generative AI features that are generally available are turned on by default.
->
-> If you have to turn on any of the features from this section in your environment, you might also have to redeploy the Copilot application and publish the Copilot bot in Copilot Studio.
-
-Depending on the availability of Copilot and generative AI back-office services in your region, you might have to [turn on copilots and generative AI features](/power-platform/admin/geographical-availability-copilot) in your Dataverse environment. You must complete the steps in the Dataverse environment that's connected to the environment where you're running your finance and operations apps.
-
-### Allow cross-region data movement for your Dataverse environment
-
-Depending on the availability of Copilot and generative AI back-office services in your region, you might have to enable your Dataverse environment for cross-region data movement. For more information, see [Enable copilots and generative AI features](/power-platform/admin/geographical-availability-copilot).
-
-> [!IMPORTANT]
-> If cross-region data movement is required, but it's disabled, deployment of the Copilot solution will fail, users won't be able to open the Copilot sidecar, or the Copilot sidecar won't provide answers, depending on the situation.
-
-If the **Move data across regions** checkbox is available, but it's cleared, review the terms of use, and then select the checkbox.
-
-For information about the capabilities and limitations of AI-powered Copilot features in finance and operations apps, see [Responsible AI FAQs for the Microsoft Dynamics 365 finance and operations platform](../responsible-ai/responsible-ai-overview.md).
-
-### Make sure that Bing Search is enabled for your Dataverse environment
-
-Generative help and guidance is based on [generative answers in Copilot Studio](/microsoft-copilot-studio/nlu-boost-conversations). The generative answers feature uses Bing Search to identify relevant articles from the public documentation. It then composes the answers that Copilot provides.
-
-> [!IMPORTANT]
-> If Bing Search is disabled, deployment of the Copilot solution will fail, users won't be able to open the Copilot sidecar, or the Copilot sidecar won't provide answers, depending on the situation.
-
-If the **Bing Search** checkbox is cleared, review the terms of use, and then select the checkbox.
-
-### Make sure that Copilot bots can be used in your tenant
-
-In the Power Platform admin center, tenant admins can disable the ability to publish copilots for your tenant.
-
-> [!IMPORTANT]
-> If the **Publish bots with AI features** option is disabled, you can't deploy the Copilot solution.
-
-If the **Publish bots with AI features** option is disabled, review the terms of use, and then enable the option.
-
-## Step 4: Enable the feature in the Feature management workspace
-
-Follow one of these steps, depending on the version of finance and operations apps that you're running:
-
-- For environments on version 10.0.40, the ability to show the sidecar user experience for Copilot in finance and operations apps is always enabled.
-- For environments on versions 10.0.38 and 10.0.39, turn on the *User experience for Copilot in Finance and Operations* feature in the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+You can add custom knowledge sources and/or enable general knowledge for generative help and guidance with Copilot. For more information and instructions, see [Add knowledge to generative help and guidance with Copilot](extend-copilot-generative-help.md).
 
 ## Troubleshooting
 
@@ -103,7 +56,7 @@ Specific conditions [govern and secure the deployment of Copilot Studio componen
 
 Here are some typical causes that can prevent Copilot from being deployed and enabled in finance and operations apps:
 
-- In the Power Platform admin center, your tenant admin disabled the ability to publish copilots with generative answers and actions for your tenant. This ability is governed by the **Publish bots with AI features** [tenant setting](/microsoft-copilot-studio/security-and-governance).
+- In the Power Platform admin center, your tenant admin disabled the ability to publish copilots with generative answers and actions for your tenant. This ability is governed by the **Publish Copilots with AI features** [tenant setting](/microsoft-copilot-studio/security-and-governance).
 - [Data movement across geographic locations](/microsoft-copilot-studio/manage-data-movement-outside-us) has been disabled for Copilot Studio generative AI features outside the United States.
 - Your admin disabled the use of Copilot for your organization through a support request.
 
@@ -115,4 +68,14 @@ After a governing condition is addressed, you might have to take additional acti
 
 ## Disabling the conversational Copilot sidecar for your organization
 
-If you're running finance and operations apps version 10.0.38 or 10.0.39, you can turn off the conversational Copilot sidecar by going to the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace and disabling the feature *User experience for Copilot in Finance and Operations*.
+If you want to disable the conversational Copilot sidecar for your organization, you can do so by doing any or all of the following steps:
+
+- If you're running finance and operations apps version 10.0.38 or 10.0.39, you can turn off the conversational Copilot sidecar in finance and operations apps by going to the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace and disabling the feature *User experience for Copilot in Finance and Operations*. The feature is on by default and mandatory in finance and operations apps versions 10.0.40 and higher.
+- Turn off Bing Search for all copilots and generative AI features in your environment. For instructions, see [Enable copilots and generative AI features](/power-platform/admin/geographical-availability-copilot).
+- Turn off Copilot for all Power Apps applications in your environment. For instructions, see [Copilot in Power Apps overview](/power-apps/maker/canvas-apps/ai-overview).
+
+## See also
+
+- [Add custom knowledge to generative help and guidance with Copilot](extend-copilot-generative-help.md)
+- [Responsible AI FAQ for Generative help and guidance with Copilot in finance and operations apps](../../fin-ops/copilot/faq-copilot-generative-help.md)
+- [Responsible AI FAQ for Follow-up questions in the Copilot sidecar (preview)](../../fin-ops/copilot/faq-copilot-suggested-questions.md)

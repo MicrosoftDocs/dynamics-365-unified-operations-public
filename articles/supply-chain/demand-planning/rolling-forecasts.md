@@ -7,10 +7,6 @@ ms.topic: overview
 ms.date: 03/12/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.collection:
-  - bap-ai-copilot
-audience: Application User
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -64,7 +60,7 @@ To schedule a process, follow these steps.
 
     - **None** – The process isn't scheduled to run automatically. You must manually run it.
     - **Recurring** – The process is triggered at a specific date and time, according to the configured schedule (daily, weekly, or monthly).
-<!--KFM: Add this when event-triggered processes are supported:
+    <!--KFM: Add this when event-triggered processes are supported:
     - **Event triggered** – The process is triggered when a certain event occurs, such as when new historical data exists (such as for transformations) or when there's a new version of the input time series for the given process. -->
 
 1. In the **Set run date recurrence** section, define when and how often the process should run, and set the start and end dates that it should run during.

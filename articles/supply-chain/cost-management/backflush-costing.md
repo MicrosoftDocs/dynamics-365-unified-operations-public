@@ -6,12 +6,7 @@ ms.author: yanansong
 ms.topic: article
 ms.date: 04/10/2017
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.dyn365.ops.version: Version 1611
 ms.search.form: LeanCosting, LeanCostingTimeBucket
-ms.search.validFrom: 2016-11-30
 ms.assetid: 62a2a7da-ff79-49bf-a6e8-29460ba5252f
 ---
 

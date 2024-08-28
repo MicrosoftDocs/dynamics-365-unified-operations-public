@@ -2,7 +2,7 @@
 title: Service protection API limits
 description: Learn about limits for service protection application programming interfaces (APIs) for the finance and operations apps service.
 author: jaredha
-ms.author: jaredha
+ms.author: sumadhey
 ms.topic: article
 ms.date: 08/25/2022
 audience: Developer

@@ -1,15 +1,15 @@
 ---
 title: VAT declaration (Belgium)
 description: Learn about the VAT declaration for Belgium, including an overview on urchase reverse charge VAT with examples with step-by-step processes.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 06/02/2022
+author: liza-golub
+ms.author: egolub
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Belgium
 ms.search.validFrom: 2019-01-04
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.1
 ---
 

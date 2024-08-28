@@ -1,12 +1,13 @@
 ---
 title: Maintain fixed assets
 description: Learn how to inactivate, reactivate, and update a fixed asset in Microsoft Dynamics 365 Finance in Russia, including a process for deactivating fixed assets.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 07/28/2021
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1

@@ -1,14 +1,14 @@
 ---
 title: Polish Intrastat
 description: Learn about Intrastat reporting in Poland, including a table that defines various field names and an outline on setting up VAT IDs and enterprise numbers.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 11/09/2021
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Global
-ms.search.validFrom: 
 ---
 
 # Polish Intrastat

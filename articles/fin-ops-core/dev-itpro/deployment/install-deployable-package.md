@@ -5,7 +5,7 @@ author: johnmichalak
 ms.author: johnmichalak
 ms.topic: article
 ms.date: 07/23/2019
-ms.reviewer: tfehr
+ms.reviewer: johnmichalak
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28

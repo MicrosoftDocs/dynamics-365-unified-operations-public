@@ -4,7 +4,7 @@ description: Learn how to configure and use the Electronic Invoicing service ISV
 author: ikondratenko
 ms.author: ikondratenko
 ms.topic: article
-ms.date: 01/02/2024
+ms.date: 07/29/2024
 ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Application User
@@ -139,6 +139,10 @@ Additionally, you must configure the following feature setup variable to use for
 The name of this variable must be used as the name of the import source for the import channel on **Integration channels** tab of the **Electronic document parameters** page in Finance.
 
 ![Screenshot that shows the ResponseXml import source on the Electronic document parameters page.](../media/isv_connector_import_channel.jpg)
+
+### Electronic invoicing in Chile
+
+For more information about electronic invoicing in Chile, see [Get started with Electronic invoicing for Chile](../iberoamerica/ltm-chile-elec-invo-conncection.md).
 
 ### Electronic invoicing in Denmark
 

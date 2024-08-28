@@ -1,16 +1,16 @@
 ---
 title: Indian Tax Deducted at Source (TDS) overview
 description: Learn about Indian Tax Deducted at Source (TDS), including an overview on setting up and working with TDS and the functionality of this capability.
-author: kailiang
-ms.author: kailiang
+author: epodkolzina
+ms.author: epodkolzina
 ms.topic: overview
-ms.date: 03/19/2021
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
 ms.reviewer: johnmichalak
 ms.collection: get-started
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2021-03-19
-ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.17
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ---

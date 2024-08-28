@@ -1,12 +1,13 @@
 ---
 title: Nets import format
 description: Learn about importing payment information in the Nets format, including an outline and step-by-step process in importing Nets bank files.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 06/20/2017
+author: kailiang
+ms.author: kailiang
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 09/15/2021
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Norway
 ms.search.validFrom: 2016-11-30
 ms.search.form: BankCustPaymIdTable, CustEInvoiceIntegrationeInvoice, CustEInvoiceIntegrationTypePaymMode, CustEinvoiceIntegrationTypeTable, CustPaymMode, LedgerJournalTransCustPaym

@@ -3,10 +3,11 @@ title: Fiscal service (ESR) integration
 description: Learn about the fiscal service integration for Austria and the Czech Republic, including overviews on available configurations and setup.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
-ms.date: 01/17/2018
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience: Application user
 ms.search.region: Austria, Czech Republic
 ms.search.validFrom: 2017-12-31
 ms.search.form: CashRegister_W

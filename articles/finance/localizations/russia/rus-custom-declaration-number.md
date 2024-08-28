@@ -1,12 +1,13 @@
 ---
 title: Customs declaration numbers
 description: Learn about how to set up and track customs declaration numbers, including a step-by-step outline on setting up customs declaration numbers in tracking dimensions.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 11/05/2019
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: 8.1

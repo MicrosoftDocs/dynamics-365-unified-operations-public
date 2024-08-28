@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 05/04/2018
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMADispatchBoard
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 
@@ -39,13 +35,12 @@ While monitoring the day's service activity, you notice that John, a service tec
 
 Click **Service management** \> **Periodic** \> **Dispatch board**.
 
-## See also
+## Related information
 
 [Prioritize service orders](prioritize-service-orders.md)
 
 [View the status of service orders](view-the-status-of-service-orders.md)
 
-[Dispatch board (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))
 
   
 

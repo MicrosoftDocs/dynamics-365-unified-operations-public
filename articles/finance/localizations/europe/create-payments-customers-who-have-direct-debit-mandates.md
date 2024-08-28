@@ -1,13 +1,13 @@
 --- 
 title: Create payments for a customer who have direct debit mandates
 description: Learn how to generate an ISO20022 direct debit payment file for a customer who has direct debit configured and an invoice to be paid. 
-author: mrolecki
-ms.author: mrolecki
+author: kailiang
+ms.author: kailiang
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 08/29/2018
-ms.custom:
 ms.reviewer: johnmichalak    
-audience: Application User 
 ms.search.region: Global
 ms.search.validFrom: 2016-06-30
 ms.search.form: CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, LedgerJournalTable, LedgerJournalTransCustPaym, SysQueryForm, CustPaymProposalEdit, BankAccountTableLookUp

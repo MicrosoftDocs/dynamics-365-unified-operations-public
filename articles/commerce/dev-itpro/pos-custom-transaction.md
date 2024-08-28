@@ -2,14 +2,15 @@
 title: Add custom controls to Store Commerce transaction pages
 description: This article explains how to add new custom controls to Microsoft Dynamics 365 Commerce Store Commerce transaction pages using the screen layout designer.
 author: josaw1
-ms.date: 02/01/2023
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: anvenkat
 ms.search.validFrom: 2017-11-22
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.custom: 
+  - bap-template
 ---
 
 # Add custom controls to Store Commerce transaction pages

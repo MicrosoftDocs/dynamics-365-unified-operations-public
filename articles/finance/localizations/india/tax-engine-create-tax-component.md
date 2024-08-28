@@ -1,12 +1,13 @@
 ---
 title: Create tax components
 description: Learn how to create tax components manually and by using predefined rules, including outlines on creating tax types and creating tax components.
-author: EricWangChen
-ms.author: wangchen
-ms.topic: article
-ms.date: 09/10/2021
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: India
 ms.search.validFrom: 07/30/2019
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable

@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 05/07/2018
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMAServiceOrderTable, SMAParameters
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 
@@ -56,7 +52,7 @@ If you have specified that a reason code is required, you must enter a reason co
 
 2.  In the **Service management parameters** form, click the **General** link, and then select the **Reason code on exceeding time** check box.
 
-## See also
+## Related information
 
 [Start and stop time recording on a service order](start-and-stop-time-recording-on-a-service-order.md)
 

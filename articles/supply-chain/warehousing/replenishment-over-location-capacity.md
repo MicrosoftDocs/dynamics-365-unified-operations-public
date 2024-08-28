@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 07/16/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-07-16
 ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
-ms.dyn365.ops.version: 10.0.7
 ---
 
 # Replenishment over location capacity

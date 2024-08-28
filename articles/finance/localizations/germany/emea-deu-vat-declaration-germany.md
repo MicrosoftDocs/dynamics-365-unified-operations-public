@@ -4,7 +4,7 @@ description: Learn how to set up and generate an advance value-added tax (VAT) d
 author: liza-golub
 ms.author: egolub
 ms.topic: article
-ms.date: 02/29/2024
+ms.date: 07/12/2024
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: Global
@@ -143,7 +143,7 @@ To generate a VAT declaration, you must configure the tax number (Steuernummer) 
 1. Go to **Organization administration** > **Organizations** > **Legal entities**.
 2. Select the legal entity, and then select **Registration IDs**.
 3. Select or create the address in Germany, and then, on the **Registration ID** FastTab, select **Add**.
-4. In the **Registration type** field, select the registration type that is dedicated to Germany, and that uses the **VAT ID** registration category.
+4. In the **Registration type** field, select the registration type that is dedicated to Germany, and that uses the **VAT ID** registration category. Alternatively, you can use **Enterprise ID (COID)** registration category. The system uses the **Registration ID** associated with **VAT ID** registration category if it is set up for your legal entity. The **Registration ID** associated with **Enterprise ID (COID)** registration category is used when there isn't a **Registration ID** associated with **VAT ID** registration category set up for your legal entity.
 5. In the **Registration number** field, enter the VAT number (Steuernummer).
 6. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
 

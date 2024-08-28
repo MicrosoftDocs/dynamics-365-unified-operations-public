@@ -1,12 +1,13 @@
 ---
 title: Import payment formats for Sweden
 description: Learn about the BankGirot MAX, BankGirot OCR import, and BankGirot return formats for Sweden, including a step-by-step process for importing files.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
+author: kailiang
+ms.author: kailiang
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 06/20/2017
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Sweden
 ms.search.validFrom: 2016-11-30
 ms.search.form: CustPaymMode, CustVendPaymReconciliation, LedgerJournalTransCustPaym, VendPaymMode

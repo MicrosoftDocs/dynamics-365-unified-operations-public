@@ -7,8 +7,6 @@ ms.topic: overview
 ms.date: 08/29/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -87,7 +85,7 @@ License evaluation works in the same way. Fields that are left blank are ignored
 
 [Microsoft Power Fx formulas](/power-platform/power-fx/overview) enable complex rules to be expressed for scenarios that aren't simple references to countries/regions or purposes. As is the case for other fields of rules, if a Power Fx formula isn't provided, it has no impact on the rule evaluation. The document object that's being evaluated is passed to the rule and can be used in formulas for comparison.
 
-Here are some examples of Power Fx formulas for export control. For more information, see the [Formula reference](/power-platform/power-fx/formula-reference).
+Here are some examples of Power Fx formulas for export control. Learn more in the [Formula reference](/power-platform/power-fx/formula-reference).
 
 - Documents that are being shipped to one of three countries/regions:
 

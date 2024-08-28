@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 04/30/2018
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMASubscriptionGroup
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Accruing subscriptions 
@@ -33,7 +29,7 @@ If you credit invoiced subscription amounts, you can use two methods to reverse 
 
   - You can have the accrued amounts reversed on the date where the credit note is posted or on the original posting date of the accrual.
 
-For more information, see [Subscription parameters (form)](/dynamicsax-2012//subscription-parameters-form).
+Learn more in [Subscription parameters (form)](/dynamicsax-2012//subscription-parameters-form).
 
 ## Setup requirements
 
@@ -134,7 +130,7 @@ You can control the number of ledger transactions that are created when you post
 2.  On the **Financial** tab, in the **Invoice** field, select **Total** or **Line**.
 
 
-## See also
+## Related information
 
 [Accrue subscription revenue](accrue-subscription-revenue.md)
 

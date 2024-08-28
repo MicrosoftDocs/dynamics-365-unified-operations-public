@@ -4,9 +4,10 @@ description: You can create the tax assessment for PIS/COFINS contributions for 
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
-ms.date: 06/26/2017
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0

@@ -1,12 +1,11 @@
 ---
 title: Active Directory security groups
 description: Learn about the Active Directory security groups feature, including an overview on known limitations when the Active Directory security groups feature is used.
-author: peakerbl
-ms.author: twheeloc
+author: pnghub
+ms.author: gned
 ms.topic: article
-ms.date: 05/18/2023
+ms.date: 07/12/2024
 ms.reviewer: twheeloc
-audience: IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2022-11-10
 ms.dyn365.ops.version: AX 7.0

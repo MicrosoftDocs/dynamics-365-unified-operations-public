@@ -4,7 +4,7 @@
 title: Define benefit eligibility rules and policies
 description: This topics explains how to create benefit eligibility rules and policies and then assign rules to Benefits. 
 author: twheeloc
-ms.date: 08/23/2021
+ms.date: 07/02/2024
 ms.topic: how-to 
  
 # optional metadata 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
 ---
@@ -53,7 +53,7 @@ This article explains how to create benefit eligibility rules and policies and t
 8. In the **Effective date** field, enter the date in which you want the policy to become effective.
     * Setting effective end dates allows you to make future changes to policy rules so you don't need to come back to the policy when you want those changes to take effect.  
 9. If needed, add a where clause to the **Add condition** field.
-    * For example if you wanted the rule to only apply to Sales Managers you could create the where clause to say: Where position description equals Sales Manager. You can add multiple where statements together in the rule.  
+    * For example, if you wanted the rule to only apply to Sales Managers, you could create the where clause to say: Where position description equals Sales Manager. You can add multiple where statements together in the rule.  
 10. Select **OK**.
 11. Close the page.
 
@@ -68,7 +68,7 @@ This article explains how to create benefit eligibility rules and policies and t
 7. In the **Rule type** field, select the rule you previously created.
 9. In the list, select the link in the selected row.
 10. Select **Save**.
-11. Close the form.
+11. Close the page.
 
 
 

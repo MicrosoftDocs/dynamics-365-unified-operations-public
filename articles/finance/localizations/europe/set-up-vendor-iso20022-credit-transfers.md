@@ -1,13 +1,13 @@
 --- 
 title: Set up vendors and vendor bank accounts for ISO20022 credit transfers
 description: Learn how to set up the vendor and vendor specific bank account information required for ISO20022 Credit transfer or any other vendor payment file generation.
-author: mrolecki
-ms.author: mrolecki
+author: kailiang
+ms.author: kailiang
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 08/29/2018
-ms.custom:
 ms.reviewer: johnmichalak   
-audience: Application User  
 ms.search.region: Global
 ms.search.validFrom: 2016-06-30
 ms.search.form: VendTable, VendBankAccounts

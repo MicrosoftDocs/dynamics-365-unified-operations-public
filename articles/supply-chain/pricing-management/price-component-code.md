@@ -7,15 +7,13 @@ ms.topic: how-to
 ms.date: 04/03/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: GUPPriceComponentCode, GUPPriceComponentCodeGroup
 ---
 
 # Price component codes (preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 The purpose of making pricing decisions is to increase profitability. Good decision making demands a thorough understanding of the different elements that are involved in determining the price. By providing a list of pricing building blocks, Pricing management lets you create a price structure (price tree) for pricing at the macro level. The price component code is the basic unit of the price structure.
@@ -92,9 +90,9 @@ Follow these steps to set up your price component codes.
         - **Header price attribute group** – If you set the **Header type** field to *Group*, specify the attribute group that the price attribute group combination will provide so that header attributes can be specified in pricing rules.
         - **Line type** – Select the type of criteria that should be available for specifying line attributes in pricing rules that use the price attribute group combination. Select *All* to create rules that apply to all products. Select *Group* to select a group of price attributes that the pricing rules can specify values for to identify specific products.
         - **Line price attribute group** – If you set the **Line type** field to *Group*, specify the attribute group that the price attribute group combination will provide so that line attributes can be specified in pricing rules.
-        - **Combination rank** – Assign a rank to the price attribute group combination. The rank is used to resolve concurrency if more than one pricing rule applies to the price component code. For more information, see the [Price attribute combination rank](#rank) section of this article.
+        - **Combination rank** – Assign a rank to the price attribute group combination. The rank is used to resolve concurrency if more than one pricing rule applies to the price component code. Learn more in the [Price attribute combination rank](#rank) section of this article.
 
-    - For price component codes where **Price component** is *Sales trade agreement*, the toolbar on the **Price attribute group combination** FastTab includes a **Trade agreement journals** button. Select a row, and then select this button to create a new trade agreement journal for the selected row. The selected row will be the default **Price attribute group combination** field in the trade agreement journal. For more information, see [Sales trade agreement prices](sales-trade-agreement-prices.md).
+    - For price component codes where **Price component** is *Sales trade agreement*, the toolbar on the **Price attribute group combination** FastTab includes a **Trade agreement journals** button. Select a row, and then select this button to create a new trade agreement journal for the selected row. The selected row will be the default **Price attribute group combination** field in the trade agreement journal. Learn more in [Sales trade agreement prices](sales-trade-agreement-prices.md).
 
 1. If you set the **Maintenance mode** field to *Separate*, use these guidelines to set up the **Price attribute group combination** FastTab:
 
@@ -108,9 +106,9 @@ Follow these steps to set up your price component codes.
         - **Header price attribute group** – If you set the **Header type** field to *Group*, specify the attribute group that the price attribute group combination will provide so that header attributes can be specified in pricing rules.
         - **Line type** – Select the type of criteria that should be available for specifying line attributes in pricing rules that use the price attribute group combination. Select *All* to create rules that apply to all products. Select *Group* to select a group of price attributes that your pricing rules can specify values for to identify specific products.
         - **Line price attribute group** – If you set the **Line type** field *Group*, specify the attribute group that the price attribute group combination will provide so that line attribute can be specified in pricing rules.
-        - **Combination rank** – Assign a rank to the price attribute group combination. The rank is used to resolve concurrency if more than one pricing rule applies to the price component code. For more information, see the [Price attribute combination rank](#rank) section.
+        - **Combination rank** – Assign a rank to the price attribute group combination. The rank is used to resolve concurrency if more than one pricing rule applies to the price component code. Learn more in the [Price attribute combination rank](#rank) section.
 
-    - For price component codes where the **Price component** field is set to *Sales trade agreement*, the toolbar on the **Price attribute group combination** FastTab includes a **Trade agreement journals** button. Select a row, and then select this button to create a new trade agreement journal for the selected row. The selected row will be the default **Price attribute group combination** field in the trade agreement journal. For more information, see [Sales trade agreement prices](sales-trade-agreement-prices.md).
+    - For price component codes where the **Price component** field is set to *Sales trade agreement*, the toolbar on the **Price attribute group combination** FastTab includes a **Trade agreement journals** button. Select a row, and then select this button to create a new trade agreement journal for the selected row. The selected row will be the default **Price attribute group combination** field in the trade agreement journal. Learn more in [Sales trade agreement prices](sales-trade-agreement-prices.md).
 
 1. On the Action Pane, select **Save**.
 

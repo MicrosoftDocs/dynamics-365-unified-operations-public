@@ -6,11 +6,7 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 9/3/2021
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2021-06-09
 ms.search.form: ReqSupplyDemandSchedule, ReqSupplyDemandScheduleFilters, ReqSupplyDemandItemDetails, ReqTransFuturesActionsPart, ReqSupplyDemandOverviewLegendPart
-ms.dyn365.ops.version: 10.0.22
 ---
 
 # Supply schedule

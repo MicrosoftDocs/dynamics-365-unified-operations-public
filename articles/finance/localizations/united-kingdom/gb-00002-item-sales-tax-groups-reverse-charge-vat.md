@@ -1,12 +1,13 @@
 ---
 title: GB-00002 Set up item sales tax groups for reverse charge VAT
 description: Learn about setting up item sales tax groups, assigning the default values to procurements categories subject to reverse charge VAT for the United Kingdom.
-author: EricWangChen
-ms.author: wangchen
+author: epodkolzina
+ms.author: epodkolzina
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: United Kingdom
 ms.search.validFrom: 2016-06-30
 ms.search.form: TaxItemGroup, DefaultDashboard, EcoResProductDetailsExtended, ProcCategoryHierarchyManagement

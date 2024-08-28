@@ -4,7 +4,7 @@
 title: Benefit eligibility policies
 description: This article provides information about benefit eligibility policies, which define who is eligible for specific benefits.
 author: twheeloc
-ms.date: 08/23/2021
+ms.date: 07/02/2024
 ms.topic: article
 # optional metadata
 
@@ -17,7 +17,7 @@ audience: Application User
 ms.assetid: 4ad0106f-5b07-4fd5-bc1a-5834fa9b198e
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 

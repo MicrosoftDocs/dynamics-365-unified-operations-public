@@ -6,17 +6,13 @@ ms.author: johanho
 ms.topic: article
 ms.date: 09/02/2022
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2022-09-02
 ms.search.form: IoTIntCoreScenarioManagement, IoTIntCoreScenarioConfigurationWizardV2, IoTIntMfgResourceStatusConfiguration, IoTIntMfgResourceStatus
-ms.dyn365.ops.version: 10.0.30
 ---
 
 # Production delays scenario (preview)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 The *production delays* scenario generates a notification if production throughput falls below a specific threshold value. In this scenario, a *part-out* signal is sent to Microsoft Azure IoT Hub for each item that is produced. In Dynamics 365 Supply Chain Management, the order delay is calculated based on the amount of time that the production order is scheduled to run, the number of items that should be produced, the amount of time that the job has been running, and the number of *part-out* signals that have been received. A delay notification is generated if the number of *part-out* signals for the job falls below the threshold value.
@@ -35,7 +31,7 @@ If you want to use a demo system to test the *production delays* scenario, use a
 
 ### Set up sensor simulator
 
-If you want to try this scenario without using a physical sensor, you can set up a simulator to generate the required signals. For more information, see [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md).
+If you want to try this scenario without using a physical sensor, you can set up a simulator to generate the required signals. Learn more in [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md).
 
 ### Verify that resource 3118 is used for product P0111
 

@@ -1,12 +1,13 @@
 ---
 title: Fixed assets disposal for Poland
 description: Learn about fixed asset disposal functionality for users in legal entities in Poland, including an outline on templates for fixed asset disposal.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 06/20/2017
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Poland
 ms.search.validFrom: 2016-05-31
 ms.search.form: AssetParameters, AssetPosting, CustFreeInvoice, LedgerJournalTable

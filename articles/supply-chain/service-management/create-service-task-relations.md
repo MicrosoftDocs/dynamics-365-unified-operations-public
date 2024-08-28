@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Create service task relations    
@@ -56,7 +52,7 @@ Repeat this procedure until you have created all the necessary service task rela
 
 Service task relations that are created on a service order are available on the specific service order.
 
-## See also
+## Related information
 
 [Service tasks overview](service-tasks.md)
 

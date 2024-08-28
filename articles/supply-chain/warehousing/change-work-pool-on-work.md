@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 07/16/2020
 ms.custom: 
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: global
-ms.search.validFrom: 2020-07-16
 ms.search.form:  WHSWorkPool,WHSWorkTemplateTable
-ms.dyn365.ops.version: 10.0.8
 ---
 
 # Change work pool on work

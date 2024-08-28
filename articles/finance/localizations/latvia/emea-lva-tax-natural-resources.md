@@ -1,12 +1,13 @@
 ---
 title: Tax on natural resources report
 description: Learn how to set up and generate the Tax on natural resources (NR Tax) report, including prerequisites and an outline on reporting groups.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 06/20/2017
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/25/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Latvia
 ms.search.validFrom: 2016-11-30
 ms.search.form: LvNRTaxItemGroupLookup

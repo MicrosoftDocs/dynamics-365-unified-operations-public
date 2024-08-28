@@ -3,10 +3,11 @@ title: Inventory journal reports
 description: When you use configurable inventory reports based on electronic reporting, you need to set up a relationship between a specific report and a journal type.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Estonia, Hungary, Latvia, Lithuania, Poland
 ms.search.validFrom: 2016-11-30
 ms.search.form: InventJournalName

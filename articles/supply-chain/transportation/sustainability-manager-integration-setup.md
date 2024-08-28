@@ -7,8 +7,6 @@ ms.topic: how-to
 ms.date: 11/28/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: TMSParameters, TMSMethod
 ---
 
@@ -50,7 +48,7 @@ To enable carbon emission calculations, you must map the transportation methods 
 1. For each transportation method that's listed on the page, use the **Transportation Mode in Microsoft Sustainability Manager** field to identify the matching transportation mode in Microsoft Sustainability Manager.
 
     > [!NOTE]
-    > The transportation modes that are listed in the **Transportation Mode in Microsoft Sustainability Manager** field are taken from United States Environment Protection Agency Greenhouse Gas Emissions Factors Hub (EPA GHG Emissions Factors Hub). Microsoft Sustainability Manager uses these modes in its transportation and distribution calculation model. For more information, see [GHG Emissions Factors Hub](https://www.epa.gov/climateleadership/ghg-emission-factors-hub).
+    > The transportation modes that are listed in the **Transportation Mode in Microsoft Sustainability Manager** field are taken from United States Environment Protection Agency Greenhouse Gas Emissions Factors Hub (EPA GHG Emissions Factors Hub). Microsoft Sustainability Manager uses these modes in its transportation and distribution calculation model. Learn more in [GHG Emissions Factors Hub](https://www.epa.gov/climateleadership/ghg-emission-factors-hub).
 
 1. On the Action Pane, select **Save**.
 

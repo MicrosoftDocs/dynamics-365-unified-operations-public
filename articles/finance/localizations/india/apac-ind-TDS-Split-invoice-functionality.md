@@ -3,13 +3,13 @@ title: Split invoice functionality
 description: Learn about the setup and functionality for splitting invoices by delivery address and tax account number (TAN), including an example.
 author: kailiang
 ms.author: kailiang
-ms.topic: article
-ms.date: 02/12/2021
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2021-02-12
-ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.17
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ---

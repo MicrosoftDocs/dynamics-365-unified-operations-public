@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 05/07/2018
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMAServiceOrderTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Start and stop time recording on a service order 
@@ -43,13 +39,6 @@ Use this procedure to start and stop time recording for a service order for whic
 > [!NOTE]
 > <P>If <STRONG>Reason code on exceeding time</STRONG> is selected in the <STRONG>Service management parameters</STRONG> form, you must provide a reason code before you can stop the time recording.</P>
 
-
-
-## See also
-
-[Start SLA time recording (form)](https://technet.microsoft.com/library/hh242297\(v=ax.60\))
-
-[Stop SLA time recording (form)](https://technet.microsoft.com/library/hh242241\(v=ax.60\))
 
   
 

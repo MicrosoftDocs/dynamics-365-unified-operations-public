@@ -1,15 +1,14 @@
 ---
 title: EU Sales list for UK (Northern Ireland)
 description: Learn about the European Union (EU) sales list report for UK (Northern Ireland), including an outline on setting up information about the company.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 05/26/2022
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience: Application User
-ms.search.region: 
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ 
 ---
 
 # EU Sales list for UK (Northern Ireland)

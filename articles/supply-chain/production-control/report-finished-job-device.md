@@ -7,7 +7,6 @@ ms.reviewer: kamaybac
 ms.search.form: JmgRegistrationSetupTouch
 ms.topic: how-to
 ms.date: 08/05/2022
-audience: Application User
 ms.custom: 
   - bap-template
   - evergreen
@@ -44,7 +43,7 @@ To control whether and how the quantities that are reported as finished on the l
 > [!NOTE]
 > Quantities aren't tracked in inventory if the operations that they are reported as finished on aren't defined as the last operation. However, those quantities can be used to view progress. They can also be included in rules that control whether workers can start the next operation before a defined threshold of reported quantities on the previous operation is reached. You can define these rules on the **Quantity validation** tab on the **Production order defaults** page.
 
-For more information about how to work with the **Production order defaults** page, see [Production parameters in Manufacturing execution](production-parameters-manufacturing-execution.md).
+For more information about how to work with the **Production order defaults** page, see [Production parameters for manufacturing execution](production-parameters-manufacturing-execution.md).
 
 ## Report batch-controlled items as finished
 
@@ -224,7 +223,7 @@ To control whether workers should reuse an existing license plate or generate a 
 ![Configure job card for devices page.](media/config-job-card-raf.png "Configure job card for devices page")
 
 > [!NOTE]
-> To configure the label, go to **Warehouse management \> Setup \> Document routing \> Document routing**. For more information, see [Document routing label layouts](../warehousing/document-routing-layout-for-license-plates.md).
+> To configure the label, go to **Warehouse management \> Setup \> Document routing \> Document routing**. Learn more in [Document routing label layouts](../warehousing/document-routing-layout-for-license-plates.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,12 +1,13 @@
 ---
 title: NO-00003 Customer and vendor payment formats
 description: Learn about setting up and maintaining Norwegian payment IDs, including step-by-step processes for setting up payment IDs and attaching payment IDs.
-author: EricWangChen
-ms.author: wangchen
+author: kailiang
+ms.author: kailiang
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 08/29/2018
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Norway
 ms.search.validFrom: 2016-06-30
 ms.search.form: 

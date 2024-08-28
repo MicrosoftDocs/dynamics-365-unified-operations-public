@@ -3,10 +3,11 @@ title: Tax payments in Brazil
 description: Learn about tax payments in Brazil. Users register and post tax payments together with related fiscal information that must be reported to the tax authorities.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
-ms.date: 10/31/2017
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Brazil
 ms.search.validFrom: 2016-11-30
 ms.search.form: FBTaxAssessmentPayment_BR, FBTaxAssessmentPaymentOtherDebits_BR

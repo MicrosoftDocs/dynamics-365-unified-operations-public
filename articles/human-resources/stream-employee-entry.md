@@ -4,7 +4,7 @@
 title: Streamlined employee entry and navigation
 description: Data entry for workers in Dynamics 365 Human Resources provides quick entry for all employees, past, active or future.
 author: twheeloc
-ms.date: 01/31/2022
+ms.date: 07/09/2024
 ms.topic: article
 # optional metadata
 

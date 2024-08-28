@@ -1,12 +1,13 @@
 ---
 title: Construction Industry Scheme for the United Kingdom
 description: Learn about functionality in Microsoft Dynamics 365 Finance that supports the requirements from these regulations with an outline on CIS deductions.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 06/20/2017
+author: liza-golub
+ms.author: egolub
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: United Kingdom
 ms.search.validFrom: 2016-02-28
 ms.search.form: LedgerJournalTransVendPaym, TaxAuthority, TaxWithholdGroup, TaxWithholdItemGroup_TH, TaxWithholdPeriod_TH, TaxWithholdTable, VendTable

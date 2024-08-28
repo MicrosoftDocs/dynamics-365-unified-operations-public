@@ -7,8 +7,6 @@ ms.topic: how-to
 ms.date: 04/11/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: WHSParameters, ReturnDispositionCode, WHSDispositionTable, WHSReturnItemPolicy, WHSReturnItemReceivingPolicy, WHSRFMenuItem, WHSSourceSystemDispositionCode, WHSInboundShipmentOrder, WHSSourceSystem
 ---
 
@@ -164,7 +162,7 @@ Return item policies let you control the conditions under which the system allow
 1. Repeat this procedure for each item or item group, as you require. When returns are processed, the most specific return item policy applies to each item in the return.
 1. On the Action Pane, select **Save**.
 
-### Create return item receiving policies
+### <a name="return-receive-policy"></a>Create return item receiving policies
 
 You must define the required return item receiving policies before you create the related mobile device menu items. These policies enable each menu item to process the return correctly.
 
@@ -175,15 +173,27 @@ You must define the required return item receiving policies before you create th
     - **Return item receiving policy ID** – Enter a name for the policy (for example, *Blind return* or *Return details*).
     - **Description** – Enter a short description of the policy.
     - **Return process** – Select the type of return process that the policy represents (*Return details* or *Blind return*).
+    - **Create return order** – Select the type of return order that the system should create to manage returns:
 
-1. If you set **Return process** to *Blind return*, then the **Create return order** setting becomes available. Use this setting to control which type of return order the system should create to manage the blind return. Choose one of the following values:
+        - *Return order* – The system creates a return order for each return. Select this value if you aren't using [Warehouse management only mode](wms-only-mode-overview.md).
+        - *Inbound shipment order* – The system creates an [inbound shipment order](wms-only-mode-using.md#inbound-shipment-orders) for each return. Select this value if you're using [Warehouse management only mode](wms-only-mode-overview.md).
 
-    - *Return order* – The system creates a return order for each blind return. Choose this option unless you're using [Warehouse management only mode](wms-only-mode-overview.md).
-    - *Inbound shipment order* – The system creates an [inbound shipment order](wms-only-mode-using.md#inbound-shipment-orders) for each blind return. Choose this option if you're using [Warehouse management only mode](wms-only-mode-overview.md).
+    - **Return order identification** – This field is available only when the **Return process** field is set to *Blind return* and the **Create return order** field is set to *Inbound shipment order*. The way that you use it depends on the needs of your external system. (See the documentation for your external system.) Select the type of extra identifying information that the system should return to the source system when it registers a return order:
+
+        - *None* – The system doesn't return any extra identifying information, and the app doesn't prompt the worker to enter any extra information during receiving.
+        - *Account number* – The system returns an account number to help identify the return order. This value is typically the ID of the customer who is returning the items (the customer account number). The mobile app prompts the worker to scan or enter this number during receiving.
+
+    - **Return order type** – This field is available only when the **Return order identification** is available and set to *Account number*. Like the account number, the value in this field is returned to the source system when a return order is registered. It's intended to hold the name that identifies the document type for return orders in the source system. The way that you use it depends on the needs of your external system. (See the documentation for your external system.) If you leave this field blank, the value is inherited from the relevant [source system configuration](wms-only-mode-unannounced-returns-setup.md#source-systems).
+
+    > [!IMPORTANT]
+    > If your source system is Dynamics 365 Supply Chain Management (as is the case when you run an [external shared warehouse scenario](wms-only-mode-external-shared-warehouse.md)), you must set the following values for your blind return policies:
+    >
+    > - **Return order identification** – Select *Account number*, and instruct workers to enter the customer ID (account number) when the mobile app prompts them during receiving.
+    > - **Return order type** – Enter *Return*, which is the return order type that is used in Supply Chain Management. (Alternatively, if *Return* is already specified as the default return order type for the source system, leave this field blank.)
 
 1. If you support both types of unannounced return processes (*Return details* and *Blind return*), repeat this procedure to add a return item receiving policy for the other process.
 
-### Set up mobile device menu items
+### <a name="mdmi"></a>Set up mobile device menu items to process unannounced returns
 
 To enable workers to process unannounced returns, you must create a separate mobile device menu item for each type of unannounced return process (*Return details* or *Blind return*) that you support.
 
@@ -196,11 +206,11 @@ To enable workers to process unannounced returns, you must create a separate mob
     - **Mode** – Select *Work*.
     - **Use existing work** – Set this option to *No*.
     - **Work creation process** – Select *Return item receiving*.
-    - **Barcode data policy** – Select the policy to use if multiple fields are filled in based on a single bar code scan. For more information, see [GS1 bar codes](gs1-barcodes.md).
+    - **Barcode data policy** – Select the policy to use if multiple fields are filled in based on a single bar code scan. Learn more in [GS1 bar codes](gs1-barcodes.md).
     - **Generate license plate** – Set this option to *Yes* to automatically create new license plates as they're needed. Set it to *No* if the worker must always select an existing license plate.
     - **Display disposition code** – Select whether workers should be prompted to select a disposition code during the receiving process. The disposition code determines the inventory status, work template, and location directive for the returned items.
-    - **Print label** – Set this option to *Yes* to always print a license plate label after all steps in the related work template are completed (regardless of whether a print step is included in the work template). If you want to allow the work template to print the license plate label at a different point in the process, set this option to *No*. The license plate label includes a bar code that provides the ID of the license plate where the worker places the returned items. For more information, see [License plate label layouts and printing](print-license-plate-labels-using-label-layouts.md).
-    - **Return item receiving policy ID** – Select the [item receiving policy](#create-return-item-receiving-policies) that you created for the type of return process (*Return details* and *Blind return*) that this menu item supports.
+    - **Print label** – Set this option to *Yes* to always print a license plate label after all steps in the related work template are completed (regardless of whether a print step is included in the work template). If you want to allow the work template to print the license plate label at a different point in the process, set this option to *No*. The license plate label includes a bar code that provides the ID of the license plate where the worker places the returned items. Learn more in [License plate label layouts and printing](print-license-plate-labels-using-label-layouts.md).
+    - **Return item receiving policy ID** – Select the [item receiving policy](#return-receive-policy) that you created for the type of return process (*Return details* and *Blind return*) that this menu item supports.
 
 1. If you support both types of unannounced return processes (*Return details* and *Blind return*), repeat steps 2 and 3 to create a menu item for the other process
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu**.
@@ -319,7 +329,7 @@ Follow these steps to create return item policies for the items that are used in
     - **Return acceptance:** *Allowed days after shipment*
     - **Allowed days for return:** *28*
 
-For more information, see the [Set up return item policies](#set-up-return-item-policies) section.
+Learn more in the [Set up return item policies](#set-up-return-item-policies) section.
 
 #### Set up return item receiving policies
 
@@ -328,7 +338,7 @@ Follow these steps to create return item receiving policies for the scenarios.
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Return item receiving policies**.
 1. Add two return item receiving policies: one for the *Blind return* process and one for the *Return details* process.
 
-For more information, see the [Create return item receiving policies](#create-return-item-receiving-policies) section.
+Learn more in the [Create return item receiving policies](#return-receive-policy) section.
 
 #### Set up mobile device menu items and menus
 
@@ -346,7 +356,7 @@ Follow these steps to create mobile device menu items for the scenarios.
 1. Go to **Warehouse management** \> **Setup** \> **Mobile device** \> **Mobile device menu**.
 1. Add both menu items to an appropriate place in your mobile device menu structure.
 
-For more information, see the [Set up mobile device menu items](#set-up-mobile-device-menu-items) section.
+Learn more in the [Set up mobile device menu items](#mdmi) section.
 
 ## Example scenario 1: Customer return with a blind return policy
 
@@ -375,7 +385,7 @@ Follow these steps to receive products to a mixed license plate in a warehouse w
 
 ### <a name="complete-mixed-license-plate-receiving"></a> Complete mixed license plate receiving
 
-The returned products have now been put onto a mixed license plate for further processing. (For more information, see [Mixed license plate receiving](mixed-license-plate-receiving.md).) Follow these steps to finish receiving the returned items.
+The returned products have now been put onto a mixed license plate for further processing. (Learn more in [Mixed license plate receiving](mixed-license-plate-receiving.md).) Follow these steps to finish receiving the returned items.
 
 1. Go to **Warehouse Management** \> **Inquiries and reports** \> **Mixed license plate receiving**.
 1. In the **License plate** grid, find the mixed license plate that you processed by using the mobile app.
@@ -384,7 +394,7 @@ The returned products have now been put onto a mixed license plate for further p
 After you complete mixed license plate receiving, Supply Chain Management automatically creates an RMA order that's prepared for further downstream processing, as described in [Sales returns](sales-returns.md).
 
 > [!TIP]
-> You can set up your mobile device menu item for processing returns to include a step that lets workers complete mixed license plate receiving directly from the mobile device while receiving the return. Then you won't need to [complete this step](mixed-license-plate-receiving.md) later in the Supply Chain Management web client. To do so, create a [detour](warehouse-app-detours.md) item with the **Activity code** *Complete mixed license plate*. See also [Set up a mobile device menu item for completing mixed license plates](mobile-device-complete-mixed-lp-menu.md).
+> You can set up your mobile device menu item for processing returns to include a step that lets workers complete mixed license plate receiving directly from the mobile device while receiving the return. Then you won't need to [complete this step](mixed-license-plate-receiving.md) later in the Supply Chain Management web client. To do so, create a [detour](warehouse-app-detours.md) item with the **Activity code** *Complete mixed license plate*. Learn more in [Set up a mobile device menu item for completing mixed license plates](mobile-device-complete-mixed-lp-menu.md).
 
 ## Example scenario 2: Customer return with a return details policy
 
@@ -473,7 +483,7 @@ Follow these steps to receive returned items into the warehouse.
 
 ### Complete mixed license plate receiving
 
-The returned products have now been put onto a mixed license plate for further processing (see also [Mixed license plate receiving](mixed-license-plate-receiving.md)). Follow these steps to finish receiving the returned items.
+The returned products have now been put onto a mixed license plate for further processing. (Learn more in [Mixed license plate receiving](mixed-license-plate-receiving.md).) Follow these steps to finish receiving the returned items.
 
 1. Go to **Warehouse Management** \> **Inquiries and reports** \> **Mixed license plate receiving**.
 1. In the **License plate** grid, find the mixed license plate that you processed by using the mobile app.
@@ -482,7 +492,7 @@ The returned products have now been put onto a mixed license plate for further p
 After you complete mixed license plate receiving, Supply Chain Management automatically creates an RMA order that's prepared for further downstream processing, as described in [Sales returns](sales-returns.md).
 
 > [!TIP]
-> You can set up your mobile device menu item for processing returns to include a step that lets workers complete mixed license plate receiving directly from the mobile device while receiving the return. Then you won't need to [complete this step](mixed-license-plate-receiving.md) later in the Supply Chain Management web client. To do so, create a [detour](warehouse-app-detours.md) item with the **Activity code** *Complete mixed license plate*. See also [Set up a mobile device menu item for completing mixed license plates](mobile-device-complete-mixed-lp-menu.md).
+> You can set up your mobile device menu item for processing returns to include a step that lets workers complete mixed license plate receiving directly from the mobile device while receiving the return. Then you won't need to [complete this step](mixed-license-plate-receiving.md) later in the Supply Chain Management web client. To do so, create a [detour](warehouse-app-detours.md) item with the **Activity code** *Complete mixed license plate*. Learn more in [Set up a mobile device menu item for completing mixed license plates](mobile-device-complete-mixed-lp-menu.md).
 
 ## Example scenario 3: Nonpacking scenarios for return details
 

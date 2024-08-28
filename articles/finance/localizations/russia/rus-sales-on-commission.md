@@ -1,12 +1,13 @@
 ---
 title: Sales on commission
 description: Learn about the functionality for sales on commission, including a step-by-step process for creating a purchase agreement for a sale by a commissioner.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 03/03/2020
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1

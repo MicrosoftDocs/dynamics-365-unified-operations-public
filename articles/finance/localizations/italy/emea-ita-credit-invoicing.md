@@ -3,10 +3,11 @@ title: Credit invoicing (Italy)
 description: Learn how to set up the credit invoicing functionality in Italy, including processes for activating credit invoicing and finding the Credit Invoicing button.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
-ms.date: 09/15/2021
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Italy
 ms.search.validFrom: 2019-09-17
 ms.search.form: TaxYearlyCom_IT, TaxAuthority, TaxPeriod

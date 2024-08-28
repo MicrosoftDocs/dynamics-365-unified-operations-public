@@ -6,12 +6,7 @@ ms.author: yufeihuang
 ms.topic: article
 ms.date: 03/23/2021
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2016-02-28
 ms.search.form: InventQualityOrderTable
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ---
 
@@ -23,7 +18,7 @@ This article describes how to manually or automatically create quality orders, a
 
 ## Automatically created quality orders
 
-You can configure the system so that it automatically creates quality orders, based on item sampling rules. For more information, see [Quality management item sampling](quality-item-sampling.md).
+You can configure the system so that it automatically creates quality orders, based on item sampling rules. Learn more in [Quality management item sampling](quality-item-sampling.md).
 
 ## <a name="manual-quality-orders"></a>Manually create quality orders
 
@@ -120,17 +115,19 @@ To work with quality orders that are related to your quarantine orders, go to **
 
 ### From goods-in-transit orders (preview)
 
-[!INCLUDE [preview-banner-section](../includes/preview-banner-section.md)]
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
 
-> [!IMPORTANT]
-> This feature is currently in private preview and is therefore only available to a limited number of customers. If you are interested in testing this feature, please contact Microsoft Support.
+You can initiate and run quality checks against goods-in-transit orders. This proactive approach enables discrepancies or defects that might occur during transportation to be detected early, thereby ensuring that only products that meet predefined quality standards can proceed to their final destination.
 
 To work with quality orders that are related to your goods-in-transit orders, follow any of these steps:
 
 - Go to **Landed cost \> Periodic tasks \> Goods in transit orders** and select a goods-in-transit order. Then, on the Action Pane, select **Quality orders** to open the **Quality orders** page. There, you can view, create, or update quality orders that are related to the goods-in-transit order.
 - Go to **Landed cost \> Voyages \> All voyages** and open or select a voyage or select a voyage. On the Action pane, on the **General** tab, in the **Inquiries** group, select **Goods in transit orders** to open the **Goods in transit orders** page. Select a goods-in-transit order. Then, on the Action Pane, select **Quality orders** to open the **Quality orders** page, where you can view, create, or update quality orders that are related to the selected goods-in-transit order.
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
+For details about how to enable this feature, see [Turn on the Landed cost module and related features for your system](../landed-cost/landed-cost-enable.md).
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Advanced actions for quality orders
 
@@ -169,7 +166,7 @@ When a quality order is automatically generated from a quality association, the 
 
 If you aren't using full blocking, or if you're manually creating a quality order, the system automatically creates an inventory blocking record for the quantity of the item that is being tested on the quality order. In the record that is created on the **Inventory blocking** page, the **Inventory blocking type** field is set to *Quality order*.
 
-To view and edit the inventory blocking for a quality order that is selected on the **Inventory blocking** page, select **Inquiries \> Inventory blocking** on the Action Pane. For more information, see [Inventory blocking](inventory-blocking.md).
+To view and edit the inventory blocking for a quality order that is selected on the **Inventory blocking** page, select **Inquiries \> Inventory blocking** on the Action Pane. Learn more in [Inventory blocking](inventory-blocking.md).
 
 ### Inquire about the details of a quality order
 
@@ -193,7 +190,7 @@ You work for a manufacturing company that must follow strict regulations that ar
 
 You work for a distribution company that ships products that can be customized for various countries and regions. Some customers have strict specifications that must be followed. Otherwise, fees and returns or chargebacks might be incurred. You use quality orders to track the details about each test and results that match customer requirements. Cases are used to review and approve the details for the CoA before the document is generated and attached together with other shipping paperwork.
 
-## Additional resources
+## Related information
 
 - [Quality management processes](quality-management-processes.md)
 - [Quality test](quality-tests.md)

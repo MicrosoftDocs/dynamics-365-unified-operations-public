@@ -7,15 +7,13 @@ ms.topic: overview
 ms.date: 04/03/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form:
 ---
 
 # Vendor list prices and price adjustments (preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 In some cases, Pricing management can derive a product's sales price from the vendor's list price or procurement price. For example, this functionality can be used for the trade of items in the retail and distribution industry, where products are procured from vendors and sold to customers.

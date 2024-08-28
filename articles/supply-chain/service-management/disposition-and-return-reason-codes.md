@@ -6,11 +6,7 @@ ms.author: henrikan
 ms.topic: overview
 ms.date: 07/25/2019
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: ReturnTableListPage, ReturnReasonCodeLookup
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Return reason codes and disposition codes
@@ -27,7 +23,7 @@ Assign a disposition code when an item is received or during the physical inspec
 - Return the item to inventory and credit the customer for the cost of the item.
 - Repair the item and return it to the customer.
 
-## See also
+## Related information
 
 - [Set up return reason codes](set-up-return-reason-code.md)
 - [Set up disposition codes](set-up-disposition-codes.md)

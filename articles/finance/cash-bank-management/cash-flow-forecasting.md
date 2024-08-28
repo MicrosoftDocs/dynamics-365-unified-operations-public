@@ -17,7 +17,6 @@ ms.dyn365.ops.version: July 2017 update
 # Cash flow forecasting
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 You can use the cash flow forecasting tools to analyze upcoming cash flow and currency requirements, so that you can estimate the company's future need for cash. To obtain a forecast of the cash flow, you must complete the following tasks:
 

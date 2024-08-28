@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 05/07/2018
 ms.custom:
 ms.reviewer: kamaybac 
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMAAgreementTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Set up template to represent objects at customer site 
@@ -37,7 +33,7 @@ Use this procedure to set up a template that represents objects at a customer si
 
 8.  Close the forms to save your changes.
 
-## See also
+## Related information
 
 [Manage template BOMs on object relations](manage-template-boms-on-object-relations.md)
 

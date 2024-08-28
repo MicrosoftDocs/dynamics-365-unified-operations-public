@@ -3,13 +3,13 @@ title: Scope of Mexican localization
 description: Learn about the strategy and scope for tax, finance, and accounting laws and regulations in Mexico, including outlines on terminology and abbreviations.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
-ms.date: 04/11/2018
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Mexico
 ms.search.validFrom: 2016-02-28
-ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
 ---
 

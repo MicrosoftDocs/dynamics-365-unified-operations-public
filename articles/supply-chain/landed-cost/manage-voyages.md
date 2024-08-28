@@ -7,8 +7,6 @@ ms.topic: how-to
 ms.date: 08/09/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: ITMTableListPage, ITMTable
 ---
 
@@ -17,6 +15,9 @@ ms.search.form: ITMTableListPage, ITMTable
 [!include [banner](../../includes/banner.md)]
 
 A voyage typically represents a vessel. However, depending on your practices and procedures, it can represent a vendor, a purchase order, or some other item that makes sense for your organization.
+
+> [!TIP]
+> This article provides reference information that describes all of the settings available on the **Voyages** and **All voyages** pages. For step-by-step guides to creating and managing voyages, see [Create a voyage](/training/modules/work-with-landed-cost-supply-chain-management/create-voyage) and [Manage a voyage](/training/modules/work-with-landed-cost-supply-chain-management/manage-voyage), which are training units from the [Work with landed cost in Dynamics 365 Supply Chain Management](/training/modules/work-with-landed-cost-supply-chain-management/) training module.
 
 ## The All voyages page
 

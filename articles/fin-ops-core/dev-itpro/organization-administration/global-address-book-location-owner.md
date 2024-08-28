@@ -2,7 +2,7 @@
 title: Global address book and location owners
 description: Learn about location owners and explains how to change the owner in the global address book, including an overview on assigning location ownership.
 author: jaredha
-ms.author: jaredha
+ms.author: anisagrawal
 ms.topic: article
 ms.date: 08/16/2021
 ms.reviewer: twheeloc

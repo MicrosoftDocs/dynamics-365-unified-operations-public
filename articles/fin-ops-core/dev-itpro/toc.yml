@@ -15,14 +15,12 @@ items:
         items:
         - name: What's new or changed in Platform updates home page
           href: ../fin-ops/get-started/whats-new-home-page.md
-        - name: New VC++ Runtime requirements for Cloud-Hosted Environments running versions 10.0.36+
-          href: get-started/whats-new-platform-updates-vcruntime.md
+        - name: Platform updates for version 10.0.41 (September 2024)
+          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-41.md
         - name: Platform updates for version 10.0.40 (June 2024)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-40.md
         - name: Platform updates for version 10.0.39 (March 2024)
           href: ../fin-ops/get-started/whats-new-platform-updates-10-0-39.md
-        - name: Platform updates for version 10.0.38 (February 2024)
-          href: ../fin-ops/get-started/whats-new-platform-updates-10-0-38.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -325,6 +323,8 @@ items:
             href: sysadmin/archive-inventory.md
           - name: Archive Dynamics 365 Supply Chain inventory journals
             href: sysadmin/archive-inventory-journal.md
+          - name: Archive Commerce transactions
+            href: ../../commerce/archive-transactions.md
         - name: Finance and operations apps archive with Dataverse long term retention FAQ
           href: sysadmin/archive-faq.md
     - name: Azure Data Lake
@@ -597,20 +597,10 @@ items:
         items:
         - name: Custom help overview
           href: help/custom-help-overview.md
-        - name: Preparing content for use with the Help pane
-          href: help/preparing-content.md
-        - name: The ConvertHtmlToJson tool
-          href: help/custom-help-toolkit-ConvertHtmlToJson.md
-        - name: The HtmlLocaleChanger tool
-          href: help/custom-help-toolkit-HtmlLocaleChanger.md
-        - name: Convert Dynamics AX custom Help for use in Dynamics 365
-          href: help/migrate-dynamicsax2012.md
         - name: Connect your custom help to the Help pane
           href: help/connect-help-pane.md
         - name: Language and locale descriptors in across product and help
           href: help/language-locale.md
-        - name: Extend and collaborate on the help
-          href: help/contributor-guide.md      
         - name: Contribute to the Help
           href: help/contributor-guide.md
     - name: Develop and customize
@@ -1963,6 +1953,10 @@ items:
             href: migration-upgrade/pre-post-upgrade-scripts.md
         - name: Environment operations
           items:
+          - name: Monitor the updgrade
+            href: migration-upgrade/monitor-upgrade.md
+          - name: Database synchronize performance 
+            href: migration-upgrade/database-sync-perf.md
           - name: Monitoring replication
             href: migration-upgrade/monitor-replication.md
           - name: Migrate document attachments
@@ -2257,8 +2251,18 @@ items:
         href: ../fin-ops/copilot/copilot-for-finance-operations.md
       - name: Generative help and guidance with Copilot
         href: ../fin-ops/copilot/copliot-generative-help.md
-      - name: Enable Copilot capabilities in finance and operations apps
-        href: copilot/enable-copilot.md
+      - name: Chat with finance and operations data on Microsoft 365 Copilot
+        href: m365-copilot/chat-with-fno-data-on-m365copilot.md
+      - name: Enable Copilot capabilities and features
+        items:
+        - name: Enable Copilot capabilities in finance and operations apps
+          href: copilot/enable-copilot.md
+        - name: Enable Copilot support for managing changes to confirmed purchase orders
+          href: copilot/purchase-order-changes-after-confirmation-enable.md
+        - name: Enable generative help and guidance with Copilot
+          href: copilot/enable-copliot-generative-help.md
+        - name: Add knowledge to generative help and guidance with Copilot
+          href: copilot/extend-copilot-generative-help.md
       - name: Extending Copilot capabilities in finance and operations apps
         items:
         - name: Overview
@@ -2269,24 +2273,26 @@ items:
           href: copilot/copilot-application-context.md
         - name: Create client plugins for Copilot in finance and operations apps
           href: copilot/copilot-client-plugins.md
+        - name: Create AI plugins with finance and operations business logic (preview)
+          href: copilot/copilot-ai-plugins.md
         - name: Tutorials
           items:
           - name: Extending Copilot capabilities with low-code plugins
             href: copilot/tutorial-create-low-code-plugins.md
           - name: Create client plugins for Copilot in finance and operations apps
             href: copilot/tutorial-create-client-plugins.md
-      - name: Enable generative help and guidance with Copilot
-        href: copilot/enable-copliot-generative-help.md
+          - name: Create AI plugins with finance and operations business logic
+            href: copilot/tutorial-create-ai-plugins.md
     - name: Responsible AI
       items:
       - name: Overview
         href: responsible-ai/responsible-ai-overview.md
-      - name: Responsible AI FAQ for chat with finance and operations data on Microsoft 365 Copilot
-        href: m365-copilot/faq-for-chat-with-fno-data-on-m365copilot.md
       - name: Responsible AI FAQ for Generative help and guidance with Copilot
         href: ../fin-ops/copilot/faq-copilot-generative-help.md
-      - name: Responsible AI FAQ for Suggested questions within Copilot (preview)
+      - name: Responsible AI FAQ for Follow-up questions in the Copilot sidecar (preview)
         href: ../fin-ops/copilot/faq-copilot-suggested-questions.md
+      - name: Responsible AI FAQ for Workflow history summary
+        href: ../fin-ops/copilot/workflow-history-summary-faq.md
   - name: Dynamics 365 Supply Chain Management 
     href: ../../supply-chain/supply-chain-management-welcome.md
   - name: Dynamics 365 Finance 

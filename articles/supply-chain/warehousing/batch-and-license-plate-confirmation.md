@@ -1,14 +1,12 @@
 ---
 title: Batch, serial, and license plate confirmation
 description: Learn how to set up and apply batch, serial, and license plate confirmation from a mobile device with an outline on where it applies.
-author: adesypri
-ms.author: adesypri
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 08/03/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: WHSRFAutoConfirm
 ---
 

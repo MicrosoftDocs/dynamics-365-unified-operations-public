@@ -1,16 +1,15 @@
 ---
 title: Fixed assets (Russia)
 description: Learn about fixed asset management for Russia, including outlines on registering fixed assets and fixed asset value models.
-author: kfend
-ms.author: kfend
-ms.topic: article
-ms.date: 08/05/2019
-ms.custom:
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
 ms.reviewer: johnmichalak
-audience: Application User 
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
-ms.search.form:
 ms.dyn365.ops.version: 8.1
 ---
 

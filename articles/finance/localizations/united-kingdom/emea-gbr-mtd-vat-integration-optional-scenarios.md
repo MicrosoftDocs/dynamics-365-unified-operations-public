@@ -1,12 +1,13 @@
 ---
 title: Retrieve information about VAT payments and liabilities from HMRC
 description: Learn how to retrieve information about value-added tax payments and liabilities from the Making Tax Digital of Her Majesty's Revenue and Customs (HMRC).
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 08/17/2021
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: United Kingdom
 ms.search.validFrom: 2021-08-06
 ms.dyn365.ops.version: AX 10.0.22

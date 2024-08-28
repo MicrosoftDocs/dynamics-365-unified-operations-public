@@ -1,8 +1,8 @@
 --- 
 title: Close the fiscal year
 description: Learn about how to close the fiscal year with a procedure that steps through year-end close, including an outline on validating year-end close parameters.
-author: aprilolson
-ms.author: aolson
+author: moaamer
+ms.author: moaamer
 ms.topic: how-to
 ms.date: 03/28/2023
 ms.custom:

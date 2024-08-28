@@ -8,8 +8,6 @@ ms.date: 05/22/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: WHSNMFC
 ---
 
@@ -77,7 +75,7 @@ The following example shows how to set up two different NMFC codes that can be u
 
 1. On the Action Pane, select **Save**.
 
-## Additional resources
+## Related information
 
 - [Less than truckload (LTL) classes](ltl-class.md)
 - [Create a bill of landing](create-bill-of-lading.md)

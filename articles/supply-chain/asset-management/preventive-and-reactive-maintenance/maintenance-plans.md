@@ -9,7 +9,6 @@ ms.custom:
   - bap-template
   - evergreen
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: EntAssetMaintenancePlan, EntAssetObjectType, EntAssetCounterType, EntAssetWorkOrderLifecycleModel
 ---
 
@@ -188,8 +187,8 @@ The *Counter-based maintenance enhancements* feature introduces the following fu
 
 - The option to automatically insert a counter that has a value of *0* (zero) when an asset is created. This option can be useful when you use predictive maintenance that is based on counters. When the *Counter-based maintenance enhancements* feature isn't used, counters that have a value of *0* (zero) must be manually inserted.
 - The ability to configure a counter so that it's automatically reset when a work order is completed. This functionality is useful when you want to schedule maintenance based on the aggregated value since the last work order was completed.
-- A new type of maintenance plan interval that is named *Repeated on aggregated value (Counter only)*. This type triggers maintenance each time that an aggregated counter reaches a multiple of a specific value. For example, maintenance can be triggered every 10,000 hours. For more information, see the [Interval types overview](#interval-types) section earlier in this article.
-- Another new type of maintenance plan interval that is named *Once on aggregated value (Counter only)*. This type triggers maintenance when an aggregated counter reaches a specific value, such as 8,000 hours. For more information, see the [Interval types overview](#interval-types) section.
+- A new type of maintenance plan interval that is named *Repeated on aggregated value (Counter only)*. This type triggers maintenance each time that an aggregated counter reaches a multiple of a specific value. For example, maintenance can be triggered every 10,000 hours. Learn more in the [Interval types overview](#interval-types) section earlier in this article.
+- Another new type of maintenance plan interval that is named *Once on aggregated value (Counter only)*. This type triggers maintenance when an aggregated counter reaches a specific value, such as 8,000 hours. Learn more in the [Interval types overview](#interval-types) section.
 
 ### Turn the Counter-based maintenance enhancements feature on or off
 

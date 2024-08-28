@@ -1,12 +1,13 @@
 ---
 title: Audit file (XML Auditfile Financieel, XAF)
 description: Learn how to set up and generate the Audit file for legal entities in the Netherlands, including an outline on importing and setting up ER configurations.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 05/06/2020
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Netherlands
 ms.search.validFrom: 2016-06-30
 ms.search.form: TaxEvatParameters_NL

@@ -4,13 +4,11 @@ description: Learn how to export accounting data to several XML files for a spec
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: conceptual
-ms.date: 06/17/2021
 ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
 ms.reviewer: johnmichalak
-audience: Application User
-ms.search.region: 
 ms.search.validFrom: 2021-04-23
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.19
 ---
 

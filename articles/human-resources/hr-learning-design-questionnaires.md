@@ -4,7 +4,7 @@
 title: Create questionnaires
 description: This article describes the process for creating a questionnaire. 
 author: twheeloc
-ms.date: 10/28/2021
+ms.date: 07/01/2024
 ms.topic: article
 # optional metadata
 
@@ -17,7 +17,7 @@ audience: Application User
 ms.assetid: b27e2f12-c7a0-4a54-b8d8-17819f8a1c72
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 

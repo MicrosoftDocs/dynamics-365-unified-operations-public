@@ -1,14 +1,12 @@
 ---
 title: Warehouse management only mode FAQ
 description: Access answers to frequently asked questions about Warehouse management only mode, including questions about messages in the queued state.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: conceptual
 ms.date: 04/27/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -38,7 +36,7 @@ Outbound shipment orders must be able to create a shipping address. Therefore, y
 - `ReceiverName`
 - `ReceiverCountryRegionId`
 
-For more information, see [Master and reference data](wms-only-mode-exchange-data.md#master-data).
+Learn more in [Master and reference data](wms-only-mode-exchange-data.md#master-data).
 
 ## Why does Supply Chain Management show all the modules instead of just those that are related to warehouse management?
 
@@ -54,11 +52,11 @@ Warehouse management only mode is part of a larger deployment of Microsoft Dynam
 
 ## Why do I receive the following error when I post a counting journal: "No fiscal calendar has been defined for the ledger. In general ledger setup, select a fiscal calendar for the ledger"?
 
-Usually, Supply Chain Management requires that you configure several costing and general ledger settings, including [fiscal calendars](../../finance/budgeting/fiscal-calendars-fiscal-years-periods.md). However, you can remove this requirement by setting up item model groups that don't use these features and associating those item model groups with the relevant released products. For more information, see [Master and reference data](wms-only-mode-exchange-data.md#master-data).
+Usually, Supply Chain Management requires that you configure several costing and general ledger settings, including [fiscal calendars](../../finance/budgeting/fiscal-calendars-fiscal-years-periods.md). However, you can remove this requirement by setting up item model groups that don't use these features and associating those item model groups with the relevant released products. Learn more in [Master and reference data](wms-only-mode-exchange-data.md#master-data).
 
 ## Why do I receive the following error when I process warehouse operations: "The accounting currency hasn't been defined for the ledger. You must define the currency in the Ledger form"?
 
-Usually, Supply Chain Management requires that you configure several costing and general ledger settings, including a [ledger currency](../../finance/general-ledger/configure-ledger.md). However, you can remove this requirement by setting up item model groups that don't use these features and associating those item model groups with the relevant released products. For more information, see [Master and reference data](wms-only-mode-exchange-data.md#master-data).
+Usually, Supply Chain Management requires that you configure several costing and general ledger settings, including a [ledger currency](../../finance/general-ledger/configure-ledger.md). However, you can remove this requirement by setting up item model groups that don't use these features and associating those item model groups with the relevant released products. Learn more in [Master and reference data](wms-only-mode-exchange-data.md#master-data).
 
 ## Why do I receive the following error when I process different order types: "The accounting currency hasn't been defined for the ledger. You must define the currency in the Ledger form"?
 
@@ -86,11 +84,11 @@ In addition to setting up item model groups that don't use costing and general l
 
 ## Can I attach documents and notes to inbound and outbound shipment orders?
 
-Yes. Both inbound and outbound shipment order messages support document attachments. <!-- For example, the [Open Data Protocol (OData) Postman example](https://go.microsoft.com/fwlink/?linkid=2250135) contains both `InboundShipmentOrderDocumentAttachmentMessages` and `OutboundShipmentOrderDocumentAttachmentMessages`.--> For more information, see the descriptions of *Inbound shipment order messages composite entity* and *Outbound shipment order messages composite entity* in [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). These entities contain the child entities *Inbound shipment order document attachment messages* and *Outbound shipment order document attachment messages*.
+Yes. Both inbound and outbound shipment order messages support document attachments. For more information, see the descriptions of *Inbound shipment order messages composite entity* and *Outbound shipment order messages composite entity* in [Data management](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). These entities contain the child entities *Inbound shipment order document attachment messages* and *Outbound shipment order document attachment messages*.
 
 ## Why can't I see and search for page names that are related to Warehouse management only mode?
 
-Even if the *Warehouse management only mode* feature is enabled, you must create a record on the **Source systems** page before the system can look up the related pages. In addition, the current user's default company must have a source system set up to search for the page names. For more information, see [Enable and configure Warehouse management only mode (preview)](wms-only-mode-setup.md).
+Even if the *Warehouse management only mode* feature is enabled, you must create a record on the **Source systems** page before the system can look up the related pages. In addition, the current user's default company must have a source system set up to search for the page names. Learn more in [Enable and configure Warehouse management only mode (preview)](wms-only-mode-setup.md).
 
 ## Why doesn't my registered inventory transaction have a load ID?
 

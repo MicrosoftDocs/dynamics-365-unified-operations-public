@@ -1,12 +1,13 @@
 ---
 title: Use fiscal data from the invoice account
 description: Learn about the Use fiscal data from invoice account functionality and explains how to set it up, including an outline on procurement.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 10/31/2017
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Spain
 ms.search.validFrom: 2016-11-30
 ms.search.form: CustParameters, VendParameters

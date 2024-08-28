@@ -8,7 +8,6 @@ ms.date: 04/19/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form:
 ---
 
@@ -63,4 +62,4 @@ The following Microsoft support and community resources are also available, wher
 - [Microsoft Dynamics 365 Blog](https://cloudblogs.microsoft.com/dynamics365/?source=dynamicsaxscm)
 - [Dynamics 365 Community](https://community.dynamics.com/)
 - [Supply Chain Management ideas portal](https://experience.dynamics.com/ideas/categories/?forum=515617a5-dedb-e911-a814-000d3a4f1244&forumName=Dynamics%20365%20Supply%20Chain%20Management)
-- [Dynamics 365 support](https://dynamics-int.microsoft.com/support/)
+- [Dynamics 365 support](https://www.microsoft.com/dynamics-365/support)

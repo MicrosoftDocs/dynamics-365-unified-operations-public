@@ -1,12 +1,13 @@
 ---
 title: Change the depreciation method during the asset life for book
 description: In Japan, you can change the depreciation method during the service life of a fixed asset. Learn about changing depreciation profiles with a step-by-step process.
-author: kfend
-ms.author: atrukawk
+author: evgenypopov
+ms.author: evgenypopov
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 08/29/2018
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-06-30
 ms.search.form: 

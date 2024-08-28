@@ -1,12 +1,13 @@
 ---
 title: Quarterly VAT communication report
 description: Learn about Quarterly VAT communication report in Italy, including prerequisites and an outline on setting the quarterly VAT communication report.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 09/15/2021
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Italy
 ---
 

@@ -4,13 +4,12 @@ description: Learn about how to create a day-based fiscal calendar for one fisca
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: how-to
-ms.date: 10/10/2022
-ms.custom:
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience: Application User  
 ms.search.region: India
 ms.search.validFrom: 2016-06-30
-ms.search.form:
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 

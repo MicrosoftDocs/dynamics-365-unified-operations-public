@@ -6,17 +6,13 @@ ms.author: johanho
 ms.topic: article
 ms.date: 09/02/2022
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2022-09-02
 ms.search.form: IoTIntCoreServiceParameters
-ms.dyn365.ops.version: 10.0.30
 ---
 
 # Sensor Data Intelligence parameters (preview)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
 
 <!-- KFM: Preview until further notice -->
@@ -25,7 +21,7 @@ The **Sensor Data Intelligence parameters** page provides a few settings that yo
 
 ## Read and change connection details for your Azure IoT solution
 
-Typically, you will set up your Azure IoT solution and connect it to Microsoft Dynamics 365 Supply Chain Management from the **Deploy and connect Azure resources** page, which will guide you through both procedures. (For more information, see [Deploy an IoT solution on Azure](sdi-deploy-iot-solution-on-azure.md).) You can also view and edit the connection details at any time in Supply Chain Management by following these steps.
+Typically, you will set up your Azure IoT solution and connect it to Microsoft Dynamics 365 Supply Chain Management from the **Deploy and connect Azure resources** page, which will guide you through both procedures. (Learn more in [Deploy an IoT solution on Azure](sdi-deploy-iot-solution-on-azure.md).) You can also view and edit the connection details at any time in Supply Chain Management by following these steps.
 
 1. Go to **System administration \> Setup \> Sensor Data Intelligence \> Sensor Data Intelligence parameters**.
 1. On the **Time series** tab, in the **Redis metric store connection string** field, enter the **Primary connection string (StackExchange.Redis)** value for the Azure IoT solution that you want to connect to. For more information about how to find this value, see [Deploy an IoT solution on Azure](sdi-deploy-iot-solution-on-azure.md).

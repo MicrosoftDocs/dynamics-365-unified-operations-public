@@ -7,8 +7,6 @@ ms.topic: how-to
 ms.date: 11/20/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -35,11 +33,11 @@ Before you can use the product search service, your system must meet the followi
 
 ### New Inventory Visibility installations
 
-The product search service is included in the current version of the Inventory Visibility add-in. Therefore, you don't have to install it separately if you haven't already installed the add-in for your environment. For information about how to install Inventory Visibility for the first time, see [Install and set up Inventory Visibility](inventory-visibility-setup.md).
+The product search service is included in the current version of the Inventory Visibility Add-in. Therefore, you don't have to install it separately if you haven't already installed the add-in for your environment. For information about how to install Inventory Visibility for the first time, see [Install and set up Inventory Visibility](inventory-visibility-setup.md).
 
 ### Existing Inventory Visibility installations
 
-If your system is running Inventory Visibility version 1.2.2.53 or earlier, you must update Inventory Visibility in your Microsoft Dynamics Lifecycle Services project and then install the newest version. For more information, see [Install and set up Inventory Visibility](inventory-visibility-setup.md).
+If your system is running Inventory Visibility version 1.2.2.53 or earlier, you must update Inventory Visibility in your Microsoft Dynamics Lifecycle Services project and then install the newest version. Learn more in [Install and set up Inventory Visibility](inventory-visibility-setup.md).
 
 ## Configure the product search service
 

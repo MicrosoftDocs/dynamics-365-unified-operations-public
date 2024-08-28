@@ -4,7 +4,7 @@
 title: Process life events
 description: During the employee lifecycle in Microsoft Dynamics 365 Human Resources, each employee may encounter various life event changes.
 author: twheeloc
-ms.date: 08/23/2021
+ms.date: 07/02/2024
 ms.topic: article
 # optional metadata
 
@@ -17,7 +17,7 @@ audience: Application User
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 
@@ -36,7 +36,6 @@ Use life event processing when you have workers who have life events that take p
 For example, if today is February 1, and on February 14 worker Joe Smith is scheduled to change legal entities, if you run life event processing for February 15, the system processes all events up until February 15. 
 
 1. In the **Benefits management** workspace, under **Processing**, select **Life event processing**.
-
 2. In the **Run life event process** dialog box, specify values for the following fields:
 
    | Field | Description |
@@ -49,11 +48,8 @@ For example, if today is February 1, and on February 14 worker Joe Smith is sche
 3. If you want to run the process in the background, select **Run in the background** and do the following tasks:
 
    1. Enter information for the process.
-
    2. To set up a recurring job, select **Recurrence**, enter the recurrence information, and the select **OK**.
-
    3. To set up a job alert, select **Alerts**, select the alerts to receive, and then select **OK**.
-
    4. Select **OK**. The process will run with the parameters you set.
 
 4. Select **OK**.

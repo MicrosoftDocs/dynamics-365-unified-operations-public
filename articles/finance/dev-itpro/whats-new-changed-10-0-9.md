@@ -3,14 +3,14 @@ title: What's new or changed in Dynamics 365 Finance version 10.0.9 (April 2020)
 description: Learn aboutfeatures that are either new or changed in Dynamics 365 Finance version 10.0.9 released in April 2020, including an outline on deprecated features.
 author: kfend
 ms.author: kfend
-ms.topic: article
-ms.date: 02/03/2020
+ms.topic: whats-new
 ms.custom:
+  - bap-template
+  - evergreen
+ms.date: 07/15/2024
 ms.reviewer: kfend
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2019-02-03 
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.9
 ---
 

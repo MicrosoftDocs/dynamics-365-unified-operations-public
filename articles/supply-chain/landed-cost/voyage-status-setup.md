@@ -3,15 +3,12 @@ title: Voyage status setup
 description: Learn how to establish the status values that users can assign to voyages, including a table that defines various fields.
 author: Weijiesa
 ms.author: weijiesa
-ms.topic: article
-ms.date: 01/13/2021
-ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2021-01-13
 ms.search.form: ITMStatusTable
-ms.dyn365.ops.version: 10.0.17
+ms.topic: how-to
+ms.date: 07/30/2024
+ms.custom: 
+  - bap-template
 ---
 
 # Voyage status setup
@@ -34,7 +31,7 @@ Each cost area has its own set and hierarchy of voyage statuses. Therefore, on t
 | Modify | Select this check box if users are allowed to modify voyages that have this status. |
 | Delete | Select this check box if users are allowed to delete voyages that have this status. |
 | Mandatory | Select this check box to make the voyage status mandatory, so that it can't be skipped. |
-| Parent | Use this field to establish a hierarchy among the status values. Voyage statuses can be changed (either manually or automatically) only downward in the hierarchy, from a parent status to one of its child statuses.
+| Parent | Use this field to establish a hierarchy among the status values. Voyage statuses can be changed (either manually or automatically) only downward in the hierarchy, from a parent status to one of its child statuses. |
 
 > [!NOTE]
 > You have to set up only the specific voyage statuses that your organization uses. Typical voyage statuses include *Confirmed*, *Goods in transit*, *Received*, *Ready for costing*, and *Costed*. However, other statuses might be present.

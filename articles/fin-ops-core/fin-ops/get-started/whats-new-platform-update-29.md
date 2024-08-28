@@ -3,13 +3,12 @@ title: What's new or changed in Platform update 29 for finance and operations ap
 description: Learn about features in Platform update 29 for finance and operations apps, including overviews on feature management.
 author: sericks007
 ms.author: sericks
-ms.topic: conceptual
-ms.date: 04/12/2024
+ms.topic: whats-new
 ms.custom: 
   - bap-template
-  - evergreen 
+  - evergreen
+ms.date: 04/12/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: Platform update 29

@@ -121,17 +121,7 @@ additionalContent:
       - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/create-new-users
         text: Create users
       - url: /dynamics365/fin-ops-core/dev-itpro/sysadmin/tasks/assign-users-security-roles
-        text: Assign users to security roles
-    - title: Human Resources infrastructure merge
-      links:
-      - url: /dynamics365/human-resources/hr-infrastructure-merge
-        text: Human Resources infrastructure merge
-      - url: /dynamics365/human-resources/hr-cust-migration
-        text: Human Resources customer migration
-      - url: /dynamics365/human-resources/hr-infrastructure-merge-faq
-        text: Human Resources infrastructure merge FAQ
-      - url: /dynamics365/human-resources/customer-migration
-        text: Human Resources customer migration FAQ      
+        text: Assign users to security roles   
     - title: Human Resources business events
       links:
       - url: /dynamics365/human-resources/business-events-overview

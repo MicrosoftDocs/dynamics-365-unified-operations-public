@@ -375,8 +375,6 @@ parmDimensionEntryControlHeader(
 
 ## Additional resources
 
-[Migrate default dimensions controls to Dimension Entry controls](dimension-entry-control-migration.md)
-
 [Support for Dimension Entry controls on dialogs](dimension-entry-control-dialog-support.md)
 
 

@@ -1,14 +1,13 @@
 ---
 title: Tax Calculation FAQ
 description: Access answers frequently asked questions about the functionality of the Tax Calculation service, including questions about availability.
-author: EricWangChen
-ms.author: wangchen
-ms.topic: article
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: faq
+ms.custom: 
+  - bap-template
 ms.date: 10/26/2021
 ms.reviewer: johnmichalak
-audience: Application User
-ms.search.region: 
-ms.search.validFrom: 
 ms.dyn365.ops.version: AX 10.0.21
 ---
 

@@ -1,14 +1,13 @@
 --- 
-# required metadata 
- 
 title: Define channel attributes
 description: Enrich the channel by adding channel and product attributes. 
-author: jashanno
-ms.date: 05/28/2024
-ms.topic: article
+author: mashneer
+ms.date: 06/20/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.search.form: RetailInternalOrganization, EcoResAttributeGroup, EcoResAttributeGroupAttribute, RetailAddChannelItems, RetailCatalogProductAttributeValue, RetailMedia   
-audience: Application User  
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: mashneer
 ms.search.validFrom: 2016-06-30 

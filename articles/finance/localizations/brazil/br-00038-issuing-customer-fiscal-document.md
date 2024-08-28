@@ -1,16 +1,16 @@
 ---
 title: Issue customer fiscal documents (Brazil)
 description: Learn how you can issue a fiscal document for a customer who bought goods from the fiscal establishment, including a step-by-step process.
-author: AdamTrukawka
-ms.author: atrukawk
+author: ankviklis
+ms.author: ankviklis
 ms.topic: how-to
-ms.date: 06/23/2017
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Brazil
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.search.industry: Manufacturing;Distribution;Service industries
 ---
 
 # Issue customer fiscal documents (Brazil)

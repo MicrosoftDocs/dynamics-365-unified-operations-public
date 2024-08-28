@@ -4,7 +4,7 @@ items:
   - name: Dynamics 365 Human Resources  
     items:
     - name: Dynamics 365 Human Resources documentation
-      href: index.yml
+      href: index.yml 
     - name: Welcome to Dynamics 365 Human Resources 
       href: welcome.md  
     - name: Human Resources infrastructure merge
@@ -31,14 +31,14 @@ items:
         items:
         - name: What's new overview
           href: whats-new-home-page.md
+        - name: Human Resources 10.0.41
+          href: ./get-started/hr-whats-new-10-0-41.md
         - name: Human Resources 10.0.40
           href: ./get-started/hr-whats-new-10-0-40.md
         - name: Human Resources 10.0.39 
           href: ./get-started/hr-whats-new-10-0-39.md  
         - name: Human Resources 10.0.38      
           href: ./get-started/hr-whats-new-10-0-38.md   
-        - name: Human Resources 10.0.37        
-          href: ./get-started/hr-whats-new-10-0-37.md   
         - name: Removed or deprecated features
           items:
           - name: Removed or deprecated features home page
@@ -93,7 +93,7 @@ items:
           href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?context=/dynamics365/context/human-resources        
       - name: Set up and manage instances
         items:
-        - name: Provision Human Resources in the finance and operations infrastructure
+        - name: Provision Dynamics 365 Human Resources 
           href: hr-admin-setup-provision-fo.md
       - name: Set up data integration
         items:
@@ -294,9 +294,7 @@ items:
           - name: Human Resources doesn't appear in Dynamics 365 apps
             href: hr-admin-troubleshooting-not-in-apps.md
           - name: Reporting options
-            href: hr-admin-troubleshooting-reporting.md
-          - name: Integration FAQ
-            href: hr-admin-troubleshooting-integration.md      
+            href: hr-admin-troubleshooting-reporting.md    
       - name: Set up Human Resources
         items:
         - name: Configure Human resources parameters
@@ -557,6 +555,32 @@ items:
           items:
           - name: Recruit job candidates
             href: hr-personnel-recruit.md  
+        - name: Human Resources Recruiting app (preview)
+          items:
+          - name: Configure the Human Resources recruiting app
+            items:
+            - name: Set up the HR Recruiting app 
+              href: hr-recruit-setup.md 
+            - name: Onboard users to use the HR Recruiting app 
+              href: hr-recruit-onboard.md 
+            - name: Configuration in the HR Recruiting app   
+              href: hr-recruit-configuration.md
+            - name: Configure the careers site in the HR Recruiting app
+              href: hr-recruit-career.md 
+          - name: Use the Human Resources recruiting app
+            items: 
+            - name: Use the dashboard in the HR Recruiting app 
+              href: hr-recruit-dashboard.md 
+            - name: Set up job ads in the HR Recruiting app
+              href: hr-recruit-job-ad.md
+            - name: Use the careers site in the HR Recruiting app
+              href: hr-recruit-career-site.md 
+            - name: Set up prospects in the HR Recruiting app
+              href: hr-recruit-prospect.md 
+            - name: Applicants in HR recruiting app 
+              href: hr-recruit-applicant.md 
+            - name: Set up panel members in the HR Recruiting app
+              href: hr-recruit-panel.md
     - name: Time and attendance
       items:
       - name: Time and attendance information
@@ -691,8 +715,6 @@ items:
           href: hr-benefits-setup-rounding-rules.md
         - name: Create employment categories
           href: hr-benefits-setup-employment-categories.md
-        - name: Set up employment types
-          href: hr-benefits-setup-employment-types.md
         - name: Configure employee self service
           href: hr-benefits-setup-employee-self-service.md
         - name: Create benefit plans
@@ -751,6 +773,8 @@ items:
       items:
       - name: Performance management overview
         href: hr-develop-performance-management-overview.md
+      - name: Set up electronic reporting to print preformance reviews
+        href: perf-mgmt-print.md
       - name: Skills
         items:
         - name: Configure skills
@@ -793,9 +817,9 @@ items:
         href: hr-learning-create-closed-ended-question.md
       - name: Create a dependent question
         href: hr-learning-depending-question.md
-    - name: Human Resources app (preview)
+    - name: Human Resources app for leave and absence
       items:
-        - name: Human Resources app (preview)
+        - name: Human Resources app for leave and absence
           href: hr-app.md
     - name: Use the Workflow system
       items:
@@ -1061,6 +1085,14 @@ items:
           href: hcm-position-type.md
         - name: HCM unions entity
           href: hcm-union.md
+        - name: Variable compensation type entity  
+        - name: HCM person identification entities
+          href: hcm-person-id.md
+        - name: HCM job compensation entities
+          href: hcm-job-comp.md
+        - name: HCM person details entities
+          href: hcm-person-details.md
+        - name: Variable compensation type entity  
         - name: HCM person identification entities
           href: hcm-person-id.md
         - name: HCM job compensation entities

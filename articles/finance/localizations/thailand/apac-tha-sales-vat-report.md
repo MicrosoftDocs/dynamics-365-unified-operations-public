@@ -1,16 +1,15 @@
 ---
 title: VAT reports
 description: Learn about the reports that you can use to submit information about value-added tax (VAT) amounts for sales and purchases to tax authorities in Thailand.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 01/25/2021
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: 
-ms.search.region: 
 ms.search.validFrom: 1900-01-02
-ms.dyn365.ops.version: 
-ms.search.scope: 
+
 ---
 
 # VAT reports

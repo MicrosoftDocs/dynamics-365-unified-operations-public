@@ -1,12 +1,13 @@
 ---
 title: MX-00010 Cancel an electronic invoice
 description: You can cancel a CFDI electronic invoice that was previously validated and certified by the PAC. Learn more with a process on cancelling a CFDI electronic invoice.
-author: AdamTrukawka
-ms.author: atrukawk
+author: ankviklis
+ms.author: ankviklis
 ms.topic: how-to
-ms.date: 06/29/2022
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Mexico
 ms.search.validFrom: 2016-06-30
 ms.search.form: EInvoiceCFDIJournal_AR

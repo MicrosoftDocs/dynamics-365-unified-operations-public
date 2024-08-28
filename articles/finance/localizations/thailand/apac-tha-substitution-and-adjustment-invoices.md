@@ -3,10 +3,11 @@ title: Substitution/adjustment tax invoices for Thailand
 description: Learn about the tax invoice feature, which lets you track the printing of copies of tax invoices and adjustments made to customer information.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
-ms.date: 06/16/2017
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Thailand
 ms.search.validFrom: 2017-06-30
 ms.search.form: CustInvoiceJournal, CustInvoiceJourAdjustment, ProjInvoiceListPage, CustParameters

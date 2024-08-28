@@ -3,10 +3,11 @@ title: SPED fiscal resolution 13/2019 RJ
 description: Learn about resolution 13/2019, and how a Nota fiscal eletrônica (NF-e) should be issued and recorded, including an overview on SPED fiscal records.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
-ms.date: 10/22/2019
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Brazil
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7

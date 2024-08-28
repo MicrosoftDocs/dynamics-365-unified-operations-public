@@ -14,12 +14,12 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.41 (September 2024)
+          href: get-started/whats-new-scm-10-0-41.md
         - name: Supply Chain Management 10.0.40 (June 2024)
           href: get-started/whats-new-scm-10-0-40.md
         - name: Supply Chain Management 10.0.39 (April 2024)
           href: get-started/whats-new-scm-10-0-39.md
-        - name: Supply Chain Management 10.0.38 (February 2024)
-          href: get-started/whats-new-scm-10-0-38.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -370,6 +370,16 @@
       items:
       - name: Scale unit capability for Supply Chain Management is deprecated and no longer available to new customers
         href: cloud-edge/cloud-edge-landing-page.md
+    - name: Approval management mobile app (preview)
+      items:
+      - name: Approvals Management mobile app overview
+        href: approval-management-mobile-app/approval-management-app-overview.md
+      - name: Onboard the Approvals Management mobile app
+        href: approval-management-mobile-app/developer/onboard-approval-app.md
+      - name: Manage approvals using the Approvals Management mobile app
+        href: approval-management-mobile-app/manage-approvals.md
+      - name: Approvals Management mobile app FAQs and known issues
+        href: approval-management-mobile-app/approval-management-app-faq.md
     - name: Asset management
       items:
       - name: Asset management overview
@@ -763,7 +773,7 @@
         items:
         - name: Physical and financial updates
           href: cost-management/physical-financial-updates.md
-        - name: Include physical value
+        - name: Options for including physical value in cost calculations
           href: cost-management/include-physical-value.md
         - name: Fixed receipt price
           href: cost-management/fixed-receipt-price.md
@@ -1659,6 +1669,8 @@
           href: inventory/inventory-transactions-details.md
         - name: Initialize stock levels in the warehouse
           href: inventory/tasks/initialize-stock-levels-warehouse.md
+        - name: Link transfer order lines with sales order lines (preview)
+          href: inventory/pair-transfer-and-sales-lines.md
         - name: Transfer physical inventory within the warehouse
           href: inventory/tasks/transfer-physical-inventory-within-warehouse.md
         - name: Adjust stock levels in the warehouse (basic warehousing)
@@ -1710,7 +1722,11 @@
       - name: Inventory On-hand mobile app
         href: inventory/inventory-onhand-mobile-app.md
       - name: Consolidate inventory transactions
-        href: inventory/archive-inventory-transactions.md
+        items:
+        - name: Consolidate inventory transactions
+          href: inventory/archive-inventory-transactions.md
+        - name: Consolidate inventory transactions FAQ
+          href: inventory/inventory-transactions-consolidation-faq.md
       - name: Inventory Visibility Add-in
         items:
         - name: Inventory Visibility Add-in overview
@@ -1747,12 +1763,18 @@
           href: inventory/inventory-visibility-reservations.md
         - name: Inventory Visibility inventory allocation
           href: inventory/inventory-visibility-allocation.md
-        - name: Inventory Visibility on-hand change schedule and available to promise
-          href: inventory/inventory-visibility-available-to-promise.md
+        - name: Inventory Visibility ATP
+          items:
+          - name: Inventory Visibility on-hand change schedule and ATP
+            href: inventory/inventory-visibility-available-to-promise.md
+          - name: Track time-series inventory in Inventory Visibility (preview)
+            href: inventory/inventory-visibility-track-atp.md
         - name: Inventory Visibility Power BI dashboard
           href: inventory/inventory-visibility-dashboard.md
         - name: Inventory Visibility public APIs
           href: inventory/inventory-visibility-api.md
+        - name: Sync external inventory adjustments through Inventory Visibility (preview)
+          href: inventory/inventory-visibility-sync-changes.md
         - name: Inquire into inventory with Copilot (preview)
           href: inventory/inventory-visibility-copilot-api.md
         - name: Log and view successful API posts
@@ -2025,6 +2047,8 @@
         href: demand-planning/whats-new-demand-planning.md
       - name: Setup and administration
         items:
+        - name: Demand planning license requirements
+          href: demand-planning/demand-planning-licensing.md
         - name: Install and enable Demand planning
           href: demand-planning/install-demand-planning.md
         - name: Security roles and row-level security
@@ -2319,11 +2343,9 @@
           href: pricing-management/concurrence-cross-codes.md
     - name: Procurement and sourcing
       items:
-      - name: Procurement and sourcing home page
-        href: procurement/procurement-sourcing.md
       - name: Procurement and sourcing overview
         href: procurement/procurement-sourcing-overview.md
-      - name: Procurement and sourcing workflow
+      - name: Procurement and sourcing workflows
         href: procurement/procurement-sourcing-workflows.md
       - name: Procurement catalogs
         items:
@@ -2365,8 +2387,6 @@
           href: procurement/purchase-order-approval-confirmation.md
         - name: Calculate requested ship dates for purchase orders
           href: master-planning/supplier-requested-confirmed-dates.md
-        - name: Enable Copilot support for managing changes to confirmed purchase orders
-          href: procurement/purchase-order-changes-after-confirmation-enable.md
         - name: Review and accept changes to confirmed purchase orders
           href: procurement/purchase-order-changes-after-confirmation.md
         - name: Purchase order approval mobile workspace
@@ -2735,7 +2755,7 @@
             href: production-control/phantom-items.md
           - name: BOM calculations
             href: cost-management/bom-calculations.md
-          - name: Production parameters in Manufacturing execution
+          - name: Production parameters for manufacturing execution
             href: production-control/production-parameters-manufacturing-execution.md
           - name: Operations resources
             href: production-control/operations-resources.md
@@ -2825,12 +2845,10 @@
             href: production-control/tasks/use-safety-stock-journal-update-minimum-coverage.md
           - name: Material substitution in manufacturing
             href: production-control/substitute-items-bom-lines.md
-          - name: Registration for manufacturing execution
-            href: production-control/registration-manufacturing-execution.md
           - name: Production feedback
             href: production-control/production-feedback.md
-          - name: Enable the payroll process for time and attendance
-            href: production-control/tasks/payroll-process-time-attendance.md
+          - name: Configure a worker using the mobile job device
+            href: production-control/tasks/worker-mobile-job-device.md
         - name: Manage financials in production
           items:
           - name: Allocate time to jobs in a job bundle
@@ -2839,16 +2857,6 @@
             href: production-control/consumption.md
           - name: Production posting
             href: cost-management/production-posting.md
-        - name: Time and attendance registration
-          items:
-          - name: Time and attendance registration overview
-            href: production-control/time-attendance-registrations.md
-          - name: Pay based on registrations
-            href: production-control/pay-based-on-registrations.md
-          - name: Absence registration in Time and attendance
-            href: production-control/absence-registration-in-time-and-attendance.md
-          - name: Flex groups
-            href: production-control/time-attendance-flex-groups.md
       - name: Lean manufacturing
         items:
         - name: Lean manufacturing overview
@@ -2965,7 +2973,7 @@
             href: production-control/tasks/copy-co-products-existing-formula-version.md
           - name: Create a formula by copying from an existing formula
             href: production-control/tasks/create-formula-copying-existing-formula.md
-          - name: Production parameters in Manufacturing execution
+          - name: Production parameters for manufacturing execution
             href: production-control/production-parameters-manufacturing-execution.md
           - name: Production setup requirements
             href: production-control/production-set-up-requirements.md
@@ -2987,8 +2995,6 @@
             href: production-control/tasks/sequence-production-jobs-process-manufacturing.md
           - name: Material substitution in manufacturing
             href: production-control/substitute-items-bom-lines.md
-          - name: Registration for manufacturing execution
-            href: production-control/registration-manufacturing-execution.md
           - name: Register and track batch/serial numbers for finished products and their components (preview)
             href: production-control/tracked-components.md
           - name: Production feedback
@@ -3003,6 +3009,20 @@
             href: production-control/consumption.md
           - name: Production posting
             href: cost-management/production-posting.md
+      - name: Time and attendance registration
+        items:
+        - name: Time and attendance registration overview
+          href: production-control/time-attendance-registrations.md
+        - name: Registration for manufacturing execution
+          href: production-control/registration-manufacturing-execution.md
+        - name: Pay based on registrations
+          href: production-control/pay-based-on-registrations.md
+        - name: Absence registration in Time and attendance
+          href: production-control/absence-registration-in-time-and-attendance.md
+        - name: Flex groups
+          href: production-control/time-attendance-flex-groups.md
+        - name: Enable the payroll process for time and attendance
+          href: production-control/tasks/payroll-process-time-attendance.md
       - name: Production floor execution interface
         items:
         - name: How workers use the production floor execution interface
@@ -3455,6 +3475,32 @@
               href: service-management/delete-service-orders.md
             - name: Invoice subscription transactions
               href: service-management/invoice-subscription-transactions.md
+    - name: Traceability (preview)
+      items:
+      - name: Traceability overview
+        href: traceability/traceability-overview.md
+      - name: Install and configure Traceability
+        items:
+        - name: Install and update Traceability
+          href: traceability/developer/traceability-install.md
+        - name: Traceability security roles in Power Apps
+          href: traceability/developer/traceability-security-roles.md
+        - name: Configure Traceability
+          href: traceability/developer/traceability-configure.md
+      - name: Use the Traceability app in Power Apps
+        items:
+        - name: Open the Traceability app in Power Apps
+          href: traceability/traceability-app-run.md
+        - name: Traceability app quick start
+          href: traceability/traceability-app-quick-start.md
+        - name: Work with the Traceability app
+          href: traceability/traceability-app-use.md
+      - name: Traceability integrations
+        items:
+        - name: Integrate Traceability with Supply Chain Management
+          href: traceability/traceability-integration-scm.md
+        - name: Traceability API
+          href: traceability/developer/traceability-api.md
     - name: Transportation management
       items:
       - name: Transportation management overview
@@ -3651,6 +3697,8 @@
           href: warehousing/quality-check.md
       - name: Outbound warehouse operations
         items:
+        - name: Warehouse handling of outbound loads for sales, transfer, and outbound shipment orders
+          href: warehousing/outbound-load-handling.md
         - name: Flexible warehouse-level dimension reservation policy
           href: warehousing/flexible-warehouse-level-dimension-reservation.md
         - name: Release to warehouse
@@ -3833,6 +3881,8 @@
           href: warehousing/whats-new-wma.md
         - name: Warehouse Mobile app accessibility features
           href: warehousing/warehouse-app-accessibility.md
+        - name: Workload insights with Copilot
+          href: warehousing/warehouse-management-mobile-app-insights.md
         - name: Install, set up, and use mobile devices
           items:
           - name: Install the Warehouse Management mobile app
@@ -4021,14 +4071,16 @@
         items:
         - name: Warehouse management only mode overview
           href: warehousing/wms-only-mode-overview.md
-        - name: Enable and configure warehouse management only mode
-          href: warehousing/wms-only-mode-setup.md
         - name: Warehouse management only mode with external ERP systems
           href: warehousing/wms-only-mode-external-erp.md
         - name: Warehouse management only mode with external shared warehouses
           href: warehousing/wms-only-mode-external-shared-warehouse.md
         - name: Exchange data between systems
           href: warehousing/wms-only-mode-exchange-data.md
+        - name: Enable and configure warehouse management only mode
+          href: warehousing/wms-only-mode-setup.md
+        - name: Enable and configure unannounced returns in Warehouse management only mode
+          href: warehousing/wms-only-mode-unannounced-returns-setup.md
         - name: Work with warehouse management only mode in Supply Chain Management
           href: warehousing/wms-only-mode-shared-and-external-detail-use.md
         - name: Example of using inbound and outbound shipment orders
@@ -4057,6 +4109,8 @@
         href: faq-confirmed-po-changes.md
       - name: Responsible AI FAQ for Inquire into inventory with Copilot (preview)
         href: faq-inventory-query.md
+      - name: Responsible AI FAQ for Workload insights with Copilot
+        href: faq-wma-copilot.md
   - name: Development and administration for finance and operations apps 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 

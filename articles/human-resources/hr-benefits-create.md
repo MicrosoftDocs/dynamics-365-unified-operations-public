@@ -4,7 +4,7 @@
 title: Create a new benefit
 description: This task will show you how to create benefit elements which will be used when creating a new benefit. 
 author: twheeloc
-ms.date: 11/03/2021
+ms.date: 07/03/2024
 ms.topic: how-to 
  
 # optional metadata 
@@ -17,7 +17,7 @@ audience: Application User
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
 ---
@@ -33,7 +33,7 @@ This task will show you how to create benefit elements which will be used when c
 
 ## Create benefit elements
 
-1. Go to **Human resources \> Benefits \> Setup \> Benefit elements**.
+1. Go to **Human resources > Benefits > Setup > Benefit elements**.
 2. Select **New**.
 3. In the **Type** field, enter the name of the type of benefit that you're creating.
 4. In the **Description** field, enter a value.
@@ -51,7 +51,7 @@ This task will show you how to create benefit elements which will be used when c
 
 ## Create a benefit
 
-1. Go to **Human resources \> Benefits \> Benefits**.
+1. Go to **Human resources > Benefits > Benefits**.
 2. Select **New**.
 3. In the drop-down dialog box, in the **Plan** field, enter or select a value.
 4. In the **Option** field, enter or select a value.

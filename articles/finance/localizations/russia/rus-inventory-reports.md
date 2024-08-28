@@ -1,12 +1,13 @@
 ---
 title: Inventory reports
 description: Learn about the Inventory reports available for Russia, including outlines on preliminary setup and inventory balance turnover.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 03/23/2020
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: 8.1

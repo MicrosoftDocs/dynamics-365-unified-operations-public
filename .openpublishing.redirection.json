@@ -1,5 +1,40 @@
 {
   "redirections": [
+       {
+      "source_path": "articles/finance/cash-bank-management/letters-of-credit.md",
+      "redirect_url": "dynamics365/finance/cash-bank-management/letters-of-credit-import-collections",
+      "redirect_document_id": "false"
+    },     
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lifecycle-services/azure-data-explorer.md",
+      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/sysadmin/monitoring-and-telemetry-appinsights",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/human-resources/hr-admin-setup-provision.md",
+      "redirect_url": "dynamics365/human-resources/hr-admin-setup-provision-fo",
+      "redirect_document_id": "false"
+    },    
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/privacy/privacy-ax2012.md",
+      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-vcruntime.md",
+      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/financial/dimension-entry-control-dialog-support.md",
+      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/dev-tools/developer-home-page",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/human-resources//hr-admin-integration-linkedin.md",
+      "redirect_url": "/dynamics365/human-resources/welcome",
+      "redirect_document_id": "false"
+    },     
     {
       "source_path": "articles/human-resources/hr-infrastructure-merge-faq.md",
       "redirect_url": "/dynamics365/human-resources/hr-infrastructure-merge",
@@ -94,12 +129,7 @@
       "source_path": "articles/finance/general-ledger/rvrs-settgs-on-jrnls-lines.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/vouchers-not-reversed-posting-journal",
       "redirect_document_id": "false"
-    },     
-     {
-      "source_path": "articles/finance/general-ledger/set-up-balance-dimensions.md",
-      "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/set-up-balance-dimensions",
-      "redirect_document_id": "false"
-    },    
+    },        
      {
       "source_path": "articles/finance/general-ledger/dimension-default-values.md",
       "redirect_url": "/troubleshoot/dynamics-365/finance/general-ledger/dimension-default-values",
@@ -27742,6 +27772,126 @@
     {
       "source_path": "articles/supply-chain/production-control/tasks/worker-mobile-job-device.md",
       "redirect_url": "/dynamics365/supply-chain/production-control/production-floor-execution-worker-accounts.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/purchase-order-changes-after-confirmation-enable.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/copilot/purchase-order-changes-after-confirmation-enable",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/m365-copilot/faq-for-chat-with-fno-data-on-m365copilot.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/m365-copilot/chat-with-fno-data-on-m365copilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/help/custom-help-toolkit-converthtmltojson.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/help/custom-help-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/help/custom-help-toolkit-htmllocalechanger.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/help/custom-help-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/help/migrate-dynamicsax2012.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/help/custom-help-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/help/preparing-content.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/help/custom-help-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/procurement-sourcing.md",
+      "redirect_url": "/dynamics365/supply-chain/procurement/procurement-sourcing-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/task-recorder-retail-pos.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/pos-rsat.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-adyen.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-cf-e-sat.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-commerce-localization.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-customer-information.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-deployment.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-nfce-cancel-return.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-nfce-contingency-mode.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-nfce.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/brazil/latam-bra-retail-statements.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/russia/rus-commerce-localization.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/russia/rus-commerce-prepayments.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/russia/rus-commerce-setup.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/russia/rus-customer-information.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/russia/rus-fpi-sample.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/localizations/russia/rus-simplified-address.md",
+      "redirect_url": "/dynamics365/commerce/welcome",
       "redirect_document_id": false
     }
   ]

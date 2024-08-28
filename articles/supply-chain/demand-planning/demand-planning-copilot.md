@@ -9,15 +9,13 @@ ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.collection:
   - bap-ai-copilot
-audience: Application User
-ms.search.region: Global
 ms.search.form:
 ---
 
 # Analyze demand plans with Copilot (preview)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!--KFM: Preview until further notice -->
 
 Demand planning in Microsoft Dynamics 365 Supply Chain Management lets you use Copilot to analyze your demand plans. You can select from a set of predefined questions. The app then provides answers in real time by using natural language.
@@ -41,7 +39,7 @@ For example, a demand planner is interested in learning the most significant fac
 >
 > AI-generated content may be incorrect.
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
@@ -87,6 +85,6 @@ The *Analyze demand plans with Copilot* feature is on by default. Follow these s
 1. In the dropdown list, select *Yes* to enable the feature for the current environment, or select *No* to disable it.
 1. Select **Save**.
 
-### See also
+### Related information
 
 - [Responsible AI FAQ for Analyze demand plans with Copilot (preview)](../faq-demand-planning-copilot.md)

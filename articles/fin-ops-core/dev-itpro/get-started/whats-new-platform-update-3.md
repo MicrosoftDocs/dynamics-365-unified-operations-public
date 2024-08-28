@@ -3,10 +3,12 @@ title: What's new or changed in Dynamics 365 for Operations platform update 3 (N
 description: Learn about the new or changed features in Dynamics 365 for Operations platform update 3. This version was released in November 2016.
 author: sericks007
 ms.author: sericks
-ms.topic: article
-ms.date: 06/20/2017
+ms.topic: whats-new
+ms.date: 07/12/2024
+ms.custom: 
+  - bap-template
+  - evergreen
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3

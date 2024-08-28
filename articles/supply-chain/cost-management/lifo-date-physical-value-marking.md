@@ -6,11 +6,7 @@ ms.author: yanansong
 ms.topic: article
 ms.date: 02/21/2022
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # LIFO date with physical value and marking

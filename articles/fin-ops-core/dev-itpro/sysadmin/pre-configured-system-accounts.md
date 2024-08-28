@@ -4,7 +4,7 @@ description: Learn about the system accounts that are preconfigured on your fina
 author: jaredha
 ms.author: jaredha
 ms.topic: conceptual
-ms.date: 06/11/2024
+ms.date: 06/27/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -31,7 +31,9 @@ Preconfigured system accounts are included on deployed environments so that Micr
 | DynamicsMaintAppUser | Performing deployment and service operations in finance and operations apps. |
 | FRServiceUser | The Financial Reporting service user account. The Management Reporter application uses this account for integrations with finance and operations apps. |
 | MonitoringAppUser | Used as part of **Geneva Synthetics Monitoring in FnO** to help identify availability or functionality loss issues in customer environments and contribute to CRI reduction. |
-| PowerPlatformApp | Connecting dual-write and virtual tables for finance and operations apps to Dataverse. |
+| PowerPlatformApp | Connecting Dual-write and virtual tables for finance and operations apps to Dataverse. |
+| DualWriteServiceUser | Enables live synchronization of data from finance and operations apps to Dataverse for Dual-write create, read, update, and delete operations. |
+| DataIntegrationServiceUser | Enables Dual-write configuration and setup, and initial synchronization of data between finance and operations apps and Dataverse. | 
 | RetailServiceAccount | Connecting Retail services to the finance and operations environment. |
 | ScaleUnitManagement | Communication with the Scale Unit Manager portal. This account is automatically added when you upgrade to version 10.0.23. |
 | ScaleUnitPipeline | Maintaining and tracking communication between the scale units. This account is automatically added when you upgrade to version 10.0.19. |

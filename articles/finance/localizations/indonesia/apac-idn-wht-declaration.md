@@ -1,12 +1,13 @@
 ---
 title: Withholding tax report for Indonesia
 description: Learn how to configure and generate the withholding tax report for Indonesia, including an oultine on setting up general ledger parameters.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 12/15/2021
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/10/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2021-12-02
 ms.dyn365.ops.version: 10.0.20

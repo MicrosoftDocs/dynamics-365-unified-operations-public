@@ -1,15 +1,15 @@
 ---
 title: Fixed assets overview
 description: Learn about the Fixed assets module for Russia, including outlines on setting up and working with NVFAs, working clothes, and special rigging.
-author: AdamTrukawka
-ms.author: atrukawk
+author: evgenypopov
+ms.author: evgenypopov
 ms.topic: overview
-ms.date: 12/02/2019
+ms.custom: 
+  - bap-template
+ms.date: 07/10/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2019-01-04
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.1
 ---
 

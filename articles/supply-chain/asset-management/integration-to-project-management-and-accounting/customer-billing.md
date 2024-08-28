@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 01/28/2021
 ms.custom:
 ms.reviewer: kamaybac 
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2021-01-28
 ms.search.form: ProjProjectContractsListPage, ProjInvoiceTable, ProjProjectsListPage, ProjTable, EntAssetWorkOrderType, EntAssetWorkOrderProjectSetup, EntAssetObjectTable, EntAssetWorkOrderTable
-ms.dyn365.ops.version: 10.0.17
 ---
 
 # Bill for maintenance on customer-owned assets

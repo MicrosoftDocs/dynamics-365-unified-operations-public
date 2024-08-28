@@ -3,11 +3,12 @@ title: What's new or changed in Dynamics 365 Finance platform update 25 (April 2
 description: Learn about new or changed features in Dynamics 365 for Finance and Operation platform update 25. This version was released in April 2019.
 author: sericks007
 ms.author: sericks
-ms.topic: article
-ms.date: 05/26/2020
-ms.custom:
+ms.topic: whats-new
+ms.date: 07/12/2024
+ms.custom: 
+  - bap-template
+  - evergreen
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: Platform 25

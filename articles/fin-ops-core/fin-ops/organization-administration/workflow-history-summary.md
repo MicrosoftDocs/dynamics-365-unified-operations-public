@@ -11,8 +11,8 @@ ms.reviewer: twheeloc
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-
 ---
+
 # Workflow history summary
 
 This article explains how to enable the optional **Summary by Copilot** field on any **Workflow history** page in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
@@ -24,7 +24,7 @@ The **Workflow history summary** feature is enabled by default in Dynamics 365 F
 > [!NOTE]
 > As of version 10.0.40, and in the proactive quality updates (PQUs) for version 10.0.39, the **Workflow history summary** feature is set to **On by default** in Feature management.
 
-Workflow history can be used either with or without its AI-powered copilot functionality. To use the copilot functionality in workflow history, you must install the **Copilot in Microsoft Dynamics 365 Finance** app in your Dataverse environment. For more information, see [Enable Copilot in Microsoft Dynamics 365 Finance](../../../finance/accounts-receivable/Enable-copilot-in-finance.md).
+Workflow history can be used either with or without its AI-powered copilot functionality. To use the copilot functionality in workflow history, you must install the **Copilot in Microsoft Dynamics 365 Finance** app in your Dataverse environment. For more information, see [Copilot prerequisites](../../../finance/accounts-receivable/Enable-copilot-in-finance.md).
 
 Use this feature to get an AI-generated summary of the workflow history that you're viewing on the **Workflow history** page. The submitter, submission date, current status, approval or rejection, request change actions, due dates, and comments are summarized for you. This feature is powered by Azure OpenAI Service's large language model. It's designed to reduce the time that you spend searching the workflow history for the most important details, so that you can approve documents quickly and efficiently.
 

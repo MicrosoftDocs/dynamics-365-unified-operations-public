@@ -4,7 +4,7 @@ description: Learn how to create a Microsoft Dataverse solution by using the Upl
 author: filatovm
 ms.author: filatovm
 ms.topic: how-to 
-ms.date: 05/30/2024
+ms.date: 07/02/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -14,7 +14,13 @@ ms.reviewer: johnmichalak
 
 [!INCLUDE[banner](../../../includes/banner.md)]
 
-Instead of manually creating a Dataverse solution as described in [Upload ER configurations and Globalization features as a Dataverse solution](gsw-upload-er-config.md), you can now use the Upload into repository functionality to upload one or all of your custom Electronic reporting (ER) configurations and Globalization features.
+Starting from version 10.0.40, instead of manually creating a Dataverse solution as described in [Upload ER configurations and Globalization features as a Dataverse solution](gsw-upload-er-config.md), you can now use the Upload into repository functionality to upload one or all of your custom Electronic reporting (ER) configurations and Globalization features.
+
+To use this functionality, you should have a Dataverse environment that's connected to your Dynamics 365 Finance environment and add a security role to access tables in Dataverse by following these steps:
+
+1. Create a new security role as described in [Create or edit a security role](/power-platform/admin/create-edit-security-role).
+2. In that security role add **Create, Read, Write, Delete, Append, Append to, Assign, Share** permissions for the **Organization** to the following tables: **Solution, Publisher, Electronic Reporting Configuration File, Electronic Reporting Configurations Index File, Globalization Feature File, and Globalization Features Index File**. 
+3. Assign the created security role to users as described in [Assign security roles](/power-platform/admin/assign-security-roles). 
 
 The process of creating a Dataverse solution by using Upload into repository has three phases:
 
@@ -55,7 +61,6 @@ To export configurations to Dataverse, follow these steps.
 1. To upload a single configuration version that has a status of **Completed**, use the **Upload into repository** button on the **Versions** FastTab of the **Electronic reporting Configurations** page. The system uploads all parent configuration versions to make the solution independently deployable.
 1. To upload all the latest **Completed** configuration versions with the active provider, select **Upload all configurations into repository** on the **Configurations** tab on the Action Pane of the **Electronic reporting Configurations** page. Then use the **Upload into repository** dropdown dialog box.
 
-:::image type="content" source="media/upload-all configurations.png" alt-text="Screenshot of the Upload into repository dropdown dialog box on the Electronic reporting Configurations page.":::
 
 ## View configurations as a Dataverse solution
 

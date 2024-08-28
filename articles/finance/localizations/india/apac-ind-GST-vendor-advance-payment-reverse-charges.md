@@ -1,16 +1,15 @@
 ---
 title: Vendor advance payments where there are reverse charges
 description: Learn how to create vendor advance payments that have reverse charges, including a step-by-step process for validating tax details.
-author: EricWangChen
-ms.author: wangchen
-ms.topic: article
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 06/04/2019
-ms.custom:
 ms.reviewer: johnmichalak 
-audience: Application User 
 ms.search.region: India
 ms.search.validFrom: 2019-06-01
-ms.search.form:
 ms.dyn365.ops.version: 10.0.4
 ---
 

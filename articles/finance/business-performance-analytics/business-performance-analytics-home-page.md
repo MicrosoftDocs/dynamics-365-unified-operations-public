@@ -3,7 +3,7 @@ title: What is Business performance analytics
 description: Learn about Business performance analytics, including outlines on turning data into action to improve business performance.
 author: jinniew
 ms.author: jiwo
-ms.topic: welcome
+ms.topic: article
 ms.date: 05/17/2024
 ms.custom:
 ms.reviewer: twheeloc 
@@ -21,8 +21,6 @@ Finance and operations departments grapple with an array of data-related challen
 
 Check out this [TechTalk](https://www.youtube.com/watch?v=Qb6uo_er6nE&t=10s) for more information about Business performance analytics.
 
-> [!NOTE]
-> The functionality that's described in this article is available as part of a preview release. The functionality and the content of this article are subject to change. Participate in our Public preview here:  <[https://aka.ms/InstallBPA](https://aka.ms/InstallBPA)>.
 
 ### The role of data warehousing in Dynamics 365 Finance and Operations
 A data warehouse serves as the foundation for modern finance and operations operations. Data is consolidated from various sources across different locations and systems, creating a centralized repository. This repository ensures that financial institutions have reliable, up-to-date, and accurate data for business intelligence. Key benefits include:

@@ -1,21 +1,19 @@
 ---
-# required metadata
-
-title: Set up and configure on behalf of (OBO) functionality in headquarters
+title: Set up and configure on behalf of (OBO) functionality in Commerce headquarters
 description: This article describes how to set up and configure on behalf of (OBO) functionality in Microsoft Dynamics 365 Commerce headquarters.
 author: mariash529
-ms.date: 09/22/2023
-ms.topic: article
+ms.date: 08/02/2024
+ms.topic: how-to
 audience: IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: mashneer
+ms.author: asharchw
 ms.search.validFrom: 2023-02-27
-ms.dyn365.ops.version: 10.0.33
-
+ms.custom: 
+  - bap-template
 ---
 
-# Set up and configure on behalf of (OBO) functionality in headquarters
+# Set up and configure on behalf of (OBO) functionality in Commerce headquarters
 
 [!include [banner](../includes/banner.md)]
 
@@ -73,7 +71,7 @@ To configure account managers in headquarters, follow these steps.
 
 ## Create a sales group containing account managers
 
-Next, you must create and configure a sales group in headquarters. For information about how to create sales groups, see [Create a commission sales group for the worker](../tasks/worker.md#create-a-commission-sales-group-for-the-worker).
+Next, you must create and configure a sales group in headquarters. For information about how to create sales groups, see [Create a commission sales group for a worker](../tasks/worker.md#create-a-commission-sales-group-for-a-worker).
 
 Create a sales group of one or more account managers. For OBO functionality to work, the sales group must include, at a minimum, one sale representative. Assign commission percentages, if your organization assigns commissions. A commission percentage can equal 0 (zero).
 

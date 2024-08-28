@@ -1,12 +1,13 @@
 ---
 title: Statistics on payment practices report
 description: Learn about the Statistics on payment practices report, including an outline on posting documents and defining the date when the invoice is received.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 01/29/2021
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: United Kingdom
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.8

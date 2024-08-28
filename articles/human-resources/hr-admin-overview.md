@@ -114,7 +114,7 @@ Additional help topics and other resources to set up, manage, and troubleshoot D
   - [Access private addresses by security role](hr-admin-troubleshooting-private-addresses.md)
   - [Human Resources doesn't appear in Dynamics 365 apps](hr-admin-troubleshooting-not-in-apps.md)
   - [Reporting options](hr-admin-troubleshooting-reporting.md)
-  - [Integration FAQ](hr-admin-troubleshooting-integration.md)
+
 
 ## Additional resources
 

@@ -7,12 +7,7 @@ ms.topic: how-to
 ms.date: 07/09/2019
 ms.custom:
 ms.reviewer: kamaybac   
-audience: Application User   
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2016-06-30
 ms.search.form: InventJournalCount, InventJournalCreate, HcmWorkerLookUp, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Count inventory in a warehouse

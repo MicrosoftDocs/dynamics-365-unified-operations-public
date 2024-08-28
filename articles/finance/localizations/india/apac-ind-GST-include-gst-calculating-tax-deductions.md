@@ -1,16 +1,15 @@
 ---
 title: Include GST when calculating tax deductions
 description: Learn how to include Goods and Services Tax (GST) on a calculated tax deduction, including processes for creating purchase orders and validating tax details.
-author: EricWangChen
-ms.author: wangchen
-ms.topic: article
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 06/04/2019
-ms.custom:
 ms.reviewer: johnmichalak 
-audience: Application User
 ms.search.region: India
 ms.search.validFrom: 2019-06-01
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.4
 ---
 

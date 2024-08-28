@@ -8,7 +8,6 @@ ms.date: 05/22/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: DeliveryTerms, InventLocation, InventPosting, ITMGoodsInTransitOrder, ITMTableListPage, ITMTable, ITMContainersListPage, ITMContainers, ITMFolioTableListPage, ITMFolioTable, ITMGoodsInTransitOrderEditLines, SysOperationTemplateForm, WHSRFMenuItem, WHSLocDirTable, WHSWorkTemplateTable
 ---
 
@@ -165,7 +164,7 @@ Landed cost adds a new work order type that is named *Goods in transit* to the *
 
 Work templates that have a work order type of *Goods in transit* can be configured to split work headers. On the **Work templates** page, follow one of these steps:
 
-- On the **General** tab for the template, set work header maximums. These maximums work in the same way that they work for purchase order work templates. (For more information, see [purchase order work templates](/dynamicsax-2012/appuser-itpro/create-a-work-template).)
+- On the **General** tab for the template, set work header maximums. These maximums work in the same way that they work for purchase order work templates. (Learn more in [purchase order work templates](/dynamicsax-2012/appuser-itpro/create-a-work-template).)
 - Use the **Work header breaks** button to define when the system should create new work headers, based on fields that are used for sorting. For example, to create a work header for each container ID, select **Edit query** on the Action Pane, and then add the **Container ID** field to the **Sorting** tab of the query editor. Fields that are added to the **Sorting** tab are available for selection as *grouping fields*. To set up grouping fields, select **Work header breaks** on the Action Pane, and then, for each field that you want to use as a grouping field, select the checkbox in the **Group by this field** column.
 
 Landed cost [creates an over transaction](over-under-transactions.md) if the registered quantity exceeds the original order quantity. When a work header is completed, the system updates the status of the inventory transactions for the principal order quantity. However, it first updates the quantity that is linked to the over transaction after the principal is completely purchased.

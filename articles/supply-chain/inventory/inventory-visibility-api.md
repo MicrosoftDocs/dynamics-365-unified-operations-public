@@ -8,7 +8,6 @@ ms.date: 06/03/2024
 ms.custom: 
   - bap-template
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form: 
 ---
 
@@ -51,21 +50,16 @@ The following table lists the APIs that are currently available:
 | `/api/environment/{environmentId}/allocation/query` | Post | [Query allocation result](inventory-visibility-allocation.md#using-allocation-api) |
 | `/api/environment/{environmentId}/onhand/productsearch/indexquery` | Post | [Post index query with product search](#query_with_product_search) |
 | `/api/environment/{environmentId}/onhand/productsearch/exactquery` | Post | [Post exact query with product search](#exact-query-with-product-search) |
+| `/api/environment/{environmentId}/transaction/adjustment/bulk` | Post | [Sync external inventory changes through Inventory Visibility](inventory-visibility-sync-changes.md) |
 
 > [!NOTE]
-> The {environmentId} part of the path is the environment ID in Microsoft Dynamics Lifecycle Services.
+> The {environmentId} part of the path is the environment ID of Microsoft Dynamics 365 Supply Chain Management.
 >
 > The bulk API can return a maximum of 512 records for each request.
-
-<!-- Microsoft has provided an out-of-box *Postman* request collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/95a57891aff1c5f2a7c2>.
-
-You can find the [service endpoint](inventory-visibility-power-platform.md#endpoint) in the Inventory Visibility app in Power Apps.-->
 
 ## <a name="inventory-visibility-authentication"></a>Authentication
 
 The platform security token is used to call the Inventory Visibility public API. Therefore, you must generate a *Microsoft Entra token* by using your Microsoft Entra application. You must then use the Microsoft Entra token to get the *access token* from the security service.
-
-<!--Microsoft provides an out-of-box *Postman* get token collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/496645018f96b3f0455e>.-->
 
 To get a security service token, follow these steps.
 
@@ -102,7 +96,7 @@ To get a security service token, follow these steps.
         "client_assertion_type": "aad_app",
         "client_assertion": "{Your_Microsoft EntraToken}",
         "scope": "https://inventoryservice.operations365.dynamics.com/.default",
-        "context": "{$LCS_environment_id}",
+        "context": "{$fno_environment_id}",
         "context_type": "finops-env"
     }
     ```
@@ -110,7 +104,7 @@ To get a security service token, follow these steps.
     Note the following points:
 
     - The `client_assertion` value must be the Microsoft Entra token (`aadToken`) that you received in the previous step.
-    - The `context` value must be the Lifecycle Services environment ID where you want to deploy the add-in.
+    - The `context` value must be the Supply Chain Management environment ID where you want to deploy the add-in.
     - Set all the other values as shown in the example.
 
 1. Fetch an access token (`access_token`) by submitting an HTTP request that has the following properties:
@@ -136,9 +130,6 @@ To get a security service token, follow these steps.
     }
     ```
 
-<!-- > [!IMPORTANT]
-> When you use the *Postman* request collection to call Inventory Visibility public APIs, you must add a bearer token for each request. To find your bearer token, select the **Authorization** tab under the request URL, select the **Bearer Token** type, and copy the access token that was fetched in the last step. In later sections of this article, `$access_token` will be used to represent the token that was fetched in the last step. -->
-
 ## <a name="create-onhand-change-event"></a>Create on-hand change events
 
 There are two APIs for creating on-hand change events:
@@ -158,7 +149,7 @@ The following table summarizes the meaning of each field in the JSON body.
 | `dimensions` | A dynamic key-value pair. The values are mapped to some of the dimensions in Supply Chain Management. However, you can also add custom dimensions (for example, *Source*) to indicate whether the event is coming from Supply Chain Management or an external system. |
 
 > [!NOTE]
-> If your [data partition rule](inventory-visibility-power-platform.md#data-partition) is set to *By product ID*, `siteId` and `locationId` are optional dimensions. Otherwise they're required dimensions. This rule also applies to the allocation, soft reserve, and change schedule APIs.
+> If your [data partition rule](inventory-visibility-power-platform.md#data-partition) is set to *By product ID*, `siteId` and `locationId` are optional dimensions. Otherwise, they're required dimensions. This rule also applies to the allocation, soft reserve, and change schedule APIs.
 
 The following subsections provide examples that show how to use these APIs.
 
@@ -380,7 +371,7 @@ A reservation can be made against different data source settings. To configure t
 
 When you call the reservation API, you can control the reservation validation by specifying the Boolean `ifCheckAvailForReserv` parameter in the request body. A value of `True` means that the validation is required, whereas a value of `False` means that the validation isn't required. The default value is `True`.
 
-If you want to reverse a reservation or unreserve specified inventory quantities, set the quantity to a negative value, and set the `ifCheckAvailForReserv` parameter to `False` to skip the validation. There's also a dedicated unreserve API to do the same. The difference is only in the way the two APIs are called. It's easier to reverse a specific reservation event by using `reservationId` with the *unreserve* API. For more information, see [Unreserve one reservation event](#reverse-reservation-events) section.
+If you want to reverse a reservation or unreserve specified inventory quantities, set the quantity to a negative value, and set the `ifCheckAvailForReserv` parameter to `False` to skip the validation. There's also a dedicated unreserve API to do the same. The difference is only in the way the two APIs are called. It's easier to reverse a specific reservation event by using `reservationId` with the *unreserve* API. Learn more in [Unreserve one reservation event](#reverse-reservation-events) section.
 
 ```txt
 Path:
@@ -603,7 +594,7 @@ Body:
     ]
 ```
 
-If the clean up job is successfully created, a job ID will be returned in the response, which can be used to [get job execution progress](#get-job-execution-progress).
+If the cleanup job is successfully created, a job ID will be returned in the response, which can be used to [get job execution progress](#get-job-execution-progress).
 
 ## Get job execution progress
 
@@ -642,7 +633,7 @@ The query by post API is available in two versions. The following table outlines
 | API version 1.0 | API version 2.0 |
 |---|---|
 | Can only query one organization ID. | Can query multiple organization IDs. |
-| Can query up to 10,000 combinations of sites and warehouses. | Can query more than 10,000 combinations of organization IDs, sites and warehouses. Can return results in multiple pages. |
+| Can query up to 10,000 combinations of sites and warehouses. | Can query more than 10,000 combinations of organization IDs, sites, and warehouses. Can return results in multiple pages. |
 
 The following subsections show how to use each API version.
 
@@ -685,7 +676,7 @@ This section applies when your [data partition rule](inventory-visibility-power-
 - `productId` can contain one or more values. If it's an empty array, the system will return all products for the specified sites and locations. In this case, `siteId` and `locationId` shouldn't be empty.
 - `siteId` and `locationId` are used for partitioning. You can specify more than one `siteId` and `locationId` value in a *Query on-hand* request. If both arrays are empty, the system will return all sites and locations for the specified products. In this case, `productId` shouldn't be empty.
 
-We recommend to use the `groupByValues` parameter in a way that's consistent with your index configuration. For more information, see [On-hand index configuration](inventory-visibility-power-platform.md#index).
+We recommend to use the `groupByValues` parameter in a way that's consistent with your index configuration. Learn more in [On-hand index configuration](inventory-visibility-power-platform.md#index).
 
 ### Query data stored by product ID
 

@@ -7,7 +7,6 @@ ms.reviewer: kamaybac
 ms.search.form: InventPosting, InventItemGroup
 ms.topic: how-to
 ms.date: 06/07/2024
-audience: Application User
 ms.custom: 
   - bap-template
   - evergreen

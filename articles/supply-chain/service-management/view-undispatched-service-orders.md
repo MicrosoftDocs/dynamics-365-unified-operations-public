@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 05/07/2018
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMADispatchBoard
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 
@@ -38,9 +34,7 @@ This article describes how to view activities in a service order that don’t ha
 
 5.  To view a list of service orders that don’t have a dispatch team assigned, click the **Undispatched** tab.
 
-## See also
-
-[Dispatch board (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))
+## Related information
 
 [Service activities](service-activities.md)
 

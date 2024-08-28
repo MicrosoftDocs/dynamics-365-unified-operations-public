@@ -1,15 +1,14 @@
 ---
 title: EU Sales list for Denmark
 description: Learn about the European Union (EU) sales list report for Denmark, including outlines on setup and how to work with the EU sales list.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.date: 05/20/2022
-ms.topic: article
-audience: Application User
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
 ms.reviewer: johnmichalak
-ms.search.region: 
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+
 ---
 
 # EU Sales list for Denmark

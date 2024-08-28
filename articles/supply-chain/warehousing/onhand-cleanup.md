@@ -1,17 +1,13 @@
 ---
 title: Warehouse management on-hand entries cleanup job
 description: Learn about the on-hand entries cleanup job, which helps improve system performance by identifying and deleting related but unneeded records.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: article
 ms.date: 04/23/2020
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2020-04-03
 ms.search.form:  SysOperationTemplateForm
-ms.dyn365.ops.version: 10.0.12
 ---
 
 # Warehouse management on-hand entries cleanup job

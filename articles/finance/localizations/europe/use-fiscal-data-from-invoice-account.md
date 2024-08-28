@@ -1,13 +1,13 @@
 ---
 title: Use fiscal data from an invoice account
 description: Learn about how to enable fiscal data to be automatically updated on sales orders or purchase orders based on information from the invoice account.
-author: EricWangChen
-ms.author: wangchen
-ms.topic: article
-ms.date: 01/23/2020
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
 ms.reviewer: johnmichalak
-audience: Application User
-ms.search.region: 
 ms.search.validFrom: 2020-02-03
 ms.search.form: CustParameters, VendParameters
 ms.dyn365.ops.version: 10.0.9

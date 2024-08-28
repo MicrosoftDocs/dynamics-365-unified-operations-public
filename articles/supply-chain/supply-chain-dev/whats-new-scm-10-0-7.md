@@ -9,7 +9,6 @@ ms.custom:
   - bap-template
   - evergreen
 ms.reviewer: kamaybac
-audience: Application User
 ms.search.form:
 ---
 
@@ -24,14 +23,14 @@ This article describes features that are either new or changed in Microsoft Dyna
 - General availability (self-update) is in November 2019.
 - Auto-update is in January 2020. 
 
-For more information about version 10.0.7, see [Additional resources](#additional-resources).
+For more information about version 10.0.7, see [Additional resources](#related-information).
 
 ## Feature management enhancements
 Feature management now allows you to enable all new features by default, require confirmation to enable a feature, and enable all features that have not already been enabled. 
 
 
 
-## Additional resources
+## Related information
 
 ### Bug fixes 
 For information about the bug fixes included in each of the updates that are part of 10.0.7, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?kb=4528173&bugId=386529&dbType=3&qc=d6f5cd3ead06907477eae511043a52c1d4290a12bf52374dd55faf0d28ae732e).

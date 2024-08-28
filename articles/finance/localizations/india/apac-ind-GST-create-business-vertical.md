@@ -1,13 +1,13 @@
 ---
 title: Create a business vertical
 description: Learn how to create a business vertical, part of the master data setup required to make an India localization solution for Goods and Services Tax (GST) available.
-author: EricWangChen
-ms.author: wangchen
-ms.topic: article
+author: epodkolzina
+ms.author: epodkolzina
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 06/04/2019
-ms.custom:
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: India
 ms.search.validFrom: 2019-06-01
 ms.search.form: TaxBusinessVerticalsTable_IN

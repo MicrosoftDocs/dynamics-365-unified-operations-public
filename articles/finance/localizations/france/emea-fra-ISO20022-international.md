@@ -1,15 +1,16 @@
 ---
 title: Prerequisites for ISO 20022 credit transfer format
 description: Learn about importing the requirements needed to set the ISO20022 (FR) (pain.001) payment format, including an outline on importing recent reporting configurations.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
+author: kailiang
+ms.author: kailiang
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
 ms.date: 03/24/2020
 ms.reviewer: johnmichalak
 audience: Application User
 ms.search.region: France
 ms.search.validFrom: 2020-06-01
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.9
 ---
 

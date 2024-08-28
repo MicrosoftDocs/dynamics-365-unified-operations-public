@@ -4,7 +4,7 @@
 title: Payroll API Employment type
 description: This article describes the Employment type option set in the Dynamics 365 Human Resources Payroll API.
 author: marcelbf
-ms.date: 08/23/2021
+ms.date: 07/09/2024
 ms.topic: article
 # optional metadata
 
@@ -16,7 +16,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: marcelbf
+ms.author: ajitchandran
 ms.search.validFrom: 2021-08-23
 ms.dyn365.ops.version: Human Resources
 ---

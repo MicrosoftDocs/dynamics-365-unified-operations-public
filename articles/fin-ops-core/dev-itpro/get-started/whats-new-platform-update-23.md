@@ -3,11 +3,12 @@ title: What's new or changed in Dynamics 365 for Finance and Operations platform
 description: Learn about new or changed features in Dynamics 365 for Finance and Operation platform update 23. This version was released in January 2019.
 author: sericks007
 ms.author: sericks
-ms.topic: article
-ms.date: 11/20/2020
-ms.custom:
+ms.topic: whats-new
+ms.date: 07/12/2024
+ms.custom: 
+  - bap-template
+  - evergreen
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2018-12-31
 ms.dyn365.ops.version: Platform 23 

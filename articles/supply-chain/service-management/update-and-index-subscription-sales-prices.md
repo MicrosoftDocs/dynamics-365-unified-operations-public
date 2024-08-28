@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 05/07/2018
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMASubscriptionTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 
@@ -37,10 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 4.  Click **OK**.
 
 The base price or index of the subscription is updated with the specified value.
-
-## See also
-
-[Index subscription (class form)](https://technet.microsoft.com/library/aa558579\(v=ax.60\))
 
   
 

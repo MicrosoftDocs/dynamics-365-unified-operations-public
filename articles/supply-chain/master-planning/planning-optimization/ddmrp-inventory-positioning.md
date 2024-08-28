@@ -6,11 +6,7 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 06/30/2022
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2022-06-30
 ms.search.form: ReqGroup, EcoResProductDetailsExtended
-ms.dyn365.ops.version: 10.0.28
 ---
 
 # Inventory positioning
@@ -87,8 +83,8 @@ Items become decoupling points when they belong to a coverage group that is conf
 1. On the **General** tab, set the **Coverage code** field to *Decoupling point*. This setting will cause all items that belong to this coverage group to be treated as decoupling points for DDMRP. It also enables all DDMRP settings for this group, as described later in this procedure.
 1. On the **Other** tab, in the **DDMRP parameters** section, set the following fields:
 
-    - **Lead time factor** – Specify a factor (as a decimal value between 0 and 1) to control the impact that lead time should have when the minimum and maximum stock levels are calculated for items in this coverage group. In general, the longer the lead time an item has, the lower its lead time factor should be. A lower lead time factor produces lower minimum and maximum stock levels, and therefore causes smaller and more frequent orders. DDMRP methodology recommends a value between 0.20 and 0.40 for items that have long lead times, between 0.41 and 0.60 for items that have medium lead times, and between 0.61 and 1.00 for items that have short lead times. For more information, see [Buffer profile and levels](ddmrp-buffer-profile-and-levels.md).
-    - **Variability factor** – Specify a factor (as a decimal value between 0 and 1) to control the impact that varying demand should have when the minimum stock level is calculated for items in this coverage group. In general, the more variable an item's demand is, the higher its variability factor should be. A higher variability factor produces a higher minimum stock level. DDMRP methodology recommends a value between 0.00 and 0.40 for items that have low variability, between 0.41 and 0.60 for items that have medium variability, and between 0.61 and 1.00 for items that have high variability. For more information, see [Buffer profile and levels](ddmrp-buffer-profile-and-levels.md).
+    - **Lead time factor** – Specify a factor (as a decimal value between 0 and 1) to control the impact that lead time should have when the minimum and maximum stock levels are calculated for items in this coverage group. In general, the longer the lead time an item has, the lower its lead time factor should be. A lower lead time factor produces lower minimum and maximum stock levels, and therefore causes smaller and more frequent orders. DDMRP methodology recommends a value between 0.20 and 0.40 for items that have long lead times, between 0.41 and 0.60 for items that have medium lead times, and between 0.61 and 1.00 for items that have short lead times. Learn more in [Buffer profile and levels](ddmrp-buffer-profile-and-levels.md).
+    - **Variability factor** – Specify a factor (as a decimal value between 0 and 1) to control the impact that varying demand should have when the minimum stock level is calculated for items in this coverage group. In general, the more variable an item's demand is, the higher its variability factor should be. A higher variability factor produces a higher minimum stock level. DDMRP methodology recommends a value between 0.00 and 0.40 for items that have low variability, between 0.41 and 0.60 for items that have medium variability, and between 0.61 and 1.00 for items that have high variability. Learn more in [Buffer profile and levels](ddmrp-buffer-profile-and-levels.md).
     - **Min, max, and re-order point period** – Specify how often to calculate buffer values (*Daily* or *Weekly*).
 
 1. On the **Other** tab, in the **Average daily usage** section, set the following fields:

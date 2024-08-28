@@ -2,8 +2,8 @@
 title: Delivery options module
 description: This article covers delivery options modules and explains how to configure them in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 05/28/2024
-ms.topic: article
+ms.date: 06/25/2024
+ms.topic: how-to
 audience: Application user
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
@@ -42,8 +42,9 @@ The following illustration shows an example of a delivery options module on a ch
 | Heading | Heading text and a heading tag (**H1**, **H2**, **H3**, **H4**, **H5**, or **H6**) | An optional heading for the delivery options module. |
 | Custom CSS class name | Text | A custom Cascading Style Sheets (CSS) class name that is used to render this module, if applicable. |
 | Filter delivery mode option | **Do not filter** or **Non-shipping modes** | A value that specifies whether the delivery options module should filter out all nonshipping delivery modes. |
-| Auto select a delivery option | **Do not filter**, **Auto select delivery option and show summary**, or **Auto select delivery option and don't show summary** | This property automatically applies the first available delivery option to checkout without requiring the user to select it. It should be used only if there's one available delivery option. This property is supported as of the Commerce version 10.0.19 release. |
+| Auto select a delivery option | **Do not filter**, **Auto select delivery option and show summary**, or **Auto select delivery option and don't show summary** | This property automatically applies the first available delivery option to checkout without requiring the user to select it. It should only be used if there's one available delivery option. This property is supported as of the Commerce version 10.0.19 release. |
 |Enable multiple delivery options for an order| **True** or **False** | When this optional property is set to **True**, if the system can't find a common mode of delivery for the order lines, it groups the order lines to find appropriate mode of deliveries for each group of order lines. When this property is set to **False**, if the system can't find a common mode of delivery for the order lines, it generates an error message. This property is supported as of the Commerce version 10.0.40 release. |
+|Enable request for a delivery date| **True** or **False** | When this optional property is set to **True**, a customer can provide a date on which they want to receive their delivery. This configuration has a dependency on the **Enable multiple delivery options for an order** configuration, which must be enabled first. This property is supported as of the Commerce version 10.0.40 release. |
 
 ## Add a delivery options module to a checkout page and set the required properties
 

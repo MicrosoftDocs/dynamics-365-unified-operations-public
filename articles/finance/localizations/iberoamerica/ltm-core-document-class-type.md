@@ -3,8 +3,8 @@ title: Document class types for Latin America
 description: Learn about the document class type configuration for Latin America, including prerequisites and an outline on setting up document class types. 
 author: Fhernandez0088
 ms.author: v-federicohe 
-ms.topic: article
-ms.date: 04/03/2023
+ms.topic: how-to
+ms.date: 07/01/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---

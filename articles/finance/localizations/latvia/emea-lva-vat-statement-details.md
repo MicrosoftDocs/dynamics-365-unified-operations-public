@@ -1,12 +1,13 @@
 ---
 title: VAT statement details for Latvia
 description: Learn how to set up the VAT statement for legal entities in Latvia, including outlines on setting up sales tax authories and reporting codes.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 06/20/2017
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Latvia
 ms.search.validFrom: 2016-11-30
 ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable

@@ -1,12 +1,13 @@
 ---
 title: Third party miscellaneous charges
 description: Learn how to handle services that are purchased though a separate invoice as miscellaneous charges, including a process for setting up charge codes.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 11/18/2019
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1

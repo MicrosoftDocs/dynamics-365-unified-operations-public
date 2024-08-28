@@ -7,12 +7,7 @@ ms.topic: article
 ms.date: 04/07/2021
 ms.custom: 
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2020-08-21
 ms.search.form: ReqCreatePlanWorkspace
-ms.dyn365.ops.version: 10.0.13
 ---
 
 # View, manage, and approve planned orders
@@ -62,7 +57,7 @@ The following illustration shows how you can use the **Status** value that is as
 > [!TIP]
 > We recommend that you approve any modified planned orders. Otherwise, the edits will be ignored and overwritten by the next planning run.
 
-## Additional resources
+## Related information
 
 - [Firm planned orders](planned-order-firming.md)
 

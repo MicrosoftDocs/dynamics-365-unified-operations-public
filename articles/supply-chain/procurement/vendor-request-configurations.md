@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 06/20/2017
 ms.custom:
 ms.reviewer: kamaybac 
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2017-12-31
 ms.search.form: VendProspectiveVendorRegistrationConfig 
-ms.dyn365.ops.version: 7.3
 ---
 
 # Vendor request configurations

@@ -1,12 +1,13 @@
 ---
 title: EUR-00015 Set up VAT ID
 description: Learn about VAT ID registration prerequisites, such as setting up a registration type and assigning it to a registration category.
-author: AdamTrukawka
-ms.author: atrukawk
+author: epodkolzina
+ms.author: epodkolzina
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 08/29/2018
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.search.validFrom: 2016-06-30
 ms.search.form: TaxRegistrationType, TaxRegistrationTypeCreate, TaxRegistrationLegislationTypes

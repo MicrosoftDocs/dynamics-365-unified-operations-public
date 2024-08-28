@@ -2,16 +2,15 @@
 title: Platform settings file
 description: This article covers various properties that can be configured in the Microsoft Dynamics 365 Commerce platform settings file.
 author: samjarawan
-ms.date: 12/05/2023
-ms.topic: article
+ms.date: 07/02/2024
+ms.topic: how-to
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.13
 ms.custom: 
-ms.assetid: 
+  - bap-template 
 ---
 
 # Platform settings file
@@ -24,7 +23,8 @@ The **platform.settings.json** file under the **\\src\\settings\\** directory ho
 
 ```json
 {
-    "dataActionTimeoutInMs": 4000,
+    "serverSideDataActionTimeoutInMs": 4000,
+    "clientSideDataActionTimeoutInMs": 4000,
     "minClientChunkSize": 30000,
     "excludeModules": [ ],
     "namespaceExtensions" : [ ],
@@ -34,9 +34,13 @@ The **platform.settings.json** file under the **\\src\\settings\\** directory ho
 
 ## Properties
 
-### dataActionTimeoutInMs
+### serverSideDataActionTimeoutInMs
 
-The **dataActionTimeoutInMs** property defines the maximum amount of time, in milliseconds, that data actions wait for a response before they time out. The timeout value represents a lower bound for page response, because the action framework waits as long as the defined timeout value before it times out and returns the page. The default value is 4,000 milliseconds (4 seconds).
+The **serverSideDataActionTimeoutInMs** property defines the maximum amount of time, in milliseconds, that the server side data actions wait for a response before they time out. The timeout value represents a lower bound for page response because the action framework waits as long as the defined timeout value before it times out and returns the page. The default value is 4000 milliseconds (4 seconds). If this value is set too high, it could potentially overload the Commerce Scale Unit (CSU).
+
+### clientSideDataActionTimeoutInMs
+
+The **clientSideDataActionTimeoutInMs** property defines the maximum amount of time, in milliseconds, that the client side data actions wait for a response before they time out. The timeout value represents a lower bound for page response because the action framework waits as long as the defined timeout value before it times out and returns the page. The default value is 4000 milliseconds (4 seconds). If this value is set too high, it could potentially overload the CSU.
 
 ### minClientChunkSize
 

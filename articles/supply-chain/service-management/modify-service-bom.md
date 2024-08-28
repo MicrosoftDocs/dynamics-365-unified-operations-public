@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 05/03/2018
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMAAgreementTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 
@@ -55,7 +51,7 @@ You can record the history of an element in a service BOM. Every time that you u
 
 5.  In the **Designer** form, select the BOM line to delete, and then click **Delete BOM line**.
 
-## See also
+## Related information
 
 [Template BOMs](template-boms.md)
 

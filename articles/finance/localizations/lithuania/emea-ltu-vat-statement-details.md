@@ -1,12 +1,13 @@
 ---
 title: VAT statement details for Lithuania
 description: Learn how to set up a VAT statement for legal entities in Lithuania, including outlines on setting up sales tax authorities and reporting codes.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 06/20/2017
+author: liza-golub
+ms.author: egolub
+ms.topic: conceptual
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Lithuania
 ms.search.validFrom: 2016-05-31
 ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable

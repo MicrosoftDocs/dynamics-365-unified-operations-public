@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 01/19/2023
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMAServiceOrderTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Create service orders automatically
@@ -41,7 +37,7 @@ When you create service orders manually or automatically from the service agreem
 1. Select **Select** to make selections to add or remove criteria to use to create service orders.
 1. Select **OK**.
 
-## Additional resources
+## Related information
 
 - [Service orders](service-orders.md)
 - [Automatically create service orders](auto-create-service-orders.md)

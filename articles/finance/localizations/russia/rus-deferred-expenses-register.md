@@ -1,15 +1,15 @@
 ---
 title: Deferred expenses register
 description: Learn about how to generate and set up deferrals, including outlines on deferral setups and setting up deferral creation when you sell fixed assets.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 08/16/2021
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2020-09-11
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.0
 ---
 

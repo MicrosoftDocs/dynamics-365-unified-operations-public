@@ -3,14 +3,14 @@ title: What's new or changed in Dynamics 365 Finance 10.0.11 (July 2020)
 description: Learn about features that are either new or changed in the Dynamics 365 Finance version 10.0.11 preview release released in July 2020.
 author: kfend
 ms.author: kfend
-ms.topic: article
-ms.date: 04/13/2020
+ms.topic: whats-new
+ms.date: 07/15/2024
 ms.custom:
+  - bap-template
+  - evergreen
 ms.reviewer: kfend
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2020-04-13 
-ms.search.form:
 ms.dyn365.ops.version: 10.0.11
 ---
 # What's new and changed in Dynamics 365 Finance 10.0.11 (July 2020)

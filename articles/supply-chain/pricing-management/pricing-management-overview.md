@@ -7,18 +7,18 @@ ms.topic: overview
 ms.date: 04/03/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form:
 ---
 
 # Pricing management overview (preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 This article provides an overview of the **Pricing management** module for Microsoft Dynamics 365 Supply Chain Management.
+
+For a video overview of the Pricing management module, see [Pricing Management Overview in Dynamics 365 Supply Chain Management - TechTalk](https://www.youtube.com/watch?v=Pc9nBoHN5m0).
 
 Increasingly, traditional business-to-business (B2B) companies are considering converting to omnichannel sales and selling directly to customers, so that they can gain more control over pricing and margins. The omnichannel transformation causes massive changes to pricing models and rules. Pricing management helps B2B companies that are converting to omnichannel pricing by enabling attribute-based pricing rules that use attributes and data from customers, products, and order segments.
 
@@ -40,7 +40,7 @@ Supply Chain Management uses the [Commerce Scale Unit (CSU) Core](../../commerce
 - Use enhanced discount budget controls to help avoid margin leakage from fund consumption.
 - Use the [CSU-based pricing API](../../commerce/pricing-apis.md) for Dynamics 365 Commerce to enable pricing calculations to be retrieved by a native Commerce point of sale (POS) system and/or consumed by external applications to support different pricing scenarios.
 
-[!INCLUDE [preview-note](../includes/preview-note.md)]
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Pricing components
 

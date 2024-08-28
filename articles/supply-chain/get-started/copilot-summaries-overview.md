@@ -7,9 +7,10 @@ ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
 ms.date: 06/17/2024
-audience: Application User
 ms.custom: 
   - bap-template
+ms.collection:
+  - bap-ai-copilot
 ---
 
 # AI summaries with Copilot
@@ -28,25 +29,31 @@ Before you can use AI summaries with Copilot, your system must meet the followin
     - Version 10.0.40 with PQU-1 or later
     - Any build of version 10.0.41 or later
 
-- Depending on the summaries that you want to use, the following features must be enabled in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). These features are turned on by default in Supply Chain Management version 10.0.40 and later.
+- [Power Platform Integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md) must be enabled for your environment. Usually, all the components that are required to use Copilot summaries are automatically deployed when Power Platform Integration is enabled. However, if they don't work as expected, see [Enable Copilot capabilities in finance and operations apps](../../fin-ops-core/dev-itpro/copilot/enable-copilot.md) for more detailed requirements.
 
-    - Warehouse Management mobile app insights – *Context-aware worker summary screen in WMA*
+- Depending on the summaries that you want to use, the following features must be enabled in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). All of these features are turned on by default.
+
+    - Workload insights with Copilot in the Warehouse Management mobile app – *Context-aware worker summary screen in WMA*
     - Product hover summaries – *Product summary when hovering on item*
     - Released product details summary – *Product details summary*
     - Purchase order summary – *Purchase order summary*
     - Sales order summary – *Sales order summary*
     - Vendor summary – *Vendor summary*
 
-- To use Warehouse Management mobile app insights, you must be running Warehouse Management mobile app version 2.3.2.0 or later.
+- To use Workload insights with Copilot in the Warehouse Management mobile app, you must be running Warehouse Management mobile app version 2.3.2.0 or later.
 
-## Warehouse Management mobile app insights
+## Workload insights with Copilot in the Warehouse Management mobile app
 
-Warehouse Management mobile app insights are provided on the home page of the mobile app. The information that's shown can include the following details:
+The Warehouse Management mobile app provides a *workload* page that shows work summaries and AI-generated insights to help warehouse workers better plan their shift. The information can include the following details:
 
-- The number of pick and receive work lines.
-- The number of other warehouse workers who are online in the warehouse where the worker is signed in.
-- Insights into the kind of work that's being done. For example, the page might show a worker that most of the current work is related to picking sales orders. It can also show the zone and location where most items must be picked.
-- The average number of items per order, plus the average weight and volume of the items.
+- The number of pick and receive work headers or work lines.
+- The number of active warehouse mobile app sessions in the warehouse.
+- Insights into the available work types.
+- The current workload. This information can be shown either as work headers or work lines.
+- Details of the available work per work type.
+- More information about the available work. Microsoft Copilot generates this information in natural language.
+
+Learn more in [Workload insights with Copilot in the Warehouse Management mobile app](../warehousing/warehouse-management-mobile-app-insights.md).
 
 ## Product hover summaries
 
@@ -120,6 +127,8 @@ As appropriate, the **Insights** section provides buttons that let you filter th
 - **Overdue or nearly overdue lines** – Show only order lines that are overdue or nearly overdue.
 - **Lines without confirmed ship dates** – Show only order lines that aren't fully shipped (packing slip posted) and don't have a confirmed ship date.
 
-## See also
+## Related information
 
+- [Workload insights with Copilot in the Warehouse Management mobile app](../warehousing/warehouse-management-mobile-app-insights.md)
 - [Responsible AI FAQ for AI summaries with Copilot](../faq-summaries.md)
+- [Responsible AI FAQ for Workload insights with Copilot](../faq-wma-copilot.md)

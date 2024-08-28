@@ -1,12 +1,13 @@
 ---
 title: File formats for methods of payment
 description: Learn about the two methods for getting file formats that you can use for methods of payment, including an outline on electronic reporting file formats.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
+author: kailiang
+ms.author: kailiang
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 06/20/2017
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Belgium, France, Germany, Norway, Spain, Sweden, Switzerland
 ms.search.validFrom: 2016-11-30
 ms.search.form: CustPaymMode, VendPaymMode

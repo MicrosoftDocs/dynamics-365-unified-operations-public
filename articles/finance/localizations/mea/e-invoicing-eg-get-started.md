@@ -1,7 +1,7 @@
 ---
 title: Electronic invoicing for Egypt
 description: Learna bout what will help you get started with Electronic invoicing for Egypt in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
-author: gionoder
+author: ikondratenko
 ms.author: johnmichalak
 ms.topic: article
 ms.date: 02/09/2022

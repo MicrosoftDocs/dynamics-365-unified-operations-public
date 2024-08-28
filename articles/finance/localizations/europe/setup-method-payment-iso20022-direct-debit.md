@@ -1,13 +1,13 @@
 --- 
 title: Setup method of payment for ISO20022 direct debit
 description: Learn how to set up the customer method of payment for ISO20022 direct debit or any other payment type using electronic reporting.
-author: mrolecki
-ms.author: mrolecki
+author: kailiang
+ms.author: kailiang
 ms.topic: how-to
-ms.date: 08/29/2018
-ms.custom:
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
 ms.reviewer: johnmichalak   
-audience: Application User 
 ms.search.region: Global
 ms.search.validFrom: 2016-06-30
 ms.search.form: CustPaymMode

@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 05/07/2018
 ms.custom: 
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: InventQuarantineOrder
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Take returned items through inspection
@@ -38,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 1. Close the form to save your changes.
 
-## See also
+## Related information
 
 - [Specify how to dispose of returned items](specify-how-to-dispose-of-returned-items.md)
 

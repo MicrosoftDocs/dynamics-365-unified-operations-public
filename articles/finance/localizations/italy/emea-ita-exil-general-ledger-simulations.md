@@ -3,13 +3,13 @@ title: General ledger simulations (Italy)
 description: Learn about posting ledger transactions as a simulation from the general journal and then review reports that include the simulated transactions.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
-ms.date: 03/17/2020
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Italy
 ms.search.validFrom: 2020-02-03
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.9
 ---
 

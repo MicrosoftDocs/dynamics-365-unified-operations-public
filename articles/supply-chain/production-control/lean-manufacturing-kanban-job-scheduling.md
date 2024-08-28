@@ -6,12 +6,7 @@ ms.author: johanho
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: KanbanBoardScheduleJobForward, KanbanBoardShowJobs, KanbanJobSchedulingListPage
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: fe3b4822-6140-4b02-bebb-1fc17be2bce8
 ---
 
@@ -57,7 +52,7 @@ The available capacity by day or week is defined by the calendar that is assigne
 
 The **Kanban job scheduling** list page contains a FactBox that shows the available and booked period capacity for the selected work cell. Depending on the selected schedule periods in the production flow model, the periods show days or weeks.
 
-## Additional resources
+## Related information
 
 
 

@@ -1,13 +1,13 @@
 --- 
 title: Import ISO20022 credit transfer configuration
 description: Learn how to import a vendor payment electronic reporting configuration, including a step-by-step process using the DEMF demo data company. 
-author: mrolecki
-ms.author: mrolecki
+author: kailiang
+ms.author: kailiang
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 08/01/2023
-ms.custom:
 ms.reviewer: johnmichalak   
-audience: Application User 
 ms.search.region: Global
 ms.search.validFrom: 2016-06-30
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionImport 

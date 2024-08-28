@@ -7,8 +7,6 @@ ms.topic: overview
 ms.date: 01/05/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: EcoResProductLifecycleState, EcoResReleasedProductLifecycleStateChanges
 ---
 
@@ -61,7 +59,7 @@ For detailed information about how to use product lifecycle state to exclude pro
 
 It's possible set up your system to provide control over which business processes should be allowed or blocked by the system for a specific lifecycle state. This capability can be useful when introducing new products (where, for example, it may be possible to purchase the item but receive a warning that it's still a prototype) or to discontinue or end-of-life of a product (where it may be possible to sell the existing on-hand but not to purchase it or to produce it).
 
-To enable this level of control over your business processes, the *Engineering Change Management* configuration key must be enabled for the processes to appear (see also [Engineering change management overview](../engineering-change-management/product-engineering-overview.md)). You can set up the control of business processes in products, variants, and engineering products. You can safely enable the configuration key and use the lifecycle state for standard products even if you don't use any other aspects of the engineering change management processes. For more information about how to work with lifecycle states using the features provided by engineering change management, see [Product lifecycle states and transactions](../engineering-change-management/product-lifecycle-state-transactions.md).
+To enable this level of control over your business processes, you must enable the *Engineering Change Management* configuration key so that the processes appear. (Learn more in [Engineering change management overview](../engineering-change-management/product-engineering-overview.md).) You can set up the control of business processes in products, variants, and engineering products. You can safely enable the configuration key and use the lifecycle state for standard products even if you don't use any other aspects of the engineering change management processes. For more information about how to work with lifecycle states using the features provided by engineering change management, see [Product lifecycle states and transactions](../engineering-change-management/product-lifecycle-state-transactions.md).
 
 ## Default migration, import, and export
 
@@ -69,7 +67,7 @@ The product lifecycle states are supported by data entities, and the lifecycle s
 
 ## Find obsolete products and products variants
 
-You can run a simulation analysis to find the obsolete released products or product variants and then update their product lifecycle status. To find obsolete products, see [Find obsolete product variants and assign a product lifecycle state](tasks/obsolete-product-variants.md). This article shows how to find obsolete released products or product variants and how to associate a product lifecycle state to the obsolete products. It also shows hot to view the simulation results and assess how many products and product variants will be associated with a new product lifecycle state when running the update without simulation.  
+You can run a simulation analysis to find the obsolete released products or product variants and then update their product lifecycle status. To find obsolete products, see [Find obsolete product variants and assign a product lifecycle state](tasks/obsolete-product-variants.md). This article shows how to find obsolete released products or product variants and how to associate a product lifecycle state to the obsolete products. It also shows how to view the simulation results and assess how many products and product variants will be associated with a new product lifecycle state when running the update without simulation.  
 
 By running the analysis in a simulation mode, the products and product variants identified as obsolete are displayed in a specific form, where they can easily be reviewed. The analysis searches for transactions and specific master data to identify products that have no demand within a variable period and no master data that can result in demand. New released products within a variable period can be excluded from the analysis. When the analysis simulation returns the expected result, the user can run the analysis and set a new product lifecycle state to all products identified as obsolete by the analysis.  
 
@@ -92,7 +90,7 @@ Use the following criteria to select and update the released products and produc
 - No active or future sales or purchase agreement lines for the product or product variant.
 - The product or product variant isn't used in a BOM that is associated with a non-expired approved BOM version for a product or variant that is active for planning.
 
-## Additional resources
+## Related information
 
 - [Create a new product lifecycle state](tasks/new-product-lifecycle-state.md)
 - [Create a default product lifecycle state](tasks/default-product-lifecycle-state.md)

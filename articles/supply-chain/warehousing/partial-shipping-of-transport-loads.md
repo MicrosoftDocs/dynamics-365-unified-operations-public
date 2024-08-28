@@ -6,11 +6,7 @@ ms.author: mirzaab
 ms.topic: article
 ms.date: 03/15/2017
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: WHSTransportLoad
-ms.dyn365.ops.version: AX 8.0.0
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ---
 

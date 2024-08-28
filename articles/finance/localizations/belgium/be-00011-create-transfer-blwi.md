@@ -1,12 +1,13 @@
 ---
 title: Create and transfer transactions to the BLWI (Belgium)
 description: Learn how to create and transfer transactions to the BLWI report for Belgium, including a step-by-step process detailing creation of transactions.
-author: AdamTrukawka
-ms.author: atrukawk
+author: liza-golub
+ms.author: egolub
 ms.topic: how-to
-ms.date: 07/12/2017
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Belgium
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0

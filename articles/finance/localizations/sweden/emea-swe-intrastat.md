@@ -1,14 +1,14 @@
 ---
 title: Swedish Intrastat
 description: Learn about Intrastat reporting in Sweden, including step-by-step processes for setting up Intrastat, foreign trade parameters, and generating Intrastat reports.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 08/24/2021
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/10/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Global
-ms.search.validFrom: 
 ---
 
 # Swedish Intrastat

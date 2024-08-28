@@ -7,8 +7,6 @@ ms.topic: conceptual
 ms.date: 05/02/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: PurchTable, PurchTablePart, VendPackingSlipJournalListPage, VendPackingSlipJournal
 ---
 
@@ -46,7 +44,7 @@ After the product receipt has been processed on the PO, the PO status is set to 
 
 You can access this page from the **Receipt** action group on the **Purchase order** page. The information in the journals includes details about the quantities, dates, and dimensions.
 
-## Additional resources
+## Related information
 
 - [Purchase order overview](purchase-order-overview.md)
 - [Create purchase orders](purchase-order-creation.md)

@@ -1,12 +1,13 @@
 ---
 title: Fiscal documents and fiscal document framework for Brazil
 description: Learn about fiscal documents for Brazil, including an overview on viewing and printing fiscal documents and a table that outlines aspects of various actions.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 06/20/2017
+author: ankviklis
+ms.author: ankviklis
+ms.topic: overview
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Brazil
 ms.search.validFrom: 2016-11-30
 ms.search.form: FiscalDocument_BR, FiscalDocumentAmounts_BR, FiscalDocumentChargesTotals_BR, FiscalDocumentElectronic_BR

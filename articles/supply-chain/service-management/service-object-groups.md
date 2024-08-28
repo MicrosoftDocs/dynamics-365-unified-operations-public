@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 05/11/2018
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMAServiceObjectGroups
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Service object groups
@@ -69,7 +65,7 @@ To create service object groups, follow these steps:
 
 You can assign service objects to the group by using the **Service objects** form. 
 
-## See also
+## Related information
 
 [Create service objects](create-service-objects.md)
 

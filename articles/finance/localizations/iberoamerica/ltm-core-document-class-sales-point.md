@@ -3,8 +3,8 @@ title: Document class sales point for Latin America
 description: Learn about the configuration of additional settings for sales points for Latin America, including prerequisites and a process setting up sales point settings.
 author: Fhernandez0088
 ms.author: v-federicohe 
-ms.topic: article
-ms.date: 04/03/2023
+ms.topic: how-to
+ms.date: 07/01/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ---

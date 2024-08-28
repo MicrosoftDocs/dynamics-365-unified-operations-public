@@ -1,13 +1,13 @@
 ---
 title: Russia advance holders overview
 description: Learn how to register and set up advance holders for Russia, including a step-by-step process for setting up parameters for advance holders.
-author: mrolecki
-ms.author: mrolecki
-ms.topic: article
-ms.date: 07/25/2019
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak
 ms.collection: get-started
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.search.form: HcmWorkerAdvHolderTableListPage_RU, HcmWorkerAdvHolderTable_RU

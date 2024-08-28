@@ -4,7 +4,7 @@
 title: Set up tasks in Task management
 description: This article explains how to set up tasks in Task management in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 10/12/2022
+ms.date: 07/01/2024
 ms.topic: article
 # optional metadata
 
@@ -17,7 +17,7 @@ audience: Application User
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: anisagrawal
 ms.search.validFrom: 2022-06-09
 ms.dyn365.ops.version: Human Resources
 
@@ -25,8 +25,7 @@ ms.dyn365.ops.version: Human Resources
 
 # Set up tasks in Task management
 
-
-In versions of Microsoft Dynamics 365 Human Resources before version 10.0.30, users who wanted to edit a task had to individually edit that task on each checklist that contained it. However, as of Human Resources version 10.0.30, users can select how edited tasks are handled. If a task that is being edited is on a checklist, the **Enable task management upgrade** option must be selected on the **Task management** tab of the **Human resources shared parameters** page to enable the checklist to use the edited task.
+In Microsoft Dynamics 365 Human Resources version 10.0.30, users can select how edited tasks are handled. If a task that is being edited is on a checklist, the **Enable task management upgrade** option must be selected on the **Task management** tab of the **Human resources shared parameters** page to enable the checklist to use the edited task.
 
 [![Enable task management upgrade option on the Human resources shared parameters page.](./media/task-update.png)](./media/task-update.png)
 

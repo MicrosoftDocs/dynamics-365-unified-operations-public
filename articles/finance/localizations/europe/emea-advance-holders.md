@@ -4,10 +4,10 @@ description: Learn about advance holder functionality, including a step-by-step 
 author: AdamTrukawka
 ms.author: atrukawk
 ms.topic: overview
-ms.date: 09/15/2021
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-ms.collection: get-started
-audience: Application User
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.search.validFrom: 2016-11-30
 ms.search.form: HcmWorkerAdvHolderTableListPage_RU

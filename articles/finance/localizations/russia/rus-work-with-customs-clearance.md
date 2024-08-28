@@ -1,17 +1,14 @@
 ---
 title: Work with customs clearance
 description: Learn how to work with customs clearance of products that are transported across the border of the Russian Federation, including a step-by-step process.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 08/16/2022
-ms.custom:
+author: evgenypopov
+ms.author: evgenypopov
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 06/26/2024
 ms.reviewer: johnmichalak
-audience: Application User
-ms.search.region: 
-ms.dyn365.ops.version:
-ms.search.form:
-ms.search.validFrom: 
+
 ---
 
 # Work with customs clearance

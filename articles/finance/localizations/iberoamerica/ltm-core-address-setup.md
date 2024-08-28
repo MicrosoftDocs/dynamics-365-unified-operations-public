@@ -3,9 +3,10 @@ title: Address setup for Latin America
 description: Learn about how to use the LATAM extension from your address setup, including prerequisites and an outline on country/region configuration.
 author: cpicon85
 ms.author: v-cpicon
-ms.topic: article
-ms.date: 01/31/2023
-ms.custom: bap-template
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/01/2024
 ms.reviewer: johnmichalak
 --- 
 

@@ -1,12 +1,13 @@
 ---
 title: Test interoperation with the MTD VAT sandbox
 description: Learn how to test the interoperation with the Making Tax Digital for value-added tax application programming interface of Her Majesty's Revenue and Customs.
-author: AdamTrukawka
-ms.author: atrukawk
-ms.topic: article
-ms.date: 08/19/2021
+author: liza-golub
+ms.author: egolub
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: United Kingdom
 ms.search.validFrom: 2021-08-06
 ---

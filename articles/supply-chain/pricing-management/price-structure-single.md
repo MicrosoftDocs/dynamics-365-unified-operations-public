@@ -7,22 +7,20 @@ ms.topic: how-to
 ms.date: 04/03/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: GUPPriceComponentCodeSetup, GUPParameters
 ---
 
 # Set up a company to use a single price structure (preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 This article explains how to configure a company to use a single price structure, and how to set up that structure. The purpose of a price structure is to define the order that the system calculates each type of price adjustment in, and to define other options for each price component code, such as concurrency and compounding rules.
 
 In this scenario, companies and price structures have a one-to-one (1:1) relationship, and the single price structure is called the *price component code setup*. The pricing engine matches each sales order with the price component codes, based on the pricing sequence that's defined in the single structure.
 
-The price component code setup is the single-structure equivalent of the price trees that are used for multiple price structures, and it provides almost all the same settings. For more information, see [Set up a company to use multiple price structures](price-structure-multiple.md).
+The price component code setup is the single-structure equivalent of the price trees that are used for multiple price structures, and it provides almost all the same settings. Learn more in [Set up a company to use multiple price structures](price-structure-multiple.md).
 
 ## Configure a company to use a single price structure
 

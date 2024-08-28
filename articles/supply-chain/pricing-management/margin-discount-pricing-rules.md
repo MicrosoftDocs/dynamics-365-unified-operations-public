@@ -7,15 +7,13 @@ ms.topic: how-to
 ms.date: 04/03/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
 ms.search.form: RetailPeriodicDiscount, RetailMixAndMatchLineGroups, GUPPriceAdjustPriceAttributeGroupEdit, GUPDiscountPriceComponentGroupExclusionList, GUPFundList, RetailMixAndMatchLineGroupSetup
 ---
 
 # Pricing rules for discounts and margin price adjustments (preview)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
 This article explains how to configure pricing rules for margin component price adjustments, simple discounts, quantity discounts, mix-and-match discounts, threshold discounts, and free-item discounts.
@@ -60,8 +58,8 @@ Set the following fields on the **General** FastTab for all types of pricing rul
 - **Currency** – Select the currency that the rule applies to.
 - **Price component** – This read-only field shows the type of pricing rule (*Discounts* or *Margin component*).
 - **Price component code** – Select the [price component code](price-component-code.md) that the rule applies to. Only existing price component codes of the applicable type are listed.
-- **Header price attribute group type** – This read-only field indicates how customers that the rule applies to are selected. It shows *All* if the rule applies to all customers. It shows *Group* if the rule applies to only a set of customers, as defined by values that are assigned to attributes that are part of an attribute group. You can set the value for the current rule by selecting **Header price attribute group** on the Action Pane. For more information, see the [Set up header price attribute values](#header-attributes) section of this article.
-- **Price attribute group** – If the **Header price attribute group type** field is set to *Group*, this read-only field shows the attribute group that's being used to define the set of customers that the current rule applies to. For more information, see the [Set up header price attribute values](#header-attributes) section.
+- **Header price attribute group type** – This read-only field indicates how customers that the rule applies to are selected. It shows *All* if the rule applies to all customers. It shows *Group* if the rule applies to only a set of customers, as defined by values that are assigned to attributes that are part of an attribute group. You can set the value for the current rule by selecting **Header price attribute group** on the Action Pane. Learn more in the [Set up header price attribute values](#header-attributes) section of this article.
+- **Price attribute group** – If the **Header price attribute group type** field is set to *Group*, this read-only field shows the attribute group that's being used to define the set of customers that the current rule applies to. Learn more in the [Set up header price attribute values](#header-attributes) section.
 
 ### General settings that apply only to margin price adjustments
 
@@ -77,12 +75,12 @@ If you're setting up a pricing rule for a margin component price adjustment, set
 
 If you're setting up a pricing rule for a discount, set the following fields on the **General** FastTab. Not all these fields are available for every type of discount.
 
-- **Discount account** – If you want to post the discount amount for the discount record to a separate general ledger account, specify that account. This field overrides the similar field that's available for price structures (**Price component code setup** or **Price tree**). For more information, see [Price component posting](price-component-posting.md).
+- **Discount account** – If you want to post the discount amount for the discount record to a separate general ledger account, specify that account. This field overrides the similar field that's available for price structures (**Price component code setup** or **Price tree**). Learn more in [Price component posting](price-component-posting.md).
 - **Discount concurrency mode** – Select one of the following values to specify how the system should handle situations where more than one discount rule applies to the same price component code in a price structure. (This type of situation is known as concurrency.)
 
     - *Exclusive* – The discount is an exclusive discount. Therefore, it can't be combined with other discounts. If there are multiple exclusive discounts, the price engine will apply only the one that gives the largest discount.
     - *Best price* – Discounts of this concurrency mode will compete for the largest discount (lowest price).
-    - *Compounded* – The discount will be combined with other discounts according to the pricing sequence that's defined in the price structure. Settings on the **Pricing management parameters** page control whether the compounded discount calculation is based on the original price or the compounded amount. (For more information, see [Resolve concurrency within price component codes](concurrence-within-codes.md).)
+    - *Compounded* – The discount will be combined with other discounts according to the pricing sequence that's defined in the price structure. Settings on the **Pricing management parameters** page control whether the compounded discount calculation is based on the original price or the compounded amount. (Learn more in [Resolve concurrency within price component codes](concurrence-within-codes.md).)
     - *Always apply* – The discount will always be applied. Always-apply discounts are applied last. Therefore, they represent universal discounts that apply to all sales orders.
     - *Price attribute combination rank* – Discounts of this concurrency mode don't compete based on price. Instead, they compete based on which discount has the highest price attribute combination rank. If multiple discounts have the same highest rank, they all apply to the sales order.
 
@@ -105,7 +103,7 @@ The **Details** FastTab lets you enter more information about the pricing rule. 
 - **Description** – Enter a description of the pricing rule.
 - **Disclaimer** – Enter a disclaimer for the pricing rule.
 - **Text for fiscal receipt** – Enter text that will appear on the related fiscal receipt.
-- **Header price attribute details** – This read-only field summarizes the header price attribute values for the pricing rule. (You can access the header price attribute values by selecting **Header price attribute group** on the Action Pane.) For more information, see the [Set up header price attribute values](#header-attributes) section of this article.
+- **Header price attribute details** – This read-only field summarizes the header price attribute values for the pricing rule. (You can access the header price attribute values by selecting **Header price attribute group** on the Action Pane.) Learn more in the [Set up header price attribute values](#header-attributes) section of this article.
 
 ## Enter information on the Price/discount FastTab
 
@@ -243,7 +241,7 @@ The settings for each line on the **Lines** FastTab vary based on the type of pr
 - **Line group type** – This field shows whether the line applies to a specific group of items or to all items.
 - **Line price attribute group** – If the **Line group type** field is set to *Group*, this field shows the name of the selected [line price attribute group](price-attribute-groups.md).
 - **Price attribute detail** – This field summarizes the values that were set for the line in the **[Edit price attributes](#add-line)** dialog box. To change these values, select **Edit price attribute** on the FastTab toolbar.
-- **Combination rank** – This field shows the combination rank that was generated for the price attribute group combination that was selected for the line in the **[Edit price attributes](#add-line)** dialog box. Rankings enable the system to determine which pricing rule is used if an order or order line qualifies for more than one rule. For more information, see [Price component codes](price-component-code.md).
+- **Combination rank** – This field shows the combination rank that was generated for the price attribute group combination that was selected for the line in the **[Edit price attributes](#add-line)** dialog box. Rankings enable the system to determine which pricing rule is used if an order or order line qualifies for more than one rule. Learn more in [Price component codes](price-component-code.md).
 - **Required line quantity** – For free-item discounts where the **Criteria type** field is set to *Quantity*, enter the minimum quantity that must be ordered to qualify for the discount.
 - **Required line amount** – For free-item discounts where the **Criteria type** field is set to *Amount*, enter the minimum amount that must be ordered to qualify for the discount.
 - **Allow unit conversion** – Select this checkbox to convert the selling unit to the unit that's used for the pricing rule as required.
@@ -272,7 +270,7 @@ If you want to add a note that gives more information about a line on the **Line
 
 ## <a name="header-attributes"></a>Set up header price attribute values
 
-Use header price attributes to control which customers the current pricing rule applies to. The limits apply to all lines and items that the rule applies to. (For more information, see the [Enter information on the Lines and Line details FastTabs](#items-lines) section of this article.) Follow these steps to set the header price attributes for the current pricing rule.
+Use header price attributes to control which customers the current pricing rule applies to. The limits apply to all lines and items that the rule applies to. (Learn more in the [Enter information on the Lines and Line details FastTabs](#items-lines) section of this article.) Follow these steps to set the header price attributes for the current pricing rule.
 
 > [!NOTE]
 > Before you can set header price attributes, you must assign a price component code on the **General** FastTab.

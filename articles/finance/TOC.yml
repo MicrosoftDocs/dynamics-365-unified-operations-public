@@ -14,14 +14,14 @@
               items:
                 - name: What's new or changed in Finance home page
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.41 (September)  
+                  href: get-started/whats-new-changed-10-0-41.md
                 - name: Finance 10.0.40 (June)
                   href: get-started/whats-new-changed-10-0-40.md
                 - name: Finance 10.0.39 (April)
                   href: get-started/whats-new-changed-10-0-39.md
                 - name: Finance 10.0.38 (February)
                   href: get-started/whats-new-changed-10-0-38.md
-                - name: Finance 10.0.37 (November)
-                  href: get-started/whats-new-changed-10-0-37.md
             - name: Removed or deprecated features
               items:
                 - name: Removed or deprecated features home page
@@ -100,6 +100,8 @@
                   href: ../fin-ops-core/dev-itpro/get-started/system-requirements-on-prem.md?context=/dynamics365/context/finance
                 - name: Buy Finance + Operations (on-premises)
                   href: ../fin-ops-core/dev-itpro/get-started/purchase-on-premises.md?context=/dynamics365/context/finance
+            - name: Enable copilot in Dynamics 365 Finance
+              href: accounts-receivable/Enable-copilot-in-finance.md       
             - name: Documentation resources
               items:
                 - name: Help system
@@ -384,6 +386,8 @@
               href: accounts-receivable/tasks/establish-customer-method-payment.md
             - name: Establish customer payment fees
               href: accounts-receivable/tasks/establish-customer-payment-fees.md
+            - name: Customer summary page
+              href: accounts-receivable/CustomerPageSummary.md    
             - name: Customer payment insights
               href: accounts-receivable/payment-insights-overview.md
             - name: Accounts receivable posting
@@ -426,6 +430,8 @@
               href: accounts-receivable/tasks/post-recurring-free-text-invoices.md
             - name: Create sales order invoices
               href: accounts-receivable/tasks/create-sales-order-invoices.md
+            - name: Create customer prepayment invoices
+              href: accounts-receivable/customer-prepayment-invoice.md
             - name: Create a customer invoice
               href: accounts-receivable/configure-customer-invoices.md
             - name: Improve performance of Sales entities
@@ -1088,6 +1094,8 @@
                       href: general-ledger/tasks/create-assign-advanced-rule-structures.md
                     - name: How do I set up balancing financial dimensions?
                       href: general-ledger/set-up-balance-dimensions.md
+                    - name: Default financial dimensions on financial journals
+                      href: general-ledger/dimensions-default-values.md
             - name: Setup
               items:
                 - name: Process allocations
@@ -1192,6 +1200,8 @@
                       href: general-ledger/tasks/post-periodic-journals.md
                     - name: Create and validate journals
                       href: general-ledger/tasks/create-validate-journals.md
+                    - name: Default financial dimensions on finanical journals
+                      href: general-ledger/dimensions-default-values.md
                     - name: Journal posting failure due to imbalance
                       href: general-ledger/posting-fail-imbalance.md
                     - name: Reverse journal posting
@@ -1302,6 +1312,8 @@
                   href: general-ledger/set-up-subsidiary-company-for-consolidation.md
                 - name: Consolidate online
                   href: general-ledger/consolidate-online.md
+                - name: Consolidate online templates
+                  href: general-ledger/Consolidation-templates.md
                 - name: Import subsidiary data from files
                   href: general-ledger/import-subsidiary-data-from-files.md
                 - name: Export subsidiary data to a file
@@ -1662,16 +1674,26 @@
                           href: localizations/global/e-invoicing-country-specific-availability.md?context=/dynamics365/context/finance
                         - name: Australia and New Zealand
                           href: localizations/apac/gs-apac-aus-nzl-electronic-invoices.md?context=/dynamics365/context/finance
+                        - name: Chile
+                          items:
+                            - name: Get started with Electronic invoicing for Chile
+                              href: localizations//iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/finance
+                            - name: Vendor electronic invoice import in Chile
+                              href: localizations//iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/finance
                         - name: Indonesia
                           href: localizations/indonesia/gs-e-invoicing-id-get-started.md?context=/dynamics365/context/finance
-                        - name: Saudi Arabia
-                          href: localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
-                        - name: Saudi Arabia - onboarding
-                          href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
                         - name: Malaysia
                           href: localizations//malaysia/apac-mys-e-invoices.md?context=/dynamics365/context/finance
+                        - name: Panama
+                          href: localizations//iberoamerica/ltm-panama-ei-connec-configuration.md?context=/dynamics365/context/finance                           
                         - name: Poland (preview)
                           href: localizations/poland/gs-e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
+                        - name: Saudi Arabia
+                          items:
+                            - name: Electronic invoicing in Saudi Arabia
+                              href: localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
+                            - name: Onboarding for electronic invoicing in Saudi Arabia
+                              href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
                     - name: Electronic Invoicing FAQ
                       href: localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/finance
                 - name: Electronic Invoicing (RCS)
@@ -2310,10 +2332,12 @@
                   items:
                     - name: Chile overview
                       href: localizations/iberoamerica/chile.md
-                    - name: Configure connections for Chilean electronic invoicing
+                    - name: Get started with Electronic invoicing for Chile
                       href: localizations/iberoamerica/ltm-chile-elec-invo-conncection.md
                     - name: Configure electronic invoice parameters for Chile
                       href: localizations/iberoamerica/ltm-chile-conf-electronic-invoice.md
+                    - name: Vendor electronic invoice import in Chile
+                      href: localizations/iberoamerica/ltm-chl-vend-e-invoice.md                      
                     - name: Generate and print the Fees certificate report
                       href: localizations/iberoamerica/ltm-chile-fees-certificate-resume.md
                     - name: Generate and print the Withholding tax book report for Chile
@@ -2850,42 +2874,6 @@
                       href: localizations/india/india.md
                     - name: Scope of the Indian localizations
                       href: localizations/india/apac-ind-scope.md
-                    - name: What's new or changed for India localization
-                      items:
-                        - name: What's new or changed in 10.0.20 - 10.0.22
-                          href: localizations/india/ind-news-letter-10-0-20-22.md
-                        - name: What's new or changed in 10.0.15 - 10.0.19
-                          href: localizations/india/ind-news-letter-10-0-15-19.md
-                        - name: What's new or changed in 10.0.14
-                          href: localizations/india/apac-ind-news-letter-10-0-14.md
-                        - name: What's new or changed in 10.0.13
-                          href: localizations/india/ind-news-letter-10-0-13.md
-                        - name: What's new or changed in 10.0.12
-                          href: localizations/india/apac-ind-news-letter-10-0-12.md
-                        - name: What's new or changed in 10.0.11
-                          href: localizations/india/apac-ind-news-letter-10-0-11.md
-                        - name: What's new or changed in 10.0.10
-                          href: localizations/india/apac-ind-news-letter-10-0-10.md
-                        - name: What's new or changed in 10.0.09
-                          href: localizations/india/apac-ind-news-letter-10-0-09.md
-                        - name: What's new or changed in 10.0.08
-                          href: localizations/india/apac-ind-news-letter-10-0-08.md
-                        - name: What's new or changed in 10.0.07
-                          href: localizations/india/apac-ind-news-letter-10-0-07.md
-                        - name: What's new or changed in 10.0.06
-                          href: localizations/india/apac-ind-news-letter-10-0-06.md
-                        - name: What's new or changed in 10.0.05
-                          href: localizations/india/apac-ind-news-letter-10-0-05.md
-                        - name: What's new or changed in 10.0.04
-                          href: localizations/india/apac-ind-news-letter-10-0-04.md
-                        - name: What's new or changed in 10.0.03
-                          href: localizations/india/apac-ind-news-letter-10-0-03.md
-                        - name: What's new or changed in 10.0.02
-                          href: localizations/india/apac-ind-news-letter-10-0-02.md
-                        - name: What's new or changed in 10.0.01
-                          href: localizations/india/apac-ind-news-letter-10-0-01.md
-                        - name: What's new or changed in 10.0.0
-                          href: localizations/india/apac-ind-news-letter-10-0-00.md
                     - name: Audit trail and edit logs for accounting software
                       href: localizations/india/apac-ind-audit-trail-edit-logs-accounting-software.md
                     - name: Electronic invoices in India
@@ -3549,7 +3537,7 @@
                     - name: Post packing slips for Latin America
                       href: localizations/iberoamerica/ltm-core-packing-slip-posting.md
                     - name: Configure journal names for Latin America
-                      href: localizations/iberoamerica/ltm-core-journal-name-configuration..md
+                      href: localizations/iberoamerica/ltm-core-journal-name-configuration.md
                     - name: Value query for Latin America
                       href: localizations/iberoamerica/ltm-core-value-query.md
                     - name: Configure electronic document references
@@ -3756,7 +3744,7 @@
                       href: localizations/iberoamerica/panama.md
                     - name: Set up a legal entity and tax information for Panama
                       href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-panama.md
-                    - name: Set up electronic invoicing for Panama
+                    - name: Get started with Electronic invoicing for Panama
                       href: localizations/iberoamerica/ltm-panama-ei-connec-configuration.md
                     - name: Configure electronic invoice parameters for Panama
                       href: localizations/iberoamerica/ltm-panama-elect-inv-conf.md
@@ -4273,7 +4261,7 @@
                     - name: Uruguay overview
                       href: localizations/iberoamerica/uruguay.md
                     - name: Configure sales and purchase invoices for Uruguay
-                      herf: localizations/iberoamerica/ltm-configure-invoices-uruguay.md
+                      href: localizations/iberoamerica/ltm-configure-invoices-uruguay.md
                     - name: Create customer and vendor records with an address in Uruguay
                       href: localizations/iberoamerica/ltm-create-customer-vendor-uruguay.md
                     - name: Set up a legal entity and tax information for Uruguay
@@ -4433,24 +4421,34 @@
           items:
             - name: Business performance analytics
               href: business-performance-analytics/business-performance-analytics-home-page.md
-            - name: Install prerequisites for business performance analytics
-              href: business-performance-analytics/configure-BPA.md
-            - name: Install business performance analytics
-              href: business-performance-analytics/install-bpa.md
-            - name: Business performance analytics data model
-              href: business-performance-analytics/business-performance-analytics-data-model.md
-            - name: Set up security in business performance analytics
-              href: business-performance-analytics/set-up-security.md
-            - name: Access business performance analytics
-              href: business-performance-analytics/access-bpa.md
+            - name: Setup and administration
+              items: 
+                - name: Configure business performance analytics
+                  href: business-performance-analytics/configure-BPA.md
+                - name: Install business performance analytics
+                  href: business-performance-analytics/install-bpa.md
+                - name: Configure security in business performance analytics
+                  href: business-performance-analytics/set-up-security.md
+            - name: Key concepts in business performance analytics
+              items:
+                - name: Business performance analytics data model
+                  href: business-performance-analytics/business-performance-analytics-data-model.md
+            - name: Use business performance analytics
+              items:
+                - name: Access business performance analytics
+                  href: business-performance-analytics/access-bpa.md
+                - name: Business performance analytics Microsoft reports
+                  href: business-performance-analytics/Reports-in-BPA.md 
+                - name: Create business performance analytics reports
+                  href: business-performance-analytics/how-to-create-and-edit-reports.md  
+                - name: Business performance analytics Excel add-in
+                  href: business-performance-analytics/bpa-excel.md     
+            - name: Extend business performance analytics
+              items:             
+                - name: Extend business performance analytics in Microsoft Fabric 
+                  href: business-performance-analytics/bpa-fabric.md      
             - name: Business performance analytics FAQ
               href: business-performance-analytics/bpa-faq.md
-            - name: Business performance analytics reports
-              href: business-performance-analytics/Reports-in-BPA.md
-            - name: Create business performance analytics reports
-              href: business-performance-analytics/how-to-create-and-edit-reports.md
-            - name: Business performance analytics Excel add-in
-              href: business-performance-analytics/bpa-excel.md
         - name: Business performance planning
           items:
             - name: Business performance planning overview
@@ -4463,6 +4461,8 @@
               href: business-performance-planning/powerBI-visual-install.md
             - name: Install the Excel add-in
               href: business-performance-planning/install-excel-add.md
+            - name: Security
+              href: business-performance-planning/bpp-security.md
             - name: Dimensions
               items:
                 - name: Creating and maintaining dimensions
@@ -5365,6 +5365,8 @@
           items:
             - name: US Payroll overview
               href: ../fin-ops-core/fin-ops/hr/localizations/usa/noam-usa-payroll.md
+            - name: Deprecation of US payroll tax updates
+              href: ../fin-ops-core/fin-ops/hr/localizations/usa/noam-usa-deprecate-payroll-tax.md           
             - name: Payroll setup
               items:
                 - name: Set up payroll for workers
@@ -5443,8 +5445,6 @@
                   href: ../fin-ops-core/dev-itpro/financial/dimensions.md
                 - name: Add dimensions to Excel templates
                   href: ../fin-ops-core/dev-itpro/financial/dimensions-overview.md
-                - name: Support for Dimension Entry controls on dialogs
-                  href: ../fin-ops-core/dev-itpro/financial/dimension-entry-control-dialog-support.md
                 - name: Migrate default dimensions controls to Dimension Entry controls
                   href: ../fin-ops-core/dev-itpro/financial/dimension-entry-control-migration.md
                 - name: Uptake of Dimension Entry controls
@@ -5487,6 +5487,10 @@
           href: ../finance/transparency-note.md
         - name: Collections coordinator summary FAQ
           href: accounts-receivable/collections-coordinator-summary-faq.md
+        - name: Customer page summary FAQ
+          href: accounts-receivable/customerpagesummaryfaq.md
+        - name: Workflow history summary FAQ
+          href: ../fin-ops-core/fin-ops/copilot/workflow-history-summary-faq.md
     - name: Development and administration for finance and operations apps
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Supply Chain Management

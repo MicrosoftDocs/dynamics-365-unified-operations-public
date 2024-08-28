@@ -26,7 +26,7 @@ The **Collections coordinator workspace** and **Collections coordinator summary*
 > [!NOTE]
 > In Dynamics 365 Finance version 10.0.40 and later, and in the proactive quality update (PQU) for version 10.0.39, the **Collections coordinator workspace** and **Collections coordinator summary** features are turned on by default in Feature management. If they aren't set to **On by default**, you must enable them in Feature management.
 
-The **Collections coordinator** workspace can be used either with or without its AI-powered copilot functionality. To use the copilot functionality in the workspace, you must install the **Copilot in Microsoft Dynamics 365 Finance** app in your Dataverse environment. For more information, see [Enable Copilot in Microsoft Dynamics 365 Finance](Enable-copilot-in-finance.md).
+The **Collections coordinator** workspace can be used either with or without its AI-powered copilot functionality. To use the copilot functionality in the workspace, you must install the **Copilot in Microsoft Dynamics 365 Finance** app in your Dataverse environment. For more information, see [Copilot prerequisites](Enable-copilot-in-finance.md).
 
 Use this feature to get an AI-generated summary of a customer's overdue invoices, payment history, and remaining credit in the **Collections coordinator** workspace, and to get an AI-generated draft of a reminder email. This feature is powered by Azure OpenAI Service's large language model and is designed to reduce the time that you must spend reviewing collections details for your customers. 
 

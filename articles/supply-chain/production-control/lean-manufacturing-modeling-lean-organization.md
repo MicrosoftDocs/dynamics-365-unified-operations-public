@@ -6,12 +6,7 @@ ms.author: johanho
 ms.topic: article
 ms.date: 09/24/2018
 ms.reviewer: kamaybac
-audience: Application User
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: LeanProductionFlow, PlanActivity, KanbanFlowSelection, KanbanFlow
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 4f272f2f-ec2c-4b0d-a652-00a63b719b9e
 ---
 

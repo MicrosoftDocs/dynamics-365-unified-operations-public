@@ -3,10 +3,11 @@ title: Set up number sequences by warehouse
 description: Learn about setting up number sequences for purchase product receipts and sales packing slips by warehouse for Poland, including a step-by-step process.
 author: AdamTrukawka
 ms.author: atrukawk
-ms.topic: article
-ms.date: 09/11/2018
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 07/11/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Poland
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1

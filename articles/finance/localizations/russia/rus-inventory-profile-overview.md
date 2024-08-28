@@ -1,12 +1,13 @@
 ---
 title: Inventory profile overview
 description: Learn about the inventory profile which is intended for the implementation of and accounting for movements and on-hand inventory as they relate to activities.
-author: AdamTrukawka
-ms.author: atrukawk
+author: evgenypopov
+ms.author: evgenypopov
 ms.topic: overview
-ms.date: 05/11/2020
+ms.custom: 
+  - bap-template
+ms.date: 06/27/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Russia
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1

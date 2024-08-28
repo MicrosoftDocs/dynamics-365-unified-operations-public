@@ -7,11 +7,7 @@ ms.topic: how-to
 ms.date: 07/20/2023
 ms.custom:
 ms.reviewer: kamaybac   
-audience: Application User 
-ms.search.region: Global
-ms.search.validFrom: 2016-06-30
 ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, InventItemGTIN, UnitOfMeasureLookup 
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Enter the GTIN code for a product

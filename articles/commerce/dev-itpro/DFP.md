@@ -41,7 +41,7 @@ Starting October 2020, a limited capacity of Fraud Protection is included in the
 
 You have the option of purchasing additional Fraud Protection add-ons if your usage requires higher limits. 
 
-To start using Fraud Protection if you are an existing Commerce customer, visit the [Fraud Protection portal](https://dfp.microsoft.com/), sign in with tenant global administrator credentials, and complete a one-time setup for your environment.
+To start using Fraud Protection if you are an existing Commerce customer, visit the [Fraud Protection portal](https://dfp.microsoft.com/), sign in with tenant administrator credentials, and complete a one-time setup for your environment.
 
 ## Purchase protection in Commerce
 
@@ -84,7 +84,7 @@ Purchase status events resemble bank events. After an order is created in the Co
 
 ### Setup
 
-After the merchant's Fraud Protection environment is available and purchase protection settings have been configured, you can continue the setup in Commerce headquarters. If the environment isn't configured yet, to complete the configuration, sign in to the [Fraud Protection portal](https://dfp.microsoft.com/) with tenant global administrator credentials.
+After the merchant's Fraud Protection environment is available and purchase protection settings have been configured, you can continue the setup in Commerce headquarters. If the environment isn't configured yet, to complete the configuration, sign in to the [Fraud Protection portal](https://dfp.microsoft.com/) with tenant administrator credentials.
 
 #### Key Vault setup
 
