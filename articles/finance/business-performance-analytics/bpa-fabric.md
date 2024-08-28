@@ -89,32 +89,34 @@ If you no longer need the shortcuts, select **Unlink** on the **Manage** page in
  
 ## Extend the Business performance analytics dataset with your own data sources
 
-The following steps highlight how you can create a custom Power BI dataset which extends the Business performance analytics dataset with your own data sources. This functionality enables you to leverage the Business performance analytics dataset as part of your own reporting capabilities within Power BI and create more comprehensive and tailored reports that leverage the power of Business performance analytics and your own customized business insights.
+This section shows how you can create a custom Power BI dataset that extends the Business performance analytics dataset with your own data sources. This functionality lets you use the Business performance analytics dataset as part of your own reporting capabilities in Power BI. In this way, you can create more comprehensive and tailored reports that harness the power of Business performance analytics and your own customized business insights.
 
-### Publish the Business performance analytics dataset in Power BI desktop to Microsoft Fabric 
+### Publish the Business performance analytics dataset in Power BI Desktop to Fabric
 
-1. As a prerequisite to this step, it is assumed that you have completed the steps above to link Business performance analytics to Microsoft Fabric.
-2. Open Power BI desktop and import the dataset Power BI file. You will be prompted for an organization URL, and you maybe prompted to sign in. You should sign in as the user who initiated the Fabric link.
-3. Validate the Business performance analytics dataset imported to Power BI Desktop has refreshed successfully. You will get a confirmation of a successful refresh, and you will be able to select fact or dimensions and view data in a report view.
-4. In Power BI desktop, select **Publish**, save any changes made and choose a destination to publish to. You may choose the same workspace you have already been working with, or another workspace. Select the workspace to publish the dataset. 
+> [!NOTE]
+> Before you begin this procedure, you must link Business performance analytics data to your Fabric workspace as described earlier in this article.
 
-### Use the Business performance analytics dataset as part of a custom data set 
+1. Open Power BI Desktop, and import the dataset Power BI file. You're prompted for an organization URL. If you're prompted to sign in, sign in as the user who initiated the Fabric link.
+2. Validate that the Business performance analytics dataset that you imported into Power BI Desktop was successfully refreshed. You receive confirmation of a successful refresh. You can then select fact or dimensions, and view data in a report view.
+3. In Power BI Desktop, select **Publish**, save any changes that you made, and select the destination to publish the dataset to. You can select either the same workspace that you've already been working with or a different workspace.
 
-1. Within Power BI desktop, choose **File** > **New** > **Blank report**. 
-2. Click **Det data** > **Power BI semantic model**.
-3. Select the Business performance analytics dataset that was just published to the selected workspace.
-4. Click **Connect**. 
-5. Follow any authentication prompts that appear, signing in as the same user who published the Business performance analytics dataset to Microsoft Fabric. Once complete, validate that data is refreshing from the data set.  
-6. You receive an initial prompt to indicate the refresh is in progress, and you will then get a notification of a successful or unsuccessful refresh outcome. 
-7. You now have a dataset that can be extended to include other data sources. To choose a dataset, click **Get data** and select the appropriate option. As an example, the below steps illustrates connecting to a second Lakehouse. 
-8. Return to Microsoft fabric and locate the additional Lakehouse to include in the custom dataset. Look for the SQL analytical endpoint nested under the Lakehouse, and choose the three horizontal dots next to the name, and select **Copy SQL connection string**. 
-9. Return to Power BI Desktop. Choose **Get data** > **SQL server**. 
-10. You're prompted that a Direct Query connection is required, click **Add a local model**. 
-11. Within the prompt that appears, select the entire dataset and click **Submit**. 
-12. You're prompted for the server. Enter the SQL server connection string you copied in Microsoft Fabric. 
-13. Select **Direct query**, click **OK**. 
-14. Locate the custom Lakehouse you added earlier, expand it, and select the tables you to include.
-15. Click **Load**.
-16. Click **OK**’ for the potential security risk warning.
-17. You should see the new data loading.
-18. Click **File** > **Save** to save the new dataset as a PBIX file. 
+### Use the Business performance analytics dataset as part of a custom dataset
+
+1. In Power BI Desktop, select **File** \> **New** \> **Blank report**.
+2. Select **Det data** \> **Power BI semantic model**.
+3. Select the Business performance analytics dataset that you published to the selected workspace.
+4. Select **Connect**.
+5. Follow any authentication prompts that appear. Sign in as the same user who published the Business performance analytics dataset to Fabric.
+6. Validate that data is being refreshed from the dataset. You receive an initial notification that the refresh is in progress. You then receive a notification that indicates whether the refresh was successful or unsuccessful.
+7. You now have a dataset that you can extend so that it includes other data sources. To select a dataset, select **Get data**, and then select the appropriate option. As an example, the steps that follow show how to connect to a second lakehouse.
+8. In your Fabric workspace, find the second lakehouse that you want to include in the custom dataset, and then find the SQL analytics endpoint that is nested under it. Select the ellipsis (**&hellip;**) next to the name of the endpoint, and then select **Copy SQL connection string**.
+9. In Power BI Desktop, select **Get data** \> **SQL server**.
+10. When you're notified that a Direct Query connection is required, select **Add a local model**.
+11. In the prompt that appears, select the entire dataset, and then select **Submit**.
+12. When you're prompted for the server, enter the SQL Server connection string that you copied earlier.
+13. Select **Direct query**, and then select **OK**.
+14. Find the custom lakehouse that you added earlier, expand it, and select the tables to include.
+15. Select **Load**.
+16. When you're warned about the potential security risk, select **OK**.
+17. You should notice that the new data is being loaded.
+18. Select **File** \> **Save** to save the new dataset as a PBIX file.
