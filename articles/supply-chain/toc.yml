@@ -1773,6 +1773,8 @@
           href: inventory/inventory-visibility-dashboard.md
         - name: Inventory Visibility public APIs
           href: inventory/inventory-visibility-api.md
+        - name: Sync external inventory adjustments through Inventory Visibility (preview)
+          href: inventory/inventory-visibility-sync-changes.md
         - name: Inquire into inventory with Copilot (preview)
           href: inventory/inventory-visibility-copilot-api.md
         - name: Log and view successful API posts
