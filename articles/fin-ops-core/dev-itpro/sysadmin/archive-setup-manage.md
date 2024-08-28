@@ -62,9 +62,7 @@ To archive data, follow these steps to confirm that the Dataverse archive add-in
 2. Update the **Finance and operations virtual entity** app if the status is **Update available**.
 3. If the **Dynamics 365 finance and operations platform tools** app isn't installed in Power Platform admin center for the selected environment, install it.
 4. Install **Dynamics 365 Archive with Dataverse long term retention** from the Power Platform admin center.
-5. Select **Install App**.
-6. Search for and select **Dynamics 365 Archive with Dataverse long term retention (Preview)**.
-7. Select **Install**. If you already have the app installed, you should install the latest update.
+5. If you already have the app installed, you should install the latest update.
 
 ### Enable finance and operations data archival with Dataverse long-term retention
 
