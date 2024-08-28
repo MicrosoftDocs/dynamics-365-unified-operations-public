@@ -482,7 +482,7 @@ To activate batch submission of invoices, enable the **Electronic document batch
 
 ### Configure electronic document parameters
 
-Import the **Consolidated Invoice Model Mapping (MY)** Electronic Reporting configuration from the Dataverse repository. For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+Import the **Consolidated Invoice Model Mapping (MY)** Electronic Reporting configuration from the repository. For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 To configure electronic document parameters for batch submissions, follow these steps.
 
