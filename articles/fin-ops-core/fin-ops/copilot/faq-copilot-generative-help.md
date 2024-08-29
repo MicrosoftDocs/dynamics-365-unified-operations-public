@@ -6,6 +6,7 @@ ms.collection:
   - bap-ai-copilot
 ms.custom:
   - responsible-ai-faqs
+  - copilot-learning-hub
 ms.topic: article
 author: cabeln
 ms.author: cabeln
