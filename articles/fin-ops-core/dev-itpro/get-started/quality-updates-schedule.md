@@ -3,11 +3,10 @@ title: Release schedule for proactive quality updates
 description: Learn about the release schedule for proactive quality updates (PQUs), including an outline on station-to-region mapping. 
 author: rashmansur
 ms.author: rashmim
-ms.topic: article
-ms.date: 07/22/2024
+ms.topic: conceptual
+ms.date: 08/29/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2022-08-19
 ms.dyn365.ops.version: 10.0.29
