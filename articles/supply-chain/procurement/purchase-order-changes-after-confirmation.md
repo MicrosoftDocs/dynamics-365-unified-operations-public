@@ -9,7 +9,7 @@ ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.collection:
   - bap-ai-copilot
-ms.search.form: PurchTable, PurchTablePart, PurchOrderInReview, PurchOrderApproved, PurchOrderInDraft, PurchOrderAssignedToMe, VendPurchOrderJournalListPage, PurchTableWorkflowDropDialog, VendPurchOrderJournal
+ms.search.form: PurchTableChangeReviewWorkspace
 ---
 
 # Review and accept changes to confirmed purchase orders
