@@ -101,7 +101,7 @@ To run the import of vendor electronic invoices, follow these steps.
 2. On the **Electronic report parameters** page, on the **File source** FastTab, in the **Source settings** field, select the source location for batch mode import. If no source is defined for batch import, the system prompts you to select a single file for import.
 
 > [!NOTE]
-> Empty description.
+> Leave the **Description** field empty.
 
 ![Screenshot that shows empty description before the import.](emea-e-invoice-import-description.jpg)
 
