@@ -5493,6 +5493,8 @@
           href: accounts-receivable/customerpagesummaryfaq.md
         - name: Workflow history summary FAQ
           href: ../fin-ops-core/fin-ops/copilot/workflow-history-summary-faq.md
+        - name: Generative help and guidance in Business performance analytics FAQ
+          href: business-performance-analytics/responsible-ai-faq.md  
     - name: Development and administration for finance and operations apps
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Supply Chain Management
