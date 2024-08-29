@@ -144,6 +144,23 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | August 26 to August 29, 2024 | September 7 to September 8, 2024 |
 | Station 6 | August 27 to August 30, 2024 | September 7 to September 8, 2024 |
 
+### <a name="schedule"></a>[NEW] Proactive quality update upcoming 10.0.39 Release-6 train schedule
+
+**App version: 10.0.1860.183**
+
+**Platform version: 7.0.7198.196**
+
+**Unified Environment Provisioning Application Version: 10.0.39.10**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | September 2 to September 5, 2024 | NA |
+| Station 2 | September 9 to September 12, 2024 | September 21 to September 22, 2024 |
+| Station 3 | September 10 to September 13, 2024 | September 21 to September 22, 2024 |
+| Station 4 | September 16 to September 19, 2024 | September 28 to September 29, 2024 |
+| Station 5 | September 23 to September 26, 2024 | October 5 to October 6, 2024 |
+| Station 6 | September 24 to September 27, 2024 | October 5 to October 6, 2024 |
+
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.40 Release-2 train schedule
 
 **App version: 10.0.1935.92**
