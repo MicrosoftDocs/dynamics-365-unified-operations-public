@@ -6,6 +6,7 @@ description: Responsible AI FAQs provide information about the AI technology use
 ms.date: 06/13/2024
 ms.custom: 
   - responsible-ai-faqs
+  - copilot-learning-hub
 ms.topic: overview
 author: v-chgri
 ms.author: v-chrgriffin
