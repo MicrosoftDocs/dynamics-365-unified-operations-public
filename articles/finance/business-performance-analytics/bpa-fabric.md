@@ -103,7 +103,7 @@ This section shows how you can create a custom Power BI dataset that extends the
 ### Use the Business performance analytics dataset as part of a custom dataset
 
 1. In Power BI Desktop, select **File** \> **New** \> **Blank report**.
-2. Select **Det data** \> **Power BI semantic model**.
+2. Select **Get data** \> **Power BI semantic model**.
 3. Select the Business performance analytics dataset that you published to the selected workspace.
 4. Select **Connect**.
 5. Follow any authentication prompts that appear. Sign in as the same user who published the Business performance analytics dataset to Fabric.
