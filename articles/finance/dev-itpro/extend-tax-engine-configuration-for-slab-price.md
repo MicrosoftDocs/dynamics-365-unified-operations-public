@@ -24,15 +24,15 @@ This article describes how to extend the Tax engine configuration for slab price
 2. Go to the **Electronic reporting** workspace.
 3. Click **Tax configurations**.
 4. Navigate to the **Taxable Document (India)** configuration, and then click **Create configuration**.
-5. Select **Taxable document model derived from Name: Taxable Document (India), Microsoft** option, and then enter a name and description for the derived taxable document.
+5. Select **Taxable document model derived from Name: Taxable Document (India), Microsoft** option, and then enter a name (i.e., **Taxable Document (India Contoso)**) and description for the derived taxable document.
 6. Click **Create configuration** and create a new tax document that is derived from Tax (India GST).
 7. Go to **Tax (India GST)** configuration, and click **Create configuration**.
 8. Select **Tax configuration derived from Name: Tax (India GST), Microsoft** option.
-9. Enter a name and description for the derived tax document.
+9. Enter a name (i.e., **Tax (India GST Contoso)**) and description for the derived tax document.
 10. Click **Create configuration**.
 
 
-### Add the net price to taxable document India (India Contoso)
+### Add the net price to Taxable Document (India Contoso)
 1. Go to **Taxable Document (India Contoso)** configuration, and click **Designer**.
 2. Navigate to **Tax document > Header > Lines**, and click **New** to create a new node.
 3. Enter a name for the node, and select the item type:
