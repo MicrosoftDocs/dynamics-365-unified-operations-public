@@ -24,60 +24,27 @@ This article describes how to extend the Tax engine configuration for slab price
 2. Go to the **Electronic reporting** workspace.
 3. Click **Tax configurations**.
 4. Navigate to the **Taxable Document (India)** configuration, and then click **Create configuration**.
-
-   ![TaxableDocumentIndiaCreateConfiguration](../general-ledger/media/TaxableDocumentIndiaCreateConfiguration.png)
-   
 5. Select **Taxable document model derived from Name: Taxable Document (India), Microsoft** option, and then enter a name and description for the derived taxable document.
-
-   ![TaxableDocumentIndiaDeriveConfiguration](../general-ledger/media/TaxableDocumentIndiaDeriveConfiguration.png)
-   
 6. Click **Create configuration** and create a new tax document that is derived from Tax (India GST).
 7. Go to **Tax (India GST)** configuration, and click **Create configuration**.
-
-   ![TaxIndiaGSTCreateConfiguration](../general-ledger/media/TaxIndiaGSTCreateConfiguration.png)
-   
 8. Select **Tax configuration derived from Name: Tax (India GST), Microsoft** option.
 9. Enter a name and description for the derived tax document.
 10. Click **Create configuration**.
 
-    ![TaxIndiaGSTDeriveConfiguration](../general-ledger/media/TaxIndiaGSTDeriveConfiguration.png)
 
 ### Add the net price to taxable document India (India Contoso)
 1. Go to **Taxable Document (India Contoso)** configuration, and click **Designer**.
-
-   ![TaxableDocumentDesigner](../general-ledger/media/TaxableDocumentDesigner.png)
-   
 2. Navigate to **Tax document > Header > Lines**, and click **New** to create a new node.
 3. Enter a name for the node, and select the item type:
    - **Name:** Net Price
    - **Item type:** Real
-
-     ![CreateNewLineFieldOnTaxConfiguration](../general-ledger/media/CreateNewLineFieldOnTaxConfiguration.png)
-     
+  
 4. Open **Map model to datasource** to bind **Net Price** with data model.
-
-   ![OpenMapModelToDataSource](../general-ledger/media/OpenMapModelToDataSource.png)
-   
 5. Here takes sales order as an example, select **Sales order document type** and open **Designer**.
-
-   ![OpenSalesOrderModelDesigner](../general-ledger/media/OpenSalesOrderModelDesigner.png)
-   
 6. Expand the **DATA MODEL > Header = 'Sales order'.Header > Lines = 'Sales order'.Header.Lines**, find the **Net price** and click **Edit**.
-
-   ![OpenEditNetPriceFormulaDesigner](../general-ledger/media/OpenEditNetPriceFormulaDesigner.png)
-   
 7. Click **Go to @**, and find the **Net Price**.
-
-   ![ExpandDataSourceFields](../general-ledger/media/ExpandDataSourceFields.png)
-   
 8. Add **Net Price** formula.
-
-   ![AddNetPriceFormula](../general-ledger/media/AddNetPriceFormula.png)
-
 9. In the **Configurations** workspace, click **Change status**, and select **Complete**.
-
-    ![CompleteTaxableDocumentIndiaConfigurationExtension](../general-ledger/media/CompleteTaxableDocumentIndiaConfigurationExtension.png)
-   
 10. Enter a description such as **Slab price**, and click **OK**.
 11. If there are any errors, open the designer, click **Validate**, and fix the errors.
 
@@ -85,22 +52,13 @@ After the status is updated to **Complete**, the configuration is ready for depl
 
 ### Change the data model of Tax (India GST Contoso)
 1. Navigate to the **Tax (India GST Contoso)** configuration, and then click **Designer**.
-
-   ![TaxIndiaGSTDesigner](../general-ledger/media/TaxIndiaGSTDesigner.png)
-   
 2. Click **Tax document**, and then select **Taxable Document (India Contoso)** as the data model and **1** as the data model version.
-
-   ![ChangeTaxIndiaGSTDataModel](../general-ledger/media/ChangeTaxIndiaGSTDataModel.png)
-   
 3. Click **Save** to save the configuration.
 
 ### Modify rate/percentage lookups
 1. Expand the **CGST** tax component node.
 2. Select the measure of the **Rate**.
 3. Go to **Lookups** tab, click **Columns** to add **Net Price** as condition of rate table.
-
-   ![AddNetPriceToTaxSetupCondition](../general-ledger/media/AddNetPriceToTaxSetupCondition.png)
-   
 4. Select the same attributes that SGST uses.
 
 > [!NOTE]
@@ -111,9 +69,6 @@ After the status is updated to **Complete**, the configuration is ready for depl
 ### Complete the tax document configuration
 1. Save the configuration, and close the designer.
 2. In the **Configurations** workspace, click **Change status**, and select **Complete**.
-
-   ![CompleteTaxIndiaGSTConfigurationExtension](../general-ledger/media/CompleteTaxIndiaGSTConfigurationExtension.png)
-   
 3. Enter a description such as **Slab price**, and click **OK**.
 4.  If there are any errors, open the designer, click **Validate**, and fix the errors.
 
@@ -123,38 +78,24 @@ After the status is updated to **Complete**, the configuration is ready for depl
 1. Go to **Tax > Setup > Tax configuration > Tax setup**.
 2. Select the current working tax setup.
 3. Click **Configurations**.
-
-   ![OpenConfigurationsOnTaxSetup](../general-ledger/media/OpenConfigurationsOnTaxSetup.png)
-   
 4. Click the **Tax configuration** tab > **Available configurations**, click **New** to create a tax configuration.
-
-   ![CreateNewConfigurationOnTaxSetup](../general-ledger/media/CreateNewConfigurationOnTaxSetup.png)
 
 > [!NOTE]
 > Any tax configurations that you add are listed in the **Available configurations** grid.
 
  5. Select the required configuration (for example, **Tax (India GST Contoso)** and version (for example, **1**)), and then click **Save** and **Synchronize**.
 
-    ![SyncTaxConfiguration](../general-ledger/media/SyncTaxConfiguration.png)
-
 > [!NOTE]
 > If you want to copy the tax setup data from original configuration, you can check the **Copy tax setup data from** button and choose the configuration you want to copy.
 
 6. Click **Activate**.
-
-   ![ActivateTaxConfiguration](../general-ledger/media/ActivateTaxConfiguration.png)
-   
 7. Back to **Tax setup** page and go to the **Companies** FastTab.
 8. Click **New** and then select **INMF** in the **Companies** field.
 9. Click **Save**.
 10. Click **Activate** to activate the configuration for the company.
-
-    ![ActivateTaxSetup](../general-ledger/media/ActivateTaxSetup.png)
-    
 11. Click **Setup** to set up data for the new version.
 12. Setup tax rate as per business requirement as below.
 
-    ![TaxRateNetPriceConditionSetup](../general-ledger/media/TaxRateNetPriceConditionSetup.png)
  
 ## Modify the data provider in Microsoft Dynamics AX
 ### Implement logic to determine Net Price
@@ -188,8 +129,7 @@ After the status is updated to **Complete**, the configuration is ready for depl
    ```
    this.addFieldValue(_lineObj, TaxEngineModelFields::NetPrice, taxModelDocLineBaseImpl.getNetPrice());
    ```
-   
-   ![AddNetPriceFieldToDataProvider](../general-ledger/media/AddNetPriceFieldToDataProvider.png)
+
 
 2. Add the Net Price to the method `TaxableDocumentRowDataProviderLine_IN_Extension.initValidFields()`.
 
