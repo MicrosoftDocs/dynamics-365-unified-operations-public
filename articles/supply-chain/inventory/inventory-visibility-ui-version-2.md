@@ -60,7 +60,8 @@ If you're switching to UI version 2, you'll probably want to migrate your UI ver
 
 ## Migrate configuration settings from UI version 1 to UI version 2
 
-When you switch from UI version 1 to UI version 2, Inventory Visibility is updated and uses only configuration values from the Dataverse entities that correspond to UI version 2. You can still read and update the old (legacy) Dataverse entities by using the pages from UI version 1. However, changes to the settings have no effect unless you switch the whole app back to UI version 1. While UI version 2 is active, only the settings that you configure on the UI version 2 pages are used. To view and edit the legacy settings from UI version 1, open the Inventory Visibility menu at the bottom of the navigation pane, and then select **Legacy UI**. 
+When you switch from UI version 1 to UI version 2, Inventory Visibility is updated and uses only configuration values from the Dataverse entities that correspond to UI version 2. You can still read and update the old (legacy) Dataverse entities by using the pages from UI version 1. However, changes to the settings have no effect unless you switch the whole app back to UI version 1. While UI version 2 is active, only the settings that you configure on the UI version 2 pages are used. To view and edit the legacy settings from UI version 1, open the Inventory Visibility menu at the bottom of the navigation pane, and then select **Legacy UI**.
+
 After you switch to UI version 2, you can migrate your previous UI version 1 settings to the new Dataverse entities that are used by UI version 2. Although you can switch back to UI version 1 at any time, you can't migrate settings from UI version 2 to UI version 1. If you switch back to UI version 2 after you've been working in UI version 1 for a while, you can remigrate your UI version 1 settings. However, only newly created records are migrated. Updated and deleted records aren't replicated. Therefore, all your previous UI version 2 settings are kept.
 
 To migrate your settings from UI version 1 to UI version 2, follow these steps.
@@ -70,3 +71,5 @@ To migrate your settings from UI version 1 to UI version 2, follow these steps.
 1. On the **Migrate entities to V2** tile, select **Manage**.
 1. In the dialog box that appears, enter the credentials that you used when you installed the Inventory Visibility service, and then select **Login**.
 1. The system copies your existing settings from UI version 1 to UI version 2.
+
+For a more detailed migration guide with screenshots and troubleshooting tips, see [Migrate Configuration Settings from UI Version 1 to UI Version 2](https://github.com/microsoft/Inventory-Visibility-Add-in-Examples/blob/main/Troubleshooting%20Guide/Migrate%20Configuration%20Settings%20from%20UI%20Version%201%20to%20UI%20Version%202.md) in the [Inventory Visibility Add-in Examples](https://github.com/microsoft/Inventory-Visibility-Add-in-Examples) repo on GitHub.
