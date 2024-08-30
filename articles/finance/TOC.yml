@@ -1218,7 +1218,7 @@
                       href: general-ledger/allow-edits-internal-data-gl-vouchers.md
                     - name: View a related intercompany voucher from a journal
                       href: general-ledger/tasks/view-related-intercompany-voucher-journal.md
-                    - name: Intercompany journals: Dimension values on multi-line vs single line journal
+                    - name: Dimension values on multi-line vs single line intercompany journal
                       href: general-ledger/intercompany-journal.md
                     - name: Publish journal lines and documents from Excel
                       href: general-ledger/open-lines-excel-journals-documents.md
