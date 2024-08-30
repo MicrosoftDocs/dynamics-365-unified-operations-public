@@ -26,7 +26,7 @@ Before you complete the tasks in this article, the following prerequisites must 
 1. The primary address of the legal entity must be in Chile.
 1. Ensure that the settings for the Chilean legal entity are in place. For more information, see [Set up legal entity and tax information for Chile](ltm-chile-set-up-legal-entity-tax-information.md).
 1. [Configure electronic invoice parameters for Chile](ltm-chile-conf-electronic-invoice.md).
-1. Gain familiarity with and understanding of Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
+1. Gain familiarity with and understanding of Electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
 1. Do the common part of Electronic Invoicing service configuration as it's described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
 1. The **Enable application response for vendor invoices** feature must be enabled in Feature management.
 1. Ensure that the following Electronic reporting (ER) format configurations are imported:
@@ -41,6 +41,9 @@ Before you complete the tasks in this article, the following prerequisites must 
 > The ER format is based on the **Invoice model LATAM** configuration and uses the **Vendor Invoice Mapping to Destination LATAM** configuration. All additional configurations that are required are automatically imported.
 
 ## Configure the Electronic invoicing feature
+
+> [!IMPORTANT]
+> The inbound flow of the Electronic invoicing Globalization feature for Chile requires that you run Finance version 10.0.41 or later. It can be configured only in the new Globalization Studio. It isn't supported in Regulatory Configuration Service (RCS).
 
 ### Import channel
 
