@@ -24,7 +24,7 @@ After you configure Electronic invoicing, you can generate, digitally sign, and 
 > The electronic invoicing approach that this article describes is implemented by using an invoicing service that is applicable only to cloud deployments of Finance or Supply Chain Management.
 
 > [!IMPORTANT]
-> The new Electronic invoicing Globalization feature for Panama (outbound flow) requires that you run Finance version 10.0.41 or later. It can be imported only into the new Globalization Studio. It isn't supported in Regulatory Configuration Service (RCS).
+> The new Electronic invoicing Globalization feature for Panama (outbound flow) requires that you run Finance version 10.0.40. Specifically, you must run build number 10.0.1935.60 or later. It can be imported only into the new Globalization Studio. It isn't supported in Regulatory Configuration Service (RCS).
 
 ## Prerequisites
 
