@@ -16,7 +16,7 @@ ms.dyn365.ops.version: 7.3
 # Extend tax engine configurations for slab price
 [!include [banner](../includes/banner.md)]
 
-This article describes how to extend the Tax engine configuration for slab price. Before extending the tax engine, complete the following: [Prerequisites step](extend-tax-engine-configurations.md#prerequisites).
+This article describes how to extend the Tax engine configuration for slab price. Before extending the tax engine, complete the [Prerequisites](extend-tax-engine-configurations.md#prerequisites).
 
 ## Activate the tax configuration
 ### Create extension configurations
@@ -56,21 +56,20 @@ After the status is updated to **Complete**, the configuration is ready for depl
 3. Click **Save** to save the configuration.
 
 ### Modify rate/percentage lookups
-1. Expand the **CGST** tax component node.
+1. Expand the **CGST** component node.
 2. Select the measure of the **Rate**.
-3. Go to **Lookups** tab, click **Columns** to add **Net Price** as condition of rate table.
-4. Select the same attributes that SGST uses.
+3. Go to **Lookups**, click **Columns** to add **Net Price** as condition of rate table.
+4. Select the same attributes as SGST.
 
 > [!NOTE]
-> Don't click **Add**. Values that you enter here have no effect on the actual rate table. The table should be completed at **Tax > Tax configuration > Tax setup**.
+> Don't click **Add**. Values entered here don't affect the actual rate table. To complete the rate table, go to **Tax > Tax configuration > Tax setup**.
 
 5. Save the tax document.
 
 ### Complete the tax document configuration
-1. Save the configuration, and close the designer.
-2. In the **Configurations** workspace, click **Change status**, and select **Complete**.
-3. Enter a description such as **Slab price**, and click **OK**.
-4.  If there are any errors, open the designer, click **Validate**, and fix the errors.
+1. In the **Configurations** workspace, click **Change status**, and select **Complete**.
+2. Enter a description, click **OK**.
+3. If there are any errors, open the designer, click **Validate**, and fix the errors.
 
 After the status is updated to **Complete**, the configuration is ready for deployment.
 
@@ -78,27 +77,27 @@ After the status is updated to **Complete**, the configuration is ready for depl
 1. Go to **Tax > Setup > Tax configuration > Tax setup**.
 2. Select the current working tax setup.
 3. Click **Configurations**.
-4. Click the **Tax configuration** tab > **Available configurations**, click **New** to create a tax configuration.
+4. Click **Tax configuration** > **Available configurations**, click **New** to create a tax configuration.
 
 > [!NOTE]
-> Any tax configurations that you add are listed in the **Available configurations** grid.
+> Any tax configurations added are listed in the **Available configurations** grid.
 
  5. Select the required configuration (for example, **Tax (India GST Contoso)** and version (for example, **1**)), and then click **Save** and **Synchronize**.
 
 > [!NOTE]
-> If you want to copy the tax setup data from original configuration, you can check the **Copy tax setup data from** button and choose the configuration you want to copy.
+> If you want to copy the tax setup data from original configuration, click **Copy tax setup data from** and select the configuration to copy.
 
 6. Click **Activate**.
-7. Back to **Tax setup** page and go to the **Companies** FastTab.
-8. Click **New** and then select **INMF** in the **Companies** field.
-9. Click **Save**.
-10. Click **Activate** to activate the configuration for the company.
-11. Click **Setup** to set up data for the new version.
-12. Setup tax rate as per business requirement as below.
+7. On the **Tax setup** page and go **Companies**.
+8. Click **New**.
+9. In the **Companies** field, select **INMF**. 
+10. Click **Save**.
+11. Click **Activate** to activate the configuration for the company.
+12. Click **Setup** to set up data for the new version.
 
  
-## Modify the data provider in Microsoft Dynamics AX
-### Implement logic to determine Net Price
+## Modify the data provider in Microsoft Dynamics 365 Finance
+### Implement logic to determine net price
 1. In the AOT, open Classes > TaxEngineModelFields. Add a new constant variable for Net Price.
    
    ```
