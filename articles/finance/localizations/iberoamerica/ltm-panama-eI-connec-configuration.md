@@ -31,7 +31,7 @@ After you configure Electronic invoicing, you can generate, digitally sign, and 
 Before you begin the procedures in this article, the following prerequisites must be met.
 
 1. Ensure that the settings for the Panamanian legal entity are in place. For more information, see [Set up a legal entity and tax information for Panama](ltm-set-up-legal-entity-tax-panama.md).
-1. Gain familiarity with and understanding of Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
+1. Gain familiarity with and understanding of Electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
 1. Do the common part of Electronic Invoicing service configuration as described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
 1. You must enable the following features in Feature management:
 
@@ -74,7 +74,7 @@ For Panama, there are at least three interactions with Edicom in the pipeline: f
 > The configuration of common parameters is now simplified. You no longer have to go to each action and feature setup, and repeatedly specify the common connection parameters. Use of the **Feature parameters** tab is available only as of version 10.0.41.
 
 > [!IMPORTANT]
-> The **Panama electronic invoice (PA)** feature is provided by Microsoft. Before it can be used, it requires additional configuration, as described in this article. For information about how to configure invoicing features and apply changes, see [Work with feature setups](../global/e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they are processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Panama.
+> The **Panama electronic invoice (PA)** feature is provided by Microsoft. Before it can be used, it requires additional configuration, as described in this article. For information about how to configure invoicing features and apply changes, see [Work with feature setups](../global/gs-e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they are processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in Panama.
 
 1. Import the latest version of the **Panamanian electronic invoice (PA)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md). The following illustrations show what the feature looks like after you import it from Dataverse.
 
