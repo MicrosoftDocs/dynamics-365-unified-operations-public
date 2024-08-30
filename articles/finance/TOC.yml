@@ -1220,6 +1220,8 @@
                       href: general-ledger/tasks/view-related-intercompany-voucher-journal.md
                     - name: Publish journal lines and documents from Excel
                       href: general-ledger/open-lines-excel-journals-documents.md
+                    - name: Financial journal posting performance
+                      href: general-ledger/posting-performance.md
                     - name: Automatic split of financial journals
                       href: general-ledger/auto-split-journal.md
                     - name: Delete master records
