@@ -40,6 +40,18 @@ Detailed information about objects in finance and operations apps can be found i
 | **Deployment option**              | All |
 | **Status**                         | End of support date is Oct 2024 starting with 10.0.39 (PU63) and greater releases. |
 
+## Feature deprecation effective September 2024
+
+### Microsoft will no longer be shipping or supporting the Visual Studio extensions supporting development work against Dynamics 365 for Finance and Operations, and for the Power Platform tools, for Visual Studio versions other than Visual Studio 2022.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We want to focus our attention on one platform, harvesting the benefits provided from the 64 bit platform. |
+| **Replaced by another feature?**   | [Visual Studio 2022](https://visualstudio.microsoft.com/vs/). |
+| **What do you need to do?**        | You need to install Visual Studio version 2022, if you have not already done so. Use can use this link to do so: [Download Visual Studio 2022](https://visualstudio.microsoft.com/vs/). |
+| **Product areas affected**         | Development against Dynamics 365 for Finance and Operations, including the Unified Development experience, and development of plugins with the Power Platform Tools. |
+| **Deployment option**              | All |
+| **Status**                         | This will be effective as of Platform update 65 and Dynamics 365 finance version 10.0.41 and later. |
 
 ## Feature deprecation effective July 2024
 
