@@ -19,6 +19,10 @@ AI summaries with Microsoft Copilot are available on many of the most-used pages
 
 The information that Copilot provides depends on the current page and user context. For example, the information can vary based on the other pages that the user works with the most, and it's limited based on the user's security roles and permissions.
 
+## TechTalk video
+
+For a video overview of all of the features described in this topic, watch [Copilot Capabilities in Dynamics 365 Finance and SCM | Dynamics 365 TechTalk](https://www.youtube.com/watch?v=QQN7tZYr1jc).
+
 ## Prerequisites
 
 Before you can use AI summaries with Copilot, your system must meet the following requirements:
@@ -52,6 +56,10 @@ The Warehouse Management mobile app provides a *workload* page that shows work s
 - The current workload. This information can be shown either as work headers or work lines.
 - Details of the available work per work type.
 - More information about the available work. Microsoft Copilot generates this information in natural language.
+
+The following illustration shows an example of the workload page in the Warehouse Management mobile app. When workers first open the page, it shows an overview of unstarted tasks that are scheduled for the current warehouse, together with a natural-language summary that Copilot generates (left). Workers can then tap any tile to view detailed information about open work by type (right). This information helps them quickly grasp their objectives for the day.
+
+:::image type="content" source="../warehousing/media/wma-insights-worklines.png" alt-text="Screenshots of the initial and detailed views of unstarted work lines scheduled for the current warehouse." lightbox="../warehousing/media/wma-insights-worklines.png":::
 
 Learn more in [Workload insights with Copilot in the Warehouse Management mobile app](../warehousing/warehouse-management-mobile-app-insights.md).
 
