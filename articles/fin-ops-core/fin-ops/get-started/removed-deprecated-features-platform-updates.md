@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Platform update 33
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-This article describes features that are removed, or that are planned for removal in platform updates of finance and operations apps.
+This article describes removed features, or features that are planned for removal in platform updates of finance and operations apps.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature isn't in active development and may be removed in a future update.
@@ -35,23 +35,23 @@ Detailed information about objects in finance and operations apps can be found i
 |------------|--------------------|
 | **Reason for deprecation/removal** | Improve platform security and remove dependency on password-based authentication. |
 | **Replaced by another feature?**   | Microsoft Entra ID based authentication. |
-| **What do you need to do?**        | This can impact the following set of functionalities. <br><br> 1. The SQL Connection string acquired by third-party code that isn't using any platforms public API present in platform. <br> <br>**Recommendation**: Switch to public API rather than reading it directly from config. <br><br> 2. Long-running transactions that run for several hours.<br><br> **Recommendation**: Reduce the time the connection is opened and keep the transactions as short-lived as possible. <br><br>  NOTE: LBD and CHE environments still use password-based authentication. |
+| **What do you need to do?**        | This change impacts the following set of functionalities. <br><br> 1. The SQL Connection string acquired by third-party code that isn't using any platforms public API present in platform. <br> <br>**Recommendation**: Switch to public API rather than reading it directly from config. <br><br> 2. Long-running transactions that run for several hours.<br><br> **Recommendation**: Reduce the time the connection is opened and keep the transactions as short-lived as possible. <br><br>  NOTE: LBD and CHE environments still use password-based authentication. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
 | **Status**                         | End of support date is Oct 2024 starting with 10.0.39 (PU63) and greater releases. |
 
 ## Feature deprecation effective September 2024
 
-### Microsoft will no longer be shipping or supporting the Visual Studio extensions supporting development work against Dynamics 365 for Finance and Operations, and for the Power Platform tools, for Visual Studio versions other than Visual Studio 2022.
+### Microsoft will no longer ship or support the Visual Studio extensions for finance and operations apps, Power Platform tools, and Visual Studio versions prior to 2022.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | We want to focus our attention on one platform, harvesting the benefits provided from the 64 bit platform. |
 | **Replaced by another feature?**   | [Visual Studio 2022](https://visualstudio.microsoft.com/vs/). |
-| **What do you need to do?**        | You need to install Visual Studio version 2022, if you have not already done so. Use can use this link to do so: [Download Visual Studio 2022](https://visualstudio.microsoft.com/vs/). |
-| **Product areas affected**         | Development against Dynamics 365 for Finance and Operations, including the Unified Development experience, and development of plugins with the Power Platform Tools. |
+| **What do you need to do?**        | Install [Visual Studio version 2022](https://visualstudio.microsoft.com/vs/). |
+| **Product areas affected**         | Development for finance and operations apps, including the Unified Development experience, and development of plugins with the Power Platform Tools. |
 | **Deployment option**              | All |
-| **Status**                         | This will be effective as of Platform update 65 and Dynamics 365 finance version 10.0.41 and later. |
+| **Status**                         | This change is effective as of Platform update 65 and Dynamics 365 Finance version 10.0.41 and later. |
 
 ## Feature deprecation effective July 2024
 
@@ -89,7 +89,7 @@ Detailed information about objects in finance and operations apps can be found i
 | **What do you need to do?**         | If a user who isn't part of your Microsoft Entra requires access to finance and operations apps, that user must be added to the Microsoft Entra ID tenant as an external user or guest user. For more information, see [B2B collaboration overview](/entra/external-id/what-is-b2b/). |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | This change will reach your environment any time starting August 2024. |
+| **Status**                         | This change reaches your environment anytime starting August 2024. |
 
 ## Feature deprecation effective April 2024
 
@@ -375,7 +375,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | We're deprecating the Globalization portal in Lifecycle Services as this feature was superseded by other Lifecycle Services-based services. |
-| **Replaced by another feature?**   | Yes, this feature is replaced by Lifecycle Services [Issue search](../../dev-itpro/lifecycle-services/issue-search-lcs.md) and [Dynamics regulatory alert submission service](../../dev-itpro/lcs-solutions/submit-localization-alerts.md). |
+| **Replaced by another feature?**   | Yes, Lifecycle Services [Issue search](../../dev-itpro/lifecycle-services/issue-search-lcs.md) and [Dynamics regulatory alert submission service](../../dev-itpro/lcs-solutions/submit-localization-alerts.md) replace this feature. |
 | **Product areas affected**         | Globalization portal in Lifecycle Services|
 | **Deployment option**              | Cloud deployment |
 | **Status**                         | Deprecated: Planned removal date is May 2022. |
@@ -388,7 +388,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | In order to reduce the overhead of operating, monitoring, and maintaining the index management by customers, this feature was removed. |
-| **Replaced by another feature?**   | After this update, the index maintenance is performed by Microsoft services. This maintenance happens continuously without affecting the user workloads. |
+| **Replaced by another feature?**   | After this update, Microsoft services performs the index maintenance. This maintenance happens continuously without affecting the user workloads. |
 | **Product areas affected**         | Finance and operations apps|
 | **Deployment option**              | Cloud deployment - affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
 | **Status**                         | This feature is removed. |
@@ -468,7 +468,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 ## Platform updates for version 10.0.13 of finance and operations apps
 
 
-### Custom code defined in SSRS report properties 
+### Custom code that's defined in SSRS report properties 
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -492,11 +492,11 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The existing grid control is being replaced by the new grid control. |
+| **Reason for deprecation/removal** | The new grid control replaces existing grid control. |
 | **Replaced by another feature?**   | The [new grid control](../../dev-itpro/get-started/grid-capabilities.md) |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
-| **Status**                         | The new grid control is mandatory with the October 2022 release (version 10.0.29). The **forceLegacyGrid()** API is currently still being honored if the old grid is still needed; however, this API is targeted to be deprecated by the October 2023 release. When the deprecation of this API is announced, it's available for at least 12 months before no longer being available. |
+| **Status**                         | The new grid control is mandatory with the October 2022 release (version 10.0.29). The **forceLegacyGrid()** API is currently still being honored if the old grid is still needed; however, this API is deprecated in the October 2023 release. When the deprecation of this API is announced, it's available for at least 12 months before no longer being available. |
 
 ### Personalization without saved views 
 
@@ -527,7 +527,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The process for moving IP to safe lists has changed. Self-service no longer supports IP safe lists. |
+| **Reason for deprecation/removal** | The process for moving IP to safe lists changed. Self-service no longer supports IP safe lists. |
 | **Replaced by another feature?**   | For more information, see [Configuring Conditional Access](/appcenter/general/configuring-aad-conditional-access).|
 | **Product areas affected**         | Security |
 | **Deployment option**              | Cloud |
@@ -586,7 +586,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Status**                         | This feature is actively being removed from the service.<br><br>The modern client offers numerous options for producing views that include auto generated links to help navigating the application. Paginated documents rendered by the service are recommended for external communications that are emailed, archived, and printed for recipients. We have improved the experience for previewing documents directly in the browser, which offers direct access to local printers. For more information, see [Preview PDF documents with an embedded viewer](../../dev-itpro/analytics/preview-pdf-documents.md). |
 
 ## Previous announcements about removed or deprecated features
-To learn more about features that have been removed or deprecated in previous releases, see [Removed or deprecated features in previous releases](../../dev-itpro/migration-upgrade/deprecated-features.md).
+To learn more about removed or deprecated features in previous releases, see [Removed or deprecated features in previous releases](../../dev-itpro/migration-upgrade/deprecated-features.md).
 
 
 
