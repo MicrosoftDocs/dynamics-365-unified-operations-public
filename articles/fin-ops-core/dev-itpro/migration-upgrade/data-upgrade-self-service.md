@@ -57,7 +57,7 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 6. SQL Server authentication must be set to **SQL Server and Windows Authentication mode**. (This change requires a restart of the SQL Server service.) The toolkit uses native SQL logins only.
 
     > [!NOTE]
-    > The SQL Login you will use for the toolkit needs to have **sysadmin** server role assigned. You can use an existing SQL login or create a new one as needed. 
+    > The SQL login used for the toolkit needs to have **sysadmin** server role assigned. You can use an existing SQL login or create a new one as needed. 
 
 7. Enable and start the SQL Server Agent on the source database server.
 8. **Migration toolkit setup:** If you don't want some of the source database tables to be replicated in the target database, you can specify them in the IgnoreTables.xml file. Likewise, if you don't want some of the functions to be replicated, you can specify them in the IgnoreFunctions.xml file. Additionally, if you would like to put some specific tables in publications outside of the main publications, you can use the SpecialTables.xml file. 
