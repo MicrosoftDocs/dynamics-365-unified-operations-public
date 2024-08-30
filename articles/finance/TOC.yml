@@ -2904,6 +2904,8 @@
                                   href: dev-itpro/tax-engine-integration.md
                                 - name: Extending the Tax engine
                                   href: dev-itpro/extend-tax-engine-configurations.md
+                                - name: Extend the Tax engine configuration for slab price
+                                  href: dev-itpro/extend-tax-engine-configuration-for-slab-price.md
                                 - name: Clean up the TaxDocumentJSON table
                                   href: localizations/india/gte-clean-up-tax-document-json-table.md
                                 - name: Troubleshoot GTE
