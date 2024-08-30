@@ -4,7 +4,7 @@ description: Learn how to enable Copilot support for the Confirmed purchase orde
 author: cabeln
 ms.author: cabeln
 ms.topic: how-to
-ms.date: 07/06/2023
+ms.date: 08/30/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.collection:
