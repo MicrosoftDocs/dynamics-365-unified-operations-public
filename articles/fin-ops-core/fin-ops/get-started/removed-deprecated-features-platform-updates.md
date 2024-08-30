@@ -42,7 +42,7 @@ Detailed information about objects in finance and operations apps can be found i
 
 ## Feature deprecation effective September 2024
 
-### Microsoft will no longer be shipping or supporting the Visual Studio extensions supporting development work against Dynamics 365 for Finance and Operations, and for the Power Platform tools, for Visual Studio versions other than Visual Studio 2022.
+### Microsoft will no longer ship or support the Visual Studio extensions for Dynamics 365 for finance and operations apps, the Power Platform tools, and for Visual Studio versions other than Visual Studio 2022.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
