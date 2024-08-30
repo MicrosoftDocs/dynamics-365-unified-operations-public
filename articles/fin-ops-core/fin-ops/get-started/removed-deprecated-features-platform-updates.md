@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Platform update 33
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-This article describes features that are removed, or that are planned for removal in platform updates of finance and operations apps.
+This article describes removed features, or features that are planned for removal in platform updates of finance and operations apps.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature isn't in active development and may be removed in a future update.
@@ -42,16 +42,16 @@ Detailed information about objects in finance and operations apps can be found i
 
 ## Feature deprecation effective September 2024
 
-### Microsoft will no longer ship or support the Visual Studio extensions for Dynamics 365 for finance and operations apps, the Power Platform tools, and for Visual Studio versions other than Visual Studio 2022.
+### Microsoft will no longer ship or support the Visual Studio extensions for finance and operations apps, Power Platform tools, and Visual Studio versions prior to 2022.
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | We want to focus our attention on one platform, harvesting the benefits provided from the 64 bit platform. |
 | **Replaced by another feature?**   | [Visual Studio 2022](https://visualstudio.microsoft.com/vs/). |
-| **What do you need to do?**        | You need to install Visual Studio version 2022, if you have not already done so. Use can use this link to do so: [Download Visual Studio 2022](https://visualstudio.microsoft.com/vs/). |
-| **Product areas affected**         | Development against Dynamics 365 for Finance and Operations, including the Unified Development experience, and development of plugins with the Power Platform Tools. |
+| **What do you need to do?**        | Install [Visual Studio version 2022](https://visualstudio.microsoft.com/vs/). |
+| **Product areas affected**         | Development for finance and operations apps, including the Unified Development experience, and development of plugins with the Power Platform Tools. |
 | **Deployment option**              | All |
-| **Status**                         | This will be effective as of Platform update 65 and Dynamics 365 finance version 10.0.41 and later. |
+| **Status**                         | This is effective as of Platform update 65 and Dynamics 365 Finance version 10.0.41 and later. |
 
 ## Feature deprecation effective July 2024
 
@@ -89,7 +89,7 @@ Detailed information about objects in finance and operations apps can be found i
 | **What do you need to do?**         | If a user who isn't part of your Microsoft Entra requires access to finance and operations apps, that user must be added to the Microsoft Entra ID tenant as an external user or guest user. For more information, see [B2B collaboration overview](/entra/external-id/what-is-b2b/). |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | This change will reach your environment any time starting August 2024. |
+| **Status**                         | This change reachs your environment anytime starting August 2024. |
 
 ## Feature deprecation effective April 2024
 
@@ -586,7 +586,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | **Status**                         | This feature is actively being removed from the service.<br><br>The modern client offers numerous options for producing views that include auto generated links to help navigating the application. Paginated documents rendered by the service are recommended for external communications that are emailed, archived, and printed for recipients. We have improved the experience for previewing documents directly in the browser, which offers direct access to local printers. For more information, see [Preview PDF documents with an embedded viewer](../../dev-itpro/analytics/preview-pdf-documents.md). |
 
 ## Previous announcements about removed or deprecated features
-To learn more about features that have been removed or deprecated in previous releases, see [Removed or deprecated features in previous releases](../../dev-itpro/migration-upgrade/deprecated-features.md).
+To learn more about removed or deprecated features in previous releases, see [Removed or deprecated features in previous releases](../../dev-itpro/migration-upgrade/deprecated-features.md).
 
 
 
