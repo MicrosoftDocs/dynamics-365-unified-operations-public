@@ -131,7 +131,7 @@ To get a security service token, follow these steps.
     ```
 
     > [!NOTE]
-    > If you receive a response with status code 307, use the value of the "Location" header to resend the token request to the new URL. Note that most HTTP libraries handle redirects automatically.
+    > If you receive a response with status code 307, use the value of the `Location` header to resend the token request to the new URL. Most HTTP libraries handle redirects automatically.
 
 ## <a name="create-onhand-change-event"></a>Create on-hand change events
 
