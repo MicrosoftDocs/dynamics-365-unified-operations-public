@@ -57,7 +57,8 @@ This article explains how to review collections information as well as various s
 >[!Note]
 > No more than six aging periods can be used on external statements, aging period snapshots, or on the **Collections list** page. This aging period definition isn't available on those pages. 
 
-In case the default aging period (Account Receivables Parameters > Collections > Collection Defaults > Aging Period Definition) is edited and has more than six periods, the default aging period will not be respected. 
+If the default aging period is edited and has more than six periods, the default aging period isn't respected. The default aging period is set up here: **Account Receivables parameters** > **Collections** > **Collection Defaults** > **Aging period definition**.
+
 ## Setup collections parameters
 1. Go to **Credit and collections > Setup > Accounts receivable parameters**.
 2. Select the **Collections** tab.
