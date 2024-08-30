@@ -94,9 +94,9 @@ To get a security service token, follow these steps.
     {
         "grant_type": "client_credentials",
         "client_assertion_type": "aad_app",
-        "client_assertion": "{Your_Microsoft EntraToken}",
+        "client_assertion": "${Your_Microsoft_EntraToken}",
         "scope": "https://inventoryservice.operations365.dynamics.com/.default",
-        "context": "{$fno_environment_id}",
+        "context": "${fno_environment_id}",
         "context_type": "finops-env"
     }
     ```
@@ -124,11 +124,14 @@ To get a security service token, follow these steps.
 
     ```json
     {
-        "access_token": "{Returned_Token}",
+        "access_token": "${Returned_Token}",
         "token_type": "bearer",
         "expires_in": 3600
     }
     ```
+
+    > [!NOTE]
+    > If you receive a response with status code 307, use the value of the `Location` header to resend the token request to the new URL. Most HTTP libraries handle redirects automatically.
 
 ## <a name="create-onhand-change-event"></a>Create on-hand change events
 
