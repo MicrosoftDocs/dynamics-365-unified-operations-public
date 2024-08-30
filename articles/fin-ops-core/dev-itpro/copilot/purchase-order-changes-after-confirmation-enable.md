@@ -11,7 +11,7 @@ ms.collection:
   - bap-ai-copilot
 audience: Application User
 ms.search.region: Global
-ms.search.form: PurchTable, PurchTablePart, PurchOrderInReview, PurchOrderApproved, PurchOrderInDraft, PurchOrderAssignedToMe, VendPurchOrderJournalListPage, PurchTableWorkflowDropDialog, VendPurchOrderJournal
+ms.search.form: PurchTableChangeReviewWorkspace
 ---
 
 # Enable Copilot support for managing changes to confirmed purchase orders
