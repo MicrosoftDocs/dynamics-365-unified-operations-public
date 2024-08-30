@@ -39,7 +39,7 @@ Before you can use AI summaries with Copilot, your system must meet the followin
 
 ## Turn AI summaries with Copilot on or off
 
-You can control which AI summaries are shown in your system by searching for the following features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Admins can control which AI summaries are shown in your system by searching for the following features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Workload insights with Copilot in the Warehouse Management mobile app – *Context-aware worker summary screen in WMA*
 - Product hover summaries – *Product summary when hovering on item*
