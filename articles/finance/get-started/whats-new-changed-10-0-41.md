@@ -79,13 +79,15 @@ The following table lists the features that are turned on by default in version 
 | Enable recurring Accounts payable invoice | On by default | Accounts payable |
 | Vendor invoice register approved | On by default | Accounts payable |
 | Enable external tax solution providers for Tax calculation service (Universal tax rate API) | On by default | Tax |
+| Enable the Global general journal page to select multiple companies for posting | Mandatory| General ledger |
+| Delete journal performance using batch | Mandatory | General ledger |
 | Sales tax rate on invoice date in purchase order credit note | Mandatory | Tax |
 | (India) Enable initial TDS threshold under section 194Q | On by default | Tax |
 | Tax in transfer order | Mandatory | Tax |
 | Control zero-amount sales tax difference entries for Czech Republic (CZ) | Mandatory | Tax |
 | (India) GST/TDS-TCS tax support for Project integration journal | On by default | Tax |
 | Tax calculation service | Mandatory | Tax |
-| Credit and collections analytics performance improvements| Credit and collections |	Enabled by default |
+| Credit and collections analytics performance improvements| Enabled by default |	Credit and collections|
 | Consistency check for tax transaction general journal account entry association for bank exchange rate | On by default | Tax |
 | Display vouchers in bank statement | Mandatory | Cash and bank management |
 | Advanced bank reconciliation improvement: enable group conditions in reconciliation matching rules | Mandatory | Cash and bank management |
@@ -127,8 +129,9 @@ The following table lists the features that have been removed from Feature manag
 | Ability to post detailed vendor and customer payments, but summarize amounts to bank account | The related functionality is enabled out of the box. | Cash and bank management |
 | Enhanced filtering on the cash position inquiry | The related functionality is enabled out of the box. | Cash and bank management |
 | Calculate the average exchange rate based on the main account code only | The related functionality is enabled out of the box. | Cash and bank management |
-|(Italy) Posting invoices with zero amount | The related functionality is enabled out of the box. | Accounts payable and Accounts receivable |
+| (Italy) Posting invoices with zero amount | The related functionality is enabled out of the box. | Accounts payable, Accounts receivable, and General ledger |
 | Product name translation fix | The related functionality is enabled out of the box. | Accounts receivable |
+
 
 ## Additional resources
 
