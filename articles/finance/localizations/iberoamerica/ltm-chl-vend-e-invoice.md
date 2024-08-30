@@ -42,6 +42,9 @@ Before you complete the tasks in this article, the following prerequisites must 
 
 ## Configure the Electronic invoicing feature
 
+> [!IMPORTANT]
+> The inbound flow of the Electronic invoicing Globalization feature for Chile requires that you run Finance version 10.0.41 or later. It can be configured only in the new Globalization Studio. It isn't supported in Regulatory Configuration Service (RCS).
+
 ### Import channel
 
 To enable an inbound flow, you must create a feature setup of the **Import channel** type for the **Chilean electronic invoice (CL) "E-Invoicing for Chile: ISV last-mile connector with Edicom"** Globalization feature.
