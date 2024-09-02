@@ -1,6 +1,6 @@
 ---
-title: Install and update Traceability (preview)
-description: This article describes how to install and update the various components of the Traceability Add-in for Dynamics 365 Supply Chain Management.
+title: Install and update and uninstall Traceability (preview)
+description: This article describes how to install and update and uninstall the various components of the Traceability Add-in for Dynamics 365 Supply Chain Management.
 author: banluo-ms
 ms.author: banluo
 ms.reviewer: kamaybac
@@ -11,18 +11,18 @@ ms.custom:
   - bap-template
 ---
 
-# Install and update Traceability (preview)
+# Install and update and uninstall Traceability (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article describes how to install and upgrade the various components of the Traceability Add-in for Dynamics 365 Supply Chain Management.
+This article describes how to install and upgrade and uninstall the various components of the Traceability Add-in for Dynamics 365 Supply Chain Management.
 
 ## Prerequisites
 
 To use Traceability, your system must meet the following requirements:
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management with version 10.0.40 build 10.0.1935.80 or higher
+- You must be running Microsoft Dynamics 365 Supply Chain Management with version 10.0.40 build 10.0.1935.80 or higher.
 
 ## Microsoft Azure configuration
 
@@ -49,13 +49,6 @@ To use Traceability, your system must meet the following requirements:
 The Traceability app is part of the Traceability Add-in for Dynamics 365 Supply Chain Management. It's a Power Apps application that provides a user interface for configuring and using the Traceability Add-in.
 
 To install the Traceability app in Power Apps, complete the following steps in the Power Platform admin center.
-
-1. Find the [*Dynamics 365 Supply Chain Traceability* app in AppSource](https://appsource.microsoft.com/en-US/product/dynamics-365/mscrm.d365-supply-chain-traceability-preview?flightCodes=sctprivatepreview).
-1. Select **Get it now**.
-1. You're transferred to the Power Platform admin center. Select the environment where you want to install the app, agree to the license terms and privacy statement, and then select **Install** to install the app in your selected environment.
-
-    > [!NOTE]
-    > If you don't see your environment listed, you might need to change your geographic region in the Power Platform admin center. Select **Cancel** and then choose a supported region from the region selector in the top right corner of the page. Then try again.
 
 1. The **Dynamics 365 apps** \> **Dynamics 365 Supply Chain Traceability** page opens. Update the following settings:
     - **Select an environment** – Select the environment where you want to set up the app.
@@ -94,3 +87,24 @@ This section describes how to see when an update of the Supply Chain Traceabilit
 1. On the left navigation pane, select **Solutions**.
 1. On the **Solutions** page, select **All**.
 1. On the toolbar, select **Publish all customizations**.
+
+## Uninstall the Supply Chain Traceability application in Lifecycle Services of Dynamics 365 Supply Chain Management
+
+1. Go to LCS of Dynamics 365 Supply Chain Management.
+2. Find installed Traceability Service (Preview) and click "Uninstall".
+
+## Uninstall the Supply Chain Traceability application in in Power Platform Maker
+
+1. Go to Power Platform Maker.
+2. In left menu, click Solution -> Managed.
+3. Delete traceability solutions one by one.
+   Dynamics 365 Supply Chain Traceability anchor solution
+   Dynamics 365 Supply Chain Traceability portal solution
+   Dynamics 365 Supply Chain Traceability controls solution
+   Dynamics 365 Supply Chain Traceability Plugins solution
+   Supply chain traceability integration - authorization
+   Dynamics 365 Supply Chain Traceability common solution
+    > [!NOTE]
+    >
+    > - The solution “Dynamics 365 Supply Chain Traceability common solution” should be deleted at last. 
+
