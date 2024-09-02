@@ -24,6 +24,13 @@ To use Traceability, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management with version 10.0.40 build 10.0.1935.80 or higher.
 
+## Turn on features in Supply Chain Management
+
+To use Traceability together with Dynamics 365 Supply Chain Management, you must enable one or both of the following features in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Tracked components* – Enables component tracking in Supply Chain Management.
+- *(Preview) Traceability* – Integrates Traceability with the component tracking features in Supply Chain Management.
+
 ## Microsoft Azure configuration
 
 ### Register a new Microsoft Entra application
@@ -63,13 +70,8 @@ To install the Traceability app in Power Apps, complete the following steps in t
 
 1. Select **Install**.
 1. When installation is complete, you should be able to see that an app called *Dynamics 365 Supply Chain Traceability* is shown as installed in the list of Dynamics 365 apps for your environment.
-
-## Turn on features in Supply Chain Management
-
-To use Traceability together with Dynamics 365 Supply Chain Management, you must enable one or both of the following features in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
-
-- *Tracked components* – Enables component tracking in Supply Chain Management.
-- *(Preview) Traceability* – Integrates Traceability with the component tracking features in Supply Chain Management.
+1. Verify the successful installation with status “Installed” under “Dynamics 365 apps”.
+1. Configure Generative AI features -> Move data across regions to “Allowed” to allow copilot summary.
 
 ## Update the Supply Chain Traceability application in Power Apps
 
