@@ -95,7 +95,7 @@ The following table lists the APIs available for Traceability.
 |--|--|--|
 | /api/environments/{environmentId}/events/post-batch-events | Post | Create genealogy node and activity |
 | /api/environments/{environmentId}/traces/Query | Post | Query by tracking ID |
-| /api/environments/{environmentId}/traces/Query | Post | Unlink genealogy node and insert activity for unlink |
+| /api/environments/{environmentId}/traces/unlink-components | Post | Unlink genealogy node and insert activity for unlink |
 
 Where *{environmentId}* is the environment ID of your Supply Chain Management environment in Lifecycle Services.
 
