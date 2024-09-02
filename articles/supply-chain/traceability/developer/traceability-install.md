@@ -22,8 +22,7 @@ This article describes how to install and upgrade the various components of the 
 
 To use Traceability, your system must meet the following requirements:
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.39 or later.
-- If you also want to integrate Traceability with the production floor execution interface, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 or later.
+- You must be running Microsoft Dynamics 365 Supply Chain Management with version 10.0.40 build 10.0.1935.80 or higher
 
 ## Microsoft Azure configuration
 
