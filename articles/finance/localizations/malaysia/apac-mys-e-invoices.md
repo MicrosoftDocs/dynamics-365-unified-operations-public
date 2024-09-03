@@ -528,4 +528,13 @@ To generate and submit electronic invoices in batches for posted Customer invoic
 4. On the **Records to include** FastTab, select **Filter** to open the **Inquiry** dialog box, where you can build a query to select only required documents.
 5. Select **OK** to start submission.
 
-You can inquire about the results of a submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and selecting the required document type. For more information, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
+You can inquire about the submission results by doing the following steps.
+
+1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**.
+1. In the field **Document type** select **Batch submission**.
+1. Select a specific batch which can have the following statuses: *Scheduled*, *Completed*, or *Failed*.
+1. On the Action Pane, select **Inquiries** \> **Submission details** to view the details of the submission execution logs. 
+1. On the Action Pane, select **Inquiries** \> **Batch submission invoices** to view the invoices that were submitted within this batch.
+
+> [!NOTE]
+> 
