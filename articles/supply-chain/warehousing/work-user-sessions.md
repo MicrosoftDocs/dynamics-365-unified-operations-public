@@ -42,7 +42,7 @@ The following example shows XML content that was copied from a *Mixed license pl
     <UserCulture>en-us</UserCulture>
     <UserDateCulture>en-us</UserDateCulture>
     <OperationalInsightsInstrumentationKey />
-    <ServerAadTenantId>4dbfcf74-c5a6-4727-b638-d56e51d1f381</ServerAadTenantId>
+    <ServerAadTenantId>ffffaaaa-5555-bbbb-6666-cccc7777dddd</ServerAadTenantId>
     <ServerEnvironmentId /><ServerAzureRegion /><ServerVersion /><BatchFlightsEnabled />
     <Device DeviceId="{C1DEE34C-69FA-44DD-BE17-2655931016CC}" /><ServerActivity ServerActivityId="{B2AAD7A2-7674-0006-E259-ABB27476D901}" />
 </ParentNode>
