@@ -2,7 +2,7 @@
 title: Deploy a Commerce trial (Preview) environment
 description: This article explains how to subscribe to a partner offer to deploy a Microsoft Dynamics 365 Commerce trial (Preview) environment.
 author: ashishmsft
-ms.date: 08/27/2024
+ms.date: 09/03/2024
 ms.topic: how-to
 audience: IT Pro
 ms.reviewer: v-chrgriffin
