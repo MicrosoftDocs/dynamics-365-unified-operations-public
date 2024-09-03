@@ -64,9 +64,9 @@ When either the **Automatically submit imported invoices to workflow** or **Auto
 ## Excluded invoice from vendor invoice automation process
 When a vendor invoice is included in the vendor invoice automation process, it may be excluded from automation under the following circumstances:
 - The user manually excludes the invoice by disabling the toggle **Include in automated processing**
-- If the option **Match product receipts to invoice lines prior to automatically matching** is enabled, the invoice will be excluded from automation under these conditions:
-  1. The option **Automatically submit imported invoices to workflow** is disabled, and the option **Automated receipt match status** is completed, failed or not applicable.
+- If the option **Automatically match product receipts to invoice lines** is enabled, the invoice will be excluded from automation under these conditions:
+  1. The option **Automatically submit imported invoices to workflow** is disabled, and the value for **Automated receipt match status** is completed, failed or not applicable.
   2. The automatically workflow submission fails validation when the option **Automatically submit imported invoices to workflow** is enabled.
-  3. The invoice is not getting approved within the workflow. 
+  3. The invoice is not getting approved within the workflow after invoice is successfully submitted into the workflow. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
