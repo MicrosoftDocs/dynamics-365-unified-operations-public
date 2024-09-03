@@ -3,14 +3,13 @@ title: Import vendor electronic invoices
 description: Learn how to configure and use the vendor electronic invoice import in PEPPOL-based formats in Microsoft Dynamics 365 Finance.
 author: ilikond
 ms.author: ikondratenko
-ms.topic: article
-ms.date: 11/13/2023
+ms.topic: how-to
 ms.custom: 
+  - bap-template
+ms.date: 09/03/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Europe
 ms.search.validFrom: 2023-01-01
-ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.32
 ---
 
@@ -20,7 +19,7 @@ ms.dyn365.ops.version: AX 10.0.32
 
 This article explains how to configure and import vendor electronic invoices in the formats based on the Pan-European Public Procurement Online ([PEPPOL](https://peppol.org/)) into Microsoft Dynamics 365 Finance.
 
-The import from the follwoing electronic invoice formats are supported:
+The import from the following electronic invoice formats are supported:
  
  - Standard **PEPPOL** format;
  - Germany-specific **XRechnung** format.
@@ -118,7 +117,7 @@ The following is an overview of the steps in the import process.
 5. If no order or line references are defined in an incoming file, the system tries to automatically match incoming vendor invoices with existing **confirmed** purchase orders. Products purchase **prices** are used for matching.
 6. If no purchase order is found, the system raises a warning but continues the import. It now considers the products on invoice lines **Non-stock** items. Therefore, the system expects that these products belong to an item model group where the **Stocked product** checkbox is cleared on the **Inventory policy** page.
 7. If no related **Non-stock** products exist, the system tries to import invoice lines by referring to a default item. The default item must be configured in the system as a released product where the code is defined exactly as **DEFAULT\_ITEM**, and the product must belong to an item model group where the **Stocked product** checkbox is cleared on the **Inventory policy** page. 
-The details of incoming invoice lines' descriptions will be imported into the **Text** field of the related line's **Line details** section. 
+The details of incoming invoice lines' descriptions are imported into the **Text** field of the related line's **Line details** section. 
 If no default item is configured in the system, the import process fails, and a related error message is shown.
 9. Taxes are calculated in the system, based on the imported data and tax settings. Taxes aren't imported as fixed amounts from the incoming XML file. The results of the calculation can be manually adjusted as required.
 10. File attachments are supported during the import. All attached files that are specified in the **Invoice\\cac:AdditionalDocumentReference** element of import files should have extensions. If an attached file has no extension, the system raises a warning, and the attachment is skipped during the import.
