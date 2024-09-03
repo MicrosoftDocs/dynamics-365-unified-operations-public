@@ -4448,7 +4448,9 @@
                 - name: Create business performance analytics reports
                   href: business-performance-analytics/how-to-create-and-edit-reports.md  
                 - name: Business performance analytics Excel add-in
-                  href: business-performance-analytics/bpa-excel.md     
+                  href: business-performance-analytics/bpa-excel.md 
+                - name: Generative help and guidance in Business performance analytics
+                  href: business-performance-analytics/copilot-in-business-performance-analytics.md
             - name: Extend business performance analytics
               items:             
                 - name: Extend business performance analytics in Microsoft Fabric 
