@@ -6,7 +6,6 @@ ms.author: johanho
 ms.topic: article
 ms.date: 11/03/2017
 ms.reviewer: kamaybac
-audience: Application User 
 ms.search.form: PdsBatchAttrib, PdsBatchAttribAssociate, PdsBatchAttribByAttribGroup, PdsBatchAttribByItem, PdsBatchAttribByitemCustomer, PdsBatchAttribGroup, WHSBatchAttribReserve
 ms.assetid: 41de0250-4a96-412e-a412-aa06615b6b1d
 ---

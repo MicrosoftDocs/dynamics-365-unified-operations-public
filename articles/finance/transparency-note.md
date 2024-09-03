@@ -22,3 +22,5 @@ Transparency FAQs are part of a broader effort to put Microsoft AI principles in
 The Microsoft Dynamics 365 Finance app contains a growing list of AI-driven features. For information about the capabilities and impact of specific features, select a feature name in the list.
 
 [Collections coordinator summary](accounts-receivable/CollectionsCoordinatorSummary.md)
+[Generative help and guidance in Business performance analytics](business-performance-analytics/copilot-in-business-performance-analytics.md)
+

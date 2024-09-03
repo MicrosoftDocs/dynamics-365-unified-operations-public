@@ -6,7 +6,6 @@ ms.author: yanansong
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-audience: Application User 
 ms.search.form: InventCostTrans, ProdCalcVarianceTrans
 ms.assetid: 14ac7db4-fb40-43c1-bb0d-1d51fc91d24f
 ---

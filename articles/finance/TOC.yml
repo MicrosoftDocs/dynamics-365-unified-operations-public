@@ -1078,7 +1078,7 @@
                       href: general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
                     - name: Financial dimension sets
                       href: general-ledger/financial-dimension-sets.md
-                    - name: New finance dimension set feature (preview)
+                    - name: New finance dimension set feature 
                       href: general-ledger/financial-dimension-set-new.md
                     - name: Maintain financial dimension default templates
                       href: general-ledger/tasks/maintain-financial-dimension-default-templates.md
@@ -1218,8 +1218,12 @@
                       href: general-ledger/allow-edits-internal-data-gl-vouchers.md
                     - name: View a related intercompany voucher from a journal
                       href: general-ledger/tasks/view-related-intercompany-voucher-journal.md
+                    - name: Dimension values on multi-line vs single line intercompany journal
+                      href: general-ledger/intercompany-journal.md
                     - name: Publish journal lines and documents from Excel
                       href: general-ledger/open-lines-excel-journals-documents.md
+                    - name: Financial journal posting performance
+                      href: general-ledger/posting-performance.md
                     - name: Automatic split of financial journals
                       href: general-ledger/auto-split-journal.md
                     - name: Delete master records
@@ -2902,6 +2906,8 @@
                                   href: dev-itpro/tax-engine-integration.md
                                 - name: Extending the Tax engine
                                   href: dev-itpro/extend-tax-engine-configurations.md
+                                - name: Extend the Tax engine configuration for slab price
+                                  href: dev-itpro/extend-tax-engine-configuration-for-slab-price.md
                                 - name: Clean up the TaxDocumentJSON table
                                   href: localizations/india/gte-clean-up-tax-document-json-table.md
                                 - name: Troubleshoot GTE
@@ -4444,7 +4450,9 @@
                 - name: Create business performance analytics reports
                   href: business-performance-analytics/how-to-create-and-edit-reports.md  
                 - name: Business performance analytics Excel add-in
-                  href: business-performance-analytics/bpa-excel.md     
+                  href: business-performance-analytics/bpa-excel.md 
+                - name: Generative help and guidance in Business performance analytics
+                  href: business-performance-analytics/copilot-in-business-performance-analytics.md
             - name: Extend business performance analytics
               items:             
                 - name: Extend business performance analytics in Microsoft Fabric 
@@ -5368,7 +5376,9 @@
             - name: US Payroll overview
               href: ../fin-ops-core/fin-ops/hr/localizations/usa/noam-usa-payroll.md
             - name: Deprecation of US payroll tax updates
-              href: ../fin-ops-core/fin-ops/hr/localizations/usa/noam-usa-deprecate-payroll-tax.md           
+              href: ../fin-ops-core/fin-ops/hr/localizations/usa/noam-usa-deprecate-payroll-tax.md     
+            - name: US payroll tax update deprecation FAQ
+              href: ../fin-ops-core/fin-ops/hr/localizations/usa/noam-usa-payroll-tax-deprecate-faq.md
             - name: Payroll setup
               items:
                 - name: Set up payroll for workers
@@ -5493,6 +5503,8 @@
           href: accounts-receivable/customerpagesummaryfaq.md
         - name: Workflow history summary FAQ
           href: ../fin-ops-core/fin-ops/copilot/workflow-history-summary-faq.md
+        - name: Generative help and guidance in Business performance analytics FAQ
+          href: business-performance-analytics/responsible-ai-faq.md  
     - name: Development and administration for finance and operations apps
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Supply Chain Management

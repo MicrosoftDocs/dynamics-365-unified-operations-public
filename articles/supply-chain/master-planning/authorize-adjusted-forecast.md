@@ -6,7 +6,6 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-audience: Application User 
 ms.search.form: ReqDemPlanImportForecastDialog
 ms.assetid: cb8fd809-605a-4a8b-a390-636edfec21f9
 ---

@@ -3,11 +3,13 @@ title: Service orders
 description: Access an overview of how to work with service orders, including outlines on creating service orders and monitoring the progress of service orders.
 author: ChristianRytt
 ms.author: crytt
-ms.topic: article
-ms.date: 05/01/2018
-ms.custom:
 ms.reviewer: kamaybac
 ms.search.form: SMAServiceOrderTable
+ms.topic: how-to
+ms.date: 08/26/2024
+ms.custom: 
+  - bap-template
+  - evergreen
 ---
 
 # Service orders
@@ -23,7 +25,6 @@ You can attach tasks and objects to a service order line. You can then group ser
 You can create service orders based on a service agreement and the lines that are contained in that agreement. However, you can create service orders that are associated with a service agreement only in the period that is specified in the agreement. For example, if a service agreement is valid for the 2011 calendar year, you can create service orders for the agreement from January 1, 2011, and December 31, 2011.
 
 You can also create service orders individually, without associating them with an agreement. These service orders can be used to handle unscheduled or one-time service visits. For example, in the month of March, your customer wants service to be performed on two machines, in addition to the machines that are specified in the service agreement. For this task, you create service orders but do not associate them with an agreement.
-
 
 > [!NOTE]
 > To create service orders that are not associated with a service agreement, you must select the **Allow without service agreement** check box in the **Service management parameters** page.
@@ -44,7 +45,7 @@ A service order is approved by the dispatcher. The dispatcher updates the stage 
 
 ## Specify item requirements for service orders
 
-You can specify the inventory items that are required for service orders. However, the service order must be associated with a project. Item requirements for service orders are processed through a project. 
+You can specify the inventory items that are required for service orders. However, the service order must be associated with a project. Item requirements for service orders are processed through a project.
 
 ### Example
 
@@ -60,19 +61,10 @@ One of the other service orders that was generated for the month of January beco
 
 ## Post from projects
 
-At the end of each week, the dispatcher wants to post all service orders that are attached to a specific project. Therefore, the dispatcher locates the relevant project in the **Projects** page and posts the service orders that have been completed. Learn more in [Post service orders (class form)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
+At the end of each week, the dispatcher wants to post all service orders that are attached to a specific project. Therefore, the dispatcher locates the relevant project in the **Projects** page and posts the service orders that have been completed.
 
 ## Delete service orders
 
 During the second half of the year, your customer decides that the service visits are too infrequent. You must create a new, more frequent series of service visits for the remaining time on the service agreement. Therefore, you must delete the existing service orders and create new service orders. Learn more in [Delete service orders](delete-service-orders.md).
-
-## Related information
-
-[Service orders (form)](https://technet.microsoft.com/library/aa554361\(v=ax.60\))
-
-  
-
-
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

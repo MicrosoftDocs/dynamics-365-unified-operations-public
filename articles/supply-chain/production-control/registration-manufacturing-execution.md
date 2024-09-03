@@ -50,10 +50,7 @@ Before you can use the **Skip time adjustments** option, your system must meet t
 - The feature that is named *Skip time adjustments when calculating actual cost per production order* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 > [!IMPORTANT]
-> This feature changes the way that automatic route consumption works.
->
-> - When the feature is enabled, route groups that are set up to use estimated production times to calculate actual production order costs don't also include recorded times.
-> - When the feature is disabled, both recorded and estimated times are used in cost calculations. This behavior can produce unexpected results.
+> The *Skip time adjustments when calculating actual cost per production order* feature changes the way that automatic route consumption works. When it's enabled, route groups that are set up to use *estimated production times* to calculate actual production order costs don't include *recorded times* in the calculation.
 
 ### Set the Skip time adjustments option
 

@@ -32,8 +32,6 @@ ms.search.form: smmActivityTypeGroup
 
 ## Related information
 
-[Activity types (form)](https://technet.microsoft.com/library/aa583718\(v=ax.60\))
-
 [Dispatch board](dispatch-board.md)
 
   

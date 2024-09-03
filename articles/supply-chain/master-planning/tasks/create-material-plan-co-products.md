@@ -5,7 +5,6 @@ author: t-benebo
 ms.date: 08/29/2018
 ms.topic: how-to 
 ms.search.form: DefaultDashboard, SalesOrderProcessingWorkspace, SalesCreateOrder, SalesTable, ReqCreatePlanWorkspace, ReqTransPlanCard, SysQueryForm, ReqTransPo   
-audience: Application User 
 ms.reviewer: kamaybac
 ms.author: benebotg
 ---

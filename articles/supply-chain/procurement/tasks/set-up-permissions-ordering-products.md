@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 08/20/2019
 ms.custom:
 ms.reviewer: kamaybac  
-audience: Application User 
 ms.search.form: PurchReqAuthorization, HcmWorkerLookUp
 ---
 

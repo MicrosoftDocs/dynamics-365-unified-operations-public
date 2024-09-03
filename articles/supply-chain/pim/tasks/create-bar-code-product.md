@@ -7,7 +7,6 @@ ms.date: 07/08/2019
 ms.topic: how-to
 ms.custom:
 ms.reviewer: kamaybac
-audience: Application User 
 ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, InventItemBarcode, InventItemBarcodeLookup
 ---
 

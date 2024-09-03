@@ -45,6 +45,7 @@ This section contains a table that lists the features that are included in this 
 | Tax | Enable Include corrections option on Sales tax settlement periods | The **Include corrections** option affects the sales tax settlement process and periodic sales tax reporting. This feature controls the **Include corrections** option for each sales tax settlement period instead of the whole legal entity. | Feature management |
 | Tax (India) | Add and synchronize tax hierarchy versions in batch mode | This feature improves performance when a sales tax hierarchy version is added and synced, by enabling the processes to run in batch mode. | Feature management |
 | Tax | Adjust sales tax amount per vendor charged sales tax | The **Accrue sales tax type - adjustment** feature in the vendor master and the vendor invoice header allows for the vendor charged sales tax amount to be entered on the vendor invoice header. This amount overrides the sales tax result calculated using sales tax adjustment. | Feature management |
+| Electronic Invoicing | E-Invoicing for Panama: ISV last-mile connector with Edicom | This feature is the last-mile integration with the Panamanian Tax Authorities via the Edicom certification authorization provider. It provides the required end-to-end process for the outbound flow of electronic invoice submission. For more information, see [Get started with Electronic invoicing for Panama](../localizations/iberoamerica/ltm-panama-ei-connec-configuration.md). | |
 
 ## Feature enhancements included in this release
 
@@ -66,6 +67,7 @@ This section contains a table that lists the enhancements that are included in t
 | Tax calculation | Customer type and vendor type in the standard data model | The standard data model is extended through the following fields on the header: **Customer account type**, **Customer invoice account type**, **Vendor account type**, and **Vendor invoice account type**. | Tax configuration |
 | Tax | Global withholding tax performance improvement | The performance of the withholding tax calculation process is improved when customer or vendor invoices are settled. | Default on |
 | Tax (India) | Performance improvements for posting journals | Posting performance is improved when there is a large volume of journal entries where India's Goods and Services Tax (GST) is applied. | Default on|
+| Electronic Invoicing | E-Invoicing for Chile: Vendor electronic invoice import | This feature enhances the last-mile integration with the Chilean Tax Authorities via the Edicom certification authorization provider. It provides the required end-to-end process for the inbound flow of electronic invoice import. For more information, see [Vendor electronic invoice import in Chile](../localizations/iberoamerica/ltm-chl-vend-e-invoice.md). | |
 
 ## Features turned on by default in this release
 
@@ -77,13 +79,15 @@ The following table lists the features that are turned on by default in version 
 | Enable recurring Accounts payable invoice | On by default | Accounts payable |
 | Vendor invoice register approved | On by default | Accounts payable |
 | Enable external tax solution providers for Tax calculation service (Universal tax rate API) | On by default | Tax |
+| Enable the Global general journal page to select multiple companies for posting | Mandatory| General ledger |
+| Delete journal performance using batch | Mandatory | General ledger |
 | Sales tax rate on invoice date in purchase order credit note | Mandatory | Tax |
 | (India) Enable initial TDS threshold under section 194Q | On by default | Tax |
 | Tax in transfer order | Mandatory | Tax |
 | Control zero-amount sales tax difference entries for Czech Republic (CZ) | Mandatory | Tax |
 | (India) GST/TDS-TCS tax support for Project integration journal | On by default | Tax |
 | Tax calculation service | Mandatory | Tax |
-| Credit and collections analytics performance improvements| Credit and collections |	Enabled by default |
+| Credit and collections analytics performance improvements| Enabled by default |	Credit and collections|
 | Consistency check for tax transaction general journal account entry association for bank exchange rate | On by default | Tax |
 | Display vouchers in bank statement | Mandatory | Cash and bank management |
 | Advanced bank reconciliation improvement: enable group conditions in reconciliation matching rules | Mandatory | Cash and bank management |
@@ -125,8 +129,9 @@ The following table lists the features that have been removed from Feature manag
 | Ability to post detailed vendor and customer payments, but summarize amounts to bank account | The related functionality is enabled out of the box. | Cash and bank management |
 | Enhanced filtering on the cash position inquiry | The related functionality is enabled out of the box. | Cash and bank management |
 | Calculate the average exchange rate based on the main account code only | The related functionality is enabled out of the box. | Cash and bank management |
-|(Italy) Posting invoices with zero amount | The related functionality is enabled out of the box. | Accounts payable and Accounts receivable |
+| (Italy) Posting invoices with zero amount | The related functionality is enabled out of the box. | Accounts payable, Accounts receivable, and General ledger |
 | Product name translation fix | The related functionality is enabled out of the box. | Accounts receivable |
+
 
 ## Additional resources
 

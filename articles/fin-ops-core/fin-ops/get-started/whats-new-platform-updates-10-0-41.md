@@ -27,7 +27,7 @@ This section contains a table that lists the features that are included in this 
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-
+| Copilot in finance and operations apps | Follow-up questions in the Copilot sidecar |[Enable follow-up questions in the Copilot sidecar](../../dev-itpro/copilot/enable-copliot-generative-help.md#follow-ups) | Feature Management:<br>*(Preview) Follow-up questions in the Copilot sidecar* |
 
 ## Feature enhancements included in this release
 
