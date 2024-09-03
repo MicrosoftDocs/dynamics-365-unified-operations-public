@@ -492,23 +492,21 @@ To configure electronic document parameters for batch submissions, follow these 
 1. In the **Document context** field, select the **Batch submission** mapping name from the **Customer invoice context model** configuration.
 1. In the **Electronic document model mapping** field, select the **Consolidated Invoice Model Mapping (MY)** mapping name from the **Consolidated Invoice Model Mapping (MY)** configuration.
 
-...responses...
-
 ### Configure the electronic invoicing feature
 
 To configure the electronic invoicing feature, follow these steps.
 
-1. Import the latest version of the **Malaysian electronic invoicing (MY)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+1. Import the latest version of the **Malaysian electronic invoicing (MY)** (version X or later) Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 1. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
 1. On the **Versions** tab, verify that the **Draft** version is selected.
-1. On the **Setups** tab, in the grid, select the **YYYYYYYYYYYYYYYYYYYYYYYYYYY derived** feature setup, and then select **Edit**.
+1. On the **Setups** tab, in the grid, select the **Consolidated invoice derived** feature setup, and then select **Edit**.
 
 > [!NOTE]
 > Configure the following processing pipeline actions parameters in the same way as it was configured for **[Sales invoice derived](#FeatureSetup)** feature setup.
 
-1. The **Certificate name** parameter for the **Sign document for Malaysia** action.
-1. The **Client secret**, **Client ID**, **Web service URL**, **Login service URL**, and **Environment type** parameters for the **Integrate with MyInvois (Submit document)** action.
-1. The **Client secret**, **Client ID**, **Web service URL**, **Login service URL**, and **Environment type** parameters for the **Integrate with MyInvois (Get document)** action.   
-1. Select **Save**, and close the page.
-1. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
+- The **Certificate name** parameter for the **Sign document for Malaysia** action.
+- The **Client secret**, **Client ID**, **Web service URL**, **Login service URL**, and **Environment type** parameters for the **Integrate with MyInvois (Submit document)** action.
+- The **Client secret**, **Client ID**, **Web service URL**, **Login service URL**, and **Environment type** parameters for the **Integrate with MyInvois (Get document)** action.   
+5. Select **Save**, and close the page.
+6. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
