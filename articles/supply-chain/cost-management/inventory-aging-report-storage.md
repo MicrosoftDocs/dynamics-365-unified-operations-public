@@ -15,18 +15,18 @@ ms.search.form: InventAgingStorage, InventAgingStorageChart, InventAgingStorageD
 
 [!include [banner](../includes/banner.md)]
 
-In Microsoft Dynamics 365 Supply Chain Management, you can run an **Inventory aging report storage** report and make the output available as a form and a chart. In the form, columns and aggregate balances are dynamically adjusted, depending on the layout that is configured. The chart provides a visual overview that supports filtering and lets you drill down into details. Additionally, a data entity that is named **Inventory aging report** lets you export the results of an **Inventory aging report storage** report run to a format such as a Microsoft Excel file or a PDF file.
+In Microsoft Dynamics 365 Supply Chain Management, you can run an *inventory aging report storage* report and make the output available as a form and a chart. In the form, columns and aggregate balances are dynamically adjusted, depending on the layout that is configured. The chart provides a visual overview that supports filtering and lets you drill down into details. Additionally, a data entity that is named *Inventory aging report* lets you export the results of an *inventory aging report storage* report run to a format such as a Microsoft Excel file or a PDF file.
 
 This method of running an inventory aging report is helpful in cases where the output contains many lines. For example, the output will contain many lines if you have 50,000 items and 300 stores that are created as warehouses, and you request inventory aging by item, site, and warehouse.
 
-## Run an inventory aging report storage
+## Set up and generate reports
 
-To run an inventory aging report storage, follow these steps.
+To set up and generate *inventory aging report storage* reports, follow these steps.
 
 1. Go to **Cost management \> Inquiries and reports \> Inventory aging report storage**.
 1. Select **New**. The **Inventory aging** dialog opens.
 1. On the **Parameters** FastTab, make the following settings:
-    - **Name** – Enter a unique Name for the report.
+    - **Name** – Enter a unique name for the report.
     - **As of date** – Select the date to base the values of the report on. Leave blank to use the date on which the report runs, which is useful if you choose to set up a repeating schedule.
     - **View** – Choose which fields to include in your report. Tooltips are provided for each of them, so you can hover your mouse pointer for more information. Select one of the following values for each field:
         - *No* – Don't include the field in the report.
@@ -41,7 +41,7 @@ To run an inventory aging report storage, follow these steps.
 1. If you want to limit the records included in your report expand the **Records to include** FastTab and add the filters you require, just as you might do for other batch jobs in Supply Chain Management.
 1. On the **Run in the background** FastTab, set up batch, scheduling, and recurrence options as you require, just as you might do for other batch jobs in Supply Chain Management. The report is always run in a batch job.
 1. Select **OK** to run and/or schedule the report.
-1. After the batch job is completed, the output is shown on the **Inventory aging report storage** page.
+1. After the batch job is completed, the output is shown on the **Inventory aging report storage** page. If you set up a recurring report, then a new report is added to the list each time the report runs.
 
 ## View a report
 
@@ -54,7 +54,7 @@ To view an inventory aging report storage, follow these steps.
     - **View chart** – View the report as an aggregated chart.
 
 > [!NOTE]
-> The views don't include subtotals that are defined in the report layout.
+> The views don't include the subtotals that are defined in the report layout.
 
 ## Export a report
 
