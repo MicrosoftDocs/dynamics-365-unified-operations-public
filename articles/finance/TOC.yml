@@ -1694,10 +1694,12 @@
                           href: localizations/poland/gs-e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
                         - name: Saudi Arabia
                           items:
-                            - name: Electronic invoicing in Saudi Arabia
+                            - name: Get started with Electronic invoicing for Saudi Arabia
                               href: localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
-                            - name: Onboarding for electronic invoicing in Saudi Arabia
+                            - name: Onboarding for Electronic invoicing in Saudi Arabia
                               href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
+                            - name: Simplified electronic invoices in Commerce for Saudi Arabia
+                              href: ../commerce/localizations//mea/emea-sau-simplified-e-invoices.md
                     - name: Electronic Invoicing FAQ
                       href: localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/finance
                 - name: Electronic Invoicing (RCS)
@@ -2638,7 +2640,7 @@
                       href: localizations/europe/emea-oioubl-standards-electronic-invoicing.md
                     - name: Forced electronic invoices generation
                       href: localizations/europe/emea-eur-forced-einvoices.md
-                    - name: Import vendor electronic invoices in PEPPOL format
+                    - name: Import vendor electronic invoices
                       href: localizations/europe/emea-peppol-import.md
                     - name: Original invoice reference (Eastern Europe)
                       href: localizations/estonia/ee-00004-original-invoice-reference.md
