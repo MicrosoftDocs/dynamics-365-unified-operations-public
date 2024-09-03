@@ -46,7 +46,7 @@ The following parameters are available:
 
     You can set this option to **Yes** only if an active vendor invoice workflow is set up for your legal entity. To set up a workflow, go to **Accounts payable \> Setup \> Accounts payable workflow**.
 
-- **Check Match product receipt status before workflow submission** – If you set this option to **Yes**, the imported invoice can't automatically be submitted to the workflow system until the matched product receipt quantity equals the invoice quantity. By setting this option to **Yes**, you enable automatic matching of posted product receipts to invoice lines that a three-way matching policy is defined for. That process will run until the matched product receipt quantity equals the invoice quantity. At that point, the invoice is automatically submitted to the workflow system. 
+- **Check Match product receipt status before workflow submission** – If you set this option to **Yes**, the imported invoice can't automatically be submitted to the workflow until the matched product receipt quantity equals the invoice quantity. If you set this optiono to **No**, the invoice will be submitted into the workflow even if the product receipt quanity does not fully matched the invoice, but only after the number of attempts has been reached. 
 
     The **Check Match product receipt status before workflow submission** option is available only if the **Enable invoice matching validation** option is selected. When this option is selected, the **Automatically match product receipts to invoice lines** option is automatically selected.
 
@@ -65,7 +65,7 @@ When either the **Automatically submit imported invoices to workflow** or **Auto
 When a vendor invoice is included in the vendor invoice automation process, it may be excluded from automation under the following circumstances:
 - The user manually excludes the invoice by disabling the toggle **Include in automated processing**
 - If the option **Match product receipts to invoice lines prior to automatically matching** is enabled, the invoice will be excluded from automation under these conditions:
-  1. The product receipt matching is complete, but the option **Automatically submit imported invoices to workflow** is disabled.
+  1. The option **Automatically submit imported invoices to workflow** is disabled, and the option **Automated receipt match status** is completed, failed or not applicable.
   2. The automatically workflow submission fails validation when the option **Automatically submit imported invoices to workflow** is enabled.
   3. The invoice is not getting approved within the workflow. 
 
