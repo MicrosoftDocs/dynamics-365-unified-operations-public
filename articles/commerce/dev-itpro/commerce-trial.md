@@ -112,7 +112,7 @@ Yes. To extend your trial, follow these steps.
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.cloud.microsoft/).
 1. Go to **Billing** \> **Your products**.
-1. Select **Dynamics 365 Project Operations (CE) - Preview Trial**.
+1. Select **Dynamics 365 Commerce trial (Preview)**.
 1. Under **Expiration Date**, select **Extend Date**.
 
 ### Can I upgrade from the Commerce trial (Preview) deployment to a Commerce production/sandbox deployment?
