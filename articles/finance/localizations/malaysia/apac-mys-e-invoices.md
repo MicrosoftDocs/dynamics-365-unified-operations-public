@@ -537,4 +537,4 @@ You can inquire about the submission results by doing the following steps.
 1. On the Action Pane, select **Inquiries** \> **Batch submission invoices** to view the invoices that were submitted within this batch.
 
 > [!NOTE]
-> 
+> Due to the restrictions for submitted data size introduced by the authorities, the maximum number of invoices included into one batch is limited by 60. If the number of the invoices being processed is higher then several batches will be automatically generated.
