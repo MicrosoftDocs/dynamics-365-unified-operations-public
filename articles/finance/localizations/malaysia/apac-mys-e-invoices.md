@@ -510,3 +510,22 @@ To configure the electronic invoicing feature, follow these steps.
 5. Select **Save**, and close the page.
 6. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
+### Issue consolidated electronic invoices
+
+To generate and submit electronic invoices in batches for posted Customer invoices, do the following steps.
+
+1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**.
+2. To submit invoices in batchs, set the **Submit document batch** option to **Yes**.
+
+> [!NOTE]
+> Batch and individual submissions are mutually exclusive and can not be run simultaneously. During one run, only batch or only individual submissions can be processed.
+
+3. To submit retail invoices individually, set the **Submit retail invoices individually** option to **Yes**.
+
+> [!NOTE]
+> If you need to submit some retail invoices individually then you must do it **before** the batch submission. All individually submitted retail invoices will be excluded form batches.
+
+4. On the **Records to include** FastTab, select **Filter** to open the **Inquiry** dialog box, where you can build a query to select only required documents.
+5. Select **OK** to start submission.
+
+You can inquire about the results of a submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and selecting the required document type. For more information, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
