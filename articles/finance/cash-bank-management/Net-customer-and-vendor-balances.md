@@ -94,4 +94,38 @@ You can print netting advice for selected customer invoices and vendor invoices.
 2. Select **Netting history**.
 3. Select the netting transaction, and then select **Print netting advice**.
 
+## Intercompany netting
+
+You can create intercompany netting agreement for customers and vendors in different legal entities.
+
+1. Go to **Cash and bank management** \> **Setup** \> **Cash and bank management parameters** \> **Netting**.
+2. Select **Allow intercompany netting**.
+3. Go to **Cash and bank management** \> **Netting** \> **Netting agreement**.
+4. On the **Parties** FastTab, the **Customer legal entity** field and the **Vendor legal entity** field are enabled.
+5. Select a legal entity in the **Customer legal entity** field, then add a customer account.
+6. Select a legal entity in the **Vendor legal entity** field, then add add a vendor account.
+7. Activate the netting agreement.
+   
+    > [!Note]
+    > Either **Customer legal entity** or **Vendor legal entity** must be the same as the current legal entity for netting agreement.
+    > Refer to [Intercompany accounting setup](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/intercompany-accounting-setup) for further accounting setup for intercompany transactions.
+
+Under the intercompany netting agreement, each posting will generate three vouchers: two within the legal entity that holds the agreement, and one in the counterparty legal entity.
+E.g.,
+
+| USMF - Netting000000001|    DR     |     CR      |
+|------------------------|-----------|-------------|
+| Accounts Receivable    |           |   100.00    |
+| Interim netting        | 100.00    |             |
+
+| USMF - Netting000000002|    DR     |     CR      |
+|------------------------|-----------|-------------|
+| Interim netting        |           |   100.00    |
+| Intercompany Debit     | 100.00    |             |
+
+| DEMF - ICJL000001      |    DR     |     CR      |
+|------------------------|-----------|-------------|
+| Intercompany Credit    |           |   100.00    |
+| Accounts Payable       | 100.00    |             |
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
