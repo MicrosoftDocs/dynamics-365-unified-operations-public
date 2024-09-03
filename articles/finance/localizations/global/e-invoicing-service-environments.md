@@ -6,13 +6,9 @@ ms.author: ikondratenko
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.date: 06/17/2024 
+ms.date: 09/03/2024 
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Global
-ms.search.validFrom:
-ms.search.form: 
-ms.dyn365.ops.version:
 ---
 
 # Service environments
