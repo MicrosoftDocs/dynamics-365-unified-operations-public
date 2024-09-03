@@ -58,9 +58,15 @@ The following parameters are available:
 
 ## Included invoice into vendor invoice automation process
 When either the **Automatically submit imported invoices to workflow** or **Automatically match product receipts to invoice lines option** is enabled, the **Include in automated processing** toggle on the invoice header will appear. 
-- When the invoice is imported externally, the value of the toggle will be automatically enabled. This ensures that the vendor invoice will be incorporated into the vendor invoice automation process.
+- When the invoice is imported externally, the value of the toggle will be automatically enabled. This ensures that the vendor invoice will be incorporated into the vendor invoice automation process and the invoice cannot be edited anymore. 
 - For manually created invoices, the **Include in automated processing** toggle is disabled by default and if the option **Automatically match product receipts to invoice lines** is enabled, the value of status **Automated receipt match status** is set to **Not applicable** initially. Users can manually enable this toggle to include the invoice in the vendor invoice automation process once the invoice entry is complete. The status **Automated receipt match status** is changed to "Not yet run". This behavior is controlled by the **Include manually created invoices in the invoice automation** feature.
 
-
+## Excluded invoice from vendor invoice automation process
+When a vendor invoice is included in the vendor invoice automation process, it may be excluded from automation under the following circumstances:
+- The user manually excludes the invoice by disabling the toggle **Include in automated processing**
+- If the option **Match product receipts to invoice lines prior to automatically matching** is enabled, the invoice will be excluded from automation under these conditions:
+  1. The product receipt matching is complete, but the option **Automatically submit imported invoices to workflow** is disabled.
+  2. The automatically workflow submission fails validation when the option **Automatically submit imported invoices to workflow** is enabled.
+  3. The invoice is not getting approved within the workflow. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
