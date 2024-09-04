@@ -19,7 +19,7 @@ ms.dyn365.ops.version: AX 10.0.29
 
 [!include [banner](../../includes/banner.md)]
 
-Learn more about how to get started with Electronic invoicing for France. This article guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Get started with the Electronic invoicing](../gs-e-invoicing-get-started.md).
+Learn more about how to get started with Electronic invoicing for France. This article guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/e-invoicing-set-up-overview.md).
 
 > [!IMPORTANT]
 > Starting from September 2024, all Electronic invoicing Globalization features can only be imported into the **Globalization Studio** workspace because Regulatory Configuration Service (RCS) has been decommissioned. For more information about migration to **Globalization Studio**, see [Regulatory Configuration Service merge to the Globalization Studio workspace](../global/workspace/merge-rcs-to-gsw.md)
@@ -39,7 +39,7 @@ Before you begin the procedures in this article, complete the following prerequi
     Follow these steps to register with Chorus Pro.
 
     1. Go to the [PISTE portal](https://piste.gouv.fr/en/component/apiportal/registration) to start your registration. 
-    1. Register an application, and activate Open Authorization (OAuth) credentials. For more information, see [Set up a client ID and a client secret](global/universal-tax-rate-api-how-to-setup-clientid-and-clientsecret.md#create-an-app-registration).
+    1. Register an application, and activate Open Authorization (OAuth) credentials. For more information, see [Set up a client ID and a client secret](../global/universal-tax-rate-api-how-to-setup-clientid-and-clientsecret.md#create-an-app-registration).
     1. Copy and save the client ID of the OAuth credentials and the secret key. You will use this information in later steps.
     1. Go to the [Chorus Pro portal](https://portail.chorus-pro.gouv.fr/aife_csm/?id=aife_enrollment) to register. 
     1. Create a technical account for API access. For more information, see [Creation of a technical account for API access in production](https://communaute.chorus-pro.gouv.fr/documentation/creation-of-a-technical-account-for-an-api-access-in-production/).
@@ -225,6 +225,6 @@ For more information, see [Use the electronic invoicing service to import vendor
 
 ## Additional resources
 
-- [Electronic invoicing add-on overview](../global/gs-e-invoicing-service-overview.md)
-- [Get started with Electronic invoicing add-on service administration](../gs-e-invoicing-get-started-service-administration.md)
-- [Get started with the Electronic invoicing add-on](../gs-e-invoicing-get-started.md)
+- [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md)
+- [Get started with Electronic invoicing service administration](../e-invoicing-get-started-service-administration.md)
+- [Get started with Electronic invoicing](../e-invoicing-get-started.md)
