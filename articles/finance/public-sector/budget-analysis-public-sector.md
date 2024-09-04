@@ -60,7 +60,7 @@ The following table explains the differences between these pages.
 |---|---|
 | Shows the budget balances for a budget cycle and a budget model for a single financial dimension value or budget group. | Shows the combined budget amounts for multiple financial dimension values at the same time. |
 | Includes data from both confirmed and unconfirmed encumbrances.                               | Includes data from confirmed encumbrances only.                                             |
-| Includes data from expense accounts only.                                                 | Includes data from both revenue and expense accounts.                                       |
+| Includes data from expense accounts only.                                                 | Includes data from both revenue and expense accounts, as well as details for revenue accounts that are not budget controlled.                                       |
 
 > [!NOTE] 
 > If you want the available or remaining budget amounts to include draft transactions, use the **Budget control statistics** page. The **Budget analysis** page displays only posted transactions.
