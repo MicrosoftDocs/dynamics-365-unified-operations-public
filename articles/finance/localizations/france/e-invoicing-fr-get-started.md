@@ -19,7 +19,7 @@ ms.dyn365.ops.version: AX 10.0.29
 
 [!include [banner](../../includes/banner.md)]
 
-Learn more about how to get started with Electronic invoicing for France. This article guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/e-invoicing-set-up-overview.md).
+Learn more about how to get started with Electronic invoicing for France. This article guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/gs-e-invoicing-set-up-overview.md).
 
 > [!IMPORTANT]
 > Starting from September 2024, all Electronic invoicing Globalization features can only be imported into the **Globalization Studio** workspace because Regulatory Configuration Service (RCS) has been decommissioned. For more information about migration to **Globalization Studio**, see [Regulatory Configuration Service merge to the Globalization Studio workspace](../global/workspace/merge-rcs-to-gsw.md)
@@ -32,7 +32,7 @@ Some steps are required to configure the **French Chorus Pro submission (FR)** E
 
 Before you begin the procedures in this article, complete the following prerequisites:
 
-- Become familiar with Electronic invoicing. For more information, see [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
+- Become familiar with Electronic invoicing. For more information, see [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
 - Do the common part of Electronic Invoicing service configuration as it's described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
 - Your organization must be registered to operate with Chorus Pro. Microsoft provides integration with Chorus pro in OAuth2 Mode via an application programming interface (API). For detailed information about Chorus Pro registration and application activation, see the [official documentation](https://communaute.chorus-pro.gouv.fr/documentation/help-for-api-developers-in-oauth2-mode/).
 
@@ -44,8 +44,6 @@ Before you begin the procedures in this article, complete the following prerequi
     1. Go to the [Chorus Pro portal](https://portail.chorus-pro.gouv.fr/aife_csm/?id=aife_enrollment) to register. 
     1. Create a technical account for API access. For more information, see [Creation of a technical account for API access in production](https://communaute.chorus-pro.gouv.fr/documentation/creation-of-a-technical-account-for-an-api-access-in-production/).
     1. Copy the user ID of the technical account and the password. You will use this information in later steps.
-    1. Gain familiarity with and understanding of Electronic invoicing as it's described in [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md).
-    1. Do the common part of Electronic Invoicing service configuration as it's described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
 
 ## Country/region-specific configuration of the application setup for the French Chorus Pro submission (FR) Electronic invoicing feature
 
@@ -61,11 +59,10 @@ For France, there are at least three interactions with Chorus Pro in the pipelin
 > [!IMPORTANT]
 > The **French Chorus Pro submission (FR)** feature is provided by Microsoft. Before it can be used, additional configuration is required, as described in this article. For information about how to configure invoicing features and apply changes, see [Work with feature setups](../global/gs-e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they are processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in France.
 
-1. In the Azure key vault, create secrets and the corresponding reference to them. For more information, see [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md).
 1. Import the latest version of the **French Chorus Pro submission (FR)** globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
-1. Create a copy of the imported globalization feature, and select your configuration provider. For more information, see [Create a Globalization feature](../global/e-invoicing-create-new-globalization-feature.md).
+1. Create a copy of the imported globalization feature, and select your configuration provider. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
 1. On the **Versions** tab, verify that the **Draft** version is selected.
-1. On the **Feature parameters** tab, specify values for the following connection and integration parameters that are required for interoperation with Edicom's API:
+1. On the **Feature parameters** tab, specify values for the following connection and integration parameters that are required for interoperation with Chorus Pro's API:
     - In the **Client ID secret name in the KeyVault** field, select the secret name that you created for the client ID in the key vault.
     - In the **Client Secret secret name in the KeyVault** field, select the secret name you created for the client secret in the key vault.
     - In the **Login service URL** field, cpecify the service URL to connect to.
@@ -77,7 +74,7 @@ For France, there are at least three interactions with Chorus Pro in the pipelin
 1. On the **Processing pipeline** tab, in the **Processing pipeline** section, select **Integrate with French Chorus Pro** with the action name **French Chorus Pro request status**.
 1. Review the **Parameters** sections of the pipeline's steps and make adjustments, if needed.
 1. Select **Save**, and then close the page.
-1. Repeat steps 6 through 16 for the **UBL Project invoice derived** feature setup, **UBL Sales Credit Note derived** feature setup, and **UBL Project Credit Note derived** feature setup.
+1. Repeat steps 6 through 10 for the **UBL Project invoice derived** feature setup, **UBL Sales Credit Note derived** feature setup, and **UBL Project Credit Note derived** feature setup.
 
 ## Finance configuration
 
@@ -149,7 +146,7 @@ Follow these steps to complete the configuration.
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 2. On the **Electronic document** tab, add records for the **Customer Invoice journal** and **Project invoice** tables.
-3. For each table name, set the **Document context** and **Electronic document model mapping** fields as specified in [Electronic invoicing parameters](../global/e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
+3. For each table name, set the **Document context** and **Electronic document model mapping** fields as specified in [Electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 4. In the **Customer Invoice journal** table name field, select **Response types**.
 5. Create a new response type that has the same name that was defined for the related variable in the corresponding feature setups.
 
