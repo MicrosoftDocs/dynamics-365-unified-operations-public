@@ -4,14 +4,12 @@ description: Learn how to get started with Electronic invoicing for France in Mi
 author: dkalyuzh
 ms.author: janeaug
 ms.topic: how-to
-ms.date: 03/21/2024
+ms.date: 09/04/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak 
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2022-00-02
-ms.search.form:
 ms.dyn365.ops.version: AX 10.0.29
 ---
 
