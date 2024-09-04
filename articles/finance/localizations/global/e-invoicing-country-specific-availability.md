@@ -4,14 +4,10 @@ description: Learn about the out-of-box features that are available for each cou
 author: ilikond
 ms.author: ikondratenko
 ms.topic: article
-ms.date: 07/29/2024
-ms.custom:
+ms.date: 09/04/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak
-audience: Application User
-ms.search.region: 
-ms.search.validFrom:
-ms.search.form: 
-ms.dyn365.ops.version: 
 ---
 
 # Availability of Electronic Invoicing Service features by country or region
