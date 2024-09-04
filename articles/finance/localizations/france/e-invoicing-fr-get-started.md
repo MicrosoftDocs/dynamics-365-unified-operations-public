@@ -17,10 +17,10 @@ ms.dyn365.ops.version: AX 10.0.29
 
 [!include [banner](../../includes/banner.md)]
 
-Learn more about how to get started with Electronic invoicing for France. This article guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing setup](../global/gs-e-invoicing-set-up-overview.md).
+Learn more about how to get started with Electronic invoicing for France. This article guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
 
 > [!IMPORTANT]
-> Starting from September 2024, all Electronic invoicing Globalization features can only be imported into the **Globalization Studio** workspace because Regulatory Configuration Service (RCS) has been decommissioned. For more information about migration to **Globalization Studio**, see [Regulatory Configuration Service merge to the Globalization Studio workspace](../global/workspace/merge-rcs-to-gsw.md)
+> As of September 2024, all Electronic invoicing Globalization features can be imported only into the **Globalization studio** workspace, because Regulatory Configuration Service (RCS) has been decommissioned. For more information about migration to Globalization Studio, see [Regulatory Configuration Service merge to the Globalization Studio workspace](../global/workspace/merge-rcs-to-gsw.md).
 
 ## Country/region-specific configuration for the French Chorus Pro submission (FR) Electronic invoicing feature
 
@@ -30,7 +30,7 @@ Some steps are required to configure the **French Chorus Pro submission (FR)** E
 
 Before you begin the procedures in this article, complete the following prerequisites:
 
-- Become familiar with Electronic invoicing. For more information, see [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
+- Become familiar with Electronic invoicing. For more information, see [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md).
 - Do the common part of Electronic Invoicing service configuration as it's described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
 - Your organization must be registered to operate with Chorus Pro. Microsoft provides integration with Chorus pro in OAuth2 Mode via an application programming interface (API). For detailed information about Chorus Pro registration and application activation, see the [official documentation](https://communaute.chorus-pro.gouv.fr/documentation/help-for-api-developers-in-oauth2-mode/).
 
@@ -45,34 +45,34 @@ Before you begin the procedures in this article, complete the following prerequi
 
 ## Country/region-specific configuration of the application setup for the French Chorus Pro submission (FR) Electronic invoicing feature
 
-Some of the parameters from the **French Chorus Pro submission (FR)** electronic invoicing feature are published with default values. 
-Before you deploy the electronic invoicing feature to the service environment, add a feature that is based on the Microsoft-provided feature, 
-and complete the common parameters on the **Feature parameters** tab. Review and update the default values as required, so that they better reflect your business operations.
+Some of the parameters from the **French Chorus Pro submission (FR)** Electronic invoicing feature are published with default values. Before you deploy the Electronic invoicing feature to the service environment, add a feature that is based on the Microsoft-provided feature, and complete the common parameters on the **Feature parameters** tab. Review and update the default values as required, so that they better reflect your business operations.
 
-For France, there are at least three interactions with Chorus Pro in the pipeline: first to submit the invoice, then to fetch the status, and finally to get the details of the submitted invoice. Each interaction requires common parameters, such as Chorus Pro connection and authentication details. These common parameters are reused in the feature setup for all document types. Chorus Provides provides the values when a company is onboarded.
+For France, there are at least three interactions with Chorus Pro in the pipeline: first to submit the invoice, then to fetch the status, and finally to get the details of the submitted invoice. Each interaction requires common parameters, such as Chorus Pro connection and authentication details. These common parameters are reused in the feature setup for all document types. Chorus Pro provides the values when a company is onboarded.
 
 > [!NOTE]
 > The configuration of common parameters is simplified. You no longer have to go to each action and feature setup, and repeatedly specify the common connection parameters. Use of the **Feature parameters** tab is available only as of version 10.0.41 or later.
 
 > [!IMPORTANT]
-> The **French Chorus Pro submission (FR)** feature is provided by Microsoft. Before it can be used, additional configuration is required, as described in this article. For information about how to configure invoicing features and apply changes, see [Work with feature setups](../global/gs-e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they are processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in France. Also, **out-of-the-box**, it is configured to connect to the **sandbox environment of the PISTE** service.
+> The **French Chorus Pro submission (FR)** feature is provided by Microsoft. Before it can be used, additional configuration is required, as described in this article. For information about how to configure invoicing features and apply changes, see [Configure feature setups](../global/gs-e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they are processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in France. Additionally, **out of the box**, the feature is configured to connect to the **sandbox environment of the PISTE service**.
 
 1. Import the latest version of the **French Chorus Pro submission (FR)** globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
-1. Create a copy of the imported globalization feature, and select your configuration provider. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
+1. Create a copy of the imported globalization feature, and select your configuration provider. For more information, see [Create Globalization features](../global/gs-e-invoicing-create-new-globalization-feature.md).
 1. On the **Versions** tab, verify that the **Draft** version is selected.
 1. On the **Feature parameters** tab, specify values for the following connection and integration parameters that are required for interoperation with Chorus Pro's API:
+
     - In the **Client ID secret name in the KeyVault** field, select the secret name that you created for the client ID in the key vault.
     - In the **Client Secret secret name in the KeyVault** field, select the secret name you created for the client secret in the key vault.
-    - In the **Login service URL** field, cpecify the service URL to connect to.
+    - In the **Login service URL** field, specify the service URL to connect to.
     - In the **Technical account login secret name in the KeyVault** field, select the secret name that you created for technical account sign-in in the key vault.
     - In the **Technical account password secret name in the KeyVault** field, select the secret name that you created for the technical account password in the key vault.
     - Select **URL address to send request**, and confirm the web address.
+
 1. On the **Setups** tab, in the grid, select the **UBL Sales invoice derived** feature setup.
-1. Select **Edit**, and then, on the **Processing pipeline** tab, in the **Processing pipeline** section, select **Integrate with French Chorus Pro** with the action name **French Chorus Pro submit**.
-1. On the **Processing pipeline** tab, in the **Processing pipeline** section, select **Integrate with French Chorus Pro** with the action name **French Chorus Pro request status**.
-1. Review the **Parameters** sections of the pipeline's steps and make adjustments, if needed.
+1. Select **Edit**, and then, on the **Processing pipeline** tab, in the **Processing pipeline** section, select the **Integrate with French Chorus Pro** action that has the action name **French Chorus Pro submit**.
+1. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **Integrate with French Chorus Pro** action that has the action name **French Chorus Pro request status**.
+1. Review the **Parameters** sections of the pipeline's steps, and make any adjustments that are required.
 1. Select **Save**, and then close the page.
-1. Repeat steps 6 through 10 for the **UBL Project invoice derived** feature setup, **UBL Sales Credit Note derived** feature setup, and **UBL Project Credit Note derived** feature setup.
+1. Repeat steps 6 through 10 for the **UBL Project invoice derived**, **UBL Sales Credit Note derived**, and **UBL Project Credit Note derived** feature setups.
 
 ## Finance configuration
 
@@ -80,9 +80,10 @@ For France, there are at least three interactions with Chorus Pro in the pipelin
 
 - The primary address of the legal entity must be in France.
 - The following features must be enabled in Feature management:
-    - **Electronic invoicing integration**
-    - **E-Invoicing service workspace designer**
-    - **(France) Electronic invoicing integration with Chorus Pro**.
+
+    - Electronic invoicing integration
+    - E-Invoicing service workspace designer
+    - (France) Electronic invoicing integration with Chorus Pro
 
 > [!NOTE]
 > If you want to be able to track the status of submitted documents in Chorus Pro, you must enable two additional features in the **Feature management** workspace: **Extended document identification in submission log** and **Execute update actions for submitted documents**.
@@ -101,7 +102,7 @@ For France, there are at least three interactions with Chorus Pro in the pipelin
 
 #### Enter a legal entity and a customer Siret number
 
-Use the information in [NAF codes and siret numbers](emea-fra-naf-codes-siret-numbers.md) and [Set up NAF codes and Siret numbers](fr-00003-naf-codes-siret-numbers.md) to set up NAF codes and Siret numbers. Alternatively, you can use [registration IDs](../europe/emea-registration-ids.md) to set up Siret numbers.
+Use the information in [NAF codes and siret numbers](emea-fra-naf-codes-siret-numbers.md) and [FR-00003 NAF codes and Siret numbers](fr-00003-naf-codes-siret-numbers.md) to set up NAF codes and Siret numbers. Alternatively, you can use [registration IDs](../europe/emea-registration-ids.md) to set up Siret numbers.
 
 ### Set up the project manager account
 
@@ -144,7 +145,7 @@ Follow these steps to complete the configuration.
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 2. On the **Electronic document** tab, add records for the **Customer Invoice journal** and **Project invoice** tables.
-3. For each table name, set the **Document context** and **Electronic document model mapping** fields as specified in [Electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
+3. For each table name, set the **Document context** and **Electronic document model mapping** fields as specified in [Set up Electronic document parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 4. In the **Customer Invoice journal** table name field, select **Response types**.
 5. Create a new response type that has the same name that was defined for the related variable in the corresponding feature setups.
 
@@ -196,7 +197,7 @@ In France, you can add extra information before you run the standard invoice pos
 
 **For project invoices**
 
-1. Go to **Project management and accounting** > **Project invoices** \> **Project invoice proposals**.
+1. Go to **Project management and accounting** \> **Project invoices** \> **Project invoice proposals**.
 2. Open an existing invoice proposal, or create a new one.
 3. Switch to the **Header** view, and select the following information:
 
@@ -222,4 +223,4 @@ For more information, see [Use the electronic invoicing service to import vendor
 
 - [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md)
 - [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md)
-- [Work with Globalization features overview](../global/gs-e-invoicing-working-globalization-features.md)
+- [Globalization feature components](../global/gs-e-invoicing-working-globalization-features.md)
