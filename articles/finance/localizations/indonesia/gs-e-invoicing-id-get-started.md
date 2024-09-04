@@ -62,9 +62,6 @@ You can review the configuration and customize it as you require. Use the **Form
 
 ### Configure the application-specific parameters
 
-> [!NOTE]
-> When you set up application-specific parameters, check the connection on the **Connected applications** page. Go to the RCS home page, and select **Electronic reporting**. At the bottom of the page, select **Connected application** \> **Check connection**.
-
 Before you begin, make sure that the **Invoices issued (ID)** ER format configuration is imported.
 
 Follow these steps to begin the configuration.
@@ -183,7 +180,7 @@ Before you configure the Vendor invoice feature setup, you should create a draft
 1. In the **Data model** tree, select **Map model to datasource**.
 1. In the **Definitions** tree, select **DataChannel**, and then select **Designer**.
 1. In the **Data sources** tree, expand the **$Context\_Channel** container.
-1. In the **Value** field, select **Edit**, and enter the name of the data channel. The name should have a maximum of 10 characters. It's the name that's given in the configuration of the data channel for the Electronic invoicing feature in RCS.
+1. In the **Value** field, select **Edit**, and enter the name of the data channel. The name should have a maximum of 10 characters. It's the name that's given in the configuration of the data channel for the Electronic invoicing feature.
 1. Select **Save**, and close the page.
 1. Close the page.
 1. Select the derived configuration that you just created from **Customer invoice context model**, and then, on the **Versions** FastTab, select **Change Status** \> **Completed**.
@@ -236,7 +233,7 @@ You can view the submission logs for all exported documents.
 
 1. On the Action Pane, select **Inquiries** \> **Submission details** to view the details of the submission execution logs. The information in the logs is divided among three FastTabs:
 
-    - **Processing actions** – This FastTab shows the execution log for the actions that are configured in the feature version that was set up in RCS. The **Status** column shows whether the action was successfully run.
+    - **Processing actions** – This FastTab shows the execution log for the actions that are configured in the feature version. The **Status** column shows whether the action was successfully run.
     - **Action files** – This FastTab shows the intermediate files that were generated during execution of the actions. Select **View** to download and view the file.
     - **Processing action log** – This FastTab shows the results of the submission of electronic invoices.
 
