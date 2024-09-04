@@ -38,7 +38,8 @@ The following table shows the Electronic invoicing globalization features that a
 | Australia | [Electronic invoicing for Australia and New Zealand](../apac/GS-apac-aus-nzl-electronic-invoices.md) | Sales invoices and project invoices |
 | Austria | Austrian electronic invoices (AT) | Sales invoices and project invoices |
 | Belgium | Belgian electronic invoice (BE) | Sales invoices and project invoices |
-| Chile | LATAM e-invoice CL | Sales invoices, project invoices, and packing slips |
+| Chile | [Chilean electronic invoice (CL)](../iberoamerica/ltm-chile-elec-invo-conncection.md) | Sales invoices, project invoices, and packing slips |
+| Chile | [Chilean electronic invoice (CL)](../iberoamerica/ltm-chl-vend-e-invoice.md) | Import vendor invoices |
 | Costa Rica | LATAM e-invoice CR | Sales invoices and project invoices |
 | Denmark | Danish electronic invoice (DK) | Sales invoices and project invoices |
 | Egypt | Egyptian electronic invoice (EG) | Sales invoices and project invoices |
@@ -46,7 +47,8 @@ The following table shows the Electronic invoicing globalization features that a
 | Europe | PEPPOL electronic invoice | Pan-European Public Procurement Online (PEPPOL) sales invoices and project invoices |
 | Europe | PEPPOL vendor invoice | PEPPOL import vendor invoices |
 | Finland | Finnish electronic invoice (FI) | Sales invoices and project invoices |
-| France | French electronic invoice (FR) | Sales invoices and project invoices |
+| France | [French Chorus Pro submission (FR)](../france/e-invoicing-fr-get-started.md) | Sales invoices and project invoices |
+| France | [French Chorus Pro vendor invoice import (FR)](../france/e-invoicing-fr-get-started.md) | Import vendor invoices |
 | Germany | German electronic invoice (DE) | Sales invoices and project invoices |
 | Indonesia | Indonesian electronic invoice (ID) | Sales invoices, project invoices, and vendor invoices |
 | Italy | FatturaPA (IT) | Sales invoices and project invoices |
@@ -54,7 +56,7 @@ The following table shows the Electronic invoicing globalization features that a
 | Netherlands | Dutch electronic invoice (NL) | Sales invoices and project invoices |
 | New Zealand | [Electronic invoicing for Australia and New Zealand](../apac/GS-apac-aus-nzl-electronic-invoices.md) | Sales invoices and project invoices |
 | Norway | Norwegian electronic invoice (NO) | Sales invoices and project invoices |
-| Panama | LATAM e-invoice PA | Sales invoices and project invoices |
+| Panama | [Panama Electronic Invoice (PA)](../iberoamerica/ltm-panama-ei-connec-configuration.md) | Sales invoices and project invoices |
 | Saudi Arabia | [Saudi Arabian Zatca submission (SA)](../mea/gs-e-invoicing-sa-get-started.md) | Sales invoices and project invoices |
 | Saudi Arabia | [Saudi Arabian Zatca compliance check (SA)](../mea/gs-e-invoicing-sa-onboarding.md) | Onboarding process |
 | Spain | Spanish electronic invoice (ES) | Sales invoices and project invoices |
