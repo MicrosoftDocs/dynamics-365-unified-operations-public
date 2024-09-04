@@ -223,5 +223,5 @@ For more information, see [Use the electronic invoicing service to import vendor
 ## Additional resources
 
 - [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md)
-- [Electronic invoicing configuration](../gs-e-invoicing-set-up-overview.md)
-- [Work with Globalization features overview](../gs-e-invoicing-working-globalization-features.md)
+- [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md)
+- [Work with Globalization features overview](../global/gs-e-invoicing-working-globalization-features.md)

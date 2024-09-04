@@ -27,8 +27,8 @@ It guides you through the configuration steps in the **Globalization studio** wo
 To set up vendor invoice import in the **Globalization studio** workspace, follow these steps:
 
 1. Consult the list of generally available Electronic invoicing features.
-2. Select and import the Electronic invoicing feature. For more information, see [Import features from the repository](../gs-e-invoicing-import-feature-global-repository.md).
-3. Create an Electronic invoicing feature for your organization. For more information, see [Create Globalization features](../gs-e-invoicing-create-new-globalization-feature.md).
+2. Select and import the Electronic invoicing feature. For more information, see [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+3. Create an Electronic invoicing feature for your organization. For more information, see [Create Globalization features](../global/gs-e-invoicing-create-new-globalization-feature.md).
 
 ## Configure an email account channel
 
@@ -50,7 +50,7 @@ Configure an email account channel if the Electronic invoicing feature you creat
    You aren't required to create these folders in the mail box. The folders are created automatically after first e-invoice import and processing. 
    
 10. In the **Attachments filter** field group, add the file filtering information. Only attachments that satisfy the defined filter are processed. For example, you can setup "\*.xml" for attachments with an xml extension. The name of the attachment is used in Dynamics 365 Finance or Dynamics 365 Supply Chain Management during setup. 
-11. On the **Applicability rules** tab, review and update the criteria as necessary. The **Channel** field must be equal to the **Data channel** provided earlier. For more information, see [Applicability rules](../gs-e-invoicing-feature-setup.md#applicability-rules).
+11. On the **Applicability rules** tab, review and update the criteria as necessary. The **Channel** field must be equal to the **Data channel** provided earlier. For more information, see [Applicability rules](../global/gs-e-invoicing-feature-setup.md#applicability-rules).
 12. Select **Save** and close the page.
 
 ### Configure a Microsoft SharePoint channel
@@ -64,12 +64,12 @@ Configure a Microsoft SharePoint channel if the Electronic invoicing feature imp
 5. Select **Application Id** and enter the name of the Key vault secret that contains the ID of the SharePoint client.
 6. Select **Application secret** and enter the name of the Key vault secret that contains the password of the SharePoint client.
 7. Select **File filter**. Review and update the mask to filter the files that contain the electronic vendor invoice to import.
-8. On the **Applicability rules** tab, review and update the criteria if necessary. For more information, see [Applicability rules](../gs-e-invoicing-feature-setup.md#applicability-rules).
+8. On the **Applicability rules** tab, review and update the criteria if necessary. For more information, see [Applicability rules](../global/gs-e-invoicing-feature-setup.md#applicability-rules).
 9. Select **Save** and close the page
 
 ### Deploy an Electronic invoicing feature
 
-To deploy the Electronic invoicing feature, see [Complete and deploy a Globalization feature](../gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
+To deploy the Electronic invoicing feature, see [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ## Set up vendor invoice import in Finance or Supply Chain Management
 Complete the steps in the following two sections to set up different types of vendor invoice import.
