@@ -6,13 +6,11 @@ ms.author: ikondratenko
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/03/2021
+ms.date: 09/04/2024
 ms.reviewer: johnmichalak
 ms.collection: get-started
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2020-07-08
-ms.search.form:
 ms.dyn365.ops.version: AX 10.0.12
 ---
 
