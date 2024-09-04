@@ -1794,8 +1794,6 @@
                           href: localizations/denmark/e-invoicing-dk-get-started.md
                         - name: Get started with Electronic Invoicing for Egypt
                           href: localizations/mea/e-invoicing-eg-get-started.md?context=/dynamics365/context/finance
-                        - name: Get started with Electronic Invoicing for France
-                          href: localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance
                         - name: Get started with Electronic Invoicing for Indonesia
                           href: localizations/indonesia/e-invoicing-id-get-started.md?context=/dynamics365/context/finance
                         - name: Get started with Electronic invoicing for Poland

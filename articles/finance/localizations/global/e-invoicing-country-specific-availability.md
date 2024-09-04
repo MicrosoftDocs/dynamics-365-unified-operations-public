@@ -48,7 +48,7 @@ The following table shows the Electronic invoicing globalization features that a
 | Europe | PEPPOL vendor invoice | PEPPOL import vendor invoices |
 | Finland | Finnish electronic invoice (FI) | Sales invoices and project invoices |
 | France | [French Chorus Pro submission (FR)](../france/e-invoicing-fr-get-started.md) | Sales invoices and project invoices |
-| France | [French Chorus Pro vendor invoice import (FR)](../france/e-invoicing-fr-get-started.md) | Import vendor invoices |
+| France | [French Chorus Pro vendor invoice import (FR)](../france/e-invoicing-fr-get-started.md#receive-electronic-invoices) | Import vendor invoices |
 | Germany | German electronic invoice (DE) | Sales invoices and project invoices |
 | Indonesia | Indonesian electronic invoice (ID) | Sales invoices, project invoices, and vendor invoices |
 | Italy | FatturaPA (IT) | Sales invoices and project invoices |

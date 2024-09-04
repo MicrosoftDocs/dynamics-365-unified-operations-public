@@ -54,7 +54,7 @@ and complete the common parameters on the **Feature parameters** tab. Review and
 For France, there are at least three interactions with Chorus Pro in the pipeline: first to submit the invoice, then to fetch the status, and finally to get the details of the submitted invoice. Each interaction requires common parameters, such as Chorus Pro connection and authentication details. These common parameters are reused in the feature setup for all document types. Chorus Provides provides the values when a company is onboarded.
 
 > [!NOTE]
-> The configuration of common parameters is simplified. You no longer have to go to each action and feature setup, and repeatedly specify the common connection parameters. Use of the **Feature parameters** tab is available only as of version 10.0.41.
+> The configuration of common parameters is simplified. You no longer have to go to each action and feature setup, and repeatedly specify the common connection parameters. Use of the **Feature parameters** tab is available only as of version 10.0.41 or later.
 
 > [!IMPORTANT]
 > The **French Chorus Pro submission (FR)** feature is provided by Microsoft. Before it can be used, additional configuration is required, as described in this article. For information about how to configure invoicing features and apply changes, see [Work with feature setups](../global/gs-e-invoicing-feature-setup.md). For example, in addition to the connection parameters, you can filter specific legal entities so that they are processed in applicability rules. By default, the feature is applicable to all legal entities that have a primary address in France.
