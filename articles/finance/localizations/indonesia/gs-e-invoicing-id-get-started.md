@@ -21,13 +21,8 @@ This article provides information that will help you get started with Electronic
 
 ## Prerequisites
 
-- Become familiar with Electronic invoicing. For more information, see [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
-- Sign up for RCS, and set up Electronic invoicing. For more information, see the following articles:
-
-    - [Sign up for and install the Electronic Invoicing service](../global/e-invoicing-sign-up-install.md)
-    - [Set up Azure resources for Electronic invoicing](../global/e-invoicing-set-up-azure-resources.md)
-    - [Install the add-in for microservices in Lifecycle Services](../global/e-invoicing-install-add-in-microservices-lcs.md)
-    - [Activate and setup integration with Electronic invoicing](../global/e-invoicing-activate-setup-integration.md)
+- Become familiar with electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
+- Do the common part of electronic invoicing service configuration as described in [Set up electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
 
 ## Configure Electronic invoicing features
 
