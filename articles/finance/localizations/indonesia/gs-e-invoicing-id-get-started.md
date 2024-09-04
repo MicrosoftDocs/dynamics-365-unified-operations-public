@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.39
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information that will help you get started with Electronic invoicing for Indonesia. It describes the configuration steps that are country/region-dependent in Regulatory Configuration Service (RCS) and Microsoft Dynamics 365 Finance. It guides through the steps that you must follow in Finance to export sales invoices through the service, and to review the processing results and the status of invoices.
+This article provides information that will help you get started with Electronic invoicing for Indonesia. It describes the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance. It guides through the steps that you must follow in Finance to export sales invoices through the service, and to review the processing results and the status of invoices.
 
 ## Prerequisites
 
