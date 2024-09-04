@@ -27,26 +27,22 @@ This article provides information that will help you get started with Electronic
 ## Configure Electronic invoicing features
 
 1. In the **Globalization Studio** workspace, select the **Electronic invoicing** tile.
-1. On the **Electronic invoicing features** page, verify that the **Indonesian electronic invoice (ID)** Electronic invoicing feature is selected.
-1. On the **Versions** tab, verify that the **Draft** version is selected.
-1. Import the Electronic invoicing feature to process invoice exports and importing vendor invoices.
-1. Review the format configurations that are required to generate and export sales invoices.
-1. Review or configure the actions in the processing pipeline that support the sales invoice export and import scenarios.
-1. Publish the Electronic invoicing feature for export sales invoices and import vendor invoices.
+1. Import the latest version of the **Indonesian electronic invoice (ID)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 
-    > [!NOTE]
-    > If you don't see the feature in the list, select **Synchronize**, and then repeat step 2.
-
-When you import the **Indonesian electronic invoice (ID)** feature from the Dataverse repository, all the feature settings are imported. These settings include the configurations and actions of the processing pipeline.
-
+   > [!NOTE]
+   > If you don't see the feature in the list, select **Synchronize**, and then repeat step 2.
+   
 ### Create a new version of the Indonesian electronic invoice (ID) feature
 
-You can create a new feature version by using your configuration provider.
+When you import the **Indonesian electronic invoice (ID)** feature from the repository, all the feature settings are imported. These settings include the configurations, actions of the processing pipeline, and applicability rules.
+You can create a new feature version by using your configuration provider, if necessary.
 
-1. In the **Globalization Studio** workspace, select the **Electronic Invoicing** tile.
-1. On the **Electronic invoicing features** page, on the **Versions** tab, select **New**.
+1. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
+1. On the **Versions** tab, verify that the **Draft** version is selected.
 
-### Update the configuration version
+### Update the configurations versions
+
+Review the format configurations that are required to generate and export sales invoices.
 
 1. In the **Globalization features** workspace, select the **Electronic Invoicing** tile.
 1. On the **Electronic invoicing features** page, on the **Configurations** tab, select **Add** or **Delete** to manage the configuration versions.
@@ -95,6 +91,8 @@ After you define specific conditions for each application-specific parameter, sa
 
 ### Manage the Electronic invoicing feature setup
 
+Review or configure the actions in the processing pipeline that support the sales invoice export and import scenarios.
+
 1. In the **Globalization Studio** workspace, select the **Electronic Invoicing** tile.
 1. On the **Electronic invoicing features** page, on the **Setups** tab, select **Add**, **Delete**, or **Edit** to manage the Electronic invoicing feature setup.
 
@@ -121,19 +119,16 @@ Before you configure the Vendor invoice feature setup, you should create a draft
 
     ![Screenshot that shows the Variables tab for the Vendor invoice feature setup.](../media/apac-idn-feature-version-setup-variables.png)
 
-### Assign the draft version to an e-Invoicing environment
-
-1. On the **Electronic invoicing features** page, on the **Environments** tab, select **Enable**.
-1. In the **Environment** field, select the environment.
-1. In the **Effective from** field, select the date when the environment should become effective.
-1. Select **Enable**.
-
 ### Change the version status and deploy the feature
+
+Complete and deploy the Electronic invoicing feature for export sales invoices and import vendor invoices.
 
 1. On the **Electronic invoicing features** page, on the **Versions** tab, select the version of the Electronic invoicing feature that has a status of **Draft**.
 1. Select **Change status** \> **Complete**.
-1. Select **Deploy**, and then, in the **Effective from** field, select the date when the environment should become effective.
+1. Select **Deploy**, and then, in the **Effective from** field, select the date when the feature should become effective.
 1. Select **OK**.
+
+For more information, see [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ## Set up Electronic invoicing integration in Finance
 
