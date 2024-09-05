@@ -71,7 +71,7 @@ Configure a Microsoft SharePoint channel if the Electronic invoicing feature imp
 To deploy the Electronic invoicing feature, see [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ## Set up vendor invoice import in Finance or Supply Chain Management
-Complete the steps in the following two sections to set up different types of vendor invoice import.
+Complete the steps in the following section to set up a PEPPOL-type vendor invoice import as an example.
 
 ### Import PEPPOL electronic vendor invoices
 
