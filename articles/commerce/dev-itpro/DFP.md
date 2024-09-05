@@ -2,34 +2,25 @@
 # required metadata
 
 title: Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce
-description: This article describes out-of-box integrations that are available between Microsoft Dynamics 365 Fraud Protection and Dynamics 365 Commerce. 
+description: This article describes out-of-box integrations that are available between Microsoft Dynamics 365 Fraud Protection and Microsoft Dynamics 365 Commerce. 
 author: BrianShook
-ms.date: 01/30/2023 
-ms.topic: article
+ms.date: 09/05/2024 
+ms.topic: how-to
 audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2019-01-01
-
+ms.custom: 
+  - bap-template
 ---
 
 # Dynamics 365 Fraud Protection integration with Dynamics 365 Commerce
 
 [!include [banner](../includes/banner.md)]
 
-This article describes out-of-box integrations that are available between Microsoft Dynamics 365 Commerce and Dynamics 365 Fraud Protection.
-
-## Key terms
-
-| Term | Description |
-|---|---|
-| Purchase protection | The Fraud Protection module that analyzes purchases for fraud, based on risk levels that are determined by the merchant. |
-| Storefront | The out-of-box e-commerce storefront that is provided with Commerce. |
-| Azure Data Lake Storage Gen2 | Data Lake Storage Gen2 is used to make Commerce data available for processing by the **Loss prevention** module. |
-
-## Overview
+This article describes out-of-box integrations that are available between Microsoft Dynamics 365 Commerce and Microsoft Dynamics 365 Fraud Protection.
 
 Fraud Protection is a service that offers fraud protection solutions to help retailers prevent fraudulent activity and identify places where fraud might be unnoticed. This article describes out-of-box integrations between Fraud Protection and Commerce. It will be updated as new integrations between the two services are released in future releases. For more information about Fraud Protection, including information about modules that aren't yet supported by an out-of-box integration with Commerce, visit the [Fraud Protection landing page](https://dynamics.microsoft.com/ai/fraud-protection/). You can also [request a callback](https://dynamics.microsoft.com/get-started/?appname=fraudprotection) from a Dynamics 365 sales representative to discuss how Fraud Protection can help boost profitability, reduce operational expenses, and improve customer experiences.
 
@@ -42,6 +33,14 @@ Starting October 2020, a limited capacity of Fraud Protection is included in the
 You have the option of purchasing additional Fraud Protection add-ons if your usage requires higher limits. 
 
 To start using Fraud Protection if you are an existing Commerce customer, visit the [Fraud Protection portal](https://dfp.microsoft.com/), sign in with tenant administrator credentials, and complete a one-time setup for your environment.
+
+## Key terms
+
+| Term | Description |
+|---|---|
+| Purchase protection | The Fraud Protection module that analyzes purchases for fraud, based on risk levels that are determined by the merchant. |
+| Storefront | The out-of-box e-commerce storefront that is provided with Commerce. |
+| Azure Data Lake Storage Gen2 | Data Lake Storage Gen2 is used to make Commerce data available for processing by the **Loss prevention** module. |
 
 ## Purchase protection in Commerce
 
