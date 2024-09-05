@@ -10,7 +10,7 @@ audience: Developer, IT Pro
 ms.reviewer: josaw
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
-ms.author: brshoo
+ms.author: shajain
 ms.search.validFrom: 2019-01-01
 
 ---
@@ -105,8 +105,6 @@ Next, select the Key Vault URL that is used to store the Fraud Protection secret
     Alternatively, the **Assessment type** field can be set to **Protect**. In this case, Fraud Protection will return "Reject" assessments, and fraudulent orders will be terminated before they are sent for authorization or created in the back office.
 
 4. The **Dynamics Fraud Protection endpoint URL** field must be set. This URL is provided by Fraud Protection and will vary across user acceptance testing (UAT) and production environments.
-
-![Fraud Protection setup in Retail parameters.](../media/Payments/DFPSetupParams1.png)
 
 ## Loss prevention in Commerce
 
