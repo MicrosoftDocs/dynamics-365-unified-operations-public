@@ -1,7 +1,7 @@
 ---
 title: Budget analysis in the public sector
 description: Learn how to use the Budget analysis page to view revenues and expenditures by financial dimension, with answers to frequently asked questions.
-author: v-kiarnd
+author: music727 
 ms.author: twheeloc
 ms.topic: article
 ms.date: 06/07/2023
@@ -60,7 +60,7 @@ The following table explains the differences between these pages.
 |---|---|
 | Shows the budget balances for a budget cycle and a budget model for a single financial dimension value or budget group. | Shows the combined budget amounts for multiple financial dimension values at the same time. |
 | Includes data from both confirmed and unconfirmed encumbrances.                               | Includes data from confirmed encumbrances only.                                             |
-| Includes data from expense accounts only.                                                 | Includes data from both revenue and expense accounts.                                       |
+| Includes data from expense accounts only.                                      | Includes data from both revenue and expense accounts, and details for revenue accounts that aren't budget controlled.      |
 
 > [!NOTE] 
 > If you want the available or remaining budget amounts to include draft transactions, use the **Budget control statistics** page. The **Budget analysis** page displays only posted transactions.
