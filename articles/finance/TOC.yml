@@ -1684,6 +1684,8 @@
                               href: localizations//iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/finance
                             - name: Vendor electronic invoice import in Chile
                               href: localizations//iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/finance
+                        - name: Denmark
+                          href: localizations/denmark/gs-e-invoicing-dk-get-started.md?context=/dynamics365/context/finance
                         - name: Indonesia
                           href: localizations/indonesia/gs-e-invoicing-id-get-started.md?context=/dynamics365/context/finance
                         - name: Malaysia
