@@ -96,35 +96,36 @@ You can print netting advice for selected customer invoices and vendor invoices.
 
 ## Intercompany netting
 
-To create intercompany netting agreement for customers and vendors in different legal entities, follow these steps:
+To create an intercompany netting agreement for customers and vendors in different legal entities, follow these steps.
 
-1. Go to **Cash and bank management** \> **Setup** \> **Cash and bank management parameters** \> **Netting**.
-2. Select **Allow intercompany netting**.
+1. Go to **Cash and bank management** \> **Setup** \> **Cash and bank management parameters**.
+2. On the **Netting** tab, select **Allow intercompany netting**.
 3. Go to **Cash and bank management** \> **Netting** \> **Netting agreement**.
-4. On the **Parties** FastTab, in the **Customer legal entity** field, select a legal entity and add a customer account.
-5. In the **Vendor legal entity** field, select a legal entity and add a vendor account.
-7. Activate the netting agreement.
-   
-    > [!Note]
-    > Either **Customer legal entity** or **Vendor legal entity** must be the same as the current legal entity for netting agreement.
-    > For more information, see [Intercompany accounting setup](../general-ledger/intercompany-accounting-setup.md).
+4. On the **Parties** FastTab, in the **Customer legal entity** field, select a legal entity. Then add a customer account.
+5. In the **Vendor legal entity** field, select a legal entity. Then add a vendor account.
 
-In each intercompany netting agreement, each posting generates three vouchers: two within the legal entity that holds the agreement, and one in the counterparty legal entity.
+    > [!NOTE]
+    > Either the **Customer legal entity** value or the **Vendor legal entity** value must match the current legal entity for the netting agreement. For more information, see [Intercompany accounting setup](../general-ledger/intercompany-accounting-setup.md).
 
+6. Activate the netting agreement.
 
-| USMF - Netting000000001|    DR     |     CR      |
-|------------------------|-----------|-------------|
-| Accounts receivable    |           |   100.00    |
-| Interim netting        | 100.00    |             |
+In each intercompany netting agreement, every posting generates three vouchers: two in the legal entity that holds the agreement and one in the counterparty legal entity.
 
-| USMF - Netting000000002|    DR     |     CR      |
-|------------------------|-----------|-------------|
-| Interim netting        |           |   100.00    |
-| Intercompany debit     | 100.00    |             |
+Here is an example of the vouchers that are generated. For this example, USMF is the legal entity that holds the agreement, and DEMF is the counterparty legal entity.
 
-| DEMF - ICJL000001      |    DR     |     CR      |
-|------------------------|-----------|-------------|
-| Intercompany credit    |           |   100.00    |
-| Accounts payable       | 100.00    |             |
+| USMF - Netting000000001 | DR     | CR     |
+|-------------------------|--------|--------|
+| Accounts receivable     |        | 100.00 |
+| Interim netting         | 100.00 |        |
+
+| USMF - Netting000000002 | DR     | CR     |
+|-------------------------|--------|--------|
+| Interim netting         |        | 100.00 |
+| Intercompany debit      | 100.00 |        |
+
+| DEMF - ICJL000001   | DR     | CR     |
+|---------------------|--------|--------|
+| Intercompany credit |        | 100.00 |
+| Accounts payable    | 100.00 |        |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
