@@ -1,121 +1,117 @@
 ---
-title: Onboard the Approvals Management mobile app (preview)
-description: This article explains how administrators can prepare Microsoft Dynamics 365 Supply Chain Management and Dataverse environments to support the Approvals Management mobile app. It also explains how to install the app on mobile devices.
-author: johanhoffmann
-ms.author: johanho
+title: Install, update, or uninstall Traceability (preview)
+description: This article describes how to install, update, or uninstall the various components of the Traceability Add-in for Dynamics 365 Supply Chain Management.
+author: banluo-ms
+ms.author: banluo
 ms.reviewer: kamaybac
-ms.search.form:
-ms.topic: overview
+ms.search.form: 
+ms.topic: how-to
 ms.date: 07/29/2024
 ms.custom: 
   - bap-template
 ---
 
-# Onboard the Approvals Management mobile app (preview)
+# Install, update, or uninstall Traceability (preview)
 
-[!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
-This article explains how administrators can prepare your Microsoft Dynamics 365 Supply Chain Management and Dataverse environments to support the Approvals Management mobile app. It also explains how to install the app on your mobile devices.
+This article describes how to Install, update, or uninstall the various components of the Traceability Add-in for Dynamics 365 Supply Chain Management.
 
 ## Prerequisites
 
-Before you can start to onboard the Approvals Management mobile app, you must meet the requirements that are outlined in this section.
+To use Traceability, your system must meet the following requirements:
 
-### System requirements
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 (build 10.0.1935.80) or higher.
 
-To run the Approvals Management mobile app, you must be using Supply Chain Management version 10.0.41 or later.
+## Turn on features in Supply Chain Management
 
-### Region requirements
+To use Traceability together with Dynamics 365 Supply Chain Management, you must enable one or both of the following features in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-The Approvals Management mobile app is available in all regions where Supply Chain Management and Power Apps are supported. However, it isn't available for Microsoft Cloud for Sovereignty.
+- *Tracked components* – Enables component tracking in Supply Chain Management.
+- *(Preview) Traceability* – Integrates Traceability with the component tracking features in Supply Chain Management.
 
-### Set up Dataverse for your Supply Chain Management environment
+## Microsoft Azure configuration
 
-The Approvals Management mobile app uses [Dataverse virtual tables that are connected to Supply Chain Management](../../../fin-ops-core/dev-itpro/power-platform/virtual-entities-overview.md). Therefore, a Dataverse environment must be integrated with your Supply Chain Management environment. If Dataverse isn't already set up for your environment, follow the instructions in [Microsoft Power Platform integration with finance and operations apps](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
+### Register a new Microsoft Entra application
 
-When you create the Dataverse environment where you want to install the app, be sure to enable Dynamics 365 apps.
+1. Sign in to the [Azure portal](https://ms.portal.azure.com/).
+1. Search for or navigate to the **App registrations** page.
+1. On the toolbar, select **New registration**.
+1. Fill out the **Register and application** page and select **Register**. For more information about these settings, see [Quickstart: Register an application with the Microsoft identity platform](/entra/identity-platform/quickstart-register-app?tabs=certificate).
+1. Your new app registration opens. On the left navigation pane, select **Overview**. Copy the following values to a temporary text file. You'll need them later.
+    - **Application (client) ID**
+    - **Directory (tenant) ID**
 
-The [Power Apps component framework feature](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) must be enabled for your environment.
+### Create client secrets for the new Microsoft Entra application
 
-### Allow publishing of canvas apps in Dataverse
+1. In the [Azure portal](https://ms.portal.azure.com/), open the application you registered in the previous section.
+1. In the left navigation pane, select **Manage** \> **Certificates & secrets**.
+1. On the **Certificates & secrets** page, select **New client secret**.
+1. In the **Add a client secret** dialog, enter a description and choose an expiration date for the secret. Then select **Add**.
+1. The **Certificates & secrets** page now includes your new secret. Copy the **Value** and **Secret ID** of the secret and store it in a secure location. You'll need these values later. 
 
-The Approvals Management mobile app is a canvas app. Therefore, before you can install it in Dataverse, you must enable the **Allow publishing of canvas apps with code components** option for your environment.
+    > [!IMPORTANT]
+    > The **Value** is only displayed once, so you won't be able to retrieve it again after closing this page.
+
+## Install and configure the Traceability app in Power Apps
+
+The Traceability app is part of the Traceability Add-in for Dynamics 365 Supply Chain Management. It's a Power Apps application that provides a user interface for configuring and using the Traceability Add-in.
+
+To install the Traceability app in Power Apps, complete the following steps.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. On the navigation pane, select **Environments**, and then select the environment that is integrated with Supply Chain Management.
-1. On the toolbar, select **Settings**.
-1. On the **Settings** page, expand the **Product** section, and select **Features**.
-1. Set the **Allow publishing of canvas apps with code components** option to *On*.
+1. On the left navigation pane, select **Resources** \> **Dynamics 365 apps**. <!--KFM: ... or should I open the environment first? -->
+1. Find the *Dynamics 365 Supply Chain Traceability* app on the **Dynamics 365 apps** page. Select **More application actions** (the **...** button) for the app and then select **Manage**. <!--KFM: Please confirm this step and labels? -->
+1. The **Install Dynamics 365 Supply Chain Traceability** dialog opens. Make the following settings:
+    - **Select an environment** – Select the environment where you want to set up the app.
+    - **Enter application ID of service** – Enter the Application (client) ID that you copied after you registered the Microsoft Entra application.
+    - **Enter tenant ID of service** – Enter the Directory (tenant) ID that you copied after you registered the Microsoft Entra application.
+    - **I agree to the terms of service** – Select this checkbox.
 
-## <a name="install-in-dataverse"></a>Install the mobile app in Dataverse
+    > [!NOTE]
+    > If you don't see the **Enter application ID of service** and/or **Enter tenant ID of service** fields, you should contact the Traceability product team at [d365-Traceability-team@microsoft.com](mailto:d365-Traceability-team@microsoft.com).
 
-You must install the Approvals Management mobile app in your Dataverse environment to enable users to access it when they sign in by using the Power Apps mobile app. The installation process also sets up the required user roles and other dependencies in Dataverse.
+1. Select **Install**.
+1. When installation is complete, you should see that an app called *Dynamics 365 Supply Chain Traceability* is shown with a status of *Installed* in the list of **Dynamics 365 apps** for your environment.
+1. Configure Generative AI features -> Move data across regions to “Allowed” to allow copilot summary. <!--KFM: This is too vague; more steps are probably needed. We should tell readers readers find this setting. -->
 
-Follow these steps to install the Approvals Management mobile app in Dataverse.
+## Update the Traceability app in Power Apps
 
-1. Join the [Dynamics 365 Procurement and Sourcing group on Viva Engage](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=69010219008&view=all).
-1. Search the Procurement and Sourcing group for the post from Microsoft that provides a link to the *Dynamics 365 Approvals Management* app in Microsoft AppSource. You can find this post by entering *Approval Management App Installation link* in the **Search** field.
-1. Select the link to open the page for the Approvals Management mobile app in AppSource.
-1. Select **Get it now**.
-1. Follow the on-screen instructions to install the app in the Dataverse environment that is connected to your target Supply Chain Management environment.
+This section describes how to see when an update of the Supply Chain Traceability application is available and how to apply the update.
 
-## Grant access to the mobile app in Dataverse
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. On the left navigation pane, select **Environments**.
+1. Open the environment where you want to update the Supply Chain Traceability application.
+1. From the **Resources** tile, select **Dynamics 365 apps**.
+1. Find the app called *Dynamics 365 Supply Chain Traceability* in the list and note its **Status**. If the **Status** is *Installed*, then the app is up to date and you can skip the rest of this procedure. If the **Status**  is *Update available*, continue with this procedure to apply the update.
+1. Select **More application actions** (the **...** button) next to the app name to open a menu and then select **Update**.
+1. The **Update Dynamics 365 Supply Chain Traceability** dialog opens. Select **I agree to the terms of service** and then select **Update**.
+1. When the update is complete, you should be able to see that the *Dynamics 365 Supply Chain Traceability* app now shows a **Status** of *Installed*.
+1. Open the [Power Apps maker portal](https://make.powerapps.com/).
+1. On the left navigation pane, select **Solutions**.
+1. On the **Solutions** page, select **All**.
+1. On the toolbar, select **Publish all customizations**.
 
-After the mobile app solution is installed in your Dataverse environment, you must share it with your users. The Approvals Management mobile app is a canvas app. To share it, follow the instructions in [Share an app](/power-apps/maker/canvas-apps/share-app#share-an-app).
+## Uninstall the Supply Chain Traceability application from Supply Chain Management
 
-Each relevant user must also have the *Finance and Operations Basic User* role.
+<!--KFM: I think we mean the add-in (not the app) but I'm not sure. Can we have an "app" in SCM? We didn't install anything in LCS until now, so how did this get installed here? What are we doing when we uninstall from here? How would we install this again later? -->
 
-- To assign a role to a group team, follow the instructions in [Manage the security roles of a team](/power-platform/admin/manage-group-teams#manage-the-security-roles-of-a-team). We recommend that you use group teams if you must assign the role to multiple users. Learn more about how to manage team members in [Manage team members](/power-platform/admin/manage-teams#manage-team-members).
-- To assign a role directly to a user, follow the instructions in [Assign a security role to a user](/power-platform/admin/assign-security-roles).
+1. Go to LCS of Dynamics 365 Supply Chain Management. <!--KFM: How do we get here? What do we do next? -->
+2. Find installed Traceability Service (Preview) and select **Uninstall**. <!--KFM: How can I find this? -->
 
-## <a name="roles-approvals"></a>Set up user accounts to manage approvals in Supply Chain Management
+## Uninstall the Traceability app from Power Apps
 
-Each Supply Chain Management user who should be able to use the Approvals Management mobile app must have one or all of the following standard security roles:
+1. Sign in to [Power Platform maker](https://make.powerapps.com/).
+1. On the left navigation pane, select **Solutions**.
+1. The **Solutions** page opens. Open the **Managed** tab
+1. Find and delete each of the following solutions. To delete a solution, select the **Commands** button next to its name and then select **Delete**.
+    - *Dynamics 365 Supply Chain Traceability anchor solution*
+    - *Dynamics 365 Supply Chain Traceability portal solution*
+    - *Dynamics 365 Supply Chain Traceability controls solution*
+    - *Dynamics 365 Supply Chain Traceability Plugins solution*
+    - *Supply chain traceability integration - authorization*
+    - *Dynamics 365 Supply Chain Traceability common solution*
 
-- *Buying agent* – This role allows a Supply Chain Management user account to use the app to manage purchase orders.
-- *Purchasing agent* – This role allows a Supply Chain Management user account to use the app to manage purchase requisitions.
-- *Purchasing manager* – This role allows a Supply Chain Management user account to use the app to manage both purchase orders and purchase requisitions.
-
-Users who have the *System administrator* role can use the app to manage all types of approval requests.
-
-Follow these steps to add the required security roles to a Supply Chain Management user.
-
-1. Sign in to your Supply Chain Management environment by using an administrator account.
-1. Go to **System administration** \> **Users** \> **Users**.
-1. Use the filter to find a user who should be able to use the app.
-1. Open the details page for the selected user by selecting the link in the **User ID** column.
-1. On the **User's roles** FastTab, on the toolbar, select **Assign roles** to open the **Assign roles to user** dialog box.
-1. In the **Role name** column, find and select the *Buying agent*, *Purchasing agent* and/or *Purchasing manager* roles, as needed.
-1. Select **OK** to apply your settings and close the dialog box.
-
-> [!NOTE]
-> User role organization assignments aren't supported. If one or more organizations that differ from a selected user's [default company](../../../fin-ops-core/fin-ops/get-started/personalize-user-experience.md#system-wide-options-for-the-current-user) have been assigned to any security role that is set for that user, app installation fails.
-
-Learn more about how to set up roles and security in Supply Chain Management in [Security roles](../../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md#security-roles).
-
-## Set up approval workflows
-
-To enable the approval process for a document type, you must set up approval workflows for it in Supply Chain Management. Learn more in [Workflow system overview](../../../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md).
-
-After your approval workflows are set up, approval requests appear in the Approvals Management mobile app just as they do when the same user signs in to Supply Chain Management to manage approvals in the web client.
-
-## Install and open the mobile app
-
-Follow these steps to install and use the Approvals Management mobile app on a mobile device.
-
-1. Install the Power Apps mobile app by following the instructions in [Install the Power Apps mobile app](/power-apps/mobile/run-powerapps-on-mobile).
-1. Open the Power Apps mobile app, and sign in by using the same corporate account that you use to sign in to Supply Chain Management.
-1. Use the **Search** field to search for *Approvals Management*. Because the Approvals Management mobile app is a canvas app, you can add it to your favorites list in Power Apps by swiping left on it after you find it.
-1. Open the Approvals Management mobile app, and start to use it.
-
-## Clear the Power Apps cache on a mobile device after an update of the back-end setup
-
-If the back-end setup is updated in Supply Chain Management after you install the Power Apps mobile app on a mobile device (for example, if the legal entity setup is changed), you might have to clear the cache in Power Apps to update the local setup data. Power Apps can then reload the settings that otherwise might not take effect until the cache is cleared.
-
-Follow these steps to clear the Power Apps cache on a mobile device.
-
-1. Sign in to the Power Apps mobile app.
-1. Select the image for your user account in the upper left of the page to open the settings menu.
-1. Select **Clear cache** to open the **Clear cache** dialog box.
-1. Select **Confirm**.
+    > [!IMPORTANT]
+    > You must delete the *Dynamics 365 Supply Chain Traceability common solution* last.

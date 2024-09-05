@@ -1,6 +1,6 @@
 ---
-title: Install and update and uninstall Traceability (preview)
-description: This article describes how to install and update and uninstall the various components of the Traceability Add-in for Dynamics 365 Supply Chain Management.
+title: Install, update, or uninstall Traceability (preview)
+description: This article describes how to install, update, or uninstall the various components of the Traceability Add-in for Dynamics 365 Supply Chain Management.
 author: banluo-ms
 ms.author: banluo
 ms.reviewer: kamaybac
@@ -11,18 +11,18 @@ ms.custom:
   - bap-template
 ---
 
-# Install and update and uninstall Traceability (preview)
+# Install, update, or uninstall Traceability (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article describes how to install and upgrade and uninstall the various components of the Traceability Add-in for Dynamics 365 Supply Chain Management.
+This article describes how to Install, update, or uninstall the various components of the Traceability Add-in for Dynamics 365 Supply Chain Management.
 
 ## Prerequisites
 
 To use Traceability, your system must meet the following requirements:
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management with version 10.0.40 build 10.0.1935.80 or higher.
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 (build 10.0.1935.80) or higher.
 
 ## Turn on features in Supply Chain Management
 

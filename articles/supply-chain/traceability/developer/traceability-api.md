@@ -117,8 +117,8 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
     {
         "eventId": string,
         "description": string,
-        "activityType": string, refer to predefined "Activity Type",
-        "activityCode": string, refer to configured "Activity Code" linked to "Activity Type",
+        "activityType": string,   # Refer to predefined "Activity Type"
+        "activityCode": string,   # Refer to configured "Activity Code" linked to "Activity Type"
         "datetime": YYYY-MM-DDThh:mm:ss.sssz,
         "operator": string,
         "companyCode": string,
@@ -129,7 +129,7 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
             {
                 "transactionId": string,
                 "companyCode": string,
-                "itemId": string, refer to configured "item" for tracing,
+                "itemId": string,   # Refer to configured "item" for tracing
                 "trackingId": string,
                 "serialId": string,
                 "batchId": string,
@@ -143,7 +143,7 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
             {
                 "transactionId": string,
                 "companyCode": string,
-                "itemId": string, refer to configured "item",
+                "itemId": string,   # Refer to configured "item"
                 "trackingId": string,
                 "serialId": string,
                 "batchId": string,
@@ -449,7 +449,7 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 
 ### Single query request example
 
-Produce finished good **A** with component **B** and **C** by different events. Query the result of finished good **A**.
+Produce finished good *A* with component *B* and *C* by different events. Query the result of finished good *A*.
 
 #### Single query request example request payload
 
@@ -650,9 +650,9 @@ Produce finished good **A** with component **B** and **C** by different events. 
 }
 ```
 
-## API for Unlink genealogy node and insert activity for unlink
+## Unlink events API
 
-This API is for genealogy node unlink which can be used for production component disassembly, equipment uninstallation, container unload in business activities.
+This API can unlink a genealogy node and insert an activity for unlink. You can use it in business activities to disassemble production components, uninstall equipment, and unload containers.
 
 - **Path** – `/api/environments/{environmentId}/events/unlink-components`
 - **Method** – `POST`
@@ -660,6 +660,8 @@ This API is for genealogy node unlink which can be used for production component
 Where *{environmentId}* is the environment ID of your Supply Chain Management environment in Lifecycle Services.
 
 ### Post unlink events request payload
+
+<!-- KFM: Note that I have marked comments in the following code with #. Is that OK? -->
 
 ```txt
 {
@@ -669,8 +671,8 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
     {
         "eventId": string,
         "description": string,
-        "activityType": string, refer to predefined "Activity Type",
-        "activityCode": string, refer to configured "Activity Code" linked to "Activity Type",
+        "activityType": string,   # Refer to predefined "Activity Type"
+        "activityCode": string,   # Refer to configured "Activity Code" linked to "Activity Type"
         "datetime": YYYY-MM-DDThh:mm:ss.sssz,
         "operator": string,
         "companyCode": string,
@@ -681,7 +683,7 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
             {
                 "transactionId": string,
                 "companyCode": string,
-                "itemId": string, refer to configured "item" for tracing,
+                "itemId": string,   # Refer to configured "item" for tracing
                 "trackingId": string,
                 "serialId": string,
                 "batchId": string,
@@ -695,7 +697,7 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
             {
                 "transactionId": string,
                 "companyCode": string,
-                "itemId": string, refer to configured "item",
+                "itemId": string,   # Refer to configured "item"
                 "trackingId": string,
                 "serialId": string,
                 "batchId": string,
@@ -717,8 +719,8 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 | `RequestId` | Random UUID. |
 | `eventId` | Unique identifier for the activity (`SerialId`/`BatchId`). Duplicate values aren't allowed. The system generates this value if none is specified. |
 | `description` | Description of the activity event. |
-| `activityType` | Refers to a predefined "Activity Type" (*Purchase*, *Sales*, *Production*, and so on). |
-| `activityCode` | Refers to a configured "Activity Code" (*GoodsReceipt*, *Add*, *Remove*, and so on). |
+| `activityType` | Refers to a predefined "Activity Type" (such as *Purchase*, *Sales*, or *Production*). |
+| `activityCode` | Refers to a configured "Activity Code" (such as *GoodsReceipt*, *Add*, or *Remove*). |
 | `dateTime` | The date and time the activity event happened. |
 | `operator` | The operator who executed the activity event. The value can be a user ID, employee ID, or similar. |
 | `companyCode` | For Supply Chain Management, this field maps to a legal entity. |
@@ -760,62 +762,74 @@ On success, status code 204 is returned.
 
 ### Unlink events post example
 
-Creat new activity code "FullRemove" for activity type "Production" for all company code in menu "Activity" first. Post below example to remove component C from product A from previous example.
-
+This example shows how to use the unlink events post API to create a new activity with activity code *FullRemove* and activity type *Production* for all company codes in the *Activity* menu <!-- KFM: What do we mean by "all company codes" (seems like we specify USMF in the JSON and screenshot)? What is the "*Activity* menu"? -->. The example removes component *C* from product *A* (continuing from the example provided previously).
 
 #### Unlink events post example request payload 1
 
 ```json
 {
-	"RequestId": "a8fbd235-f56d-4d10-b4de-9b125eb814ea",
-	"EventList": 
-  [
-    {
-        "EventId": "remove c -a8f441b3-2f15-5b92-8d84-20240821112003",
-        "CompanyCode": "USMF",
-        "Operator": "Terry Alvarado",
-        "Description": "Component C Full Remove",
-        "ActivityType": "Production",
-        "ActivityCode": "FullRemove",
-        "Datetime": "2023-08-15T06:14:06.653Z",
-        "Details": {
-            "Operation Step": "OP2",
-            "Resource": "RES2",
-            "Reference Location": "RES-L02"
-        },
-        "ConsumptionTransactions": [
-            {
-                "TransactionId": null,
-                "ItemId": "C",
-                "TrackingId": null,
-                "Details": {},
-                "Quantity": 1.0,
-                "UnitOfMeasure": "ea",
-                "BatchId": "C-001",
-                "SerialId": null
-            }
-        ],
-        "ProductTransactions": [
-            {
-                "TransactionId": null,
-                "ItemId": "A",
-                "TrackingId": null,
-                "Details": {},
-                "Quantity": 1.0,
-                "UnitOfMeasure": "ea",
-                "TransactionType": 0,
-                "BatchId": null,
-                "SerialId": "A-001"
-            }
-        ]
+    "RequestId": "a8fbd235-f56d-4d10-b4de-9b125eb814ea",
+    "EventList": 
+    [
+        {
+            "EventId": "remove c -a8f441b3-2f15-5b92-8d84-20240821112003",
+            "CompanyCode": "USMF",
+            "Operator": "Terry Alvarado",
+            "Description": "Component C Full Remove",
+            "ActivityType": "Production",
+            "ActivityCode": "FullRemove",
+            "Datetime": "2023-08-15T06:14:06.653Z",
+            "Details": {
+                "Operation Step": "OP2",
+                "Resource": "RES2",
+                "Reference Location": "RES-L02"
+            },
+            "ConsumptionTransactions": [
+                {
+                    "TransactionId": null,
+                    "ItemId": "C",
+                    "TrackingId": null,
+                    "Details": {},
+                    "Quantity": 1.0,
+                    "UnitOfMeasure": "ea",
+                    "BatchId": "C-001",
+                    "SerialId": null
+                }
+            ],
+            "ProductTransactions": [
+                {
+                    "TransactionId": null,
+                    "ItemId": "A",
+                    "TrackingId": null,
+                    "Details": {},
+                    "Quantity": 1.0,
+                    "UnitOfMeasure": "ea",
+                    "TransactionType": 0,
+                    "BatchId": null,
+                    "SerialId": "A-001"
+                }
+            ]
+        }
+    ]
     }
-  ]
-}
 ```
 
 #### Unlink events post example results
 
-If you were to post the example events shown previously, the Traceability Add-in would display the results shown in the following screenshot.
-Component C is unlinked from product A. A new activity of “Production-Full Remove” is inserted for product A with removed component information included.
+If you were to post the example request shown previously, the Traceability Add-in would display the results shown in the following screenshot, which indicates the following events:
+
+- Component *C* from batch *C-001* was unlinked from product *A* serial number *A-001*.
+- A new activity called *Production - FullRemove* was inserted for product *A* and includes information about the removed component.
 
 :::image type="content" source="../media/unlink-post-api-result-example.png" alt-text="Results of the unlink events post example, shown in the Traceability Add-in" lightbox="../media/unlink-post-api-result-example.png":::
+
+<!-- KFM: 
+
+The description in the JSON is *Component C Full Remove*.  But this seems to be shown as *Component Full Remove* in the screenshot. Should these texts match? 
+
+I’m a little confused about what we see in the screenshot, so I’d like to clarify the terminology. Here are my guesses:
+- We have an “activity event” called *Component Full Remove*.
+- The “activity” for this “activity event” is called *Production – FullRemove* (which is a combination of the activity type and code).
+- The “activity event” has two “transactions”, one each of *Receipts* and *Consumptions*.
+
+-->
