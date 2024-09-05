@@ -30,7 +30,7 @@ To opt in to use ratings and reviews on your site, follow these steps.
 1. Follow the steps in [Deploy a new e-Commerce site](deploy-ecommerce-site.md).
 1. While you're still in LCS, go to **Retail deployment setup \> Other settings**.
 1. Set the **Enable ratings and reviews service** option to **Yes**.
-1. In the **Microsoft Entra security group for ratings and review moderator** field, enter the ID of the Microsoft Microsoft Entra security group that includes the ratings and reviews moderators.
+1. In the **Microsoft Entra security group for ratings and review moderator** field, enter the ID of the Microsoft Entra security group that includes the ratings and reviews moderators.
 1. Complete the e-Commerce initialization process.
 
 > [!NOTE] 
