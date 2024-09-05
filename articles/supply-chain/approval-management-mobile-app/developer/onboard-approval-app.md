@@ -62,7 +62,7 @@ To install the Traceability app in Power Apps, complete the following steps.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the left navigation pane, select **Resources** \> **Dynamics 365 apps**. <!--KFM: ... or should I open the environment first? -->
-1. Find the *Dynamics 365 Supply Chain Traceability* app on the **Dynamics 365 apps** page. Select **More application actions** (the **...** button) for the app and then select **Manage**. <!--KFM: Please confirm this step and labels? -->
+1. Find the *Dynamics 365 Supply Chain Traceability* app on the **Dynamics 365 apps** page. Select **More application actions** (the **...** button) for the app and then select **Manage**. <!--KFM: Please confirm this step and labels. -->
 1. The **Install Dynamics 365 Supply Chain Traceability** dialog opens. Make the following settings:
     - **Select an environment** – Select the environment where you want to set up the app.
     - **Enter application ID of service** – Enter the Application (client) ID that you copied after you registered the Microsoft Entra application.
@@ -74,7 +74,7 @@ To install the Traceability app in Power Apps, complete the following steps.
 
 1. Select **Install**.
 1. When installation is complete, you should see that an app called *Dynamics 365 Supply Chain Traceability* is shown with a status of *Installed* in the list of **Dynamics 365 apps** for your environment.
-1. Configure Generative AI features -> Move data across regions to “Allowed” to allow copilot summary. <!--KFM: This is too vague; more steps are probably needed. We should tell readers readers find this setting. -->
+1. Configure Generative AI features -> Move data across regions to “Allowed” to allow copilot summary. <!--KFM: This is too vague; more steps are probably needed. We should tell readers readers how to find this setting. -->
 
 ## Update the Traceability app in Power Apps
 
@@ -114,4 +114,4 @@ This section describes how to see when an update of the Supply Chain Traceabilit
     - *Dynamics 365 Supply Chain Traceability common solution*
 
     > [!IMPORTANT]
-    > You must delete the *Dynamics 365 Supply Chain Traceability common solution* last.
+    > You must delete *Dynamics 365 Supply Chain Traceability common solution* last.
