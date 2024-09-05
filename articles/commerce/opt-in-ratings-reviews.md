@@ -4,10 +4,9 @@ description: This article explains how to opt in to use ratings and reviews on y
 author: gvrmohanreddy
 ms.date: 02/16/2020
 ms.topic: article
-audience: Application User
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: stuharg
+ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
 
