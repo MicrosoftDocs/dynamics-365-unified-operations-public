@@ -79,7 +79,7 @@ A vendor invoice that is included in the vendor invoice automation process can b
 - If the **Automatically match product receipts to invoice lines** option is enabled, the invoice is excluded from automation under these conditions:
 
     1. The **Automatically submit imported invoices to workflow** option is disabled, and the **Automated receipt match status** field is set to **Completed**, **Failed**, or **Not applicable**.
-    2. The **Automatically submit imported invoices to workflow** feature is enabled.
+    2. The **Automatically submit imported invoices to workflow** option is enabled.
     3. The invoice isn't approved after it's successfully submitted to the workflow system.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
