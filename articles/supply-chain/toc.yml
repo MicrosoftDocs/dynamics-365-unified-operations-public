@@ -3481,7 +3481,7 @@
         href: traceability/traceability-overview.md
       - name: Install and configure Traceability
         items:
-        - name: Install and update Traceability
+        - name: Install, update, or uninstall Traceability
           href: traceability/developer/traceability-install.md
         - name: Traceability security roles in Power Apps
           href: traceability/developer/traceability-security-roles.md

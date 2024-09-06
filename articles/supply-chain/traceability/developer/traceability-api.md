@@ -6,7 +6,7 @@ ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 07/29/2024
+ms.date: 09/06/2024
 ms.custom: 
   - bap-template
 ---
@@ -42,6 +42,8 @@ To obtain an access token, follow these steps:
         | client\_secret | {Client secret value} |
         | grant\_type | client\_credentials |
         | scope | 0cdb527f-a8d1-4bf8-9436-b352c68682b2/.default |
+
+    You should have generated and saved your client secret when you created the Microsoft Entra application in Azure for Traceability. Learn more in [Install, update, or uninstall Traceability](traceability-install.md).
 
 1. You should receive a Microsoft Entra token in response. It should resemble the following example:
 
@@ -93,8 +95,9 @@ The following table lists the APIs available for Traceability.
 
 | Path | Method | Description |
 |--|--|--|
-| /api/environments/{environmentId}/events/PostBatchEvents | Post | Create genealogy node and activity |
+| /api/environments/{environmentId}/events/post-batch-events | Post | Create genealogy node and activity |
 | /api/environments/{environmentId}/traces/Query | Post | Query by tracking ID |
+| /api/environments/{environmentId}/traces/unlink-components | Post | Unlink genealogy node and insert activity for unlink |
 
 Where *{environmentId}* is the environment ID of your Supply Chain Management environment in Lifecycle Services.
 
@@ -104,7 +107,7 @@ The remaining sections provide detailed information about each API.
 
 This API lets external systems post activity events to the Traceability service. Activity events include production component assembly and goods receipt in business activities.
 
-- **Path** – `/api/environments/{environmentId}/events/PostBatchEvents`
+- **Path** – `/api/environments/{environmentId}/events/post-batch-events`
 - **Method** – `POST`
 
 Where *{environmentId}* is the environment ID of your Supply Chain Management environment in Lifecycle Services.
@@ -116,8 +119,8 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
     {
         "eventId": string,
         "description": string,
-        "activityType": string, refer to predefined "Activity Type",
-        "activityCode": string, refer to configured "Activity Code" linked to "Activity Type",
+        "activityType": string,   # Refer to predefined "Activity Type"
+        "activityCode": string,   # Refer to configured "Activity Code" linked to "Activity Type"
         "datetime": YYYY-MM-DDThh:mm:ss.sssz,
         "operator": string,
         "companyCode": string,
@@ -127,10 +130,13 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
         "consumptionTransactions": [
             {
                 "transactionId": string,
-                "itemId": string, refer to configured "item" for tracing,
+                "companyCode": string,
+                "itemId": string,   # Refer to configured "item" for tracing
                 "trackingId": string,
                 "serialId": string,
                 "batchId": string,
+                "assetId": string,
+                "lotId": string,
                 "quantity": decimal,
                 "unitOfMeasure": string
             }
@@ -138,10 +144,13 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
         "productTransactions": [
             {
                 "transactionId": string,
-                "itemId": string, refer to configured "item",
+                "companyCode": string,
+                "itemId": string,   # Refer to configured "item"
                 "trackingId": string,
                 "serialId": string,
                 "batchId": string,
+                "assetId": string,
+                "lotId": string,
                 "quantity": decimal，
                 "unitOfMeasure": string
             }
@@ -168,10 +177,13 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 | Field Name | Description |
 |--|--|
 | `transactionId` | Unique identifier for the transaction. Duplicate values aren't allowed. |
+| `companyCode` | The legal entity of product element. |
 | `itemId` | Item number of the top finished good. |
 | `trackingId` | Key value for the genealogy node. It's a combination of the `itemId`, `companyCode`, `batchId`, and `serialId`. |
 | `serialId` | The serial number of the top finished good. |
 | `batchId` | The batch number of the top finished good. |
+| `assetId` | The asset number of parent node. This field can be used as equipment number. |
+| `lotId` | The lot number of parent node. This field can be used as container number. |
 | `quantity` | The operation quantity of the top finished good. |
 | `unitOfMeasure` | The unit of measure of the received quantity. |
 
@@ -180,10 +192,13 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 | Field Name | Description |
 |--|--|
 | `transactionId` | Unique identifier for the transaction. Duplicate values aren't allowed. |
+| `companyCode` | The legal entity of component element. |
 | `itemId` | Item number of component. |
 | `trackingId` | Key value for the genealogy node. It's a combination of the `itemId`, `companyCode`, `batchId`, and `serialId`. |
 | `serialId` | The serial number of the component. |
 | `batchId` | The batch number of the component. |
+| `assetId` | The asset number of child node. This field can be used as equipment number. |
+| `lotId` | The lot number of child node. This field can be used as container number. |
 | `quantity` | The consumption quantity of the component. |
 | `unitOfMeasure` | The unit of measure of the consumption quantity. |
 
@@ -289,7 +304,7 @@ Produce finished good **A** with component **B** and **C** by different events.
 
 #### Events post example results
 
-If you were to post the example events shown previously, the Traceability Add-in would display the results shown in the following screenshot.
+If you posted the example events shown previously, the Traceability Add-in would display the results shown in the following screenshot.
 
 :::image type="content" source="../media/events-post-api-result-example.png" alt-text="Results of the events post example, shown in the Traceability Add-in" lightbox="../media/events-post-api-result-example.png":::
 
@@ -436,7 +451,7 @@ Where *{environmentId}* is the environment ID of your Supply Chain Management en
 
 ### Single query request example
 
-Produce finished good **A** with component **B** and **C** by different events. Query the result of finished good **A**.
+Produce finished good *A* with component *B* and *C* by different events. Query the result of finished good *A*.
 
 #### Single query request example request payload
 
@@ -636,3 +651,176 @@ Produce finished good **A** with component **B** and **C** by different events. 
     }
 }
 ```
+
+## Unlink events API
+
+This API can unlink a genealogy node by inserting an unlink-component activity event. You can use it in business activities to disassemble production components, uninstall equipment, and unload containers.
+
+- **Path** – `/api/environments/{environmentId}/events/unlink-components`
+- **Method** – `POST`
+
+Where *{environmentId}* is the environment ID of your Supply Chain Management environment in Lifecycle Services.
+
+### Post unlink events request payload
+
+```txt
+{
+  "requestId": string,
+  "Eventlist":
+  [
+    {
+        "eventId": string,
+        "description": string,
+        "activityType": string,   # Refer to predefined "Activity Type"
+        "activityCode": string,   # Refer to configured "Activity Code" linked to "Activity Type"
+        "datetime": YYYY-MM-DDThh:mm:ss.sssz,
+        "operator": string,
+        "companyCode": string,
+        "details": {
+            "<data collection name>": <data collection value>
+            },
+        "consumptionTransactions": [
+            {
+                "transactionId": string,
+                "companyCode": string,
+                "itemId": string,   # Refer to configured "item" for tracing
+                "trackingId": string,
+                "serialId": string,
+                "batchId": string,
+                "assetId": string,
+                "lotId": string,
+                "quantity": decimal,
+                "unitOfMeasure": string
+            }
+        ],
+        "productTransactions": [
+            {
+                "transactionId": string,
+                "companyCode": string,
+                "itemId": string,   # Refer to configured "item"
+                "trackingId": string,
+                "serialId": string,
+                "batchId": string,
+                "assetId": string,
+                "lotId": string,
+                "quantity": decimal，
+                "unitOfMeasure": string
+            }
+        ]
+    }
+  ]
+}
+```
+
+### Unlink events post header field descriptions
+
+| Field Name | Description |
+|--|--|
+| `RequestId` | Random UUID. |
+| `eventId` | Unique identifier for the activity (`SerialId`/`BatchId`). Duplicate values aren't allowed. The system generates this value if none is specified. |
+| `description` | Description of the activity event. |
+| `activityType` | Refers to a predefined "Activity Type" (such as *Purchase*, *Sales*, or *Production*). |
+| `activityCode` | Refers to a configured "Activity Code" (such as *GoodsReceipt*, *Add*, or *Remove*). |
+| `dateTime` | The date and time the activity event happened. |
+| `operator` | The operator who executed the activity event. The value can be a user ID, employee ID, or similar. |
+| `companyCode` | For Supply Chain Management, this field maps to a legal entity. |
+| *&lt;data collection name&gt;* | These fields are used to collect custom values. |
+
+### Unlink events post productTransactions element field descriptions
+
+| Field Name | Description |
+|--|--|
+| `transactionId` | Unique identifier for the transaction. Duplicate values aren't allowed. This field can be null. |
+| `companyCode` | The legal entity of parent node. |
+| `itemId` | Item number of parent node. |
+| `trackingId` | Key value for the genealogy node. It's a combination of the `itemId`, `companyCode`, `batchId`, and `serialId`. |
+| `serialId` | The serial number of parent node. |
+| `batchId` | The batch number of parent node. |
+| `assetId` | The asset number of parent node. This field can be used as equipment number. |
+| `lotId` | The lot number of parent node. This field can be used as container number. |
+| `quantity` | The operation quantity of parent node. |
+| `unitOfMeasure` | The unit of measure of parent node. |
+
+### Unlink events post consumptionTransactions element field descriptions
+
+| Field Name | Description |
+|--|--|
+| `transactionId` | Unique identifier for the transaction. Duplicate values aren't allowed. This field can be null. |
+| `companyCode` | The legal entity of child node to be removed. |
+| `itemId` | Item number of child node. |
+| `trackingId` | Key value for the genealogy node. It's a combination of the `itemId`, `companyCode`, `batchId`, and `serialId`. |
+| `serialId` | The serial number of child node to be removed. |
+| `batchId` | The batch number of child node to be removed. |
+| `assetId` | The asset number of child node to be removed. This field can be used as equipment number. |
+| `lotId` | The lot number of child node to be removed. This field can be used as container number. |
+| `quantity` | The consumption quantity of child node to be removed. |
+| `unitOfMeasure` | The unit of measure of the removed quantity. |
+
+### Unlink events post API response
+
+On success, status code 204 is returned.
+
+### Unlink events post example
+
+This example shows how to use the unlink events post API to create a new activity with activity code *FullRemove* and activity type *Production*. The app is configured (on the **Settings** \> **Activity** page) to make the *FullRemove* activity code available to all companies. The example removes component *C* from product *A* (continuing from the example provided previously).
+
+#### Unlink events post example request payload
+
+```json
+{
+    "RequestId": "a8fbd235-f56d-4d10-b4de-9b125eb814ea",
+    "EventList": 
+    [
+        {
+            "EventId": "remove c -a8f441b3-2f15-5b92-8d84-20240821112003",
+            "CompanyCode": "USMF",
+            "Operator": "Terry Alvarado",
+            "Description": "Component Full Remove",
+            "ActivityType": "Production",
+            "ActivityCode": "FullRemove",
+            "Datetime": "2023-08-15T06:14:06.653Z",
+            "Details": {
+                "Operation Step": "OP2",
+                "Resource": "RES2",
+                "Reference Location": "RES-L02"
+            },
+            "ConsumptionTransactions": [
+                {
+                    "TransactionId": null,
+                    "ItemId": "C",
+                    "TrackingId": null,
+                    "Details": {},
+                    "Quantity": 1.0,
+                    "UnitOfMeasure": "ea",
+                    "BatchId": "C-001",
+                    "SerialId": null
+                }
+            ],
+            "ProductTransactions": [
+                {
+                    "TransactionId": null,
+                    "ItemId": "A",
+                    "TrackingId": null,
+                    "Details": {},
+                    "Quantity": 1.0,
+                    "UnitOfMeasure": "ea",
+                    "TransactionType": 0,
+                    "BatchId": null,
+                    "SerialId": "A-001"
+                }
+            ]
+        }
+    ]
+    }
+```
+
+#### Unlink events post example results
+
+If you posted the example request shown previously, the Traceability app would display the following events in the **Activities** dialog for product *A*, serial number *A-001*:
+
+- The new activity event is shown as a node identified using the description submitted to the API, which is *Component Full Remove*.
+- The node includes a section that specifies the activity, which is called *Production - FullRemove*. The name combines the activity type and activity code. More details about the activity are provided under the name.
+- The node includes two transactions, one each of *Receipts* and *Consumptions*. These transactions map to the `ConsumptionTransactions` and `ProductTransactions` elements of the request payload, respectively.
+- Each transaction contains information about a specific component affected by the activity. The result of this activity event is that component *C* from batch *C-001* was unlinked from product *A* serial number *A-001*.
+
+:::image type="content" source="../media/unlink-post-api-result-example.png" alt-text="Results of the unlink events post example, shown in the Traceability Add-in" lightbox="../media/unlink-post-api-result-example.png":::
