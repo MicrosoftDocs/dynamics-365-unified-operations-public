@@ -32,7 +32,7 @@ Before you can start to onboard the Inventory On-hand mobile app, you must meet 
 
 ### System requirements
 
-To run the latest Inventory On-hand mobile app, you must be using Supply Chain Management version 10.0.38 or later.
+To run the latest Inventory On-hand mobile app, you must be using Supply Chain Management version 10.0.40 or later.
 
 ### Set up Dataverse for your Supply Chain Management environment
 
@@ -81,3 +81,25 @@ Follow these steps to clear the Power Apps cache on a mobile device.
 1. In the upper left of the page, select the image for your user account to open the settings menu.
 1. Select **Clear cache** to open the **Clear cache** dialog box.
 1. Select **Confirm**.
+
+## FAQs
+
+### What platforms and mobile devices are supported?
+
+The Inventory On-hand mobile app runs within the Power Apps mobile app. All platforms supported by the Power Apps mobile app can also run the Inventory On-hand mobile app. For details, see [System requirements, limits, and configuration values for Power Apps](/power-apps/limits-and-config).
+
+### Why don't I see anything when I sign in to the app?
+
+If you don't see any features in the app, you probably lack the permissions required to access them. Access to each feature is controlled by security roles assigned to your user account in Supply Chain Management. Learn more in [Configure users and workers in Supply Chain Management](onboard-app.md#roles-workers)
+
+### Can I customize and extend the app?
+
+No, it isn't currently possible to customize or extend the app.
+
+### Does the app support offline mode?
+
+No, the Inventory On-hand mobile app doesn't currently support offline mode.
+
+## Is there multi-language support?
+
+Yes, the Inventory On-hand mobile app is available in all the same languages as Supply Chain Management. The language will be set according to your mobile device settings.
