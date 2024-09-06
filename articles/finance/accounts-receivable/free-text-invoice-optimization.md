@@ -1,8 +1,8 @@
 --- 
 title: Free text invoice optimization
 description: This article explains how to optimize free text invoices in Microsoft Dynamics 365 Finance.
-author: prabhatb-ship-it
-ms.author: prabhatb
+author: JodiChristiansen
+ms.author: jchrist
 ms.topic: how-to
 ms.date: 07/08/2024
 ms.custom:

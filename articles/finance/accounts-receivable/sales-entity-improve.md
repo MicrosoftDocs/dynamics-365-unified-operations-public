@@ -1,8 +1,8 @@
 ---
 title: Improve performance and efficiency of sales invoice entities
 description: This article describes changes that were made to improve the performance and efficiency of sales invoice entities.
-author: prabhatb
-ms.author: prabhatb
+author: JodiChristiansen
+ms.author: jchrist
 ms.reviewer: twheeloc
 ms.search.form:
 ms.topic: how-to

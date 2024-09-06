@@ -32,6 +32,8 @@ Multiple Data Management Framework (DMF) entities have been added for the 10.0.3
 > [!NOTE]
 > To see the new entities, you might have to refresh the entity list in your environment. In the **Data management** workspace, select the **Framework parameters** tile, and then, on the **Entity settings** tab, select **Refresh entity list**.
 
+
+
 | Module | New entity coverage | Notes |
 |--------|---------------------|-------|
 | Personnel management | I-9 documents, Union agreements, Worker actions, Position actions, Default location, Primary position | N/A |
@@ -53,7 +55,7 @@ Data templates are predefined lists of entities for each module that can be used
 > [!NOTE]
 > Before you load the templates, you might have to refresh the entity list in your environment. In the **Data management** workspace, select the **Framework parameters** tile, and then, on the **Entity settings** tab, select **Refresh entity list**.
 
-| Template name | Entities included | Module |
+| Template name | Entities included | Module | 
 |---------------|-------------------|--------|
 | Case management | <ul><li>Service level agreement</li><li>Case category security by role</li><li>Injury and illness body parts</li><li>Injury and illness cost types</li><li>Injury and illness types</li><li>Injury and illness outcome types</li><li>Injury and illness severity levels</li><li>Injury and illness treatment types</li><li>Case hierarchy</li><li>Case categories</li><li>Injury or illness incidents</li><li>Lead priorities</li><li>Case detail</li><li>FMLA hours</li><li>Injury or illness costs</li><li>Injury or illness filings</li><li>Injury or illness treatments</li></ul> | Service management, Sales and Marketing, System administration |
 | Compensation management | <ul><li>Compensation fixed action table</li><li>Compensation survey companies</li><li>Reference point setups</li><li>Reference points</li><li>Compensation grids</li><li>Compensation structure</li><li>Compensation pay frequency</li><li>Compensation variable type</li><li>Compensation fixed plan</li><li>Compensation variable plan V2</li><li>Compensation plan eligibility rules</li><li>Compensation eligibility levels</li><li>Compensation vesting rules</li><li>Variable compensation level V2</li><li>Employee fixed compensation</li><li>Employee variable compensation</li><li>Employee variable compensation enrollment V2</li><li>Compensation merit increase target</li><li>Employee variable compensation enrollment overrides</li><li>Process results</li><li>Compensation process table</li><li>Compensation process lines</li><li>Compensation recommend event composite lines</li><li>Compensation recommend event fixed lines</li><li>Compensation recommend event point in time lines</li><li>Compensation recommend event table</li><li>Compensation fixed plan range utilization matrix</li><li>Compensation performance per organization unit</li><li>Compensation performance plan</li><li>Compensation performance allocation</li><li>Compensation performance rating</li><li>Compensation performance allocation lines</li><li>Total compensation statement sections header</li><li>The tax codes in tax groups of the Total compensation statement section</li><li>The benefit codes in benefit group of the Total compensation statement section</li><li>The earning codes of the Total compensation statement section</li></ul> | Human resources |
