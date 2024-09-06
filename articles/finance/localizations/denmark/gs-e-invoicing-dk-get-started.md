@@ -335,9 +335,6 @@ You can inquire about the results of the submission by going to **Organization a
 
 ## Additional resources
 
-- [Electronic invoicing overview](../global/e-invoicing-service-overview.md)
-- [Get started with Electronic invoicing service administration](../e-invoicing-get-started-service-administration.md)
-- [Get started with Electronic invoicing](../e-invoicing-get-started.md)
 - [Customer electronic invoices in Denmark](../norway/emea-dnk-e-invoices.md)
 - [Vendor electronic invoice import in Denmark](../denmark/emea-dnk-vend-e-invoice.md)
 
