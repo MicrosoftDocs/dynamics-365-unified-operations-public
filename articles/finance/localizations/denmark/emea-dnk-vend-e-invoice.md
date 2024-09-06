@@ -25,7 +25,7 @@ This article explains how to configure and use vendor electronic invoice import 
 Before you complete the tasks in this article, the following prerequisites must be met:
 
 - The primary address of the legal entity must be in Denmark.
-- The latest version of the Electronic reporting (ER) format configuration that's named **Vendor Invoice Import (DK)** must be imported. For more information, see [Import Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
+- The latest version of the Electronic reporting (ER) format configuration that's named **Vendor Invoice Import (DK)** must be imported. For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 > [!NOTE]
 > The ER format is based on the **Invoice model** configuration and uses the **Vendor Invoice Mapping to Destination** configuration. All required additional configurations are automatically imported.
