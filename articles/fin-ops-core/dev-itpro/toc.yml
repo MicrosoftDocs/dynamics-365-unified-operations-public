@@ -321,6 +321,8 @@ items:
             href: sysadmin/archive-so.md 
           - name: Archive Dynamics 365 Supply Chain inventory transactions
             href: sysadmin/archive-inventory.md
+          - name: Archive Dynamics 365 Supply Chain inventory documents
+            href: sysadmin/archive-invent-doc.md
           - name: Archive Dynamics 365 Supply Chain inventory journals
             href: sysadmin/archive-inventory-journal.md
           - name: Archive Commerce transactions
