@@ -1,9 +1,9 @@
 ---
-title: Electronic invoicing for Denmark
-description: Learn how to get started with Electronic invoicing for Denmark in Microsoft Dynamics 365 Finance.
+title: Use electronic invoicing for Denmark
+description: Learn how to get started using Electronic invoicing for Denmark in Microsoft Dynamics 365 Finance.
 author: ilikond
 ms.author: ikondratenko
-ms.topic: article
+ms.topic: how-to
 ms.date: 09/06/2024
 ms.custom: 
   - bap-template
@@ -13,7 +13,7 @@ ms.search.validFrom: 2024-09-01
 ms.dyn365.ops.version: AX 10.0.39
 ---
 
-# Electronic invoicing for Denmark
+# Use electronic invoicing for Denmark
 
 [!include [banner](../../includes/banner.md)]
 
@@ -49,7 +49,7 @@ Some parameters for the **Danish electronic invoice (DK)** electronic invoicing 
 8. Select **Destination**, and then enter the service ID number concatenated with the string **\_EDIWIN**. For example, if the service ID number is **123456**, enter **123456\_EDIWIN**.
 9. Select **Group**, and then enter the group code that you obtained.
 10. Select **Auth token**, and then select the name of the secret that you created for the token.
-11. Select **Save**, and close the page.
+11. Select **Save** and close the page.
 12. Repeat steps 4 through 11 for each of the following feature setups if your business process assumes the involvement of the related types of documents:
 
     - Sales credit note OIOUBL
@@ -66,7 +66,7 @@ Some parameters for the **Danish electronic invoice (DK)** electronic invoicing 
 16. Select **Application**, and then enter the same service ID number.
 17. Select **Group**, and then enter the group code that you obtained.
 18. Select **Data channel**, and then enter the name of the [integration channel](#ExChannel) that's configured on the **Electronic document parameters** page in Finance.
-19. Select **Save**, and close the page.
+19. Select **Save** and close the page.
 
 ## Finance configuration
 
@@ -82,7 +82,7 @@ Some additional parameters must be configured directly in Finance.
 8. In the **Company** column, select a required legal entity code.
 9. In the **Document context** column, refer to the **Customer invoice context model** configuration by using the **Data channel context** definition.
 10. In the **Channel type** column, select **Export**.
-11. Save your changes, and close the page.
+11. Save your changes and close the page.
 
 ## Finance business data configuration
 
@@ -135,7 +135,7 @@ By default, all outgoing electronic invoices are generated in OIOUBL format for 
 2. In the **Type** field, enter **FormatType**. You must enter the value exactly as it appears here.
 3. Select **Applicability** to add an applicable table.
 4. On the **Electronic document property type applicability setup** page, in the **Table name** field, select the **Customers** table name.
-5. Save your changes, and return to the **Electronic document property types** page.
+5. Save your changes and return to the **Electronic document property types** page.
 
     ![Screenshot that shows the property type added on the Electronic document property types page.](../media/emea_dk_format_type_setup.jpg)
 
@@ -178,7 +178,7 @@ To import incoming invoices in OIOUBL and PEPPOL formats, follow these additiona
 6. Select the **Token** parameter, and then select the name of the secret that you created for the token.
 7. On the **Applicability rules** tab, in the **Channel** field, make sure that the **Value** column contains the same [import channel](#ImportChannel) name that you defined earlier.
 9. <a id="OutputFile"></a>On the **Variables** tab, make a note of the **OutputFile** name, because you'll use it in later configuration steps.
-10. Select **Save**, and close the page.
+10. Select **Save** and close the page.
 11. If an import in the PEPPOL format is also required, repeat steps 2 through 10 for the **Incoming PEPPOL** feature setup.
 12. Complete and deploy the configured version of the **Danish electronic invoice (DK)** electronic invoicing feature.
 
@@ -201,7 +201,7 @@ Some additional parameters must be configured directly in Finance.
 5. Open the **DataChannel** definition to edit it in the designer.
 6. In the **Data sources** tree, expand the **$Context\_Channel** container.
 7. In the **Value** field, select **Edit**, and then enter the [import channel](#ImportChannel) name.
-8. Save your changes, and complete the derived configuration.
+8. Save your changes and complete the derived configuration.
 9. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 10. On the **Integration channels** tab, in the **Channels** section, in the **Channel** field, enter the [import channel](#ImportChannel) name that you created earlier.
 11. In the **Channels** section, in the **Company** field, select a required legal entity.
@@ -216,7 +216,7 @@ Some additional parameters must be configured directly in Finance.
     ![Screenshot that shows Vendor invoice import (DK) referenced in the Model mapping field.](../media/isv_connector_import_channel.jpg)
 
 16. If an import in the PEPPOL format is also required, create another import channel, and repeat steps 3 through 15 for this channel. Use the **Vendor invoice import** configuration in step 15.
-17. Select **Save**, and close the page.
+17. Select **Save** and close the page.
 
 ### Configure Finance business data
 
@@ -254,12 +254,12 @@ Responses can be configured by using electronic document property types in the s
 2. In the **Type** field, enter **RejectResponse**. You must enter the value exactly as it appears here.
 3. Select **Applicability** to add an applicable table.
 4. On the **Electronic document property type applicability setup** page, in the **Table name** field, select the **VendInvoiceInfoTable** table name.
-5. Save your changes, and return to the **Electronic document property types** page.
+5. Save your changes and return to the **Electronic document property types** page.
 6. Select **New** to create another electronic document property type.
 7. In the **Type** field, enter **MessageResponse**. You must enter the value exactly as it appears here.
 8. Select **Applicability** to add an applicable table.
 9. On the **Electronic document property type applicability setup** page, in the **Table name** field, select the **VendInvoiceInfoTable** table name.
-10. Save your changes, and return to the **Electronic document property types** page.
+10. Save your changes and return to the **Electronic document property types** page.
 11. Select the existing [FormatType](#FormatType) electronic document property type.
 12. Select **Applicability** to add an applicable table.
 13. On the **Electronic document property type applicability setup** page, in the **Table name** field, select the **Vendors** table name. 
@@ -267,7 +267,7 @@ Responses can be configured by using electronic document property types in the s
     > [!NOTE]
     > The same electronic document property type is used to determine which response type is generated for a specific vendor: **OIOUBL application response** or **PEPPOL invoice level response**.
 
-14. Save your changes, and return to the **Electronic document property types** page.
+14. Save your changes and return to the **Electronic document property types** page.
 
     ![Screenshot that shows the property type added on the Electronic document property types page for responses.](../media/emea_dk_response_types_setup.jpg)
 
@@ -298,7 +298,7 @@ Follow these steps to enter responses for specific pending vendor invoices.
 Some parameters for the **Danish electronic invoice (DK)** electronic invoicing feature have default values. Before you deploy the feature to the service environment, review the default values, and update the authorization credential that's required for response submission via the ISV last-mile connector.
 
 1. Import the latest version of the **Danish electronic invoice (DK)** Globalization feature, **version 5** or later. For more information, see [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
-2. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md#create-a-feature-that-is-based-on-an-existing-feature).
+2. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md#create-a-feature-that's-based-on-an-existing-feature).
 3. On the **Versions** tab, verify that **Draft** is selected.
 4. On the **Setups** tab, in the grid, select the **Application Response OIOUBL** feature setup, and then select **Edit**.
 5. On the **Processing pipeline** tab, in the **Processing pipeline** section, select **Integrate with Edicom**.
@@ -307,7 +307,7 @@ Some parameters for the **Danish electronic invoice (DK)** electronic invoicing 
 8. Select **Destination**, and then enter the service ID number concatenated with the string **\_EDIWIN**. For example, if the service ID number is **123456**, enter **123456\_EDIWIN**.
 9. Select **Group**, and then enter the group code that you obtained.
 10. Select **Auth token**, and then select the name of the secret that you created for the token.
-11. Select **Save**, and close the page.
+11. Select **Save** and close the page.
 12. Repeat steps 4 through 11 for each of the following feature setups if your business process assumes that responses are sent in PEPPOL format:
 
     - Invoice Response PEPPOL
@@ -320,7 +320,7 @@ Some parameters for the **Danish electronic invoice (DK)** electronic invoicing 
 3. In the **Electronic document** section, add a record for the **VendInvoiceInfoTable** table name.
 4. Set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
 5. In the **Company** column, you can select a legal entity code to limit the applicability of this electronic document type. If you don't select a value, electronic documents of this type are processed in all legal entities.
-6. Save your changes, and close the page.
+6. Save your changes and close the page.
 
 ### Send responses
 
