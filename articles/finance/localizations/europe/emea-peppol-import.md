@@ -130,6 +130,10 @@ Successfully imported vendor electronic invoices are shown in the system as pend
 > - The import of miscellaneous charges isn't supported.
 > - Only the import of line-level discounts is supported.
 
+Add the title
+
+> [!VIDEO 2167036b-ff87-4473-9bf3-e2902cbdb21f]
+
 ## Learn more
 
 - [Use the electronic invoicing service to import vendor invoices](../global/e-invoicing-get-started-import-vendor-invoices.md)
