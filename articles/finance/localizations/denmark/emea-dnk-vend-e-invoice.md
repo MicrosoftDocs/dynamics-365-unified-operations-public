@@ -4,14 +4,11 @@ description: Learn how to configure and use vendor electronic invoice import for
 author: ilikond
 ms.author: ikondratenko
 ms.topic: article
-ms.date: 10/13/2023
+ms.date: 09/06/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Denmark
 ms.search.validFrom: 2023-11-03
-ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.38
-ms.assetid: 
 ---
 
 # Vendor electronic invoice import in Denmark
@@ -25,7 +22,7 @@ This article explains how to configure and use vendor electronic invoice import 
 Before you complete the tasks in this article, the following prerequisites must be met:
 
 - The primary address of the legal entity must be in Denmark.
-- The latest version of the Electronic reporting (ER) format configuration that's named **Vendor Invoice Import (DK)** must be imported. For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+- The latest version of the Electronic reporting (ER) format configuration, named **Vendor Invoice Import (DK)**, must be imported. For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 > [!NOTE]
 > The ER format is based on the **Invoice model** configuration and uses the **Vendor Invoice Mapping to Destination** configuration. All required additional configurations are automatically imported.
