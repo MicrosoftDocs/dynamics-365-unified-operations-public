@@ -100,6 +100,6 @@ No, it isn't currently possible to customize or extend the app.
 
 No, the Inventory On-hand mobile app doesn't currently support offline mode.
 
-## Is there multi-language support?
+### Is there multi-language support?
 
 Yes, the Inventory On-hand mobile app is available in all the same languages as Supply Chain Management. The language will be set according to your mobile device settings.
