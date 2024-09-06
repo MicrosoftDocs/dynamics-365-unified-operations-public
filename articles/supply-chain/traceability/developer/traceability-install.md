@@ -49,7 +49,7 @@ To use Traceability together with Dynamics 365 Supply Chain Management, you must
 1. In the left navigation pane, select **Manage** \> **Certificates & secrets**.
 1. On the **Certificates & secrets** page, select **New client secret**.
 1. In the **Add a client secret** dialog, enter a description and choose an expiration date for the secret. Then select **Add**.
-1. The **Certificates & secrets** page now includes your new secret. Copy the **Value** and **Secret ID** of the secret and store it in a secure location. You'll need these values later. 
+1. The **Certificates & secrets** page now includes your new secret. Copy the **Value** and **Secret ID** of the secret and store it in a secure location. You'll need these values later when [setting up communication with the API](traceability-api.md).
 
     > [!IMPORTANT]
     > The **Value** is only displayed once, so you won't be able to retrieve it again after closing this page.
@@ -100,7 +100,7 @@ This section describes how to see when an update of the Traceability app is avai
 
 ## Uninstall the Traceability Add-in from Supply Chain Management
 
-The Traceability Add-in is automatically installed on your Supply Chain Management when you install the Traceability app in Power Apps. However, to uninstall the add-in, you must use Microsoft Dynamics 365 Lifecycle Services (LCS) by following these steps:
+The Traceability Add-in is automatically installed on your Supply Chain Management environment when you install the Traceability app in Power Apps. However, to uninstall the add-in, you must use Microsoft Dynamics 365 Lifecycle Services (LCS) by following these steps:
 
 1. Sign in to [Lifecycle Services](https://lcs.dynamics.com/).
 1. Open the page for managing your Supply Chain Management environment.

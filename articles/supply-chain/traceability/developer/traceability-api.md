@@ -43,6 +43,8 @@ To obtain an access token, follow these steps:
         | grant\_type | client\_credentials |
         | scope | 0cdb527f-a8d1-4bf8-9436-b352c68682b2/.default |
 
+    You should have generated and saved your client secret when you created the Microsoft Entra application in Azure for Traceability. Learn more in [Install, update, or uninstall Traceability](traceability-install.md).
+
 1. You should receive a Microsoft Entra token in response. It should resemble the following example:
 
     ```json
@@ -652,7 +654,7 @@ Produce finished good *A* with component *B* and *C* by different events. Query 
 
 ## Unlink events API
 
-This API can unlink a genealogy node and insert an activity for unlink. You can use it in business activities to disassemble production components, uninstall equipment, and unload containers.
+This API can unlink a genealogy node by inserting an unlink-component activity event. You can use it in business activities to disassemble production components, uninstall equipment, and unload containers.
 
 - **Path** – `/api/environments/{environmentId}/events/unlink-components`
 - **Method** – `POST`
@@ -660,8 +662,6 @@ This API can unlink a genealogy node and insert an activity for unlink. You can 
 Where *{environmentId}* is the environment ID of your Supply Chain Management environment in Lifecycle Services.
 
 ### Post unlink events request payload
-
-<!-- KFM: Note that I have marked comments in the following code with #. Is that OK? -->
 
 ```txt
 {
@@ -764,7 +764,7 @@ On success, status code 204 is returned.
 
 This example shows how to use the unlink events post API to create a new activity with activity code *FullRemove* and activity type *Production*. The app is configured (on the **Settings** \> **Activity** page) to make the *FullRemove* activity code available to all companies. The example removes component *C* from product *A* (continuing from the example provided previously).
 
-#### Unlink events post example request payload 1
+#### Unlink events post example request payload
 
 ```json
 {
