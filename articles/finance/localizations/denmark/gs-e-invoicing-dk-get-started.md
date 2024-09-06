@@ -4,13 +4,12 @@ description: Learn how to get started with Electronic invoicing for Denmark in M
 author: ilikond
 ms.author: ikondratenko
 ms.topic: article
-ms.date: 09/01/2024
+ms.date: 09/06/2024
 ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Denmark
 ms.search.validFrom: 2024-09-01
-ms.search.form: 
 ms.dyn365.ops.version: AX 10.0.39
 ---
 
