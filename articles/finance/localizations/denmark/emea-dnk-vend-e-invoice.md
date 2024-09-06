@@ -3,7 +3,9 @@ title: Vendor electronic invoice import in Denmark
 description: Learn how to configure and use vendor electronic invoice import for Denmark in Microsoft Dynamics 365 Finance, including prerequisites.
 author: ilikond
 ms.author: ikondratenko
-ms.topic: article
+ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 09/06/2024
 ms.reviewer: johnmichalak
 ms.search.region: Denmark
