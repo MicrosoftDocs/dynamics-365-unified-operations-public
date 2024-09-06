@@ -52,7 +52,7 @@ Follow these steps to install the Inventory On-hand mobile app in Dataverse.
 1. Select **Get it now**.
 1. Follow the on-screen instructions to install the app in the Dataverse environment that's connected to your target Supply Chain Management environment.
 
-## Grant access to the mobile app in Dataverse
+## <a name="access"></a>Grant access to the mobile app in Dataverse
 
 After the mobile app solution is installed in your Dataverse environment, you must share it with your users. The Inventory On-hand mobile app is a canvas app. To share it, follow the instructions in [Share an app](/power-apps/maker/canvas-apps/share-app#share-an-app).
 
@@ -90,7 +90,7 @@ The Inventory On-hand mobile app runs within the Power Apps mobile app. All plat
 
 ### Why don't I see anything when I sign in to the app?
 
-If you don't see any features in the app, you probably lack the permissions required to access them. Access to each feature is controlled by security roles assigned to your user account in Supply Chain Management. Learn more in [Configure users and workers in Supply Chain Management](onboard-app.md#roles-workers)
+If you don't see any features in the app, you probably lack the permissions required to access them. Access to each feature is controlled by security roles assigned to your user account in Supply Chain Management. Learn more in [Grant access to the mobile app in Dataverse](#access).
 
 ### Can I customize and extend the app?
 
