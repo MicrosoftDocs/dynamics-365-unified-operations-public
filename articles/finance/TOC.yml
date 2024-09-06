@@ -1660,6 +1660,8 @@
                               href: localizations/global/gs-e-invoicing-configure-email-for-exchange.md?context=/dynamics365/context/finance
                             - name: Configure a SharePoint channel
                               href: localizations/global/e-invoicing-configure-sharepoint-channel.md
+                            - name: Use the electronic invoicing service to import vendor invoices
+                              href: localizations/global/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/finance                              
                         - name: Electronic Invoicing service ISV last-mile connector
                           href: localizations/global/e-invoicing-isv-connector.md
                     - name: Work with Electronic invoicing
@@ -1686,6 +1688,8 @@
                               href: localizations//iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/finance
                         - name: Denmark
                           href: localizations/denmark/gs-e-invoicing-dk-get-started.md?context=/dynamics365/context/finance
+                        - name: France
+                          href: localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance                        
                         - name: Indonesia
                           href: localizations/indonesia/gs-e-invoicing-id-get-started.md?context=/dynamics365/context/finance
                         - name: Malaysia
@@ -1798,8 +1802,6 @@
                           href: localizations/denmark/e-invoicing-dk-get-started.md
                         - name: Get started with Electronic Invoicing for Egypt
                           href: localizations/mea/e-invoicing-eg-get-started.md?context=/dynamics365/context/finance
-                        - name: Get started with Electronic Invoicing for France
-                          href: localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance
                         - name: Get started with Electronic Invoicing for Indonesia
                           href: localizations/indonesia/e-invoicing-id-get-started.md?context=/dynamics365/context/finance
                         - name: Get started with Electronic invoicing for Poland
@@ -1812,8 +1814,6 @@
                           href: localizations/mea/e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
                         - name: Setup direct integration of Italian FatturaPA with SDI
                           href: localizations/italy/e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/finance
-                        - name: Use the electronic invoicing service to import vendor invoices
-                          href: localizations/global/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/finance
                     - name: Electronic Invoicing FAQ
                       href: localizations/global/e-invoicing-faq.md?context=/dynamics365/context/finance
                 - name: Tax Calculation
