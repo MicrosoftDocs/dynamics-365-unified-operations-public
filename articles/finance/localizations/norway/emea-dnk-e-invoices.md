@@ -6,12 +6,10 @@ ms.author: ikondratenko
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/17/2024
+ms.date: 09/06/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Norway
 ms.search.validFrom: 2021-01-01
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.21
 ---
 
