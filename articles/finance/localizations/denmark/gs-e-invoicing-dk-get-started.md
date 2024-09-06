@@ -40,8 +40,8 @@ Before you begin the procedures in this article, the following prerequisites mus
 
 Some parameters for the **Danish electronic invoice (DK)** electronic invoicing feature have default values. Before you deploy the feature to the service environment, review the default values, and update them as required, so that they better reflect your business operations.
 
-1. Import the latest version of the **Danish electronic invoice (DK)** Globalization feature, **version 4** or later. For more information, see [Import features from the Global repository](../global/e-invoicing-import-feature-global-repository.md).
-2. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/e-invoicing-create-new-globalization-feature.md).
+1. Import the latest version of the **Danish electronic invoice (DK)** Globalization feature, **version 4** or later. For more information, see [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+2. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
 3. On the **Versions** tab, verify that **Draft** is selected.
 4. On the **Setups** tab, in the grid, select the **Sales invoice OIOUBL** feature setup, and then select **Edit**.
 5. On the **Processing pipeline** tab, in the **Processing pipeline** section, select **Integrate with Edicom**.
