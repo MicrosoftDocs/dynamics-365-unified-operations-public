@@ -82,11 +82,11 @@ Follow these steps to clear the Power Apps cache on a mobile device.
 1. Select **Clear cache** to open the **Clear cache** dialog box.
 1. Select **Confirm**.
 
-## FAQs
+## Frequently asked questions
 
 ### What platforms and mobile devices are supported?
 
-The Inventory On-hand mobile app runs within the Power Apps mobile app. All platforms supported by the Power Apps mobile app can also run the Inventory On-hand mobile app. For details, see [System requirements, limits, and configuration values for Power Apps](/power-apps/limits-and-config).
+The Inventory On-hand mobile app runs within the Power Apps mobile app. All platforms supported by the Power Apps mobile app can also run the Inventory On-hand mobile app. Learn more in [System requirements, limits, and configuration values for Power Apps](/power-apps/limits-and-config).
 
 ### Why don't I see anything when I sign in to the app?
 
@@ -102,4 +102,4 @@ No, the Inventory On-hand mobile app doesn't currently support offline mode.
 
 ### Is there multi-language support?
 
-Yes, the Inventory On-hand mobile app is available in all the same languages as Supply Chain Management. The language will be set according to your mobile device settings.
+Yes, the Inventory On-hand mobile app is available in all the same languages as Supply Chain Management. The language is set according to your mobile device settings.
