@@ -4,7 +4,7 @@ description: Learn about how to archive Microsoft Dynamics 365 Supply Chain Mana
 author: pnghub
 ms.author: gned
 ms.topic: conceptual
-ms.date: 4/10/2024
+ms.date: 9/06/2024
 ms.custom:
 ms.reviewer: twheeloc
 ---
@@ -32,22 +32,23 @@ The **Archive with Dataverse long term retention** workspace should now be a
 
 To move inventory journal records to Dataverse long term retention, follow these steps. 
 
-1. Go to Workspaces > Archive with Dataverse long term retention.
-2. Select Inventory transactions originator.
-3. Select New long term retention job to open a wizard where you can schedule a new Inventory transactions originator archival job with Dataverse long term retention.
-4. Enter a name for the job, and then select Next.
-5. Select the legal entity of the inventory transactions originate that need be purged, and then select Next.
-6. Enter the start date and time of the job, and then select Next.
-7. Select Finish to schedule the archive job.
+1. Go to **Workspaces** > **Archive with Dataverse long term retention**.
+2. Select **Inventory transactions originator**.
+3. Select **New long term retention job** to open a wizard to schedule a new Inventory transactions originator archival job with Dataverse long term retention.
+4. Enter a name for the job, and select **Next**.
+5. Select the legal entity of the inventory transactions originate that need be purged, and select **Next**.
+6. Enter the start date and time of the job, and select **Next**.
+7. Select **Finish** to schedule the archive job.
 8. You receive a message that the long term retention job has been created. 
 
 ### View the status of the long term retention job 
 
 To view the results of the long term retention job, follow these steps. 
 
-1. Go to Workspaces > Archive with Dataverse long term retention > Inventory transactions originator.
-2. A list of long term retention jobs is shown. Select the job where the Job status field is set to Completed.
-3. Under Results, select the link. 
+1. Go to **Workspaces** > **Archive with Dataverse long term retention** > **Inventory transactions originator**.
+2. A list of long term retention jobs is displayed.
+3. Select the job where **Job status** is **Completed**.
+4. Under **Results**, select the link. 
 
 ### View historical data from the history table 
 
@@ -55,13 +56,13 @@ When inventory transactions originator is archived by using Dataverse long term 
 the archived data by using an inquiry page. 
 
 To view the historical data, follow these steps. 
-1. Go to Workspaces > Archive with Dataverse long term retention > Inventory transactions originator.
-2. A list of long term retention jobs is shown. Select the job where the Job status field is set to Completed.
-3. Select View historical data to view the data in the history table. 
+1. Go to **Workspaces** > **Archive with Dataverse long term retention** > **Inventory transactions originator**.
+2. A list of long term retention jobs is displayed. Select the job where **Job status** is **Completed**.
+3. Select **View historical data** to view the data in the history table. 
 
 ### Capacity reports 
 
-The capacity that's consumed by Inventory transactions originator tables that are archived by using Dataverse long term retention appears under the database storage capacity reports in Platform admin center. The
-capacity that's consumed by the live and history tables in the finance and operations tables is available in the Finance section of the Power Platform admin center capacity reports. 
+The capacity that's consumed by Inventory transactions originator tables that are archived by using Dataverse long term retention appear under the database storage capacity reports in Platform admin center. The
+capacity that's consumed by the live and history tables in the finance and operations tables are available in the Finance section of the Power Platform admin center capacity reports. 
 
  
