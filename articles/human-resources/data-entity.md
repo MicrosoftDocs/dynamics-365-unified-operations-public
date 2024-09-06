@@ -32,6 +32,8 @@ Multiple Data Management Framework (DMF) entities have been added for the 10.0.3
 > [!NOTE]
 > To see the new entities, you might have to refresh the entity list in your environment. In the **Data management** workspace, select the **Framework parameters** tile, and then, on the **Entity settings** tab, select **Refresh entity list**.
 
+
+
 | Module | New entity coverage | Notes |
 |--------|---------------------|-------|
 | Personnel management | I-9 documents, Union agreements, Worker actions, Position actions, Default location, Primary position | N/A |
