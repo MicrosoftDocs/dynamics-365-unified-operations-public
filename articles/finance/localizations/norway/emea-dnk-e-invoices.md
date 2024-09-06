@@ -37,7 +37,7 @@ In the **Electronic reporting** workspace, import the following Electronic repor
 > [!NOTE]
 > Any other required configurations are automatically imported.
 
-For more information about how to import ER configurations, see [Download Electronic reporting configurations from Lifecycle Services](../../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+For more information about how to import ER configurations, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 ### Reference the imported ER format configurations
 
