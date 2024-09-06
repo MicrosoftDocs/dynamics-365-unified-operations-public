@@ -6,8 +6,6 @@ description: This article describes the options for setting up and using the Bal
 author: kweekley
 ms.date: 07/25/2024
 ms.topic: article
-ms.prod: 
-ms.technology: 
 
 # optional metadata
 
