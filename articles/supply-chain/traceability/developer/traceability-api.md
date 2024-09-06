@@ -6,7 +6,7 @@ ms.author: banluo
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 07/29/2024
+ms.date: 09/06/2024
 ms.custom: 
   - bap-template
 ---
@@ -302,7 +302,7 @@ Produce finished good **A** with component **B** and **C** by different events.
 
 #### Events post example results
 
-If you were to post the example events shown previously, the Traceability Add-in would display the results shown in the following screenshot.
+If you posted the example events shown previously, the Traceability Add-in would display the results shown in the following screenshot.
 
 :::image type="content" source="../media/events-post-api-result-example.png" alt-text="Results of the events post example, shown in the Traceability Add-in" lightbox="../media/events-post-api-result-example.png":::
 
@@ -762,7 +762,7 @@ On success, status code 204 is returned.
 
 ### Unlink events post example
 
-This example shows how to use the unlink events post API to create a new activity with activity code *FullRemove* and activity type *Production* for all company codes in the *Activity* menu <!-- KFM: What do we mean by "all company codes" (seems like we specify USMF in the JSON and screenshot)? What is the "*Activity* menu"? -->. The example removes component *C* from product *A* (continuing from the example provided previously).
+This example shows how to use the unlink events post API to create a new activity with activity code *FullRemove* and activity type *Production*. The app is configured (on the **Settings** \> **Activity** page) to make the *FullRemove* activity code available to all companies. The example removes component *C* from product *A* (continuing from the example provided previously).
 
 #### Unlink events post example request payload 1
 
@@ -775,7 +775,7 @@ This example shows how to use the unlink events post API to create a new activit
             "EventId": "remove c -a8f441b3-2f15-5b92-8d84-20240821112003",
             "CompanyCode": "USMF",
             "Operator": "Terry Alvarado",
-            "Description": "Component C Full Remove",
+            "Description": "Component Full Remove",
             "ActivityType": "Production",
             "ActivityCode": "FullRemove",
             "Datetime": "2023-08-15T06:14:06.653Z",
@@ -816,20 +816,11 @@ This example shows how to use the unlink events post API to create a new activit
 
 #### Unlink events post example results
 
-If you were to post the example request shown previously, the Traceability Add-in would display the results shown in the following screenshot, which indicates the following events:
+If you posted the example request shown previously, the Traceability app would display the following events in the **Activities** dialog for product *A*, serial number *A-001*:
 
-- Component *C* from batch *C-001* was unlinked from product *A* serial number *A-001*.
-- A new activity called *Production - FullRemove* was inserted for product *A* and includes information about the removed component.
+- The new activity event is shown as a node identified using the description submitted to the API, which is *Component Full Remove*.
+- The node includes a section that specifies the activity, which is called *Production - FullRemove*. The name combines the activity type and activity code. More details about the activity are provided under the name.
+- The node includes two transactions, one each of *Receipts* and *Consumptions*. These transactions map to the `ConsumptionTransactions` and `ProductTransactions` elements of the request payload, respectively.
+- Each transaction contains information about a specific component affected by the activity. The result of this activity event is that component *C* from batch *C-001* was unlinked from product *A* serial number *A-001*.
 
 :::image type="content" source="../media/unlink-post-api-result-example.png" alt-text="Results of the unlink events post example, shown in the Traceability Add-in" lightbox="../media/unlink-post-api-result-example.png":::
-
-<!-- KFM: 
-
-The description in the JSON is *Component C Full Remove*.  But this seems to be shown as *Component Full Remove* in the screenshot. Should these texts match? 
-
-I’m a little confused about what we see in the screenshot, so I’d like to clarify the terminology. Here are my guesses:
-- We have an “activity event” called *Component Full Remove*.
-- The “activity” for this “activity event” is called *Production – FullRemove* (which is a combination of the activity type and code).
-- The “activity event” has two “transactions”, one each of *Receipts* and *Consumptions*.
-
--->
