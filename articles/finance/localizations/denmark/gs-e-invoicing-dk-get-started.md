@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 10.0.39
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information to help you get started with Electronic invoicing for Denmark. It includes information about how to configure the system so that you can generate, submit, and receive electronic invoices in the Denmark-specific [OIOUBL](http://www.oioubl.info/Classes/da/Invoice.html) format and, if necessary, in [Pan-European Public Procurement Online (PEPPOL)](https://docs.peppol.eu/poacc/billing/3.0/) format. The steps in this article are general and country/region-dependent in Regulatory Configuration Service (RCS) and Microsoft Dynamics 365 Finance.
+This article provides information to help you get started with Electronic invoicing for Denmark. It includes information about how to configure the system so that you can generate, submit, and receive electronic invoices in the Denmark-specific [OIOUBL](http://www.oioubl.info/Classes/da/Invoice.html) format and, if necessary, in [Pan-European Public Procurement Online (PEPPOL)](https://docs.peppol.eu/poacc/billing/3.0/) format. 
 
 ## Prerequisites
 
@@ -32,14 +32,9 @@ Before you begin the procedures in this article, the following prerequisites mus
     - **urn:fdc:peppol.eu:2017:poacc:billing:01:1.0** – This profile is used to interchange documents in PEPPOL format.
 
 - The company must obtain, from the service provider, the required credentials to enable integration of the Electronic Invoicing service with the [Electronic Invoicing service independent software vendor (ISV) last-mile connector](../global/e-invoicing-isv-connector.md).
-- Become familiar with Electronic invoicing as described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md) and [Electronic invoicing components](../global/e-invoicing-administration-integration-components.md).
-- Sign up for RCS, and set up Electronic invoicing. For more information, see the following articles:
-
-    - [Sign up for and install the Electronic Invoicing service](../global/e-invoicing-sign-up-install.md)
-    - [Set up Electronic invoicing](../global/e-invoicing-set-up-overview.md)
-
-- Activate the integration between Finance and the Electronic Invoicing service as described in [Activate and setup integration with Electronic invoicing](../global/e-invoicing-activate-setup-integration.md).
-- In the Azure key vault, create the secret for the token that grants authorization to access the infrastructure of the provider of electronic document delivery service, and set up Key Vault as described in [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md).
+- Become familiar with Electronic invoicing as described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md) and [Electronic invoicing components](../global/gs-e-invoicing-administration-integration-components.md).
+- Do the common part of electronic invoicing service configuration as described in [Set up electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
+- In the Azure key vault, create the secret for the token that grants authorization to access the infrastructure of the provider of electronic document delivery service, and set up Key Vault as described in [Configure Azure resources for Electronic invoicing](../global/gs-e-invoicing-set-up-azure-resources.md).
 
 ## Country-specific configuration for the Danish electronic invoice (DK) feature
 
