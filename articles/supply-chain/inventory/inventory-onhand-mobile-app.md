@@ -52,13 +52,11 @@ Follow these steps to install the Inventory On-hand mobile app in Dataverse.
 1. Select **Get it now**.
 1. Follow the on-screen instructions to install the app in the Dataverse environment that's connected to your target Supply Chain Management environment.
 
-## <a name="access"></a>Grant access to the mobile app in Dataverse
+## Share the mobile app and assign security roles
 
 After the mobile app solution is installed in your Dataverse environment, you must share it with your users. The Inventory On-hand mobile app is a canvas app. To share it, follow the instructions in [Share an app](/power-apps/maker/canvas-apps/share-app#share-an-app).
 
-The security roles that can access and query on-hand inventory through the mobile app are inherited from your Supply Chain Management setup. Therefore, any user (such as a sales manager, warehouse manager, or production manager) that can access the on-hand inventory list in Supply Chain Management can also query and view that data in the Inventory On-hand mobile app.
-
-For more information about how to set up roles and security in Supply Chain Management, see [Security roles](../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md#security-roles).
+The security roles that can access and query on-hand inventory through the mobile app are inherited from your Supply Chain Management setup. Therefore, any user (such as a sales manager, warehouse manager, or production manager) that has the security roles required to access the on-hand inventory list in Supply Chain Management can also query and view that data in the Inventory On-hand mobile app. For more information about how to set up roles and security in Supply Chain Management, see [Security roles](../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md#security-roles).
 
 ## Install and open the Inventory On-hand mobile app
 
@@ -90,7 +88,7 @@ The Inventory On-hand mobile app runs within the Power Apps mobile app. All plat
 
 ### Why don't I see anything when I sign in to the app?
 
-If you don't see any features in the app, you probably lack the permissions required to access them. Access to each feature is controlled by security roles assigned to your user account in Supply Chain Management. Learn more in [Grant access to the mobile app in Dataverse](#access).
+If you don't see any features in the app, you probably lack the permissions required to access them. Access is controlled by the security roles assigned to your user account in Supply Chain Management. The roles you need are the same as those required to access the on-hand inventory list in Supply Chain Management. Learn more in [Security roles](../../fin-ops-core/dev-itpro/sysadmin/role-based-security.md#security-roles).
 
 ### Can I customize and extend the app?
 
