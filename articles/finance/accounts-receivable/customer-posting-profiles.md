@@ -1,8 +1,8 @@
 ---
 title: Customer posting profiles
 description: Learn about customer posting profiles, which control the posting of customer transactions to the general ledger.
-author: prabhatb-ship-it
-ms.author: prabhatb
+author: JodiChristiansen
+ms.author: jchrist
 ms.topic: article
 ms.date: 11/21/2022
 ms.reviewer: twheeloc

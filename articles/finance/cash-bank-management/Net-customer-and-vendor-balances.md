@@ -4,7 +4,7 @@ description: Learn about customer and vendor balance netting in Microsoft Dynami
 author: EricWangChen
 ms.author: wangchen
 ms.topic: article
-ms.date: 10/26/2023
+ms.date: 09/03/2024
 ms.custom:
 ms.search.form: 
 ms.reviewer: twheeloc
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0
 
 [!include [banner](../includes/banner.md)]
 
-Customer and vendor balance netting is a process where the balances for a vendor and a customer are netted against each other, because the vendor and customer are the same party. This approach minimizes the exchange of money between an organization and the customer or vendor party. It can also help a company avoid making unnecessary payments or receipts, and save on transaction fees, by consolidating the company's customer and vendor balances.
+Customer and vendor balance netting is when the balances for a vendor and a customer are netted against each other, because the vendor and customer are the same party. This approach minimizes the exchange of money between an organization and the customer or vendor party. It can also help a company avoid making unnecessary payments or receipts, and save on transaction fees, by consolidating the company's customer and vendor balances.
 
 This article provides an overview of the customer and vendor balance netting process in Microsoft Dynamics 365 Finance. It also explains how to set up the netting agreement, manually net customer and vendor balances, and reverse posted netting transactions.
 
@@ -93,5 +93,39 @@ You can print netting advice for selected customer invoices and vendor invoices.
 1. Go to **Cash and bank management** \> **Netting** \> **Customer and vendor balances netting**.
 2. Select **Netting history**.
 3. Select the netting transaction, and then select **Print netting advice**.
+
+## Intercompany netting
+
+To create an intercompany netting agreement for customers and vendors in different legal entities, follow these steps.
+
+1. Go to **Cash and bank management** \> **Setup** \> **Cash and bank management parameters**.
+2. On the **Netting** tab, select **Allow intercompany netting**.
+3. Go to **Cash and bank management** \> **Netting** \> **Netting agreement**.
+4. On the **Parties** FastTab, in the **Customer legal entity** field, select a legal entity. Then add a customer account.
+5. In the **Vendor legal entity** field, select a legal entity. Then add a vendor account.
+
+    > [!NOTE]
+    > Either the **Customer legal entity** value or the **Vendor legal entity** value must match the current legal entity for the netting agreement. For more information, see [Intercompany accounting setup](../general-ledger/intercompany-accounting-setup.md).
+
+6. Activate the netting agreement.
+
+In each intercompany netting agreement, every posting generates three vouchers: two in the legal entity that holds the agreement and one in the counterparty legal entity.
+
+Here is an example of the vouchers that are generated. For this example, USMF is the legal entity that holds the agreement, and DEMF is the counterparty legal entity.
+
+| USMF - Netting000000001 | DR     | CR     |
+|-------------------------|--------|--------|
+| Accounts receivable     |        | 100.00 |
+| Interim netting         | 100.00 |        |
+
+| USMF - Netting000000002 | DR     | CR     |
+|-------------------------|--------|--------|
+| Interim netting         |        | 100.00 |
+| Intercompany debit      | 100.00 |        |
+
+| DEMF - ICJL000001   | DR     | CR     |
+|---------------------|--------|--------|
+| Intercompany credit |        | 100.00 |
+| Accounts payable    | 100.00 |        |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
