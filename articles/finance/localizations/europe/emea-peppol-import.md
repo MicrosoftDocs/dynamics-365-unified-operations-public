@@ -28,9 +28,9 @@ The import from the following electronic invoice formats are supported:
 
 Before you complete the tasks in this article, import the following or latest versions of Electronic reporting (ER) configurations from the repository. For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
-- **Invoice model** version 280
-- **Vendor Invoice Mapping to Destination** version 280.46
-- **Vendor Invoice Import** version 280.7 
+- **Invoice model** version 280;
+- **Vendor Invoice Mapping to Destination** version 280.46;
+- **Vendor Invoice Import** version 280.7.
 
 ## Configure parameters
 
