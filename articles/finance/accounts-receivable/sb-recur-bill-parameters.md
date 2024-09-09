@@ -14,7 +14,7 @@ ms.dyn365.ops.version: 10.0.24
 ---
 
 # Recurring contract billing parameters
-Use the **Recurring contract billing parameters** page to set up the default values for billing schedules that are created in Recurring contract billing. (**Recurring contract billing > Setup > Recurring contract billing parameters**). All billing schedules that you create will initially use these default values. However, you can change the values for each billing schedule as you require.
+Use the **Recurring contract billing parameters** page to set up the default values for billing schedules that are created in Recurring contract billing. (**Recurring contract billing > Setup > Recurring contract billing parameters**). All billing schedules that you create initially use these default values. However, you can change the values for each billing schedule as you require.
 
 ## General tab
 
@@ -36,7 +36,7 @@ Use the **Recurring contract billing parameters** page to set up the default val
 
 8. In the **Invoice transaction type** field, select the default invoice transaction type for new billing schedules.
 9. Set the **Align deferral to billing** option to **Yes** to align the corresponding deferral schedule so that it uses the same dates as the billing schedule. Set it to **No** to have different dates.
-10. If you're using the revenue split feature, set the **Automatically create revenue split** option to **Yes** when items are added to a billing schedule. The **Revenue split** checkbox will automatically be selected on the billing schedule line if the item is set up as a revenue split item. Set the option to **No** if you want to manually select the **Revenue split** checkbox.
+10. If you're using the revenue split feature, set the **Automatically create revenue split** option to **Yes** when items are added to a billing schedule. The **Revenue split** checkbox is automatically selected on the billing schedule line if the item is set up as a revenue split item. Set the option to **No** if you want to manually select the **Revenue split** checkbox.
 11. Set the **Customer split** option to **Yes** to allow a billing schedule to be billed to different customers. When set to **Yes** the **Customer split** option is available on the billing schedule header and billing schedule line. 
 12. Set the fields for sales order creation:
 
@@ -50,7 +50,7 @@ Use the **Recurring contract billing parameters** page to set up the default val
 
     - Set the **Add billing dates to item description** option to **Yes** to add a description that includes the billing start date and end date.
     - Set the **Exclude zero consumption** option to **Yes** to exclude billing schedule lines that have no consumption. Set it to **No** to include those lines on the sales order.
-    - Set the **Don't print child items** option to **Yes** if you don't want to print the child items of a revenue split on the sales order. Only the parent item will appear on the invoice. If the net amount of the (hidden) child items is a non-zero sum, the net amount of the parent line shows a summary of the child lines. Set the option to **No** to print all child items below the parent item on the sales invoice.
+    - Set the **Don't print child items** option to **Yes** if you don't want to print the child items of a revenue split on the sales order. Only the parent item appears on the invoice. If the net amount of the (hidden) child items is a non-zero sum, the net amount of the parent line shows a summary of the child lines. Set the option to **No** to print all child items below the parent item on the sales invoice.
 
 12. Set the fields for support and renewals:
 
@@ -72,7 +72,7 @@ Use the **Recurring contract billing parameters** page to set up the default val
 
 13. If you're using escalation on the billing schedule, select the method that is used for the consumer price index calculation.
 14. Set the **Track price change** option to **Yes** to record the price changes on billing schedule lines. If a billing schedule line is manually changed from **Standard** to **Flat**, and a new price entered, audit information is tracked on the billing schedule line. Set the option to **No** if you don't want to track these changes.
-15. Set the **Default new line to active when header status is on hold** to **Yes** for new billing schedule lines to have an **Active** status when added to a billing schedule header that has a status of **On hold**. When set to **No**, a new billing schedule line will have an **On hold** status when added to a billing schedule header with a status of **On hold**.
+15. Set the **Default new line to active when header status is on hold** to **Yes** for new billing schedule lines to have an **Active** status when added to a billing schedule header that has a status of **On hold**. When set to **No**, a new billing schedule line has an **On hold** status when added to a billing schedule header with a status of **On hold**.
 16. Specify whether records are filtered by start date or end date by default on the **Generate invoice** page.
 17. If you use the **Unbilled revenue** feature, specify the options that are used:
 
@@ -89,8 +89,8 @@ Use the **Recurring contract billing parameters** page to set up the default val
     - **Credit adjustment** – Create a credit adjustment for a billing schedule when a line is terminated. The credit adjustment appears in a future billing period for the billing schedule. The credit adjustment will update the invoice amount for the next billing period until the credit has finished being applied to the billing schedule.
     - **No credit** – Don't create a credit adjustment or a credit note when a billing schedule or billing schedule line is terminated. This option is available only when the **No adjustment** option is used to terminate a billing schedule.
 20. When the **One time can terminate with refund** option is set to **No** and a billing schedule with a billing frequency of **One time**, the status of the billing schedule line changes to **Terminated** once the billing schedule is invoiced. This billing schedule can't be terminated and no credit can be issued. When **One time can terminate with refund** is set to **Yes** the billing schedule line with a billing frequency of **One time** will have an **Active** status after the billing schedule is invoiced. The billing schedule line can be terminated and a refund processed. 
-21. The **Prorate daily** option set in parameters will default to the mass termination page and the billing schedule header and line Terminate dialogs. It can be changed during the termination process. When set to **Yes** any refund amount will be calculated using a daily rate. When set to **No** it will credit based on the termination date and billing frequency. For example, if using Monthly frequency and the billing amount was $100 per month, the credit amount is in increments of $100. If the billing frequency is One-time the credit amount is $0.00. You must have Prorate daily set to Yes to get a refund for One-time billing frequency. 
-22. Set **Create deferral for credit** option to **Yes** to create a new deferral schedule when crediting a billing schedule using the terminate option. Leave the option set to **No** to adjust the existing deferral schedule when crediting a billing schedule using the terminate option. This option is not used for standalone deferral schedules not linked to a billing schedule.
+21. The **Prorate daily** option set in parameters defaults to the **Mass termination** page, the billing schedule header, and Terminate dialogs. It can be changed during the termination process. When set to **Yes** any refund amount is calculated using a daily rate. When set to **No**, it will credit based on the termination date and billing frequency. For example, if using Monthly frequency and the billing amount was $100 per month, the credit amount is in increments of $100. If the billing frequency is **One-time** the credit amount is $0.00. You must have **Prorate daily** set to **Yes** to get a refund for **One-time billing** frequency. 
+22. Set **Create deferral for credit** option to **Yes** to create a new deferral schedule when crediting a billing schedule using the terminate option. Leave the option set to **No** to adjust the existing deferral schedule when crediting a billing schedule using the terminate option. This option isn't used for standalone deferral schedules not linked to a billing schedule.
 
 23. Specify the options that are used with trade agreements:
     - **Use trade agreements** - When set to **Yes**, the default item price on a billing schedule line comes from the trade agreement setup for the item. The price, discount, and from and to dates from the trade agreement are honored on the billing schedule line. When set to **No**, an item price will default from a trade agreement but any discounts or from and to dates aren't used.
@@ -123,7 +123,7 @@ To create a billing schedule group for Recurring contract billing, follow these 
 7. In the **Item type** field, select the type of item for the billing group:
 
     - **Standard** – Select this value if the quantity is static.
-    - **Usage** – Select this value for metered or consumption-type items. If you select this value, set the **Usage reading option** field to **Reading** to enter the value (reading) for a billing period on a meter or device. The consumed value will be calculated based on the previous billing period and the current reading that you enter.
+    - **Usage** – Select this value for metered or consumption-type items. If you select this value, set the **Usage reading option** field to **Reading** to enter the value (reading) for a billing period on a meter or device. The consumed value is calculated based on the previous billing period and the current reading that you enter.
     - **Milestone** – Select this value to use the Milestone billing functionality. If you select this value, in the **Milestone template** field, select the milestone template if you're using one.
     - **Consumption** – Select this value to enter the value that is consumed for a billing period.
 
