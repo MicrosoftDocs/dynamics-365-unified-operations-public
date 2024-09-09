@@ -1,10 +1,10 @@
 ---
 title: Recurring contract billing parameters
 description: Learn how to set up the default values for billing schedules that are created in Recurring contract billing. It also explains how create billing schedule groups.
-author: twheeloc
-ms.author: twheeloc
+author: JodiChristiansen
+ms.author: jchrist
 ms.topic: article
-ms.date: 04/29/2024
+ms.date: 09/09/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -44,7 +44,7 @@ Use the **Recurring contract billing parameters** page to set up the default val
     - The following posting options are available for invoices:
 
         - **Create sales order** – Create only the sales order.
-        - **Show Posting invoice or Create invoice proposal page** – Invoice the sales order, and open a page where you can manually post the sales order invoice. If using a project on the billing schedule the invoice proposal page will open where you can manually post it. 
+        - **Show Posting invoice or Create invoice proposal page** – Invoice the sales order, and open a page where you can manually post the sales order invoice. If using a project on the billing schedule, the **Invoice proposal** page opens to manually post it. 
         - **Create fee text invoice** – Select this option if you're using free text invoices.
         - **Post invoice automatically** – Invoice the sales order, and automatically post it.
 
@@ -71,33 +71,33 @@ Use the **Recurring contract billing parameters** page to set up the default val
     - Set the **Copy serial number** option to **Yes** to copy the item serial number from the initial sales order line to the corresponding billing schedule line.
 
 13. If you're using escalation on the billing schedule, select the method that is used for the consumer price index calculation.
-15. Set the **Track price change** option to **Yes** if you want a record of price changes on billing schedule lines. If a billing schedule line is manually changed from standard to flat, and a new price entered, audit information is tracked on the billing schedule line. Set the option to **No** if you don't want to track these changes.
-16. Set the **Default new line to active when header status is on hold** to **Yes** if you want a new billing schedule line to have an Active status when added to a billing schedule header that has a status of On hold. When set to **No** a new billing schedule line will have a status of On hold when added to a billing schedule header with a status of On hold.
-17. Specify whether records are filtered by start date or end date by default on the **Generate invoice** page.
-18. If you use the **Unbilled revenue** feature, specify the options that are used:
+14. Set the **Track price change** option to **Yes** to record the price changes on billing schedule lines. If a billing schedule line is manually changed from **Standard** to **Flat**, and a new price entered, audit information is tracked on the billing schedule line. Set the option to **No** if you don't want to track these changes.
+15. Set the **Default new line to active when header status is on hold** to **Yes** for new billing schedule lines to have an **Active** status when added to a billing schedule header that has a status of **On hold**. When set to **No**, a new billing schedule line will have an **On hold** status when added to a billing schedule header with a status of **On hold**.
+16. Specify whether records are filtered by start date or end date by default on the **Generate invoice** page.
+17. If you use the **Unbilled revenue** feature, specify the options that are used:
 
     - Set the **Post general journal automatically** option to **Yes** if you want the general journal to be created and posted at the same time. Set it to **No** if you want to create the general journal and then manually post it.
     - In the **Default journal name** field, select the default journal name to use when the general journal is created.
     - In the **Short-term unbilled method** field, select the short-term unbilled method, if you're using one. If you select **None**, the short-term functionality won't be used with unbilled revenue. Select **Rolling periods** to always use 12 months or **Fixed year** to use the remaining fiscal year.
-    - Set the **Require journal entry for renewal period** to **Yes** to create a new journal entry for the unbilled revenue when a billing schedule is renewed. When set to **No** the unbilled revenue journal entry is not required during the renewal period.
-    - Set the **Auto create journal entry for renewal** to **Yes** to have the unbilled revenue entry created automatically when a billing schedule renewal is created. Set this to **No** to manually create the unbilled revenue journal.
-    - The unbilled offset accounts create additional entries when using unbilled revenue. These accounts are most often used when billing schedules with unbilled revenue are created in currencies other than the accounting currency. Set **Use unbilled offset accounts** to **Yes** to use the unbilled revenue offset and unbilled discount offset accounts. These accounts can be setup on the Unbilled revenue setup page. 
+    - Set the **Require journal entry for renewal period** to **Yes** to create a new journal entry for the unbilled revenue when a billing schedule is renewed. When set to **No** the unbilled revenue journal entry isn't required during the renewal period.
+    - Set the **Auto create journal entry for renewal** to **Yes** to automatically create the unbilled revenue entry when a billing schedule renewal is created. Set this to **No** to manually create the unbilled revenue journal.
+    - The unbilled offset accounts create additional entries when using unbilled revenue. These accounts are most often used when billing schedules with unbilled revenue are created in currencies other than the accounting currency. Set **Use unbilled offset accounts** to **Yes** to use the unbilled revenue offset and unbilled discount offset accounts. These accounts are set up on the **Unbilled revenue setup** page. 
 
 19. Specify the options that are used when a billing schedule and its lines are terminated:
 
     - **Issue credit** – Create a credit note when a billing schedule or billing schedule line is terminated.
     - **Credit adjustment** – Create a credit adjustment for a billing schedule when a line is terminated. The credit adjustment appears in a future billing period for the billing schedule. The credit adjustment will update the invoice amount for the next billing period until the credit has finished being applied to the billing schedule.
     - **No credit** – Don't create a credit adjustment or a credit note when a billing schedule or billing schedule line is terminated. This option is available only when the **No adjustment** option is used to terminate a billing schedule.
-20. When the option **One time can terminate with refund** is set to **No** and a billing schedule with a billing frequency of **One time**, the status of the billing schedule line changes to **Terminated** once the billing schedule is invoiced. This billing schedule can't be terminated and no credit can be issued. When **One time can terminate with refund** is set to **Yes** the billing schedule line with a billing frequency of **One time** will have an **Active** status after the billing schedule is invoiced. The billing schedule line can be terminated and a refund processed. 
+20. When the **One time can terminate with refund** option is set to **No** and a billing schedule with a billing frequency of **One time**, the status of the billing schedule line changes to **Terminated** once the billing schedule is invoiced. This billing schedule can't be terminated and no credit can be issued. When **One time can terminate with refund** is set to **Yes** the billing schedule line with a billing frequency of **One time** will have an **Active** status after the billing schedule is invoiced. The billing schedule line can be terminated and a refund processed. 
 21. The **Prorate daily** option set in parameters will default to the mass termination page and the billing schedule header and line Terminate dialogs. It can be changed during the termination process. When set to **Yes** any refund amount will be calculated using a daily rate. When set to **No** it will credit based on the termination date and billing frequency. For example, if using Monthly frequency and the billing amount was $100 per month, the credit amount is in increments of $100. If the billing frequency is One-time the credit amount is $0.00. You must have Prorate daily set to Yes to get a refund for One-time billing frequency. 
 22. Set **Create deferral for credit** option to **Yes** to create a new deferral schedule when crediting a billing schedule using the terminate option. Leave the option set to **No** to adjust the existing deferral schedule when crediting a billing schedule using the terminate option. This option is not used for standalone deferral schedules not linked to a billing schedule.
 
 23. Specify the options that are used with trade agreements:
-    - **Use trade agreements** - When set to **Yes** the default item price on a billing schedule line comes from the trade agreement setup for the item. The price, discount and from and to dates from the trade agreement are honored on the billing schedule line. When set to **No**, an item price will default from a trade agreement but any discounts or from and to dates are not used.
-    - **Use weighted trade agreement price by billing period** - When multiple trade agreement lines cover a single billing schedule period there could be multiple prices for one billing schedule period. Setting this to **Yes** will prorate those different prices for the billing period. Set this to **No** to not prorate them.
-    - **Update from trade agreement only at renewal** - When set to **Yes**, any updates from trade agreements will not update the billing schedule line. This effectively locks the billing schedule price, however when the line is renewed it will pick up the new trade agreement price. When set to **No**, any updates on the trade agreement will always roll down to the billing schedule line, both when trade agreement changes occur and when renewed.
+    - **Use trade agreements** - When set to **Yes**, the default item price on a billing schedule line comes from the trade agreement setup for the item. The price, discount, and from and to dates from the trade agreement are honored on the billing schedule line. When set to **No**, an item price will default from a trade agreement but any discounts or from and to dates aren't used.
+    - **Use weighted trade agreement price by billing period** - When multiple trade agreement lines cover a single billing schedule period, there could be multiple prices for one billing schedule period. Set this to **Yes** to prorate those different prices for the billing period. Set this to **No** to not prorate them.
+    - **Update from trade agreement only at renewal** - When set to **Yes**, any updates from trade agreements won't update the billing schedule line. This effectively locks the billing schedule price, however, when the line is renewed, the new trade agreement price is used. When set to **No**, any updates on the trade agreement always roll down to the billing schedule line, both when trade agreement changes occur and when renewed.
 
-24. Set the **Use sales agreements** to Yes to select a sales agreement when creating the billing schedule. The pricing on the billing schedule will default from the sales agreement. 
+24. Set the **Use sales agreements** to **Yes** to select a sales agreement when creating the billing schedule. The pricing on the billing schedule defaults from the sales agreement. 
 
 ## Sequence number tab
 
