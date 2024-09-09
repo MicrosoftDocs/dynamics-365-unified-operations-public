@@ -116,7 +116,7 @@ You can view the detailed progress log for each archive job by selecting **View 
 | Pending move to history | The move to history process is waiting to begin. |
 | Initiating move to history | The move to history process is activated. |
 | Staging data for move to history in progress \[x of y records of \<*tablename*\> staged\]| Data is in the staging/queueing process for the move to history. |
-| Staging data for move to history completed for \<*tablename*\> | Staging/queueing completed. |
+| Staging data for move to history completed for \<*tablename*\> | Staging/queueing completed for the specified table. |
 | Staging data for move to history completed for all tables | Staging/queueing completed. |
 | Move to history in progress \[x of y records of \<*tablename*\> moved\] | Data is being moved from live tables to history tables. |
 | Completed archival of table \<*tablename*\> | The move to history process completed for the specified table. |
