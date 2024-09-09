@@ -525,6 +525,8 @@ To generate and submit electronic invoices in batches for posted Customer invoic
 > [!NOTE]
 > If you need to submit some retail invoices individually then you must do it **before** the batch submission. All individually submitted retail invoices will be excluded form batches.
 
+![Screenshot that shows the batch submission form.](apac-mys-e-invoice-batch.jpg)
+
 4. On the **Records to include** FastTab, select **Filter** to open the **Inquiry** dialog box, where you can build a query to select only required documents.
 5. Select **OK** to start submission.
 
