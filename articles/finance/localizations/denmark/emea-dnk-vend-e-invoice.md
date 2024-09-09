@@ -86,7 +86,7 @@ You can optionally configure external codes for units of measure, if specific un
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 2. Select a unit ID, and then select **External codes**.
 3. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit ID.
-4. In **Value** section, in **Value** field, enter the external unit code that's expected in import files.
+4. In the **Value** section, in the **Value** field, enter the external unit code that's expected in import files.
 
 ## Import vendor electronic invoices
 
