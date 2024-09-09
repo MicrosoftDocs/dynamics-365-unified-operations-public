@@ -63,6 +63,7 @@ To set up, adjust, or review electronic documents directly in your Finance or Su
    | VendInvoiceInfoTable | <p>**Mapping name:** Pending vendor invoice context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:**  Pending vendor invoice model mapping</p><p>**Configuration:** Pending vendor invoice model mapping</p> | Danish electronic invoice (DK) |
    | LedgerJournalTrans | <p>**Mapping name:** Prepayment invoice context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:**  Customer prepayments</p><p>**Configuration:** Invoice model mapping</p> | Saudi Arabian Zatca submission (SA) |
    | VendInvoiceJour | <p><b>Mapping name:</b> Self invoice context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Self invoice</p><p><b>Configuration:</b> Self invoice model mapping</p> | Malaysian electronic invoicing (MY) |
+   | <p>CustInvoiceJour</p><p>*In case of batch submission*</p> | <p><b>Mapping name:</b> Batch submission</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Consolidated Invoice Model Mapping (MY)</p><p><b>Configuration:</b> Consolidated Invoice Model Mapping (MY)</p> | Malaysian electronic invoicing (MY) |
 
 If you derive a configuration from the configuration that's mentioned in the preceding table, define the new configuration.
 
