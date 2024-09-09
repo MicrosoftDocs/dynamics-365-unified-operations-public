@@ -32,7 +32,7 @@ To set up, adjust, or review electronic documents directly in your Finance or Su
 1. In the **Globalization Studio** workspace, select the **Electronic reporting** tile.
 1. In the **Configuration providers** section, select the **Microsoft** configuration provider, and then select **Repositories**.
 1. Select the repository of the **Dataverse** type, and then, on the Action Pane, select **Open**.
-1. Import the following ER models:
+1. Import the following ER configurations:
 
     - **Customer invoice context model**
     - **Invoice model**
@@ -40,9 +40,6 @@ To set up, adjust, or review electronic documents directly in your Finance or Su
     - **Retail channel data** (for Saudi Arabian retail-specific scenarios, if required)
     - **Invoices Communication Model** (for Malaysian and Indonesian batch submission scenarios, if required)
     - **Response message model**
-
-1. Verify that the following mapping configurations were automatically imported. If they weren't, import them, and then close the page.
-
     - **Invoice model mapping**
     - **Fiscal documents mapping** (for Brazilian scenarios, if required)
     - **Advance invoice model mapping** (for Polish scenarios, if required)
