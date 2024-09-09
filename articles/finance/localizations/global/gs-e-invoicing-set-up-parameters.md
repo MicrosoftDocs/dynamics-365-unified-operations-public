@@ -35,6 +35,7 @@ To set up, adjust, or review electronic documents directly in your Finance or Su
     - **Invoice model**
     - **Fiscal documents** (for Brazilian scenarios, if required)
     - **Retail channel data** (for Saudi Arabian retail-specific scenarios, if required)
+    - **Invoices Communication Model** (for Malaysian and Indonesian batch submission scenarios, if required)
     - **Response message model**
 
 1. Verify that the following mapping configurations were automatically imported. If they weren't, import them, and then close the page.
@@ -44,6 +45,8 @@ To set up, adjust, or review electronic documents directly in your Finance or Su
     - **Advance invoice model mapping** (for Polish scenarios, if required)
     - **Retail fiscal document mapping** (for Saudi Arabian retail-specific scenarios, if required)
     - **Pending vendor invoice model mapping** (for Danish responses scenarios, if required)
+    - **Invoices communication model mapping (ID)** (for Indonesian batch submission scenarios, if required)
+    - **Consolidated Invoice Model Mapping (MY)** (for Malaysian batch submission scenarios, if required)
 
 ## Set up Electronic document parameters
 
@@ -63,6 +66,7 @@ To set up, adjust, or review electronic documents directly in your Finance or Su
    | VendInvoiceInfoTable | <p>**Mapping name:** Pending vendor invoice context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:**  Pending vendor invoice model mapping</p><p>**Configuration:** Pending vendor invoice model mapping</p> | Danish electronic invoice (DK) |
    | LedgerJournalTrans | <p>**Mapping name:** Prepayment invoice context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:**  Customer prepayments</p><p>**Configuration:** Invoice model mapping</p> | Saudi Arabian Zatca submission (SA) |
    | VendInvoiceJour | <p><b>Mapping name:</b> Self invoice context</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Self invoice</p><p><b>Configuration:</b> Self invoice model mapping</p> | Malaysian electronic invoicing (MY) |
+   | <p>CustInvoiceJour</p><p>ProjInvoiceJour</p><p>*In case of batch submission*</p> | <p><b>Mapping name:</b> Batch submission</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Invoices communication model mapping (ID)</p><p><b>Configuration:</b> Invoices communication model mapping (ID)</p> | Indonesian electronic invoice (ID) |
    | <p>CustInvoiceJour</p><p>*In case of batch submission*</p> | <p><b>Mapping name:</b> Batch submission</p><p><b>Configuration:</b> Customer invoice context model</p> | <p><b>Mapping name:</b> Consolidated Invoice Model Mapping (MY)</p><p><b>Configuration:</b> Consolidated Invoice Model Mapping (MY)</p> | Malaysian electronic invoicing (MY) |
 
 If you derive a configuration from the configuration that's mentioned in the preceding table, define the new configuration.
