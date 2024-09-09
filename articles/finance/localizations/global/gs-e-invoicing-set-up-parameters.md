@@ -71,6 +71,9 @@ To set up, adjust, or review electronic documents directly in your Finance or Su
 
 If you derive a configuration from the configuration that's mentioned in the preceding table, define the new configuration.
 
+> [!NOTE]
+> By default, configured Electronic document parameters are applicable for all Legal Entities. To activate configuration for specific Legal Entities, enable the **Electronic documents configuration per legal entities** feature in Feature management. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
 To set up the rules to process responses from the Electronic Invoicing service, and to update Finance and Supply Chain Management data based on invoices that are processed by the service, set up response types. In most scenarios, this setup is country/region-specific. Therefore, we recommend that you follow the country/region-specific instructions. For more information, see [Availability of Electronic invoicing features by country or region](e-invoicing-country-specific-availability.md).
 
 ## Create a Key Vault reference
