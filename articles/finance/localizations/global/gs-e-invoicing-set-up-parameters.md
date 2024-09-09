@@ -24,6 +24,9 @@ The process of submitting electronic documents to the Electronic Invoicing servi
 
 Before you can submit documents to Electronic invoicing and process responses, you must import ER configurations from the repository and define them in parameters.
 
+> [!NOTE]
+> The majority of the ER configurations mentioned below are being imported automatically as result of related Globalization features import. For more information, see [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md). If due to any reason you need to re-import configurations do the steps described below. 
+
 To set up, adjust, or review electronic documents directly in your Finance or Supply Chain Management environment, complete the following procedures.
 
 1. In the **Globalization Studio** workspace, select the **Electronic reporting** tile.
