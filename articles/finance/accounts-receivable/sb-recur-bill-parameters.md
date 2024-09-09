@@ -81,7 +81,7 @@ Use the **Recurring contract billing parameters** page to set up the default val
     - In the **Short-term unbilled method** field, select the short-term unbilled method, if you're using one. If you select **None**, the short-term functionality won't be used with unbilled revenue. Select **Rolling periods** to always use 12 months or **Fixed year** to use the remaining fiscal year.
     - Set the **Require journal entry for renewal period** to **Yes** to create a new journal entry for the unbilled revenue when a billing schedule is renewed. When set to **No** the unbilled revenue journal entry is not required during the renewal period.
     - Set the **Auto create journal entry for renewal** to **Yes** to have the unbilled revenue entry created automatically when a billing schedule renewal is created. Set this to **No** to manually create the unbilled revenue journal.
-    - The unbilled offset accounts create additional entries when using unbilled revenue. These accounts are most often used when billing schedules with unbilled revenue are created in currencies other than the accounting currency. Set **Use unbilled offset accounts** to **Yes** to use these offset accounts. 
+    - The unbilled offset accounts create additional entries when using unbilled revenue. These accounts are most often used when billing schedules with unbilled revenue are created in currencies other than the accounting currency. Set **Use unbilled offset accounts** to **Yes** to use the unbilled revenue offset and unbilled discount offset accounts. These accounts can be setup on the Unbilled revenue setup page. 
 
 19. Specify the options that are used when a billing schedule and its lines are terminated:
 
