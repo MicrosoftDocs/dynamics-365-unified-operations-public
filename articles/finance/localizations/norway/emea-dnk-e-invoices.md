@@ -84,7 +84,7 @@ Follow these steps to configure methods of payment.
 1. Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
 2. Select a unit ID in the list, and then select **External codes**.
 3. On the **External codes** page, in the **Overview** section, in the **Code** field, enter a code that corresponds to the selected unit ID.
-4. In **Value** section, in **Value** field, enter the external code that should be used as the recommended unit of measure code according to [Codes for Units of Measure Used in International Trade](https://docs.oasis-open.org/ubl/prd1-UBL-2.1/cva/UBL-DefaultDTQ-2.1.html#d27e1).
+4. In the **Value** section, in the **Value** field, enter the external code that should be used as the recommended unit of measure code according to [Codes for Units of Measure Used in International Trade](https://docs.oasis-open.org/ubl/prd1-UBL-2.1/cva/UBL-DefaultDTQ-2.1.html#d27e1).
 
 ### Configure sales tax codes
 
@@ -94,7 +94,7 @@ The top level of the hierarchy is **Tax Scheme**. <!-- The provided link appears
 
 The next level of tax data grouping, within the tax scheme, is **Tax Category**. For the official list of tax categories that are applicable to the OIOUBL format, see [OIOUBL Tax Categories](http://oioubl.info/documents/da/da/Kodelister/OIOUBL_CODE_TAXCATEGORYID.pdf). 
 
-For some taxes, an additional attribute, **Tax Type Code**, must be also defined.
+For some taxes, an additional attribute, **Tax Type Code**, must also be defined.
 
 You can associate tax schemes, tax categories, and tax type codes with sales tax codes by using application-specific parameters. For information about how to configure application-specific parameters, see the next section.
 
