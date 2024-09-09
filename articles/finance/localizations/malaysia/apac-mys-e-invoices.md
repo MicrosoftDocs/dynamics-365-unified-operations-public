@@ -491,7 +491,7 @@ To configure electronic document parameters for batch submissions, follow these 
 1. Turn on the option in the **Batch submission** column.
 1. In the **Document context** field, select the **Batch submission** mapping name from the **Customer invoice context model** configuration.
 1. In the **Electronic document model mapping** field, select the **Consolidated Invoice Model Mapping (MY)** mapping name from the **Consolidated Invoice Model Mapping (MY)** configuration.
-1. On the **Electronic document** tab, in the **Batch submission id** FastTab, in the **Number sequence** field, select the the number that will be used for generated batches numbering.
+1. On the **Electronic document** tab, in the **Batch submission id** FastTab, in the **Number sequence** field, select the the number that will be used for generated batches numbering. The selected number sequence must be continuous.
 
 ![Screenshot that shows electronic documents parameters.](apac-mys-e-doc-parameters.jpg)
 
