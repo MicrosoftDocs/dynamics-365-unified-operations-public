@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Payment Application Data Security Standards (PA-DSS) certification
 description: This article explains the past, current, and pending listings of PA-DSS certification.
 author: BrianShook
 ms.date: 10/13/2021
-ms.topic: article
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
+ms.topic: how-to
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: brshoo
+ms.author: shajain
 ms.search.validFrom: 2016-01-01
-ms.dyn365.ops.version: Platform update 8
-
+ms.custom: 
+  - bap-template
 ---
 
 # Payment Application Data Security Standards (PA-DSS) certification
