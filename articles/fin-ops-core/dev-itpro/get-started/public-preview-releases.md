@@ -49,7 +49,7 @@ In the following table:
 | CY25Q3: 10.0.44 | April 25, 2025 | May 2, 2025 | June 6, 2025 | July 4, 2025 | August 1, 2025 | February 17, 2026 |
 | CY25Q2: 10.0.43\* | January 27, 2025 | February 7, 2025 | March 14, 2025 | April 4, 2025 | May 2, 2025 |November 21, 2025 |
 | CY25Q1: 10.0.42 | October 25, 2024 | November 1, 2024 | December 27, 2024 | February 1, 2025 | March 7, 2025 |August 22, 2025 |
-| CY24Q4: 10.0.41\* | July 29, 2024 | August 9, 2024 | September 13, 2024 | October 4, 2024 | Nov 1, 2024 | May 23, 2025 |
+| CY24Q4: 10.0.41\* | July 29, 2024 | August 9, 2024 | September 17, 2024 | October 4, 2024 | Nov 1, 2024 | May 23, 2025 |
 | CY24Q3: 10.0.40 | April 26, 2024 | May 3, 2024 | June 7, 2024 | July 5, 2024 | August 2, 2024 | February 18, 2025 |
 | CY24Q2: 10.0.39\* | January 29, 2024 | February 9, 2024 | March 15, 2024 | April 5, 2024 | May 3, 2024 | November 22, 2024 |
 | CY24Q1: 10.0.38 | October 27, 2023 | November 3, 2023 | January 12, 2024 | February 2, 2024 | Not applicable | August 23, 2024 |
