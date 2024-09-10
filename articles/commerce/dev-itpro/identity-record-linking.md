@@ -3,15 +3,14 @@ title: Enable automatic linking of identity records to customer accounts
 description: This article describes how to enable automatic linking of identity records to customer accounts in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 02/08/2024
-ms.topic: article
+ms.topic: how-to
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: asharchw
 ms.search.validFrom: 2021-03-01
-ms.dyn365.ops.version: 
 ms.custom: 
-ms.assetid: 
+  - bap-template
 ---
 
 # Enable automatic linking of identity records to customer accounts 
