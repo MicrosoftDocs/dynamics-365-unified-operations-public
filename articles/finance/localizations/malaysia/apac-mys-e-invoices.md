@@ -499,7 +499,7 @@ To configure electronic document parameters for batch submissions, follow these 
 
 To configure the electronic invoicing feature, follow these steps.
 
-1. Import the latest version of the **Malaysian electronic invoicing (MY)** (version X or later) Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+1. Import the latest version of the **Malaysian electronic invoicing (MY)** (version **9** or later) Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 1. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
 1. On the **Versions** tab, verify that the **Draft** version is selected.
 1. On the **Setups** tab, in the grid, select the **Consolidated invoice derived** feature setup, and then select **Edit**.
