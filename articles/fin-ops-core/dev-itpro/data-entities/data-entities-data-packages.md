@@ -250,6 +250,7 @@ The following features are enabled via flighting. *Flighting* is a concept that 
 |---------------------------------------|---------------|
 | DMFEnableAllCompanyExport             | Enables BYOD export from all companies in the same export job (supported for BYOD only and not files). By default, this is OFF. This flight is no longer needed after Platform update 27 because this feature can be turned ON using a parameter in data management framework parameters.|
 | DMFExportToPackageForceSync           | Enables synchronous execution of data package API export. By default, it's asynchronous. |
+| DMFEnableOdataBatchExporter           | Enables the Data Package Export API to perform asynchronous export in batch mode. By default, this feature is disabled. |
 | EntityNamesInPascalCaseInXMLFiles     | Enables behavior where entity names are in Pascal Case in the XML files for entities. By default, the names are in upper case. |
 | DMFByodMissingDelete                  | Enables the old behavior where under certain conditions, certain delete operations were not synced to BYOD using change tracking. |
 | DMFDisableExportFieldsMappingCache    | Disables caching logic when building target field mapping. |
