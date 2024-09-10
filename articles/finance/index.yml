@@ -303,7 +303,7 @@ additionalContent:
         text: Globalization services
       - url: /dynamics365/finance/localizations/rcs-overview
         text: Regulatory configuration service
-      - url: /dynamics365/finance/localizations/e-invoicing-service-overview
+      - url: /dynamics365/finance/localizations/global/gs-e-invoicing-service-overview?context=%2Fdynamics365%2Fcontext%2Ffinance
         text: Electronic invoicing
       - url: /dynamics365/finance/localizations/global-tax-calcuation-service-overview
         text: Tax Calculation 
