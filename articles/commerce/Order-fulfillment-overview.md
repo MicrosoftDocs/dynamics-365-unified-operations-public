@@ -1,17 +1,16 @@
 ---
-# required metadata
-
 title: Store order fulfillment
 description: This article provides an overview of store order fulfillment in Microsoft Dynamics 365 Commerce. 
 author: BrianShook
 ms.date: 11/16/2022
 ms.topic: overview
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: shajain
 ms.search.validFrom: 2017-10-30 
-
+ms.custom: 
+  - bap-template
 ---
 
 # Store order fulfillment
