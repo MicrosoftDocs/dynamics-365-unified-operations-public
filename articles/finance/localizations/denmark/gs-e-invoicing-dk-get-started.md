@@ -185,9 +185,8 @@ To import incoming invoices in OIOUBL and PEPPOL formats, follow these additiona
 1. Select the **Group** parameter, and then select the name of the secret that contains the group code.
 1. Select the **Token** parameter, and then select the name of the secret that you created for the token.
 1. On the **Applicability rules** tab, in the **Channel** field, make sure that the **Value** column contains the same [import channel](#ImportChannel) name that you defined earlier.
-1. <a id="OutputFile"></a>On the **Variables** tab, make a note of the **OutputFile** name, because you must use it in later configuration steps.
 1. Select **Save**, and close the page.
-1. If an import in PEPPOL format is also required, repeat steps 4 through 11 for the **Incoming PEPPOL** feature setup.
+1. If an import in PEPPOL format is also required, repeat steps 4 through 10 for the **Incoming PEPPOL** feature setup.
 1. Complete and deploy the configured version of the **Danish electronic invoice (DK)** electronic invoicing feature.
 
 ### Finance configuration
