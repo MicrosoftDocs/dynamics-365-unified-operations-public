@@ -4,7 +4,7 @@ description: Learn about the syntax reference for X++, including a table that ou
 author: josaw1
 ms.author: josaw
 ms.topic: article
-ms.date: 07/22/2019
+ms.date: 09/10/2024
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
@@ -433,7 +433,7 @@ The X++ keywords shown in the following table are reserved. These keywords canno
 </tr>
 <tr class="odd">
 <td><strong>flush</strong></td>
-<td>Clears an entire table cache. Here is the syntax for the <code>flush</code> statement applied to the buffer of type <code>YourTable</code>:<p><p>```xpp<p><code>YourTable t;</code><p><code>...</code><p><code>flush t;</code><p>```</td>
+<td>Clears the entire table cache. This can be particularly useful when you want to ensure that any changes made to the table are immediately reflected in subsequent operations.</td>
 <td>Set-based Caching</td>
 </tr>
 <tr class="even">
