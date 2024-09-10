@@ -1,25 +1,25 @@
 ---
-title: Omni-channel payments overview
-description: This article provides an overview of omni-channel payments in Microsoft Dynamics 365 Commerce.
+title: Omnichannel payments overview
+description: This article provides an overview of omnichannel payments in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 02/03/2023
 ms.topic: overview
 audience: Application user
 ms.reviewer: v-chrgriffin
-ms.custom: ["141393"]
 ms.collection: get-started
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2019-01-01
 ms.custom: 
   - bap-template
+  - ["141393"]
 ---
 
-# Omni-channel payments overview
+# Omnichannel payments overview
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview of omni-channel payments in Microsoft Dynamics 365 Commerce. It includes a comprehensive list of supported scenarios, information about functionality, setup, and troubleshooting, and descriptions of some typical issues.
+This article provides an overview of omnichannel payments in Microsoft Dynamics 365 Commerce. It includes a comprehensive list of supported scenarios, information about functionality, setup, and troubleshooting, and descriptions of some typical issues.
 
 ## Key terms
 
@@ -34,17 +34,17 @@ This article provides an overview of omni-channel payments in Microsoft Dynamics
 
 ## Overview
 
-In general, the term *omni-channel payments* describes the ability to create an order in one channel and fulfill it in another channel. The key to omni-channel payment support is preserving payment details together with the rest of the order details, and then using those payment details when the order is recalled or processed in another channel. A classic example is the "Buy online, pick up in store" scenario. In this scenario, the payment details are added when the order is created online. They're then recalled at the POS to charge the customer's payment card at the time of pickup. 
+In general, the term *omnichannel payments* describes the ability to create an order in one channel and fulfill it in another channel. The key to omnichannel payment support is preserving payment details together with the rest of the order details, and then using those payment details when the order is recalled or processed in another channel. A classic example is the "Buy online, pick up in store" scenario. In this scenario, the payment details are added when the order is created online. They're then recalled at the POS to charge the customer's payment card at the time of pickup. 
 
 All the scenarios that are described in this article can be implemented by using the standard Payments software development kit (SDK) that is provided with Commerce. The [Dynamics 365 Payment Connector for Adyen](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) provides an out-of-box implementation of every scenario that is described here. 
 
 ### Prerequisites
 
-Every scenario that is described in this article requires a payment connector that supports omni-channel payments. The out-of-box Adyen connector can also be used, because it supports the scenarios that are made available through the Payments SDK. For more information about how to implement payment connectors, and about the Retail SDK in general, visit the [Retail for IT pros and developers home page](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
+Every scenario that is described in this article requires a payment connector that supports omnichannel payments. The out-of-box Adyen connector can also be used, because it supports the scenarios that are made available through the Payments SDK. For more information about how to implement payment connectors, and about the Retail SDK in general, visit the [Retail for IT pros and developers home page](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
 
 #### Supported versions
 
-The omni-channel payment capabilities that are described in this article were released as part of Microsoft Dynamics 365 for Retail version 8.1.3. 
+The omnichannel payment capabilities that are described in this article were released as part of Microsoft Dynamics 365 for Retail version 8.1.3. 
 
 #### "Card present" and "card not present" connectors
 
@@ -56,18 +56,18 @@ The second set of APIs is named **iNamedRequestHandler**. It supports the implem
 
 The following components and setup steps are required:
 
-- **eCommerce integration:** An integration with Commerce is required to support scenarios where an order originates in an online storefront. For more information about the Retail e-Commerce SDK, see [e-Commerce platform software development kit (SDK)](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). In a demo environment, the reference storefront supports omni-channel payment scenarios. 
-- **Online payments configuration:** The setup of the online channel must include a payment connector that has been updated to support omni-channel payments. Alternatively, the out-of-box payment connector can be used. For information about how to configure the Adyen payment connector for online stores, see [Adyen payment connector](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). In addition to the eCommerce setup steps that are described in that article, the **Allow saving payment information in e-commerce** parameter must be set to **True** in the settings for the Adyen connector. 
-- **Omni-channel payments configuration:** In the back office, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. Then, on the **Omni-channel payments** tab, set the **Use omni-channel payments** option to **Yes**. In Commerce versions 10.0.12 and later, this setting is in the **Feature Management** workspace. Select the **Omni-channel payments** feature and click **Enable now**. 
-- **Payment services:** The call center uses the default payment connector on the **Payment services** page to process payments. To support scenarios such as "Buy in call center, pick up in store," this default payment connector must be the Adyen payment connector or a payment connector that meets the implementation requirements for omni-channel payments.
-- **EFT service:** Payments through a payment terminal must be set up on the **EFT service** FastTab of the hardware profile. The Adyen connector supports omni-channel payments scenarios out of the box. Other payment connectors that support the **iNamedRequestHandler** interface can also be used if they support omni-channel payments.
+- **eCommerce integration:** An integration with Commerce is required to support scenarios where an order originates in an online storefront. For more information about the Retail e-Commerce SDK, see [e-Commerce platform software development kit (SDK)](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). In a demo environment, the reference storefront supports omnichannel payment scenarios. 
+- **Online payments configuration:** The setup of the online channel must include a payment connector that has been updated to support omnichannel payments. Alternatively, the out-of-box payment connector can be used. For information about how to configure the Adyen payment connector for online stores, see [Adyen payment connector](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). In addition to the eCommerce setup steps that are described in that article, the **Allow saving payment information in e-commerce** parameter must be set to **True** in the settings for the Adyen connector. 
+- **Omnichannel payments configuration:** In the back office, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. Then, on the **Omnichannel payments** tab, set the **Use omnichannel payments** option to **Yes**. In Commerce versions 10.0.12 and later, this setting is in the **Feature Management** workspace. Select the **Omnichannel payments** feature and click **Enable now**. 
+- **Payment services:** The call center uses the default payment connector on the **Payment services** page to process payments. To support scenarios such as "Buy in call center, pick up in store," this default payment connector must be the Adyen payment connector or a payment connector that meets the implementation requirements for omnichannel payments.
+- **EFT service:** Payments through a payment terminal must be set up on the **EFT service** FastTab of the hardware profile. The Adyen connector supports omnichannel payments scenarios out of the box. Other payment connectors that support the **iNamedRequestHandler** interface can also be used if they support omnichannel payments.
 - **Payment connector availability:** When an order is recalled, the payment tender lines that are recalled together with the order include the name of the payment connector that was used to create the authorizations that are associated with that order. When the order is fulfilled, the Payments SDK tries to use the same connector that was used to create the original authorization. Therefore, a payment connector that has the same merchant properties must be available for capture. 
-- **Card types:** For omni-channel scenarios to work properly, each channel must have the same setup for tender types that can be used for omni-channel. This setup includes payment method IDs and card type IDs. For example, if the **Cards** tender type has an ID of **2** in the online store setup, it should have the same ID in the retail store setup. The same requirement applies to card type IDs. If card number **12** is set to **VISA** in the online store, the same ID should be set up for the retail store. 
+- **Card types:** For omnichannel scenarios to work properly, each channel must have the same setup for tender types that can be used for omnichannel. This setup includes payment method IDs and card type IDs. For example, if the **Cards** tender type has an ID of **2** in the online store setup, it should have the same ID in the retail store setup. The same requirement applies to card type IDs. If card number **12** is set to **VISA** in the online store, the same ID should be set up for the retail store. 
 - The Store Commerce app for Windows, Android, or iOS with built-in Hardware Station.
     -or-
 - Store Commerce for web with connected shared Hardware Station. 
 
-### Basic principle supporting omni-channel payments
+### Basic principle supporting omnichannel payments
 
 Payment connectors and payment processors use tokens, or references, to reference interactions that are related to card payments. For example, when a payment authorization is requested, a reference to that authorization is provided. Therefore, the authorization can be referenced later, when funds are captured at the time of fulfillment. This authorization is unique to the merchant, payment connector, and processor. 
 
@@ -77,7 +77,7 @@ To correctly reference the online order, a "card not present" payment connector 
 
 ## Supported scenarios
 
-The following omni-channel payment scenarios are supported:
+The following omnichannel payment scenarios are supported:
 
 - Buy online, pick up in store
 - Buy in call center, pick up in store
@@ -87,7 +87,7 @@ The following omni-channel payment scenarios are supported:
     > [!NOTE]
     > Payments made in the call center that map to the "Normal" payment function must be marked as **Prepay** = **Yes** to be reflected in the amount due when recalling the order in the POS. Non-prepay payments of type "Normal" are not recognized when the order is recalled in POS. 
 
-Variations of these scenarios are also supported. For example, an online order might include both lines that will be shipped to the customer and lines that will be picked up in a store. All order fulfillment options are supported via omni-channel payments. 
+Variations of these scenarios are also supported. For example, an online order might include both lines that will be shipped to the customer and lines that will be picked up in a store. All order fulfillment options are supported via omnichannel payments. 
 
 The following sections describe the steps for each scenario and show how to run the scenario by using demo data. 
 
@@ -96,7 +96,7 @@ The following sections describe the steps for each scenario and show how to run 
 Before you start, make sure that the following prerequisites are in place:
 
 - You have a reference storefront where the Adyen connector is configured.
-- The **Omni-channel payments** option on the **Commerce shared parameters** page is set to **True**. In later versions this setting is moved to the **Feature Management** workspace where you can select the **Omni-channel payments** feature and click **Enable now**. 
+- The **Omnichannel payments** option on the **Commerce shared parameters** page is set to **True**. In later versions this setting is moved to the **Feature Management** workspace where you can select the **Omnichannel payments** feature and click **Enable now**. 
 - The Adyen payment connector is configured for the Houston POS register.
 - The Store Commerce app for Windows, Android, or iOS with built-in Hardware Station.
     -or-
@@ -105,14 +105,14 @@ Before you start, make sure that the following prerequisites are in place:
 Follow these steps to run the scenario.
 
 1. In the reference storefront, create an order for in-store pickup. Be sure to select the **Houston** store. 
-2. Go through the checkout steps, and pay by using a test credit card number. You can find test credit card numbers on the [Adyen test card numbers page](https://docs.adyen.com/development-resources/test-cards/test-card-numbers/#description).
+2. Go through the checkout steps, and pay by using a test credit card number. You can find test credit card numbers on the [Adyen test card numbers page](https://docs.adyen.com/development-resources/testing/test-card-numbers).
 3. In Commerce, use the **Synchronize orders** batch job and the **P-001** distribution schedule to create the orders in the back office.
 4. In the POS, on the welcome page, select the **Orders to pickup** operation to see the orders for in-store pickup. 
 5. Select one or more lines from the order that was created in the reference storefront, and then select **Pick up**.
 
     The order is retrieved from the back office. 
 
-6. When the order line details are retrieved from the back office, and a card payment that can be used for omni-channel is detected, you're informed that a payment method is available.
+6. When the order line details are retrieved from the back office, and a card payment that can be used for omnichannel is detected, you're informed that a payment method is available.
 7. Select **Use available payment method** to complete the transaction by using the card details that were entered in the reference storefront.
 
     The order lines are loaded on the transaction page, and the balance due is 0 (zero). 
@@ -132,7 +132,7 @@ Follow these steps to run the scenario.
 9. Select **Complete** to enter the order completion flow.
 10. Scroll down to the payments section, select **Add**, and then select a line where the payment method type is set to **Cards**. 
 11. Select the plus sign (**+**) to add a card payment. 
-12. Enter the details for a test credit card number that you found on the [Adyen test card numbers page](https://docs.adyen.com/development-resources/test-cards/test-card-numbers/#description), and then select **OK**.
+12. Enter the details for a test credit card number that you found on the [Adyen test card numbers page](https://docs.adyen.com/development-resources/testing/test-card-numbers), and then select **OK**.
 
     > [!NOTE]
     > If the card brand for the card number that you entered differs from the brand that was selected when the payment was initiated, the payment will still go through. However, it will be posted to the accounts that are mapped to the card brand that you selected in step 10.
@@ -144,7 +144,7 @@ Follow these steps to run the scenario.
 
     The order is retrieved from the back office. 
 
-16. When the order line details are retrieved from the back office, and a card payment that can be used for omni-channel is detected, you're informed that a payment method is available.
+16. When the order line details are retrieved from the back office, and a card payment that can be used for omnichannel is detected, you're informed that a payment method is available.
 17. Select **Use available payment method** to complete the transaction by using the card details that were entered in the reference storefront.
 
     The order lines are loaded on the transaction page, and the balance due is 0 (zero).
@@ -171,7 +171,7 @@ Follow these steps to run the scenario.
 
     The order is retrieved from the back office. 
 
-16. When the order line details are retrieved from the back office, and a card payment that can be used for omni-channel is detected, you're informed that a payment method is available.
+16. When the order line details are retrieved from the back office, and a card payment that can be used for omnichannel is detected, you're informed that a payment method is available.
 17. Select **Use available payment method** to complete the transaction by using the card details that were entered in the reference storefront.
 
     The order lines are loaded on the transaction page, and the balance due is 0 (zero).
@@ -197,20 +197,20 @@ When the order is picked, packed, and invoiced in the back office, the payment d
 
 ## Scenario details
 
-In addition to the basic scenarios that were just described, several enhancements have been made to the Payments SDK to support omni-channel payments. 
+In addition to the basic scenarios that were just described, several enhancements have been made to the Payments SDK to support omnichannel payments. 
 
 ### POS
 
 #### Single swipe/dip for customer orders
 
-Before the omni-channel payments feature was implemented, when customer orders that included deposits were created at the POS, customers were required to swipe (or dip) their card two times: one time to pay the deposit and one time to tokenize the card for subsequent order fulfillment. When the omni-channel tokenization feature is turned on, customers must swipe their card only one time to both pay the deposit and authorize the amount that is due for goods that will be fulfilled later. At the time of fulfillment, the authorized funds are captured. Before the omni-channel tokenization feature was implemented, only a recurring card token was created for subsequent order fulfillment. Therefore, the funds for the pending fulfillment weren't authorized, and because those funds weren't being held for that specific purchase, it was less likely that they could be captured later.
+Before the omnichannel payments feature was implemented, when customer orders that included deposits were created at the POS, customers were required to swipe (or dip) their card two times: one time to pay the deposit and one time to tokenize the card for subsequent order fulfillment. When the omnichannel tokenization feature is turned on, customers must swipe their card only one time to both pay the deposit and authorize the amount that is due for goods that will be fulfilled later. At the time of fulfillment, the authorized funds are captured. Before the omnichannel tokenization feature was implemented, only a recurring card token was created for subsequent order fulfillment. Therefore, the funds for the pending fulfillment weren't authorized, and because those funds weren't being held for that specific purchase, it was less likely that they could be captured later.
 
 > [!NOTE]
-> Single swipe isn't supported in Retail version 8.1.3. Customer orders in version 8.1.3 use the same flow that was used before the omni-channel tokenization feature was implemented. 
+> Single swipe isn't supported in Retail version 8.1.3. Customer orders in version 8.1.3 use the same flow that was used before the omnichannel tokenization feature was implemented. 
 
 ### Cards that can't issue recurring card tokens
 
-Some cards can't be used for omni-channel payments, because they don't support issuing recurring card tokens. When an order is created at the POS, if the deposit is paid by using a card that doesn't support recurring card tokens, the previous card tokenization flow is used. Therefore, a customer who wants to provide a payment that will be used for subsequent order fulfillment must present a second card. If the second card doesn't support recurring card tokens, the tokenization action will be declined, and the cashier will be prompted to ask the customer to provide a different card. 
+Some cards can't be used for omnichannel payments, because they don't support issuing recurring card tokens. When an order is created at the POS, if the deposit is paid by using a card that doesn't support recurring card tokens, the previous card tokenization flow is used. Therefore, a customer who wants to provide a payment that will be used for subsequent order fulfillment must present a second card. If the second card doesn't support recurring card tokens, the tokenization action will be declined, and the cashier will be prompted to ask the customer to provide a different card. 
 
 ### Using a different card
 
