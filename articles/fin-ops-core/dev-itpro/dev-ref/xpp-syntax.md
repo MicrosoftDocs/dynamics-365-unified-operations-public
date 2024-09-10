@@ -20,7 +20,7 @@ This article contains the syntax reference for X++.
 
 ## X++ Keywords
 
-The X++ keywords shown in the following table are reserved. These keywords cannot be used for any other purpose.
+The X++ keywords shown in the following table are reserved. These keywords can't be used for any other purpose.
 
 <table>
 <colgroup>
@@ -233,7 +233,7 @@ The X++ keywords shown in the following table are reserved. These keywords canno
 </tr>
 <tr class="even">
 <td><strong>abstract</strong></td>
-<td>Class and method modifier. An <strong>abstract</strong> class cannot be constructed with the <strong>new</strong> keyword. An <strong>abstract</strong> method cannot be called. A table can also be modified as abstract by setting its <span class="ui">Abstract</span> property to <span class="ui">Yes</span> in the AOT, or by using the <code>DictTable</code> class. The <span class="ui">Abstract</span> property defaults to <span class="ui">No</span>, and it cannot be set unless the table is extended by another table. Each row in an abstract table must have a dependent row in a derived table. This means that each row in an abstract table has a value greater than 0 (zero) in its <span class="ui">InstanceRelationType</span> property field. There are no other effects from marking a table as abstract. Informally, programmers often use the term <span class="term">concrete</span> to describe a class that is non-<strong>abstract</strong>.</td>
+<td>Class and method modifier. An <strong>abstract</strong> class can't be constructed with the <strong>new</strong> keyword. An <strong>abstract</strong> method can't be called. A table can also be modified as abstract by setting its <span class="ui">Abstract</span> property to <span class="ui">Yes</span> in the AOT, or by using the <code>DictTable</code> class. The <span class="ui">Abstract</span> property defaults to <span class="ui">No</span>, and it can't be set unless the table is extended by another table. Each row in an abstract table must have a dependent row in a derived table. This means that each row in an abstract table has a value greater than 0 (zero) in its <span class="ui">InstanceRelationType</span> property field. There are no other effects from marking a table as abstract. Informally, programmers often use the term <span class="term">concrete</span> to describe a class that is non-<strong>abstract</strong>.</td>
 <td>Method Modifiers Table Inheritance Overview</td>
 </tr>
 <tr class="odd">
@@ -393,7 +393,7 @@ The X++ keywords shown in the following table are reserved. These keywords canno
 </tr>
 <tr class="odd">
 <td><strong>extends</strong></td>
-<td>A class or interface declaration clause. If your class does not explicitly extend another class, your class is considered to extend the <code>Object</code> class (as if you had written &quot;extends Object&quot;).</td>
+<td>A class or interface declaration clause. If your class doesn't explicitly extend another class, your class is considered to extend the <code>Object</code> class (as if you had written &quot;extends Object&quot;).</td>
 <td>Creating a Subclass</td>
 </tr>
 <tr class="even">
@@ -413,7 +413,7 @@ The X++ keywords shown in the following table are reserved. These keywords canno
 </tr>
 <tr class="odd">
 <td><strong>firstOnly</strong></td>
-<td>Used in <code>select</code> statements to fetch only the first record. The <code>firstOnly</code> keyword does not guarantee that a maximum of one record is retrieved by an X++ SQL <code>select</code> statement. If the AOS can use the <code>EntireTable</code> cache to satisfy the data demands of the <code>select</code> statement, the <code>firstOnly</code> keyword is ignored.</td>
+<td>Used in <code>select</code> statements to fetch only the first record. The <code>firstOnly</code> keyword doesn't guarantee that a maximum of one record is retrieved by an X++ SQL <code>select</code> statement. If the AOS can use the <code>EntireTable</code> cache to satisfy the data demands of the <code>select</code> statement, the <code>firstOnly</code> keyword is ignored.</td>
 <td>Select Statement Syntax Set-based Caching</td>
 </tr>
 <tr class="even">
@@ -727,7 +727,7 @@ The X++ keywords shown in the following table are reserved. These keywords canno
 </tr>
 <tr class="odd">
 <td><strong>void</strong></td>
-<td>Identifies a method that does not return a value.</td>
+<td>Identifies a method that doesn't return a value.</td>
 <td>Declaration of Methods</td>
 </tr>
 <tr class="even">
@@ -767,7 +767,7 @@ An expression in X++ is used in either a mathematical or logical way. Expression
 |    FunctionCall    | = |                      \[ Expression (.                       |
 |   If-expression    | = |            Expression ? Expression : Expression             |
 
-Semantic restrictions apply on the preceding syntax. You cannot call any method using the :: operator. Similarly, you cannot use the **this** keyword without an active object; that is, if you are not within a method and so on.
+Semantic restrictions apply on the preceding syntax. You can't call any method using the :: operator. Similarly, you can't use the **this** keyword without an active object; that is, if you aren't within a method and so on.
 
 ### Examples
 
@@ -824,7 +824,7 @@ BB ::= JJ_SYM
    ::= KK_SYM
 ```
 
-`AA` is the name of a production rule. An `AA` requires a `BB`, followed by a CC\_SYM. A `BB` is also a production rule. Therefore, `BB` is not a terminal. `BB` must be either a JJ\_SYM or a KK\_SYM. Both JJ\_SYM and KK\_SYM are terminals because they are not the names of any other production rules. CC\_SYM is also a terminal.
+`AA` is the name of a production rule. An `AA` requires a `BB`, followed by a CC\_SYM. A `BB` is also a production rule. Therefore, `BB` isn't a terminal. `BB` must be either a JJ\_SYM or a KK\_SYM. Both JJ\_SYM and KK\_SYM are terminals because they aren't the names of any other production rules. CC\_SYM is also a terminal.
 
 In the BNF for X++ grammar, most of the terminals have \_SYM as the suffix of their name.
 
@@ -1371,7 +1371,7 @@ The following table displays a list of syntax changes that start in Microsoft Dy
 <tr class="odd">
 <td>Exceptions</td>
 <td>Now you can throw and catch only <code>int</code> values</td>
-<td>It was possible to throw scalar expressions like strings and dates, such as <code>throw &quot;hello world&quot;;</code>, and get no compile error. At runtime this was catch-able by a <code>catch</code> block that was not decorated with any specific value, such as <span class="code">catch {print(&quot;Catch worked.&quot;);}</span>.</td>
+<td>It was possible to throw scalar expressions like strings and dates, such as <code>throw &quot;hello world&quot;;</code>, and get no compile error. At runtime this was catch-able by a <code>catch</code> block that wasn't decorated with any specific value, such as <span class="code">catch {print(&quot;Catch worked.&quot;);}</span>.</td>
 <td>Now the only expression you can put on the <strong>throw</strong> keyword is an <code>int</code>. Often the best thing to throw is <span class="code">Global::error(&quot;Explanation&quot;);</span>. Often the best thing to catch is an element of the <code>Exception</code> enum. For more information, see Exception Handling with try and catch Keywords.</td>
 </tr>
 <tr class="even">
@@ -1394,9 +1394,9 @@ The following table displays a list of syntax changes that start in Microsoft Dy
 </tr>
 <tr class="odd">
 <td>Inheritance</td>
-<td>Override of a base method cannot be less accessible than the base method</td>
+<td>Override of a base method can't be less accessible than the base method</td>
 <td>It was possible to have a base method be decorated with <strong>protected</strong> and yet have an override of that method be <strong>private</strong>.</td>
-<td>Now when a base method is <strong>protected</strong>, the override method must be either <strong>protected</strong> or <strong>public</strong>, and the override method cannot be <strong>private</strong>. For more information, see Method Access Control.</td>
+<td>Now when a base method is <strong>protected</strong>, the override method must be either <strong>protected</strong> or <strong>public</strong>, and the override method can't be <strong>private</strong>. For more information, see Method Access Control.</td>
 </tr>
 <tr class="even">
 <td>Inheritance</td>
@@ -1412,20 +1412,20 @@ The following table displays a list of syntax changes that start in Microsoft Dy
 </tr>
 <tr class="even">
 <td>Interfaces</td>
-<td>A non-abstract base class that implements an interface cannot rely on a derived class for that implementation</td>
-<td>When a base class implements an interface, it was possible for the class to not implement the methods of the interface if a derived class implemented the methods. The only limitation was that the <code>new</code> constructor method could not be called on the class.</td>
+<td>A non-abstract base class that implements an interface can't rely on a derived class for that implementation</td>
+<td>When a base class implements an interface, it was possible for the class to not implement the methods of the interface if a derived class implemented the methods. The only limitation was that the <code>new</code> constructor method couldn't be called on the class.</td>
 <td>Now the compiler requires that every class that implements an interface must have or inherit a complete implementation of every method of the interface. For more information, see X++, C# Comparison: Object Oriented Programming.</td>
 </tr>
 <tr class="odd">
 <td>Modifiers</td>
-<td>The <strong>static</strong> modifier should not be applied to an interface</td>
+<td>The <strong>static</strong> modifier shouldn't be applied to an interface</td>
 <td>It was possible to write <span class="code">static interface IMyInterface {}</span>, but the <strong>static</strong> modifier had no effect because it makes no sense in this context.</td>
 <td>Sometime after Dynamics AX 2009 the X++ compiler might stop allowing the <strong>static</strong> modifier on interface declarations. For more information, see Interfaces Overview.</td>
 </tr>
 <tr class="even">
 <td>Modifiers</td>
 <td>The <strong>static</strong> modifier must not be applied to the <code>new</code> constructor</td>
-<td>It was possible to apply the <strong>static</strong> modifier to the declaration of the <code>new</code> constructor method. This caused <code>new MyClass();</code> to behave as a null operation. Instead, the statement <span class="code">MyClass::new();</span> would call the static <code>new</code> method, but that would not construct an object.</td>
+<td>It was possible to apply the <strong>static</strong> modifier to the declaration of the <code>new</code> constructor method. This caused <code>new MyClass();</code> to behave as a null operation. Instead, the statement <span class="code">MyClass::new();</span> would call the static <code>new</code> method, but that wouldn't construct an object.</td>
 <td>Now the compiler issues an error when the <strong>static</strong> modifier is applied to the <code>new</code> method. For more information, see Constructors.</td>
 </tr>
 <tr class="odd">
@@ -1443,7 +1443,7 @@ The following table displays a list of syntax changes that start in Microsoft Dy
 <tr class="odd">
 <td>Parameters</td>
 <td>Parameters with default values must come after all parameters that do not have default values</td>
-<td>It was possible to declare a method that takes in two parameters, and have only the first parameter offer a default value. There was no purpose to this. There was no way to accept the default of the first parameter because the call must specify a value for the second parameter and cannot omit the first parameter.</td>
+<td>It was possible to declare a method that takes in two parameters, and have only the first parameter offer a default value. There was no purpose to this. There was no way to accept the default of the first parameter because the call must specify a value for the second parameter and can't omit the first parameter.</td>
 <td>Now in the declaration of a method, any parameter that offers a default value must come after all the parameters that do not. For more information, see the following topics:
 <ul>
 <li>Using Optional Parameters</li>
@@ -1454,11 +1454,11 @@ The following table displays a list of syntax changes that start in Microsoft Dy
 <td>Parameters</td>
 <td>Override of a method must have the same default parameters as the overridden method</td>
 <td>It was possible to declare a method as <span class="code">public void myMethod(int i=22){}</span> and the override as <span class="code">public void myMethod(){}</span>. But if the override method was called as <code>derivedObject(333);</code> an error occurred.</td>
-<td>Now the override method must list the same parameter types in the same sequence that they are declared in the overridden method. For more information, see Overriding a Method.</td>
+<td>Now the override method must list the same parameter types in the same sequence that they're declared in the overridden method. For more information, see Overriding a Method.</td>
 </tr>
 <tr class="odd">
 <td>Preprocessor</td>
-<td>A <strong>TODO</strong> in a comment must be the first non-whitespace in the first line of the comment</td>
+<td>A <strong>TODO</strong> in a comment must be the first non-whitespace on the first line of the comment.</td>
 <td>The X++ preprocessor used to detect the <strong>TODO</strong> keyword in a multi-line <span class="code">/* ... */</span> task comment even when the <strong>TODO</strong> appeared after other text after the first comment line.</td>
 <td>Now the X++ preprocessor detects the <strong>TODO</strong> keyword only if <strong>TODO</strong> appears on the first line of the comment, and as the first non-whitespace in the comment. For more information, see TODO Comments for X++ Developer Tasks.</td>
 </tr>
