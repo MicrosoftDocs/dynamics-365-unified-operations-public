@@ -176,7 +176,9 @@ You can inquire about the results of the submission by going to **Organization a
 
 To import incoming invoices in OIOUBL and PEPPOL formats, follow these additional configuration steps for the same version of the **Danish electronic invoice (DK)** electronic invoicing feature that is used for outgoing invoice submission.
 
-1. In Regulatory Configuration Service (RCS), on the **Globalization features** tile, on the **Electronic invoicing** tile, select the required version of the **Danish electronic invoice (DK)** electronic invoicing feature.
+1. Import the latest version of the **Danish electronic invoice (DK)** Globalization feature. Learn more in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+1. Create a copy of the imported Globalization feature, and select your configuration provider for it. Learn more in [Create Globalization features](../global/gs-e-invoicing-create-new-globalization-feature.md).
+1. On the **Versions** tab, verify that **Draft** is selected.
 1. On the **Setups** tab, in the grid, select **Incoming OIOUBL**, and then select **Edit**.
 1. <a id="ImportChannel"></a>On the **Import channel** tab, in the **Parameters** section, select the **Data channel** parameter. Then, in the **Value** field, define the name of the data channel. Alternatively, leave the default value unchanged. For the OIOUBL format, the default channel name is **EdiOIOUBL**. For the PEPPOL format, it's **EdiPEPPOL**. In both cases, make a note of the value, because you must use it in later configuration steps.
 1. Select the **Service ID** parameter, and then select the name of the secret that contains the service ID number.
@@ -185,7 +187,7 @@ To import incoming invoices in OIOUBL and PEPPOL formats, follow these additiona
 1. On the **Applicability rules** tab, in the **Channel** field, make sure that the **Value** column contains the same [import channel](#ImportChannel) name that you defined earlier.
 1. <a id="OutputFile"></a>On the **Variables** tab, make a note of the **OutputFile** name, because you must use it in later configuration steps.
 1. Select **Save**, and close the page.
-1. If an import in PEPPOL format is also required, repeat steps 2 through 9 for the **Incoming PEPPOL** feature setup.
+1. If an import in PEPPOL format is also required, repeat steps 4 through 11 for the **Incoming PEPPOL** feature setup.
 1. Complete and deploy the configured version of the **Danish electronic invoice (DK)** electronic invoicing feature.
 
 ### Finance configuration
