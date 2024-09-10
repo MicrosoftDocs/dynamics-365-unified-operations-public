@@ -233,7 +233,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>abstract</strong></td>
-<td>Class and method modifier. An <strong>abstract</strong> class can't be constructed with the <strong>new</strong> keyword. An <strong>abstract</strong> method can't be called. A table can also be modified as abstract by setting its <span class="ui">Abstract</span> property to <span class="ui">Yes</span> in the AOT, or by using the <code>DictTable</code> class. The <span class="ui">Abstract</span> property defaults to <span class="ui">No</span>, and it can't be set unless the table is extended by another table. Each row in an abstract table must have a dependent row in a derived table. This means that each row in an abstract table has a value greater than 0 (zero) in its <span class="ui">InstanceRelationType</span> property field. There are no other effects from marking a table as abstract. Informally, programmers often use the term <span class="term">concrete</span> to describe a class that is non-<strong>abstract</strong>.</td>
+<td>Class and method modifier. An <strong>abstract</strong> class can't be constructed with the <strong>new</strong> keyword. An <strong>abstract</strong> method can't be called. A table can also be modified as abstract by setting its <span class="ui">Abstract</span> property to <span class="ui">Yes</span> in the AOT, or by using the <code>DictTable</code> class. The <span class="ui">Abstract</span> property defaults to <span class="ui">No</span>, and it can't be set unless the table is extended by another table. Each row in an abstract table must have a dependent row in a derived table. This means that each row in an abstract table has a value greater than zero in its <span class="ui">InstanceRelationType</span> property field. There are no other effects from marking a table as abstract. Informally, programmers often use the term <span class="term">concrete</span> to describe a class that is non-<strong>abstract</strong>.</td>
 <td>Method Modifiers Table Inheritance Overview</td>
 </tr>
 <tr class="odd">
@@ -289,7 +289,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 <tr class="odd">
 <td><strong>catch</strong></td>
 <td>Used in exception handling.</td>
-<td>Exception Handling with try and catch Keywords</td>
+<td>Exception Handling with try, and catch Keywords</td>
 </tr>
 <tr class="even">
 <td><strong>changeCompany</strong></td>
@@ -428,7 +428,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 </tr>
 <tr class="even">
 <td><strong>firstOnly1000</strong></td>
-<td>Same as <strong>firstOnly</strong>, except returns 1000 rows instead of one.</td>
+<td>Same as <strong>firstOnly</strong>, except returns 1,000 rows instead of one.</td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -623,7 +623,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 <tr class="even">
 <td><strong>retry</strong></td>
 <td>Used in exception handling.</td>
-<td>Exception Handling with try and catch Keywords</td>
+<td>Exception Handling with try, and catch Keywords</td>
 </tr>
 <tr class="odd">
 <td><strong>return</strong></td>
@@ -688,7 +688,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 <tr class="odd">
 <td><strong>throw</strong></td>
 <td>Used in exception handling.</td>
-<td>Exception Handling with try and catch Keywords</td>
+<td>Exception Handling with try, and catch Keywords</td>
 </tr>
 <tr class="even">
 <td><strong>true</strong></td>
@@ -698,7 +698,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 <tr class="odd">
 <td><strong>try</strong></td>
 <td>Used in exception handling.</td>
-<td>Exception Handling with try and catch Keywords</td>
+<td>Exception Handling with try, and catch Keywords</td>
 </tr>
 <tr class="even">
 <td><strong>ttsAbort</strong></td>
@@ -1366,13 +1366,13 @@ The following table displays a list of syntax changes that start in Microsoft Dy
 <td>Exceptions</td>
 <td>Retry is no longer allowed outside of a catch block</td>
 <td>It was possible to write the <strong>retry</strong> keyword outside of a <strong>catch</strong> block. This caused the program to end when the <strong>retry</strong> was reached during runtime.</td>
-<td>Now <strong>retry</strong> can occur only inside a <strong>catch</strong> block. For more information, see Exception Handling with try and catch Keywords.</td>
+<td>Now <strong>retry</strong> can occur only inside a <strong>catch</strong> block. For more information, see Exception Handling with try, and catch Keywords.</td>
 </tr>
 <tr class="odd">
 <td>Exceptions</td>
 <td>Now you can throw and catch only <code>int</code> values</td>
 <td>It was possible to throw scalar expressions like strings and dates, such as <code>throw &quot;hello world&quot;;</code>, and get no compile error. At runtime this was catch-able by a <code>catch</code> block that wasn't decorated with any specific value, such as <span class="code">catch {print(&quot;Catch worked.&quot;);}</span>.</td>
-<td>Now the only expression you can put on the <strong>throw</strong> keyword is an <code>int</code>. Often the best thing to throw is <span class="code">Global::error(&quot;Explanation&quot;);</span>. Often the best thing to catch is an element of the <code>Exception</code> enum. For more information, see Exception Handling with try and catch Keywords.</td>
+<td>Now the only expression you can put on the <strong>throw</strong> keyword is an <code>int</code>. Often the best thing to throw is <span class="code">Global::error(&quot;Explanation&quot;);</span>. Often the best thing to catch is an element of the <code>Exception</code> enum. For more information, see Exception Handling with try, and catch Keywords.</td>
 </tr>
 <tr class="even">
 <td>Inheritance</td>
@@ -1385,7 +1385,7 @@ The following table displays a list of syntax changes that start in Microsoft Dy
 </thead>
 <tbody>
 <tr class="odd">
-<td>It is good programming practice to avoid implicit downcasts.</td>
+<td>It's good programming practice to avoid implicit downcasts.</td>
 </tr>
 </tbody>
 </table></td>
@@ -1412,7 +1412,7 @@ The following table displays a list of syntax changes that start in Microsoft Dy
 </tr>
 <tr class="even">
 <td>Interfaces</td>
-<td>A non-abstract base class that implements an interface can't rely on a derived class for that implementation</td>
+<td>A nonabstract base class that implements an interface can't rely on a derived class for that implementation</td>
 <td>When a base class implements an interface, it was possible for the class to not implement the methods of the interface if a derived class implemented the methods. The only limitation was that the <code>new</code> constructor method couldn't be called on the class.</td>
 <td>Now the compiler requires that every class that implements an interface must have or inherit a complete implementation of every method of the interface. For more information, see X++, C# Comparison: Object Oriented Programming.</td>
 </tr>
@@ -1442,9 +1442,9 @@ The following table displays a list of syntax changes that start in Microsoft Dy
 </tr>
 <tr class="odd">
 <td>Parameters</td>
-<td>Parameters with default values must come after all parameters that do not have default values</td>
+<td>Parameters with default values must come after all parameters that don't have default values</td>
 <td>It was possible to declare a method that takes in two parameters, and have only the first parameter offer a default value. There was no purpose to this. There was no way to accept the default of the first parameter because the call must specify a value for the second parameter and can't omit the first parameter.</td>
-<td>Now in the declaration of a method, any parameter that offers a default value must come after all the parameters that do not. For more information, see the following topics:
+<td>Now in the declaration of a method, any parameter that offers a default value must come after all the parameters that don't. For more information, see the following topics:
 <ul>
 <li>Using Optional Parameters</li>
 <li>Best Practices for Parameters</li>
@@ -1458,9 +1458,9 @@ The following table displays a list of syntax changes that start in Microsoft Dy
 </tr>
 <tr class="odd">
 <td>Preprocessor</td>
-<td>A <strong>TODO</strong> in a comment must be the first non-whitespace on the first line of the comment.</td>
+<td>A <strong>TODO</strong> in a comment must be the first nonwhitespace on the first line of the comment.</td>
 <td>The X++ preprocessor used to detect the <strong>TODO</strong> keyword in a multi-line <span class="code">/* ... */</span> task comment even when the <strong>TODO</strong> appeared after other text after the first comment line.</td>
-<td>Now the X++ preprocessor detects the <strong>TODO</strong> keyword only if <strong>TODO</strong> appears on the first line of the comment, and as the first non-whitespace in the comment. For more information, see TODO Comments for X++ Developer Tasks.</td>
+<td>Now the X++ preprocessor detects the <strong>TODO</strong> keyword only if <strong>TODO</strong> appears on the first line of the comment, and as the first nonwhitespace in the comment. For more information, see TODO Comments for X++ Developer Tasks.</td>
 </tr>
 </tbody>
 </table>
