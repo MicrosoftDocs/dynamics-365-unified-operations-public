@@ -3,15 +3,14 @@ title: Enhanced payments in storefront checkout
 description: This article provides an overview of enhanced strong customer authentication (SCA) support for storefront checkout in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 11/04/2022
-ms.topic: article
+ms.topic: how-to
 audience: IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
-ms.search.validFrom: 
-ms.dyn365.ops.version: AX 7.0.1
-ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
-ms.search.industry: Retail
+ms.author: shajain
+ms.search.validFrom: 2020-06-20
+ms.custom: 
+  - bap-template
 ---
 
 # Enhanced payments in storefront checkout
