@@ -18,8 +18,7 @@ ms.search.form: GUPPricingTree, GUPParameters, GUPPriceComponentCodeSetup
 
 Regardless of whether you're using a single price structure or multiple price structures, you use the same basic procedure to arrange your price component codes into a price structure. The only difference is that, if you use multiple price structures, you also define a condition to select the structure that's used in each situation.
 
-- For information about how to create and manage a single price structure, see [Set up a company to use a single price structure](upm-price-structure-single.md). Then, when you're ready to add, arrange, and configure the price component codes in the structure, return to this article.
-- For information about how to create and manage multiple price structures, see [Set up a company to use multiple price structures](upm-price-structure-multiple.md). Then, when you're ready to add, arrange, and configure the price component codes in each structure, return to this article.
+- For information about how to create and manage a single or multiple price structures, see [Set up a company to use multiple price structures](upm-price-structure-multiple.md). Then, when you're ready to add, arrange, and configure the price component codes in each structure, return to this article.
 
 ## Configure a price structure
 
@@ -27,8 +26,7 @@ Follow these steps to create and configure a price structure.
 
 1. Follow one of these steps:
 
-    - If you're using a single price structure, follow the instructions in [Set up a company to use a single price structure](upm-price-structure-single.md). Then go to **Pricing management \> Setup \> Price component codes \> Price component code setup**, and continue with step 2 of this procedure.
-    - If you're using multiple price structures, follow the instructions in [Set up a company to use multiple price structures](upm-price-structure-multiple.md). Then go to **Pricing management \> Setup \> Price component codes \> Price trees**, create or select a price tree, select the **Price component code list** FastTab, and continue with step 2 of this procedure.
+       - No matter you're using a single or multiple price structures, follow the instructions in [Set up a company to use multiple price structures](upm-price-structure-multiple.md). Then go to **Pricing management \> Setup \> Price component codes \> Price trees**, create or select a price tree, select the **Price component code list** FastTab, and continue with step 2 of this procedure.
 
 1. Add each price component code that should be part of the current price structure. Use the buttons on the toolbar to add and remove lines as required. The following fields are available for each line:
 
@@ -47,11 +45,8 @@ Follow these steps to create and configure a price structure.
 
         This field affects discount calculations only when the **Best price and compound concurrency control model** field on the **Pricing management parameters** page is set to *Best price and compound within priority, best price and compound across priority*. Learn more in [Resolve concurrency across price component codes](upm-concurrence-cross-codes.md).
 
-    - **Mandatory** – This field isn't available on the **Price component code setup** page. It's available only on the **Price trees** page. (Learn more in [Use multiple price structures within a company](upm-price-structure-multiple.md).) For price trees where the **Enable mandatory check** option is set to *Yes*, use this checkbox to mark each price component code that's mandatory in the sales order. If a price component code isn't applicable, an error will be shown.
+    - **Mandatory** – For price trees where the **Enable mandatory check** option is set to *Yes*, use this checkbox to mark each price component code that's mandatory in the sales order. If a price component code isn't applicable, an error will be shown.
 
     > [!NOTE]
-    > If you use multiple price structures (price trees), they can't include price component codes where the **Price component** field is set to *Auto charge*. Instead, the system will apply the standard auto charge logic in Microsoft Dynamics 365 Supply Chain Management. In other words, if an auto charge rule record is applicable, the auto charge will apply to the sales order. You can include auto charge components in the price structure for [companies that are configured to use a single price structure](upm-price-structure-single.md).
-
-    [<img src="media/price-component-code-setup.png" alt="Price component code setup page." title="Price component code setup page" width="720" />](media/price-component-code-setup.png#lightbox)
-
+    > If you use multiple price structures (price trees), they can't include price component codes where the **Price component** field is set to *Auto charge*. Instead, the system will apply the standard auto charge logic in Microsoft Dynamics 365 Supply Chain Management. In other words, if an auto charge rule record is applicable, the auto charge will apply to the sales order. 
 1. When you've set up all the lines that you need in your price structure, select **Save** on the Action Pane.
