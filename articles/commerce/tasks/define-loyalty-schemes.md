@@ -5,12 +5,14 @@ title: Define loyalty schemes
 description: This procedure walks through how to define a loyalty scheme. 
 author: jashanno
 ms.date: 05/28/2024
-ms.topic: article
+ms.topic: how-to
 audience: Application User 
-ms.reviewer: josaw 
+ms.reviewer: v-chrgriffin 
 ms.search.region: Global
-ms.author: mashneer
-ms.search.validFrom: 2016-06-30 
+ms.author: asharchw
+ms.search.validFrom: 2016-06-30
+ms.custom: 
+  - bap-template
 ---
 
 # Define loyalty schemes
