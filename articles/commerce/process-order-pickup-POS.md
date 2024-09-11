@@ -3,13 +3,14 @@ title: Process customer order pickups in POS
 description: This article explains the functionality that is available in the point of sale (POS) application for processing customer order pickups.
 author: hhainesms
 ms.date: 01/06/2021
-ms.topic: article
+ms.topic: how-to
 audience: Application User
-ms.reviewer: josaw
-ms.search.region: global
-ms.author: hhaines
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
+ms.author: shajain
 ms.search.validFrom: 2020-01-20
-ms.dyn365.ops.version: 10.0.8
+ms.custom: 
+  - bap-template
 ---
 
 # Process customer order pickups in POS
