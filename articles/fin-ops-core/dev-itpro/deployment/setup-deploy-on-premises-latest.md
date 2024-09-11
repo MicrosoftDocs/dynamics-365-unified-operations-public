@@ -6,7 +6,7 @@ ms.author: osfaixat
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 08/01/2024
+ms.date: 09/10/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-01-31 
@@ -259,7 +259,7 @@ Self-signed certificates can be used only for testing purposes. For the sake of 
 | SSRS Web Server certificate                  | This certificate is used as the server certificate that's presented to the client (AOS) for the SSRS web server. | <p>The domain name of the certificate should match the FQDN of the SSRS node.</p><ul><li>**CN:** BI1.contoso.com</li><li>**DNS name:** BI1.contoso.com</li></ul>
 | On-premises local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that's hosted on-premises and on Lifecycle Services. It enables the local agent to act on behalf of your Microsoft Entra tenant, and to communicate with Lifecycle Services to orchestrate and monitor deployments.</p><p>**Note:** Only one on-premises local agent certificate is required for a tenant.</p> | <ul><li>**CN:** OnPremLocalAgent</li><li>**DNS name:** OnPremLocalAgent</li></ul> |
 
-To reduce the amount of certificates required, you can combine the Service Fabric Server certificate with the AOS SSL certificate. It is recommended that you do not use a wildcard certificate and instead use a certificate with multiple subject alternative names (SAN).
+To reduce the number of certificates required, you can combine the Service Fabric Server certificate with the AOS SSL certificate. It's recommended that you don't use a wildcard certificate and instead use a certificate with multiple subject alternative names (SAN).
 
 #### Subject name
 
