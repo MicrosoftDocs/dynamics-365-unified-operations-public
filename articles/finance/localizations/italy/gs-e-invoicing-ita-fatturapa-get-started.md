@@ -19,7 +19,7 @@ ms.dyn365.ops.version: AX 10.0.39
 > [!IMPORTANT]
 > Electronic invoicing for Italy might not currently support all the functions that are available for electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 
-This article provides information to help you get started with Electronic invoicing for Italy in Finance and Supply Chain Management. It guides you through the configuration steps to enable the generation of electronic invoices in the Italy-specific format, **FatturaPA**, and to exchange electronic invoices with the Italian Revenue Agency's e-invoicing exchange system, SDI (Sistema di Interscambio). These steps complement the steps that are described in the article, [Setting up Electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
+This article provides information to help you get started with Electronic invoicing for Italy in Finance and Supply Chain Management. It guides you through the configuration steps to enable the generation of electronic invoices in the Italy-specific format, **FatturaPA**, and to exchange electronic invoices with the Italian Revenue Agency's e-invoicing exchange system, SDI (Sistema di Interscambio). 
 
 > [!NOTE]
 > The solution for direct integration with SDI supports digital signing of documents only through separately stored certificate files that can be uploaded to the key vault. The solution doesn't support the use of qualified digital signatures, which require additional hardware involvement or an online connection to certification service providers.
@@ -36,16 +36,15 @@ Before you complete the steps in this article, the following prerequisites must 
 
 ## Country/region-specific configuration for the Italian FatturaPA (IT) Electronic invoicing feature
 
-Complete the following procedures before you deploy the application setup to your connected Finance or Supply Chain Management app.
+Complete the following procedures before you deploy the feature to Microsoft Dynamics 365 Finance.
 
-This section complements the [Country/region-specific configuration of application setup](../e-invoicing-get-started.md#country-specific-configuration-of-application-setup) section of the "Get started with Electronic invoicing" article.
+This section complements the the common part of electronic invoicing service configuration as described in [Set up electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
 
 ### <a name="ProgressivoInvio"></a>Create a new number sequence for ProgressivoInvio
 
-1. Sign in to RCS.
-2. In the **Globalization feature** workspace, select **Environment setup**, and then select **Service environments**.
-3. Select the service environment that you want, and then, in the **Number sequences** section, select **Add**.
-4. Enter a name for the new sequence (for example, **ProgressivoInvio**), and then select **Save**.
+1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+2. On the **Electronic invoicing** tab, in the **Number sequences** FastTab, select **New** to add a new record.
+3. Enter a name for the new sequence (for example, **ProgressivoInvio**), and then select **Save**.
 
 ### Create a new chain of certificates
 
