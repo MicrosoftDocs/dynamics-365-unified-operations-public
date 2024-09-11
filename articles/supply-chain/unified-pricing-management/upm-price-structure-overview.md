@@ -18,9 +18,8 @@ ms.search.form: GUPPricingTree, GUPPriceComponentCodeSetup
 
 When a sales order is placed, you can review the detailed price breakdown, including the price component. The breakdown corresponds to the price structure that you've configured. The price details provide an audit record that shows how the price was determined, and they can serve as a starting point for future price investigation.
 
-The following two methods are available for building the price structure:
+The following method is available for building the price structure:
 
-- **Price component code setup** – This method provides a single, uniform price structure for each company.
 - **Price trees** – This method enables multiple price structures that are based on order attribute values for each company.
 
 [<img src="media/price-trees-block-diagram.png" alt="Price tree and price component code setup elements." title="Price tree and price component code setup elements" width="720" />](media/price-trees-block-diagram.png#lightbox)
