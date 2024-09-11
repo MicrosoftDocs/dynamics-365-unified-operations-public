@@ -274,6 +274,9 @@ DNS Name=ax.d365ffo.onprem.contoso.com
 DNS Name=sf.d365ffo.onprem.contoso.com
 ```
 
+> [!NOTE]
+> The subject name can contain either of the subject alternative names.
+
 ### <a name="plansvcacct"></a>Step 3. Plan your users and service accounts
 
 You must create several user or service accounts for Finance + Operations (on-premises) to work. You must create a combination of gMSAs, domain accounts, and SQL accounts. The following table shows the user accounts, their purpose, and example names that are used in this article.
