@@ -2,7 +2,7 @@
 title: Retail SDK FAQ
 description: This article summarizes answers to questions that are frequently asked by users of the Retail SDK.
 author: josaw1
-ms.date: 06/30/2021
+ms.date: 09/11/2024
 ms.topic: how-to
 audience: Developer
 ms.reviewer: v-chrgriffin
@@ -27,7 +27,7 @@ This error might occur when you use **ISupportedTypesAware**.
 *Exception: System.MissingMethodException: Method not found: \'System.Collections.Generic.IEnumerable`1<System.Type> 
 Microsoft.Dynamics.Commerce.Runtime.ISupportedTypesAware.get_SupportedRequestTypes()\'*
 
-When extending or implementing CRT handlers, use **IRequestHandlerAsync** instead of **ISupportedTypesAware**. **ISupportedTypesAware** is not supported and if used in extension it may cause this runtime error. Additionally, don't use explicit implementations. 
+When extending or implementing CRT handlers, use **IRequestHandlerAsync** instead of **ISupportedTypesAware**. **ISupportedTypesAware** isn't supported and if used in extension it may cause this runtime error. Additionally, don't use explicit implementations. 
 
 
 The following example shows the recommended approach using **IRequestHandlerAsync**.
@@ -54,7 +54,7 @@ public class MyHandler : IRequestHandlerAsync
 }
 ```
 
-The following example, which is not recommended, uses **ISupportedTypesAware**.
+The following example, which isn't recommended, uses **ISupportedTypesAware**.
 
 ```csharp
 // NOT RECOMMENDED
@@ -80,7 +80,7 @@ public class MyHandler : IRequestHandlerAsync, ISupportedTypesAware
 
 ## How do I handle a ReadOnly CartValidationException error in SDK version (10.0.0 and later)?
 
-This error will occur if the following read-only properties are updated in SDK version 10.0.9 or earlier. These properties are made read only in SDK version 10.0.0 to avoid miscalculations in the cart total:
+This error occurs if the following read-only properties are updated in SDK version 10.0.9 or earlier. These properties are made read only in SDK version 10.0.0 to avoid miscalculations in the cart total:
 
 - ExtendedPrice
 - TaxAmount
@@ -92,13 +92,13 @@ This error will occur if the following read-only properties are updated in SDK v
 - IsInvoiceLine
 - InvoiceAmount
 
-To resolve this issue, remove the code in the client/server. Setting this value and OOB code will calculate these values or keep the logic in the read-only fields. You can follow the example shown below, however be sure to modify the code according to the best practice, as this option is not recommended.
+To resolve this issue, remove the code in the client/server. Setting this value and out-of-band (OOB) code calculates these values or keeps the logic in the read-only fields. You can follow the example shown below, however be sure to modify the code according to the best practice, as this option isn't recommended.
 
 In **HQ Commerce parameters > Configuration parameters > Create a new config** with a name/value like the following pattern:
 
 **RetailReadOnlyExempt_[EntityName] : [ColumnName]**
 
-For example, in the error at the top of this page, ITEMTAXGROUPID is the read-only property with the error. You can search to see this is part of CartLine and CartLineData. The configuration name/value pair would look like this:
+For example, in the error at the top of this page, ITEMTAXGROUPID is the read-only property with the error. You can search to see that this property is part of CartLine and CartLineData. The configuration name/value pair would look like this:
 
 **RetailReadOnlyExempt_CartLineData : ITEMTAXGROUPID**  
 
@@ -109,26 +109,26 @@ Additionally, to exempt more than one column for a given entity, use a comma as 
 > [!NOTE]
 > ITEMTAXGROUPID, TAXAMOUNT, TOTALAMOUNT are the column names of the properties in the examples above, not the actual property names. The entity name for the CartLine is CartLineData.
 
-After adding the config run job 1110 to push this change.
+After adding the config, run job 1110 to push this change.
 
-## Deployment failed with error - Could not load file or assembly Microsoft.Dynamics.Commerce.RetailServer.Extensibility.Contracts
+## Deployment failed with error - Couldn't load file or assembly Microsoft.Dynamics.Commerce.RetailServer.Extensibility.Contracts
 
 **Deployment of the new retail deployable package fails with the message:**
 
-*An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code. 
-Could not load file or assembly "Microsoft.Dynamics.Commerce.RetailServer.Extensibility.Contracts, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" or one of its dependencies. The system cannot find the file specified.*
+*An unhandled exception occurred during the execution of the current web request. Review the stack trace for more information about the error and where it originated in the code. 
+Couldn't load file or assembly "Microsoft.Dynamics.Commerce.RetailServer.Extensibility.Contracts, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" or one of its dependencies. The system can't find the file specified.*
 
 This error may occur if the extension project upgraded from Retail SDK version 10.0.10 or 10.0.11 to Retail SDK version 10.0.12 or later, and there are extension projects referencing Microsoft.Dynamics.Commerce.RetailServer.Extensibility.Contracts.
 
-To fix this issue, remove the reference to Microsoft.Dynamics.Commerce.RetailServer.Extensibility.Contracts in the extension project and regenerate the package and deploy again. Removing this reference library will not impact extension code/functionality because it’s not needed for extension solutions. Starting in version 10.0.11, extensions can refer to Microsoft.Dynamics.Commerce.Hosting.Contracts for Retail server APIs.
+To fix this issue, remove the reference to Microsoft.Dynamics.Commerce.RetailServer.Extensibility.Contracts in the extension project and regenerate the package and deploy again. Removing this reference library doesn't impact extension code/functionality because it isn't needed for extension solutions. Starting in version 10.0.11, extensions can refer to Microsoft.Dynamics.Commerce.Hosting.Contracts for Retail server APIs.
 
 ## MSbuild in SDK version 10.0.19 and 10.0.20 fails while checking Visual Studio 2017 dependencies
 
-In Retail SDK version 10.0.19 and 10.0.20, the MSBuild command fails while checking for Visual Studio 2017 dependencies. During MSBuild, the script checks if all the prerequisites are installed, if not, the script will try to install the prerequisites but will fail and display one of the following errors:
+In Retail SDK version 10.0.19 and 10.0.20, the MSBuild command fails while checking for Visual Studio 2017 dependencies. During MSBuild, the script checks if all the prerequisites are installed. If not, the script tries to install the prerequisites but fails and displays one of the following errors:
 
 - Error RetailSDK\dirs.proj(14,9): Error MSB3073: The command "powershell -NoProfile -NonInteractive .\BuildTools\checkVS2017Dependencies.ps1" exited with code -1.
 - Error MSB3073: The command "powershell -NoProfile -NonInteractive .\BuildTools\checkVS2017Dependencies.ps1" exited with code -1.
-- EXEC : An error occurred: Microsoft.VisualStudio.Product.Professional (15.9.28307.1440) vsconfig export fail! [K:\10.0.
+- EXEC: An error occurred: Microsoft.VisualStudio.Product.Professional (15.9.28307.1440) vsconfig export fail! [K:\10.0.
 19\RetailSDK\Code\dirs.proj]
 
 To this resolve issue, run msbuild with the parameter **msbuild /p:CheckVSDependencies=False**. If prerequisites are missing, install everything by manually by following the [Retail software development kit (SDK) prerequisites](/dynamics365/commerce/dev-itpro/retail-sdk/retail-sdk-overview#prerequisites).
