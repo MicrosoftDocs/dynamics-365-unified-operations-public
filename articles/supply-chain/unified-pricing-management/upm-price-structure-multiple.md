@@ -52,7 +52,7 @@ Follow these steps to create and configure a price structure.
     - **Description** – Enter a short description of the price tree.
     - **Enable mandatory check** – If you want to be able to mark one or more price component codes as mandatory, set this option to *Yes*.
 
-1. On the **Price component code list** FastTab, add each price component code that should be part of the price structure for the current price tree. Use the buttons on the toolbar to add and remove lines as required. The fields on this FastTab work just as they do on the **Price component code setup** page. For information about how to set these fields, and examples that show how the settings work, see [Arrange price component codes into a price structure](upm-price-structure-details.md).
+1. On the **Price component code list** FastTab, add each price component code that should be part of the price structure for the current price tree. Use the buttons on the toolbar to add and remove lines as required. For information about how to set these fields, and examples that show how the settings work, see [Arrange price component codes into a price structure](upm-price-structure-details.md).
 1. When you've set up all lines as required, select **Save** on the Action Pane.
 1. On the Action Pane, select **Price tree attribute** to specify the value of the price tree attribute that will cause this price tree to apply to a given order.
 1. On the Action Pane, select **Enable** to enable the current price tree.
