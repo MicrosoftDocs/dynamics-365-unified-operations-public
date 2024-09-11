@@ -25,7 +25,7 @@ All the following commands must be run by using Yarn. They all have the followin
 yarn {msdyn365} {command} {command-arguments}
 ```
 
-For information about each command, see the entries in this article, or use the **yarn --help** or **yarn msdyn365 {command} --help** command.
+For information about each command, see the entries in this article, or use the `yarn --help` or `yarn msdyn365 {command} --help` command.
 
 ## start
 
@@ -192,7 +192,7 @@ yarn msdyn365 clone content-block super-content-block --verbose
 yarn msdyn365 create-request-hook <--verbose>
 ```
 
-This command creates a request pipeline plug-in hook file (**src/requestHooks/initialRequest.hook.ts**). The request pipeline plug-in hook file provides the ability to intercept the rendering request that is sent to the **root/src/modules** folder on the Node server.
+This command creates a request pipeline plug-in hook file (**src/requestHooks/initialRequest.hook.ts**), which can intercept the rendering request that is sent to the **root/src/modules** folder on the Node server.
 
 The `--verbose` option is used to provide more verbose debugging output in the command prompt window.
 
