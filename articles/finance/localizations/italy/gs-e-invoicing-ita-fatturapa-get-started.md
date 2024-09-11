@@ -143,8 +143,7 @@ The following procedures must be completed for all Electronic reporting (ER) for
 
 ### Deploy the feature
 
-1. Complete, publish, and deploy the feature to the service environment. For more information, see the [Deploy the Electronic invoicing feature to Service environment](../e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) section of the "Get started with Electronic invoicing" article.
-2. Deploy the feature to the connected application. For more information, see the [Deploy the Electronic invoicing feature to Connected application](../e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) section of the "Get started with Electronic invoicing" article.
+Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ### Set up Finance
 
