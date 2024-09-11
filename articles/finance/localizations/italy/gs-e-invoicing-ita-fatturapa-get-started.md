@@ -19,7 +19,7 @@ ms.dyn365.ops.version: AX 10.0.39
 > [!IMPORTANT]
 > Electronic invoicing for Italy might not currently support all the functions that are available for electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 
-This article provides information to help you get started with Electronic invoicing for Italy in Finance and Supply Chain Management. It guides you through the configuration steps to enable the generation of electronic invoices in the Italy-specific format, **FatturaPA**, and to exchange electronic invoices with the Italian Revenue Agency's e-invoicing exchange system, SDI (Sistema di Interscambio). These steps complement the steps that are described in the article, [Get started with Electronic invoicing](../e-invoicing-get-started.md).
+This article provides information to help you get started with Electronic invoicing for Italy in Finance and Supply Chain Management. It guides you through the configuration steps to enable the generation of electronic invoices in the Italy-specific format, **FatturaPA**, and to exchange electronic invoices with the Italian Revenue Agency's e-invoicing exchange system, SDI (Sistema di Interscambio). These steps complement the steps that are described in the article, [Setting up Electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
 
 > [!NOTE]
 > The solution for direct integration with SDI supports digital signing of documents only through separately stored certificate files that can be uploaded to the key vault. The solution doesn't support the use of qualified digital signatures, which require additional hardware involvement or an online connection to certification service providers.
@@ -29,9 +29,9 @@ This article provides information to help you get started with Electronic invoic
 Before you complete the steps in this article, the following prerequisites must be met:
 
 - Obtain SDICoop service channel accreditation in the Exchange system (SDI) government portal.
-- Complete the steps in [Get started with Electronic invoicing](../e-invoicing-get-started.md).
-- Import the **Italian FatturaPA (IT)** electronic invoicing feature (version 5 or later) into Regulatory Configuration Service (RCS) from the Global repository. For more information, see the [Import an Electronic invoicing feature from the Microsoft configuration provider](../e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider) section of the previously mentioned "Get started with Electronic invoicing" article.
-- Add links from the required certificates to the service environment. The required certificates include the Certificate authority (CA) certificate and Clients certificate. For more information, see the [Create a digital certificate secret](../e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) section of the article, "Get started with Electronic invoicing service administration."
+- Complete the steps in [Setting up Electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
+- Import the **Italian FatturaPA (IT)** electronic invoicing feature (version 5 or later) from the repository. For more information, see the [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md) section of the previously mentioned "Get started with Electronic invoicing" article.
+- Configure Azure resources to store required certificates including the Certificate authority (CA) certificate and Clients certificate. For more information, see the [Configure Azure resources for Electronic invoicing](../global/gs-e-invoicing-set-up-parameters.md#create-a-key-vault-reference) section of the article, "Get started with Electronic invoicing service administration."
 - Optional: You can use the Digital signature certificate only for non-qualified signatures.
 
 ## Country/region-specific configuration for the Italian FatturaPA (IT) Electronic invoicing feature
