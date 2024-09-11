@@ -66,7 +66,7 @@ To validate that the certificate is correctly registered, run the following comm
 ## Deprecated authentication process (ERP Service Principal)
 
 > [!NOTE]
-> The following steps are for the deprecated authentication process. This process will still be supported for a limited time and will be retired in the near future. If you are using the new authentication process, see the [New authentication process](#new-authentication-process) section.
+> The following steps are for the deprecated authentication process. This process will still be supported for a limited time and will be retired in the near future. If you are using the new authentication process, see the [New authentication process](onprem-auth-lcs#new-authentication-process) section.
 
 Only user accounts that have the Global Administrator directory role can add certificates to ERP service principal. By default, the person who signs up for Microsoft 365 for your organization is the global administrator for the directory. If you are not the global administrator, you must work with the global administrator to complete the following steps.
 
