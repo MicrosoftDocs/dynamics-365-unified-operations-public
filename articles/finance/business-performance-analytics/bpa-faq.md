@@ -41,7 +41,7 @@ The following errors are likely to occur if another operation is in progress dur
 To maintain the accuracy of report data, Business performance analytics assesses the quality of the source data. If the assessments don't meet defined rules, Business performance analytics logs information in the **Bpa self help logs** table in Microsoft Dataverse. To learn more, see [Business performance analytics self-help](/troubleshoot/dynamics-365/finance/business-performance-analytics/business-performance-analytics-self-help-overview).
 
 Some customers may reach the storage capacity limits of their Power BI Embedded SKU, preventing the Power BI dataset needed for reports to be updated. Business performance analytics uses the A3 SKU by default for Power BI Embedded. It's recommended to scale up your SKU to to raise your Power BI Embedded storage capacity. For more information, see [Capacity and SKUs in Power BI embedded analytics
-](../../../power-bi/developer/embedded/embedded-capacity.md).
+](/power-bi/developer/embedded/embedded-capacity.md).
 
 ### Why is Business performance analytics using a lot of Managed Data Lake (MDL) storage in Dataverse?
 
