@@ -69,9 +69,9 @@ This section complements the the common part of electronic invoicing service con
 
 1. Save your changes, and close the page.
 
-### Create a new feature
+### <a name="CreateFeature"></a>Create a new feature
 
-1.  In the **Globalization Studio** workspace, select the **Electronic reporting** tile.
+1. In the **Globalization Studio** workspace, select the **Electronic reporting** tile.
 2. In the **Configuration providers** section, mark your company's configuration provider as active.
 3. In the **Globalization Studio** workspace, select the **Electronic invoicing** tile.
 4. On the **Electronic invoicing features** page, select **Add** \> **Based on existing feature**.
@@ -94,10 +94,10 @@ The following procedures must be completed for all Electronic reporting (ER) for
 1. In the **Versions** section, select **Change status** \> **Complete** to complete the **Sales invoice (IT)** format configuration.
 1. Repeat steps 2 through 9 for the **Project invoice (IT)** format configuration, as required.
 
-### Set up application-specific parameters
+#### Set up application-specific parameters
 
 1. In the **Globalization Studio** workspace, select the **Electronic reporting** tile, and then select the **Reporting configurations** tile.
-1. On the **Configurations** page, select the **Sales invoice (IT)** format configuration.
+2. On the **Configurations** page, select the **Sales invoice (IT)** format configuration.
 3. In menu, select **Configurations** \> **Application specific parameters** \> **Setup**.
 4. In the **Lookups** section, make sure that the **List of Natura reverse charge subcategories** lookup is selected.
 5. In the **Conditions** section, select **Add**.
@@ -110,33 +110,36 @@ The following procedures must be completed for all Electronic reporting (ER) for
 
 ### Configure a processing pipeline for export
 
-1. On the **Electronic invoicing features** page, select the feature to edit.
-2. On the **Setups** tab, select **Sales invoices**, and then select **Edit**.
-3. In the **Processing pipeline** section, go through the actions, and set the required fields:
+1. In the **Globalization Studio** workspace, select the **Electronic invoicing** tile.
+2. On the **Electronic invoicing features** page, select the feature you [created](#CreateFeature) based on the **Italian FatturaPA (IT)** feature.
+3. On the **Setups** tab, select **Sales invoice**, and then select **Edit**.
+4. In the **Processing pipeline** section, go through the actions, and set the required fields:
 
     - **Get next number sequence value** action – In the **Parameters** section, select the **Number sequence** parameter, and then, in the **Value** field, select the previously defined number sequence for [**ProgressivoInvio**](#ProgressivoInvio).
     - **Submit** action – In the **Parameters** section, in the **URL address** and **Certificates** fields, enter or select a value. The value in the **Certificates** field is a chain of certificates that was added in a previous section (**SDIChainProd** or **SDIChainTest**).
     - **Sign document** action – In the **Certificate name** field, specify the Digital signature certificate (Optional).
 
-4. In the **Applicability rules** section, go through the clauses, and review or set the required fields:
+5. In the **Applicability rules** section, go through the clauses, and review or set the required fields:
 
     - Review the **LegalEntityID** clause and update with the correct value from your legal entity.
 
-5. Select **Validate** to ensure that all required fields have been set.
-6. Save your changes, and close the page.
-7. On the **Setups** tab, select **Project invoices**, and then select **Edit**.
-8. Repeat steps 3 through 6 for project invoice setups.
+6. Select **Validate** to ensure that all required fields have been set.
+7. Save your changes, and close the page.
+8. On the **Setups** tab, select **Project invoices**, and then select **Edit**.
+9. Repeat steps 3 through 7 for **Project invoice**, **Sales invoice PA**, and **Project invoice PA** setups, if required.
 
 ### Configure the processing pipeline for import
 
-1. On the **Electronic invoicing features** page, select the feature to edit.
-2. On the **Setups** tab, select **Import invoices**, and then select **Edit**.
-3. In the **Data channel** section, on the **Parameters** tab, in the **Data channel** field, enter a string value.
-4. On the **Applicability rules** tab, set the fields for the setup. You can use the default **Channel** clause by passing the value that you set for the **Data channel** field in the previous step to the **Value** field.
+1. In the **Globalization Studio** workspace, select the **Electronic invoicing** tile.
+2. On the **Electronic invoicing features** page, select the feature you [created](#CreateFeature) based on the **Italian FatturaPA (IT)** feature.
+3. On the **Setups** tab, select **Import invoices**, and then select **Edit**..
+4. On the **Impoer channel** tab, in the **Data channel** section, on the **Parameters** tab, in the **Data channel** field, enter a string value.
+5. On the **Applicability rules** tab, set the fields for the setup. You can use the default **Channel** clause by passing the value that you set for the **Data channel** field in the previous step to the **Value** field.
 
     ![Setting up applicability rules.](../media/e-invoicing-ita-fatturapa-get-started-apprules-setup.png)
 
-5. Select **Validate** to ensure that all required fields have been set.
+6. Select **Validate** to ensure that all required fields have been set.
+7. Save your changes, and close the page.
 
 ### Deploy the feature
 
