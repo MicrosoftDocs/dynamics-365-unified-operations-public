@@ -18,7 +18,7 @@ ms.search.form: GUPPriceComponentCodeSetup, GUPParameters
 
 This article explains how to configure a company to use a single price structure, and how to set up that structure. The purpose of a price structure is to define the order that the system calculates each type of price adjustment in, and to define other options for each price component code, such as concurrency and compounding rules.
 
-In this scenario, companies and price structures have a one-to-one (1:1) relationship, and the single price structure is called the *price component code setup*. The pricing engine matches each sales order with the price component codes, based on the pricing sequence that's defined in the single structure.
+In this scenario, companies and price structures have a one-to-one (1:1) relationship, and the single price structure is maintianed in *Price trees* as well. The pricing engine matches each sales order with the price component codes, based on the pricing sequence that's defined in the single structure.
 
 The price component code setup is the single-structure equivalent of the price trees that are used for multiple price structures, and it provides almost all the same settings. Learn more in [Set up a company to use multiple price structures](upm-price-structure-multiple.md).
 
@@ -35,7 +35,7 @@ Follow these steps to use a single price structure for a company.
 
 To set up the price structure for a company that uses a single structure, follow these steps.
 
-1. Go to **Pricing management \> Setup \> Price component codes \> Price component code setup**. The **Price component code setup** page shows your current price structure (if you have one), and lets you add or remove price component codes in the structure. The components are grouped according to the **Price component** value that's set for each price component code in the list.
+1. Go to **Pricing management \> Setup \> Price component codes \> Price trees**. The **Price trees** page shows your current price structure (if you have one), and lets you add or remove price component codes in the structure. The components are grouped according to the **Price component** value that's set for each price component code in the list.
 
     [<img src="media/price-component-code-setup.png" alt="Current price structure on the Price component code setup page." title="Current price structure on the Price component code setup page" width="720" />](media/price-component-code-setup.png#lightbox)
 
@@ -44,7 +44,7 @@ To set up the price structure for a company that uses a single structure, follow
 
 ## Auto charges in single and multiple price structures
 
-Price component codes of the *Auto charges* type are handled differently, based on whether you're using a single price structure (price component code setup) or multiple price structures (price trees).
+Price component codes of the *Auto charges* type are handled differently, based on whether you're using a single price structure (Unique price tree) or multiple price structures (multiple price trees).
 
 - *If you're using a single price structure*, you can add the price component code for auto charges in the price component code setup.
 - *If you're using multiple price structures*, you can't add auto charges in the price tree structures. Instead, the system will apply the standard auto charge logic in Microsoft Dynamics 365 Supply Chain Management to determine which auto charges apply to the sales order.
