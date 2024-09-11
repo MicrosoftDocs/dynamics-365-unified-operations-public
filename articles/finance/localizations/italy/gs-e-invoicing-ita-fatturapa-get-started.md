@@ -157,22 +157,23 @@ Import the **Customer invoice context model** (version 54 or later) and **Vendor
 
 ### Set up vendor invoice import 
 
-1. In Finance, in the **Electronic reporting** workspace, in the **Configuration providers** section, mark your company's configuration provider as active.
-2. Select **Reporting configurations**.
-3. Select **Customer invoice context model**, and then select **Create configuration**.
-4. Select **Derive from Name: Customer invoice context, Microsoft** to create a derived configuration.
-5. In the **Draft** version, select **Designer**.
-6. In the **Data model** tree, select **Map model to datasource**.
-7. In the **Definitions** tree, select **DataChannel**, and then select **Designer**.
-8. In the **Data sources** tree, expand the **\$Context\_Channel** container.
-9. In the **Value** field, select **Edit**. 
-10. Enter the name of the data channel. The name should have a maximum of 10 characters. It should match the value of the **Data channel** parameter of the data channel for the Electronic invoicing feature in RCS.
-11. Save your changes, and then go to **Reporting configurations** \> **Complete configuration version**.
-12. On the **External channels** tab, in the **Channels** section, select **Add**.
-13. In the **Channel** field, enter **\$Context Channel** value.
-14. Enter values in the **Description** and **Company** fields.
-15. In the **Document context** field, select the new configuration that you derived from **Customer invoice context model**. The mapping description should be **Data channel context**.
-16. On the **Import sources** tab, select **Add**, and then set the following values:
+1. In the **Globalization Studio** workspace, select the **Electronic reporting** tile, and then select **Reporting configurations** tile.
+1. Select **Customer invoice context model**, and then select **Create configuration**.
+1. Select **Derive from Name: Customer invoice context, Microsoft** to create a derived configuration.
+1. Select the derived configuration, sand then elect **Designer** to open it for editting.
+1. Select **Map model to datasource** menu item.
+1. In the **Definitions** tree, select **DataChannel**, and then select **Designer**.
+1. In the **Data sources** tree, expand the **\$Context\_Channel** container.
+1. In the **Value** field, select **Edit**. 
+1. Enter the name of the data channel. The name should have a maximum of 10 characters. It should match the value of the **Data channel** parameter of the data channel for the Electronic invoicing feature.
+1. Save your changes, and close the form.
+1. In the **Versions** section, select **Change status** \> **Complete** to complete the derived context configuration.
+1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+1. On the **Integration channels** tab, in the **Channels** section, select **Add**.
+1. In the **Channel** field, enter **\$Context Channel** value.
+1. Enter values in the **Description** and **Company** fields.
+1. In the **Document context** field, select the new configuration that you derived from **Customer invoice context model**. The mapping name should be **Data channel context**.
+1. On the **Import sources** tab, select **Add**, and then set the following values:
 
     - **Name:** OutputFile
     - **Data entity name:** Vendor invoice header (**Data entity:** VendorInvoiceHeaderEntity)
@@ -181,7 +182,7 @@ Import the **Customer invoice context model** (version 54 or later) and **Vendor
     ![Setting up the import channel.](../media/e-invoicing-ita-fatturapa-get-started-fno-setup-2.png)
 
 > [!NOTE]
-> If you have import vendor invoices from different sources, you can create several external channels and several derived configurations that have different **\$Context Channel** values. For example, you might want to import vendor invoices for different legal entities.
+> If you have import vendor invoices from different sources, you can create several channels and several derived configurations that have different **\$Context Channel** values. For example, you might want to import vendor invoices for different legal entities.
 
 ## Proxy server setup
 
