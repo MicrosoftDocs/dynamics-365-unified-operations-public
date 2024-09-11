@@ -48,29 +48,26 @@ This section complements the the common part of electronic invoicing service con
 
 ### Create a new chain of certificates
 
-1. Sign in to RCS.
-2. In the **Globalization feature** workspace, select **Environment setup**, and then select **Service environments**.
-3. Select **Key Vault parameters**.
-4. Add links to the following certificates:
+1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+1. On the **Electronic invoicing** tab, in the **Key Vault settings** FastTab, select **Key Vault parameters**.
+1. In the **Certificates** section, select **Add** to add the following certificates:
 
     - **CAentrate.cer** (and **CAEntratetest.cer** in the case of a test environment)
     - **CAActalisOV.cer** (in the case of a production environment)
     - Client identity certificate (Usually, this certificate is generated while the user performs registration of the SDICoop service channel, and it's named SDI-12345678901, where 12345678901 is a company VAT number.)
     - Certificate for digital signature (Optional)
 
-    For more information, see the [Create a digital certificate secret](../e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) section of the "Get started with Electronic invoicing service administration" article.
-
     > [!NOTE]
     > The client identity certificate has an expiration date. Check this date, and arrange a task to obtain a new certificate when the current one is about to expire. To establish proper rotation of the certificates that are used for this integration, see the [Certificate rotation](#certificate-rotation) section of this article.
 
-5. Select **Chain of certificates**.
-6. Select **New**, enter a name (for example **SDIChainProd** or **SDIChainTest**), and then, in the **Certificates** section, add the following certificates in the order that they're listed in here:
+1. Select the **Chain of certificates** menu item.
+1. Select **New**, enter a name (for example **SDIChainProd** or **SDIChainTest**), and then, in the **Certificates** section, add the following certificates in the order that they're listed in here:
 
     1. **CAentrate.cer** (and **CAEntratetest.cer** in the case of a test environment)
     2. **CAActalisOV.cer** (in the case of a production environment)
     3. Client identity certificate
 
-7. Save your changes, and close the page.
+1. Save your changes, and close the page.
 
 ### Create a new feature
 
