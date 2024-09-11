@@ -28,11 +28,14 @@ The following illustration shows an overview of Dynamics 365 Commerce components
 
 To ensure compatibility between all Commerce components that are serviced and deployed by customers and partners, you must follow several versioning dependencies during servicing updates. The following list describes all these dependencies.
 
-- **Commerce headquarters and finance and operations apps must be on the same version as, or a later version than, Commerce Scale Unit (both cloud and self-hosted).**
+- ** Commerce Scale Unit (both cloud and self-hosted) must be on one of the serviceable releases and it has to be same as F&O app release or lower but must always be serviceable. **
 
-    For example, if Commerce headquarters and finance and operations apps are on version 10.0.30, Commerce Scale Unit must be on version 10.0.30 or earlier (for example, 10.0.29 or 10.0.28).
+- 
+    EXPAND here with examples of serviceable and non-serviceable 
 
-- **Commerce Scale Unit must be on the same version as, or an later version than, Store Commerce app, Hardware Station, and the Commerce software development kit (SDK) and associated local site configurations (such as modules, data actions, and themes).**
+   For example, if Commerce headquarters and finance and operations apps are on version 10.0.30, Commerce Scale Unit must be on version 10.0.30 or earlier (for example, 10.0.29 or 10.0.28).
+
+- ** Store Commerce app, Hardware Station, and the Commerce software development kit (SDK) and associated local site configurations (such as modules, data actions, and themes) must be on one of the serviceable releases and it has to be same as Commerce Scale Unit release or lower but must always be serviceable. **
 
     For example, if Commerce Scale Unit is on version 10.0.30, Store Commerce app, Hardware Station, and the Commerce storefront must be on version 10.0.30 or earlier (for example, 10.0.29 or 10.0.28).
 
@@ -46,16 +49,8 @@ During quality updates, no specific versioning requirements must be followed for
 
 ## Current supported versions
 
-The following table describes the current supported versions of various Commerce components as of **March 28, 2024**.
+The following table describes the current supported versions refer link here - https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases.
 
-| Component | Latest available release / component version (first release available in Sandbox) | Earliest supported release / component version |
-|---|---|---|
-| Finance and operations apps | 10.0.39 | 10.0.35 |
-| Commerce Scale Unit (cloud-hosted) | 10.0.39 / 9.49 | 10.0.35 / 9.45 |
-| Commerce module library | 10.0.39 / 9.49 | 10.0.35 / 9.45 |
-| Commerce Scale Unit (self-hosted) | 10.0.39 / 9.49 | 10.0.35 / 9.45 |
-| Modern POS | 10.0.39 / 9.49 | 10.0.35 / 9.45 |
-| Hardware Station | 10.0.39 / 9.49 | 10.0.35 / 9.45 |
 
 ## One Version requirements
 
@@ -63,31 +58,26 @@ Commerce components follow the One Version service updates. For more information
 
 ### Cloud components
 
-Customers can pause up to three consecutive updates across the following components. (Three updates correspond to approximately six calendar months.)
+For more information about how to pause service updates for Cloud components listed below, see [Pause service updates through Lifecycle Services)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
 - Commerce headquarters and finance and operations apps
 - Commerce Scale Unit (cloud-hosted)
 - Commerce SDK and associated local site configurations (such as modules, data actions, and themes)
 
-For example, customers who are currently on version 10.0.30 can pause updates to versions 10.0.31, 10.0.32, and 10.0.33. However, they must then update to version 10.0.34. In this scenario, after version 10.0.35 becomes available, version 10.0.30 is no longer supported.
-
 ### In-store components
 
-Customers can pause up to three consecutive updates across the following components.
+Following In-store components need to be within serviceable releases, as shared above, for it to be supported 
 
 - Store Commerce app for Windows, Android, and iOS
 - Sealed Commerce Scale Unit (self-hosted)
 - Sealed Hardware station
 
-### Legacy in-store components
-
-Customers can pause up to seven consecutive updates across the following components.
+[!note] Legacy in-store components are NOT supported
 
 - Commerce Scale Unit (self-hosted)
 - Modern point of sale (MPOS) and hybrid apps
-- Hardware station
-
-For example, customers who are currently on version 10.0.30 can pause updates for the released versions 10.0.31, 10.0.32, 10.0.33, 10.0.34, 10.0.35, 10.0.36 and 10.0.37. However, they must then update to version 10.0.38. In this scenario, after version 10.0.38 becomes available, version 10.0.30 is no longer supported.
+- Hardware station (Legacy)
+- Retail SDK
 
 ## Additional resources
 
