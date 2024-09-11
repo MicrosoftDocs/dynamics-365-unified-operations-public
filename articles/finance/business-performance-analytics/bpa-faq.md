@@ -7,7 +7,7 @@ ms.topic: faq
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
-ms.date: 5/20/2024
+ms.date: 9/11/2024
 ---
 
 # Business performance analytics FAQ
@@ -40,12 +40,12 @@ The following errors are likely to occur if another operation is in progress dur
 
 To maintain the accuracy of report data, Business performance analytics assesses the quality of the source data. If the assessments don't meet defined rules, Business performance analytics logs information in the **Bpa self help logs** table in Microsoft Dataverse. To learn more, see [Business performance analytics self-help](/troubleshoot/dynamics-365/finance/business-performance-analytics/business-performance-analytics-self-help-overview).
 
-Furthermore, some customers may be hitting the storage capacity limits of their Power BI Embedded SKU, preventing the Power BI dataset needed for reports to be updated. Business performance analytics uses the A3 SKU by default for Power BI Embedded, and we recommend scaling up your SKU to to raise your Power BI Embedded storage capacity. See [Capacity and SKUs in Power BI embedded analytics
-](https://learn.microsoft.com/en-us/power-bi/developer/embedded/embedded-capacity) to learn more.
+Some customers may reach the storage capacity limits of their Power BI Embedded SKU, preventing the Power BI dataset needed for reports to be updated. Business performance analytics uses the A3 SKU by default for Power BI Embedded. It's recommended to scale up your SKU to to raise your Power BI Embedded storage capacity. For more information, see [Capacity and SKUs in Power BI embedded analytics
+](../../power-bi/developer/embedded/embedded-capacity).
 
 ### Why is Business performance analytics using a lot of Managed Data Lake (MDL) storage in Dataverse?
 
-As part of the data pipeline for Business performance analytics, your data gets transformed to fit our dimensional data model. Doing so creates files that are saved to MDL. This data transformation happens every time Business performance analaytics refreshes its data, generating new files in MDL without deleting the old, obsolete ones. The old files will automatically be deleted in 30 days or manually by our team when Business performance analytics uses 50% or more of the MDL's storage capacity.
+As part of the data pipeline for Business performance analytics, your data gets transformed to fit our dimensional data model. This creates files that are saved to MDL. This data transformation happens every time Business performance analaytics refreshes its data, generating new files in MDL without deleting the old, obsolete ones. The old files are deleted in 30 days or manually by our team when Business performance analytics uses 50% or more of the MDL's storage capacity.
 
 ### When will data be available in reports after the Business performance analytics is installed for the first time?
 
