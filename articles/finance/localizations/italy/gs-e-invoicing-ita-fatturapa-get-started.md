@@ -96,12 +96,14 @@ The following procedures must be completed for all Electronic reporting (ER) for
 
 ### Set up application-specific parameters
 
-1. On the **Electronic invoicing features** page, select the feature to edit.
-2. On the **Versions** tab, verify that the **Draft** version is selected.
-3. On the **Configurations** tab, select a configuration, and then select **Application specific parameters**.
+1. In the **Globalization Studio** workspace, select the **Electronic reporting** tile, and then select the **Reporting configurations** tile.
+1. On the **Configurations** page, select the **Sales invoice (IT)** format configuration.
+3. In menu, select **Configurations** \> **Application specific parameters** \> **Setup**.
 4. In the **Lookups** section, make sure that the **List of Natura reverse charge subcategories** lookup is selected.
 5. In the **Conditions** section, select **Add**.
-6. Add specific conditions for each subcategory that is defined in the system, and then save your changes.
+6. Add specific conditions for each subcategory that is defined in the system.
+7. Change the **State** to **Completed**, save your changes, and then close the form.
+8. Repeat steps 2 through 7 for the **Project invoice (IT)** format configuration, as required.
 
     > [!NOTE]
     > In the **Name** column, you can select the **\*Blank\*** or **\*Not blank\*** placeholder value instead of a specific value.
