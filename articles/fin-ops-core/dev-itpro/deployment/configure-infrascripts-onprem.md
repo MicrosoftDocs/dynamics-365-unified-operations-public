@@ -410,6 +410,21 @@ If you only have one SQL Server machine, list only that machine.
 </SQLVMList>
 ```
 
+### EntraApplications
+
+This section contains information regarding your Microsoft Entra registered applications. You do not need to fill in any of this information as it will be automatically filled in by the scripts. If you choose to register your application manually without using the scripts, you should then fill in the **TenantId**, **ClientId**, **DisplayName**, and **ServicePrincipalOid** fields.
+
+The **TenantId** field is the Microsoft Entra tenant ID. The **ClientId** field is the application ID. The **DisplayName** field is the display name of the application. The **ServicePrincipalOid** field is the object ID of the service principal that is associated to the application.
+
+```xml
+<EntraApplication refName="LCSCommunication">
+    <TenantId></TenantId>
+    <ClientId></ClientId>
+    <DisplayName></DisplayName>
+    <ServicePrincipalOid></ServicePrincipalOid>
+</EntraApplication>
+```
+
 ## Example ConfigTemplate.xml file for Contoso Corporation
 
 Contoso Corporation fills in the ConfigTemplate.xml file based on the following information:
@@ -503,10 +518,10 @@ Even though Contoso wants to use RSAT, RSAT should only be used with *sandbox* e
 ```xml
 <Certificates>
     <Certificate type="ServiceFabric" exportable="true" generateSelfSignedCert="false" generateADCSCert="false">
-        <Name>star.contoso.com</Name>
-        <FileName>star.contoso.com</FileName>
-        <DNSName>ax.contoso.com;sf.contoso.com;*.contoso.com</DNSName>
-        <Subject>*.contoso.com</Subject>
+        <Name>sf.contoso.com</Name>
+        <FileName>sf.contoso.com</FileName>
+        <DNSName>ax.contoso.com;sf.contoso.com</DNSName>
+        <Subject>sf.contoso.com</Subject>
         <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
         <KeyUsage>DigitalSignature;KeyEncipherment</KeyUsage>
         <EnhancedKeyUsage>Server Authentication;Client Authentication</EnhancedKeyUsage>
