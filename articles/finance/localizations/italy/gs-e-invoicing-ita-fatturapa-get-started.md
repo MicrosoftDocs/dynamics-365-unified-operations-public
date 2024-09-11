@@ -71,11 +71,11 @@ This section complements the the common part of electronic invoicing service con
 
 ### Create a new feature
 
-1. Sign in to RCS.
-2. In the **Electronic reporting** workspace, in the **Configuration providers** section, mark your company's configuration provider as active.
-3. In the **Globalization feature** workspace, in the **Features** section, select the **Electronic invoicing** tile.
+1.  In the **Globalization Studio** workspace, select the **Electronic reporting** tile.
+2. In the **Configuration providers** section, mark your company's configuration provider as active.
+3. In the **Globalization Studio** workspace, select the **Electronic invoicing** tile.
 4. On the **Electronic invoicing features** page, select **Add** \> **Based on existing feature**.
-5. Under **Microsoft configuration provider**, select **Italian FatturaPA (IT)** as a base feature, enter a name, and then select **Create feature**.
+5. Under **Microsoft** configuration provider, select **Italian FatturaPA (IT)** as a base feature, enter a name, and then select **Create feature**.
 
 ### Align Electronic reporting configurations
 
