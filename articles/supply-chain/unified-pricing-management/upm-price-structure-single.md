@@ -20,8 +20,6 @@ This article explains how to configure a company to use a single price structure
 
 In this scenario, companies and price structures have a one-to-one (1:1) relationship, and the single price structure is maintianed in *Price trees* as well. The pricing engine matches each sales order with the price component codes, based on the pricing sequence that's defined in the single structure.
 
-The price component code setup is the single-structure equivalent of the price trees that are used for multiple price structures, and it provides almost all the same settings. Learn more in [Set up a company to use multiple price structures](upm-price-structure-multiple.md).
-
 ## Configure a company to use a single price structure
 
 Follow these steps to use a single price structure for a company.
@@ -46,6 +44,6 @@ To set up the price structure for a company that uses a single structure, follow
 
 Price component codes of the *Auto charges* type are handled differently, based on whether you're using a single price structure (Unique price tree) or multiple price structures (multiple price trees).
 
-- *If you're using a single price structure*, you can add the price component code for auto charges in the price component code setup.
+- *If you're using a single price structure*, you can add the price component code for auto charges in the price trees.
 - *If you're using multiple price structures*, you can't add auto charges in the price tree structures. Instead, the system will apply the standard auto charge logic in Microsoft Dynamics 365 Supply Chain Management to determine which auto charges apply to the sales order.
 
