@@ -3,16 +3,14 @@ title: Retail SDK FAQ
 description: This article summarizes answers to questions that are frequently asked by users of the Retail SDK.
 author: josaw1
 ms.date: 06/30/2021
-ms.topic: article
+ms.topic: how-to
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: global
-ms.author: josaw
+ms.author: asharchw
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: 10.0.9
 ms.custom: 
-ms.assetid: 
-ms.search.industry: Retail
+  - bap-template
 ---
 
 # Retail SDK FAQ
@@ -145,7 +143,7 @@ If the Retail SDK msbuild fails with an error noting that the .NET Framework 4.5
     +  [.NET Framework 4.5.1](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net451-developer-pack-offline-installer)
     +  [.NET Framework 4.6.2](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net451-developer-pack-offline-installer)
     
-- [Web Deploy v3.6 ](https://www.microsoft.com/download/confirmation.aspx?id=43717)
+- [Web Deploy v4.0](https://www.microsoft.com/en-us/download/details.aspx?id=106070)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
