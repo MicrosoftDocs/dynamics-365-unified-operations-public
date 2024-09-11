@@ -54,19 +54,19 @@ Detailed information about objects in finance and operations apps can be found i
 | **Status**                         | This change is effective as of Platform update 65 and Dynamics 365 Finance version 10.0.41 and later. |
 
 ### End of support for sharing storage account connection strings via public API GetCsuStorageConnectionString
-Public method: Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetCsuStorageConnectionString() will be depcrecated. Restrictions are getting added for any dependent ways by which public access to the storage account connection string is allowed. This method has been available for use in custom code; however, steps to phase it out are being done as part of our ongoing efforts to enhance security. 
+Public method: Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetCsuStorageConnectionString() will be depcrecated. Restrictions are added for any dependent ways that public access to the storage account connection string is allowed. This method is available for use in custom code. However, steps to phase it out are being done as part of our ongoing efforts to enhance security. 
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Maintaining storage connection string usage is a security issue and we want to move to a more secure approach of connecting to storage account |
-| **Replaced by another feature?**   | We will be using managed service identity based connection to storage account. Customers are advised to remove direct dependency on storage connection string and instead use public methods from SharedServiceUnitStorage. We will provide further updates and guidance on alternative approaches in the near future. |
-| **What do you need to do?**        | For new tenants, created after August 19th 2024, no action will be required on your part as you wouldn't have any dependency on this method. The connection string method will not be available to you. For existing tenants, while your current code continues to function, we advise you to start transitioning away from using this method. |
+| **Reason for deprecation/removal** | Maintaining storage connection string usage is a security issue and we want a more secure approach of connecting to storage account. |
+| **Replaced by another feature?**   | A managed service identity based connection will be used to storage account. Customers are advised to remove direct dependency on storage connection string and use public methods from SharedServiceUnitStorage. Further updates and guidance will be provided on alternative approaches in the near future. |
+| **What do you need to do?**        | For new tenants, created after August 19th 2024, no action is required as there's not a dependency on this method. The connection string method won't be available. For existing tenants, your current code continues to function, it's recommended to start transitioning away from using this method. |
 | **Product areas affected**         | Development for finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | The rollout of this change is being done in phases, region by region, starting first with sandbox environments. Following this, it will be applied in production environments. ETA for full rollout will be October 2024. |
+| **Status**                         | The rollout of this change is being done in phases, region by region, starting first with sandbox environments. Then it'll be applied in production environments. The full rollout is estimated in October 2024. |
 
 #### Note
-We have identified that you may have encountered an issue while deploying changes in your developer environment or customer hosted environment (CHE) as the flight is set to false by default. If you are getting error like- “EnableSharingOfValidStorageConnectionString is false. Fetching a valid storage connection string has been disabled” in your dev machine please follow these steps to get unblocked from the issue: 
+An issue has been identified while deploying changes in developer environments or customer hosted environments (CHE) as the flight is set to false by default. If you're receiving the following error in your developer machine: “EnableSharingOfValidStorageConnectionString is false. Fetching a valid storage connection string has been disabled”, follow these steps to get unblocked: 
 a) Execute the below query in SSMS: 
 declare @flightName NVARCHAR(100) = 'EnableSharingOfValidStorageConnectionString';  
 IF NOT EXISTS (SELECT TOP 1 1 FROM SysFlighting WHERE flightName = @flightName)  
