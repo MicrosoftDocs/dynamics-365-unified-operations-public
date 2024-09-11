@@ -1,5 +1,5 @@
 ---
-title: Configure Lifecycle Services connectivity for Microsoft Dynamics 365 Finance + Operations (On-Premises) deployments
+title: Configure Lifecycle Services connectivity for Microsoft Dynamics 365 Finance + Operations (on-premises) deployments
 description: Learn how to configure your tenant to allow your local agent to authenticate with Lifecycle Services.
 author: faix
 ms.author: osfaixat
@@ -13,7 +13,7 @@ ms.search.validFrom: 2024-09-10
 ms.dyn365.ops.version: Platform update 64
 ---
 
-# Configure Lifecycle Services connectivity for Microsoft Dynamics 365 Finance + Operations (On-Premises) deployments
+# Configure Lifecycle Services connectivity for Microsoft Dynamics 365 Finance + Operations (on-premises) deployments
 
 An on-premises local agent is used to orchestrate deployment and servicing of Finance + Operations through LCS. To establish connectivity from LCS to the Finance + Operations tenant, you must configure a certificate that enables the local agent to act on behalf of your Microsoft Entra tenant (for example, contoso.onmicrosoft.com).
 
@@ -23,11 +23,11 @@ Use the on-premises agent certificate that you acquired from a CA or the self-si
 
 ### First time setup
 
-The user who runs this script must have privileges to create Entra applications in their tenant. The script will create a new application and service principal in the tenant. Finally, the script will also register a certificate to be used as the credential with which to authenticate.
+The user who runs this script must have privileges to create Microsoft Entra applications in their tenant. The script creates a new application and service principal in the tenant. Finally, the script also registers a certificate to be used as the credential with which to authenticate.
 
-It is recommended that every environment have its own Entra application, service principal and certificate. This helps reduce the blast radius in case of a security incident due to a compromised certificate.
+To help reduce the impact of a security incident due to a compromised certificate, it's recommended that every environment have its own Microsoft Entra application, service principal, and certificate.
 
-1. Run the following command to create the Entra application, service principal and register the certificate:
+1. Run the following command to create the Microsoft Entra application, service principal and register the certificate:
     
     ```powershell
     # If you have issues downloading the Azure PowerShell Az module, run the following:
@@ -46,7 +46,7 @@ It is recommended that every environment have its own Entra application, service
 
 ### Certificate renewal
 
-Eventually, your certificate will expire. When that happens, you will need to renew the certificate and update the service principal with the new certificate. The following steps will guide you through the process.
+Eventually, your certificate will expire. When that happens, you need to renew the certificate and update the service principal with the new certificate. The following steps guide you through the process.
 
 1. Renew the certificate using the same process you used to create the original certificate.
 1. Run the following command to update the service principal with the new certificate:
@@ -66,13 +66,13 @@ To validate that the certificate is correctly registered, run the following comm
 ## Deprecated authentication process (ERP Service Principal)
 
 > [!NOTE]
-> The following steps are for the deprecated authentication process. This process will still be supported for a limited time and will be retired in the near future. If you are using the new authentication process, see the [New authentication process](onprem-auth-lcs#new-authentication-process) section.
+> The following steps are for the deprecated authentication process. This process is supported for a limited time and will be retired in the near future. If you are using the new authentication process, see the *New authentication process (Bring-your-own Microsoft Entra Service Principal)* section earlier in this article.
 
-Only user accounts that have the Global Administrator directory role can add certificates to ERP service principal. By default, the person who signs up for Microsoft 365 for your organization is the global administrator for the directory. If you are not the global administrator, you must work with the global administrator to complete the following steps.
+Only user accounts that have the Global Administrator directory role can add certificates to ERP service principal. By default, the person who signs up for Microsoft 365 for your organization is the global administrator for the directory. If you aren't the global administrator, you must work with the global administrator to complete the following steps.
 
 > [!IMPORTANT]
 > - You must configure the certificate exactly **one** time per tenant. All on-premises environments under the same tenant must use the same certificate to connect with LCS.
-> - If you run the script below on a server machine (for example, a machine that is running Windows Server 2019), you must temporarily turn off the Internet Explorer Enhanced Security Configuration. Otherwise, the content on the Azure sign-in page will be blocked.
+> - If you run the following script on a server machine (for example, a machine that is running Windows Server 2019), you must temporarily turn off the Internet Explorer Enhanced Security Configuration. Otherwise, the content on the Azure sign-in page is blocked.
 
 1. Sign in to the customer's [Azure portal](https://portal.azure.com) to verify that you have the Global Administrator directory role.
 2. From the **infrastructure** folder, run the following commands to determine whether the certificate is already registered.
