@@ -1,7 +1,7 @@
 --- 
 title: Define channel attributes
 description: Enrich the channel by adding channel and product attributes. 
-author: josaw1
+author: mariash529
 ms.date: 06/20/2024
 ms.topic: how-to
 ms.search.form: RetailInternalOrganization, EcoResAttributeGroup, EcoResAttributeGroupAttribute, RetailAddChannelItems, RetailCatalogProductAttributeValue, RetailMedia   
