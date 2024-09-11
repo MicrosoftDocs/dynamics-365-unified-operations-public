@@ -145,20 +145,13 @@ The following procedures must be completed for all Electronic reporting (ER) for
 
 Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
-### Set up Finance
+### Configure Electronic document parameters
 
-#### Import Electronic reporting configurations
-
-1. Sign in to your Finance environment.
-2. In the **Electronic reporting** workspace, in the **Configuration providers** section, select the **Microsoft** tile.
-3. Select **Repositories** \> **Global** \> **Open**.
-4. Select and import the **Customer invoice context model** (version 54 or later), **Invoice model mapping**, and **Vendor invoice import (IT)** configurations.
-
-#### Configure Electronic document parameters
+Import the **Customer invoice context model** (version 54 or later) and **Vendor invoice import (IT)** Electronic Reporting configurations from the repository. For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
 2. On the **Features** tab, find and select the **Italian electronic invoice** feature, and then select **Enable**.
-3. On the **Electronic document** tab, make sure that the fields for **Customer invoice journal** and **Project invoice** are set according to the information in [Configure the application setup](../e-invoicing-get-started.md#configure-the-application-setup).
+3. On the **Electronic document** tab, make sure that the fields for **Customer invoice journal** and **Project invoice** are set according to the information in [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
     ![Setting up Electronic document parameters.](../media/e-invoicing-ita-fatturapa-get-started-fno-setup-1.png)
 
