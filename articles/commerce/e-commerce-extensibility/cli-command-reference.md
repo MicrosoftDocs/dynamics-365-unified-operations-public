@@ -37,7 +37,7 @@ yarn start <--verbose>
 
 This command builds and launches the Node server using the port defined in the .env file.
 
-The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
+The `--verbose` option is used to provide more verbose debugging output in the command prompt window.
 
 **Examples**
 
@@ -59,7 +59,7 @@ yarn build <--verbose>
 
 This command performs a complete build on the customization code.
 
-The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
+The `--verbose` option is used to provide more verbose debugging output in the command prompt window.
 
 **Examples**
 
@@ -81,8 +81,8 @@ yarn msdyn365 add-component-override <themeName> <componentName> <--list-compone
 
 This command adds a component to the specified theme component folder. The component can then be modified as desired from that folder.
 
-- The **--list-components** option is used to show a list of components.
-- The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
+- The `--list-components` option is used to show a list of components.
+- The `--verbose` option is used to provide more verbose debugging output in the command prompt window.
 
 **Examples**
 
@@ -104,7 +104,7 @@ yarn msdyn365 add-data-action <action-name> <--verbose>
 
 This command adds a template data action to the root/src/actions folder.
 
-The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
+The `--verbose` option is used to provide more verbose debugging output in the command prompt window.
 
 **Example**
 
@@ -122,7 +122,7 @@ yarn msdyn365 add-module <module-name> <--verbose>
 
 This command adds a module to the root/src/modules folder. Module names are case-insensitive. 
 
-The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
+The `--verbose` option is used to provide more verbose debugging output in the command prompt window.
 
 **Example**
 
@@ -140,7 +140,7 @@ yarn msdyn365 add-theme <theme-name> <--verbose>
 
 This command adds a theme to the root/src/themes folder.
 
-The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
+The `--verbose` option is used to provide more verbose debugging output in the command prompt window.
 
 **Example**
 
@@ -158,7 +158,7 @@ yarn msdyn365 add-view-extension <theme-name> <Module-name> <--verbose>
 
 This command adds a module view extension to the root/src/themes/\<theme-name\>/views folder. The theme can then add more module definition items, such as configurations, resources, and slots.
 
-The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
+The `--verbose` option is used to provide more verbose debugging output in the command prompt window.
 
 **Example**
 
@@ -176,7 +176,7 @@ yarn msdyn365 clone <module-library-module-name> <new-module-name> <--verbose>
 
 This command creates a renamed copy of a module library module and adds the source code to the local root/src/modules folder.
 
-The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
+The `--verbose` option is used to provide more verbose debugging output in the command prompt window.
 
 **Example**
 
@@ -194,7 +194,7 @@ yarn msdyn365 create-request-hook <--verbose>
 
 This command creates a request pipeline plug-in hook file (**src/requestHooks/initialRequest.hook.ts**). The request pipeline plug-in hook file provides the ability to intercept the rendering request that is sent to the **root/src/modules** folder on the Node server.
 
-The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
+The `--verbose` option is used to provide more verbose debugging output in the command prompt window.
 
 **Example**
 
@@ -212,10 +212,10 @@ yarn msdyn365 optimize-module-css <themeName> --requiredStyles=<requiredStylesFo
 
 This command optimizes styles for the [module CSS optimization](module-css-optimization.md) feature by creating the necessary file structure.  Styles still must be updated within the individual **\<MODULE_NAME\>.scss** files for specific modules.
 
-- The **--requiredStyles** option is used to specify the folder names of required/abstract styles.
-- The **--componentStyles** option is used to provide the folder names of component styles. 
-- The **--assetFiles** option is used to provide the file names where style assets are being used. 
-- The **--assetVar** option is used to provide variable names that describe the path to asset files without using the `$` character.
+- The `--requiredStyles` option is used to specify the folder names of required/abstract styles.
+- The `--componentStyles` option is used to provide the folder names of component styles. 
+- The `--assetFiles` option is used to provide the file names where style assets are being used. 
+- The `--assetVar` option is used to provide variable names that describe the path to asset files without using the `$` character.
 
 **Example**
 
@@ -235,7 +235,7 @@ This command creates a package of the local site configurations (modules, data a
 
 The output is a zip file in the directory that the command was run from. The file name is built by using the name and version that are found in your SDK package.json file. For example, a zip file might be named **\@msdyn365-commerce-partners-fabrikam-1.2.73.zip**.
 
-The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
+The `--verbose` option is used to provide more verbose debugging output in the command prompt window.
 
 **Example**
 
