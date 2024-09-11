@@ -70,7 +70,7 @@ Finance + Operations bits are distributed through Microsoft Dynamics Lifecycle S
 
 ## Authentication
 
-The on-premises application works with AD FS. To interact with LCS, you must also configure Microsoft Entra ID. To complete the deployment and configure the LCS local agent, you must have Microsoft Entra ID. If you don't already have an Microsoft Entra tenant, you can get one for free by using one of the options that Microsoft Entra ID provides. For more information, see [Quickstart: Set up a tenant](/azure/active-directory/develop/active-directory-howto-tenant).
+The on-premises application works with AD FS. To interact with LCS, you must also configure Microsoft Entra ID. To complete the deployment and configure the LCS local agent, you must have Microsoft Entra ID. If you don't already have a Microsoft Entra tenant, you can get one for free by using one of the options that Microsoft Entra ID provides. For more information, see [Quickstart: Set up a tenant](/azure/active-directory/develop/active-directory-howto-tenant).
 
 ## Standalone Service Fabric
 
@@ -112,7 +112,7 @@ For more information, see [System requirements for on-premises deployments](../.
 
 Plan your infrastructure and Service Fabric cluster, based on the recommended sizing in [Hardware sizing requirements for on-premises environments](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md). For more information about how to plan the Service Fabric cluster, see [Plan and prepare your Service Fabric standalone cluster deployment](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
-The following table shows an example of a hardware layout. This example is used throughout this article to demonstrate the setup. When you complete the setup, you will have to replace the machine names and IP addresses that are provided in the following instructions with the names and IP addresses for the machines in your environment.
+The following table shows an example of a hardware layout. This example is used throughout this article to demonstrate the setup. When you complete the setup, you have to replace the machine names and IP addresses that are provided in the following instructions with the names and IP addresses for the machines in your environment.
 
 > [!NOTE]
 > The Primary node of the Service Fabric cluster must have at least three nodes. In this example, **OrchestratorType** is designated as the Primary node type. If you have a node type that has more than three VMs, consider making that node type your Primary (Seed) node type to help increase the reliability of the cluster. 
@@ -225,7 +225,7 @@ For example, if your company's domain is contoso.com, your zone for Finance + Op
 
 Secure Sockets Layer (SSL) certificates are required to secure a Service Fabric cluster and all the applications that are deployed. For your production and sandbox workloads, we recommend that you acquire certificates from a certificate authority (CA) such as [DigiCert](https://www.digicert.com/ssl-certificate/), [Comodo](https://ssl.comodo.com/), [Symantec](https://www.websecurity.symantec.com/ssl-certificate), [GoDaddy](https://www.godaddy.com/web-security/ssl-certificate), or [GlobalSign](https://www.globalsign.com/en/ssl/). If your domain is set up with [AD CS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772393(v=ws.10)), you can use the Microsoft setup scripts to create the templates and certificates. Each certificate must contain a private key that was created for key exchange, and it must be exportable to a Personal Information Exchange (.pfx) file.
 
-Self-signed certificates can be used only for testing purposes. For the sake of convenience, the setup scripts that are provided in LCS include scripts that generate and export self-signed certificates. If you're using self-signed scripts, you will be instructed to run the creation scripts during later steps in this article. As has been mentioned, these certificates can be used only for testing purposes.
+Self-signed certificates can be used only for testing purposes. For the sake of convenience, the setup scripts that are provided in LCS include scripts that generate and export self-signed certificates. If you're using self-signed scripts, you are instructed to run the creation scripts during later steps in this article. As has been mentioned, these certificates can be used only for testing purposes.
 
 > [!IMPORTANT]
 > Microsoft plans to discontinue support for the generation of self-signed certificates through the setup scripts, in favor of automatic certificate creation through AD CS.
@@ -247,7 +247,7 @@ Self-signed certificates can be used only for testing purposes. For the sake of 
 | SQL Server SSL certificate                   | This certificate is used to encrypt data that is transmitted across a network between an instance of SQL Server and a client application. | <p>The domain name of the certificate should match the fully qualified domain name (FQDN) of the SQL Server instance or listener. For example, if the SQL listener is hosted on machine LBDEN01SQLA01, the certificate's Domain Name System (DNS) name is LBDEN01SQLA01.contoso.com.</p><ul><li>**Common name (CN):** LBDEN01SQLA01.contoso.com</li><li>**DNS name:** LBDEN01SQLA01.contoso.com</li></ul> |
 | Service Fabric Server certificate            | This certificate is used to help secure the node-to-node communication between the Service Fabric nodes. It's also used as the server certificate that is presented to the client that connects to the cluster. | <p>For this certificate, you can also use the wildcard SSL certificate for your domain, such as \*.contoso.com. (For more information, see the text that follows this table.) Otherwise, use the following values:</p><ul><li>**CN:** sf.d365ffo.onprem.contoso.com</li><li>**DNS name:** sf.d365ffo.onprem.contoso.com</li></ul> |
 | Service Fabric Client certificate            | Clients use this certificate to view and manage the Service Fabric cluster. | <ul><li>**CN:** client.d365ffo.onprem.contoso.com</li><li>**DNS name:** client.d365ffo.onprem.contoso.com</li></ul> |
-| Encipherment certificate                     | This certificate is used to encrypt sensitive information such as the SQL Server password and user account passwords. | <p>The certificate must be created by using the **Microsoft Enhanced Cryptographic Provider v1.0** provider.</p><p>The certificate key usage must include Data Encipherment (10), and should not include server authentication or client authentication.</p><p>For more information, see [Managing secrets in Service Fabric applications](/azure/service-fabric/service-fabric-application-secret-management).</p><ul><li>**CN:** axdataenciphermentcert</li><li>**DNS name:** axdataenciphermentcert</li></ul> |
+| Encipherment certificate                     | This certificate is used to encrypt sensitive information such as the SQL Server password and user account passwords. | <p>The certificate must be created by using the **Microsoft Enhanced Cryptographic Provider v1.0** provider.</p><p>The certificate key usage must include Data Encipherment (10), and shouldn't include server authentication or client authentication.</p><p>For more information, see [Managing secrets in Service Fabric applications](/azure/service-fabric/service-fabric-application-secret-management).</p><ul><li>**CN:** axdataenciphermentcert</li><li>**DNS name:** axdataenciphermentcert</li></ul> |
 | AOS SSL certificate                          | <p>This certificate is used as the server certificate that is presented to the client for the AOS website. It's also used to enable Windows Communication Foundation (WCF)/Simple Object Access Protocol (SOAP) certificates.</p> | <p>You can use the same wildcard SSL certificate that you used as the Service Fabric server certificate. Otherwise, use the following values:</p><ul><li>**CN:** ax.d365ffo.onprem.contoso.com</li><li>**DNS name:** ax.d365ffo.onprem.contoso.com</li></ul> |
 | Session Authentication certificate           | AOS uses this certificate to help secure a user's session information. | <p>This certificate is also the File Share certificate that will be used at the time of deployment from LCS.</p><ul><li>**CN:** SessionAuthentication</li><li>**DNS name:** SessionAuthentication </li></ul> |
 | Data Encryption certificate                  | AOS uses this certificate to encrypt sensitive information. | <ul><li>**CN:** DataEncryption</li><li>**DNS name:** DataEncryption</li></ul> |
@@ -255,11 +255,11 @@ Self-signed certificates can be used only for testing purposes. For the sake of 
 | Financial Reporting Client certificate       | This certificate is used to help secure the communication between the Financial Reporting services and AOS. | <ul><li>**CN:** FinancialReporting</li><li>**DNS name:** FinancialReporting</li></ul> |
 | Reporting certificate                        | This certificate is used to help secure the communication between SSRS and AOS.| <p>**Important:** Do **not** reuse the Financial Reporting Client certificate.</p><ul><li>**CN:** ReportingService</li><li>**DNS name:** ReportingService</li></ul> |
 | SSRS Web Server certificate                  | This certificate is used as the server certificate that is presented to the client (AOS) for the SSRS web server. | <p>The domain name of the certificate should match the FQDN of the SSRS node.</p><ul><li>**CN:** BI1.contoso.com</li><li>**DNS name:** BI1.contoso.com</li></ul>
-| On-Premises local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that is hosted on-premises and on LCS. It enables the local agent to act on behalf of your Microsoft Entra tenant, and to communicate with LCS to orchestrate and monitor deployments.</p><p>**Note:** Only one on-premises local agent certificate is required for a tenant.</p> | <ul><li>**CN:** OnPremLocalAgent</li><li>**DNS name:** OnPremLocalAgent</li></ul> |
+| On-premises local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that is hosted on-premises and on LCS. It enables the local agent to act on behalf of your Microsoft Entra tenant, and to communicate with LCS to orchestrate and monitor deployments.</p><p>**Note:** Only one on-premises local agent certificate is required for a tenant.</p> | <ul><li>**CN:** OnPremLocalAgent</li><li>**DNS name:** OnPremLocalAgent</li></ul> |
 
 You can use the wildcard SSL certificate for your domain to combine the Service Fabric Server certificate and the AOS SSL certificate.
 
-Here is an example of a Service Fabric Server certificate that is combined with an AOS SSL certificate.
+Here's an example of a Service Fabric Server certificate that is combined with an AOS SSL certificate.
 
 #### Subject name
 
@@ -293,11 +293,11 @@ You must create several user or service accounts for Finance + Operations to wor
 | AOS SQL DB Admin user                                   | SQL user | Finance + Operations uses this user to authenticate with SQL\*\*. This user will also be replaced by the gMSA user in upcoming releases\*\*\*. | AXDBAdmin |
 | Local Deployment Agent Service Account                  | gMSA | The local agent uses this account to orchestrate the deployment on various nodes. | Contoso\\Svc-LocalAgent$ |
 
-\* These accounts should not have their regional settings changed. They should have the default EN-US region settings. 
+\* These accounts shouldn't have their regional settings changed. They should have the default EN-US region settings. 
 
 \*\* If the password of the SQL user contains special characters, you might encounter issues during deployment.
 
-\*\*\* The SQL user name and password for SQL authentication are secured because they are encrypted and stored in the file share.
+\*\*\* The SQL user name and password for SQL authentication are secured because they're encrypted and stored in the file share.
 
 ### <a name="createdns"></a>Step 4. Create DNS zones and add A records
 
@@ -510,7 +510,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 3. If you're using SSL certificates that were previously generated, skip certificate generation, and update the thumbprints in the **ConfigTemplate.xml** file. The certificates can be installed in the **CurrentUser\\My** or **LocalMachine\\My** certificate stores. Additionally, their private keys must be exportable.
 
     > [!WARNING]
-    > Because of a leading non-printable special character, the presence of which is difficult to determine, the Certificate Manager tool (certlm.msc) should not be used to copy thumbprints on Windows Server 2016. If the non-printable special character is present, you will receive the following error message: "X509 certificate not valid." To retrieve the thumbprints, see the results from Windows PowerShell commands, or run the following commands in Windows PowerShell.
+    > Because of a leading non-printable special character, the presence of which is difficult to determine, the Certificate Manager tool (certlm.msc) shouldn't be used to copy thumbprints on Windows Server 2016. If the non-printable special character is present, you receive the following error message: "X509 certificate not valid." To retrieve the thumbprints, see the results from Windows PowerShell commands, or run the following commands in Windows PowerShell.
     >
     > ```powershell
     > dir cert:\CurrentUser\My
@@ -585,7 +585,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
     ```
 
     > [!NOTE]
-    > The scripts will install/require different versions according to the version of D365 Finance + Operations that you deploy. Specify the application version that you will deploy so that the scripts correctly configure your environment for the version you are deploying. If you will be deploying application 10.0.17 with platform update 41, you should specify 10.0.17 for the D365FOVersion parameter.
+    > The scripts will install/require different versions according to the version of D365 Finance + Operations that you deploy. Specify the application version that you will deploy so that the scripts correctly configure your environment for the version you are deploying. If you are deploying application 10.0.17 with platform update 41, you should specify 10.0.17 for the D365FOVersion parameter.
 
 2. Download the following Microsoft Windows Installers (MSIs) into a file share that can be accessed by all VMs. For example, use the same file share where you put your **Infrastructure** folder.
 
@@ -612,7 +612,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
 > - The following procedure requires execution on multiple VMs. However, to simplify the process, you can use the remoting scripts that are provided. These scripts let you run the required scripts from a single machine, such as the same machine that is used to run the **.\\Export-Scripts.ps1** command. When the remoting scripts are available, they are declared after a **\# If Remoting** comment in the Windows PowerShell sections. If you use the remoting scripts, you might not have to run the remaining scripts in a section. In these cases, see the section text.
 > - Remoting uses [WinRM](/windows/win32/winrm/portal). In some cases, it requires that [CredSSP](/windows/win32/secauthn/credential-security-support-provider) be enabled. The remoting module enables and disables CredSSP on an execution-by-execution basis. We recommend that you disable CredSSP when it isn't used. Otherwise, there is a risk of credential theft. When you've completed the setup, see the [Tear down CredSSP, if remoting was used](#teardowncredssp) section later in this article.
 
-1. Copy the contents of each **infrastructure\\VMs\\\<VMName\>** folder to the corresponding VM. (If the remoting scripts are used, they will automatically copy the contents to the target VMs.) Then run the following command as an administrator.
+1. Copy the contents of each **infrastructure\\VMs\\\<VMName\>** folder to the corresponding VM. (If the remoting scripts are used, they automatically copy the contents to the target VMs.) Then run the following command as an administrator.
 
     ```powershell
     # Install prereq software on the VMs.
@@ -690,10 +690,10 @@ Next, follow these steps for each VM, or use remoting from a single machine.
 
 ### <a name="configurelcs"></a>Step 15. Configure LCS connectivity for the tenant
 
-Authentication with Lifecycle Services is required to deploy Finance + Operations (on-premises). For more information, see [Configure Lifecycle Services connectivity for Microsoft Dynamics 365 Finance + Operations (On-Premises) deployments](./onprem-auth-lcs.md).
+Authentication with Lifecycle Services is required to deploy Finance + Operations (on-premises). For more information, see [Configure Lifecycle Services connectivity for Microsoft Dynamics 365 Finance + Operations (on-premises) deployments](./onprem-auth-lcs.md).
 
 > [!IMPORTANT]
-> Authentication with Lifecycle Services is changing. To ensure that you can continue to deploy Finance + Operations (on-premises), you must update your authentication method. For more information, see [Configure Lifecycle Services connectivity for Microsoft Dynamics 365 Finance + Operations (On-Premises) deployments](./onprem-auth-lcs.md).
+> Authentication with Lifecycle Services is changing. To ensure that you can continue to deploy Finance + Operations (on-premises), you must update your authentication method. For more information, see [Configure Lifecycle Services connectivity for Microsoft Dynamics 365 Finance + Operations (on-premises) deployments](./onprem-auth-lcs.md).
 
 ### <a name="configuresqlcert"></a>Step 16. Configure the SQL Server certificate
 
@@ -779,7 +779,7 @@ You can verify that everything has been configured correctly by running the foll
 1. Make sure that the database section in the **infrastructure\\ConfigTempate.xml** file is correctly configured with the following information:
 
     - The database name.
-    - The database file and log settings. The database settings should not be lower than the default values that are specified.
+    - The database file and log settings. The database settings shouldn't be lower than the default values that are specified.
     - The path of the backup file that you downloaded earlier. The default name of the Finance + Operations database is **AXDB**.
 
     > [!IMPORTANT]
@@ -875,16 +875,16 @@ You can verify that everything has been configured correctly by running the foll
     .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Create
     ```
 
-    The script will prompt you to enter several credentials:
+    The script prompts you to enter several credentials:
 
-    - **AccountPassword** – The encrypted domain user password for the AOS domain user (**contoso\\axserviceuser**). If you're deploying by using a recent base deployment where a gMSA account is used instead of the domain user, this prompt will be skipped. However, the script will create a placeholder value, because the installers will still look for it. Microsoft will address this issue in a future update.
+    - **AccountPassword** – The encrypted domain user password for the AOS domain user (**contoso\\axserviceuser**). If you're deploying by using a recent base deployment where a gMSA account is used instead of the domain user, this prompt is skipped. However, the script creates a placeholder value, because the installers still look for it. Microsoft will address this issue in a future update.
     - **SqlUser** – The encrypted SQL user (**axdbadmin**) that has access to the Finance + Operations database (**AXDB**).
     - **SqlPassword** – The encrypted SQL password.
     
     > [!NOTE]
-    > The script will automatically put the Credentials.json file in the SMB file share (**\\\\AX7SQLAOFILE1\\agent\\Credentials\\Credentials.json**).
+    > The script automatically puts the Credentials.json file in the SMB file share (**\\\\AX7SQLAOFILE1\\agent\\Credentials\\Credentials.json**).
     >
-    > The script will request the credentials that are required for the Entity Store feature, but this request can be skipped. For more information, see [PowerBI.com integration with on-premises environments](../analytics/entity-store-on-prem.md).
+    > The script requests the credentials that are required for the Entity Store feature, but this request can be skipped. For more information, see [PowerBI.com integration with on-premises environments](../analytics/entity-store-on-prem.md).
 
 ### <a name="configureadfs"></a>Step 19. Configure AD FS
 
@@ -908,7 +908,7 @@ Finance + Operations requires additional configuration of AD FS, beyond the defa
 
 2. You should disable Windows Integrated Authentication (WIA) for intranet authentication connections, unless you've configured AD FS for mixed environments. For more information about how to configure WIA so that it can be used with AD FS, see [Configure browsers to use Windows Integrated Authentication (WIA) with AD FS](/windows-server/identity/ad-fs/operations/configure-ad-fs-browser-wia).
 
-    This command is related to using forms authentication upon sign-in to the Finance + Operations client. Other options, such as single sign-on, are not supported.
+    This command is related to using forms authentication upon sign-in to the Finance + Operations client. Other options, such as single sign-on, aren't supported.
 
     ```powershell
     Set-AdfsGlobalAuthenticationPolicy -PrimaryIntranetAuthenticationProvider FormsAuthentication, MicrosoftPassportAuthentication
@@ -939,7 +939,7 @@ Finance + Operations requires additional configuration of AD FS, beyond the defa
 
 Before AD FS can trust Finance + Operations for the exchange of authentication, various application entries must be registered under an AD FS application group in AD FS. To speed up the setup process and help reduce errors, you can use the Publish-ADFSApplicationGroup.ps1 script for registration. Run the script by using a user account that has enough permissions to administer AD FS. (For example, use an administrator account.)
 
-For more information about how to use the script, see the documentation that is listed in the script. Make a note of the client IDs that are specified in the output, because you will need this information in LCS later. If you lose the client IDs, sign in to the machine where AD FS is installed, open Server Manager, and go to **Tools** \> **AD FS Management** \> **Application Groups** \> **Microsoft Dynamics 365 for Operations On-premises**. You can find the client IDs under the native applications.
+For more information about how to use the script, see the documentation that is listed in the script. Make a note of the client IDs that are specified in the output, because you need this information in LCS later. If you lose the client IDs, sign in to the machine where AD FS is installed, open Server Manager, and go to **Tools** \> **AD FS Management** \> **Application Groups** \> **Microsoft Dynamics 365 for Operations On-premises**. You can find the client IDs under the native applications.
 
 > [!NOTE]
 > If you want to reuse your previously configured AD FS server for additional environments, see [Reuse the same AD FS instance for multiple environments](./onprem-reuseadfs.md).
@@ -960,7 +960,7 @@ Finally, verify that you can access the AD FS OpenID configuration URL on a Serv
 .\Install-ADFSCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
 ```
 
-If you can access the URL, a JavaScript Object Notation (JSON) file is returned. This file contains your AD FS configuration, and it will indicate that your AD FS URL is trusted.
+If you can access the URL, a JavaScript Object Notation (JSON) file is returned. This file contains your AD FS configuration, and it indicates that your AD FS URL is trusted.
 
 You've now completed the setup of the infrastructure. The following sections describe how to set up your connector and deploy your Finance + Operations environment in LCS.
 
