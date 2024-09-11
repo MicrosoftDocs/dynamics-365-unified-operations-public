@@ -83,12 +83,16 @@ The following procedures must be completed for all Electronic reporting (ER) for
 
 #### Set up payment method substitution
 
-1. On the **Electronic invoicing features** page, select the feature to edit.
-2. On the **Versions** tab, verify that the **Draft** version is selected.
-3. On the **Configurations** tab, select a configuration, and then select **Edit**.
-4. On the **Mapping** tab, select **$PaymentMethodSubstitution**, and then select **Edit** \> **Edit formula**.
-5. Align the formula to the payment methods that are configured in the Finance app.
-6. Save your changes, close the formula designer, and then select **OK**.
+1. In the **Globalization Studio** workspace, select the **Electronic reporting** tile, and then select the **Reporting configurations** tile.
+1. On the **Configurations** page, select the **Sales invoice (IT)** format configuration.
+1. In the **Versions** section, verify that the **Draft** version is selected.
+1. Select the **Designer** menu item.
+1. On the **Mapping** tab, select **$PaymentMethodSubstitution**, and then select **Edit** \> **Edit formula**.
+1. Align the formula to the payment methods that are configured in the Microsoft Dynamics 365 Finance.
+1. Save your changes, close the formula designer, and then select **OK**.
+1. Save the entire **Sales invoice (IT)** format configuration and close the **Designer** form.
+1. In the **Versions** section, select **Change status** \> **Complete** to complete the **Sales invoice (IT)** format configuration.
+1. Repeat steps 2 through 9 for the **Project invoice (IT)** format configuration, as required.
 
 ### Set up application-specific parameters
 
