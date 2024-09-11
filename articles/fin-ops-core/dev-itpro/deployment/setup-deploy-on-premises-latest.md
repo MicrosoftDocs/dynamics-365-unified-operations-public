@@ -264,7 +264,7 @@ To reduce the amount of certificates required, you can combine the Service Fabri
 #### Subject name
 
 ```Text
-CN = ax.d365ffo.onprem.contoso.com
+CN = sf.d365ffo.onprem.contoso.com
 ```
 
 #### Subject alternative names

@@ -153,10 +153,10 @@ The certificate of the **ServiceFabric** type is your combined certificate that 
 
 ```xml
 <Certificate type="ServiceFabric" exportable="true" generateSelfSignedCert="false" generateADCSCert="true">
-    <Name>ax.lab.local</Name>
-    <FileName>ax.lab.local</FileName>
+    <Name>sf.lab.local</Name>
+    <FileName>sf.lab.local</FileName>
     <DNSName>ax.lab.local;sf.lab.local</DNSName>
-    <Subject>ax.lab.local</Subject>
+    <Subject>sf.lab.local</Subject>
     <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
     <KeyUsage>DigitalSignature;KeyEncipherment</KeyUsage>
     <EnhancedKeyUsage>Server Authentication;Client Authentication</EnhancedKeyUsage>
