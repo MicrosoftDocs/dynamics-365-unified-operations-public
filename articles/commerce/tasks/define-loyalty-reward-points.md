@@ -3,13 +3,15 @@ title: Define loyalty reward points
 description: This article describes how to define loyalty reward points in Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 05/28/2024
-ms.topic: article
+ms.topic: how-to
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: mashneer
+ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.search.form: RetailLoyaltyRewardPoints
+ms.custom: 
+  - bap-template
 ---
 # Define loyalty reward points
 
