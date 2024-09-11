@@ -149,14 +149,14 @@ When the **ProtectTo** field for a certificate is set, common practice is to spe
 </Certificate>
 ```
 
-The certificate of the **ServiceFabric** type is your wildcard certificate that protects your cluster and is presented by other services that are hosted in the cluster. The **Name** field is mapped to the friendly name of a certificate. The **FileName** field is used to give the certificate a file name when exported. The **DNSName** field is mapped to the subject alternative names (SANs) of a certificate. The **Subject** field is mapped to the subject name (also known as the common name) of the certificate. Never update the **Provider**, **KeyUsage**, **EnhancedKeyUsage**, and **CertificateType** fields, because they're hard-coded as required to correctly generate the certificate. If you update those fields, there's no guarantee that the certificate works, or that the scripts themselves support the specified values.
+The certificate of the **ServiceFabric** type is your combined certificate that protects your cluster and is presented by other services that are hosted in the cluster. The **Name** field is mapped to the friendly name of a certificate. The **FileName** field is used to give the certificate a file name when exported. The **DNSName** field is mapped to the subject alternative names (SANs) of a certificate. The **Subject** field is mapped to the subject name (also known as the common name) of the certificate. Never update the **Provider**, **KeyUsage**, **EnhancedKeyUsage**, and **CertificateType** fields, because they're hard-coded as required to correctly generate the certificate. If you update those fields, there's no guarantee that the certificate works, or that the scripts themselves support the specified values.
 
 ```xml
 <Certificate type="ServiceFabric" exportable="true" generateSelfSignedCert="false" generateADCSCert="true">
-    <Name>star.lab.local</Name>
-    <FileName>star.lab.local</FileName>
-    <DNSName>ax.lab.local;sf.lab.local;*.lab.local</DNSName>
-    <Subject>*.lab.local</Subject>
+    <Name>ax.lab.local</Name>
+    <FileName>ax.lab.local</FileName>
+    <DNSName>ax.lab.local;sf.lab.local</DNSName>
+    <Subject>ax.lab.local</Subject>
     <Provider>Microsoft Enhanced RSA and AES Cryptographic Provider</Provider>
     <KeyUsage>DigitalSignature;KeyEncipherment</KeyUsage>
     <EnhancedKeyUsage>Server Authentication;Client Authentication</EnhancedKeyUsage>
