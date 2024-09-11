@@ -6,7 +6,7 @@ ms.author: osfaixat
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/19/2024
+ms.date: 09/10//2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-01-31
@@ -690,7 +690,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
 
 ### <a name="configurelcs"></a>Step 15. Configure LCS connectivity for the tenant
 
-Authentication with Lifecycle Services is required to deploy Finance + Operations (on-premises). For more information see [Configure Lifecycle Services connectivity for Microsoft Dynamics 365 Finance + Operations (On-Premises) deployments](./onprem-auth-lcs.md).
+Authentication with Lifecycle Services is required to deploy Finance + Operations (on-premises). For more information, see [Configure Lifecycle Services connectivity for Microsoft Dynamics 365 Finance + Operations (On-Premises) deployments](./onprem-auth-lcs.md).
 
 > [!IMPORTANT]
 > Authentication with Lifecycle Services is changing. To ensure that you can continue to deploy Finance + Operations (on-premises), you must update your authentication method. For more information, see [Configure Lifecycle Services connectivity for Microsoft Dynamics 365 Finance + Operations (On-Premises) deployments](./onprem-auth-lcs.md).
