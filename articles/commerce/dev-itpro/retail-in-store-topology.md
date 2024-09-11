@@ -7,7 +7,7 @@ ms.topic: how-to
 audience: IT Pro
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: advenkat
+ms.author: anvenkat
 ms.search.validFrom: 2019-03-01
 ms.search.form: SysMicrosoft Entra IDClientTable, RetailTransactionServiceProfile
 ms.custom: 
