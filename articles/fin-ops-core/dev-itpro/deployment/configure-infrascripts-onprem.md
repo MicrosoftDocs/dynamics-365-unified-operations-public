@@ -6,7 +6,7 @@ ms.author: osfaixat
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 08/01/2024
+ms.date: 09/10/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.service: dynamics-365-op
@@ -149,7 +149,7 @@ When the **ProtectTo** field for a certificate is set, common practice is to spe
 </Certificate>
 ```
 
-The certificate of the **ServiceFabric** type is your combined certificate that protects your cluster and is presented by other services that are hosted in the cluster. The **Name** field is mapped to the friendly name of a certificate. The **FileName** field is used to give the certificate a file name when exported. The **DNSName** field is mapped to the subject alternative names (SANs) of a certificate. The **Subject** field is mapped to the subject name (also known as the common name) of the certificate. Never update the **Provider**, **KeyUsage**, **EnhancedKeyUsage**, and **CertificateType** fields, because they're hard-coded as required to correctly generate the certificate. If you update those fields, there's no guarantee that the certificate works, or that the scripts themselves support the specified values.
+The certificate of the **ServiceFabric** type is your combined certificate that protects your cluster and is presented by other services that are hosted in the cluster. The **Name** field is mapped to the friendly name of a certificate. The **FileName** field is used to give the certificate a file name when exported. The **DNSName** field is mapped to the subject alternative names (SANs) of a certificate. The **Subject** field is mapped to the subject name (also known as the common name) of the certificate. Never update the **Provider**, **KeyUsage**, **EnhancedKeyUsage**, and **CertificateType** fields, because they're hard coded as required to correctly generate the certificate. If you update those fields, there's no guarantee that the certificate works, or that the scripts themselves support the specified values.
 
 ```xml
 <Certificate type="ServiceFabric" exportable="true" generateSelfSignedCert="false" generateADCSCert="true">
@@ -412,7 +412,7 @@ If you only have one SQL Server machine, list only that machine.
 
 ### EntraApplications
 
-This section contains information regarding your Microsoft Entra registered applications. You do not need to fill in any of this information as it will be automatically filled in by the scripts. If you choose to register your application manually without using the scripts, you should then fill in the **TenantId**, **ClientId**, **DisplayName**, and **ServicePrincipalOid** fields.
+This section contains information regarding your Microsoft Entra registered applications. You don't need to fill in any of this information as it is automatically filled in by the scripts. If you choose to register your application manually without using the scripts, you should then fill in the **TenantId**, **ClientId**, **DisplayName**, and **ServicePrincipalOid** fields.
 
 The **TenantId** field is the Microsoft Entra tenant ID. The **ClientId** field is the application ID. The **DisplayName** field is the display name of the application. The **ServicePrincipalOid** field is the object ID of the service principal that is associated to the application.
 
@@ -657,7 +657,7 @@ Contoso Corporation leaves the default values for its database names (**dbName**
 
 ### FileShares section
 
-Contoso Corporation has a file server that with a single node. However, they are sure to set up a high availability solution soon, before they go live. For now, they created a specific volume to host the **sfDiagnostics** share and a separate volume to host the remaining shares. For each file share, they filled in only the **BasePath** field, because all the remaining fields are filled in by the infrastructure scripts.
+Contoso Corporation has a file server that with a single node. However, they're sure to set up a high availability solution soon, before they go live. For now, they created a specific volume to host the **sfDiagnostics** share and a separate volume to host the remaining shares. For each file share, they filled in only the **BasePath** field, because all the remaining fields are filled in by the infrastructure scripts.
 
 ```xml
 <FileShares>
