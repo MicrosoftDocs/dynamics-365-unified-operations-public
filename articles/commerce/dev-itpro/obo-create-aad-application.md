@@ -5,14 +5,14 @@ title: Create and configure a Microsoft Entra application for account manager si
 description: This article describes how to create and configure a Microsoft Entra application for account manager sign-in for on behalf of (OBO) functionality in Microsoft Dynamics 365 Commerce.
 author: mariash529
 ms.date: 12/20/2023
-ms.topic: article
+ms.topic: how-to
 audience: IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: mashneer
+ms.author: asharchw
 ms.search.validFrom: 2023-02-27
-ms.dyn365.ops.version: 10.0.33
-
+ms.custom: 
+  - bap-template
 ---
 
 # Create and configure a Microsoft Entra application for account manager sign-in 
