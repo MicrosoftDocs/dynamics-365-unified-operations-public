@@ -27,38 +27,39 @@ After Business performance analytics is installed, there are several ways to acc
 ### Access Business performance analytics from finance and operations apps
 
 A shortcut to access Business performance analytics in Dynamics 365 finance and operations are visible to users with one of the following duties assigned:  
- - View manage bank accounts workspace
- - Maintain budget plans
- - View cash flow all companies workspace
- - View cash flow current company workspace
- - View vendor invoice entry workspace
- - Maintain purchase orders
- - VendPaymentWorkspaceInquire
- - View vendor invoice entry workspace
- - View vendor profile
- - Maintain vendor requests for quotations replies
- - BudgetTrackingWorkspaceMaintain
- - Maintain vendor collaboration invoices
- - GeneralJournalEntryWorkspaceInquire
- - CustomerInvoiceWorkspaceView
- - CustPaymentWorkspaceView
- - Customer credit and collections
- - Configure Electronic reporting configuration
- - View CFO overview workspace
- - View financial insights current company
- - View financial period close processes
- - Inquire into fixed assets
+
+- View manage bank accounts workspace
+- Maintain budget plans
+- View cash flow all companies workspace
+- View cash flow current company workspace
+- View vendor invoice entry workspace
+- Maintain purchase orders
+- VendPaymentWorkspaceInquire
+- View vendor invoice entry workspace
+- View vendor profile
+- Maintain vendor requests for quotations replies
+- BudgetTrackingWorkspaceMaintain
+- Maintain vendor collaboration invoices
+- GeneralJournalEntryWorkspaceInquire
+- CustomerInvoiceWorkspaceView
+- CustPaymentWorkspaceView
+- Customer credit and collections
+- Configure Electronic reporting configuration
+- View CFO overview workspace
+- View financial insights current company
+- View financial period close processes
+- Inquire into fixed assets
 
 
 To open Business performance analytics directly from Dynamics 365 finance and operations apps, confirm the following prerequisites are met:
 
 1. Go to https://admin.powerplatform.microsoft.com/
-2.	Select **Environments** from the left hand menu.
-3.	Select the environment where business performance analytics is installed.
-4.	Go to **Settings** > **Users**.
-5.	For Business performance analytics users, confirm the **Basic user** security role is assigned to them.
+2. Select **Environments** on the left menu.
+3. Select the environment where business performance analytics is installed.
+4. Go to **Settings** > **Users**.
+5. For Business performance analytics users, confirm that the **Basic user** security role is assigned.
 
-If these prerequisites aren't met, click on the Business performance analytics icon in the apps section redirects the user to a public document explaining the Business performance analytics functionality. If these prerequisites are met, clicking on the Business performance analytics icon redirects the user to the Business performance analytics app. 
+If these prerequisites aren't met, select the Business performance analytics icon in the apps section redirects the user to a public document explaining the Business performance analytics functionality. If these prerequisites are met, selecting the Business performance analytics icon redirects the user to the Business performance analytics app. 
 The administrator can adjust the who can view the Business performance analytics icon by removing the privileges associated with the duties assigned to a given user. Or, using feature management so that users can no longer view the Apps section. The administrator can also use security roles and privileges to assign access to the Business performance analytics icon to additional users and roles in Dynamics 365 finance and operations.
 
 
