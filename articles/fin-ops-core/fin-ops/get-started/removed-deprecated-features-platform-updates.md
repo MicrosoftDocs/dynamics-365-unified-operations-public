@@ -54,18 +54,18 @@ Detailed information about objects in finance and operations apps can be found i
 | **Status**                         | This change is effective as of Platform update 65 and Dynamics 365 Finance version 10.0.41 and later. |
 
 ### End of support for sharing storage account connection strings via public API GetCsuStorageConnectionString
-Public method: Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetCsuStorageConnectionString() will be depcrecated. Restrictions are added for any dependent ways that public access to the storage account connection string is allowed. This method is available for use in custom code. However, steps to phase it out are being done as part of our ongoing efforts to enhance security. 
+Public method: Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetCsuStorageConnectionString() will be depcrecated. 
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Maintaining storage connection string usage is a security issue and we want a more secure approach of connecting to storage account. |
 | **Replaced by another feature?**   | A managed service identity based connection will be used to storage account. |
-| **What do you need to do?**        | For new tenants, created after August 19th 2024, no action is required as there's not a dependency on this method. The connection string method won't be available. For existing tenants, your current code continues to function, but it is recommended to remove direct dependency on storage connection string and use public methods from SharedServiceUnitStorage. Further updates and guidance will be provided on alternative approaches in the near future.|
+| **What do you need to do?**        | 1. For new tenants, created after August 19th 2024, the connection string won't be available to you and you shall use public APIs from platform SharedServiceUnitStorage class to interact with storage account. <br> <br> 2. For existing tenants, created before August 19th 2024, your current code continues to function, but it is recommended to remove direct dependency on storage connection string and use public methods from SharedServiceUnitStorage as GetCsuStorageConnectionString will be deprecated by December 2024. |
 | **Product areas affected**         |  Finance and operations apps |
 | **Deployment option**              | All |
 | **Status**                         | The rollout of this change is being done in phases, region by region, starting first with sandbox environments. Then it'll be applied in production environments. The full rollout is estimated in October 2024. Changes are backported to 10.0.39 (PU63) and all greater releases. |
 
-#### Note
+#### Note for dev machines, LBD and CHE environments
 An issue has been identified while deploying changes in developer environments or customer hosted environments (CHE) as the flight is set to false by default. If you're receiving the following error in your developer machine: “EnableSharingOfValidStorageConnectionString is false. Fetching a valid storage connection string has been disabled”, follow these steps to get unblocked: <br>
 a) Execute the below query in SSMS: 
 declare @flightName NVARCHAR(100) = 'EnableSharingOfValidStorageConnectionString';  
