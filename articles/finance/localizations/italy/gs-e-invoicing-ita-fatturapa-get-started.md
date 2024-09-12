@@ -236,15 +236,6 @@ This section provides information that will help you set up and configure the pr
     > [!NOTE]
     > The Object ID for an application is different on the **App registrations** and **Enterprise applications** pages. Use the Object ID value from **Enterprise applications** page.
 
-5. In RCS, add the app to the application list for your service environment.
-
-    1. Go to **Globalization features** \> **Environments** \> **Electronic Invoicing** \> **Service environments**, and select your environment.
-    2. In the **Applications** section, add a row to the grid, and enter the name and object ID of the app.
-
-        ![Adding the application to the service environment.](../media/e-invoicing-ita-fatturapa-get-started-add-app-to-env.png)
-
-    3. Select **Save**, and then select **Publish**.
-
 ### Create an Azure virtual machine
 
 1. In the [Azure portal](https://portal.azure.com), go to **Virtual machines**, and select **Create new**.
@@ -351,8 +342,8 @@ Follow these steps on the machine where the proxy service is hosted.
         - **ClientCertificateName** – Specify the name of the **App Registration Certificate** in the key vault.
         - **SecurityServiceClientOptions.Endpoint** – Specify the URL of the security service.
         - **SecurityServiceClientOptions.Resource** – Specify the scope to obtain the token for.
-        - **InvoicingServiceClientOptions.Endpoint** – Specify the endpoint of the invoicing service. This value should be the same endpoint that is used for RCS and Finance.
-        - **InvoicingServiceClientOptions.ServiceEnvironmentId** – Specify the name of the service environment that's configured in RCS.
+        - **InvoicingServiceClientOptions.Endpoint** – Specify the endpoint of the invoicing service. You can obtain this value from Finance menu item Electronic document parameters \> Electronic Invoicing tab \> Service parameters \> Endpoint URL.
+        - **InvoicingServiceClientOptions.ServiceEnvironmentId** – You can keep this empty, since its no longer appliable.
         - **NotificationsFolder** – Specify the folder to save incoming notification files in. For example, **C:\\\\Files\\\\**.
 
         > [!TIP]
