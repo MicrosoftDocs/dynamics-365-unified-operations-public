@@ -11,7 +11,7 @@ ms.reviewer: johnmichalak
 ms.collection: get-started
 audience: Application User
 ms.search.region: Global
-ms.search.validFrom: 2024-01-29
+ms.search.validFrom: 2024-09-12
 ms.dyn365.ops.version: 10.0.39
 ---
 
@@ -84,32 +84,26 @@ Some of the parameters from the **Saudi Arabian Zatca submission (SA)** Electron
 1. In the **Globalization Studio** workspace, select the **Electronic invoicing** tile.
 1. On the **Electronic invoicing features** page, verify that the **Saudi Arabian Zatca submission (SA)** Electronic invoicing feature is selected.
 1. On the **Versions** tab, verify that the **Draft** version is selected.
+1. On the **Feature parameters** tab, specify values for the following connection and integration parameters that are required for interoperation with Zatca's API:
+    - For **ZatcaAPIEndPoint**, enter the URL of the development portal or the production environment that ZATCA provided.
+    - For **ZatcaCertificateName**, select **CCSID** or **PCSID**, depending on your place in the [onboarding](#onboarding) process.
+    - For **ZatcaSecretName**, select **CCSIDSecret** or **PCSIDSecret**, depending on your place in the onboarding process.
+    - For **ZatcaNumberSequence**, and select the [number sequence](#NumberSequence) that you previously created on the **Electronic document parameters** page.
+
+    The following illustration shows a sample feature parameters setup, with the Url address for Zatca's production endpoint. Please update the respective values based     on the configuration done in Electronic document parameters page.      
+
+   ![Screenshot that shows the configured Feature parameters tab for the Globalization feature for Saudi Arabia.](../media/sa-e-invoice-glob-feature-parameters.jpg)
+
 1. On the **Setups** menu, select the **Sales invoice** feature setup, and then select **Edit**.
 
     > [!NOTE]
     > For the **Saudi Arabian ZATCA compliance check (SA)** Electronic invoicing feature, select the **Tax invoice compliance check** feature setup instead.
 
-1. On the **Processing pipeline** tab, in the **Processing pipeline** section, turn on the **Export result** option for the **Transform document** action.
-1. In the **Processing pipeline** section, select the **Get next number sequence value** action.
-1. In the **Parameters** section, in the **Value** field, select the [number sequence](#NumberSequence) that you previously created on the **Electronic document parameters** page.
-1. In the **Processing pipeline** section, select **Prepare document for submit for Saudi Arabia Zatca service**, and then follow these steps:
-
-    1. In the **Parameters** section, select the **Invoice counter value** name. 
-    1. In the **Value** field, select **Get next number sequence value: Number sequence value**.
-    1. Select the **Invoice counter name** name.
-    1. In the **Value** field, select **Get next number sequence value: Number sequence name**.
-
 1. In the **Processing pipeline** section, select **Integrate with Saudi Arabia Zatca service**, and then follow these steps:
 
-    1. In the **Parameters** section, select the **Web service URL** name.
-    1. In the **Value** field, enter the URL of the development portal or the production environment that ZATCA provided.
     1. Select the **API method name** name.
     1. In the **Value** field, select **Invoice clearance** for tax invoices or **Invoice reporting** for simplified invoices.
-    1. Select the **Certificate name** name.
-    1. In the **Value** field, select **CCSID** or **PCSID**, depending on your place in the [onboarding](#onboarding) process.
-    1. Select the **Secret name** name.
-    1. In the **Value** field, select **CCSIDSecret** or **PCSIDSecret**, depending on your place in the onboarding process.
-
+    
         > [!NOTE]
         > Depending on your place in the [onboarding](#onboarding) process, create either a CCSID or a PCSID, and configure it in advance in the [Key Vault parameters](../global/gs-e-invoicing-set-up-parameters.md#create-a-key-vault-reference).
 
