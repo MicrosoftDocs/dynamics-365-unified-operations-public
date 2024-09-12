@@ -2912,6 +2912,8 @@
                                   href: dev-itpro/extend-tax-engine-configuration-for-slab-price.md
                                 - name: Clean up the TaxDocumentJSON table
                                   href: localizations/india/gte-clean-up-tax-document-json-table.md
+                                - name: Tips for troubleshooting India GST performance issues
+                                  href: localizations/india/apac-ind-gst-troubleshooting-performance-issue.md
                                 - name: Troubleshoot GTE
                                   href: localizations/tax-engine-trouble-shooting.md
                             - name: Master data setup
