@@ -184,6 +184,10 @@ Import the **Customer invoice context model** (version 54 or later) and **Vendor
 > [!NOTE]
 > If you have import vendor invoices from different sources, you can create several channels and several derived configurations that have different **\$Context Channel** values. For example, you might want to import vendor invoices for different legal entities.
 
+## Finance business data configuration
+
+Follow the configuration steps in [Customer electronic invoices in Italy](../italy/emea-ita-e-invoices.md). Start from the [Electronic invoice currency](../italy/emea-ita-e-invoices.md#electronicinvoicecurrency) section.
+
 ## Proxy server setup
 
 This section provides information that will help you set up and configure the proxy service for communication between the Exchange system (SDI) and the Electronic invoicing service.
@@ -499,8 +503,10 @@ Data that is imported from these external systems into this Dynamics 365 online 
 
 ## Additional resources
 
-- [Electronic invoicing overview](../global/e-invoicing-service-overview.md)
-- [Get started with Electronic invoicing service administration](../e-invoicing-get-started-service-administration.md)
-- [Get started with Electronic invoicing](../e-invoicing-get-started.md)
+- [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md)
+- [Electronic invoicing components](../global/gs-e-invoicing-administration-integration-components.md)
+- [Setting up Electronic invoicing](../global/gs-e-invoicing-set-up-overview.md)
+- [Customer electronic invoices in Italy](../italy/emea-ita-e-invoices.md)
+- [Vendor electronic invoices in Italy](../italy/emea-ita-vend-e-invoices.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
