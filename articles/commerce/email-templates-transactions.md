@@ -4,14 +4,13 @@ description: This article describes how to create, upload, and configure email t
 author: bicyclingfool
 ms.date: 03/18/2024
 ms.topic: how-to
+audience: Application User
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
+ms.author: asharchw
+ms.search.validFrom: 2020-01-20
 ms.custom: 
   - bap-template
-audience: Application User
-ms.reviewer: v-chgriffin
-ms.search.region: Global
-ms.author: stuharg
-ms.search.validFrom: 2020-01-20
-ms.dyn365.ops.version: Release 10.0.8
 ---
 # Create email templates for transactional events
 
