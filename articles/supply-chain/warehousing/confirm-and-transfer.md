@@ -14,7 +14,15 @@ ms.search.form:  WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench, 
 
 [!include [banner](../includes/banner.md)]
 
-The *Confirm and transfer* feature lets users ship loads out of the warehouse before they complete all the work that is associated with those loads. When a shipment is received that includes load lines that weren't fully picked, the confirming user is prompted either to split the remaining quantities onto a new load or to cancel the incomplete quantities.
+The *Confirm and transfer* feature lets users ship loads out of the warehouse before they complete all the work that is associated with those loads. It is possible to select the 
+default split method to be used on the loads from the load template details and from the single load details.
+
+There are three posible options to choose from, there is a dropdown that can be found under the label **Load split shipment confirmation policy**. This dropdown will be only available if the **Allow load split during ship confirm** option is enabled.
+
+These options are relevant when a shipment is received that includes a load with the load lines that weren't fully picked:
+- Manual selection: The confirming user is prompted in a dialog either to split the remaining quantities onto a new load or to cancel the incomplete quantities. This action cannot be performed in a batch job.
+- Split quantity to a new load: The system will automatically split the unfulfilled quantity to a new load. This action can be performed in a batch job.
+- Cancel unfulfilled quantity: The system will automatically cancel the remaining quantity. This action can be performed in a batch job.
 
 Systems that are set up to allow load splitting support scenarios where planned and partially loaded loads must be adapted because of new or changing circumstances.
 
@@ -56,6 +64,7 @@ To use the *Confirm and transfer* feature, you must turn it on in every relevant
 1. Go to **Warehouse management \> Setup \> Load \> Load templates**.
 1. On the Action Pane, select **Edit** to put the page into edit mode.
 1. Select the **Allow load split during ship confirm** check box for each existing template where you want to turn on the feature. Alternatively, select **New** to create a new template, and configure it as you require. Every load that you create by using that template will inherit this functionality. (If you're working with the **USMF** demo data, turn on the feature for the **20' Container** load template.)
+1. Once the **Allow load split during ship confirm** option is enabled, the **Load split shipment confirmation policy** dropdown will enable. Select the default behavior (The three options explained before) that the loads will follow when executing the shipment confirmation. In this case the selected value will be **Manual selection**.
 
 ### Prepare your work templates
 
@@ -141,6 +150,10 @@ The outbound load planning workbench will use the load template ID to build the 
 1. In the **Load template assignment** dialog box, in the **Load template ID** field, select *20' Container*.
 1. Select **OK**.
 1. In the **Loads** section of the **Outbound load planning workbench** page, in the grid, find the newly created load ID for warehouse *51*. Scroll right until you see the **Allow load split during ship confirm** column. The check box should be selected for your load.
+
+    > [!NOTE]
+    > The **Allow load split during ship confirm** option will be on or off by default depending on the load template used to create the load. The **Load split shipment confirmation policy** is not shown in this part of the system and to verify the value inherited from the load template or if it is needed to change it, it should be done from the single load details.
+
 1. Select the load.
 1. On the **Release** menu above the grid, select **Release to warehouse** to create work.
 1. In the **Release load to warehouse** dialog box, verify that the **Records to include** FastTab shows your load ID.
@@ -184,13 +197,16 @@ The two work IDs will now be closed (loaded).
 
 ### Step 3: Confirm the outbound shipment
 
-In this step, you will confirm the two sales orders and work that have been completed for the load to ship the picked items of the load and create a new load for the unpicked items. Outbound shipment confirmation must be done on the **Load details** page.
+In this step, you will confirm the two sales orders and work that have been completed for the load to ship the picked items of the load and create a new load for the unpicked items.The **Outbound shipment confirmation** could be done from the **Outbound load planning workbench**, **All loads** or **Load details** page.
+
+> [!NOTE]
+> Prior the release of Supply Chain Management 10.0.42, the split of the load could be done only from the **Load details** page.
 
 1. Go to **Warehouse management \> Loads \> Outbound load planning workbench**.
 1. In the **Loads** section, in the grid, select the row for the load ID that you created.
 1. Select the load ID link to open the **Load details** page.
 1. On the **Load details** page, on the Action Pane, on the **Ship and receive** tab, in the **Confirm** group, select **Outbound shipment** to initiate the confirmation.
-1. In the **Ship confirm** dialog box, in the **Load split method during ship confirm** field, select *Split quantity to new load*.
+1. As the **Load split shipment confirmation policy** inherited from the load template configured in previous steps is **Manual selection**, a **Ship confirm** dialog box will be shown, in the **Load split method during ship confirm** field, select *Split quantity to new load*.
 1. Select **OK**.
 
     You might receive a "Processing operation" message.
@@ -209,8 +225,8 @@ You can also confirm that transaction relations have been updated in the followi
 - The status of the new load is correctly updated. (If the work status is _In process_, the load status should also be _In process_.)
 
 ## Notes and tips
-
-- You can also turn on the **Allow load split during ship confirm** parameter after the load has been created with the **Load template** parameter turned off but before the loading process has started. Go to the desired load, and then, in the header view, turn on the parameter.
+- Since the release of **Supply Chain Management 10.0.42**, it is possible to split loads in a batch job, this can be done only if the option **Allow load split during ship confirm** is on and the value for the **Load split shipment confirmation policy** is **Split quantity to a new load** or **Cancel unfulfilled quantity**.
+- You can also turn on the **Allow load split during ship confirm** parameter and change the value selected in the **Load split shipment confirmation policy** dropdown after the load has been created with the **Load template** parameter turned off but before the loading process has started. Go to the desired load, and then, in the header view, turn on the parameter and select the value in the dropdown.
 - The **Split quantity to new load** option also works when some of the remaining work headers have a status of *In process*. Therefore, you can still use the functionality even if workers are already running the pick orders.
 - If you select **Cancel unfulfilled quantity** while there is remaining work that has a status of *Open* or *In progress*, you receive the following error message: "Unable to cancel remaining qty for load. Work exists for load."
 - If you select **Cancel unfulfilled quantity** when there is no remaining work but there are unreleased load lines on the load, you receive the following error message: "The shipment for load could not be confirmed because the quantity for item exceeds the percentage that is defined for under delivery." To avoid the error, you can set the **Under delivery** percentage on the unreleased load line to 100 percent. Unreleased lines won't be moved to a new load, but the current load will be confirmed with under-delivery. In this case, you won't be able to re-release the original order. Therefore, so you will have to handle it in some other way.
