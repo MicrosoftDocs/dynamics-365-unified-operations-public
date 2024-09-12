@@ -29,6 +29,28 @@ Detailed information about objects in finance and operations apps can be found i
 
 ## Feature deprecation effective October 2024
 
+### Platform is changing interaction with storage account from account key based connection string to Managed identity token based connection
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Improve platform security and remove dependency on storage connection string-based authentication. |
+| **Replaced by another feature?**   | Managed identity based connection. |
+| **What do you need to do?**        | 1. For customers who haven’t done any kind of customization and interact with the storage account based on the existing exposed platform APIs, the existing fuctionilities shall remain unaffected. <br><br> 2. For customers where storage connection string is acquired by third-party code that isn't using any public API present in platform, some of the functionalities might get affected and so the recommendation is to switch to public APIs from SharedServiceUnitStorage platform class rather than directly using connection string to interact with storage account. <br><br> Note- LBD and CHE environments shall remain unaffected. |
+| **Product areas affected**         | Finance and operations apps |
+| **Deployment option**              | All |
+| **Status**                         | Rollout for the change will start from October 2024 is phase wise manner. Changes will be backported to 10.0.39 (PU63) and all greater releases.|
+
+### Migration from deprecated libraries - WindowsAzure.Storage and Microsoft.Azure.Storage to Azure.Storage.Blobs
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Improve platform security and remove dependency on deprecated and out of maintenance nugets [WindowsAzure.Storage (v9.3.3)](https://www.nuget.org/packages/WindowsAzure.Storage/) and [Microsoft.Azure.Storage (v11.xx)](https://www.nuget.org/packages/Microsoft.Azure.Storage.Common). |
+| **Replaced by another feature?**   | Use [Azure.Storage.Common](https://www.nuget.org/packages/Azure.Storage.Common/) , [Azure.Storage.Blobs](https://www.nuget.org/packages/Azure.Storage.blobs/) |
+| **What do you need to do?**        | As platform code continues to leverage WindowsAzure.Storage v9.3.3 for storage interaction, alongside the old libraries-based storage classes we parallelly have started the migration of these implementations to Azure.Storage.Blobs, by creating newer version of the classes. **Customers and ISVs should review their dependencies/ customizations and make necessary changes to move to new libraries.** |
+| **Product areas affected**         | Finance and operations apps |
+| **Deployment option**              | All |
+| **Status**                         | **Phase 1: Development, Testing and Validation (August - September 2024)**  <br> We are developing and testing the new versions of the code using the new libraries. We are doing validations to ensure the new code meets all performance and security standards.  <br><br> **Phase 2: Release and Feedback (September - October 2024)**  <br> The new code will be released to a select group of users for beta testing. Feedback will be collected, and any necessary adjustments will be made.   <br><br> **Phase 3: Backport and Deployment (October 2024)**  <br> The new code will be backported and deployed across all PU versions. We will continue to support the old package during this period.<br><br> **Phase 4: Deprecation Timeline for customers (March 2025)** <br> This is the timeline by when customers must move to new libraries.  (Tentatively in 10.0.41 PQU-5, 10.0.41 PQU-6 ). <br><br> **Phase 5: Stop shipping old libraries (August 2025)**  <br> Support for the old package will end so we will stop shipping the old libraries and the old code will be removed. This will be done only after validating that customer scenarios are not affected using telemetry data. |
+
 ### Platform is changing the authentication protocol from password based auth to Microsoft Entra ID based authentication for 10.0.39 and greater releases.
 
 | &nbsp;  | &nbsp; |
@@ -41,17 +63,6 @@ Detailed information about objects in finance and operations apps can be found i
 | **Status**                         | End of support date is Oct 2024 starting with 10.0.39 (PU63) and greater releases. |
 
 ## Feature deprecation effective September 2024
-
-### Microsoft will no longer ship or support the Visual Studio extensions for finance and operations apps, Power Platform tools, and Visual Studio versions prior to 2022.
-
-| &nbsp;  | &nbsp; |
-|------------|--------------------|
-| **Reason for deprecation/removal** | We want to focus our attention on one platform, harvesting the benefits provided from the 64 bit platform. |
-| **Replaced by another feature?**   | [Visual Studio 2022](https://visualstudio.microsoft.com/vs/). |
-| **What do you need to do?**        | Install [Visual Studio version 2022](https://visualstudio.microsoft.com/vs/). |
-| **Product areas affected**         | Development for finance and operations apps, including the Unified Development experience, and development of plugins with the Power Platform Tools. |
-| **Deployment option**              | All |
-| **Status**                         | This change is effective as of Platform update 65 and Dynamics 365 Finance version 10.0.41 and later. |
 
 ### End of support for sharing storage account connection strings via public API GetCsuStorageConnectionString
 Public method: Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetCsuStorageConnectionString() will be depcrecated. 
@@ -76,6 +87,17 @@ ELSE
 UPDATE SysFlighting SET enabled = 1, flightServiceId = 12719367 WHERE flightName = @flightName;  
 select * from SysFlighting where flightName = 'EnableSharingOfValidStorageConnectionString'; <br>
 b) Restart AOS and Batch service in CHE Environment.
+
+### Microsoft will no longer ship or support the Visual Studio extensions for finance and operations apps, Power Platform tools, and Visual Studio versions prior to 2022.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We want to focus our attention on one platform, harvesting the benefits provided from the 64 bit platform. |
+| **Replaced by another feature?**   | [Visual Studio 2022](https://visualstudio.microsoft.com/vs/). |
+| **What do you need to do?**        | Install [Visual Studio version 2022](https://visualstudio.microsoft.com/vs/). |
+| **Product areas affected**         | Development for finance and operations apps, including the Unified Development experience, and development of plugins with the Power Platform Tools. |
+| **Deployment option**              | All |
+| **Status**                         | This change is effective as of Platform update 65 and Dynamics 365 Finance version 10.0.41 and later. |
 
 ## Feature deprecation effective July 2024
 
