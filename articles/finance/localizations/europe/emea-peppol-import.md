@@ -22,7 +22,7 @@ This article explains how to configure and import vendor electronic invoices in 
 The import from the following electronic invoice formats are supported:
  
  - Standard **PEPPOL** format;
- - Germany-specific **XRechnung** format.
+ - Germany-specific **XRechnung** format in the Universal Business Language (UBL) syntax.
 
 ## Prerequisites
 
