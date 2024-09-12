@@ -29,12 +29,12 @@ Detailed information about objects in finance and operations apps can be found i
 
 ## Feature deprecation effective October 2024
 
-### Platform is changing interaction with storage account from account key based connection string to Managed identity token based connection
+### Platform is changing interaction with storage account from account key based connection string to Microsoft Entra ID based authentication
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Improve platform security and remove dependency on storage connection string-based authentication. |
-| **Replaced by another feature?**   | Managed identity based connection. |
+| **Reason for deprecation/removal** | Improve platform security and remove dependency on storage connection string account key-based authentication. |
+| **Replaced by another feature?**   | Microsoft Entra ID based authentication |
 | **What do you need to do?**        | 1. For customers who haven’t done any kind of customization and interact with the storage account based on the existing exposed platform APIs, the existing fuctionilities shall remain unaffected. <br><br> 2. For customers where storage connection string is acquired by third-party code that isn't using any public API present in platform, some of the functionalities might get affected and so the recommendation is to switch to public APIs from SharedServiceUnitStorage platform class rather than directly using connection string to interact with storage account. <br><br> Note- LBD and CHE environments shall remain unaffected. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
