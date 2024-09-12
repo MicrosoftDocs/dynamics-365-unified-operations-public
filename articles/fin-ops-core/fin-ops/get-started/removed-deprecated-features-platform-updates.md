@@ -59,14 +59,14 @@ Public method: Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetCs
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Maintaining storage connection string usage is a security issue and we want a more secure approach of connecting to storage account. |
-| **Replaced by another feature?**   | A managed service identity based connection will be used to storage account. Customers are advised to remove direct dependency on storage connection string and use public methods from SharedServiceUnitStorage. Further updates and guidance will be provided on alternative approaches in the near future. |
-| **What do you need to do?**        | For new tenants, created after August 19th 2024, no action is required as there's not a dependency on this method. The connection string method won't be available. For existing tenants, your current code continues to function, it's recommended to start transitioning away from using this method. |
-| **Product areas affected**         | Development for finance and operations apps |
+| **Replaced by another feature?**   | A managed service identity based connection will be used to storage account. |
+| **What do you need to do?**        | For new tenants, created after August 19th 2024, no action is required as there's not a dependency on this method. The connection string method won't be available. For existing tenants, your current code continues to function, but it is recommended to remove direct dependency on storage connection string and use public methods from SharedServiceUnitStorage. Further updates and guidance will be provided on alternative approaches in the near future.|
+| **Product areas affected**         |  Finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | The rollout of this change is being done in phases, region by region, starting first with sandbox environments. Then it'll be applied in production environments. The full rollout is estimated in October 2024. |
+| **Status**                         | The rollout of this change is being done in phases, region by region, starting first with sandbox environments. Then it'll be applied in production environments. The full rollout is estimated in October 2024. Changes are backported to 10.0.39 (PU63) and all greater releases. |
 
 #### Note
-An issue has been identified while deploying changes in developer environments or customer hosted environments (CHE) as the flight is set to false by default. If you're receiving the following error in your developer machine: “EnableSharingOfValidStorageConnectionString is false. Fetching a valid storage connection string has been disabled”, follow these steps to get unblocked: 
+An issue has been identified while deploying changes in developer environments or customer hosted environments (CHE) as the flight is set to false by default. If you're receiving the following error in your developer machine: “EnableSharingOfValidStorageConnectionString is false. Fetching a valid storage connection string has been disabled”, follow these steps to get unblocked: <br>
 a) Execute the below query in SSMS: 
 declare @flightName NVARCHAR(100) = 'EnableSharingOfValidStorageConnectionString';  
 IF NOT EXISTS (SELECT TOP 1 1 FROM SysFlighting WHERE flightName = @flightName)  
@@ -74,7 +74,7 @@ INSERT INTO SYSFLIGHTING(FLIGHTNAME,ENABLED, FLIGHTSERVICEID,PARTITION)
 SELECT @flightName, 1, 12719367,RECID FROM DBO.[PARTITIONS];  
 ELSE  
 UPDATE SysFlighting SET enabled = 1, flightServiceId = 12719367 WHERE flightName = @flightName;  
-select * from SysFlighting where flightName = 'EnableSharingOfValidStorageConnectionString'; 
+select * from SysFlighting where flightName = 'EnableSharingOfValidStorageConnectionString'; <br>
 b) Restart AOS and Batch service in CHE Environment.
 
 ## Feature deprecation effective July 2024
