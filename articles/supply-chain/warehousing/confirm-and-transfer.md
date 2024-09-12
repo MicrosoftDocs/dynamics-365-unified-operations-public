@@ -14,25 +14,25 @@ ms.search.form:  WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench, 
 
 [!include [banner](../includes/banner.md)]
 
-The *Confirm and transfer* feature lets users ship loads out of the warehouse before they complete all the work that is associated with those loads. It is possible to select the 
+The *Confirm and transfer* feature lets users ship loads out of the warehouse before they complete all the work that is associated with those loads. It's possible to select the 
 default split method to be used on the loads from the load template details and from the single load details.
 
-There are three posible options to choose from, there is a dropdown that can be found under the label **Load split shipment confirmation policy**. This dropdown is be only available if the **Allow load split during ship confirm** option is enabled.
+There are three possible options to choose from, there's a dropdown that can be found under the label **Load split shipment confirmation policy**. This dropdown is only available if the **Allow load split during ship confirm** option is enabled.
 
 These options are relevant when a shipment is received that includes a load with the load lines that weren't fully picked:
-- Manual selection: The confirming user is prompted in a dialog either to split the remaining quantities onto a new load or to cancel the incomplete quantities. This action cannot be performed in a batch job.
+- Manual selection: The confirming user is prompted in a dialog either to split the remaining quantities onto a new load or to cancel the incomplete quantities. This action can't be performed in a batch job.
 - Split quantity to a new load: The system splits the unfulfilled quantity to a new load. This action can be performed in a batch job.
 - Cancel unfulfilled quantity: The system automatically cancels the remaining quantity. This action can be performed in a batch job.
 
 Systems that are set up to allow load splitting support scenarios where planned and partially loaded loads must be adapted because of new or changing circumstances.
 
-The client includes logic that enables a partially loaded load to be closed and confirmed as shipped. All remaining shipments and load lines (including full or partial line quantities) are then rolled over to a newly created load and shipment, if this rollover is required and the setup allows for it. New shipments and loads are automatically created based on the initial criteria for shipment and load creation, and their main attributes remain unchanged. There is also an option to automatically cancel remaining quantities if a work order hasn't yet been created and the user deems this cancellation necessary.
+The client includes logic that enables a partially loaded load to be closed and confirmed as shipped. All remaining shipments and load lines (including full or partial line quantities) are then rolled over to a newly created load and shipment, if this rollover is required and the setup allows for it. New shipments and loads are automatically created based on the initial criteria for shipment and load creation, and their main attributes remain unchanged. There's also an option to automatically cancel remaining quantities if a work order hasn't yet been created and the user deems this cancellation necessary.
 
 This functionality supports scenarios where the full load doesn't fit onto a single truck, or where some of the load should leave the warehouse before the rest of the load is ready for shipment. In these scenarios, the remaining products can be transferred to a new load and therefore to a new truck. Because this feature can be used with loads that are otherwise intended to require full-load shipment, it provides extra flexibility so that transport managers can solve nonstandard or unforeseen scenarios.
 
 When a load is split, the *Confirm and transfer* feature performs the following actions:
 
-- New loads and shipments are created as they are required. Each load or shipment have most of the same attributes as the original load or shipment. The exception is the load status, which is recalculated based on the work status.
+- New loads and shipments are created as they're required. Each load or shipment have most of the same attributes as the original load or shipment. The exception is the load status, which is recalculated based on the work status.
 - The user is informed that a new load is created. The user is also notified about the ID of the new load.
 - The load lines, work headers, and work lines that were split are updated with the new load and shipment information.
 - If a whole shipment is being split, the shipment is maintained, and only the load references are updated. If the shipment must be split, a new shipment is created.
@@ -103,7 +103,7 @@ This scenario shows an example where the picking process isn't yet completed, bu
 
 ### Step 1: Create a load that has multiple load lines
 
-Before you can use this functionality, you must have a load that contains multiple load lines. You must also make sure that the pick locations have enough inventory for all the items on the sales orders that you will create. Review the setup of the location directive (**Warehouse management \> Setup \> Location directives**), and make a note of the picking locations that are used for sales order picking. If you must adjust the inventory, create manual movements, use replenishment, or use any other flow, as required.
+Before you can use this functionality, you must have a load that contains multiple load lines. You must also make sure that the pick locations have enough inventory for all the items on the sales orders that you'll create. Review the setup of the location directive (**Warehouse management \> Setup \> Location directives**), and make a note of the picking locations that are used for sales order picking. If you must adjust the inventory, create manual movements, use replenishment, or use any other flow, as required.
 
 To create a qualifying load, first create three sales orders by following these steps.
 
@@ -138,12 +138,12 @@ To create a qualifying load, first create three sales orders by following these 
 
 #### Outbound load planning workbench
 
-The outbound load planning workbench will use the load template ID to build the shipments and release the sales order lines to the warehouse.
+The outbound load planning workbench uses the load template ID to build the shipments and release the sales order lines to the warehouse.
 
 1. Go to **Warehouse management \> Loads \> Outbound load planning workbench**.
 1. In the **Warehouse** field, select *51*.
 
-    You will now build the load for the sales orders that you just created.
+    You'll now build the load for the sales orders that you created.
 
 1. On the **Sales lines** tab, in the grid, select the sales lines for the new sales orders.
 1. On the Action Pane, on the **Supply and demand** tab, in the **Add** group, select **To new load**.
@@ -152,7 +152,7 @@ The outbound load planning workbench will use the load template ID to build the 
 1. In the **Loads** section of the **Outbound load planning workbench** page, in the grid, find the newly created load ID for warehouse *51*. Scroll right until you see the **Allow load split during ship confirm** column. The check box should be selected for your load.
 
     > [!NOTE]
-    > The **Allow load split during ship confirm** option will be on or off by default depending on the load template used to create the load. The **Load split shipment confirmation policy** is not shown in this part of the system and to verify the value inherited from the load template or if it is needed to change it, it should be done from the single load details.
+    > The **Allow load split during ship confirm** option will be on or off by default depending on the load template used to create the load. The **Load split shipment confirmation policy** is not shown in this part of the system and to verify the value inherited from the load template or if it's needed to change it, it should be done from the single load details.
 
 1. Select the load.
 1. On the **Release** menu above the grid, select **Release to warehouse** to create work.
@@ -161,24 +161,24 @@ The outbound load planning workbench will use the load template ID to build the 
 
     You might receive a "Processing operation" message while the system creates the shipments and work.
 
-1. In the **Loads** section of the **Outbound load planning workbench** page, your load should now have a load status of *Waved*. Select the load, and then, on the **Related information** menu above the grid, select **Wave details** to view the shipment IDs that were created. When you've finished, close the **Waves** page.
+1. In the **Loads** section of the **Outbound load planning workbench** page, your load should now have a load status of *Waved*. Select the load, and then, on the **Related information** menu above the grid, select **Wave details** to view the shipment IDs that were created. When you are done, close the **Waves** page.
 1. In the **Loads** section of the **Outbound load planning workbench** page, select the load, and then, on the **Related information** menu above the grid, select **Work details** to view the work that was created for the sales orders.
 1. Make a note of the work IDs that were created. You might have to scroll right to see the sales order number and shipment ID that are associated with the work ID.
 
 ### Step 2: Set up the execution flow for mobile devices
 
-Mobile device tasks will require user input of information, such as the work ID or license plate ID. In the fields, this information is typically provided for warehouse users in the form of bar codes that are found on documentation, packaging, or racking. To complete the mobile device steps for scenarios, make sure that you've identified the work IDs for the transactions, and the license plate IDs for the item and location in the transactions.
+Mobile device tasks require user input of information, such as the work ID or license plate ID. In the fields, this information is typically provided for warehouse users in the form of bar codes that are found on documentation, packaging, or racking. To complete the mobile device steps for scenarios, make sure that you've identified the work IDs for the transactions, and the license plate IDs for the item and location in the transactions.
 
 1. Sign in to the mobile device by using a user ID and password for warehouse *51*.
 1. Select **Outbound**.
 1. Select **Sales Picking**.
 1. You have the option to enter the work ID or the license plate ID. Enter the work ID for the first sales order, and then select **Enter**.
 1. In the **Loc** field, enter the location that is shown to confirm the picking location. Then select **Enter**.
-1. In the **LP** field, enter the license plate ID. The license plate ID must be a match for the item, warehouse, and location of the item that is being picked from the selected location. When you've finished, select **Enter**.
+1. In the **LP** field, enter the license plate ID. The license plate ID must be a match for the item, warehouse, and location of the item that is being picked from the selected location. When you are done, select **Enter**.
 1. In the **Item** field, enter the item number to confirm the item that is being picked, and then select **Enter**.
 1. In the **Qty** field, enter the quantity of the item that is being picked, and then select **Enter**.
-1. In the **Target LP** field, enter a target license plate ID. Target license plates are user-defined. Be sure to enter a license plate ID that you will remember. We recommend that you use the current date plus a two-digit sequence (YYMMDD\#\#) as the format, such as *19112301*. When you've finished, select **Enter**.
-1. Review information that is shown. This information is the *Pick* information that will now become the *Put* data for the put transaction. When you've finished, select **Enter**.
+1. In the **Target LP** field, enter a target license plate ID. Target license plates are user-defined. Be sure to enter a license plate ID that remember. We recommend that you use the current date plus a two-digit sequence (YYMMDD\#\#) as the format, such as *19112301*. When you are done, select **Enter**.
+1. Review information that is shown. This information is the *Pick* information that will now become the *Put* data for the put transaction. When you are done, select **Enter**.
 
     - You receive a **Work Completed** message.
 
@@ -197,7 +197,7 @@ The two work IDs will now be closed (loaded).
 
 ### Step 3: Confirm the outbound shipment
 
-In this step, you will confirm the two sales orders and work that have been completed for the load to ship the picked items of the load and create a new load for the unpicked items.The **Outbound shipment confirmation** could be done from the **Outbound load planning workbench**, **All loads** or **Load details** page.
+In this step, you confirm the two sales orders and work that have been completed for the load to ship the picked items of the load and create a new load for the unpicked items.The **Outbound shipment confirmation** could be done from the **Outbound load planning workbench**, **All loads** or **Load details** page.
 
 > [!NOTE]
 > Prior the release of Supply Chain Management 10.0.42, the split of the load could be done only from the **Load details** page.
@@ -225,11 +225,11 @@ You can also confirm that transaction relations have been updated in the followi
 - The status of the new load is correctly updated. (If the work status is _In process_, the load status should also be _In process_.)
 
 ## Notes and tips
-- Since the release of **Supply Chain Management 10.0.42**, it is possible to split loads in a batch job, which can be done only if the option **Allow load split during ship confirm** is on and the value for the **Load split shipment confirmation policy** is **Split quantity to a new load** or **Cancel unfulfilled quantity**.
+- Since the release of **Supply Chain Management 10.0.42**, it's possible to split loads in a batch job, which can be done only if the option **Allow load split during ship confirm** is on and the value for the **Load split shipment confirmation policy** is **Split quantity to a new load** or **Cancel unfulfilled quantity**.
 - You can also turn on the **Allow load split during ship confirm** parameter and change the value selected in the **Load split shipment confirmation policy** dropdown after the load has been created with the **Load template** parameter turned off but before the loading process has started. Go to the desired load, and then, in the header view, turn on the parameter and select the value in the dropdown.
 - The **Split quantity to new load** option also works when some of the remaining work headers have a status of *In process*. Therefore, you can still use the functionality even if workers are already running the pick orders.
-- If you select **Cancel unfulfilled quantity** while there is remaining work that has a status of *Open* or *In progress*, you receive the following error message: "Unable to cancel remaining qty for load. Work exists for load."
-- If you select **Cancel unfulfilled quantity** when there is no remaining work but there are unreleased load lines on the load, you receive the following error message: "The shipment for load could not be confirmed because the quantity for item exceeds the percentage that is defined for under delivery." To avoid the error, you can set the **Under delivery** percentage on the unreleased load line to 100 percent. Unreleased lines won't be moved to a new load, but the current load will be confirmed with under-delivery. In this case, you won't be able to re-release the original order. Therefore, so you will have to handle it in some other way.
+- If you select **Cancel unfulfilled quantity** while there's remaining work that has a status of *Open* or *In progress*, you receive the following error message: "Unable to cancel remaining qty for load. Work exists for load."
+- If you select **Cancel unfulfilled quantity** when there's no remaining work but there are unreleased load lines on the load, you receive the following error message: "The shipment for load couldn't be confirmed because the quantity for item exceeds the percentage that is defined for under delivery." To avoid the error, you can set the **Under delivery** percentage on the unreleased load line to 100 percent. Unreleased lines won't be moved to a new load, but the current load will be confirmed with under-delivery. In this case, you won't be able to re-release the original order. Therefore, so you have to handle it in some other way.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
