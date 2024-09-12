@@ -5,13 +5,14 @@ title: Sort Commerce Data Exchange packages by primary index
 description: This article provides an overview of the Dynamics 365 Commerce feature to sort Commerce Data Exchange (CDX) packages by a primary index per package.
 author: jashanno
 ms.date: 01/30/2023
-ms.topic: article
+ms.topic: how-to
 audience: IT Pro
-ms.reviewer: sericks
-ms.search.region: global
-ms.author: jashanno
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
+ms.author: aneesa
 ms.search.validFrom: 2021-08-24
-
+ms.custom: 
+  - bap-template
 ---
 
 # Sort Commerce Data Exchange packages by primary index

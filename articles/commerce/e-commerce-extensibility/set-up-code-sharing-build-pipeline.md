@@ -2,22 +2,24 @@
 # required metadata
 
 title: Set up Azure DevOps code sharing and create a build pipeline
-description: This article describes how to set up code sharing with Microsoft Azure DevOps and create a build pipeline for your Dynamics 365 Commerce online extensibility code. 
+description: This article describes how to set up code sharing with Microsoft Azure DevOps and create a build pipeline for your Microsoft Dynamics 365 Commerce online extensibility code. 
 author: samjarawan
 ms.date: 05/28/2024
-ms.topic: article
+ms.topic: how-to
 audience: Developer
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: bennettray
+ms.author: anupamar
 ms.search.validFrom: 2019-10-31
+ms.custom: 
+  - bap-template
 ---
 
 # Set up Azure DevOps code sharing and create a build pipeline
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to set up code sharing with Microsoft Azure DevOps and create a build pipeline for your Dynamics 365 Commerce online extensibility code. 
+This article describes how to set up code sharing with Microsoft Azure DevOps and create a build pipeline for your Microsoft Dynamics 365 Commerce online extensibility code. 
 
 By taking advantage of the capabilities of [Azure DevOps](/azure/devops/user-guide/what-is-azure-devops), you can help your team plan work, collaborate on code development, and automate the building of deployment packages for Dynamics 365 Commerce e-Commerce.
 
