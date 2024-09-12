@@ -49,6 +49,6 @@ All electronic files that the Electronic Invoicing service generates or that go 
 1. Open the key vault that you intend to use with Electronic invoicing.
 1. Go to **Settings** \> **Secrets**, and select **Generate/Import** to create a secret.
 1. On the **Create a secret** page, in the **Upload options** field, select **Manual**.
-1. Enter the name of the secret. This name will be used during the setup of the service in Regulatory Configuration Service (RCS) and will be referred to as the *key vault secret name*. For more information about how to set up RCS, see [Set up Regulatory Configuration Service (RCS)](e-invoicing-set-up-rcs.md).
+1. Enter the name of the secret. This name will be used during the setup of the service in Dynamics 365 Finance and will be referred to as the *key vault secret name*. For more information about how to set up **Electronic invoicing parameters**, see [Set up Electronic invoicing parameters](gs-e-invoicing-set-up-parameters.md).
 1. In the **Value** field, enter the shared access signature URI that you copied earlier.
 1. Select **Create**.
