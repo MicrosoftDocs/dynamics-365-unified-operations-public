@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.1
 
 # Tips for troubleshooting India GST performance issues
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 This article lists some tips for troubleshooting India GST performance issues.
 
@@ -28,5 +28,5 @@ By default, sales tax amounts on journal lines are calculated whenever tax-relat
 This article [Enable delayed tax calculation on journals](https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-Public/blob/main/articles/finance/general-ledger/enable-delayed-tax-calculation.md) explains how you can delay sales tax calculation on journals. This capability helps improve the performance of tax calculations when there are many journal lines.
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
