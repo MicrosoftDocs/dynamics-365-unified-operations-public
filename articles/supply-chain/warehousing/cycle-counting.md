@@ -75,12 +75,9 @@ The following example shows how you can perform spot cycle counting by using the
 1. Repeat step 3 as needed to count the remaining items in the location, and confirm that no additional items are available for counting.
 
 > [!NOTE]
-> Counting workflows in the mobile app provide an **Add LP or item** button, which lets workers count on-hand inventory that the system doesn't expect, though with a few limitations. For example, in license-plate controlled locations, you can only count each license plate once. As a result, when counting batch-tracked items, workers can only count one batch per license plate. Similarly, if a license plate contains multiple items, only one of those items can be counted.
-
-> [!NOTE]
-> If the unit sequence group for the item has multiple units enabled for cycle counting, the user will be asked to provide quantity for each unit and these quantities will be added up.
-For example, if the item has unit sequence group with boxes and pieces, then during counting the user will be prompted to enter the quantity for boxes (e.g., 2 boxes) and afterwards for pieces (e.g., 5 pieces). If the unit conversion between boxes and pieces is 10, the total counted quantity will be 25 pieces. 
-The idea behind the design is to enable the user to count the full boxes first and then any left over pieces. If there is nothing outside the boxes, user should enter zero for pieces.
+>
+> - Counting workflows in the mobile app provide an **Add LP or item** button, which lets workers count on-hand inventory that the system doesn't expect, though with a few limitations. For example, in license-plate controlled locations, you can only count each license plate once. As a result, when counting batch-tracked items, workers can only count one batch per license plate. Similarly, if a license plate contains multiple items, only one of those items can be counted.
+> - If the unit sequence group for an item has multiple units enabled for cycle counting, workers will be asked to provide a quantity for each unit and the system will then add these quantities together. For example, if an item has a unit sequence group with *boxes* and *pieces*, then the worker will be prompted to enter the number of boxes (for example, 2 boxes) and then the number of pieces (for example, 5 pieces). If the unit conversion between boxes and pieces is 10, the total counted quantity will be 25 pieces. This design enables workers to count full boxes first and then any leftover pieces afterwards. If there are only full boxes, the worker should enter zero when asked for the number of pieces.
 
 ## Resolve cycle counting differences
 
