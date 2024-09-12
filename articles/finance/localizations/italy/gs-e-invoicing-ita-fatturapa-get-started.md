@@ -346,7 +346,7 @@ Follow these steps on the machine where the proxy service is hosted.
         - **ClientCertificateName** – Specify the name of the **App Registration Certificate** in the key vault.
         - **SecurityServiceClientOptions.Endpoint** – Specify the URL of the security service.
         - **SecurityServiceClientOptions.Resource** – Specify the scope to obtain the token for.
-        - **InvoicingServiceClientOptions.Endpoint** – Specify the endpoint of the invoicing service. You can obtain this value from Finance menu item Electronic document parameters \> Electronic Invoicing tab \> Service parameters \> Endpoint URL. And append **/api/environments/<environmentId>** at the end.
+        - **InvoicingServiceClientOptions.Endpoint** – Specify the endpoint of the invoicing service. You can obtain this value from Finance menu item Electronic document parameters \> Electronic Invoicing tab \> Service parameters \> Endpoint URL. And append **/api/environments/\<environmentId\>** at the end.
         - **InvoicingServiceClientOptions.ServiceEnvironmentId** – You can keep this as default **ServiceEnvironment**, since we plan to deprecate this field in future releases.
         - **NotificationsFolder** – Specify the folder to save incoming notification files in. For example, **C:\\\\Files\\\\**.
 
