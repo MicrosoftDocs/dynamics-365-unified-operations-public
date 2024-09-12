@@ -39,4 +39,4 @@ All the secrets and certificates that are used in the Electronic Invoicing servi
     > `New-AzureADServicePrincipal -AppId "ecd93392-c922-4f48-9ddf-10741e4a9b65"`
 
 1. Select **Add**, and then select **Save**.
-1. On the **Overview** page, copy the value of the Domain Name System (DNS) name for the key vault. This value will be used during the setup of **Electronic document parameters** in Dynamics 365 Finance and will be referred to as the **Key Vault URI** value. For more information about how to set up Electronic document parameters, see [Set up Electronic invoicing parameters](gs-e-invoicing-set-up-parameters.md).
+1. On the **Overview** page, copy the value of the Domain Name System (DNS) name for the key vault. This value will be used during the setup of **Electronic invoicing parameters** in Dynamics 365 Finance and will be referred to as the **Key Vault URI** value. For more information about how to set up **Electronic invoicing parameters**, see [Set up Electronic invoicing parameters](gs-e-invoicing-set-up-parameters.md).
