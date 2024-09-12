@@ -209,8 +209,8 @@ This section provides information that will help you set up and configure the pr
 
     $securePassword = ConvertTo-SecureString $certPassword -AsPlainText -Force
 
-    $cert = New-SelfSignedCertificate -KeyLength 2048 -KeyExportPolicy Exportable -FriendlyName "CN=$certName" -CertStoreLocation Cert:\CurrentUser\My -Subject $certName -Provider "Microsoft 
-    Enhanced RSA and AES Cryptographic Provider" -NotAfter (Get-Date).AddMonths(12)
+    $cert = New-SelfSignedCertificate -KeyLength 2048 -KeyExportPolicy Exportable -FriendlyName "CN=$certName" -CertStoreLocation Cert:\CurrentUser\My -Subject $certName 
+    -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider" -NotAfter (Get-Date).AddMonths(12)
 
     Export-Certificate -Cert $cert -FilePath $certCerFile -type CERT | Out-Null
     Export-PfxCertificate -Cert $cert -FilePath $certPfxFile -Password $securePassword | Out-Null
