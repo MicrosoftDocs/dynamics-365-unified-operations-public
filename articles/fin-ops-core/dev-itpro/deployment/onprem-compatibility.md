@@ -96,7 +96,7 @@ Your Service Fabric cluster should always be on a supported version according to
 
 ## Minimum Microsoft .NET Framework runtime
 
-The requirements for .NET Framework are specified on a per node basis. For specific features and versions, see [Set up and deploy on-premises environments](./setup-deploy-on-premises-latest.md#prerequisites).
+The requirements for the .NET Framework are specified on a per-node basis. For specific features and versions, see [Set up and deploy on-premises environments](./setup-deploy-on-premises-latest.md#prerequisites).
 
 | Minimum version                        | Required since |
 |----------------------------------------|----------------|
