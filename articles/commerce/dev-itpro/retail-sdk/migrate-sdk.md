@@ -2,17 +2,15 @@
 title: Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
 description: This article explains how to migrate the Retail SDK to Visual Studio 2017 and update the reference to NuGet.
 author: josaw1
-ms.date: 05/03/2023
-ms.topic: article
+ms.date: 09/11/2024
+ms.topic: how-to
 audience: Developer
-ms.reviewer: josaw
-ms.search.region: global
-ms.author: josaw
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
+ms.author: anupamar
 ms.search.validFrom: 2020-04-10
-ms.dyn365.ops.version: 10.0.11
 ms.custom: 
-ms.assetid: 
-ms.search.industry: Retail
+  - bap-template
 ---
 
 # Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
@@ -77,7 +75,7 @@ In Visual Studio, go to **Tools > Get Tools and Features**. Select the **Individ
     +  [.NET Framework 4.5.1](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net451-developer-pack-offline-installer)
     +  [.NET Framework 4.6.2](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net462-developer-pack-offline-installer)
     
-- [Web Deploy v3.6 ](https://www.microsoft.com/download/confirmation.aspx?id=43717)
+- [Web Deploy v4.0](https://www.microsoft.com/en-us/download/details.aspx?id=106070)
 
 If the SDK compilation fails with the following error message, "The current .NET SDK does not support targeting .NET Standard 2.0", try installing the x86 version of the .NET 2.1 SDK and runtime.
 + [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-2.1.524-windows-x86-installer)

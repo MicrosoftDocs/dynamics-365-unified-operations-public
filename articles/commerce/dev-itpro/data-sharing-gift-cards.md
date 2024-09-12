@@ -5,14 +5,15 @@ title: Cross-company data sharing for gift cards
 description: This article describes how to configure Microsoft Dynamics 365 Commerce to use Dynamics 365 Finance data sharing functionality across data areas to sync gift card data.
 author: BrianShook
 ms.date: 08/26/2022
-ms.topic: article
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
-ms.author: brshoo
+ms.author: shajain
 ms.search.validFrom: 2022-06-20
-
+ms.custom: 
+  - bap-template
 ---
 
 # Cross-company data sharing for gift cards

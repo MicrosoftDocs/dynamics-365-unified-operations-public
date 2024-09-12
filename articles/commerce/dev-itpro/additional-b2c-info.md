@@ -3,13 +3,14 @@ title: Additional B2C information
 description: This article provides additional information on how to set your business-to-consumer (B2C) tenant in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 03/15/2024
-ms.topic: article 
+ms.topic: how-to
 audience: Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: asharchw
 ms.search.validFrom: 2020-02-13
-
+ms.custom: 
+  - bap-template
 ---
 
 # Additional B2C information

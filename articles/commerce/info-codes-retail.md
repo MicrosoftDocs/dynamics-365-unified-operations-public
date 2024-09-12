@@ -5,12 +5,14 @@ author: josaw1
 ms.date: 05/28/2024
 ms.topic: overview
 audience: Application User
-ms.reviewer: josaw
-ms.search.region: global
-ms.author: mashneer
+ms.reviewer: v-chrgriffin
+ms.search.region: Global
+ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
 ms.search.form: RetailInfocodeTable
+ms.custom: 
+  - bap-template
 ---
 
 # Info codes and info code groups

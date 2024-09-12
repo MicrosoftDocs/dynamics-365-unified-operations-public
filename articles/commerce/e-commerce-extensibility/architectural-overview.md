@@ -7,9 +7,12 @@ ms.topic: overview
 audience: Developer
 ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: niholman
+ms.author: asharchw
 ms.search.validFrom: 2019-10-31
+ms.custom: 
+  - bap-template
 ---
+
 # E-commerce architectural overview
 
 [!include [banner](../includes/banner.md)]
