@@ -27,7 +27,7 @@ Before you begin the procedures in this article, complete the following prerequi
 
 - Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
 - Do the common part of Electronic Invoicing service configuration as described in [Set up Electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
-- Import the **Saudi Arabian Zatca submission (SA)** and **Saudi Arabian ZATCA compliance check (SA)** Electronic invoicing features from the repository. For more information, see [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+- Import the **Saudi Arabian Zatca submission (SA)** version **14** or later and **Saudi Arabian ZATCA compliance check (SA)** version **20** or later Electronic invoicing features from the repository. For more information, see [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 
 ## Configure the application-specific parameters
 
