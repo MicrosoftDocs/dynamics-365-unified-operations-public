@@ -342,21 +342,25 @@ Follow these steps on the machine where the proxy service is hosted.
         - **ClientCertificateName** – Specify the name of the **App Registration Certificate** in the key vault.
         - **SecurityServiceClientOptions.Endpoint** – Specify the URL of the security service.
         - **SecurityServiceClientOptions.Resource** – Specify the scope to obtain the token for.
-        - **InvoicingServiceClientOptions.Endpoint** – Specify the endpoint of the invoicing service. You can obtain this value from Finance menu item Electronic document parameters \> Electronic Invoicing tab \> Service parameters \> Endpoint URL.
-        - **InvoicingServiceClientOptions.ServiceEnvironmentId** – You can keep this empty, since its no longer appliable.
+        - **InvoicingServiceClientOptions.Endpoint** – Specify the endpoint of the invoicing service. You can obtain this value from Finance menu item Electronic document parameters \> Electronic Invoicing tab \> Service parameters \> Endpoint URL. And append **/api/environments/<environmentId>** at the end.
+        - **InvoicingServiceClientOptions.ServiceEnvironmentId** – You can keep this as default **ServiceEnvironment**, since we plan to deprecate this field in future releases.
         - **NotificationsFolder** – Specify the folder to save incoming notification files in. For example, **C:\\\\Files\\\\**.
 
         > [!TIP]
         > You can copy the **InvoicingServiceClientOptions.Endpoint** and **InvoicingServiceClientOptions.ServiceEnvironmentId** values from **Organization Administration** \> **Setup** \> **Electronic document parameters** \> **Electronic Invoicing** in finance and operations apps.
 
-    3. In the **web.config** file, find the following line, and add the thumbprint of the proxy server certificate.
+    3. In the **src\\Clients** folder, open the **Constants.cs** file, and set the following parameters:
+       - **ApiVersion** - Update to "2.0"
+       - **InvoicingServiceResumePath** - Update to **/businessdocumentsubmission/resume**
+       - **InvoicingServiceCreateIncomingPath** - Update to  **/incomingdocuments/{0}**
+    4. In the **web.config** file, find the following line, and add the thumbprint of the proxy server certificate.
 
         `<serviceCertificate findValue="[certificate thumbprint]" storeLocation="LocalMachine" storeName="My" x509FindType="FindByThumbprint">`
 
         > [!TIP]
         > When the system goes to production, you can change some values in the web.config file to help reduce the amount of log information that is collected and help save disk space. In the **\<system.diagnostics\>\<source\>** node, change the value of the **switchValue** to **Critical,Error**. For more information, see [MS Service Trace Viewer](/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe).
 
-    4. Build the solution.
+    5. Build the solution.
 
 4. Open IIS Manager. In the tree on the left, remain in the root node. On the right, select **Server Certificates**.
 
