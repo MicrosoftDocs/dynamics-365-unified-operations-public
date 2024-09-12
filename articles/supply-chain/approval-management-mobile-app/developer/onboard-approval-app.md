@@ -54,9 +54,7 @@ You must install the Approvals Management mobile app in your Dataverse environme
 
 Follow these steps to install the Approvals Management mobile app in Dataverse.
 
-1. Join the [Dynamics 365 Procurement and Sourcing group on Viva Engage](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=69010219008&view=all).
-1. Search the Procurement and Sourcing group for the post from Microsoft that provides a link to the *Dynamics 365 Approvals Management* app in Microsoft AppSource. You can find this post by entering *Approval Management App Installation link* in the **Search** field.
-1. Select the link to open the page for the Approvals Management mobile app in AppSource.
+1. Go to the [Dynamics 365 Approvals Management](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.d365-approvalsmanagementapp-preview?flightCodes=9e074b1814ff4c7889a84758ecdbbd16) page on AppSource.
 1. Select **Get it now**.
 1. Follow the on-screen instructions to install the app in the Dataverse environment that is connected to your target Supply Chain Management environment.
 
