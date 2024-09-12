@@ -77,6 +77,11 @@ The following example shows how you can perform spot cycle counting by using the
 > [!NOTE]
 > Counting workflows in the mobile app provide an **Add LP or item** button, which lets workers count on-hand inventory that the system doesn't expect, though with a few limitations. For example, in license-plate controlled locations, you can only count each license plate once. As a result, when counting batch-tracked items, workers can only count one batch per license plate. Similarly, if a license plate contains multiple items, only one of those items can be counted.
 
+> [!NOTE]
+> If the unit sequence group for the item has multiple units enabled for cycle counting, the user will be asked to provide quantity for each unit and these quantities will be added up.
+For example, if the item has unit sequence group with boxes and pieces, then during counting the user will be prompted to enter the quantity for boxes (e.g., 2 boxes) and afterwards for pieces (e.g., 5 pieces). If the unit conversion between boxes and pieces is 10, the total counted quantity will be 25 pieces. 
+The idea behind the design is to enable the user to count the full boxes first and then any left over pieces. If there is nothing outside the boxes, user should enter zero for pieces.
+
 ## Resolve cycle counting differences
 
 A cycle counting difference occurs in the following scenarios if the **Is a cycle count supervisor** option is set to **No** for a work user ID:
