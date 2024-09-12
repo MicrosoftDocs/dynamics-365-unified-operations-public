@@ -5,12 +5,13 @@ author: josaw1
 ms.date: 05/03/2023
 ms.topic: overview
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: anupamar
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 10.0.11, Retail July 2017 update
 ms.collection: get-started
+ms.custom: 
+  - bap-template
 ---
 
 # Retail software development kit (SDK)
@@ -84,7 +85,7 @@ Visual Studio 2017 has TypeScript 3.1 as the default version. You must install v
     +  [.NET Framework 4.6.2](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net462-developer-pack-offline-installer)
     +  [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net472-developer-pack-offline-installer)
     
-- [Web Deploy v3.6 ](https://www.microsoft.com/download/confirmation.aspx?id=43717)
+- [Web Deploy v4.0](https://www.microsoft.com/en-us/download/details.aspx?id=106070)
 
 
 If the SDK compilation fails with the following error message, "The current .NET SDK does not support targeting .NET Standard 2.0", try installing the x86 version of the .NET 2.1 SDK and runtime.
