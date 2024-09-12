@@ -46,11 +46,14 @@ Before you install Fabric and use it with business performance planning, the fol
     2. Select **New**, and then select **Cloud**.
     3. In the **Connection type** field, select **Dataverse**.
     4. In the **Environment domain** field, enter the environment URL of the environment where Business performance analytics is installed. You can find the environment URL on the **Environment details** page in Power Platform admin center.
-    5. In the **Authentication method** field, select **OAuth2.0**.
-    6. Select **Edit credentials**, and complete authentication.
-    7. In the **Encrypted connection** field, select **Encrypted**.
-    8. In the **Privacy level** field, select **Organizational**.
-    9. Select **Create**.
+    6. In the **Authentication method** field, select **OAuth2.0**.
+    7. Select **Edit credentials**, and complete authentication.
+    8. In the **Encrypted connection** field, select **Encrypted**.
+    9. In the **Privacy level** field, select **Organizational**.
+    10. Select **Create**.
+
+    > [!NOTE]
+    > In prerequisite 3.4, the enrivonment URL should not start with "https://" and should not end in "/" If your URL does, please delete this prefix and suffix.
 
 ## Link Business performance analytics data to the organization's Fabric workspace
 
