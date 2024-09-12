@@ -76,18 +76,6 @@ Public method: Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetCs
 | **Deployment option**              | All |
 | **Status**                         | The rollout of this change is being done in phases, region by region, starting first with sandbox environments. Then it'll be applied in production environments. The full rollout is estimated in October 2024. Changes are backported to 10.0.39 (PU63) and all greater releases. |
 
-#### Note for dev machines, LBD and CHE environments
-An issue has been identified while deploying changes in developer environments or customer hosted environments (CHE) as the flight is set to false by default. If you're receiving the following error in your developer machine: “EnableSharingOfValidStorageConnectionString is false. Fetching a valid storage connection string has been disabled”, follow these steps to get unblocked: <br>
-a) Execute the below query in SSMS: 
-declare @flightName NVARCHAR(100) = 'EnableSharingOfValidStorageConnectionString';  
-IF NOT EXISTS (SELECT TOP 1 1 FROM SysFlighting WHERE flightName = @flightName)  
-INSERT INTO SYSFLIGHTING(FLIGHTNAME,ENABLED, FLIGHTSERVICEID,PARTITION)  
-SELECT @flightName, 1, 12719367,RECID FROM DBO.[PARTITIONS];  
-ELSE  
-UPDATE SysFlighting SET enabled = 1, flightServiceId = 12719367 WHERE flightName = @flightName;  
-select * from SysFlighting where flightName = 'EnableSharingOfValidStorageConnectionString'; <br>
-b) Restart AOS and Batch service in CHE Environment.
-
 ### Microsoft will no longer ship or support the Visual Studio extensions for finance and operations apps, Power Platform tools, and Visual Studio versions prior to 2022.
 
 | &nbsp;  | &nbsp; |
