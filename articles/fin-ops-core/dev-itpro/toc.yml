@@ -503,6 +503,8 @@ items:
             href: deployment/setup-deploy-on-premises-latest.md
           - name: Set up and deploy on-premises environments (Platform update 41 through 55)
             href: deployment/setup-deploy-on-premises-pu41.md
+          - name: Configure Lifecycle Services connectivity for Finance + Operations (on-premises) deployments
+            href: deployment/onprem-auth-lcs.md
           - name: Installation steps for Retail channel components in an on-premises environment
             href: deployment/deploy-retail-onprem.md
           - name: Develop and deploy custom models to on-premises environments
