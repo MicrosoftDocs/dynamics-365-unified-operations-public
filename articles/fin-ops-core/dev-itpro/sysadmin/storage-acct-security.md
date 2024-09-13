@@ -21,9 +21,9 @@ This article describes the latest security enhancements in finance and operation
 
 ## Frequently asked questions (FAQs)
 
-### I'm receiving  "Fetching a valid storage connection string is disabled" error in dev machine/CHE. How can I resolve this?
-The public method, Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetCsuStorageConnectionString() is getting deprecated. For more information, see [End of support for sharing storage account](/fin-ops/get-started/removed-deprecated-features-platform-updates#end-of-support-for-sharing-storage-account-connection-strings-via-public-api-getcsustorageconnectionstring). An issue has been identified while deploying changes in developer environments or customer hosted environments (CHE) as the flight is set to false by default. If you're receiving the following error in your developer machine: <br> “EnableSharingOfValidStorageConnectionString is false. Fetching a valid storage connection string has been disabled”, follow these steps: <br><br>
-a) Execute the below query in SSMS: <br>
+### I'm receiving  "Fetching a valid storage connection string is disabled" error in dev machine/CHE. How can I resolve this error?
+The public method, Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetCsuStorageConnectionString() is getting deprecated. For more information, see [End of support for sharing storage account](/fin-ops/get-started/removed-deprecated-features-platform-updates#end-of-support-for-sharing-storage-account-connection-strings-via-public-api-getcsustorageconnectionstring). There's an issue when deploying changes in developer environments or customer hosted environments (CHE) when the flight is set to false by default. If you're receiving the following error in your developer machine: <br> “EnableSharingOfValidStorageConnectionString is false. Fetching a valid storage connection string has been disabled,” follow these steps: <br><br>
+a) Execute the following query in SSMS: <br>
 declare @flightName NVARCHAR(100) = 'EnableSharingOfValidStorageConnectionString'; <br>
 IF NOT EXISTS (SELECT TOP 1 1 FROM SysFlighting WHERE flightName = @flightName) <br>
 INSERT INTO SYSFLIGHTING(FLIGHTNAME,ENABLED, FLIGHTSERVICEID,PARTITION) <br>
