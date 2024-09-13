@@ -33,8 +33,8 @@ As data is updated, changes are automatically reflected in your lakehouse.
 
 Before you install Fabric and use it with business performance planning, the following prerequisites must be completed:
 
-1. You must have a Power BI premium capacity license or Fabric capacity. See [Link your Dataverse environment to Microsoft Fabric and unlock deep insights
-](https://learn.microsoft.com/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric#prerequisites) for the list of premium capacity Power BI SKUs. When setting up a Fabric workspace, this translates to a Pro, Trial, or Premium per-user capacity.
+1. You must have a Power BI premium capacity license or Fabric capacity. For more information, see [Link your Dataverse environment to Microsoft Fabric and unlock deep insights
+](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric#prerequisites) for the list of premium capacity Power BI SKUs. When setting up a Fabric workspace, this translates to a Pro, Trial, or Premium per-user capacity.
 2. The workspace that's linked to Dataverse must be assigned to premium or Fabric capacity in the same region as your Business performance analytics Dataverse environment. If you create a new workspace, you must have access to Power BI or Fabric premium capacity in the same region as your Dataverse environment. To confirm that you have access to the required premium capacity, follow these steps:
 
     1. In Power BI, open the workspace.
