@@ -19,10 +19,9 @@ ms.dyn365.ops.version:
 
 This article describes the latest security enhancements that we are doing in interaction with FnO storage account. A brief of all modifications and decprecations can be found at [Removed or deprecated platform features](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates).
 
-## Disabling public access to storage connection string via public API GetCsuStorageConnectionString
+## Frequently Asked Questions (FAQs)
+### How to resolve "Fetching a valid storage connection string has been disabled" error in dev machine/CHE?
 Public method: Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetCsuStorageConnectionString() is getting depcrecated. More details are [here](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates.md#end-of-support-for-sharing-storage-account-connection-strings-via-public-api-getcsustorageconnectionstring).
-
-### Note for dev machines and CHE environments
 An issue has been identified while deploying changes in developer environments or customer hosted environments (CHE) as the flight is set to false by default. If you're receiving the following error in your developer machine: <br> “EnableSharingOfValidStorageConnectionString is false. Fetching a valid storage connection string has been disabled”, follow these steps to get unblocked: <br><br>
 a) Execute the below query in SSMS: declare @flightName NVARCHAR(100) = 'EnableSharingOfValidStorageConnectionString';
 IF NOT EXISTS (SELECT TOP 1 1 FROM SysFlighting WHERE flightName = @flightName)
