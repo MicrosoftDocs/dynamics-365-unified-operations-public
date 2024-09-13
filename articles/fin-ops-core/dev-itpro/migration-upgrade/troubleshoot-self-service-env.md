@@ -154,4 +154,38 @@ In the Replication Monitor, select and hold (or right-click) the failed publicat
 
 **Solution**
 
-The **ReleaseUpgradeDB** framework logs the execution of each script in the **ReleaseUpdateScriptsLog** table. When you tune the performance of the data upgrade process, you can monitor the duration of scripts that are run. In this table, you can easily identify the longest-running process or job.
+The **ReleaseUpgradeDB** framework logs the execution of each script in the **ReleaseUpdateScriptsLog** table. When you tune the performance of the data upgrade process, you can monitor the duration of scripts that are run. In this table, you can easily identify the longest-running process or job. Some of the following queries can be used on the target Axdb to check progress and more- <br><br>
+**To check running processes in AxDB** <br>
+SELECT   SPID       = er.session_id
+ ,STATUS         = ses.STATUS
+ ,[Login]        = ses.login_name
+ ,Host           = ses.host_name
+ ,BlkBy          = er.blocking_session_id
+ ,DBName         = DB_Name(er.database_id)
+ ,CommandType    = er.command
+ ,ObjectName     = OBJECT_NAME(st.objectid)
+ ,CPUTime        = er.cpu_time
+ ,StartTime      = er.start_time
+ ,TimeElapsed    = CAST(GETDATE() - er.start_time AS TIME)
+ ,SQLStatement   = st.text
+FROM    sys.dm_exec_requests er
+    OUTER APPLY sys.dm_exec_sql_text(er.sql_handle) st
+    LEFT JOIN sys.dm_exec_sessions ses
+    ON ses.session_id = er.session_id
+WHERE   st.text IS NOT NULL
+<br><br>
+**To check dbupgrade status**<br>
+Following query shows the status of the data upgrade servicing :<br>
+SELECT StartTime,EndTime,Steps,SubSteps,STATUS FROM [DBUPGRADE].[DATAUPGRADESTATUS]
+ORDER BY EndTime DESC
+<br><br>
+**To check batch job related details**<br>
+1.  select RECID, CAPTION, * from batchjob where STATUS=2 <br>
+
+2. select * from batch where BATCHJOBID = _jobid_ and status=2 <br>
+
+3. select serverid, status, caption, datediff(mi, startdatetime, ENDDATETIME), startdatetime, ENDDATETIME ,* from batchhistory where Batchjobid = _jobid_ <br>
+
+4. select serverid, status, caption, Classnumber, datediff(mi, startdatetime, ENDDATETIME), _timetakeninmin, startdatetime, ENDDATETIME ,* from batch where batchjobid = _jobid_ <br>
+
+5. select * from CLASSIDTABLE where ID in (select distinct classnumber from batch where batchjobid=<jobid>)
