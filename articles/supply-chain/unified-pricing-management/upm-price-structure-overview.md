@@ -18,11 +18,9 @@ ms.search.form: GUPPricingTree, GUPPriceComponentCodeSetup
 
 When a sales order is placed, you can review the detailed price breakdown, including the price component. The breakdown corresponds to the price structure that you've configured. The price details provide an audit record that shows how the price was determined, and they can serve as a starting point for future price investigation.
 
-The following method is available for building the price structure:
+You can set up your system to use either a single price structure or multiple price structures.
 
-- **Price trees** – This method enables multiple price structures that are based on order attribute values for each company.
-
-[<img src="media/price-trees-block-diagram.png" alt="Price tree and price component code setup elements." title="Price tree and price component code setup elements" width="720" />](media/price-trees-block-diagram.png#lightbox)
+[<img src="media/price-trees-block-diagram.png" alt="Price tree elements." title="Price tree setup elements" width="720" />](media/price-trees-block-diagram.png#lightbox)
 
 ## Price component types
 
@@ -30,7 +28,7 @@ The following table summarizes the main component types that can be included in 
 
 | Price component | Price position | Details |
 |---|---|---|
-| Base price | Unit Price | <p>The *[base price](upm-base-price-versions.md)* represents the common price for general use. It's at the level of the stock keeping unit (SKU). You can have only *one* price component code of this type in each price structure. That price component code can be of any of the following base price types:</p><ul><li>Base price - inventory price</li><li>Base price - purchase price</li><li>Base price - sales price</li></ul><p>The base price comes from the **Item base price** page, and can be either calculated or manually entered.</p><p>If you set up the base price by using a price structure (price component code setup or price trees), and no matching record exists on the **Item base price** page, the system will determine whether the item is a standard cost item. If it's a standard cost item, the system will source the base price from the active item standard cost.</p> |
+| Base price | Unit Price | <p>The *[base price](upm-base-price-versions.md)* represents the common price for general use. It's at the level of the stock keeping unit (SKU). You can have only *one* price component code of this type in each price structure. That price component code can be of any of the following base price types:</p><ul><li>Base price - inventory price</li><li>Base price - purchase price</li><li>Base price - sales price</li></ul><p>The base price comes from the **Item base price** page, and can be either calculated or manually entered.</p><p>If you set up the base price by using a price structure (price trees), and no matching record exists on the **Item base price** page, the system will determine whether the item is a standard cost item. If it's a standard cost item, the system will source the base price from the active item standard cost.</p> |
 | Sales trade agreement price | Unit Price | <p>If the *[sales trade agreement price](upm-sales-trade-agreement-prices.md)* is available, it takes precedence over the base price, because it represents a special price arrangement with a specific group of consumers for a specific set of products.</p><p>You can have only *one* price component code of this type. However, any number of sales trade agreement prices can apply to that code in different situations.</p> |
 | Margin component price adjustment | Unit Price | <p>*[Margin component price adjustments](upm-margin-price-adjustments.md)* move item prices up or down from the base price. Margin component price adjustments can be associated with many types of agreements, promotions, and events. They let you easily adjust prices without changing the base price.</p><p>You can have *multiple* price component codes of this type, and you can associate any number of [pricing rules](upm-margin-discount-pricing-rules.md) with each one. Price adjustments are compounded across price component codes and add up to the total price adjustment. |
 | Discounts | On-invoice discounts | <p>*[Discounts](upm-discounts.md)* let you adjust prices based on a wide range of calculation methods that are designed to encourage the purchase of specific products, volumes, packages, and so on. You can have *multiple* price component codes of this type, and you can associate any number of [pricing rules](upm-margin-discount-pricing-rules.md) with each one.</p> |

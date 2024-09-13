@@ -25,7 +25,7 @@ This article explains how to manage *across-price-component-code concurrency*. F
 
 ## Set across-price-component-code concurrency options for each price structure
 
-Concurrency across price components codes affects only discounts and margin price adjustments. You configure the setting at the price structure level, by using the **Concurrency mode across priority** field on either the **Price component code setup** page or the **Price trees** page. The following values are available:
+Concurrency across price components codes affects only discounts and margin price adjustments. You configure the setting at the price structure level, by using the **Concurrency mode across priority** field on the **Price trees** page. The following values are available:
 
 - *Compounded* – The system first computes the price adjustment or discount for each line in the price structure. It then calculates the final discount or adjustment by adding the value of every line. This value is available only for lines where the **Price component** field is set to *Discounts* or *Margin component*. (For margin components, this value is the only one that's available.)
 - *Best price* – If the price structure includes more than one price component code that has this value, only one of the lines (the one that has the largest discount) will contribute to the final unit price. This value is available only for lines where the **Price component** field is set to *Discounts*.
@@ -51,7 +51,7 @@ A setting on the **Pricing management parameters** page affects the way that con
 
 If your price structure includes multiple margin and/or discount components, the order that the components are calculated in and the method that's used to combine them can significantly affect the final price.
 
-The following table shows an example of a price component code setup and its resulting calculations.
+The following table shows an example of a singel price structure setup and its resulting calculations.
 
 | Price component code | Description | Pricing sequence | Calculation method | Value | Compounded | Calculated line value | New unit price |
 |---|---|---|---|---|---|---|---|

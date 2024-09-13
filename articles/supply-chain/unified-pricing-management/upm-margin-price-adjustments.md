@@ -34,4 +34,4 @@ For information about how to create pricing rules for each margin price adjustme
 
 For example, the following illustration shows a price structure that contains two sequential margin component price adjustments (*General price adjustments* and *Seasonal price adjustments*).
 
-[<img src="media/price-component-code-setup.png" alt="Price structure on the Price component code setup page." title="Price structure on the Price component code setup page" width="720" />](media/price-component-code-setup.png#lightbox)
+[<img src="media/price-component-code-setup.png" alt="Price structure on the Price tree page." title="Price structure on the Price tree page" width="720" />](media/price-component-code-setup.png#lightbox)

@@ -16,14 +16,7 @@ ms.search.form: GUPPriceComponentCode, GUPPriceComponentCodeGroup
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-The purpose of making pricing decisions is to increase profitability. Good decision making demands a thorough understanding of the different elements that are involved in determining the price. By providing a list of pricing building blocks, Pricing management lets you create a price structure (price tree) for pricing at the macro level. The price component code is the basic unit of the price structure.
-
-The following two methods are available for building the price structure:
-
-- **Price component code setup** – This method provides a single, uniform price structure for each company.
-- **Price trees** – This method enables multiple price structures that are based on order attribute values for each company.
-
-You must use *either* the price component code setup (a single price tree) *or* multiple price trees. You'll make this decision based on the complexity of your price structure.
+The purpose of making pricing decisions is to increase profitability. Good decision making demands a thorough understanding of the different elements that are involved in determining the price. By providing a list of pricing building blocks, Pricing management lets you create a price structure for pricing at the macro level. The price component code is the basic unit of the price structure. You set up your prices structure by creating one or more price trees in Unified pricing management.
 
 | Name | Description |
 |---|---|

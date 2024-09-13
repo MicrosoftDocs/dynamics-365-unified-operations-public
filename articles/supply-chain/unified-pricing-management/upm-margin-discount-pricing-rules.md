@@ -75,7 +75,7 @@ If you're setting up a pricing rule for a margin component price adjustment, set
 
 If you're setting up a pricing rule for a discount, set the following fields on the **General** FastTab. Not all these fields are available for every type of discount.
 
-- **Discount account** – If you want to post the discount amount for the discount record to a separate general ledger account, specify that account. This field overrides the similar field that's available for price structures (**Price component code setup** or **Price tree**). Learn more in [Price component posting](upm-price-component-posting.md).
+- **Discount account** – If you want to post the discount amount for the discount record to a separate general ledger account, specify that account. This field overrides the similar field that's available for price structures (price trees). Learn more in [Price component posting](upm-price-component-posting.md).
 - **Discount concurrency mode** – Select one of the following values to specify how the system should handle situations where more than one discount rule applies to the same price component code in a price structure. (This type of situation is known as concurrency.)
 
     - *Exclusive* – The discount is an exclusive discount. Therefore, it can't be combined with other discounts. If there are multiple exclusive discounts, the price engine will apply only the one that gives the largest discount.

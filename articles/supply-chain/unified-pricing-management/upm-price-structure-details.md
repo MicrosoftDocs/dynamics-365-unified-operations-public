@@ -24,9 +24,8 @@ Regardless of whether you're using a single price structure or multiple price st
 
 Follow these steps to create and configure a price structure.
 
-1. Follow one of these steps:
-
-       - No matter you're using a single or multiple price structures, follow the instructions in [Set up a company to use multiple price structures](upm-price-structure-multiple.md). Then go to **Pricing management \> Setup \> Price component codes \> Price trees**, create or select a price tree, select the **Price component code list** FastTab, and continue with step 2 of this procedure.
+1. Create the pricing tree or trees that you need as described in [Set up a company to use multiple price structures](upm-price-structure-multiple.md) or [Set up a company to use a single price structure (preview)](upm-price-structure-single.md).
+1. Go to **Pricing management \> Setup \> Price component codes \> Price trees**, create or select a price tree, and expand the **Price component code list** FastTab.
 
 1. Add each price component code that should be part of the current price structure. Use the buttons on the toolbar to add and remove lines as required. The following fields are available for each line:
 
@@ -48,5 +47,6 @@ Follow these steps to create and configure a price structure.
     - **Mandatory** – For price trees where the **Enable mandatory check** option is set to *Yes*, use this checkbox to mark each price component code that's mandatory in the sales order. If a price component code isn't applicable, an error will be shown.
 
     > [!NOTE]
-    > If you use multiple price structures (price trees), they can't include price component codes where the **Price component** field is set to *Auto charge*. Instead, the system will apply the standard auto charge logic in Microsoft Dynamics 365 Supply Chain Management. In other words, if an auto charge rule record is applicable, the auto charge will apply to the sales order. 
+    > If you use multiple price structures, they can't include price component codes where the **Price component** field is set to *Auto charge*. Instead, the system will apply the standard auto charge logic in Microsoft Dynamics 365 Supply Chain Management. In other words, if an auto charge rule record is applicable, the auto charge will apply to the sales order.
+
 1. When you've set up all the lines that you need in your price structure, select **Save** on the Action Pane.
