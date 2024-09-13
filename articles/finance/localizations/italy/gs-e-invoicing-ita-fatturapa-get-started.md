@@ -63,7 +63,7 @@ To create a new chain of certificates, follow these steps.
     - Certificate for digital signature (Optional)
 
     > [!NOTE]
-    > The client identity certificate has an expiration date. Check this date and arrange a task to obtain a new certificate when the current one is about to expire. To establish proper rotation of the certificates that are used for this integration, see the [Certificate rotation](#certificate-rotation) section of this article.
+    > The client identity certificate has an expiration date. Check this date and arrange a task to obtain a new certificate when the current one is about to expire. To establish proper rotation of the certificates that are used for this integration, see the [Rotate certificates](#rotate-certificates) section of this article.
 
 1. Select the **Chain of certificates** menu item.
 1. Select **New**, enter a name (for example **SDIChainProd** or **SDIChainTest**).
@@ -219,7 +219,7 @@ To create an app registration, follow these steps.
 1. Use the following Windows PowerShell script to create a self-signed certificate for service-to-service (S2S) authentication.
 
     > [!NOTE]
-    > The certificate is set to expire in 12 months. You can extend this period by modifying the value of the **NotAfter** parameter. To establish proper rotation of the certificates that are used for this integration, see the [Certificate rotation](#certificate-rotation) section of this article.
+    > The certificate is set to expire in 12 months. You can extend this period by modifying the value of the **NotAfter** parameter. To establish proper rotation of the certificates that are used for this integration, see the [Rotate certificates](#rotate-certificates) section of this article.
 
     ```powershell
     $certOutputLocation = "C:\certs\proxytest"
@@ -402,7 +402,7 @@ To set up the SDI Proxy service in IIS, follow these steps.
     ![Specifying the proxy service certificate file.](../media/e-invoicing-ita-fatturapa-get-started-proxy-cert-2.png)
 
     > [!NOTE]
-    > The server certificate has an expiration date. Check this date and arrange a task to obtain a new certificate when the current one is about to expire. To establish proper rotation of the certificates that are used for this integration, see the [Certificate rotation](#certificate-rotation) section of this article.
+    > The server certificate has an expiration date. Check this date and arrange a task to obtain a new certificate when the current one is about to expire. To establish proper rotation of the certificates that are used for this integration, see the [Rotate certificates](#rotate-certificates) section of this article.
 
 1. Select and hold (or right-click) **Sites** and select **Add website**.
 1. In the **Add Website** dialog box, in the **Site name** field, enter a name for the site.
