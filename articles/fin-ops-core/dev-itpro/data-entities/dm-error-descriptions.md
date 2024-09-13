@@ -1,12 +1,12 @@
 ---
 title: Data management error descriptions and known limitations
 description: Learn about the error messages that you might encounter in data management, including a table that outlines possible causes of various errors.
-author: pnghub
+author: priyanshasharma2808
 ms.author: gned
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.date: 05/14/2024
+ms.date: 09/13/2024
 ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
@@ -25,7 +25,7 @@ This article documents the scenarios where specific errors are seen. It doesn't 
 
 When you use recurring imports (enqueue API), the files are sent to the endpoint at a high frequency. If sequential processing of messages isn't enabled, data management tries to process the files in parallel. When files are processed in parallel, if multiple files have the same record, multiple threads try to update the same record at the same time. You must update the data so that the same records aren't repeated across multiple files. The entity is expected to handle cases where each record occurs in only one file. To mitigate the issue, sequentially process the files. If this issue isn't a data issue, and the entity isn't expected to process in parallel, the entity isn't subject to parallel processing. Enable sequential processing of messages in the recurring job.
 
-## There are fields, which are not mapped to Entity \<EntityName\>
+## There are fields, which aren't mapped to Entity \<EntityName\>
 
 It's a common practice to use the export functionality to generate the entity template file that can be used later for imports. If you export the template in fixed-width format where the **First row header** option is set to **No** in the source data format setup, the exported template doesn't have the column names. Then, when the file is imported, this error occurs. 
 
@@ -33,20 +33,20 @@ It's a common practice to use the export functionality to generate the entity te
 
 In one scenario, the dev environment points to the database in another environment (for example, the UAT environment), and the export job is run from the source environment (dev). The exported file is uploaded to the blob storage that's associated with the source environment (dev). This job shows up in the target environment (UAT) because the database is shared. If you try to download the exported file by using the **Download file** option, you receive this error because the file doesn't exist in the blob storage of the target environment (UAT) that you're trying to download from.
 
-## XML is not in correct format-Exception from HRESULT: 0xC0010009
+## XML isn't in correct format-Exception from HRESULT: 0xC0010009
 
 This message covers all XML formatting issues in the file. For example, the data project has mappings for columns that don't exist in the file that's used for the operation. This error occurs if some columns were previously removed from the file, and the file is now used. Either fix the mapping in the data project, or fix the file so that it has all the expected columns.
 
 ## Error while uploading a file during export
 
-When you run an export in a development environment, an error occurs if the export file can't be uploaded. To fix this issue, install the latest Microsoft Azure Storage emulator, restart the virtual machine (VM), and rerun the export job. You can install the storage emulator from [Azure Storage Emulator](/azure/storage/common/storage-use-emulator).
+When you run an export in a development environment, an error occurs if the export file can't be uploaded. To fix this issue, install the latest Microsoft Azure Storage emulator, restart the virtual machine (VM), and rerun the export job. You can install the storage emulator from [Azure Storage Emulator](/azure/storage/common/storage-use-emulator). We currently support an export file size of up to 256 MB. To increase this limit to 5,000 MB, update the **AzureStorageServiceVersion** field to **2019-12-12** in the **DMFPARAMETERS table**. To ensure the file size stays within the 5,000 MB limit, apply filters directly from the export project form to reduce the number of records being exported.
 
 ## Error codes
 
 | Error code | Possible cause | Possible resolution |
 |---|---|---|
 | DMF021 | An `AddColumnsToFullDataDerivedComponent` failure is raised if the enumeration (enum) value mappings are missing. The possible values for the enum can't be determined. | Remove the affected enum column from the mapping. If the error continues, contact Support to determine which column is involved. |
-| DMF023 | An error occurred when the database connection was added. Your bring your own database (BYOD) is unreachable, or the source database is unreachable because of patching/deployment. | Verify the BYOD connection string, and retry later. |
+| DMF023 | An error occurred when the database connection was added. You bring your own database (BYOD) is unreachable, or the source database is unreachable because of patching/deployment. | Verify the BYOD connection string, and retry later. |
 | DMF030 | An error occurred when OLEDB source properties were added or updated, because of incorrect field mapping. | To identify the problematic fields, remove all fields from the mapping, except key columns, and then do an export. If the export is successful, add back a few fields at a time until you find the problematic field. Don't map any virtual fields if you chose to skip staging. Entities that have duplicate labels might cause this error. Only one entity can be assigned a particular label as the entity name. If more than one entity uses the same label, an error occurs. |
 | DMF040 | The Excel query failed. The system can't retrieve the column names or the worksheet name. The system automatically restarts any Data management instances that frequently raise this error. | Consider changing the file type of the import project to something other than Excel. |
 | DMF042 | The Data management service is unreachable. This issue can occur because patching or deployment is in progress. | This issue is usually a transient failure. Try the import/export job again. If the error consistently occurs, contact Support. |
@@ -63,7 +63,7 @@ When you run an export in a development environment, an error occurs if the expo
 | DMF1968 | The database wasn't found. | Any failed import/export that has this error is automatically retried. If this error occurs during an export to the BYOD, verify the BYOD connection string. |
 | DMF1969 | SSIS package execution threw an exception. | Review the execution log of the job for more information and a resolution. If there's no information, contact Support. |
 | DMF1970 | The **Truncate entity** command timed out. | The full export to database error took more than 10 minutes to remove existing data for the company. Confirm that no processes are running on the destination table during the export. Increase the command time-out on the **BYOD** tab of the **Framework parameters** page. |
-| DMF1973 | Publishing of the entity failed. | Review the details in the error/execution log. If there's insufficient information in the log, contact Support. |
+| DMF1973 | Publishing of the entity failed. | Review the details in the error/execution log. If the information in the lot is insufficient information, contact Support. |
 | DMF1987 | <p>This error can have two causes:</p><ol><li>A failure occurred because of a table mapping issue.</li><li>A new field/column was added without republishing the entity.</li></ol> | <ol><li>To identify the problematic field, remove all fields from the mapping, except key columns, and then do an export. If the export is successful, incrementally add a few columns at a time and re-export until you find the problematic column.</li><li>After you deploy changes, refresh the entity list, and republish the entity.</li></ol> |
 | DMF1995 | SQL login timed out. Imports or exports that have this error are automatically retried. | For a database export, set the connection time-out on the connection string so that it's longer than default time-out (30 seconds). |
 | DMF1996 | A deadlock occurred. Concurrent imports for the same project are interfering with each other. | If you're using automatically generated numbers for the import, keep the file size low to prevent the staging table from being locked. If the error consistently occurs for a data project, adjust the scheduling of the project to prevent concurrent execution. |

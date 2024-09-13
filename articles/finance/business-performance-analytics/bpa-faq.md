@@ -7,7 +7,7 @@ ms.topic: faq
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
-ms.date: 5/20/2024
+ms.date: 9/11/2024
 ---
 
 # Business performance analytics FAQ
@@ -36,18 +36,19 @@ The following errors are likely to occur if another operation is in progress dur
 3. Find **Business performance analytics**, and select **Installation failed**.
 4. Select the link to retry the installation, and monitor the app installation process.
 
-
 ### Why isn't my data showing up in Business performance analytics?
 
 To maintain the accuracy of report data, Business performance analytics assesses the quality of the source data. If the assessments don't meet defined rules, Business performance analytics logs information in the **Bpa self help logs** table in Microsoft Dataverse. To learn more, see [Business performance analytics self-help](/troubleshoot/dynamics-365/finance/business-performance-analytics/business-performance-analytics-self-help-overview).
 
-### Why isn't my data showing up in Business performance analytics? 
-To maintain the accuracy of report data, Business performance analytics assesses the quality of the source data. If the assessments don't meet defined rules, Business performance analytics logs information in the "Bpa self help logs table" in Microsoft Dataverse. <!-- The following links appears to be deprecated. To learn more see [Business performance analytics self-help](BPA-help-overview.md). -->
+Some customers might reach the storage capacity limits of their Power BI Embedded SKU. In this case, the Power BI dataset that they need for reports can't be updated. By default, Business performance analytics uses the A3 SKU for Power BI Embedded. We recommend that you scale up your SKU to raise your Power BI Embedded storage capacity. For more information, see [Capacity and SKUs in Power BI embedded analytics](/power-bi/developer/embedded/embedded-capacity).
 
+### Why is Business performance analytics using a lot of managed data lake storage in Dataverse?
+
+As part of the data pipeline for Business performance analytics, your data is transformed to fit our dimensional data model. This process creates files that are saved to the managed data lake. The data transformation process occurs every time Business performance analytics refreshes its data. It generates new files in the managed data lake without deleting the old, obsolete files. The old files are deleted in 30 days, or our team manually deletes them when Business performance analytics uses 50 percent or more of the managed data lake's storage capacity.
 
 ### When will data be available in reports after the Business performance analytics is installed for the first time?
 
-Data will be available after 24 hours after installation is completed.
+Data will be available 24 hours after installation is completed.
 
 ### When will data be available on reports?
 

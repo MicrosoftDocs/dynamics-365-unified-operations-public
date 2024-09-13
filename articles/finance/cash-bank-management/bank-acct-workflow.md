@@ -17,6 +17,7 @@ ms.dyn365.ops.version:
 # Bank account lifecycle management
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This article explains how to enable an approval workflow for bank accounts in the **Cash and bank management** module.
 

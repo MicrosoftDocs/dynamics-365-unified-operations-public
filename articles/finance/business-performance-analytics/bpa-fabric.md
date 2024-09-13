@@ -33,8 +33,9 @@ As data is updated, changes are automatically reflected in your lakehouse.
 
 Before you install Fabric and use it with business performance planning, the following prerequisites must be completed:
 
-1. You must have a Power BI premium capacity license or Fabric.
-2. The workspace that's linked to Dataverse must be assigned to premium or fabric capacity in the same region as your Business performance analytics Dataverse environment. If you create a new workspace, you must have access to Power BI or Fabric premium capacity in the same region as your Dataverse environment. To confirm that you have access to the required premium capacity, follow these steps:
+1. You must have a Power BI premium capacity license or Fabric capacity. For more information, see [Link your Dataverse environment to Microsoft Fabric and unlock deep insights
+](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric#prerequisites) for the list of premium capacity Power BI SKUs. When setting up a Fabric workspace, this translates to a Pro, Trial, or Premium per-user capacity.
+2. The workspace that's linked to Dataverse must be assigned to premium or Fabric capacity in the same region as your Business performance analytics Dataverse environment. If you create a new workspace, you must have access to Power BI or Fabric premium capacity in the same region as your Dataverse environment. To confirm that you have access to the required premium capacity, follow these steps:
 
     1. In Power BI, open the workspace.
     2. Select **Workspace settings** \> **Premium**.
@@ -46,11 +47,14 @@ Before you install Fabric and use it with business performance planning, the fol
     2. Select **New**, and then select **Cloud**.
     3. In the **Connection type** field, select **Dataverse**.
     4. In the **Environment domain** field, enter the environment URL of the environment where Business performance analytics is installed. You can find the environment URL on the **Environment details** page in Power Platform admin center.
-    5. In the **Authentication method** field, select **OAuth2.0**.
-    6. Select **Edit credentials**, and complete authentication.
-    7. In the **Encrypted connection** field, select **Encrypted**.
-    8. In the **Privacy level** field, select **Organizational**.
-    9. Select **Create**.
+    6. In the **Authentication method** field, select **OAuth2.0**.
+    7. Select **Edit credentials**, and complete authentication.
+    8. In the **Encrypted connection** field, select **Encrypted**.
+    9. In the **Privacy level** field, select **Organizational**.
+    10. Select **Create**.
+
+    > [!NOTE]
+    > In prerequisite 3.4, the enrivonment URL should not start with "https://" and should not end in "/" If your URL does, please delete this prefix and suffix.
 
 ## Link Business performance analytics data to the organization's Fabric workspace
 
