@@ -4,13 +4,12 @@ description: Learn how to configure a connection so that Electronic invoicing ca
 author: ilikond
 ms.author: ikondratenko
 ms.topic: article
-ms.date: 01/29/2024
 ms.custom: 
+  - bap-template
+ms.date: 09/13/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2024-01-29
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.39
 ---
 
