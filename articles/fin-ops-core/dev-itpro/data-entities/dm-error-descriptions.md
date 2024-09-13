@@ -39,7 +39,7 @@ This message covers all XML formatting issues in the file. For example, the data
 
 ## Error while uploading a file during export
 
-When you run an export in a development environment, an error occurs if the export file can't be uploaded. To fix this issue, install the latest Microsoft Azure Storage emulator, restart the virtual machine (VM), and rerun the export job. You can install the storage emulator from [Azure Storage Emulator](/azure/storage/common/storage-use-emulator).
+When you run an export in a development environment, an error occurs if the export file can't be uploaded. To fix this issue, install the latest Microsoft Azure Storage emulator, restart the virtual machine (VM), and rerun the export job. You can install the storage emulator from [Azure Storage Emulator](/azure/storage/common/storage-use-emulator). We currently support an export file size of up to 256 MB. To increase this limit to 5,000 MB, update the 'AzureStorageServiceVersion' field to '2019-12-12' in the DMFPARAMETERS table. To ensure the file size stays within the 5,000 MB limit, apply filters directly from the export project form to reduce the number of records being exported.
 
 ## Error codes
 
