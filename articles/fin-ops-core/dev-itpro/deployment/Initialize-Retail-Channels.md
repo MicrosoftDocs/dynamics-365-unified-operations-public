@@ -55,7 +55,6 @@ CSU is available for deployment in the following regions.
 | AMERICAS        | West US 2               | Generally available                      |
 | AMERICAS        | Canada Central          | No new deployments allowed<sup>[1]</sup> |
 | AMERICAS        | Canada East             | No new deployments allowed<sup>[1]</sup> |
-| AMERICAS        | West Central US         | No new deployments allowed<sup>[1]</sup> |
 | APAC            | Australia East          | Generally available                      |
 | APAC            | Australia Southeast     | No new deployments allowed<sup>[1]</sup> |
 | APAC            | Southeast Asia          | Generally available                      |
