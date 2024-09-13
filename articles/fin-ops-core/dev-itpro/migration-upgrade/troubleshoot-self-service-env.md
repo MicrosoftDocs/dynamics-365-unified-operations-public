@@ -188,4 +188,4 @@ ORDER BY EndTime DESC
 
 4. select serverid, status, caption, Classnumber, datediff(mi, startdatetime, ENDDATETIME), _timetakeninmin, startdatetime, ENDDATETIME ,* from batch where batchjobid = _jobid_ <br>
 
-5. select * from CLASSIDTABLE where ID in (select distinct classnumber from batch where batchjobid=<jobid>)
+5. select * from CLASSIDTABLE where ID in (select distinct classnumber from batch where batchjobid= _jobid_ )
