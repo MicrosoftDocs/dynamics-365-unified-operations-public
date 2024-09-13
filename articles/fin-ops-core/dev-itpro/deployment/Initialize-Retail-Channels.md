@@ -67,6 +67,7 @@ CSU is available for deployment in the following regions.
 | EMEA            | North Europe            | Generally available                      |
 | EMEA            | UK South                | Generally available                      |
 | EMEA            | UK West                 | No new deployments allowed<sup>[1]</sup> |
+| EMEA            | Switzerland North       | No new deployments allowed<sup>[1]</sup> |
 | UAE             | UAE North<sup>[3]</sup> | Capacity restricted<sup>[2]</sup>        |
 
 ***NOTE:** <br/>
