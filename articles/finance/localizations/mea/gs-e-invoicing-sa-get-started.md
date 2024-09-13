@@ -4,12 +4,11 @@ description: Learn about what will help you get started with phase two of Electr
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 04/10/2024
+ms.date: 09/13/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
 ms.collection: get-started
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2024-09-12
 ms.dyn365.ops.version: 10.0.39
@@ -90,7 +89,7 @@ Some of the parameters from the **Saudi Arabian Zatca submission (SA)** Electron
     - For **ZatcaSecretName**, select **CCSIDSecret** or **PCSIDSecret**, depending on your place in the onboarding process.
     - For **ZatcaNumberSequence**, and select the [number sequence](#NumberSequence) that you previously created on the **Electronic document parameters** page.
 
-    The following illustration shows a sample feature parameters setup, with the Url address for Zatca's production endpoint. Please update the respective values based     on the configuration done in Electronic document parameters page.      
+    The following illustration shows a sample feature parameters setup, with the URL address for Zatca's production endpoint. Please update the respective values based on the configuration done in the **Electronic document parameters** page.      
 
    ![Screenshot that shows the configured Feature parameters tab for the Globalization feature for Saudi Arabia.](../media/sa-e-invoice-glob-feature-parameters.jpg)
 
