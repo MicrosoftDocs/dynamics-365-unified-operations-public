@@ -3586,8 +3586,8 @@
                       href: localizations/europe/emea-invoices-packing-slips-numbering.md
                     - name: Tax on natural resources report
                       href: localizations/latvia/emea-lva-tax-natural-resources.md
-                    - name: VAT statement details
-                      href: localizations/latvia/emea-lva-vat-statement-details.md
+                    - name: VAT declaration
+                      href: localizations/latvia/emea-lva-vat-declaration-latvia.md
                     - name: Latvian Intrastat
                       href: localizations/latvia/emea-lva-intrastat.md
                     - name: EU sales list
