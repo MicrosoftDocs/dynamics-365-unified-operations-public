@@ -28,6 +28,20 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
+## Features removed or deprecated in the Finance 10.0.42 release
+
+### Sales tax report for Latvia (design based on reporting codes)
+
+[Sales tax report for Lithuania](../localizations/lithuania/emea-lva-vat-statement-details.md)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Replaced with a new value-added tax (VAT) declaration design, [VAT declaration for Latvia](../localizations/lithuania/emea-lva-vat-declaration-latvia.md). | 
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: By October 1, 2025, we plan to no longer support the Sales tax report for Latvia design that's based on reporting codes, including the **VAT declaration (LV)** Electronic reporting (ER) format under the **VAT declaration model**. New **VAT declaration XML (LV)** and **VAT declaration Excel (LV)** ER formats are introduced under the **Tax declaration** model. |
+
 ## Features removed or deprecated in the Finance 10.0.41 release
 
 ### Sales tax report for Lithuania (design based on reporting codes)
