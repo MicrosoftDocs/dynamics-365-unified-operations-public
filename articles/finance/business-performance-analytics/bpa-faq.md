@@ -85,8 +85,10 @@ const ORG = window.location.hostname;
 const WEB_API = `https://${ORG}/api/data/v9.2`;
 const SOLUTIONS = [
   "msdyn_BpaAnchor",
-  "msdyn_BpaPlugins",
   "msdyn_Bpa",
+  "msdyn_BpaReports",
+  "msdyn_BpaReports_TIP",
+  "msdyn_BpaPlugins",
   "msdyn_BpaPermissions",
   "msdyn_BpaPermissions_TIP",
   "msdyn_BpaTables",
@@ -110,6 +112,7 @@ const SOLUTIONS = [
   "msdyn_BpaPipelinePlugins",
   "msdyn_BpaTablesSecurity",
   "msdyn_BpaTablesSecurity_TIP",
+  "msdyn_BpaConfigs"
 ];
 
 
@@ -125,27 +128,43 @@ let _getSolutions = () => {
 };
 
 // Delete the solution by solution ID
-let _deleteSolution = (solutionid) => {
+let _deleteSolution = async (solutionid) => {
   var requestOptions = {
-    method: "DELETE",
+      method: "DELETE",
   };
-  return fetch(`${WEB_API}/solutions(${solutionid})`, requestOptions);
+  const response = await fetch(`${WEB_API}/solutions(${solutionid})`, requestOptions);
+  if (!response.ok) {
+      const errorMessage = await response.text(); // Get the error message from the response
+      throw new Error(`Failed to delete solution with ID ${solutionid}: ${errorMessage}`);
+  }
 };
+
 let start = async () => {
   console.info("Uninstalling BPA solutions");
+  let hadErrors = false; // Boolean flag to indicate if there were errors uninstalling solutions
+
   let installedSolutions = (await _getSolutions()).value;
 
-
   // Sort the installed BPA solutions 
-  let installedBPASoltuins = installedSolutions
+  let installedBPASoltuions = installedSolutions
     .filter((i) => SOLUTIONS.indexOf(i.uniquename) > -1)
     .sort(
       (i, j) =>
         SOLUTIONS.indexOf(i.uniquename) - SOLUTIONS.indexOf(j.uniquename)
     );
-  for (let solution of installedBPASoltuins) {
+
+  for (let solution of installedBPASoltuions) {
     console.info(`Removing solution ${solution.friendlyname}`);
-    await _deleteSolution(solution.solutionid);
+    try {
+        await _deleteSolution(solution.solutionid);
+    } catch (error) {
+        console.error(`Error removing solution ${solution.friendlyname}:`, error);
+        hadErrors = true; // Set the flag to true if there was an error
+    }
+  }
+
+  if (hadErrors) {
+    throw new Error("Some solutions failed to uninstall");
   }
   console.info("BPA Solutions removed successfully");
 };
@@ -158,23 +177,25 @@ start();
 Option two: Business performance analytics can be manually uninstalled through Power Platform admin center. The solutions must be manually deleted in the following order.
 
 1. Business performance analytics anchor solution  
-2. Business performance analytics plugins solution 
-3. Business performance analytics solution 
-4. Business performance analytics permissions 
-5. Business performance analytics tables 
-6. Business performance analytics controls 
-7. Business performance analytics tables anchor solution 
-8. Business performance analytics tables user roles 
-9. Business performance analytics analytical tables workspace 
-10. Business performance analytics analytical tables 
-11. Business performance analytics tables transformation job flows 
-12. Business performance analytics tables data processing configuration 
-13. Business performance analytics tables data lake synchronization 
-14. Business performance analytics tables standard entities 
-15. Business performance analytics tables virtual entities 
-16. Business performance analytics tables managed data lake 
-17. Business performance analytics pipeline plugins solution 
-18. Business performance analytics tables security 
+2. Business performance analytics solution 
+3. Business performance analytics reports
+4. Business performance analytics plugins solution 
+5. Business performance analytics permissions 
+6. Business performance analytics tables 
+7. Business performance analytics controls 
+8. Business performance analytics tables anchor solution 
+9. Business performance analytics tables user roles 
+10. Business performance analytics analytical tables workspace 
+11. Business performance analytics analytical tables 
+12. Business performance analytics tables transformation job flows 
+13. Business performance analytics tables data processing configuration 
+14. Business performance analytics tables data lake synchronization 
+15. Business performance analytics tables standard entities 
+16. Business performance analytics tables virtual entities 
+17. Business performance analytics tables managed data lake 
+18. Business performance analytics pipeline plugins solution 
+19. Business performance analytics tables security 
+20. Business performance analytics configs
 
 To delete each of the preceding solutions, follow these steps.
 
