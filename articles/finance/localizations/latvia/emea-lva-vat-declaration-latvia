@@ -19,7 +19,8 @@ ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
 
 This article describes how to set up and generate a value-added tax (VAT) declaration for Latvia in the XML format, and how to preview it in Microsoft Excel.
 
-The VAT declaration feature for Latvia supports filing a VAT return for companies that have [multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md) and for companies that report as a VAT group in the same system database.
+The VAT declaration feature for Latvia supports filing a VAT return for companies that have [multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md) 
+and for companies that report as a VAT group in the same system database.
 
 ## <a name="vat-declaration-overview"></a>VAT declaration overview
 
