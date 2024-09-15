@@ -18,6 +18,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../../includes/banner.md)]
 
+> [!NOTE]
+> This feature has been replaced with the value-added tax (VAT) declaration functionality. For more information, see [VAT declaration (Lithuania)](emea-ltu-vat-declaration-lithuania.md).
+
 This article explains how to set up a VAT statement for legal entities in Lithuania.
 
 This article includes country/region-specific information about the setup of the value-added tax (VAT) statement for legal entities in Lithuania only. For more information about the setup of VAT statements, see [VAT reporting for Europe](../europe/emea-vat-reporting.md).
