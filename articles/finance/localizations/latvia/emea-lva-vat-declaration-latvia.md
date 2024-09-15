@@ -138,6 +138,8 @@ Follow these steps to define which of the available sales tax transaction attrib
     | Lookup result | Select the value of the report field. For more information about the values and their assignment to VAT declaration rows, see the [VAT declaration overview](#vat-declaration-overview) section earlier in this article. |
     | Tax code | Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code will be collected in the appropriate declaration box. We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one declaration box. |
     | Transaction classifier | <p>If you created enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, you can set up a transaction classifier. The following transaction classifiers are available:</p><ul><li>**Purchase**</li><li>**PurchaseExempt** (tax-exempt purchase)</li><li>**PurchaseReverseCharge** (tax receivable from a purchase reverse charge)</li><li>**Sales**</li><li>**SalesExempt** (tax-exempt sale)</li><li>**SalesReverseCharge** (tax payable from a purchase reverse charge or a sales reverse charge)</li><li>**Use tax**</li></ul><p>For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note).</p><p>Be sure to create two lines for each sales tax code: one that has the transaction classifier value and one that has the transaction classifier for credit note value.</p> |
+    | Item sales tax group | Use the **Item sales tax group** column to supplement your setup that's specified with **Tax code** and **Transaction classifier** columns when necessary. |
+    | Sales tax group | Use the **Sales tax group** column to supplement your setup that's specified with **Tax code** and **Transaction classifier** columns when necessary. |
 
     > [!NOTE]
     > Associate all sales tax codes (or combinations of a sales tax code and a tax classifier) with lookup results. If any combination should not generate values on the VAT declaration, associate it with the **Other** lookup result.
@@ -171,7 +173,7 @@ The process of setting up the **Electronic messages** functionality to generate 
 > [!NOTE]
 > Some records in the data entities in the package include a link to ER configurations. Before you start to import the data entities package, [import ER configurations into Finance](#import-er).
 
-1. In [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/v2), in the Shared asset library, select **Data package** as the asset type, and then download **LV VAT declaration - EM setup v.\#**. The downloaded file is named **LV VAT declaration - EM setup v.\#.zip**. Always download the latest version of the package that's available in Lifecycle Services.
+1. In [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/v2), in the Shared asset library, select **Data package** as the asset type, and then download **LV VAT declaration - PVN - EM setup v.\#**. The downloaded file is named **LV VAT declaration - PVN - EM setup v.\#.zip**. Always download the latest version of the package that's available in Lifecycle Services.
 2. In Finance, in the **Data management** workspace, select **Import**.
 3. On the **Import** FastTab, in the **Group name** field, enter a name for the job.
 4. On the **Selected entities** FastTab, select **Add file**.
@@ -196,12 +198,7 @@ You can specify default values for **Deduction percent** and **Main economic act
 3. On the **Message additional fields** FastTab, in the **MainEconomicActivity** (Pagrindinė vykdomos veiklos rūšis) field, define the main economic activity code that will be used further in reporting as default value.
 4. Save your changes.
 
-### <a id="vat-id"></a>Set up the registration numbers of the company that's reporting FR0600
-
-The FR0600 form of the VAT declaration in Latvia includes the following fields to identify the reporting company:
-
-- **Mokesčių mokėtojo identifikacinis numeris (kodas)** = **Taxpayer's identification number (code)** – The identification number (code) of the taxpayer must be entered.
-- **PVM mokėtojo kodas** = **VAT payer's number** – The VAT identification number is entered without the "LV" prefix.
+### <a id="vat-id"></a>Set up the registration numbers of the company that's reporting PVN
 
 Follow these steps to configure the registration numbers of your organization.
 
@@ -209,11 +206,8 @@ Follow these steps to configure the registration numbers of your organization.
 2. Select the legal entity, and then select **Registration IDs**.
 3. Select or create the address in Latvia, and then, on the **Registration ID** FastTab, select **Add**.
 4. In the **Registration type** field, select the registration type that's dedicated to Latvia and that uses the **VAT ID** registration category.
-5. In the **Registration number** field, enter the tax number. This value is reported in the "PVM mokėtojo kodas" field of the VAT declaration.
+5. In the **Registration number** field, enter the tax number. This value is reported in the VAT declaration.
 6. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
-7. In the **Registration type** field, select the registration type that's dedicated to Latvia and that uses the **Enterprise ID (COID)** registration category.
-8. In the **Registration number** field, enter the tax number. This value is reported in the "Mokesčių mokėtojo identifikacinis numeris (kodas)" field of the VAT declaration.
-9. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
 
 For more information about how to set up registration categories and registration types, see [Registration IDs](../europe/emea-registration-ids.md).
 
