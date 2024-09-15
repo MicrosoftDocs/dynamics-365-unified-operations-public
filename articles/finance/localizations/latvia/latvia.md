@@ -23,7 +23,7 @@ This article provides links to documentation resources for Latvia.
 - [Fixed assets location change tracking](emea-lva-fixed-assets-location-fields-change.md)
 - [Invoice and packing slip numbering](../europe/emea-invoices-packing-slips-numbering.md)
 - [Tax on natural resources report](emea-lva-tax-natural-resources.md)
-- [VAT statement details](emea-lva-vat-statement-details.md)
+- [VAT declaration](emea-lva-vat-declaration-latvia.md)
 - [Latvian Intrastat](emea-lva-intrastat.md)
 - [EU sales list for Latvia](emea-lva-eu-sales-list.md)
 
