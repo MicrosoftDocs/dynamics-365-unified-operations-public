@@ -18,6 +18,9 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
+> [!NOTE]
+> This feature has been replaced with the value-added tax (VAT) declaration functionality. For more information, see [VAT declaration (Latvia)](emea-lva-vat-declaration-latvia.md).
+
 This article explains how to set up the VAT statement for legal entities in Latvia.
 
 This article includes country/region-specific information about the setup of the value-added tax (VAT) statement for legal entities in Latvia only. For more information about the implementation of VAT statements, see [VAT reporting for Europe](../europe/emea-vat-reporting.md).
