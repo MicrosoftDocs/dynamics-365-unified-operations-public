@@ -4,8 +4,8 @@ description: Learn how to view and explore financial reports in Microsoft Dynami
 author: kweekley
 ms.author: kweekley
 ms.topic: article
-ms.date: 11/22/2022
-ms.reviewer: kfend
+ms.date: 09/16/2024
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -43,7 +43,7 @@ You can apply attribute and dimension filters, or change the budget scenario on 
 When you click **OK**, all the options that you selected are applied to the report. If you decide that you don't want to apply the selected options, click **Cancel**.
 
 ## Update a financial report
-You can generate (update) a financial report so that it shows the most recent data for the period and year that the report was generated for. For example, if you update a financial report that was generated for October 2020, the report reflects any new transactions that have been posted for October 2020. To update a financial report, on the Action Pane, click **Generate**. 
+You can generate (update) a financial report to display the most recent data for the period and year that the report was generated for. For example, if you update a financial report that was generated for October 2022, the report reflects any new transactions that have been posted for October 2022. To update a financial report, on the Action Pane, click **Generate**. 
 
 ## Display a financial report in a different currency
 A financial report can be displayed in any currency at any time. To display a report in a different currency, on the Action Pane, click **Currency**, and then select a currency. The report is translated into that currency, and the results are displayed. Any currency codes or symbols that are included as part of the report design are updated to reflect the new currency. The currencies that appear in the list are the reporting currencies that are configured in Finance.
