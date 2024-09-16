@@ -1,6 +1,6 @@
 ---
 title: Get started with Electronic invoicing for Italy
-description: Learn how to get started with Electronic invoicing for Italy and set up direct integration of Italian FatturaPA with the Exchange system (SDI).
+description: Learn how to get started with Electronic invoicing for Italy and how to set up direct integration of Italian FatturaPA with the Exchange system (SDI).
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
