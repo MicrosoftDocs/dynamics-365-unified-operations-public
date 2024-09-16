@@ -7,10 +7,7 @@ ms.topic: how-to
 ms.custom: 
   - bap-template
 ms.date: 09/16/2024
-ms.custom: 
-  - bap-template
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Japan
 ms.search.validFrom: 2016-02-28
 ms.search.form: LedgerConsumptionTaxCalcTrans_JP,LedgerConsumptionTaxCalcTrans2023_JP, LedgerConsumptionTaxReportTrans_JP, LedgerConsumptionTaxReportTrans2023_JP
