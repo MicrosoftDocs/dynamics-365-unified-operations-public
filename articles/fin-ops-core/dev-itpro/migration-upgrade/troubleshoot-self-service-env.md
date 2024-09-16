@@ -82,7 +82,7 @@ EXEC sp_changedbowner 'sa'
 In the migration app, run the **'ds'** option. This option reads the status of the Microsoft Dynamics Lifecycle Services (LCS) environment and the data upgrade status for every step and substep.
 
 > [!NOTE]
-> If the data upgrade status and the LCS environment status are both **Failed**, the status of step 10 in the [Complete the data replication and upgrade](data-upgrade-self-service.md#complete-the-data-replication-and-upgrade) procedure will be updated to **Resume**. You can then resume the operation from the point where the upgrade process failed.
+> If the data upgrade status and the LCS environment status are both **Failed**, the status of step 10 in the [Complete the data replication and upgrade](data-upgrade-self-service.md#complete-the-data-replication-and-upgrade) procedure is updated to **Resume**. You can then resume the operation from the point where the upgrade process failed.
 
 ## Scenario 7: You want to skip a manually run step that failed and move on to other steps.
 
@@ -123,10 +123,10 @@ To resume the data upgrade, follow these steps.
 
 After the **'ds'** option is run, two types of status will be listed: the LCS environment status and the data upgrade status.
 
-- **Case 1:** If the LCS environment status is **Failed**, and the last step of the data upgrade is **Failed**, step 10 will show the **Resume** option.
-- **Case 2:** If the LCS environment status is **Failed**, and the last step of the data upgrade is **Completed**, step 10 will show the **Resume** option.
-- **Case 3:** If the LCS environment status is **Deployed**, and the last step of the data upgrade is **Completed**, step 10 will show **Successful**.
-- **Case 4:** If the LCS environment status is **Deployed**, and the last step of the data upgrade is **In Progress**, step 10 will show **Successful**, because the data upgrade job is running in the background.
+- **Case 1:** If the LCS environment status is **Failed**, and the last step of the data upgrade is **Failed**, step 10 shows the **Resume** option.
+- **Case 2:** If the LCS environment status is **Failed**, and the last step of the data upgrade is **Completed**, step 10 shows the **Resume** option.
+- **Case 3:** If the LCS environment status is **Deployed**, and the last step of the data upgrade is **Completed**, step 10 shows **Successful**.
+- **Case 4:** If the LCS environment status is **Deployed**, and the last step of the data upgrade is **In Progress**, step 10 shows **Successful**, because the data upgrade job is running in the background.
 
 ## Scenario 11: After the publication is created, snapshot creation fails with errors.
 
@@ -175,7 +175,7 @@ FROM    sys.dm_exec_requests er
 WHERE   st.text IS NOT NULL
 <br><br>
 **To check dbupgrade status**<br>
-Following query shows the status of the data upgrade servicing :<br>
+Following query shows the status of the data upgrade servicing:<br>
 SELECT StartTime,EndTime,Steps,SubSteps,STATUS FROM [DBUPGRADE].[DATAUPGRADESTATUS]
 ORDER BY EndTime DESC
 <br><br>
