@@ -1805,6 +1805,8 @@ items:
           href: sysadmin/role-based-security.md
         - name: Security architecture
           href: sysadmin/security-architecture.md
+        - name: Finance and operations storage account updates
+          href: sysadmin/storage-acct-security.md
         - name: Encryption in finance and operations apps
           href: sysadmin/encryption.md
         - name: Use customer-managed keys to control encryption keys for data at rest
