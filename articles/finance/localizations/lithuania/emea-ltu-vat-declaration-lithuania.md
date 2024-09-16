@@ -2,9 +2,10 @@
 title: VAT declaration for Lithuania (FR0600)
 description: This article explains how to set up a value-added tax (VAT) declaration for legal entities in Lithuania.
 author: liza-golub
-ms.date: 04/18/2024
+ms.date: 09/162024
 ms.topic: article
-audience: Application User
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak
 ms.search.region: Lithuania
 ms.author: egolub
