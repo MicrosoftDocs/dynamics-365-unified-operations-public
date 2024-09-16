@@ -19,8 +19,13 @@ ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
 
 This article describes how to set up and generate a value-added tax (VAT) declaration for Latvia in the XML format, and how to preview it in Microsoft Excel.
 
-The VAT declaration feature for Latvia supports filing a VAT return for companies that have [multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md) 
-and for companies that report as a VAT group in the same system database.
+As of 10.0.42 version of Dynamics 365 Finance, the VAT declaration feature for Latvia supports filing a VAT return for [multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md) and for companies that report as a VAT group in the same system database. For each version of Finance that's listed in the following table, these capabilities are supported as of the specified build number.
+
+| Version | Build | 
+|---------|-------|
+| 10.0.39 | 10.0.1860.186 |
+| 10.0.40 | 10.0.1935.114 |
+| 10.0.41 | 10.0.2015.44 |
 
 ## <a name="vat-declaration-overview"></a>VAT declaration overview
 
