@@ -249,9 +249,6 @@ To install the certificate, follow these steps:
 3. Select **Local Machine > Place all certificates in the following Store > Browse > Trusted Root Certification Authorities** and select **Next** through each screen.
 4. Leave the **Password** field blank.
 5. In the **Certificate** dialog box, browse to **Details** and look for **Thumbprint**.
-
-    ![Certificate dialog showing thumbprint listing.](media/certificate-dialog.png)
-
 6. Copy and save the thumbprint. You need it to configure the AOS as described earlier in this article.
 
 

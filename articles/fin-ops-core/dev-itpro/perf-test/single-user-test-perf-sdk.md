@@ -96,8 +96,6 @@ When you've finished recording the end-to-end scenario, you must generate a C\# 
     - In each **AuthenticatorConfiguration** element under the **AuthenticatorConfigurationCollection** element, replace **AadAuthenticator** with **SelfMintedTokenAuthenticator**.
     - Comment out the **AzureActiveDirectoryConfiguration** and **KeyVaultConfigurations** elements.
 
-    [![Updated and commented code sample.](./media/single-user-test-10.png)](./media/single-user-test-10.png)
-
 2. In Visual Studio, on the **Test** menu, point to **Windows**, and then select **Test Explorer**.
 3. Right-click your test case, and then select **Run selected tests**.
 
