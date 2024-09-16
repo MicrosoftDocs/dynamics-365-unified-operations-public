@@ -1,6 +1,6 @@
 ---
 title: Finance and operations storage account security updates
-description: This article describes the latest security enhancements in finance and operations storage account. 
+description: This article describes the latest security enhancements in the finance and operations storage account.
 author: mansijainms
 ms.author: mansijain 
 ms.topic: conceptual
@@ -17,18 +17,30 @@ ms.dyn365.ops.version:
 
 [!include [banner](../../../finance/includes/banner.md)]
 
-This article describes the latest security enhancements in finance and operations storage account. 
+This article describes the latest security enhancements in the finance and operations storage account.
 
-## Frequently asked questions (FAQs)
+## Frequently asked questions
 
-### I'm receiving  "Fetching a valid storage connection string is disabled" error in dev machine/CHE. How can I resolve this error?
-The public method, Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetCsuStorageConnectionString() is getting deprecated. For more information, see [End of support for sharing storage account](/fin-ops/get-started/removed-deprecated-features-platform-updates#end-of-support-for-sharing-storage-account-connection-strings-via-public-api-getcsustorageconnectionstring). There's an issue when deploying changes in developer environments or customer hosted environments (CHE) when the flight is set to false by default. If you're receiving the following error in your developer machine: <br> “EnableSharingOfValidStorageConnectionString is false. Fetching a valid storage connection string has been disabled,” follow these steps: <br><br>
-a) Execute the following query in SSMS: <br>
-declare @flightName NVARCHAR(100) = 'EnableSharingOfValidStorageConnectionString'; <br>
-IF NOT EXISTS (SELECT TOP 1 1 FROM SysFlighting WHERE flightName = @flightName) <br>
-INSERT INTO SYSFLIGHTING(FLIGHTNAME,ENABLED, FLIGHTSERVICEID,PARTITION) <br>
-SELECT @flightName, 1, 12719367,RECID FROM DBO.[PARTITIONS]; <br>
-ELSE <br>
-UPDATE SysFlighting SET enabled = 1, flightServiceId = 12719367 WHERE flightName = @flightName; <br>
-select * from SysFlighting where flightName = 'EnableSharingOfValidStorageConnectionString';<br><br>
-b) Restart AOS and Batch service in CHE Environment.
+### I receive the following error on my developer machine/customer-hosted environment: "Fetching a valid storage connection string is disabled." How can I fix this error?
+
+The `Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetCsuStorageConnectionString()` public method is being deprecated. Learn more in [End of support for sharing storage account connection strings via public API GetCsuStorageConnectionString](/fin-ops/get-started/removed-deprecated-features-platform-updates#end-of-support-for-sharing-storage-account-connection-strings-via-public-api-getcsustorageconnectionstring).
+
+If the flight is set to *false* by default, an issue occurs when changes are deployed in developer environments or customer-hosted environments (CHEs). In this case, you receive the following error on your developer machine:
+
+> EnableSharingOfValidStorageConnectionString is false. Fetching a valid storage connection string has been disabled.
+
+If you receive the error, follow these steps.
+
+1. In Microsoft SQL Server Management Studio (SSMS), run the following query.
+
+    ```sql
+    declare @flightName NVARCHAR(100) = 'EnableSharingOfValidStorageConnectionString';
+    IF NOT EXISTS (SELECT TOP 1 1 FROM SysFlighting WHERE flightName = @flightName)
+    INSERT INTO SYSFLIGHTING(FLIGHTNAME,ENABLED, FLIGHTSERVICEID,PARTITION)
+    SELECT @flightName, 1, 12719367,RECID FROM DBO.[PARTITIONS];
+    ELSE
+    UPDATE SysFlighting SET enabled = 1, flightServiceId = 12719367 WHERE flightName = @flightName;
+    select * from SysFlighting where flightName = 'EnableSharingOfValidStorageConnectionString';
+    ```
+
+2. In the CHE, restart Application Object Server (AOS) and the Batch service.
