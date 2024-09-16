@@ -43,9 +43,6 @@ When you troubleshoot service authentication issues, there are a few basic and c
     - **"appid"** – The value corresponds to the Microsoft Entra Native Client App ID (or Service App ID).
     - **"upn"** – The value corresponds to the user who is being authenticated through a Native Client App.
 
-The following illustration shows an example of the contents of the JWT.
-
-[![Example of a JWT.](./media/serviceauthenticationtroubleshooting01.png)](./media/serviceauthenticationtroubleshooting01.png)
 
 ### Check token compliance
 
