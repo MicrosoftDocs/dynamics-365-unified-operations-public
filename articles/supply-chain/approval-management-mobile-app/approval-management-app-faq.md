@@ -28,7 +28,7 @@ If no features are visible in the Approvals Management mobile app, you probably 
 
 ## What versions of Supply Chain Management support the mobile app?
 
-The Approvals Management mobile app requires Supply Chain Management version 10.0.40 or later.
+The Approvals Management mobile app requires Supply Chain Management version 10.0.41 or later.
 
 ## Does the mobile app support Microsoft Intune deployment?
 
