@@ -21,7 +21,7 @@ The Electronic Invoicing service can read files from Microsoft SharePoint folder
 
 ## Grant access to a SharePoint folder
 
-1. Create an app registration in the tenant where Dynamics 365 Finance environment is installed.
+1. Create an app registration in the tenant where the Dynamics 365 Finance environment is installed.
 
     1. Sign in to the [Azure portal](https://portal.azure.com/).
     1. Go to **App registrations**.
@@ -39,7 +39,7 @@ The Electronic Invoicing service can read files from Microsoft SharePoint folder
     - Set up rotation of passwords. During rotation, create a new client secret for the app registration, update the key vault, and then delete the old secret.
 
 1. Save the **App Registration secret** and **Application (client) ID** values as two new secrets in the key vault in the setup of your Electronic invoicing parameters.
-1. Add the secrets that you created to the Key Vault parameters in the setup of your Electronic invoicing parameters, see [Set up Electronic invoicing parameters](gs-e-invoicing-set-up-parameters.md).
+1. Add the secrets that you created to the Key Vault parameters in the setup of your Electronic invoicing parameters. For more information, see [Configure Electronic invoicing parameters](gs-e-invoicing-set-up-parameters.md).
 1. In the Azure portal, grant access to SharePoint. This step should be completed by the tenant administrator.
 
     1. Select the app registration that you created.
