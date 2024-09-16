@@ -146,8 +146,16 @@ Follow these steps to define which of the available sales tax transaction attrib
     | Item sales tax group | Use the **Item sales tax group** column to supplement your setup that's specified with **Tax code** and **Transaction classifier** columns when necessary. |
     | Sales tax group | Use the **Sales tax group** column to supplement your setup that's specified with **Tax code** and **Transaction classifier** columns when necessary. |
 
-    > [!NOTE]
-    > Associate all sales tax codes (or combinations of a sales tax code, tax classifier, item sales tax group, sales tax group) with lookup results. If any combination should not generate values on the VAT declaration, associate it with the **Other** lookup result.
+> [!NOTE]
+> Associate all sales tax codes (or combinations of a sales tax code, tax classifier, item sales tax group, sales tax group) with lookup results. If any combination should not generate values on the VAT declaration, associate it with the **Other** lookup result.
+
+> [!NOTE]
+> (1) When a credit note is posted in the same period as the original invoice, it can be reported together with the original invoice. In this case, you can use the same tax code (sales tax group, item sales tax group) as for the original invoice.
+> 
+> (2) When a credit note is posted in a different period than the original invoice, it is reported separately in PVN 1 and must be reported in box [57] or [67]. In this case, use a different tax code (or sales tax group, item sales tax group) for the credit note and associate it separately with box [57] or [67] in the application-specific parameters. If you are using the same tax codes (sales tax group, item sales tax group) for the credit note regardless of the period of the original invoice and associating them with box [57] or [67] using only the transaction classifier (PurchaseCreditNote, SalesCreditNote), all credit note amounts will be reported in the corresponding box [57] or [67].
+
+> [!NOTE]
+> Transactions reversed using the reverse transaction functionality will not be shown in PVN 1. To include them in the PVN, use the "Include reverse" user input parameter of the report.
 
 5. In the **State** field, change the value to **Completed**.
 6. On the Action Pane, select **Export** to export the settings of the application-specific parameters.
@@ -238,6 +246,7 @@ If the VAT registration number isn't specified in the **Tax registration number*
     | Report composition | Select which parts of the report you would like to generate. Following options are available: PVN, PVN 1-I, PVN 1-II, PVN 1-III, PVN 2. You can select multiple options for generation of the report. |
     | Bank account | Select a bank account from the list company's bank accounts. |
     | Contact person | Select a contact person in the lookup list. |
+    | Include reverse | Mark this checkbox if you want to include reversed transactions in PVN. |
 
 > [!NOTE]
 > The PVN 2 part of the VAT declaration for Latvia is the EU sales list. For more information, see [EU Sales list for Latvia](emea-lva-eu-sales-list.md). Before generating PVN 2 as part of VAT declaration for Latvia, ensure that you have transfered the data using the **EU sales list** functionality and reported it by clicking **Report** button on the Action pane of **EU sales list** page.
