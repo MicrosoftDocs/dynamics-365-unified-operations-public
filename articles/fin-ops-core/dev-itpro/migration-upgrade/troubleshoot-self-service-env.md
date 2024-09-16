@@ -79,10 +79,10 @@ EXEC sp_changedbowner 'sa'
 
 **Solution**
 
-In the migration app, run the **'ds'** option. This option reads the status of the Microsoft Dynamics Lifecycle Services (LCS) environment and the data upgrade status for every step and substep.
+In the migration app, run the **'ds'** option. This option reads the status of the Microsoft Dynamics Lifecycle Services environment and the data upgrade status for every step and substep.
 
 > [!NOTE]
-> If the data upgrade status and the LCS environment status are both **Failed**, the status of step 10 in the [Complete the data replication and upgrade](data-upgrade-self-service.md#complete-the-data-replication-and-upgrade) procedure is updated to **Resume**. You can then resume the operation from the point where the upgrade process failed.
+> If the data upgrade status and the Lifecycle Services environment status are both **Failed**, the status of step 10 in the [Complete the data replication and upgrade](data-upgrade-self-service.md#complete-the-data-replication-and-upgrade) procedure is updated to **Resume**. You can then resume the operation from the point where the upgrade process failed.
 
 ## Scenario 7: You want to skip a manually run step that failed and move on to other steps.
 
@@ -100,7 +100,7 @@ To skip a manually run step that failed and move on to other steps, follow these
 
 To migrate from an old version of the console app to the new version, follow these steps.
 
-1. Download the latest version of the console app from LCS.
+1. Download the latest version of the console app from Lifecycle Services.
 1. Copy the **/paramsdata.txt** and **/Data/ReplicationMenu.json** files from the old version of the console app, and put them under the same paths in the new version of the console app.
 1. Rerun the app.
 
@@ -121,12 +121,12 @@ To resume the data upgrade, follow these steps.
 1. To learn the status of the console app, use the **Help** option. This option lists all the menu options and shows the current state.
 1. If the status of step 10 in the [Complete the data replication and upgrade](data-upgrade-self-service.md#complete-the-data-replication-and-upgrade) procedure is **Successful**, run the **'ds'** option in the migration app. This option updates the data upgrade status.
 
-After the **'ds'** option is run, two types of status will be listed: the LCS environment status and the data upgrade status.
+After the **'ds'** option is run, two types of status will be listed: the Lifecycle Services environment status and the data upgrade status.
 
-- **Case 1:** If the LCS environment status is **Failed**, and the last step of the data upgrade is **Failed**, step 10 shows the **Resume** option.
-- **Case 2:** If the LCS environment status is **Failed**, and the last step of the data upgrade is **Completed**, step 10 shows the **Resume** option.
-- **Case 3:** If the LCS environment status is **Deployed**, and the last step of the data upgrade is **Completed**, step 10 shows **Successful**.
-- **Case 4:** If the LCS environment status is **Deployed**, and the last step of the data upgrade is **In Progress**, step 10 shows **Successful**, because the data upgrade job is running in the background.
+- **Case 1:** If the Lifecycle Services environment status is **Failed**, and the last step of the data upgrade is **Failed**, step 10 shows the **Resume** option.
+- **Case 2:** If the Lifecycle Services environment status is **Failed**, and the last step of the data upgrade is **Completed**, step 10 shows the **Resume** option.
+- **Case 3:** If the Lifecycle Services environment status is **Deployed**, and the last step of the data upgrade is **Completed**, step 10 shows **Successful**.
+- **Case 4:** If the Lifecycle Services environment status is **Deployed**, and the last step of the data upgrade is **In Progress**, step 10 shows **Successful**, because the data upgrade job is running in the background.
 
 ## Scenario 11: After the publication is created, snapshot creation fails with errors.
 
@@ -154,8 +154,13 @@ In the Replication Monitor, select and hold (or right-click) the failed publicat
 
 **Solution**
 
-The **ReleaseUpgradeDB** framework logs the execution of each script in the **ReleaseUpdateScriptsLog** table. When you tune the performance of the data upgrade process, you can monitor the duration of scripts that are run. In this table, you can easily identify the longest-running process or job. Some of the following queries can be used on the target Axdb to check progress and more- <br><br>
-**To check running processes in AxDB** <br>
+The ReleaseUpgradeDB framework logs the execution of each script in the **ReleaseUpdateScriptsLog** table. When you tune the performance of the data upgrade process, you can monitor the duration of scripts that are run. In the table, you can easily identify the longest-running process or job. You can use some of the following queries on the target AxDB to check progress and more.
+
+**Check running processes**
+
+To check running processes in AxDB, use the following query.
+
+```sql
 SELECT   SPID       = er.session_id
  ,STATUS         = ses.STATUS
  ,[Login]        = ses.login_name
@@ -173,19 +178,37 @@ FROM    sys.dm_exec_requests er
     LEFT JOIN sys.dm_exec_sessions ses
     ON ses.session_id = er.session_id
 WHERE   st.text IS NOT NULL
-<br><br>
-**To check dbupgrade status**<br>
-Following query shows the status of the data upgrade servicing:<br>
+```
+
+**Check dbupgrade status**
+
+To check the status of the data upgrade servicing, use the following query.
+
+```sql
 SELECT StartTime,EndTime,Steps,SubSteps,STATUS FROM [DBUPGRADE].[DATAUPGRADESTATUS]
 ORDER BY EndTime DESC
-<br><br>
-**To check batch job related details**<br>
-1.  select RECID, CAPTION, * from batchjob where STATUS=2 <br>
+```
 
-2. select * from batch where BATCHJOBID = _jobid_ and status=2 <br>
+**Check batch job–related details**
 
-3. select serverid, status, caption, datediff(mi, startdatetime, ENDDATETIME), startdatetime, ENDDATETIME ,* from batchhistory where Batchjobid = _jobid_ <br>
+To check batch job–related details, use the following queries.
 
-4. select serverid, status, caption, Classnumber, datediff(mi, startdatetime, ENDDATETIME), _timetakeninmin, startdatetime, ENDDATETIME ,* from batch where batchjobid = _jobid_ <br>
+```sql
+select RECID, CAPTION, * from batchjob where STATUS=2
+```
 
-5. select * from CLASSIDTABLE where ID in (select distinct classnumber from batch where batchjobid= _jobid_ )
+```sql
+select * from batch where BATCHJOBID = _jobid_ and status=2
+```
+
+```sql
+select serverid, status, caption, datediff(mi, startdatetime, ENDDATETIME), startdatetime, ENDDATETIME ,* from batchhistory where Batchjobid = _jobid_
+```
+
+```sql
+select serverid, status, caption, Classnumber, datediff(mi, startdatetime, ENDDATETIME), _timetakeninmin, startdatetime, ENDDATETIME ,* from batch where batchjobid = _jobid_
+```
+
+```sql
+select * from CLASSIDTABLE where ID in (select distinct classnumber from batch where batchjobid= _jobid_ )
+```
