@@ -89,9 +89,6 @@ Budget planning uses special security policies to configure access to budget pla
 [![Budget manager.](./media/screenshot12.png)](./media/screenshot12.png) 
 
 2.4. Pick user role and click **Assign organizations**. 
-
-[![Assign organizations.](./media/screenshot13.png)](./media/screenshot13.png)
-
 2.5. Select **Grant access to specific organizations**. Pick the Organizational hierarchy created in the first step. Pick Finance node, and click **Grant with children**. 
 
 >[!Important]
