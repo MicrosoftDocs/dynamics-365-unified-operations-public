@@ -28,6 +28,7 @@ This article explains how to do reporting for multiple value-added tax (VAT) reg
 - [France](../france/emea-reporting-multiple-vat-registrations-fr.md)
 - [Germany](../germany/emea-reporting-multiple-vat-registrations-de.md)
 - [Italy](../italy/emea-reporting-multiple-vat-registrations-it.md)
+- [Latvia](../latvia/emea-reporting-multiple-vat-registrations-lv.md)
 - [Lithuania](../lithuania/emea-reporting-multiple-vat-registrations-lt.md)
 - [Netherlands](../netherlands/emea-reporting-multiple-vat-registrations-nl.md)
 - [Norway](../norway/emea-reporting-multiple-vat-registrations-no.md)
@@ -290,6 +291,7 @@ All tax registrations have the same settings for EU sales list parameters.
     | 10.0.36 | Estonia  | Tax declaration model.version.150<br>Tax declaration model mapping.version.150.317<br>VAT Declaration XML (EE).version.150.21<br>VAT Declaration Excel (EE).version.150.21.17 | [VAT declaration (Estonia)](../estonia/emea-est-vat-declaration.md) |
     | 10.0.39 | Italy  | Tax declaration model.version.153<br>Tax declaration model mapping (IT).version.153.320.4<br>VAT Declaration PDF (IT).version.153.19 | [Configure and report Italian sales tax books](../italy/emea-ita-sales-tax-books.md) |
     | 10.0.41 | Lithuania  | Tax declaration model.version.156<br>Tax declaration model mapping.version.156.329<br>VAT Declaration XML (LT).version.156.10<br>VAT Declaration Excel (LT).version.156.10.9 | [VAT declaration for Lithuania (FR0600)](../lithuania/emea-ltu-vat-declaration-lithuania.md) |
+    | 10.0.42<br>10.0.41 (build 10.0.2015.44)<br>10.0.40 (build 10.0.1935.114)<br>10.0.39 (build 10.0.1860.186) | Latvia  | Tax declaration model.version.156<br>Tax declaration model mapping.version.156.329<br>VAT Declaration XML (LV).version.156.10<br>VAT Declaration Excel (LV).version.156.10.9 | [VAT declaration for Latvia](../lithuania/emea-lva-vat-declaration-latvia.md) |
 
     > [!NOTE]
     > The VAT declaration of Poland (JPK-V7) is supported by using the Electronic messaging functionality only. For more information, see [VAT declaration with registers (JPK-V7, VDEK)](../poland/emea-pol-vdek.md).
