@@ -37,7 +37,7 @@ The VAT declaration feature for Latvia supports reporting of the following parts
 - **PVN 1-III**: Calculated VAT on supplied goods and services domestically;
 - **PVN 2**: Overview of supplies of goods and services to other European Union Member States (EU sales list).
 
-To automatically generate the report, first create enough sales tax codes to keep a separate VAT accounting for each type of operation that's subject to reporting in the VAT declaration for Latvia. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate available sales tax transaction attributes (sales tax code, tax classifier) with the lookup result of the **Report field lookup** lookup field. 
+To automatically generate the report, first create enough sales tax codes to keep a separate VAT accounting for each type of operation that's subject to reporting in the VAT declaration for Latvia. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate available sales tax transaction attributes (sales tax code, tax classifier, sales tax group, item sales tax group) with the lookup result of the **Report field lookup** lookup field. 
 
 In the following table, the **Lookup result** column shows the lookup result that's preconfigured for a specific VAT declaration field in the VAT declaration format. 
 Use this information to correctly associate tax transaction attributes with the lookup result and then with the field of the VAT declaration.
@@ -126,12 +126,12 @@ For more information, see [Download ER configurations from the Global repository
 
 ### <a name="set-up"></a>Set up application-specific parameters for VAT declaration fields
 
-To automatically generate the VAT declaration, associate available sales tax transaction attributes (sales tax code, tax classifier) in Finance and lookup results in the ER configuration.
+To automatically generate the VAT declaration, associate available sales tax transaction attributes (sales tax code, tax classifier, sales tax group, item sales tax group) in Finance and lookup results in the ER configuration.
 
 > [!NOTE]
-> We recommend that you enable the **Use application specific parameters from previous versions of ER formats** feature in the **Feature management** workspace. When this feature is enabled, parameters that are configured for an earlier version of an ER format automatically become applicable for a later version of the same format. If this feature isn't enabled, you must explicitly configure application-specific parameters for each format version. The **Use application specific parameters from previous versions of ER formats** feature is available in the **Feature management** workspace as of Finance version 10.0.23. For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
+> For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
-Follow these steps to define which of the available sales tax transaction attributes (sales tax code, tax classifier) in Finance generates which field of the VAT declaration for Latvia.
+Follow these steps to define which of the available sales tax transaction attributes (sales tax code, tax classifier, sales tax group, item sales tax group) in Finance generates which field of the VAT declaration for Latvia.
 
 1. Go to **Workspaces** \> **Electronic reporting**, and select **Reporting configurations**.
 2. Select the **VAT declaration XML (LV)** configuration, and then, on the Action Pane, select **Configurations** \> **Application specific parameters setup**.
@@ -147,7 +147,7 @@ Follow these steps to define which of the available sales tax transaction attrib
     | Sales tax group | Use the **Sales tax group** column to supplement your setup that's specified with **Tax code** and **Transaction classifier** columns when necessary. |
 
     > [!NOTE]
-    > Associate all sales tax codes (or combinations of a sales tax code and a tax classifier) with lookup results. If any combination should not generate values on the VAT declaration, associate it with the **Other** lookup result.
+    > Associate all sales tax codes (or combinations of a sales tax code, tax classifier, item sales tax group, sales tax group) with lookup results. If any combination should not generate values on the VAT declaration, associate it with the **Other** lookup result.
 
 5. In the **State** field, change the value to **Completed**.
 6. On the Action Pane, select **Export** to export the settings of the application-specific parameters.
@@ -156,11 +156,10 @@ Follow these steps to define which of the available sales tax transaction attrib
 
 ### <a name="setup-preview"></a>Set up the VAT reporting format to preview amounts in Excel
 
-1. In the **Feature management** workspace, find and select the **VAT statement format reports** feature in the list, and then select **Enable now**.
-2. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities**, and select the tax authority.
-3. In the **Report layout** field, select **Default**.
-4. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
-5. On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT statement format mapping** field, select the **VAT declaration Excel (LV)** ER format. This format is printed when you run the **Report sales tax for settlement period** report. It's also printed when you select **Print** on the **Sales tax payments** page.
+1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities**, and select the tax authority.
+2. In the **Report layout** field, select **Default**.
+3. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
+4. On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT statement format mapping** field, select the **VAT declaration Excel (LV)** ER format. This format is printed when you run the **Report sales tax for settlement period** report. It's also printed when you select **Print** on the Action pane of the **Sales tax payments** page.
 
 If you're configuring the VAT declaration for Latvia in a legal entity that has [multiple VAT registrations](../global/emea-reporting-for-multiple-vat-registrations.md), follow these steps.
 
@@ -195,13 +194,6 @@ For more information about how you can use the data management framework, see [D
 2. Select the line for **LV Populate VAT return records**, and then select **Edit query**.
 3. Use the filter to specify the settlement periods to include on the report.
 4. If you must report tax transactions from other settlement periods in a different declaration, create a new **Populate records** action, and select the appropriate settlement periods.
-
-You can specify default values for **Deduction percent** and **Main economic activity** parameters of your VAT declaration in additional fields of electronic messages.
-
-1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic messages processing**, and select the **LV VAT declaration** processing.
-2. On the **Message additional fields** FastTab, in the **DeductionPercent** (Kalendorinių metų proporcinis PVM atskaitos procentas) field, define the deduction percent that will be used further in reporting as default value.
-3. On the **Message additional fields** FastTab, in the **MainEconomicActivity** (Pagrindinė vykdomos veiklos rūšis) field, define the main economic activity code that will be used further in reporting as default value.
-4. Save your changes.
 
 ### <a id="vat-id"></a>Set up the registration numbers of the company that's reporting PVN
 
@@ -241,11 +233,14 @@ If the VAT registration number isn't specified in the **Tax registration number*
 
     | Field | Description |
     |---|---|
-    | Report date | Specify the date when report is prepared. |
-    | Declaration period type | Select **Initial** to prepare a file for initial submission in the reporting period. Select **Corrected** to prepare a file to submit a corrected VAT declaration. |
-    | Contact person | Select a contact person in the lookup list. This parameter is available in XML format only. |
-    | Main economic activity code | Specify the main economic activity code for your company. |
-    | Deduction percent | Specify the deduction percent for the reporting period. |
+    | Declaration type | Select declaration type from the dropdown list of available values. |
+    | Invoice threshold | Specify the threshold to apply for reporting invoices in PVN 1-I, PVN 1-III. For example, 150.00. |
+    | Report composition | Select which parts of the report you would like to generate. Following options are available: PVN, PVN 1-I, PVN 1-II, PVN 1-III, PVN 2. You can select multiple options for generation of the report. |
+    | Bank account | Select a bank account from the list company's bank accounts. |
+    | Contact person | Select a contact person in the lookup list. |
+
+> [!NOTE]
+> The PVN 2 part of the VAT declaration for Latvia is the EU sales list. For more information, see [EU Sales list for Latvia](emea-lva-eu-sales-list.md). Before generating PVN 2 as part of VAT declaration for Latvia, ensure that you have transfered the data using the **EU sales list** functionality and reported it by clicking **Report** button on the Action pane of **EU sales list** page.
 
 4. On the **Run in the background** FastTab, specify parameters of the batch processing, and select the **Batch processing** checkbox to run the report in batch mode.
 5. Select **OK**, and review the Excel report. When the report is run in batch mode, you can find the generated file as an attachment of the batch job on the **Electronic reporting jobs** page (**Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**).
