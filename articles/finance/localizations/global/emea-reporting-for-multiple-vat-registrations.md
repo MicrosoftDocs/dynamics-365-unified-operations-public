@@ -4,13 +4,11 @@ description: Learn about reporting for multiple value-added tax (VAT) registrati
 author: liza-golub
 ms.author: egolub
 ms.topic: article
-ms.date: 01/17/2024
+ms.custom: 
+  - bap-template
+ms.date: 09/17/2024
 ms.reviewer: johnmichalak
-audience: Application User
-ms.search.region: 
-ms.search.validFrom:
-ms.search.form: 
-ms.dyn365.ops.version: 
+
 ---
 
 # Reporting for multiple VAT registrations 
