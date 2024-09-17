@@ -15,7 +15,7 @@ ms.search.region: Sweden
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to set up and generate a value-added tax (VAT) declaration for Sweden. You can generate a preview VAT declaration in Microsoft Excel. You can also generate a VAT declaration in [Document Type Definition (DTD) format](https://www.skatteverket.se/omoss/samverkan/forprogramkonstruktorer/dtdfil.4.65fc817e1077c25b83280000.html?q=dtd) and upload it to the [Skatteverket offical portal](https://www.skatteverket.se/foretag/moms/deklareramoms.4.7459477810df5bccdd480006935.html).
+This article describes how to set up and generate a value-added tax (VAT) declaration for Sweden. You can generate a preview VAT declaration in Microsoft Excel. You can also generate a VAT declaration in Document Type Definition (DTD) format and upload it to the [Skatteverket offical portal](https://www.skatteverket.se/foretag/moms/deklareramoms.4.7459477810df5bccdd480006935.html).
 
 To automatically generate the report, you must first create enough sales tax codes to keep a separate VAT accounting for each box on the VAT declaration. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, you must associate sales tax codes with the lookup result of the lookups for the boxes on the VAT declaration.
 
