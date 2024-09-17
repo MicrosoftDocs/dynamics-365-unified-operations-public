@@ -193,6 +193,13 @@ BODY
 {"executionId":"<executionId>"}
 ```
 
+GetExecutionIdByMessageId can be used to get the Execution ID. The API take the enqueued message ID and return the Execution ID.
+```Console
+POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExecutionIdByMessageId
+BODY
+{"_messageId":"<messageId>"}
+```
+
 ## Tips and tricks
 ### Viewing the batch job status for recurring integrations from the Data management workspace
 Recurring integration data jobs run in batch mode. If a recurring job fails, you must investigate the instance of the batch job as part of the troubleshooting process. To make this investigation easier, click **Manage messages** to get to the **Process status for recurring data job** page, which now shows the status of the batch job.
