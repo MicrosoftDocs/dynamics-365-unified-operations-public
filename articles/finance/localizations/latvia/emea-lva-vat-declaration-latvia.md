@@ -155,7 +155,7 @@ To define which of the available sales tax transaction attributes (sales tax cod
 > (2) When a credit note is posted in a different period than the original invoice, it is reported separately in PVN 1 and must be reported in box [57] or [67]. In this case, use a different tax code (or sales tax group, item sales tax group) for the credit note and associate it separately with box [57] or [67] in the application-specific parameters. If you are using the same tax codes (sales tax group, item sales tax group) for the credit note regardless of the period of the original invoice and associating them with box [57] or [67] using only the transaction classifier (PurchaseCreditNote, SalesCreditNote), all credit note amounts will be reported in the corresponding box [57] or [67].
 
 > [!NOTE]
-> Transactions reversed using the reverse transaction functionality will not be shown in PVN 1. To include them in the PVN, use the "Include reverse" user input parameter of the report.
+> Transactions reversed using the reverse transaction functionality will not be shown in PVN 1 if reverse is posted using the same date as the original document. To include them in the PVN, use the **Include reverse** user input parameter of the report.
 
 5. In the **State** field, change the value to **Completed**.
 6. On the Action Pane, select **Export** to export the settings of the application-specific parameters.
