@@ -107,11 +107,6 @@ Some of the parameters from the **Saudi Arabian Zatca submission (SA)** Electron
         > [!NOTE]
         > Depending on your place in the [onboarding](#onboarding) process, create either a CCSID or a PCSID, and configure it in advance in the [Key Vault parameters](../global/gs-e-invoicing-set-up-parameters.md#create-a-key-vault-reference).
 
-1. If required, repeat steps 4 through 9 for the **Project invoice**, **Prepayment invoice**, and **Retail simplified invoice** feature setups.
-
-    > [!NOTE]
-    > For the **Saudi Arabian ZATCA compliance check (SA)** Electronic invoicing feature, repeat steps 4 through 9 for the **Simplified invoice compliance check** and **Retail fiscal document compliance check** feature setups instead.
-
 1. Complete and deploy the **Saudi Arabian Zatca submission (SA)** feature to the service. For more information, see [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 For more information about business data configuration and processing in Finance, see [Customer electronic invoices in Saudi Arabia](emea-sau-e-invoices.md).
