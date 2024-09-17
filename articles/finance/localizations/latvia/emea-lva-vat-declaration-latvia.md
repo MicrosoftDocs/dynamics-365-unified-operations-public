@@ -19,7 +19,7 @@ ms.search.form: TaxAuthority, TaxReportCollection, TaxReportVoucher, TaxTable
 
 This article describes how to set up and generate a value-added tax (VAT) declaration for Latvia in the XML format, and how to preview it in Microsoft Excel.
 
-As of 10.0.42 version of Dynamics 365 Finance, the VAT declaration feature for Latvia supports filing a VAT return for [multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md) and for companies that report as a VAT group in the same system database. For each version of Finance that's listed in the following table, these capabilities are supported as of the specified build number.
+As of 10.0.42 version of Microsoft2Dynamics 365 Finance, the VAT declaration feature for Latvia supports filing a VAT return for [multiple VAT registrations](../global/emea-multiple-vat-registration-numbers.md) and for companies that report as a VAT group in the same system database. For each version of Finance that's listed in the following table, these capabilities are supported as of the specified build number.
 
 | Version | Build | 
 |---------|-------|
@@ -31,10 +31,10 @@ As of 10.0.42 version of Dynamics 365 Finance, the VAT declaration feature for L
 
 The VAT declaration feature for Latvia supports reporting of the following parts:
 
-- **PVN**: declaration part which contains summary of total transaction value (both taxable, exempt, local reverse charge), calculated VAT and amount of input VAT on goods and services received, amendments to calculated VAT and input VAT (if any) and the final payable or receivable amount which is payable or receivable towards the Latvian State Budget;
-- **PVN 1-I**: Amount of input VAT on goods and services purchased domestically;
-- **PVN 1-II**: Amount of VAT on goods and services purchased from other European Union Member States;
-- **PVN 1-III**: Calculated VAT on supplied goods and services domestically;
+- **PVN**: declaration part which contains summary of total transaction value (both taxable, exempt, local reverse charge), calculated VAT and amount of input VAT on goods and services received, amendments to calculated VAT and input VAT (if any), and the final payable or receivable amount which is payable or receivable towards the Latvian State Budget.
+- **PVN 1-I**: Amount of input VAT on goods and services purchased domestically.
+- **PVN 1-II**: Amount of VAT on goods and services purchased from other European Union Member States.
+- **PVN 1-III**: Calculated VAT on supplied goods and services domestically.
 - **PVN 2**: Overview of supplies of goods and services to other European Union Member States (EU sales list).
 
 To automatically generate the report, first create enough sales tax codes to keep a separate VAT accounting for each type of operation that's subject to reporting in the VAT declaration for Latvia. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate available sales tax transaction attributes (sales tax code, tax classifier, sales tax group, item sales tax group) with the lookup result of the **Report field lookup** lookup field. 
@@ -46,7 +46,7 @@ Use this information to correctly associate tax transaction attributes with the 
 |-----------------------|-------------------------------------|------------------|--------------------------------------|--------------------------------------|------------------------------------|---------|
 | Supply of goods and provision of services (including credit notes for the same period and advance payments received) subject to the standard VAT rate. | 41 |52 | PVN 1 - III | 41/52 DomesticSalesStandardRate | Supply of goods and provision of services (including credit notes for the same period and advance payments received) subject to the standard VAT rate. | Ar nodokļa standartlikmi apliekamo darījumu (preču piegādes un pakalpojumu sniegšanas) vērtību bez nodokļa. |
 | Tax invoice for property that has been sold at an auction organized by a bailiff. | 41 |52 | PVN 1 - III | 41/52 SalesOfPropertyAtAuction | Registered delivery of property of the taxpayer at an auction organized by a sworn bailiff. | Reģistrēta nodokļa maksātāja mantas piegāde zvērināta tiesu izpildītāja rīkotā izsolē |
-| Supply of goods and provision of services subject to the standard VAT rate to unregistered tax payer. | 41 |52 | PVN 1 - III | 41/52 SalesNotRegistered | Transactions registered by the tax payer in accordance with the Cabinet of Ministers Regulation of January 15, 2013 no. 40 32.3. subsection. Transactions of 150 euros or more (excluding VAT), if the recipient of the goods or services is an unregistered tax payer or a person who is not a tax payer, or a person who cannot be identified. In this case, indicating the document type code "X". | Darījumus, kuru vērtība bez nodokļa ir 150 euro vai vairāk, ja preču vai pakalpojumu saņēmējs ir nereģistrēts nodokļa maksātājs vai persona, kas nav nodokļa maksātāja, vai persona, kuru nevar identificēt. Tajā norādot dokumenta veida kodu "X". |
+| Supply of goods and provision of services subject to the standard VAT rate to unregistered taxpayer. | 41 |52 | PVN 1 - III | 41/52 SalesNotRegistered | Transactions registered by the taxpayer in accordance with the Cabinet of Ministers Regulation of January 15, 2013 no. 40 32.3. subsection. Transactions of 150 euros or more (excluding VAT), if the recipient of the goods or services is an unregistered taxpayer or a person who is not a taxpayer, or a person who cannot be identified. In this case, indicating the document type code "X". | Darījumus, kuru vērtība bez nodokļa ir 150 euro vai vairāk, ja preču vai pakalpojumu saņēmējs ir nereģistrēts nodokļa maksātājs vai persona, kas nav nodokļa maksātāja, vai persona, kuru nevar identificēt. Tajā norādot dokumenta veida kodu "X". |
 | Domestic transactions for which tax is paid by the recipient of goods or services. | 411 | - | PVN 1 - III | 411 DomesticSupplyReverseCharge | Goods and services, for which tax is paid to the state budget by the recipient of goods and services in accordance with Articles 141, 142, 143, 143.1, 143.2, 143.3 and 143.4 of the law. | Piegādāto preču un sniegto pakalpojumu vērtību, par kuriem nodokli valsts budžetā maksā preču un pakalpojumu saņēmējs saskaņā ar likuma 141., 142., 143., 143.1, 143.2, 143.3 un 143.4 pantu. |
 | Transactions subject to the reduced rate. | 42 | 53 | PVN 1 - III | 42/53 DomesticSalesReducedRate | Supply of goods and the provision of services are taxable transactions with a reduced tax rate of 12 percent. | Preču piegādes un pakalpojumu sniegšanas ar samazināto nodokļa likmi 12 procentu apmērā apliekamo darījumu. |
 | Transactions subject to the second reduced rate. | 421 | 531 | PVN 1 - III | 421/531 DomesticSalesSecondReducedRate | Supply of goods and provision of services with the second reduced tax rate of 5 percent. | Preču piegādes un pakalpojumu sniegšanas ar otrā samazināto nodokļa likmi 5 procentu. |
@@ -55,17 +55,17 @@ Use this information to correctly associate tax transaction attributes with the 
 | Supply of goods to another EU Member State after release for free circulation, excluding specific sales. | 45, 43 | - | PVN 2 (EC sales list) | 45/43 EUSales | Supply of goods to another EU Member State that is carried out following their release for free circulation inland, except supplies of fresh fruits, berries and vegetables, including washed, peeled, shelled, cut and packaged, but not thermally or otherwise processed (for example, frozen, salted, dried). | Citu ES dalībvalsti piegādāto preču ES teritorijā vērtību, izņemot likuma 42. panta sešpadsmitajā daļā minētās preces, ja preču saņēmējs ir citas ES dalībvalsts reģistrēts nodokļa maksātājs. |
 | Specific supply of goods to another EU Member State. | 451, 43 | - | PVN 2 (EC sales list) | 451/43 SpecificEUSales | Supply of fresh fruits, berries and vegetables, including washed, peeled, shelled, cut and packaged, but not thermally or otherwise processed (for example, frozen, salted, dried) to another EU Member State registered taxpayer. | Likuma 42. panta sešpadsmitajā daļā minēto uz citu ES dalībvalsti piegādāto preču ES teritorijā vērtību, ja preču saņēmējs ir citas ES dalībvalsts reģistrēts nodokļa maksātājs. Šajā rindā norāda arī ES teritorijā piegādāto preču vērtību likuma 31.1 pantā noteiktajā brīdī. |
 | The value of goods brought into the EU from third countries or territories, not released for free circulation, stored in customs warehouses and free zones. | 46, 43 | - | - | 46/43 ImportDeliveryInCustoms | The value of the goods brought into the EU territory from third countries or third territories and not released for free circulation in delivery customs warehouses and free zones. | To preču vērtību, kas ievestas ES teritorijā no trešajām valstīm vai trešajām teritorijām un nav izlaistas brīvā apgrozībā piegādes muitas noliktavās un brīvajās zonās. |
-| The value of new vehicles delivered to an unregistered or non-taxpayer in another EU member state, with the tax invoice copy attached to the tax declaration. | 47, 43 | - | - | 47/43 NewVehiclesEUSales | The value of new vehicles delivered to another EU member state to an unregistered taxpayer of that member state or to a non-tax payer of another EU member state. A copy of the tax invoice for the delivery of a new vehicle is attached to the tax declaration. | Uz citu ES dalībvalsti šīs dalībvalsts nereģistrētam nodokļa maksātājam vai citas ES dalībvalsts personai, kas nav nodokļa maksātāja, piegādāto jaunu transportlīdzekļu vērtību. Nodokļa deklarācijai pievieno nodokļa rēķina kopiju par jauna transportlīdzekļa piegādi. |
+| The value of new vehicles delivered to an unregistered or non-taxpayer in another EU member state, with the tax invoice copy attached to the tax declaration. | 47, 43 | - | - | 47/43 NewVehiclesEUSales | The value of new vehicles delivered to another EU member state to an unregistered taxpayer of that member state or to a non-taxpayer of another EU member state. A copy of the tax invoice for the delivery of a new vehicle is attached to the tax declaration. | Uz citu ES dalībvalsti šīs dalībvalsts nereģistrētam nodokļa maksātājam vai citas ES dalībvalsts personai, kas nav nodokļa maksātāja, piegādāto jaunu transportlīdzekļu vērtību. Nodokļa deklarācijai pievieno nodokļa rēķina kopiju par jauna transportlīdzekļa piegādi. |
 | Services taxed at a 0% rate under Articles 46, 47, 48, and 50 (parts 4-7.1) of the law, effective January 1, 2021. | 48, 43 | - | - | 48/43 ServicesProvidedZeroRate | With the tax rate of 0 percent (including the reduced tax rate of 0 percent) of the value of the services rendered in accordance with Articles 46, 47, 48 and 2.1 of Article 50 of the law (starting from January 1, 2021), fourth, fifth, sixth, seventh and 7.1 parts. | Ar nodokļa 0 procentu likmi (tai skaitā ar samazināto nodokļa likmi 0 procentu apmērā) apliekamo sniegto pakalpojumu vērtību saskaņā ar likuma 46., 47., 48. pantu un 50. panta 2.1 (sākot ar 2021. gada 1. janvāri), ceturto, piekto, sesto, septīto un 7.1 daļu. |
 | Exported goods. | 481, 43 | - | - | 481/43 ExportGoods | Exported goods. | Eksportēto preču vērtību. |
 | Not domestic transactions. | 482 | - | PVN 1 - III | 482 NonDomesticTransactions | Supply of services to another EU Member State registered taxpayer. | Pakalpojumu sniegšana citā ES dalībvalstī reģistrētam nodokļu maksātājam. |
 | Supply of services to another EU Member State. | 482 | - | PVN 2 (EC sales list) | 482 EUTransaction | Supply of services to another EU Member State registered taxpayer. | Pakalpojumu sniegšana citā ES dalībvalstī reģistrētam nodokļu maksātājam. |
 | VAT exempt supplies. | 49 | - | - | 49 NonTaxableTransactions | Value of non-taxable transactions in accordance with Article 52 of the Law (including in accordance with Part 3.1 of this Article). In this line, the value of the delivery of tax-exempt investment gold according to Article 139 of the law is also indicated. | Ar nodokli neapliekamo darījumu vērtību saskaņā ar likuma 52. pantu (tai skaitā saskaņā ar šā panta 3.1 daļu). Šajā rindā norāda arī no nodokļa atbrīvotu ieguldījumu zelta piegādes vērtību saskaņā ar likuma 139. pantu. |
-| Purchases from EU member state subject to standard VAT rate 21%. | 49 | - | - | 50/55 EUPurchaseStandardRateReverseCharge | Goods and services received from EU including credit notes, subject to standard rate VAT 21%, reverse charge. | Preces un pakalpojumi, kas saņemti no ES, ieskaitot kredītrēķinus, apliekami ar standarta likmi PVN 21%, apgrieztā iekasēšana. |
-| Purchases from EU member state subject to standard VAT rate 21%. | 50 | 55 | PVN 1-II | 50/55 EUPurchaseStandardRateReverseCharge | Goods and services received from EU including credit notes, subject to standard rate VAT 21%, reverse charge. | Preces un pakalpojumi, kas saņemti no ES, ieskaitot kredītrēķinus, apliekami ar standarta likmi PVN 21%, apgrieztā iekasēšana. |
-| UseTax - Goods received from EU after importation subject to standard VAT rate 21%. | 50 | 55,64 | PVN 1-II | 50/55/64 EUPurchaseStandardRateAfterImportationUseTax | Goods and services received from EU, reported with code "C" - purchase of such goods in the territory of the EU in accordance with the third part of Article 9 of the law, which is carried out after importation from third countries and release into free circulation in another EU member state posted using UseTax, subject to standard VAT rate 21%. | Preces un pakalpojumi, kas saņemti no ES, uzrādīti ar kodu "C", šādu preču iegāde ES teritorijā saskaņā ar likuma 9.panta trešo daļu, kas tiek veikta pēc ievešanas no trešajām valstīm un izlaišanas. laist brīvā apgrozībā citā ES dalībvalstī, publicēts, izmantojot UseTax, tiek piemērota standarta PVN likme 21%. |
-| UseTax - Goods received from EU subject to standard VAT rate 21%. | 50 | 55, 64 | PVN 1-II | 50/55/64 EUPurchaseStandardRateGoodsUseTax | Goods received from EU, reported with code "G" – goods received from registered taxpayers of another EU member state (purchase of goods in EU territory), posted using UseTax, subject to standard VAT rate 21%. | Preces, kas saņemtas no citas ES dalībvalsts reģistrētiem nodokļa maksātājiem (preču iegāde ES teritorijā, kods “G”), publicēts, izmantojot UseTax, tiek piemērota standarta PVN likme 21%. |
-| UseTax - Services received from EU subject to standard VAT rate 21%. | 50 | 55, 64 | PVN 1-II | 50/55/64 EUPurchaseStandardRateServicesUseTax | Services received from EU, reported with code "P" - services received from a taxpayer registered in another EU member state and the place of provision of which, in accordance with the first part of Article 19 of the law, is domestic, posted using UseTax, subject to standard VAT rate 21%. | Pakalpojumi, kuri saņemti no citas ES dalībvalsts reģistrēta nodokļa maksātāja un kuru sniegšanas vieta saskaņā ar likuma 19. panta pirmo daļu ir iekšzeme (kods “P”), publicēts, izmantojot UseTax, tiek piemērota standarta PVN likme 21%. |
+| Purchases from EU member state subject to standard VAT rate of 21%. | 49 | - | - | 50/55 EUPurchaseStandardRateReverseCharge | Goods and services received from EU including credit notes, subject to standard rate VAT 21%, reverse charge. | Preces un pakalpojumi, kas saņemti no ES, ieskaitot kredītrēķinus, apliekami ar standarta likmi PVN 21%, apgrieztā iekasēšana. |
+| Purchases from EU member state subject to standard VAT rate of 21%. | 50 | 55 | PVN 1-II | 50/55 EUPurchaseStandardRateReverseCharge | Goods and services received from EU including credit notes, subject to standard rate VAT 21%, reverse charge. | Preces un pakalpojumi, kas saņemti no ES, ieskaitot kredītrēķinus, apliekami ar standarta likmi PVN 21%, apgrieztā iekasēšana. |
+| UseTax - Goods received from EU after importation subject to standard VAT rate of 21%. | 50 | 55,64 | PVN 1-II | 50/55/64 EUPurchaseStandardRateAfterImportationUseTax | Goods and services received from EU, reported with code "C" - purchase of such goods in the territory of the EU in accordance with the third part of Article 9 of the law, which is carried out after importation from third countries and release into free circulation in another EU member state posted using UseTax, subject to standard VAT rate of 21%. | Preces un pakalpojumi, kas saņemti no ES, uzrādīti ar kodu "C", šādu preču iegāde ES teritorijā saskaņā ar likuma 9.panta trešo daļu, kas tiek veikta pēc ievešanas no trešajām valstīm un izlaišanas. laist brīvā apgrozībā citā ES dalībvalstī, publicēts, izmantojot UseTax, tiek piemērota standarta PVN likme 21%. |
+| UseTax - Goods received from EU subject to standard VAT rate of 21%. | 50 | 55, 64 | PVN 1-II | 50/55/64 EUPurchaseStandardRateGoodsUseTax | Goods received from EU, reported with code "G" – goods received from registered taxpayers of another EU member state (purchase of goods in EU territory), posted using UseTax, subject to standard VAT rate of 21%. | Preces, kas saņemtas no citas ES dalībvalsts reģistrētiem nodokļa maksātājiem (preču iegāde ES teritorijā, kods “G”), publicēts, izmantojot UseTax, tiek piemērota standarta PVN likme 21%. |
+| UseTax - Services received from EU subject to standard VAT rate of 21%. | 50 | 55, 64 | PVN 1-II | 50/55/64 EUPurchaseStandardRateServicesUseTax | Services received from EU, reported with code "P" - services received from a taxpayer registered in another EU member state and the place of provision of which, in accordance with the first part of Article 19 of the law, is domestic, posted using UseTax, subject to standard VAT rate of 21%. | Pakalpojumi, kuri saņemti no citas ES dalībvalsts reģistrēta nodokļa maksātāja un kuru sniegšanas vieta saskaņā ar likuma 19. panta pirmo daļu ir iekšzeme (kods “P”), publicēts, izmantojot UseTax, tiek piemērota standarta PVN likme 21%. |
 | Purchases from EU member state subject to reduced VAT rate 12%. | 51 | 56 | PVN 1-II | 51/56 EUPurchaseReducedRateReverseCharge | Goods and services received from EU including credit notes, subject to reduced rate VAT 12%, reverse charge. | Preces un pakalpojumi, kas saņemti no ES, ieskaitot kredītrēķinus, apliekami ar samazināts likmi PVN 12%, apgrieztā iekasēšana. |
 | UseTax - Goods received from EU after importation subject to reduced VAT rate 12%. | 51 | 56,64 | PVN 1-II | 51/56/64 EUPurchaseReducedRateAfterImportationUseTax | Goods and services received from EU, reported with code "C" - purchase of such goods in the territory of the EU in accordance with the third part of Article 9 of the law, which is carried out after importation from third countries and release into free circulation in another EU member state posted using UseTax, subject to reduced VAT rate 12%. | Preces un pakalpojumi, kas saņemti no ES, uzrādīti ar kodu "C", šādu preču iegāde ES teritorijā saskaņā ar likuma 9.panta trešo daļu, kas tiek veikta pēc ievešanas no trešajām valstīm un izlaišanas. laist brīvā apgrozībā citā ES dalībvalstī, publicēts, izmantojot UseTax, tiek piemērota samazināts PVN likme 12%. |
 | UseTax - Goods received from EU subject to reduced VAT rate 12%. | 51 | 56,64 | PVN 1-II | 51/56/64 EUPurchaseReducedRateGoodsUseTax | Goods received from EU, reported with code "G" – goods received from registered taxpayers of another EU member state (purchase of goods in EU territory), posted using UseTax, subject to reduced VAT rate 12%. | Preces, kas saņemtas no citas ES dalībvalsts reģistrētiem nodokļa maksātājiem (preču iegāde ES teritorijā, kods “G”), publicēts, izmantojot UseTax, tiek piemērota samazināts PVN likme 12%. |
@@ -131,7 +131,7 @@ To automatically generate the VAT declaration, associate available sales tax tra
 > [!NOTE]
 > For more information about how to set up the parameters of an ER format for each legal entity, see [Set up the parameters of an ER format per legal entity](../../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
-Follow these steps to define which of the available sales tax transaction attributes (sales tax code, tax classifier, sales tax group, item sales tax group) in Finance generates which field of the VAT declaration for Latvia.
+To define which of the available sales tax transaction attributes (sales tax code, tax classifier, sales tax group, item sales tax group) in Finance generates which field of the VAT declaration for Latvia, follow these steps.
 
 1. Go to **Workspaces** \> **Electronic reporting**, and select **Reporting configurations**.
 2. Select the **VAT declaration XML (LV)** configuration, and then, on the Action Pane, select **Configurations** \> **Application specific parameters setup**.
@@ -163,7 +163,7 @@ Follow these steps to define which of the available sales tax transaction attrib
 8. In the **State** field, select **Completed**.
 
 ### <a name="setup-preview"></a>Set up the VAT reporting format to preview amounts in Excel
-
+To s Set up the VAT reporting format to preview amounts in Excel, follow these steps.
 1. Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax authorities**, and select the tax authority.
 2. In the **Report layout** field, select **Default**.
 3. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
@@ -184,7 +184,7 @@ The process of setting up the **Electronic messages** functionality to generate 
 
 > [!NOTE]
 > Some records in the data entities in the package include a link to ER configurations. Before you start to import the data entities package, [import ER configurations into Finance](#import-er).
-
+To set up the **Electronic messages** functionality to generate the VAT declaration for Latvia in XML format and preview it, follow these steps.
 1. In [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com/v2), in the Shared asset library, select **Data package** as the asset type, and then download **LV VAT declaration - PVN - EM setup v.\#**. The downloaded file is named **LV VAT declaration - PVN - EM setup v.\#.zip**. Always download the latest version of the package that's available in Lifecycle Services.
 2. In Finance, in the **Data management** workspace, select **Import**.
 3. On the **Import** FastTab, in the **Group name** field, enter a name for the job.
@@ -197,7 +197,7 @@ The process of setting up the **Electronic messages** functionality to generate 
 For more information about how you can use the data management framework, see [Data management](../../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
 #### Configure electronic messages
-
+To configure electronic messages, follow these steps.
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**.
 2. Select the line for **LV Populate VAT return records**, and then select **Edit query**.
 3. Use the filter to specify the settlement periods to include on the report.
@@ -205,7 +205,7 @@ For more information about how you can use the data management framework, see [D
 
 ### <a id="vat-id"></a>Set up the registration numbers of the company that's reporting PVN
 
-Follow these steps to configure the registration numbers of your organization.
+To configure the registration numbers of your organization, follow these steps.
 
 1. Go to **Organization administration** \> **Organizations** \> **Legal entities**.
 2. Select the legal entity, and then select **Registration IDs**.
@@ -216,7 +216,7 @@ Follow these steps to configure the registration numbers of your organization.
 
 For more information about how to set up registration categories and registration types, see [Registration IDs](../europe/emea-registration-ids.md).
 
-Follow these steps to define the VAT registration number that EM uses during generation of the VAT declaration for Latvia.
+To define the VAT registration number that EM uses during generation of the VAT declaration for Latvia, follow these steps.
 
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic messages processing**, and select the **LV VAT declaration** processing.
 2. On the **Message additional fields** FastTab, in the **Tax registration number** field, define the VAT registration number that should be used in the VAT declaration for Latvia.
@@ -227,7 +227,7 @@ If the VAT registration number isn't specified in the **Tax registration number*
 ## Preview the VAT declaration in Excel
 
 ### <a name="report-sales-tax-for-settlement-period"></a>Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task
-
+To preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task, follow these steps.
 1. Go to **Tax** \> **Periodic tasks** \> **Declarations** \> **Sales tax** \> **Report sales tax for settlement period**.
 2. Set the following fields.
 
@@ -235,7 +235,8 @@ If the VAT registration number isn't specified in the **Tax registration number*
     |---|---|
     | From date | Select the start date of the reporting period. |
     | Settlement period | Select the settlement period. |
-    | Sales tax payment version | <p>Select one of the following values:</p><ul><li>**Original** – Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</li><li>**Corrections** – Generate a report for the sales tax transactions of all the subsequent sales tax payments for the period.</li><li>**Total list** – Generate a report for all the sales tax transactions for the period, including the original and all corrections.</li></ul> |
+    | Sales tax payment version | <p>Select one of the following values:</p><ul><li>**Original** – 
+Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</li><li>**Corrections** – Generate a report for the sales tax transactions of all the subsequent sales tax payments for the period.</li><li>**Total list** – Generate a report for all the sales tax transactions for the period, including the original and all corrections.</li></ul> |
 
 3. Select **OK**, and then, in the next dialog box, set the following fields.
 
@@ -297,7 +298,7 @@ To use the formats to report the VAT declaration for a group of legal entities, 
 
 ### Set up electronic messages to collect tax data from several legal entities
 
-Follow these steps to set up electronic messages to collect data from multiple legal entities.
+To set up electronic messages to collect data from multiple legal entities , follow these steps.
 
 1. Go to **Workspaces** \> **Feature management**.
 2. Find and select the **Cross-company queries for the populate records actions** feature in the list, and then select **Enable now**.
