@@ -48,26 +48,26 @@ CSU is available for deployment in the following regions.
 |-----------------|-------------------------|------------------------------------------|
 | AMERICAS        | East US                 | Generally available                      |
 | AMERICAS        | East US 2               | Generally available                      |
-| AMERICAS        | North Central US        | No new deployments allowed<sup>[1]</sup> |
-| AMERICAS        | South Central US        | No new deployments allowed<sup>[1]</sup> |
 | AMERICAS        | Central US              | Generally available                      |
 | AMERICAS        | West US                 | No new deployments allowed<sup>[1]</sup> |
 | AMERICAS        | West US 2               | Generally available                      |
-| AMERICAS        | Canada Central          | Generally available                      |
+| AMERICAS        | North Central US        | No new deployments allowed<sup>[1]</sup> |
+| AMERICAS        | South Central US        | No new deployments allowed<sup>[1]</sup> |
 | AMERICAS        | Canada East             | No new deployments allowed<sup>[1]</sup> |
+| AMERICAS        | Canada Central          | Generally available                      |
 | APAC            | Australia East          | Generally available                      |
 | APAC            | Australia Southeast     | No new deployments allowed<sup>[1]</sup> |
-| APAC            | Southeast Asia          | Generally available                      |
 | APAC            | Japan East              | Generally available                      |
 | APAC            | Japan West              | No new deployments allowed<sup>[1]</sup> |
 | APAC            | East Asia               | Generally available                      |
-| APAC            | South India             | No new deployments allowed<sup>[1]</sup> |
+| APAC            | Southeast Asia          | Generally available                      |
 | APAC            | Central India           | Generally available                      |
+| APAC            | South India             | No new deployments allowed<sup>[1]</sup> |
+| UAE             | UAE North<sup>[2]</sup> | Capacity restricted                      |
 | EMEA            | West Europe             | Generally available                      |
 | EMEA            | North Europe            | Generally available                      |
-| EMEA            | UK South                | Generally available                      |
 | EMEA            | UK West                 | No new deployments allowed<sup>[1]</sup> |
-| UAE             | UAE North<sup>[2]</sup> | Capacity restricted       |
+| EMEA            | UK South                | Generally available                      |
 
 ***NOTE:** <br/>
 [1] No new deployments allowed due capacity limits and lack of availability zones.<br/>
