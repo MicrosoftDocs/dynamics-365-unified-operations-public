@@ -7,7 +7,7 @@ ms.topic: article
 ms.custom: 
   - bap-template
   - evergreen
-ms.date: 05/02/2024
+ms.date: 09/17/2024
 ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-03-02
@@ -32,15 +32,15 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### Sales tax report for Latvia (design based on reporting codes)
 
-[Sales tax report for Lithuania](../localizations/lithuania/emea-lva-vat-statement-details.md)
+[Sales tax report for Lithuania](../localizations/latvia/emea-lva-vat-statement-details.md)
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | Replaced with a new value-added tax (VAT) declaration design, [VAT declaration for Latvia](../localizations/lithuania/emea-lva-vat-declaration-latvia.md). | 
+| **Reason for deprecation/removal** | Replaced with a new value-added tax (VAT) declaration design, [VAT declaration for Latvia](../localizations/latvia/emea-lva-vat-declaration-latvia.md). | 
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By October 1, 2025, we plan to no longer support the Sales tax report for Latvia design that's based on reporting codes, including the **VAT declaration (LV)**, **VAT declaration 218 (LV)**, **VAT declaration v6 (LV)**, **VAT declaration v7 (LV)** Electronic reporting (ER) formats under the **VAT declaration model** together with the following obects: EDT/TaxAmountOverpaid_LV, Enum/LvBusinessType, Enum/LvDocumentType, Enum/LvDocumentAggregationType, Enum/TaxTransDataOrigin_W, Enum/TaxDeclarationType_W, Class/VATDeclarationService_LV, Table/TaxTable/Field/BusinessType_LV, Table/TmpTaxReportTaxTransData_LV. New **VAT declaration XML (LV)** and **VAT declaration Excel (LV)** ER formats are introduced under the **Tax declaration** model. |
+| **Status**                         | Deprecated: By October 1, 2025, we plan to no longer support the Sales tax report for Latvia design that's based on reporting codes, including the **VAT declaration (LV)**, **VAT declaration 218 (LV)**, **VAT declaration v6 (LV)**, **VAT declaration v7 (LV)** Electronic reporting (ER) formats under the **VAT declaration model** together with the following objects: EDT/TaxAmountOverpaid_LV, Enum/LvBusinessType, Enum/LvDocumentType, Enum/LvDocumentAggregationType, Enum/TaxTransDataOrigin_W, Enum/TaxDeclarationType_W, Class/VATDeclarationService_LV, Table/TaxTable/Field/BusinessType_LV, Table/TmpTaxReportTaxTransData_LV. New **VAT declaration XML (LV)** and **VAT declaration Excel (LV)** ER formats are introduced under the **Tax declaration** model. |
 
 ### Sales tax report for Norway (design based on reporting codes)
 
@@ -52,7 +52,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By January 1, 2026, we plan to no longer support the Sales tax report for Norway design that's based on reporting codes, including the **VAT declaration (NO)** Electronic reporting (ER) format under the **VAT declaration model** together with following obects: Table/TmpTaxTransInfo_W, Class/VATDeclaraitonContract_W. New **VAT declaration XML (NO)** and **VAT declaration Excel (NO)** ER formats are introduced under the **Tax declaration** model. |
+| **Status**                         | Deprecated: By January 1, 2026, we plan to no longer support the Sales tax report for Norway design that's based on reporting codes, including the **VAT declaration (NO)** Electronic reporting (ER) format under the **VAT declaration model** together with following objects: Table/TmpTaxTransInfo_W, Class/VATDeclaraitonContract_W. New **VAT declaration XML (NO)** and **VAT declaration Excel (NO)** ER formats are introduced under the **Tax declaration** model. |
 
 ## Features removed or deprecated in the Finance 10.0.41 release
 
