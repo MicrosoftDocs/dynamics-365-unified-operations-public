@@ -379,7 +379,7 @@ To set up the SDI Proxy service in IIS, follow these steps.
         - **ClientCertificateName** – Specify the name of the App Registration Certificate in the key vault.
         - **SecurityServiceClientOptions.Endpoint** – Specify the URL of the security service.
         - **SecurityServiceClientOptions.Resource** – Specify the scope to obtain the token for.
-        - **InvoicingServiceClientOptions.Endpoint** – Specify the endpoint of the invoicing service. (You can obtain this value from the **Endpoint URL** field in the **Service parameters** section on the **Electronic Invoicing** tab of the **Electronic document parameters** page in Finance.) Append **/api/environments/\<*environmentId*\>** to the end.
+        - **InvoicingServiceClientOptions.Endpoint** – Specify the endpoint of the invoicing service. (You can obtain this value from the **Endpoint URL** field in the **Service parameters** section on the **Electronic Invoicing** tab of the **Electronic document parameters** page in Finance.), after copying remove / at the end.
         - **InvoicingServiceClientOptions.ServiceEnvironmentId** – You can leave the default value, **ServiceEnvironment**, because Microsoft plans to deprecate this field in future releases.
         - **NotificationsFolder** – Specify the folder to save incoming notification files in (for example, **C:\\\\Files\\\\**).
 
