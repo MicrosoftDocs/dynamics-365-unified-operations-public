@@ -21,7 +21,7 @@ ms.search.form:
 Workers and managers can register batch/serial numbers for materials and components that are used in manufacturing processes. They can also then associate those numbers with the batch/serial numbers of the products that are produced. In this way, manufacturers can optimize their processes, enhance product quality, and respond quickly to any issues that arise. Managers can use the item tracing report to effectively track batch/serial numbers that are registered through the *Tracked components* feature.
 
 > [!TIP]
-> You can also track batch/serial numbers for materials and components using the [Traceability Add-in for Dynamics 365 Supply Chain Management](../traceability/traceability-overview.md), which offers a graphical browser interface and an API for integration with external systems.
+> You can also track batch/serial numbers for materials and components using the [Traceability Add-in for Dynamics 365 Supply Chain Management (preview)](../traceability/traceability-overview.md), which offers a graphical browser interface and an API for integration with external systems.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -98,4 +98,4 @@ The **Components** section lists the components of the finished product that's s
 ## Related information
 
 - [How workers use the production floor execution interface](production-floor-execution-use.md#tracked-components)
-- [Traceability overview](../traceability/traceability-overview.md)
+- [Traceability overview (preview)](../traceability/traceability-overview.md)

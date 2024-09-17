@@ -13,7 +13,6 @@ ms.search.form: IoTIntCoreAzureResourceDeploymentWizard
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
 <!-- KFM: Preview until further notice -->
 
 Sensor Data Intelligence uses data from sensors that are connected to Microsoft Azure. To enable Azure to retrieve data from your sensors and share it with Dynamics 365 Supply Chain Management, you must deploy an Internet of Things (IoT) solution on your Azure subscription. The following architectural diagram provides an overview of the solution and its components.
