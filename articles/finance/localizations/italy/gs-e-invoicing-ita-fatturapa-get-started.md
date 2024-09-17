@@ -116,11 +116,12 @@ To set up application-specific parameters, follow these steps.
 1. In the **Lookups** section, make sure that the **List of Natura reverse charge subcategories** lookup is selected.
 1. In the **Conditions** section, select **Add**.
 1. Add specific conditions for each subcategory that is defined in the system.
-1. Change the **State** value to **Completed**, save your changes, and then close the page.
-1. Repeat steps 2 through 7 for the **Project invoice (IT)** format configuration, as required.
 
     > [!NOTE]
     > In the **Name** column, you can select the **\*Blank\*** or **\*Not blank\*** placeholder value instead of a specific value.
+
+1. Change the **State** value to **Completed**, save your changes, and then close the page.
+1. Repeat steps 2 through 7 for the **Project invoice (IT)** format configuration, as required.
 
 ### Configure a processing pipeline for export
 
@@ -282,13 +283,7 @@ To create an Azure virtual machine (VM), follow these steps.
     ![Screenshot that shows the setup on the Disks tab to create an Azure VM.](../media/e-invoicing-ita-fatturapa-get-started-create-vm-2.png)
 
 1. On the **Networking** tab, under the **Public IP** field, select **Create new**.
-
-    ![Screenshot that shows the setup on the Networking tab to create an Azure VM.](../media/e-invoicing-ita-fatturapa-get-started-create-vm-3.png)
-
 1. In the **Create public IP address** dialog box, in the **SKU** field group, select the **Standard** option. In the **Assignment** field group, select the **Static** option.
-
-    ![Screenshot that shows the setup in the Create a public IP address dialog box.](../media/e-invoicing-ita-fatturapa-get-started-create-vm-4.png)
-
 1. On the **Management** tab, clear the **Auto-shutdown** checkbox to disable automatic shutdown.
 1. Set the **Guest OS updates** field to **Manual**, and set any other policies.
 1. Review and create the VM.
@@ -365,8 +360,7 @@ To prepare the proxy service environment, follow these steps on the machine wher
 
             - HTTP Activation
 
-    ![Screenshot that shows the IIS features turned on.](../media/e-invoicing-ita-fatturapa-get-started-turnon-features.png)
-
+    
 ### Set up the SDI Proxy service in IIS
 
 To set up the SDI Proxy service in IIS, follow these steps.
@@ -437,9 +431,6 @@ To set up the SDI Proxy service in IIS, follow these steps.
 
 1. Select the **Require SSL** checkbox.
 1. In the **Client certificates** field group, select the **Require** option.
-
-    ![Screenshot that shows the configuration of SSL Settings.](../media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-3.png)
-
 1. Open **Directory Browsing**, and select **Enable**.
 1. Open the Configuration Editor, and select **system.webServer** \> **serverRuntime**.
 1. Modify the **uploadReadAheadSize** and **maxRequestEntityAllowed** values to at least 10 megabits.
@@ -513,9 +504,6 @@ To rotate certificates, follow these steps.
     1. In the [Azure portal](https://portal.azure.com), go to **App registrations**, and find the app that was created for S2S.
     1. Go to **Certificates & secrets**, select **Upload certificate**, and upload the .cer file for S2S authentication.
     1. Go to Azure Key Vault, and select the certificate that you previously uploaded, and that was referred to as the *App Registration Certificate*. Select **New Version**.
-
-        ![Screenshot that shows the New Version button for creating a new version of the certificate.](../media/e-invoicing-ita-fatturapa-get-started-kv-cert-newversion.png)
-
     1. Select **Method of certificate creation** = **Import**, specify the path of the .pfx file and the password, and then select **Create**.
 
 1. Rotate the proxy server certificate:
