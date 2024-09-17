@@ -28,20 +28,40 @@ The following illustration shows an overview of Dynamics 365 Commerce components
 
 To ensure compatibility between all Commerce components that are serviced and deployed by customers and partners, you must follow several versioning dependencies during servicing updates. The following list describes all these dependencies.
 
-- ** Commerce Scale Unit (both cloud and self-hosted) must be on one of the serviceable releases and it has to be same as F&O app release or lower but must always be serviceable. **
+- **Commerce Scale Unit (CSU), whether cloud or self-hosted, must be on a serviceable release that is either the same as or lower than the F&O app release, but it must always be  serviceable.**
 
-- 
-    EXPAND here with examples of serviceable and non-serviceable 
+  For e.g., hypothetically, consider today's date as Sep 20, 2024 and there are following releases for reference :
+    - _Release Winter (GA: Jan 15, 2024, End of service: Aug 15, 2024)_
+    - _Release Spring (GA: Mar 15, 2024, End of service: Nov 15, 2024)_
+    - _Release Summer (GA: Jun 15, 2024, End of service: Feb 15, 2025)_
+    - _Release Autumn (GA: Sep 15, 2024, End of service: May 15, 2025)_
 
-   For example, if Commerce headquarters and finance and operations apps are on version 10.0.30, Commerce Scale Unit must be on version 10.0.30 or earlier (for example, 10.0.29 or 10.0.28).
+Of the above releases, as of Sep 20, 2024, _Release Winter_ has already reached _End-of-service_ that means you cannot have CSU version from _Winter_ release and they need to be at least from _Spring_ release (earliest serviceable release). 
 
-- ** Store Commerce app, Hardware Station, and the Commerce software development kit (SDK) and associated local site configurations (such as modules, data actions, and themes) must be on one of the serviceable releases and it has to be same as Commerce Scale Unit release or lower but must always be serviceable. **
+Essentially, if Commerce headquarters and Finance and operations apps are on _Autumn_ version, Commerce Scale Unit must be on version from any of the releases that are still serviceable that means either from _Autumn, or Summer or Spring_ releases  but it cannot be from _Winter_ release as that has already hit _End-of-service_. 
 
-    For example, if Commerce Scale Unit is on version 10.0.30, Store Commerce app, Hardware Station, and the Commerce storefront must be on version 10.0.30 or earlier (for example, 10.0.29 or 10.0.28).
+- **Store Commerce app, Hardware Station, and the Commerce software development kit (SDK), along with associated local site configurations (including modules, data actions, and themes), must be on a serviceable release. This release should be the same as or lower than the Commerce Scale Unit release, but it must always be serviceable.**
 
-- **Extension packages must be compiled against the same version as, or an earlier version than, the target component that the extension applies to.**
+  For e.g., hypothetically, consider today's date as Sep 20, 2024 and there are following releases for reference :
+    - _Release Winter (GA: Jan 15, 2024, End of service: Aug 15, 2024)_
+    - _Release Spring (GA: Mar 15, 2024, End of service: Nov 15, 2024)_
+    - _Release Summer (GA: Jun 15, 2024, End of service: Feb 15, 2025)_
+    - _Release Autumn (GA: Sep 15, 2024, End of service: May 15, 2025)_
 
-    For example, if the deployed Commerce Scale Unit is on version 10.0.30, the corresponding extension packages must be compiled against version 10.0.30 or earlier (for example, 10.0.29 or 10.0.28).
+Of the above releases, as of Sep 20, 2024, _Release Winter_ has already reached _End-of-service_ that means you cannot have Store Commerce App, Hardware Station and the Commerce SDK version from _Winter_ release and they need to be at least from _Spring_ release (earliest serviceable release). 
+
+   For example, if Commerce Scale Unit is on _Autumn_ version, then Store Commerce app, Hardware Station, and the Commerce SDK must be on one of the serviceable version that means either from _Autumn or Summer or Spring_ but it cannot be from _Winter_ release  as that has already hit _End of service_.
+
+- **Extension packages must be compiled against the same version as, or an earlier serviceable version than, the target component that the extension applies to.**
+  For e.g., hypothetically, consider today's date as Sep 20, 2024 and there are following releases for reference:
+     - _Release Winter (GA: Jan 15, 2024, End of service: Aug 15, 2024)_
+     - _Release Spring (GA: Mar 15, 2024, End of service: Nov 15, 2024)_
+     - _Release Summer (GA: Jun 15, 2024, End of service: Feb 15, 2025)_
+     - _Release Autumn (GA: Sep 15, 2024, End of service: May 15, 2025)_
+
+Of the above releases, as of Sep 20, 2024, _Release Winter_ has already reached _End-of-service_ that means you cannot have _Extension packages_ from _Winter_ release and they need to be at least from _Spring_ release (earliest serviceable release). 
+
+For example, if the _target component_ is on _Autumn_ version, the corresponding _extension packages_ must be compiled against one of the serviceable version that means either from _Autumn or Summer or Spring_ but it cannot be from _Winter_ release  as that has already hit _End of service_.
 
 ### Quality updates
 
@@ -49,8 +69,7 @@ During quality updates, no specific versioning requirements must be followed for
 
 ## Current supported versions
 
-The following table describes the current supported versions refer link here - https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases.
-
+The following table describes the current supported versions refer link here - [Service update availability](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases).
 
 ## One Version requirements
 
@@ -72,12 +91,11 @@ Following In-store components need to be within serviceable releases, as shared 
 - Sealed Commerce Scale Unit (self-hosted)
 - Sealed Hardware station
 
-[!note] Legacy in-store components are NOT supported
-
-- Commerce Scale Unit (self-hosted)
-- Modern point of sale (MPOS) and hybrid apps
-- Hardware station (Legacy)
-- Retail SDK
+> [!Note] Legacy in-store components are NOT supported
+> - Commerce Scale Unit (self-hosted)
+> - Modern point of sale (MPOS) and hybrid apps
+> - Hardware station (Legacy)
+> - Retail SDK
 
 ## Additional resources
 
