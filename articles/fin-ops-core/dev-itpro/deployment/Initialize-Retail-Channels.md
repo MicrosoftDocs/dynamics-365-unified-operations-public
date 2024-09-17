@@ -68,14 +68,11 @@ CSU is available for deployment in the following regions.
 | EMEA            | UK South                | Generally available                      |
 | EMEA            | UK West                 | No new deployments allowed<sup>[1]</sup> |
 | EMEA            | Switzerland North       | No new deployments allowed<sup>[1]</sup> |
-| UAE             | UAE North<sup>[3]</sup> | Capacity restricted<sup>[2]</sup>        |
+| UAE             | UAE North<sup>[2]</sup> | Capacity restricted       |
 
 ***NOTE:** <br/>
-[1] No new deployments allowed due capacity limits and lack of availability zones. If you have a compelling business need for deployment in these regions, you can file a support request to be added to the waitlist. Requests will be evaluated on a case-by-case basis.<br/>
-[2] Capacity restricted areas currently don't allow for CSU deployment at this time.<br/>
-[3] LCS UAE can be used to deploy CSU in UAE. CSUs in UAE only run in one region and don't have a business continuity and disaster recovery (BCDR) region to fail over to if there is Azure regional failure.<br/>*
-
-![Map showing region availability.](media/Commerce-Scale-Unit-Region-Availability.png "Map showing region availability")
+[1] No new deployments allowed due capacity limits and lack of availability zones.<br/>
+[2] LCS UAE can be used to deploy CSU in UAE. CSUs in UAE only run in one region and don't have a business continuity and disaster recovery (BCDR) region to fail over to if there is Azure regional failure.<br/>*
 
 ## Initialize CSU as part of a new environment deployment
 
