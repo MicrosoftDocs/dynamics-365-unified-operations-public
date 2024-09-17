@@ -1,15 +1,15 @@
 ---
 title: Latvia overview
 description: Access links to Microsoft Dynamics 365 Finance documentation resources for Latvia, including links to resources about fixed assets and invoices. 
-author: kfend
-ms.author: kfend
+author: johnmichalak
+ms.author: johnmichalak
 ms.topic: overview
-ms.date: 01/18/2022
+ms.custom: 
+  - bap-template
+ms.date: 09/17/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Latvia
 ms.search.validFrom: 2016-02-28
-ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
