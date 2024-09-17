@@ -136,7 +136,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: Finance 10.0.38 release no longer supports the `TaxYearlyCom_IT` and `TaxYearlyComReport_IT` tables for Italian Yearly tax communication. They are replaced with new `TaxYearlyComV2_IT` and `TaxYearlyComReportV2_IT` tables for Italian Yearly tax communication. |
+| **Status**                         | Deprecated: Finance 10.0.38 release no longer supports the `TaxYearlyCom_IT` and `TaxYearlyComReport_IT` tables for Italian Yearly tax communication. They're replaced with new `TaxYearlyComV2_IT` and `TaxYearlyComReportV2_IT` tables for Italian Yearly tax communication. |
 
 
 ## Features removed or deprecated in the Finance 10.0.36 release
@@ -149,7 +149,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By July 1, 2024, we will no longer support the **FTA VAT Audit File (AE)** ER format that uses the **Standard Audit File** model mapping and the **FAF declaration** menu item (**Tax** \> **Declarations** \> **FAF declaration**). A new **FTA Tax Audit File - FAF in TXT (AE)** ER format has been introduced that uses the **SAF-T General** model mapping and can be used with the [Standard Audit File for Tax (SAF-T) electronic report](../general-ledger/standard-audit-file.md) feature. For more information, see [FTA Tax Audit File (FAF) in TXT format for the United Arab Emirates](../localizations/uae-faf.md). |
+| **Status**                         | Deprecated: By July 1, 2024, Microsoft no longer supports the **FTA VAT Audit File (AE)** ER format that uses the **Standard Audit File** model mapping and the **FAF declaration** menu item (**Tax** \> **Declarations** \> **FAF declaration**). A new **FTA Tax Audit File - FAF in TXT (AE)** ER format has been introduced that uses the **SAF-T General** model mapping and can be used with the [Standard Audit File for Tax (SAF-T) electronic report](../general-ledger/standard-audit-file.md) feature. For more information, see [FTA Tax Audit File (FAF) in TXT format for the United Arab Emirates](../localizations/uae-faf.md). |
 
 ## Features removed or deprecated in the Finance 10.0.31 release
 
@@ -254,7 +254,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By December 1, 2022, we will no longer support the **Elster (DE)** Electronic reporting (ER) format and **Elster model**. New **VAT declaration XML (DE)** and **VAT declaration Excel (DE)** ER formats are introduced under the **Tax declaration** model. We will also no longer support the **Tax** \> **Declarations** \> **Sales tax** \> **Electronic tax declaration log** menu item and page, the **Tax** \> **Setup** \> **Sales tax** \> **Electronic tax declaration setup** menu item and page, the **Tax** \> **Setup** \> **Sales tax** \> **Electronic tax certificates** menu item and page, and the German report layout (TaxReport\_DE) SQL Server Reporting Services (SSRS) format. The process of VAT reporting in Germany is supported in [Electronic messaging](../general-ledger/electronic-messaging.md) functionality. For more information, see [VAT declaration for Germany](../localizations/emea-deu-vat-declaration-germany.md). |
+| **Status**                         | Deprecated: By December 1, 2022, Microsoft no longer supports the **Elster (DE)** Electronic reporting (ER) format and **Elster model**. New **VAT declaration XML (DE)** and **VAT declaration Excel (DE)** ER formats are introduced under the **Tax declaration** model. Microsoft also no longer supports the **Tax** \> **Declarations** \> **Sales tax** \> **Electronic tax declaration log** menu item and page, the **Tax** \> **Setup** \> **Sales tax** \> **Electronic tax declaration setup** menu item and page, the **Tax** \> **Setup** \> **Sales tax** \> **Electronic tax certificates** menu item and page, and the German report layout (TaxReport\_DE) SQL Server Reporting Services (SSRS) format. The process of VAT reporting in Germany is supported in [Electronic messaging](../general-ledger/electronic-messaging.md) functionality. For more information, see [VAT declaration for Germany](../localizations/emea-deu-vat-declaration-germany.md). |
 
 ### OB declaration for Netherlands (design based on reporting codes), \"Electronic OB declaration\" menu item and page, Dutch report layout (TaxReport_NL) SSRS format
 
@@ -266,7 +266,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: By December 1, 2022, we will no longer support the **OB declaration (NL)** Electronic reporting (ER) format and **OB declaration model**. New **VAT declaration XML (NL)** and **VAT declaration Excel (NL)** ER formats are introduced under the **Tax declaration** model. We also will no longer support the **Tax** \> **Declarations** \> **Sales tax** \> **Electronic OB declaration** menu item and page, and the Dutch report layout (TaxReport_NL) SSRS format. The process of VAT reporting in the Netherlands is supported in [Electronic messaging](../general-ledger/electronic-messaging.md) functionality. For more information, see [VAT declaration for Netherlands](../localizations/emea-nl-vat-declaration-netherlands.md). |
+| **Status**                         | Deprecated: By December 1, 2022, Microsoft no longer supports the **OB declaration (NL)** Electronic reporting (ER) format and **OB declaration model**. New **VAT declaration XML (NL)** and **VAT declaration Excel (NL)** ER formats are introduced under the **Tax declaration** model. We also will no longer support the **Tax** \> **Declarations** \> **Sales tax** \> **Electronic OB declaration** menu item and page, and the Dutch report layout (TaxReport_NL) SSRS format. The process of VAT reporting in the Netherlands is supported in [Electronic messaging](../general-ledger/electronic-messaging.md) functionality. For more information, see [VAT declaration for Netherlands](../localizations/emea-nl-vat-declaration-netherlands.md). |
 
 ## Features removed or deprecated in the Finance 10.0.20 release
 
