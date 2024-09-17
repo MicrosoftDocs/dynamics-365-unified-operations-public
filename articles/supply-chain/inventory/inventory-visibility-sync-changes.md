@@ -1,5 +1,5 @@
 ---
-title: Sync external inventory adjustments through Inventory Visibility (preview)
+title: Sync external inventory adjustments through Inventory Visibility
 description: This article explains how to set up the system to sync inventory adjustments registered in an external system to Microsoft Dynamics 365 Supply Chain Management and Inventory Visibility through the Inventory Visibility service business layer.
 author: yufeihuang
 ms.author: yufeihuang
@@ -11,15 +11,11 @@ ms.custom:
   - bap-template
 ---
 
-# Sync external inventory adjustments through Inventory Visibility (preview)
+# Sync external inventory adjustments through Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!--KFM: Preview until 10.0.41 GA -->
 
 This article explains how to set up the system to sync inventory adjustment transactions that are registered in an external system to Microsoft Dynamics 365 Supply Chain Management and Inventory Visibility through the Inventory Visibility service business layer.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 Some organizations have multiple sources or channels of inventory operations that work outside Supply Chain Management. This feature enables those organizations to use Inventory Visibility to store their omnichannel inventory transactions. Based on these transactions, Inventory Visibility can create and post inventory adjustment journals to Supply Chain Management. These capabilities provide the following key business benefits:
 

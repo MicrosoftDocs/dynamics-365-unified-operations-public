@@ -15,6 +15,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 This article explains how to use the Approvals Management mobile app to approve, reject, or delegate approval requests.
 

@@ -41,5 +41,5 @@ For more help and support, we recommend joining the [Traceability group on Yamme
 
 ## Next steps
 
-- [Install, update, or uninstall Traceability](developer/traceability-install.md)
-- [Traceability app quick start](traceability-app-quick-start.md)
+- [Install, update, or uninstall Traceability (preview)](developer/traceability-install.md)
+- [Traceability app quick start (preview)](traceability-app-quick-start.md)

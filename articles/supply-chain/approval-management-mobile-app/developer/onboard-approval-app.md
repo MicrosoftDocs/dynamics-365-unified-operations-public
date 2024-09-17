@@ -15,6 +15,7 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 This article explains how administrators can prepare your Microsoft Dynamics 365 Supply Chain Management and Dataverse environments to support the Approvals Management mobile app. It also explains how to install the app on your mobile devices.
 
