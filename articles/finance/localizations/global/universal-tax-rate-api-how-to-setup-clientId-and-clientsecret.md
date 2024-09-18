@@ -56,12 +56,8 @@ To create a key vault, follow these steps.
 1. Select **Review \+ Create**.
 1. After the deployment is completed, expand the **Deployment details** section, and select the **Key vault** detail.
 
-    :::image type="content" source="../media/items.png" alt-text="Screenshot of the TaxProvider-vault Overview page with the Deployment details expanded and the key vault highlighted.":::
-
     > [!NOTE]
     > Copy and save the **Vault URI** value. You must enter it in the **Key Vault URL** field when you complete the procedure in the [Set up Key Vault parameters in finance and operations apps](#set-up-key-vault-parameters-in-finance-and-operations-apps) section.
-
-    :::image type="content" source="../media/items1.png" alt-text="Screenshot of the key vault details with the Vault URI field highlighted.":::
 
 1. Select **Next**, and set the **Permission model** field to **Vault access policy**.
 1. Select **Secrets**, and then select **Generate/Import**.
@@ -97,15 +93,10 @@ To create an app registration, follow these steps.
 1. In Azure AD, search for **register**, and then select **App registrations**.
 1. Set the **Name** and **Supported account types** fields, and then select **Register**.
 1. Copy and save the **Application (client) ID** value. It should be specified in the application. In the [Set up Key Vault parameters in finance and operations apps](#set-up-key-vault-parameters-in-finance-and-operations-apps) section, it's referred to as the **Key Vault client** parameter.
-
-    :::image type="content" source="../media/items6.png" alt-text="Screenshot of the TaxProviderKeyVaultAccess page with the Application (client) ID field highlighted.":::
-
 1. Create a new client secret.
 
     > [!NOTE]
     > The client secret is a mandatory parameter for integration with the key vault. It should be copied and then specified in the application. In the [Set up Key Vault parameters in finance and operations apps](#set-up-key-vault-parameters-in-finance-and-operations-apps) section, it's referred to as the **Key Vault secret key** parameter.
-
-    :::image type="content" source="../media/items7.png" alt-text="Screenshot of the Certificates & secrets page with the New client secret button highlighted.":::
 
 #### Set up the access policy of the key vault
 
