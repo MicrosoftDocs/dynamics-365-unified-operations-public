@@ -28,36 +28,31 @@ Before you begin the procedures in this article, provision an Azure storage acco
 - Steps to provision an Azure storage account are described in [Provision Azure storage account](../global/gs-e-invoicing-create-azure-storage-account-azure-portal.md).
 
 
-1. Open the storage account that you plan to use with the Electronic invoicing service.
-2. Go to **Settings** \> **Configuration**, and make sure that the **Allow Blob public access** parameter is set to **Enabled**.
-3. Go to **Data storage** \> **Containers**, and create a container.
-4. Enter a name for the container, and set the **Public access level** field to **Private (no anonymous access)**.
-5. Open the new container, and go to **Settings** \> **Access policy**.
-6. Select **Add policy** to add a stored access policy.
-7. Set the **Identifier** field as appropriate.
-8. In the **Permissions** field, select all permissions.
+## Create an Azure file share
 
-    ![All permissions selected in the Permissions field in the Add policy dialog box.](../media/e-invoicing-azure-1.png)
+To create an Azure file share:
 
-9. Enter the start and end dates. The end date should be in future.
-10. Select **OK** to save the policy, and then save your changes to the container.
-11. Go to **Settings** \> **Shared access tokens**, and set the field values.
-12. Enter the start and end dates. The end date should be in future.
-13. In the **Permissions** field, select the following permissions:
+1. Select the storage account from your dashboard.
+1. In the service menu, under **Data storage**, select **File shares**.
 
-    - Read
-    - Add
-    - Create
-    - Write
-    - Delete
-    - List
+    ![Azure file share.](../media/create-file-share.png) 
 
-14. Select **Generate SAS token and URL**.
-15. Copy and store the value in the **Blob SAS URL** field. This value will be used later in this procedure and will be referred to as the *shared access signature URI*.
-16. Open the key vault that you intend to use with Electronic invoicing.
-17. Go to **Settings** \> **Secrets**, and select **Generate/Import** to create a secret.
-18. On the **Create a secret** page, in the **Upload options** field, select **Manual**.
-19. Enter the name of the secret. This name will be used during the setup of the service in Regulatory Configuration Service (RCS) and will be referred to as the *key vault secret name*. For more information about how to set up RCS,see [Set up Regulatory Configuration Service (RCS)](e-invoicing-set-up-rcs.md).
-20. In the **Value** field, enter the shared access signature URI that you copied earlier.
-21. Select **Create**.
+1. On the menu at the top of the **File shares** page, select **+ File share**. The **New file share** page drops down.
+1. In **Name**, enter a file share name. File share names must be all lower-case letters, numbers, and single hyphens, and must begin and end with a lower-case letter or number. The name can't contain two consecutive hyphens. For details about naming file shares and files, see [Naming and Referencing Shares, Directories, Files, and Metadata](/rest/api/storageservices/Naming-and-Referencing-Shares--Directories--Files--and-Metadata).
+1. Select **Review + create** and then **Create** to create the Azure file share.
+
+
+To get connection string:
+
+1. Go to Azure portal (portal.azure.com) with your subscription and locate to the corresponding Storage account resource.
+   Security + Networking -> Access keys; copy the value from key 1 Connection string
+
+   ![Azure file share connection string.](../media/azure-file-share-connection-string.png)
+   
+3. Store the Connection string value in the Key vault secret, see details of how to setup Azure Key vault [Configure Azure key vault](../global/gs-e-invoicing-create-azure-key-vault-azure-portal.md).
+4. Refer to the Key vault secret in key vault parameters, see [Configure key vault parameters](../global/gs-e-invoicing-set-up-parameters.md).
+ 
+
+Note: Do not mix Connection string value and the storage shared access signature (SAS) token.
+
 
