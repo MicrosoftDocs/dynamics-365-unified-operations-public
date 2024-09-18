@@ -6,7 +6,7 @@ ms.author: twheeloc
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.date: 08/31/2024
+ms.date: 09/18/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-02-29
@@ -99,7 +99,7 @@ Public method **Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetC
 | **What do you need to do?**         | We strongly recommend that any customers with dependencies on the GraphAPIClient class (responsible for making Azure Active Directory Graph calls) migrate to the MicrosoftGraphClient (responsible for making Microsoft Graph calls) as soon as possible to avoid service disruptions. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | The Support for Azure Active Directory Graph will end in PU66. |
+| **Status**                         | The Support for Azure Active Directory Graph will end in 10.0.41/PU65. |
 
 ### SharePoint integration authentication using a Microsoft-managed high-trust connection
 
