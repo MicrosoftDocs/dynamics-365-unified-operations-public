@@ -33,17 +33,24 @@ Before you begin the procedures in this article, complete the following prerequi
 
 Some of the parameters from the **Egyptian electronic invoice (EG)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, review the default values, and update them as required so that they better reflect your business operation.
 
-1. Import the latest version of the **Egyptian electronic invoice (EG)** Globalization feature as described in [Import features from the Global repository](../global/e-invoicing-import-feature-global-repository.md).
-2. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](../global/e-invoicing-create-new-globalization-feature.md).
+1. Import the latest version of the **Egyptian electronic invoice (EG)** Globalization feature as described in [Import features from the Global repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+2. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
 3. On the **Versions** tab, verify that the **Draft** version is selected.
-4. On the **Setups** tab, in the grid, select the **Sales invoice derived** feature setup.
-5. Select **Edit**.
-6. On the **Processing pipeline** tab, in the **Processing pipeline** section, select **Sign json document for Egyptian Tax Authority**.
-7. In the **Parameters** section, select **Certificate name**, and then select the name of the digital certificate that you created.
-8. In the **Processing pipeline** section, select **Integrate with Egyptian ETA service**. Repeat this step for the two occurrences of this action.
-9. In the **Parameters** section, select **Web service URL** and **Login service URL**. Then review the URL parameters. To get the testing and production URL, go to the Egyptian tax authority website by using the link that is provided in [Egyptian e-invoicing SDK](https://sdk.invoicing.eta.gov.eg/faq/).
-10. Select **Save**, and close the page.
-11. Repeat the steps 4 through 10 for the **Project invoice derived** feature setup.
+4. On the **Feature parameters** tab, specify values for the following connection and integration parameters that are required for interoperation with Egyptian tax authority services:
+
+    - **EgyptianETAClientID** – Enter the client ID provided by reglatory authority.
+    - **EgyptianETAClientSecret** – Enter the secret provided by reglatory authority.
+    - **EgyptianETAConnectionString** – Enter the connection string for Azure file share provisioned earlier.
+    - **EgyptianETASendToFileShareDirectory** – Enter the name of Azure file share directory to write digital invoices for signing.
+    - **EgyptianETAGetFromAzureFileShare** – Enter the name of Azure file share directory to read signed digital invoices.
+    - **EgyptianETALoginserviceURL** – Egyptian tax authority login service url. Microsoft shipped feature points to pre-prod endpoint. 
+    - **EgyptianETAWebserviceURL** – Egyptian tax authority web service url. Microsoft shipped feature points to pre-prod endpoint.
+    
+    The following illustration shows an example of a feature parameter setup that includes the URL for Egyptian tax authority pre-prod endpoint. 
+
+    ![Screenshot that shows the Feature parameters tab configured for the Globalization feature for Saudi Arabia.](../media/sa-e-invoice-glob-feature-parameters.jpg)
+
+5. Complete and deploy the **Egyptian electronic invoice (EG)** feature to the service. For more information, see [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ## Country/region-specific configuration for the Egyptian electronic invoice (EG) application setup
 
