@@ -4,12 +4,12 @@ description: This article explains how to get started with electronic invoicing 
 author: achansoriya
 ms.author: achansoriya
 ms.topic: how-to
-ms.date: 18/09/2024
+ms.date: 09/19/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
 ms.search.region: Egypt
-ms.search.validFrom: 2020-07-08
+ms.search.validFrom: 09/19/204
 ms.dyn365.ops.version: AX 10.0.39
 ---
 
