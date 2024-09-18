@@ -49,6 +49,14 @@ To view the summary data, a user must have at least one of the following menu it
 1. Select **Learn more** to learn more about the AI terms.
 1. Select **Enable**.
 
+## Turn AI summaries with Copilot on or off
+
+Admins can control whether this AI summary feature is shown in your system by searching for the following features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- Customer summary – *Customer page summary*
+
+This feature is turned on by default, but you can turn it off if you don't want to see them.
+
 ## View summary text
 
 When a customer is selected in the **All customers** workspace, the AI-generated content appears on the **Summary** FastTab. Azure OpenAI generates the results based on data in Finance and the provided prompts.
