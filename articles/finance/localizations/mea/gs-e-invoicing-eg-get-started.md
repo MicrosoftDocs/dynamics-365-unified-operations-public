@@ -1,17 +1,16 @@
 ---
-title: Electronic invoicing for Egypt
-description: Learna bout what will help you get started with Electronic invoicing for Egypt in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
-author: ikondratenko
-ms.author: johnmichalak
-ms.topic: article
-ms.date: 02/09/2022
+title: Get started with electronic invoicing for Egypt
+description: This article explains how to get started with electronic invoicing for Egypt in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
+author: achansoriya
+ms.author: achansoriya
+ms.topic: how-to
+ms.date: 18/09/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak
-ms.collection: get-started
-audience: Application User
-ms.search.region: Global
+ms.search.region: Egypt
 ms.search.validFrom: 2020-07-08
-ms.search.form: 
-ms.dyn365.ops.version: AX 10.0.12
+ms.dyn365.ops.version: AX 10.0.39
 ---
 
 # Electronic invoicing for Egypt
@@ -24,14 +23,10 @@ This article provides information that will help you get started with Electronic
 
 Before you begin the procedures in this article, complete the following prerequisites:
 
-- Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
-- Sign up for RCS, and set up Electronic invoicing. For more information, see the following topics:
+- Become familiar with Electronic invoicing as it's described in [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md).
+- Do the common part of Electronic Invoicing service configuration as described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
+- Import the **Egyptian electronic invoice (EG)** version **20** or later, electronic invoicing features from the repository. For more information, see [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 
-    - [Sign up for and install the Electronic Invoicing service](../global/e-invoicing-sign-up-install.md)
-    - [Set up Azure resources for Electronic invoicing](../global/e-invoicing-set-up-azure-resources.md)
-    - [Install the add-in for microservices in Lifecycle Services](../global/e-invoicing-install-add-in-microservices-lcs.md)
-	
-- Activate the integration between your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management application and the Electronic Invoicing service as described in [Activate and setup integration with Electronic invoicing](../global/e-invoicing-activate-setup-integration.md).
 - Create a digital certificate secret in Azure Key Vault, and set it up it as described in [Customer certificates and secrets](../global/e-invoicing-customer-certificates-secrets.md). For testing purposes, the Egyptian tax authority provides specific test digital certificates that must be used only during testing and solution validation phases. For more information, go to the Egyptian tax authority website by using the link that is provided in [Egyptian e-invoicing SDK](https://sdk.invoicing.eta.gov.eg/faq/).
 
 ## Country/region-specific configuration for the Egyptian electronic invoice (EG) feature
