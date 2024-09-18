@@ -3,12 +3,14 @@ title: Initialize Commerce Scale Unit (cloud)
 description: Learn about how to initialize Commerce Scale Unit (cloud) in Microsoft Dynamics 365 Commerce, including prerequisites.
 author: aneesmsft
 ms.author: aneesa
-ms.topic: article
-ms.date: 09/13/2024
-ms.reviewer: johnmichalak
+ms.topic: how-to
+ms.date: 09/18/2024
+ms.reviewer: v-chrgriffin
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2018-04-30
+ms.custom: 
+  - bap-template
 ---
 
 # Initialize Commerce Scale Unit (cloud)
@@ -42,6 +44,7 @@ If you're using a Tier-2 sandbox or production environment that has application 
     - RetailStores - If you plan to use POS.
 
 ## Region availability
+
 CSU is available for deployment in the following regions.
 
 | Global location | Region                  | Availability                             |
@@ -69,9 +72,9 @@ CSU is available for deployment in the following regions.
 | EMEA            | UK West                 | No new deployments allowed<sup>[1]</sup> |
 | EMEA            | UK South                | Generally available                      |
 
-***NOTE:** <br/>
-[1] No new deployments allowed due capacity limits and lack of availability zones.<br/>
-[2] LCS UAE can be used to deploy CSU in UAE. CSUs in UAE only run in one region and don't have a business continuity and disaster recovery (BCDR) region to fail over to if there is Azure regional failure.<br/>*
+
+[1] No new deployments allowed due to capacity limits and lack of availability zones.</br>
+[2] LCS UAE can be used to deploy CSUs in UAE. CSUs in UAE only run in one region and don't have a business continuity and disaster recovery (BCDR) region to fail over to if there's an Azure regional failure.
 
 ## Initialize CSU as part of a new environment deployment
 
