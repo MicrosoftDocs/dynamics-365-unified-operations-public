@@ -38,7 +38,7 @@ To create an Azure file share:
     ![Azure file share.](../media/create-file-share.png) 
 
 1. On the menu at the top of the **File shares** page, select **+ File share**. The **New file share** page drops down.
-1. In **Name**, enter a file share name. File share names must be all lower-case letters, numbers, and single hyphens, and must begin and end with a lower-case letter or number. The name can't contain two consecutive hyphens. For details about naming file shares and files, see [Naming and Referencing Shares, Directories, Files, and Metadata](/rest/api/storageservices/Naming-and-Referencing-Shares--Directories--Files--and-Metadata).
+1. In **Name**, enter a file share name. File share names must be all lower-case letters, numbers, and single hyphens, and must begin and end with a lower-case letter or number. The name can't contain two consecutive hyphens.
 1. Select **Review + create** and then **Create** to create the Azure file share.
 
 
