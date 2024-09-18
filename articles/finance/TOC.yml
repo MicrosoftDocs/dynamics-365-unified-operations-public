@@ -1630,6 +1630,8 @@
                               href: localizations/global/gs-e-invoicing-create-azure-key-vault-azure-portal.md?context=/dynamics365/context/finance
                             - name: Create an Azure storage account in the Azure portal
                               href: localizations/global/gs-e-invoicing-create-azure-storage-account-azure-portal.md
+                            - name: Create Azure file share in the Azure portal
+                              href: localizations/global/gs-e-invoicing-create-azure-file-share.md
                             - name: Configure a SharePoint connection
                               href: localizations/global/gs-e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/finance
                             - name: Create Azure resources using Azure PowerShell or ARM templates
