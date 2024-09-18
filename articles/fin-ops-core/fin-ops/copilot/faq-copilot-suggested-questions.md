@@ -1,5 +1,5 @@
 ---
-title: Responsible AI FAQ for Follow-up questions in the Copilot sidecar
+title: Responsible AI FAQ for Follow-up questions in the Copilot sidecar (preview)
 description: This FAQ provides answers to frequently asked questions about the AI technology that's used to generate follow-up questions in the Copilot sidecar in finance and operations apps. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 04/27/2024
 ms.collection:
@@ -12,7 +12,7 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ---
 
-# Responsible AI FAQ for Follow-up questions in the Copilot sidecar
+# Responsible AI FAQ for Follow-up questions in the Copilot sidecar (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
