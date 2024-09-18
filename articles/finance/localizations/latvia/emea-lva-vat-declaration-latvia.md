@@ -235,8 +235,7 @@ To preview the VAT declaration in Excel from the Report sales tax for settlement
     |---|---|
     | From date | Select the start date of the reporting period. |
     | Settlement period | Select the settlement period. |
-    | Sales tax payment version | <p>Select one of the following values:</p><ul><li>**Original** – 
-Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</li><li>**Corrections** – Generate a report for the sales tax transactions of all the subsequent sales tax payments for the period.</li><li>**Total list** – Generate a report for all the sales tax transactions for the period, including the original and all corrections.</li></ul> |
+    | Sales tax payment version | <p>Select one of the following values:</p><ul><li>**Original** – Generate a report for the sales tax transactions of the original sales tax payment or before the sales tax payment is generated.</li><li>**Corrections** – Generate a report for the sales tax transactions of all the subsequent sales tax payments for the period.</li><li>**Total list** – Generate a report for all the sales tax transactions for the period, including the original and all corrections.</li></ul> |
 
 3. Select **OK**, and then, in the next dialog box, set the following fields.
 
@@ -247,7 +246,7 @@ Generate a report for the sales tax transactions of the original sales tax payme
     | Report composition | Select which parts of the report you would like to generate. Following options are available: PVN, PVN 1-I, PVN 1-II, PVN 1-III, PVN 2. You can select multiple options for generation of the report. |
     | Bank account | Select a bank account from the list company's bank accounts. |
     | Contact person | Select a contact person in the lookup list. |
-    | Include reverse | Mark this checkbox if you want to include reversed transactions in PVN. |
+    | Include reverse | Transactions reversed using the reverse transaction functionality by default are not included in box-type declarations if reverse is posted using the same date as the original document. To include them in the declaration, use the Include reverse user input parameter. Mark this checkbox if you want to include reversed transactions in PVN. |
 
 > [!NOTE]
 > The PVN 2 part of the VAT declaration for Latvia is the EU sales list. For more information, see [EU Sales list for Latvia](emea-lva-eu-sales-list.md). Before generating PVN 2 as part of VAT declaration for Latvia, ensure that you have transfered the data using the **EU sales list** functionality and reported it by clicking **Report** button on the Action pane of **EU sales list** page.
