@@ -43,8 +43,6 @@ To set up electronic message functionality for communication of SPED-Reinf event
 
 Every event that is created, delivered, and received is represented by a message and a message item.
 
-![Electronic messages structure.](../media/bra-electronic-messages-structure21.png)
-
 The message item is represented by the XML event message. It includes the following information that is stored in the message or updated in Finance:
 
 - The full National Registry of Legal Entities (CNPJ) number of the fiscal establishment
