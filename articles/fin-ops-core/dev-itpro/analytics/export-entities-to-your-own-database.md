@@ -4,10 +4,10 @@ description: Learn  how to export entities to your own Azure SQL database, inclu
 author: sericks007
 ms.author: sericks
 ms.topic: article
-ms.date: 10/21/2021
-ms.custom:
+ms.date: 09/17/2024
+ms.custom: 
+  - bap-template
 ms.reviewer: johnmichalak
-audience: Developer, IT Pro
 ms.search.region: Global 
 ms.search.validFrom: 2016-08-30 
 ms.dyn365.ops.version: Platform update 2
@@ -65,9 +65,7 @@ If you're using the BYOD feature for integration for analytical purposes, you sh
     Data Source=&lt;logical server name&gt;,1433; Initial Catalog=&lt;your DB name&gt;; Integrated Security=False; User ID=&lt;SQL user ID&gt;; Password=&lt;password&gt;
 
     In this connection string, the logical server name should resemble **nnnn.database.windows.net**. You should be able to find the logical server name in Azure portal. The following illustration shows an example of a connection string.
-
-    ![Connection string on the New record page.](media/NewRecord.png)
-    
+ 
     
 > [!NOTE]
 > The default extension field shown in the image above does not apply to BYOD.

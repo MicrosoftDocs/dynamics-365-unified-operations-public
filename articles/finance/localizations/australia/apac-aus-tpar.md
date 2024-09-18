@@ -34,8 +34,6 @@ A TPAR requires that you provide information to the company contact person who i
 2. Select **New** to create a contact for your legal entity. Be sure to select a legal entity in the **Contact for** field.
 3. Check by **Party ID** value to make sure that you select the legal entity that Standard Audit File for Tax (SAF-T) will be reported from.
 
-    ![Creating a contact for your company.](../media/apac-au-tpar-contact-person.png)
-
 ### Import Electronic reporting configurations
 
 In Microsoft Dynamics 365 Finance, import the latest available version of these Electronic reporting (ER) configurations from the Global repository:
