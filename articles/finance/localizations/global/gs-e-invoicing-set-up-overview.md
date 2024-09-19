@@ -82,7 +82,7 @@ To activate Electronic invoicing in Globalization Studio, enable the following f
 
 ## Configure the Azure resources for Electronic invoicing
 
-Set up the Azure resources that Electronic invoicing requires to do its work. For more information, see [Set up Azure resources for Electronic invoicing](e-invoicing-set-up-azure-resources.md).
+Set up the Azure resources that Electronic invoicing requires to do its work. For more information, see [Set up Azure resources for Electronic invoicing](gs-e-invoicing-set-up-azure-resources.md).
 
 ## Configure Globalization features
 
