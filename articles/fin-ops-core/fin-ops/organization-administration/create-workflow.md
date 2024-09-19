@@ -25,12 +25,13 @@ This article explains how to create a workflow.
 
 ## Open the workflow editor
 
-The module that you're working in determines the types of workflow that you can create. Follow these steps to select the type of workflow to create and open the workflow editor.
+The module that you're working in determines the types of workflow that you can create. Follow these steps to select the type of workflow to create a new workflow using the workflow editor.
 
 1. Open the module that you want to create a new workflow for. For example, to create a workflow for purchase requisitions, click **Procurement and sourcing**.
 2. Click **Setup** &gt; **\[Module name\] workflows**.
 3. On the list page that appears, on the Action Pane, click **New**.
-4. On the **Create workflow** page, select the type of workflow to create, and then click **Create workflow**. The workflow editor appears. You can now use the following procedures to design the workflow.
+4. On the **Create workflow** page, select the type of workflow to create, and then click **Create workflow**. The workflow editor is launched. 
+5. Select or sign in to the account you wish to use with the workflow editor. If prompted to **Stay signed in to all your apps**, click **OK** to associate the account for Windows to automatically sign in to the workflow editor and other apps in the future, or choose **No, sign in to this app only** if you prefer to only sign in to the workflow editor for this session.
 
 ## Drag workflow elements onto the canvas
 

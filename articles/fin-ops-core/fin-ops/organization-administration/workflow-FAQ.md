@@ -59,5 +59,9 @@ The default field value for the **Number of workflow items per batch** on the **
 ## What is the Workflow Enhanced Error feature?
 The Workflow Enhanced Error feature in version 10.0.13 adds error codes to differentiate different classes of workflow errors. The error messages reported will be mostly similar with minor differences to make them clearer.
 
+## What should I do if I encounter error code CAAC000E when signing in to the workflow editor? 
+The error with code CAAC000E, **Something went wrong. User is not eligible to enroll a device. Reason: DeviceCapReached**, can appear when signing in to the workflow editor if your account has reached the Microsoft Intune device registration cap configured for your organization. You can click **Continue** to proceed to use the workflow editor to create or edit workflows despite this error. 
+
+To avoid this error, choose the **No, sign in to this app only** the next time you sign in to the workflow editor, or contact your IT administrator to raise your device cap. 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
