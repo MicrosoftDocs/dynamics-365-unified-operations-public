@@ -39,13 +39,13 @@ The **Workflow elements** area of the workflow editor contains the elements that
 
 ## Connect the elements
 
-To connect one workflow element to another, hold the pointer over an element until connection points appear. Select a connection point, and drag it to another element. Be sure to connect all the elements.
+To connect one workflow element to another, hold the pointer over an element until connection points appear. Select a connection point, and then drag it to another element. Be sure to connect all the elements.
 
 ## Configure the properties of the workflow
 
 Follow these steps to configure the properties of the workflow.
 
-1. Select the canvas to make sure that no workflow element is selected.
+1. Select the canvas to ensure that no workflow element is selected.
 2. Select **Properties** to open the **Properties** page for the workflow.
 3. Follow the procedures in the [Configure workflow properties](configure-workflow-properties.md) article.
 
