@@ -28,7 +28,8 @@ This merge has the following benefits:
 - It's aligned with Dynamics 365 platform capabilities.
 - It aligns **Application Lifecycle Management (ALM)** with Microsoft Power Platform (Dataverse).
 
-The ALM part of RCS and Electronic reporting (ER) currently uses the Global repository. After the merge, it will be done via Dataverse solutions. A new type of repository for getting ER configurations in Dynamics 365 Finance is added. This repository is known as the Dataverse configuration repository. The Global repository will be deprecated.
+The ALM part of RCS and Electronic reporting (ER) currently uses the Global repository. After the merge, it will be done via Dataverse solutions. A new type of repository for getting ER configurations in Dynamics 365 Finance is added. This repository is known as the Dataverse configuration repository. The Global repository will be deprecated and ALM functionality will be available via Dataverse solutions. Global repo will be shutdown the next day after the end of service of CY24Q3: 10.0.40 Service update which is planned for February 18, 2025.
+If you have any non-obsolete or redundant Electronic Reporting configurations stored in Global repository and not saved in your Dynamics 365 Finance Database, please download them before Global repository shutdown. You can download them using the steps described in the following article: [Import Electronic reporting (ER) configurations from Global Repository of Configuration service](../../../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md)
 
 The **E-invoicing service** design experience will use the **Globalization Studio** workspace and will be aligned with the overall RCS merge timeline.
 
