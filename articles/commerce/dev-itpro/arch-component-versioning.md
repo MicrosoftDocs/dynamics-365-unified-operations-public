@@ -21,7 +21,7 @@ This article provides an overview of the component versioning requirements and d
 
 The following illustration shows an overview of Dynamics 365 Commerce components and corresponding versioning requirements and dependencies.
 
-![Dynamics 365 Commerce Component versioning requirements and dependencies.](./media/CommerceComponentVersioning_Sep_2024.png)</a>
+<a href="/dynamics365/commerce/dev-itpro/media/CommerceComponentVersioning_Sep_2024.png" target="_blank">![Dynamics 365 Commerce Component versioning requirements and dependencies.](media/commerce-component-versioning.jpg)</a>
 
 ## Component dependencies
 
@@ -29,44 +29,39 @@ The following illustration shows an overview of Dynamics 365 Commerce components
 
 To ensure compatibility between all Commerce components that are serviced and deployed by customers and partners, you must follow several versioning dependencies during servicing updates. The following list describes all these dependencies.
 
-- **Commerce Scale Unit (CSU), whether cloud or self-hosted, must be on a serviceable release that is either the same as or lower than the F&O app release, but it must always be  serviceable. The current supported versions information can be found here - [Service update availability](/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)**
+- **Commerce Scale Unit (CSU), whether cloud or self-hosted, must always be on a serviceable release version number that is either the same as or lower than the finance and operations apps release. For information on the current supported versions, see [Service update availability](/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)**.
 
-  For example, hypothetically, consider today's date as Sep 20, 2024 and there are following releases for reference :
-    - _Release Winter (GA: Jan 15, 2024, End of service: Aug 15, 2024)_
-    - _Release Spring (GA: Mar 15, 2024, End of service: Nov 15, 2024)_
-    - _Release Summer (GA: Jun 15, 2024, End of service: Feb 15, 2025)_
-    - _Release Autumn (GA: Sep 15, 2024, End of service: May 15, 2025)_
+  For example, if today's date is September 20, 2024 the following releases are servicable:
+    - *Release Winter (GA: Jan 15, 2024, End of service: Aug 15, 2024)*
+    - *Release Spring (GA: Mar 15, 2024, End of service: Nov 15, 2024)*
+    - *Release Summer (GA: Jun 15, 2024, End of service: Feb 15, 2025)*
+    - *Release Autumn (GA: Sep 15, 2024, End of service: May 15, 2025)*
 
-  Of the above releases, as of Sep 20, 2024, _Release Winter_ has already reached _End-of-service_ that means you cannot have CSU version from _Winter_ release and they need to be at least from _Spring_ release (earliest serviceable release). 
+  Of the releases listed, as of September 20, 2024, the *Release Winter* version has already reached end-of-service, which means that the CSU version must at be least from the *Release Spring* version (the earliest serviceable release). In other words, if Commerce headquarters and finance and operations apps are on the *Release Autumn* version, then the CSU must be running a release version that is still serviceable, which means either the *Release Autumn*, *Release Summer*, or *Release Spring* release versions but not the *Release Winter* version because it has already reached end-of-service. 
 
-  In that case, if Commerce headquarters and Finance and operations apps are on _Autumn_ version, Commerce Scale Unit must be on version from any of the releases that are still serviceable that means either from _Autumn, or Summer or Spring_ releases  but it cannot be from _Winter_ release as that has already hit _End-of-service_. 
+- **The Store Commerce app, Hardware Station, and the Commerce software development kit (SDK), along with associated local site configurations (including modules, data actions, and themes), must be on a serviceable release. This release version number should be the same as or lower than the Commerce Scale Unit release version, but it must always be serviceable. For information on the current supported versions, see [Service update availability](/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)**.
 
-- **Store Commerce app, Hardware Station, and the Commerce software development kit (SDK), along with associated local site configurations (including modules, data actions, and themes), must be on a serviceable release. This release should be the same as or lower than the Commerce Scale Unit release, but it must always be serviceable. The current supported versions information can be found here - [Service update availability](/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)**
+  For example, if today's date is September 20, 2024 the following releases are servicable:
+    - *Release Winter (GA: Jan 15, 2024, End of service: Aug 15, 2024)*
+    - *Release Spring (GA: Mar 15, 2024, End of service: Nov 15, 2024)*
+    - *Release Summer (GA: Jun 15, 2024, End of service: Feb 15, 2025)*
+    - *Release Autumn (GA: Sep 15, 2024, End of service: May 15, 2025)*
 
-  For example, hypothetically, consider today's date as Sep 20, 2024 and there are following releases for reference :
-    - _Release Winter (GA: Jan 15, 2024, End of service: Aug 15, 2024)_
-    - _Release Spring (GA: Mar 15, 2024, End of service: Nov 15, 2024)_
-    - _Release Summer (GA: Jun 15, 2024, End of service: Feb 15, 2025)_
-    - _Release Autumn (GA: Sep 15, 2024, End of service: May 15, 2025)_
+  Of the releases listed, as of September 20, 2024, the *Release Winter* version has already reached end-of-service, which means that the Store Commerce app, Hardware Station, and Commerce SDK versions must be running a release version that is still serviceable, which means either the *Release Autumn*, *Release Summer*, or *Release Spring* release versions but not the *Release Winter* version because it has already reached end-of-service. In other words, if the CSU is on the *Release Autumn* version, then the Store Commerce app, Hardware Station, and Commerce SDK versions must be either the servicable *Release Autumn*, *Release Summer*, or *Release Spring* versions, but not the *Release Winter* version because it has already reached end-of-service.
 
-  Of the above releases, as of Sep 20, 2024, _Release Winter_ has already reached _End-of-service_ that means you cannot have Store Commerce App, Hardware Station and the Commerce SDK version from _Winter_ release and they need to be at least from _Spring_ release (earliest serviceable release).
+- **Extension packages must be compiled against the same version as, or an earlier serviceable version than, the target component to which the extension applies. For information on the current supported versions, see [Service update availability](/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)**.
 
-  In that case, if Commerce Scale Unit is on _Autumn_ version, then Store Commerce app, Hardware Station, and the Commerce SDK must be on one of the serviceable version that means either from _Autumn or Summer or Spring_ but it cannot be from _Winter_ release  as that has already hit _End of service_.
+  For example, if today's date is September 20, 2024 the following releases are servicable:
+     - *Release Winter (GA: Jan 15, 2024, End of service: Aug 15, 2024)*
+     - *Release Spring (GA: Mar 15, 2024, End of service: Nov 15, 2024)*
+     - *Release Summer (GA: Jun 15, 2024, End of service: Feb 15, 2025)*
+     - *Release Autumn (GA: Sep 15, 2024, End of service: May 15, 2025)*
 
-- **Extension packages must be compiled against the same version as, or an earlier serviceable version than, the target component that the extension applies to. The current supported versions information can be found here - [Service update availability](/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)**
-  For e.g., hypothetically, consider today's date as Sep 20, 2024 and there are following releases for reference:
-     - _Release Winter (GA: Jan 15, 2024, End of service: Aug 15, 2024)_
-     - _Release Spring (GA: Mar 15, 2024, End of service: Nov 15, 2024)_
-     - _Release Summer (GA: Jun 15, 2024, End of service: Feb 15, 2025)_
-     - _Release Autumn (GA: Sep 15, 2024, End of service: May 15, 2025)_
-
-  Of the above releases, as of Sep 20, 2024, _Release Winter_ has already reached _End-of-service_ that means you cannot have _Extension packages_ from _Winter_ release and they need to be at least from _Spring_ release (earliest serviceable release). 
-
-  In that case, if the _target component_ is on _Autumn_ version, the corresponding _extension packages_ must be compiled against one of the serviceable version that means either from _Autumn or Summer or Spring_ but it cannot be from _Winter_ release  as that has already hit _End of service_.
+  Of the releases listed, as of September 20, 2024, the *Release Winter* version has already reached end-of-service, which means that extension packages must be on the *Release Autumn*, *Release Summer*, or *Release Spring* versions,  but not the *Release Winter* version because it has already reached end-of-service. In other words, if the target component is on the *Release Autumn* version, the corresponding extension packages must be compiled against one of the serviceable versions (*Release Autumn*, *Release Summer*, or *Release Spring*) but not the *Release Winter* version because it has already reached end-of-service.
 
 ### Quality updates
 
-During quality updates, no specific versioning requirements must be followed for each Commerce component, besides what is required for service updates.
+During quality updates, no specific versioning requirements must be followed for each Commerce component besides what is required for service updates.
 
 ## One Version requirements
 
@@ -74,19 +69,19 @@ Commerce components follow the One Version service updates. For more information
 
 ### Cloud components
 
-For more information about how to pause service updates for Cloud components listed below, see [Pause service updates through Lifecycle Services)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
+For more information about how to pause service updates for the following cloud components, see [Pause service updates through Lifecycle Services)](../../dev-itpro/lifecycle-services/pause-service-updates.md).
 
-- Commerce headquarters and finance and operations apps
-- Commerce Scale Unit (cloud-hosted)
-- Commerce SDK and associated local site configurations (such as modules, data actions, and themes)
+- Commerce headquarters and finance and operations apps.
+- CSU (cloud-hosted).
+- Commerce SDK and associated local site configurations (such as modules, data actions, and themes).
 
 ### In-store components
 
-Following In-store components need to be within serviceable releases, as shared above, for it to be supported 
+The following in-store components need to be running serviceable release versions to be supported.
 
-- Store Commerce app for Windows, Android, and iOS
-- Sealed Commerce Scale Unit (self-hosted)
-- Sealed Hardware station
+- Store Commerce app for Windows, Android, and iOS.
+- Sealed CSU (self-hosted).
+- Sealed Hardware station.
 
 > [!NOTE]
 > The following legacy in-store components aren't supported:
