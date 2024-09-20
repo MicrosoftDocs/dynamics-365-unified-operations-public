@@ -30,27 +30,27 @@ To ensure compatibility between all Commerce components that are serviced and de
 
 - **Commerce Scale Unit (CSU), whether cloud or self-hosted, must be on a serviceable release that is either the same as or lower than the F&O app release, but it must always be  serviceable. The current supported versions information can be found here - [Service update availability](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)**
 
-  For e.g., hypothetically, consider today's date as Sep 20, 2024 and there are following releases for reference :
+  For example, hypothetically, consider today's date as Sep 20, 2024 and there are following releases for reference :
     - _Release Winter (GA: Jan 15, 2024, End of service: Aug 15, 2024)_
     - _Release Spring (GA: Mar 15, 2024, End of service: Nov 15, 2024)_
     - _Release Summer (GA: Jun 15, 2024, End of service: Feb 15, 2025)_
     - _Release Autumn (GA: Sep 15, 2024, End of service: May 15, 2025)_
 
-Of the above releases, as of Sep 20, 2024, _Release Winter_ has already reached _End-of-service_ that means you cannot have CSU version from _Winter_ release and they need to be at least from _Spring_ release (earliest serviceable release). 
+  Of the above releases, as of Sep 20, 2024, _Release Winter_ has already reached _End-of-service_ that means you cannot have CSU version from _Winter_ release and they need to be at least from _Spring_ release (earliest serviceable release). 
 
-Essentially, if Commerce headquarters and Finance and operations apps are on _Autumn_ version, Commerce Scale Unit must be on version from any of the releases that are still serviceable that means either from _Autumn, or Summer or Spring_ releases  but it cannot be from _Winter_ release as that has already hit _End-of-service_. 
+  In that case, if Commerce headquarters and Finance and operations apps are on _Autumn_ version, Commerce Scale Unit must be on version from any of the releases that are still serviceable that means either from _Autumn, or Summer or Spring_ releases  but it cannot be from _Winter_ release as that has already hit _End-of-service_. 
 
 - **Store Commerce app, Hardware Station, and the Commerce software development kit (SDK), along with associated local site configurations (including modules, data actions, and themes), must be on a serviceable release. This release should be the same as or lower than the Commerce Scale Unit release, but it must always be serviceable. The current supported versions information can be found here - [Service update availability](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)**
 
-  For e.g., hypothetically, consider today's date as Sep 20, 2024 and there are following releases for reference :
+  For example, hypothetically, consider today's date as Sep 20, 2024 and there are following releases for reference :
     - _Release Winter (GA: Jan 15, 2024, End of service: Aug 15, 2024)_
     - _Release Spring (GA: Mar 15, 2024, End of service: Nov 15, 2024)_
     - _Release Summer (GA: Jun 15, 2024, End of service: Feb 15, 2025)_
     - _Release Autumn (GA: Sep 15, 2024, End of service: May 15, 2025)_
 
-Of the above releases, as of Sep 20, 2024, _Release Winter_ has already reached _End-of-service_ that means you cannot have Store Commerce App, Hardware Station and the Commerce SDK version from _Winter_ release and they need to be at least from _Spring_ release (earliest serviceable release). 
+  Of the above releases, as of Sep 20, 2024, _Release Winter_ has already reached _End-of-service_ that means you cannot have Store Commerce App, Hardware Station and the Commerce SDK version from _Winter_ release and they need to be at least from _Spring_ release (earliest serviceable release).
 
-   For example, if Commerce Scale Unit is on _Autumn_ version, then Store Commerce app, Hardware Station, and the Commerce SDK must be on one of the serviceable version that means either from _Autumn or Summer or Spring_ but it cannot be from _Winter_ release  as that has already hit _End of service_.
+  In that case, if Commerce Scale Unit is on _Autumn_ version, then Store Commerce app, Hardware Station, and the Commerce SDK must be on one of the serviceable version that means either from _Autumn or Summer or Spring_ but it cannot be from _Winter_ release  as that has already hit _End of service_.
 
 - **Extension packages must be compiled against the same version as, or an earlier serviceable version than, the target component that the extension applies to. The current supported versions information can be found here - [Service update availability](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)**
   For e.g., hypothetically, consider today's date as Sep 20, 2024 and there are following releases for reference:
@@ -59,9 +59,9 @@ Of the above releases, as of Sep 20, 2024, _Release Winter_ has already reached 
      - _Release Summer (GA: Jun 15, 2024, End of service: Feb 15, 2025)_
      - _Release Autumn (GA: Sep 15, 2024, End of service: May 15, 2025)_
 
-Of the above releases, as of Sep 20, 2024, _Release Winter_ has already reached _End-of-service_ that means you cannot have _Extension packages_ from _Winter_ release and they need to be at least from _Spring_ release (earliest serviceable release). 
+  Of the above releases, as of Sep 20, 2024, _Release Winter_ has already reached _End-of-service_ that means you cannot have _Extension packages_ from _Winter_ release and they need to be at least from _Spring_ release (earliest serviceable release). 
 
-For example, if the _target component_ is on _Autumn_ version, the corresponding _extension packages_ must be compiled against one of the serviceable version that means either from _Autumn or Summer or Spring_ but it cannot be from _Winter_ release  as that has already hit _End of service_.
+  In that case, if the _target component_ is on _Autumn_ version, the corresponding _extension packages_ must be compiled against one of the serviceable version that means either from _Autumn or Summer or Spring_ but it cannot be from _Winter_ release  as that has already hit _End of service_.
 
 ### Quality updates
 
