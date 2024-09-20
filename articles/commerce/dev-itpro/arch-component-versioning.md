@@ -39,7 +39,7 @@ To ensure compatibility between all Commerce components that are serviced and de
 
   Of the releases listed, as of September 20, 2024, the *Release Winter* version reached end-of-service, which means that the CSU version must be at least from the *Release Spring* version (the earliest serviceable release). In other words, if Commerce headquarters and finance and operations apps are on the *Release Autumn* version, then the CSU must run a release version that is still serviceable, which means either the *Release Autumn*, *Release Summer*, or *Release Spring* release versions but not the *Release Winter* version because it reached end-of-service. 
 
-- **The Store Commerce app, Hardware Station, and the Commerce software development kit (SDK), along with associated local site configurations (including modules, data actions, and themes), must be on a serviceable release. This release version number should be the same as or lower than the Commerce Scale Unit release version, but it must always be serviceable. For information on the current supported versions, see [Service update availability](/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)**.
+- **The Store Commerce app, Hardware station, and the Commerce software development kit (SDK), along with associated local site configurations (including modules, data actions, and themes), must be on a serviceable release. This release version number should be the same as or lower than the Commerce Scale Unit release version, but it must always be serviceable. For information on the current supported versions, see [Service update availability](/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)**.
 
   For example, if today's date is September 20, 2024 the following releases are serviceable:
     - *Release Winter (GA: January 15, 2024, End of service: August 15, 2024)*
@@ -47,7 +47,7 @@ To ensure compatibility between all Commerce components that are serviced and de
     - *Release Summer (GA: June 15, 2024, End of service: February 15, 2025)*
     - *Release Autumn (GA: September 15, 2024, End of service: May 15, 2025)*
 
-  Of the releases listed, as of September 20, 2024, the *Release Winter* version reached end-of-service, which means that the Store Commerce app, Hardware Station, and Commerce SDK versions must run a release version that is still serviceable, which means either the *Release Autumn*, *Release Summer*, or *Release Spring* release versions but not the *Release Winter* version because it reached end-of-service. In other words, if the CSU is on the *Release Autumn* version, then the Store Commerce app, Hardware Station, and Commerce SDK versions must be either the serviceable *Release Autumn*, *Release Summer*, or *Release Spring* versions, but not the *Release Winter* version because it reached end-of-service.
+  Of the releases listed, as of September 20, 2024, the *Release Winter* version reached end-of-service, so the Store Commerce app, Hardware station, and Commerce SDK versions must run a release version that is still serviceable, which means either the *Release Autumn*, *Release Summer*, or *Release Spring* release versions but not the *Release Winter* version because it reached end-of-service. In other words, if the CSU is on the *Release Autumn* version, then the Store Commerce app, Hardware station, and Commerce SDK versions must be on either the serviceable *Release Autumn*, *Release Summer*, or *Release Spring* versions, but not the *Release Winter* version because it reached end-of-service.
 
 - **Extension packages must be compiled against the same version as, or an earlier serviceable version than, the target component to which the extension applies. For information on the current supported versions, see [Service update availability](/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)**.
 
@@ -57,11 +57,11 @@ To ensure compatibility between all Commerce components that are serviced and de
      - *Release Summer (GA: June 15, 2024, End of service: February 15, 2025)*
      - *Release Autumn (GA: September 15, 2024, End of service: May 15, 2025)*
 
-  Of the releases listed, as of September 20, 2024, the *Release Winter* version reached end-of-service, which means that extension packages must be on the *Release Autumn*, *Release Summer*, or *Release Spring* versions,  but not the *Release Winter* version because it reached end-of-service. In other words, if the target component is on the *Release Autumn* version, the corresponding extension packages must be compiled against one of the serviceable versions (*Release Autumn*, *Release Summer*, or *Release Spring*) but not the *Release Winter* version because it reached end-of-service.
+  Of the releases listed, as of September 20, 2024, the *Release Winter* version reached end-of-service, which means that extension packages must be on the *Release Autumn*, *Release Summer*, or *Release Spring* versions, but not the *Release Winter* version because it reached end-of-service. In other words, if the target component is on the *Release Autumn* version, the corresponding extension packages must be compiled against one of the serviceable versions (*Release Autumn*, *Release Summer*, or *Release Spring*) but not the *Release Winter* version because it reached end-of-service.
 
 ### Quality updates
 
-During quality updates, no specific versioning requirements must be followed for each Commerce component besides what is required for service updates.
+During quality updates, no specific versioning requirements need to be followed for Commerce components other than what is required for service updates.
 
 ## One Version requirements
 
@@ -77,7 +77,7 @@ For more information about how to pause service updates for the following cloud 
 
 ### In-store components
 
-The following in-store components need to be running serviceable release versions to be supported.
+The following in-store components need to be running serviceable release versions to be supported:
 
 - Store Commerce app for Windows, Android, and iOS.
 - Sealed CSU (self-hosted).
