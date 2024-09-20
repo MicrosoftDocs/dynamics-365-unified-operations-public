@@ -2,14 +2,15 @@
 title: Dynamics 365 Commerce component versioning requirements
 description: This article provides an overview of the component versioning requirements and dependencies for all components in the Microsoft Dynamics 365 Commerce ecosystem.
 author: Reza-Assadi
-ms.date: 03/28/2024
-ms.topic: article 
+ms.date: 09/20/2024
+ms.topic: overview 
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: rassadi
 ms.search.validFrom: 2020-07-01
-
+ms.custom: 
+  - bap-template
 ---
 
 # Dynamics 365 Commerce component versioning requirements
@@ -28,7 +29,7 @@ The following illustration shows an overview of Dynamics 365 Commerce components
 
 To ensure compatibility between all Commerce components that are serviced and deployed by customers and partners, you must follow several versioning dependencies during servicing updates. The following list describes all these dependencies.
 
-- **Commerce Scale Unit (CSU), whether cloud or self-hosted, must be on a serviceable release that is either the same as or lower than the F&O app release, but it must always be  serviceable. The current supported versions information can be found here - [Service update availability](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)**
+- **Commerce Scale Unit (CSU), whether cloud or self-hosted, must be on a serviceable release that is either the same as or lower than the F&O app release, but it must always be  serviceable. The current supported versions information can be found here - [Service update availability](/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)**
 
   For example, hypothetically, consider today's date as Sep 20, 2024 and there are following releases for reference :
     - _Release Winter (GA: Jan 15, 2024, End of service: Aug 15, 2024)_
@@ -40,7 +41,7 @@ To ensure compatibility between all Commerce components that are serviced and de
 
   In that case, if Commerce headquarters and Finance and operations apps are on _Autumn_ version, Commerce Scale Unit must be on version from any of the releases that are still serviceable that means either from _Autumn, or Summer or Spring_ releases  but it cannot be from _Winter_ release as that has already hit _End-of-service_. 
 
-- **Store Commerce app, Hardware Station, and the Commerce software development kit (SDK), along with associated local site configurations (including modules, data actions, and themes), must be on a serviceable release. This release should be the same as or lower than the Commerce Scale Unit release, but it must always be serviceable. The current supported versions information can be found here - [Service update availability](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)**
+- **Store Commerce app, Hardware Station, and the Commerce software development kit (SDK), along with associated local site configurations (including modules, data actions, and themes), must be on a serviceable release. This release should be the same as or lower than the Commerce Scale Unit release, but it must always be serviceable. The current supported versions information can be found here - [Service update availability](/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)**
 
   For example, hypothetically, consider today's date as Sep 20, 2024 and there are following releases for reference :
     - _Release Winter (GA: Jan 15, 2024, End of service: Aug 15, 2024)_
@@ -52,7 +53,7 @@ To ensure compatibility between all Commerce components that are serviced and de
 
   In that case, if Commerce Scale Unit is on _Autumn_ version, then Store Commerce app, Hardware Station, and the Commerce SDK must be on one of the serviceable version that means either from _Autumn or Summer or Spring_ but it cannot be from _Winter_ release  as that has already hit _End of service_.
 
-- **Extension packages must be compiled against the same version as, or an earlier serviceable version than, the target component that the extension applies to. The current supported versions information can be found here - [Service update availability](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)**
+- **Extension packages must be compiled against the same version as, or an earlier serviceable version than, the target component that the extension applies to. The current supported versions information can be found here - [Service update availability](/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)**
   For e.g., hypothetically, consider today's date as Sep 20, 2024 and there are following releases for reference:
      - _Release Winter (GA: Jan 15, 2024, End of service: Aug 15, 2024)_
      - _Release Spring (GA: Mar 15, 2024, End of service: Nov 15, 2024)_
@@ -87,9 +88,10 @@ Following In-store components need to be within serviceable releases, as shared 
 - Sealed Commerce Scale Unit (self-hosted)
 - Sealed Hardware station
 
-> [!Note] Legacy in-store components are NOT supported
+> [!NOTE]
+> The following legacy in-store components aren't supported:
 > - Commerce Scale Unit (self-hosted)
-> - Modern point of sale (MPOS) and hybrid apps
+> - Modern Point of Sale (MPOS) and hybrid apps
 > - Hardware station (Legacy)
 > - Retail SDK
 
