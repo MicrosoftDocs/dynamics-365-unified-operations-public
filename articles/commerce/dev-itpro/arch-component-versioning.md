@@ -32,32 +32,32 @@ To ensure compatibility between all Commerce components that are serviced and de
 - **Commerce Scale Unit (CSU), whether cloud or self-hosted, must always be on a serviceable release version number that is either the same as or lower than the finance and operations apps release. For information on the current supported versions, see [Service update availability](/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)**.
 
   For example, if today's date is September 20, 2024 the following releases are serviceable:
-    - *Release Winter (GA: January 15, 2024, End of service: Aug 15, 2024)*
-    - *Release Spring (GA: March 15, 2024, End of service: Nov 15, 2024)*
-    - *Release Summer (GA: June 15, 2024, End of service: Feb 15, 2025)*
+    - *Release Winter (GA: January 15, 2024, End of service: August 15, 2024)*
+    - *Release Spring (GA: March 15, 2024, End of service: November 15, 2024)*
+    - *Release Summer (GA: June 15, 2024, End of service: February 15, 2025)*
     - *Release Autumn (GA: September 15, 2024, End of service: May 15, 2025)*
 
-  Of the releases listed, as of September 20, 2024, the *Release Winter* version has already reached end-of-service, which means that the CSU version must be at least from the *Release Spring* version (the earliest serviceable release). In other words, if Commerce headquarters and finance and operations apps are on the *Release Autumn* version, then the CSU must run a release version that is still serviceable, which means either the *Release Autumn*, *Release Summer*, or *Release Spring* release versions but not the *Release Winter* version because it has already reached end-of-service. 
+  Of the releases listed, as of September 20, 2024, the *Release Winter* version reached end-of-service, which means that the CSU version must be at least from the *Release Spring* version (the earliest serviceable release). In other words, if Commerce headquarters and finance and operations apps are on the *Release Autumn* version, then the CSU must run a release version that is still serviceable, which means either the *Release Autumn*, *Release Summer*, or *Release Spring* release versions but not the *Release Winter* version because it reached end-of-service. 
 
 - **The Store Commerce app, Hardware Station, and the Commerce software development kit (SDK), along with associated local site configurations (including modules, data actions, and themes), must be on a serviceable release. This release version number should be the same as or lower than the Commerce Scale Unit release version, but it must always be serviceable. For information on the current supported versions, see [Service update availability](/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)**.
 
   For example, if today's date is September 20, 2024 the following releases are serviceable:
-    - *Release Winter (GA: January 15, 2024, End of service: Aug 15, 2024)*
-    - *Release Spring (GA: March 15, 2024, End of service: Nov 15, 2024)*
-    - *Release Summer (GA: June 15, 2024, End of service: Feb 15, 2025)*
+    - *Release Winter (GA: January 15, 2024, End of service: August 15, 2024)*
+    - *Release Spring (GA: March 15, 2024, End of service: November 15, 2024)*
+    - *Release Summer (GA: June 15, 2024, End of service: February 15, 2025)*
     - *Release Autumn (GA: September 15, 2024, End of service: May 15, 2025)*
 
-  Of the releases listed, as of September 20, 2024, the *Release Winter* version has reached end-of-service, which means that the Store Commerce app, Hardware Station, and Commerce SDK versions must run a release version that is still serviceable, which means either the *Release Autumn*, *Release Summer*, or *Release Spring* release versions but not the *Release Winter* version because it has reached end-of-service. In other words, if the CSU is on the *Release Autumn* version, then the Store Commerce app, Hardware Station, and Commerce SDK versions must be either the serviceable *Release Autumn*, *Release Summer*, or *Release Spring* versions, but not the *Release Winter* version because it has reached end-of-service.
+  Of the releases listed, as of September 20, 2024, the *Release Winter* version reached end-of-service, which means that the Store Commerce app, Hardware Station, and Commerce SDK versions must run a release version that is still serviceable, which means either the *Release Autumn*, *Release Summer*, or *Release Spring* release versions but not the *Release Winter* version because it reached end-of-service. In other words, if the CSU is on the *Release Autumn* version, then the Store Commerce app, Hardware Station, and Commerce SDK versions must be either the serviceable *Release Autumn*, *Release Summer*, or *Release Spring* versions, but not the *Release Winter* version because it reached end-of-service.
 
 - **Extension packages must be compiled against the same version as, or an earlier serviceable version than, the target component to which the extension applies. For information on the current supported versions, see [Service update availability](/dynamics365/fin-ops-core/dev-itpro/get-started/public-preview-releases)**.
 
   For example, if today's date is September 20, 2024 the following releases are serviceable:
-     - *Release Winter (GA: January 15, 2024, End of service: Aug 15, 2024)*
-     - *Release Spring (GA: March 15, 2024, End of service: Nov 15, 2024)*
-     - *Release Summer (GA: June 15, 2024, End of service: Feb 15, 2025)*
+     - *Release Winter (GA: January 15, 2024, End of service: August 15, 2024)*
+     - *Release Spring (GA: March 15, 2024, End of service: November 15, 2024)*
+     - *Release Summer (GA: June 15, 2024, End of service: February 15, 2025)*
      - *Release Autumn (GA: September 15, 2024, End of service: May 15, 2025)*
 
-  Of the releases listed, as of September 20, 2024, the *Release Winter* version has already reached end-of-service, which means that extension packages must be on the *Release Autumn*, *Release Summer*, or *Release Spring* versions,  but not the *Release Winter* version because it has already reached end-of-service. In other words, if the target component is on the *Release Autumn* version, the corresponding extension packages must be compiled against one of the serviceable versions (*Release Autumn*, *Release Summer*, or *Release Spring*) but not the *Release Winter* version because it has already reached end-of-service.
+  Of the releases listed, as of September 20, 2024, the *Release Winter* version reached end-of-service, which means that extension packages must be on the *Release Autumn*, *Release Summer*, or *Release Spring* versions,  but not the *Release Winter* version because it reached end-of-service. In other words, if the target component is on the *Release Autumn* version, the corresponding extension packages must be compiled against one of the serviceable versions (*Release Autumn*, *Release Summer*, or *Release Spring*) but not the *Release Winter* version because it reached end-of-service.
 
 ### Quality updates
 
