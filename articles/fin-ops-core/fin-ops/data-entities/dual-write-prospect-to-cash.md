@@ -39,7 +39,7 @@ In Sales, go to **Settings \> Administration \> System settings \> Sales**, and 
 - The **Discount calculation method** column is set to **Line item**.
 
 > [!NOTE]
-> In Supply Chain Management, an improved approach to pricing for sales quotations and sales orders is available. In this approach, Supply Chain Management becomes the price master, and no price-related calculations are done in Sales. For details about how to set up and enable this new approach, see [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md). For more information about this feature, see [Sync on-demand with the Supply Chain Management pricing engine](pricing-engine.md).
+> In Supply Chain Management, an improved approach to pricing for sales quotations and sales orders is available. In this approach, Supply Chain Management becomes the price master, and no price-related calculations are done in Sales. Also, when a sales quotation or sales order and line is created and updated in the  Dynamics 365 Sales UI, it is possible to immediately have updated line details, monetary line values, and totals synched to Dynamics 365 Sales from Supply Chain Management. For details about how to set up and enable these capabilities, see [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md) and [Seamlesss sync  with the Supply Chain Management pricing engine](New md file to as part of this PR).
 
 ### Sites and warehouses
 
@@ -98,8 +98,7 @@ If you sync from Supply Chain Management to Sales, you get the following result:
 - **Supply Chain Management:** Quantity = 3, line discount amount = $3.33, sales charge = –$0.01
 - **Sales:** Quantity = 3, per-line discount = (3 × $3.33) + $0.01 = $10.00
 
-> [!NOTE]
-> In Supply Chain Management, an improved approach to pricing for sales quotations and sales orders is available. In this approach, Supply Chain Management becomes the price master, and no price-related calculations are done in Sales. For details about how to set up and enable this new approach, see [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md). For more information about this feature, see [Sync on-demand with the Supply Chain Management pricing engine](pricing-engine.md).
+> [!NOTE]> In Supply Chain Management, an improved approach to pricing for sales quotations and sales orders is available. In this approach, Supply Chain Management becomes the price master, and no price-related calculations are done in Sales. Also, when a sales quotation or sales order and line is created and updated in the  Dynamics 365 Sales UI, it is possible to immediately have updated line details, monetary line values, and totals synched to Dynamics 365 Sales from Supply Chain Management. For details about how to set up and enable these capabilities, see [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md) and [Seamlesss sync  with the Supply Chain Management pricing engine](New md file to as part of this PR).
 
 ## Dual-write solution for Sales
 
