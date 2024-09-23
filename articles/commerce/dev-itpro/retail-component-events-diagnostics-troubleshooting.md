@@ -100,8 +100,6 @@ Every event that is logged by Retail Modern POS includes the following data poin
 
 You can find the AppSessionID and UserSessionID values on the **Details** tab in Event Viewer on the machine where Retail Modern POS is installed.
 
-[![Details tab in Event Viewer.](./media/correlation-1024x672.png)](./media/correlation.png)
-
 ### Finding incoming Commerce Scale Unit request events in Event Viewer
 
 To correlate data for incoming Commerce Scale Unit requests in Event Viewer, you must first enable the **Analytic** channel. To enable the Analytic channel, follow these steps.

@@ -2,16 +2,15 @@
 title: Update code and environments for Commerce projects
 description: This article describes recommended practices for updating code and environments for Microsoft Dynamics 365 Commerce implementation projects.
 author: andreashofmann1
-ms.date: 02/03/2023
-ms.topic: article
+ms.date: 09/19/2024
+ms.topic: how-to
 audience: IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
-ms.dyn365.ops.version: Retail 7.3
-ms.search.industry: Retail
-ms.search.form: 
+ms.custom: 
+  - bap-template
 ---
 
 
@@ -147,8 +146,6 @@ Environments that are used for work of the same release should also have the sam
 - The difference might be intentional. For example, a developer might work with the next version, whereas the rest of the team is still working with a different release. Alternatively, one development environment might be kept on an older version in case a production hotfix must be developed, and that production environment uses an older version than current development environments.
 
 Notice that after you've finished updating an environment, the tile counts for the available updates are significantly lower than they were when you started.
-
-![LCS Dev Environment.](./media/LCSDevEnvironmentpage.png)
 
 ## Move to a new version
 
