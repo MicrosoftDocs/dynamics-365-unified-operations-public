@@ -281,8 +281,9 @@ The following procedure applies to the example electronic message processing tha
     > [!NOTE]
     > You may need to manually add the following line to the generated file before you upload the file to the government portal. It should be the second line in the file: 
     >
-    >  &lt;!DOCTYPE eSKDUpload PUBLIC "-//Skatteverket, Sweden//DTD Skatteverket eSKDUpload-DTD Version 6.0//SV" https://www1.skatteverket.se/demoeskd/eSKDUpload_6p0.dtd&gt;
-    
+    >  ``` text
+    > &lt;!DOCTYPE eSKDUpload PUBLIC "-//Skatteverket, Sweden//DTD Skatteverket eSKDUpload-DTD Version 6.0//SV" https://www1.skatteverket.se/demoeskd/eSKDUpload_6p0.dtd&gt;
+    >  ```
 
 ## <a name="run-a-vat-declaration-for-multiple-legal-entities"></a>Run a VAT declaration for multiple legal entities
 
