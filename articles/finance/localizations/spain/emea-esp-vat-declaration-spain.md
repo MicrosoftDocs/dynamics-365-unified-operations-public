@@ -3,12 +3,12 @@ title: VAT declaration (Spain)
 description: Learn how to set up and generate a value-added tax (VAT) declaration model 303 for Spain in the official TXT format, including an outline on configuring parameters.
 author: liza-golub
 ms.author: egolub
-ms.topic: article
-ms.date: 02/22/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 09/23/2024
 ms.reviewer: johnmichalak
-audience: 
 ms.search.region: Global
-ms.search.validFrom: 
 ---
 
 # VAT declaration (Spain)
