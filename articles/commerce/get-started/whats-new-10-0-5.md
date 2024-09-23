@@ -40,10 +40,6 @@ Test recorder is a new feature added in POS to significantly reduce the time and
 ### Regression suite Automation Tool
 The Regression suite automation tool (RSAT) enables functional power users to execute the test case in Retail POS and update the test execution result back in Azure DevOps for reporting and investigation. RSAT provides options to investigate the test failures. RSAT decouples the test parameters from test steps and stores the parameters in Microsoft Excel files for easy editing of the test parameter values. The RSAT tool is now updated with a Retail POS tab to specify the Retail specific settings to play back Retail POS recordings and generate retail parameters and variable files.
 
-![POS playback environment setting.](../dev-itpro/media/Settings.PNG)
-
-For more information on POS and RSAT, see [Test recorder and Regression suite automation tool for Retail Cloud POS](../dev-itpro/pos-rsat.md).
-
 ## Additional resources
 
 ### Dynamics 365: 2019 release wave 2 plan

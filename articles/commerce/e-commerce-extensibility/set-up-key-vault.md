@@ -2,7 +2,7 @@
 title: Set up Azure Key Vault for secure key management
 description: This article describes how to set up Azure Key Vault to provide secure key management in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 05/28/2024
+ms.date: 09/20/2024
 ms.topic: how-to
 audience: Developer
 ms.reviewer: v-chrgriffin
@@ -70,10 +70,7 @@ To add your Node application details into Retail Server's authentication allow l
 1. For **Type**, select **Confidential**.
 1. For **UserType**, select **Application**.
 1. Provide a name for your Node application.
-1.	In the third section named **SERVER RESOURCE IDS**, add an entry with the server resource ID of `https://commerce.dynamics.com`, and then select **Save**.
-
-You should now have a configuration similar to the one in the following example.
-![Retail Server authentication allow list.](media/key-vault-02.png)
+1. In the third section named **SERVER RESOURCE IDS**, add an entry with the server resource ID of `https://commerce.dynamics.com`, and then select **Save**.
 
 To synchronize the changes into the channel database, in Commerce headquarters go to **Distribution schedule** and execute job 1110 (Global configuration), as shown in the following image. 
 

@@ -1,10 +1,8 @@
 ---
-# required metadata
-
 title: Create and configure a Microsoft Entra application for account manager sign-in
 description: This article describes how to create and configure a Microsoft Entra application for account manager sign-in for on behalf of (OBO) functionality in Microsoft Dynamics 365 Commerce.
 author: mariash529
-ms.date: 12/20/2023
+ms.date: 09/19/2024
 ms.topic: how-to
 audience: IT Pro
 ms.reviewer: v-chrgriffin
@@ -75,8 +73,6 @@ To configure an identity provider in your Azure B2C tenant for account manager s
 
     > [!IMPORTANT]
     > For on behalf of sign-in to work, the identity provider name must match the ID used in your sign-in module. The default value is **StoreManagerB2BSignin**.
-    >
-    > ![name matching to module - screen 3](../media/obo-configure-IDP-match.png)
 
 1. In the **Metadata url** field, enter the URL of the Azure B2B OpenID Connect (OIDC) configuration document (for example, `https://login.microsoftonline.com/<TENANT-ID>/v2.0/.well-known/openid-configuration`, where `<TENANT-ID>` is the ID of your Microsoft Entra B2B tenant).
 
@@ -96,9 +92,6 @@ To configure an identity provider in your Azure B2C tenant for account manager s
     1. For **Surname**, select **family\_name**.
     1. For **Email**, select **email**.
 1. Select **Save**.
-
-![Configure custom IDP - screen 1](../media/obo-configure-custom-IDP2.png)
-![Configure custom IDP - screen 2](../media/obo-configure-IDP-part2.png)
 
 ## Add the Azure identity provider to a user flow
 
