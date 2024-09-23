@@ -1,13 +1,14 @@
 ---
 title: Intrastat overview
 description: Learn about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). 
-author: mrolecki
-ms.author: mrolecki
+author: liza-golub
+ms.author: egolub
 ms.topic: overview
-ms.date: 04/17/2023
+ms.custom: 
+  - bap-template
+ms.date: 09/23/2024
 ms.reviewer: johnmichalak
 ms.collection: get-started
-audience: Application User
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.search.validFrom: 2016-11-30
 ms.search.form: Intrastat
@@ -182,7 +183,7 @@ Use the **Foreign trade parameters** page to set up the parameters in the follow
 | Intrastat \> Exchange rate | Select the exchange rate type for Intrastat reporting. |
 | Intrastat \> Rounding rules | <p>Specify the following settings for rounding amounts and weights in Intrastat reporting:</p><ul><li>The rounding rule (precision)</li><li>The rounding method: up, down, or normal</li><li>The number of decimal places for amounts and weights</li><li>Instructions for rounding weights that are less than one kilogram (kg): up to one kg, normal, or no rounding.</li></ul> |
 | Intrastat \> Electronic reporting | Specify references to electronic reporting configurations to generate an electronic file and report. |
-| Intrastat \> Commodity code hierarchy | Specify the category hierarchy of the **Commodity code** type that represents Intrastat commodity code **CN8**. In the **Exchange rate type** field, you can optionally specify an exchange rate to use when you report Intrastat sales and purchase transactions in foreign currencies. This field is used if the rate differs from the rate that was applied when the transaction was posted. |
+| Intrastat \> Commodity code hierarchy | Specify the category hierarchy of the **Commodity code** type that represents Intrastat commodity code **CN8**. The **Category hierarchy type** of the **Category hierarchy** you select in the **Category hierarchy** field must be set to the **Commodity code hierarchy** on the **Category hierarchy role associations** page. (**Modules** \> **Product information management** \> **Setup** \> **Categories and attributes** \> **Category hierarchy**). In the **Exchange rate type** field, you can optionally specify an exchange rate to use when you report Intrastat sales and purchase transactions in foreign currencies. This field is used if the rate differs from the rate that was applied when the transaction was posted. |
 | Agent contact information | Specify the agent's name, address, tax exempt number, telephone number, and fax number. |
 | Country/region properties | Set the country/region of the current legal entity to **Domestic**. Set the country/region of EU countries/regions that participate in EU trade with the current legal entity to **EU**. For each country/region, identify the country/region code for foreign trade purposes. |
 | Number sequences | Specify the number sequence for the Intrastat journal. |
