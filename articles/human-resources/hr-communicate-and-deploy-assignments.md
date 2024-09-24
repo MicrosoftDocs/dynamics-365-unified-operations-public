@@ -18,11 +18,11 @@ Human resources' responsibilities include registering times for various workers 
 
 ## Send messages to workers during registration 
 
-If you're a supervisor or manager, you can send messages that are displayed in the **job registration** form to workers who are using the form to log on. When you send messages, consider the following:
+If you're a supervisor or manager, you can send messages that are displayed on the **Job registration** page to workers who are using the form to log on. When you send messages, consider the following:
 
   - You can send a message to specific workers or to specific terminals.
 
-  - The message will be visible when workers log on to the **job registration** form. The message isn't displayed when workers log off.
+  - The message will be visible when workers log on to the **Job registration** page. The message isn't displayed when workers log off.
 
   - When you send a message to a specific worker, you can require the worker to confirm that he or she has read the message.
 
@@ -31,51 +31,35 @@ If you're a supervisor or manager, you can send messages that are displayed in t
 ### Create a message to all workers
 
 1.  Click **Human resources** \> **Common** \> **Time and attendance** \> **Handle messages**.
-
 2.  Press **CTRL+N** to create a line.
-
 3.  In the **Subject** field, enter the heading of the message.
-
 4.  In the **From time** and **To time** fields, enter the time period when the message will be visible to the recipients.
-
-5.  Select the **Public message** check box to send the message to all workers who log on to the **Job registration** form.
-
+5.  Select the **Public message** checkbox to send the message to all workers who log on to the **Job registration** page.
 6.  In the **Message type** field, select the level of importance for the message.
-
 7.  In the **Information** field, enter the message text.
-
 8.  Click **Close**.
 
 ### Send a message to selected workers or terminals
 
-When you send a message to selected workers, the message will be displayed only when the workers log on to the **Job registration** form. If you send a message to selected terminals, the message is displayed only when a worker logs on to one of the selected terminals.
+When you send a message to selected workers, the message will be displayed only when the workers log on to the **Job registration** page. If you send a message to selected terminals, the message is displayed only when a worker logs on to one of the selected terminals.
 
 1.  Click **Human resources** \> **Common** \> **Time and attendance** \> **Handle messages**.
-
 2.  Press **CTRL+N** to create a line.
-
 3.  In the **Subject** field, enter the heading of the message.
-
 4.  In the **From time** and **To time** fields, enter the time period when the message will be visible to the recipients.
-
-5.  Select the **Receipt** check box to receive a notification that the worker has read the message.
+5.  Select the **Receipt** checkbox to receive a notification that the worker has read the message.
     
-    When the worker confirms the message as having been read, the **Read** check box on the **Workers** tab of the **Recipients** tab will be selected.
+    When the worker confirms the message as having been read, the **Read** checkbox on the **Workers** tab of the **Recipients** tab will be selected.
 
 6.  In the **Message type** field, select the level of importance for the message.
-
 7.  In the **Information** field, enter the message text.
-
 8.  Press CTRL+S to save the message.
-
 9.  On the **Recipients** tab, select the workers or terminals to send the message to. You can select recipients individually or by creating queries.
     
     To select the recipients individually:
     
     1.  Click the **Workers** tab to add workers, or the **Terminals** tab to add terminals.
-    
     2.  Click the **Select workers** or **Select terminals** buttons to add a worker or terminal to the list.
-    
     3.  Select the worker in the **Worker** field. The name of the worker is displayed in the **Name** field.
         
         _or_
@@ -83,18 +67,14 @@ When you send a message to selected workers, the message will be displayed only 
         Select the terminal in the **Terminal** field. The description of the terminal is displayed in the **Description** field.
     
     4.  Repeat these steps to add more recipients.
-    
-    5.  Close the form when you have added all the recipients.
+    5.  Close the page when you have added all the recipients.
     
     To select the recipients by creating a query:
     
     1.  On the **Recipients** tab, click **Select workers** to create a query for workers or **Select terminals** to create a query for terminals.
-    
     2.  Select the criteria for the query.
-    
     3.  Repeat these steps to add more recipients to the list.
-    
-    4.  Close the form when you have added all the recipients.
+    4.  Close the page when you have added all the recipients.
 
 ## Temporary group assignment 
 
@@ -111,27 +91,19 @@ In order to handle a situation where a worker is seconded to another team, it's 
 
 You can temporarily assign workers to other calculation or approval groups than they're normally associated with. This can be done on a specific date, or for a period of time.
 
-1.  Click **Human resources** \> **Common** \> **Workers** \> **Time registration workers**. Select the worker, click the **Time registration** tab, and on the Action Pane click **Set up time registration worker** and select **Temporary group assignment**
-
-2.  Press Ctrl+N, or click **New** on the toolbar, to create a new record.
-
-3.  In the **Profile date** field, select the date on which the worker is seconded to another group.
-
-4.  If the worker is seconded to another calculation group, select the group in the **Calculation group** field.
-
-5.  If the worker is seconded to another approval group, select the group in the **Approval group** field.
-
-6.  If you want to second the worker to another group for a longer period of time:
+1.  Click **Human resources** \> **Common** \> **Workers** \> **Time registration workers**.
+2.  Select the worker, click the **Time registration** tab, and on the Action Pane click **Set up time registration worker** and select **Temporary group assignment**.
+3.  Press Ctrl+N, or click **New** on the toolbar, to create a new record.
+4.  In the **Profile date** field, select the date on which the worker is seconded to another group.
+5.  If the worker is seconded to another calculation group, select the group in the **Calculation group** field.
+6.  If the worker is seconded to another approval group, select the group in the **Approval group** field.
+7.  If you want to second the worker to another group for a longer period of time:
     
     1.  Click **Compose**.
-    
     2.  Select the start and end dates in the **From date** and **To date** fields.
-    
     3.  If the worker is seconded to another calculation group, select the group in the **Calculation group** field.
-    
     4.  If the worker is seconded to another approval group, select the group in the **Approval group** field.
-    
-    5.  Select the **Overwrite** check box.
+    5.  Select the **Overwrite** checkbox.
 
 
 ## See also

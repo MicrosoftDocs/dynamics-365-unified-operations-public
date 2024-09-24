@@ -209,8 +209,6 @@ When you use recurring exports, you can choose not to upload a generated file or
 
 You can set **Prevent upload when zero records** when you configure a recurring export job or after a job is created. This option is available only when you use files or packages as data sources.
 
-![Prevent upload when zero records.](./media/prevent-file-upload.png)
-
 Your implementation might include runs of recurring jobs where files or packages were uploaded. Your implementation might also include runs where no files or packages were uploaded, because there was nothing to upload. If you suspect that a file that should have been uploaded wasn't uploaded, or that a file was uploaded that shouldn't be, you can use the **Manage messages** page for the recurring export job to help with the debugging process.
 
 > [!NOTE]

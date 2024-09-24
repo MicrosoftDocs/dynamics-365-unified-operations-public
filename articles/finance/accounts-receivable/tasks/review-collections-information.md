@@ -4,7 +4,7 @@ description: Learn about how to review collections information as well as variou
 author: ShivamPandeyMSFT
 ms.author: shpandey
 ms.topic: how-to
-ms.date: 03/28/2023
+ms.date: 08/08/2024
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User 
@@ -53,6 +53,11 @@ This article explains how to review collections information as well as various s
 8. Select the printing direction for the aging period definition. This selection determines the order in which the columns appear on the **Customer aging** report or the **Vendor aging** report.  
   - **Forward** – Print columns in the same order in which the headings appear in the table, starting with the top row.  
   - **Backward** – Print columns in the reverse order in which the headings appear in the table, starting with the bottom row.    
+
+>[!Note]
+> No more than six aging periods can be used on external statements, aging period snapshots, or on the **Collections list** page. This aging period definition isn't available on those pages. 
+
+If the default aging period is edited and has more than six periods, the default aging period isn't respected. The default aging period is set up here: **Account Receivables parameters** > **Collections** > **Collection Defaults** > **Aging period definition**.
 
 ## Setup collections parameters
 1. Go to **Credit and collections > Setup > Accounts receivable parameters**.

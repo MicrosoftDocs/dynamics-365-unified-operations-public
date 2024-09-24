@@ -7,11 +7,7 @@ ms.topic: how-to
 ms.date: 08/09/2022
 ms.custom:
 ms.reviewer: kamaybac 
-audience: Application User 
-ms.search.region: Global
-ms.search.validFrom: 2016-06-30
 ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductMasterDimension, EcoResProductVariants, EcoResProductVariantSuggestions, EcoResProductVariantsPendingReleaseFormPart, EcoResProductVariantSuggestionsEnhanced
-ms.dyn365.ops.version: 10.0.19
 ---
 
 # Predefined product variants

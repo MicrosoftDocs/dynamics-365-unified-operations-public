@@ -28,7 +28,6 @@ This section contains a table that lists the features that are included in this 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
 
-
 ## Feature enhancements included in this release
 
 This section contains a table that lists the enhancements that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.

@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 04/29/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: Customer
 ---
 
@@ -98,7 +97,7 @@ The invoice journal must not include the parent item from the product bundle, be
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 <!-- KFM: Preview until further notice -->
 
-The *Product bundles in journals* feature extends the *Product bundle* feature (see also [Enable and set up product bundles](product-bundles-setup.md)). It enables the system to preserve detailed product bundle information in its database. Therefore, you can reprint original sales order confirmations and invoices even after the related sales order is deleted or archived and purged. This feature also improves the ability to exchange order confirmations and invoices electronically. Because product bundles are now represented in journals, you can electronically exchange order confirmations and invoices that include product bundles.
+The *Product bundles in journals* feature extends the *Product bundle* feature. (Learn more in [Enable and set up product bundles](product-bundles-setup.md).) It enables the system to preserve detailed product bundle information in its database. Therefore, you can reprint original sales order confirmations and invoices even after the related sales order is deleted or archived and purged. This feature also improves the ability to exchange order confirmations and invoices electronically. Because product bundles are now represented in journals, you can electronically exchange order confirmations and invoices that include product bundles.
 
 This section describes the changes that the *Product bundles in journals* feature introduces. These changes build on the features that were described earlier in this article.
 
@@ -147,7 +146,7 @@ The following important limitations apply when you use product bundle items:
 - Unless you're using the *(Preview) Product bundles in journals* feature, you can reprint an invoice or sales order confirmation only if the related sales order that includes the product bundle order lines still exists. If the sales order lines were deleted, the reprinted invoices and sales order confirmations include the component items but not the parent item.
 - Miscellaneous charges that are added to a parent item line aren't allocated to the component item lines when the parent item is exploded.
 
-## Additional resources
+## Related information
 
 - [Product bundles overview](product-bundles-overview.md)
 - [Enable and set up product bundles](product-bundles-setup.md)

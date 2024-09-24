@@ -7,10 +7,7 @@ ms.topic: how-to
 ms.date: 10/19/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.collection:
-  - bap-ai-copilot
 ms.search.form:
-ms.search.region: Global
 ---
 
 # Work with forecast profiles
@@ -45,6 +42,24 @@ To generate a new forecast by running an existing forecast profile, follow these
 
 1. Select **Save and close**.
 1. The new job is added to the grid on the **Jobs** tab. There, you can follow the status of the new calculation. To update the status information, select **Refresh** on the grid toolbar.
+
+## Review forecast job run history
+
+Each time you run a forecast profile, the system creates a record of the job run. To review the details of a job run, follow these steps.
+
+1. On the navigation pane, select **Operations** \> **Forecast profiles**.
+1. Select the forecast profile that you want to inspect.
+1. Open the **Jobs** tab, which shows a grid with a row for each time the profile ran.
+1. Find the job run that you want to inspect and select the link in the **Job run name** column for that run.
+1. On the **Forecast job run** page, browse through the following tabs to review the details of the job run:
+
+    - **Summary** – This tab provides basic information about the job run, including who ran it, when it was run, and a link to the time series that was generated or updated. You can also see the job status and any error messages that occurred.
+    - **Forecast model** – This tab shows the forecast model run by the job.
+    - **Explainability** – This tab lists each combination of dimensions (such as item variant, warehouse location, and so on) that the forecast was calculated for. For each combination, it shows the [demand forecasting algorithm](design-forecast-models.md) that was used and the mean average percentage error (MAPE) for the calculation. A lower MAPE value indicates greater accuracy. You can sort the grid by selecting the column heading you want to sort by. To resize, filter, or search in a column, select the menu button on the appropriate column heading.
+
+The following image shows an example of the **Explainability** tab of the **Forecast job run** page. This job ran using the *best fit* forecast algorithm, which calculates results for each of the standard [demand forecasting algorithms](design-forecast-models.md) and then picks the one with the lowest MAPE for each row. This is why forecasts for the same product variant (such as *Car Audio Unit-200*) used varying algorithms depending on which warehouse was analyzed.
+
+:::image type="content" source="media/forecast-job-run.png" alt-text="Explainability tab of the Forecast job run page showing best-fit forecast results." lightbox="media/forecast-job-run.png":::
 
 ## <a name="create-profile"></a> Create and manage forecast profiles
 

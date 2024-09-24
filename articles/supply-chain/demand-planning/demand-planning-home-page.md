@@ -7,9 +7,6 @@ ms.topic: overview
 ms.date: 10/19/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.collection:
-  - bap-ai-copilot
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -51,6 +48,10 @@ Demand planning provides functionality for the complete demand planning process.
 
 :::image type="content" source="media/demand-planning-process.png" alt-text="Diagram that shows the steps in the demand planning process.":::
 
+## Deep dive video
+
+For a deep dive into the capabilities of Demand planning, watch the following video on YouTube: [Deep dive into Demand Planning for Supply Chain Management | Dynamics 365 TechTalk](https://www.youtube.com/watch?v=H27SRU1ua-8).
+
 ## Licensing
 
-To use Demand planning in a production environment, you must have a license for it. For licensing options and pricing details, see [Dynamics 365 pricing](https://dynamics.microsoft.com/pricing/).
+To use Demand planning in a production environment, each relevant user must have a license for it. Learn more in [Demand planning license requirements](demand-planning-licensing.md).

@@ -7,12 +7,7 @@ ms.topic: how-to
 ms.date: 08/09/2019
 ms.custom:
 ms.reviewer: kamaybac   
-audience: Application User  
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-06-30
 ms.search.form: ReqItemJournalName, ReqItemJournalSafetyStock, EcoResProductInformationDialog, EcoResProductDetailsExtended, ReqItemTable
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Use the safety stock journal to update minimum coverage

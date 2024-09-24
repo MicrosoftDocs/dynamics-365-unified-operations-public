@@ -3,13 +3,15 @@ title: Select an in-store topology
 description: This article provides information about the various Dynamics 365 Commerce in-store topologies.
 author: Reza-Assadi
 ms.date: 02/02/2023
-ms.topic: article
+ms.topic: how-to
 audience: IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: stuharg
+ms.author: anvenkat
 ms.search.validFrom: 2019-03-01
 ms.search.form: SysMicrosoft Entra IDClientTable, RetailTransactionServiceProfile
+ms.custom: 
+  - bap-template
 ---
 
 # Select an in-store topology

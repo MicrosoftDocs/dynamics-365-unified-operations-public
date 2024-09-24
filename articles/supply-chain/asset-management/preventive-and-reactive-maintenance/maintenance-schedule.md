@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 08/27/2019
 ms.custom:
 ms.reviewer: kamaybac 
-ms.search.region: Global
-ms.search.validFrom: 2019-08-31
 ms.search.form: EntAssetObjectCalendarCreateWO, EntAssetObjectCalendarListPagePoolsOpen, EntAssetObjectCalendarListPage, EntAssetObjectCalendarListPagePreviewPart, EntAssetObjectCalendarEdit, EntAssetObjectCalendarAdjust, EntAssetObjectCalendarDiscard, EntAssetObjectCalendarInfoPart 
-ms.dyn365.ops.version: 10.0.5
 ---
 
 # Maintenance schedule
@@ -50,7 +47,7 @@ To open a maintenance schedule:
 7. You can select a number of maintenance schedule lines in **All maintenance schedule** or **Open maintenance schedule lines** or **Open maintenance schedule pools** and click **Adjust schedule** if you want to make the same adjustments on several lines. You can change expected start and end dates, service level, and the responsible maintenance worker group or responsible maintenance worker related to the selected maintenance schedule lines.
 
 - When a maintenance schedule line has been related to a work order, the work order ID will be displayed in the **Work order** field.  
-- In **All assets** details view > **Asset maintenance plans** FastTab, you can select maintenance plans for the asset. Later, if you delete a maintenance plan line related to an asset in **All assets**, you also automatically delete all maintenance schedule lines with status "Created" that have been created based on that maintenance plan. See also [Create an asset](../objects/create-an-object.md).
+- In **All assets** details view > **Asset maintenance plans** FastTab, you can select maintenance plans for the asset. Later, if you delete a maintenance plan line related to an asset in **All assets**, you also automatically delete all maintenance schedule lines with status "Created" that have been created based on that maintenance plan. Learn more in [Create an asset](../objects/create-an-object.md).
 
 The illustration below shows the **All maintenance schedule** list page.
 

@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 05/07/2018
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMAServiceOrderTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 
@@ -40,10 +37,6 @@ You can also view when the time recording for a service order was started and st
 1.  Click **Service management** \> **Service orders** \> **Service orders**. Select and double-click an order to open the details form.
 
 2.  On the **Action Pane**, click the **Dispatch** tab \> **Time recording** to open the **SLA time recording** form and view the time recording entries for the service order.
-
-## See also
-
-[Service orders (form)](https://technet.microsoft.com/library/aa554361\(v=ax.60\))
 
   
 

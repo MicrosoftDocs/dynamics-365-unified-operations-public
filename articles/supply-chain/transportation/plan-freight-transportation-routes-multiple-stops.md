@@ -7,7 +7,6 @@ ms.topic: overview
 ms.date: 11/28/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: TMSHubMaster, TMSLoadBuildTemplates, TMSRateRouteWorkbench, TMSRouteGuide, TMSRoutePlan, TMSRouteWorkbench, WHSLoadTemplate, TMSRouteSchedule, TMSRouteRateDetail
 ---
 
@@ -51,6 +50,6 @@ Sustainable transportation planning can help companies reduce their carbon footp
 - **Carbon emission calculation** – Microsoft Sustainability Manager uses the route data from Supply Chain Management to offer a variety of data models and services that can help organizations calculate and analyze transportation-related carbon emissions. The route data can be used to calculate emissions from different modes of transportation, including cars, trucks, planes, and ships.
 - **Route planning with carbon dioxide equivalent (CO2e) results** – After Microsoft Sustainability Manager returns the calculated emissions for each mode of transportation, you can compare them to determine which mode emits the least carbon dioxide. You can select the most eco-friendly route, based on the emissions calculation, or select the mode of transportation that has the lowest carbon emissions in the transportation management rate and route workbench.
 
-For more information, see [Integrate with Microsoft Sustainability Manager](sustainability-manager-integration-setup.md).
+Learn more in [Integrate with Microsoft Sustainability Manager](sustainability-manager-integration-setup.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

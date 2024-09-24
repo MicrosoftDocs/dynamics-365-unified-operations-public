@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 11/13/2020
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-07-01
 ms.search.form: WHSInventFixedLocation, WHSSlotDemandLocated, WHSSlotDemand, WHSSlotUOMTier, WHSSlotTemplate, WHSLocDirHint, WHSLocDirTable
-ms.dyn365.ops.version: 10.0.9
 ---
 
 # Warehouse slotting
@@ -148,7 +145,7 @@ For each sales order template that you create, follow these steps to add a line 
 
     - **Unit of Measure Tier:** _EaBoxPl_
 
-        This field defines the units of measure of demand that are valid for the line. (For more information, see the [Set up unit-of-measure tiers for slotting](#unit-tiers) section earlier in this article.)
+        This field defines the units of measure of demand that are valid for the line. (Learn more in the [Set up unit-of-measure tiers for slotting](#unit-tiers) section earlier in this article.)
 
     - **Assign slot criteria:** _Consider qty_
 

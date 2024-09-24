@@ -2,7 +2,7 @@
 title: Select a site theme
 description: This article describes how to set or change your site's theme in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 07/31/2024
+ms.date: 08/23/2024
 ms.topic: how-to
 audience: Application user
 ms.reviewer: v-chrgriffin
@@ -26,13 +26,13 @@ By default, when you first create a site, it uses a theme that is named **Fabrik
 
 To select the theme that is applied to your site, follow these steps.
 
-1. In the site authoring environment, go to your site.
-1. Go to **Site Management** \> **Extensibility**.
-1. Under **Theme**, select a theme on the drop-down menu.
+1. In Commerce site builder, go to your site.
+1. Go to **Site settings** \> **Extensions**.
+1. On the **Configuration** tab, under **Theme**, select a theme on the drop-down menu.
 1. To apply the selected theme to your site, select **Save and publish**.
 
 > [!NOTE]
-> The theme that you select is published to your site as soon as you select **Save and publish** on the **Extensibility** page. To preview a theme on your site before you apply it, you can use your development or sandbox environment.
+> The theme that you select is published to your site as soon as you select **Save and publish** on the **Extensions** page. To preview a theme on your site before you apply it, you can use your development or sandbox environment.
 
 ## Additional resources
 

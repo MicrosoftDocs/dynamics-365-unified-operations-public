@@ -6,11 +6,7 @@ ms.author: johanho
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: ProdParmStatusDecrease, ProdSetupStatusDecrease
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: b1e0df43-b388-4326-8fb7-501f30c89776
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: Set up bills of exchange
 description: Learn about the steps for setting up bills of exchange, including overviews on setting up posting profiles for bills of exchange and payment fees for bills of exchange.
-author: prabhatb-ship-it
-ms.author: prabhatb
+author: JodiChristiansen
+ms.author: jchrist
 ms.topic: article
 ms.date: 09/17/2018
 ms.reviewer: twheeloc

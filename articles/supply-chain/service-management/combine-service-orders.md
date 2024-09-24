@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 05/01/2018
 ms.custom: 
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMAServiceOrderTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Combine service orders   
@@ -94,7 +91,7 @@ In total, 10 service orders are created. Because the combined setting that you s
 
 Additional grouping of service order lines into service orders occurs according to any time window that you specify on the service agreement lines.
 
-## See also
+## Related information
 
 [Create service orders automatically](create-service-orders-automatically.md)
 

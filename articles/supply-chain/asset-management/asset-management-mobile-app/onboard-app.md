@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 09/19/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -35,7 +34,7 @@ The [Power Apps component framework feature](/power-apps/developer/component-fra
 
 ## Licensing requirements
 
-To gain access to the app, users must have the appropriate security role(s) assigned to them in Supply Chain Management. The roles that are available for each user in Supply Chain Management depend on the licenses assigned to them in Microsoft Entra ID. For details about which security roles grant access to which functionality in the Asset Management mobile app, see [Configure users and workers in Supply Chain Management](#roles-workers). For details about which licenses grant access to which security roles, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2267806).
+To gain access to the app, users must have the appropriate security role(s) assigned to them in Supply Chain Management. The roles that are available for each user in Supply Chain Management depend on the licenses assigned to them in Microsoft Entra ID. For details about which security roles grant access to which functionality in the Asset Management mobile app, see [Configure users and workers in Supply Chain Management](#roles-workers). For details about which licenses grant access to which security roles, see the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544).
 
 ## <a name="install-in-dataverse"></a>Install the mobile app in Dataverse
 

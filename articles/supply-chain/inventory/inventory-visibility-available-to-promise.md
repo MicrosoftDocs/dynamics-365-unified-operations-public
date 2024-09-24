@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 11/30/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -79,7 +78,7 @@ Follow these steps to turn on the *On-hand change schedule* feature in Power App
 1. Select **Save**.
 1. When you've finished configuring all the required settings, select **Update Configuration** under **Admin Settings** on the navigation pane.
 
-For more information, see [Complete and update the configuration](inventory-visibility-configuration.md).
+Learn more in [Complete and update the configuration](inventory-visibility-configuration.md).
 
 ### Turn on and set up on-hand change scheduling and ATP in UI version 1
 
@@ -234,7 +233,7 @@ You can use the following application programming interface (API) URLs to submit
 | `/api/environment/{environmentId}/onhand` | `GET` | Query by using the `GET` method. |
 | `/api/environment/{environmentId}/onhand/exactquery` | `POST` | Exact query by using the `POST` method. |
 
-For more information, see [Inventory Visibility public APIs](inventory-visibility-api.md).
+Learn more in [Inventory Visibility public APIs](inventory-visibility-api.md).
 
 ### Create one on-hand change schedule
 
@@ -492,7 +491,7 @@ The result of this `GET` request is exactly the same as the result of the `POST`
 
 ### Exact query by using the POST method
 
-To set up an exact query, add ATP-related fields to the query body. For more information, see [Exact query by using the post method](inventory-visibility-api.md#exact-query-with-post-method).
+To set up an exact query, add ATP-related fields to the query body. Learn more in [Exact query by using the post method](inventory-visibility-api.md#exact-query-with-post-method).
 
 ```json
 {

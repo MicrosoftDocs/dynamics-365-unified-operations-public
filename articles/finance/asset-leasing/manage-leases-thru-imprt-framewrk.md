@@ -4,7 +4,7 @@ description: Learn how to use the Lease import framework to adjust multiple leas
 author: moaamer
 ms.author: moaamer
 ms.topic: article
-ms.date: 06/12/2024
+ms.date: 08/12/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -35,7 +35,7 @@ The system can run the following three processes through the lease import suite.
 | Process type  | Description |
 |---------------|-------------|
 | Add record    | Migrated leases that have this process type create a lease in the system. The payment schedule must be manually confirmed, and the initial recognition journal entry must be manually posted after the migration. |
-| Update record | Migrated leases that have this process type update field values for a lease that is already in the system. Only the fields that have been selected on the **Update fields selection** page are updated. We recommended that you select non-financial fields on the **Update fields selection** page, because this process type doesn't adjust the lease. |
+| Update record | Migrated leases that have this process type update field values for a lease that is already in the system. Only the fields that have been selected on the **Update fields selection** page are updated. We recommend that you select non-financial fields on the **Update fields selection** page, because this process type doesn't adjust the lease. |
 | Adjust record | Migrated leases that have this process type adjust the lease. This adjustment causes a financial lease modification of the lease. After the lease is processed, the system creates a new payment schedule by using the new data from the lease import suite. The system doesn't confirm the payment schedule or post the adjustment journal entry. |
 
 After information is uploaded through the **Data management** workspace, open the **Import header** page (**Asset leasing \> Lease import framework \> Import header**). This page lists all imports of the three data entities that were listed earlier.
@@ -66,7 +66,9 @@ To process an individual lease, select **Migrate lease records** on the **Import
 After the leases are compared, you can run a report to view the differences for each lease that is included in the import ID. To run the report for one lease, select that lease in the staging data, and then select **Compare and view report \> Differences report**.
 
 > [!NOTE]
-> To compare multiple leases at the same time, go to **Asset leasing \> Lease import framework \> Periodic** and select **Compare**. 
+> To compare multiple leases at the same time, go to **Asset leasing \> Lease import framework \> Periodic**, and select **Compare**.
+
+In Dynamics 365 Finance version 10.0.41, enhancements have been made to the Lease import framework. They specifically target two tables: AssetLeaseLeaseImportHeader and AssetLeaseLeaseDetailsImport. The modifications introduce additional functionality that allows for easier deletion in the lease import records. Users can more efficiently manage and remove lease-related data that was imported by using the Lease import framework. Therefore, overall flexibility and control over data management operations in Asset leasing are improved.
 
 ## Set up update fields
 

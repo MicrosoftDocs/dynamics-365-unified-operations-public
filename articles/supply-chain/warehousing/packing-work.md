@@ -1,15 +1,12 @@
 ---
 title: Packing work for packing outbound containers and processing shipments
 description: Learn about the "Packing" work order type, which manages work for packing containers and supports partial shipments of packed containers.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: article
 ms.date: 7/13/2022
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2022-08-01
 ms.search.form: WHSPackingWorkLocationSetup, WHSPack, WHSContainerTable
-ms.dyn365.ops.version: 10.0.29
 ---
 
 # Packing work for packing outbound containers and processing shipments
@@ -38,7 +35,7 @@ Use the following procedure to set up packing locations. For each location, you 
 1. In the new record, set the following fields:
 
     - **Warehouse** – Select or enter the warehouse where the packing location is located.
-    - **Location** – Select or enter the packing location. This location must be assigned to a location profile that uses the location type that is configured as the packing location type for your company on the **Warehouse management parameters** page. For more information, see [Pack containers for shipment](packing-containers.md).
+    - **Location** – Select or enter the packing location. This location must be assigned to a location profile that uses the location type that is configured as the packing location type for your company on the **Warehouse management parameters** page. Learn more in [Pack containers for shipment](packing-containers.md).
     - **Create packing work** – Select this checkbox to create packing work each time that items are delivered to the packing location. The work will include links to related load lines, so that partial loads can be packed and shipped.
 
 > [!CAUTION]
@@ -81,7 +78,7 @@ To enable a load to be delivered over multiple shipments, you must associate it 
 
 1. Close the **Load templates** page.
 
-For more information, see [Confirm and transfer](Confirm-and-transfer.md).
+Learn more in [Confirm and transfer](Confirm-and-transfer.md).
 
 ### Process a sales order
 

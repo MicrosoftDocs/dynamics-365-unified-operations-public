@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 05/07/2018
 ms.custom: 
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: InventQuarantineOrder
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Specify how to dispose of returned items
@@ -155,10 +152,5 @@ For each disposition code that you define, you must select a disposition action.
 
 1. Go to **Inventory management** \> **Periodic** \> **Quality management** \> **Quarantine orders**.
 1. For an existing quarantine order, select an action from the **Disposition code** field on the **Overview** tab.
-
-## See also
-
-- [Quarantine order (form)](/dynamicsax-2012//quarantine-order-form)
-- [Disposition codes (form)](https://technet.microsoft.com/library/hh597113\(v=ax.60\))
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

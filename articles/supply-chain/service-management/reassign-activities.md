@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMADispatchBoard
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 
@@ -39,7 +36,7 @@ Use the following steps to reassign an activity to another worker:
     
       - On the **All** tab, **Team** tab, **Undispatched** tab, or **Related** tab, in the **Worker** field, enter the name of the worker who is replacing the current worker for the activity.
 
-## See also
+## Related information
 
 [Service activities](service-activities.md)
 

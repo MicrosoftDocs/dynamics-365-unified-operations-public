@@ -9,7 +9,6 @@ ms.custom:
   - bap-template
   - evergreen
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 

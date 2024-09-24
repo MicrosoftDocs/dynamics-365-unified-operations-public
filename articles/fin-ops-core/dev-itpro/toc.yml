@@ -321,6 +321,8 @@ items:
             href: sysadmin/archive-so.md 
           - name: Archive Dynamics 365 Supply Chain inventory transactions
             href: sysadmin/archive-inventory.md
+          - name: Archive Dynamics 365 Supply Chain inventory documents
+            href: sysadmin/archive-invent-doc.md
           - name: Archive Dynamics 365 Supply Chain inventory journals
             href: sysadmin/archive-inventory-journal.md
           - name: Archive Commerce transactions
@@ -501,6 +503,8 @@ items:
             href: deployment/setup-deploy-on-premises-latest.md
           - name: Set up and deploy on-premises environments (Platform update 41 through 55)
             href: deployment/setup-deploy-on-premises-pu41.md
+          - name: Configure Lifecycle Services connectivity for Finance + Operations (on-premises) deployments
+            href: deployment/onprem-auth-lcs.md
           - name: Installation steps for Retail channel components in an on-premises environment
             href: deployment/deploy-retail-onprem.md
           - name: Develop and deploy custom models to on-premises environments
@@ -597,20 +601,10 @@ items:
         items:
         - name: Custom help overview
           href: help/custom-help-overview.md
-        - name: Preparing content for use with the Help pane
-          href: help/preparing-content.md
-        - name: The ConvertHtmlToJson tool
-          href: help/custom-help-toolkit-ConvertHtmlToJson.md
-        - name: The HtmlLocaleChanger tool
-          href: help/custom-help-toolkit-HtmlLocaleChanger.md
-        - name: Convert Dynamics AX custom Help for use in Dynamics 365
-          href: help/migrate-dynamicsax2012.md
         - name: Connect your custom help to the Help pane
           href: help/connect-help-pane.md
         - name: Language and locale descriptors in across product and help
           href: help/language-locale.md
-        - name: Extend and collaborate on the help
-          href: help/contributor-guide.md      
         - name: Contribute to the Help
           href: help/contributor-guide.md
     - name: Develop and customize
@@ -1813,6 +1807,8 @@ items:
           href: sysadmin/role-based-security.md
         - name: Security architecture
           href: sysadmin/security-architecture.md
+        - name: Finance and operations storage account updates
+          href: sysadmin/storage-acct-security.md
         - name: Encryption in finance and operations apps
           href: sysadmin/encryption.md
         - name: Use customer-managed keys to control encryption keys for data at rest
@@ -1963,6 +1959,10 @@ items:
             href: migration-upgrade/pre-post-upgrade-scripts.md
         - name: Environment operations
           items:
+          - name: Monitor the updgrade
+            href: migration-upgrade/monitor-upgrade.md
+          - name: Database synchronize performance 
+            href: migration-upgrade/database-sync-perf.md
           - name: Monitoring replication
             href: migration-upgrade/monitor-replication.md
           - name: Migrate document attachments
@@ -2267,6 +2267,8 @@ items:
           href: copilot/purchase-order-changes-after-confirmation-enable.md
         - name: Enable generative help and guidance with Copilot
           href: copilot/enable-copliot-generative-help.md
+        - name: Add knowledge to generative help and guidance with Copilot
+          href: copilot/extend-copilot-generative-help.md
       - name: Extending Copilot capabilities in finance and operations apps
         items:
         - name: Overview
@@ -2291,9 +2293,11 @@ items:
       items:
       - name: Overview
         href: responsible-ai/responsible-ai-overview.md
+      - name: Responsible AI FAQ for Chat with finance and operations data on Microsoft 365 Copilot
+        href: ../fin-ops/copilot/faq-copilot-fno-data-on-m365copilot.md
       - name: Responsible AI FAQ for Generative help and guidance with Copilot
         href: ../fin-ops/copilot/faq-copilot-generative-help.md
-      - name: Responsible AI FAQ for Suggested questions within Copilot (preview)
+      - name: Responsible AI FAQ for Follow-up questions in the Copilot sidecar (preview)
         href: ../fin-ops/copilot/faq-copilot-suggested-questions.md
       - name: Responsible AI FAQ for Workflow history summary
         href: ../fin-ops/copilot/workflow-history-summary-faq.md

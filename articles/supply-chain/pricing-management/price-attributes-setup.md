@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 04/03/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: GUPParameters, EcoResAttribute, EcoResAttributeGroup, SalesTable
 ---
 
@@ -64,7 +63,7 @@ You can create Pricing management pricing rules that consider the attribute valu
 
 Follow these steps to set up your customer price attributes.
 
-1. Go to **Product information management \> Setup \> Categories and attributes \> Attributes**, and set up all the customer price attributes that you'll need. For each attribute, make sure that the **Can be used as price attribute** option is set to *Yes*. (For more information, see the [Set up product price attributes](#price-attributes) section of this article.) In the **Default value** field, assign a default attribute value as required.
+1. Go to **Product information management \> Setup \> Categories and attributes \> Attributes**, and set up all the customer price attributes that you'll need. For each attribute, make sure that the **Can be used as price attribute** option is set to *Yes*. (Learn more in the [Set up product price attributes](#price-attributes) section of this article.) In the **Default value** field, assign a default attribute value as required.
 1. Go to **Product information management \> Setup \> Categories and attributes \> Attribute groups**, and create a customer price attribute group. Give it an appropriate name (such as *Customer price attributes*), and add each relevant attribute on the **Attributes** FastTab.
 1. Go to **Pricing management \> Setup \> Pricing management parameters**. On the **Price attribute** tab, set the **Customer attribute group** field to the attribute group that you created to hold your customer price attributes.
 
@@ -86,7 +85,7 @@ You can create Pricing management pricing rules that consider attribute values t
 
 Follow these steps to set up your sales order price attributes.
 
-1. Go to **Product information management \> Setup \> Categories and attributes \> Attributes**, and set up all the sales order price attributes that you'll need. For each attribute, make sure that the **Can be used as price attribute** option is set to *Yes*. (For more information, see the [Set up product price attributes](#price-attributes) section of this article.) In the **Default value** field, assign a default value as required.
+1. Go to **Product information management \> Setup \> Categories and attributes \> Attributes**, and set up all the sales order price attributes that you'll need. For each attribute, make sure that the **Can be used as price attribute** option is set to *Yes*. (Learn more in the [Set up product price attributes](#price-attributes) section of this article.) In the **Default value** field, assign a default value as required.
 1. Go to **Product information management \> Setup \> Categories and attributes \> Attribute groups**, and create a sales order price attributes group. Give it an appropriate name (such as *Order price attributes*), and add each relevant attribute on the **Attributes** FastTab.
 1. Go to **Pricing management \> Setup \> Pricing management parameters**. On the **Price attribute** tab, set the **Sales order attribute group** field to the attribute group that you created to hold your sales order price attributes.
 

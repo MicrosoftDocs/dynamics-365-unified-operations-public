@@ -1,8 +1,8 @@
 ---
 title: Wave label printing
 description: Learn about wave label printing and explains how to set it up, including outlines for various scenarios for creating wave labels.
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 06/07/2024
 ms.custom:
@@ -35,7 +35,7 @@ Wave label printing offers the following enhancements:
 - Reprint labels from both mobile devices and the rich client.
 - Void labels (for example, in short pick scenarios), and reprint them.
 - Clean up the wave label history.
-- Improvements to document routing layouts are shared between document routing layouts and wave label layouts. (For more information, see [Document routing label layouts](../warehousing/document-routing-layout-for-license-plates.md).)
+- Improvements to document routing layouts are shared between document routing layouts and wave label layouts. (Learn more in [Document routing label layouts](../warehousing/document-routing-layout-for-license-plates.md).)
 
 These enhancements make it more efficient to label cartons before palletization. They especially benefit companies that ship to large retailers that automatically confirm order receipts by scanning each carton separately.
 
@@ -275,7 +275,7 @@ Number sequence extensions control the GS1 compliance of specific number sequenc
         - **Unit:** *ea* (9016 ea = 322 Box = 46 PL)
 
     > [!NOTE]
-    > The items and quantities that are provided here are only examples. They must use the unit sequence group that you defined earlier, appropriate unit conversions from *ea* to *Box* to *PL* must be defined for them, and they must have stock in warehouse *62*. For more information, see [Unit of measure and stocking policies](unit-measure-stocking-policies.md).
+    > The items and quantities that are provided here are only examples. They must use the unit sequence group that you defined earlier, appropriate unit conversions from *ea* to *Box* to *PL* must be defined for them, and they must have stock in warehouse *62*. Learn more in [Unit of measure and stocking policies](unit-measure-stocking-policies.md).
 
 1. Select sales order line 1. Then, in the **Sales order line** section, on the **Inventory** menu, select **Reservations**.
 1. On the **Reservation** page, on the Action Pane, select **Reserve lot**, and then close the page.
@@ -890,7 +890,7 @@ Number sequence extensions control the GS1 compliance of specific number sequenc
         - **Unit:** *ea* (9016 ea = 322 Box = 46 PL)
 
     > [!NOTE]
-    > The items and quantities that are provided here are only examples. They must use the unit sequence group that you defined earlier, appropriate unit conversions from *ea* to *Box* to *PL* must be defined for them, and they must have stock in warehouse *62*. For more information, see [Unit of measure and stocking policies](unit-measure-stocking-policies.md).
+    > The items and quantities that are provided here are only examples. They must use the unit sequence group that you defined earlier, appropriate unit conversions from *ea* to *Box* to *PL* must be defined for them, and they must have stock in warehouse *62*. Learn more in [Unit of measure and stocking policies](unit-measure-stocking-policies.md).
 
 1. Select sales order line 1. Then, in the **Sales order line** section, on the **Inventory** menu, select **Reservations**.
 1. On the **Reservation** page, on the Action Pane, select **Reserve lot**, and then close the page.
@@ -913,7 +913,7 @@ You can view and reprint wave labels from the following pages:
 
 For most of these pages, you can find the relevant function by selecting **Wave labels** in the **Related information** group on the **Shipments** tab of the Action Pane.
 
-## Additional resources
+## Related information
 
 - [Reprint and void wave labels](reprint-and-void-wave-labels.md)
 - [Schedule wave label printing during wave](configure-task-based-wave-label-printing.md)

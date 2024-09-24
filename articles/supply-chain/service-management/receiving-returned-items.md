@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 05/01/2018
 ms.custom: 
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMAServiceOrderTable
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Receive returned items
@@ -21,7 +18,7 @@ When a return shipment arrives, you match it to a return order that has already 
 
 Depending on company policies, the items in the return shipment can be sent to quarantine for additional inspection or they can be returned to inventory.
 
-## See also
+## Related information
 
 - [Register the receipt of returned items](register-the-receipt-of-returned-items.md)
 - [Post arrival journal for returned products](post-arrival-journal-for-returned-products.md)

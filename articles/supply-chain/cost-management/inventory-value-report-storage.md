@@ -4,7 +4,7 @@ description: Learn how to set up, generate, and use inventory value reports. The
 author: JennySong-SH
 ms.author: yanansong
 ms.topic: how-to
-ms.date: 05/27/2024
+ms.date: 09/03/2024
 ms.custom:
   - bap-template
 ms.reviewer: kamaybac
@@ -70,7 +70,7 @@ Use the **Inventory value reports** page to set up the content that is included 
 
     - **Date interval** – Select a predefined date interval. You can override this date interval when you run the report.
     - **Range** – Select either *Posting date* or *Transaction Time*, depending on the date and time that should be used when records are retrieved for the report.
-    - **Dimension set** – Select the set of dimensions to run the data for. (The dimensions are defined in the general ledger.) For example, you might run the data for *Main account* or for *Main account + Business unit*. The dimension set that you select must have no more than two dimensions. For more information, see [Financial dimension sets](../../finance/general-ledger/financial-dimension-sets.md).
+    - **Dimension set** – Select the set of dimensions to run the data for. (The dimensions are defined in the general ledger.) For example, you might run the data for *Main account* or for *Main account + Business unit*. The dimension set that you select must have no more than two dimensions. Learn more in [Financial dimension sets](../../finance/general-ledger/financial-dimension-sets.md).
 
 1. On the **Columns** FastTab, set the following fields. These fields control the columns that your report includes and the types of data that those columns contain.
 
@@ -173,29 +173,24 @@ The following example shows how to export an **Inventory value report storage** 
 
 1. Go to **System administration \> Workspaces \> Data management**.
 1. In the **Import / Export** section, select the **Export** tile.
-1. On the **Export** page that appears, set up the export job. First enter a group name for the job.
-1. In the **Selected entities** section, select **Add entity**.
-1. In the dialog box that appears, set the following fields:
+1. On the **Export** page, enter a **Group name** for the job.
+1. On the **Selected entities** FastTab, select **Add entity**.
+1. In the **Add entity** drop-down dialog, set the following fields:
 
-    - **Entity name** – Select *Inventory value*.
+    - **Entity name** – Select *Inventory value report storage*.
     - **Target data format** – Select the format to export data to.
 
 1. Select **Add** to add the new row, and then select **Close** to close the dialog box.
-1. Usually, you'll export one report at a time. To export a single report, set up a filter for the row that you just added to the **Inquiry** dialog box. In this way, you can define which report from the **Inventory value** entity is included in your export. Follow these steps to set the following filter options to export a single report:
+1. Usually, you'll export one report at a time. To export a single report, select the button in the **Filter** column for the row that you just added to **Selected entities** FastTab. Then use the query designer to set up the following filter:
+    - **Table** – Select *Inventory value report storage*.
+    - **Field** – Select *Execution name*.
+    - **Criteria** – Enter the name of the report that you want to export.
 
-    1. On the **Range** tab, select **Add** to add a row.
-    2. Set the **Table** field to *Inventory value*.
-    3. Set the **Derived table** field to *Inventory value*.
-    4. Set the **Field** field to the field that you want to filter by. Usually, you'll use the **Execution name** field and/or the **Execution time** field.
-    5. Set the **Criteria** field to the value that you want to look for in the selected field. (If you selected the **Execution name** field in the previous step, this value will be the name of the report. If you selected the **Execution time** field, it will be the time when the report was generated.)
-    6. Add more rows to the **Range** tab as you require, until you've uniquely identified the report that you're looking for.
+1. On the Action Pane, select **Save**.
+1. On the Action Pane, open the **Export options** tab and select **Export now**.
+1. The **Execution summary** page opens. Here you can view the status of your export job and a list of the entities that were exported. In the **Entity processing status** section, select the **Inventory value** entity in the list, and then select **Download file** to download the data that was exported from that entity.
 
-1. Select **OK** to save your settings and close the dialog box.
-1. Select **Save** to save your export setup.
-1. On the **Export options** tab, select **Export now** to generate the export file.
-1. On the **Execution summary** page that appears, you can view the status of your export job and a list of the entities that were exported. In the **Entity processing status** section, select the **Inventory value** entity in the list, and then select **Download file** to download the data that was exported from that entity.
-
-For more information about how to use data management to export data, see [Data import and export jobs overview](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+For more information about how to use data management to export data, see [Data import and export jobs overview](../../fin-ops-core/fin-ops/data-entities/data-import-export-job.md)
 
 ## Delete stored inventory value reports
 

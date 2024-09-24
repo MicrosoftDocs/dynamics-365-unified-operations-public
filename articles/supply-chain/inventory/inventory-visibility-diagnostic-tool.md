@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 01/11/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -19,7 +18,7 @@ This article describes how to set up and use the Inventory Visibility diagnostic
 
 ## Set up the Inventory Visibility diagnostic tool
 
-The Inventory Visibility diagnostic tool is turned on by default, and no extra steps are required to make it available. However, the tool requires that Inventory Visibility is set up for your system and the data synchronization batch job is running. For more information, see [Set up Inventory Visibility in Supply Chain Management](inventory-visibility-setup.md#setup-dynamics-scm).
+The Inventory Visibility diagnostic tool is turned on by default, and no extra steps are required to make it available. However, the tool requires that Inventory Visibility is set up for your system and the data synchronization batch job is running. Learn more in [Set up Inventory Visibility in Supply Chain Management](inventory-visibility-setup.md#setup-dynamics-scm).
 
 ## Use the Inventory Visibility diagnostic tool
 

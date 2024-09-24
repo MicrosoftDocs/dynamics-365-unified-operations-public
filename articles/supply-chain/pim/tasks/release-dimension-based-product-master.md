@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 11/10/2022
 ms.custom: bap-template
 ms.reviewer: kamaybac 
-ms.search.region: Global
 ms.search.form: EcoResProductListPage, EcoResProductRelease  
 ---
 

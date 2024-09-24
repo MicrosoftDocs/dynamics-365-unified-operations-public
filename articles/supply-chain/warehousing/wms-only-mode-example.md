@@ -1,13 +1,12 @@
 ---
 title: Example of using inbound and outbound shipment orders
 description: This article provides an example scenario that shows how to create inbound and outbound shipment orders, including an outline on testing the creation process. 
-author: perlynne
-ms.author: perlynne
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 01/29/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace, SysMessageProcessorMessage, BusinessEventsWorkspace, WHSInboundShipmentOrder, WHSOutboundShipmentOrder, WHSInboundLoadPlanningWorkbench, WHSShipmentPackingSlipJournal, WHSShipmentReceiptJournal, WHSParameters, ExtCodeTable, WHSOutboundShipmentOrderMessage, WHSInboundShipmentOrderMessage
 ---
 
@@ -15,8 +14,6 @@ ms.search.form: WHSSourceSystem, WHSShipmentOrderIntegrationMonitoringWorkspace,
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
-
-<!-- KFM: Preview until further notice -->
 
 This article provides an example scenario that shows how to create inbound and outbound shipment orders via message processing. It uses the standard sample data that's associated with the *USMF* example legal entity (company).
 
@@ -53,7 +50,7 @@ Before you can work through this example by using a Supply Chain Management envi
 
 - Check the version requirements, and enable the feature as described in [Enable and configure warehouse management only mode](wms-only-mode-setup.md).
 - Work in a system where the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) is installed, and select the *USMF* legal entity.
-- Set up at least one record on the **Source systems** page. This example scenario assumes that you've set up a source system where the **Source system** field is set to *ERP*. For more information, see [Configure your source systems](wms-only-mode-setup.md#source-systems).
+- Set up at least one record on the **Source systems** page. This example scenario assumes that you've set up a source system where the **Source system** field is set to *ERP*. Learn more in [Configure your source systems](wms-only-mode-setup.md#source-systems).
 - Set up the required number sequences as described in [Set up number sequences](wms-only-mode-setup.md#number-sequences).
 
 ## Set up authentication for the example
@@ -74,7 +71,7 @@ For the `InboundShipmentOrderMessages` inbound shipment order header message, yo
 - `OrderNumber`: *IO1*
 - `ReceivingWarehouseId`: *51*
 
-When you use <!--[Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) with --> variables, the `InboundShipmentOrderMessages` message looks like the following example.
+When you use variables, the `InboundShipmentOrderMessages` message looks like the following example.
 
 ``` JSON example
 POST {{resource}}/data/InboundShipmentOrderMessages
@@ -124,7 +121,7 @@ For the `OutboundShipmentOrderMessages` outbound shipment order header message, 
 - `ConsigneeName` or `ReceiverName`: *Microsoft*
 - `ConsigneeCountryRegionId` or `ReceiverCountryRegionId`: *USA*
 
-When you use <!-- [Postman](../../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md#query-odata-by-using-postman) with--> variables, the `OutboundShipmentOrderMessages` message looks like the following example.
+When you use variables, the `OutboundShipmentOrderMessages` message looks like the following example.
 
 ``` JSON
 POST {{resource}}/data/OutboundShipmentOrderMessages

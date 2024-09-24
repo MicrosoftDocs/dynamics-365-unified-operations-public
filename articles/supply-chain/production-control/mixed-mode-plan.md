@@ -6,11 +6,7 @@ ms.author: johanho
 ms.topic: article
 ms.date: 11/03/2017
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: EcoResStorageDimensionGroup, InventItemOrderSetup, ReqItemTable
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: 2e8b5fd1-cee9-45da-a3ae-6961fb020b89
 ---
 

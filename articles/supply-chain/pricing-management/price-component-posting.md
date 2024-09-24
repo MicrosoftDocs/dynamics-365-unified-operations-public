@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 04/03/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: GUPParameters, GUPPriceComponentCodePostingProfile, GUPPriceComponentCodeSetup, GUPPricingTree
 ---
 
@@ -97,8 +96,8 @@ Follow these steps to set up your price structures to use a specific posting pro
 
 1. Follow one of these steps:
 
-    - For companies that use a single price structure, go to **Price management \> Setup \> Price component codes \> Price component code setup**. (For more information, see [Set up a company to use a single price structure](price-structure-single.md).)
-    - For companies that use multiple price structures, go to **Price management \> Setup \> Price component codes \> Price trees**, and select a price tree in the list pane. (For more information, see [Set up a company to use multiple price structures](price-structure-multiple.md).)
+    - For companies that use a single price structure, go to **Price management \> Setup \> Price component codes \> Price component code setup**. (Learn more in [Set up a company to use a single price structure](price-structure-single.md).)
+    - For companies that use multiple price structures, go to **Price management \> Setup \> Price component codes \> Price trees**, and select a price tree in the list pane. (Learn more in [Set up a company to use multiple price structures](price-structure-multiple.md).)
 
 1. Find the price component code line that you want to assign posting for, and select its **Post to price component code** checkbox. Then set the **Posting profile** field to the profile that you want to use for the line.
 

@@ -16,6 +16,7 @@ ms.collection:
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 This FAQ provides answers to frequently asked questions about the AI technology that's used in the *Analyze demand plans with Copilot* feature for Demand planning in Microsoft Dynamics 365 Supply Chain Management. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
 
@@ -75,7 +76,7 @@ When you use this feature, follow these recommendations:
 - Make sure that your company has enough control over data permissions to ensure that business data can't be manipulated to influence AI data processing in an undesirable way.
 - Before you make decisions about modifications to the demand plan, always review and study the generated response, and compare it with actual demand plan data.
 
-### See also
+### Related information
 
 - [Analyze demand plans with Copilot (Preview)](demand-planning/demand-planning-copilot.md)
 - [Transparency note for Copilot data security and privacy in Microsoft Power Platform](/power-platform/transparency-note-copilot-data-security-privacy)

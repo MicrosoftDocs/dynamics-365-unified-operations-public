@@ -1669,6 +1669,8 @@
           href: inventory/inventory-transactions-details.md
         - name: Initialize stock levels in the warehouse
           href: inventory/tasks/initialize-stock-levels-warehouse.md
+        - name: Link transfer order lines with sales order lines (preview)
+          href: inventory/pair-transfer-and-sales-lines.md
         - name: Transfer physical inventory within the warehouse
           href: inventory/tasks/transfer-physical-inventory-within-warehouse.md
         - name: Adjust stock levels in the warehouse (basic warehousing)
@@ -1720,7 +1722,11 @@
       - name: Inventory On-hand mobile app
         href: inventory/inventory-onhand-mobile-app.md
       - name: Consolidate inventory transactions
-        href: inventory/archive-inventory-transactions.md
+        items:
+        - name: Consolidate inventory transactions
+          href: inventory/archive-inventory-transactions.md
+        - name: Consolidate inventory transactions FAQ
+          href: inventory/inventory-transactions-consolidation-faq.md
       - name: Inventory Visibility Add-in
         items:
         - name: Inventory Visibility Add-in overview
@@ -1767,6 +1773,8 @@
           href: inventory/inventory-visibility-dashboard.md
         - name: Inventory Visibility public APIs
           href: inventory/inventory-visibility-api.md
+        - name: Sync external inventory adjustments through Inventory Visibility
+          href: inventory/inventory-visibility-sync-changes.md
         - name: Inquire into inventory with Copilot (preview)
           href: inventory/inventory-visibility-copilot-api.md
         - name: Log and view successful API posts
@@ -2039,6 +2047,8 @@
         href: demand-planning/whats-new-demand-planning.md
       - name: Setup and administration
         items:
+        - name: Demand planning license requirements
+          href: demand-planning/demand-planning-licensing.md
         - name: Install and enable Demand planning
           href: demand-planning/install-demand-planning.md
         - name: Security roles and row-level security
@@ -2333,11 +2343,9 @@
           href: pricing-management/concurrence-cross-codes.md
     - name: Procurement and sourcing
       items:
-      - name: Procurement and sourcing home page
-        href: procurement/procurement-sourcing.md
       - name: Procurement and sourcing overview
         href: procurement/procurement-sourcing-overview.md
-      - name: Procurement and sourcing workflow
+      - name: Procurement and sourcing workflows
         href: procurement/procurement-sourcing-workflows.md
       - name: Procurement catalogs
         items:
@@ -3473,7 +3481,7 @@
         href: traceability/traceability-overview.md
       - name: Install and configure Traceability
         items:
-        - name: Install and update Traceability
+        - name: Install, update, or uninstall Traceability
           href: traceability/developer/traceability-install.md
         - name: Traceability security roles in Power Apps
           href: traceability/developer/traceability-security-roles.md
@@ -3873,6 +3881,8 @@
           href: warehousing/whats-new-wma.md
         - name: Warehouse Mobile app accessibility features
           href: warehousing/warehouse-app-accessibility.md
+        - name: Workload insights with Copilot
+          href: warehousing/warehouse-management-mobile-app-insights.md
         - name: Install, set up, and use mobile devices
           items:
           - name: Install the Warehouse Management mobile app
@@ -4099,6 +4109,8 @@
         href: faq-confirmed-po-changes.md
       - name: Responsible AI FAQ for Inquire into inventory with Copilot (preview)
         href: faq-inventory-query.md
+      - name: Responsible AI FAQ for Workload insights with Copilot
+        href: faq-wma-copilot.md
   - name: Development and administration for finance and operations apps 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance 

@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 05/07/2018
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMADispatchBoard
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 
@@ -33,13 +30,12 @@ In order to help you quickly gauge the urgency of a service order, the Gantt cha
 
 
 
-## See also
+## Related information
 
 [Prioritize service orders](prioritize-service-orders.md)
 
 [Monitor service activities](monitor-service-activities.md)
 
-[Dispatch board (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))
 
   
 

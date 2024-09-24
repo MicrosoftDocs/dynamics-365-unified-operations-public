@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 05/01/2018
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2016-02-28
 ms.search.form: SMASubscriptionCreateDialog
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Indexed sales prices  
@@ -24,7 +21,7 @@ In the **Create subscription fee** form, set the **Get pricing from** field to *
 
 For example, if the base price is EUR 1,000, and the index is 110, the sales price is EUR 1,100.
 
-## See also
+## Related information
 
 [Create subscription fee transactions](create-subscription-fee-transactions.md)
 

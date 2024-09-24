@@ -2,7 +2,7 @@
 title: Set up and configure on behalf of (OBO) functionality in Commerce headquarters
 description: This article describes how to set up and configure on behalf of (OBO) functionality in Microsoft Dynamics 365 Commerce headquarters.
 author: mariash529
-ms.date: 08/02/2024
+ms.date: 09/19/2024
 ms.topic: how-to
 audience: IT Pro
 ms.reviewer: v-chrgriffin
@@ -44,9 +44,6 @@ To add identity providers to Commerce shared parameters in headquarters, follow 
     1. **Name:** Leave this field blank.
   
 1. On the action pane, select **Save**.
-
-    ![Example of the Identity Provider Configuration in Commerce Shared Parameters in HQ](../media/obo-commerce-shared-param3.png)
-
 1. Go to **Retail and Commerce \> Headquarters setup \> Distribution schedule**.
 1. In the left navigation menu, select the **1110 Global configuration** job.
 1. On the action pane, select **Run Now**.

@@ -7,11 +7,7 @@ ms.topic: article
 ms.date: 06/16/2017
 ms.custom: 
 ms.reviewer: kamaybac 
-ms.search.region: global
-ms.search.industry: Manufacturing
-ms.search.validFrom: 2016-02-28
 ms.search.form: KanbanBoard, KanbanJobSchedulingListPage, LeanProductionFlowVisualization, KanbanBoardUnplannedJobs
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Visual scheduling for lean manufacturing
@@ -78,7 +74,7 @@ You can open the Kanban schedule board by using the menu item on the following p
 -   **Production flow visualization** page
 
 
-## Additional resources
+## Related information
 
 [Kanban job scheduling for lean manufacturing](lean-manufacturing-kanban-job-scheduling.md)
 

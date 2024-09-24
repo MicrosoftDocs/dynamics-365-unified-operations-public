@@ -8,9 +8,7 @@ ms.date: 04/30/2018
 ms.custom:
 ms.reviewer: kamaybac
 ms.search.region: Global 
-ms.search.validFrom: 2016-02-28
 ms.search.form: ReturnTableListPage, ReturnInventTransIdLookup, ReturnItemNumLookup
-ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Return cost price and return lot ID

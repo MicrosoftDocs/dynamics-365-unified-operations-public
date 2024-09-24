@@ -1,26 +1,17 @@
 ---
-# required metadata
-
 title: Dedicated payment terminals and prompts for a printer and cash drawer
 description: This article provides information about the capability to have a dedicated payment terminal and prompt the user to select a cash drawer and a receipt printer.
 author: BrianShook
 ms.date: 02/03/2023
-ms.topic: article
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.topic: how-to
 audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+ms.reviewer: v-chrgriffin
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: brshoo
+ms.author: shajain
 ms.search.validFrom: 2019-03-31
-ms.dyn365.ops.version: AX 7.0.1
-
+ms.custom: 
+  - bap-template
 ---
 
 # Dedicated payment terminals and prompts for a printer and cash drawer

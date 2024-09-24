@@ -7,11 +7,7 @@ ms.topic: how-to
 ms.date: 11/14/2016
 ms.custom: 
 ms.reviewer: kamaybac 
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2016-06-30
 ms.search.form: WHSWorkClass
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Create a work class

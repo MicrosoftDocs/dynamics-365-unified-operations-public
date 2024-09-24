@@ -93,6 +93,7 @@ For the *start production order* message, the `_messageType` value is `ProdProdu
 | `StartedQuantity` | Optional | Real |
 | `StartedDate` | Optional | Date |
 | `AutomaticBOMConsumptionRule` | Optional | Enum (FlushingPrincip \| Always \| Never) |
+| `AutomaticRouteConsumptionRule` | Optional | Enum (RouteDependent \| Always \| Never) |
 
 ### Report as finished message
 
@@ -179,6 +180,19 @@ The following table shows the fields that each line in the `PickingListLines` se
 | `IsConsumptionEnded` | Optional | Enum (Yes \| No) |
 | `ErrorCause` | Optional | Enum (None \| Material \| Machine \| OperatingStaff), extensible |
 | `InventoryLotId` | Optional | String |
+| `ProductColorId` | Optional | String|
+| `ProductConfigurationId` | Optional | String |
+| `ProductSizeId` | Optional | String |
+| `ProductStyleId` | Optional | String |
+| `ProductVersionId` | Optional | String |
+| `ItemBatchNumber` | Optional | String |
+| `ProductSerialNumber` | Optional | String |
+| `LicensePlateNumber` | Optional | String |
+| `InventoryStatusId` | Optional | String |
+| `ProductionWarehouseId` | Optional | String |
+| `ProductionSiteId` | Optional | String |
+| `ProductionWarehouseLocationId` | Optional | String |
+| `InventoryDimension1` to `InventoryDimension12` | Optional | String |
 
 ### Time used for operation (route card) message
 

@@ -7,7 +7,6 @@ ms.custom: bap-template
 ms.topic: how-to
 ms.date: 11/10/2022
 ms.reviewer: kamaybac  
-ms.search.region: Global
 ms.search.form: BOMTable 
 ---
 

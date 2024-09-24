@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 07/23/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form: WHSLicensePlateLabel, WHSWorkUserdefaultLabelPrinterTable, WHSLocationDefaultLabelPrinter, WHSLabelLayout, WHSDocumentRoutingLayout, WHSPrinterStockType, WHSSysCorpNetPrinters
 ---
 
@@ -24,7 +23,10 @@ When dynamic printer selection is used, and a worker requests printing, the syst
 
 ## Prerequisites
 
-This feature requires Supply Chain Management version 10.0.36 or higher.
+To use the features described in this article, your system must meet the following requirements:
+
+- Dynamic printer selection requires Microsoft Dynamics 365 Supply Chain Management version 10.0.36 or later.
+- The added ability to set up default printers for specific mobile devices (on the **Devices** tab of the **Default label printers** page) requires Supply Chain Management version 10.0.41.
 
 ## Basic printing and label layout setup
 
@@ -86,7 +88,7 @@ Follow these steps to configure the license plate label routing.
 
 ## Set up default label printers for specific workers and locations
 
-After your printers and label layouts are set up, you can set up default label printers for specific workers and locations. The settings define the printer that the system selects for the current worker and/or location when you use dynamic printer selection. For more information, see the [How the system selects a printer](#resolve-printer) section later in this article.
+After your printers and label layouts are set up, you can set up default label printers for specific workers and locations. The settings define the printer that the system selects for the current worker and/or location when you use dynamic printer selection. Learn more in the [How the system selects a printer](#resolve-printer) section later in this article.
 
 Follow these steps to set up default label printers for each worker and/or location.
 
@@ -134,7 +136,7 @@ When a print job is run, the system uses the following sequence to identify whic
 1. If no printer is found, a fallback printer, if provided, is used. Fallback printers are configured for specific label printing scenarios, such as license plate label printing or container label printing. See Additional resources for more information.
 1. If no override or default printer is found, no label is printed.
 
-## Additional resources
+## Related information
 
 - [License plate label layouts and printing](print-license-plate-labels-using-label-layouts.md)
 - [Container label layouts and printing](print-container-labels.md)

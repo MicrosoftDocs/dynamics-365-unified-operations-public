@@ -7,10 +7,7 @@ ms.topic: how-to
 ms.date: 07/19/2019
 ms.custom: 
 ms.reviewer: kamaybac 
-ms.search.region: Global
-ms.search.validFrom: 2016-06-30
 ms.search.form: ProcCategoryHierarchyManagement, CatProcureCatalogListPage, CatProcureCatalogCreate, CatProcureCatalogEdit, SysPolicyListPage, SysPolicy, CatCatalogPolicyRule, PurchReqTableListPage, PurchReqCreate, PurchReqTable, PurchReqAddItem 
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Create a procurement catalog

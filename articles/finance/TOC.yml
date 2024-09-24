@@ -1078,7 +1078,7 @@
                       href: general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
                     - name: Financial dimension sets
                       href: general-ledger/financial-dimension-sets.md
-                    - name: New finance dimension set feature (preview)
+                    - name: New finance dimension set feature 
                       href: general-ledger/financial-dimension-set-new.md
                     - name: Maintain financial dimension default templates
                       href: general-ledger/tasks/maintain-financial-dimension-default-templates.md
@@ -1218,8 +1218,12 @@
                       href: general-ledger/allow-edits-internal-data-gl-vouchers.md
                     - name: View a related intercompany voucher from a journal
                       href: general-ledger/tasks/view-related-intercompany-voucher-journal.md
+                    - name: Dimension values on multi-line vs single line intercompany journal
+                      href: general-ledger/intercompany-journal.md
                     - name: Publish journal lines and documents from Excel
                       href: general-ledger/open-lines-excel-journals-documents.md
+                    - name: Financial journal posting performance
+                      href: general-ledger/posting-performance.md
                     - name: Automatic split of financial journals
                       href: general-ledger/auto-split-journal.md
                     - name: Delete master records
@@ -1656,6 +1660,8 @@
                               href: localizations/global/gs-e-invoicing-configure-email-for-exchange.md?context=/dynamics365/context/finance
                             - name: Configure a SharePoint channel
                               href: localizations/global/e-invoicing-configure-sharepoint-channel.md
+                            - name: Use the electronic invoicing service to import vendor invoices
+                              href: localizations/global/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/finance                              
                         - name: Electronic Invoicing service ISV last-mile connector
                           href: localizations/global/e-invoicing-isv-connector.md
                     - name: Work with Electronic invoicing
@@ -1675,17 +1681,33 @@
                         - name: Australia and New Zealand
                           href: localizations/apac/gs-apac-aus-nzl-electronic-invoices.md?context=/dynamics365/context/finance
                         - name: Chile
-                          href: localizations//iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/finance                          
+                          items:
+                            - name: Get started with Electronic invoicing for Chile
+                              href: localizations//iberoamerica/ltm-chile-elec-invo-conncection.md?context=/dynamics365/context/finance
+                            - name: Vendor electronic invoice import in Chile
+                              href: localizations//iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/finance
+                        - name: Denmark
+                          href: localizations/denmark/gs-e-invoicing-dk-get-started.md?context=/dynamics365/context/finance
+                        - name: France
+                          href: localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance                        
                         - name: Indonesia
                           href: localizations/indonesia/gs-e-invoicing-id-get-started.md?context=/dynamics365/context/finance
+                        - name: Italy
+                          href: localizations/italy/gs-e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/finance
                         - name: Malaysia
                           href: localizations//malaysia/apac-mys-e-invoices.md?context=/dynamics365/context/finance
+                        - name: Panama
+                          href: localizations//iberoamerica/ltm-panama-ei-connec-configuration.md?context=/dynamics365/context/finance                           
                         - name: Poland (preview)
                           href: localizations/poland/gs-e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
                         - name: Saudi Arabia
-                          href: localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
-                        - name: Saudi Arabia - onboarding
-                          href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
+                          items:
+                            - name: Get started with Electronic invoicing for Saudi Arabia
+                              href: localizations/mea/gs-e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
+                            - name: Onboarding for Electronic invoicing in Saudi Arabia
+                              href: localizations/mea/gs-e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
+                            - name: Simplified electronic invoices in Commerce for Saudi Arabia
+                              href: ../commerce/localizations//mea/emea-sau-simplified-e-invoices.md
                     - name: Electronic Invoicing FAQ
                       href: localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/finance
                 - name: Electronic Invoicing (RCS)
@@ -1782,8 +1804,6 @@
                           href: localizations/denmark/e-invoicing-dk-get-started.md
                         - name: Get started with Electronic Invoicing for Egypt
                           href: localizations/mea/e-invoicing-eg-get-started.md?context=/dynamics365/context/finance
-                        - name: Get started with Electronic Invoicing for France
-                          href: localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance
                         - name: Get started with Electronic Invoicing for Indonesia
                           href: localizations/indonesia/e-invoicing-id-get-started.md?context=/dynamics365/context/finance
                         - name: Get started with Electronic invoicing for Poland
@@ -1796,8 +1816,6 @@
                           href: localizations/mea/e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
                         - name: Setup direct integration of Italian FatturaPA with SDI
                           href: localizations/italy/e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/finance
-                        - name: Use the electronic invoicing service to import vendor invoices
-                          href: localizations/global/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/finance
                     - name: Electronic Invoicing FAQ
                       href: localizations/global/e-invoicing-faq.md?context=/dynamics365/context/finance
                 - name: Tax Calculation
@@ -2328,6 +2346,8 @@
                       href: localizations/iberoamerica/ltm-chile-elec-invo-conncection.md
                     - name: Configure electronic invoice parameters for Chile
                       href: localizations/iberoamerica/ltm-chile-conf-electronic-invoice.md
+                    - name: Vendor electronic invoice import in Chile
+                      href: localizations/iberoamerica/ltm-chl-vend-e-invoice.md                      
                     - name: Generate and print the Fees certificate report
                       href: localizations/iberoamerica/ltm-chile-fees-certificate-resume.md
                     - name: Generate and print the Withholding tax book report for Chile
@@ -2624,7 +2644,7 @@
                       href: localizations/europe/emea-oioubl-standards-electronic-invoicing.md
                     - name: Forced electronic invoices generation
                       href: localizations/europe/emea-eur-forced-einvoices.md
-                    - name: Import vendor electronic invoices in PEPPOL format
+                    - name: Import vendor electronic invoices
                       href: localizations/europe/emea-peppol-import.md
                     - name: Original invoice reference (Eastern Europe)
                       href: localizations/estonia/ee-00004-original-invoice-reference.md
@@ -2864,42 +2884,6 @@
                       href: localizations/india/india.md
                     - name: Scope of the Indian localizations
                       href: localizations/india/apac-ind-scope.md
-                    - name: What's new or changed for India localization
-                      items:
-                        - name: What's new or changed in 10.0.20 - 10.0.22
-                          href: localizations/india/ind-news-letter-10-0-20-22.md
-                        - name: What's new or changed in 10.0.15 - 10.0.19
-                          href: localizations/india/ind-news-letter-10-0-15-19.md
-                        - name: What's new or changed in 10.0.14
-                          href: localizations/india/apac-ind-news-letter-10-0-14.md
-                        - name: What's new or changed in 10.0.13
-                          href: localizations/india/ind-news-letter-10-0-13.md
-                        - name: What's new or changed in 10.0.12
-                          href: localizations/india/apac-ind-news-letter-10-0-12.md
-                        - name: What's new or changed in 10.0.11
-                          href: localizations/india/apac-ind-news-letter-10-0-11.md
-                        - name: What's new or changed in 10.0.10
-                          href: localizations/india/apac-ind-news-letter-10-0-10.md
-                        - name: What's new or changed in 10.0.09
-                          href: localizations/india/apac-ind-news-letter-10-0-09.md
-                        - name: What's new or changed in 10.0.08
-                          href: localizations/india/apac-ind-news-letter-10-0-08.md
-                        - name: What's new or changed in 10.0.07
-                          href: localizations/india/apac-ind-news-letter-10-0-07.md
-                        - name: What's new or changed in 10.0.06
-                          href: localizations/india/apac-ind-news-letter-10-0-06.md
-                        - name: What's new or changed in 10.0.05
-                          href: localizations/india/apac-ind-news-letter-10-0-05.md
-                        - name: What's new or changed in 10.0.04
-                          href: localizations/india/apac-ind-news-letter-10-0-04.md
-                        - name: What's new or changed in 10.0.03
-                          href: localizations/india/apac-ind-news-letter-10-0-03.md
-                        - name: What's new or changed in 10.0.02
-                          href: localizations/india/apac-ind-news-letter-10-0-02.md
-                        - name: What's new or changed in 10.0.01
-                          href: localizations/india/apac-ind-news-letter-10-0-01.md
-                        - name: What's new or changed in 10.0.0
-                          href: localizations/india/apac-ind-news-letter-10-0-00.md
                     - name: Audit trail and edit logs for accounting software
                       href: localizations/india/apac-ind-audit-trail-edit-logs-accounting-software.md
                     - name: Electronic invoices in India
@@ -2926,8 +2910,12 @@
                                   href: dev-itpro/tax-engine-integration.md
                                 - name: Extending the Tax engine
                                   href: dev-itpro/extend-tax-engine-configurations.md
+                                - name: Extend the Tax engine configuration for slab price
+                                  href: dev-itpro/extend-tax-engine-configuration-for-slab-price.md
                                 - name: Clean up the TaxDocumentJSON table
                                   href: localizations/india/gte-clean-up-tax-document-json-table.md
+                                - name: Tips for troubleshooting India GST performance issues
+                                  href: localizations/india/apac-ind-gst-troubleshooting-performance-issue.md
                                 - name: Troubleshoot GTE
                                   href: localizations/tax-engine-trouble-shooting.md
                             - name: Master data setup
@@ -3770,7 +3758,7 @@
                       href: localizations/iberoamerica/panama.md
                     - name: Set up a legal entity and tax information for Panama
                       href: localizations/iberoamerica/ltm-set-up-legal-entity-tax-panama.md
-                    - name: Set up electronic invoicing for Panama
+                    - name: Get started with Electronic invoicing for Panama
                       href: localizations/iberoamerica/ltm-panama-ei-connec-configuration.md
                     - name: Configure electronic invoice parameters for Panama
                       href: localizations/iberoamerica/ltm-panama-elect-inv-conf.md
@@ -4468,7 +4456,9 @@
                 - name: Create business performance analytics reports
                   href: business-performance-analytics/how-to-create-and-edit-reports.md  
                 - name: Business performance analytics Excel add-in
-                  href: business-performance-analytics/bpa-excel.md     
+                  href: business-performance-analytics/bpa-excel.md 
+                - name: Generative help and guidance in Business performance analytics
+                  href: business-performance-analytics/copilot-in-business-performance-analytics.md
             - name: Extend business performance analytics
               items:             
                 - name: Extend business performance analytics in Microsoft Fabric 
@@ -5392,7 +5382,9 @@
             - name: US Payroll overview
               href: ../fin-ops-core/fin-ops/hr/localizations/usa/noam-usa-payroll.md
             - name: Deprecation of US payroll tax updates
-              href: ../fin-ops-core/fin-ops/hr/localizations/usa/noam-usa-deprecate-payroll-tax.md           
+              href: ../fin-ops-core/fin-ops/hr/localizations/usa/noam-usa-deprecate-payroll-tax.md     
+            - name: US payroll tax update deprecation FAQ
+              href: ../fin-ops-core/fin-ops/hr/localizations/usa/noam-usa-payroll-tax-deprecate-faq.md
             - name: Payroll setup
               items:
                 - name: Set up payroll for workers
@@ -5517,6 +5509,8 @@
           href: accounts-receivable/customerpagesummaryfaq.md
         - name: Workflow history summary FAQ
           href: ../fin-ops-core/fin-ops/copilot/workflow-history-summary-faq.md
+        - name: Generative help and guidance in Business performance analytics FAQ
+          href: business-performance-analytics/responsible-ai-faq.md  
     - name: Development and administration for finance and operations apps
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Supply Chain Management

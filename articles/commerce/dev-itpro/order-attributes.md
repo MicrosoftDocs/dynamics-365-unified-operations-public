@@ -1,14 +1,16 @@
 ---
 title: Define and set order attributes
-description: This article explains how to edit and set attributes values for orders directly in Commerce headquarters, the POS, and CRT.
+description: This article explains how to edit and set attributes values for orders directly in Microsoft Dynamics 365 Commerce headquarters, the POS, and CRT.
 author: josaw1
 ms.date: 05/28/2024
-ms.topic: article
+ms.topic: how-to
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: mashneer
+ms.author: asharchw
 ms.search.validFrom: 2017-10-24
+ms.custom: 
+  - bap-template
 ---
 
 # Define and set order attributes

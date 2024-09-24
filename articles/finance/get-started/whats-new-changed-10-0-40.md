@@ -17,7 +17,7 @@ ms.search.region: Global
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This article lists the features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.40. This version has a build number of 10.0.1935.5 and is available on the following schedule:
+This article lists the features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.40. This version has a build number of 10.0.1935 and is available on the following schedule:
 
 - **Preview of release:** April 2024
 - **General availability of release (self-update):** May 2024
@@ -29,7 +29,7 @@ This section contains a table that lists the features that are included in this 
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-| Cash and bank management | Bank account lifecycle management | This feature enables approval workflows for bank account activation, modification, and deactivation. It provides a bank account change history for auditing purposes. A protected field list is available to control the bank account fields that trigger the modification approval workflow. | Feature management |
+| Cash and bank management | (Preview) Bank account lifecycle management | This feature enables approval workflows for bank account activation, modification, and deactivation. It provides a bank account change history for auditing purposes. A protected field list is available to control the bank account fields that trigger the modification approval workflow. | Feature management |
 | Cash and bank management | Customer and vendor netting | This feature enables netting capability between open customer balances and open vendor balances. Customer and vendor payment journals are no longer created to settle open vendor and customer transactions. Instead, netting journals are created. This feature is generally available in Dynamics 365 Finance version 10.0.40. | Feature management |
 | Accounts receivable | Improve performance and efficiency of Sales invoice entities. | To improve the performance and efficiency of our sales invoice entities, we eliminated inefficient views and computed columns. The new entities no longer rely on inefficient views but instead fetch all columns directly from the data sources. Therefore, data retrieval is faster. | Feature management |
 | Accounts payable | Post document with distribution process splitting | This feature optimizes memory usage. To help prevent memory overflow when long invoices are handled, it splits the distribution process into individual batch tasks. | Feature management |
@@ -41,7 +41,7 @@ This section contains a table that lists the features that are included in this 
 | General ledger | Consolidation templates | Consolidation online templates let you set up the consolidation information one time and then use it every time that the consolidation process is run. The updated **Consolidate online** page now shows all consolidation runs, reruns, and reversals. To use this functionality, enable the **Consolidate online using templates** feature in Feature management. | Feature management |
 | General ledger | Reverse related journals | This feature reverses all related journals in a single step. As part of the automatic split of large journals, multiple journals can be created from one large journal. Users can now reverse all those journals at the same time. For more information, see [Reverse related journals with journals that were automatically split](../general-ledger/reverse-journal-posting.md#reverse-related-journals-with-journals-that-were-automatically-split). | |
 |Workflow |Workflow history summary|This feature displays an AI-generated summary on the **Workflow history** page. The concise summary shows the submitter, current status, due date and any comments and most recent approvals, rejections and change requests with comments. The most relevant history featured in the **Summary by copilot** fastTab helps approvers make faster decisions because they don't need to search through the history page.|Feature management |
-
+|Electronic Invoicing |E-Invoicing for Chile: ISV last-mile connector with Edicom|This feature is the last-mile integration with the Chilean Tax Authorities via the Certification Authorization Provider Edicom. It provides the required end-to-end process of the outbound flow of e-invoices submission. For more information, see: [Get started with Electronic invoicing for Chile](../localizations/iberoamerica/ltm-chile-elec-invo-conncection.md).|  |
 
 ## Feature enhancements included in this release
 
@@ -72,7 +72,7 @@ Dynamics 365 Finance version 10.0.40 includes platform updates. To learn more, s
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=932660).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=936136).
 
 
 ### Regulatory updates

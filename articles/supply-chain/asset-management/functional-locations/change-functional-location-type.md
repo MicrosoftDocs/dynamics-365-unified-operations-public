@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 10/27/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -15,7 +14,6 @@ ms.search.form:
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
 <!-- KFM: Preview until further notice -->
 
 This article explains how to change the [functional location type](../setup-for-functional-locations/functional-location-types.md) of an existing functional location.

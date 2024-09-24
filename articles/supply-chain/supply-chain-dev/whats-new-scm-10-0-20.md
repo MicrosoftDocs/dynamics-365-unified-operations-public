@@ -64,11 +64,11 @@ We have recently added or significantly updated the following help articles. The
 | Production control | [Style the production floor execution interface](../production-control/production-floor-execution-styles.md) |
 | Warehouse management | [Assign step icons and titles for the Warehouse Management mobile app](../warehousing/step-icons-titles.md)<br><br>[Deferred processing of manual inventory movement](../warehousing/deferred-processing-manual-inventory-movement.md) |
 
-## Additional resources
+## Related information
 
 ### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.20 includes platform updates. To learn more, see [Platform updates for version 10.0.20 of finance and operations apps (July 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.20 includes platform updates. Learn more in [Platform updates for version 10.0.20 of finance and operations apps (July 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md).
 
 ### Bug fixes
 

@@ -7,11 +7,7 @@ ms.topic: how-to
 ms.date: 07/11/2019  
 ms.custom:
 ms.reviewer: kamaybac   
-audience: Application User  
-ms.search.region: Global
-ms.search.validFrom: 2016-06-30
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, PurchCreateFromSalesOrder, VendAccountItemLookup, SalesTableReferences, PurchTable, PurchTablePart, PurchEditLines, PurchTable, PurchTableReferences, MCRDropShipWorkbench, SalesShippingLine
-ms.dyn365.ops.version: AX 7.0.0 
 ---
 
 # Ship orders as direct deliveries

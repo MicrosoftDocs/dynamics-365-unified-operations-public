@@ -7,10 +7,7 @@ ms.topic: article
 ms.date: 10/2/2020
 ms.custom:
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.validFrom: 2020-08-17
 ms.search.form:
-ms.dyn365.ops.version: 10.0.15
 ---
 
 # Attribute-based sales prices for constraint-based product configuration

@@ -6,11 +6,7 @@ ms.author: yufeihuang
 ms.topic: article
 ms.date: 03/23/2021
 ms.reviewer: kamaybac
-ms.search.region: Global
-ms.search.industry: Distribution
-ms.search.validFrom: 2020-06-17
 ms.search.form: InventProblemType, InventProblemTypeSetup
-ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ---
 
@@ -54,7 +50,7 @@ Here are some examples of scenarios for problem types that can be used with the 
 1. Repeat the previous step for each additional nonconformance type that you want to authorize for the problem type.
 1. Close the pages.
 
-## Additional resources
+## Related information
 
 - [Quality management overview](quality-management-processes.md)
 - [Enable quality and nonconformance management](enable-quality-management.md)

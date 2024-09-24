@@ -7,7 +7,6 @@ ms.topic: overview
 ms.date: 09/19/2023
 ms.custom: bap-template
 ms.reviewer: kamaybac
-ms.search.region: Global
 ms.search.form:
 ---
 
@@ -23,7 +22,7 @@ The Asset Management mobile app runs within the Power Apps mobile app. All platf
 
 ## Why don't I see anything when I sign in to the app?
 
-If you don't see any features in the app, you probably lack the permissions required to access them. Access to each feature is controlled by security roles assigned to your user account in Supply Chain Management. For more information, see the [Configure users and workers in Supply Chain Management](onboard-app.md#roles-workers)
+If you don't see any features in the app, you probably lack the permissions required to access them. Access to each feature is controlled by security roles assigned to your user account in Supply Chain Management. Learn more in [Configure users and workers in Supply Chain Management](onboard-app.md#roles-workers)
 
 ## What versions of Supply Chain Management support the app?
 

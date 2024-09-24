@@ -237,11 +237,11 @@ There's no limit to the number of inventory value report configurations that you
 
 ### Can I use the inventory value report to analyze the cost of an item in each warehouse?
 
-Yes. You can enable the **View** or **Total** option for each **Warehouse** dimension in the inventory value report configuration. However, the report will show values only for dimensions where the **Financial inventory** option is enabled for the storage dimension group. For other dimensions, it will show blank columns. For more information, see [Inventory value report examples and logic](inventory-value-report-examples.md).
+Yes. You can enable the **View** or **Total** option for each **Warehouse** dimension in the inventory value report configuration. However, the report will show values only for dimensions where the **Financial inventory** option is enabled for the storage dimension group. For other dimensions, it will show blank columns. Learn more in [Inventory value report examples and logic](inventory-value-report-examples.md).
 
 ### How can I view the inventory quantity as of a specific date with the weighted average?
 
-You can use the **Inventory aging** report, which includes an **Average unit cost** column that shows the value of inventory as of a specific date. For more information, see [Inventory aging report examples and logic](inventory-aging-report.md).
+You can use the **Inventory aging** report, which includes an **Average unit cost** column that shows the value of inventory as of a specific date. Learn more in [Inventory aging report examples and logic](inventory-aging-report.md).
 
 ### How can I view which receipt transactions are settled against an issue transaction?
 
@@ -249,7 +249,7 @@ You can view the settlements for an inventory transaction by selecting **Settlem
 
 ### How does the inventory value report show items that have a positive physical quantity and a negative financial value?
 
-The inventory value report separates the physical and financial amounts and quantities into their own columns. The values that are shown on the report are as of the date range that you selected when you ran the report. The level of summarization that is shown depends on the settings that you selected. If an item has transactions that have been physically received and financially issued, the quantities and values are summed independently. If you selected to view the detail level as transactions, rows for each receipt and issue are shown separately, and the physical and financial quantities and amounts, respectively, are shown. For more information, see [Inventory value report examples and logic](inventory-value-report-examples.md).
+The inventory value report separates the physical and financial amounts and quantities into their own columns. The values that are shown on the report are as of the date range that you selected when you ran the report. The level of summarization that is shown depends on the settings that you selected. If an item has transactions that have been physically received and financially issued, the quantities and values are summed independently. If you selected to view the detail level as transactions, rows for each receipt and issue are shown separately, and the physical and financial quantities and amounts, respectively, are shown. Learn more in [Inventory value report examples and logic](inventory-value-report-examples.md).
 
 ### What is the impact of storage and tracking dimension groups on the inventory value report?
 
@@ -257,7 +257,7 @@ If you enable the **Financial value** option for a dimension in a storage or tra
 
 ### Can I customize the Power BI embedded reports for costing?
 
-Yes, users who have the correct security permissions can update the report design canvas for any Power BI embedded report in Supply Chain Management. For more information, see [Customize embedded reports in analytical workspaces](../../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md).
+Yes, users who have the correct security permissions can update the report design canvas for any Power BI embedded report in Supply Chain Management. Learn more in [Customize embedded reports in analytical workspaces](../../fin-ops-core/dev-itpro/analytics/customize-analytical-workspace.md).
 
 ### Where can I view the variance analysis statement?
 
@@ -291,7 +291,7 @@ If your organization uses standard costing, you should define a strategy for def
 
 ### Can I use the Profit setting on the Cost group page to calculate sales prices?
 
-Yes, you can use the **Profit** setting on the **Cost group** page to add a percentage when sales prices are calculated by using a cost calculation. For more information, see [BOM calculations](bom-calculations.md).
+Yes, you can use the **Profit** setting on the **Cost group** page to add a percentage when sales prices are calculated by using a cost calculation. Learn more in [BOM calculations](bom-calculations.md).
 
 ## Marking
 
@@ -423,11 +423,11 @@ When you use moving average, the physical cost (receipt price) is used to calcul
 
 ### Where is the price difference for moving average presented in the general ledger?
 
-When there's a price difference between the posting of a physical update and a financial update for a receipt, the difference is posted to the main account that is specified for the **Price difference for moving average** posting type on the **Inventory** tab of the **Inventory posting profile** page. For more information, see [Moving average](moving-average.md).
+When there's a price difference between the posting of a physical update and a financial update for a receipt, the difference is posted to the main account that is specified for the **Price difference for moving average** posting type on the **Inventory** tab of the **Inventory posting profile** page. Learn more in [Moving average](moving-average.md).
 
 ### When I use moving average, what happens if there's an issue before the receipt?
 
-Typically, there might be an issue before the receipt either because you allow physical negative inventory for the item model group or because the issue is backdated. For more information, see the [Negative inventory](#negative-inventory) section of this article.
+Typically, there might be an issue before the receipt either because you allow physical negative inventory for the item model group or because the issue is backdated. Learn more in the [Negative inventory](#negative-inventory) section of this article.
 
 If you're backdating transactions, we recommend that you carefully consider your business process and operations to determine whether there's a way to avoid this scenario. If you backdate a transaction for an item that uses moving average, the system will assign the current moving average to the transaction. Later issues aren't adjusted. For more information about moving average with backdated transactions, see [Moving average](moving-average.md).
 
