@@ -2,7 +2,7 @@
 title: Shift and cash drawer management
 description: This article describes how to set up and use shifts in Microsoft Dynamics 365 Commerce point of sale (POS).
 author: josaw1
-ms.date: 05/28/2024
+ms.date: 09/24/2024
 ms.topic: article
 audience: Application User
 ms.reviewer: v-chrgriffin
@@ -110,6 +110,11 @@ Blind-closed shifts are often used to free up a register for a new user or shift
 ### Close shift
 
 This operation calculates shift totals and overage/shortage amounts, and then finalizes an active or blind-closed shift. Depending on the user's permissions, a Z report is also printed for the shift. Closed shifts can't be resumed or modified.
+
+Enabling the POS functionality profile setting "Require starting amounts and tender declaration" enforces the starting amount and tender declaration actions before the shift can be closed. 
+
+> [!NOTE]
+> Since Commerce version 10.0.40, only devices with a cash drawer configured will be subject to the "Require starting amounts and tender declaration" validation.
 
 ### Print X
 
