@@ -46,6 +46,7 @@ You can access this page from the **Receipt** action group on the **Purchase ord
 
 ## Related information
 
+- [Warehouse handling of inbound loads for purchase and inbound shipment orders](../warehousing/inbound-load-handling.md)
 - [Purchase order overview](purchase-order-overview.md)
 - [Create purchase orders](purchase-order-creation.md)
 - [Approve and confirm purchase orders](purchase-order-approval-confirmation.md)

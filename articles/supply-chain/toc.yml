@@ -2501,14 +2501,6 @@
           href: procurement/tasks/search-vendors.md
         - name: Set up permissions for ordering products on behalf of someone else
           href: procurement/tasks/set-up-permissions-ordering-products.md
-      - name: Procurement and sourcing tasks
-        items:
-        - name: Set up project resource information
-          href: procurement/tasks/set-up-project-resource-information.md
-        - name: Create and submit a project budget workflow
-          href: procurement/tasks/submit-approve-project-budget.md
-        - name: Submit and approve project budget revisions
-          href: procurement/tasks/submit-approve-project-budget-revision.md
       - name: Procurement FAQ
         href: procurement/procurement-faq.md
     - name: Product information management
