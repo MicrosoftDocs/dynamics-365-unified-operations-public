@@ -6,7 +6,6 @@ ms.author: yanansong
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
-ms.date: MM/DD/YYYY
 ms.date: 09/24/2024
   - bap-template
 ---
