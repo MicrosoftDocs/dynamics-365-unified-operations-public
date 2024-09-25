@@ -461,6 +461,13 @@ To enable QR code printing in full and simplified invoices, follow these steps.
 1. Select the **Customer invoice** report, and then, in the **Report format** field, reference the **SalesInvoice.ReportFull\_MY** or **SalesInvoice.ReportSimplified\_MY** layout.
 1. Select the **Free text invoice** report, and then, in the **Report format** field, reference the **FreeTextInvoice.ReportFull\_MY** or **FreeTextInvoice.ReportSimplified\_MY** layout.
 
+In case of project invoices do the following steps.
+
+1. Go to **Project management and accounting** \> **Setup** \> **Forms** \> **Form setup**.
+1. Select **Print management**.
+1. Select the **Project invoices without billing rules** report, and then, in the **Report format** field, refer to the **PSAProjInvoice.ReportFull_MY** or **PSAProjInvoice.ReportSimplified_MY** layout.
+1. Select the **Project invoices with billing rules** report, and then, in the **Report format** field, refer to the **PSAContractLineInvoice.ReportFull_MY** or **PSAContractLineInvoice.ReportSimplified_MY** layout.
+
 If you use self invoices, follow these steps.
 
 1. Go to **Accounts payable** \> **Setup** \> **Forms** \> **Form setup**.
