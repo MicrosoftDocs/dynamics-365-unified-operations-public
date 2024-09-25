@@ -1,5 +1,5 @@
 ---
-title: Get started with electronic invoicing for Egypt
+title: Electronic invoicing for Egypt
 description: This article explains how to get started with electronic invoicing for Egypt in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: achansoriya
 ms.author: achansoriya
@@ -13,7 +13,7 @@ ms.search.validFrom: 09/19/204
 ms.dyn365.ops.version: AX 10.0.39
 ---
 
-# Electronic invoicing for Egypt
+# Electronic invoicing in Egypt
 
 [!include [banner](../../includes/banner.md)]
 
