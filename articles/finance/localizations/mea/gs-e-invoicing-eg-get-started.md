@@ -21,6 +21,8 @@ This article provides information that will help you get started with Electronic
 
 After you configure Electronic invoicing, you can generate JSON files of electronic invoices in Egypt-specific format and submit it to the Egyptian tax authority.
 
+![Diagram of the electronic invoicing workflow in Egypt.](mea-eg-e-invoice-workflow.jpg)
+
 ## Prerequisites
 
 Before you begin the procedures in this article, complete the following prerequisites:
