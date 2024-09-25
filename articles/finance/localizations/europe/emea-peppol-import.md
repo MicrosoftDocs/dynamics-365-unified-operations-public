@@ -1,6 +1,6 @@
 ---
 title: Import vendor electronic invoices
-description: Learn how to configure and use the vendor electronic invoice import in PEPPOL-based formats in Microsoft Dynamics 365 Finance.
+description: Learn how to configure and use the vendor electronic invoices import in PEPPOL-based formats in Microsoft Dynamics 365 Finance.
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
