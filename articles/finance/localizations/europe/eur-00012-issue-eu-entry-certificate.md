@@ -26,8 +26,8 @@ To enable entry certificate management, follow these steps.
 1. Go to Accounts receivable > Setup > Accounts receivable parameters.
 1. Select the **Shipments** tab.
 1. Expand the **Entry certificate** section.
-1. Select **Yes** in the Enable entry certificate management field.
-1. Select **Yes** in the Enable entry certificate issuing field.
+1. Select **Yes** in the **Enable entry certificate management** field.
+1. Select **Yes** in the **Enable entry certificate issuing** field.
 1. Select the **Number sequences** tab.
 1. In the list, find and select the **Entry certificate** row.
 1. In the **Number sequence code** field, enter or select a value.
