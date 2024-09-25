@@ -4,10 +4,10 @@ description: Learn about enabling an EU entry certificate, configuring a custome
 author: mrolecki
 ms.author: mrolecki
 ms.topic: how-to
+ms.custom: 
+  - bap-template
 ms.date: 08/29/2018
-ms.custom:
 ms.reviewer: johnmichalak   
-audience: Application User 
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.search.validFrom: 2016-06-30
 ms.search.form: CustParameters, CustTable, SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines,  CustInvoiceJournal, CustEntryCertificateJour_W, SrsReportViewerForm  
@@ -20,62 +20,73 @@ This procedure walks you through enabling an EU entry certificate, configuring a
 
 
 ## Enable entry certificate management
+
+To enable entry certificate management, follow these steps.
+
 1. Go to Accounts receivable > Setup > Accounts receivable parameters.
-2. Click the Shipments tab.
-3. Expand the Entry certificate section.
-4. Select Yes in the Enable entry certificate management field.
-5. Select Yes in the Enable entry certificate issuing field.
-6. Click the Number sequences tab.
-7. In the list, find and select Entry certificate row.
-8. In the Number sequence code field, enter or select a value.
+1. Select the **Shipments** tab.
+1. Expand the **Entry certificate** section.
+1. Select **Yes** in the Enable entry certificate management field.
+1. Select **Yes** in the Enable entry certificate issuing field.
+1. Select the **Number sequences** tab.
+1. In the list, find and select the **Entry certificate** row.
+1. In the **Number sequence code** field, enter or select a value.
 
 ## Set up a customer
-1. Go to Accounts receivable > Customers > All customers.
-2. Use the Quick Filter to find records. For example, filter on the Account field with a value of 'DE-015'.
-3. Open customer account details.
-4. Click Edit.
-5. Expand the Invoice and delivery section.
-6. Select Yes in the Entry certificate required field.
-7. Select Yes in the Issue entry certificate field.
-8. Click Save.
+
+To set up a customer, follow these steps.
+
+1. Go to **Accounts receivable** > **Customers** > **All customers**.
+1. Use the Quick Filter to find records. For example, filter on the Account field with a value of 'DE-015'.
+1. Open the customer account details.
+1. Select **Edit**.
+1. Expand the **Invoice and delivery** section.
+1. Select **Yes** in the **Entry certificate** required field.
+1. Select **Yes** in the **Issue entry certificate** field.
+1. Select **Save**.
 
 ## Create an EU entry certificate automatically
-1. Go to Accounts receivable > Orders > All sales orders.
-2. Click New.
-3. In the Customer account field, enter or select a value.
-4. Click OK.
-5. In the Item number field, enter or select a value.
-6. Click Save.
-7. On the Action Pane, click Pick and pack.
-8. Click Post packing slip.
-9. Expand the Parameters section.
-10. In the Quantity field, select 'All'.
-11. Clear the Issue entry certificate check box.
+
+To create an EU entry certificate automatically, follow these steps.
+
+1. Go to **Accounts receivable** > **Orders** > **All sales orders**.
+1. Select **New**.
+1. In the **Customer account** field, enter or select a value.
+1. Select **OK**.
+1. In the **Item number** field, enter or select a value.
+1. Select **Save**.
+1. On the **Action Pane**, select **Pick and pack**.
+1. Select **Post packing slip**.
+1. Expand the **Parameters** section.
+1. In the **Quantity** field, select **All**.
+1. Clear the **Issue entry certificate** check box.
     * An entry certificate can be issued during packing slip posting or during order invoicing. Leave the Issue entry certificate checkbox unchecked to issue it later.  
-12. Click OK.
-13. Click OK.
-14. On the Action Pane, click Invoice.
-15. Click Invoice.
-    * Verify that the Entry certificate required and Issue entry certificate checkboxes in the Overview section are marked.  You can also select the Print entry certificate check box to allow printing of the certificate.  
-16. Click OK.
-17. Click OK.
-18. On the Action Pane, click Invoice.
-19. Click Invoice.
-20. On the Action Pane, click Invoice.
-21. Click View issued entry certificates.
-22. Click Print.
-23. Close the page.
-24. Click Change status.
-25. In the New status field, select an option.
-26. Click OK.
-27. Close the page.
+1. Select **OK**.
+1. Select **OK**.
+1. On the **Action Pane**, select **Invoice**.
+1. Select **Invoice**.
+    * Verify that the Entry certificate required and Issue entry certificate checkboxes in the Overview section are marked.  You can also select the **Print entry certificate** check box to allow printing of the certificate.  
+1. Select **OK**.
+1. Select **OK**.
+1. On the **Action Pane**, select **Invoice**.
+1. Select **Invoice**.
+1. select **View issued entry certificates**.
+1. Select **Print**.
+1. Close the page.
+1. Select **Change status**.
+1. In the **New status** field, select an option.
+1. Select **OK**.
+1. Close the page.
 
 ## Create an EU entry certificate manually
-1. On the Action Pane, click Invoice.
-2. Click Create entry certificate.
-3. Click OK.
-4. On the Action Pane, click Invoice.
-5. Click View issued entry certificates.
+
+To create an EU entry certificate manually, follow these steps.
+
+1. On the **Action Pane**, select **Invoice**.
+1. Select **Create entry certificate**.
+1. Select **OK**.
+1. On the **Action Pane**, select **Invoice**.
+1. Select **View issued entry certificates**.
 
 
 
