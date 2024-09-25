@@ -111,6 +111,11 @@ Blind-closed shifts are often used to free up a register for a new user or shift
 
 This operation calculates shift totals and overage/shortage amounts, and then finalizes an active or blind-closed shift. Depending on the user's permissions, a Z report is also printed for the shift. Closed shifts can't be resumed or modified.
 
+Enabling the **Require starting amounts and tender declaration** POS functionality profile setting enforces the starting amount and tender declaration actions before the shift can be closed. 
+
+> [!NOTE]
+> Starting with Commerce version 10.0.40, only devices with a cash drawer configured are subject to the **Require starting amounts and tender declaration** setting validation.
+
 ### Print X
 
 This operation generates and prints an X report for the current active shift.
