@@ -6,7 +6,7 @@ ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: conceptual
-ms.date: 08/21/2024
+ms.date: 09/25/2024
 ms.custom: 
   - bap-template
 ---
@@ -14,6 +14,19 @@ ms.custom:
 # What's new or changed in Demand planning
 
 This article lists new features, fixes, improvements, and known issues for each released version of Demand planning in Microsoft Dynamics 365 Supply Chain Management.
+
+## Version 1.0.0.1281
+
+### New feature introduced in version 1.0.0.1281
+
+This version adds support for *time fences*, which allow demand planning managers to establish policies that prevent planners from editing certain date ranges of a forecast. Time fences are both flexible and simple to maintain. Managers create time fence rules based on the dimensions available in each plan. For example, a single product could be set up with different time fences for each store or geographical location. Time fence rules can also apply based on each user's role. For example, a role-based time fence rule could allow managers to edit a forecast in a period that can't otherwise be edited by planners.
+
+## New fixes and improvements in version 1.0.0.1281
+
+This version of Demand planning introduces the following fixes and improvements:
+
+- Increased stability
+- Improvement to forecast error messages
 
 ## Version 1.0.0.1232
 

@@ -16,7 +16,7 @@ ms.search.form:
 
 [!include [banner](../../finance/includes/banner.md)]
 
-This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.6. This version has a build number of 10.0.234. While the general availability date is in November, the new features are available for early release in October. For more information about version 10.0.6, see [Additional resources](#related-information).
+This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.6. This version has a build number of 10.0.234. While the general availability date is in November, the new features are available for early release in October. For more information about version 10.0.6, see [Related information](#related-information).
 
 ## Product configuration models V2 data entity
 
