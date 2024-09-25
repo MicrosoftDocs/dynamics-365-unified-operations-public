@@ -1,12 +1,12 @@
 ---
 title: Import vendor electronic invoices
-description: Learn how to configure and use the vendor electronic invoice import in PEPPOL-based formats in Microsoft Dynamics 365 Finance.
+description: Learn how to configure and use the vendor electronic invoices import in PEPPOL-based formats in Microsoft Dynamics 365 Finance.
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/03/2024
+ms.date: 09/25/2024
 ms.reviewer: johnmichalak
 ms.search.region: Europe
 ms.search.validFrom: 2023-01-01
@@ -22,7 +22,7 @@ This article explains how to configure and import vendor electronic invoices in 
 The import from the following electronic invoice formats are supported:
  
  - Standard **PEPPOL** format;
- - Germany-specific **XRechnung** format.
+ - Germany-specific **XRechnung** format in the Universal Business Language (UBL) syntax.
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ Before you complete the tasks in this article, import the following or latest ve
 
 - **Invoice model** version 280
 - **Vendor Invoice Mapping to Destination** version 280.46
-- **Vendor Invoice Import** version 280.7 
+- **Vendor Invoice Import** version 280.7
 
 ## Configure parameters
 
@@ -131,6 +131,10 @@ Successfully imported vendor electronic invoices are shown in the system as pend
 > - Only the import of line-level discounts is supported.
 
 ## Learn more
+
+- Watch the video how to import vendor electronic invoices into Microsoft D365 Finance.
+
+  > [!VIDEO 2167036b-ff87-4473-9bf3-e2902cbdb21f]
 
 - [Use the electronic invoicing service to import vendor invoices](../global/e-invoicing-get-started-import-vendor-invoices.md)
 - [Supported standards for electronic invoicing in Europe](emea-oioubl-standards-electronic-invoicing.md)
