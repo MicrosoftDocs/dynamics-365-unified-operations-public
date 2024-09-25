@@ -30,13 +30,14 @@ Before you begin the procedures in this article, complete the following prerequi
 - Import the **Egyptian electronic invoice (EG)** version **20** or later, electronic invoicing features from the repository. For more information, see [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 - Configure Azure file share as described in [Configure Azure file share](../global/gs-e-invoicing-create-azure-file-share.md).
 
-- Egyptian tax authority provides this certificate with the required key only as a hardware token device. Which cannot be added to the Azure key vault. Dynamics 365 Finance electronic invoicing provides capability of writing and reading files to/from Azure file share, which can be configured to enable external signing of electronic documents. For more information, go to the Egyptian tax authority website by using the link that is provided in [Egyptian e-invoicing SDK](https://sdk.invoicing.eta.gov.eg/faq/).
+> [!NOTE]
+> Egyptian tax authorities provide the certificate for digital signing with the required key only as a hardware token device which cannot be added to the Azure key vault. Microsoft Dynamics 365 Finance provides the capability of writing and reading files to/from Azure file share, which can be configured to enable external signing of electronic documents. For more information, go to the Egyptian tax authority website by using the link that is provided in [Egyptian e-invoicing SDK](https://sdk.invoicing.eta.gov.eg/faq/).
 
 ## Country/region-specific configuration for the Egyptian electronic invoice (EG) feature
 
 Some of the parameters from the **Egyptian electronic invoice (EG)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, review the default values, and update them as required so that they better reflect your business operation.
 
-1. Import the latest version of the **Egyptian electronic invoice (EG)** Globalization feature as described in [Import features from the Global repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+1. Make sure that the latest version of the **Egyptian electronic invoice (EG)** Globalization feature is imported as described in [Import features from the Global repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 2. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
 3. On the **Versions** tab, verify that the **Draft** version is selected.
 4. On the **Feature parameters** tab, specify values for the following connection and integration parameters that are required for interoperation with Egyptian tax authority services:
@@ -44,8 +45,8 @@ Some of the parameters from the **Egyptian electronic invoice (EG)** electronic 
     - **EgyptianETAClientID** – Enter the client ID provided by reglatory authority.
     - **EgyptianETAClientSecret** – Enter the secret provided by reglatory authority.
     - **EgyptianETAConnectionString** – Enter the connection string for Azure file share provisioned earlier using [Configure Azure file share](../global/gs-e-invoicing-create-azure-file-share.md).
-    - **EgyptianETASendToFileShareDirectory** – Enter the name of Azure file share directory to write digital invoices for signing.
-    - **EgyptianETAGetFromAzureFileShare** – Enter the name of Azure file share directory to read signed digital invoices.
+    - **EgyptianETASendToFileShareDirectory** – Enter the name of Azure file share directory to write invoices for digital signing.
+    - **EgyptianETAGetFromAzureFileShare** – Enter the name of Azure file share directory to read digitally signed invoices from.
     - **EgyptianETALoginserviceURL** – Egyptian tax authority login service url. Microsoft shipped feature points to pre-prod endpoint. 
     - **EgyptianETAWebserviceURL** – Egyptian tax authority web service url. Microsoft shipped feature points to pre-prod endpoint.
     
