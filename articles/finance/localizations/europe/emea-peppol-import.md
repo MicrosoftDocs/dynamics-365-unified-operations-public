@@ -6,7 +6,7 @@ ms.author: ikondratenko
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 09/03/2024
+ms.date: 09/25/2024
 ms.reviewer: johnmichalak
 ms.search.region: Europe
 ms.search.validFrom: 2023-01-01
