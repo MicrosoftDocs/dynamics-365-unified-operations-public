@@ -73,32 +73,23 @@ To configure electronic document parameters, follow these steps.
 
 > [!NOTE]
 > After you import the **Egyptian electronic invoice (EG)** electronic invoicing feature, electronic documents are configured by default. Follow the remaining steps of this procedure if you must make changes. Otherwise, consider this section informational only.
-> 
-> Some electronic reporting configurations might contain a predefined set of application-specific parameters for Finance or Supply Chain Management. In this case, you should verify that the data is correct. Otherwise, manually set the parameters.
 
-1. Find the copy of the **Egyptian electronic invoice (EG)** Globalization feature that you created.
-2. On the **Versions** tab, verify that the **Draft** version is selected.
-3. On the **Setups** tab, select **Application setup**.
-4. In the **Connected applications** field, select the application where you want to deploy the parameters.
-5. On the **Electronic document types** page, select **Add** to create a record.
-6. In the **Table name** field, add **CustInvoiceJour**.
-7. In the **Context** field, add a reference to the **Customer invoice context** mapping name. The configuration is **Customer invoice context model**.
-8. In the **Electronic document mapping** field, add a reference to the **Customer invoice** mapping name. The configuration is **Invoice model mapping**.
-9. Select **Save**.
-10. On **Response types** page, select **Add**.
-11. In the **Response type** field, enter **Response**.
-12. In the **Description** field, enter **Process response**.
-13. In the **Submission status** field, select **Pending**.
-14. In the **Model mapping** field, select **Response message import**. The configuration is **Egypt response message import (EG)**.
-15. Select **Save**.
-16. Select **Add**.
-17. In the **Response type** field, enter **ResponseData**.
-18. In the **Description** field, enter **Process response data**.
-19. In the **Submission status** field, select **Pending**.
-20. In the **Data entity name** field, select **SalesInvoiceHeaderV2Entity**.
-21. In the **Model mapping** field, select **Response data import**. The configuration is **Egypt response data import format (EG)**.
-22. Select **Save**, and close the page.
-23. Close the page.
+1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+1. On the **Electronic document** tab, add records for the **Customer Invoice journal** and **Project invoice** table names.
+1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
+1. For each table name, select **Response types**, and do the following steps:
+ - On the **Response types** page, select **Add**.
+ - In the **Response type** field, enter **Response**.
+ - In the **Description** field, enter **Process response**.
+ - In the **Submission status** field, select **Pending**.
+ - In the **Model mapping** field, select **Response message import**. The configuration is **Egypt response message import (EG)**.
+ - Select **Add** to create a new response type.
+ - In the **Response type** field, enter **ResponseData**.
+ - In the **Description** field, enter **Process response data**.
+ - In the **Submission status** field, select **Pending**.
+ - In the **Data entity name** field, select **SalesInvoiceHeaderV2Entity**.
+ - In the **Model mapping** field, select **Response data import**. The configuration is **Egypt response data import format (EG)**.
+ - Select **Save**, and close the page.
 
 To deploy a feature to the service environment and an application setup to the Finance or Supply Chain Management connected application, see [Complete, publish, and deploy a Globalization feature](../global/e-invoicing-complete-publish-deploy-globalization-feature.md)
 
