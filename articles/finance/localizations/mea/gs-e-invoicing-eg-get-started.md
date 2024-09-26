@@ -91,9 +91,9 @@ To configure electronic document parameters, follow these steps.
  - In the **Model mapping** field, select **Response data import**. The configuration is **Egypt response data import format (EG)**.
  - Select **Save**, and close the page.
 
-## Business data configuration
+## Finance business data configuration
 
-- [Customer electronic invoices in Egypt](emea-egy-e-invoices.md)
+Follow the configuration steps in [Customer electronic invoices in Egypt](emea-egy-e-invoices.md)
 
 ## Issue electronic invoices
 
