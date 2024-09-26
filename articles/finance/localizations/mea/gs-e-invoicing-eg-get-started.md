@@ -33,11 +33,11 @@ Before you begin the procedures in this article, complete the following prerequi
 - Configure Azure file share as described in [Configure Azure file share](../global/gs-e-invoicing-create-azure-file-share.md).
 
 > [!NOTE]
-> Egyptian tax authorities provide the certificate for digital signing with the required key only as a hardware token device which cannot be added to the Azure key vault. Microsoft Dynamics 365 Finance provides the capability of writing and reading files to/from Azure file share, which can be configured to enable external signing of electronic documents. For more information, go to the Egyptian tax authority website by using the link that is provided in [Egyptian e-invoicing SDK](https://sdk.invoicing.eta.gov.eg/faq/).
+> Egyptian authorities provide the certificate for digital signing with the required key only as a hardware token device which cannot be added to the Azure key vault. Microsoft Dynamics 365 Finance provides the capability of writing and reading files to/from Azure file share, which can be configured to enable external signing of electronic documents. For more information, go to the Egyptian tax authority website by using the link that is provided in [Egyptian e-invoicing SDK](https://sdk.invoicing.eta.gov.eg/faq/).
 
-## Country/region-specific configuration for the Egyptian electronic invoice (EG) feature
+## Configure the electronic invoicing feature
 
-Some of the parameters from the **Egyptian electronic invoice (EG)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service environment, review the default values, and update them as required so that they better reflect your business operation.
+Some of the parameters from the **Egyptian electronic invoice (EG)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature, review the default values, and update them as required so that they better reflect your business operation.
 
 1. Make sure that the latest version of the **Egyptian electronic invoice (EG)** Globalization feature is imported as described in [Import features from the Global repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 2. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
@@ -61,22 +61,20 @@ Some of the parameters from the **Egyptian electronic invoice (EG)** electronic 
 > [!NOTE]
 > Since external signing is involved, feature published by Microsoft will continue to check the availability of signed invoice repeteadly until a maximum limit is reached. To re-configure retry action you configure the feature setup as follows:
 >
-> On the **Setups** tab, select **Sales invoice** or **Project invoice** depending on the scenario. Click **edit**.
->
-> Pipeline action **Get from Azure file share**, configure **Retry parameters**.
+> On the **Setups** tab, select **Sales invoice** or **Project invoice** depending on the scenario and click **Edit**.
+> On the **Processing pipeline** tab, select the **Get from Azure file share** action, and configure **Retry parameters**.
 
 
-## Country/region-specific configuration for the Egyptian electronic invoice (EG) application setup
+## Configure electronic document parameters
 
-There are parameters that must be set up in your Finance or Supply Chain Management environment. You can complete this setup in either of two places:
+To configure electronic document parameters, follow these steps.
 
-- Directly in your Finance or Supply Chain Management environment. For more information, see [Setup Electronic Invoicing parameters](../global/e-invoicing-set-up-parameters.md).
-- In Globalization studio. In the scope of electronic invoicing feature setup, you can define all parameters and then deploy them directly to your Finance or Supply Chain Management environment when you deploy the electronic invoicing feature.
-
-For both options, the parameters are the same. If you're setting up your first feature in the Electronic Invoicing service, we recommend that you follow these steps to set up the parameters in Globalization studio and then deploy them to your connected application.
+1. Make sure that the country/region-specific Electronic reporting (ER) configurations for the document context and electronic document model mapping that are required for Egypt are imported. For more information, see [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
 > [!NOTE]
-> Some electronic invoicing feature versions might contain a predefined set of application-specific parameters for Finance or Supply Chain Management. In this case, you should verify that the data is correct. Otherwise, manually set the parameters.
+> After you import the **Egyptian electronic invoice (EG)** electronic invoicing feature, electronic documents are configured by default. Follow the remaining steps of this procedure if you must make changes. Otherwise, consider this section informational only.
+> 
+> Some electronic reporting configurations might contain a predefined set of application-specific parameters for Finance or Supply Chain Management. In this case, you should verify that the data is correct. Otherwise, manually set the parameters.
 
 1. Find the copy of the **Egyptian electronic invoice (EG)** Globalization feature that you created.
 2. On the **Versions** tab, verify that the **Draft** version is selected.
