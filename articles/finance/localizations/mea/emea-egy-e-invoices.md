@@ -20,7 +20,7 @@ ms.dyn365.ops.version: 10.0.17
 
 According to Egyptian legal requirements, invoices that are issued for customers must be submitted to the Tax authority in an electronic format. Electronic invoice submission requires the following two-part system configuration:
 
-1. **Electronic invoicing add-in** configuration. For more information, see [Get started with the Electronic invoicing add-in for Egypt](e-invoicing-eg-get-started.md).
+1. **Electronic invoicing add-in** configuration. For more information, see [Electronic invoicing in Egypt](gs-e-invoicing-eg-get-started.md).
 2. **Microsoft Dynamics 365 Finance** configuration, which is covered in this article.
 
 ## Prerequisites
@@ -137,13 +137,15 @@ According to Egyptian legal requirements, products on electronic invoices must u
 > [!NOTE]
 > If neither GTIN codes nor GPC codes are defined for products, internal product numbers will be used on electronic invoices. If no products or services are involved in invoicing, for example, free text invoices, or various operations in project invoices, line descriptions will be used.
 
-## Submit electronic invoices
+## Issue electronic invoices
 
-When you've completed all the required configuration steps, you can submit electronic invoices. For more information about how to submit electronic invoices, see [Issue electronic invoices in Finance and Supply chain management](../e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
+After you complete all the required configuration steps, you can generate and submit electronic invoices for posted invoices by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**. For more information about how to generate electronic invoices, see [Submit electronic documents](../global/e-invoicing-submit-electronic-documents.md).
+
+You can inquire about the results of a submission by going to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log** and selecting the required document type. For more information, see [Work with Electronic document submission log](../global/e-invoicing-submission-log.md).
 
 ## Related topics
 
-- [Get started with the Electronic invoicing add-in for Egypt](e-invoicing-eg-get-started.md)
+- [Electronic invoicing in Egypt](gs-e-invoicing-eg-get-started.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
