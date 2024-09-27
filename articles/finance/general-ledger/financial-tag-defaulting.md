@@ -33,6 +33,8 @@ Financial tag rules were introduced in the 10.0.42 release of Dynamics 365 Finan
 
 To use the functionality, you must enable the **Financial tag defaulting rules** feature in the **Feature management** workspace. The feature can be disabled at any time. If the feature is enabled but later disabled, any rules defined for financial tags will be maintained in the database. However, they'll no longer be used on any transactions in Dynamics 365 Finance.
 
+In addition at least one [Financial tags](financial-tag.md) must be setup in the company you are creating a rule in before the financial tag rules form can be used.
+
 ## Creating financial tag rules
 
 Before you create financial tags rules, note the following points:
@@ -47,10 +49,11 @@ Follow these steps to create a financial tag rule.
 1. Go to **General ledger \> Chart of accounts \> Financial tags \> Financial tags**.
 2. Select **New** to create a financial tag
 
-## Entering financial tag values on transactions
+## Understanding how financial tag values can be set on transactions
 
-After one financial tag is activated, the tags will be available for entry on each transaction that supports the feature.
 
+*fix everything that are examples below here*
+  
 ### Journals and lines
 
 [![Financial tags entered on the journal batch header.](./media/Financial-tag1.png)](./media/Financial-tag1.png)
