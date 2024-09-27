@@ -48,7 +48,7 @@ To enable communication between Electronic invoicing and Finance or Supply Chain
 
 
 > [!NOTE]
-> To work with Globalization features, feature **E-Invoicing designer workspace** should be enabled by default. However, there is a delay of 45 minutes from the time of addin installation for this feature to be enabled.
+> To work with Globalization features, feature **E-Invoicing designer workspace** should be enabled by default. However, there is a delay of 45 minutes from the time of electronic invoicing service addin installation for this feature to be enabled.
 
 ## Service environment configuration
 
