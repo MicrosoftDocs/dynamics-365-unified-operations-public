@@ -44,7 +44,7 @@ The Async feature public preview is available on public clouds across all region
 Dual-write async feature has two key functionalities.  
 Authoring - Helps define the table maps which should be part of asynchronous data movement. 
 
-### Initial set up 
+### Initial setup 
 
 1. In Dynamics 365 finance and operations, go to **Data Management** > **Dual-write** > **Integration jobs**.
 2. Create a new integration job.
@@ -53,10 +53,10 @@ Authoring - Helps define the table maps which should be part of asynchronous dat
 5. Click **Start** to initiate the async mode. It could take a few minutes. The status of the job indicates **Active** when it's ready.
 6. Select **Stop** to stop the async process.  
 
-### Modification of the initial set up 
-There are times when the table groups need to be changed or the sequence of execution need to be updated within a table group to ensure that the integrity of the relationships is maintained. For example, the parent should be above the child table. 
+### Modification of the initial setup 
+There are times when the table groups need to be changed or the sequence of execution need to be updated within a table group to maintain the integrity of the relationships. For example, the parent should be above the child table. 
 
-To modify the initial set up, follow these steps: 
+To modify the initial setup, follow these steps: 
 1. Select the group and stop the Async job.
 2. Select the table group.
 3. Update the table map sequence as required.
