@@ -46,6 +46,10 @@ To enable communication between Electronic invoicing and Finance or Supply Chain
 1. In the **Feature management** workspace, on the **All** tab, search for the **Electronic invoicing integration** feature. If this feature doesn't appear on the page, select **Check for updates**.
 2. Select the feature, and then select **Enable now**.
 
+
+> [!NOTE]
+> To work with Globalization features, feature **E-Invoicing designer workspace** should be enabled by default. However, there is a delay of 45 minutes from the time of addin installation for this feature to be enabled.
+
 ## Service environment configuration
 
 > [!NOTE]
