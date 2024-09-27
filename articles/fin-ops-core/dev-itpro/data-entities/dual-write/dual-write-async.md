@@ -30,7 +30,7 @@ Dual-write Async supports the later business scenarios by adding a new layer of 
  - Avoids the real time synchronization limits. For example, transaction timeouts and transaction size limits. 
 
  
-In the era of low code no code approach, Dual-write Async makes it simple to manage your data integration, by allowing data synchronization to scale for application scenarios that support eventual consistency. 
+In the era of low code no code approach, Dual-write Async makes it simple to manage data integration by allowing data synchronization to scale for application scenarios that support eventual consistency. 
 Dual-write Async mode is recommended for entities that have sizeable peak volumes and data ingestion is driven by background processes, and don't need immediate feedback for any business operation. Based on the application entity, a near real time synchronization decouples any bi-directional data sync. This paves the way for higher level of application customizations, without negatively impacting the live application.  
 
  
