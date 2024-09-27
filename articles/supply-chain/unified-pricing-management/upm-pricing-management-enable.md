@@ -18,7 +18,7 @@ ms.search.form:
 
 ## Prerequisites
 
-To use the Unified pricing management module, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.33 or later.
+To use the Unified pricing management module, you must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.41 or later.
 
 ## Feature management
 
