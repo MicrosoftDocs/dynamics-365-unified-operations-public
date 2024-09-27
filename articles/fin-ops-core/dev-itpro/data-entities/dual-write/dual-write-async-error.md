@@ -1,6 +1,6 @@
 ---
-title: Set up and manage errors in dual-write async in Dynamics 365 finance and operations apps (preview)
-description: Learn about how to set up and manage errors in dual-write async in Dynamics 365 finance and operations apps.
+title: Manage errors in dual-write async in finance and operations apps (preview)
+description: Learn how to set up error handling and manage errors in dual-write async in Microsoft Dynamics 365 finance and operations apps.
 author: pnghub
 ms.author: gned
 ms.topic: conceptual
@@ -9,28 +9,31 @@ ms.custom:
 ms.reviewer: twheeloc
 ---
 
-# Set up and manage errors in dual-write async in Dynamics 365 finance and operations apps (preview)
+# Manage errors in dual-write async in finance and operations apps (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to set up and manage errors in dual-write async in Dynamics 365 finance and operations apps.
+This article explains how to set up error handling and manage errors in dual-write async in Microsoft Dynamics 365 finance and operations apps.
 
->[Important!]
-> This is a preview feature.
-> Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> [!IMPORTANT]
+> This feature is a preview feature. Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release, so that customers can get early access and provide feedback.
 
-## Centralized error handling and troubleshooting 
-With all data sync processes, there's a need to manage and troubleshoot failures encountered during data sync. Dual-write async provides an easy-to-use self-service dashboard for any data synchronization failures. 
- - The synch errors tab provides details of the errors if applicable.
- - Filter by datetime, entity and data source.
- - Ability to retry or dismiss the error conditions based on the filter conditions. The retry and dismiss functionality only works when the integration job for Dual-write synch is active.
-      - Retry - Allows users to retry the selected records based on the filter conditions provided.  
-      - Dismiss - Allows users to remove the records from the error queue forever. After dismissed, records are no longer available for reporting or retry.  
+## Centralized error handling and troubleshooting
 
-### Limits 
-There are limits for requests that can be created for retry or for dismiss.  
- - Number of requests - After a request is submitted by the user, the reconciliation takes place in background. The time for reconciliation depends on the data movement volume and complexity of the process.
-However, the user can pick a different set of records for newer requests. These requests are queued and executed in order of request creation. A maximum of five requests can be queued for an integration job.
- - Number of records per request - Each request can process a maximum of 10,000 records. This avoids long reconciliations that can lead to longer lead times for processing other requests.  
+For all data synchronization processes, you must be able to manage and troubleshoot any failures that occur during data synchronization. Dual-write async provides an easy-to-use self-service dashboard that provides centralized error handling and troubleshooting for data synchronization failures.
+
+- The **Synch errors** tab provides details of the errors, as applicable.
+- You can filter by date/time, entity, and data source.
+- You can retry or dismiss the error conditions, based on the filter criteria. The retry and dismiss functionality works only when the integration job for dual-write synchronization is active.
+
+    - **Retry** – Users can retry selected records, based on the specified filter criteria.
+    - **Dismiss** – Users can permanently remove records from the error queue. After records are dismissed, they are no longer available for reporting or retries.
+
+## Limits
+
+There are limits on the requests that can be created for the retry or dismiss functionality.
+
+- **Number of requests** – After a user submits a request, reconciliation occurs in the background. The time that is required for reconciliation depends on the volume of the data movement and the complexity of the process. However, the user can select a different set of records for newer requests. Those requests are queued and run in the order of request creation. A maximum of five requests can be queued for an integration job.
+- **Number of records per request** – Each request can process a maximum of 10,000 records. This limit helps prevent long reconciliations that can lead to longer lead times for the processing of other requests.
