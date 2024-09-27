@@ -37,7 +37,7 @@ To use the functionality, you must enable the **Financial tag defaulting rules**
 
 Before you create financial tags rules, note the following points:
 - System rules already exist to mimic the behavior already running for documets.  In journal entry, tag header values will be copied to the account tag field, and account tag values will be copied to the offset account tag field by these system rules. You may enable or disable these as needed, but you cannot remove them from the system or modify them in any way.
-- [Power Fx](https://learn.microsoft.com/en-us/power-platform/power-fx/overview.md) us the language used for defining and executing the financial tag rules. You may want to spend some time getting familiar with the [formulas](https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview.md) available, however not all will be supported for Dynamics 365 Finance.
+- [Power Fx](https://learn.microsoft.com/en-us/power-platform/power-fx/overview) us the language used for defining and executing the financial tag rules. You may want to spend some time getting familiar with the [formulas](https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview) available, however not all will be supported for Dynamics 365 Finance.
 - 
 
 ### Create a financial tag rule
