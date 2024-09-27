@@ -33,16 +33,22 @@ Dual-write Async supports the later business scenarios by adding a new layer of 
 In the era of low code no code approach, Dual-write Async makes it simple to manage data integration by allowing data synchronization to scale for application scenarios that support eventual consistency. 
 Dual-write Async mode is recommended for entities that have sizeable peak volumes and data ingestion is driven by background processes, and don't need immediate feedback for any business operation. Based on the application entity, a near real time synchronization decouples any bi-directional data sync. This paves the way for higher level of application customizations, without negatively impacting the live application.  
 
+
+Dual-write async feature has two key functionalities:  
+Authoring - Define the table maps which should be part of asynchronous data movement. 
+Error management - Manage and troubleshoot failures encountered during data sync.
+
  
 ### Prerequisites for Async feature 
 The Async feature public preview is available on public clouds across all regions currently. To enable the feature, the following are needed:  
  - Dynamics 365 finance and operations platform update (PU) 64 (10.0.40 with latest quality updates) and later. The application foundation version greater than version 7.0.7425.0.
  - Minimum Dual-write Core solution version 1.0.24093.1. 
 
-### How it works 
-
 Dual-write async feature has two key functionalities.  
 Authoring - Helps define the table maps which should be part of asynchronous data movement. 
+Error management - 
+
+
 
 ### Initial setup 
 
