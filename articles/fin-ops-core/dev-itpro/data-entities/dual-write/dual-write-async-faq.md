@@ -1,5 +1,5 @@
 ---
-title: Dual-write Async FAQ Dynamics 365 finance and operations apps
+title: Dual-write Async FAQ Dynamics 365 finance and operations apps (preview)
 description: Learn about how to set up and manage errors in dual-write async in Dynamics 365 finance and operations apps.
 author: pnghub
 ms.author: gned
@@ -9,11 +9,17 @@ ms.custom:
 ms.reviewer: twheeloc
 ---
 
-# Set up and manage errors in dual-write async in Dynamics 365 finance and operations apps
+# Set up and manage errors in dual-write async in Dynamics 365 finance and operations apps (preview)
+
+[This article is prerelease documentation and is subject to change.]
 
 [!include [banner](../../includes/banner.md)]
 
 This article provides answers to frequently asked questions about Dual-write async in Dynamics 365 finance and operations.
+
+>[Important!]
+> This is a preview feature.
+> Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
 ## What does eventual consistency mean in the context of Async mode? 
 
