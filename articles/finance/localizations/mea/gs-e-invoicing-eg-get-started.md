@@ -56,13 +56,14 @@ Some of the parameters from the **Egyptian electronic invoice (EG)** electronic 
 
       ![Screenshot that shows the Feature parameters tab configured for the Globalization feature for Egypt.](../media/eg-e-invoice-glob-feature-parameters.png)
 
-5. Complete and deploy the **Egyptian electronic invoice (EG)** feature to the service. For more information, see [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
-
 > [!NOTE]
-> Since external signing is involved, feature published by Microsoft will continue to check the availability of signed invoice repeteadly until a maximum limit is reached. To re-configure retry action you configure the feature setup as follows:
->
-> On the **Setups** tab, select **Sales invoice** or **Project invoice** depending on the scenario and click **Edit**.
-> On the **Processing pipeline** tab, select the **Get from Azure file share** action, and configure **Retry parameters**.
+> Since external signing is involved, feature published by Microsoft will continue to check the availability of signed invoice repeteadly until a maximum limit is reached. In required, you can re-configure retry parameters as shown in the next step.
+
+5. To re-configure retry parameters, go to the **Setups** tab, select the **Sales invoice** or the **Project invoice** setup depending on the scenario and click **Edit**. On the **Processing pipeline** tab, select the **Get from Azure file share** action, then in the **Retry parameters** section, configure the required values.
+
+![Screenshot that shows retry parameters for the Globalization feature for Egypt.](mea-eg-e-invoice-retry.jpg)
+
+6. Complete and deploy the **Egyptian electronic invoice (EG)** feature to the service. For more information, see [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 
 ## Configure electronic document parameters
