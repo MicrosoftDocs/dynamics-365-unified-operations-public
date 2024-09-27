@@ -78,18 +78,16 @@ To configure electronic document parameters, follow these steps.
 1. On the **Electronic document** tab, add records for the **Customer Invoice journal** and **Project invoice** table names.
 1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
 1. For each table name, select **Response types**, and do the following steps:
- - On the **Response types** page, select **Add**.
- - In the **Response type** field, enter **Response**.
- - In the **Description** field, enter **Process response**.
- - In the **Submission status** field, select **Pending**.
- - In the **Model mapping** field, select **Response message import**. The configuration is **Egypt response message import (EG)**.
- - Select **Add** to create a new response type.
- - In the **Response type** field, enter **ResponseData**.
- - In the **Description** field, enter **Process response data**.
- - In the **Submission status** field, select **Pending**.
- - In the **Data entity name** field, select **SalesInvoiceHeaderV2Entity**.
- - In the **Model mapping** field, select **Response data import**. The configuration is **Egypt response data import format (EG)**.
- - Select **Save**, and close the page.
+   
+   - On the **Response types** page, select **Add** to create a new response type.
+   - In the **Response type** field, enter **ResponseData**.
+   - In the **Description** field, enter **Process response data**.
+   - In the **Submission status** field, select **Pending**.
+   - In the **Data entity name** field, select **SalesInvoiceHeaderV2Entity**.
+   - In the **Model mapping** field, select **Response data import**. The configuration is **Egypt response data import format (EG)**.
+   - Select **Save**, and close the page.
+     
+1. Close the page.
 
 ## Finance business data configuration
 
