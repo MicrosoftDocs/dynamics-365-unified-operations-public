@@ -72,18 +72,18 @@ To configure electronic document parameters, follow these steps.
 
 1. Make sure that the country/region-specific Electronic reporting (ER) configurations for the document context and electronic document model mapping that are required for Egypt are imported. For more information, see [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
-1. Additionally to the ER configurations mentioned in the stpe 1, import the Egypt-specific configuration from the repository: **Egypt response data import format (EG)**. For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+2. Additionally to the ER configurations mentioned in step 1, import the Egypt-specific configuration from the repository: **Egypt response data import format (EG)**. For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
 > [!NOTE]
 > After you import the **Egyptian electronic invoice (EG)** electronic invoicing feature, electronic documents are configured by default. Follow the remaining steps of this procedure if you must make changes. Otherwise, consider this section informational only.
 
-1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-1. On the **Electronic document** tab, add records for the **Customer Invoice journal** and **Project invoice** table names.
-1. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
+3. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
+4. On the **Electronic document** tab, add records for the **Customer Invoice journal** and **Project invoice** table names.
+5. For each table name, set the **Document context** and **Electronic document model mapping** fields in accordance with step 1.
 
 ![Screenshot electronic documents configuration for Egypt.](mea-eg-e-invoice-documents.jpg)
    
-1. For each table name, select **Response types**, and do the following steps:
+6. For each table name, select **Response types**, and do the following steps:
    
    - On the **Response types** page, select **Add** to create a new response type.
    - In the **Response type** field, enter **ResponseData**.
@@ -91,9 +91,9 @@ To configure electronic document parameters, follow these steps.
    - In the **Submission status** field, select **Pending**.
    - In the **Data entity name** field, select **SalesInvoiceHeaderV2Entity**.
    - In the **Model mapping** field, select **Response data import**. The configuration is **Egypt response data import format (EG)**.
-   - Select **Save**, and close the page.
+   - Select **Save**, and close the **Response types** page.
      
-1. Close the page.
+7. Select **Save**, and close the **Electronic document parameters** page.
 
 ## Finance business data configuration
 
