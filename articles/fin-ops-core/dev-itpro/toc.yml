@@ -1392,6 +1392,7 @@ items:
               - name: Centralized error management
                 href: data-entities/dual-write/dual-write-async-error.md
               - name: Dual-write Async FAQ  
+                href: data-entities/dual-write/dual-write-async-faq.md
       - name: Virtual entities
         items:
         - name: Virtual entities overview
