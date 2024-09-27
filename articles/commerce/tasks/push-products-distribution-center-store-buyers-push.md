@@ -1,31 +1,23 @@
 --- 
-# required metadata 
- 
 title: Push products from distribution center to store using buyer's push
-description: This procedure walks through the steps to create and process a Buyer´s push to distribute products from one location to one or many stores. 
+description: This procedure walks through the steps to create and process a buyer's push to distribute products from one location to one or many stores in Microsoft Dynamics 365 Commerce. 
 author: BrianShook
 ms.date: 08/29/2018
 ms.topic: how-to 
- 
-# optional metadata 
- 
 ms.search.form: RetailBuyersPush, InventLocationIdLookup, InventItemIdLookupSimple, RetailReplenishmentTreeLookup   
 audience: Application User 
-# ms.devlang:  
-ms.reviewer: josaw
-# ms.tgt_pltfrm:  
-# ms.custom:  
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: brshoo
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.custom: 
+  - bap-template
 ---
 # Push products from distribution center to store using buyer's push
 
 [!include [banner](../includes/banner.md)]
 
-This procedure walks through the steps to create and process a Buyer´s push to distribute products from one location to one or many stores. The user can define multiple configurations and have the system suggest how to distribute the products, or manually enter where the products are distributed to and how much gets distributed to each store. This procedure doesn't include setup of data that can be used in the Buyer´s push, such as replenishment rules, organizational hierarchies, and store weights. This procedure uses the USRT demo company.
+This procedure walks through the steps to create and process a buyer's push to distribute products from one location to one or many stores in Microsoft Dynamics 365 Commerce. The user can define multiple configurations and have the system suggest how to distribute the products, or manually enter where the products are distributed to and how much gets distributed to each store. This procedure doesn't include setup of data that can be used in the Buyer´s push, such as replenishment rules, organizational hierarchies, and store weights. This procedure uses the USRT demo company.
 
 1. Go to Buyer's push.
 2. Click New.

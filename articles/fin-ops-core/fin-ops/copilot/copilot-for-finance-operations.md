@@ -36,6 +36,7 @@ The following Copilot features are currently available in finance and operations
 
     - [Chat with finance and operations data on Microsoft 365 Copilot](../../dev-itpro/m365-copilot/chat-with-fno-data-on-m365copilot.md)
     - [Generative help and guidance with Copilot](copliot-generative-help.md)
+    - [Workflow history summary](../organization-administration/workflow-history-summary.md)
 
 - For Dynamics 365 Commerce:
 
@@ -49,8 +50,7 @@ The following Copilot features are currently available in finance and operations
 
     - [Collections coordinator summary](../../../finance/accounts-receivable/CollectionsCoordinatorSummary.md)
     - [Customer page summary](../../../finance/accounts-receivable/CustomerPageSummary.md)
-    - [Workflow history summary](../organization-administration/workflow-history-summary.md)
- 
+
 - For Dynamics 365 Project Operations:
 
     - [Copilot for project overview](/dynamics365/project-operations/project-management/copilot-features)
@@ -62,6 +62,7 @@ The following Copilot features are currently available in finance and operations
     - [Analyze demand plans with Copilot (preview)](../../../supply-chain/demand-planning/demand-planning-copilot.md)
     - [Inquire into inventory with Copilot (preview)](../../../supply-chain/inventory/inventory-visibility-copilot-api.md)
     - [Review and accept changes to confirmed purchase orders](../../../supply-chain/procurement/purchase-order-changes-after-confirmation.md)
+    - [Workload insights with Copilot in the Warehouse Management mobile app](../../../supply-chain/warehousing/warehouse-management-mobile-app-insights.md)
 
 ## Responsible AI
 

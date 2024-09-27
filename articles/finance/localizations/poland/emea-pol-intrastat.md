@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 07/11/2024
+ms.date: 09/23/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ---
@@ -111,7 +111,7 @@ You must create two registration types for company codes: one for the VAT ID (NI
 1. Go to **Tax** > **Setup** > **Foreign trade parameters**.
 2. On the **Intrastat** tab, on the **Electronic reporting** FastTab, in the **File format mapping** field, select **Intrastat (PL)**.
 3. In the **Report format mapping** field, select **Intrastat report**.
-4. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
+4. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**. The **Category hierarchy type** of the **Category hierarchy** you select in the **Category hierarchy** field must be set to the **Commodity code hierarchy** on the **Category hierarchy role associations** page. (**Modules** \> **Product information management** \> **Setup** \> **Categories and attributes** \> **Category hierarchy**)
 5. In the **Transaction code** field, select the transaction code for property transfers. You use this code for transactions that produce actual or planned transfers of property against compensation (financial or otherwise). You also use it for corrections. Companies in Poland use two-digit transaction codes.
 6. In the **Credit note** field, select the transaction code for the return of goods.
 7. On the **Country/region properties** tab, in the **Country/region** field, list all the countries or regions that your company does business with. For each country that is part of the EU, select **EU** in the **Country/region type** field, so that the country appears on your Intrastat report. For Poland, select **Domestic** in the **Country/region type** field.

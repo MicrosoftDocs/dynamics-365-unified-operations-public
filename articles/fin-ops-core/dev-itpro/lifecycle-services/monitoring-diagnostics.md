@@ -51,10 +51,7 @@ The Health Metrics tab offers insights into system health indicators such as CPU
 
 SQL Insights provide advanced SQL performance analysis tools. SQL Insights helps in diagnosing and troubleshooting SQL-related issues. 
 
-### Deprecated SQL Insights in September 2024
-As part of the first wave of monitoring deprecation, the following capabilities are disabled because they're now managed by Microsoft as part of the managed service.
 
-* End SQL Process
 
 
 

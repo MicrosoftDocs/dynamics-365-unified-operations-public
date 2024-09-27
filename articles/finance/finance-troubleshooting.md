@@ -58,4 +58,7 @@ The following Microsoft support and community resources are also available, wher
 - [Microsoft Dynamics 365 Blog](https://cloudblogs.microsoft.com/dynamics365/?source=dynamicsaxscm)
 - [Dynamics 365 Community](https://community.dynamics.com/)
 - [Finance ideas portal](https://experience.dynamics.com/ideas/categories/?forum=16691718-61e2-e611-8101-5065f38b21f1&forumName=Dynamics%20365%20Finance)
-- [Dynamics 365 support](https://dynamics-int.microsoft.com/support/)
+- [Dynamics 365 support] In <a href="https://lcs.dynamics.com/">LCS</a>, the <strong>Support</strong> tile opens a tool that helps you manage support incidents. To submit issues directly to Microsoft, select the <strong>Support</strong> tile in your LCS project. You can then submit issues in two ways:
+<ul>
+<li>On the <strong>Active issue</strong> tab, select your issue, and then select <strong>Submit to Microsoft</strong>.</li>
+<li>On the <strong>Submitted to Microsoft</strong> tab, select <strong>Submit an incident</strong>, and then follow the on-screen instructions to submit the incident. After you submit an incident, you will receive an email message from the Microsoft Support engineer who is assigned to your case.</li>

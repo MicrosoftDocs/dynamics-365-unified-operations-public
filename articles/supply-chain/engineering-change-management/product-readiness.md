@@ -18,7 +18,7 @@ You can use readiness checks to help ensure that all the required master data ha
 
 You can mark the **Active** check box for an engineering product, variant, or version after all the required data has been entered and verified, and after all the readiness checks have been processed. If one or more checks haven't been processed for the product, version, or variant, then when you try to mark the **Active** check box, you will receive a prompt warning you that not all checks have been completed.
 
-You can create readiness checks for new engineering products, variants, and versions. You can also apply readiness checks to standard (non-engineering) products (see also [Readiness checks on standard products](#standard-products)). 
+You can create readiness checks for new engineering products, variants, and versions. You can also apply readiness checks to standard (non-engineering) products. (Learn more in the [Readiness checks on standard products](#standard-products) section later in this article.)
 
 You can use standard products in transactions even though not all readiness checks have been completed. If you need to block a product from being used in transactions, use its lifecycle state. You can assign a lifecycle state that blocks a product from being used in transactions and then, after all readiness checks have been completed, assign a new lifecycle state that allows the required transactions.
 

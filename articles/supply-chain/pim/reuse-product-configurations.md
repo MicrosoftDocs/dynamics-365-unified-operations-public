@@ -6,7 +6,6 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-audience: Application User 
 ms.search.form: PCProductConfigurationModelDetails
 ms.assetid: 4985e308-7824-41fc-83fd-fd0bdae888e3
 ---

@@ -3,13 +3,14 @@ title: Payment workspace
 description: This article describes the Payment workspace in Microsoft Dynamics 365 Commerce headquarters.
 author: BrianShook
 ms.date: 09/01/2023
-ms.topic: article
+ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: shajain
 ms.search.validFrom: 2023-08-15
-
+ms.custom: 
+  - bap-template
 ---
 
 # Payment workspace

@@ -5,9 +5,9 @@ author: BrianShook
 ms.date: 07/03/2024
 ms.topic: how-to
 audience: Developer, IT Pro
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: brshoo
+ms.author: shajain
 ms.search.validFrom: 2020-02-13
 ms.custom: 
   - bap-template

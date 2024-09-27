@@ -35,7 +35,7 @@ To use an MDM solution to deploy the Warehouse Management mobile app and the rel
 You can set up user-based authentication for the Warehouse Management mobile app either with or without single sign-on.
 
 - **Without single sign-on** – If you choose to use device code flow authentication, or username/password authentication without single sign-on, then you (or a worker) must authenticate the Warehouse Management mobile app on each device after deploying with MDM.
-- **With single sign-on** – If you use username/password authentication with single sign-on, then the Warehouse Management mobile app can authenticate using an existing authentication token on each device, provided the Microsoft Entra ID account required to authenticate the Warehouse Management mobile app is already signed in for another application on the device (such as Microsoft Teams, Company Portal, or Outlook). In this case, no additional authentication may be needed for the device. However, workers may still need to sign in using their warehouse app user account, depending on how you've configured your Microsoft Entra ID and work user accounts (see also [Scenarios for managing devices, Microsoft Entra ID users, and mobile device users]( warehouse-app-authenticate-user-based.md# scenarios).
+- **With single sign-on** – If you use username/password authentication with single sign-on, the Warehouse Management mobile app can authenticate by using an existing authentication token on each device, provided that the Microsoft Entra ID account that is required to authenticate the Warehouse Management mobile app is already signed in for another application on the device (such as Microsoft Teams, Company Portal, or Outlook). In this case, no additional authentication might be needed for the device. However, depending on how you configured your Microsoft Entra ID and work user accounts, workers might still have to sign in by using their warehouse app user account. (Learn more in [Scenarios for managing devices, Microsoft Entra ID users, and mobile device users](warehouse-app-authenticate-user-based.md#scenarios).)
 
 ## Set up the source files for distribution
 
@@ -105,7 +105,7 @@ The following subsections provide examples that show how to set up Intune to pro
 
 ### Create a connection JSON file
 
-As a prerequisite for setting up managed configuration of all mobile platforms, you must create a connection JSON file as described in [Create a connection settings file or QR code](/dynamics365/supply-chain/warehousing/install-configure-warehouse-management-app#create-a-connection-settings-file-or-qr-code). This file enables the mobile app to connect to and authenticate with your Dynamics 365 Supply Chain Management environment.
+As a prerequisite for setting up managed configuration of all mobile platforms, you must create a connection JSON file as described in [Create a connection settings file or QR code](install-configure-warehouse-management-app.md#connection-file-qr). This file enables the mobile app to connect to and authenticate with your Dynamics 365 Supply Chain Management environment.
 
 > [!TIP]
 > If your JSON file includes more than one connection, one of them should be set as the default connection (by setting the `IsDefaultConnection` parameter to *true* for it). If no default connection is set, the app will prompt the user to manually select an initial connection among the available options.

@@ -321,6 +321,8 @@ items:
             href: sysadmin/archive-so.md 
           - name: Archive Dynamics 365 Supply Chain inventory transactions
             href: sysadmin/archive-inventory.md
+          - name: Archive Dynamics 365 Supply Chain inventory documents
+            href: sysadmin/archive-invent-doc.md
           - name: Archive Dynamics 365 Supply Chain inventory journals
             href: sysadmin/archive-inventory-journal.md
           - name: Archive Commerce transactions
@@ -501,6 +503,8 @@ items:
             href: deployment/setup-deploy-on-premises-latest.md
           - name: Set up and deploy on-premises environments (Platform update 41 through 55)
             href: deployment/setup-deploy-on-premises-pu41.md
+          - name: Configure Lifecycle Services connectivity for Finance + Operations (on-premises) deployments
+            href: deployment/onprem-auth-lcs.md
           - name: Installation steps for Retail channel components in an on-premises environment
             href: deployment/deploy-retail-onprem.md
           - name: Develop and deploy custom models to on-premises environments
@@ -1803,6 +1807,8 @@ items:
           href: sysadmin/role-based-security.md
         - name: Security architecture
           href: sysadmin/security-architecture.md
+        - name: Finance and operations storage account updates
+          href: sysadmin/storage-acct-security.md
         - name: Encryption in finance and operations apps
           href: sysadmin/encryption.md
         - name: Use customer-managed keys to control encryption keys for data at rest
@@ -1953,6 +1959,8 @@ items:
             href: migration-upgrade/pre-post-upgrade-scripts.md
         - name: Environment operations
           items:
+          - name: Monitor the updgrade
+            href: migration-upgrade/monitor-upgrade.md
           - name: Database synchronize performance 
             href: migration-upgrade/database-sync-perf.md
           - name: Monitoring replication
@@ -2285,9 +2293,11 @@ items:
       items:
       - name: Overview
         href: responsible-ai/responsible-ai-overview.md
+      - name: Responsible AI FAQ for Chat with finance and operations data on Microsoft 365 Copilot
+        href: ../fin-ops/copilot/faq-copilot-fno-data-on-m365copilot.md
       - name: Responsible AI FAQ for Generative help and guidance with Copilot
         href: ../fin-ops/copilot/faq-copilot-generative-help.md
-      - name: Responsible AI FAQ for Suggested questions within Copilot (preview)
+      - name: Responsible AI FAQ for Follow-up questions in the Copilot sidecar (preview)
         href: ../fin-ops/copilot/faq-copilot-suggested-questions.md
       - name: Responsible AI FAQ for Workflow history summary
         href: ../fin-ops/copilot/workflow-history-summary-faq.md

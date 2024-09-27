@@ -3,14 +3,14 @@ title: Opt in to use ratings and reviews
 description: This article explains how to opt in to use ratings and reviews on your Microsoft Dynamics 365 Commerce site.
 author: gvrmohanreddy
 ms.date: 02/16/2020
-ms.topic: article
-audience: Application User
-ms.reviewer: v-chgriffin
+ms.topic: how-to
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: stuharg
+ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+  - bap-template
 ---
 
 # Opt in to use ratings and reviews
@@ -30,10 +30,7 @@ To opt in to use ratings and reviews on your site, follow these steps.
 1. Follow the steps in [Deploy a new e-Commerce site](deploy-ecommerce-site.md).
 1. While you're still in LCS, go to **Retail deployment setup \> Other settings**.
 1. Set the **Enable ratings and reviews service** option to **Yes**.
-1. In the **Microsoft Entra security group for ratings and review moderator** field, enter the ID of the Microsoft Microsoft Entra security group that includes the ratings and reviews moderators.
-
-    ![Opt in to use ratings and reviews.](media/LCS_RnR_Preference_2.png)
-
+1. In the **Microsoft Entra security group for ratings and review moderator** field, enter the ID of the Microsoft Entra security group that includes the ratings and reviews moderators.
 1. Complete the e-Commerce initialization process.
 
 > [!NOTE] 

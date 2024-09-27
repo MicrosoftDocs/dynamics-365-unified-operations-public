@@ -50,13 +50,12 @@ The following table lists the APIs that are currently available:
 | `/api/environment/{environmentId}/allocation/query` | Post | [Query allocation result](inventory-visibility-allocation.md#using-allocation-api) |
 | `/api/environment/{environmentId}/onhand/productsearch/indexquery` | Post | [Post index query with product search](#query_with_product_search) |
 | `/api/environment/{environmentId}/onhand/productsearch/exactquery` | Post | [Post exact query with product search](#exact-query-with-product-search) |
+| `/api/environment/{environmentId}/transaction/adjustment/bulk` | Post | [Sync external inventory changes through Inventory Visibility](inventory-visibility-sync-changes.md) |
 
 > [!NOTE]
 > The {environmentId} part of the path is the environment ID of Microsoft Dynamics 365 Supply Chain Management.
 >
 > The bulk API can return a maximum of 512 records for each request.
-
-You can find the [service endpoint](inventory-visibility-power-platform.md#endpoint) in the Inventory Visibility app in Power Apps.-->
 
 ## <a name="inventory-visibility-authentication"></a>Authentication
 
@@ -95,9 +94,9 @@ To get a security service token, follow these steps.
     {
         "grant_type": "client_credentials",
         "client_assertion_type": "aad_app",
-        "client_assertion": "{Your_Microsoft EntraToken}",
+        "client_assertion": "${Your_Microsoft_EntraToken}",
         "scope": "https://inventoryservice.operations365.dynamics.com/.default",
-        "context": "{$fno_environment_id}",
+        "context": "${fno_environment_id}",
         "context_type": "finops-env"
     }
     ```
@@ -125,11 +124,14 @@ To get a security service token, follow these steps.
 
     ```json
     {
-        "access_token": "{Returned_Token}",
+        "access_token": "${Returned_Token}",
         "token_type": "bearer",
         "expires_in": 3600
     }
     ```
+
+    > [!NOTE]
+    > If you receive a response with status code 307, use the value of the `Location` header to resend the token request to the new URL. Most HTTP libraries handle redirects automatically.
 
 ## <a name="create-onhand-change-event"></a>Create on-hand change events
 

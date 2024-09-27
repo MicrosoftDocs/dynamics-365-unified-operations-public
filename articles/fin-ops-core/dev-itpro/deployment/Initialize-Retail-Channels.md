@@ -3,12 +3,14 @@ title: Initialize Commerce Scale Unit (cloud)
 description: Learn about how to initialize Commerce Scale Unit (cloud) in Microsoft Dynamics 365 Commerce, including prerequisites.
 author: aneesmsft
 ms.author: aneesa
-ms.topic: article
-ms.date: 03/08/2024
-ms.reviewer: johnmichalak
+ms.topic: how-to
+ms.date: 09/18/2024
+ms.reviewer: v-chrgriffin
 audience: Developer, IT Pro
 ms.search.region: Global
 ms.search.validFrom: 2018-04-30
+ms.custom: 
+  - bap-template
 ---
 
 # Initialize Commerce Scale Unit (cloud)
@@ -42,37 +44,37 @@ If you're using a Tier-2 sandbox or production environment that has application 
     - RetailStores - If you plan to use POS.
 
 ## Region availability
+
 CSU is available for deployment in the following regions.
 
-| Global location | Region              | Availability        | Comments                              |
-|-----------------|---------------------|---------------------|---------------------------------------|
-| AMERICAS        | East US             | Generally available |  No comments.                         |
-| AMERICAS        | East US 2           | Generally available |  No comments.                         |
-| AMERICAS        | North Central US    | Limited capacity    |  No comments.                         |
-| AMERICAS        | South Central US    | Limited capacity    |  No comments.                         |
-| AMERICAS        | Central US          | Generally available |  No comments.                         |
-| AMERICAS        | West US             | Generally available |  No comments.                         |
-| AMERICAS        | West US 2           | Generally available |  No comments.                         |
-| AMERICAS        | Canada Central      | Limited capacity    |  No comments.                         |
-| AMERICAS        | Canada East         | Limited capacity    |   No comments.                        |
-| AMERICAS        | West Central US     | Limited capacity    |   No comments.                        |
-| APAC            | Australia East      | Generally available |   No comments.                        |
-| APAC            | Southeast Asia      | Capacity restricted | No deployments are allowed.               |
-| APAC            | Japan East          | Generally available |  No comments.                         |
-| APAC            | Japan West          | Generally available |   No comments.                        |
-| APAC            | Australia Southeast | Generally available |   No comments.                        |
-| APAC            | East Asia           | Limited capacity    |   No comments.                        |
-| APAC            | India South         | Capacity restricted | No deployments are allowed.               |
-| APAC            | India Central       | Limited capacity    | An approval process is required.            |
-| EMEA            | West Europe         | Generally available |  No comments.                         |
-| EMEA            | North Europe        | Generally available |  No comments.                         |
-| EMEA            | UK South            | Generally available |    No comments.                       |
-| EMEA            | UK West             | Generally available |    No comments.                       |
-| UAE             | UAE North           | Capacity restricted | LCS UAE can be used to deploy CSU in UAE. CSUs in UAE only run in one region and don't have a business continuity and disaster recovery (BCDR) region to fail over to if there is Azure regional failure.  |
+| Global location | Region                  | Availability                             |
+|-----------------|-------------------------|------------------------------------------|
+| AMERICAS        | East US                 | Generally available                      |
+| AMERICAS        | East US 2               | Generally available                      |
+| AMERICAS        | Central US              | Generally available                      |
+| AMERICAS        | West US                 | No new deployments allowed<sup>[1]</sup> |
+| AMERICAS        | West US 2               | Generally available                      |
+| AMERICAS        | North Central US        | No new deployments allowed<sup>[1]</sup> |
+| AMERICAS        | South Central US        | No new deployments allowed<sup>[1]</sup> |
+| AMERICAS        | Canada East             | No new deployments allowed<sup>[1]</sup> |
+| AMERICAS        | Canada Central          | Generally available                      |
+| APAC            | Australia East          | Generally available                      |
+| APAC            | Australia Southeast     | No new deployments allowed<sup>[1]</sup> |
+| APAC            | Japan East              | Generally available                      |
+| APAC            | Japan West              | No new deployments allowed<sup>[1]</sup> |
+| APAC            | East Asia               | Generally available                      |
+| APAC            | Southeast Asia          | Generally available                      |
+| APAC            | Central India           | Generally available                      |
+| APAC            | South India             | No new deployments allowed<sup>[1]</sup> |
+| UAE             | UAE North<sup>[2]</sup> | Capacity restricted                      |
+| EMEA            | West Europe             | Generally available                      |
+| EMEA            | North Europe            | Generally available                      |
+| EMEA            | UK West                 | No new deployments allowed<sup>[1]</sup> |
+| EMEA            | UK South                | Generally available                      |
 
-Deployment capacity in limited capacity regions is constrained. Requests for deployment are evaluated on a case-by-case basis. If you have a compelling business need for deployment in limited capacity regions, you can file a support request to be added to the waitlist. Capacity restricted areas currently don't allow for CSU deployment at this time. 
 
-![Map showing region availability.](media/Commerce-Scale-Unit-Region-Availability.png "Map showing region availability")
+[1] No new deployments allowed due to capacity limits and lack of availability zones.</br>
+[2] LCS UAE can be used to deploy CSUs in UAE. CSUs in UAE only run in one region and don't have a business continuity and disaster recovery (BCDR) region to fail over to if there's an Azure regional failure.
 
 ## Initialize CSU as part of a new environment deployment
 

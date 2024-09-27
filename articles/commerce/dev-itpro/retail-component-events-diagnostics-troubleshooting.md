@@ -3,13 +3,15 @@ title: Commerce component events for diagnostics and troubleshooting
 description: This article explains where to find events from Commerce-specific components.
 author: ShalabhjainMSFT
 ms.date: 05/28/2024
-ms.topic: article
+ms.topic: how-to
 audience: IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: bennettray
+ms.author: anupamar
 ms.search.validFrom: 2016-02-28
 ms.assetid: a22c9493-c000-4514-bb0d-b3cc674439d9
+ms.custom: 
+  - bap-template
 ---
 
 # Commerce component events for diagnostics and troubleshooting
@@ -97,8 +99,6 @@ Every event that is logged by Retail Modern POS includes the following data poin
 - **UserSessionID** – A unique ID that is generated when a user signs in to Retail Modern POS. It's included with every event that is logged, for as long as the user remains signed in. When a new user signs in, a new UserSessionID is created.
 
 You can find the AppSessionID and UserSessionID values on the **Details** tab in Event Viewer on the machine where Retail Modern POS is installed.
-
-[![Details tab in Event Viewer.](./media/correlation-1024x672.png)](./media/correlation.png)
 
 ### Finding incoming Commerce Scale Unit request events in Event Viewer
 

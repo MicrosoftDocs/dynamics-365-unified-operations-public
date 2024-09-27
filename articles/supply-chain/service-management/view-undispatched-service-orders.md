@@ -36,8 +36,6 @@ This article describes how to view activities in a service order that don’t ha
 
 ## Related information
 
-[Dispatch board (form)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))
-
 [Service activities](service-activities.md)
 
 [Dispatch board](dispatch-board.md)

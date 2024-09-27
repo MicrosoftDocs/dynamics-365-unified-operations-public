@@ -25,7 +25,7 @@ Item requirements for service orders are processed through a project. To create 
 1. Go to **Service management** \> **Service orders** \> **Service orders**.
 1. Select the service order that you want to create an item requirement for.
 1. On the **Action Pane**, on the **Dispatch** tab, select **Item requirement**.
-1. In the **Item requirements** form, enter information for the required item. For more information about the specific fields, see [Item requirements (form)](https://technet.microsoft.com/library/aa552021\(v=ax.60\)).
+1. In the **Item requirements** form, enter information for the required item.
 
 ## Create an item requirement for a service agreement
 

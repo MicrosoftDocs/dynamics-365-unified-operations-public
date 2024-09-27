@@ -1,8 +1,8 @@
 ---
 title: Customer payments for a partial amount
 description: Customers can make payments that are less than the amount of an invoice. The options that are available to you depend on your business requirements and configuration.
-author: prabhatb-ship-it
-ms.author: prabhatb
+author: JodiChristiansen
+ms.author: jchrist
 ms.topic: article
 ms.date: 01/08/2018
 ms.reviewer: twheeloc

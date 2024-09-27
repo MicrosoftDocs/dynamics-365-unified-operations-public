@@ -6,7 +6,6 @@ ms.author: benebotg
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-audience: Application User 
 ms.search.form: BOMConsistOf, BOMDesigner, InventItemOrderSetup
 ms.assetid: a5b64301-a011-4469-afaf-e4c9164ef9c6
 ---

@@ -27893,6 +27893,26 @@
       "source_path": "articles/commerce/localizations/russia/rus-simplified-address.md",
       "redirect_url": "/dynamics365/commerce/welcome",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/tasks/set-up-project-resource-information.md",
+      "redirect_url": "/dynamics365/supply-chain/supply-chain-management-welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/tasks/submit-approve-project-budget.md",
+      "redirect_url": "/dynamics365/supply-chain/supply-chain-management-welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/tasks/submit-approve-project-budget-revision.md",
+      "redirect_url": "/dynamics365/supply-chain/supply-chain-management-welcome",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/localizations/rus-goods-transit-postponed.md",
+      "redirect_url": "/dynamics365/supply-chain/localizations/russia/rus-goods-transit-postponed",
+      "redirect_document_id": false
     }
   ]
 }

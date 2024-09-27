@@ -6,7 +6,7 @@ ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview
-ms.date: 06/17/2024
+ms.date: 08/30/2024
 ms.custom: 
   - bap-template
 ms.collection:
@@ -18,6 +18,10 @@ ms.collection:
 AI summaries with Microsoft Copilot are available on many of the most-used pages in Dynamics 365 Supply Chain Management. These summaries provide a quick overview of the most important information that's related to the page, personalized for the current user. Summaries can include information such as the number of lines on a purchase order, the number of items in a warehouse, or the number of overdue invoices for a vendor.
 
 The information that Copilot provides depends on the current page and user context. For example, the information can vary based on the other pages that the user works with the most, and it's limited based on the user's security roles and permissions.
+
+## TechTalk video
+
+For a video overview of all of the features described in this topic, watch [Copilot Capabilities in Dynamics 365 Finance and SCM | Dynamics 365 TechTalk](https://www.youtube.com/watch?v=QQN7tZYr1jc).
 
 ## Prerequisites
 
@@ -31,26 +35,37 @@ Before you can use AI summaries with Copilot, your system must meet the followin
 
 - [Power Platform Integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md) must be enabled for your environment. Usually, all the components that are required to use Copilot summaries are automatically deployed when Power Platform Integration is enabled. However, if they don't work as expected, see [Enable Copilot capabilities in finance and operations apps](../../fin-ops-core/dev-itpro/copilot/enable-copilot.md) for more detailed requirements.
 
-- Depending on the summaries that you want to use, the following features must be enabled in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). All of these features are turned on by default.
-    - Warehouse Management mobile app insights – *Context-aware worker summary screen in WMA*
-    - Product hover summaries – *Product summary when hovering on item*
-    - Released product details summary – *Product details summary*
-    - Purchase order summary – *Purchase order summary*
-    - Sales order summary – *Sales order summary*
-    - Vendor summary – *Vendor summary*
+- To use Workload insights with Copilot in the Warehouse Management mobile app, you must be running Warehouse Management mobile app version 2.3.2.0 or later.
 
-- To use Warehouse Management mobile app insights, you must be running Warehouse Management mobile app version 2.3.2.0 or later.
+## Turn AI summaries with Copilot on or off
 
-## Warehouse Management mobile app insights
+Admins can control which AI summaries are shown in your system by searching for the following features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-Warehouse Management mobile app insights are provided to warehouse workers when they sign in (depending on configuration) and are available on demand by going to the **Summary** page. The information that's shown can include the following details:
+- Workload insights with Copilot in the Warehouse Management mobile app – *Context-aware worker summary screen in WMA*
+- Product hover summaries – *Product summary when hovering on item*
+- Released product details summary – *Product details summary*
+- Purchase order summary – *Purchase order summary*
+- Sales order summary – *Sales order summary*
+- Vendor summary – *Vendor summary*
 
-- The number of pick and receive work headers or lines.
-- The number of Warehouse Management mobile app sessions that are active in the warehouse.
-- Insights into the types of work waiting to be completed. This information lets warehouse workers get an overview of the workload so they can better plan their shifts.
-- Overall workload, displayed as headers or lines.
-- Details of available work by work type.
-- AI-generated insights that provide more information about available work.
+All of these features are turned on by default, but you can turn any or all of them off if you don't want to see them.
+
+## Workload insights with Copilot in the Warehouse Management mobile app
+
+The Warehouse Management mobile app provides a *workload* page that shows work summaries and AI-generated insights to help warehouse workers better plan their shift. The information can include the following details:
+
+- The number of pick and receive work headers or work lines.
+- The number of active warehouse mobile app sessions in the warehouse.
+- Insights into the available work types.
+- The current workload. This information can be shown either as work headers or work lines.
+- Details of the available work per work type.
+- More information about the available work. Microsoft Copilot generates this information in natural language.
+
+The following illustration shows an example of the workload page in the Warehouse Management mobile app. When workers first open the page, it shows an overview of unstarted tasks that are scheduled for the current warehouse, together with a natural-language summary that Copilot generates (left). Workers can then tap any tile to view detailed information about open work by type (right). This information helps them quickly grasp their objectives for the day.
+
+:::image type="content" source="../warehousing/media/wma-insights-worklines.png" alt-text="Screenshots of the initial and detailed views of unstarted work lines scheduled for the current warehouse." lightbox="../warehousing/media/wma-insights-worklines.png":::
+
+Learn more in [Workload insights with Copilot in the Warehouse Management mobile app](../warehousing/warehouse-management-mobile-app-insights.md).
 
 ## Product hover summaries
 
@@ -126,4 +141,6 @@ As appropriate, the **Insights** section provides buttons that let you filter th
 
 ## Related information
 
+- [Workload insights with Copilot in the Warehouse Management mobile app](../warehousing/warehouse-management-mobile-app-insights.md)
 - [Responsible AI FAQ for AI summaries with Copilot](../faq-summaries.md)
+- [Responsible AI FAQ for Workload insights with Copilot](../faq-wma-copilot.md)

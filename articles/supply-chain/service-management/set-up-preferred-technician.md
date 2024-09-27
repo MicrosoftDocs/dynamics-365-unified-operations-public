@@ -50,7 +50,6 @@ You can select any worker as a preferred technician for a service agreement or s
 
 [Create service orders manually](create-service-orders-manually.md)
 
-[Service agreements (form)](https://technet.microsoft.com/library/aa617823\(v=ax.60\))
   
 
 

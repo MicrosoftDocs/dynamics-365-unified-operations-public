@@ -14,7 +14,6 @@ ms.search.form: IoTIntCoreServiceParameters
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 [!INCLUDE [azure-ad-to-microsoft-entra-id](../../includes/azure-ad-to-microsoft-entra-id.md)]
-
 <!-- KFM: Preview until further notice -->
 
 The **Sensor Data Intelligence parameters** page provides a few settings that you can use to configure the feature. These settings include Azure connection parameters and a parameter for the lifetime of alert messages that are sent to users in response to sensor measurements.

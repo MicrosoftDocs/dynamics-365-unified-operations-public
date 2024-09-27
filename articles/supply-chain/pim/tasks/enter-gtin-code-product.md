@@ -7,7 +7,6 @@ ms.topic: how-to
 ms.date: 07/20/2023
 ms.custom:
 ms.reviewer: kamaybac   
-audience: Application User 
 ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, InventItemGTIN, UnitOfMeasureLookup 
 ---
 

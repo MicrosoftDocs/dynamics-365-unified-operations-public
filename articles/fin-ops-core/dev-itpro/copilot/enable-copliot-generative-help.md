@@ -6,7 +6,7 @@ ms.author: cabeln
 ms.reviewer: johnmichalak
 ms.search.form:
 ms.topic: how-to
-ms.date: 07/05/2024
+ms.date: 08/28/2024
 audience: Application User
 ms.custom: 
   - bap-template
@@ -30,7 +30,21 @@ After you complete the steps in this article, the Copilot icon appears at the to
 
 In most cases, generative help and guidance with Copilot is available by default if [Power Platform Integration](../power-platform/enable-power-platform-integration.md) is enabled for your environment.
 
-If the feature isn't already available on your system, see [Enable Copilot capabilities in finance and operations apps](enable-copilot.md) for information about how to enable it.
+If the feature isn't already available on your system, refer to [Enable Copilot capabilities in finance and operations apps](enable-copilot.md) for information about how to enable it.
+
+## <a name="follow-ups"></a>Enable follow-up questions in the Copilot sidecar (preview)
+
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
+
+The *[Follow-up questions in the Copilot sidecar](../../fin-ops/copilot/faq-copilot-suggested-questions.md)* feature makes it fast and easy to post follow-up questions and get answers from Copilot. It's designed to provide a diversity of follow-up questions, and avoids repeating questions you have already asked. The suggested questions are answered using [Generative Answers](/microsoft-copilot-studio/faqs-generative-answers), which is the foundation for the Generative help and guidance with Copilot feature in finance and operation apps.
+
+To use this capability in your environment, your system must meet the following requirements:
+
+- You must be running finance and operations apps version 10.0.42 or later.
+- The feature that is named *(Preview) Follow-up questions in the Copilot sidecar* must be turned on in [feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md).
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Add custom knowledge
 
@@ -54,12 +68,14 @@ After a governing condition is addressed, you might have to take additional acti
 
 ## Disabling the conversational Copilot sidecar for your organization
 
-If you're running finance and operations apps version 10.0.38 or 10.0.39, you can turn off the conversational Copilot sidecar by going to the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace and disabling the feature *User experience for Copilot in Finance and Operations*.
+If you want to disable the conversational Copilot sidecar for your organization, you can do so by doing any or all of the following steps:
 
-In other versions of finance and operations apps, you can disable the conversational Copilot sidecar by turning off Bing Search. For more information, see [Enable copilots and generative AI features](/power-platform/admin/geographical-availability-copilot).
+- If you're running finance and operations apps version 10.0.38 or 10.0.39, you can turn off the conversational Copilot sidecar in finance and operations apps by going to the [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) workspace and disabling the feature *User experience for Copilot in Finance and Operations*. The feature is on by default and mandatory in finance and operations apps versions 10.0.40 and higher.
+- Turn off Bing Search for all copilots and generative AI features in your environment. For instructions, see [Enable copilots and generative AI features](/power-platform/admin/geographical-availability-copilot).
+- Turn off Copilot for all Power Apps applications in your environment. For instructions, see [Copilot in Power Apps overview](/power-apps/maker/canvas-apps/ai-overview).
 
 ## See also
 
 - [Add custom knowledge to generative help and guidance with Copilot](extend-copilot-generative-help.md)
 - [Responsible AI FAQ for Generative help and guidance with Copilot in finance and operations apps](../../fin-ops/copilot/faq-copilot-generative-help.md)
-- [Responsible AI FAQ for Suggested questions within Copilot](../../fin-ops/copilot/faq-copilot-suggested-questions.md)
+- [Responsible AI FAQ for Follow-up questions in the Copilot sidecar (preview)](../../fin-ops/copilot/faq-copilot-suggested-questions.md)

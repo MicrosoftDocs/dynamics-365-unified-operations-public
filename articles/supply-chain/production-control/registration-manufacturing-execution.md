@@ -32,15 +32,9 @@ Follow these steps to configure a route group.
     - *No* – When a job is stopped or completed, generate a job card journal on the production order. This journal has the actual time that the worker spent on the job.
     - *Yes* – When a job is started, generate a route card journal on the production order. This journal has the estimated time for the operation.
 
-## Set up operations to use either estimated or actual time for cost calculations (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-
-<!-- KFM: Preview until 10.0.41 GA -->
+## Set up operations to use either estimated or actual time for cost calculations
 
 You can use the **Skip time adjustments** option on the **Production order defaults** page to specify whether calculations of actual cost per production order include time adjustments that are made to actual recorded work times. Adjustments are applied when a supervisor uses the **Time and attendance** module to review and edit the recorded work times that each worker registers to record time and attendance. Adjustments can reflect events such as registration errors or unpaid time off. If you skip time adjustments, you can end production orders without waiting for supervisor approvals.
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ### Prerequisites
 
@@ -50,10 +44,7 @@ Before you can use the **Skip time adjustments** option, your system must meet t
 - The feature that is named *Skip time adjustments when calculating actual cost per production order* must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 > [!IMPORTANT]
-> This feature changes the way that automatic route consumption works.
->
-> - When the feature is enabled, route groups that are set up to use estimated production times to calculate actual production order costs don't also include recorded times.
-> - When the feature is disabled, both recorded and estimated times are used in cost calculations. This behavior can produce unexpected results.
+> The *Skip time adjustments when calculating actual cost per production order* feature changes the way that automatic route consumption works. When it's enabled, route groups that are set up to use *estimated production times* to calculate actual production order costs don't include *recorded times* in the calculation.
 
 ### Set the Skip time adjustments option
 

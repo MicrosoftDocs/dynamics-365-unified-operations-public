@@ -6,7 +6,6 @@ ms.author: yanansong
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
-audience: Application User 
 ms.search.form: CostingVersion
 ms.assetid: 1e41953f-cdb9-4598-b776-46e49383a773
 ---

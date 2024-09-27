@@ -16,7 +16,6 @@ ms.dyn365.ops.version: 10.0.38
 # New financial dimension sets
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 In Microsoft Dynamics 365 Finance version 10.0.38, a new feature **Performance enhancement for general ledger dimension set balance calculation** is available. When you turn on this feature, the process of creating new balances is initiated. This process might take several hours if the amount of transactional data is large. Reports and inquiries that use dimension sets won't be available until the processing is completed. You can view the status on the **Dimension set** page.
 

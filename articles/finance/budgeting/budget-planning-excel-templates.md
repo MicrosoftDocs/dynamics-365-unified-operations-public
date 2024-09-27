@@ -100,7 +100,6 @@ Yes, open the **Data Connector** options to hide the **Design** option from othe
 
 Expand **Data connector options** and clear the **Enable design** check box. This will hide the **Design** option from the **Data connector**.
 
-[![Hide Design option from Data connector.](./media/bpt14-1024x592.png)](./media/bpt14.png)
 
 ### Can I prevent users from accidently closing the Data connector while working with data?
 
