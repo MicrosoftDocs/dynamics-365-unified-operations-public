@@ -319,6 +319,12 @@ When you use the *Inventory Visibility integration with soft reservation on sale
     When a soft reservation is successfully made, a soft reservation ID is automatically returned and recorded for each sales line.
 
     By default, the soft reservation offset is triggered when the line reaches a hard reservation status (*Reserve physical* or *Reserve ordered*) or later. Sales lines that show a valid soft reservation ID and a qualifying trigger status will automatically be added to the offset batch queue.
+2. To view the soft reservation status of a sales order line, select the relevant line in the **Sales order lines** FastTab, and then, navigate to the **Line details** FastTab, then select the **General** tab.
+Under **INVENTORY SERVICE**, the **Soft reservation status** will reflect the stage of the soft reservation process for the sales order line.
+   The possible statuses are:
+   - **Not started**: The soft reservation process has not yet begun.
+   - **Unfinished**: A soft reservation was attempted, but not all quantities were successfully posted. Some or all quantities might have failed to post. Or some quantities were successfully soft reserved, but some have not yet begun the reservation process.
+   - **Succeeded**: All quantities were successfully soft reserved.
 
 > [!NOTE]
 > If you must reverse a successful soft reservation, open the relevant sales order, and then select **Revert reservation directly** or **Revert reservation by batch** at the sales order or sales line level.
