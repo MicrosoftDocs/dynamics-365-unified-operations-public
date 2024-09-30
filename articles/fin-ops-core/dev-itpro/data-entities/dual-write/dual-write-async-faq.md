@@ -55,7 +55,8 @@ Errors are categorized in the following way:
 - **Application failures** – Failures that are a result of business validations or logical errors are categorized as application failures.
 - **System failures** – Failures that are a result of unresolvable system errors are categorized as system failures. These failures can be retried. During a retry, if the record version is the latest, it's synced.
 - **Concurrency failures** – In eventual consistency models, the records that are being processed sometimes aren't the latest versions. In these cases, the records are skipped, and the failures are categorized as concurrency failures. This behavior helps prevent multiple phantom updates for the same record. These failures can't be retried.
-- **Conflict failures** – Failures that encounter the conflict that is mentioned in the conflict detection FAQ are categorized as conflict failures. These failures aren't visible in the synchronization errors. However, they are visible in the back-end table.
+- **Conflict failures** – Failures that encounter a conflict are categorized as conflict failures. These failures aren't visible in the synchronization errors. However, they are visible in the back-end table.
+For more information, see the [What does primary for conflict detection mean?](dual-write-async-faq.md#what-does-primary-for-conflict-detection-mean) section of this article.
 
 ## Does dual-write async use DIXF for import into, or export from, finance and operations apps?
 
