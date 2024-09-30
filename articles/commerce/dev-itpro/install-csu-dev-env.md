@@ -33,7 +33,7 @@ To create the SSL certificate, follow these steps.
 1. Open PowerShell with administrator privileges from Command Prompt.
 1. Enter the following command.
 ```cmd
-$cert = New-SelfSignedCertificate -Subject "CN=$env:computerName" -DnsName $env:computerName,$([System.Net.Dns]::GetHostByName($env:computerName).HostName) -KeyAlgorithm RSA -KeyLength 2048 -CertStoreLocation "Cert:\LocalMachine\My" -NotBefore (Get-Date) -NotAfter (Get-Date).AddYears(2) -KeyUsage KeyEncipherment,DataEncipherment,CertSign,CRLSign -KeyUsageProperty All -FriendlyName "$env:computerName" -KeyExportPolicy Exportable
+$cert = New-SelfSignedCertificate -Subject "CN=$env:computerName" -DnsName $env:computerName,$([System.Net.Dns]::GetHostByName($env:computerName).HostName) -KeyAlgorithm RSA -KeyLength 2048 -CertStoreLocation "Cert:\LocalMachine\My" -NotBefore (Get-Date) -NotAfter (Get-Date).AddYears(2) -KeyUsage KeyEncipherment,DataEncipherment,CertSign,CRLSign,DigitalSignature -KeyUsageProperty All -FriendlyName "$env:computerName" -KeyExportPolicy Exportable
 Export-Certificate -Cert $cert -FilePath "$env:temp\https.cer"
 Import-Certificate -CertStoreLocation cert:\LocalMachine\Root -FilePath "$env:temp\https.cer"'
 ```
@@ -81,6 +81,9 @@ To add the SSL certificate you created to the CSU Entra ID app, follow these ste
 1. For **Description**, enter "Devbox cert".
 1. For **Set Description**, enter "Devbox Self-signed Certificate".
 1. Select **Add**.
+
+> [!NOTE]
+> By default SSL Certificates are issued for 1 year. It's critical that you have a plan for updating the SSL cert associated to this Azure App registration and the Sealed CSU at least one month prior to expiration. Failure to perform this planned update will lead to the Sealed CSU no longer being able to communicate with Commerce HQ. See section Updating an expired SSL Certificate for steps to apply a new SSL certificate.
 	
 ## Update Commerce headquarters
 
@@ -277,7 +280,11 @@ If you previously set up a sealed CSU using the steps in [Install the sealed CSU
 
 To update the sealed CSU to a newer version, obtain a newer version of the Sealed CSU installer file and then run the same command line arguments you used to first install the sealed CSU. 
 
+## Updating an expired SSL Certificate
 
+To update an expiring or expired certificate for the Sealed CSU you do not need to completely re-install.  Instead create the new SSL Certificate, and then the following command 
+
+CommerceStoreScaleUnitSetup.exe updateCertificates --SslCertFullPath "store:///My/LocalMachine?FindByThumbprint=YourNewSslCertificateThumbprint" --AsyncClientCertFullPath "store:///My/LocalMachine?FindByThumbprint=YourNewAsyncClientAadAppCertThumbprint" --RetailServerCertFullPath "store:///My/LocalMachine?FindByThumbprint=YourNewRsAadAppCertThumbprint"
 
 
 
