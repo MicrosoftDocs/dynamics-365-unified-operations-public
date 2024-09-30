@@ -54,4 +54,4 @@ To get a connection string, follow these steps.
 > [!NOTE]
 > Ensure that you don't confuse the **Connection string** value with the **Storage shared access signature (SAS)** token.
 
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
