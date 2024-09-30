@@ -98,7 +98,7 @@ To configure electronic document parameters, follow these steps.
 
 ## Finance business data configuration
 
-Follow the configuration steps in [Customer electronic invoices in Egypt](emea-egy-e-invoices.md)
+Follow the configuration steps in [Customer electronic invoices in Egypt](emea-egy-e-invoices.md).
 
 ## Issue electronic invoices
 
