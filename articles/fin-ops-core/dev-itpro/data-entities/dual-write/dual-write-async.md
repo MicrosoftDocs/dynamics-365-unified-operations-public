@@ -17,7 +17,7 @@ ms.reviewer: twheeloc
 
 This article describes how to set up and manage dual-write async in Dynamics 365 finance and operations apps.
 
->[Important!]
+>[!Important]
 > This is a preview feature.
 > Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 
@@ -43,11 +43,6 @@ Error management - Manage and troubleshoot failures encountered during data sync
 The Async feature public preview is available on public clouds across all regions currently. To enable the feature, the following are needed:  
  - Dynamics 365 finance and operations platform update (PU) 64 (10.0.40 with latest quality updates) and later. The application foundation version greater than version 7.0.7425.0.
  - Minimum Dual-write Core solution version 1.0.24093.1. 
-
-Dual-write async feature has two key functionalities.  
-Authoring - Helps define the table maps which should be part of asynchronous data movement. 
-Error management - 
-
 
 
 ### Initial setup 
