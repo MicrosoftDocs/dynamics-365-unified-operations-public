@@ -8,10 +8,8 @@ ms.custom:
   - bap-template
 ms.date: 09/18/2024
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 09/18/2024
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.39
 ---
 
@@ -42,7 +40,7 @@ To create an Azure file share, follow these steps.
 To get a connection string, follow these steps.
 
 1. Go to Azure portal (portal.azure.com) with your subscription and locate to the corresponding Storage account resource.
-1. Go to **Security + Networking** > **Access keys**
+1. Go to **Security + Networking** \> **Access keys**
 1. Copy the value from the **key 1 Connection string**.
 
    ![Azure file share connection string.](../media/azure-file-share-connection-string.png)
