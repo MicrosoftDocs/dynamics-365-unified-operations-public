@@ -43,7 +43,7 @@ To create an Azure file share, follow these steps.
 To get the connection string, follow these steps.
 
 1. Go to the [Azure portal](https://portal.azure.com/) with your subscription, and find the corresponding Storage account resource.
-1. Go to **Security + Networking** \> **Access keys**
+1. Go to **Security + Networking** \> **Access keys**.
 1. Under **key1**, copy the value in the **Connection string** field.
 
     ![Screenshot that shows Azure file share connection strings.](../media/azure-file-share-connection-string.png)
