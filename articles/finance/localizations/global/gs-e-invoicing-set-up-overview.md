@@ -4,7 +4,7 @@ description: Learn about the process for setting up and configuring Electronic i
 author: ilikond
 ms.author: ikondratenko
 ms.topic: overview
-ms.date: 04/10/2024
+ms.date: 09/30/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -48,7 +48,7 @@ To enable communication between Electronic invoicing and Finance or Supply Chain
 
 
 > [!NOTE]
-> To work with Globalization features, feature **E-Invoicing designer workspace** should be enabled by default. However, there is a delay of 45 minutes from the time of electronic invoicing service addin installation for this feature to be enabled.
+> To work with Globalization features, the feature **E-Invoicing designer workspace** should be enabled by default. However, there is a delay of 45 minutes from the time the electronic invoicing service add-in installation before this feature is enabled.
 
 ## Service environment configuration
 
