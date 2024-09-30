@@ -1878,6 +1878,8 @@
                               href: localizations/germany/emea-reporting-multiple-vat-registrations-de.md
                             - name: Italy
                               href: localizations/italy/emea-reporting-multiple-vat-registrations-it.md
+                            - name: Latvia
+                              href: localizations/latvia/emea-reporting-multiple-vat-registrations-lv.md
                             - name: Lithuania
                               href: localizations/lithuania/emea-reporting-multiple-vat-registrations-lt.md
                             - name: Netherlands
@@ -3588,8 +3590,8 @@
                       href: localizations/europe/emea-invoices-packing-slips-numbering.md
                     - name: Tax on natural resources report
                       href: localizations/latvia/emea-lva-tax-natural-resources.md
-                    - name: VAT statement details
-                      href: localizations/latvia/emea-lva-vat-statement-details.md
+                    - name: VAT declaration
+                      href: localizations/latvia/emea-lva-vat-declaration-latvia.md
                     - name: Latvian Intrastat
                       href: localizations/latvia/emea-lva-intrastat.md
                     - name: EU sales list

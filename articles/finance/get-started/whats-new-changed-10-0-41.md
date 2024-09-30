@@ -4,7 +4,7 @@ description: Learn about features that are either new or changed in the Microsof
 author: twheeloc
 ms.author: twheeloc
 ms.topic: faq
-ms.date: 7/28/2024
+ms.date: 9/17/2024
 ms.custom:   
   - bap-template
   - evergreen
@@ -69,6 +69,7 @@ This section contains a table that lists the enhancements that are included in t
 | Tax | Global withholding tax performance improvement | The performance of the withholding tax calculation process is improved when customer or vendor invoices are settled. | Default on |
 | Tax (India) | Performance improvements for posting journals | Posting performance is improved when there is a large volume of journal entries where India's Goods and Services Tax (GST) is applied. | Default on|
 | Electronic Invoicing | E-Invoicing for Chile: Vendor electronic invoice import | This feature enhances the last-mile integration with the Chilean Tax Authorities via the Edicom certification authorization provider. It provides the required end-to-end process for the inbound flow of electronic invoice import. For more information, see [Vendor electronic invoice import in Chile](../localizations/iberoamerica/ltm-chl-vend-e-invoice.md). | |
+| Regulatory reporting | VAT declaration for Lithuania | New **VAT declaration XML (LT)** and **VAT declaration Excel (LT)** ER formats are introduced under the **Tax declaration model**. For more information, see [VAT declaration for Lithuania (FR0600)](../localizations/lithuania/emea-ltu-vat-declaration-lithuania.md). | |
 
 ## Features turned on by default in this release
 
