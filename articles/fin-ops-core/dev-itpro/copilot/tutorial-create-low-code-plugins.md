@@ -33,6 +33,8 @@ Here's an overview of the steps in this tutorial:
 1. Create a message response to send the translated text back to the user in the Copilot pane.
 1. Test the new Copilot capability.
 
+For a click-by-click walkthrough of this tutorial, see [Extend finance and operations apps Copilot capabilities with low-code plugins](https://app2.getreprise.com/launch/ZXB0M6v)
+
 ### Prerequisites
 
 For this tutorial, you must first enable Copilot in finance and operations apps in your environment. For instructions, see [Enable Copilot capabilities in finance and operations apps](enable-copilot.md).
