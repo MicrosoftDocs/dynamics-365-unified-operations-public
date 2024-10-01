@@ -314,11 +314,22 @@ When you use the *Inventory Visibility integration with soft reservation on sale
         - **Offset quantity** – The total offset quantity, including both offset success and in-progress quantities.
         - **Pending to offset quantity** – The quantity that skipped soft reservation and proceeded directly to hard reservation or further physical inventory consumption.
 
-1. To view and edit the soft reservation status of a sales line, select the line on the **Sales order lines** FastTab, and then, on the **Line details** FastTab, select the **General** tab. If your system is set to block or warn when a soft reservation couldn't be made, you might see a block notice here. To help avoid the risk of overselling, we strongly recommend that you don't choose to override the soft reservation validation unless overrides are permitted in your business.
+1. To view and edit the soft reservation blocking level of a sales line, select the relevant line on the **Sales order lines** FastTab. Then, expand the **Line details** FastTab and open its **General** tab. The **Soft reservation blocking level** field indicates the blocking level for the selected sales line. The default setting for all new order lines is set on the **Inventory visibility integration parameters** page, but you can edit it for individual sales lines as needed. The following values are possible:
+
+    - *Ignore* – You won't be blocked or receive a warning if you reserve physical or reserve ordered without a soft reservation.
+    - *Warning* – You'll receive a warning, but won't be blocked, if you reserve physical or reserve ordered without a soft reservation.
+    - *Blocking* – You must have a soft reservation before you can reserve physical or reserve ordered.
+
+    If a line is set to block or warn when a soft reservation couldn't be made, you might see a block notice here. To help avoid the risk of overselling, we strongly recommend that you don't choose to override the soft reservation validation unless overrides are permitted in your business.
 
     When a soft reservation is successfully made, a soft reservation ID is automatically returned and recorded for each sales line.
 
     By default, the soft reservation offset is triggered when the line reaches a hard reservation status (*Reserve physical* or *Reserve ordered*) or later. Sales lines that show a valid soft reservation ID and a qualifying trigger status will automatically be added to the offset batch queue.
+
+1. To view the soft reservation status of a sales order line, select the relevant line on the **Sales order lines** FastTab. Then, expand the **Line details** FastTab and open its **General** tab. The **Soft reservation status** field shows the stage of the soft reservation process for the selected sales order line. The following values are possible:
+   - *Not started* – The soft reservation process is waiting to start.
+   - *Unfinished* – A soft reservation was attempted, but not all quantities were successfully posted. Some or all quantities might have failed to post, or some quantities might have been successfully soft reserved with other reservations still waiting to finish.
+   - *Succeeded* – All quantities were successfully soft reserved.
 
 > [!NOTE]
 > If you must reverse a successful soft reservation, open the relevant sales order, and then select **Revert reservation directly** or **Revert reservation by batch** at the sales order or sales line level.
