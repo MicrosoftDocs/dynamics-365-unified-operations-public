@@ -83,7 +83,7 @@ To add the SSL certificate you created to the CSU Entra ID app, follow these ste
 1. Select **Add**.
 
 > [!NOTE]
-> SSL certificates are issued for one year by default. It's critical that you have a plan to update the SSL certificate associated with your Azure App registration and the Sealed CSU at least one month before expiration. Failure to perform this planned update results in the Sealed CSU no longer being able to communicate with Commerce headquarters. For instructions on how to apply a new SSL certificate, see (Update an expired SSL certificatec)[#update-an-expired-SSL-certificate].
+> SSL certificates are issued for one year by default. It's critical that you have a plan to update the SSL certificate associated with your Azure App registration and the Sealed CSU at least one month before expiration. Failure to perform this planned update results in the Sealed CSU no longer being able to communicate with Commerce headquarters. For instructions on how to apply a new SSL certificate, see (Update an expired SSL certificate)[#update-an-expired-SSL-certificate].
 	
 ## Update Commerce headquarters
 
