@@ -4,7 +4,7 @@ description: Learn how to use Microsoft Copilot Studio to create low-code plugin
 author: jaredha
 ms.author: jaredha
 ms.topic: how-to
-ms.date: 08/19/2024
+ms.date: 10/01/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.collection:
@@ -33,7 +33,7 @@ Here's an overview of the steps in this tutorial:
 1. Create a message response to send the translated text back to the user in the Copilot pane.
 1. Test the new Copilot capability.
 
-For a click-by-click walkthrough of this tutorial, see [Extend finance and operations apps Copilot capabilities with low-code plugins](https://app2.getreprise.com/launch/ZXB0M6v)
+For a walkthrough of this tutorial, see [Extend finance and operations apps Copilot capabilities with low-code plugins](https://app2.getreprise.com/launch/ZXB0M6v)
 
 ### Prerequisites
 
