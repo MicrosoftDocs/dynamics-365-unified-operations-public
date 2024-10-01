@@ -2,7 +2,7 @@
 title: Purchase order year-end close
 description: Learn about the required steps for running the purchase order year-end process.
 author: music727
-ms.author: music727
+ms.author: milda.beinaryte
 ms.topic: article
 ms.date: 09/25/2024
 ms.reviewer: twheeloc
@@ -18,11 +18,11 @@ ms.search.validFrom: 09/25/2024
 
 This article describes the required steps and setup for running the purchase order year-end process.
 
-If you record encumbrances for purchase orders in the general ledger, including purchase orders for projects, you can generate closing entries in the general ledger and against budget reservations at the end of each fiscal year. At the start of the new fiscal year, you can create opening entries to correctly record the encumbrances and budget reservations. These entries ensure that the reservations for purchase order encumbrances are correctly recorded on the year-end financial statements and in budget control. Learn more in [About purchase order encumbrances](https://learn.microsoft.com/dynamicsax-2012/appuser-itpro/about-purchase-order-encumbrances).
+If you record encumbrances for purchase orders in the general ledger, including purchase orders for projects, you can generate closing entries in the general ledger and against budget reservations at the end of each fiscal year. At the start of the new fiscal year, you can create opening entries to correctly record the encumbrances and budget reservations. These entries ensure that the reservations for purchase order encumbrances are correctly recorded on the year-end financial statements and in budget control. Learn more in [About purchase order encumbrances](/dynamicsax-2012/appuser-itpro/about-purchase-order-encumbrances).
 
 For projects, the account that distributions are assigned to in the new fiscal year is the account that is defined on the **Purchase order year-end process** page in the **General ledger** module. It isn't the account that is defined on the **Ledger posting setup** page in the **Project management and accounting** module.
 
-For public sector organizations that use general budget reservations, go to [Finalize a general budget reservation (Public sector)](https://learn.microsoft.com/dynamicsax-2012/appuser-itpro/finalize-a-general-budget-reservation-public-sector) and [Carry forward general budget reservation information to a new fiscal year (Public sector)](https://learn.microsoft.com/dynamicsax-2012/appuser-itpro/carry-forward-general-budget-reservation-information-to-a-new-fiscal-year-public-sector).
+For public sector organizations that use general budget reservations, go to [Finalize a general budget reservation (Public sector)](/dynamicsax-2012/appuser-itpro/finalize-a-general-budget-reservation-public-sector) and [Carry forward general budget reservation information to a new fiscal year (Public sector)](/dynamicsax-2012/appuser-itpro/carry-forward-general-budget-reservation-information-to-a-new-fiscal-year-public-sector).
 
 > [!NOTE]
 > General budget reservations are available only if the **Public Sector** configuration key is enabled.
@@ -32,7 +32,7 @@ In the case of a partially invoiced purchase order, only the amount that hasn't 
 The closing of purchase order encumbrances and the closing of a fiscal year are separate processes. Purchase order encumbrances are usually closed before a fiscal year is closed. Learn more about how to close a fiscal year in [Year-end close](../general-ledger/year-end-close.md).
 
 > [!NOTE]
-> (FRA) French public sector entities can also create or update commitments in the new fiscal year. Learn more in [(FRA) About commitments (Public sector)](https://learn.microsoft.com/dynamicsax-2012/appuser-itpro/fra-about-commitments-public-sector) and [(FRA) Process purchase order encumbrances and commitments at year end (Public sector)](https://learn.microsoft.com/dynamicsax-2012/appuser-itpro/fra-process-purchase-order-encumbrances-and-commitments-at-year-end-public-sector).
+> (FRA) French public sector entities can also create or update commitments in the new fiscal year. Learn more in [(FRA) About commitments (Public sector)](/dynamicsax-2012/appuser-itpro/fra-about-commitments-public-sector) and [(FRA) Process purchase order encumbrances and commitments at year end (Public sector)](/dynamicsax-2012/appuser-itpro/fra-process-purchase-order-encumbrances-and-commitments-at-year-end-public-sector).
 
 ## Prerequisites
 
@@ -46,7 +46,7 @@ The **Process and carry forward budget** year-end option can be used only if bud
 
 ### Enable the encumbrance process
 
-The encumbrance process must be enabled before encumbrances for purchase orders can be recorded in the general ledger, and before you can successfully run the purchase order year-end process. Learn more in [Encumber purchase orders](https://learn.microsoft.com/dynamicsax-2012/appuser-itpro/encumber-purchase-orders).
+The encumbrance process must be enabled before encumbrances for purchase orders can be recorded in the general ledger, and before you can successfully run the purchase order year-end process. For more information, see [Encumber purchase orders](/dynamicsax-2012/appuser-itpro/encumber-purchase-orders).
 
 ### Set up posting definitions
 
