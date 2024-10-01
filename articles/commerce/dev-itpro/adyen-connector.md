@@ -132,7 +132,7 @@ The following video describes the capabilities of the Adyen Castles SE1 Android 
 | Discover | Samsung Pay | ✔ |  |  |
 | Diners | Standard | ✔ | ✔ | ✔ |
 | Dineromail | Standard | ✔ | ✔ | ✔ |
-| JCB | Standard | ✔ | ✔ | ✔ |
+| Japan Credit Bureau (JCB) | Standard | ✔ | ✔ | ✔ |
 | Union Pay\* | Standard | ✔ |  |  |
 | Interac Debit\* | Standard | ✔ |  |  |
 
@@ -143,7 +143,7 @@ The following video describes the capabilities of the Adyen Castles SE1 Android 
 | Scheme | Card present | Card not present |
 |---|:-:|---|
 | Givex | ✔ | ✔ |
-| SVS | ✔ | ✔ |
+| Stored Value Solutions (SVS) | ✔ | ✔ |
 
 To support these external gift card schemes through the Dynamics 365 Payment Connector for Adyen, you must complete additional steps. For more information, see [Support for external gift cards](/dynamics365/unified-operations/retail/dev-itpro/gift-card).
 
@@ -215,7 +215,7 @@ The following countries/regions have Commerce components available and card pres
 
 #### Supported card not present countries/regions
 
-The following countries/regions are supported by Adyen for card not present transactions. [Contact Adyen](https://www.adyen.com/contact/sales) for details about support for a specific country/region. For current international availability of Commerce, visit the [International availability page](/dynamics365/get-started/availability).
+Adyen supports the following countries/regions for card not present transactions. For details about support for a specific country/region, [contact Adyen](https://www.adyen.com/contact/sales). For information on the current international availability of Commerce, see [International availability page](/dynamics365/get-started/availability).
 
 | Country/region | 
 | --- |
