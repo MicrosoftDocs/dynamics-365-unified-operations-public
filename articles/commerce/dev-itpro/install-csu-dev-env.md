@@ -2,7 +2,7 @@
 title: Install Commerce Scale Unit on a development environment
 description: This article explains how to install Commerce Scale Unit (CSU) on virtual hard disk (VHD) local development and cloud development environments for Microsoft Dynamics 365 Commerce.
 author: bstorie
-ms.date: 07/30/2024
+ms.date: 10/01/2024
 ms.topic: how-to
 audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
@@ -83,7 +83,7 @@ To add the SSL certificate you created to the CSU Entra ID app, follow these ste
 1. Select **Add**.
 
 > [!NOTE]
-> By default SSL Certificates are issued for 1 year. It's critical that you have a plan for updating the SSL cert associated to this Azure App registration and the Sealed CSU at least one month prior to expiration. Failure to perform this planned update will lead to the Sealed CSU no longer being able to communicate with Commerce HQ. See section Updating an expired SSL Certificate for steps to apply a new SSL certificate.
+> SSL certificates are issued for one year by default. It's critical that you have a plan to update the SSL certificate associated with your Azure App registration and the Sealed CSU at least one month before expiration. Failure to perform this planned update results in the Sealed CSU no longer being able to communicate with Commerce headquarters. For instructions on how to apply a new SSL certificate, see (Update an expired SSL certificatec)[#update-an-expired-SSL-certificate].
 	
 ## Update Commerce headquarters
 
@@ -280,12 +280,13 @@ If you previously set up a sealed CSU using the steps in [Install the sealed CSU
 
 To update the sealed CSU to a newer version, obtain a newer version of the Sealed CSU installer file and then run the same command line arguments you used to first install the sealed CSU. 
 
-## Updating an expired SSL Certificate
+## Update an expired SSL certificate
 
-To update an expiring or expired certificate for the Sealed CSU you do not need to completely re-install.  Instead create the new SSL Certificate, and then the following command 
+To update an expiring or expired certificate for the Sealed CSU, you don't need to completely reinstall the Sealed CSU. Instead, create the new SSL certificate, and then run the following command.
 
+```cmd
 CommerceStoreScaleUnitSetup.exe updateCertificates --SslCertFullPath "store:///My/LocalMachine?FindByThumbprint=YourNewSslCertificateThumbprint" --AsyncClientCertFullPath "store:///My/LocalMachine?FindByThumbprint=YourNewAsyncClientAadAppCertThumbprint" --RetailServerCertFullPath "store:///My/LocalMachine?FindByThumbprint=YourNewRsAadAppCertThumbprint"
-
+```
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
