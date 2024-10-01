@@ -36,7 +36,7 @@ Retailers can use the **All stores** page in Commerce headquarters (**Retail and
 Sales associates can capture multiple addresses for a customer. The customer's name and phone number are inherited from the contact information that is associated with each address. The **Addresses** FastTab of a customer record includes a **Purpose** field that sales associates can edit. If the customer type is **Person**, the default value is **Home**. If the customer type is **Organization**, the default value is **Business**. Other values that this field supports include **Home**, **Office**, and **Post box**. The value of the **Country** field for an address is inherited from the primary address that is specified on the **Operating unit** page in Commerce headquarters at **Organization administration \> Organizations \> Operating units**.
 
 > [!NOTE]
-> We do not support customers containing abnormal amounts of address records and performance issues are expected as the number of address records increase.
+> The performance of the system is adversely impacted as the number of addresses associated with a customer grows. Thus, we recommend avoiding customizations which result in thousands of addresses for any customer.
 
 
 ## Additional resources
