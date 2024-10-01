@@ -32,7 +32,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### Sales tax report for Latvia (design based on reporting codes)
 
-[Sales tax report for Lithuania](../localizations/latvia/emea-lva-vat-statement-details.md)
+[Sales tax report for Latvia](../localizations/latvia/emea-lva-vat-statement-details.md)
 
 | &nbsp;  | &nbsp;  |
 |---|---|

@@ -2,7 +2,7 @@
 title: Install Commerce Scale Unit on a development environment
 description: This article explains how to install Commerce Scale Unit (CSU) on virtual hard disk (VHD) local development and cloud development environments for Microsoft Dynamics 365 Commerce.
 author: bstorie
-ms.date: 07/30/2024
+ms.date: 10/01/2024
 ms.topic: how-to
 audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
@@ -33,7 +33,7 @@ To create the SSL certificate, follow these steps.
 1. Open PowerShell with administrator privileges from Command Prompt.
 1. Enter the following command.
 ```cmd
-$cert = New-SelfSignedCertificate -Subject "CN=$env:computerName" -DnsName $env:computerName,$([System.Net.Dns]::GetHostByName($env:computerName).HostName) -KeyAlgorithm RSA -KeyLength 2048 -CertStoreLocation "Cert:\LocalMachine\My" -NotBefore (Get-Date) -NotAfter (Get-Date).AddYears(2) -KeyUsage KeyEncipherment,DataEncipherment,CertSign,CRLSign -KeyUsageProperty All -FriendlyName "$env:computerName" -KeyExportPolicy Exportable
+$cert = New-SelfSignedCertificate -Subject "CN=$env:computerName" -DnsName $env:computerName,$([System.Net.Dns]::GetHostByName($env:computerName).HostName) -KeyAlgorithm RSA -KeyLength 2048 -CertStoreLocation "Cert:\LocalMachine\My" -NotBefore (Get-Date) -NotAfter (Get-Date).AddYears(2) -KeyUsage KeyEncipherment,DataEncipherment,CertSign,CRLSign,DigitalSignature -KeyUsageProperty All -FriendlyName "$env:computerName" -KeyExportPolicy Exportable
 Export-Certificate -Cert $cert -FilePath "$env:temp\https.cer"
 Import-Certificate -CertStoreLocation cert:\LocalMachine\Root -FilePath "$env:temp\https.cer"'
 ```
@@ -81,6 +81,9 @@ To add the SSL certificate you created to the CSU Entra ID app, follow these ste
 1. For **Description**, enter "Devbox cert".
 1. For **Set Description**, enter "Devbox Self-signed Certificate".
 1. Select **Add**.
+
+> [!NOTE]
+> SSL certificates are issued for one year by default. It's critical that you have a plan to update the SSL certificate associated with your Azure App registration and the Sealed CSU at least one month before expiration. Failure to perform this planned update results in the Sealed CSU no longer being able to communicate with Commerce headquarters. For instructions on how to apply a new SSL certificate, see (Update an expired SSL certificate)[#update-an-expired-SSL-certificate].
 	
 ## Update Commerce headquarters
 
@@ -209,7 +212,9 @@ To install the sealed CSU on the development machine, follow these steps.
 1. Change directory to C:\temp (for example, `CD C:\temp`).
 1. Execute the following command.
 
-`CommerceStoreScaleUnitSetup.exe install --port 446 --SSLCertThumbprint "<SSL thumbprint of certificate created earlier>" --RetailServerCertThumbprint "<SSL thumbprint of certificate created earlier>" --AsyncClientCertThumbprint "<SSL thumbprint of certificate created earlier >"  --AsyncClientAADClientID "<CSU Azure APP Client ID>" --RetailServerAADClientID "<CSU Azure APP Client ID>" --CPOSAADClientID "<CPOS Azure APP Client ID>" --RetailServerAADResourceID "<Application ID URI>" --Config "c:\temp\StoreSystemSetup.xml" --SkipSChannelCheck --trustSqlservercertificate`
+```cmd
+CommerceStoreScaleUnitSetup.exe install --port 446 --SSLCertThumbprint "<SSL thumbprint of certificate created earlier>" --RetailServerCertThumbprint "<SSL thumbprint of certificate created earlier>" --AsyncClientCertThumbprint "<SSL thumbprint of certificate created earlier >"  --AsyncClientAADClientID "<CSU Azure APP Client ID>" --RetailServerAADClientID "<CSU Azure APP Client ID>" --CPOSAADClientID "<CPOS Azure APP Client ID>" --RetailServerAADResourceID "<Application ID URI>" --Config "c:\temp\StoreSystemSetup.xml" --SkipSChannelCheck --trustSqlservercertificate
+```
 
 > [!NOTE]
 > - Since this is a development machine, using the same SSL thumbprint to run all services is allowed. For production and user acceptance testing (UAT) environments, these values should be different.
@@ -277,8 +282,13 @@ If you previously set up a sealed CSU using the steps in [Install the sealed CSU
 
 To update the sealed CSU to a newer version, obtain a newer version of the Sealed CSU installer file and then run the same command line arguments you used to first install the sealed CSU. 
 
+## Update an expired SSL certificate
 
+To update an expiring or expired certificate for the Sealed CSU, you don't need to completely reinstall the Sealed CSU. Instead, create the new SSL certificate, and then execute the following command.
 
+```cmd
+CommerceStoreScaleUnitSetup.exe updateCertificates --SslCertFullPath "store:///My/LocalMachine?FindByThumbprint=YourNewSslCertificateThumbprint" --AsyncClientCertFullPath "store:///My/LocalMachine?FindByThumbprint=YourNewAsyncClientAadAppCertThumbprint" --RetailServerCertFullPath "store:///My/LocalMachine?FindByThumbprint=YourNewRsAadAppCertThumbprint"
+```
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
