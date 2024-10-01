@@ -284,7 +284,7 @@ To update the sealed CSU to a newer version, obtain a newer version of the Seale
 
 ## Update an expired SSL certificate
 
-To update an expiring or expired certificate for the Sealed CSU, you don't need to completely reinstall the Sealed CSU. Instead, create the new SSL certificate, and then run the following command.
+To update an expiring or expired certificate for the Sealed CSU, you don't need to completely reinstall the Sealed CSU. Instead, create the new SSL certificate, and then execute the following command.
 
 ```cmd
 CommerceStoreScaleUnitSetup.exe updateCertificates --SslCertFullPath "store:///My/LocalMachine?FindByThumbprint=YourNewSslCertificateThumbprint" --AsyncClientCertFullPath "store:///My/LocalMachine?FindByThumbprint=YourNewAsyncClientAadAppCertThumbprint" --RetailServerCertFullPath "store:///My/LocalMachine?FindByThumbprint=YourNewRsAadAppCertThumbprint"
