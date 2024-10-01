@@ -262,6 +262,23 @@ LocalAgentCLI.exe Cleanup <path of localagent-config.json>
 > [!NOTE]
 > The **Cleanup** command doesn't remove any files that were put in the file share. The file share can be reused.
 
+If you have errors with the Cleanup, you can use the following PowerShell script as an alternative to remove the Local Agent:
+
+```powershell
+$applicationNamesLocalAgent = @('fabric:/LocalAgent', 'fabric:/Agent-Monitoring', 'fabric:/Agent-LBDTelemetry', 'fabric:/LBDTelemetry-Agent')
+$applicationTypeNamesLocalAgent = @('MonitoringAgentAppType-Agent', 'LocalAgentType', 'LBDTelemetryType-Agent')
+
+Connect-ServiceFabricCluster
+
+Get-ServiceFabricApplication | `
+    Where-Object { $_.ApplicationName -in $applicationNamesLocalAgent } | `
+    Remove-ServiceFabricApplication -Force
+
+Get-ServiceFabricApplicationType | `
+    Where-Object { $_.ApplicationTypeName -in $applicationTypeNamesLocalAgent } | `
+    Unregister-ServiceFabricApplicationType -Force
+```
+
 ## An error occurs when local agent services are started
 
 When local agent services are started, you might receive the following error:
@@ -542,7 +559,7 @@ Follow these steps to upgrade Service Fabric in Windows PowerShell.
     > **-UpgradeReplicaSetCheckTimeout** is used to skip PreUpgradeSafetyCheck for SSRS and Management Reporter. For more information, see [Service Fabric service upgrade not working](https://github.com/Azure/service-fabric-issues/issues/595). You might also want to use **-UpgradeDomainTimeoutSec 600 -UpgradeTimeoutSec 1800**. For more information, see [Application upgrade parameters](/azure/service-fabric/service-fabric-application-upgrade-parameters).
 
     ```powershell
-    Start-ServiceFabricClusterUpgrade -Code -CodePackageVersion 6.1.472.9494 -Monitored -FailureAction Rollback -UpgradeReplicaSetCheckTimeout 30
+    Start-ServiceFabricClusterUpgrade -Code -CodePackageVersion 10.1.2338.9590 -Monitored -FailureAction Rollback -UpgradeReplicaSetCheckTimeout 30
     ```
 
 4. Get the upgrade status.
