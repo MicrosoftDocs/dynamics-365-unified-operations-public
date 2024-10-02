@@ -232,7 +232,7 @@ Follow these steps to create deployable packages that contain Commerce component
 The steps described in this section are required if you're using Commerce version 10.0.28 or earlier and are migrating to version 10.0.29 or later. You must follow these steps to correctly update your Commerce environment.
 
 1. Update Commerce headquarters.
-1. Enable [Poland-specific features](#enable-the-customer-information-management-feature-for-poland) in the **Feature management** workspace, and distribute the changes to channels.
+1. For Commerce 10.0.38 and below, you must enable the **(Poland) Customer information management in Retail POS** feature in the **Feature management** workspace, and distribute the changes to channels.
 1. Update CRT, Cloud POS, and Modern POS, and exclude the following legacy Poland-specific extensions:
 
     1. In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** files, exclude the **Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdPoland** CRT extension.
