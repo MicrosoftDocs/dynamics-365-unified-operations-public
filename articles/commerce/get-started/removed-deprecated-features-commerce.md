@@ -35,7 +35,17 @@ This list is intended to help you consider these removals and deprecations for y
 |------------|--------------------|
 | **Reason for deprecation/removal** | The functionalities behind this feature flag are now available by default hence no need for a feature flag. |
 | **Replaced by another feature?**   | No |
-| **Product areas affected**         | HQ Globalisation |
+| **Product areas affected**         | HQ Italy Localization |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: This feature is turned on by default and no longer behind a feature flag since Commerce version 10.0.39 |
+
+### (Poland) Customer information management for Retail POS
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The functionalities behind this feature flag are now available by default hence no need for a feature flag. |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | HQ Poland Localization |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: This feature is turned on by default and no longer behind a feature flag since Commerce version 10.0.39 |
 
