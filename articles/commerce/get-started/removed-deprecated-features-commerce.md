@@ -2,14 +2,15 @@
 title: Removed or deprecated features in Dynamics 365 Commerce
 description: This article describes features that have been removed, or that are planned for removal from Dynamics 365 Commerce.
 author: josaw1
-ms.date: 03/10/2023
-ms.topic: article
+ms.date: 10/02/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: anupamar
 ms.search.validFrom: 2020-04-30
-ms.dyn365.ops.version: Platform update 33
+ms.custom: 
+  - bap-template
 ---
 
 # Removed or deprecated features in Dynamics 365 Commerce
@@ -33,21 +34,21 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The functionalities behind this feature flag are now available by default hence no need for a feature flag. |
+| **Reason for deprecation/removal** | The functionalities behind this feature flag are now available by default, so a feature flag is unnecessary. |
 | **Replaced by another feature?**   | No |
-| **Product areas affected**         | HQ Italy Localization |
+| **Product areas affected**         | Commerce headquarters Italy localization |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: This feature is turned on by default and no longer behind a feature flag since Commerce version 10.0.39 |
+| **Status**                         | Deprecated: This feature is turned on by default and no longer behind a feature flag since Commerce version 10.0.39. |
 
 ### (Poland) Customer information management for Retail POS
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The functionalities behind this feature flag are now available by default hence no need for a feature flag. |
+| **Reason for deprecation/removal** | The functionalities behind this feature flag are now available by default, so a feature flag is unnecessary. |
 | **Replaced by another feature?**   | No |
-| **Product areas affected**         | HQ Poland Localization |
+| **Product areas affected**         | Commerce headquarters Poland localization |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: This feature is turned on by default and no longer behind a feature flag since Commerce version 10.0.39 |
+| **Status**                         | Deprecated: This feature is turned on by default and no longer behind a feature flag since Commerce version 10.0.39. |
 
 ## Features removed or deprecated in the Commerce 10.0.33 release
 
