@@ -29,7 +29,6 @@ You can specify the customer information, such as the fiscal code or lottery cod
 
 You must complete the following configuration to use this functionality:
 
-- Enable the customer information management feature for Italy
 - Set up a registration type for the lottery code.
 - Add the **Add customer information** operation to screen layouts.
 - Activate the inquiry for customer information.
@@ -37,9 +36,8 @@ You must complete the following configuration to use this functionality:
 - Add a customer search criterion.
 - Configure channel components.
 
-### Enable the customer information management feature for Italy
-
-You must enable the **(Italy) Customer information management in Retail POS** feature in the **Feature management** workspace.
+> [!NOTE]
+> For Commerce 10.0.38 and below, you must enable the **(Italy) Customer information management in Retail POS** feature in the **Feature management** workspace.
 
 ### Set up a registration type for the lottery code
 
