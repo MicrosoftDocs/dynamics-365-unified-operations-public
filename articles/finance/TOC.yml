@@ -675,7 +675,7 @@
                 - name: Budget analysis report
                   href: public-sector/budget-analysis-report.md
                 - name: Purchase order year-end process
-                  href: purchase-order-year-end-process.md
+                  href: budgeting/purchase-order-year-end-process.md
         - name: Cash and bank management
           items:
             - name: Petty cash
