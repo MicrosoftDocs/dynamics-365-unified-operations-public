@@ -262,7 +262,7 @@ LocalAgentCLI.exe Cleanup <path of localagent-config.json>
 > [!NOTE]
 > The **Cleanup** command doesn't remove any files that were put in the file share. The file share can be reused.
 
-If you have errors with the Cleanup, you can use the following PowerShell script as an alternative to remove the Local Agent:
+If you have errors with the **Cleanup** command, use the following PowerShell script as an alternative to remove the local agent:
 
 ```powershell
 $applicationNamesLocalAgent = @('fabric:/LocalAgent', 'fabric:/Agent-Monitoring', 'fabric:/Agent-LBDTelemetry', 'fabric:/LBDTelemetry-Agent')
