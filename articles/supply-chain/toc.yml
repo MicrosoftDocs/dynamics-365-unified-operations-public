@@ -2357,6 +2357,16 @@
           href: unified-pricing-management/upm-price-attribute-groups.md
         - name: Customer and product price attribute groups
           href: unified-pricing-management/upm-customer-product-attribute-groups.md
+      - name: Price groups
+        items:
+        - name: Price groups overview
+          href: unified-pricing-management/upm-price-groups-overview.md
+        - name: Set up price groups for Unified pricing management
+          href: unified-pricing-management/upm-price-groups-set-up.md
+        - name: Assign price groups
+          href: unified-pricing-management/upm-price-groups-assign.md
+        - name: Price group priorities
+          href: unified-pricing-management/upm-price-groups-priorities.md
       - name: Price component codes
         items:
         - name: Price component codes
