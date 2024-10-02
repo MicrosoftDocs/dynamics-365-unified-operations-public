@@ -642,14 +642,10 @@
               href: budgeting/budgeting-overview.md
             - name: Budget planning overview
               href: budgeting/budget-planning-overview-configuration.md
-            - name: Budget control overview
-              href: budgeting/budget-control-overview-configuration.md
             - name: Budgeting overview
               href: budgeting/basic-budgeting-overview-configuration.md
             - name: Create budget register entries
               href: budgeting/budget-register-entries.md
-            - name: Budget funds available
-              href: budgeting/budget-funds-available.md
             - name: Position forecasting
               href: budgeting/position-forecasting.md
             - name: Budget planning justification documents
@@ -670,6 +666,16 @@
               href: budgeting/budget-planning-data-allocation.md
             - name: Budget planning integration with other modules
               href: budgeting/budget-planning-integration-other-modules.md
+            - name: Budget control
+              items:
+                - name: Budget control overview
+                  href: budgeting/budget-control-overview-configuration.md
+                - name: Budget funds available
+                  href: budgeting/budget-funds-available.md
+                - name: Budget analysis report
+                  href: public-sector/budget-analysis-report.md
+                - name: Purchase order year-end process
+                  href: purchase-order-year-end-process.md
         - name: Cash and bank management
           items:
             - name: Petty cash
