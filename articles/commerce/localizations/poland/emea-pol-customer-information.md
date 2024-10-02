@@ -29,16 +29,14 @@ You can specify the customer's VAT number when you create or edit a customer mas
 
 You must complete the following configuration steps to use this functionality:
 
-- Enable the customer information management feature for Poland.
 - Set up a registration type for the VAT number.
 - Add the **Add customer information** operation to screen layouts.
 - Activate the inquiry for customer information.
 - Set up receipt formats.
 - Configure channel components.
 
-### Enable the customer information management feature for Poland
-
-You must enable the **(Poland) Customer information management in Retail POS** feature in the **Feature management** workspace.
+> [!NOTE]
+> For Commerce 10.0.38 and below, you must enable the **(Poland) Customer information management in Retail POS** feature in the **Feature management** workspace.
 
 ### Set up a registration type for the VAT number
 
