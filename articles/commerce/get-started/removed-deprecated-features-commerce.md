@@ -27,6 +27,18 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
+## Features removed or deprecated in the Commerce 10.0.39 release
+
+### (Italy) Customer information management for Retail POS
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The functionalities behind this feature flag are now available by default hence no need for a feature flag. |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | HQ Globalisation |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: This feature is turned on by default and no longer behind a feature flag since Commerce version 10.0.39 |
+
 ## Features removed or deprecated in the Commerce 10.0.33 release
 
 ### Accessibility Insights integration within site builder
