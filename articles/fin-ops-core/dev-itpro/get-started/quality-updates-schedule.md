@@ -66,7 +66,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.40 PQU-1 | July 10, 2024 | July 15, 2024 to August 18, 2024| Completed |
 | 10.0.40 PQU-2 | August 7, 2024 | August 12, 2024 to September 15, 2024| Completed |
 | 10.0.40 PQU-3 | September 4, 2024 | September 9, 2024 to October 13, 2024| In-Progress |
-| 10.0.40 PQU-4 | October 2, 2024 | October 7, 2024 to November 10, 2024| Not Started |
+| 10.0.40 PQU-4 | October 2, 2024 | October 7, 2024 to November 10, 2024| In-Progress |
 | 10.0.40 PQU-5 | October 30, 2024 | November 4, 2024 to December 15, 2024| Not Started |
 | 10.0.40 PQU-6 | December 4, 2024 | December 9, 2024 to January 19, 2025| Not Started |
 | 10.0.40 PQU-7 | January 8, 2025 | January 13, 2025 to February 16, 2025| Not Started |
@@ -92,7 +92,7 @@ The following table shows the high-level train schedule. It includes a descripti
 > [!Note]
 > Any new finance and operations apps environment that is provisioned after August 17th, 2023 is automatically signed up to receive PQUs per the schedule as applicable.
 
-### <a name="schedule"></a>[NEW] Proactive quality update upcoming 10.0.38 Release-8 train schedule
+### <a name="schedule"></a> Proactive quality update upcoming 10.0.38 Release-8 train schedule
 
 **App version: 10.0.1777.241**
 
@@ -143,23 +143,6 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | October 21 to October 24, 2024 | November 2 to November 3, 2024 |
 | Station 6 | October 22 to October 25, 2024 | November 2 to November 3, 2024 |
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.40 Release-2 train schedule
-
-**App version: 10.0.1935.92**
-
-**Platform version: 7.0.7279.122**
-
-**Unified Environment Provisioning Application Version: 10.0.40.4**
-
-| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
-|---|---|---|
-| Station 1 | August 12 to August 15, 2024 | NA |
-| Station 2 | August 19 to August 22, 2024 | August 31 to September 1, 2024 |
-| Station 3 | August 20 to August 23, 2024 | August 31 to September 1, 2024|
-| Station 4 | August 26 to August 29, 2024 | September 7 to September 8, 2024 |
-| Station 5 | September 2 to September 5, 2024 | September 14 to September 15, 2024 |
-| Station 6 | September 3 to September 6, 2024 | September 14 to September 15, 2024 |
-
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.40 Release-3 train schedule
 
 **App version: 10.0.1935.121**
@@ -176,6 +159,23 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | September 23 to September 26, 2024 | October 5 to October 6, 2024 |
 | Station 5 | September 30 to October 3, 2024 | October 12 to October 13, 2024 |
 | Station 6 | October 1 to October 4, 2024 | October 12 to October 13, 2024 |
+
+### <a name="schedule"></a>[NEW] Proactive quality update upcoming 10.0.40 Release-4 train schedule
+
+**App version: 10.0.1935.139**
+
+**Platform version: 7.0.7279.152**
+
+**Unified Environment Provisioning Application Version: 10.0.40.6**
+
+| Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
+|---|---|---|
+| Station 1 | October 7 to October 10, 2024 | NA |
+| Station 2 | October 14 to October 17, 2024 | October 26 to October 27, 2024 |
+| Station 3 | October 15 to October 18, 2024 | October 26 to October 27, 2024|
+| Station 4 | October 21 to October 24, 2024 | November 2 to November 3, 2024 |
+| Station 5 | October 28 to October 31, 2024 | November 9 to November 10, 2024 |
+| Station 6 | October 29 to November 1, 2024 | November 9 to November 10, 2024 |
 
 > [!IMPORTANT] 
 > At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).
