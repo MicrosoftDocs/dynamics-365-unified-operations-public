@@ -34,7 +34,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The functionalities behind this feature flag are now available by default, so a feature flag is unnecessary. |
+| **Reason for deprecation/removal** | The functionalities of this feature are now available by default, so a feature flag is unnecessary. |
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Commerce headquarters Italy localization |
 | **Deployment option**              | All |
@@ -44,7 +44,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The functionalities behind this feature flag are now available by default, so a feature flag is unnecessary. |
+| **Reason for deprecation/removal** | The functionalities of this feature are now available by default, so a feature flag is unnecessary. |
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Commerce headquarters Poland localization |
 | **Deployment option**              | All |
