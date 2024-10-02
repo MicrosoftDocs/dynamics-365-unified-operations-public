@@ -2,7 +2,7 @@
 title: Customer information management for Poland
 description: This article describes how to handle customer information in Retail POS for Poland.
 author: EvgenyPopovMBS
-ms.date: 08/09/2024
+ms.date: 10/02/2024
 ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
@@ -15,8 +15,6 @@ ms.custom:
 # Customer information management for Poland
 
 [!include [banner](../../../finance/includes/banner.md)]
-
-## Introduction
 
 This article describes how you can handle customer information, such as the customer's value-added tax (VAT) number, in Retail point of sale (POS) for Poland.
 
@@ -36,7 +34,7 @@ You must complete the following configuration steps to use this functionality:
 - Configure channel components.
 
 > [!NOTE]
-> For Commerce 10.0.38 and below, you must enable the **(Poland) Customer information management in Retail POS** feature in the **Feature management** workspace.
+> For Commerce version 10.0.38 and earlier, you must enable the **(Poland) Customer information management in Retail POS** feature in the Commerce headquarters **Feature management** workspace.
 
 ### Set up a registration type for the VAT number
 
@@ -232,7 +230,7 @@ Follow these steps to create deployable packages that contain Commerce component
 The steps described in this section are required if you're using Commerce version 10.0.28 or earlier and are migrating to version 10.0.29 or later. You must follow these steps to correctly update your Commerce environment.
 
 1. Update Commerce headquarters.
-1. For Commerce 10.0.38 and below, you must enable the **(Poland) Customer information management in Retail POS** feature in the **Feature management** workspace, and distribute the changes to channels.
+1. For Commerce version 10.0.38 and earlier, you must enable the **(Poland) Customer information management in Retail POS** feature in the Commerce headquarters **Feature management** workspace and distribute the changes to channels.
 1. Update CRT, Cloud POS, and Modern POS, and exclude the following legacy Poland-specific extensions:
 
     1. In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** files, exclude the **Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdPoland** CRT extension.
