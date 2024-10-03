@@ -18,7 +18,7 @@ ms.search.validFrom: 09/25/2024
 
 This article describes the required steps and setup for running the purchase order year-end process.
 
-Purchase order year-end process allows organizations that are using budget module to transfer open purchase orders during the year-end closing. During this transfer, the closing year budget is released (or reversed) in budget registries, and new lines are created in the next open perion. As a result, the accounting dates and financial distribution dates on the purchase order are updated.
+Purchase order year-end process allows organizations using budget module to transfer open purchase orders during the year-end closing. During this transfer, the closing year budget is released (or reversed) in budget registries, and new lines are created in the next open period. The accounting dates and financial distribution dates on the purchase order are updated.
 If you record encumbrances for purchase orders in the general ledger, including purchase orders for projects, you can generate closing entries in the general ledger and against budget reservations at the end of each fiscal year. At the start of the new fiscal year, you can create opening entries to correctly record the encumbrances and budget reservations. These entries ensure that the reservations for purchase order encumbrances are correctly recorded on the year-end financial statements and in budget control. Learn more in [About purchase order encumbrances](/dynamicsax-2012/appuser-itpro/about-purchase-order-encumbrances).
 
 For projects, the account that distributions are assigned to in the new fiscal year is the account that is defined on the **Purchase order year-end process** page in the **General ledger** module. It isn't the account that is defined on the **Ledger posting setup** page in the **Project management and accounting** module.
@@ -82,16 +82,16 @@ Select one of the following year-end processing options to close purchase order 
 ## Prepare for a purchase order year-end process
 
 > [!NOTE]
->To run POYE process, budget control configuration must have parameter **Include carry forward amount** enabled in the **Budget funds available** tab. 
+> To run the purchase order year-end process, budget control configuration must have the **Include carry forward amount** parameter enabled in the **Budget funds available** tab. 
 
-To assure purchase orders are retrieved during POYE process, the following conditions should be met: 
+To retrieved purchase orders during the purchase order year-end process, the following conditions should be met: 
 - A purchase orders must be in a **Confirmed** state or should have reserved budget values (encumbrance).
-- A purchase order should not be fully invoiced (open or partially invoiced).
+- A purchase order shouldn't be fully invoiced (open or partially invoiced).
 - Workflow process for a purchase order approval should be completed.
-- No draft invoices should exist for the purchase order. If a draft invoice exists, it must be deleted or posted before starting POYE.
-- The purchasing status must be **backorder** or **received**.
-- The last accounting event for the purchase order must be within the fiscal year specified during POYE (if 2023 is selected, the last accounting event's accounting date must be in 2023 for purchase order to be).
-- Both current and the next fiscal year period should be open.
+- No draft invoices should exist for the purchase order. If a draft invoice exists, it must be deleted or posted before starting the year-end process.
+- The purchasing status must be **Backorder** or **Received**.
+- The last accounting event for the purchase order must be within the fiscal year specified during purchase order year-end. For example, if 2023 is selected, the last accounting event's accounting date must be in 2023 for purchase order to be included.
+- Both the current and the next fiscal year period should be open.
 
 ## Select purchase orders and run the purchase order year-end process
 
