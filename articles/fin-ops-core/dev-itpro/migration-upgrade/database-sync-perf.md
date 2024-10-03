@@ -67,7 +67,7 @@ ORDER BY sum(a.used_pages) desc
 
 Depending on your dataset, you can increase or decrease the tables that are included in the **Shadow copy sync** process.
 
-Typically, threshold values are decreased to include more tables in the shadow synchronization. However, if you enable too many tables to be synced with the **Shadow** schema, a point is reached where the performance becomes slower than it would be for fewer tables. You must experiment to find the ideal values for your specific database.
+Typically, threshold values are decreased to include more tables in the shadow synchronization. However, if you enable too many tables to be synced with the **Shadow** schema, a point is reached where the performance becomes slower than it would be for fewer tables. You must experiment to find the ideal values for your specific database, however a good starting point is 1GB.
 
 > [!NOTE]
 > Run the following SQL script before you trigger the database upgrade for self-service from step 10 of the data migration toolkit.
@@ -79,8 +79,8 @@ To tune the synchronization threshold, edit and run the following SQL script.
 --
 -- Edit the following two threshold values as needed:
 --
-DECLARE @tableSizeThreshold int = 20000 --Currently 20GB (default) for min table size
-DECLARE @minNumericFieldsThreshold int = 0 --Currently 0 (default) numeric column change
+DECLARE @tableSizeThreshold int = 1000 --Currently 1GB for min table size
+DECLARE @minNumericFieldsThreshold int = 0 --Currently 0 numeric column change
 
 -- Main Script Start
 IF NOT EXISTS ( SELECT 1 FROM [dbo].[SQLSYSTEMVARIABLES] WHERE PARM='SHADOWCOPYSIZE' )
