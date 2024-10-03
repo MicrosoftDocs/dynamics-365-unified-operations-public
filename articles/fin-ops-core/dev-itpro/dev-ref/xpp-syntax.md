@@ -31,7 +31,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 <tr class="header">
 <th>Reserved word</th>
 <th>Description</th>
-<th>Operator type and other information</th>
+<th>Related information</th>
 </tr>
 </thead>
 <tbody>
