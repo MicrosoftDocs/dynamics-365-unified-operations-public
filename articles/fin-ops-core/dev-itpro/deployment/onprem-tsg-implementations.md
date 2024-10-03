@@ -48,6 +48,8 @@ For more information about how to resolve issues in on-premises environments, se
 
     #& $agentShare\scripts\TSG_EnableGMSAForAOS.ps1 -agentShare $agentShare -gmsaAccount contoso\svc-AXSF$
     #& $agentShare\scripts\TSG_EnableDixfService.ps1 -agentShare $agentShare -gmsaAccount contoso\svc-Dixf$ -DMFShare "\\servername\dixf-share"
+    
+    #& $agentShare\scripts\TSG_SSRSEnableHTTPS.ps1 -agentShare $agentShare -ssrsSslCertificateThumbprint "<SSRSHTTPS Certificate Thumbprint>"
     ```
 
 3. From the relevant section of this article, copy the code that you require to fix your issue, and paste it into a new file. Save this file in the same folder where your Predeployment.ps1 script is stored. The file name must match the title of the section that you copied the code from. Repeat this step for other issues that you must fix.
@@ -454,5 +456,60 @@ $modulesJson | ConvertTo-Json -Depth 20 | Out-File $modulesJsonPath
 Write-Host "Finished Disabling FinancialReporting component."
 ```
 
+## <a name="SSRSEnableHTTPS"></a>TSG\_SSRSEnableHTTPS.ps1
+
+The following script is used for older environment setups to allow SSRS to be configured with HTTPS.
+
+```powershell
+param (
+    [Parameter(Mandatory)]
+    [ValidateNotNullOrEmpty()]
+    [ValidateScript({ Test-Path -Path $_ })]
+    [string] $agentShare,
+
+	[Parameter(Mandatory=$true)]
+    [string]
+    $ssrsSslCertificateThumbprint 
+)
+
+$ErrorActionPreference = "Stop"
+
+$basePath = Get-ChildItem $agentShare\wp\*\StandaloneSetup-*\ |
+    Select-Object -First 1 -Expand FullName
+
+if(!(Test-Path $basePath))
+{
+    Write-Error "Basepath: $basePath , not found" -Exception InvalidOperation
+}
+
+$configJsonPath = "$basePath\config.json"
+$configJson = Get-Content $configJsonPath | ConvertFrom-Json
+
+$updatedComponents = @()
+foreach ($component in $configJson.components)
+{
+
+    if($component.name -eq "AOS")
+    {
+        $component.parameters.biReporting.reportingServers.value = $component.parameters.biReporting.persistentVirtualMachineIPAddressSSRS.value
+        $component.parameters.biReporting.ssrsUseHttps.value = $true
+		$component.parameters.biReporting.ssrsHttpsPort.value = 443
+    }
+
+    if($component.name -eq "ReportingServices")
+    {
+        $component.parameters.enableSecurity.value = $true
+        $component.parameters.ssrsSslCertificateThumbprint.value = $ssrsSslCertificateThumbprint
+		$component.parameters.ssrsHttpsPort.value = 443
+		$component.parameters.reportingServers.value = $component.parameters.ssrsServerFqdn.value
+    }
+
+    $updatedComponents += $component
+}
+
+$configJson.components = $updatedComponents
+$configJson | ConvertTo-Json -Depth 100 | Out-File $configJsonPath
+Write-Output "Successfully updated the configuration HTTPS (443) for Reporting Services"
+```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
