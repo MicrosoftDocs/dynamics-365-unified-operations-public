@@ -7,7 +7,7 @@ ms.reviewer: johnmichalak
 ms.topic: how-to
 ms.custom: 
    - bap-template
-ms.date: 07/05/2024
+ms.date: 10/01/2024
 
 ---
 
@@ -170,7 +170,7 @@ You can now confirm that the custom API and AI plugins were created in your Data
 1. Select **Save** and then **Finish**.
 
 > [!NOTE]
-> This tutorial assumes that you enabled generative mode in your copilot for plugin orchestration. If you use the default classic mode in your copilot, you must complete the extra step of creating a topic in the copilot to invoke the action. For more information, see [Configure the copilot to invoke the action](copilot-ai-plugins.md#configuring-the-copilot-to-invoke-the-action).
+> This tutorial assumes that you enabled generative mode in your copilot for plugin orchestration. If you use the default classic mode in your copilot, you must complete the extra step of creating a topic in the copilot to invoke the action. For more information, see [Configure the copilot to invoke the action](copilot-ai-plugins.md#configure-the-copilot-to-invoke-the-action).
 
 ## Step 4: Test the new plugin action
 

@@ -1,12 +1,11 @@
 ---
 title: X++ syntax
 description: Learn about the syntax reference for X++, including a table that outlines descriptions for various reserved keywords.
-author: josaw1
-ms.author: josaw
-ms.topic: article
-ms.date: 09/10/2024
+author: johnmichalak
+ms.author: johnmichalak
+ms.topic: reference
+ms.date: 10/03/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
@@ -32,7 +31,7 @@ The X++ keywords shown in the following table are reserved. These keywords can't
 <tr class="header">
 <th>Reserved word</th>
 <th>Description</th>
-<th>More information</th>
+<th>Related information</th>
 </tr>
 </thead>
 <tbody>
