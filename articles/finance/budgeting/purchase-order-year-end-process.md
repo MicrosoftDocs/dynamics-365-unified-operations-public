@@ -18,6 +18,7 @@ ms.search.validFrom: 09/25/2024
 
 This article describes the required steps and setup for running the purchase order year-end process.
 
+Purchase order year-end process allows organizations that are using budget module to transfer open purchase orders during the year-end closing. During this transfer, the closing year budget is released (or reversed) in budget registries, and new lines are created in the next open perion. As a result, the accounting dates and financial distribution dates on the purchase order are updated.
 If you record encumbrances for purchase orders in the general ledger, including purchase orders for projects, you can generate closing entries in the general ledger and against budget reservations at the end of each fiscal year. At the start of the new fiscal year, you can create opening entries to correctly record the encumbrances and budget reservations. These entries ensure that the reservations for purchase order encumbrances are correctly recorded on the year-end financial statements and in budget control. Learn more in [About purchase order encumbrances](/dynamicsax-2012/appuser-itpro/about-purchase-order-encumbrances).
 
 For projects, the account that distributions are assigned to in the new fiscal year is the account that is defined on the **Purchase order year-end process** page in the **General ledger** module. It isn't the account that is defined on the **Ledger posting setup** page in the **Project management and accounting** module.
@@ -78,12 +79,26 @@ Select one of the following year-end processing options to close purchase order 
 | Process and do not carry forward budget | <p><strong>Closing steps:</strong></p><ol><li>The remaining encumbrances in the general ledger and outstanding budget reservations for encumbrances are reversed.</li><li> Year-end closing entries are generated in the general ledger.</li></ol><p><strong>Opening steps:</strong></p><ol><li>Closing entries are reversed.</li><li> Encumbrances are reestablished in the general ledger.</li><li>Budget reservations for encumbrances are created for the purchase orders that are being processed.</li></ol> |
 | Process and carry forward budget | <p><strong>Note:</strong> This option is available only if budget control is enabled.</p><p><strong>Closing steps:</strong></p><ol><li>The remaining encumbrances in the general ledger and outstanding budget reservations for encumbrances are reversed.</li><li>Year-end closing entries are generated in the general ledger.</li><li>Budget adjustments are created to reduce the budget in the fiscal year that is being closed.</li></ol><p><strong>Opening steps:</strong></p><ol><li>Closing entries are reversed.</li><li>Encumbrances are reestablished in the general ledger.</li><li>Budget reservations for encumbrances are created for the purchase orders that are being processed.</li><li>Budget adjustments are created in the new fiscal year to reestablish the budget register entries that were carried forward from the previous fiscal year.</li></ol> |
 
+## Prepare for a purchase order year-end process
+
+> [!NOTE]
+>To run POYE process, budget control configuration must have parameter **Include carry forward amount** enabled in the **Budget funds available** tab. 
+
+To assure purchase orders are retrieved during POYE process, the following conditions should be met: 
+- A purchase orders must be in a **Confirmed** state or should have reserved budget values (encumbrance).
+- A purchase order should not be fully invoiced (open or partially invoiced).
+- Workflow process for a purchase order approval should be completed.
+- No draft invoices should exist for the purchase order. If a draft invoice exists, it must be deleted or posted before starting POYE.
+- The purchasing status must be **backorder** or **received**.
+- The last accounting event for the purchase order must be within the fiscal year specified during POYE (if 2023 is selected, the last accounting event's accounting date must be in 2023 for purchase order to be).
+- Both current and the next fiscal year period should be open.
+
 ## Select purchase orders and run the purchase order year-end process
 
 1. Go to **General ledger** \> **Periodic** \> **Fiscal year close** \> **Purchase order year-end process**.
-1. In the lower pane, select **Retrieve purchase orders**.
-1. In the query dialog box that appears, define criteria for the purchase orders that you want to include in the year-end processing. Criteria include the date, date range, vendor account, purchase order type, purchase order balance, and financial dimensions. When you're finished, select **OK**.
-1. On the **Purchase order year-end process** page, the lower pane shows the results of the query. To include only specific purchase orders from the query results in the year-end processing, select the **Include** checkbox for each one. To include all the purchase orders from the query results, select **Include all**. To clear the selection of all purchase orders, select **Exclude all**. Encumbrances for the selected purchase orders are reversed in the fiscal year that is ending. The encumbered amounts will then be available in the new fiscal year.
+2. . In the lower pane, select **Retrieve purchase orders**.
+3. . In the query dialog box that appears, define criteria for the purchase orders that you want to include in the year-end processing. Criteria include the date, date range, vendor account, purchase order type, purchase order balance, and financial dimensions. When you're finished, select **OK**.
+4. . On the **Purchase order year-end process** page, the lower pane shows the results of the query. To include only specific purchase orders from the query results in the year-end processing, select the **Include** checkbox for each one. To include all the purchase orders from the query results, select **Include all**. To clear the selection of all purchase orders, select **Exclude all**. Encumbrances for the selected purchase orders are reversed in the fiscal year that is ending. The encumbered amounts will then be available in the new fiscal year.
 
     > [!TIP]
     > You can view the details of a purchase order by selecting **View purchase order**. You can also select **View subledger journal** to view the year-end closing and opening entries that will be generated for individual purchase orders.
