@@ -77,8 +77,7 @@ To view all jobs that have been started by the signed-in worker, regardless of t
 
 ## Project tabs
 
-The project tabs **All project jobs**, **Projects**, **Project budget**, and **Project activities** allow workers to register the time spent on production-related activities. Workers can select a project-related activity from the list and log its start. The activity is marked as completed when the worker registers another activity, such as an indirect task or another project activity. The time registered by the worker will be recorded under the projects associated with these activities.
-
+The project tabs **All project jobs**, **Projects**, **Project budget**, and **Project activities** allow workers to register the time spent on production-related activities. Workers can select a project-related activity from the list and log its start. The activity is marked as completed when the worker registers another activity, such as an indirect task or another project activity. The time registered by the worker is recorded under the projects associated with these activities.
 
 ## My machine tab
 
