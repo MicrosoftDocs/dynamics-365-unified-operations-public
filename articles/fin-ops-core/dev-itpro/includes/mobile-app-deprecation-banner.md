@@ -1,3 +1,3 @@
 > [!IMPORTANT]
->  The finance and operations (Dynamics 365) mobile app and platform have been deprecated. For more information, see [Removed or deprecated platform features](../get-started/removed-deprecated-features-platform-updates.md#finance-and-operations-dynamics-365-mobile-application-and-mobile-platform).
+>  The finance and operations (Dynamics 365) mobile app and platform are no longer supported. The platform components supporting the mobile app will be removed in a future update. The mobile app has also been removed from app stores, though previously installed instances of the app will continue to work as-is. For more information, see [Removed or deprecated platform features](../get-started/removed-deprecated-features-platform-updates.md#finance-and-operations-dynamics-365-mobile-application-and-mobile-platform).
 
