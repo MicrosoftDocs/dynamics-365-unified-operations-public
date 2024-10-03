@@ -21,6 +21,15 @@ ms.dyn365.ops.version: 10.0.8
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
+## September 2024
+
+### Security update 
+
+| Feature | Description | Status |
+|---|---|---|
+|Security update |Security enhancements to secure the resources like Service bus, Table storage and Blobs. These modifications impact the Dynamics 365 Finance and Operations and "Dual-write Core" solution.<br>The security fixes are mandatory and any customer using Dual write is required, by November 30, 2024, to uptake <ul><li>PU63 Min Platform version 7.0.7198.188  OR PU64 Min Platform version 7.0.7279.121.</li><li>Dual write core solution version in Dataverse - 1.0.24073.3.</li></ul><br>Impact if the upgrade is not enabled by the November 30 2024: Dual-write Pause and Resume and Auto-Alerts feature will not function. These features have not changed in its functionality but have been made more secure.|General availability|
+
+
 ## June 2024
 
 ### Global address book
