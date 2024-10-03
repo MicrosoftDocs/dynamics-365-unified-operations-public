@@ -75,6 +75,11 @@ To view all jobs that have been started by the signed-in worker, regardless of t
 
 ![My jobs tab.](media/pfei-my-jobs-tab.png "My jobs tab")
 
+## Project tabs
+
+The project tabs **All project jobs**, **Projects**, **Project budget**, and **Project activities** allow workers to register the time spent on production-related activities. Workers can select a project-related activity from the list and log its start. The activity is marked as completed when the worker registers another activity, such as an indirect task or another project activity. The time registered by the worker will be recorded under the projects associated with these activities.
+
+
 ## My machine tab
 
 The **My machine** tab lets workers select an asset that is connected to a machine resource within the filter set on the **All jobs** tab. The worker can then view the state and health of the selected asset by reading values for up to four selected counters and lists of recent maintenance requests and registered downtimes. The worker can also request maintenance for the selected asset and register and edit machine downtime. (This tab name is customizable and may be different for your system.)
