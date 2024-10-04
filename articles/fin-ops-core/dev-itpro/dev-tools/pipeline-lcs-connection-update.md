@@ -35,9 +35,9 @@ To update the existing tasks so that they use the new MSAL authentication, you m
 
 | Task name | Minimum version that uses MSAL |
 | --- | --- |
-| [Dynamics Lifecycle Services (LCS) Asset Download](pipeline-asset-download.md) | 2.\* or later |
+| [Dynamics Lifecycle Services (LCS) Asset Download](pipeline-asset-download.md) | 1.\* or later |
 | [Dynamics Lifecycle Services (LCS) Asset Upload](pipeline-asset-upload.md) | 1.\* or later |
-| [Dynamics Lifecycle Services (LCS) Asset Deployment](pipeline-deploy-asset.md) | 1.\* or later |
+| [Dynamics Lifecycle Services (LCS) Asset Deployment](pipeline-deploy-asset.md) | 2.\* or later |
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
