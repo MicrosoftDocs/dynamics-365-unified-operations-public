@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQ for Chat with finance and operations data on Microsoft 365 Copilot
 description: This FAQ provides information about the AI technology used in Chat with finance and operations data on Microsoft 365 Copilot, along with key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 06/13/2024
+ms.date: 10/04/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
