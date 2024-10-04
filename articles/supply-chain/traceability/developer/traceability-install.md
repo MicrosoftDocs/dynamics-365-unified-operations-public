@@ -70,7 +70,7 @@ To install the Traceability app in Power Apps, complete the following steps.
     - **I agree to the terms of service** – Select this checkbox.
 
     > [!NOTE]
-    > If you don't see the **Enter application ID of service** and/or **Enter tenant ID of service** fields, you should contact the Traceability product team at [d365-Traceability-team@microsoft.com](mailto:d365-Traceability-team@microsoft.com).
+    > If you don't see the **Enter application ID of service** and/or **Enter tenant ID of service** fields, you should contact the Traceability product team at [d365-sct-team@microsoft.com](mailto:d365-sct-team@microsoft.com).
 
 1. Select **Install**.
 1. When installation is complete, you should see that an app called *Dynamics 365 Supply Chain Traceability* is shown with a status of *Installed* in the list of **Dynamics 365 apps** for your environment.
