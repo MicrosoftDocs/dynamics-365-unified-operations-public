@@ -4,7 +4,7 @@ description: Access links to the release plans, major announcements, and documen
 author: jaredha
 ms.author: jaredha
 ms.topic: whats-new
-ms.date: 05/04/2024
+ms.date: 10/04/2024
 ms.custom: 
   - bap-template
   - evergreen
@@ -27,7 +27,7 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
 
 | Feature | Description | Status |
 |---|---|---|
-|Security update |Security enhancements to secure the resources like Service bus, Table storage and Blobs. These modifications impact the Dynamics 365 Finance and Operations and "Dual-write Core" solution.<br>The security fixes are mandatory and any customer using Dual write is required, by November 30, 2024, to uptake <ul><li>PU63 Min Platform version 7.0.7198.188  OR PU64 Min Platform version 7.0.7279.121.</li><li>Dual write core solution version in Dataverse - 1.0.24073.3.</li></ul><br>Impact if the upgrade is not enabled by the November 30 2024: Dual-write Pause and Resume and Auto-Alerts feature will not function. These features have not changed in its functionality but have been made more secure.|General availability|
+|Security update |Security enhancements affecting service bus, table storage and blobs impacting the Dynamics 365 finance and operations and Dual-write core solutions.<br>The security fixes are mandatory. By November 30, 2024, all customers using Dual-write are required to upgrade. <ul><li>PU63 Minimum platform version 7.0.7198.188 or PU64 Minimum platform version 7.0.7279.121.</li><li>Dual-write core solution version in Dataverse - 1.0.24073.3.</li></ul><br>If the upgrade isn't enabled by the November 30 2024, the Dual-write pause and resume and auto-alerts features won't function. These features haven't changed in functionality but are more secure.|General availability|
 
 
 ## June 2024
