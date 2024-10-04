@@ -35,7 +35,7 @@ The intended users are Microsoft 365 Copilot users who have the security role an
 
 ## How was Chat with finance and operations data on Microsoft 365 Copilot evaluated? What metrics are used to measure performance?
 
-We have conducted multiple rounds of golden tests to ensure all test cases have passed. These golden test cases are also included in the test automation suite, allowing for regular verification.
+We have conducted multiple rounds of golden tests to ensure all test cases have passed. These golden test cases are also included in the test automation suite, allowing for regular verification. ***** The evaluation response in the question related to "what metrics are used to measure performance?" does not really seem helpful*******
 
 ## What are the limitations of Chat with finance and operations data on Microsoft 365 Copilot? How can users minimize the impact of these limitations when they use the system?
 
