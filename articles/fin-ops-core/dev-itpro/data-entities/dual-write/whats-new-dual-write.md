@@ -499,7 +499,7 @@ The January 2022 release of [Dual-write core version 1.1.33](https://appsource.m
 | Performance| Improves performance of Microsoft Dataverse entity retrieval. | General availability |
 | Tracing| Limits excess trace logs during entity handling. | General availability |
 
-The January 2022 release of [Dual-write application orchestration solution version 2.3.3.2](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) contains the following bug fixes.
+The January 2022 release of Dual-write application orchestration solution version 2.3.3.2 contains the following bug fixes.
 
 | Feature | Description | Status |
 |------|---------|-------|
