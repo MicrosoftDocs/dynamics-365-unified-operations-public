@@ -4,7 +4,7 @@ description: This article describes the configuration steps that are required fo
 author: Henrikan
 ms.author: henrikan
 ms.reviewer: kamaybac
-ms.search.form: This article describes the configuration steps that are required for integrating Microsoft Dynamics 365 Supply Chain Management and third-party contract lifecycle management providers.
+ms.search.form: CLMIntegrationParameters
 ms.topic: how-to
 ms.date: 10/25/2024
 ms.custom: 
@@ -18,6 +18,9 @@ ms.custom:
 <!-- KFM: Preview until 10.0.43 GA  -->
 
 This article describes the configuration steps that are required for integrating Microsoft Dynamics 365 Supply Chain Management and third-party contract lifecycle management (CLM)providers. The configuration must be performed in Supply Chain Management and your contract lifecycle management system before you can start using the integration.
+
+<!-- KFM: I seems like all of these settings might be made automatically from the external system. Maybe we should mention that here.
+ -->
 
 ## Prerequisites
 
@@ -79,4 +82,4 @@ To inspect the current status of the connection between Supply Chain Management 
     - *Configuration failed* – Configuration of the external navigation links has failed. <!--KFM: Do we mean that the connection succeeded, but something is wrong with at least one of our **External navigation links**? -->
     - *Ready* – The integration is ready for use.
 
-For details about how to set up your CLM system to return a value for this status indicator, see [Connect to a CLM system](clm-establish-connection.md).
+The connection status is based on information submitted by your CLM system through the Supply Chain Management API. For details about how to set up your CLM system to return a value for this status indicator, see [Establish a connection from a CLM system to Supply Chain Management](clm-establish-connection.md).

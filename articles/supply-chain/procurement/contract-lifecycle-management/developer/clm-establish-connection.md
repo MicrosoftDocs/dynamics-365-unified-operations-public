@@ -1,23 +1,29 @@
 ---
-title: Prepare a CLM system to connect to Supply Chain Management (preview)
-description: This article describes how to prepare a third-party contract lifecycle management (CLM) system to connect with Supply Chain Management and confirm its configuration settings and connection status.
+title: Establish a connection from a CLM system to Supply Chain Management (preview)
+description: This article describes how a third-party contract lifecycle management provider can simplify the process of establishing connections by efficiently configuring contract management parameters and initiating the connection.
 author: Henrikan
 ms.author: henrikan
 ms.reviewer: kamaybac
-ms.search.form: XXXX
+ms.search.form:
 ms.topic: how-to
 ms.date: 10/25/2024
 ms.custom: 
   - bap-template
 ---
 
-# Prepare a CLM system to connect to Supply Chain Management (preview)
+# Establish a connection from a CLM system to Supply Chain Management (preview)
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until 10.0.43 GA  -->
 
-This article describes how to prepare a third-party contract lifecycle management (CLM) system to connect with Supply Chain Management and confirm its configuration settings and connection status.
+This article describes how a third-party contract lifecycle management (CLM) provider can simplify the process of establishing connections by efficiently configuring the contract management parameters in Supply Chain Management and initiating the connection. The process can be initiated from the CLM system and seamlessly transfers all the required configuration settings to the Supply Chain Management system.
+
+<!-- KFM: Most of the examples in this topic describe GET operations. But it seems like the intro is suggesting that we use the API to set these values from the CLM side. Or am I confused? -->
+
+## Access the data integration APIs
+
+For information about which data integration APIs are available, how to enable change tracking, and how to authenticate with Supply Chain Management so your CLM system can access that data entities described in this topic, see [Data integration APIs](clm-data-integration-apis.md).
 
 ## Available data entities
 
@@ -25,9 +31,9 @@ To streamline the connection process, Supply Chain Management offers built-in da
 
 | Entity | Target entity | Public name (OData) | Usage | Direction |
 | --- | --- | --- | --- | --- |
-| CLM integration service instance | CLMIntegrationServiceInstanceEntity | CLMIntegrationServiceInstances | Set up contract management parameters. | CLM -\> Supply Chain Management |
-| CLM integration external navigation links | CLMIntegrationExternalNavigationLinkEntity | CLMIntegrationExternalNavigationLinks | Set up external navigation links. | CLM -\> Supply Chain Management |
-| CLM integration external navigation link key-value pairs | CLMIntegrationExternalNavigationLinkKeyValueEntity | CLMIntegrationExternalNavigationLinkKeyValues | Set up external navigation link query strings. | CLM -\> Supply Chain Management |
+| CLM integration service instance | `CLMIntegrationServiceInstanceEntity` | `CLMIntegrationServiceInstances` | Set up contract management parameters. | CLM -\> Supply Chain Management |
+| CLM integration external navigation links | `CLMIntegrationExternalNavigationLinkEntity` | `CLMIntegrationExternalNavigationLinks` | Set up external navigation links. | CLM -\> Supply Chain Management |
+| CLM integration external navigation link key-value pairs | `CLMIntegrationExternalNavigationLinkKeyValueEntity` | `CLMIntegrationExternalNavigationLinkKeyValues` | Set up external navigation link query strings. | CLM -\> Supply Chain Management |
 
 The following diagram illustrates the integration.
 
@@ -43,9 +49,9 @@ The *CLM integration service instance* entity provides information about the CLM
 | Physical name | Property | Type | Description |
 |---|---|---|---|
 | `ID` (PK) | ID | Int | Parameter key which will always be set to 0. |
-| `InstanceName` | Connection name | String | N/A |
-| `BaseURL` | Base URL | String | N/A |
-| `ExternalNavigationBaseURL` | External navigation base URL | String | N/A |
+| `InstanceName` | Connection name | String | Connection name |
+| `BaseURL` | Base URL | String | Base URL |
+| `ExternalNavigationBaseURL` | External navigation base URL | String | External navigation base URL |
 
 <!--KFM: What does PK stand for?  -->
 
@@ -74,8 +80,8 @@ The *CLM integration external navigation links* entity provides information abou
 |---|---|---|---|
 | `ServiceInstanceName` | Connection name | String | Provide instance name. |
 | `NavigationType` (PK) | Navigation type | Enum | Values: `ViewContract`, `EditContract`, `NewContract`, `NewContractFromPurchAgreement`, `AmendContract`. |
-| `NavigationName` | Navigation name | String | N/A |
-| `RelativeURL` | Relative URL | String | N/A |
+| `NavigationName` | Navigation name | String | Navigation name |
+| `RelativeURL` | Relative URL | String | Relative URL |
 | `Action` | Action | Enum | Values: `OpenInNewTab`, `OpenInExistingTab` |
 
 Here is an example request query for the *CLM integration external navigation links* entity:
@@ -104,8 +110,8 @@ The *CLM integration external navigation link key-value pairs* entity provides i
 |---|---|---|---|
 | `NavigationType` (PK) | Navigation type | Enum | Values: `ViewContract`, `EditContract`, `NewContract`, `NewContractFromPurchAgreement`, `AmendContract`. |
 | `KeyValueType` (PK) | Key-value type | Enum | Values: `QueryString`, `Header`. The `QueryString` is the only allowed value. |
-| `Key` (PK) | Key | String | N/A |
-| `Value` | Value | String | N/A |
+| `Key` (PK) | Key | String | Key |
+| `Value` | Value | String | Value |
 
 <!--KFM: I'm confused by "The `QueryString` is the only allowed value". We list `Header` as a value too. What does this mean?  -->
 
@@ -154,18 +160,6 @@ PATCH https://[baseURI]/data/CLMIntegrationServiceInstances(ID=0)
 }
 ```
 
-## Configure service-based authentication
+## Related information
 
-To gain access to the data entities, your CLM system must authenticate with Supply Chain Management. Service-based authentication with Microsoft Entra ID provides a secure way of allowing an external CLM system to connect with Supply Chain Management. To set up service-based authentication, follow these steps:
-
-1. Register an application in Microsoft Entra ID. Take a note of the application ID (client ID) for your new application.
-1. In Supply Chain Management, go to **System administration** \> **Setup** \> **Microsoft Entra ID applications** and add a row with the following settings:
-    - **Client ID** – Enter the  application ID (client ID) you noted when registering the application in Microsoft Entra ID.
-    - **Name** – Enter a descriptive name of the application.
-    - **User ID** – Select the service account under which to run the application. We recommend that you create a new user and assign them the *CLM integration role* role.
-
-For more information about how to register an application in Microsoft Entra ID and how to register external application in Supply Chain Management, see [Service endpoints overview](../../../../fin-ops-core/dev-itpro/data-entities/services-home-page.md#authentication).
-
-<!-- KFM: We should consider adding a few details for how to actually authenticate (get a token, or whatever). -->
-
-<!--KFM: This is repeated from [Synchronize master data (preview)](clm-sync-master-data.md). I think we should move it to a new topic and reference it from both of these, plus maybe also [Synchronize contracts (preview)](clm-sync-contracts.md) -->
+- [Data integration APIs](clm-data-integration-apis.md)

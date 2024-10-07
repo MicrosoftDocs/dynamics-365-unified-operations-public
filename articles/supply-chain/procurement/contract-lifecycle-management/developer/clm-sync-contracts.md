@@ -1,10 +1,10 @@
 ---
 title: Synchronize contracts (preview)
-description: This article describes scenarios, data entities and integration methods available for synchronizing contracts and related purchase agreements from external contract lifecycle management system to Dynamics 365 Supply Chain Management.
+description: This article describes scenarios, data entities, and integration methods available for synchronizing contracts and related purchase agreements from an external contract lifecycle management system to Dynamics 365 Supply Chain Management.
 author: Henrikan
 ms.author: henrikan
 ms.reviewer: kamaybac
-ms.search.form: XXXX
+ms.search.form:
 ms.topic: how-to
 ms.date: 10/25/2024
 ms.custom: 
@@ -17,43 +17,49 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until 10.0.43 GA  -->
 
-This article describes scenarios, data entities and integration methods available for synchronizing contracts and related purchase agreements from external contract lifecycle management system to Dynamics 365 Supply Chain Management. The integration process establishes a workflow that transfers contracts and related purchase agreements from the contract lifecycle management system to Supply Chain Management. The contract lifecycle management system is assumed to function as the master system for managing contracts.
+This article describes scenarios, data entities, and integration methods available for synchronizing contracts and related purchase agreements from an external contract lifecycle management (CLM) system to Dynamics 365 Supply Chain Management. The integration process establishes a workflow that transfers contracts and related purchase agreements from the CLM system to Supply Chain Management. The CLM system is assumed to function as the master system for managing contracts.
 
-> [!NOTE]
-> The functionality that's noted in this article is available as of Microsoft Dynamics 365 Supply Chain Management version 10.0.42.
+## Access the data integration APIs
+
+For information about which data integration APIs are available, how to enable change tracking, and how to authenticate with Supply Chain Management so your CLM system can access that data entities described in this topic, see [Data integration APIs](clm-data-integration-apis.md).
 
 ## Scenarios
 
 This section outlines various integration scenarios supported in Supply Chain Management, including the following:
 
-- NDA creation
-- purchase contract creation
-- purchase contract amendment
+- Create a non-disclosure agreement (NDA)
+- Create a purchase contract
+- Create a contract amendment
 
 The images provided later in this article illustrate process diagrams.
 
-### Create NDA
+### Create an NDA
 
-Non-disclosure agreements are independent contracts that are not related to any document within Supply Chain Management. The integration points involve creating the contract and updating its status once the approval and signing process is complete.
+NDAs are independent contracts that aren't related to any document within Supply Chain Management. The integration points involve creating the contract and updating its status once the approval and signing process is complete.
 
-:::image type="content" source="../media/create-nda.png" alt-text="Create NDA diagram." lightbox="../media/create-nda.png":::
+The following illustration shows a flowchart of how NDAs are created and synchronized between systems.
 
-### Create purchase contract
+:::image type="content" source="../media/create-nda.png" alt-text="Flowchart of how NDAs are created and synchronized between systems." lightbox="../media/create-nda.png":::
 
-Purchase contract is a contract which is associated with the purchase agreement in Supply Chain Management. The integration points include creating the contract, validating the purchase agreement prior to submitting it for approval and signing, updating the contract status upon completion of the approval and signing process, and ultimately creating the purchase agreement.
+### Create a purchase contract
 
-:::image type="content" source="../media/create-purchase-contract.png" alt-text="Create purchase contract diagram." lightbox="../media/create-purchase-contract.png":::
+A purchase contract is a contract that's associated with a purchase agreement in Supply Chain Management. The integration points include creating the contract, validating the purchase agreement prior to submitting it for approval and signing, updating the contract status upon completion of the approval and signing process, and ultimately creating the purchase agreement.
 
-### Amend purchase contract
+The following illustration shows a flowchart of how purchase contracts are created and synchronized between systems.
 
-Purchase contract amendment and NDA amendment is a document that changes the terms of an existing agreement. The integration points include updating the contract with amendment information, validating the purchase agreement prior to submitting it for approval and signing, updating the contract status upon completion of the approval and signing process, and ultimately updating the purchase agreement. In Supply Chain Management, the amended information is updated within the same contract and purchase agreement record.
+:::image type="content" source="../media/create-purchase-contract.png" alt-text="Flowchart of how purchase contracts are created and synchronized between systems." lightbox="../media/create-purchase-contract.png":::
 
-:::image type="content" source="../media/amend-purchase-contract.png" alt-text="Amend purchase contract
- diagram." lightbox="../media/amend-purchase-contract.png":::
+### Amend a contract
 
-## Available data entities
+Purchase contract amendments and NDA amendments are documents that change the terms of an existing agreement. The integration points include updating the contract with amendment information, validating the purchase agreement prior to submitting it for approval and signing, updating the contract status upon completion of the approval and signing process, and ultimately updating the purchase agreement. In Supply Chain Management, the amended information is updated within the same contract and purchase agreement record.
 
-Supply Chain Management offers several out-of-the-box data entities that external contract lifecycle management systems can use to synchronize contract data. The following table describes the available data entities necessary for synchronizing contracts and purchase agreements.
+The following illustration shows a flowchart of how contract amendments are created and synchronized between systems.
+
+:::image type="content" source="../media/amend-purchase-contract.png" alt-text="Flowchart of how contract amendments are created and synchronized between systems." lightbox="../media/amend-purchase-contract.png":::
+
+## Available data entities for synchronizing contracts and purchase agreements
+
+Supply Chain Management offers several out-of-the-box data entities that external CLM systems can use to synchronize contract data. The following table describes the available data entities necessary for synchronizing contracts and purchase agreements.
 
 | **Entity** |**Target entity** | **Public name (OData)** | **Company specific** | **Direction** |
 | --- | --- | --- | --- | --- |
@@ -62,43 +68,45 @@ Supply Chain Management offers several out-of-the-box data entities that externa
 | CLM integration purchase agreement lines | `CLMIntegrationPurchaseAgreementLineEntity` | `CLMIntegrationPurchaseAgreementLines` | Yes | CLM -\> Supply Chain Management |
 
 > [!NOTE]
-> Company-specific data entities include the _dataAreaId_ field, which indicates the legal entity to which the record belongs. Your contract lifecycle management system must adopt the same behavior that supports both company-specific and cross-company records. For more information about the cross-company behavior, see [Cross-company behavior of data entities](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/cross-company-behavior).
+> Company-specific data entities include the `dataAreaId` field, which indicates the legal entity to which each record belongs. Your CLM system must adopt the same behavior to support both company-specific and cross-company records. For more information about cross-company behavior, see [Cross-company behavior of data entities](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/cross-company-behavior).
+
+The following diagram shows how contracts and purchase agreements are integrated and synchronized.
+
+:::image type="content" source="../media/contract.png" alt-text="Contracts and purchase agreements integration diagram." lightbox="../media/contract.png":::
 
 ### Contract entity
 
-This entity provides information about the contract.
-
-#### Properties
+This entity provides information about the contract. Its properties are listed in the following table.
 
 | Physical name | Property | Type | Description |
 |---|---|---|---|
 | `ContractId` (PK) | Contract ID | String | Contract identifier in the CLM. |
-| `LegalEntityId` (PK) | Legal entity ID | String | N/A |
+| `LegalEntityId` (PK) | Legal entity ID | String | Legal entity ID |
 | `ExternalContractId` | External contract ID | String | Internal system-generated contract identifier in the CLM. |
 | `ContractType` | Contract type | String | Contract type name reference. |
 | `ContractStatus` | Contract status | Enum | Values: `Draft`, `WaitingForApproval`, `Approved`, `Rejected`, `WaitingForSignatures`, `WaitingForExternalSignatures`, `WaitingForInternalSignatures`, `Executed`, `Terminated`, `Expired`, `OnHold`, `Cancelled`, `WaitingForReview`, `Reviewed`. |
-| `ContractName` | Contract title | String | N/A |
-| `EffectiveDate` | Effective date | Date | N/A |
-| `ExpirationDate` | Expiration date | Date | N/A |
+| `ContractName` | Contract title | String | Contract title |
+| `EffectiveDate` | Effective date | Date | Effective date |
+| `ExpirationDate` | Expiration date | Date | Expiration date |
 | `RequesterWorkerName` | Requester name | String | Requester worker name.<br/>If the specified worker name is not found in the system, the `RequesterWorkerEmail` field is used to identify the worker. |
 | `RequesterWorkerEmail` | Requester email | String | Requester worker email. |
 | `AccountType` | Account type | Enum | Determines the type of contracting party.<br/>Values: `Vend`, `Cust`, `Party`. |
-| `AccountRelationId` | Account number | String | Contracting account identifier that corresponds to the chosen AccountType. |
+| `AccountRelationId` | Account number | String | Contracting account identifier that corresponds to the chosen `AccountType`. |
 | `PartyNumber` | Party ID | String | Party number in the global address book. |
-| `ContactPersonId` | Contact person ID | String | N/A |
+| `ContactPersonId` | Contact person ID | String | Contact person ID |
 | `LatestAmendmentId` | Latest amendment ID | String | Latest amendment identifier in the CLM. |
 | `LatestExternalAmendmentId` | Latest amendment external ID | String able | Internal system-generated latest amendment identifier in the CLM. |
 | `AmendmentInProcess` | Amendment in process | Enum | Values: `Yes`, `No`. |
 
-#### Example query for the CLM integration contract entity
+<!--KFM: what is "PK"? -->
 
-**Request**
+Here is an example request query for the CLM integration contract entity:
 
 ```http
 GET https://[baseURI]/data/CLMIntegrationContracts
 ```
 
-**Response**
+Here is an example response to that query:
 
 ```json
 {
@@ -129,41 +137,41 @@ This entity provides information about the purchase agreement header. The most c
 | Physical name | Property | Type | Description |
 |---|---|---|---|
 | `PurchaseAgreementId` (PK) | Purchase agreement ID | String | Purchase agreement identifier from Supply Chain Management. |
-| `BuyingLegalEntityId` (PK) | Legal entity ID | String | N/A |
+| `BuyingLegalEntityId` (PK) | Legal entity ID | String | Legal entity ID |
 | `ExternalContractId` | External contract ID | String | Internal system-generated purchase agreement identifier in the CLM. |
 | `ContractId` | Contract ID | String | Contract identifier reference to associate the purchase agreement with the contract. |
 | `ContractLegalEntity` | Contract legal entity ID | String | Contract legal entity identifier reference to associate the purchase agreement with the contract. |
 | `AgreementOwnership` | Purchase agreement ownership type | Enum | Values: `SCM`, `CLM`. |
 | `AgreementStatus` | Agreement status | Enum | Values: `OnHold`, `Effective`, `Closed`. |
-| `DocumentTitle` | Document title | String | N/A |
+| `DocumentTitle` | Document title | String | Document title |
 | `PurchaseAgreementClassificationName` | Purchase agreement classification | String | Purchase agreement classification name reference. |
-| `DefaultEffectiveDate` | Default effective date | Date | N/A |
-| `DefaultExpirationDate` | Default expiration date | Date | N/A |
+| `DefaultEffectiveDate` | Default effective date | Date | Default effective date |
+| `DefaultExpirationDate` | Default expiration date | Date | Default expiration date |
 | `AgreementVendorAccountNumber` | Vendor account | String | Agreement vendor account reference. |
 | `InvoiceVendorAccountNumber` | Invoice account | String | Invoicing vendor account reference. |
-| `VendorReference` | Vendor reference | String | N/A |
+| `VendorReference` | Vendor reference | String | Vendor reference |
 | `PrimaryResponsibleWorkerEmail` | Primary responsible worker email | String | Primary responsible worker email.  |
-| `PrimaryResponsibleWorkerName` | Primary responsible worker name | String | Primary responsible worker name.<br/>If the specified worker name is not found in the system, the `PrimaryResponsibleWorkerEmail` field is used to identify the worker. |
+| `PrimaryResponsibleWorkerName` | Primary responsible worker name | String | Primary responsible worker name.<br/><br/>If the specified worker name is not found in the system, the `PrimaryResponsibleWorkerEmail` field is used to identify the worker. |
 | `SecondaryResponsibleWorkerEmail` | Secondary responsible worker email | String | Secondary responsible worker email. |
-| `SecondaryResponsibleWorkerName` | Secondary responsible worker name | String | Secondary responsible worker name.<br/>If the specified worker name is not found in the system, the `SecondaryResponsibleWorkerEmail` field is used to identify the worker. |
-| `CashDiscountCode` | Cash discount | String | N/A |
-| `ContactPersonId` | Contact person ID | String | N/A |
-| `CurrencyCode` | Currency | String | N/A |
+| `SecondaryResponsibleWorkerName` | Secondary responsible worker name | String | Secondary responsible worker name.<br/><br/>If the specified worker name is not found in the system, the `SecondaryResponsibleWorkerEmail` field is used to identify the worker. |
+| `CashDiscountCode` | Cash discount | String | Cash discount |
+| `ContactPersonId` | Contact person ID | String | Contact person ID |
+| `CurrencyCode` | Currency | String | Currency |
 | `DefaultCommitmentType` | Default commitment type | Enum | Values: `ProductQuantity`, `ProductVolume`, `ProductCategory`, `ProductRootCategory`. |
-| `BuyerGroupId` | Buyer group ID | String | N/A |
-| `ProjectId` | Project ID | String | N/A |
-| `PaymentTermsName` | Payment terms | String | N/A |
+| `BuyerGroupId` | Buyer group ID | String | Buyer group ID |
+| `ProjectId` | Project ID | String | Project ID |
+| `PaymentTermsName` | Payment terms | String | Payment terms |
 | ... | ... | ... | N/A |
 
-#### Example query for the CLM integration purchase agreements entity
+<!-- KFM: What does the final row mean? -->
 
-**Request**
+Here is an example request query for the CLM integration agreement header entity:
 
 ```http
 GET https://[baseURI]/data/CLMIntegrationPurchaseAgreements
 ```
 
-**Response**
+Here is an example response to that query:
 
 ```json
 {
@@ -201,44 +209,44 @@ This entity provides information about the purchase agreement line. The most com
 
 | Physical name | Property | Type | Description |
 |---|---|---|---|
-| PurchaseAgreementId (PK) | Purchase agreement ID | String | Purchase agreement identifier reference. |
-| PurchaseAgreementLegalEntityId (PK) | Purchase agreement legal entity ID | String | Purchase agreement legal entity identifier reference. |
-| LineNumber (PK) | Line number | Real | N/A |
-| ExternalContractId | External contract ID | String | Internal system-generated purchase agreement identifier reference in the CLM. Can be used instead of the PurchaseAgreementId field when creating a record. |
-| ExternalContractLineId | External contract line ID | String | Internal system-generated purchase agreement line identifier in the CLM. |
-| CommitmentType | Commitment type | Enum | Values: **ProductQuantity, ProductVolume, ProductCategory, ProductRootCategory.** |
-| CommittedAmount | Committed amount | Real | Committed amount for volume-based commitment types **(ProductVolume, ProductCategory, ProductRootCategory)**. |
-| CommittedQuantity | Committed quantity | Real | Committed quantity for quantity-based commitment types **(ProductQuantity)**. |
-| EffectiveDate | Effective date | Date | N/A |
-| ExpirationDate | Expiration date | Date | N/A |
-| ItemNumber | Item number | String | Required by the **ProductQuantity** and **ProductVolume** commitment type. |
-| ProductVariantNumber | Product variant number | String | Relevant if specified product contains product variants. |
-| ProcurementProductCategoryName |  Procurement category | String | Required by the **ProductCategory** commitment type. |
-| Price | Item price | Real | Item price for **ProductQuantity** commitment type. |
-| PriceQuantity | Price unit | Real | Item price unit for **ProductQuantity** commitment type. |
-| LineDiscountAmount | Line discount amount | Real | Item line discount amount for **ProductQuantity** commitment type. |  |
-| LineDiscountPercentage | Line discount percentage | Real | Available for all commitment types. |
-| MinimumReleaseAmount | Minimum release amount | Real | N/A |
-| MaximumReleaseAmount | Maximum release amount | Real | N/A |
-| IsCommitmentMaximumEnforced | Is max enforced | Enum | Values: Yes, No. |
-| IsPriceAndDiscountFixed | Is price and discount fixed | Enum | Values: Yes, No. |
-| UnitSymbol | Unit of measure | String | N/A |
-| ProjectId | Project ID | String | N/A |
-| ProjectCategoryId | Project category ID | String | N/A |
-| ProjectActivityNumber | Project activity number | String | N/A |
-| ReceivingSiteId | Site | String | N/A |
-| ReceivingWarehouseId | Warehouse | String | N/A |
+| `PurchaseAgreementId` (PK) | Purchase agreement ID | String | Purchase agreement identifier reference. |
+| `PurchaseAgreementLegalEntityId` (PK) | Purchase agreement legal entity ID | String | Purchase agreement legal entity identifier reference. |
+| `LineNumber` (PK) | Line number | Real | Line number |
+| `ExternalContractId` | External contract ID | String | Internal system-generated purchase agreement identifier reference in the CLM. Can be used instead of the `PurchaseAgreementId` field when creating a record. |
+| `ExternalContractLineId` | External contract line ID | String | Internal system-generated purchase agreement line identifier in the CLM. |
+| `CommitmentType` | Commitment type | Enum | Values: `ProductQuantity`, `ProductVolume`, `ProductCategory`, `ProductRootCategory`. |
+| `CommittedAmount` | Committed amount | Real | Committed amount for volume-based commitment types (`ProductVolume`, `ProductCategory`, `ProductRootCategory`). |
+| `CommittedQuantity` | Committed quantity | Real | Committed quantity for quantity-based commitment types (`ProductQuantity`). |
+| `EffectiveDate` | Effective date | Date | Effective date |
+| `ExpirationDate` | Expiration date | Date | Expiration date |
+| `ItemNumber` | Item number | String | Required by the `ProductQuantity` and `ProductVolume` commitment type. |
+| `ProductVariantNumber` | Product variant number | String | Relevant if specified product contains product variants. |
+| `ProcurementProductCategoryName` |  Procurement category | String | Required by the `ProductCategory` commitment type. |
+| `Price` | Item price | Real | Item price for `ProductQuantity` commitment type. |
+| `PriceQuantity` | Price unit | Real | Item price unit for `ProductQuantity` commitment type. |
+| `LineDiscountAmount` | Line discount amount | Real | Item line discount amount for `ProductQuantity` commitment type. |
+| `LineDiscountPercentage` | Line discount percentage | Real | Available for all commitment types. |
+| `MinimumReleaseAmount` | Minimum release amount | Real | Minimum release amount |
+| `MaximumReleaseAmount` | Maximum release amount | Real | Maximum release amount |
+| `IsCommitmentMaximumEnforced` | Is max enforced | Enum | Values: `Yes`, `No`. |
+| `IsPriceAndDiscountFixed` | Is price and discount fixed | Enum | Values: `Yes`, `No`. |
+| `UnitSymbol` | Unit of measure | String | Unit of measure |
+| `ProjectId` | Project ID | String | Project ID |
+| `ProjectCategoryId` | Project category ID | String | Project category ID |
+| `ProjectActivityNumber` | Project activity number | String | Project activity number |
+| `ReceivingSiteId` | Site | String | Site |
+| `ReceivingWarehouseId` | Warehouse | String | Warehouse |
 | ... | ... | ... | N/A |
 
-#### Example query for the CLM integration purchase agreement lines entity
+<!-- KFM: What does the final row mean? -->
 
-**Request**
+Here is an example request query for the CLM integration purchase agreement line entity:
 
 ```http
 GET https://[baseURI]/data/CLMIntegrationPurchaseAgreementLines
 ```
 
-**Response**
+Here is an example response to that query:
 
 ```json
 {
@@ -272,52 +280,32 @@ GET https://[baseURI]/data/CLMIntegrationPurchaseAgreementLines
 }
 ```
 
-### Integration diagram
-
-![Contract](./images/contract.png)
-
-## Data integration APIs
-
-This section describes integration patters available in the Supply Chain Management and guidelines for synchronizing contract data between Supply Chain Management and Contract Lifecycle Management system. Recommended integration patterns for contract lifecycle management integration are listed in the following table:
-
-| Pattern | Timing | Batch | Documentation |
-| --- | --- | --- | --- |
-| OData | Synchronous | No | [Open Data Protocol (OData)](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/odata) |
-| Data management package REST API | Asynchronous | Yes | [Data management package REST API](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/data-management-api) |
-
-### Guidelines
-
-Integration pattern should be selected based on data volume and real-time requirements. As a general recommendation, for integrations requiring real-time data synchronization and error handling, it is advised to use the _OData protocol_, provided the peak data volume is not excessively high. For handling large volumes of data, it is recommended to use the _Data Management Package API_ instead. For more information about the integration patterns and scenarios, see [Integration between finance and operations apps and third-party services](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/integration-overview).
-
-### Configure service-based authentication
-
-Authentication with Microsoft Entra ID provides a secure way of authenticating external Contract Lifecycle Management with Supply Chain Management. To access resources within Supply Chain Management, you must register an application in Microsoft Entra ID. Once the application (client ID) is created, it should be registered as an external application on the **Microsoft Entra applications** page in Supply Chain Management. For the service account **User ID**, it's recommended to create a new user and assign them the **CLM integration role**. For more information about how to register an application in Microsoft Entra ID and how to register external application in the Supply Chain Management, see the following [Article](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/services-home-page#authentication).
-
 ## Purchase agreement validation entities
 
-In the scenario of creating and amending purchase contracts, Supply Chain Management provides data entities specifically designed for validation purposes. These validation entities contain the same list of fields as regular entities but do not persist data in the database. Instead, they perform validation and return the result either in the **ValidationResult** field or as an exception. The table below outlines the data entities available for validating purchase agreements.
+In the scenario of creating and amending purchase contracts, Supply Chain Management provides data entities specifically designed for validating purchase agreements. These validation entities contain the same list of fields as regular entities but don't persist data in the database. Instead, they perform validation and return the result either in the `ValidationResult` field or as an exception. The following table outlines the data entities available for validating purchase agreements.
 
 | Entity |Target entity | Public name (OData) | Company specific | Direction |
 | --- | --- | --- | --- | --- |
-| CLM integration validation purchase agreements | CLMIntegrationValidationPurchaseAgreementHeaderEntity | CLMIntegrationValidationPurchaseAgreements | Yes | CLM -\> Supply Chain Management |
-| CLM integration validation purchase agreement lines | CLMIntegrationValidationPurchaseAgreementLineEntity | CLMIntegrationValidationPurchaseAgreementLines | Yes | CLM -\> Supply Chain Management |
+| CLM integration validation purchase agreements | `CLMIntegrationValidationPurchaseAgreementHeaderEntity` | `CLMIntegrationValidationPurchaseAgreements` | Yes | CLM -\> Supply Chain Management |
+| CLM integration validation purchase agreement lines | `CLMIntegrationValidationPurchaseAgreementLineEntity` | `CLMIntegrationValidationPurchaseAgreementLines` | Yes | CLM -\> Supply Chain Management |
 
 > [!NOTE]
-> The entity CLMIntegrationValidationPurchaseAgreementHeaderEntity can only perform validation for update operation, whereas CLMIntegrationValidationPurchaseAgreementLineEntity can handle validation for insert, update, and delete operations.
+> The entity `CLMIntegrationValidationPurchaseAgreementHeaderEntity` can only perform validation for update operation, whereas `CLMIntegrationValidationPurchaseAgreementLineEntity` can handle validation for insert, update, and delete operations.
 
 ## Create shareable, secured deep links
 
-The following APIs create shareable and secured URLs (also known as deep links) to specific forms within Supply Chain Management, such as vendor form, contract form or purchase agreement form. These APIs enable scenarios such as embedding links directly in external Contract Lifecycle Management system, enabling users to quickly and easily locate the specified forms and records by simply navigating using the generated link. For more information about deep links, see [Create shareable, secured URLs (deep links)](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/user-interface/create-deep-links).
+The following APIs create shareable and secured URLs (also known as deep links) to specific pages within Supply Chain Management, such as vendor page, contract page or purchase agreement page. These APIs enable scenarios such as embedding links directly in an external CLM system, which enables users to quickly and easily locate the specified pages and records simply by selecting the generated link. For more information about deep links, see [Create shareable, secured URLs (deep links)](../../../../fin-ops-core/dev-itpro/user-interface/create-deep-links.md).
 
-### Generate deep link for a vendor
+### Generate a deep link for a vendor
 
-This API generates a deep link to open the form for a specific vendor within Supply Chain Management.
+This API generates a deep link to open the page for a specific vendor within Supply Chain Management.
 
-**Request**
+Here is an example request for a deep link for a vendor:
 
 ```http
 POST https://[baseURI]/data/VendorsV2/Microsoft.Dynamics.DataEntities.GenerateVendorDetailFormURL
 ```
+
 ```json
 {
     "_vendAccount": "1001",
@@ -325,7 +313,7 @@ POST https://[baseURI]/data/VendorsV2/Microsoft.Dynamics.DataEntities.GenerateVe
 }
 ```
 
-**Response**
+Here is an example response to that request:
 
 ```json
 {
@@ -338,11 +326,12 @@ POST https://[baseURI]/data/VendorsV2/Microsoft.Dynamics.DataEntities.GenerateVe
 
 This API generates a deep link to open the form for a specific contract within Supply Chain Management.
 
-**Request**
+Here is an example request for a deep link for a contract using a contract ID:
 
 ```http
 POST https://[baseURI]/data/CLMIntegrationContracts/Microsoft.Dynamics.DataEntities.GenerateContractDetailFormURLByContractId
 ```
+
 ```json
 {
     "_contractId": "C00001",
@@ -350,7 +339,7 @@ POST https://[baseURI]/data/CLMIntegrationContracts/Microsoft.Dynamics.DataEntit
 }
 ```
 
-**Response**
+Here is an example response to that request:
 
 ```json
 {
@@ -361,13 +350,14 @@ POST https://[baseURI]/data/CLMIntegrationContracts/Microsoft.Dynamics.DataEntit
 
 ### Generate deep link for a contract by contract external ID
 
-This API generates a deep link to open the form for a specific contract within Supply Chain Management.
+This API generates a deep link to open the page for a specific contract within Supply Chain Management.
 
-**Request**
+Here is an example request for a deep link for a contract using a contract external ID:
 
 ```http
 POST https://[baseURI]/data/CLMIntegrationContracts/Microsoft.Dynamics.DataEntities.GenerateContractDetailFormURLByExternalContractId
 ```
+
 ```json
 {
     "_externalContractId": "EXTC00001",
@@ -375,7 +365,7 @@ POST https://[baseURI]/data/CLMIntegrationContracts/Microsoft.Dynamics.DataEntit
 }
 ```
 
-**Response**
+Here is an example response to that request:
 
 ```json
 {
@@ -386,13 +376,14 @@ POST https://[baseURI]/data/CLMIntegrationContracts/Microsoft.Dynamics.DataEntit
 
 ### Generate deep link for a purchase agreement by agreement ID
 
-This API generates a deep link to open the form for a specific purchase agreement within Supply Chain Management.
+This API generates a deep link to open the page for a specific purchase agreement within Supply Chain Management.
 
-**Request**
+Here is an example request for a deep link for a purchase agreement using an agreement ID:
 
 ```http
 POST https://[baseURI]/data/CLMIntegrationPurchaseAgreements/Microsoft.Dynamics.DataEntities.GenerateAgreementFormURLByAgreementId
 ```
+
 ```json
 {
     "_agreementId": "000026",
@@ -400,7 +391,7 @@ POST https://[baseURI]/data/CLMIntegrationPurchaseAgreements/Microsoft.Dynamics.
 }
 ```
 
-**Response**
+Here is an example response to that request:
 
 ```json
 {
@@ -411,9 +402,9 @@ POST https://[baseURI]/data/CLMIntegrationPurchaseAgreements/Microsoft.Dynamics.
 
 ### Generate deep link for a purchase agreement by agreement external ID
 
-This API generates a deep link to open the form for a specific purchase agreement within Supply Chain Management.
+This API generates a deep link to open the page for a specific purchase agreement within Supply Chain Management.
 
-**Request**
+Here is an example request for a deep link for a purchase agreement using an agreement external ID:
 
 ```http
 POST https://[baseURI]/data/CLMIntegrationPurchaseAgreements/Microsoft.Dynamics.DataEntities.GenerateAgreementFormURLByExternalContractId
@@ -426,7 +417,7 @@ POST https://[baseURI]/data/CLMIntegrationPurchaseAgreements/Microsoft.Dynamics.
 }
 ```
 
-**Response**
+Here is an example response to that request:
 
 ```json
 {
@@ -434,3 +425,7 @@ POST https://[baseURI]/data/CLMIntegrationPurchaseAgreements/Microsoft.Dynamics.
     "value": "https://[baseURI]/?cmp=usmf&prt=initial&mi=display:PurchAgreementDetails&pageType=Details&q=[queryValue]"
 }
 ```
+
+## Related information
+
+- [Data integration APIs](clm-data-integration-apis.md)
