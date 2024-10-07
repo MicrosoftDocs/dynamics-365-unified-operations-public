@@ -2502,11 +2502,13 @@
         - name: Set up permissions for ordering products on behalf of someone else
           href: procurement/tasks/set-up-permissions-ordering-products.md
       - name: Integerate with contract lifecylce management systems (preview)
+        items:
         - name: Contract lifecylce management overview
           href: procurement/contract-lifecycle-management/developer/clm-overview.md
         - name: Work with integrated CLM
           href: procurement/contract-lifecycle-management/developer/clm-use.md
         - name: CLM integration admin and devlopment
+          items:
           - name: Enable and configure CLM integration
             href: procurement/contract-lifecycle-management/developer/clm-enable.md
           - name: Data integration APIs
