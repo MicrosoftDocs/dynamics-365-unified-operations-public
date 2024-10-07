@@ -4,7 +4,7 @@ description: Learn scripts that you can use to resolve issues in on-premises env
 author: faix
 ms.author: osfaixat
 ms.topic: article
-ms.date: 05/01/2024
+ms.date: 10/07/2024
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.reviewer: johnmichalak
 audience: Developer
@@ -458,7 +458,7 @@ Write-Host "Finished Disabling FinancialReporting component."
 
 ## <a name="SSRSEnableHTTPS"></a>TSG\_SSRSEnableHTTPS.ps1
 
-The following script is used for older environment setups to allow SSRS to be configured with HTTPS.
+The following script can be used for older environments to configure SSRS with HTTPS.
 
 ```powershell
 param (
