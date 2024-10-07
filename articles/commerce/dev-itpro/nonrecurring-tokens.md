@@ -1,6 +1,6 @@
 ---
-title: Configure nonrecurring payment tokens
-description: This article describes how to configure and use payment processing with nonrecurring payment tokens in Microsoft Dynamics 365 Commerce.
+title: Configure non-recurring payment tokens
+description: This article describes how to configure and use payment processing with non-recurring payment tokens in Microsoft Dynamics 365 Commerce.
 author: ritakimani, shajain
 ms.date: 07/29/2024
 ms.topic: how-to
@@ -13,11 +13,11 @@ ms.search.validFrom: 2024-04-10
 
 ---
 
-# Configure nonrecurring payment tokens
+# Configure non-recurring payment tokens
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to configure and use payment processing with nonrecurring payment tokens in Microsoft Dynamics 365 Commerce.
+This article describes how to configure and use payment processing with non-recurring payment tokens in Microsoft Dynamics 365 Commerce.
 
 Payment processing actions in Dynamics 365 Commerce save payment card tokens. These tokens can then be used for downstream sales order changes, resubmission of authorizations that are close to expiration, and "card on file" caching for future customer orders. In direct configurations, card payment tokens have a "recurring detail" reference that can be used for unscheduled, merchant-initiated transactions. In Commerce version 10.0.40, payment processing can handle payments without saving a recurring customer card token. This ability applies to online stores, call center orders, and point of sale (POS) customer orders that require future shipment.
 
@@ -27,51 +27,51 @@ Payment processing actions in Dynamics 365 Commerce save payment card tokens. Th
 |---|---|
 | Token | A referenced XML blob in the Commerce system that stores payment references for transactional purposes. |
 | Recurring | A type of card payment token that is intended to be reused for future transactions, either scheduled or unscheduled. |
-| Nonrecurring | A type of card payment token that is nonreusable or absent.
+| non-recurring | A type of card payment token that is nonreusable or absent.
 | Card on file | A saved card reference token that is specific to a customer's account and that the customer agrees to save for future use in the Commerce system or payment gateway. |
 
 ## Prerequisites
 
-Before you can set up an environment to use nonrecurring payment tokens, these prerequisites must be met:
+Before you can set up an environment to use non-recurring payment tokens, these prerequisites must be met:
 
 - The following features must be enabled in Commerce headquarters at **System administration** \> **Workspaces** \> **Feature management**:
 
-    - **Enable use of nonrecurring tokens in Commerce**
+    - **Enable use of non-recurring tokens in Commerce**
     - **Extensibility to support incremental credit card capture**
     - **Restrict Payment Token usage to Order context**
 
-- For online channels to support nonrecurring tokens, the **Enable single payment authorization checkout** setting must be enabled in Commerce site builder, at **Site settings** \> **Extensions** \> **Card and checkout**.
+- For online channels to support non-recurring tokens, the **Enable single payment authorization checkout** setting must be enabled in Commerce site builder, at **Site settings** \> **Extensions** \> **Card and checkout**.
 - For customers who use the Dynamics 365 Payment Connector for Adyen, the **Tokenization** field's **Recurring** setting must be disabled in the Adyen portal, at **Settings** \> **Checkout settings**. This setting exists at the merchant account level and affects all transactions under the merchant account. When it's enabled, it forces a recurring detail reference for all transactions against the merchant account. When it's disabled, the Dynamics 365 Payment Connector for Adyen sets recurring details **as needed** for transactional situations. The scenarios where the system mandates a recurring payment token even though non-recurring token feature is enabled are as follows:
 
-- Future orders
-- Installments
-- Unlinked refunds
+  - Future orders
+  - Installments
+  - Unlinked refunds
 
 In these scenarios, a message informs the user that a recurring token payment is required and the user can proceed with tokenization once they acknowlege the message. Microsoft recommends that you align training for these processes with your company's compliance policy for saving payment tokens.
 
 > [!WARNING]
-> If the feature “Enable unified payments experience in POS” is enabled then the nonrecurring token feature does not work as expected. This is a temporary limitation and will be fixed.
+> If the feature “Enable unified payments experience in POS” is enabled then the non-recurring token feature does not work as expected. This is a temporary limitation and will be fixed.
 
-## Payment flow updates using nonrecurring payment tokens
+## Payment flow updates using non-recurring payment tokens
 
-The use of nonrecurring tokens has specific payment flow patterns, depending on the operating channel. This document covers the details for each channel.
+The use of non-recurring tokens has specific payment flow patterns, depending on the operating channel. This document covers the details for each channel.
 
 
 ### Point of sale payments
 
 #### Cash and carry transactions
 
-When customers pay for goods that they're leaving the store with, the transaction is referred to as a "cash and carry" transaction. In this case, the payment is resolved through a captured payment at the end of the transaction. There's no need for the system to use or save a card payment token and hence the card is not tokenized. From user experience perspective, there is no change if the **Enable use of nonrecurring tokens in Commerce** feature is enabled or disabled.
+When customers pay for goods that they're leaving the store with, the transaction is referred to as a "cash and carry" transaction. In this case, the payment is resolved through a captured payment at the end of the transaction. There's no need for the system to use or save a card payment token and hence the card is not tokenized. From user experience perspective, there is no change if the **Enable use of non-recurring tokens in Commerce** feature is enabled or disabled.
 
 #### Customer orders
 
-A customer order can be placed from the POS, which sets up a sales order that is fulfilled through a shipment to the customer. The customer order has two payment-related concepts, namely Deposit, Remaining balance. Assuming the feature **Enable use of nonrecurring tokens in Commerce** is enabled, since the deposit amount is captured along with order placement, the cart used for deposit is not tokenized. However, whether the card used to pay the remaining balance will be tokenized or not depends on the “Requested shipping date” of the order lines. If the requested shipping dates of all the order lines are within a system defined threshold whose default value is 7 days, then no card payment token is saved to place the order. But if the requested shipping date of any of the order lines exceeds a system defined threshold, then the system enforces the card to be tokenized to avoid payment failure during order fulfillment. To enforce the tokenization, when the cashier tries to take a card authorization for the remaining balance, a dialog is displayed to the cashier prompting the cashier to follow the business procedures as per your organization's compliance standards for getting the customer’s consent to save their card information for the current order. Refer the below image.
+A customer order can be placed from the POS, which sets up a sales order that is fulfilled through a shipment to the customer. The customer order has two payment-related concepts, namely Deposit, Remaining balance. Assuming the feature **Enable use of non-recurring tokens in Commerce** is enabled, since the deposit amount is captured along with order placement, the cart used for deposit is not tokenized. However, whether the card used to pay the remaining balance will be tokenized or not depends on the “Requested shipping date” of the order lines. If the requested shipping dates of all the order lines are within a system defined threshold whose default value is 7 days, then no card payment token is saved to place the order. But if the requested shipping date of any of the order lines exceeds a system defined threshold, then the system enforces the card to be tokenized to avoid payment failure during order fulfillment. To enforce the tokenization, when the cashier tries to take a card authorization for the remaining balance, a dialog is displayed to the cashier prompting the cashier to follow the business procedures as per your organization's compliance standards for getting the customer’s consent to save their card information for the current order. Refer the below image.
 
-![Prompt cashier for card tokenization](./media/Token_prompt.png "Image showing the dialog prompting the cashier to get customer consent for tokenization").
+![Prompt cashier for card tokenization](./media/Token_prompt.png "Image showing the dialog prompting the cashier to get customer consent for tokenization")
 
-If the customer agrees for saving the card information for this order, then the cashier can press the “Ok” button to continue with the authorization, else, they will have to press the “Cancel” button. The cashier will not be able to proceed with the authorization for such orders unless the customer agrees to allow the system to save their card information, or the requested shipping date is changed and brought within the system defined threshold. By default, this system defined threshold is set to 7 days and is not exposed via any configuration. The retailer can reach out to the Microsoft support team to update this value to any desired value as per their business needs. The name of the property that defines this threshold is "Payments.MinOrderProcessingDaysForStoringCardToken". 
+If the customer agrees for saving the card information for this order, then the cashier can press the “OK” button to continue with the authorization, else, they will have to press the “Cancel” button. The cashier will not be able to proceed with the authorization for such orders unless the customer agrees to allow the system to save their card information, or the requested shipping date is changed and brought within the system defined threshold. By default, this system defined threshold is set to 7 days and is not exposed via any configuration. The retailer can reach out to the Microsoft support team to update this value to any desired value as per their business needs. The name of the property that defines this threshold is "Payments.MinOrderProcessingDaysForStoringCardToken". 
 
-Currently, the Commerce system doesn't extend the authorization for a non-recurring token. If a nonrecurring token expires before an order is invoiced, the invoice action fails unless the retailer obtains a new token by contacting the customer. If your business generally has long lead times for customer orders which result in expired authorizations, then to avoid the need to contact the customer to get a new authorization, you can request Microsoft support to enable a property named “Payments.AlwaysStoreCardTokenOnOrderBalanceAuthorization” in your environment. This property enforces all customer order authorizations for the remaining balance to be tokenized and hence the cashier will see the above-mentioned dialog indicating the authorization will be tokenized for remaining balance authorizations. In other words, the cash and carry transactions and customer order deposit will not be tokenized but the remaining balance authorizations will be tokenized. 
+Currently, the Commerce system doesn't extend the authorization for a non-recurring token. If a non-recurring token expires before an order is invoiced, the invoice action fails unless the retailer obtains a new token by contacting the customer. If your business generally has long lead times for customer orders which result in expired authorizations, then to avoid the need to contact the customer to get a new authorization, you can request Microsoft support to enable a property named “Payments.AlwaysStoreCardTokenOnOrderBalanceAuthorization” in your environment. This property enforces all customer order authorizations for the remaining balance to be tokenized and hence the cashier will see the above-mentioned dialog indicating the authorization will be tokenized for remaining balance authorizations. In other words, the cash and carry transactions and customer order deposit will not be tokenized but the remaining balance authorizations will be tokenized. 
 If the above-mentioned approach does not work, then disable the non-recurring token feature and provide your recommendation to Microsoft on how this feature can be further improved to meet your business requirements. 
 
 > [!NOTE]
@@ -90,7 +90,7 @@ Call center users can create or edit existing sales orders in Commerce. When pay
 On the **Call center parameters \> Payment** form, system administrators can set the **Allow customer card on file** option to show (**Yes**) or hide (**No**) the **Save payment information** checkbox on the payment page. For more information, see [Limit payment token usage](limit-token-usage.md).
 
 > [!WARNING]
-> As mentioned in the Customer order section, currently, the Commerce system doesn't extend the authorization for a non-recurring token. If a nonrecurring token expires before an order is invoiced, the invoice action fails unless the retailer obtains a new token by contacting the customer. If your business generally has long lead times for orders which result in expired authorizations, then to avoid the need to contact the customer to get a new authorization, you can train the call center users to request the customers to provide the consent to save the card token during order capture and record this consent by checking the **Save payment information** checkbox.
+> As mentioned in the Customer order section, currently, the Commerce system doesn't extend the authorization for a non-recurring token. If a non-recurring token expires before an order is invoiced, the invoice action fails unless the retailer obtains a new token by contacting the customer. If your business generally has long lead times for orders which result in expired authorizations, then to avoid the need to contact the customer to get a new authorization, you can train the call center users to request the customers to provide the consent to save the card token during order capture and record this consent by checking the **Save payment information** checkbox.
 
 
 #### Future order authorizations
@@ -105,10 +105,13 @@ When future order authorizations are configured, if a value is specified for the
 
 While editing the orders in call center, if the user manually modifies the order and presses the Complete button and modifies the existing authorized payment line to reflect the new order total, then the payment connector attempts to adjust the existing authorization. The authorization adjustment requests the new authorization total against the pre-existing original authorization. If the request is approved, the authorization is adjusted in the Commerce system. If it's declined, the original authorization is considered declined, and a new payment is required to complete the transaction.
 
+> [!NOTE]
+> If the order total gets modified without manually modifying the order, for example, the order total increases due to the increase of charges or taxes, then the system does not adjust the authorization and hence captures only the amount that is authorized. The only way to adjust the authorization is to manually edit the existing payment line.
+
 
 ### Online storefront payments
 
-For online storefront payments that use credit cards or digital wallets, the payment module processes an online customer's entered payment information. When the **Enable use of nonrecurring tokens in Commerce** feature is enabled, all online transactions are processed in the Commerce system, but the payment card token isn't saved. The payment module presents the configured payment processor's payment acceptance page in an iFrame element.
+For online storefront payments that use credit cards or digital wallets, the payment module processes an online customer's entered payment information. When the **Enable use of non-recurring tokens in Commerce** feature is enabled, all online transactions are processed in the Commerce system, but the payment card token isn't saved. The payment module presents the configured payment processor's payment acceptance page in an iFrame element.
 
 When the Dynamics 365 Payment Connector for Adyen is configured for the online store, if the **Allow saving payment information in e-commerce** parameter is set to **True**, the Adyen iFrame element presents a **Save for my next payment** checkbox to the authenticated customer. This mechanism enables the customer's credit card to be saved with Adyen, so that it can be presented in the Adyen iFrame element at the time of the authenticated user's next checkout. However, this mechanism doesn't save the card on file in the Commerce system as described in the [Saved card on file](#saved-card-on-file) section. The online storefront's generated sales order processes the payment without a saved payment card token.
 
