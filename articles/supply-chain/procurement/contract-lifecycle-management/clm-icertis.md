@@ -13,6 +13,6 @@ ms.custom:
 
 # Integrate with Icertis CLM (preview)
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until 10.0.43 GA  -->
