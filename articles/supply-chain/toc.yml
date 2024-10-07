@@ -2504,9 +2504,9 @@
       - name: Integerate with contract lifecylce management systems (preview)
         items:
         - name: Contract lifecylce management overview
-          href: procurement/contract-lifecycle-management/developer/clm-overview.md
+          href: procurement/contract-lifecycle-management/clm-overview.md
         - name: Work with integrated CLM
-          href: procurement/contract-lifecycle-management/developer/clm-use.md
+          href: procurement/contract-lifecycle-management/clm-use.md
         - name: CLM integration admin and devlopment
           items:
           - name: Enable and configure CLM integration
@@ -2520,7 +2520,7 @@
           - name: Synchronize contracts
             href: procurement/contract-lifecycle-management/developer/clm-sync-contracts.md
         - name: Integrate with Icertis CLM
-          href: procurement/contract-lifecycle-management/developer/clm-icertis.md
+          href: procurement/contract-lifecycle-management/clm-icertis.md
       - name: Procurement FAQ
         href: procurement/procurement-faq.md
     - name: Product information management

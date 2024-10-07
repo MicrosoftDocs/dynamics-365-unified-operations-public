@@ -54,7 +54,7 @@ Supply Chain Management offers several out-of-the-box data entities that externa
 <!-- KFM: What does the final row mean? -->
 
 > [!NOTE]
-> Company-specific data entities include the `dataAreaId` field, which indicates the legal entity to which a record belongs. Your CLM system must adopt the same behavior that supports both company-specific and cross-company records. For more information about cross-company behavior, see [Cross-company behavior of data entities](../../../../fin-ops-core/dev-itpro/data-entities/cross-company-behavior.md).
+> Company-specific data entities include the `dataAreaId` field, which indicates the legal entity to which a record belongs. Your CLM system must adopt the same behavior that supports both company-specific and cross-company records. Learn more about cross-company behavior in [Cross-company behavior of data entities](../../../../fin-ops-core/dev-itpro/data-entities/cross-company-behavior.md).
 
 The following diagram shows how master data is integrated and synchronized.
 

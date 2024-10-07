@@ -82,4 +82,4 @@ To inspect the current status of the connection between Supply Chain Management 
     - *Configuration failed* – Configuration of the external navigation links has failed. <!--KFM: Do we mean that the connection succeeded, but something is wrong with at least one of our **External navigation links**? -->
     - *Ready* – The integration is ready for use.
 
-The connection status is based on information submitted by your CLM system through the Supply Chain Management API. For details about how to set up your CLM system to return a value for this status indicator, see [Establish a connection from a CLM system to Supply Chain Management](clm-establish-connection.md).
+The connection status is based on information submitted by your CLM system through the Supply Chain Management API. Learn more about how to set up your CLM system to return a value for this status indicator in [Establish a connection from a CLM system to Supply Chain Management](clm-establish-connection.md).

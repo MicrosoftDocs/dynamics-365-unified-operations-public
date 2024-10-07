@@ -33,13 +33,13 @@ You should select an integration pattern based on your data volume and real-time
 - For high-volume master data, we generally recommend using the *Data Management Package API*, while for low-volume master data, we recommend either the *Data Management Package API* or *OData*.
 - For integrations requiring real-time data synchronization and error handling, we generally recommend that you use the *OData protocol* provided your peak data volume is not excessively high. For handling large volumes of data, we recommend using the *Data Management Package API* instead.
 
-For more information about the integration patterns and scenarios, see [Integration between finance and operations apps and third-party services](../../../../fin-ops-core/dev-itpro/data-entities/integration-overview.md).
+Learn more about the integration patterns and scenarios in [Integration between finance and operations apps and third-party services](../../../../fin-ops-core/dev-itpro/data-entities/integration-overview.md).
 
 ## Enable change tracking
 
 When using the *Data Management Package API* integration pattern there, it's possible to enable change tracking for selected data entities, which enables incremental exports. In an incremental export, only changed records are exported.
 
-For more information how to enable change tracking for an entity, see [Enable change tracking for entities](../../../../fin-ops-core/dev-itpro/data-entities/entity-change-track.md).
+Learn more about how to enable change tracking for an entity in [Enable change tracking for entities](../../../../fin-ops-core/dev-itpro/data-entities/entity-change-track.md).
 
 ## Create data projects
 
@@ -56,7 +56,7 @@ The following table lists the data entities available for creating a data projec
 | Definition Groups | `DataManagementDefinitionGroupEntity` | `DataManagementDefinitionGroups` | No | CLM -> Supply Chain Management |
 | Entities for a processing group | `DataManagementDefinitionGroupDetailEntity` | `DataManagementDefinitionGroupDetails` | No | CLM -> Supply Chain Management |
 
-For more information about data management and data import/export projects, see [Data management overview](../../../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
+Learn more about data management and data import/export projects in [Data management overview](../../../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
 ## Configure and use service-based authentication
 
@@ -68,7 +68,7 @@ To gain access to the data entities through the API, your CLM system must authen
     - **Name** – Enter a descriptive name of the application.
     - **User ID** – Select the service account under which to run the application. We recommend that you create a new user and assign them the *CLM integration role* role.
 
-For more information about how to register an application in Microsoft Entra ID and how to register external application in Supply Chain Management, see [Service endpoints overview](../../../../fin-ops-core/dev-itpro/data-entities/services-home-page.md#authentication).
+Learn more about how to register an application in Microsoft Entra ID and how to register external application in Supply Chain Management in [Service endpoints overview](../../../../fin-ops-core/dev-itpro/data-entities/services-home-page.md#authentication).
 
 <!-- KFM: We should consider adding a few details and/or a link for how to actually authenticate (get a token, or whatever). -->
 

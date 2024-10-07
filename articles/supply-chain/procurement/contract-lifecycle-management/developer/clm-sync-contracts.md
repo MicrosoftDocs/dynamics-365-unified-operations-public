@@ -68,7 +68,7 @@ Supply Chain Management offers several out-of-the-box data entities that externa
 | CLM integration purchase agreement lines | `CLMIntegrationPurchaseAgreementLineEntity` | `CLMIntegrationPurchaseAgreementLines` | Yes | CLM -\> Supply Chain Management |
 
 > [!NOTE]
-> Company-specific data entities include the `dataAreaId` field, which indicates the legal entity to which each record belongs. Your CLM system must adopt the same behavior to support both company-specific and cross-company records. For more information about cross-company behavior, see [Cross-company behavior of data entities](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/cross-company-behavior).
+> Company-specific data entities include the `dataAreaId` field, which indicates the legal entity to which each record belongs. Your CLM system must adopt the same behavior to support both company-specific and cross-company records. Learn more about cross-company behavior in [Cross-company behavior of data entities](../../../../fin-ops-core/dev-itpro/data-entities/cross-company-behavior.md)
 
 The following diagram shows how contracts and purchase agreements are integrated and synchronized.
 
@@ -294,7 +294,7 @@ In the scenario of creating and amending purchase contracts, Supply Chain Manage
 
 ## Create shareable, secured deep links
 
-The following APIs create shareable and secured URLs (also known as deep links) to specific pages within Supply Chain Management, such as vendor page, contract page or purchase agreement page. These APIs enable scenarios such as embedding links directly in an external CLM system, which enables users to quickly and easily locate the specified pages and records simply by selecting the generated link. For more information about deep links, see [Create shareable, secured URLs (deep links)](../../../../fin-ops-core/dev-itpro/user-interface/create-deep-links.md).
+The following APIs create shareable and secured URLs (also known as deep links) to specific pages within Supply Chain Management, such as vendor page, contract page or purchase agreement page. These APIs enable scenarios such as embedding links directly in an external CLM system, which enables users to quickly and easily locate the specified pages and records simply by selecting the generated link. Learn more about deep links in [Create shareable, secured URLs (deep links)](../../../../fin-ops-core/dev-itpro/user-interface/create-deep-links.md).
 
 ### Generate a deep link for a vendor
 
