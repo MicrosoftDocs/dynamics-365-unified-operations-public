@@ -19,7 +19,9 @@ ms.dyn365.ops.version: AX 10.0.39
 
 To comply with ...... the Germany-specific **xRechnung** format has been implemented............
 
-![Screenshot of the setup on the Processing pipeline tab of the Feature version setup page for the electronic invoicing feature.](apac-mys-e-invoice-URLs.jpg)
+This article provides information to help you get started with the import of incoming vendor electronic invoices for Germany in Microsoft Dynamics 365 Finance to comply with to the [country regulatory requirements](https://www.test.de/).
+
+![Diagram of the electronic invoicing import workflow.](emea-deu-einvoices-import.jpg)
 
 ## Prerequisites
 
