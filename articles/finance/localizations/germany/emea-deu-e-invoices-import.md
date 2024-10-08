@@ -25,7 +25,7 @@ The functionality is based on **Electronic Reporting** framework and implements 
 
 ## Configuration and usage of vendor electronic invoices import
 
-For more information how to configure and use of vendor electronic invoices import in Germany, see [Import vendor electronic invoices](../europe/emea-peppol-import.md).
+For more information how to configure and use vendor electronic invoices import in Germany, see [Import vendor electronic invoices](../europe/emea-peppol-import.md).
 
 > [!NOTE]
 > The article covers the import of incoming electronic invoices in several supported formats including Germany-specific **xRechnung** format.
