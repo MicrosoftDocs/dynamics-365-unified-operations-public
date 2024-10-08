@@ -50,6 +50,8 @@ The public preview of the dual-write async feature is currently available on pub
 1. Select **Start** to initiate Async mode. This process might take a few minutes. When the job is ready, its status is updated to **Active**.
 1. Select **Stop** to stop the async process.
 
+![Integration jobs](./media/image.png)
+
 ## Modify the initial setup
 
 Sometimes, the table groups must be changed, or the sequence of execution must be updated within a table group to maintain the integrity of the relationships. For example, the parent table should be above the child table.
