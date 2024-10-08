@@ -17,20 +17,18 @@ ms.dyn365.ops.version: AX 10.0.39
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information to help you get started with the import of incoming vendor electronic invoices in the Germany-specific **xRechnung** format based on the Universal Business Language (UBL) syntax in Microsoft Dynamics 365 Finance to comply with to the [country regulatory requirements](https://www.test.de/).
+This article provides information to help you get started with the import of incoming vendor electronic invoices in the Germany-specific **xRechnung** format based on the Universal Business Language (UBL) syntax in Microsoft Dynamics 365 Finance to comply with to the country regulatory requirements.
+
+The functionality is based on **Electronic Reporting** framework and implements the import workflow described in the diagram below.
 
 ![Diagram of the electronic invoicing import workflow.](emea-deu-einvoices-import.jpg)
 
-## Prerequisites
+## Configuration and usage of vendor electronic invoices import
 
-Before you complete the procedures in this article, the following prerequisites must be met:
-
-- The primary address of the legal entity must be in Germany.
+For more information how to configure and use of vendor electronic invoices import in Germany, see [Import vendor electronic invoices](../europe/emea-peppol-import.md).
 
 > [!NOTE]
 > The.
-
-For more information, see [Import vendor electronic invoices](../europe/emea-peppol-import.md).
 
 ## More resources
 
