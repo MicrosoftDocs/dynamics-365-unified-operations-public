@@ -2788,8 +2788,10 @@
                       href: localizations/germany/emea-deu-vat-declaration-germany.md
                     - name: German Intrastat
                       href: localizations/germany/emea-deu-intrastat.md
-                    - name: Customer electronic invoices
+                    - name: Customer electronic invoices export
                       href: localizations/germany/emea-deu-cust-e-invoices.md
+                    - name: Vendor electronic invoices import
+                      href: localizations/germany/emea-deu-e-invoices-import.md
                     - name: Journal list report
                       href: localizations/germany/emea-deu-journal-list-report.md
                     - name: Set up electronic tax declarations
