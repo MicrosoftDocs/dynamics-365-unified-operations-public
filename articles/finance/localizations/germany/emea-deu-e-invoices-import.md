@@ -32,6 +32,10 @@ For more information how to configure and use of vendor electronic invoices impo
 
 ## More resources
 
+- Watch the video how to import vendor electronic invoices into Microsoft D365 Finance.
+
+  > [!VIDEO 2167036b-ff87-4473-9bf3-e2902cbdb21f]
+
 - [Customer electronic invoices in Germany](emea-deu-cust-e-invoices.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
