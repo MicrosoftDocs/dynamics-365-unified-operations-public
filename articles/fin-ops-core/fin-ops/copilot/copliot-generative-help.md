@@ -34,18 +34,16 @@ When generative help and guidance with Copilot is enabled for your system, users
 
 Copilot uses state-of-the-art generative AI to dynamically interpret user inquiries and compose responses in real time. This process involves a sophisticated mechanism where the AI first rephrases the user's question for clarity, then searches the indexed public documentation, and finally synthesizes the information into a coherent, actionable answer.
 
-<!-- KFM: Remove for now
 ## Keep conversations going with Copilot follow-up questions (preview)
 
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
 
 Copilot can generate and display up to three follow-up questions that you can select to keep the conversation going. Each question is generated based on the existing conversation so far and represents something that Copilot thinks you're likely to want to ask next. This feature makes it fast and easy to post follow-up questions and get answers from Copilot. It's designed to provide a diversity of follow-up questions, and avoids repeating questions you've already asked.
 
 For more information about this feature, see [Responsible AI FAQ for Follow-up questions in the Copilot sidecar](faq-copilot-suggested-questions.md).
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
-
--->
 
 ## Grounded in public documentation
 
@@ -76,7 +74,4 @@ Microsoft is committed to applying [responsible AI practices](../../dev-itpro/re
 - For administrators: [Enable generative help and guidance with Copilot](../../dev-itpro/copilot/enable-copliot-generative-help.md)
 - For administrators: [Add knowledge to generative help and guidance with Copilot](../../dev-itpro/copilot/extend-copilot-generative-help.md)
 - [Responsible AI FAQ for Generative help and guidance with Copilot in finance and operations apps](faq-copilot-generative-help.md)
-
-<!-- KFM: Remove for now
 - [Responsible AI FAQ for Follow-up questions in the Copilot sidecar (preview)](../../fin-ops/copilot/faq-copilot-suggested-questions.md)
--->
