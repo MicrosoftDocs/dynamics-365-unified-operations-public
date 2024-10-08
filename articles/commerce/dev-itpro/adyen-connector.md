@@ -154,13 +154,17 @@ The following table lists the current Dynamics 365 Commerce Payment Connector fo
 | Scheme | Card present support | Card not present support |
 |---|---|---|
 | PayPal (via Adyen Connector) | No | No |
-| Google Pay | Yes | Yes |
-| Apple Pay | Yes | Yes |
-| Klarna | No | No |
-| Affirm | No | No |
+| Google Pay | ✔ | ✔ |
+| Apple Pay | ✔ | ✔ |
 | Afterpay | No | No |
-| Alipay | No | No |
-| WeChat | No | No |
+| Klarna | No | No |
+| Affirm | ✔ | No |
+| Alipay | ✔ | No |
+| WeChat Pay | ✔ | No |
+
+> [!NOTE]
+> The support for payment methods Affirm, Alipay and WeChatPay is added for Card present scenarios starting 10.0.40. Refer the link https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/wallets for setup and known limitations.
+
 
 #### Supported card present input methods
 
