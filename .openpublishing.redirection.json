@@ -27983,11 +27983,6 @@
       "source_path": "articles/supply-chain/localizations/rus-goods-transit-postponed.md",
       "redirect_url": "/dynamics365/supply-chain/localizations/russia/rus-goods-transit-postponed",
       "redirect_document_id": false
-    },
-    {
-      "source_path": "articles/fin-ops-core/fin-ops/copilot/faq-copilot-suggested-questions.md",
-      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/responsible-ai/responsible-ai-overview",
-      "redirect_document_id": false
     }
   ]
 }
