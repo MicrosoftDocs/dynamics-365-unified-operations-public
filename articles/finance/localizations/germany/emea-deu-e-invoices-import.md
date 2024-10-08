@@ -17,7 +17,9 @@ ms.dyn365.ops.version: AX 10.0.39
 
 [!include [banner](../../includes/banner.md)]
 
-To comply with European Union (EU) Directive 2014/55/EU, the Germany-specific **xRechnung** format has been implemented. This article explains how to set up and process customer electronic invoices in **xRechnung** format.
+To comply with ...... the Germany-specific **xRechnung** format has been implemented............
+
+![Screenshot of the setup on the Processing pipeline tab of the Feature version setup page for the electronic invoicing feature.](apac-mys-e-invoice-URLs.jpg)
 
 ## Prerequisites
 
