@@ -2297,8 +2297,6 @@ items:
         href: ../fin-ops/copilot/faq-copilot-fno-data-on-m365copilot.md
       - name: Responsible AI FAQ for Generative help and guidance with Copilot
         href: ../fin-ops/copilot/faq-copilot-generative-help.md
-      - name: Responsible AI FAQ for Follow-up questions in the Copilot sidecar (preview)
-        href: ../fin-ops/copilot/faq-copilot-suggested-questions.md
       - name: Responsible AI FAQ for Workflow history summary
         href: ../fin-ops/copilot/workflow-history-summary-faq.md
   - name: Dynamics 365 Supply Chain Management 
