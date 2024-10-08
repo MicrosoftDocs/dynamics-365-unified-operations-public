@@ -1,8 +1,8 @@
 ---
 title: Configure non-recurring payment tokens
 description: This article describes how to configure and use payment processing with non-recurring payment tokens in Microsoft Dynamics 365 Commerce.
-author: ritakimani, shajain
-ms.date: 07/29/2024
+author: shajain
+ms.date: 10/08/2024
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -56,7 +56,6 @@ In these scenarios, a message informs the user that a recurring token payment is
 
 The use of non-recurring tokens has specific payment flow patterns, depending on the operating channel. This document covers the details for each channel.
 
-
 ### Point of sale payments
 
 #### Cash and carry transactions
@@ -79,7 +78,6 @@ If the above-mentioned approach does not work, then disable the non-recurring to
 
  Just like any other order, such orders can be modified in call center and POS. During editing the order in POS, since the system does not allow the cashier to change any existing payment lines, there is no impact of this feature on editing orders in POS. The details describing the impact of editing orders in the call center can be found in the later section of this document. 
 
-
 ### Call center payments
 
 Call center users can create or edit existing sales orders in Commerce. When payment is submitted in a call center, a payment page is presented, so that the user can accept payment details. On the **Enter customer payment information** page, for credit card payment methods, the call center associate must fill in the payment method information. The call center associate then has two options for entering the card number information:
@@ -91,7 +89,6 @@ On the **Call center parameters \> Payment** form, system administrators can set
 
 > [!WARNING]
 > As mentioned in the Customer order section, currently, the Commerce system doesn't extend the authorization for a non-recurring token. If a non-recurring token expires before an order is invoiced, the invoice action fails unless the retailer obtains a new token by contacting the customer. If your business generally has long lead times for orders which result in expired authorizations, then to avoid the need to contact the customer to get a new authorization, you can train the call center users to request the customers to provide the consent to save the card token during order capture and record this consent by checking the **Save payment information** checkbox.
-
 
 #### Future order authorizations
 
@@ -108,12 +105,11 @@ While editing the orders in call center, if the user manually modifies the order
 > [!NOTE]
 > If the order total gets modified without manually modifying the order, for example, the order total increases due to the increase of charges or taxes, then the system does not adjust the authorization and hence captures only the amount that is authorized. The only way to adjust the authorization is to manually edit the existing payment line.
 
-
 ### Online storefront payments
 
 For online storefront payments that use credit cards or digital wallets, the payment module processes an online customer's entered payment information. When the **Enable use of non-recurring tokens in Commerce** feature is enabled, all online transactions are processed in the Commerce system, but the payment card token isn't saved. The payment module presents the configured payment processor's payment acceptance page in an iFrame element.
 
-When the Dynamics 365 Payment Connector for Adyen is configured for the online store, if the **Allow saving payment information in e-commerce** parameter is set to **True**, the Adyen iFrame element presents a **Save for my next payment** checkbox to the authenticated customer. This mechanism enables the customer's credit card to be saved with Adyen, so that it can be presented in the Adyen iFrame element at the time of the authenticated user's next checkout. However, this mechanism doesn't save the card on file in the Commerce system as described in the [Saved card on file](#saved-card-on-file) section. The online storefront's generated sales order processes the payment without a saved payment card token.
+When the Dynamics 365 Payment Connector for Adyen is configured for the online store, if the **Allow saving payment information in e-commerce** parameter is set to **True**, the Adyen iFrame element presents a **Save for my next payment** checkbox to the authenticated customer. This mechanism enables the customer's credit card to be saved with Adyen, so that it can be presented in the Adyen iFrame element at the time of the authenticated user's next checkout. However, this mechanism doesn't save the card on file in the Commerce system. The online storefront's generated sales order processes the payment without a saved payment card token.
 
 If the online storefront's authorization expires before the order is fulfilled (that is, if the payment isn't captured before the authorization expires), the payment is set to **Declined** in the Commerce system. This event sets the **Do not process** flag on the sales order header, and a new payment must be retrieved against the order. You can manage orders in the declined state in headquarters at **Retail and Commerce** \> **Channels** \> **Call centers** \> **Call center credit cards** \> **Authorization management**.
 
