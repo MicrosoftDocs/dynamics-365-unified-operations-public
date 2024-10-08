@@ -30,6 +30,8 @@ For all data synchronization processes, you must be able to manage and troublesh
 
     - **Retry** – Users can retry selected records, based on the specified filter criteria.
     - **Dismiss** – Users can permanently remove records from the error queue. After records are dismissed, they are no longer available for reporting or retries.
+ 
+  ![Sync errors](./media/image(1).png)
 
 ## Limits
 
