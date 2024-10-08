@@ -506,10 +506,14 @@ To configure electronic document parameters for batch submissions, follow these 
 
 To configure the electronic invoicing feature, follow these steps.
 
-1. Import the latest version of the **Malaysian electronic invoicing (MY)** (version **9** or later) Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
-1. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
-1. On the **Versions** tab, verify that the **Draft** version is selected.
-1. On the **Setups** tab, in the grid, select the **Consolidated invoice derived** feature setup, and then select **Edit**.
+1. Import the latest version of the **Malaysian electronic invoicing (MY)** (version **10** or later) Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+
+> [!NOTE]
+> Make sure that the **Consolidated invoice (MY)** ER format configuration is also imported after the feature import. Otherwise import the **Consolidated invoice (MY)** configuration maunally. This format configuration is based on the **Invoices Communication Model** configuration, as well as the **Consolidated Invoice Model Mapping (MY)** configuration imported in the previous chapter.
+   
+2. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
+3. On the **Versions** tab, verify that the **Draft** version is selected.
+4. On the **Setups** tab, in the grid, select the **Consolidated invoice derived** feature setup, and then select **Edit**.
 
 > [!NOTE]
 > Configure the following processing pipeline actions parameters in the same way as it was configured for **[Sales invoice derived](#FeatureSetup)** feature setup.
