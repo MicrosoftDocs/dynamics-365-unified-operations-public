@@ -21,11 +21,11 @@ This article describes scenarios, data entities, and integration methods availab
 
 ## Access the data integration APIs
 
-For information about which data integration APIs are available, how to enable change tracking, and how to authenticate with Supply Chain Management so your CLM system can access that data entities described in this topic, see [Data integration APIs](clm-data-integration-apis.md).
+For information about which data integration APIs are available, how to enable change tracking, and how to authenticate with Supply Chain Management so your CLM system can access that data entities described in this article, see [Data integration APIs](clm-data-integration-apis.md).
 
 ## Scenarios
 
-This section outlines various integration scenarios supported in Supply Chain Management, including the following:
+This section outlines the following integration scenarios supported by Supply Chain Management:
 
 - Create a non-disclosure agreement (NDA)
 - Create a purchase contract
@@ -43,7 +43,7 @@ The following illustration shows a flowchart of how NDAs are created and synchro
 
 ### Create a purchase contract
 
-A purchase contract is a contract that's associated with a purchase agreement in Supply Chain Management. The integration points include creating the contract, validating the purchase agreement prior to submitting it for approval and signing, updating the contract status upon completion of the approval and signing process, and ultimately creating the purchase agreement.
+A purchase contract is a contract that's associated with a purchase agreement in Supply Chain Management. The integration points include creating the contract, validating the purchase agreement before submitting it for approval and signing, updating the contract status upon completion of the approval and signing process, and ultimately creating the purchase agreement.
 
 The following illustration shows a flowchart of how purchase contracts are created and synchronized between systems.
 
@@ -51,7 +51,7 @@ The following illustration shows a flowchart of how purchase contracts are creat
 
 ### Amend a contract
 
-Purchase contract amendments and NDA amendments are documents that change the terms of an existing agreement. The integration points include updating the contract with amendment information, validating the purchase agreement prior to submitting it for approval and signing, updating the contract status upon completion of the approval and signing process, and ultimately updating the purchase agreement. In Supply Chain Management, the amended information is updated within the same contract and purchase agreement record.
+Purchase contract amendments and NDA amendments are documents that change the terms of an existing agreement. The integration points include updating the contract with amendment information, validating the purchase agreement before submitting it for approval and signing, updating the contract status upon completion of the approval and signing process, and ultimately updating the purchase agreement. In Supply Chain Management, the amended information is updated within the same contract and purchase agreement record.
 
 The following illustration shows a flowchart of how contract amendments are created and synchronized between systems.
 
@@ -88,7 +88,7 @@ This entity provides information about the contract. Its properties are listed i
 | `ContractName` | Contract title | String | Contract title |
 | `EffectiveDate` | Effective date | Date | Effective date |
 | `ExpirationDate` | Expiration date | Date | Expiration date |
-| `RequesterWorkerName` | Requester name | String | Requester worker name.<br/>If the specified worker name is not found in the system, the `RequesterWorkerEmail` field is used to identify the worker. |
+| `RequesterWorkerName` | Requester name | String | Requester worker name.<br/>If the specified worker name isn't found in the system, the `RequesterWorkerEmail` field is used to identify the worker. |
 | `RequesterWorkerEmail` | Requester email | String | Requester worker email. |
 | `AccountType` | Account type | Enum | Determines the type of contracting party.<br/>Values: `Vend`, `Cust`, `Party`. |
 | `AccountRelationId` | Account number | String | Contracting account identifier that corresponds to the chosen `AccountType`. |
@@ -100,13 +100,13 @@ This entity provides information about the contract. Its properties are listed i
 
 <!--KFM: what is "PK"? -->
 
-Here is an example request query for the CLM integration contract entity:
+Here's an example request query for the CLM integration contract entity:
 
 ```http
 GET https://[baseURI]/data/CLMIntegrationContracts
 ```
 
-Here is an example response to that query:
+Here's an example response to that query:
 
 ```json
 {
@@ -151,9 +151,9 @@ This entity provides information about the purchase agreement header. The most c
 | `InvoiceVendorAccountNumber` | Invoice account | String | Invoicing vendor account reference. |
 | `VendorReference` | Vendor reference | String | Vendor reference |
 | `PrimaryResponsibleWorkerEmail` | Primary responsible worker email | String | Primary responsible worker email.  |
-| `PrimaryResponsibleWorkerName` | Primary responsible worker name | String | Primary responsible worker name.<br/><br/>If the specified worker name is not found in the system, the `PrimaryResponsibleWorkerEmail` field is used to identify the worker. |
+| `PrimaryResponsibleWorkerName` | Primary responsible worker name | String | Primary responsible worker name.<br/><br/>If the specified worker name isn't found in the system, the `PrimaryResponsibleWorkerEmail` field is used to identify the worker. |
 | `SecondaryResponsibleWorkerEmail` | Secondary responsible worker email | String | Secondary responsible worker email. |
-| `SecondaryResponsibleWorkerName` | Secondary responsible worker name | String | Secondary responsible worker name.<br/><br/>If the specified worker name is not found in the system, the `SecondaryResponsibleWorkerEmail` field is used to identify the worker. |
+| `SecondaryResponsibleWorkerName` | Secondary responsible worker name | String | Secondary responsible worker name.<br/><br/>If the specified worker name isn't found in the system, the `SecondaryResponsibleWorkerEmail` field is used to identify the worker. |
 | `CashDiscountCode` | Cash discount | String | Cash discount |
 | `ContactPersonId` | Contact person ID | String | Contact person ID |
 | `CurrencyCode` | Currency | String | Currency |
@@ -165,13 +165,13 @@ This entity provides information about the purchase agreement header. The most c
 
 <!-- KFM: What does the final row mean? -->
 
-Here is an example request query for the CLM integration agreement header entity:
+Here's an example request query for the CLM integration agreement header entity:
 
 ```http
 GET https://[baseURI]/data/CLMIntegrationPurchaseAgreements
 ```
 
-Here is an example response to that query:
+Here's an example response to that query:
 
 ```json
 {
@@ -240,13 +240,13 @@ This entity provides information about the purchase agreement line. The most com
 
 <!-- KFM: What does the final row mean? -->
 
-Here is an example request query for the CLM integration purchase agreement line entity:
+Here's an example request query for the CLM integration purchase agreement line entity:
 
 ```http
 GET https://[baseURI]/data/CLMIntegrationPurchaseAgreementLines
 ```
 
-Here is an example response to that query:
+Here's an example response to that query:
 
 ```json
 {
@@ -282,7 +282,7 @@ Here is an example response to that query:
 
 ## Purchase agreement validation entities
 
-In the scenario of creating and amending purchase contracts, Supply Chain Management provides data entities specifically designed for validating purchase agreements. These validation entities contain the same list of fields as regular entities but don't persist data in the database. Instead, they perform validation and return the result either in the `ValidationResult` field or as an exception. The following table outlines the data entities available for validating purchase agreements.
+In the scenario of creating and amending purchase contracts, Supply Chain Management provides data entities designed for validating purchase agreements. These validation entities contain the same list of fields as regular entities but don't persist data in the database. Instead, they perform validation and return the result either in the `ValidationResult` field or as an exception. The following table outlines the data entities available for validating purchase agreements.
 
 | Entity |Target entity | Public name (OData) | Company specific | Direction |
 | --- | --- | --- | --- | --- |
@@ -294,13 +294,13 @@ In the scenario of creating and amending purchase contracts, Supply Chain Manage
 
 ## Create shareable, secured deep links
 
-The following APIs create shareable and secured URLs (also known as deep links) to specific pages within Supply Chain Management, such as vendor page, contract page or purchase agreement page. These APIs enable scenarios such as embedding links directly in an external CLM system, which enables users to quickly and easily locate the specified pages and records simply by selecting the generated link. Learn more about deep links in [Create shareable, secured URLs (deep links)](../../../../fin-ops-core/dev-itpro/user-interface/create-deep-links.md).
+The following APIs create shareable and secured URLs (also known as deep links) to specific pages within Supply Chain Management, such as vendor page, contract page, or purchase agreement page. These APIs enable scenarios such as embedding links directly in an external CLM system, which enables users to quickly and easily locate the specified pages and records simply by selecting the generated link. Learn more about deep links in [Create shareable, secured URLs (deep links)](../../../../fin-ops-core/dev-itpro/user-interface/create-deep-links.md).
 
 ### Generate a deep link for a vendor
 
 This API generates a deep link to open the page for a specific vendor within Supply Chain Management.
 
-Here is an example request for a deep link for a vendor:
+Here's an example request for a deep link for a vendor:
 
 ```http
 POST https://[baseURI]/data/VendorsV2/Microsoft.Dynamics.DataEntities.GenerateVendorDetailFormURL
@@ -313,7 +313,7 @@ POST https://[baseURI]/data/VendorsV2/Microsoft.Dynamics.DataEntities.GenerateVe
 }
 ```
 
-Here is an example response to that request:
+Here's an example response to that request:
 
 ```json
 {
@@ -326,7 +326,7 @@ Here is an example response to that request:
 
 This API generates a deep link to open the form for a specific contract within Supply Chain Management.
 
-Here is an example request for a deep link for a contract using a contract ID:
+Here's an example request for a deep link for a contract using a contract ID:
 
 ```http
 POST https://[baseURI]/data/CLMIntegrationContracts/Microsoft.Dynamics.DataEntities.GenerateContractDetailFormURLByContractId
@@ -339,7 +339,7 @@ POST https://[baseURI]/data/CLMIntegrationContracts/Microsoft.Dynamics.DataEntit
 }
 ```
 
-Here is an example response to that request:
+Here's an example response to that request:
 
 ```json
 {
@@ -352,7 +352,7 @@ Here is an example response to that request:
 
 This API generates a deep link to open the page for a specific contract within Supply Chain Management.
 
-Here is an example request for a deep link for a contract using a contract external ID:
+Here's an example request for a deep link for a contract using a contract external ID:
 
 ```http
 POST https://[baseURI]/data/CLMIntegrationContracts/Microsoft.Dynamics.DataEntities.GenerateContractDetailFormURLByExternalContractId
@@ -365,7 +365,7 @@ POST https://[baseURI]/data/CLMIntegrationContracts/Microsoft.Dynamics.DataEntit
 }
 ```
 
-Here is an example response to that request:
+Here's an example response to that request:
 
 ```json
 {
@@ -378,7 +378,7 @@ Here is an example response to that request:
 
 This API generates a deep link to open the page for a specific purchase agreement within Supply Chain Management.
 
-Here is an example request for a deep link for a purchase agreement using an agreement ID:
+Here's an example request for a deep link for a purchase agreement using an agreement ID:
 
 ```http
 POST https://[baseURI]/data/CLMIntegrationPurchaseAgreements/Microsoft.Dynamics.DataEntities.GenerateAgreementFormURLByAgreementId
@@ -391,7 +391,7 @@ POST https://[baseURI]/data/CLMIntegrationPurchaseAgreements/Microsoft.Dynamics.
 }
 ```
 
-Here is an example response to that request:
+Here's an example response to that request:
 
 ```json
 {
@@ -404,7 +404,7 @@ Here is an example response to that request:
 
 This API generates a deep link to open the page for a specific purchase agreement within Supply Chain Management.
 
-Here is an example request for a deep link for a purchase agreement using an agreement external ID:
+Here's an example request for a deep link for a purchase agreement using an agreement external ID:
 
 ```http
 POST https://[baseURI]/data/CLMIntegrationPurchaseAgreements/Microsoft.Dynamics.DataEntities.GenerateAgreementFormURLByExternalContractId
@@ -417,7 +417,7 @@ POST https://[baseURI]/data/CLMIntegrationPurchaseAgreements/Microsoft.Dynamics.
 }
 ```
 
-Here is an example response to that request:
+Here's an example response to that request:
 
 ```json
 {

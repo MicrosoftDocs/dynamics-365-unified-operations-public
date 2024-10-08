@@ -31,7 +31,7 @@ This article describes integration patterns available in Supply Chain Management
 You should select an integration pattern based on your data volume and real-time requirements.
 
 - For high-volume master data, we generally recommend using the *Data Management Package API*, while for low-volume master data, we recommend either the *Data Management Package API* or *OData*.
-- For integrations requiring real-time data synchronization and error handling, we generally recommend that you use the *OData protocol* provided your peak data volume is not excessively high. For handling large volumes of data, we recommend using the *Data Management Package API* instead.
+- For integrations requiring real-time data synchronization and error handling, we generally recommend that you use the *OData protocol* provided your peak data volume isn't excessively high. For handling large volumes of data, we recommend using the *Data Management Package API* instead.
 
 Learn more about the integration patterns and scenarios in [Integration between finance and operations apps and third-party services](../../../../fin-ops-core/dev-itpro/data-entities/integration-overview.md).
 

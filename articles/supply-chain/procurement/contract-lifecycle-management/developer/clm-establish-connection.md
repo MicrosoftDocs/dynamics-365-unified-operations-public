@@ -23,7 +23,7 @@ This article describes how a third-party contract lifecycle management (CLM) pro
 
 ## Access the data integration APIs
 
-For information about which data integration APIs are available, how to enable change tracking, and how to authenticate with Supply Chain Management so your CLM system can access that data entities described in this topic, see [Data integration APIs](clm-data-integration-apis.md).
+For information about which data integration APIs are available, how to enable change tracking, and how to authenticate with Supply Chain Management so your CLM system can access that data entities described in this article, see [Data integration APIs](clm-data-integration-apis.md).
 
 ## Available data entities
 
@@ -48,20 +48,20 @@ The *CLM integration service instance* entity provides information about the CLM
 
 | Physical name | Property | Type | Description |
 |---|---|---|---|
-| `ID` (PK) | ID | Int | Parameter key which will always be set to 0. |
+| `ID` (PK) | ID | Int | Parameter key (always be set to 0) |
 | `InstanceName` | Connection name | String | Connection name |
 | `BaseURL` | Base URL | String | Base URL |
 | `ExternalNavigationBaseURL` | External navigation base URL | String | External navigation base URL |
 
 <!--KFM: What does PK stand for?  -->
 
-Here is an example request query for the CLM integration service instance entity:
+Here's an example request query for the CLM integration service instance entity:
 
 ```http
 GET https://[baseURI]/data/CLMIntegrationServiceInstances
 ```
 
-Here is an example response to that query:
+Here's an example response to that query:
 
 ```json
 {
@@ -84,13 +84,13 @@ The *CLM integration external navigation links* entity provides information abou
 | `RelativeURL` | Relative URL | String | Relative URL |
 | `Action` | Action | Enum | Values: `OpenInNewTab`, `OpenInExistingTab` |
 
-Here is an example request query for the *CLM integration external navigation links* entity:
+Here's an example request query for the *CLM integration external navigation links* entity:
 
 ```http
 GET https://[baseURI]/data/CLMIntegrationExternalNavigationLinks
 ```
 
-Here is an example response to that query:
+Here's an example response to that query:
 
 ```json
 {
@@ -115,13 +115,13 @@ The *CLM integration external navigation link key-value pairs* entity provides i
 
 <!--KFM: I'm confused by "The `QueryString` is the only allowed value". We list `Header` as a value too. What does this mean?  -->
 
-Here is an example request query for the *CLM integration external navigation link key-value pairs* entity:
+Here's an example request query for the *CLM integration external navigation link key-value pairs* entity:
 
 ```http
 GET https://[baseURI]/data/CLMIntegrationExternalNavigationLinkKeyValues
 ```
 
-Here is an example response to that query:
+Here's an example response to that query:
 
 ```json
 {
@@ -136,10 +136,10 @@ Here is an example response to that query:
 
 To clearly reflect the connection status, the CLM system must use the *CLM integration external navigation links* entity to update the following two statuses:
 
-- `CLMIntegrationServiceInstanceEntity.EstablishmentStatus` – Indicates whether connection has been established so the external CLM system can communicate with the Supply Chain Management. Report the connection status using one of the following values:
+- `CLMIntegrationServiceInstanceEntity.EstablishmentStatus` – Indicates whether a connection is established so the external CLM system can communicate with the Supply Chain Management. Report the connection status using one of the following values:
     - `NotStarted` – Connection establishment has't started yet.
-    - `Success` – Connection establishment has succeeded.
-    - `Error` – Connection establishment has failed.
+    - `Success` – The connection is established.
+    - `Error` – The connection failed to be established.
 - `CLMIntegrationServiceInstanceEntity.ConfigurationStatus` – Indicates whether external configuration links have been configured. Report the configuration status using one of the following values:
     - `NotStarted` – Configuration of the external navigation links hasn't started yet.
     - `Success` – Configuration of the external navigation links has succeeded.
@@ -147,7 +147,7 @@ To clearly reflect the connection status, the CLM system must use the *CLM integ
 
 Administrators can read this status on the **Contract management parameters** page in Supply Chain Management. Learn more in [Enable and configure CLM integration (preview)](clm-enable.md).
 
-Here is an example request query for updating the status on the *CLM integration service instance* entity:
+Here's an example request query for updating the status on the *CLM integration service instance* entity:
 
 ```http
 PATCH https://[baseURI]/data/CLMIntegrationServiceInstances(ID=0)

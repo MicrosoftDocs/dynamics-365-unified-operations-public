@@ -21,11 +21,11 @@ This article describes the data entities and integration methods that you can us
 
 ## Access the data integration APIs
 
-For information about which data integration APIs are available, how to enable change tracking, and how to authenticate with Supply Chain Management so your CLM system can access that data entities described in this topic, see [Data integration APIs](clm-data-integration-apis.md).
+For information about which data integration APIs are available, how to enable change tracking, and how to authenticate with Supply Chain Management so your CLM system can access that data entities described in this article, see [Data integration APIs](clm-data-integration-apis.md).
 
 ## Available data entities
 
-Supply Chain Management offers several out-of-the-box data entities that external CLM systems can use to synchronize master data. The following table describes the available data entities necessary to synchronize contracts and purchase agreements. The required data entities may extend beyond those listed here, depending on the business requirements.
+Supply Chain Management offers several out-of-the-box data entities that external CLM systems can use to synchronize master data. The following table describes the available data entities necessary to synchronize contracts and purchase agreements. The required data entities might extend beyond those listed here, depending on the business requirements.
 
 | Entity |Target entity | Public name (OData) | Company specific | Required by | Direction |
 | --- | --- | --- | --- | --- | --- |

@@ -17,7 +17,7 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until 10.0.43 GA  -->
 
-This article describes the configuration steps that are required for integrating Microsoft Dynamics 365 Supply Chain Management and third-party contract lifecycle management (CLM)providers. The configuration must be performed in Supply Chain Management and your contract lifecycle management system before you can start using the integration.
+This article describes the configuration steps that are required for integrating Microsoft Dynamics 365 Supply Chain Management and third-party contract lifecycle management (CLM) providers. The configuration must be performed in Supply Chain Management and your contract lifecycle management system before you can start using the integration.
 
 <!-- KFM: I seems like all of these settings might be made automatically from the external system. Maybe we should mention that here.
  -->
@@ -39,7 +39,7 @@ Set up the connection to your external CLM system by following these steps.
 1. Expand the **General** FastTab and make the following settings:
     - **Connection name** – Enter a name to identify the CLM system.
     - **Base URL** – Enter the host name of the external CLM service. <!--KFM: We should explain a bit more about how these two URLs are different and/or used. -->
-    - **External navigation base URL** – Enter the host name for external navigation. If this parameter isn't provided, the system will use **Base URL** field instead.
+    - **External navigation base URL** – Enter the host name for external navigation. If this parameter isn't provided, the system uses the **Base URL** instead.
 1. On the Action Pane, select **Save**.
 
 ## Set up external navigation links
@@ -52,7 +52,7 @@ To configure external navigation links, follow these steps.
 1. Open the **External navigation links** tab.
 1. On the tab toolbar, select **New**.
 1. The **New record** page opens. On the **General** FastTab, make the following settings:
-    - **Navigation type** – Identify the type of navigation link you are setting up. Select one of the following values:
+    - **Navigation type** – Identify the type of navigation link you're setting up. Select one of the following values:
         - *New contract* – Settings for this record enable and configure the **New** button on the **All contracts** page.
         - *New contract from purchase agreement* – Settings for this record enable and configure the **New** button on the **Purchase agreements** page.
         - *Edit contract* – Settings for this record enable and configure the **Edit** button on the **All contracts** and **Purchase agreements** pages.
@@ -65,7 +65,7 @@ To configure external navigation links, follow these steps.
        - *Open in existing tab* – Open the external page in current browser tab.
 1. The **Navigation link query strings** FastTab lets you add parameters to the URL, as required by the CLM system. Use the toolbar buttons to add or remove parameters in the grid as needed. For each parameter, make the following settings:
     - **Key** – Enter the key name of the parameter.
-    - **Value** – Enter the value for the parameter. You can include dynamic values by entering placeholders formatted as `%placeholder_name%`, which are replaced with an actual value at runtime. A drop-down list is provided that lets you select from the supported placeholders. You construct a value that combines multiple placeholders and static text. The placeholders included in the drop-down list are determined by the current context, which depends on the **Navigation type**, and is derived from either the contract or purchase agreement record. <!--KFM: This field is very narrow and hard to use. There is plenty of space. Can it be wider? -->
+    - **Value** – Enter the value for the parameter. You can include dynamic values by entering placeholders formatted as `%placeholder_name%`, which are replaced with an actual value at runtime. A drop-down list lets you select from the supported placeholders. You construct a value that combines multiple placeholders and static text. The placeholders included in the drop-down list are determined by the current context, which depends on the **Navigation type**, and is derived from either the contract or purchase agreement record. <!--KFM: This field is very narrow and hard to use. There is plenty of space. Can it be wider? -->
 1. On the Action Pane, select **Save**.
 1. Continue working until you have set up all of the external navigation links you need.
 
