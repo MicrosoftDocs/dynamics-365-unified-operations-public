@@ -30,16 +30,11 @@ Before you complete the procedures in this article, the following prerequisites 
 > [!NOTE]
 > The.
 
-## Configure parameters
-
-### Reference the imported ER format configurations
-
-For more information about ER destinations, see [Electronic reporting destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+For more information, see [Import vendor electronic invoices](../europe/emea-peppol-import.md).
 
 ## More resources
 
-- [Forced electronic invoices generation](../europe/emea-eur-forced-einvoices.md)
-- [Supported standards for electronic invoicing](../europe/emea-oioubl-standards-electronic-invoicing.md)
+- [Customer electronic invoices in Germany](emea-deu-cust-e-invoices.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
