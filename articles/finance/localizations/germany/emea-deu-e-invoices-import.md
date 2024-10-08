@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 10.0.39
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information to help you get started with the import of incoming vendor electronic invoices in the Germany-specific **xRechnung** format based on the Universal Business Language (UBL) syntax in Microsoft Dynamics 365 Finance to comply with to the country regulatory requirements.
+This article provides information to help you get started with the import of incoming vendor electronic invoices in the Germany-specific **xRechnung** format based on the Universal Business Language (UBL) syntax in Microsoft Dynamics 365 Finance to comply with the country regulatory requirements.
 
 The functionality is based on **Electronic Reporting** framework and implements the import workflow described in the diagram below.
 
