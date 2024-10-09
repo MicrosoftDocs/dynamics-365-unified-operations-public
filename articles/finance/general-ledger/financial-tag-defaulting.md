@@ -38,9 +38,8 @@ In addition at least one [Financial tags](financial-tag.md) must be setup in the
 ## Creating financial tag rules
 
 Before you create financial tags rules, note the following points:
-- System rules already exist to mimic the behavior already running for documets.  In journal entry, tag header values will be copied to the account tag field, and account tag values will be copied to the offset account tag field by these system rules. You may enable or disable these as needed, but you cannot remove them from the system or modify them in any way.
-- [Power Fx](https://learn.microsoft.com/en-us/power-platform/power-fx/overview) us the language used for defining and executing the financial tag rules. You may want to spend some time getting familiar with the [formulas](https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview) available, however not all will be supported for Dynamics 365 Finance.
-- 
+- System rules already exist to mimic the behavior already running for documents.  In a journal entry, tag header values will be copied to the account tag field, and account tag values will be copied to the offset account tag field by these system rules. You may enable or disable these as needed, but you cannot remove them from the system or modify them in any way.
+- [Power Fx](https://learn.microsoft.com/en-us/power-platform/power-fx/overview) is the language used for defining and executing the financial tag rules. You may want to spend some time getting familiar with the [formulas](https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview) available, however not all will be supported for Dynamics 365 Finance.  Additional features have been added to the language to be aware of Dynamics 365 Finance and the tables and fields allowed for use with the rule definition. 
 
 ### Create a financial tag rule
 
@@ -50,7 +49,6 @@ Follow these steps to create a financial tag rule.
 2. Select **New** to create a financial tag
 
 ## Understanding how financial tag values can be set on transactions
-
 
 *fix everything that are examples below here*
   
@@ -62,6 +60,5 @@ Follow these steps to create a financial tag rule.
 
 1. Tag values can be defined on the header of the document.
 2. Tag values from the header are used as default values on the lines of the document.
-3. Tag values from the lines of the document are used as default values in the accounting distributions (if the document is a source document and supports accounting distributions).
 
 
