@@ -94,7 +94,7 @@ Follow these steps to set up your price component posting profiles.
 
 Follow these steps to set up your price structures to use a specific posting profile for each relevant price component code.
 
-1. Go to **Price management \> Setup \> Price component codes \> Price trees**
+1. Go to **Pricing management \> Setup \> Price component codes \> Price trees**
 
 1. Find the price component code line that you want to assign posting for, and select its **Post to price component code** checkbox. Then set the **Posting profile** field to the profile that you want to use for the line.
 

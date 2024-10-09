@@ -15,13 +15,13 @@ ms.custom:
 # Assign price groups (preview)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [pricing-management-deprecation-banner](../includes/pricing-management-deprecation-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 <!-- KFM: Preview until further notice -->
 
 ## For trade agreements
 
-1. Go to **Price management** \> **During sales pricing** \> **Sales trade agreement price** \> **Trade agreements journals**.
+1. Go to **Pricing management** \> **During-sales pricing** \> **Sales trade agreement price** \> **Trade agreements journals**.
 1. Select a trade agreement journal with status **Not posted**.
 1. Select the drop-down list of **Price group** to specify a price group which will be inherited to all lines of the journal.
 
@@ -35,7 +35,7 @@ ms.custom:
 
 ## For adjustments
 
-1. Go to **Price management** \> **During sales pricing** \> **Price adjustments** \> **Margin component price adjustments**.
+1. Go to **Pricing management** \> **During-sales pricing** \> **Price adjustments** \> **Margin component price adjustments**.
 1. Select a specific discount record with status **Disabled**.
 1. Select **Price group** button on top and there displays a price group form.
 
@@ -64,7 +64,7 @@ ms.custom:
 
 ## For discounts
 
-1. Go to **Price management** \> **During sales pricing** \> **Discounts** \> **All discounts**.
+1. Go to **Pricing management** \> **During-sales pricing** \> **Discounts** \> **All discounts**.
 1. Select a specific discount record with status **Disabled**.
 1. Select **Price group** button on top and there displays a price group form.
 

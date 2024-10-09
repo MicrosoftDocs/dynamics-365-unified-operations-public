@@ -14,7 +14,7 @@ ms.custom:
 # Price group priorities (preview)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [pricing-management-deprecation-banner](../includes/pricing-management-deprecation-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 <!-- KFM: Preview until further notice -->
 
@@ -32,10 +32,10 @@ The following table indicates the places where to configure ranks and how to con
 
 | Elements | Fields | Configurable in | Calculated priority |
 |--|--|--|--|
-| Attributes | Rank | **Price management** \> **Setup** \> **Price attribute groups** \> **Price attribute groups** | Same value, no conversion |
-| Price group | Rank | **Pricing management** \> **During sales pricing** \> **Price groups** \> **All price groups** | 1000+Rank |
-| Price attribute group combination | Combination rank | **Price management** \> **Setup** \> **Price component codes** \> **Price component codes** | Same value, no conversion |
-| Price component code | Pricing sequence | **Price management** \> **Setup** \> **Price component codes** \> **Price trees** | 1000-Sequence |
+| Attributes | Rank | **Pricing management** \> **Setup** \> **Price attribute groups** \> **Price attribute groups** | Same value, no conversion |
+| Price group | Rank | **Pricing management** \> **During-sales pricing** \> **Price groups** \> **All price groups** | 1000+Rank |
+| Price attribute group combination | Combination rank | **Pricing management** \> **Setup** \> **Price component codes** \> **Price component codes** | Same value, no conversion |
+| Price component code | Pricing sequence | **Pricing management** \> **Setup** \> **Price component codes** \> **Price trees** | 1000-Sequence |
 
 ## Priority application sequence
 

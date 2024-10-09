@@ -4,8 +4,8 @@ description: Learn about the role of price groups in Unified price management an
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: kamaybac
-ms.search.form: XXXX
-ms.topic: how-to
+ms.search.form:
+ms.topic: overview
 ms.date: 10/25/2024
 ms.custom: 
   - bap-template
@@ -15,7 +15,7 @@ ms.custom:
 # Price groups overview (preview)
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [pricing-management-deprecation-banner](../includes/pricing-management-deprecation-banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 <!-- KFM: Preview until further notice -->
 <!-- KFM: Confirm TOC location of this section... -->
@@ -116,13 +116,15 @@ For those companies who want to configure a specific range of customers for some
  Price groups offer the following benefits:
 
 - **Flexible** – Price groups provide a flexible way to manage pricing strategies across various attributes, such as customer segments, channels, order types, and more, allowing businesses to adapt quickly without altering individual trade agreements or discount setups. Currently, we support pricing header attributes, with plans to extend support to pricing line attributes in the future.
-
 - **Unified** – Price groups offer significant value for Commerce customers, enabling the efficient management of dynamic promotions, channel-specific pricing strategies, as well as affiliations and loyalty programmes. In SCM, price groups bring similar benefits by simplifying pricing strategies for key attributes such as customer segments, order types, and delivery methods, providing the flexibility to make adjustments without reconfiguring underlying pricing structures.
-
 - **Versatile** – Price attribute groups are tied to specific price components, and once enabled, their configuration is not easily changed. Price groups, however, offer a versatile and flexible way to dynamically adjust prices on top of this established setup. Additionally, price groups are not mandatory, allowing businesses to choose whether or not to leverage them based on their specific needs and complexity.
-
 - **Dynamic Adjustments** – As business needs evolve, pricing attributes can be modified to reflect changes in strategy, such as introducing new channels or expanding loyalty programmes. Unified Pricing simplifies the implementation of these changes without disrupting the overall pricing strategies.
-
 - **Consistency Across Platforms** – This unified approach ensures consistent application of pricing strategies across all touch points within both SCM and Commerce.
 
 These attributes can be assigned individually or in combination within a price group, with configurable priority rankings to determine the application of pricing rules when multiple attributes intersect. <!--KFM: I don't understand what this means. Maybe it doesn't belong here... -->
+
+## Next steps
+
+- [Set up price groups for Unified pricing management](upm-price-groups-set-up.md)
+- [Assign price groups](upm-price-groups-assign.md)
+- [Price group priorities](upm-price-groups-priorities.md)
