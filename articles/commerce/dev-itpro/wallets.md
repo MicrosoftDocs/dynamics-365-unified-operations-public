@@ -68,12 +68,17 @@ This section uses the example of **Alipay** to demonstrate the setup and user ex
 The setup for a wallet is a four-step process:
 **Step 1: Create a new electronic payment type aka Card type**
  
-  Navigate to “Card types” form via “**Retail and commerce** > **Channel step** > **Payment methods** > **Card types**” and create a new card type for Alipay. Make sure to choose the “Type” as “Wallet”. Refer the image <cardtype.png>
+  Navigate to “Card types” form via “**Retail and commerce** > **Channel step** > **Payment methods** > **Card types**” and create a new card type for Alipay. Make sure to choose the “Type” as “Wallet”. Refer the below image.
+
+   ![Create a new Wallet card type](./media/Cardtype.png "New wallet card type")
 
 **Step 2: Map the newly created card type to a processor payment method**
 
   For the newly created card type above, click on the “Processor mapping” button at the top toolbar. 
-  Referring to the below image <Process_payment_mapping.png>, select the newly created card type ID in the “CARD TENDER TYPES” section. 
+  Referring to the below image, select the newly created card type ID in the “CARD TENDER TYPES” section. 
+
+   ![Map the card type to processor payment method](./media/Process_payment_mapping.png "Map the card type to processor payment method")
+   
   Next, select the row where the “Processor payment” column shows “Alipay” for the desired payment connector e.g. Adyen and press the “Add” button. This should map the newly created card type with the process payment method. The below list shows the processor payment values corresponding to their respective Wallet payment method for Dynamics 365 Commerce Adyen connector:
   1. alipay: Alipay
   2. alipay_hk: AlipayHK
@@ -83,11 +88,17 @@ The setup for a wallet is a four-step process:
 **Step 3: Add the card type to a payment method of the brick-and-mortar store**
 
   Navigate to the “All stores” form and open the payment methods form associated with the store where these wallets need to be enabled.
-  These wallets can be associated with the card type payment methods or create a new payment method for Wallets and associate the newly created card types to this payment method. In the below images <store_paymentmethods and Store_mapping>, the newly created card type is associated with the Card type payment method.
+  These wallets can be associated with the card type payment methods or create a new payment method for Wallets and associate the newly created card types to this payment method. Referring to the the below images, the newly created card type is associated with the Card type payment method.
+
+  ![Store payment methods](./media/store_paymentmethods.png "Store payment methods")
+  
+  ![Map the card type to a payment method](./media/Store_mapping.png "Map the card type to a payment method")
 
 **Step 4: Enable the payment method in payment service provider e.g., Adyen**
+
   Contact the representative from your Payment service provider e.g., Adyen and enable these wallets for your account
   This completes the minimum required setup for enabling the wallet payments. Once enabled, if the customer wants to use any of the wallet payments, then the cashier can select the payment method associated with Cards as usual, but on the Pin Pad, the cashier will need to select the “Scan” button on the pin pad which will display the list of support wallet payments. The cashier or the consumer can select the desired wallet that the customer wants to use, and this will display a QR code on the Pin pad. The customer can then scan this QR code from their wallet app and proceed with the payment. 
+ 
   > [!NOTE]
   > For testing with the Adyen connector, the Pin pad shows the payment as approved after 15 seconds, without scanning the QR code
 
@@ -101,10 +112,10 @@ The following section describes the current limitations with the Wallet methods.
 **Limitations which are planned to be rectified as a bug fix:**
 1. If the feature **“Enable use of non-recurring tokens in Commerce”** is enabled and these wallets are used for authorization of the remaining balance for a customer order in POS, then during order pickup in POS, the authorization is not found and hence the customer needs to present the payment again.
 2. If these wallets are used for customer order deposit, then the customer order cannot be returned via call center but can be returned in POS.
-3. The standard customer receipt does not show the Card type information i.e., Alipay, WeChat Pay etc. on the receipt
+3. The standard customer receipt does not show the Card type information i.e., Alipay, WeChat Pay etc. on the receipt.
    
 **Limitations which do not have a planned fix date:**
-1. If the feature **“Enable use of non-recurring tokens in Commerce” ** is NOT enabled, then these wallets can only be used for customer order deposits but not to authorize the remaining balance on the customer order
+1. If the feature **“Enable use of non-recurring tokens in Commerce”** is NOT enabled, then these wallets can only be used for customer order deposits but not to authorize the remaining balance on the customer order
 2. Ability for cashier to map a button on POS to a specific wallet payment method e.g., Alipay which would display the Alipay specific QR code on payment terminal, hence, preventing the need for the customer to manually select the wallet from the list of supported wallets on Pin pad
 
 
