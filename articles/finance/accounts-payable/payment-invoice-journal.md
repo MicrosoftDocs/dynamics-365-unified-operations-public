@@ -38,3 +38,10 @@ The payment schedule feature is also available in the **Vendor invoice register*
 For a pending vendor invoice, if the payment schedule is on the invoice header, there is an advanced page that lets users edit the payment lines. (For example, users can edit the due date and value for each payment line.) Payment lines that are generated from the invoice journal will have the value from the payment schedule.
 
 This functionality will be available for the **Vendor invoice journal** and **Pending invoices** in a future release.
+
+# Merge a payment schedule
+Starting Microsoft Dynamics 365 Finance release 10.0.42, open transactions split from the same payment schedule can be merged again with the **Merge payment schedule** button. 
+
+This functionality is introduced by the **Merge payment schedule for customer transactions or vendor transactions** feature in Feature management.
+
+When the feature is on, in the **All vendors (or All customers) \> Transactions \> Settle transactions**, you can find the **Merge payment schedule** under the **Payment schedule** dropdown button. Mark open transactions that were split by applying payment schedule, pick one as the main payment with **Mark as primary payment**, then **Merge payment schedule** will be active. Click on **Merge payment schedule** to combine all the marked transactions into one with the same due date as the primary payment.
