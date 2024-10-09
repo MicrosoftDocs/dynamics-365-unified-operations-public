@@ -2079,6 +2079,8 @@
         href: demand-planning/phase-in-out.md
       - name: Time series and planning data
         href: demand-planning/time-series.md
+      - name: Limit time series edits with time fences
+        href: demand-planning/time-fences.md
       - name: Analyze demand plans with Copilot (preview)
         href: demand-planning/demand-planning-copilot.md
       - name: Export and download data
