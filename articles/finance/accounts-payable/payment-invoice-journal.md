@@ -4,7 +4,7 @@ description: Learn about how to add and apply a payment to the vendor invoice jo
 author: sunfzam
 ms.author: shpandey
 ms.topic: article
-ms.date: 01/31/2022
+ms.date: 10/10/2024
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -39,9 +39,14 @@ For a pending vendor invoice, if the payment schedule is on the invoice header, 
 
 This functionality will be available for the **Vendor invoice journal** and **Pending invoices** in a future release.
 
-# Merge a payment schedule
-Starting Microsoft Dynamics 365 Finance release 10.0.42, open transactions split from the same payment schedule can be merged again with the **Merge payment schedule** button. 
+## Merge a payment schedule
+Beginning in Microsoft Dynamics 365 Finance release 10.0.42, open transactions that are split from the same payment schedule can be merged again with the **Merge payment schedule** button. 
 
 This functionality is introduced by the **Merge payment schedule for customer transactions or vendor transactions** feature in Feature management.
 
-When the feature is on, in the **All vendors (or All customers) \> Transactions \> Settle transactions**, you can find the **Merge payment schedule** under the **Payment schedule** dropdown button. Mark open transactions that were split by applying payment schedule, pick one as the main payment with **Mark as primary payment**, then **Merge payment schedule** will be active. Click on **Merge payment schedule** to combine all the marked transactions into one with the same due date as the primary payment.
+When the feature is on, to merge the payment schedule follow these steps:
+1. Go to **All vendors (or All customers) \> Transactions \> Settle transactions**.
+2. Click **Payment schedule** then **Merge payment schedule**.
+3. Mark open transactions that were split by applying payment schedule.
+4. Click **Mark as primary payment** to select the main payment.
+5. Click **Merge payment schedule** to combine all the marked transactions into one payment with the same due date as the primary payment.
