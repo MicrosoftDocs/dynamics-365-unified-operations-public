@@ -2,7 +2,7 @@
 title: Wallet payment support
 description: This article provides an overview of wallet payment support for Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 03/11/2022
+ms.date: 10/10/2024
 ms.topic: how-to
 audience: IT Pro
 ms.reviewer: v-chrgriffin
@@ -63,7 +63,7 @@ To map a processor payment method to a card or wallet, select the card or wallet
 
 ### Setup for wallet payment methods and user experience
 
-This section uses the example of **Alipay** to demonstrate the setup and user experience. However, these steps are applicable to all the supported wallet payment methods which are marked as supported in this article: https://learn.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector?tabs=10-0-36#digital-wallet-support-status.
+This section uses Alipay as an example to demonstrate the setup and user experience, but the following steps are applicable to all the supported wallet payment methods listed in [Digital wallet support status](adyen-connector.md?tabs=10-0-36#digital-wallet-support-status).
 
 The setup for a wallet is a four-step process:
 **Step 1: Create a new electronic payment type aka Card type**
