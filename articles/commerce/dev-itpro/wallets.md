@@ -105,8 +105,11 @@ To add the card type to a payment method of a brick-and-mortar store, follow the
 
 1. In headquarters, go to the **All stores** form (**Retail and Commerce \> Channels \> Stores \> All stores**).
 1. Open the payment methods form associated with the store where the wallet need to be enabled.
-1. Associate the wallet with the card type payment method, or create a new payment method for **Wallets** and associate the newly created card types to this payment method. 
-  
+1. Associate the wallet with the card type payment method. 
+
+    >[!NOTE]
+    > Alternatively, you can create a new payment method for **Wallets** and associate the newly created card types to that payment method. 
+
 In the following example images, the newly created card type is associated with the card type payment method.
 
 ![Store payment methods](./media/store_paymentmethods.png)
