@@ -74,19 +74,14 @@ Setting up wallet payment methods and the wallet user experience is a four-step 
 To create a new electronic payment type, follow these steps.
 
 1. In Commerce headquarters, go to the **Card types** form (**Retail and Commerce \> Channel step \> Payment methods \> Card types**).
-1. Create a new card type for Alipay. For **Type**, select **Wallet** as shown in the following example image.
-
-![Create a new Wallet card type](./media/Cardtype.png "New wallet card type")
+1. Create a new card type for Alipay. For **Type**, select **Wallet**.
 
 #### Step 2: Map the newly created card type to a processor payment method
 
 To map the newly created card type to a processor payment method, follow these steps.
 
 1. In headquarters for the card type you created, on the Action Pane select **Processor mapping**. 
-1. In the **CARD TENDER TYPES** section, select the newly created card type ID. 
-
-   ![Map the card type to processor payment method](./media/Process_payment_mapping.png)
-   
+1. In the **CARD TENDER TYPES** section, select the newly created card type ID.
 1. In the **UNMAPPED PROCESSOR PAYMENT METHODS** section, select the row where the **Processor payment** column value is **Alipay** for the desired payment connector (for example, Adyen).
 1. Select **Add**. This action maps the newly created card type with the process payment method. 
 
@@ -105,15 +100,17 @@ To add the card type to a payment method of a brick-and-mortar store, follow the
 
 1. In headquarters, go to the **All stores** form (**Retail and Commerce \> Channels \> Stores \> All stores**).
 1. Open the payment methods form associated with the store where the wallet need to be enabled.
-1. Associate the wallet with the card type payment method. 
+1. Create a new payment method, or select an existing payment method for cards, and then on the Action Pane, select **Electronic payment setup**. 
+
+    ![Store payment methods](./media/store_paymentmethods.png)
+
+1. On the **Electronic payment types** form, on the Action Pane, select **New**, and then select the card type that was created for the wallet (for example, Alipay).
 
     >[!NOTE]
     > Alternatively, you can create a new payment method for **Wallets** and associate the newly created card types to that payment method. 
 
-In the following example images, the newly created card type is associated with the card type payment method.
+In the following example image, the newly created card type is associated with the card type payment method.
 
-![Store payment methods](./media/store_paymentmethods.png)
-  
 ![Map the card type to a payment method](./media/Store_mapping.png)
 
 #### Step 4: Enable the payment method with the payment service provider
