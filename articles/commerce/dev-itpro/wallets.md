@@ -125,7 +125,7 @@ Once a wallet is enabled, if a customer wants to use any of the wallet payments,
 > [!WARNING]
 > User experience variations where a customer initiates a QR code from the wallet app and the cashier scans it aren't yet supported.
 
-### Known limitations with the wallet payment methods
+### Known limitations with wallet payment methods
 
 The following section describes the current limitations with wallet payment methods. Some of these limitations will be fixed in future releases, but others don't yet have a planned fix date. 
 
@@ -142,7 +142,7 @@ The following limitations will be fixed in future releases.
 The following limitations don't have a planned fix date.
 
 - If the **Enable use of non-recurring tokens in Commerce** feature isn't enabled, then the wallet can only be used for customer order deposits. The wallet can't be used to authorize the remaining balance on the customer order.
-- Cashiers can't map a button on POS to a specific wallet payment method (for example, Alipay) which would display the Alipay specific QR code on payment terminal, which prevents the customer having to manually select the wallet from the list of supported wallets on the PIN pad.
+- Cashiers can't map a button on POS to a specific wallet payment method (for example, Alipay), which would display the wallet payment method-specific QR code on the payment terminal. This limitation means that customers must manually select the wallet from the list of supported wallets on the PIN pad.
 
 ## Other payment enhancements enabled by the wallet payment support feature
 
@@ -153,9 +153,9 @@ In the call center, the wallet payment support feature adds two fields to the de
 - The existing **Approval code** column is filled with the approval code value that Adyen provides in their authorization. 
 
 For retail store transactions, the wallet payment support feature adds the following additional enhancements to the payment transactions view for payments that are created using the Adyen connector: 
--The **Approval code** field shows the approval code from the processor
--The **Processor payment** field shows the processor payment method.
--The **Processor reference** field shows the PSP reference from Adyen. 
+- The **Approval code** field shows the approval code from the processor
+- The **Processor payment** field shows the processor payment method.
+- The **Processor reference** field shows the PSP reference from Adyen. 
 
 These three fields aren't discrete fields in the database, and are only shown in the user interface when a specific payment is viewed. A payment processed using the Dynamics 365 Payment Connector for PayPal also provides the **Approval code**, **Processor payment**, and **Processor reference** field values. Before the fields can be shown, the point of sale (POS) client must be updated with Commerce version 10.0.20 or later, and the **Enabled** status for the **Enhanced wallet support and payment improvements** feature must be synchronized to the channel.
 
