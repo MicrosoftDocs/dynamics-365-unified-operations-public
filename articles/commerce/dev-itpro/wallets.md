@@ -35,10 +35,12 @@ Unlike traditional credit and debit cards, wallet payment authorization response
 Because wallet payments don't include BIN range, if a payment connector such as PayPal supports wallet payments, the payment connector should be updated to the latest payments SDK and the processor payment method property should be populated at least for all supported wallet payments. 
 
 Processor payment method mappings are also useful for traditional debit and credit card payments. Mapping processor payment methods to cards is more straightforward than BIN range mapping and less prone to errors because it is easy to ensure all possible payment methods supported by a connector are mapped to a card or wallet type. 
-
+traditional
 ## Enable wallet payment support
 
-To enable wallet payment support in Commerce headquarters, go to **Workspaces \> Feature management**, and then search for the **Enhanced wallet support and payment improvements** feature. Select the feature, and then select **Enable**. After you enable the feature, run the **1110** distribution schedule to make it available in all channels. This feature supports a new payment method and card type called **Wallet**. The primary characteristic of a wallet payment is that it does not have a BIN range. However, wallet payment methods may not return expiration dates and some properties that have traditionally been considered mandatory. Wallet payment methods must be mapped to processor payment methods as an alternative to the traditional BIN range mapping. 
+To enable the wallet payment support feature in Commerce headquarters, go to **Workspaces \> Feature management**, and then search for the **Enhanced wallet support and payment improvements** feature. Select the feature, and then select **Enable**. After you enable the feature, run the **1110** distribution schedule job to make it available in all channels. 
+
+The wallet payment support feature supports a new payment method and card type called **Wallet**. The primary characteristic of a wallet payment is that it doesn't have a BIN range. Wallet payment methods may not return expiration dates and some properties that have customarily been considered mandatory. Wallet payment methods must be mapped to processor payment methods as an alternative to BIN range mapping. 
 
 ### Adding support of processor payment methods
 
@@ -61,74 +63,105 @@ To map a processor payment method to a card or wallet, select the card or wallet
 > [!NOTE]
 > The **Processor payment method mapping** capability adds a new table that must be synchronized to the channel database. To add this data to the Commerce scheduler, you need to initialize the Commerce scheduler. For details, please refer to documentation related to [updating commerce scheduler configurations](cdx-best-practices.md#update-configurations). 
 
-### Setup for wallet payment methods and user experience
+### Set up wallet payment methods and the wallet user experience  
 
 This section uses Alipay as an example to demonstrate the setup and user experience, but the following steps are applicable to all the supported wallet payment methods listed in [Digital wallet support status](adyen-connector.md?tabs=10-0-36#digital-wallet-support-status).
 
-The setup for a wallet is a four-step process:
-**Step 1: Create a new electronic payment type aka Card type**
- 
-  Navigate to “Card types” form via “**Retail and commerce** > **Channel step** > **Payment methods** > **Card types**” and create a new card type for Alipay. Make sure to choose the “Type” as “Wallet”. Refer the below image.
+Setting up wallet payment methods and the wallet user experience is a four-step process.
 
-   ![Create a new Wallet card type](./media/Cardtype.png "New wallet card type")
+#### Step 1: Create a new electronic payment type (AKA card type)
 
-**Step 2: Map the newly created card type to a processor payment method**
+To create a new electronic payment type, follow these steps.
 
-  For the newly created card type above, click on the “Processor mapping” button at the top toolbar. 
-  Referring to the below image, select the newly created card type ID in the “CARD TENDER TYPES” section. 
+1. In Commerce headquarters, go to the **Card types** form (**Retail and Commerce \> Channel step \> Payment methods \> Card types**).
+1. Create a new card type for Alipay. For **Type**, select **Wallet** as shown in the following example image.
 
-   ![Map the card type to processor payment method](./media/Process_payment_mapping.png "Map the card type to processor payment method")
+![Create a new Wallet card type](./media/Cardtype.png "New wallet card type")
+
+#### Step 2: Map the newly created card type to a processor payment method
+
+To map the newly created card type to a processor payment method, follow these steps.
+
+1. In headquarters for the card type you created, on the Action Pane select **Processor mapping**. 
+1. In the **CARD TENDER TYPES** section, select the newly created card type ID. 
+
+   ![Map the card type to processor payment method](./media/Process_payment_mapping.png)
    
-  Next, select the row where the “Processor payment” column shows “Alipay” for the desired payment connector e.g. Adyen and press the “Add” button. This should map the newly created card type with the process payment method. The below list shows the processor payment values corresponding to their respective Wallet payment method for Dynamics 365 Commerce Adyen connector:
-  1. alipay: Alipay
-  2. alipay_hk: AlipayHK
-  3. affirm_pos: Affirm
-  4. wechatpay_pos: WeChat Pay
+1. In the **UNMAPPED PROCESSOR PAYMENT METHODS** section, select the row where the **Processor payment** column value is **Alipay** for the desired payment connector (for example, Adyen).
+1. Select **Add**. This action maps the newly created card type with the process payment method. 
+
+The following table maps processor payment values to their respective wallet payment method for the Dynamics 365 Commerce Adyen connector.
+
+| Processor payment value | Wallet payment method |
+| ------------- |-------------|
+| alipay | Alipay |
+| alipay_hk | AlipayHK |
+| affirm_pos | Affirm |
+| wechatpay_pos | WeChat Pay |
      
-**Step 3: Add the card type to a payment method of the brick-and-mortar store**
+#### Step 3: Add the card type to a payment method of the brick-and-mortar store
 
-  Navigate to the “All stores” form and open the payment methods form associated with the store where these wallets need to be enabled.
-  These wallets can be associated with the card type payment methods or create a new payment method for Wallets and associate the newly created card types to this payment method. Referring to the the below images, the newly created card type is associated with the Card type payment method.
+To add the card type to a payment method of a brick-and-mortar store, follow these steps.
 
-  ![Store payment methods](./media/store_paymentmethods.png "Store payment methods")
+1. In headquarters, go to the **All stores** form (**Retail and Commerce \> Channels \> Stores \> All stores**).
+1. Open the payment methods form associated with the store where the wallets need to be enabled.
+1. Associate the wallet(s) with the card type payment method, or create a new payment method for **Wallets** and associate the newly created card types to this payment method. 
   
-  ![Map the card type to a payment method](./media/Store_mapping.png "Map the card type to a payment method")
+In the following example images, the newly created card type is associated with the card type payment method.
 
-**Step 4: Enable the payment method in payment service provider e.g., Adyen**
+![Store payment methods](./media/store_paymentmethods.png)
+  
+![Map the card type to a payment method](./media/Store_mapping.png)
 
-  Contact the representative from your Payment service provider e.g., Adyen and enable these wallets for your account
-  This completes the minimum required setup for enabling the wallet payments. Once enabled, if the customer wants to use any of the wallet payments, then the cashier can select the payment method associated with Cards as usual, but on the Pin Pad, the cashier will need to select the “Scan” button on the pin pad which will display the list of support wallet payments. The cashier or the consumer can select the desired wallet that the customer wants to use, and this will display a QR code on the Pin pad. The customer can then scan this QR code from their wallet app and proceed with the payment. 
+#### Step 4: Enable the payment method with the payment service provider
+
+To enable the payment method with the payment service provider, contact the representative from your payment service provider and ask them to enable the wallet(s) for your account.
+
+Once a wallet is enabled, if a customer wants to use any of the wallet payments, cashiers can select the payment method associated with cards as usual, but on the PIN Pad the cashier must select **Scan** to display the list of support wallet payments. The cashier can then select the desired wallet that the customer wants to use, which display a quick response (QR) code on the PIN pad. The customer can then scan this QR code from their wallet app and proceed with the payment. 
  
-  > [!NOTE]
-  > For testing with the Adyen connector, the Pin pad shows the payment as approved after 15 seconds, without scanning the QR code
+> [!NOTE]
+> When you test the Adyen connector, the PIN pad shows the payment as approved after 15 seconds without scanning the QR code.
+ 
+> [!WARNING]
+> User experience variations where a customer initiates a QR code from the wallet app and the cashier scans it aren't yet supported.
 
-  > [!WARNING]
-  > There are other variations of user experience where the customer initiates a QR code from the wallet app and the cashier scans it, are not yet supported
+### Known limitations with the wallet payment methods
 
-#### Known limitations with the Wallet payment methods
+The following section describes the current limitations with wallet payment methods. Some of these limitations are planned to be fixed in future releases, but others don't yet have a planned fix date. 
 
-The following section describes the current limitations with the Wallet methods. Some of these will be fixed with a bug fix, while some do not have a timeline. 
+#### Limitations with a plan to be fixed
 
-**Limitations which are planned to be rectified as a bug fix:**
-1. If the feature **“Enable use of non-recurring tokens in Commerce”** is enabled and these wallets are used for authorization of the remaining balance for a customer order in POS, then during order pickup in POS, the authorization is not found and hence the customer needs to present the payment again.
-2. If these wallets are used for customer order deposit, then the customer order cannot be returned via call center but can be returned in POS.
-3. The standard customer receipt does not show the Card type information i.e., Alipay, WeChat Pay etc. on the receipt.
+The following limitations are planned to be fixed in future releases.
+
+- If the **Enable use of non-recurring tokens in Commerce** feature is enabled and the wallets are used for authorization of the remaining balance for a customer order in POS, then during order pickup in POS, the authorization isn't found and the customer needs to present the payment again.
+- If the wallets are used for customer order deposit, the customer order can't be returned via the call center, but can be returned in POS.
+- The standard customer receipt does not show the card type information (for example, Alipay or WeChat Pay) on the receipt.
    
-**Limitations which do not have a planned fix date:**
-1. If the feature **“Enable use of non-recurring tokens in Commerce”** is NOT enabled, then these wallets can only be used for customer order deposits but not to authorize the remaining balance on the customer order
-2. Ability for cashier to map a button on POS to a specific wallet payment method e.g., Alipay which would display the Alipay specific QR code on payment terminal, hence, preventing the need for the customer to manually select the wallet from the list of supported wallets on Pin pad
+#### Limitations without a planned fix date
 
+The following limitations don't have a planned fix date.
 
-## Other payment enhancements that are enabled by the wallet payment support feature
+- If the **Enable use of non-recurring tokens in Commerce** feature isn't enabled, then the wallets can only be used for customer order deposits. The wallets can't be used to authorize the remaining balance on the customer order.
+- Cashiers can't map a button on POS to a specific wallet payment method (for example, Alipay) which would display the Alipay specific QR code on payment terminal, which prevents the customer having to manually select the wallet from the list of supported wallets on the PIN pad.
+
+## Other payment enhancements enabled by the wallet payment support feature
 
 In addition to enabling wallet payment support, the wallet payment support feature enhances the payment details that are available in Commerce headquarters for payments that are created by using the Dynamics 365 Payment Connector for Adyen. 
 
-In the call center, the wallet payment support feature adds two fields to the default view for payment authorization details. First, the existing **Processor reference** column is filled with the PSP reference that is provided by Adyen. The PSP reference is the key that Adyen uses to look up payments. Second, the existing **Approval code** column is filled with the approval code value that is provided in the authorization from Adyen. 
+In the call center, the wallet payment support feature adds two fields to the default view for payment authorization details:
+- The existing **Processor reference** column is filled with the PSP reference that Adyen provides. The PSP reference is the key that Adyen uses to look up payments.
+- The existing **Approval code** column is filled with the approval code value that Adyen provides in their authorization. 
 
-For retail store transactions, additional enhancements have been added to the payment transactions view for payments that are created using the Adyen connector. The **Approval code** field shows the approval code from the processor, the **Processor payment** field shows the processor payment method, and the **Processor reference** field shows the PSP reference from Adyen. These three fields aren't discrete fields in the database, and are only shown in the user interface when a specific payment is viewed. A payment processed using the Dynamics 365 Payment Connector for PayPal also provides the **Approval code**, **Processor payment** and **Processor reference** field values. Before the fields can be shown, the point of sale (POS) client must be updated with Commerce version 10.0.20 or later, and the **Enabled** status for the **Enhanced wallet support and payment improvements** feature must be synchronized to the channel.
+For retail store transactions, the following additional enhancements have been added to the payment transactions view for payments that are created using the Adyen connector. 
+-The **Approval code** field shows the approval code from the processor
+-The **Processor payment** field shows the processor payment method.
+-The **Processor reference** field shows the PSP reference from Adyen. 
+
+These three fields aren't discrete fields in the database, and are only shown in the user interface when a specific payment is viewed. A payment processed using the Dynamics 365 Payment Connector for PayPal also provides the **Approval code**, **Processor payment**, and **Processor reference** field values. Before the fields can be shown, the point of sale (POS) client must be updated with Commerce version 10.0.20 or later, and the **Enabled** status for the **Enhanced wallet support and payment improvements** feature must be synchronized to the channel.
 
 > [!NOTE]
-> The Dynamics 365 Payment Connector for PayPal does not provide the three field values (**Approval code**, **Processor payment**, **Processor reference**) for payment void requests due to a limitation of the PayPal [API](https://developer.paypal.com/api/payments/v2/#authorizations_void). The three fields will be blank in the user interface. 
+> The Dynamics 365 Payment Connector for PayPal does not provide the three field values (**Approval code**, **Processor payment**, and **Processor reference**) for payment void requests due to a limitation of the PayPal [API](https://developer.paypal.com/api/payments/v2/#authorizations_void). The three fields are blank in the user interface. 
+
 ### Support for unidentified card types
 
 In some scenarios, a payment connector may return a card that does not have a BIN range or processor payment method mapping. If this occurs, the payment is authorized by the payment terminal, but is then reversed when the point of sale (POS) can't map the authorization response to a specific card type. To address this, a capability is provided to map unknown authorization responses to a default card type. 
