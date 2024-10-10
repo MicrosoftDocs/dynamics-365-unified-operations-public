@@ -4,8 +4,8 @@ description: Access answers frequently asked questions about the One voucher fun
 author: kweekley
 ms.author: kweekley
 ms.topic: article
-ms.date: 11/05/2018
-ms.reviewer: kfend
+ms.date: 10/10/2024
+ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
 ms.search.validFrom: 2018-03-16
@@ -22,11 +22,7 @@ This article answers frequently asked questions about the One voucher functional
 
 ## When will the One voucher functionality be deprecated?
 
-Although Microsoft can't provide an accurate estimate about when the One voucher functionality will be deprecated, it will likely be at least two years before the deprecation occurs.
-
-As is noted in the One voucher documentation, numerous business requirements can be met only by using One voucher. Microsoft must ensure that all the identified business requirements can still be met in the system after the functionality is deprecated. Therefore, new features will probably have to be added to fill functional gaps.
-
-After all functional gaps are filled, Microsoft will communicate that the feature will be deprecated. However, the deprecation won't be effective for least one year after that communication.
+Microsoft won't deprecate the existing One voucher functionality as it works in the current journal framework. As stated in the existing One voucher documentation, new features will continue to be introduced to fill the functional gaps that exist today. 
 
 For more information, see the [One voucher documentation](one-voucher.md).
 
@@ -39,8 +35,7 @@ Microsoft can't provide a specific solution, because each feature gap is differe
 As for every new feature, customers must watch the Release plan and "What's new or changed" documentation. Each feature will be added to these documents, and a note will indicate that the feature is required to meet a business requirement that previously required the One voucher functionality.
 
 ## When the deprecation date is identified, where will it be communicated?
-
-The deprecation of One voucher is a significant change that will be widely communicated. It will be communicated through the product documentation, a blog post, and announcements at applicable Microsoft conferences, well in advance of the date when the deprecation takes effect.
+The existing One voucher functionality will not be deprecated. 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
