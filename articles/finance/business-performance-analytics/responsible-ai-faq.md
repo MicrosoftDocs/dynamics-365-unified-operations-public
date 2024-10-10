@@ -2,7 +2,7 @@
 title: Responsible AI FAQ for generative help and guidance
 description: Learn how Microsoft has minimized the potential harm related to AI features in Business performance analytics.
 author: Carylhenry
-ms.author: carylhenry
+ms.author: jiwo
 ms.topic: article 
 ms.date: 07/22/2024
 ms.custom:
