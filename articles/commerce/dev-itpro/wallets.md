@@ -56,7 +56,7 @@ When this page opens, it queries available payment connectors to collect a set o
 
 ![Unmapped processor payment method.](../media/Payments/Unmapped.png)
 
-To map a processor payment method to a card or wallet, select the card or wallet, select the processor payment method, and then select **Add**. The processor payment method moves to the **Mapped** column. When a matching payment authorization is received, it is mapped to the chosen card or wallet.
+To map a processor payment method to a card or wallet, select the card or wallet, select the processor payment method, and then select **Add**. The processor payment method moves to the **Mapped** column. When a matching payment authorization is received, it's mapped to the chosen card or wallet.
 
 ![Mapped processor payment method.](../media/Payments/Mapped.png)
 
