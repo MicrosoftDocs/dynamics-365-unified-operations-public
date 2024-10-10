@@ -50,11 +50,11 @@ To support processor payment methods, payment connectors need to populate the **
 
 The **Processor payment method mapping** page can be used to map processor payment methods to configured card or wallet types. To access this page, select the **Processor mapping** link on the **Card types** page.
 
-![Procesor payment mapping link.](../media/Payments/ProcPmtMap.png)
+![Procesor payment mapping link](../media/Payments/ProcPmtMap.png)
 
 When this page opens, it queries available payment connectors to collect a set or payment methods with the **PaymentMethodVariant** field populated. It then checks to determine if those payment methods have an existing mapping to a card or wallet. Payment methods that don't have a mapping are listed in the center column of the page. 
 
-![Unmapped processor payment method.](../media/Payments/Unmapped.png)
+![Unmapped processor payment method](../media/Payments/Unmapped.png)
 
 To map a processor payment method to a card or wallet, select the card or wallet, select the processor payment method, and then select **Add**. The processor payment method moves to the **Mapped** column. When a matching payment authorization is received, it's mapped to the chosen card or wallet.
 
@@ -65,7 +65,7 @@ To map a processor payment method to a card or wallet, select the card or wallet
 
 ### Set up wallet payment methods and the wallet user experience  
 
-This section uses Alipay as an example to demonstrate the setup and user experience, but the following steps are applicable to all the supported wallet payment methods listed in [Digital wallet support status](adyen-connector.md?tabs=10-0-36#digital-wallet-support-status).
+This section uses Alipay as an example to demonstrate the setup and user experience, but the following steps are applicable to all the supported wallet payment methods listed in [Digital wallet support status](adyen-connector.md#digital-wallet-support-status).
 
 Setting up wallet payment methods and the wallet user experience is a four-step process.
 
@@ -81,7 +81,7 @@ To create a new electronic payment type, follow these steps.
 To map the newly created card type to a processor payment method, follow these steps.
 
 1. In headquarters for the card type you created, on the Action Pane select **Processor mapping**. 
-1. In the **CARD TENDER TYPES** section, select the newly created card type ID.
+1. On the **Processor payment mapping methods** form, in the **CARD TENDER TYPES** section, select the newly created card type ID.
 1. In the **UNMAPPED PROCESSOR PAYMENT METHODS** section, select the row where the **Processor payment** column value is **Alipay** for the desired payment connector (for example, Adyen).
 1. Select **Add**. This action maps the newly created card type with the process payment method. 
 
