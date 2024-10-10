@@ -37,8 +37,7 @@ You can't reconcile a bank statement with a bank account if any of the checks or
 
 
 To select the **Cleared** checkbox for an interval of checks that all are displayed on the bank statement, select **Mark check interval**, and then indicate the interval.
-
-If all transactions in the list can be cleared, select **mark all as cleared**.
+If all transactions in the list can be cleared, select **Mark all as cleared**.
 
 5.  If the amount for a bank account transaction doesn't correspond to the amount for the transaction on the bank statement, enter the amount of the correction in the **Correction amount** field.
     
