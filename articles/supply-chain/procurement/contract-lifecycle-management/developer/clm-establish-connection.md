@@ -19,7 +19,7 @@ ms.custom:
 
 This article describes how a third-party contract lifecycle management (CLM) provider can simplify the process of establishing connections by efficiently configuring the contract management parameters in Supply Chain Management and initiating the connection. The process can be initiated from the CLM system and seamlessly transfers all the required configuration settings to the Supply Chain Management system.
 
-<!-- KFM: Most of the examples in this topic describe GET operations. But it seems like the intro is suggesting that we use the API to set these values from the CLM side. Or am I confused? -->
+Most of the code examples in this article show how to fetch configuration info, but a CLM provider can also use these same APIs to POST configuration settings, which enables the provider to remotely configure the connection for the benefit of their Supply Chain Management customers.
 
 ## Access the data integration APIs
 
@@ -48,12 +48,10 @@ The *CLM integration service instance* entity provides information about the CLM
 
 | Physical name | Property | Type | Description |
 |---|---|---|---|
-| `ID` (PK) | ID | Int | Parameter key (always be set to 0) |
+| `ID` (Entity key) | ID | Int | Parameter key (always be set to 0) |
 | `InstanceName` | Connection name | String | Connection name |
 | `BaseURL` | Base URL | String | Base URL |
 | `ExternalNavigationBaseURL` | External navigation base URL | String | External navigation base URL |
-
-<!--KFM: What does PK stand for?  -->
 
 Here's an example request query for the CLM integration service instance entity:
 
@@ -79,7 +77,7 @@ The *CLM integration external navigation links* entity provides information abou
 | Physical name | Property | Type | Description |
 |---|---|---|---|
 | `ServiceInstanceName` | Connection name | String | Provide instance name. |
-| `NavigationType` (PK) | Navigation type | Enum | Values: `ViewContract`, `EditContract`, `NewContract`, `NewContractFromPurchAgreement`, `AmendContract`. |
+| `NavigationType` (Entity key) | Navigation type | Enum | Values: `ViewContract`, `EditContract`, `NewContract`, `NewContractFromPurchAgreement`, `AmendContract`. |
 | `NavigationName` | Navigation name | String | Navigation name |
 | `RelativeURL` | Relative URL | String | Relative URL |
 | `Action` | Action | Enum | Values: `OpenInNewTab`, `OpenInExistingTab` |
@@ -108,12 +106,10 @@ The *CLM integration external navigation link key-value pairs* entity provides i
 
 | Physical name | Property | Type | Description |
 |---|---|---|---|
-| `NavigationType` (PK) | Navigation type | Enum | Values: `ViewContract`, `EditContract`, `NewContract`, `NewContractFromPurchAgreement`, `AmendContract`. |
-| `KeyValueType` (PK) | Key-value type | Enum | Values: `QueryString`, `Header`. The `QueryString` is the only allowed value. |
-| `Key` (PK) | Key | String | Key |
+| `NavigationType` (Entity key) | Navigation type | Enum | Values: `ViewContract`, `EditContract`, `NewContract`, `NewContractFromPurchAgreement`, `AmendContract`. |
+| `KeyValueType` (Entity key) | Key-value type | Enum | Values: `QueryString`, `Header`. The `QueryString` is the only allowed value (`Header` isn't supported). |
+| `Key` (Entity key) | Key | String | Key |
 | `Value` | Value | String | Value |
-
-<!--KFM: I'm confused by "The `QueryString` is the only allowed value". We list `Header` as a value too. What does this mean?  -->
 
 Here's an example request query for the *CLM integration external navigation link key-value pairs* entity:
 

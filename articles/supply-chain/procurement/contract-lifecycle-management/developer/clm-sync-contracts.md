@@ -80,8 +80,8 @@ This entity provides information about the contract. Its properties are listed i
 
 | Physical name | Property | Type | Description |
 |---|---|---|---|
-| `ContractId` (PK) | Contract ID | String | Contract identifier in the CLM. |
-| `LegalEntityId` (PK) | Legal entity ID | String | Legal entity ID |
+| `ContractId` (Entity key) | Contract ID | String | Contract identifier in the CLM. |
+| `LegalEntityId` (Entity key) | Legal entity ID | String | Legal entity ID |
 | `ExternalContractId` | External contract ID | String | Internal system-generated contract identifier in the CLM. |
 | `ContractType` | Contract type | String | Contract type name reference. |
 | `ContractStatus` | Contract status | Enum | Values: `Draft`, `WaitingForApproval`, `Approved`, `Rejected`, `WaitingForSignatures`, `WaitingForExternalSignatures`, `WaitingForInternalSignatures`, `Executed`, `Terminated`, `Expired`, `OnHold`, `Cancelled`, `WaitingForReview`, `Reviewed`. |
@@ -97,8 +97,6 @@ This entity provides information about the contract. Its properties are listed i
 | `LatestAmendmentId` | Latest amendment ID | String | Latest amendment identifier in the CLM. |
 | `LatestExternalAmendmentId` | Latest amendment external ID | String able | Internal system-generated latest amendment identifier in the CLM. |
 | `AmendmentInProcess` | Amendment in process | Enum | Values: `Yes`, `No`. |
-
-<!--KFM: what is "PK"? -->
 
 Here's an example request query for the CLM integration contract entity:
 
@@ -132,12 +130,12 @@ Here's an example response to that query:
 
 ### Purchase agreement header entity
 
-This entity provides information about the purchase agreement header. The most common properties can be found in the following table.
+This entity provides information about the purchase agreement header. The most common properties can be found in the following table. You might also use other properties, depending on your business requirements.
 
 | Physical name | Property | Type | Description |
 |---|---|---|---|
-| `PurchaseAgreementId` (PK) | Purchase agreement ID | String | Purchase agreement identifier from Supply Chain Management. |
-| `BuyingLegalEntityId` (PK) | Legal entity ID | String | Legal entity ID |
+| `PurchaseAgreementId` (Entity key) | Purchase agreement ID | String | Purchase agreement identifier from Supply Chain Management. |
+| `BuyingLegalEntityId` (Entity key) | Legal entity ID | String | Legal entity ID |
 | `ExternalContractId` | External contract ID | String | Internal system-generated purchase agreement identifier in the CLM. |
 | `ContractId` | Contract ID | String | Contract identifier reference to associate the purchase agreement with the contract. |
 | `ContractLegalEntity` | Contract legal entity ID | String | Contract legal entity identifier reference to associate the purchase agreement with the contract. |
@@ -161,9 +159,6 @@ This entity provides information about the purchase agreement header. The most c
 | `BuyerGroupId` | Buyer group ID | String | Buyer group ID |
 | `ProjectId` | Project ID | String | Project ID |
 | `PaymentTermsName` | Payment terms | String | Payment terms |
-| ... | ... | ... | N/A |
-
-<!-- KFM: What does the final row mean? -->
 
 Here's an example request query for the CLM integration agreement header entity:
 
@@ -205,13 +200,13 @@ Here's an example response to that query:
 
 ### Purchase agreement line entity
 
-This entity provides information about the purchase agreement line. The most common properties can be found in the following table.
+This entity provides information about the purchase agreement line. The most common properties can be found in the following table. You might also use other properties, depending on your business requirements.
 
 | Physical name | Property | Type | Description |
 |---|---|---|---|
-| `PurchaseAgreementId` (PK) | Purchase agreement ID | String | Purchase agreement identifier reference. |
-| `PurchaseAgreementLegalEntityId` (PK) | Purchase agreement legal entity ID | String | Purchase agreement legal entity identifier reference. |
-| `LineNumber` (PK) | Line number | Real | Line number |
+| `PurchaseAgreementId` (Entity key) | Purchase agreement ID | String | Purchase agreement identifier reference. |
+| `PurchaseAgreementLegalEntityId` (Entity key) | Purchase agreement legal entity ID | String | Purchase agreement legal entity identifier reference. |
+| `LineNumber` (Entity key) | Line number | Real | Line number |
 | `ExternalContractId` | External contract ID | String | Internal system-generated purchase agreement identifier reference in the CLM. Can be used instead of the `PurchaseAgreementId` field when creating a record. |
 | `ExternalContractLineId` | External contract line ID | String | Internal system-generated purchase agreement line identifier in the CLM. |
 | `CommitmentType` | Commitment type | Enum | Values: `ProductQuantity`, `ProductVolume`, `ProductCategory`, `ProductRootCategory`. |
@@ -236,9 +231,6 @@ This entity provides information about the purchase agreement line. The most com
 | `ProjectActivityNumber` | Project activity number | String | Project activity number |
 | `ReceivingSiteId` | Site | String | Site |
 | `ReceivingWarehouseId` | Warehouse | String | Warehouse |
-| ... | ... | ... | N/A |
-
-<!-- KFM: What does the final row mean? -->
 
 Here's an example request query for the CLM integration purchase agreement line entity:
 

@@ -25,14 +25,14 @@ For information about which data integration APIs are available, how to enable c
 
 ## Available data entities
 
-Supply Chain Management offers several out-of-the-box data entities that external CLM systems can use to synchronize master data. The following table describes the available data entities necessary to synchronize contracts and purchase agreements. The required data entities might extend beyond those listed here, depending on the business requirements.
+Supply Chain Management offers several out-of-the-box data entities that external CLM systems can use to synchronize master data. The following table describes the available data entities necessary to synchronize contracts and purchase agreements. The required data entities might extend beyond those listed here, depending on your business requirements.
 
 | Entity |Target entity | Public name (OData) | Company specific | Required by | Direction |
 | --- | --- | --- | --- | --- | --- |
 | CLM integration contract types | `CLMIntegrationContractTypeEntity` | `CLMIntegrationContractTypes` | No | Contracts | CLM -\> Supply Chain Management |
 | Legal entities | `OMLegalEntity` | `LegalEntities` | No | Contracts / Purchase agreements | Supply Chain Management -\> CLM |
 | Vendors V2 | `VendVendorV2Entity` | `VendorsV2` | Yes | Contracts / Purchase agreements | Supply Chain Management -\> CLM |
-| smmContactPersonV2Entity | `smmContactPersonV2Entity` | `ContactPersons` | Yes | Contracts / Purchase agreements | Supply Chain Management -\> CLM |
+| Contacts V2 | `smmContactPersonV2Entity` | `ContactPersons` | Yes | Contracts / Purchase agreements | Supply Chain Management -\> CLM |
 | Purchase agreement classification | `PurchAgreementClassificationEntity` | N/A | No | Purchase agreements | Supply Chain Management -\> CLM |
 | Sites V2 | `InventOperationalSiteV2Entity` | `OperationalSitesV2` | Yes | Purchase agreements | Supply Chain Management -\> CLM |
 | Warehouses | `InventWarehouseEntity` | `Warehouses` | Yes | Purchase agreements | Supply Chain Management -\> CLM |
@@ -46,12 +46,8 @@ Supply Chain Management offers several out-of-the-box data entities that externa
 | Payment schedule | `PaymentScheduleEntity` | `PaymentSchedules` | Yes | Purchase agreements | Supply Chain Management -\> CLM |
 | Terms of delivery | `DeliveryTermsEntity` | `DeliveryTerms` | Yes | Purchase agreements | Supply Chain Management -\> CLM |
 | Projects | `ProjectEntity` | `Projects` | Yes | Purchase agreements | Supply Chain Management -\> CLM |
-| CashDiscountEntity | `CashDiscountEntity` | `CashDiscounts` | Yes | Purchase agreements | Supply Chain Management -\> CLM |
+| Cash discount | `CashDiscountEntity` | `CashDiscounts` | Yes | Purchase agreements | Supply Chain Management -\> CLM |
 | CLM integration country/regions | `CLMIntegrationAddressCountryRegionEntity` | `CLMIntegrationAddressCountryRegions` | No | Purchase agreements | Supply Chain Management -\> CLM |
-| ... | ... | ... | N/A | N/A | N/A |
-
-<!-- KFM: Can we use standard English names for CashDiscountEntity and smmContactPersonV2Entity in the first column here? -->
-<!-- KFM: What does the final row mean? -->
 
 > [!NOTE]
 > Company-specific data entities include the `dataAreaId` field, which indicates the legal entity to which a record belongs. Your CLM system must adopt the same behavior that supports both company-specific and cross-company records. Learn more about cross-company behavior in [Cross-company behavior of data entities](../../../../fin-ops-core/dev-itpro/data-entities/cross-company-behavior.md).

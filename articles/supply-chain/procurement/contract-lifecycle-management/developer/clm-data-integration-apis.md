@@ -17,8 +17,6 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until 10.0.43 GA  -->
 
-<!-- KFM: Most of this information was repeated in three of your topics. I collected here and added links. Agree? -->
-
 This article describes integration patterns available in Supply Chain Management and guidelines for synchronizing master data between Supply Chain Management and the contract lifecycle management (CLM) system. Recommended integration patterns for CLM integration are listed in the following table.
 
 | Pattern | Timing | Batch | Documentation |
@@ -70,7 +68,7 @@ To gain access to the data entities through the API, your CLM system must authen
 
 Learn more about how to register an application in Microsoft Entra ID and how to register external application in Supply Chain Management in [Service endpoints overview](../../../../fin-ops-core/dev-itpro/data-entities/services-home-page.md#authentication).
 
-<!-- KFM: We should consider adding a few details and/or a link for how to actually authenticate (get a token, or whatever). -->
+After you have registered the Microsoft Entra ID application, you'll be able to use it to set up your external CLM system to authenticate with the Supply Chian Management API. Learn more about how authentication works in [Authentication](../../../../fin-ops-core/dev-itpro/data-entities/services-home-page.md#authentication).
 
 ## Related information
 

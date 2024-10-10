@@ -17,10 +17,9 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until 10.0.43 GA  -->
 
-This article describes the configuration steps that are required for integrating Microsoft Dynamics 365 Supply Chain Management and third-party contract lifecycle management (CLM) providers. The configuration must be performed in Supply Chain Management and your contract lifecycle management system before you can start using the integration.
+This article describes the configuration steps that are required for integrating Microsoft Dynamics 365 Supply Chain Management and third-party contract lifecycle management (CLM) providers. The configuration must be performed in Supply Chain Management and your CLM system before you can start using the integration.
 
-<!-- KFM: I seems like all of these settings might be made automatically from the external system. Maybe we should mention that here.
- -->
+You can always configure these settings manually in Supply Chain Management as described here, but in some cases your CLM provider can instead make most of these settings remotely (learn more in [Establish a connection from a CLM system to Supply Chain Management (preview)](clm-establish-connection.md)).
 
 ## Prerequisites
 
@@ -58,14 +57,14 @@ To configure external navigation links, follow these steps.
         - *Edit contract* – Settings for this record enable and configure the **Edit** button on the **All contracts** and **Purchase agreements** pages.
         - *Amend contract* – Settings for this record enable and configure the **Amend** button on the **All contracts** and **Purchase agreements** pages.
         - *View contract* – Settings for this record enable and configure the **View** button on the **All contracts** and **Purchase agreements** pages.  
-    - **Navigation name** – Enter a name for this record. <!--KFM: Where is this used? Does this do anything? -->
-    - **Relative URL** – Enter the relative path from the **Base URL** defined on the **Connections** tab to the page that should open when a user selects the button for the selected **Navigation type**. To see the full resulting URL, expand the **Preview** FastTab and inspect the **Absolute URL** field; you can also test the link by selecting it here. <!--KFM: I made some assumptions here. Please confirm. -->
+    - **Navigation name** – Enter a descriptive name for this record.
+    - **Relative URL** – Enter the relative path from the **Base URL** defined on the **Connections** tab to the page that should open when a user selects the button for the selected **Navigation type**. To see the full resulting URL, expand the **Preview** FastTab and inspect the **Absolute URL** field.
     - **Action** – Choose where the page should open when a user selects the button for the selected **Navigation type**. Select one of the following values:
        - *Open in new tab* – Open the external page in a new browser tab.
        - *Open in existing tab* – Open the external page in current browser tab.
 1. The **Navigation link query strings** FastTab lets you add parameters to the URL, as required by the CLM system. Use the toolbar buttons to add or remove parameters in the grid as needed. For each parameter, make the following settings:
     - **Key** – Enter the key name of the parameter.
-    - **Value** – Enter the value for the parameter. You can include dynamic values by entering placeholders formatted as `%placeholder_name%`, which are replaced with an actual value at runtime. A drop-down list lets you select from the supported placeholders. You construct a value that combines multiple placeholders and static text. The placeholders included in the drop-down list are determined by the current context, which depends on the **Navigation type**, and is derived from either the contract or purchase agreement record. <!--KFM: This field is very narrow and hard to use. There is plenty of space. Can it be wider? -->
+    - **Value** – Enter the value for the parameter. You can include dynamic values by entering placeholders formatted as `%placeholder_name%`, which are replaced with an actual value at runtime. A drop-down list lets you select from the supported placeholders. You construct a value that combines multiple placeholders and static text. The placeholders included in the drop-down list are determined by the current context, which depends on the **Navigation type**, and is derived from either the contract or purchase agreement record.
 1. On the Action Pane, select **Save**.
 1. Continue working until you have set up all of the external navigation links you need.
 
@@ -79,7 +78,7 @@ To inspect the current status of the connection between Supply Chain Management 
     - *Not started* – The system hasn't tried to connect yet.
     - *Connection establishment failed* – The system attempted to connect, but failed.
     - *Connection established* – The connection was established and a handshake between the two systems succeeded.
-    - *Configuration failed* – Configuration of the external navigation links has failed. <!--KFM: Do we mean that the connection succeeded, but something is wrong with at least one of our **External navigation links**? -->
+    - *Configuration failed* – The connection is working, but at least one of the external navigation links isn't working.
     - *Ready* – The integration is ready for use.
 
 The connection status is based on information submitted by your CLM system through the Supply Chain Management API. Learn more about how to set up your CLM system to return a value for this status indicator in [Establish a connection from a CLM system to Supply Chain Management](clm-establish-connection.md).
