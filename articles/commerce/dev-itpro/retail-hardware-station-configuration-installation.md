@@ -3,7 +3,7 @@ title: Configure and install Retail hardware station
 description: This article explains how to configure, download, and install the legacy Retail hardware station by using self-service functionality. It also explains how to uninstall Retail hardware station.
 author: anush6121
 ms.author: anvenkat
-ms.date: 08/07/2024
+ms.date: 10/11/2024
 ms.topic: how-to
 ms.search.form: RetailHardwareStation
 ms.reviewer: v-chrgriffin
@@ -29,8 +29,8 @@ This article explains how to configure, download, and install the legacy Retail 
 When configuring hardware station for Dynamics 365 Commerce versions 10.0.42 and later, you must add the following registry entries to support Transport Layer Security (TLS) 1.3:
 - TLS 1.3\Server:Enabled=1
 - TLS 1.3\Client:Enabled=1
-- TLS 1.2\Server:Enabled=0
-- TLS 1.2\Client:Enabled=0
+- TLS 1.2\Server:Enabled=1
+- TLS 1.2\Client:Enabled=1
 - TLS 1.1\Server:Enabled=0
 - TLS 1.1\Client:Enabled=0
 - TLS 1.0\Server:Enabled=0
@@ -180,8 +180,8 @@ Current security standards state that the following options should be set in a p
 >      - The following keys are automatically entered for Commerce versions 10.0.42 and later to allow for TLS 1.3 only: 
 >        - TLS 1.3\Server:Enabled=1
 >        - TLS 1.3\Client:Enabled=1
->        - TLS 1.2\Server:Enabled=0
->        - TLS 1.2\Client:Enabled=0
+>        - TLS 1.2\Server:Enabled=1
+>        - TLS 1.2\Client:Enabled=1
 >        - TLS 1.1\Server:Enabled=0
 >        - TLS 1.1\Client:Enabled=0
 >        - TLS 1.0\Server:Enabled=0
