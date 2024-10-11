@@ -27,6 +27,8 @@ There might be customer or vendor payments on bank statements in the app. This f
 - Turn on the **Modern bank reconciliation** feature in the **Feature management** workspace.
 - Complete the setup of the default customer payment journal name and the default vendor payment journal name for the bank account.
 - Import a bank statement.
+- Starting version 10.0.42, if feature **Enable prepayment and posting profile when generating payment journal in advanced bank reconciliation** is enabled, prepayment option and posting profile when generating customer payment journal and vendor payment journal from bank reconciliation worksheet is available. User can also configure these two options on reconciliation matching rule setup.
+- Starting version 10.0.42, if feature **Enable default descriptions for advanced bank reconciliation** is enabled, default descriptions for automatic payment journal posting and voucher posting are enabled in advanced bank reconciliation.
 
 ## Complete cash application on the reconciliation worksheet
 
