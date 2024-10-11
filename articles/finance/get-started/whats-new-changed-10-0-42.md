@@ -1,6 +1,6 @@
 ---
 title: What's new or changed in Dynamics 365 Finance 10.0.42 (December 2024)
-description: Learn about features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.42 preview release distributed in September 2024.
+description: Learn about features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.42 preview release distributed in December 2024.
 author: twheeloc
 ms.author: twheeloc
 ms.topic: faq
