@@ -12,7 +12,7 @@ ms.reviewer: twheeloc
 ms.search.region: Global
 ---
 
-# What's new or changed in Dynamics 365 Finance 10.0.42 (September 2024)
+# What's new or changed in Dynamics 365 Finance 10.0.42 (December 2024)
 
 
 [!include [banner](../includes/banner.md)]
@@ -81,7 +81,7 @@ Services and view the planned regulatory updates using the issue search tool. Is
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out [Dynamics 365 and industry clouds: 2024 release wave 2 plan](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-finance). We've captured all the details, end to end, top to bottom, 
+Check out [Dynamics 365 and industry clouds: 2024 release wave 1 plan](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-finance). We've captured all the details, end to end, top to bottom, 
 that you can use for planning.
 
 
