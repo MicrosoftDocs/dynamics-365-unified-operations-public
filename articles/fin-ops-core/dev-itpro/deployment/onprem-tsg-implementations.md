@@ -48,8 +48,10 @@ For more information about how to resolve issues in on-premises environments, se
 
     #& $agentShare\scripts\TSG_EnableGMSAForAOS.ps1 -agentShare $agentShare -gmsaAccount contoso\svc-AXSF$
     #& $agentShare\scripts\TSG_EnableDixfService.ps1 -agentShare $agentShare -gmsaAccount contoso\svc-Dixf$ -DMFShare "\\servername\dixf-share"
-    
-    #& $agentShare\scripts\TSG_SSRSEnableHTTPS.ps1 -agentShare $agentShare -ssrsSslCertificateThumbprint "<SSRSHTTPS Certificate Thumbprint>"
+
+    # The following script (when enabled) will configure HTTPS for SSRS, and enabled reporting services to run under a gMSA account
+    # NOTE!!! If you have used an IP address in LCS for your SSRS server, you'll need to change that to the Fully Qualified Domain Name (FQDN) for the reporting server. This can be changed in on the Environment page then Maintain > Update Settings
+    #& $agentShare\scripts\TSG_SSRSEnableHTTPS.ps1 -agentShare $agentShare -ssrsSslCertificateThumbprint "<ssrshttcertthumbprint>" -principalUserAccountName contoso\svc-reportsvc$
     ```
 
 3. From the relevant section of this article, copy the code that you require to fix your issue, and paste it into a new file. Save this file in the same folder where your Predeployment.ps1 script is stored. The file name must match the title of the section that you copied the code from. Repeat this step for other issues that you must fix.
@@ -458,7 +460,10 @@ Write-Host "Finished Disabling FinancialReporting component."
 
 ## <a name="SSRSEnableHTTPS"></a>TSG\_SSRSEnableHTTPS.ps1
 
-The following script can be used for older environments to configure SSRS with HTTPS.
+The following script can be used for older environments to configure SSRS with HTTPS and enbable the gMSA account that is used in new configurations.
+
+>[!NOTE]
+>If you have used an IP address in LCS for your SSRS server, you'll need to change that to the Fully Qualified Domain Name (FQDN) for the reporting server. This can be changed on the Environment page then Maintain > Update Settings
 
 ```powershell
 param (
@@ -469,7 +474,11 @@ param (
 
 	[Parameter(Mandatory=$true)]
     [string]
-    $ssrsSslCertificateThumbprint 
+    $ssrsSslCertificateThumbprint,
+	
+	[Parameter(Mandatory=$true)]
+    [string]
+    $principalUserAccountName
 )
 
 $ErrorActionPreference = "Stop"
@@ -483,6 +492,7 @@ if(!(Test-Path $basePath))
 }
 
 $configJsonPath = "$basePath\config.json"
+
 $configJson = Get-Content $configJsonPath | ConvertFrom-Json
 
 $updatedComponents = @()
@@ -502,13 +512,17 @@ foreach ($component in $configJson.components)
         $component.parameters.ssrsSslCertificateThumbprint.value = $ssrsSslCertificateThumbprint
 		$component.parameters.ssrsHttpsPort.value = 443
 		$component.parameters.reportingServers.value = $component.parameters.ssrsServerFqdn.value
+		$component.parameters.infrastructure.principalUserAccountType = "ManagedServiceAccount"
+		$component.parameters.infrastructure.principalUserAccountName = $principalUserAccountName
     }
 
     $updatedComponents += $component
 }
 
 $configJson.components = $updatedComponents
+
 $configJson | ConvertTo-Json -Depth 100 | Out-File $configJsonPath
+
 Write-Output "Successfully updated the configuration HTTPS (443) for Reporting Services"
 ```
 
