@@ -4,7 +4,7 @@ description: This article explains how to configure and process customer prepaym
 author: raynezou
 ms.author: raynezou
 ms.topic: how-to
-ms.date: 08/25/2024
+ms.date: 10/20/2024
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -26,15 +26,15 @@ Sellers can request a deposit or advance payment to secure a commitment from the
 
 ### Types of prepayment processes
 
-#### Prepayment as a billing invoice
+#### Prepayment as a deposit
 
-The buyer makes an initial partial payment, or a deposit, to secure the goods, services, or a contract. This deposit is either a percentage of the total purchase price or a fixed amount that must be paid before the seller delivers the goods or services. The prepayment invoice functions like a billing document. The final invoice is issued later and reflects the remaining amount of the order.
+In this process, the buyer makes an initial partial payment, commonly referred to as a deposit, to secure goods, services, or a contract. This deposit is either a percentage or a fixed amount of the total value of the sales order. The prepayment invoice functions similarly to a billing document. The final invoice will be issued later, reflecting the complete amount of the sales order. 
 
 #### Prepayment invoice as a tax invoice
 
-The seller issues a prepayment invoice to the buyer before they deliver goods or services. This invoice includes sales tax. The buyer pays the invoice amount up front, and the seller delivers the goods or services after that payment is received. After the goods and services are delivered, the official invoice is sent. This invoice deducts the prepayment invoice amounts.
+In this type, the seller issues a real prepayment invoice (with sales taxes, if applicable) to the buyer. The buyer pays the invoice amount upfront and upon completion of payment, the seller may proceed with delivery of goods or services. Later, the official invoice will be sent out where the invoice value will be the total outstanding amount, which is the difference between the total sales order value and the total prepaid amount. 
 
-This article explains how to configure customer prepayment invoices and what the process is. Currently, the **Prepayment as a billing invoice** process is supported. The **Prepayment invoice as a tax invoice** process will be available in a later release.
+This article explains how the feature “Customer prepayment invoice” should be configured and how the process looks like. As first release, only scenario A is supported. Scenario B is planned on the product roadmap and will be available in a later release.  
 
 ### Example of a customer prepayment invoice
 
@@ -79,8 +79,8 @@ To set up customer prepayment invoices, follow these steps.
     - **Automatic** – Prepayments are automatically applied to the sales order if full payment is received and settles the prepayment invoice. 
 
 7. On the **Number sequences** tab, set up number sequences for the **Prepayment invoice**, **Prepayment invoice voucher**, **Prepayment invoice reversal**, and **Prepayment invoice reversal voucher** references.
-8. Go to **System administration** \> **Setup**, and select **Initialize process automations**.
-9. Enable the **Automated prepayment settlement posting** background process.
+8. Go to **System administration** \> **Setup**, and select **Process automations**.
+9. Click **Initialize process automations**.
 10. Update the interval for the process automation to one minute.
 
 If you use Electronic reporting (ER), follow these additional steps.
