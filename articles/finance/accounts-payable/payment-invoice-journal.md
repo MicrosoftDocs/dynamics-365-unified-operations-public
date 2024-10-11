@@ -26,10 +26,10 @@ After the feature is enabled, a new **Payment schedule** field is added to the *
 
 You can change the payment schedule that is used, according to your business requirement. During posting of the vendor invoice journal, vendor open transactions will be created according to the payment schedule.
 
- - To review multiple vendor open transactions that were generated from the payment schedule, go to **Accounts payable \> Invoices \> Open vendor invoices**, and enter the invoice number or the vendor account.
- - To review or configure the payment schedule, go to **Accounts payable \> Payment Setup \> Payment schedule**.
- - To configure the payment terms and assign a payment schedule, go to **Accounts payable \> Payment setup \> Terms of payment**.
- - To maintain the payment terms  on a vendor, go to **Accounts payable \> All vendors**, select the vendor account, and then, on the **Payment** tab, set the **Terms of payment** field.
+- To review multiple vendor open transactions that were generated from the payment schedule, go to **Accounts payable \> Invoices \> Open vendor invoices**, and enter the invoice number or the vendor account.
+- To review or configure the payment schedule, go to **Accounts payable \> Payment Setup \> Payment schedule**.
+- To configure the payment terms and assign a payment schedule, go to **Accounts payable \> Payment setup \> Terms of payment**.
+- To maintain the payment terms on a vendor, go to **Accounts payable \> All vendors**, select the vendor account, and then, on the **Payment** tab, set the **Terms of payment** field.
 
 The payment schedule feature is also available in the **Vendor invoice register** process. If a payment schedule is selected on the invoice register journal, multiple vendor payment lines will **not** be generated when the invoice register is posted. The vendor payment lines will be generated when the invoice is approved.
 
@@ -40,13 +40,13 @@ For a pending vendor invoice, if the payment schedule is on the invoice header, 
 This functionality will be available for the **Vendor invoice journal** and **Pending invoices** in a future release.
 
 ## Merge a payment schedule
-Beginning in Microsoft Dynamics 365 Finance release 10.0.42, open transactions that are split from the same payment schedule can be merged again with the **Merge payment schedule** button. 
 
-This functionality is introduced by the **Merge payment schedule for customer transactions or vendor transactions** feature in Feature management.
+As of Finance release 10.0.42, open transactions that are split from the same payment schedule can be merged again by using the **Merge payment schedule** button.
 
-When the feature is on, to merge the payment schedule follow these steps:
-1. Go to **All vendors (or All customers) \> Transactions \> Settle transactions**.
-2. Click **Payment schedule** then **Merge payment schedule**.
-3. Mark open transactions that were split by applying payment schedule.
-4. Click **Mark as primary payment** to select the main payment.
-5. Click **Merge payment schedule** to combine all the marked transactions into one payment with the same due date as the primary payment.
+The **Merge payment schedule for customer transactions or vendor transactions** feature in Feature management introduces this functionality. When that feature is on, follow these steps to merge a payment schedule.
+
+1. Go to **All vendors** (or **All customer**) \> **Transactions** \> **Settle transactions**.
+2. Select **Payment schedule** and then **Merge payment schedule**.
+3. Mark open transactions that were split by applying the payment schedule.
+4. Select **Mark as primary payment** to select the main payment.
+5. Select **Merge payment schedule** to combine all the marked transactions into one payment that has the same due date as the primary payment.
