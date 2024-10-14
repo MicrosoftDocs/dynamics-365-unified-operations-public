@@ -52,58 +52,356 @@ The planning contributor has the following privileges:
 - Update cube data
 - Update dimension data
 
-The planning limited contributor has the following privileges: 
+The planning limited contributor has the following privileges:
 
- - Read data
- - Update cube data
+- Read data
+- Update cube data
 
 The planning viewer has the following privileges:
 
 - Read data
 
-
->[!Note]
-> Users who access business performance planning need to be granted the role App viewer. 
+> [!NOTE]
+> Users who access business performance planning need to be granted the App viewer role. 
 
 For more information, see [Assigning roles in the Power Platform](/power-platform/admin/assign-security-roles).
 
 
 ## Role capabilities
-Below is an overview of actions that each user can take. This is a high-level guide of actions each user is restricted from taking or is granted. 
 
-Administrator
+This section provides an overview of the actions that users in each role are restricted from taking and allowed to take.
 
-<table><tbody><tr><th><p>Interface&nbsp;</p></th><th><p>Restrictions&nbsp;</p></th><th><p>Enablement&nbsp;</p></th></tr><tr><td><p>Business performance planning application&nbsp;</p></td><td><p>None&nbsp;</p></td><td><p>Can:&nbsp;</p><ul><li>Create or delete dimensions&nbsp;</li><li>Create,update and delete dimension values&nbsp;</li><li>Add and remove dimension columns&nbsp;</li><li>Load data via data flows&nbsp;</li><li>Edit data in excel&nbsp;</li><li>Create and delete cube&nbsp;</li><li>Load data into cube&nbsp;</li><li>Create dimension groups&nbsp;</li><li>Assign users to dimension groups&nbsp;</li></ul></td></tr><tr><td><p>Excel&nbsp;</p><p>&nbsp;</p></td><td><p>None&nbsp;</p></td><td><p>Can:&nbsp;</p><ul><li>Add, edit, and delete dimension values&nbsp;</li><li>Update plan level data in the pivot table for any data they have access to&nbsp;</li></ul><p>&nbsp;</p></td></tr><tr><td><p>Power BI&nbsp;</p></td><td><p>None&nbsp;</p></td><td><p>Can:&nbsp;</p><ul><li>Add/Edit and remove dimension values using table edit&nbsp;</li><li>Copy data using the copy visual&nbsp;</li><li>Edit the planning data via the matrix. This includes all shortcuts and actions available today including multi-select, allocating, allocating like, and enter comments.&nbsp;</li><li>Edit the planning data using the graphical planning visual&nbsp;</li><li>Enter comments&nbsp;</li><li>Create reports using reporting visual&nbsp;</li><li>Add comments in the reporting visual&nbsp;</li><li>Create variance report&nbsp;&nbsp;</li></ul></td></tr></tbody></table>
+### Planning administrator
 
-&nbsp;
+<table>
+<thead>
+<tr>
+<th>Interface</th>
+<th>Restricted actions</th>
+<th>Allowed actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Business performance planning application</td>
+<td>None</td>
+<td>
+<p>Users can perform these actions:</p>
+<ul>
+<li>Create and delete dimensions.</li>
+<li>Create, update, and delete dimension values.</li>
+<li>Add and remove dimension columns.</li>
+<li>Load data by using data flows.</li>
+<li>Edit data in Excel.</li>
+<li>Create and delete cubes.</li>
+<li>Load data into cubes.</li>
+<li>Create dimension groups.</li>
+<li>Assign users to dimension groups.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Excel</td>
+<td>None</td>
+<td>
+<p>Users can perform these actions:</p>
+<ul>
+<li>Add, edit, and delete dimension values.</li>
+<li>Update plan-level data in the pivot table for any data that they have access to.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Power BI</td>
+<td>None</td>
+<td>
+<p>Users can perform these actions:</p>
+<ul>
+<li>Add, edit, and remove dimension values by using the <b>Table edit</b> visual.</li>
+<li>Copy data by using the <b>Copy</b> visual.</li>
+<li>Edit planning data by using the <b>Matrix planning</b> visual. This capability includes all shortcuts and actions that are currently available, such as multi-selecting, allocating, allocating like, and entering comments.</li>
+<li>Edit planning data by using the <b>Graphical planning</b> visual.</li>
+<li>Enter comments.</li>
+<li>Create reports by using the <b>Reporting</b> visual.</li>
+<li>Add comments in the <b>Reporting</b> visual.</li>
+<li>Create variance reports.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
-Power User
+### Planning power user
 
-<table><tbody><tr><th><p>Interface&nbsp;</p></th><th><p>Restrictions&nbsp;</p></th><th><p>Enablement&nbsp;</p></th></tr><tr><td><p>Business performance planning application&nbsp;</p></td><td><p>Can't:&nbsp;</p><ul><li>Create dimension groups&nbsp;</li><li>Assign users to dimension groups&nbsp;</li></ul></td><td><p>Can:&nbsp;</p><ul><li>Create and delete dimensions&nbsp;</li><li>Create, update, and delete dimension values&nbsp;</li><li>Add and remove dimension columns&nbsp;</li><li>Load data using data flows&nbsp;</li><li>Edit data in excel&nbsp;</li><li>Create and delete cube&nbsp;</li><li>Load data into cube&nbsp;</li></ul><p>&nbsp;</p></td></tr><tr><td><p>Excel&nbsp;</p><p>&nbsp;</p></td><td><p>None&nbsp;</p></td><td><p>Can:&nbsp;</p><ul><li>Add, edit, and delete dimension values&nbsp;</li><li>Update plan level data within the pivot table for any data they have access to&nbsp;</li></ul><p>&nbsp;</p></td></tr><tr><td><p>Power BI&nbsp;</p></td><td><p>None&nbsp;</p></td><td><p>Can:&nbsp;</p><ul><li>Add/Edit and remove dimension values using table edit&nbsp;</li><li>Copy data using the copy visual&nbsp;</li><li>Edit the planning data using the matrix. This includes all shortcuts and actions available today including multi-select, allocating, allocating like, and enter comments.&nbsp;</li><li>Edit the planning data using the graphical planning visual&nbsp;</li><li>Enter comments&nbsp;</li><li>Create reports using reporting visual&nbsp;</li><li>Add comments in the reporting visual&nbsp;</li><li>Create variance report&nbsp;&nbsp;</li></ul></td></tr></tbody></table>
+<table>
+<thead>
+<tr>
+<th>Interface</th>
+<th>Restricted actions</th>
+<th>Allowed actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Business performance planning application</td>
+<td>
+<p>Users <em>can't</em> perform these actions:</p>
+<ul>
+<li>Create dimension groups.</li>
+<li>Assign users to dimension groups.</li>
+</ul>
+</td>
+<td>
+<p>Users can perform these actions:</p>
+<ul>
+<li>Create and delete dimensions.</li>
+<li>Create, update, and delete dimension values.</li>
+<li>Add and remove dimension columns.</li>
+<li>Load data by using data flows.</li>
+<li>Edit data in Excel.</li>
+<li>Create and delete cubes.</li>
+<li>Load data into cubes.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Excel</td>
+<td>None</td>
+<td>
+<p>Users can perform these actions:</p>
+<ul>
+<li>Add, edit, and delete dimension values.</li>
+<li>Update plan-level data in the pivot table for any data that they have access to.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Power BI</td>
+<td>None</td>
+<td>
+<p>Users can perform these actions:</p>
+<ul>
+<li>Add, edit, and remove dimension values by using the <b>Table edit</b> visual.</li>
+<li>Copy data by using the <b>Copy</b> visual.</li>
+<li>Edit planning data by using the <b>Matrix planning</b> visual. This capability includes all shortcuts and actions that are currently available, such as multi-selecting, allocating, allocating like, and entering comments.</li>
+<li>Edit planning data by using the <b>Graphical planning</b> visual.</li>
+<li>Enter comments.</li>
+<li>Create reports by using the <b>Reporting</b> visual.</li>
+<li>Add comments in the <b>Reporting</b> visual.</li>
+<li>Create variance reports.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
-&nbsp;
+### Planning contributor
 
-&nbsp;
+<table>
+<thead>
+<tr>
+<th>Interface</th>
+<th>Restricted actions</th>
+<th>Allowed actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Business performance planning application</td>
+<td>
+<p>Users <em>can't</em> perform these actions:</p>
+<ul>
+<li>Create and delete dimensions.</li>
+<li>Create and delete cubes.</li>
+<li>Create dimension groups.</li>
+<li>Assign users to dimension groups.</li>
+</ul>
+</td>
+<td>
+<p>Users can perform these actions:</p>
+<ul>
+<li>Create, update, and delete dimension values.</li>
+<li>Add and remove dimension columns.</li>
+<li>Load data by using data flows.</li>
+<li>Edit data in Excel.</li>
+<li>Load data into cubes.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Excel</td>
+<td>None</td>
+<td>
+<p>Users can perform these actions:</p>
+<ul>
+<li>Add, edit, and delete dimension values.</li>
+<li>Update plan-level data in the pivot table for any data that they have access to.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Power BI</td>
+<td>None</td>
+<td>
+<p>Users can perform these actions:</p>
+<ul>
+<li>Add, edit, and remove dimension values by using the <b>Table edit</b> visual.</li>
+<li>Copy data by using the <b>Copy</b> visual.</li>
+<li>Edit planning data by using the <b>Matrix planning</b> visual. This capability includes all shortcuts and actions that are currently available, such as multi-selecting, allocating, allocating like, and entering comments.</li>
+<li>Edit planning data by using the <b>Graphical planning</b> visual.</li>
+<li>Enter comments.</li>
+<li>Create reports by using the <b>Reporting</b> visual.</li>
+<li>Add comments in the <b>Reporting</b> visual.</li>
+<li>Create variance reports.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
-&nbsp;
+### Planning limited contributor
 
-Contributor
+<table>
+<thead>
+<tr>
+<th>Interface</th>
+<th>Restricted actions</th>
+<th>Allowed actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Business performance planning application</td>
+<td>
+<p>Users <em>can't</em> perform these actions:</p>
+<ul>
+<li>Create and delete dimensions.</li>
+<li>Create, update, and delete dimension values.</li>
+<li>Add and remove dimension columns.</li>
+<li>Load data by using data flows.</li>
+<li>Edit data in Excel.</li>
+<li>Create and delete cubes.</li>
+<li>Load data into cubes.</li>
+<li>Create dimension groups.</li>
+<li>Assign users to dimension groups.</li>
+</ul>
+</td>
+<td>None</td>
+</tr>
+<tr>
+<td>Excel</td>
+<td>
+<p>Users <em>can't</em> perform these actions:</p>
+<ul>
+<li>Add, edit, and delete dimension values.</li>
+</ul>
+</td>
+<td>
+<p>Users can perform these actions:</p>
+<ul>
+<li>Update plan-level data in the pivot table for any data that they have access to.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Power BI</td>
+<td>
+<p>Users <em>can't</em> perform these actions:</p>
+<ul>
+<li>Add, edit, and remove dimension values by using the <b>Table edit</b> visual.</li>
+<li>Copy data by using the <b>Copy</b> visual.</li>
+</ul>
+</td>
+<td>
+<p>Users can perform these actions:</p>
+<ul>
+<li>Edit planning data by using the <b>Matrix planning</b> visual. This capability includes all shortcuts and actions that are currently available, such as multi-selecting, allocating, allocating like, and entering comments.</li>
+<li>Edit planning data by using the <b>Graphical planning</b> visual.</li>
+<li>Enter comments.</li>
+<li>Create reports by using the <b>Reporting</b> visual.</li>
+<li>Add comments in the <b>Reporting</b> visual.</li>
+<li>Create variance reports.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
-<table><tbody><tr><th><p>Interface&nbsp;</p></th><th><p>Restrictions&nbsp;</p></th><th><p>Enablement&nbsp;</p></th></tr><tr><td><p>Business performance planning application&nbsp;</p></td><td><p>Can't:&nbsp;</p><ul><li>Create and delete dimensions&nbsp;</li><li>Create and delete cube&nbsp;</li><li>Create dimension groups&nbsp;</li><li>Assign users to dimension groups&nbsp;</li></ul><p>&nbsp;</p></td><td><p>Can:&nbsp;</p><ul><li>Create, update, and delete dimension values&nbsp;</li><li>Add and remove dimension columns&nbsp;</li><li>Load data using data flows&nbsp;</li><li>Edit data in excel&nbsp;</li><li>Load data into cube&nbsp;</li></ul><p>&nbsp;</p></td></tr><tr><td><p>Excel&nbsp;</p><p>&nbsp;</p></td><td><p>None&nbsp;</p></td><td><p>Can:&nbsp;</p><ul><li>Add, edit, and delete dimension values&nbsp;</li><li>Update plan level data within the pivot table for any data they have access to&nbsp;</li></ul><p>&nbsp;</p></td></tr><tr><td><p>Power BI&nbsp;</p></td><td><p>None&nbsp;</p></td><td><p>Can:&nbsp;</p><ul><li>Add, edit and remove dimension values via table edit&nbsp;</li><li>Copy data using the copy visual&nbsp;</li><li>Edit the planning data using the matrix. This includes all shortcuts and actions available today including multi-select, allocating, allocating like and enter comments.&nbsp;</li><li>Edit the planning data using the graphical planning visual&nbsp;</li><li>Enter comments&nbsp;</li><li>Create reports using reporting visual&nbsp;</li><li>Add comments in the reporting visual&nbsp;</li><li>Create variance report&nbsp;&nbsp;</li></ul></td></tr></tbody></table>
+### Planning viewer
 
-&nbsp;
-
-Limited contributor
-
-<table><tbody><tr><th><p>Interface&nbsp;</p></th><th><p>Restrictions&nbsp;</p></th><th><p>Enablement&nbsp;</p></th></tr><tr><td><p>Business performance planning application&nbsp;</p></td><td><p>Can't:&nbsp;</p><ul><li>Create and delete dimensions&nbsp;</li><li>Create, update and delete dimension values&nbsp;</li><li>Add and remove dimension columns&nbsp;</li><li>Load data using data flows&nbsp;</li><li>Edit data in excel&nbsp;</li><li>Create and delete cube&nbsp;</li><li>Load data into cube&nbsp;</li><li>Create dimension groups&nbsp;</li><li>Assign users to dimension groups&nbsp;</li></ul><p>&nbsp;</p></td><td><p>&nbsp;</p></td></tr><tr><td><p>Excel&nbsp;</p><p>&nbsp;</p></td><td><p>Can't:&nbsp;</p><ul><li>Add, edit and delete dimension values&nbsp;</li></ul><p>&nbsp;</p></td><td><p>Can:&nbsp;</p><ul><li>Update plan level data within the pivot table for any data they have access to&nbsp;</li></ul><p>&nbsp;</p></td></tr><tr><td><p>Power BI&nbsp;</p></td><td><p>Can't:&nbsp;</p><ul><li>Add, edit and remove dimension values using table edit&nbsp;</li><li>Copy data using the copy visual&nbsp;</li></ul><p>&nbsp;</p></td><td><p>Can:&nbsp;</p><ul><li>Edit the planning data using the matrix. This includes all shortcuts and actions available today including multi-select, allocating, allocating like and enter comments.&nbsp;</li><li>Edit the planning data via the graphical planning visual&nbsp;</li><li>Enter comments&nbsp;</li><li>Create reports using reporting visual&nbsp;</li><li>Add comments in the reporting visual&nbsp;</li><li>Create variance report&nbsp;&nbsp;</li></ul></td></tr></tbody></table>
-
-&nbsp;
-
-Viewer
-
-<table><tbody><tr><th><p>Interface&nbsp;</p></th><th><p>Restrictions&nbsp;</p></th><th><p>Enablement&nbsp;</p></th></tr><tr><td><p>Business performance planning application&nbsp;</p></td><td><p>Can't:&nbsp;</p><ul><li>Create and delete dimensions&nbsp;</li><li>Create, update, and delete dimension values&nbsp;</li><li>Add and remove dimension columns&nbsp;</li><li>Load data via data flows&nbsp;</li><li>Edit data in excel&nbsp;</li><li>Create and delete cube&nbsp;</li><li>Load data into cube&nbsp;</li><li>Create dimension groups&nbsp;</li><li>Assign users to dimension groups&nbsp;</li></ul><p>&nbsp;</p></td><td><p>Can:&nbsp;</p><ul><li>Launch Excel-addin&nbsp;</li><li>View data that they have access to&nbsp;</li></ul></td></tr><tr><td><p>Excel&nbsp;</p><p>&nbsp;</p></td><td><p>Can't:&nbsp;</p><ul><li>Add, edit, and delete dimension values&nbsp;</li><li>Update plan level data within the pivot table for any data they have access to&nbsp;</li></ul><p>&nbsp;</p><p>&nbsp;</p></td><td><p>Can:&nbsp;</p><ul><li>View information in the Excel add-in&nbsp;</li></ul></td></tr><tr><td><p>Power BI&nbsp;</p></td><td><p>Can't:&nbsp;</p><ul><li>Add, edit, and remove dimension values using table edit&nbsp;</li><li>Copy data using the copy visual&nbsp;</li><li>Edit the planning data using the matrix. This includes all shortcuts and actions available today including multi-select, allocating, allocating like, and enter comments.&nbsp;</li><li>Edit the planning data using the graphical planning visual&nbsp;</li><li>Enter comments&nbsp;</li><li>Create reports using reporting visual&nbsp;</li><li>Add comments in the reporting visual&nbsp;</li><li>Create variance report&nbsp;</li></ul></td><td><p>&nbsp;Can:&nbsp;</p><ul><li>View data within the visuals&nbsp;</li></ul></td></tr></tbody></table>
-&nbsp;
-
+<table>
+<thead>
+<tr>
+<th>Interface</th>
+<th>Restricted actions</th>
+<th>Allowed actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Business performance planning application</td>
+<td>
+<p>Users <em>can't</em> perform these actions:</p>
+<ul>
+<li>Create and delete dimensions.</li>
+<li>Create, update, and delete dimension values.</li>
+<li>Add and remove dimension columns.</li>
+<li>Load data by using data flows.</li>
+<li>Edit data in Excel.</li>
+<li>Create and delete cubes.</li>
+<li>Load data into cubes.</li>
+<li>Create dimension groups.</li>
+<li>Assign users to dimension groups.</li>
+</ul>
+</td>
+<td>
+<p>Users can perform these actions:</p>
+<ul>
+<li>Start the Excel Add-in.</li>
+<li>View data that they have access to.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Excel</td>
+<td>
+<p>Users <em>can't</em> perform these actions:</p>
+<ul>
+<li>Add, edit, and delete dimension values.</li>
+<li>Update plan-level data in the pivot table for any data that they have access to.</li>
+</ul>
+</td>
+<td>
+<p>Users can perform these actions:</p>
+<ul>
+<li>View information in the Excel Add-in.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Power BI</td>
+<td>
+<p>Users <em>can't</em> perform these actions:</p>
+<ul>
+<li>Add, edit, and remove dimension values by using the <b>Table edit</b> visual.</li>
+<li>Copy data by using the <b>Copy</b> visual.</li>
+<li>Edit planning data by using the <b>Matrix planning</b> visual. This capability includes all shortcuts and actions that are currently available, such as multi-selecting, allocating, allocating like, and entering comments.</li>
+<li>Edit planning data by using the <b>Graphical planning</b> visual.</li>
+<li>Enter comments.</li>
+<li>Create reports by using the <b>Reporting</b> visual.</li>
+<li>Add comments in the <b>Reporting</b> visual.</li>
+<li>Create variance reports.</li>
+</ul>
+</td>
+<td>
+<p>Users can perform these actions:</p>
+<ul>
+<li>View data in the visuals.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Set up dimension security
 
@@ -139,19 +437,24 @@ To set security on a dimension, follow these steps.
             > For all visuals except **Table edit**, users need access to at least one dimension value for each dimension in the cube.
 
             - **Row level access** – For each value in the dimension, read or edit privileges can be granted at the line level. For example, you might want users to see and act on the **Budget 2025** scenario only. In this case, unmark the **Budget 2025 best case** scenario for reading and editing. For **Row level access** to work, configure Semantic model data source credentials:
-                        <ul><li> Log into Power BI with a user who has the authority to create a dashboard (Administrator or power user).</li><li> In the Power BI workspace, select the semantic model.</li><li> Go to **Settings** > **Data source credentials** > **Edit credentials**. </li><li> Select the **Report viewers can only access this data source with their own Power BI identities using direct query** checkbox. </li><li> Click **Sign in** and sign in as a contributor user and refresh the dimension. The dimension should display the rows that aree selected in business performance planning.</li></ul> 
-          
-> [!IMPORTANT]
-> By default, only the user who creates a new dimension value can see it, unless the **Grant full access to all dimension values** or **Grant read-only access to all dimension values** option is selected for the dimension group. Other users can see the dimension value only if read or write access to the dimension value is granted to them.
+
+                1. Log into Power BI with a user who has the authority to create a dashboard (Administrator or power user).
+                1. In the Power BI workspace, select the semantic model.
+                1. Go to **Settings** > **Data source credentials** > **Edit credentials**.
+                1. Select the **Report viewers can only access this data source with their own Power BI identities using direct query** checkbox.
+                1. Select **Sign in** and sign in as a contributor user and refresh the dimension. The dimension should display the rows that are selected in business performance planning.
+
+    > [!IMPORTANT]
+    > By default, only the user who creates a new dimension value can see it, unless the **Grant full access to all dimension values** or **Grant read-only access to all dimension values** option is selected for the dimension group. Other users can see the dimension value only if read or write access to the dimension value is granted to them.
 
 6. After you finish setting dimension access for all the dimensions in the dimension group, you can review your changes on the **Summary** page.
 
     If the dimension access is set to **Grant full access to all dimension values**, the summary shows **All** for the dimension values, followed by **Full access**. If the dimension access is set to **Grant read-only access to all dimension values**, the summary shows **All** for the dimension values, followed by **Read-only**. If the dimension access is set to **Grant row-level access**, each dimension value that the user has access to is listed, followed by the access type (either **Full access** or **Read-only**).
 
-
 ### Edit dimension groups
 
 To edit a dimension group, follow these steps.
+
 1. On the **Dimension groups** page, select the dimension group that must be edited.
 2. Select **Edit group**.
 3. The dimensions in the dimension group are shown on the left side of the page. Add new dimensions to the dimension group, delete existing dimensions, or update the access options for existing dimensions. If you add a new dimension or edit an existing dimension in a dimension group, there are three access options:
@@ -171,6 +474,7 @@ After a dimension group is created, you can assign users to it. You can also rem
 #### Assign users to a dimension group
 
 To assign users to a dimension group, follow these steps.
+
 1. Go to the **Dimension group** list, and select the dimension group that you want to work with.
 2. Select **Users**, and then select **Assign**.
 3. In the list of users who can be assigned to the selected dimension group, select a user to assign. You can also select multiple users to assign all of them to the dimension group at the same time.
@@ -179,6 +483,7 @@ To assign users to a dimension group, follow these steps.
     > The user list is filtered so that it shows only users who have access to the `msdyn_xpnadimension` table.
 
 Alternatively, follow these steps.
+
 1. Open the **Users list** page, and select a user.
 2. Select **Manage dimension groups**.
 3. A check mark appears next to the name of each dimension group that the selected user has access to. Select the checkbox next to the name of the dimension group that you want to assign the user to, and then select **OK**.
@@ -186,11 +491,13 @@ Alternatively, follow these steps.
 #### Remove users from a dimension group
 
 To remove users from a dimension group, follow these steps.
+
 1. Go to the **Dimension group** list, and select the dimension group that you want to work with.
 2. Select **Users**, and then select **Remove**.
 3. In the list of users who are currently assigned to the selected dimension group, select a user to remove. You can also select multiple users to remove all of them from the dimension group at the same time.
 
 Alternatively, follow these steps.
+
 1. Open the **Users list** page, and select a user.
 2. Select **Manage dimension groups**.
 3. A check mark appears next to the name of each dimension group that the selected user has access to. Clear the checkbox next to the name of the dimension group that you want to remove the user from.
@@ -198,10 +505,12 @@ Alternatively, follow these steps.
 #### View user/dimension group assignments
 
 To view the list of users who are currently assigned to a dimension group, follow these steps.
+
 1. Go to the **Dimension group** list, and select the dimension group that you want to work with.
 2. Select **Users**, and then select **View**.
 
 To view the list of dimension groups that a user is currently assigned to, follow these steps.
+
 1. Open the **Users list** page, and select a user.
 2. Select **View access**. The dimension groups that the user has access to are shown on the left side of the page, and the dimension access details are shown on the right side.
 
