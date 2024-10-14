@@ -49,8 +49,8 @@ For more information about how to resolve issues in on-premises environments, se
     #& $agentShare\scripts\TSG_EnableGMSAForAOS.ps1 -agentShare $agentShare -gmsaAccount contoso\svc-AXSF$
     #& $agentShare\scripts\TSG_EnableDixfService.ps1 -agentShare $agentShare -gmsaAccount contoso\svc-Dixf$ -DMFShare "\\servername\dixf-share"
 
-    # The following script (when enabled) will configure HTTPS for SSRS, and enabled reporting services to run under a gMSA account
-    # NOTE!!! If you have used an IP address in LCS for your SSRS server, you'll need to change that to the Fully Qualified Domain Name (FQDN) for the reporting server. This can be changed in on the Environment page then Maintain > Update Settings
+    # The following script (when enabled) configures HTTPS for SSRS, and enables reporting services to run under a gMSA account.
+    # NOTE!!! If you have used an IP address in LCS for your SSRS server, update the IP address to a Fully Qualified Domain Name (FQDN) for the reporting server. This can be changed on the Environment page. Go to Maintain > Update settings.
     #& $agentShare\scripts\TSG_SSRSEnableHTTPS.ps1 -agentShare $agentShare -ssrsSslCertificateThumbprint "<ssrshttcertthumbprint>" -principalUserAccountName contoso\svc-reportsvc$
     ```
 
