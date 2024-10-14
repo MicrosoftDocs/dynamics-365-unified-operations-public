@@ -23,7 +23,7 @@ This article provides an overview of the cash register functionality that is ava
 
 This version of the cash register functionality for France has passed an audit according to the NF 525 certification requirements and is granted a certificate of compliance that has the following category and number: 
 
-- **Microsoft Dynamics 365 Commerce, version 10** (the most recent audited version is **10.0.27**):
+- **Microsoft Dynamics 365 Commerce, version 10** (the most recent audited version is **10.0.41**):
 
     - Certificate category: B
     - Certificate number: 0498
