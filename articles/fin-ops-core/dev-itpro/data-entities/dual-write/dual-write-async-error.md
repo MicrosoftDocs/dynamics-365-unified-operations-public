@@ -39,3 +39,15 @@ There are limits on the requests that can be created for the retry or dismiss fu
 
 - **Number of requests** – After a user submits a request, reconciliation occurs in the background. The time that is required for reconciliation depends on the volume of the data movement and the complexity of the process. However, the user can select a different set of records for newer requests. Those requests are queued and run in the order of request creation. A maximum of five requests can be queued for an integration job.
 - **Number of records per request** – Each request can process a maximum of 10,000 records. This limit helps prevent long reconciliations that can lead to longer lead times for the processing of other requests.
+
+### Sync errors details
+ - Users can look up their data using the unique key and company reference in finance and operations or Dataverse. The Unique key refers to the source side record.
+ - Error codes are extracted from internal exceptions or messages to provide troubleshooting.
+ - **Created On** is when the error record was created, and not the actual record creation.  
+
+### Known issues 
+
+ - Updates to unmapped fields in finance and operations and Dataverse will trigger the Async process. This leads to phantom updates or unknown failures logged in the error table. We are working on a fix for this and will be available as part of quality updates. If there is a influx of error records logged where the data updates aren't expected, it could be due to updates from unmapped fields. It's recommended to either dismiss or retry the records from the **Sync errors** table.
+ - Error retry/dismiss screen may take time to display if a large subset of data has been retried. The behavior is expected as the process is queing records for a background process. The blocking UX call provides feedback at the end of the process.  
+
+ 
