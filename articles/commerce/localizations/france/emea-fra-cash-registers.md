@@ -413,7 +413,7 @@ On the **Custom fields** page, add the following records for the custom fields f
 
 ### Configure receipt formats
 
-For every required receipt format, change the value of the **Print behavior** field to **Always print**. You must also configure hardware profiles to support receipt printers and to enable Hardware station. For more information about how to work with POS peripherals, see [Peripherals](../../retail-peripherals-overview.md).
+NF 525 compliance requires that receipts should not be printed by default and should only be printed if the customer requests. To comply with this, for every receipt format, change the value of the **Print behavior** field to **Prompt User**. You must also configure hardware profiles to support receipt printers and to enable Hardware station. For more information about how to work with POS peripherals, see [Peripherals](../../retail-peripherals-overview.md).
 
 In the Receipt format designer, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language texts that you defined in the previous section.
 
