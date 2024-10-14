@@ -412,6 +412,8 @@
               href: accounts-receivable/credit-card-refactor.md
             - name: Create a free text invoice
               href: accounts-receivable/create-free-text-invoice-new.md
+            - name: Free text invoice optimization
+              href: accounts-receivable/free-text-invoice-optimization.md
             - name: Use financial tags to display free text invoice descriptions
               href: accounts-receivable/free-text-inv-desc.md
             - name: Accounting distributions and subledger journal entries for free text invoices
