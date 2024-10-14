@@ -522,10 +522,10 @@ Depending on your purposes, you can download the ER configurations for the Z rep
 
 You must download the following versions (or later versions) of the configurations:
 
-- **Retail channel data.version.2** data model
-- **Archiving DMM.version.2.3** data model mapping
-- **Retail Z-Report (FR).version.24.23.3** format
-- **Retail data archive (FR).version.2.5** format
+- **Retail channel data.version.24** data model
+- **Archiving DMM.version.24.97** data model mapping
+- **Retail Z-Report (FR).version.24.24.4** format
+- **Retail data archive (FR).version.24.24** format
 
 After you import the configurations, select ER formats for the Z report and archive in the following fields on the **Electronic documents** tab of the **Commerce parameters** page:
 
