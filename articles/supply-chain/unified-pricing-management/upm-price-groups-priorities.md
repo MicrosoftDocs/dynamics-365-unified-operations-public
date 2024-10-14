@@ -22,26 +22,22 @@ ms.custom:
 
 ## Priority configuration
 
-In Unified pricing management, there are some places where users can define ranks for pricing calculation.
+There are several places in the system where you're able to assign ranks for pricing calculations. Records with a higher rank have a higher priority when the system searches for a calculation. <!-- KFM: Maybe we could clarify this a bit more. -->
 
-The higher value represents higher priority for calculation searching.
+The following table lists the pages where you can assign ranks and how they're used to calculate priorities.
 
-There are certain places where users can define ranks for pricing calculations. These ranks can be converted into calculated priorities for search calculations. A higher value represents a higher priority.
-
-The following table indicates the places where to configure ranks and how to convert them into calculated priorities.
-
-| Elements | Fields | Configurable in | Calculated priority |
+| Element | Page | Field name | Calculated priority |
 |--|--|--|--|
-| Attributes | Rank | **Pricing management** \> **Setup** \> **Price attribute groups** \> **Price attribute groups** | Same value, no conversion |
-| Price group | Rank | **Pricing management** \> **During-sales pricing** \> **Price groups** \> **All price groups** | 1000+Rank |
-| Price attribute group combination | Combination rank | **Pricing management** \> **Setup** \> **Price component codes** \> **Price component codes** | Same value, no conversion |
-| Price component code | Pricing sequence | **Pricing management** \> **Setup** \> **Price component codes** \> **Price trees** | 1000-Sequence |
+| [Price attribute](upm-price-attribute-groups.md#price-attribute-ranks) | **Pricing management** \> **Setup** \> **Price attribute groups** \> **Price attribute groups** | Rank | Same value (no conversion) |
+| [Price group](upm-price-groups-set-up.md) | **Pricing management** \> **During-sales pricing** \> **Price groups** \> **All price groups** | Rank | 1000&nbsp;&plus;&nbsp;Rank |
+| [Price attribute group combination](upm-price-component-code.md#rank) | **Pricing management** \> **Setup** \> **Price component codes** \> **Price component codes** | Combination rank | Same value (no conversion) |
+| [Price component code](upm-price-structure-details.md) | **Pricing management** \> **Setup** \> **Price component codes** \> **Price trees** | Pricing sequence | 1000&nbsp;&minus;&nbsp;Sequence |
+
+<!-- KFM: Should the final row say "Price tree" or "Price structure" instead of "Price component code"?-->
 
 ## Priority application sequence
 
-When calculating prices, calculated priorities are checked in a specific sequence for trade agreement, adjustment and discount respectively.
-
-The following table outlines the sequence of priority checks for pricing rules during price calculations. The sequence is numbered from 1 to 4, which indicates the order of checks.
+When the system calculates prices, is checks for priorities in a specific sequence for trade agreements, adjustments, and discounts. The following table outlines the sequence by which pricing rules are checked during price calculations. Each sequence is numbered from 1 to 4, which indicates the order of checks.
 
 <table>
 <thead>
@@ -98,16 +94,19 @@ The following table outlines the sequence of priority checks for pricing rules d
 
 ## Check calculated priority
 
-After calculation, calculated priorities can be viewed on sales order lines for applied pricing rules.
+After a calculation, the calculated priorities are shown on sales order lines for the applied pricing rules. To find these values, follow these steps.
 
-1. Select a specific sales order and select **sales order** number
-1. Select the lines for checking
-1. Select **Sales order line** button
-1. elect **Price details** under **View** group
-1. **Calculated pricing priority** for applied records of base price, margin component and discount can be displayed accordingly.
+1. Go to **Sales and marketing** \> **Sales orders** \> **All sales orders**.
+1. Find and open the sales order you want to check.
+1. On the **Sales order lines** FastTab, select the line you want to check.
+1. On the **Sales order lines** FastTab toolbar, select **Sales order line** \> **View** \> **Price details**.
+1. The **Base price**, **Margin component**, and **Discount lines** each include a **Calculated pricing priority** column, which shows the calculated priority for each line shown on each FastTab.
 
-![A screenshot of a computer Description automatically generated](media/image9.png)
+    :::image type="content" source="media/price-details.png" alt-text="Assign a price group to a trade journal" lightbox="media/price-details.png":::
 
-![A screenshot of a computer Description automatically generated](media/image10.png)
+## Related information
 
-![A screenshot of a computer Description automatically generated](media/image11.png)
+- [Price attribute groups](upm-price-attribute-groups.md)
+- [Set up price groups for Unified pricing management](upm-price-groups-set-up.md)
+- [Price component codes](upm-price-component-code.md)
+- [Arrange price component codes into a price structure](upm-price-structure-details.md)
