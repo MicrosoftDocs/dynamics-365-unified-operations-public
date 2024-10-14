@@ -30,6 +30,13 @@ This section contains a table that lists the features that are included in this 
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
+| Cash and bank management | Enable default descriptions for advanced bank reconciliation | This feature enables default descriptions for automatic payment journal posting and voucher posting in advanced bank reconciliation. | Feature management |
+| Cash and bank management | Enable prepayment and posting profile when generating payment journal in advanced bank reconciliation | This feature enables prepayment option and posting profile when generating customer payment journal and vendor payment journal from the bank reconciliation worksheet. Users can configure these two options on the reconciliation matching rule setup. | Feature management |
+| Cash and bank management | Mark all bank transactions as cleared in account reconciliation | This feature provides additional capabilities to mark all bank transactions as cleared and unmark all bank transactions during the advanced bank account reconciliation process. | Feature management |
+|Fixed assets | Capitalize charges cost into the fixed assets main account |This feature enables the capitalization of charges added during the acquisition of a fixed asset through a purchase order. Any applicable charges are automatically posted to the fixed asset’s main account and included in the total capitalization cost, ensuring accurate financial reporting and asset valuation.|Feature management |
+|Fixed assets |(Preview) Fixed assets depreciation processing enhancements|This enhancement improves the efficiency of depreciation proposal batch jobs by ensuring the inclusion of assets with various ID formats, preventing blank journals, and avoiding duplicate journals due to temporary errors. It also boosts the asset transactions cache, leading to faster processing of depreciation proposals.|Feature management |
+|Fixed assets | (Preview) Fixed assets transactions cache performance improvements for depreciation proposal |Enabling this feature optimizes the asset transactions cache for depreciation proposals, resulting in enhanced processing performance and faster execution times for generating depreciation calculations.|Feature management |
+
 
 
 
