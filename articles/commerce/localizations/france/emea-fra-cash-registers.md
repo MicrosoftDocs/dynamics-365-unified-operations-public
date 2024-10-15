@@ -2,7 +2,7 @@
 title: Cash register functionality for France
 description: This article provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-ms.date: 08/09/2024
+ms.date: 10/16/2024
 ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
@@ -390,7 +390,7 @@ On the **Language text** page, add the following records for the labels of the c
 | en-US       | 900013  | Reprint time 12H          |
 | en-US       | 900014  | Reprint time 24H          |
 | en-US       | 900015  | Reprint digital signature |
-| en-US       | 900016  | Software Version          |
+| en-US       | 900016  | Software version          |
 
 On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page.
 
@@ -415,7 +415,7 @@ On the **Custom fields** page, add the following records for the custom fields f
 
 ### Configure receipt formats
 
-NF 525 compliance requires that receipts should not be printed by default and should only be printed if the customer requests. To comply with this, for every receipt format, change the value of the **Print behavior** field to **Prompt User**. You must also configure hardware profiles to support receipt printers and to enable Hardware station. For more information about how to work with POS peripherals, see [Peripherals](../../retail-peripherals-overview.md).
+NF 525 compliance requires that receipts shouldn't be printed by default and should only be printed by customer request. To comply with this requirement, for every receipt format, change the value of the **Print behavior** field to **Prompt User**. You must also configure hardware profiles to support receipt printers and to enable Hardware station. For more information about how to work with POS peripherals, see [Peripherals](../../retail-peripherals-overview.md).
 
 In the Receipt format designer, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language texts that you defined in the previous section.
 
@@ -446,7 +446,7 @@ In the Receipt format designer, add the following custom fields to the appropria
     - **Reprint time 12H** or **Reprint time 24H** – This field prints the time of a receipt copy in the selected format.
     - **Reprint digital signature** – This field prints an extract from the digital signature of a receipt copy.
     - **NF 525 Certificate** – This field prints the category and number of the certificate of compliance that an authorized body issued to Dynamics 365 Commerce version 10 per the NF 525 certification requirements.
-    - **Software Version** – This field prints the version of the software that was certified per the NF 525 certification requirements and that is used to produce receipts (for example, **Microsoft Dynamics 365 Commerce v.10**).
+    - **Software Version** – This field prints the version of the software used to produce receipts that was certified per the NF 525 certification requirements (for example, **Microsoft Dynamics 365 Commerce v.10**).
 
         > [!NOTE]
         > If you customize the POS application, and your customizations affect the compliance of the application, you might have to request a new certificate of compliance from an accredited body. In this case, you must override the certificate category and number, and specify a corresponding software version number. Otherwise, the default values for the certificate category and number will be printed.
