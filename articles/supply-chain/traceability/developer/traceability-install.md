@@ -22,6 +22,7 @@ This article describes how to Install, update, or uninstall the various componen
 
 To use Traceability, your system must meet the following requirements:
 
+- Your environment is Tier 2 environment or a Unified Developer Experience environment for finance and operations apps which has no Traceability add-in installed.
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 (build 10.0.1935.80) or higher.
 
 ## Turn on features in Supply Chain Management
