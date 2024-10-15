@@ -37,8 +37,6 @@ To assign a price group to a trade agreement, follow these steps.
 
 ## Assign price groups to price adjustments or discounts
 
-<!-- KFM: Note: I combined these two sections, since they were nearly identical. -->
-
 To assign price groups to a price adjustment or discount, follow these steps.
 
 1. Go to one of the following pages, depending on whether you want to work with a price adjustment or a discount:
@@ -49,12 +47,11 @@ To assign price groups to a price adjustment or discount, follow these steps.
 1. On the Action Pane, select **Price groups**.
 1. The **Price groups** page opens. To add a new price group, select **New** on the Action Pane.
 1. In the header of the new record, set **Price group** to the name of the price group you want to add.
-
-    The value of **Pricing priority** will default in the field **Pricing priority** on the current price adjustment or discount record. It's read-only when the **Override priority** option is set to *No*. <!-- KFM: This appears to be false or misleading. Delete this? -->
-
 1. On the Action Pane, select **Save**. The page updates the following values:
 
-    - **Pricing priority** – Updates to show the **Rank** of the selected **Price group**. <!-- KFM: I think this is correct, but it's strange that the field names don't match. -->
-    - **Price attribute group** – Updates to show the **Price attribute group** of the selected **Price group**. The grid below this field updates to show the **Conditions** for the selected **Price group**. <!-- KFM: This FastTab should have a name. -->
+    - **Pricing priority** – Updates to show the **Rank** of the selected **Price group**.
+    - **Price attribute group** – Updates to show the **Price attribute group** of the selected **Price group**. The grid below this field updates to show the **Conditions** for the selected **Price group**. 
+
+1. On the Action Pane, select the **Back** button to return to the price adjustment or discount. On the **General** FastTab, you can see the **Pricing priority** that applies to that adjustment or discount. It shows the highest priority of the price groups you assigned. However, you can override this if necessary by setting **Override priority** to *Yes*.
 
 1. Repeat this procedure to add more price groups as needed.

@@ -18,7 +18,6 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 <!-- KFM: Preview until further notice -->
-<!-- KFM: Confirm TOC location of this section... -->
 
 A *price group* is a flexible tool that enables businesses to manage and adjust their pricing strategies across a wide array of attributes, including sales channels, customer groups, order types, delivery methods, and more. The power of a price group lies in its ability to logically bundle these attributes together, allowing businesses to apply pricing rules and promotions consistently across multiple entities without the need to modify individual trade agreements, discount setups, or pricing components. This flexibility is valuable in both Dynamics 365 Commerce and Dynamics 365 Supply Chain Management, where pricing needs to adapt quickly to changing business conditions while maintaining consistency across various settings.
 
@@ -34,7 +33,7 @@ Price groups provide a layer of flexibility that allows companies to make quick,
 
 Price groups are used to calculate prices in Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, and attribute-based pricing management.
 
-<!--KFM: Introduce this table. What is it showing us? -->
+The following table shows how price groups fit into the various modules and feature areas of Dynamics 365 Supply Chain Management and Dynamics 365 Commerce.
 
 | Feature area | Association type | Context type |
 |--|--|--|
@@ -43,7 +42,7 @@ Price groups are used to calculate prices in Dynamics 365 Supply Chain Managemen
 | Pricing management (deprecated) pricing | As an attribute | <ul><li>Trade agreement</br></blockquote></li><li>Adjustment</br></blockquote></li><li>Discounts</li></ul> |
 | Unified pricing management pricing | As an attribute *or* with attributes assignment | <ul><li>Trade agreement</br></blockquote></li><li>Adjustment</br></blockquote></li><li>Discounts</li></ul> |
 
-<!--KFM: Introduce this bullet list. What is it showing us? How is it different from or related to the table? -->
+The table summarizes how price groups work in the following feature areas:
 
 - **Sales and marketing module pricing** – Price groups associated with customers and products can be selected as group criteria when maintaining the lines of trade agreements.
 - **Dynamics 365 Commerce pricing** – Price groups can be associated with channel, affiliation, loyalty program, and catalog in trade agreements, adjustments, and discounts.
@@ -61,16 +60,14 @@ In the Unified pricing management module, price groups can be used to implement 
 > [!NOTE]
 > Price groups are typically used in Dynamics 365 Commerce because they accommodate the way Commerce users are accustomed to working. However, they are completely optional and, especially if you only use Supply Chain Management, you might choose not to use them, depending on the pricing scenarios you want to implement.
 
-<!--KFM: Introduce this bullet list. What do this points have to do with each other? -->
+Price groups can be defined in the following ways:
 
 - Price groups can be used to define strategies associated with attributes.
 - Only price groups without attributes associated with them can be used as attributes in header attribute groups.
 
-The following illustration demonstrates how price groups are used <!--KFM: I'm not sure we are showing how they are "used". Is this more about how they fit in with our pricing mechanisms? Or something else? -->. Notice that the price group is centrally positioned within pricing and discount management. The attributes and commerce entities used to manage differential prices (channels, affiliations, and loyalty programs) and discounts are shown on the left, while the areas where price groups can be configured in price and discount records are depicted on the right.
+The following illustration demonstrates how price groups relate price attributes to prices, margin adjustments, and discounts. Notice that the price group is centrally positioned within pricing and discount management. The attributes and commerce entities used to manage differential prices (channels, affiliations, and loyalty programs) and discounts are shown on the left, while the areas where price groups can be configured in price and discount records are depicted on the right.
 
 :::image type="content" source="media/price-groups-diagram.png" alt-text="Diagram illustrating how price groups are used" lightbox="media/price-groups-diagram.png":::
-
-<!--KFM: What does the asterisk mean in the diagram? Is this the same "Catalog" that we claim isn't available? If so we should probably remove it. -->
 
 In Unified pricing management price groups provide the following functions:
 
@@ -82,9 +79,21 @@ In Unified pricing management price groups provide the following functions:
 > [!NOTE]
 > Price groups aren't currently available for use with Dynamics 365 Commerce catalogs.
 
+## Benefits of price groups
+
+<!--KFM: This text was stuck at the end of your document, where it didn't fit, so I put it here. I'm not sure it belongs at all... -->
+
+ Price groups offer the following benefits:
+
+- **Flexible** – Price groups provide a flexible way to manage pricing strategies across various attributes, such as customer segments, channels, order types, and more, allowing businesses to adapt quickly without altering individual trade agreements or discount setups. Currently, we support pricing header attributes, with plans to extend support to pricing line attributes in the future.
+- **Unified** – Price groups offer significant value for Commerce customers, enabling the efficient management of dynamic promotions, channel-specific pricing strategies, affiliations programs, and loyalty programs. In Supply Chain Management, price groups bring similar benefits by simplifying pricing strategies for key attributes such as customer segments, order types, and delivery methods, providing the flexibility to make adjustments without reconfiguring underlying pricing structures.
+- **Versatile** – Price attribute groups are tied to specific price components, and once enabled, their configuration isn't easily changed. Price groups, however, offer a versatile and flexible way to dynamically adjust prices on top of this established setup. Additionally, price groups aren't mandatory, allowing businesses to choose whether or not to use them based on their specific needs and complexity.
+- **Dynamic Adjustments** – As business needs evolve, pricing attributes can be modified to reflect changes in strategy, such as introducing new channels or expanding loyalty programs. Unified Pricing simplifies the implementation of these changes without disrupting the overall pricing strategies.
+- **Consistency Across Platforms** – This unified approach ensures consistent application of pricing strategies across all touch points within both SCM and Commerce.
+
 ## Examples of how to use price groups
 
-Price groups can be widely used for both B2B and B2C scenarios. Let's take a few examples. Before that, you need to predefine the entities or fields as attributes in a price attribute group first. <!--KFM: This isn't clear. Please revise. We need to better explain what we mean by "attributes", why we are talking about them now, and what they have to do with the following subsections. I don't understand what we need to do "before" and "first". -->
+The following subsections provide examples of how price groups can be used in various B2B and B2C scenarios.
 
 ### Example 1: Channels
 
@@ -106,22 +115,7 @@ The Fabrikam company wants to reward members of the *Fabrikam rewards* loyalty p
 
 ### Example 4: Customer
 
-For those companies who want to configure a specific range of customers for some discounts.
-<!--KFM: This example seems incomplete. We should add more detail or remove it. -->
-
-## Benefits of price groups
-
-<!--KFM: This text was stuck at the end of your document, where it didn't fit, so I put it here. I'm not sure it belongs at all... -->
-
- Price groups offer the following benefits:
-
-- **Flexible** – Price groups provide a flexible way to manage pricing strategies across various attributes, such as customer segments, channels, order types, and more, allowing businesses to adapt quickly without altering individual trade agreements or discount setups. Currently, we support pricing header attributes, with plans to extend support to pricing line attributes in the future.
-- **Unified** – Price groups offer significant value for Commerce customers, enabling the efficient management of dynamic promotions, channel-specific pricing strategies, affiliations programs, and loyalty programs. In Supply Chain Management, price groups bring similar benefits by simplifying pricing strategies for key attributes such as customer segments, order types, and delivery methods, providing the flexibility to make adjustments without reconfiguring underlying pricing structures.
-- **Versatile** – Price attribute groups are tied to specific price components, and once enabled, their configuration isn't easily changed. Price groups, however, offer a versatile and flexible way to dynamically adjust prices on top of this established setup. Additionally, price groups aren't mandatory, allowing businesses to choose whether or not to use them based on their specific needs and complexity.
-- **Dynamic Adjustments** – As business needs evolve, pricing attributes can be modified to reflect changes in strategy, such as introducing new channels or expanding loyalty programs. Unified Pricing simplifies the implementation of these changes without disrupting the overall pricing strategies.
-- **Consistency Across Platforms** – This unified approach ensures consistent application of pricing strategies across all touch points within both SCM and Commerce.
-
-These attributes can be assigned individually or in combination within a price group, with configurable priority rankings to determine the application of pricing rules when multiple attributes intersect. <!--KFM: I don't understand what this means. Maybe it doesn't belong here... -->
+For those companies who want to configure a specific range of customers for some discounts. Therefore, they set up price groups called *US customers*, *European customers*, and *Asian customers*. These groups enable the company to assign different discounts based on geographic region.
 
 ## Next steps
 

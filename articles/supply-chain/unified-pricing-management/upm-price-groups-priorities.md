@@ -18,22 +18,20 @@ ms.custom:
 
 <!-- KFM: Preview until further notice -->
 
-<!-- KFM: Intro is needed for this topic. -->
+In situations where more than one price calculation could apply, the system evaluates the priority of each group to decide which one should apply. This article explains how the priority is evaluated.
 
 ## Priority configuration
 
-There are several places in the system where you're able to assign ranks for pricing calculations. Records with a higher rank have a higher priority when the system searches for a calculation. <!-- KFM: Maybe we could clarify this a bit more. -->
+There are several places in the system where you're able to assign ranks for pricing calculations. Records with a higher rank have a higher priority when the system searches for a calculation.
 
 The following table lists the pages where you can assign ranks and how they're used to calculate priorities.
 
 | Element | Page | Field name | Calculated priority |
 |--|--|--|--|
-| [Price attribute](upm-price-attribute-groups.md#price-attribute-ranks) | **Pricing management** \> **Setup** \> **Price attribute groups** \> **Price attribute groups** | Rank | Same value (no conversion) |
-| [Price group](upm-price-groups-set-up.md) | **Pricing management** \> **During-sales pricing** \> **Price groups** \> **All price groups** | Rank | 1000&nbsp;&plus;&nbsp;Rank |
-| [Price attribute group combination](upm-price-component-code.md#rank) | **Pricing management** \> **Setup** \> **Price component codes** \> **Price component codes** | Combination rank | Same value (no conversion) |
-| [Price component code](upm-price-structure-details.md) | **Pricing management** \> **Setup** \> **Price component codes** \> **Price trees** | Pricing sequence | 1000&nbsp;&minus;&nbsp;Sequence |
-
-<!-- KFM: Should the final row say "Price tree" or "Price structure" instead of "Price component code"?-->
+| [Price attribute](upm-price-attribute-groups.md#price-attribute-ranks) | **Pricing management** \> **Setup** \> **Price attribute groups** \> **Price attribute groups** | **Rank** | Same value (no conversion) |
+| [Price group](upm-price-groups-set-up.md) | **Pricing management** \> **During-sales pricing** \> **Price groups** \> **All price groups** | **Rank** | 1000&nbsp;&plus;&nbsp;Rank |
+| [Price attribute group combination](upm-price-component-code.md#rank) | **Pricing management** \> **Setup** \> **Price component codes** \> **Price component codes** | **Combination rank** | Same value (no conversion) |
+| [Price component code](upm-price-structure-details.md) | **Pricing management** \> **Setup** \> **Price component codes** \> **Price trees** | **Pricing sequence** | 1000&nbsp;&minus;&nbsp;Sequence |
 
 ## Priority application sequence
 
