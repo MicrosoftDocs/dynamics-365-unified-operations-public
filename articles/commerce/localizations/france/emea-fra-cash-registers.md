@@ -23,7 +23,7 @@ This article provides an overview of the cash register functionality that is ava
 
 This version of the cash register functionality for France has passed an audit according to the NF 525 certification requirements and is granted a certificate of compliance that has the following category and number: 
 
-- **Microsoft Dynamics 365 Commerce, version 10** (the most recent audited version is **10.0.41**):
+- **Microsoft Dynamics 365 Commerce, version 10** (the most recent audited version is **10.0.40**):
 
     - Certificate category: B
     - Certificate number: 0498
@@ -531,8 +531,8 @@ You must download the following versions (or later versions) of the configuratio
 
 After you import the configurations, select ER formats for the Z report and archive in the following fields on the **Electronic documents** tab of the **Commerce parameters** page:
 
-- **Z-Report export format** – Select the **Retail Z-Report (FR).version.24.23.3** format or the format that you downloaded earlier.
-- **Retail data archive export format** – Select the **Retail data archive (FR).version.2.5** format or the format that you downloaded earlier.
+- **Z-Report export format** – Select the **Retail Z-Report (FR)** format or the format that you downloaded earlier.
+- **Retail data archive export format** – Select the **Retail data archive (FR)** format or the format that you downloaded earlier.
 
 ### Reinitialize Commerce components
 
