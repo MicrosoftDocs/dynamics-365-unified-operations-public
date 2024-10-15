@@ -30,9 +30,12 @@ Before you can transition to the upgraded payment flow experience, the following
 
 ## Feature availability
 
-The modernized UI experience for the **Credit Card**, **Cash**, and **Check** payment methods is available starting **10.0.40**, where as the new experience for **Currency**, **Customer Account**, **Payment Voucher**, **Gift Card** payment methods has been added with **10.0.42**. The payment method options dialog also reflects updated payment method symbols for all payment methods on the menu.
+The modernized UI experience for the **Credit Card**, **Cash**, and **Check** payment methods is available starting **10.0.40**, where as the new experience for **Currency**, **Customer Account**, **Payment Voucher**, **Gift Card** payment methods has been added with **10.0.42**. The payment method options dialog also reflects updated payment method symbols for all payment methods on the menu. 
 
 Updates for **Loyalty Card** payment methods will be rolled out in a future release. 
+
+> [!Note]
+> In case you have customized the payment experience for any of the following payment methods : **Currency**, **Customer Account**, **Payment Voucher**, **Gift Card** and you would like to continue using that user experience, then you do not need to disable the feature flag, rather you can contact Microsoft support to disable the new user experiences for these individual payment methods.
 
 > [!WARNING]
 > The ability to customize the new React components will be delivered in a future Commerce feature. Currently, the availability date hasn't been set. For any customization that you do on the payment user flow screens, Commerce must release React extensibility capabilities. Otherwise, you can't continue to customize actions on those screens.
