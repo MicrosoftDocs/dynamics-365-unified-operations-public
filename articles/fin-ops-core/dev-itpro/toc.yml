@@ -549,7 +549,7 @@ items:
             href: deployment/onprem-upgrade-os.md
           - name: Upgrade or replace the SQL Server instance of on-premises environments
             href: deployment/onprem-upgrade-sqlserver.md
-        - name: Infrastructure Scripts
+        - name: Infrastructure scripts
           items:
           - name: Obtain the Infrastructure Scripts for your Microsoft Dynamics 365 Finance + Operations (on-premises) deployment
             href: deployment/obtain-infrascripts-onprem.md
@@ -1384,7 +1384,15 @@ items:
               - name: Dual-write error codes
                 href: data-entities/dual-write/dual-write-error-codes.md
               - name: Error codes for the table map health check
-                href: data-entities/dual-write/table-map-health-check.md                  
+                href: data-entities/dual-write/table-map-health-check.md   
+            - name: Dual-write Async (preview)
+              items:
+              - name: Overview and set up 
+                href: data-entities/dual-write/dual-write-async.md
+              - name: Centralized error management
+                href: data-entities/dual-write/dual-write-async-error.md
+              - name: Dual-write Async FAQ  
+                href: data-entities/dual-write/dual-write-async-faq.md
       - name: Virtual entities
         items:
         - name: Virtual entities overview

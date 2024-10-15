@@ -45,11 +45,7 @@ On the **General ledger parameters** page under **Fiscal year close**:
 On the **Ledger calendar** page:
 
 -  Optional: Each fiscal period for the fiscal year that's being closed can be set to **On hold** to prevent new transactions from being entered. When adjusting entries are identified, the on-hold periods can be reopened so that adjusting entries can be posted, even if the year-end close process has already been run.
--  Optional: If **Budget control** is being used, the purchase order year-end process should be completed before closing the period or putting it **On hold**. All non-closed budget-controlled documents must be closed or moved to a new year before the year-end can be completed. For information about how purchase orders are processed at the year-end, see [Purchase order year-end process](purchase-order-year-end-process.md).
-
-On the **Ledger calendar** page:
-
-- Optional: Each fiscal period for the fiscal year that is being closed can be set to **On hold** to prevent new transactions from being entered. When adjusting entries are identified, the on-hold periods can be reopened so that adjusting entries can be posted, even if the year-end close process has already been run.
+-  Optional: If **Budget control** is being used, the purchase order year-end process should be completed before closing the period or putting it **On hold**. All non-closed budget-controlled documents must be closed or moved to a new year before the year-end can be completed. For information about how purchase orders are processed at the year-end, see [Purchase order year-end process](../budgeting/purchase-order-year-end-process.md).
 
 On the **Year-end close template setup** page:
 
