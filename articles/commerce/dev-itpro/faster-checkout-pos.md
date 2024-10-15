@@ -25,14 +25,14 @@ The Dynamics 365 Commerce team is modernizing the POS user interface (UI) by tra
 
 Before you can transition to the upgraded payment flow experience, the following prerequisites must be met:
 
-- You must be running Commerce version 10.0.40.
+- You must be running Commerce version 10.0.40 or higher
 - You must enable the **Enable unified payments experience in POS** feature in the Commerce headquarters **Feature management** workspace (**System administration** \> **Workspaces** \> **Feature management**). 
 
 ## Feature availability
 
-The **Enabled unified payments experience in POS** Feature management flag is available for use in Commerce version 10.0.40. The changes apply the modernized UI experience for the **Credit Card**, **Cash**, and **Check** payment methods. The payment method options window also reflects updated payment method symbols for all payment methods on the menu.
+The modernized UI experience for the **Credit Card**, **Cash**, and **Check** payment methods is available starting **10.0.40**, where as the new experience for **Currency**, **Customer Account**, **Payment Voucher**, **Gift Card** payment methods has been added with **10.0.42**. The payment method options dialog also reflects updated payment method symbols for all payment methods on the menu.
 
-Updates for the **Currency**, **Customer Account**, **Payment Voucher**, **Gift Card**, and **Loyalty Card** payment methods will be rolled out in a future release. 
+Updates for **Loyalty Card** payment methods will be rolled out in a future release. 
 
 > [!WARNING]
 > The ability to customize the new React components will be delivered in a future Commerce feature. Currently, the availability date hasn't been set. For any customization that you do on the payment user flow screens, Commerce must release React extensibility capabilities. Otherwise, you can't continue to customize actions on those screens.
