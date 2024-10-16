@@ -274,15 +274,16 @@ Here's an example response to that query:
 
 ## Purchase agreement validation entities
 
-In the scenario of creating and amending purchase contracts, Supply Chain Management provides data entities designed for validating purchase agreements. These validation entities contain the same list of fields as regular entities but don't persist data in the database. Instead, they perform validation and return the result either in the `ValidationResult` field or as an exception. The following table outlines the data entities available for validating purchase agreements.
+In the scenario of creating and amending purchase contracts, Supply Chain Management provides data entities designed for validating purchase agreements. These validation entities contain the same list of fields as regular entities but don't persist data in the database. Instead, they perform validation and return the result as an exception if a validation error occurs. The following table outlines the data entities available for validating purchase agreements.
 
-| Entity |Target entity | Public name (OData) | Company specific | Direction |
-| --- | --- | --- | --- | --- |
-| CLM integration validation purchase agreements | `CLMIntegrationValidationPurchaseAgreementHeaderEntity` | `CLMIntegrationValidationPurchaseAgreements` | Yes | CLM -\> Supply Chain Management |
-| CLM integration validation purchase agreement lines | `CLMIntegrationValidationPurchaseAgreementLineEntity` | `CLMIntegrationValidationPurchaseAgreementLines` | Yes | CLM -\> Supply Chain Management |
+| Entity |Target entity | Public name (OData) | Operations validated | Company specific | Direction |
+| --- | --- | --- | --- | --- | --- |
+| CLM integration validation purchase agreements | `CLMIntegrationValidationPurchaseAgreementHeaderEntity` | `CLMIntegrationValidationPurchaseAgreements` | Update | Yes | CLM -\> Supply Chain Management |
+| CLM integration validate insert purchase agreement lines | `CLMIntegrationValidateInsertPurchaseAgreementLineEntity` | `CLMIntegrationValidateInsertPurchaseAgreementLines` | Insert | Yes | CLM -\> Supply Chain Management |
+| CLM integration update, delete validation purchase agreement lines | `CLMIntegrationValidateUpdateDeletePurchaseAgreementLineEntity` | `CLMIntegrationValidateUpdateDeletePurchaseAgreementLines` | Update, Delete | Yes | CLM -\> Supply Chain Management |
 
 > [!NOTE]
-> The entity `CLMIntegrationValidationPurchaseAgreementHeaderEntity` can only perform validation for update operation, whereas `CLMIntegrationValidationPurchaseAgreementLineEntity` can handle validation for insert, update, and delete operations.
+> Each validation entity can only validate specific database operations, as outlined in the table. The purchase agreement insert validation entity isn't supported, so data can only be validated by persisting it through the regular `CLMIntegrationPurchaseAgreementHeaderEntity` entity.
 
 ## Create shareable, secured deep links
 
