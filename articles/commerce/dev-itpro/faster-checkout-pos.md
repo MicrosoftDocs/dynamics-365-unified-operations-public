@@ -1,8 +1,8 @@
 ---
-title: Check out faster with optimized payment flows
+title: Check out faster with optimized payment flows (preview)
 description: This article provides an overview of modernizing updates to point of sale (POS) payment flows in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 06/13/2024
+ms.date: 10/25/2024
 ms.topic: overview
 audience: Application User
 ms.reviewer: v-chrgriffin
@@ -13,9 +13,10 @@ ms.custom:
   - bap-template
 ---
 
-# Check out faster with optimized payment flows
+# Check out faster with optimized payment flows (preview)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This article provides an overview of modernizing updates to point of sale (POS) payment flows in Microsoft Dynamics 365 Commerce.
 
@@ -25,17 +26,17 @@ The Dynamics 365 Commerce team is modernizing the POS user interface (UI) by tra
 
 Before you can transition to the upgraded payment flow experience, the following prerequisites must be met:
 
-- You must be running Commerce version 10.0.40 or higher
+- You must be running Commerce version 10.0.40 or later.
 - You must enable the **Enable unified payments experience in POS** feature in the Commerce headquarters **Feature management** workspace (**System administration** \> **Workspaces** \> **Feature management**). 
 
 ## Feature availability
 
-The modernized UI experience for the **Credit Card**, **Cash**, and **Check** payment methods is available starting **10.0.40**, where as the new experience for **Currency**, **Customer Account**, **Payment Voucher**, **Gift Card** payment methods has been added with **10.0.42**. The payment method options dialog also reflects updated payment method symbols for all payment methods on the menu. 
+The modernized UI experience for the **Credit Card**, **Cash**, and **Check** payment methods is available starting with Commerce version 10.0.40, while the new experience for the **Currency**, **Customer Account**, **Payment Voucher**, and **Gift Card** payment methods are available starting with Commerce version 10.0.42. The payment method options dialog shows updated payment method symbols for all payment methods on the menu. 
 
-Updates for **Loyalty Card** payment methods will be rolled out in a future release. 
+Updates for the **Loyalty Card** payment method will be rolled out in a future release. 
 
-> [!Note]
-> In case you have customized the payment experience for any of the following payment methods : **Currency**, **Customer Account**, **Payment Voucher**, **Gift Card** and you would like to continue using that user experience, then you do not need to disable the feature flag, rather you can contact Microsoft support to disable the new user experiences for these individual payment methods.
+> [!NOTE]
+> If you have customized the payment experiences for the **Currency**, **Customer Account**, **Payment Voucher**, and **Gift Card** payment methods and you would like to continue using those user experiences, you don't need to disable the feature flag. Instead you should contact Microsoft support to disable the new user experiences for these individual payment methods.
 
 > [!WARNING]
 > The ability to customize the new React components will be delivered in a future Commerce feature. Currently, the availability date hasn't been set. For any customization that you do on the payment user flow screens, Commerce must release React extensibility capabilities. Otherwise, you can't continue to customize actions on those screens.
