@@ -11,89 +11,98 @@ ms.custom:
   - bap-template
 ---
 
-# Work with integrated CLM (preview)
+# Work with integrated CLM features (preview)
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until 10.0.43 GA  -->
 
-When the feature is enabled, selective changes become visible in the Microsoft Dynamics 365 Supply Chain Management user interface.
+This article describes how adding contract lifecycle management (CLM) integration affects the way Microsoft Dynamics 365 Supply Chain Management works and where you can find CLM elements in the Supply Chain Management user interface.
 
 > [!NOTE]
-> These changes only come to live when the feature is configured with an external contract lifecycle management (CLM) solution
+> These changes only take effect when the CLM integration feature is configured for and connected to a CLM solution. For details about how to enable the feature and set up the integration, see [Enable and configure CLM integration](developer/clm-enable.md).
 
-Navigate to **Procurement and Sourcing** \> **Setup**\> **CLM integration**. This section includes the two forms: Contract types and Contract management parameters.
+## View and work with all integrated contracts
 
-Contract types represent the types of external contracts, which depending upon the type of integration, are either integrated seamlessly with or accessible from the Microsoft Dynamics 365 Supply Chain Management user interface. The types created here should be mapped against the external contract types against which to integrate.
+<!-- KFM: I rewrote and expanded this. Please confirm -->
 
-Contract management parameters represent the configuration of the connection parameters for the external contract management system.
+To work with integrated contracts in Supply Chain Management, go to **Procurement and Sourcing** \> **Contracts** \> **All contracts**. From here, you can do the following actions:
 
-CLM integration covers tasks typically performed by a system administrator or system integrator.
+- View all of the contracts that were created using your CLM system. Each of these contracts is synced from the external system and is read-only here. For each contract, you can see the current status, important dates, and other information.
+- Use the **Filter** field and/or the filtering and sorting controls available from the column headers to find a specific contract.
+- To view, edit, or amend a listed contract, select it in the grid and then select **View**, **Edit**, or **Amend** on the **Contract** tab of the Action Pane. Each of these commands opens the selected contract in your external CLM system. The availability of these options depends on how you have [configured the integration](developer/clm-enable.md).
+- To add a new contract, select **New** on the **Contract** tab of the Action Pane to open the contract-creation page in your external CLM system. The availability of this option depends on how you have [configured the integration](developer/clm-enable.md).
+- To view all purchase agreements associated with a specific contract, select the contract in the grid and then select **Purchase agreement** on the **Contract** tab of the Action Pane.
 
-Navigate to **Procurement and Sourcing** \> **Contracts**. This section includes the one form: All contracts. The All contracts form allows users such as purchasing agents and purchasing managers to see selective data for contracts integrated with the external CLM. In the case where the external contract is integrated to a Microsoft Dynamics 365 Supply Chain Management purchase agreement, this will be visible from this form.
+## View contracts associated with a selected vendor
 
-The form is intended to represent the central repository for any user, purchasing agent, purchase manager, sourcing manager and the like working in the Microsoft Dynamics 365 Supply Chain Management user interface to gain a quick overview of which external contracts exist with a given supplier party, the current status, while allowing to view selective detailed contractual information and perform selective contractual tasks depending on the configuration with the external contract lifecycle management (CLM) solution.
+While you're working with a vendor record, you can easily see which contracts are associated with that vendor. To view the contracts associated with a specific vendor, follow these steps.
 
-All contracts can be accessed for all suppliers, or for a specific supplier context. For the latter, navigate to **Procurement and Sourcing** \> **Vendors** \> **All vendors**. In the header ribbon for tab Procurement, Group Agreements, click menu button *Contracts*. This will open the All contracts within the specific vendor context, only including contracts for the particular vendor selected.
-
-> [!NOTE]
-> Multi-select vendor and access contracts aren't supported.
+1. Go to **Procurement and Sourcing** \> **Vendors** \> **All vendors**
+1. Find and select the vendor you want to work with. You must select just one vendor at a time.
+1. On the Action Pane, open the **Procurement** tab and, from the **Agreements** group, select **Contracts**.
+1. The **All contracts** page opens, filtered to only show contracts from your selected vendor. The previous section describes how to work with this page.
 
 ## Purchase agreements with external CLM integration
 
-When the feature is enabled and configured to integrate with purchase agreements, then selective changes are applied to the purchase agreement. Contract ID and Contract status columns are added to the *Purchase agreements* list page, allowing the user to easily identify if the purchase agreement exists within the context of an external contract.
+When you're using CLM integration, purchase agreements work slightly differently when compared to a non-integrated Supply Chain Management system.
 
-The most important change is *Purchase agreement ownership type*. Purchase agreement ownership type is visible in the purchase agreements details form, on the header section on the **Contract** FastTab. A purchase agreement can only reference one external contract.
+To view your purchase agreements, go to **Procurement and sourcing** \> **Purchase agreements** \> **Purchase agreements**. The following differences apply here when you're using CLM integration:
 
-In the scenario where the purchase agreement is created directly in Microsoft Dynamics 365 Supply Chain Management, the ownership type is *Supply Chain Management*.
+- The **Purchase agreements** list page now includes the following new columns:
+    - **Contract ID** – Identifies the externally managed contract associated with each purchase agreement (if any). This value is generated by and synced from the external CLM system. A purchase agreement can only reference one external contract.
+    - **Contract status** – Shows the contract status fo contracts that exist within the context of an external contract. <!-- KFM: I don't see this here. Remove? -->
 
-In the scenario, where the purchase agreement is created from a contract in an external CLM, the ownership type will be *External contract management*. When ownership type is *External contract management*, then the **Contract ID** and **Status** from the external CLM will be visible in the **Contract** FastTab. This will available the user working with the purchase agreement in the Microsoft Dynamics 365 Supply Chain Management UI to without additional navigation quickly identify external contract ID and the status.
+- The **Purchase agreements** details page **Header** tab now includes a new **Contract** FastTab with the following fields:
+    - **Contract ID** – Identifies the externally managed contract associated with the selected purchase agreement (if any). This value is generated by and synced from the external CLM system.
+    - **Status** – Shows the status of contracts that exist within the context of an external contract. This value is synced from the external CLM system.
+    - **Purchase agreement ownership type** – This value identifies the owner of the purchase agreement. It can have the following values:
+        - *Supply Chain Management* – Indicates that the purchase agreement was created directly in Supply Chain Management, and all aspects of these purchase agreements must be managed using Supply Chain Managed instead of your external CLM system.
+        - *External contract management* – Indicates that the purchase agreement was created by a contract in an external CLM, so processing and editing options are limited in Supply Chain Management. Purchase agreements of this ownership type show values for **Contract ID** and **Status** on the **Contract** FastTab. All edits and lifecycle changes are managed by the external CLM system, which automatically syncs updated values back to Supply Chain Management.
 
-## Importance of ownership type
+- Approval workflows aren't applied for purchase agreements where **Purchase agreement ownership type** is *External contract management*. Instead, the external CLM system is responsible for updating the purchase agreement **Status** from *On hold* to *Effective*, bypassing any workflow configuration in Supply Chain Management. This process is used because, in an integrated solution, the contract is approved by all relevant parties, signed, and executed in the external CLM system, resulting in updating the status of the purchase agreement. Any additional approval workflows applied in Supply Chain Management would be disruptive to the approval process already conducted in the external CLM system.
 
-Ownership type controls which data can be modified and added on the purchase agreement through the Microsoft Dynamics 365 Supply Chain Management user interface and the kind of purchase agreement processing supported in Microsoft Dynamics 365 Supply Chain Management.
+- When a purchase agreement owned by an external CLM system is selected, the following actions are disabled on the **Purchase agreement** tab of the Action Pane on both the list and details pages:
+    - **Intercompany: Generate sales agreement**
+    - **Intercompany: View sales agreement**
+    - **Maintain: Activities**
+    - **Generate: Confirmation and proforma confirmation**
+    - **Generate: Proforma confirmation**
 
-When ownership type is different from Supply Chain Management, the purchase agreement is controlled by another party and process and edit possibilities are very limited in the Microsoft Dynamics 365 Supply Chain Management UI. All edits and lifecycle changes are controlled and done within the external CLM owning the contract. Once executed in the external CLM, these changes update the purchase agreement in Microsoft Dynamics 365 Supply Chain Management accordingly.
+- You can't delete purchase agreements owned by an external CLM system.
 
-## Field ownership
+- When a purchase agreement owned by an external CLM system is selected, most of the fields on the **Header** tab of the **Purchase agreements** details page are read-only. *Exceptions* to this rule include:
+    - **Vendor reference**
+    - **External document reference**
+    - **Line matching policy**
+    - **Delivery address**
+    - **Payment specification**
+    - **Charges group**
+    - **Mode of delivery**
+    - **Buyer group**
+    - **Pool**
+    - **Shipping carrier**
+    - **Carrier service**
+    - **Carrier group**
+    - **Mode**
+    - **Route plan**
+    - **Transportation template ID**
+    - All settings on the **Financial dimensions** FastTab
 
-When a purchase agreement is owned by an external CLM, the following header actions are not supported:
 
-- Intercompany: Generate sales agreement
-- Intercompany: View sales agreement
-- Maintain: Activities
-- Generate: Confirmation and proforma confirmation
-- Generate: Proforma confirmation
-- Delete purchase agreement
+<!-- KFM: I'm not sure what this is for. Didn't we already list this above?
 
-When a purchase agreement is owned by an external CLM, only the following header updates are supported within the Microsoft Dynamics 365 Supply Chain Management UI:
+    When a purchase agreement is owned by an external CLM, only the following line updates are supported within the Supply Chain Management UI:
+    
+    - All financial dimensions
 
-- Vendor reference
-- External document reference
-- Line matching policy
-- Delivery address
-- Payment specification
-- Charges group
-- Mode of delivery
-- Buyer group
-- Pool
-- Shipping carrier
-- Carrier service
-- Carrier group
-- Mode
-- Route plan
-- Transportation template ID
-- All financial dimensions
+--> 
 
-Other header fields have values set through the integration from the external CLM and are not editable from within the Microsoft Dynamics 365 Supply Chain Management UI.
+## Known limitations
 
-If an approval workflow is configured then such a workflow configuration will not be applied when ownership is *External contract management*. The purchase agreement status will be updated from on hold to effective from the integration bypassing any workflow configuration. Reason for this is, that the contract has been approved by all relevant parties, signed and executed in the external CLM resulting in updating the status of the purchase agreement from on hold to effective. Any additional approval workflow applied in Microsoft Dynamics 365 Supply Chain Management would be disruptive to the approval process already conducted in the external CLM.
+The following known limitations apply when you're using CLM integration:
 
-When a purchase agreement is owned by an external CLM, only the following line updates are supported within the Microsoft Dynamics 365 Supply Chain Management UI:
+- Intercompany purchase and sales agreement aren't supported.
+- Purchase agreement approval workflow isn't supported. <!--KFM: I think we already covered this...  -->
 
-- All financial dimensions
-
-Known limitations:
-
-- Intercompany purchase and sales agreement are not supported.
-- Purchase agreement approval workflow is not supported.
+<!-- KFM: Should we mention anything about NDAs? -->

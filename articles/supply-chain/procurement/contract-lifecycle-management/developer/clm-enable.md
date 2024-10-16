@@ -82,3 +82,15 @@ To inspect the current status of the connection between Supply Chain Management 
     - *Ready* – The integration is ready for use.
 
 The connection status is based on information submitted by your CLM system through the Supply Chain Management API. Learn more about how to set up your CLM system to return a value for this status indicator in [Establish a connection from a CLM system to Supply Chain Management](clm-establish-connection.md).
+
+## Configure contract types
+
+Contract types represent the types of external contracts that, depending upon the type of integration you are setting up, are either integrated seamlessly with or are accessible from the Supply Chain Management user interface. The types created here should be mapped against the external contract types that you are integrating with. <!--KFM: It isn't clear what these are for or how they will be used. More info is needed. -->
+
+To set up the contract types that you will integrate for CLM, follow these steps.
+
+1. Go to **Procurement and Sourcing** \> **Setup** \> **CLM integration** \> **Contract types**.
+1. Use button on the Action Pane to add or delete contract types as needed. To edit existing values, select any cell and then select the pencil icon within that cell to turn on edit mode.
+1. For each row in the grid, make the following settings:
+    - **Name** – Enter a name for the contract type.
+    - **Description** – Enter a short description of the contract type.
