@@ -1347,6 +1347,14 @@ items:
               href: ../fin-ops/data-entities/notes-integration.md
             - name: Mapping reference
               href: data-entities/dual-write/mapping-reference.md
+        - name: Dual-write Async (preview)
+          items:
+            - name: Overview and set up 
+              href: data-entities/dual-write/dual-write-async.md
+            - name: Centralized error management
+              href: data-entities/dual-write/dual-write-async-error.md
+            - name: Dual-write Async FAQ  
+              href: data-entities/dual-write/dual-write-async-faq.md        
         - name: Support for dual-write
           items:
             - name: Considerations for initial synchronization
@@ -1385,14 +1393,6 @@ items:
                 href: data-entities/dual-write/dual-write-error-codes.md
               - name: Error codes for the table map health check
                 href: data-entities/dual-write/table-map-health-check.md   
-            - name: Dual-write Async (preview)
-              items:
-              - name: Overview and set up 
-                href: data-entities/dual-write/dual-write-async.md
-              - name: Centralized error management
-                href: data-entities/dual-write/dual-write-async-error.md
-              - name: Dual-write Async FAQ  
-                href: data-entities/dual-write/dual-write-async-faq.md
       - name: Virtual entities
         items:
         - name: Virtual entities overview
