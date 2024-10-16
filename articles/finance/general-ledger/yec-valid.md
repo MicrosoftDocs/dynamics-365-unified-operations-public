@@ -20,8 +20,8 @@ ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 The **Year-end close validation** functionality introduces key checks to enhance accuracy and performance during the close process. It detects potential issues such as
 degenerate dimensions, which can slow performance if over one million unique ledger combinations are identified. Additionally, it flags out-of-balance situations caused by
 settled ledger transactions, overflow amounts exceeding, and unrounded amounts exceeding two decimal places. For each issue, the system provides guidance to optimize
-performance, including enabling specific features or running a consistency check to resolve errors. To access the #Year-end close validation# function go to General ledger|
-Period close| Year end close, then select #Validate year-end close#
+performance, including enabling specific features or running a consistency check to resolve errors. To access the **Year-end close validation** function go to **General ledger|
+Period close| Year end close**, then select #Validate year-end close#
 
 **Degenerate dimensions**
 The year-end close validation logic detects degenerate dimensions that could impact the close process and will trigger the following message: "Over one million unique ledger
