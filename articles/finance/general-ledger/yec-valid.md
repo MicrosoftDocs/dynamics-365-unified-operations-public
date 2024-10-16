@@ -15,25 +15,26 @@ ms.dyn365.ops.version: AX 7.0.0
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ---
 
-[!include [banner](../includes/banner.md)]
-This article describes how to validate the general ledger year-end close process.
-
-
 # Year-end close validation
 
-The **Year-end close validation** functionality introduces key checks to improve accuracy and performance during the close process. It detects issues such as:
- - Degenerate dimensions - can slow performance if over one million unique ledger combinations are identified
- - Out-of-balance entries - caused by settled ledger transactions
- - overflow amounts exceeding 16 digits 
- - unrounded amounts exceeding two decimal places
+[!include [banner](../includes/banner.md)]
 
-For each issue, guidance is provided to optimize performance. Enabling specific features or running a consistency check will resolve errors. To access **Year-end close validation**, go to **General ledger /> Period close /> Year end close**, then select **Validate year-end close**.
+
+This article describes how to validate the general ledger year-end close process.
+
+The **Year-end close validation** improves accuracy and performance during the year-end close process. It detects issues such as:
+ - Degenerate dimensions that can slow performance if over one million unique ledger combinations are identified
+ - Out-of-balance entries caused by settled ledger transactions
+ - Overflow amounts exceeding 16 digits 
+ - Unrounded amounts exceeding two decimal places
+
+For each issue, guidance is provided to optimize performance. Enabling specific features or running a consistency check resolves the errors. To access **Year-end close validation**, go to **General ledger /> Period close /> Year end close**, then select **Validate year-end close**.
 
 
 
 ## Degenerate dimensions
-The year-end close validation logic detects degenerate dimensions that impacts the close process. The following message is diplayed: 
-**Over one million unique ledger dimension combinations have been identified, which could affect year-end close performance. Refer to official documentation for guidance. To prevent performance issues, avoid using **Close all** for degenerate dimensions. Select **Close single**.
+The year-end close validation logic detects degenerate dimensions that impacts the close process. The following message is displayed: 
+**Over one million unique ledger dimension combinations have been identified and could affect year-end close performance. Refer to official documentation for guidance. To prevent performance issues, avoid using **Close all** for degenerate dimensions. Select **Close single**.
 
 ## Out of balance
 The year-end close validation logic identifies out-of-balance issues due to the enabled awareness between ledger settlement and the year-end close feature. Only settled ledger transactions from the fiscal year being closed are excluded from the opening balance and can cause debits and credits to be out of balance. The following message displayed: 
