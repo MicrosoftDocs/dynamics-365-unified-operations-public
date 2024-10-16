@@ -28,26 +28,27 @@ The **Year-end close validation** improves accuracy and performance during the y
  - Overflow amounts exceeding 16 digits 
  - Unrounded amounts exceeding two decimal places
 
-For each issue, guidance is provided to optimize performance. Enabling specific features or running a consistency check resolves the errors. To access **Year-end close validation**, go to **General ledger /> Period close /> Year end close**, then select **Validate year-end close**.
+For each issue, guidance is provided to optimize performance, or enable specific features or running a consistency check to resolve errors. 
+Go to **General ledger /> Period close /> Year end close**, select **Validate year-end close**.
 
+## Validate year-end close errors
 
-
-## Degenerate dimensions
+### Degenerate dimensions
 The year-end close validation logic detects degenerate dimensions that impacts the close process. The following message is displayed: 
 **Over one million unique ledger dimension combinations have been identified and could affect year-end close performance. Refer to official documentation for guidance. To prevent performance issues, avoid using **Close all** for degenerate dimensions. Select **Close single**.
 
-## Out of balance
+### Out of balance
 The year-end close validation logic identifies out-of-balance issues due to the enabled awareness between ledger settlement and the year-end close feature. Only settled ledger transactions from the fiscal year being closed are excluded from the opening balance and can cause debits and credits to be out of balance. The following message displayed: 
 **There are out-of-balance vouchers that result in an out-of-balance error during the year-end close process. You can run a consistency check and use the 'Fix error' option to resolve the issue**.
 
-## Transactions overflow flow
+### Transactions overflow flow
 When transactions have overflow amounts, the year-end close validation displays the following error: 
 **Transactions have overflow amounts with 16 digits or more including decimal places, which may cause an out-of-balance error during the year-end close process. To address this, enable Optimize year-end close and reverse the original documents causing overflows, or manually adjust the balances.**
 
-## Transactions have unrounded amounts
+### Transactions have unrounded amounts
 When transactions have unrounded amounts, the year-end close validation displays the following error message: 
 **%1 transactions have unrounded amounts, exceeding two decimal places, which may cause an out-of-balance error during the year-end close process. To resolve this, enable the Optimize year-end close feature, or run a consistency check and use the 'Fix error' option.**
 
 
-
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
