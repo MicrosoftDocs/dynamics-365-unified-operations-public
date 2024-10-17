@@ -24,8 +24,6 @@ This article describes how adding contract lifecycle management (CLM) integratio
 
 ## View and work with all integrated contracts
 
-<!-- KFM: I rewrote and expanded this. Please confirm -->
-
 To work with integrated contracts in Supply Chain Management, go to **Procurement and Sourcing** \> **Contracts** \> **All contracts**. From here, you can do the following actions:
 
 - View a list all of the contracts that were created using your CLM system. Each of these contracts is synced from the external system and is read-only here. For each contract, you can see the current status, important dates, and other information.
@@ -89,19 +87,6 @@ To view your purchase agreements, go to **Procurement and sourcing** \> **Purcha
     - **Transportation template ID**
     - All settings on the **Financial dimensions** FastTab
 
-<!-- KFM: I'm not sure what this is for. Didn't we already list this above?
-
-    When a purchase agreement is owned by an external CLM, only the following line updates are supported within the Supply Chain Management UI:
-    
-    - All financial dimensions
-
--->
-
 ## Known limitations
 
-The following known limitations apply when you're using CLM integration:
-
-- Intercompany purchase and sales agreement aren't supported.
-- Purchase agreement approval workflow isn't supported. <!--KFM: I think we already covered this...  -->
-
-<!-- KFM: Should we mention anything about NDAs? -->
+CLM integration isn't supported for intercompany purchase and sales agreements.

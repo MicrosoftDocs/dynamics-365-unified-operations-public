@@ -37,8 +37,8 @@ Set up the connection to your external CLM system by following these steps.
 1. Open the **Connection** tab.
 1. Expand the **General** FastTab and make the following settings:
     - **Connection name** – Enter a name to identify the CLM system.
-    - **Base URL** – Enter the host name of the external CLM service. <!--KFM: We should explain a bit more about how these two URLs are different and/or used. -->
-    - **External navigation base URL** – Enter the host name for external navigation. If this parameter isn't provided, the system uses the **Base URL** instead.
+    - **Base URL** – Enter the host name of the external CLM service.
+    - **External navigation base URL** – Some CLM providers may require an extra URL, but most don't. Leave this value blank unless instructed otherwise by your CLM provider or Microsoft Support.
 1. On the Action Pane, select **Save**.
 
 ## Set up external navigation links
@@ -83,14 +83,8 @@ To inspect the current status of the connection between Supply Chain Management 
 
 The connection status is based on information submitted by your CLM system through the Supply Chain Management API. Learn more about how to set up your CLM system to return a value for this status indicator in [Establish a connection from a CLM system to Supply Chain Management](clm-establish-connection.md).
 
-## Configure contract types
+## View and edit contract types
 
-Contract types represent the types of external contracts that, depending upon the type of integration you are setting up, are either integrated seamlessly with or are accessible from the Supply Chain Management user interface. The types created here should be mapped against the external contract types that you are integrating with. <!--KFM: It isn't clear what these are for or how they will be used. More info is needed. -->
+*Contract types* represent the types of external contracts (such as purchase or non-disclosure contracts) that are either integrated with or are accessible from Supply Chain Management. These values are used to help describe each contract listed on the [**All contracts** page](../clm-use.md). In most cases, these values are exclusively submitted and maintained by your CLM provider.
 
-To set up the contract types that you will integrate for CLM, follow these steps.
-
-1. Go to **Procurement and Sourcing** \> **Setup** \> **CLM integration** \> **Contract types**.
-1. Use button on the Action Pane to add or delete contract types as needed. To edit existing values, select any cell and then select the pencil icon within that cell to turn on edit mode.
-1. For each row in the grid, make the following settings:
-    - **Name** – Enter a name for the contract type.
-    - **Description** – Enter a short description of the contract type.
+To view the names and descriptions of the various types of contracts that are integrated with your CLM system, go to **Procurement and Sourcing** \> **Setup** \> **CLM integration** \> **Contract types**. Although admins can add, edit, and remove values here, usually you shouldn't do so unless instructed by your CLM provider or Microsoft Support.

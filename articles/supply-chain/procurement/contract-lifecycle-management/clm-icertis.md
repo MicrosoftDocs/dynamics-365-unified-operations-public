@@ -24,7 +24,7 @@ This article describes *Icertis for Microsoft Dynamics 365 Supply Chain Manageme
 - Benefits
 - Set up
 
-This article provides an overview of the integrated solution. For complete instructions on how to set up and use Icertis for Microsoft Dynamics 365 Supply Chain Management, go to <!-- KFM: Link to AppSource or Icertis docs, or maybe https://appsource.microsoft.com/en-US/marketplace/apps?search=icertis-->
+This article provides an overview of the integrated solution. For complete instructions on how to set up and use Icertis for Microsoft Dynamics 365 Supply Chain Management, go to [Link](.). <!-- KFM: Link to AppSource or Icertis docs, or maybe https://appsource.microsoft.com/en-US/marketplace/apps?search=icertis-->
 
 ## Capabilities
 
@@ -39,7 +39,7 @@ This integration supports the following workflows:
 - **Risk Assessment Copilot** – Risk Assessment Copilot significantly accelerates the contract review process while reducing risk by using artificial intelligence to compare contract terms to a company's predefined risk parameters based on the contract type.
 - **Pre-seeded information** – Icertis for Microsoft Dynamics 365 Supply Chain Management comes with extensive pre-seeded attributes and entities that let you derive the benefits of the integration with little implementation time.
 
-To learn more about Icertis for Microsoft Dynamics 365 Supply Chain Management, go to <!-- KFM (ICI AppSource link.) -->.
+To learn more about Icertis for Microsoft Dynamics 365 Supply Chain Management, go to [Link](.). <!-- KFM (ICI AppSource link.) -->
 
 ## Key Features
 
@@ -95,8 +95,6 @@ Icertis for Microsoft Dynamics 365 Supply Chain Management offers options to upd
 
 All of the mentioned workflows are made possible by integrating master data that stores the less frequently changing data and business information. The master data entity is based on attributes and rules, and can be reused for the various organizations that you work with.
 
-<!-- KFM: There was an illustration here that didn't seem useful, so I removed it. -->
-
 ### Comprehensive pre-seeded information for seamless integration
 
 For the application and integration to work seamlessly, Icertis for Microsoft Dynamics 365 Supply Chain Management comes with extensive pre-seeded attributes and entities that let users derive the benefits of the integration with minimal implementation time.
@@ -135,16 +133,12 @@ Setting up Icertis for Microsoft Dynamics 365 Supply Chain Management requires t
 1. Purchase a subscription for Icertis for Microsoft Dynamics 365 Supply Chain Management.
 1. Once the subscription is confirmed, the designated administrator received an email from Icertis with instructions for downloading and deploying the package.
 1. Deploy the package using the Lifecycle Service.
-1. Configure single sign-on (optional) <!-- KFM: I assumed "SSO" here and in the diagram is "single sign on". -->
+1. Configure single sign-on (optional).
 1. Configure the Icertis Contract Intelligence with attributes, templates, clauses, master data, rules, and other useful metadata to integrate the two products seamlessly.  
-
-The following image summarizes the setup process.
-
-:::image type="content" source="media/icertis-setup.png" alt-text="Icertis setup diagram" lightbox="media/icertis-setup.png":::
 
 For detailed instructions on how to deploy the package and set up an instance, follow these steps:
 
-1. Go to <!-- KFM: Add link to Icertis Help Center. -->.
+1. Go to [Link](.)<!-- KFM: Add link to Icertis Help Center. -->.
 1. Sign in to your Icertis Contract Intelligence (ICI) instance.
 1. Select the **Help** icon.
 1. Follow the instructions provided.
