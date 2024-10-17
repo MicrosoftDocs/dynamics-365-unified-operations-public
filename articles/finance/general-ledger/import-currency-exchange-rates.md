@@ -4,7 +4,7 @@ description: Learn about the requirements for importing foreign exchange referen
 author: RyanCCarlson2 
 ms.author: rcarlson
 ms.topic: article
-ms.date: 07/29/2024
+ms.date: 10/17/2024
 ms.reviewer: twheeloc
 audience: Application User 
 ms.search.region: Global
@@ -18,7 +18,7 @@ ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 
 [!include [banner](../includes/banner.md)]
 
-If a legal entity has received invoices in foreign currencies, the foreign currency must be converted into the local currency. This means that up-to-date exchange rates for different currencies are required. This article provides an overview of the settings and processing required to import foreign exchange reference rates that are published by exchange rate providers, such as OANDA Rates®,  the European Central Bank, and the Central Bank of Russia. 
+If a legal entity has received invoices in foreign currencies, the foreign currency must be converted into the local currency. This means that up-to-date exchange rates for different currencies are required. This article provides an overview of the settings and processing required to import foreign exchange reference rates that are published by exchange rate providers, such as OANDA Rates®,  the European Central Bank, the Central Bank of Russia, and the Central Bank of the Republic of Türkiye. 
 >[!NOTE]
 >Beginning in Dynamics 365 Finance version 10.0.41, a new rate provider option, **OANDA Central Banks**, is available with an upgraded license key from OANDA. 
 
