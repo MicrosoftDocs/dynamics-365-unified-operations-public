@@ -1,6 +1,6 @@
 ---
-title: Seamless Sync with the Supply Chain Management pricing engine
-description: Learn about how to use the pricing engine in Microsoft Dynamics 365 Supply Chain Management from Microsoft Dynamics 365 Sales with seamless integration.
+title: Sync with the Supply Chain Management pricing engine
+description: Learn how to use the pricing engine in Microsoft Dynamics 365 Supply Chain Management from Microsoft Dynamics 365 Sales.
 author: henrikan
 ms.author: Henrikan
 ms.topic: article
@@ -11,7 +11,7 @@ ms.search.region: global
 ms.search.validFrom: 2024-01-10
 ---
 
-# Seamless sync with the Supply Chain Management pricing engine
+# Sync with the Supply Chain Management pricing engine
 
 [!include [banner](../../../finance/includes/banner.md)]
 
