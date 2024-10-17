@@ -22,12 +22,14 @@ This article describes how to Install, update, or uninstall the various componen
 
 To use Traceability, your system must meet the following requirements:
 
-- Your environment is Tier 2 environment or a Unified Developer Experience environment for finance and operations apps which has no Traceability add-in installed.
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.40 (build 10.0.1935.80) or higher.
+- Your Supply Chain Management installation must be running on one of the following types of environments:
+    - Tier-2 environment
+    - A Unified Developer Experience (UDE) environment copied from a tier-2 environment that didn't have Traceability installed. Copying an environment with Traceability already installed isn't supported.
 
 ## Turn on features in Supply Chain Management
 
-To use Traceability together with Dynamics 365 Supply Chain Management, you must enable one or both of the following features in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+To use Traceability together with Dynamics 365 Supply Chain Management, you must enable the following features in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - *Tracked components* – Enables component tracking in Supply Chain Management.
 - *(Preview) Traceability* – Integrates Traceability with the component tracking features in Supply Chain Management.
