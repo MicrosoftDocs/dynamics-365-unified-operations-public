@@ -33,7 +33,7 @@ Some of the functionality that's referred to in this article might not yet be av
 | Colombia | Available | Available |
 | Guatemala | Available | Available |
 | Paraguay | Available  | Available |
-| Uruguay | Available | 2Available |
+| Uruguay | Available | Available |
 | Bolivia | Not planned | 2024 wave 2 |
 | Dominican Republic | Not planned | 2024 wave 2 |
 | Ecuador | Not planned | 2024 wave 2 |
