@@ -29,6 +29,17 @@ Detailed information about objects in finance and operations apps can be found i
 
 ## Feature deprecation effective October 2024
 
+### User Authentication Changes in Finance and Operations: Transition to Object ID and Tenant ID 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Finance and Operations (F&O) is transitioning to a more robust user identification method using Object ID and Tenant ID from Microsoft Entra ID. We are continuing our effort to modernize and streamline user authentication in Finance and Operations. This migration to Object ID and Tenant ID is part of the ongoing deprecation of legacy authentication mechanisms, following recent changes such as the removal of support for [unregistered Microsoft Account and external Entra ID users](/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#support-for-unregistered-microsoft-account-and-external-microsoft-entra-id-users/) and the deprecation of [non-Entra ID external user sign-in](/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-platform-updates#non-microsoft-entra-id-external-user-sign-in/).<br><br>This update aligns with Microsoft Entra's goal of providing **secure adaptive access** by using strong authentication and conditional access policies to protect data without compromising user experience. The changes also align with Microsoft's focus on **unified identity management** to centralize and streamline access for both cloud and on-premises environments. This ensures consistent security policies and better visibility and control for managing all organizational identities.  |
+|   Replaced by another feature?     | Yes. The new authentication approach utilizes Object ID and Tenant ID, which are recommended for enhanced reliability and consistency in user management. This transition is part of broader efforts to standardize identity management across the platform. |
+|   What do you need to do?          | Step 1. Verify User Accounts in Microsoft Entra ID: <br><br> <li>Ensure that all users in your environment are properly configured with their Microsoft Entra presence and that their Object ID is correctly assigned as the user telemetry ID.</li><li>Follow the detailed guidance on [how to import users from Microsoft Entra ID](/dynamics365/fin-ops-core/fin-ops/sysadmin/create-new-users#import-new-users-from-microsoft-entra-id/).<br><br>Step 2. Review and Fix Non-Compliant Users: <br><br> <li> Identify users who are listed as non-compliant on the Invalid Users Page. These users may have incorrect or missing Entra ID settings, which will lead to sign-in issues once the rollout is complete.</li><li> Use the steps provided in the [Invalid Users Documentation](/dynamics365/fin-ops-core/fin-ops/sysadmin/invalid-users/) to proactively repair these users and ensure their settings are compliant.  |
+| Product areas affected             | Finance and operations apps |
+| Deployment option                  | All |
+| Status                             | Support for the existing user authentication method is being deprecated, with the transition to Object ID and Tenant ID. Rollout has started, with full deprecation expected by 30th October 2024. |
+
 ### Disable storage account key access to finance and operations managed storage accounts
 
 | &nbsp;  | &nbsp; |
