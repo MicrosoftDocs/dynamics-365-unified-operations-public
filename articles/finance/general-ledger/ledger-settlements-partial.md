@@ -83,27 +83,27 @@ With the **Awareness between ledger settlement and year-end close** and the **Pa
 
  ## View settlements/Ledger settlements history
 
-To view the Settle Id and history of settlements select a transaction with a Settle Id and then View settlements in the action bar. The Ledger settlement history page shows each pair of debit and credit transactions settled using the Settlement ID created for each pair. 
+To view the Settle Id and history of settlements select a transaction with a Settle Id and then **View settlements** in the action bar. The Ledger settlement history page shows each pair of debit and credit transactions settled using the Settlement ID created for each pair. 
 
-Use the Ledger settlement history page to reverse any transactions that are already settled. Select a transaction and the corresponding transaction with the same Settlement ID will be selected automatically. Select Reverse marked transactions, choose the reversal date options and enter a comment if needed. Then select Reverse. If a transaction has been settled and then reversed and has a status of partially settled or Not settled, the History column has a checkmark to show there is history. Select View settlements to view all settlement history. Select the Show reversals checkbox to see all reversed settlements. 
+Use the Ledger settlement history page to reverse any transactions that are already settled. Select a transaction and the corresponding transaction with the same Settlement ID will be selected automatically. Select **Reverse marked transactions**, choose the reversal date options and enter a comment if needed. Then select Reverse. If a transaction has been settled and then reversed and has a status of partially settled or Not settled, the History column has a checkmark to show there is history. Select **View settlements** to view all settlement history. Select the Show reversals checkbox to see all reversed settlements. 
 
 The User ID column provides an audit trail of the user ID that did the settlement or the reversal transaction.
 
 ## Ledger settlements inquiry
 
-Use the Ledger settlements inquiry page, found under General ledger > Inquiries and reports > Ledger settlements inquiry, to view ledger settled transactions. The columns Remaining amount in transaction currency, Remaining amount in accounting currency, and Remaining amount in reporting currency have been added to the grid and display values with partially settled transactions. 
+Use the Ledger settlements inquiry page, found under **General ledger > Inquiries and reports > Ledger settlements inquiry**, to view ledger settled transactions. The columns Remaining amount in transaction currency, Remaining amount in accounting currency, and Remaining amount in reporting currency have been added to the grid and display values with partially settled transactions. 
 
-If the Settlement ID column displays Multiple, select the View settlements button to go to the Ledger settlement history page to view full settlement history. 
+If the **Settlement ID** column displays Multiple, select the **View settlements** button to go to the Ledger settlement history page to view full settlement history. 
 
 ## Subledger to ledger auto settlement
 
-The Subledger to ledger auto settlement option is found in General Ledger > Ledger setup > General ledger parameters > Ledger settlements. To enable it the following options need to be set to Yes: Enable advanced awareness options, Enable post currency realized gains and losses for ledger settlements, and Partial ledger settlements. The Subledger to ledger auto settlement can be toggled on (Yes) and off (No) when needed. 
+The **Subledger to ledger auto settlement** option is found in **General Ledger > Ledger setup > General ledger parameters > Ledger settlements**. To enable it the following options need to be set to **Yes**: Enable advanced awareness options, Enable post currency realized gains/losses for ledger settlements, and Partial ledger settlements. The Subledger to ledger auto settlement can be toggled on (Yes) and off (No) when needed. 
 
-When set to Yes, the Subledger to ledger auto settlement will automatically settle the accounts payable and accounts receivable accounts during the settlement process in the subledger. This option needs to be set to Yes to automatically settle but the accounts receivable and accounts payable accounts do not need to be manually added to the list of accounts. If the accounts are added to the list of accounts, then they can be viewed in the Ledger settlements page. Transactions that are automatically settled can then be viewed. If needed, you can manually settle any transactions that use the accounts payable or accounts receivable accounts. 
+When set to **Yes**, the **Subledger to ledger auto settlement** will automatically settle the accounts payable and accounts receivable accounts during the settlement process in the subledger. This option needs to be set to Yes to automatically settle but the accounts receivable and accounts payable accounts do not need to be manually added to the list of accounts. If the accounts are added to the list of accounts, then they can be viewed in the Ledger settlements page. Transactions that are automatically settled can then be viewed. If needed, you can manually settle any transactions that use the accounts payable or accounts receivable accounts. 
 
 Adding other subledger accounts to the list of accounts will not automatically settle those accounts. If added, then those subledger accounts can be manually settled in Ledger settlements. 
 
-Existing transactions in the accounts payable and accounts receivable accounts will not be automatically settled if the related subledger transactions were settled before setting this option to Yes.
+Existing transactions in the accounts payable and accounts receivable accounts will not be automatically settled if the related subledger transactions were settled before setting **Subledger to ledger auto settlement** to **Yes**.
 
 
 
