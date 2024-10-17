@@ -17,8 +17,6 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until 10.0.43 GA  -->
 
-<!-- KFM: It looks like the official name of this product is "Icertis for Microsoft Dynamics 365 SCM", but we don't like to use "SCM". Not sure if we can/should change it. -->
-
 This article describes *Icertis for Microsoft Dynamics 365 Supply Chain Management*, which is a full-featured, third-party contract lifecycle management (CLM) solution that uses the [CLM integration capabilities](clm-overview.md) of Microsoft Dynamics 365 Supply Chain Management. This article summarizes the following aspects of the integrated solution:
 
 - Capabilities
