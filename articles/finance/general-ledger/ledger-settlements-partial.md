@@ -64,11 +64,22 @@ With the **Awareness between ledger settlement and year-end close** and the **Pa
  - History, Amount in reporting currency, Remaining amount in transaction currency, Remaining amount in accounting currency, Remaining amount in reporting currency
  - When a debit transaction is partially settled with a credit transaction, or vice versa, the status of the fully settled transaction will be Settled. If partially settled, the status is Partially settled and the remaining amount columns will display the amount left to settle. One debit transaction can be settled with multiple credit transactions, or vice versa. For example, Voucher GJ00105 is a debit for 1000 USD. Voucher GJ00210 for 700 USD and GJ00236 for 300 USD are marked for settlement with the debit.
  
- table 1
+
+| Status      | Voucher  | Date        | Settle Id  | Date settled | Debit   | Credit  | Amount remaining | | | |
+|-------------|----------|-------------|------------|--------------|---------|---------|------------------|-|-|-|
+| Not settled | GJ00105  | 10/01/2024  |            |              | 1000.00 |         |                  | | | |
+| Not settled | GJ00210  | 10/15/2024  |            |              |         | 700.00  |                  | | | |
+| Not settled | GJ00236  | 11/05/2024  |            |              |         | 400.00  |                  | | | |
+
 
  Once settled, the Settle Id column displays Multiple for the debit transaction because more than one credit was settled. Each pair of debit/credit transactions has their own Settle Id and is listed in the Settle Id column. The second credit transaction for 400.00 is not fully settled so the status is Partially settled and the remaining amount is updated to 100.00.
 
- table 2
+ 
+| Status      | Voucher  | Date        | Settle Id  | Date settled | Debit   | Credit  | Amount remaining | | | |
+|-------------|----------|-------------|------------|--------------|---------|---------|------------------|-|-|-|
+| Not settled | GJ00105  | 10/01/2024  |  Multiple  | 11/05/2024   | 1000.00 |         |  0.00            | | | |
+| Not settled | GJ00210  | 10/15/2024  |  012264    | 11/05/2024   |         | 700.00  |  0.00            | | | |
+| Not settled | GJ00236  | 11/05/2024  |  012265    |              |         | 400.00  |  100.00          | | | |
 
  ## View settlements/Ledger settlements history
 
