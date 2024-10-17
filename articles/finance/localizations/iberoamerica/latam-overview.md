@@ -4,7 +4,7 @@ description: Access an overview of functionality specific to Latin American, inc
 author: EvgenyPopovMBS
 ms.author: evgenypopov 
 ms.topic: overview
-ms.date: 06/17/2024
+ms.date: 10/19/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak  
 ---
@@ -30,10 +30,10 @@ Some of the functionality that's referred to in this article might not yet be av
 | Costa Rica | Available | Available |
 | Nicaragua | Available | Available |
 | Panama | Available | Available |
-| Colombia | 2023 wave 2 | 2024 wave 1 |
-| Guatemala | 2023 wave 2 | 2024 wave 1 |
-| Paraguay | 2023 wave 2  | 2024 wave 1 |
-| Uruguay | 2023 wave 2 | 2024 wave 1 |
+| Colombia | Available | Available |
+| Guatemala | Available | Available |
+| Paraguay | Available  | Available |
+| Uruguay | Available | 2Available |
 | Bolivia | Not planned | 2024 wave 2 |
 | Dominican Republic | Not planned | 2024 wave 2 |
 | Ecuador | Not planned | 2024 wave 2 |
