@@ -1274,6 +1274,8 @@
                   href: general-ledger/optimize-year-end-close.md
                 - name: Year-end close
                   href: general-ledger/year-end-close.md
+                - name: Validate year-end close
+                  href: general-ledger/yec-valid.md
                 - name: Close the fiscal year
                   href: general-ledger/tasks/close-fiscal-year.md
                 - name: Mass financial period close
