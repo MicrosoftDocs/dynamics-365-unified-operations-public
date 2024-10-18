@@ -47,7 +47,7 @@ This section contains a table that lists the enhancements that are included in t
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-|General ledger |Accounting source explorer updated advanced filtering. |Enabling this feature provides an advanced filtering option for the Accounting Source Explorer, including a convenient date range selection. On the parameter tab, it will be possible to work with different types of date intervals. Additionally, the advanced filter will be available, which is a standard filter capable of filtering fields such as ledger account, business unit, cost center, department, etc. |Feature management |
+|General ledger |Accounting source explorer updated advanced filtering. |Enabling this feature provides an advanced filtering option for the Accounting source explorer, including a convenient date range selection, with different types of date intervals available. Additionally, an advanced filter will be available, which is capable of filtering fields such as ledger account, business unit, cost center, department, etc. |Feature management |
 
 
 ## Features turned on by default in this release
