@@ -80,9 +80,10 @@ Therefore, the following changes occur when this feature is enabled:
 - For sales orders in Sales, the **Recalculate** option has no effect.
 
 > [!NOTE]
-> When you create or update a sales quotation or sales order in Sales, select **Price quote** (for quotations) or **Price order** (for orders) to ensure that all the relevant calculations are done in Supply Chain Management and then synced back to Sales. This step isn't required for quotations and sales orders that are created in Supply Chain Management, provided that the *Calculate sales totals* batch job is set up to run on a regular schedule.
-> [!NOTE]
-> In Supply Chain Management version 10.0.42, an improved approach to synchronizing line details and pricing is available which extends Suply Chain Management as price master. In this approach, when a sales quotation or sales order and line is created and updated in the  Dynamics 365 Sales UI, line details, monetary line values, and totals are immediately synched to Dynamics 365 Sales from Supply Chain Management not requiring to select **Price quote** (for quotations) or **Price order** (for orders). For details about how to enable this approach, see [Seamlesss sync  with the Supply Chain Management pricing engine](New md file to as part of this PR).
+>
+> - When you create or update a sales quotation or sales order in Sales, select **Price quote** (for quotations) or **Price order** (for orders) to ensure that all the relevant calculations are done in Supply Chain Management and then synced back to Sales. This step isn't required for quotations and sales orders that are created in Supply Chain Management, provided that the *Calculate sales totals* batch job is set up to run on a regular schedule.
+>
+> - In Supply Chain Management version 10.0.42, an improved approach to synchronizing line details and pricing is available which extends Supply Chain Management as price master. In this approach, when a sales quotation or sales order and line is created and updated in the  Dynamics 365 Sales UI, line details, monetary line values, and totals are immediately synched to Dynamics 365 Sales from Supply Chain Management not requiring to select **Price quote** (for quotations) or **Price order** (for orders). For details about how to enable this approach, see [Seamlesss sync  with the Supply Chain Management pricing engine](New md file to as part of this PR).
 
 ## <a name="push-to-sales"></a>Calculate and push prices, discounts, and totals from Supply Chain Management to Sales
 
