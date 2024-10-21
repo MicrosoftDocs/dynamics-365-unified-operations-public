@@ -4,7 +4,7 @@ description: Learn how to price group priorities work and how to use them.
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: kamaybac
-ms.search.form: XXXX
+ms.search.form:
 ms.topic: how-to
 ms.date: 10/25/2024
 ms.custom: 

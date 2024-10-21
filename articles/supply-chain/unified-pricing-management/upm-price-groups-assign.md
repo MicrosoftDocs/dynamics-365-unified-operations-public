@@ -4,7 +4,7 @@ description: Lear now to assign price groups for trade agreements, adjustments, 
 author: sherry-zheng
 ms.author: chuzheng
 ms.reviewer: kamaybac
-ms.search.form: XXXX
+ms.search.form:
 ms.topic: how-to
 ms.date: 10/25/2024
 ms.custom: 

@@ -4,7 +4,7 @@ description: Learn how price structures work in Pricing management, including ou
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: overview
-ms.date: 04/03/2023
+ms.date: 10/25/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: GUPPricingTree, GUPPriceComponentCodeSetup
