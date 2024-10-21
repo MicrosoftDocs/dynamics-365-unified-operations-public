@@ -6,7 +6,7 @@ ms.author: gned
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 06/25/2024
+ms.date: 10/21/2024
 ms.reviewer: johnmichalak 
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -54,7 +54,7 @@ We recommend that you take the time to select an appropriate project category fo
 You can add specific entities to an import or export job or select a template to apply. Templates fill a job with a list of entities. The **Apply template** option is available after you give the job a name and save the job.
 
 ### Set the data format for the job
-When you select an entity, you must select the format of the data that's exported or imported. You define formats by using the **Data sources setup** tile. A source data format is a combination of **Type**, **File format**, **Row delimiter** and **Column delimiter**. There are other, but these attributes are the key attributes to understand. The following table lists the valid combinations.
+When you select an entity, you must select the format of the data that's exported or imported. You define formats by using the **Data sources setup** tile. A source data format is a combination of **Type**, **File format**, **Row delimiter**, and **Column delimiter**. There are other, but these attributes are the key attributes to understand. The following table lists the valid combinations.
 
 | File Format            | Row/Column delimiter                       | XML Style                 |
 |------------------------|--------------------------------------------|---------------------------|
@@ -87,7 +87,7 @@ Entities can be sequenced in a data template, or in import and export jobs. When
 #### Execution units, levels, and sequences
 The execution unit, level in the execution unit, and sequence of an entity help control the order that the data is exported or imported in.
 
-- Entities in different execution units are processed in parallel.
+- In each execution unit, entities are processed in parallel.
 - In each execution unit, entities are processed in parallel if they have the same level.
 - In each level, entities are processed according to their sequence number in that level.
 - After one level is processed, the next level is processed.
@@ -154,9 +154,9 @@ Each job run provides the following details:
 
 Execution details show the state of each data entity that the job processed. Therefore, you can quickly find the following information:
 
-- Which entities were processed.
+- The entities that were processed.
 - For an entity, how many records were successfully processed, and how many failed.
-- The staging records for each entity.
+- The staged records for each entity.
 
 You can download the staging data in a file for export jobs, or you can download it as a package for import and export jobs.
 
@@ -171,8 +171,11 @@ To speed up the import of data, parallel processing of importing a file can be e
 4. Set the following fields to configure parallel import for an entity:
 
     - In the **Entity** field, select the entity. If the entity field is empty, the empty value is used as default setting for all subsequent imports, if the entity supports parallel import.
-    - In the **Import threshold record count** field, enter the threshold record count for import. This determines the record count to be processed by a thread. If a file has 10K records, a record count of 2500 with a task count of four means each thread processes 2500 records.
+    - In the **Import threshold record count** field, enter the threshold record count for import. This determines the record count to be processed by a thread. If a file has 10K records, a record count of 2,500 with a task count of four means each thread processes 2,500 records.
     - In the **Import task count** field, enter the count of import tasks. The count must not exceed the max batch threads allocated for batch processing in **System administration \>Server configuration**.
+
+> [!NOTE]
+> Adding too many parallel tasks causes the underlying infrastructure to use the resource capacity at 100% and impacta the environment performance and other operations. It's suggested you understand the resource capacity of the environment and consumption based on the parallel import tasks configured and limit the number of tasks.
 
 ## Job history cleanup 
 By default, job history entries and related staging table data that are older than 90 days are automatically deleted. The job history cleanup functionality in data management can be used to configure periodic cleanup of the execution history with a lower retention period than this default. This functionality replaces the previous staging table cleanup functionality, which is now deprecated. The following tables are cleaned up by the cleanup process.
