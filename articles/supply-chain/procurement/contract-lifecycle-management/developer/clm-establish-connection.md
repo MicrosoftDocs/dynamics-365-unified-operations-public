@@ -1,6 +1,6 @@
 ---
 title: Establish a connection from a CLM system to Supply Chain Management (preview)
-description: This article describes how a third-party contract lifecycle management provider can simplify the process of establishing connections by efficiently configuring contract management parameters and initiating the connection.
+description: Learn how a third-party contract lifecycle management (CLM) provider can simplify the process of establishing connections by efficiently configuring contract management parameters and initiating the connection.
 author: Henrikan
 ms.author: henrikan
 ms.reviewer: kamaybac
@@ -15,51 +15,51 @@ ms.custom:
 
 [!include [banner](../../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.43 GA  -->
+<!-- KFM: Preview until 10.0.43 GA -->
 
-This article describes how a third-party contract lifecycle management (CLM) provider can simplify the process of establishing connections by efficiently configuring the contract management parameters in Supply Chain Management and initiating the connection. The process can be initiated from the CLM system and seamlessly transfers all the required configuration settings to the Supply Chain Management system.
+This article explains how a third-party contract lifecycle management (CLM) provider can simplify the process of establishing connections by efficiently configuring the contract management parameters in Microsoft Dynamics 365 Supply Chain Management and initiating the connection. The process can be initiated from the CLM system. It seamlessly transfers all the required configuration settings to the Supply Chain Management system.
 
-Most of the code examples in this article show how to fetch configuration info, but a CLM provider can also use these same APIs to POST configuration settings, which enables the provider to remotely configure the connection for the benefit of their Supply Chain Management customers.
+Most of the code examples in this article show how to *fetch* configuration information. However, a CLM provider can also use the same APIs to *post* configuration settings. Therefore, the provider can remotely configure the connection for their Supply Chain Management customers.
 
 ## Access the data integration APIs
 
-For information about which data integration APIs are available, how to enable change tracking, and how to authenticate with Supply Chain Management so your CLM system can access that data entities described in this article, see [Data integration APIs](clm-data-integration-apis.md).
+Learn which data integration APIs are available in [Data integration APIs](clm-data-integration-apis.md). There, you can also learn how to enable change tracking, and how to authenticate with Supply Chain Management so that your CLM system can access the data entities that are described in this article.
 
 ## Available data entities
 
-To streamline the connection process, Supply Chain Management offers built-in data entities that enable external CLM systems to automatically configure parameters and establish the connection. The following table lists the data entities.
+To streamline the connection process, Supply Chain Management offers built-in data entities that enable external CLM systems to automatically configure parameters and establish the connection. The following table describes the available data entities.
 
-| Entity | Target entity | Public name (OData) | Usage | Direction |
-| --- | --- | --- | --- | --- |
-| CLM integration service instance | `CLMIntegrationServiceInstanceEntity` | `CLMIntegrationServiceInstances` | Set up contract management parameters. | CLM -\> Supply Chain Management |
-| CLM integration external navigation links | `CLMIntegrationExternalNavigationLinkEntity` | `CLMIntegrationExternalNavigationLinks` | Set up external navigation links. | CLM -\> Supply Chain Management |
-| CLM integration external navigation link key-value pairs | `CLMIntegrationExternalNavigationLinkKeyValueEntity` | `CLMIntegrationExternalNavigationLinkKeyValues` | Set up external navigation link query strings. | CLM -\> Supply Chain Management |
+| Entity | Target entity | Public name (OData) | Purpose | Direction |
+|---|---|---|---|---|
+| CLM integration service instance | `CLMIntegrationServiceInstanceEntity` | `CLMIntegrationServiceInstances` | Set up contract management parameters. | CLM &rarr; Supply Chain Management |
+| CLM integration external navigation links | `CLMIntegrationExternalNavigationLinkEntity` | `CLMIntegrationExternalNavigationLinks` | Set up external navigation links. | CLM &rarr; Supply Chain Management |
+| CLM integration external navigation link key-value pairs | `CLMIntegrationExternalNavigationLinkKeyValueEntity` | `CLMIntegrationExternalNavigationLinkKeyValues` | Set up query strings for external navigation links. | CLM &rarr; Supply Chain Management |
 
-The following diagram illustrates the integration.
+The following illustration shows the integration.
 
-:::image type="content" source="../media/establishment.png" alt-text="Integration diagram." lightbox="../media/establishment.png":::
+:::image type="content" source="../media/establishment.png" alt-text="Diagram that shows the integration." lightbox="../media/establishment.png":::
 
 > [!IMPORTANT]
-> Your CLM system must update relevant status fields in the *CLM integration service instance* entity to reflect the **Connection status** indicator.
+> Your CLM system must update the relevant status fields in the *CLM integration service instance* entity so that they reflect the **Connection status** indicator.
 
-### The CLM integration service instance entity
+### CLM integration service instance entity
 
-The *CLM integration service instance* entity provides information about the CLM integration service instance which contains contract management parameters.
+The *CLM integration service instance* entity provides information about the instance of the CLM integration service that contains contract management parameters.
 
 | Physical name | Property | Type | Description |
 |---|---|---|---|
-| `ID` (Entity key) | ID | Int | Parameter key (always be set to 0) |
-| `InstanceName` | Connection name | String | Connection name |
-| `BaseURL` | Base URL | String | Base URL |
-| `ExternalNavigationBaseURL` | External navigation base URL | String | External navigation base URL |
+| `ID` (entity key) | ID | Int | The parameter key. The value should always be set to `0`. |
+| `InstanceName` | Connection name | String | The connection name. |
+| `BaseURL` | Base URL | String | The base URL. |
+| `ExternalNavigationBaseURL` | External navigation base URL | String | The external navigation base URL. |
 
-Here's an example request query for the CLM integration service instance entity:
+The following example shows a request query for the *CLM integration service instance* entity.
 
 ```http
 GET https://[baseURI]/data/CLMIntegrationServiceInstances
 ```
 
-Here's an example response to that query:
+The following example shows a response to the preceding query.
 
 ```json
 {
@@ -72,23 +72,23 @@ Here's an example response to that query:
 
 ### The CLM integration external navigation links entity
 
-The *CLM integration external navigation links* entity provides information about the external navigation links.
+The *CLM integration external navigation links* entity provides information about external navigation links.
 
 | Physical name | Property | Type | Description |
 |---|---|---|---|
-| `ServiceInstanceName` | Connection name | String | Provide instance name. |
-| `NavigationType` (Entity key) | Navigation type | Enum | Values: `ViewContract`, `EditContract`, `NewContract`, `NewContractFromPurchAgreement`, `AmendContract`. |
-| `NavigationName` | Navigation name | String | Navigation name |
-| `RelativeURL` | Relative URL | String | Relative URL |
-| `Action` | Action | Enum | Values: `OpenInNewTab`, `OpenInExistingTab` |
+| `ServiceInstanceName` | Connection name | String | The instance name. |
+| `NavigationType` (entity key) | Navigation type | Enum | The navigation type. The possible values are `ViewContract`, `EditContract`, `NewContract`, `NewContractFromPurchAgreement`, and `AmendContract`. |
+| `NavigationName` | Navigation name | String | The navigation name. |
+| `RelativeURL` | Relative URL | String | The relative URL. |
+| `Action` | Action | Enum | The action that is performed. The possible values are `OpenInNewTab` and `OpenInExistingTab`. |
 
-Here's an example request query for the *CLM integration external navigation links* entity:
+The following example shows a request query for the *CLM integration external navigation links* entity.
 
 ```http
 GET https://[baseURI]/data/CLMIntegrationExternalNavigationLinks
 ```
 
-Here's an example response to that query:
+The following example shows a response to the preceding query.
 
 ```json
 {
@@ -102,22 +102,22 @@ Here's an example response to that query:
 
 ### The CLM integration external navigation link key-value pairs entity
 
-The *CLM integration external navigation link key-value pairs* entity provides information about the external navigation link key-value pairs.
+The *CLM integration external navigation link key-value pairs* entity provides information about the key-value pairs for external navigation links.
 
 | Physical name | Property | Type | Description |
 |---|---|---|---|
-| `NavigationType` (Entity key) | Navigation type | Enum | Values: `ViewContract`, `EditContract`, `NewContract`, `NewContractFromPurchAgreement`, `AmendContract`. |
-| `KeyValueType` (Entity key) | Key-value type | Enum | Values: `QueryString`, `Header`. The `QueryString` is the only allowed value (`Header` isn't supported). |
-| `Key` (Entity key) | Key | String | Key |
-| `Value` | Value | String | Value |
+| `NavigationType` (entity key) | Navigation type | Enum | The navigation type. The possible values are `ViewContract`, `EditContract`, `NewContract`, `NewContractFromPurchAgreement`, and `AmendContract`. |
+| `KeyValueType` (entity key) | Key-value type | Enum | The key-value type. `QueryString` is the only allowed value. (The other possible value, `Header`, isn't supported.) |
+| `Key` (entity key) | Key | String | The key. |
+| `Value` | Value | String | The value. |
 
-Here's an example request query for the *CLM integration external navigation link key-value pairs* entity:
+The following example shows a request query for the *CLM integration external navigation link key-value pairs* entity.
 
 ```http
 GET https://[baseURI]/data/CLMIntegrationExternalNavigationLinkKeyValues
 ```
 
-Here's an example response to that query:
+The following example shows a response to the preceding query.
 
 ```json
 {
@@ -132,18 +132,21 @@ Here's an example response to that query:
 
 To clearly reflect the connection status, the CLM system must use the *CLM integration external navigation links* entity to update the following two statuses:
 
-- `CLMIntegrationServiceInstanceEntity.EstablishmentStatus` – Indicates whether a connection is established so the external CLM system can communicate with the Supply Chain Management. Report the connection status using one of the following values:
-    - `NotStarted` – Connection establishment has't started yet.
-    - `Success` – The connection is established.
-    - `Error` – The connection failed to be established.
-- `CLMIntegrationServiceInstanceEntity.ConfigurationStatus` – Indicates whether external configuration links have been configured. Report the configuration status using one of the following values:
-    - `NotStarted` – Configuration of the external navigation links hasn't started yet.
-    - `Success` – Configuration of the external navigation links has succeeded.
-    - `Error` – Configuration of the external navigation links has failed.
+- `CLMIntegrationServiceInstanceEntity.EstablishmentStatus` – This status indicates whether a connection was established, so that the external CLM system can communicate with Supply Chain Management. The following values are used to report the connection status:
 
-Administrators can read this status on the **Contract management parameters** page in Supply Chain Management. Learn more in [Enable and configure CLM integration (preview)](clm-enable.md).
+    - `NotStarted` – Establishment of a connection hasn't yet begun.
+    - `Success` – A connection was successfully established.
+    - `Error` – Establishment of a connection failed.
 
-Here's an example request query for updating the status on the *CLM integration service instance* entity:
+- `CLMIntegrationServiceInstanceEntity.ConfigurationStatus` – This status indicates whether external navigation links were configured. The following values are used to report the configuration status:
+
+    - `NotStarted` – Configuration of external navigation links hasn't yet begun.
+    - `Success` – External navigation links were successfully configured.
+    - `Error` – Configuration of external navigation links failed.
+
+Administrators can read status information on the **Contract management parameters** page in Supply Chain Management. Learn more in [Enable and configure CLM integration](clm-enable.md).
+
+The following example shows a request query to update the status on the *CLM integration service instance* entity.
 
 ```http
 PATCH https://[baseURI]/data/CLMIntegrationServiceInstances(ID=0)
