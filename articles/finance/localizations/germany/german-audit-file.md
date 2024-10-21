@@ -4,13 +4,12 @@ description: Learn about how to generate a German audit file with a step-by-step
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 10/21/2024
 ms.custom:
+  - bap-template
 ms.reviewer: johnmichalak   
-audience: Application User 
 ms.search.region: Germany
 ms.search.validFrom: 2016-06-30
-ms.search.form:
 ms.dyn365.ops.version: Version 7.0.0
 ---
 
@@ -34,9 +33,9 @@ This procedure shows how to generate the German audit file. This procedure was c
 10. Click OK.
 
 > [!NOTE]
-> As of version 70 of **Data export model**, the following make replacement of some special symbols in text being written in the column 11 (BUCHUNGSTEXT) of the Sachkontobuchungen output file are implemented:
-> - Any sequence of symbols or individual symbols Carriage Return (ASCII code 13) and Line Feed (ASCII code 10) are replaced with space (ASCII code 32)
-> - Double quotes symbol (ASCII code 34) is replaced with single quotes symbol (ASCII code 39)
+> As of version 70 of **Data export model**, the following replacements are implemented for some of the special symbols in text that is being written in column 11 (BUCHUNGSTEXT) of the Sachkontobuchungen output file:
+> - Any sequence of symbols or individual symbols Carriage Return (ASCII code 13) and Line Feed (ASCII code 10) are replaced with space (ASCII code 32).
+> - The double quotes symbol (ASCII code 34) is replaced with the single quote symbol (ASCII code 39).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
