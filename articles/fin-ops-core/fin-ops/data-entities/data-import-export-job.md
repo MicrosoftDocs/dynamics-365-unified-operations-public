@@ -6,7 +6,7 @@ ms.author: gned
 ms.topic: overview
 ms.custom: 
   - bap-template
-ms.date: 06/25/2024
+ms.date: 10/21/2024
 ms.reviewer: johnmichalak 
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
@@ -173,6 +173,9 @@ To speed up the import of data, parallel processing of importing a file can be e
     - In the **Entity** field, select the entity. If the entity field is empty, the empty value is used as default setting for all subsequent imports, if the entity supports parallel import.
     - In the **Import threshold record count** field, enter the threshold record count for import. This determines the record count to be processed by a thread. If a file has 10K records, a record count of 2500 with a task count of four means each thread processes 2500 records.
     - In the **Import task count** field, enter the count of import tasks. The count must not exceed the max batch threads allocated for batch processing in **System administration \>Server configuration**.
+
+> [!NOTE]
+> Adding too many parallel tasks causes the underlying infrastructure to use the resource capacity at 100% and impacta the environment performance and other operations. It's suggested you understand the resource capacity of the environment and consumption based on the parallel import tasks configured and limit the number of tasks.
 
 ## Job history cleanup 
 By default, job history entries and related staging table data that are older than 90 days are automatically deleted. The job history cleanup functionality in data management can be used to configure periodic cleanup of the execution history with a lower retention period than this default. This functionality replaces the previous staging table cleanup functionality, which is now deprecated. The following tables are cleaned up by the cleanup process.
