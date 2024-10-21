@@ -26,7 +26,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.41 release
 
-### Pricing management module
+### Pricing management module (preview)
 
 | &nbsp;  | &nbsp;  |
 |---|---|
