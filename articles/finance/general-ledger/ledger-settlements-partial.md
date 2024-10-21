@@ -60,9 +60,11 @@ With the **Awareness between ledger settlement and year-end close** and the **Pa
  - The Status filter now has a Partially settled status and you can select more than one status at a time. The status options are All, Not settled, Settled and Partially settled with Not settled being the default.
  - The Accounting currency and Reporting currency totals display at the bottom of the page.
  - The Reverse button has moved to the Ledger settlements history page
- - With partial ledger settlements debits do not need to equal credits to ledger settle so some transactions will have a remaining balance if they are partially settled. Settlement history is now tracked for all transactions, so the following columns have been added to the grid to track this information.
- - History, Amount in reporting currency, Remaining amount in transaction currency, Remaining amount in accounting currency, Remaining amount in reporting currency
- - When a debit transaction is partially settled with a credit transaction, or vice versa, the status of the fully settled transaction will be Settled. If partially settled, the status is Partially settled and the remaining amount columns will display the amount left to settle. One debit transaction can be settled with multiple credit transactions, or vice versa. For example, Voucher GJ00105 is a debit for 1000 USD. Voucher GJ00210 for 700 USD and GJ00236 for 300 USD are marked for settlement with the debit.
+
+With partial ledger settlements debits do not need to equal credits to ledger settle so some transactions will have a remaining balance if they are partially settled. Settlement history is now tracked for all transactions, so the following columns have been added to the grid to track this information.
+- History, Amount in reporting currency, Remaining amount in transaction currency, Remaining amount in accounting currency, Remaining amount in reporting currency
+
+When a debit transaction is partially settled with a credit transaction, or vice versa, the status of the fully settled transaction will be Settled. If partially settled, the status is Partially settled and the remaining amount columns will display the amount left to settle. One debit transaction can be settled with multiple credit transactions, or vice versa. For example, Voucher GJ00105 is a debit for 1000 USD. Voucher GJ00210 for 700 USD and GJ00236 for 300 USD are marked for settlement with the debit.
  
 
 | Status      | Voucher  | Date        | Settle Id  | Date settled | Debit   | Credit  | Amount remaining | | | |
@@ -72,7 +74,7 @@ With the **Awareness between ledger settlement and year-end close** and the **Pa
 | Not settled | GJ00236  | 11/05/2024  |            |              |         | 400.00  |                  | | | |
 
 
- Once settled, the Settle Id column displays Multiple for the debit transaction because more than one credit was settled. Each pair of debit/credit transactions has their own Settle Id and is listed in the Settle Id column. The second credit transaction for 400.00 is not fully settled so the status is Partially settled and the remaining amount is updated to 100.00.
+Once settled, the Settle Id column displays Multiple for the debit transaction because more than one credit was settled. Each pair of debit/credit transactions has their own Settle Id and is listed in the Settle Id column. The second credit transaction for 400.00 is not fully settled so the status is Partially settled and the remaining amount is updated to 100.00.
 
  
 | Status      | Voucher  | Date        | Settle Id  | Date settled | Debit   | Credit  | Amount remaining | | | |
