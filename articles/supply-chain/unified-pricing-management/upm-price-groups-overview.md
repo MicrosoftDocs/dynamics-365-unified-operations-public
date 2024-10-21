@@ -81,8 +81,6 @@ In Unified pricing management price groups provide the following functions:
 
 ## Benefits of price groups
 
-<!--KFM: This text was stuck at the end of your document, where it didn't fit, so I put it here. I'm not sure it belongs at all... -->
-
  Price groups offer the following benefits:
 
 - **Flexible** – Price groups provide a flexible way to manage pricing strategies across various attributes, such as customer segments, channels, order types, and more, allowing businesses to adapt quickly without altering individual trade agreements or discount setups. Currently, we support pricing header attributes, with plans to extend support to pricing line attributes in the future.
