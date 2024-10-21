@@ -20,7 +20,7 @@ This article provides an overview of the Unified pricing management module for M
 
 For a video overview of the Unified pricing management module, see [Pricing Management Overview in Dynamics 365 Supply Chain Management - TechTalk](https://www.youtube.com/watch?v=Pc9nBoHN5m0).
 
-Increasingly, traditional business-to-business (B2B) companies are considering converting to omnichannel sales and selling directly to customers, so that they can gain more control over pricing and margins. The omnichannel transformation causes massive changes to pricing models and rules. Pricing management helps B2B companies that are converting to omnichannel pricing by enabling attribute-based pricing rules that use attributes and data from customers, products, and order segments.
+Increasingly, traditional business-to-business (B2B) companies are considering converting to omnichannel sales and selling directly to customers, so that they can gain more control over pricing and margins. The omnichannel transformation causes massive changes to pricing models and rules. Unified pricing management helps B2B companies that are converting to omnichannel pricing by enabling attribute-based pricing rules that use attributes and data from customers, products, and order segments.
 
 Here are some of the main challenges:
 
@@ -44,16 +44,16 @@ Supply Chain Management uses the [Commerce Scale Unit (CSU) Core](../../commerce
 
 ## Pricing components
 
-Pricing management applies the following key elements to determine pricing:
+Unified pricing management applies the following key elements to determine pricing:
 
 - **Price attributes** – Price attributes give you a flexible way to define your pricing factors. They use information about customers, products, sales order headers, and sales order lines. Because price attributes work with the customer and product attribute framework, they're highly configurable. Extension points are available so that you can extend them.
 - **Price component codes** – Price component codes group together price attributes. They represent the building blocks of your price structure. When you create a price and discount rule record, you'll also assign that record to a price component code.
 - **Price structures** – Price structures help you understand the sequence of your price component codes. You can use one price structure for each company, or you can use a different price structure for each order attribute in a company. Price determination logic that's embedded in the price structure ensures that the base price can be determined. The base price is the price before any price adjustments are made (*Base price* + *Price adjustment* = *Selling price*).
 - **Concurrency modes** – Concurrency modes control how the final price is calculated in situations where multiple pricing rules are associated with the same price component code.
 
-The following illustration shows many of the elements that affect Pricing management price calculations.
+The following illustration shows many of the elements that affect Unified pricing management price calculations.
 
-[<img src="media/pricing-management-elements.png" alt="Elements that affect Pricing management price calculations." title="Elements that affect Pricing management price calculations" width="720" />](media/pricing-management-elements.png#lightbox)
+[<img src="media/pricing-management-elements.png" alt="Elements that affect Unified pricing management price calculations." title="Elements that affect Unified pricing management price calculations" width="720" />](media/pricing-management-elements.png#lightbox)
 
 ## Architecture overview
 

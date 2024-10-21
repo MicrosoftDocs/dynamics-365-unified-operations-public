@@ -51,7 +51,7 @@ A setting on the **Pricing management parameters** page affects the way that con
 
 If your price structure includes multiple margin and/or discount components, the order that the components are calculated in and the method that's used to combine them can significantly affect the final price.
 
-The following table shows an example of a singel price structure setup and its resulting calculations.
+The following table shows an example of a single price structure setup and its resulting calculations.
 
 | Price component code | Description | Pricing sequence | Calculation method | Value | Compounded | Calculated line value | New unit price |
 |---|---|---|---|---|---|---|---|

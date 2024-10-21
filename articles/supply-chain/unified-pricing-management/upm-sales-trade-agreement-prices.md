@@ -18,14 +18,14 @@ ms.search.form: GUPPricingSetupInquiryResult, GUPParameters, PriceDiscAdmName, P
 
 *Sales trade agreement prices* are negotiated prices for specific products that apply to specific customers. For sales where a sales trade agreement applies, this price takes priority over the item base price.
 
-Pricing management uses the standard *Trade agreement price - sales price* side in Microsoft Dynamics 365 Supply Chain Management, but it's enhanced with price attributes.
+Unified pricing management uses the standard *Trade agreement price - sales price* side in Microsoft Dynamics 365 Supply Chain Management, but it's enhanced with price attributes.
 
 > [!NOTE]
-> Pricing management respects [Supply Chain Management *sales agreements*](../sales-marketing/sales-agreements.md), which differ from the *sales trade agreement prices* that are described in this article. For order lines where a *sales agreement* applies, Pricing management will use the sales agreement. If no sales agreement applies, Pricing management will determine whether an applicable *sales trade agreement price* exists. The discounts that are included in sales trade agreements (line discounts, multiple discounts, and total discounts) are outside the purview of Pricing management. Instead, Pricing management provides a new approach to defining discount rules.
+> Unified pricing management respects [Supply Chain Management *sales agreements*](../sales-marketing/sales-agreements.md), which differ from the *sales trade agreement prices* that are described in this article. For order lines where a *sales agreement* applies, Unified pricing management will use the sales agreement. If no sales agreement applies, Unified pricing management will determine whether an applicable *sales trade agreement price* exists. The discounts that are included in sales trade agreements (line discounts, multiple discounts, and total discounts) are outside the purview of Unified pricing management. Instead, Unified pricing management provides a new approach to defining discount rules.
 
 ## Configure sales trade agreements, including concurrence rules
 
-Several configuration settings affect the way that sales trade agreements work in Pricing management. Before you start to create any sales trade agreement pricing rules, follow these steps to set up your system.
+Several configuration settings affect the way that sales trade agreements work in Unified pricing management. Before you start to create any sales trade agreement pricing rules, follow these steps to set up your system.
 
 1. Go to the **Pricing management \> Setup \> Pricing management parameters**.
 1. On the **Price and discounts** tab, on the **Trade agreements** FastTab, set the **Enable default find next** option to one of the following values to specify how the system should resolve concurrent sales trade agreement rules:

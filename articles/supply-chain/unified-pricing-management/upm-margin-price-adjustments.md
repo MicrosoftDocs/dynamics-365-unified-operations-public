@@ -18,7 +18,7 @@ ms.search.form: GUPPriceComponentCode, GUPPriceComponentCodeSetup, GUPPricingTre
 
 This article describes how to set up and use margin price adjustments.
 
-Pricing management lets you use *margin price adjustments* to move item prices up or down from the base price. You can set up these adjustments by including one or more price component codes of the *Margin component price adjustment* type in your price structures. Price adjustments are compounded across price component codes and add up to the total price adjustment.
+Unified pricing management lets you use *margin price adjustments* to move item prices up or down from the base price. You can set up these adjustments by including one or more price component codes of the *Margin component price adjustment* type in your price structures. Price adjustments are compounded across price component codes and add up to the total price adjustment.
 
 In scenarios where you build your selling price based on the inventory standard cost or purchase price, it represents the layers of the margin components that add up to those base prices.
 

@@ -1,6 +1,6 @@
 ---
 title: Price component codes (preview)
-description: Learn how to create a price structure for pricing at the macro level by using Pricing management with a table defining various names.
+description: Learn how to create a price structure for pricing at the macro level by using Unified pricing management with a table defining various names.
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: how-to
@@ -16,7 +16,7 @@ ms.search.form: GUPPriceComponentCode, GUPPriceComponentCodeGroup
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-The purpose of making pricing decisions is to increase profitability. Good decision making demands a thorough understanding of the different elements that are involved in determining the price. By providing a list of pricing building blocks, Pricing management lets you create a price structure for pricing at the macro level. The price component code is the basic unit of the price structure. You set up your prices structure by creating one or more price trees in Unified pricing management.
+The purpose of making pricing decisions is to increase profitability. Good decision making demands a thorough understanding of the different elements that are involved in determining the price. By providing a list of pricing building blocks, Unified pricing management lets you create a price structure for pricing at the macro level. The price component code is the basic unit of the price structure. You set up your prices structure by creating one or more price trees in Unified pricing management.
 
 | Name | Description |
 |---|---|
@@ -107,7 +107,7 @@ Follow these steps to set up your price component codes.
 
 ## <a name="rank"></a>Price attribute combination rank
 
-Rankings enable the system to determine which pricing rule should be used if an order qualifies for more than one rule. In general, specific pricing rules (that is, rules that apply to a specific customer account and product number) have priority over more general rules (that is, rules that apply to a group of customers and/or a group of products). However, if two equally general rules apply (for example, a rule that targets a specific customer group and a rule that targets a specific region), it can be difficult to determine which rule should have priority. Therefore, Pricing management lets you specify a rank for each attribute group and each attribute group combination.
+Rankings enable the system to determine which pricing rule should be used if an order qualifies for more than one rule. In general, specific pricing rules (that is, rules that apply to a specific customer account and product number) have priority over more general rules (that is, rules that apply to a group of customers and/or a group of products). However, if two equally general rules apply (for example, a rule that targets a specific customer group and a rule that targets a specific region), it can be difficult to determine which rule should have priority. Therefore, Unified pricing management lets you specify a rank for each attribute group and each attribute group combination.
 
 The price engine considers the **Combination rank** value if both the following conditions are met:
 

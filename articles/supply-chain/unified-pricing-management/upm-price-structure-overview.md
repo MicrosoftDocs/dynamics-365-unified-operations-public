@@ -1,6 +1,6 @@
 ---
 title: Price structure overview (preview)
-description: Learn how price structures work in Pricing management, including outlines on price component types and concurrency rules.
+description: Learn how price structures work in Unified pricing management, including outlines on price component types and concurrency rules.
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: overview

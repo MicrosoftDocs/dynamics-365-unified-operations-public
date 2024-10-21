@@ -40,7 +40,7 @@ Customer groups don't always provide enough control over the setup of customer-b
 
 Other sales order details (such as the ordering channel, ordering site, ordering campaign, and mode of delivery) can also include pricing conditions.
 
-Pricing management offers three price attribute sources that can serve as a foundation for the setup of pricing rules and conditions. For each source, it also provides out-of-box price attributes. You can build price attribute groups (header or line scope) and combine them to create price attribute combinations.
+Unified pricing management offers three price attribute sources that can serve as a foundation for the setup of pricing rules and conditions. For each source, it also provides out-of-box price attributes. You can build price attribute groups (header or line scope) and combine them to create price attribute combinations.
 
 <table>
 <thead>
@@ -92,7 +92,7 @@ Pricing management offers three price attribute sources that can serve as a foun
 Each pricing rule allows for the combination of one header attribute group and one line attribute group.
 
 > [!NOTE]
-> The number of attributes can affect the performance of the pricing engine. For pricing rule data entities (such as sales trade agreement prices, discounts, and rebates), up to 14 price attributes can be imported into Pricing management. Each pricing rule allows for the combination of one header attribute group (which can have up to seven header price attributes) and one line attribute group (which can have up to seven line price attributes).
+> The number of attributes can affect the performance of the pricing engine. For pricing rule data entities (such as sales trade agreement prices, discounts, and rebates), up to 14 price attributes can be imported into Unified pricing management. Each pricing rule allows for the combination of one header attribute group (which can have up to seven header price attributes) and one line attribute group (which can have up to seven line price attributes).
 
 ## Next steps
 

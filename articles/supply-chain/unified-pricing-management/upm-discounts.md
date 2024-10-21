@@ -1,6 +1,6 @@
 ---
 title: Discount types (preview)
-description: Learn about the different types of discounts that you can set up by using Pricing management with outlines on simple and quantity discounts.
+description: Learn about the different types of discounts that you can set up by using Unified pricing management with outlines on simple and quantity discounts.
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: overview
@@ -16,7 +16,7 @@ ms.search.form:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-This article introduces the different types of discounts that you can set up by using Pricing management.
+This article introduces the different types of discounts that you can set up by using Unified pricing management.
 
 To use discounts, you must complete the following setup:
 
