@@ -1,10 +1,8 @@
 ---
-# required metadata
-
 title: Dynamics 365 Payment Connector for Adyen overview
 description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: rassadi
-ms.date: 08/20/2024
+ms.date: 10/10/2024
 ms.topic: overview
 audience: Developer, IT Pro
 ms.reviewer: v-chrgriffin
@@ -45,18 +43,6 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 
 ---
 
-# [10.0.34](#tab/10-0-34)
-### Dynamics 365 Retail POS version 10.0.34
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
-| --- | --- |
-| adyen_v1_88p3 | adyen_v1_89p6 |
-
-# [10.0.35](#tab/10-0-35)
-### Dynamics 365 Retail POS version 10.0.35
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
-| --- | --- |
-| adyen_v1_89p6 | adyen_v1_91p2 |
-
 # [10.0.36](#tab/10-0-36)
 ### Dynamics 365 Retail POS version 10.0.36
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
@@ -87,6 +73,11 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 | --- | --- |
 | adyen_v1_99p6 | adyen_v1_105p9 |
 
+# [10.0.41](#tab/10-0-41)
+### Dynamics 365 Retail POS version 10.0.41
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_105p9 | adyen_v1_109p2 |
 
 ---
 
@@ -141,7 +132,7 @@ The following video describes the capabilities of the Adyen Castles SE1 Android 
 | Discover | Samsung Pay | ✔ |  |  |
 | Diners | Standard | ✔ | ✔ | ✔ |
 | Dineromail | Standard | ✔ | ✔ | ✔ |
-| JCB | Standard | ✔ | ✔ | ✔ |
+| Japan Credit Bureau (JCB) | Standard | ✔ | ✔ | ✔ |
 | Union Pay\* | Standard | ✔ |  |  |
 | Interac Debit\* | Standard | ✔ |  |  |
 
@@ -152,7 +143,7 @@ The following video describes the capabilities of the Adyen Castles SE1 Android 
 | Scheme | Card present | Card not present |
 |---|:-:|---|
 | Givex | ✔ | ✔ |
-| SVS | ✔ | ✔ |
+| Stored Value Solutions (SVS) | ✔ | ✔ |
 
 To support these external gift card schemes through the Dynamics 365 Payment Connector for Adyen, you must complete additional steps. For more information, see [Support for external gift cards](/dynamics365/unified-operations/retail/dev-itpro/gift-card).
 
@@ -163,13 +154,16 @@ The following table lists the current Dynamics 365 Commerce Payment Connector fo
 | Scheme | Card present support | Card not present support |
 |---|---|---|
 | PayPal (via Adyen Connector) | No | No |
-| Google Pay | Yes | Yes |
-| Apple Pay | Yes | Yes |
-| Klarna | No | No |
-| Affirm | No | No |
+| Google Pay | ✔ | ✔ |
+| Apple Pay | ✔ | ✔ |
 | Afterpay | No | No |
-| Alipay | No | No |
-| WeChat | No | No |
+| Klarna | No | No |
+| Affirm | ✔ | No |
+| Alipay | ✔ | No |
+| WeChat Pay | ✔ | No |
+
+> [!NOTE]
+> Support for Affirm, Alipay, and WeChatPay payment methods is added for "card present" scenarios starting with Commerce version 10.0.40. For inormation on setup and known limitations, see [Wallet payment support](wallets.md).
 
 #### Supported card present input methods
 
@@ -224,7 +218,7 @@ The following countries/regions have Commerce components available and card pres
 
 #### Supported card not present countries/regions
 
-The following countries/regions are supported by Adyen for card not present transactions. [Contact Adyen](https://www.adyen.com/contact/sales) for details about support for a specific country/region. For current international availability of Commerce, visit the [International availability page](/dynamics365/get-started/availability).
+Adyen supports the following countries/regions for card not present transactions. For details about support for a specific country/region, [contact Adyen](https://www.adyen.com/contact/sales). For information on the current international availability of Commerce, see [International availability page](/dynamics365/get-started/availability).
 
 | Country/region | 
 | --- |

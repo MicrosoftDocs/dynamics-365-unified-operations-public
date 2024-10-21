@@ -4,7 +4,7 @@ description: Learn scripts that you can use to resolve issues in on-premises env
 author: faix
 ms.author: osfaixat
 ms.topic: article
-ms.date: 05/01/2024
+ms.date: 10/07/2024
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.reviewer: johnmichalak
 audience: Developer
@@ -48,6 +48,10 @@ For more information about how to resolve issues in on-premises environments, se
 
     #& $agentShare\scripts\TSG_EnableGMSAForAOS.ps1 -agentShare $agentShare -gmsaAccount contoso\svc-AXSF$
     #& $agentShare\scripts\TSG_EnableDixfService.ps1 -agentShare $agentShare -gmsaAccount contoso\svc-Dixf$ -DMFShare "\\servername\dixf-share"
+
+    # The following script (when enabled) configures HTTPS for SSRS, and enables reporting services to run under a gMSA account.
+    # NOTE!!! If you have used an IP address in LCS for your SSRS server, update the IP address to a Fully Qualified Domain Name (FQDN) for the reporting server. This can be changed on the Environment page. Go to Maintain > Update settings.
+    #& $agentShare\scripts\TSG_SSRSEnableHTTPS.ps1 -agentShare $agentShare -ssrsSslCertificateThumbprint "<ssrshttcertthumbprint>" -principalUserAccountName contoso\svc-reportsvc$
     ```
 
 3. From the relevant section of this article, copy the code that you require to fix your issue, and paste it into a new file. Save this file in the same folder where your Predeployment.ps1 script is stored. The file name must match the title of the section that you copied the code from. Repeat this step for other issues that you must fix.
@@ -454,5 +458,72 @@ $modulesJson | ConvertTo-Json -Depth 20 | Out-File $modulesJsonPath
 Write-Host "Finished Disabling FinancialReporting component."
 ```
 
+## <a name="SSRSEnableHTTPS"></a>TSG\_SSRSEnableHTTPS.ps1
+
+The following script can be used for older environments to configure SSRS with HTTPS and enbable the gMSA account that is used in new configurations.
+
+>[!NOTE]
+>If you have used an IP address in LCS for your SSRS server, you'll need to change that to the Fully Qualified Domain Name (FQDN) for the reporting server. This can be changed on the Environment page then Maintain > Update Settings
+
+```powershell
+param (
+    [Parameter(Mandatory)]
+    [ValidateNotNullOrEmpty()]
+    [ValidateScript({ Test-Path -Path $_ })]
+    [string] $agentShare,
+
+	[Parameter(Mandatory=$true)]
+    [string]
+    $ssrsSslCertificateThumbprint,
+	
+	[Parameter(Mandatory=$true)]
+    [string]
+    $principalUserAccountName
+)
+
+$ErrorActionPreference = "Stop"
+
+$basePath = Get-ChildItem $agentShare\wp\*\StandaloneSetup-*\ |
+    Select-Object -First 1 -Expand FullName
+
+if(!(Test-Path $basePath))
+{
+    Write-Error "Basepath: $basePath , not found" -Exception InvalidOperation
+}
+
+$configJsonPath = "$basePath\config.json"
+
+$configJson = Get-Content $configJsonPath | ConvertFrom-Json
+
+$updatedComponents = @()
+foreach ($component in $configJson.components)
+{
+
+    if($component.name -eq "AOS")
+    {
+        $component.parameters.biReporting.reportingServers.value = $component.parameters.biReporting.persistentVirtualMachineIPAddressSSRS.value
+        $component.parameters.biReporting.ssrsUseHttps.value = $true
+		$component.parameters.biReporting.ssrsHttpsPort.value = 443
+    }
+
+    if($component.name -eq "ReportingServices")
+    {
+        $component.parameters.enableSecurity.value = $true
+        $component.parameters.ssrsSslCertificateThumbprint.value = $ssrsSslCertificateThumbprint
+		$component.parameters.ssrsHttpsPort.value = 443
+		$component.parameters.reportingServers.value = $component.parameters.ssrsServerFqdn.value
+		$component.parameters.infrastructure.principalUserAccountType = "ManagedServiceAccount"
+		$component.parameters.infrastructure.principalUserAccountName = $principalUserAccountName
+    }
+
+    $updatedComponents += $component
+}
+
+$configJson.components = $updatedComponents
+
+$configJson | ConvertTo-Json -Depth 100 | Out-File $configJsonPath
+
+Write-Output "Successfully updated the configuration HTTPS (443) for Reporting Services"
+```
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

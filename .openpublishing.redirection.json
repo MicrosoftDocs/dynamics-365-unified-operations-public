@@ -1,6 +1,76 @@
 {
   "redirections": [
-       {
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-connected-applications.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-customer-certificates-secrets.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-parameters#create-a-key-vault-reference",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-service-environments.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview#service-environment-configuration",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-configure-service-environments-connected-applications.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview#service-environment-configuration",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-create-sharepoint-connection.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-create-sharepoint-connection",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-create-azure-storage-account-azure-portal.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-create-azure-storage-account-azure-portal",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-create-azure-key-vault-azure-portal.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-create-azure-key-vault-azure-portal",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-set-up-azure-resources.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-azure-resources",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-set-up-rcs.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-install-add-in-microservices-lcs.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-sign-up-install.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-set-up-overview.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview",
+      "redirect_document_id": "false"
+    }, 
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-administration-integration-components.md",
+      "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-administration-integration-components",
+      "redirect_document_id": "false"
+    },   
+    {
+      "source_path": "articles/finance/localizations/global/e-invoicing-service-overview.md",
+      "redirect_url": "dynamics365/finance//localizations/global/gs-e-invoicing-service-overview",
+      "redirect_document_id": "false"
+    },   
+    {
       "source_path": "articles/finance/cash-bank-management/letters-of-credit.md",
       "redirect_url": "dynamics365/finance/cash-bank-management/letters-of-credit-import-collections",
       "redirect_document_id": "false"
@@ -27912,6 +27982,11 @@
     {
       "source_path": "articles/supply-chain/localizations/rus-goods-transit-postponed.md",
       "redirect_url": "/dynamics365/supply-chain/localizations/russia/rus-goods-transit-postponed",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/copilot/faq-copilot-suggested-questions.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/responsible-ai/responsible-ai-overview",
       "redirect_document_id": false
     }
   ]

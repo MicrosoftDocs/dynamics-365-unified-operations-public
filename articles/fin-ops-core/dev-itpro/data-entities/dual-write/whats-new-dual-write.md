@@ -4,7 +4,7 @@ description: Access links to the release plans, major announcements, and documen
 author: jaredha
 ms.author: jaredha
 ms.topic: whats-new
-ms.date: 05/04/2024
+ms.date: 10/04/2024
 ms.custom: 
   - bap-template
   - evergreen
@@ -20,6 +20,15 @@ ms.dyn365.ops.version: 10.0.8
 [!include [banner](../../includes/banner.md)]
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
+
+## September 2024
+
+### Security update 
+
+| Feature | Description | Status |
+|---|---|---|
+|Security update |Security enhancements affecting service bus, table storage and blobs impacting the Dynamics 365 finance and operations and Dual-write core solutions.<br>The security fixes are mandatory. By November 30, 2024, all customers using Dual-write are required to upgrade. <ul><li>PU63 Minimum platform version 7.0.7198.188 or PU64 Minimum platform version 7.0.7279.121.</li><li>Dual-write core solution version in Dataverse - 1.0.24073.3.</li></ul><br>If the upgrade isn't enabled by the November 30 2024, the Dual-write pause and resume and auto-alerts features won't function. These features haven't changed in functionality but are more secure.|General availability|
+
 
 ## June 2024
 
@@ -490,7 +499,7 @@ The January 2022 release of [Dual-write core version 1.1.33](https://appsource.m
 | Performance| Improves performance of Microsoft Dataverse entity retrieval. | General availability |
 | Tracing| Limits excess trace logs during entity handling. | General availability |
 
-The January 2022 release of [Dual-write application orchestration solution version 2.3.3.2](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) contains the following bug fixes.
+The January 2022 release of Dual-write application orchestration solution version 2.3.3.2 contains the following bug fixes.
 
 | Feature | Description | Status |
 |------|---------|-------|
@@ -517,7 +526,7 @@ This release includes one map change named [CDS released distinct products] - [p
 
 ## November 2021 release of party and global address book
 
-The November 2021 release of [Dual-write Party and Global Address Book Solutions 3.3.0.5](https://appsource.microsoft.com/product/dynamics-365/mscrm.dwgabsln) contains the following features and bug fixes.
+The November 2021 release of Dual-write Party and Global Address Book Solutions 3.3.0.5 contains the following features and bug fixes.
 
 | Feature | Description | Status |
 |------|---------|-------|
@@ -550,7 +559,7 @@ This release contains bug fixes listed in the following table.
 
 ## August 2021 release
 
-The August 2021 release of [Dual-write application orchestration solution version 2.3.0.15](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.29](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
+The August 2021 release of Dual-write application orchestration solution version 2.3.0.15 is based on [Dual-write core solution version 1.0.29](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
 
 This release contains the features and bug fixes listed in the following table.
 
@@ -594,7 +603,7 @@ This release contains features and bug fixes listed in the following table.
 
 ## July 2021 release
 
-The July 2021 hotfix release of [Dual-write application orchestration solution version](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.28](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
+The July 2021 hotfix release of Dual-write application orchestration solution version is based on [Dual-write core solution version 1.0.28](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
 
 This release contains the features and bug fixes listed in the following table.
 
@@ -604,7 +613,7 @@ This release contains the features and bug fixes listed in the following table.
 
 ## June 2021 release
 
-The June 2021 hotfix release of [Dual-write application orchestration solution version 2.2.2.98](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.27](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
+The June 2021 hotfix release of Dual-write application orchestration solution version 2.2.2.98 is based on [Dual-write core solution version 1.0.27](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
 
 This release contains the features and bug fixes listed in the following table.
 
@@ -622,7 +631,7 @@ This release contains the features and bug fixes listed in the following table.
 
 ## May 2021 release
 
-The May 2021 hotfix release of [Dual-write application orchestration solution version 2.2.2.60](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.26](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
+The May 2021 hotfix release of Dual-write application orchestration solution version 2.2.2.60 is based on [Dual-write core solution version 1.0.26](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
 
 This release contains the features and bug fixes listed in the following table.
 
@@ -666,7 +675,7 @@ Follow these steps to apply the new maps:
 
 ## April 2021 release
 
-The April 2021 hotfix release of [Dual-write application orchestration solution version 2.2.2.60](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.25](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
+The April 2021 hotfix release of Dual-write application orchestration solution version 2.2.2.60 is based on [Dual-write core solution version 1.0.25](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
 
 This release contains the features and bug fixes listed in the following table.
 
@@ -680,7 +689,7 @@ This release contains the features and bug fixes listed in the following table.
 
 ## March 2021 release
 
-The March 2021 release of [Dual-write application orchestration solution version  2.2.2.50](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
+The March 2021 release of Dual-write application orchestration solution version  2.2.2.50 is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
 
 This release contains the features and bug fixes listed in the following table.
 
@@ -694,7 +703,7 @@ This release contains the features and bug fixes listed in the following table.
 
 ## February 2021 release
 
-The February 2021 release of [Dual-write application orchestration solution version  2.2.2.23](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) and version 10.0.16 (10.0.689.10004) or newer of finance and operations apps and version 9.1.0000.11732 or newer of Dataverse.
+The February 2021 release of Dual-write application orchestration solution version  2.2.2.23 is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) and version 10.0.16 (10.0.689.10004) or newer of finance and operations apps and version 9.1.0000.11732 or newer of Dataverse.
 
 This release contains the features and bug fixes listed in the following table.
 
@@ -708,7 +717,7 @@ This release contains the features and bug fixes listed in the following table.
 
 ## January 2021 release
 
-The January 2021 release of [Dual-write application orchestration solution version 2.2.1.30](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) and version 10.0.14 of finance and operations apps.  
+The January 2021 release of Dual-write application orchestration solution version 2.2.1.30 is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) and version 10.0.14 of finance and operations apps.  
 
 This release contains the features and bug fixes listed in the following table.
 
@@ -717,7 +726,7 @@ This release contains the features and bug fixes listed in the following table.
 | Bug fix | French-localized strings in the user interface exceeded the maximum limit of 100 characters. | General availability |
 | Bug fix | Error while starting the Dataverse released distinct products map. | General availability |
 
-The January 2021 release of [Dual-write application orchestration solution version 2.2.1.23](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) and version 10.0.14 of finance and operations apps.  
+The January 2021 release of Dual-write application orchestration solution version 2.2.1.23 is based on [Dual-write core solution version 1.0.24](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) and version 10.0.14 of finance and operations apps.  
 
 This release contains the features and bug fixes listed in the following table.
 
@@ -754,7 +763,7 @@ The October 2020 release of the Dual-write application orchestration solution an
 
 ## September 2020 release
 
-The September 2020 release of [Dual-write application orchestration solution version 2.0.777.493](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance-and-operations-with-common-data-service) is based on [Dual-write core solution version 1.0.21](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
+The September 2020 release of Dual-write application orchestration solution version 2.0.777.493 is based on [Dual-write core solution version 1.0.21](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write).  
 
 The September 2020 release contains the features and bug fixes listed in the following table.
 

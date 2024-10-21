@@ -4,7 +4,7 @@ description: Learn about the process for setting up and configuring Electronic i
 author: ilikond
 ms.author: ikondratenko
 ms.topic: overview
-ms.date: 04/10/2024
+ms.date: 09/30/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -46,6 +46,9 @@ To enable communication between Electronic invoicing and Finance or Supply Chain
 1. In the **Feature management** workspace, on the **All** tab, search for the **Electronic invoicing integration** feature. If this feature doesn't appear on the page, select **Check for updates**.
 2. Select the feature, and then select **Enable now**.
 
+> [!NOTE]
+> Before you work with Globalization features, the **E-Invoicing designer workspace** feature should be enabled by default. However, after the Electronic Invoicing service add-in is installed, there is a delay of 45 minutes before the feature is enabled.
+
 ## Service environment configuration
 
 > [!NOTE]
@@ -62,7 +65,7 @@ To enable communication between Electronic invoicing and Finance or Supply Chain
 
 ## Configure Globalization Studio for Electronic invoicing
 
-Make sure that the **Globalization Studio** workspace is available in the system. For more information, see [Globalization Studio workspace](workspace/merge-rcs-to-gsw.md).
+Make sure that the **Globalization Studio** workspace is available in the system. For more information, see [Regulatory Configuration Service merge to the Globalization Studio workspace](workspace/merge-rcs-to-gsw.md).
 
 To activate Electronic invoicing in Globalization Studio, enable the following features in the **Feature management** workspace. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
@@ -75,8 +78,8 @@ To activate Electronic invoicing in Globalization Studio, enable the following f
 
 > [!NOTE]
 > By enabling the **E-invoicing service workspace designer** feature, you also activate a **Feature design-time restoration procedure** batch job that starts the required data transfer from RCS-related data sources (if applicable) to the Finance database. The process runs in the background and requires some time to be completed. The **Electronic invoicing** tile in Globalization Studio can't be accessed until the batch job is completed. The following error message indicates that the batch job isn't yet completed, and you must give the system more time to complete the process:
-
-> The design-time restoration procedure has already been started. Please, wait until it is finished.
+>
+> > The design-time restoration procedure has already been started. Please, wait until it is finished.
 
 ![Screenshot that shows that the Electronic invoicing tile is unavailable.](../media/EinvTileGS.jpg)
 
@@ -86,11 +89,11 @@ Set up the Azure resources that Electronic invoicing requires to do its work. Fo
 
 ## Configure Globalization features
 
-Different scenarios for processing electronic documents are implemented via Globalization features. A Globalization feature is a set of components that define the rules for data transformation and further processing of electronic documents, such as sending them to or receiving them from external channels. You can use Globalization features that Microsoft provides, or you can create your own. For more information about how to work with Globalization features, see [Work with Globalization features](gs-e-invoicing-working-globalization-features.md).
+Different scenarios for processing electronic documents are implemented via Globalization features. A Globalization feature is a set of components that define the rules for data transformation and further processing of electronic documents, such as sending them to or receiving them from external channels. You can use Globalization features that Microsoft provides, or you can create your own. For more information about how to work with Globalization features, see [Globalization feature components](gs-e-invoicing-working-globalization-features.md).
 
 > [!NOTE]
-> If your scenarios require integration with email or SharePoint to process inbound electronic documents, see [Processing incoming electronic documents](e-invoicing-process-incoming-electronic-documents.md) for information about how to set up and use those channels.
+> If your scenarios require integration with email or SharePoint to process inbound electronic documents, see [Process incoming electronic documents](e-invoicing-process-incoming-electronic-documents.md) for information about how to set up and use those channels.
 
 ## Configure Electronic invoicing parameters
 
-For the additional configuration steps that are related to Electronic invoicing, see [Set up Electronic invoicing parameters](gs-e-invoicing-set-up-parameters.md).
+For the additional configuration steps that are related to Electronic invoicing, see [Configure Electronic invoicing parameters](gs-e-invoicing-set-up-parameters.md).

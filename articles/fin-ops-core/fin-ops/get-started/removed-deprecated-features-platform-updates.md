@@ -6,7 +6,7 @@ ms.author: twheeloc
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.date: 09/18/2024
+ms.date: 09/27/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2020-02-29
@@ -49,7 +49,7 @@ Detailed information about objects in finance and operations apps can be found i
 | **What do you need to do?**        | <p>**Customers and independent software vendors (ISVs) should review their dependencies/customizations and make any necessary changes to move to the new libraries before release 10.0.43 (PU67) service updates.** |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
-| **Status**                         | <p>**Phase 1: Release and feedback (October 2024–November 2024)**</p><p>The new code will be released to a selected group of users for beta testing. Feedback will be collected, and any necessary adjustments will be made. The code will be fully rolled out after all fixes are made. During this period, we will continue to support the old package.</p><p>**Phase 2: Deprecation timeline for customers – release 10.0.43 – PU67 (March 2025)**</p><p>This phase is the timeline when customers must move to new libraries before release 10.0.43 (PU67) service updates (general availability approximately March 2025).</p><p>**Phase 3: Stop shipping old libraries in version 10.0.44 – PU68 (June 2025)**</p><p>In version 10.0.44 (PU68) service updates (June 2025), support for the old package will end. Therefore, we will stop shipping the old libraries, and the old code will be removed after telemetry data is validated to ensure that customer scenarios aren't affected. For more information, see the [service updates schedule](../../dev-itpro/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change).</p><p>For updates, see [Finance and operations storage account security updates](../../dev-itpro/sysadmin/storage-acct-security.md).</p> |
+| **Status**                         | <p>**Phase 1: Release and feedback (October 2024–November 2024)**</p><p>The new code will be released to a selected group of users for beta testing. Feedback will be collected, and any necessary adjustments will be made. The code will be fully rolled out after all fixes are made. During this period, we'll continue to support the old package.</p><p>**Phase 2: Deprecation timeline for customers – release 10.0.43 – PU67 (March 2025)**</p><p>This phase is the timeline when customers must move to new libraries before release 10.0.43 (PU67) service updates (general availability approximately March 2025).</p><p>**Phase 3: Stop shipping old libraries in version 10.0.44 – PU68 (June 2025)**</p><p>In version 10.0.44 (PU68) service updates (June 2025), support for the old package will end. Therefore, we'll stop shipping the old libraries, and the old code will be removed after telemetry data is validated to ensure that customer scenarios aren't affected. For more information, see the [service updates schedule](../../dev-itpro/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change).</p><p>For updates, see [Finance and operations storage account security updates](../../dev-itpro/sysadmin/storage-acct-security.md).</p> |
 
 ### Platform is changing the authentication protocol from password based auth to Microsoft Entra ID based authentication for 10.0.39 and greater releases.
 
@@ -72,7 +72,7 @@ Public method **Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetC
 |------------|--------------------|
 | **Reason for deprecation/removal** | Maintaining storage connection string usage is a security issue. We want a more secure approach for connecting to the storage account. |
 | **Replaced by another feature?**   | Microsoft Entra ID–based interaction with the storage account |
-| **What do you need to do?**        | <ul><li>For new tenants that are created after August 19, 2024, the connection string won't be available to you. You will use public APIs from the platform **SharedServiceUnitStorage** class to interact with the storage account.</li><li>For existing tenants that were created before August 19, 2024, your current code will continue to function. However, because **GetCsuStorageConnectionString** will be deprecated in version 10.0.43 (PU67) service updates (March 2025), we recommend that you remove direct dependency on the storage connection string. Instead, use public methods from **SharedServiceUnitStorage** to interact with the storage account.</li><li>For ISVs, if you have direct use of the connection string in your solutions, it must be removed. Public APIs from **SharedServiceUnitStorage** will be used to get relevant storage objects for interaction with the storage account. |
+| **What do you need to do?**        | <ul><li>For new tenants that are created after August 19, 2024, the connection string won't be available to you. You'll use public APIs from the platform **SharedServiceUnitStorage** class to interact with the storage account.</li><li>For existing tenants that were created before August 19, 2024, your current code will continue to function. However, because **GetCsuStorageConnectionString** will be deprecated in version 10.0.43 (PU67) service updates (March 2025), we recommend that you remove direct dependency on the storage connection string. Instead, use public methods from **SharedServiceUnitStorage** to interact with the storage account.</li><li>For ISVs, if you have direct use of the connection string in your solutions, it must be removed. Public APIs from **SharedServiceUnitStorage** will be used to get relevant storage objects for interaction with the storage account. |
 | **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
 | **Status**                         | <p>The rollout of this change is being done in phases, beginning with sandbox environments. The change will then be applied in production environments for tenants that were created after August 19, 2024. The full rollout is estimated in October 2024. Changes will be backported to 10.0.39 (PU63) and all later releases. The method will be fully deprecated for all finance and operations customers in 10.0.43 (PU67) service updates (March 2025). For more information, see the [service updates schedule](../../dev-itpro/get-started/public-preview-releases.md#targeted-release-schedule-dates-subject-to-change).</p><p>For updates, see [Finance and operations storage account security updates](../../dev-itpro/sysadmin/storage-acct-security.md).</p> |
@@ -87,6 +87,21 @@ Public method **Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetC
 | **Product areas affected**         | Development for finance and operations apps, including the Unified Development experience, and development of plugins with the Power Platform Tools. |
 | **Deployment option**              | All |
 | **Status**                         | This change is effective as of Platform update 65 and Dynamics 365 Finance version 10.0.41 and later. |
+
+## Feature deprecation effective August 2024
+
+### Support for unregistered Microsoft account and external Microsoft Entra ID users
+
+**Login will be blocked for unregistered [Microsoft Account (MSA)](/entra/external-id/microsoft-account) and [External Microsoft Entra ID users](/entra/external-id/default-account) in Finance and Operation Apps**
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | To enhance the security and performance of finance and operations apps, we're announcing the deprecation of support for unregistered Microsoft account users and external Microsoft Entra users in finance and operations apps. |
+| **What is changing?**   | Users not registered as a member or guest in the Microsoft Entra ID tenant can't access the finance and operations applications. If you aren't registered you receive the following error message:<br><br>"AADSTS50020: user account '`contoso@contoso.com`;' from identity provider '`https://sts.windows.net/{tenant ID}/`' doesn't exist in tenant '\{tenant name\}' and can't access the application '\{application ID\}'(Finance and operations environment name) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Microsoft Entra ID user account."<br><br>During the initial rollout phase, access to user will be failing with the following error message:<br><br>“You are not authorized to log in with your current credentials. You'll be redirected to the login page in a few seconds. To troubleshoot login issues, please visit [Invalid Users Guide](/dynamics365/fin-ops-core/fin-ops/sysadmin/invalid-users/)”<br><br>Later these users will be blocked at the Microsoft Entra ID Tenant level. This change doesn't affect Granular Delegated Admin Permissions (GDAP) or CSP users. The user is blocked at the Microsoft Entra ID tenant level. This change doesn't affect [granular delegated admin permissions (GDAP)](/partner-center/customers/gdap-introduction/) or CSP users. |
+| **What do you need to do?**         | If a user who isn't part of your Microsoft Entra requires access to finance and operations apps, that user must be added to the Microsoft Entra ID tenant as an external user or guest user. For more information, see [B2B collaboration overview](/entra/external-id/what-is-b2b/). |
+| **Product areas affected**         | Finance and operations apps |
+| **Deployment option**              | All |
+| **Status**                         | This change reaches your environment beginning last week of September 2024. |
 
 ## Feature deprecation effective July 2024
 
@@ -110,21 +125,6 @@ Public method **Microsoft.Dynamics.Clx.ServicesWrapper.CloudInfrastructure::GetC
 | **Product areas affected**         | System administration  |
 | **Deployment option**              | Microsoft-managed cloud environments |
 | **Status**                         | The **SharePoint user authentication** feature is available in Dynamics 365 Finance version 10.0.40, and is mandatory in version 10.0.42. Migration to the new SharePoint authentication must occur by February 28, 2025, at which time the current SharePoint connection stops working. |
-
-## Feature deprecation effective August 2024
-
-### Support for unregistered Microsoft account and external Microsoft Entra ID users
-
-**Login will be blocked for unregistered [Microsoft Account (MSA)](/entra/external-id/microsoft-account) and [External Microsoft Entra ID users](/entra/external-id/default-account) in Finance and Operation Apps**
-
-| &nbsp;  | &nbsp; |
-|------------|--------------------|
-| **Reason for deprecation/removal** | To enhance the security and performance of finance and operations apps, we're announcing the deprecation of support for unregistered Microsoft account users and external Microsoft Entra users in finance and operations apps. |
-| **What is changing?**   | If a [Microsoft account](/entra/external-id/microsoft-account) or [Microsoft Entra ID account](/entra/external-id/default-account) isn't registered in your Microsoft Entra ID tenant, you aren't able to access finance and operations apps. You receive the following error message: "AADSTS50020: user account '`contoso@contoso.com`;' from identity provider '`https://sts.windows.net/{tenant ID}/`' doesn't exist in tenant '\{tenant name\}' and can't access the application '\{application ID\}'(Finance and operations environment name) in that tenant. The account needs to be added as an external user in the tenant first. Sign out and sign in again with different Microsoft Entra ID user account." The user is blocked at the Microsoft Entra ID tenant level. This change doesn't affect granular delegated admin permissions (GDAP) or CSP users. |
-| **What do you need to do?**         | If a user who isn't part of your Microsoft Entra requires access to finance and operations apps, that user must be added to the Microsoft Entra ID tenant as an external user or guest user. For more information, see [B2B collaboration overview](/entra/external-id/what-is-b2b/). |
-| **Product areas affected**         | Finance and operations apps |
-| **Deployment option**              | All |
-| **Status**                         | This change reaches your environment anytime starting August 2024. |
 
 ## Feature deprecation effective April 2024
 
@@ -423,7 +423,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | In order to reduce the overhead of operating, monitoring, and maintaining the index management by customers, this feature was removed. |
-| **Replaced by another feature?**   | After this update, Microsoft services performs the index maintenance. This maintenance happens continuously without affecting the user workloads. |
+| **Replaced by another feature?**   | After this update, Microsoft Services performs the index maintenance. This maintenance happens continuously without affecting the user workloads. |
 | **Product areas affected**         | Finance and operations apps|
 | **Deployment option**              | Cloud deployment - affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
 | **Status**                         | This feature is removed. |

@@ -412,6 +412,8 @@
               href: accounts-receivable/credit-card-refactor.md
             - name: Create a free text invoice
               href: accounts-receivable/create-free-text-invoice-new.md
+            - name: Free text invoice optimization
+              href: accounts-receivable/free-text-invoice-optimization.md
             - name: Use financial tags to display free text invoice descriptions
               href: accounts-receivable/free-text-inv-desc.md
             - name: Accounting distributions and subledger journal entries for free text invoices
@@ -642,14 +644,10 @@
               href: budgeting/budgeting-overview.md
             - name: Budget planning overview
               href: budgeting/budget-planning-overview-configuration.md
-            - name: Budget control overview
-              href: budgeting/budget-control-overview-configuration.md
             - name: Budgeting overview
               href: budgeting/basic-budgeting-overview-configuration.md
             - name: Create budget register entries
               href: budgeting/budget-register-entries.md
-            - name: Budget funds available
-              href: budgeting/budget-funds-available.md
             - name: Position forecasting
               href: budgeting/position-forecasting.md
             - name: Budget planning justification documents
@@ -670,6 +668,16 @@
               href: budgeting/budget-planning-data-allocation.md
             - name: Budget planning integration with other modules
               href: budgeting/budget-planning-integration-other-modules.md
+            - name: Budget control
+              items:
+                - name: Budget control overview
+                  href: budgeting/budget-control-overview-configuration.md
+                - name: Budget funds available
+                  href: budgeting/budget-funds-available.md
+                - name: Budget analysis report
+                  href: public-sector/budget-analysis-report.md
+                - name: Purchase order year-end process
+                  href: budgeting/purchase-order-year-end-process.md
         - name: Cash and bank management
           items:
             - name: Petty cash
@@ -1266,6 +1274,8 @@
                   href: general-ledger/optimize-year-end-close.md
                 - name: Year-end close
                   href: general-ledger/year-end-close.md
+                - name: Validate year-end close
+                  href: general-ledger/yec-valid.md
                 - name: Close the fiscal year
                   href: general-ledger/tasks/close-fiscal-year.md
                 - name: Mass financial period close
@@ -1630,6 +1640,8 @@
                               href: localizations/global/gs-e-invoicing-create-azure-key-vault-azure-portal.md?context=/dynamics365/context/finance
                             - name: Create an Azure storage account in the Azure portal
                               href: localizations/global/gs-e-invoicing-create-azure-storage-account-azure-portal.md
+                            - name: Create Azure file share in the Azure portal
+                              href: localizations/global/gs-e-invoicing-create-azure-file-share.md
                             - name: Configure a SharePoint connection
                               href: localizations/global/gs-e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/finance
                             - name: Create Azure resources using Azure PowerShell or ARM templates
@@ -1688,6 +1700,8 @@
                               href: localizations//iberoamerica/ltm-chl-vend-e-invoice.md?context=/dynamics365/context/finance
                         - name: Denmark
                           href: localizations/denmark/gs-e-invoicing-dk-get-started.md?context=/dynamics365/context/finance
+                        - name: Egypt
+                          href: localizations/mea/gs-e-invoicing-eg-get-started.md?context=/dynamics365/context/finance
                         - name: France
                           href: localizations/france/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance                        
                         - name: Indonesia
@@ -1710,46 +1724,6 @@
                               href: ../commerce/localizations//mea/emea-sau-simplified-e-invoices.md
                     - name: Electronic Invoicing FAQ
                       href: localizations/global/gs-e-invoicing-faq.md?context=/dynamics365/context/finance
-                - name: Electronic Invoicing (RCS)
-                  items:
-                    - name: Electronic Invoicing overview
-                      href: localizations/global/e-invoicing-service-overview.md?context=/dynamics365/context/finance
-                    - name: Electronic Invoicing administration and integration components
-                      href: localizations/global/e-invoicing-administration-integration-components.md?context=/dynamics365/context/finance
-                    - name: Set up Electronic Invoicing
-                      items:
-                        - name: Setting up Electronic Invoicing
-                          href: localizations/global/e-invoicing-set-up-overview.md?context=/dynamics365/context/finance
-                        - name: Sign up and install Electronic Invoicing
-                          items:
-                            - name: Electronic Invoicing sign up and installation overview
-                              href: localizations/global/e-invoicing-sign-up-install.md?context=/dynamics365/context/finance
-                            - name: Install the add-in for microservices in Lifecycle Services
-                              href: localizations/global/e-invoicing-install-add-in-microservices-lcs.md?context=/dynamics365/context/finance
-                            - name: Set up Regulatory configuration services (RCS)
-                              href: localizations/global/e-invoicing-set-up-rcs.md?context=/dynamics365/context/finance
-                        - name: Set up Azure Resources
-                          items:
-                            - name: Set up Azure resources for Electronic invoicing
-                              href: localizations/global/e-invoicing-set-up-azure-resources.md?context=/dynamics365/context/finance
-                            - name: Create an Azure Key Vault in the Azure portal
-                              href: localizations/global/e-invoicing-create-azure-key-vault-azure-portal.md?context=/dynamics365/context/finance
-                            - name: Create an Azure storage account in the Azure portal
-                              href: localizations/global/e-invoicing-create-azure-storage-account-azure-portal.md
-                            - name: Configure a SharePoint connection
-                              href: localizations/global/e-invoicing-create-sharepoint-connection.md?context=/dynamics365/context/finance
-                            - name: Create Azure resources using Azure PowerShell or ARM templates
-                              href: localizations/global/e-invoicing-set-up-azure-resources-automation.md
-                        - name: Set up environments
-                          items:
-                            - name: Configure service environments and connected applications
-                              href: localizations/global/e-invoicing-configure-service-environments-connected-applications.md?context=/dynamics365/context/finance
-                            - name: Service environments
-                              href: localizations/global/e-invoicing-service-environments.md?context=/dynamics365/context/finance
-                            - name: Customer certificates and secrets
-                              href: localizations/global/e-invoicing-customer-certificates-secrets.md?context=/dynamics365/context/finance
-                            - name: Connected applications
-                              href: localizations/global/e-invoicing-connected-applications.md?context=/dynamics365/context/finance
                     - name: Work with Globalization features
                       items:
                         - name: Work with Globalization features overview
@@ -1878,6 +1852,8 @@
                               href: localizations/germany/emea-reporting-multiple-vat-registrations-de.md
                             - name: Italy
                               href: localizations/italy/emea-reporting-multiple-vat-registrations-it.md
+                            - name: Latvia
+                              href: localizations/latvia/emea-reporting-multiple-vat-registrations-lv.md
                             - name: Lithuania
                               href: localizations/lithuania/emea-reporting-multiple-vat-registrations-lt.md
                             - name: Netherlands
@@ -3588,8 +3564,8 @@
                       href: localizations/europe/emea-invoices-packing-slips-numbering.md
                     - name: Tax on natural resources report
                       href: localizations/latvia/emea-lva-tax-natural-resources.md
-                    - name: VAT statement details
-                      href: localizations/latvia/emea-lva-vat-statement-details.md
+                    - name: VAT declaration
+                      href: localizations/latvia/emea-lva-vat-declaration-latvia.md
                     - name: Latvian Intrastat
                       href: localizations/latvia/emea-lva-intrastat.md
                     - name: EU sales list
