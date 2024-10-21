@@ -1,6 +1,6 @@
 ---
-title: Work with integrated CLM (preview)
-description: Work with integrated CLM.
+title: Work with integrated CLM features (preview)
+description: Learn how to work with the features of integrated contract lifecycle management (CLM).
 author: Henrikan
 ms.author: henrikan
 ms.reviewer: kamaybac
@@ -15,61 +15,71 @@ ms.custom:
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.43 GA  -->
+<!-- KFM: Preview until 10.0.43 GA -->
 
-This article describes how adding contract lifecycle management (CLM) integration affects the way Microsoft Dynamics 365 Supply Chain Management works and where you can find CLM elements in the Supply Chain Management user interface.
+This article explains how the addition of contract lifecycle management (CLM) integration affects the way that Microsoft Dynamics 365 Supply Chain Management works. It also explains where you can find CLM elements in the Supply Chain Management user interface (UI).
 
 > [!NOTE]
-> These changes only take effect when the CLM integration feature is configured for and connected to a CLM solution. For details about how to enable the feature and set up the integration, see [Enable and configure CLM integration](developer/clm-enable.md).
+> These changes take effect only when the CLM integration feature is configured for and connected to a CLM solution. Learn how to enable the feature and set up the integration in [Enable and configure CLM integration](developer/clm-enable.md).
 
 ## View and work with all integrated contracts
 
-To work with integrated contracts in Supply Chain Management, go to **Procurement and Sourcing** \> **Contracts** \> **All contracts**. From here, you can do the following actions:
+To work with integrated contracts in Supply Chain Management, go to **Procurement and sourcing** \> **Contracts** \> **All contracts**. On the **All contracts** page, you can perform the following actions:
 
-- View a list all of the contracts that were created using your CLM system. Each of these contracts is synced from the external system and is read-only here. For each contract, you can see the current status, important dates, and other information.
-- Use the **Filter** field and/or the filtering and sorting controls available from the column headers to find a specific contract.
-- To view, edit, or amend a listed contract, select it in the grid and then select **View**, **Edit**, or **Amend** on the **Contract** tab of the Action Pane. Each of these commands opens the selected contract in your external CLM system. The availability of these options depends on how you have [configured the integration](developer/clm-enable.md).
-- To add a new contract, select **New** on the **Contract** tab of the Action Pane to open the contract-creation page in your external CLM system. The availability of this option depends on how you have [configured the integration](developer/clm-enable.md).
-- To view all purchase agreements associated with a specific contract, select the contract in the grid and then select **Purchase agreement** on the **Contract** tab of the Action Pane.
+- **View a list all contracts that were created by using your CLM system.** These contracts are synced from the external system and are read-only here. For each contract, you can view the current status, important dates, and other information.
+- **Find a specific contract.** Use the **Filter** field and/or the filtering and sorting controls that are available through the column headings.
+- **View, edit, or amend a specific contract.** Select the contract in the grid, and then, on the Action Pane, on the **Contract** tab, select **View**, **Edit**, or **Amend**. Each of these buttons opens the selected contract in your external CLM system. The availability of these buttons depends on how you [configured the integration](developer/clm-enable.md).
+- **Add a new contract.** On the Action Pane, on the **Contract** tab, select **New** to open the contract creation page in your external CLM system. The availability of the **New** button depends on how you [configured the integration](developer/clm-enable.md).
+- **View all purchase agreements that are associated with a specific contract.** Select the contract in the grid, and then, on the Action Pane, on the **Contract** tab, select **Purchase agreement**.
 
 ## View contracts associated with a selected vendor
 
-While you're working with a vendor record, you can easily see which contracts are associated with that vendor. To view the contracts associated with a specific vendor, follow these steps.
+While you're working with a vendor record, you can easily identify which contracts are associated with that vendor. To view the contracts that are associated with a specific vendor, follow these steps.
 
-1. Go to **Procurement and Sourcing** \> **Vendors** \> **All vendors**
-1. Find and select the vendor you want to work with. You must select just one vendor at a time.
-1. On the Action Pane, open the **Procurement** tab and, from the **Agreements** group, select **Contracts**.
-1. The **All contracts** page opens, filtered to only show contracts from your selected vendor.
+1. Go to **Procurement and sourcing** \> **Vendors** \> **All vendors**.
+1. Find and select the vendor that you want to work with. You must select only one vendor at a time.
+1. On the Action Pane, on the **Procurement** tab, in the **Agreements** group, select **Contracts** to open the **All contracts** page. The page is filtered so that it shows only contracts from the selected vendor.
 
 ## Purchase agreements with external CLM integration
 
-When you're using CLM integration, purchase agreements work slightly differently when compared to a non-integrated Supply Chain Management system.
+When you're using CLM integration, purchase agreements work slightly differently than they work in a non-integrated Supply Chain Management system.
 
-To view your purchase agreements, go to **Procurement and sourcing** \> **Purchase agreements** \> **Purchase agreements**. The following differences apply here when you're using CLM integration:
+To view your purchase agreements, go to **Procurement and sourcing** \> **Purchase agreements** \> **Purchase agreements**. There, the following differences apply when you use CLM integration:
 
-- The **Purchase agreements** list page now includes the following new columns:
-    - **Contract ID** – Identifies the externally managed contract associated with each purchase agreement (if any). This value is generated by and synced from the external CLM system. A purchase agreement can only reference one external contract.
-    - **Contract status** – Shows the contract status fo contracts that exist within the context of an external contract. <!-- KFM: I don't see this here. Remove? -->
+- The **Purchase agreements** list page includes the following new columns:
 
-- The **Purchase agreements** details page **Header** tab now includes a new **Contract** FastTab with the following fields:
-    - **Contract ID** – Identifies the externally managed contract associated with the selected purchase agreement (if any). This value is generated by and synced from the external CLM system.
-    - **Status** – Shows the status of contracts that exist within the context of an external contract. This value is synced from the external CLM system.
+    - **Contract ID** – This column identifies any externally managed contract that is associated with each purchase agreement. The value is generated by and synced from the external CLM system. A purchase agreement can reference only one external contract.
+    - **Contract status** – This column shows the status of contracts that exist in the context of an external contract. <!-- KFM: I don't see this here. Remove? -->
+
+- On the **Purchase agreements** details page, the **Header** tab includes a new **Contract** FastTab that has the following fields:
+
+    - **Contract ID** – This field identifies any externally managed contract that is associated with the selected purchase agreement. The value is generated by and synced from the external CLM system.
+    - **Status** – This field shows the status of contracts that exist in the context of an external contract. The value is synced from the external CLM system.
     - **Purchase agreement ownership type** – This field identifies the owner of the purchase agreement. It can have the following values:
-        - *Supply Chain Management* – Indicates that the purchase agreement was created directly in Supply Chain Management, and all aspects of these purchase agreements must be managed using Supply Chain Managed instead of your external CLM system.
-        - *External contract management* – Indicates that the purchase agreement was created by a contract in an external CLM, so processing and editing options are limited in Supply Chain Management. Purchase agreements of this ownership type show values for **Contract ID** and **Status** on the **Contract** FastTab. All edits and lifecycle changes are managed by the external CLM system, which automatically syncs updated values back to Supply Chain Management.
 
-- Approval workflows aren't applied for purchase agreements where **Purchase agreement ownership type** is *External contract management*. Instead, the external CLM system is responsible for updating the purchase agreement **Status** from *On hold* to *Effective*, bypassing any workflow configuration in Supply Chain Management. This process is used because, in an integrated solution, the contract is approved by all relevant parties, signed, and executed using the external CLM system, which is responsible for updating the status of the purchase agreement. Any additional approval workflows applied in Supply Chain Management would be disruptive to the approval process already implemented in the external CLM system.
+        - *Supply Chain Management* – The purchase agreement was created directly in Supply Chain Management. All aspects of it must be managed by using Supply Chain Management instead of your external CLM system.
+        - *External contract management* – The purchase agreement was created by a contract in an external CLM. Therefore, processing and editing options are limited in Supply Chain Management. For purchase agreements of this ownership type, the **Contract ID** and **Status** fields on the **Contract** FastTab have values. All edits and lifecycle changes are managed by the external CLM system, which automatically syncs updated values back to Supply Chain Management.
 
-- When a purchase agreement owned by an external CLM system is selected, the following actions are disabled on the **Purchase agreement** tab of the Action Pane for both the list and details pages:
-    - **Intercompany: Generate sales agreement**
-    - **Intercompany: View sales agreement**
-    - **Maintain: Activities**
-    - **Generate: Confirmation and proforma confirmation**
-    - **Generate: Proforma confirmation**
+- No approval workflows are applied to purchase agreements where the **Purchase agreement ownership type** field is set to *External contract management*. In an integrated solution, a contract is approved by all relevant parties, signed, and executed by using the external CLM system. Any additional approval workflows that are applied in Supply Chain Management would disrupt the approval process that is already implemented in the external CLM system. Therefore, any workflow configuration in Supply Chain Management is bypassed. Instead, the external CLM system is responsible for updating the status of the purchase agreement status from *On hold* to *Effective*.
+- If a purchase agreement that is owned by an external CLM system is selected, the following buttons are disabled on the **Purchase agreement** tab on the Action Pane of both the list page and the details page:
 
-- You can't delete purchase agreements owned by an external CLM system from Supply Chain Management, so the **Delete** button on the Action Pane is disabled.
+    - In the **Intercompany** group:
 
-- When a purchase agreement owned by an external CLM system is open, most of the fields on the **Header** tab of the **Purchase agreements** details page are read-only. *Exceptions* to this rule include:
+        - **Generate sales agreement**
+        - **View sales agreement**
+
+    - In the **Maintain** group:
+
+        - **Activities**
+
+    - In the **Generate** group:
+
+        - **Confirmation and proforma confirmation**
+        - **Proforma confirmation**
+
+- A purchase agreement that is owned by an external CLM system can't be deleted from Supply Chain Management. Therefore, if a purchase agreement of this type is selected, the **Delete** button on the Action Pane is disabled.
+- While a purchase agreement that is owned by an external CLM system is open, most of the fields on the **Header** tab of the **Purchase agreements** details page are read-only. Exceptions to this rule include the following fields:
+
     - **Vendor reference**
     - **External document reference**
     - **Line matching policy**
@@ -85,7 +95,7 @@ To view your purchase agreements, go to **Procurement and sourcing** \> **Purcha
     - **Mode**
     - **Route plan**
     - **Transportation template ID**
-    - All settings on the **Financial dimensions** FastTab
+    - All fields on the **Financial dimensions** FastTab
 
 ## Known limitations
 
