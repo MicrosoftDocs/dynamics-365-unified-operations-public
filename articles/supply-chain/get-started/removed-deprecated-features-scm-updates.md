@@ -30,7 +30,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | The Pricing management module is being replaced by the new [Unified pricing management module](../unified-pricing-management/upm-pricing-management-overview.md). |
+| **Reason for deprecation/removal** | The Pricing management module (previously in preview) is being replaced by the new [Unified pricing management module](../unified-pricing-management/upm-pricing-management-overview.md). |
 | **Replaced by another feature?**  | Yes, the Pricing management module is being replaced by the new [Unified pricing management module](../unified-pricing-management/upm-pricing-management-overview.md). |
 | **Product areas affected** | Supply Chain Management – Pricing management |
 | **Deployment option** | Cloud and on-premises |
