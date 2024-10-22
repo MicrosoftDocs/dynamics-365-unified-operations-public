@@ -4,12 +4,10 @@ description: Learn how to set up the Electronic invoicing parameters in Globaliz
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 04/10/2024
+ms.date: 10/22/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
-audience: Application User
-ms.search.region: 
 ms.search.validFrom: 2024-01-29
 ms.dyn365.ops.version: 10.0.39
 ---
@@ -25,9 +23,9 @@ The process of submitting electronic documents to the Electronic Invoicing servi
 Before you can submit documents to Electronic invoicing and process responses, you must import ER configurations from the repository and define them in parameters.
 
 > [!NOTE]
-> The majority of the ER configurations mentioned below are being imported automatically as result of related Globalization features import. For more information, see [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md). If due to any reason you need to re-import configurations do the steps described below. 
+> The majority of the ER configurations mentioned below are being imported automatically as result of related Globalization features import. For more information, see [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md). If you need to re-import configurations, use the following steps. 
 
-To set up, adjust, or review electronic documents directly in your Finance or Supply Chain Management environment, complete the following procedures.
+To set up, adjust, or review electronic documents directly in your Finance or Supply Chain Management environment, follow these steps.
 
 1. In the **Globalization Studio** workspace, select the **Electronic reporting** tile.
 1. In the **Configuration providers** section, select the **Microsoft** configuration provider, and then select **Repositories**.
