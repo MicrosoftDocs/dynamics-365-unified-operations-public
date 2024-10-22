@@ -42,8 +42,6 @@ The following illustration shows the components that are needed to use Copilot s
 
 :::image type="content" source="media/copilot-summaries-components.svg" alt-text="Diagram that shows the components needed to use Copilot summary features." lightbox="media/copilot-summaries-components.svg":::
 
-All Copilot features require Power Platform Integration and are supported only for cloud-hosted environments.
-
 ## Regional requirements
 
 Some Copilot features are limited to specific data regions and languages. Region and language support is continuously growing toward global availability. For the latest availability information for each Copilot feature, see the [Copilot international availability guide](https://dynamics.microsoft.com/availability-reports/copilotreport/).
