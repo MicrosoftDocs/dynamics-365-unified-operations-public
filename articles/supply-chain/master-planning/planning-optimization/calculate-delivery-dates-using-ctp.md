@@ -4,7 +4,7 @@ description: Capable-to-promise (CTP) functionality lets you give customers real
 author: t-benebo
 ms.author: benebotg
 ms.topic: article
-ms.date: 07/20/2022
+ms.date: 10/25/2024
 ms.reviewer: kamaybac
 ms.search.form: SalesAvailableDlvDates, SalesTable, CustParameters, InventItemOrderSetup
 ---
@@ -37,7 +37,7 @@ A CTP calculation that considers both materials and resources might show a large
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 <!-- KFM: Preview until further notice -->
 
-*Near real-time CTP* enables the system to to calculate CTP confirmed dates in the background without blocking user interface interactions or requiring you to run planning to update the dates. It lets you use the standard CTP delivery date control with Planning Optimization, which removes a few of the limitations that apply when using CTP with both Planning Optimization and the deprecated master planning engine. <!-- KFM: This topic often distinguishes between PO and Classic engine CTP functionality. Does this new control change this? -->
+*Near real-time CTP* enables the system to to calculate CTP confirmed dates in the background without blocking user interface interactions or requiring you to run planning to update the dates. It lets you use the standard CTP delivery date control with Planning Optimization, which removes a few of the limitations that apply when using CTP with both Planning Optimization and the deprecated master planning engine. <!-- KFM: This topic often distinguishes between PO and Classic engine CTP functionality. Does this new control change this? We have long planned to split this into two topics. Maybe now is the time to do that so we can discuss PO functionality without mentioning classic at all. -->
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -74,7 +74,6 @@ Near real-time CTP provides the following functionality:
 
 > [!NOTE]
 > Because the same CTP delivery date control can now be used by both Planning Optimization and the deprecated master planning engine, the CTP for Planning Optimization delivery date control has been renamed to *Batch CTP* to minimize the confusion and highlight the difference. <!-- KFM: Does this fit here? Also, does this require the *Batch CTP* feature to be enabled in FM? -->
-
 
 ## How CTP differs depending on the master planning engine that you use
 
