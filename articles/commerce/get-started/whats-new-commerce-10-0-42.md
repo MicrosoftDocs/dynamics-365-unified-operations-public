@@ -31,8 +31,7 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-|   |   |   |   |
-
+| Point of sale  | Boost efficiency with modern Store Commerce workflows  | You can now set the new flag **modern transaction grid** to yes on POS visual profiles configuration in addition to turning on the feature **Enable modern transaction grid in POS transaction view** to benefit from the refreshed transaction grid, numpad and the button grids. These updates also enable retailers to show product image in cart view  | Admins  |
 
 
 ## Resources
