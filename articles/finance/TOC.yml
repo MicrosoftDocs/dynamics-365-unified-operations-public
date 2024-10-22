@@ -1282,6 +1282,8 @@
                   href: general-ledger/faq-year-end-activities.md
                 - name: Ledger settlements
                   href: general-ledger/ledger-settlements.md
+                - name: Partial ledger settlements
+                  href: general-ledger/ledger-settlements-partial.md
                 - name: Awareness between ledger settlement and year-end close
                   items:
                     - name: Awareness between ledger settlement and year-end close
