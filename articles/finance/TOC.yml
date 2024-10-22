@@ -2790,7 +2790,7 @@
                       href: localizations/germany/emea-deu-intrastat.md
                     - name: Customer electronic invoices export
                       href: localizations/germany/emea-deu-cust-e-invoices.md
-                    - name: Vendor electronic invoices import
+                    - name: Use vendor electronic invoices import
                       href: localizations/germany/emea-deu-e-invoices-import.md
                     - name: Journal list report
                       href: localizations/germany/emea-deu-journal-list-report.md
