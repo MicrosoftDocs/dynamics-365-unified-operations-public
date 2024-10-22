@@ -32,6 +32,50 @@ Item A is an item that is composed of items B and C, and the on-hand quantity of
 
 A CTP calculation that considers both materials and resources might show a larger quantity than a calculation that checks only materials, particularly when the item that is being checked is an assemble-to-order item. In other words, CTP functionality is based on the explosion function and can be run for a selected sales order line to calculate the expected delivery date.
 
+## Near real-time CTP (preview)
+
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
+
+*Near real-time CTP* enables the system to to calculate CTP confirmed dates in the background without blocking user interface interactions or requiring you to run planning to update the dates. It lets you use the standard CTP delivery date control with Planning Optimization, which removes a few of the limitations that apply when using CTP with both Planning Optimization and the deprecated master planning engine. <!-- KFM: This topic often distinguishes between PO and Classic engine CTP functionality. Does this new control change this? -->
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
+### Enable near real-time CTP
+
+To use near real-time CTP, your system must meet the following requirements:
+
+- You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.41 or later.
+- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in order).
+    1. *Improve Planning Optimization performance by merging and queueing plan regeneration jobs*
+    1. *Near real-time CTP*
+
+### Queueing and merging plan regeneration jobs
+
+The prerequisite feature, *Improve Planning Optimization performance by merging and queueing plan regeneration jobs*, enables the system to queue and merge plan regeneration requests, which eliminates the "Another job for the same plan is currently in progress," error and minimizes the average time it takes to complete a planning run when multiple users are working at the same time.
+
+Here's how queueing and merging works
+
+- You can set the maximum number of planning quests that the system can merge into a single job (default is 10) <!-- KFM: Where do we configure this? What are the considerations? -->. On reaching this limit, the system adds new planning requests to the queue as standalone jobs that could also be merged into another new job.
+- Planning requests can only be merged into a single job if they meet the following requirements:
+    - All merged requests must belong to the same organization and master plan.
+    - All merged requests must use the same filter attribute (such as `ItemId` for filtered runs coming from a net requirements form update). <!-- KFM: What do we mean by "form update"? -->
+    - All merged requests must have the same UI language.
+- Before adding a planning request to the queue as a standalone job, the system checks for other existing not started jobs that could be merged with it.
+- You can set the maximum number of jobs allowed in the queue (default is 20). <!-- KFM: Where do we configure this? What are the considerations? --> On reaching this limit, the system will show an error to any user that submits a planning run until more space is available in the queue. Note that each job in the queue can include several merged planning jobs.
+
+### Near real-time CTP functionality
+
+Near real-time CTP provides the following functionality:
+
+- Multiple sellers can create sales lines at the same time while getting confirmed dates right away. <!-- KFM: What kind of dates? -->
+- When you mass import sales lines, the system automatically calculates confirmed dates. <!-- KFM: What kind of dates? -->
+- The system recalculates all confirmed dates to provide a single delivery date all lines. <!-- KFM: Do we mean a single deliver date for the *entire order*? -->
+
+> [!NOTE]
+> Because the same CTP delivery date control can now be used by both Planning Optimization and the deprecated master planning engine, the CTP for Planning Optimization delivery date control has been renamed to *Batch CTP* to minimize the confusion and highlight the difference. <!-- KFM: Does this fit here? Also, does this require the *Batch CTP* feature to be enabled in FM? -->
+
+
 ## How CTP differs depending on the master planning engine that you use
 
 The following table summarizes the differences between CTP for Planning Optimization and CTP for the deprecated master planning engine.
