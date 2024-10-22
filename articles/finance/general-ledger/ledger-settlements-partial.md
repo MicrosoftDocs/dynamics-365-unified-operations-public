@@ -29,97 +29,101 @@ ms.dyn365.ops.version: 10.0.42
 
 [!include [banner](../includes/banner.md)]
 
-
-The Ledger settlement process allows an organization to ‘reconcile’ clearing accounts, to ensure the amount that is posted into a main account is fully cleared out of that account. 
+The ledger settlement process enables an organization to "reconcile" clearing accounts. In this way, the organization ensures that the amount that is posted to a main account is fully cleared out of that account.
 
 ## Example
-For example, an organization pays an insurance company 12,000 USD in October for a yearly policy. The 12,000 USD can't be fully expensed yet because the insurance company hasn’t fulfilled their contractual obligations. As each month passes, 1,000 USD is recognized as an expense and 1,000 USD is cleared from the accrued expense account as a credit amount. That means that the accrued expense account starts with a balance of 12,000 USD debit and each month a 1,000 USD credit is posted to reduce the balance in the account. After 12 months, the 12,000 USD is cleared and ledger settlement can be completed by marking the 13 transactions, which net to zero. You can't settle the 12,000 USD debit until all the credits have been posted. When expenses like this cross fiscal years it can be difficult to use ledger settlements and the Advanced awareness option because settlements can't cross fiscal years. 
 
-In Microsoft Dynamics 365 Finance version 10.0.42, **Partial ledger settlements** is available and resolves the above issue because at the end of the year (or each month/fiscal period), a partial ledger settlement can be done. Using the example above with the insurance policy, at the end of December, 3,000 USD has been cleared from the accrued expense account. In the **Ledger settlement** page, the original 12,000 USD debit and three 1,000 USD credit transactions can be selected and ledger settled. The remaining 9,000 USD carries forward to the next year to be ledger settled. 
+An organization pays an insurance company 12,000 US dollars (USD) in October for a yearly policy. The 12,000 USD can't yet be fully expensed, because the insurance company hasn't fulfilled its contractual obligations. As each month passes, 1,000 USD is recognized as an expense, and 1,000 USD is cleared from the accrued expense account as a credit amount. Therefore, the accrued expense account begins with a balance of 12,000 USD debit. Then, each month, a 1,000 USD credit is posted to reduce the balance in the account. After 12 months, the 12,000 USD is cleared, and ledger settlement can be completed by marking the 13 transactions, which net to 0 (zero). You can't settle the 12,000 USD debit until all the credits have been posted. If expenses of this type cross fiscal years, it can be difficult to use ledger settlements and the advanced awareness options, because settlements can't cross fiscal years.
 
-Another benefit of using partial ledger settlements is **Subledger to ledger auto settlement**. With this parameter set to **Yes**, any settlements that originate in accounts payable or accounts receivable will automatically be settled in the General ledger. 
+In Microsoft Dynamics 365 Finance version 10.0.42, functionality for partial ledger settlements is available. This functionality fixes the issue of expenses that cross fiscal years, because it enables a partial ledger settlement to be done at the end of the year (or each month or fiscal period). In the preceding example of an insurance policy, at the end of December, 3,000 USD has been cleared from the accrued expense account. Therefore, on the **Ledger settlements** page, the original 12,000 USD debit and three 1,000 USD credit transactions can be selected and ledger-settled. The remaining 9,000 USD is then carried forward to the next year for ledger settlement.
 
-### Partial ledger settlements prerequisites
+Another benefit of partial ledger settlements is that settlements that originate in accounts payable or accounts receivable can be automatically settled in the general ledger. To enable this functionality, set the **Subledger to ledger auto settlement** option to **Yes** on the **Ledger settlements** tab of the **General ledger parameters** page (**General Ledger** \> **Ledger setup** \> **General ledger parameters**).
 
-To use partial ledger settlements, set the following options to **Yes** in **General ledger parameters**:
- - **Enable advanced awareness options**
- - **Enable post currency realized gains/losses for ledger settlements**
+## Prerequisites for partial ledger settlements
+
+To use partial ledger settlements, set the following options to **Yes** on the **General ledger parameters** page:
+
+- Enable advanced awareness options
+- Enable post currency realized gains/losses for ledger settlements
 
 > [!NOTE]
-> In version 10.0.40, the Enable advanced awareness options, **Enable post currency realized gains and losses for ledger settlements** and the **Enable process automation for ledger settlements** was moved from Feature management to **General ledger parameters** found under **General ledger > Ledger setup**. 
+> In version 10.0.40, the **Enable advanced awareness options**, **Enable post currency realized gains and losses for ledger settlements**, and **Enable process automation for ledger settlements** features were moved from Feature management and became options on the **General ledger parameters** page.
 
-> [!Important]
-> After partial ledger settlements is set to **Yes**, it can't be disabled or turned off because data is migrated to new tables. All prior ledger settlement options that are required can't be disabled or turned off either. This includes the **Enable advanced awareness options** and **Enable post currency realized gains/losses for ledger settlements**.
+> [!IMPORTANT]
+> After you enable the functionality for partial ledger settlements, it can't be disabled or turned off, because data is migrated to new tables. All previous ledger settlement options that are required can't be disabled or turned off either. These options include **Enable advanced awareness options** and **Enable post currency realized gains/losses for ledger settlements**. However, the **Enable process automation for ledger settlement** and **Subledger to ledger auto settlement** options can be set to **Yes** or **No** at any time.
 
-The **Enable process automation for ledger settlement** and the **Subledger to ledger auto settlement** can be set to **Yes** or **No** at any time. 
+For partial ledger settlements, as in the existing functionality for ledger settlements, the main account must be added to the list of accounts. The exception to this rule is any account that is settled in the subledger (accounts payable or accounts receivable). If the **Subledger to ledger auto settlement** option is set to **Yes**, accounts of that type are automatically settled and don't have to be included in the list of accounts. If they are added to the list, you can view them on the **Ledger settlements** page.
 
-As with the existing Ledger settlements, the main account needs to be added to the list of accounts for partial ledger settlements. The exception to this rule is any account that is settled in the subledger (accounts payable or accounts receivable) doesn't need to be listed here. If **Subledger to ledger auto settlement** is set to **Yes**, those accounts are automatically settled and don't need to be listed. If they are added to the list of accounts, you will see those accounts in the **Ledger settlements** page. 
+## Partially settle transactions
 
-### Partially settle transactions
+If the **Awareness between ledger settlement and year-end close** and **Partial ledger settlements** options are set to **Yes**, the **Ledger settlements** page changes in the following ways:
 
-With the **Awareness between ledger settlement and year-end close** and the **Partial ledger settlements** options set to **Yes**, the **Ledger settlements** page changes in the following ways: 
- - The main account is required as all ledger settlements must be completed for transactions in a single main account
- - All ledger settlements must be completed within a fiscal year
- - Change the posting layer as required but you can't settle transactions that are in different posting layers.
- - To show the main account and dimensions separately, select a financial dimension set.
- - The **Status** filter has a **Partially settled** status and you can select more than one status at a time. The status options are:
-     - **All**
-     - **Not settled**
-     - **Settled**
-     - **Partially settled**
-     - **Not settled** is the default.
- - The accounting and reporting currency totals display.
- - The **Reverse marked transactions** button has moved to the **Ledger settlements history** page.
+- The main account is required, because all ledger settlements must be completed for transactions in a single main account.
+- All ledger settlements must be completed within a fiscal year.
+- You can change the posting layer as you require, but you can't settle transactions that are in different posting layers.
+- To show the main account and dimensions separately, select a financial dimension set.
+- The **Status** filter has a **Partially settled** status, and you can select more than one status at a time. The following status options are available:
 
-With partial ledger settlements, debits don't need to equal credits to ledger settle so some transactions will have a remaining balance if they are partially settled. Settlement history is now tracked for all transactions, so the following columns have been added to the grid to track this information.
-- History, Amount in reporting currency, Remaining amount in transaction currency, Remaining amount in accounting currency, Remaining amount in reporting currency
+    - **All**
+    - **Not settled** (the default option)
+    - **Settled**
+    - **Partially settled**
 
-When a debit transaction is partially settled with a credit transaction, or vice versa, the status of the fully settled transaction will be Settled. If partially settled, the status is Partially settled and the remaining amount columns will display the amount left to settle. One debit transaction can be settled with multiple credit transactions, or vice versa. For example, Voucher GJ00105 is a debit for 1000 USD. Voucher GJ00210 for 700 USD and GJ00236 for 300 USD are marked for settlement with the debit.
- 
+- The accounting currency and reporting currency totals are shown.
+- The **Reverse marked transactions** button is moved to the **Ledger settlements history** page.
 
-| Status      | Voucher  | Date        | Settlement ID  | Date settled | Debit   | Credit  | Amount remaining | 
-|-------------|----------|-------------|----------------|--------------|---------|---------|------------------|
-| Not settled | GJ00105  | 10/01/2024  |                |              | 1000.00 |         |                  |
-| Not settled | GJ00210  | 10/15/2024  |                |              |         | 700.00  |                  | 
-| Not settled | GJ00236  | 11/05/2024  |                |              |         | 400.00  |                  | 
+For partial ledger settlements, debits don't have to equal credits. Therefore, if transactions are partially settled, some transactions have a remaining balance. Settlement history is now tracked for all transactions, and the following columns have been added to the grid to track this information.
 
+- History
+- Amount in reporting currency
+- Remaining amount in transaction currency
+- Remaining amount in accounting currency
+- Remaining amount in reporting currency
 
-Once settled, the **Settlement ID** column displays multiple for the debit transaction because more than one credit was settled. Each pair of debit/credit transactions has their own **Settlement ID** and is listed in the **Settlement ID** column. The second credit transaction for 400.00 is not fully settled so the status is **Partially settled** and the remaining amount is updated to 100.00.
+When a debit transaction is partially settled with a credit transaction, or when a credit transaction is partially settled with a debit transaction, the status of the fully settled transaction is **Settled**. The status of the partially settled transaction is **Partially settled**, and the remaining amount columns show the amount that must still be settled. One debit transaction can be settled with multiple credit transactions, or one credit transaction can be settled with multiple debit transactions. For example, voucher GJ00105 is a debit for 1,000 USD. Voucher GJ00210 for 700 USD and voucher GJ00236 for 300 USD are marked for settlement with the debit.
 
- 
-| Status      | Voucher  | Date        | Settlement ID  | Date settled | Debit   | Credit  | Amount remaining |
-|-------------|----------|-------------|----------------|--------------|---------|---------|------------------|
-| Not settled | GJ00105  | 10/01/2024  |  Multiple      | 11/05/2024   | 1000.00 |         |  0.00            | 
-| Not settled | GJ00210  | 10/15/2024  |  012264        | 11/05/2024   |         | 700.00  |  0.00            | 
-| Not settled | GJ00236  | 11/05/2024  |  012265        |              |         | 400.00  |  100.00          | 
+| Status      | Voucher | Date       | Settlement ID | Date settled | Debit    | Credit | Amount remaining |
+|-------------|---------|------------|---------------|--------------|----------|--------|------------------|
+| Not settled | GJ00105 | 10/01/2024 |               |              | 1,000.00 |        |                  |
+| Not settled | GJ00210 | 10/15/2024 |               |              |          | 700.00 |                  |
+| Not settled | GJ00236 | 11/05/2024 |               |              |          | 400.00 |                  |
 
-### View settlements/Ledger settlements history
+After settlement, the **Settlement ID** column is set to **Multiple** for the debit transaction, because more than one credit was settled. Each pair of debit/credit transactions has its own settlement ID, which is shown in the **Settlement ID** column. Because the second credit transaction for 400.00 isn't fully settled, the status is **Partially settled**, and the remaining amount is updated to **100.00**.
 
-To view the **Settlement ID** and history of settlements, select a transaction with a **Settlement ID** and then **View settlements** in the action bar. The **Ledger settlement history** page displays each pair of debit and credit transactions settled using the **Settlement ID** created for each pair. 
+| Status      | Voucher | Date       | Settlement ID | Date settled | Debit    | Credit | Amount remaining |
+|-------------|---------|------------|---------------|--------------|----------|--------|------------------|
+| Not settled | GJ00105 | 10/01/2024 | Multiple      | 11/05/2024   | 1,000.00 |        | 0.00             |
+| Not settled | GJ00210 | 10/15/2024 | 012264        | 11/05/2024   |          | 700.00 | 0.00             |
+| Not settled | GJ00236 | 11/05/2024 | 012265        |              |          | 400.00 | 100.00           |
 
-Use the **Ledger settlements history** page to reverse any transactions that are already settled. Select a transaction and the corresponding transaction with the same **Settlement ID** is selected automatically. Select **Reverse marked transactions**, choose the reversal date options and enter a comment if needed. Then select **Reverse**. If a transaction has been settled, then reversed, and has a status of **Partially settled** or **Not settle**d, the** History** column has a checkmark to show there is history. Select **View settlements** to view all settlement history. Select the **Show reversals** checkbox to see all reversed settlements. 
+## View settlements/Ledger settlements history
+
+To view the settlement ID and the history of settlements, select a transaction that has a **Settlement ID** value, and then select **View settlements** on the Action Pane. The **Ledger settlements history** page shows each pair of debit and credit transactions that was settled by using the settlement ID that was created for each pair.
+
+Use the **Ledger settlements history** page to reverse any transactions that are already settled. When you select a transaction, the corresponding transaction that has the same settlement ID is automatically selected. Select **Reverse marked transactions**, select the reversal date options, and enter a comment as required. Then select **Reverse**. If a transaction was settled and then reversed, and it has a status of **Partially settled** or **Not settled**, the **History** column has a check mark to indicate that there is history. To view all settlement history, select **View settlements**. To view all reversed settlements, select the **Show reversals** checkbox.
 
 The **User ID** column provides an audit trail of the user ID that settled or the reversed the transaction.
 
-### Ledger settlements inquiry
-To view ledger settled transactions, go to **General ledger > Inquiries and reports > Ledger settlements inquiry**. 
-The **Remaining amount in transaction currency**, **Remaining amount in accounting currency**, and **Remaining amount in reporting currency** columns have been added to the grid and display values with partially settled transactions. 
+## Ledger settlements inquiry
 
-If the **Settlement ID** column displays **Multiple**, select the **View settlements** button to go to the **Ledger settlement history** page to view full settlement history. 
+To view ledger-settled transactions, go to **General ledger** \> **Inquiries and reports** \> **Ledger settlements inquiry**.
 
-### Subledger to ledger auto settlement
+The **Remaining amount in transaction currency**, **Remaining amount in accounting currency**, and **Remaining amount in reporting currency** columns that have been added to the grid show values for partially settled transactions.
 
-The **Subledger to ledger auto settlement** option is found in **General Ledger > Ledger setup > General ledger parameters > Ledger settlements**. To enable it, the following options need to be set to **Yes**: 
- - **Enable advanced awareness options**
- - **Enable post currency realized gains/losses for ledger settlements**
- - **Partial ledger settlements**
- - The **Subledger to ledger auto settlement** can be toggled on (Yes) and off (No) when needed. 
+If the **Settlement ID** column is set to **Multiple**, select **View settlements** to open the **Ledger settlement history** page, where you can view the full settlement history.
 
-When set to **Yes**, the **Subledger to ledger auto settlement** automatically settles the accounts payable and accounts receivable accounts during the settlement process in the subledger. This option needs to be set to **Yes** to automatically settle but the accounts receivable and accounts payable accounts don't need to be manually added to the list of accounts. If the accounts are added to the list of accounts, then they can be viewed in the **Ledger settlements** page. Transactions that are automatically settled can then be viewed. If needed, you can manually settle any transactions that use the accounts payable or accounts receivable accounts. 
+## Subledger to ledger auto settlement
 
-Adding other subledger accounts to the list of accounts won't automatically settle those accounts. If added, those subledger accounts can be manually settled in **Ledger settlements**. 
+The **Subledger to ledger auto settlement** option is found on the **Ledger settlements** tab of the **General ledger parameters** page. Before you enable it, the following options must be set to **Yes**:
 
-Existing transactions in the accounts payable and accounts receivable accounts won't be automatically settled if the related subledger transactions were settled before setting **Subledger to ledger auto settlement** to **Yes**.
+- Enable advanced awareness options
+- Enable post currency realized gains/losses for ledger settlements
+- Partial ledger settlements
 
+The **Subledger to ledger auto settlement** option can be turned on (set to **Yes**) and turned off (set to **No**) as required. When it's set to **Yes**, the accounts payable and accounts receivable accounts are automatically settled during the settlement process in the subledger. You must set this option to **Yes** to do automatic settlement. However, the accounts receivable and accounts payable accounts don't have to be manually added to the list of accounts. If the accounts are added to the list of accounts, they can be viewed on the **Ledger settlements** page. Transactions that are automatically settled can then be viewed. As required, you can manually settle any transactions that use the accounts payable or accounts receivable accounts.
+
+Other subledger accounts that are added to the list of accounts aren't automatically settled. However, those subledger accounts can be manually settled on the **Ledger settlements** page.
+
+Existing transactions in the accounts payable and accounts receivable accounts aren't automatically settled if the related subledger transactions were settled before the **Subledger to ledger auto settlement** option was set to **Yes**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
