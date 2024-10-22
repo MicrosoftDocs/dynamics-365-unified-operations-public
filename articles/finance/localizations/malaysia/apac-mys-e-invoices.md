@@ -4,7 +4,7 @@ description: This article explains how to get started with electronic invoicing 
 author: ilikond
 ms.author: ikondratenko
 ms.topic: how-to
-ms.date: 08/08/2024
+ms.date: 10/22/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -461,7 +461,7 @@ To enable QR code printing in full and simplified invoices, follow these steps.
 1. Select the **Customer invoice** report, and then, in the **Report format** field, reference the **SalesInvoice.ReportFull\_MY** or **SalesInvoice.ReportSimplified\_MY** layout.
 1. Select the **Free text invoice** report, and then, in the **Report format** field, reference the **FreeTextInvoice.ReportFull\_MY** or **FreeTextInvoice.ReportSimplified\_MY** layout.
 
-In case of project invoices do the following steps.
+If you use project invoices, follow these steps.
 
 1. Go to **Project management and accounting** \> **Setup** \> **Forms** \> **Form setup**.
 1. Select **Print management**.
@@ -483,7 +483,8 @@ If you use self invoices, follow these steps.
 ## Batch submission of electronic invoices
 
 Additionally, to individual submission of electronic invoices described in the previous chapters, there is the possibility to submit posted invoices in batches, as consolidated electronic invoices.
-By default, all invoices that were originated from **Retail** operations are subjects for consolidating and are not subject for individual submission. Although the system allows to forcibly individually submit some specifically selected Retail-related invoices.
+
+By default, all invoices that originated from **Retail** operations are subjects for consolidating and are not subjects for individual submission, although the system allows you to forcibly submit individually some specifically selected Retail-related invoices.
 
 To activate batch submission of invoices, enable the **Electronic document batch submission** feature in Feature management. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
@@ -498,7 +499,7 @@ To configure electronic document parameters for batch submissions, follow these 
 1. Turn on the option in the **Batch submission** column.
 1. In the **Document context** field, select the **Batch submission** mapping name from the **Customer invoice context model** configuration.
 1. In the **Electronic document model mapping** field, select the **Consolidated Invoice Model Mapping (MY)** mapping name from the **Consolidated Invoice Model Mapping (MY)** configuration.
-1. On the **Electronic document** tab, in the **Batch submission id** FastTab, in the **Number sequence** field, select the the number that will be used for generated batches numbering. The selected number sequence must be continuous.
+1. On the **Electronic document** tab, in the **Batch submission id** FastTab, in the **Number sequence** field, select the number that will be used for generated batches numbering. The selected number sequence must be continuous.
 
 ![Screenshot that shows electronic documents parameters.](apac-mys-e-doc-parameters.jpg)
 
@@ -509,9 +510,9 @@ To configure the electronic invoicing feature, follow these steps.
 1. Import the latest version of the **Malaysian electronic invoicing (MY)** (version **10** or later) Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 
 > [!NOTE]
-> Make sure that the **Consolidated invoice (MY)** ER format configuration is also imported after the feature import. Otherwise import the **Consolidated invoice (MY)** configuration maunally. This format configuration is based on the **Invoices Communication Model** configuration, as well as the **Consolidated Invoice Model Mapping (MY)** configuration imported in the previous chapter.
+> Make sure that the **Consolidated invoice (MY)** ER format configuration is also imported after the feature import. Otherwise, import the **Consolidated invoice (MY)** configuration manually. This format configuration is based on the **Invoices Communication Model** configuration, as well as the **Consolidated Invoice Model Mapping (MY)** configuration imported in the previous chapter.
    
-2. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
+2. Create a copy of the imported Globalization feature and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
 3. On the **Versions** tab, verify that the **Draft** version is selected.
 4. On the **Setups** tab, in the grid, select the **Consolidated invoice derived** feature setup, and then select **Edit**.
 
@@ -521,7 +522,7 @@ To configure the electronic invoicing feature, follow these steps.
 - The **Certificate name** parameter for the **Sign document for Malaysia** action.
 - The **Client secret**, **Client ID**, **Web service URL**, **Login service URL**, and **Environment type** parameters for the **Integrate with MyInvois (Submit document)** action.
 - The **Client secret**, **Client ID**, **Web service URL**, **Login service URL**, and **Environment type** parameters for the **Integrate with MyInvois (Get document)** action.   
-5. Select **Save**, and close the page.
+5. Select **Save** and close the page.
 6. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ### Issue consolidated electronic invoices
@@ -529,10 +530,10 @@ To configure the electronic invoicing feature, follow these steps.
 To generate and submit electronic invoices in batches for posted Customer invoices, do the following steps.
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**.
-2. To submit invoices in batchs, set the **Submit document batch** option to **Yes**.
+2. To submit invoices in batches, set the **Submit document batch** option to **Yes**.
 
 > [!NOTE]
-> Batch and individual submissions are mutually exclusive and can not be run simultaneously. During one run, only batch or only individual submissions can be processed.
+> Batch and individual submissions are mutually exclusive and can't be run simultaneously. During one run, only batch or only individual submissions can be processed.
 
 3. To submit retail invoices individually, set the **Submit retail invoices individually** option to **Yes**.
 
@@ -553,4 +554,4 @@ You can inquire about the submission results by doing the following steps.
 1. On the Action Pane, select **Inquiries** \> **Batch submission invoices** to view the invoices that were submitted within this batch.
 
 > [!NOTE]
-> Due to the restrictions for submitted data size introduced by the authorities, the maximum number of invoices included into one batch is limited by 60. If the number of the invoices being processed is higher then several batches will be automatically generated.
+> Due to the restrictions for submitted data size introduced by the authorities, the maximum number of invoices included in one batch is limited by 60. If the number of invoices being processed is higher than several batches will be automatically generated.
