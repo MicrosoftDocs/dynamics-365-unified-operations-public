@@ -27,7 +27,7 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
 
 | Feature | Description | Status |
 |---|---|---|
-|Dual-write asynch | Dual-write async supports asynchronous data movement between finance and operations apps and Dataverse apps. It includes a centralized self-service error management capability.<br><br>The async integration jobs is available in all public clouds across all regions.<br><br>Pre-requisites for async<ul><li>Dynamics 365 Finance and Operation Platform update (PU) 64 (10.0.40 with latest quality updates) and above. Verify the application foundation version greater than 7.0.7425.0.</li><li>Minimum Dual-write Core solution version 1.0.24093.1</li></ul>For more information, see [Dual-write async](./data-entities/dual-write/dual-write-async.md).|Public Preview|
+|Dual-write asynch | Dual-write async supports asynchronous data movement between finance and operations apps and Dataverse apps. It includes a centralized self-service error management capability.<br><br>The async integration jobs is available in all public clouds across all regions.<br><br>Pre-requisites for async<ul><li>Dynamics 365 Finance and Operation Platform update (PU) 64 (10.0.40 with latest quality updates) and above. Verify the application foundation version greater than 7.0.7425.0.</li><li>Minimum Dual-write Core solution version 1.0.24093.1</li></ul>For more information, see [Dual-write async](../data-entities/dual-write/dual-write-async.md).|Public Preview|
 
 
 
