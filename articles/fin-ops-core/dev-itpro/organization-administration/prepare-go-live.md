@@ -24,7 +24,7 @@ To ensure that the production environment is used for live operations, Microsoft
 
 > [!Note]
 > Most projects are **required** to use the **FastTrack for Dynamics 365 implementation portal** for their Go-live Readiness Review with Microsoft.
-
+> If you have a Microsoft FastTrack Solution Architect assigned to your implementation project, reach them before creating a new project to avoid duplicate projects/reviews being created. The Microsoft FastTrack Solution Architect is able to work with you on the Go-Live review and guides you on the process to follow.
 
 For answers to common questions about go-live, see the [Go-live FAQ](go-live-faq.md).
 
@@ -81,19 +81,21 @@ For most projects, the Go-live Readiness Review is done in the FastTrack for Dyn
 
 > [!Note]
 > There are **three exceptions** that don't use the FastTrack for Dynamics 365 implementation portal:
->1. **GCC projects** - Projects that are in the **[United States (US) Government Community Cloud (GCC)](../../fin-ops/deployment/us-gcc-deployment.md)**. [Download the Go-live checklist](https://aka.ms/d365fogolivechecklist), fill in all necessary details, and send it via email to <d365fogccglr@microsoft.com>. Always include a key stakeholder from the customer and the implementation partner on the email. Microsoft FastTrack reviews the project and follow up.
+>1. **GCC projects** - Projects that are in the **[United States (US) Government Community Cloud (GCC)](../../fin-ops/deployment/us-gcc-deployment.md)**. - Send an email to <d365fogccglr@microsoft.com> to start the Go-Live process. Always include a key stakeholder from the customer and the implementation partner on the email. Microsoft FastTrack reviews the project and follow up.
 >1. **Tenant moves** - For projects that are already live, but planning to move the live solution to a new tenant if the solution is not changing, completing a new Go-live Readiness review is not necessary. Follow the steps described in [Move your production environment to the new tenant](../get-started/move-lcs-implementation-project-tenant.md#move-your-production-environment-to-the-new-tenant) to get the production slot enabled on the new tenant.
 >1. **HR migration projects** - Projects that migrate from the Microsoft Dynamics 365 Human Resources standalone application to finance and operations infrastructure should follow the process described in [Human Resources migration go-live readiness review](../../../human-resources/hr-migration-admin-go-live-readiness-review.md).
 
 ### Initiate the Go-live readiness review in the portal
 
-There are two options to proceed with the Go-live readiness review. You can choose either one of the following options.
+> [!NOTE]
+> If you have a Microsoft FastTrack Solution Architect assigned to your implementation project, reach them before creating a new project using following steps in the portal to avoid duplicate projects/reviews being created. The Microsoft FastTrack Solution Architect is able to work with you on the Go-Live review and guides you on the process to follow.
 
+There are two options to proceed with the Go-live readiness review. You can choose either one of the following options.
 - Option 1 - Self-Service Create/Join the Project in the Dynamics 365 Implementation Portal.
 - Option 2 - Share details with Microsoft to create the Project
 
   > [!NOTE]
-  > Option 2 will be deprecated in few weeks.
+  > Option 2 will be deprecated in the future.
 
 #### Option 1 - Self-service create/join the project in the Dynamics 365 Implementation Portal
 
