@@ -16,7 +16,9 @@ audience: Application User
 [This article is prerelease documentation and is subject to change.]
 
 ## Before you install
-Business performance analytics is currently supported in the following regions: Australia, UK, USA, Europe, Canada, and Japan. It will be available in other regions when Business performance analytics is generally available and in sovereign clouds after Business performance analytics is generally available.
+Business performance analytics is currently supported in the following regions: Australia, UK, USA, Europe, Canada, and Japan. It will be available in these regions when Business performance analytics is generally available and in sovereign clouds after Business performance analytics is generally available.
+
+The support for following regions will be added by January 2025: India, Brazil, East Asia, UAE, Norway, South Africa and Switzerland.
 
 ### System requirements
 A Tier-2 environment (multi-box) is required to preview business performance analytics. For more information about environments, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
@@ -75,7 +77,7 @@ Before Business performance analytics can be installed, confirm the users are en
 1. In Dynamics 365 Finance, go to **System Administration \> Users**.
 2. In filters, add **IsMicrosoftAccount Isexactly true**.
 3. Select the **PowerplatformApp** user. 
-4. Click **Edit**, select **Enabled**.
+4. Click **Edit**, switch button to **Enabled**.
 5. Click **Save**.
 
 #### Required configurations in Dynamics 365 Finance
