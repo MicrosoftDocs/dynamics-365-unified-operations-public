@@ -4,7 +4,7 @@ description: Learn about the end-to-end process for upgrading from Microsoft Dyn
 author: laneswenka
 ms.author: laswenka
 ms.topic: article
-ms.date: 08/03/2023
+ms.date: 10/23/2024
 ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
