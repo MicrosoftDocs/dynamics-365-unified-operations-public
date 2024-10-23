@@ -15,9 +15,7 @@ ms.custom:
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until 10.0.32 GA -->
-
-<!-- KFM: Confirm preview status and GA -->
+<!-- KFM: Preview until 10.0.42 GA -->
 
 Microsoft Dynamics 365 Supply Chain Management includes a sophisticated pricing engine that handles trade agreements for prices and discounts. This pricing engine uses complex rules to determine the best price for a given quotation or order. When Supply Chain Management is integrated with Dynamics 365 Sales, you can choose either to [sync on demand with Supply Chain Management pricing engine](pricing-engine.md) or to apply *seamless sync*, as described in this article.
 
@@ -27,15 +25,13 @@ Seamless sync allows users working on sales orders and quotations in Dynamics 36
 
 This capability significantly improves scenarios where front-end staff predominantly work in Dynamics 365 Sales creating and updating sales quotations and sales orders. As sales quotation and order lines are added or updated in Dynamics 365 Sales, updated line prices, discounts, and totals calculated in Supply Chain Management are immediately reflected in the Dynamics 365 Sales UI without requiring any extra clicks. In most cases, users won't need to manually select **Price quote** or **Price order** buttons in Dynamics 365 Sales to see line prices, discounts, and totals updated to show calculation results made in Supply Chain Management.
 
-<!--KFM: I refer to this feature as "seamless sync" everywhere in this topic. Do we like that? -->
-
 ## Prerequisites
 
 To use seamless sync, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.42 or later.
 - You must be running Dual-write Supply Chain solution version 2.3.X.XXX or later. <!--KFM: Version number needed  -->
-- You must turn on and set up the basic Dynamics 365 Sales integration, as described in [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md). <!--KFM: Please confirm this. -->
+- You must turn on and set up the basic Dynamics 365 Sales integration, as described in [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md).
 - The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)
     - *Make Supply Chain Management price master when integrated with Dynamics 365 Sales* – This is a prerequisite feature. You can learn more about it in [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md).
     - *Automatically synchronize line data and totals with Dynamics 365 Sales* – This feature adds the capabilities described in this article.
@@ -58,7 +54,7 @@ You might choose to set one or both of these options to *No* if you're using cus
 
 ## Nonzero unit prices entered in Dynamics 365 Sales
 
-If a user enters a unit price other than zero for a order and quotation line in Dynamics 365 Sales, then that unit price is also synced and applied to the sales quotation line in Supply Chain Management. In this case, seamless sync won't apply additional calculations to the line data in Supply Chain Management. <!--KFM: This isn't clear. Also, does this relate to one of our scenarios and/or special cases later in this topic? -->
+If a user enters a unit price other than zero for a order and quotation line in Dynamics 365 Sales, then that unit price is also synced and applied to the sales quotation line in Supply Chain Management. In this case, Supply Chain Management won't apply additional calculations to the line data.
 
 ## Manual line discounts
 
@@ -82,7 +78,7 @@ Following standard Supply Chain Management behavior, the line price of USD 19 on
 > [!NOTE]
 > This case applies equally to sales quotations.
 
-### Case 2: Dynamics 365 Sales price lists coexists with Supply Chain Management trade agreements
+### Case 2: Dynamics 365 Sales price lists coexist with Supply Chain Management trade agreements
 
 In this case, suggested sales prices are stored in a Dynamics 365 Sales price list, whereas actual agreed-upon and customer-specific prices are stored in trade agreements in Supply Chain Management. The following prices are defined for the same item:
 
@@ -95,7 +91,7 @@ A salesperson creates a sales order in Dynamics 365 Sales and adds a line for th
 
 If the salesperson opens the order in Dynamics 365 Sales and select the **Price order** button, then this line is repriced in accordance with the Supply Chain Management trade agreement evaluation policy. The line unit price in Supply Chain Management is therefore updated to USD 19 and synced back to Dynamics 365 Sales.
 
-If your company requires the system to show suggested prices (as stored in price lists in Dynamics 365 Sales) when creating a sales order or quotation, while applying customer-specific prices (stored in trade agreements Supply Chain Management and possibly different from the suggested prices) to the final order, then salespeople must be trained to use the **Price order** button after creating a new order. <!--KFM: Please review this paragraph. -->
+We generally recommend against using suggested prices defined in Dynamics 365 Sales price lists when Supply Chain Management is price master, but if your company does use a process like the one described in this scenario, then salespeople must be trained to use the **Price order** button after creating a new order.
 
 > [!NOTE]
 > This case equally applies to sales quotation.
@@ -138,8 +134,6 @@ This scenario assumes the same system setup as scenario 1.
 #### Scenario 2 user story
 
 On Tuesday, Sarah (from the previous scenario) finds out that her customer wants to increase the quantity of items in the sales quotation she made for them on Monday. She opens the quotation in Dynamics 365 Sales and edits quantity for the relevant line and saves the change. The system synchronizes the updated line to Supply Chain Management, which triggers relevant recalculations. As before, Dynamics 365 Sales displays the *Syncing from F&O* message during this process and Sarah doesn't to select the **Price quote** button to trigger it.
-
-When you create an order in Sales, that order is immediately synced to Supply Chain Management by using the values that you entered in Sales. When you select **Price order** or **Price quote** in Sales, Supply Chain Management calculates the price for each order line, and the total order, based on trade agreement rules that are defined in Supply Chain Management. The new calculated values are then synced back to Sales. <!--KFM: Is this right? We just said that the user doesn't need to press those buttons. -->
 
 > [!NOTE]
 > The scenario of updating sales orders and order lines works similarly.
