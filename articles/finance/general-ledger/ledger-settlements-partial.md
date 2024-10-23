@@ -33,7 +33,7 @@ The ledger settlement process enables an organization to "reconcile" clearing ac
 
 ## Example
 
-An organization pays an insurance company 12,000 US dollars (USD) in October for a yearly policy. The 12,000 USD can't yet be fully expensed, because the insurance company hasn't fulfilled its contractual obligations. As each month passes, 1,000 USD is recognized as an expense, and 1,000 USD is cleared from the accrued expense account as a credit amount. Therefore, the accrued expense account begins with a balance of 12,000 USD debit. Then, each month, a 1,000 USD credit is posted to reduce the balance in the account. After 12 months, the 12,000 USD is cleared, and ledger settlement can be completed by marking the 13 transactions, which net to 0 (zero). You can't settle the 12,000 USD debit until all the credits have been posted. If expenses of this type cross fiscal years, it can be difficult to use ledger settlements and the advanced awareness options, because settlements can't cross fiscal years.
+An organization pays an insurance company 12,000 US dollars (USD) in October for a yearly policy. The 12,000 USD can't yet be fully expensed, because the insurance company hasn't fulfilled its contractual obligations. As each month passes, 1,000 USD is recognized as an expense, and 1,000 USD is cleared from the accrued expense account as a credit amount. Therefore, the accrued expense account begins with a balance of 12,000 USD debit. Then, each month, a 1,000 USD credit is posted to reduce the balance in the account. After 12 months, the 12,000 USD is cleared, and ledger settlement can be completed by marking the 13 transactions, which net to 0 (zero). You can't settle the 12,000 USD debit until all the credits are posted. If expenses of this type cross fiscal years, it can be difficult to use ledger settlements and the advanced awareness options, because settlements can't cross fiscal years.
 
 In Microsoft Dynamics 365 Finance version 10.0.42, functionality for partial ledger settlements is available. This functionality fixes the issue of expenses that cross fiscal years, because it enables a partial ledger settlement to be done at the end of the year (or each month or fiscal period). In the preceding example of an insurance policy, at the end of December, 3,000 USD has been cleared from the accrued expense account. Therefore, on the **Ledger settlements** page, the original 12,000 USD debit and three 1,000 USD credit transactions can be selected and ledger-settled. The remaining 9,000 USD is then carried forward to the next year for ledger settlement.
 
@@ -72,7 +72,7 @@ If the **Awareness between ledger settlement and year-end close** and **Partial 
 - The accounting currency and reporting currency totals are shown.
 - The **Reverse marked transactions** button is moved to the **Ledger settlements history** page.
 
-For partial ledger settlements, debits don't have to equal credits. Therefore, if transactions are partially settled, some transactions have a remaining balance. Settlement history is now tracked for all transactions, and the following columns have been added to the grid to track this information.
+For partial ledger settlements, debits don't have to equal credits. Therefore, if transactions are partially settled, some transactions have a remaining balance. Settlement history is now tracked for all transactions, and the following columns are added to the grid to track this information.
 
 - History
 - Amount in reporting currency
@@ -108,7 +108,7 @@ The **User ID** column provides an audit trail of the user ID that settled or th
 
 To view ledger-settled transactions, go to **General ledger** \> **Inquiries and reports** \> **Ledger settlements inquiry**.
 
-The **Remaining amount in transaction currency**, **Remaining amount in accounting currency**, and **Remaining amount in reporting currency** columns that have been added to the grid show values for partially settled transactions.
+The **Remaining amount in transaction currency**, **Remaining amount in accounting currency**, and **Remaining amount in reporting currency** columns in the grid show values for partially settled transactions.
 
 If the **Settlement ID** column is set to **Multiple**, select **View settlements** to open the **Ledger settlement history** page, where you can view the full settlement history.
 
