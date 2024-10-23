@@ -4,7 +4,7 @@ description: Learn how to import data into the General journal by using the Gene
 author: rcarlson
 ms.author: rcarlson
 ms.topic: article
-ms.date: 02/02/2024
+ms.date: 10/25/2024
 ms.reviewer: twheeloc 
 audience: Application User
 ms.search.region: Global
