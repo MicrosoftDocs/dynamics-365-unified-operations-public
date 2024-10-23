@@ -25,7 +25,7 @@ This is an exciting moment in the upgrade project. The output of this task provi
 Before you run this process in a shared sandbox environment, we recommend that you run it in a development environment. There are two reasons for this approach:
 
 - It provides local data that developers can write and test their custom data upgrade scripts against.
-- It helps reduce the overall time that is spent on iterations of the data upgrade process. In a development environment, an issue can be debugged immediately, code can be adjusted, and the upgrade can be rerun within minutes. Larger sandbox environments don't allow for this level of agility. In those environments, a minimum of several hours will be required to debug and remediate issues, update code, deploy the updated code, and rerun the upgrade.
+- It helps reduce the overall time that is spent on iterations of the data upgrade process. In a development environment, an issue can be debugged immediately, code can be adjusted, and the upgrade can be rerun within minutes. Larger sandbox environments don't allow for this level of agility. In those environments, a minimum of several hours is required to debug and remediate issues, update code, deploy the updated code, and rerun the upgrade.
 
 We strongly recommend running the [Upgrade analyzer](upgrade-analyzer-tool.md) and respond to the identified issues before running data upgrade. This helps ensure that your data upgrade is quicker and easier.
 
@@ -41,12 +41,12 @@ We strongly recommend running the [Upgrade analyzer](upgrade-analyzer-tool.md) a
 Ensure that you've completed the preupgrade checklist in AX 2012. For more information, see [Preupgrade checklist for data upgrade](prepare-data-upgrade.md).
 
 > [!IMPORTANT]
-> It is recommended that before you run the upgrade, apply the latest **Quality Update** for the Dynamics 365 version you are using.
+> It's recommended that before you run the upgrade, apply the latest **Quality Update** for the Dynamics 365 version you are using.
 
 
 ### Back up your AX 2012 database
 
-Back up your AX 2012 database using the standard Microsoft SQL Server process to produce a BAK file. If you use the compression option when you create the backup, the file size will be smaller, and less time is required in order upload it to and download it from Microsoft Azure Storage.
+Back up your AX 2012 database using the standard Microsoft SQL Server process to produce a BAK file. If you use the compression option when you create the backup, the file size is smaller, and less time is required in order upload it to and download it from Microsoft Azure Storage.
 
 > [!NOTE]
 > The collation of the AX 2012 database must be **SQL_Latin1_General_CP1_CI_AS**. If your database is a different collation, follow these steps: [Change the database collation for development environments](coll-dev-env.md). 
@@ -96,13 +96,13 @@ To get the latest data upgrade deployable package for a target environment that 
 1. In the **Shared asset** library, under **Select asset type**, select **Software deployable package**.
 1. All data upgrade packages start with **AX2012DataUpgrade**. In the list, find the data upgrade package that corresponds to your specific Dynamics 365 version.
 
-    For example, if you're upgrading to version 10.0.26, the package name will be **AX2012DataUpgrade-10.0.26**.
+    For example, if you're upgrading to version 10.0.26, the package name is **AX2012DataUpgrade-10.0.26**.
 
 1. Select the data upgrade package to download, and save\copy it to the **C:\\Temp** folder in the cloud-hosted environment.
 1. Select and hold (or right-click) the download, and then select **Properties**.
 1. Select the **Unblock** checkbox, select **OK**, and then extract the file. 
 1. Open a PowerShell Prompt as an admin, and change to the deployable package folder (for example, **C:\\Temp\\AX2012DataUpgrade 10.0.26**).
-1. Ensure the services you stopped in the **Download and restore the backup to the customer-managed development environment** step above are still stopped. If these are running, you will get locking issues on the database. 
+1. Ensure the services you stopped in the **Download and restore the backup to the customer-managed development environment** step above are still stopped. If these are running, you get locking issues on the database. 
 1. Run the deployable package by using the following script. You can edit the runbook ID and file name in the script.
 
     ```PowerShell
@@ -132,7 +132,7 @@ FROM [DBUPGRADE].[DATAUPGRADESTATUS]
 ORDER BY EndTime DESC
 ```
 
-The results will resemble the following example. The dates and times that are given here are for illustration purposes only. Times vary, based on data volumes and the modules that are used in AX 2012.
+The results resemble the following example. The dates and times that are given here are for illustration purposes only. Times vary, based on data volumes and the modules that are used in AX 2012.
 
 | StartTime | EndTime | Steps | SubSteps | STATUS |
 |---|---|---|---|---|
