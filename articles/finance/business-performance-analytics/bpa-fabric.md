@@ -100,20 +100,20 @@ This section shows how you can create a custom Power BI dataset that extends the
 > [!NOTE]
 > Before you begin this procedure, you must link Business performance analytics data to your Fabric workspace as described earlier in this article.
 
-1. Download the BPA Dataset
-    a.	Log in to https://make.powerapps.com/
-    b.	Search for msdyn_BpaReports solution under All
-2. Click on FnO Dataset
-3. From the report details page, click on Actions -> Download report (note download location)
-4. Upload the BPA Dataset:
-    -	In https://app.powerbi.com, navigate to your workspace and upload the BPA dataset from the location in Step 3
+1. Download the Business performance analytics dataset
+    a.	Log into https://make.powerapps.com/.
+    b.	Go to **All** and search for msdyn_BpaReports solution.
+2. Click on finance and operations dataset.
+3. From the report details page, click **Actions** > **Download report**. Note the download location.
+4. Upload the Business performance analytics dataset:
+    -	In https://app.powerbi.com, go to your workspace and upload the Business performance analytics dataset from the location in Step 3.
 5. Connect Dataset to Lakehouse:
-    -	Find the SQL Analytics Endpoint in the workspace (under the Lakehouse), copy the SQL connection string.
-    -	In the Semantic Model, go to settings, and under Parameters, enter the connection string.
-    -	Note: Reload the page and re-enter the credentials
-6.	Validate the Connection:
+    -	Find the SQL Analytics Endpoint in the workspace (under the Lakehouse) and copy the SQL connection string.
+    -	In the Semantic Model, go to **Settings** > **Parameters** and enter the connection string.
+    -	Note: Reload the page and re-enter the credentials.
+6.	Validate the connection:
     -	Refresh settings and edit data source credentials, ensuring OAuth authentication.
-    -	Refresh the dataset to see the tables from BPA.
+    -	Refresh the dataset to see the tables from Business performance analytics.
 
 
 ### Use the Business performance analytics dataset in Power BI desktop
@@ -138,7 +138,7 @@ This section shows how you can create a custom Power BI dataset that extends the
 18. Select **File** \> **Save** to save the new dataset as a PBIX file.
 
 > [!NOTE]
-    > Authentication Issues: Ensure you are using OAuth 2.0 for authentication when creating connections.
-    > Refresh Delays: After each configuration, allow up to 2 minutes for the dataset or Lakehouse to refresh.
-    > Dataset Not Loading: Double-check the SQL Connection String and parameters in Power BI and BPA.
+> Authentication issues: Ensure you are using OAuth 2.0 for authentication when creating connections.
+> Refresh delays: After each configuration, allow up to 2 minutes for the dataset or Lakehouse to refresh.
+> Dataset not loading: Double-check the SQL Connection String and parameters in Power BI and BPA.
 
