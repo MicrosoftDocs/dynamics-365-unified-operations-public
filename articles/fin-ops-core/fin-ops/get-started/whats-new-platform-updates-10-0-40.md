@@ -37,7 +37,7 @@ This section contains a table that lists the enhancements that are included in t
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-| Data Management | Automatic retry support for DMF recurring integration jobs | Data management recurring integration jobs were sometimes failing without completing the import/export operations due to batch node restarts. To address this, we've implemented retry support that allows for automatic retries in case of batch restarts. For more information, see [Recurring integrations](../../../dev-itpro/data-entities/recurring-integrations). | Default |
+| Data Management | Automatic retry support for DMF recurring integration jobs | Data management recurring integration jobs were sometimes failing without completing the import/export operations due to batch node restarts. To address this, we've implemented retry support that allows for automatic retries in case of batch restarts. For more information, see [Recurring integrations](../../dev-itpro/data-entities/recurring-integrations). | Default |
 
 ### Bug fixes
 
