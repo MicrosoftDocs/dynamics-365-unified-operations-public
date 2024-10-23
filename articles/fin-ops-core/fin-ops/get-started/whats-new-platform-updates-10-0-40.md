@@ -3,7 +3,7 @@ title: Platform updates for version 10.0.40 of finance and operations apps (June
 description: This article lists the features that are included in the platform updates for version 10.0.40 of finance and operations apps.
 author: johnmichalak
 ms.author: johnmichalak
-ms.date: 06/12/2024
+ms.date: 10/23/2024
 ms.topic: whats-new
 ms.custom: 
   - bap-template
@@ -37,7 +37,7 @@ This section contains a table that lists the enhancements that are included in t
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-| Data Management | Automatic retry support for DMF recurring integration jobs | Data management recurring integration jobs were sometimes failing without completing the import/export operations due to batch node restarts. To address this, we've implemented retry support, which allows for automatic retries in case of batch restarts. For more information, see [Recurring integrations](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/recurring-integrations). | Default |
+| Data Management | Automatic retry support for DMF recurring integration jobs | Data management recurring integration jobs were sometimes failing without completing the import/export operations due to batch node restarts. To address this, we've implemented retry support that allows for automatic retries in case of batch restarts. For more information, see [Recurring integrations](../../dev-itpro/data-entities/recurring-integrations). | Default |
 
 ### Bug fixes
 
