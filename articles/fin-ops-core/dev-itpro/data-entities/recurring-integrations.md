@@ -202,7 +202,7 @@ There was one regular batch job with one runtime batch task.
 ![image](https://github.com/user-attachments/assets/77af9255-3fb4-46f0-be50-03d6c2df9232)
 
 New Design: 
-There is one regular batch job (Job1) that creates a new runtime child job(Job2) and regular batch task is added to Job2 instead of Job1. 
+There's one regular batch job (Job1) that creates a new runtime child job(Job2) and regular batch task is added to Job2 instead of Job1. 
 
 ![image](https://github.com/user-attachments/assets/87f3c501-3d1e-4a9f-92f9-70a2ffb92186)
 
