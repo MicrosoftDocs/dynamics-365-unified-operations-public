@@ -29,6 +29,9 @@ Before you run this process in a shared sandbox environment, we recommend that y
 
 We strongly recommend running the [Upgrade analyzer](upgrade-analyzer-tool.md) and respond to the identified issues before running data upgrade. This helps ensure that your data upgrade is quicker and easier.
 
+> [!IMPORTANT]
+> Upgrades are not supported on a Unified Developer Experience (UDE) environment. For a developer environment you must use either a Cloud Hosted Environment (CHE) or the VHD VM that is run locally, see: [Deploy and access development environments](../dev-tools/access-instances)
+
 ## End-to-end data upgrade process
 
 ![Data upgrade process.](media/endToEndDataUpgradeProcess.png)
