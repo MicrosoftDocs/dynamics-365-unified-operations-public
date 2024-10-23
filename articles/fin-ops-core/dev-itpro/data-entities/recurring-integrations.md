@@ -3,14 +3,14 @@ title: Recurring integrations
 description: Learn about recurring integrations, including the process of data migration and the movement into and out of any enterprise system.
 author: pnghub
 ms.author: gned
-ms.topic: article
-ms.date: 06/11/2024
+ms.topic: how-to
+ms.custom: 
+  - bap-template
+ms.date: 10/23/2024
 ms.reviewer: johnmichalak
-audience: Developer
 ms.assetid: 70a4f748-b0bd-44b1-a118-56aacb91481c
 ms.search.region: Global
 ms.search.validFrom: 2016-02-28
-ms.search.form: 
 ms.dyn365.ops.version: AX 7.0.0
 ---
 
@@ -194,7 +194,7 @@ BODY
 ```
 ## Automatic retry support during batch node restarts
 
-We've recently implemented automatic retry support for recurring data jobs, enabling retries in case of batch restarts. This feature is available starting from PU64.
+Automatic retry support for recurring data jobs has been implemented to enable retries when a batch restarts. This feature is available starting from PU64.
 
 Previous Design: 
 There was one regular batch job with one runtime batch task.
@@ -202,12 +202,12 @@ There was one regular batch job with one runtime batch task.
 ![image](https://github.com/user-attachments/assets/77af9255-3fb4-46f0-be50-03d6c2df9232)
 
 New Design: 
-There is one regular batch job (Job1) which creates a new runtime child job(Job2) and regular batch task is added to Job2 instead of Job1. 
+There is one regular batch job (Job1) that creates a new runtime child job(Job2) and regular batch task is added to Job2 instead of Job1. 
 
 ![image](https://github.com/user-attachments/assets/87f3c501-3d1e-4a9f-92f9-70a2ffb92186)
 
 > [!NOTE]
-> If you've customized your code which involves SysIntegrationActivityBatch and SysIntegrationActivityBatchTask classes, you might encounter issues with recurring Integrations feature under the new design. For example, if you have created your own custom batch task and are adding task to Job1 as per previous design then you are adding tasks to the wrong job. You should now add your custom tasks to job2 instead of job1 as per new design.
+> If you've customized your code that involves SysIntegrationActivityBatch and SysIntegrationActivityBatchTask classes, you may encounter issues with the recurring Integrations feature under the new design. For example, if you have created your own custom batch task and are adding task to Job1 as per previous design, then you are adding tasks to the wrong job. You should now add your custom tasks to job2 instead of job1 as per new design.
  
  
 ## Tips and tricks
