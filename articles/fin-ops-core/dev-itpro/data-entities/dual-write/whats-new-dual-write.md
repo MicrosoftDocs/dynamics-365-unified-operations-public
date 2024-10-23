@@ -21,13 +21,23 @@ ms.dyn365.ops.version: 10.0.8
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
+## October 2024
+
+### Dual-write async 
+
+| Feature | Description | Status |
+|---|---|---|
+|Dual-write asynch | Dual-write async supports asynchronous data movement between finance and operations apps and Dataverse apps. It includes a centralized self-service error management capability.<br><br>The async integration jobs is available in all public clouds across all regions.<br><br>Pre-requisites for async<ul><li>Dynamics 365 Finance and Operation Platform update (PU) 64 (10.0.40 with latest quality updates) and above. Verify the application foundation version greater than 7.0.7425.0.</li><li>Minimum Dual-write Core solution version 1.0.24093.1</li></ul>Learn more about [Dual-write async](https://learn.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-async).|Public Preview|
+
+
+
 ## September 2024
 
 ### Security update 
 
 | Feature | Description | Status |
 |---|---|---|
-|Security update |Security enhancements affecting service bus, table storage and blobs impacting the Dynamics 365 finance and operations and Dual-write core solutions.<br>The security fixes are mandatory. By November 30, 2024, all customers using Dual-write are required to upgrade. <ul><li>PU63 Minimum platform version 7.0.7198.188 or PU64 Minimum platform version 7.0.7279.121.</li><li>Dual-write core solution version in Dataverse - 1.0.24073.3.</li></ul><br>If the upgrade isn't enabled by the November 30 2024, the Dual-write pause and resume and auto-alerts features won't function. These features haven't changed in functionality but are more secure.|General availability|
+|Security update |Security enhancements affecting service bus, table storage and blobs impacting the Dynamics 365 finance and operations and Dual-write core solutions.<br>The security fixes are mandatory. By November 30, 2024, all customers using Dual-write are required to upgrade. <ul><li>PU63 Minimum platform version 7.0.7198.188 or PU64 Minimum platform version 7.0.7279.121.</li><li>Dual-write core solution version in Dataverse - 1.0.24073.3.</li></ul><br>Why is this required?<br><ul><li>If you do not have the minimum required version of Dual-Write core solution installed, the entire Dual-Write feature will not function.</li><li>If the required Dynamics 365 Finance and Operations version updates are not performed by November 30, 2024, Dual-Write Pause and Resume and Auto Alerts will not function.</li></ul><br>These features haven't changed in functionality but are more secure.|General availability|
 
 
 ## June 2024
