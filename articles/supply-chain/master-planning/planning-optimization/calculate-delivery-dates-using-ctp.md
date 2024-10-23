@@ -48,7 +48,7 @@ A CTP calculation that considers both materials and resources might show a large
 To use near real-time CTP, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.41 or later.
-- The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in order).
+- The following features must be turned on in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in order).
     - *(Preview) Improve Planning Optimization performance by merging and queueing plan regeneration jobs*
     - *(Preview) Near real-time CTP*
 
