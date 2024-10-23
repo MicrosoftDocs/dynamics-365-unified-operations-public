@@ -24,7 +24,7 @@ CTP works slightly differently, depending on the master planning engine that you
 
 CTP for the deprecated master planning engine is always available. However, if you want to use CTP for Planning Optimization, it must be turned for your system. As of Supply Chain Management version 10.0.36, it's turned on by default. Admins can turn this functionality on or off by searching for the *CTP for Planning Optimization* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
-<!-- KFM: Feature is renamed to "Batch CTP", but is also mandatory, so we can probably just remove this section. -->
+<!-- KFM:  Feature is renamed to "Batch CTP", but is also mandatory, so we can probably just remove this section. -->
 
 ## How CTP compares to ATP
 
@@ -37,9 +37,9 @@ A CTP calculation that considers both materials and resources might show a large
 ## Near real-time CTP (preview)
 
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: Preview until further notice -->
+<!-- KFM:  Preview until further notice -->
 
-*Near real-time CTP* enables the system to to calculate CTP confirmed dates in the background without blocking user interface interactions or requiring you to run planning to update the dates. It lets you use the standard CTP delivery date control with Planning Optimization, which removes a few of the limitations that apply when using CTP with both Planning Optimization and the deprecated master planning engine. <!-- KFM: This topic often distinguishes between PO and Classic engine CTP functionality. Does this new control change this? We have long planned to split this into two topics. Maybe now is the time to do that so we can discuss PO functionality without mentioning classic at all. -->
+*Near real-time CTP* enables the system to to calculate CTP confirmed dates in the background without blocking user interface interactions or requiring you to run planning to update the dates. It lets you use the standard CTP delivery date control with Planning Optimization, which removes a few of the limitations that apply when using CTP with both Planning Optimization and the deprecated master planning engine. <!-- KFM:  This topic often distinguishes between PO and Classic engine CTP functionality. Does this new control change this? We have long planned to split this into two topics. Maybe now is the time to do that so we can discuss PO functionality without mentioning classic at all. -->
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
@@ -58,26 +58,26 @@ The prerequisite feature, *Improve Planning Optimization performance by merging 
 
 Here's how queueing and merging works
 
-- You can set the maximum number of planning quests that the system can merge into a single job (default is 10) <!-- KFM: Where do we configure this? What are the considerations? -->. On reaching this limit, the system adds new planning requests to the queue as standalone jobs that could also be merged into another new job.
+- You can set the maximum number of planning quests that the system can merge into a single job (default is 10) <!-- KFM:  Where do we configure this? What are the considerations? -->. On reaching this limit, the system adds new planning requests to the queue as standalone jobs that could also be merged into another new job.
 - Planning requests can only be merged into a single job if they meet the following requirements:
     - All merged requests must belong to the same organization and master plan.
-    - All merged requests must use the same filter attribute (such as `ItemId` for filtered runs coming from a net requirements form update). <!-- KFM: What do we mean by "form update"? -->
+    - All merged requests must use the same filter attribute (such as `ItemId` for filtered runs coming from a net requirements form update). <!-- KFM:  What do we mean by "form update"? -->
     - All merged requests must have the same UI language.
 - Before adding a planning request to the queue as a standalone job, the system checks for other existing not started jobs that could be merged with it.
-- You can set the maximum number of jobs allowed in the queue (default is 20). <!-- KFM: Where do we configure this? What are the considerations? --> On reaching this limit, the system will show an error to any user that submits a planning run until more space is available in the queue. Note that each job in the queue can include several merged planning jobs.
+- You can set the maximum number of jobs allowed in the queue (default is 20). <!-- KFM:  Where do we configure this? What are the considerations? --> On reaching this limit, the system will show an error to any user that submits a planning run until more space is available in the queue. Note that each job in the queue can include several merged planning jobs.
 
 ### Near real-time CTP functionality
 
 Near real-time CTP provides the following functionality:
 
-- Multiple sellers can create sales lines at the same time while getting confirmed dates right away. <!-- KFM: What kind of dates? -->
-- When you mass import sales lines, the system automatically calculates confirmed dates. <!-- KFM: What kind of dates? -->
-- The system recalculates all confirmed dates to provide a single delivery date for all lines. <!-- KFM: Do we mean a single deliver date for the *entire order*? -->
+- Multiple sellers can create sales lines at the same time while getting confirmed dates right away. <!-- KFM:  What kind of dates? -->
+- When you mass import sales lines, the system automatically calculates confirmed dates. <!-- KFM:  What kind of dates? -->
+- The system recalculates all confirmed dates to provide a single delivery date for all lines. <!-- KFM:  Do we mean a single deliver date for the *entire order*? -->
 
 > [!NOTE]
 > Because the same CTP delivery date control can now be used by both Planning Optimization and the deprecated master planning engine, the CTP for Planning Optimization delivery date control has been renamed to *Batch CTP* to minimize the confusion and highlight the difference.
 
-<!-- KFM: Does this note fit here? Also, does this require the *Batch CTP* feature to be enabled in FM? -->
+<!-- KFM:  Does this note fit here? Also, does this require the *Batch CTP* feature to be enabled in FM? -->
 
 ## How CTP differs depending on the master planning engine that you use
 
@@ -89,7 +89,7 @@ The following table summarizes the differences between CTP for Planning Optimiza
 | Calculation time | The calculation is triggered by running a dynamic plan as a scheduled task. | The calculation is immediately triggered each time that you enter or update a sales order line. |
 | **CTP for Planning Optimization status** field value | <p>A value of *Not ready* is shown for orders and order lines where the dynamic plan hasn't run since the orders and lines were created or last updated.</p><p>A value of *Ready* is shown for orders and lines where CTP has been used to calculate confirmed delivery dates by running the dynamic plan.</p> | A value of *Ready* is always shown. |
 
-<!-- KFM: We need to update this table. Details needed. -->
+<!-- KFM:  We need to update this table. Details needed. -->
 
 ## <a name="default-methods"></a>Set default delivery date control methods
 
@@ -107,7 +107,7 @@ The default delivery date control method will be applied to all new order lines 
     - *ATP* – ATP is the quantity of an item that is available and can be promised to a customer on a specific date. The ATP calculation includes uncommitted inventory, lead times, planned receipts, and issues.
     - *ATP + Issue margin* – The shipping date equals the ATP date plus the issue margin for the item. The issue margin is the time that is required to prepare the items for shipment.
     - *CTP* – Use the CTP calculation that is provided by the deprecated master planning engine. If you're using Planning Optimization, the *CTP* delivery date control method isn't allowed and, if it's selected, will cause an error when the calculation runs.
-    - *CTP for Planning Optimization* – Use the CTP calculation that is provided by Planning Optimization. This option has no effect if you're using the deprecated master planning engine. <!-- KFM: Renamed to *Batch CTP*? Starting when? Also works for "classic" planning; and if so, to what effect and which features are required? -->
+    - *CTP for Planning Optimization* – Use the CTP calculation that is provided by Planning Optimization. This option has no effect if you're using the deprecated master planning engine. <!-- KFM:  Renamed to *Batch CTP*? Starting when? Also works for "classic" planning; and if so, to what effect and which features are required? -->
 
 ### Set delivery date control overrides for individual products
 
@@ -166,7 +166,7 @@ The **CTP for Planning Optimization status** field indicates whether confirmed d
 - To view the status for a sales order line, open the sales order, and select the sales line. Then, on the **Line details** FastTab, on the **Delivery** tab, review the **CTP for Planning Optimization status** value. The **Confirmed ship date** and **Confirmed receipt date** fields for the line are also shown on this tab after they have been calculated.
 - To view the status for an entire order, open the sales order, and select the **Header** view. Then, on the **Delivery** FastTab, review the **CTP for Planning Optimization status** value. The **Confirmed ship date** and **Confirmed receipt date** for the order are also shown on this tab after they have been calculated.
 
-<!-- KFM: The following text may be untrue and needs to be reviewed with the PM for next revision:
+<!-- KFM:  The following text may be untrue and needs to be reviewed with the PM for next revision:
 
 The sales orders that are *Ready* or *Not ready* are shown in the **All sales orders** list page. You can check the sales order that are *Ready* or *Not ready* from the sales order list page by filtering on this new status field.
 
@@ -182,7 +182,7 @@ You can change the **Delivery date control** value for any open order at any tim
 
 ### Change to CTP at the order header level
 
-<!-- KFM: Would be nice to mention how changing this setting on the header affects the individual lines. -->
+<!-- KFM:  Would be nice to mention how changing this setting on the header affects the individual lines. -->
 
 To change an order so that it uses CTP at the order header level, follow these steps.
 
@@ -194,12 +194,12 @@ To change an order so that it uses CTP at the order header level, follow these s
     - *CTP* – Use the CTP calculation that is provided by the deprecated master planning engine. If you're using Planning Optimization, the *CTP* delivery date control method isn't allowed. Therefore, if you select this value, an error will occur when the calculation runs.
     - *CTP for Planning Optimization* – Use the CTP calculation that is provided by Planning Optimization. This setting has no effect if you're using the deprecated master planning engine.
 
-<!-- KFM: Additional dialogs are shown here. Review these with the PM and expand this procedure at next revision. -->
+<!-- KFM:  Additional dialogs are shown here. Review these with the PM and expand this procedure at next revision. -->
 1. Select **OK** to apply your changes.
 
 ### Change to CTP at the order line level
 
-If you created an order line by using a different delivery date control method, you can change to CTP at any time. Changes that you make at the line level don't affect any other lines. However, they might cause the overall order delivery dates to move forward or backward, depending on how each updated line calculation changes. <!-- KFM: Confirm this intro at next revision -->
+If you created an order line by using a different delivery date control method, you can change to CTP at any time. Changes that you make at the line level don't affect any other lines. However, they might cause the overall order delivery dates to move forward or backward, depending on how each updated line calculation changes. <!-- KFM:  Confirm this intro at next revision -->
 
 To change an order so that it uses CTP for the deprecated master planning engine at the line level, follow these steps.
 
