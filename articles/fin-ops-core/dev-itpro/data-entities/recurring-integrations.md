@@ -192,7 +192,24 @@ POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExe
 BODY
 {"executionId":"<executionId>"}
 ```
+## Automatic retry support during batch node restarts
 
+We've recently implemented automatic retry support for recurring data jobs, enabling retries in case of batch restarts. This feature is available starting from PU64.
+
+Previous Design: 
+There was one regular batch job with one runtime batch task.
+
+![image](https://github.com/user-attachments/assets/77af9255-3fb4-46f0-be50-03d6c2df9232)
+
+New Design: 
+There is one regular batch job (Job1) which creates a new runtime child job(Job2) and regular batch task is added to Job2 instead of Job1. 
+
+![image](https://github.com/user-attachments/assets/87f3c501-3d1e-4a9f-92f9-70a2ffb92186)
+
+> [!NOTE]
+> If you've customized your code which involves SysIntegrationActivityBatch and SysIntegrationActivityBatchTask classes, you might encounter issues with recurring Integrations feature under the new design. For example, if you have created your own custom batch task and are adding task to Job1 as per previous design then you are adding tasks to the wrong job. You should now add your custom tasks to job2 instead of job1 as per new design.
+ 
+ 
 ## Tips and tricks
 ### Viewing the batch job status for recurring integrations from the Data management workspace
 Recurring integration data jobs run in batch mode. If a recurring job fails, you must investigate the instance of the batch job as part of the troubleshooting process. To make this investigation easier, click **Manage messages** to get to the **Process status for recurring data job** page, which now shows the status of the batch job.
