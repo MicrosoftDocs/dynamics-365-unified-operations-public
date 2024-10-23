@@ -90,11 +90,11 @@ When a debit transaction is partially settled with a credit transaction, or when
 
 After settlement, the **Settlement ID** column is set to **Multiple** for the debit transaction, because more than one credit was settled. Each pair of debit/credit transactions has its own settlement ID, which is shown in the **Settlement ID** column. Because the second credit transaction for 400.00 isn't fully settled, the status is **Partially settled**, and the remaining amount is updated to **100.00**.
 
-| Status      | Voucher | Date       | Settlement ID | Date settled | Debit    | Credit | Amount remaining |
-|-------------|---------|------------|---------------|--------------|----------|--------|------------------|
-| Not settled | GJ00105 | 10/01/2024 | Multiple      | 11/05/2024   | 1,000.00 |        | 0.00             |
-| Not settled | GJ00210 | 10/15/2024 | 012264        | 11/05/2024   |          | 700.00 | 0.00             |
-| Not settled | GJ00236 | 11/05/2024 | 012265        |              |          | 400.00 | 100.00           |
+| Status            | Voucher | Date       | Settlement ID | Date settled | Debit    | Credit | Amount remaining |
+|-------------------|---------|------------|---------------|--------------|----------|--------|------------------|
+| Settled           | GJ00105 | 10/01/2024 | Multiple      | 11/05/2024   | 1,000.00 |        | 0.00             |
+| Settled           | GJ00210 | 10/15/2024 | 012264        | 11/05/2024   |          | 700.00 | 0.00             |
+| Partially settled | GJ00236 | 11/05/2024 | 012265        |              |          | 400.00 | 100.00           |
 
 ## View settlements/Ledger settlements history
 
