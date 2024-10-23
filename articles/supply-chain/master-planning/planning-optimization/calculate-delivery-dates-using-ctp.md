@@ -24,6 +24,8 @@ CTP works slightly differently, depending on the master planning engine that you
 
 CTP for the deprecated master planning engine is always available. However, if you want to use CTP for Planning Optimization, it must be turned for your system. As of Supply Chain Management version 10.0.36, it's turned on by default. Admins can turn this functionality on or off by searching for the *CTP for Planning Optimization* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
+<!-- KFM: Feature is renamed to "Batch CTP", but is also mandatory, so we can probably just remove this section. -->
+
 ## How CTP compares to ATP
 
 CTP and ATP are similar, but CTP can often provide a more accurate result, as the following example shows.
@@ -47,8 +49,8 @@ To use near real-time CTP, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.41 or later.
 - The following features must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in order).
-    1. *Improve Planning Optimization performance by merging and queueing plan regeneration jobs*
-    1. *Near real-time CTP*
+    - *(Preview) Improve Planning Optimization performance by merging and queueing plan regeneration jobs*
+    - *(Preview) Near real-time CTP*
 
 ### Queueing and merging plan regeneration jobs
 
@@ -70,10 +72,12 @@ Near real-time CTP provides the following functionality:
 
 - Multiple sellers can create sales lines at the same time while getting confirmed dates right away. <!-- KFM: What kind of dates? -->
 - When you mass import sales lines, the system automatically calculates confirmed dates. <!-- KFM: What kind of dates? -->
-- The system recalculates all confirmed dates to provide a single delivery date all lines. <!-- KFM: Do we mean a single deliver date for the *entire order*? -->
+- The system recalculates all confirmed dates to provide a single delivery date for all lines. <!-- KFM: Do we mean a single deliver date for the *entire order*? -->
 
 > [!NOTE]
-> Because the same CTP delivery date control can now be used by both Planning Optimization and the deprecated master planning engine, the CTP for Planning Optimization delivery date control has been renamed to *Batch CTP* to minimize the confusion and highlight the difference. <!-- KFM: Does this fit here? Also, does this require the *Batch CTP* feature to be enabled in FM? -->
+> Because the same CTP delivery date control can now be used by both Planning Optimization and the deprecated master planning engine, the CTP for Planning Optimization delivery date control has been renamed to *Batch CTP* to minimize the confusion and highlight the difference.
+
+<!-- KFM: Does this note fit here? Also, does this require the *Batch CTP* feature to be enabled in FM? -->
 
 ## How CTP differs depending on the master planning engine that you use
 
@@ -84,6 +88,8 @@ The following table summarizes the differences between CTP for Planning Optimiza
 | **Delivery date control** setting for orders, order lines, and products | *CTP for Planning Optimization* | *CTP* |
 | Calculation time | The calculation is triggered by running a dynamic plan as a scheduled task. | The calculation is immediately triggered each time that you enter or update a sales order line. |
 | **CTP for Planning Optimization status** field value | <p>A value of *Not ready* is shown for orders and order lines where the dynamic plan hasn't run since the orders and lines were created or last updated.</p><p>A value of *Ready* is shown for orders and lines where CTP has been used to calculate confirmed delivery dates by running the dynamic plan.</p> | A value of *Ready* is always shown. |
+
+<!-- KFM: We need to update this table. Details needed. -->
 
 ## <a name="default-methods"></a>Set default delivery date control methods
 
@@ -101,7 +107,7 @@ The default delivery date control method will be applied to all new order lines 
     - *ATP* – ATP is the quantity of an item that is available and can be promised to a customer on a specific date. The ATP calculation includes uncommitted inventory, lead times, planned receipts, and issues.
     - *ATP + Issue margin* – The shipping date equals the ATP date plus the issue margin for the item. The issue margin is the time that is required to prepare the items for shipment.
     - *CTP* – Use the CTP calculation that is provided by the deprecated master planning engine. If you're using Planning Optimization, the *CTP* delivery date control method isn't allowed and, if it's selected, will cause an error when the calculation runs.
-    - *CTP for Planning Optimization* – Use the CTP calculation that is provided by Planning Optimization. This option has no effect if you're using the deprecated master planning engine.
+    - *CTP for Planning Optimization* – Use the CTP calculation that is provided by Planning Optimization. This option has no effect if you're using the deprecated master planning engine. <!-- KFM: Renamed to *Batch CTP*? Starting when? Also works for "classic" planning; and if so, to what effect and which features are required? -->
 
 ### Set delivery date control overrides for individual products
 
