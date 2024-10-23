@@ -61,11 +61,11 @@ The following table shows the high-level train schedule. It includes a descripti
 | 10.0.39 PQU-5 | July 31, 2024 | August 5, 2024 to September 8, 2024| Completed |
 | 10.0.39 PQU-6 | August 28, 2024 | September 2, 2024 to October 6, 2024| Completed |
 | 10.0.39 PQU-7 | September 25, 2024 | September 30, 2024 to November 3, 2024| In-Progress |
-| 10.0.39 PQU-8 | October 23, 2024 | October 28, 2024 to December 8, 2024| Not Started |
+| 10.0.39 PQU-8 | October 23, 2024 | October 28, 2024 to December 15, 2024| In-Progress |
 | 10.0.39 PQU-9 | November 22, 2024 | December 4, 2024 to January 19, 2025| Not Started |
 | 10.0.40 PQU-1 | July 10, 2024 | July 15, 2024 to August 18, 2024| Completed |
 | 10.0.40 PQU-2 | August 7, 2024 | August 12, 2024 to September 15, 2024| Completed |
-| 10.0.40 PQU-3 | September 4, 2024 | September 9, 2024 to October 13, 2024| In-Progress |
+| 10.0.40 PQU-3 | September 4, 2024 | September 9, 2024 to October 13, 2024| Completed |
 | 10.0.40 PQU-4 | October 2, 2024 | October 7, 2024 to November 10, 2024| In-Progress |
 | 10.0.40 PQU-5 | October 30, 2024 | November 4, 2024 to December 15, 2024| Not Started |
 | 10.0.40 PQU-6 | December 4, 2024 | December 9, 2024 to January 19, 2025| Not Started |
@@ -109,22 +109,22 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | October 21 to October 24, 2024 | November 2 to November 3, 2024 |
 | Station 6 | October 22 to October 25, 2024 | November 2 to November 3, 2024 |
 
-### <a name="schedule"></a> Proactive quality update upcoming 10.0.40 Release-3 train schedule
+### <a name="schedule"></a>Proactive quality update upcoming 10.0.39 Release-8 train schedule
 
-**App version: 10.0.1935.121**
+**App version: 10.0.1860.207**
 
-**Platform version: 7.0.7279.137**
+**Platform version: 7.0.7198.209**
 
-**Unified Environment Provisioning Application Version: 10.0.40.5**
+**Unified Environment Provisioning Application Version: 10.0.39.12**
 
 | Stations | Upcoming Sandbox Schedule | Upcoming production Schedule |
 |---|---|---|
-| Station 1 | September 9 to September 12, 2024 | NA |
-| Station 2 | September 16 to September 19, 2024 | September 28 to September 29, 2024 |
-| Station 3 | September 17 to September 20, 2024 | September 28 to September 29, 2024|
-| Station 4 | September 23 to September 26, 2024 | October 5 to October 6, 2024 |
-| Station 5 | September 30 to October 3, 2024 | October 12 to October 13, 2024 |
-| Station 6 | October 1 to October 4, 2024 | October 12 to October 13, 2024 |
+| Station 1 | October 28 to October 31, 2024 | NA |
+| Station 2 | November 4 to November 7, 2024 | November 16 to November 17, 2024 |
+| Station 3 | November 5 to November 8, 2024 | November 16 to November 17, 2024 |
+| Station 4 | November 11 to November 14, 2024 | December 7 to December 8, 2024 |
+| Station 5 | November 18 to November 21, 2024 | December 14 to December 15, 2024 |
+| Station 6 | November 19 to November 22, 2024 | December 14 to December 15, 2024 |
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.40 Release-4 train schedule
 
