@@ -111,7 +111,7 @@ To onboard business partners and users in Commerce headquarters, follow these st
 1. Select the **Admin** role for the customer that should be designated as the administrator.
 1. Repeat this process to add more customers to the hierarchy.
 
-## Additional information
+## Related information
 
 - All the jobs that are mentioned in this article can be configured to run on a schedule in a batch format. The expectation is that business partners will configure batch jobs as required.
 - Currently, only one user/customer record can be designated as an administrator user, and that role can be changed only in Commerce headquarters. There is no support for self-service capabilities that let business partners to designate multiple administrators or change administrators from B2B e-commerce websites.

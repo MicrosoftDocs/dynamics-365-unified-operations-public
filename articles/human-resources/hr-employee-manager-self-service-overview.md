@@ -73,7 +73,7 @@ You can view your current compensation on **Compensation**. Select **Show** to v
 
 View and manage documents with the **Attachments** tile. You can manage all **External** attachments. Both HR and employees can add attachments through **Employee self service** or the **Worker** page. Attachments are set to **External** by default.
 
-### Additional information
+### Related information
 
 This section provides links to other **Employee self service** areas, similar to the **My Career Information** section.
 
