@@ -209,3 +209,12 @@ When a new release of Business performance analytics is available, you can updat
 
 As a customer, you might want to restore data from your production environment to a sandbox environment, so that you can validate new data as part of Business performance analytics. In public preview, data won't be able to move again from production to sandbox. If you want to move data again from production to sandbox, delete the existing environment, create new environment and install Business performance analytics.
 Any new data changes done in Dynamics 365 finance and operations UI can still be seen in Business performance analytics. The limitation above is only for changes via data movement from production to sandbox.
+
+### How do I receive the latest news on Business performance analytics?
+
+Here is how you join the Business performance analytics Yammer group for all the latest updates. 
+
+1. Complete the [FAR Preview Agreement](https://forms.office.com/r/wfcUBtP67J)
+3. Join the [Dynamics 365 and Power Platform Preview Programs](https://www.yammer.com/dynamicsaxfeedbackprograms/#/home)
+4. Join the [Business performance analytics Yammer](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=73748324352&view=unviewed)
+
