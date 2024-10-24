@@ -28,8 +28,6 @@ The following table lists the features that are included in this release. We mig
 |---|---|---|---|
 | Copilot and AI innovation | [Customize the conversational help provided by Copilot](/dynamics365/release-plan/2024wave2/finance-supply-chain/dynamics365-supply-chain-management/customize-conversational-help-provided-copilot) | [Add knowledge to generative help and guidance with Copilot](../../fin-ops-core/dev-itpro/copilot/extend-copilot-generative-help.md) | Enabled using Copilot Studio. |
 | Procurement and sourcing | Support contract lifecycle management in source to pay by flexible integration | [Contract lifecylce management overview (preview)](../procurement/contract-lifecycle-management/clm-overview.md) | Feature management:<br>*(Preview) Integrate with external contract lifecycle management systems* |
-| Master planning | [Calculate capable-to-promise quantities in real time](/dynamics365/release-plan/2024wave2/finance-supply-chain/dynamics365-supply-chain-management/calculate-capable-to-promise-quantities-real-time) | *Coming soon* | Feature management:<br>*(Preview) Near real-time CTP* |
-| Master planning | [Collaborate on supply plans within and across teams](/dynamics365/release-plan/2024wave2/finance-supply-chain/dynamics365-supply-chain-management/collaborate-supply-plans-within-across-teams) | *Coming soon* | Feature management:<br>*(Preview) Improve Planning Optimization performance by merging and queueing plan regeneration jobs* |
 | Sales and marketing | Seamless sync with Dynamics 365 Sales | [Enable and configure seamless sync with Dynamics 365 Sales (preview)](../../fin-ops-core/fin-ops/data-entities/add-efficiency-in-quote-to-cash-seamless-sync.md) | Feature management:<br>*Automatically synchronize line data and totals with Dynamics 365 Sales* |
 | Sales and marketing | Unified pricing management | [Unified pricing management overview (preview)](../unified-pricing-management/upm-pricing-management-overview.md) | Feature management:<br>*(Preview) Unified pricing management* |
 
@@ -47,6 +45,14 @@ Some of these features aren't visible on your system until you turn them on in [
 | <p>**Module:** Production control</p><p>**Feature management name:** *Register material consumption as complete and edit dimensions on the production floor execution interface*</p> | Enables workers to use the production floor execution interface to adjust material consumption, batch and serial numbers, and license plates. It also enables workers to mark the consumption of a specific material as completed by marking an **End** flag on the line item for the material. |
 | <p>**Module:** Production control</p><p>**Feature management name:** *Set the desired status on selected jobs in report progress list view in the production floor execution interface*</p> | Workers reporting job progress from the production floor execution interface can now select the desired status on multiple jobs in the report-progress list view. |
 | <p>**Module:** Production control</p><p>**Feature management name:** *Streamlined registration process for indirect activities on the Production floor execution*</p> | Streamlines the process for workers to register for indirect activities through the production floor execution interface. Previously, when a worker registered for an indirect activity, a dialog box would open, asking them whether they wanted to stop the activity or log it at the end of their shift. This feature removes the dialog. Instead, the system automatically adds the indirect activity to the worker's active job list. The system stops the indirect activity when the worker begins a new task (such as a production job), another indirect activity, or a project job. |
+
+## New and updated documentation resources
+
+We have recently added or significantly updated the following help articles. These articles aren't necessarily related to the new features that were added for this release, as listed in the previous sections. However, they might help you get more out of existing features.
+
+| Feature area | New or updated articles |
+|---|---|
+| Master planning | [Calculate sales order delivery dates using CTP](../master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md) now describes *(Preview) Near real-time CTP* and *(Preview) Improve Planning Optimization performance by merging and queueing plan regeneration jobs* functionality. |
 
 ## Related information
 
