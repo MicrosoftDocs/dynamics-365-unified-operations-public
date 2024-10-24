@@ -17,26 +17,25 @@ ms.dyn365.ops.version: AX 10.0.39
 
 [!include [banner](../../includes/banner.md)]
 
-To help you comply with the country regulatory requirements, this article provides information so you can get started with importing incoming vendor electronic invoices in the Germany-specific **xRechnung** format based on the Universal Business Language (UBL) syntax in Microsoft Dynamics 365 Finance.
+To help you comply with country-specific regulatory requirements, this article provides information that you can use to start to import incoming vendor electronic invoices in the Germany-specific **xRechnung** format that is based on the Universal Business Language (UBL) syntax in Microsoft Dynamics 365 Finance.
 
-The functionality is based on the **Electronic Reporting** framework, and implements the import workflow described in the following diagram.
+The functionality is based on the Electronic reporting (ER) framework. It implements the import workflow that is shown in the following illustration.
 
-:::image type="content" source="emea-deu-einvoices-import.jpg" alt-text="Diagram of the electronic invoicing import workflow."::: 
+:::image type="content" source="emea-deu-einvoices-import.jpg" alt-text="Diagram that shows the workflow for importing electronic invoices.":::
 
-## Configure and use vendor electronic invoices import
+## Configure and use vendor electronic invoice import
 
-For more information how to configure and use vendor electronic invoices import in Germany, see [Import vendor electronic invoices](../europe/emea-peppol-import.md).
+Learn how to configure and use vendor electronic invoices import in Germany in [Import vendor electronic invoices](../europe/emea-peppol-import.md).
 
 > [!NOTE]
-> The Import vendor electronic invoices article covers the import of incoming electronic invoices in several supported formats, including Germany-specific **xRechnung** format.
+> The linked article covers the import of incoming electronic invoices in several supported formats. One of those formats is the Germany-specific **xRechnung** format.
 
 ## Related information
 
-- Watch the following video to leanr how to import vendor electronic invoices into Microsoft D365 Finance.
+- Watch the following video to learn how to import vendor electronic invoices into Dynamics 365 Finance.
 
-  > [!VIDEO 2167036b-ff87-4473-9bf3-e2902cbdb21f]
+    > [!VIDEO 2167036b-ff87-4473-9bf3-e2902cbdb21f]
 
 - [Customer electronic invoices in Germany](emea-deu-cust-e-invoices.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-
