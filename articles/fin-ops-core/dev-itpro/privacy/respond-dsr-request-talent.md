@@ -72,7 +72,7 @@ The following table lists several reasons why personal data modification or dele
 | Financial, tax, GAAP | A current worker's data can't be deleted, but the worker's name can be updated. | 
 | GAAP | Posted or completed transactions can't be modified. |
 
-## Additional information
+## Related information
 
 Only terminated workers can be deleted from Human Resources. Follow these steps to delete terminated workers.
 
