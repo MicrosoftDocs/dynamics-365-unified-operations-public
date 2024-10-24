@@ -24,17 +24,6 @@ This article lists features that are new or changed for Microsoft Dynamics 365 H
 - **General availability of release (auto-update):** February 2025
 
 
-
-## Features included in this release
-
-This section contains a table that lists the features that are included in this release when available. We might update this article to include features that were added to the build after this article was 
-originally published.
-
-| Module or feature area | Feature name | More information | Enabled by |
-|---|---|---|---|
-
-
-
 ## Feature enhancements included in this release
 
 This section contains a table that lists the enhancements that are included in this release when available. We might update this article to include features that were added to the build after this article was 
@@ -42,18 +31,14 @@ originally published.
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-
-
-
-
+|Leave and absence | Buy and sell leave | When the **Buy and sell leaves** feature is enabled, the **Disable buy and sell leave** parameter is activated on the **Leave and Absence parameters** page. This toggle controls the **Buy and sell** tab in Employees self service. By default, the toggle is off, meaning that after the feature is activated, the tab for **Buy and sell leave** is visible. To hide the tab, enable this parameter in the **Leave and absence parameters** page.
 
 
 ## Additional resources
 
 ### Platform updates for finance and operations apps
 
-Dynamics 365 Human Resources version 10.0.42 includes platform updates. To learn more, see [Platform updates for version 10.0.42 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-
-updates-10-0-42.md).
+Dynamics 365 Human Resources version 10.0.42 includes platform updates. To learn more, see [Platform updates for version 10.0.42 of finance and operations apps](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-42.md).
 
 ### Bug fixes
 
