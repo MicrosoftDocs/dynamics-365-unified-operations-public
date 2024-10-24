@@ -1,6 +1,6 @@
 ---
 title: Financial tag rule reference
-description: Learn about financial tags rules, including outlines on setup, the process of creating financial tag rules, and defaulting financial tag values on transactions using copilot with PowerFx formulas
+description: Learn about financial tags rules with PowerFx formulas
 author: rcarlson
 ms.author: rcarlson
 ms.topic: article
