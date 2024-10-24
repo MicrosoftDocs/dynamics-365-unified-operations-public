@@ -199,12 +199,12 @@ Automatic retry support for recurring data jobs has been implemented to enable r
 Previous Design: 
 There was one regular batch job with one runtime batch task.
 
-![image](https://github.com/user-attachments/assets/77af9255-3fb4-46f0-be50-03d6c2df9232)
+:::image type="content" source="media/batch-one-task.png" alt-text="Diagram of the design with one regular batch job with one runtime batch task."::: 
 
 New Design: 
 There's one regular batch job (Job1) that creates a new runtime child job(Job2) and regular batch task is added to Job2 instead of Job1. 
 
-![image](https://github.com/user-attachments/assets/87f3c501-3d1e-4a9f-92f9-70a2ffb92186)
+:::image type="content" source="media/batch-child-job.png" alt-text="Diagram of the design with one regular batch job (Job1) that creates a new runtime child job(Job2) and regular batch task is added to Job2 instead of Job1."::: 
 
 > [!NOTE]
 > If you've customized your code that involves SysIntegrationActivityBatch and SysIntegrationActivityBatchTask classes, you may encounter issues with the recurring Integrations feature under the new design. For example, if you have created your own custom batch task and are adding task to Job1 as per previous design, then you are adding tasks to the wrong job. You should now add your custom tasks to job2 instead of job1 as per new design.
