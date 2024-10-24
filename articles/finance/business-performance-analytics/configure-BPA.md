@@ -82,9 +82,12 @@ Before Business performance analytics can be installed, confirm the users are en
 
 #### Required configurations in Dynamics 365 Finance
 Before you install Business performance analytics, the following setup is required in Dynamics 365 Finance:
-1. Turn on maintenance mode by using Lifecycle Services.
-    1. In Lifecycle Services, open the environment details page.
-    2. Select **Maintain \> Enable maintenance mode**.
+1. Turn on maintenance mode by using Lifecycle Services.This mode allows you to make system changes that might affect system functionality, such as enabling or disabling configuration keys.
+    1. Go to the Lifecycle Services portal and sign in with your credentials.
+    2. Choose the environment where you want to enable maintenance mode.
+    3. Click on the environment name to open its details page.
+    4. In the Maintenance section, select **Maintain \> Enable maintenance mode**.
+    5. Confirm that you want to enable maintenance mode. This will restart the environment in maintenance mode.
 2. In Dynamics 365 Finance, follow these steps:
     1. Go to **System administration \> License configuration**.
     2. Confirm that **SQL row version change tracking (preview)** is enabled. If it isn't, select the checkbox.
