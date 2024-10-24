@@ -34,8 +34,8 @@ Before you begin the procedures in this article, the following prerequisites mus
 - Your company must be a registered taxpayer in Malaysia and must have the following registration numbers: **Tax Identification Number (TIN)** and **Business Registration Number (BRN)**.
 - Obtain **Client ID** and **Client secret** values in the [Inland Revenue Board of Malaysia (IRBN)](https://www.hasil.gov.my/) (Lembaga Hasil Dalam Negeri Malaysia \[LHDN\]). These values serve as credentials that are used to establish a secure connection to the IRBN portal.
 - Obtain a digital signature certificate from one of the [Malaysian certification authorities](https://www.mcmc.gov.my/en/sectors/digital-signature/list-of-licensees). This certificate is used for digital signing of generated electronic invoices.
-- Become familiar with electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
-- Do the common part of electronic invoicing service configuration as described in [Set up electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
+- Become familiar with electronic invoicing as it's described in [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md).
+- Do the common part of electronic invoicing service configuration as described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
 
 ## Configure Azure Key Vault
 
@@ -71,7 +71,7 @@ Some of the parameters from the **Malaysian electronic invoicing (MY)** electron
 To configure the electronic invoicing feature, follow these steps.
 
 1. Import the latest version of the **Malaysian electronic invoicing (MY)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
-1. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
+1. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create Globalization features](../global/gs-e-invoicing-create-new-globalization-feature.md).
 1. On the **Versions** tab, verify that the **Draft** version is selected.
 1. On the **Setups** tab, in the grid, select the **Sales invoice derived** feature setup, and then select **Edit**.
 1. <a id="FeatureSetup"></a>On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **Sign document for Malaysia** action.
@@ -97,7 +97,7 @@ To configure the electronic invoicing feature, follow these steps.
 
 To configure electronic document parameters, follow these steps.
 
-1. Make sure that the country/region-specific Electronic reporting (ER) configurations for the document context and electronic document model mapping that are required for Malaysia are imported. For more information, see [Set up electronic invoicing parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
+1. Make sure that the country/region-specific Electronic reporting (ER) configurations for the document context and electronic document model mapping that are required for Malaysia are imported. For more information, see [Set up Electronic document parameters](../global/gs-e-invoicing-set-up-parameters.md#set-up-electronic-document-parameters).
 
     > [!NOTE]
     > After you import the **Malaysian electronic invoicing (MY)** electronic invoicing feature, electronic documents are configured by default. Follow the remaining steps of this procedure if you must make changes. Otherwise, consider this section informational only.
@@ -156,7 +156,7 @@ To configure electronic document parameters, follow these steps.
 
 ## <a id="SST"></a>Configure Sales and Service Tax numbers
 
-To configure Sales and Service Tax (SST) numbers, follow the instructions in [SST registration number](apac-mys-gst.md#gstsst-registration-number).
+To configure Sales and Service Tax (SST) numbers, follow the instructions in [GST/SST registration number](apac-mys-gst.md#gstsst-registration-number).
 
 > [!NOTE]
 > Make sure that the configured SST registration number is in the **VAT ID** registration category.
@@ -465,8 +465,8 @@ If you use project invoices, follow these steps.
 
 1. Go to **Project management and accounting** \> **Setup** \> **Forms** \> **Form setup**.
 1. Select **Print management**.
-1. Select the **Project invoices without billing rules** report, and then, in the **Report format** field, refer to the **PSAProjInvoice.ReportFull_MY** or **PSAProjInvoice.ReportSimplified_MY** layout.
-1. Select the **Project invoices with billing rules** report, and then, in the **Report format** field, refer to the **PSAContractLineInvoice.ReportFull_MY** or **PSAContractLineInvoice.ReportSimplified_MY** layout.
+1. Select the **Project invoices without billing rules** report, and then, in the **Report format** field, reference the **PSAProjInvoice.ReportFull\_MY** or **PSAProjInvoice.ReportSimplified\_MY** layout.
+1. Select the **Project invoices with billing rules** report, and then, in the **Report format** field, reference the **PSAContractLineInvoice.ReportFull\_MY** or **PSAContractLineInvoice.ReportSimplified\_MY** layout.
 
 If you use self invoices, follow these steps.
 
@@ -479,79 +479,78 @@ If you use self invoices, follow these steps.
 > 
 > QR codes are printed only for invoices that were successfully submitted, validated, and accepted by the **MyInvois** system.
 
-
 ## Batch submission of electronic invoices
 
-Additionally, to individual submission of electronic invoices described in the previous chapters, there is the possibility to submit posted invoices in batches, as consolidated electronic invoices.
+In addition to submitting electronic invoices individually, as described in the previous sections, you can submit posted invoices in batches as consolidated electronic invoices.
 
-By default, all invoices that originated from **Retail** operations are subjects for consolidating and are not subjects for individual submission, although the system allows you to forcibly submit individually some specifically selected Retail-related invoices.
+By default, all invoices that originate from retail operations can be consolidated, but they can't be submitted individually. Nevertheless, you can force specific retail-related invoices to be submitted individually.
 
 To activate batch submission of invoices, enable the **Electronic document batch submission** feature in Feature management. For more information, see [Feature management overview](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### Configure electronic document parameters
 
-Import the **Consolidated Invoice Model Mapping (MY)** Electronic Reporting configuration from the repository. For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
+Before you begin to configure electronic document parameters for batch submission, import the **Consolidated Invoice Model Mapping (MY)** ER configuration from the repository. For more information, see [Import Electronic reporting (ER) configurations from Dataverse](../global/workspace/gsw-import-er-config-dataverse.md).
 
-To configure electronic document parameters for batch submissions, follow these steps.
+To configure electronic document parameters for batch submission, follow these steps.
 
 1. Go to **Organization administration** \> **Setup** \> **Electronic document parameters**.
-1. On the **Electronic document** tab, in the **Electronic reporting** FastTab, add a new record for the **Customer Invoice journal** table name.
-1. Turn on the option in the **Batch submission** column.
-1. In the **Document context** field, select the **Batch submission** mapping name from the **Customer invoice context model** configuration.
-1. In the **Electronic document model mapping** field, select the **Consolidated Invoice Model Mapping (MY)** mapping name from the **Consolidated Invoice Model Mapping (MY)** configuration.
-1. On the **Electronic document** tab, in the **Batch submission id** FastTab, in the **Number sequence** field, select the number that will be used for generated batches numbering. The selected number sequence must be continuous.
+1. On the **Electronic document** tab, on the **Electronic reporting** FastTab, add a record for the **Customer Invoice journal** table name.
+1. In the **Batch submission** column, select the checkbox.
+1. In the **Document context** column, select the **Batch submission** mapping name from the **Customer invoice context model** configuration.
+1. In the **Electronic document model mapping** column, select the **Consolidated Invoice Model Mapping (MY)** mapping name from the **Consolidated Invoice Model Mapping (MY)** configuration.
+1. On the **Batch submission id** FastTab, in the **Number sequence** field, select the number sequence that should be used to number the batches that are generated. The number sequence that you select must be continuous.
 
-![Screenshot that shows electronic documents parameters.](apac-mys-e-doc-parameters.jpg)
+![Screenshot that shows the configuration of electronic document parameters for batch submission.](apac-mys-e-doc-parameters.jpg)
 
 ### Configure the electronic invoicing feature
 
 To configure the electronic invoicing feature, follow these steps.
 
-1. Import the latest version of the **Malaysian electronic invoicing (MY)** (version **10** or later) Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
+1. Import the latest version of the **Malaysian electronic invoicing (MY)** Globalization feature (version **10** or later) as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 
-> [!NOTE]
-> Make sure that the **Consolidated invoice (MY)** ER format configuration is also imported after the feature import. Otherwise, import the **Consolidated invoice (MY)** configuration manually. This format configuration is based on the **Invoices Communication Model** configuration, as well as the **Consolidated Invoice Model Mapping (MY)** configuration imported in the previous chapter.
+    > [!NOTE]
+    > Make sure that the **Consolidated invoice (MY)** ER format configuration is imported after you import the **Malaysian electronic invoicing (MY)** Globalization feature. If it isn't imported, manually import it. This format configuration is based on the **Invoices Communication Model** configuration and also on the **Consolidated Invoice Model Mapping (MY)** configuration that you imported in the previous section.
    
-2. Create a copy of the imported Globalization feature and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
-3. On the **Versions** tab, verify that the **Draft** version is selected.
-4. On the **Setups** tab, in the grid, select the **Consolidated invoice derived** feature setup, and then select **Edit**.
+1. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create Globalization features](../global/gs-e-invoicing-create-new-globalization-feature.md).
+1. On the **Versions** tab, verify that the **Draft** version is selected.
+1. On the **Setups** tab, in the grid, select the **Consolidated invoice derived** feature setup, select **Edit**, and configure the following processing pipeline action parameters.
 
-> [!NOTE]
-> Configure the following processing pipeline actions parameters in the same way as it was configured for **[Sales invoice derived](#FeatureSetup)** feature setup.
+    > [!NOTE]
+    > Configure these parameters just as you configured them for the **[Sales invoice derived](#FeatureSetup)** feature setup.
 
-- The **Certificate name** parameter for the **Sign document for Malaysia** action.
-- The **Client secret**, **Client ID**, **Web service URL**, **Login service URL**, and **Environment type** parameters for the **Integrate with MyInvois (Submit document)** action.
-- The **Client secret**, **Client ID**, **Web service URL**, **Login service URL**, and **Environment type** parameters for the **Integrate with MyInvois (Get document)** action.   
-5. Select **Save** and close the page.
-6. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
+    | Processing pipeline action | Parameters to configure |
+    |---|---|
+    | Sign document for Malaysia | <ul><li>Certificate name</li></ul> |
+    | Integrate with MyInvois (Submit document) | <ul><li>Client secret</li><li>Client ID</li><li>Web service URL</li><li>Login service URL</li><li>Environment type</li></ul> |
+    | Integrate with MyInvois (Get document) | <ul><li>Client secret</li><li>Client ID</li><li>Web service URL</li><li>Login service URL</li><li>Environment type</li></ul> |
+
+1. Select **Save**, and close the page.
+1. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ### Issue consolidated electronic invoices
 
-To generate and submit electronic invoices in batches for posted Customer invoices, do the following steps.
+To generate and submit electronic invoices in batches for posted Customer invoices, follow these steps.
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Submit electronic documents**.
-2. To submit invoices in batches, set the **Submit document batch** option to **Yes**.
+1. To submit invoices in batches, set the **Submit document batch** option to **Yes**. To submit retail invoices individually, set the **Submit retail invoices individually** option to **Yes**.
 
-> [!NOTE]
-> Batch and individual submissions are mutually exclusive and can't be run simultaneously. During one run, only batch or only individual submissions can be processed.
+    > [!IMPORTANT]
+    > Batch submission and individual submission are mutually exclusive and can't be run simultaneously. During a given run, only batch submissions or individual submissions can be processed.
+    >
+    > If you must submit some retail invoices individually, you must do the individual submission **before** the batch submission. All individually submitted retail invoices will be excluded from batches.
 
-3. To submit retail invoices individually, set the **Submit retail invoices individually** option to **Yes**.
+    ![Screenshot that shows the Submit electronic documents dialog box set up for batch submission.](apac-mys-e-invoice-batch.jpg)
 
-> [!NOTE]
-> If you need to submit some retail invoices individually then you must do it **before** the batch submission. All individually submitted retail invoices will be excluded form batches.
+1. On the **Records to include** FastTab, select **Filter** to open the **Inquiry** dialog box, where you can build a query to select only required documents.
+1. Select **OK** to start submission.
 
-![Screenshot that shows the batch submission form.](apac-mys-e-invoice-batch.jpg)
-
-4. On the **Records to include** FastTab, select **Filter** to open the **Inquiry** dialog box, where you can build a query to select only required documents.
-5. Select **OK** to start submission.
-
-You can inquire about the submission results by doing the following steps.
+To inquire about the submission results, follow these steps.
 
 1. Go to **Organization administration** \> **Periodic** \> **Electronic documents** \> **Electronic document submission log**.
-1. In the field **Document type** select **Batch submission**.
-1. Select a specific batch which can have the following statuses: *Scheduled*, *Completed*, or *Failed*.
+1. In the **Document type** field, select **Batch submission**.
+1. Select a specific batch that has one of the following statuses: **Scheduled**, **Completed**, or **Failed**.
 1. On the Action Pane, select **Inquiries** \> **Submission details** to view the details of the submission execution logs. 
-1. On the Action Pane, select **Inquiries** \> **Batch submission invoices** to view the invoices that were submitted within this batch.
+1. On the Action Pane, select **Inquiries** \> **Batch submission invoices** to view the invoices that were submitted in the selected batch.
 
 > [!NOTE]
-> Due to the restrictions for submitted data size introduced by the authorities, the maximum number of invoices included in one batch is limited by 60. If the number of invoices being processed is higher than several batches will be automatically generated.
+> Because of restrictions that the authorities impose on the size of submitted data, the maximum number of invoices that can be included in one batch is 60. If more than 60 invoices are being processed, multiple batches are automatically generated.
