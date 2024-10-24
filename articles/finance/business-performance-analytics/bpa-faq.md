@@ -18,7 +18,7 @@ This article answers frequently asked questions about Business performance analy
 
 ### What's the estimated time that's required to set up Business performance analytics?
 
-The setup of Business performance analytics takes up to 60 minutes. However, it takes up to 24 hours for data to be available on reports.
+The setup of Business performance analytics takes up to 60 minutes. However, it takes up to 24 hours for data to be available on reports and the time taken to load data depends on the data size. 
 
 ### I received an error during the installation of Business performance analytics. How do I fix it?
 
