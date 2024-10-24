@@ -16,9 +16,6 @@ This article answers frequently asked questions about Business performance analy
 
 [This article is prerelease documentation and is subject to change.]
 
-### What's the estimated time that's required to set up Business performance analytics?
-
-The setup of Business performance analytics takes up to 60 minutes. However, it takes up to 24 hours for data to be available on reports and the time taken to load data depends on the data size. 
 
 ### I received an error during the installation of Business performance analytics. How do I fix it?
 
@@ -46,13 +43,13 @@ Some customers might reach the storage capacity limits of their Power BI Embedde
 
 As part of the data pipeline for Business performance analytics, your data is transformed to fit our dimensional data model. This process creates files that are saved to the managed data lake. The data transformation process occurs every time Business performance analytics refreshes its data. It generates new files in the managed data lake without deleting the old, obsolete files. The old files are deleted in 30 days, or our team manually deletes them when Business performance analytics uses 50 percent or more of the managed data lake's storage capacity.
 
-### When will data be available in reports after the Business performance analytics is installed for the first time?
+### What's the estimated time that's required to set up Business performance analytics?
 
-Data will be available 24 hours after installation is completed.
+The setup of Business performance analytics app takes up to 60 minutes.
 
-### When will data be available on reports?
+### When will data be available in reports after the Business performance analytics is installed?
 
-We recommend that you check 24 hours after the installation of Business performance analytics is completed.
+Data will be available 24 hours after installation is completed. The time taken to load data depends on the data size.
 
 ### How many years of data are available on reports?
 
