@@ -18,8 +18,8 @@ This article provides information that will help you get started with Electronic
 
 ## Prerequisites
 
-- Become familiar with electronic invoicing as it's described in [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md).
-- Do the common part of electronic invoicing service configuration as described in [Set up electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
+- Become familiar with electronic invoicing as it's described in [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md).
+- Do the common part of Electronic Invoicing service configuration as described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
 
 ## Configure Electronic invoicing features
 
@@ -27,14 +27,13 @@ This article provides information that will help you get started with Electronic
 1. Import the latest version of the **Indonesian electronic invoice (ID)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 
    > [!NOTE]
-   > If you don't see the feature in the list, select **Synchronize**, and then repeat step 2.
-   
+   > If the feature doesn't appear in the list, select **Synchronize**, and then repeat step 2.
+
 ### Create a new version of the Indonesian electronic invoice (ID) feature
 
-When you import the **Indonesian electronic invoice (ID)** feature from the repository, all the feature settings are imported. These settings include the configurations, actions of the processing pipeline, and applicability rules.
-You can create a new feature version by using your configuration provider, if necessary.
+When you import the **Indonesian electronic invoice (ID)** feature from the repository, all the feature settings are imported. These settings include the configurations, actions of the processing pipeline, and applicability rules. If a new feature version is required, you can create it by using your configuration provider.
 
-1. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
+1. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create Globalization features](../global/gs-e-invoicing-create-new-globalization-feature.md).
 1. On the **Versions** tab, verify that the **Draft** version is selected.
 
 ### Update the configurations versions
@@ -51,7 +50,7 @@ When you create a new version, all configurations are inherited from the importe
 
 In the list, select a configuration version, and then select **Edit** or **View** to open the **Format designer** page, where you can edit or view the configuration.
 
-You can review the configuration and customize it as you require. Use the **Format designer** page to edit and view the Electronic reporting (ER) format file configurations. For more information, see [Create electronic document configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
+You can review the configuration and customize it as you require. Use the **Format designer** page to edit and view the Electronic reporting (ER) format file configurations. For more information, see [Create Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
 ### Configure the application-specific parameters
 
@@ -247,7 +246,7 @@ Enabling the **Indonesian electronic invoice** feature might require that limite
 
 ## Additional resources
 
-- [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md)
+- [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md)
 - [Get started with Electronic invoicing](../e-invoicing-get-started.md)
 - [Set up Electronic invoicing](../e-invoicing-setup.md)
 
