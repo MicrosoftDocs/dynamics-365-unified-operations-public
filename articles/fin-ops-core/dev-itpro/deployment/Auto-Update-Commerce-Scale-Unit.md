@@ -4,7 +4,7 @@ description: Learn about auto-updates for Commerce Scale Unit (cloud), including
 author: sericks007
 ms.author: sericks
 ms.topic: article
-ms.date: 05/03/2022
+ms.date: 10/30/2024
 ms.reviewer: johnmichalak
 audience: IT Pro
 ms.search.region: Global
@@ -28,7 +28,6 @@ Auto-update for Commerce Scale Unit enables [One Version](../lifecycle-services/
 The following limitations currently exist and are planned to be resolved in upcoming updates:
 
 - In-app notifications are not available.
-- If you have multiple Commerce Scale Units in a sandbox UAT environment, Commerce Scale Unit will only be auto-updated based on the first Commerce Scale Unit in that environment (alphabetically). The remaining Commerce Scale Units in each sandbox UAT environment will need to be self-updated.
 - Auto-update for Commerce Scale Unit is not currently available for First Release customers, and is not currently applicable for Preview builds.
 
 ## Downtime duration and impact
