@@ -57,7 +57,7 @@ Business performance analytics has data for the current calendar year plus the p
 
 ### After Business performance analytics is set up, how often is the data refreshed?
 
-Data is refreshed once per day, at 00:00:00 AM (UTC). To see exactly when a report's data was last refreshed, open the report. Towards the top of the window, the rightmost item displays when the data for the report was last refreshed. 
+Data is refreshed twice per day, at 12:00:00 AM (GMT) and 12:00:00 PM (GMT). To see exactly when a report's data was last refreshed, open the report. Towards the top of the window, the rightmost item displays when the data for the report was last refreshed. 
 
 ### How long does it take for fresh data to be available every day on Business performance analytics reports?
 
