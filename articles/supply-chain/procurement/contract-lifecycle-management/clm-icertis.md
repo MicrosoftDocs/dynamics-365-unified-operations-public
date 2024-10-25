@@ -24,7 +24,7 @@ Icertis for Microsoft Dynamics 365 Supply Chain Management is a full-featured th
 - Benefits
 - Setup
 
-Learn how to set up and use Icertis for Microsoft Dynamics 365 Supply Chain Management in [Link](.). <!-- KFM: Link to AppSource or Icertis docs, or maybe https://appsource.microsoft.com/en-US/marketplace/apps?search=icertis-->
+Learn how to set up and use Icertis for Microsoft Dynamics 365 Supply Chain Management on [Microsoft AppSource](https://appsource.microsoft.com/en-US/marketplace/apps?search=icertis).
 
 ## Capabilities
 
@@ -37,7 +37,11 @@ Supply Chain Management provides functionality that organizations can use to str
 - **Risk Assessment Copilot** – Risk Assessment Copilot significantly accelerates the contract review process. At the same time, it helps reduce risk by using AI to compare contract terms to a company's predefined risk parameters, based on the contract type.
 - **Pre-seeded information** – Icertis for Microsoft Dynamics 365 Supply Chain Management includes extensive pre-seeded attributes and entities. Therefore, you can benefit from the integration without having to spend lots of time on implementation.
 
-Learn more about Icertis for Microsoft Dynamics 365 Supply Chain Management in [Link](.). <!-- KFM (ICI AppSource link.) -->
+To learn more about Icertis for Microsoft Dynamics 365 Supply Chain Management, follow these steps.
+
+1. Sign in to your Icertis Contract Intelligence (ICI) instance.
+1. Select the **Help** button.
+1. Go to [Welcome to Icertis for Microsoft Dynamics 365 Supply Chain Management](https://help.icertis.com/welcome-to-icertis-for-microsoft-dynamics-365-supply-chain-management/).
 
 ## Key features
 
@@ -138,7 +142,6 @@ To set up Icertis for Microsoft Dynamics 365 Supply Chain Management, follow the
 
 To get detailed instructions for deploying the package and setting up an instance, follow these steps.
 
-1. Go to [Link](.)<!-- KFM: Add link to Icertis Help Center. -->.
-1. Sign in to your ICI instance.
+1. Sign in to your Icertis Contract Intelligence (ICI) instance.
 1. Select the **Help** button.
-1. Follow the instructions that are provided.
+1. Go to [Icertis for Microsoft Dynamics 365 SCM Package Installation & Setup](https://help.icertis.com/docs/integrate/ms-d365-experience/packages-installation/).
