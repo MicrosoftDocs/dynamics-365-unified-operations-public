@@ -18,11 +18,7 @@ ms.dyn365.ops.version: 8
 
 This feature currently applies to cloud-hosted Commerce Scale Unit. Self-hosted Commerce Scale Unit is not included and must be self-updated.
 
-Auto-update for Commerce Scale Unit enables [One Version](../lifecycle-services/oneversion-overview.md) auto-update. All existing One Version processes, policies, and schedules apply to Auto-update for Commerce Scale Unit.
-
-
->[!Note]
-> Auto-update for Commerce Scale Unit is being incrementally rolled-out to customers and is expected to be available to all customers by end of 2021.
+Auto-update for Commerce Scale Unit enables [One Version](../lifecycle-services/oneversion-overview.md) auto-update. All existing One Version processes, policies, and schedules apply to Auto-update for Commerce Scale Unit. [Service update configurations](../lifecycle-services/configure-service-updates.md) for environments also apply to Commerce Scale Units. To [pause service updates](../lifecycle-services/pause-service-updates.md), Commerce Scale Units must be on the current release (N) or the previous one (N-1). Releases older than N-1 must be updated to be compliant. 
 
 ## Limitations
 The following limitations currently exist and are planned to be resolved in upcoming updates:
@@ -40,7 +36,7 @@ Updates to Commerce HQ and Commerce Scale Unit (cloud) are applied sequentially.
 For retailers with a business need for redundancy, Modern POS offline capability allows core POS operations to be available for use while disconnected from the internet or while the cloud environment is being updated. Stores operating with Commerce Scale Unit will also continue to operate with support for core POS operations during cloud maintenance windows. For more information, see [Online and offline point of sale (POS) operations](../../../commerce/pos-operations.md).
 
 ## Version support and backward compatibility
-All in-instore components must be running released software that is less than 12 months old in order to maintain support. Customers are responsible for updating self-hosted components (such as components installed in stores or in privately managed datacenters) and ensuring that the installed versions of these components are actively supported.
+All in-store components must be running released software that is less than 12 months old in order to maintain support. Customers are responsible for updating self-hosted components (such as components installed in stores or in privately managed datacenters) and ensuring that the installed versions of these components are actively supported.
 
 Updates to components hosted in the cloud will continue to preserve backward compatibility with component versions self-hosted by the retailer (such as components installed in stores or in privately managed datacenters - Modern Point of Sale, Commerce Scale Unit, and Hardware Station) for 12 months after the release date for that version. Self-hosted components do not need to be updated at the same time as cloud-hosted components and can be updated on a separate cadence, allowing time to roll out updates to stores.
 
