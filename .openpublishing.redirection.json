@@ -27988,6 +27988,16 @@
       "source_path": "articles/fin-ops-core/fin-ops/copilot/faq-copilot-suggested-questions.md",
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/responsible-ai/responsible-ai-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/copilot/copliot-generative-help.md",
+      "redirect_url": "/dynamics365/fin-ops-core/fin-ops/copilot/copilot-generative-help",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/copilot/enable-copliot-generative-help.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/copilot/enable-copilot-generative-help",
+      "redirect_document_id": false
     }
   ]
 }
