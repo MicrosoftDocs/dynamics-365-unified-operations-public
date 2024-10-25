@@ -1,8 +1,8 @@
 ---
-title: Cash register functionality for France
+title: Cash register functionality for France (preview)
 description: This article provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-ms.date: 08/09/2024
+ms.date: 10/25/2024
 ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
@@ -13,9 +13,10 @@ ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 ms.custom: 
   - bap-template
 ---
-# Cash register functionality for France
+# Cash register functionality for France (preview)
 
 [!include [banner](../../../finance/includes/banner.md)]
+[!include [banner](../../../finance/includes/preview-banner.md)]
 
 This article provides an overview of the cash register functionality that is available for France in Microsoft Dynamics 365 Commerce. It also provides guidelines for setting up the functionality.
 
@@ -23,7 +24,7 @@ This article provides an overview of the cash register functionality that is ava
 
 This version of the cash register functionality for France has passed an audit according to the NF 525 certification requirements and is granted a certificate of compliance that has the following category and number: 
 
-- **Microsoft Dynamics 365 Commerce, version 10** (the most recent audited version is **10.0.27**):
+- **Microsoft Dynamics 365 Commerce, version 10.0** (the most recent audited version is **10.0.40**):
 
     - Certificate category: B
     - Certificate number: 0498
@@ -390,6 +391,7 @@ On the **Language text** page, add the following records for the labels of the c
 | en-US       | 900013  | Reprint time 12H          |
 | en-US       | 900014  | Reprint time 24H          |
 | en-US       | 900015  | Reprint digital signature |
+| en-US       | 900016  | Software version          |
 
 On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page.
 
@@ -410,10 +412,11 @@ On the **Custom fields** page, add the following records for the custom fields f
 | REPRINTTIME12H_FR               | Receipt | 900013          |
 | REPRINTTIME24H_FR               | Receipt | 900014          |
 | REPRINTDIGITALSIGNATURE_FR      | Receipt | 900015          |
+| SOFTWAREVERSION_FR              | Receipt | 900016          |
 
 ### Configure receipt formats
 
-For every required receipt format, change the value of the **Print behavior** field to **Always print**. You must also configure hardware profiles to support receipt printers and to enable Hardware station. For more information about how to work with POS peripherals, see [Peripherals](../../retail-peripherals-overview.md).
+NF 525 compliance requires that receipts shouldn't be printed by default and should only be printed by customer request. To comply with this requirement, for every receipt format, change the value of the **Print behavior** field to **Prompt User**. You must also configure hardware profiles to support receipt printers and to enable Hardware station. For more information about how to work with POS peripherals, see [Peripherals](../../retail-peripherals-overview.md).
 
 In the Receipt format designer, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language texts that you defined in the previous section.
 
@@ -444,7 +447,7 @@ In the Receipt format designer, add the following custom fields to the appropria
     - **Reprint time 12H** or **Reprint time 24H** – This field prints the time of a receipt copy in the selected format.
     - **Reprint digital signature** – This field prints an extract from the digital signature of a receipt copy.
     - **NF 525 Certificate** – This field prints the category and number of the certificate of compliance that an authorized body issued to Dynamics 365 Commerce version 10 per the NF 525 certification requirements.
-    - **Text** – Add a text field, and specify the version of the software that was certified per the NF 525 certification requirements and that is used to produce receipts (for example, **Microsoft Dynamics 365 Commerce v.10**).
+    - **Software Version** – This field prints the version of the software used to produce receipts that was certified per the NF 525 certification requirements (for example, **Microsoft Dynamics 365 Commerce v.10**).
 
         > [!NOTE]
         > If you customize the POS application, and your customizations affect the compliance of the application, you might have to request a new certificate of compliance from an accredited body. In this case, you must override the certificate category and number, and specify a corresponding software version number. Otherwise, the default values for the certificate category and number will be printed.
@@ -522,15 +525,15 @@ Depending on your purposes, you can download the ER configurations for the Z rep
 
 You must download the following versions (or later versions) of the configurations:
 
-- **Retail channel data.version.2** data model
-- **Archiving DMM.version.2.3** data model mapping
-- **Retail Z-Report (FR).version.24.23.3** format
-- **Retail data archive (FR).version.2.5** format
+- **Retail channel data.version.24** data model
+- **Archiving DMM.version.24.97** data model mapping
+- **Retail Z-Report (FR).version.24.24.4** format
+- **Retail data archive (FR).version.24.24** format
 
 After you import the configurations, select ER formats for the Z report and archive in the following fields on the **Electronic documents** tab of the **Commerce parameters** page:
 
-- **Z-Report export format** – Select the **Retail Z-Report (FR).version.24.23.3** format or the format that you downloaded earlier.
-- **Retail data archive export format** – Select the **Retail data archive (FR).version.2.5** format or the format that you downloaded earlier.
+- **Z-Report export format** – Select the **Retail Z-Report (FR)** format or the format that you downloaded earlier.
+- **Retail data archive export format** – Select the **Retail data archive (FR)** format or the format that you downloaded earlier.
 
 ### Reinitialize Commerce components
 
