@@ -58,8 +58,16 @@ Business performance analytics can also be used as a Data as a Service (DaaS) so
 	• Financial Services: Seamlessly integrate Business performance analytics data models to comply with financial regulations and ensure up-to-date reporting.
 	• Retail: Customize inventory and sales analytics while benefiting from new features in Dynamics 365, minimizing the need for extensive rework.
 
+## Included with Dynamics 365 Finance
+Business performance analytics is a innovative reporting tool that comes as part of the Dynamics 365 Finance license. In addition to its comprehensive analytics capabilities, business performance analytics leverages shared Dataverse entitlements, including access to the data lake, allowing customers to seamlessly integrate and manage their data.
+
+## Data Reporting Capacity
+With business performance analytics, customers are currently entitled to report on up to eight quarters of data. The volume of data is also constrained by the storage capacity of the A3 Power SKU. If customers are unable to fit their data within the constraints of the Power BI A3 SKU, they should consider waiting for a future release when additional data reporting capacity will be available. This future release will expand the data limits, allowing for larger datasets to be reported and analyzed.
+
+## Data Refresh Frequency
+At present, business performance analytics allows for two data refreshes per day—scheduled at 12 AM and 12 PM (International Standard Time). However, we are committed to improving this by December 2024, when more frequent refreshes will be made available, ensuring that customers can work with the most up-to-date information for their reporting needs.
+
 ## Unlock the Full Potential of Your Data
 Business performance analytics is a powerful tool designed to help organizations harness the power of data to drive operational excellence, make strategic decisions, and ensure long-term success. With its combination of SaaS and DaaS capabilities, Business performance analytics offers a flexible, scalable, and future-ready solution that grows with your business.
 
 To learn more about how Business performance analytics can transform your organization, explore the resources and learning modules available here on Microsoft Learn.
-
