@@ -3,13 +3,10 @@ title: Get started with Electronic invoicing for Indonesia
 description: Learn how to configure and process electronic invoices for Indonesia, including an outline on configuring Electronic invoicing features.
 author: AnupamChansoriya
 ms.author: atrukawk
-ms.topic: article
-ms.date: 02/14/2024
-ms.reviewer: 
-audience: Application User
+ms.topic: how-to
+ms.date: 10/22/2024
+ms.reviewer: johnmichalak
 ms.search.region: Indonesia
-ms.search.validFrom:
-ms.search.form: 
 ms.dyn365.ops.version: 10.0.39
 ---
 
@@ -17,41 +14,31 @@ ms.dyn365.ops.version: 10.0.39
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information that will help you get started with Electronic invoicing for Indonesia. It describes the configuration steps that are country/region-dependent in Regulatory Configuration Service (RCS) and Microsoft Dynamics 365 Finance. It guides through the steps that you must follow in Finance to export sales invoices through the service, and to review the processing results and the status of invoices.
+This article provides information that will help you get started with Electronic invoicing for Indonesia. It describes the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance. It guides through the steps that you must follow in Finance to export sales invoices through the service, and to review the processing results and the status of invoices.
 
 ## Prerequisites
 
-- Become familiar with Electronic invoicing. For more information, see [Electronic invoicing overview](../global/e-invoicing-service-overview.md).
-- Sign up for RCS, and set up Electronic invoicing. For more information, see the following articles:
-
-    - [Sign up for and install the Electronic Invoicing service](../global/e-invoicing-sign-up-install.md)
-    - [Set up Azure resources for Electronic invoicing](../global/e-invoicing-set-up-azure-resources.md)
-    - [Install the add-in for microservices in Lifecycle Services](../global/e-invoicing-install-add-in-microservices-lcs.md)
-    - [Activate and setup integration with Electronic invoicing](../global/e-invoicing-activate-setup-integration.md)
+- Become familiar with electronic invoicing as it's described in [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md).
+- Do the common part of Electronic Invoicing service configuration as described in [Electronic invoicing configuration](../global/gs-e-invoicing-set-up-overview.md).
 
 ## Configure Electronic invoicing features
 
 1. In the **Globalization Studio** workspace, select the **Electronic invoicing** tile.
-1. On the **Electronic invoicing features** page, verify that the **Indonesian electronic invoice (ID)** Electronic invoicing feature is selected.
-1. On the **Versions** tab, verify that the **Draft** version is selected.
-1. Import the Electronic invoicing feature to process invoice exports and importing vendor invoices.
-1. Review the format configurations that are required to generate and export sales invoices.
-1. Review or configure the actions in the processing pipeline that support the sales invoice export and import scenarios.
-1. Publish the Electronic invoicing feature for export sales invoices and import vendor invoices.
+1. Import the latest version of the **Indonesian electronic invoice (ID)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 
-    > [!NOTE]
-    > If you don't see the feature in the list, select **Synchronize**, and then repeat step 2.
-
-When you import the **Indonesian electronic invoice (ID)** feature from the Dataverse repository, all the feature settings are imported. These settings include the configurations and actions of the processing pipeline.
+   > [!NOTE]
+   > If the feature doesn't appear in the list, select **Synchronize**, and then repeat step 2.
 
 ### Create a new version of the Indonesian electronic invoice (ID) feature
 
-You can create a new feature version by using your configuration provider.
+When you import the **Indonesian electronic invoice (ID)** feature from the repository, all the feature settings are imported. These settings include the configurations, actions of the processing pipeline, and applicability rules. If a new feature version is required, you can create it by using your configuration provider.
 
-1. In the **Globalization Studio** workspace, select the **Electronic Invoicing** tile.
-1. On the **Electronic invoicing features** page, on the **Versions** tab, select **New**.
+1. Create a copy of the imported Globalization feature, and select your configuration provider for it. For more information, see [Create Globalization features](../global/gs-e-invoicing-create-new-globalization-feature.md).
+1. On the **Versions** tab, verify that the **Draft** version is selected.
 
-### Update the configuration version
+### Update the configurations versions
+
+Review the format configurations that are required to generate and export sales invoices.
 
 1. In the **Globalization features** workspace, select the **Electronic Invoicing** tile.
 1. On the **Electronic invoicing features** page, on the **Configurations** tab, select **Add** or **Delete** to manage the configuration versions.
@@ -63,12 +50,9 @@ When you create a new version, all configurations are inherited from the importe
 
 In the list, select a configuration version, and then select **Edit** or **View** to open the **Format designer** page, where you can edit or view the configuration.
 
-You can review the configuration and customize it as you require. Use the **Format designer** page to edit and view the Electronic reporting (ER) format file configurations. For more information, see [Create electronic document configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
+You can review the configuration and customize it as you require. Use the **Format designer** page to edit and view the Electronic reporting (ER) format file configurations. For more information, see [Create Electronic reporting (ER) configurations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
 ### Configure the application-specific parameters
-
-> [!NOTE]
-> When you set up application-specific parameters, check the connection on the **Connected applications** page. Go to the RCS home page, and select **Electronic reporting**. At the bottom of the page, select **Connected application** \> **Check connection**.
 
 Before you begin, make sure that the **Invoices issued (ID)** ER format configuration is imported.
 
@@ -103,6 +87,8 @@ After you define specific conditions for each application-specific parameter, sa
 
 ### Manage the Electronic invoicing feature setup
 
+Review or configure the actions in the processing pipeline that support the sales invoice export and import scenarios.
+
 1. In the **Globalization Studio** workspace, select the **Electronic Invoicing** tile.
 1. On the **Electronic invoicing features** page, on the **Setups** tab, select **Add**, **Delete**, or **Edit** to manage the Electronic invoicing feature setup.
 
@@ -129,19 +115,16 @@ Before you configure the Vendor invoice feature setup, you should create a draft
 
     ![Screenshot that shows the Variables tab for the Vendor invoice feature setup.](../media/apac-idn-feature-version-setup-variables.png)
 
-### Assign the draft version to an e-Invoicing environment
-
-1. On the **Electronic invoicing features** page, on the **Environments** tab, select **Enable**.
-1. In the **Environment** field, select the environment.
-1. In the **Effective from** field, select the date when the environment should become effective.
-1. Select **Enable**.
-
 ### Change the version status and deploy the feature
+
+Complete and deploy the Electronic invoicing feature for export sales invoices and import vendor invoices.
 
 1. On the **Electronic invoicing features** page, on the **Versions** tab, select the version of the Electronic invoicing feature that has a status of **Draft**.
 1. Select **Change status** \> **Complete**.
-1. Select **Deploy**, and then, in the **Effective from** field, select the date when the environment should become effective.
+1. Select **Deploy**, and then, in the **Effective from** field, select the date when the feature should become effective.
 1. Select **OK**.
+
+For more information, see [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ## Set up Electronic invoicing integration in Finance
 
@@ -188,7 +171,7 @@ Before you configure the Vendor invoice feature setup, you should create a draft
 1. In the **Data model** tree, select **Map model to datasource**.
 1. In the **Definitions** tree, select **DataChannel**, and then select **Designer**.
 1. In the **Data sources** tree, expand the **$Context\_Channel** container.
-1. In the **Value** field, select **Edit**, and enter the name of the data channel. The name should have a maximum of 10 characters. It's the name that's given in the configuration of the data channel for the Electronic invoicing feature in RCS.
+1. In the **Value** field, select **Edit**, and enter the name of the data channel. The name should have a maximum of 10 characters. It's the name that's given in the configuration of the data channel for the Electronic invoicing feature.
 1. Select **Save**, and close the page.
 1. Close the page.
 1. Select the derived configuration that you just created from **Customer invoice context model**, and then, on the **Versions** FastTab, select **Change Status** \> **Completed**.
@@ -241,7 +224,7 @@ You can view the submission logs for all exported documents.
 
 1. On the Action Pane, select **Inquiries** \> **Submission details** to view the details of the submission execution logs. The information in the logs is divided among three FastTabs:
 
-    - **Processing actions** – This FastTab shows the execution log for the actions that are configured in the feature version that was set up in RCS. The **Status** column shows whether the action was successfully run.
+    - **Processing actions** – This FastTab shows the execution log for the actions that are configured in the feature version. The **Status** column shows whether the action was successfully run.
     - **Action files** – This FastTab shows the intermediate files that were generated during execution of the actions. Select **View** to download and view the file.
     - **Processing action log** – This FastTab shows the results of the submission of electronic invoices.
 
@@ -263,7 +246,7 @@ Enabling the **Indonesian electronic invoice** feature might require that limite
 
 ## Additional resources
 
-- [Electronic invoicing overview](../global/gs-e-invoicing-service-overview.md)
+- [Electronic Invoicing service overview](../global/gs-e-invoicing-service-overview.md)
 - [Get started with Electronic invoicing](../e-invoicing-get-started.md)
 - [Set up Electronic invoicing](../e-invoicing-setup.md)
 
