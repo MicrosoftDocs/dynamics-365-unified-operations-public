@@ -370,7 +370,7 @@
       items:
       - name: Scale unit capability for Supply Chain Management is deprecated and no longer available to new customers
         href: cloud-edge/cloud-edge-landing-page.md
-    - name: Approval management mobile app (preview)
+    - name: Approval management mobile app
       items:
       - name: Approvals Management mobile app overview
         href: approval-management-mobile-app/approval-management-app-overview.md
