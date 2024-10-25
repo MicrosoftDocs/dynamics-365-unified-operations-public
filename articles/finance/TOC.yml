@@ -14,14 +14,14 @@
               items:
                 - name: What's new or changed in Finance home page
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.42 (December)
+                  href: get-started/whats-new-changed-10-0-42.md
                 - name: Finance 10.0.41 (September)  
                   href: get-started/whats-new-changed-10-0-41.md
                 - name: Finance 10.0.40 (June)
                   href: get-started/whats-new-changed-10-0-40.md
                 - name: Finance 10.0.39 (April)
                   href: get-started/whats-new-changed-10-0-39.md
-                - name: Finance 10.0.38 (February)
-                  href: get-started/whats-new-changed-10-0-38.md
             - name: Removed or deprecated features
               items:
                 - name: Removed or deprecated features home page
