@@ -14,7 +14,7 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.42. This version has a build number of 10.0.2015 <!-- KFM: Get new build number --> and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.42. This version has a build number of 10.0.2095 and is available on the following schedule:
 
 - **Preview of release:** October 2024
 - **General availability of release (self-update):** December 2024
@@ -62,7 +62,7 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.42 includes platform updates
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.42, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](.). <!-- KFM: Get new link -->
+For information about the bug fixes included in each of the updates that are part of version 10.0.42, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=968512).
 
 ### Dynamics 365: 2024 release wave 2 plan
 
