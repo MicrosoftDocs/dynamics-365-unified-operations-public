@@ -15,22 +15,22 @@ ms.search.region: Global
 
 [!include [banner](../includes/banner.md)]
 
-This article lists the features that are included in the platform updates for version 10.0.42 of finance and operations apps. This version has a build number of 7.0.NNNNNNNN and is available on the following schedule:
+This article lists the features that are included in the platform updates for version 10.0.42 of finance and operations apps. This version has a build number of 7.0.7452.15 and is available on the following schedule:
 
 - **Preview of release:** October 2024
 - **General availability of release (self-update):** December 2024
-- **General availability of release (auto-update):** ?????????
+- **General availability of release (auto-update):** Febuary 2025
 
 ## Features included in this release
 
-This section contains a table that lists the features that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
+This section qill contain a table that lists the features that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
 
 ## Feature enhancements included in this release
 
-This section contains a table that lists the enhancements that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
+This section will contain a table that lists the enhancements that are included in this release when available. We might update this article to include features that were added to the build after this article was originally published.
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
@@ -38,7 +38,7 @@ This section contains a table that lists the enhancements that are included in t
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=NNNNNNNN).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=968512).
 
 ### Dynamics 365: 2024 release wave 2 plan
 
