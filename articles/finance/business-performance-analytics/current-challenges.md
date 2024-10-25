@@ -10,7 +10,7 @@ ms.reviewer: twheeloc
 audience: Application User
 ---
 
-#Current Challenges in Business Performance Analytics
+# Current Challenges in Business Performance Analytics
 
 ## Order to Cash Data Model
 Issue: The "Order to Cash" data model is not enabled by default for customers.
