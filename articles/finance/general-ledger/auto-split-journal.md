@@ -48,4 +48,4 @@ In the batch job configuration, **Batch processing** can't be disabled. After th
 
 ### Reversals
 
-For information on how to reverse journals that were automatically split, see [Reverse journal entries](/reverse-journal-posting.md#reverse-related-journals-with-journals-that-were-automatically-split).
+For information on how to reverse journals that were automatically split, see [Reverse journal entries](reverse-journal-posting.md#reverse-related-journals-with-journals-that-were-automatically-split).
