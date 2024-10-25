@@ -446,7 +446,7 @@
               href: tasks/create-pos-visual-profile-2016-02.md
           - name: Payments
             items:
-            - name: Check out faster with optimized payment flows
+            - name: Check out faster with optimized payment flows (preview)
               href: dev-itpro/faster-checkout-pos.md
             - name: Gift cards
               items:
