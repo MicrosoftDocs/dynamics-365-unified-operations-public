@@ -1,7 +1,7 @@
 ---
-title: Business performance analytics FAQ
-description: Access answers to frequently asked questions about Business performance analytics, including questions about signing up for public previews of analytics.
-author: jinniew
+title: Uninstall Business performance analytics
+description: This article describes how to uninstall Business performance analytics.
+author: lizmota
 ms.author: jiwo
 ms.topic: faq
 ms.custom:
