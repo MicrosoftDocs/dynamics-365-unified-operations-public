@@ -1,6 +1,6 @@
 ---
 title: Business performance analytics FAQ
-description: Access answers to frequently asked questions about Business performance analytics, including questions about signing up for public previews of analytics.
+description: This article answers some frequently asked questions about Business performance analytics, including questions about signing up for public previews of analytics.
 author: jinniew
 ms.author: jiwo
 ms.topic: faq
