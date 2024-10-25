@@ -48,4 +48,4 @@ In the batch job configuration, **Batch processing** can't be disabled. After th
 
 ### Reversals
 
-For information on how to reverse journals that were automatically split see section **Reverse related journals with journals that were automatically split** on [Reverse journal entries](https://learn.microsoft.com/en-us/dynamics365/finance/general-ledger/reverse-journal-posting.md).
+For information on how to reverse journals that were automatically split, see [Reverse journal entries](/general-ledger/reverse-journal-posting.md#reverse-related-journals-with-journals-that-were-automatically-split).
