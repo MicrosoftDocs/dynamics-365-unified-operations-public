@@ -64,7 +64,7 @@ After generative help and guidance with Copilot is enabled for your system, user
 :::image type="content" source="../copilot/media/copilot-help-welcome.png" alt-text="Copilot help pane in the user experience." lightbox="../copilot/media/copilot-help-welcome.png":::
 <!-- [<img src="../copilot/media/copilot-help-welcome.png" alt="" title="Copilot help pane in the user experience" width="720" />](../copilot/media/copilot-help-welcome.png#lightbox) -->
 
-For more information, see [Generative help and guidance with Copilot](../copilot/copliot-generative-help.md).
+For more information, see [Generative help and guidance with Copilot](../copilot/copilot-generative-help.md).
 
 ## Get notified about changes through an RSS feed
 

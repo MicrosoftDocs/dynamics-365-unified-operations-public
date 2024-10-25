@@ -73,7 +73,7 @@ Microsoft is committed to applying [responsible AI practices](../../dev-itpro/re
 
 ## See also
 
-- For administrators: [Enable generative help and guidance with Copilot](../../dev-itpro/copilot/enable-copliot-generative-help.md)
+- For administrators: [Enable generative help and guidance with Copilot](../../dev-itpro/copilot/enable-copilot-generative-help.md)
 - For administrators: [Add knowledge to generative help and guidance with Copilot](../../dev-itpro/copilot/extend-copilot-generative-help.md)
 - [Responsible AI FAQ for Generative help and guidance with Copilot in finance and operations apps](faq-copilot-generative-help.md)
 
