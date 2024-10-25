@@ -33,55 +33,58 @@ A CTP calculation that considers both materials and resources might show a large
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
 <!-- KFM:  Preview until further notice -->
 
-*Near real-time CTP* enables the system to to calculate CTP confirmed dates in the background without blocking user interface interactions or requiring you to run planning to update the dates. It also lets you use the standard CTP delivery date control with Planning Optimization, which removes a few of the limitations that apply when using CTP with either planning engine. Without *Near real-time CTP*, must use *Batch CTP* instead of the *CTP* delivery date control if you are using Planning Optimization.
+*Near real-time CTP* enables the system to calculate CTP confirmed dates in the background, without blocking user interface (UI) interactions and without requiring that you run planning to update the dates. *Near real-time CTP* also lets you use standard CTP delivery date control with Planning Optimization. This approach removes some of the limitations that apply when you use CTP with either planning engine. Without *Near real-time CTP*, you must use *Batch CTP* instead of *CTP* delivery date control if you're using Planning Optimization.
 
 > [!NOTE]
-> Because the standard *CTP* delivery date control can now be used by both Planning Optimization and the deprecated master planning engine, the CTP for Planning Optimization delivery date control has been renamed from *CTP for Planning Optimization* to *Batch CTP* to better describe the difference (as of Supply Chain Management version 10.0.41).
+> Because both Planning Optimization and the deprecated master planning engine can now use standard *CTP* delivery date control, CTP for Planning Optimization delivery date control is renamed in Supply Chain Management version 10.0.41. It's now named *Batch CTP* instead of *CTP for Planning Optimization* to better describe the difference.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-### Enable near real-time CTP
+### Enable Near real-time CTP
 
-To use near real-time CTP, your system must meet the following requirements:
+Before you can use *Near real-time CTP*, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.41 or later.
-- The following features must be turned on in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in order).
-    - *(Preview) Improve Planning Optimization performance by merging and queueing plan regeneration jobs*
-    - *(Preview) Near real-time CTP*
+- The following features must be turned on in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in this order):
+
+    1. *(Preview) Improve Planning Optimization performance by merging and queueing plan regeneration jobs*
+    2. *(Preview) Near real-time CTP*
 
 ### Queueing and merging plan regeneration jobs
 
-The prerequisite feature, *Improve Planning Optimization performance by merging and queueing plan regeneration jobs*, enables the system to queue and merge plan regeneration requests, which eliminates the "Another job for the same plan is currently in progress," error and minimizes the average time it takes to complete a planning run when multiple users are working at the same time.
+The prerequisite feature, *Improve Planning Optimization performance by merging and queueing plan regeneration jobs*, enables the system to queue and merge plan regeneration requests. This capability eliminates the "Another job for the same plan is currently in progress" error and minimizes the average time that is required to complete a planning run when multiple users are working at the same time.
 
-Here's how queueing and merging works
+Here's how queueing and merging works:
 
-- There is a maximum number of planning requests that the system can merge into a single job (default is 10). On reaching this limit, the system adds new planning requests to the queue as standalone jobs that could also be merged into another new job. If you need to change the maximum number of planning requests, please contact Microsoft Support for assistance.
-- Planning requests can only be merged into a single job if they meet the following requirements:
+- There is a maximum number of planning requests that the system can merge into a single job. (By default, the maximum number is 10.) When that number is reached, the system adds new planning requests to the queue as standalone jobs. Those jobs can also be merged into another new job. If you must change the maximum number of planning requests, contact Microsoft Support for assistance.
+- Planning requests can be merged into a single job only if they meet the following requirements:
+
     - All merged requests must belong to the same organization and master plan.
     - All merged requests must use the same filter attribute (such as `ItemId`).
     - All merged requests must have the same UI language.
-- Before adding a planning request to the queue as a standalone job, the system checks for other existing not started jobs that could be merged with it.
-- There is a maximum number of jobs allowed in the queue (default is 20). On reaching this limit, the system will show an error to any user that submits a planning run until more space is available in the queue. Note that each job in the queue can include several merged planning jobs.  If you need to change the maximum number of jobs allowed in the queue, please contact Microsoft Support for assistance.
+
+- Before the system adds a planning request to the queue as a standalone job, it checks for other existing jobs that haven't yet started and can be merged with it.
+- There is a maximum number of jobs that are allowed in the queue. (By default, the maximum number is 20.) When that number is reached, all users who submit planning runs receive an error until more space becomes available in the queue. Note that each job in the queue can include several merged planning jobs. If you must change the maximum number of jobs that are allowed in the queue, contact Microsoft Support for assistance.
 
 ### Near real-time CTP functionality
 
-Near real-time CTP provides the following functionality:
+*Near real-time CTP* provides the following functionality:
 
-- Multiple sellers can create sales lines at the same time while getting confirmed delivery dates right away.
-- When you mass import sales lines, the system automatically calculates confirmed delivery dates.
-- You can use the **Calculate confirmed delivery dates** dialog to ask the system to recalculate all confirmed dates for a sales order. If you set **Allow multiple deliveries** to *No*, the system automatically sets all sales order lines to use the same delivery date.
+- Multiple sellers can create sales lines at the same time and immediately get confirmed delivery dates.
+- When you mass-import sales lines, the system automatically calculates confirmed delivery dates.
+- You can use the **Calculate confirmed delivery dates** dialog box to make the system recalculate all confirmed dates for a sales order. If you set the **Allow multiple deliveries** option to *No*, the system automatically sets all sales order lines so that they use the same delivery date.
 
-## How CTP differs depending on which master planning engine and delivery date control you use
+## How CTP differs, depending on the master planning engine and delivery date control that you use
 
-The following table summarizes how CTP differs depending on which master planning engine and delivery date control you use.
+The following table summarizes how CTP differs, depending on the master planning engine and delivery date control that you use.
 
 | Element | Batch CTP | CTP |
 |---|---|---|
 | Planning engine support | Planning Optimization only | Planning Optimization and the deprecated master planning engine |
 | **Delivery date control** setting for orders, order lines, and products | *Batch CTP* | *CTP* |
-| Calculation time | The calculation is triggered by running a dynamic plan as a scheduled task. | The calculation is immediately triggered each time that you enter or update a sales order line. |
-| **Batch CTP status** field value | <p>A value of *Not ready* is shown for orders and order lines where the dynamic plan hasn't run since the orders and lines were created or last updated.</p><p>A value of *Ready* is shown for orders and lines where CTP has been used to calculate confirmed delivery dates by running the dynamic plan.</p> | A value of *Ready* is always shown. |
-| **CTP status** field value | The field isn't shown | A value is only shown if you are using Planning Optimization. The value represents the status of the delivery date calculation. |
+| Calculation time | The calculation is triggered when a dynamic plan is run as a scheduled task. | The calculation is immediately triggered each time that you enter or update a sales order line. |
+| **Batch CTP status** field value | <p>A value of *Not ready* is shown for orders and order lines where the dynamic plan hasn't been run since the orders and lines were created or last updated.</p><p>A value of *Ready* is shown for orders and lines where CTP was used to calculate confirmed delivery dates by running the dynamic plan.</p> | A value of *Ready* is always shown. |
+| **CTP status** field value | The field isn't shown. | A value is shown only if you're using Planning Optimization. The value represents the status of the delivery date calculation. |
 
 ## <a name="default-methods"></a>Set default delivery date control methods
 
@@ -98,8 +101,8 @@ The default delivery date control method will be applied to all new order lines 
     - *Sales lead time* – Sales lead time is the time between creation of the sales order and shipment of the items. The delivery date calculation is based on a default number of days, and doesn't consider stock availability, known demand, or planned supply.
     - *ATP* – ATP is the quantity of an item that is available and can be promised to a customer on a specific date. The ATP calculation includes uncommitted inventory, lead times, planned receipts, and issues.
     - *ATP + Issue margin* – The shipping date equals the ATP date plus the issue margin for the item. The issue margin is the time that is required to prepare the items for shipment.
-    - *CTP* – Use the standard CTP calculation, which provides near real-time calculations. To use this option with Planning Optimization, *[Near real-time CTP](#real-time-ctp)* must be enabled for your system.
-    - *Batch CTP* – Use the non real-time CTP calculation that is available for Planning Optimization. This setting has no effect if you're using the deprecated master planning engine.
+    - *CTP* – Use the standard CTP calculation, which provides near-real-time calculations. To use this option with Planning Optimization, you must enable *[Near real-time CTP](#real-time-ctp)* for your system.
+    - *Batch CTP* – Use the non-real-time CTP calculation that is available for Planning Optimization. This setting has no effect if you're using the deprecated master planning engine.
 
 ### Set delivery date control overrides for individual products
 
@@ -126,9 +129,9 @@ To set up a batch job to run a dynamic plan on a regular schedule, follow these 
 1. Select **OK** to save the schedule.
 1. Select **OK** to create the batch job and close the dialog box.
 
-## Use the standard CTP delivery date control
+## Use standard CTP delivery date control
 
-To use the standard CTP delivery date control, you must either use the deprecated master planning engine, or use Planning Optimization with *[Near real-time CTP](#real-time-ctp)* enabled.
+To use standard CTP delivery date control, you must either use the deprecated master planning engine or use Planning Optimization with *[Near real-time CTP](#real-time-ctp)* enabled.
 
 ### Create a new order that uses standard CTP delivery date control
 
@@ -138,7 +141,7 @@ Each time that you add a new sales order or order line, the system assigns a def
 
 CTP calculations are applied to orders and/or order lines where the **Delivery date control** field is set to *CTP*.
 
-For sales lines that use standard CTP delivery date control, the system automatically sets the **Confirmed ship date** and **Confirmed receipt date** fields each time that you save a sales line. If you later make a relevant change to a sales line (for example, by changing its quantity or site), the dates will immediately be recalculated.
+For sales lines that use standard CTP delivery date control, the system automatically sets the **Confirmed ship date** and **Confirmed receipt date** fields each time that you save a sales line. If you make a relevant change to a sales line later (for example, by changing its quantity or site), the dates are immediately recalculated.
 
 - To view the confirmed delivery dates for a sales order line, open the sales order, and select the sales line. Then, on the **Line details** FastTab, on the **Delivery** tab, review the **Confirmed ship date** and **Confirmed receipt date** values.
 - To view the confirmed delivery dates for an entire order, open the sales order, and select the **Header** view. Then, on the **Delivery** FastTab, review the **Confirmed ship date** and **Confirmed receipt date** values.
@@ -149,20 +152,19 @@ For sales lines that use standard CTP delivery date control, the system automati
 
 Each time that you add a new sales order or order line, the system assigns a default delivery date control method to it. The order header always starts with the global default method. If an override is assigned to an ordered item, the new order line will use that override. Otherwise, the new order line will also use the global default method. Therefore, you should set your default methods so that they match the delivery date control method that you most often use. After you create an order, you can override the default method at the order header and/or order line level as you require. Learn more in [Set default delivery date control methods](#default-methods) and [Change existing sales orders to use CTP](#change-orders).
 
-### View confirmed delivery dates when using Batch CTP
+### View confirmed delivery dates when you use Batch CTP
 
 Batch CTP calculations are applied to orders and/or order lines where the **Delivery date control** field is set to *Batch CTP*.
 
-For sales lines that use *Batch CTP*, the **Confirmed ship date** and **Confirmed receipt date** fields will be blank until you run the appropriate dynamic plan (typically by using a periodic batch job). They are then automatically set. For more information see [Schedule Batch CTP calculations](#batch-job).
+For sales lines that use Batch CTP, the **Confirmed ship date** and **Confirmed receipt date** fields remain blank until you run the appropriate dynamic plan (typically by using a periodic batch job). They are then automatically set. For more information, see [Schedule Batch CTP calculations](#batch-job).
 
-The **Batch CTP status** field indicates whether confirmed dates have been calculated yet for each line that uses Batch CTP. The field shows a value of *Not ready* for lines and orders where the confirmed delivery dates either haven't yet been calculated or are no longer valid because of other changes. It shows a value of *Ready* for lines and orders that have been calculated. You can view the status for each line and for the entire order.
+The **Batch CTP status** field indicates whether confirmed dates have been calculated for each line that uses Batch CTP. The field is set to *Not ready* for lines and orders where the confirmed delivery dates either haven't yet been calculated or are no longer valid because of other changes. The field is set to *Ready* for lines and orders that have been calculated. You can view the status for each line and for the entire order.
 
-- To view the status for a sales order line, open the sales order, and select the sales line. Then, on the **Line details** FastTab, on the **Delivery** tab, review the **Batch CTP status** value. The **Confirmed ship date** and **Confirmed receipt date** fields for the line are also shown on this tab after they have been calculated.
-- To view the status for an entire order, open the sales order, and select the **Header** view. Then, on the **Delivery** FastTab, review the **Batch CTP status** value. The **Confirmed ship date** and **Confirmed receipt date** for the order are also shown on this tab after they have been calculated.
+- To view the status for a sales order line, open the sales order, and select the sales line. Then, on the **Line details** FastTab, on the **Delivery** tab, review the **Batch CTP status** value. The **Delivery** FastTab also shows the **Confirmed ship date** and **Confirmed receipt date** values for the line after they are calculated.
+- To view the status for an entire order, open the sales order, and select the **Header** view. Then, on the **Delivery** FastTab, review the **Batch CTP status** value. The **Delivery** FastTab also shows the **Confirmed ship date** and **Confirmed receipt date** values for the order after they are calculated.
 
 > [!NOTE]
->
-> - If you update a sales order line after Batch CTP has calculated confirmed dates for it, the system will clear those dates until the next time that the appropriate dynamic plan is run.
+> - If you update a sales order line after Batch CTP has calculated confirmed dates for it, the system clears those dates until the next time that the appropriate dynamic plan is run.
 > - If you edit a related setting that might affect existing confirmed dates (for example, by changing lead times, reservations, or markings), you should clear the confirmed dates for the relevant existing orders. This action will cause the status of each relevant line to be changed to *Not ready*. This change, in turn, will cause the system to recalculate the confirmed dates the next time that it runs the dynamic plan.
 
 ## <a name="change-orders"></a>Change existing sales orders so that they use CTP
@@ -178,8 +180,8 @@ To change an order so that it uses CTP at the order header level, follow these s
 1. Select **Header** to open the header information on the **Sales order details** page.
 1. On the **Delivery** FastTab, set the **Delivery date control** field to one of the following values, depending on the planning engine that you're using:
 
-    - *CTP* – Use the standard CTP calculation, which provides near real-time calculations. To use this option with Planning Optimization, *[Near real-time CTP](#real-time-ctp)* must be enabled for your system.
-    - *Batch CTP* – Use the non real-time CTP calculation that is available for Planning Optimization. This setting has no effect if you're using the deprecated master planning engine.
+    - *CTP* – Use the standard CTP calculation, which provides near-real-time calculations. To use this option with Planning Optimization, you must enable *[Near real-time CTP](#real-time-ctp)* for your system.
+    - *Batch CTP* – Use the non-real-time CTP calculation that is available for Planning Optimization. This setting has no effect if you're using the deprecated master planning engine.
 
 1. Select **OK** to apply your changes.
 
@@ -194,8 +196,8 @@ To change an order so that it uses CTP at the line level, follow these steps.
 1. On the **Sales order details** page, on the **Sales order line** FastTab, select the sales order line that you want to set up.
 1. On the **Line details** FastTab, on the **Delivery** tab, set the **Delivery date control** field to one of the following values, depending on the planning engine that you're using:
 
-    - *CTP* – Use the standard CTP calculation, which provides near real-time calculations. To use this option with Planning Optimization, *[Near real-time CTP](#real-time-ctp)* must be enabled for your system.
-    - *Batch CTP* – Use the non real-time CTP calculation that is available for Planning Optimization. This setting has no effect if you're using the deprecated master planning engine.
+    - *CTP* – Use the standard CTP calculation, which provides near-real-time calculations. To use this option with Planning Optimization, you must enable *[Near real-time CTP](#real-time-ctp)* for your system.
+    - *Batch CTP* – Use the non-real-time CTP calculation that is available for Planning Optimization. This setting has no effect if you're using the deprecated master planning engine.
 
     The **Available ship and receipt dates** dialog box appears, and shows the available ship and receipt dates. This dialog box works the same way for order lines as it does for the order header, as described in the previous section.
 
