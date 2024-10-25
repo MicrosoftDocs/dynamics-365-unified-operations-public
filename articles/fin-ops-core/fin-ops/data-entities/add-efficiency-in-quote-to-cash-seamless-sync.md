@@ -6,7 +6,7 @@ ms.author: Henrikan
 ms.reviewer: kamaybac
 ms.search.form: CustParameters
 ms.topic: how-to
-ms.date: 10/25/2025
+ms.date: 10/25/2024
 ms.custom: 
   - bap-template
 ---
@@ -32,7 +32,7 @@ Before you can use seamless sync, your system must meet the following requiremen
 - You must be running Supply Chain Management version 10.0.42 or later.
 - You must be running Dual-write Supply Chain solution version 2.3.X.XXX or later. <!--KFM: Version number needed -->
 - You must turn on and set up the basic Sales integration as described in [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md).
-- The following features must be turned on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+- The following features must be turned on in [Feature management](../get-started/feature-management/feature-management-overview.md):
 
     - *Make Supply Chain Management price master when integrated with Dynamics 365 Sales* – This feature is a prerequisite. Learn more about it in [Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-enable.md).
     - *Automatically synchronize line data and totals with Dynamics 365 Sales* – This feature adds the capabilities that are described in this article.
