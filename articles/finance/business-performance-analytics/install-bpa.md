@@ -4,7 +4,7 @@ description: Learn how to install Business performance analytics, including a st
 author: jinniew
 ms.author: jiwo
 ms.topic: conceptual
-ms.date: 05/20/2024
+ms.date: 10/30/2024
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
