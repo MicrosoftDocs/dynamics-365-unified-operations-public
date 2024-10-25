@@ -4,7 +4,7 @@ description: Learn how to set up the default values for billing schedules that a
 author: JodiChristiansen
 ms.author: jchrist
 ms.topic: article
-ms.date: 09/09/2024
+ms.date: 10/25/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
