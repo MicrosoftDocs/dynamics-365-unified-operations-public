@@ -2264,7 +2264,7 @@ items:
       - name: Overview of Copilot capabilities in finance and operations apps
         href: ../fin-ops/copilot/copilot-for-finance-operations.md
       - name: Generative help and guidance with Copilot
-        href: ../fin-ops/copilot/copliot-generative-help.md
+        href: ../fin-ops/copilot/copilot-generative-help.md
       - name: Chat with finance and operations data on Microsoft 365 Copilot
         href: m365-copilot/chat-with-fno-data-on-m365copilot.md
       - name: Enable Copilot capabilities and features
@@ -2274,7 +2274,7 @@ items:
         - name: Enable Copilot support for managing changes to confirmed purchase orders
           href: copilot/purchase-order-changes-after-confirmation-enable.md
         - name: Enable generative help and guidance with Copilot
-          href: copilot/enable-copliot-generative-help.md
+          href: copilot/enable-copilot-generative-help.md
         - name: Add knowledge to generative help and guidance with Copilot
           href: copilot/extend-copilot-generative-help.md
       - name: Extending Copilot capabilities in finance and operations apps
