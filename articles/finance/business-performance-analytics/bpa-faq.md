@@ -14,8 +14,6 @@ ms.date: 9/11/2024
 
 This article answers frequently asked questions about Business performance analytics.
 
-[This article is prerelease documentation and is subject to change.]
-
 
 ### I received an error during the installation of Business performance analytics. How do I fix it?
 
