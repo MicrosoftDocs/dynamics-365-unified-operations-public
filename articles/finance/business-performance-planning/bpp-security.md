@@ -289,10 +289,12 @@ This section provides an overview of the actions that users in each role are res
 <td>    
 <p>Users can perform these actions:</p>
 <ul>    
-<li>Launch Excel Add-in<li>
-<li>View data that they have access to<li>
+<li>Launch Excel Add-in.<li>
+<li>View data that they have access to.<li>
 </ul>
-</td>   
+</td>
+</tr>      
+<tr>   
 <td>Excel</td>
 <td>
 <p>Users <em>can't</em> perform these actions:</p>
