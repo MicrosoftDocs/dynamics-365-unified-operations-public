@@ -12,8 +12,6 @@ audience: Application User
 
 # Install Business performance analytics
 
-[This article is prerelease documentation and is subject to change.]
-
 This article describes how to install Business performance analytics. 
 
 >[!Important]
