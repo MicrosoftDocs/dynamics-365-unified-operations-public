@@ -4,7 +4,7 @@ description: Learn about the performance improvements from automatically splitti
 author: Livbjerg
 ms.author: JLivbjerg
 ms.topic: article
-ms.date: 08/07/2024
+ms.date: 10/25/2024
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -45,3 +45,7 @@ If the number of lines in the journal exceeds the defined line limit, posting st
 For example, a general journal contains 1,050 lines. Each line is a separate voucher. After the feature is enabled, a warning informs the user that they should use the **Post in batch** process.
 
 In the batch job configuration, **Batch processing** can't be disabled. After the batch processing is completed, two separate journals are shown. The first journal contains the first 1,000 lines (each of which is a separate voucher), and the second journal contains the remaining 50 lines.
+
+### Reversals
+
+For information on how to reverse journals that were automatically split, see [Reverse journal entries](reverse-journal-posting.md#reverse-related-journals-with-journals-that-were-automatically-split).

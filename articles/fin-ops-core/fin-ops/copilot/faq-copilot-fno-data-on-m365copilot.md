@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQ for Chat with finance and operations data on Microsoft 365 Copilot
 description: This FAQ provides information about the AI technology used in Chat with finance and operations data on Microsoft 365 Copilot, along with key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 06/13/2024
+ms.date: 10/04/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
@@ -35,7 +35,19 @@ The intended users are Microsoft 365 Copilot users who have the security role an
 
 ## How was Chat with finance and operations data on Microsoft 365 Copilot evaluated? What metrics are used to measure performance?
 
-We have conducted multiple rounds of golden tests to ensure all test cases have passed. These golden test cases are also included in the test automation suite, allowing for regular verification.
+The evaluation of Chat with finance and operations data on Microsoft 365 Copilot involved a multi-phase testing process to ensure its accuracy and reliability. The key components of the evaluation included:
+
+1. **Golden Tests**: A series of predefined test cases, known as golden tests, were conducted to simulate real-world scenarios where users interact with financial and operations data. These test cases are designed to cover a wide range of common use cases and ensure that the Copilot feature responds accurately and efficiently.
+
+2. **Test Automation**: To maintain consistency and monitor performance over time, these golden test cases were integrated into an automated testing suite. This allows the team to run regular checks and ensure that updates or changes to the system don’t introduce new issues or regressions.
+
+3. **Performance Metrics**: Several metrics are used to measure the performance of the feature:
+   - **Accuracy of Responses**: The primary metric is the accuracy of the Copilot's responses, especially regarding inventory levels and data queries.
+   - **Response Time**: The speed at which Copilot responds to user queries is measured to ensure that it delivers information in real-time or within an acceptable time frame.
+   - **User Satisfaction**: Feedback from pilot users and testers is gathered to assess the usability and helpfulness of the feature.
+   - **Error Rate**: The frequency of incorrect or incomplete responses is monitored to identify areas that need improvement.
+     
+By combining automated testing with real-world usage feedback and rigorous performance metrics, Microsoft ensures that Chat with finance and operations data on Microsoft 365 Copilot meets high standards for accuracy, speed, and reliability.
 
 ## What are the limitations of Chat with finance and operations data on Microsoft 365 Copilot? How can users minimize the impact of these limitations when they use the system?
 

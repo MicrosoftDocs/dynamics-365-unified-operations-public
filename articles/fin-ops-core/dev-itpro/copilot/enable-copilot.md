@@ -31,7 +31,7 @@ Copilot in finance and operations apps is built from the following components:
 
 Finance and operations apps support two fundamental types of Copilot features:
 
-- **Sidecar features** – These features are opened in a pane on the right side of the page. They provide natural-language chat features such as [generative help and guidance with Copilot](../../fin-ops/copilot/copliot-generative-help.md).
+- **Sidecar features** – These features are opened in a pane on the right side of the page. They provide natural-language chat features such as [generative help and guidance with Copilot](../../fin-ops/copilot/copilot-generative-help.md).
 - **Summary and content-generation features** – These features are embedded in relevant parts of each application and provide summaries and other relevant information. They include the [Confirmed purchase orders with changes workspace](../../../supply-chain/procurement/purchase-order-changes-after-confirmation.md) and various [Copilot summaries](../../../supply-chain/get-started/copilot-summaries-overview.md).
 
 The following illustration shows the components that are needed to use Copilot sidecar features in finance and operations apps.
@@ -41,8 +41,6 @@ The following illustration shows the components that are needed to use Copilot s
 The following illustration shows the components that are needed to use Copilot summary and content generation features in finance and operations apps.
 
 :::image type="content" source="media/copilot-summaries-components.svg" alt-text="Diagram that shows the components needed to use Copilot summary features." lightbox="media/copilot-summaries-components.svg":::
-
-All Copilot features require Power Platform Integration and are supported only for cloud-hosted environments.
 
 ## Regional requirements
 
@@ -101,7 +99,7 @@ As was previously mentioned, most Copilot features in finance and operations app
 | Application | Feature | Required installation and setup |
 |---|---|---|
 | All finance and operations apps | Basic Copilot support | There are no additional requirements. |
-| All finance and operations apps | Generative help and guidance with Copilot | [Enable generative help and guidance with Copilot](enable-copliot-generative-help.md). |
+| All finance and operations apps | Generative help and guidance with Copilot | [Enable generative help and guidance with Copilot](enable-copilot-generative-help.md). |
 | All finance and operations apps | Workflow history summary | [Turn on Copilot support for the Workflow history page](../../fin-ops/organization-administration/workflow-history-summary.md) |
 | Dynamics 365 Commerce | Use Copilot in site builder to enrich product detail pages | [Enable Copilot in site builder](../../../commerce/copilot-site-builder.md). |
 | Dynamics 365 Finance | Collections coordinator summary | [Enable collections coordinator summary](../../../finance/accounts-receivable/CollectionsCoordinatorSummary.md). |
