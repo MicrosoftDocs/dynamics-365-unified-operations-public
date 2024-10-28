@@ -2,7 +2,7 @@
 title: Prepare for go-live
 description: Learn about how to prepare for the go-live for finance and operations apps, including a table that lists the key steps in the go-live process.
 author: alejandra-cabrales
-ms.date: 05/06/2024
+ms.date: 10/28/2024
 ms.topic: how-to
 ms.custom: 
   - bap-template
@@ -24,7 +24,7 @@ To ensure that the production environment is used for live operations, Microsoft
 
 > [!Note]
 > Most projects are **required** to use the **FastTrack for Dynamics 365 implementation portal** for their Go-live Readiness Review with Microsoft.
-> If you have a Microsoft FastTrack Solution Architect assigned to your implementation project, reach them before creating a new project to avoid duplicate projects/reviews being created. The Microsoft FastTrack Solution Architect is able to work with you on the Go-Live review and guides you on the process to follow.
+> If you have a Microsoft FastTrack Solution Architect assigned to your implementation project, reach them before creating a new project to avoid duplicate projects/reviews being created. The Microsoft FastTrack Solution Architect can work with you on the Go-Live review and guides you on the process to follow.
 
 For answers to common questions about go-live, see the [Go-live FAQ](go-live-faq.md).
 
@@ -45,9 +45,9 @@ The following table lists the key steps in the go-live process.
 
 The project team should validate solution readiness. The following prerequisites must be met before the Go-live Readiness Review with Microsoft can be initiated. The production environment can be deployed after the Go-live Readiness Review with Microsoft is successfully completed.
 
-- User acceptance testing (UAT) and performance testing have been completed or almost completed in a Tier-2 (or higher) environment. Tier-1 environments must not be used for UAT or performance testing. For more information, see [Tier-1 vs. Tier-2 and higher](environment-planning.md#tier-1-vs-tier-2-and-higher). For information about how to identify the correct sandbox environment tier, based on your transaction volumes, see [Selecting the correct Tier-2 or higher environment](environment-planning.md#selecting-the-correct-tier-2-or-higher-environment).
+- User acceptance testing (UAT) and performance testing is complete or almost completed in a Tier-2 (or higher) environment. Tier-1 environments must not be used for UAT or performance testing. For more information, see [Tier-1 vs. Tier-2 and higher](environment-planning.md#tier-1-vs-tier-2-and-higher). For information about how to identify the correct sandbox environment tier, based on your transaction volumes, see [Selecting the correct Tier-2 or higher environment](environment-planning.md#selecting-the-correct-tier-2-or-higher-environment).
 
-    During the UAT phase, test all the business processes that you've implemented and any customizations that you've made.
+    During the UAT phase, test all the business processes that you've implemented and any customizations that you made.
 
     - Test cases should cover the entire scope of requirements.
     - Use migrated data for testing. This data should include master data and opening balances, even if they aren't yet final.
@@ -58,13 +58,13 @@ The project team should validate solution readiness. The following prerequisites
     Performance testing is a crucial part of validating the readiness of your solution. For detailed guidance about the recommended practices, review the [Performance Testing Techtalks](https://community.dynamics.com/blogs/post/?postid=88afa660-b640-4206-a163-500964a1a331).
 
 - The environment version that is planned for the go-live complies with the [Software lifecycle policy](../migration-upgrade/versions-update-policy.md). If you use Commerce Scale Units (CSU), the CSU version must be in sync with the environment version. For more information, see [Component dependencies](../../../commerce/dev-itpro/arch-component-versioning.md#component-dependencies).
-- Key customer team members have been added to the Lifecycle Services project.
+- Key customer team members are added to the Lifecycle Services project.
 - A generic service account that's used to deploy the production environment is added to Lifecycle Services.
-- All licenses that are required for go-live have been purchased in the correct tenant.
-- After all licenses have been purchased, the final subscription estimator is uploaded and activated in Lifecycle Services. For more information, see [Subscription estimator in Lifecycle Services](../lifecycle-services/subscription-estimator.md).
-- The Customization analysis report (CAR) is run, and critical issues have been addressed. For more information, see [Customization Analysis Report (CAR)](../dev-tools/customization-analysis-report.md).
+- All licenses that are required for go-live were purchased in the correct tenant.
+- After all licenses are purchased, the final subscription estimator is uploaded and activated in Lifecycle Services. For more information, see [Subscription estimator in Lifecycle Services](../lifecycle-services/subscription-estimator.md).
+- The Customization analysis report (CAR) is run, and critical issues are addressed. For more information, see [Customization Analysis Report (CAR)](../dev-tools/customization-analysis-report.md).
 - The go-live date in Lifecycle Services correctly represents the go-live date that you're targeting. This date is the date when end users start live operations, not cutover activities.
-- All relevant tasks and phases in the [Lifecycle Services methodology](../lifecycle-services/lcs-works-lcs.md#methodologies) have been completed. Production can be deployed only after all phases, including the Test phase, have been completed. To complete a phase in Lifecycle Services, first complete every required step in that phase. When all the steps in a phase have been completed, you can complete the whole phase. You can always reopen a phase later if you must make changes. The process of completing a step has two parts:
+- All relevant tasks and phases in the [Lifecycle Services methodology](../lifecycle-services/lcs-works-lcs.md#methodologies) are complete. Production can be deployed only after all phases, including the Test phase, are complete. To complete a phase in Lifecycle Services, first complete every required step in that phase. When all the steps in a phase are complete, you can complete the whole phase. You can always reopen a phase later if you must make changes. The process of completing a step has two parts:
 
     - Do the actual work, such as a fit-gap analysis or UAT.
     - Mark the corresponding step in the Lifecycle Services methodology as you complete it.
@@ -81,14 +81,14 @@ For most projects, the Go-live Readiness Review is done in the FastTrack for Dyn
 
 > [!Note]
 > There are **three exceptions** that don't use the FastTrack for Dynamics 365 implementation portal:
->1. **GCC projects** - Projects that are in the **[United States (US) Government Community Cloud (GCC)](../../fin-ops/deployment/us-gcc-deployment.md)**. - Send an email to <d365fogccglr@microsoft.com> to start the Go-Live process. Always include a key stakeholder from the customer and the implementation partner on the email. Microsoft FastTrack reviews the project and follow up.
+>1. **GCC projects** - Projects that are in the **[United States (US) Government Community Cloud (GCC)](../../fin-ops/deployment/us-gcc-deployment.md)**. - Send an email to <d365fogccglr@microsoft.com> to start the Go-Live process. Always include a key stakeholder from the customer and the implementation partner on the email. Microsoft FastTrack reviews the project and follows up.
 >1. **Tenant moves** - For projects that are already live, but planning to move the live solution to a new tenant if the solution is not changing, completing a new Go-live Readiness review is not necessary. Follow the steps described in [Move your production environment to the new tenant](../get-started/move-lcs-implementation-project-tenant.md#move-your-production-environment-to-the-new-tenant) to get the production slot enabled on the new tenant.
 >1. **HR migration projects** - Projects that migrate from the Microsoft Dynamics 365 Human Resources standalone application to finance and operations infrastructure should follow the process described in [Human Resources migration go-live readiness review](../../../human-resources/hr-migration-admin-go-live-readiness-review.md).
 
 ### Initiate the Go-live readiness review in the portal
 
 > [!NOTE]
-> If you have a Microsoft FastTrack Solution Architect assigned to your implementation project, reach them before creating a new project using following steps in the portal to avoid duplicate projects/reviews being created. The Microsoft FastTrack Solution Architect is able to work with you on the Go-Live review and guides you on the process to follow.
+> If you have a Microsoft FastTrack Solution Architect assigned to your implementation project, reach them before creating a new project using following steps in the portal to avoid duplicate projects/reviews being created. The Microsoft FastTrack Solution Architect can work with you on the Go-Live review and guides you on the process to follow.
 
 There are two options to proceed with the Go-live readiness review. You can choose either one of the following options.
 - Option 1 - Self-Service Create/Join the Project in the Dynamics 365 Implementation Portal.
@@ -110,7 +110,7 @@ Submitting the Go-live readiness review can be performed by partners and custome
 
 #### Option 2 - Share details with Microsoft to create the Project 
 
-Follow the below steps if you have any issues creating the project via the Dynamics 365 Implementation Portal/blocked from creating project due to any other reason. This option will be deprecated in few weeks, and we highly encourage you to follow Option 1 whenever possible.
+Follow the below steps if you have any issues creating the project via the Dynamics 365 Implementation Portal/blocked from creating project due to any other reason. This option will be deprecated in the future, and we highly encourage you to follow Option 1 whenever possible.
 
 1. The project team decides who from the **customer** organization is the admin for the project on Portal and a key participant of the Go-live Readiness review. Admin access to the project on Portal can be granted only to the member of the customer organization. Microsoft grants access to this user and this user manages access for other team members. 
 
