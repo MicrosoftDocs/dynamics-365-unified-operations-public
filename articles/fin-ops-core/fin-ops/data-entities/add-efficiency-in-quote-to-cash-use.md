@@ -80,7 +80,8 @@ Therefore, the following changes occur when this feature is enabled:
 - For sales orders in Sales, the **Recalculate** option has no effect.
 
 > [!NOTE]
-> When you create or update a sales quotation or sales order in Sales, select **Price quote** (for quotations) or **Price order** (for orders) to ensure that all the relevant calculations are done in Supply Chain Management and then synced back to Sales. This step isn't required for quotations and sales orders that are created in Supply Chain Management, provided that the *Calculate sales totals* batch job is set up to run on a regular schedule.
+> - When you create or update a sales quotation or sales order in Sales, select **Price quote** (for quotations) or **Price order** (for orders) to ensure that all the relevant calculations are done in Supply Chain Management and then synced back to Sales. This step isn't required for quotations and sales orders that are created in Supply Chain Management, provided that the *Calculate sales totals* batch job is set up to run on a regular schedule.
+> - As of version 10.0.42, Supply Chain Management provides an improved approach to the synchronization of line details and pricing between systems. This approach extends the ability of Supply Chain Management to function as the price master. Now, when a sales quotation or sales order line is created or updated in Dynamics 365 Sales, all line details, monetary line values, and totals are immediately synced between systems without requiring that users select **Price quote** (for quotations) or **Price order** (for orders). For details about how to enable and this functionality, see [Enable and configure seamless sync with Dynamics 365 Sales](add-efficiency-in-quote-to-cash-seamless-sync.md).
 
 ## <a name="push-to-sales"></a>Calculate and push prices, discounts, and totals from Supply Chain Management to Sales
 
