@@ -4411,7 +4411,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/custom-designs-business-docs.md?context=/dynamics365/context/finance
                 - name: Help prevent long-running reports from timing out
                   href: ../fin-ops-core/dev-itpro/analytics/prevent-long-running-reports-timing-out.md?context=/dynamics365/context/finance
-        - name: Business performance analytics (preview)
+        - name: Business performance analytics 
           items:
             - name: Business performance analytics
               href: business-performance-analytics/business-performance-analytics-home-page.md
