@@ -1,5 +1,5 @@
 ---
-title: Business performance analytics 
+title: Business performance analytics troubleshooting
 description: This article describes some current challenges in Business performance analytics.
 author: lizmora
 ms.author: jiwo
@@ -10,7 +10,9 @@ ms.reviewer: twheeloc
 audience: Application User
 ---
 
-# Current challenges in Business performance analytics
+# Business performance analytics troubleshooting
+
+[!include [banner](../includes/banner.md)]
 
 This article describes some known issues in Business performance analytics.
 
