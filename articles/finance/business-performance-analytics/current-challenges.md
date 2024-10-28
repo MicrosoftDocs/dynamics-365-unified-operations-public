@@ -21,15 +21,15 @@ Customers need to request enablement through Microsoft support. In the future, t
 
 ## Custom reports are lost when Business performance analytics is uninstalled
 To save report customizations, follow these steps.
-If Business performance analytics has been uninstalled and reinstalled, reports can be restored if the following conditions are met:
- - A backup is complete, or the user has waited at least 24 hours for the automated backup.
- - The Business performance analytics configuration solution (msdyn_BpaConfigs) hasn't been uninstalled.
+If Business performance analytics was uninstalled and reinstalled, reports can be restored if the following conditions are met:
+ - A backup is complete, or it has been 24 hours for the automated backup to complete.
+ - The Business performance analytics configuration solution is still installed.
  - No external issues are affecting the data lake.
  - The reinstallation occurs in the same environment. Cross-environment restoration isn't supported.
 
 To reinstall Business performance analytics with a restore, follow these steps:
 1. Before uninstalling, confirm a backup is complete.
-2. Don't uninstall the Business performance analytics configs solution (msdyn_BpaConfigs) to prevent backup data loss.
+2. Don't uninstall the Business performance analytics configs solution (msdyn_BpaConfigs).
 3. Reinstall Business performance analytics via the Power Platform Admin Center (PPAC) portal.
 4. After the installation is complete, perform a restore.
 
