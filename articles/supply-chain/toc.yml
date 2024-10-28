@@ -2515,6 +2515,26 @@
           href: procurement/tasks/search-vendors.md
         - name: Set up permissions for ordering products on behalf of someone else
           href: procurement/tasks/set-up-permissions-ordering-products.md
+      - name: Integerate with contract lifecylce management systems (preview)
+        items:
+        - name: Contract lifecylce management overview
+          href: procurement/contract-lifecycle-management/clm-overview.md
+        - name: Work with integrated CLM
+          href: procurement/contract-lifecycle-management/clm-use.md
+        - name: CLM integration admin and devlopment
+          items:
+          - name: Enable and configure CLM integration
+            href: procurement/contract-lifecycle-management/developer/clm-enable.md
+          - name: Data integration APIs
+            href: procurement/contract-lifecycle-management/developer/clm-data-integration-apis.md
+          - name: Establish a connection from a CLM system to Supply Chain Management
+            href: procurement/contract-lifecycle-management/developer/clm-establish-connection.md
+          - name: Synchronize master data
+            href: procurement/contract-lifecycle-management/developer/clm-sync-master-data.md
+          - name: Synchronize contracts
+            href: procurement/contract-lifecycle-management/developer/clm-sync-contracts.md
+        - name: Integrate with Icertis for Microsoft Dynamics 365 Supply Chain Management
+          href: procurement/contract-lifecycle-management/clm-icertis.md
       - name: Procurement FAQ
         href: procurement/procurement-faq.md
     - name: Product information management
