@@ -330,6 +330,7 @@ This section provides an overview of the actions that users in each role are res
 </ul>
 </td>
 </tr>
+<tr>    
 </tbody>
 </table>
 
