@@ -58,7 +58,7 @@ We have recently added or significantly updated the following help articles. The
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.42 includes platform updates. Learn more in [Platform updates for version 10.0.42 of Finance and Operations apps (December 2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-42.md). <!-- KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.42 includes platform updates. Learn more in [Platform updates for version 10.0.42 of Finance and Operations apps (December 2024)](../../fin-ops-core/fin-ops/get-started/whats-new-platform-updates-10-0-42.md).
 
 ### Bug fixes
 
