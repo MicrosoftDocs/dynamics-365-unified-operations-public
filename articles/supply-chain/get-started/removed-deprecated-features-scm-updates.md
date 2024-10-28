@@ -26,6 +26,16 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.41 release
 
+### Pricing management module (preview)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | The Pricing management module (previously in preview) is being replaced by the new [Unified pricing management module](../unified-pricing-management/upm-pricing-management-overview.md). |
+| **Replaced by another feature?**  | Yes, the Pricing management module is being replaced by the new [Unified pricing management module](../unified-pricing-management/upm-pricing-management-overview.md). |
+| **Product areas affected** | Supply Chain Management – Pricing management |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | Deprecated. Approximately one year after the release of version 10.0.41, the Pricing management module will no longer be supported and may eventually be removed from the product. |
+
 ### Job card terminal
 
 | &nbsp;  | &nbsp;  |

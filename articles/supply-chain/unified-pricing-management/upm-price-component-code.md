@@ -1,6 +1,6 @@
 ---
 title: Price component codes (preview)
-description: Learn how to create a price structure for pricing at the macro level by using Pricing management with a table defining various names.
+description: Learn how to create a price structure for pricing at the macro level by using Unified pricing management with a table defining various names.
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: how-to
@@ -16,14 +16,7 @@ ms.search.form: GUPPriceComponentCode, GUPPriceComponentCodeGroup
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-The purpose of making pricing decisions is to increase profitability. Good decision making demands a thorough understanding of the different elements that are involved in determining the price. By providing a list of pricing building blocks, Pricing management lets you create a price structure (price tree) for pricing at the macro level. The price component code is the basic unit of the price structure.
-
-The following two methods are available for building the price structure:
-
-- **Price component code setup** – This method provides a single, uniform price structure for each company.
-- **Price trees** – This method enables multiple price structures that are based on order attribute values for each company.
-
-You must use *either* the price component code setup (a single price tree) *or* multiple price trees. You'll make this decision based on the complexity of your price structure.
+The purpose of making pricing decisions is to increase profitability. Good decision making demands a thorough understanding of the different elements that are involved in determining the price. By providing a list of pricing building blocks, Unified pricing management lets you create a price structure for pricing at the macro level. The price component code is the basic unit of the price structure. You set up your prices structure by creating one or more price trees in Unified pricing management.
 
 | Name | Description |
 |---|---|
@@ -66,7 +59,7 @@ Follow these steps to set up your price component codes.
 
 1. On the **General** FastTab, set the following fields:
 
-    - **Price component** – Select the type of price component that you're creating. You can edit this field only for new records. (It becomes read-only when you save the record.) For more information about price component types, see [Price structure overview](price-structure-overview.md).
+    - **Price component** – Select the type of price component that you're creating. You can edit this field only for new records. (It becomes read-only when you save the record.) For more information about price component types, see [Price structure overview](upm-price-structure-overview.md).
     - **Maintenance mode** – Select one of the following values to specify how you'll create or generate the different combinations of price attribute groups that the price component code will support when you create pricing rules for it. You can edit this field only for new records. (It becomes read-only when you save the record.)
 
         - *Separate* – You can assign a rank to each individual header and line attribute group. The system will then automatically generate each possible combination of header and line attribute groups, and will assign a combined rank to each combination, based on your individual rankings.
@@ -74,12 +67,12 @@ Follow these steps to set up your price component codes.
 
     - **Use all in header group** – Set this option to *Yes* if you have the combination where header attributes have a value of *All*, so that you can create pricing rules that apply to all customers.
     - **Use all in line group** – Set this option to *Yes* if you have the combination where line attributes have a value of *All*, so that you can create pricing rules that apply to all products.
-    - **Default auto charge concurrency mode** – Select the default concurrency rule to use for auto charges that are associated with the price component code. For information about how this type of concurrency works and the effects of each value, see [Resolve concurrency within price component codes](concurrence-within-codes.md). This field is available only when the **Price component** field is set to *Auto charges*.
-    - **Default discount concurrency mode** – Select the default concurrency rule to use for discount pricing rules that are associated with the price component code. For information about how this type of concurrency works and the effects of each value, see [Resolve concurrency within price component codes](concurrence-within-codes.md). This setting is available only when the **Price component** field is set to *Margin component* or *Discount*.
+    - **Default auto charge concurrency mode** – Select the default concurrency rule to use for auto charges that are associated with the price component code. For information about how this type of concurrency works and the effects of each value, see [Resolve concurrency within price component codes](upm-concurrence-within-codes.md). This field is available only when the **Price component** field is set to *Auto charges*.
+    - **Default discount concurrency mode** – Select the default concurrency rule to use for discount pricing rules that are associated with the price component code. For information about how this type of concurrency works and the effects of each value, see [Resolve concurrency within price component codes](upm-concurrence-within-codes.md). This setting is available only when the **Price component** field is set to *Margin component* or *Discount*.
     - **Price component code group** – Select a price component code group. You set up and maintain your component code groups on the **Price component groups** page (**Pricing management \> Setup \> Price component codes \> Price component groups**).
 
-1. If you set the **Maintenance mode** field to *Separate*, on the **Header price attribute group** FastTab, add each [header attribute group](price-attribute-groups.md) that you want to use with the price component code. Use the buttons on the toolbar to add, remove, and rearrange header price attribute groups as required.
-1. If you set the **Maintenance mode** field to *Separate*, on the **Line price attribute group** FastTab, add each [line attribute group](price-attribute-groups.md) that you want to use with the price component code. Use the buttons on the toolbar to add, remove, and rearrange line price attribute groups as required.
+1. If you set the **Maintenance mode** field to *Separate*, on the **Header price attribute group** FastTab, add each [header attribute group](upm-price-attribute-groups.md) that you want to use with the price component code. Use the buttons on the toolbar to add, remove, and rearrange header price attribute groups as required.
+1. If you set the **Maintenance mode** field to *Separate*, on the **Line price attribute group** FastTab, add each [line attribute group](upm-price-attribute-groups.md) that you want to use with the price component code. Use the buttons on the toolbar to add, remove, and rearrange line price attribute groups as required.
 1. If you set the **Maintenance mode** field to *Combined*, use these guidelines to set up the **Price attribute group combination** FastTab:
 
     - Use the buttons on the toolbar to add and remove price attribute groups as required.
@@ -92,7 +85,7 @@ Follow these steps to set up your price component codes.
         - **Line price attribute group** – If you set the **Line type** field to *Group*, specify the attribute group that the price attribute group combination will provide so that line attributes can be specified in pricing rules.
         - **Combination rank** – Assign a rank to the price attribute group combination. The rank is used to resolve concurrency if more than one pricing rule applies to the price component code. Learn more in the [Price attribute combination rank](#rank) section of this article.
 
-    - For price component codes where **Price component** is *Sales trade agreement*, the toolbar on the **Price attribute group combination** FastTab includes a **Trade agreement journals** button. Select a row, and then select this button to create a new trade agreement journal for the selected row. The selected row will be the default **Price attribute group combination** field in the trade agreement journal. Learn more in [Sales trade agreement prices](sales-trade-agreement-prices.md).
+    - For price component codes where **Price component** is *Sales trade agreement*, the toolbar on the **Price attribute group combination** FastTab includes a **Trade agreement journals** button. Select a row, and then select this button to create a new trade agreement journal for the selected row. The selected row will be the default **Price attribute group combination** field in the trade agreement journal. Learn more in [Sales trade agreement prices](upm-sales-trade-agreement-prices.md).
 
 1. If you set the **Maintenance mode** field to *Separate*, use these guidelines to set up the **Price attribute group combination** FastTab:
 
@@ -108,13 +101,13 @@ Follow these steps to set up your price component codes.
         - **Line price attribute group** – If you set the **Line type** field *Group*, specify the attribute group that the price attribute group combination will provide so that line attribute can be specified in pricing rules.
         - **Combination rank** – Assign a rank to the price attribute group combination. The rank is used to resolve concurrency if more than one pricing rule applies to the price component code. Learn more in the [Price attribute combination rank](#rank) section.
 
-    - For price component codes where the **Price component** field is set to *Sales trade agreement*, the toolbar on the **Price attribute group combination** FastTab includes a **Trade agreement journals** button. Select a row, and then select this button to create a new trade agreement journal for the selected row. The selected row will be the default **Price attribute group combination** field in the trade agreement journal. Learn more in [Sales trade agreement prices](sales-trade-agreement-prices.md).
+    - For price component codes where the **Price component** field is set to *Sales trade agreement*, the toolbar on the **Price attribute group combination** FastTab includes a **Trade agreement journals** button. Select a row, and then select this button to create a new trade agreement journal for the selected row. The selected row will be the default **Price attribute group combination** field in the trade agreement journal. Learn more in [Sales trade agreement prices](upm-sales-trade-agreement-prices.md).
 
 1. On the Action Pane, select **Save**.
 
 ## <a name="rank"></a>Price attribute combination rank
 
-Rankings enable the system to determine which pricing rule should be used if an order qualifies for more than one rule. In general, specific pricing rules (that is, rules that apply to a specific customer account and product number) have priority over more general rules (that is, rules that apply to a group of customers and/or a group of products). However, if two equally general rules apply (for example, a rule that targets a specific customer group and a rule that targets a specific region), it can be difficult to determine which rule should have priority. Therefore, Pricing management lets you specify a rank for each attribute group and each attribute group combination.
+Rankings enable the system to determine which pricing rule should be used if an order qualifies for more than one rule. In general, specific pricing rules (that is, rules that apply to a specific customer account and product number) have priority over more general rules (that is, rules that apply to a group of customers and/or a group of products). However, if two equally general rules apply (for example, a rule that targets a specific customer group and a rule that targets a specific region), it can be difficult to determine which rule should have priority. Therefore, Unified pricing management lets you specify a rank for each attribute group and each attribute group combination.
 
 The price engine considers the **Combination rank** value if both the following conditions are met:
 

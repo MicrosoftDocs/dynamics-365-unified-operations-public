@@ -26,7 +26,7 @@ This article describes the price determination rules for calculating the sales o
 | Item base price | The **Item base price** page lets you set prices for each item by using either calculated values or manually entered values. Calculated prices use the following formula: *Item base price* = *Vendor list price* &plusmn; *Vendor term agreements*. | <p>Any of the following:</p><ul><li>Base price - purchase price</li><li>Base price - inventory price</li><li>Base price - sales price</li></ul> |
 | Standard cost | The cost version of an item that's calculated by using the standard cost model. | Base price - inventory price |
 | Margin component price adjustments | You can set up layers of margin components to adjust the base price up (positive) or down (negative). Margin component price adjustments have a calculation sequence and can be compounded to get the total adjustment price. | Margin component |
-| Sales agreement | Although the **Pricing management** module respects [sales agreement rules](../sales-marketing/sales-agreements.md), the sales agreement feature isn't otherwise integrated with the **Pricing management** module. | |
+| Sales agreement | Although the Unified pricing management module respects [sales agreement rules](../sales-marketing/sales-agreements.md), the sales agreement feature isn't otherwise integrated with the Unified pricing management module. | |
 
 The following flow chart shows the sales order base price determination rules.
 
@@ -34,5 +34,5 @@ The following flow chart shows the sales order base price determination rules.
 
 ## Next steps
 
-- [Base price versions](base-price-versions.md)
-- [Sales trade agreement prices](sales-trade-agreement-prices.md)
+- [Base price versions](upm-base-price-versions.md)
+- [Sales trade agreement prices](upm-sales-trade-agreement-prices.md)

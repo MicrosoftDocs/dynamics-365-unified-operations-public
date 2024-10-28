@@ -16,7 +16,7 @@ ms.search.form: GUPParameters, EcoResAttribute, EcoResAttributeGroup, SalesTable
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-Pricing management provides a set of prefilled price attributes from fields in related tables that are associated with products, customers, orders, and order lines. It also lets you create custom price attributes and associate them with orders, customers, and items. You can use those price attributes when you create pricing rules and conditions. Then, when an order is placed, the pricing engine will then use the associations to determine the appropriate price.
+Unified pricing management provides a set of prefilled price attributes from fields in related tables that are associated with products, customers, orders, and order lines. It also lets you create custom price attributes and associate them with orders, customers, and items. You can use those price attributes when you create pricing rules and conditions. Then, when an order is placed, the pricing engine will then use the associations to determine the appropriate price.
 
 This article explains how to set up the configurable price attributes and associate them with products, customers, and orders.
 
@@ -37,7 +37,7 @@ When you create new attributes and assign them to a category, products in that c
 
 ### <a name="price-attributes"></a>Set up product price attributes
 
-To use attributes when you design Pricing management pricing rules, you must mark them as *price attributes*, as described in the following procedure.
+To use attributes when you design Unified pricing management pricing rules, you must mark them as *price attributes*, as described in the following procedure.
 
 1. Go to **Product information management \> Setup \> Categories and attributes \> Attributes**.
 1. Either select an attribute in the list pane, or create a new one.
@@ -57,7 +57,7 @@ For more information about attribute management and association, see [Manage att
 
 ## Set up and assign customer price attributes
 
-You can create Pricing management pricing rules that consider the attribute values that are assigned to the customer who places an order. To set up customer price attributes, you first create an attribute group that includes the attributes that you need. You then set up that attribute group as the customer attribute group. You can have only one customer attribute group, and it applies to all customers. However, each customer can have different values for each attribute.
+You can create Unified pricing management pricing rules that consider the attribute values that are assigned to the customer who places an order. To set up customer price attributes, you first create an attribute group that includes the attributes that you need. You then set up that attribute group as the customer attribute group. You can have only one customer attribute group, and it applies to all customers. However, each customer can have different values for each attribute.
 
 ### Set up customer price attributes
 
@@ -79,7 +79,7 @@ Customer price attributes are initially assigned the default value that's set up
 
 ## Set up and assign sales order price attributes
 
-You can create Pricing management pricing rules that consider attribute values that are assigned to each sales order. For example, you might set up sales order price attributes for *Campaign event*, *Order type*, and *Order channel*. To set up sales order price attributes, you first create an attribute group that includes the attributes that you need. You then set up that attribute group as the sales order attribute group. You can have only one sales order attribute group, and it applies to all sales orders. However, each sales order can have different values for each attribute.
+You can create Unified pricing management pricing rules that consider attribute values that are assigned to each sales order. For example, you might set up sales order price attributes for *Campaign event*, *Order type*, and *Order channel*. To set up sales order price attributes, you first create an attribute group that includes the attributes that you need. You then set up that attribute group as the sales order attribute group. You can have only one sales order attribute group, and it applies to all sales orders. However, each sales order can have different values for each attribute.
 
 ### Set up sales order price attributes
 

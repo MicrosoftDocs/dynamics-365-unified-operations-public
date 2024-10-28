@@ -18,9 +18,7 @@ ms.search.form: GUPPricingTree, GUPParameters
 
 This article explains how to set up multiple price structures in a company. The purpose of a price structure is to define the order that the system calculates each type of price adjustment in, and to define other options for each price component code, such as concurrency and compounding rules.
 
-In this scenario, companies and price structures have a one-to-many (1:N) relationship, and the multiple price structures are also known as *price trees*. The pricing engine will select a price structure based on the specified *price tree attribute*, which is one of the order attributes. After it determines the applicable price structure, the price engine will match the sales order with the price component codes according to the pricing sequence that's defined in the applicable price tree.
-
-Price trees are the multiple-structure equivalent of the price component code setup for single price structures, and they provide almost all the same settings. Learn more in [Set up a company to use a single price structure](price-structure-single.md).
+In this scenario, companies and price structures have a one-to-many (1:N) relationship, and multiple price structures. The pricing engine will select a price structure based on the specified **Price tree attribute**, which is one of the order attributes. After it determines the applicable price structure, the price engine will match the sales order with the price component codes according to the pricing sequence that's defined in the applicable price tree.
 
 ## Configure a company to use multiple price structures
 
@@ -52,14 +50,14 @@ Follow these steps to create and configure a price structure.
     - **Description** – Enter a short description of the price tree.
     - **Enable mandatory check** – If you want to be able to mark one or more price component codes as mandatory, set this option to *Yes*.
 
-1. On the **Price component code list** FastTab, add each price component code that should be part of the price structure for the current price tree. Use the buttons on the toolbar to add and remove lines as required. The fields on this FastTab work just as they do on the **Price component code setup** page. For information about how to set these fields, and examples that show how the settings work, see [Arrange price component codes into a price structure](price-structure-details.md).
+1. On the **Price component code list** FastTab, add each price component code that should be part of the price structure for the current price tree. Use the buttons on the toolbar to add and remove lines as required. For information about how to set these fields, and examples that show how the settings work, see [Arrange price component codes into a price structure](upm-price-structure-details.md).
 1. When you've set up all lines as required, select **Save** on the Action Pane.
 1. On the Action Pane, select **Price tree attribute** to specify the value of the price tree attribute that will cause this price tree to apply to a given order.
 1. On the Action Pane, select **Enable** to enable the current price tree.
 
 ## Auto charges in single and multiple price structures
 
-Price component codes of the *Auto charges* type are handled differently, based on whether you're using a single price structure (price component code setup) or multiple price structures (price trees).
+Price component codes of the *Auto charges* type are handled differently, based on whether you're using a single price structure or multiple price structures.
 
-- *If you're using a single price structure*, you can add the price component code for auto charges in the price component code setup.
-- *If you're using multiple price structures*, you can't add auto charges in the price tree structures. Instead, the system will apply the standard auto charge logic in Microsoft Dynamics 365 Supply Chain Management to determine which auto charges apply to the sales order.
+- *If you're using a single price structure*, you can add the price component code for auto charges in the price tree.
+- *If you're using multiple price structures*, you can't add auto charges in the price tree structures. Instead, the system will apply the standard auto charge logic in Supply Chain Management to determine which auto charges apply to the sales order.

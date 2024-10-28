@@ -1,6 +1,6 @@
 ---
 title: Price attribute groups (preview)
-description: Learn how to configure price attribute groups for the Pricing management module, including an outline on price attribute scopes.
+description: Learn how to configure price attribute groups for the Unified pricing management module, including an outline on price attribute scopes.
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: how-to
@@ -16,7 +16,7 @@ ms.search.form: GUPPricingAttributeGroup
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until further notice -->
 
-Each *price attribute group* establishes a collection of price attributes. When you define a pricing rule, you can select a price attribute group and then specify values for each of the associated attributes. In this way, you define the match criteria that are used to select the sales orders and order lines that the rule applies to. This article explains how to configure price attribute groups for the **Pricing management** module.
+Each *price attribute group* establishes a collection of price attributes. When you define a pricing rule, you can select a price attribute group and then specify values for each of the associated attributes. In this way, you define the match criteria that are used to select the sales orders and order lines that the rule applies to. This article explains how to configure price attribute groups for the Unified pricing management module.
 
 ## <a name="scopes"></a>Price attribute scopes
 
@@ -108,7 +108,7 @@ To add, edit, or delete a price attribute group, follow these steps.
     - **Move up** and **Move down** – Move a selected attribute up or down in rank. For more information about how to use these buttons, see the next section.
 
     > [!NOTE]
-    > You can define groups of products or customers, and then add attributes here that will let you specify those groups by name in your pricing rules. For information about how to create and use those groups, see [Customer and product price attribute groups](customer-product-attribute-groups.md).
+    > You can define groups of products or customers, and then add attributes here that will let you specify those groups by name in your pricing rules. For information about how to create and use those groups, see [Customer and product price attribute groups](upm-customer-product-attribute-groups.md).
 
 1. When you've finished adding and arranging attributes, select **Validation** on the Action Pane to trigger a validation check. If the check passes, the system sets the **Validated** option to *Yes*. This setting indicates that the price attribute group is activated and can be used in pricing rules.
 

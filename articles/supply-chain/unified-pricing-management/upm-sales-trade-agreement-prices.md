@@ -18,14 +18,14 @@ ms.search.form: GUPPricingSetupInquiryResult, GUPParameters, PriceDiscAdmName, P
 
 *Sales trade agreement prices* are negotiated prices for specific products that apply to specific customers. For sales where a sales trade agreement applies, this price takes priority over the item base price.
 
-Pricing management uses the standard *Trade agreement price - sales price* side in Microsoft Dynamics 365 Supply Chain Management, but it's enhanced with price attributes.
+Unified pricing management uses the standard *Trade agreement price - sales price* side in Microsoft Dynamics 365 Supply Chain Management, but it's enhanced with price attributes.
 
 > [!NOTE]
-> Pricing management respects [Supply Chain Management *sales agreements*](../sales-marketing/sales-agreements.md), which differ from the *sales trade agreement prices* that are described in this article. For order lines where a *sales agreement* applies, Pricing management will use the sales agreement. If no sales agreement applies, Pricing management will determine whether an applicable *sales trade agreement price* exists. The discounts that are included in sales trade agreements (line discounts, multiple discounts, and total discounts) are outside the purview of Pricing management. Instead, Pricing management provides a new approach to defining discount rules.
+> Unified pricing management respects [Supply Chain Management *sales agreements*](../sales-marketing/sales-agreements.md), which differ from the *sales trade agreement prices* that are described in this article. For order lines where a *sales agreement* applies, Unified pricing management will use the sales agreement. If no sales agreement applies, Unified pricing management will determine whether an applicable *sales trade agreement price* exists. The discounts that are included in sales trade agreements (line discounts, multiple discounts, and total discounts) are outside the purview of Unified pricing management. Instead, Unified pricing management provides a new approach to defining discount rules.
 
 ## Configure sales trade agreements, including concurrence rules
 
-Several configuration settings affect the way that sales trade agreements work in Pricing management. Before you start to create any sales trade agreement pricing rules, follow these steps to set up your system.
+Several configuration settings affect the way that sales trade agreements work in Unified pricing management. Before you start to create any sales trade agreement pricing rules, follow these steps to set up your system.
 
 1. Go to the **Pricing management \> Setup \> Pricing management parameters**.
 1. On the **Price and discounts** tab, on the **Trade agreements** FastTab, set the **Enable default find next** option to one of the following values to specify how the system should resolve concurrent sales trade agreement rules:
@@ -67,8 +67,8 @@ The following two records are posted for sales trade agreement price lines that 
 
 To use sales trade agreements, you must have the following configurations in your system:
 
-- You must have exactly one price component code where the **Price component** field is set to *Sales trade agreement*. This setting lets you include sales trade agreements as part of your price structures. Learn more in [Price component codes](price-component-code.md).
-- Each price structure where you want to consider sales trade agreement prices must include the previously mentioned *Sales trade agreement* price component code. Learn more in [Arrange price component codes into a price structure](price-structure-details.md).
+- You must have exactly one price component code where the **Price component** field is set to *Sales trade agreement*. This setting lets you include sales trade agreements as part of your price structures. Learn more in [Price component codes](upm-price-component-code.md).
+- Each price structure where you want to consider sales trade agreement prices must include the previously mentioned *Sales trade agreement* price component code. Learn more in [Arrange price component codes into a price structure](upm-price-structure-details.md).
 
 ## Manage trade agreement journal names
 
@@ -126,7 +126,7 @@ Follow these steps to add, view, and manage pricing rules for a sales trade agre
 1. Create or select the journal that you want to work with, as described in the previous section.
 1. On the Action Pane, select **Lines**.
 1. The **Journal lines, trade agreement** page appears. If you want to add a new pricing rule, select **New** on the Action Pane. If you want to work with existing rules only, skip ahead to step 10.
-1. In the **Edit price attributes** dialog box, you'll set up the logic for selecting the customers and products that the line will apply to. On the **General** FastTab, in the **Price attribute group combination** field, select one of the price attribute combinations that's associated with your *Sales trade agreement price* [price component code](price-component-code.md). The value that you select controls which attributes will be available to define the customer and/or products that the line applies to.
+1. In the **Edit price attributes** dialog box, you'll set up the logic for selecting the customers and products that the line will apply to. On the **General** FastTab, in the **Price attribute group combination** field, select one of the price attribute combinations that's associated with your *Sales trade agreement price* [price component code](upm-price-component-code.md). The value that you select controls which attributes will be available to define the customer and/or products that the line applies to.
 1. If the selected price attribute group combination considers header values (that is, if it doesn't apply to *all* customers), the **Header price attribute group** FastTab is available. In this case, for each row on the **Header price attribute group** FastTab, enter or select one or more values in the **Condition** column to define the rules for selecting customers. The following rules apply:
 
     - All rows are combined by using a logical AND operator. Therefore, only those customers that have matching values for *all* rows will be included.
