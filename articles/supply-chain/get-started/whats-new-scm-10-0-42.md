@@ -26,7 +26,7 @@ The following table lists the features that are included in this release. We mig
 
 | Module or feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Copilot and AI innovation | [Customize the conversational help provided by Copilot](/dynamics365/release-plan/2024wave2/finance-supply-chain/dynamics365-supply-chain-management/customize-conversational-help-provided-copilot) | [Add knowledge to generative help and guidance with Copilot](../../fin-ops-core/dev-itpro/copilot/extend-copilot-generative-help.md) | Enabled using Copilot Studio. |
+| Copilot and AI innovation | Customize the conversational help provided by Copilot | [Add knowledge to generative help and guidance with Copilot](../../fin-ops-core/dev-itpro/copilot/extend-copilot-generative-help.md) | Enabled using Copilot Studio. |
 | Procurement and sourcing | Support contract lifecycle management in source to pay by flexible integration | [Contract lifecylce management overview (preview)](../procurement/contract-lifecycle-management/clm-overview.md) | Feature management:<br>*(Preview) Integrate with external contract lifecycle management systems* |
 | Sales and marketing | Seamless sync with Dynamics 365 Sales | [Enable and configure seamless sync with Dynamics 365 Sales (preview)](../../fin-ops-core/fin-ops/data-entities/add-efficiency-in-quote-to-cash-seamless-sync.md) | Feature management:<br>*Automatically synchronize line data and totals with Dynamics 365 Sales* |
 | Sales and marketing | Unified pricing management | [Unified pricing management overview (preview)](../unified-pricing-management/upm-pricing-management-overview.md) | Feature management:<br>*(Preview) Unified pricing management* |
