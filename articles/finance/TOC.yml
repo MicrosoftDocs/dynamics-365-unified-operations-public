@@ -4442,9 +4442,15 @@
             - name: Extend business performance analytics
               items:             
                 - name: Extend business performance analytics in Microsoft Fabric 
-                  href: business-performance-analytics/bpa-fabric.md      
+                  href: business-performance-analytics/bpa-fabric.md  
+                - name: External facts and dimensions into Business performance analytics
+                  href: business-performance-analytics/extending-bpa.md
             - name: Business performance analytics FAQ
               href: business-performance-analytics/bpa-faq.md
+            - name: Business performance analytics troubleshooting
+              href: business-performance-analytics/current-challenges.md
+            - name: Uninstall Business performance analytics
+              href: business-performance-analytics/uninstall-bpa.md
         - name: Business performance planning
           items:
             - name: Business performance planning overview
