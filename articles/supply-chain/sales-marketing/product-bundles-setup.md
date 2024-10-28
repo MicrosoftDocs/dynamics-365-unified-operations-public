@@ -30,7 +30,7 @@ To make product bundle functionality available, you must turn it on for your sys
 1. Go to **System administration \> Workspaces \> Feature management**. (Learn more in [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
 1. On the **All** tab, use the **Filter** field to search for the feature that's named *Revenue recognition*.
 1. If the *Revenue recognition* feature is enabled in your system, select it in the list, and then select **Disable** to disable it. You can't use this feature together with the *Product bundle* feature.
-1. Use the **Filter** field to search for the feature that's named *Product bundle*.
+1. Use the **Filter** field to search for the feature that's named *Product bundles*.
 1. Select the feature in the list, and then select **Enable now** to enable it.
 
 > [!NOTE]
