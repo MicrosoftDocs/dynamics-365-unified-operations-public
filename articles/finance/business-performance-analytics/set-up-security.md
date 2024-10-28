@@ -14,8 +14,6 @@ audience: Application User
 
 [!include [banner](../includes/banner.md)]
 
-[This article is prerelease documentation and is subject to change.]
-
 The setup of security in the Business performance analytics app is a critical step in ensuring the security of your organization's data. This article provides an overview of the setup process for role-based, dimension, and report security, and explains how to add users to the app.
 
 ## Admin role
