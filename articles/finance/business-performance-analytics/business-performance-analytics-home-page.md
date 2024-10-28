@@ -18,7 +18,7 @@ Business performance analytics is a powerful solution designed to transform your
 Seamlessly integrating with Microsoft’s Dynamics 365, Dataverse, and Power BI platforms, Business performance analytics offers a scalable and unified solution for analyzing operational and financial data with unprecedented clarity and efficiency.
 
 ## Value of Business performance analytics
-Business performance analytics delivers a comprehensive approach to maximizing the value of your business data. By consolidating critical performance metrics, automating reporting processes, and enabling custom analytics, it helps organizations optimize operations and make strategic decisions with ease.
+Business performance analytics delivers a comprehensive approach to maximizing the value of your business data. By consolidating critical performance metrics, automating reporting processes, and enabling custom analytics, Business performance analytics helps organizations optimize operations and make strategic decisions with ease.
 
 ### Benefits
 
@@ -34,11 +34,11 @@ When used as a Software as a Service (SaaS) solution, Business performance analy
 
 Key SaaS capabilities:
  - Immediate deployment: Business performance analytics can be deployed instantly, enabling businesses to start analyzing data and generating insights without long setup times, facilitating faster decision-making and operational improvements.
- - Comprehensive reporting and dashboards: With built-in reporting and interactive dashboards, Business performance analytics provides access to a wide variety of pre-configured reports covering multiple business functions.
+ - Comprehensive reporting and dashboards: With built-in reporting and interactive dashboards, Business performance analytics provides access to a wide variety of preconfigured reports covering multiple business functions.
  - Near real-time analytics: Future releases of Business performance analytics will offer frequent data refreshes, enabling near real-time data analysis and reporting, allowing businesses to make timely decisions based on the most current information.
  - Predictive insights: Future releases will introduce predictive analytics capabilities, allowing businesses to forecast trends, identify risks, and seize opportunities to improve performance.
  - User-friendly interface: The intuitive design of Business performance analytics requires minimal training, fostering broader adoption and enabling a data-driven culture across the organization.
- - Cost-dffective: Available as part of the Dynamics 365 Finance license, Business performance analytics provides advanced analytics without requiring significant IT infrastructure investments.
+ - Cost-effective: Available as part of the Dynamics 365 Finance license, Business performance analytics provides advanced analytics without requiring significant IT infrastructure investments.
 
 ### Use cases
  - Finance and accounting: Generate financial reports, create detailed budgets, and track regulatory compliance.
@@ -70,9 +70,8 @@ Business performance analytics is a innovative reporting tool that comes as part
 With business performance analytics, customers are currently entitled to report on up to eight quarters of data. The volume of data is also constrained by the storage capacity of the A3 Power SKU. If customers are unable to fit their data within the constraints of the Power BI A3 SKU, they should consider waiting for a future release when additional data reporting capacity is available. This future release expands the data limits, allowing for larger datasets to be reported and analyzed.
 
 ## Data refresh frequency
-At present, Business performance analytics allows for two data refreshes per day—scheduled at 12 AM and 12 PM (International standard time). More frequent refreshes will be made available in the future, ensuring that customers can work with the most up-to-date information for their reporting needs.
+Business performance analytics allows for two data refreshes per day, 12 AM and 12 PM (International standard time). More frequent refreshes will be available in the future, ensuring that customers can work with the most up-to-date information for their reporting needs.
 
-## Unlock the Full Potential of Your Data
-Business performance analytics is a powerful tool designed to help organizations harness the power of data to drive operational excellence, make strategic decisions, and ensure long-term success. With its combination of SaaS and DaaS capabilities, Business performance analytics offers a flexible, scalable, and future-ready solution that grows with your business.
 
-To learn more about how Business performance analytics can transform your organization, explore the resources and learning modules available here on Microsoft Learn.
+
+
