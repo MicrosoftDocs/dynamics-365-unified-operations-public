@@ -13,7 +13,6 @@ audience: Application User
 
 # Prerequisites to installing Business performance analytics 
 
-[This article is prerelease documentation and is subject to change.]
 
 ## Before you install
 Business performance analytics is currently supported in the following regions: Australia, UK, USA, Europe, Canada, and Japan. It will be available in these regions when Business performance analytics is generally available and in sovereign clouds after Business performance analytics is generally available.
