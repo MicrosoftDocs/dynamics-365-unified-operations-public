@@ -51,7 +51,6 @@ Some of these features aren't visible on your system until you turn them on in [
 |<p>**Module:** Asset management</p><p>**Feature management name:** *(Preview) Print work order document attachments*</p> | Lets you print work order reports that include PDF documents attached to work order headers and lines. |
 |<p>**Module:** Inventory and warehouse management</p><p>**Feature management name:** *(Preview) Inventory dimensions with license plate id cleanup*</p> | Adds the ability to clean up inventory dimensions with license plate IDs that are more than one year old, are financial updated, and have no on-hand inventory. |
 |<p>**Module:** Master planning</p><p>**Feature management name:** *Enable the calculation of Batch CTP even when plan run ends with errors.*</p> | Allows for CTP-confirmed dates to be calculated for sales order lines, even when the Planning Optimization run ends with errors. Confirmed dates will be calculated for sales order lines that didn't have any errors. To enable or disable this behavior, use the **Calculate Batch CTP even with errors** setting in the plan settings for the dynamic plan. |
-|<p>**Module:** Product information management</p><p>**Feature management name:** *(Preview) Enable foreign trade parameters for all countries*</p> | Enables foreign trade parameters for all countries. |
 |<p>**Module:** Production control</p><p>**Feature management name:** *Add filter to hide completed jobs on the Kanban board*</p> | Adds a **Hide completed jobs** checkbox to the Kanban board. The option lets you choose to hide all completed jobs, which provides a cleaner and more focused view. |
 |<p>**Module:** Procurement and sourcing</p><p>**Feature management name:** *Choose whether to consolidate sales orders for direct deliveries*</p> | Makes it possible to choose whether the *Create direct delivery orders* batch job should consolidate qualifying sales orders into a single purchase order when creating a direct delivery. You can control this behavior using the new **Consolidate sales orders for direct deliveries** setting on the **Delivery** tab of the **Procurement and sourcing parameters** page. When you enable this feature, the system defaults to not consolidating qualifying sales orders, which is different from the previous behavior. Previously, the batch job always consolidated qualifying sales orders. |
 |<p>**Module:** Procurement and sourcing</p><p>**Feature management name:** *Enable purch parameters to control delivery information sync on sales and purchase orders*</p> | Controls the creating and updating of the **Delivery mode** and **Delivery terms** fields on purchase orders. The new parameters are added for stock and direct delivery scenarios. |
@@ -61,6 +60,50 @@ Some of these features aren't visible on your system until you turn them on in [
 | <p>**Module:** Warehouse management</p><p>**Enhancement:** *Dynamic printer selection improvements*</p><p>**Feature management name:** *(None)*</p> | <p>Lets you assign default printers to specific mobile devices.</p><p>Learn more in [Dynamic printer selection](../warehousing/dynamic-printing-selection.md).</p> |
 | <p>**Module:** Warehouse management</p><p>**Enhancement:** *Load packing slip posting*</p><p>**Feature management name:** *(None)*</p> | <p>Introduces the capability to execute the sales order packing slip procedure as background batch tasks, which is triggered according to the data associated with warehouse loads.</p><p>Learn more in [Load packing slip posting](../warehousing/outbound-load-handling.md#load-packing-slip-posting).</p> |
 | <p>**Module:** Warehouse management</p><p>**Enhancement:** *Location directives Locate by `ASN` for Transfer receipt*</p><p>**Feature management name:** *(None)*</p> | <p> Introduces the capability to put all the items on a license plate in one location and prevents the system from making you split the items into different locations for ASN (license plate receiving) of transfer orders. </p><p>Learn more in [Location directives using locate by ASN](../warehousing/create-location-directive.md#locate-by).</p> |
+
+
+
+
+## Preview features that are now generally available
+
+The following table lists the features that were introduced as public preview features in a previous version but became generally available in version 10.0.42. As with other new features, most of these features are turned off by default, so you must turn them on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) if you want to use them.
+
+| Module | Feature name | More information |
+|---|---|---|
+| Asset management | *Change types on assets and functional locations* | [Change the type of existing functional locations (preview)](../asset-management/functional-locations/change-functional-location-type.md)<br><br>[Change the asset type of existing assets (preview)](../asset-management/objects/change-asset-type.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.38 (February 2024)](whats-new-scm-10-0-38.md) |
+| Asset management | *Asset Management enhancements* | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.38 (February 2024)](whats-new-scm-10-0-38.md) |
+| Asset management | *Material availability check on maintenance work orders* | [Material availability check for work orders](../asset-management/work-orders/material-availability-check-work-orders.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.37 (November 2023)](whats-new-scm-10-0-37.md) |
+| Master planning | *Support for splitting and grouping planned orders for Planning Optimization* | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.38 (February 2024)](whats-new-scm-10-0-38.md) |
+| Sales and marketing | *Product bundles in journals* | [Enable and set up product bundles](../sales-marketing/product-bundles-setup.md)<br><br>[Sell and allocate product bundles](../sales-marketing/product-bundles-use.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.40 (June 2024)](whats-new-scm-10-0-40.md) |
+
+
+
+## Features turned on by default in this release
+
+The following table lists the features that became turned on by default in version 10.0.42. You can still turn these features off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) if necessary.
+
+| Module | Feature name | More information |
+|---|---|---|
+
+## Features becoming mandatory in this release
+
+The following table lists the features that became mandatory in version 10.0.42. These features can still be seen in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) but can no longer be turned off.
+
+| Module | Feature name | More information |
+|---|---|---|
+
+## Features removed from Feature management
+
+The following table lists features that were removed from Feature management in version 10.0.42. These feature are no longer listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and are now a permanent part of the product.
+
+| Module | Feature name | More information |
+|---|---|---|
+
+
+
+
+
+
 
 ## Related information
 

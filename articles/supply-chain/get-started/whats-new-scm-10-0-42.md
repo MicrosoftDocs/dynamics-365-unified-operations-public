@@ -46,6 +46,15 @@ Some of these features aren't visible on your system until you turn them on in [
 | <p>**Module:** Production control</p><p>**Feature management name:** *Set the desired status on selected jobs in report progress list view in the production floor execution interface*</p> | Workers reporting job progress from the production floor execution interface can now select the desired status on multiple jobs in the report-progress list view. |
 | <p>**Module:** Production control</p><p>**Feature management name:** *Streamlined registration process for indirect activities on the Production floor execution*</p> | Streamlines the process for workers to register for indirect activities through the production floor execution interface. Previously, when a worker registered for an indirect activity, a dialog box would open, asking them whether they wanted to stop the activity or log it at the end of their shift. This feature removes the dialog. Instead, the system automatically adds the indirect activity to the worker's active job list. The system stops the indirect activity when the worker begins a new task (such as a production job), another indirect activity, or a project job. |
 
+## Preview features that are now generally available
+
+The following table lists the features that were introduced as public preview features in a previous version but became generally available in version 10.0.42. As with other new features, most of these features are turned off by default, so you must turn them on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) if you want to use them.
+
+| Module | Feature name | More information |
+|---|---|---|
+| Inventory and warehouse management | *Inventory Visibility integration with inventory adjustment posting* | [Enable Inventory Visibility for Commerce](../inventory/inventory-visibility-commerce-enable.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.34 (July 2023)](whats-new-scm-10-0-34.md) |
+| Inventory and warehouse management | *Inventory Visibility integration with inventory adjustment offset* | [Inventory Visibility adjustment offset](../inventory/inventory-visibility-adjustment-offset.md)<br><br>[Enable Inventory Visibility for Commerce](../inventory/inventory-visibility-commerce-enable.md)<br><br>[Sync external inventory adjustments through Inventory Visibility](../inventory/inventory-visibility-sync-changes.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.34 (July 2023)](whats-new-scm-10-0-34.md) |
+
 ## New and updated documentation resources
 
 We have recently added or significantly updated the following help articles. These articles aren't necessarily related to the new features that were added for this release, as listed in the previous sections. However, they might help you get more out of existing features.
