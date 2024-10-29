@@ -24,7 +24,7 @@ The external data provides new descriptive information about an existing entity 
 4. No changes to fact tables: Fact tables that reference this dimension automatically inherit the new attributes, no changes are needed to the fact table schema.
 
 Some advantages are:
-- Simplicity: Extending dimensions avoids the need for additional tables, making the model easier to maintain.
+- Simplicity: Extending dimensions avoids the need for additional tables, making the model easier to maintain. 
 - Minimal Impact on Queries: Since the fact table relationships are not modified, existing queries remain intact, but users gain access to the additional context provided by the new attributes.
 
 Some disadvantages are:
