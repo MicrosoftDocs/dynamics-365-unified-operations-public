@@ -2,7 +2,7 @@
 title: Create a Store Commerce extension installer package
 description: This article describes how to create a Microsoft Dynamics 365 Commerce Store Commerce extension installer package.
 author: josaw1
-ms.date: 08/06/2024
+ms.date: 10/29/2024
 ms.topic: how-to
 audience: Developer
 ms.reviewer: v-chrgriffin
@@ -66,6 +66,9 @@ To create the extension installer for Store Commerce extension, follow these ste
     ```
 
 1. After you've finished installing the extension, close Store Commerce if it's running. Then, to load the extension, open Store Commerce by using the Store Commerce shortcut on the desktop.
+
+> [!NOTE]
+> Code signing isn't a strict requirement for the Store Commerce extension installer like it was for Modern POS (MPOS), but Microsoft recommends using code signing to verify the authenticity of any executable run on POS registers. You can configure your Azure DevOps pipeline to use the [Trusted Signing - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioClient.TrustedSigning) task to digitally sign your files using a Trusted Signing certificate during an Azure Pipelines run.
 
 ## Sample code
 
