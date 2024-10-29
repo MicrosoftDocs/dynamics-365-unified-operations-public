@@ -244,7 +244,7 @@ After the validation is successful, the application presents a set of menu optio
     >
     > Start one snapshot at a time, and wait for the replication of that snapshot to be completed. In the replication monitor, check the **Distributor to subscriber** history until you receive a message that resembles the following example: "Delivered snapshot from the \\unc\\server\\folder."
     >
-    > For more information about how to monitor the replication, see [Monitor replication for the Data migration toolkit](monitor-replication.md).
+    > For more information about how to monitor the replication, see [Monitor replication for the Data migration toolkit](../migration-upgrade/monitor-replication.md).
     >
     > You must manually start the publisher snapshots for steps 6 and 7.
     >
