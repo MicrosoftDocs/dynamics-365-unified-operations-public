@@ -2,7 +2,7 @@
 title: Generative help and guidance
 description: This article describes Copilot features in Business performance analytics.
 author: Carylhenry
-ms.author: carylhenry
+ms.author: jiwo
 ms.topic: article
 ms.date: 07/22/2024
 ms.collection: bap-ai-copilot

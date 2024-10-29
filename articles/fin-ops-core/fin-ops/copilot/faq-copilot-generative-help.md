@@ -68,7 +68,7 @@ Additionally, system administrators should monitor usage patterns to ensure the 
 
 ## See also
 
-- [Generative help and guidance with Copilot](copliot-generative-help.md)
+- [Generative help and guidance with Copilot](copilot-generative-help.md)
 - [Add knowledge to generative help and guidance with Copilot](../../dev-itpro/copilot/extend-copilot-generative-help.md)
 - [Responsible AI FAQ for Follow-up questions in the Copilot sidecar (preview)](../../fin-ops/copilot/faq-copilot-suggested-questions.md)
 - [Responsible AI FAQ for generative answers in Copilot Studio](/microsoft-copilot-studio/faqs-generative-answers)

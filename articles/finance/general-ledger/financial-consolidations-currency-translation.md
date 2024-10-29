@@ -142,7 +142,7 @@ For more information about currency revaluation in a consolidation company see [
 
 For more information about how currency revaluation works in the **General ledger** module, see [Foreign currency revaluation for General ledger](./foreign-currency-revaluation-general-ledger.md).
 
-### Additional information
+### Related information
 - All posting layers are consolidated when the consolidation is processed.
 - Elimination journals can be posted only to the Current layer.
 - Only operating balances are consolidated. Therefore, to see opening balances, you must still run a year-end close in the consolidation company.

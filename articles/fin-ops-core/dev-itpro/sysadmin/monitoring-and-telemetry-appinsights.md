@@ -4,7 +4,7 @@ description: Learn about how to use, set up, and configure the Application Insig
 author: LaneSwenka
 ms.author: laswenka
 ms.topic: article
-ms.date: 04/21/2023
+ms.date: 10/21/2024
 ms.reviewer: twheeloc
 audience: IT Pro, Developer
 ms.search.region: Global
@@ -86,12 +86,12 @@ All the telemetry and events that are entered in Application Insights have the f
 - **Custom properties – BatchJobId** – This field is set to the record ID of the batch job that resulted in the telemetry.
 - **Custom properties – ExecutionMode** – This field is set to **Interactive** for browser-initiated telemetry and **Batch** for batch jobs. If it's set to **Batch**, an accompanying **BatchJobId** value will be entered.
 
-## Enable the public preview feature
+## Enable the feature
 
 > [!NOTE]
 > This feature isn't currently available in Azure China or Azure Government. We will work to add it to the generally available feature when it becomes available. Currently, all the telemetry is sent only to Azure public cloud. Therefore, you can't supply an instrumentation key for Azure China or Azure Government at this time.
 
-This feature is in public preview. To enable it, open the **Feature management** workspace, and enable the **Monitoring and telemetry** feature. If you don't see that feature, and the private preview feature is enabled, you must first disable the private preview. For more information, see the next section of this article.
+To enable it, open the **Feature management** workspace, and enable the **Monitoring and telemetry** feature. 
 
 After the feature is enabled, you must configure the parameters.
 
@@ -103,11 +103,6 @@ After the feature is enabled, you must configure the parameters.
 > [!NOTE]
 > After telemetry is disabled, it won't stop being sent for a few minutes, because there's a cache. In addition, if telemetry is disabled, you won't receive proactive alerts if you've enabled them in Application Insights. If telemetry is enabled, you'll have usage and potential extra costs with Application Insights.
 
-## Disable the private preview feature
-
-If the private preview software is installed, it must be removed from your environment through Lifecycle Services. You can bundle this process into your next regularly scheduled package deployment by following the steps in [Uninstall a package](/dynamics365/fin-ops-core/dev-itpro/deployment/uninstall-deployable-package).
-
-After the private preview is removed, you'll see the **Monitoring and telemetry** feature in the **Feature management** workspace. None of setup or configurations from the private preview are changed when you enable this feature, because the schema names are identical in the public preview. Therefore, no data is lost when you remove the private preview version.
 
 ## Telemetry data usage
 

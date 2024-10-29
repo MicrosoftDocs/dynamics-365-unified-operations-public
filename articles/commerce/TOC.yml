@@ -14,12 +14,12 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.42 (December 2024)
+          href: get-started/whats-new-commerce-10-0-42.md
         - name: Commerce 10.0.41 (September 2024)
           href: get-started/whats-new-commerce-10-0-41.md
         - name: Commerce 10.0.40 (June 2024)
           href: get-started/whats-new-commerce-10-0-40.md
-        - name: Commerce 10.0.39 (April 2024)
-          href: get-started/whats-new-commerce-10-0-39.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -446,7 +446,7 @@
               href: tasks/create-pos-visual-profile-2016-02.md
           - name: Payments
             items:
-            - name: Check out faster with optimized payment flows
+            - name: Check out faster with optimized payment flows (preview)
               href: dev-itpro/faster-checkout-pos.md
             - name: Gift cards
               items:
@@ -1612,7 +1612,7 @@
             href: localizations/dev-itpro/emea-pol-fpi-sample-sdk.md
       - name: France
         items:
-        - name: Cash register functionality
+        - name: Cash register functionality (preview)
           href: localizations/france/emea-fra-cash-registers.md
         - name: Deployment guidelines for cash registers
           href: localizations/france/emea-fra-fi-deployment.md

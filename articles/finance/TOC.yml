@@ -9,19 +9,19 @@
         - name: What's new or changed
           items:
             - name: What's new or changed in finance and operations apps
-              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?context=/dynamics365/context/finance
+              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?context=/dynamics365/context/finance  
             - name: What's new or changed in Finance
               items:
                 - name: What's new or changed in Finance home page
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.42 (December)
+                  href: get-started/whats-new-changed-10-0-42.md
                 - name: Finance 10.0.41 (September)  
                   href: get-started/whats-new-changed-10-0-41.md
                 - name: Finance 10.0.40 (June)
                   href: get-started/whats-new-changed-10-0-40.md
                 - name: Finance 10.0.39 (April)
                   href: get-started/whats-new-changed-10-0-39.md
-                - name: Finance 10.0.38 (February)
-                  href: get-started/whats-new-changed-10-0-38.md
             - name: Removed or deprecated features
               items:
                 - name: Removed or deprecated features home page
@@ -412,6 +412,8 @@
               href: accounts-receivable/credit-card-refactor.md
             - name: Create a free text invoice
               href: accounts-receivable/create-free-text-invoice-new.md
+            - name: Free text invoice optimization
+              href: accounts-receivable/free-text-invoice-optimization.md
             - name: Use financial tags to display free text invoice descriptions
               href: accounts-receivable/free-text-inv-desc.md
             - name: Accounting distributions and subledger journal entries for free text invoices
@@ -1113,7 +1115,7 @@
                     - name: Configure ledgers
                       href: general-ledger/configure-ledger.md
                     - name: Change the accounting or reporting currency
-                      href: general-ledger/add-change-acctg-rprtg-crrncy.md
+                      href: /troubleshoot/dynamics-365/finance/general-ledger/add-change-accounting-reporting-currency.md?context=/dynamics365/context/finance
                     - name: Change or reassign a ledger calendar
                       href: general-ledger/change-mdfy-clndr-to-ledger.md
                 - name: Intercompany and balancing dimensions
@@ -1272,6 +1274,8 @@
                   href: general-ledger/optimize-year-end-close.md
                 - name: Year-end close
                   href: general-ledger/year-end-close.md
+                - name: Validate year-end close
+                  href: general-ledger/yec-valid.md
                 - name: Close the fiscal year
                   href: general-ledger/tasks/close-fiscal-year.md
                 - name: Mass financial period close
@@ -1280,6 +1284,8 @@
                   href: general-ledger/faq-year-end-activities.md
                 - name: Ledger settlements
                   href: general-ledger/ledger-settlements.md
+                - name: Partial ledger settlements
+                  href: general-ledger/ledger-settlements-partial.md
                 - name: Awareness between ledger settlement and year-end close
                   items:
                     - name: Awareness between ledger settlement and year-end close
@@ -2788,8 +2794,10 @@
                       href: localizations/germany/emea-deu-vat-declaration-germany.md
                     - name: German Intrastat
                       href: localizations/germany/emea-deu-intrastat.md
-                    - name: Customer electronic invoices
+                    - name: Customer electronic invoices export
                       href: localizations/germany/emea-deu-cust-e-invoices.md
+                    - name: Use vendor electronic invoices import
+                      href: localizations/germany/emea-deu-e-invoices-import.md
                     - name: Journal list report
                       href: localizations/germany/emea-deu-journal-list-report.md
                     - name: Set up electronic tax declarations

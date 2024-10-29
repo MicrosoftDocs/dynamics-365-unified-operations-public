@@ -247,7 +247,7 @@ To report sales tax for Italy, follow these steps.
 12. On the **Run in the background** FastTab, set up batch parameters if you want to generate the report in batch mode.
 13. Select **OK** to generate the report.
 
-## Additional information
+## Related information
 Due to the fiscal requirements of sequential document numbering and how this information is used in the sales tax books, users in Italy should not have access to the following functions:
 
  - Reverse customer transaction (**All customers** page, select **Transactions** > **Reverse**) 
