@@ -27,9 +27,10 @@ The following table lists the features that are included in this release. We mig
 | Module or feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Copilot and AI innovation | Customize the conversational help provided by Copilot | [Add knowledge to generative help and guidance with Copilot](../../fin-ops-core/dev-itpro/copilot/extend-copilot-generative-help.md) | Enabled using Copilot Studio. |
-| Procurement and sourcing | Support contract lifecycle management in source to pay by flexible integration | [Contract lifecylce management overview (preview)](../procurement/contract-lifecycle-management/clm-overview.md) | Feature management:<br>*(Preview) Integrate with external contract lifecycle management systems* |
+| Procurement and sourcing | Support contract lifecycle management in source to pay by flexible integration | [Contract lifecycle management overview (preview)](../procurement/contract-lifecycle-management/clm-overview.md) | Feature management:<br>*(Preview) Integrate with external contract lifecycle management systems* |
 | Sales and marketing | Seamless sync with Dynamics 365 Sales | [Enable and configure seamless sync with Dynamics 365 Sales (preview)](../../fin-ops-core/fin-ops/data-entities/add-efficiency-in-quote-to-cash-seamless-sync.md) | Feature management:<br>*Automatically synchronize line data and totals with Dynamics 365 Sales* |
 | Sales and marketing | Unified pricing management | [Unified pricing management overview (preview)](../unified-pricing-management/upm-pricing-management-overview.md) | Feature management:<br>*(Preview) Unified pricing management* |
+| System administration | [Keep conversations going with Copilot follow-up questions](/dynamics365/release-plan/2024wave2/finance-supply-chain/dynamics365-supply-chain-management/keep-conversations-going-ai-generated-follow-ups) | [Responsible AI FAQ for Follow-up questions in the Copilot sidecar (preview)](../../fin-ops-core/fin-ops/copilot/faq-copilot-suggested-questions.md) | Feature management:<br>*(Preview) Follow-up questions in the Copilot sidecar* |
 
 ## <a name="enhancements"></a>Feature enhancements included in this release
 
