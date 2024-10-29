@@ -1115,7 +1115,7 @@
                     - name: Configure ledgers
                       href: general-ledger/configure-ledger.md
                     - name: Change the accounting or reporting currency
-                      href: general-ledger/add-change-acctg-rprtg-crrncy.md
+                      href: /troubleshoot/dynamics-365/finance/general-ledger/add-change-accounting-reporting-currency.md?context=/dynamics365/context/finance
                     - name: Change or reassign a ledger calendar
                       href: general-ledger/change-mdfy-clndr-to-ledger.md
                 - name: Intercompany and balancing dimensions

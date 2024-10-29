@@ -372,7 +372,7 @@
       items:
       - name: Scale unit capability for Supply Chain Management is deprecated and no longer available to new customers
         href: cloud-edge/cloud-edge-landing-page.md
-    - name: Approval management mobile app (preview)
+    - name: Approval management mobile app
       items:
       - name: Approvals Management mobile app overview
         href: approval-management-mobile-app/approval-management-app-overview.md
@@ -2517,13 +2517,13 @@
           href: procurement/tasks/search-vendors.md
         - name: Set up permissions for ordering products on behalf of someone else
           href: procurement/tasks/set-up-permissions-ordering-products.md
-      - name: Integerate with contract lifecylce management systems (preview)
+      - name: Integrate with contract lifecycle management systems (preview)
         items:
-        - name: Contract lifecylce management overview
+        - name: Contract lifecycle management integration overview
           href: procurement/contract-lifecycle-management/clm-overview.md
         - name: Work with integrated CLM
           href: procurement/contract-lifecycle-management/clm-use.md
-        - name: CLM integration admin and devlopment
+        - name: CLM integration admin and development
           items:
           - name: Enable and configure CLM integration
             href: procurement/contract-lifecycle-management/developer/clm-enable.md
