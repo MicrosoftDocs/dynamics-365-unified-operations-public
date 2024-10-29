@@ -24,7 +24,7 @@ Icertis for Microsoft Dynamics 365 Supply Chain Management is a full-featured th
 - Benefits
 - Setup
 
-You can learn more about the solution at [Icertis Integrations for Microsoft](https://www.icertis.com/products/integrations/microsoft/) and on the [Icertis for Microsoft Dynamics 365 Supply Chain Management page on Microsoft AppSource](https://appsource.microsoft.com/product/dynamics-365-for-operations/icertiscontractmanagement.icertis-dynamics-supply-chain-operations).
+You can learn more about the solution on the [Icertis for Microsoft Dynamics 365 Supply Chain Management page on Microsoft AppSource](https://appsource.microsoft.com/product/dynamics-365-for-operations/icertiscontractmanagement.icertis-dynamics-supply-chain-operations).
 
 ## Capabilities
 
