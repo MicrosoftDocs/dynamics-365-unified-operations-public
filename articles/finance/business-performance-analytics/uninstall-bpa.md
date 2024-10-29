@@ -12,7 +12,7 @@ ms.date: 9/11/2024
 
 # Uninstall Business performance analytics
 
-There are two options available to uninstall Business performance analytics. If you need to install Business performance analytics after uninstalling, wait four hours before installing.
+There are two options available to uninstall Business performance analytics. If you need to install Business performance analytics after uninstalling, wait four hours before reinstalling.
 
 Option one:
 
