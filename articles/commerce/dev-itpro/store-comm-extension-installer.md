@@ -68,7 +68,7 @@ To create the extension installer for Store Commerce extension, follow these ste
 1. After you finish installing the extension, close Store Commerce if it's running. Then, to load the extension, open Store Commerce by using the Store Commerce shortcut on the desktop.
 
 > [!NOTE]
-> Although code signing isn't a strict requirement for the Store Commerce extension installer like it was for Modern POS (MPOS), Microsoft recommends using code signing to verify the authenticity of any executable run on POS registers. You can configure your Azure DevOps pipeline to use the [Trusted Signing - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioClient.TrustedSigning) task to digitally sign your files using a Trusted Signing certificate during an Azure Pipelines run.
+> Although code signing isn't a strict requirement for the Store Commerce extension installer like for Modern POS (MPOS), Microsoft recommends using code signing to verify the authenticity of any executable run on POS registers. You can configure your Azure DevOps pipeline to use the [Trusted Signing - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioClient.TrustedSigning) task to digitally sign your files using a Trusted Signing certificate during an Azure Pipelines run.
 
 ## Sample code
 
