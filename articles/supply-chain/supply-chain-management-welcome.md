@@ -32,7 +32,7 @@ Select a feature area to learn more about it.
 - [Sensor Data Intelligence (preview)](sensor-data-intelligence/sdi-home-page.md)
 - [Master planning](master-planning/master-planning-home-page.md)
 - [Demand planning](demand-planning/demand-planning-home-page.md)
-- [Pricing management (preview)](pricing-management/pricing-management-overview.md)
+- [Unified pricing management (preview)](unified-pricing-management/upm-pricing-management-overview.md)
 - [Procurement and sourcing](procurement/procurement-sourcing-overview.md)
 - [Product information management](pim/product-information.md)
 - [Engineering change management](engineering-change-management/product-engineering-overview.md)
