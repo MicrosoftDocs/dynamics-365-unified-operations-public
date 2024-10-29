@@ -6,7 +6,7 @@ ms.author: cabeln
 ms.reviewer: johnmichalak
 ms.search.form:
 ms.topic: how-to
-ms.date: 08/28/2024
+ms.date: 10/29/2024
 audience: Application User
 ms.custom: 
   - bap-template
@@ -32,11 +32,10 @@ In most cases, generative help and guidance with Copilot is available by default
 
 If the feature isn't already available on your system, refer to [Enable Copilot capabilities in finance and operations apps](enable-copilot.md) for information about how to enable it.
 
-<!-- KFM: Remove for now
-
 ## <a name="follow-ups"></a>Enable follow-up questions in the Copilot sidecar (preview)
 
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
 
 The *[Follow-up questions in the Copilot sidecar](../../fin-ops/copilot/faq-copilot-suggested-questions.md)* feature makes it fast and easy to post follow-up questions and get answers from Copilot. It's designed to provide a diversity of follow-up questions, and avoids repeating questions you have already asked. The suggested questions are answered using [Generative Answers](/microsoft-copilot-studio/faqs-generative-answers), which is the foundation for the Generative help and guidance with Copilot feature in finance and operation apps.
 
@@ -46,8 +45,6 @@ To use this capability in your environment, your system must meet the following 
 - The feature that is named *(Preview) Follow-up questions in the Copilot sidecar* must be turned on in [feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md).
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
-
- -->
 
 ## Add custom knowledge
 
@@ -81,7 +78,4 @@ If you want to disable the conversational Copilot sidecar for your organization,
 
 - [Add custom knowledge to generative help and guidance with Copilot](extend-copilot-generative-help.md)
 - [Responsible AI FAQ for Generative help and guidance with Copilot in finance and operations apps](../../fin-ops/copilot/faq-copilot-generative-help.md)
-
-<!-- KFM: Remove for now
 - [Responsible AI FAQ for Follow-up questions in the Copilot sidecar (preview)](../../fin-ops/copilot/faq-copilot-suggested-questions.md)
--->
