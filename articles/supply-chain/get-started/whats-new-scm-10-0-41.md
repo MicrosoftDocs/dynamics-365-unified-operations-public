@@ -61,12 +61,9 @@ Some of these features aren't visible on your system until you turn them on in [
 | <p>**Module:** Warehouse management</p><p>**Enhancement:** *Load packing slip posting*</p><p>**Feature management name:** *(None)*</p> | <p>Introduces the capability to execute the sales order packing slip procedure as background batch tasks, which is triggered according to the data associated with warehouse loads.</p><p>Learn more in [Load packing slip posting](../warehousing/outbound-load-handling.md#load-packing-slip-posting).</p> |
 | <p>**Module:** Warehouse management</p><p>**Enhancement:** *Location directives Locate by `ASN` for Transfer receipt*</p><p>**Feature management name:** *(None)*</p> | <p> Introduces the capability to put all the items on a license plate in one location and prevents the system from making you split the items into different locations for ASN (license plate receiving) of transfer orders. </p><p>Learn more in [Location directives using locate by ASN](../warehousing/create-location-directive.md#locate-by).</p> |
 
-
-
-
 ## Preview features that are now generally available
 
-The following table lists the features that were introduced as public preview features in a previous version but became generally available in version 10.0.42. As with other new features, most of these features are turned off by default, so you must turn them on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) if you want to use them.
+The following table lists features that were introduced as public preview features in a previous version but became generally available in version 10.0.42. As with other new features, most of these features are turned off by default, so you must turn them on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) if you want to use them.
 
 | Module | Feature name | More information |
 |---|---|---|
@@ -75,35 +72,6 @@ The following table lists the features that were introduced as public preview fe
 | Asset management | *Material availability check on maintenance work orders* | [Material availability check for work orders](../asset-management/work-orders/material-availability-check-work-orders.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.37 (November 2023)](whats-new-scm-10-0-37.md) |
 | Master planning | *Support for splitting and grouping planned orders for Planning Optimization* | [What's new or changed in Dynamics 365 Supply Chain Management 10.0.38 (February 2024)](whats-new-scm-10-0-38.md) |
 | Sales and marketing | *Product bundles in journals* | [Enable and set up product bundles](../sales-marketing/product-bundles-setup.md)<br><br>[Sell and allocate product bundles](../sales-marketing/product-bundles-use.md)<br><br>[What's new or changed in Dynamics 365 Supply Chain Management 10.0.40 (June 2024)](whats-new-scm-10-0-40.md) |
-
-
-
-## Features turned on by default in this release
-
-The following table lists the features that became turned on by default in version 10.0.42. You can still turn these features off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) if necessary.
-
-| Module | Feature name | More information |
-|---|---|---|
-
-## Features becoming mandatory in this release
-
-The following table lists the features that became mandatory in version 10.0.42. These features can still be seen in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) but can no longer be turned off.
-
-| Module | Feature name | More information |
-|---|---|---|
-
-## Features removed from Feature management
-
-The following table lists features that were removed from Feature management in version 10.0.42. These feature are no longer listed in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and are now a permanent part of the product.
-
-| Module | Feature name | More information |
-|---|---|---|
-
-
-
-
-
-
 
 ## Related information
 
