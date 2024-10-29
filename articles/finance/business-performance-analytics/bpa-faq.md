@@ -89,7 +89,7 @@ Any new data changes done in Dynamics 365 finance and operations UI can still be
 
 ### How do I receive the latest news on Business performance analytics?
 
-Here is how you join the Business performance analytics Yammer group for all the latest updates. 
+To receive the latest updates about Business performance analytics, join the Business performance analytics Yammer group. 
 
 1. Complete the [FAR Preview Agreement](https://forms.office.com/r/wfcUBtP67J)
 3. Join the [Dynamics 365 and Power Platform Preview Programs](https://www.yammer.com/dynamicsaxfeedbackprograms/#/home)
