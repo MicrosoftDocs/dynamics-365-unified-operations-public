@@ -38,7 +38,7 @@ Key SaaS capabilities:
  - Near real-time analytics: Future releases of Business performance analytics will offer frequent data refreshes, enabling near real-time data analysis and reporting, allowing businesses to make timely decisions based on the most current information.
  - Predictive insights: Future releases will introduce predictive analytics capabilities, allowing businesses to forecast trends, identify risks, and seize opportunities to improve performance.
  - User-friendly interface: The intuitive design of Business performance analytics requires minimal training, fostering broader adoption and enabling a data-driven culture across the organization.
- - Cost-effective: Available as part of the Dynamics 365 Finance license, Business performance analytics provides advanced analytics without requiring significant IT infrastructure investments.
+ - Cost-effective: Available as part of the Dynamics 365 Finance license, Business performance analytics provides advanced analytics without requiring significant IT infrastructure investments. 
 
 ### Use cases
  - Finance and accounting: Generate financial reports, create detailed budgets, and track regulatory compliance.
