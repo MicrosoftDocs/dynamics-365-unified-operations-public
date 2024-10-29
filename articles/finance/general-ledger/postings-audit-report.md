@@ -19,11 +19,10 @@ ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 
 [!include [banner](../includes/banner.md)]
 
-Entering transactions accurately is important for proper reporting. Transactions should be posted to the correct accounts and dimensions with the correct amounts. 
-This article explains how the Audit report evaluates how transactions were posted by providing the details for each transaction in a straightforward way.
+Entering transactions accurately is important for proper reporting. Transactions should be posted to the correct accounts and dimensions with the correct amounts. This article explains how the Audit report provides details about posted transactions.
 
 The row definition for the report contains a dimension value set of several accounts that commonly have posting issues. Alternatively, a row definition similar to a trial balance containing all natural accounts 
-could be used. The Column Definition contains the month-to-date amounts and several columns with specific transaction attributes. These attributes may vary: 
+could be used. The column definition contains the month-to-date amounts and several columns with specific transaction attributes. These attributes may vary: 
 
  - Transaction date
  - Audit trail code
