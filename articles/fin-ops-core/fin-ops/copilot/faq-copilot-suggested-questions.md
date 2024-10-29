@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQ for Follow-up questions in the Copilot sidecar (preview)
 description: This FAQ provides answers to frequently asked questions about the AI technology that's used to generate follow-up questions in the Copilot sidecar in finance and operations apps. It includes key considerations and details about how the AI is used, how it was tested and evaluated, and any specific limitations.
-ms.date: 04/27/2024
+ms.date: 10/29/2024
 ms.collection:
   - bap-ai-copilot
 ms.custom:
@@ -33,7 +33,7 @@ The feature is powered by [Dynamics 365 Copilot](/power-platform/transparency-no
 
 ## What can Follow-up questions in the Copilot sidecar do?
 
-The *Follow-up questions in the Copilot sidecar* feature makes it fast and easy to post follow-up questions and get answers from Copilot. It's designed to provide a diversity of follow-up questions, and avoids repeating questions you have already asked. The suggested questions are answered using [Generative Answers](/microsoft-copilot-studio/faqs-generative-answers), which is the foundation for the [Generative help and guidance with Copilot](copliot-generative-help.md) feature in finance and operation apps.
+The *Follow-up questions in the Copilot sidecar* feature makes it fast and easy to post follow-up questions and get answers from Copilot. It's designed to provide a diversity of follow-up questions, and avoids repeating questions you have already asked. The suggested questions are answered using [Generative Answers](/microsoft-copilot-studio/faqs-generative-answers), which is the foundation for the [Generative help and guidance with Copilot](copilot-generative-help.md) feature in finance and operation apps.
 
 ## What is the intended use of Follow-up questions in the Copilot sidecar?
 
@@ -53,8 +53,8 @@ Microsoft might disable Copilot-driven features for selected customers if abuse 
 
 ## See also
 
-- [Generative help and guidance with Copilot](copliot-generative-help.md)
-- [Enable generative help and guidance with Copilot](../../dev-itpro/copilot/enable-copliot-generative-help.md)
+- [Generative help and guidance with Copilot](copilot-generative-help.md)
+- [Enable generative help and guidance with Copilot](../../dev-itpro/copilot/enable-copilot-generative-help.md)
 - [Add knowledge to generative help and guidance with Copilot](../../dev-itpro/copilot/extend-copilot-generative-help.md)
 - [Responsible AI FAQ for Generative help and guidance with Copilot in finance and operations apps](faq-copilot-generative-help.md)
 
