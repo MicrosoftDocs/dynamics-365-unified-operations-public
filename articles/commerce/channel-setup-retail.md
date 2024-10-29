@@ -2,7 +2,7 @@
 title: Set up a retail  channel
 description: This article describes how to create a new retail channel in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 10/03/2024
+ms.date: 10/29/2024
 ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
@@ -182,7 +182,7 @@ The new transaction ID format is `<store ID>-<terminal ID>-<milliseconds since 1
 
 > [!NOTE]
 > - Transaction IDs are meant for internal system use only, so they aren't required to be sequential. However, many countries require receipt IDs to be sequential, so check your organization's requirements before enabling the new transaction ID format feature.
-> - After the new transaction ID format feature is enabled, you won't be able to disable this feature in headquarters. To disable the feature, contact Microsoft support.
+> - After the new transaction ID format feature is enabled, you won't be able to disable this feature in headquarters.
 > - The new transaction ID format feature is enabled by default starting with Commerce version 10.0.41.
 
 To enable the use of the new transaction ID format, follow these steps:
