@@ -49,12 +49,12 @@ The Approvals Management mobile app is a canvas app. Therefore, before you can i
 
 ## Install the mobile app
 
-You must install the Approvals Management mobile app from Power Platform admin center to enable users to access it when they sign in  using the Power Apps mobile app. The installation process also sets up the required user roles and other dependencies in Dataverse.
+To make the Approvals Management mobile app available to users when they sign in using the Power Apps mobile app, you must install it using the Power Platform admin center. The installation process also sets up the required user roles and other dependencies in Dataverse.
 
-Follow these steps to install the Approvals Management mobile app:
+Follow these steps to install the Approvals Management mobile app.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Select **Resources** > **Dynamics 365 apps** from the left-side menu.
+1. Select **Resources** \> **Dynamics 365 apps** from the left-side menu.
 1. Select on **Install app**.
 1. Search for *Approvals Management*.
 1. Select **Next** and agree to the terms of service.
