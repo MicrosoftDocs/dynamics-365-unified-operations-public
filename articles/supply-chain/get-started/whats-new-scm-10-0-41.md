@@ -63,7 +63,7 @@ Some of these features aren't visible on your system until you turn them on in [
 
 ## Preview features that are now generally available
 
-The following table lists features that were introduced as public preview features in a previous version but became generally available in version 10.0.41. As with other new features, most of these features are turned off by default, so you must turn them on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) if you want to use them.
+The following table lists features that were introduced as public preview features in a previous version and became generally available in version 10.0.41. As with other new features, most of these features are turned off by default, so you must turn them on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) if you want to use them.
 
 | Module | Feature name | More information |
 |---|---|---|
