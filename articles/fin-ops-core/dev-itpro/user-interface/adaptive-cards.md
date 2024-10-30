@@ -111,6 +111,9 @@ After defining the properties that will display on the Adaptive Card, you define
 3. Provide a value for the `type` property that will be used as an identifier for the template type.
 4. The `template` property is set to a string of the JSON object that defines the layout and format of the Adaptive Card.
 
+> [!TIP]
+> You can use tools like the [Adaptive Cards designer](https://adaptivecards.io/designer) for assistance in creating the JSON for the Adaptive Card template.
+
 The following is an example class for an Adaptive Card template. This example includes actions to refresh the contents of the card, copy defined card elements, and provide feedback with thumbs up and down voting.
 
 ```X++
