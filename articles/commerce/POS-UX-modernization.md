@@ -18,6 +18,13 @@ This article describes point of sale (POS) modernization and usability improveme
 
 To improve POS usability and adapt to modern, intuitive workflows, numerous workflow improvements have been introduced.
 
+## Enable modern transaction grid in POS transaction view
+
+Starting with the Commerce 10.0.42 release you can now set the new flag **modern transaction grid** to **Yes** on POS **visual profiles** configuration in addition to turning on the feature **Enable modern transaction grid in POS transaction view**. This allows you to rollout the changes for specific registers. This feature includes refreshed transaction grid, numpad, customer card, and the button grids. It also enables retailers to show product image in cart view.
+
+> [!NOTE]
+> After every configuration change made in headquarters, you must run the **Registers (1090)** job to realize the change in POS.
+
 ## Streamlined workflow for adding items to a transaction from the product page
 
 Two new workflows are introduced in the Commerce 10.0.40 release to handle situations where you add an item to the cart from the product description or search results page.
