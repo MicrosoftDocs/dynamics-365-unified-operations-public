@@ -23,39 +23,116 @@ The Adaptive Cards control for finance and operations apps enables developers to
 
 ## Using Adaptive Cards
 The following steps are needed to use Adaptive Cards on forms in finance and operations apps:
-1. Configure the Adaptive Card template to define the card layout and formatting.
-2. Define the data contract for the data properties that will populate the template.
+1. Define the data contract for the data properties that will populate the adaptive card.
+2. Configure the Adaptive Card template to define the card layout and formatting.
 3. Add the Adaptive Card control to the form.
 4. Define the data that will populate the card.
 
-### Configure the Adaptive Card template
-The Adaptive Card template defines the layout and formatting of the data on the Adaptive Card control. 
-1. Create a class that extends the `AdaptiveCardTemplate` class.
-2. Define the class as a data contract with accessor methods to return properties set in the class.
-3. Provide a value for the `type` property.
-4. The `template` property is set to a string of the JSON object that defines the layout and format of the Adaptive Card.
+### Define the data properties for your Adaptive Card
+First define the data properties that populate your Adaptive Card. This is done by creating a new class as a data contract that extends the `AdaptiveCardData` class. Define the properties and add an accessor method for each property in the class.
 
-The following is an example class for an Adaptive Card template:
+The following provides an example class for properties that may be used for an Adaptive Card displaying a profile and insights about a customer record.
 
 ```X++
 [DataContract]
-public class SummaryCardTemplate extends AdaptiveCardTemplate
+public class AdaptiveCardCustomerData extends AdaptiveCardData
+{
+    private str cardTitle = "";
+    private str custName = "";
+    private str profileImage = "";
+    private str createdUtc = "2017-02-14T06:08:39Z";
+    private str custDescription = "";
+    private str custInsightsTitle = "";
+    private str custInsights = "";
+    private int feedback = 0;
+
+    [DataMember("cardTitle")]
+    public str cardTitle(str _cardTitle = cardTitle)
+    {
+        cardTitle = _cardTitle;
+        return cardTitle;
+    }
+
+    [DataMember("custName")]
+    public str custName(str _custName = custName)
+    {
+        custName = _custName;
+        return custName;
+    }
+
+    [DataMember("profileImage")]
+    public str profileImage(str _profileImage = profileImage)
+    {
+        profileImage = _profileImage;
+        return profileImage;
+    }
+
+    [DataMember("createdUtc")]
+    public str createdUtc(str _createdUtc = createdUtc)
+    {
+        createdUtc = _createdUtc;
+        return createdUtc;
+    }
+
+    [DataMember("custDescription")]
+    public str custDescription(str _custDescription = custDescription)
+    {
+        custDescription = _custDescription;
+        return custDescription;
+    }
+
+    [DataMember("custInsightsTitle")]
+    public str custInsightsTitle(str _custInsightsTitle = custInsightsTitle)
+    {
+        custInsightsTitle = _custInsightsTitle;
+        return custInsightsTitle;
+    }
+
+    [DataMember("custInsights")]
+    public str custInsights(str _custInsights = custInsights)
+    {
+        custInsights = _custInsights;
+        return custInsights;
+    }
+
+    [DataMember("feedback")]
+    public int Feedback(int _feedback = feedback)
+    {
+        feedback = _feedback;
+        return feedback;
+    }
+}
+```
+
+### Configure the Adaptive Card template
+After defining the properties that will display on the Adaptive Card, you define how the fields will be laid out on the card. The Adaptive Card template defines the layout and formatting of the data on the Adaptive Card control. 
+1. Create a class that extends the `AdaptiveCardTemplate` class.
+2. Define the class as a data contract with accessor methods to return properties set in the class.
+3. Provide a value for the `type` property that will be used as an identifier for the template type.
+4. The `template` property is set to a string of the JSON object that defines the layout and format of the Adaptive Card.
+
+The following is an example class for an Adaptive Card template. This example includes actions to refresh the contents of the card, copy defined card elements, and provide feedback with thumbs up and down voting.
+
+```X++
+[DataContract]
+public class AdaptiveCardCustomerTemplate extends AdaptiveCardTemplate
 {
     List dataToCopy;
 
     public void new()
     {
         super();
-        this.type("SummaryCard");
-        this.template(strFmt('{"type":"AdaptiveCard","$schema":"https://adaptivecards.io/schemas/adaptive-card.json","version":"1.5","id":"SummaryCard","body":[{"type":"ColumnSet","columns":[{"type":"Column","width":"auto","items":[{"type":"Icon","name":"TextBulletListSquareSparkle","color":"Accent","size":"Small"}]},{"type":"Column","width":"stretch","items":[{"type":"TextBlock","text":"${heading}","wrap":true,"style":"heading","horizontalAlignment":"Left"}],"verticalContentAlignment":"Center"},{"type":"Column","width":"auto","items":[{"type":"ActionSet","id":"headingActions","actions":[{"type":"Action.Execute","id":"RefreshCard","title":"%1","mode":"secondary","iconUrl":"icon:ArrowClockwise"}]}]}]},{"type":"TextBlock","text":"${body}","wrap":true,"spacing":"Medium"},{"type":"ColumnSet","spacing":"Medium","columns":[{"type":"Column","width":"stretch","items":[{"type":"ActionSet","actions":[{"type":"Action.Execute","title":"%2","id":"CopyToClipboard","iconUrl":"icon:Copy"}]}]},{"type":"Column","width":"auto","items":[{"type":"ColumnSet","columns":[{"type":"Column","width":"auto","items":[{"type":"Icon","name":"ThumbLike","size":"xSmall","color":"Accent","style":"${if(feedback > 0, \'Filled\', \'Regular\')}","selectAction":{"type":"Action.Execute","id":"FeedbackLike","tooltip":"%3"}}]},{"type":"Column","width":"auto","items":[{"type":"Icon","name":"ThumbDislike","size":"xSmall","color":"Accent","style":"${if(feedback < 0, \'Filled\', \'Regular\')}","selectAction":{"type":"Action.Execute","id":"FeedbackDislike","tooltip":"%4"}}]}]}],"verticalContentAlignment":"Center"}]}]}',
+        this.type("CustomerCard");
+        this.template(strFmt('{"type":"AdaptiveCard","$schema":"https://adaptivecards.io/schemas/adaptive-card.json","version":"1.5","id":"CustomerCard","body":[{"type":"ColumnSet","columns":[{"type":"Column","width":"auto","items":[{"type":"Icon","name":"TextBulletListSquareSparkle","color":"Accent","size":"Small"}]},{"type":"Column","width":"stretch","items":[{"type":"TextBlock","text":"${cardTitle}","wrap":true,"style":"heading","horizontalAlignment":"Left"}],"verticalContentAlignment":"Center"},{"type":"Column","width":"auto","items":[{"type":"ActionSet","id":"headingActions","actions":[{"type":"Action.Execute","id":"RefreshCard","title":"%1","mode":"secondary","iconUrl":"icon:ArrowClockwise"}]}]}]},{"type": "ColumnSet", "columns": [{"type": "Column", "items": [{"type": "Image", "style": "Person", "url": "${profileImage}", "altText": "${custName}", "size": "Small"}], "width": "auto"}, {"type": "Column", "items": [{"type": "TextBlock", "weight": "Bolder", "text": "${custName}", "wrap": true}, {"type": "TextBlock", "spacing": "None", "text": "Customer since {{DATE(${createdUtc},SHORT)}}", "isSubtle": true, "wrap": true}], "width": "stretch"}]},{"type":"TextBlock","text":"${custDescription}","wrap":true,"spacing":"Medium"},{"type": "TextBlock", "size": "Medium", "weight": "Bolder", "text": "${custInsightsTitle}", "wrap":true, "Spacing": "Medium"}, {"type": "TextBlock", "text": "${custInsights}", "wrap": true},{"type":"ColumnSet","spacing":"Medium","columns":[{"type":"Column","width":"stretch","items":[{"type":"ActionSet","actions":[{"type":"Action.Execute","title":"%2","id":"CopyToClipboard","iconUrl":"icon:Copy"}]}]},{"type":"Column","width":"auto","items":[{"type":"ColumnSet","columns":[{"type":"Column","width":"auto","items":[{"type":"Icon","name":"ThumbLike","size":"xSmall","color":"Accent","style":"${if(feedback > 0, \'Filled\', \'Regular\')}","selectAction":{"type":"Action.Execute","id":"FeedbackLike","tooltip":"%3"}}]},{"type":"Column","width":"auto","items":[{"type":"Icon","name":"ThumbDislike","size":"xSmall","color":"Accent","style":"${if(feedback < 0, \'Filled\', \'Regular\')}","selectAction":{"type":"Action.Execute","id":"FeedbackDislike","tooltip":"%4"}}]}]}],"verticalContentAlignment":"Center"}]}]}',
             "@AdaptiveCardControl:Refresh",
             "@AdaptiveCardControl:Copy",
             "@AdaptiveCardControl:Useful",
             "@AdaptiveCardControl:NotUseful"));
 
         List il = new List(Types::String);
-        il.addEnd("heading");
-        il.addEnd("body");
+        il.addEnd("custName");
+        il.addEnd("custDescription");
+        il.addEnd("custInsights");
 
         this.dataToCopy(il);
     }
@@ -70,7 +147,7 @@ public class SummaryCardTemplate extends AdaptiveCardTemplate
 ```
 
 ### Add the Adaptive Card control
-First, add the Adaptive Card control in the desired placement on your form. 
+Add the Adaptive Card control in the desired placement on your form. 
 1. On the form in your development environment for finance and operations apps in Visual Studio, right-click the node in your form design where you want to place the Adaptive Card.
 2. On the context menu, select **New > Adaptive card**.
 3. On the **Properties** for the control, provide a **Name**, and select the template class created earlier in the **Template class** property.
