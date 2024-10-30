@@ -4,7 +4,7 @@ description: Learn about financial reporting posting audit in Microsoft Dynamics
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 10/28/2024
+ms.date: 10/31/2024
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
@@ -33,7 +33,7 @@ could be used. The column definition contains the month-to-date amounts and seve
  - Originating master record name
 
 ## Key features
-Key features in the **Postings audit** report are:
+Key features of the **Postings audit** report are:
  - Dimension value set displays a list of the accounts that should be reviewed.
  - Transaction attributes show the journal entry number and other key transaction details.
  - Downloading the report to Excel, where it's easier to review large amounts of data. 
