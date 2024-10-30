@@ -65,6 +65,14 @@ Some of these features aren't visible on your system until you turn them on in [
 | <p>**Module:** Warehouse management</p><p>**Feature management name:** *Advanced address maintenance*</p> | Lets you delete unused historical addresses on the **Manage addresses** page. The address type selection is shown in a tab-based format instead of a dropdown list. |
 | <p>**Module:** Warehouse management</p><p>**Feature management name:** *(Preview) Context-aware worker summary screen in WMA*</p> | The AI-enhanced warehouse home screen in the Warehouse management mobile app uses advanced generative AI technology to provide warehouse workers with a personalized dashboard at the beginning of their shifts. |
 
+## Preview features that are now generally available
+
+The following table lists features that were introduced as public preview features in a previous version but became generally available in version 10.0.40. As with other new features, most of these features are turned off by default, so you must turn them on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) if you want to use them.
+
+| Module | Feature name | More information |
+|---|---|---|
+| Warehouse management | *Warehouse management only mode* | [Warehouse management only mode overview](../warehousing/wms-only-mode-overview.md) |
+
 ## Related information
 
 ### Platform updates for Finance and Operations apps
