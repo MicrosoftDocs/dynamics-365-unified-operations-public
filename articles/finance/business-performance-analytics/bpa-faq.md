@@ -83,7 +83,7 @@ When a new release of Business performance analytics is available, you can updat
 
 ### During public preview, what can I expect each time that data is restored from production to sandbox?
 
-As a customer, you might want to restore data from your production environment to a sandbox environment, so that you can validate new data as part of Business performance analytics. In public preview, data won't be able to move again from production to sandbox. If you want to move data again from production to sandbox, delete the existing environment, create new environment and install Business performance analytics. Any new data changes done in the Dynamics 365 finance and operations apps UI can still be seen in Business performance analytics. The limitation above is only for changes via data movement from production to sandbox.
+As a customer, you might want to restore data from your production environment to a sandbox environment, so that you can validate new data as part of Business performance analytics. In public preview, data won't be able to move again from production to sandbox. If you want to move data again from production to sandbox, delete the existing environment, create new environment and install Business performance analytics. Any new data changes done in the Dynamics 365 finance and operations apps UI can still be seen in Business performance analytics. The preceding limitation is only for changes via data movement from production to sandbox.
 
 ### How do I receive the latest news about Business performance analytics?
 
