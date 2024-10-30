@@ -92,16 +92,11 @@ The invoice journal that's created after posting occurs doesn't include the pare
 
 The invoice journal must not include the parent item from the product bundle, because any processes that are performed after the invoice is posted are based on that invoice journal. For example, if you create a credit note from the **Sell** tab of the Action Pane, the credit note that's created will include the component items but not the parent item.
 
-## <a name="bundles-journals"></a>Product bundles in journals (preview)
-
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: Preview until further notice -->
+## <a name="bundles-journals"></a>Product bundles in journals
 
 The *Product bundles in journals* feature extends the *Product bundle* feature. (Learn more in [Enable and set up product bundles](product-bundles-setup.md).) It enables the system to preserve detailed product bundle information in its database. Therefore, you can reprint original sales order confirmations and invoices even after the related sales order is deleted or archived and purged. This feature also improves the ability to exchange order confirmations and invoices electronically. Because product bundles are now represented in journals, you can electronically exchange order confirmations and invoices that include product bundles.
 
 This section describes the changes that the *Product bundles in journals* feature introduces. These changes build on the features that were described earlier in this article.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ### Changes in sales confirmation journals
 
