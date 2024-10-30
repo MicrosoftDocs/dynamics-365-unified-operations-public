@@ -24,7 +24,7 @@ This feature is available from Commerce 10.0.42 release and includes refreshed t
 
 To enable this feature:
 
-  1. Enable Modern Transaction Grid in POS Transaction View feature (**System administration > Workspaces > Feature management**)
+  1. Turn on the feature **Enable Modern Transaction Grid in POS Transaction View** (**System administration > Workspaces > Feature management**)
   2. For each visual profile, set the **modern transaction grid** flag to **Yes** in the POS Visual Profiles configuration (**Retail and Commerce > Channel setup > POS setup > POS profiles > Visual profiles**). This allows you to rollout the changes to specific registers as needed.
   3. Run the **Registers (1090)** job to realize the change in POS.
 
