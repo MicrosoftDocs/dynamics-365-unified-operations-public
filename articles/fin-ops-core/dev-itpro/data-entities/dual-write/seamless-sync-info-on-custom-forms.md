@@ -24,25 +24,26 @@ When you [enable seamless sync in Supply Chain Management](../../../fin-ops/data
 To Add seamless sync information to custom Order or Quote forms in Dynamics 365 Sales, follow these steps.
 
 1. Open the [Power Apps Maker portal](https://make.powerapps.com).
-1. Open your custom Order or Quote form.
+1. Open your custom *Order* or *Quote* form.
 1. Select **Form Libraries** and make sure that the library named `msdyn_d365scm` is present. If it isn't, select **Add library** and add it.
 
     ![](media/image1.png)
 
-1. Open the *On Load* event for the form. In the Function field, add the handler function `D365AutoSyncController.activateAutoSync`.
+1. Open the *On Load* event for the custom form and add the handler function `D365AutoSyncController.activateAutoSync`.
 
     ![A screenshot of a computer program Description automatically generated](media/image2.png)
 
-1. If the grid in the form is editable, open the *On Save* event for the grid and add the handler function `D365AutoSyncController.onSaveDetailsGrid`.
+1. If the grid on your custom form is editable, open the *On Save* event for the grid and add the handler function `D365AutoSyncController.onSaveDetailsGrid`.
 
     ![A screenshot of a computer Description automatically generated](media/image3.png)
 
 ## Add seamless sync information to custom Order Product or Quote Product forms
 
-1.  Navigate to the "Order Product" or "Quote Product" form, select "Form Libraries," and ensure that the library named "msdyn\_d365scm" is present.
+To Add seamless sync information to custom Order Product or Quote Product forms in Dynamics 365 Sales, follow these steps.
 
-    ![](media/image4.png)
+1. Open the [Power Apps Maker portal](https://make.powerapps.com).
+1. Open your custom *Order Product* or *Quote Product* form.
+1. Select **Form Libraries** and make sure that the library named `msdyn_d365scm` is present. If it isn't, select **Add library** and add it.
+1. Open the *On Load* event for the custom form and add the handler function `D365AutoSyncController.activateAutoSync`.
 
-2.  Navigate to the "On Load" event for the form, and add the handler function "D365AutoSyncController.activateAutoSync"
-
-![A screenshot of a computer program Description automatically generated](media/image2.png)
+<!--KFM: This procedure is exactly like the other one. Why not combine them? -->
