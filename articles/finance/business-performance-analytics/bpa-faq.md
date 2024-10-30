@@ -14,7 +14,6 @@ ms.date: 9/11/2024
 
 This article answers frequently asked questions about Business performance analytics.
 
-
 ### I received an error during the installation of Business performance analytics. How do I fix it?
 
 The following errors are likely to occur if another operation is in progress during the installation of Business performance analytics. If these errors persist, retry the installation.
@@ -43,11 +42,11 @@ As part of the data pipeline for Business performance analytics, your data is tr
 
 ### What's the estimated time that's required to set up Business performance analytics?
 
-The setup of Business performance analytics app takes up to 60 minutes.
+The setup of the Business performance analytics app takes up to 60 minutes.
 
-### When will data be available in reports after the Business performance analytics is installed?
+### When will data be available in reports after Business performance analytics is installed?
 
-Data will be available 24 hours after installation is completed. The time taken to load data depends on the data size.
+Data will be available 24 hours after installation is completed. The time that's required to load data depends on the data size.
 
 ### How many years of data are available on reports?
 
@@ -55,7 +54,7 @@ Business performance analytics has data for the current calendar year plus the p
 
 ### After Business performance analytics is set up, how often is the data refreshed?
 
-Data is refreshed twice per day, at 12:00:00 AM (GMT) and 12:00:00 PM (GMT). To see exactly when a report's data was last refreshed, open the report. Towards the top of the window, the rightmost item displays when the data for the report was last refreshed. 
+Data is refreshed twice per day, at 12:00:00 AM and 12:00:00 PM (Coordinated Universal Time). To view exactly when a report's data was last refreshed, open the report. Near the top of the page, the rightmost item shows when the data for the report was last refreshed.
 
 ### How long does it take for fresh data to be available every day on Business performance analytics reports?
 
@@ -63,8 +62,8 @@ The amount of time that's required depends on the volume of data. However, there
 
 ### How often will updates for Business performance analytics be released?
 
-- **New features** - Once per month 
-- **Bugs** - Bi-weekly 
+- **New features** – Once per month 
+- **Bugs** – Bi-weekly 
 
 ### Is there any cost to install and use Business performance analytics during public preview?
 
@@ -84,14 +83,12 @@ When a new release of Business performance analytics is available, you can updat
 
 ### During public preview, what can I expect each time that data is restored from production to sandbox?
 
-As a customer, you might want to restore data from your production environment to a sandbox environment, so that you can validate new data as part of Business performance analytics. In public preview, data won't be able to move again from production to sandbox. If you want to move data again from production to sandbox, delete the existing environment, create new environment and install Business performance analytics.
-Any new data changes done in Dynamics 365 finance and operations UI can still be seen in Business performance analytics. The limitation above is only for changes via data movement from production to sandbox.
+As a customer, you might want to restore data from your production environment to a sandbox environment, so that you can validate new data as part of Business performance analytics. In public preview, data won't be able to move again from production to sandbox. If you want to move data again from production to sandbox, delete the existing environment, create new environment and install Business performance analytics. Any new data changes done in the Dynamics 365 finance and operations apps UI can still be seen in Business performance analytics. The limitation above is only for changes via data movement from production to sandbox.
 
-### How do I receive the latest news on Business performance analytics?
+### How do I receive the latest news about Business performance analytics?
 
-To receive the latest updates about Business performance analytics, join the Business performance analytics Yammer group. 
+To receive the latest updates about Business performance analytics, join the Business performance analytics Yammer group.
 
-1. Complete the [FAR Preview Agreement](https://forms.office.com/r/wfcUBtP67J)
-3. Join the [Dynamics 365 and Power Platform Preview Programs](https://www.yammer.com/dynamicsaxfeedbackprograms/#/home)
-4. Join the [Business performance analytics Yammer](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=73748324352&view=unviewed)
-
+1. Complete the [FAR Preview Agreement](https://forms.office.com/r/wfcUBtP67J).
+2. Join the [Dynamics 365 and Power Platform Preview Programs](https://www.yammer.com/dynamicsaxfeedbackprograms/#/home).
+3. Join the [Business performance analytics Yammer](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=73748324352&view=unviewed).
