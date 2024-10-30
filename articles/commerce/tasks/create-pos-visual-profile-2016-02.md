@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0
 This procedure walks through creating a new point of sale (POS) visual profile. A visual profile contains basic information that determines the appearance of POS registers. You can create several visual profiles and assign specific profiles to run on specific registers. This procedure uses the USRT demo data company.
 
 > [!NOTE]
-> Starting with the Commerce 10.0.42 release you can now set the new flag **modern transaction grid** to **Yes** on POS **visual profiles** configuration in addition to turning on the feature **Enable modern transaction grid in POS transaction view**. This allows you to rollout the changes for specific registers. This feature includes refreshed transaction grid, numpad, customer card, and the button grids. It also enables retailers to show product image in cart view.
+> Starting with the Commerce 10.0.42 release you can now set the new flag **modern transaction grid** to **Yes** on POS **visual profiles** configuration. This allows you to rollout the changes for specific registers. To access this flag, turn on the feature **Enable modern transaction grid in POS transaction view**. This feature includes refreshed transaction grid, numpad, customer card, and the button grids. It also enables retailers to show product image in cart view.
 > 
 > After every configuration change made in headquarters, you must run the **Registers (1090)** job to realize the change in POS.
 
