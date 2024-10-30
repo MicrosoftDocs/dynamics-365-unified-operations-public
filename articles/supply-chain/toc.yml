@@ -405,7 +405,7 @@
           href: asset-management/functional-locations/introduction-to-functional-locations.md
         - name: Create functional locations
           href: asset-management/functional-locations/create-functional-locations.md
-        - name: Change the type of existing functional locations (preview)
+        - name: Change the type of existing functional locations
           href: asset-management/functional-locations/change-functional-location-type.md
         - name: Install assets on functional locations
           href: asset-management/functional-locations/install-objects-on-functional-locations.md
@@ -501,7 +501,7 @@
           href: asset-management/work-orders/maintenance-forecasts.md
         - name: Procurement
           href: asset-management/work-orders/procurement.md
-        - name: Material availability check for work orders (preview)
+        - name: Material availability check for work orders
           href: asset-management/work-orders/material-availability-check-work-orders.md
         - name: Manual update of asset counters
           href: asset-management/work-orders/manual-update-of-asset-counters.md
