@@ -167,6 +167,30 @@ To set up return locations, follow these steps.
 1. Go to the **Retail and Commerce \> Commerce product hierarchy**.
 1. On the **Manage inventory category properties** FastTab, in the **Return location** field, select a return location. Because multiple return location policies can be defined for the same store, the value that you select here determines the return location policy that is used.
 
+## Known issues
+
+##### Issue description
+When performing a global return, the return transaction does not reflect previously returned quantities. For example:
+1. Perform a sale in store A of an item with 5 quantities.
+2. Perform a return on this sale in store A for 2 quantities.
+3. Pull the transactions to HQ.
+4. Try to do a return on the original sale from step 1 in store B. The POS will display all 5 quantities after entering the receipt number, instead of 3.
+
+This issue arises when multiple CSUs are in use. In this example, store A is in one CSU and store B is in another.
+Each CSU has its own database, so store A would not have information about transactions made in store B, and vice versa.
+
+##### Mitigation steps
+
+The issue can be mitigated by performing the below steps:
+
+1. Enable feature “Improved user experience for POS returns”.
+2. Run the “Update return quantities” job in HQ at high frequency.
+3. Run the distribution schedule job “1200” to update the stores at high frequency.
+
+Steps #2 and #3 in particular are necessary to ensure that information from each CSU is frequently sent to HQ via RTS call.
+
+By running the above 3 steps, the returned quantities will be synced between CSUs and all returns should reflect returned quantities from other stores. 
+
 ## Additional resources
 
 [Return serial number–controlled products in Point of Sale (POS)](POS-serial-returns.md)
