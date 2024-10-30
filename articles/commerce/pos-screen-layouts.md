@@ -4,7 +4,7 @@
 title: POS user interface visual configurations
 description: This article provides information about screen layouts for Dynamics 365 Commerce point of sale (POS) experiences.
 author: boycezhu
-ms.date: 05/30/2024
+ms.date: 10/29/2024
 ms.topic: how-to
 audience: Application User
 ms.reviewer: v-chrgriffin
@@ -92,6 +92,9 @@ At startup, the POS application automatically selects the closest layout size th
     - **Modern POS – Compact** – Compact layouts are typically best for phones and small tablets. The design possibilities for compact devices are limited. You can configure the columns and fields for the receipt and totals panels. Certain operations that need higher screen resolutions such as reports and inventory management aren't supported in the compact layout. 
 
 - **Width/Height** – These values represent the effective screen size, in pixels, that is expected for the layout. Remember that some operating systems use scaling for high-resolution displays.
+
+> [!NOTE]
+> The minimum resolution supported for full-size layouts is 1024x768. Any layout using a resolution below that threshold generates a compact layout.
 
 > [!TIP]
 > You can learn the layout size that is required for a POS screen by viewing the resolution in the app. Start the POS, and go to **Settings \> Session information**. POS shows the screen layout that is currently loaded, the layout size, and the resolution of the app window.

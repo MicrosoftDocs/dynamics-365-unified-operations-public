@@ -54,7 +54,7 @@ The following table provides a detailed overview of functionality that still wor
 > [!NOTE]
 > Pay statement generation doesn't work as it worked in earlier versions.
 
-### Additional information
+### Related information
 
 - On the **Human Resources shared parameters** page, the **Payroll** tab has disabled tabs, and tax can't be updated.
 - Previously generated pay statements and processed payroll still exist. However, new ones can't be processed or generated.

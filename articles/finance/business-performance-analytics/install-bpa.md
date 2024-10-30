@@ -17,6 +17,7 @@ This article describes how to install Business performance analytics.
 > [!Important]
 > The administrator who completed the configuration steps should complete the installation steps.
 
+
 ## Install Business performance analytics
 
 Before installing Business performance analytics, check to make sure [all the prerequisites are completed](configure-bpa.md).
