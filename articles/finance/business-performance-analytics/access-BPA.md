@@ -25,7 +25,7 @@ After Business performance analytics is installed, there are several ways to acc
 
 ### Access Business performance analytics from finance and operations apps
 
-A shortcut to access Business performance analytics in Dynamics 365 finance and operations are visible to users with one of the following duties assigned:  
+A shortcut to access Business performance analytics in Dynamics 365 finance and operations apps is visible to users with one of the following duties assigned:
 
 - View manage bank accounts workspace
 - Maintain budget plans
@@ -49,16 +49,15 @@ A shortcut to access Business performance analytics in Dynamics 365 finance and 
 - View financial period close processes
 - Inquire into fixed assets
 
-
 To open Business performance analytics directly from Dynamics 365 finance and operations apps, confirm the following prerequisites are met:
 
-1. Go to https://admin.powerplatform.microsoft.com/
+1. Go to <https://admin.powerplatform.microsoft.com/>.
 2. Select **Environments** on the left menu.
-3. Select the environment where business performance analytics is installed.
-4. Go to **Settings** > **Users**.
-5. For Business performance analytics users, confirm that the **Basic user** security role is assigned.
+2. Select the environment where business performance analytics is installed.
+3. Go to **Settings** > **Users**.
+4. For Business performance analytics users, confirm that the **Basic user** security role is assigned.
 
-If the prerequisites aren't met, selecting the Business performance analytics icon in the apps section redirects the user to a public document explaining the functionality. When the prerequisites are met, selecting the Business performance analytics icon redirects the user to the Business Performance Analytics app. Administrators can control who sees the Business Performance Analytics icon by granting or removing the associated privileges from users' duties or utilizing feature management to hide the Apps section. The administrator can use security roles and privileges to grant access to the Business performance analytics icon to additional users and roles within Dynamics 365 Finance and Operations.
+If these prerequisites aren't met, a user who selects the Business performance analytics icon in the **Apps** section is redirected to a public document that explains the functionality. After the prerequisites are met, a user who selects the Business performance analytics icon is redirected to the Business performance analytics app. Administrators can control who the Business performance analytics icon is visible to by granting or removing the associated privileges from users' duties, or by using Feature management to hide the **Apps** section. Administrators can also use security roles and privileges to grant additional users and roles in finance and operations apps access to the Business performance analytics icon.
 
 After these prerequisites are met, the administrator can use security roles and privileges to assign access to the **Business performance analytics** tile in finance and operations apps.
 
