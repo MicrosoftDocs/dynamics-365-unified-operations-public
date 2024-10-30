@@ -152,4 +152,86 @@ Add the Adaptive Card control in the desired placement on your form.
 2. On the context menu, select **New > Adaptive card**.
 3. On the **Properties** for the control, provide a **Name**, and select the template class created earlier in the **Template class** property.
 
+### Populate the data properties on the Adaptive Card
+When the Adaptive Card control is added to your form, you can now define the data that will populate the properties in your template for the card.
+1. View the code for the form where you added the Adaptive Card.
+2. Create an instance of your data class, and populate the properties of the data contract.
+3. Create a class that defines any actions added to the template.
 
+The following example shows the defining properties and actions to populate the template created in previous steps:
+
+```X++
+[Form]
+public class MyCustomerInsightsForm extends FormRun
+{
+    AdaptiveCardCustomerData currentData2;
+
+    public void run()
+    {
+        super();
+
+        if (SysUserInfo::find().Density == SysUserInfoDensity::Density21)
+        {
+            SummaryCard2.widthValue(420);
+            SummaryCard2.heightValue(190);
+        }
+
+        currentData2 = new AdaptiveCardCustomerData();
+        currentData2.cardTitle('Customer Profile');
+        currentData2.custName('Contoso Electronics');
+        currentData2.profileImage('https://media.licdn.com/dms/image/C560BAQFJq1MdKASLWA/company-logo_200_200/0/1591822700485?e=2147483647&v=beta&t=BrJUkBS5fE2EO3x5XsiiakRIDzN5GXqzPV6U1oEHOc8');
+        currentData2.createdUtc('2017-02-14T06:08:39Z');
+        currentData2.custDescription('Contoso Electronics is a mid-sized IT service provider specializing in network infrastructure, cybersecurity, and cloud migration for small-to-medium businesses.');
+        currentData2.custInsightsTitle("Customer Insights");
+        currentData2.custInsights('- Needs streamlined tools for remote network monitoring and incident response.\n- Anticipating 20% growth with plans for new hires in cybersecurity and cloud engineering\n- Current outstanding balance: $35,000\n- Payment history: Generally prompt but had delayed payments twice in the past year due to cash flow adjustments during expansion phases.');
+
+        SummaryCard2.cardData(currentData2);
+    }
+
+    [Control("Custom")]
+    class SummaryCard2
+    {
+        public void executeAction(str actionId, str actionPayload)
+        {
+            super(actionId, actionPayload);
+
+            if (actionId == "FeedbackLike")
+            {
+                if (currentData2.Feedback() != 1)
+                {
+                    currentData2.Feedback(1);
+                }
+                else
+                {
+                    currentData2.Feedback(0);
+                }
+                SummaryCard2.cardData(currentData2);
+            }
+            else if (actionId == "FeedbackDislike")
+            {
+                if (currentData2.Feedback() != -1)
+                {
+                    currentData2.Feedback(-1);
+                }
+                else
+                {
+                    currentData2.Feedback(0);
+                }
+                SummaryCard2.cardData(currentData2);
+            }
+            else if (actionId == "RefreshCard")
+            {
+                currentData2.cardTitle('Customer Profile');
+                currentData2.custName('Contoso Electronics');
+                currentData2.profileImage('https://media.licdn.com/dms/image/C560BAQFJq1MdKASLWA/company-logo_200_200/0/1591822700485?e=2147483647&v=beta&t=BrJUkBS5fE2EO3x5XsiiakRIDzN5GXqzPV6U1oEHOc8');
+                currentData2.createdUtc('2017-02-14T06:08:39Z');
+                currentData2.custDescription('Contoso Electronics is a mid-sized IT service provider specializing in network infrastructure, cybersecurity, and cloud migration for small-to-medium businesses.');
+                currentData2.custInsightsTitle('Customer Insights');
+                currentData2.custInsights('- Needs streamlined tools for remote network monitoring and incident response.\n- Anticipating 20% growth with plans for new hires in cybersecurity and cloud engineering\n- Current outstanding balance: $35,000\n- Payment history: Generally prompt but had delayed payments twice in the past year due to cash flow adjustments during expansion phases.');
+                SummaryCard2.cardData(currentData2);
+            }
+        }
+    }
+}
+
+```
