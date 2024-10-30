@@ -38,7 +38,7 @@ To reinstall Business performance analytics and restore reports, follow these st
 
 To back up a report, follow these steps.
 
-1. In [Power Apps](https://https://make.powerapps.com/), on the left navigation pane, select **Flows**.
+1. In [Power Apps](https://make.powerapps.com/), on the left navigation pane, select **Flows**.
 2. Select **Play** to run the **Business performance analytics backup reports** flow.
 3. Select **Run flow** in the pane that appears.
 
