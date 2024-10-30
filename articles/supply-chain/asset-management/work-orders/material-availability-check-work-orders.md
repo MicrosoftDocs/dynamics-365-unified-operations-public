@@ -1,5 +1,5 @@
 ---
-title: Material availability check for work orders (preview)
+title: Material availability check for work orders
 description: Learn how supervisors can check whether all the required materials are available for one or more maintenance work orders.
 author: johanhoffmann
 ms.author: johanho
@@ -10,23 +10,18 @@ ms.reviewer: kamaybac
 ms.search.form: EntAssetWorkOrderMaterialAvailability, EntAssetWorkOrderTable
 ---
 
-# Material availability check for work orders (preview)
+# Material availability check for work orders
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-<!--KFM: Preview until further notice -->
 
 Supervisors can do a material availability check for work orders. This process is relevant for organizations that want to confirm that all the required spare parts are available before workers start maintenance work. For example, a supervisor is responsible for all corrective maintenance at a manufacturing site. As a standard procedure, the supervisor checks whether all the materials that are required for each work order are available. After availability is confirmed, the supervisor releases the materials to maintenance workers for processing.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
 Before you can use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.37 or later.
-- The feature that's named *(Preview) Material availability check on maintenance work orders* must be turned on in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named *Material availability check on maintenance work orders* must be turned on in [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## How the material availability check works
 
