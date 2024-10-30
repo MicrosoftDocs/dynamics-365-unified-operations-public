@@ -45,7 +45,7 @@ To back up a report, follow these steps.
 To do a self-service restore, follow these steps.
 
 1. Run the **Business performance analytics restore reports** flow.
-2. Select whether you want to restore all reports, only custom reports, or only the report that has a specific FRH report ID.
+2. Select whether you want to restore all reports, only custom reports, or only the report that has a specific Financial Reporting Hub (FRH) report ID.
 3. Select **Run flow** to begin the restoration process.
 
 ### Excel drill-down doesn't work when I analyze Business performance analytics data in Power Pivot.
