@@ -179,7 +179,7 @@ For example, this issue can occur when you execute the following steps.
 1. Pull the transactions to headquarters.
 1. Try to do a return on the original sale from step 1 in store B. After you enter the receipt number, the POS displays a quantity of five (5), instead of the expected quantity of three (3).
 
-This issue arises when multiple CSUs are in use. In this example, store A uses one CSU and store B uses another CSU. Each CSU has its own database, so store A doesn't have information about transactions made in store B, and store B doesn't have information about transactions made in store A.
+CAUSE: This issue arises when multiple CSUs are in use. In this example, store A uses one CSU and store B uses another CSU. Each CSU has its own database, so store A doesn't have information about transactions made in store B, and store B doesn't have information about transactions made in store A.
 
 #### Mitigation steps
 
@@ -189,7 +189,7 @@ To mitigate this issue, follow these steps.
 2. Run the **Update return quantities** job at high frequency.
 3. Run the **Return quantities (1200)** distribution schedule job to update the stores at high frequency.
 
-When you execute these three steps, the returned quantities are synced between CSUs and all returns should reflect returned quantities from other stores. Steps 2 and 3 ensure that information from each CSU is frequently sent to headquarters via Real-time Service (RTS) calls.
+When you execute these steps, the returned quantities are synced between CSUs and all returns should then reflect returned quantities from other stores. Steps 2 and 3 ensure that information from each CSU is frequently sent to headquarters via Real-time Service (RTS) calls.
 
 ## Additional resources
 
