@@ -13,7 +13,7 @@ ms.custom:
 
 # Display seamless sync information on custom forms in Dynamics 365 Sales (preview)
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until 10.0.42 GA -->
 
