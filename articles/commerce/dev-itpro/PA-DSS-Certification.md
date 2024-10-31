@@ -27,7 +27,7 @@ PA-DSS implementation guides are linked to in the **Version** column in the foll
 
 | Release  | Version |
 | ----------------------------|---------------------- | 
-| Microsoft Dynamics 365 Commerce | [10.0.18](https://mbs2.microsoft.com/fileexchange/?fileID=e37f50d7-767b-47e2-a162-68dc88ee5a44) |
+| Microsoft Dynamics 365 Commerce | [10.0.18](https://download.microsoft.com/download/3/5/9/35929c2a-751b-4e60-8f70-4d896e461c46/PA-DSSImplementationGuide_MicrosoftDynamics365.pdf) |
 | Microsoft Dynamics 365 Commerce | [10.0.12](https://download.microsoft.com/download/f/8/3/f83fbcf3-dc8b-46f8-a552-939300cb39b6/PA-DSS%20Implementation%20Guide%20for%20Microsoft%20Dynamics%20365%20Commerce%2010.0.12.pdf)  |
 
 ## Past certification
