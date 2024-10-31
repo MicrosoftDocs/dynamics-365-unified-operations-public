@@ -17,15 +17,15 @@ ms.custom:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 <!-- KFM: Preview until 10.0.42 GA -->
 
-With [seamless sync](../../../fin-ops/data-entities/add-efficiency-in-quote-to-cash-seamless-sync.md), users who work on sales orders and sales quotations in Sales can view the results of calculations that the Supply Chain Management pricing engine does, without having to take any extra steps to get prices, discounts, and totals. As the users work in Sales, all the necessary data and calculation results are seamlessly synced between systems as required.
+With [seamless sync](../../../fin-ops/data-entities/add-efficiency-in-quote-to-cash-seamless-sync.md), users who work on sales orders and sales quotations in Dynamics 365 Sales can view the results of calculations that the Supply Chain Management pricing engine does, without having to take any extra steps to get prices, discounts, and totals. As the users work in Sales, all the necessary data and calculation results are seamlessly synced between systems as required.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
-When you [enable seamless sync in Supply Chain Management](../../../fin-ops/data-entities/add-efficiency-in-quote-to-cash-seamless-sync.md), the system automatically makes the required customizations that make it possible to see seamless sync information on the standard Order, Quote, Order Product and Quote Products forms in Dynamics 365 Sales. However, if your company uses custom versions of these forms (which is common), then you must modify your custom forms to enable seamless sync information to display correctly on your forms. This article describes how.
+When you [enable seamless sync in Supply Chain Management](../../../fin-ops/data-entities/add-efficiency-in-quote-to-cash-seamless-sync.md), the system automatically makes the required customizations that make it possible to see seamless sync information on the standard Order, Quote, Order Product and Quote Products forms in Sales. However, if your company uses custom versions of these forms (which is common), then you must modify your custom forms to enable seamless sync information to display correctly on your forms. This article describes how.
 
 ## Add seamless sync information to custom Order or Quote forms
 
-To add seamless sync information to custom Order or Quote forms in Dynamics 365 Sales, follow these steps.
+To add seamless sync information to custom Order or Quote forms in Sales, follow these steps.
 
 1. Open the [Power Apps Maker portal](https://make.powerapps.com).
 1. Open your custom *Order* or *Quote* form.
@@ -43,7 +43,7 @@ Learn more about how to work with libraries and events for custom forms in [Conf
 
 ## Add seamless sync information to custom Order Product or Quote Product forms
 
-To Add seamless sync information to custom Order Product or Quote Product forms in Dynamics 365 Sales, follow these steps.
+To Add seamless sync information to custom Order Product or Quote Product forms in Sales, follow these steps.
 
 1. Open the [Power Apps Maker portal](https://make.powerapps.com).
 1. Open your custom *Order Product* or *Quote Product* form.
