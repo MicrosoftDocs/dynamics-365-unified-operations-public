@@ -2101,6 +2101,8 @@ items:
           href: user-interface/filtering.md
         - name: Power Apps Host control
           href: user-interface/powerapps-host-control.md
+        - name: Adaptive Card control
+          href: user-interface/adaptive-cards.md
       - name: Window management
         items:
         - name: Migrate context menu code
