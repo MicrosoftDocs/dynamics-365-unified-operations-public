@@ -1,5 +1,5 @@
 ---
-title: Adaptive Card controls
+title: Adaptive Card control
 description: Use Adaptive Cards embedded in forms in finance and operations apps
 author: jaredha
 ms.author: jaredha
