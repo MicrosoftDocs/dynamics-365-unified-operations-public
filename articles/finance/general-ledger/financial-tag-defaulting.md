@@ -38,7 +38,7 @@ At least one [Financial tags](financial-tag.md) must be set up in the company yo
 
 Before you create financial tags rules, note the following:
 - System rules exist to mimic the behavior already running in the system today. In a journal entry, tag header values are copied to the account tag field, and account tag values are copied to the offset account tag field by these system rules. You may enable or disable these as needed, but you can't remove them from the system or modify them in any way.
-- [Power Fx](https://learn.microsoft.com/en-us/power-platform/power-fx/overview) is the language used for defining and executing the financial tag rules. You may want to spend some time getting familiar with the [formulas](https://learn.microsoft.com/en-us/power-platform/power-fx/formula-reference-overview) available. Not all formulas are supported for Dynamics 365 Finance. Additional features have been added to the language to be aware of Dynamics 365 Finance and the tables and fields allowed for use with the rule definition.
+- [Power Fx](/power-platform/power-fx/overview) is the language used for defining and executing the financial tag rules. You may want to spend some time getting familiar with the [formulas](/power-platform/power-fx/formula-reference-overview) available. Not all formulas are supported for Dynamics 365 Finance. Additional features have been added to the language to be aware of Dynamics 365 Finance and the tables and fields allowed for use with the rule definition.
 - Power Fx knowledge isn't requried to create a rule, as the feature has a rule builder that allows you to select appropriate fields to generate the proper condition for your rule to be applied. 
 
 ### Create a financial tag rule
