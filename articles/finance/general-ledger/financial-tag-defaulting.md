@@ -48,7 +48,7 @@ Follow these steps to create a financial tag rule.
    - **Transaction level** - this refers to the location or level where financial tags are located. For example Header refers to the top level table that would have one set of financial tags for all lines that belong to that header. Account is special for journals as the general journal has financial tags for both the account entry and for the offset account.
    - **Target** - this refers to the exact tag field you wish to set.
 3. PowerFx formula - use this tab to enter a PowerFx formula directly to set the value you wish with any conditional logic desired.  The return from this function will be the value set on the "Target" financial tag.
-   - Please see the [additional information](financial-tag-rule-reference.md) about supported PowerFx functions and fields enabled for each document or Transaction entry point [here](financial-tag-rule-reference.md). 
+   - Please see the [additional information](financial-tag-rule-reference.md) about supported fields enabled for each document or Transaction entry point [here](financial-tag-rule-reference.md). 
 4. Conditions - use this tab to build a set of conditions and outcome that will populate the Target financial tag.
 5. Review the name, the Enabled status and the Overwrite existing value options.  
 6. Finally, click OK to save the new rule. 
