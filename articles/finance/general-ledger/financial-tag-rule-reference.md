@@ -36,9 +36,9 @@ ms.dyn365.ops.version: 10.0.42
 | Document | doc.Document | The Document field from the invoice tab of the journal line | LedgerJournalTrans.DocumentNum |
 | Financial Dimensions\* | doc.Dimensions.&lt;DimensionFields&gt; | The Dimension field has all of the available dimension fields that are associated with the account field entered when the account type is set to anything other than Ledger | Join to DimensionAttributeValueCombination to the proper field selected. |
 | Offset Account\* | doc.OffsetDimensions.&lt;DimensionFields&gt; | The offset account field has all of the available dimension fields\* that are associated with the offset account field entered when the offset account type is set to Ledger. | Join to DimensionAttributeValueCombination to the proper field selected. |
-|     | doc.PaymentReference | The journal line payment reference field. | LedgerJournalTrans. PaymReference |
-|     | doc.PostingProfile | The journal line posting profile field. | LedgerJournalTrans. PostingProfile |
-|     | doc.Project.Account<br><br>doc.Project.Group<br><br>doc.Project.Name | The project account ID, project account name, or the project group id field. Available when the account type is set to Customer. | Join to:<br><br>ProjTable.ProjID<br><br>ProjTable.ProjGroupID<br><br>ProjTable.Name |
-|     | doc.Reason<br><br>doc.ReasonComment | The reason ID and the reason comment values related to a journal line. | Join to ReasonTableRef.Reason and .ReasonComment |
-|     | doc.Vendor.Account<br><br>doc.Vendor.Group<br><br>doc.Vendor.Name | The vendor account ID, vendor account name, or the vendor group id field. Available when the account type is set to vendor. | Join to:  <br>VendTable.AccountNum<br><br>VendTable.VendGroup<br><br>\*VendGroup.Name<br><br>DirPartyTable.Name |
+| Payment reference | doc.PaymentReference | The journal line payment reference field. | LedgerJournalTrans. PaymReference |
+| Posting Profile | doc.PostingProfile | The journal line posting profile field. | LedgerJournalTrans. PostingProfile |
+| Project | doc.Project.Account<br><br>doc.Project.Group<br><br>doc.Project.Name | The project account ID, project account name, or the project group id field. Available when the account type is set to Customer. | Join to:<br><br>ProjTable.ProjID<br><br>ProjTable.ProjGroupID<br><br>ProjTable.Name |
+| Reason / Reason comment | doc.Reason<br><br>doc.ReasonComment | The reason ID and the reason comment values related to a journal line. | Join to ReasonTableRef.Reason and .ReasonComment |
+| Vendor | doc.Vendor.Account<br><br>doc.Vendor.Group<br><br>doc.Vendor.Name | The vendor account ID, vendor account name, or the vendor group id field. Available when the account type is set to vendor. | Join to:  <br>VendTable.AccountNum<br><br>VendTable.VendGroup<br><br>\*VendGroup.Name<br><br>DirPartyTable.Name |
 | Voucher number | doc.Voucher | The voucher field from the journal line. | LedgerJournalTrans.Voucher |
