@@ -28093,6 +28093,76 @@
       "source_path": "articles/supply-chain/pricing-management/vendor-list-price.md",
       "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/retail-sdk/retail-sdk-overview.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "articles/commerce/dev-itpro/retail-sdk/sdk-faq.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "articles/commerce/dev-itpro/retail-sdk/migrate-sdk.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },     
+    {
+      "source_path": "articles/commerce/dev-itpro/cloud-dev-box.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/retail-sdk/sdk-build-pipeline.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/retail-sdk/mpos-build-agent.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/pos-run-samples.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/ecommerce-platform-sdk.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/configure-online-store.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/configure-authentication-providers.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/retail-sdk/retail-sdk-packaging.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/pos-app-signing-certificate.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/hybridapp.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    }   
   ]
 }

@@ -4,10 +4,10 @@ description: This article describes POS modernization and usability improvements
 author: anush6121
 ms.author: anvenkat 
 ms.topic: how-to 
-ms.date: 07/16/2024
+ms.date: 10/31/2024
+ms.reviewer: v-chrgriffin
 ms.custom: 
   - bap-template
-ms.reviewer: v-chrgriffin
 ---
 
 # POS modernization and usability improvements
@@ -17,6 +17,19 @@ ms.reviewer: v-chrgriffin
 This article describes point of sale (POS) modernization and usability improvements in Microsoft Dynamics 365 Commerce Store Commerce.
 
 To improve POS usability and adapt to modern, intuitive workflows, numerous workflow improvements have been introduced.
+
+## Modern transaction grid in POS transaction view
+
+The **Enable Modern Transaction Grid in POS Transaction View** feature is available starting with the Commerce 10.0.42 release and includes refreshed transaction, numpad, customer card, and button grids. It also enables retailers to display product images in the cart view.
+
+To enable this feature in Commerce headquarters, follow these steps.
+
+1. Go to the **Feature management** workspace (**System administration \> Workspaces \> Feature management**).
+1. Search for the **Enable Modern Transaction Grid in POS Transaction View** feature, and then select it.
+1. In the right pane, select **Enable now**.
+1. Go to **POS visual profiles** (**Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> POS visual profiles**).
+1. For each visual profile, set the **Modern transaction grid** option to **Yes**. This setting allows you to roll out changes to specific registers as needed.
+1. Run the **Registers (1090)** job to implement the change in POS.
 
 ## Streamlined workflow for adding items to a transaction from the product page
 
