@@ -1315,6 +1315,8 @@ items:
                 href: ../fin-ops/data-entities/add-efficiency-in-quote-to-cash-enable.md
               - name: Enable and configure seamless sync with Dynamics 365 Sales (preview)
                 href: ../fin-ops/data-entities/add-efficiency-in-quote-to-cash-seamless-sync.md
+              - name: Display seamless sync information on custom forms in Dynamics 365 Sales (preview)
+                href: data-entities/dual-write/seamless-sync-info-on-custom-forms.md  
               - name: Enable and configure prospect integration in prospect-to-cash with Dynamics 365 Sales
                 href: ../fin-ops/data-entities/prospects-in-prospect-to-cash-enable.md                
               - name: Work with added efficiency in quote-to-cash with Dynamics 365 Sales
