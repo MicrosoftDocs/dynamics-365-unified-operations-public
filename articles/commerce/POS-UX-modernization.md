@@ -28,7 +28,7 @@ To enable this feature in Commerce headquarters, follow these steps.
 1. Search for the **Enable Modern Transaction Grid in POS Transaction View** feature, and then select it.
 1. In the right pane, select **Enable now**.
 1. Go to **POS visual profiles** (**Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> POS visual profiles**).
-1. For each visual profile, set the **Modern transaction grid** option to **Yes**. This allows you to roll out changes to specific registers as needed.
+1. For each visual profile, set the **Modern transaction grid** option to **Yes**. This setting allows you to roll out changes to specific registers as needed.
 1. Run the **Registers (1090)** job to implement the change in POS.
 
 ## Streamlined workflow for adding items to a transaction from the product page
