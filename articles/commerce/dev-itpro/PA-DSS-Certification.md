@@ -10,8 +10,7 @@ ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2016-01-01
-ms.custom: 
-  - bap-template
+
 ---
 
 # Payment Application Data Security Standards (PA-DSS) certification
