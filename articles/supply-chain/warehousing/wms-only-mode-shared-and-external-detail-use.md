@@ -16,8 +16,6 @@ ms.search.form: WHSSourceSystem, WHSEWManagementSystem,  WHSShipmentOrderIntegra
 
 This article explains how to use Warehouse only mode to perform day-to-day warehousing tasks.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
-
 ## Monitor the integration
 
 To monitor the integration between the external systems or legal entities with Microsoft Dynamics 365 Supply Chain Management, go to **Warehouse management** \> **Workspaces** \> **Warehouse integration monitoring**. From the **Warehouse integration monitoring** page, you can perform the following tasks:
