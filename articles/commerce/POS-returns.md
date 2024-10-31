@@ -1,17 +1,16 @@
 ---
-# required metadata
 title: Create returns in POS
 description: This article describes how to initiate returns for cash-and-carry transactions or customer orders in the Microsoft Dynamics 365 Commerce Point of Sale (POS) application.
 author: hhainesms
-ms.date: 10/20/2023
-ms.topic: article
+ms.date: 10/31/2024
+ms.topic: how-to
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
-ms.author: josaw
+ms.author: shajain
 ms.search.validFrom: 2020-02-20
-ms.dyn365.ops.version: Release 10.0.20
-
+ms.custom: 
+  - bap-template
 ---
 
 # Create returns in POS
@@ -169,27 +168,28 @@ To set up return locations, follow these steps.
 
 ## Known issues
 
-##### Issue description
-When performing a global return, the return transaction does not reflect previously returned quantities. For example:
-1. Perform a sale in store A of an item with 5 quantities.
-2. Perform a return on this sale in store A for 2 quantities.
-3. Pull the transactions to HQ.
-4. Try to do a return on the original sale from step 1 in store B. The POS will display all 5 quantities after entering the receipt number, instead of 3.
+### When you perform a global return, the return transaction doesn't reflect previously returned quantities
 
-This issue arises when multiple CSUs are in use. In this example, store A is in one CSU and store B is in another.
-Each CSU has its own database, so store A would not have information about transactions made in store B, and vice versa.
+ISSUE: When you perform a global return, the return transaction doesn't reflect previously returned quantities. 
 
-##### Mitigation steps
+For example, this issue can occur when you execute the following steps.
 
-The issue can be mitigated by performing the below steps:
+1. Perform a sale in store A of an item with a quantity of five (5).
+1. Perform a return on this sale in store A for a quantity of two (2).
+1. Pull the transactions to headquarters.
+1. Try to do a return on the original sale from step 1 in store B. After you enter the receipt number, the POS displays a quantity of five (5), instead of the expected quantity of three (3).
 
-1. Enable feature “Improved user experience for POS returns”.
-2. Run the “Update return quantities” job in HQ at high frequency.
-3. Run the distribution schedule job “1200” to update the stores at high frequency.
+This issue arises when multiple CSUs are in use. In this example, store A uses one CSU and store B uses another CSU. Each CSU has its own database, so store A doesn't have information about transactions made in store B, and store B doesn't have information about transactions made in store A.
 
-Steps #2 and #3 in particular are necessary to ensure that information from each CSU is frequently sent to HQ via RTS call.
+#### Mitigation steps
 
-By running the above 3 steps, the returned quantities will be synced between CSUs and all returns should reflect returned quantities from other stores. 
+To mitigate this issue, follow these steps.
+
+1. In Commerce headquarters, enable the **Improved user experience for POS returns** feature in the **Feature management** workspace (**System administration \> Workspaces \> Feature management**).
+2. Run the **Update return quantities** job at high frequency.
+3. Run the **Return quantities (1200)** distribution schedule job to update the stores at high frequency.
+
+When you execute these three steps, the returned quantities are synced between CSUs and all returns should reflect returned quantities from other stores. Steps 2 and 3 ensure that information from each CSU is frequently sent to headquarters via Real-time Service (RTS) calls.
 
 ## Additional resources
 
