@@ -15,8 +15,6 @@ ms.application-unique-name: msdyn_BusinessPerformanceAnalytics
 
 # Connect Business performance analytics data to Microsoft Fabric (preview)
 
-[This article is prerelease documentation and is subject to change.]
-
 Business performance analytics enables organizations to extend their existing data warehouse by using Microsoft Fabric shortcuts to connect the Business performance analytics dimensional data model to it.
 
 Business performance analytics uses Dataverse direct integration with Fabric and provides the following benefits:
