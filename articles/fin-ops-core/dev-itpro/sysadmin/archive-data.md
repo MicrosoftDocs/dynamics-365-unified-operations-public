@@ -1,12 +1,12 @@
 ---
 title: Archive data in Dynamics 365 finance and operations apps with Dataverse
 description: Learn about how to archive data in Microsoft Dynamics 365 finance and operations apps, including an overview on business application data lifecycles.
-author: pnghub
-ms.author: gned, amiyaaloke
+author: amiyaaloke
+ms.author: amiyaaloke
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.date: 5/31/2024
+ms.date: 10/31/2024
 ms.reviewer: twheeloc
 ---
 
