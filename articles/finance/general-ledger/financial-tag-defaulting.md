@@ -15,8 +15,8 @@ ms.dyn365.ops.version: 10.0.42
 
 # Financial tag rules
 
-Financial tag rules provide a powerful way to default or automatically populate values onto your [Financial tags](financial-tag.md).  This streamlines the process, ensuring consistency and efficiency in transaction tagging, which is essential for accurate financial tracking and reporting. This featue is available starting in Dynamics 365 Finance version 10.0.42 and in feature management.
-In each new release, more document entry points will be implemented. 
+Financial tag rules provide a powerful way to default or automatically populate values onto your [Financial tags](financial-tag.md).  This streamlines the process, ensuring consistency and efficiency in transaction tagging, which is essential for accurate financial tracking and reporting. This feature is available starting in Dynamics 365 Finance version 10.0.42 and in feature management.
+In each new release, more document entry points are implemented. 
 
 Currently, the following journals are supported for financial tag rules:
 
@@ -37,9 +37,9 @@ At least one [Financial tags](financial-tag.md) must be set up in the company yo
 ## Creating financial tag rules
 
 Before you create financial tags rules, note the following:
-- System rules exist to mimic the behavior already running in the system today. In a journal entry, tag header values are copied to the account tag field, and account tag values are copied to the offset account tag field by these system rules. You may enable or disable these as needed, but you can't remove them from the system or modify them in any way.
-- [Power Fx](/power-platform/power-fx/overview) is the language used for defining and executing the financial tag rules. You may want to spend some time getting familiar with the [formulas](/power-platform/power-fx/formula-reference-overview) available. Not all formulas are supported for Dynamics 365 Finance. Additional features have been added to the language to be aware of Dynamics 365 Finance and the tables and fields allowed for use with the rule definition.
-- Power Fx knowledge isn't requried to create a rule, as the feature has a rule builder that allows you to select appropriate fields to generate the proper condition for your rule to be applied. 
+- System rules exist to mimic the behavior already running in the system today. In a journal entry, tag header values are copied to the **Account tag** field, and account tag values are copied to the offset **Account tag** field by system rules. You may enable or disable these as needed, but you can't remove them from the system or modify them in any way.
+- [Power Fx](/power-platform/power-fx/overview) is the language used for defining and executing the financial tag rules. For more information about formulas, see [Formula reference overview](/power-platform/power-fx/formula-reference-overview). Not all formulas are supported in Dynamics 365 Finance. Additional features have been added to the language to be aware of Dynamics 365 Finance and the tables and fields allowed for use with the rule definition.
+- Power Fx knowledge isn't required to create a rule, the feature has a rule builder that allows you to select appropriate fields to generate the proper condition for your rule to be applied. 
 
 ### Create a financial tag rule
 
@@ -50,8 +50,8 @@ To create a financial tag rule, follow these steps:
    - **Transaction level** - this refers to the location or level where financial tags are located. For example, Header refers to the top level table that has one set of financial tags for all lines that belong to that header. Account is special for journals as the general journal has financial tags for both the account entry and for the offset account.
    - **Target** - this refers to the exact tag field you wish to set.
 3. On the **PowerFx formula** tab, enter a PowerFx formula to set the value with any conditional logic desired. The return from this function is the value set on the "Target" financial tag.
-   - For additional information, see [Financial tag rule reference](financial-tag-rule-reference.md) about supported fields enabled for each document or transaction entry point.  
-4. On the **Conditions** build a set of conditions and outcome that populates the target financial tag.
+   - For more information, see [Financial tag rule reference](financial-tag-rule-reference.md) about supported fields enabled for each document or transaction entry point.  
+4. On the **Conditions** tab, build a set of conditions and outcome that populates the target financial tag.
 5. Review the **Name**, the **Enabled status** and the **Overwrite existing value** options.  
 6. Click **OK** to save the new rule. 
 
