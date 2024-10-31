@@ -27,6 +27,7 @@ This section qill contain a table that lists the features that are included in t
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
+| User interface development | Add Adaptive Card controls to your forms in finance and operations apps | [Adaptive Card control](../../dev-itpro/user-interface/adaptive-cards.md) | Default |
 
 ## Feature enhancements included in this release
 
