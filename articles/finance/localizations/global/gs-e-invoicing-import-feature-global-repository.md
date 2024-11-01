@@ -4,7 +4,7 @@ description: Learn how to import Globalization features from the Dataverse repos
 author: ilikond
 ms.author: ikondratenko
 ms.topic: article
-ms.date: 01/29/2024
+ms.date: 11/01/2024
 ms.custom: 
 ms.reviewer: johnmichalak
 audience: Application User
@@ -21,6 +21,20 @@ ms.dyn365.ops.version: 10.0.39
 The Dataverse repository contains Electronic invoicing features that are shared with your configuration provider. All Electronic invoicing features that Microsoft provides are shared with all companies. You automatically have access to all the Electronic invoicing features that Microsoft releases and publishes to the Dataverse repository.
 
 To start to work with Electronic invoicing features that are shared with your configuration provider, import them into your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management environment from the Dataverse repository. Then review the feature details, such as the Electronic reporting (ER) configurations and processing pipelines.
+
+## Set up integration with Dataverse
+
+To use this functionality, you should have a Dataverse environment that's connected to your Dynamics 365 Finance environment. For more information, see the following articles:
+
+- [Enable Power Platform Integration](../../../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md)
+- [Connect finance and operations apps with a new Microsoft Dataverse instance](../../../../fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv.md)
+- [Connect finance and operations apps with an existing Microsoft Dataverse instance](../../../../fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-existing-dv.md)
+
+You should also add a security role to access tables in Dataverse by following these steps:
+
+1. Create a new security role as described in [Create or edit a security role](/power-platform/admin/create-edit-security-role).
+2. In that security role add **Create, Read, Write, Delete, Append, Append to, Assign, Share** permissions for **Organization** to the following tables: **Electronic Reporting Configuration File, Electronic Reporting Configurations Index File, Globalization Feature File, and Globalization Features Index File**. 
+3. Assign the created security role to users as described in [Assign security roles](/power-platform/admin/assign-security-roles).
 
 ## Import a feature from the Dataverse repository
 
