@@ -1,8 +1,8 @@
 ---
 title: Reuse product configurations
 description: Learn about reusing product configurations, including outlines on requirements for reusing configurations and resetting configuration reuse.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac

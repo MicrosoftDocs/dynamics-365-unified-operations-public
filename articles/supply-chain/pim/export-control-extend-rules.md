@@ -1,8 +1,8 @@
 ---
 title: Extend export control rules functionality
 description: Learn about what's useful for developers who are extending rules functionality for implementing export controls with an outline on high-level flow.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: overview
 ms.date: 08/29/2023
 ms.custom: bap-template

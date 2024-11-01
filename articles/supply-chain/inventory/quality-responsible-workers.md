@@ -1,8 +1,8 @@
 ---
 title: Workers responsible for approving nonconformances
 description: Learn how to configure workers that are responsible for approving nonconformances with an outline on enabling a user for nonconformance processing.
-author: yufei-huang
-ms.author: yufeihuang
+author: johanhoffmann
+ms.author: johanho
 ms.topic: article
 ms.date: 03/23/2021
 ms.reviewer: kamaybac

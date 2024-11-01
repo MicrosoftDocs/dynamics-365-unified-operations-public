@@ -1,8 +1,8 @@
 ---
 title: Vendor collaboration mobile workspace
 description: Learn about the Vendor collaboration mobile workspace, which helps your vendors stay up to date about the purchase orders that have been sent to them for approval.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: article
 ms.date: 05/24/2022
 ms.reviewer: kamaybac

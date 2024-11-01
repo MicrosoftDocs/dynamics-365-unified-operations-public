@@ -1,8 +1,8 @@
 ---
 title: Onboard vendors
 description: Learn about the process for onboarding new vendors. It explains the actions that are required by various roles during this process.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: VendProspectiveVendorRegistrationRequests, SysUserRequestListPage, VendRequestListPage, VendRequestCompanyProfile
 ms.topic: how-to

@@ -1,8 +1,8 @@
 ---
 title: Diagnostic types for nonconformances
 description: Learn how to use and create diagnostic types that can be used with nonconformances, including examples of diagnostic types.
-author: yufei-huang
-ms.author: yufeihuang
+author: johanhoffmann
+ms.author: johanho
 ms.topic: article
 ms.date: 03/23/2021
 ms.reviewer: kamaybac

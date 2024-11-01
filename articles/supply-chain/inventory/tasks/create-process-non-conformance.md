@@ -1,8 +1,8 @@
 ---
 title: Create and process nonconformances
 description: Learn how to perform nonconformance management based on an existing quality order, including a step-by-step process for creating a nonconformance.
-author: yufei-huang
-ms.author: yufeihuang
+author: johanhoffmann
+ms.author: johanho
 ms.topic: how-to
 ms.date: 03/23/2021
 ms.custom:

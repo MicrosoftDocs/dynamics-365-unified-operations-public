@@ -1,8 +1,8 @@
 ---
 title: Set up consignment
 description: Learn how to use the inbound consignment inventory processes, including an overview and step-by-step process of the consignment process.
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac

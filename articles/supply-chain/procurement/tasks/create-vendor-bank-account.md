@@ -1,8 +1,8 @@
 --- 
 title: Create a vendor bank account
 description: Learn how to create a bank account for a vendor, including a step-by-step process for procedures in the USMF demo data company. 
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: how-to
 ms.date: 07/01/2019
 ms.custom:

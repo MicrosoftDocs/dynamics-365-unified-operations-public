@@ -1,8 +1,8 @@
 ---
 title: Quality check
 description: Learn about the Quality check feature. This feature lets warehouse workers do quick spot checks for quality while they receive items to the inbound dock area.
-author: Mirzaab
-ms.author: mirzaab
+author: johanhoffmann
+ms.author: johanho
 ms.topic: article
 ms.date: 07/16/2020
 ms.custom:

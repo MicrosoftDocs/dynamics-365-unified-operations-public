@@ -1,8 +1,8 @@
 ---
 title: Log and view successful API posts
 description: Learn how to set up and use the inventory log history feature for Inventory Visibility. This feature creates a log of successfully updated inventory API posts.
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: how-to
 ms.date: 11/20/2023
 ms.custom: bap-template

@@ -1,8 +1,8 @@
 ---
 title: Quality management for warehouse processes
 description: Learn about the Quality management for warehouse processes feature, including key benefits and an outline on enabling a warehouse for quality management
-author: yufei-huang
-ms.author: yufeihuang
+author: johanhoffmann
+ms.author: johanho
 ms.topic: article
 ms.date: 03/23/2021
 ms.custom:

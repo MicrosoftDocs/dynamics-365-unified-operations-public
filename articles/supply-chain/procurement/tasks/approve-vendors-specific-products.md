@@ -1,8 +1,8 @@
 --- 
 title: Approve vendors for specific products
 description: Learn how to approve vendors for specific products, including a step-by-step process for the task using the USMF demo data company.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: how-to
 ms.date: 07/22/2019
 ms.custom:

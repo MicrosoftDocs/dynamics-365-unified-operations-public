@@ -1,8 +1,8 @@
 ---
 title: Record the receipt of goods on the purchase order
 description: Learn how to record receipt of goods directly on a purchase order, including a step-by-step process for preparing new purchase orders. 
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, InventItemIdLookupPurchase, PurchEditLines
 ms.topic: how-to

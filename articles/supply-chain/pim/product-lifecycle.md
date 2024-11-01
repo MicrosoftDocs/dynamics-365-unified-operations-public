@@ -1,8 +1,8 @@
 ---
 title: Product lifecycle state overview
 description: Learn about product lifecycle states, which document the lifecycle state of a released product or product variant with an outline on creating new lifecycle states.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: overview
 ms.date: 01/05/2023
 ms.custom: bap-template

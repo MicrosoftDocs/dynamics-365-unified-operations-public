@@ -1,8 +1,8 @@
 --- 
 title: Transfer data for product models
 description: Learn about exporting data for a product configuration model requires that you have at least one product model available with a step-by-step process. 
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 08/29/2018
 ms.custom:

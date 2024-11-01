@@ -1,8 +1,8 @@
 ---
 title: Outbound process overview
 description: Access an overview of the outbound process in Inventory management, including outlines about picking route status for sales and transfer orders and output orders.
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: overview
 ms.date: 07/25/2019
 ms.custom:

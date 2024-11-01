@@ -1,8 +1,8 @@
 ---
 title: Purchasing cXML Enhancements
 description: The Purchasing cXML Enhancements feature builds on the existing external catalog functionality, PunchOut, that is used for purchase requisitions.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: article
 ms.date: 08/03/2020
 ms.custom:

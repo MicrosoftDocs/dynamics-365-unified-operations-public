@@ -1,8 +1,8 @@
 ---
 title: Inventory Visibility on-hand change schedules and ATP
 description: Learn how to schedule future on-hand changes and calculate available-to-promise (ATP) quantities, including an outline on calculated measures for ATP quantities.
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: how-to
 ms.date: 11/30/2023
 ms.custom: bap-template

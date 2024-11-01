@@ -1,8 +1,8 @@
 --- 
 title: Create batch attributes for a product
 description: Learn how to create a batch attribute, assign default value ranges, and include the attribute in a group, including a step-by-step process. 
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 11/14/2016
 ms.custom:   

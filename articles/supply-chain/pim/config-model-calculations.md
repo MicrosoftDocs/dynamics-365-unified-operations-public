@@ -1,8 +1,8 @@
 ---
 title: Product configuration model calculations
 description: Learn how to create calculations for attributes in a product configuration model, including prerequisites and a step-by-step process.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
 ms.date: 03/18/2021
 ms.reviewer: kamaybac

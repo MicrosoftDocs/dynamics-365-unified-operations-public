@@ -1,8 +1,8 @@
 ---
 title: Attribute-based sales prices for constraint-based product configuration
 description: Learn how to build sales price models with sales prices based on components and attributes rather than on the physical bill of material and the route.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
 ms.date: 10/2/2020
 ms.custom:

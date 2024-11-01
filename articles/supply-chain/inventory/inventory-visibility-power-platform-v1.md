@@ -1,8 +1,8 @@
 ---
 title: Use the Inventory Visibility app UI version 1
 description: Learn how to use the Inventory Visibility app when UI version 1 is active with a step-by-step process for authenticating with the Inventory Visibility service.
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: article
 ms.date: 09/15/2022
 ms.reviewer: kamaybac

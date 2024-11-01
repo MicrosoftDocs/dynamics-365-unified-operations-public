@@ -1,8 +1,8 @@
 --- 
 title: Create a purchase agreement
 description: Learn how to create a purchase agreement, which is typically done by purchasing managers, including a step-by-step process.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: how-to
 ms.date: 07/18/2019
 ms.custom:
