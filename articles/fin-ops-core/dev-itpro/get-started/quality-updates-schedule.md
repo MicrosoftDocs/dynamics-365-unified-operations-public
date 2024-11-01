@@ -127,8 +127,8 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 6 | November 19 to November 22, 2024 | December 14 to December 15, 2024 |
 
 > [!IMPORTANT]
-> 1. 10.0.39 Release-8 has been cancelled due to the upcoming holiday deployments freeze and microsoft will not push the updates.
-> 2. This PQU release can be applied to your environments by applying manually. 
+> 1. 10.0.39 Release-8 have been cancelled due to the forthcoming holiday freeze.
+> 2. This PQU build is made available in the LCS --> Shared Asset Library to self-deploy. 
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.40 Release-4 train schedule
 
