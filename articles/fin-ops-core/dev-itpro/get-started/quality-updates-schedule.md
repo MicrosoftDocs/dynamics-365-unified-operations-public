@@ -109,7 +109,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | October 21 to October 24, 2024 | November 2 to November 3, 2024 |
 | Station 6 | October 22 to October 25, 2024 | November 2 to November 3, 2024 |
 
-### <a name="schedule"></a>Proactive quality update upcoming 10.0.39 Release-8 train schedule
+### <a name="schedule"></a> [Cancelled] Proactive quality update upcoming 10.0.39 Release-8 train schedule
 
 **App version: 10.0.1860.207**
 
@@ -146,6 +146,18 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 4 | October 21 to October 24, 2024 | November 2 to November 3, 2024 |
 | Station 5 | October 28 to October 31, 2024 | November 9 to November 10, 2024 |
 | Station 6 | October 29 to November 1, 2024 | November 9 to November 10, 2024 |
+
+### <a name="schedule"></a> [Cancelled] Proactive quality update upcoming 10.0.40 Release-5 train schedule
+
+**App version: 10.0.1935.158**
+
+**Platform version: 7.0.7279.164**
+
+**Unified Environment Provisioning Application Version: 10.0.40.7**
+
+> [!IMPORTANT]
+> 1. 10.0.40 Release-5 have been cancelled due to the forthcoming holiday season.
+> 2. This PQU build is made available in the LCS --> Shared Asset Library to self-deploy. 
 
 ### <a name="schedule"></a>[NEW] Proactive quality update upcoming 10.0.41 Release-1 train schedule
 
