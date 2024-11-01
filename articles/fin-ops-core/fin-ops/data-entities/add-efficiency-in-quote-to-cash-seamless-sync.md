@@ -56,7 +56,7 @@ We recommend that you set both auto-sync options to *Yes*. This configuration pr
 You might choose to set one or both options to *No* if you're using custom pricing logic in Sales, or if your front-end staff who work in Sales work only with line unit prices, not with discounts, charges, sales taxes, totals, and subtotals.
 
 > [!IMPORTANT]
-> When you enable seamless sync in Supply Chain Management, the system automatically makes the required customizations that make it possible to see seamless sync information on the standard Order, Quote, Order Product and Quote Products forms in Dynamics 365 Sales. However, if your company uses custom versions of these forms (which is common), then a developer must modify your custom forms to enable seamless sync information to display correctly on your forms as described in [Display seamless sync information on custom forms in Dynamics 365 Sales](../../dev-itpro/data-entities/dual-write/seamless-sync-info-on-custom-forms.md).
+> When you install the supply chain solution for Dynamics 365 Sales, it makes several modifications to the standard forms in Sales, including modifications that add seamless sync information to the standard Order, Quote, Order Product, and Quote Products forms in Sales. However, if your company uses custom forms for one or more of these entities (which is common), then you must modify your custom forms to enable seamless sync information to display correctly on them. Learn more in [Display seamless sync information on custom forms in Dynamics 365 Sales](../../dev-itpro/data-entities/dual-write/seamless-sync-info-on-custom-forms.md).
 
 ## Nonzero unit prices entered in Sales
 
