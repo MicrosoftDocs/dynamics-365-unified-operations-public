@@ -1,8 +1,8 @@
 ---
 title: Manage changes in formulas and their ingredients
 description: Learn how to do formula management and manage changes to process manufacturing master data, including an outline on toggling this feature.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
 ms.date: 05/19/2021
 ms.reviewer: kamaybac
