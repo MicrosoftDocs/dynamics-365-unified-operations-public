@@ -133,3 +133,9 @@ To use matching rules to automatically generate vendor payments without settling
 11. Select **Run matching rules**.
 12. Select either a matching rule or a matching rule set that contains the matching rule.
 13. Select **OK** to run the automatic matching.
+
+## Enable default descriptions for advanced bank reconciliation
+
+If the **Enable default descriptions for advanced bank reconciliation** feature is enabled, default descriptions for automatic payment journal posting and voucher posting are available in advanced bank reconciliation. Default descriptions for bank reconciliation postings can be configured at **General Ledger** \> **Journal setup**  \> **Default descrptions** or **Organization administration** \> **Default descrptions**. Users can see description type **Bank - reconciliation worksheet** in the list and follow steps described in [Set up default descriptions for automatic posting](finance/general-ledger/set-up-default-descriptions-for-automatic-posting.md) to configure default descriptions for automatic postings during bank reconciliation process. For **Bank - reconciliation worksheet** description, references to **Reconciliation matching rules** and **Bank statement report entry** can be added in the **Default descriptions** parameters tab and included in the description text.
+
+![image](https://github.com/user-attachments/assets/a703067e-8ce5-4fba-a032-336cce84c496)
