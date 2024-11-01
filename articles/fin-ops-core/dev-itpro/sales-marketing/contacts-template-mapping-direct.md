@@ -1,8 +1,8 @@
 ---
 title: Synchronize contacts directly from Sales to contacts or customers in Supply Chain Management
 description: Learn aboutthe templates and underlying tasks that are used to synchronize Contact (Contacts) and Contact (Customers) entities.
-author: Henrikan
-ms.author: henrikan
+author: adpattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 06/10/2024
 ms.custom: 

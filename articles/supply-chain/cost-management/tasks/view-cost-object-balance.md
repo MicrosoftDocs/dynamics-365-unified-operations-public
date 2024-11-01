@@ -1,8 +1,8 @@
 --- 
 title: View cost object balance
 description: Learn how to view the cost object balance, including a step-by-step process using the USMF demo data company intended for the cost controller.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: how-to
 ms.date: 08/29/2018
 ms.custom:

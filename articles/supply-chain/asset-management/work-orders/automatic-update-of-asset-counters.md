@@ -1,8 +1,8 @@
 ---
 title: Automatic update of asset counters
 description: Learn about the automatic update of asset counters in Asset Management, including a step-by-step process on updating the related asset counters.
-author: johanhoffmann
-ms.author: johanho
+author: jodahl
+ms.author: jodahl
 ms.topic: article
 ms.date: 10/15/2019
 ms.custom:

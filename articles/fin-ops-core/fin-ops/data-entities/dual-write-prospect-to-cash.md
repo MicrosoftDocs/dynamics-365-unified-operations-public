@@ -1,8 +1,8 @@
 ---
 title: Prospect-to-cash in dual-write
 description: Learn about prospect-to-cash in dual-write, including outlines on prerequisites, mapping setup, and sales quotations.
-author: henrikan
-ms.author: henrikan
+author: adpattanaik
+ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to

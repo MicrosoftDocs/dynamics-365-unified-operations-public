@@ -1,8 +1,8 @@
 ---
 title: Asset BOMs
 description: Learn about asset bills of materials (BOMs) in Asset Management, including outlines on setting up spare parts item groups and viewing and updating asset BOMs.
-author: johanhoffmann
-ms.author: johanho
+author: jodahl
+ms.author: jodahl
 ms.topic: article
 ms.date: 06/26/2019
 ms.reviewer: kamaybac

@@ -1,8 +1,8 @@
 ---
 title: Inventory value report examples and logic
 description: Acess examples of results that are presented on each type of inventory value report. Inventory value reports provide details about your inventory amounts.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
 ms.date: 10/19/2021
 ms.reviewer: kamaybac

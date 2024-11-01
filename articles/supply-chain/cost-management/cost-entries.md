@@ -1,8 +1,8 @@
 ---
 title: Cost entries
 description: Learn about cost entries and when they are created. A cost entry is a record that registers the quantity and cost of a given event.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac

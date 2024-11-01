@@ -1,8 +1,8 @@
 ---
 title: Production posting
 description: Learn about different types of postings in the production process, including outlines on material consumption and time consumption.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
