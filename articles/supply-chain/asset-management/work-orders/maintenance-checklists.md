@@ -1,8 +1,8 @@
 ---
 title: Maintenance checklists
 description: Learn about maintenance checklists in Asset Management, which are set up on maintenance job types, including a process for filling in maintenance checklists.
-author: johanhoffmann
-ms.author: johanho
+author: jodahl
+ms.author: jodahl
 ms.topic: article
 ms.date: 10/15/2019
 ms.custom: 

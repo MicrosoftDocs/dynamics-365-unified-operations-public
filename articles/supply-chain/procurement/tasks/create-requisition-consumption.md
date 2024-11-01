@@ -1,8 +1,8 @@
 --- 
 title: Create a requisition for consumption
 description: Learn about the process of creating a requisition for consumption, including a step-by-step process using the USMF demo data company. 
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: how-to
 ms.date: 07/09/2019
 ms.custom:

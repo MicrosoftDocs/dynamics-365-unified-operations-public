@@ -1,8 +1,8 @@
 ---
 title: Use the Asset management mobile workspace
 description: Learn about the Asset management mobile workspace, including an overview, prerequisites, and step-by-step process for signing into the mobile app.
-author: johanhoffmann
-ms.author: johanho
+author: jodahl
+ms.author: jodahl
 ms.topic: article 
 ms.date: 05/24/2022
 ms.custom:

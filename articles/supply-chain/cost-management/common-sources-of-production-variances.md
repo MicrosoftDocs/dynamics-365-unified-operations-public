@@ -1,8 +1,8 @@
 ---
 title: Common sources of production variances
 description: Learn about various typical sources of each type of production variance, including a list of typical sources of lot size variances. 
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac

@@ -1,8 +1,8 @@
 ---
 title: Frequently asked questions about sales orders 
 description: Access answers to frequently asked questions that come up when working with sales orders in Dynamics 365 Supply Chain Management.
-author: Henrikan
-ms.author: henrikan
+author: adpattanaik
+ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: SalesTable, SalesTableListPage, SalesTableListPage_SalesCancelOrder
 ms.topic: faq

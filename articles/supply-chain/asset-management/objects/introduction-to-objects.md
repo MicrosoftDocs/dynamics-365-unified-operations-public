@@ -1,8 +1,8 @@
 ---
 title: Introduction to assets
 description: Access an overview of assets in Asset Management, including a table that defines various button names and an outline on the All assets list page.
-author: johanhoffmann
-ms.author: johanho
+author: jodahl
+ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form: EntAssetTimeline, EntAssetObjectTableLookup, EntAssetObjectTableParent, EntAssetObjectOverview, EntAssetObjectImage, EntAssetObjectTable, EntAssetLifecycleStateLog, EntAssetObjectWorkOrderActive, EntAssetObjectAttribute
 ms.topic: overview

@@ -1,8 +1,8 @@
 ---
 title: Intercompany parameters
 description: Learn about intercompany parameters, including examples involving two-level intercompany chains and three-level intercompany chains.
-author: Henrikan
-ms.author: henrikan
+author: adpattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 09/01/2021
 ms.reviewer: kamaybac

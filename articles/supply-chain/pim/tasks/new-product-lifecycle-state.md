@@ -1,8 +1,8 @@
 --- 
 title: Create a new product lifecycle state
 description: Learn how to create a new product lifecycle state, which documents the lifecycle state of a release product, including a step-by-step process. 
-author: t-benebo 
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 12/05/2017
 ms.custom:

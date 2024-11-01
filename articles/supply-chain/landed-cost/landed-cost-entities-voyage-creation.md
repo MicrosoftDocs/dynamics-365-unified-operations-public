@@ -1,8 +1,8 @@
 ---
 title: Voyage creation entities
 description: Learn about voyage creation data entities, which group the data entities that are required to create a working voyage with a table providing mappings for names.
-author: yufei-huang
-ms.author: yufeihuang
+author: lisascholz
+ms.author: lisascholz
 ms.topic: article
 ms.date: 05/27/2022
 ms.reviewer: kamaybac

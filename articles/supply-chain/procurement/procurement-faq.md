@@ -1,8 +1,8 @@
 ---
 title: Procurement FAQ
 description: Access answers to frequently asked questions (FAQs) about the procurement functionality of Supply Chain Management, including questions about describing issues.
-author: Henrikan
-ms.author: yanansong
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: article
 ms.date: 05/31/2021
 ms.reviewer: kamaybac

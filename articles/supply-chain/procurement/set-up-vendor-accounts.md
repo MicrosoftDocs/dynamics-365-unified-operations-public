@@ -1,8 +1,8 @@
 ---
 title: Set up vendor accounts
 description: Learn about the types of information that you must specify when you create a new vendor account, including an outline on vendor account numbers.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: how-to
 ms.date: 06/07/2024
 ms.custom: 

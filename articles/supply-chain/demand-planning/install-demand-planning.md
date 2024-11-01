@@ -1,8 +1,8 @@
 ---
 title: Install, enable, and set up Demand planning
 description: Learn how to install, enable, and set up Demand planning in Microsoft Dynamics 365 Supply Chain Management, including prerequisites.
-author: t-benebo
-ms.author: benebotg
+author: aevengir
+ms.author: aevengir
 ms.topic: how-to
 ms.date: 02/24/2024
 ms.custom: bap-template

@@ -1,8 +1,8 @@
 ---
 title: Calculations for product configuration models FAQ
 description: Learn about calculations for product configuration models and explains how to use calculations together with constraints.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
 ms.date: 11/03/2017
 ms.reviewer: kamaybac

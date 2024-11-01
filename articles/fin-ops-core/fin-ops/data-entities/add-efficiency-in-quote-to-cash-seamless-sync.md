@@ -1,8 +1,8 @@
 ---
 title: Enable and configure seamless sync with Dynamics 365 Sales (preview)
 description: Learn how to enable, configure, and use seamless sync when Microsoft Dynamics 365 Sales is integrated with the pricing engine in Dynamics 365 Supply Chain Management. 
-author: henrikan
-ms.author: Henrikan
+author: adpattanaik
+ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: CustParameters
 ms.topic: how-to
@@ -54,6 +54,9 @@ To turn on and configure seamless sync, follow these steps.
 We recommend that you set both auto-sync options to *Yes*. This configuration provides the best experience to users who work on sales orders and sales quotations in Sales. It ensures that line monetary data, subtotals, and totals are updated in both systems whenever a user changes a relevant value (such as a line quantity) in Sales. If you set these options to *No*, users must manually select **Price quote** and/or **Price order** after they create or edit orders or quotations in Sales to trigger the calculation and synchronization.
 
 You might choose to set one or both options to *No* if you're using custom pricing logic in Sales, or if your front-end staff who work in Sales work only with line unit prices, not with discounts, charges, sales taxes, totals, and subtotals.
+
+> [!IMPORTANT]
+> When you install the supply chain solution for Dynamics 365 Sales, it makes several modifications to the standard forms in Sales, including modifications that add seamless sync information to the standard Order, Quote, Order Product, and Quote Products forms in Sales. However, if your company uses custom forms for one or more of these entities (which is common), then you must modify your custom forms to enable seamless sync information to display correctly on them. Learn more in [Display seamless sync information on custom forms in Dynamics 365 Sales](../../dev-itpro/data-entities/dual-write/seamless-sync-info-on-custom-forms.md).
 
 ## Nonzero unit prices entered in Sales
 
@@ -170,3 +173,4 @@ To have the line discounts, subtotals, and totals calculated in Supply Chain Man
 The limitations that are described in [Sync on-demand with the Supply Chain Management pricing engine](pricing-engine.md) still apply when seamless sync is used.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

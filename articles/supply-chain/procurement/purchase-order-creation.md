@@ -1,8 +1,8 @@
 ---
 title: Create purchase orders
 description: Learn about the process and options when you manually create a purchase order, including an outline on creating a purchase order header.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart
 ms.topic: how-to

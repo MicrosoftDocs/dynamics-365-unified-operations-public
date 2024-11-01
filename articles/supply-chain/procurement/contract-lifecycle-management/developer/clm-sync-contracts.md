@@ -1,8 +1,8 @@
 ---
 title: Synchronize contracts (preview)
 description: Learn about the scenarios, data entities, and integration methods that are available for the synchronization of contracts and related purchase agreements from an external contract lifecycle management (CLM) system to Microsoft Dynamics 365 Supply Chain Management.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to

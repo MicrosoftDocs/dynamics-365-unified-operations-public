@@ -1,8 +1,8 @@
 ---
 title: Register consumption
 description: Learn how to register consumption in Asset Management, including a step-by-step process for splitting hours on work orders with several work order jobs.
-author: johanhoffmann
-ms.author: johanho
+author: jodahl
+ms.author: jodahl
 ms.topic: article
 ms.date: 08/21/2019
 ms.custom:

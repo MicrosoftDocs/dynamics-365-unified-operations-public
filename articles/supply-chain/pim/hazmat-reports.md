@@ -1,8 +1,8 @@
 ---
 title: Hazardous materials inquiries and reports
 description: Learn how to work with the various reports that are related to hazardous materials, including an outline and process on setting up hazardous materials reporting.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
 ms.date: 06/10/2020
 ms.custom:

@@ -1,8 +1,8 @@
 ---
 title: Set up parameters to post an intercompany order
 description: Learn how to set up parameters to post an intercompany order, including a step-by-step process for setting up parameters.
-author: Henrikan
-ms.author: henrikan
+author: adpattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 09/01/2021
 ms.reviewer: kamaybac

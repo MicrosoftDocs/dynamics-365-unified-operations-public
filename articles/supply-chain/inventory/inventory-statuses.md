@@ -1,8 +1,8 @@
 ---
 title: Inventory statuses
 description: Learn how you can use inventory statuses to categorize and keep track of inventory with an outline on setting up and using inventory statuses.
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: how-to
 ms.date: 05/27/2024
 ms.custom:

@@ -1,8 +1,8 @@
 ---
 title: Create a purchase return order
 description: Learn how to create a purchase return order by using the Credit note action to copy lines from a vendor invoice document to a new PO. 
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, PurchCopying, InventMarking, PurchEditLines 
 ms.topic: how-to

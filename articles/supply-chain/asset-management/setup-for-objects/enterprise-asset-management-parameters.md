@@ -1,8 +1,8 @@
 ---
 title: Asset Management parameters
 description: Learn about Asset Management, general parameters relating to assets, work orders, and work order scheduling, including an outline on the Assets tab.
-author: johanhoffmann
-ms.author: johanho
+author: jodahl
+ms.author: jodahl
 ms.topic: article
 ms.date: 02/18/2020
 ms.reviewer: kamaybac

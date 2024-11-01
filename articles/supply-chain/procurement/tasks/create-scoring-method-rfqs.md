@@ -1,8 +1,8 @@
 --- 
 title: Create a scoring method for RFQs
 description: Learn how to create a scoring method for RFQs, including a step-by-step process for tasks using the USMF demo data company.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: how-to
 ms.date: 08/29/2018
 ms.custom:

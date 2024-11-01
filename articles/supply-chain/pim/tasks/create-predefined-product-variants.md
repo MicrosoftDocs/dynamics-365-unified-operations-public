@@ -1,8 +1,8 @@
 --- 
 title: Create predefined product variants
 description: Learn how to create predefined product variants for a product master, how to work with improved variant suggestions, and assign item sales tax groups.
-author: t-benebo 
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 08/09/2022
 ms.custom:

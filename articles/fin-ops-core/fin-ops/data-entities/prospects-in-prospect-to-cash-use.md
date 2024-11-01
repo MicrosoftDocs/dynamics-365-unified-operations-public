@@ -1,8 +1,8 @@
 ---
 title: Work with prospects in prospect-to-cash with Dynamics 365 Sales
 description: This article provides a conceptual overview about how the prospect-to-cash system works and how it can help improve your business processes.
-author: henrikan
-ms.author: henrikan
+author: adpattanaik
+ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to

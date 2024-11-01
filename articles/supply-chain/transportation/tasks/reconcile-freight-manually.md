@@ -1,8 +1,8 @@
 --- 
 title: Reconcile freight manually
 description: Learn how to reconcile freight manually, including step-by-step processes for selecting a load to reconcile and creating carrier invoices. 
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz
+ms.author: lisascholz
 ms.topic: how-to
 ms.date: 08/29/2018
 ms.custom:

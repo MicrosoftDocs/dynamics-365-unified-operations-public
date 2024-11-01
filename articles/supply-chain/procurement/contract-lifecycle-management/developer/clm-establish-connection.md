@@ -1,8 +1,8 @@
 ---
 title: Establish a connection from a CLM system to Supply Chain Management (preview)
 description: Learn how a third-party contract lifecycle management (CLM) provider can simplify the process of establishing connections by efficiently configuring contract management parameters and initiating the connection.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to

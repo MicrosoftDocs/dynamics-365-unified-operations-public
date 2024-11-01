@@ -1,8 +1,8 @@
 ---
 title: Running average cost price
 description: The inventory close process settles issue transactions to receipt transactions, based on the inventory valuation method that is selected.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: how-to
 ms.date: 05/27/2024
 ms.custom:

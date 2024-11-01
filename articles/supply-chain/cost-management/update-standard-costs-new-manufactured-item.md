@@ -1,8 +1,8 @@
 ---
 title: Update standard costs for a new manufactured item
 description: Learn about updating standard costs for a new manufactured item, including a list of guidelines for defining costing versions.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.date: 06/20/2017
 ms.topic: article
 ms.reviewer: kamaybac

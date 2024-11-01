@@ -1,8 +1,8 @@
 ---
 title: Contract lifecycle management integration overview (preview)
 description: Get an overview of contract lifecycle management (CLM) integration.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: overview

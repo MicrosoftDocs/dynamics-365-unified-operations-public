@@ -1,8 +1,8 @@
 ---
 title: Manage units of measure
 description: Learn how to define a unit of measure, provide translations for the unit and its description, and define conversion rules for related units.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 12/08/2022
 ms.custom: bap-template

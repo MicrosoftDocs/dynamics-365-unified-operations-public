@@ -1,8 +1,8 @@
 ---
 title: Create a new trade agreement
 description: Learn how to create a trade agreement where you register a new product sales price that you've agreed with a specific customer.
-author: Henrikan
-ms.author: henrikan
+author: adpattanaik
+ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: TradeNonStockedConversion, TradeNonStockedConversionChangeWizard, TradeNonStockedConversionCheckWorksheet, TradeNonStockedConversionWizard, TradeNonStockedRegister
 ms.topic: how-to
