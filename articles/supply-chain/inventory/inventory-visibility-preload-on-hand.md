@@ -1,8 +1,8 @@
 ---
 title: Preload a streamlined on-hand query
 description: Learn how to preload a streamlined on-hand query, so that you can view preloaded on-hand query results according to their group-by configuration.
-author: Weijiesa
-ms.author: weijiesa
+author: yufei-huang
+ms.author: yufeihuang
 ms.topic: how-to
 ms.date: 12/08/2023
 ms.custom: bap-template

@@ -1,8 +1,8 @@
 ---
 title: Inventory Visibility inventory allocation
 description: Learn how to set up and use the inventory allocation feature, which lets you set aside dedicated inventory to fulfill your most profitable channels or customers.
-author: Weijiesa
-ms.author: weijiesa
+author: yufei-huang
+ms.author: yufeihuang
 ms.topic: how-to
 ms.date: 06/03/2024
 ms.custom: 

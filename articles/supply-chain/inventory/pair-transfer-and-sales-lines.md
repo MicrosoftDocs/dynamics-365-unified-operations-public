@@ -1,7 +1,7 @@
 ---
 title: Link transfer order lines with sales order lines (preview)
 description: Learn how to link transfer order lines to the sales order lines that they were created from. You can also add new transfer order lines to open transfer orders if they are for the same warehouses.
-author: yufeihuang
+author: Weijiesa
 ms.author: weijiesa
 ms.reviewer: kamaybac
 ms.search.form: SalesTable, InventTransferOrderSalesLineSupplyForm, InventTransferOrders, InventTrans

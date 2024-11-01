@@ -1,8 +1,8 @@
 ---
 title: Shipping containers
 description: Learn how to set up shipping containers for the Landed cost module, including an outline on setting up container types and a table defining various fields.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz
+ms.author: lisascholz
 ms.reviewer: kamaybac
 ms.search.form: ITMContainerTypeTable, ITMContainerTable, ITMContainerUnitTypeTable, ITMRefrigerationTypeTable, ITMContainersListPage, ITMContainers
 ms.topic: how-to

@@ -1,8 +1,8 @@
 ---
 title: Goods-in-transit processing
 description: When an order or voyage is set up to use goods-in-transit processing, goods can be invoiced before they have been received in the warehouse for consumption.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz
+ms.author: lisascholz
 ms.topic: how-to
 ms.date: 05/22/2024
 ms.custom: 

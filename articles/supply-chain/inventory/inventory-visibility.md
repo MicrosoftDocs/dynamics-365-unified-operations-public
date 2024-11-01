@@ -1,8 +1,8 @@
 ---
 title: Inventory Visibility Add-in overview
 description: Learn about what Inventory Visibility is and describes its features, including outlines on extensibility, scalability, and feature highlights.
-author: Weijiesa
-ms.author: weijiesa
+author: yufei-huang
+ms.author: yufeihuang
 ms.topic: overview
 ms.date: 05/27/2024
 ms.custom:

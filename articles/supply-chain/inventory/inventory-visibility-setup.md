@@ -1,8 +1,8 @@
 ---
 title: Install the Inventory Visibility Add-in
 description: Learn how to install the Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management, including Inventory Visibility prerequisites.
-author: Weijiesa
-ms.author: weijiesa
+author: yufei-huang
+ms.author: yufeihuang
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to

@@ -1,8 +1,8 @@
 ---
 title: Enable Inventory Visibility for Commerce
 description: This article describes how to set up Inventory Visibility for Microsoft Dynamics 365 Commerce Scale Units (CSUs).
-author: yufeihuang
-ms.author: weijiesa
+author: yufei-huang
+ms.author: yufeihuang
 ms.reviewer: kamaybac
 ms.search.form: InventInventoryDataService, KeyVaultParameters
 ms.topic: how-to

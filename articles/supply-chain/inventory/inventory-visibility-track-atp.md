@@ -1,8 +1,8 @@
 ---
 title: Track time-series inventory in Inventory Visibility (preview)
 description: This article explains how to set up the integration of inventory time-series data in Microsoft Dynamics 365 Supply Chain Management with Inventory Visibility so that you can query the projected inventory by date and calculate ATP.
-author: yufeihuang
-ms.author: weijiesa
+author: yufei-huang
+ms.author: yufeihuang
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
