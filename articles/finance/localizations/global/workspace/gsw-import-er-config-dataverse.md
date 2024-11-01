@@ -1,10 +1,10 @@
 ---
 title: Import Electronic reporting (ER) configurations from Dataverse
 description: Learn how to import Electronic reporting (ER) configurations from Microsoft Dataverse, including an overview on importing the Globalization solution.
-author: filatovm
-ms.author: filatovm
+author: EvgenyPopovMBS
+ms.author: evgenypopov
 ms.topic: how-to
-ms.date: 05/30/2024
+ms.date: 11/01/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
@@ -67,6 +67,9 @@ To open the Dataverse configuration repository, follow these steps.
 1. Select **Open** to view the list of ER configurations for the selected repository.
 
 ## Import a single configuration
+
+> [!NOTE]
+> It may take up to two weeks for a new ER configuration released by Microsoft or a new version of an ER confuguration released by Microsoft to appear in the Dataverse configuration repository. You may also need to manually trigger the update of the Globalization solution in your Power Platform Admin Center (PPAC) portal.
 
 To import a single configuration, follow these steps.
 
