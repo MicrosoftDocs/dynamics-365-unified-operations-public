@@ -4,7 +4,7 @@ description: Learn about the release schedule for proactive quality updates (PQU
 author: rashmansur
 ms.author: rashmim
 ms.topic: conceptual
-ms.date: 08/29/2024
+ms.date: 11/01/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -128,7 +128,7 @@ The following table shows the high-level train schedule. It includes a descripti
 
 > [!IMPORTANT]
 > 1. 10.0.39 Release-8 have been cancelled due to the forthcoming holiday season.
-> 2. This PQU build is made available in the LCS --> Shared Asset Library to self-deploy. 
+> 2. This PQU build is made available in the Lifecycle Services --> Shared Asset Library to self-deploy. 
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.40 Release-4 train schedule
 
@@ -157,7 +157,7 @@ The following table shows the high-level train schedule. It includes a descripti
 
 > [!IMPORTANT]
 > 1. 10.0.40 Release-5 have been cancelled due to the forthcoming holiday season.
-> 2. This PQU build is made available in the LCS --> Shared Asset Library to self-deploy. 
+> 2. This PQU build is made available in the Lifecycle Services --> Shared Asset Library to self-deploy. 
 
 ### <a name="schedule"></a>[NEW] Proactive quality update upcoming 10.0.41 Release-1 train schedule
 
