@@ -1,8 +1,8 @@
 ---
 title: Calculate item forecast
 description: Learn how to calculate item forecasts in Asset Management to get an overview of expected item consumption, including a step-by-step process.
-author: johanhoffmann
-ms.author: johanho
+author: jodahl
+ms.author: jodahl
 ms.topic: article
 ms.date: 08/16/2019
 ms.custom:

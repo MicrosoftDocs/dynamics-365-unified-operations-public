@@ -1,8 +1,8 @@
 ---
 title: Set up an external catalog for PunchOut e-procurement
 description: Learn about the use of an  external catalog or PunchOut catalog to collect quote information from a vendor and add it to a requisition.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: PurchTable, PurchTablePart, PurchVendorPortalRequests, CatExternalCatalogConfiguration, CatCXMLCartLogList
 ms.topic: how-to

@@ -1,8 +1,8 @@
 ---
 title: Import vendor catalogs
 description: Learn about the process to import vendor catalog data, including an outline and step-by-step process for importing vendor catalog data.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: article
 ms.date: 03/20/2018
 ms.custom: 

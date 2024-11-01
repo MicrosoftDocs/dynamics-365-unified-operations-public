@@ -1,8 +1,8 @@
 --- 
 title: Assign a product lifecycle state to a released product master
 description: Learn how to assign a product lifecycle state to a released product master and its variants, including a process for finding released produce masters. 
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 12/05/2017
 ms.custom:  

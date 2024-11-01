@@ -1,8 +1,8 @@
 ---
 title: Product bundles overview
 description: Access an overview of what product bundles are, including outlines on what product bundles consist of and how they're represented by physical items.
-author: Henrikan
-ms.author: henrikan
+author: adpattanaik
+ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: Customer
 ms.topic: overview

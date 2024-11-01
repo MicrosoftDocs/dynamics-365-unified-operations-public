@@ -1,8 +1,8 @@
 ---
 title: Maintenance plans
 description: Learn about maintenance plans in Asset Management, including an outline and step-by-step process on setting up maintenance plans.
-author: johanhoffmann
-ms.author: johanho
+author: jodahl
+ms.author: jodahl
 ms.topic: how-to
 ms.date: 05/22/2024
 ms.custom:

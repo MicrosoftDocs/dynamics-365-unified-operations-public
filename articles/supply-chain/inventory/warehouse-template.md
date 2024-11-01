@@ -1,8 +1,8 @@
 ---
 title: Set up a warehouse by using a warehouse configuration template
 description: Learn how to set up a warehouse by using a warehouse configuration template, including scenarios where configuration templates can be helpful.
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: article
 ms.date: 11/16/2017
 ms.custom:

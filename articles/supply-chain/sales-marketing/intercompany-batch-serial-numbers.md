@@ -1,8 +1,8 @@
 ---
 title: Intercompany batch and serial numbers
 description: Learn what will happen when you register batch numbers and serial numbers for intercompany orders, including a step-by-step process.
-author: Henrikan
-ms.author: henrikan
+author: adpattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 09/01/2021
 ms.reviewer: kamaybac

@@ -1,8 +1,8 @@
 ---
 title: Costing sheets
 description: The costing sheet setup builds on the cost group feature for displaying information and for the indirect cost calculation formulas.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: conceptual
 ms.date: 05/27/2024
 ms.custom:

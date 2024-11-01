@@ -1,8 +1,8 @@
 ---
 title: Extend inventory on-hand data entities
 description: Learn how to add fields to the INVENTORSITEONHANDENTITY and INVENTWAREHOUSEONHANDENTITY views, so that inventory on-hand data entities work with extensions.
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: article
 ms.date: 07/27/2020
 ms.custom:

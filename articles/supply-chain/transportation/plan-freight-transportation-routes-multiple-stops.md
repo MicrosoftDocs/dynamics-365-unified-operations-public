@@ -1,8 +1,8 @@
 ---
 title: Plan freight transportation routes with multiple stops
 description: Learn about the various elements that you use to plan transportation routes in Dynamics 365 Supply Chain Management with an outline on route plans.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz
+ms.author: lisascholz
 ms.topic: overview
 ms.date: 11/28/2023
 ms.custom: bap-template

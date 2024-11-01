@@ -26,7 +26,7 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Copilot and AI innovation | [Enable efficient, accurate demand planning with Copilot](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/enable-more-efficient-accurate-demand-planning-using-copilot) | [Analyze demand plans with Copilot (preview)](../demand-planning/demand-planning-copilot.md) | Enabled by default  |
+| Copilot and AI innovation | [Enable efficient, accurate demand planning with Copilot](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/enable-more-efficient-accurate-demand-planning-using-copilot) | [Analyze demand plans with Copilot (preview)](../demand-planning/demand-planning-copilot.md) | Enabled using the Power Apps maker portal.  |
 | Copilot and AI innovation | [Generate context-aware insights for warehouse workers](/dynamics365/release-plan/2024wave1/finance-supply-chain/dynamics365-supply-chain-management/generate-context-aware-insights-warehouse-workers) | [Workload insights with Copilot in the Warehouse Management mobile app](../warehousing/warehouse-management-mobile-app-insights.md) | <p>Feature management:<br>*Context-aware worker summary screen in WMA*</p><p>Requires Warehouse Management mobile app version 2.3.2.0 or later.</p><p>Requires Supply Chain Management version 10.0.40 with proactive quality update 1 (PQU-1) or later.</p> |
 | Copilot and AI innovation | AI summaries with Copilot | [AI summaries with Copilot](copilot-summaries-overview.md) | <p>Feature management:</p><ul><li>*Product summary when hovering on item*</li><li>*Product details summary*</li><li>*Purchase order summary*</li><li>*Sales order summary*</li><li>*Vendor summary*</li></ul><p>Requires Supply Chain Management version 10.0.40 with PQU-1 or later.</p> |
 | Planning | Item substitution for bills of materials in Planning Optimization | [Item substitution for formulas and bills of materials](../master-planning/item-substitution.md) | Feature management:<br>*Item substitution for bill of materials in Planning optimization* |
@@ -64,6 +64,14 @@ Some of these features aren't visible on your system until you turn them on in [
 | <p>**Module:** Warehouse management</p><p>**Enhancement:** *Work transaction date policy*</p><p>**Feature management name:** *(None)*</p> | <p>Allow warehouse work transaction dates to be adjusted to a time zone that's different from the one used by the system. You can configure the system to change the transaction dates according to the time zones of the company, the site, or each user's preferred time zone.</p><p>Learn more in [Define general warehouse work policies](../warehousing/warehouse-configuration.md#warehouse-management-parameters-work). |
 | <p>**Module:** Warehouse management</p><p>**Feature management name:** *Advanced address maintenance*</p> | Lets you delete unused historical addresses on the **Manage addresses** page. The address type selection is shown in a tab-based format instead of a dropdown list. |
 | <p>**Module:** Warehouse management</p><p>**Feature management name:** *(Preview) Context-aware worker summary screen in WMA*</p> | The AI-enhanced warehouse home screen in the Warehouse management mobile app uses advanced generative AI technology to provide warehouse workers with a personalized dashboard at the beginning of their shifts. |
+
+## Preview features that are now generally available
+
+The following table lists features that were introduced as public preview features in a previous version and became generally available in version 10.0.40. As with other new features, most of these features are turned off by default, so you must turn them on in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) if you want to use them.
+
+| Module | Feature name | More information |
+|---|---|---|
+| Warehouse management | *Warehouse management only mode* | [Warehouse management only mode overview](../warehousing/wms-only-mode-overview.md) |
 
 ## Related information
 

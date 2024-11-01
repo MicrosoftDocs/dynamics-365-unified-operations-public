@@ -1,8 +1,8 @@
 ---
 title: Enable and configure extra efficiency in quote-to-cash with Dynamics 365 Sales
 description: Learn about how to enable extra efficiency in quote-to-cash with Microsoft Dynamics 365 Sales, with outlines on prerequisites and initial setup.
-author: henrikan
-ms.author: henrikan
+author: adpattanaik
+ms.author: adpattanaik
 ms.topic: how-to
 ms.date: 09/15/2023
 ms.custom: bap-template

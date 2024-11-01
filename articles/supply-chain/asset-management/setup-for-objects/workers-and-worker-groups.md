@@ -1,8 +1,8 @@
 ---
 title: Maintenance workers and worker groups
 description: Learn about maintenance workers and worker groups in Asset Management, including step-by-step processes for creating workers and worker groups.
-author: johanhoffmann
-ms.author: johanho
+author: jodahl
+ms.author: jodahl
 ms.topic: article
 ms.date: 06/26/2019
 ms.reviewer: kamaybac

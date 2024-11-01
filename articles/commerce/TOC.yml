@@ -14,12 +14,12 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.42 (December 2024)
+          href: get-started/whats-new-commerce-10-0-42.md
         - name: Commerce 10.0.41 (September 2024)
           href: get-started/whats-new-commerce-10-0-41.md
         - name: Commerce 10.0.40 (June 2024)
           href: get-started/whats-new-commerce-10-0-40.md
-        - name: Commerce 10.0.39 (April 2024)
-          href: get-started/whats-new-commerce-10-0-39.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -446,7 +446,7 @@
               href: tasks/create-pos-visual-profile-2016-02.md
           - name: Payments
             items:
-            - name: Check out faster with optimized payment flows
+            - name: Check out faster with optimized payment flows (preview)
               href: dev-itpro/faster-checkout-pos.md
             - name: Gift cards
               items:
@@ -1612,7 +1612,7 @@
             href: localizations/dev-itpro/emea-pol-fpi-sample-sdk.md
       - name: France
         items:
-        - name: Cash register functionality
+        - name: Cash register functionality (preview)
           href: localizations/france/emea-fra-cash-registers.md
         - name: Deployment guidelines for cash registers
           href: localizations/france/emea-fra-fi-deployment.md
@@ -3036,44 +3036,6 @@
           items:
           - name: Create Commerce payment packaging for finance and operations deployment
             href: dev-itpro/payment-connector-package.md
-      - name: Retail SDK (Legacy)
-        items:
-        - name: Overview
-          items:
-          - name: Retail software development kit (SDK)
-            href: dev-itpro/retail-sdk/retail-sdk-overview.md
-          - name: Retail software development kit (SDK) extensibility samples
-            href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
-          - name: Retail SDK FAQ
-            href: dev-itpro/retail-sdk/sdk-faq.md
-          - name: Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
-            href: dev-itpro/retail-sdk/migrate-sdk.md
-        - name: Environment setup
-          items:
-          - name: Development in cloud-hosted environments without admin access
-            href: dev-itpro/cloud-dev-box.md
-          - name: Retail SDK build pipeline
-            href: dev-itpro/retail-sdk/sdk-build-pipeline.md
-          - name: Set up a Visual Studio 2017 build agent to build MPOS
-            href: dev-itpro/retail-sdk/mpos-build-agent.md
-          - name: Run POS samples
-            href: dev-itpro/pos-run-samples.md
-        - name: Reference
-          items:
-          - name: E-commerce platform software development kit (SDK)
-            href: dev-itpro/ecommerce-platform-sdk.md
-          - name: Configure online stores
-            href: dev-itpro/configure-online-store.md
-          - name: Configure authentication providers
-            href: dev-itpro/configure-authentication-providers.md
-        - name: Packaging and deployment
-          items:
-          - name: Create deployable packages
-            href: dev-itpro/retail-sdk/retail-sdk-packaging.md
-          - name: Sign MPOS appx with a code signing certificate
-            href: dev-itpro/pos-app-signing-certificate.md
-          - name: Set up POS hybrid app on Android and iOS
-            href: dev-itpro/hybridapp.md
     - name: Copilot capabilities in Commerce
       items:
       - name: Store report insights by Copilot

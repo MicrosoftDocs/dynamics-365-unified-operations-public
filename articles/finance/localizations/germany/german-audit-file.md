@@ -1,16 +1,15 @@
 --- 
 title: Generate German audit file
 description: Learn about how to generate a German audit file with a step-by-step process using the DEMF demo company with Germany as the region of legal entity primary address.
-author: mrolecki
-ms.author: mrolecki
+author: liza-golub
+ms.author: egolub
 ms.topic: how-to
-ms.date: 08/29/2018
+ms.date: 10/21/2024
 ms.custom:
+  - bap-template
 ms.reviewer: johnmichalak   
-audience: Application User 
 ms.search.region: Germany
 ms.search.validFrom: 2016-06-30
-ms.search.form:
 ms.dyn365.ops.version: Version 7.0.0
 ---
 
@@ -33,6 +32,10 @@ This procedure shows how to generate the German audit file. This procedure was c
 9. In the Period - date to field, enter a date.
 10. Click OK.
 
+> [!NOTE]
+> As of version 70 of **Data export model**, the following replacements are implemented for some of the special symbols in text that is being written in column 11 (BUCHUNGSTEXT) of the Sachkontobuchungen output file:
+> - Any sequence of symbols or individual symbols Carriage Return (ASCII code 13) and Line Feed (ASCII code 10) are replaced with space (ASCII code 32).
+> - The double quotes symbol (ASCII code 34) is replaced with the single quote symbol (ASCII code 39).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

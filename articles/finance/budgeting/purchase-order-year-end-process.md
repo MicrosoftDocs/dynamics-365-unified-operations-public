@@ -4,7 +4,7 @@ description: Learn about the required steps for running the purchase order year-
 author: music727
 ms.author: mibeinar
 ms.topic: article
-ms.date: 09/25/2024
+ms.date: 10/15/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -17,6 +17,8 @@ ms.search.validFrom: 09/25/2024
 [!include [banner](../includes/banner.md)]
 
 This article describes the required steps and setup for running the purchase order year-end process.
+
+The purchase order year-end process lets organizations that use the **Budget** module transfer open purchase orders during the year-end closing. During this transfer, the closing year budget is released (or reversed) in budget registries, and new lines are created in the next open period. The accounting dates and financial distribution dates on the purchase order are updated.
 
 If you record encumbrances for purchase orders in the general ledger, including purchase orders for projects, you can generate closing entries in the general ledger and against budget reservations at the end of each fiscal year. At the start of the new fiscal year, you can create opening entries to correctly record the encumbrances and budget reservations. These entries ensure that the reservations for purchase order encumbrances are correctly recorded on the year-end financial statements and in budget control. Learn more in [About purchase order encumbrances](/dynamicsax-2012/appuser-itpro/about-purchase-order-encumbrances).
 
@@ -78,34 +80,49 @@ Select one of the following year-end processing options to close purchase order 
 | Process and do not carry forward budget | <p><strong>Closing steps:</strong></p><ol><li>The remaining encumbrances in the general ledger and outstanding budget reservations for encumbrances are reversed.</li><li> Year-end closing entries are generated in the general ledger.</li></ol><p><strong>Opening steps:</strong></p><ol><li>Closing entries are reversed.</li><li> Encumbrances are reestablished in the general ledger.</li><li>Budget reservations for encumbrances are created for the purchase orders that are being processed.</li></ol> |
 | Process and carry forward budget | <p><strong>Note:</strong> This option is available only if budget control is enabled.</p><p><strong>Closing steps:</strong></p><ol><li>The remaining encumbrances in the general ledger and outstanding budget reservations for encumbrances are reversed.</li><li>Year-end closing entries are generated in the general ledger.</li><li>Budget adjustments are created to reduce the budget in the fiscal year that is being closed.</li></ol><p><strong>Opening steps:</strong></p><ol><li>Closing entries are reversed.</li><li>Encumbrances are reestablished in the general ledger.</li><li>Budget reservations for encumbrances are created for the purchase orders that are being processed.</li><li>Budget adjustments are created in the new fiscal year to reestablish the budget register entries that were carried forward from the previous fiscal year.</li></ol> |
 
+## Prepare for a purchase order year-end process
+
+> [!NOTE]
+> Before you can run the purchase order year-end process, the **Include carry forward amount** parameter must be enabled on the **Budget funds available** tab in the budget control configuration. 
+
+To enable purchase orders to be retrieved during the purchase order year-end process, the following conditions should be met:
+
+- Purchase orders have a **Confirmed** state, or they have reserved budget values (encumbrance).
+- A purchase order is open or partially invoiced.
+- The purchase order approval workflow is completed.
+- No draft invoices exist for the purchase order. If a draft invoice exists, it must be deleted or posted before you start the year-end process.
+- The purchasing status is **Backorder** or **Received**.
+- The last accounting event for the purchase order is in the fiscal year that is selected during the purchase order year end. For example, if **2023** is selected, the accounting date of the last accounting event must be in 2023. Otherwise, the purchase order is excluded.
+- Both the current fiscal year period and the next fiscal year period are open.
+
 ## Select purchase orders and run the purchase order year-end process
 
 1. Go to **General ledger** \> **Periodic** \> **Fiscal year close** \> **Purchase order year-end process**.
-1. In the lower pane, select **Retrieve purchase orders**.
-1. In the query dialog box that appears, define criteria for the purchase orders that you want to include in the year-end processing. Criteria include the date, date range, vendor account, purchase order type, purchase order balance, and financial dimensions. When you're finished, select **OK**.
-1. On the **Purchase order year-end process** page, the lower pane shows the results of the query. To include only specific purchase orders from the query results in the year-end processing, select the **Include** checkbox for each one. To include all the purchase orders from the query results, select **Include all**. To clear the selection of all purchase orders, select **Exclude all**. Encumbrances for the selected purchase orders are reversed in the fiscal year that is ending. The encumbered amounts will then be available in the new fiscal year.
+2. In the lower pane, select **Retrieve purchase orders**.
+3. In the query dialog box that appears, define criteria for the purchase orders that you want to include in the year-end processing. Criteria include the date, date range, vendor account, purchase order type, purchase order balance, and financial dimensions. When you're finished, select **OK**.
+4. On the **Purchase order year-end process** page, the lower pane shows the results of the query. To include only specific purchase orders from the query results in the year-end processing, select the **Include** checkbox for each one. To include all the purchase orders from the query results, select **Include all**. To clear the selection of all purchase orders, select **Exclude all**. Encumbrances for the selected purchase orders are reversed in the fiscal year that is ending. The encumbered amounts will then be available in the new fiscal year.
 
     > [!TIP]
     > You can view the details of a purchase order by selecting **View purchase order**. You can also select **View subledger journal** to view the year-end closing and opening entries that will be generated for individual purchase orders.
 
-1. In the **Year-end option** field, select how purchase order encumbrances should be processed.
-1. If you selected the **Process and carry forward budget** year-end option, select an original budget code. This code is used for budget adjustments that are made in the closing fiscal year. No workflow must be selected for the selected code. Otherwise, the year-end processing will stop for workflow approvals.
-1. If you selected the **Process and carry forward budget** year-end option, select a carry-forward budget code. This code is used for budget adjustments that are made in the new fiscal year. No workflow must be selected for the selected code. Otherwise, the year-end processing will stop for workflow approvals.
-1. Review the default values in the **Calendar** and **Fiscal year** fields. You can change the selected fiscal year directly on this page. However, to change the selected fiscal calendar, you must use the **Ledger** page.
-1. You can select the calendar name to open the **Fiscal calendars** page. There, you can view a description of the fiscal calendar. You can also view the fiscal years that are included in the fiscal calendar.
-1. Review the default values of the **Closing parameters** fields, and make any changes that are required.
+5. In the **Year-end option** field, select how purchase order encumbrances should be processed.
+6. If you selected the **Process and carry forward budget** year-end option, select an original budget code. This code is used for budget adjustments that are made in the closing fiscal year. No workflow must be selected for the selected code. Otherwise, the year-end processing will stop for workflow approvals.
+7. If you selected the **Process and carry forward budget** year-end option, select a carry-forward budget code. This code is used for budget adjustments that are made in the new fiscal year. No workflow must be selected for the selected code. Otherwise, the year-end processing will stop for workflow approvals.
+8. Review the default values in the **Calendar** and **Fiscal year** fields. You can change the selected fiscal year directly on this page. However, to change the selected fiscal calendar, you must use the **Ledger** page.
+9. You can select the calendar name to open the **Fiscal calendars** page. There, you can view a description of the fiscal calendar. You can also view the fiscal years that are included in the fiscal calendar.
+10. Review the default values of the **Closing parameters** fields, and make any changes that are required.
 
     - The **Accounting date** field specifies the last day of the selected fiscal year. You can't change the value.
     - The **Type** field is typically set to **Operating** for a period that can be used to record accounting transactions. If you're using a closing period to separate the closing entries, you can select **Closing**.
     - If you selected **Closing** as the type, select the closing period to use.
 
-1. Review the values of the **Opening parameters** fields. These values can't be changed.
+11. Review the values of the **Opening parameters** fields. These values can't be changed.
 
     - The **Accounting date** field specifies the first day of the opening fiscal year.
     - The **Period** field specifies the first period that has a type of **Operating** in the opening fiscal year. This type of period is used to record accounting transactions.
 
-1. When you're ready to run the purchase order year-end process, select **Process**.
-1. If you receive any messages, make the required corrections. Then run the process again for the affected purchase orders.
+12. When you're ready to run the purchase order year-end process, select **Process**.
+13. If you receive any messages, make the required corrections. Then run the process again for the affected purchase orders.
 
 > [!IMPORTANT]
 > Review the budget register entries that were created in the previous and current fiscal years to ensure the accuracy of the year-end encumbrance closing process. You can view the budget register entries on the **Budget register entries** page.

@@ -1,8 +1,8 @@
 --- 
 title: Change the ownership of consignment inventory based on production demand
 description: Learn how to change the owner of consignment inventory from the vendor to your legal entity when there is demand for the inventory in production. 
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: how-to
 ms.date: 08/14/2019
 ms.custom:

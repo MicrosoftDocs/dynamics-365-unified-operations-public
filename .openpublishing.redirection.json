@@ -27985,9 +27985,184 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "articles/fin-ops-core/fin-ops/copilot/faq-copilot-suggested-questions.md",
-      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/responsible-ai/responsible-ai-overview",
+      "source_path": "articles/fin-ops-core/fin-ops/copilot/copliot-generative-help.md",
+      "redirect_url": "/dynamics365/fin-ops-core/fin-ops/copilot/copilot-generative-help",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/copilot/enable-copliot-generative-help.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/copilot/enable-copilot-generative-help",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/base-price-determination-rules.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/base-price-versions.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/concurrence-cross-codes.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/concurrence-within-codes.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/customer-product-attribute-groups.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/discounts.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/margin-discount-pricing-rules.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/margin-price-adjustments.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/price-attribute-groups.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/price-attributes-overview.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/price-attributes-setup.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/price-component-code.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/price-component-posting.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/price-structure-details.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/price-structure-multiple.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/price-structure-overview.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/price-structure-single.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/pricing-management-enable.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/sales-trade-agreement-prices.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/pricing-management/vendor-list-price.md",
+      "redirect_url": "/dynamics365/supply-chain/pricing-management/pricing-management-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/retail-sdk/retail-sdk-overview.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "articles/commerce/dev-itpro/retail-sdk/sdk-faq.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {    
+      "source_path": "articles/commerce/dev-itpro/retail-sdk/migrate-sdk.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },     
+    {
+      "source_path": "articles/commerce/dev-itpro/cloud-dev-box.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/retail-sdk/sdk-build-pipeline.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/retail-sdk/mpos-build-agent.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/pos-run-samples.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/ecommerce-platform-sdk.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/configure-online-store.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/configure-authentication-providers.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/retail-sdk/retail-sdk-packaging.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/pos-app-signing-certificate.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/hybridapp.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
+      "redirect_document_id": false
+    }   
   ]
 }

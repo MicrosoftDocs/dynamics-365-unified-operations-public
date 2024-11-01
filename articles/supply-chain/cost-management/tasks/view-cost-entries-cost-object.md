@@ -1,8 +1,8 @@
 --- 
 title: View cost entries for a cost object
 description: Learn how to view cost entries for a cost object, including a step-by-step process using the USMF demo data company intended for the cost controller.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: how-to
 ms.date: 08/29/2018
 ms.custom:

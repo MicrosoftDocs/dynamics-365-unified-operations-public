@@ -1,8 +1,8 @@
 --- 
 title: Generate and process customer rebates
 description: Learn how to process customer rebates from claim generation to the point of passing them as accruals to Accounts receivable.
-author: Henrikan
-ms.author: henrikan
+author: adpattanaik
+ms.author: adpattanaik
 ms.topic: how-to
 ms.date: 06/25/2019
 ms.custom:

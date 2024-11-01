@@ -1,8 +1,8 @@
 ---
 title: Charges for nonconformance operations
 description: Learn how to create quality charges that can be used with operations for a nonconformance, including examples of quality charges.
-author: yufei-huang
-ms.author: yufeihuang
+author: johanhoffmann
+ms.author: johanho
 ms.topic: article
 ms.date: 03/23/2021
 ms.reviewer: kamaybac

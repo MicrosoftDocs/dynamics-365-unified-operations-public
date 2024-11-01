@@ -1,8 +1,8 @@
 --- 
 title: Define inventory counting processes
 description: Learn about the configuration of basic inventory counting processes by creating a counting group and a counting journal with a step-by-step process. 
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: how-to
 ms.date: 07/26/2019
 ms.custom:

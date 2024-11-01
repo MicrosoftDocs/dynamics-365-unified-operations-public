@@ -1,8 +1,8 @@
 ---
-title: Change the type of existing functional locations (preview)
+title: Change the type of existing functional locations
 description: Learn how to change the functional location type of an existing functional location, including prerequisites and a step-by-step process.
-author: johanhoffmann
-ms.author: johanho
+author: jodahl
+ms.author: jodahl
 ms.topic: how-to
 ms.date: 10/27/2023
 ms.custom: bap-template
@@ -10,22 +10,18 @@ ms.reviewer: kamaybac
 ms.search.form:
 ---
 
-# Change the type of existing functional locations (preview)
+# Change the type of existing functional locations
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-<!-- KFM: Preview until further notice -->
 
 This article explains how to change the [functional location type](../setup-for-functional-locations/functional-location-types.md) of an existing functional location.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ## Prerequisites
 
 Before you can use this feature, your system must meet the following requirements:
 
 - You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.38 or later.
-- The feature that's named *(Preview) Change types on assets and functional locations* must be turned on in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- The feature that's named *Change types on assets and functional locations* must be turned on in [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Change the functional location type of one or more existing functional locations
 

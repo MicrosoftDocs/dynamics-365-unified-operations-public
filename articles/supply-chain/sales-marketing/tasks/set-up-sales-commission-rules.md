@@ -1,8 +1,8 @@
 ---
 title: Set up sales commission rules
 description: Learn how to set up and enable sales commission calculation and tracking, including a step-by-step process using the USMF demo data company.
-author: Henrikan
-ms.author: henrikan
+author: adpattanaik
+ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: CommissionCustomerGroup, CommissionItemGroup, CommissionSalesGroup, CommissionSalesMember, DirPartyLookup, CommissionCalc, InventPosting, CustTable, EcoResProductDetailsExtended, CommissionEmplSalesGroup 
 ms.topic: how-to

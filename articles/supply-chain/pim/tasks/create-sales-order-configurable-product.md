@@ -1,8 +1,8 @@
 --- 
 title: Create a sales order for a configurable product
 description: Learn how to apply a configuration template to a product on a sales order, including a step-by-step process for creating sales orders.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 08/29/2018
 ms.custom: 

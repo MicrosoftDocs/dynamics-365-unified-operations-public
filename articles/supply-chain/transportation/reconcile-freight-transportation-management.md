@@ -1,8 +1,8 @@
 ---
 title: Reconcile freight in transportation management
 description: Learn about the freight reconciliation process, including outlines on manual reconciliation and automatic reconciliation.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz
+ms.author: lisascholz
 ms.topic: how-to
 ms.date: 06/07/2024
 ms.custom: 

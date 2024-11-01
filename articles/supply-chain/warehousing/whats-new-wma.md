@@ -16,6 +16,17 @@ ms.search.form:
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 3.0.3.0
+
+This version of the Warehouse Management mobile app introduces the following fixes and improvements:
+
+- Increased stability.  
+- Improved authentication stability and sign-in experience. 
+- Improved speed when changing between pages.  
+- Improved connection stability and performance. 
+- Fixed decimal formats to better match the selected user culture.  
+- Improved accessibility on the workload screen.   
+
 ## Version 3.0.0.0
 
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:
@@ -143,7 +154,7 @@ This version of the Warehouse Management mobile app introduces the following fix
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:
 
 - Increased stability.
-- The Wi-Fi screen is now correctly hidden in all contexts.
+- The wireless network connection screen is now correctly hidden in all contexts.
 - Fields on the details card are now sorted by priority.
 - The empty confirmation label on the details card is now hidden.
 - Translations have been updated.
@@ -171,7 +182,7 @@ This version of the Warehouse Management mobile app introduces the following new
 This version of the Warehouse Management mobile app introduces the following fixes and improvements:
 
 - Increased stability.
-- Fixed the bug that prevented the Wi-Fi screen from being hidden.
+- Fixed the bug that prevented the wireless network connection screen from being hidden.
 - Resolved the bug causing accessibility tooltips to appear on Windows unexpectedly.  
 - Fixed issues related to configuration mode.
 - Resolved the bug that prevents hiding the step instructions screen.
@@ -183,7 +194,7 @@ This version of the Warehouse Management mobile app introduces the following fix
 
 This version of the Warehouse Management mobile app introduces the following new features:  
 
-- Wi-Fi strength indicator: Indicates the strength of the Wi-Fi connection and adds a new throttling algorithm to ensure connectivity in unstable networks. It's also possible to log Wi-Fi strength measurements among the telemetry data collected in Application Insights.
+- Wireless network connection strength indicator: Indicates the strength of the wireless network connection and adds a new throttling algorithm to ensure connectivity in unstable networks. It's also possible to log wireless network connection strength measurements among the telemetry data collected in Application Insights.
 - Configuration mode: Intended for developers and advanced users, configuration mode provides a deeper understanding of how the app works. It can display and edit the XML code used to build and customize the user interface. For more information about this XML code, see [Inspect details of active Warehouse Management mobile app sessions](work-user-sessions.md).
 
 ### New fixes and improvements in version 2.1.15.0
@@ -228,7 +239,7 @@ This version of the Warehouse Management mobile app introduces the following fix
 - The decimal separator shown by the mobile app now matches the culture (language) specified for the user account that the app is using to sign in to Supply Chain Management rather than the culture set for the local device.
 - Fixed an issue where the read-only quantity spinner would display an incorrect value after the page was resized.
 - Fixed an issue where the compact (small) quantity spinner would initially show an incorrect value.
-- Added the ability to collect telemetry data about the Wi-Fi strength seen at locations where the app is used (for use with [Application Insights](application-insights-warehousing.md)).
+- Added the ability to collect telemetry data about the wireless network connection strength seen at locations where the app is used (for use with [Application Insights](application-insights-warehousing.md)).
 - Added several accessibility improvements.
 
 ## Version 2.1.9.0

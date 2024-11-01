@@ -1,8 +1,8 @@
 ---
 title: Inventory tag counting
 description: Learn about tag counting, which you use to compare the actual contents of a warehouse with the on-hand inventory, including additional resources.
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: article
 ms.date: 06/10/2019
 ms.reviewer: kamaybac

@@ -87,12 +87,13 @@ Active Directory Federation Services (AD FS) is a server role that can be instal
 
 Your Service Fabric cluster should always be on a supported version according to the official documentation, [Service Fabric supported versions](/azure/service-fabric/service-fabric-versions).
 
-| Minimum version            | Required since |
-|----------------------------|----------------|
-| Service Fabric runtime 8.2 | 10.0.30        |
-| Service Fabric runtime 8.0 | 10.0.24        |
-| Service Fabric runtime 7.2 | 10.0.17        |
-| Service Fabric runtime 7.1 | 10.0.14        |
+| Minimum version             | Required since |
+|-----------------------------|----------------|
+| Service Fabric runtime 10.0 | 10.0.41        |
+| Service Fabric runtime 8.2  | 10.0.30        |
+| Service Fabric runtime 8.0  | 10.0.24        |
+| Service Fabric runtime 7.2  | 10.0.17        |
+| Service Fabric runtime 7.1  | 10.0.14        |
 
 ## Minimum Microsoft .NET Framework runtime
 

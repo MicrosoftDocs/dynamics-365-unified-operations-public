@@ -1,8 +1,8 @@
 ---
 title: Expression constraints and table constraints in product configuration models
 description: Learn about the use of expression constraints and table constraints. You can use expression constraints or table constraints, depending on preferences.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac
