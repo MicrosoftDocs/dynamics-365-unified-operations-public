@@ -69,7 +69,7 @@ To open the Dataverse configuration repository, follow these steps.
 ## Import a single configuration
 
 > [!NOTE]
-> It may take up to two weeks for a new ER configuration released by Microsoft or a new version of an ER confuguration released by Microsoft to appear in the Dataverse configuration repository. You may also need to manually trigger the update of the Globalization solution in your Power Platform admin center (PPAC) portal.
+> It may take up to two weeks for a new ER configuration released by Microsoft or a new version of an ER confuguration released by Microsoft to appear in the Dataverse configuration repository. You may also need to manually trigger the update of the Globalization solution package in your Power Platform admin center (PPAC) portal.
 
 To import a single configuration, follow these steps.
 
