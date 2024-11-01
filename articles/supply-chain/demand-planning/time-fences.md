@@ -28,22 +28,27 @@ Time fences are both flexible and simple to maintain. Managers create time fence
 
 The following screenshot shows an example of a time series where two time fences apply. The time fence is indicated as cells that show a lock icon, which means that the current user can't edit the values in these locked cells. The user can still edit values in all of the unlocked cells. The following time fences apply here:
 
-- Warehouse location name (**Warehouse location**) = *Store 1 US*; Time bucket = *Month*; Size = *4 Time buckets*
-- Product ID (**Product**) = *K0001, K0005, K0010, K0011, K0012*; Time bucket = *Month*; Size = *2 time buckets*
+- Warehouse location name (**Warehouse location**) = *Store 1 US*; Time bucket = *Monthly*; Size = *4 Time buckets*
+- Product ID (**Product**) = *K0001, K0005, K0010, K0011, K0012*; Time bucket = *Monthly*; Size = *2 time buckets*
 
 <!--KFM: Add screen shot -->
 
-## Create a time fence
+## Manage time fence
 
-To create a time fence, follow these steps.
+To view, create, edit, or delete a time fence, follow these steps.
 
 1. On the navigation pane, select **Configuration** \> **Time fences**.
-1. On the Action Pane, select **New**.
-1. On the **Summary** tab, make the following settings. <!--KFM: Need more info about this. -->
+1. The **Active time fence rules** page shows a list of each active time fence. You can review the name, conditions, role, and other settings for each time fence here.
+    - To create a new time fence, select **New** on the Action Pane. This action opens a tabbed window where you can enter each setting
+    - To edit a time fence, select it's link in the **Name** column. This action opens a tabbed window where you can edit each setting. The tabs are named and work the same way as they do when creating a new time fence.
+    - To delete a time fence, select its row and then, on the Action Pane, select **Delete**.
+    - To view and edit deactivated time fences, select the **Active time fence rules** heading to open a drop-down list and then select **Deactivated time fence rules**.
+1. On the **Summary** tab, make the following settings.
     - **Name** – Enter a name for the time fence.
     - **Description** – Enter a short description for the time fence.
     - **Owner** – Select the user account that owns the time fence record.
-1. On the **Conditions** page, establish the conditions where the time fence applies. Use the **Add condition**  and **Delete** (trashcan) buttons to add or remove rows, as needed. The rows are combined using an AND operator, which means only cells where *all* of the rows are true will be locked by the time fence. Make the following settings for each row:
+    - **Active** – Choose whether the time fence should be active or not.
+1. On the **Conditions** tab, establish the conditions where the time fence applies. Use the **Add condition**  and **Delete** (trashcan) buttons to add or remove rows, as needed. The rows are combined using an AND operator, which means only cells where *all* of the rows are true will be locked by the time fence. Make the following settings for each row:
     - **Table** – Select the data table that provides the cell value to compare.
     - **Column** – Select the column from the selected table that provides the cell value to compare.
     - **Operator** – Choose the logic to apply (such as *equals*, *greater than*, or *less than*) when testing a cell value against the row value.
@@ -51,20 +56,8 @@ To create a time fence, follow these steps.
 
 1. On the **Time fence horizon** page, establish the time span where the fence applies. It always starts at the time bucket that includes the current day and extends a fixed number of time buckets into the future. Make the following settings:
     - **Time buckets** – Specify the size of the time buckets you want to use to define the time span. The time fence you are creating will onl apply to time series that also use this time bucket. It system won't convert between time bucket sizes so, for example, if you select *Monthly* here, your rule won't apply to time series that use *Weekly* time buckets (even though a month is about four weeks).
-    - **Current period** – Specify the total number of time buckets (after the current one) to include in the time fence. The time fence always applies to the current time bucket, so set this to 0 (zero) to include only the current one. Set it to 1 to include both the current and next time buckets.
+    - **Current period +** – Specify the total number of time buckets (after the current one) to include in the time fence. The time fence always applies to the current time bucket, so set this to 0 (zero) to include only the current one. Set it to 1 to include both the current and next time buckets.
 
     The **Example** display illustrates the time fence that results from your settings on this page.
 
 1. On the **Role** page, choose the user security roles where the time fence applies. In situations where more than one role-based time fence applies for the current user for a certain cell in a time series, the more permissive condition applies. For example, if the user has the *manager* user role, and a time fence for *all users* would block a certain cell from being edited, while the time fence for the *manager* role allows it, the manager will be permitted to edit the cell.
-
-1. <!--KFM: More steps may exist... -->
-
-## Manage time fences
-
-To view, edit, or delete a time fence, follow these steps.
-
-1. On the navigation pane, select **Configuration** \> **Time fences**.
-1. The **Active time fence rules** page shows a list of each active time fence. You can review the name, conditions, role, and other settings for each time bucket here.
-    - To edit a time fence, select it's link in the Name column. This action options a tabbed window where you can edit each setting. The tabs are named and work the same way as they do on the wizard pages described in the previous section.
-    - To delete a time fence, select its row and then, on the Action Pane, select **Delete**.
-    - To view and edit deactivated time fences, select the **Active time fence rules** heading to open a drop-down list and then select **Deactivated time fence rules**. <!--KFM: Double check this. -->
