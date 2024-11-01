@@ -55,6 +55,9 @@ We recommend that you set both auto-sync options to *Yes*. This configuration pr
 
 You might choose to set one or both options to *No* if you're using custom pricing logic in Sales, or if your front-end staff who work in Sales work only with line unit prices, not with discounts, charges, sales taxes, totals, and subtotals.
 
+> [!IMPORTANT]
+> When you install the supply chain solution for Dynamics 365 Sales, it makes several modifications to the standard forms in Sales, including modifications that add seamless sync information to the standard Order, Quote, Order Product, and Quote Products forms in Sales. However, if your company uses custom forms for one or more of these entities (which is common), then you must modify your custom forms to enable seamless sync information to display correctly on them. Learn more in [Display seamless sync information on custom forms in Dynamics 365 Sales](../../dev-itpro/data-entities/dual-write/seamless-sync-info-on-custom-forms.md).
+
 ## Nonzero unit prices entered in Sales
 
 If a user enters a unit price other than 0 (zero) for a sales order or sales quotation line in Sales, that unit price is also synced and applied to the sales quotation line in Supply Chain Management. In this case, Supply Chain Management doesn't apply additional calculations to the line data.
@@ -170,3 +173,4 @@ To have the line discounts, subtotals, and totals calculated in Supply Chain Man
 The limitations that are described in [Sync on-demand with the Supply Chain Management pricing engine](pricing-engine.md) still apply when seamless sync is used.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
