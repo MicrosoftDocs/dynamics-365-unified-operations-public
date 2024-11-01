@@ -127,7 +127,7 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 6 | November 19 to November 22, 2024 | December 14 to December 15, 2024 |
 
 > [!IMPORTANT]
-> 1. 10.0.39 Release-8 have been cancelled due to the forthcoming holiday freeze.
+> 1. 10.0.39 Release-8 have been cancelled due to the forthcoming holiday season.
 > 2. This PQU build is made available in the LCS --> Shared Asset Library to self-deploy. 
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.40 Release-4 train schedule
