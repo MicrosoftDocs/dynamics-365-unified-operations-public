@@ -1,8 +1,8 @@
 --- 
 title: Create a new warehouse layout
 description: Learn how to set up information about the locations in a warehouse, including an outline and step-by-step process on setting the default location capacity. 
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: how-to
 ms.date: 07/29/2019
 ms.custom:

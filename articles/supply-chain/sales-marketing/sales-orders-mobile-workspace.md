@@ -1,8 +1,8 @@
 ---
 title: Sales orders mobile workspace
 description: Learn about the Sales orders mobile workspace, which helps you stay up to date about your sales orders anywhere and anytime.
-author: Henrikan
-ms.author: henrikan
+author: adpattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 05/24/2022
 ms.reviewer: kamaybac

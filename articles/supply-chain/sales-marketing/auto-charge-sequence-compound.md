@@ -1,8 +1,8 @@
 ---
 title: Auto charge compounding and sequencing
 description: Advanced auto charges let you apply charge category types of "specific unit" and "specific unit match" to calculate line charges for sales and purchase orders.
-author: Henrikan
-ms.author: henrikan
+author: adpattanaik
+ms.author: adpattanaik
 ms.topic: how-to
 ms.date: 10/31/2023
 ms.custom: bap-template

@@ -1,8 +1,8 @@
 ---
 title: Quarantine orders
 description: Learn how to use quarantine orders to block inventory, including an outline and step-by-step process on quarantine on-hand inventory.
-author: yufei-huang
-ms.author: yufeihuang
+author: johanhoffmann
+ms.author: johanho
 ms.topic: article
 ms.date: 03/23/2021
 ms.reviewer: kamaybac

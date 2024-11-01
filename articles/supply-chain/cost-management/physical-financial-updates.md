@@ -1,8 +1,8 @@
 ---
 title: Physical and financial updates
 description: Access an overview of which types of transactions increase or decrease inventory quantities, including overviews on physical and financial increases. 
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac

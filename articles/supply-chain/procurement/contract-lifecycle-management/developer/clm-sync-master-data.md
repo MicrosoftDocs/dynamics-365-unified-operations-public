@@ -1,8 +1,8 @@
 ---
 title: Synchronize master data (preview)
 description: Learn about the data entities and integration methods that you can use to sync master data between Microsoft Dynamics 365 Supply Chain Management and an external contract lifecycle management (CLM) system.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to

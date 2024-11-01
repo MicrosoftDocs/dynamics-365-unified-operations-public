@@ -1,8 +1,8 @@
 ---
 title: Maintenance status
 description: Learn how to calculate maintenance status in Asset Management, including a step-by-step process for making a maintenance status calculation.
-author: johanhoffmann
-ms.author: johanho
+author: jodahl
+ms.author: jodahl
 ms.topic: article
 ms.date: 08/23/2019
 ms.custom:

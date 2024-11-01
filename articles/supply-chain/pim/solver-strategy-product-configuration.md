@@ -1,8 +1,8 @@
 ---
 title: Solver strategy for product configuration
 description: Learn how you can use the solver strategy to improve the performance of product configuration, including an outline on solver strategies. 
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
 ms.date: 02/19/2019
 ms.custom:

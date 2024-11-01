@@ -1,8 +1,8 @@
 ---
 title: Standard cost conversion overview
 description: Learn how to set up and run a standard cost conversion, to be completed after you've completed the prerequisites for a standard cost conversion. 
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: overview
 ms.date: 06/20/2017
 ms.reviewer: kamaybac

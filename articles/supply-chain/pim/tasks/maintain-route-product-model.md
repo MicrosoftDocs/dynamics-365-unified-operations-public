@@ -1,8 +1,8 @@
 --- 
 title: Maintain route for a product model
 description: Learn about maintaining routes for product models, including step-by-step processes for adding route operations and entering route operation details.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 08/29/2018
 ms.custom:

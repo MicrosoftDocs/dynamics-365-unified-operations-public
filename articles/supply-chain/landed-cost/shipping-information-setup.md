@@ -1,8 +1,8 @@
 ---
 title: Shipping information setup
 description: Learn how to set up shipping information for the Landed cost module, including an outline on goods descriptions and a table defining various fields.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz
+ms.author: lisascholz
 ms.topic: how-to
 ms.date: 06/07/2024
 ms.custom: 

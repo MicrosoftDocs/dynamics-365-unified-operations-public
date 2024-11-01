@@ -1,8 +1,8 @@
 ---
 title: Procurement and sourcing overview
 description: Access an overview of the functionality that's available in the Procurement and sourcing module, including an outline on needs for products and services.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: how-to
 ms.date: 06/07/2024
 ms.custom: 

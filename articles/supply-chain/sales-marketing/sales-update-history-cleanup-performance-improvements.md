@@ -1,8 +1,8 @@
 ---
 title: Schedule sales history data cleanup
 description: Learn how you can help improve system performance by scheduling the Sales update history cleanup periodic task to run at a regular interval.
-author: Henrikan
-ms.author: henrikan
+author: adpattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 08/09/2022
 ms.reviewer: kamaybac

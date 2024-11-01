@@ -1,8 +1,8 @@
 ---
 title: Change intercompany orders
 description: Learn about changing intercompany orders functionality, including outlines on adding new lines and changing prices and discounts.
-author: Henrikan
-ms.author: henrikan
+author: adpattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 09/01/2021
 ms.reviewer: kamaybac

@@ -1,8 +1,8 @@
 ---
 title: LIFO with physical value and marking
 description: Issues from inventory are settled against the last receipts into inventory based on the date of the inventory transaction with an outline on LIFO with marking.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
 ms.date: 02/02/2022
 ms.reviewer: kamaybac

@@ -1,8 +1,8 @@
 ---
 title: Work with integrated CLM features (preview)
 description: Learn how to work with the features of integrated contract lifecycle management (CLM).
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to

@@ -1,8 +1,8 @@
 --- 
 title: Create a procurement catalog
 description: Learn how to create a procurement catalog, including a step-by-step process for ensuring that a procurement category hierarchy exists. 
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: how-to
 ms.date: 07/19/2019
 ms.custom: 

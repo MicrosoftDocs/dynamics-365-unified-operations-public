@@ -1,8 +1,8 @@
 ---
 title: Create sales orders
 description: Learn how to create a sales order, including outlines and step-by-step processes for entering sales order header details and entering sales order line details.
-author: Henrikan
-ms.author: henrikan
+author: adpattanaik
+ms.author: adpattanaik
 ms.topic: how-to
 ms.date: 05/03/2024
 ms.custom: 

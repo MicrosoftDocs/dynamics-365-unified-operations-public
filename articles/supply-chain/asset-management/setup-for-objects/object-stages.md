@@ -1,8 +1,8 @@
 ---
 title: Asset lifecycle states
 description: Learn about asset lifecycle states and lifecycle models in Asset Management, including a step-by-step process for creating lifecycle models.
-author: johanhoffmann
-ms.author: johanho
+author: jodahl
+ms.author: jodahl
 ms.topic: article
 ms.date: 06/26/2019
 ms.reviewer: kamaybac

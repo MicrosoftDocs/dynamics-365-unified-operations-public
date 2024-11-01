@@ -1,8 +1,8 @@
 ---
 title: Landed cost inquiries
 description: Learn how to find and use the various types of inquiries that are available for the Landed cost module with a table that defines various columns.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz
+ms.author: lisascholz
 ms.topic: article
 ms.date: 02/01/2021
 ms.custom:

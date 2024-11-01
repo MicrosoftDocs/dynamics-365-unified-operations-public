@@ -1,8 +1,8 @@
 ---
 title: Asset attribute overview
 description: Access an overview of asset attributes in Asset Management, including a step-by-step process for navigating the Asset attribute overview page.
-author: johanhoffmann
-ms.author: johanho
+author: jodahl
+ms.author: jodahl
 ms.topic: overview
 ms.date: 06/26/2019
 ms.custom:

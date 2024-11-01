@@ -1,8 +1,8 @@
 ---
 title: Purchase requisition workflow
 description: The workflow process moves purchase requisitions through the review process, from an initial status of Draft to a final status of Approved.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: conceptual
 ms.date: 06/07/2024
 ms.custom: 

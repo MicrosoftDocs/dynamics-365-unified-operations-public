@@ -1,8 +1,8 @@
 --- 
 title: Correct inventory tracking information
 description: Learn about the process of creating and posting an inventory transfer journal in order to correct inventory tracking information.
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: how-to
 ms.date: 08/29/2018
 ms.custom:

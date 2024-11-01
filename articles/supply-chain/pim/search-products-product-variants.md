@@ -1,8 +1,8 @@
 ---
 title: Search for products and product variants during order entry
 description: Use the Item number field to search for products and product variants when you manually create a sales order line or a purchase order line.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac

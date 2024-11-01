@@ -1,8 +1,8 @@
 --- 
 title: Sales tax assignment and overrides
 description: Learn how to assign sales tax groups to commerce channels, including a step-by-step process using the USRT demo data company. 
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: how-to
 ms.date: 08/29/2018
 ms.custom:

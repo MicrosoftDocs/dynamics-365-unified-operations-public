@@ -1,8 +1,8 @@
 --- 
 title: Create sales price selection criteria
 description: Learn how to create a sales price selection criterion for attribute-based sales price models, including a step-by-step process for adding new criteria. 
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 08/29/2018
 ms.custom:

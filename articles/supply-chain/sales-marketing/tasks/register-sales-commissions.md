@@ -1,8 +1,8 @@
 --- 
 title: Register sales commissions
 description: Learn how sales commissions are calculated and registered, including a step-by-step process for invoicing sales orders that qualify salespeople for commissions.
-author: Henrikan
-ms.author: henrikan
+author: adpattanaik
+ms.author: adpattanaik
 ms.topic: how-to
 ms.date: 08/06/2019
 ms.custom:

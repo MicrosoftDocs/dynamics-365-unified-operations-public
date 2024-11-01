@@ -1,8 +1,8 @@
 ---
 title: Multi-level assets
 description: Learn how to create and delete multi-level assets, including outlines on copying assets and asset structures and deleting asset structures.
-author: johanhoffmann
-ms.author: johanho
+author: jodahl
+ms.author: jodahl
 ms.topic: article
 ms.date: 06/26/2019
 ms.reviewer: kamaybac

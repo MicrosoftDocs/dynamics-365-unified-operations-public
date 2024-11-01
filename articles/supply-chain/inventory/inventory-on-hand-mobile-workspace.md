@@ -1,8 +1,8 @@
 ---
 title: Inventory on-hand mobile workspace
 description: Learn about the Inventory on-hand mobile workspace. This workspace helps you gain mobile insights into reserved and available inventory anytime and anywhere.
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: article
 ms.date: 05/24/2022
 ms.reviewer: kamaybac

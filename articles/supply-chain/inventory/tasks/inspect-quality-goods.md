@@ -1,8 +1,8 @@
 --- 
 title: Inspect the quality of goods
 description: Learn how to process quality orders, including outlines and step-by-step processes for selecting quality orders and recording test results.
-author: yufei-huang
-ms.author: yufeihuang
+author: johanhoffmann
+ms.author: johanho
 ms.topic: how-to
 ms.date: 03/23/2021
 ms.custom:

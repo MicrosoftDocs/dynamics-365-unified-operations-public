@@ -1,8 +1,8 @@
 ---
 title: Prerequisites for a standard cost conversion
 description: Learn about tasks to perform before you run a standard cost conversion, including a step-by-step process for running standard cost conversions. 
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac

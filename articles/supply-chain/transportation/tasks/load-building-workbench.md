@@ -1,8 +1,8 @@
 ---
 title: Load building workbench
 description: Learn how to work with the load building workbench, including an outline and step-by-step process for creating load building strategies.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz
+ms.author: lisascholz
 ms.reviewer: kamaybac
 ms.search.form: TMSLoadBuildWorkbench,TMSLoadBuildTemplateCreate,TMSLoadBuildStrategy,TMSLoadBuildTemplateApply
 ms.topic: how-to

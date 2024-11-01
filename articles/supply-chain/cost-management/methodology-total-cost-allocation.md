@@ -1,8 +1,8 @@
 ---
 title: Total cost allocation method
 description: Learn about using total cost allocation (TCA), a method of calculating the cost between main formula items and the co-products defined for the formula.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
 ms.date: 04/15/2017
 ms.reviewer: kamaybac

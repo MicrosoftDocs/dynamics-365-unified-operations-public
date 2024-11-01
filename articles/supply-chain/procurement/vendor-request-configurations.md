@@ -1,8 +1,8 @@
 ---
 title: Vendor request configurations
 description: Learn about the fields that are required to be populated in a new vendor request, including a process for setting up a vendor request configuration.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: article
 ms.date: 06/20/2017
 ms.custom:
