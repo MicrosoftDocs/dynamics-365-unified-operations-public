@@ -1,8 +1,8 @@
 ---
 title: Manage approvals using the Approvals Management mobile app
 description: This article explains how to use the Approvals Management mobile app to approve, reject, or delegate approval requests.
-author: johanhoffmann
-ms.author: johanho
+author: akshaykmr
+ms.author: akshaykmr
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to
