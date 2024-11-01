@@ -141,6 +141,6 @@ If the **Enable default descriptions for advanced bank reconciliation** feature 
 To enter default descriptions for bank reconciliation postings, follow these steps:
 1. Go to **General Ledger** \> **Journal setup**  \> **Default descrptions** or **Organization administration** \> **Default descrptions**.
 2. There is a description type **Bank - reconciliation worksheet** in the list.
-3. To configure default descriptions for automatic postings during bank reconciliation process, see [Set up default descriptions for automatic posting](/general-ledger/set-up-default-descriptions-for-automatic-posting.md). References to **Reconciliation matching rules** and **Bank statement report entry** can be added on the **Default descriptions** parameters tab and included in the description text.
+3. To configure default descriptions for automatic postings during bank reconciliation process, see [Set up default descriptions for automatic posting](../general-ledger/set-up-default-descriptions-for-automatic-posting.md). References to **Reconciliation matching rules** and **Bank statement report entry** can be added on the **Default descriptions** parameters tab and included in the description text.
 
 ![image](https://github.com/user-attachments/assets/a703067e-8ce5-4fba-a032-336cce84c496)
