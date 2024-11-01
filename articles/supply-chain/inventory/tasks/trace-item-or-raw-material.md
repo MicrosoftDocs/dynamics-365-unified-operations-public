@@ -1,8 +1,8 @@
 --- 
 title: Trace an item or raw material
 description: Learn how to use item tracing to identify where items or raw materials have been used or are being used, including a step-by-step process.
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: how-to
 ms.date: 08/12/2019
 ms.custom:

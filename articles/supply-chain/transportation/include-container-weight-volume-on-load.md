@@ -1,8 +1,8 @@
 ---
 title: Include container weight and volume on load
 description: Learn how to set up and apply functionality to include container weight and volume on loads, including an outline on where this functionality applies.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz
+ms.author: lisascholz
 ms.topic: article
 ms.date: 05/26/2017
 ms.reviewer: kamaybac

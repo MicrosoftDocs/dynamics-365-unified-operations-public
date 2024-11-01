@@ -1,8 +1,8 @@
 ---
 title: Costing versions overview
 description: Learn about costing versions, how to maintain them, and the types of data that you can include in them, with an outline on standard or planned costs.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: overview
 ms.date: 05/16/2023
 ms.reviewer: kamaybac

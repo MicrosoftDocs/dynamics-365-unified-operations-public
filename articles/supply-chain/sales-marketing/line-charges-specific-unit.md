@@ -1,8 +1,8 @@
 ---
 title: Units of measure for line-level charges
 description: Learn how to set up line charges based on specific units and unit matches. This capability applies to both sales orders and purchase orders.
-author: Henrikan
-ms.author: henrikan
+author: adpattanaik
+ms.author: adpattanaik
 ms.topic: how-to
 ms.date: 11/22/2023
 ms.custom: bap-template

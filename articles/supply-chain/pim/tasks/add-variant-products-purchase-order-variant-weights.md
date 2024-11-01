@@ -1,8 +1,8 @@
 --- 
 title: Add variant products to purchase orders using variant weights
 description: Learn about the steps for using variant weights to auto populate purchase order lines for each variant of a product, including a step-by-step process. 
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 11/14/2016
 ms.custom:

@@ -1,8 +1,8 @@
 ---
 title: Quality management test instruments
 description: Learn how to create test instruments that can be used for tests on quality orders in Microsoft Dynamics 365 Supply Chain Management.
-author: yufei-huang
-ms.author: yufeihuang
+author: johanhoffmann
+ms.author: johanho
 ms.topic: article
 ms.date: 03/23/2021
 ms.reviewer: kamaybac

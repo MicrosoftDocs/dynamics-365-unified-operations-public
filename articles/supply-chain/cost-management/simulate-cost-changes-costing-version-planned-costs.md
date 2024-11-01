@@ -1,8 +1,8 @@
 ---
 title: Simulate cost changes by using a costing version for planned costs
 description: Learn how you can simulate the effects of cost changes on a manufactured item’s calculated costs by using a separate costing version for planned costs.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac

@@ -1,8 +1,8 @@
 ---
 title: Quality management tests
 description: Learn how to create tests that can be used for quality orders in Microsoft Dynamics 365 Supply Chain Management, including test examples.
-author: yufei-huang
-ms.author: yufeihuang
+author: johanhoffmann
+ms.author: johanho
 ms.topic: article
 ms.date: 03/23/2021
 ms.reviewer: kamaybac

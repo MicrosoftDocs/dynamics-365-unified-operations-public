@@ -1,8 +1,8 @@
 --- 
 title: Transfer physical inventory within the warehouse
 description: Learn about the process of creating and posting an inventory transfer journal in order to register movement of an item from one location in a warehouse to another.
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: how-to
 ms.date: 08/08/2019
 ms.custom:

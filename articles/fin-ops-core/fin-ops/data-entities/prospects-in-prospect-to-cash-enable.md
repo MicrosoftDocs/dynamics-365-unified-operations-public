@@ -1,8 +1,8 @@
 ---
 title: Enable and configure prospect integration in prospect-to-cash with Dynamics 365 Sales
 description: This article describes how to enable, set up, and configure the latest enhancements in prospect-to-cash with Microsoft Dynamics 365 Sales.
-author: henrikan
-ms.author: henrikan
+author: adpattanaik
+ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: DataManagementWorkspace, CustParameters
 ms.topic: how-to

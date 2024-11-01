@@ -1,8 +1,8 @@
 --- 
 title: Create a repeat purchase order
 description: Learn how to create a repeat purchase order (PO) by copying lines from an earlier purchase order document to a new PO or to an existing PO. 
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: how-to
 ms.date: 09/30/2020
 ms.custom:

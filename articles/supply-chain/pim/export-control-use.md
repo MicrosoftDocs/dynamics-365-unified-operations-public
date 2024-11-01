@@ -1,8 +1,8 @@
 ---
 title: Work with advanced export management for products, sales orders, and quotations
 description: Learn how to work with advanced export management for products and sales orders, and sales quotations with an outline on setting up jurisdictions.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: overview
 ms.date: 02/15/2024
 ms.custom: bap-template

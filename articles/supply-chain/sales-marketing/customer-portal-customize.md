@@ -1,8 +1,8 @@
 ---
 title: Customize and use the Customer portal
 description: Learn how to customize the Customer portal after it has been added to your system, including outlines on typical customizations and customizing order creations.
-author: Henrikan
-ms.author: henrikan
+author: adpattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 04/22/2020
 ms.custom:

@@ -1,8 +1,8 @@
 ---
 title: Inventory journal approval workflows
 description: Learn how to set up and use inventory journal approval workflows for various types of physical inventory transactions, including a step-by-step process.
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: article
 ms.date: 08/05/2022
 ms.custom:

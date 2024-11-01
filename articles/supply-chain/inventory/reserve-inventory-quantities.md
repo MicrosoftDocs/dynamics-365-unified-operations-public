@@ -1,8 +1,8 @@
 ---
 title: Reserve inventory quantities
 description: Learn about the different options that are available for reserving inventory, including an outline on inventory reservation policies.
-author: yufei-huang
-ms.author: yufeihuang
+author: Weijiesa
+ms.author: weijiesa
 ms.topic: how-to
 ms.date: 05/27/2024
 ms.custom:

@@ -1,8 +1,8 @@
 ---
 title: Schedule maintenance plans
 description: Learn about schedule maintenance plans in Asset Management, including a step-by-step process for scheduling calendar entries based on maintenance plans.
-author: johanhoffmann
-ms.author: johanho
+author: jodahl
+ms.author: jodahl
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to

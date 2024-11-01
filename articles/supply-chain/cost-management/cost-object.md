@@ -1,8 +1,8 @@
 ---
 title: Cost objects
 description: Learn about costs objects, and explains how costs and quantities are accumulated. A cost object is an entity that costs and quantities are accumulated for.
-author: JennySong-SH
-ms.author: yanansong
+author: prasungoel
+ms.author: prasungoel
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac

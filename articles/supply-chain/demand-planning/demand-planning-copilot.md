@@ -1,8 +1,8 @@
 ---
 title: Analyze demand plans with Copilot (preview)
 description: Demand planning in Microsoft Dynamics 365 Supply Chain Management lets you use Copilot to analyze your demand plans, including prerequisites.
-author: t-benebo
-ms.author: benebotg
+author: aevengir
+ms.author: aevengir
 ms.topic: overview
 ms.date: 04/01/2024
 ms.custom: bap-template

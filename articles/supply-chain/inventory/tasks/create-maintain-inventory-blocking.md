@@ -1,8 +1,8 @@
 --- 
 title: Create and maintain an inventory blocking
 description: Learn how to use an inventory blocking to prevent physical on-hand inventory from being reserved by other outbound source documents.
-author: yufei-huang
-ms.author: yufeihuang
+author: johanhoffmann
+ms.author: johanho
 ms.topic: how-to
 ms.date: 03/23/2021
 ms.custom:

@@ -1,8 +1,8 @@
 ---
 title: Quality associations
 description: Learn how you can use quality associations in Microsoft Dynamics 365 Supply Chain Management to automatically generate quality orders related to your sales.
-author: yufei-huang
-ms.author: yufeihuang
+author: johanhoffmann
+ms.author: johanho
 ms.topic: article
 ms.date: 03/23/2021
 ms.reviewer: kamaybac

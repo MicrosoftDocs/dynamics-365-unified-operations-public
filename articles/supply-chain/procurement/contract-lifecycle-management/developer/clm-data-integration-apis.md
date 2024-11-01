@@ -1,8 +1,8 @@
 ---
 title: Data integration APIs (preview)
 description: Learn about the integration patterns that are available in Microsoft Dynamics 365 Supply Chain Management and guidelines for syncing master data between Supply Chain Management and the contract lifecycle management (CLM) system.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: how-to

@@ -1,8 +1,8 @@
 ---
 title: Procurement and sourcing workflows
 description: Learn about purchase requisitions and purchase orders that are approved by a user other than the person who entered the transaction.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.reviewer: kamaybac
 ms.search.form: WorkflowTableListPageRnr
 ms.topic: how-to

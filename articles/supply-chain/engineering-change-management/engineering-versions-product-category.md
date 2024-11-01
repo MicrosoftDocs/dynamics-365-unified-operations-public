@@ -1,8 +1,8 @@
 ---
 title: Engineering versions and engineering product categories
 description: Learn about the concept of engineering versions, which ensure that different states of a product and its data are kept current and clear.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
 ms.date: 04/07/2022
 ms.custom:

@@ -1,8 +1,8 @@
 ---
 title: Quality orders
 description: Learn how to manually or automatically create quality orders, and how to work with them to perform inspections and record test results.
-author: yufei-huang
-ms.author: yufeihuang
+author: johanhoffmann
+ms.author: johanho
 ms.topic: article
 ms.date: 03/23/2021
 ms.reviewer: kamaybac

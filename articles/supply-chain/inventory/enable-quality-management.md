@@ -1,8 +1,8 @@
 ---
 title: Enable quality and nonconformance management
 description: Learn about the process for setting up and configuring quality and nonconformance management features in Microsoft Dynamics 365 Supply Chain Management.
-author: yufei-huang
-ms.author: yufeihuang
+author: johanhoffmann
+ms.author: johanho
 ms.topic: article
 ms.date: 03/23/2021
 ms.reviewer: kamaybac

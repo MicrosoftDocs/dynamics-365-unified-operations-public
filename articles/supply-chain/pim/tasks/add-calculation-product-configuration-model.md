@@ -1,8 +1,8 @@
 --- 
 title: Add a calculation to a product configuration model
 description: Learn how to add a new calculation to a product configuration model, including a step-by-step process for creating a calculation expression. 
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.date: 08/29/2018
 ms.topic: how-to 
 ms.custom:

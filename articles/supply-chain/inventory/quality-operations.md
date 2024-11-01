@@ -1,8 +1,8 @@
 ---
 title: Operations for nonconformances
 description: Learn how to create and use operations for nonconformances, including an example operation and a step-by-step process for creating an operation.
-author: yufei-huang
-ms.author: yufeihuang
+author: johanhoffmann
+ms.author: johanho
 ms.topic: article
 ms.date: 03/23/2021
 ms.reviewer: kamaybac

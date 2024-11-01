@@ -1,8 +1,8 @@
 ---
 title: Purchase agreements
 description: Learn about purchase agreements, which are contracts that commits an organization to buy a specified quantity or amount by using multiple purchase orders over time.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: how-to
 ms.date: 06/07/2024
 ms.custom: 

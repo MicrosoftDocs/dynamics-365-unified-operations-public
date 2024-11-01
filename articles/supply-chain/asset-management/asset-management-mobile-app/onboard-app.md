@@ -1,8 +1,8 @@
 ---
 title: Onboard the Asset Management mobile app
 description: Learn how administrators can prepare your Microsoft Dynamics 365 Supply Chain Management and Dataverse environments to support the Asset Management mobile app.
-author: johanhoffmann
-ms.author: johanho
+author: jodahl
+ms.author: jodahl
 ms.topic: how-to
 ms.date: 09/19/2023
 ms.custom: bap-template

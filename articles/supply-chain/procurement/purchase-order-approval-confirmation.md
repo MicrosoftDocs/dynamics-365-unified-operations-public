@@ -1,8 +1,8 @@
 ---
 title: Approve and confirm purchase orders
 description: Learn about the statuses that a purchase order goes through after it has been created, and the effect of enabling change management on POs.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: how-to
 ms.date: 05/02/2024
 ms.custom: bap-template

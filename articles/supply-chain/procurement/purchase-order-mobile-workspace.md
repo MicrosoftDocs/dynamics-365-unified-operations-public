@@ -1,8 +1,8 @@
 ---
 title: Purchase order approval mobile workspace
 description: Learn about the Purchase order approval mobile workspace, which lets you view purchase orders and respond to them through actions.
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: article
 ms.date: 05/24/2022
 ms.reviewer: kamaybac

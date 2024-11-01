@@ -1,8 +1,8 @@
 ---
 title: Configuration rules
 description: Learn about configuration rules, which define relationships between items in a bill of materials for products that use dimension-based configuration technology.
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: article
 ms.date: 06/20/2017
 ms.reviewer: kamaybac

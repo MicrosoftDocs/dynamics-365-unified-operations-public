@@ -1,8 +1,8 @@
 ---
 title: Show translated product names and descriptions in the UI
 description: Learn how to translate product names and descriptions, and how to set up the UI to show product information in each user's preferred language.
-author: johanhoffmann
-ms.author: johanho
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 10/14/2022
 ms.custom: bap-template

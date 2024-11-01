@@ -1,8 +1,8 @@
 --- 
 title: Create solicitation types and scoring criteria for RFQs
 description: Learn how to create a solicitation type and associate this with a scoring method, including processes for creating and using solicitation types. 
-author: Henrikan
-ms.author: henrikan
+author: ShriramSivasankaran
+ms.author: shriramsiv
 ms.topic: how-to
 ms.date: 08/29/2018
 ms.custom:

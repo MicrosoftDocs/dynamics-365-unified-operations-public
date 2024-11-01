@@ -1,8 +1,8 @@
 ---
 title: Asset Management mobile app overview
 description: Learn about the Asset Management mobile app, including outlines on managing work orders, creating maintenance requests, and creating work orders.
-author: johanhoffmann
-ms.author: johanho
+author: jodahl
+ms.author: jodahl
 ms.topic: overview
 ms.date: 09/19/2023
 ms.custom: bap-template

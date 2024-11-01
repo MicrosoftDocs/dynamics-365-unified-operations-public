@@ -1,8 +1,8 @@
 --- 
 title: Create a product number nomenclature for configured product variants
 description: Learn how to set up a product number nomenclature for configured product variants, and how it can be attached to a configurable product master. 
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 08/29/2018
 ms.custom:

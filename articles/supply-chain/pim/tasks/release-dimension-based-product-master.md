@@ -1,8 +1,8 @@
 ---
 title: Release a dimension-based product master
 description: Learn how to release a product master, which will be used for the dimension-based configurations, including a step-by-step process. 
-author: t-benebo
-ms.author: benebotg
+author: sgmsft
+ms.author: shwgarg
 ms.topic: how-to
 ms.date: 11/10/2022
 ms.custom: bap-template
