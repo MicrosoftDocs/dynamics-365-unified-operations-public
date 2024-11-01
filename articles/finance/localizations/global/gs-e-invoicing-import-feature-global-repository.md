@@ -26,9 +26,9 @@ To start to work with Electronic invoicing features that are shared with your co
 
 To use this functionality, you should have a Dataverse environment that's connected to your Dynamics 365 Finance environment. For more information, see the following articles:
 
-- [Enable Power Platform Integration](../../../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md)
-- [Connect finance and operations apps with a new Microsoft Dataverse instance](../../../../fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv.md)
-- [Connect finance and operations apps with an existing Microsoft Dataverse instance](../../../../fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-existing-dv.md)
+- [Enable Power Platform Integration](../../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md)
+- [Connect finance and operations apps with a new Microsoft Dataverse instance](../../../fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-new-dv.md)
+- [Connect finance and operations apps with an existing Microsoft Dataverse instance](../../../fin-ops-core/dev-itpro/power-platform/environment-lifecycle-connect-finops-existing-dv.md)
 
 You should also add a security role to access tables in Dataverse by following these steps:
 
