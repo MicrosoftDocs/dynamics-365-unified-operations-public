@@ -1,8 +1,8 @@
 ---
 title: Credit limits for customers
 description: Access an overview of how credit limits work in Dynamics 365 Supply Chain Management, including answers to questions about checking credit limits.
-author: Henrikan
-ms.author: henrikan
+author: adpattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 11/16/2023
 ms.custom:

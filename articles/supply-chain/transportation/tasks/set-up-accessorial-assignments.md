@@ -1,8 +1,8 @@
 --- 
 title: Set up accessorial assignments
 description: Learn how to set up an accessorial assignment, including a step-by-step process for setting up accessorial assignments done by transportation coordinators.
-author: Weijiesa
-ms.author: weijiesa
+author: lisascholz
+ms.author: lisascholz
 ms.topic: how-to
 ms.date: 11/14/2016
 ms.custom:
