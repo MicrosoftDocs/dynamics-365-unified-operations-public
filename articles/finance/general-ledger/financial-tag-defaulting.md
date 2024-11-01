@@ -58,10 +58,11 @@ To create a financial tag rule, follow these steps:
 [![New Financial tag rule definition](./media/NewRule.png)](./media/NewRule.png)
 
 ### Copy a financial tag rule
-The copy a financial tag rule has two functions **Copy within legal entity** and **Copy to other legal entity** Both require a valid rule in the current legal entity to be selected as the source rule to copy.  
+The copy a financial tag rule has two functions that require a valid rule in the current legal entity to be selected as the source rule to copy.
+The two options for copying a financial tag rule are:
 
-- Copy within legal entity - this option will allow you to copy a rule defined for one transaction entry point to another in the same legal entity. The first page of the copy wizard will allow you to select the additional transaction type destinations you wish to copy the rule to. The second page of the copy wizard will let you review your choices.  Press **Finish** to complete the copy process.
-- Copy to other legal entity - this option will allow you to copy rules to any other legal entity that has financial tags setup and active.  You may select one or more rules to be copied to another legal entity. The first page of the copy wizard will display any other legal entity that has one or more tags defined and active. The second page of the copy wizard allows you to map the rule to a tag with a different name in the mapping options page in case there is a discrepancy of the tag name between legal entities.  The last page of the copy wizard will let you review your choices. Press **Finish** to complete the copy process.
+- **Copy within legal entity** - this option copies a rule defined for one transaction entry point to another in the same legal entity. The first page of the copy wizard selects the additional transaction type destinations you wish to copy the rule to. The second page of the copy wizard reviews your choices. Click **Finish** to complete the copy process.
+- **Copy to other legal entity** - this option copies rules to any legal entity that has financial tags setup and active. Select one or more rules to be copied to another legal entity. The first page of the copy wizard displays legal entities with one or more tags defined and active. The second page of the copy wizard maps the rule to a tag with a different name in the **Mapping options** page in case there is a discrepancy of the tag name between legal entities. The last page of the copy wizard reviews your choices. Click **Finish** to complete the copy process.
 
 ## How financial tag rules apply to transactions
 
