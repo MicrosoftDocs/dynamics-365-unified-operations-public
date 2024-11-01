@@ -39,7 +39,10 @@ To create a time fence, follow these steps.
 
 1. On the navigation pane, select **Configuration** \> **Time fences**.
 1. On the Action Pane, select **New**.
-1. On the **Summary** page, make the following settings. <!--KFM: Need more info about this. -->
+1. On the **Summary** tab, make the following settings. <!--KFM: Need more info about this. -->
+    - **Name** – Enter a name for the time fence.
+    - **Description** – Enter a short description for the time fence.
+    - **Owner** – Select the user account that owns the time fence record.
 1. On the **Conditions** page, establish the conditions where the time fence applies. Use the **Add condition**  and **Delete** (trashcan) buttons to add or remove rows, as needed. The rows are combined using an AND operator, which means only cells where *all* of the rows are true will be locked by the time fence. Make the following settings for each row:
     - **Table** – Select the data table that provides the cell value to compare.
     - **Column** – Select the column from the selected table that provides the cell value to compare.
