@@ -110,6 +110,7 @@ After defining the properties that will display on the Adaptive Card, you define
 2. Define the class as a data contract with accessor methods to return properties set in the class.
 3. Provide a value for the `type` property that will be used as an identifier for the template type.
 4. The `template` property is set to a string of the JSON object that defines the layout and format of the Adaptive Card.
+5. Build your project to make the template available for use on forms.
 
 > [!TIP]
 > You can use tools like the [Adaptive Cards designer](https://adaptivecards.io/designer) for assistance in creating the JSON for the Adaptive Card template.
@@ -153,7 +154,7 @@ public class AdaptiveCardCustomerTemplate extends AdaptiveCardTemplate
 Add the Adaptive Card control in the desired placement on your form. 
 1. On the form in your development environment for finance and operations apps in Visual Studio, right-click the node in your form design where you want to place the Adaptive Card.
 2. On the context menu, select **New > Adaptive card**.
-3. On the **Properties** for the control, provide a **Name**, and select the template class created earlier in the **Template class** property.
+3. On the **Properties** for the control, provide a **Name**, and select the template class created earlier in the **Template class** property.'
 
 ### Populate the data properties on the Adaptive Card
 When the Adaptive Card control is added to your form, you can now define the data that will populate the properties in your template for the card.
