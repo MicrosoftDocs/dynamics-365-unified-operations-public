@@ -19,20 +19,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information about how to get started with Tax Calculation. The sections in this article guide you through the high-level design and configuration steps in Microsoft Dynamics Lifecycle Services, Regulatory Configuration Service (RCS), Dynamics 365 Finance, and Dynamics 365 Supply Chain Management. 
-
-The setup consists of three main steps.
-
-> [!NOTE]
-> For new environments that have version 10.0.39 and later, installation of the TCS add-in in Lifecycle Services isn't required.
-> 
-> The functionality of RCS is merged to the **Globalization Studio** workspace in Finance in version 10.0.39. For more information, see [Regulatory Configuration Service merge to the Globalization Studio workspace](workspace/merge-rcs-to-gsw.md).
->
-> If you're using version 10.0.39 or later, use the **Globalization Studio** workspace in Finance instead of RCS. 
-
-1. In Lifecycle Services, install the **Tax Calculation** add-in in your Lifecycle Services project.
-2. Set up the Tax Calculation feature. This setup isn't specific to a legal entity. It can be shared across legal entities in Finance and Supply Chain Management.
-3. In Finance and Supply Chain Management, set up the Tax Calculation parameters by legal entity.
+This article provides information about how to get started with Tax Calculation. The sections in this article guide you through the high-level design and configuration steps in Dynamics 365 Finance and Dynamics 365 Supply Chain Management. 
 
 ## High-level design
 
@@ -58,7 +45,7 @@ The following illustration shows the high-level runtime design of Tax Calculatio
 
 The following steps provide a high-level overview of the configuration process for Tax Calculation.
 
-1. In RCS, create the **Tax Calculation** feature. If you're using version 10.0.39 or later, use the **Globalization Studio** workspace in Finance instead of RCS. 
+1. In the **Globalization Studio** workspace, click the **Tax calculation** tile, and create the **Tax Calculation** feature. 
 2. Set up the **Tax Calculation** feature:
 
     1. Select the tax configuration version.
@@ -68,8 +55,8 @@ The following steps provide a high-level overview of the configuration process f
     5. Optional: Create tax group applicability if you want to override the default sales tax group that is entered from customer or vendor master data.
     6. Optional: Create item group applicability if you want to override the default item sales tax group that is entered from the item master data.
 
-3. Complete the **Tax Calculation** feature. If you configure your tax feature in RCS, you must publish it.
-4. In Finance, select the **Tax Calculation** feature.
+3. Complete the **Tax Calculation** feature.
+4. In the **Tax calculation parameters**, select the **Tax Calculation** feature.
 
 After you complete these steps, the following setups are automatically synced from the Tax feature setup to Finance:
 
@@ -79,74 +66,30 @@ After you complete these steps, the following setups are automatically synced fr
 
 The remaining sections in this article provide more detailed configuration steps.
 
-## Prerequisites
-
-Before you can complete the remaining procedures in this article, the following prerequisites must be met:
-
-- You must have access to your Lifecycle Services account, and you must have a deployed Lifecycle Services project that has a Tier 2 or above environment that runs Dynamics 365 version 10.0.21 or later.
-- You must create an RCS environment for your organization, and you must have access to your account. For more information about how to create a RCS environment, see [Regulatory Configuration Service Overview](rcs-overview.md).
-- The following features must be turned on in the **Feature management** workspace of your deployed Finance or Supply Chain Management environment, based on your business needs:
-
-    - Tax Calculation Service
-    - Support multiple VAT registration numbers (In the 10.0.39 update, this feature can no longer be enabled through Feature management. It's now controlled by the **Support multiple VAT registration numbers** parameter on the **Tax calculation parameters** page.)
-    - Tax in transfer order
-
-    If you're using version 10.0.39 or later, enable the following additional features in the **Feature management** workspace:
-
-    - Globalization features
-    - Enable Globalization feature setup for Tax Calculation Service
-    - Enable applicability rules value lookup for Tax Calculation Service (_optional_)
-
-- The following features must be turned on in the **Feature management** workspace of your deployed RCS environment.
-
-    - Globalization features
-    - Prevent Tax calculation feature publishing in Regulatory Configuration Service (For details, see [Changes in Tax calculation feature publishing in RCS](global-get-started-with-tax-calculation-service.md#changes-in-tax-calculation-feature-publishing-in-rcs).)
-
-- The following roles should be assigned as appropriate to the users in your RCS environment:
-
-    - Electronic reporting developer
-    - Globalization feature developer
-    - Tax engine developer
-    - Tax engine functional consultant
-    - Tax service developer
-
-## Set up Tax Calculation in Lifecycle Services
-
-1. Sign in to [Lifecycle Services](https://lcs.dynamics.com).
-2. Complete the setup for Microsoft Power Platform integration. For more information, see [Add-ins overview](../../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md).
-3. Select one of your deployed environments, and then select **Install a new add-in**.
-4. Select **Tax Calculation**.
-5. Read and agree to the terms and conditions, and then select **Install**.
-
 ## Configure the Tax Calculation feature
 
-The steps in this section aren't related to a specific legal entity. You must complete this procedure only one time. You can complete it in any legal entity in [RCS](https://marketing.configure.global.dynamics.com/) (if you're using version 10.0.38 or earlier) or in the [Globalization Studio workspace in Finance](./workspace/gsw-features.md) (if you're using version 10.0.39 or later).
+The steps in this section aren't related to a specific legal entity. 
 
-Import the correct [tax configuration version](global-tax-calcuation-service-overview.md#versions), based on your Finance version. Follow the steps in [Import Electronic reporting (ER) configurations from Dataverse](./workspace/gsw-import-er-config-dataverse.md).
 
-1. Follow one of these steps, depending on where you're completing the procedure:
-
-    - In [RCS](https://marketing.configure.global.dynamics.com/), open the **Globalization features** workspace, select **Features**, and then select the **Tax Calculation** tile.
-    - In Finance, open the **Globalization Studio** workspace, select **Globalization services**, and then select the **Tax Calculation** tile.
-
-2. On the **Tax calculation features** page, select the **Add** button, and select one of the following feature types:
+1. Import the correct [tax configuration version](global-tax-calcuation-service-overview.md#versions), based on your Finance version. Follow the steps in [Import Electronic reporting (ER) configurations from Dataverse](./workspace/gsw-import-er-config-dataverse.md).
+2. Open the **Globalization Studio** workspace, select the **Tax Calculation** tile. On the **Tax calculation features** page, select the **Add** button, and select one of the following feature types:
 
     - **New feature** – Create a feature setup that has blank content.
     - **Based on existing feature** – Create a feature from an existing feature, and copy the content from the existing feature setup.
 
     > [!NOTE]
-    > In version 10.0.26 and later, you can import a demo feature for the **DEMF** demo legal entity. For more information, see [Import feature demo data](tax-calculation-import-export-feature.md).
+    > You can import a demo feature for the **DEMF** demo legal entity. For more information, see [Import feature demo data](tax-calculation-import-export-feature.md).
 
-3. Enter a name and description for the feature, and then select **Create feature**.
+4. Enter a name and description for the feature, and then select **Create feature**.
 
     After the feature is created, a draft version of it is automatically created. You can select **Get this version** to rebase the draft version on any completed version.
 
-4. Select the draft version of the feature, and then select **Edit**. The **Tax Calculation setup** page is filled in.
-5. Select **Configuration version**. You should see the configuration version that you imported.
+5. Select the draft version of the feature, and then select **Edit**. The **Tax Calculation setup** page is filled in.
+6. Select **Configuration version**. You should see the configuration version that you imported.
 
     Microsoft provides a default tax configuration for tax calculation. This configuration covers most of the requirements for tax calculation behaviors. It will be updated based on market feedback. If you must extend the configuration to meet specific requirements, see [How to build extension in tax service](tax-service-add-data-fields-tax-integration-by-extension.md) for information about how to generate and select your own tax configuration.
 
-6. After you select **Configuration version**, several additional tabs appear. Follow the order that is shown here to complete the mandatory tab setup.
+7. After you select **Configuration version**, several additional tabs appear. Follow the order that is shown here to complete the mandatory tab setup.
 
     **Mandatory setup**
 
@@ -162,8 +105,8 @@ Import the correct [tax configuration version](global-tax-calcuation-service-ove
     - **Vendor tax registration number applicability** – If you have multiple tax registration numbers for one vendor, Tax Calculation can automatically determine the correct tax registration number. In the matrix on this tab, define the rules that should be used to make the determination. Otherwise, Finance and Supply Chain Management will continue to use the default tax registration number on taxable documents for purchase transactions.
     - **List code applicability** – Automatically determine the value of the **List code** field through more flexible and configurable rules. In the matrix on this tab, define the rules that should be used to make the determination. Otherwise, Finance and Supply Chain Management will continue to use the default code on taxable documents.
 
-7. On the **Tax codes** tab, select **Add**, and enter the tax code and a description.
-8. Select **Tax component**. The tax component is a group of methods that were defined in the previous version of the selected tax configuration. The following tax components are available:
+8. On the **Tax codes** tab, select **Add**, and enter the tax code and a description.
+9. Select **Calculation origin**. The calculation origin defines how the tax base amount and the tax amount are calculated. The following values are available:
 
     - By net amount
     - By gross amount
@@ -171,8 +114,8 @@ Import the correct [tax configuration version](global-tax-calcuation-service-ove
     - By margin
     - Tax on tax
 
-9. Select **Save**. More fields become available, based on the tax component that you selected.
-10. Use the following options to identify the nature of the tax code:
+10. Select **Save**. More fields become available, based on the **Calculation origin** that you selected.
+11. Use the following options to identify the nature of the tax code:
 
     - Is exempt
     - Is use tax
@@ -187,8 +130,8 @@ Import the correct [tax configuration version](global-tax-calcuation-service-ove
 
     Maintain tax rates and the tax amount limits for this tax code.
 
-11. Repeat steps 7 through 10 to add all other tax codes that are required.
-12. On the **Tax group** tab, select the **Tax group** column, add it to the matrix as the input condition, and then add lines to maintain the tax group master data.
+12. Repeat steps 8 through 11 to add all other tax codes that are required.
+13. On the **Tax group** tab, select the **Tax group** column, add it to the matrix as the input condition, and then add lines to maintain the tax group master data.
 
     Here is an example.
 
@@ -199,7 +142,7 @@ Import the correct [tax configuration version](global-tax-calcuation-service-ove
     | BEL_Dom | BEL_VAT21; BEL_VAT6 |
     | BEL_EU       | BEL_Exempt          |
 
-13. On the **Item tax group** tab, select **Item tax group** column, add it to the matrix as the input condition, and then add lines to maintain the item tax group master data.
+14. On the **Item tax group** tab, select **Item tax group** column, add it to the matrix as the input condition, and then add lines to maintain the item tax group master data.
 
     Here is an example.
 
@@ -208,7 +151,7 @@ Import the correct [tax configuration version](global-tax-calcuation-service-ove
     | Full           | DEU_VAT19; BEL_VAT21; DEU_Exempt; BEL_Exempt |
     | Reduced        | DEU_VAT7; BEL_VAT6; DEU_Exempt; BEL_Exempt   |
 
-14. On the **Tax group applicability** tab, select the columns that are required to determine the correct tax group, and then select **Add**. Enter or select values for each column. The **Tax group** field will be the output of this matrix. If this tab isn't configured, the sales tax group on the transaction line will be used.
+15. On the **Tax group applicability** tab, select the columns that are required to determine the correct tax group, and then select **Add**. Enter or select values for each column. The **Tax group** field will be the output of this matrix. If this tab isn't configured, the sales tax group on the transaction line will be used.
 
     Here is an example.
 
@@ -222,7 +165,7 @@ Import the correct [tax configuration version](global-tax-calcuation-service-ove
     > [!NOTE]
     > If the default sales tax group on your taxable document lines is correct, leave this matrix blank. For more information, see the [Runtime design](#runtime) section in this article.
 
-15. On the **Item tax group applicability** tab, select the columns that are required to determine the correct tax code, and then select **Add**. Enter or select values for each column. The **Item tax group** field will be the output of this matrix. If this tab isn't configured, the item sales tax group on the transaction line will be used.
+16. On the **Item tax group applicability** tab, select the columns that are required to determine the correct tax code, and then select **Add**. Enter or select values for each column. The **Item tax group** field will be the output of this matrix. If this tab isn't configured, the item sales tax group on the transaction line will be used.
 
     Here is an example.
 
@@ -236,25 +179,13 @@ Import the correct [tax configuration version](global-tax-calcuation-service-ove
 
     For more information about how tax codes are determined in Tax Calculation, see [Sales tax group and item sales tax group determination logic](global-sales-tax-group-determination.md).
 
-16. Set up the applicability of customer tax registration numbers, vendor tax registration numbers, and list codes, based on the business needs.
-17. Select **Save**, and then close the page.
-18. Select **Change status** \> **Complete**. After the status is changed to **Complete**, the version can no longer be edited.
+17. Set up the applicability of customer tax registration numbers, vendor tax registration numbers, and list codes, based on the business needs.
+18. Select **Save**, and then close the page.
+19. Select **Change status** \> **Complete**. After the status is changed to **Complete**, the version can no longer be edited. This version of the tax feature setup will be visible to each legal entity on **Tax calculation parameters** page.
 
-    - If you configure your tax feature in Finance, this version of the tax feature setup will be visible to each legal entity in Finance.
-    - If you configure your tax feature in RCS, you must publish it.
+## Set up Tax Calculation in Globalizaton studio Workspace
 
-19. In RCS, select **Change status** \> **Publish**. This version of the tax feature setup will be pushed to the repository and will be visible to each legal entity in Finance.
-
-### Changes in Tax calculation feature publishing in RCS 
-
-As of version 10.0.39, Tax calculation features can no longer be published in RCS. Instead, you can configure features in the **Globalization Studio** workspace in Dynamics 365 finance and operations apps. If your finance and operations apps version is earlier than 10.0.39, you can restore the capability to publish in RCS by disabling the **Prevent Tax calculation feature publishing in Regulatory Configuration Service** feature in the **Feature management** workspace in RCS. 
-
-> [!IMPORTANT]
-> Tax calculation features that were published in RCS won't be available in finance and operations apps that are updated to version 10.0.39 or later.
-
-## Set up Tax Calculation in Finance
-
-After you complete the setup in the [Configure the Tax Calculation feature](#configure-the-tax-calculation-feature) section, follow these steps to set up Tax Calculation in Finance.
+After you complete the setup in the [Configure the Tax Calculation feature](#configure-the-tax-calculation-feature) section, follow these steps to enable Tax Calculation uilize the settings provided by the Tax Calcualtion feature.
 
 The setup in this section is done by legal entity. You must configure it for each legal entity that you want to enable Tax Calculation for in Finance.
 
@@ -262,17 +193,17 @@ The setup in this section is done by legal entity. You must configure it for eac
 2. On the **General** tab, set the following fields:
 
     - **Enable advanced tax calculation** – Select this checkbox to enable Tax Calculation for the legal entity. If it isn't enabled for the current legal entity, the legal entity will continue to use the existing tax engine to determine and calculate tax.
-    - **Feature setup** – Select a published tax feature setup and version for the legal entity. For more information about how to set up and complete a published tax feature, see the previous section of this article.
+    - **Feature name** – Select a completed tax feature setup and version for the legal entity. For more information about how to set up and complete a published tax feature, see the previous section of this article.
     - **Business Process** – Select the business processes to enable.
 
-3. On the **Calculation** tab, define the expected rounding rule for the legal entity. For more information about the rounding logic, see [Tax calculation rounding rules](https://go.microsoft.com/fwlink/?linkid=2166988).
+3. Using the **Sales tax rounding rule** group of fields, define the expected rounding rule for the legal entity. For more information about the rounding logic, see [Tax calculation rounding rules](https://go.microsoft.com/fwlink/?linkid=2166988).
 4. On the **Error handling** tab, define the expected error handling method for the legal entity. Three options are available:
 
     - No
     - Warning
     - Error
 
-    You can set up an error handling method for each result code in the **Details** section. Alternatively, if some result codes aren't synchronized from the tax calculation service, you can set up a default method in the **General** section.
+    You can set up an error handling method for each result code in the **Details** section.
 
 5. On the **Multiple VAT registration** tab, you can turn on VAT declaration, EU Sales List, and Intrastat separately to work under a multiple VAT registrations scenario. For more information about tax reporting for multiple VAT registrations, see [Reporting for multiple VAT registrations](emea-reporting-for-multiple-vat-registrations.md).
-6. Save the setup, and repeat the previous steps for each additional legal entity. When a new version is published, and you want it to be applied, set the **Feature setup** field on the **General** tab of the **Tax calculation parameters** page (see step 2).
+6. Save the setup, and repeat the previous steps for each additional legal entity. When a new version of Tax Calculation feature is completed, and you want it to be applied, set the **Feature name** field on the **General** tab of the **Tax calculation parameters** page (see step 2).
