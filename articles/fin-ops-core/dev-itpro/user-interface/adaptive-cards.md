@@ -154,7 +154,7 @@ public class AdaptiveCardCustomerTemplate extends AdaptiveCardTemplate
 Add the Adaptive Card control in the desired placement on your form. 
 1. On the form in your development environment for finance and operations apps in Visual Studio, right-click the node in your form design where you want to place the Adaptive Card.
 2. On the context menu, select **New > Adaptive card**.
-3. On the **Properties** for the control, provide a **Name**, and select the template class created earlier in the **Template class** property.'
+3. On the **Properties** for the control, provide a **Name**, and select the template class created earlier in the **Template class** property.
 
 ### Populate the data properties on the Adaptive Card
 When the Adaptive Card control is added to your form, you can now define the data that will populate the properties in your template for the card.
