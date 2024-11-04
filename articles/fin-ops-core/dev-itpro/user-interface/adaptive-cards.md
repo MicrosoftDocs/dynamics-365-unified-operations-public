@@ -21,6 +21,8 @@ ms.assetid:
 
 The Adaptive Cards control for finance and operations apps enables developers to render Adaptive Cards natively in application forms. See [https://adaptivecards.io](https://adaptivecards.io) for more information on Adaptive Cards, including documentation, samples, and a designer to get started in building your Adaptive Cards.
 
+![Screen shot of an Adaptive Card in a form in finance and operations apps](./media/AdaptiveCardControl.png) 
+
 ## Using Adaptive Cards
 The following steps are needed to use Adaptive Cards on forms in finance and operations apps:
 1. Define the data contract for the data properties that will populate the adaptive card.
@@ -37,21 +39,12 @@ The following provides an example class for properties that may be used for an A
 [DataContract]
 public class AdaptiveCardCustomerData extends AdaptiveCardData
 {
-    private str cardTitle = "";
     private str custName = "";
     private str profileImage = "";
     private str createdUtc = "2017-02-14T06:08:39Z";
     private str custDescription = "";
     private str custInsightsTitle = "";
     private str custInsights = "";
-    private int feedback = 0;
-
-    [DataMember("cardTitle")]
-    public str cardTitle(str _cardTitle = cardTitle)
-    {
-        cardTitle = _cardTitle;
-        return cardTitle;
-    }
 
     [DataMember("custName")]
     public str custName(str _custName = custName)
@@ -95,13 +88,6 @@ public class AdaptiveCardCustomerData extends AdaptiveCardData
         return custInsights;
     }
 
-    [DataMember("feedback")]
-    public int Feedback(int _feedback = feedback)
-    {
-        feedback = _feedback;
-        return feedback;
-    }
-}
 ```
 
 ### Configure the Adaptive Card template
@@ -127,25 +113,8 @@ public class AdaptiveCardCustomerTemplate extends AdaptiveCardTemplate
     {
         super();
         this.type("CustomerCard");
-        this.template(strFmt('{"type":"AdaptiveCard","$schema":"https://adaptivecards.io/schemas/adaptive-card.json","version":"1.5","id":"CustomerCard","body":[{"type":"ColumnSet","columns":[{"type":"Column","width":"auto","items":[{"type":"Icon","name":"TextBulletListSquareSparkle","color":"Accent","size":"Small"}]},{"type":"Column","width":"stretch","items":[{"type":"TextBlock","text":"${cardTitle}","wrap":true,"style":"heading","horizontalAlignment":"Left"}],"verticalContentAlignment":"Center"},{"type":"Column","width":"auto","items":[{"type":"ActionSet","id":"headingActions","actions":[{"type":"Action.Execute","id":"RefreshCard","title":"%1","mode":"secondary","iconUrl":"icon:ArrowClockwise"}]}]}]},{"type": "ColumnSet", "columns": [{"type": "Column", "items": [{"type": "Image", "style": "Person", "url": "${profileImage}", "altText": "${custName}", "size": "Small"}], "width": "auto"}, {"type": "Column", "items": [{"type": "TextBlock", "weight": "Bolder", "text": "${custName}", "wrap": true}, {"type": "TextBlock", "spacing": "None", "text": "Customer since {{DATE(${createdUtc},SHORT)}}", "isSubtle": true, "wrap": true}], "width": "stretch"}]},{"type":"TextBlock","text":"${custDescription}","wrap":true,"spacing":"Medium"},{"type": "TextBlock", "size": "Medium", "weight": "Bolder", "text": "${custInsightsTitle}", "wrap":true, "Spacing": "Medium"}, {"type": "TextBlock", "text": "${custInsights}", "wrap": true},{"type":"ColumnSet","spacing":"Medium","columns":[{"type":"Column","width":"stretch","items":[{"type":"ActionSet","actions":[{"type":"Action.Execute","title":"%2","id":"CopyToClipboard","iconUrl":"icon:Copy"}]}]},{"type":"Column","width":"auto","items":[{"type":"ColumnSet","columns":[{"type":"Column","width":"auto","items":[{"type":"Icon","name":"ThumbLike","size":"xSmall","color":"Accent","style":"${if(feedback > 0, \'Filled\', \'Regular\')}","selectAction":{"type":"Action.Execute","id":"FeedbackLike","tooltip":"%3"}}]},{"type":"Column","width":"auto","items":[{"type":"Icon","name":"ThumbDislike","size":"xSmall","color":"Accent","style":"${if(feedback < 0, \'Filled\', \'Regular\')}","selectAction":{"type":"Action.Execute","id":"FeedbackDislike","tooltip":"%4"}}]}]}],"verticalContentAlignment":"Center"}]}]}',
-            "@AdaptiveCardControl:Refresh",
-            "@AdaptiveCardControl:Copy",
-            "@AdaptiveCardControl:Useful",
-            "@AdaptiveCardControl:NotUseful"));
-
-        List il = new List(Types::String);
-        il.addEnd("custName");
-        il.addEnd("custDescription");
-        il.addEnd("custInsights");
-
-        this.dataToCopy(il);
-    }
-
-    [DataMember("dataToCopy")]
-    public List dataToCopy(List _dataToCopy = dataToCopy)
-    {
-        dataToCopy = _dataToCopy;
-        return dataToCopy;
+        this.template(strFmt('{"type":"AdaptiveCard","$schema":"https://adaptivecards.io/schemas/adaptive-card.json","version":"1.5","id":"CustomerCard","body":[{"type": "ColumnSet", "columns": [{"type": "Column", "items": [{"type": "Image", "style": "Person", "url": "${profileImage}", "altText": "${custName}", "size": "Small"}], "width": "auto"},{"type": "Column", "items": [{"type": "TextBlock", "size": "Medium", "weight": "Bolder", "text": "${custName}", "wrap": true}, {"type": "TextBlock", "spacing": "None", "text": "Customer since {{DATE(${createdUtc},SHORT)}}", "isSubtle": true, "wrap": true}], "width": "stretch"},{"type":"Column","width":"auto","items":[{"type":"ActionSet","id":"headingActions","actions":[{"type":"Action.Execute","id":"RefreshCard","title":"%1","mode":"secondary","iconUrl":"icon:ArrowClockwise"}]}]}]},{"type":"TextBlock","text":"${custDescription}","wrap":true,"spacing":"Medium"},{"type": "TextBlock", "size": "Medium", "weight": "Bolder", "text": "${custInsightsTitle}", "wrap":true, "Spacing": "Medium"}, {"type": "TextBlock", "text": "${custInsights}", "wrap": true}]}',
+            "@AdaptiveCardControl:Refresh"));
     }
 }
 ```
@@ -157,7 +126,7 @@ Add the Adaptive Card control in the desired placement on your form.
 3. On the **Properties** for the control, provide a **Name**, and select the template class created earlier in the **Template class** property.
 
 ### Populate the data properties on the Adaptive Card
-When the Adaptive Card control is added to your form, you can now define the data that will populate the properties in your template for the card.
+When the Adaptive Card control is added to your form, you can define the data that will populate the properties in your template for the card.
 1. View the code for the form where you added the Adaptive Card.
 2. Create an instance of your data class, and populate the properties of the data contract.
 3. Create a class that defines any actions added to the template.
@@ -168,7 +137,7 @@ The following example shows the defining properties and actions to populate the 
 [Form]
 public class MyCustomerInsightsForm extends FormRun
 {
-    AdaptiveCardCustomerData currentData2;
+    AdaptiveCardCustomerData currentData;
 
     public void run()
     {
@@ -176,63 +145,37 @@ public class MyCustomerInsightsForm extends FormRun
 
         if (SysUserInfo::find().Density == SysUserInfoDensity::Density21)
         {
-            SummaryCard2.widthValue(420);
-            SummaryCard2.heightValue(190);
+            CustomerProfile.widthValue(420);
+            CustomerProfile.heightValue(190);
         }
 
-        currentData2 = new AdaptiveCardCustomerData();
-        currentData2.cardTitle('Customer Profile');
-        currentData2.custName('Contoso Electronics');
-        currentData2.profileImage('https://media.licdn.com/dms/image/C560BAQFJq1MdKASLWA/company-logo_200_200/0/1591822700485?e=2147483647&v=beta&t=BrJUkBS5fE2EO3x5XsiiakRIDzN5GXqzPV6U1oEHOc8');
-        currentData2.createdUtc('2017-02-14T06:08:39Z');
-        currentData2.custDescription('Contoso Electronics is a mid-sized IT service provider specializing in network infrastructure, cybersecurity, and cloud migration for small-to-medium businesses.');
-        currentData2.custInsightsTitle("Customer Insights");
-        currentData2.custInsights('- Needs streamlined tools for remote network monitoring and incident response.\n- Anticipating 20% growth with plans for new hires in cybersecurity and cloud engineering\n- Current outstanding balance: $35,000\n- Payment history: Generally prompt but had delayed payments twice in the past year due to cash flow adjustments during expansion phases.');
+        currentData = new AdaptiveCardCustomerData();
+        currentData.custName('Contoso Electronics');
+        currentData.profileImage('https://media.licdn.com/dms/image/C560BAQFJq1MdKASLWA/company-logo_200_200/0/1591822700485?e=2147483647&v=beta&t=BrJUkBS5fE2EO3x5XsiiakRIDzN5GXqzPV6U1oEHOc8');
+        currentData.createdUtc('2017-02-14T06:08:39Z');
+        currentData.custDescription('Contoso Electronics is a mid-sized IT service provider specializing in network infrastructure, cybersecurity, and cloud migration for small-to-medium businesses.');
+        currentData.custInsightsTitle("Customer Insights");
+        currentData.custInsights('- Needs streamlined tools for remote network monitoring and incident response.\n- Anticipating 20% growth with plans for new hires in cybersecurity and cloud engineering\n- Current outstanding balance: $35,000\n- Payment history: Generally prompt but had delayed payments twice in the past year due to cash flow adjustments during expansion phases.');
 
-        SummaryCard2.cardData(currentData2);
+        CustomerProfile.cardData(currentData);
     }
 
     [Control("Custom")]
-    class SummaryCard2
+    class CustomerProfile
     {
         public void executeAction(str actionId, str actionPayload)
         {
             super(actionId, actionPayload);
 
-            if (actionId == "FeedbackLike")
+            if (actionId == "RefreshCard")
             {
-                if (currentData2.Feedback() != 1)
-                {
-                    currentData2.Feedback(1);
-                }
-                else
-                {
-                    currentData2.Feedback(0);
-                }
-                SummaryCard2.cardData(currentData2);
-            }
-            else if (actionId == "FeedbackDislike")
-            {
-                if (currentData2.Feedback() != -1)
-                {
-                    currentData2.Feedback(-1);
-                }
-                else
-                {
-                    currentData2.Feedback(0);
-                }
-                SummaryCard2.cardData(currentData2);
-            }
-            else if (actionId == "RefreshCard")
-            {
-                currentData2.cardTitle('Customer Profile');
-                currentData2.custName('Contoso Electronics');
-                currentData2.profileImage('https://media.licdn.com/dms/image/C560BAQFJq1MdKASLWA/company-logo_200_200/0/1591822700485?e=2147483647&v=beta&t=BrJUkBS5fE2EO3x5XsiiakRIDzN5GXqzPV6U1oEHOc8');
-                currentData2.createdUtc('2017-02-14T06:08:39Z');
-                currentData2.custDescription('Contoso Electronics is a mid-sized IT service provider specializing in network infrastructure, cybersecurity, and cloud migration for small-to-medium businesses.');
-                currentData2.custInsightsTitle('Customer Insights');
-                currentData2.custInsights('- Needs streamlined tools for remote network monitoring and incident response.\n- Anticipating 20% growth with plans for new hires in cybersecurity and cloud engineering\n- Current outstanding balance: $35,000\n- Payment history: Generally prompt but had delayed payments twice in the past year due to cash flow adjustments during expansion phases.');
-                SummaryCard2.cardData(currentData2);
+                currentData.custName('Contoso Electronics');
+                currentData.profileImage('https://media.licdn.com/dms/image/C560BAQFJq1MdKASLWA/company-logo_200_200/0/1591822700485?e=2147483647&v=beta&t=BrJUkBS5fE2EO3x5XsiiakRIDzN5GXqzPV6U1oEHOc8');
+                currentData.createdUtc('2017-02-14T06:08:39Z');
+                currentData.custDescription('Contoso Electronics is a mid-sized IT service provider specializing in network infrastructure, cybersecurity, and cloud migration for small-to-medium businesses.');
+                currentData.custInsightsTitle('Customer Insights');
+                currentData.custInsights('- Needs streamlined tools for remote network monitoring and incident response.\n- Anticipating 20% growth with plans for new hires in cybersecurity and cloud engineering\n- Current outstanding balance: $35,000\n- Payment history: Generally prompt but had delayed payments twice in the past year due to cash flow adjustments during expansion phases.');
+                CustomerProfile.cardData(currentData);
             }
         }
     }
