@@ -21,17 +21,18 @@ Learn more about advanced warehouse scenarios in [Cycle counting](../../warehous
 ## Create a counting group
 
 1. Go to **Inventory management** \> **Setup** \> **Inventory** \> **Counting groups**.
-2. Select **New**.
-3. In the **Counting group** field of the new row, type a value.
-4. In the **Name** field, type a value.
-5. In the **Counting code** field, select an option.
+1. Select **New**.
+1. In the **Counting group** field of the new row, type a value.
+1. In the **Name** field, type a value.
+1. In the **Counting code** field, choose one of the following values:
 
-    - *Manual* – Includes lines every time you run the job. In other words, you decide the counting interval for the counting group.  
-    - *Period* – Includes lines for the period in the counting journal after the period interval has expired. If you choose this value, you must also enter the period interval (in days) in the **Counting period** field. When you run the job for creating new lines in the counting journal, it creates new lines at the interval specified in this field, regardless of how often you run the job. For example, suppose **Counting period** is set to *7* and journal lines were last generated for a count on January 1. If another job is started on January 5, then no lines are generated in the journal for that period interval because seven days haven't passed. However, if you start the job again on January 8, then lines are generated for the period because seven days have passed.  
-    - *Zero in stock* – If on-hand inventory reaches zero (0), lines are generated in the counting journal when the job is run. If the on-hand inventory reaches 0 after a count, lines are generated the next time that you start the count.  
-    - *Minimum* – Inserts lines in the counting journal if the on-hand inventory is equal to or less than the minimum that is specified.
+    - *Manual* – Add lines to the counting journal every time you run the job. In other words, you decide the counting interval for the counting group.  
+    - *Period* – Add lines to the counting journal according to the period interval set in the **Counting period** field. With this option, when you run the job for creating new lines in the counting journal, it creates new lines at the specified interval, regardless of how often you run the job. For example, suppose **Counting period** is set to *7* and journal lines were last generated for a count on January 1. If another job is started on January 5, then no lines are generated in the journal for that period interval because seven days haven't passed. However, if you start the job again on January 8, then lines are generated for the period because seven days have passed.
+    - *Zero in stock* – If on-hand inventory reaches zero (0), generate lines in the counting journal when the job is run. If the on-hand inventory reaches 0 after a count, lines are generated the next time that you start the count.  
+    - *Minimum* – Insert lines in the counting journal if the on-hand inventory is equal to or less than the minimum that is specified.
 
-6. Select **Save**.
+1. If you set **Counting code** to *Period*, then enter the period interval (in days) in the **Counting period** field.
+1. Select **Save**.
 
 ## Create a counting journal name
 
