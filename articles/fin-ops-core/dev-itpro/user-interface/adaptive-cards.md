@@ -136,7 +136,7 @@ To add the Adaptive Card control in the desired placement on your form, follow t
 
 When the Adaptive Card control is added to your form, you can define the data that populates the properties in your template for the card.
 
-To populate the data propoerties on the Adaptive card, follow these steps.
+To populate the data properties on the Adaptive card, follow these steps.
 
 1. View the code for the form where you added the Adaptive Card.
 1. Create an instance of your data class, and populate the properties of the data contract.
