@@ -88,6 +88,7 @@ To set the counting policy to allow items to be counted independently in each wa
 12. In the STORE INVENTORY section select the Site and the Warehouse.
 13. In the Counting by section select the Warehouse option.
 14. Select **Ok**.
+
 On the newly created counting journal continue with adding items using one of the standard procedures. 
 
 
