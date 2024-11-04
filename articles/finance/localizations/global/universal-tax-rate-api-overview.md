@@ -101,11 +101,7 @@ To enable a tax solution provider, follow these steps.
 
 ## Supported countries/regions
 
-The Universal Tax Rate API can be run for supported localization features. The following table lists the countries/regions for a legal entity's primary address.
-
-| Version | Country/region |
-|---|---|
-| 10.0.39 | United States |
+The Universal Tax Rate API can be enabled for for any country/region.
 
 For more information about supported countries/regions, contact your tax solution providers.
 
