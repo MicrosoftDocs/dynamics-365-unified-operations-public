@@ -72,14 +72,24 @@ To prevent double-counting mistakes, the system normally allows items to be part
 
 ### Count items independently per warehouse
 
-To set the counting policy to allow items to be counted independently in each warehouse, follow these steps.
+To set the counting policy to allow items to be counted independently in each warehouse and cheching that an item with identical dimension value can only be included within the same counting journal, follow these steps.
 
-1. On the Action Pane, select **Manage inventory**.
-2. Select **Warehouse items**.
-3. Select **New**.
-4. In the **Warehouse** field, select the warehouse you want to set up specific counting policies for.
-5. In the **Counting group** field, select the counting group that should apply to the item in the selected warehouse. When counting is performed in that warehouse, this counting policy overrides the general counting policy for the item.  
-6. Select **Save**.
+1. Go to **Product information management** \> **Products** \> **Released products**.
+2. In the list, select the link for the item number of the product that you want to be counted. You must select an item that is inventory tracked. A non-stocked product can't be counted.
+3. Toggle the expansion of the **Manage inventory** section.
+4. Select **Warehouse items**.
+5. Select **New**.
+6. In the **Warehouse** field, select the warehouse you want to set up specific counting policies for.
+7. Select **Save**.
+8. Repeat the same process for all the warehouses where the item will be counted.
+9. Repeat the same process for all the items that need to be counted independently in each warehouse.
+10. Go to **Inventory management**  \> **Journal entries** \> **Items counting** \> **Counting**.
+11. Select **New**.
+12. In the STORE INVENTORY section select the Site and the Warehouse.
+13. In the Counting by section select the Warehouse option.
+14. Select **Ok**.
+On the newly created counting journal continue with adding items using one of the standard procedures. 
+
 
 ### Disable counting status registration
 
