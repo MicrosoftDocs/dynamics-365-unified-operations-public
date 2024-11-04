@@ -8,30 +8,30 @@ ms.date: 11/04/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2024-10-28
-ms.dyn365.ops.version: PU66
+ms.dyn365.ops.version: PU66F
 ---
 
 # Adaptive Card controls
 
 [!include [banner](../includes/banner.md)]
 
-[Adaptive Cards](adaptive-cards) are a platform-agnostic way for developers to create rich, interactive card-like interfaces that can be embedded in various applications like Microsoft Teams, Outlook, Copilot Studio chatbots, and other chat or web applications. The key benefit of Adaptive Cards is that they allow developers to design a card once and use it across multiple platforms without needing to adjust the layout for each one. The open card exchange format enables developers to describe content as a simple JSON object, making it easy to structure and manipulate cards dynamically.
+[Adaptive Cards](/adaptive-cards) are a platform-agnostic way for developers to create rich, interactive card-like interfaces that can be embedded in various applications like Microsoft Teams, Outlook, Copilot Studio chatbots, and other chat or web applications. The key benefit of Adaptive Cards is that they allow developers to design a card once and use it across multiple platforms without needing to adjust the layout for each one. The open card exchange format enables developers to describe content as a simple JSON object, making it easy to structure and manipulate cards dynamically.
 
-The Adaptive Cards control for finance and operations apps enables developers to render Adaptive Cards natively in application forms. See [https://adaptivecards.io](https://adaptivecards.io) for more information on Adaptive Cards, including documentation, samples, and a designer to get started in building your Adaptive Cards.
+The Adaptive Cards control for finance and operations apps enables developers to render Adaptive Cards natively in application forms. For more information on Adaptive Cards, including documentation, samples, and a designer to get started in building your Adaptive Cards, see [https://adaptivecards.io](https://adaptivecards.io).
 
 ![Screen shot of an Adaptive Card in a form in finance and operations apps](./media/AdaptiveCardControl.png) 
 
 ## Using Adaptive Cards
 The following steps are needed to use Adaptive Cards on forms in finance and operations apps:
-1. Define the data contract for the data properties that will populate the adaptive card.
+1. Define the data contract for the data properties that populates the adaptive card.
 2. Configure the Adaptive Card template to define the card layout and formatting.
 3. Add the Adaptive Card control to the form.
-4. Define the data that will populate the card.
+4. Define the data that populates the card.
 
 ### Define the data properties for your Adaptive Card
-First define the data properties that populate your Adaptive Card. This is done by creating a new class as a data contract that extends the `AdaptiveCardData` class. Define the properties and add an accessor method for each property in the class.
+First define the data properties that populate your Adaptive Card by creating a new class as a data contract that extends the `AdaptiveCardData` class. Define the properties and add an accessor method for each property in the class.
 
-The following provides an example class for properties that may be used for an Adaptive Card displaying a profile and insights about a customer record.
+The following example class for properties that may be used for an Adaptive Card displaying a profile and insights about a customer record.
 
 ```X++
 [DataContract]
@@ -89,17 +89,17 @@ public class AdaptiveCardCustomerData extends AdaptiveCardData
 ```
 
 ### Configure the Adaptive Card template
-After defining the properties that will display on the Adaptive Card, you define how the fields will be laid out on the card. The Adaptive Card template defines the layout and formatting of the data on the Adaptive Card control. 
+After defining the properties that display on the Adaptive Card, you define how the fields are laid out on the card. The Adaptive Card template defines the layout and formatting of the data on the Adaptive Card control. 
 1. Create a class that extends the `AdaptiveCardTemplate` class.
 2. Define the class as a data contract with accessor methods to return properties set in the class.
-3. Provide a value for the `type` property that will be used as an identifier for the template type.
+3. Provide a value for the `type` property that's used as an identifier for the template type.
 4. The `template` property is set to a string of the JSON object that defines the layout and format of the Adaptive Card.
 5. Build your project to make the template available for use on forms.
 
 > [!TIP]
 > You can use tools like the [Adaptive Cards designer](https://adaptivecards.io/designer) for assistance in creating the JSON for the Adaptive Card template.
 
-The following is an example class for an Adaptive Card template. This example includes actions to refresh the contents of the card, copy defined card elements, and provide feedback with thumbs up and down voting.
+The following example class for an Adaptive Card template. This example includes actions to refresh the contents of the card, copy defined card elements, and provide feedback with thumbs up and down voting.
 
 ```X++
 [DataContract]
@@ -124,7 +124,7 @@ Add the Adaptive Card control in the desired placement on your form.
 3. On the **Properties** for the control, provide a **Name**, and select the template class created earlier in the **Template class** property.
 
 ### Populate the data properties on the Adaptive Card
-When the Adaptive Card control is added to your form, you can define the data that will populate the properties in your template for the card.
+When the Adaptive Card control is added to your form, you can define the data that populates the properties in your template for the card.
 1. View the code for the form where you added the Adaptive Card.
 2. Create an instance of your data class, and populate the properties of the data contract.
 3. Create a class that defines any actions added to the template.
