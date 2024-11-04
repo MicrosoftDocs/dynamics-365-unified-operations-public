@@ -129,7 +129,7 @@ public class AdaptiveCardCustomerTemplate extends AdaptiveCardTemplate
 
 To add an Adaptive Card control in the desired place on a page in finance and operations apps, follow these steps. 
 
-1. In Visual Studio, in the page design of the page in your development environment for finance and operations apps, select and hold (or right-click) the node where you want to put the Adaptive Card. Then select **New** \> **Adaptive card**.
+1. In Visual Studio, in the page design of the page in your development environment for finance and operations apps, find the node where you want to put the Adaptive Card. Select and hold (or right-click) the node, and then select **New** \> **Adaptive card**.
 1. In the properties for the control, for the **Name** property, provide a name for the new card.
 1. For the **Template class** property, select the template class that you created earlier.
 
