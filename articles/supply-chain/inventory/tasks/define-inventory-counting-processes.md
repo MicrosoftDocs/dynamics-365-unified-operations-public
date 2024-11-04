@@ -27,7 +27,7 @@ Learn more about advanced warehouse scenarios in [Cycle counting](../../warehous
 1. In the **Counting code** field, choose one of the following values:
 
     - *Manual* – Add lines to the counting journal every time you run the job. In other words, you decide the counting interval for the counting group.  
-    - *Period* – Add lines to the counting journal according to the period interval set in the **Counting period** field. With this option, when you run the job for creating new lines in the counting journal, it creates new lines at the specified interval, regardless of how often you run the job. For example, suppose **Counting period** is set to *7* and journal lines were last generated for a count on January 1. If another job is started on January 5, then no lines are generated in the journal for that period interval because seven days haven't passed. However, if you start the job again on January 8, then lines are generated for the period because seven days have passed.
+    - *Period* – Add lines to the counting journal according to the period interval set in the **Counting period** field. With this option, when you run the job for creating new lines in the counting journal, it creates them only at the specified interval, regardless of how often you run the job. For example, suppose **Counting period** is set to *7* and counting journal lines were last generated on January 1. If another job is started on January 5, then no lines will be generated in the counting journal because seven days haven't passed. However, if you start the job again on January 8, then lines will be generated because seven days have passed.
     - *Zero in stock* – If on-hand inventory reaches zero (0), generate lines in the counting journal when the job is run. If the on-hand inventory reaches 0 after a count, lines are generated the next time that you start the count.  
     - *Minimum* – Insert lines in the counting journal if the on-hand inventory is equal to or less than the minimum that is specified.
 
@@ -60,7 +60,7 @@ Learn more about advanced warehouse scenarios in [Cycle counting](../../warehous
 ## Set the counting policy for an item
 
 1. Go to **Product information management** \> **Products** \> **Released products**.
-1. Open the item that you want to set counting policies on. You must select an item that is inventory tracked. A non-stocked product can't be counted.
+1. Open the item that you want to set counting policies on. You must select an item that is inventory tracked. Non-stocked products can't be counted.
 1. Select **Edit**.
 1. Expand the **Manage inventory** FastTab.
 1. In the **Counting group** field, assign a counting group. This product will now be included when inventory counting journal lines are created using this counting group.  
@@ -68,7 +68,7 @@ Learn more about advanced warehouse scenarios in [Cycle counting](../../warehous
 
 ## Implement advanced counting scenarios
 
-To prevent double-counting mistakes, the system normally allows items to be part of just one active counting journal at a time. However, if your company processes require it, you can relax this constraint to count items independently per warehouse or turn this integrity check off completely. The following subsections explain how.
+To prevent double-counting mistakes, the system normally only allows items to be part of a single active counting journal at a time. However, if your company processes require it, you can relax this constraint to count items independently per warehouse or turn this integrity check off completely. The following subsections explain how.
 
 ### Count items independently per warehouse
 
