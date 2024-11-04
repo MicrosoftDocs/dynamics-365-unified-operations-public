@@ -19,22 +19,24 @@ ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 
 [!include [banner](../includes/banner.md)]
 
-Entering transactions accurately is important for proper reporting. Transactions should be posted to the correct accounts and dimensions with the correct amounts. This article explains how the Audit report provides details about posted transactions.
+Accurate entry of transactions is important for proper reporting. Transactions should be posted to the correct accounts and dimensions, and with the correct amounts. This article explains how the **Postings audit** report provides details about posted transactions.
 
-The row definition for the report contains a dimension value set of several accounts that commonly have posting issues. Alternatively, a row definition similar to a trial balance containing all natural accounts 
-could be used. The column definition contains the month-to-date amounts and several columns with specific transaction attributes. These attributes may vary: 
+The row definition for the report contains a dimension value set of several accounts that commonly have posting issues. Alternatively, it can resemble the row definition for a trial balance and contain all natural accounts.
 
- - Transaction date
- - Audit trail code
- - Journal entry
- - Distribution reference
- - Source document
- - Series
- - Originating master record name
+The column definition contains the month-to-date amounts and several columns for specific transaction attributes. Those transaction attributes can vary. Here are some examples:
+
+- Transaction date
+- Audit trail code
+- Journal entry
+- Distribution reference
+- Source document
+- Series
+- Originating master record name
 
 ## Key features
-Key features of the **Postings audit** report are:
- - Dimension value set displays a list of the accounts that should be reviewed.
- - Transaction attributes show the journal entry number and other key transaction details.
- - Downloading the report to Excel, where it's easier to review large amounts of data. 
- 
+
+The **Postings audit** report has the following key features:
+
+- The dimension value set shows a list of the accounts that should be reviewed.
+- Transaction attributes show the journal entry number and other key transaction details.
+- You can download the report to Excel, where it's easier to review large amounts of data.
