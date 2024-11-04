@@ -39,13 +39,14 @@ Learn more about advanced warehouse scenarios in [Cycle counting](../../warehous
 1. Select **New**.
 1. In the **Name** field, type a value.
 1. In the **Description** field, type a value.
-1. In the **Journal type** field, select *Counting*. You can select a different voucher series ID if you want a specific number sequence for the voucher IDs generated when creating counting journals. Voucher series are created on the **Number sequences** page.  
-1. In the **Detail level** field, select the level of detail applied when the journal is posted. Choose one of the following values:
-    - *Manual* – The items are reserved manually in the Reservation form.  
+1. In the **Journal type** field, select *Counting*.
+1. In the **Voucher series** field, select the number sequence to use for generating voucher IDs for new counting journals.
+1. In the **Detail level** field, select the level of detail to apply when posting the journal.
+1. In the **Reservation** field, choose the method used to reserve items during counting. Choose one of the following values:
+    - *Manual* – The items are reserved manually on the **Reservation** page.
     - *Automatic* – The order quantity is reserved from the available on-hand inventory for the item.
-    - *Explosion* – The reservation is part of the master planning of the transaction.  
+    - *Explosion* – The reservation is part of the master planning of the transaction.
 
-1. In the **Reservation** field, choose the method used to reserve items during counting.
 1. Select **Save**.
 
 ## Set standard counting journal name
