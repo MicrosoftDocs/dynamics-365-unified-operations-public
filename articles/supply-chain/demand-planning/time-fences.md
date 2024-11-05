@@ -24,7 +24,7 @@ Time fences are defined as logical expressions and apply to all time series cell
 
 Time fences are both flexible and simple to maintain. Managers create time fence rules based on the dimensions available in each plan. For example, a single product could be set up with different time fences for each store or geographical location. Time fence rules can also apply based on each user's role. For example, a role-based time fence rule could allow managers to edit a forecast in a period that can't be edited by planners.
 
-## Time fence example
+## Time fences example
 
 The following screenshot shows an example of a time series where two time fences apply. The time fence is indicated as cells that show a lock icon, which means that the current user can't edit the values in these locked cells. The user can still edit values in all of the unlocked cells. The following time fences apply here:
 
@@ -33,7 +33,7 @@ The following screenshot shows an example of a time series where two time fences
 
 :::image type="content" source="media/time-fence-example.png" alt-text="Time fence example" lightbox="media/time-fence-example.png":::
 
-## Manage time fence
+## Manage time fences
 
 To view, create, edit, or delete a time fence, follow these steps.
 
