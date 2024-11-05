@@ -1,6 +1,6 @@
 ---
 title: Financial tag rule reference
-description: Learn about financial tags rules with PowerFx formulas
+description: Learn about financial tags rules with Microsoft Power Fx formulas.
 author: rcarlson
 ms.author: rcarlson
 ms.topic: article
@@ -15,30 +15,30 @@ ms.dyn365.ops.version: 10.0.42
 
 [!include [banner](../includes/banner.md)]
 
-# Additional reference information for Financial tag rules
+# Financial tag rule reference
 
-## Supported list of fields for all journals
+## Fields supported for all journals
 
-| Field name | PowerFx | Description | SQL field |
+| Field name | Microsoft Power Fx | Description | SQL field |
 | --- | --- | --- | --- |
-| Account | doc.Account.MainAccount<br><br>doc.Account.&lt;DimensionFields&gt; | The **Account** field has all of the available dimension fields associated with the **Account** field entered when the account type is set to **Ledger**. | Join to DimensionAttributeValueCombination to the proper field selected. |
-| Account type | doc.AccountType | Refers to the account type value in the journal line. | LedgerJournalTrans.AccountType |
-| Approved | doc.Approved | The true/false value if the journal line has been approved. | LedgerJournalTrans.Approved |
-| Approved by | doc.ApprovedBy | The user who approved the journal. | LedgerJournalTrans.Approver |
-| Bank | doc.Bank.Account<br><br>doc.Bank.Name| The **Bank account ID** or the **Bank account name** fields. Available when the **Account type** is set to **Bank**. | Join to BankAccountTable.AccountID and .Name |
-| Company | doc.Company | The **Account company** value set on the journal line. | LedgerJournalTrans.Company |
-| Currency | doc.Currency.Code | The **Currency** value for the journal line. | LedgerJournalTrans.Currencycode |
-| Customer | doc.Customer.Account<br><br>doc.Customer.Group (Pending ID/Name change)<br><br>doc.Customer.Name | The **Customer account ID**, **Customer account name**, or the **Customer group id** fields. Available when the **Account type** is set to **Customer**. | Joins to:  <br>CustTable.AccountNum<br><br>CustTable.CustGroup<br><br>CustGroup.Name<br><br>DirPartyTable.Name |
-| Fixed Asset | doc.FixedAsset.Account<br><br>doc.FixedAsset.Group<br><br>doc.FixedAsset.Name | The **Fixed asset account ID**, **Fixed asset name**, or the **Fixed asset group id** fields. Available when the **Account type** is set to **Fixed asset**. | Join to:<br><br>AssetTable.AssetID<br><br>AssetTable.AssetGroup<br><br>AssetTable.Name |
-| Invoice | doc.Invoice | The **Invoice** field on the journal line. | LedgerJournalTrans.Invoice |
-| Journal description | doc.JournalDescription | The **Journal line description** field. | LedgerJournalTrans.Txt |
-| Journal batch number | doc.JournalNum | The **Journal batch number** for the set of journal lines.<br><br>This field is available for both the header, the account and offset account tags. | **LedgerJournalTable.JournalNum (Header)**<br><br>**LedgerJournalTrans.JournalNum (Account/OffsetAccount)** |
-| Document | doc.Document | The **Document** field from the **Invoice** tab of the journal line. | LedgerJournalTrans.DocumentNum |
-| Financial dimensions\* | doc.Dimensions.&lt;DimensionFields&gt; | The **Dimension** field has all of the available dimension fields that are associated with the **Account** field entered when the **Account type** is set to anything other than **Ledger**. | Join to DimensionAttributeValueCombination to the proper field selected. |
-| Offset account\* | doc.OffsetDimensions.&lt;DimensionFields&gt; | The **Offset account** field has all of the available dimension fields\* that are associated with the **Offset account** field entered when the **Offset account type** is set to **Ledger**. | Join to DimensionAttributeValueCombination to the proper field selected. |
-| Payment reference | doc.PaymentReference | The **Journal line payment reference** field. | LedgerJournalTrans. PaymReference |
-| Posting profile | doc.PostingProfile | The **Journal line posting profile** field. | LedgerJournalTrans. PostingProfile |
-| Project | doc.Project.Account<br><br>doc.Project.Group<br><br>doc.Project.Name | The **Project account ID**, **Project account name**, or the **Project group id** fields. Available when the account type is set to **Customer**. | Join to:<br><br>ProjTable.ProjID<br><br>ProjTable.ProjGroupID<br><br>ProjTable.Name |
-| Reason / Reason comment | doc.Reason<br><br>doc.ReasonComment | The reason ID and the reason comment values related to a journal line. | Join to ReasonTableRef.Reason and .ReasonComment |
-| Vendor | doc.Vendor.Account<br><br>doc.Vendor.Group<br><br>doc.Vendor.Name | The **Vendor account ID**, **Vendor account name**, or the **Vendor group id** fields. Available when the account type is set to **Vendor**. | Join to:  <br>VendTable.AccountNum<br><br>VendTable.VendGroup<br><br>\*VendGroup.Name<br><br>DirPartyTable.Name |
-| Voucher number | doc.Voucher | The **Voucher** field from the journal line. | LedgerJournalTrans.Voucher |
+| Account | <ul><li>`doc.Account.MainAccount`</li><li>`doc.Account.<DimensionFields>`</li></ul> | When the account type is set to **Ledger**, all the available dimension fields that are associated with the **Account** field are entered in the **Account** field. | Join to `DimensionAttributeValueCombination` to the correct selected field |
+| Account type | `doc.AccountType` | This field refers to the account type value on the journal line. | `LedgerJournalTrans.AccountType` |
+| Approved | `doc.Approved` | A `true`/`false` value that indicates whether the journal line was approved. | `LedgerJournalTrans.Approved` |
+| Approved by | `doc.ApprovedBy` | The user who approved the journal. | `LedgerJournalTrans.Approver` |
+| Bank | <ul><li>`doc.Bank.Account`</li><li>`doc.Bank.Name`</li></ul> | <p>The **Bank account ID** or **Bank account name** field.</p><p>This field is available when the account type is set to **Bank**.</p> | <p>Join to:</p><ul><li>`BankAccountTable.AccountID`</li><li>`BankAccountTable.Name`</li></ul> |
+| Company | `doc.Company` | The **Account company** value that is set on the journal line. | `LedgerJournalTrans.Company` |
+| Currency | `doc.Currency.Code` | The **Currency** value for the journal line. | `LedgerJournalTrans.Currencycode` |
+| Customer | <ul><li>`doc.Customer.Account`</li><li>`doc.Customer.Group` (pending ID/name change)</li><li>`doc.Customer.Name`</li></ul> | <p>The **Customer account ID**, **Customer account name**, or **Customer group id** field.</p><p>This field is available when the account type is set to **Customer**.</p> | <p>Joins to:</p><ul><li>`CustTable.AccountNum`</li><li>`CustTable.CustGroup`</li><li>`CustGroup.Name`</li><li>`DirPartyTable.Name`</li></ul> |
+| Document | `doc.Document` | The **Document** field from the **Invoice** tab of the journal line. | `LedgerJournalTrans.DocumentNum` |
+| Financial dimensions\* | `doc.Dimensions.<DimensionFields>` | When the account type is set to anything except **Ledger**, all the available dimension fields that are associated with the **Account** field are entered in the **Dimension** field. | Join to `DimensionAttributeValueCombination` to the correct selected field |
+| Fixed Asset | <ul><li>`doc.FixedAsset.Account`</li><li>`doc.FixedAsset.Group`</li><li>`doc.FixedAsset.Name`</li></ul> | <p>The **Fixed asset account ID**, **Fixed asset name**, or **Fixed asset group id** field.</p><p>This field is available when the account type is set to **Fixed asset**.</p> | <p>Join to:</p><ul><li>`AssetTable.AssetID`</li><li>`AssetTable.AssetGroup`</li><li>`AssetTable.Name`</li></ul> |
+| Invoice | `doc.Invoice` | The **Invoice** field on the journal line. | `LedgerJournalTrans.Invoice` |
+| Journal batch number | `doc.JournalNum` | <p>The **Journal batch number** field for the set of journal lines.</p><p>This field is available for the header, account, and offset account tags.</p> | <ul><li>`LedgerJournalTable.JournalNum` (header)</li><li>`LedgerJournalTrans.JournalNum` (account/offset account)</li></ul> |
+| Journal description | `doc.JournalDescription` | The **Journal line description** field. | `LedgerJournalTrans.Txt` |
+| Offset account\* | `doc.OffsetDimensions.<DimensionFields>` | When the offset account type is set to **Ledger**, all the available dimension fields\* that are associated with the **Offset account** field are entered in the **Offset account** field. | Join to `DimensionAttributeValueCombination` to the correct selected field |
+| Payment reference | `doc.PaymentReference` | The **Journal line payment reference** field. | `LedgerJournalTrans. PaymReference` |
+| Posting profile | `doc.PostingProfile` | The **Journal line posting profile** field. | `LedgerJournalTrans. PostingProfile` |
+| Project | <ul><li>`doc.Project.Account`</li><li>`doc.Project.Group`</li><li>`doc.Project.Name`</li></ul> | <p>The **Project account ID**, **Project account name**, or **Project group id** field.</p><p>This field is available when the account type is set to **Customer**.</p> | <p>Join to:</p><ul><li>`ProjTable.ProjID`</li><li>`ProjTable.ProjGroupID`</li><li>`ProjTable.Name`</li></ul> |
+| Reason / Reason comment | <ul><li>`doc.Reason`</li><li>`doc.ReasonComment`</li></ul> | The reason ID and reason comment values that are related to a journal line. | <p>Join to:</p><ul><li>`ReasonTableRef.Reason`</li><li>`ReasonTableRef.ReasonComment`</li></ul> |
+| Vendor | <ul><li>`doc.Vendor.Account`</li><li>`doc.Vendor.Group`</li><li>`doc.Vendor.Name`</li></ul> | <p>The **Vendor account ID**, **Vendor account name**, or **Vendor group id** field.</p><p>This field is available when the account type is set to **Vendor**.</p> | <p>Join to:</p><ul><li>`VendTable.AccountNum`</li><li>`VendTable.VendGroup`</li><li>`*VendGroup.Name`</li><li>`DirPartyTable.Name`</li></ul> |
+| Voucher number | `doc.Voucher` | The **Voucher** field from the journal line. | `LedgerJournalTrans.Voucher` |
