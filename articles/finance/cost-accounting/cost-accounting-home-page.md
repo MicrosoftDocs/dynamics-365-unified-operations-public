@@ -28,19 +28,26 @@ The following learning map shows the major concepts and tasks that make up the f
 
 ## Quick links
 
-| &nbsp; | &nbsp; |
-|--|--|
-| [Get started with cost accounting (Learn)](/training/modules/get-started-cost-accounting-dyn365-finance/) | [Cost element dimensions](cost-elements.md) |
-| [Dimension hierarchy](dimension-hierarchy.md) | [Define cost control units](./tasks/define-cost-control-units.md) |  |
-| [Allocation bases](allocation-bases.md) | [Create and assign a cost allocation policy to a cost control unit](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) |  |
-| [Manage a data source for the cost accounting ledger](./tasks/manage-data-source-cost-accounting-ledger.md) | [Process and trace source data](./tasks/process-trace-source-data.md) |  |
-| [Overhead calculation](overhead-calculation.md) | [Cost control workspace](cost-control-workspace.md) |
+See the following articles to learn more:
+
+- [Get started with cost accounting (Learn)](/training/modules/get-started-cost-accounting-dyn365-finance/)
+- [Cost element dimensions](cost-elements.md)
+- [Dimension hierarchy](dimension-hierarchy.md)
+- [Define cost control units](./tasks/define-cost-control-units.md)
+- [Allocation bases](allocation-bases.md)
+- [Create and assign a cost allocation policy to a cost control unit](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md)
+- [Manage a data source for the cost accounting ledger](./tasks/manage-data-source-cost-accounting-ledger.md)
+- [Process and trace source data](./tasks/process-trace-source-data.md)
+- [Overhead calculation](overhead-calculation.md)
+- [Cost control workspace](cost-control-workspace.md)
 
 ## Get started videos
 
-| &nbsp; | &nbsp; | &nbsp; |
-|--|--|--|
-| [Get started with cost accounting](https://www.youtube.com/watch?v=1pUDtJQZ8FU&t=35s) | [Cost accounting mobile workspace](https://www.youtube.com/watch?v=imsuTg8rUVk&t=7s) | [Use Excel for cost accounting analysis](https://www.youtube.com/watch?v=-HKHYdClvx8) |
+Watch the following videos to learn how to get started:
+
+- [Get started with cost accounting](https://www.youtube.com/watch?v=1pUDtJQZ8FU&t=35s)
+- [Cost accounting mobile workspace](https://www.youtube.com/watch?v=imsuTg8rUVk&t=7s)
+- [Use Excel for cost accounting analysis](https://www.youtube.com/watch?v=-HKHYdClvx8)
 
 ## White papers
 
