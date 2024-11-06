@@ -33,7 +33,7 @@ To use the **Norwegian SAF-T Financial data** report in Dynamics 365 Finance, co
 3. [Set up the tax registration numbers of the company](#registration-number).
 4. [Set up the ER format on the **General ledger parameters** page](#parameters).
 5. [Associate sales tax codes used in Finance with Norwegian standard value-added tax (VAT) codes](#sales).
-6. [Associate main accounts used in Finance with Norwegian standard accounts or an Income statement (Næringslivskoder)](#main).
+6. [Associate main accounts used in Finance with Norwegian standard accounts or an Income statement (Næringslivskoder)](#main-accounts).
 7. [Enable features in Feature management](#features).
 
 ### <a name="import"></a> Import ER configurations
@@ -120,14 +120,14 @@ If you use option 1, the report doesn't consider option 2. If any of the sales t
 
     ![Setup Standard tax code for the selected Sales tax code.](../media/not-saf-external-codes-tax.png)
 
-### <a name="main"></a> Associate main accounts used in Finance with Norwegian standard accounts or an Income statement (Næringslivskoder)
+### <a name="main-accounts"></a> Associate main accounts used in Finance with Norwegian standard accounts or an Income statement (Næringslivskoder)
 
 In Norwegian SAF-T Financial data, main accounts that are used in Finance must be associated with Norwegian standard accounts or an Income statement (Næringslivskoder) for the purpose of SAF-T reporting. The Norwegian standard accounts are available at <https://github.com/Skatteetaten/saf-t>.
 
 As of version 175.119 of the **SAF-T Format (NO)** ER format, you can use of the following two options to associate main accounts that are used in Finance with Norwegian standard accounts or an Income statement. Base your choice on your company's setup and preferences.
 
 1. Use additional consolidation accounts. Use this option to associate main accounts that are used in Finance with an Income statement (grouping category and grouping code).
-2. Use the application-specific parameters of the ER format. This option supports only Norwegian standard accounts.
+2. Use the application-specific parameters of the ER format. This option supports only Norwegian standard accounts and is available before January 1, 2025 only.
 
 If option 1 is used, the report doesn't consider option 2. If any of the main accounts that are used in Finance aren't associated with a value by using either the application-specific parameters of the ER format or additional consolidation accounts, you receive a warning message when you generate the report. This message includes information about the missing mapping.
 
@@ -136,8 +136,8 @@ If option 1 is used, the report doesn't consider option 2. If any of the main ac
 
 #### Option 1: Associate main accounts used in Finance with Norwegian standard accounts or an Income statement by using additional consolidation accounts
 
-1. Create a [consolidation account group](../../general-ledger/tasks/create-consolidation-groups.md#create-a-consolidation-account-group). If the **Use grouping category** option of the report is turned on, the value of the **Consolidation account group** field on the **Consolidation account groups** page is used in the **GroupingCategory** field of the report.
-2. [Add accounts to the consolidation account group](../../general-ledger/tasks/create-consolidation-groups.md#add-accounts-to-consolidation-account-group). In the **Consolidation account** field, specify a standard account. If the **Use grouping category** option of the report is turned off, this value is reported in the **StandardAccountID** element of SAF-T under the **Master data** \> **GeneralLedgerAccounts** \> **Account** node. If the **Use grouping category** option of the report is turned on, this value is reported in the **GroupingCode** field of the report. In the **Consolidation account name** field, you can optionally specify the standard account name or description. This value isn't used in SAF-T.
+1. Create a [consolidation account group](../../general-ledger/tasks/create-consolidation-groups.md#create-a-consolidation-account-group). You can chose any name for consolidation account group, this name isn't used in the XML report. **Consolidation account group** is used as a link to the set of **Additional consolidation accounts** where Norwegian standard accounts or an Income statement (Næringslivskoder) for the purpose of SAF-T reporting are defined.
+2. [Add accounts to the consolidation account group](../../general-ledger/tasks/create-consolidation-groups.md#add-accounts-to-consolidation-account-group). In the **Consolidation account** field, specify a standard account. If the **Use grouping category** option of the report is turned off, this value is reported in the **StandardAccountID** element of SAF-T under the **Master data** \> **GeneralLedgerAccounts** \> **Account** node (available before January 1, 2025 only). If the **Use grouping category** option of the report is turned on, this value is reported in the **GroupingCode** field of the report. In the **Consolidation account name** field, you can optionally specify the standard account name or description. This value isn't used in SAF-T.
 
 For more information about additional consolidation accounts, see [Consolidation account groups and additional consolidation accounts](../../budgeting/consolidation-account-groups-consolidation-accounts.md).
 
