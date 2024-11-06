@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.date: 06/21/2024
+ms.date: 06/21/2024/
 ms.reviewer: johnmichalak
 ms.search.region: Estonia
 ms.search.validFrom: 2017-12-31
@@ -21,7 +21,7 @@ Estonia legally allows people to ask companies for reports that identify the per
 
 All companies must gather data about employees, customers, and vendors, and also other personal data. When the data is gathered about persons, most of the information is considered personal data and must be handled correctly according to the Estonian legislation. All information that comes from logging changes or inquiries on tables that are related to personal data is presented on three defined reports: **Personal chart**, **Access log**, and **Permission changes**.
 
-Following tables are in scope of logging changes or inquiries that are related to personal data:
+The following tables are in scope of logging changes or inquiries that are related to personal data:
 
 | Table	| Label |
 |-------|-------|
@@ -30,7 +30,7 @@ Following tables are in scope of logging changes or inquiries that are related t
 | HcmEmployment |	Employment | 
 | HcmEmploymentContractor |	Employment contractor |
 | HcmEmploymentDetail |	Employment detail |
-| HcmEmploymentEmployee |	Employeet detail |
+| HcmEmploymentEmployee |	Employee detail |
 | HcmEmploymentTerm |	Employment term |
 | HcmEmploymentVacation |	Employment vacation |
 | HcmPersonAccommodation |	Accommodations |
