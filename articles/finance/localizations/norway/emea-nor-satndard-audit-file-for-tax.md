@@ -4,11 +4,10 @@ description: Learn how to set up and generate the Standard Audit File for Tax (S
 author: liza-golub
 ms.author: egolub
 ms.topic: how-to
-ms.date: 08/16/2024
+ms.date: 11/06/2024
 ms.custom: 
   - bap-template
 ms.reviewer: johnmichalak
-audience: Application User
 ms.search.region: Norway
 ---
 
