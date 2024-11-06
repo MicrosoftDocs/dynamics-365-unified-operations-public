@@ -23,15 +23,15 @@ This version of Demand planning adds several new features, as described in the f
 
 #### Select input for forecasts and calculations at the model level
 
-In previous versions of Demand planning, the input time series used by forecast and calculation profiles was set at the *profile* level. This setting is now part of the *model* configuration, which improves usability while adding flexibility to your model designs (including the ability to add a signal input). As before, each forecast or calculation model starts with an *Input* action card, but now it includes a setting where you choose the time series to use as input for the model. You can also choose a time series version and add filters based on date or dimensions (such as products and locations). As with all action cards, you access these settings by opening the **Actions** menu (ellipsis button) on the card.
+In previous versions of Demand planning, the input time series used by forecast and calculation profiles was set at the *profile* level. This setting is now part of the *model* configuration, which improves usability while adding flexibility to your model designs (including the ability to add a signal input). As before, each forecast or calculation model starts with an *Input* action card, but now it includes a setting where you choose the time series to use as input for the model. You can also choose a time series version and add filters based on dates and/or dimensions (such as products and locations). As with all action cards, you access these settings by opening the **Actions** menu (ellipsis button) on the card.
+
+#### Apply input filters in calculation profiles
+
+You can now filter the input used in calculation profiles. Filters can be based on dates and/or dimensions (such as products and locations). It was already possible to apply filters in forecast profiles.
 
 #### Analyze demand plans with Copilot
 
 Copilot cursor prompts in Demand planning let you explore specific data points or data ranges in a forecast or time series. Each prompt presents a set of predefined questions that you can ask Copilot, which then returns insights into notable shifts, trends, anomalies, or deviations across multiple dimensions. Copilot replies using natural-language summaries and visuals, which make it easy for you to digest the information and use it to make informed decisions.
-
-#### Apply input filters in calculation profiles
-
-You can now filter the input used in calculation profiles. Filters can be based on date or dimensions (such as products and locations). It was already possible to apply filters in forecast profiles.
 
 #### Forecast with signals (preview)
 
