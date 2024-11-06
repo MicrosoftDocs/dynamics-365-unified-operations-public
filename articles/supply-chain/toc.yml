@@ -2971,7 +2971,7 @@
             href: production-control/tasks/remove-kanban-job-schedule.md
           - name: Revert kanban job status
             href: production-control/tasks/revert-kanban-job-status.md
-          - name: Schedule kanban jobs)
+          - name: Schedule kanban jobs
             href: production-control/tasks/schedule-kanban-jobs.md
           - name: Transfer materials with kanban jobs
             href: production-control/tasks/transfer-materials-kanban-jobs.md

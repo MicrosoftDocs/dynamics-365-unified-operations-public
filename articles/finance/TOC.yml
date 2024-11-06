@@ -1076,6 +1076,10 @@
                       href: general-ledger/financial-tag.md
                     - name: Differences between financial tags and financial dimensions
                       href: general-ledger/financial-tag-financial-dimension.md
+                    - name: Financial tag rules
+                      href: general-ledger/financial-tag-defaulting.md
+                    - name: Financial tag rule reference
+                      href: general-ledger/financial-tag-rule-reference.md
                 - name: Financial dimensions
                   items:
                     - name: Financial dimensions
