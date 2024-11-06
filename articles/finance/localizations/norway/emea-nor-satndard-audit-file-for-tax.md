@@ -206,7 +206,7 @@ To generate the **Norwegian SAF-T Financial data** report, follow these steps.
 
     Where *GeneralLedgerEntries/Journal/Transaction/Line/TaxInformation/TaxAmount/Currency* represents the document currency.
 
-6. Select **Include zero lines** to include documents that have a zero amount on the report. This option is available as of Finance version 10.0.37. In the **Consolidation account group** field, select the name of the consolidation account group that you created and set up for [Norwegian standard accounts or an Income statement](#main).
+6. Select **Include zero lines** to include documents that have a zero amount on the report. This option is available as of Finance version 10.0.37. In the **Consolidation account group** field, select the name of the consolidation account group that you created and set up for [Norwegian standard accounts or an Income statement](#mainaccounts).
 7. Select the **Use grouping category** checkbox to force **GroupingCategory** and **GroupingCode** nodes to be generated instead of the **StandardAccountID** element in the **GeneralLedgerAccounts** node. This checkbox is available as of Finance version 10.0.37. The value of **GroupingCategory** is copied from the name of the consolidation account group. **Use grouping category** parameter is mandatory as of January 1, 2025, due to changes introduced in SAF-T Financial of version 1.30. It is recommended to use following or higher version of ER configurations:
 - SAF-T Format (NO) **175.137**
 - SAF-T Financial data model mapping **175.92**
