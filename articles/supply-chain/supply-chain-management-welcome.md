@@ -61,7 +61,7 @@ The following blogs provide information about Supply Chain Management and relate
 
 ## E-learning courses and training
 
-Many online training courses for Supply Chain Management are available on the [Microsoft Learn Training site](https://learn.microsoft.com/en-us/training/browse/?expanded=dynamics-365&products=dynamics-scm&resource_type=learning%20path).
+Many online training courses for Supply Chain Management are available on the [Microsoft Learn Training site](/training/browse/?expanded=dynamics-365&products=dynamics-scm&resource_type=learning%20path).
 
 ## Related documentation
 
