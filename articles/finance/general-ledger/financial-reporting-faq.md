@@ -31,7 +31,7 @@ The USMF demo company has a **Balance sheet** report that not all Financial repo
 5. Select the users or groups that require access to the report.
 6. Select **Save**.
 7. In the report definition, add your new tree definition.
-8. In the tree definition, select **Setting**. Then, under **Reporting unit selection**, select **Include all units**.
+8. In the report definition, select **Setting**. Then, under **Reporting unit selection**, select **Include all units**.
 
 ## How do I identify which accounts don't match my balances?
 
