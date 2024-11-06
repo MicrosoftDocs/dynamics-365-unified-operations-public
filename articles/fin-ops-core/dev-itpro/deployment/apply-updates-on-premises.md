@@ -43,7 +43,7 @@ The following steps can be used to apply platform update packages.
 
 ### Prerequisites
 - Before you begin, complete a full backup of the Management Reporter (MR), Microsoft Dynamics AX, and Microsoft SQL Server Reporting Services (SSRS databases). Although the code is restored through LCS, the database must be manually restored to help guarantee that there's no data loss.
-- Update the local agent to the latest version. For more information, see [Update the local agent](../lifecycle-services/update-local-agent.md).
+- Update the local agent to the latest version. For more information, see [Update the local agent](../lifecycle-services/update-local-agent.md). 
 - Depending on the type of update, complete the following steps to generate a deployable package:
 
     - **Platform update packages** – Download or save the update directly to the Asset library in LCS by following the steps in [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
