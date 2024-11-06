@@ -64,7 +64,7 @@ The following steps can be used to apply platform update packages.
 8. After the update is completed, the environment state is changed back to **Deployed**. If application of the update fails, the environment state is changed to **Failed**. For information about what to do if package application fails, see the "Resolve a failed update application" section later in this article.
 
     >[!NOTE]
-    > During the update, the database is synchronized to update any changes to table definitions, this action can take some time particularly for larger databases. Additionally, all reports are deployed again to the SQL Reporting Services nodes. 
+    > During the update, the database is synchronized to update any changes to table definitions, this action can take some time for larger databases. Additionally, all reports are deployed again to the SQL Reporting Services nodes. 
 
 9. Open the **History** and **Environment details** pages to view the operations that were performed on the environment. You can view a record of major actions that were performed on the environment, such as deployments, servicing, and rollbacks.
 
