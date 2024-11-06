@@ -33,7 +33,7 @@ To use the **Norwegian SAF-T Financial data** report in Dynamics 365 Finance, co
 3. [Set up the tax registration numbers of the company](#registration-number).
 4. [Set up the ER format on the **General ledger parameters** page](#parameters).
 5. [Associate sales tax codes used in Finance with Norwegian standard value-added tax (VAT) codes](#sales).
-6. [Associate main accounts used in Finance with Norwegian standard accounts or an Income statement (Næringslivskoder)](#main-accounts).
+6. [Associate main accounts used in Finance with Norwegian standard accounts or an Income statement (Næringslivskoder)](#mainaccounts).
 7. [Enable features in Feature management](#features).
 
 ### <a name="import"></a> Import ER configurations
@@ -120,7 +120,7 @@ If you use option 1, the report doesn't consider option 2. If any of the sales t
 
     ![Setup Standard tax code for the selected Sales tax code.](../media/not-saf-external-codes-tax.png)
 
-### <a name="main-accounts"></a> Associate main accounts used in Finance with Norwegian standard accounts or an Income statement (Næringslivskoder)
+### <a name="mainaccounts"></a> Associate main accounts used in Finance with Norwegian standard accounts or an Income statement (Næringslivskoder)
 
 In Norwegian SAF-T Financial data, main accounts that are used in Finance must be associated with Norwegian standard accounts or an Income statement (Næringslivskoder) for the purpose of SAF-T reporting. The Norwegian standard accounts are available at <https://github.com/Skatteetaten/saf-t>.
 
