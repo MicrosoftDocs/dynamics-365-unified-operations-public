@@ -6,7 +6,7 @@ ms.author: egolub
 ms.topic: conceptual
 ms.custom: 
   - bap-template
-ms.date: 06/21/2024/
+ms.date: 11/06/2024
 ms.reviewer: johnmichalak
 ms.search.region: Estonia
 ms.search.validFrom: 2017-12-31
