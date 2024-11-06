@@ -20,7 +20,7 @@ ms.assetid: e1b0a6e3-0c72-4a7d-90e1-20f870c6dbad
 
 [!include [banner](../includes/banner.md)]
 
-## Learning map 
+## Learning map
 
 The following learning map shows the major concepts and tasks that make up the framework of the Cost accounting module. Click the links in the [Quick links](#quick-links) section to learn how to use the module.
 
@@ -28,22 +28,24 @@ The following learning map shows the major concepts and tasks that make up the f
 
 ## Quick links
 
-| &nbsp; | &nbsp;  |
-|------|---|
-|  [Get started with cost accounting (Learn)](/training/modules/get-started-cost-accounting-dyn365-finance/)  |[Cost element dimensions](cost-elements.md)  |
-|  [Dimension hierarchy](dimension-hierarchy.md)  |[Define cost control units](./tasks/define-cost-control-units.md)| 
-| [Allocation bases](allocation-bases.md)|[Create and assign a cost allocation policy to a cost control unit](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
-| [Manage a data source for the cost accounting ledger](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [Process and trace source data](./tasks/process-trace-source-data.md)     | 
-|[Overhead calculation](overhead-calculation.md)  | [Cost control workspace](cost-control-workspace.md)   |
+| &nbsp; | &nbsp; |
+|--|--|
+| [Get started with cost accounting (Learn)](/training/modules/get-started-cost-accounting-dyn365-finance/) | [Cost element dimensions](cost-elements.md) |
+| [Dimension hierarchy](dimension-hierarchy.md) | [Define cost control units](./tasks/define-cost-control-units.md) |  |
+| [Allocation bases](allocation-bases.md) | [Create and assign a cost allocation policy to a cost control unit](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) |  |
+| [Manage a data source for the cost accounting ledger](./tasks/manage-data-source-cost-accounting-ledger.md) | [Process and trace source data](./tasks/process-trace-source-data.md) |  |
+| [Overhead calculation](overhead-calculation.md) | [Cost control workspace](cost-control-workspace.md) |
 
-## Get started videos<br/>
+## Get started videos
 
-| &nbsp; | &nbsp;  | &nbsp;  |
-|------------------------|--------------------|-----------------------------|
-| [Get started with cost accounting](https://www.youtube.com/watch?v=1pUDtJQZ8FU&t=35s)  | [Cost accounting mobile workspace](https://www.youtube.com/watch?v=imsuTg8rUVk&t=7s)  |   [Use Excel for cost accounting analysis](https://www.youtube.com/watch?v=-HKHYdClvx8)  |
+| &nbsp; | &nbsp; | &nbsp; |
+|--|--|--|
+| [Get started with cost accounting](https://www.youtube.com/watch?v=1pUDtJQZ8FU&t=35s) | [Cost accounting mobile workspace](https://www.youtube.com/watch?v=imsuTg8rUVk&t=7s) | [Use Excel for cost accounting analysis](https://www.youtube.com/watch?v=-HKHYdClvx8) |
 
+## White papers
 
+The following white papers explore various aspects of cost accounting in Dynamics 365 Supply Chain Management:
 
-
+- [BOM calculation by using a costing sheet](https://www.microsoft.com/download/details.aspx?id=101937)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
