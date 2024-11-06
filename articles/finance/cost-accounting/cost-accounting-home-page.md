@@ -28,7 +28,7 @@ The following learning map shows the major concepts and tasks that make up the f
 
 ## Quick links
 
-See the following articles to learn more:
+Read the following articles to learn more:
 
 - [Get started with cost accounting (Learn)](/training/modules/get-started-cost-accounting-dyn365-finance/)
 - [Cost element dimensions](cost-elements.md)
