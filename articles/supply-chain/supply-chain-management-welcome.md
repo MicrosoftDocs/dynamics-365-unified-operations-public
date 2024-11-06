@@ -63,11 +63,13 @@ The following blogs provide information about Dynamics 365 Supply Chain Manageme
 
 For online courses and training, check out [Dynamics 365 Supply Chain Management](/training/dynamics365/scm).
 
-## Development and administration for Supply Chain Management and other finance and operations apps
+## Related documentation
+
+### Development and administration for Supply Chain Management and other finance and operations apps
 
 For information about how to develop and administer Dynamics 365 Supply Chain Management and other finance and operations apps, go to [Development and administration for finance and operations apps](../fin-ops-core/dev-itpro/index.md).
 
-## Other finance and operations apps
+### Other finance and operations apps
 
 For information about other finance and operations apps, see the following documentation:
 
