@@ -67,6 +67,8 @@ To configure electronic invoicing Key Vault parameters, follow these steps.
 
 ## Configure the electronic invoicing feature
 
+---------Feature parameters--------------
+
 Some of the parameters from the **Polish electronic invoice (PL)** electronic invoicing feature are published with default values. Before you deploy the electronic invoicing feature to the service, review the default values, and update them as required, so that they better reflect your business operations.
 
 To review and update the **Polish electronic invoice (PL)** electronic invoicing feature configuration, follow these steps.
