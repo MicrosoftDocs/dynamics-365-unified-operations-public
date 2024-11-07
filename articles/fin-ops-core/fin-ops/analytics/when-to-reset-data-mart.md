@@ -17,31 +17,27 @@ This article provides answers to some frequently asked questions about data mart
 
 ## What is a data mart reset?
 
-A data mart reset disables the integration tasks, delete all the data mart data, and then re-enable integration.
+A data mart reset disables the integration tasks, delete all the data mart data, and then re-enables the integration.
 
 To ensure that old data isn't inserted, a data mart reset can be started only after existing tasks are completed. If you try to reset the data mart before all tasks are completed, you might receive a message such as, "The data mart reset was unable to be processed because of an active task. Try again later."
+
+Executing a data mart reset is a significant action and should almost never be done. There are, however, a few special cases where it may be required. If you encounter a situation where a reset seems necessary, it is highly recommended to contact support first. This allows us to properly investigate any underlying product issues that might be prompting the need for a reset. By doing so, we can ensure that we are addressing the root cause rather than applying a temporary fix.
 
 ## When do I have to do a data mart reset?
 
 If one or more of the following statements apply to your situation, your organization can benefit from a data mart reset:
 
-- **The application database was restored**
 - **You opened a support ticket** - A support engineer instructed you to reset the data mart as part of a troubleshooting step.
-- **Large percentage of versioned records** - High percentages of versioned records can degrade the overall report generation and integration performance, and incur extra database space usage. We recommend that you complete a datamart reset to remove the versioned records when there's more than 80% versioned records in the data mart.
-- **Your data mart integration is (soft) disabled**
+- **•	Your operations database was restored without your financial reporting database**
    
 > [!NOTE]
-> The process of resetting a data mart is affected by the number of general ledger and budget transactions in your database. Depending on the number of transactions in your system, a data mart reset can be completed in as little as 15 minutes, or it can take up to four hours. However, if your reset takes longer than four hours, we recommend that you contact Support.
+> The process of resetting a data mart is affected by the number of general ledger and budget transactions in your database. Depending on the number of transactions in your system, a data mart reset can be completed in as little as 15 minutes, or it can take up to four hours. The reset dialog will give you a rough estimate. However, If your reset takes longer than the estimated time given in the reset dialog, we recommend that you contact Support.
  
 ## When is a data mart reset inappropriate?
 
 Here are some of the circumstances where we don't recommend that you reset the data mart:
 
 - You're experiencing data integration performance issues.
-- Your Financial Reporter integration isn't enabled. 
-
-    - This means that General Ledger data is no longer being synchronized to your Financial Reporting datamart. Your Financial Reporter may not be getting up-to-date numbers for your financial reports. This typically occurs if you have not use Financial Reporter for a long time.
-    - You are prompted to enable integration by resetting the data mart. You can proceed by selecting **Yes**. You may also choose to reset the data mart at a later time. After integration is enabled, your general ledger data is synchronized in Financial Reporter again. 
 - You have a recurring reset pattern for any of the following reasons:
 
     - **Missing or unexpected data in the report** – If you notice that data is missing, open a support ticket with Microsoft to review your report format and possible data synchronization issues.
