@@ -4,7 +4,7 @@ description: Learn how to set up and use margin price adjustments, including a l
 author: sherry-zheng
 ms.author: chuzheng
 ms.topic: how-to
-ms.date: 04/03/2023
+ms.date: 10/25/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: GUPPriceComponentCode, GUPPriceComponentCodeSetup, GUPPricingTree, RetailPeriodicDiscount, GUPParameters
