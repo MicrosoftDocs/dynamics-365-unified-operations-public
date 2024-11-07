@@ -20,34 +20,33 @@ ms.service: dynamics-365-op
 This article provides guidance on how to debug data upgrade scripts.
 
 ## Background
-During the pre-sync and post-sync steps of the data upgrade, a high number of upgrade class methods will be scheduled and run in batch. These methods may be scheduled to execute once, for global scripts, or multiple times for each legal entity. The data upgrade methods are used to transform and update the table data from Microsoft AX 2012 to the version of D365 Finance and Operations you are upgrading to. 
+During the pre-sync and post-sync steps of the data upgrade, a high number of upgrade class methods are scheduled and run in batch. These methods can be scheduled to execute once, for global scripts, or multiple times for each legal entity. The data upgrade methods are used to transform and update the table data from Microsoft AX 2012 to the version of Dynamics 365 finance and operations you are upgrading to. 
 
-Occasionally, during an upgrade you may experience that the data method has errors, and in almost all cases this is due to some data quality issues in the source AX 2012 database. Customizations and data from earlier AX 2012 or prior releases can cause these symptoms. 
+Occasionally, during an upgrade you may experience that the data method has errors. This can be due to data quality issues in the source AX 2012 database. Customizations and data from earlier versions of AX 2012 or prior releases can cause these symptoms. 
 
-The errors for the pre-sync and post sync jobs can be checked by using the following SQL statement once the step in the upgrade has failed:
+The errors for the pre-sync and post-sync jobs can be checked by using the following SQL statement after the upgrade has failed:
 ```SQL
 --Shows upgrade jobs that were in error, including error messages
 select * from RELEASEUPDATESCRIPTSERRORLOG
 ```
-Depending on the error message, you may need to debug the class method during the upgrade testing to determine the cause. The following section in this document explains how to do this.
-For more information on how to monitor the upgrade see: [Monitor the upgrade](monitor-upgrade.md)
+Depending on the error message, you may need to debug the class method during the upgrade testing to determine the cause. For more information on how to monitor the upgrade, see: [Monitor the upgrade](monitor-upgrade.md)
 
 ## Debugging steps
-To debug a pre-sync or post-sync upgrade class\method, please follow these steps:
- - Open Visual Studio on the development virtual machine (Cloud Hosted Environment or VHD) where you are running the data upgrade. See: [Upgrade from AX 2012 - Data upgrade in development environments]( data-upgrade-2012.md)
- - Create a new empty Finance and Operations solution, this helps when debugging and drilling into sub methods. You don’t need to add any objects to the solution and project. 
- - Select the Dynamics D365 menu (this may be under the Extensions menu), and select Options. Under the **Dynamics 365 > Debugging**, check (select) the options below:
+To debug a pre-sync or post-sync upgrade class\method, follow these steps:
+1. Open Visual Studio on the development virtual machine (Cloud Hosted Environment or VHD) where you are running the data upgrade. For more information, see [Upgrade from AX 2012 - Data upgrade in development environments]( data-upgrade-2012.md)
+2. Create a new empty Dynamics 365 finance and operations solution. This helps when debugging and drilling into sub methods. You don’t need to add any objects to the solution and project.
+3. Select the Dynamics D365 menu, and select **Options**. Under the **Dynamics 365 > Debugging**, select the following options:
    - Debug items in the solution and items in specific packages. Limiting the number of items being debugged provides a better debugging experience.
-   - Include Packages [Models] – (Select all)
- - From the AOT (Application Explorer), locate and open the class and method you need to debug and set break points as required.
- - From the Debug menu, select **Attach To Process**, and set the following.
-   - Check the **Show processes for all users**
-   - Enter **DataUpgradeBatch.exe** in the filter
-   - Check **Automatic Refresh**
- - Open a PowerShell prompt and change the path to the folder where you are running the Data Upgrade deployable package.
-- Rerun the failed data upgrade runbook, see: [Rerun the runbook after a failure](data-upgrade-2012.md#rerun-the-runbook-after-a-failure)
- - As soon as the data upgrade runbook has resumed, return back to your Visual Studio session, and monitor the processes in the **Attach to Process** window. Attach to the **DataUpgradeBatch.exe** as soon as you see it appear. 
+   - Include packages [Models] – (Select all)
+4. From the Application explorer, locate and open the class and method you need to debug and set break points as required.
+5. Go to **Debug**, select **Attach To Process**, and set the following.
+   - Check the **Show processes for all users**.
+   - Enter **DataUpgradeBatch.exe** in the filter.
+   - Check **Automatic refresh**.
+6. Open a PowerShell prompt and change the path to the folder where you are running the Data Upgrade deployable package.
+7. Rerun the failed data upgrade runbook. For more information, see [Rerun the runbook after a failure](data-upgrade-2012.md#rerun-the-runbook-after-a-failure)
+8. When the data upgrade runbook has resumed, go back to your Visual Studio session, and monitor the processes in the **Attach to Process** window. Attach to the **DataUpgradeBatch.exe** as soon as you see it appear. 
    > [!NOTE]
    > You need to attach quickly to avoid missing the point in the pre-sync/post-sync batch process step where the class is executed. Otherwise, you might not hit the breakpoint. You may also need to disable the **Automatic Refresh** option and manually click the **Refresh** button to ensure you capture the start of the batch executable. 
- - After some minutes you should then hit the breakpoint(s) set, and begin debugging. 
+9. You should then hit the breakpoint(s) set, and begin debugging. 
 
