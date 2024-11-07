@@ -1965,6 +1965,8 @@ items:
           items:
           - name: Troubleshoot development environments during upgrade
             href: migration-upgrade/troubleshoot-dev-env.md
+          - name: Debug data upgrade scripts
+            href: migration-upgrade/debug-data-upgrade.md
           - name: Troubleshoot upgrades to self-service environments
             href: migration-upgrade/troubleshoot-self-service-env.md
           - name: Troubleshoot PreSync and PostSync upgrade scripts
