@@ -19,6 +19,8 @@ ms.search.form: FinancialReports
 
 This article explains how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance. The data mart can be reset in multiple ways, depending on the user's role and access to the client or infrastructure.
 
+Executing a data mart reset is a significant action and should almost never be done. There are, however, a few special cases where it may be required. If you encounter a situation where a reset seems necessary, it is highly recommended to contact support first. This allows us to properly investigate any underlying product issues that might be prompting the need for a reset. By doing so, we can ensure that we are addressing the root cause rather than applying a temporary fix.
+
 You should reset the data mart only when a small amount of processing is occurring on the database. Financial reporting will be unavailable during the reset process.
 
 > [!NOTE]
@@ -40,7 +42,7 @@ The **Integration attempts** grid shows how many times the system has tried to i
 
 ##### Data status
 
-The **Data status** grid provides a snapshot of the transactions, exchange rates, and dimension values in the data mart. A large number of stale records indicates that numerous updates to the records have occurred. This situation might increase the time that is required to generate reports.
+The **Data status** grid provides a snapshot of the transactions, exchange rates, and dimension values in the data mart. A large number of versioned records indicates that numerous updates to the records have occurred. This situation might increase the time that is required to generate reports.
 
 ##### Misaligned main account categories
 
@@ -53,8 +55,6 @@ If you determine that a data mart reset is required, select the **Reset data mar
 - **Missing or incorrect data** – Based on the statistics, you've determined that data might be missing. Before you continue, we recommend that you work with Support to determine the root cause.
 - **Restore database** – The database was restored, but the database for the Financial reporting data mart wasn't restored.
 - **Other** – You're resetting the data mart for another reason. If you're concerned that there is an issue, contact Support to identify it.
-
-[![Reset data mart.](./media/Integration.png)](./media/Integration.png)
 
 > [!NOTE]
 > Verify that all data mart reset tasks have completed an initial load before you begin a reset. You can confirm this by looking for a value in the Last Runtime column by selecting **Tools** &gt; **Integration status**.
