@@ -1,10 +1,10 @@
 ---
 title: Financial tags 
 description: Learn about financial tags, including outlines on setup, the process of creating financial tags, and entering financial tag values on transactions.
-author: kweekley
+author: leizi2015
 ms.author: kweekley
 ms.topic: article
-ms.date: 09/23/2023
+ms.date: 11/07/2023
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -41,7 +41,7 @@ Tags were introduced in the 10.0.32 release of Dynamics 365 Finance. In each new
 - Purchase order documents (Purchase order, product receipt and vendor invoice)
 
     > [!NOTE]
-    > To make support for tags available on purchase order documents, enable the **Enable financial tags for purchase order invoicing** feature in Feature management. The feature is released in 10.0.41 as a private preview which is controlled by the flight **PurchaseOrderFinTagFeature**. Please rasise an IcM ticket to enable the flight first before you start using it. 
+    > Starting in Dynamics 365 Finance version 10.0.41, tags are available on purchase order documents. The **Enable financial tags for purchase order invoicing** feature is available in Feature management. The feature is in private preview controlled by the **PurchaseOrderFinTagFeature** flight. To start using Financial tags on purchase order documents, create a IcM ticket to enable the flight first. 
 
 ## Setup
 
