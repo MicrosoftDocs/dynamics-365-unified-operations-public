@@ -2,17 +2,16 @@
 title: Set up Dynamics 365 Payment Connector for Adyen
 description: This article describes how to sign up with Adyen and set up the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: Reza-Assadi
-ms.date: 02/15/2024
-ms.topic: article
+ms.date: 11/08/2024
+ms.topic: how-to
 audience: IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chrgriffin
 ms.search.region: Global
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
-ms.dyn365.ops.version: AX 7.0.1
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
-ms.search.industry: Retail
-
+ms.custom: 
+  - bap-template
 ---
 
 # Set up Dynamics 365 Payment Connector for Adyen
@@ -81,7 +80,7 @@ To process payments across point of sale (POS) terminals, a call center, or Comm
     | Origin Key ("V002") or Client Key ("V003") | An origin key value is required when "V002" is the designated version. For instructions on obtaining this key, see [How to get an origin key](https://docs.adyen.com/development-resources/how-to-get-an-origin-key). A client key value is required when "V003" is the designated version. For instructions on obtaining this key, see [Migrate to Client key](https://docs.adyen.com/development-resources/client-side-authentication/migrate-from-origin-key-to-client-key#switch-to-using-the-client-key).| Yes | No | *The full origin or client key* |
     | EnableRequestProtection | Adds retry logic to "card not present" payment calls, reducing potential for duplicate calls using a correlation ID. If set to **True**, a correlation ID is added to provider requests to prevent duplicates. If set to **False**, calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
     | Nonincremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses that don't support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
-    | Disable terminal line display | Removes the itemized digital receipt lines from the terminal interface used for preview to shoppers before paying. **Note:** If the Store Commerce App is running on the handheld devices such as **Castle S1F2 device**, then this property must be set to **False** to prevent the device from getting stuck into the line display mode. | No | No | True/False |
+    | Disable terminal line display | Removes the itemized digital receipt lines from the terminal interface used for customer preview before paying. **IMPORTANT:** If the Store Commerce app runs on handheld devices such as the Castles S1F2, then you must set this property to **False** to prevent the device from getting stuck in line display mode. | No | No | True/False |
     | Omitted payment methods | (*E-commerce and call center only*) Use this field to omit a payment method from the configuration where an iFrame element is rendered for payments as configured against the merchant account. Separate multiple values with semicolons. Strings must match the label used in the Adyen portal. Some payment method security criteria may interfere with the iFrame element rendering, so it may be desirable to omit conflicting security criteria from the configuration.  | No | No | "applepay;googlepay" |
 
 1. On the **Card verification value** tab, leave **Prompt for card verification value** and **Allow blank card verification value** set to **No**. 
