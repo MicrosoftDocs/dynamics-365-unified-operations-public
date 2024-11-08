@@ -17,7 +17,6 @@ ms.dyn365.ops.version: 8.1.1
 # Ledger settlements
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Ledger settlement is the process of matching debit and credit transactions in the general ledger. The settlement of the debit and credit amounts is used to reconcile the balance of the ledger account with the detailed transactions that make up that balance.
 
