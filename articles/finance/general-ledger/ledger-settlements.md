@@ -4,7 +4,7 @@ description: Learn how to use the Ledger settlements page to settle ledger trans
 author: kweekley
 ms.author: kweekley
 ms.topic: article
-ms.date: 10/27/2023
+ms.date: 11/08/2024
 ms.custom:
 ms.reviewer: twheeloc
 audience: Application User
@@ -24,7 +24,7 @@ Ledger settlement is the process of matching debit and credit transactions in th
 Settled transactions can be excluded from inquiries and reports. In this way, it's easier to analyze the open ledger transactions that make up the balance of the ledger account.
 
 > [!IMPORTANT] 
-> The Accounts payable (AP) and Accounts receivable (AR) modules also have settlement of invoices and payments. When settlement occurs in the AR and AP subledgers, the corresponding ledger entries aren't automatically settled. In version 10.0.42 a new parameter **Subledger to ledger auto settlement** is available. See [Partial ledger settlements](ledger-settlements-partial.md) for more information. 
+> The Accounts payable (AP) and Accounts receivable (AR) modules also have settlement of invoices and payments. When settlement occurs in the AR and AP subledgers, the corresponding ledger entries aren't automatically settled. Beginning in Dynamics 365 Finance version 10.0.42, a new parameter **Subledger to ledger auto settlement** is available. For more information, see [Partial ledger settlements](ledger-settlements-partial.md). 
 
 ## Ledger settlement features
 
@@ -32,7 +32,7 @@ In Microsoft Dynamics 365 Finance version 10.0.21, the **Enable advanced ledger 
 In Finance version 10.0.25, the **Awareness between ledger settlement and year-end close** feature was introduced. This feature changes the fundamental functionality in both ledger settlement and General ledger year-end close. Before you enable this feature in the **Feature management** workspace, see [Awareness between ledger settlement and year-end close](awareness-between-ledger-settlement-year-end-close.md). 
 
 > [Note]
-> Beginning in version 10.0.40, the **Awareness between ledger settlement** feature, along with its associated features **Automate ledger settlement process** and **Post foreign currency realized gains/losses for ledger settlements**, can be found on the **General Ledger parameters,** specifically under the **Ledger settlements** tab. These features are managed through parameters titled **Enable advanced awareness options**, **Enable process automation for ledger settlement**, and **Enable post currency realized gains/losses for ledger settlements** respectively. When upgrading to version 10.0.40 or above the new General ledger parameters will be set to **Yes** if the feature was enabled in Feature management before the upgrade. 
+> Beginning in Dynamics 365 Finance version 10.0.40, the **Awareness between ledger settlement** feature, along with its associated features **Automate ledger settlement process** and **Post foreign currency realized gains/losses for ledger settlements**, can be found on the **General Ledger parameters**, specifically under the **Ledger settlements** tab. These features are managed through parameters titled **Enable advanced awareness options**, **Enable process automation for ledger settlement**, and **Enable post currency realized gains/losses for ledger settlements** respectively.
 
 ## Set up ledger settlement
 
@@ -65,7 +65,7 @@ To settle ledger transactions, follow these steps.
 3. Select **Display transactions** to show all the transactions that match the filters that you set and the list of accounts that you specified when you set up the chart of accounts list in the previous section.
 
     - If you change any of the filters or the dimension sets, you must select **Display transactions** again.
-    - To filter the transactions to an individual main account, use the filter on the **Ledger account** field. We don't recommend that you do ledger settlement for transactions that are posted to different main accounts.  When the **Awareness between ledger settlement and year-end close** feature is enabled, ledger settlement must be done for transactions in a single main account. 
+    - To filter the transactions to an individual main account, use the filter on the **Ledger account** field. We don't recommend that you do ledger settlement for transactions that are posted to different main accounts. When the **Awareness between ledger settlement and year-end close** feature is enabled, ledger settlement must be done for transactions in a single main account. 
 
 4. Select lines for settlement. The value in the **Selected amount** field at the top of the page increases or decreases to reflect the total amount on the selected lines.
 5. When you've finished selecting transactions, select **Mark selected**. For each selected transaction, a check mark appears in the **Marked** column. Additionally, the value in the **Marked amount** field above the grid increases or decreases to reflect the total amount on the marked lines.
@@ -84,16 +84,17 @@ The **Ledger settlements** page includes capabilities that make it easier to vie
 
 ## Reverse a settlement
 
-You can reverse a settlement that was made by mistake. When the **Awareness between ledger settlement and year-end close** feature is enabled (moved to **General ledger parameters** and named **Enable advanced awareness options** in 10.0.40 and above), ledger settlement and the reversal can’t be done for transactions that are posted within a closed fiscal year (in other words, the year-end close has been run).
+You can reverse a settlement that was made by mistake. When the **Awareness between ledger settlement and year-end close** feature is enabled (**General ledger parameters** and named **Enable advanced awareness options** in version 10.0.40 and later), ledger settlement and the reversal can’t be done for transactions that are posted within a closed fiscal year. The year-end close has been run.
 
 1. Follow steps 1 through 3 in the [Settle transactions](#settle-transactions) section to show the transactions that you're interested in.
 2. In the **Status** filter, select **Settled**.
 3. Select lines for reversal.
 4. Select **Reverse marked transactions**. The status of all transactions that have the same settlement ID is updated to **Not settled**.
 
-In 10.0.42 the **Reverse marked transactions** was moved to the **Ledger settlements history** page because history is now tracked for settlements and reversals. Follow these steps to reverse a settlement in 10.0.42 and above. 
+In version 10.0.42, the **Reverse marked transactions** option is on the **Ledger settlements history** page because history is now tracked for settlements and reversals. 
+to reverse a settlement in version 10.0.42, follow these steps: 
 
-1. Follow steps 1 through 3 in the [Settle transactions](#settle-transactions) section to show the transactions that you're interested in.
+1. Follow steps 1 through 3 in the [Settle transactions](#settle-transactions) section to display the transactions that you're interested in.
 2. In the **Status** filter, select **Settled**.
 3. Highlight one line.
 4. Select **View settlements**.
@@ -126,7 +127,7 @@ For more information about how to use the **Review cross-year settlements** page
 In Finance version 10.0.36, the **Post foreign currency realized gains/losses for ledger settlements** feature is available in the **Feature management** workspace. This feature calculates and posts foreign currency realized gains and losses for settlements from the **Ledger settlements** page when the reporting currency values of the debits and credits differ. In Finance version 10.0.38, support has been added for calculating and posting foreign currency realized gains and losses for settlement when the accounting currency values of the debits and credits differ. Before you can enable the **Post foreign currency realized gains/losses for ledger settlements** feature, the **Awareness between ledger settlement and year-end close** feature must be enabled. 
 
 > [Note]
-> Beginning in version 10.0.40, the **Awareness between ledger settlement** feature, along with its associated features **Automate ledger settlement process** and **Post foreign currency realized gains/losses for ledger settlements**, can be found on the **General Ledger parameters,** specifically under the **Ledger settlements** tab. These features are managed through parameters titled **Enable advanced awareness options**, **Enable process automation for ledger settlement**, and **Enable post currency realized gains/losses for ledger settlements** respectively. When upgrading to version 10.0.40 or above the new General ledger parameters will be set to **Yes** if the feature was enabled in Feature management before the upgrade. 
+> Beginning in version 10.0.40, the **Awareness between ledger settlement** feature, along with its associated features **Automate ledger settlement process** and **Post foreign currency realized gains/losses for ledger settlements**, can be found on the **General Ledger parameters**, specifically under the **Ledger settlements** tab. These features are managed through parameters titled **Enable advanced awareness options**, **Enable process automation for ledger settlement**, and **Enable post currency realized gains/losses for ledger settlements** respectively. When upgrading to version 10.0.40 or later, the new General ledger parameters will be set to **Yes** if the feature was enabled in Feature management before the upgrade. 
 
 The feature also improves the usability of the ledger settlement process by simplifying the marking process. You no longer have to select and mark vouchers for ledger settlement in two steps. Instead, you can mark the voucher in the grid on the **Ledger settlements** page. The **Marked debits**, **Marked credits**, and **Difference** fields are shown to provide a clear indication of the totals for your work in progress. You must complete your work by settling the marked vouchers before you close the **Ledger settlements** page. Starting in version 10.0.38, the **Marked debits**, **Marked credits** and **Difference** fields in both the accounting and reporting currencies can be viewed from the **Ledger settlements** page.
 
