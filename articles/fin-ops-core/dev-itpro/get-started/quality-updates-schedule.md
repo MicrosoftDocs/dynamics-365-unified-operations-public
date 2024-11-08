@@ -174,6 +174,16 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 5 | November 4 to November 7, 2024 | November 16 to November 17, 2024 |
 | Station 6 | November 5 to November 8, 2024 | November 16 to November 17, 2024 |
 
+### <a name="schedule"></a> [Canceled] Proactive quality update upcoming 10.0.41 Release-2 train schedule
+
+**App version: 10.0.2015.110**
+
+**Platform version: 7.0.7367.102**
+
+> [!IMPORTANT]
+> 1. 10.0.41 Release-2 have been Canceled due to the forthcoming holiday season.
+> 2. This PQU build is made available in the Lifecycle Services --> Shared Asset Library to self-deploy. 
+
 > [!IMPORTANT] 
 > At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).
 >
