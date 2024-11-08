@@ -4,7 +4,7 @@ description: Learn about how to address invalid users in Microsoft Dynamics 365 
 author: pnghub
 ms.author: kkhajuria
 ms.topic: conceptual
-ms.date: 06/25/2024
+ms.date: 11/08/2024
 ms.custom:
 ms.reviewer: twheeloc
 ---
