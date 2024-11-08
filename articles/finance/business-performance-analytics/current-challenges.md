@@ -16,6 +16,27 @@ audience: Application User
 
 This article describes some known issues in Business performance analytics.
 
+## Diagnostgics Page
+The BPA admin has access to a diagnostics page that acts as a self-help tool to monitor their BPA data and app health. This page also includes a message center where the admin will receive proactive notifications when action is required to correct an error in their environment.
+
+### View notifications from the diagnostics page
+Navigate to bell icon on the top right of the application to see any messages from the diagnostics page with a link to the diagnostics page.
+
+### Access the Diagnostics Page
+You can access the diagnostic page from the “administration” section of the app.
+View System Status
+The status section helps the admin troubleshoot if anything is misconfigured in their app. For example, the status of their background flows, if the app users are set up correctly or if the app admins have access to the required roles and settings. 
+
+### View System Status
+The status section helps the admin troubleshoot if anything is misconfigured in their app. For example, the status of their background flows, if the app users are set up correctly or if the app admins have access to the required roles and settings. 
+
+### View and Complete Messages:
+- On the diagnostics page, you will find the message in the Messages Active Tab. You can expand the messages to view details. These are messages from Microsoft that require admin attention to mitigate any errors detected in the app.
+- Once the action has been performed, mark the message as complete. This will confirm to telemetry that the action has been completed.
+- All completed messages will be located in the Completed Tab.
+
+## Troubleshooting and Maintenance Reminders
+
 ### By default, the Order to cash data model isn't enabled for customers.
 
 Customers must submit a request to Microsoft Support to have the *Order to cash* data model enabled. In the future, this model will automatically be enabled for all customers.
