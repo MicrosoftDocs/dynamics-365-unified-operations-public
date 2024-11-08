@@ -63,9 +63,9 @@ Some user issues can be automatically resolved using the "Repair Telemetry IDs" 
 1. Repair Incorrect Telemetry IDs: Fix users listed in Microsoft Entra ID but with incorrect telemetry IDs in the finance and operations environment. 
 1. Handle Missing Users in Microsoft Entra ID: If a user isn't present in Microsoft Entra ID, their telemetry ID is set to null. Admins need to add these users to Microsoft Entra ID and run the repair again. 
 1. Fix Users with Duplicate Telemetry IDs: Correct the telemetry ID for the user existing in Microsoft Entra ID and set it to null for the others. 
-1. Disable Duplicate Users: For security reasons, duplicate users with the same email will be disabled, and their telemetry IDs will be set to null. The admins must ensure each user is unique and remove duplicates to resolve this issue.
+1. Disable Duplicate Users: For security reasons, duplicate users with the same email are disabled, and their telemetry IDs will be set to null. The admins must ensure each user is unique and remove duplicates to resolve this issue.
 
-All the users left after clicking "Repair Telemetry IDs" button would have to be manually fixed by the administrators.
+After clicking **Repair telemetry IDs**, any users left need to be manually fixed by the administrators.
 
 > [!NOTE]
-> "Repair Telemetry IDs" button can disable and set telemetry id as null for some of the invalid users, which will prevent login of these users. Please proceed with caution and try to fix all the invalid users post the repair as soon as possible.
+> **Repair telemetry IDs** can disable and set the **Telemetry id** as **Null** for some of the invalid users, which prevents the login of these users. Proceed with caution and fix all the invalid users as soon as possible.
