@@ -4,7 +4,7 @@ description: Learn how to reset the Financial reporting data mart for Microsoft 
 author: aprilolson
 ms.author: aolson
 ms.topic: article
-ms.date: 05/20/2024
+ms.date: 11/08/2024
 ms.reviewer: twheeloc
 audience: IT Pro, Developer
 ms.search.region: Global
@@ -19,9 +19,9 @@ ms.search.form: FinancialReports
 
 This article explains how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance. The data mart can be reset in multiple ways, depending on the user's role and access to the client or infrastructure.
 
-Executing a data mart reset is a significant action and should almost never be done. There are, however, a few special cases where it may be required. If you encounter a situation where a reset seems necessary, it is highly recommended to contact support first. This allows us to properly investigate any underlying product issues that might be prompting the need for a reset. By doing so, we can ensure that we are addressing the root cause rather than applying a temporary fix.
+Executing a data mart reset is a significant action and should almost never be done. There are, however, a few special cases where it may be required. If you encounter a situation where a reset seems necessary, it's highly recommended you contact support first to properly investigate any underlying product issues that might be prompting the need for a reset. This investigation helps ensure that we're addressing the root cause rather than applying a temporary fix.
 
-You should reset the data mart only when a small amount of processing is occurring on the database. Financial reporting will be unavailable during the reset process.
+You should reset the data mart only when a small amount of processing is occurring on the database. Financial reporting is unavailable during the reset process.
 
 > [!NOTE]
 > To confirm that it's necessary to reset your data mart, see [When to reset a data mart](../../fin-ops/analytics/when-to-reset-data-mart.md).
@@ -38,11 +38,11 @@ To reset the data mart, in Report designer, on the **Tools** menu, select **Rese
 
 ##### Integration attempts
 
-The **Integration attempts** grid shows how many times the system has tried to integrate transactions. The system continues to try to integrate data over a period of days if the first few attempts aren't successful. You will know that the data mart must be reset is if the number of attempts is 8 or more, and if there are many Dimension combination or Transaction records. In this situation, the data won't be reported on.
+The **Integration attempts** grid shows how many times the system tried to integrate transactions. The system continues to try to integrate data over a period of days if the first few attempts aren't successful. You'll know that the data mart must be reset is if the number of attempts is 8 or more, and if there are many Dimension combination or Transaction records. In this situation, the data won't be reported on.
 
 ##### Data status
 
-The **Data status** grid provides a snapshot of the transactions, exchange rates, and dimension values in the data mart. A large number of versioned records indicates that numerous updates to the records have occurred. This situation might increase the time that is required to generate reports.
+The **Data status** grid provides a snapshot of the transactions, exchange rates, and dimension values in the data mart. A large number of versioned records indicate that numerous updates to the records have occurred. This situation might increase the time that is required to generate reports.
 
 ##### Misaligned main account categories
 
@@ -54,7 +54,7 @@ If you determine that a data mart reset is required, select the **Reset data mar
 
 - **Missing or incorrect data** – Based on the statistics, you've determined that data might be missing. Before you continue, we recommend that you work with Support to determine the root cause.
 - **Restore database** – The database was restored, but the database for the Financial reporting data mart wasn't restored.
-- **Other** – You're resetting the data mart for another reason. If you're concerned that there is an issue, contact Support to identify it.
+- **Other** – You're resetting the data mart for another reason. If you're concerned that there's an issue, contact Support to identify it.
 
 > [!NOTE]
 > Verify that all data mart reset tasks have completed an initial load before you begin a reset. You can confirm this by looking for a value in the Last Runtime column by selecting **Tools** &gt; **Integration status**.
@@ -72,7 +72,7 @@ If you want to review the status of the integration, select **Tools** &gt; **Int
 > [!NOTE]
 > The reset is finished when all mappings show a status of **RanToCompletion**, and an "Integration complete" message appears in the lower-left corner of the **Integration Status** dialog box.
 
-## Reset the Financial reporting data mart for Dynamics 365 Finance + Operations (CHE, LBD and VHD) through SQL Server Management Studio 
+## Reset the Financial reporting data mart for Dynamics 365 Finance + Operations (CHE, LBD, and VHD) through SQL Server Management Studio 
 
 > [!NOTE]
 > The following steps are designed for Cloud Hosted Environments (CHE Tier 1 Dev), downloadable VHD images, and LBD On-Premises.
@@ -526,7 +526,7 @@ Before getting started, be sure that all users close Report designer and exit th
 	DEALLOCATE removeCompanyCursor
 ```
 
-3. On the database for Dynamics 365 Finance, which is referred to as AXDB, clear the financial reporting related tables with the following script, which was last updated February 25, 2019: Reset Datamart AXDB.txt
+3. On the database for Dynamics 365 Finance, which is referred to as AXDB, clear the financial reporting related tables with the following script. The script was last updated February 25, 2019: Reset Datamart AXDB.txt
 
 ```sql
 IF EXISTS (SELECT 1 FROM [INFORMATION_SCHEMA].[TABLES] WHERE [TABLE_SCHEMA] = 'dbo' and [TABLE_NAME] = 'FINANCIALREPORTS') 
@@ -598,7 +598,7 @@ Confirm that all rows have a **LastRunTime** value, and that **StateType** is se
 
 ## Export and import report definitions
 
-Although a reset of the data mart doesn't affect any report definitions, some data movement activities can cause report definitions to be lost. Be very careful when you perform a data movement activity such as overwriting a user acceptance testing (UAT) test environment with a copy of the production environment if new reports were being created in the UAT environment. Exporting report definitions can provide a backup in the event that it becomes necessary to restore your definitions. 
+Although a reset of the data mart doesn't affect any report definitions, some data movement activities can cause report definitions to be lost. Be careful when you perform a data movement activity such as overwriting a user acceptance testing (UAT) test environment with a copy of the production environment if new reports were being created in the UAT environment. Exporting report definitions can provide a backup if it becomes necessary to restore your definitions. 
 
 ### Export report definitions
 
