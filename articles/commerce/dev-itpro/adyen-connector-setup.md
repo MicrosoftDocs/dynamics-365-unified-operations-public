@@ -61,8 +61,8 @@ To process payments across point of sale (POS) terminals, a call center, or Comm
     |---|---|:-:|:-:|---|
     | Assembly Name | Auto populated name of the assembly for the Dynamics 365 Payment Connector for Adyen. | Yes | Yes | *Binary name* |
     | Service account ID | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes | Yes | *Guid* |
-    | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. Version "V003" should be used for all new implementations. Version "V002" is available while origin key functionality is still supported by Adyen. Version "V001" is no longer supported.  | Yes | Yes | "V002"/"V003" |
-    | Gateway environment | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
+    | Version | Enter the version of the Dynamics 365 Payment Connector for Adyen to use. Version "V003" should be used for all new implementations. Version "V002" is still available while Adyen supports origin key functionality. Version "V001" is no longer supported.  | Yes | Yes | "V002"/"V003" |
+    | Gateway environment | Enter the Adyen gateway environment to which to map. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes | Yes | Live |
     | Optional Domain | The optional domain is required for live environments and should be obtained by contacting Adyen. This domain is the unique identifier for your live environment in the form **[random]-[company name]**, and is present as the prefix inside the API URLs under **Account \> API URLs** in your company's live account on the Adyen Customer Area portal. For more information, see [Live endpoints](https://docs.adyen.com/development-resources/live-endpoints). | Live only | No | Contact Adyen |
     | Merchant account ID | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | MerchantIdentifier |
     | Terminal architecture | This field must be set to **Cloud** for the `Payment service account`. | Yes | Yes | Cloud |
@@ -92,12 +92,12 @@ To process payments across point of sale (POS) terminals, a call center, or Comm
 > [!NOTE]
 > These instructions assume that you have access to an Adyen payment terminal.
 
-Go to the [In-person payments](https://docs.adyen.com/point-of-sale) page on the Adyen website and follow the instructions to onboard your Adyen payment terminal. Skip any steps that instruct you to download Adyen-specific apps. During the onboarding process, make a note of the following information for each payment terminal. You'll need this information in the [Configure the payment terminal IP address and EFT POS register number](#configure-the-payment-terminal-ip-address-and-eft-pos-register-number) section.
+To onboard your Adyen payment terminal, go to [In-person payments | Adyen Docs](https://docs.adyen.com/point-of-sale) and follow the instructions. Skip any steps that instruct you to download Adyen-specific apps. During the onboarding process, make a note of the following information for each payment terminal. This information is required in the [Configure the payment terminal IP address and EFT POS register number](#configure-the-payment-terminal-ip-address-and-eft-pos-register-number) section.
 
 - IP address of the payment terminal.
 - POIID (POIID is composed of the serial number and model number of the device, and is used to uniquely identify the device.)
 
-After the payment terminal is onboarded, sign in to the [Adyen Customer Area](https://ca-test.adyen.com/ca/ca/login.shtml), go to the terminal that you want to configure, and make a note of the following information for each payment terminal. You'll need this information in the [EFT service for local network communication](#eft-service-for-local-network-communication) section.
+After the payment terminal is onboarded, sign in to the [Adyen Customer Area](https://ca-test.adyen.com/ca/ca/login.shtml), go to the terminal that you want to configure, and make a note of the following information for each payment terminal. This information is required in the [EFT service for local network communication](#eft-service-for-local-network-communication) section.
 
 - Key identifier
 - Key passphrase
@@ -208,7 +208,7 @@ The Adyen payment connector can be configured to communicate with devices via th
 > [!NOTE]
 > These instructions assume that there is a dedicated mapping between a POS register and an Adyen payment terminal. For a hardware station that is based on Microsoft Internet Information Services (IIS), go to **Retail and Commerce \> Channels \> Stores \> All stores**, and select the store that you're setting up. Then, on the page for that store, on the **Hardware Stations** FastTab, follow the same instructions.
 
-Payment terminals may not be used by multiple hardware stations. If a payment terminal is shared by multiple POS devices, an IIS hardware station must be deployed to manage communications with the payment terminal. 
+Payment terminals can't be used by multiple hardware stations. If a payment terminal is shared by multiple POS devices, an IIS hardware station must be deployed to manage communications with the payment terminal. 
 
 ##### Configure the payment terminal IP address and EFT POS register number
 
