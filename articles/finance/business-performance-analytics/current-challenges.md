@@ -16,7 +16,7 @@ audience: Application User
 
 This article describes some known issues in Business performance analytics.
 
-## Diagnostgics Page
+## Diagnostics Page
 The BPA admin has access to a diagnostics page that acts as a self-help tool to monitor their BPA data and app health. This page also includes a message center where the admin will receive proactive notifications when action is required to correct an error in their environment.
 
 ### View notifications from the diagnostics page
