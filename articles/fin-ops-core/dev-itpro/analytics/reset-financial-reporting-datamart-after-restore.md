@@ -19,7 +19,7 @@ ms.search.form: FinancialReports
 
 This article explains how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance. The data mart can be reset in multiple ways, depending on the user's role and access to the client or infrastructure.
 
-Executing a data mart reset is a significant action and should almost never be done. There are, however, a few special cases where it may be required. If you encounter a situation where a reset seems necessary, it's highly recommended you contact support first to properly investigate any underlying product issues that might be prompting the need for a reset. This investigation helps ensure that we're addressing the root cause rather than applying a temporary fix.
+Executing a data mart reset is a significant action and should almost never be done. There are, however, a few special cases where it may be required. If you encounter a situation where a reset seems necessary, it's highly recommended you contact support first. The support team can help you properly investigate any underlying product issues that might be prompting the need for a reset. This investigation helps ensure that we're addressing the root cause rather than applying a temporary fix.
 
 You should reset the data mart only when a small amount of processing is occurring on the database. Financial reporting is unavailable during the reset process.
 
@@ -38,7 +38,7 @@ To reset the data mart, in Report designer, on the **Tools** menu, select **Rese
 
 ##### Integration attempts
 
-The **Integration attempts** grid shows how many times the system tried to integrate transactions. The system continues to try to integrate data over a period of days if the first few attempts aren't successful. You'll know that the data mart must be reset is if the number of attempts is 8 or more, and if there are many Dimension combination or Transaction records. In this situation, the data won't be reported on.
+The **Integration attempts** grid shows how many times the system tried to integrate transactions. The system continues to try to integrate data over a period of days if the first few attempts aren't successful. You know that the data mart must be reset if the number of attempts is 8 or more, and if there are many Dimension combination or Transaction records. In this situation, the data won't be reported on.
 
 ##### Data status
 
@@ -63,7 +63,7 @@ If you determine that a data mart reset is required, select the **Reset data mar
 
 Select the **Clear users and companies** check box if you restored your database, but then changed users or companies. You should rarely have to select this check box.
 
-When you're ready to start the reset process, select **OK**. You're prompted to confirm that you're ready to start the process. Note that Financial reporting won't be available during the reset and the initial data integration that occurs afterward.
+When you're ready to start the reset process, select **OK**. You're prompted to confirm that you're ready to start the process. Financial reporting isn't available during the reset and the initial data integration that occurs afterward.
 
 If you want to review the status of the integration, select **Tools** &gt; **Integration status** to see the last time that the integration was run and the status.
 
@@ -526,7 +526,7 @@ Before getting started, be sure that all users close Report designer and exit th
 	DEALLOCATE removeCompanyCursor
 ```
 
-3. On the database for Dynamics 365 Finance, which is referred to as AXDB, clear the financial reporting related tables with the following script. The script was last updated February 25, 2019: Reset Datamart AXDB.txt
+3. On the database for Dynamics 365 Finance, which is referred to as AXDB, use the following script to clear the financial reporting related tables. The script was last updated February 25, 2019: Reset Datamart AXDB.txt
 
 ```sql
 IF EXISTS (SELECT 1 FROM [INFORMATION_SCHEMA].[TABLES] WHERE [TABLE_SCHEMA] = 'dbo' and [TABLE_NAME] = 'FINANCIALREPORTS') 
@@ -540,7 +540,7 @@ END
 ```
 
 
-4. On the database used for Financial reporting, re-enable the integration and end servicing mode with the script below, which was last updated clear the financial reporting related tables with the script below, which was last updated February 25, 2019: Reset Datamart END.txt
+4. On the database used for Financial reporting, re-enable the integration and end servicing mode with the following script, that was last updated February 25, 2019: Reset Datamart END.txt
 
 
 
