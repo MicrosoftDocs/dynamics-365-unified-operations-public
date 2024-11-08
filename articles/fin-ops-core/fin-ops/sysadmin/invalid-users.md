@@ -31,8 +31,8 @@ You can use business-to-business (B2B) functionality to include these users in M
 For sign-in functionality to work correctly, the telemetry ID of a user in finance and operations apps must be aligned with the object ID of the same user in Microsoft Entra ID. If the IDs don't match, we recommend that you delete and then reimport the user. For more information, see [Find the user object ID](/partner-center/find-ids-and-domain-names#find-the-user-object-id).
 
 1. Verify that a user who has the corresponding email address exists in your Microsoft Entra ID.
-1. Delete the user from finance and operations apps. Note the user roles before deleting so the roles can be added back after reimporting the users. 
-1. Reimport the user. For more information, see [Create new users](create-new-users.md).
+2. Delete the user from finance and operations apps. Note the user roles before deleting so the roles can be added back after reimporting the users. 
+3. Reimport the user. For more information, see [Create new users](create-new-users.md).
 
 If this process is challenging or requires substantial effort, administrators can update the email address on the **Users** page to a different user email that is present in Microsoft Entra ID and change it back to the original email of the user. That change repopulates the object ID for the new email.
 
@@ -41,29 +41,29 @@ If this process is challenging or requires substantial effort, administrators ca
 Previously, some customers who had trouble signing in were advised to append the prefix "MAIL\#" to their Gmail or Live email address. Because the issue has now been fixed, an administrator must follow these steps to remove the prefix from email addresses.
 
 1. Go to **Users**.
-1. Select **Edit** to remove the prefix from the email addresses.
+2. Select **Edit** to remove the prefix from the email addresses.
 
 ## Users with duplicate telemetry IDs 
 
-Telemetry IDs are unique identifiers for every user. Duplicate telemetry IDs can cause serious security issues, such as user impersonation or inappropriate access levels. It's essential to ensure that each user has a distinct telemetry ID. 
-To ensure compliance, delete and reimport or edit the affected users to repopulate unique telemetry IDs from Microsoft Entra ID. 
+Telemetry IDs are unique identifiers for every user. Duplicate telemetry IDs can cause serious security issues, such as user impersonation or inappropriate access levels. It's essential to ensure that each user has a distinct telemetry ID. To ensure compliance, delete and reimport or edit the affected users to repopulate unique telemetry IDs from Microsoft Entra ID. 
 
-Important Note: Say if three users share the same telemetry ID and one user has the correct ID, the system will only flag the two incorrect users. The user with the correct ID isn't marked as invalid. 
+>[!Important]
+> If three users share the same telemetry ID and one user has the correct ID, the system only flags the two incorrect users. The user with the correct ID isn't marked as invalid. 
 
-## Duplicate Users 
+## Duplicate users 
 
 Duplicate users imply users who have the same email address. This can cause inconsistent behavior due to conflicting roles or settings. You must ensure that every user has a unique email address. 
 
 To make these users compliant, you must delete the duplicates from System Administration -> Users page and ensure that only one user exists per email.
 
-# Fix 
+### Fix 
 
-Some user issues can be automatically resolved using the "Repair Telemetry IDs" button. This feature performs the following actions: 
+Some user issues can be automatically resolved using **Repair telemetry IDs**. This feature performs the following actions: 
 
-1. Repair Incorrect Telemetry IDs: Fix users listed in Microsoft Entra ID but with incorrect telemetry IDs in the finance and operations environment. 
-1. Handle Missing Users in Microsoft Entra ID: If a user isn't present in Microsoft Entra ID, their telemetry ID is set to null. Admins need to add these users to Microsoft Entra ID and run the repair again. 
-1. Fix Users with Duplicate Telemetry IDs: Correct the telemetry ID for the user existing in Microsoft Entra ID and set it to null for the others. 
-1. Disable Duplicate Users: For security reasons, duplicate users with the same email are disabled, and their telemetry IDs will be set to null. The admins must ensure each user is unique and remove duplicates to resolve this issue.
+1. Repairs incorrect telemetry IDs: Fix users listed in Microsoft Entra ID but with incorrect telemetry IDs in the finance and operations environment.
+2. Handle missing users in Microsoft Entra ID: If a user isn't present in Microsoft Entra ID, their telemetry ID is set to null. Admins need to add these users to Microsoft Entra ID and run the repair again.
+3. Fix users with duplicate telemetry IDs: Correct the telemetry ID for the user existing in Microsoft Entra ID and set it to null for the others.
+4. Disable duplicate users: For security reasons, duplicate users with the same email are disabled, and their telemetry IDs are set to null. The admins must ensure each user is unique and remove duplicates to resolve this issue.
 
 After clicking **Repair telemetry IDs**, any users left need to be manually fixed by the administrators.
 
