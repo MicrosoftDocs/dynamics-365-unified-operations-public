@@ -4,7 +4,7 @@ description: Learn about the release schedule for proactive quality updates (PQU
 author: rashmansur
 ms.author: rashmim
 ms.topic: conceptual
-ms.date: 11/01/2024
+ms.date: 11/08/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.search.region: Global
@@ -127,8 +127,8 @@ The following table shows the high-level train schedule. It includes a descripti
 | Station 6 | November 19 to November 22, 2024 | December 14 to December 15, 2024 |
 
 > [!IMPORTANT]
-> 1. 10.0.39 Release-8 have been Canceled due to the forthcoming holiday season.
-> 2. This PQU build is made available in the Lifecycle Services --> Shared Asset Library to self-deploy. 
+> 1. 10.0.39 Release-8 has been canceled due to the forthcoming holiday season.
+> 2. This PQU build is made available in the **Lifecycle Services** /> **Shared Asset Library to self-deploy**. 
 
 ### <a name="schedule"></a> Proactive quality update upcoming 10.0.40 Release-4 train schedule
 
@@ -156,8 +156,8 @@ The following table shows the high-level train schedule. It includes a descripti
 **Unified Environment Provisioning Application Version: 10.0.40.7**
 
 > [!IMPORTANT]
-> 1. 10.0.40 Release-5 have been Canceled due to the forthcoming holiday season.
-> 2. This PQU build is made available in the Lifecycle Services --> Shared Asset Library to self-deploy. 
+> 1. 10.0.40 Release-5 has been canceled due to the forthcoming holiday season.
+> 2. This PQU build is made available in the **Lifecycle Services** /> **Shared Asset Library to self-deploy**. 
 
 ### <a name="schedule"></a>[NEW] Proactive quality update upcoming 10.0.41 Release-1 train schedule
 
@@ -181,8 +181,8 @@ The following table shows the high-level train schedule. It includes a descripti
 **Platform version: 7.0.7367.102**
 
 > [!IMPORTANT]
-> 1. 10.0.41 Release-2 have been Canceled due to the forthcoming holiday season.
-> 2. This PQU build is made available in the Lifecycle Services --> Shared Asset Library to self-deploy. 
+> 1. 10.0.41 Release-2 has been canceled due to the forthcoming holiday season.
+> 2. This PQU build is made available in the **Lifecycle Services** /> **Shared Asset Library to self-deploy**. 
 
 > [!IMPORTANT] 
 > At least five days in advance, Microsoft updates the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../deployment/plannedmaintenance-selfservice.md#windows).
