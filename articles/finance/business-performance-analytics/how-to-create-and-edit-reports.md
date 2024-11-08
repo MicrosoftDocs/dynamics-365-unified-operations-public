@@ -79,9 +79,10 @@ To share a report that isn't currently open, follow these steps:
 4. Specify to provide **Edit** or **View** access to the report. 
 
 >[!NOTE]
-> You can't share reports of the **Microsoft** type. You must duplicate them to create a **Custom** type report, which can be shared.
-> Only admin users may also see an additional **Share** button. This button currently doesn't provide any use.
-> Access to the Microsoft report is provided to users by an admin using **Roles**. A user who has access to a Microsoft report can duplicate the report and share it with other users who did not originally have access to the report.
+>- You cannot share **Microsoft** type reports. To share a report, you must duplicate it to create a **Custom** type report.
+>- Only admin users may see an additional **Share** button, which currently has no functionality.
+>- Access to Microsoft reports is granted by an admin using **Roles**. Users with access to a Microsoft report can duplicate and share it with others who did not originally have access.
+>- If you are not a BPA admin, sharing is restricted to users within the same Business Unit, as defined by your Dataverse security.
 
 ## Remove edit columns and edit filters buttons
 
