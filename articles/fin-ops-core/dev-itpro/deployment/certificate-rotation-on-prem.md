@@ -6,7 +6,7 @@ ms.author: osfaixat
 ms.topic: how-to
 ms.custom: 
   - bap-template
-ms.date: 06/19/2024
+ms.date: 11/08/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global 
 ms.search.validFrom: 2019-04-30
@@ -32,7 +32,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
 1. Update your infrastructure scripts by following the steps in [Update your Infrastructure Scripts](obtain-infrascripts-onprem.md#update-the-infrastructure-scripts).
 
-1. In the **ConfigTemplate.xml** file, configure certificates as you require. Follow the steps in [Configure certificates](setup-deploy-on-premises-pu41.md#configurecert). Specifically, follow these steps.
+1. In the **ConfigTemplate.xml** file, configure certificates as you require. Follow the steps in [Configure certificates](setup-deploy-on-premises-latest.md#configurecert). Specifically, follow these steps.
 
     ```powershell
     # Only run the first command if you have not generated the templates yet.
@@ -62,7 +62,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
     .\Export-Certificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-1. Continue to [set up VMs](setup-deploy-on-premises-pu41.md#setupvms). Here are the specific steps that are required for this process:
+1. Continue to [set up VMs](setup-deploy-on-premises-latest.md#setupvms). Here are the specific steps that are required for this process:
 
     1. Export the scripts that must be run on each VM.
 
@@ -97,7 +97,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
         .\Test-D365FOConfiguration.ps1
         ```
 
-1. Run the following PowerShell command so that you have values that can be used in Lifecycle Services later. For more information, see [Deploy your on-premises environment from Lifecycle Services](setup-deploy-on-premises-pu41.md#deploy).
+1. Run the following PowerShell command so that you have values that can be used in Lifecycle Services later. For more information, see [Deploy your on-premises environment from Lifecycle Services](setup-deploy-on-premises-latest.md#deploy).
 
     ```powershell
     .\Get-DeploymentSettings.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
@@ -223,12 +223,12 @@ You must reinstall the LocalAgent in the following situations:
     .\Get-AgentConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
-1. Follow the steps in [Configure Lifecycle Services connectivity for the tenant](setup-deploy-on-premises-pu41.md#configurelcs).
+1. Follow the steps in [Configure Lifecycle Services connectivity for the tenant](setup-deploy-on-premises-latest.md#configurelcs).
 
     > [!NOTE] 
     > If you receive the error **Update to existing credential with KeyId '\<key\>' is not allowed**, follow the instructions in [Error: "Updates to existing credential with KeyId '\<key\>' is not allowed"](troubleshoot-on-prem.md#error-updates-to-existing-credential-with-keyid-key-is-not-allowed).
 
-1. Continue with [Configure a connector and install an on-premises local agent](setup-deploy-on-premises-pu41.md#configureconnector), specifically the following changes:
+1. Continue with [Configure a connector and install an on-premises local agent](setup-deploy-on-premises-latest.md#configureconnector), specifically the following changes:
 
     - Client certificate thumbprint
     - Server certificate thumbprint
@@ -349,7 +349,7 @@ Alternatively, if you also want to rotate the existing credentials, follow these
 
 ## Update other certificates as needed
 
-1. Always check if the SQL server certificate has expired. For more information, see [Set up SQL Server](setup-deploy-on-premises-pu41.md#setupsql).
+1. Always check if the SQL server certificate has expired. For more information, see [Set up SQL Server](setup-deploy-on-premises-latest.md#setupsql).
 
 2. Check to be sure that the Active Directory Federation Service (ADFS) certificate hasn't expired.
 
