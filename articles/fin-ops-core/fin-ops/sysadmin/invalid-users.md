@@ -2,9 +2,9 @@
 title: Invalid users in Dynamics 365 Finance
 description: Learn about how to address invalid users in Microsoft Dynamics 365 Finance, including outlines on different types of invalid users.
 author: pnghub
-ms.author: gned
+ms.author: kkhajuria
 ms.topic: conceptual
-ms.date: 11/08/2024
+ms.date: 06/25/2024
 ms.custom:
 ms.reviewer: twheeloc
 ---
@@ -18,7 +18,7 @@ To view invalid users, follow these steps.
 1. Go **System administration** \> **Invalid users**.
 2. Select **Refresh**. This page shows a list of users who require attention from the system administrator. If there are no invalid users, the page is blank.
 
-The following sections describe the three types of invalid users that must be addressed.
+The following sections describe the five types of invalid users that must be addressed.
 
 ## Users who aren't found in Microsoft Entra ID
 
@@ -56,11 +56,16 @@ Duplicate users imply users who have the same email address. This can cause inco
 
 To make these users compliant, you must delete the duplicates from System Administration -> Users page and ensure that only one user exists per email.
 
-## Automated fix 
+# Fix 
 
 Some user issues can be automatically resolved using the "Repair Telemetry IDs" button. This feature performs the following actions: 
 
 1. Repair Incorrect Telemetry IDs: Fix users listed in Microsoft Entra ID but with incorrect telemetry IDs in the finance and operations environment. 
 1. Handle Missing Users in Microsoft Entra ID: If a user isn't present in Microsoft Entra ID, their telemetry ID is set to null. Admins need to add these users to Microsoft Entra ID and run the repair again. 
 1. Fix Users with Duplicate Telemetry IDs: Correct the telemetry ID for the user existing in Microsoft Entra ID and set it to null for the others. 
-1. Disable Duplicate Users: For security reasons, duplicate users with the same email is disabled, and their telemetry IDs set to null. The admins must ensure each user is unique and remove duplicates to resolve this issue.
+1. Disable Duplicate Users: For security reasons, duplicate users with the same email will be disabled, and their telemetry IDs will be set to null. The admins must ensure each user is unique and remove duplicates to resolve this issue.
+
+All the users left after clicking "Repair Telemetry IDs" button would have to be manually fixed by the administrators.
+
+> [!NOTE]
+> "Repair Telemetry IDs" button can disable and set telemetry id as null for some of the invalid users, which will prevent login of these users. Please proceed with caution and try to fix all the invalid users post the repair as soon as possible.
