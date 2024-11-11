@@ -4,7 +4,7 @@ description: Access answers to frequently asked questions about the AI technolog
 author: yufei-huang
 ms.author: yufeihuang
 ms.topic: article
-ms.date: 11/07/2023
+ms.date: 11/11/2024
 ms.custom:
   - responsible-ai-faqs
 ms.reviewer: kamaybac
