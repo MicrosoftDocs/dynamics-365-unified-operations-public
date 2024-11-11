@@ -4,7 +4,7 @@ description: Learn about features that have been removed, deprecated, or that ar
 author: kamaybac
 ms.author: kamaybac
 ms.topic: conceptual
-ms.date: 06/14/2024
+ms.date: 11/11/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -30,11 +30,11 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** |  |
-| **Replaced by another feature?**  |  |
+| **Reason for deprecation/removal** | The *Register material consumption on the production floor execution interface (WMS-enabled)* feature (previously in preview) has been replaced by the new *Register material consumption as complete and edit dimensions on the production floor execution interface* feature. |
+| **Replaced by another feature?**  | Yes. The *Register material consumption on the production floor execution interface (WMS-enabled)* feature (previously in preview) has been replaced by the new *Register material consumption as complete and edit dimensions on the production floor execution interface* feature, which also adds the ability to use the production floor execution interface to register material consumption of WMS-enabled items. |
 | **Product areas affected** | Supply Chain Management – Production control |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | |
+| **Status** | Removed. If you haven't enabled the old *Register material consumption on the production floor execution interface (WMS-enabled)* feature, then you'll only see the new feature in feature management. If you have enabled the old feature, you'll still be able to use it, but you'll soon be contacted by Microsoft Support with instructions on how to replace it with the new *Register material consumption as complete and edit dimensions on the production floor execution interface* feature. |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.41 release
 

@@ -6,7 +6,7 @@ ms.author: johanho
 ms.reviewer: kamaybac
 ms.search.form: JmgProductionFloorExecution
 ms.topic: how-to
-ms.date: 06/14/2024
+ms.date: 11/11/2024
 ms.custom: 
   - bap-template
 ---
@@ -172,11 +172,13 @@ Workers follow these steps to register tracked components.
 1. Select **Next**.
 1. Continue to process items on the production order until all products are registered.
 
-## Adjust material consumption and make material reservations
+## Adjust material consumption and make material reservations (preview)
 
-> [!IMPORTANT]
->
-> This feature only supports items that *are not* enabled to use warehouse management processes (WMS).
+[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+> [!NOTE]
+> This feature is generally available (GA) for non-WMS items, but is still in preview for WMS-enabled items.
 
 Workers can adjust material consumption for each production job. This functionality is used in scenarios where the actual quantity of materials that was consumed by a production job was more or less than the planned quantity. Therefore, it must be adjusted to keep the inventory levels current.
 
@@ -187,6 +189,10 @@ Workers can specify the quantity to adjust by selecting **Adjust material**. Thi
 - In the **Report scrap** dialog box
 - In the **Report progress** dialog box
 - On the toolbar on the right
+
+For information about how to add this functionality to the interface, see [Configure the production floor execution interface](production-floor-execution-configure.md#material-consumption).
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ### Adjust material consumption from the Report scrap and Report progress dialog boxes
 
