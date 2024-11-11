@@ -4,8 +4,8 @@ description: Access a list of the help topics and other resources for the financ
 author: twheeloc
 ms.author: twheeloc
 ms.topic: overview
-ms.date: 05/15/2024
-ms.custom:
+ms.date: 11/05/2024
+ms.custom: evergreen
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
