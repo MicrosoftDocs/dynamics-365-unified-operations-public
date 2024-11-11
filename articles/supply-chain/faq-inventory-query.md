@@ -1,10 +1,10 @@
 ---
 title: Responsible AI FAQ for Inquire into inventory with Copilot (preview)
 description: Access answers to frequently asked questions about the AI technology that's used in the "Inquire into inventory with Copilot" feature.
-author: Weijiesa
-ms.author: weijiesa
+author: yufei-huang
+ms.author: yufeihuang
 ms.topic: article
-ms.date: 11/07/2023
+ms.date: 11/11/2024
 ms.custom:
   - responsible-ai-faqs
 ms.reviewer: kamaybac

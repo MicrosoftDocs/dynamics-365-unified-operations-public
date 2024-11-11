@@ -6,7 +6,7 @@ ms.author: osfaixat
 ms.topic: article
 ms.custom: 
   - bap-template
-ms.date: 09/10/2024
+ms.date: 11/08/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2021-01-31 
@@ -257,7 +257,7 @@ Self-signed certificates can be used only for testing purposes. For the sake of 
 | Financial Reporting Client certificate       | This certificate is used to help secure the communication between the Financial Reporting services and AOS. | <ul><li>**CN:** FinancialReporting</li><li>**DNS name:** FinancialReporting</li></ul> |
 | Reporting certificate                        | This certificate is used to help secure the communication between SSRS and AOS. | <p>**Important:** Do **not** reuse the Financial Reporting Client certificate.</p><ul><li>**CN:** ReportingService</li><li>**DNS name:** ReportingService</li></ul> |
 | SSRS Web Server certificate                  | This certificate is used as the server certificate that's presented to the client (AOS) for the SSRS web server. | <p>The domain name of the certificate should match the FQDN of the SSRS node.</p><ul><li>**CN:** BI1.contoso.com</li><li>**DNS name:** BI1.contoso.com</li></ul>
-| On-premises local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that's hosted on-premises and on Lifecycle Services. It enables the local agent to act on behalf of your Microsoft Entra tenant, and to communicate with Lifecycle Services to orchestrate and monitor deployments.</p><p>**Note:** Only one on-premises local agent certificate is required for a tenant.</p> | <ul><li>**CN:** OnPremLocalAgent</li><li>**DNS name:** OnPremLocalAgent</li></ul> |
+| On-premises local agent certificate           | <p>This certificate is used to help secure the communication between a local agent that's hosted on-premises and on Lifecycle Services. It enables the local agent to act on behalf of your Microsoft Entra tenant, and to communicate with Lifecycle Services to orchestrate and monitor deployments.</p> | <ul><li>**CN:** OnPremLocalAgent</li><li>**DNS name:** OnPremLocalAgent</li></ul> |
 
 To reduce the number of certificates that are required, you can combine the Service Fabric Server certificate with the AOS SSL certificate. We don't recommend that you use a wildcard certificate. Instead, use a certificate that has multiple subject alternative names (SANs).
 

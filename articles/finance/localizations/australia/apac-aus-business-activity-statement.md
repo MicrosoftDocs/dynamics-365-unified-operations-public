@@ -843,7 +843,7 @@ For a list of fringe benefit reason codes, see [FBT reason codes](https://www.at
 <p>Other acquisitions</p>
 </td>
 <td>
-<p>[11] + G13 + G14 + G15</p>
+<p>[11] + [13] + [14] + [15]</p>
 </td>
 <td>
 <p>G11</p>
