@@ -24,6 +24,18 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
+## Features removed or deprecated in the Supply Chain Management 10.0.42 release
+
+### Register material consumption on the production floor execution interface (WMS-enabled) (preview)
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** |  |
+| **Replaced by another feature?**  |  |
+| **Product areas affected** | Supply Chain Management – Production control |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | |
+
 ## Features removed or deprecated in the Supply Chain Management 10.0.41 release
 
 ### Pricing management module (preview)
