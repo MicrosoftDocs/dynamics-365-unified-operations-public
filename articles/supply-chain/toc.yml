@@ -1769,7 +1769,7 @@
           items:
           - name: Inventory Visibility on-hand change schedule and ATP
             href: inventory/inventory-visibility-available-to-promise.md
-          - name: Track time-series inventory in Inventory Visibility (preview)
+          - name: Track time-series inventory in Inventory Visibility
             href: inventory/inventory-visibility-track-atp.md
         - name: Inventory Visibility Power BI dashboard
           href: inventory/inventory-visibility-dashboard.md
