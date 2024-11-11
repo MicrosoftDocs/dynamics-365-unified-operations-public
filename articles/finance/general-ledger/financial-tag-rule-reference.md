@@ -14,6 +14,7 @@ ms.dyn365.ops.version: 10.0.42
 ---
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 # Financial tag rule reference
 
