@@ -26,7 +26,7 @@ The batch platform provides an asynchronous, server-based batch processing envir
 You should become familiar with the following aspects of the batch platform:
 
 - A **batch job** is a process that is used to achieve a specific goal. A batch job consists of one or more batch tasks.
-- A **batch task** is an activity that is run by a batch job. You can add batch tasks that have multiple types of dependencies to a batch job. You can also configure AOS instances to run multiple threads, each of which runs a task. All batch tasks that are waiting to be run can be run by any available AOS instance that is configured as a batch server. To improve throughput and reduce overall execution time, you can define a batch job as many tasks and then use a batch server to run the tasks against all available AOS instances.
+- A **batch task** is an activity that is run by a batch job. You can add batch tasks that have multiple types of dependencies to a batch job. You can also configure AOS instances to run multiple threads, each of which runs a task. All batch tasks that are waiting to be executed can be picked on any available AOS instance that is configured as a batch server. To improve throughput and reduce overall execution time, you can define a batch job as many tasks and then use a batch server to run the tasks against all available AOS instances.
 - A **batch group** is an attribute of a batch task. It lets the administrator determine or specify which AOS instance runs the task. When you create a new task, it's put in the default batch group. All batch servers are configured to process the default batch group and the waiting tasks from any job. Additionally, you can create a named batch group and then set an affinity between that batch group and specific AOS instances. After you create this affinity, only the specified AOS instances process tasks from the named batch group, and those AOS instances process tasks from the named batch group only. You can also add the default batch group to the configured servers, if that batch group is required.
 
 > [!NOTE]
@@ -38,7 +38,7 @@ The capacity of a batch server is based on the maximum number of threads that ca
 
 You can run multiple threads across multiple AOS instances. Each AOS instance automatically runs multiple threads, depending on that capacity that is defined in the configuration settings. Therefore, parallel tasks from a job can be run on multiple threads across multiple AOS instances.
 
-A batch server checks for available threads one time per minute. Therefore, you might have to wait for a minute before you see that a waiting task is picked up for processing by an available thread.
+A batch server checks for available threads one time per minute. Therefore, you might have to wait for a minute before you see that a waiting task gets picked up for processing by an available batch thread.
 
 ## Batch server management planning
 
@@ -54,7 +54,7 @@ The following walkthroughs describe how tasks are processed, and how batch group
 
 ### Batch processing of dependent tasks
 
-For this example, you create a job that's named JOB 1. As the following diagram shows, the job has seven tasks: TASK 1, TASK 2, TASK 3, TASK 4, TASK 5, TASK 6, and TASK 7.
+For this example, you create a job that is named JOB 1. As the following diagram shows, the job has seven tasks: TASK 1, TASK 2, TASK 3, TASK 4, TASK 5, TASK 6, and TASK 7.
 
 ![A job that has dependent tasks.](./media/batch_framework_programmability.gif)
 
@@ -87,13 +87,7 @@ If TASK 3 fails, one of the available batch servers runs TASK 6.
 
 ### Batch processing that uses batch groups
 
-This example shows how batch jobs can be processed on specific batch servers.
-
-You have three batch servers: AOS1, AOS2, and AOS3. By default, all the batch servers process tasks from all batch jobs, depending on the number of available threads.
-
-You create a named batch group, BG1, and configure it to run on AOS2 and AOS3. Therefore, tasks from jobs in BG1 run only on AOS2 or AOS3, depending on the number of available threads. AOS1 doesn't process tasks from jobs in BG1. Likewise, AOS2 and AOS3 process tasks from BG1 only.
-
-You can configure AOS2 and AOS3 to process tasks from other batch groups. These batch groups include the default batch group.
+By implementing [Priority-based batch scheduling](priority-based-batch-scheduling.md), you can logically group jobs and set their default scheduling priority. Additionally, you can use [Concurrency control](priority-based-batch-scheduling.md#batch-concurrency) to limit the number of tasks that can run concurrently within each batch job in that group.
 
 ## Understanding batch server restarts
 
@@ -108,7 +102,7 @@ The batch server might be restarted for several reasons. Here's an overview of t
 - **Infrastructure failover** – Restarts can occur if infrastructure issues lead to an internal failover. Autoscaling and capacity management are used to ensure optimal environment performance and availability.
 - **Use of the Enhanced batch abort feature** – If it becomes necessary to forcibly halt a running batch job, you should use the [Enhanced batch abort feature](../sysadmin/batch-abort.md). This action triggers a restart of the specific batch servers where the job was running.
 
-For enhanced reliability, retry batch jobs that are affected by interruptions. Consider implementing retry mechanisms in the logic of your batch job. For information about how to implement retry logic, see [Enable batch retries](../sysadmin/retryable-batch.md).
+For enhanced reliability, retry batch jobs that get affected by interruptions. Consider implementing retry mechanisms in the logic of your batch job. For information about how to implement retry logic, see [Enable batch retries](../sysadmin/retryable-batch.md).
 
 > [!NOTE]
 > - To help maintain system stability and compatibility, ensure that you're on the [supported version](../get-started/public-preview-releases.md).
@@ -124,7 +118,7 @@ Batch class throttling prevents excessive tasks by limiting the average number o
 
 ### Batch resource-based throttling
 
-When system resources, such as SQL database transaction units (DTUs), CPU, or memory that's allocated to the batch server, approach their capacity limits, the execution of new batch tasks is delayed. This delay enables the system to manage its resources efficiently and ensures that the existing workload doesn't overwhelm the system.
+When system resources, such as SQL database transaction units (DTUs), CPU, or memory that is allocated to the batch server, approach their capacity limits, the execution of new batch tasks is delayed. This delay enables the system to manage its resources efficiently and ensures that the existing workload doesn't overwhelm the system.
 
 In effect, by delaying the execution of new batch tasks until the resource levels return to normal, we implement a guardrail mechanism. The guardrail is put in place to safeguard the performance and stability of your environment. It ensures that the environment operates optimally, even during periods of increased demand or resource constraints.
 
