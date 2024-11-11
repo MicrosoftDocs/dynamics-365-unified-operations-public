@@ -1,5 +1,5 @@
 ---
-title: Financial tag rules
+title: Financial tag rules (preview)
 description: Learn how to set up, create, and enter default financial tags on transactions.
 author: rcarlson
 ms.author: rcarlson
@@ -13,7 +13,7 @@ ms.search.form: DimensionFocus, LedgerTrialBalanceListPage, FinTagRule, Financia
 ms.dyn365.ops.version: 10.0.42
 ---
 
-# Financial tag rules
+# Financial tag rules (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
