@@ -1769,7 +1769,7 @@
           items:
           - name: Inventory Visibility on-hand change schedule and ATP
             href: inventory/inventory-visibility-available-to-promise.md
-          - name: Track time-series inventory in Inventory Visibility (preview)
+          - name: Track time-series inventory in Inventory Visibility
             href: inventory/inventory-visibility-track-atp.md
         - name: Inventory Visibility Power BI dashboard
           href: inventory/inventory-visibility-dashboard.md
@@ -2081,6 +2081,8 @@
         href: demand-planning/phase-in-out.md
       - name: Time series and planning data
         href: demand-planning/time-series.md
+      - name: Limit time series edits with time fences
+        href: demand-planning/time-fences.md
       - name: Analyze demand plans with Copilot (preview)
         href: demand-planning/demand-planning-copilot.md
       - name: Export and download data
