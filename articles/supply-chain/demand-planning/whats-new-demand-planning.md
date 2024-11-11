@@ -53,7 +53,7 @@ This version of Demand planning introduces the following fixes and improvements:
 
 ### New feature introduced in version 1.0.0.1281
 
-This version adds support for *time fences*, which allow demand planning managers to establish policies that prevent planners from editing certain date ranges of a forecast. Time fences are both flexible and simple to maintain. Managers create time fence rules based on the dimensions available in each plan. For example, a single product could be set up with different time fences for each store or geographical location. Time fence rules can also apply based on each user's role. For example, a role-based time fence rule could allow managers to edit a forecast in a period that can't be edited by planners.
+This version adds support for *time fences*, which allow demand planning managers to establish policies that prevent planners from editing certain date ranges of a forecast. Time fences are both flexible and simple to maintain. Managers create time fence rules based on the dimensions available in each plan. For example, a single product could be set up with different time fences for each store or geographical location. Time fence rules can also apply based on each user's role. For example, a role-based time fence rule could allow managers to edit a forecast in a period that can't be edited by planners. Learn more in [Limit time series edits with time fences](time-fences.md).
 
 ### New fixes and improvements in version 1.0.0.1281
 
