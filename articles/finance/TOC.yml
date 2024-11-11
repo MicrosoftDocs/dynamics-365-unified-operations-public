@@ -1364,6 +1364,8 @@
               href: general-ledger/configure-power.md
             - name: Financial reporting best practices
               href: general-ledger/fin-reports-best.md
+            - name: Financial reporting posting audit
+              href: general-ledger/postings-audit-report.md
             - name: Financial report components
               href: ../fin-ops-core/fin-ops/analytics/financial-report-components.md?context=/dynamics365/context/finance
             - name: View and design financial reports
