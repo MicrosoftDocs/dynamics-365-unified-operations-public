@@ -38,7 +38,7 @@ The capacity of a batch server is based on the maximum number of threads that ca
 
 You can run multiple threads across multiple AOS instances. Each AOS instance automatically runs multiple threads, depending on that capacity that is defined in the configuration settings. Therefore, parallel tasks from a job can be run on multiple threads across multiple AOS instances.
 
-A batch server checks for available threads one time per minute. Therefore, you might have to wait for a minute before you see that a waiting task gets picked up for processing by an available batch thread.
+A batch server checks for available threads one time per minute. Therefore, you might have to wait for a minute before you see that a ready task gets picked up for processing by an available batch thread.
 
 ## Batch server management planning
 
@@ -102,7 +102,7 @@ The batch server might be restarted for several reasons. Here's an overview of t
 - **Infrastructure failover** – Restarts can occur if infrastructure issues lead to an internal failover. Autoscaling and capacity management are used to ensure optimal environment performance and availability.
 - **Use of the Enhanced batch abort feature** – If it becomes necessary to forcibly halt a running batch job, you should use the [Enhanced batch abort feature](../sysadmin/batch-abort.md). This action triggers a restart of the specific batch servers where the job was running.
 
-For enhanced reliability, retry batch jobs that get affected by interruptions. Consider implementing retry mechanisms in the logic of your batch job. For information about how to implement retry logic, see [Enable batch retries](../sysadmin/retryable-batch.md).
+For enhanced reliability, retry batch tasks that get affected by interruptions. Consider implementing retry mechanisms in the logic of your batch class. For information about how to implement retry logic, see [Enable batch retries](../sysadmin/retryable-batch.md).
 
 > [!NOTE]
 > - To help maintain system stability and compatibility, ensure that you're on the [supported version](../get-started/public-preview-releases.md).
