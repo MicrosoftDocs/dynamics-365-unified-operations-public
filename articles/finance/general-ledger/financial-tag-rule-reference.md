@@ -18,6 +18,8 @@ ms.dyn365.ops.version: 10.0.42
 
 # Financial tag rule reference
 
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+
 ## Fields supported for all journals
 
 | Field name | Microsoft Power Fx | Description | SQL field |
