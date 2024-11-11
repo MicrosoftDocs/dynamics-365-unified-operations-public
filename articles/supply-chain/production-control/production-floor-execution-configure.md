@@ -28,29 +28,15 @@ This article describes the various options for configuring a production floor ex
 
 The production floor execution interface is always available in Supply Chain Management. But several optional features can be turned on or off for your system. Use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to turn on any or all of the features described in the following subsections as required.
 
-### Register material consumption (preview)
-
-[!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: Preview until further notice -->
+### Register material consumption
 
 This feature enables workers to use the production floor execution interface to register material consumption, batch numbers, and serial numbers. Some manufacturers, especially those in the process industries, must explicitly register the amount of material that is consumed for each batch or production order. For example, workers might use a scale to weigh the amount of material that is consumed as they work. To ensure full material traceability, these organizations must also register the batch numbers that were consumed to produce each product.
 
 > [!IMPORTANT]
 >
-> - *(Preview) Register material consumption on the production floor execution interface (WMS-enabled)* is a preview feature. *Register material consumption on the production floor execution interface (non-WMS)* is generally available.
-> - Preview features are subject to the [preview supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2105274).
-> - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
+> This feature only supports items that *are not* enabled to use warehouse management processes (WMS).
 
-There are two versions of this feature. One supports items that *are not* enabled to use warehouse management processes (WMS). The other supports items that *are* enabled to use WMS. To use this functionality, turn on one or both of the following features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in this order), depending on whether you have items that are enabled for WMS:
-
-- *Register material consumption on the production floor execution interface (non-WMS)* (As of Supply Chain Management version 10.0.32, this feature is turned on by default.)
-- *(Preview) Register material consumption on the production floor execution interface (WMS-enabled)*
-
-> [!IMPORTANT]
-> You can use the non-WMS feature alone. However, if you use WMS, you must enable both features.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
+To use this functionality, the feature that is named *Register material consumption on the production floor execution interface (non-WMS)* must be turned on in  [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of Supply Chain Management version 10.0.32, this feature is turned on by default.
 
 ### <a name="tracked-components"></a>Tracked components (preview)
 
