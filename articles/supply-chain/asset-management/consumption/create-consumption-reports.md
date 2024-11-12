@@ -1,7 +1,7 @@
 ---
 title: Create consumption reports
 description: Learn how to create consumption reports in Asset Management, including an outline on asset consumption reports and a step-by-step process.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 08/21/2019

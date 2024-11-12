@@ -1,7 +1,7 @@
 ---
 title: Asset KPIs
 description: Learn about asset KPIs in Asset Management for assets and asset types, including a step-by-step process for getting an overview of performance on assets.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 08/23/2019

@@ -1,7 +1,7 @@
 ---
 title: Estimate and manage landed costs
 description: The system uses your auto cost setup to determine an estimate for your landed cost. Learn how you can define various scenarios to deliver a more accurate estimate.
-author: lisascholz
+author: lisascholz91
 ms.author: lisascholz
 ms.topic: how-to
 ms.date: 06/07/2024

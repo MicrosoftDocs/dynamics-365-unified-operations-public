@@ -1,7 +1,7 @@
 --- 
 title: Set up hub accessorial charges and accessorial masters
 description: Learn how to create an accessorial master for a hub and use that master to create a hub accessorial charge, including step-by-step processes. 
-author: lisascholz
+author: lisascholz91
 ms.author: lisascholz
 ms.topic: how-to
 ms.date: 11/11/2016

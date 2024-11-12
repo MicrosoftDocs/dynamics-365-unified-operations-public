@@ -1,7 +1,7 @@
 ---
 title: Add fault to work order
 description: Learn how to add faults that were set up in the fault designer to a work order in Asset Management, including a step-by-step process.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 10/15/2019

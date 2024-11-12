@@ -1,7 +1,7 @@
 ---
 title: Asset fault analysis
 description: Learn about asset fault analysis in Asset Management, including a step-by-step process and examples using group by symptoms.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 08/23/2019

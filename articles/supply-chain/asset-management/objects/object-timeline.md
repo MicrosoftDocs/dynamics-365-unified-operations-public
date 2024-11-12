@@ -1,7 +1,7 @@
 ---
 title: Asset event history
 description: Learn how to access asset event history in Asset Management, including an overview on the Details FastTab of the Asset event history page.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 06/26/2019

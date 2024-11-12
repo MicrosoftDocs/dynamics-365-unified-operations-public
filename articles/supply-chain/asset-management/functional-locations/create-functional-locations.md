@@ -1,7 +1,7 @@
 ---
 title: Create functional locations
 description: Learn how to create a functional location in Asset Management, including an outline and step-by-step process on creating a default functional location.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 06/25/2019

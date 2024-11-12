@@ -1,7 +1,7 @@
 ---
 title: Move, replace, and install assets
 description: Learn how to move, replace, and install assets in Asset Management, including outlines and step-by-step processes for each type of asset.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 06/26/2019

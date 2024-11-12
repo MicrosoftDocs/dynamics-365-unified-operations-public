@@ -1,7 +1,7 @@
 ---
 title: Maintenance downtime activities
 description: Learn how maintenance downtime is used to get an overview of the capacity required to carry out maintenance jobs on specific assets during a specific period.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 08/27/2019

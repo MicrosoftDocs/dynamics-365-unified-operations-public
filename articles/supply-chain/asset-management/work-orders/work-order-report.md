@@ -1,7 +1,7 @@
 ---
 title: Work order report
 description: Learn about work order reports in Asset Management, which you can generate to show information about one or more work orders, with a step-by-step process.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 10/15/2019

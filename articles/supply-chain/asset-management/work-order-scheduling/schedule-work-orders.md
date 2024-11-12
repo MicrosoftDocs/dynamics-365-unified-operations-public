@@ -1,7 +1,7 @@
 ---
 title: Schedule work orders
 description: Learn how to schedule work orders in Asset Management, including a step-by-step process, an outline on scores used in work order scheduling and examples.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 08/19/2019

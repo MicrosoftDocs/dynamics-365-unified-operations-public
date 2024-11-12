@@ -1,7 +1,7 @@
 ---
 title: Integrate with Microsoft Sustainability Manager
 description: Learn how to integrate Microsoft Dynamics 365 Supply Chain Management with Microsoft Sustainability Manager, including prerequisites.
-author: lisascholz
+author: lisascholz91
 ms.author: lisascholz
 ms.topic: how-to
 ms.date: 11/28/2023
