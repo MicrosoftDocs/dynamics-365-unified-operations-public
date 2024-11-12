@@ -146,11 +146,6 @@
       "redirect_document_id": "false"
     },      
     {
-      "source_path": "articles/fin-ops-core/dev-itpro/dev-tools/real-async.md",
-      "redirect_url": "/fin-ops-core/fin-ops",
-      "redirect_document_id": "false"
-    },
-    {
       "source_path": "articles/human-resources/hr-teams-leave-app.md",
       "redirect_url": "/human-resources/hr-app",
       "redirect_document_id": "false"
