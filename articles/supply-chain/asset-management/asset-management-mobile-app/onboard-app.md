@@ -47,7 +47,7 @@ Follow these steps to install the Asset Management mobile app in Dataverse.
 1. Select the **Dynamics 365 Asset Management Mobile Application**. 
 1. Follow the instructions on your screen to install the app in the Dataverse environment that is connected to your target Supply Chain Management environment.
 
-[<img src="media/Install_Asset_Management_App.png" alt="Screenshot of powerapps admin installing the Asset Management App." title="Screenshot of powerapps admin installing the Asset Management App" width="600" />](Install_Asset_Management_App.png)
+[<img src="media/install-mobile-app-in-power-platform.png" alt="Screenshot of powerapps admin installing the Asset Management App." title="Screenshot of powerapps admin installing the Asset Management App" width="600" />](Install_Asset_Management_App.png)
 
 
 ## Grant access to the mobile app in Dataverse
