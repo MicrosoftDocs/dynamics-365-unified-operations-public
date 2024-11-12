@@ -1,7 +1,7 @@
 ---
 title: Procurement
 description: Learn about procurement in Asset Management, which lets you create a purchase order or a purchase requisition from a work order.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 10/15/2019

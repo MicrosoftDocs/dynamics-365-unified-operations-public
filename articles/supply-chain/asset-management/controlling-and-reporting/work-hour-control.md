@@ -1,7 +1,7 @@
 ---
 title: Work hour control
 description: Learn about using work hour control in Asset Management, including an outline and process for work hour control for assets, functional locations, and work orders.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 08/23/2019

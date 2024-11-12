@@ -1,7 +1,7 @@
 ---
 title: Use phase in/out functionality to simulate planned changes
 description: Learn how to use phase in/out functionality to set up forecasts and calculations that simulate changes that you plan to make.
-author: AndersGirke
+author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: how-to
 ms.date: 05/29/2024

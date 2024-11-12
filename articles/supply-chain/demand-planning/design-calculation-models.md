@@ -1,7 +1,7 @@
 ---
 title: Design calculation models
 description: Learn about calculation models, which let you arrange and configure tiles to define the calculation that is done by a calculation profile.
-author: AndersGirke
+author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: how-to
 ms.date: 10/19/2023

@@ -1,7 +1,7 @@
 ---
 title: File maintenance requests using the Asset Management mobile app
 description: Learn how to use the Asset Management mobile app to file maintenance requests, including outlines on user requirements and identifying assets.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: how-to
 ms.date: 09/19/2023

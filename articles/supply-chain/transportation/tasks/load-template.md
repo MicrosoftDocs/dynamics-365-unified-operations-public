@@ -1,7 +1,7 @@
 ---
 title: Load templates
 description: Learn how to set up load templates, and how to associate a load template with a new load, including a step-by-step process.
-author: lisascholz
+author: lisascholz91
 ms.author: lisascholz
 ms.reviewer: kamaybac
 ms.search.form: WHSLoadTemplate, WHSOutboundLoadPlanningWorkbench, WHSInboundLoadPlanningWorkbench

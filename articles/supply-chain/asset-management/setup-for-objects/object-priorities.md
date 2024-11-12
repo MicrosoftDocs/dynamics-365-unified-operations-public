@@ -1,7 +1,7 @@
 ---
 title: Asset service levels
 description: Learn about asset service levels in Asset Management, including examples and a step-by-step process on setting up asset service levels.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 06/26/2019

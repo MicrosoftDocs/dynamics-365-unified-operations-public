@@ -1,7 +1,7 @@
 ---
 title: Work with forecast profiles
 description: Learn how to work with forecast profiles, which prepare the data of an existing time series and then run forecasting algorithms to create a new time series.
-author: AndersGirke
+author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: how-to
 ms.date: 10/19/2023

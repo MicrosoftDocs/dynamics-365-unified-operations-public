@@ -1,7 +1,7 @@
 ---
 title: Demand planning home page
 description: Learn about Ddmand planning in Microsoft Dynamics 365 Supply Chain Management, Microsoft's next-generation collaborative demand planning solution.
-author: AndersGirke
+author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: overview
 ms.date: 10/19/2023

@@ -1,7 +1,7 @@
 ---
 title: Manually created work orders
 description: Learn how to create work orders manually in Asset Management, including a step-by-step process for creating work orders.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 10/15/2019

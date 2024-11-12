@@ -1,7 +1,7 @@
 --- 
 title: Carrier groups
 description: Learn how to set up data for carrier groups, which are collections of shipping carriers and carrier services, included a step-by-step process.
-author: lisascholz
+author: lisascholz91
 ms.author: lisascholz
 ms.topic: how-to
 ms.date: 10/30/2020

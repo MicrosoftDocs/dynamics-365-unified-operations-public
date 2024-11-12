@@ -1,7 +1,7 @@
 ---
 title: Work order lifecycle states
 description: Learn about work order lifecycle states in Asset Management, including a step-by-step process and table that defines various option names.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 08/13/2019
