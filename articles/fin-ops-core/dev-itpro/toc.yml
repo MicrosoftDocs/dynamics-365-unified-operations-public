@@ -1358,7 +1358,9 @@ items:
             - name: Centralized error management
               href: data-entities/dual-write/dual-write-async-error.md
             - name: Dual-write Async FAQ  
-              href: data-entities/dual-write/dual-write-async-faq.md        
+              href: data-entities/dual-write/dual-write-async-faq.md    
+            - name: Async feature enhancements
+              href: dev-tools/real-async.md
         - name: Support for dual-write
           items:
             - name: Considerations for initial synchronization
