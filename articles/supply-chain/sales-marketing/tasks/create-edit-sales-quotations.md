@@ -1,7 +1,7 @@
 ---
 title: Create and edit sales quotations
 description: Learn how to create and update a sales quotation, including step-by-step processes for creating and updating sales quotations using the USMF demo data company.
-author: adpattanaik
+author: kamaybac
 ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: SalesQuotationListPage, SalesCreateQuotation, SalesQuotationTable, SalesQuotationTotals, SalesQuotationPriceSimulation, SalesQuotationEditLines, SrsReportViewerForm, smmSetNumSeqIfManual, CustTable, SalesTable, CustQuotationConfirmationJournal, CustQuotationJournal, CustSalesLines, SalesQuotationCopying, SalesQuotationDeleteQuotations, SalesQuotationListPagePreviewPane, SalesQuotationTypeGroup

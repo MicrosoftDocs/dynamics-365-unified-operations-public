@@ -1,7 +1,7 @@
 ---
 title: Forecasts, work orders, and projects
 description: Learn about forecasts and work order integration with the Project management and accounting module in Asset Management, including a step-by-step process.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 08/29/2019

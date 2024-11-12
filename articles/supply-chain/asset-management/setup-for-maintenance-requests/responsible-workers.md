@@ -1,7 +1,7 @@
 ---
 title: Responsible maintenance workers
 description: Learn how to set up responsible maintenance workers in Asset Management, including a process on setting up responsible maintenance workers.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 07/26/2019

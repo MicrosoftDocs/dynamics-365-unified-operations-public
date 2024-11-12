@@ -1,7 +1,7 @@
 --- 
 title: Ship sales orders without warehousing
 description: Learn how to update a sales order when products are shipped to the customer, including a process for posting packing slips for orders. 
-author: adpattanaik
+author: kamaybac
 ms.author: adpattanaik
 ms.topic: how-to
 ms.date: 08/20/2019

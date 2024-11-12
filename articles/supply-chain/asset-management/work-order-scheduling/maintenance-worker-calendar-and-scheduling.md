@@ -1,7 +1,7 @@
 ---
 title: Maintenance worker calendar and scheduling
 description: Learn about the maintenance worker calendar in relation to scheduling in Asset Management, including an example of a maintenance worker relating to a resource.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 08/19/2019

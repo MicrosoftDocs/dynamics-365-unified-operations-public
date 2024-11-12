@@ -1,7 +1,7 @@
 ---
 title: Maintenance schedule cost
 description: Learn about maintenance schedule cost in Asset Management, including a step-by-step process for calculating budget costs on maintenance schedule lines.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 08/27/2019

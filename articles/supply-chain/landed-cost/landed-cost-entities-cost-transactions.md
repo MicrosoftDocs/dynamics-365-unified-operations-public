@@ -1,7 +1,7 @@
 ---
 title: Cost transaction entities
 description: Learn about cost transaction entities, which enable the value of a cost split among the contents of a cost area through the selection of an apportionment method.
-author: lisascholz
+author: lisascholz91
 ms.author: lisascholz
 ms.topic: article
 ms.date: 05/27/2022

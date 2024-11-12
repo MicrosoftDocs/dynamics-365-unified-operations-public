@@ -1,7 +1,7 @@
 ---
 title: Time series and planning data
 description: Learn about time series, which represent the output from forecasts, calculations, and transformations in daily, weekly, or monthly time buckets.
-author: aevengir
+author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: how-to
 ms.date: 10/19/2023

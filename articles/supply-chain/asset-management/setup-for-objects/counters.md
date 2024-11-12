@@ -1,7 +1,7 @@
 ---
 title: Asset measures
 description: Learn how to create asset measure types in Asset Management with a step-by-step process for creating counter types for asset counter registrations.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 10/15/2019
