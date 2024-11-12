@@ -97,7 +97,7 @@ Customer and vendor master data sharing allows you to share customer and vendor 
 With the release of Platform update for version 10.0.12, customer and vendor master data sharing can be enabled using the **Customer and vendor master data sharing** feature in the **Feature management** module. There is no need to complete a survey first. It is important to consider limits in the number of records and companies stated above.
 
 > [!NOTE]
-> Default dimensions set up against a customer or vendor cannot be shared across companies. When configuring the customer or vendor record for cross-company data sharing, the **DefaultDimension** field is disabled, and cannot be included in the data sharing policy.
+> Beginning in version 10.0.43 the **default dimensions** set up against a customer or vendor can be shared across companies only if the full set of financial dimensions are defined as global such as Department or Business unit. For more information see this article regarding the new feature to allow default dimensions see [Default financial dimension data sharing](cross-company-data-sharing-financial-dimensions.md)
 
 > Default dimensions hold a loose foreign key reference to the backing dimension data, which can reference both company-specific and non-company specific data. Determining the appropriate action to be taken for each dimension value has inherent complexity and would require a change from the current implementation, which could dramatically impact performance.
 
