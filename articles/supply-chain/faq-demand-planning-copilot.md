@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQ for Analyze demand plans with Copilot (preview)
 description: Access answers to frequently asked questions about the AI technology that's used in the "Analyze demand plans with Copilot" feature for Demand planning.
-author: aevengir
+author: AndersGirke
 ms.author: aevengir
 ms.topic: article
 ms.date: 04/01/2024

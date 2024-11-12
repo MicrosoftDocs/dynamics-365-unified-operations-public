@@ -1,7 +1,7 @@
 ---
 title: Security roles and row-level security in Demand planning
 description: Learn how to set up users, security roles, and row-level security for Demand planning with an outline on configuring security roles and duties.
-author: aevengir
+author: AndersGirke
 ms.author: aevengir
 ms.topic: how-to
 ms.date: 02/22/2024

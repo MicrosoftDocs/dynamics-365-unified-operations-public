@@ -1,7 +1,7 @@
 ---
 title: Use custom Azure Machine Learning algorithms in Demand planning
 description: Learn how to use custom Microsoft Azure Machine Learning algorithms for demand forecasting in Dynamics 365 Supply Chain Management while you use demand planning.
-author: aevengir
+author: AndersGirke
 ms.author: aevengir
 ms.topic: how-to
 ms.date: 11/15/2023
