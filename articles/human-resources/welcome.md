@@ -16,7 +16,6 @@ audience: Application User
 # ms.devlang: 
 
 # ms.tgt_pltfrm: 
-ms.custom: 
 ms.collection: get-started
 ms.assetid: 
 ms.search.region: Global
