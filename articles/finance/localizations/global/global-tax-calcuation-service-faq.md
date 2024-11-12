@@ -19,6 +19,10 @@ This article answers frequently asked questions about the functionality of the T
 
 Yes.
 
+## Do I have to continue to maintain tax codes and sales tax groups in Finance and operations and Globalization studio, or can it be maintained in only one place?
+
+A tax setup can be created and maintained in the Tax calculation feature in Globalization studio. When the Tax feature is selected on the **Tax calculation parameters** page in Finance and operations, the setting is synchronized from Globalization studio to Finance and operations.
+
 ## Do you have any plans to support Russia, Brazil and India?
 
 We don't currently plan to support Russia, Brazil, or India. For more information about country/region support, see [Release plans on Dynamics 365 and Microsoft Power Platform release plans](/dynamics365/release-plans/).
