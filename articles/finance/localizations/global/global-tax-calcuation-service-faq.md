@@ -15,6 +15,10 @@ ms.dyn365.ops.version: AX 10.0.39
 
 This article answers frequently asked questions about the functionality of the Tax Calculation.
 
+## Will the Tax Calculation be available on Tier-1 machines and on-primise machines?
+
+Yes.
+
 ## Do you have any plans to support Russia, Brazil and India?
 
 We don't currently plan to support Russia, Brazil, or India. For more information about country/region support, see [Release plans on Dynamics 365 and Microsoft Power Platform release plans](/dynamics365/release-plans/).
