@@ -27,9 +27,9 @@ A tax setup can be created and maintained in the Tax calculation feature in Glob
 
 We don't currently plan to support Russia, Brazil, or India. For more information about country/region support, see [Release plans on Dynamics 365 and Microsoft Power Platform release plans](/dynamics365/release-plans/).
 
-## What is the recommendation for global implementations that involve countries or regions such as India? Can I use the Goods and Services Tax (GST) engine that Microsoft provides and the Tax Calculation service on the same instance of Dynamics 365 Finance or Dynamics 365 Supply Chain Management, or do I have to have separate instances?
+## What is the recommendation for global implementations that involve countries or regions such as India? Can I use the Goods and Services Tax (GST) engine that Microsoft provides and the Tax Calculation on the same instance of Dynamics 365 Finance or Dynamics 365 Supply Chain Management, or do I have to have separate instances?
 
-You can use different tax engines for different legal entities. For example, for a legal entity in India, you can use GST that is based on Global Tax Engine (GTE). Then, for other legal entities, you can enable the Tax Calculation service.
+You can use different tax engines for different legal entities. For example, for a legal entity in India, you can use GST that is based on Global Tax Engine (GTE). Then, for other legal entities, you can enable the Tax Calculation.
 
 ## If a transaction is posted with incorrect tax, how can it be corrected?
 
