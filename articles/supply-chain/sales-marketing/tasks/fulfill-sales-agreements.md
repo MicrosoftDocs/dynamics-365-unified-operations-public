@@ -1,7 +1,7 @@
 --- 
 title: Fulfill sales agreements
 description: Learn how to fulfill a sales agreement by associating sales orders with it, including a step-by-step process for releasing sales orders from agreements.
-author: adpattanaik
+author: kamaybac
 ms.author: adpattanaik
 ms.topic: how-to
 ms.date: 08/29/2018

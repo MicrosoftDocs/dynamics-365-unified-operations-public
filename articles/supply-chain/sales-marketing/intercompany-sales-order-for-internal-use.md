@@ -1,7 +1,7 @@
 ---
 title: Create an intercompany sales order for internal use
 description: Learn how to Create an intercompany sales order for internal use, including an outline and step-by-step process for manually creating intercompany sales orders.
-author: adpattanaik
+author: kamaybac
 ms.author: adpattanaik
 ms.topic: article
 ms.date: 09/01/2021

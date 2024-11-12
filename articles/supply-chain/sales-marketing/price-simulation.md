@@ -1,7 +1,7 @@
 ---
 title: Price simulation
 description: Learn about price simulation for quotations, which helps you evaluate the effect of deductions on the future sales price during the quotation process.
-author: adpattanaik
+author: kamaybac
 ms.author: adpattanaik
 ms.topic: article
 ms.date: 06/20/2017
