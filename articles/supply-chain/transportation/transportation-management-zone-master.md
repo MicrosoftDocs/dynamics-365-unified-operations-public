@@ -1,7 +1,7 @@
 ---
 title: Transportation management zone master
 description: Learn how transport management lets you divide geographic locations into zones, including definitions for various pricing modules.
-author: lisascholz
+author: lisascholz91
 ms.author: lisascholz
 ms.topic: article
 ms.date: 10/16/2020

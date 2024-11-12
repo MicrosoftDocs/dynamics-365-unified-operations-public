@@ -1,7 +1,7 @@
 ---
 title: Introduction to functional locations
 description: Learn about functional locations in Asset Management, including outlines on the functional, process-related, and spatial functional locations.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 06/25/2019

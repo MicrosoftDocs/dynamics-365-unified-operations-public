@@ -1,7 +1,7 @@
 ---
 title: What's new or changed in Demand planning
 description: This article lists new features, fixes, improvements, and known issues for each released version of Demand planning in Microsoft Dynamics 365 Supply Chain Management.
-author: aevengir
+author: AndersEvenGirke
 ms.author: aevengir
 ms.reviewer: kamaybac
 ms.search.form: 

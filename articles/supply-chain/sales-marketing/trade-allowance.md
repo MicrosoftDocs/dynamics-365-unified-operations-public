@@ -1,7 +1,7 @@
 ---
 title: Trade allowance management
 description: Learn about trade allowance management for Dynamics 365 Supply Chain Management, including outlines on audience and purpose.
-author: adpattanaik
+author: kamaybac
 ms.author: adpattanaik
 ms.topic: article
 ms.date: 08/17/2018

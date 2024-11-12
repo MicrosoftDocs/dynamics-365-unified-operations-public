@@ -1,7 +1,7 @@
 ---
 title: Change the asset type of existing assets (preview)
 description: Learn how to change the asset type of existing assets, including prerequisites and an outline on changeing asset types of one or more existing assets.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: how-to
 ms.date: 10/27/2023

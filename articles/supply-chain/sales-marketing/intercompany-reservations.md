@@ -1,7 +1,7 @@
 ---
 title: Intercompany reservations
 description: Learn about intercompany reservations, which controls the reservation, cost, and intercompany chain, including an outline on removing markings.
-author: adpattanaik
+author: kamaybac
 ms.author: adpattanaik
 ms.topic: article
 ms.date: 09/01/2021

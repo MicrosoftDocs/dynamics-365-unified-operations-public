@@ -1,7 +1,7 @@
 ---
 title: Voyage status setup
 description: Learn how to establish the status values that users can assign to voyages, including a table that defines various fields.
-author: lisascholz
+author: lisascholz91
 ms.author: lisascholz
 ms.reviewer: kamaybac
 ms.search.form: ITMStatusTable

@@ -1,7 +1,7 @@
 ---
 title: Transportation management modes and methods
 description: Learn how to set up Transportation management modes and methods, including step-by-step processes for creating modes and transportation methods.
-author: lisascholz
+author: lisascholz91
 ms.author: lisascholz
 ms.reviewer: kamaybac
 ms.search.form: TMSMode,TMSMethod

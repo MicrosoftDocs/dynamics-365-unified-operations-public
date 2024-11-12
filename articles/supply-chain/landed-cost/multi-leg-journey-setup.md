@@ -1,7 +1,7 @@
 ---
 title: Multi-leg journey setup
 description: Learn how to set up multi-leg journeys for the Landed cost module, including an outline on legs and a table that defines various fields.
-author: lisascholz
+author: lisascholz91
 ms.author: lisascholz
 ms.reviewer: kamaybac
 ms.search.form: ITMLegTable, ITMJourneyTable, ITMActivityTable

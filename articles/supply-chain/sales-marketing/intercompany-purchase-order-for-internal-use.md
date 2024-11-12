@@ -1,7 +1,7 @@
 ---
 title: Create and invoice an intercompany purchase order for internal use
 description: Learn how to create and invoice an intercompany purchase order for internal use, including a step-by-step process for creating purchase orders.
-author: adpattanaik
+author: kamaybac
 ms.author: adpattanaik
 ms.topic: article
 ms.date: 09/01/2021

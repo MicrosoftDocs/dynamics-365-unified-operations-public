@@ -1,7 +1,7 @@
 ---
 title: Fault management
 description: Learn about fault management in Asset Management, including step-by-step processes for creating fault symptoms, fault areas, and fault types.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 08/13/2019

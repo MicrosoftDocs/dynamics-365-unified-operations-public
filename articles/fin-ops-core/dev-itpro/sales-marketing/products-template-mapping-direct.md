@@ -1,7 +1,7 @@
 ---
 title: Synchronize products directly from Supply Chain Management to products in Sales
 description: Learn about the templates and underlying tasks that are used to synchronize products from Dynamics 365 Supply Chain Management to Dynamics 365 Sales.
-author: adpattanaik
+author: kamaybac
 ms.author: adpattanaik
 ms.topic: article
 ms.date: 06/10/2024

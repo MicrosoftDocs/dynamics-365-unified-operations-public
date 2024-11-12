@@ -1,7 +1,7 @@
 ---
 title: Approvals Management mobile app FAQ and known issues
 description: This article answers frequently asked questions about the Approvals Management mobile app. It also describes known issues that affect the app and explains how to work around them.
-author: akshaykmr
+author: kamaybac
 ms.author: akshaykmr
 ms.reviewer: kamaybac
 ms.search.form:

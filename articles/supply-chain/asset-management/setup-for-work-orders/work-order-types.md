@@ -1,7 +1,7 @@
 ---
 title: Work order types
 description: Learn about work order types in Asset Management, which are used to categorize work orders, including a step-by-step process.
-author: jodahl
+author: jodahlMSFT
 ms.author: jodahl
 ms.topic: article
 ms.date: 08/13/2019
