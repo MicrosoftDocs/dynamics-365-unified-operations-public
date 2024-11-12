@@ -31,7 +31,7 @@ The production floor execution interface is always available in Supply Chain Man
 ### <a name="material-consumption"></a>Register material consumption (preview)
 
 [!INCLUDE [preview-banner-section](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-<!-- KFM: Preview until further notice -->
+<!-- KFM: Preview until 10.0.42 GA  -->
 
 Some manufacturers, especially those in the process industries, must explicitly register the amount of material that is consumed for each batch or production order. For example, workers might use a scale to weigh the amount of material that is consumed as they work. To ensure full material traceability, these organizations must also register the batch numbers that were consumed to produce each product.
 
@@ -46,7 +46,6 @@ There are two versions of this feature. One supports items that *are not* enable
 > - *Register material consumption as complete and edit dimensions on the production floor execution interface* is a preview feature. *Register material consumption on the production floor execution interface (non-WMS)* is generally available.
 > - Preview features are subject to the [preview supplemental terms of use](https://go.microsoft.com/fwlink/?linkid=2105274).
 > - Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - For more information about preview releases, see [One version service updates FAQ](/dynamics365/unified-operations/fin-and-ops/get-started/one-version).
 
 To use this functionality, turn on one or both of the following features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in this order), depending on whether you have items that are enabled for WMS:
 
@@ -55,8 +54,6 @@ To use this functionality, turn on one or both of the following features in [Fea
 
 > [!IMPORTANT]
 > You can use the non-WMS feature alone. However, if you use WMS, you must enable both features.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-d365.md)]
 
 ### <a name="tracked-components"></a>Tracked components (preview)
 
