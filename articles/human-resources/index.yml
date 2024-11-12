@@ -11,7 +11,8 @@ metadata:
   ms.topic: hub-page # Required
   author: twheeloc #Required; your GitHub user alias, with correct capitalization.
   ms.author: twheeloc #Required; microsoft alias of author; optional team alias.
-  ms.date: 05/13/2024 #Required; mm/dd/yyyy format.
+  ms.date: 11/12/2024 #Required; mm/dd/yyyy format.
+  ms.custom: evergreen
   hide_bc: true
   
   # highlightedContent section (optional)
