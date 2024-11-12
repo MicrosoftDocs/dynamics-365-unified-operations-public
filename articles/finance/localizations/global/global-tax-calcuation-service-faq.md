@@ -43,6 +43,6 @@ The triggers for the Tax Calculation in finance and operations apps are the same
 
 The Tax calculation feature should be completed and published in Globalization studio. 
 
-## Why can't I turn on the Enable tax calculation parameter?
+## Why can't I turn on the Enable advanced tax calculation parameter?
 
 The **Enable advanced tax calculation** parameter isn't yet supported in some countries and regions. Make sure that the primary address of the legal entity is in one of the [supported countries/regions](global-tax-calcuation-service-overview.md#supported-countriesregions).
