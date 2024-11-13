@@ -1,7 +1,7 @@
 ---
 title: Add efficiency in quote-to-cash with Dynamics 365 Sales
 description: Learn about how the improved quote-to-cash system works and how it can help improve your business processes, including outlines on sales quotation origin and ownership.
-author: kamaybac
+author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: conceptual
 ms.date: 06/10/2024

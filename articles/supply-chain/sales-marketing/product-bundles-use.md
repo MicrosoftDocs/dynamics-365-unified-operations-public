@@ -1,7 +1,7 @@
 ---
 title: Sell and allocate product bundles
 description: Learn how to work with product bundles on sales orders and related documents, and explains how bundle item prices are allocated to each bundle component.
-author: kamaybac
+author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: how-to
 ms.date: 04/29/2024

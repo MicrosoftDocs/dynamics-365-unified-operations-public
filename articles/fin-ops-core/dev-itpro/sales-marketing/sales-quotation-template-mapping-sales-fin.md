@@ -1,7 +1,7 @@
 ---
 title: Synchronize sales quotation headers and lines directly from Sales to Supply Chain Management
 description: Learn about the templates and underlying tasks used to synchronize sales quotation headers and lines from Dynamics 365 Sales to Dynamics 365 Supply Chain Management. 
-author: kamaybac
+author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: article
 ms.date: 06/10/2024
