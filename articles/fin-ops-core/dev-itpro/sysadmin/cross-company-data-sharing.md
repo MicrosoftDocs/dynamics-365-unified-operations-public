@@ -4,7 +4,7 @@ description: Learn about cross-company data sharing, which is a mechanism for sh
 author: pnghub
 ms.author: gned
 ms.topic: article
-ms.date: 07/12/2024
+ms.date: 11/24/2024
 ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.search.validFrom: 2016-05-31
@@ -27,17 +27,17 @@ Here are some examples of cross-company data sharing and the basic logic:
 
 -   The same payment terms and payment day definitions are used across 15 legal entities.
 -   The same terms of delivery are used across seven legal entities in three countries/regions.
--   Records created, updated, and deleted in any of the companies within the policy will be replicated immediately, across all the companies.
--   Fields that are not selected for sharing are maintained in each company and will not trigger any replication.
--   As part of enabling a policy, it is optional to copy any existing records.
+-   Records created, updated, and deleted in any of the companies within the policy are replicated immediately, across all the companies.
+-   Fields that aren't selected for sharing are maintained in each company and won't trigger any replication.
+-   As part of enabling a policy, it's optional to copy any existing records.
 
 
 Cross-company data sharing has the following limitations:
 
 -   It can’t be used to share transactional data between companies.
 -   Only reference and group data can be shared, or tables that have specifically been enabled. For example, **Data Sharing Type** is set to **Duplicate**.
--   It supports replication of fewer than one million total records per job. This total is calculated as the number of shared records × the number of shared companies. The limit is increased to two million records from the Platform Update for version 10.0.10.
--   It supports replication for up to 100 companies per policy. The limit is increased to 300 companies from the Platform Update for version 10.0.10.
+-   It supports replication of fewer than one million total records per job. This total is calculated as the number of shared records × the number of shared companies. The limit is increased to two million records from the Platform update for version 10.0.10.
+-   It supports replication for up to 100 companies per policy. The limit is increased to 300 companies from the Platform update for version 10.0.10.
 -   Only one level of child relationships is exposed. To protect data consistency, replication doesn't occur if another level is required.
 - 	Fields that reference Financial dimensions, for example **Ledger** or **Default** dimension, can't be shared across companies. 
       o	Dimensions hold a loose foreign key reference to the backing dimension data, which can reference both company-specific and non-company specific data. Determining the appropriate action to be taken for each dimension value has inherent complexity and would require a change from the current implementation, which could dramatically impact performance.
@@ -52,7 +52,7 @@ Data sharing is managed by defined policies that are saved in data packages. Tem
 -   The entities that participate in the replication
 -   The companies that participate in the sharing
 
-The same company and table can only be in one policy. It is possible to share the same table in more than one policy. This can happen when the limits of records or companies are reached, or to create policies for tables that need to be shared differently for different country/regions. 
+The same company and table can only be in one policy. It's possible to share the same table in more than one policy. This happens when the limits of records or companies are reached, or to create policies for tables that need to be shared differently for different country/regions. 
 
 > [!NOTE]
 > Only required foreign key fields are selected by default. Optional foreign keys need to be selected manually to be included. The best practice is to add one or more tables when selecting a foreign key field, unless the table has already been added.
@@ -88,21 +88,21 @@ Cross-company data sharing isn't supported for the following scenarios:
 -   Sharing of transactional records for reporting or management purposes, such as consolidations.
 -   Sharing across deployments.
 -   Complex scenarios, such as replication of subtype/supertype tables or tables that have date effectivity rules.
--   Tables that do not have a unique index. 
+-   Tables that don't have a unique index. 
 
 
 ## Customer and vendor master data sharing
 Customer and vendor master data sharing allows you to share customer and vendor data across multiple companies. If you would like to be considered for this feature, complete the [Data sharing application](https://aka.ms/MSDYN365FODataSharing) and contact Support.
 
-With the release of Platform update for version 10.0.12, customer and vendor master data sharing can be enabled using the **Customer and vendor master data sharing** feature in the **Feature management** module. There is no need to complete a survey first. It is important to consider limits in the number of records and companies stated above.
+With the release of Platform update for version 10.0.12, customer and vendor master data sharing can be enabled using the **Customer and vendor master data sharing** feature in the **Feature management** module. There's no need to complete a survey first. It's important to consider limits in the number of records and companies stated above.
 
 > [!NOTE]
-> Beginning in version 10.0.43 the **default dimensions** set up against a customer or vendor can be shared across companies only if the full set of financial dimensions are defined as global such as Department or Business unit. For more information see this article regarding the new feature to allow default dimensions see [Default financial dimension data sharing](cross-company-data-sharing-financial-dimensions.md)
+> Beginning in version 10.0.43 the **default dimensions** set up against a customer or vendor can be shared across companies only if the full set of financial dimensions are defined as global such as Department or Business unit. For more information, see [Default financial dimension data sharing](cross-company-data-sharing-financial-dimensions.md)
 
 > Default dimensions hold a loose foreign key reference to the backing dimension data, which can reference both company-specific and non-company specific data. Determining the appropriate action to be taken for each dimension value has inherent complexity and would require a change from the current implementation, which could dramatically impact performance.
 
 ## Download a cross-company data sharing template from LCS
-1.  Sign in to LCS.
+1.  Sign into LCS.
 2.  On the home page, click **Shared asset library**.
 3.  In the **Asset type** list, click **Data package**.
 4.  Click any of the available data package files to download them.
@@ -138,7 +138,7 @@ For details about how to use a template, see [Configure financial cross-company 
 <li>Charges group</li>
 <li>Commission</li>
 <li>Destination code</li>
-<li>Non-conformance type</li>
+<li>Nonconformance type</li>
 <li>Order entry deadline group</li>
 <li>Order origin code</li>
 <li>Order pool</li>
