@@ -19,7 +19,7 @@ ms.assetid: 0bbe7453-624f-4551-a1d0-842484067311
 
 This article provides information about cross-company data sharing with default financial dimensions.  
 
-# Overview
+## Overview
 
 Default dimension fields can be shared using cross-company data sharing
 in limited scenarios. This guide defines when those fields can be
@@ -28,7 +28,7 @@ shared.
 See also: [[Cross-company data sharing
 overview]{.underline}](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/srs-overview)
 
-# Global dimensions
+## Global dimensions
 
 Financial dimensions utilize the values from various tables in the
 system. These \"backing\" tables can either store data globally or per
@@ -66,19 +66,19 @@ dimensions can utilize that are shipped out of the box.
   |                        | Vendor groups         |
   |                        | Vendors               |
 
-# Sharing default dimensions
+### Sharing default dimensions
 
 In order for default dimensions to be shared through data sharing
 policies, all dimensions in the system must be global. If any non-global
 dimension exists, the field cannot be shared.
 
-# After a default dimension field has been shared
+### After a default dimension field has been shared
 
 After the policy is enabled with a shared default dimension field, you
 cannot create new non-global dimensions in the system. You can, however,
 continue to create new global dimensions.
 
-# FAQs
+## FAQs
 
 **What if I\'m using SRS to share table X across all companies? Would
 this move a dimension from non-global to global?**
