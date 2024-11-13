@@ -31,9 +31,21 @@ Before you can import exchange rates, you must set up the information that is re
 |-----------|-----------------------------------|
 | **Name**  | The name of the exchange rate provider.                                                                                                          |
 | **Key**   | The **Key** column is a unique identifier for each piece of configuration information that is required by the provider. This information is automatically added for each exchange rate provider that you add. |
-| **Value** | The **Value** column is the required information for each key. This information is added for each exchange rate provider that you add:
-- OANDA provider options requires the API key value to be filled in by you that were received from OANDA directly. The OANDA Central Banks provider allows you to select a specific cental bank value in the **Data set key** field.
-- Turkey          |
+| **Value** | The **Value** column is the required information for each key. This information is added for each exchange rate provider that you add.|
+
+You need to confıgure specıfıc ınformatıon dependıng on the provıder that you selected.
+
+### OANDA
+
+OANDA provider options requires the API key value to be filled in by you that were received from OANDA directly. The OANDA Central Banks provider allows you to select a specific cental bank value in the **Data set key** field.
+
+### Central Bank of the Republic of Türkiye
+
+Confıguratıon for the Central Bank of the Republic of Türkiye ıncludes the followıng keys
+
+| Key | Value                   |
+|-----------|-----------------------------------|
+| **Name**  | The name of the exchange rate provider. |
 
 ## Import currency exchange rates
 You can import exchange rates from the exchange rate providers source and add them to the **Currency exchange rates** page. Use the **Import currency exchange rates** page to import the exchange rates. The following table provides descriptions of the fields that are required to successfully complete the import process.
