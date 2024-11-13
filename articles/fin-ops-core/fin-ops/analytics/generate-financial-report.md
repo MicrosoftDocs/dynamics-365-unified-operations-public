@@ -84,17 +84,16 @@ As report schedules are created and saved, they're displayed in the navigation p
 1. In **Report designer**, on the **File** menu, select **New**, and then select **Report schedule**. The **New report schedule** dialog box opens.
 2. Under **Settings**, select an individual report or a report group to schedule. Only reports or report groups for the company or building block selection that you are currently logged on to are available.
 3. Select the **Active** check box to turn on the report schedule. Only the creator of the report or an administrator can activate or inactivate a report schedule.
-4. Select the **Permissions** button to enter company credentials. By default, your logon information is used for the company that you are logged on to. If other companies are included, such as in reporting tree definitions, select **Use separate credentials**, and then enter the credentials for any other company that is included in the report schedule. You can select **Windows authentication** or type a user name and password for each company. Select the **Save credentials** check box to save the credentials for these companies, and then select **OK** to close the dialog box.
-5. Under **Frequency**, in the **Start recurrence** field, select the date when the schedule is to start. By default, the current system date of the client computer is selected.
-6. In the **Run report at** field, select the time when the report should run. If you enter a time that is before the current system time, the report runs on the next scheduled date.
-7. In the **Recurrence pattern** area, specify how often the report is run. By default, **Daily** is selected with an **Interval (days)** value of **1**. Other options include **Weekly**, **Monthly**, and **Yearly**.
-8. In the **Range of recurrence** area, select when the report should stop being generated.
+4. Under **Frequency**, in the **Start recurrence** field, select the date when the schedule is to start. By default, the current system date of the client computer is selected.
+5. In the **Run report at** field, select the time when the report should run. If you enter a time that is before the current system time, the report runs on the next scheduled date.
+6. In the **Recurrence pattern** area, specify how often the report is run. By default, **Daily** is selected with an **Interval (days)** value of **1**. Other options include **Weekly**, **Monthly**, and **Yearly**.
+7. In the **Range of recurrence** area, select when the report should stop being generated.
 
     - **No end date** – The report schedule runs indefinitely.
     - **Set number of occurrences** – The report schedule runs for the specified number of times, and then is inactivated.
     - **End by** – The report schedule ends on the specified date.
 
-9. Select **Save**. In the **Save as** dialog box, enter a unique name and description for the report schedule.
+8. Select **Save**. In the **Save as** dialog box, enter a unique name and description for the report schedule.
 
 To copy a report schedule, you must have the role of designer or administrator. Even if an administrator modifies the report schedule, the report maintains the credentials of the user who created the report.
 
