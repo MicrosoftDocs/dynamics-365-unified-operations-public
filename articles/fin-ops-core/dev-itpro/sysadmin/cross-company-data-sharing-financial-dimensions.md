@@ -23,7 +23,7 @@ This article provides information about cross-company data sharing with default 
 
 Default dimension fields can be shared using cross-company data sharing in limited scenarios. This guide defines when those fields can be shared.
 
-For more information, see [Cross-company data sharing overview](/srs-overview).
+For more information, see [Cross-company data sharing overview](srs-overview.md).
 
 ## Global dimensions
 
@@ -32,7 +32,7 @@ accessible no matter which company you view the data from.
 
 The following is a list of the \"backing\" tables that financial dimensions can utilize that are shipped out of the box.
 
-  |Global Dimensions       | Non-global dimensions |
+  |Global Dimensions       | Nonglobal dimensions |
   |------------------------| ----------------------|
   | \< Custom dimension \> | Agreements            |
   | Business units         | Bank accounts         |
@@ -62,20 +62,19 @@ The following is a list of the \"backing\" tables that financial dimensions can 
 
 ### Sharing default dimensions
 
-In order for default dimensions to be shared through data sharing policies, all dimensions in the system must be global. If any non-global dimension exists, the field cannot be shared.
+In order for default dimensions to be shared through data sharing policies, all dimensions in the system must be global. If any nonglobal dimension exists, the field can't be shared.
 
 ### After a default dimension field has been shared
 
-After the policy is enabled with a shared default dimension field, you can't create new non-global dimensions in the system. You can, however, continue to create new global dimensions.
+After the policy is enabled with a shared default dimension field, you can't create new nonglobal dimensions in the system. You can, however, continue to create new global dimensions.
 
 ## FAQs
 
- - What if I'm using SRS to share table X across all companies? Would this move a dimension from non-global to global?
-No, this list is static. Even if you were to share the CustTable using SRS to \"make it global\", it wouldn\'t work. The system uses metadata defined in the table to determine if it is global or not.
+ - What if I'm using SRS to share table X across all companies? Would this move a dimension from nonglobal to global?
+No, this list is static. Even if you were to share the CustTable using SRS to \"make it global\", it wouldn\'t work. The system uses metadata defined in the table to determine if it's global or not.
 
  - Can I disable sharing of the default dimension field?
-
-Master company sharing policies cannot be disabled. This includes fields shared on tables in the policy.
+Master company sharing policies can't be disabled. This includes fields shared on tables in the policy.
 
 ## Additional resources
 
