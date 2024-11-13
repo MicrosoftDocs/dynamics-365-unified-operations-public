@@ -1,8 +1,8 @@
 ---
 title: Work exceptions log
 description: Learn about work exceptions log. This functionality lets you register issues from your operational workflows to be tracked and addressed.
-author: Samuel Oliveira
-ms.author: sservulo
+author: sservulo
+ms.author: samuoliveira
 ms.topic: article
 ms.date: 11/06/2024
 ms.custom:
