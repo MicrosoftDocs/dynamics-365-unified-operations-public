@@ -1,7 +1,7 @@
 ---
 title: Synchronize intercompany customer information
 description: Learn about the synchronization of customer information for intercompany orders, including an outline on how you can always change synchronization field values.
-author: kamaybac
+author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: article
 ms.date: 09/01/2021

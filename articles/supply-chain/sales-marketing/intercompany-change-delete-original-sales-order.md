@@ -1,7 +1,7 @@
 ---
 title: Change or delete an original intercompany sales order
 description: Learn about changing and deleting an original sales order functionality, including a table that defines results for various operations.
-author: kamaybac
+author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: article
 ms.date: 09/01/2021

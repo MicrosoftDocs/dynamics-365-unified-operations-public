@@ -1,7 +1,7 @@
 ---
 title: Sales and marketing overview
 description: Learn how to use sales and marketing to obtain, store, and use various types of data in the sales flow, including original sales initiative and additional sales.
-author: kamaybac
+author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: overview
 ms.date: 05/02/2024

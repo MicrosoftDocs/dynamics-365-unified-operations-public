@@ -1,7 +1,7 @@
 ---
 title: Intercompany master scheduling
 description: Learn about intercompany master scheduling, which is the means by which you calculate requirements and generate planned intercompany orders.
-author: kamaybac
+author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: article
 ms.date: 09/01/2021

@@ -1,7 +1,7 @@
 ---
 title: Calculate sales totals when prices include sales tax
 description: Access example scenarios that show how sales totals are calculated when prices include and exclude sales tax, including prerequisites.
-author: kamaybac
+author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: how-to
 ms.date: 12/11/2023

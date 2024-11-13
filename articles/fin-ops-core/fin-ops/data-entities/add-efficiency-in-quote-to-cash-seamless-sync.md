@@ -1,7 +1,7 @@
 ---
 title: Enable and configure seamless sync with Dynamics 365 Sales (preview)
 description: Learn how to enable, configure, and use seamless sync when Microsoft Dynamics 365 Sales is integrated with the pricing engine in Dynamics 365 Supply Chain Management. 
-author: kamaybac
+author: AditiPattanaik
 ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: CustParameters

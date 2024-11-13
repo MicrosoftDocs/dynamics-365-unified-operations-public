@@ -1,7 +1,7 @@
 ---
 title: Delivery alternatives
 description: Learn how sales order takers can use the Delivery alternatives page to discover alternative order fulfillment options, including a step-by-step process.
-author: kamaybac
+author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: article
 ms.date: 04/10/2017
