@@ -132,15 +132,17 @@ Follow these steps to enable licensing for your solution.
 
 2.  Generate a license for the customer (tenant ID and name), and sign the license by using the certificate's private key. You must pass the following parameters to the **axutil genlicense** command to create the license file.
 
+    **For environments on version >= 10.0.43**
+
     | Parameter name  | Description                                                                  |
     |-----------------|------------------------------------------------------------------------------|
     | file            | The name of your license file.                                               |
     | licensecode     | The name of your license code (from Microsoft Visual Studio).                |
+    | serialnumber    | The customer's tenant ID (labeled "Serial number" in the screenshot).        |
     | subjectname| Specifies the subject name of the certificate that is installed in the certificate store (Current User/My). To load the certificate, you can use either the subjectname or certificatepath/password, but not both. This parameter is available in Dynamics 365 Finance version 10.0.37 and higher. |
     | thumbprint| Optional: It's a unique identifier for selecting a particular certificate with the given subject name. While this parameter is optional, it can only be used along with subjectname. If thumbprint isn't specified and the store contains multiple certificates with same subject name, the tool picks up the certificate with the furthest(maximum) expiry. This parameter is available in Dynamics 365 Finance version 10.0.37 and higher. |
     | certificatepath | The path of your certificate's private key. This is to be used if you do not have the HSM based certificate. |
     | password        | The password for your certificate's private key.                             |
-    | serialnumber    | The customer's tenant ID (labeled "Serial number" in the screenshot).       |
     | expirationdate  | Optional: The expiration date for the license.                               |
     | usercount       | Optional: The number that custom validation logic can use as required. This number could be users, but isn't limited to users. |
         
@@ -149,9 +151,39 @@ Follow these steps to enable licensing for your solution.
      > [!NOTE]
      > To use the subjectname and thumbprint parameter: first install the certificate to Current User | My store, and then run the following command:
     ```Console
-    C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /licensecode:ISVLicenseCode  /customer:TAEOfficial.ccsctp.net /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /subjectName:"ISVCert" /thumbprint:******** /expirationdate:11/30/2023 
+    C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /licensecode:ISVLicenseCode /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /subjectName:"ISVCert" /thumbprint:******** /expirationdate:11/30/2023 
      ```
      
+    Example for file based key.
+    ```Console
+    C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /licensecode:ISVLicenseCode /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /certificatepath:c:\tempisvcert.pfx /password:********
+    ```
+
+    **For environments on version < 10.0.43**
+
+    | Parameter name  | Description                                                                  |
+    |-----------------|------------------------------------------------------------------------------|
+    | file            | The name of your license file.                                               |
+    | licensecode     | The name of your license code (from Microsoft Visual Studio).                |
+    | certificatepath | The path of your certificate's private key.                                  |
+    | password        | The password for your certificate's private key.                             |
+    | customer        | The customer's tenant name (from the screenshot under step 1).              |
+    | serialnumber    | The customer's tenant ID (labeled "Serial number" in the screenshot).       |
+    | expirationdate  | Optional: The expiration date for the license.                               |
+    | usercount       | Optional: The number that custom validation logic can use as required. This number could be users, but isn't limited to users. |
+    | SignatureVersion| Optional: Defines the hashing algorithm to be used for license generation. Value 1 defines SHA1. Value 2 defines SHA256 and the default value is 2. IMPORTANT: SHA1 will be deprecated in a future release. It's recommended to use 2 for this parameter. After SHA1 is deprecated, ISV Licensing will work with SHA256 (value 2). |
+    | UseLegacyCryptoServiceProvider| Optional: Use an older CryptoServiceProvider. If generating the license key fails, this option allows users to use on an older version of ISV License generation. The default value is 0 and should only be used to provide a fallback mechanism if there's an error with the default value. This parameter is available in Dynamics 365 Finance version 10.0.36. |
+    | AllowCrossDomainInstallation| Optional: This parameter provides ISVs (Independent Software Vendors) with the ability to generate licenses that can be used across different environments for the same tenant (customer). The default value is set to **false**, which means the tenant can't use the same ISV license across different environments or reuse the same ISV license within the same environment when the admin domain name changes. When the value is set to **true**, the customer can install the same ISV license across different environments associated with the same tenant or when the customer changes the admin domain name of the environment. This parameter is available in Dynamics 365 Finance version 10.0.38 and higher. |
+    | subjectname| Specifies the subject name of the certificate that is installed in the cert store (Current User/My). To load the certificate, you can use either the subjectname or certificatepath/password, but not both. This parameter is available in Dynamics 365 Finance version 10.0.37 and higher. |
+    | thumbprint| Optional: It's a unique identifier for selecting a particular certificate with the given subject name. While this parameter is optional, it can only be used along with subjectname. If thumbprint isn't specified and the store contains multiple certificates with same subject name, the tool picks up the certificate with the furthest(maximum) expiry. This parameter is available in Dynamics 365 Finance version 10.0.37 and higher. |
+        
+    Example for HSM based key.
+    > [!NOTE]
+    > To use the subjectname and thumbprint parameter: first install the certificate to Current User | My store, and then run the following command:
+    ```Console
+    C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /licensecode:ISVLicenseCode  /customer:TAEOfficial.ccsctp.net /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /subjectName:"ISVCert" /thumbprint:******** /expirationdate:11/30/2023 
+     ```
+    
     Example for file based key.
     ```Console
     C:\AOSService\PackagesLocalDirectory\Bin\axutil genlicense /file:c:\templicense.txt /certificatepath:c:\tempisvcert.pfx /licensecode:ISVLicenseCode /customer:TAEOfficial.ccsctp.net /serialnumber:4dbfcf74-c5a6-4727-b638-d56e51d1f381 /password:********
