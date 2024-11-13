@@ -38,87 +38,33 @@ accessible no matter which company you view the data from.
 The following is a list of the \"backing\" tables that financial
 dimensions can utilize that are shipped out of the box.
 
-  -----------------------------------------------------------------------
-  Global Dimensions
-  -----------------------------------------------------------------------
-  Non-global dimensions
-
-  \< Custom dimension \>
-
-  Business units
-
-  Cost centers
-
-  Departments
-
-  Jobs
-
-  Legal entities
-
-  POS registers
-
-  Positions
-
-  Retail channels
-
-  Stores
-
-  Value streams
-
-  Workers
-
-  Agreements
-
-  Bank accounts
-
-  Campaigns
-
-  Cash accounts
-
-  Customer groups
-
-  Customers
-
-  Deferrals
-
-  Expense and income codes
-
-  Expense purposes
-
-  Fiscal establishments
-
-  Fixed asset groups
-
-  Fixed assets
-
-  Fixed assets (Russia)
-
-  Funds
-
-  Item groups
-
-  Items
-
-  Leases
-
-  Project contracts
-
-  Project groups
-
-  Projects
-
-  Prospects
-
-  Resource groups
-
-  Resources
-
-  Tax branches
-
-  Vendor groups
-
-  Vendors
-  -----------------------------------------------------------------------
+  |Global Dimensions       | Non-global dimensions |
+  |------------------------| ----------------------|
+  | \< Custom dimension \> | Agreements            |
+  | Business units         | Bank accounts         |
+  | Cost centers           | Campaigns             |
+  | Departments            | Cash accounts         |
+  | Jobs                   | Customer groups       |
+  | Legal entities         | Customers             |
+  | POS registers          | Deferrals             |
+  | Positions              | Expense and income codes |
+  | Retail channels        | Expense purposes |
+  | Stores                 | Fiscal establishments |
+  | Value streams          | Fixed asset groups    |
+  | Workers                | Fixed assets          |
+  |                        | Funds                 |
+  |                        | Item groups           |
+  |                        | Items                 |
+  |                        | Leases                |
+  |                        | Project contracts     |
+  |                        | Project groups        |
+  |                        | Projects              |
+  |                        | Prospects             |
+  |                        | Resource groups       |
+  |                        | Resources             |
+  |                        | Tax branches          |
+  |                        | Vendor groups         |
+  |                        | Vendors               |
 
 # Sharing default dimensions
 
