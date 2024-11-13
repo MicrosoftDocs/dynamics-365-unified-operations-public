@@ -1,7 +1,7 @@
 ---
 title: Order entry deadlines
 description: Learn about order entry deadlines, which is a cut-off time that determines whether a customer order is treated as if it was received on the current or next day.
-author: kamaybac
+author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: article
 ms.date: 06/20/2017

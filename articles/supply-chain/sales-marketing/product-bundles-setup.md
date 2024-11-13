@@ -1,7 +1,7 @@
 ---
 title: Enable and set up product bundles 
 description: Learn how to set up product bundles, including prerequisites and an outline on toggling product bundle features for your system.
-author: kamaybac
+author: AditiPattanaik
 ms.author: adpattanaik
 ms.topic: how-to
 ms.date: 04/29/2024
