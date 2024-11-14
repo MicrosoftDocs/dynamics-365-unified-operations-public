@@ -14,12 +14,12 @@ ms.search.form: WHSWorkExceptionLog
 
 [!include [banner](../includes/banner.md)]
 
-Work exceptions log let you register errors that occur in your warehouse operations (e.g. discrepancies in inventory, missing goods on given locations, etc.) that can be used to help track, diagnose and resolve issues present in your daily operations.
+Work exceptions let you register errors that occur in your warehouse operations: for example, discrepancies in inventory, missing goods on given locations, etc. These exceptions can be used to help track, diagnose, and resolve issues present in your daily operations.
 
 Logs can be visualized and filtered based on their **Status**, associated **Work ID**, **Line number**, **Shipment ID**, **Load ID**, **Order number**, etc.
 
 To view work exception logs, navigate to **Warehouse management \> Work \> Work exceptions log**).
 
-Once resolved, logs will remain in the system until explicitly removed either manually or using [Job here]()
+Take note that even once resolved, logs are kept in the system until explicitly removed either manually or using [Job here]()
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
