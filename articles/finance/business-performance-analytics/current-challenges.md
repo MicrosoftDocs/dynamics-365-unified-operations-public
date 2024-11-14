@@ -4,7 +4,7 @@ description: Learn about some current known issues in Business performance analy
 author: lizmora
 ms.author: jiwo
 ms.topic: conceptual
-ms.date: 11/11/2024
+ms.date: 11/14/2024
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
