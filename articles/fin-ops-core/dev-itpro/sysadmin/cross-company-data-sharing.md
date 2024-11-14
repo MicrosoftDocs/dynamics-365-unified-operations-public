@@ -34,19 +34,21 @@ Here are some examples of cross-company data sharing and the basic logic:
 
 Cross-company data sharing has the following limitations:
 
--   It can’t be used to share transactional data between companies.
+-   It can't be used to share transactional data between companies.
 -   Only reference and group data can be shared, or tables that have specifically been enabled. For example, **Data Sharing Type** is set to **Duplicate**.
 -   It supports replication of fewer than one million total records per job. This total is calculated as the number of shared records × the number of shared companies. The limit is increased to two million records from the Platform update for version 10.0.10.
 -   It supports replication for up to 100 companies per policy. The limit is increased to 300 companies from the Platform update for version 10.0.10.
 -   Only one level of child relationships is exposed. To protect data consistency, replication doesn't occur if another level is required.
 - 	Fields that reference Financial dimensions, for example **Ledger** or **Default** dimension, can't be shared across companies. 
-      o	Dimensions hold a loose foreign key reference to the backing dimension data, which can reference both company-specific and non-company specific data. Determining the appropriate action to be taken for each dimension value has inherent complexity and would require a change from the current implementation, which could dramatically impact performance.
--   It can’t be used with [dual-write](../data-entities/dual-write/dual-write-home-page.md).
+
+      Dimensions hold a loose foreign key reference to the backing dimension data, which can reference both company-specific and non-company specific data. Determining the appropriate action to be taken for each dimension value has inherent complexity and would require a change from the current implementation, which could dramatically impact performance.
+
+-   It can't be used with [dual-write](../data-entities/dual-write/dual-write-home-page.md).
 
 
 ### Policies
 
-Data sharing is managed by defined policies that are saved in data packages. Templates that Microsoft has tested and supports are available as downloadable data packages on Microsoft Dynamics Lifecycle Services (LCS). Policies let you control the following aspects of data sharing:
+Data sharing is managed by defined policies that are saved in data packages. Templates that Microsoft has tested and supports are available as downloadable data packages on Microsoft Dynamics 365 Lifecycle Services. Policies let you control the following aspects of data sharing:
 
 -   The fields that are replicated
 -   The entities that participate in the replication
@@ -57,11 +59,11 @@ The same company and table can only be in one policy. It's possible to share the
 > [!NOTE]
 > Only required foreign key fields are selected by default. Optional foreign keys need to be selected manually to be included. The best practice is to add one or more tables when selecting a foreign key field, unless the table has already been added.
 
-Policy templates that Microsoft has tested and supports are available as downloadable data packages on Lifecycle Services (LCS). 
+Policy templates that Microsoft has tested and supports are available as downloadable data packages on Lifecycle Services. 
 
 
 > [!IMPORTANT]
-> Although customers can modify the Microsoft data templates that are available from LCS, this scenario isn't supported.
+> Although customers can modify the Microsoft data templates that are available from Lifecycle Services, this scenario isn't supported.
 
 ### Conflict resolution
 
@@ -97,15 +99,15 @@ Customer and vendor master data sharing allows you to share customer and vendor 
 With the release of Platform update for version 10.0.12, customer and vendor master data sharing can be enabled using the **Customer and vendor master data sharing** feature in the **Feature management** module. There's no need to complete a survey first. It's important to consider limits in the number of records and companies stated above.
 
 > [!NOTE]
-> Beginning in version 10.0.43 the **default dimensions** set up against a customer or vendor can be shared across companies only if the full set of financial dimensions are defined as global such as Department or Business unit. For more information, see [Default financial dimension data sharing](cross-company-data-sharing-financial-dimensions.md)
-
+> As of version 10.0.43, the **default dimensions** that are set up against a customer or vendor can be shared across companies only if the full set of financial dimensions is defined as global, such as Department or Business unit. For more information, see [Default financial dimension data sharing](cross-company-data-sharing-financial-dimensions.md)
+>
 > Default dimensions hold a loose foreign key reference to the backing dimension data, which can reference both company-specific and non-company specific data. Determining the appropriate action to be taken for each dimension value has inherent complexity and would require a change from the current implementation, which could dramatically impact performance.
 
-## Download a cross-company data sharing template from LCS
-1.  Sign into LCS.
-2.  On the home page, click **Shared asset library**.
-3.  In the **Asset type** list, click **Data package**.
-4.  Click any of the available data package files to download them.
+## Download a cross-company data sharing template from Lifecycle Services
+1.  Sign in to Lifecycle Services.
+2.  On the home page, select **Shared asset library**.
+3.  In the **Asset type** list, select **Data package**.
+4.  Select any of the available data package files to download them.
 
 For details about how to use a template, see [Configure financial cross-company data sharing](../data-entities/tasks/configure-financial-cross-company-data-sharing.md).
 
@@ -113,7 +115,7 @@ For details about how to use a template, see [Configure financial cross-company 
 <table>
 <thead>
 <tr class="header">
-<th>Package name on LCS</th>
+<th>Package name on Lifecycle Services</th>
 <th>Data sharing policies</th>
 </tr>
 </thead>
