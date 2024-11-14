@@ -36,6 +36,9 @@ To ensure a smooth transition, a **SysSetup** async script is available. This sc
 > [!NOTE]
 > The job may take three days or more to run to avoid potential system corruption.
 
+> [!IMPORTANT]
+> If you have Synapse configured, you will see a higher level record changes due to this update batch job touching all records. 
+
 These necessary improvements address the performance issues that customers have reported. Users are encouraged to use the **Sales invoice headers V4** and **Sales invoice lines V4** entities for improved performance and efficiency.
 
 Several incidents that have been reported are related to performance issues with **Sales invoice header** and **Sales invoice line** entities. Through the changes that are outlined in this article, we fixed these incidents to ensure a smoother experience for our customers.
