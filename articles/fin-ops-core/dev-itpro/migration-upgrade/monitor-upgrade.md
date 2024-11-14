@@ -4,7 +4,7 @@ description: This article explains how to monitor the upgrade from Microsoft Dyn
 author: ttreen
 ms.author: ttreen
 ms.topic: article
-ms.date: 08/20/2024
+ms.date: 11/14/2024
 ms.reviewer: twheeloc
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -120,7 +120,7 @@ END
 ```
 
 > [!NOTE]
-> The query above will show the status **Running** if there if no end date on the synchronize step. This doesn't always indicate that it is running, so you can validate this by running the query in the **Database activity** section above. Run the query multiple times to confirm no database activity. Typically, the database synchronize activity for the upgrade will come from host name SERVICING1. If you have not seen activity on that server for up to 30 minutes, then it's possible the sync has stalled. In that case, please contact Microsoft support for assistance with the DBSyncActivityId value from the query above. 
+> The query above shows the status **Running** if there's no end date on the synchronize step. This doesn't always indicate that it's running, you can validate this by running the query in the **Database activity** section above. Run the query multiple times to confirm no database activity. Typically, the database synchronize activity for the upgrade comes from host name SERVICING1. If you haven't seen activity on that server for up to 30 minutes, then it's possible the sync has stalled. In that case, contact Microsoft support for assistance with the DBSyncActivityId value from the query above. 
 
 ## Presynchronization and post-synchronization scripts
 
