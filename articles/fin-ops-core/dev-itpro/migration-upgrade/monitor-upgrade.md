@@ -67,6 +67,61 @@ FROM sys.dm_exec_requests er
 WHERE st.text IS NOT NULL
 ```
 
+## Synchronize Steps
+
+Use the following script to check the status of the AdditiveSync, PartialSync, DBSync and FinalDBSync steps.
+
+```SQL
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'DBUPGRADE' AND TABLE_NAME = 'SERVICINGSTEP')
+BEGIN
+    WITH DBSyncExecStatsRecords AS (
+		SELECT * FROM DBSyncExecStats
+		WHERE SyncStep <> 'PartialList, PostTableViewSyncActions'
+	),
+	ServicingStepsTimestamps AS (
+		SELECT 
+			MAX(CASE WHEN Path = '/DataUpgrade/PreSync' AND Status = 2 THEN DATEADD(SECOND, -2, ModifiedDateTime) END) AS PreSyncCompletedTime,
+			MAX(CASE WHEN Path = '/DataUpgrade/PostSync' AND Status = 2 THEN DATEADD(SECOND, -2, ModifiedDateTime) END) AS PostSyncCompletedTime,
+			MAX(CASE WHEN Path = '/DataUpgrade/FinalDbSync/DisableDataUpgradeFlag' AND Status = 2 THEN DATEADD(SECOND, -2, ModifiedDateTime) END) AS FinalDbSyncFlagTime
+		FROM DBUPGRADE.SERVICINGSTEP
+	),
+	SyncRecords AS (
+		SELECT 
+			T1.RecID,
+			CASE
+				WHEN T1.SyncStep = 'LegacyIds, AdditiveTableSync' THEN 'PreReqs-AdditiveSync'
+				WHEN T1.SyncStep = 'PartialList, LegacyIds' THEN 'PreReqs-PartialSync'
+				WHEN T1.SyncStep = 'FullAll' THEN 
+					CASE 
+						WHEN T2.PostSyncCompletedTime IS NULL AND T1.StartDateTime >= T2.PreSyncCompletedTime THEN 'DbSync-SyncSchema'
+						WHEN T2.PostSyncCompletedTime IS NOT NULL AND T1.StartDateTime >= T2.PreSyncCompletedTime AND T1.StartDateTime < T2.PostSyncCompletedTime THEN 'DBSync-SyncSchema'
+						WHEN T2.PostSyncCompletedTime IS NOT NULL AND T1.StartDateTime >= T2.PostSyncCompletedTime 
+							  AND (T2.FinalDbSyncFlagTime IS NULL OR T1.StartDateTime < T2.FinalDbSyncFlagTime) THEN 'FinalDBSync-SyncSchema'
+						ELSE T1.SyncStep + ' - Non Upgrade Sync'
+					END
+				ELSE T1.SyncStep + ' - Non Upgrade Sync'
+			END AS FormattedSyncStep,
+			T1.DBSyncActivityId, T1.StartDateTime, T1.FinishTime, T1.Success,
+			CASE 
+				WHEN T1.FinishTime = '1900-01-01 00:00:00.000' THEN 'Running' -- If FinishTime is '1900-01-01 00:00:00.000', mark as Running
+				ELSE CAST(CEILING(DATEDIFF(SECOND, T1.StartDateTime, T1.FinishTime) / 60.0) AS VARCHAR(50)) + ' minutes'
+			END AS Duration
+		FROM DBSyncExecStatsRecords T1
+		CROSS JOIN ServicingStepsTimestamps T2
+	)
+	SELECT FormattedSyncStep AS SyncStep, DBSyncActivityId, StartDateTime, FinishTime, Success, Duration
+	FROM SyncRecords
+	ORDER BY RecID DESC
+END
+ELSE
+BEGIN
+    PRINT 'Upgrade Not In Progress'
+END
+```
+
+> [!NOTE]
+> The query above will show the status **Running** if there if no end date on the synchronize step. This doesn't always indicate that it is running, so you can validate this by running the query in the **Database activity** section above. Run the query multiple times to confirm no database activity. Typically, the database synchronize activity for the upgrade will come from host name SERVICING1. If you have not seen activity on that server for up to 30 minutes, then it's possible the sync has stalled. In that case, please contact Microsoft support for assistance with the DBSyncActivityId value from the query above. 
+
 ## Presynchronization and post-synchronization scripts
 
 Use the following queries to check the status of the presynchronization and post-synchronization jobs.
