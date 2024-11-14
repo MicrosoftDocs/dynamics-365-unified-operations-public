@@ -61,7 +61,7 @@ To make these users compliant, you must delete the duplicates from the **Users**
 By selecting **Repair telemetry IDs**, you can have the system automatically fix some user issues. This command performs the following actions:
 
 1. **Repair incorrect telemetry IDs.** The system fixes users that are listed in Microsoft Entra ID, but that have incorrect telemetry IDs in the finance and operations environment.
-2. **Handle missing users in Microsoft Entra ID.** If a user isn't listed in Microsoft Entra ID, the systems sets their telemetry ID to null. Administrators must add these users to Microsoft Entra ID and run the repair again.
+2. **Handle missing users in Microsoft Entra ID.** If a user isn't listed in Microsoft Entra ID, the system sets their telemetry ID to null. Administrators must add these users to Microsoft Entra ID and run the repair again.
 3. **Fix users that have duplicate telemetry IDs.** The system corrects the telemetry ID for the user that is listed in Microsoft Entra ID, and sets it to null for the other users.
 4. **Disable duplicate users.** For security reasons, the system disables duplicate users that have the same email address and sets their telemetry ID to null. Administrators must ensure that each user is unique, and must remove duplicates to fix this issue.
 
