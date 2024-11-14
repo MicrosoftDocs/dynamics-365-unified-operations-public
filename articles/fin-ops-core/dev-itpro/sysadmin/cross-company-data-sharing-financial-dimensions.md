@@ -1,6 +1,6 @@
 ---
 title: Cross-company data sharing for financial dimensions
-description: Learn about cross-company data sharing with financial dimensions.
+description: Learn about cross-company data sharing for financial dimensions.
 author: rcarlson
 ms.author: rcarlson
 ms.topic: article
@@ -13,76 +13,44 @@ ms.dyn365.ops.version: Platform update 1
 ms.assetid: 0bbe7453-624f-4551-a1d0-842484067311
 ---
 
-# Cross-company data sharing with financial dimensions
+# Cross-company data sharing for financial dimensions
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about cross-company data sharing with default financial dimensions.  
+In limited scenarios, default dimension fields can be shared by using cross-company data sharing. This article explains when those fields can be shared.
 
-## Overview
+Learn more in [Cross-company data sharing overview](srs-overview.md).
 
-Default dimension fields can be shared using cross-company data sharing in limited scenarios. This guide defines when those fields can be shared.
+## Backing tables that can be used by financial dimensions
 
-For more information, see [Cross-company data sharing overview](srs-overview.md).
+Financial dimensions use the values from various tables in the system. These tables are known as *backing tables*. Backing tables can store data either globally or per company. If they store the data globally, all records are accessible, regardless of the company that you view the data from.
 
-## Global dimensions
+The following backing tables are included out of the box and can be used by financial dimensions.
 
-Financial dimensions utilize the values from various tables in the system. These \"backing\" tables can either store data globally or per company. If they store the data globally, then all records are
-accessible no matter which company you view the data from.
+| Global dimensions | Nonglobal dimensions |
+|-------------------|----------------------|
+| <ul><li>\<Custom dimension\></li><li>Business units</li><li>Cost centers</li><li>Departments</li><li>Jobs</li><li>Legal entities</li><li>POS registers</li><li>Positions</li><li>Retail channels</li><li>Stores</li><li>Value streams</li><li>Workers</li></ul> | <ul><li>Agreements</li><li>Bank accounts</li><li>Campaigns</li><li>Cash accounts</li><li>Customer groups</li><li>Customers<li>Deferrals</li><li>Expense and income codes</li><li>Expense purposes</li><li>Fiscal establishments</li><li>Fixed asset groups</li><li>Fixed assets</li><li>Funds</li><li>Item groups</li><li>Items</li><li>Leases</li><li>Project contracts</li><li>Project groups</li><li>Projects</li><li>Prospects</li><li>Resource groups</li><li>Resources</li><li>Tax branches</li><li>Vendor groups</li><li>Vendors</li></ul> |
 
-The following is a list of the \"backing\" tables that financial dimensions can utilize that are shipped out of the box.
+## Sharing default dimensions
 
-  |Global Dimensions       | Nonglobal dimensions |
-  |------------------------| ----------------------|
-  | \< Custom dimension \> | Agreements            |
-  | Business units         | Bank accounts         |
-  | Cost centers           | Campaigns             |
-  | Departments            | Cash accounts         |
-  | Jobs                   | Customer groups       |
-  | Legal entities         | Customers             |
-  | POS registers          | Deferrals             |
-  | Positions              | Expense and income codes |
-  | Retail channels        | Expense purposes |
-  | Stores                 | Fiscal establishments |
-  | Value streams          | Fixed asset groups    |
-  | Workers                | Fixed assets          |
-  |                        | Funds                 |
-  |                        | Item groups           |
-  |                        | Items                 |
-  |                        | Leases                |
-  |                        | Project contracts     |
-  |                        | Project groups        |
-  |                        | Projects              |
-  |                        | Prospects             |
-  |                        | Resource groups       |
-  |                        | Resources             |
-  |                        | Tax branches          |
-  |                        | Vendor groups         |
-  |                        | Vendors               |
+Default dimension fields can be shared through data sharing policies only if all dimensions in the system are global. If any nonglobal dimension exists, the field can't be shared.
 
-### Sharing default dimensions
+### After a default dimension field is shared
 
-In order for default dimensions to be shared through data sharing policies, all dimensions in the system must be global. If any nonglobal dimension exists, the field can't be shared.
+After the policy is enabled with a shared default dimension field, you can't create new nonglobal dimensions in the system. However, you can continue to create new global dimensions.
 
-### After a default dimension field has been shared
+## FAQ
 
-After the policy is enabled with a shared default dimension field, you can't create new nonglobal dimensions in the system. You can, however, continue to create new global dimensions.
+**If I use Microsoft SQL Server Reporting Services (SSRS) to share a table across all companies, can a dimension be changed from nonglobal to global?**
 
-## FAQs
+No. The list is static. Even if you share a custom table by using SSRS, and you try to "make it global," the table remains nonglobal. The system uses metadata that is defined in the table itself to determine whether that table is global or nonglobal.
 
- - What if I'm using SRS to share table X across all companies? Would this move a dimension from nonglobal to global?
-No, this list is static. Even if you were to share the CustTable using SRS to \"make it global\", it wouldn\'t work. The system uses metadata defined in the table to determine if it's global or not.
+**Can I disable sharing of a default dimension field?**
 
- - Can I disable sharing of the default dimension field?
-Master company sharing policies can't be disabled. This includes fields shared on tables in the policy.
+Master company sharing policies can't be disabled. This rule applies to fields that are shared on tables in the policy.
 
 ## Additional resources
 
 [Configure financial cross-company data sharing](../data-entities/tasks/configure-financial-cross-company-data-sharing.md)
 
-
-
-
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-
