@@ -22,7 +22,7 @@ The following sections describe the five types of invalid users that must be add
 
 ## Users who aren't found in Microsoft Entra ID
 
-All finance and operations apps users must be present in your Microsoft Entra ID tenant. Administrators can directly add users to your tenant through the Microsoft Entra ID portal. For more information, see [Add or delete users](/entra/fundamentals/add-users).   
+All finance and operations apps users must be present in your Microsoft Entra ID tenant. Administrators can directly add users to your tenant through the Microsoft Entra ID portal. For more information, see [Add or delete users](/entra/fundamentals/add-users).
 
 You can use business-to-business (B2B) functionality to include these users in Microsoft Entra ID. For more information, see [Export business-to-business (B2B) users to Microsoft Entra ID](../../dev-itpro/sysadmin/implement-b2b.md).
 
@@ -45,27 +45,27 @@ Previously, some customers who had trouble signing in were advised to append the
 
 ## Users with duplicate telemetry IDs 
 
-Telemetry IDs are unique identifiers for every user. Duplicate telemetry IDs can cause serious security issues, such as user impersonation or inappropriate access levels. It's essential to ensure that each user has a distinct telemetry ID. To ensure compliance, delete and reimport or edit the affected users to repopulate unique telemetry IDs from Microsoft Entra ID. 
+Telemetry IDs are unique identifiers for every user. Duplicate telemetry IDs can cause serious security issues, such as user impersonation or inappropriate access levels. It's essential to ensure that each user has a distinct telemetry ID. To ensure compliance, either delete and reimport or edit the affected users to repopulate unique telemetry IDs from Microsoft Entra ID. 
 
->[!Important]
-> If three users share the same telemetry ID and one user has the correct ID, the system only flags the two incorrect users. The user with the correct ID isn't marked as invalid. 
+> [!IMPORTANT]
+> If three users share the same telemetry ID, and one user has the correct ID, the system flags only the two incorrect users. The user that has the correct ID isn't marked as invalid. 
 
 ## Duplicate users 
 
 Duplicate users imply users who have the same email address. This can cause inconsistent behavior due to conflicting roles or settings. You must ensure that every user has a unique email address. 
 
-To make these users compliant, you must delete the duplicates from System Administration -> Users page and ensure that only one user exists per email.
+To make these users compliant, you must delete the duplicates from the **Users** page (**System administration** \> **Users**) and ensure that only one user exists per email address.
 
-### Fix 
+### Fix
 
-Some user issues can be automatically resolved using **Repair telemetry IDs**. This feature performs the following actions: 
+By selecting **Repair telemetry IDs**, you can have the system automatically fix some user issues. This command performs the following actions:
 
-1. Repairs incorrect telemetry IDs: Fix users listed in Microsoft Entra ID but with incorrect telemetry IDs in the finance and operations environment.
-2. Handle missing users in Microsoft Entra ID: If a user isn't present in Microsoft Entra ID, their telemetry ID is set to null. Admins need to add these users to Microsoft Entra ID and run the repair again.
-3. Fix users with duplicate telemetry IDs: Correct the telemetry ID for the user existing in Microsoft Entra ID and set it to null for the others.
-4. Disable duplicate users: For security reasons, duplicate users with the same email are disabled, and their telemetry IDs are set to null. The admins must ensure each user is unique and remove duplicates to resolve this issue.
+1. **Repair incorrect telemetry IDs.** The system fixes users that are listed in Microsoft Entra ID, but that have incorrect telemetry IDs in the finance and operations environment.
+2. **Handle missing users in Microsoft Entra ID.** If a user isn't listed in Microsoft Entra ID, the systems sets their telemetry ID to null. Administrators must add these users to Microsoft Entra ID and run the repair again.
+3. **Fix users that have duplicate telemetry IDs.** The system corrects the telemetry ID for the user that is listed in Microsoft Entra ID, and sets it to null for the other users.
+4. **Disable duplicate users.** For security reasons, the system disables duplicate users that have the same email address and sets their telemetry ID to null. Administrators must ensure that each user is unique, and must remove duplicates to fix this issue.
 
-After clicking **Repair telemetry IDs**, any users left need to be manually fixed by the administrators.
+After you select **Repair telemetry IDs**, administrators must manually fix any users that remain.
 
 > [!NOTE]
-> **Repair telemetry IDs** can disable and set the **Telemetry id** as **Null** for some of the invalid users, which prevents the login of these users. Proceed with caution and fix all the invalid users as soon as possible.
+> The **Repair telemetry IDs** command can disable some invalid users and set their telemetry ID to null. As a result, those users are prevented from signing in. Proceed with caution, and fix all the invalid users as soon as possible.
