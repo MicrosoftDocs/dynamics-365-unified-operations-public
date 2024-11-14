@@ -7,7 +7,7 @@ ms.topic: faq
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
-ms.date: 11/11/2024
+ms.date: 11/14/2024
 ---
 
 # Business performance analytics FAQ
