@@ -18,7 +18,14 @@ ms.dyn365.ops.version: AX 10.0.39
 
 [!include [banner](../../includes/banner.md)]
 
-This article provides information that will help you get started with Electronic invoicing for Poland. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the common configuration steps that are described in [Set up Electronic invoicing](../global/gs-e-invoicing-set-up-overview.md).
+This article provides information that will help you get started with Electronic invoicing for Poland. It guides you through the configuration steps that are country/region-dependent in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. 
+
+After you configure electronic invoicing, you can generate, digitally sign, and submit the XML files of electronic invoices according to the current regulatory requirements in Poland.
+
+![Diagram of the electronic invoicing workflow in Poland.](apac-mys-e-invoice-workflow.jpg)
+
+> [!NOTE]
+> The electronic invoicing approach that this article describes is implemented by using an invoicing service that's applicable only to cloud deployments of Finance or Supply Chain Management.
 
 ## Prerequisites
 
