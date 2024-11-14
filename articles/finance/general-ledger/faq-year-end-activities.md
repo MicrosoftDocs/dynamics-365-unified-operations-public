@@ -99,9 +99,9 @@ The year-end close template lets organizations select the financial dimension le
 
 We recommend that you evaluate your organization's requirements and if possible, close as many dimensions as possible using the **Close single** year-end option to improve performance. By closing to a single dimension value (which can also be a blank value), the system calculates less detail when determining the balances for retained earnings account entries.
 
-### Degenerate dimensions
+### Highly volatile dimensions
 
-A degenerate dimension provides little to no reuse by itself and in combination with other dimensions. There are two types of degenerate dimensions. The first type is a dimension that is individually degenerate. Typically, this type of degenerate dimension will appear on only a single transaction, or on small sets of transactions. The second type is a dimension that becomes degenerate in combination with one or more additional dimensions that exhibit the same potential based on the possible permutations that can be generated. A degenerate dimension can have a significant impact on the performance of the year-end close process. To minimize performance issues, define all degenerate dimensions as **Close single** in the year-end close setup as described in the preceding section.
+A highly volatile dimension provides little to no reuse by itself and in combination with other dimensions. There are two types of highly volatile dimensions. The first type is a dimension that is individually highly volatile. Typically, this type of highly volatile dimension will appear on only a single transaction, or on small sets of transactions. The second type is a dimension that becomes highly volatile in combination with one or more additional dimensions that exhibit the same potential based on the possible permutations that can be generated. A highly volatile dimension can have a significant impact on the performance of the year-end close process. To minimize performance issues, define all highly volatile dimensions as **Close single** in the year-end close setup as described in the preceding section.
 
 ## Accounts payable: What changes have been made to support 1099 year-end reporting for 2022?
 
