@@ -52,12 +52,12 @@ To ask Copilot to analyze your data, follow these steps.
 The following table provides a quick reference to the predefined questions that you can select on the **Copilot** menu.
 
 | Example question | Description |
-|---|---|
-| Shifts from Apr '24 to May '24 | <p>Compare two consecutive periods in the same year. The length of the period (day, week, or month) depends on the setup of the time series in your worksheet.</p><p>The example question that's shown here indicates that you selected a point that represents the one-month period of May 2024. Copilot will compare that period to the previous one-month period (April 2024).</p> |
-| Shifts from May '23 to May '24 | <p>Compare a selected period to the same period one year earlier. The length of the period (day, week, or month) depends on the setup of the time series in your worksheet.</p><p>The example question that's shown here indicates that you selected a point that represents the one-month period of May 2024. Copilot will compare that period to the one-month period of May 2023. |
-| Trends from Nov '23 to April '24 |  |
-| Outliers from Jan '24 to Dec '24 |  |
-| Deviations from Jan '24 to Dec '24 |  |
+|--|--|
+| Shifts from Apr '24 to May '24 | Compare two consecutive periods in the same year. The length of the period (day, week, or month) depends on the setup of the time series in your worksheet.</br></br>The example question that's shown here indicates that you selected a point that represents the one-month period of May 2024. Copilot will compare that period to the previous one-month period (April 2024). |
+| Shifts from May '23 to May '24 | Compare a selected period to the same period one year earlier. The length of the period (day, week, or month) depends on the setup of the time series in your worksheet.</br></br>The example question that's shown here indicates that you selected a point that represents the one-month period of May 2024. Copilot will compare that period to the one-month period of May 2023. |
+| Trends from Nov '23 to Apr '24 | Identify trends that occurred over the previous six time periods. The length of the period (day, week, or month) depends on the setup of the time series in your worksheet.</br></br>The example question that's shown here indicates that you selected a point that represents the one-month period of April 2024. Copilot will analyze data across all dimensions for the previous six months (November 2023 to April 2024) and highlight the most significant trends. |
+| Outliers from Jan '24 to Dec '24 | Analyze the full calendar year that includes the selected point and apply *interquartile range* (IQR) methodology to identify outlying values that occurred during that year.</br></br>The example question that's shown here will find outliers that occurred in the selected time series during the calendar year 2024. |
+| Deviations from Jan '24 to Dec '24 | Compare the selected time series to a second time series to identify the largest deviations that occurred between them during the selected calendar year. On choosing this question, Copilot asks you to choose a second time series included in the same worksheet. This question is only available if you are working with a worksheet that includes at least two time series.</br></br>Copilot applies *mean average percentage error* (MAPE) methodology to identify the largest deviations occurring between the two selected time series over the selected calendar year. |
 
 ## Turn the Analyze demand plans with Copilot feature on or off
 
