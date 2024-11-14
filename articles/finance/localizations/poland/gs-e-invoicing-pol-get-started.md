@@ -81,17 +81,13 @@ To review and update the **Polish electronic invoice (PL)** electronic invoicing
 1. Go to **Globalization Studio**, and select the **Electronic invoicing** tile. Then import the latest version of the **Polish electronic invoice (PL)** Globalization feature as described in [Import features from the repository](../global/gs-e-invoicing-import-feature-global-repository.md).
 1. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](../global/gs-e-invoicing-create-new-globalization-feature.md).
 1. On the **Versions** tab, verify that the **Draft** version is selected.
-1. On the **Feature parameters** tab, specify values for the following connection and integration parameters. These parameters are required for interoperation with Egyptian tax authority's services.
+1. On the **Feature parameters** tab, specify values for the following connection and integration parameters. These parameters are required for interoperation with Polish KSEF services.
 
-    - **EgyptianETAClientID** – Enter the client ID that the regulatory authority provided.
-    - **EgyptianETAClientSecret** – Enter the secret that the regulatory authority provided.
-    - **EgyptianETAConnectionString** – Enter the connection string for the Azure file share that you provisioned as described in [Create an Azure file share in the Azure portal](../global/gs-e-invoicing-create-azure-file-share.md).
-    - **EgyptianETASendToFileShareDirectory** – Enter the name of the Azure file share directory that invoices for digital signing should be written to.
-    - **EgyptianETAGetFromAzureFileShare** – Enter the name of the Azure file share directory that digitally signed invoices should be read from.
-    - **EgyptianETALoginserviceURL** – Enter the URL of the Egyptian tax authority's login service. The feature that Microsoft released points to the pre-production endpoint.
-    - **EgyptianETAWebserviceURL** – Enter the URL of the Egyptian tax authority's web service. The feature that Microsoft released points to the pre-production endpoint.
-
-    The following illustration shows an example of a feature parameter setup that includes the URL for the Egyptian tax authority's pre-production endpoint.
+    - **EnvironmentName** – select the type of the environment, depending on the implementation stage: *Test*, *Demo*, or *Prod*.
+    - **PolishClientID** – select the name of the [client ID](#ClID) that you previously created.
+    - **PolishImportDataChannel** – .
+    - **PolishPublicKey** – select the name of the [public key](#PK) that you previously created.
+    - **PolishToken** – select the name of the [token](#Tok) that you previously created.
 
     ![Screenshot that shows the Feature parameters tab configured for the Globalization feature for Poland.](e-inv-pol-feature-parameters.jpg)
 
@@ -100,19 +96,8 @@ To review and update the **Polish electronic invoice (PL)** electronic invoicing
 ---------Feature parameters--------------
 
    
-1. On the **Setups** tab, in the grid, select the **Submit customer invoice derived** feature setup. Then select **Edit**.
-1. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **Submit invoice to KSeF** action.
-1. In the **Parameters** section, select the **Client ID** parameter. Then, in the **Value** field, select the name of the [client ID](#ClID) that you previously created.
-1. Select the **Public key** parameter, and then, in the **Value** field, select the name of the [public key](#PK) that you previously created.
-1. Select the **Token** parameter, and then, in the **Value** field, select the name of the [token](#Tok) that you previously created.
-1. Select the **Ksef environment** parameter, and then, in the **Value** field, select the type of the environment, depending on the implementation stage: *Test*, *Demo*, or *Prod*.
 
-    :::image type="content" source="e-inv-pol-feature-setup.jpg" alt-text="Screenshot of the setup on the Processing pipeline tab of the Feature version setup page.":::
-
-1. Repeat steps 5 through 9 for the **Get invoice status from KSeF** action.
-1. Select **Save**, and close the page.
-1. Repeat steps 4 through 11 for the **Submit project invoice derived** and **Submit advance invoice derived** feature setups, as required.
-1. The copy of the feature is always created as a **Draft** version. Regardless of whether you made changes, complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
+1. The copy of the feature is always created as a **Draft** version. Complete and deploy the feature as described in [Complete and deploy a Globalization feature](../global/gs-e-invoicing-complete-publish-deploy-globalization-feature.md).
 
     > [!NOTE]
     > Before you complete and deploy the feature, check whether the import of [incoming electronic invoices](#Import) must be configured.
