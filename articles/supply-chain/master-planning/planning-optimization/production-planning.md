@@ -4,7 +4,7 @@ description: Learn about planning for production and explains how to modify plan
 author: t-benebo
 ms.author: benebotg
 ms.topic: article
-ms.date: 08/09/2022
+ms.date: 11/14/2024
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace
 ---
@@ -29,14 +29,16 @@ BOM information is honored during master planning. The plan output includes mate
 
 During master planning, the current, active BOM is used to determine the materials that are required for production. This step is done through all levels of the BOM structure that is related to the required production order. Material requirement is fulfilled by using available on-hand inventory, existing on-order supply, and approved planned orders. If additional material is required anywhere, a planned order is created to cover the demand.
 
-When searching for an appropriate BOM version to use, given that "Use the specified BOM or formula version" is turned off for the coverage group, various parameters are taken into account, such as validity period of the BOM version, whether BOM version is active/approved, applicable quantity. Date to be used in order to find an appropriate BOM version is taken from the demand requirement date (e.g. Sales order confirmed ship date for a finished good product). The chosen BOM version is not reconsidered after the receipt is scheduled in case a planned production order scheduled to start earlier or later in case it is delayed.
+When searching for an appropriate BOM version to use for a coverage group that has the **[Use the specified BOM or formula version](../coverage-settings.md)** option turned off, the system takes several parameters into account (including the validity period of the BOM version, whether BOM version is active/approved, and the applicable quantity). The chosen BOM version isn't reconsidered after a receipt is scheduled in cases where a planned production order is delayed or scheduled to start earlier or later.
 
-For a BOM component that is replenished as a production/batch order, the validity date used to search for its applicable BOM/formula version is determined after its parent order had been scheduled and is based on the linked operation (first operation is default) of the parent planned production order scheduled start (default) or end date which are determined after scheduling of the parent production order is done. In case parent planned production order is delayed later in the planning process and its scheduled start/end date times have to be pushed forward due to subcomponent order is delayed, the BOM version for the subcomponent is not reconsidered and still based on the original scheduling attempt (backward in most cases) of the parent planned production order.
-Individual BOM lines have also their validity periods which are evaluated after planned production order is scheduled thus the corresponding operation start or end date is used to check for validity. It means that even though a BOM version and lines might have the same validity periods, different dates are used to evaluate them: demand requirement date for a BOM version of the finished good vs scheduled start of the finished good planned production order.
+When a BOM component is replenished using a production/batch order, the validity date used to search for its applicable BOM/formula version is determined after its parent order is scheduled. The validity date is based on the scheduled start (default) or end date of the operation linked to the parent planned production order (first operation is default). The scheduled start and end dates are determined after the parent production order is scheduled. If the parent planned production order is delayed later in the planning process and its scheduled start/end date times must be pushed forward because a subcomponent order is delayed, the BOM version for the subcomponent isn't reconsidered and is still based on the original scheduling attempt (backward in most cases) of the parent planned production order.
+
+Individual BOM lines also have validity periods, which are evaluated after a planned production order is scheduled, so the system uses the corresponding operation start or end dates to check for validity. Even though a BOM version and its lines might have the same validity periods, different dates are used to evaluate them. For a BOM version, the system uses the demand requirement date. For a BOM line, the system uses the scheduled start of the planned production order for the finished good.
 
 With some level of simplification, there are following actions performed that are valid for BOM version and lines choices:
+
 - Planned production order is created to replenish demand and its BOM version is chosen.
-- The order is scheduled (BOM version to use is not reevaluated)
+- The order is scheduled (BOM version to use is not reevaluated).
 - BOM line requirements are created based on the chosen BOM version BOM lines and their validity assertions (based on the scheduled dates).
 - If appropriate planning settings, BOM line requirements are covered with supply down to the specific BOM level.
 - Delay propagation.
