@@ -18,10 +18,6 @@ ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 
 This article explains asset lifecycle states and lifecycle models in Asset Management. Asset lifecycle states are used to define whether an asset is active or inactive. For example, you can set up asset lifecycle states such as **Created**, **Active**, and **Terminated**.
 
-> [!NOTE]
-> - Request lifecycle states are linked to asset lifecycle states. Therefore, when a request is changed to a new request lifecycle state, the asset that is attached to the request is changed to a new asset lifecycle state. For example, if the lifecycle state of a request is changed to **Inbound**, the lifecycle state of the attached asset is changed to the lifecycle state that is selected in the **Inbound lifecycle state** field on the **Asset lifecycle state** FastTab of the **Asset lifecycle state models** page. 
-
-
 Asset lifecycle states can be set up in asset lifecycle models, where you can define the required lifecycle states for various types of assets. You first set up lifecycle states. You then create a lifecycle model and select lifecycle states for it.
 
 1. Select **Asset management** \> **Setup** \> **Assets** \> **Lifecycle states**.
@@ -56,5 +52,7 @@ After you've created the required asset lifecycle states, you can set up lifecyc
 6. Select **Lifecycle state updates** to define the asset lifecycle states that can follow a selected lifecycle state.
 7. You use the **Asset state** FastTab if you handle assets that you receive for repair. In the **Inbound/outbound** section, you can select asset lifecycle states to indicate the workflow of an asset that you receive for repair. If you offer loan assets to customers or departments, in the **Loan** section, you can select lifecycle states for loan assets.
 
+> [!NOTE]
+> - Work order lifecycle states can be linked to asset and maintenance request lifecycle states. If this is configured, the asset and/or maintenance request that is linked to the work order is changed to a new lifecycle state when the work order is changed to a new lifecycle state. 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
