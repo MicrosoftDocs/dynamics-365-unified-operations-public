@@ -37,9 +37,13 @@ Here are some of the main features of demand forecasting:
 
 ## Major themes in demand forecasting
 
-Two major themes are implemented in demand forecasting:
+Three major themes are implemented in demand forecasting:
 
 - **Modularity** – Demand forecasting is modular and easy to configure. You can turn the functionality on and off by changing the configuration key at **Trade \> Inventory forecast \> Demand forecasting**.
+- **Reuse of the Microsoft stack** – Machine Learning lets you quickly and easily create predictive analysis experiments, such as demand estimation experiments, by using algorithms R or Python programming languages and a simple drag-and-drop interface.
+  - You can download the Demand forecasting experiments, change them to meet your business requirements, publish them as a web service on Azure, and use them to generate demand forecasts. The experiments are available for download if you've purchased a Supply Chain Management subscription for a production planner as enterprise-level user.
+  - You can create your own experiments in Microsoft Azure Machine Learning studio (classic), publish them as services on Azure, and use them to generate demand forecasts.
+  - If you don't require high performance, or if you don't require that a large amount of data be processed, you can use the Machine Learning free tier. We recommend that you always start from this tier, especially during implementation and testing phases. If you require higher performance and additional storage, you can use the Machine Learning standard tier. This tier requires an Azure subscription and involves additional costs. For details about Machine Learning pricing, see [Machine Learning Studio pricing](https://aka.ms/machine-learning-price-info).
 - **Forecast reduction at any decoupling point** – Demand forecasting in builds on this functionality, which lets you forecast both dependent and independent demand at any decoupling point.
 
 ## Basic flow in demand forecasting
