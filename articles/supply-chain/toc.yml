@@ -2083,7 +2083,7 @@
         href: demand-planning/time-series.md
       - name: Limit time series edits with time fences
         href: demand-planning/time-fences.md
-      - name: Analyze demand plans with Copilot (preview)
+      - name: Analyze demand plans with Copilot
         href: demand-planning/demand-planning-copilot.md
       - name: Export and download data
         href: demand-planning/export-data.md
@@ -4133,7 +4133,7 @@
         href: responsible-ai-overview.md
       - name: Responsible AI FAQ for AI summaries with Copilot
         href: faq-summaries.md
-      - name: Responsible AI FAQ for Analyze demand plans with Copilot (preview)
+      - name: Responsible AI FAQ for Analyze demand plans with Copilot
         href: faq-demand-planning-copilot.md
       - name: Responsible AI FAQ for the Confirmed purchase orders with changes workspace
         href: faq-confirmed-po-changes.md
