@@ -16,8 +16,6 @@ ms.assetid: 5c12b1f2-eb89-4648-a755-de412f2eadd6
 
 This article describes the use of expression constraints and table constraints. Constraints control the attribute values that you can select when you configure products for a sales order, sales quotation, purchase order, or production order. You can use expression constraints or table constraints, depending on how you prefer to build the constraints. 
 
-Constraints are used to control the attribute values that you can select when you configure products for a sales order, sales quotation, purchase order, or production order. You can use expression constraints or table constraints, depending on how you prefer to build the constraints.
-
 ## What are expression constraints?
 Expression constraints are characterized by an expression that uses arithmetic and Boolean operators and functions. An expression constraint is written for a specific component in a product configuration model. It can't be reused by or shared with another component. However, the expression constraints for a component can reference attributes of the component's subcomponents.
 
