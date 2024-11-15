@@ -80,13 +80,6 @@ If Platform update 3 or later has been deployed for your organization, the syste
 </tbody>
 </table>
 
-## Download and install the mobile app
-
-Download and install the finance and operations (Dynamics 365) mobile app:
-
--   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
--   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
-
 ## Sign in to the mobile app
 
 1.  Start the app on your mobile device.
