@@ -1,0 +1,92 @@
+### YamlMime:Landing
+
+title: Monitoring and Telemetry using Dynamics 365 Finance & Supply Chain Management
+summary: Learn how to implement a monitoring solution to capture and analyze telemetry for Dynamics 365 F&SCM.
+
+metadata:
+  title: Monitoring and Telemetry with Microsoft Dynamics 365 Finance & Supply Chain Management
+  description: "Learn how to implement a monitoring solution to capture and analyze telemetry for Dynamics 365 F&SCM."
+  
+  ms.topic: landing-page
+  author: kesae
+  ms.author: kesae
+  ms.date: 11/07/2024
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About Monitoring and Telemetry
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Monitoring and Telemetry Feature overview
+            url: monitoring-overview.md
+      - linkListType: concept
+        links:
+          - text: Gathering requirements for monitoring
+            url: monitoring-gathering-requirements.md
+          - text: Controlling telemetry costs
+            url: monitoring-controlling-telemetry-costs.md
+
+  # Card (optional)
+  - title: Configuring monitoring and telemetry
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Getting started
+            url: monitoring-getting-started.md
+          - text: Enable the Monitoring and telemetry feature
+            url: monitoring-enable-feature.md
+          - text: Environment configuration
+            url: monitoring-configure-environments.md
+
+  # Card
+  - title: Available features
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Application Insights experiences
+            url: monitoring-application-insights-features.md
+          - text: Available telemetry
+            url: monitoring-available-telemetry.md
+          - text: Github sample repository
+            url: monitoring-sample-repositories.md
+  
+  # Card
+  - title: For developers
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Telemetry data model
+            url: monitoring-developer-telemetry-datamodel.md
+          - text: Adding your custom telemetry signals
+            url: monitoring-developer-add-custom-signals.md
+          - text: Creating dashboards
+            url: monitoring-developer-create-dashboards.md
+  
+  # Card
+  - title: Analyzing telemetry
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Analyze telemetry with KQL queries
+            url: monitoring-analyze-telemetry-KQL.md
+          - text: Analyze telemetry with Azure Data Explorer
+            url: monitoring-analyze-telemetry-ADE.md
+          - text: Analyze telemetry with Power BI
+            url: monitoring-analyze-telemetry-PowerBI.md
+          - text: Creating telemetry driven alerts
+            url: monitoring-analyze-telemetry-driven-alerts.md
+  
+  # Card
+  - title: Related docs
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Application Insights Overview
+            url: https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview
+          - text: Cost optimization and Application Insights
+            url: https://learn.microsoft.com/en-us/azure/well-architected/service-guides/application-insights/cost-optimization          
