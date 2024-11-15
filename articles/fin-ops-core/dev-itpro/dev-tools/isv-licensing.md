@@ -28,7 +28,7 @@ The Microsoft Dynamics ecosystem provides tools and frameworks that let independ
 This feature doesn't enable ISV competitor copycat protection (that is, source-based protection).
 
 > [!IMPORTANT]
->  Starting with version 10.0.43, all licenses will be issued at the tenant level. This means a single license can potentially be used across multiple environments that share the same tenant ID.
+>  Starting with Dynamics 365 Finance version 10.0.43, all licenses are issued at the tenant level. This means a single license can potentially be used across multiple environments that share the same tenant ID.
 
 ## Capabilities
 This section describes various capabilities of the ISV licensing feature.
