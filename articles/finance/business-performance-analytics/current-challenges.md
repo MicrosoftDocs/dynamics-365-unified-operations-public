@@ -4,7 +4,7 @@ description: Learn about some current known issues in Business performance analy
 author: lizmora
 ms.author: jiwo
 ms.topic: conceptual
-ms.date: 10/30/2024
+ms.date: 11/14/2024
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
@@ -16,9 +16,35 @@ audience: Application User
 
 This article describes some known issues in Business performance analytics.
 
+## Diagnostics page
+The Business performance analytics admin has access to a diagnostics page that acts as a self-help tool to monitor their Business performance analytics data and app health. This page includes a message center where the admin receives proactive notifications when action is required to correct an error in their environment.
+
+### View notifications from the diagnostics page
+To view messages from the **Diagnostics** page, follow these steps:
+1. Go to bell icon on the top right of the application.
+2. Messages are displayed with a link to the diagnostics page.
+
+### Access the Diagnostics page
+You can access the diagnostic page from the **Administration** section of the app.
+
+### View system status
+The status section helps the admin troubleshoot if anything is misconfigured in their app. For example:
+ - The status of their background flows
+ - Are the app users set up correctly
+ - Do the app admins have access to the required roles and settings
+
+### View and complete messages
+To view and complete messages, follow these steps:
+1. On the **Diagnostics** page, the **Messages active** tab displays messages.
+2. Expand the messages to view details. These are messages that require admin attention to mitigate any errors detected in the app.
+3. After the action has been performed, mark the message as **Complete**. This confirms to telemetry that the action has been completed.
+4. All completed messages are located on the **Completed** tab.
+
+## Troubleshooting and maintenance reminders
+
 ### By default, the Order to cash data model isn't enabled for customers.
 
-Customers must submit a request to Microsoft Support to have the *Order to cash* data model enabled. In the future, this model will automatically be enabled for all customers.
+Customers must submit a request to Microsoft Support to have the *Order to cash* data model enabled. In the future, this model is automatically enabled for all customers.
 
 ### Custom reports are lost when Business performance analytics is uninstalled.
 
@@ -58,4 +84,4 @@ This limit will be removed in the future.
 
 ### The size of the data lake folder increases at each Business performance analytics refresh.
 
-Customers might notice that the size of the data lake folder increases each time that Business performance analytics refreshes its data. This issue occurs because stale folders are cleaned only every 30 days. In the future, stale folders will be cleaned more often.
+Customers might notice that the size of the data lake folder increases each time that Business performance analytics refreshes its data. This issue occurs because stale folders are cleaned only every 30 days. In the future, stale folders are cleaned more often.

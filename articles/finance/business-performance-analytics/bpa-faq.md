@@ -7,7 +7,7 @@ ms.topic: faq
 ms.custom:
 ms.reviewer: twheeloc 
 audience: Application User
-ms.date: 9/11/2024
+ms.date: 11/14/2024
 ---
 
 # Business performance analytics FAQ
@@ -29,6 +29,9 @@ The following errors are likely to occur if another operation is in progress dur
 2. Go to **Environments**, and select **Dynamics 365 Apps**.
 3. Find **Business performance analytics**, and select **Installation failed**.
 4. Select the link to retry the installation, and monitor the app installation process.
+
+### I am having trouble opening Business performance analytics. What can I do? 
+If you are accessing Business performance analytics from the maker portal, click **Play** in the top right corner to avoid viewing the app in editor mode.
 
 ### Why isn't my data showing up in Business performance analytics?
 
