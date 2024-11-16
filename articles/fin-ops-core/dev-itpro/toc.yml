@@ -843,6 +843,8 @@ items:
             href: dev-ref/xpp-string-run-time-functions.md
         - name: System tables
           href: dev-ref/system-tables.md
+      - name: Real async feature enhancements
+        href: dev-tools/real-async.md  
       - name: Extensibility
         items:
         - name: Extensibility home page
@@ -1359,8 +1361,6 @@ items:
               href: data-entities/dual-write/dual-write-async-error.md
             - name: Dual-write Async FAQ  
               href: data-entities/dual-write/dual-write-async-faq.md    
-            - name: Async feature enhancements
-              href: dev-tools/real-async.md
         - name: Support for dual-write
           items:
             - name: Considerations for initial synchronization
