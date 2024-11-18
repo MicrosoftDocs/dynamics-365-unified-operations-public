@@ -50,7 +50,7 @@ If you receive the error, follow these steps.
 The FinOps environment will not share the details of the managed identity used to connect to the storage account. In fact, the platform runtime also does not have access to the managed identity information.
 
 
-### How does the platform code connect to the storage account using managed identity, if the identity is available?
+### How does the platform code connect to the storage account using managed identity, if the identity is not available?
 
 
 We have our own implementation of TokenCredential object and token is refreshed by certain service regularly behind the scenes.
