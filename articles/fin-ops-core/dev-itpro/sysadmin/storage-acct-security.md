@@ -50,13 +50,13 @@ The finance and operations environment doesn't share the details about the manag
 
 ### How does the platform code connect to the storage account using managed identity when the identity isn't available?
 
-An implementation of the TokenCredential object and token is refreshed regularly by a service behind the scenes.
+An implementation of the TokenCredential object and token refreshes regularly using a service that runs behind the scenes.
 
 ### Previously, a connection string allowed unrestricted access to perform almost any operation on a storage account. With the introduction of RBAC and managed identities, which permissions are now restricted or disabled?
 
-We have granted almost all the necessary permissions to perform operations in the data plane. Permissions related to containers, queues, and tables in the control plane are usually provided also. However, storage account-level permissions and certain network-related permissions are restricted.
+We grant almost all the necessary permissions to perform operations in the data plane. Permissions related to containers, queues, and tables in the control plane are usually provided also. However, storage account-level permissions and certain network-related permissions are restricted.
 
-### CloudInfrastructure.GetCsuStorageConnectionString() throws error, if flight EnableSharingOfValidStorageConnectionString isn't enabled?
+### CloudInfrastructure.GetCsuStorageConnectionString() throws an error if flight EnableSharingOfValidStorageConnectionString isn't enabled?
 
 Yes, we're deprecating the **GetCsuStorageConnectionString()** API. We recommend using the **CloudStorageAccount**, **BlobServiceClient**, or **TableServiceClient** objects returned by the **SharedServiceUnitStorage** for interacting with the storage account.
 
@@ -97,7 +97,7 @@ We intercept the outbound HTTPs requests made by the storage SDK to ensure that 
 
 ### Can you provide more details on why the GetSharedAccessSignature() fails while other constructs continue to work?
 
-When you invoke GetSharedAccessSignature() on a blob, container, queue, or other storage resources, the SAS URL ortoken generates within the SDK by signing the URL using the account key that's stored in the SharedAccessCredential.
+When you invoke GetSharedAccessSignature() on a blob, container, queue, or other storage resources, the SAS URL or token generates within the SDK by signing the URL using the account key that's stored in the SharedAccessCredential.
 
 When we construct the CloudStorageAccount and other related objects using an invalid account key, the SAS URL is signed with this invalid key. Although the token/URL can be generated successfully, any attempt to use it to connect to the storage account fails with a **403 (Forbidden) error**, since the signature is invalid.
 
@@ -116,7 +116,7 @@ Yes, the user delegated SAS url generated using Azure.Storage v12 works with **W
 > [!NOTE]
 > As long you aren’t manually parsing the SAS URL or token [searching for various tokens, like se and st, as u might bump into new token], we're good, because the URL patterns are different.
 
-### What known issues exists using a managed identity that's incompatible with previous libraries?
+### What known issues exist using a managed identity that's incompatible with previous libraries?
 
 1. You can't generate a SAS URL using **GetSharedAccessSignature()** regardless of the library you use with managed identity.
 1. To generate a User Delegated SAS URL, you must use the Azure.Storage.Blobs SDK (v12 and later).
@@ -130,6 +130,6 @@ No, there isn't any impact, nor would any request made from those libraries be i
 
 ### Do you have any guidance on the usage of code or libraries available in platform code?
 
-Refrain from using any classes or methods exposed in the **Microsoft.Dynamics.Clx.ServicesWrapper.Infrastructure.Interceptor** namespace becasue they're intended for internal use only and are subject to change.
+Refrain from using any classes or methods exposed in the **Microsoft.Dynamics.Clx.ServicesWrapper.Infrastructure.Interceptor** namespace because they're intended for internal use only and are subject to change.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
