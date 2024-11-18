@@ -1,8 +1,8 @@
 ---
 title: Pass returned items on to inspection 
 description: When registering a returned item, determine that an item should be sent for inspection before it's returned to inventory or disposed of in some other way.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 05/01/2018
 ms.custom: 
@@ -25,7 +25,7 @@ When registering a returned item, you may determine that an item should be sent 
 1. On the **Location journal** form, register the receipt of an item as usual.
 
     > [!NOTE]
-    > For information about registering the receipt of returned items, see [Register the receipt of returned items](register-the-receipt-of-returned-items.md)
+    > For information about registering the receipt of returned items, see [Register the receipt of returned items](register-the-receipt-of-returned-items.md).
 
 1. On the **Default values** tab, in the **Mode of handling** area, select the **Quarantine management** box.
 

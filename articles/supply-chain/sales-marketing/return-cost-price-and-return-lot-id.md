@@ -1,8 +1,8 @@
 ---
 title: Return cost price and return lot ID    
 description: Learn about the cost price and return lot IDs, including outline on manually entering return cost prices and automatically generating cost prices.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 04/30/2018
 ms.custom:

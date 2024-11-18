@@ -53,7 +53,7 @@ The following table lists the APIs that are currently available:
 | `/api/environment/{environmentId}/transaction/adjustment/bulk` | Post | [Sync external inventory changes through Inventory Visibility](inventory-visibility-sync-changes.md) |
 
 > [!NOTE]
-> The {environmentId} part of the path is the environment ID of Microsoft Dynamics 365 Supply Chain Management.
+> The {environmentId} part of the path is the environment ID of Microsoft Dynamics 365 Supply Chain Management. This ID is the one stated for Supply Chain Management in Lifecycle Services, not the ID of the Power Platform environment that is linked to the Supply Chain Management environment.
 >
 > The bulk API can return a maximum of 512 records for each request.
 

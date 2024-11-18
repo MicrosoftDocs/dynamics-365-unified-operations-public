@@ -1,8 +1,8 @@
 ---
 title: Set up disposition codes   
 description: You can set up disposition codes to specify how to process an item that is returned by a customer, including a step-by-step process.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 05/01/2018
 ms.custom:

@@ -1,8 +1,8 @@
 ---
 title: Sales returns
 description: Learn about the process for return orders. It includes information about customer returns and their effect on costing and on-hand inventory quantities.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: how-to
 ms.date: 05/16/2024
 ms.custom: 
