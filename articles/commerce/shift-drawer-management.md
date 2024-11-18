@@ -115,6 +115,7 @@ Enabling the **Require starting amounts and tender declaration** POS functionali
 
 > [!NOTE]
 > Starting with Commerce version 10.0.40, only devices with a cash drawer configured are subject to **Require starting amounts and tender declaration** setting validation.
+> If all cash drawers under **POS hardware profile** are configured as "None" you must define at least one cash drawer as "Manual" to trigger **Require starting amounts and tender declaration** validation.
 
 ### Print X
 
