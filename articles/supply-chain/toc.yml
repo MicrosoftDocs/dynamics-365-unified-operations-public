@@ -3238,45 +3238,45 @@
       - name: Returns
         items:
         - name: Sales returns
-          href: warehousing/sales-returns.md
+          href: sales-marketing/sales-returns.md
         - name: Receive unannounced sales returns
           href: warehousing/sales-returns-unannounced.md
         - name: Set up customer returns
           items:
           - name: Return reason codes and disposition codes
-            href: service-management/disposition-and-return-reason-codes.md
+            href: sales-marketing/disposition-and-return-reason-codes.md
           - name: Set up disposition codes
-            href: service-management/set-up-disposition-codes.md
+            href: sales-marketing/set-up-disposition-codes.md
           - name: Set up return reason codes
-            href: service-management/set-up-return-reason-code.md
+            href: sales-marketing/set-up-return-reason-code.md
           - name: Specify how to dispose of returned items
-            href: service-management/specify-how-to-dispose-of-returned-items.md
+            href: sales-marketing/specify-how-to-dispose-of-returned-items.md
         - name: Authorize customer returns
           items:
           - name: Return cost price and return lot ID
-            href: service-management/return-cost-price-and-return-lot-id.md
+            href: sales-marketing/return-cost-price-and-return-lot-id.md
           - name: Cancel a return order
-            href: service-management/cancel-return-order.md
+            href: sales-marketing/cancel-return-order.md
           - name: Create an item replacement order
-            href: service-management/create-item-replacement-order.md
+            href: sales-marketing/create-item-replacement-order.md
           - name: Delete a return order
-            href: service-management/delete-return-order.md
+            href: sales-marketing/delete-return-order.md
           - name: Pass returned items on to inspection
-            href: service-management/pass-returned-items-on-to-inspection.md
+            href: sales-marketing/pass-returned-items-on-to-inspection.md
           - name: Post arrival journal for returned products
-            href: service-management/post-arrival-journal-for-returned-products.md
+            href: sales-marketing/post-arrival-journal-for-returned-products.md
           - name: Receive partial deliveries of returned items
-            href: service-management/receive-partial-deliveries-returned-items.md
+            href: sales-marketing/receive-partial-deliveries-returned-items.md
           - name: Receive returned items
-            href: service-management/receiving-returned-items.md
+            href: sales-marketing/receiving-returned-items.md
           - name: Register the receipt of returned items
-            href: service-management/register-the-receipt-of-returned-items.md
+            href: sales-marketing/register-the-receipt-of-returned-items.md
           - name: Take returned items through inspection
-            href: service-management/take-returned-items-through-inspection.md
+            href: sales-marketing/take-returned-items-through-inspection.md
           - name: Packing slip updates for returns
-            href: service-management/packing-slip-updates-returns.md
+            href: sales-marketing/packing-slip-updates-returns.md
           - name: Perform invoice updates for returns
-            href: service-management/perform-invoice-updates-for-returns.md
+            href: sales-marketing/perform-invoice-updates-for-returns.md
       - name: Commission
         items:
         - name: Register sales commissions

@@ -1,8 +1,8 @@
 ---
 title: Return reason codes and disposition codes
 description: Create and use return reason codes and disposition codes to support the process for returning products, including an example of creating disposition codes.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: overview
 ms.date: 07/25/2019
 ms.reviewer: kamaybac

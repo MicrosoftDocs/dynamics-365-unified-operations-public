@@ -1,8 +1,8 @@
 ---
 title: Receive returned items 
 description: When a return shipment arrives, you match it to a return order that has already been created. Learn how to receive returned items.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 05/01/2018
 ms.custom: 

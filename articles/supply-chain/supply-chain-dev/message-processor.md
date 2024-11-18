@@ -1,8 +1,8 @@
 ---
 title: Create and process message queues and message types
 description: Learn how to design custom message queues and message types by using Visual Studio, and how to monitor and control the processing of all message types.
-author: Henrikan
-ms.author: henrikan
+author: Mirzaab
+ms.author: mirzaab
 ms.topic: how-to
 ms.date: 11/02/2022
 ms.custom: bap-template

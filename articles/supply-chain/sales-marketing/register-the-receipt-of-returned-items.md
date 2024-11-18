@@ -1,8 +1,8 @@
 ---
 title: Register the receipt of returned items
 description: Learn how you can register the receipt of returned items using the Arrival overview page or the Registration page, including a step-by-step process.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 05/01/2018
 ms.custom: 
