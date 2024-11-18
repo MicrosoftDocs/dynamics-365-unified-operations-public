@@ -23,7 +23,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
-> 
+
 ## Features removed or deprecated in the Supply Chain Management 10.0.43 release
 
 ### Non-process guide Spot cycle counting Mobile device menu item
