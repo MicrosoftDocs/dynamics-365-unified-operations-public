@@ -4,7 +4,7 @@ description: Learn how to debug data upgrade scripts for upgrades of Microsoft D
 author: ttreen
 ms.author: ttreen
 ms.topic: article
-ms.date: 11/08/2024
+ms.date: 11/18/2024
 ms.reviewer: twheeloc
 audience: Developer, IT Pro
 ms.search.region: Global
@@ -43,7 +43,7 @@ To debug a PreSync or PostSync upgrade class/method, follow these steps.
 3. On the **Dynamics 365** menu, select **Options**. Then, under **Dynamics 365** \> **Debugging**, select the following options:
 
     - Debug items in the solution and items in specific packages. Limiting the number of items being debugged provides a better debugging experience.
-    - Include packages \[Models\] – (Select all)
+    - Include packages \[Models\] – select all.
 
 4. In Application Explorer, find and open the class and method that you must debug, and set break points as required.
 5. Go to **Debug**, select **Attach To Process**, and set the following values:
