@@ -61,7 +61,7 @@ We have our own implementation of TokenCredential object and token is refreshed 
 We have granted almost all the necessary permissions to perform operations in the data plane, and for the most part, permissions related to containers, queues, and tables in the control plane are also provided. However, storage account-level permissions and certain network-related permissions have been restricted.
 
 
-### CloudInfrastructure.GetCsuStorageConnectionString() throws error, if flight EnableSharingOfValidStorageConnectionString is not enabled)?
+### CloudInfrastructure.GetCsuStorageConnectionString() throws error, if flight EnableSharingOfValidStorageConnectionString is not enabled?
 
 
 Yes, we are deprecating the `GetCsuStorageConnectionString()` API. We recommend using the `CloudStorageAccount`, `BlobServiceClient`, or `TableServiceClient` objects returned by the `SharedServiceUnitStorage` for interacting with the storage account.
