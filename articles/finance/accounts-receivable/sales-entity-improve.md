@@ -6,7 +6,7 @@ ms.author: raynezou
 ms.reviewer: twheeloc
 ms.search.form:
 ms.topic: how-to
-ms.date: 08/08/2024
+ms.date: 11/14/2024
 audience: Application User
 ms.custom: 
   - bap-template
@@ -35,6 +35,9 @@ To ensure a smooth transition, a **SysSetup** async script is available. This sc
 
 > [!NOTE]
 > The job may take three days or more to run to avoid potential system corruption.
+
+> [!IMPORTANT]
+> If you have Synapse configured, you see a higher level record changes due to this update batch job touching all records. 
 
 These necessary improvements address the performance issues that customers have reported. Users are encouraged to use the **Sales invoice headers V4** and **Sales invoice lines V4** entities for improved performance and efficiency.
 
