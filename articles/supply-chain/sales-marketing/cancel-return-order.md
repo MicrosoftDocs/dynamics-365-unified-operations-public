@@ -1,8 +1,8 @@
 ---
 title: Cancel a return order  
 description: You can cancel a return order, instead of deleting it, when you want to save a record of the planned return, including a step-by-step process.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.reviewer: kamaybac
 ms.search.form: ReturnTableListPage, ReturnTable
 ms.topic: how-to

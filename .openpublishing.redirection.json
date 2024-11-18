@@ -28158,6 +28158,91 @@
       "source_path": "articles/commerce/dev-itpro/hybridapp.md",
       "redirect_url": "/dynamics365/commerce/dev-itpro/retail-sdk/migrate-commerce-sdk",
       "redirect_document_id": false
-    }   
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/cancel-return-order.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/cancel-return-order",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/create-item-replacement-order.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/create-item-replacement-order",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/delete-return-order.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/delete-return-order",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/disposition-and-return-reason-codes.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/disposition-and-return-reason-codes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/packing-slip-updates-returns.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/packing-slip-updates-returns",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/pass-returned-items-on-to-inspection.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/pass-returned-items-on-to-inspection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/perform-invoice-updates-for-returns.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/perform-invoice-updates-for-returns",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/post-arrival-journal-for-returned-products.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/post-arrival-journal-for-returned-products",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/receive-partial-deliveries-returned-items.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/receive-partial-deliveries-returned-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/receiving-returned-items.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/receiving-returned-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/register-the-receipt-of-returned-items.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/register-the-receipt-of-returned-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/return-cost-price-and-return-lot-id.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/return-cost-price-and-return-lot-id",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/set-up-disposition-codes.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/set-up-disposition-codes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/set-up-return-reason-code.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/set-up-return-reason-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/specify-how-to-dispose-of-returned-items.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/specify-how-to-dispose-of-returned-items",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/service-management/take-returned-items-through-inspection.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/take-returned-items-through-inspection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/sales-returns.md",
+      "redirect_url": "/dynamics365/supply-chain/sales-marketing/sales-returns",
+      "redirect_document_id": false
+    }
   ]
 }

@@ -1,8 +1,8 @@
 ---
 title: Receive partial deliveries of returned items   
 description: Learn how partial deliveries are defined in terms of return order lines, not return order shipments, including a step-by-step process.
-author: Henrikan
-ms.author: henrikan
+author: AditiPattanaik
+ms.author: adpattanaik
 ms.topic: article
 ms.date: 05/01/2018
 ms.custom: 

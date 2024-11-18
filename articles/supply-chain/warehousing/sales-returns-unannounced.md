@@ -14,7 +14,7 @@ ms.search.form: WHSParameters, ReturnDispositionCode, WHSDispositionTable, WHSRe
 
 [!include [banner](../includes/banner.md)]
 
-In Microsoft Dynamics 365 Supply Chain Management, the [sales return process](sales-returns.md) is usually initiated by creating a return material authorization (RMA) order. The process of creating an RMA order supports a scenario where the reason for the return isn't immediately apparent or disclosed. The RMA order serves as the primary document that guides subsequent steps in the return process, including warehouse arrival and the receiving procedures.
+In Microsoft Dynamics 365 Supply Chain Management, the [sales return process](../sales-marketing/sales-returns.md) is usually initiated by creating a return material authorization (RMA) order. The process of creating an RMA order supports a scenario where the reason for the return isn't immediately apparent or disclosed. The RMA order serves as the primary document that guides subsequent steps in the return process, including warehouse arrival and the receiving procedures.
 
 However, in some business scenarios, customers might request to return products without providing advance notification or an associated order. In these scenarios, the standard RMA process is bypassed, and special considerations are made to accommodate the unplanned or unanticipated (unannounced) returns.
 
@@ -117,7 +117,7 @@ Disposition codes can be used for different processes, such as *purchase order r
 
 To view and set up your return disposition codes, go to **Sales and Marketing** \> **Setup** \> **Returns** \> **Disposition codes**. You define each code by specifying an ID number, an action, and a description. The action defines how items that are assigned to the code should be handled.
 
-For more information about return disposition codes and the actions that are available, see [Disposition codes and disposition actions](sales-returns.md#disposition-codes-and-disposition-actions).
+For more information about return disposition codes and the actions that are available, see [Disposition codes and disposition actions](../sales-marketing/sales-returns.md#disposition-codes-and-disposition-actions).
 
 #### Mobile device disposition codes
 
@@ -391,7 +391,7 @@ The returned products have now been put onto a mixed license plate for further p
 1. In the **License plate** grid, find the mixed license plate that you processed by using the mobile app.
 1. On the Action Pane, on the **License plate** tab, select **Complete license plate** to complete mixed license plate receiving.
 
-After you complete mixed license plate receiving, Supply Chain Management automatically creates an RMA order that's prepared for further downstream processing, as described in [Sales returns](sales-returns.md).
+After you complete mixed license plate receiving, Supply Chain Management automatically creates an RMA order that's prepared for further downstream processing, as described in [Sales returns](../sales-marketing/sales-returns.md).
 
 > [!TIP]
 > You can set up your mobile device menu item for processing returns to include a step that lets workers complete mixed license plate receiving directly from the mobile device while receiving the return. Then you won't need to [complete this step](mixed-license-plate-receiving.md) later in the Supply Chain Management web client. To do so, create a [detour](warehouse-app-detours.md) item with the **Activity code** *Complete mixed license plate*. Learn more in [Set up a mobile device menu item for completing mixed license plates](mobile-device-complete-mixed-lp-menu.md).
@@ -489,7 +489,7 @@ The returned products have now been put onto a mixed license plate for further p
 1. In the **License plate** grid, find the mixed license plate that you processed by using the mobile app.
 1. On the Action Pane, on the **License plate** tab, select **Complete license plate** to complete the mixed license plate receiving.
 
-After you complete mixed license plate receiving, Supply Chain Management automatically creates an RMA order that's prepared for further downstream processing, as described in [Sales returns](sales-returns.md).
+After you complete mixed license plate receiving, Supply Chain Management automatically creates an RMA order that's prepared for further downstream processing, as described in [Sales returns](../sales-marketing/sales-returns.md).
 
 > [!TIP]
 > You can set up your mobile device menu item for processing returns to include a step that lets workers complete mixed license plate receiving directly from the mobile device while receiving the return. Then you won't need to [complete this step](mixed-license-plate-receiving.md) later in the Supply Chain Management web client. To do so, create a [detour](warehouse-app-detours.md) item with the **Activity code** *Complete mixed license plate*. Learn more in [Set up a mobile device menu item for completing mixed license plates](mobile-device-complete-mixed-lp-menu.md).
