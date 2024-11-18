@@ -117,7 +117,7 @@ Disposition codes can be used for different processes, such as *purchase order r
 
 To view and set up your return disposition codes, go to **Sales and Marketing** \> **Setup** \> **Returns** \> **Disposition codes**. You define each code by specifying an ID number, an action, and a description. The action defines how items that are assigned to the code should be handled.
 
-For more information about return disposition codes and the actions that are available, see [Disposition codes and disposition actions](../sales-marketing/sales-returns#disposition-codes-and-disposition-actions).
+For more information about return disposition codes and the actions that are available, see [Disposition codes and disposition actions](../sales-marketing/sales-returns.md#disposition-codes-and-disposition-actions).
 
 #### Mobile device disposition codes
 
