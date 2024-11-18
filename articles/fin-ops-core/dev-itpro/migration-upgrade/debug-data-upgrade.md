@@ -42,7 +42,7 @@ To debug a PreSync or PostSync upgrade class/method, follow these steps.
 2. Create a new, empty Dynamics 365 finance and operations solution. This step is useful when you debug and drill into sub-methods. You don't have to add any objects to the solution and project.
 3. On the **Dynamics 365** menu, select **Options**. Then, under **Dynamics 365** \> **Debugging**, select the following options:
 
-    - Debug items in the solution and items in specific packages. Limiting the number of items being debugged provides a better debugging experience.
+    - Debug the items in the solution and in specific packages. Limiting the number of items being debugged provides a better debugging experience.
     - Include packages \[Models\] – select all.
 
 4. In Application Explorer, find and open the class and method that you must debug, and set break points as required.
