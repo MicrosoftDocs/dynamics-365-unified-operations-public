@@ -23,6 +23,18 @@ This list is intended to help you consider these removals and deprecations for y
 
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
+> 
+## Features removed or deprecated in the Supply Chain Management 10.0.43 release
+
+### Non-process guide Spot cycle counting Mobile device menu item
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | The [process guide framework](../supply-chain-dev/process-guide-framework) offers much better extensibility support and allows for easier changes in the feature behavior. |
+| **Replaced by another feature?**  | Yes. It is recommended to enable the *Use process guide* setting. |
+| **Product areas affected** | Supply Chain Management – Warehouse management |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | The *Use process guide* setting will be enabled by default in the 10.0.45 release, and it will be made mandatory in the 10.0.47 release. Approximately one year after the release of version 10.0.47, the non-process guide implementation will no longer be supported and may eventually be removed from the product. |
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.42 release
 
