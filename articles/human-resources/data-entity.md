@@ -37,8 +37,8 @@ Multiple Data Management Framework (DMF) entities have been added for the 10.0.3
 | Module | New entity coverage | Notes |
 |--------|---------------------|-------|
 | Personnel management | I-9 documents, Union agreements, Worker actions, Position actions, Default location, Primary position | N/A |
-| Attachment entities for a Worker | Worker, Certificates, Employments, Education, Exam, Person private details, Professional experience, Person screening, Worker bank account, Injury and incidents, Identification | All entities include "Attachment" in the target entity name. |
-| Attachment entities | Job, Employment terms, Certificate types, Position, Dir party, electronic address, benefit plan employee, cade detail, fixed comp, Variable comp, Courses, Leave request, Discussions, Goals, Performance Journal, Certificates | All entities include "Attachment" in the target entity name. |
+| Attachment entities for a worker | Worker, Certificates, Employments, Education, Exam, Person private details, Professional experience, Person screening, Worker bank account, Injury and incidents, Identification | All entities include "Attachment" in the target entity name. |
+| Attachment entities | Job, Employment terms, Certificate types, Position, Dir party, electronic address, benefit plan employee, cade detail, fixed comp, Variable comp, Courses, Leave request, Discussions, Goals, Performance journal, Certificates | All entities include "Attachment" in the target entity name. |
 | Task management | Business process, Business process library task group, Business process library task grouping, Business process generic process, Business process generic template |  |
 | Leave and absence | Leave Bank transaction audit, leave of absence request and Leave type Security role | The new entities include LeaveBankTransactionAuditTrailEntity, LeaveTypeSecurityRoleEntity, and LeaveOfAbsenceRequestEntity. | |
 | Case management | FMLA cases, association and certification | The new entities include HcmFMLACaseAssociationEntity, HcmFMLACaseCertificationEntity, and HcmFMLAEligibilityDatePriorityEntity. |
