@@ -36,21 +36,24 @@ The **Graphical planning** visual streamlines the process of adjusting values in
 4. In the **Amount** column, enter a value for the **Value** variable.
 5. Define the x-axis and y-axis by using the **Legend** variable. Incorporate name columns from the dimensions that you want to plot on the chart.
 
-### Prerequisites 
+### Prerequisites
 
-All dimension fields must be in the filters section - To ensure the Graphical planning visual functions correctly, any dimension field used in external slicers or filters must also be added to the **Filters** field of the Graphical planning visual. This ensures the visual receives the complete list of dimension values, including those affected by slicers, to maintain consistency during data manipulation.
+**All dimension fields must be included in the filters section.** For the Graphical planning visual to work correctly, every dimension field that is used in external slicers or filters must also be added to the **Filters** field of the visual. This setup ensures that the visual receives the complete list of dimension values, including those that are affected by slicers. Therefore, it helps maintain consistency during data manipulation.
 
-#### Impact of missing dimensions 
-If a dimension field used in a slicer isn't added to the **Filters** field, the visual may: 
-     - Manipulate incorrect or incomplete data.
-     - Fail to correctly adjust values during user interactions, such as dragging or editing.
+#### Impact of missing dimensions
 
-#### How to add dimension fields 
-To add dimension fields to **Filters**, follow these steps:  
-1. Drag the required dimension fields (e.g., Category, Account, Business Unit, etc.) to the **Filters** section of the Graphical planning visual.
-2. Navigate to the **Data** pane. Dimensions are prefixed with ‘Msdyn_xpnadim’ in the data column of Power BI. AFter you find the dimension that you are looking for, expand it, and select the **msdyn_name** field and drag it to the filters section.
-3. Confirm all slicer-related fields are added as a filter for to maintain alignment between the slicer and the visual. 
+If a dimension field that is used in a slicer isn't added to the **Filters** field, the Graphical planning visual can be affected in the following ways:
 
+- It might manipulate incorrect or incomplete data.
+- It might fail to correctly adjust values during user interactions, such as dragging or editing.
+
+#### Add dimension fields
+
+To add dimension fields to the **Filters** field, follow these steps.
+
+1. Drag the required dimension fields (for example, **Category**, **Account**, and **Business Unit**) to the filters section of the Graphical planning visual.
+2. Go to the **Data** pane. Dimensions are prefixed with "Msdyn\_xpnadim" in the data column of Power BI. After you find the dimension that you want, expand it, select the **msdyn\_name** field, and drag it to the filters section.
+3. Confirm that all slicer-related fields are added as filters, so that the slicer and the visual remain aligned.
 
 ## Use the Graphical planning visual
 
