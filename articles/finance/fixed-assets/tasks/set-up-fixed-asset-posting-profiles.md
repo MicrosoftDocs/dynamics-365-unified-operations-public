@@ -27,7 +27,7 @@ This procedure shows how to set up Fixed asset posting profiles. The examples ar
 5. In the toolbar, click **Add**.
 6. In the **Book** field, enter or select a value. The **Groupings** field allows you to define the posting profile down to the **Table** (one account set up for each fixed asset) or **Group** (one account set up for each fixed asset group). For this task guide, leave the value set to **All** to apply to all fixed assets with the specified Book.  
 7. In the **Main account** field, specify the desired values. For acquisitions, you can enter an offset account or leave it blank to be filled in for the specific transaction.    
-8. In the drop-down menu under the **Ledger accounts** fastTab, select **Acquisition adjustment**. For acquisition adjustment transactions, we will use the same accounts as used for Acquisition transactions.  
+8. In the drop-down menu under the **Ledger accounts** FastTab, select **Acquisition adjustment**. For acquisition adjustment transactions, we will use the same accounts as used for Acquisition transactions.  
 9. Click **Add**.
 10. In the **Book** field, enter or select a value.
 11. In the **Main account** field, specify the desired values. For acquisition adjustments, you can enter an offset account or leave it blank to be filled in for the specific transaction.    

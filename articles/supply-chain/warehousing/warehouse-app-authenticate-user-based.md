@@ -4,7 +4,7 @@ description: Learn how to configure the Warehouse Management app to connect to y
 author: Mirzaab
 ms.author: mirzaab
 ms.topic: how-to
-ms.date: 03/07/2024
+ms.date: 11/19/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
@@ -91,9 +91,13 @@ The following procedure shows one way to register an application in Microsoft En
 1. Select **Configure** to save your settings and close the dialog box. Then select **Done** to return to the **Authentication** page, which now shows your new platform configurations.
 1. Select **Add a platform** again.
 1. In the **Configure platform** dialog box, select **iOS / macOS**.
-1. In the **Configure your iOS or macOS app** dialog box, set the **Bundle ID** field to *com.microsoft.WarehouseManagement*.
+1. In the **Configure your iOS or macOS app** dialog box, set the **Bundle ID** field to the following value:
+
+    ``` text
+    com.microsoft.WarehouseManagement
+    ```
+
 1. Select **Configure** to save your settings and close the dialog box. Then select **Done** to return to the **Authentication** page, which now shows your new platform configurations.
-1. In the **Advanced settings** section, set **Allow public client flows** to *Yes*.
 1. In the **Manage** list, select **API permissions**.
 1. Select **Add a permission**.
 1. In the **Request API permissions** dialog box, on the **Microsoft APIs** tab, select the **Dynamics ERP** tile and then the **Delegated permissions** tile. Under **CustomService**, select the **CustomService.FullAccess** checkbox. Finally, select **Add permissions** to save your changes.
