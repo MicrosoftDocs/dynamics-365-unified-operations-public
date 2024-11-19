@@ -145,7 +145,7 @@ For more information about how to set up Key Vault, see [Setting up Azure Key Va
 | Vend payment         | This web service is provided by AEAT. It's used to submit information about payments to vendors for specific invoice types, and it sends back a response that contains information about processing on the SII system side.     | `https://prewww1.aeat.es/wlpl/SSII-FACT/ws/fr/SiiFactPAGV1SOAP` |
 | CollectionInCash     | This web service is provided by AEAT. It's used to submit information about payment transactions in cash from customers, and it sends back a response that contains information about processing on the SII system side.        | `https://prewww1.aeat.es/wlpl/SSII-FACT/ws/pm/SiiFactCMV1SOAP`  |
 
-Internet addresses are subject to change by AEAT. Therefore, we recommend that you check for actual internet addresses on the [official website of the SII system](https://www.agenciatributaria.es/AEAT.internet/en_gb/SII.html). The official documentation also has information about the actual *production* internet addresses that you should set up.
+Internet addresses are subject to change by AEAT. Therefore, we recommend that you check for actual internet addresses on the [official website of the SII system](https://sede.agenciatributaria.gob.es/Sede/iva/suministro-inmediato-informacion.html). The official documentation also has information about the actual *production* internet addresses that you should set up.
 
 6.  On the **General** tab, in the **Key vault certificate** field, select the security certificate that you set up for all web services that you will use for interoperation with the SII system: **Cust invoice**, **Vend invoice**, **Intra-community**, **Cust payment**, **Vend payment**, and **CollectionInCash**.
 
@@ -247,7 +247,7 @@ As of Finance version 10.0.22, if you're using the [Tax Calculation](../global/g
 
 ## Set up additional fields and automatically defined rules
 
-EM items have additional fields that are included in the two types of electronic message processing (**SII** and **CollectionInCash**) that are used to interoperate with the SII system and imported into the system by using a package of data entities. Additional fields are associated with EM items and are required for their processing. The system automatically sets values for additional fields when actions are run, but you can manually set and adjust the values of additional fields before you submit the information to the SII system. Additional fields are named according to related elements of the report. For more information about what each related report element is, see the [official documentation for the SII system](https://www.agenciatributaria.es/AEAT.internet/en_gb/SII.html).
+EM items have additional fields that are included in the two types of electronic message processing (**SII** and **CollectionInCash**) that are used to interoperate with the SII system and imported into the system by using a package of data entities. Additional fields are associated with EM items and are required for their processing. The system automatically sets values for additional fields when actions are run, but you can manually set and adjust the values of additional fields before you submit the information to the SII system. Additional fields are named according to related elements of the report. For more information about what each related report element is, see the [official documentation for the SII system](https://sede.agenciatributaria.gob.es/Sede/iva/suministro-inmediato-informacion.html).
 
 | **Additional field**               | **Description**                | **Type of processing where the field is used**                                                                                                                                                 | **Action/executable class that the field is set by**                                                                                                                                                                                                                                                               |
 |------------------------------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -267,7 +267,7 @@ EM items have additional fields that are included in the two types of electronic
 
 ### Algorithm to define the value of the TipoComunicacion (Communication type) additional field
 
-The **TipoComunicacion** (**Communication type**) additional field is automatically defined by the system for message items of the **FacturasСliente**, **FacturasProveedores**, **OperacionesIntracomunitarias**, and **CobrosEnMetálico** types. For a list of values that can be assigned to **TipoComunicacion**, see the [official documentation for the SII](https://www.agenciatributaria.es/AEAT.internet/en_gb/SII.html) system.
+The **TipoComunicacion** (**Communication type**) additional field is automatically defined by the system for message items of the **FacturasСliente**, **FacturasProveedores**, **OperacionesIntracomunitarias**, and **CobrosEnMetálico** types. For a list of values that can be assigned to **TipoComunicacion**, see the [official documentation for the SII](https://sede.agenciatributaria.gob.es/Sede/iva/suministro-inmediato-informacion.html) system.
 
 The following values are available for the **TipoComunicacion** additional field as part of the predefined setup for electronic messages.
 
@@ -288,7 +288,7 @@ For counterparties from EU or outside of the EU, **ID** additionally field will 
 
 ### Algorithm to define the IDType (Counterparty ID type) additional field
 
-The **IDType** (**Counterparty ID type**) additional field is automatically defined by the system for EM items of all types during the evaluation of additional fields. For the list of values that can be set for **IDType**, see the [official documentation for the SII](https://www.agenciatributaria.es/AEAT.internet/en_gb/SII.html) system.
+The **IDType** (**Counterparty ID type**) additional field is automatically defined by the system for EM items of all types during the evaluation of additional fields. For the list of values that can be set for **IDType**, see the [official documentation for the SII](https://sede.agenciatributaria.gob.es/Sede/iva/suministro-inmediato-informacion.html) system.
 
 The following values are available for the **IDType** additional field as part of the predefined setup for electronic messages.
 
@@ -365,7 +365,7 @@ The **NumSerieFactura** (**Summary reference**) additional field is automaticall
 
 ### Algorithm to define the TipoFactura (Invoice type) additional field
 
-The **TipoFactura** (**Invoice type**) additional field is automatically defined by the system for EM items of the **FacturasСliente** and **FacturasProveedores** types. For the list of values that can be set for **TipoFactura**, see the [official documentation for the SII system](https://www.agenciatributaria.es/AEAT.internet/en_gb/SII.html).
+The **TipoFactura** (**Invoice type**) additional field is automatically defined by the system for EM items of the **FacturasСliente** and **FacturasProveedores** types. For the list of values that can be set for **TipoFactura**, see the [official documentation for the SII system](https://sede.agenciatributaria.gob.es/Sede/iva/suministro-inmediato-informacion.html).
 
 The following values are available for the **TipoFactura** additional field as part of the predefined setup for electronic messages.
 
@@ -446,7 +446,7 @@ To report a credit note with an **I** value in the **TipoRectificativa** tag, be
 
 ### Algorithm to define the TipoOperacion (Intra-community operation type) additional field
 
-The **TipoOperacion** (**Intra-community operation type**) additional field is automatically defined by the system for EM items of the **OperacionesIntracomunitarias** type. For the list of values that can be set for **TipoOperacion**, see the [official documentation for the SII](https://www.agenciatributaria.es/AEAT.internet/en_gb/SII.html) system.
+The **TipoOperacion** (**Intra-community operation type**) additional field is automatically defined by the system for EM items of the **OperacionesIntracomunitarias** type. For the list of values that can be set for **TipoOperacion**, see the [official documentation for the SII](https://sede.agenciatributaria.gob.es/Sede/iva/suministro-inmediato-informacion.html) system.
 
 The following values are available for the **TipoOperacion** additional field as a part of the predefined setup of electronic messages.
 
@@ -473,7 +473,7 @@ To enable the system to define the intra-community operation type based on the s
 
 ### Set up automatically defined rules for the ClaveRegimenEspecialOTrascendencia (Special scheme code) additional field
 
-The **ClaveRegimenEspecialOTrascendencia** (**Special scheme code**) additional field is automatically defined by the system for message items of the **FacturasСliente** and **FacturasProveedores** types. For the list of values that can be set for **ClaveRegimenEspecialOTrascendencia**, see the [official documentation for the SII](https://www.agenciatributaria.es/AEAT.internet/en_gb/SII.html) system.
+The **ClaveRegimenEspecialOTrascendencia** (**Special scheme code**) additional field is automatically defined by the system for message items of the **FacturasСliente** and **FacturasProveedores** types. For the list of values that can be set for **ClaveRegimenEspecialOTrascendencia**, see the [official documentation for the SII](https://sede.agenciatributaria.gob.es/Sede/iva/suministro-inmediato-informacion.html) system.
 
 According to the official documentation for the SII system, the following values are available for the **ClaveRegimenEspecialOTrascendencia** additional field as part of the predefined setup of electronic messages.
 
