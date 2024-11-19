@@ -38,7 +38,7 @@ The **Graphical planning** visual streamlines the process of adjusting values in
 
 ### Prerequisites
 
-**All dimension fields must be included in the filters section.** For the Graphical planning visual to work correctly, every dimension field that is used in external slicers or filters must also be added to the **Filters** field of the visual. This setup ensures that the visual receives the complete list of dimension values, including those that are affected by slicers. Therefore, it helps maintain consistency during data manipulation.
+**All dimension fields must be included in the filters section.** For the Graphical planning visual to work correctly, every dimension field that is used in external slicers or filters must also be added to the **Filters** field of the visual. This setup ensures that the visual receives the complete list of dimension values, including dimension values that are affected by slicers. Therefore, it helps maintain consistency during data manipulation.
 
 #### Impact of missing dimensions
 
