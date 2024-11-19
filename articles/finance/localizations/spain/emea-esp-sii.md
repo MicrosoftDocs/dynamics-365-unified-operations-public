@@ -75,7 +75,7 @@ Electronic message functionality is provided to maintain the different processes
 The process of setting up the electronic message functionality to interoperate with the SII system has many steps. Because the names of some predefined entities are used in the ER configurations, it's important that you use a set of predefined values that are delivered in a package of data entities for the related tables, and that you import the ER configurations before you import the data entities.
 
 1.  In [Microsoft Dynamics Lifecycle Service (LCS)](https://lcs.dynamics.com/v2), go to the Shared asset library, and select the **Data package** asset type.
-2.  In the list of data package files, find and download **ES SII setup.zip**.
+2.  In the list of data package files, find and download the latest version of the **ES SII setup** zip archive. For example, it's titled **ES SII setup v13 ID671842** as of November, 2024.
 
 ![LCS Shared asset library.](../media/emea-esp-sii-data-package-file.png)
 
