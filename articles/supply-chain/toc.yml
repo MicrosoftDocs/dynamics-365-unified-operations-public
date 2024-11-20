@@ -2297,7 +2297,7 @@
       items:
       - name: Unified pricing management module overview
         href: unified-pricing-management/upm-pricing-management-overview.md
-      - name: Turn on the Unified pricing management module module for your system
+      - name: Turn on the Unified pricing management module for your system
         href: unified-pricing-management/upm-pricing-management-enable.md
       - name: Price attributes
         items:
