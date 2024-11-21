@@ -4,7 +4,7 @@ description: Access an illustration of a quick configuration example of budget p
 author: jchrist
 ms.author: jchrist
 ms.topic: article
-ms.date: 06/25/2018
+ms.date: 11/21/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -93,6 +93,11 @@ Budget planning uses special security policies to configure access to budget pla
 
 >[!Important]
 >Make sure you are in DEMF legal entity context when performing this task, as Organizational security is applied per legal entity.
+>The budget plan uses role-based security. To view the **Budget plan** page, a user must have one of the following roles:
+> •	Budget clerk
+>•	Budget contributor
+>•	Budget manager
+
 
 ### Task 3: Create scenarios
 3.1. Go to **Budgeting** > **Setup** > **Budget planning** > **Budget planning configuration**. In the **Scenarios** page, note the scenarios we are going to use further in this lab: Previous year actuals and Budgeted. 
