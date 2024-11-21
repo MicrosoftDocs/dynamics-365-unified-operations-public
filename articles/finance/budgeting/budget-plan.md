@@ -94,9 +94,9 @@ Budget planning uses special security policies to configure access to budget pla
 >[!Important]
 > Make sure you are in DEMF legal entity context when performing this task, as Organizational security is applied per legal entity.
 > The budget plan uses role-based security. To view the **Budget plan** page, a user must have one of the following roles:
-> •	Budget clerk
-> •	Budget contributor
-> •	Budget manager
+> * Budget clerk
+> * Budget contributor
+> * Budget manager
 
 
 ### Task 3: Create scenarios
