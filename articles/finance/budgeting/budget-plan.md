@@ -92,11 +92,11 @@ Budget planning uses special security policies to configure access to budget pla
 2.5. Select **Grant access to specific organizations**. Pick the Organizational hierarchy created in the first step. Pick Finance node, and click **Grant with children**. 
 
 >[!Important]
->Make sure you are in DEMF legal entity context when performing this task, as Organizational security is applied per legal entity.
->The budget plan uses role-based security. To view the **Budget plan** page, a user must have one of the following roles:
+> Make sure you are in DEMF legal entity context when performing this task, as Organizational security is applied per legal entity.
+> The budget plan uses role-based security. To view the **Budget plan** page, a user must have one of the following roles:
 > •	Budget clerk
->•	Budget contributor
->•	Budget manager
+> •	Budget contributor
+> •	Budget manager
 
 
 ### Task 3: Create scenarios
