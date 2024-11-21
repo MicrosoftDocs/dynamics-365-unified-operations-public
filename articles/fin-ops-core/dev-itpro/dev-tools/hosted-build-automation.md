@@ -1,7 +1,7 @@
 ---
 title: Build automation that uses Microsoft-hosted agents and Azure Pipelines
 description: Learn about how you can automate the process of building X++ on any agents in Microsoft Azure DevOps, including prerequisites.
-author: josaw1
+author: dedmond83
 ms.author: josaw
 ms.topic: article
 ms.date: 09/29/2023
@@ -111,21 +111,21 @@ Use the following steps to create a build pipeline:
 > - Disable creation of classic build pipelines
 > - Disable creation of classic release pipelines
 3. The imported pipeline automatically opens. Under the pipeline settings, name your pipeline, set the Agent pool, and set the Agent Specification to windows-latest.
-4. Click on Get sources and set the source to be TFVC. This opens the Workspace mappings section. For the Server path, click on the ellipses button and choose the folder that contains the Metadata and Projects folders. For example, $/<RepoName>/Trunk/Main.
+4. Click **Get sources** and set the source to be TFVC. This opens the Workspace mappings section. For the Server path, click on the ellipses button and choose the folder that contains the Metadata and Projects folders. For example, $/<RepoName>/Trunk/Main.
 5. Click on the Variables tab and confirm the NugetConfigPath points to the location of the in your D365 Finance and Operations repository. For example, $(Build.SourcesDirectory)\Projects.
 6. In the Build solution task, set your Visual Studio solution to Visual Studio 2022 or to Latest.
 7. Save the pipeline.
 ### Creating a basic build pipeline manually
 
 A basic pipeline for compiling X++ and creating a deployable package requires several steps.  The pipeline should include a versioning step and a packaging step. 
-Before you can add the necessary steps to a pipeline to create a deployable package for D365 Dynamics and operations, the [Dynamics 365 finance and operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps organization. For information about how to install an extension for an organization, see the [Azure DevOps documentation](/azure/devops/marketplace/install-extension).
+Before you can add the necessary steps to a pipeline to create a deployable package for Dynamics 365 finance and operations, the [Dynamics 365 finance and operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps organization. For information about how to install an extension for an organization, see the [Azure DevOps documentation](/azure/devops/marketplace/install-extension).
 The following lists the six tasks that need to be added to the pipeline agent job.
-1. [Install the NuGet packages](#installnuget)
-2. [Update the model versions](#updatemodel).
-3. [Build the solution or projects](#buildsolutions).
-4. [Install NuGet 3.3.0 or earlier on the agent](#installnuget3)
-5. [Create the deployable package ](#createpackage)
-6. [Publish the deployable package](#publishpackage)
+1. [Install the NuGet packages](#”installnuget”)
+2. [Update the model versions](#”updatemodel”).
+3. [Build the solution or projects](#”buildsolutions”).
+4. [Install NuGet 3.3.0 or earlier on the agent](#”installnuget3”)
+5. [Create the deployable package ](#”createpackage”)
+6. [Publish the deployable package](#”publishpackage”)
 #### <a name=”installnuget”></a>Task 1. Install the NuGet packages 
 You can use the NuGet task and change to a custom command in the task properties to install the NuGet packages. The custom command should look like this:
 ```dos
