@@ -4,7 +4,7 @@ description: Learn about the Accounts payable home page, including overviews on 
 author: sunfzam
 ms.author: twheeloc
 ms.topic: conceptual
-ms.date: 03/13/2024
+ms.date: 11/21/2024
 ms.reviewer: twheeloc
 ms.collection: get-started
 audience: Application User
