@@ -4,8 +4,8 @@ description: Learn about how you can automate the process of building X++ on any
 author: dedmond83
 ms.author: josaw
 ms.topic: article
-ms.date: 09/29/2023
-ms.reviewer: johnmichalak
+ms.date: 11/22/2023
+ms.reviewer: twheeloc
 audience: Developer
 ms.search.region: Global
 ms.search.validFrom: 2020-03-05
