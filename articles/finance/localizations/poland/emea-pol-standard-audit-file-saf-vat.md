@@ -49,8 +49,6 @@ The version description usually includes the number of the Microsoft Knowledge B
 
 > [!IMPORTANT]
 > After all the ER configurations from the previous table are imported, set the **Default for model mapping** option to **Yes** for the **Standard Audit File model mapping** configuration.
->
-> ![Default for model mapping option set to Yes for the SAF-T General model mapping configuration.](../media/dk-saf-t-default-model-mapping.png)
 
 ### <a id="er-format-setup"></a> Set up Electronic reporting format in General ledger parameters
 
