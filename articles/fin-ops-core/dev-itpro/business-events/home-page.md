@@ -141,7 +141,7 @@ The integration requirements and integration solution design for implementations
 - Power Automate can directly subscribe to business events.
 
 ## Idempotency
-Business events enable idempotent behavior on the consuming side by having a control number in the payload. The control number is an upwardly increasing number, which can be tracked by the consuming application to detect duplication and/or out of order delivery. The control number cannot be misread as the sequence number because the control number cannot be sequential. There can be gaps in the numbering space.
+Business events enable idempotent behavior on the consuming side by having a control number in the payload. The control number is a unique number, which can be tracked by the consuming application to detect duplicate delivery. The control number cannot be misread as the sequence number because the control number cannot be sequential. There can be gaps in the numbering space.
 
 ## Filtering in Azure Event Grid and Azure Service Bus
 Azure Service Bus and Azure Event Grid support subscribing to topics by
