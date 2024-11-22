@@ -28,6 +28,8 @@ Because notifications aren't shown when Planning Optimization is updated in your
 
 | Changes | Feature management details | Release dates |
 |---|---|---|
+| <p>General performance, quality, and stability improvements.</p> <p>Support for dimension-based configuration.</p> <p>Support for reducing demand and supply forecast in the current period by invoiced and delivered dales orders using "Transactions reduction key.</p>| No feature management required. Features required | November  8-16, 2024 |
+| <p>General performance, quality, and stability improvements.</p> | No feature management required | October  1-8, 2024 |
 | <p>General performance, quality, and stability improvements.</p> | No feature management required | October 12–19, 2023 |
 | <p>Positive days support.</p><p>General performance, quality, and stability improvements.</p> | No feature management required | October 2–6, 2023 |
 | <p>General performance, quality, and stability improvements.</p> | No feature management required | September 20–22, 2023 |
