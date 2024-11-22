@@ -3790,8 +3790,20 @@
                       href: localizations/poland/emea-pol-intrastat.md
                     - name: Set up number sequences by warehouse
                       href: localizations/poland/emea-pol-number-sequence-warehouses.md
-                    - name: Standard audit file
-                      href: localizations/poland/emea-pol-standard-audit-file-saf.md
+                    - name: Standard audit file (JPK)
+                      items:
+                        - name: Standard audit file (JPK) overview
+                          href: localizations/poland/emea-pol-standard-audit-file-saf.md
+                        - name: SAF Accounting Books Income Tax - JPK_KR_PD
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-pd.md
+                        - name: SAF Bank statement file - JPK_WB
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-wb.md
+                        - name: SAF Inventory file - JPK_MAG
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-mag.md
+                        - name: SAF VAT sales and purchase register - JPK_VAT
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-vat.md
+                        - name: SAF VAT invoices file - JPK_FA
+                          href: localizations/poland/emea-pol-standard-audit-file-saf-fa.md
                     - name: Tax interest and free-hand interest
                       href: localizations/poland/emea-pol-interest-calculation.md
                     - name: Turnover balances statement
