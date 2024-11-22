@@ -25,11 +25,37 @@ Users in legal entities in Poland can generate a SAF VAT invoices file - JPK_FA 
 
 Before you can generate a SAF VAT invoices file, you must complete the following setup.
 
-1. [Set up sales tax authorities](#tax-authorities)
-2. [Set up sales tax reporting codes](#tax-codes)
-3. [Import Electronic reporting configurations](#er-import)
-4. [Set up Electronic reporting format in General ledger parameters](#er-format-setup)
+1. [Import Electronic reporting configurations](#er-import)
+2. [Set up Electronic reporting format in General ledger parameters](#er-format-setup)
+3. [Set up sales tax authorities](#tax-authorities)
+4. [Set up sales tax reporting codes](#tax-codes)
 5. [Configure Application-specific parameters for the format of the report](#asp-setup)
+
+### <a id="er-import"></a> Import Electronic reporting configurations
+
+In Finance, import the following versions or later of these Electronic reporting (ER) configurations from Dataverse.
+
+For more information about how to import ER configurations, see [Import Electronic reporting (ER) configurations from Dataverse](../../localizations/global/workspace/gsw-import-er-config-dataverse.md).
+
+| ER configuration name       | Type          | Description |
+|-----------------------------|---------------|-------------|
+| Standard Audit File (SAF-T) | Model         | The common data model for different audit reports. |
+| Standard Audit File model mapping | Model mapping | The model mapping that provides general source mapping for several electronic reports for Poland. |
+| SAF Poland                  | Format        | The XML format that represents a parent format for several JPK formats for Poland. |
+| VAT Invoices (PL)           | Format        | VAT Invoices SAF-T for Poland, JPK_FA. |
+
+Import the most recent versions of the configurations. 
+The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version.
+
+> [!IMPORTANT]
+> After all the ER configurations from the previous table are imported, set the **Default for model mapping** option to **Yes** for the **Standard Audit File model mapping** configuration.
+>
+> ![Default for model mapping option set to Yes for the SAF-T General model mapping configuration.](../media/dk-saf-t-default-model-mapping.png)
+
+### <a id="er-format-setup"></a> Set up Electronic reporting format in General ledger parameters
+
+1. Go to **General ledger** > **Ledger setup** > **General ledger parameters**.
+2. On the **Standard Audit File for Tax (SAT-T)** tab, in the **SAF VAT invoices** field, select the ER format, **VAT Invoices (PL)**. 
 
 ### <a id="tax-authorities"></a> Set up sales tax authorities
 
@@ -524,32 +550,6 @@ If you have to adapt the configuration to another set of reporting codes, use th
 7. Under the **Invoices** node, find the calculated fields **list\_P\_** and update their formulas with your reporting codes using Formula Designer. The Formula designer window shows the data model where you can select fields or record lists and in the right side all the functions that you may implement. For more information about Format designer, see [Formula designer in Electronic reporting](../../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md). The values for tags under the **StawkiPodatku** tag are constants. 
 8. Select the value node (string) for each tag under the **StawkiPodatku** tag and set up its value in the **Value** field on the **Format** tab on the right side of the **Designer** page. No other modifications in the format are needed. 
 9. Save the format, close, and complete the format by selecting **Change status** > **Complete** on the versions menu on **Versions** FastTab on **Configurations**.
-
-### <a id="er-import"></a> Import Electronic reporting configurations
-
-In Finance, import the following versions or later of these Electronic reporting (ER) configurations from Dataverse.
-
-For more information about how to import ER configurations, see [Import Electronic reporting (ER) configurations from Dataverse](../../localizations/global/workspace/gsw-import-er-config-dataverse.md).
-
-| ER configuration name       | Type          | Description |
-|-----------------------------|---------------|-------------|
-| Standard Audit File (SAF-T) | Model         | The common data model for different audit reports. |
-| Standard Audit File model mapping | Model mapping | The model mapping that provides general source mapping for several electronic reports for Poland. |
-| SAF Poland                  | Format        | The XML format that represents a parent format for several JPK formats for Poland. |
-| VAT Invoices (PL)           | Format        | VAT Invoices SAF-T for Poland, JPK_FA. |
-
-Import the most recent versions of the configurations. 
-The version description usually includes the number of the Microsoft Knowledge Base (KB) article that explains the changes that were introduced in the configuration version.
-
-> [!IMPORTANT]
-> After all the ER configurations from the previous table are imported, set the **Default for model mapping** option to **Yes** for the **Standard Audit File model mapping** configuration.
->
-> ![Default for model mapping option set to Yes for the SAF-T General model mapping configuration.](../media/dk-saf-t-default-model-mapping.png)
-
-### <a id="er-format-setup"></a> Set up Electronic reporting format in General ledger parameters
-
-1. Go to **General ledger** > **Ledger setup** > **General ledger parameters**.
-2. On the **Standard Audit File for Tax (SAT-T)** tab, in the **SAF VAT invoices** field, select the ER format, **VAT Invoices (PL)**. 
 
 ### <a id="asp-setup"></a> Configure Application-specific parameters for the format of the report
 
