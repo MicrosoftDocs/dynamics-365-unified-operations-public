@@ -68,9 +68,9 @@ Data events for update operations are inherently more expensive to process than 
 
 ## Limitations
 
-Data events are not supported for updates to virtual fields. Modify data events are triggered by update operations on the underlying tables of an entity. Because virtual fields are values calculated in X++ code, any change in the value doesn't result in any data operations against the physical tables, and won't trigger a data event.
-
+1. Data events are not supported for updates to virtual fields. Modify data events are triggered by update operations on the underlying tables of an entity. Because virtual fields are values calculated in X++ code, any change in the value doesn't result in any data operations against the physical tables, and won't trigger a data event.
 For more information on virtual fields, see [Computed columns and virtual fields in data entities](../data-entities/data-entity-computed-columns-virtual-fields.md).
+2. The data events that occur in Finance and Operations are processed asynchronously by multiple systems to deliver them to the target endpoint. Therefore, the order in which they are emitted in Finance and Operations is not guaranteed to be preserved.
 
 [!include[banner](../includes/banner.md)]
 
