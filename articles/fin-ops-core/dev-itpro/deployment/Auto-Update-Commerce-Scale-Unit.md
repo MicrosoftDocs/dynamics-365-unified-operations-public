@@ -18,9 +18,9 @@ ms.dyn365.ops.version: 8
 
 This feature currently applies to cloud-hosted Commerce Scale Unit. Self-hosted Commerce Scale Unit is not included and must be self-updated.
 
-Auto-update for Commerce Scale Unit enables [One Version](../lifecycle-services/oneversion-overview.md) auto-update. All existing One Version processes, policies, and schedules apply to Auto-update for Commerce Scale Unit.
+Commerce Scale Unit updates are a part of [One Version](../lifecycle-services/oneversion-overview.md) auto-update. All One Version processes, policies, and schedules apply to auto-update for Commerce Scale Unit.
 
-[Service update configurations](../lifecycle-services/configure-service-updates.md) for environments also apply to Commerce Scale Units. To [pause service updates](../lifecycle-services/pause-service-updates.md), Commerce Scale Units must be on the current release (N) or the previous one (N-1). Releases older than N-1 must be updated to be compliant. 
+[Auto-update configurations](../lifecycle-services/configure-service-updates.md) for environments also apply to Commerce Scale Units. To [pause auto-updates](../lifecycle-services/pause-service-updates.md), Commerce Scale Units must be on the current release (N) or the previous one (N-1). Releases older than N-1 must be updated to be compliant. 
 
 ## Limitations
 The following limitations currently exist and are planned to be resolved in upcoming updates:
