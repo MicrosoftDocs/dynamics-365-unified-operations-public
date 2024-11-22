@@ -225,6 +225,9 @@ To ensure backward compatibility, the following behavior must be understood.
 > [!NOTE]
 > To ensure uninterrupted functionality, it is important to understand the backward-compatibility behavior described above before you enable security on business events.
 
+### Limitations
+
+The Business events that occur in Finance and Operations are processed asynchronously by multiple systems to deliver them to the target endpoint. Therefore, the order in which they are emitted in Finance and Operations is not guaranteed to be preserved.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
