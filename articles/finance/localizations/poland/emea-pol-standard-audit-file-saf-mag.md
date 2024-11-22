@@ -30,7 +30,7 @@ Before you can generate a SAF Inventory file, you must complete the following se
 
 ### <a id="er-import"></a> Import Electronic reporting configurations
 
-In Finance, import the following versions or later of these Electronic reporting (ER) configurations from Dataverse.
+In Finance, import the following Electronic reporting (ER) configurations from Dataverse.
 
 For more information about how to import ER configurations, see [Import Electronic reporting (ER) configurations from Dataverse](../../localizations/global/workspace/gsw-import-er-config-dataverse.md).
 
