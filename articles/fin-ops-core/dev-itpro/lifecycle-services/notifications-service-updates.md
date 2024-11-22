@@ -31,6 +31,13 @@ Here are the different types of notifications that you will receive:
     - **Notification bar on the environment details page:** A notification that appears on the environment details page in LCS informs the customer about the upcoming update.
     - **Upcoming update reflects the update:** On the environment details page in LCS, select **Maintain &gt; Upcoming Update** to open a dialog box that contains details about the upcoming update.
 
+    > [!IMPORTANT]
+    > Notifications for Product Quality Updates (PQU) are not delivered this way. For details on the PQUs see the following:
+    > 
+    > [Proactive quality updates overview](../../quality-updates.md)
+    > 
+    > [Release schedule for proactive quality updates](../../quality-updates-faq.md)
+
 - **Notification that is sent one hour before the update:** One hour before the start of the downtime window, users in the application receive a notification. This notification asks users to save their work, because the environment will be taken down for an update.
 - **Notification that is sent when the update is completed:** After Microsoft has finished updating your configured environment, it notifies you by email about the outcome of the update. This email is always sent, regardless of whether the update was successfully applied. It's sent to project owners, environment managers, and users who are listed as the additional stakeholders for the environment. If Microsoft can't start the update for some reason, the email includes a reason to explain why the update wasn't started.
 
