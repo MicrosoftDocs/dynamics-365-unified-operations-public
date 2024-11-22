@@ -4,7 +4,7 @@ description: Learn how to use Microsoft 365 Copilot to chat with finance and ope
 author: RamaKrishnamoorthy
 ms.author: ramasri
 ms.topic: conceptual
-ms.date: 06/13/2024
+ms.date: 11/23/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 ms.collection:
