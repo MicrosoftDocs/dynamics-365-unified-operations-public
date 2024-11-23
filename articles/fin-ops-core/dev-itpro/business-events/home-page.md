@@ -62,10 +62,10 @@ The next step is to manage the endpoints.
 
 The **General** tab of the **Business events parameters** page provides general settings that are applied to business events.
 
-- **Retry count** – The number of times that the system will try again to send business events to an endpoint if an error occurs. The default value is **3**.
+- **Retry count** – The number of times that the system try again to send business events to an endpoint if an error occurs. The default value is **3**.
 - **Wait time between retries** – The interval, in milliseconds, between attempts to send a business event to its endpoint. The default value is **1000** milliseconds.
 - **Endpoints allowed per event** – The maximum number of endpoints that can subscribe to the same business event in a legal entity. The default value is **10**.
-- **Key vault secret cache interval** – The number of minutes that the key vault secrets that are used for business events will be cached in memory before they are read and cached again from the configured key vault. The default value is **5** minutes.
+- **Key vault secret cache interval** – The number of minutes that the key vault secrets that are used for business events will be cached in memory before they're read and cached again from the configured key vault. The default value is **5** minutes.
 
 ### Performance
 
@@ -79,17 +79,17 @@ The business events framework has two primary settings that can affect performan
 - **Bundle size** – The number of events to group together at a time for processing by a thread.
 
     - By increasing the number, you produce fewer bundles and reduce the ability to distribute the events to parallel threads.
-    - By decreasing the number, you produce more bundles and increase the ability to distribute the events to parallel threads. However, if you make the number too small, you will cause unnecessary parallelization on small bundles.
+    - By decreasing the number, you produce more bundles and increase the ability to distribute the events to parallel threads. However, if you make the number too small, you cause unnecessary parallelization on small bundles.
 
 ### Event Grid settings
 
 The **Event Grid settings** tab provides options that apply to business event endpoints with an endpoint type of **Azure Event Grid**.
 
-The **Send object in Event Grid data field** toggle controls whether the type of object serialized and sent to the Azure Event Grid endpoint will be a JSON string or an object. By default, the object sent to these endpoints is serialized as a JSON string. Turning on this toggle sends these as an object to the Azure Event Grid endpoints.
+The **Send object in Event Grid data field** toggle controls whether the type of object serialized and sent to the Azure Event Grid endpoint is a JSON string or an object. By default, the object sent to these endpoints is serialized as a JSON string. Turning on this toggle sends these as an object to the Azure Event Grid endpoints.
 
 ### HTTPS settings
 
-The **HTTP timeout (milliseconds)** toggle controls how long the default HTTPS adapter will wait before timing out a request to an endpoint. The default timeout period is 10 seconds. Entering a value of **0** in the field is an indicator to use the default timeout period.
+The **HTTP timeout (milliseconds)** toggle controls how long the default HTTPS adapter waits before timing out a request to an endpoint. The default timeout period is 10 seconds. Entering a value of **0** in the field is an indicator to use the default timeout period.
 
 ## Activating business events
 
@@ -97,11 +97,11 @@ Business events in the business event catalog aren't active by default. From the
 
 ![Activating a business event.](../media/businesseventsactivation.png)
 
-Business events can be activated either in all legal entities or in specific legal entities. If you leave the **Legal entity** field blank, the selected business events will be activated in *all* legal entities. If a business event is required only for specific legal entities, it must be configured separately for each legal entity.
+Business events can be activated either in all legal entities or in specific legal entities. If you leave the **Legal entity** field blank, the selected business events are activated in *all* legal entities. If a business event is required only for specific legal entities, it must be configured separately for each legal entity.
 
 Endpoints must be assigned to the business events that are activated. See [Manage business event endpoints](managing-business-event-endpoints.md) for additional information on setting up and managing endpoints.
 
-When business events occur as business processes are run, the system will do outbound processing only for business events that have been activated.
+When business events occur as business processes are run, the system does outbound processing only for business events that are activated.
 
 After business events are activated, they appear on the **Active events** tab.
 
@@ -115,7 +115,7 @@ After business events are inactivated, they appear on the **Inactive events** ta
 
 Business events can be inactivated when processing of business events must be paused for a period because of specific system maintenance activities in the integration landscape.
 
-When business requirements change, some business events might no longer be required. In this case, you can inactivate them instead of deleting them from the list of active events. This approach is useful if the history of errors for the business events must be preserved. Inactivated business events can be deleted later, when there is no longer a business need to keep them inactivated.
+When business requirements change, some business events might no longer be required. In this case, you can inactivate them instead of deleting them from the list of active events. This approach is useful if the history of errors for the business events must be preserved. Inactivated business events can be deleted later, when there's no longer a business need to keep them inactivated.
 
 ## Errors
 
@@ -141,7 +141,7 @@ The integration requirements and integration solution design for implementations
 - Power Automate can directly subscribe to business events.
 
 ## Idempotency
-Business events enable idempotent behavior on the consuming side by having a control number in the payload. The control number is a unique number, which can be tracked by the consuming application to detect duplicate delivery. The control number cannot be misread as the sequence number because the control number cannot be sequential. There can be gaps in the numbering space.
+Business events enable idempotent behavior on the consuming side by having a control number in the payload. The control number is a unique number, which can be tracked by the consuming application to detect duplicate delivery. The control number can't be misread as the sequence number because the control number can't be sequential. There can be gaps in the numbering space.
 
 ## Filtering in Azure Event Grid and Azure Service Bus
 Azure Service Bus and Azure Event Grid support subscribing to topics by
@@ -154,7 +154,7 @@ this information to subscribe to more specific topics as required.
 -   **Category** – This is the business event category as displayed in the
     business event catalog. This is useful as a filter criterion when a common
     article is used for receiving business events from multiple categories and
-    subscribers want to only receive business events for the category that they are
+    subscribers want to only receive business events for the category that they're
     interested in.
 
 -   **Business event ID** – This is the class name of the business event
@@ -206,7 +206,7 @@ Role-based security for business events must be enabled via Feature management.
 
 ### Subscribe to business events from service
 
-Users having access to the privilege **Subscribe to business events from service** via their roles will be able to only see and subscribe to business events that have been assigned to their roles, as described below. The organizational assignments that are done, if any, as part of role-based security are honored in the context of business events by letting users to only subscribe
+Users having access to the privilege **Subscribe to business events from service** via their roles are able to only see and subscribe to business events that have been assigned to their roles, as described below. The organizational assignments that are done, if any, as part of role-based security are honored in the context of business events by letting users to only subscribe
 to business events in the organizations to which they have access to via their roles. This behavior is effective using any service calls like from Power Automate or Logic Apps.
 
 ### Backward compatibility
@@ -215,11 +215,11 @@ To ensure backward compatibility, the following behavior must be understood.
 
 -   Role-based security for business events will be disabled by default.
 
--   Even if the feature is enabled in Feature management, role-based security will not take effect.
+-   Even if the feature is enabled in Feature management, role-based security won't take effect.
 
 -   Role-based security must be explicitly enabled in the business events catalog via the **Security** menu.
 
--   After role-based security is enabled completely, security will be enforced henceforth. This will mean that any user with an administration role will not notice any change in behavior. However, any non-admin users either will see only business events that their roles were assigned to in the business events catalog security configuration or won't see any business events because their roles were not assigned to any business events.
+-   After role-based security is enabled completely, security will be enforced henceforth. This means that any user with an administration role won't notice any change in behavior. However, any non-admin users either will see only business events that their roles were assigned to in the business events catalog security configuration or won't see any business events because their roles weren't assigned to any business events.
 
 
 > [!NOTE]
@@ -227,7 +227,7 @@ To ensure backward compatibility, the following behavior must be understood.
 
 ### Limitations
 
-The Business events that occur in Finance and Operations are processed asynchronously by multiple systems to deliver them to the target endpoint. Therefore, the order in which they are emitted in Finance and Operations is not guaranteed to be preserved.
+The Business events that occur in Finance and Operations are processed asynchronously by multiple systems to deliver them to the target endpoint. Therefore, the order in which they're emitted in Finance and Operations isn't guaranteed to be preserved.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 

@@ -33,7 +33,7 @@ To access the data event catalog, select the **Data event catalog** tab on the *
 
 By default, data events are inactive. To activate a data event from the data event catalog, select it in the list, and then select **Activate**.
 
-Data events can be activated either in all legal entities or in specific legal entities. In the **Configure new data event** dialog box, in the **Legal entity** field, select the legal entity that you want to activate the data events in. If you leave the **Legal entity** field blank, the selected data events will be activated in all legal entities. If a data event is required in multiple specific legal entities, it must be configured separately for each legal entity.
+Data events can be activated either in all legal entities or in specific legal entities. In the **Configure new data event** dialog box, in the **Legal entity** field, select the legal entity that you want to activate the data events in. If you leave the **Legal entity** field blank, the selected data events are activated in all legal entities. If a data event is required in multiple specific legal entities, it must be configured separately for each legal entity.
 
 Only company-specific data events can be configured for specific legal entities. When you configure data events that aren't company-specific, the **Legal entity** field isn't editable, and the data events are enabled for all legal entities.
 
@@ -53,24 +53,24 @@ When data events are no longer required to meet business requirements, you can d
 
 ## Data event schema
 
-On the **Data event catalog** tab of the **Business events** page you are able to see the entity properties that are included in the event schema. These fields are the properties that make up the virtual table on which the data event is based. The information that is shown includes the field name and label.
+On the **Data event catalog** tab of the **Business events** page, you are able to see the entity properties that are included in the event schema. These fields are the properties that make up the virtual table on which the data event is based. The information that is shown includes the field name and label.
 
 > [!NOTE]
 > Any datetime properties in the payload of a data event that have a NULL value will be removed from the schema of the event sent to subscribed service endpoints. 
 
-The **Data event catalog** doesn't provide the same capability for downloading the event schema that is available for business events on the **Business event catalog** tab of the page. If you need the JavaScript Object Notation (JSON) schema for an event, for example when external integration systems require the schema of the payload for a business event during development, you can construct the schema using the field information provided. The [RemoteExecutionContext Class](/dotnet/api/microsoft.xrm.sdk.remoteexecutioncontext) defines the contextual information sent to the configured service endpoint at run-time. The entity fields will be included in the schema in the **Target** and **PreImage** properties of the [InputParameters](/dotnet/api/microsoft.xrm.sdk.remoteexecutioncontext.inputparameters).
+The **Data event catalog** doesn't provide the same capability for downloading the event schema that is available for business events on the **Business event catalog** tab of the page. If you need the JavaScript Object Notation (JSON) schema for an event, for example when external integration systems require the schema of the payload for a business event during development, you can construct the schema using the field information provided. The [RemoteExecutionContext Class](/dotnet/api/microsoft.xrm.sdk.remoteexecutioncontext) defines the contextual information sent to the configured service endpoint at run-time. The entity fields are included in the schema in the **Target** and **PreImage** properties of the [InputParameters](/dotnet/api/microsoft.xrm.sdk.remoteexecutioncontext.inputparameters).
 
 ## Performance benchmarks
 
-The data events functionality currently supports a burst rate of 5,000 events per five-minute period, up to 50,000 events per hour, across all entities for the environment. Event loads above these thresholds may encounter performance degradation in environment processing. There are no limits in place to explicitly throttle events, and any events above the supported thresholds will still be sent, but it may slow the performance of the environment. 
+The data events functionality currently supports a burst rate of 5,000 events per five-minute period, up to 50,000 events per hour, across all entities for the environment. Event loads above these thresholds might encounter performance degradation in environment processing. There are no limits in place to explicitly throttle events, and any events above the supported thresholds will be sent, but it might slow the performance of the environment. 
 
-Data events for update operations are inherently more expensive to process than data events for create and delete operations in finance and operations. If your active data events are for update operations, you may see environment performance degrade more quickly when exceeding the supported thresholds.
+Data events for update operations are inherently more expensive to process than data events for create and delete operations in finance and operations. If your active data events are for update operations, you might see environment performance degrade more quickly when exceeding the supported thresholds.
 
 ## Limitations
 
-1. Data events are not supported for updates to virtual fields. Modify data events are triggered by update operations on the underlying tables of an entity. Because virtual fields are values calculated in X++ code, any change in the value doesn't result in any data operations against the physical tables, and won't trigger a data event.
+1. Data events aren't supported for updates to virtual fields. Modify data events are triggered by update operations on the underlying tables of an entity. Because virtual fields are values calculated in X++ code, any change in the value doesn't result in any data operations against the physical tables, and won't trigger a data event.
 For more information on virtual fields, see [Computed columns and virtual fields in data entities](../data-entities/data-entity-computed-columns-virtual-fields.md).
-2. The Data events that occur in Finance and Operations are processed asynchronously by multiple systems to deliver them to the target endpoint. Therefore, the order in which they are emitted in Finance and Operations is not guaranteed to be preserved.
+2. The Data events that occur in Finance and Operations are processed asynchronously by multiple systems to deliver them to the target endpoint. Therefore, the order in which they're emitted in Finance and Operations isn't guaranteed to be preserved.
 
 [!include[banner](../includes/banner.md)]
 
