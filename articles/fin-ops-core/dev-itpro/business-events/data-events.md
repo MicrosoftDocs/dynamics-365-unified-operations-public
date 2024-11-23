@@ -39,7 +39,7 @@ Only company-specific data events can be configured for specific legal entities.
 
 To activate a data event, select a configured endpoint. For information about how to configure endpoints business events and data events, see [Manage business event endpoints](managing-business-event-endpoints.md).
 
-When you activate a data event, it's added to the list on the **Active data events** tab of the **Business events** page and becomes available for subscription through the selected endpoint.
+When you activate a data event, it adds to the list on the **Active data events** tab of the **Business events** page and becomes available for subscription through the selected endpoint.
 
 ![Configure new data event dialog box.](../media/businessevents_activatedataevent.png)
 
@@ -53,7 +53,7 @@ When data events are no longer required to meet business requirements, you can d
 
 ## Data event schema
 
-On the **Data event catalog** tab of the **Business events** page, you are able to see the entity properties that are included in the event schema. These fields are the properties that make up the virtual table on which the data event is based. The information that is shown includes the field name and label.
+On the **Data event catalog** tab of the **Business events** page, you're able to see the entity properties that are included in the event schema. These fields are the properties that make up the virtual table on which the data event is based. The information that is shown includes the field name and label.
 
 > [!NOTE]
 > Any datetime properties in the payload of a data event that have a NULL value will be removed from the schema of the event sent to subscribed service endpoints. 
@@ -62,15 +62,15 @@ The **Data event catalog** doesn't provide the same capability for downloading t
 
 ## Performance benchmarks
 
-The data events functionality currently supports a burst rate of 5,000 events per five-minute period, up to 50,000 events per hour, across all entities for the environment. Event loads above these thresholds might encounter performance degradation in environment processing. There are no limits in place to explicitly throttle events, and any events above the supported thresholds will be sent, but it might slow the performance of the environment. 
+The data events functionality currently supports a burst rate of 5,000 events per five-minute period, up to 50,000 events per hour, across all entities for the environment. Event loads above these thresholds might encounter performance degradation in environment processing. There are no limits in place to explicitly throttle events, and any events above the supported thresholds would still be sent, but it might slow the performance of the environment. 
 
 Data events for update operations are inherently more expensive to process than data events for create and delete operations in finance and operations. If your active data events are for update operations, you might see environment performance degrade more quickly when exceeding the supported thresholds.
 
 ## Limitations
 
-1. Data events aren't supported for updates to virtual fields. Modify data events are triggered by update operations on the underlying tables of an entity. Because virtual fields are values calculated in X++ code, any change in the value doesn't result in any data operations against the physical tables, and won't trigger a data event.
+1. Data events aren't supported for updates to virtual fields. Modify data events are triggered by update operations on the underlying tables of an entity. Because virtual fields are values calculated in X++ code, any change in the value doesn't result in any data operations against the physical tables, and doesn't trigger a data event.
 For more information on virtual fields, see [Computed columns and virtual fields in data entities](../data-entities/data-entity-computed-columns-virtual-fields.md).
-2. The Data events that occur in Finance and Operations are processed asynchronously by multiple systems to deliver them to the target endpoint. Therefore, the order in which they're emitted in Finance and Operations isn't guaranteed to be preserved.
+2. The Data events that occur in Finance and Operations are processed asynchronously across multiple systems to deliver them to the target endpoint. Therefore, the order in which they're emitted in Finance and Operations isn't guaranteed to preserve the order.
 
 [!include[banner](../includes/banner.md)]
 

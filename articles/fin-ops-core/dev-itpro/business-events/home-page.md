@@ -48,7 +48,7 @@ The business event catalog is built during database synchronization at the time 
 
 ![Business event catalog.](../media/businesseventscatalog.png)
 
-For each business event, the business event catalog shows a description. This description can help you better understand the business event and its context in the business process. The catalog also shows the list of data fields that will be sent out in the event.
+For each business event, the business event catalog shows a description. This description can help you better understand the business event and its context in the business process. The catalog also shows the list of data fields that is sent out in the event.
 
 In scenarios where external integration systems require the schema of the payload for a business event during development, you can select **Download schema** to download the JavaScript Object Notation (JSON) schema.
 
@@ -62,10 +62,10 @@ The next step is to manage the endpoints.
 
 The **General** tab of the **Business events parameters** page provides general settings that are applied to business events.
 
-- **Retry count** – The number of times that the system try again to send business events to an endpoint if an error occurs. The default value is **3**.
+- **Retry count** – The number of times that the system tries again to send business events to an endpoint if an error occurs. The default value is **3**.
 - **Wait time between retries** – The interval, in milliseconds, between attempts to send a business event to its endpoint. The default value is **1000** milliseconds.
 - **Endpoints allowed per event** – The maximum number of endpoints that can subscribe to the same business event in a legal entity. The default value is **10**.
-- **Key vault secret cache interval** – The number of minutes that the key vault secrets that are used for business events will be cached in memory before they're read and cached again from the configured key vault. The default value is **5** minutes.
+- **Key vault secret cache interval** – The number of minutes that the key vault secrets that are used for business events are cached in memory before they're read and cached again from the configured key vault. The default value is **5** minutes.
 
 ### Performance
 
@@ -85,7 +85,7 @@ The business events framework has two primary settings that can affect performan
 
 The **Event Grid settings** tab provides options that apply to business event endpoints with an endpoint type of **Azure Event Grid**.
 
-The **Send object in Event Grid data field** toggle controls whether the type of object serialized and sent to the Azure Event Grid endpoint is a JSON string or an object. By default, the object sent to these endpoints is serialized as a JSON string. Turning on this toggle sends these as an object to the Azure Event Grid endpoints.
+The **Send object in Event Grid data field** toggle controls whether the type of object serialized and sent to the Azure Event Grid endpoint is a JSON string or an object. By default, the object sent to these endpoints is serialized as a JSON string. Turning on this toggle sends these objects as an object to the Azure Event Grid endpoints.
 
 ### HTTPS settings
 
@@ -99,7 +99,7 @@ Business events in the business event catalog aren't active by default. From the
 
 Business events can be activated either in all legal entities or in specific legal entities. If you leave the **Legal entity** field blank, the selected business events are activated in *all* legal entities. If a business event is required only for specific legal entities, it must be configured separately for each legal entity.
 
-Endpoints must be assigned to the business events that are activated. See [Manage business event endpoints](managing-business-event-endpoints.md) for additional information on setting up and managing endpoints.
+Endpoints must be assigned to the business events that are activated. For more information about setting up and managing endpoints, see [Manage business event endpoints](managing-business-event-endpoints.md). 
 
 When business events occur as business processes are run, the system does outbound processing only for business events that are activated.
 
@@ -107,7 +107,7 @@ After business events are activated, they appear on the **Active events** tab.
 
 ![Active business events.](../media/businesseventsactivetab.png)
 
-From the **Active events** tab, you can inactivate business events. The system won't do outbound processing for inactivated events.
+From the **Active events** tab, you can inactivate business events. The system doesn't perform outbound processing for inactivated events.
 
 After business events are inactivated, they appear on the **Inactive events** tab.
 
@@ -141,7 +141,7 @@ The integration requirements and integration solution design for implementations
 - Power Automate can directly subscribe to business events.
 
 ## Idempotency
-Business events enable idempotent behavior on the consuming side by having a control number in the payload. The control number is a unique number, which can be tracked by the consuming application to detect duplicate delivery. The control number can't be misread as the sequence number because the control number can't be sequential. There can be gaps in the numbering space.
+Business events enable idempotent behavior on the consuming side by having a control number in the payload. The consuming application can use the unique control number to detect duplicate delivery. The control number can't be misread as the sequence number because the control number can't be sequential. There can be gaps in the numbering space.
 
 ## Filtering in Azure Event Grid and Azure Service Bus
 Azure Service Bus and Azure Event Grid support subscribing to topics by
@@ -151,20 +151,20 @@ A business event that is sent to an Azure Service Bus or Azure Event Grid
 has the following fields made available for this purpose. Subscribers can use
 this information to subscribe to more specific topics as required.
 
--   **Category** – This is the business event category as displayed in the
-    business event catalog. This is useful as a filter criterion when a common
+-   **Category** – The business event category shown in the
+    business event catalog. It's useful as a filter when a common
     article is used for receiving business events from multiple categories and
     subscribers want to only receive business events for the category that they're
     interested in.
 
--   **Business event ID** – This is the class name of the business event
-    implementation as displayed in the business event catalog. This uniquely
-    identifies the business event (not the instance of the business event) and
-    thus helps in validation of received business events on the consumer side to
-    ensure the expected business event is what is being received and processed.
+-   **Business event ID** – Business event ID is the class name of the business event
+    implementation shown in the business event catalog. Business event ID uniquely
+    identifies the business event (not the instance of the business event). It
+    helps in validation of received business events on the consumer side to
+    ensure the expected business event is being received and processed.
 
--   **Legal entity** – This is the legal entity in which the business event
-    happened. This is useful information to base the consuming logic on if
+-   **Legal entity** – The legal entity in which the business event
+    happened. Legal entity is useful information to base the consuming logic on if
     the processing and distribution of business events on the consumption side
     must be driven by a legal entity.
 
@@ -180,7 +180,7 @@ Role-based security can be applied to business events to meet the following requ
 | Only certain users must have access to view the business events catalog.                                                                       | **BusinessEventsCatalogView**                 | None                              |
 | Only certain users must have access to activate business events.                                                                               | **BusinessEventsCatalogMaintain**             | None                              |
 | Only certain users must have access to create and manage endpoints.                                                                            | **Business events security privilege**        | **Business events security duty** |
-| Users must only be able to subscribe to business events which they have been granted access to from external applications like Power Automate. | **Subscribe to business events from service** | None                              |
+| Users must only be able to subscribe to business events which they're granted access to from external applications like Power Automate. | **Subscribe to business events from service** | None                              |
 | Only certain users must be able to view the business events security setup.                                                                    | **BusinessEventsCatalogSecuritySetupView**    | None                              |
 | Only certain users must be able to manage business events security.                                                                            | **Maintain business events catalog security** | None                              |
 
@@ -200,26 +200,26 @@ Role-based security for business events must be enabled via Feature management.
 
 5.   The **Security** tab in the catalog is where a business event must be mapped to one or more roles. You must complete the configuration as required.
 
-6.   Enable security by selecting the **Enable** menu button on the **Security** menu on the top navigation pane. An informational message will confirm if security is enabled or disabled.
+6.   Enable security by selecting the **Enable** menu button on the **Security** menu on the top navigation pane. An informational message confirms if security is enabled or disabled.
 
 7.  Modify the necessary security role to add the appropriate privilege or the duty based on security noted in the informational message.
 
 ### Subscribe to business events from service
 
-Users having access to the privilege **Subscribe to business events from service** via their roles are able to only see and subscribe to business events that have been assigned to their roles, as described below. The organizational assignments that are done, if any, as part of role-based security are honored in the context of business events by letting users to only subscribe
+Users having access to the privilege **Subscribe to business events from service** via their roles are able to only see and subscribe to business events that are assigned to their roles, as described below. The organizational assignments that are done, if any, as part of role-based security is honored in the context of business events by letting users to only subscribe
 to business events in the organizations to which they have access to via their roles. This behavior is effective using any service calls like from Power Automate or Logic Apps.
 
 ### Backward compatibility
 
 To ensure backward compatibility, the following behavior must be understood.
 
--   Role-based security for business events will be disabled by default.
+-   Role-based security for business events is disabled by default.
 
--   Even if the feature is enabled in Feature management, role-based security won't take effect.
+-   Even if the feature is enabled in Feature management, role-based security doesn't take effect.
 
 -   Role-based security must be explicitly enabled in the business events catalog via the **Security** menu.
 
--   After role-based security is enabled completely, security will be enforced henceforth. This means that any user with an administration role won't notice any change in behavior. However, any non-admin users either will see only business events that their roles were assigned to in the business events catalog security configuration or won't see any business events because their roles weren't assigned to any business events.
+-   After role-based security is enabled completely, security will be enforced henceforth. It means that any user with an administration role doesn't notice any change in behavior. However, any nonadmin users either see only business events that their roles were assigned to in the business events catalog security configuration or doesn't see any business events because their roles weren't assigned to any business events.
 
 
 > [!NOTE]
@@ -227,7 +227,7 @@ To ensure backward compatibility, the following behavior must be understood.
 
 ### Limitations
 
-The Business events that occur in Finance and Operations are processed asynchronously by multiple systems to deliver them to the target endpoint. Therefore, the order in which they're emitted in Finance and Operations isn't guaranteed to be preserved.
+The Business events that occur in Finance and Operations are processed asynchronously across multiple systems to deliver them to the target endpoint. Therefore, the order in which they're emitted in Finance and Operations isn't guaranteed to preserve the order.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
