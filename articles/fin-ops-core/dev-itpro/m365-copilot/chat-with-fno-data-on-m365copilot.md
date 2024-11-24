@@ -18,6 +18,9 @@ ms.dyn365.ops.version: 10.0.35 PU59
 
 # Chat with finance and operations data on Microsoft 365 Copilot
 
+> [!IMPORTANT]
+> The method outlined in this article for adding the ability to chat with finance and operations data in Microsoft 365 Copilot is no longer applicable or supported. You can now add finance and operations data as a knowledge source to a declarative agent that is published to Microsoft 365 Copilot to enable chat experiences with the data. For more information, see [Chat with finance and operations data](../copilot/chat-with-fno-data.md).
+
 [!include[banner](../includes/banner.md)]
 
 This article explains how to use Microsoft 365 Copilot to chat with finance and operations data through virtual entities in Dataverse.
