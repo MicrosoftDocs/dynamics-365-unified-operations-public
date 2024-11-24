@@ -72,8 +72,6 @@ The page context is the page that's open for the user in the current session, in
 **Variable name:** Global.PA\_Copilot\_ServerForm\_PageContext<br>
 **Type:** Record
 
-> [!NOTE]
-> The fields that provide the current record context are available only in version 10.0.40 and later. These fields include `rootTableName`, `rootTableRecId`, `titleField1Name`, `titleField1Value`, `titleField2Name`, and `titleField2Value`. 
 
 **Properties**
 
