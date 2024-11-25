@@ -81,7 +81,7 @@ set the **Report layout** field to **Default**. Select the same sales tax author
 
 ### <a id="consolidation-accounting-groups"></a> Set up consolidation accounting groups
 
-Depending on business needs of your organization you may need to include following information in `ZOiS` (Trial balance) part of the JPK_KR_PD report.
+Depending on business needs of your organization you may need to include following information in `ZOiS` (Turnover and balance statement) part of the JPK_KR_PD report.
 
 | ZOiS field | Description En | Description PL |
 |-----------|-------------|--------------|
@@ -107,9 +107,9 @@ To prepare your Finance for generating JPK_KR_PD in compliance with the required
 1. Open the **Electronic reporting workspace**, and then, in the configuration tree, select **Standard Audit File (SAF-T) \> JPK_KR_PD XML (PL)**.
 2. On the Action Pane, select **Configurations \> Applications specific parameters \> Setup**.
 3. Select the latest version of the format on the left hand side of **Application specific parameters** page.
-4. On the **Lookups** FastTab, select the lookup field. Detailed description of all the lookup fields of the JPK_KR_PD XML (PL) format are provided further in this topic.
-5. On the **Conditions** FastTab, define the required conditions. Manually specify the values in the **Lookup result** column.
-6. As the last two lines, add lines that have the conditions **Not blank** and **Blank**.
+4. On the **Lookups** FastTab, select the lookup field. Detailed description of all the lookup fields of the JPK_KR_PD XML (PL) format is provided further in this topic.
+5. On the **Conditions** FastTab, define the required conditions and specify the values in the **Lookup result** column.
+6. As the last two lines, add lines that have the conditions **Not blank** and **Blank** where applicable.
 7. Select the next lookup field from the list on the **Lookups** FastTab and repeat the steps 5 and 6.
 8. When all the lookup fields are set up, in the **State** field, select **Completed**, and save the configuration.
 
@@ -127,9 +127,11 @@ The following condition is available for mapping in this lookup field.
 |-----------|-----------|
 | Original Document Type (OriginalDocumentType) | Select original document types that are used in your busines oprations and and specify in the **Lookup result** field how they should be reported in JPK_KR_PD \> Dziennik.  |
 
+As the last two lines, add lines that have the conditions **Not blank** and **Blank**.
+
 #### ZOiSTyp - Turnover and balance statement type
 
-Use the **ZOiSTyp** lookup field to define the type of ZOiS applicable for your organization. In **Lookup result** column select **ZOiSTyp** and then in **Turnover and balance statement type** column, select which ZOiS type is applicable for your organization. The following values are available:
+Use the **ZOiSTyp** lookup field to define the type of ZOiS applicable for your organization. In **Lookup result** column select **ZOiSTyp** and then in **Turnover and balance statement type** column, select which ZOiS type is applicable for your organization. The following values are available.
 
 | ZOiSTyp | Description Pl | Description En |
 |-----|-----|----|
@@ -185,6 +187,8 @@ The following condition is available for mapping in this lookup field.
 |-----------|-----------|
 | Original Document Type (OriginalDocumentType) | Select original document types that are used in your busines oprations and and specify in the **Lookup result** field how they should be reported in JPK_KR_PD \> Dziennik.  |
 
+As the last two lines, add lines that have the conditions **Not blank** and **Blank**.
+
 ## <a id="jpk-kr"></a> Generate a Standard Audit File Accounting Books Income Tax file (JPK_KR_PD)
 
 To generate a Standard Audit File Accounting Books Income Tax - JPK_KR_PD file, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > Standard Audit File Accounting Books Income Tax**, and set the following parameters.
@@ -193,13 +197,13 @@ To generate a Standard Audit File Accounting Books Income Tax - JPK_KR_PD file, 
 |---------------------------------------------|-------------|
 | From date                                   | Specify the first date to export reporting data for. |
 | To date                                     | Specify the last date to export reporting data for. |
-| Print with zero balances |  | 
-| Purpose of submission |  |
-| Report composition | |
-| Include closing transactions                | If this parameter is selected, closing transactions will be included in the data that is exported. This parameter affects only the ZOiS export file part. |
-| Include reversal |  |
+| Print with zero balances | By default, the ZOiS section of JPK_KR_PD includes main accounts with a non-zero opening balance and/or transactions within the reporting period. Select this checkbox if you also want to include main accounts with a zero opening balance and no turnover during the reporting period. | 
+| Purpose of submission | Select what is the relevant purpose of the report submission. The following values are available: <li> JPK for the first time, <li> JPK correction. |
+| Report composition | Select one or many sections of the report that you want to generate: <li> ZOiS <li> Dziennik (includes Dziennik, KontoZapis, Ctrl, Kontrahent) <li> RPD.   |
+| Include closing transactions                | If this parameter is selected, closing transactions will be included in the data that is exported. |
+| Include reversal | If this parameter is selected, reversed transactions will be included in the data that is exported. |
 | Posting layer                               | Select one or more posting layers from which to consider transactions. This parameter affects all parts of the report. |
-| Update balances |  |
+| Update balances | Select this checkbox to update balances before the report generation.  |
 
 ## Using batch jobs for JPK_KR_PD
 
