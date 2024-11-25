@@ -130,7 +130,7 @@ The **RodzajDowodu** field under the **Dziennik** node of the report must repres
 
 A SAF Accounting books file must be provided upon request. The file must include accounting data for the reporting period. It must also include the selected posting layers for all the main accounts that have non-zero aggregated turnover or transactions during the reporting period.
 
-To generate a SAF Accounting books file, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF Accounting books**, and set the following parameters.
+To generate a SAF Accounting books file, click **General ledger > Inquiries and reports > Standard Audit File for Tax (SAF-T) > SAF Accounting books**, set the following parameters and click **OK** to generate the report.
 
 | Parameter                                   | Description |
 |---------------------------------------------|-------------|
@@ -155,3 +155,15 @@ If the **Show all dimensions** check box is selected, the **KontoZapis** node sh
 
 ![KontoZapis example dimensions on.](../media/jpk-kr-dim-on.png)
 
+## Using batch jobs for JPK_KR
+
+Generating JPK_KR report for a long period such as month or a quarter can include a huge data and take a long time. 
+For such cases, it is recommended to use batch jobs. 
+Dialog page for every SAF report has a **Run in the background** tab. 
+Open this tab to set up report's generation in batch mode. Select **Batch processing** check box. 
+To learn more about batch processing, see [Batch processing overview](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md). To review batch jobs or find a generated file, go to **Organization administration** > **Electronic reporting** > **Electronic reporting jobs**, and find a line related to your job. Select **Show log** on the **Main menu**. If nothing is shown, no messages were produced when the file was generated. To see the file, select **Show files** on the **Main menu**, find a file that you need, and select **Open** on the **Main menu**.  
+
+When an electronic report is generated in batch mode, you can find related batch information and the generated output file as 
+an attachment by going to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**. 
+For more information about how to configure a destination for each ER format configuration and its output component, 
+see [Electronic reporting (ER) destinations](../../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
