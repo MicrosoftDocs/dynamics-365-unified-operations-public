@@ -4,7 +4,7 @@ description: Learn about how to install and configure the Regression suite autom
 author: FrankDahl
 ms.author: fdahl
 ms.topic: article
-ms.date: 11/27/2023
+ms.date: 11/25/2024
 ms.reviewer: johnmichalak
 audience: Developer
 ms.search.region: Global
