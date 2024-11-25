@@ -171,7 +171,7 @@ In **Lookup result** column select the report tag ot **PL_CoA** for standard cha
 | **S_12_3** | Additional account tag resulting from the regulation on the additional scope of data to be supplemented in the accounting records (PD) (optional field) | Dodatkowy znacznik konta wynikający z rozporządzenia w sprawie dodatkowego zakresu danych, o które należy uzupełnić prowadzone księgi rachunkowe (PD) (pole opcjonalne) |
 | **PL_CoA** | Consolidation account groups for Polish chart of accounts | Grupy kont konsolidacyjnych dla polskiego planu kont | 
 
-#### RodzajDowodu - Original Document Type
+#### RodzajDowodu - Accounting voucher type
 
 Use the free-text **RodzajDowodu** lookup field to define mapping of the type of accounting voucher of general journal entries in your Fiannce to the values that will be reported in D_5 field of JPK_KR_PD.
 
