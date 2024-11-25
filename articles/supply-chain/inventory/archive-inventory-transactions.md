@@ -39,7 +39,7 @@ Before you consolidate inventory transactions, you should consider the following
 - Standard cost conversion can't be done for consolidated periods.
 - Inventory reports that are sourced from inventory transactions are affected when you consolidate inventory transactions. These reports include the inventory aging report and inventory value reports.
 - Inventory forecasts might be affected if they're run during the time horizon of consolidated periods.
-- All necessary actions, such as potential returns, on sales orders and their related inventory transactions should be completed before consolidating a period.
+- All necessary actions (such as potential returns on sales orders and their related inventory transactions) should be completed before consolidating a period.
 
 ## Prerequisites
 
