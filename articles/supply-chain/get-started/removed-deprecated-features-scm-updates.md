@@ -26,6 +26,16 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.43 release
 
+### Non-process guide Adjustment out Mobile device menu item
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | The [process guide framework](../supply-chain-dev/process-guide-framework) offers much better extensibility support and allows for easier changes in the feature behavior. |
+| **Replaced by another feature?**  | Yes. It is recommended to enable the *Use process guide* setting. |
+| **Product areas affected** | Supply Chain Management – Warehouse management |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | The *Use process guide* setting will be made mandatory in the 10.0.45 release. Approximately one year after the release of version 10.0.45, the non-process guide implementation will no longer be supported and may eventually be removed from the product. |
+
 ### Non-process guide Spot cycle counting Mobile device menu item
 
 | &nbsp;  | &nbsp;  |
