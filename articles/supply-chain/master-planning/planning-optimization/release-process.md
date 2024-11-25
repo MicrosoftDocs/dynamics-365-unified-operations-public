@@ -24,8 +24,8 @@ Because notifications aren't shown when Planning Optimization is updated in your
 
 | Changes | Feature management details | Release dates |
 |---|---|---|
-| <p>General performance, quality, and stability improvements.</p> <p>Support for dimension-based configuration.</p> <p>Support for reducing demand and supply forecast in the current period by invoiced and delivered dales orders using "Transactions reduction key.</p>| No feature management required. Features required | November  8-16, 2024 |
-| <p>General performance, quality, and stability improvements.</p> | No feature management required | October  1-8, 2024 |
+| <p>General performance, quality, and stability improvements.</p> <p>Support for dimension-based configuration.</p> <p>Support for using the *Transactions - reduction key* method to reduce demand and supply forecasts in the current period based on invoiced and delivered sales orders.</p> | No feature management required. Features required | November  8-16, 2024 |
+| <p>General performance, quality, and stability improvements.</p> | No feature management required | October  1–8, 2024 |
 | <p>General performance, quality, and stability improvements.</p> | No feature management required | May  20–28, 2024 |
 | <p>General performance, quality, and stability improvements.</p> | No feature management required | March  15–20, 2024 |
 | <p>General performance, quality, and stability improvements.</p> | No feature management required | February  10–15, 2024 |
