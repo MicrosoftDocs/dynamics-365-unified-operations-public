@@ -13,7 +13,7 @@ ms.custom:
 
 # Corrective action and preventive action
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Corrective action and preventive action (CAPA) management lets you create and maintain records of the corrective or preventive actions taken to manage and resolve non-conformities or defects involving products. By planning, tracking, and analyzing CAPA cases, you can develop efficient processes that can be helpful in resolving similar issues.
 

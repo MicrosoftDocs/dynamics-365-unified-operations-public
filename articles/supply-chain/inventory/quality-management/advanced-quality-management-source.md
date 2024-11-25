@@ -55,14 +55,14 @@ Before you can begin creating and working with CAPA cases, you must set up the c
 
 First, you create CAPA categories, which allow you to group similar case types together. Organizing CAPA cases by category can help employees identify known solutions, such as knowledge articles, if similar issues frequently occur. This information is also used by the Trending analysis by category feature so employees can review whether the frequency of specific issues is declining over time. You set up CAPA categories in the **CAPA categories** form.
 
-| **Path: Inventory management \> Setup \> CAPA management \> CAPA categories** |  |  |
+| **Path: Inventory management \> Setup \> CAPA management \> CAPA categories** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | New | Add a new CAPA category. |  |
 | Delete | Delete a CAPA category.</br>**Note:** You cannot delete a category if it is currently assigned to an active CAPA case. |  |
 | User defined CAPA subcategory | Define multiple selections for a specified user defined subcategory. |  |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | CAPA category | The name of the CAPA category. | General category groupings:<br /></br>Product related, Vendor related, Customer related</br>Detailed category groupings:</br>Bulk production related, Production labeling related, Packaging production related; Production resource related. |
 | Description | The description of the CAPA category. |  |
 | CAPA subcategory type | The subcategory for the CAPA category | When selecting a User defined value for the subcategory you will setup multiple subcategories that can be selected for that CAPA category. |
@@ -71,16 +71,16 @@ First, you create CAPA categories, which allow you to group similar case types t
 
 After setting up CAPA categories, you will need to create CAPA worker groups. CAPA worker groups allow you to group users together for CAPA purposes. The CAPA worker groups are used on CAPA Processes to assign activities. A CAPA worker group can be assigned to stages or specific activities. It is used to validate the appropriate worker assigned or can be used as a defaulting mechanism if a specific user is not assigned. You set up CAPA worker groups in the **CAPA worker groups** form.
 
-| **Path: Inventory management \> Setup \> CAPA management \> CAPA worker groups** |  |  |
+| **Path: Inventory management \> Setup \> CAPA management \> CAPA worker groups** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | New | Add a new CAPA worker group. |  |
 | Delete | Delete a CAPA worker group.<ul><li>**Note:** You cannot delete a worker group if it is currently assigned to CAPA case activities.</li></ul> |  |
-| **FastTabs** |  |  |
+| **FastTabs** | &nbsp; | &nbsp; |
 | Group settings | Set up and view group settings abut a specific CAPA worker group. Includes details related to whether all members of the group can change the stage of the CAPA case and whether or not the CAPA administrator should be an implied member of the group and/or the default worker for the group. |  |
 | Worker assignments | Set up and view the worker assignments for the selected CAPA worker group. |  |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | CAPA worker group | The name of the CAPA worker group. | Common examples include Investigator, Implementer, Approver and Verifier. |
 | Name | The description of the CAPA worker group. |  |
 | Allow any member to change stage | Select this check box if all workers within this CAPA worker group are allowed to change the stage of the CAPA case. |  |
@@ -94,20 +94,20 @@ After setting up CAPA categories, you will need to create CAPA worker groups. CA
 
 After you set up the CAPA worker groups, you can set up the hierarchical processes you plan to use for managing and resolving CAPA cases. When a CAPA case is created, a CAPA process can be assigned. This will guide the case through the assigned process so that activities can be automatically generated as the CAPA Case advances through the stages. You set up CAPA processes in the **CAPA processes** form.
 
-| **Path: Inventory management \> Setup \> CAPA management \> CAPA processes** |  |  |
+| **Path: Inventory management \> Setup \> CAPA management \> CAPA processes** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **FastTabs** |  |  |
+| **FastTabs** | &nbsp; | &nbsp; |
 | General | Set up and view general information about the CAPA process and activity. The information includes the purpose of the activity, start and end dates and time for performing the activity, and CAPA worker group and worker responsible for the activity. |  |
 | Exit criteria | Set up and view the exit criteria for the selected CAPA process.</br>**Note:** Activities identified as required must be completed before you can exit the process. |  |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | New | Create a new CAPA process. |  |
 | Delete | Delete a CAPA process. |  |
 | Save as | Save the current process to a new name. |  |
 | Functions | Save the current process or copy an existing CAPA process to a template. |  |
 | Inquiry | Open the **All CAPA cases** form to view all CAPA cases using the selected CAPA Process for your company. |  |
 | Actions (From the Hierarchy) | From the hierarchy directly or by using the Actions button, levels and activities can be added to the tree. Options include: Create level, Create action, Create appointment, Create event, Create task, Delete, Details. | There are four types of activities used by CAPA cases: Action, Appointment, Event and Task. |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | Name | Enter or view the name for the CAPA process. |  |
 | Description | Enter or view a brief description of the CAPA process. |  |
 | Approved | Select this check box if the CAPA process is approved for use in managing CAPA cases. |  |
@@ -145,13 +145,13 @@ You can set up, work with, and view CAPA cases from the **My CAPA cases** form, 
 
 #### CAPA case list pages
 
-| **Path: Home OR Inventory management \> Common \> CAPA management \> My CAPA cases OR All CAPA cases** |  |  |
+| **Path: Home OR Inventory management \> Common \> CAPA management \> My CAPA cases OR All CAPA cases** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Tabs** |  |  |
+| **Tabs** | &nbsp; | &nbsp; |
 | CAPA case | Perform various actions for the selected CAPA case. For example, you can add a new dependent CAPA case, update the process used to manage and resolve a CAPA case, or change the current stage in the CAPA process. |  |
 | General | View, create, or update activities for the selected CAPA case. |  |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | CAPA case | Open the **New CAPA case** form to create a CAPA case record. |  |
 | Dependent CAPA case | Open the **New CAPA case** form to create a dependent CAPA case record. A dependent case is associated to a parent case, which is identified in the **Parent case** field in the form. |  |
 | Edit | Open the CAPA case for editing. |  |
@@ -166,7 +166,7 @@ You can set up, work with, and view CAPA cases from the **My CAPA cases** form, 
 | Export to Microsoft Excel | Export CAPA case records to a Microsoft Excel worksheet. |  |
 | Attachments | View a list of documents attached to the selected CAPA case. |  |
 | Signature review | Allows the users to review all existing electronic signatures against a given CAPA case. | Using the buttons on the bottom of this signature review form, you can see all associated electronic signature records for the selected CAPA Case. This is offering a filtered view of the Database log/Signature review. |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | Case ID | The CAPA case identification number. |  |
 | Name | The name of the vendor, customer, employee, etc. from the global address book associated with the CAPA case. |  |
 | Description | A brief description of the CAPA case. |  |
@@ -180,13 +180,13 @@ To set up a CAPA case, you use the **New CAPA case** form.
 
 **Note:** If your security setup permits access to the All CAPA cases menu option, then you can also create new CAPA cases from the **All CAPA cases** list page, as well as other list pages and forms in Microsoft Dynamics AX where the need to open a CAPA case might originate. For example, you can open CAPA cases from Customers, Vendors, Sales orders, Purchase orders, Return orders, Production/Batch orders, Quality orders, Non conformances, Service orders, and Released products.
 
-| **Path: Home OR Inventory management \> \> Common \> CAPA management \> My CAPA cases OR All CAPA cases \> New button group \> CAPA case button** |  |  |
+| **Path: Home OR Inventory management \> \> Common \> CAPA management \> My CAPA cases OR All CAPA cases \> New button group \> CAPA case button** | &nbsp; | &nbsp; |
 |--|--|--|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **FastTabs** |  |  |
+| **FastTabs** | &nbsp; | &nbsp; |
 | General | Enter or view information about the new CAPA case, such as the name, CAPA category and CAPA process, status, and any related parent case associated to the new case. |  |
 | Case log | Add, edit, or view information about the CAPA case log. |  |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | Name | Enter or select a name from the global address book to associate with the CAPA case. |  |
 | CAPA category | Select a category for the CAPA case. |  |
 | Case ID | The CAPA case identification number. This number is generated by the system. |  |
@@ -204,33 +204,33 @@ After you set up a CAPA case, you use the **CAPA case** form to record update, t
 
 Depending on your security permissions, you can add and update details on this form for an open CAPA case from the My CAPA cases form or the All CAPA cases form. You can also open an existing CAPA case from other forms in Microsoft Dynamics AX, such as Customers, Vendors, Sales orders, Purchase orders, Return orders, and Released products.
 
-| **Path: Home OR Inventory management \> \> Common \> CAPA management \> My CAPA cases OR All CAPA cases \> Select the CAPA case** |  |  |
+| **Path: Home OR Inventory management \> \> Common \> CAPA management \> My CAPA cases OR All CAPA cases \> Select the CAPA case** | &nbsp; | &nbsp; |
 |--|--|--|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Tabs (Action pane)** |  |  |
+| **Tabs (Action pane)** | &nbsp; | &nbsp; |
 | CAPA case | Open new CAPA cases and dependent cases, update details for case processes, or change the stage of a process. You can also view any supporting documents that are attached to the case. |  |
 | General | Open the **Transaction log** form or the **Activities** form to view any related transactions or activities associated to the CAPA case. |  |
-| **FastTabs** |  |  |
+| **FastTabs** | &nbsp; | &nbsp; |
 | General | View or edit general information about the selected CAPA case. |  |
 | Case log | View, add, or edit information about the CAPA case log. |  |
 | Associations | View or edit information about entities that are associated with the CAPA case. | Examples of the entities that can be associated to a CAPA case include: sales order, item, vendor, batch order. |
 | Knowledge article | View or edit information about knowledge articles that are associated with the CAPA case. |  |
 | Administration | View administrative details about the CAPA case, such as the date the case was opened and the user who opened it |  |
 | Case Web details | View or edit company information and contacts in the Web details for the CAPA case. |  |
-| **Buttons (Action pane)** |  |  |
+| **Buttons (Action pane)** | &nbsp; | &nbsp; |
 | Change status | Change the status of the CAPA case, for example from **Opened** to **In Process**. |  |
 | CAPA case | Open the **New CAPA case** form to set up a new CAPA case. |  |
 | Dependent CAPA case | Open the **New CAPA case** form to set up a new dependent CAPA case. A dependent CAPA case is always associated to a parent CAPA case. |  |
 | CAPA process | Open the **CAPA processes** form to view or maintain the process associated with the CAPA case. |  |
 | Change stage | Change the position in the CAPA process flow from one level or stage to another, based on completing the tasks, actions, and activities associated with that stage. | Once a stage is advanced to, the activities associated with that stage are visible and the responsible workers are notified via an email notification. |
 | Attachments | View or add attachments that are associated with the CAPA case. |  |
-| **Buttons (lower pane)** |  |  |
+| **Buttons (lower pane)** | &nbsp; | &nbsp; |
 | Add | Add a new line for the applicable FastTab. |  |
 | Remove | Remove an existing line from the applicable FastTab. |  |
 | Details | View or update details additional for the applicable FastTab. |  |
 | Open | Open the selected knowledge article. |  |
 | Send e-mail | Send the knowledge article in an e-mail message. |  |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | Case ID | The CAPA case identification number. |  |
 | Description | A brief description of the CAPA case. |  |
 | Parent case | The case number for the parent case that is associated with the CAPA case, if applicable. |  |
@@ -249,10 +249,10 @@ After CAPA cases are created and if CAPA processes are being used, CAPA activiti
 
 #### CAPA activity list pages
 
-| **Path: Home \> Common \> Activities \> CAPA activities \> All CAPA activites OR My CAPA activities OR All open CAPA activities OR My open CAPA activities OR All CAPA activities due this week OR My CAPA activities due this week OR All CAPA activities past due OR My CAPA activities past due** |  |  |
+| **Path: Home \> Common \> Activities \> CAPA activities \> All CAPA activites OR My CAPA activities OR All open CAPA activities OR My open CAPA activities OR All CAPA activities due this week OR My CAPA activities due this week OR All CAPA activities past due OR My CAPA activities past due** | &nbsp; | &nbsp; |
 |--|--|--|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | Action | Create a New CAPA activity that is defined as an Action. |  |
 | Appointment | Create a New CAPA activity that is defined as an Appointment. |  |
 | Event | Create a New CAPA activity that is defined as an Event. |  |
@@ -266,7 +266,7 @@ After CAPA cases are created and if CAPA processes are being used, CAPA activiti
 | Refresh | Update the contents of this list page. |  |
 | Export to Microsoft Excel | Export CAPA activity records to a Microsoft Excel worksheet. |  |
 | Attachments | View a list of documents attached to the selected CAPA activity. |  |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | Date | The start date for the CAPA activity. |  |
 | Purpose | The purpose or description of the CAPA activity. |  |
 | Priority | The priority of the CAPA activity. | **The valid Priorities for Activities are Low, Normal or High.** |
@@ -279,14 +279,14 @@ You run trending analysis to view in graphical format the volume of CAPA cases b
 
 To run trending analysis using information collected for CAPA cases, use the **Trending analysis** form.
 
-| **Path: Inventory management \> Inquiries \> CAPA management \> Trending analysis** |  |  |
+| **Path: Inventory management \> Inquiries \> CAPA management \> Trending analysis** | &nbsp; | &nbsp; |
 |--|--|--|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Tabs** |  |  |
+| **Tabs** | &nbsp; | &nbsp; |
 | Data | Specify the criteria to use for the trending analysis. |  |
 | Analytics by category | View the results of the trending analysis by category. The results are determined based on the criteria you select on the Data tab. If you select all three data options, then three graphs appear on this tab after you run the analysis. Otherwise, only the graphs for the options you select display. |  |
 | Analytics by subcategory | View the results of the trending analysis by subcategory. The results are determined based on the criteria you select on the Data tab. You select a CAPA category and up to two data options. |  |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | From date | Select the start date for the analysis. To include all CAPA cases for the current year in the analysis, accept the system default date. Otherwise, specify a different from date. | Defaults to the first day of the current year |
 | To date | Select the end date for the analysis. To include all CAPA cases for the current year in the analysis, accept the system default date. Otherwise, specify a different from date. | Defaults to the current date |
 | Number of cases opened by | Select this check box to display trending results on a pie chart, which shows the total number of CAPA cases opened by specific users over the date period defined. |  |
@@ -304,14 +304,14 @@ An electronic signature confirms the identity of a person who is about to start 
 
 Using the Organization module, you maintain the various requirements for determining which events should trigger an electronic signature. For this feature, we have added the option to indicate that a signature is required for the event "Close/Cancel CAPA case". If selected, whenever the status of a CAPA case is changed to Closed or Canceled or when a CAPA case is reopened, electronic signature is required.
 
-| **Path: Organization administration \> Setup \> Electronic signature \> Electronic signature requirements** |  |  |
+| **Path: Organization administration \> Setup \> Electronic signature \> Electronic signature requirements** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | New | Allows new electronic signature requirements to be added as User defined options. Requires customizations. |  |
 | Delete | Allows a User defined electronic signature to be deleted. |  |
 | Properties | Used when creating User defined electronic signature options as part of the customization. |  |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | Name | Represents the name of the electronic signature requirement. Built in requirements are available to the user without customizations. User defined requirements need customization. | Close/Cancel CAPA case is the new Built in Requirement that has been added as part of this feature. |
 | Procedure type | Two options exist for procedure type. Built in means that they are ready to be triggered as desired without customization. User defined means that they have to be built. | This feature provides a Built in requirement as all of the work to turn this requirement on has been done as part of this feature. |
 | Signature required | This checkbox represents which events in the system should drive an electronic signature to complete. | If desired, Close/Cancel CAPA Case can be selected which would then drive an electronic signature when a CAPA case is closed, cancelled or reopened. |
@@ -335,10 +335,10 @@ From a CAPA Case, the Change status ribbon action is the trigger point for elect
 
 Using the Inventory Management module, you can process a CAPA case to completion. Adjusting the CAPA case status is an important step in the process. Closing or canceling a CAPA Case, will trigger an electronic signature. Additionally, if a CAPA Case has already been closed or canceled and the user wants to reopen it by changing the status back to Opened or In Process, Electronic signature will also be triggered. The user may also use the new Ribbon action of "Signature review" to review existing signatures against the selected CAPA case.
 
-| **Path: Inventory management \> Common \> CAPA management \> All/My CAPA Cases** |  |  |
+| **Path: Inventory management \> Common \> CAPA management \> All/My CAPA Cases** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | Signature review | Allows the users to review all existing electronic signatures against a given CAPA case. | Using the buttons on the bottom of this form, you can see all associated electronic signature records for the selected CAPA Case. This is offering a filtered view of the Database log/Signature review. |
 
 ## Flexible sampling plans
@@ -363,15 +363,15 @@ After you set up the criteria for each of the plan's levels, you then establish 
 
 A manufacturing company currently uses item sampling functionality for testing goods received in shipments. However, to reduce costs associated with testing, they need greater flexibility in their testing approach. The company's testing statistics over the past year show minimal exceptions were found during their inspections of a particular item. So to reduce costs they decide to implement flexible sampling. With flexible sampling they can not only vary or reduce the sampling size based on prior testing results, but they can skip certain lots from testing as well.
 
-| **Path: Inventory management \> Setup \> Quality control \> Flexible sampling plans** |  |  |
+| **Path: Inventory management \> Setup \> Quality control \> Flexible sampling plans** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | New | Add a new flexible sampling plan. |  |
 | Delete | Delete a flexible sampling plan.</br>**Note:** You cannot delete a flexible sampling plan code if dependent quality orders are currently using the plan or if activity is being tracked against the plan. To delete the plan you must first delete any dependent quality orders as well as any tracking activity. |  |
 | Copy plan | Copy an existing flexible sampling plan to use in creating a new plan. For example, you might copy an existing plan that is similar to the plan you want to create, which reduces the time involved in setting up the new plan. |  |
 | View activities | View the activities associated with a flexible sampling plan. These activities might include which test groups and samplings were used to create the quality orders, as well as any quality tests that were skipped based on the criteria defined in the plan. |  |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | Flexible sampling plan code | Define the identifier for a new flexible sampling plan. |  |
 | Description | Enter or view a brief description for the new flexible sampling plan. |  |
 | Alert role | Select or view the role for the employee who is to receive alerts when certain types of quality failures occur. |  |
@@ -397,14 +397,14 @@ To inquire about and track activities associated to a flexible sampling plan, yo
 
 Each activity captures pertinent information about the account, item, and testing level at the most granular level. For example, if a flexible sampling plan code is associated with a quality association for All vendors and a specific Item quality group, then the information displayed includes the reference type (Purchase), vendor's account number, specific item number, and the current testing level.
 
-| **Path: Inventory management \> Periodic \> Quality management \> Flexible sampling plan activities** |  |  |
+| **Path: Inventory management \> Periodic \> Quality management \> Flexible sampling plan activities** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | Flexible sampling plan activity summary | View a summary of activity for the selected flexible sampling plan code. |  |
 | Flexible sampling plan activity details | View the specific details of the flexible sampling plan you select. |  |
 | Flexible sampling plans | View the specific activity details for the flexible sampling plan you select. You can also create a new flexible sampling plan from this form. |  |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | Flexible sampling plan code | The identifier for the flexible sampling plan. |  |
 | Reference type | The type of reference for the activity.<ul><li>Sales</li><li>Purchase</li><li>Production</li><li>Co-product production</li><li>Route operation</li><li>Quarantine</li></ul> |  |
 | Account | The account identifier for the reference type. | If the reference type is Sales, then this field displays the customer's account number. |
@@ -426,16 +426,16 @@ To facilitate viewing and interpreting activity, the following color-coded shadi
 
 - **Blue shading** – Indicates a pass action reference line based on the current testing level.
 
-| **Path: Inventory management \> Periodic \> Quality management \> Flexible sampling plan activities** |  |  |
+| **Path: Inventory management \> Periodic \> Quality management \> Flexible sampling plan activities** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | Flexible sampling plan activity summary | View a summary of current activities for the selected flexible sampling plan. |  |
 | Overall activity statistics | View the following statistics in graphical format:<ul><li>Current round activity (Rounds) – Illustrates the number of rounds that passed and failed.</li><li>Current round activity (Quality orders) – Illustrates the number of quality orders that were created and the number that were skipped.</li><li>Overall statistics – Illustrates the current round activity for both the rounds and the quality orders.</li></ul> |  |
 | Change activity level | Select a new activity level and reason code for this flexible sampling plan and enter a free-form reference. For example, assume a flexible sampling plan is defined for a specific item and vendor, and the vendor later initiates a new manufacturing process. You can assign a new flexible sampling plan level manually, as there may be issues with this new process. |  |
 | Delete current level | Delete the activities for the current level. For example, if you want to repeat the current level of testing, you can use this action to delete activities for the current level and then repeat the testing process for this level. |  |
 | Delete all activities | Delete all activities for this flexible sampling plan. For example, if you want to repeat all testing levels for this plan, you might want to delete all activities and then start again. |  |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | Flexible sampling plan code | The identifier of the flexible sampling plan.</br>**Note:** You can double-click the flexible sampling plan code to open the related flexible sampling plan to view the details for this plan. To return to activity details, close the flexible sampling plan after you view it. |  |
 | Reference type | The type of reference for the activities, such as Purchase, Sales, Production, Co-product production, Quarantine, or Route operation. |  |
 | Item number | The identifier of the item associated with the reference type. For example, if the reference type is **Sales**, then this field displays the identifier of the item sold. |  |
@@ -464,17 +464,17 @@ To facilitate viewing and interpreting activity, the following color-coded shadi
 
 To view a summary of activities associated to a flexible sampling plan in summary form, you use the **Flexible sampling plan activity summary** form.
 
-| **Path: Inventory management \> Periodic \> Quality management \> Flexible sampling plan activities** |  |  |
+| **Path: Inventory management \> Periodic \> Quality management \> Flexible sampling plan activities** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | Flexible sampling plan activity details | View activity details for the selected flexible sampling plan. |  |
 | Activity graph | View a graphic that illustrates the number of rounds that passed and failed and the number of quality orders that were created and skipped. |  |
 | Change activity level | Select a new activity level and reason code for this plan and enter a free-form reference. For example, assume a flexible sampling plan is defined for a specific item and vendor, and the vendor later initiates a new manufacturing process. You can create a new flexible sampling plan level manually, as there may be issues with this new process. |  |
 | Quality associations | View the rules that are defined for the quality association that is used by this flexible sampling plan. |  |
 | Non conformances | View non-conformances that are related to the selected flexible sampling plan. |  |
 | Quality orders | View the quality orders that are related to the selected flexible sampling plan. |  |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | Flexible sampling plan code | The identifier for the flexible sampling plan. |  |
 | Reference type | The type of reference for the activity.<ul><li>Sales</li><li>Purchase</li><li>Production</li><li>Co-product production</li><li>Route operation</li><li>Quarantine</li></ul> |  |
 | Type | View the type of CAPA process. |  |
@@ -523,18 +523,18 @@ The check methods include the following:
 
 To set up and maintain customers who are approved to purchase one or more products, you use the **Approved customer list setup** form.
 
-| **Path: Product information management (or Sales and marketing) \> Setup \> Approved customer list \> Approved customer list setup** |  |  |
+| **Path: Product information management (or Sales and marketing) \> Setup \> Approved customer list \> Approved customer list setup** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | New | Add a customer or approved customer group relationship to an item or approved item group. |  |
 | Delete | Remove a customer or approved customer group relationship to an item or approved item group. |  |
 | Edit | Edit the effective and expiration dates for a customer's approval period. |  |
 | View | Select a view option to locate item or approved item groups within the customer's effective date range. The two options also include approved items that never expire.<ul><li>**Current** - Select this option to display records with an effective date prior to the current date.</li><li>**All** - Select this option to display all records.</li></ul> |  |
 
-| **Path: Product information management (or Sales and marketing) \> Setup \> Approved customer list \> Approved customer list setup** |  |  |
+| **Path: Product information management (or Sales and marketing) \> Setup \> Approved customer list \> Approved customer list setup** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | Item code | Select or view the item relationship code for which this item is approved. The values are:<ul><li>**Table** – Designates a specific item.</li><li>**Group** – Designates an approved item group.</li><li>**All** – All items are designated.</li></ul> |  |
 | Item relation | Select or view the identification for the item or approved item group. |  |
 | Customer code | Select or view the customer relationship code for which this item is approved. The values are:<ul><li>**Table** – Designates a specific customer.</li><li>**Group** – Designates an approved customer group.</li><li>**All** – All customers are designated.</li></ul> |  |
@@ -556,15 +556,15 @@ To view lists of approved customers, you can access from any of the following fo
 
 To set up and maintain customers who are approved to a specific item, you can also use the **Approved customer list** form. This form provides access to the Approved Customer List while filtering the data based on the Released product selected.
 
-| **Path: Product information management \> Common \> Released products \> Sell tab \> Approved customer \> Setup** |  |  |
+| **Path: Product information management \> Common \> Released products \> Sell tab \> Approved customer \> Setup** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | New | Add a customer or approved customer group relationship to the item. |  |
 | Delete | Remove a customer or approved customer group relationship. |  |
 | Edit record | Edit the effective and expiration dates for a customer's approval period. |  |
 | View | Select a view option to ACL records for the item within the customer's effective date range. The two options also include approved items that never expire.<ul><li>**Current** - Select this option to display records with an effective date prior to the current date.</li><li>**All** - Select this option to display all records.</li></ul> |  |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | Item number | The identification for the product. | This defaults to the item selected. |
 | Product name | The name of the product. |  |
 | Customer code | Select or view the customer relationship code for which this item is approved. The values are:<ul><li>**Table** - The item is approved for this specific customer.</li><li>**Group** - The item is approved for this approved customer group.</li><li>**All** - The product is approved for all customers.</li></ul> |  |
@@ -576,12 +576,12 @@ To set up and maintain customers who are approved to a specific item, you can al
 
 To view a list of customers who are approved to purchase a specific product, you use the **Approved customer list by item** form.
 
-| **Path: Product information management \> Common \> Products \> Released products \>**</br>**Sell tab \> Approved customer group \> Approved customers** |  |  |
+| **Path: Product information management \> Common \> Products \> Released products \>**</br>**Sell tab \> Approved customer group \> Approved customers** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | View | Select a view option to locate customers within the item's effective date range. These two options also include approved items that never expire.<ul><li>**Current** - Select this option to display records that have an effective date prior to the current date.</li><li>**All** - Select this option to display all records.</li></ul> |  |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | Item number | The identification for the product. |  |
 | Product name | The name of the product. |  |
 | Effective | Select or view the effective date on which a customer's approval to purchase the product begins. You can use this field in conjunction with the **Expiration** field to view items within the customer's effective date range. |  |
@@ -597,12 +597,12 @@ These display-only forms, such as the one below, display a 'resolved' approved c
 
 To view a list of customers who are approved to purchase a specific product prior to a certain expiration date, which is the date on which a customer's approval to purchase a certain product ends, use the **Approved customer list expiration** form.
 
-| **Path: Product information management \> Common \> Products \> Released products \>**</br>**Sell tab \> Approved customer group \> Effective period** |  |  |
+| **Path: Product information management \> Common \> Products \> Released products \>**</br>**Sell tab \> Approved customer group \> Effective period** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | View | Select a view option to locate items within the customer's effective date range. These two options also include approved items that never expire.<ul><li>**Current** - Select this option to display records that have an effective date prior to the current date.</li><li>**All** - Select this option to display all records.</li></ul> |  |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | Item number | The identification for the product. | This defaults to the item number selected. |
 | Product name | The name of the product. |  |
 | As of | Select a date as of which you want to view items that are approved for purchase by this customer when you use the **View** FastTab search feature. | This defaults to the current date. |
@@ -624,15 +624,15 @@ To view lists of approved items for a specific customer, you can access from any
 
 To set up and maintain items that are approved for a specific customer, you can also use the **Approved customer list** form. This form provides access to the Approved Customer List while filtering the data based on the Customer selected.
 
-| **Path: Sales and marketing \> Common \> Customers \> All customers \> Sell tab \> Approved customer \> Setup** |  |  |
+| **Path: Sales and marketing \> Common \> Customers \> All customers \> Sell tab \> Approved customer \> Setup** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | New | Add an item or approved item group relationship to the Customer. |  |
 | Delete | Remove an item or approved item group relationship. |  |
 | Edit record | Edit the effective and expiration dates for an item's approval period. |  |
 | View | Select a view option to ACL records for the customer within the item's effective date range. The two options also include approved items that never expire.<ul><li>**Current** - Select this option to display records with an effective date prior to the current date.</li><li>**All** - Select this option to display all records.</li></ul> |  |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | Customer account | The identification for the customer. | This defaults to the customer selected. |
 | Name | The name of the customer. |  |
 | Item code | Select or view the item relationship code for which this customer is approved. The values are:<ul><li>**Table** - The item is approved for this specific customer.</li><li>**Group** - The item is approved for this approved customer group.</li><li>**All** - The product is approved for all customers.</li></ul> |  |
@@ -644,12 +644,12 @@ To set up and maintain items that are approved for a specific customer, you can 
 
 To view a list of items that are approved to be purchased by a specific customer, you use the **Approved customer list by customer** form.
 
-| **Path: Sales and marketing \> Common \> Customers \> All customers \> Sell tab \> Approved customer \> Approved items** |  |  |
+| **Path: Sales and marketing \> Common \> Customers \> All customers \> Sell tab \> Approved customer \> Approved items** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | View | Select a view option to locate items within the customer's effective date range. These two options also include approved items that never expire.<ul><li>**Current** - Select this option to display records that have an effective date prior to the current date.</li><li>**All** - Select this option to display all records.</li></ul> |  |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | Customer account | The identification for the customer. |  |
 | Name | The name of the customer. |  |
 | Effective | Select or view the effective date on which a customer's approval to purchase the product begins. You can use this field in conjunction with the **Expiration** field to view items within the customer's effective date range. |  |
@@ -665,12 +665,12 @@ Similar to the Approved customer list by item form, these display-only forms dis
 
 To view a list of items that are approved to be purchased by a specific customer prior to a certain expiration date, which is the date on which a customer's approval to purchase a certain product ends, use the **Approved customer list expiration** form.
 
-| **Path: Sales and marketing \> Common \> Customers \> All customers \> Sell tab \> Approved customer \> Effective period** |  |  |
+| **Path: Sales and marketing \> Common \> Customers \> All customers \> Sell tab \> Approved customer \> Effective period** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | View | Select a view option to locate items within the customer's effective date range. These two options also include approved items that never expire.<ul><li>**Current** - Select this option to display records that have an effective date prior to the current date.</li><li>**All** - Select this option to display all records.</li></ul> |  |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | Customer account | The identification for the customer. | This defaults to the customer number selected. |
 | Customer name | The name of the customer. |  |
 | As of | Select a date as of which you want to view items that are approved for purchase by this customer when you use the **View** FastTab search feature. | This defaults to the current date. |
@@ -684,12 +684,12 @@ To view a list of items that are approved to be purchased by a specific customer
 
 To view a list of products that have been approved for a specific customer to purchase on a recurring basis, you use the **Approved customer list by customer** form. An approved customer is authorized to order certain products, which expedites the sales order process and allows the product to ship more quickly.
 
-| **Path: Sales and marketing \> Common \> Sales orders \> All sales orders \>**</br>**General tab \> Related information group \> Approved items** |  |  |
+| **Path: Sales and marketing \> Common \> Sales orders \> All sales orders \>**</br>**General tab \> Related information group \> Approved items** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | View | Select a view option to locate items within the customer's effective date range. These two options also include approved items that never expire.<ul><li>**Current** - Select this option to display records that have an effective date prior to the current date.</li><li>**All** - Select this option to display all records.</li></ul> |  |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | Customer account | The account identification for the customer. | This defaults to the customer on the sales order. |
 | Customer name | The name of the customer. |  |
 | Effective | Select or view the effective date on which a customer's approval to purchase the product begins. You can use this field in conjunction with the **Expiration** field to view items within the customer's effective date range. |  |
@@ -707,10 +707,10 @@ Customer and item groups allow you to set up groups of customers and groups of i
 
 To set up, maintain, and view a group of customers who are approved to purchase a certain item or approved item groups during the specified effective period, you use the **Approved customer groups** form. You can associate the approved customer group to one or more items, approved item groups, or all items.
 
-| **Path: Sales and marketing \> Setup \> Approved customer list \> Approved customer groups** |  |  |
+| **Path: Sales and marketing \> Setup \> Approved customer list \> Approved customer groups** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | New | Add an approved customer group. |  |
 | Delete | Delete the selected approved customer group.</br>**Note:** You cannot delete an approved customer group if it is currently assigned to a customer or has a record relationship in the ACL. |  |
 | Add (Customer list tab) | Add a customer to this Approved Customer Group. |  |
@@ -722,10 +722,10 @@ To set up, maintain, and view a group of customers who are approved to purchase 
 | Delete (Approved items fast tab) | Remove the selected item or approved item group. |  |
 | Edit (Approved items fast tab) | Edit the current ACL record. |  |
 | View (Approved items fast tab) | View all or current records based on Effective and Expiration date. |  |
-| **Fast tabs** |  |  |
+| **Fast tabs** | &nbsp; | &nbsp; |
 | Customers | Set up, maintain, and view customers who are associated with the selected Approved Customer Group. | Use the <em>Assign customers using query</em> tab to search for and select a subset of Customers based on any combination of customer fields and values. This subset of customers, once finalized, can be added to the selected Approved customer group at the same time using the <em>Add all to group</em> button |
 | Approved items | Set up, maintain, and view items or approved item groups that are approved to be purchased by customers who are associated with the selected approved customer group. |  |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | Approved customer group | Enter or view the unique identification for the approved customer group. |  |
 | Description | Enter or view the description of the approved customer group. |  |
 | Customer account (Customer list tab) | The account identification for the customer. |  |
@@ -742,10 +742,10 @@ To set up, maintain, and view a group of customers who are approved to purchase 
 
 You can also assign a customer to an Approved Customer Group using the **Customer** form.
 
-| **Path: Sales and marketing \> Common \> Customers \> All customers \> Sales order defaults FastTab** |  |  |
+| **Path: Sales and marketing \> Common \> Customers \> All customers \> Sales order defaults FastTab** | &nbsp; | &nbsp; |
 |--|--|--|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | Approved customer group | The group to which this customer is assigned for purposes of ACL |  |
 | Approved customer list check method | The method of validation that is used when creating a sales order, sales agreement or sales quotation for this customer. |  |
 
@@ -753,10 +753,10 @@ You can also assign a customer to an Approved Customer Group using the **Custome
 
 To set up, maintain, and view a group of products that are approved for purchase by a certain customer or customers during the specified effective period, you use the **Approved item groups** form. You can associate the item group to one or more customers, customer groups, or all customers.
 
-| **Path: Product information management \> Setup \> Approved customer list \> Approved item groups** |  |  |
+| **Path: Product information management \> Setup \> Approved customer list \> Approved item groups** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | New | Add an approved item group. |  |
 | Delete | Delete the selected approved item group.</br>**Note:** You cannot delete an approved item group if it is currently associated with an item or used on an ACL record. |  |
 | Add (Items tab) | Add an item to this Approved Item Group. |  |
@@ -768,10 +768,10 @@ To set up, maintain, and view a group of products that are approved for purchase
 | Delete (Approved customers fast tab) | Remove the selected customer or approved customer group. |  |
 | Edit (Approved customers fast tab) | Edit the current ACL record. |  |
 | View (Approved customers fast tab) | View all or current records based on Effective and Expiration date. |  |
-| **Fast Tabs** |  |  |
+| **Fast Tabs** | &nbsp; | &nbsp; |
 | Items | Set up, maintain, and view items that are associated with the selected Approved Item Group. | Use the <em>Assign items using query</em> tab to search for and select a subset of Items based on any combination of item fields and values. This subset of items, once finalized, can be added to the selected Approved item group at the same time using the <em>Add all to group</em> button |
 | Approved customers | Set up, maintain, and view customers or approved customer groups that are approved to purchase item in the select approved item group. |  |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | Approved item group | Enter or view the unique identification for the approved item group. |  |
 | Description | Enter or view the description for the approved item group. |  |
 | Item number (Item list tab) | The identification for the product. |  |
@@ -788,10 +788,10 @@ To set up, maintain, and view a group of products that are approved for purchase
 
 You can also assign an item to an Approved Item Group using the **Released products** form.
 
-| **Path: Product information management \> Common \> Released products \> Sell FastTab** |  |  |
+| **Path: Product information management \> Common \> Released products \> Sell FastTab** | &nbsp; | &nbsp; |
 |--|--|--|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | Approved customer list check method | The method of validation that is used when creating a sales order, sales agreement or sales quotation for this item. |  |
 | Approved item group | The group to which this item is assigned for purposes of ACL |  |
 
@@ -799,10 +799,10 @@ You can also assign an item to an Approved Item Group using the **Released produ
 
 When entering a sales order for a specific customer you can use the Item number drop-down to provide a list of items for selection to add to the sales order line. If the customer associated with the sales order has a record in the Approved Customer List then an **Approved items** tab will be visible in order to make a selection. The Other tab contains all items.
 
-| **Path: Sales and marketing \> Common \> Sales orders \> All sales orders** |  |  |
+| **Path: Sales and marketing \> Common \> Sales orders \> All sales orders** | &nbsp; | &nbsp; |
 |--|--|--|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | Item number | The identification for the product. |  |
 | Product name | The name of the product. |  |
 | Valid for | The ACL source that provides this ACL relationship. If the item has a direct relationship with the customer then the field will be "Table". If the item has a group relationship, either through an Approved Item Group or an Approved Customer Group to which this customer is associated, the field will be "Group". |  |
@@ -824,10 +824,10 @@ This provides access to the Approved Customer List by Customer form from the sal
 
 When entering Effective and Expiration dates for an Approved Customer List record there is validation performed when the check method is not set to 'No check'. The dates are validation for the various documents based on the configuration selection you make in the Sales and marketing parameters form.
 
-| **Path: Sales and marketing \> Common \> Sales orders \> All sales orders** |  |  |
+| **Path: Sales and marketing \> Common \> Sales orders \> All sales orders** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | Date type | The date on the document that is selected for validation against the ACL record. The values are:<ul><li>Today - Today's date or system date</li><li>Requested ship date – The requested ship date on the sales order</li><li>Requested receipt date – The requested receipt date on the sales order</li><li>Order date – The date for which the order was placed</li></ul> | This allows you to validate the sales order against the ACL when the order is expected to ship, when it is expect to be received, or when the order is placed. The values of Today and Order date will usually provide the same result. |
 
 ## Electronic Signature (ESig)
@@ -846,12 +846,12 @@ With EDGE of AX, Electronic Signature functionality has been enhanced to increas
 
 Using the Organization module, you maintain the various parameters for defining the controls you want to place on the capture of electronic signature of the various individuals for authorization of the various processes within your organization.
 
-| **Path: Organization administration \> Setup \> Electronic signature \> Electronic signature parameters** |  |  |
+| **Path: Organization administration \> Setup \> Electronic signature \> Electronic signature parameters** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | Translations | Opens a form where you can enter notice text in additional languages. |  |
-| **Fields** |  |  |
+| **Fields** | &nbsp; | &nbsp; |
 | Notice | The notice that signers will see on the **Sign document** form. You can enter any text. Typically, this text tells the user what it means to sign a document electronically, including legal implications. |  |
 | Require comments | Select this option if all signers are required to enter a comment when signing. |  |
 | Signature timeout | An amount of time in seconds. If a signature has not been provided in this time frame, the signing process fails. |  |
@@ -918,15 +918,15 @@ When using the Master manufacturing record inquiry from the Production control m
 
 All applicable Route versions will be displayed in the inquiry. The BOM/Formula versions and the Route version number are hyperlinks so that you may click on the number and the actual detailed form for the version will be displayed. Quality associations that are referenced as Production or Co-Product Production will be displayed with some brief information. By clicking the Details menu option for the selected Quality association the detailed form for that quality association will be displayed. The Inventory batch attributes that have been defined for the produced item will be displayed with the applicable range and target value for each characteristic.
 
-| **Path: Production control \> Inquiries \> Electronic batch records \> Master manufacturing record** |  |  |
+| **Path: Production control \> Inquiries \> Electronic batch records \> Master manufacturing record** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Criteria** |  |  |
+| **Criteria** | &nbsp; | &nbsp; |
 | Item number | Select the item for which to list the manufacturing information | Field drop down will only list items with a 'Production type' of BOM, Formula or Planning item. |
 | Site | Select a specific site for the selected item |  |
 | Date | Enter a from date to filter the Formula/BOM version for the selected item |  |
 | Quantity | Enter a from quantity to filter the Formula/BOM version for the selected item |  |
-| **FastTabs** |  |  |
+| **FastTabs** | &nbsp; | &nbsp; |
 | General | Shows some general information for the selected item |  |
 | BOM/Formula versions | List of the Formula/BOM versions of the selected item based on the specified criteria |  |
 | Route versions | List of the Route versions of the selected item based on the specified criteria |  |
@@ -939,13 +939,13 @@ When using the Batch production record inquiry from the Production control modul
 
 The inquiry will contain the particular BOM/Formula version that was used in the production process along with the proposed ingredient quantities that were estimated to complete the production. This information will also contain the exact quantities that were used, in comparison to what was estimated or proposed, and any new ingredient that may have been substituted during the production process. The Batch Production Record will give the user the ability to view the Inventory batch attributes and any Quality orders for the produced items as well as the Inventory batch attributes, Vendor batch details and Quality orders for the raw material items used in the production process.
 
-| **Path: Production control \> Inquiries \> Electronic batch records \> Batch production record** |  |  |
+| **Path: Production control \> Inquiries \> Electronic batch records \> Batch production record** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Criteria** |  |  |
+| **Criteria** | &nbsp; | &nbsp; |
 | Item number | Select the item for which to list the manufacturing information | Field drop down will only list items with a 'Production type' of BOM, Formula or Planning item. |
 | Batch production record | Select the Batch production record ID for a corresponding Batch or Production order | Required field. If selected before the item number, the Item number field will default to the item number of the Batch or Production order related to the Batch production record ID. |
-| **FastTabs** |  |  |
+| **FastTabs** | &nbsp; | &nbsp; |
 | Production order | Shows the Batch or Production order related to the specified Batch production record ID |  |
 | Report as finished | Shows the produced items (including co/by products for formula items) for the Batch or Production order related to the specified Batch production record ID | Tab will be populated when the RAF production journal has been created.</br>Use the Inventory batch attributes button to open the Inventory batch attributes form to view the attribute information for the selected record.</br>Inventory batch attributes button will only be active if there is Batch number for the selected record.</br>Use the Quality orders button to view the Quality orders for the selected record. |
 | BOM/Formula | List the raw material items used in the production of the selected item |  |
@@ -953,7 +953,7 @@ The inquiry will contain the particular BOM/Formula version that was used in the
 | Route | List the Route version used on the Batch or Production order |  |
 | Route card | Shows the information from the Route card production journal of the Batch or Production order | Tab will be populated when the Route card production journal has been created. |
 | Job card | Shows the information from the Job card production journal of the Batch or Production order | Tab will be populated when the Job card production journal has been created. |
-| **Tabs** |  |  |
+| **Tabs** | &nbsp; | &nbsp; |
 | Overview (Report as finished) | List the lines for each produced item based on the Report as finished production journal | If there were multiple (partial) RAFs, then the overview tab will list each line. |
 | Transactions (Report as finished) | List the individual transaction lines for the produced items from the Inventory Registration |  |
 | Overview (Picking list) | List the lines for each raw material item based on the Picking list production journal | If there were multiple (partial) Picking or if there is an Automatic reservation (ex. at Estimation), then the overview tab will list each line. |
@@ -963,10 +963,10 @@ The inquiry will contain the particular BOM/Formula version that was used in the
 
 The Batch production record report gives the user the ability to view/print a report using the Batch production record ID. The simplified version of the report will contain the same information reflected on the Batch production record Inquiry. On the General tab of the report, the user will have the ability to include more information for both the produced items and/or the raw material item. For the produced items, the user can choose to include the Quality order information as well as the Batch attribute value information on the report. For the raw material items, the user can choose to include the Quality order information, the Batch attribute value information as well as the Vendor batch details information on the report.
 
-| **Path: Production control \> Reports \> Electronic batch records \> Batch production record** |  |  |
+| **Path: Production control \> Reports \> Electronic batch records \> Batch production record** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Field** |  |  |
+| **Field** | &nbsp; | &nbsp; |
 | Batch production record | Select the Batch production record ID for a corresponding Batch or Production order |  |
 | Quality orders (Produced items) | Select to include the Quality orders for the produced items |  |
 | Batch attribute values (Produced items) | Select to include the Batch attribute values for the batches of the produced items |  |
@@ -1012,10 +1012,10 @@ For printing calibration labels, a **calibration label layout** can be defined. 
 
 When a given test instrument tag is identified as one that is calibrated, then a calibration group is required on the tag. The calibration group allows you to define how like instruments are calibrated. For example, some test instruments are calibrated annually. Others might be calibrated based on how many times it is used. Others might only be calibrated on a manual, as-needed basis. The calibration group defines these details and is set on a given test instrument tag.
 
-| **Path: Inventory management \> Setup \> Quality control \> Calibration groups** |  |  |
+| **Path: Inventory management \> Setup \> Quality control \> Calibration groups** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **General** |  |  |
+| **General** | &nbsp; | &nbsp; |
 | Calibration group | Name of the group, used to group tags together with similar calibration details. | Monthly, Annually, Manually, 1000Usages |
 | Calibration method | Select the method that determines when the instrument is calibrated. | Manual - Select this option to manually calibrate the instrument.</br>Usage - Select this option to base calibration on the use of the instrument on Quality tests.</br>Periodic - Select this option to base calibration on a specific time frame. |
 | Calibration period | Select the calibration periodic frequency for the instrument.</br>Note: This field will only be active and is required when the Calibration method is Periodic. | Day - Select this option to specify that the frequency specified will be based on days.</br>Month - Select this option to specify that the frequency specified will be based on months.</br>Year - Select this option to specify that the frequency specified will be based on years. |
@@ -1030,10 +1030,10 @@ When a given test instrument tag is identified as one that is calibrated, then a
 
 The main element of this feature revolves around the test instrument tag. A given test instrument type can have many tags, which uniquely defines the instrument. This form supports many details about the test instrument tag. For example, the tag will specify data such as the Manufacturer, Warranty number, Acquisition date and Specifications. The instrument tag can also be designated for Calibration. When calibration is required, a Calibration group defines the method and calibration details regarding the test instrument tag.
 
-| **Path: Inventory management \> Setup \> Quality control \> Test instrument tags** |  |  |
+| **Path: Inventory management \> Setup \> Quality control \> Test instrument tags** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Main** |  |  |
+| **Main** | &nbsp; | &nbsp; |
 | Tag number | The Test instrument tag identification. | Uniquely identifies the specific instrument. |
 | Tag description | A brief description of the Test instrument tag. | This field describes the unique tag number of the instrument type. |
 | Test instrument type | The Test instrument for which the tag is associated with. | Examples could include Scale, Thermometer, Oximeter, etc. |
@@ -1042,14 +1042,14 @@ The main element of this feature revolves around the test instrument tag. A give
 | Check if test instrument is being calibrated | The action to take on a quality order when the Instrument usage status of the selected tag is Calibration. Defaults from the Quality management tab of the Inventory and warehouse management parameters to new Test instrument tags but can be changed by test instrument tag. | The available options are:<ul><li>Not allowed - When selected, if the selected tag is being calibrated, it will not be allowed to be used on a Quality order test.</li><li>Warning only - When selected, if the selected tag is being calibrated, it will be allowed to be used on a Quality order test with a warning message.</li><li>No check - When selected, if the selected tag is being calibrated, it will be allowed to be used on a Quality order test.</li></ul> |
 | Restricted use | Indicates if the selected test instrument is for restricted use. | Informational purposes only. |
 | Used for calibration | Indicates if the selected test instrument is used in a calibration process.</br>Note: Field is not editable; defaults from the Test instrument form. | If used for calibration, then it can be entered as a Calibration tool while calibrating an instrument. |
-| **FastTabs** |  |  |
+| **FastTabs** | &nbsp; | &nbsp; |
 | General | Contains general information about the tag of the test instrument. |  |
 | Calibration details | Contains information specific to the calibration of the test instrument tag. |  |
 | Manufacturer data | Contains information specific to the manufacturer of the test instrument tag. |  |
 | Test procedures | Contains additional procedural information for the selected test instrument tag. |  |
 | Specifications | Contains additional specifics for the selected test instrument tag. |  |
 | Notes | Contains additional notes applicable to the selected test instrument tag. |  |
-| **General FastTab** |  |  |
+| **General FastTab** | &nbsp; | &nbsp; |
 | Serial number | The serial number of the test instrument tag manufacturer. |  |
 | Owner | The owner of the test instrument tag. |  |
 | Acquisition date | The date on which the test instrument tag was acquired. |  |
@@ -1061,7 +1061,7 @@ The main element of this feature revolves around the test instrument tag. A give
 | Test location | The location for the specific test instrument. | A new setup table created for this feature. |
 | Unit | The Unit of measure associated with the values recorded from this test instrument. | Defined on the test instrument type. |
 | Precision | The precision of a measurement (value describes the number of digits that are used to express that value) that can be used when recording results from this test instrument. | Defined on the test instrument type. |
-| **Calibration details FastTab** |  |  |
+| **Calibration details FastTab** | &nbsp; | &nbsp; |
 | Calibration required | Indicates if calibration is required for the test instrument. | If not selected, then the entire FastTab is not editable. |
 | Calibration procedure name | The name of the procedure used for calibration of the test instrument. |  |
 | External calibrating vendor | The account number of the external vendor used with the associated Calibration procedure. | Field is not editable; defaults from the Calibration procedures form. |
@@ -1078,20 +1078,20 @@ The main element of this feature revolves around the test instrument tag. A give
 | Approval date | The date when the most recent instrument calibration was approved. |  |
 | Next calibration date | The date when the next instrument calibration is scheduled.</br>Note: This field applies only when the Calibration Method is Periodic or Manual. For manual calibration method, then this field is editable. For periodic calibration method, this field is automatically calculated using the Calibration approved date, Calibration period and Calibration period frequency. | For example:</br>If the Last Calibration approved Date is 1/1/2013, the Calibration Period is Day(s), the Calibration Period Frequency is 10 then the Next Calibration Date will calculate to be 1/11/2013.</br>OR</br>If the Last Calibration approved Date is 1/1/2013, the Calibration Period is Month(s), the Calibration Period Frequency is 3 then the Next Calibration Date will calculate to be 4/1/2013.</br>OR</br>If the Last Calibration approved Date is 1/1/2013, the Calibration Period is Year(s), the Calibration Period Frequency is 1 then the Next Calibration Date will calculate to be 1/1/2014. |
 | Date calibration certificate printed | The date when the Instrument calibration certificate was last printed. |  |
-| **Manufacturer data FastTab** |  |  |
+| **Manufacturer data FastTab** | &nbsp; | &nbsp; |
 | Manufacturer | The name of the test instrument tag manufacturer. | Manufacturer data is all for informational purposes only. |
 | Manufacturer part number | The manufacturer part number of the test instrument tag. |  |
 | Model number | The model number of the test instrument tag. |  |
 | Manufacture date | The date when the test instrument tag was manufactured. |  |
 | Warranty number | The warranty number of the test instrument tag. |  |
 | Warranty expiry | The date of the expiry of the warranty on the test instrument tag. |  |
-| **Test procedures FastTab** |  |  |
+| **Test procedures FastTab** | &nbsp; | &nbsp; |
 | Test procedures | Used to add any additional test procedures to support the Calibration procedures. |  |
-| **Specifications FastTab** |  |  |
+| **Specifications FastTab** | &nbsp; | &nbsp; |
 | Specifications | Used to add any specifications to the test instrument. |  |
-| **Notes FastTab** |  |  |
+| **Notes FastTab** | &nbsp; | &nbsp; |
 | Notes | Used to add any notes applicable to the test Instrument. | Specific instructions on use or other such comments could be entered here. |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | New | Add a new Test instrument tag. |  |
 | Delete | Delete a Test instrument tag. | You cannot delete a test instrument tag if it used on any quality orders in the system or if any calibrations have been done on it. |
 | Functions | Use the Function options to modify the calibration information of the selected instrument tag:</br>Select Calibrate instrument to calibrate the selected test instrument tag.</br>Select Reschedule calibration to change/update the date of the next calibration of the selected instrument tag.</br>Select Override usage data to change/update the values in the Usage count since last calibration and Lifetime usage count fields of the selected instrument tag. |  |
@@ -1116,15 +1116,15 @@ Additionally, instrument calibration records can be created manually from the In
 
 The **Test instrument calibration record detail** form allows recording of all activity to calibrate the specific test instrument tag. Use this form to set up and maintain the calibration of test instrument tags when using the Test instrument calibration functionality.
 
-| **Path: Inventory management \> Periodic \> Quality management \> Calibrate test instruments (Detail form)** |  |  |
+| **Path: Inventory management \> Periodic \> Quality management \> Calibrate test instruments (Detail form)** | &nbsp; | &nbsp; |
 |--|--|--|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **FastTabs** |  |  |
+| **FastTabs** | &nbsp; | &nbsp; |
 | General | Contains general information about the Test instrument/tag for which the calibration record is created. |  |
 | Test procedures | Contains additional procedural information for calibrating the Test instrument/tag for which the calibration record is created. |  |
 | Specifications | Contains additional specifics for calibrating the Test instrument/tag for which the calibration record is created. |  |
 | Notes | Contains additional notes for calibrating the Test instrument/tag for which the calibration record is created. |  |
-| **General FastTab** |  |  |
+| **General FastTab** | &nbsp; | &nbsp; |
 | Test instrument type | The Test instrument that is being calibrated. |  |
 | Description | The description of the Test instrument. |  |
 | Tag number | The tag number of the Test instrument being calibrated. |  |
@@ -1144,13 +1144,13 @@ The **Test instrument calibration record detail** form allows recording of all a
 | Approval assignee | The user responsible for assigning the user that will approve the calibration. | This field defaults from the test instrument tag but can be modified. |
 | Approval by | The user that approved the calibration. | This field is updated by the Approve calibration action. |
 | Approval date | The date the calibration was approved. | This field is updated by the Approve calibration action. |
-| **Test procedures FastTab** |  |  |
+| **Test procedures FastTab** | &nbsp; | &nbsp; |
 | Test procedures | Used to add any additional test procedures to support the calibration of the test instrument. | Will default from the test instrument tag but can be updated during calibration. |
-| **Specifications FastTab** |  |  |
+| **Specifications FastTab** | &nbsp; | &nbsp; |
 | Specifications | Used to add any specifications for the calibration of the test instrument. | Will default from the test instrument tag but can be updated during calibration. |
-| **Notes FastTab** |  |  |
+| **Notes FastTab** | &nbsp; | &nbsp; |
 | Notes | Used to add any notes applicable to the calibration of the test instrument. | Will default from the test instrument tag but can be updated during calibration. |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | New – Calibrate instrument | Create a new calibration record. | Can only create one open calibration record at a time for a given test instrument tag. |
 | New – CAPA Case | Create a new CAPA case for the selected calibration record. | Automatically creates associations on the CAPA case to the test instrument tag and the calibration record. |
 | Maintain – Edit | Edit the selected calibration record. | Cannot be edited once it is approved unless it is reopened. |
@@ -1257,7 +1257,7 @@ On a given test group, by quality test, customer COA requirements can be defined
 
 Once the customer COA requirements are established on the test group, the requirements will default to all quality orders that use that test group but the requirements can be modified on the quality order directly. In the example below, if the COA was printed for Customer US-002, T1 would not be included. For all customers in COA-CG1, when the COA was generated for one of them, this test would be included, customer specific batch attribute range would be used, if available, instead of the standard range and if the test passed, the actual result would be replaced with the verbiage: Within spec.
 
-| **Path: Inventory management \> Setup \> Quality control \> Test groups \> Line \> Customer COA requirements OR Path: Inventory management \> Periodic \> Quality management \> Quality orders \> Line \> Customer COA requirements** |  |  |
+| **Path: Inventory management \> Setup \> Quality control \> Test groups \> Line \> Customer COA requirements OR Path: Inventory management \> Periodic \> Quality management \> Quality orders \> Line \> Customer COA requirements** | &nbsp; | &nbsp; |
 |--|--|--|
 | **Label Name** | **Description** | **Examples/Hints** |
 | Test group | The name of the test group. |  |
@@ -1270,7 +1270,7 @@ Once the customer COA requirements are established on the test group, the requir
 | Suppress Min/Max values | Indicates if the Minimum and Maximum values of the Test should be suppressed on the customer's COA. | For example, for a given test, let's assume that the Minimum is 1 and the Maximum is 10 and the Result is 1. For certain customers, it might be desirable that the Range does not display at all so not to draw attention to the fact that the result just passed the quality test. |
 | Replace pass results | When populated, the verbiage will replace the test results on the customer's COA if the test is passed. | Some businesses would prefer to not show the actual test results but instead just show standard verbiage such as "Within specifications" for a pass. |
 | Replace fail results | When populated, the verbiage will replace the test results on the customer's COA if the test is failed. | Some businesses would prefer to not show the actual test results but instead just show standard verbiage such as "Outside acceptable range" for a failure. |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | New | Add a new requirement line. | When creating new COA requirements, remember that the most specific reference found for a given test will be used. For example, if I have a record for a specific customer and one for ALL and the COA is being generated for the specific customer; those requirements will be used on the report. |
 | Delete | Delete the selected requirement line. |  |
 | Batch attributes – Product specific | Open the product specific batch attribute form for the batch attribute on the Test group test. | Note: If accessed from the Quality order form, will have the option to view the Product specific or Product/Customer specific batch attribute. If accessed from the Test group, since a customer is not known, only the Product specific batch attribute will be accessible. These are inquiries only. |
@@ -1333,27 +1333,27 @@ The machine operator would now select the Dispensing option on the Dispensing Ti
 
 The Dispensing Ticket production journal lines form contains a grid in the upper portion of the form that lists the dispensed ingredients. When selected, the grid in the lower portion of the form allows for entry of one or more dispensed weights that can be averaged and posted. Once the weights are entered, the procedure would be to click the 'Post dispensed' button, the Confirm menu button, optionally the Validate menu button, and finally the Post menu button.
 
-| **Path: Production control \> Common \> All production orders \> Dispensing ticket \> Dispensing** |  |  |
+| **Path: Production control \> Common \> All production orders \> Dispensing ticket \> Dispensing** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Overview - Upper** |  |  |
+| **Overview - Upper** | &nbsp; | &nbsp; |
 | Dispensed item | The dispensed item from the dispensing ticket picking list | Select the dispensed item for which to enter dispensed weights |
 | Proposal | The amount, in the BOM unit, that is expected to be consumed, based on the estimated production orders. The field displays a value only if you specified that the material consumption of the production must be entered manually for the item. |  |
 | Consumption | Feedback about the actual consumption, in the BOM unit. |  |
 | Dispensed | The amount that is being issued for production. | This will be the resultant value after you post the dispensed weight(s). |
-| **Tabs** |  |  |
+| **Tabs** | &nbsp; | &nbsp; |
 | Overview | View or enter the posting date for physical item picking, the production number, and the lot ID. The remaining fields provide an overview of the status of the lines in the picking list journal. This overview includes the item number that is used for production, the configuration, the warehouse where the item is stored, the proposal, and the unit. The overview can also indicate whether the item is finished. |  |
 | General | View or enter general identifying information. This information includes the journal number, bill of material (BOM), inventory quantity, and information about scrap and end reporting for the selected journal line. |  |
 | Reference | View related inventory references and BOM information for the selected journal line. |  |
 | Financial dimensions | View information about financial dimensions, such as the default dimensions and where the dimensions are used in account structures and advanced rule structures. |  |
 | Inventory dimensions | View the inventory dimensions for the selected journal line. |  |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | Confirm | Check the dispensed – net amount for the journal line. Also updates the journal line "Dispensed" field with the posted dispensed quantity on the form. |  |
 | Validate | Check the journal for required information before you post it. |  |
 | Post | Check for errors, and then post the journal. |  |
 | Inventory | Check inventory information for the journal line. This information includes inventory transactions, the available inventory for the selected item, and reservations. |  |
 | Print | Print the information that is on the journal line. |  |
-| **Overview - Lower** |  |  |
+| **Overview - Lower** | &nbsp; | &nbsp; |
 | Dispensed – net | Enter the net amount that is being issued to production |  |
 | Include in validation | Check to include the weight in the averaging calculation |  |
 | Date and time | The current date and time when the weight was entered. |  |
@@ -1361,9 +1361,9 @@ The Dispensing Ticket production journal lines form contains a grid in the upper
 | Gross | The gross or total amount of weight being considered. |  |
 | Tare | The tare or unladen weight being considered. |  |
 | Scales | The Test Instrument that is used to identify the specific scale equipment related to the entered weight. |  |
-| **Tabs** |  |  |
+| **Tabs** | &nbsp; | &nbsp; |
 | General | View or enter general weight line information. This information includes the gross, tare, and net dispensed reporting for the selected journal line. |  |
-| **Buttons** |  |  |
+| **Buttons** | &nbsp; | &nbsp; |
 | Add | Allows additional weight lines to be entered for the journal line. |  |
 | Remove | Removes the selected weight line from the journal. |  |
 | Net weight from scales | Populates the Dispensed – net weight field from an ASCII text file in the server directory. |  |
@@ -1389,10 +1389,10 @@ There are two Split options provided. The Single line split option will take the
 
 The second Split option is a Multiple lines split. This can be used to quickly create rows with the same test quantity. The Result quantity per line needs to be entered. The system then will determine the Total number of results lines based on the result quantity per line. For example, if the current line has a quantity of 8 and the Result quantity per line entered is 2, the system will automatically create 4 lines where there was one, each with a quantity of 2. If the number is not even, the system will do as many rows as possible with the residual in the last row. For example, if the current line has a quantity of 8 and the Result quantity per line entered is 3, the system will create 3 result lines, two lines with the quantity of 3 and the 3<sup>rd</sup> line with the residual quantity of 2 for a total quantity of 8. Note: If the item is a CW item, CW quantity fields open up on the split form to enter instead of the standard quantity fields.
 
-| **Path: Inventory management \> Periodic \> Quality management \> Quality orders \> Quick results entry** |  |  |
+| **Path: Inventory management \> Periodic \> Quality management \> Quality orders \> Quick results entry** | &nbsp; | &nbsp; |
 |-------------------------|-------------------------|-------------------------|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Overview/General tabs** |  |  |
+| **Overview/General tabs** | &nbsp; | &nbsp; |
 | Sequence number | The sequence number of the test. | Only sequence numbers already on the quality order can be entered here. |
 | Test | The identifier of the test. | Only tests already on the quality order can be entered here. |
 | Description | The description of the associated test. | Display only field. |
@@ -1438,19 +1438,19 @@ The effort to perform quality order testing can be extensive. Often, the work ne
 
 Currently, if a Quality order test is set up with a Test Instrument that uses Tags, the system will always check to see if a selected test instrument tag is already on an open quality order. If the selected test instrument tag is found on an open quality order, a warning message is always displayed to the user. Some businesses don't need this validation so we have added a parameter in Inventory Management to indicate that this validation can be skipped. This parameter on Inventory and warehouse management parameters from the Quality management tab will default to all new test instrument tags. This parameter can also be modified on a test instrument tag basis. When validating a quality order, if this flag is selected on a chosen test instrument tag and that tag is currently assigned to an open quality order, then no warning message will be triggered on validation.
 
-| **Path: Inventory management \> Setup \> Inventory and Warehouse Management Parameters** |  |  |
+| **Path: Inventory management \> Setup \> Inventory and Warehouse Management Parameters** | &nbsp; | &nbsp; |
 |--|--|--|
 | **Label Name** | **Description** | **Examples/Hints** |
-| **Quality management tab** |  |  |
+| **Quality management tab** | &nbsp; | &nbsp; |
 | Skip check for test instrument on open quality order | Select this option if you want the system to skip the validation related to if the selected test instrument tag is already assigned to an open quality order. If selected, that validation is bypassed and no warning message is triggered. If not selected, then the validation is performed and a warning message may be triggered. This value will default from the parameters for new test instrument tags but can be changed on an individual tag. | Selected or deselected. Prior releases, the system functioned as if this flag was never selected. Used as a default to test instrument tags. To skip the validation, this field must be selected on the test instrument tag. |
 
-| **Path: Inventory management \> Setup \> Quality Control \> Test instrument tags** |  |  |
+| **Path: Inventory management \> Setup \> Quality Control \> Test instrument tags** | &nbsp; | &nbsp; |
 |--|--|--|
 | **Label Name** | **Description** | **Examples/Hints** |
 |  |  |  |
 | Skip check for test instrument on open quality order | Select this option if you want the system to skip the validation related to if the selected test instrument tag is already assigned to an open quality order. If selected, that validation is bypassed and no warning message is triggered. If not selected, then the validation is performed and a warning message may be triggered. This value will default from the parameters for new test instrument tags but can be changed on an individual tag. | Selected or deselected. Prior releases, the system functioned as if this flag was never selected. |
 
-| **Path: Inventory management \> Periodic \> Quality management \> Quality orders and Quick Result Entry** |  |  |
+| **Path: Inventory management \> Periodic \> Quality management \> Quality orders and Quick Result Entry** | &nbsp; | &nbsp; |
 |--|--|--|
 | **Label Name** | **Description** | **Examples/Hints** |
 |  |  |  |

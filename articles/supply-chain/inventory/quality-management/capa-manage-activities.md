@@ -13,13 +13,13 @@ ms.custom:
 
 # Manage CAPA activities
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 After CAPA cases are created and if CAPA processes are being used, CAPA activities will be automatically created for you as CAPA cases are acted upon. When a stage is advanced, CAPA activities will be created and assigned to the appropriate person responsible with a due date depending on how the CAPA process was defined. CAPA activities can be viewed using its own menu group where you have the ability to view All CAPA activities and All Open CAPA activities as well as CAPA activities due in the current week or that are past due. Each of these options is also available where they are filtered by the current user so that only activities where the user is responsible would be included.
 
 ## CAPA activity list pages
 
-| **Path: Home \> Common \> Activities \> CAPA activities \> All CAPA activites OR My CAPA activities OR All open CAPA activities OR My open CAPA activities OR All CAPA activities due this week OR My CAPA activities due this week OR All CAPA activities past due OR My CAPA activities past due** |  |  |
+| **Path: Home \> Common \> Activities \> CAPA activities \> All CAPA activites OR My CAPA activities OR All open CAPA activities OR My open CAPA activities OR All CAPA activities due this week OR My CAPA activities due this week OR All CAPA activities past due OR My CAPA activities past due** | &nbsp; | &nbsp; |
 |--|--|--|
 | **Label Name** | **Description** | **Examples/Hints** |
 | **Buttons** |  |  |
@@ -49,7 +49,7 @@ You run trending analysis to view in graphical format the volume of CAPA cases b
 
 To run trending analysis using information collected for CAPA cases, use the **Trending analysis** form.
 
-| **Path: Inventory management \> Inquiries \> CAPA management \> Trending analysis** |  |  |
+| **Path: Inventory management \> Inquiries \> CAPA management \> Trending analysis** | &nbsp; | &nbsp; |
 |--|--|--|
 | **Label Name** | **Description** | **Examples/Hints** |
 | **Tabs** |  |  |

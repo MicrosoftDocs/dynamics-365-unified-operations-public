@@ -13,7 +13,7 @@ ms.custom:
 
 # Set up CAPA case components
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Before you can begin creating and working with CAPA cases, you must set up the components needed to categorize and process CAPA cases.
 
