@@ -4,7 +4,7 @@ description: Access answers to frequently asked questions about proactive qualit
 author: rashmansur
 ms.author: rashmim
 ms.topic: article
-ms.date: 04/05/2023
+ms.date: 11/25/2024
 ms.custom: bap-template
 ms.reviewer: johnmichalak
 audience: Developer, IT Pro
@@ -48,7 +48,7 @@ If only one customer environment is affected, contact Microsoft support to open 
 
 ### How do I see notifications about a PQU?
 
-Notifications for PQUs are avaiable in the Message Center within Microsoft 365 Admin Center, see: [Track new and changed features in the Microsoft 365 Message center](/admin/manage/message-center)
+Notifications for PQUs are avaiable in the message center in Microsoft 365 admin center. For more information, see [Track new and changed features in the Microsoft 365 Message center](/admin/manage/message-center).
 
 ### Can customers still manually apply hotfix updates from Lifecycle Services?
 
