@@ -24,6 +24,9 @@ requiring taxpayers to submit detailed accounting books in a structured electron
 
 This topic provides information on how to prepare your Finance to report SAF Accounting books (JPK_KR) report that is required for reporting periods before January 1, 2025.
 
+> [!NOTE]
+> The SAF Accounting books (JPK_KR) report will be deprecated as of Janury 1, 2026. For deprecation announcement of SAF Accounting books (JPK_KR), see [Removed or deprecated features in Dynamics 365 Finance in the Finance 10.0.43 release](https://learn.microsoft.com/en-us/dynamics365/finance/get-started/removed-deprecated-features-finance#features-removed-or-deprecated-in-the-finance-10043-release)
+
 ## Setup
 
 Before you can generate a SAF VAT invoices file, you must complete the following setup.
