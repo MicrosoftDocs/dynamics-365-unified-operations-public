@@ -46,6 +46,10 @@ A critical issue is one or more events that cause multiple customers to have a d
 
 If only one customer environment is affected, contact Microsoft support to open a support ticket. Based on the justification, we'll stop the rollout of the PQU to other customer environments in that project until the issue is mitigated.
 
+### How do I see notifications about a PQU?
+
+Notifications for PQUs are avaiable in the Message Center within Microsoft 365 Admin Center, see: [Track new and changed features in the Microsoft 365 Message center](/admin/manage/message-center)
+
 ### Can customers still manually apply hotfix updates from Lifecycle Services?
 
 Yes. To ensure ongoing parity in the way that hotfixes work, hotfix updates can still be applied to customer environments in Lifecycle Services. PQUs are cumulative builds and continue to be available on Lifecycle Services as they're published. PQUs will be published to Lifecycle Services for manual application according to the change cutoff schedule.
