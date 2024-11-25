@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/fin-ops/copilot/faq-copilot-fno-data-on-m365copilot.md",
+      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/responsible-ai/responsible-ai-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/m365-copilot/chat-with-fno-data-on-m365copilot.md",
+      "redirect_url": "dynamics365/fin-ops-core/dev-itpro/copilot/chat-with-fno-data",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/finance/localizations/global/e-invoicing-connected-applications.md",
       "redirect_url": "dynamics365/finance/localizations/global/gs-e-invoicing-set-up-overview",
       "redirect_document_id": "false"
