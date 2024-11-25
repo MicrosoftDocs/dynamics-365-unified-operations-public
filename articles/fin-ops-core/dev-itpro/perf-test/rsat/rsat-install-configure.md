@@ -33,7 +33,7 @@ You must have an Azure DevOps project to store and manage your test cases, test 
 RSAT is designed to be installed on any Windows 10 or later computer and connect remotely via a web browser to an environment.
 
 > [!NOTE]
-> If you are using RSAT on a Cloud Hosted Environment (CHE) or VHD Development image, the tool will run on Windows Server 2019 or later.
+> If you are using RSAT on a Cloud Hosted Environment (CHE) or VHD Development image, the tool runs on Windows Server 2019 or later.
 
 To enable secure authentication, RSAT must authenticate access with the Dynamics 365 finance and operations apps environment that's being tested. There are two options for authenticating access: certificate-based authentication and user-based authentication.
 
@@ -159,7 +159,7 @@ After creating the certificate, configure AOS to trust the test automation conne
 
 5. Update the **wif.config** file by adding a new authority entry. Use **127.0.0.1** for the authority name and paste your certificate thumbprint.
 
-   The following section needs to be pasted after this line in the **wif.config**: `<issuerNameRegistry type="Microsoft.Dynamics.AX.Security.SharedUtility.AxIssuerNameRegistry, Microsoft.Dynamics.AX.Security.SharedUtility">`
+   Paste the following section after this line in the **wif.config**: `<issuerNameRegistry type="Microsoft.Dynamics.AX.Security.SharedUtility.AxIssuerNameRegistry, Microsoft.Dynamics.AX.Security.SharedUtility">`
 
     ```xml
         <authority name="CN=127.0.0.1">
