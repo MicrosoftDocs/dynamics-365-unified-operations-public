@@ -4,7 +4,7 @@ description: Learn about forecast models, which let you arrange and configure ti
 author: AndersEvenGirke
 ms.author: aevengir
 ms.topic: how-to
-ms.date: 10/19/2023
+ms.date: 11/25/2024
 ms.custom: bap-template
 ms.reviewer: kamaybac
 ms.search.form:
@@ -16,7 +16,7 @@ ms.search.form:
 
 *Forecast models* let you arrange and configure tiles to define the forecast that's made by a forecast profile. Each model presents a flowchart that graphically represents the calculation that the model does.
 
-For a presentation about how forecast models and outlier removal methods work in Demand planning, see the following video on YouTube (starting at 16:53): [Deep dive into Demand Planning for Supply Chain Management | Dynamics 365 TechTalk](https://www.youtube.com/watch?v=H27SRU1ua-8&t=1013s).
+For a presentation on forecast models and outlier removal methods in Demand planning, watch this video on YouTube (starting at 16:53): [Deep dive into Demand Planning for Supply Chain Management | Dynamics 365 TechTalk](https://www.youtube.com/watch?v=H27SRU1ua-8&t=1013s).
 
 ## <a name="forecasting-algorithms"></a>Demand forecasting algorithms
 
@@ -45,7 +45,7 @@ Suppose you have the historical demand time-series data that includes the dimens
 | B | 1 |
 | B | 2 |
 
-When you run a forecast calculation using the Prophet model, you get the following results. In this example, the system always uses the Prophet model, regardless of the calculated mean absolute percentage error (MAPE) for each product and dimension combination.
+When you run a forecast calculation using the Prophet model, the system always uses the Prophet model, regardless of the calculated mean absolute percentage error (MAPE) for each product and dimension combination. Here are the results:
 
 | Product | Store | forecast model | MAPE |
 |---|---|---|---|
@@ -63,7 +63,7 @@ When you run a forecast calculation using the ETS model, you get the following r
 | B | 1 | ETS | 0.21 |
 | B | 2 | ETS | 0.31 |
 
-When you run a forecast calculation using the best fit model, the system optimizes the model selection for each product and dimension combination. The selection changes based on patterns found in the historical sales data.
+When you run a forecast calculation using the best fit model, the system optimizes the model selection for each product and dimension combination based on patterns in the historical sales data.
 
 | Product | Store | Prophet MAPE | Auto-ARIMA MAPE | ETS MAPE | Best fit forecast model | Best fit MAPE |
 |---|---|---|---|---|---|---|
@@ -84,7 +84,7 @@ Legend:
 
 ### Auto-ARIMA: The time traveler's delight
 
-The auto-ARIMA algorithm is like a time machine: it takes you on a journey through past demand patterns so that you can make informed predictions about the future. Auto-ARIMA uses a technique that's known as autoregressive integrated moving average (ARIMA). This technique combines three key components: autoregression, differencing, and moving averages. The auto-ARIMA algorithm automatically identifies the best combination of these components to create a forecast model that suits your data.
+The auto-ARIMA algorithm uses past demand patterns to make informed predictions about the future. It uses autoregressive integrated moving average (ARIMA), combining autoregression, differencing, and moving averages. Auto-ARIMA automatically identifies the best combination of these components to create a suitable forecast model.
 
 Auto-ARIMA works especially well with time series data that shows a stable pattern over time, such as seasonal fluctuations or trends. If your historical demand follows a reasonably consistent path, auto-ARIMA might be your preferred forecasting method.
 
@@ -106,18 +106,18 @@ If you have a custom Microsoft Azure Machine Learning algorithm that you want to
 
 ## Create and customize a forecast model
 
-To create and customize a forecast model, you must first open an existing forecast profile. (Learn more in [Work with forecast profiles](forecast-profiles.md).) You can then fully customize the model that the selected profile uses by adding, removing, and arranging tiles, and configuring settings for each of them.
+To create and customize a forecast model, first open an existing forecast profile. (Learn more in [Work with forecast profiles](forecast-profiles.md).) Then, fully customize the model by adding, removing, and arranging tiles, and configuring settings for each.
 
 Follow these steps to create and customize a forecast model.
 
 1. On the navigation pane, select **Operations** \> **Forecast profiles**.
 1. Select the forecast profile that you want to create or customize a forecast model for.
 1. On the **Forecast model** tab, there will always be at least one tile (of the *Input* type) at the top of the flow chart. The model is processed from top to bottom, and the last tile must be a tile of the *Save* type. Add, remove, and arrange tiles as you require, and configure settings for each of them. For guidelines, see the illustration after this procedure.
-1. When you've finished designing your forecast model, select the **Validate** button :::image type="icon" source="media/button-validate-model.png" border="false"::: in the upper-right corner. The system runs a few tests to validate that your model will work, and then provides feedback. Fix any issues that the validation test reports.
+1. When you finish designing your forecast model, select **Validate** :::image type="icon" source="media/button-validate-model.png" border="false"::: in the upper-right corner. The system runs tests to validate your model and provides feedback. Fix any reported issues.
 1. Continue to work until your model is ready. Then, on the Action Pane, select **Save**.
 1. If you want to save your forecast model as a preset, so that it's available when you and other users create a new forecast profile, select the **Save as model template** button :::image type="icon" source="media/button-save-model-as-template.png" border="false"::: in the upper-right corner.
 
-The following illustration shows the information and controls that are available for tiles in a forecast model.
+The following illustration shows the information and controls available for tiles in a forecast model.
 
 :::image type="content" source="media/forecast-flowchart-elements.svg" alt-text="Screenshot that shows forecast model elements." lightbox="media/forecast-flowchart-elements.svg":::
 
@@ -200,3 +200,4 @@ For more information about phase in/out functionality, including details about h
 *Save* tiles save the result of the forecast model as a new or updated series. All forecast models must end with a single *Save* tile.
 
 The forecast time series will be saved according to the settings that you configure each time that you run a forecast job as described in [Work with forecast profiles](forecast-profiles.md).
+
