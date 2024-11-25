@@ -4,7 +4,7 @@ description: Learn how to set up reconciliation matching rules and reconciliatio
 author: music727 
 ms.author: wangchen
 ms.topic: article
-ms.date: 08/16/2024
+ms.date: 11/25/2024
 ms.reviewer: twheeloc
 audience: Application User
 ms.search.region: Global
@@ -26,7 +26,7 @@ You can set up reconciliation matching rules and reconciliation matching rule se
 > Bank reconciliation matching rules are used if you reconcile an electronic bank statement by using advance bank reconciliation.
 
 >  [!NOTE] 
-> Data entity **BankReconciliationMatchingRuleEntity** to import/export reconciliation matching rules can only be used if feature **Modern bank reconciliation** is disabled. 
+> The data entity **BankReconciliationMatchingRuleEntity** to import and export reconciliation matching rules can only be used if the **Modern bank reconciliation** feature is disabled. 
 
 On the **Reconciliation matching rules** page, you can select which actions and selection criteria are used when the matching rule is run. In the **Actions** field group, select the action that will be performed when the matching rule is run during the reconciliation process.  
 
@@ -50,10 +50,10 @@ When you select one of these matching types, grouping conditions are available i
 | **Mark new transactions**          | Create criteria to specify how new transactions should be marked on the **Bank reconciliation worksheet** page when the matching rule is run.                                                                                                                                                                 | <ul><li>**Step 1: Find statement lines** – Add selection fields to specify which bank statement lines should be selected from the **Bank reconciliation worksheet** page.</li><li> **Step 2: Find finance and operations** – You can add selection criteria to search bank document (transaction) lines. If no bank document is found, a statement line will be marked as a new transaction. </li></ul>         |
 
 
-If the feature **Modern bank reconciliation** is enabled, additional reconciliation rule actions are available for further automation scenarios:
-- [Clear reversal company transactions in advanced bank reconciliation](../finance/cash-bank-management/clear-reverse-comp-trans.md)
-- [Generate a voucher in advanced bank reconciliation](../finance/cash-bank-management/vouchers-adv-bank-rec.md)
-- [Cash application in advanced bank reconciliation](../finance/cash-bank-management/apply-cash-adv-bank-rec.md)
+If the **Modern bank reconciliation** feature is enabled, additional reconciliation rules are available for further automation. For more information, see:
+- [Clear reversal company transactions in advanced bank reconciliation](/clear-reverse-comp-trans.md)
+- [Generate a voucher in advanced bank reconciliation](/vouchers-adv-bank-rec.md)
+- [Cash application in advanced bank reconciliation](/apply-cash-adv-bank-rec.md)
 
 
 
